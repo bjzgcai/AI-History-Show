@@ -29,10 +29,50 @@
     "importance": "display",
     "text": {
       "en": "The Main Contributors field is “Xiaohan Ding,Xiangyu Zhang”.",
-      "zh": "“主要人物”字段依次列出 Xiaohan Ding（官方页拼写）、张祥雨；官方英文原文为“Xiaohan Ding,Xiangyu Zhang”。"
+      "zh": "“主要人物”字段依次列出 丁霄汉、张祥雨；官方英文原文为“Xiaohan Ding,Xiangyu Zhang”。"
     },
     "sourceIds": [
       "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-replknet-contributors-cross-verified",
+    "importance": "core",
+    "text": {
+      "en": "Xiaohan Ding and Xiangyu Zhang, the two contributors named by BenchCouncil, are the first two authors of the CVPR paper; the arXiv record additionally lists Yizhuang Zhou, Jungong Han, Guiguang Ding and Jian Sun.",
+      "zh": "BenchCouncil 列出的丁霄汉和张祥雨是 CVPR 论文前两位作者；arXiv 完整作者表还包括周逸庄、Jungong Han、丁贵广和孙剑。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual",
+      "source-primary-record",
+      "source-arxiv-paper"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-replknet-large-kernel-design",
+    "importance": "core",
+    "text": {
+      "en": "RepLKNet is a pure CNN built with re-parameterized large depth-wise convolutions whose kernel size reaches 31x31, contrasting with the commonly used 3x3 design.",
+      "zh": "RepLKNet 是采用重参数化大核深度卷积的纯 CNN，卷积核最大达到 31×31，与常用的 3×3 设计形成对照。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-replknet-results-and-analysis",
+    "importance": "display",
+    "text": {
+      "en": "The paper reports 87.8% ImageNet top-1 accuracy and 56.0% mIoU on ADE20K, and analyzes large-kernel CNNs as having larger effective receptive fields and stronger shape bias than small-kernel CNNs.",
+      "zh": "论文报告 87.8% 的 ImageNet top-1 准确率和 56.0% 的 ADE20K mIoU，并分析指出大核 CNN 比小核 CNN 具有更大的有效感受野和更强的形状偏置。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
     ],
     "status": "verified"
   }

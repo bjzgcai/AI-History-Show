@@ -29,10 +29,53 @@
     "importance": "display",
     "text": {
       "en": "The Main Contributors field is “Zhenda Xie, Zheng Zhang, Yue Cao, Han Hu”.",
-      "zh": "“主要人物”字段依次列出 Zhenda Xie（官方页拼写）、Zheng Zhang（官方页拼写）、曹越、胡瀚；官方英文原文为“Zhenda Xie, Zheng Zhang, Yue Cao, Han Hu”。"
+      "zh": "“主要人物”字段依次列出 谢振达、张拯、曹越、胡瀚；官方英文原文为“Zhenda Xie, Zheng Zhang, Yue Cao, Han Hu”。"
     },
     "sourceIds": [
       "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributors-cross-verified",
+    "importance": "core",
+    "text": {
+      "en": "Zhenda Xie, Zheng Zhang, Yue Cao and Han Hu are listed by BenchCouncil in the same order as the paper's equal-contribution group; the CVF and Microsoft Research records contain all four names.",
+      "zh": "BenchCouncil 依次列出的谢振达、张拯、曹越和胡瀚对应论文的共同贡献作者组；CVF 与微软研究院记录均包含四人。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual",
+      "source-cvf-paper-page",
+      "source-microsoft-research-publication",
+      "source-han-hu-profile",
+      "source-zheng-zhang-profile",
+      "source-zheng-zhang-name-record"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-simple-masked-modeling",
+    "importance": "core",
+    "text": {
+      "en": "SimMIM uses random masking with moderately large patches, direct regression of raw RGB pixel values and a lightweight linear prediction head, without requiring a discrete tokenizer or clustering target.",
+      "zh": "SimMIM 采用中等偏大的随机遮挡块、原始 RGB 像素值直接回归和轻量线性预测头，不需要离散分词器或聚类目标。"
+    },
+    "sourceIds": [
+      "source-cvf-paper-page",
+      "source-microsoft-research-publication"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-scale-results",
+    "importance": "display",
+    "text": {
+      "en": "The paper reports 83.8% ImageNet-1K top-1 accuracy with ViT-B, 87.1% with the roughly 650-million-parameter SwinV2-H, and a 3-billion-parameter SwinV2-G trained with far less labeled data than the cited prior practice.",
+      "zh": "论文报告 ViT-B 在 ImageNet-1K 上达到 83.8% top-1，约 6.5 亿参数的 SwinV2-H 达到 87.1%，并以明显更少的标注数据训练 30 亿参数 SwinV2-G。"
+    },
+    "sourceIds": [
+      "source-cvf-paper-page",
+      "source-microsoft-research-publication"
     ],
     "status": "verified"
   }

@@ -1,26 +1,67 @@
 [
   {
+    "id": "asset-annual-081-latent-diffusion-models-portrait-robin-rombach",
+    "type": "image",
+    "path": "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Robin Rombach portrait",
+      "zh": "罗宾·罗姆巴赫肖像"
+    },
+    "subcaption": {
+      "en": "First author of the Latent Diffusion Models paper",
+      "zh": "Latent Diffusion Models 论文第一作者"
+    },
+    "sourceId": "source-annual-081-latent-diffusion-models-portrait-robin-rombach",
+    "sourceName": {
+      "en": "Latent Labs",
+      "zh": "Latent Labs"
+    },
+    "sourceUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+    "sourceReliability": "secondary-identity-source",
+    "provenanceNotes": {
+      "en": "The image is published by Latent Labs with Robin Rombach's name and role.",
+      "zh": "图片由 Latent Labs 发布，并明确标注罗宾·罗姆巴赫的姓名与身份。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The source page does not state a repository-compatible license; recheck before external redistribution.",
+        "zh": "来源页未声明与本仓库兼容的许可；对外再分发前需再次核验。"
+      },
+      "attribution": ""
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
     "id": "asset-annual-081-latent-diffusion-models-record",
     "type": "svg",
     "path": "resources/images/benchcouncil-ai100-annual/annual-081-latent-diffusion-models_record.svg",
     "role": "annual-achievement-explainer",
     "caption": {
-      "en": "Latent Diffusion Models annual evidence map",
-      "zh": "Latent Diffusion Models 年度证据图"
+      "en": "Latent Diffusion Models process explainer",
+      "zh": "Latent Diffusion Models 流程解释图"
     },
     "subcaption": {
-      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
-      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+      "en": "Perceptual compression followed by conditional diffusion in latent space",
+      "zh": "感知压缩后在潜空间进行条件扩散"
     },
     "sourceIds": [
-      "source-primary-record",
-      "source-benchcouncil-annual"
+      "source-ldm-paper",
+      "source-primary-record"
     ],
     "sourceName": {
-      "en": "BenchCouncil and publication metadata",
-      "zh": "BenchCouncil 与论文元数据"
+      "en": "Primary publication and original local synthesis",
+      "zh": "主论文与本地原创整理"
     },
-    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "sourceUrl": "https://arxiv.org/abs/2112.10752",
     "rights": {
       "status": "original-redraw",
       "license": {
@@ -33,12 +74,130 @@
       }
     },
     "displayUsage": {
-      "en": "Annual record explainer",
-      "zh": "年度记录解释图"
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
     },
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-annual-081-latent-diffusion-models-portrait-andreas-blattmann",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/portraits/andreas-blattmann.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "安德烈亚斯·布拉特曼肖像",
+      "en": "Andreas Blattmann portrait"
+    },
+    "subcaption": {
+      "en": "Co-author of the Latent Diffusion Models paper",
+      "zh": "Latent Diffusion Models 论文共同作者"
+    },
+    "sourceId": "source-ldm-portrait-andreas-blattmann",
+    "sourceName": {
+      "en": "Computer Vision & Learning Group, LMU Munich",
+      "zh": "慕尼黑大学计算机视觉与学习组"
+    },
+    "sourceUrl": "https://ommer-lab.com/wp-content/uploads/2021/10/andreas-e1634826309758.jpg",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The official lab page does not state an open image license.",
+        "zh": "实验室官方页面未声明图片的开放许可。"
+      },
+      "attribution": "Computer Vision & Learning Group, LMU Munich"
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false,
+    "sourceReliability": "official-lab-profile",
+    "provenanceNotes": {
+      "en": "BenchCouncil lists Andreas Blattmann in the official contributor field, and the primary publication confirms the same author identity and work association.",
+      "zh": "BenchCouncil 官方人物字段列出安德烈亚斯·布拉特曼，主论文作者表确认了同一人物及其与该成果的关系。"
+    }
+  },
+  {
+    "id": "asset-annual-081-latent-diffusion-models-portrait-bjorn-ommer",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/portraits/bjorn-ommer.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "比约恩·奥默肖像",
+      "en": "Bjorn Ommer portrait"
+    },
+    "subcaption": {
+      "en": "Co-author of the Latent Diffusion Models paper",
+      "zh": "Latent Diffusion Models 论文共同作者"
+    },
+    "sourceId": "source-ldm-portrait-bjorn-ommer",
+    "sourceName": {
+      "en": "Computer Vision & Learning Group, LMU Munich",
+      "zh": "慕尼黑大学计算机视觉与学习组"
+    },
+    "sourceUrl": "https://ommer-lab.com/wp-content/uploads/2021/09/Bjorn-1-e1631807002890.jpg",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The official lab page does not state an open image license.",
+        "zh": "实验室官方页面未声明图片的开放许可。"
+      },
+      "attribution": "Computer Vision & Learning Group, LMU Munich"
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false,
+    "sourceReliability": "official-lab-profile",
+    "provenanceNotes": {
+      "en": "BenchCouncil lists Bjorn Ommer in the official contributor field, and the primary publication confirms the same author identity and work association.",
+      "zh": "BenchCouncil 官方人物字段列出比约恩·奥默，主论文作者表确认了同一人物及其与该成果的关系。"
+    }
+  },
+  {
+    "id": "asset-annual-081-latent-diffusion-models-perceptual-compression",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-081-latent-diffusion-models-perceptual-compression.png",
+    "role": "research-result",
+    "caption": {
+      "zh": "潜扩散中的感知压缩与语义压缩",
+      "en": "Perceptual and semantic compression in latent diffusion"
+    },
+    "subcaption": {
+      "zh": "作者官方 LDM 项目页展示的论文 Figure 2",
+      "en": "Figure 2 from the authors' official LDM project page"
+    },
+    "sourceId": "source-ldm-official-project-images",
+    "sourceName": {
+      "en": "Computer Vision & Learning Group, LMU Munich",
+      "zh": "慕尼黑大学计算机视觉与学习组"
+    },
+    "sourceUrl": "https://ommer-lab.com/wp-content/uploads/2022/08/article-Figure2-1.png",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Paper figure reproduced from the authors' official project page; no separate image license is stated.",
+        "zh": "图片来自作者官方项目页展示的论文图；页面未另行声明图片许可。"
+      },
+      "attribution": "Rombach et al.; Computer Vision & Learning Group, LMU Munich"
+    },
+    "displayUsage": {
+      "en": "Primary-paper concept figure",
+      "zh": "主论文概念图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
   }
 ]

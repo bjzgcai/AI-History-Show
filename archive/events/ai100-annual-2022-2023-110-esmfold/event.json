@@ -7,12 +7,12 @@
     "zh": "ESMFold"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in AI4Science",
-    "zh": "BenchCouncil AI100（2022-2023）AI for Science年度条目"
+    "en": "Single-sequence protein structure prediction with a large protein language model",
+    "zh": "使用大型蛋白质语言模型进行单序列结构预测"
   },
   "description": {
-    "en": "<p>BenchCouncil lists ESMFold in the AI4Science area of its AI100 (2022-2023) annual table. It associates the work with the publication “Evolutionary-scale prediction of atomic-level protein structure with a language model”. The page names Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Alexander Rives as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“AI for Science”领域列出 ESMFold。该条目关联论文《Evolutionary-scale prediction of atomic-level protein structure with a language model》。页面把 Zeming Lin（官方页拼写）、Halil Akin（官方页拼写）、Roshan Rao（官方页拼写）、Brian Hie（官方页拼写）、Alexander Rives（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>ESMFold predicts atomic-level protein structures directly from a single amino-acid sequence using representations learned by the ESM-2 protein language model. It avoids the multiple-sequence-alignment search used by many earlier high-accuracy pipelines, enabling much faster inference across very large sequence collections.</p><p>The accompanying work used this speed to explore hundreds of millions of metagenomic protein sequences and release the ESM Metagenomic Atlas.</p>",
+    "zh": "<p>ESMFold 使用 ESM-2 蛋白质语言模型学到的表示，直接从单条氨基酸序列预测原子级蛋白质结构。它不依赖许多早期高精度流程使用的多序列比对搜索，因此能够更快地处理超大规模序列集合。</p><p>相关工作利用这种速度探索数亿条宏基因组蛋白质序列，并发布 ESM Metagenomic Atlas。</p>"
   },
   "location": {
     "regionId": "united-states",
@@ -40,11 +40,11 @@
       "figureId": "zeming-lin",
       "name": {
         "en": "Zeming Lin",
-        "zh": "Zeming Lin（官方页拼写）"
+        "zh": "林泽明"
       },
       "role": {
-        "en": "Main contributor for ESMFold in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ESMFold 主要人物"
+        "en": "First author of the ESMFold paper",
+        "zh": "ESMFold 论文第一作者"
       },
       "organizationIds": []
     },
@@ -52,11 +52,11 @@
       "figureId": "halil-akin",
       "name": {
         "en": "Halil Akin",
-        "zh": "Halil Akin（官方页拼写）"
+        "zh": "哈利勒·阿金"
       },
       "role": {
-        "en": "Main contributor for ESMFold in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ESMFold 主要人物"
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
       },
       "organizationIds": []
     },
@@ -64,11 +64,11 @@
       "figureId": "roshan-rao",
       "name": {
         "en": "Roshan Rao",
-        "zh": "Roshan Rao（官方页拼写）"
+        "zh": "罗尚·拉奥"
       },
       "role": {
-        "en": "Main contributor for ESMFold in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ESMFold 主要人物"
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
       },
       "organizationIds": []
     },
@@ -76,23 +76,24 @@
       "figureId": "brian-hie",
       "name": {
         "en": "Brian Hie",
-        "zh": "Brian Hie（官方页拼写）"
+        "zh": "布赖恩·希"
       },
       "role": {
-        "en": "Main contributor for ESMFold in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ESMFold 主要人物"
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2023-esmfold/brian-hie.jpg"
     },
     {
       "figureId": "alexander-rives",
       "name": {
         "en": "Alexander Rives",
-        "zh": "Alexander Rives（官方页拼写）"
+        "zh": "亚历山大·里夫斯"
       },
       "role": {
-        "en": "Main contributor for ESMFold in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ESMFold 主要人物"
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
       },
       "organizationIds": []
     }
@@ -102,8 +103,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 110 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 110 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed event-specific research on 2026-08-03. The exact BenchCouncil title, order, contributor prefix, institution, country and blank official fields were preserved. All listed people were checked against primary authorship evidence; portrait searches were completed and no portrait was selected because no candidate met the identity and usage-context threshold.",
+      "zh": "于 2026-08-03 完成事件专项研究。准确保留 BenchCouncil 的标题、顺序、人物前缀、机构、国家与官方空字段。所有列出人物均通过原始作者证据核对；肖像检索已完成，没有候选同时满足身份与使用语境门槛，因此不选用肖像。"
     }
   }
 }

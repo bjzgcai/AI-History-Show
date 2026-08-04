@@ -3,35 +3,35 @@
     "id": "ai100-annual-2022-2023-059-chain-of-thought-prompting-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to Chain-of-Thought Prompting?",
-      "zh": "BenchCouncil 年度表把 Chain-of-Thought Prompting 归入哪个领域？"
+      "en": "What does chain-of-thought prompting add to few-shot examples?",
+      "zh": "思维链提示在少样本示例中增加了什么？"
     },
     "options": [
       {
-        "en": "LLM",
-        "zh": "大语言模型"
+        "en": "Intermediate reasoning steps",
+        "zh": "中间推理步骤"
       },
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "New model weights",
+        "zh": "新的模型权重"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "Robot sensor readings",
+        "zh": "机器人传感器读数"
       },
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "Image segmentation masks",
+        "zh": "图像分割掩码"
       }
     ],
-    "answer": 0,
     "explanation": {
-      "en": "Chain-of-Thought Prompting appears in the LLM area of the official annual table.",
-      "zh": "Chain-of-Thought Prompting 位于官方年度表的“大语言模型”领域。"
+      "en": "The prompt includes worked rationales between each question and final answer.",
+      "zh": "提示在问题与最终答案之间加入完整的推理过程。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-cot-paper"
     ],
+    "answer": 0,
     "assetIds": [
       "asset-annual-059-chain-of-thought-prompting-record"
     ]

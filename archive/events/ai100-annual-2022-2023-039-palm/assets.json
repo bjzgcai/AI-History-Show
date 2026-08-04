@@ -9,8 +9,8 @@
       "zh": "杰夫·迪恩肖像"
     },
     "subcaption": {
-      "en": "Main contributor listed by the BenchCouncil annual table",
-      "zh": "BenchCouncil 年度表列出的主要人物"
+      "en": "Co-author of the PaLM paper",
+      "zh": "PaLM 论文共同作者"
     },
     "sourceId": "source-annual-039-palm-portrait-jeff-dean",
     "sourceName": {
@@ -46,22 +46,22 @@
     "path": "resources/images/benchcouncil-ai100-annual/annual-039-palm_record.svg",
     "role": "annual-achievement-explainer",
     "caption": {
-      "en": "PaLM annual evidence map",
-      "zh": "PaLM 年度证据图"
+      "en": "PaLM process explainer",
+      "zh": "PaLM 流程解释图"
     },
     "subcaption": {
-      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
-      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+      "en": "Pathways-distributed dense Transformer scaling",
+      "zh": "基于 Pathways 的稠密 Transformer 分布式扩展"
     },
     "sourceIds": [
-      "source-primary-record",
-      "source-benchcouncil-annual"
+      "source-palm-paper",
+      "source-primary-record"
     ],
     "sourceName": {
-      "en": "BenchCouncil and publication metadata",
-      "zh": "BenchCouncil 与论文元数据"
+      "en": "Primary publication and original local synthesis",
+      "zh": "主论文与本地原创整理"
     },
-    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "sourceUrl": "https://arxiv.org/abs/2204.02311",
     "rights": {
       "status": "original-redraw",
       "license": {
@@ -74,12 +74,48 @@
       }
     },
     "displayUsage": {
-      "en": "Annual record explainer",
-      "zh": "年度记录解释图"
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
     },
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-annual-039-palm-paper-bigbench-results",
+    "type": "image",
+    "path": "resources/images/external/ai100-2022-palm/palm-bigbench-results.png",
+    "role": "paper-figure",
+    "caption": {
+      "zh": "PaLM 在 58 项 BIG-bench 任务上的表现",
+      "en": "PaLM performance on 58 BIG-bench tasks"
+    },
+    "subcaption": {
+      "zh": "主论文比较 PaLM、GPT-3、Gopher 与 Chinchilla 在不同模型规模和提示设置下的表现。",
+      "en": "The primary paper compares PaLM, GPT-3, Gopher and Chinchilla across model scales and prompting settings."
+    },
+    "sourceId": "source-palm-paper-bigbench-figure",
+    "sourceName": {
+      "en": "PaLM arXiv source package",
+      "zh": "PaLM arXiv 源文件包"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2204.02311",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Author-submitted paper figure; displayed with full paper attribution under the project's relaxed reference-image policy.",
+        "zh": "作者提交的论文配图；依据项目放宽后的参考图片策略展示，并完整标注论文来源。"
+      },
+      "attribution": "Chowdhery et al., PaLM: Scaling Language Modeling with Pathways (2022)"
+    },
+    "displayUsage": {
+      "en": "Primary-paper evaluation result",
+      "zh": "主论文评测结果资料"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
   }
 ]

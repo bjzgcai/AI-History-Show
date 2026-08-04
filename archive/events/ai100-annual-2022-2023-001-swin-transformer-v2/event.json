@@ -7,12 +7,12 @@
     "zh": "Swin Transformer V2"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in Vision",
-    "zh": "BenchCouncil AI100（2022-2023）视觉年度条目"
+    "en": "A stable path to scaling window-based vision transformers to three billion parameters and high-resolution inputs",
+    "zh": "将窗口式视觉 Transformer 稳定扩展到 30 亿参数和高分辨率输入的方法"
   },
   "description": {
-    "en": "<p>BenchCouncil lists Swin Transformer V2 in the Vision area of its AI100 (2022-2023) annual table. It associates the work with the publication “Swin Transformer V2: Scaling Up Capacity and Resolution”. The page names Ze Liu, Han Hu as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“视觉”领域列出 Swin Transformer V2。该条目关联论文《Swin Transformer V2: Scaling Up Capacity and Resolution》。页面把 刘泽、胡瀚 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>Swin Transformer V2 addressed three obstacles that appeared when vision transformers were scaled up: unstable optimization, a mismatch between low-resolution pretraining and high-resolution downstream tasks, and heavy dependence on labeled images. It combined residual post-normalization with scaled cosine attention, introduced log-spaced continuous position bias for resolution transfer, and used SimMIM self-supervised pretraining.</p><p>The resulting system scaled to 3 billion parameters and images as large as 1536 x 1536, while reporting strong results on ImageNet-V2, COCO, ADE20K and Kinetics-400.</p>",
+    "zh": "<p>Swin Transformer V2 针对视觉 Transformer 扩大规模后出现的三个障碍：优化不稳定、低分辨率预训练与高分辨率下游任务之间的落差，以及对标注图像的高度依赖。它把残差后归一化与缩放余弦注意力结合起来，引入对数间隔的连续位置偏置来支持分辨率迁移，并采用 SimMIM 自监督预训练。</p><p>这套方法把模型扩展到 30 亿参数，并可处理最高 1536 x 1536 分辨率的图像，同时在 ImageNet-V2、COCO、ADE20K 和 Kinetics-400 上报告了强劲结果。</p>"
   },
   "location": {
     "regionId": "china",
@@ -43,8 +43,8 @@
         "zh": "刘泽"
       },
       "role": {
-        "en": "Main contributor for Swin Transformer V2 in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Swin Transformer V2 主要人物"
+        "en": "Co-first author of the Swin Transformer V2 paper",
+        "zh": "Swin Transformer V2 论文共同第一作者"
       },
       "organizationIds": [],
       "avatar": "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg"
@@ -56,10 +56,11 @@
         "zh": "胡瀚"
       },
       "role": {
-        "en": "Main contributor for Swin Transformer V2 in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Swin Transformer V2 主要人物"
+        "en": "Co-first author of the Swin Transformer V2 paper",
+        "zh": "Swin Transformer V2 论文共同第一作者"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg"
     }
   ],
   "organizations": [],
@@ -67,8 +68,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 1 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 1 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed event-specific research on 2026-08-03. BenchCouncil fields were preserved; contributors were cross-checked against the primary paper and researcher-controlled pages. One existing Ze Liu portrait is retained, while Han Hu's matching homepage portrait is documented but not selected because no redistribution license is stated and the event already has one portrait.",
+      "zh": "于 2026-08-03 完成事件专项研究。保留 BenchCouncil 官方字段，并通过主论文与研究者个人页面交叉核对人物。继续使用现有刘泽肖像；胡瀚主页中的匹配肖像因未声明再分发许可且事件已有一张人物图，仅记录而不采用。"
     }
   }
 }

@@ -29,10 +29,36 @@
     "importance": "display",
     "text": {
       "en": "The Main Contributors field is “Junnan Li, Steven Hoi”.",
-      "zh": "“主要人物”字段依次列出 Junnan Li（官方页拼写）、Steven Hoi（官方页拼写）；官方英文原文为“Junnan Li, Steven Hoi”。"
+      "zh": "“主要人物”字段依次列出 李俊楠、许彬；官方英文原文为“Junnan Li, Steven Hoi”。"
     },
     "sourceIds": [
       "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-frozen-bridge",
+    "importance": "core",
+    "text": {
+      "en": "BLIP-2 keeps the image encoder and large language model frozen and trains a lightweight Querying Transformer between them.",
+      "zh": "BLIP-2 冻结图像编码器与大语言模型，只训练位于两者之间的轻量级 Querying Transformer。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-two-stage-training",
+    "importance": "core",
+    "text": {
+      "en": "Its training first aligns visual and language representations, then learns vision-to-language generation.",
+      "zh": "其训练先对齐视觉与语言表示，再学习从视觉到语言的生成。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
     ],
     "status": "verified"
   }

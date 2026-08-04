@@ -3,34 +3,34 @@
     "id": "ai100-annual-2022-2023-051-gpt-4-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to GPT-4?",
-      "zh": "BenchCouncil 年度表把 GPT-4 归入哪个领域？"
+      "en": "Which input types did the GPT-4 release describe?",
+      "zh": "GPT-4 发布时描述了哪些输入类型？"
     },
     "options": [
       {
-        "en": "LLM",
-        "zh": "大语言模型"
+        "en": "Text and images",
+        "zh": "文本与图像"
       },
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "Only audio waveforms",
+        "zh": "只有音频波形"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "Only robot joint angles",
+        "zh": "只有机器人关节角度"
       },
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "Only database rows",
+        "zh": "只有数据库行"
       }
     ],
     "answer": 0,
     "explanation": {
-      "en": "GPT-4 appears in the LLM area of the official annual table.",
-      "zh": "GPT-4 位于官方年度表的“大语言模型”领域。"
+      "en": "The release describes GPT-4 as accepting image and text inputs while producing text outputs.",
+      "zh": "发布材料将 GPT-4 描述为接收图像与文本输入，并生成文本输出。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-primary-record"
     ],
     "assetIds": [
       "asset-annual-051-gpt-4-record"

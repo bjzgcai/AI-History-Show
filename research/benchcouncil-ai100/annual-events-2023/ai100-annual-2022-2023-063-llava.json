@@ -1,0 +1,627 @@
+{
+  "schemaVersion": 1,
+  "eventId": "ai100-annual-2022-2023-063-llava",
+  "status": "complete",
+  "officialOrder": 63,
+  "work": "LLaVA",
+  "official": {
+    "area": "LLM",
+    "publication": "Visual instruction tuning",
+    "citation": "279",
+    "contributors": "Haotian Liu, Chunyuan Li, Yong Jae Lee",
+    "institution": "University of Wisconsin-Madison, Microsoft, Columbia University",
+    "country": "USA",
+    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+  },
+  "summary": {
+    "en": "Visual instruction tuning that connects a vision encoder to a language model",
+    "zh": "把视觉编码器连接到语言模型的视觉指令微调方法"
+  },
+  "displaySummary": {
+    "en": "AI100 (2022-2023) · Visual instruction following",
+    "zh": "AI100（2022-2023）· 视觉指令跟随"
+  },
+  "description": {
+    "en": "<p>LLaVA builds a large language-and-vision assistant by connecting a frozen CLIP vision encoder to a large language model through a learned projection. GPT-4 is used to turn image captions and bounding-box descriptions into conversational instruction-following data.</p><p>A feature-alignment stage first teaches the projection to connect the two modalities, followed by visual instruction tuning for conversation and reasoning.</p>",
+    "zh": "<p>LLaVA 通过一个可学习投影，把冻结的 CLIP 视觉编码器连接到大语言模型，从而构建大型语言视觉助手。研究使用 GPT-4 把图像描述与边界框信息转换成对话式视觉指令数据。</p><p>特征对齐阶段先教会投影层连接两种模态，随后通过视觉指令微调获得对话与推理能力。</p>"
+  },
+  "people": [
+    {
+      "name": {
+        "en": "Haotian Liu",
+        "zh": "刘昊天"
+      },
+      "role": {
+        "en": "First author of the LLaVA paper",
+        "zh": "LLaVA 论文第一作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-benchcouncil-annual",
+          "source-primary-record",
+          "source-haotian-liu-profile"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Haotian Liu at position 1 in the official contributor prefix, and the primary paper lists the same person among its authors. The researcher-controlled profile independently matches the identity and event history.",
+          "zh": "BenchCouncil 在官方人物前缀第 1 位列出刘昊天，主论文作者表也包含同一人物。研究者本人维护的主页进一步匹配其身份与成果经历。"
+        }
+      },
+      "portraitSearch": {
+        "status": "selected",
+        "sourceUrl": "https://hliu.cc/",
+        "imageUrl": "https://hliu.cc/assets/img/photo.jpg",
+        "reliability": "primary-identity-source",
+        "rights": "The researcher-controlled or institution-hosted page publishes the matching image but states no redistribution license; the local copy is retained as an attributed external reference.",
+        "candidates": [
+          {
+            "imageUrl": "https://hliu.cc/assets/img/photo.jpg",
+            "decision": "selected",
+            "notes": "The portrait appears on Haotian Liu’s own homepage beside his identity, LLaVA project history and University of Wisconsin-Madison Ph.D. record."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "en": "Chunyuan Li",
+        "zh": "李春源"
+      },
+      "role": {
+        "en": "Co-first author of the LLaVA paper",
+        "zh": "LLaVA 论文共同第一作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-benchcouncil-annual",
+          "source-primary-record"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Chunyuan Li at position 2 in the official contributor prefix, and the primary paper lists the same person among its authors.",
+          "zh": "BenchCouncil 在官方人物前缀第 2 位列出李春源，主论文作者表也包含同一人物。"
+        }
+      },
+      "portraitSearch": {
+        "status": "no-reliable-candidate",
+        "reliability": "primary-publication-identity-confirmed-no-displayable-portrait",
+        "rights": "No image is selected. The paper and official project evidence confirm identity, but no candidate was retained with both a reliable identity match and sufficient usage context.",
+        "candidates": []
+      }
+    },
+    {
+      "name": {
+        "en": "Yong Jae Lee",
+        "zh": "李永宰"
+      },
+      "role": {
+        "en": "Co-author of the LLaVA paper",
+        "zh": "LLaVA 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-benchcouncil-annual",
+          "source-primary-record"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Yong Jae Lee at position 3 in the official contributor prefix, and the primary paper lists the same person among its authors.",
+          "zh": "BenchCouncil 在官方人物前缀第 3 位列出李永宰，主论文作者表也包含同一人物。"
+        }
+      },
+      "portraitSearch": {
+        "status": "no-reliable-candidate",
+        "reliability": "primary-publication-identity-confirmed-no-displayable-portrait",
+        "rights": "No image is selected. The paper and official project evidence confirm identity, but no candidate was retained with both a reliable identity match and sufficient usage context.",
+        "candidates": []
+      }
+    }
+  ],
+  "selectedPortrait": {
+    "personName": "Haotian Liu",
+    "image": {
+      "path": "resources/images/external/ai100-2023-llava/haotian-liu.jpg",
+      "sourceName": {
+        "en": "Haotian Liu academic homepage",
+        "zh": "刘昊天学术主页"
+      },
+      "sourceUrl": "https://hliu.cc/",
+      "imageUrl": "https://hliu.cc/assets/img/photo.jpg",
+      "reliability": "primary-identity-source",
+      "usageStatus": "external-reference",
+      "license": {
+        "en": "The source does not state redistribution rights; retain attribution and recheck before redistribution outside this project.",
+        "zh": "来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+      },
+      "notes": {
+        "en": "The portrait appears on Haotian Liu’s own homepage beside his identity, LLaVA project history and University of Wisconsin-Madison Ph.D. record.",
+        "zh": "该肖像展示在刘昊天本人主页中，与其身份、LLaVA 项目经历和威斯康星大学麦迪逊分校博士经历同时出现。"
+      },
+      "attribution": "Haotian Liu academic homepage",
+      "identityChecks": [
+        "exact-contributor-name",
+        "event-authorship-matches",
+        "official-affiliation-history-matches"
+      ]
+    }
+  },
+  "sourceOverrides": {
+    "source-primary-record": {
+      "type": "paper",
+      "label": {
+        "en": "Primary paper",
+        "zh": "原始论文"
+      },
+      "title": {
+        "en": "Visual Instruction Tuning",
+        "zh": "《视觉指令微调》"
+      },
+      "authors": [
+        "Haotian Liu",
+        "Chunyuan Li",
+        "Qingyang Wu",
+        "Yong Jae Lee"
+      ],
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2304.08485",
+      "language": "en",
+      "purpose": "core-evidence",
+      "reliability": "primary",
+      "notes": {
+        "en": "Primary paper used to verify authorship, GPT-4 data generation, projection architecture and two-stage training.",
+        "zh": "用于核对作者、GPT-4 数据生成、投影架构与两阶段训练的主论文。"
+      }
+    },
+    "source-openalex-record": {
+      "notes": {
+        "en": "Bibliographic metadata is retained only as a secondary cross-check; technical and identity claims use primary records.",
+        "zh": "书目元数据仅作为辅助交叉核对；技术与人物主张使用原始记录。"
+      }
+    }
+  },
+  "additionalSources": [
+    {
+      "id": "source-llava-project",
+      "type": "project-page",
+      "label": {
+        "en": "Project page",
+        "zh": "项目页面"
+      },
+      "title": {
+        "en": "LLaVA project page",
+        "zh": "LLaVA 项目页面"
+      },
+      "url": "https://llava-vl.github.io/",
+      "language": "en",
+      "purpose": "core-evidence",
+      "reliability": "primary",
+      "notes": {
+        "en": "Research-team project page linking the paper, model, examples and later updates.",
+        "zh": "研究团队项目页，链接论文、模型、示例与后续更新。"
+      }
+    },
+    {
+      "id": "source-llava-repository",
+      "type": "code",
+      "label": {
+        "en": "Code",
+        "zh": "代码"
+      },
+      "title": {
+        "en": "LLaVA official repository",
+        "zh": "LLaVA 官方仓库"
+      },
+      "url": "https://github.com/haotian-liu/LLaVA",
+      "language": "en",
+      "purpose": "implementation",
+      "reliability": "primary",
+      "notes": {
+        "en": "Official repository with training code, checkpoints and data preparation instructions.",
+        "zh": "官方仓库，提供训练代码、检查点与数据准备说明。"
+      }
+    },
+    {
+      "id": "source-haotian-liu-profile",
+      "type": "personal-page",
+      "label": {
+        "en": "Personal homepage",
+        "zh": "个人主页"
+      },
+      "title": {
+        "en": "Haotian Liu academic homepage",
+        "zh": "刘昊天学术主页"
+      },
+      "url": "https://hliu.cc/",
+      "language": "en",
+      "purpose": "biography",
+      "reliability": "primary",
+      "notes": {
+        "en": "Researcher-controlled page that identifies Haotian Liu, lists LLaVA as his project and displays the selected portrait. No redistribution license is stated.",
+        "zh": "研究者本人维护的页面，确认刘昊天身份、列出 LLaVA 项目并展示所选肖像；页面未声明再分发许可。"
+      }
+    },
+    {
+      "id": "source-llava-figure-1",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "LLaVA Figure 1: network architecture",
+        "zh": "LLaVA Figure 1：网络架构"
+      },
+      "url": "https://ar5iv.labs.arxiv.org/html/2304.08485/assets/x1.png",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "Paper-rendered Figure 1 shows the CLIP vision encoder, trainable projection and Vicuna language model path used by the original LLaVA. It is the standard compact architecture screenshot, but the existing original local explainer remains the single selected explanatory image; the HTML rendering states no separate redistribution license.",
+        "zh": "论文 HTML 渲染的 Figure 1 展示原始 LLaVA 使用的 CLIP 视觉编码器、可训练投影层与 Vicuna 语言模型路径，是最常用的紧凑架构截图。页面仍只选用现有本地原创解释图；HTML 渲染未为该图单独声明再分发许可。"
+      }
+    },
+    {
+      "id": "source-llava-official-architecture",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "LLaVA architecture on the official project page",
+        "zh": "LLaVA 官方项目页架构图"
+      },
+      "url": "https://llava-vl.github.io/images/llava_arch.png",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "The official LLaVA project page publishes the selected vision-projection-language architecture diagram.",
+        "zh": "LLaVA 官方项目页发布了所选的视觉编码、投影与语言模型架构图。"
+      }
+    }
+  ],
+  "additionalClaims": [
+    {
+      "id": "claim-visual-instruction-data",
+      "importance": "core",
+      "text": {
+        "en": "LLaVA uses GPT-4 to convert image captions and bounding-box descriptions into multimodal instruction-following conversations.",
+        "zh": "LLaVA 使用 GPT-4 把图像描述和边界框描述转换为多模态指令跟随对话。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-llava-project"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "claim-two-stage",
+      "importance": "core",
+      "text": {
+        "en": "Training consists of feature alignment followed by end-to-end visual instruction tuning.",
+        "zh": "训练由特征对齐和随后的端到端视觉指令微调组成。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-llava-repository"
+      ],
+      "status": "verified"
+    }
+  ],
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Language-only instruction tuning had made assistants much easier to direct, while vision-language models were still commonly trained for fixed tasks such as captioning or question answering. LLaVA brought the instruction-following paradigm to image-grounded conversation with a deliberately simple connector architecture.",
+        "zh": "纯语言指令微调已经让助手更容易被自然语言控制，而视觉语言模型仍常围绕图像描述或问答等固定任务训练。LLaVA 以刻意简洁的连接架构，把指令跟随范式带入基于图像的对话。"
+      },
+      "sourceIds": [
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A learned linear projection maps CLIP visual features into the token embedding space of a large language model. Synthetic conversations generated with GPT-4 provide instruction data, and two-stage training first aligns modalities before tuning the combined assistant for multimodal dialogue.",
+        "zh": "一个可学习线性投影把 CLIP 视觉特征映射到大语言模型的 token 嵌入空间。GPT-4 生成的合成对话提供指令数据，两阶段训练先对齐模态，再微调整体助手完成多模态对话。"
+      },
+      "sourceIds": [
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat LLaVA as a foundational open recipe for visual instruction tuning because it paired a simple architecture with reproducible data generation and code. Its influence is visible in the rapid expansion of open multimodal assistants and in later work that improves encoders, connectors, data mixtures and visual reasoning.",
+        "zh": "专家通常把 LLaVA 视为开放视觉指令微调的基础方案，因为它把简洁架构、可复现的数据生成和代码结合起来。它推动了开放多模态助手快速扩张，也影响了后来对编码器、连接器、数据混合与视觉推理的改进。"
+      },
+      "sourceIds": [
+        "source-primary-record"
+      ]
+    }
+  ],
+  "visualModule": {
+    "type": "archiveLink",
+    "site": {
+      "en": "LLaVA Project",
+      "zh": "LLaVA Project"
+    },
+    "title": {
+      "en": "Visual Instruction Tuning",
+      "zh": "《Visual Instruction Tuning》"
+    },
+    "description": {
+      "en": "The project page provides the paper, examples and implementation links for the visual instruction tuning pipeline.",
+      "zh": "项目页提供视觉指令微调流程的论文、示例与实现链接。"
+    },
+    "url": "https://llava-vl.github.io/",
+    "source": "https://llava-vl.github.io/",
+    "license": {
+      "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+      "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+    },
+    "usage": {
+      "en": "Primary technical or official release evidence",
+      "zh": "主要技术或官方发布证据"
+    },
+    "action": {
+      "en": "Open LLaVA project",
+      "zh": "打开 LLaVA 项目页面"
+    }
+  },
+  "recordSvgSource": "research/benchcouncil-ai100/annual-events-2023/assets/ai100-annual-2022-2023-063-llava.svg",
+  "recordAsset": {
+    "caption": {
+      "en": "LLaVA visual instruction tuning",
+      "zh": "LLaVA 视觉指令微调"
+    },
+    "subcaption": {
+      "en": "Align visual features, then teach the combined model to follow image-grounded instructions",
+      "zh": "对齐视觉特征，再训练组合模型遵循图像相关指令"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "sourceName": {
+      "en": "Visual Instruction Tuning",
+      "zh": "《视觉指令微调》"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2304.08485",
+    "displayUsage": {
+      "en": "Original achievement explainer",
+      "zh": "原创成就解释图"
+    }
+  },
+  "achievement": {
+    "area": {
+      "en": "LLM",
+      "zh": "大语言模型"
+    },
+    "method": {
+      "en": "Two-stage visual instruction tuning with a simple learned connector",
+      "zh": "使用简洁可学习连接器的两阶段视觉指令微调"
+    },
+    "artifact": {
+      "en": "LLaVA large language-and-vision assistant",
+      "zh": "LLaVA 大型语言视觉助手"
+    },
+    "material": {
+      "en": "Primary publication or official release evidence, implementation materials and the original local explainer",
+      "zh": "主论文或官方发布证据、实现材料与本地原创解释图"
+    },
+    "demo": {
+      "en": "Follow the four-stage path and compare what enters, what is learned and what the system produces.",
+      "zh": "沿四阶段路径观察输入、学习内容与系统输出。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Vision",
+          "zh": "视觉"
+        },
+        "text": {
+          "en": "Frozen CLIP encoder extracts image features",
+          "zh": "冻结 CLIP 编码器提取图像特征"
+        }
+      },
+      {
+        "label": {
+          "en": "Connector",
+          "zh": "连接器"
+        },
+        "text": {
+          "en": "Projection maps features into language space",
+          "zh": "投影把特征映射到语言空间"
+        }
+      },
+      {
+        "label": {
+          "en": "Instructions",
+          "zh": "指令"
+        },
+        "text": {
+          "en": "GPT-4-generated conversations supervise tuning",
+          "zh": "GPT-4 生成对话用于监督微调"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Image and CLIP encoder",
+        "zh": "图像与 CLIP 编码器"
+      },
+      {
+        "en": "Learned projection",
+        "zh": "可学习投影"
+      },
+      {
+        "en": "Large language model",
+        "zh": "大语言模型"
+      },
+      {
+        "en": "Visual conversation",
+        "zh": "视觉对话"
+      }
+    ],
+    "demoImage": "resources/images/benchcouncil-ai100-annual/annual-063-llava_record.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Technical cue",
+          "zh": "技术线索"
+        },
+        "text": {
+          "en": "Align visual features, then teach the combined model to follow image-grounded instructions",
+          "zh": "这张图以四个阶段解释：图像与 CLIP 编码器、可学习投影、大语言模型、视觉对话。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Trace the arrows, then identify which stage reuses a pretrained component and which stage learns new information.",
+          "zh": "沿箭头逐步查看，并判断哪个阶段复用预训练组件、哪个阶段学习新信息。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "LLaVA Project",
+          "zh": "LLaVA Project"
+        },
+        "title": {
+          "en": "Visual Instruction Tuning",
+          "zh": "《Visual Instruction Tuning》"
+        },
+        "description": {
+          "en": "The project page provides the paper, examples and implementation links for the visual instruction tuning pipeline.",
+          "zh": "项目页提供视觉指令微调流程的论文、示例与实现链接。"
+        },
+        "url": "https://llava-vl.github.io/",
+        "source": "https://llava-vl.github.io/",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+        },
+        "usage": {
+          "en": "Primary technical or official release evidence",
+          "zh": "主要技术或官方发布证据"
+        },
+        "action": {
+          "en": "Open LLaVA project",
+          "zh": "打开 LLaVA 项目页面"
+        }
+      }
+    ]
+  },
+  "quiz": {
+    "question": {
+      "en": "What connects LLaVA’s vision encoder to its language model?",
+      "zh": "什么组件连接 LLaVA 的视觉编码器与语言模型？"
+    },
+    "options": [
+      {
+        "en": "A learned projection layer",
+        "zh": "可学习投影层"
+      },
+      {
+        "en": "A physical camera cable",
+        "zh": "实体相机线缆"
+      },
+      {
+        "en": "A search-engine index only",
+        "zh": "只有搜索引擎索引"
+      },
+      {
+        "en": "A recurrent robot controller",
+        "zh": "循环机器人控制器"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "LLaVA maps CLIP visual features into the language model’s embedding space through a learned projection.",
+      "zh": "LLaVA 通过可学习投影，把 CLIP 视觉特征映射到语言模型的嵌入空间。"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ]
+  },
+  "reviewNotes": {
+    "en": "Completed event-specific research on 2026-08-03. The exact BenchCouncil title, order, contributor prefix, institution, country and blank official fields were preserved. All listed people were checked against primary authorship evidence; portrait searches were completed and one identity-matched, attributed external-reference image was selected.",
+    "zh": "于 2026-08-03 完成事件专项研究。准确保留 BenchCouncil 的标题、顺序、人物前缀、机构、国家与官方空字段。所有列出人物均通过原始作者证据核对；肖像检索已完成，选择一张身份匹配且保留署名的外部参考图片。"
+  },
+  "supplementaryAssets": [
+    {
+      "id": "asset-annual-063-llava-official-architecture",
+      "type": "image",
+      "path": "resources/images/external/ai100-2023-llava/llava-official-architecture.png",
+      "role": "historical-diagram",
+      "caption": {
+        "en": "LLaVA vision-language architecture",
+        "zh": "LLaVA 视觉语言架构图"
+      },
+      "subcaption": {
+        "en": "A learned projection maps vision-encoder features into the language model alongside instruction tokens.",
+        "zh": "学习得到的投影层把视觉编码特征映射到语言模型，并与指令 token 一起输入。"
+      },
+      "sourceId": "source-llava-official-architecture",
+      "sourceName": {
+        "en": "LLaVA official project page",
+        "zh": "LLaVA 官方项目页"
+      },
+      "sourceUrl": "https://llava-vl.github.io/",
+      "imageUrl": "https://llava-vl.github.io/images/llava_arch.png",
+      "sourceReliability": "primary-paper-or-official-project-image",
+      "provenanceNotes": {
+        "en": "Downloaded from the named primary paper, official project repository or official release page and retained with direct source attribution.",
+        "zh": "图片下载自主论文、官方项目仓库或官方发布页，并保留直接来源标注。"
+      },
+      "rights": {
+        "status": "external-reference",
+        "license": {
+          "en": "Primary-source reference image displayed with attribution under the project's relaxed reference-image policy.",
+          "zh": "主来源参考图片；依据项目放宽后的参考图片策略展示，并保留完整来源标注。"
+        },
+        "attribution": "Liu et al., LLaVA project"
+      },
+      "displayUsage": {
+        "en": "Official project architecture",
+        "zh": "官方项目架构图"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    }
+  ],
+  "assetIds": [
+    "asset-annual-063-llava-portrait-haotian-liu",
+    "asset-annual-063-llava-official-architecture",
+    "asset-annual-063-llava-record"
+  ],
+  "overviewImageAssetId": "asset-annual-063-llava-portrait-haotian-liu"
+}

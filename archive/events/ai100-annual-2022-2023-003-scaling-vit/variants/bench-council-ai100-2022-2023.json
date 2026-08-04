@@ -7,12 +7,12 @@
     "zh": "Scaling ViT"
   },
   "displaySummary": {
-    "en": "AI100 (2022-2023) · Vision",
-    "zh": "AI100（2022-2023）· 视觉"
+    "en": "AI100 (2022-2023) · Vision Transformer scaling laws",
+    "zh": "AI100（2022-2023）· 视觉 Transformer 缩放规律"
   },
   "displayDescription": {
-    "en": "<p>BenchCouncil lists Scaling ViT in the Vision area of its AI100 (2022-2023) annual table. It associates the work with the publication “Scaling vision transformers”. The page names Xiaohua Zhai, Alexander Kolesnikov,Lucas Beyer as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“视觉”领域列出 Scaling ViT。该条目关联论文《Scaling vision transformers》。页面把 翟晓华、亚历山大·科列斯尼科夫、卢卡斯·拜尔 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>Scaling ViT studied Vision Transformers from roughly 5 million to 2 billion parameters, datasets from 1 million to 3 billion training images, and compute budgets from below one to more than 10,000 TPUv3 core-days. The authors found a saturating power-law relationship along the performance-compute frontier and emphasized that model capacity and compute must be scaled together rather than enlarging the model in isolation.</p><p>The work also refined the large-scale ViT training recipe with separate weight decay for the prediction head and body, memory-saving pooling in place of the class token, and a modified Adafactor optimizer. Its ViT-G/14 model reported 90.45% ImageNet top-1 accuracy and 84.86% in 10-shot linear evaluation; BenchCouncil lists Xiaohua Zhai, Alexander Kolesnikov and Lucas Beyer as the main contributors and associates the work with Google in Switzerland.</p>",
+    "zh": "<p>Scaling ViT 研究了约 500 万到 20 亿参数的视觉 Transformer、100 万到 30 亿张训练图像的数据规模，以及不足 1 到超过 1 万 TPUv3 core-days 的算力预算。作者发现性能与算力前沿近似遵循逐渐饱和的幂律关系，并强调模型容量与算力必须协同扩展，不能只孤立地增大模型。</p><p>该工作还改进了大规模 ViT 训练方案，包括为预测头和模型主体设置不同的权重衰减、用更节省内存的池化替代 class token，以及采用修改后的 Adafactor 优化器。其 ViT-G/14 报告了 90.45% 的 ImageNet top-1 准确率和 84.86% 的 10-shot 线性评估结果；BenchCouncil 将翟晓华、亚历山大·科列斯尼科夫和卢卡斯·拜尔列为主要人物，并将成果关联到瑞士的 Google。</p>"
   },
   "emphasis": [
     "benchcouncil-annual-2022-2023",
@@ -23,46 +23,56 @@
     {
       "type": "archiveLink",
       "site": {
-        "en": "Primary publication",
-        "zh": "主论文"
+        "en": "CVPR Open Access",
+        "zh": "CVPR 开放论文库"
       },
       "title": {
-        "en": "Scaling vision transformers",
-        "zh": "《Scaling vision transformers》"
+        "en": "Scaling Vision Transformers",
+        "zh": "《Scaling Vision Transformers》"
       },
       "description": {
-        "en": "Publication associated with this work by the BenchCouncil annual table.",
-        "zh": "BenchCouncil 年度表为该成果关联的论文。"
+        "en": "The primary conference page provides the abstract, complete author list, accepted manuscript, supplement, arXiv record and reported headline results.",
+        "zh": "会议原始页面提供摘要、完整作者表、接收稿、补充材料、arXiv 记录和主要实验结果。"
       },
-      "url": "https://doi.org/10.1109/cvpr52688.2022.01179",
-      "source": "https://doi.org/10.1109/cvpr52688.2022.01179",
+      "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhai_Scaling_Vision_Transformers_CVPR_2022_paper.html",
+      "source": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhai_Scaling_Vision_Transformers_CVPR_2022_paper.html",
       "license": {
-        "en": "Reference link only; local visuals are original redraws.",
-        "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+        "en": "Reference link only; the local explainer is an original redraw and does not copy a paper figure.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘，不复制论文图形。"
       },
       "usage": {
-        "en": "Publication and evidence reference",
-        "zh": "论文与证据参考"
+        "en": "Primary technical evidence reference",
+        "zh": "主要技术证据参考"
       },
       "action": {
-        "en": "Open publication",
-        "zh": "打开论文"
+        "en": "Open CVPR paper page",
+        "zh": "打开 CVPR 论文页面"
       }
     }
   ],
   "assetIds": [
+    "asset-annual-003-scaling-vit-portrait-xiaohua-zhai",
     "asset-annual-003-scaling-vit-record"
   ],
-  "overviewImageAssetId": "asset-annual-003-scaling-vit-record",
+  "overviewImageAssetId": "asset-annual-003-scaling-vit-portrait-xiaohua-zhai",
   "sourceIds": [
     "source-primary-record",
     "source-openalex-record",
-    "source-benchcouncil-annual"
+    "source-benchcouncil-annual",
+    "source-annual-003-scaling-vit-portrait-xiaohua-zhai",
+    "source-cvf-paper-page",
+    "source-arxiv-paper",
+    "source-cvf-paper-pdf",
+    "source-xiaohua-zhai-profile",
+    "source-lucas-beyer-profile"
   ],
   "claimIds": [
     "claim-annual-membership",
     "claim-publication-record",
-    "claim-contributor-record"
+    "claim-contributor-record",
+    "claim-contributors-cross-verified",
+    "claim-scaling-range-and-frontier",
+    "claim-training-recipe-and-results"
   ],
   "quizId": "ai100-annual-2022-2023-003-scaling-vit-quiz-1",
   "commentarySections": [
@@ -73,11 +83,12 @@
         "zh": "历史背景"
       },
       "html": {
-        "en": "BenchCouncil published this row as part of its AI100 (2022-2023) annual selection in the Vision area. The annual list captures a time-bounded view of prominent recent work rather than the membership of the long-term AI100 table.",
-        "zh": "BenchCouncil 把该行发布在 AI100（2022-2023）年度入选表的“视觉”领域中。年度表记录的是当时对近期代表性工作的阶段性观察，不等同于长期 AI100 主表成员。"
+        "en": "After the original Vision Transformer showed that transformer encoders could compete with convolutional networks on image recognition, the next question was how ViT behaved when models, datasets and compute grew by orders of magnitude. Scaling ViT addressed that gap with a controlled family of experiments rather than assuming that language-model scaling observations would transfer unchanged to vision.",
+        "zh": "原始 Vision Transformer 证明 Transformer 编码器可以在图像识别上与卷积网络竞争后，下一个问题是当模型、数据集和算力跨数量级增长时，ViT 会如何变化。Scaling ViT 通过一组受控实验回答这一空白，而不是直接假设语言模型的缩放观察可以原样迁移到视觉领域。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-cvf-paper-page",
+        "source-cvf-paper-pdf"
       ]
     },
     {
@@ -87,12 +98,11 @@
         "zh": "核心思想"
       },
       "html": {
-        "en": "The official work name is Scaling ViT, linked by the table to “Scaling vision transformers”. Xiaohua Zhai, Alexander Kolesnikov,Lucas Beyer are preserved in the same order as the Main Contributors cell. The institution field is Google.",
-        "zh": "官方成果名称为 Scaling ViT，表格将其关联到论文《Scaling vision transformers》。翟晓华、亚历山大·科列斯尼科夫、卢卡斯·拜尔 按“主要人物”单元格中的相同顺序显示。官方英文拼写与顺序保存在年度记录中，机构字段为 Google。"
+        "en": "The central result is a performance-compute frontier that is well approximated by a saturating power law when enough training data are available. Staying near that frontier requires scaling model capacity and compute together, while the revised head, pooling and optimizer choices make the largest ViT practical enough to fit and train on TPU hardware.",
+        "zh": "核心结果是：当训练数据充足时，性能与算力前沿可以由逐渐饱和的幂律较好近似。要保持接近这一前沿，模型容量和算力需要协同扩展；经过修改的预测头、池化方式和优化器则让最大规模 ViT 能够在 TPU 硬件上装入内存并完成训练。"
       },
       "sourceIds": [
-        "source-primary-record",
-        "source-benchcouncil-annual"
+        "source-cvf-paper-pdf"
       ]
     },
     {
@@ -102,11 +112,12 @@
         "zh": "长期影响"
       },
       "html": {
-        "en": "Experts should treat this record as evidence of BenchCouncil's 2022-2023 annual assessment, not as a permanent consensus ranking. Its lasting archival value is the exact preservation of the work name, publication link, contributor field, institution, country, citation value, and source order.",
-        "zh": "专家应把本记录视为 BenchCouncil 对 2022-2023 年度成果的阶段性评价证据，而不是永久共识排名。它的长期档案价值在于准确保留成果名称、论文线索、人物字段、机构、国家、引用数与来源顺序。"
+        "en": "Experts generally treat Scaling ViT as an early systematic scaling-law study for vision transformers and a practical bridge from the original ViT to billion-parameter vision backbones. Its conclusions are influential but deliberately bounded: the paper warns that the fitted relationships may not generalize beyond the studied scale or beyond the ViT family, making the work both a scaling guide and a model for stating empirical limits.",
+        "zh": "专家通常把 Scaling ViT 视为视觉 Transformer 早期具有系统性的缩放规律研究，也是从原始 ViT 走向十亿参数级视觉主干的重要实践桥梁。它的结论影响深远但边界明确：论文提醒这些拟合关系未必能推广到已研究规模之外或 ViT 家族之外，因此该工作既提供缩放指南，也示范了如何说明经验规律的适用限制。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-cvf-paper-pdf",
+        "source-cvf-paper-page"
       ]
     }
   ],
@@ -121,11 +132,11 @@
         "zh": "翟晓华"
       },
       "role": {
-        "en": "Main contributor for Scaling ViT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Scaling ViT 主要人物"
+        "en": "Equal-contribution author and the first main contributor listed by BenchCouncil",
+        "zh": "论文共同贡献作者，BenchCouncil 列出的第一位主要人物"
       },
       "figureType": "person",
-      "avatar": ""
+      "avatar": "resources/images/external/ai100-2022-scaling-vit/xiaohua-zhai-portrait.jpg"
     },
     {
       "name": {
@@ -133,8 +144,8 @@
         "zh": "亚历山大·科列斯尼科夫"
       },
       "role": {
-        "en": "Main contributor for Scaling ViT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Scaling ViT 主要人物"
+        "en": "Equal-contribution author and a main contributor listed by BenchCouncil",
+        "zh": "论文共同贡献作者，BenchCouncil 列出的主要人物"
       },
       "figureType": "person",
       "avatar": ""
@@ -145,8 +156,8 @@
         "zh": "卢卡斯·拜尔"
       },
       "role": {
-        "en": "Main contributor for Scaling ViT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Scaling ViT 主要人物"
+        "en": "Equal-contribution author and a main contributor listed by BenchCouncil",
+        "zh": "论文共同贡献作者，BenchCouncil 列出的主要人物"
       },
       "figureType": "person",
       "avatar": ""
@@ -183,50 +194,50 @@
       "zh": "视觉"
     },
     "method": {
-      "en": "Annual selection record",
-      "zh": "年度入选记录"
+      "en": "Coordinated ViT scaling and a memory-efficient training recipe",
+      "zh": "协同扩展 ViT 与节省内存的训练方案"
     },
     "artifact": {
-      "en": "Scaling ViT",
-      "zh": "Scaling ViT"
+      "en": "ViT-G/14 with two billion parameters",
+      "zh": "20 亿参数的 ViT-G/14"
     },
     "material": {
-      "en": "Scaling vision transformers",
-      "zh": "《Scaling vision transformers》与官方年度行"
+      "en": "CVPR paper, scaling experiments and accepted manuscript",
+      "zh": "CVPR 论文、缩放实验与会议接收稿"
     },
     "demo": {
-      "en": "Trace the official row from Scaling ViT to its publication, contributor field, institution, and country.",
-      "zh": "沿官方行查看 Scaling ViT 如何关联到论文、主要人物字段、机构与国家。"
+      "en": "Trace how model size, data and compute move together, then inspect the training changes that make the two-billion-parameter model feasible.",
+      "zh": "追踪模型规模、数据和算力如何协同增长，再查看让 20 亿参数模型可训练的方案改动。"
     },
     "keyConcepts": [
       {
         "label": {
-          "en": "Official Work",
-          "zh": "官方成果名称"
+          "en": "Scale Range",
+          "zh": "规模范围"
         },
         "text": {
-          "en": "Scaling ViT",
-          "zh": "Scaling ViT"
+          "en": "5M to 2B parameters; 1M to 3B training images",
+          "zh": "500 万到 20 亿参数；100 万到 30 亿张训练图像"
         }
       },
       {
         "label": {
-          "en": "Main Contributors",
-          "zh": "主要人物"
+          "en": "Scaling Rule",
+          "zh": "缩放规律"
         },
         "text": {
-          "en": "Xiaohua Zhai, Alexander Kolesnikov,Lucas Beyer",
-          "zh": "翟晓华、亚历山大·科列斯尼科夫、卢卡斯·拜尔"
+          "en": "Increase model capacity and compute together",
+          "zh": "模型容量与算力协同增长"
         }
       },
       {
         "label": {
-          "en": "Institution",
-          "zh": "机构"
+          "en": "Reported Result",
+          "zh": "报告结果"
         },
         "text": {
-          "en": "Google",
-          "zh": "Google"
+          "en": "90.45% ImageNet top-1 with ViT-G/14",
+          "zh": "ViT-G/14 达到 90.45% ImageNet top-1"
         }
       }
     ],
@@ -239,28 +250,32 @@
     ],
     "demoSteps": [
       {
-        "en": "Official work",
-        "zh": "官方成果名称"
+        "en": "Choose model capacity",
+        "zh": "选择模型容量"
       },
       {
-        "en": "Publication record",
-        "zh": "论文记录"
+        "en": "Match data and compute",
+        "zh": "匹配数据与算力"
       },
       {
-        "en": "Contributors and institution",
-        "zh": "主要人物与机构"
+        "en": "Apply the memory-efficient training recipe",
+        "zh": "应用节省内存的训练方案"
+      },
+      {
+        "en": "Evaluate full-data and few-shot transfer",
+        "zh": "评估全量数据与少样本迁移"
       }
     ],
     "demoImage": "resources/images/benchcouncil-ai100-annual/annual-003-scaling-vit_record.svg",
     "demoNotes": [
       {
         "label": {
-          "en": "Source cue",
-          "zh": "资料线索"
+          "en": "Experimental cue",
+          "zh": "实验线索"
         },
         "text": {
-          "en": "Scaling vision transformers",
-          "zh": "《Scaling vision transformers》与 BenchCouncil 年度行"
+          "en": "The paper varies model size, dataset size and training duration across a broad compute range, then fits the Pareto frontier rather than comparing only one model pair.",
+          "zh": "论文在宽广算力范围内改变模型规模、数据集规模和训练时长，并拟合帕累托前沿，而不是只比较一对模型。"
         }
       },
       {
@@ -269,8 +284,8 @@
           "zh": "互动点"
         },
         "text": {
-          "en": "Trace the official row from Scaling ViT to its publication, contributor field, institution, and country.",
-          "zh": "沿官方行查看 Scaling ViT 如何关联到论文、主要人物字段、机构与国家。"
+          "en": "Follow the three scaling inputs from left to right and identify which training changes reduce memory before the ViT-G result appears.",
+          "zh": "从左到右追踪三个缩放输入，并找出在 ViT-G 结果出现前哪些训练改动降低了内存占用。"
         }
       }
     ],
@@ -278,30 +293,30 @@
       {
         "type": "archiveLink",
         "site": {
-          "en": "Primary publication",
-          "zh": "主论文"
+          "en": "CVPR Open Access",
+          "zh": "CVPR 开放论文库"
         },
         "title": {
-          "en": "Scaling vision transformers",
-          "zh": "《Scaling vision transformers》"
+          "en": "Scaling Vision Transformers",
+          "zh": "《Scaling Vision Transformers》"
         },
         "description": {
-          "en": "Publication associated with this work by the BenchCouncil annual table.",
-          "zh": "BenchCouncil 年度表为该成果关联的论文。"
+          "en": "The conference page links the accepted paper and supplement and summarizes the two-billion-parameter ViT-G result.",
+          "zh": "会议页面链接接收稿与补充材料，并概述 20 亿参数 ViT-G 的主要结果。"
         },
-        "url": "https://doi.org/10.1109/cvpr52688.2022.01179",
-        "source": "https://doi.org/10.1109/cvpr52688.2022.01179",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhai_Scaling_Vision_Transformers_CVPR_2022_paper.html",
+        "source": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhai_Scaling_Vision_Transformers_CVPR_2022_paper.html",
         "license": {
-          "en": "Reference link only; local visuals are original redraws.",
-          "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+          "en": "Reference link only; the local explainer is an original redraw.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
         },
         "usage": {
-          "en": "Publication and evidence reference",
-          "zh": "论文与证据参考"
+          "en": "Primary paper and experimental evidence reference",
+          "zh": "主论文与实验依据参考"
         },
         "action": {
-          "en": "Open publication",
-          "zh": "打开论文"
+          "en": "Open CVPR paper page",
+          "zh": "打开 CVPR 论文页面"
         }
       }
     ],

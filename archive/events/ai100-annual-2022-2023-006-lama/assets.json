@@ -5,22 +5,23 @@
     "path": "resources/images/benchcouncil-ai100-annual/annual-006-lama_record.svg",
     "role": "annual-achievement-explainer",
     "caption": {
-      "en": "LaMa annual evidence map",
-      "zh": "LaMa 年度证据图"
+      "en": "LaMa large-mask inpainting pipeline",
+      "zh": "LaMa 大遮挡图像修复流程"
     },
     "subcaption": {
-      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
-      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+      "en": "Original local redraw of the masked-input, local/global FFC paths, training signals, and restored output described by the paper.",
+      "zh": "依据论文重绘的本地原创解释图，展示遮挡输入、FFC 局部/全局路径、训练信号与修复输出。"
     },
     "sourceIds": [
       "source-primary-record",
-      "source-benchcouncil-annual"
+      "source-arxiv-fulltext",
+      "source-lama-project"
     ],
     "sourceName": {
-      "en": "BenchCouncil and publication metadata",
-      "zh": "BenchCouncil 与论文元数据"
+      "en": "LaMa paper and official project page",
+      "zh": "LaMa 论文与官方项目页"
     },
-    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "sourceUrl": "https://openaccess.thecvf.com/content/WACV2022/html/Suvorov_Resolution-Robust_Large_Mask_Inpainting_With_Fourier_Convolutions_WACV_2022_paper.html",
     "rights": {
       "status": "original-redraw",
       "license": {
@@ -33,8 +34,8 @@
       }
     },
     "displayUsage": {
-      "en": "Annual record explainer",
-      "zh": "年度记录解释图"
+      "en": "Algorithm pipeline explainer",
+      "zh": "算法流程解释图"
     },
     "usage": [
       "variant:bench-council-ai100-2022-2023"

@@ -29,10 +29,35 @@
     "importance": "display",
     "text": {
       "en": "The Main Contributors field is “Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, Noah Fiedel”.",
-      "zh": "“主要人物”字段依次列出 Aakanksha Chowdhery（官方页拼写）、Sharan Narang（官方页拼写）、雅各布·德夫林、Kathy Meier-Hellstern（官方页拼写）、Douglas Eck（官方页拼写）、杰夫·迪恩、Slav Petrov（官方页拼写）、Noah Fiedel（官方页拼写）；官方英文原文为“Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, Noah Fiedel”。"
+      "zh": "“主要人物”字段依次列出 阿坎莎·乔杜里、沙兰·纳朗、雅各布·德夫林、凯西·迈尔-赫尔斯特恩、道格拉斯·埃克、杰夫·迪恩、斯拉夫·彼得罗夫、诺亚·菲德尔；官方英文原文为“Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, Noah Fiedel”。"
     },
     "sourceIds": [
       "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-core-method",
+    "importance": "core",
+    "text": {
+      "en": "PaLM uses pathways-distributed dense transformer scaling.",
+      "zh": "PaLM 采用基于 Pathways 的稠密 Transformer 分布式扩展。"
+    },
+    "sourceIds": [
+      "source-palm-paper",
+      "source-primary-record"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-historical-significance",
+    "importance": "display",
+    "text": {
+      "en": "Experts generally treat PaLM as a landmark in the co-design of large models and accelerator infrastructure. It also supplied influential evidence that some language-model capabilities can improve sharply rather than smoothly with scale.",
+      "zh": "专家通常把 PaLM 视为大模型与加速器基础设施协同设计的里程碑。它还提供了有影响力的证据，说明某些语言模型能力可能随规模出现跃升，而不是平滑增长。"
+    },
+    "sourceIds": [
+      "source-palm-paper"
     ],
     "status": "verified"
   }

@@ -7,12 +7,12 @@
     "zh": "Scaling ViT"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in Vision",
-    "zh": "BenchCouncil AI100（2022-2023）视觉年度条目"
+    "en": "A systematic study of how Vision Transformer performance changes with model size, training data and compute",
+    "zh": "系统研究视觉 Transformer 性能如何随模型规模、训练数据和算力共同变化"
   },
   "description": {
-    "en": "<p>BenchCouncil lists Scaling ViT in the Vision area of its AI100 (2022-2023) annual table. It associates the work with the publication “Scaling vision transformers”. The page names Xiaohua Zhai, Alexander Kolesnikov,Lucas Beyer as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“视觉”领域列出 Scaling ViT。该条目关联论文《Scaling vision transformers》。页面把 翟晓华、亚历山大·科列斯尼科夫、卢卡斯·拜尔 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>Scaling ViT studied Vision Transformers from roughly 5 million to 2 billion parameters, datasets from 1 million to 3 billion training images, and compute budgets from below one to more than 10,000 TPUv3 core-days. The authors found a saturating power-law relationship along the performance-compute frontier and emphasized that model capacity and compute must be scaled together rather than enlarging the model in isolation.</p><p>The work also refined the large-scale ViT training recipe with separate weight decay for the prediction head and body, memory-saving pooling in place of the class token, and a modified Adafactor optimizer. Its ViT-G/14 model reported 90.45% ImageNet top-1 accuracy and 84.86% in 10-shot linear evaluation; BenchCouncil lists Xiaohua Zhai, Alexander Kolesnikov and Lucas Beyer as the main contributors and associates the work with Google in Switzerland.</p>",
+    "zh": "<p>Scaling ViT 研究了约 500 万到 20 亿参数的视觉 Transformer、100 万到 30 亿张训练图像的数据规模，以及不足 1 到超过 1 万 TPUv3 core-days 的算力预算。作者发现性能与算力前沿近似遵循逐渐饱和的幂律关系，并强调模型容量与算力必须协同扩展，不能只孤立地增大模型。</p><p>该工作还改进了大规模 ViT 训练方案，包括为预测头和模型主体设置不同的权重衰减、用更节省内存的池化替代 class token，以及采用修改后的 Adafactor 优化器。其 ViT-G/14 报告了 90.45% 的 ImageNet top-1 准确率和 84.86% 的 10-shot 线性评估结果；BenchCouncil 将翟晓华、亚历山大·科列斯尼科夫和卢卡斯·拜尔列为主要人物，并将成果关联到瑞士的 Google。</p>"
   },
   "location": {
     "regionId": "switzerland",
@@ -43,10 +43,11 @@
         "zh": "翟晓华"
       },
       "role": {
-        "en": "Main contributor for Scaling ViT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Scaling ViT 主要人物"
+        "en": "Equal-contribution author and the first main contributor listed by BenchCouncil",
+        "zh": "论文共同贡献作者，BenchCouncil 列出的第一位主要人物"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2022-scaling-vit/xiaohua-zhai-portrait.jpg"
     },
     {
       "figureId": "alexander-kolesnikov",
@@ -55,8 +56,8 @@
         "zh": "亚历山大·科列斯尼科夫"
       },
       "role": {
-        "en": "Main contributor for Scaling ViT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Scaling ViT 主要人物"
+        "en": "Equal-contribution author and a main contributor listed by BenchCouncil",
+        "zh": "论文共同贡献作者，BenchCouncil 列出的主要人物"
       },
       "organizationIds": []
     },
@@ -67,8 +68,8 @@
         "zh": "卢卡斯·拜尔"
       },
       "role": {
-        "en": "Main contributor for Scaling ViT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Scaling ViT 主要人物"
+        "en": "Equal-contribution author and a main contributor listed by BenchCouncil",
+        "zh": "论文共同贡献作者，BenchCouncil 列出的主要人物"
       },
       "organizationIds": []
     }
@@ -78,8 +79,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 3 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 3 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed event-specific research on 2026-08-03. The official BenchCouncil title, order, contributors, institution and country were preserved. All three listed contributors were confirmed against the primary paper and researcher-controlled pages; Neil Houlsby remains documented as the fourth paper author but is not inserted into the BenchCouncil contributor prefix. Xiaohua Zhai's homepage portrait is the single person image, Lucas Beyer's verified GitHub avatar is documented but not selected, and no reliable portrait was recovered for Alexander Kolesnikov.",
+      "zh": "于 2026-08-03 完成事件专项研究。保留 BenchCouncil 官方标题、顺序、主要人物、机构和国家字段。三位官方主要人物均通过主论文与研究者本人页面确认；尼尔·霍尔斯比作为论文第四位作者保留在资料中，但不插入 BenchCouncil 人物前缀。翟晓华主页肖像作为唯一人物图，卢卡斯·拜尔已核验的 GitHub 头像仅记录而不采用，亚历山大·科列斯尼科夫未找到可可靠采用的肖像。"
     }
   }
 }

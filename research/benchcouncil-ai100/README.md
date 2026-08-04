@@ -18,4 +18,8 @@ Annual events use one locally redrawn achievement explainer by default. They do 
 
 `annual-portrait-research-2026-08-03.json` records the portrait search for all 316 unique annual-table contributors. Run `npm run research:ai100-annual-portraits` to refresh the batch Wikidata/Wikimedia checks. The current pass selects 10 verified people across 11 events, keeps 2 institution-mismatched candidates out of production, and leaves 304 people text-only because no image met the source and reliability rules. Previously generated `*_contributors.svg` files remain in the append-only resource directory but are no longer referenced by Archive events or runtime data.
 
+The remaining 2022 event research is parallelized through `annual-events-2022/`. Each worker session owns one event JSON, one optional event-local SVG source, one external image directory, and the matching Archive event directory. Use `npm run list:ai100-2022`, `npm run prepare:ai100-2022-event -- --event <order>`, targeted `npm run sync:ai100-annual -- --event <order>`, and `npm run validate:ai100-2022-event -- --event <order>`. See `annual-events-2022/README.md` for the ownership and integration rules.
+
+The highlighted 2023 event research uses the same isolated workflow under `annual-events-2023/`. Use `npm run list:ai100-2023`, `npm run prepare:ai100-2023-event -- --event <order>`, targeted `npm run sync:ai100-annual -- --event <order>`, and `npm run validate:ai100-2023-event -- --event <order>`.
+
 The former storyline entries `CLIP`, `DALL-E`, `Stable Diffusion`, and `Segment Anything` remain in Archive as non-canonical extensions. They are excluded from the long-term storyline because they do not appear in the root-page table snapshot.

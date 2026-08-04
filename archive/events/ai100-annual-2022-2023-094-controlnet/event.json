@@ -7,12 +7,12 @@
     "zh": "ControlNet"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in Diffusion Model Application",
-    "zh": "BenchCouncil AI100（2022-2023）扩散模型应用年度条目"
+    "en": "Spatial conditioning for pretrained text-to-image diffusion models",
+    "zh": "为预训练文生图扩散模型加入空间条件控制"
   },
   "description": {
-    "en": "<p>BenchCouncil lists ControlNet in the Diffusion Model Application area of its AI100 (2022-2023) annual table. It associates the work with the publication “Adding conditional control to text-to-image diffusion models”. The page names Lvmin Zhang, Maneesh Agrawala as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“扩散模型应用”领域列出 ControlNet。该条目关联论文《Adding conditional control to text-to-image diffusion models》。页面把 Lvmin Zhang（官方页拼写）、Maneesh Agrawala（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>ControlNet adds spatial conditioning to a pretrained text-to-image diffusion model without discarding the original model’s learned capability. A trainable copy of the encoder is connected to a locked backbone through zero-initialized convolution layers, allowing edge maps, depth, pose, segmentation and other controls to guide generation.</p><p>The zero-convolution design starts with no disturbance to the pretrained network and gradually learns how much control information to inject.</p>",
+    "zh": "<p>ControlNet 在不丢弃原有生成能力的前提下，为预训练文生图扩散模型加入空间条件。一个可训练的编码器副本通过零初始化卷积连接到锁定主干，使边缘、深度、姿态、分割等控制信号能够引导生成。</p><p>零卷积设计在训练开始时不会扰动预训练网络，随后逐步学习应注入多少控制信息。</p>"
   },
   "location": {
     "regionId": "united-states",
@@ -40,11 +40,11 @@
       "figureId": "lvmin-zhang",
       "name": {
         "en": "Lvmin Zhang",
-        "zh": "Lvmin Zhang（官方页拼写）"
+        "zh": "张吕敏"
       },
       "role": {
-        "en": "Main contributor for ControlNet in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ControlNet 主要人物"
+        "en": "First author of the ControlNet paper",
+        "zh": "ControlNet 论文第一作者"
       },
       "organizationIds": []
     },
@@ -52,13 +52,14 @@
       "figureId": "maneesh-agrawala",
       "name": {
         "en": "Maneesh Agrawala",
-        "zh": "Maneesh Agrawala（官方页拼写）"
+        "zh": "马尼什·阿格拉瓦拉"
       },
       "role": {
-        "en": "Main contributor for ControlNet in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ControlNet 主要人物"
+        "en": "Co-author of the ControlNet paper",
+        "zh": "ControlNet 论文共同作者"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2023-controlnet/maneesh-agrawala.jpg"
     }
   ],
   "organizations": [],
@@ -66,8 +67,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 94 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 94 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed event-specific research on 2026-08-03. The exact BenchCouncil title, order, contributor prefix, institution, country and blank official fields were preserved. All listed people were checked against primary authorship evidence; portrait searches were completed and one identity-matched, attributed external-reference image was selected.",
+      "zh": "于 2026-08-03 完成事件专项研究。准确保留 BenchCouncil 的标题、顺序、人物前缀、机构、国家与官方空字段。所有列出人物均通过原始作者证据核对；肖像检索已完成，选择一张身份匹配且保留署名的外部参考图片。"
     }
   }
 }

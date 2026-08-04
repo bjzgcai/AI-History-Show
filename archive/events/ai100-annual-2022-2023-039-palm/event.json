@@ -7,12 +7,12 @@
     "zh": "PaLM"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in LLM",
-    "zh": "BenchCouncil AI100（2022-2023）大语言模型年度条目"
+    "en": "A 540-billion-parameter language model scaled efficiently across 6,144 TPU v4 chips with Pathways",
+    "zh": "通过 Pathways 在 6,144 个 TPU v4 芯片上高效扩展的 5,400 亿参数语言模型"
   },
   "description": {
-    "en": "<p>BenchCouncil lists PaLM in the LLM area of its AI100 (2022-2023) annual table. It associates the work with the publication “PaLM: Scaling Language Modeling with Pathways”. The page names Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, Noah Fiedel as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“大语言模型”领域列出 PaLM。该条目关联论文《PaLM: Scaling Language Modeling with Pathways》。页面把 Aakanksha Chowdhery（官方页拼写）、Sharan Narang（官方页拼写）、雅各布·德夫林、Kathy Meier-Hellstern（官方页拼写）、Douglas Eck（官方页拼写）、杰夫·迪恩、Slav Petrov（官方页拼写）、Noah Fiedel（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>PaLM tested whether a single dense language model could be trained efficiently at 540 billion parameters using Google's Pathways system. The work used 6,144 TPU v4 chips and a 780-billion-token multilingual corpus, pairing systems engineering with a broad evaluation program.</p><p>As scale increased, PaLM improved few-shot language understanding, generation, reasoning and code tasks, while also showing discontinuous gains on some capabilities. The project became an important reference point for both large-model infrastructure and discussions of emergent behavior.</p>",
+    "zh": "<p>PaLM 检验了能否借助 Google 的 Pathways 系统高效训练一个 5,400 亿参数的稠密语言模型。该工作使用 6,144 个 TPU v4 芯片和 7,800 亿 token 的多语种语料，把系统工程与广泛评测结合起来。</p><p>随着规模增加，PaLM 在少样本语言理解、生成、推理和代码任务上持续提升，并在部分能力上出现不连续跃升。该项目因此成为大模型基础设施和涌现能力讨论的重要参照。</p>"
   },
   "location": {
     "regionId": "united-states",
@@ -40,11 +40,11 @@
       "figureId": "aakanksha-chowdhery",
       "name": {
         "en": "Aakanksha Chowdhery",
-        "zh": "Aakanksha Chowdhery（官方页拼写）"
+        "zh": "阿坎莎·乔杜里"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "First author of the PaLM paper",
+        "zh": "PaLM 论文第一作者"
       },
       "organizationIds": []
     },
@@ -52,11 +52,11 @@
       "figureId": "sharan-narang",
       "name": {
         "en": "Sharan Narang",
-        "zh": "Sharan Narang（官方页拼写）"
+        "zh": "沙兰·纳朗"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "organizationIds": []
     },
@@ -67,8 +67,8 @@
         "zh": "雅各布·德夫林"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "organizationIds": []
     },
@@ -76,11 +76,11 @@
       "figureId": "kathy-meier-hellstern",
       "name": {
         "en": "Kathy Meier-Hellstern",
-        "zh": "Kathy Meier-Hellstern（官方页拼写）"
+        "zh": "凯西·迈尔-赫尔斯特恩"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "organizationIds": []
     },
@@ -88,11 +88,11 @@
       "figureId": "douglas-eck",
       "name": {
         "en": "Douglas Eck",
-        "zh": "Douglas Eck（官方页拼写）"
+        "zh": "道格拉斯·埃克"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "organizationIds": []
     },
@@ -103,8 +103,8 @@
         "zh": "杰夫·迪恩"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "organizationIds": [],
       "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg"
@@ -113,11 +113,11 @@
       "figureId": "slav-petrov",
       "name": {
         "en": "Slav Petrov",
-        "zh": "Slav Petrov（官方页拼写）"
+        "zh": "斯拉夫·彼得罗夫"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "organizationIds": []
     },
@@ -125,11 +125,11 @@
       "figureId": "noah-fiedel",
       "name": {
         "en": "Noah Fiedel",
-        "zh": "Noah Fiedel（官方页拼写）"
+        "zh": "诺亚·菲德尔"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "organizationIds": []
     }
@@ -139,8 +139,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 39 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 39 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+      "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
     }
   }
 }

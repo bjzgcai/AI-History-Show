@@ -3,34 +3,34 @@
     "id": "ai100-annual-2022-2023-037-palm-e-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to PaLM-E?",
-      "zh": "BenchCouncil 年度表把 PaLM-E 归入哪个领域？"
+      "en": "How does PaLM-E present robot observations to its language model?",
+      "zh": "PaLM-E 如何把机器人观察交给语言模型？"
     },
     "options": [
       {
-        "en": "LLM",
-        "zh": "大语言模型"
+        "en": "As continuous embeddings mixed with text tokens",
+        "zh": "作为与文本 token 混合的连续嵌入"
       },
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "As a separate handwritten rule book",
+        "zh": "作为独立的手写规则册"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "Only as final reward numbers",
+        "zh": "只作为最终奖励数值"
       },
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "By deleting the text input",
+        "zh": "通过删除文本输入"
       }
     ],
     "answer": 0,
     "explanation": {
-      "en": "PaLM-E appears in the LLM area of the official annual table.",
-      "zh": "PaLM-E 位于官方年度表的“大语言模型”领域。"
+      "en": "PaLM-E encodes images and robot states into continuous embeddings placed in the same sequence as text.",
+      "zh": "PaLM-E 把图像和机器人状态编码为连续嵌入，并与文本放入同一序列。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-primary-record"
     ],
     "assetIds": [
       "asset-annual-037-palm-e-record"

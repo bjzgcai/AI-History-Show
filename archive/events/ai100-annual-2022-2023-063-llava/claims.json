@@ -29,10 +29,36 @@
     "importance": "display",
     "text": {
       "en": "The Main Contributors field is “Haotian Liu, Chunyuan Li, Yong Jae Lee”.",
-      "zh": "“主要人物”字段依次列出 Haotian Liu（官方页拼写）、Chunyuan Li（官方页拼写）、Yong Jae Lee（官方页拼写）；官方英文原文为“Haotian Liu, Chunyuan Li, Yong Jae Lee”。"
+      "zh": "“主要人物”字段依次列出 刘昊天、李春源、李永宰；官方英文原文为“Haotian Liu, Chunyuan Li, Yong Jae Lee”。"
     },
     "sourceIds": [
       "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-visual-instruction-data",
+    "importance": "core",
+    "text": {
+      "en": "LLaVA uses GPT-4 to convert image captions and bounding-box descriptions into multimodal instruction-following conversations.",
+      "zh": "LLaVA 使用 GPT-4 把图像描述和边界框描述转换为多模态指令跟随对话。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-llava-project"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-two-stage",
+    "importance": "core",
+    "text": {
+      "en": "Training consists of feature alignment followed by end-to-end visual instruction tuning.",
+      "zh": "训练由特征对齐和随后的端到端视觉指令微调组成。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-llava-repository"
     ],
     "status": "verified"
   }

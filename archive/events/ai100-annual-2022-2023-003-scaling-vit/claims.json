@@ -35,5 +35,43 @@
       "source-benchcouncil-annual"
     ],
     "status": "verified"
+  },
+  {
+    "id": "claim-contributors-cross-verified",
+    "importance": "core",
+    "text": {
+      "en": "Xiaohua Zhai, Alexander Kolesnikov and Lucas Beyer, the three main contributors named by BenchCouncil, are all authors of the CVPR paper; the full paper author list additionally includes Neil Houlsby.",
+      "zh": "BenchCouncil 列出的三位主要人物翟晓华、亚历山大·科列斯尼科夫和卢卡斯·拜尔均为 CVPR 论文作者；完整论文作者表还包括尼尔·霍尔斯比。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual",
+      "source-cvf-paper-page"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-scaling-range-and-frontier",
+    "importance": "core",
+    "text": {
+      "en": "The study spans models from about 5 million to 2 billion parameters, datasets from 1 million to 3 billion images, and compute from below one to over 10,000 TPUv3 core-days; its performance-compute frontier is approximated by a saturating power law.",
+      "zh": "研究覆盖约 500 万到 20 亿参数、100 万到 30 亿张图像，以及不足 1 到超过 1 万 TPUv3 core-days 的算力范围；性能与算力前沿可近似为逐渐饱和的幂律。"
+    },
+    "sourceIds": [
+      "source-cvf-paper-pdf"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-training-recipe-and-results",
+    "importance": "display",
+    "text": {
+      "en": "The paper combines a memory-efficient ViT training recipe with ViT-G/14, reporting 90.45% ImageNet top-1 accuracy and 84.86% top-1 with 10 examples per class in linear evaluation.",
+      "zh": "论文把更节省内存的 ViT 训练方案用于 ViT-G/14，报告 90.45% 的 ImageNet top-1 准确率，以及每类 10 个样本线性评估下 84.86% 的 top-1 准确率。"
+    },
+    "sourceIds": [
+      "source-cvf-paper-page",
+      "source-cvf-paper-pdf"
+    ],
+    "status": "verified"
   }
 ]

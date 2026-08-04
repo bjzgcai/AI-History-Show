@@ -1,0 +1,534 @@
+{
+    "schemaVersion": 1,
+    "eventId": "ai100-annual-2022-2023-004-replknet",
+    "status": "complete",
+    "officialOrder": 4,
+    "work": "RepLKNet",
+    "official": {
+        "area": "Vision",
+        "publication": "Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs",
+        "citation": "392",
+        "contributors": "Xiaohan Ding,Xiangyu Zhang",
+        "institution": "BNRist, Tsinghua University, MEGVII, Aberystwyth University",
+        "country": "China, UK",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+    },
+    "summary": {
+        "en": "RepLKNet revisited large convolutional kernels and scaled a pure CNN to 31x31 depth-wise convolutions.",
+        "zh": "RepLKNet 重新审视大卷积核设计，把纯 CNN 扩展到 31×31 深度卷积。"
+    },
+    "displaySummary": {
+        "en": "Large-kernel CNN · Structural re-parameterization",
+        "zh": "大核 CNN · 结构重参数化"
+    },
+    "description": {
+        "en": "<p>BenchCouncil lists RepLKNet as row 4 in the Vision area of its AI100 (2022-2023) annual table, preserving Xiaohan Ding and Xiangyu Zhang as the official contributor prefix. The associated CVPR 2022 paper asks whether modern CNNs can recover global context by using a few very large kernels instead of repeatedly stacking small ones.</p><p>RepLKNet uses re-parameterized large depth-wise convolutions with kernels as large as 31x31, then merges the training-time branches into a simpler deployment path. The paper reports competitive ImageNet and ADE20K results and finds that large-kernel CNNs have larger effective receptive fields and stronger shape bias than small-kernel counterparts.</p>",
+        "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表视觉领域第 4 行列出 RepLKNet，并把丁霄汉、张祥雨作为官方主要人物前缀保留。关联的 CVPR 2022 论文重新提出一个基础问题：现代 CNN 能否通过少量超大卷积核获得更广的上下文，而不是反复堆叠小卷积核。</p><p>RepLKNet 使用最大 31×31 的重参数化大核深度卷积，并把训练期的多分支结构合并为更简单的部署路径。论文报告了有竞争力的 ImageNet 与 ADE20K 结果，同时发现大核 CNN 相比小核模型具有更大的有效感受野和更强的形状偏置。</p>"
+    },
+    "location": {
+        "regionId": "china",
+        "country": {
+            "en": "China, United Kingdom",
+            "zh": "中国、英国"
+        },
+        "place": {
+            "en": "BNRist, Tsinghua University, MEGVII, Aberystwyth University",
+            "zh": "北京信息科学与技术国家研究中心（BNRist）、清华大学、旷视科技、阿伯里斯特威斯大学"
+        },
+        "coordinates": [35.8617, 104.1954]
+    },
+    "people": [
+        {
+            "name": {
+                "en": "Xiaohan Ding",
+                "zh": "丁霄汉"
+            },
+            "role": {
+                "en": "First author and the first main contributor listed by BenchCouncil",
+                "zh": "论文第一作者，BenchCouncil 列出的第一位主要人物"
+            },
+            "verification": {
+                "status": "confirmed",
+                "sourceIds": [
+                    "source-benchcouncil-annual",
+                    "source-primary-record",
+                    "source-arxiv-paper",
+                    "source-official-pytorch-repository",
+                    "source-xiaohan-ding-github",
+                    "source-xiaohan-ding-personal-blog"
+                ],
+                "notes": {
+                    "en": "BenchCouncil lists Xiaohan Ding first, and both the CVF and arXiv records list him as first author. His GitHub account owns the official RepLKNet PyTorch repository and states a Tsinghua PhD background; his personal Chinese blog identifies the same computer-vision researcher as 丁霄汉.",
+                    "zh": "BenchCouncil 首先列出丁霄汉，CVF 与 arXiv 论文记录也均将 Xiaohan Ding 列为第一作者。其 GitHub 账户拥有 RepLKNet 官方 PyTorch 仓库并注明清华博士背景；其中文个人博客则把同一位计算机视觉研究者标为“丁霄汉”。"
+                }
+            },
+            "portraitSearch": {
+                "status": "candidate-rejected",
+                "sourceUrl": "https://github.com/DingXiaoH",
+                "imageUrl": "https://avatars.githubusercontent.com/u/55726946?v=4",
+                "reliability": "primary-account-source-but-not-a-person-portrait",
+                "rights": "The researcher-controlled account is identity-matched, but its current avatar depicts a cat rather than Xiaohan Ding; it must not be used as a portrait. Other speaker and media images did not provide clear redistribution rights.",
+                "candidates": [
+                    {
+                        "sourceUrl": "https://github.com/DingXiaoH",
+                        "imageUrl": "https://avatars.githubusercontent.com/u/55726946?v=4",
+                        "decision": "rejected-not-a-person"
+                    },
+                    {
+                        "sourceUrl": "https://www.cnblogs.com/dingxiaohan/",
+                        "decision": "rejected-default-avatar"
+                    }
+                ]
+            }
+        },
+        {
+            "name": {
+                "en": "Xiangyu Zhang",
+                "zh": "张祥雨"
+            },
+            "role": {
+                "en": "Co-author and the second main contributor listed by BenchCouncil",
+                "zh": "论文共同作者，BenchCouncil 列出的第二位主要人物"
+            },
+            "verification": {
+                "status": "confirmed",
+                "sourceIds": [
+                    "source-benchcouncil-annual",
+                    "source-primary-record",
+                    "source-arxiv-paper",
+                    "source-xiangyu-zhang-biography"
+                ],
+                "notes": {
+                    "en": "BenchCouncil lists Xiangyu Zhang second, and the CVF and arXiv records identify him as a RepLKNet paper author. A detailed Chinese biography identifies the same 张祥雨 through his Megvii role, ResNet work and computer-vision research record.",
+                    "zh": "BenchCouncil 第二位列出张祥雨，CVF 与 arXiv 论文记录均确认他是 RepLKNet 作者。中文人物资料通过其旷视职务、ResNet 工作和计算机视觉研究经历确认同一人物为“张祥雨”。"
+                }
+            },
+            "portraitSearch": {
+                "status": "not-selected",
+                "sourceUrl": "https://m.163.com/dy/article/I3G7GS4M0511DPVD.html",
+                "reliability": "secondary-biographical-source-no-cleared-image-rights",
+                "rights": "The biography contains identity-matched photographs, but it is a republished media article and does not grant redistribution rights. Existing local legacy imagery also lacks independent image provenance, so no portrait is selected."
+            }
+        }
+    ],
+    "selectedPortrait": null,
+    "sourceOverrides": {
+        "source-primary-record": {
+            "label": {
+                "en": "Paper page",
+                "zh": "论文页面"
+            },
+            "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Ding_Scaling_Up_Your_Kernels_to_31x31_Revisiting_Large_Kernel_Design_CVPR_2022_paper.html",
+            "notes": {
+                "en": "CVF Open Access record for the CVPR 2022 paper, including author order, abstract, full PDF and conference citation.",
+                "zh": "CVF 开放论文记录，提供 CVPR 2022 作者顺序、摘要、完整 PDF 与会议引用信息。"
+            }
+        },
+        "source-openalex-record": {
+            "notes": {
+                "en": "Secondary bibliographic record retained only to cross-check the publication identity and year.",
+                "zh": "二级书目记录，仅用于交叉核对论文身份与出版年份。"
+            }
+        }
+    },
+    "additionalSources": [
+        {
+            "id": "source-arxiv-paper",
+            "type": "paper",
+            "label": {
+                "en": "Paper",
+                "zh": "论文"
+            },
+            "title": {
+                "en": "Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs",
+                "zh": "《把卷积核扩大到 31×31：重新审视 CNN 中的大核设计》"
+            },
+            "url": "https://arxiv.org/abs/2203.06717",
+            "language": "en",
+            "purpose": "core-evidence",
+            "reliability": "primary",
+            "notes": {
+                "en": "Author-submitted paper record and abstract, including all six authors, technical claims, reported results and the official code link.",
+                "zh": "作者提交的论文记录与摘要，包含六位完整作者、技术主张、实验结果和官方代码链接。"
+            }
+        },
+        {
+            "id": "source-official-pytorch-repository",
+            "type": "code",
+            "label": {
+                "en": "Code",
+                "zh": "代码"
+            },
+            "title": {
+                "en": "DingXiaoH/RepLKNet-pytorch",
+                "zh": "DingXiaoH/RepLKNet-pytorch"
+            },
+            "url": "https://github.com/DingXiaoH/RepLKNet-pytorch",
+            "language": "en",
+            "purpose": "implementation",
+            "reliability": "primary",
+            "notes": {
+                "en": "Repository owned by the first author and described as the official PyTorch implementation; it provides models and pretrained weights under the MIT License.",
+                "zh": "由第一作者账户维护并标注为官方 PyTorch 实现，提供模型与预训练权重，采用 MIT License。"
+            }
+        },
+        {
+            "id": "source-xiaohan-ding-github",
+            "type": "personal-page",
+            "label": {
+                "en": "Personal homepage",
+                "zh": "个人主页"
+            },
+            "title": {
+                "en": "Xiaohan Ding GitHub profile",
+                "zh": "丁霄汉 GitHub 主页"
+            },
+            "url": "https://github.com/DingXiaoH",
+            "language": "en",
+            "purpose": "biography",
+            "reliability": "primary",
+            "notes": {
+                "en": "The account displays the name Xiaohan Ding, states a Tsinghua PhD background and pins the official RepLKNet PyTorch repository. Its current avatar is not a person and is explicitly rejected for display.",
+                "zh": "账户显示姓名 Xiaohan Ding，注明清华博士背景，并置顶 RepLKNet 官方 PyTorch 仓库。当前头像不是人物照片，因此明确拒绝用于展示。"
+            }
+        },
+        {
+            "id": "source-xiaohan-ding-personal-blog",
+            "type": "personal-page",
+            "label": {
+                "en": "Personal homepage",
+                "zh": "个人主页"
+            },
+            "title": {
+                "en": "Ding Xiaohan personal blog",
+                "zh": "丁霄汉个人博客"
+            },
+            "url": "https://www.cnblogs.com/dingxiaohan/",
+            "language": "zh",
+            "purpose": "biography",
+            "reliability": "primary",
+            "notes": {
+                "en": "The username and author byline identify 丁霄汉, while the posts describe the author as a computer-vision PhD student. The site uses a default avatar and supplies no portrait.",
+                "zh": "用户名与文章署名显示“丁霄汉”，文章说明作者当时是计算机视觉方向博士生。网站使用默认头像，没有提供可用肖像。"
+            }
+        },
+        {
+            "id": "source-xiangyu-zhang-biography",
+            "type": "profile",
+            "label": {
+                "en": "Profile",
+                "zh": "人物资料"
+            },
+            "title": {
+                "en": "Xiangyu Zhang on large and unified vision architectures",
+                "zh": "旷视张祥雨：迈向“大”和“统一”的视觉神经网络架构"
+            },
+            "url": "https://m.163.com/dy/article/I3G7GS4M0511DPVD.html",
+            "language": "zh",
+            "purpose": "biography",
+            "reliability": "secondary",
+            "notes": {
+                "en": "Detailed republished biography matching the Chinese name 张祥雨, Megvii role, ResNet work and research field. Article images are not selected because redistribution rights are not stated.",
+                "zh": "详细转载资料通过中文名“张祥雨”、旷视职务、ResNet 工作与研究领域完成身份交叉核验。文章未声明图片再分发许可，因此不选用其中照片。"
+            }
+        }
+    ],
+    "additionalClaims": [
+        {
+            "id": "claim-replknet-contributors-cross-verified",
+            "importance": "core",
+            "text": {
+                "en": "Xiaohan Ding and Xiangyu Zhang, the two contributors named by BenchCouncil, are the first two authors of the CVPR paper; the arXiv record additionally lists Yizhuang Zhou, Jungong Han, Guiguang Ding and Jian Sun.",
+                "zh": "BenchCouncil 列出的丁霄汉和张祥雨是 CVPR 论文前两位作者；arXiv 完整作者表还包括周逸庄、Jungong Han、丁贵广和孙剑。"
+            },
+            "sourceIds": ["source-benchcouncil-annual", "source-primary-record", "source-arxiv-paper"],
+            "status": "verified"
+        },
+        {
+            "id": "claim-replknet-large-kernel-design",
+            "importance": "core",
+            "text": {
+                "en": "RepLKNet is a pure CNN built with re-parameterized large depth-wise convolutions whose kernel size reaches 31x31, contrasting with the commonly used 3x3 design.",
+                "zh": "RepLKNet 是采用重参数化大核深度卷积的纯 CNN，卷积核最大达到 31×31，与常用的 3×3 设计形成对照。"
+            },
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "status": "verified"
+        },
+        {
+            "id": "claim-replknet-results-and-analysis",
+            "importance": "display",
+            "text": {
+                "en": "The paper reports 87.8% ImageNet top-1 accuracy and 56.0% mIoU on ADE20K, and analyzes large-kernel CNNs as having larger effective receptive fields and stronger shape bias than small-kernel CNNs.",
+                "zh": "论文报告 87.8% 的 ImageNet top-1 准确率和 56.0% 的 ADE20K mIoU，并分析指出大核 CNN 比小核 CNN 具有更大的有效感受野和更强的形状偏置。"
+            },
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "status": "verified"
+        }
+    ],
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "en": "Historical Background",
+                "zh": "历史背景"
+            },
+            "html": {
+                "en": "Modern CNN design had converged on stacks of small kernels, while vision transformers renewed interest in obtaining broad spatial context. RepLKNet revisited the largely abandoned large-kernel path and asked whether a carefully engineered CNN could recover transformer-like context without abandoning convolution.",
+                "zh": "现代 CNN 设计曾逐渐收敛到反复堆叠小卷积核，而视觉 Transformer 的兴起重新凸显了广域空间上下文的重要性。RepLKNet 回到一度被放弃的大卷积核路线，探索精心设计的 CNN 能否在保留卷积的同时获得类似 Transformer 的上下文范围。"
+            },
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "en": "Core Idea",
+                "zh": "核心思想"
+            },
+            "html": {
+                "en": "RepLKNet uses large depth-wise convolutions, reaching 31x31 kernels, and applies structural re-parameterization so training-time branches can be merged for deployment. The larger kernels expand the effective receptive field while the depth-wise form and branch fusion keep the design practical for image classification and dense prediction.",
+                "zh": "RepLKNet 使用最大 31×31 的大核深度卷积，并通过结构重参数化把训练期分支合并为部署结构。大卷积核扩大有效感受野，深度卷积与分支融合则让这一设计能够实际用于图像分类和稠密预测任务。"
+            },
+            "sourceIds": ["source-primary-record", "source-arxiv-paper", "source-official-pytorch-repository"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "en": "Long-Term Legacy",
+                "zh": "长期影响"
+            },
+            "html": {
+                "en": "Experts generally treat RepLKNet as an important demonstration that convolutional networks still had underexplored architectural scale, especially in kernel size and effective receptive field. Its longer legacy lies in reopening large-kernel CNN research and influencing later designs that combine convolutional inductive bias with the scale and task generality associated with transformers.",
+                "zh": "专家通常把 RepLKNet 视为一个重要证明：卷积网络在卷积核尺寸和有效感受野等架构尺度上仍有未充分探索的空间。它的长期影响在于重新推动大核 CNN 研究，并影响后来把卷积归纳偏置与 Transformer 式规模化、任务通用性结合起来的设计。"
+            },
+            "sourceIds": ["source-primary-record", "source-arxiv-paper", "source-official-pytorch-repository"]
+        }
+    ],
+    "visualModule": {
+        "type": "archiveLink",
+        "site": {
+            "en": "Official PyTorch repository",
+            "zh": "官方 PyTorch 仓库"
+        },
+        "title": {
+            "en": "RepLKNet models and pretrained weights",
+            "zh": "RepLKNet 模型与预训练权重"
+        },
+        "description": {
+            "en": "The first author's official implementation provides RepLKNet model definitions, pretrained weights and ImageNet evaluation materials.",
+            "zh": "第一作者维护的官方实现提供 RepLKNet 模型定义、预训练权重和 ImageNet 评估材料。"
+        },
+        "url": "https://github.com/DingXiaoH/RepLKNet-pytorch",
+        "source": "https://github.com/DingXiaoH/RepLKNet-pytorch",
+        "license": {
+            "en": "Repository code is released under the MIT License; the local explainer is an original redraw.",
+            "zh": "仓库代码采用 MIT License；本地解释图为原创重绘。"
+        },
+        "usage": {
+            "en": "Implementation and model reference",
+            "zh": "实现与模型参考"
+        },
+        "action": {
+            "en": "Open official repository",
+            "zh": "打开官方仓库"
+        }
+    },
+    "recordSvgSource": "research/benchcouncil-ai100/annual-events-2022/assets/ai100-annual-2022-2023-004-replknet.svg",
+    "recordAsset": {
+        "caption": {
+            "en": "RepLKNet re-parameterized large-kernel path",
+            "zh": "RepLKNet 重参数化大核路径"
+        },
+        "subcaption": {
+            "en": "Original explainer showing training-time branches, kernel fusion, deployment and reported large-kernel effects.",
+            "zh": "展示训练期分支、卷积核融合、部署结构与大核效果的原创解释图。"
+        },
+        "sourceIds": ["source-primary-record", "source-arxiv-paper", "source-official-pytorch-repository"],
+        "sourceName": {
+            "en": "CVPR paper, arXiv record and official implementation",
+            "zh": "CVPR 论文、arXiv 记录与官方实现"
+        },
+        "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Ding_Scaling_Up_Your_Kernels_to_31x31_Revisiting_Large_Kernel_Design_CVPR_2022_paper.html",
+        "rights": {
+            "status": "original-redraw",
+            "license": {
+                "en": "Original local SVG; no publisher figure is copied.",
+                "zh": "本地原创 SVG；未复制出版方图形。"
+            },
+            "usage": {
+                "en": "Display and educational use in this project.",
+                "zh": "用于本项目展示与教育用途。"
+            }
+        },
+        "displayUsage": {
+            "en": "Large-kernel and structural re-parameterization explainer",
+            "zh": "大卷积核与结构重参数化解释图"
+        }
+    },
+    "achievement": {
+        "area": {
+            "en": "Vision",
+            "zh": "视觉"
+        },
+        "method": {
+            "en": "Re-parameterized large-kernel CNN",
+            "zh": "重参数化大核 CNN"
+        },
+        "artifact": {
+            "en": "RepLKNet",
+            "zh": "RepLKNet"
+        },
+        "material": {
+            "en": "CVPR 2022 paper and official implementation",
+            "zh": "CVPR 2022 论文与官方实现"
+        },
+        "demo": {
+            "en": "Follow the training branches into one fused 31x31 deployment kernel, then compare the resulting receptive-field and task outcomes.",
+            "zh": "沿训练期分支观察它们如何融合为一个 31×31 部署卷积核，再比较感受野与任务结果。"
+        },
+        "keyConcepts": [
+            {
+                "label": {
+                    "en": "Kernel Scale",
+                    "zh": "卷积核规模"
+                },
+                "text": {
+                    "en": "Up to 31x31 depth-wise convolution",
+                    "zh": "最大 31×31 深度卷积"
+                }
+            },
+            {
+                "label": {
+                    "en": "Training to Deployment",
+                    "zh": "训练到部署"
+                },
+                "text": {
+                    "en": "Fuse parallel branches into one equivalent kernel",
+                    "zh": "把并行分支融合为一个等效卷积核"
+                }
+            },
+            {
+                "label": {
+                    "en": "Observed Effect",
+                    "zh": "观察结果"
+                },
+                "text": {
+                    "en": "Larger effective receptive field and stronger shape bias",
+                    "zh": "更大的有效感受野与更强的形状偏置"
+                }
+            }
+        ],
+        "relatedAchievements": [],
+        "relatedRegions": [
+            {
+                "en": "China",
+                "zh": "中国"
+            },
+            {
+                "en": "United Kingdom",
+                "zh": "英国"
+            }
+        ],
+        "demoSteps": [
+            {
+                "en": "Training branches",
+                "zh": "训练期分支"
+            },
+            {
+                "en": "Equivalent-kernel fusion",
+                "zh": "等效卷积核融合"
+            },
+            {
+                "en": "Single deployment path",
+                "zh": "单路径部署"
+            }
+        ],
+        "demoImage": "resources/images/benchcouncil-ai100-annual/annual-004-replknet_record.svg",
+        "demoNotes": [
+            {
+                "label": {
+                    "en": "Architecture cue",
+                    "zh": "架构线索"
+                },
+                "text": {
+                    "en": "The paper combines large depth-wise kernels with structural re-parameterization rather than simply replacing every small convolution.",
+                    "zh": "论文把大核深度卷积与结构重参数化结合起来，并不是简单替换所有小卷积。"
+                }
+            },
+            {
+                "label": {
+                    "en": "Interaction point",
+                    "zh": "互动点"
+                },
+                "text": {
+                    "en": "Trace each training branch into the fused deployment kernel and compare the reported ImageNet, ADE20K and receptive-field evidence.",
+                    "zh": "沿每个训练分支追踪到融合后的部署卷积核，并比较 ImageNet、ADE20K 与感受野证据。"
+                }
+            }
+        ],
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "Official PyTorch repository",
+                    "zh": "官方 PyTorch 仓库"
+                },
+                "title": {
+                    "en": "RepLKNet models and pretrained weights",
+                    "zh": "RepLKNet 模型与预训练权重"
+                },
+                "description": {
+                    "en": "The first author's official implementation provides RepLKNet model definitions, pretrained weights and ImageNet evaluation materials.",
+                    "zh": "第一作者维护的官方实现提供 RepLKNet 模型定义、预训练权重和 ImageNet 评估材料。"
+                },
+                "url": "https://github.com/DingXiaoH/RepLKNet-pytorch",
+                "source": "https://github.com/DingXiaoH/RepLKNet-pytorch",
+                "license": {
+                    "en": "Repository code is released under the MIT License; the local explainer is an original redraw.",
+                    "zh": "仓库代码采用 MIT License；本地解释图为原创重绘。"
+                },
+                "usage": {
+                    "en": "Implementation and model reference",
+                    "zh": "实现与模型参考"
+                },
+                "action": {
+                    "en": "Open official repository",
+                    "zh": "打开官方仓库"
+                }
+            }
+        ]
+    },
+    "quiz": {
+        "question": {
+            "en": "What most clearly distinguishes RepLKNet from conventional small-kernel CNNs?",
+            "zh": "RepLKNet 与传统小卷积核 CNN 最明显的区别是什么？"
+        },
+        "options": [
+            {
+                "en": "It uses re-parameterized depth-wise kernels as large as 31x31",
+                "zh": "它使用最大 31×31 的重参数化深度卷积核"
+            },
+            {
+                "en": "It removes convolution and uses only self-attention",
+                "zh": "它移除卷积，只使用自注意力"
+            },
+            {
+                "en": "It is trained only on text tokens",
+                "zh": "它只使用文本 token 训练"
+            },
+            {
+                "en": "It requires a separate model for every image class",
+                "zh": "它要求每个图像类别使用独立模型"
+            }
+        ],
+        "answer": 0,
+        "explanation": {
+            "en": "RepLKNet is a pure CNN whose large depth-wise kernels reach 31x31 and whose training branches can be structurally re-parameterized for deployment.",
+            "zh": "RepLKNet 是纯 CNN，其大核深度卷积最大达到 31×31，训练期分支还可以通过结构重参数化合并用于部署。"
+        },
+        "sourceIds": ["source-primary-record", "source-arxiv-paper"]
+    },
+    "reviewNotes": {
+        "en": "Completed event-level review on 2026-08-03. Official BenchCouncil fields and contributor prefix are preserved; paper claims, identities, portrait candidates, image rights and implementation links were checked independently.",
+        "zh": "于 2026-08-03 完成事件级核验。保留 BenchCouncil 官方字段与人物前缀，并分别检查论文主张、人物身份、肖像候选、图片使用权和实现链接。"
+    }
+}

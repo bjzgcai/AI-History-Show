@@ -35,5 +35,30 @@
       "source-benchcouncil-annual"
     ],
     "status": "verified"
+  },
+  {
+    "id": "claim-core-method",
+    "importance": "core",
+    "text": {
+      "en": "ChatGPT uses dialogue supervision and reinforcement learning from human feedback.",
+      "zh": "ChatGPT 采用对话监督与基于人类反馈的强化学习。"
+    },
+    "sourceIds": [
+      "source-chatgpt-instructgpt-background",
+      "source-primary-record"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-historical-significance",
+    "importance": "display",
+    "text": {
+      "en": "Experts generally treat ChatGPT as the product event that made large language models a mainstream computing interface. Its legacy includes both the acceleration of conversational AI deployment and a much broader debate over hallucination, labor, education, copyright and governance.",
+      "zh": "专家通常把 ChatGPT 视为让大语言模型成为主流计算界面的产品事件。它的遗产既包括对话式 AI 部署加速，也包括围绕幻觉、劳动、教育、版权和治理展开的更广泛讨论。"
+    },
+    "sourceIds": [
+      "source-chatgpt-instructgpt-background"
+    ],
+    "status": "verified"
   }
 ]

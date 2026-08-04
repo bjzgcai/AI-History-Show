@@ -42,8 +42,8 @@
     "purpose": "bibliographic-verification",
     "reliability": "secondary",
     "notes": {
-      "en": "Bibliographic metadata used to verify the publication year and landing page.",
-      "zh": "用于核对出版年份与落地页面的书目元数据。"
+      "en": "Work-level bibliographic metadata used to verify the paper landing page and publication record. It is not used for person identity: the linked Zheng Zhang author entity is conflated with unrelated same-name researchers and an incorrect ORCID.",
+      "zh": "仅使用成果层书目元数据核对论文落地页与出版记录，不用于人物身份判断：其中关联的 Zheng Zhang 作者实体混合了无关同名研究者和错误 ORCID。"
     }
   },
   {
@@ -64,6 +64,237 @@
     "notes": {
       "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
       "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+    }
+  },
+  {
+    "id": "source-annual-002-simmim-portrait-han-hu",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Han Hu portrait source",
+      "zh": "胡瀚人物图片来源"
+    },
+    "url": "https://ancientmooner.github.io/",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Exact contributor-name match. The researcher-controlled page lists Swin Transformer V2 and SimMIM, and states Han Hu's Microsoft Research Asia role at the time. Reliability: primary-identity-source. Usage note: The personal homepage does not state redistribution rights; retain the source note and recheck before external redistribution.",
+      "zh": "人物姓名精确匹配；研究者本人维护的页面列出 Swin Transformer V2 与 SimMIM，并说明胡瀚当时在微软亚洲研究院任职。 可靠性：primary-identity-source。使用备注：个人主页未声明再分发许可；必须保留来源备注，对外再分发前需再次核验。"
+    }
+  },
+  {
+    "id": "source-cvf-paper-page",
+    "type": "paper-page",
+    "label": {
+      "en": "Conference paper page",
+      "zh": "会议论文页面"
+    },
+    "title": {
+      "en": "SimMIM: A Simple Framework for Masked Image Modeling - CVPR 2022 Open Access",
+      "zh": "《SimMIM: A Simple Framework for Masked Image Modeling》CVPR 2022 开放论文页"
+    },
+    "authors": [
+      "Zhenda Xie",
+      "Zheng Zhang",
+      "Yue Cao",
+      "Yutong Lin",
+      "Jianmin Bao",
+      "Zhuliang Yao",
+      "Qi Dai",
+      "Han Hu"
+    ],
+    "year": 2022,
+    "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Xie_SimMIM_A_Simple_Framework_for_Masked_Image_Modeling_CVPR_2022_paper.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary conference record used to verify the author list, method components, ImageNet results, scaling claim and official code link.",
+      "zh": "用于核对作者表、方法组件、ImageNet 结果、规模扩展结论和官方代码链接的会议原始记录。"
+    }
+  },
+  {
+    "id": "source-microsoft-research-publication",
+    "type": "official-page",
+    "label": {
+      "en": "Institution page",
+      "zh": "机构页面"
+    },
+    "title": {
+      "en": "SimMIM: A Simple Framework for Masked Image Modeling - Microsoft Research",
+      "zh": "微软研究院：SimMIM 简洁掩码图像建模框架"
+    },
+    "url": "https://www.microsoft.com/en-us/research/publication/simmim-a-simple-framework-for-masked-image-modeling/",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official institution publication page listing all authors and summarizing random masking, raw-pixel regression, the lightweight head and scale results.",
+      "zh": "机构官方论文页面，列出全部作者并概述随机遮挡、原始像素回归、轻量预测头和规模扩展结果。"
+    }
+  },
+  {
+    "id": "source-implementation-repository",
+    "type": "code",
+    "label": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "title": {
+      "en": "Microsoft SimMIM implementation repository",
+      "zh": "微软 SimMIM 实现仓库"
+    },
+    "url": "https://github.com/microsoft/SimMIM",
+    "language": "en",
+    "purpose": "implementation",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official repository linked by the paper and Microsoft Research page. Repository metadata identifies it as the official implementation and declares an MIT license for the code; profile images retain their own source status.",
+      "zh": "论文与微软研究院页面共同链接的官方仓库。仓库元数据说明其为官方实现，代码采用 MIT 许可证；人物头像仍按各自来源单独处理。"
+    }
+  },
+  {
+    "id": "source-zhenda-xie-github",
+    "type": "profile",
+    "label": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "title": {
+      "en": "Zhenda Xie GitHub profile",
+      "zh": "谢振达 GitHub 人物资料"
+    },
+    "url": "https://github.com/zdaxie",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "Exact-name account appearing in the official SimMIM repository contributor list. The current employer shown by the profile is not used to infer the 2022 affiliation, and its avatar is not selected because redistribution rights are unstated.",
+      "zh": "姓名精确匹配，并出现在官方 SimMIM 仓库贡献者列表中。账号当前雇主不用于推断 2022 年机构，头像因未声明再分发许可且事件已有首图而不采用。"
+    }
+  },
+  {
+    "id": "source-zheng-zhang-profile",
+    "type": "personal-page",
+    "label": {
+      "en": "Personal homepage",
+      "zh": "个人主页"
+    },
+    "title": {
+      "en": "Zheng Zhang academic homepage",
+      "zh": "张拯学术主页"
+    },
+    "url": "https://stupidzz.github.io/",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "Researcher-controlled page listing SimMIM, its official code and collaboration at Microsoft Research Asia. It is used instead of the conflicting OpenAlex ORCID aggregation, which resolves to a different same-name researcher. The homepage portrait is not selected because its redistribution rights are unstated and the event already has one portrait.",
+      "zh": "研究者本人维护的页面，列出 SimMIM、官方代码和微软亚洲研究院合作关系。该页面用于替代错误合并到同名研究者的 OpenAlex ORCID。主页肖像未声明再分发许可且事件已有一张人物图，因此不采用。"
+    }
+  },
+  {
+    "id": "source-zheng-zhang-name-record",
+    "type": "profile",
+    "label": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "title": {
+      "en": "Zheng Zhang self-authored Git identity record",
+      "zh": "张拯本人 Git 署名记录"
+    },
+    "url": "https://github.com/stupidZZ/stupidZZ.github.io/commit/e4b00a2768dfb5bbdab76dc6642da60a9edf467b",
+    "language": "zh",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "A commit in the researcher-owned homepage repository self-identifies the author as 张拯 and uses his Microsoft corporate email. This primary account record is used to verify the Chinese-script display name.",
+      "zh": "研究者本人主页仓库中的提交以微软企业邮箱自署名“张拯”，用于核验中文显示名。"
+    }
+  },
+  {
+    "id": "source-yue-cao-github",
+    "type": "profile",
+    "label": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "title": {
+      "en": "Yue Cao GitHub profile",
+      "zh": "曹越 GitHub 人物资料"
+    },
+    "url": "https://github.com/caoyue10",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "Exact-name account appearing in the official SimMIM repository contributor list. The current profile is not used to infer the 2022 affiliation, and its avatar is not selected because redistribution rights are unstated.",
+      "zh": "姓名精确匹配，并出现在官方 SimMIM 仓库贡献者列表中。当前账号资料不用于推断 2022 年机构，头像因未声明再分发许可且事件已有首图而不采用。"
+    }
+  },
+  {
+    "id": "source-han-hu-profile",
+    "type": "personal-page",
+    "label": {
+      "en": "Personal homepage",
+      "zh": "个人主页"
+    },
+    "title": {
+      "en": "Han Hu academic homepage",
+      "zh": "胡瀚学术主页"
+    },
+    "url": "https://ancientmooner.github.io/",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "Researcher-controlled page listing SimMIM, its equal-contribution marks, the official code and Han Hu's Microsoft Research Asia role at the time. It is also the source of the selected portrait; no redistribution license is stated.",
+      "zh": "研究者本人维护的页面，列出 SimMIM、共同贡献标记、官方代码及胡瀚当时的微软亚洲研究院经历。该页面也是所选肖像的来源，但未声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-annual-002-simmim-portrait-yue-cao",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "zh": "曹越学术主页肖像",
+      "en": "Yue Cao academic homepage portrait"
+    },
+    "url": "http://yue-cao.me/",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Source page for the supplementary image \"Yue Cao academic homepage\".",
+      "zh": "补充图片“曹越学术主页”的来源页面。"
+    }
+  },
+  {
+    "id": "source-simmim-official-teaser",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "zh": "SimMIM 官方仓库介绍图",
+      "en": "Official SimMIM repository teaser"
+    },
+    "url": "https://github.com/microsoft/SimMIM",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Source page for the supplementary image \"Microsoft SimMIM official repository\".",
+      "zh": "补充图片“微软 SimMIM 官方仓库”的来源页面。"
     }
   }
 ]

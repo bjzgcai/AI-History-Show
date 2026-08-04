@@ -35,5 +35,32 @@
       "source-benchcouncil-annual"
     ],
     "status": "verified"
+  },
+  {
+    "id": "claim-multimodal-input",
+    "importance": "core",
+    "text": {
+      "en": "GPT-4 accepts text and image inputs and produces text outputs.",
+      "zh": "GPT-4 接收文本与图像输入，并生成文本输出。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-technical-report"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-limitations",
+    "importance": "core",
+    "text": {
+      "en": "OpenAI explicitly reported that GPT-4 can hallucinate, make reasoning errors and retain other reliability limitations.",
+      "zh": "OpenAI 明确说明 GPT-4 仍会产生幻觉、出现推理错误并存在其他可靠性局限。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-technical-report",
+      "source-system-card"
+    ],
+    "status": "verified"
   }
 ]

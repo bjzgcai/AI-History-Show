@@ -7,12 +7,12 @@
     "zh": "LaMa"
   },
   "displaySummary": {
-    "en": "AI100 (2022-2023) · Vision",
-    "zh": "AI100（2022-2023）· 视觉"
+    "en": "AI100 (2022-2023) · Vision · Large-mask inpainting",
+    "zh": "AI100（2022-2023）· 视觉 · 大遮挡图像修复"
   },
   "displayDescription": {
-    "en": "<p>BenchCouncil lists LaMa in the Vision area of its AI100 (2022-2023) annual table. It associates the work with the publication “Resolution-robust Large Mask Inpainting with Fourier Convolutions”. The page names Roman Suvorov, Victor Lempitsky as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“视觉”领域列出 LaMa。该条目关联论文《Resolution-robust Large Mask Inpainting with Fourier Convolutions》。页面把 Roman Suvorov（官方页拼写）、Victor Lempitsky（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>BenchCouncil lists LaMa as row 6 in the Vision area of its AI100 (2022-2023) annual table and links it to “Resolution-robust Large Mask Inpainting with Fourier Convolutions”. The official Main Contributors prefix is Roman Suvorov followed by Victor Lempitsky, and the row's aggregate institution and country fields are preserved exactly.</p><p>The WACV 2022 paper identifies Suvorov with Samsung AI Center Moscow and as the correspondence contact, while Lempitsky is affiliated with Samsung AI Center Moscow and the Skolkovo Institute of Science and Technology. LaMa combines fast Fourier convolutions, a high-receptive-field perceptual loss, and large training masks so the network can use global image context and generalize beyond its training resolution.</p>",
+    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“视觉”领域将 LaMa 列为第 6 项，并关联论文《Resolution-robust Large Mask Inpainting with Fourier Convolutions》。官方“主要人物”前缀依次为罗曼·苏沃洛夫和维克托·列姆皮茨基，机构与国家的聚合字段按官方原文完整保留。</p><p>WACV 2022 论文注明苏沃洛夫来自三星莫斯科 AI 中心并担任通讯联系人，列姆皮茨基来自三星莫斯科 AI 中心和斯科尔科沃科学技术学院。LaMa 结合快速傅里叶卷积、高感受野感知损失和大面积训练遮罩，使网络能够利用全图上下文，并泛化到高于训练分辨率的图像。</p>"
   },
   "emphasis": [
     "benchcouncil-annual-2022-2023",
@@ -23,26 +23,26 @@
     {
       "type": "archiveLink",
       "site": {
-        "en": "Primary publication",
-        "zh": "主论文"
+        "en": "WACV 2022 Open Access",
+        "zh": "WACV 2022 开放获取"
       },
       "title": {
         "en": "Resolution-robust Large Mask Inpainting with Fourier Convolutions",
         "zh": "《Resolution-robust Large Mask Inpainting with Fourier Convolutions》"
       },
       "description": {
-        "en": "Publication associated with this work by the BenchCouncil annual table.",
-        "zh": "BenchCouncil 年度表为该成果关联的论文。"
+        "en": "The official WACV record provides the abstract, complete author list, open-access PDF, arXiv link, and bibliographic citation for LaMa.",
+        "zh": "WACV 官方记录提供 LaMa 的摘要、完整作者列表、开放获取 PDF、arXiv 链接和书目信息。"
       },
-      "url": "https://doi.org/10.1109/wacv51458.2022.00323",
-      "source": "https://doi.org/10.1109/wacv51458.2022.00323",
+      "url": "https://openaccess.thecvf.com/content/WACV2022/html/Suvorov_Resolution-Robust_Large_Mask_Inpainting_With_Fourier_Convolutions_WACV_2022_paper.html",
+      "source": "https://openaccess.thecvf.com/content/WACV2022/html/Suvorov_Resolution-Robust_Large_Mask_Inpainting_With_Fourier_Convolutions_WACV_2022_paper.html",
       "license": {
         "en": "Reference link only; local visuals are original redraws.",
         "zh": "仅作为参考链接；本地视觉图为原创重绘。"
       },
       "usage": {
-        "en": "Publication and evidence reference",
-        "zh": "论文与证据参考"
+        "en": "Primary paper, author, and method evidence",
+        "zh": "主论文、作者与方法证据"
       },
       "action": {
         "en": "Open publication",
@@ -57,12 +57,17 @@
   "sourceIds": [
     "source-primary-record",
     "source-openalex-record",
-    "source-benchcouncil-annual"
+    "source-benchcouncil-annual",
+    "source-arxiv-fulltext",
+    "source-lama-project",
+    "source-lama-code"
   ],
   "claimIds": [
     "claim-annual-membership",
     "claim-publication-record",
-    "claim-contributor-record"
+    "claim-contributor-record",
+    "claim-lama-method",
+    "claim-official-contributor-affiliations"
   ],
   "quizId": "ai100-annual-2022-2023-006-lama-quiz-1",
   "commentarySections": [
@@ -73,11 +78,13 @@
         "zh": "历史背景"
       },
       "html": {
-        "en": "BenchCouncil published this row as part of its AI100 (2022-2023) annual selection in the Vision area. The annual list captures a time-bounded view of prominent recent work rather than the membership of the long-term AI100 table.",
-        "zh": "BenchCouncil 把该行发布在 AI100（2022-2023）年度入选表的“视觉”领域中。年度表记录的是当时对近期代表性工作的阶段性观察，不等同于长期 AI100 主表成员。"
+        "en": "Before LaMa, modern image-inpainting systems still struggled when missing regions were large, structures were geometric or periodic, or test images exceeded the training resolution. The WACV 2022 paper framed insufficient effective receptive field in both the generator and the loss as a central cause, and BenchCouncil subsequently placed LaMa in row 6 of its 2022-2023 Vision selection.",
+        "zh": "在 LaMa 之前，现代图像修复系统面对大面积缺失、几何或周期结构，以及高于训练分辨率的测试图像时仍容易失效。WACV 2022 论文把生成器和损失函数的有效感受野不足视为核心原因，BenchCouncil 随后将 LaMa 列入 2022-2023 年度“视觉”领域第 6 项。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-benchcouncil-annual",
+        "source-primary-record",
+        "source-arxiv-fulltext"
       ]
     },
     {
@@ -87,12 +94,13 @@
         "zh": "核心思想"
       },
       "html": {
-        "en": "The official work name is LaMa, linked by the table to “Resolution-robust Large Mask Inpainting with Fourier Convolutions”. Roman Suvorov, Victor Lempitsky are preserved in the same order as the Main Contributors cell. The institution field is Samsung, EPFL, Skolkovo Institute of Science and Technology.",
-        "zh": "官方成果名称为 LaMa，表格将其关联到论文《Resolution-robust Large Mask Inpainting with Fourier Convolutions》。Roman Suvorov（官方页拼写）、Victor Lempitsky（官方页拼写） 按“主要人物”单元格中的相同顺序显示。官方英文拼写与顺序保存在年度记录中，机构字段为 Samsung、EPFL、Skolkovo Institute of Science and Technology。"
+        "en": "LaMa feeds a masked image and its binary mask to a ResNet-like generator whose fast Fourier convolution blocks split features into local and global paths. The global path transforms features into the frequency domain and back, while a high-receptive-field perceptual loss and large generated training masks encourage coherent full-image structure and resolution robustness.",
+        "zh": "LaMa 将遮挡图像与二值遮罩输入一个类似 ResNet 的生成器，其中快速傅里叶卷积模块把特征分成局部分支和全局分支。全局分支把特征变换到频域后再还原，同时使用高感受野感知损失和大面积随机训练遮罩，促使结果保持全图结构一致并具备分辨率稳健性。"
       },
       "sourceIds": [
         "source-primary-record",
-        "source-benchcouncil-annual"
+        "source-arxiv-fulltext",
+        "source-lama-project"
       ]
     },
     {
@@ -102,10 +110,13 @@
         "zh": "长期影响"
       },
       "html": {
-        "en": "Experts should treat this record as evidence of BenchCouncil's 2022-2023 annual assessment, not as a permanent consensus ranking. Its lasting archival value is the exact preservation of the work name, publication link, contributor field, institution, country, citation value, and source order.",
-        "zh": "专家应把本记录视为 BenchCouncil 对 2022-2023 年度成果的阶段性评价证据，而不是永久共识排名。它的长期档案价值在于准确保留成果名称、论文线索、人物字段、机构、国家、引用数与来源顺序。"
+        "en": "Experts generally treat LaMa as an important large-mask inpainting baseline because it coordinates receptive field design across the network, loss, and mask-generation strategy instead of relying only on a larger generator. Its open implementation and demonstrated ability to complete periodic structures and higher-resolution images made the method practical to reproduce and extend, while the BenchCouncil row documents its contemporary recognition rather than a permanent ranking.",
+        "zh": "专家通常把 LaMa 视为大遮挡图像修复的重要基线，因为它同时协调网络、损失函数和遮罩生成策略的感受野设计，而不是只扩大生成器。其开放实现以及对周期结构和更高分辨率图像的修复能力，使该方法便于复现和扩展；BenchCouncil 年度行记录的是当时的认可，而不是永久排名。"
       },
       "sourceIds": [
+        "source-primary-record",
+        "source-lama-project",
+        "source-lama-code",
         "source-benchcouncil-annual"
       ]
     }
@@ -118,11 +129,11 @@
     {
       "name": {
         "en": "Roman Suvorov",
-        "zh": "Roman Suvorov（官方页拼写）"
+        "zh": "罗曼·苏沃洛夫"
       },
       "role": {
-        "en": "Main contributor for LaMa in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 LaMa 主要人物"
+        "en": "First author and correspondence contact of the LaMa paper; first main contributor in the BenchCouncil annual row",
+        "zh": "LaMa 论文第一作者与通讯联系人；BenchCouncil 年度行首位主要人物"
       },
       "figureType": "person",
       "avatar": ""
@@ -130,11 +141,11 @@
     {
       "name": {
         "en": "Victor Lempitsky",
-        "zh": "Victor Lempitsky（官方页拼写）"
+        "zh": "维克托·列姆皮茨基"
       },
       "role": {
-        "en": "Main contributor for LaMa in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 LaMa 主要人物"
+        "en": "LaMa paper co-author affiliated with Samsung AI Center Moscow and Skoltech; second main contributor in the BenchCouncil annual row",
+        "zh": "LaMa 论文共同作者，论文机构为三星莫斯科 AI 中心与 Skoltech；BenchCouncil 年度行第二位主要人物"
       },
       "figureType": "person",
       "avatar": ""
@@ -152,14 +163,14 @@
     },
     "workAuthors": {
       "en": "Roman Suvorov, Victor Lempitsky",
-      "zh": "Roman Suvorov（官方页拼写）、Victor Lempitsky（官方页拼写）"
+      "zh": "罗曼·苏沃洛夫、维克托·列姆皮茨基"
     },
     "sourceLabel": "",
-    "sourceUrl": "https://doi.org/10.1109/wacv51458.2022.00323"
+    "sourceUrl": "https://openaccess.thecvf.com/content/WACV2022/html/Suvorov_Resolution-Robust_Large_Mask_Inpainting_With_Fourier_Convolutions_WACV_2022_paper.html"
   },
   "quotePage": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry",
-    "zh": "BenchCouncil AI100（2022-2023）年度条目"
+    "en": "Primary publication record",
+    "zh": "原始论文记录"
   },
   "quoteAttribution": {
     "en": "Resolution-robust Large Mask Inpainting with Fourier Convolutions",
@@ -171,50 +182,50 @@
       "zh": "视觉"
     },
     "method": {
-      "en": "Annual selection record",
-      "zh": "年度入选记录"
+      "en": "Fast Fourier convolution with high-receptive-field training",
+      "zh": "快速傅里叶卷积与高感受野训练"
     },
     "artifact": {
       "en": "LaMa",
       "zh": "LaMa"
     },
     "material": {
-      "en": "Resolution-robust Large Mask Inpainting with Fourier Convolutions",
-      "zh": "《Resolution-robust Large Mask Inpainting with Fourier Convolutions》与官方年度行"
+      "en": "Masked image, binary mask, local/global frequency features, and inpainted output",
+      "zh": "遮挡图像、二值遮罩、局部/全局频域特征与修复输出"
     },
     "demo": {
-      "en": "Trace the official row from LaMa to its publication, contributor field, institution, and country.",
-      "zh": "沿官方行查看 LaMa 如何关联到论文、主要人物字段、机构与国家。"
+      "en": "Follow a masked image through LaMa's local and Fourier-global feature paths, then connect the restored result to the large-mask and high-receptive-field training signals.",
+      "zh": "沿遮挡图像查看 LaMa 的局部特征路径与傅里叶全局路径，再把修复结果与大遮罩、高感受野训练信号联系起来。"
     },
     "keyConcepts": [
       {
         "label": {
-          "en": "Official Work",
-          "zh": "官方成果名称"
+          "en": "Global Context",
+          "zh": "全局上下文"
         },
         "text": {
-          "en": "LaMa",
-          "zh": "LaMa"
+          "en": "FFC exposes image-wide context from early layers",
+          "zh": "FFC 从网络早期层提供全图上下文"
         }
       },
       {
         "label": {
-          "en": "Main Contributors",
-          "zh": "主要人物"
+          "en": "Training Signal",
+          "zh": "训练信号"
         },
         "text": {
-          "en": "Roman Suvorov, Victor Lempitsky",
-          "zh": "Roman Suvorov（官方页拼写）、Victor Lempitsky（官方页拼写）"
+          "en": "High-receptive-field perceptual loss and large masks",
+          "zh": "高感受野感知损失与大面积遮罩"
         }
       },
       {
         "label": {
-          "en": "Institution",
-          "zh": "机构"
+          "en": "Resolution Robustness",
+          "zh": "分辨率稳健性"
         },
         "text": {
-          "en": "Samsung, EPFL, Skolkovo Institute of Science and Technology",
-          "zh": "Samsung、EPFL、Skolkovo Institute of Science and Technology"
+          "en": "Generalizes above the 256 × 256 training resolution",
+          "zh": "可泛化到高于 256 × 256 训练分辨率的图像"
         }
       }
     ],
@@ -235,16 +246,16 @@
     ],
     "demoSteps": [
       {
-        "en": "Official work",
-        "zh": "官方成果名称"
+        "en": "Mask the image",
+        "zh": "遮挡图像"
       },
       {
-        "en": "Publication record",
-        "zh": "论文记录"
+        "en": "Mix local and Fourier-global features",
+        "zh": "融合局部与傅里叶全局特征"
       },
       {
-        "en": "Contributors and institution",
-        "zh": "主要人物与机构"
+        "en": "Restore coherent structure",
+        "zh": "恢复连贯结构"
       }
     ],
     "demoImage": "resources/images/benchcouncil-ai100-annual/annual-006-lama_record.svg",
@@ -255,8 +266,8 @@
           "zh": "资料线索"
         },
         "text": {
-          "en": "Resolution-robust Large Mask Inpainting with Fourier Convolutions",
-          "zh": "《Resolution-robust Large Mask Inpainting with Fourier Convolutions》与 BenchCouncil 年度行"
+          "en": "The paper's method diagram and abstract identify FFC, high-receptive-field perceptual loss, and large training masks as the three central components.",
+          "zh": "论文的方法图与摘要把 FFC、高感受野感知损失和大面积训练遮罩列为三个核心组成部分。"
         }
       },
       {
@@ -265,8 +276,8 @@
           "zh": "互动点"
         },
         "text": {
-          "en": "Trace the official row from LaMa to its publication, contributor field, institution, and country.",
-          "zh": "沿官方行查看 LaMa 如何关联到论文、主要人物字段、机构与国家。"
+          "en": "Follow the arrows from the masked input into the local and Fourier-global paths, then compare how both paths support a coherent restored output.",
+          "zh": "沿箭头从遮挡输入进入局部路径和傅里叶全局路径，再比较两条路径如何共同支持连贯的修复输出。"
         }
       }
     ],
@@ -274,26 +285,26 @@
       {
         "type": "archiveLink",
         "site": {
-          "en": "Primary publication",
-          "zh": "主论文"
+          "en": "WACV 2022 Open Access",
+          "zh": "WACV 2022 开放获取"
         },
         "title": {
           "en": "Resolution-robust Large Mask Inpainting with Fourier Convolutions",
           "zh": "《Resolution-robust Large Mask Inpainting with Fourier Convolutions》"
         },
         "description": {
-          "en": "Publication associated with this work by the BenchCouncil annual table.",
-          "zh": "BenchCouncil 年度表为该成果关联的论文。"
+          "en": "The official WACV record provides the abstract, complete author list, open-access PDF, arXiv link, and bibliographic citation for LaMa.",
+          "zh": "WACV 官方记录提供 LaMa 的摘要、完整作者列表、开放获取 PDF、arXiv 链接和书目信息。"
         },
-        "url": "https://doi.org/10.1109/wacv51458.2022.00323",
-        "source": "https://doi.org/10.1109/wacv51458.2022.00323",
+        "url": "https://openaccess.thecvf.com/content/WACV2022/html/Suvorov_Resolution-Robust_Large_Mask_Inpainting_With_Fourier_Convolutions_WACV_2022_paper.html",
+        "source": "https://openaccess.thecvf.com/content/WACV2022/html/Suvorov_Resolution-Robust_Large_Mask_Inpainting_With_Fourier_Convolutions_WACV_2022_paper.html",
         "license": {
           "en": "Reference link only; local visuals are original redraws.",
           "zh": "仅作为参考链接；本地视觉图为原创重绘。"
         },
         "usage": {
-          "en": "Publication and evidence reference",
-          "zh": "论文与证据参考"
+          "en": "Primary paper, author, and method evidence",
+          "zh": "主论文、作者与方法证据"
         },
         "action": {
           "en": "Open publication",
@@ -316,15 +327,15 @@
   "location": {
     "name": {
       "en": "Samsung, EPFL, Skolkovo Institute of Science and Technology",
-      "zh": "Samsung、EPFL、Skolkovo Institute of Science and Technology"
+      "zh": "三星、洛桑联邦理工学院、斯科尔科沃科学技术学院"
     },
     "country": {
       "en": "Russia, Switzerland, South Korea",
       "zh": "俄罗斯、瑞士、韩国"
     },
     "coordinates": [
-      61.524,
-      105.3188
+      55.7558,
+      37.6173
     ]
   },
   "review": {

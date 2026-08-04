@@ -7,12 +7,12 @@
     "zh": "RepLKNet"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in Vision",
-    "zh": "BenchCouncil AI100（2022-2023）视觉年度条目"
+    "en": "RepLKNet revisited large convolutional kernels and scaled a pure CNN to 31x31 depth-wise convolutions.",
+    "zh": "RepLKNet 重新审视大卷积核设计，把纯 CNN 扩展到 31×31 深度卷积。"
   },
   "description": {
-    "en": "<p>BenchCouncil lists RepLKNet in the Vision area of its AI100 (2022-2023) annual table. It associates the work with the publication “Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs”. The page names Xiaohan Ding,Xiangyu Zhang as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“视觉”领域列出 RepLKNet。该条目关联论文《Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs》。页面把 Xiaohan Ding（官方页拼写）、张祥雨 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>BenchCouncil lists RepLKNet as row 4 in the Vision area of its AI100 (2022-2023) annual table, preserving Xiaohan Ding and Xiangyu Zhang as the official contributor prefix. The associated CVPR 2022 paper asks whether modern CNNs can recover global context by using a few very large kernels instead of repeatedly stacking small ones.</p><p>RepLKNet uses re-parameterized large depth-wise convolutions with kernels as large as 31x31, then merges the training-time branches into a simpler deployment path. The paper reports competitive ImageNet and ADE20K results and finds that large-kernel CNNs have larger effective receptive fields and stronger shape bias than small-kernel counterparts.</p>",
+    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表视觉领域第 4 行列出 RepLKNet，并把丁霄汉、张祥雨作为官方主要人物前缀保留。关联的 CVPR 2022 论文重新提出一个基础问题：现代 CNN 能否通过少量超大卷积核获得更广的上下文，而不是反复堆叠小卷积核。</p><p>RepLKNet 使用最大 31×31 的重参数化大核深度卷积，并把训练期的多分支结构合并为更简单的部署路径。论文报告了有竞争力的 ImageNet 与 ADE20K 结果，同时发现大核 CNN 相比小核模型具有更大的有效感受野和更强的形状偏置。</p>"
   },
   "location": {
     "regionId": "china",
@@ -22,7 +22,7 @@
     },
     "place": {
       "en": "BNRist, Tsinghua University, MEGVII, Aberystwyth University",
-      "zh": "BNRist、清华大学、MEGVII、Aberystwyth University"
+      "zh": "北京信息科学与技术国家研究中心（BNRist）、清华大学、旷视科技、阿伯里斯特威斯大学"
     },
     "coordinates": [
       35.8617,
@@ -40,11 +40,11 @@
       "figureId": "xiaohan-ding",
       "name": {
         "en": "Xiaohan Ding",
-        "zh": "Xiaohan Ding（官方页拼写）"
+        "zh": "丁霄汉"
       },
       "role": {
-        "en": "Main contributor for RepLKNet in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 RepLKNet 主要人物"
+        "en": "First author and the first main contributor listed by BenchCouncil",
+        "zh": "论文第一作者，BenchCouncil 列出的第一位主要人物"
       },
       "organizationIds": []
     },
@@ -55,8 +55,8 @@
         "zh": "张祥雨"
       },
       "role": {
-        "en": "Main contributor for RepLKNet in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 RepLKNet 主要人物"
+        "en": "Co-author and the second main contributor listed by BenchCouncil",
+        "zh": "论文共同作者，BenchCouncil 列出的第二位主要人物"
       },
       "organizationIds": []
     }
@@ -66,8 +66,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 4 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 4 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed event-level review on 2026-08-03. Official BenchCouncil fields and contributor prefix are preserved; paper claims, identities, portrait candidates, image rights and implementation links were checked independently.",
+      "zh": "于 2026-08-03 完成事件级核验。保留 BenchCouncil 官方字段与人物前缀，并分别检查论文主张、人物身份、肖像候选、图片使用权和实现链接。"
     }
   }
 }

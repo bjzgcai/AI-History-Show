@@ -7,12 +7,12 @@
     "zh": "ChatGPT"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in LLM",
-    "zh": "BenchCouncil AI100（2022-2023）大语言模型年度条目"
+    "en": "A conversational interface and dialogue-tuned model that brought instruction-following AI to a mass audience",
+    "zh": "通过对话界面与对话调优模型把指令式 AI 带给大众用户"
   },
   "description": {
-    "en": "<p>BenchCouncil lists ChatGPT in the LLM area of its AI100 (2022-2023) annual table. It associates the work with the publication “ChatGPT: Optimizing Language Models for Dialogue”. The page leaves the Main Contributors field blank, so this record does not infer individual names.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“大语言模型”领域列出 ChatGPT。该条目关联论文《ChatGPT: Optimizing Language Models for Dialogue》。页面的“主要人物”字段为空，因此本记录不自行补充个人姓名。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>ChatGPT launched publicly on November 30, 2022 as a research preview built from the InstructGPT lineage. It used supervised dialogue data and reinforcement learning from human feedback so the model could answer follow-up questions, acknowledge mistakes and respond within a continuing conversation.</p><p>The accessible chat interface dramatically lowered the barrier to trying a general-purpose language model. Its rapid adoption changed public expectations for search, writing, coding, education and human-computer interaction, while exposing reliability and safety limits at unprecedented scale.</p>",
+    "zh": "<p>ChatGPT 于 2022 年 11 月 30 日作为研究预览公开发布，技术路线承接 InstructGPT。它使用监督式对话数据和基于人类反馈的强化学习，使模型能够回答追问、承认错误，并在连续对话中作出回应。</p><p>易用的聊天界面大幅降低了体验通用语言模型的门槛。它的快速普及改变了公众对搜索、写作、编程、教育和人机交互的预期，也以前所未有的规模暴露出可靠性与安全局限。</p>"
   },
   "location": {
     "regionId": "united-states",
@@ -35,14 +35,29 @@
   "achievementTypeIds": [
     "ai100-annual-achievement"
   ],
-  "figures": [],
+  "figures": [
+    {
+      "figureId": "chatgpt-product",
+      "name": {
+        "en": "ChatGPT",
+        "zh": "ChatGPT"
+      },
+      "role": {
+        "en": "OpenAI conversational AI product",
+        "zh": "OpenAI 对话式 AI 产品"
+      },
+      "figureType": "product",
+      "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png",
+      "organizationIds": []
+    }
+  ],
   "organizations": [],
   "canonical": false,
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 58 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 58 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+      "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
     }
   }
 }

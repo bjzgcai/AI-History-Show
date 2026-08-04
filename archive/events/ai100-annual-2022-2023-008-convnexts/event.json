@@ -7,12 +7,12 @@
     "zh": "ConvNeXts"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in Vision",
-    "zh": "BenchCouncil AI100（2022-2023）视觉年度条目"
+    "en": "A pure ConvNet modernized with transformer-era design and training choices",
+    "zh": "以 Transformer 时代的设计与训练方案现代化纯卷积网络"
   },
   "description": {
-    "en": "<p>BenchCouncil lists ConvNeXts in the Vision area of its AI100 (2022-2023) annual table. It associates the work with the publication “A ConvNet for the 2020s”. The page names Zhuang Liu, Saining Xie as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“视觉”领域列出 ConvNeXts。该条目关联论文《A ConvNet for the 2020s》。页面把 刘壮、Saining Xie（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>ConvNeXt revisited a standard ResNet after vision transformers had become leading visual backbones. The authors progressively introduced a modern training recipe, transformer-inspired stage design, depthwise convolution, inverted bottlenecks, larger kernels, LayerNorm and GELU while keeping the network entirely convolutional.</p><p>The resulting ConvNeXt family reported 87.8% ImageNet top-1 accuracy and stronger COCO detection and ADE20K segmentation results than comparable Swin Transformers. BenchCouncil preserves the official work name as “ConvNeXts”, lists Zhuang Liu and Saining Xie as the contributor prefix, and associates the entry with Facebook and UC Berkeley in the United States.</p>",
+    "zh": "<p>在视觉 Transformer 成为主流视觉主干之后，ConvNeXt 重新审视了标准 ResNet。作者逐步引入现代训练方案、受 Transformer 启发的阶段设计、深度卷积、倒置瓶颈、更大卷积核、LayerNorm 和 GELU，同时让网络始终保持为纯卷积架构。</p><p>最终的 ConvNeXt 系列在 ImageNet 上报告 87.8% top-1 准确率，并在 COCO 检测与 ADE20K 分割上超过可比的 Swin Transformer。BenchCouncil 将官方成果名保留为“ConvNeXts”，把刘壮、谢赛宁列为人物前缀，并将该条目关联到美国的 Facebook 与加州大学伯克利分校。</p>"
   },
   "location": {
     "regionId": "united-states",
@@ -43,20 +43,21 @@
         "zh": "刘壮"
       },
       "role": {
-        "en": "Main contributor for ConvNeXts in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ConvNeXts 主要人物"
+        "en": "First author of A ConvNet for the 2020s and a main contributor listed by BenchCouncil",
+        "zh": "《A ConvNet for the 2020s》第一作者，BenchCouncil 列出的主要人物"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2022-convnexts/zhuang-liu.png"
     },
     {
       "figureId": "saining-xie",
       "name": {
         "en": "Saining Xie",
-        "zh": "Saining Xie（官方页拼写）"
+        "zh": "谢赛宁"
       },
       "role": {
-        "en": "Main contributor for ConvNeXts in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ConvNeXts 主要人物"
+        "en": "Last author of A ConvNet for the 2020s and a main contributor listed by BenchCouncil",
+        "zh": "《A ConvNet for the 2020s》末位作者，BenchCouncil 列出的主要人物"
       },
       "organizationIds": []
     }
@@ -66,8 +67,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 8 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 8 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed event-specific research on 2026-08-03. The exact BenchCouncil title, order, contributor prefix, institution and country were preserved. Zhuang Liu and Saining Xie were cross-checked against the CVPR paper and researcher-controlled homepages; 谢赛宁 was additionally verified from a Chinese interview profile. Zhuang Liu's matching homepage portrait is the single selected person image, while both Saining Xie image candidates are documented but not selected because of presentation and rights uncertainty.",
+      "zh": "于 2026-08-03 完成事件专项研究。保留 BenchCouncil 的准确标题、顺序、人物前缀、机构和国家字段。刘壮与谢赛宁均通过 CVPR 论文和研究者本人主页交叉核对，“谢赛宁”中文名另由中文访谈人物页核验。刘壮主页中的匹配肖像作为唯一人物图；谢赛宁的两个图片候选因呈现方式与使用权不确定，仅记录而不采用。"
     }
   }
 }

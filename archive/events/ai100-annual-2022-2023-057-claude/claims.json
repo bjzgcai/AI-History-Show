@@ -35,5 +35,30 @@
       "source-benchcouncil-annual"
     ],
     "status": "verified"
+  },
+  {
+    "id": "claim-launch-scope",
+    "importance": "core",
+    "text": {
+      "en": "Claude launched as a conversational assistant and API for tasks including summarization, search, writing, coding and question answering.",
+      "zh": "Claude 以对话助手和 API 形式推出，覆盖摘要、检索、写作、编程和问答等任务。"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-constitutional-lineage",
+    "importance": "core",
+    "text": {
+      "en": "Constitutional AI uses written principles and AI feedback to train a less harmful assistant with less direct human labeling of harmful outputs.",
+      "zh": "宪法式 AI 使用书面原则与 AI 反馈训练更少产生有害输出的助手，并减少对有害输出的直接人工标注。"
+    },
+    "sourceIds": [
+      "source-constitutional-ai",
+      "source-constitutional-paper"
+    ],
+    "status": "verified"
   }
 ]

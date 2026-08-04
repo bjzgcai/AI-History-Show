@@ -29,10 +29,51 @@
     "importance": "display",
     "text": {
       "en": "The Main Contributors field is “Zhuang Liu, Saining Xie”.",
-      "zh": "“主要人物”字段依次列出 刘壮、Saining Xie（官方页拼写）；官方英文原文为“Zhuang Liu, Saining Xie”。"
+      "zh": "“主要人物”字段依次列出 刘壮、谢赛宁；官方英文原文为“Zhuang Liu, Saining Xie”。"
     },
     "sourceIds": [
       "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributors-cross-verified",
+    "importance": "core",
+    "text": {
+      "en": "Zhuang Liu and Saining Xie, the two main contributors named by BenchCouncil, are respectively the first and last authors of the CVPR 2022 paper, and both researcher-controlled homepages list ConvNeXt.",
+      "zh": "BenchCouncil 列出的两位主要人物刘壮和谢赛宁分别是 CVPR 2022 论文的第一作者与末位作者，两人的个人主页也都列出 ConvNeXt。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual",
+      "source-primary-record",
+      "source-zhuang-liu-profile",
+      "source-saining-xie-profile"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-modernization-path",
+    "importance": "core",
+    "text": {
+      "en": "ConvNeXt progressively modernizes a ResNet with a contemporary training recipe, transformer-inspired stage ratios and stem, depthwise convolution, inverted bottlenecks, larger kernels, LayerNorm and GELU while remaining a pure ConvNet.",
+      "zh": "ConvNeXt 逐步以现代训练方案、受 Transformer 启发的阶段比例与 stem、深度卷积、倒置瓶颈、更大卷积核、LayerNorm 和 GELU 改造 ResNet，同时始终保持纯卷积结构。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-reported-results",
+    "importance": "display",
+    "text": {
+      "en": "The paper reports 87.8% ImageNet top-1 accuracy and stronger COCO detection and ADE20K segmentation results than comparable Swin Transformers.",
+      "zh": "论文报告 87.8% 的 ImageNet top-1 准确率，并在 COCO 检测与 ADE20K 分割上超过可比的 Swin Transformer。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
     ],
     "status": "verified"
   }

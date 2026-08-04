@@ -3,35 +3,35 @@
     "id": "ai100-annual-2022-2023-039-palm-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to PaLM?",
-      "zh": "BenchCouncil 年度表把 PaLM 归入哪个领域？"
+      "en": "What system enabled PaLM to train across 6,144 TPU v4 chips?",
+      "zh": "PaLM 借助什么系统在 6,144 个 TPU v4 芯片上训练？"
     },
     "options": [
       {
-        "en": "LLM",
-        "zh": "大语言模型"
+        "en": "Pathways",
+        "zh": "Pathways"
       },
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "MapReduce",
+        "zh": "MapReduce"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "AlphaGo",
+        "zh": "AlphaGo"
       },
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "TensorFlow Lite",
+        "zh": "TensorFlow Lite"
       }
     ],
-    "answer": 0,
     "explanation": {
-      "en": "PaLM appears in the LLM area of the official annual table.",
-      "zh": "PaLM 位于官方年度表的“大语言模型”领域。"
+      "en": "PaLM used Google's Pathways system to coordinate large-scale distributed training.",
+      "zh": "PaLM 使用 Google 的 Pathways 系统协调大规模分布式训练。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-palm-paper"
     ],
+    "answer": 0,
     "assetIds": [
       "asset-annual-039-palm-record"
     ]

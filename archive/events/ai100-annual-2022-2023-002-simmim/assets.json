@@ -1,26 +1,67 @@
 [
   {
+    "id": "asset-annual-002-simmim-portrait-han-hu",
+    "type": "image",
+    "path": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Han Hu portrait",
+      "zh": "胡瀚肖像"
+    },
+    "subcaption": {
+      "en": "Lead author of the SimMIM paper",
+      "zh": "SimMIM 论文主要作者"
+    },
+    "sourceId": "source-annual-002-simmim-portrait-han-hu",
+    "sourceName": {
+      "en": "Han Hu academic homepage",
+      "zh": "胡瀚学术主页"
+    },
+    "sourceUrl": "https://ancientmooner.github.io/",
+    "sourceReliability": "primary-identity-source",
+    "provenanceNotes": {
+      "en": "Exact contributor-name match. The researcher-controlled page lists Swin Transformer V2 and SimMIM, and states Han Hu's Microsoft Research Asia role at the time.",
+      "zh": "人物姓名精确匹配；研究者本人维护的页面列出 Swin Transformer V2 与 SimMIM，并说明胡瀚当时在微软亚洲研究院任职。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The personal homepage does not state redistribution rights; retain the source note and recheck before external redistribution.",
+        "zh": "个人主页未声明再分发许可；必须保留来源备注，对外再分发前需再次核验。"
+      },
+      "attribution": ""
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
     "id": "asset-annual-002-simmim-record",
     "type": "svg",
     "path": "resources/images/benchcouncil-ai100-annual/annual-002-simmim_record.svg",
     "role": "annual-achievement-explainer",
     "caption": {
-      "en": "Simmim annual evidence map",
-      "zh": "Simmim 年度证据图"
+      "en": "SimMIM masked image modeling path",
+      "zh": "SimMIM 掩码图像建模流程"
     },
     "subcaption": {
-      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
-      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+      "en": "Original explainer of random masking, the encoder, a linear head and raw RGB pixel regression.",
+      "zh": "解释随机遮挡、编码器、线性预测头和原始 RGB 像素回归关系的原创图。"
     },
     "sourceIds": [
-      "source-primary-record",
-      "source-benchcouncil-annual"
+      "source-cvf-paper-page",
+      "source-microsoft-research-publication"
     ],
     "sourceName": {
-      "en": "BenchCouncil and publication metadata",
-      "zh": "BenchCouncil 与论文元数据"
+      "en": "CVPR paper and Microsoft Research publication page",
+      "zh": "CVPR 论文与微软研究院论文页"
     },
-    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Xie_SimMIM_A_Simple_Framework_for_Masked_Image_Modeling_CVPR_2022_paper.html",
     "rights": {
       "status": "original-redraw",
       "license": {
@@ -33,12 +74,89 @@
       }
     },
     "displayUsage": {
-      "en": "Annual record explainer",
-      "zh": "年度记录解释图"
+      "en": "Masked image modeling explainer",
+      "zh": "掩码图像建模解释图"
     },
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-annual-002-simmim-portrait-yue-cao",
+    "type": "image",
+    "path": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg",
+    "role": "portrait",
+    "caption": {
+      "zh": "曹越肖像",
+      "en": "Yue Cao portrait"
+    },
+    "subcaption": {
+      "en": "Co-first author of the SimMIM paper",
+      "zh": "SimMIM 论文共同第一作者"
+    },
+    "sourceId": "source-annual-002-simmim-portrait-yue-cao",
+    "sourceName": {
+      "en": "Yue Cao academic homepage",
+      "zh": "曹越学术主页"
+    },
+    "sourceUrl": "http://yue-cao.me/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "No redistribution license is stated on the homepage; used with source attribution under the project's relaxed reference-image policy.",
+        "zh": "主页未声明再分发许可；依据项目放宽后的参考图片策略使用，并保留来源署名。"
+      },
+      "attribution": "Yue Cao"
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait and overview image",
+      "zh": "已核验的主要人物肖像与首图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false,
+    "sourceReliability": "primary-identity-source",
+    "provenanceNotes": {
+      "en": "The primary paper and Microsoft Research page list Yue Cao third. His exact-name GitHub account contributes to the official Microsoft SimMIM repository, corroborating the account-work match.",
+      "zh": "主论文与微软研究院页面第三位列出曹越；其同名 GitHub 账号参与微软官方 SimMIM 仓库，进一步确认账号与成果的对应关系。"
+    }
+  },
+  {
+    "id": "asset-annual-002-simmim-official-teaser",
+    "type": "image",
+    "path": "resources/images/external/ai100-2022-simmim/official-teaser.jpg",
+    "role": "architecture-diagram",
+    "caption": {
+      "zh": "SimMIM 官方方法介绍图",
+      "en": "Official SimMIM method illustration"
+    },
+    "subcaption": {
+      "zh": "随机遮挡后的图块进入视觉编码器，再由单层预测头通过原始像素 L1 损失训练。",
+      "en": "Randomly masked patches pass through a vision encoder and a one-layer prediction head trained with raw-pixel L1 loss."
+    },
+    "sourceId": "source-simmim-official-teaser",
+    "sourceName": {
+      "en": "Microsoft SimMIM official repository",
+      "zh": "微软 SimMIM 官方仓库"
+    },
+    "sourceUrl": "https://github.com/microsoft/SimMIM",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Official repository illustration; source attribution is retained. The repository's MIT license applies to code and does not separately state image rights.",
+        "zh": "官方仓库介绍图，展示时保留来源署名。仓库 MIT 许可针对代码，未单独声明图片权利。"
+      },
+      "attribution": "Microsoft SimMIM authors"
+    },
+    "displayUsage": {
+      "en": "Official method illustration",
+      "zh": "官方方法介绍资料"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
   }
 ]

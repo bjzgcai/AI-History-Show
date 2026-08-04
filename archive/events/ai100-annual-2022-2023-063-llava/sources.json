@@ -1,28 +1,29 @@
 [
   {
     "id": "source-primary-record",
-    "type": "paper-index",
+    "type": "paper",
     "label": {
-      "en": "Paper index",
-      "zh": "论文索引"
+      "en": "Primary paper",
+      "zh": "原始论文"
     },
     "title": {
-      "en": "Visual instruction tuning",
-      "zh": "《Visual instruction tuning》"
+      "en": "Visual Instruction Tuning",
+      "zh": "《视觉指令微调》"
     },
     "authors": [
       "Haotian Liu",
       "Chunyuan Li",
+      "Qingyang Wu",
       "Yong Jae Lee"
     ],
     "year": 2023,
-    "url": "https://scholar.google.com/scholar?q=%22Visual%20instruction%20tuning%22",
+    "url": "https://arxiv.org/abs/2304.08485",
     "language": "en",
-    "purpose": "bibliographic-verification",
-    "reliability": "reference-only",
+    "purpose": "core-evidence",
+    "reliability": "primary",
     "notes": {
-      "en": "Exact-title search retained transparently because the public metadata API did not return a verified landing page during this sync.",
-      "zh": "公共元数据 API 在本次同步中未返回可核验落地页，因此透明保留精确标题检索链接。"
+      "en": "Primary paper used to verify authorship, GPT-4 data generation, projection architecture and two-stage training.",
+      "zh": "用于核对作者、GPT-4 数据生成、投影架构与两阶段训练的主论文。"
     }
   },
   {
@@ -41,8 +42,8 @@
     "purpose": "bibliographic-verification",
     "reliability": "secondary",
     "notes": {
-      "en": "Bibliographic metadata used to verify the publication year and landing page.",
-      "zh": "用于核对出版年份与落地页面的书目元数据。"
+      "en": "Bibliographic metadata is retained only as a secondary cross-check; technical and identity claims use primary records.",
+      "zh": "书目元数据仅作为辅助交叉核对；技术与人物主张使用原始记录。"
     }
   },
   {
@@ -63,6 +64,126 @@
     "notes": {
       "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
       "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+    }
+  },
+  {
+    "id": "source-annual-063-llava-portrait-haotian-liu",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Haotian Liu portrait source",
+      "zh": "刘昊天人物图片来源"
+    },
+    "url": "https://hliu.cc/",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The portrait appears on Haotian Liu’s own homepage beside his identity, LLaVA project history and University of Wisconsin-Madison Ph.D. record. Reliability: primary-identity-source. Usage note: The source does not state redistribution rights; retain attribution and recheck before redistribution outside this project.",
+      "zh": "该肖像展示在刘昊天本人主页中，与其身份、LLaVA 项目经历和威斯康星大学麦迪逊分校博士经历同时出现。 可靠性：primary-identity-source。使用备注：来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+    }
+  },
+  {
+    "id": "source-llava-project",
+    "type": "project-page",
+    "label": {
+      "en": "Project page",
+      "zh": "项目页面"
+    },
+    "title": {
+      "en": "LLaVA project page",
+      "zh": "LLaVA 项目页面"
+    },
+    "url": "https://llava-vl.github.io/",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Research-team project page linking the paper, model, examples and later updates.",
+      "zh": "研究团队项目页，链接论文、模型、示例与后续更新。"
+    }
+  },
+  {
+    "id": "source-llava-repository",
+    "type": "code",
+    "label": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "title": {
+      "en": "LLaVA official repository",
+      "zh": "LLaVA 官方仓库"
+    },
+    "url": "https://github.com/haotian-liu/LLaVA",
+    "language": "en",
+    "purpose": "implementation",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official repository with training code, checkpoints and data preparation instructions.",
+      "zh": "官方仓库，提供训练代码、检查点与数据准备说明。"
+    }
+  },
+  {
+    "id": "source-haotian-liu-profile",
+    "type": "personal-page",
+    "label": {
+      "en": "Personal homepage",
+      "zh": "个人主页"
+    },
+    "title": {
+      "en": "Haotian Liu academic homepage",
+      "zh": "刘昊天学术主页"
+    },
+    "url": "https://hliu.cc/",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "Researcher-controlled page that identifies Haotian Liu, lists LLaVA as his project and displays the selected portrait. No redistribution license is stated.",
+      "zh": "研究者本人维护的页面，确认刘昊天身份、列出 LLaVA 项目并展示所选肖像；页面未声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-llava-figure-1",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "LLaVA Figure 1: network architecture",
+      "zh": "LLaVA Figure 1：网络架构"
+    },
+    "url": "https://ar5iv.labs.arxiv.org/html/2304.08485/assets/x1.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Paper-rendered Figure 1 shows the CLIP vision encoder, trainable projection and Vicuna language model path used by the original LLaVA. It is the standard compact architecture screenshot, but the existing original local explainer remains the single selected explanatory image; the HTML rendering states no separate redistribution license.",
+      "zh": "论文 HTML 渲染的 Figure 1 展示原始 LLaVA 使用的 CLIP 视觉编码器、可训练投影层与 Vicuna 语言模型路径，是最常用的紧凑架构截图。页面仍只选用现有本地原创解释图；HTML 渲染未为该图单独声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-llava-official-architecture",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "LLaVA architecture on the official project page",
+      "zh": "LLaVA 官方项目页架构图"
+    },
+    "url": "https://llava-vl.github.io/images/llava_arch.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The official LLaVA project page publishes the selected vision-projection-language architecture diagram.",
+      "zh": "LLaVA 官方项目页发布了所选的视觉编码、投影与语言模型架构图。"
     }
   }
 ]

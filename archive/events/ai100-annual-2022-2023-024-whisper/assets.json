@@ -9,8 +9,8 @@
       "zh": "伊利亚·苏茨克维肖像"
     },
     "subcaption": {
-      "en": "Main contributor listed by the BenchCouncil annual table",
-      "zh": "BenchCouncil 年度表列出的主要人物"
+      "en": "Co-author of the Whisper paper",
+      "zh": "Whisper 论文共同作者"
     },
     "sourceId": "source-annual-024-whisper-portrait-ilya-sutskever",
     "sourceName": {
@@ -46,22 +46,22 @@
     "path": "resources/images/benchcouncil-ai100-annual/annual-024-whisper_record.svg",
     "role": "annual-achievement-explainer",
     "caption": {
-      "en": "Whisper annual evidence map",
-      "zh": "Whisper 年度证据图"
+      "en": "Whisper process explainer",
+      "zh": "Whisper 流程解释图"
     },
     "subcaption": {
-      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
-      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+      "en": "Weakly supervised multilingual multitask sequence-to-sequence training",
+      "zh": "弱监督多语种多任务序列到序列训练"
     },
     "sourceIds": [
-      "source-primary-record",
-      "source-benchcouncil-annual"
+      "source-whisper-paper",
+      "source-primary-record"
     ],
     "sourceName": {
-      "en": "BenchCouncil and publication metadata",
-      "zh": "BenchCouncil 与论文元数据"
+      "en": "Primary publication and original local synthesis",
+      "zh": "主论文与本地原创整理"
     },
-    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "sourceUrl": "https://arxiv.org/abs/2212.04356",
     "rights": {
       "status": "original-redraw",
       "license": {
@@ -74,12 +74,48 @@
       }
     },
     "displayUsage": {
-      "en": "Annual record explainer",
-      "zh": "年度记录解释图"
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
     },
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-annual-024-whisper-official-approach",
+    "type": "image",
+    "path": "resources/images/external/ai100-2022-whisper/openai-approach.png",
+    "role": "architecture-diagram",
+    "caption": {
+      "zh": "OpenAI Whisper 方法图",
+      "en": "OpenAI Whisper approach diagram"
+    },
+    "subcaption": {
+      "zh": "官方图把 68 万小时多任务音频、编码器-解码器 Transformer 与统一 token 格式连接起来。",
+      "en": "The official diagram connects 680,000 hours of multitask audio, the encoder-decoder Transformer and the shared token format."
+    },
+    "sourceId": "source-whisper-official-approach",
+    "sourceName": {
+      "en": "OpenAI Whisper official repository",
+      "zh": "OpenAI Whisper 官方仓库"
+    },
+    "sourceUrl": "https://github.com/openai/whisper",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Official repository illustration; attribution is retained. The repository is MIT-licensed, while image rights are not separately stated.",
+        "zh": "官方仓库介绍图，展示时保留来源署名。仓库采用 MIT 许可，但未单独声明图片权利。"
+      },
+      "attribution": "OpenAI"
+    },
+    "displayUsage": {
+      "en": "Official architecture and multitask-format reference",
+      "zh": "官方架构与多任务格式参考图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
   }
 ]

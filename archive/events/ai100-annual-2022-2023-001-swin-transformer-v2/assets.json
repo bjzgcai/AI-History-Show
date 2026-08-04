@@ -9,8 +9,8 @@
       "zh": "刘泽肖像"
     },
     "subcaption": {
-      "en": "Main contributor listed by the BenchCouncil annual table",
-      "zh": "BenchCouncil 年度表列出的主要人物"
+      "en": "Co-first author of the Swin Transformer V2 paper",
+      "zh": "Swin Transformer V2 论文共同第一作者"
     },
     "sourceId": "source-annual-001-swin-transformer-v2-portrait-ze-liu",
     "sourceName": {
@@ -46,22 +46,22 @@
     "path": "resources/images/benchcouncil-ai100-annual/annual-001-swin-transformer-v2_record.svg",
     "role": "annual-achievement-explainer",
     "caption": {
-      "en": "Swin Transformer V2 annual evidence map",
-      "zh": "Swin Transformer V2 年度证据图"
+      "en": "Swin Transformer V2 scaling path",
+      "zh": "Swin Transformer V2 扩展路径"
     },
     "subcaption": {
-      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
-      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+      "en": "Original explainer of stability, resolution transfer, self-supervised pretraining and the 3-billion-parameter model.",
+      "zh": "解释稳定性、分辨率迁移、自监督预训练与 30 亿参数模型关系的原创图。"
     },
     "sourceIds": [
-      "source-primary-record",
-      "source-benchcouncil-annual"
+      "source-cvf-paper-page",
+      "source-microsoft-research-publication"
     ],
     "sourceName": {
-      "en": "BenchCouncil and publication metadata",
-      "zh": "BenchCouncil 与论文元数据"
+      "en": "CVPR paper and Microsoft Research publication page",
+      "zh": "CVPR 论文与微软研究院论文页"
     },
-    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Liu_Swin_Transformer_V2_Scaling_Up_Capacity_and_Resolution_CVPR_2022_paper.html",
     "rights": {
       "status": "original-redraw",
       "license": {
@@ -74,12 +74,89 @@
       }
     },
     "displayUsage": {
-      "en": "Annual record explainer",
-      "zh": "年度记录解释图"
+      "en": "Architecture and scaling explainer",
+      "zh": "架构与扩展方法解释图"
     },
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-annual-001-swin-transformer-v2-portrait-han-hu",
+    "type": "image",
+    "path": "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "胡瀚肖像",
+      "en": "Han Hu portrait"
+    },
+    "subcaption": {
+      "en": "Co-first author of the Swin Transformer V2 paper",
+      "zh": "Swin Transformer V2 论文共同第一作者"
+    },
+    "sourceId": "source-annual-001-swin-transformer-v2-portrait-han-hu",
+    "sourceName": {
+      "en": "Han Hu academic homepage",
+      "zh": "胡瀚学术主页"
+    },
+    "sourceUrl": "https://ancientmooner.github.io/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "No redistribution license is stated on the homepage; used with source attribution under the project's relaxed reference-image policy.",
+        "zh": "主页未声明再分发许可；依据项目放宽后的参考图片策略使用，并保留来源署名。"
+      },
+      "attribution": "Han Hu"
+    },
+    "displayUsage": {
+      "en": "Supplementary verified contributor portrait",
+      "zh": "补充展示的已核验主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false,
+    "sourceReliability": "primary-identity-source",
+    "provenanceNotes": {
+      "en": "BenchCouncil lists Han Hu second in the Main Contributors field. The CVF paper page includes him in the author list, and his personal academic homepage lists the paper and states that he worked at Microsoft Research Asia until December 2023.",
+      "zh": "BenchCouncil 在主要人物字段中第二位列出胡瀚。CVF 论文页的作者表包含胡瀚，其个人学术主页也列出该论文，并说明他任职微软亚洲研究院至 2023 年 12 月。"
+    }
+  },
+  {
+    "id": "asset-annual-001-swin-transformer-v2-paper-v1-v2-comparison",
+    "type": "image",
+    "path": "resources/images/external/ai100-2022-swin-transformer-v2/paper-v1-v2-comparison.png",
+    "role": "architecture-diagram",
+    "caption": {
+      "zh": "Swin Transformer V1 与 V2 模块对比",
+      "en": "Swin Transformer V1 and V2 block comparison"
+    },
+    "subcaption": {
+      "zh": "论文图突出残差后归一化、缩放余弦注意力与对数间隔连续位置偏置。",
+      "en": "The paper highlights residual post-normalization, scaled cosine attention and log-spaced continuous position bias."
+    },
+    "sourceId": "source-swin-v2-paper-figure",
+    "sourceName": {
+      "en": "Swin Transformer V2 arXiv source package",
+      "zh": "Swin Transformer V2 arXiv 源文件包"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2111.09883",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Author-submitted paper figure; displayed with full paper attribution under the project's relaxed reference-image policy.",
+        "zh": "作者提交的论文配图；依据项目放宽后的参考图片策略展示，并完整标注论文来源。"
+      },
+      "attribution": "Ze Liu et al."
+    },
+    "displayUsage": {
+      "en": "Primary-paper architecture comparison",
+      "zh": "主论文架构对比资料"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
   }
 ]

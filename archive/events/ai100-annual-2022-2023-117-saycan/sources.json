@@ -1,24 +1,24 @@
 [
   {
     "id": "source-primary-record",
-    "type": "paper-index",
+    "type": "official-page",
     "label": {
-      "en": "Paper index",
-      "zh": "论文索引"
+      "en": "Official page",
+      "zh": "官方页面"
     },
     "title": {
       "en": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
       "zh": "《Do As I Can, Not As I Say: Grounding Language in Robotic Affordances》"
     },
     "authors": [],
-    "year": 2023,
-    "url": "https://scholar.google.com/scholar?q=%22Do%20As%20I%20Can%2C%20Not%20As%20I%20Say%3A%20Grounding%20Language%20in%20Robotic%20Affordances%22",
+    "year": 2022,
+    "url": "https://say-can.github.io/",
     "language": "en",
-    "purpose": "bibliographic-verification",
-    "reliability": "reference-only",
+    "purpose": "core-evidence",
+    "reliability": "primary",
     "notes": {
-      "en": "Exact-title search retained transparently because the public metadata API did not return a verified landing page during this sync.",
-      "zh": "公共元数据 API 在本次同步中未返回可核验落地页，因此透明保留精确标题检索链接。"
+      "en": "Primary publication or official project record used for the central technical claims.",
+      "zh": "用于核心技术主张的主论文或官方项目记录。"
     }
   },
   {
@@ -57,8 +57,108 @@
     "purpose": "core-evidence",
     "reliability": "primary",
     "notes": {
-      "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
-      "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+      "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+      "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
+    }
+  },
+  {
+    "id": "source-saycan-paper",
+    "type": "paper",
+    "label": {
+      "en": "Primary paper",
+      "zh": "原始论文"
+    },
+    "title": {
+      "en": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+      "zh": "《Do As I Can, Not As I Say: Grounding Language in Robotic Affordances》"
+    },
+    "url": "https://arxiv.org/abs/2204.01691",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary paper for the SayCan scoring rule, robot skills and evaluation.",
+      "zh": "用于核对 SayCan 评分规则、机器人技能和评测的原始论文。"
+    }
+  },
+  {
+    "id": "source-saycan-google-research",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Towards helpful robots: Grounding language in robotic affordances",
+      "zh": "Google Research：用机器人可供性约束语言"
+    },
+    "url": "https://research.google/blog/towards-helpful-robots-grounding-language-in-robotic-affordances/",
+    "language": "en",
+    "purpose": "background",
+    "reliability": "primary",
+    "notes": {
+      "en": "Google Research explanation of the language and affordance score combination.",
+      "zh": "Google Research 对语言评分与可供性评分组合方式的官方说明。"
+    }
+  },
+  {
+    "id": "source-saycan-code",
+    "type": "code",
+    "label": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "title": {
+      "en": "Google Research SayCan implementation",
+      "zh": "Google Research SayCan 实现"
+    },
+    "url": "https://github.com/google-research/google-research/tree/master/saycan",
+    "language": "en",
+    "purpose": "implementation",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official research repository for SayCan-related implementation material.",
+      "zh": "SayCan 相关实现材料的官方研究仓库。"
+    }
+  },
+  {
+    "id": "source-saycan-portrait-chelsea-finn",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Chelsea Finn faculty portrait",
+      "zh": "切尔西·芬恩教师肖像"
+    },
+    "url": "https://profiles.stanford.edu/chelsea-finn",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Stanford's official profile identifies Chelsea Finn and supplies the portrait.",
+      "zh": "斯坦福大学官方资料页核验切尔西·芬恩身份并提供该肖像。"
+    }
+  },
+  {
+    "id": "source-saycan-official-project-images",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "SayCan method and robot demonstration images",
+      "zh": "SayCan 方法与机器人演示图片"
+    },
+    "url": "https://say-can.github.io/",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The official project page uses the scoring diagram in its approach section and the sponge-fetching sequence in its results section.",
+      "zh": "官方项目页在方法部分使用评分图，在结果部分使用取海绵的机器人执行序列图。"
     }
   }
 ]

@@ -3,34 +3,35 @@
     "id": "ai100-annual-2022-2023-004-replknet-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to RepLKNet?",
-      "zh": "BenchCouncil 年度表把 RepLKNet 归入哪个领域？"
+      "en": "What most clearly distinguishes RepLKNet from conventional small-kernel CNNs?",
+      "zh": "RepLKNet 与传统小卷积核 CNN 最明显的区别是什么？"
     },
     "options": [
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "It uses re-parameterized depth-wise kernels as large as 31x31",
+        "zh": "它使用最大 31×31 的重参数化深度卷积核"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "It removes convolution and uses only self-attention",
+        "zh": "它移除卷积，只使用自注意力"
       },
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "It is trained only on text tokens",
+        "zh": "它只使用文本 token 训练"
       },
       {
-        "en": "Multimodal",
-        "zh": "多模态"
+        "en": "It requires a separate model for every image class",
+        "zh": "它要求每个图像类别使用独立模型"
       }
     ],
     "answer": 0,
     "explanation": {
-      "en": "RepLKNet appears in the Vision area of the official annual table.",
-      "zh": "RepLKNet 位于官方年度表的“视觉”领域。"
+      "en": "RepLKNet is a pure CNN whose large depth-wise kernels reach 31x31 and whose training branches can be structurally re-parameterized for deployment.",
+      "zh": "RepLKNet 是纯 CNN，其大核深度卷积最大达到 31×31，训练期分支还可以通过结构重参数化合并用于部署。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-primary-record",
+      "source-arxiv-paper"
     ],
     "assetIds": [
       "asset-annual-004-replknet-record"

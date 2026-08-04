@@ -17,8 +17,8 @@
     "purpose": "core-evidence",
     "reliability": "primary",
     "notes": {
-      "en": "Publication or official work page resolved from the exact title in the BenchCouncil annual table.",
-      "zh": "依据 BenchCouncil 年度表中的准确标题解析出的论文或官方项目页面。"
+      "en": "Primary publication or official project record used for the central technical claims.",
+      "zh": "用于核心技术主张的主论文或官方项目记录。"
     }
   },
   {
@@ -57,8 +57,88 @@
     "purpose": "core-evidence",
     "reliability": "primary",
     "notes": {
-      "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
-      "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+      "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+      "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
+    }
+  },
+  {
+    "id": "source-chatgpt-instructgpt-background",
+    "type": "paper",
+    "label": {
+      "en": "Background paper",
+      "zh": "背景论文"
+    },
+    "title": {
+      "en": "Training language models to follow instructions with human feedback",
+      "zh": "《Training language models to follow instructions with human feedback》"
+    },
+    "url": "https://arxiv.org/abs/2203.02155",
+    "language": "en",
+    "purpose": "background",
+    "reliability": "primary",
+    "notes": {
+      "en": "Method background for the RLHF lineage explicitly referenced by the ChatGPT launch page.",
+      "zh": "ChatGPT 发布页明确提及的 RLHF 方法路线背景论文。"
+    }
+  },
+  {
+    "id": "source-chatgpt-gpt3-background",
+    "type": "paper",
+    "label": {
+      "en": "Precursor paper",
+      "zh": "前序论文"
+    },
+    "title": {
+      "en": "Language Models are Few-Shot Learners",
+      "zh": "《Language Models are Few-Shot Learners》"
+    },
+    "url": "https://arxiv.org/abs/2005.14165",
+    "language": "en",
+    "purpose": "precursor",
+    "reliability": "primary",
+    "notes": {
+      "en": "Precursor GPT-3 paper for the base-model lineage behind the launch.",
+      "zh": "用于说明 ChatGPT 基础模型路线的 GPT-3 前序论文。"
+    }
+  },
+  {
+    "id": "source-chatgpt-hugging-face-rlhf",
+    "type": "article",
+    "label": {
+      "en": "Article",
+      "zh": "文章"
+    },
+    "title": {
+      "en": "Illustrating Reinforcement Learning from Human Feedback (RLHF)",
+      "zh": "图解基于人类反馈的强化学习（RLHF）"
+    },
+    "url": "https://huggingface.co/blog/rlhf",
+    "language": "en",
+    "purpose": "background",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Technical article explaining reward modeling, PPO and KL regularization in the RLHF pipeline.",
+      "zh": "解释 RLHF 流程中奖励建模、PPO 与 KL 正则化的技术文章。"
+    }
+  },
+  {
+    "id": "source-chatgpt-hugging-face-rlhf-image",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Hugging Face RLHF policy-optimization diagram",
+      "zh": "Hugging Face RLHF 策略优化流程图"
+    },
+    "url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/rlhf/rlhf.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Direct image from the documentation-images dataset, labeled CC BY-NC-SA 4.0.",
+      "zh": "documentation-images 数据集图片直链，标注为 CC BY-NC-SA 4.0。"
     }
   }
 ]

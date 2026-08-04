@@ -10,7 +10,7 @@ const localize = (value) => {
     return String(value.zh ?? value.en ?? '');
 };
 
-assert.equal(milestones.length, 294, 'the chronology overview should consume all generated Archive milestones');
+assert.equal(milestones.length, 314, 'the chronology overview should consume all generated Archive milestones');
 
 const annualMilestones = milestones.filter(
     (milestone) => overview.getStorylineId(milestone) === 'bench-council-ai100-2022-2023'
@@ -33,7 +33,10 @@ assert.equal(
 assert.equal(annualLayout.cards.at(-1).milestone.title.en, 'OSTrack', 'annual layout should end at official row 120');
 assert.equal(annualLayout.years[0].label, '2022-2023', 'annual layout should label its official sequence');
 const unifiedSourceMilestones = milestones.filter(
-    (milestone) => overview.getStorylineId(milestone) !== 'bench-council-ai100-2022-2023'
+    (milestone) =>
+        !new Set(['bench-council-ai100-2022-2023', 'bench-council-ai100-2022-2023-highlights']).has(
+            overview.getStorylineId(milestone)
+        )
 );
 
 const canonicalMilestones = overview.buildCanonicalMilestones(unifiedSourceMilestones, {

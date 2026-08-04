@@ -3,34 +3,35 @@
     "id": "ai100-annual-2022-2023-002-simmim-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to Simmim?",
-      "zh": "BenchCouncil 年度表把 Simmim 归入哪个领域？"
+      "en": "What does SimMIM's lightweight prediction head reconstruct at masked positions?",
+      "zh": "SimMIM 的轻量预测头在被遮挡位置重建什么？"
     },
     "options": [
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "Raw RGB pixel values",
+        "zh": "原始 RGB 像素值"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "Only class labels",
+        "zh": "仅类别标签"
       },
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "Text captions",
+        "zh": "文本描述"
       },
       {
-        "en": "Multimodal",
-        "zh": "多模态"
+        "en": "3D camera poses",
+        "zh": "三维相机位姿"
       }
     ],
     "answer": 0,
     "explanation": {
-      "en": "Simmim appears in the Vision area of the official annual table.",
-      "zh": "Simmim 位于官方年度表的“视觉”领域。"
+      "en": "SimMIM directly regresses the raw RGB values of masked pixels with a lightweight linear head.",
+      "zh": "SimMIM 使用轻量线性预测头直接回归被遮挡像素的原始 RGB 值。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-cvf-paper-page",
+      "source-microsoft-research-publication"
     ],
     "assetIds": [
       "asset-annual-002-simmim-record"

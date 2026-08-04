@@ -7,7 +7,7 @@ const { archiveStorylines, milestones: generatedMilestones } = require(
     path.join(__dirname, '..', 'milestones-data.js')
 );
 
-assert.equal(archiveStorylines.length, 5, 'generated runtime should expose all Archive storyline definitions');
+assert.equal(archiveStorylines.length, 6, 'generated runtime should expose all Archive storyline definitions');
 assert.deepEqual(
     archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100').title,
     { zh: 'AI 顶尖成就（BenchCouncil）', en: 'Top AI Achievements (BenchCouncil)' },
@@ -25,6 +25,11 @@ assert.deepEqual(
     archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100-2022-2023').title,
     { zh: 'AI100 年度成就（2022-2023）', en: 'AI100 Annual Achievements (2022-2023)' },
     'the generated annual AI100 storyline title should come from Archive'
+);
+assert.deepEqual(
+    archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100-2022-2023-highlights').title,
+    { zh: 'AI100 年度精选（2022-2023）', en: 'AI100 Annual Highlights (2022-2023)' },
+    'the generated annual AI100 highlights title should come from Archive'
 );
 console.log('PASS generated storyline definitions');
 
@@ -117,18 +122,58 @@ assert.deepEqual(
     'annual milestones should preserve the complete official contributor order'
 );
 assert.equal(annualAi100Milestones[0].figures[0].avatar.endsWith('ze-liu-portrait.jpg'), true);
-assert.equal(annualAi100Milestones[0].figures[1].avatar, '');
+assert.equal(annualAi100Milestones[0].figures[1].avatar.endsWith('han-hu-portrait.jpg'), true);
 assert.deepEqual(
     annualAi100Milestones[1].figures.map((figure) => figure.name.en),
     ['Zhenda Xie', 'Zheng Zhang', 'Yue Cao', 'Han Hu'],
-    'annual milestones should retain contributor information when no portrait is available'
+    'annual milestones should preserve the complete SimMIM contributor order'
 );
 assert.equal(
-    annualAi100Milestones[1].figures.every((figure) => figure.avatar === ''),
+    annualAi100Milestones[1].figures.filter((figure) => figure.avatar).length,
+    2,
+    'an annual event should expose every verified contributor portrait'
+);
+assert.equal(
+    annualAi100Milestones[1].figures.slice(0, 2).every((figure) => figure.avatar === ''),
     true,
-    'contributors without a verified portrait should remain text-only'
+    'contributors without the selected portrait should remain text-only'
+);
+assert.equal(annualAi100Milestones[1].figures[2].avatar.endsWith('yue-cao-portrait.jpeg'), true);
+assert.equal(annualAi100Milestones[1].figures[3].avatar.endsWith('han-hu-portrait.jpg'), true);
+assert.deepEqual(
+    annualAi100Milestones[2].figures.map((figure) => figure.name.en),
+    ['Xiaohua Zhai', 'Alexander Kolesnikov', 'Lucas Beyer'],
+    'annual milestones should preserve the complete Scaling ViT contributor order'
+);
+assert.equal(
+    annualAi100Milestones[2].figures.filter((figure) => figure.avatar).length,
+    1,
+    'Scaling ViT should expose exactly one selected contributor portrait'
+);
+assert.equal(annualAi100Milestones[2].figures[0].avatar.endsWith('xiaohua-zhai-portrait.jpg'), true);
+assert.equal(
+    annualAi100Milestones[2].figures.slice(1).every((figure) => figure.avatar === ''),
+    true,
+    'Scaling ViT contributors without the selected portrait should remain text-only'
 );
 console.log('PASS BenchCouncil annual storyline order');
+
+const annualAi100Highlights = generatedMilestones.filter(
+    (milestone) => routing.getMilestoneStorylineId(milestone) === 'bench-council-ai100-2022-2023-highlights'
+);
+assert.equal(annualAi100Highlights.length, 20, 'the annual AI100 highlights storyline should contain 20 events');
+assert.equal(
+    annualAi100Highlights.filter((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-057-claude')
+        .length,
+    1,
+    'the 2023 highlights should include Claude'
+);
+assert.equal(
+    annualAi100Highlights.some((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-042-llama-2'),
+    false,
+    'the highlights should omit LLaMA 2 to avoid duplicating the LLaMA turning point'
+);
+console.log('PASS BenchCouncil annual highlights selection');
 
 const archiveMilestones = [
     { id: 'milestone-1956-dartmouth', storyline: { id: 'deep-learning' } },
@@ -238,8 +283,8 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function getChronologyOverviewMilestones\(\)[\s\S]*?chronologyFilterStorylineId === ANNUAL_AI100_STORYLINE_ID[\s\S]*?getStorylineMilestones\(ANNUAL_AI100_STORYLINE_ID\)[\s\S]*?milestones: getChronologyOverviewMilestones\(\)[\s\S]*?preserveSourceOrder: chronologyFilterStorylineId === ANNUAL_AI100_STORYLINE_ID/,
-    'the annual storyline should supply its own 120-row dataset to the overview in official order'
+    /function getChronologyOverviewMilestones\(\)[\s\S]*?STANDALONE_AI100_STORYLINE_IDS\.has\(chronologyFilterStorylineId\)[\s\S]*?getStorylineMilestones\(chronologyFilterStorylineId\)[\s\S]*?milestones: getChronologyOverviewMilestones\(\)[\s\S]*?preserveSourceOrder: preserveStandaloneOrder/,
+    'the complete annual and highlights storylines should supply their own datasets in configured order'
 );
 assert.match(
     indexHtml,
@@ -343,13 +388,13 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /const UNIFIED_STORYLINE_EXCLUSIONS = new Set\(\[ANNUAL_AI100_STORYLINE_ID\]\)[\s\S]*?unifiedSourceMilestones = allMilestones\.filter/,
-    'the annual AI100 snapshot should remain separate from the unified long-term chronology'
+    /const STANDALONE_AI100_STORYLINE_IDS = new Set\([\s\S]*?ANNUAL_AI100_STORYLINE_ID[\s\S]*?AI100_HIGHLIGHTS_STORYLINE_ID[\s\S]*?const UNIFIED_STORYLINE_EXCLUSIONS = new Set\(STANDALONE_AI100_STORYLINE_IDS\)[\s\S]*?unifiedSourceMilestones = allMilestones\.filter/,
+    'the complete annual and highlights storylines should remain separate from the unified long-term chronology'
 );
 assert.match(
     indexHtml,
-    /const STORYLINE_OPTIONS = \[[\s\S]*?id: UNIFIED_STORYLINE_ID[\s\S]*?id: 'bench-council-ai100'[\s\S]*?id: ANNUAL_AI100_STORYLINE_ID[\s\S]*?id: 'gaming-ai'[\s\S]*?id: 'humanistic-cycle'[\s\S]*?id: DEEP_STORYLINE_ID[\s\S]*?\];/,
-    'the storyline selector should expose canonical and annual AI100 as separate views'
+    /const STORYLINE_OPTIONS = \[[\s\S]*?id: UNIFIED_STORYLINE_ID[\s\S]*?id: 'bench-council-ai100'[\s\S]*?id: ANNUAL_AI100_STORYLINE_ID[\s\S]*?id: AI100_HIGHLIGHTS_STORYLINE_ID[\s\S]*?id: 'gaming-ai'[\s\S]*?id: 'humanistic-cycle'[\s\S]*?id: DEEP_STORYLINE_ID[\s\S]*?\];/,
+    'the storyline selector should expose canonical, annual, and annual highlights AI100 views'
 );
 assert.match(
     indexHtml,
@@ -494,6 +539,16 @@ assert.match(
     indexHtml,
     /@media \(min-width: 1200px\)[\s\S]*?\.ui-avatar-strip\.count-4\s*\{[\s\S]*?grid-template-columns:\s*repeat\(4, minmax\(0, 1fr\)\)[\s\S]*?\.ui-avatar-strip\.count-4 \.ui-avatar-face\s*\{[\s\S]*?width:\s*72px/,
     'desktop four-figure layouts should use a compact four-column grid'
+);
+assert.match(
+    indexHtml,
+    /\.ui-avatar-face\.is-product img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?function buildUiAvatarHtml[\s\S]*?figure\.figureType === 'product' \? ' is-product' : ''/,
+    'single-screen product avatars should contain complete logos inside the circular frame'
+);
+assert.match(
+    dualScreenHtml,
+    /\.figure-avatar\.is-product img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?function renderFigures[\s\S]*?figure\.figureType === 'product' \? ' is-product' : ''/,
+    'dual-screen product avatars should contain complete logos inside the circular frame'
 );
 assert.match(
     indexHtml,

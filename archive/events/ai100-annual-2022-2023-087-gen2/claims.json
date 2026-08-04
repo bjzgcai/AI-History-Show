@@ -35,5 +35,67 @@
       "source-benchcouncil-annual"
     ],
     "status": "verified"
+  },
+  {
+    "id": "claim-official-page-byline",
+    "importance": "supporting",
+    "text": {
+      "en": "Runway's official Gen-2 research page is bylined by Anastasis Germanidis, while BenchCouncil's contributor field for Gen2 is blank.",
+      "zh": "Runway 官方 Gen-2 研究页面署名 Anastasis Germanidis，而 BenchCouncil 的 Gen2 人物字段为空。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-eight-modes",
+    "importance": "core",
+    "text": {
+      "en": "The official page presents eight modes: text to video, text plus image to video, image to video, stylization, storyboard, mask, render and customization.",
+      "zh": "官方页面展示八种模式：文生视频、文本加图像生成视频、图生视频、风格化、故事板、遮罩、渲染与定制。"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-self-reported-preference",
+    "importance": "supporting",
+    "text": {
+      "en": "Runway reports that users preferred Gen-2 results 73.53% of the time over Stable Diffusion 1.5 and 88.24% over Text2Live in the comparisons shown on its page.",
+      "zh": "Runway 在页面展示的对比中自报：用户相较 Stable Diffusion 1.5 有 73.53% 的情况偏好 Gen-2，相较 Text2Live 的偏好比例为 88.24%。"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-multimodal-video",
+    "importance": "core",
+    "text": {
+      "en": "Gen-2 was presented with text, image and video-conditioned generation modes.",
+      "zh": "Gen-2 发布时展示了文本、图像与视频条件生成模式。"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-structure-transfer",
+    "importance": "core",
+    "text": {
+      "en": "The public page includes modes that preserve source-video structure while changing visual content or style.",
+      "zh": "公开页面包含保留源视频结构、同时改变视觉内容或风格的模式。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-gen1-paper"
+    ],
+    "status": "verified"
   }
 ]

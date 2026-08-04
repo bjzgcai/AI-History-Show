@@ -3,28 +3,38 @@
     "id": "source-primary-record",
     "type": "paper-page",
     "label": {
-      "en": "Paper page",
-      "zh": "论文页面"
+      "en": "Publication page",
+      "zh": "出版页面"
     },
     "title": {
       "en": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
-      "zh": "《Evolutionary-scale prediction of atomic-level protein structure with a language model》"
+      "zh": "《使用语言模型进行进化尺度的原子级蛋白质结构预测》"
     },
     "authors": [
       "Zeming Lin",
       "Halil Akin",
       "Roshan Rao",
       "Brian Hie",
+      "Zhongkai Zhu",
+      "Wenting Lu",
+      "Nikita Smetanin",
+      "Robert Verkuil",
+      "Ori Kabeli",
+      "Yaniv Shmueli",
+      "Allan dos Santos Costa",
+      "Maryam Fazel-Zarandi",
+      "Tom Sercu",
+      "Salvatore Candido",
       "Alexander Rives"
     ],
     "year": 2023,
-    "url": "https://doi.org/10.1126/science.ade2574",
+    "url": "https://www.science.org/doi/10.1126/science.ade2574",
     "language": "en",
     "purpose": "core-evidence",
     "reliability": "primary",
     "notes": {
-      "en": "Publication or official work page resolved from the exact title in the BenchCouncil annual table.",
-      "zh": "依据 BenchCouncil 年度表中的准确标题解析出的论文或官方项目页面。"
+      "en": "Primary Science record used to verify authorship, single-sequence structure prediction and metagenomic-scale analysis.",
+      "zh": "用于核对作者、单序列结构预测与宏基因组规模分析的 Science 原始记录。"
     }
   },
   {
@@ -43,8 +53,8 @@
     "purpose": "bibliographic-verification",
     "reliability": "secondary",
     "notes": {
-      "en": "Bibliographic metadata used to verify the publication year and landing page.",
-      "zh": "用于核对出版年份与落地页面的书目元数据。"
+      "en": "Bibliographic metadata is retained only as a secondary cross-check; technical and identity claims use primary records.",
+      "zh": "书目元数据仅作为辅助交叉核对；技术与人物主张使用原始记录。"
     }
   },
   {
@@ -65,6 +75,126 @@
     "notes": {
       "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
       "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+    }
+  },
+  {
+    "id": "source-annual-110-esmfold-portrait-brian-hie",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Brian Hie portrait source",
+      "zh": "布赖恩·希人物图片来源"
+    },
+    "url": "https://profiles.stanford.edu/brian-hie",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Stanford's official profile publishes the headshot and records Brian Hie's prior Meta AI visiting-researcher role, matching the ESMFold paper identity. Reliability: official-university-profile. Usage note: The source states no redistribution license; retain attribution and recheck before redistribution outside this project.",
+      "zh": "斯坦福官方人物页发布该头像，并记录布赖恩·希曾任 Meta AI 访问研究员，与 ESMFold 论文身份相符。 可靠性：official-university-profile。使用备注：来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+    }
+  },
+  {
+    "id": "source-biorxiv-preprint",
+    "type": "paper-page",
+    "label": {
+      "en": "Preprint page",
+      "zh": "预印本页面"
+    },
+    "title": {
+      "en": "ESMFold preprint - bioRxiv",
+      "zh": "ESMFold bioRxiv 预印本"
+    },
+    "url": "https://www.biorxiv.org/content/10.1101/2022.07.20.500902v1",
+    "language": "en",
+    "purpose": "alternate-access",
+    "reliability": "primary",
+    "notes": {
+      "en": "Author-submitted ESMFold preprint with the model description, evaluations and metagenomic analysis. This replaces the previously recorded arXiv 2207.09574 link, which resolves to an unrelated mathematics paper.",
+      "zh": "作者提交的 ESMFold 预印本，包含模型说明、评测与宏基因组分析。它替换此前误录的 arXiv 2207.09574；该编号实际指向一篇无关的数学论文。"
+    }
+  },
+  {
+    "id": "source-esm-repository",
+    "type": "code",
+    "label": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "title": {
+      "en": "Meta ESM official repository",
+      "zh": "Meta ESM 官方仓库"
+    },
+    "url": "https://github.com/facebookresearch/esm",
+    "language": "en",
+    "purpose": "implementation",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official repository with ESM-2 and ESMFold inference code, checkpoints and usage instructions.",
+      "zh": "官方仓库，提供 ESM-2 与 ESMFold 推理代码、检查点和使用说明。"
+    }
+  },
+  {
+    "id": "source-meta-esmfold",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Folding the metagenomic world with ESMFold",
+      "zh": "使用 ESMFold 折叠宏基因组世界"
+    },
+    "url": "https://ai.meta.com/blog/protein-folding-esmfold-metagenomics/",
+    "language": "en",
+    "purpose": "official-statement",
+    "reliability": "primary",
+    "notes": {
+      "en": "Meta research article describing the model’s speed and the ESM Metagenomic Atlas release.",
+      "zh": "Meta 研究文章，说明模型速度与 ESM Metagenomic Atlas 发布背景。"
+    }
+  },
+  {
+    "id": "source-brian-hie-stanford-profile",
+    "type": "profile",
+    "label": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "title": {
+      "en": "Brian Hie - Stanford Profiles",
+      "zh": "布赖恩·希 - 斯坦福人物资料"
+    },
+    "url": "https://profiles.stanford.edu/brian-hie",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official Stanford profile identifying Brian Hie, publishing the selected headshot and recording his prior visiting researcher role at Meta AI. The profile does not state a redistribution license for the photograph.",
+      "zh": "斯坦福官方人物页确认布赖恩·希身份，发布所选头像，并记录他曾任 Meta AI 访问研究员。页面未为照片声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-esmfold-figure-2",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "ESMFold Figure 2: single-sequence structure prediction",
+      "zh": "ESMFold Figure 2：单序列结构预测"
+    },
+    "url": "https://www.biorxiv.org/content/biorxiv/early/2022/07/21/2022.07.20.500902/F2.large.jpg",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The bioRxiv Figure 2 combines the ESM-2-to-folding-trunk architecture, ablations, benchmark comparisons and representative structures. It is the strongest commonly used technical screenshot for ESMFold, but the existing original local explainer remains the single selected explanatory image; no separate redistribution license is stated for the figure.",
+      "zh": "bioRxiv Figure 2 同时展示从 ESM-2 到折叠主干的架构、消融、基准比较与代表性结构，是 ESMFold 最常用且说明力最强的技术截图。页面仍只选用现有本地原创解释图；该图未单独声明再分发许可。"
     }
   }
 ]

@@ -2674,6 +2674,23 @@
             transform-origin: center center;
         }
 
+        .figure-avatar.is-product {
+            background: rgba(244, 239, 229, 0.94);
+            filter: none;
+        }
+
+        .figure-avatar.is-product img {
+            box-sizing: border-box;
+            object-fit: contain;
+            padding: 7px;
+            filter: none;
+        }
+
+        .figure-avatar.is-product img[src$="chatgpt-logo.png"] {
+            background: #101010;
+            padding: 6px;
+        }
+
         .figure-avatar span {
             display: inline-block;
         }
@@ -5709,6 +5726,21 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        .ui-avatar-face.is-product {
+            background: rgba(244, 239, 229, 0.94);
+        }
+
+        .ui-avatar-face.is-product img {
+            box-sizing: border-box;
+            object-fit: contain;
+            padding: 11px;
+        }
+
+        .ui-avatar-face.is-product img[src$="chatgpt-logo.png"] {
+            background: #101010;
+            padding: 9px;
         }
 
         @media (min-width: 1200px) {
@@ -9029,6 +9061,11 @@
         const UNIFIED_STORYLINE_ID = 'unified-ai-history';
         const DEEP_STORYLINE_ID = StorylineRouting.DEEP_STORYLINE_ID;
         const ANNUAL_AI100_STORYLINE_ID = 'bench-council-ai100-2022-2023';
+        const AI100_HIGHLIGHTS_STORYLINE_ID = 'bench-council-ai100-2022-2023-highlights';
+        const STANDALONE_AI100_STORYLINE_IDS = new Set([
+            ANNUAL_AI100_STORYLINE_ID,
+            AI100_HIGHLIGHTS_STORYLINE_ID
+        ]);
         const DEFAULT_STORYLINE_ID = UNIFIED_STORYLINE_ID;
         const CHRONOLOGY_FILTER_PARAM = 'storylineFilter';
         const AI_HISTORY_MAP_VARIANT_PRIORITY = [
@@ -9039,12 +9076,12 @@
         ];
         const CHRONOLOGY_FILTER_STORYLINE_IDS = new Set([
             ...AI_HISTORY_MAP_VARIANT_PRIORITY,
-            ANNUAL_AI100_STORYLINE_ID
+            ...STANDALONE_AI100_STORYLINE_IDS
         ]);
-        const UNIFIED_STORYLINE_EXCLUSIONS = new Set([ANNUAL_AI100_STORYLINE_ID]);
+        const UNIFIED_STORYLINE_EXCLUSIONS = new Set(STANDALONE_AI100_STORYLINE_IDS);
         const ACHIEVEMENT_STORYLINE_IDS = new Set([
             'bench-council-ai100',
-            ANNUAL_AI100_STORYLINE_ID
+            ...STANDALONE_AI100_STORYLINE_IDS
         ]);
         const analytics = window.AIHistoryAnalytics || null;
         if (analytics) {
@@ -9082,6 +9119,18 @@
                 note: {
                     en: 'The standalone 120-row annual selection in official BenchCouncil order',
                     zh: '按 BenchCouncil 官方顺序展示 120 条独立年度入选记录'
+                }
+            },
+            {
+                id: AI100_HIGHLIGHTS_STORYLINE_ID,
+                layout: 'ui-browser',
+                label: {
+                    en: 'AI100 Annual Highlights (2022-2023)',
+                    zh: 'AI100 年度精选（2022-2023）'
+                },
+                note: {
+                    en: 'Ten selected turning points from each year, including Claude in the 2023 selection',
+                    zh: '每年精选 10 个技术转折点，2023 年精选包含 Claude'
                 }
             },
             {
@@ -9206,8 +9255,8 @@
         }
 
         function getChronologyVisibleMilestones() {
-            if (chronologyFilterStorylineId === ANNUAL_AI100_STORYLINE_ID) {
-                return getStorylineMilestones(ANNUAL_AI100_STORYLINE_ID);
+            if (STANDALONE_AI100_STORYLINE_IDS.has(chronologyFilterStorylineId)) {
+                return getStorylineMilestones(chronologyFilterStorylineId);
             }
             return window.ChronologyOverview.selectMilestonesByStoryline(
                 buildUnifiedMilestones(),
@@ -9216,8 +9265,8 @@
         }
 
         function getChronologyOverviewMilestones() {
-            return chronologyFilterStorylineId === ANNUAL_AI100_STORYLINE_ID
-                ? getStorylineMilestones(ANNUAL_AI100_STORYLINE_ID)
+            return STANDALONE_AI100_STORYLINE_IDS.has(chronologyFilterStorylineId)
+                ? getStorylineMilestones(chronologyFilterStorylineId)
                 : buildUnifiedMilestones();
         }
 
@@ -12961,15 +13010,18 @@
                     role: buildLocationLine(vm.location) || tx('keyHistoricalFigure')
                 }];
             refs.figureRow.className = `figure-row count-${Math.min(UI_DETAIL_FIGURE_LIMIT, figures.length)}`;
-            refs.figureRow.innerHTML = figures.map((figure) => `
+            refs.figureRow.innerHTML = figures.map((figure) => {
+                const avatarClass = figure.figureType === 'product' ? ' is-product' : '';
+                return `
                 <article class="figure-chip">
-                    <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure))}</div>
+                    <div class="figure-avatar${avatarClass}">${buildFigureAvatar(figure, getFigureAvatarSource(figure))}</div>
                     <div class="figure-meta">
                         <div class="figure-name">${escapeHtmlWithCjkTail(figure.name || tx('keyFigure'))}</div>
                         <div class="figure-role">${escapeHtmlWithCjkTail(figure.role || tx('keyParticipant'))}</div>
                     </div>
                 </article>
-            `).join('');
+            `;
+            }).join('');
         }
 
         function setImage(imgEl, src, alt) {
@@ -15213,9 +15265,10 @@
         function buildUiAvatarHtml(vm, figures = getUiDetailFigures(vm)) {
             return figures.map((figure) => {
                 const avatar = buildFigureAvatar(figure, getFigureAvatarSource(figure));
+                const avatarClass = figure.figureType === 'product' ? ' is-product' : '';
                 return `
                     <div class="ui-avatar">
-                        <div class="ui-avatar-face">${avatar}</div>
+                        <div class="ui-avatar-face${avatarClass}">${avatar}</div>
                         <div>
                             <span class="ui-avatar-name">${escapeHtmlWithCjkTail(figure.name || tx('keyFigure'))}</span>
                             ${figure.role ? `<span class="ui-avatar-role">${escapeHtmlWithCjkTail(figure.role)}</span>` : ''}
@@ -15874,10 +15927,11 @@
                 });
             }
             chronologyOverview.setState({ storylineId: chronologyFilterStorylineId });
+            const preserveStandaloneOrder = STANDALONE_AI100_STORYLINE_IDS.has(chronologyFilterStorylineId);
             chronologyOverview.update({
                 milestones: getChronologyOverviewMilestones(),
-                preserveSourceOrder: chronologyFilterStorylineId === ANNUAL_AI100_STORYLINE_ID,
-                sequenceLabel: chronologyFilterStorylineId === ANNUAL_AI100_STORYLINE_ID ? '2022-2023' : '',
+                preserveSourceOrder: preserveStandaloneOrder,
+                sequenceLabel: preserveStandaloneOrder ? '2022-2023' : '',
                 selectedEventId: uiSelectedEventId,
                 localize: lx,
                 locale: window.I18n && typeof window.I18n.getLocale === 'function'

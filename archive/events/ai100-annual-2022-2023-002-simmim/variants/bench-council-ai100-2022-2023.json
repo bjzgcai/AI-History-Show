@@ -7,12 +7,12 @@
     "zh": "Simmim"
   },
   "displaySummary": {
-    "en": "AI100 (2022-2023) · Vision",
-    "zh": "AI100（2022-2023）· 视觉"
+    "en": "AI100 (2022-2023) · Simple masked image pretraining",
+    "zh": "AI100（2022-2023）· 简洁的掩码图像预训练"
   },
   "displayDescription": {
-    "en": "<p>BenchCouncil lists Simmim in the Vision area of its AI100 (2022-2023) annual table. It associates the work with the publication “Simmim: A simple framework for masked image modeling”. The page names Zhenda Xie, Zheng Zhang, Yue Cao, Han Hu as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“视觉”领域列出 Simmim。该条目关联论文《Simmim: A simple framework for masked image modeling》。页面把 Zhenda Xie（官方页拼写）、Zheng Zhang（官方页拼写）、曹越、胡瀚 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>SimMIM asked how much machinery masked image modeling actually needed. Instead of block-wise masking, discrete-VAE tokenizers, clustering targets or a heavy decoder, it used random masks with moderately large patches, directly regressed the RGB values of masked pixels and reduced the prediction head to a linear layer.</p><p>The simple recipe produced strong representations with both ViT and Swin backbones, and the paper reports scaling from ViT-B to a 3-billion-parameter SwinV2-G model.</p>",
+    "zh": "<p>SimMIM 追问掩码图像建模究竟需要多少复杂机制。它不依赖分块遮挡、离散 VAE 分词器、聚类目标或沉重解码器，而是采用中等偏大的随机遮挡块，直接回归被遮挡位置的 RGB 像素值，并把预测头简化为单个线性层。</p><p>这套简洁方案在 ViT 与 Swin 主干上都学到强表征，论文还报告了从 ViT-B 扩展到 30 亿参数 SwinV2-G 的结果。</p>"
   },
   "emphasis": [
     "benchcouncil-annual-2022-2023",
@@ -23,46 +23,63 @@
     {
       "type": "archiveLink",
       "site": {
-        "en": "Primary publication",
-        "zh": "主论文"
+        "en": "Microsoft Research publication",
+        "zh": "微软研究院论文页"
       },
       "title": {
-        "en": "Simmim: A simple framework for masked image modeling",
-        "zh": "《Simmim: A simple framework for masked image modeling》"
+        "en": "SimMIM: A Simple Framework for Masked Image Modeling",
+        "zh": "《SimMIM: A Simple Framework for Masked Image Modeling》"
       },
       "description": {
-        "en": "Publication associated with this work by the BenchCouncil annual table.",
-        "zh": "BenchCouncil 年度表为该成果关联的论文。"
+        "en": "The official institution page summarizes the simple masking recipe, raw-pixel target, lightweight head, ImageNet results and billion-parameter scaling experiment.",
+        "zh": "机构官方页面概述简洁遮挡方案、原始像素目标、轻量预测头、ImageNet 结果和十亿参数级扩展实验。"
       },
-      "url": "https://doi.org/10.1109/cvpr52688.2022.00943",
-      "source": "https://doi.org/10.1109/cvpr52688.2022.00943",
+      "url": "https://www.microsoft.com/en-us/research/publication/simmim-a-simple-framework-for-masked-image-modeling/",
+      "source": "https://www.microsoft.com/en-us/research/publication/simmim-a-simple-framework-for-masked-image-modeling/",
       "license": {
-        "en": "Reference link only; local visuals are original redraws.",
-        "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+        "en": "Reference link only; the local explainer is an original redraw and does not copy the paper figure.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘，不复制论文图形。"
       },
       "usage": {
-        "en": "Publication and evidence reference",
-        "zh": "论文与证据参考"
+        "en": "Technical and institutional evidence reference",
+        "zh": "技术与机构证据参考"
       },
       "action": {
-        "en": "Open publication",
-        "zh": "打开论文"
+        "en": "Open Microsoft Research page",
+        "zh": "打开微软研究院页面"
       }
     }
   ],
   "assetIds": [
+    "asset-annual-002-simmim-portrait-yue-cao",
+    "asset-annual-002-simmim-official-teaser",
+    "asset-annual-002-simmim-portrait-han-hu",
     "asset-annual-002-simmim-record"
   ],
-  "overviewImageAssetId": "asset-annual-002-simmim-record",
+  "overviewImageAssetId": "asset-annual-002-simmim-portrait-yue-cao",
   "sourceIds": [
     "source-primary-record",
     "source-openalex-record",
-    "source-benchcouncil-annual"
+    "source-benchcouncil-annual",
+    "source-annual-002-simmim-portrait-han-hu",
+    "source-cvf-paper-page",
+    "source-microsoft-research-publication",
+    "source-implementation-repository",
+    "source-zhenda-xie-github",
+    "source-zheng-zhang-profile",
+    "source-zheng-zhang-name-record",
+    "source-yue-cao-github",
+    "source-han-hu-profile",
+    "source-annual-002-simmim-portrait-yue-cao",
+    "source-simmim-official-teaser"
   ],
   "claimIds": [
     "claim-annual-membership",
     "claim-publication-record",
-    "claim-contributor-record"
+    "claim-contributor-record",
+    "claim-contributors-cross-verified",
+    "claim-simple-masked-modeling",
+    "claim-scale-results"
   ],
   "quizId": "ai100-annual-2022-2023-002-simmim-quiz-1",
   "commentarySections": [
@@ -73,11 +90,12 @@
         "zh": "历史背景"
       },
       "html": {
-        "en": "BenchCouncil published this row as part of its AI100 (2022-2023) annual selection in the Vision area. The annual list captures a time-bounded view of prominent recent work rather than the membership of the long-term AI100 table.",
-        "zh": "BenchCouncil 把该行发布在 AI100（2022-2023）年度入选表的“视觉”领域中。年度表记录的是当时对近期代表性工作的阶段性观察，不等同于长期 AI100 主表成员。"
+        "en": "Masked image modeling emerged as a way to bring self-supervised pretraining ideas from language models into computer vision, but early systems often introduced tokenizers, clustering targets or substantial decoder machinery. SimMIM tested whether those additions were essential and deliberately reduced the task to a small set of controllable design choices.",
+        "zh": "掩码图像建模把语言模型中的自监督预训练思路带入计算机视觉，但早期系统往往加入分词器、聚类目标或较重的解码结构。SimMIM 直接检验这些机制是否必要，并把任务压缩为少量可控设计选择。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-cvf-paper-page",
+        "source-microsoft-research-publication"
       ]
     },
     {
@@ -87,12 +105,12 @@
         "zh": "核心思想"
       },
       "html": {
-        "en": "The official work name is Simmim, linked by the table to “Simmim: A simple framework for masked image modeling”. Zhenda Xie, Zheng Zhang, Yue Cao, Han Hu are preserved in the same order as the Main Contributors cell. The institution field is Tsinghua University, Microsoft Research Asia, Xi'an Jiaotong University.",
-        "zh": "官方成果名称为 Simmim，表格将其关联到论文《Simmim: A simple framework for masked image modeling》。Zhenda Xie（官方页拼写）、Zheng Zhang（官方页拼写）、曹越、胡瀚 按“主要人物”单元格中的相同顺序显示。官方英文拼写与顺序保存在年度记录中，机构字段为 清华大学、微软亚洲研究院、Xi'an Jiaotong University。"
+        "en": "The input image is randomly masked with moderately large patches, and the visible content is processed by a standard vision backbone. A lightweight linear head predicts the raw RGB values of masked pixels, making the reconstruction target simple enough that representation quality can be studied without confounding tokenizer or decoder complexity.",
+        "zh": "输入图像先以中等偏大的图块随机遮挡，可见内容再交给标准视觉主干处理。轻量线性头直接预测被遮挡像素的原始 RGB 值，使研究者可以在不受复杂分词器或解码器干扰的情况下观察表征质量。"
       },
       "sourceIds": [
-        "source-primary-record",
-        "source-benchcouncil-annual"
+        "source-cvf-paper-page",
+        "source-microsoft-research-publication"
       ]
     },
     {
@@ -102,11 +120,13 @@
         "zh": "长期影响"
       },
       "html": {
-        "en": "Experts should treat this record as evidence of BenchCouncil's 2022-2023 annual assessment, not as a permanent consensus ranking. Its lasting archival value is the exact preservation of the work name, publication link, contributor field, institution, country, citation value, and source order.",
-        "zh": "专家应把本记录视为 BenchCouncil 对 2022-2023 年度成果的阶段性评价证据，而不是永久共识排名。它的长期档案价值在于准确保留成果名称、论文线索、人物字段、机构、国家、引用数与来源顺序。"
+        "en": "Experts generally treat SimMIM as evidence that strong masked-image pretraining does not require elaborate discrete targets or a heavy reconstruction stack. Its lasting value is methodological clarity: the simple recipe became a clean baseline for comparing masking strategy, target choice, model scale and data scale, while the open implementation made those comparisons easier to reproduce.",
+        "zh": "专家通常把 SimMIM 视为一项重要证据：强大的掩码图像预训练并不必然需要复杂离散目标或沉重重建模块。它的长期价值在于方法清晰，简洁方案成为比较遮挡策略、预测目标、模型规模和数据规模的干净基线，公开实现也提高了这些比较的可复现性。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-cvf-paper-page",
+        "source-microsoft-research-publication",
+        "source-implementation-repository"
       ]
     }
   ],
@@ -118,11 +138,11 @@
     {
       "name": {
         "en": "Zhenda Xie",
-        "zh": "Zhenda Xie（官方页拼写）"
+        "zh": "谢振达"
       },
       "role": {
-        "en": "Main contributor for Simmim in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Simmim 主要人物"
+        "en": "Co-first author of the SimMIM paper",
+        "zh": "SimMIM 论文共同第一作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -130,11 +150,11 @@
     {
       "name": {
         "en": "Zheng Zhang",
-        "zh": "Zheng Zhang（官方页拼写）"
+        "zh": "张拯"
       },
       "role": {
-        "en": "Main contributor for Simmim in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Simmim 主要人物"
+        "en": "Co-first author of the SimMIM paper",
+        "zh": "SimMIM 论文共同第一作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -145,11 +165,11 @@
         "zh": "曹越"
       },
       "role": {
-        "en": "Main contributor for Simmim in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Simmim 主要人物"
+        "en": "Co-first author of the SimMIM paper",
+        "zh": "SimMIM 论文共同第一作者"
       },
       "figureType": "person",
-      "avatar": ""
+      "avatar": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg"
     },
     {
       "name": {
@@ -157,11 +177,11 @@
         "zh": "胡瀚"
       },
       "role": {
-        "en": "Main contributor for Simmim in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Simmim 主要人物"
+        "en": "Lead author of the SimMIM paper",
+        "zh": "SimMIM 论文主要作者"
       },
       "figureType": "person",
-      "avatar": ""
+      "avatar": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg"
     }
   ],
   "quote": {
@@ -176,14 +196,14 @@
     },
     "workAuthors": {
       "en": "Zhenda Xie, Zheng Zhang, Yue Cao, Han Hu",
-      "zh": "Zhenda Xie（官方页拼写）、Zheng Zhang（官方页拼写）、曹越、胡瀚"
+      "zh": "谢振达、张拯、曹越、胡瀚"
     },
     "sourceLabel": "",
     "sourceUrl": "https://doi.org/10.1109/cvpr52688.2022.00943"
   },
   "quotePage": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry",
-    "zh": "BenchCouncil AI100（2022-2023）年度条目"
+    "en": "Primary publication record",
+    "zh": "原始论文记录"
   },
   "quoteAttribution": {
     "en": "Simmim: A simple framework for masked image modeling",
@@ -195,50 +215,50 @@
       "zh": "视觉"
     },
     "method": {
-      "en": "Annual selection record",
-      "zh": "年度入选记录"
+      "en": "Random masking with direct raw-pixel regression",
+      "zh": "随机遮挡与原始像素直接回归"
     },
     "artifact": {
-      "en": "Simmim",
-      "zh": "Simmim"
+      "en": "A lightweight masked image pretraining framework",
+      "zh": "轻量掩码图像预训练框架"
     },
     "material": {
-      "en": "Simmim: A simple framework for masked image modeling",
-      "zh": "《Simmim: A simple framework for masked image modeling》与官方年度行"
+      "en": "CVPR 2022 paper, Microsoft Research publication page and MIT-licensed implementation",
+      "zh": "CVPR 2022 论文、微软研究院论文页与 MIT 许可实现"
     },
     "demo": {
-      "en": "Trace the official row from Simmim to its publication, contributor field, institution, and country.",
-      "zh": "沿官方行查看 Simmim 如何关联到论文、主要人物字段、机构与国家。"
+      "en": "Follow a masked image through the encoder and linear head, then compare the simple raw-pixel target with the machinery SimMIM deliberately removes.",
+      "zh": "跟随被遮挡图像经过编码器与线性预测头，再比较原始像素目标和 SimMIM 主动移除的复杂机制。"
     },
     "keyConcepts": [
       {
         "label": {
-          "en": "Official Work",
-          "zh": "官方成果名称"
+          "en": "Masking",
+          "zh": "遮挡策略"
         },
         "text": {
-          "en": "Simmim",
-          "zh": "Simmim"
+          "en": "Random masks with moderately large patches",
+          "zh": "采用中等偏大图块的随机遮挡"
         }
       },
       {
         "label": {
-          "en": "Main Contributors",
-          "zh": "主要人物"
+          "en": "Prediction Target",
+          "zh": "预测目标"
         },
         "text": {
-          "en": "Zhenda Xie, Zheng Zhang, Yue Cao, Han Hu",
-          "zh": "Zhenda Xie（官方页拼写）、Zheng Zhang（官方页拼写）、曹越、胡瀚"
+          "en": "Direct regression of raw RGB pixel values",
+          "zh": "直接回归原始 RGB 像素值"
         }
       },
       {
         "label": {
-          "en": "Institution",
-          "zh": "机构"
+          "en": "Prediction Head",
+          "zh": "预测头"
         },
         "text": {
-          "en": "Tsinghua University, Microsoft Research Asia, Xi'an Jiaotong University",
-          "zh": "清华大学、微软亚洲研究院、Xi'an Jiaotong University"
+          "en": "A lightweight linear layer",
+          "zh": "轻量线性层"
         }
       }
     ],
@@ -251,28 +271,32 @@
     ],
     "demoSteps": [
       {
-        "en": "Official work",
-        "zh": "官方成果名称"
+        "en": "Randomly hide image patches",
+        "zh": "随机隐藏图像块"
       },
       {
-        "en": "Publication record",
-        "zh": "论文记录"
+        "en": "Encode the visible content",
+        "zh": "编码可见内容"
       },
       {
-        "en": "Contributors and institution",
-        "zh": "主要人物与机构"
+        "en": "Predict masked RGB values with a linear head",
+        "zh": "用线性头预测被遮挡位置的 RGB 值"
+      },
+      {
+        "en": "Transfer the learned representation downstream",
+        "zh": "把学到的表征迁移到下游任务"
       }
     ],
     "demoImage": "resources/images/benchcouncil-ai100-annual/annual-002-simmim_record.svg",
     "demoNotes": [
       {
         "label": {
-          "en": "Source cue",
-          "zh": "资料线索"
+          "en": "Architecture cue",
+          "zh": "架构线索"
         },
         "text": {
-          "en": "Simmim: A simple framework for masked image modeling",
-          "zh": "《Simmim: A simple framework for masked image modeling》与 BenchCouncil 年度行"
+          "en": "The key design choice is subtraction: no discrete tokenizer, clustering target or heavy prediction decoder is required.",
+          "zh": "关键设计是做减法：不需要离散分词器、聚类目标或沉重预测解码器。"
         }
       },
       {
@@ -281,8 +305,8 @@
           "zh": "互动点"
         },
         "text": {
-          "en": "Trace the official row from Simmim to its publication, contributor field, institution, and country.",
-          "zh": "沿官方行查看 Simmim 如何关联到论文、主要人物字段、机构与国家。"
+          "en": "Toggle mentally between visible and masked patches, then trace exactly where the encoder stops and the lightweight reconstruction head begins.",
+          "zh": "在可见块与遮挡块之间切换观察，再追踪编码器结束和轻量重建头开始的位置。"
         }
       }
     ],
@@ -290,30 +314,30 @@
       {
         "type": "archiveLink",
         "site": {
-          "en": "Primary publication",
-          "zh": "主论文"
+          "en": "Microsoft Research publication",
+          "zh": "微软研究院论文页"
         },
         "title": {
-          "en": "Simmim: A simple framework for masked image modeling",
-          "zh": "《Simmim: A simple framework for masked image modeling》"
+          "en": "SimMIM: A Simple Framework for Masked Image Modeling",
+          "zh": "《SimMIM: A Simple Framework for Masked Image Modeling》"
         },
         "description": {
-          "en": "Publication associated with this work by the BenchCouncil annual table.",
-          "zh": "BenchCouncil 年度表为该成果关联的论文。"
+          "en": "The official institution page summarizes the method, results and implementation link.",
+          "zh": "机构官方页面概述方法、实验结果和实现链接。"
         },
-        "url": "https://doi.org/10.1109/cvpr52688.2022.00943",
-        "source": "https://doi.org/10.1109/cvpr52688.2022.00943",
+        "url": "https://www.microsoft.com/en-us/research/publication/simmim-a-simple-framework-for-masked-image-modeling/",
+        "source": "https://www.microsoft.com/en-us/research/publication/simmim-a-simple-framework-for-masked-image-modeling/",
         "license": {
-          "en": "Reference link only; local visuals are original redraws.",
-          "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+          "en": "Reference link only; the local explainer is an original redraw.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
         },
         "usage": {
-          "en": "Publication and evidence reference",
-          "zh": "论文与证据参考"
+          "en": "Technical and institutional evidence reference",
+          "zh": "技术与机构证据参考"
         },
         "action": {
-          "en": "Open publication",
-          "zh": "打开论文"
+          "en": "Open Microsoft Research page",
+          "zh": "打开微软研究院页面"
         }
       }
     ],
@@ -332,7 +356,7 @@
   "location": {
     "name": {
       "en": "Tsinghua University, Microsoft Research Asia, Xi'an Jiaotong University",
-      "zh": "清华大学、微软亚洲研究院、Xi'an Jiaotong University"
+      "zh": "清华大学、微软亚洲研究院、西安交通大学"
     },
     "country": {
       "en": "China",

@@ -19,6 +19,10 @@ function splitContributors(value) {
         .filter(Boolean);
 }
 
+function startsWithNames(actual, expected) {
+    return expected.every((name, index) => actual[index] === name);
+}
+
 const snapshot = readJson(SNAPSHOT_PATH);
 const storyline = readJson(path.join(ROOT, 'archive', 'storylines', `${STORYLINE_ID}.json`));
 const failures = [];
@@ -51,14 +55,14 @@ for (const [index, item] of snapshot.items.entries()) {
     if (event.title.en !== item.work || variant.displayTitle.en !== item.work) {
         failures.push(`${index + 1}: title mismatch for ${item.work}`);
     }
-    if (JSON.stringify(actualContributors) !== JSON.stringify(expectedContributors)) {
+    if (!startsWithNames(actualContributors, expectedContributors)) {
         failures.push(
-            `${index + 1} ${item.work}: contributors ${JSON.stringify(actualContributors)} != ${JSON.stringify(expectedContributors)}`
+            `${index + 1} ${item.work}: contributors must preserve official prefix ${JSON.stringify(expectedContributors)}`
         );
     }
-    if (JSON.stringify(variantContributors) !== JSON.stringify(expectedContributors)) {
+    if (!startsWithNames(variantContributors, expectedContributors)) {
         failures.push(
-            `${index + 1} ${item.work}: variant contributors ${JSON.stringify(variantContributors)} != ${JSON.stringify(expectedContributors)}`
+            `${index + 1} ${item.work}: variant contributors must preserve official prefix ${JSON.stringify(expectedContributors)}`
         );
     }
     if (!record) {
@@ -85,17 +89,34 @@ for (const [index, item] of snapshot.items.entries()) {
     if (selectedAssets.some((asset) => /_contributors\.svg$/i.test(asset.path || ''))) {
         failures.push(`${index + 1} ${item.work}: generated contributor profile cards are not allowed`);
     }
-    const explainers = selectedAssets.filter((asset) => asset.role === 'annual-achievement-explainer');
+    const explainers = selectedAssets.filter((asset) =>
+        ['annual-achievement-explainer', 'architecture-explainer', 'algorithm-explainer'].includes(asset.role)
+    );
     const portraits = selectedAssets.filter((asset) => asset.role === 'portrait');
-    const figureAvatars = (variant.figures || []).map((figure) => figure.avatar).filter(Boolean);
-    if (selectedAssets.length > 2 || explainers.length !== 1 || portraits.length > 1) {
-        failures.push(`${index + 1} ${item.work}: expected one explainer and at most one verified portrait`);
+    const personFigureAvatars = (variant.figures || [])
+        .filter((figure) => !figure.figureType || figure.figureType === 'person')
+        .map((figure) => figure.avatar)
+        .filter(Boolean);
+    const productFigureAvatars = (variant.figures || [])
+        .filter((figure) => figure.figureType === 'product')
+        .map((figure) => figure.avatar)
+        .filter(Boolean);
+    if (explainers.length !== 1) {
+        failures.push(`${index + 1} ${item.work}: expected exactly one achievement explainer`);
     }
     if (
-        figureAvatars.length !== portraits.length ||
-        figureAvatars.some((avatar) => !portraits.some((portrait) => portrait.path === avatar))
+        personFigureAvatars.some((avatar) => !portraits.some((portrait) => portrait.path === avatar)) ||
+        portraits.some((portrait) => !personFigureAvatars.includes(portrait.path))
     ) {
         failures.push(`${index + 1} ${item.work}: verified portrait selection and figure avatar mapping differ`);
+    }
+    for (const avatar of productFigureAvatars) {
+        if (!fs.existsSync(path.join(ROOT, avatar))) {
+            failures.push(`${index + 1} ${item.work}: product avatar file does not exist: ${avatar}`);
+        }
+        if (assets.some((asset) => asset.path === avatar)) {
+            failures.push(`${index + 1} ${item.work}: product avatar must not be included in event assets: ${avatar}`);
+        }
     }
     for (const portrait of portraits) {
         const source = readJson(path.join(eventDir, 'sources.json')).find((entry) => entry.id === portrait.sourceId);
