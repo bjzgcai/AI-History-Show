@@ -50,9 +50,9 @@ const mobileRequirements = [
     },
     {
         pattern:
-            /\.chrono-storyline-subtitle\s*\{[\s\S]*?text-overflow:\s*ellipsis[\s\S]*?@media\s*\(max-width:\s*1199px\)[\s\S]*?--chrono-storyline-height:\s*66px[\s\S]*?\.chrono-storyline-subtitle\s*\{[\s\S]*?max-width:\s*290px/,
+            /\.chrono-storyline-subtitle\s*\{[\s\S]*?width:\s*0[\s\S]*?min-width:\s*100%[\s\S]*?text-overflow:\s*ellipsis[\s\S]*?@media\s*\(max-width:\s*1199px\)[\s\S]*?--chrono-storyline-height:\s*66px[\s\S]*?\.chrono-storyline-subtitle\s*\{[\s\S]*?font-size:\s*10px/,
         haystack: chronologySource,
-        message: 'mobile storyline subtitles stay visible without expanding the chronology header indefinitely'
+        message: 'storyline subtitles fill the title column without widening responsive filter items'
     },
     {
         pattern:

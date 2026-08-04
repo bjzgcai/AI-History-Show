@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-04 04:54
+// 生成时间: 2026-08-04 06:32
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 5, milestones 214, errors 0
 
@@ -13005,8 +13005,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Runway 将 Gen-2 介绍为能够依据文本、图像或现有视频参考生成视频的多模态系统。官方研究页展示八种模式：文生视频、文本加图像生成视频、图生视频、风格化、故事板、遮罩、渲染与定制。</p><p>该页面署名 Anastasis Germanidis（阿纳斯塔西斯·耶尔马尼迪斯）；其个人网站说明他是 Runway 联合创始人、联合 CEO，并专注于视频生成研究。</p>",
-      "en": "<p>Runway presented Gen-2 as a multimodal system that can generate video from text, images or existing video references. Its official research page demonstrates eight modes: text to video, text plus image to video, image to video, stylization, storyboard, mask, render and customization.</p><p>The page is bylined by Anastasis Germanidis, whose personal site identifies him as a Runway co-founder and co-CEO focused on video-generation research.</p>"
+      "zh": "<p>Runway 于 2023 年 2 月发布 Gen-2，将其介绍为能够依据文本、图像或现有视频参考生成视频的多模态系统。官方研究页展示八种模式：文生视频、文本加图像生成视频、图生视频、风格化、故事板、遮罩、渲染与定制。</p><p>这次发布让生成式视频不再局限于转换输入片段，创作者可以从提示词或静态图像出发，并通过不同工作流控制内容、外观与构图。Runway 在 Gen-2 页面公布的对比中称，用户相较 Stable Diffusion 1.5 有 73.53% 的情况更偏好 Gen-2 结果，相较 Text2Live 的偏好比例为 88.24%。</p>",
+      "en": "<p>Runway presented Gen-2 in February 2023 as a multimodal system that can generate video from text, images or existing video references. Its official research page demonstrates eight modes: text to video, text plus image to video, image to video, stylization, storyboard, mask, render and customization.</p><p>The release expanded generative video beyond transforming an input clip, allowing creators to begin with a prompt or still image and then control content, appearance and composition through different workflows. In comparisons published on the Gen-2 page, Runway reported that users preferred its results 73.53% of the time over Stable Diffusion 1.5 and 88.24% over Text2Live.</p>"
     },
     "figures": [
       {
@@ -90049,8 +90049,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Runway 将 Gen-2 介绍为能够依据文本、图像或现有视频参考生成视频的多模态系统。官方研究页展示八种模式：文生视频、文本加图像生成视频、图生视频、风格化、故事板、遮罩、渲染与定制。</p><p>该页面署名 Anastasis Germanidis（阿纳斯塔西斯·耶尔马尼迪斯）；其个人网站说明他是 Runway 联合创始人、联合 CEO，并专注于视频生成研究。</p>",
-      "en": "<p>Runway presented Gen-2 as a multimodal system that can generate video from text, images or existing video references. Its official research page demonstrates eight modes: text to video, text plus image to video, image to video, stylization, storyboard, mask, render and customization.</p><p>The page is bylined by Anastasis Germanidis, whose personal site identifies him as a Runway co-founder and co-CEO focused on video-generation research.</p>"
+      "zh": "<p>Runway 于 2023 年 2 月发布 Gen-2，将其介绍为能够依据文本、图像或现有视频参考生成视频的多模态系统。官方研究页展示八种模式：文生视频、文本加图像生成视频、图生视频、风格化、故事板、遮罩、渲染与定制。</p><p>这次发布让生成式视频不再局限于转换输入片段，创作者可以从提示词或静态图像出发，并通过不同工作流控制内容、外观与构图。Runway 在 Gen-2 页面公布的对比中称，用户相较 Stable Diffusion 1.5 有 73.53% 的情况更偏好 Gen-2 结果，相较 Text2Live 的偏好比例为 88.24%。</p>",
+      "en": "<p>Runway presented Gen-2 in February 2023 as a multimodal system that can generate video from text, images or existing video references. Its official research page demonstrates eight modes: text to video, text plus image to video, image to video, stylization, storyboard, mask, render and customization.</p><p>The release expanded generative video beyond transforming an input clip, allowing creators to begin with a prompt or still image and then control content, appearance and composition through different workflows. In comparisons published on the Gen-2 page, Runway reported that users preferred its results 73.53% of the time over Stable Diffusion 1.5 and 88.24% over Text2Live.</p>"
     },
     "figures": [
       {

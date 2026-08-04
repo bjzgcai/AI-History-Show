@@ -358,8 +358,18 @@ assert.match(
 );
 assert.match(
     chronologySource,
-    /function syncOverflowTitles\(\)[\s\S]*?scrollWidth > element\.clientWidth \+ 1[\s\S]*?element\.title = fullText[\s\S]*?syncOverflowTitles\(\);/,
-    'storyline hover titles should appear only when the visible text is truncated'
+    /function createOverflowTooltipController\(root, scope\)[\s\S]*?function show\(element\)[\s\S]*?classList\.add\('is-visible'\)[\s\S]*?function sync\(\)[\s\S]*?scrollWidth > element\.clientWidth \+ 1[\s\S]*?classList\.toggle\('has-overflow-tooltip',[\s\S]*?root\.addEventListener\('pointerover',[\s\S]*?overflowTooltipController\.sync\(\);/,
+    'truncated storyline labels should use the delegated custom hover tooltip controller'
+);
+assert.match(
+    chronologyCss,
+    /\.chrono-storyline-subtitle\s*\{[\s\S]*?display:\s*block[\s\S]*?width:\s*0[\s\S]*?min-width:\s*100%[\s\S]*?text-overflow:\s*ellipsis[\s\S]*?\.chrono-overflow-tooltip\.is-visible\s*\{[\s\S]*?visibility:\s*visible/,
+    'storyline subtitles should fill the title column without affecting item width and reveal the custom tooltip quickly'
+);
+assert.doesNotMatch(
+    chronologyCss,
+    /\.chrono-storyline-subtitle\s*\{[^}]*max-width/,
+    'storyline subtitles should not truncate before the available content width is exhausted'
 );
 assert.match(
     indexHtml,

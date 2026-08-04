@@ -579,6 +579,93 @@
             .join('');
     }
 
+    function createOverflowTooltipController(root, scope) {
+        let tooltip = null;
+        let activeTarget = null;
+        const documentRef = root.ownerDocument;
+
+        function hide() {
+            activeTarget = null;
+            if (tooltip) tooltip.classList.remove('is-visible');
+        }
+
+        function position(element) {
+            if (!tooltip || typeof element.getBoundingClientRect !== 'function') return;
+            const anchor = element.getBoundingClientRect();
+            const tooltipRect = tooltip.getBoundingClientRect();
+            const viewportWidth = Math.max(0, scope.innerWidth || 0);
+            const viewportHeight = Math.max(0, scope.innerHeight || 0);
+            const edge = 12;
+            const gap = 6;
+            const maxLeft = Math.max(edge, viewportWidth - tooltipRect.width - edge);
+            const left = Math.min(Math.max(anchor.left, edge), maxLeft);
+            const below = anchor.bottom + gap;
+            const top =
+                below + tooltipRect.height <= viewportHeight - edge
+                    ? below
+                    : Math.max(edge, anchor.top - tooltipRect.height - gap);
+            tooltip.style.left = `${Math.round(left)}px`;
+            tooltip.style.top = `${Math.round(top)}px`;
+        }
+
+        function show(element) {
+            if (!element.classList.contains('has-overflow-tooltip')) return;
+            const fullText = String(element.dataset.overflowTitle || '').trim();
+            if (!fullText || !documentRef || !documentRef.body) return;
+            if (!tooltip) {
+                tooltip = documentRef.createElement('div');
+                tooltip.className = 'chrono-overflow-tooltip';
+                tooltip.setAttribute('role', 'tooltip');
+                documentRef.body.appendChild(tooltip);
+            }
+            activeTarget = element;
+            tooltip.textContent = fullText;
+            tooltip.classList.add('is-visible');
+            position(element);
+        }
+
+        function getTarget(node) {
+            if (!node || typeof node.closest !== 'function') return null;
+            const element = node.closest('[data-overflow-title].has-overflow-tooltip');
+            return element && root.contains(element) ? element : null;
+        }
+
+        function handlePointerOver(event) {
+            const element = getTarget(event.target);
+            if (element && element !== activeTarget) show(element);
+        }
+
+        function handlePointerOut(event) {
+            if (!activeTarget) return;
+            if (event.relatedTarget && activeTarget.contains(event.relatedTarget)) return;
+            hide();
+        }
+
+        function sync() {
+            hide();
+            root.querySelectorAll('[data-overflow-title]').forEach((element) => {
+                const fullText = String(element.dataset.overflowTitle || '').trim();
+                const isTruncated =
+                    element.scrollWidth > element.clientWidth + 1 || element.scrollHeight > element.clientHeight + 1;
+                element.removeAttribute('title');
+                element.classList.toggle('has-overflow-tooltip', Boolean(fullText && isTruncated));
+            });
+        }
+
+        function destroy() {
+            root.removeEventListener('pointerover', handlePointerOver);
+            root.removeEventListener('pointerout', handlePointerOut);
+            if (tooltip) tooltip.remove();
+            tooltip = null;
+            activeTarget = null;
+        }
+
+        root.addEventListener('pointerover', handlePointerOver);
+        root.addEventListener('pointerout', handlePointerOut);
+
+        return { sync, hide, destroy };
+    }
+
     function create(root, initialConfig = {}) {
         if (!root) throw new Error('ChronologyOverview requires a root element.');
         let config = initialConfig;
@@ -586,6 +673,7 @@
         let imageObserver = null;
         let resizeTimer = 0;
         let suppressedCardClick = { eventId: '', until: 0 };
+        const overflowTooltipController = createOverflowTooltipController(root, globalScope);
 
         const localize = (value) => {
             if (typeof config.localize === 'function') return String(config.localize(value) || '');
@@ -638,16 +726,6 @@
                     color: summary.color || '#f68900',
                     name: localize(membership.name) || summary.name || membership.id
                 };
-            });
-        }
-
-        function syncOverflowTitles() {
-            root.querySelectorAll('[data-overflow-title]').forEach((element) => {
-                const fullText = String(element.dataset.overflowTitle || '').trim();
-                const isTruncated =
-                    element.scrollWidth > element.clientWidth + 1 || element.scrollHeight > element.clientHeight + 1;
-                if (fullText && isTruncated) element.title = fullText;
-                else element.removeAttribute('title');
             });
         }
 
@@ -838,7 +916,7 @@
                 </section>
             `;
 
-            syncOverflowTitles();
+            overflowTooltipController.sync();
             const scroller = root.querySelector('.chrono-scroll');
             if (scroller) {
                 scroller.scrollLeft = Math.min(
@@ -1098,6 +1176,7 @@
         }
 
         function handleResize() {
+            overflowTooltipController.hide();
             globalScope.clearTimeout(resizeTimer);
             resizeTimer = globalScope.setTimeout(() => {
                 if (isActive()) render();
@@ -1107,6 +1186,7 @@
         function destroy() {
             if (imageObserver) imageObserver.disconnect();
             globalScope.clearTimeout(resizeTimer);
+            overflowTooltipController.destroy();
             if (globalScope && typeof globalScope.removeEventListener === 'function') {
                 globalScope.removeEventListener('resize', handleResize);
             }
