@@ -29,7 +29,7 @@ jobs:
               run: npx playwright install --with-deps chromium
 
             - name: Run browser interaction tests
-              run: npm run test:browser
+              run: xvfb-run --auto-servernum npm run test:browser -- --headed
 
             - name: Upload browser test diagnostics
               if: failure()
