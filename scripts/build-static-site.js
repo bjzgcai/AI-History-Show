@@ -113,7 +113,7 @@ function validateBundle() {
 
     delete require.cache[require.resolve(path.join(OUTPUT, 'milestones-data.js'))];
     const runtime = require(path.join(OUTPUT, 'milestones-data.js'));
-    assert.equal(runtime.milestones.length, 294);
+    assert.equal(runtime.milestones.length, 314);
     assert.equal(
         runtime.milestones.filter(
             (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100-2022-2023'

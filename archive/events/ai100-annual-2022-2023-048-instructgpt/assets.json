@@ -1,26 +1,69 @@
 [
   {
+    "id": "asset-annual-048-instructgpt-portrait-jeff-wu",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/portraits/jeff-wu.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Jeff Wu portrait",
+      "zh": "杰夫·吴肖像"
+    },
+    "subcaption": {
+      "en": "Co-author of the InstructGPT paper",
+      "zh": "InstructGPT 论文共同作者"
+    },
+    "sourceId": "source-annual-048-instructgpt-portrait-jeff-wu",
+    "sourceName": {
+      "en": "Jeff Wu personal website",
+      "zh": "杰夫·吴个人网站"
+    },
+    "sourceUrl": "https://www.wuthejeff.com/",
+    "sourceReliability": "primary-identity-source",
+    "provenanceNotes": {
+      "en": "The selected 2048 x 1365 photograph is published directly on Jeff Wu's personal homepage. The linked GitHub account uses the same name and website; Wikidata identifies the website with an AI researcher profile, and the InstructGPT paper confirms Jeff Wu as an author.",
+      "zh": "当前选用的 2048 x 1365 照片直接发布在杰夫·吴个人主页。主页关联的 GitHub 账户使用相同姓名与网址；Wikidata 将该网址关联到 AI 研究者人物记录，InstructGPT 论文则确认杰夫·吴为作者。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The personal homepage does not state redistribution rights; retain the source note and recheck before external redistribution.",
+        "zh": "个人主页未声明再分发许可；必须保留来源备注，对外再分发前需再次核验。"
+      },
+      "attribution": ""
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
     "id": "asset-annual-048-instructgpt-record",
     "type": "svg",
     "path": "resources/images/benchcouncil-ai100-annual/annual-048-instructgpt_record.svg",
     "role": "annual-achievement-explainer",
     "caption": {
-      "en": "InstructGPT annual evidence map",
-      "zh": "InstructGPT 年度证据图"
+      "en": "InstructGPT process explainer",
+      "zh": "InstructGPT 流程解释图"
     },
     "subcaption": {
-      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
-      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+      "en": "Supervised demonstrations, preference reward modeling and PPO",
+      "zh": "监督示范、偏好奖励建模与 PPO"
     },
     "sourceIds": [
+      "source-instructgpt-paper",
       "source-primary-record",
-      "source-benchcouncil-annual"
+      "source-hugging-face-rlhf",
+      "source-chip-huyen-rlhf"
     ],
     "sourceName": {
-      "en": "BenchCouncil and publication metadata",
-      "zh": "BenchCouncil 与论文元数据"
+      "en": "Primary paper, technical explainers and original local synthesis",
+      "zh": "主论文、技术解读与本地原创整理"
     },
-    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "sourceUrl": "https://arxiv.org/abs/2203.02155",
     "rights": {
       "status": "original-redraw",
       "license": {
@@ -33,12 +76,89 @@
       }
     },
     "displayUsage": {
-      "en": "Annual record explainer",
-      "zh": "年度记录解释图"
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
     },
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-annual-048-instructgpt-portrait-john-schulman",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png",
+    "role": "portrait",
+    "caption": {
+      "zh": "约翰·舒尔曼肖像",
+      "en": "John Schulman portrait"
+    },
+    "subcaption": {
+      "en": "Co-author of the InstructGPT paper",
+      "zh": "InstructGPT 论文共同作者"
+    },
+    "sourceId": "source-annual-048-instructgpt-portrait-john-schulman",
+    "sourceName": {
+      "en": "MIT Technology Review Innovators Under 35",
+      "zh": "《麻省理工科技评论》35 岁以下创新者"
+    },
+    "sourceUrl": "https://www.technologyreview.com/innovator/john-schulman/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "MIT Technology Review does not state an open redistribution license for this portrait; retain attribution and recheck before external redistribution.",
+        "zh": "《麻省理工科技评论》未为该肖像声明开放再分发许可；必须保留署名，对外再分发前需再次核验。"
+      },
+      "attribution": "MIT Technology Review"
+    },
+    "displayUsage": {
+      "en": "Supplementary verified portrait",
+      "zh": "已核验的扩展人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false,
+    "sourceReliability": "MIT Technology Review publishes the portrait on a named profile and identifies John Schulman as an OpenAI research scientist; the primary paper confirms his InstructGPT authorship.",
+    "provenanceNotes": {
+      "en": "John Schulman is not part of the nine-name BenchCouncil contributor prefix, so he is appended after those official figures. The primary paper confirms his authorship, while MIT Technology Review independently identifies him as an OpenAI reinforcement-learning researcher.",
+      "zh": "约翰·舒尔曼不在 BenchCouncil 官方九人人物前缀中，因此排在这些官方人物之后。主论文确认其作者身份，《麻省理工科技评论》则独立确认其为 OpenAI 强化学习研究者。"
+    }
+  },
+  {
+    "id": "asset-annual-048-instructgpt-paper-preference-results",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/instructgpt-paper-preference-results.png",
+    "role": "paper-figure",
+    "caption": {
+      "zh": "不同模型规模的人类偏好胜率",
+      "en": "Human preference win rates by model size"
+    },
+    "subcaption": {
+      "zh": "InstructGPT 论文图 1：PPO 模型优于 GPT-3 基线",
+      "en": "InstructGPT paper Figure 1: PPO models outperform GPT-3 baselines"
+    },
+    "sourceId": "source-instructgpt-paper",
+    "sourceName": {
+      "en": "InstructGPT primary paper",
+      "zh": "InstructGPT 原始论文"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2203.02155",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Paper figure reproduced with source attribution for educational context; the arXiv record uses a non-exclusive distribution license.",
+        "zh": "论文图在注明来源的前提下用于教育性背景展示；arXiv 记录采用非独占分发许可。"
+      },
+      "attribution": "Ouyang et al., Training language models to follow instructions with human feedback (2022)"
+    },
+    "displayUsage": {
+      "en": "Primary-paper result figure",
+      "zh": "原始论文结果图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
   }
 ]

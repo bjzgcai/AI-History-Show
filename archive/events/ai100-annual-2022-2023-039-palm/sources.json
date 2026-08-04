@@ -26,8 +26,8 @@
     "purpose": "core-evidence",
     "reliability": "primary",
     "notes": {
-      "en": "Publication or official work page resolved from the exact title in the BenchCouncil annual table.",
-      "zh": "依据 BenchCouncil 年度表中的准确标题解析出的论文或官方项目页面。"
+      "en": "Primary publication or official project record used for the central technical claims.",
+      "zh": "用于核心技术主张的主论文或官方项目记录。"
     }
   },
   {
@@ -66,8 +66,8 @@
     "purpose": "core-evidence",
     "reliability": "primary",
     "notes": {
-      "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
-      "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+      "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+      "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
     }
   },
   {
@@ -88,6 +88,66 @@
     "notes": {
       "en": "Exact name and research-description match in Wikidata; employer match: Digital Equipment Corporation, Compaq, Google. Wikimedia file-page license metadata was present. Reliability: secondary-identity-with-affiliation-match. Usage note: CC BY-SA 4.0",
       "zh": "Wikidata 中姓名与研究者描述匹配，任职机构匹配：Digital Equipment Corporation、Compaq、Google。维基共享资源文件页包含明确许可元数据。 可靠性：secondary-identity-with-affiliation-match。使用备注：CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "source-palm-paper",
+    "type": "paper",
+    "label": {
+      "en": "Primary paper",
+      "zh": "原始论文"
+    },
+    "title": {
+      "en": "PaLM: Scaling Language Modeling with Pathways",
+      "zh": "《PaLM: Scaling Language Modeling with Pathways》"
+    },
+    "url": "https://arxiv.org/abs/2204.02311",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary PaLM paper used for architecture, compute, data and evaluation claims.",
+      "zh": "PaLM 原始论文，用于核对架构、算力、数据和评测结论。"
+    }
+  },
+  {
+    "id": "source-palm-google-research",
+    "type": "official-page",
+    "label": {
+      "en": "Institution page",
+      "zh": "机构页面"
+    },
+    "title": {
+      "en": "Pathways Language Model (PaLM): Scaling to 540 Billion Parameters",
+      "zh": "Google Research：Pathways 语言模型 PaLM 扩展到 5,400 亿参数"
+    },
+    "url": "https://research.google/blog/pathways-language-model-palm-scaling-to-540-billion-parameters-for-breakthrough-performance/",
+    "language": "en",
+    "purpose": "background",
+    "reliability": "primary",
+    "notes": {
+      "en": "Google Research explanation of PaLM's scale, Pathways training and representative capabilities.",
+      "zh": "Google Research 对 PaLM 规模、Pathways 训练和代表性能力的官方说明。"
+    }
+  },
+  {
+    "id": "source-palm-paper-bigbench-figure",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "PaLM BIG-bench evaluation figure",
+      "zh": "PaLM BIG-bench 评测图"
+    },
+    "url": "https://arxiv.org/abs/2204.02311",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Rendered from the author-submitted arXiv source package and retained with full paper attribution.",
+      "zh": "由作者提交的 arXiv 源文件包转换得到，并保留完整论文署名。"
     }
   }
 ]

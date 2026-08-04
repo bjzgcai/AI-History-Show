@@ -1,26 +1,67 @@
 [
   {
+    "id": "asset-annual-003-scaling-vit-portrait-xiaohua-zhai",
+    "type": "image",
+    "path": "resources/images/external/ai100-2022-scaling-vit/xiaohua-zhai-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Xiaohua Zhai portrait",
+      "zh": "翟晓华肖像"
+    },
+    "subcaption": {
+      "en": "Main contributor listed by the BenchCouncil annual table",
+      "zh": "BenchCouncil 年度表列出的主要人物"
+    },
+    "sourceId": "source-annual-003-scaling-vit-portrait-xiaohua-zhai",
+    "sourceName": {
+      "en": "Xiaohua Zhai academic homepage",
+      "zh": "翟晓华学术主页"
+    },
+    "sourceUrl": "https://sites.google.com/view/xzhai",
+    "sourceReliability": "primary-identity-source",
+    "provenanceNotes": {
+      "en": "The researcher-controlled homepage displays the Chinese and English names Xiaohua Zhai (翟晓华), publishes this portrait, and lists Scaling Vision Transformers with the matching CVPR 2022 coauthors.",
+      "zh": "研究者本人维护的主页同时显示 Xiaohua Zhai 与中文名“翟晓华”，发布该肖像，并列出作者匹配的 CVPR 2022 论文《Scaling Vision Transformers》。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The researcher-controlled homepage does not state redistribution rights for the portrait; retain attribution and recheck before external redistribution.",
+        "zh": "研究者本人维护的主页未声明肖像再分发许可；必须保留署名，对外再分发前需再次核验。"
+      },
+      "attribution": ""
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
     "id": "asset-annual-003-scaling-vit-record",
     "type": "svg",
     "path": "resources/images/benchcouncil-ai100-annual/annual-003-scaling-vit_record.svg",
     "role": "annual-achievement-explainer",
     "caption": {
-      "en": "Scaling ViT annual evidence map",
-      "zh": "Scaling ViT 年度证据图"
+      "en": "Vision Transformer scaling path",
+      "zh": "视觉 Transformer 缩放路径"
     },
     "subcaption": {
-      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
-      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+      "en": "Original explainer connecting model size, training data, compute, the memory-efficient recipe and ViT-G results.",
+      "zh": "连接模型规模、训练数据、算力、节省内存的训练方案与 ViT-G 结果的原创解释图。"
     },
     "sourceIds": [
-      "source-primary-record",
-      "source-benchcouncil-annual"
+      "source-cvf-paper-page",
+      "source-cvf-paper-pdf"
     ],
     "sourceName": {
-      "en": "BenchCouncil and publication metadata",
-      "zh": "BenchCouncil 与论文元数据"
+      "en": "CVPR paper page and accepted manuscript",
+      "zh": "CVPR 论文页面与会议接收稿"
     },
-    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhai_Scaling_Vision_Transformers_CVPR_2022_paper.html",
     "rights": {
       "status": "original-redraw",
       "license": {
@@ -33,8 +74,8 @@
       }
     },
     "displayUsage": {
-      "en": "Annual record explainer",
-      "zh": "年度记录解释图"
+      "en": "Scaling-law and training-recipe explainer",
+      "zh": "缩放规律与训练方案解释图"
     },
     "usage": [
       "variant:bench-council-ai100-2022-2023"

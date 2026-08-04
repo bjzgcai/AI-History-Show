@@ -7,12 +7,12 @@
     "zh": "AlphaTensor"
   },
   "displaySummary": {
-    "en": "AI100 (2022-2023) · AI4Others",
-    "zh": "AI100（2022-2023）· AI 其他应用"
+    "en": "AI100 (2022-2023) · Algorithm discovery with reinforcement learning",
+    "zh": "AI100（2022-2023）· 强化学习发现算法"
   },
   "displayDescription": {
-    "en": "<p>BenchCouncil lists AlphaTensor in the AI4Others area of its AI100 (2022-2023) annual table. It associates the work with the publication “Discovering faster matrix multiplication algorithms with reinforcement learning”. The page names Alhussein Fawzi, Matej Balog, Aja Huang, Thomas Hubert, Bernardino Romera-Paredes, Pushmeet Kohli as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“AI 其他应用”领域列出 AlphaTensor。该条目关联论文《Discovering faster matrix multiplication algorithms with reinforcement learning》。页面把 Alhussein Fawzi（官方页拼写）、Matej Balog（官方页拼写）、黄士杰、Thomas Hubert（官方页拼写）、Bernardino Romera-Paredes（官方页拼写）、Pushmeet Kohli（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>AlphaTensor represented matrix multiplication as a tensor-decomposition game and trained an AlphaZero-style agent to search for efficient sequences of rank-one updates. This converted a longstanding mathematical algorithm-design problem into a reinforcement-learning environment.</p><p>The system rediscovered known methods and found improved algorithms for several matrix sizes, including a finite-field result beyond the 1969 Strassen benchmark for 4 x 4 matrices. It demonstrated that learned search can contribute new algorithmic knowledge rather than only optimize an existing implementation.</p>",
+    "zh": "<p>AlphaTensor 把矩阵乘法表示为张量分解游戏，并训练类似 AlphaZero 的智能体搜索高效的秩一更新序列。这样，一个长期存在的数学算法设计问题被转化为强化学习环境。</p><p>系统既重新发现已知方法，也为若干矩阵规模找到改进算法，其中包括在有限域上超越 1969 年 Strassen 4 x 4 矩阵乘法结果的方法。它证明学习式搜索能够贡献新的算法知识，而不只是优化既有实现。</p>"
   },
   "emphasis": [
     "benchcouncil-annual-2022-2023",
@@ -23,46 +23,55 @@
     {
       "type": "archiveLink",
       "site": {
-        "en": "Primary publication",
-        "zh": "主论文"
+        "en": "Google DeepMind",
+        "zh": "Google DeepMind"
       },
       "title": {
-        "en": "Discovering faster matrix multiplication algorithms with reinforcement learning",
-        "zh": "《Discovering faster matrix multiplication algorithms with reinforcement learning》"
+        "en": "Discovering novel algorithms with AlphaTensor",
+        "zh": "使用 AlphaTensor 发现新算法"
       },
       "description": {
-        "en": "Publication associated with this work by the BenchCouncil annual table.",
-        "zh": "BenchCouncil 年度表为该成果关联的论文。"
+        "en": "The official article explains the tensor game, discovered algorithms and links to the Nature paper and code.",
+        "zh": "官方文章说明张量游戏、已发现算法，并链接 Nature 论文与代码。"
       },
-      "url": "https://doi.org/10.1038/s41586-022-05172-4",
-      "source": "https://doi.org/10.1038/s41586-022-05172-4",
+      "url": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
+      "action": {
+        "en": "Open AlphaTensor article",
+        "zh": "打开 AlphaTensor 文章"
+      },
+      "source": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
       "license": {
-        "en": "Reference link only; local visuals are original redraws.",
-        "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+        "en": "Reference link only; the local explainer is an original redraw.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
       },
       "usage": {
-        "en": "Publication and evidence reference",
-        "zh": "论文与证据参考"
-      },
-      "action": {
-        "en": "Open publication",
-        "zh": "打开论文"
+        "en": "Technical, historical and interaction reference",
+        "zh": "技术、历史与互动说明参考"
       }
     }
   ],
   "assetIds": [
+    "asset-annual-114-alphatensor-portrait-pushmeet-kohli",
+    "asset-annual-114-alphatensor-official-tensor",
     "asset-annual-114-alphatensor-record"
   ],
-  "overviewImageAssetId": "asset-annual-114-alphatensor-record",
+  "overviewImageAssetId": "asset-annual-114-alphatensor-portrait-pushmeet-kohli",
   "sourceIds": [
     "source-primary-record",
     "source-openalex-record",
-    "source-benchcouncil-annual"
+    "source-benchcouncil-annual",
+    "source-annual-114-alphatensor-portrait-pushmeet-kohli",
+    "source-alphatensor-deepmind",
+    "source-alphatensor-code",
+    "source-alphatensor-portrait-pushmeet-kohli",
+    "source-alphatensor-official-image"
   ],
   "claimIds": [
     "claim-annual-membership",
     "claim-publication-record",
-    "claim-contributor-record"
+    "claim-contributor-record",
+    "claim-core-method",
+    "claim-historical-significance"
   ],
   "quizId": "ai100-annual-2022-2023-114-alphatensor-quiz-1",
   "commentarySections": [
@@ -73,11 +82,12 @@
         "zh": "历史背景"
       },
       "html": {
-        "en": "BenchCouncil published this row as part of its AI100 (2022-2023) annual selection in the AI4Others area. The annual list captures a time-bounded view of prominent recent work rather than the membership of the long-term AI100 table.",
-        "zh": "BenchCouncil 把该行发布在 AI100（2022-2023）年度入选表的“AI 其他应用”领域中。年度表记录的是当时对近期代表性工作的阶段性观察，不等同于长期 AI100 主表成员。"
+        "en": "Matrix multiplication is a basic operation behind scientific computing and machine learning, yet finding algorithms with fewer scalar multiplications is a difficult combinatorial problem. Before AlphaTensor, major improvements were usually derived through sustained human mathematical work.",
+        "zh": "矩阵乘法是科学计算和机器学习的基础运算，但寻找更少标量乘法的算法是困难的组合问题。在 AlphaTensor 之前，重要改进通常来自长期的人类数学推导。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-alphatensor-deepmind",
+        "source-primary-record"
       ]
     },
     {
@@ -87,12 +97,12 @@
         "zh": "核心思想"
       },
       "html": {
-        "en": "The official work name is AlphaTensor, linked by the table to “Discovering faster matrix multiplication algorithms with reinforcement learning”. Alhussein Fawzi, Matej Balog, Aja Huang, Thomas Hubert, Bernardino Romera-Paredes, Pushmeet Kohli are preserved in the same order as the Main Contributors cell. The institution field is DeepMind.",
-        "zh": "官方成果名称为 AlphaTensor，表格将其关联到论文《Discovering faster matrix multiplication algorithms with reinforcement learning》。Alhussein Fawzi（官方页拼写）、Matej Balog（官方页拼写）、黄士杰、Thomas Hubert（官方页拼写）、Bernardino Romera-Paredes（官方页拼写）、Pushmeet Kohli（官方页拼写） 按“主要人物”单元格中的相同顺序显示。官方英文拼写与顺序保存在年度记录中，机构字段为 DeepMind。"
+        "en": "AlphaTensor encodes the multiplication tensor as a game state, where each move subtracts a rank-one tensor until the target is reduced to zero. A neural network and tree search learn to choose moves that produce short, valid decompositions.",
+        "zh": "AlphaTensor 把乘法张量编码为游戏状态，每一步减去一个秩一张量，直到目标归零。神经网络与树搜索学习选择动作，从而产生短而有效的分解。"
       },
       "sourceIds": [
-        "source-primary-record",
-        "source-benchcouncil-annual"
+        "source-alphatensor-deepmind",
+        "source-primary-record"
       ]
     },
     {
@@ -102,11 +112,12 @@
         "zh": "长期影响"
       },
       "html": {
-        "en": "Experts should treat this record as evidence of BenchCouncil's 2022-2023 annual assessment, not as a permanent consensus ranking. Its lasting archival value is the exact preservation of the work name, publication link, contributor field, institution, country, citation value, and source order.",
-        "zh": "专家应把本记录视为 BenchCouncil 对 2022-2023 年度成果的阶段性评价证据，而不是永久共识排名。它的长期档案价值在于准确保留成果名称、论文线索、人物字段、机构、国家、引用数与来源顺序。"
+        "en": "Experts generally treat AlphaTensor as a landmark for AI-assisted algorithm discovery because the output is an explicit, verifiable algorithm. It broadened the AlphaZero paradigm from board games to mathematical search and inspired later work on optimizing low-level computation.",
+        "zh": "专家通常把 AlphaTensor 视为 AI 辅助算法发现的里程碑，因为其输出是明确且可验证的算法。它把 AlphaZero 范式从棋类扩展到数学搜索，并推动了后续底层计算优化研究。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-alphatensor-deepmind",
+        "source-primary-record"
       ]
     }
   ],
@@ -118,11 +129,11 @@
     {
       "name": {
         "en": "Alhussein Fawzi",
-        "zh": "Alhussein Fawzi（官方页拼写）"
+        "zh": "侯赛因·法兹"
       },
       "role": {
-        "en": "Main contributor for AlphaTensor in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 AlphaTensor 主要人物"
+        "en": "First author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文第一作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -130,11 +141,11 @@
     {
       "name": {
         "en": "Matej Balog",
-        "zh": "Matej Balog（官方页拼写）"
+        "zh": "马泰·巴洛格"
       },
       "role": {
-        "en": "Main contributor for AlphaTensor in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 AlphaTensor 主要人物"
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -145,8 +156,8 @@
         "zh": "黄士杰"
       },
       "role": {
-        "en": "Main contributor for AlphaTensor in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 AlphaTensor 主要人物"
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -154,11 +165,11 @@
     {
       "name": {
         "en": "Thomas Hubert",
-        "zh": "Thomas Hubert（官方页拼写）"
+        "zh": "托马斯·于贝尔"
       },
       "role": {
-        "en": "Main contributor for AlphaTensor in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 AlphaTensor 主要人物"
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -166,11 +177,11 @@
     {
       "name": {
         "en": "Bernardino Romera-Paredes",
-        "zh": "Bernardino Romera-Paredes（官方页拼写）"
+        "zh": "贝尔纳迪诺·罗梅拉-帕雷德斯"
       },
       "role": {
-        "en": "Main contributor for AlphaTensor in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 AlphaTensor 主要人物"
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -178,14 +189,14 @@
     {
       "name": {
         "en": "Pushmeet Kohli",
-        "zh": "Pushmeet Kohli（官方页拼写）"
+        "zh": "普什米特·科利"
       },
       "role": {
-        "en": "Main contributor for AlphaTensor in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 AlphaTensor 主要人物"
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
       },
       "figureType": "person",
-      "avatar": ""
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/pushmeet-kohli.jpg"
     }
   ],
   "quote": {
@@ -200,14 +211,14 @@
     },
     "workAuthors": {
       "en": "Alhussein Fawzi, Matej Balog, Aja Huang, Thomas Hubert, Bernardino Romera-Paredes, Pushmeet Kohli",
-      "zh": "Alhussein Fawzi（官方页拼写）、Matej Balog（官方页拼写）、黄士杰、Thomas Hubert（官方页拼写）、Bernardino Romera-Paredes（官方页拼写）、Pushmeet Kohli（官方页拼写）"
+      "zh": "侯赛因·法兹、马泰·巴洛格、黄士杰、托马斯·于贝尔、贝尔纳迪诺·罗梅拉-帕雷德斯、普什米特·科利"
     },
     "sourceLabel": "",
     "sourceUrl": "https://doi.org/10.1038/s41586-022-05172-4"
   },
   "quotePage": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry",
-    "zh": "BenchCouncil AI100（2022-2023）年度条目"
+    "en": "Primary publication record",
+    "zh": "原始论文记录"
   },
   "quoteAttribution": {
     "en": "Discovering faster matrix multiplication algorithms with reinforcement learning",
@@ -219,50 +230,50 @@
       "zh": "AI 其他应用"
     },
     "method": {
-      "en": "Annual selection record",
-      "zh": "年度入选记录"
+      "en": "AlphaZero-style search over tensor decompositions",
+      "zh": "在张量分解空间中进行 AlphaZero 式搜索"
     },
     "artifact": {
-      "en": "AlphaTensor",
-      "zh": "AlphaTensor"
+      "en": "New matrix multiplication algorithms",
+      "zh": "新的矩阵乘法算法"
     },
     "material": {
-      "en": "Discovering faster matrix multiplication algorithms with reinforcement learning",
-      "zh": "《Discovering faster matrix multiplication algorithms with reinforcement learning》与官方年度行"
+      "en": "Multiplication tensors, reinforcement-learning trajectories and verified decompositions",
+      "zh": "乘法张量、强化学习轨迹与可验证分解"
     },
     "demo": {
-      "en": "Trace the official row from AlphaTensor to its publication, contributor field, institution, and country.",
-      "zh": "沿官方行查看 AlphaTensor 如何关联到论文、主要人物字段、机构与国家。"
+      "en": "Choose candidate rank-one moves and watch the residual tensor shrink until a complete multiplication algorithm is formed.",
+      "zh": "选择候选秩一动作，观察剩余张量逐步缩小，直到形成完整乘法算法。"
     },
     "keyConcepts": [
       {
         "label": {
-          "en": "Official Work",
-          "zh": "官方成果名称"
+          "en": "Game state",
+          "zh": "游戏状态"
         },
         "text": {
-          "en": "AlphaTensor",
-          "zh": "AlphaTensor"
+          "en": "The remaining multiplication tensor",
+          "zh": "尚未分解的乘法张量"
         }
       },
       {
         "label": {
-          "en": "Main Contributors",
-          "zh": "主要人物"
+          "en": "Action",
+          "zh": "动作"
         },
         "text": {
-          "en": "Alhussein Fawzi, Matej Balog, Aja Huang, Thomas Hubert, Bernardino Romera-Paredes, Pushmeet Kohli",
-          "zh": "Alhussein Fawzi（官方页拼写）、Matej Balog（官方页拼写）、黄士杰、Thomas Hubert（官方页拼写）、Bernardino Romera-Paredes（官方页拼写）、Pushmeet Kohli（官方页拼写）"
+          "en": "Choose a rank-one tensor update",
+          "zh": "选择一个秩一张量更新"
         }
       },
       {
         "label": {
-          "en": "Institution",
-          "zh": "机构"
+          "en": "Goal",
+          "zh": "目标"
         },
         "text": {
-          "en": "DeepMind",
-          "zh": "DeepMind"
+          "en": "Reach zero with as few steps as possible",
+          "zh": "用尽可能少的步骤归零"
         }
       }
     ],
@@ -275,28 +286,28 @@
     ],
     "demoSteps": [
       {
-        "en": "Official work",
-        "zh": "官方成果名称"
+        "en": "Encode multiplication tensor",
+        "zh": "编码乘法张量"
       },
       {
-        "en": "Publication record",
-        "zh": "论文记录"
+        "en": "Search rank-one updates",
+        "zh": "搜索秩一更新"
       },
       {
-        "en": "Contributors and institution",
-        "zh": "主要人物与机构"
+        "en": "Verify and benchmark algorithm",
+        "zh": "验证并评测算法"
       }
     ],
     "demoImage": "resources/images/benchcouncil-ai100-annual/annual-114-alphatensor_record.svg",
     "demoNotes": [
       {
         "label": {
-          "en": "Source cue",
+          "en": "Evidence cue",
           "zh": "资料线索"
         },
         "text": {
-          "en": "Discovering faster matrix multiplication algorithms with reinforcement learning",
-          "zh": "《Discovering faster matrix multiplication algorithms with reinforcement learning》与 BenchCouncil 年度行"
+          "en": "The Nature paper defines the tensor game and reports both theoretical multiplication counts and hardware-aware runtimes.",
+          "zh": "Nature 论文定义张量游戏，并报告理论乘法次数与面向硬件的运行时间。"
         }
       },
       {
@@ -305,8 +316,8 @@
           "zh": "互动点"
         },
         "text": {
-          "en": "Trace the official row from AlphaTensor to its publication, contributor field, institution, and country.",
-          "zh": "沿官方行查看 AlphaTensor 如何关联到论文、主要人物字段、机构与国家。"
+          "en": "Choose candidate rank-one moves and watch the residual tensor shrink until a complete multiplication algorithm is formed.",
+          "zh": "选择候选秩一动作，观察剩余张量逐步缩小，直到形成完整乘法算法。"
         }
       }
     ],
@@ -314,30 +325,30 @@
       {
         "type": "archiveLink",
         "site": {
-          "en": "Primary publication",
-          "zh": "主论文"
+          "en": "Google DeepMind",
+          "zh": "Google DeepMind"
         },
         "title": {
-          "en": "Discovering faster matrix multiplication algorithms with reinforcement learning",
-          "zh": "《Discovering faster matrix multiplication algorithms with reinforcement learning》"
+          "en": "Discovering novel algorithms with AlphaTensor",
+          "zh": "使用 AlphaTensor 发现新算法"
         },
         "description": {
-          "en": "Publication associated with this work by the BenchCouncil annual table.",
-          "zh": "BenchCouncil 年度表为该成果关联的论文。"
+          "en": "The official article explains the tensor game, discovered algorithms and links to the Nature paper and code.",
+          "zh": "官方文章说明张量游戏、已发现算法，并链接 Nature 论文与代码。"
         },
-        "url": "https://doi.org/10.1038/s41586-022-05172-4",
-        "source": "https://doi.org/10.1038/s41586-022-05172-4",
+        "url": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
+        "action": {
+          "en": "Open AlphaTensor article",
+          "zh": "打开 AlphaTensor 文章"
+        },
+        "source": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
         "license": {
-          "en": "Reference link only; local visuals are original redraws.",
-          "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+          "en": "Reference link only; the local explainer is an original redraw.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
         },
         "usage": {
-          "en": "Publication and evidence reference",
-          "zh": "论文与证据参考"
-        },
-        "action": {
-          "en": "Open publication",
-          "zh": "打开论文"
+          "en": "Technical, historical and interaction reference",
+          "zh": "技术、历史与互动说明参考"
         }
       }
     ],

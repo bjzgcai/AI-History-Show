@@ -3,34 +3,35 @@
     "id": "ai100-annual-2022-2023-110-esmfold-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to ESMFold?",
-      "zh": "BenchCouncil 年度表把 ESMFold 归入哪个领域？"
+      "en": "What expensive preprocessing step does ESMFold avoid?",
+      "zh": "ESMFold 避免了哪项昂贵的预处理步骤？"
     },
     "options": [
       {
-        "en": "AI4Science",
-        "zh": "AI for Science"
+        "en": "Searching for a multiple-sequence alignment",
+        "zh": "搜索多序列比对"
       },
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "Reading the amino-acid sequence",
+        "zh": "读取氨基酸序列"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "Producing 3D coordinates",
+        "zh": "生成三维坐标"
       },
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "Estimating prediction confidence",
+        "zh": "估计预测置信度"
       }
     ],
     "answer": 0,
     "explanation": {
-      "en": "ESMFold appears in the AI4Science area of the official annual table.",
-      "zh": "ESMFold 位于官方年度表的“AI for Science”领域。"
+      "en": "ESMFold predicts from a single sequence and does not require the multiple-sequence-alignment search used by many earlier pipelines.",
+      "zh": "ESMFold 从单条序列进行预测，不需要许多早期流程使用的多序列比对搜索。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-primary-record",
+      "source-biorxiv-preprint"
     ],
     "assetIds": [
       "asset-annual-110-esmfold-record"

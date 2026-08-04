@@ -1,18 +1,18 @@
 {
   "id": "ai100-annual-2022-2023-024-whisper",
-  "year": 2023,
-  "date": "2023",
+  "year": 2022,
+  "date": "2022",
   "title": {
     "en": "Whisper",
     "zh": "Whisper"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in Speech",
-    "zh": "BenchCouncil AI100（2022-2023）语音年度条目"
+    "en": "A robust multilingual speech recognizer trained on 680,000 hours of weakly supervised audio",
+    "zh": "使用 68 万小时弱监督音频训练的稳健多语种语音识别系统"
   },
   "description": {
-    "en": "<p>BenchCouncil lists Whisper in the Speech area of its AI100 (2022-2023) annual table. It associates the work with the publication “Robust Speech Recognition via Large-Scale Weak Supervision”. The page names Alec Radford, Jong Wook Kim, Ilya Sutskever as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“语音”领域列出 Whisper。该条目关联论文《Robust Speech Recognition via Large-Scale Weak Supervision》。页面把 亚历克·拉德福德、Jong Wook Kim（官方页拼写）、伊利亚·苏茨克维 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>Whisper reframed speech recognition as a scale-and-diversity problem. OpenAI trained an encoder-decoder Transformer on 680,000 hours of multilingual and multitask audio gathered with weak supervision, avoiding dependence on a narrowly curated benchmark corpus.</p><p>The model performs transcription, translation, language identification and timestamp prediction through a shared token interface. Its zero-shot robustness across datasets made a practical case for broad web-scale supervision in speech systems.</p>",
+    "zh": "<p>Whisper 把语音识别重新表述为规模与数据多样性问题。OpenAI 使用 68 万小时多语种、多任务弱监督音频训练编码器-解码器 Transformer，降低了对狭窄人工整理基准语料的依赖。</p><p>模型通过统一的 token 接口完成转写、翻译、语言识别和时间戳预测。它在多个数据集上的零样本稳健性，证明了大规模网络弱监督对实用语音系统的价值。</p>"
   },
   "location": {
     "regionId": "united-states",
@@ -43,8 +43,8 @@
         "zh": "亚历克·拉德福德"
       },
       "role": {
-        "en": "Main contributor for Whisper in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Whisper 主要人物"
+        "en": "First author of the Whisper paper",
+        "zh": "Whisper 论文第一作者"
       },
       "organizationIds": []
     },
@@ -52,11 +52,11 @@
       "figureId": "jong-wook-kim",
       "name": {
         "en": "Jong Wook Kim",
-        "zh": "Jong Wook Kim（官方页拼写）"
+        "zh": "金钟旭"
       },
       "role": {
-        "en": "Main contributor for Whisper in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Whisper 主要人物"
+        "en": "Co-author of the Whisper paper",
+        "zh": "Whisper 论文共同作者"
       },
       "organizationIds": []
     },
@@ -67,8 +67,8 @@
         "zh": "伊利亚·苏茨克维"
       },
       "role": {
-        "en": "Main contributor for Whisper in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Whisper 主要人物"
+        "en": "Co-author of the Whisper paper",
+        "zh": "Whisper 论文共同作者"
       },
       "organizationIds": [],
       "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg"
@@ -79,8 +79,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 24 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 24 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+      "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
     }
   }
 }

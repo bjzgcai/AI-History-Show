@@ -29,10 +29,35 @@
     "importance": "display",
     "text": {
       "en": "The Main Contributors field is “Alec Radford, Jong Wook Kim, Ilya Sutskever”.",
-      "zh": "“主要人物”字段依次列出 亚历克·拉德福德、Jong Wook Kim（官方页拼写）、伊利亚·苏茨克维；官方英文原文为“Alec Radford, Jong Wook Kim, Ilya Sutskever”。"
+      "zh": "“主要人物”字段依次列出 亚历克·拉德福德、金钟旭、伊利亚·苏茨克维；官方英文原文为“Alec Radford, Jong Wook Kim, Ilya Sutskever”。"
     },
     "sourceIds": [
       "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-core-method",
+    "importance": "core",
+    "text": {
+      "en": "Whisper uses weakly supervised multilingual multitask sequence-to-sequence training.",
+      "zh": "Whisper 采用弱监督多语种多任务序列到序列训练。"
+    },
+    "sourceIds": [
+      "source-whisper-paper",
+      "source-primary-record"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-historical-significance",
+    "importance": "display",
+    "text": {
+      "en": "Experts generally treat Whisper as a turning point in open, general-purpose speech recognition because its released models made robust multilingual transcription widely accessible. Its influence also extends to speech interfaces for later multimodal and conversational systems.",
+      "zh": "专家通常把 Whisper 视为开放通用语音识别的重要转折点，因为公开模型让稳健的多语种转写更容易获得。它的影响还延伸到后来多模态系统和对话系统的语音入口。"
+    },
+    "sourceIds": [
+      "source-whisper-paper"
     ],
     "status": "verified"
   }

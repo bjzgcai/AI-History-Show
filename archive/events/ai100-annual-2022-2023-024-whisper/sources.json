@@ -1,10 +1,10 @@
 [
   {
     "id": "source-primary-record",
-    "type": "paper-index",
+    "type": "official-page",
     "label": {
-      "en": "Paper index",
-      "zh": "论文索引"
+      "en": "Official page",
+      "zh": "官方页面"
     },
     "title": {
       "en": "Robust Speech Recognition via Large-Scale Weak Supervision",
@@ -15,14 +15,14 @@
       "Jong Wook Kim",
       "Ilya Sutskever"
     ],
-    "year": 2023,
-    "url": "https://scholar.google.com/scholar?q=%22Robust%20Speech%20Recognition%20via%20Large-Scale%20Weak%20Supervision%22",
+    "year": 2022,
+    "url": "https://openai.com/index/whisper/",
     "language": "en",
-    "purpose": "bibliographic-verification",
-    "reliability": "reference-only",
+    "purpose": "core-evidence",
+    "reliability": "primary",
     "notes": {
-      "en": "Exact-title search retained transparently because the public metadata API did not return a verified landing page during this sync.",
-      "zh": "公共元数据 API 在本次同步中未返回可核验落地页，因此透明保留精确标题检索链接。"
+      "en": "Primary publication or official project record used for the central technical claims.",
+      "zh": "用于核心技术主张的主论文或官方项目记录。"
     }
   },
   {
@@ -61,8 +61,8 @@
     "purpose": "core-evidence",
     "reliability": "primary",
     "notes": {
-      "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
-      "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+      "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+      "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
     }
   },
   {
@@ -83,6 +83,67 @@
     "notes": {
       "en": "Exact name and research-description match in Wikidata; employer match: Safe Superintelligence Inc., OpenAI, Google Brain. Wikimedia file-page license metadata was present. Reliability: secondary-identity-with-affiliation-match. Usage note: CC BY-SA 4.0",
       "zh": "Wikidata 中姓名与研究者描述匹配，任职机构匹配：Safe Superintelligence Inc.、OpenAI、Google Brain。维基共享资源文件页包含明确许可元数据。 可靠性：secondary-identity-with-affiliation-match。使用备注：CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "source-whisper-paper",
+    "type": "paper",
+    "label": {
+      "en": "Primary paper",
+      "zh": "原始论文"
+    },
+    "title": {
+      "en": "Robust Speech Recognition via Large-Scale Weak Supervision",
+      "zh": "《Robust Speech Recognition via Large-Scale Weak Supervision》"
+    },
+    "url": "https://arxiv.org/abs/2212.04356",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary technical report for Whisper, used for the training scale, multitask format and evaluation claims.",
+      "zh": "Whisper 原始技术报告，用于核对训练规模、多任务格式和评测结论。"
+    }
+  },
+  {
+    "id": "source-whisper-code",
+    "type": "code",
+    "label": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "title": {
+      "en": "OpenAI Whisper repository",
+      "zh": "OpenAI Whisper 代码仓库"
+    },
+    "url": "https://github.com/openai/whisper",
+    "language": "en",
+    "purpose": "implementation",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official implementation and model release maintained by OpenAI.",
+      "zh": "OpenAI 维护的官方实现与模型发布页面。"
+    }
+  },
+  {
+    "id": "source-whisper-official-approach",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "OpenAI Whisper official approach diagram",
+      "zh": "OpenAI Whisper 官方方法图"
+    },
+    "url": "https://github.com/openai/whisper",
+    "imageUrl": "https://raw.githubusercontent.com/openai/whisper/main/approach.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official repository README illustration selected as supplementary visual evidence for the event.",
+      "zh": "官方仓库 README 使用的介绍图，作为本事件的补充视觉证据。"
     }
   }
 ]

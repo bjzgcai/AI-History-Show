@@ -35,5 +35,30 @@
       "source-benchcouncil-annual"
     ],
     "status": "verified"
+  },
+  {
+    "id": "claim-core-method",
+    "importance": "core",
+    "text": {
+      "en": "SayCan uses language-model planning multiplied by learned affordance values.",
+      "zh": "SayCan 采用语言模型规划与学习到的可供性价值相乘。"
+    },
+    "sourceIds": [
+      "source-saycan-paper",
+      "source-primary-record"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-historical-significance",
+    "importance": "display",
+    "text": {
+      "en": "Experts generally treat SayCan as an early and influential blueprint for combining foundation models with embodied control rather than letting language models act as unconstrained planners. Its usefulness-feasibility split reappears in later vision-language-action and robotic agent systems.",
+      "zh": "专家通常把 SayCan 视为基础模型与具身控制结合的早期重要蓝图，而不是让语言模型不受约束地规划。它对“有用性”和“可行性”的拆分，后来反复出现在视觉-语言-动作模型和机器人智能体中。"
+    },
+    "sourceIds": [
+      "source-saycan-paper"
+    ],
+    "status": "verified"
   }
 ]

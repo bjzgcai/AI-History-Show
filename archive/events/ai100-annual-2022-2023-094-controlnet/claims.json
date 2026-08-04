@@ -29,10 +29,36 @@
     "importance": "display",
     "text": {
       "en": "The Main Contributors field is “Lvmin Zhang, Maneesh Agrawala”.",
-      "zh": "“主要人物”字段依次列出 Lvmin Zhang（官方页拼写）、Maneesh Agrawala（官方页拼写）；官方英文原文为“Lvmin Zhang, Maneesh Agrawala”。"
+      "zh": "“主要人物”字段依次列出 张吕敏、马尼什·阿格拉瓦拉；官方英文原文为“Lvmin Zhang, Maneesh Agrawala”。"
     },
     "sourceIds": [
       "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-locked-copy",
+    "importance": "core",
+    "text": {
+      "en": "ControlNet keeps the pretrained diffusion backbone locked and trains a copied encoder branch for spatial conditions.",
+      "zh": "ControlNet 锁定预训练扩散主干，并训练一个复制的编码器分支来处理空间条件。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-zero-convolution",
+    "importance": "core",
+    "text": {
+      "en": "Zero-initialized convolutions connect the control branch so training begins without perturbing the original network.",
+      "zh": "零初始化卷积连接控制分支，使训练开始时不会扰动原始网络。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-controlnet-repository"
     ],
     "status": "verified"
   }

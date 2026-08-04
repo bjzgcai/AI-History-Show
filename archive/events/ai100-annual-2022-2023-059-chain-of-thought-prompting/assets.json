@@ -1,26 +1,67 @@
 [
   {
+    "id": "asset-annual-059-chain-of-thought-prompting-portrait-denny-zhou",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Denny Zhou portrait",
+      "zh": "丹尼·周肖像"
+    },
+    "subcaption": {
+      "en": "Co-author of the Chain-of-Thought Prompting paper",
+      "zh": "Chain-of-Thought Prompting 论文共同作者"
+    },
+    "sourceId": "source-annual-059-chain-of-thought-prompting-portrait-denny-zhou",
+    "sourceName": {
+      "en": "Denny Zhou personal homepage repository",
+      "zh": "丹尼·周个人主页仓库"
+    },
+    "sourceUrl": "https://dennyzhou.github.io/",
+    "sourceReliability": "primary-identity-source",
+    "provenanceNotes": {
+      "en": "The portrait is stored in the researcher's personal GitHub Pages repository. The homepage identifies Denny Zhou as a Google DeepMind research scientist and lists the chain-of-thought paper.",
+      "zh": "肖像存放在研究者个人 GitHub Pages 仓库中；主页将丹尼·周介绍为 Google DeepMind 研究科学家，并列出思维链提示论文。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "No redistribution license is stated; used with attribution under the project's relaxed reference-image policy.",
+        "zh": "未声明再分发许可；依据项目放宽后的参考图片策略使用，并保留来源署名。"
+      },
+      "attribution": "Denny Zhou"
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
     "id": "asset-annual-059-chain-of-thought-prompting-record",
     "type": "svg",
     "path": "resources/images/benchcouncil-ai100-annual/annual-059-chain-of-thought-prompting_record.svg",
     "role": "annual-achievement-explainer",
     "caption": {
-      "en": "Chain-of-Thought Prompting annual evidence map",
-      "zh": "Chain-of-Thought Prompting 年度证据图"
+      "en": "Chain-of-Thought Prompting process explainer",
+      "zh": "Chain-of-Thought Prompting 流程解释图"
     },
     "subcaption": {
-      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
-      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+      "en": "Few-shot demonstrations with intermediate natural-language reasoning",
+      "zh": "包含自然语言中间推理的少样本示范"
     },
     "sourceIds": [
-      "source-primary-record",
-      "source-benchcouncil-annual"
+      "source-cot-paper",
+      "source-primary-record"
     ],
     "sourceName": {
-      "en": "BenchCouncil and publication metadata",
-      "zh": "BenchCouncil 与论文元数据"
+      "en": "Primary publication and original local synthesis",
+      "zh": "主论文与本地原创整理"
     },
-    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "sourceUrl": "https://arxiv.org/abs/2201.11903",
     "rights": {
       "status": "original-redraw",
       "license": {
@@ -33,12 +74,89 @@
       }
     },
     "displayUsage": {
-      "en": "Annual record explainer",
-      "zh": "年度记录解释图"
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
     },
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-annual-059-chain-of-thought-portrait-denny-zhou",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "丹尼·周肖像",
+      "en": "Denny Zhou portrait"
+    },
+    "subcaption": {
+      "en": "Co-author of the Chain-of-Thought Prompting paper",
+      "zh": "Chain-of-Thought Prompting 论文共同作者"
+    },
+    "sourceId": "source-annual-059-chain-of-thought-portrait-denny-zhou",
+    "sourceName": {
+      "en": "Denny Zhou personal homepage repository",
+      "zh": "丹尼·周个人主页仓库"
+    },
+    "sourceUrl": "https://dennyzhou.github.io/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The personal repository states no image redistribution license; used with attribution under the project's relaxed reference-image policy.",
+        "zh": "个人仓库未声明图片再分发许可；依据项目放宽后的参考图片策略使用，并保留来源署名。"
+      },
+      "attribution": "Denny Zhou"
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false,
+    "sourceReliability": "primary-identity-source; personal homepage and publication list match",
+    "provenanceNotes": {
+      "en": "BenchCouncil lists Denny Zhou in the official contributor field, and the primary publication confirms the same author identity and work association.",
+      "zh": "BenchCouncil 官方人物字段列出丹尼·周，主论文作者表确认了同一人物及其与该成果的关系。"
+    }
+  },
+  {
+    "id": "asset-annual-059-chain-of-thought-paper-examples",
+    "type": "image",
+    "path": "resources/images/external/ai100-2022-chain-of-thought/chain-of-thought-examples.png",
+    "role": "paper-figure",
+    "caption": {
+      "zh": "思维链推理示例",
+      "en": "Chain-of-thought reasoning examples"
+    },
+    "subcaption": {
+      "zh": "论文展示算术、常识、符号和具身任务中的分步推理过程。",
+      "en": "The paper shows worked rationales across arithmetic, commonsense, symbolic and embodied tasks."
+    },
+    "sourceId": "source-cot-paper-examples-figure",
+    "sourceName": {
+      "en": "Chain-of-thought arXiv source package",
+      "zh": "思维链提示论文 arXiv 源文件包"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2201.11903",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Author-submitted paper figure; displayed with full paper attribution under the project's relaxed reference-image policy.",
+        "zh": "作者提交的论文配图；依据项目放宽后的参考图片策略展示，并完整标注论文来源。"
+      },
+      "attribution": "Wei et al., Chain-of-Thought Prompting Elicits Reasoning in Large Language Models (2022)"
+    },
+    "displayUsage": {
+      "en": "Primary-paper worked examples",
+      "zh": "主论文分步推理示例"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
   }
 ]

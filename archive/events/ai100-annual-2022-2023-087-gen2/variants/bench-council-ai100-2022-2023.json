@@ -7,12 +7,12 @@
     "zh": "Gen2"
   },
   "displaySummary": {
-    "en": "AI100 (2022-2023) · Diffusion Model Application",
-    "zh": "AI100（2022-2023）· 扩散模型应用"
+    "en": "AI100 (2022-2023) · Prompt-driven video generation",
+    "zh": "AI100（2022-2023）· 提示驱动的视频生成"
   },
   "displayDescription": {
-    "en": "<p>BenchCouncil lists Gen2 in the Diffusion Model Application area of its AI100 (2022-2023) annual table. It does not list a publication title for this row. The page leaves the Main Contributors field blank, so this record does not infer individual names.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“扩散模型应用”领域列出 Gen2。该行没有列出论文标题。页面的“主要人物”字段为空，因此本记录不自行补充个人姓名。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>Runway presented Gen-2 as a multimodal system that can generate video from text, images or existing video references. Its official research page demonstrates eight modes: text to video, text plus image to video, image to video, stylization, storyboard, mask, render and customization.</p><p>The page is bylined by Anastasis Germanidis, whose personal site identifies him as a Runway co-founder and co-CEO focused on video-generation research.</p>",
+    "zh": "<p>Runway 将 Gen-2 介绍为能够依据文本、图像或现有视频参考生成视频的多模态系统。官方研究页展示八种模式：文生视频、文本加图像生成视频、图生视频、风格化、故事板、遮罩、渲染与定制。</p><p>该页面署名 Anastasis Germanidis（阿纳斯塔西斯·耶尔马尼迪斯）；其个人网站说明他是 Runway 联合创始人、联合 CEO，并专注于视频生成研究。</p>"
   },
   "emphasis": [
     "benchcouncil-annual-2022-2023",
@@ -23,46 +23,61 @@
     {
       "type": "archiveLink",
       "site": {
-        "en": "Official project page",
-        "zh": "官方项目页面"
+        "en": "Runway Research",
+        "zh": "Runway Research"
       },
       "title": {
-        "en": "Gen2 official project page",
-        "zh": "Gen2 官方项目页面"
+        "en": "Gen-2",
+        "zh": "《Gen-2》"
       },
       "description": {
-        "en": "Official page associated with this work.",
-        "zh": "与该成果关联的官方页面。"
+        "en": "The official research page demonstrates the verified text, image and video conditioning modes of the released system.",
+        "zh": "官方研究页展示已核验的文本、图像与视频条件生成模式。"
       },
-      "url": "https://runwayml.com/research/gen-2",
-      "source": "https://runwayml.com/research/gen-2",
+      "url": "https://runway.com/research/gen-2",
+      "source": "https://runway.com/research/gen-2",
       "license": {
-        "en": "Reference link only; local visuals are original redraws.",
-        "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+        "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
       },
       "usage": {
-        "en": "Publication and evidence reference",
-        "zh": "论文与证据参考"
+        "en": "Primary technical or official release evidence",
+        "zh": "主要技术或官方发布证据"
       },
       "action": {
-        "en": "Open project page",
-        "zh": "打开项目页面"
+        "en": "Open Gen-2 research page",
+        "zh": "打开 Gen-2 研究页面"
       }
     }
   ],
   "assetIds": [
+    "asset-annual-087-gen2-official-text-to-video-example",
     "asset-annual-087-gen2-record"
   ],
-  "overviewImageAssetId": "asset-annual-087-gen2-record",
+  "overviewImageAssetId": "asset-annual-087-gen2-official-text-to-video-example",
   "sourceIds": [
     "source-primary-record",
     "source-openalex-record",
-    "source-benchcouncil-annual"
+    "source-benchcouncil-annual",
+    "source-anastasis-homepage",
+    "source-anastasis-ray-summit",
+    "source-anastasis-cognitive-interview",
+    "source-gen2-official-image",
+    "source-gen2-official-t2v-example",
+    "source-gen1-paper",
+    "source-gen1-overview-figure",
+    "source-runway-brand-guidelines",
+    "source-runway-logo"
   ],
   "claimIds": [
     "claim-annual-membership",
     "claim-publication-record",
-    "claim-contributor-record"
+    "claim-contributor-record",
+    "claim-official-page-byline",
+    "claim-eight-modes",
+    "claim-self-reported-preference",
+    "claim-multimodal-video",
+    "claim-structure-transfer"
   ],
   "quizId": "ai100-annual-2022-2023-087-gen2-quiz-1",
   "commentarySections": [
@@ -73,11 +88,11 @@
         "zh": "历史背景"
       },
       "html": {
-        "en": "BenchCouncil published this row as part of its AI100 (2022-2023) annual selection in the Diffusion Model Application area. The annual list captures a time-bounded view of prominent recent work rather than the membership of the long-term AI100 table.",
-        "zh": "BenchCouncil 把该行发布在 AI100（2022-2023）年度入选表的“扩散模型应用”领域中。年度表记录的是当时对近期代表性工作的阶段性观察，不等同于长期 AI100 主表成员。"
+        "en": "Text-to-image diffusion models had become broadly usable, but generating coherent motion over many frames was substantially harder. Runway's February 2023 Gen-2 presentation brought eight video-conditioning workflows into a public creative context and made prompt-driven video a visible product category.",
+        "zh": "文生图扩散模型已经广泛可用，但在多个帧之间生成连贯运动要困难得多。Runway 在 2023 年 2 月介绍 Gen-2，把八种视频条件工作流带入公开创作语境，并让提示驱动视频成为可见的产品类别。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-primary-record"
       ]
     },
     {
@@ -87,12 +102,11 @@
         "zh": "核心思想"
       },
       "html": {
-        "en": "The official work name is Gen2, and the table does not provide a publication title. The Main Contributors cell is blank, and the Archive deliberately leaves the person list empty. The institution field is Runway.",
-        "zh": "官方成果名称为 Gen2，表格没有提供论文标题。“主要人物”单元格为空，Archive 因此有意保留空人物列表。机构字段为 Runway。"
+        "en": "Gen-2 combines semantic prompts with optional image or video references so creators can specify content, appearance and structure at different levels. Its eight public modes cover generation, transformation and selective editing, but the page does not disclose a complete architecture; the earlier Gen-1 paper is therefore used only as technical lineage, not as a Gen-2 specification.",
+        "zh": "Gen-2 把语义提示与可选图像或视频参考结合，使创作者能够在不同层次指定内容、外观与结构。八种公开模式覆盖生成、转换与选择性编辑，但页面没有披露完整架构；因此早期 Gen-1 论文只作为技术脉络，而不被当作 Gen-2 规格说明。"
       },
       "sourceIds": [
-        "source-primary-record",
-        "source-benchcouncil-annual"
+        "source-primary-record"
       ]
     },
     {
@@ -102,11 +116,11 @@
         "zh": "长期影响"
       },
       "html": {
-        "en": "Experts should treat this record as evidence of BenchCouncil's 2022-2023 annual assessment, not as a permanent consensus ranking. Its lasting archival value is the exact preservation of the work name, publication link, contributor field, institution, country, citation value, and source order.",
-        "zh": "专家应把本记录视为 BenchCouncil 对 2022-2023 年度成果的阶段性评价证据，而不是永久共识排名。它的长期档案价值在于准确保留成果名称、论文线索、人物字段、机构、国家、引用数与来源顺序。"
+        "en": "Experts generally treat Gen-2 as an important commercialization milestone in generative video rather than as a fully documented research architecture. Its influence lies in normalizing text-to-video and image-to-video creation, setting expectations for later systems on motion quality, temporal consistency and controllability.",
+        "zh": "专家通常把 Gen-2 视为生成视频商业化的重要里程碑，而不是一套完整公开的研究架构。它推动文生视频与图生视频成为常见创作方式，并为后续系统在运动质量、时间一致性和可控性方面设定预期。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-primary-record"
       ]
     }
   ],
@@ -114,7 +128,20 @@
     "en": "BenchCouncil AI100 (2022-2023)",
     "zh": "BenchCouncil AI100（2022-2023）"
   },
-  "figures": [],
+  "figures": [
+    {
+      "name": {
+        "en": "Runway",
+        "zh": "Runway"
+      },
+      "role": {
+        "en": "Company behind the Gen-2 video generation system",
+        "zh": "Gen-2 视频生成系统开发公司"
+      },
+      "figureType": "product",
+      "avatar": "resources/images/external/ai100-2023-gen2/runway-logo.png"
+    }
+  ],
   "quote": {
     "en": "Gen2",
     "zh": "Gen2"
@@ -130,11 +157,11 @@
       "zh": "Runway"
     },
     "sourceLabel": "",
-    "sourceUrl": "https://runwayml.com/research/gen-2"
+    "sourceUrl": "https://runway.com/research/gen-2"
   },
   "quotePage": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry",
-    "zh": "BenchCouncil AI100（2022-2023）年度条目"
+    "en": "Official project record",
+    "zh": "官方项目记录"
   },
   "quoteAttribution": {
     "en": "Gen2 official project page",
@@ -146,50 +173,50 @@
       "zh": "扩散模型应用"
     },
     "method": {
-      "en": "Annual selection record",
-      "zh": "年度入选记录"
+      "en": "Multimodal conditioning for accessible generative video workflows",
+      "zh": "面向可用生成视频工作流的多模态条件控制"
     },
     "artifact": {
-      "en": "Gen2",
-      "zh": "Gen2"
+      "en": "Runway Gen-2 video generation system",
+      "zh": "Runway Gen-2 视频生成系统"
     },
     "material": {
-      "en": "Official annual row and project page",
-      "zh": "官方年度行与项目页面"
+      "en": "Primary publication or official release evidence, implementation materials and the original local explainer",
+      "zh": "主论文或官方发布证据、实现材料与本地原创解释图"
     },
     "demo": {
-      "en": "Trace the official row from Gen2 to its blank publication field, contributor field, institution, and country.",
-      "zh": "沿官方行查看 Gen2 如何关联到空论文字段、主要人物字段、机构与国家。"
+      "en": "Follow the four-stage path and compare what enters, what is learned and what the system produces.",
+      "zh": "沿四阶段路径观察输入、学习内容与系统输出。"
     },
     "keyConcepts": [
       {
         "label": {
-          "en": "Official Work",
-          "zh": "官方成果名称"
+          "en": "Prompt",
+          "zh": "提示"
         },
         "text": {
-          "en": "Gen2",
-          "zh": "Gen2"
+          "en": "Text describes content or style",
+          "zh": "文本描述内容或风格"
         }
       },
       {
         "label": {
-          "en": "Main Contributors",
-          "zh": "主要人物"
+          "en": "Reference",
+          "zh": "参考"
         },
         "text": {
-          "en": "Not listed",
-          "zh": "未列出"
+          "en": "Images or video can guide appearance and structure",
+          "zh": "图像或视频引导外观与结构"
         }
       },
       {
         "label": {
-          "en": "Institution",
-          "zh": "机构"
+          "en": "Output",
+          "zh": "输出"
         },
         "text": {
-          "en": "Runway",
-          "zh": "Runway"
+          "en": "A newly synthesized video clip",
+          "zh": "新合成的视频片段"
         }
       }
     ],
@@ -202,28 +229,32 @@
     ],
     "demoSteps": [
       {
-        "en": "Official work",
-        "zh": "官方成果名称"
+        "en": "Text or image prompt",
+        "zh": "文本或图像提示"
       },
       {
-        "en": "Publication record",
-        "zh": "论文记录"
+        "en": "Optional source video",
+        "zh": "可选源视频"
       },
       {
-        "en": "Contributors and institution",
-        "zh": "主要人物与机构"
+        "en": "Multimodal generator",
+        "zh": "多模态生成器"
+      },
+      {
+        "en": "Generated video clip",
+        "zh": "生成视频片段"
       }
     ],
     "demoImage": "resources/images/benchcouncil-ai100-annual/annual-087-gen2_record.svg",
     "demoNotes": [
       {
         "label": {
-          "en": "Source cue",
-          "zh": "资料线索"
+          "en": "Technical cue",
+          "zh": "技术线索"
         },
         "text": {
-          "en": "BenchCouncil annual row and official work page",
-          "zh": "BenchCouncil 年度行与官方项目页面"
+          "en": "Combine semantic prompts with visual references to guide a generated video",
+          "zh": "这张图以四个阶段解释：文本或图像提示、可选源视频、多模态生成器、生成视频片段。"
         }
       },
       {
@@ -232,8 +263,8 @@
           "zh": "互动点"
         },
         "text": {
-          "en": "Trace the official row from Gen2 to its blank publication field, contributor field, institution, and country.",
-          "zh": "沿官方行查看 Gen2 如何关联到空论文字段、主要人物字段、机构与国家。"
+          "en": "Trace the arrows, then compare how adding an image or source video changes the kind of control available over the generated clip.",
+          "zh": "沿箭头逐步查看，并比较加入图像或源视频后，生成片段的可控方式发生了什么变化。"
         }
       }
     ],
@@ -241,30 +272,30 @@
       {
         "type": "archiveLink",
         "site": {
-          "en": "Official project page",
-          "zh": "官方项目页面"
+          "en": "Runway Research",
+          "zh": "Runway Research"
         },
         "title": {
-          "en": "Gen2 official project page",
-          "zh": "Gen2 官方项目页面"
+          "en": "Gen-2",
+          "zh": "《Gen-2》"
         },
         "description": {
-          "en": "Official page associated with this work.",
-          "zh": "与该成果关联的官方页面。"
+          "en": "The official research page demonstrates the verified text, image and video conditioning modes of the released system.",
+          "zh": "官方研究页展示已核验的文本、图像与视频条件生成模式。"
         },
-        "url": "https://runwayml.com/research/gen-2",
-        "source": "https://runwayml.com/research/gen-2",
+        "url": "https://runway.com/research/gen-2",
+        "source": "https://runway.com/research/gen-2",
         "license": {
-          "en": "Reference link only; local visuals are original redraws.",
-          "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+          "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
         },
         "usage": {
-          "en": "Publication and evidence reference",
-          "zh": "论文与证据参考"
+          "en": "Primary technical or official release evidence",
+          "zh": "主要技术或官方发布证据"
         },
         "action": {
-          "en": "Open project page",
-          "zh": "打开项目页面"
+          "en": "Open Gen-2 research page",
+          "zh": "打开 Gen-2 研究页面"
         }
       }
     ],

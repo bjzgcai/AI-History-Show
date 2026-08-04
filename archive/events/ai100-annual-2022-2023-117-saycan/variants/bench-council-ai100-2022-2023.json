@@ -7,12 +7,12 @@
     "zh": "SayCan"
   },
   "displaySummary": {
-    "en": "AI100 (2022-2023) · Robots",
-    "zh": "AI100（2022-2023）· 机器人"
+    "en": "AI100 (2022-2023) · Grounding language plans in robot affordances",
+    "zh": "AI100（2022-2023）· 用机器人可供性约束语言计划"
   },
   "displayDescription": {
-    "en": "<p>BenchCouncil lists SayCan in the Robots area of its AI100 (2022-2023) annual table. It associates the work with the publication “Do As I Can, Not As I Say: Grounding Language in Robotic Affordances”. The page leaves the Main Contributors field blank, so this record does not infer individual names.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“机器人”领域列出 SayCan。该条目关联论文《Do As I Can, Not As I Say: Grounding Language in Robotic Affordances》。页面的“主要人物”字段为空，因此本记录不自行补充个人姓名。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>SayCan connected a large language model's broad semantic knowledge with a robot's learned ability to execute concrete skills. For each possible action, the language model estimates how useful it is for the instruction while an affordance model estimates whether the robot can successfully perform it in the current scene.</p><p>Multiplying these scores selects steps that are both meaningful and feasible, allowing a mobile manipulator to carry out long-horizon household instructions. The approach became an influential template for grounding language-model planning in embodied feedback.</p>",
+    "zh": "<p>SayCan 把大语言模型的广泛语义知识与机器人执行具体技能的学习能力连接起来。对每个候选动作，语言模型判断它对当前指令是否有用，可供性模型则判断机器人在当前场景中能否成功执行。</p><p>将两类评分相乘，可以选择既有意义又可执行的步骤，使移动操作机器人完成长时程家务指令。该方法成为用具身反馈约束语言模型规划的重要范式。</p>"
   },
   "emphasis": [
     "benchcouncil-annual-2022-2023",
@@ -23,46 +23,56 @@
     {
       "type": "archiveLink",
       "site": {
-        "en": "Primary publication",
-        "zh": "主论文"
+        "en": "SayCan project",
+        "zh": "SayCan 项目页面"
       },
       "title": {
-        "en": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
-        "zh": "《Do As I Can, Not As I Say: Grounding Language in Robotic Affordances》"
+        "en": "Do As I Can, Not As I Say",
+        "zh": "《Do As I Can, Not As I Say》"
       },
       "description": {
-        "en": "Publication associated with this work by the BenchCouncil annual table.",
-        "zh": "BenchCouncil 年度表为该成果关联的论文。"
+        "en": "The official project page provides the paper, videos and examples of language plans grounded by robot affordances.",
+        "zh": "官方项目页提供论文、视频，以及由机器人可供性约束语言计划的示例。"
       },
-      "url": "https://scholar.google.com/scholar?q=%22Do%20As%20I%20Can%2C%20Not%20As%20I%20Say%3A%20Grounding%20Language%20in%20Robotic%20Affordances%22",
-      "source": "https://scholar.google.com/scholar?q=%22Do%20As%20I%20Can%2C%20Not%20As%20I%20Say%3A%20Grounding%20Language%20in%20Robotic%20Affordances%22",
+      "url": "https://say-can.github.io/",
+      "action": {
+        "en": "Open SayCan project page",
+        "zh": "打开 SayCan 项目页"
+      },
+      "source": "https://say-can.github.io/",
       "license": {
-        "en": "Reference link only; local visuals are original redraws.",
-        "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+        "en": "Reference link only; the local explainer is an original redraw.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
       },
       "usage": {
-        "en": "Publication and evidence reference",
-        "zh": "论文与证据参考"
-      },
-      "action": {
-        "en": "Open publication",
-        "zh": "打开论文"
+        "en": "Technical, historical and interaction reference",
+        "zh": "技术、历史与互动说明参考"
       }
     }
   ],
   "assetIds": [
+    "asset-annual-117-saycan-portrait-chelsea-finn",
+    "asset-annual-117-saycan-scoring",
+    "asset-annual-117-saycan-robot-example",
     "asset-annual-117-saycan-record"
   ],
-  "overviewImageAssetId": "asset-annual-117-saycan-record",
+  "overviewImageAssetId": "asset-annual-117-saycan-portrait-chelsea-finn",
   "sourceIds": [
     "source-primary-record",
     "source-openalex-record",
-    "source-benchcouncil-annual"
+    "source-benchcouncil-annual",
+    "source-saycan-paper",
+    "source-saycan-google-research",
+    "source-saycan-code",
+    "source-saycan-portrait-chelsea-finn",
+    "source-saycan-official-project-images"
   ],
   "claimIds": [
     "claim-annual-membership",
     "claim-publication-record",
-    "claim-contributor-record"
+    "claim-contributor-record",
+    "claim-core-method",
+    "claim-historical-significance"
   ],
   "quizId": "ai100-annual-2022-2023-117-saycan-quiz-1",
   "commentarySections": [
@@ -73,11 +83,12 @@
         "zh": "历史背景"
       },
       "html": {
-        "en": "BenchCouncil published this row as part of its AI100 (2022-2023) annual selection in the Robots area. The annual list captures a time-bounded view of prominent recent work rather than the membership of the long-term AI100 table.",
-        "zh": "BenchCouncil 把该行发布在 AI100（2022-2023）年度入选表的“机器人”领域中。年度表记录的是当时对近期代表性工作的阶段性观察，不等同于长期 AI100 主表成员。"
+        "en": "Large language models could propose plausible high-level plans, but they did not know which actions a particular robot could execute in its current environment. Robotics policies knew local skills, yet lacked the language knowledge needed to interpret open-ended instructions.",
+        "zh": "大语言模型能够提出看似合理的高层计划，却不知道特定机器人在当前环境中能执行哪些动作。机器人策略掌握局部技能，却缺少理解开放式指令所需的语言知识。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-saycan-paper",
+        "source-primary-record"
       ]
     },
     {
@@ -87,12 +98,12 @@
         "zh": "核心思想"
       },
       "html": {
-        "en": "The official work name is SayCan, linked by the table to “Do As I Can, Not As I Say: Grounding Language in Robotic Affordances”. The Main Contributors cell is blank, and the Archive deliberately leaves the person list empty. The institution field is Google.",
-        "zh": "官方成果名称为 SayCan，表格将其关联到论文《Do As I Can, Not As I Say: Grounding Language in Robotic Affordances》。“主要人物”单元格为空，Archive 因此有意保留空人物列表。机构字段为 Google。"
+        "en": "SayCan scores each candidate skill twice: the language model estimates whether it advances the instruction, and a value function estimates whether the robot can perform it now. Their product selects the next skill, and the process repeats after the environment changes.",
+        "zh": "SayCan 对每个候选技能进行两次评分：语言模型判断它是否推进指令，价值函数判断机器人此刻能否执行。两者乘积决定下一项技能，环境变化后再重复这一过程。"
       },
       "sourceIds": [
-        "source-primary-record",
-        "source-benchcouncil-annual"
+        "source-saycan-paper",
+        "source-primary-record"
       ]
     },
     {
@@ -102,11 +113,12 @@
         "zh": "长期影响"
       },
       "html": {
-        "en": "Experts should treat this record as evidence of BenchCouncil's 2022-2023 annual assessment, not as a permanent consensus ranking. Its lasting archival value is the exact preservation of the work name, publication link, contributor field, institution, country, citation value, and source order.",
-        "zh": "专家应把本记录视为 BenchCouncil 对 2022-2023 年度成果的阶段性评价证据，而不是永久共识排名。它的长期档案价值在于准确保留成果名称、论文线索、人物字段、机构、国家、引用数与来源顺序。"
+        "en": "Experts generally treat SayCan as an early and influential blueprint for combining foundation models with embodied control rather than letting language models act as unconstrained planners. Its usefulness-feasibility split reappears in later vision-language-action and robotic agent systems.",
+        "zh": "专家通常把 SayCan 视为基础模型与具身控制结合的早期重要蓝图，而不是让语言模型不受约束地规划。它对“有用性”和“可行性”的拆分，后来反复出现在视觉-语言-动作模型和机器人智能体中。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-saycan-paper",
+        "source-primary-record"
       ]
     }
   ],
@@ -114,7 +126,20 @@
     "en": "BenchCouncil AI100 (2022-2023)",
     "zh": "BenchCouncil AI100（2022-2023）"
   },
-  "figures": [],
+  "figures": [
+    {
+      "name": {
+        "en": "Chelsea Finn",
+        "zh": "切尔西·芬恩"
+      },
+      "role": {
+        "en": "Co-author of the SayCan paper",
+        "zh": "SayCan 论文共同作者"
+      },
+      "figureType": "person",
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/chelsea-finn.jpg"
+    }
+  ],
   "quote": {
     "en": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
     "zh": "《Do As I Can, Not As I Say: Grounding Language in Robotic Affordances》"
@@ -127,14 +152,14 @@
     },
     "workAuthors": {
       "en": "Google",
-      "zh": "Google"
+      "zh": "切尔西·芬恩"
     },
     "sourceLabel": "",
-    "sourceUrl": "https://scholar.google.com/scholar?q=%22Do%20As%20I%20Can%2C%20Not%20As%20I%20Say%3A%20Grounding%20Language%20in%20Robotic%20Affordances%22"
+    "sourceUrl": "https://say-can.github.io/"
   },
   "quotePage": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry",
-    "zh": "BenchCouncil AI100（2022-2023）年度条目"
+    "en": "Primary publication record",
+    "zh": "原始论文记录"
   },
   "quoteAttribution": {
     "en": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
@@ -146,50 +171,50 @@
       "zh": "机器人"
     },
     "method": {
-      "en": "Annual selection record",
-      "zh": "年度入选记录"
+      "en": "Language-model planning multiplied by learned affordance values",
+      "zh": "语言模型规划与学习到的可供性价值相乘"
     },
     "artifact": {
-      "en": "SayCan",
-      "zh": "SayCan"
+      "en": "A grounded long-horizon robot skill planner",
+      "zh": "具身约束的长时程机器人技能规划器"
     },
     "material": {
-      "en": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
-      "zh": "《Do As I Can, Not As I Say: Grounding Language in Robotic Affordances》与官方年度行"
+      "en": "Natural-language instructions, a library of robot skills and value functions",
+      "zh": "自然语言指令、机器人技能库与价值函数"
     },
     "demo": {
-      "en": "Trace the official row from SayCan to its publication, contributor field, institution, and country.",
-      "zh": "沿官方行查看 SayCan 如何关联到论文、主要人物字段、机构与国家。"
+      "en": "Adjust usefulness and feasibility scores for candidate skills and observe which action the robot selects next.",
+      "zh": "调整候选技能的有用性与可行性评分，观察机器人接下来选择哪个动作。"
     },
     "keyConcepts": [
       {
         "label": {
-          "en": "Official Work",
-          "zh": "官方成果名称"
+          "en": "Usefulness",
+          "zh": "有用性"
         },
         "text": {
-          "en": "SayCan",
-          "zh": "SayCan"
+          "en": "Language model scores task relevance",
+          "zh": "语言模型评估任务相关性"
         }
       },
       {
         "label": {
-          "en": "Main Contributors",
-          "zh": "主要人物"
+          "en": "Feasibility",
+          "zh": "可行性"
         },
         "text": {
-          "en": "Not listed",
-          "zh": "未列出"
+          "en": "Affordance model scores executable skills",
+          "zh": "可供性模型评估技能能否执行"
         }
       },
       {
         "label": {
-          "en": "Institution",
-          "zh": "机构"
+          "en": "Grounded choice",
+          "zh": "具身选择"
         },
         "text": {
-          "en": "Google",
-          "zh": "Google"
+          "en": "Multiply both scores to choose the next action",
+          "zh": "两类评分相乘选择下一动作"
         }
       }
     ],
@@ -202,28 +227,28 @@
     ],
     "demoSteps": [
       {
-        "en": "Official work",
-        "zh": "官方成果名称"
+        "en": "Parse instruction",
+        "zh": "理解指令"
       },
       {
-        "en": "Publication record",
-        "zh": "论文记录"
+        "en": "Score skills by language and affordance",
+        "zh": "按语言与可供性为技能评分"
       },
       {
-        "en": "Contributors and institution",
-        "zh": "主要人物与机构"
+        "en": "Execute best grounded skill",
+        "zh": "执行最合适的具身技能"
       }
     ],
     "demoImage": "resources/images/benchcouncil-ai100-annual/annual-117-saycan_record.svg",
     "demoNotes": [
       {
         "label": {
-          "en": "Source cue",
+          "en": "Evidence cue",
           "zh": "资料线索"
         },
         "text": {
-          "en": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
-          "zh": "《Do As I Can, Not As I Say: Grounding Language in Robotic Affordances》与 BenchCouncil 年度行"
+          "en": "The project page shows how language probabilities and value-function affordances are combined for each robot skill.",
+          "zh": "项目页展示每项机器人技能的语言概率与价值函数可供性如何组合。"
         }
       },
       {
@@ -232,8 +257,8 @@
           "zh": "互动点"
         },
         "text": {
-          "en": "Trace the official row from SayCan to its publication, contributor field, institution, and country.",
-          "zh": "沿官方行查看 SayCan 如何关联到论文、主要人物字段、机构与国家。"
+          "en": "Adjust usefulness and feasibility scores for candidate skills and observe which action the robot selects next.",
+          "zh": "调整候选技能的有用性与可行性评分，观察机器人接下来选择哪个动作。"
         }
       }
     ],
@@ -241,30 +266,30 @@
       {
         "type": "archiveLink",
         "site": {
-          "en": "Primary publication",
-          "zh": "主论文"
+          "en": "SayCan project",
+          "zh": "SayCan 项目页面"
         },
         "title": {
-          "en": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
-          "zh": "《Do As I Can, Not As I Say: Grounding Language in Robotic Affordances》"
+          "en": "Do As I Can, Not As I Say",
+          "zh": "《Do As I Can, Not As I Say》"
         },
         "description": {
-          "en": "Publication associated with this work by the BenchCouncil annual table.",
-          "zh": "BenchCouncil 年度表为该成果关联的论文。"
+          "en": "The official project page provides the paper, videos and examples of language plans grounded by robot affordances.",
+          "zh": "官方项目页提供论文、视频，以及由机器人可供性约束语言计划的示例。"
         },
-        "url": "https://scholar.google.com/scholar?q=%22Do%20As%20I%20Can%2C%20Not%20As%20I%20Say%3A%20Grounding%20Language%20in%20Robotic%20Affordances%22",
-        "source": "https://scholar.google.com/scholar?q=%22Do%20As%20I%20Can%2C%20Not%20As%20I%20Say%3A%20Grounding%20Language%20in%20Robotic%20Affordances%22",
+        "url": "https://say-can.github.io/",
+        "action": {
+          "en": "Open SayCan project page",
+          "zh": "打开 SayCan 项目页"
+        },
+        "source": "https://say-can.github.io/",
         "license": {
-          "en": "Reference link only; local visuals are original redraws.",
-          "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+          "en": "Reference link only; the local explainer is an original redraw.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
         },
         "usage": {
-          "en": "Publication and evidence reference",
-          "zh": "论文与证据参考"
-        },
-        "action": {
-          "en": "Open publication",
-          "zh": "打开论文"
+          "en": "Technical, historical and interaction reference",
+          "zh": "技术、历史与互动说明参考"
         }
       }
     ],

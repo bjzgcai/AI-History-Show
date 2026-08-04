@@ -1,18 +1,18 @@
 {
   "id": "ai100-annual-2022-2023-048-instructgpt",
-  "year": 2023,
-  "date": "2023",
+  "year": 2022,
+  "date": "2022",
   "title": {
     "en": "InstructGPT",
     "zh": "InstructGPT"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in LLM",
-    "zh": "BenchCouncil AI100（2022-2023）大语言模型年度条目"
+    "en": "A three-stage RLHF pipeline that aligned language-model behavior with written instructions and human preferences",
+    "zh": "通过三阶段 RLHF 流程让语言模型行为对齐书面指令与人类偏好"
   },
   "description": {
-    "en": "<p>BenchCouncil lists InstructGPT in the LLM area of its AI100 (2022-2023) annual table. It associates the work with the publication “Training language models to follow instructions with human feedback”. The page names Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Paul Christiano, Jan Leike, Ryan Lowe as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“大语言模型”领域列出 InstructGPT。该条目关联论文《Training language models to follow instructions with human feedback》。页面把 Long Ouyang（官方页拼写）、Jeff Wu（官方页拼写）、Xu Jiang（官方页拼写）、Diogo Almeida（官方页拼写）、Carroll L. Wainwright（官方页拼写）、Pamela Mishkin（官方页拼写）、Paul Christiano（官方页拼写）、Jan Leike（官方页拼写）、Ryan Lowe（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>InstructGPT addressed a mismatch between next-token prediction and what users actually ask a model to do. OpenAI collected demonstrations and preference comparisons, then used supervised fine-tuning, reward modeling and reinforcement learning to tune GPT-3 models toward helpful instruction following.</p><p>Human evaluators preferred the 1.3-billion-parameter InstructGPT model over the 175-billion-parameter GPT-3 baseline on the studied prompt distribution. The result made RLHF a practical recipe for post-training general-purpose language models.</p>",
+    "zh": "<p>InstructGPT 针对下一个 token 预测目标与用户实际要求之间的错位。OpenAI 收集示范答案和偏好比较，再通过监督微调、奖励模型与强化学习，让 GPT-3 模型更好地遵循有帮助的指令。</p><p>在研究使用的提示分布上，人类评估者更偏好 13 亿参数的 InstructGPT，而不是 1,750 亿参数的 GPT-3 基线。这一结果使 RLHF 成为通用语言模型后训练的实用范式。</p>"
   },
   "location": {
     "regionId": "united-states",
@@ -40,11 +40,11 @@
       "figureId": "long-ouyang",
       "name": {
         "en": "Long Ouyang",
-        "zh": "Long Ouyang（官方页拼写）"
+        "zh": "欧阳龙"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "First author of the InstructGPT paper",
+        "zh": "InstructGPT 论文第一作者"
       },
       "organizationIds": []
     },
@@ -52,23 +52,24 @@
       "figureId": "jeff-wu",
       "name": {
         "en": "Jeff Wu",
-        "zh": "Jeff Wu（官方页拼写）"
+        "zh": "杰夫·吴"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-wu.jpg"
     },
     {
       "figureId": "xu-jiang",
       "name": {
         "en": "Xu Jiang",
-        "zh": "Xu Jiang（官方页拼写）"
+        "zh": "徐江"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "organizationIds": []
     },
@@ -76,11 +77,11 @@
       "figureId": "diogo-almeida",
       "name": {
         "en": "Diogo Almeida",
-        "zh": "Diogo Almeida（官方页拼写）"
+        "zh": "迪奥戈·阿尔梅达"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "organizationIds": []
     },
@@ -88,11 +89,11 @@
       "figureId": "carroll-l-wainwright",
       "name": {
         "en": "Carroll L. Wainwright",
-        "zh": "Carroll L. Wainwright（官方页拼写）"
+        "zh": "卡罗尔·L·温赖特"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "organizationIds": []
     },
@@ -100,11 +101,11 @@
       "figureId": "pamela-mishkin",
       "name": {
         "en": "Pamela Mishkin",
-        "zh": "Pamela Mishkin（官方页拼写）"
+        "zh": "帕梅拉·米什金"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "organizationIds": []
     },
@@ -112,11 +113,11 @@
       "figureId": "paul-christiano",
       "name": {
         "en": "Paul Christiano",
-        "zh": "Paul Christiano（官方页拼写）"
+        "zh": "保罗·克里斯蒂亚诺"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "organizationIds": []
     },
@@ -124,11 +125,11 @@
       "figureId": "jan-leike",
       "name": {
         "en": "Jan Leike",
-        "zh": "Jan Leike（官方页拼写）"
+        "zh": "扬·莱克"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "organizationIds": []
     },
@@ -136,13 +137,26 @@
       "figureId": "ryan-lowe",
       "name": {
         "en": "Ryan Lowe",
-        "zh": "Ryan Lowe（官方页拼写）"
+        "zh": "瑞安·洛"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "organizationIds": []
+    },
+    {
+      "figureId": "john-schulman",
+      "name": {
+        "en": "John Schulman",
+        "zh": "约翰·舒尔曼"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "organizationIds": [],
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png"
     }
   ],
   "organizations": [],
@@ -150,8 +164,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 48 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 48 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+      "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
     }
   }
 }

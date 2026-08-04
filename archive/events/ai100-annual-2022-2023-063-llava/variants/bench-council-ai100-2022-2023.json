@@ -7,12 +7,12 @@
     "zh": "LLaVA"
   },
   "displaySummary": {
-    "en": "AI100 (2022-2023) · LLM",
-    "zh": "AI100（2022-2023）· 大语言模型"
+    "en": "AI100 (2022-2023) · Visual instruction following",
+    "zh": "AI100（2022-2023）· 视觉指令跟随"
   },
   "displayDescription": {
-    "en": "<p>BenchCouncil lists LLaVA in the LLM area of its AI100 (2022-2023) annual table. It associates the work with the publication “Visual instruction tuning”. The page names Haotian Liu, Chunyuan Li, Yong Jae Lee as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“大语言模型”领域列出 LLaVA。该条目关联论文《Visual instruction tuning》。页面把 Haotian Liu（官方页拼写）、Chunyuan Li（官方页拼写）、Yong Jae Lee（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>LLaVA builds a large language-and-vision assistant by connecting a frozen CLIP vision encoder to a large language model through a learned projection. GPT-4 is used to turn image captions and bounding-box descriptions into conversational instruction-following data.</p><p>A feature-alignment stage first teaches the projection to connect the two modalities, followed by visual instruction tuning for conversation and reasoning.</p>",
+    "zh": "<p>LLaVA 通过一个可学习投影，把冻结的 CLIP 视觉编码器连接到大语言模型，从而构建大型语言视觉助手。研究使用 GPT-4 把图像描述与边界框信息转换成对话式视觉指令数据。</p><p>特征对齐阶段先教会投影层连接两种模态，随后通过视觉指令微调获得对话与推理能力。</p>"
   },
   "emphasis": [
     "benchcouncil-annual-2022-2023",
@@ -23,46 +23,56 @@
     {
       "type": "archiveLink",
       "site": {
-        "en": "Primary publication",
-        "zh": "主论文"
+        "en": "LLaVA Project",
+        "zh": "LLaVA Project"
       },
       "title": {
-        "en": "Visual instruction tuning",
-        "zh": "《Visual instruction tuning》"
+        "en": "Visual Instruction Tuning",
+        "zh": "《Visual Instruction Tuning》"
       },
       "description": {
-        "en": "Publication associated with this work by the BenchCouncil annual table.",
-        "zh": "BenchCouncil 年度表为该成果关联的论文。"
+        "en": "The project page provides the paper, examples and implementation links for the visual instruction tuning pipeline.",
+        "zh": "项目页提供视觉指令微调流程的论文、示例与实现链接。"
       },
-      "url": "https://scholar.google.com/scholar?q=%22Visual%20instruction%20tuning%22",
-      "source": "https://scholar.google.com/scholar?q=%22Visual%20instruction%20tuning%22",
+      "url": "https://llava-vl.github.io/",
+      "source": "https://llava-vl.github.io/",
       "license": {
-        "en": "Reference link only; local visuals are original redraws.",
-        "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+        "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
       },
       "usage": {
-        "en": "Publication and evidence reference",
-        "zh": "论文与证据参考"
+        "en": "Primary technical or official release evidence",
+        "zh": "主要技术或官方发布证据"
       },
       "action": {
-        "en": "Open publication",
-        "zh": "打开论文"
+        "en": "Open LLaVA project",
+        "zh": "打开 LLaVA 项目页面"
       }
     }
   ],
   "assetIds": [
+    "asset-annual-063-llava-portrait-haotian-liu",
+    "asset-annual-063-llava-official-architecture",
     "asset-annual-063-llava-record"
   ],
-  "overviewImageAssetId": "asset-annual-063-llava-record",
+  "overviewImageAssetId": "asset-annual-063-llava-portrait-haotian-liu",
   "sourceIds": [
     "source-primary-record",
     "source-openalex-record",
-    "source-benchcouncil-annual"
+    "source-benchcouncil-annual",
+    "source-annual-063-llava-portrait-haotian-liu",
+    "source-llava-project",
+    "source-llava-repository",
+    "source-haotian-liu-profile",
+    "source-llava-figure-1",
+    "source-llava-official-architecture"
   ],
   "claimIds": [
     "claim-annual-membership",
     "claim-publication-record",
-    "claim-contributor-record"
+    "claim-contributor-record",
+    "claim-visual-instruction-data",
+    "claim-two-stage"
   ],
   "quizId": "ai100-annual-2022-2023-063-llava-quiz-1",
   "commentarySections": [
@@ -73,11 +83,11 @@
         "zh": "历史背景"
       },
       "html": {
-        "en": "BenchCouncil published this row as part of its AI100 (2022-2023) annual selection in the LLM area. The annual list captures a time-bounded view of prominent recent work rather than the membership of the long-term AI100 table.",
-        "zh": "BenchCouncil 把该行发布在 AI100（2022-2023）年度入选表的“大语言模型”领域中。年度表记录的是当时对近期代表性工作的阶段性观察，不等同于长期 AI100 主表成员。"
+        "en": "Language-only instruction tuning had made assistants much easier to direct, while vision-language models were still commonly trained for fixed tasks such as captioning or question answering. LLaVA brought the instruction-following paradigm to image-grounded conversation with a deliberately simple connector architecture.",
+        "zh": "纯语言指令微调已经让助手更容易被自然语言控制，而视觉语言模型仍常围绕图像描述或问答等固定任务训练。LLaVA 以刻意简洁的连接架构，把指令跟随范式带入基于图像的对话。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-primary-record"
       ]
     },
     {
@@ -87,12 +97,11 @@
         "zh": "核心思想"
       },
       "html": {
-        "en": "The official work name is LLaVA, linked by the table to “Visual instruction tuning”. Haotian Liu, Chunyuan Li, Yong Jae Lee are preserved in the same order as the Main Contributors cell. The institution field is University of Wisconsin-Madison, Microsoft, Columbia University.",
-        "zh": "官方成果名称为 LLaVA，表格将其关联到论文《Visual instruction tuning》。Haotian Liu（官方页拼写）、Chunyuan Li（官方页拼写）、Yong Jae Lee（官方页拼写） 按“主要人物”单元格中的相同顺序显示。官方英文拼写与顺序保存在年度记录中，机构字段为 University of Wisconsin-Madison、Microsoft、Columbia University。"
+        "en": "A learned linear projection maps CLIP visual features into the token embedding space of a large language model. Synthetic conversations generated with GPT-4 provide instruction data, and two-stage training first aligns modalities before tuning the combined assistant for multimodal dialogue.",
+        "zh": "一个可学习线性投影把 CLIP 视觉特征映射到大语言模型的 token 嵌入空间。GPT-4 生成的合成对话提供指令数据，两阶段训练先对齐模态，再微调整体助手完成多模态对话。"
       },
       "sourceIds": [
-        "source-primary-record",
-        "source-benchcouncil-annual"
+        "source-primary-record"
       ]
     },
     {
@@ -102,11 +111,11 @@
         "zh": "长期影响"
       },
       "html": {
-        "en": "Experts should treat this record as evidence of BenchCouncil's 2022-2023 annual assessment, not as a permanent consensus ranking. Its lasting archival value is the exact preservation of the work name, publication link, contributor field, institution, country, citation value, and source order.",
-        "zh": "专家应把本记录视为 BenchCouncil 对 2022-2023 年度成果的阶段性评价证据，而不是永久共识排名。它的长期档案价值在于准确保留成果名称、论文线索、人物字段、机构、国家、引用数与来源顺序。"
+        "en": "Experts generally treat LLaVA as a foundational open recipe for visual instruction tuning because it paired a simple architecture with reproducible data generation and code. Its influence is visible in the rapid expansion of open multimodal assistants and in later work that improves encoders, connectors, data mixtures and visual reasoning.",
+        "zh": "专家通常把 LLaVA 视为开放视觉指令微调的基础方案，因为它把简洁架构、可复现的数据生成和代码结合起来。它推动了开放多模态助手快速扩张，也影响了后来对编码器、连接器、数据混合与视觉推理的改进。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-primary-record"
       ]
     }
   ],
@@ -118,23 +127,23 @@
     {
       "name": {
         "en": "Haotian Liu",
-        "zh": "Haotian Liu（官方页拼写）"
+        "zh": "刘昊天"
       },
       "role": {
-        "en": "Main contributor for LLaVA in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 LLaVA 主要人物"
+        "en": "First author of the LLaVA paper",
+        "zh": "LLaVA 论文第一作者"
       },
       "figureType": "person",
-      "avatar": ""
+      "avatar": "resources/images/external/ai100-2023-llava/haotian-liu.jpg"
     },
     {
       "name": {
         "en": "Chunyuan Li",
-        "zh": "Chunyuan Li（官方页拼写）"
+        "zh": "李春源"
       },
       "role": {
-        "en": "Main contributor for LLaVA in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 LLaVA 主要人物"
+        "en": "Co-first author of the LLaVA paper",
+        "zh": "LLaVA 论文共同第一作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -142,11 +151,11 @@
     {
       "name": {
         "en": "Yong Jae Lee",
-        "zh": "Yong Jae Lee（官方页拼写）"
+        "zh": "李永宰"
       },
       "role": {
-        "en": "Main contributor for LLaVA in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 LLaVA 主要人物"
+        "en": "Co-author of the LLaVA paper",
+        "zh": "LLaVA 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -164,14 +173,14 @@
     },
     "workAuthors": {
       "en": "Haotian Liu, Chunyuan Li, Yong Jae Lee",
-      "zh": "Haotian Liu（官方页拼写）、Chunyuan Li（官方页拼写）、Yong Jae Lee（官方页拼写）"
+      "zh": "刘昊天、李春源、李永宰"
     },
     "sourceLabel": "",
-    "sourceUrl": "https://scholar.google.com/scholar?q=%22Visual%20instruction%20tuning%22"
+    "sourceUrl": "https://arxiv.org/abs/2304.08485"
   },
   "quotePage": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry",
-    "zh": "BenchCouncil AI100（2022-2023）年度条目"
+    "en": "Primary publication record",
+    "zh": "原始论文记录"
   },
   "quoteAttribution": {
     "en": "Visual instruction tuning",
@@ -183,50 +192,50 @@
       "zh": "大语言模型"
     },
     "method": {
-      "en": "Annual selection record",
-      "zh": "年度入选记录"
+      "en": "Two-stage visual instruction tuning with a simple learned connector",
+      "zh": "使用简洁可学习连接器的两阶段视觉指令微调"
     },
     "artifact": {
-      "en": "LLaVA",
-      "zh": "LLaVA"
+      "en": "LLaVA large language-and-vision assistant",
+      "zh": "LLaVA 大型语言视觉助手"
     },
     "material": {
-      "en": "Visual instruction tuning",
-      "zh": "《Visual instruction tuning》与官方年度行"
+      "en": "Primary publication or official release evidence, implementation materials and the original local explainer",
+      "zh": "主论文或官方发布证据、实现材料与本地原创解释图"
     },
     "demo": {
-      "en": "Trace the official row from LLaVA to its publication, contributor field, institution, and country.",
-      "zh": "沿官方行查看 LLaVA 如何关联到论文、主要人物字段、机构与国家。"
+      "en": "Follow the four-stage path and compare what enters, what is learned and what the system produces.",
+      "zh": "沿四阶段路径观察输入、学习内容与系统输出。"
     },
     "keyConcepts": [
       {
         "label": {
-          "en": "Official Work",
-          "zh": "官方成果名称"
+          "en": "Vision",
+          "zh": "视觉"
         },
         "text": {
-          "en": "LLaVA",
-          "zh": "LLaVA"
+          "en": "Frozen CLIP encoder extracts image features",
+          "zh": "冻结 CLIP 编码器提取图像特征"
         }
       },
       {
         "label": {
-          "en": "Main Contributors",
-          "zh": "主要人物"
+          "en": "Connector",
+          "zh": "连接器"
         },
         "text": {
-          "en": "Haotian Liu, Chunyuan Li, Yong Jae Lee",
-          "zh": "Haotian Liu（官方页拼写）、Chunyuan Li（官方页拼写）、Yong Jae Lee（官方页拼写）"
+          "en": "Projection maps features into language space",
+          "zh": "投影把特征映射到语言空间"
         }
       },
       {
         "label": {
-          "en": "Institution",
-          "zh": "机构"
+          "en": "Instructions",
+          "zh": "指令"
         },
         "text": {
-          "en": "University of Wisconsin-Madison, Microsoft, Columbia University",
-          "zh": "University of Wisconsin-Madison、Microsoft、Columbia University"
+          "en": "GPT-4-generated conversations supervise tuning",
+          "zh": "GPT-4 生成对话用于监督微调"
         }
       }
     ],
@@ -239,28 +248,32 @@
     ],
     "demoSteps": [
       {
-        "en": "Official work",
-        "zh": "官方成果名称"
+        "en": "Image and CLIP encoder",
+        "zh": "图像与 CLIP 编码器"
       },
       {
-        "en": "Publication record",
-        "zh": "论文记录"
+        "en": "Learned projection",
+        "zh": "可学习投影"
       },
       {
-        "en": "Contributors and institution",
-        "zh": "主要人物与机构"
+        "en": "Large language model",
+        "zh": "大语言模型"
+      },
+      {
+        "en": "Visual conversation",
+        "zh": "视觉对话"
       }
     ],
     "demoImage": "resources/images/benchcouncil-ai100-annual/annual-063-llava_record.svg",
     "demoNotes": [
       {
         "label": {
-          "en": "Source cue",
-          "zh": "资料线索"
+          "en": "Technical cue",
+          "zh": "技术线索"
         },
         "text": {
-          "en": "Visual instruction tuning",
-          "zh": "《Visual instruction tuning》与 BenchCouncil 年度行"
+          "en": "Align visual features, then teach the combined model to follow image-grounded instructions",
+          "zh": "这张图以四个阶段解释：图像与 CLIP 编码器、可学习投影、大语言模型、视觉对话。"
         }
       },
       {
@@ -269,8 +282,8 @@
           "zh": "互动点"
         },
         "text": {
-          "en": "Trace the official row from LLaVA to its publication, contributor field, institution, and country.",
-          "zh": "沿官方行查看 LLaVA 如何关联到论文、主要人物字段、机构与国家。"
+          "en": "Trace the arrows, then identify which stage reuses a pretrained component and which stage learns new information.",
+          "zh": "沿箭头逐步查看，并判断哪个阶段复用预训练组件、哪个阶段学习新信息。"
         }
       }
     ],
@@ -278,30 +291,30 @@
       {
         "type": "archiveLink",
         "site": {
-          "en": "Primary publication",
-          "zh": "主论文"
+          "en": "LLaVA Project",
+          "zh": "LLaVA Project"
         },
         "title": {
-          "en": "Visual instruction tuning",
-          "zh": "《Visual instruction tuning》"
+          "en": "Visual Instruction Tuning",
+          "zh": "《Visual Instruction Tuning》"
         },
         "description": {
-          "en": "Publication associated with this work by the BenchCouncil annual table.",
-          "zh": "BenchCouncil 年度表为该成果关联的论文。"
+          "en": "The project page provides the paper, examples and implementation links for the visual instruction tuning pipeline.",
+          "zh": "项目页提供视觉指令微调流程的论文、示例与实现链接。"
         },
-        "url": "https://scholar.google.com/scholar?q=%22Visual%20instruction%20tuning%22",
-        "source": "https://scholar.google.com/scholar?q=%22Visual%20instruction%20tuning%22",
+        "url": "https://llava-vl.github.io/",
+        "source": "https://llava-vl.github.io/",
         "license": {
-          "en": "Reference link only; local visuals are original redraws.",
-          "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+          "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
         },
         "usage": {
-          "en": "Publication and evidence reference",
-          "zh": "论文与证据参考"
+          "en": "Primary technical or official release evidence",
+          "zh": "主要技术或官方发布证据"
         },
         "action": {
-          "en": "Open publication",
-          "zh": "打开论文"
+          "en": "Open LLaVA project",
+          "zh": "打开 LLaVA 项目页面"
         }
       }
     ],

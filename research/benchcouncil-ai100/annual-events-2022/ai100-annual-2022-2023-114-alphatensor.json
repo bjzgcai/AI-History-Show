@@ -1,0 +1,654 @@
+{
+  "schemaVersion": 1,
+  "eventId": "ai100-annual-2022-2023-114-alphatensor",
+  "status": "complete",
+  "officialOrder": 114,
+  "work": "AlphaTensor",
+  "official": {
+    "area": "AI4Others",
+    "publication": "Discovering faster matrix multiplication algorithms with reinforcement learning",
+    "citation": "267",
+    "contributors": "Alhussein Fawzi, Matej Balog, Aja Huang, Thomas Hubert, Bernardino Romera-Paredes, Pushmeet Kohli",
+    "institution": "DeepMind",
+    "country": "USA",
+    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+  },
+  "summary": {
+    "en": "A reinforcement-learning system that discovered new algorithms for matrix multiplication",
+    "zh": "使用强化学习发现新矩阵乘法算法的系统"
+  },
+  "displaySummary": {
+    "en": "AI100 (2022-2023) · Algorithm discovery with reinforcement learning",
+    "zh": "AI100（2022-2023）· 强化学习发现算法"
+  },
+  "description": {
+    "en": "<p>AlphaTensor represented matrix multiplication as a tensor-decomposition game and trained an AlphaZero-style agent to search for efficient sequences of rank-one updates. This converted a longstanding mathematical algorithm-design problem into a reinforcement-learning environment.</p><p>The system rediscovered known methods and found improved algorithms for several matrix sizes, including a finite-field result beyond the 1969 Strassen benchmark for 4 x 4 matrices. It demonstrated that learned search can contribute new algorithmic knowledge rather than only optimize an existing implementation.</p>",
+    "zh": "<p>AlphaTensor 把矩阵乘法表示为张量分解游戏，并训练类似 AlphaZero 的智能体搜索高效的秩一更新序列。这样，一个长期存在的数学算法设计问题被转化为强化学习环境。</p><p>系统既重新发现已知方法，也为若干矩阵规模找到改进算法，其中包括在有限域上超越 1969 年 Strassen 4 x 4 矩阵乘法结果的方法。它证明学习式搜索能够贡献新的算法知识，而不只是优化既有实现。</p>"
+  },
+  "people": [
+    {
+      "name": {
+        "en": "Alhussein Fawzi",
+        "zh": "侯赛因·法兹"
+      },
+      "role": {
+        "en": "First author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文第一作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Alhussein Fawzi in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出侯赛因·法兹，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "searched-no-selected-asset",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+        "reliability": "identity-confirmed-by-primary-publication; no sufficiently reusable portrait selected",
+        "rights": "No portrait is displayed; candidate identity and redistribution rights were not both strong enough for selection."
+      }
+    },
+    {
+      "name": {
+        "en": "Matej Balog",
+        "zh": "马泰·巴洛格"
+      },
+      "role": {
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Matej Balog in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出马泰·巴洛格，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "searched-no-selected-asset",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+        "reliability": "identity-confirmed-by-primary-publication; no sufficiently reusable portrait selected",
+        "rights": "No portrait is displayed; candidate identity and redistribution rights were not both strong enough for selection."
+      }
+    },
+    {
+      "name": {
+        "en": "Aja Huang",
+        "zh": "黄士杰"
+      },
+      "role": {
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Aja Huang in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出黄士杰，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "searched-no-selected-asset",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+        "reliability": "identity-confirmed-by-primary-publication; no sufficiently reusable portrait selected",
+        "rights": "No portrait is displayed; candidate identity and redistribution rights were not both strong enough for selection."
+      }
+    },
+    {
+      "name": {
+        "en": "Thomas Hubert",
+        "zh": "托马斯·于贝尔"
+      },
+      "role": {
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Thomas Hubert in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出托马斯·于贝尔，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "searched-no-selected-asset",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+        "reliability": "identity-confirmed-by-primary-publication; no sufficiently reusable portrait selected",
+        "rights": "No portrait is displayed; candidate identity and redistribution rights were not both strong enough for selection."
+      }
+    },
+    {
+      "name": {
+        "en": "Bernardino Romera-Paredes",
+        "zh": "贝尔纳迪诺·罗梅拉-帕雷德斯"
+      },
+      "role": {
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Bernardino Romera-Paredes in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出贝尔纳迪诺·罗梅拉-帕雷德斯，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "searched-no-selected-asset",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+        "reliability": "identity-confirmed-by-primary-publication; no sufficiently reusable portrait selected",
+        "rights": "No portrait is displayed; candidate identity and redistribution rights were not both strong enough for selection."
+      }
+    },
+    {
+      "name": {
+        "en": "Pushmeet Kohli",
+        "zh": "普什米特·科利"
+      },
+      "role": {
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Pushmeet Kohli in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出普什米特·科利，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "selected",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pushmeet_Kohli_at_SXSW_London_2026.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Pushmeet_Kohli_at_SXSW_London_2026.jpg",
+        "path": "resources/images/benchcouncil-ai100-annual/portraits/pushmeet-kohli.jpg",
+        "reliability": "identified-event-portrait",
+        "rights": "CC BY-SA 4.0; attribution to Photographer.JuliaMustard / WikiPortraits is required."
+      }
+    }
+  ],
+  "selectedPortrait": {
+    "personName": "Pushmeet Kohli",
+    "image": {
+      "path": "resources/images/benchcouncil-ai100-annual/portraits/pushmeet-kohli.jpg",
+      "sourceName": {
+        "en": "Wikimedia Commons / WikiPortraits",
+        "zh": "Wikimedia Commons / WikiPortraits"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pushmeet_Kohli_at_SXSW_London_2026.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Pushmeet_Kohli_at_SXSW_London_2026.jpg",
+      "license": {
+        "en": "CC BY-SA 4.0; attribution to Photographer.JuliaMustard / WikiPortraits.",
+        "zh": "CC BY-SA 4.0；署名 Photographer.JuliaMustard / WikiPortraits。"
+      },
+      "reliability": "identified-event-portrait",
+      "usageStatus": "licensed",
+      "notes": {
+        "en": "WikiPortraits identifies the subject as Pushmeet Kohli at SXSW London 2026.",
+        "zh": "WikiPortraits 将画面人物标注为 2026 年 SXSW London 活动上的普什米特·科利。"
+      },
+      "identityChecks": [
+        "exact-name",
+        "event-caption-match",
+        "licensed-source"
+      ]
+    }
+  },
+  "sourceOverrides": {
+    "source-primary-record": {
+      "notes": {
+        "en": "Primary publication or official project record used for the central technical claims.",
+        "zh": "用于核心技术主张的主论文或官方项目记录。"
+      }
+    },
+    "source-benchcouncil-annual": {
+      "notes": {
+        "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+        "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
+      }
+    }
+  },
+  "additionalSources": [
+    {
+      "id": "source-alphatensor-deepmind",
+      "type": "official-page",
+      "label": {
+        "en": "Official page",
+        "zh": "官方页面"
+      },
+      "title": {
+        "en": "Discovering novel algorithms with AlphaTensor",
+        "zh": "Google DeepMind：使用 AlphaTensor 发现新算法"
+      },
+      "url": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
+      "language": "en",
+      "purpose": "background",
+      "reliability": "primary",
+      "notes": {
+        "en": "Official DeepMind explanation of the game formulation, discoveries and practical experiments.",
+        "zh": "DeepMind 对游戏建模、算法发现和实际实验的官方说明。"
+      }
+    },
+    {
+      "id": "source-alphatensor-code",
+      "type": "code",
+      "label": {
+        "en": "Code",
+        "zh": "代码"
+      },
+      "title": {
+        "en": "Google DeepMind AlphaTensor repository",
+        "zh": "Google DeepMind AlphaTensor 代码仓库"
+      },
+      "url": "https://github.com/google-deepmind/alphatensor",
+      "language": "en",
+      "purpose": "implementation",
+      "reliability": "primary",
+      "notes": {
+        "en": "Official repository containing discovered algorithms and supporting material.",
+        "zh": "包含已发现算法与配套资料的官方代码仓库。"
+      }
+    },
+    {
+      "id": "source-alphatensor-portrait-pushmeet-kohli",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "Pushmeet Kohli at SXSW London 2026",
+        "zh": "2026 年 SXSW London 活动上的普什米特·科利"
+      },
+      "url": "https://commons.wikimedia.org/wiki/File:Pushmeet_Kohli_at_SXSW_London_2026.jpg",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "secondary",
+      "notes": {
+        "en": "WikiPortraits identifies Pushmeet Kohli; the photograph is CC BY-SA 4.0.",
+        "zh": "WikiPortraits 明确标注画面人物为普什米特·科利；图片采用 CC BY-SA 4.0 许可。"
+      }
+    },
+    {
+      "id": "source-alphatensor-official-image",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "AlphaTensor tensor-grid illustration",
+        "zh": "AlphaTensor 张量网格介绍图"
+      },
+      "url": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "The official DeepMind article publishes the three-dimensional tensor-grid illustration.",
+        "zh": "DeepMind 官方文章发布该三维张量网格介绍图。"
+      }
+    }
+  ],
+  "additionalClaims": [
+    {
+      "id": "claim-core-method",
+      "importance": "core",
+      "text": {
+        "en": "AlphaTensor uses alphazero-style search over tensor decompositions.",
+        "zh": "AlphaTensor 采用在张量分解空间中进行 AlphaZero 式搜索。"
+      },
+      "sourceIds": [
+        "source-alphatensor-deepmind",
+        "source-primary-record"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "claim-historical-significance",
+      "importance": "display",
+      "text": {
+        "en": "Experts generally treat AlphaTensor as a landmark for AI-assisted algorithm discovery because the output is an explicit, verifiable algorithm. It broadened the AlphaZero paradigm from board games to mathematical search and inspired later work on optimizing low-level computation.",
+        "zh": "专家通常把 AlphaTensor 视为 AI 辅助算法发现的里程碑，因为其输出是明确且可验证的算法。它把 AlphaZero 范式从棋类扩展到数学搜索，并推动了后续底层计算优化研究。"
+      },
+      "sourceIds": [
+        "source-alphatensor-deepmind"
+      ],
+      "status": "verified"
+    }
+  ],
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Matrix multiplication is a basic operation behind scientific computing and machine learning, yet finding algorithms with fewer scalar multiplications is a difficult combinatorial problem. Before AlphaTensor, major improvements were usually derived through sustained human mathematical work.",
+        "zh": "矩阵乘法是科学计算和机器学习的基础运算，但寻找更少标量乘法的算法是困难的组合问题。在 AlphaTensor 之前，重要改进通常来自长期的人类数学推导。"
+      },
+      "sourceIds": [
+        "source-alphatensor-deepmind",
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "AlphaTensor encodes the multiplication tensor as a game state, where each move subtracts a rank-one tensor until the target is reduced to zero. A neural network and tree search learn to choose moves that produce short, valid decompositions.",
+        "zh": "AlphaTensor 把乘法张量编码为游戏状态，每一步减去一个秩一张量，直到目标归零。神经网络与树搜索学习选择动作，从而产生短而有效的分解。"
+      },
+      "sourceIds": [
+        "source-alphatensor-deepmind",
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat AlphaTensor as a landmark for AI-assisted algorithm discovery because the output is an explicit, verifiable algorithm. It broadened the AlphaZero paradigm from board games to mathematical search and inspired later work on optimizing low-level computation.",
+        "zh": "专家通常把 AlphaTensor 视为 AI 辅助算法发现的里程碑，因为其输出是明确且可验证的算法。它把 AlphaZero 范式从棋类扩展到数学搜索，并推动了后续底层计算优化研究。"
+      },
+      "sourceIds": [
+        "source-alphatensor-deepmind",
+        "source-primary-record"
+      ]
+    }
+  ],
+  "visualModule": {
+    "type": "archiveLink",
+    "site": {
+      "en": "Google DeepMind",
+      "zh": "Google DeepMind"
+    },
+    "title": {
+      "en": "Discovering novel algorithms with AlphaTensor",
+      "zh": "使用 AlphaTensor 发现新算法"
+    },
+    "description": {
+      "en": "The official article explains the tensor game, discovered algorithms and links to the Nature paper and code.",
+      "zh": "官方文章说明张量游戏、已发现算法，并链接 Nature 论文与代码。"
+    },
+    "url": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
+    "action": {
+      "en": "Open AlphaTensor article",
+      "zh": "打开 AlphaTensor 文章"
+    },
+    "source": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
+    "license": {
+      "en": "Reference link only; the local explainer is an original redraw.",
+      "zh": "仅作为参考链接；本地解释图为原创重绘。"
+    },
+    "usage": {
+      "en": "Technical, historical and interaction reference",
+      "zh": "技术、历史与互动说明参考"
+    }
+  },
+  "recordSvgSource": "research/benchcouncil-ai100/annual-events-2022/assets/ai100-annual-2022-2023-114-alphatensor.svg",
+  "recordAsset": {
+    "caption": {
+      "en": "AlphaTensor process explainer",
+      "zh": "AlphaTensor 流程解释图"
+    },
+    "subcaption": {
+      "en": "AlphaZero-style search over tensor decompositions",
+      "zh": "在张量分解空间中进行 AlphaZero 式搜索"
+    },
+    "sourceIds": [
+      "source-alphatensor-deepmind",
+      "source-primary-record"
+    ],
+    "sourceName": {
+      "en": "Primary publication and original local synthesis",
+      "zh": "主论文与本地原创整理"
+    },
+    "sourceUrl": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
+    "displayUsage": {
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
+    }
+  },
+  "achievement": {
+    "area": {
+      "en": "AI4Others",
+      "zh": "AI 其他应用"
+    },
+    "method": {
+      "en": "AlphaZero-style search over tensor decompositions",
+      "zh": "在张量分解空间中进行 AlphaZero 式搜索"
+    },
+    "artifact": {
+      "en": "New matrix multiplication algorithms",
+      "zh": "新的矩阵乘法算法"
+    },
+    "material": {
+      "en": "Multiplication tensors, reinforcement-learning trajectories and verified decompositions",
+      "zh": "乘法张量、强化学习轨迹与可验证分解"
+    },
+    "demo": {
+      "en": "Choose candidate rank-one moves and watch the residual tensor shrink until a complete multiplication algorithm is formed.",
+      "zh": "选择候选秩一动作，观察剩余张量逐步缩小，直到形成完整乘法算法。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Game state",
+          "zh": "游戏状态"
+        },
+        "text": {
+          "en": "The remaining multiplication tensor",
+          "zh": "尚未分解的乘法张量"
+        }
+      },
+      {
+        "label": {
+          "en": "Action",
+          "zh": "动作"
+        },
+        "text": {
+          "en": "Choose a rank-one tensor update",
+          "zh": "选择一个秩一张量更新"
+        }
+      },
+      {
+        "label": {
+          "en": "Goal",
+          "zh": "目标"
+        },
+        "text": {
+          "en": "Reach zero with as few steps as possible",
+          "zh": "用尽可能少的步骤归零"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Encode multiplication tensor",
+        "zh": "编码乘法张量"
+      },
+      {
+        "en": "Search rank-one updates",
+        "zh": "搜索秩一更新"
+      },
+      {
+        "en": "Verify and benchmark algorithm",
+        "zh": "验证并评测算法"
+      }
+    ],
+    "demoImage": "resources/images/benchcouncil-ai100-annual/annual-114-alphatensor_record.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Evidence cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "The Nature paper defines the tensor game and reports both theoretical multiplication counts and hardware-aware runtimes.",
+          "zh": "Nature 论文定义张量游戏，并报告理论乘法次数与面向硬件的运行时间。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Choose candidate rank-one moves and watch the residual tensor shrink until a complete multiplication algorithm is formed.",
+          "zh": "选择候选秩一动作，观察剩余张量逐步缩小，直到形成完整乘法算法。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Google DeepMind",
+          "zh": "Google DeepMind"
+        },
+        "title": {
+          "en": "Discovering novel algorithms with AlphaTensor",
+          "zh": "使用 AlphaTensor 发现新算法"
+        },
+        "description": {
+          "en": "The official article explains the tensor game, discovered algorithms and links to the Nature paper and code.",
+          "zh": "官方文章说明张量游戏、已发现算法，并链接 Nature 论文与代码。"
+        },
+        "url": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
+        "action": {
+          "en": "Open AlphaTensor article",
+          "zh": "打开 AlphaTensor 文章"
+        },
+        "source": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Technical, historical and interaction reference",
+          "zh": "技术、历史与互动说明参考"
+        }
+      }
+    ]
+  },
+  "quiz": {
+    "question": {
+      "en": "How does AlphaTensor represent matrix multiplication?",
+      "zh": "AlphaTensor 如何表示矩阵乘法问题？"
+    },
+    "options": [
+      {
+        "en": "As a tensor-decomposition game",
+        "zh": "表示为张量分解游戏"
+      },
+      {
+        "en": "As speech transcription",
+        "zh": "表示为语音转写"
+      },
+      {
+        "en": "As image captioning",
+        "zh": "表示为图像描述"
+      },
+      {
+        "en": "As web search ranking",
+        "zh": "表示为网页搜索排序"
+      }
+    ],
+    "explanation": {
+      "en": "The agent searches for rank-one tensor updates that decompose the matrix multiplication tensor.",
+      "zh": "智能体搜索秩一张量更新，以分解矩阵乘法张量。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-alphatensor-deepmind"
+    ],
+    "answer": 0
+  },
+  "reviewNotes": {
+    "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+    "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
+  },
+  "supplementaryAssets": [
+    {
+      "id": "asset-annual-114-alphatensor-official-tensor",
+      "type": "image",
+      "path": "resources/images/benchcouncil-ai100-annual/annual-114-alphatensor-official-tensor.png",
+      "role": "research-result",
+      "caption": {
+        "zh": "AlphaTensor 矩阵乘法张量可视化",
+        "en": "AlphaTensor matrix-multiplication tensor visualization"
+      },
+      "subcaption": {
+        "zh": "Google DeepMind 官方张量表示介绍图",
+        "en": "Official Google DeepMind illustration of the tensor representation"
+      },
+      "sourceId": "source-alphatensor-official-image",
+      "sourceName": {
+        "en": "Google DeepMind",
+        "zh": "Google DeepMind"
+      },
+      "sourceUrl": "https://lh3.googleusercontent.com/UfMZ44R9PrcXndNCa7Qt0ZVsGUEoAnpCiWiimmBYyUVhSHc97-qQFKUQVHBGDyj3ew5q-4dksmaJEifYlAYhAPC3o81IHL3_WDjh4jZRQIvgxZGJ0JQ=w1440-h810-n-nu",
+      "rights": {
+        "status": "external-reference",
+        "license": {
+          "en": "Official institutional illustration; no separate open image license is stated on the article page.",
+          "zh": "官方机构介绍图；文章页面未另行声明开放图片许可。"
+        },
+        "attribution": "Google DeepMind"
+      },
+      "displayUsage": {
+        "en": "Official achievement illustration",
+        "zh": "官方成果介绍图"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    }
+  ],
+  "assetIds": [
+    "asset-annual-114-alphatensor-portrait-pushmeet-kohli",
+    "asset-annual-114-alphatensor-official-tensor",
+    "asset-annual-114-alphatensor-record"
+  ],
+  "overviewImageAssetId": "asset-annual-114-alphatensor-portrait-pushmeet-kohli"
+}

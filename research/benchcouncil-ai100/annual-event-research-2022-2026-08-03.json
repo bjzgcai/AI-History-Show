@@ -1,0 +1,1924 @@
+{
+  "researchedAt": "2026-08-03",
+  "storylineId": "bench-council-ai100-2022-2023",
+  "scopeYear": 2022,
+  "policy": {
+    "en": "Research one 2022 event at a time in official BenchCouncil order. Preserve the official work, contributor, institution, country and order fields; use primary publications and researcher or institution pages to verify people and explain the achievement. Display at most one verified portrait and one original explainer per event.",
+    "zh": "按 BenchCouncil 官方顺序逐个研究 2022 年事件。保留官方成果、主要人物、机构、国家和顺序字段；使用主论文及研究者或机构页面核验人物并解释成果。每个事件最多展示一张已核验人物图和一张原创解释图。"
+  },
+  "events": {
+    "ai100-annual-2022-2023-001-swin-transformer-v2": {
+      "status": "complete",
+      "officialOrder": 1,
+      "work": "Swin Transformer V2",
+      "visualKind": "swin-transformer-v2",
+      "summary": {
+        "en": "A stable path to scaling window-based vision transformers to three billion parameters and high-resolution inputs",
+        "zh": "将窗口式视觉 Transformer 稳定扩展到 30 亿参数和高分辨率输入的方法"
+      },
+      "displaySummary": {
+        "en": "AI100 (2022-2023) · Stable large-scale vision transformers",
+        "zh": "AI100（2022-2023）· 稳定扩展大规模视觉 Transformer"
+      },
+      "description": {
+        "en": "<p>Swin Transformer V2 addressed three obstacles that appeared when vision transformers were scaled up: unstable optimization, a mismatch between low-resolution pretraining and high-resolution downstream tasks, and heavy dependence on labeled images. It combined residual post-normalization with scaled cosine attention, introduced log-spaced continuous position bias for resolution transfer, and used SimMIM self-supervised pretraining.</p><p>The resulting system scaled to 3 billion parameters and images as large as 1536 x 1536, while reporting strong results on ImageNet-V2, COCO, ADE20K and Kinetics-400.</p>",
+        "zh": "<p>Swin Transformer V2 针对视觉 Transformer 扩大规模后出现的三个障碍：优化不稳定、低分辨率预训练与高分辨率下游任务之间的落差，以及对标注图像的高度依赖。它把残差后归一化与缩放余弦注意力结合起来，引入对数间隔的连续位置偏置来支持分辨率迁移，并采用 SimMIM 自监督预训练。</p><p>这套方法把模型扩展到 30 亿参数，并可处理最高 1536 x 1536 分辨率的图像，同时在 ImageNet-V2、COCO、ADE20K 和 Kinetics-400 上报告了强劲结果。</p>"
+      },
+      "people": [
+        {
+          "name": {
+            "en": "Ze Liu",
+            "zh": "刘泽"
+          },
+          "role": {
+            "en": "Co-first author of the Swin Transformer V2 paper",
+            "zh": "Swin Transformer V2 论文共同第一作者"
+          },
+          "verification": {
+            "status": "confirmed",
+            "sourceIds": [
+              "source-benchcouncil-annual",
+              "source-cvf-paper-page",
+              "source-ze-liu-profile"
+            ],
+            "notes": {
+              "en": "BenchCouncil lists Ze Liu first in the Main Contributors field. The CVF paper page lists him as first author, and his personal academic homepage identifies the same researcher and publishes the selected portrait.",
+              "zh": "BenchCouncil 在主要人物字段中首先列出刘泽。CVF 论文页将其列为第一作者，其个人学术主页确认了同一研究者身份并发布了当前采用的肖像。"
+            }
+          },
+          "portraitSearch": {
+            "status": "selected-existing",
+            "sourceUrl": "https://zeliu98.github.io/",
+            "imageUrl": "https://zeliu98.github.io/images/zeliu.jpg",
+            "reliability": "primary-identity-source",
+            "rights": "The personal homepage does not state redistribution rights; the local copy remains an attributed external reference."
+          }
+        },
+        {
+          "name": {
+            "en": "Han Hu",
+            "zh": "胡瀚"
+          },
+          "role": {
+            "en": "Co-first author of the Swin Transformer V2 paper",
+            "zh": "Swin Transformer V2 论文共同第一作者"
+          },
+          "verification": {
+            "status": "confirmed",
+            "sourceIds": [
+              "source-benchcouncil-annual",
+              "source-cvf-paper-page",
+              "source-han-hu-profile"
+            ],
+            "notes": {
+              "en": "BenchCouncil lists Han Hu second in the Main Contributors field. The CVF paper page includes him in the author list, and his personal academic homepage lists the paper and states that he worked at Microsoft Research Asia until December 2023.",
+              "zh": "BenchCouncil 在主要人物字段中第二位列出胡瀚。CVF 论文页的作者表包含胡瀚，其个人学术主页也列出该论文，并说明他任职微软亚洲研究院至 2023 年 12 月。"
+            }
+          },
+          "portraitSearch": {
+            "status": "selected-supplementary",
+            "sourceUrl": "https://ancientmooner.github.io/",
+            "imageUrl": "https://ancientmooner.github.io/assets/media/profile.jpg",
+            "reliability": "primary-identity-source",
+            "rights": "The personal homepage does not state redistribution rights. The portrait is displayed as an attributed supplementary external reference under the relaxed image policy."
+          }
+        }
+      ],
+      "additionalSources": [
+        {
+          "id": "source-cvf-paper-page",
+          "type": "paper-page",
+          "label": {
+            "en": "Conference paper page",
+            "zh": "会议论文页面"
+          },
+          "title": {
+            "en": "Swin Transformer V2: Scaling Up Capacity and Resolution - CVPR 2022 Open Access",
+            "zh": "《Swin Transformer V2: Scaling Up Capacity and Resolution》CVPR 2022 开放论文页"
+          },
+          "authors": [
+            "Ze Liu",
+            "Han Hu",
+            "Yutong Lin",
+            "Zhuliang Yao",
+            "Zhenda Xie",
+            "Yixuan Wei",
+            "Jia Ning",
+            "Yue Cao",
+            "Zheng Zhang",
+            "Li Dong",
+            "Furu Wei",
+            "Baining Guo"
+          ],
+          "year": 2022,
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Liu_Swin_Transformer_V2_Scaling_Up_Capacity_and_Resolution_CVPR_2022_paper.html",
+          "language": "en",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "notes": {
+            "en": "Primary conference record used to verify the full author list, abstract, reported scale, techniques, benchmarks and implementation link.",
+            "zh": "用于核对完整作者表、摘要、模型规模、技术方法、评测结果和实现链接的会议原始记录。"
+          }
+        },
+        {
+          "id": "source-microsoft-research-publication",
+          "type": "official-page",
+          "label": {
+            "en": "Institution page",
+            "zh": "机构页面"
+          },
+          "title": {
+            "en": "Swin Transformer V2: Scaling Up Capacity and Resolution - Microsoft Research",
+            "zh": "微软研究院：Swin Transformer V2 扩展模型容量与分辨率"
+          },
+          "url": "https://www.microsoft.com/en-us/research/publication/swin-transformer-v2-scaling-up-capacity-and-resolution/",
+          "language": "en",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "notes": {
+            "en": "Official institution publication page. It explains the three scaling problems, the three corresponding techniques, the 3-billion-parameter model, 1536 x 1536 inputs, four benchmark families and the linked implementation.",
+            "zh": "机构官方论文页面，说明三类扩展问题及对应方法、30 亿参数模型、1536 x 1536 输入、四类评测任务和实现入口。"
+          }
+        },
+        {
+          "id": "source-implementation-repository",
+          "type": "code",
+          "label": {
+            "en": "Code",
+            "zh": "代码"
+          },
+          "title": {
+            "en": "Microsoft Swin Transformer implementation repository",
+            "zh": "微软 Swin Transformer 实现仓库"
+          },
+          "url": "https://github.com/microsoft/Swin-Transformer",
+          "language": "en",
+          "purpose": "implementation",
+          "reliability": "primary",
+          "notes": {
+            "en": "Official repository linked from the CVF and Microsoft Research publication pages; used to confirm that implementation materials were publicly released.",
+            "zh": "CVF 与微软研究院论文页面共同链接的官方仓库，用于确认实现材料已公开发布。"
+          }
+        },
+        {
+          "id": "source-ze-liu-profile",
+          "type": "personal-page",
+          "label": {
+            "en": "Personal homepage",
+            "zh": "个人主页"
+          },
+          "title": {
+            "en": "Ze Liu academic homepage",
+            "zh": "刘泽学术主页"
+          },
+          "url": "https://zeliu98.github.io/",
+          "language": "en",
+          "purpose": "biography",
+          "reliability": "primary",
+          "notes": {
+            "en": "Researcher-controlled identity source used to match Ze Liu to the paper and portrait. The page does not state a redistribution license for the portrait.",
+            "zh": "由研究者本人维护的身份来源，用于匹配刘泽、论文和肖像；页面未声明肖像的再分发许可。"
+          }
+        },
+        {
+          "id": "source-han-hu-profile",
+          "type": "personal-page",
+          "label": {
+            "en": "Personal homepage",
+            "zh": "个人主页"
+          },
+          "title": {
+            "en": "Han Hu academic homepage",
+            "zh": "胡瀚学术主页"
+          },
+          "url": "https://ancientmooner.github.io/",
+          "language": "en",
+          "purpose": "biography",
+          "reliability": "primary",
+          "notes": {
+            "en": "Researcher-controlled page listing Swin Transformer V2 and Han Hu's Microsoft Research Asia role at the time. It contains a matching portrait, but no redistribution license is stated; the portrait is recorded as a candidate and is not displayed.",
+            "zh": "研究者本人维护的页面，列出 Swin Transformer V2，并说明胡瀚当时在微软亚洲研究院任职。页面包含匹配肖像，但未声明再分发许可，因此仅记录为候选而不展示。"
+          }
+        },
+        {
+          "id": "source-annual-001-swin-transformer-v2-portrait-han-hu",
+          "type": "image-source",
+          "label": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "title": {
+            "zh": "胡瀚学术主页肖像",
+            "en": "Han Hu academic homepage portrait"
+          },
+          "url": "https://ancientmooner.github.io/",
+          "language": "und",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "notes": {
+            "en": "Source page for the supplementary image \"Han Hu academic homepage\".",
+            "zh": "补充图片“胡瀚学术主页”的来源页面。"
+          }
+        },
+        {
+          "id": "source-swin-v2-paper-figure",
+          "type": "image-source",
+          "label": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "title": {
+            "zh": "Swin Transformer V1 与 V2 模块对比图",
+            "en": "Swin Transformer V1 and V2 block comparison"
+          },
+          "url": "https://arxiv.org/abs/2111.09883",
+          "language": "und",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "notes": {
+            "en": "Source page for the supplementary image \"Swin Transformer V2 arXiv source package\".",
+            "zh": "补充图片“Swin Transformer V2 arXiv 源文件包”的来源页面。"
+          }
+        }
+      ],
+      "additionalClaims": [
+        {
+          "id": "claim-contributors-cross-verified",
+          "importance": "core",
+          "text": {
+            "en": "Ze Liu and Han Hu, the two main contributors named by BenchCouncil, are both authors of the CVPR 2022 paper; their researcher-controlled homepages independently identify the same people and work.",
+            "zh": "BenchCouncil 列出的两位主要人物刘泽和胡瀚均为 CVPR 2022 论文作者；两人的个人学术主页也分别确认了同一人物与成果。"
+          },
+          "sourceIds": [
+            "source-benchcouncil-annual",
+            "source-cvf-paper-page",
+            "source-ze-liu-profile",
+            "source-han-hu-profile"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-scaling-techniques",
+          "importance": "core",
+          "text": {
+            "en": "Swin Transformer V2 combines residual post-normalization and scaled cosine attention for stability, log-spaced continuous position bias for resolution transfer, and SimMIM pretraining to reduce labeled-data demand.",
+            "zh": "Swin Transformer V2 使用残差后归一化与缩放余弦注意力提升稳定性，以对数间隔连续位置偏置支持分辨率迁移，并用 SimMIM 预训练降低对标注数据的需求。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-page",
+            "source-microsoft-research-publication"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-model-scale-and-benchmarks",
+          "importance": "display",
+          "text": {
+            "en": "The paper reports a 3-billion-parameter model, inputs up to 1536 x 1536, and results across ImageNet-V2, COCO, ADE20K and Kinetics-400.",
+            "zh": "论文报告了 30 亿参数模型、最高 1536 x 1536 的输入分辨率，以及在 ImageNet-V2、COCO、ADE20K 和 Kinetics-400 上的结果。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-page",
+            "source-microsoft-research-publication"
+          ],
+          "status": "verified"
+        }
+      ],
+      "commentarySections": [
+        {
+          "id": "historical-background",
+          "label": {
+            "en": "Historical Background",
+            "zh": "历史背景"
+          },
+          "html": {
+            "en": "By 2021, hierarchical window-based transformers had made transformer backbones practical for mainstream vision tasks, but simply enlarging them exposed optimization and resolution-transfer problems. Swin Transformer V2 was designed to make the architecture scale in both parameter count and input resolution without demanding an impractical amount of labeled data.",
+            "zh": "到 2021 年，分层窗口式 Transformer 已让 Transformer 主干能够用于主流视觉任务，但直接扩大模型会暴露优化不稳定和分辨率迁移困难。Swin Transformer V2 的目标是在参数量与输入分辨率上同时扩展，并避免依赖难以承受的大规模标注数据。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-page",
+            "source-microsoft-research-publication"
+          ]
+        },
+        {
+          "id": "core-idea",
+          "label": {
+            "en": "Core Idea",
+            "zh": "核心思想"
+          },
+          "html": {
+            "en": "Residual post-normalization and scaled cosine attention make very large Swin blocks easier to optimize. Log-spaced continuous position bias transfers spatial relationships from smaller pretraining windows to larger downstream windows, while SimMIM supplies self-supervised pretraining before task-specific adaptation.",
+            "zh": "残差后归一化与缩放余弦注意力让超大规模 Swin 模块更易于优化。对数间隔连续位置偏置把较小预训练窗口中的空间关系迁移到更大的下游窗口，SimMIM 则在任务适配前提供自监督预训练。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-page",
+            "source-microsoft-research-publication"
+          ]
+        },
+        {
+          "id": "long-term-legacy",
+          "label": {
+            "en": "Long-Term Legacy",
+            "zh": "长期影响"
+          },
+          "html": {
+            "en": "Experts generally treat Swin Transformer V2 as an important engineering and architectural refinement of the original Swin family rather than a wholly separate vision paradigm. Its lasting contribution is the coordinated treatment of optimization stability, position-bias transfer and self-supervised pretraining, which made billion-scale high-resolution vision experiments more reproducible through an openly released implementation.",
+            "zh": "专家通常把 Swin Transformer V2 视为原始 Swin 系列的重要工程与架构改进，而不是完全独立的视觉范式。它的长期贡献在于协同处理优化稳定性、位置偏置迁移和自监督预训练，并通过公开实现提高十亿参数级高分辨率视觉实验的可复现性。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-page",
+            "source-microsoft-research-publication",
+            "source-implementation-repository"
+          ]
+        }
+      ],
+      "visualModule": {
+        "type": "archiveLink",
+        "site": {
+          "en": "Microsoft Research publication",
+          "zh": "微软研究院论文页"
+        },
+        "title": {
+          "en": "Swin Transformer V2: Scaling Up Capacity and Resolution",
+          "zh": "《Swin Transformer V2: Scaling Up Capacity and Resolution》"
+        },
+        "description": {
+          "en": "The official institution page summarizes the scaling problems, three technical responses, model size, high-resolution inputs, benchmark results and implementation link.",
+          "zh": "机构官方页面概述扩展模型时的难题、三项技术应对、模型规模、高分辨率输入、评测结果和实现链接。"
+        },
+        "url": "https://www.microsoft.com/en-us/research/publication/swin-transformer-v2-scaling-up-capacity-and-resolution/",
+        "source": "https://www.microsoft.com/en-us/research/publication/swin-transformer-v2-scaling-up-capacity-and-resolution/",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw and does not copy the paper figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制论文图形。"
+        },
+        "usage": {
+          "en": "Technical and institutional evidence reference",
+          "zh": "技术与机构证据参考"
+        },
+        "action": {
+          "en": "Open Microsoft Research page",
+          "zh": "打开微软研究院页面"
+        }
+      },
+      "recordAsset": {
+        "caption": {
+          "en": "Swin Transformer V2 scaling path",
+          "zh": "Swin Transformer V2 扩展路径"
+        },
+        "subcaption": {
+          "en": "Original explainer of stability, resolution transfer, self-supervised pretraining and the 3-billion-parameter model.",
+          "zh": "解释稳定性、分辨率迁移、自监督预训练与 30 亿参数模型关系的原创图。"
+        },
+        "sourceIds": [
+          "source-cvf-paper-page",
+          "source-microsoft-research-publication"
+        ],
+        "sourceName": {
+          "en": "CVPR paper and Microsoft Research publication page",
+          "zh": "CVPR 论文与微软研究院论文页"
+        },
+        "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Liu_Swin_Transformer_V2_Scaling_Up_Capacity_and_Resolution_CVPR_2022_paper.html",
+        "displayUsage": {
+          "en": "Architecture and scaling explainer",
+          "zh": "架构与扩展方法解释图"
+        }
+      },
+      "supplementaryAssets": [
+        {
+          "id": "asset-annual-001-swin-transformer-v2-portrait-han-hu",
+          "type": "image",
+          "path": "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg",
+          "role": "portrait",
+          "caption": {
+            "zh": "胡瀚肖像",
+            "en": "Han Hu portrait"
+          },
+          "subcaption": {
+            "en": "Co-first author of the Swin Transformer V2 paper",
+            "zh": "Swin Transformer V2 论文共同第一作者"
+          },
+          "sourceId": "source-annual-001-swin-transformer-v2-portrait-han-hu",
+          "sourceName": {
+            "en": "Han Hu academic homepage",
+            "zh": "胡瀚学术主页"
+          },
+          "sourceUrl": "https://ancientmooner.github.io/",
+          "rights": {
+            "status": "external-reference",
+            "license": {
+              "en": "No redistribution license is stated on the homepage; used with source attribution under the project's relaxed reference-image policy.",
+              "zh": "主页未声明再分发许可；依据项目放宽后的参考图片策略使用，并保留来源署名。"
+            },
+            "attribution": "Han Hu"
+          },
+          "displayUsage": {
+            "en": "Supplementary verified contributor portrait",
+            "zh": "补充展示的已核验主要人物肖像"
+          },
+          "usage": [
+            "variant:bench-council-ai100-2022-2023"
+          ],
+          "editable": false
+        },
+        {
+          "id": "asset-annual-001-swin-transformer-v2-paper-v1-v2-comparison",
+          "type": "image",
+          "path": "resources/images/external/ai100-2022-swin-transformer-v2/paper-v1-v2-comparison.png",
+          "role": "architecture-diagram",
+          "caption": {
+            "zh": "Swin Transformer V1 与 V2 模块对比",
+            "en": "Swin Transformer V1 and V2 block comparison"
+          },
+          "subcaption": {
+            "zh": "论文图突出残差后归一化、缩放余弦注意力与对数间隔连续位置偏置。",
+            "en": "The paper highlights residual post-normalization, scaled cosine attention and log-spaced continuous position bias."
+          },
+          "sourceId": "source-swin-v2-paper-figure",
+          "sourceName": {
+            "en": "Swin Transformer V2 arXiv source package",
+            "zh": "Swin Transformer V2 arXiv 源文件包"
+          },
+          "sourceUrl": "https://arxiv.org/abs/2111.09883",
+          "rights": {
+            "status": "external-reference",
+            "license": {
+              "en": "Author-submitted paper figure; displayed with full paper attribution under the project's relaxed reference-image policy.",
+              "zh": "作者提交的论文配图；依据项目放宽后的参考图片策略展示，并完整标注论文来源。"
+            },
+            "attribution": "Ze Liu et al."
+          },
+          "displayUsage": {
+            "en": "Primary-paper architecture comparison",
+            "zh": "主论文架构对比资料"
+          },
+          "usage": [
+            "variant:bench-council-ai100-2022-2023"
+          ],
+          "editable": false
+        }
+      ],
+      "achievement": {
+        "method": {
+          "en": "Residual post-normalization, scaled cosine attention and continuous position bias",
+          "zh": "残差后归一化、缩放余弦注意力与连续位置偏置"
+        },
+        "artifact": {
+          "en": "A 3-billion-parameter high-resolution Swin Transformer",
+          "zh": "30 亿参数高分辨率 Swin Transformer"
+        },
+        "material": {
+          "en": "CVPR 2022 paper, Microsoft Research publication page and official implementation",
+          "zh": "CVPR 2022 论文、微软研究院论文页与官方实现"
+        },
+        "demo": {
+          "en": "Follow how stabilization, resolution transfer and self-supervised pretraining converge on a large model that serves four different vision task families.",
+          "zh": "观察稳定化、分辨率迁移和自监督预训练如何汇合到一个可服务四类视觉任务的大模型。"
+        },
+        "keyConcepts": [
+          {
+            "label": {
+              "en": "Stable Scaling",
+              "zh": "稳定扩展"
+            },
+            "text": {
+              "en": "Residual post-normalization and scaled cosine attention",
+              "zh": "残差后归一化与缩放余弦注意力"
+            }
+          },
+          {
+            "label": {
+              "en": "Resolution Transfer",
+              "zh": "分辨率迁移"
+            },
+            "text": {
+              "en": "Log-spaced continuous position bias",
+              "zh": "对数间隔连续位置偏置"
+            }
+          },
+          {
+            "label": {
+              "en": "Self-Supervision",
+              "zh": "自监督学习"
+            },
+            "text": {
+              "en": "SimMIM pretraining reduces dependence on labeled images",
+              "zh": "SimMIM 预训练降低对标注图像的依赖"
+            }
+          }
+        ],
+        "demoSteps": [
+          {
+            "en": "Stabilize very large transformer blocks",
+            "zh": "稳定超大规模 Transformer 模块"
+          },
+          {
+            "en": "Transfer position bias to larger windows",
+            "zh": "把位置偏置迁移到更大窗口"
+          },
+          {
+            "en": "Pretrain with masked image modeling",
+            "zh": "通过掩码图像建模预训练"
+          },
+          {
+            "en": "Adapt the model across four vision task families",
+            "zh": "将模型适配到四类视觉任务"
+          }
+        ],
+        "demoNotes": [
+          {
+            "label": {
+              "en": "Architecture cue",
+              "zh": "架构线索"
+            },
+            "text": {
+              "en": "The three interventions solve different bottlenecks: optimization stability, spatial transfer and labeled-data demand.",
+              "zh": "三项干预分别解决优化稳定性、空间迁移和标注数据需求这三个瓶颈。"
+            }
+          },
+          {
+            "label": {
+              "en": "Interaction point",
+              "zh": "互动点"
+            },
+            "text": {
+              "en": "Trace each intervention to the bottleneck it addresses, then compare the four task families reached by the shared model.",
+              "zh": "逐项追踪每种方法解决的瓶颈，再比较同一模型覆盖的四类任务。"
+            }
+          }
+        ],
+        "visualModules": [
+          {
+            "type": "archiveLink",
+            "site": {
+              "en": "Microsoft Research publication",
+              "zh": "微软研究院论文页"
+            },
+            "title": {
+              "en": "Swin Transformer V2: Scaling Up Capacity and Resolution",
+              "zh": "《Swin Transformer V2: Scaling Up Capacity and Resolution》"
+            },
+            "description": {
+              "en": "The official institution page summarizes the scaling problems, techniques, results and implementation link.",
+              "zh": "机构官方页面概述模型扩展问题、技术方法、实验结果和实现链接。"
+            },
+            "url": "https://www.microsoft.com/en-us/research/publication/swin-transformer-v2-scaling-up-capacity-and-resolution/",
+            "source": "https://www.microsoft.com/en-us/research/publication/swin-transformer-v2-scaling-up-capacity-and-resolution/",
+            "license": {
+              "en": "Reference link only; the local explainer is an original redraw.",
+              "zh": "仅作为参考链接；本地解释图为原创重绘。"
+            },
+            "usage": {
+              "en": "Technical and institutional evidence reference",
+              "zh": "技术与机构证据参考"
+            },
+            "action": {
+              "en": "Open Microsoft Research page",
+              "zh": "打开微软研究院页面"
+            }
+          }
+        ]
+      },
+      "quiz": {
+        "question": {
+          "en": "Which Swin Transformer V2 technique helps transfer a model from smaller pretraining windows to larger high-resolution windows?",
+          "zh": "Swin Transformer V2 中哪项技术帮助模型从较小预训练窗口迁移到更大的高分辨率窗口？"
+        },
+        "options": [
+          {
+            "en": "Log-spaced continuous position bias",
+            "zh": "对数间隔连续位置偏置"
+          },
+          {
+            "en": "A larger labeled image set only",
+            "zh": "仅增加标注图像数量"
+          },
+          {
+            "en": "Removing all attention layers",
+            "zh": "移除全部注意力层"
+          },
+          {
+            "en": "Replacing images with text tokens",
+            "zh": "用文本词元替换图像"
+          }
+        ],
+        "answer": 0,
+        "explanation": {
+          "en": "The log-spaced continuous position bias is designed to transfer spatial relationships across window sizes and resolutions.",
+          "zh": "对数间隔连续位置偏置用于在不同窗口大小与分辨率之间迁移空间关系。"
+        },
+        "sourceIds": [
+          "source-cvf-paper-page",
+          "source-microsoft-research-publication"
+        ]
+      },
+      "reviewNotes": {
+        "en": "Completed event-specific research on 2026-08-03. BenchCouncil fields were preserved; contributors were cross-checked against the primary paper and researcher-controlled pages. One existing Ze Liu portrait is retained, while Han Hu's matching homepage portrait is documented but not selected because no redistribution license is stated and the event already has one portrait.",
+        "zh": "于 2026-08-03 完成事件专项研究。保留 BenchCouncil 官方字段，并通过主论文与研究者个人页面交叉核对人物。继续使用现有刘泽肖像；胡瀚主页中的匹配肖像因未声明再分发许可且事件已有一张人物图，仅记录而不采用。"
+      },
+      "assetIds": [
+        "asset-annual-001-swin-transformer-v2-portrait-ze-liu",
+        "asset-annual-001-swin-transformer-v2-paper-v1-v2-comparison",
+        "asset-annual-001-swin-transformer-v2-portrait-han-hu",
+        "asset-annual-001-swin-transformer-v2-record"
+      ],
+      "overviewImageAssetId": "asset-annual-001-swin-transformer-v2-portrait-ze-liu"
+    },
+    "ai100-annual-2022-2023-002-simmim": {
+      "status": "complete",
+      "officialOrder": 2,
+      "work": "Simmim",
+      "visualKind": "simmim",
+      "summary": {
+        "en": "A simple masked image modeling framework built from random masks, raw-pixel regression and a lightweight prediction head",
+        "zh": "以随机遮挡、原始像素回归和轻量预测头构成的简洁掩码图像建模框架"
+      },
+      "displaySummary": {
+        "en": "AI100 (2022-2023) · Simple masked image pretraining",
+        "zh": "AI100（2022-2023）· 简洁的掩码图像预训练"
+      },
+      "description": {
+        "en": "<p>SimMIM asked how much machinery masked image modeling actually needed. Instead of block-wise masking, discrete-VAE tokenizers, clustering targets or a heavy decoder, it used random masks with moderately large patches, directly regressed the RGB values of masked pixels and reduced the prediction head to a linear layer.</p><p>The simple recipe produced strong representations with both ViT and Swin backbones, and the paper reports scaling from ViT-B to a 3-billion-parameter SwinV2-G model.</p>",
+        "zh": "<p>SimMIM 追问掩码图像建模究竟需要多少复杂机制。它不依赖分块遮挡、离散 VAE 分词器、聚类目标或沉重解码器，而是采用中等偏大的随机遮挡块，直接回归被遮挡位置的 RGB 像素值，并把预测头简化为单个线性层。</p><p>这套简洁方案在 ViT 与 Swin 主干上都学到强表征，论文还报告了从 ViT-B 扩展到 30 亿参数 SwinV2-G 的结果。</p>"
+      },
+      "location": {
+        "regionId": "china",
+        "country": {
+          "en": "China",
+          "zh": "中国"
+        },
+        "place": {
+          "en": "Tsinghua University, Microsoft Research Asia, Xi'an Jiaotong University",
+          "zh": "清华大学、微软亚洲研究院、西安交通大学"
+        },
+        "coordinates": [
+          35.8617,
+          104.1954
+        ]
+      },
+      "people": [
+        {
+          "name": {
+            "en": "Zhenda Xie",
+            "zh": "谢振达"
+          },
+          "role": {
+            "en": "Co-first author of the SimMIM paper",
+            "zh": "SimMIM 论文共同第一作者"
+          },
+          "verification": {
+            "status": "confirmed",
+            "sourceIds": [
+              "source-benchcouncil-annual",
+              "source-cvf-paper-page",
+              "source-microsoft-research-publication",
+              "source-zhenda-xie-github"
+            ],
+            "notes": {
+              "en": "The CVF and Microsoft Research pages list Zhenda Xie first. His exact-name GitHub account contributes to the official Microsoft SimMIM repository, corroborating the work-account match.",
+              "zh": "CVF 与微软研究院页面均首先列出谢振达；其同名 GitHub 账号参与微软官方 SimMIM 仓库，进一步确认成果与账号的对应关系。"
+            }
+          },
+          "portraitSearch": {
+            "status": "searched-no-selected-asset",
+            "sourceUrl": "https://github.com/zdaxie",
+            "imageUrl": "",
+            "reliability": "primary-account-source",
+            "rights": "The GitHub avatar is an illustration rather than a reliable person portrait, so it is not selected."
+          }
+        },
+        {
+          "name": {
+            "en": "Zheng Zhang",
+            "zh": "张拯"
+          },
+          "role": {
+            "en": "Co-first author of the SimMIM paper",
+            "zh": "SimMIM 论文共同第一作者"
+          },
+          "verification": {
+            "status": "confirmed",
+            "sourceIds": [
+              "source-benchcouncil-annual",
+              "source-cvf-paper-page",
+              "source-microsoft-research-publication",
+              "source-zheng-zhang-profile",
+              "source-zheng-zhang-name-record"
+            ],
+            "notes": {
+              "en": "The primary paper and Microsoft Research page list Zheng Zhang second. His researcher-controlled homepage lists SimMIM, the official code repository and his collaboration at Microsoft Research Asia; a conflicting OpenAlex ORCID aggregation was rejected as a same-name mismatch.",
+              "zh": "主论文与微软研究院页面第二位列出张拯。其个人学术主页列出 SimMIM、官方代码仓库及在微软亚洲研究院的合作关系；本人主页仓库的微软企业邮箱提交记录自署名“张拯”。OpenAlex 聚合到的冲突 ORCID 属于同名误配，未作为人物依据。"
+            }
+          },
+          "portraitSearch": {
+            "status": "searched-no-selected-asset",
+            "sourceUrl": "https://stupidzz.github.io/",
+            "imageUrl": "",
+            "reliability": "primary-identity-source",
+            "rights": "The homepage currently falls back to a generic graphic instead of a reliable person portrait, so it is not selected."
+          }
+        },
+        {
+          "name": {
+            "en": "Yue Cao",
+            "zh": "曹越"
+          },
+          "role": {
+            "en": "Co-first author of the SimMIM paper",
+            "zh": "SimMIM 论文共同第一作者"
+          },
+          "verification": {
+            "status": "confirmed",
+            "sourceIds": [
+              "source-benchcouncil-annual",
+              "source-cvf-paper-page",
+              "source-microsoft-research-publication",
+              "source-yue-cao-github"
+            ],
+            "notes": {
+              "en": "The primary paper and Microsoft Research page list Yue Cao third. His exact-name GitHub account contributes to the official Microsoft SimMIM repository, corroborating the account-work match.",
+              "zh": "主论文与微软研究院页面第三位列出曹越；其同名 GitHub 账号参与微软官方 SimMIM 仓库，进一步确认账号与成果的对应关系。"
+            }
+          },
+          "portraitSearch": {
+            "status": "selected-overview",
+            "sourceUrl": "http://yue-cao.me/",
+            "imageUrl": "http://yue-cao.me/assets/media/WechatIMG57.jpeg",
+            "reliability": "primary-identity-source",
+            "rights": "The personal homepage does not state redistribution rights. The portrait is used with attribution under the relaxed reference-image policy."
+          }
+        },
+        {
+          "name": {
+            "en": "Han Hu",
+            "zh": "胡瀚"
+          },
+          "role": {
+            "en": "Lead author of the SimMIM paper",
+            "zh": "SimMIM 论文主要作者"
+          },
+          "verification": {
+            "status": "confirmed",
+            "sourceIds": [
+              "source-benchcouncil-annual",
+              "source-cvf-paper-page",
+              "source-han-hu-profile"
+            ],
+            "notes": {
+              "en": "The paper lists Han Hu as an author, and his researcher-controlled homepage explicitly lists SimMIM, marks the equal-contribution group and states his Microsoft Research Asia role at the time.",
+              "zh": "论文作者表包含胡瀚；其个人学术主页明确列出 SimMIM、共同贡献标记，并说明当时在微软亚洲研究院任职。"
+            }
+          },
+          "portraitSearch": {
+            "status": "selected",
+            "sourceUrl": "https://ancientmooner.github.io/",
+            "imageUrl": "https://ancientmooner.github.io/assets/media/profile.jpg",
+            "reliability": "primary-identity-source",
+            "rights": "The personal homepage does not state redistribution rights; the image is retained as an attributed external reference and must be rechecked before external redistribution."
+          }
+        }
+      ],
+      "sourceOverrides": {
+        "source-openalex-record": {
+          "notes": {
+            "en": "Work-level bibliographic metadata used to verify the paper landing page and publication record. It is not used for person identity: the linked Zheng Zhang author entity is conflated with unrelated same-name researchers and an incorrect ORCID.",
+            "zh": "仅使用成果层书目元数据核对论文落地页与出版记录，不用于人物身份判断：其中关联的 Zheng Zhang 作者实体混合了无关同名研究者和错误 ORCID。"
+          }
+        }
+      },
+      "additionalSources": [
+        {
+          "id": "source-cvf-paper-page",
+          "type": "paper-page",
+          "label": {
+            "en": "Conference paper page",
+            "zh": "会议论文页面"
+          },
+          "title": {
+            "en": "SimMIM: A Simple Framework for Masked Image Modeling - CVPR 2022 Open Access",
+            "zh": "《SimMIM: A Simple Framework for Masked Image Modeling》CVPR 2022 开放论文页"
+          },
+          "authors": [
+            "Zhenda Xie",
+            "Zheng Zhang",
+            "Yue Cao",
+            "Yutong Lin",
+            "Jianmin Bao",
+            "Zhuliang Yao",
+            "Qi Dai",
+            "Han Hu"
+          ],
+          "year": 2022,
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Xie_SimMIM_A_Simple_Framework_for_Masked_Image_Modeling_CVPR_2022_paper.html",
+          "language": "en",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "notes": {
+            "en": "Primary conference record used to verify the author list, method components, ImageNet results, scaling claim and official code link.",
+            "zh": "用于核对作者表、方法组件、ImageNet 结果、规模扩展结论和官方代码链接的会议原始记录。"
+          }
+        },
+        {
+          "id": "source-microsoft-research-publication",
+          "type": "official-page",
+          "label": {
+            "en": "Institution page",
+            "zh": "机构页面"
+          },
+          "title": {
+            "en": "SimMIM: A Simple Framework for Masked Image Modeling - Microsoft Research",
+            "zh": "微软研究院：SimMIM 简洁掩码图像建模框架"
+          },
+          "url": "https://www.microsoft.com/en-us/research/publication/simmim-a-simple-framework-for-masked-image-modeling/",
+          "language": "en",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "notes": {
+            "en": "Official institution publication page listing all authors and summarizing random masking, raw-pixel regression, the lightweight head and scale results.",
+            "zh": "机构官方论文页面，列出全部作者并概述随机遮挡、原始像素回归、轻量预测头和规模扩展结果。"
+          }
+        },
+        {
+          "id": "source-implementation-repository",
+          "type": "code",
+          "label": {
+            "en": "Code",
+            "zh": "代码"
+          },
+          "title": {
+            "en": "Microsoft SimMIM implementation repository",
+            "zh": "微软 SimMIM 实现仓库"
+          },
+          "url": "https://github.com/microsoft/SimMIM",
+          "language": "en",
+          "purpose": "implementation",
+          "reliability": "primary",
+          "notes": {
+            "en": "Official repository linked by the paper and Microsoft Research page. Repository metadata identifies it as the official implementation and declares an MIT license for the code; profile images retain their own source status.",
+            "zh": "论文与微软研究院页面共同链接的官方仓库。仓库元数据说明其为官方实现，代码采用 MIT 许可证；人物头像仍按各自来源单独处理。"
+          }
+        },
+        {
+          "id": "source-zhenda-xie-github",
+          "type": "profile",
+          "label": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "title": {
+            "en": "Zhenda Xie GitHub profile",
+            "zh": "谢振达 GitHub 人物资料"
+          },
+          "url": "https://github.com/zdaxie",
+          "language": "en",
+          "purpose": "biography",
+          "reliability": "primary",
+          "notes": {
+            "en": "Exact-name account appearing in the official SimMIM repository contributor list. The current employer shown by the profile is not used to infer the 2022 affiliation, and its avatar is not selected because redistribution rights are unstated.",
+            "zh": "姓名精确匹配，并出现在官方 SimMIM 仓库贡献者列表中。账号当前雇主不用于推断 2022 年机构，头像因未声明再分发许可且事件已有首图而不采用。"
+          }
+        },
+        {
+          "id": "source-zheng-zhang-profile",
+          "type": "personal-page",
+          "label": {
+            "en": "Personal homepage",
+            "zh": "个人主页"
+          },
+          "title": {
+            "en": "Zheng Zhang academic homepage",
+            "zh": "张拯学术主页"
+          },
+          "url": "https://stupidzz.github.io/",
+          "language": "en",
+          "purpose": "biography",
+          "reliability": "primary",
+          "notes": {
+            "en": "Researcher-controlled page listing SimMIM, its official code and collaboration at Microsoft Research Asia. It is used instead of the conflicting OpenAlex ORCID aggregation, which resolves to a different same-name researcher. The homepage portrait is not selected because its redistribution rights are unstated and the event already has one portrait.",
+            "zh": "研究者本人维护的页面，列出 SimMIM、官方代码和微软亚洲研究院合作关系。该页面用于替代错误合并到同名研究者的 OpenAlex ORCID。主页肖像未声明再分发许可且事件已有一张人物图，因此不采用。"
+          }
+        },
+        {
+          "id": "source-zheng-zhang-name-record",
+          "type": "profile",
+          "label": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "title": {
+            "en": "Zheng Zhang self-authored Git identity record",
+            "zh": "张拯本人 Git 署名记录"
+          },
+          "url": "https://github.com/stupidZZ/stupidZZ.github.io/commit/e4b00a2768dfb5bbdab76dc6642da60a9edf467b",
+          "language": "zh",
+          "purpose": "biography",
+          "reliability": "primary",
+          "notes": {
+            "en": "A commit in the researcher-owned homepage repository self-identifies the author as 张拯 and uses his Microsoft corporate email. This primary account record is used to verify the Chinese-script display name.",
+            "zh": "研究者本人主页仓库中的提交以微软企业邮箱自署名“张拯”，用于核验中文显示名。"
+          }
+        },
+        {
+          "id": "source-yue-cao-github",
+          "type": "profile",
+          "label": {
+            "en": "Profile",
+            "zh": "人物资料"
+          },
+          "title": {
+            "en": "Yue Cao GitHub profile",
+            "zh": "曹越 GitHub 人物资料"
+          },
+          "url": "https://github.com/caoyue10",
+          "language": "en",
+          "purpose": "biography",
+          "reliability": "primary",
+          "notes": {
+            "en": "Exact-name account appearing in the official SimMIM repository contributor list. The current profile is not used to infer the 2022 affiliation, and its avatar is not selected because redistribution rights are unstated.",
+            "zh": "姓名精确匹配，并出现在官方 SimMIM 仓库贡献者列表中。当前账号资料不用于推断 2022 年机构，头像因未声明再分发许可且事件已有首图而不采用。"
+          }
+        },
+        {
+          "id": "source-han-hu-profile",
+          "type": "personal-page",
+          "label": {
+            "en": "Personal homepage",
+            "zh": "个人主页"
+          },
+          "title": {
+            "en": "Han Hu academic homepage",
+            "zh": "胡瀚学术主页"
+          },
+          "url": "https://ancientmooner.github.io/",
+          "language": "en",
+          "purpose": "biography",
+          "reliability": "primary",
+          "notes": {
+            "en": "Researcher-controlled page listing SimMIM, its equal-contribution marks, the official code and Han Hu's Microsoft Research Asia role at the time. It is also the source of the selected portrait; no redistribution license is stated.",
+            "zh": "研究者本人维护的页面，列出 SimMIM、共同贡献标记、官方代码及胡瀚当时的微软亚洲研究院经历。该页面也是所选肖像的来源，但未声明再分发许可。"
+          }
+        },
+        {
+          "id": "source-annual-002-simmim-portrait-yue-cao",
+          "type": "image-source",
+          "label": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "title": {
+            "zh": "曹越学术主页肖像",
+            "en": "Yue Cao academic homepage portrait"
+          },
+          "url": "http://yue-cao.me/",
+          "language": "und",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "notes": {
+            "en": "Source page for the supplementary image \"Yue Cao academic homepage\".",
+            "zh": "补充图片“曹越学术主页”的来源页面。"
+          }
+        },
+        {
+          "id": "source-simmim-official-teaser",
+          "type": "image-source",
+          "label": {
+            "en": "Image source",
+            "zh": "图片来源"
+          },
+          "title": {
+            "zh": "SimMIM 官方仓库介绍图",
+            "en": "Official SimMIM repository teaser"
+          },
+          "url": "https://github.com/microsoft/SimMIM",
+          "language": "und",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "notes": {
+            "en": "Source page for the supplementary image \"Microsoft SimMIM official repository\".",
+            "zh": "补充图片“微软 SimMIM 官方仓库”的来源页面。"
+          }
+        }
+      ],
+      "additionalClaims": [
+        {
+          "id": "claim-contributors-cross-verified",
+          "importance": "core",
+          "text": {
+            "en": "Zhenda Xie, Zheng Zhang, Yue Cao and Han Hu are listed by BenchCouncil in the same order as the paper's equal-contribution group; the CVF and Microsoft Research records contain all four names.",
+            "zh": "BenchCouncil 依次列出的谢振达、张拯、曹越和胡瀚对应论文的共同贡献作者组；CVF 与微软研究院记录均包含四人。"
+          },
+          "sourceIds": [
+            "source-benchcouncil-annual",
+            "source-cvf-paper-page",
+            "source-microsoft-research-publication",
+            "source-han-hu-profile",
+            "source-zheng-zhang-profile",
+            "source-zheng-zhang-name-record"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-simple-masked-modeling",
+          "importance": "core",
+          "text": {
+            "en": "SimMIM uses random masking with moderately large patches, direct regression of raw RGB pixel values and a lightweight linear prediction head, without requiring a discrete tokenizer or clustering target.",
+            "zh": "SimMIM 采用中等偏大的随机遮挡块、原始 RGB 像素值直接回归和轻量线性预测头，不需要离散分词器或聚类目标。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-page",
+            "source-microsoft-research-publication"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-scale-results",
+          "importance": "display",
+          "text": {
+            "en": "The paper reports 83.8% ImageNet-1K top-1 accuracy with ViT-B, 87.1% with the roughly 650-million-parameter SwinV2-H, and a 3-billion-parameter SwinV2-G trained with far less labeled data than the cited prior practice.",
+            "zh": "论文报告 ViT-B 在 ImageNet-1K 上达到 83.8% top-1，约 6.5 亿参数的 SwinV2-H 达到 87.1%，并以明显更少的标注数据训练 30 亿参数 SwinV2-G。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-page",
+            "source-microsoft-research-publication"
+          ],
+          "status": "verified"
+        }
+      ],
+      "commentarySections": [
+        {
+          "id": "historical-background",
+          "label": {
+            "en": "Historical Background",
+            "zh": "历史背景"
+          },
+          "html": {
+            "en": "Masked image modeling emerged as a way to bring self-supervised pretraining ideas from language models into computer vision, but early systems often introduced tokenizers, clustering targets or substantial decoder machinery. SimMIM tested whether those additions were essential and deliberately reduced the task to a small set of controllable design choices.",
+            "zh": "掩码图像建模把语言模型中的自监督预训练思路带入计算机视觉，但早期系统往往加入分词器、聚类目标或较重的解码结构。SimMIM 直接检验这些机制是否必要，并把任务压缩为少量可控设计选择。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-page",
+            "source-microsoft-research-publication"
+          ]
+        },
+        {
+          "id": "core-idea",
+          "label": {
+            "en": "Core Idea",
+            "zh": "核心思想"
+          },
+          "html": {
+            "en": "The input image is randomly masked with moderately large patches, and the visible content is processed by a standard vision backbone. A lightweight linear head predicts the raw RGB values of masked pixels, making the reconstruction target simple enough that representation quality can be studied without confounding tokenizer or decoder complexity.",
+            "zh": "输入图像先以中等偏大的图块随机遮挡，可见内容再交给标准视觉主干处理。轻量线性头直接预测被遮挡像素的原始 RGB 值，使研究者可以在不受复杂分词器或解码器干扰的情况下观察表征质量。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-page",
+            "source-microsoft-research-publication"
+          ]
+        },
+        {
+          "id": "long-term-legacy",
+          "label": {
+            "en": "Long-Term Legacy",
+            "zh": "长期影响"
+          },
+          "html": {
+            "en": "Experts generally treat SimMIM as evidence that strong masked-image pretraining does not require elaborate discrete targets or a heavy reconstruction stack. Its lasting value is methodological clarity: the simple recipe became a clean baseline for comparing masking strategy, target choice, model scale and data scale, while the open implementation made those comparisons easier to reproduce.",
+            "zh": "专家通常把 SimMIM 视为一项重要证据：强大的掩码图像预训练并不必然需要复杂离散目标或沉重重建模块。它的长期价值在于方法清晰，简洁方案成为比较遮挡策略、预测目标、模型规模和数据规模的干净基线，公开实现也提高了这些比较的可复现性。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-page",
+            "source-microsoft-research-publication",
+            "source-implementation-repository"
+          ]
+        }
+      ],
+      "visualModule": {
+        "type": "archiveLink",
+        "site": {
+          "en": "Microsoft Research publication",
+          "zh": "微软研究院论文页"
+        },
+        "title": {
+          "en": "SimMIM: A Simple Framework for Masked Image Modeling",
+          "zh": "《SimMIM: A Simple Framework for Masked Image Modeling》"
+        },
+        "description": {
+          "en": "The official institution page summarizes the simple masking recipe, raw-pixel target, lightweight head, ImageNet results and billion-parameter scaling experiment.",
+          "zh": "机构官方页面概述简洁遮挡方案、原始像素目标、轻量预测头、ImageNet 结果和十亿参数级扩展实验。"
+        },
+        "url": "https://www.microsoft.com/en-us/research/publication/simmim-a-simple-framework-for-masked-image-modeling/",
+        "source": "https://www.microsoft.com/en-us/research/publication/simmim-a-simple-framework-for-masked-image-modeling/",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw and does not copy the paper figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制论文图形。"
+        },
+        "usage": {
+          "en": "Technical and institutional evidence reference",
+          "zh": "技术与机构证据参考"
+        },
+        "action": {
+          "en": "Open Microsoft Research page",
+          "zh": "打开微软研究院页面"
+        }
+      },
+      "recordAsset": {
+        "caption": {
+          "en": "SimMIM masked image modeling path",
+          "zh": "SimMIM 掩码图像建模流程"
+        },
+        "subcaption": {
+          "en": "Original explainer of random masking, the encoder, a linear head and raw RGB pixel regression.",
+          "zh": "解释随机遮挡、编码器、线性预测头和原始 RGB 像素回归关系的原创图。"
+        },
+        "sourceIds": [
+          "source-cvf-paper-page",
+          "source-microsoft-research-publication"
+        ],
+        "sourceName": {
+          "en": "CVPR paper and Microsoft Research publication page",
+          "zh": "CVPR 论文与微软研究院论文页"
+        },
+        "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Xie_SimMIM_A_Simple_Framework_for_Masked_Image_Modeling_CVPR_2022_paper.html",
+        "displayUsage": {
+          "en": "Masked image modeling explainer",
+          "zh": "掩码图像建模解释图"
+        }
+      },
+      "supplementaryAssets": [
+        {
+          "id": "asset-annual-002-simmim-portrait-yue-cao",
+          "type": "image",
+          "path": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg",
+          "role": "portrait",
+          "caption": {
+            "zh": "曹越肖像",
+            "en": "Yue Cao portrait"
+          },
+          "subcaption": {
+            "en": "Co-first author of the SimMIM paper",
+            "zh": "SimMIM 论文共同第一作者"
+          },
+          "sourceId": "source-annual-002-simmim-portrait-yue-cao",
+          "sourceName": {
+            "en": "Yue Cao academic homepage",
+            "zh": "曹越学术主页"
+          },
+          "sourceUrl": "http://yue-cao.me/",
+          "rights": {
+            "status": "external-reference",
+            "license": {
+              "en": "No redistribution license is stated on the homepage; used with source attribution under the project's relaxed reference-image policy.",
+              "zh": "主页未声明再分发许可；依据项目放宽后的参考图片策略使用，并保留来源署名。"
+            },
+            "attribution": "Yue Cao"
+          },
+          "displayUsage": {
+            "en": "Verified contributor portrait and overview image",
+            "zh": "已核验的主要人物肖像与首图"
+          },
+          "usage": [
+            "variant:bench-council-ai100-2022-2023"
+          ],
+          "editable": false
+        },
+        {
+          "id": "asset-annual-002-simmim-official-teaser",
+          "type": "image",
+          "path": "resources/images/external/ai100-2022-simmim/official-teaser.jpg",
+          "role": "architecture-diagram",
+          "caption": {
+            "zh": "SimMIM 官方方法介绍图",
+            "en": "Official SimMIM method illustration"
+          },
+          "subcaption": {
+            "zh": "随机遮挡后的图块进入视觉编码器，再由单层预测头通过原始像素 L1 损失训练。",
+            "en": "Randomly masked patches pass through a vision encoder and a one-layer prediction head trained with raw-pixel L1 loss."
+          },
+          "sourceId": "source-simmim-official-teaser",
+          "sourceName": {
+            "en": "Microsoft SimMIM official repository",
+            "zh": "微软 SimMIM 官方仓库"
+          },
+          "sourceUrl": "https://github.com/microsoft/SimMIM",
+          "rights": {
+            "status": "external-reference",
+            "license": {
+              "en": "Official repository illustration; source attribution is retained. The repository's MIT license applies to code and does not separately state image rights.",
+              "zh": "官方仓库介绍图，展示时保留来源署名。仓库 MIT 许可针对代码，未单独声明图片权利。"
+            },
+            "attribution": "Microsoft SimMIM authors"
+          },
+          "displayUsage": {
+            "en": "Official method illustration",
+            "zh": "官方方法介绍资料"
+          },
+          "usage": [
+            "variant:bench-council-ai100-2022-2023"
+          ],
+          "editable": false
+        }
+      ],
+      "achievement": {
+        "method": {
+          "en": "Random masking with direct raw-pixel regression",
+          "zh": "随机遮挡与原始像素直接回归"
+        },
+        "artifact": {
+          "en": "A lightweight masked image pretraining framework",
+          "zh": "轻量掩码图像预训练框架"
+        },
+        "material": {
+          "en": "CVPR 2022 paper, Microsoft Research publication page and MIT-licensed implementation",
+          "zh": "CVPR 2022 论文、微软研究院论文页与 MIT 许可实现"
+        },
+        "demo": {
+          "en": "Follow a masked image through the encoder and linear head, then compare the simple raw-pixel target with the machinery SimMIM deliberately removes.",
+          "zh": "跟随被遮挡图像经过编码器与线性预测头，再比较原始像素目标和 SimMIM 主动移除的复杂机制。"
+        },
+        "keyConcepts": [
+          {
+            "label": {
+              "en": "Masking",
+              "zh": "遮挡策略"
+            },
+            "text": {
+              "en": "Random masks with moderately large patches",
+              "zh": "采用中等偏大图块的随机遮挡"
+            }
+          },
+          {
+            "label": {
+              "en": "Prediction Target",
+              "zh": "预测目标"
+            },
+            "text": {
+              "en": "Direct regression of raw RGB pixel values",
+              "zh": "直接回归原始 RGB 像素值"
+            }
+          },
+          {
+            "label": {
+              "en": "Prediction Head",
+              "zh": "预测头"
+            },
+            "text": {
+              "en": "A lightweight linear layer",
+              "zh": "轻量线性层"
+            }
+          }
+        ],
+        "demoSteps": [
+          {
+            "en": "Randomly hide image patches",
+            "zh": "随机隐藏图像块"
+          },
+          {
+            "en": "Encode the visible content",
+            "zh": "编码可见内容"
+          },
+          {
+            "en": "Predict masked RGB values with a linear head",
+            "zh": "用线性头预测被遮挡位置的 RGB 值"
+          },
+          {
+            "en": "Transfer the learned representation downstream",
+            "zh": "把学到的表征迁移到下游任务"
+          }
+        ],
+        "demoNotes": [
+          {
+            "label": {
+              "en": "Architecture cue",
+              "zh": "架构线索"
+            },
+            "text": {
+              "en": "The key design choice is subtraction: no discrete tokenizer, clustering target or heavy prediction decoder is required.",
+              "zh": "关键设计是做减法：不需要离散分词器、聚类目标或沉重预测解码器。"
+            }
+          },
+          {
+            "label": {
+              "en": "Interaction point",
+              "zh": "互动点"
+            },
+            "text": {
+              "en": "Toggle mentally between visible and masked patches, then trace exactly where the encoder stops and the lightweight reconstruction head begins.",
+              "zh": "在可见块与遮挡块之间切换观察，再追踪编码器结束和轻量重建头开始的位置。"
+            }
+          }
+        ],
+        "visualModules": [
+          {
+            "type": "archiveLink",
+            "site": {
+              "en": "Microsoft Research publication",
+              "zh": "微软研究院论文页"
+            },
+            "title": {
+              "en": "SimMIM: A Simple Framework for Masked Image Modeling",
+              "zh": "《SimMIM: A Simple Framework for Masked Image Modeling》"
+            },
+            "description": {
+              "en": "The official institution page summarizes the method, results and implementation link.",
+              "zh": "机构官方页面概述方法、实验结果和实现链接。"
+            },
+            "url": "https://www.microsoft.com/en-us/research/publication/simmim-a-simple-framework-for-masked-image-modeling/",
+            "source": "https://www.microsoft.com/en-us/research/publication/simmim-a-simple-framework-for-masked-image-modeling/",
+            "license": {
+              "en": "Reference link only; the local explainer is an original redraw.",
+              "zh": "仅作为参考链接；本地解释图为原创重绘。"
+            },
+            "usage": {
+              "en": "Technical and institutional evidence reference",
+              "zh": "技术与机构证据参考"
+            },
+            "action": {
+              "en": "Open Microsoft Research page",
+              "zh": "打开微软研究院页面"
+            }
+          }
+        ]
+      },
+      "quiz": {
+        "question": {
+          "en": "What does SimMIM's lightweight prediction head reconstruct at masked positions?",
+          "zh": "SimMIM 的轻量预测头在被遮挡位置重建什么？"
+        },
+        "options": [
+          {
+            "en": "Raw RGB pixel values",
+            "zh": "原始 RGB 像素值"
+          },
+          {
+            "en": "Only class labels",
+            "zh": "仅类别标签"
+          },
+          {
+            "en": "Text captions",
+            "zh": "文本描述"
+          },
+          {
+            "en": "3D camera poses",
+            "zh": "三维相机位姿"
+          }
+        ],
+        "answer": 0,
+        "explanation": {
+          "en": "SimMIM directly regresses the raw RGB values of masked pixels with a lightweight linear head.",
+          "zh": "SimMIM 使用轻量线性预测头直接回归被遮挡像素的原始 RGB 值。"
+        },
+        "sourceIds": [
+          "source-cvf-paper-page",
+          "source-microsoft-research-publication"
+        ]
+      },
+      "reviewNotes": {
+        "en": "Completed event-specific research on 2026-08-03. All four BenchCouncil contributors were confirmed against the primary paper and Microsoft Research page, with researcher-controlled profiles used for identity disambiguation. Han Hu's matching homepage portrait is the event's single person image; three other portrait candidates are documented but not selected. A same-name OpenAlex ORCID mismatch for Zheng Zhang was explicitly rejected.",
+        "zh": "于 2026-08-03 完成事件专项研究。四位 BenchCouncil 主要人物均通过主论文与微软研究院页面确认，并使用研究者本人资料消除同名歧义。胡瀚主页肖像作为本事件唯一人物图，另外三个人物图片候选仅记录而不采用；Zheng Zhang 的同名 OpenAlex ORCID 误配已明确排除。"
+      },
+      "assetIds": [
+        "asset-annual-002-simmim-portrait-yue-cao",
+        "asset-annual-002-simmim-official-teaser",
+        "asset-annual-002-simmim-portrait-han-hu",
+        "asset-annual-002-simmim-record"
+      ],
+      "overviewImageAssetId": "asset-annual-002-simmim-portrait-yue-cao"
+    },
+    "ai100-annual-2022-2023-003-scaling-vit": {
+      "status": "complete",
+      "officialOrder": 3,
+      "work": "Scaling ViT",
+      "visualKind": "scaling-vit",
+      "summary": {
+        "en": "A systematic study of how Vision Transformer performance changes with model size, training data and compute",
+        "zh": "系统研究视觉 Transformer 性能如何随模型规模、训练数据和算力共同变化"
+      },
+      "displaySummary": {
+        "en": "AI100 (2022-2023) · Vision Transformer scaling laws",
+        "zh": "AI100（2022-2023）· 视觉 Transformer 缩放规律"
+      },
+      "description": {
+        "en": "<p>Scaling ViT studied Vision Transformers from roughly 5 million to 2 billion parameters, datasets from 1 million to 3 billion training images, and compute budgets from below one to more than 10,000 TPUv3 core-days. The authors found a saturating power-law relationship along the performance-compute frontier and emphasized that model capacity and compute must be scaled together rather than enlarging the model in isolation.</p><p>The work also refined the large-scale ViT training recipe with separate weight decay for the prediction head and body, memory-saving pooling in place of the class token, and a modified Adafactor optimizer. Its ViT-G/14 model reported 90.45% ImageNet top-1 accuracy and 84.86% in 10-shot linear evaluation; BenchCouncil lists Xiaohua Zhai, Alexander Kolesnikov and Lucas Beyer as the main contributors and associates the work with Google in Switzerland.</p>",
+        "zh": "<p>Scaling ViT 研究了约 500 万到 20 亿参数的视觉 Transformer、100 万到 30 亿张训练图像的数据规模，以及不足 1 到超过 1 万 TPUv3 core-days 的算力预算。作者发现性能与算力前沿近似遵循逐渐饱和的幂律关系，并强调模型容量与算力必须协同扩展，不能只孤立地增大模型。</p><p>该工作还改进了大规模 ViT 训练方案，包括为预测头和模型主体设置不同的权重衰减、用更节省内存的池化替代 class token，以及采用修改后的 Adafactor 优化器。其 ViT-G/14 报告了 90.45% 的 ImageNet top-1 准确率和 84.86% 的 10-shot 线性评估结果；BenchCouncil 将翟晓华、亚历山大·科列斯尼科夫和卢卡斯·拜尔列为主要人物，并将成果关联到瑞士的 Google。</p>"
+      },
+      "people": [
+        {
+          "name": {
+            "en": "Xiaohua Zhai",
+            "zh": "翟晓华"
+          },
+          "role": {
+            "en": "Equal-contribution author and the first main contributor listed by BenchCouncil",
+            "zh": "论文共同贡献作者，BenchCouncil 列出的第一位主要人物"
+          },
+          "verification": {
+            "status": "confirmed",
+            "sourceIds": [
+              "source-benchcouncil-annual",
+              "source-cvf-paper-page",
+              "source-xiaohua-zhai-profile"
+            ],
+            "notes": {
+              "en": "BenchCouncil lists Xiaohua Zhai first. The CVF paper page marks her as the first author, and her researcher-controlled homepage publishes both the Chinese name 翟晓华 and the matching CVPR 2022 paper record.",
+              "zh": "BenchCouncil 首先列出翟晓华。CVF 论文页将其列为第一作者，其本人维护的主页同时发布中文名“翟晓华”和匹配的 CVPR 2022 论文记录。"
+            }
+          },
+          "portraitSearch": {
+            "status": "selected",
+            "sourceUrl": "https://sites.google.com/view/xzhai",
+            "imageUrl": "https://lh3.googleusercontent.com/sitesv/AG8ngQXsPUFayQ75RgfApNzoomnHKPr-4wRtC-VuAHEiMpx9VC6IA4OLLs8EWb3SNBbbKxHme3XZHjM7d55AsmVqTRFZluOdRW8A_IXw-oWFNtM_unT33zi4HZXpEmBNv6T8cMZQjSRym5AzpiBypLqebAEWwFW7pkZZiavZUDo7hbK_JPDOW5eb3mmCZh6ZWTzvk_f0KxgavHc4fTP6u3KdEEqFke8H-YiGzzLt1cSd=w1280",
+            "reliability": "primary-identity-source",
+            "rights": "The researcher-controlled homepage does not state redistribution rights; the local copy remains an attributed external reference."
+          }
+        },
+        {
+          "name": {
+            "en": "Alexander Kolesnikov",
+            "zh": "亚历山大·科列斯尼科夫"
+          },
+          "role": {
+            "en": "Equal-contribution author and a main contributor listed by BenchCouncil",
+            "zh": "论文共同贡献作者，BenchCouncil 列出的主要人物"
+          },
+          "verification": {
+            "status": "confirmed",
+            "sourceIds": [
+              "source-benchcouncil-annual",
+              "source-cvf-paper-page",
+              "source-xiaohua-zhai-profile",
+              "source-lucas-beyer-profile"
+            ],
+            "notes": {
+              "en": "The official paper and Xiaohua Zhai's publication list identify Alexander Kolesnikov as an equal-contribution author. Lucas Beyer's researcher-controlled homepage independently links Alexander Kolesnikov as a close Zürich collaborator.",
+              "zh": "官方论文与翟晓华的论文列表均将亚历山大·科列斯尼科夫标为共同贡献作者。卢卡斯·拜尔本人维护的主页还独立链接其为苏黎世团队的长期合作者。"
+            }
+          },
+          "portraitSearch": {
+            "status": "not-found",
+            "sourceUrl": "https://kolesnikov.ch/",
+            "reliability": "linked-primary-profile-unavailable",
+            "rights": "The linked personal domain did not resolve during review, so no portrait or usage terms could be verified."
+          }
+        },
+        {
+          "name": {
+            "en": "Lucas Beyer",
+            "zh": "卢卡斯·拜尔"
+          },
+          "role": {
+            "en": "Equal-contribution author and a main contributor listed by BenchCouncil",
+            "zh": "论文共同贡献作者，BenchCouncil 列出的主要人物"
+          },
+          "verification": {
+            "status": "confirmed",
+            "sourceIds": [
+              "source-benchcouncil-annual",
+              "source-cvf-paper-page",
+              "source-lucas-beyer-profile"
+            ],
+            "notes": {
+              "en": "The CVF record lists Lucas Beyer as a paper author. His researcher-controlled homepage and linked GitHub account confirm the same identity and his historical Google Brain/DeepMind Zürich affiliation.",
+              "zh": "CVF 论文记录列出卢卡斯·拜尔；其本人维护的主页及主页链接的 GitHub 账号确认了同一身份和其曾在 Google Brain/DeepMind 苏黎世团队任职的经历。"
+            }
+          },
+          "portraitSearch": {
+            "status": "candidate-not-selected",
+            "sourceUrl": "https://github.com/lucasb-eyer",
+            "imageUrl": "https://avatars.githubusercontent.com/u/1476029?v=4",
+            "reliability": "primary-account-source",
+            "rights": "GitHub does not state redistribution rights for the avatar, and the event already uses Xiaohua Zhai's portrait as its single person image."
+          }
+        }
+      ],
+      "sourceOverrides": {
+        "source-primary-record": {
+          "label": {
+            "en": "DOI page",
+            "zh": "DOI 页面"
+          },
+          "notes": {
+            "en": "IEEE DOI record for the CVPR 2022 paper associated with the exact BenchCouncil work title.",
+            "zh": "与 BenchCouncil 准确成果名称相对应的 CVPR 2022 论文 IEEE DOI 记录。"
+          }
+        },
+        "source-openalex-record": {
+          "notes": {
+            "en": "Secondary bibliographic index retained for cross-checking the work identity; author identity and technical claims rely on primary paper and researcher pages.",
+            "zh": "保留用于交叉核对成果身份的二级书目索引；人物身份和技术主张以主论文与研究者主页为准。"
+          }
+        }
+      },
+      "additionalSources": [
+        {
+          "id": "source-cvf-paper-page",
+          "type": "paper-page",
+          "label": {
+            "en": "Conference paper page",
+            "zh": "会议论文页面"
+          },
+          "title": {
+            "en": "Scaling Vision Transformers - CVPR 2022 Open Access",
+            "zh": "《Scaling Vision Transformers》CVPR 2022 开放论文页"
+          },
+          "authors": [
+            "Xiaohua Zhai",
+            "Alexander Kolesnikov",
+            "Neil Houlsby",
+            "Lucas Beyer"
+          ],
+          "year": 2022,
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhai_Scaling_Vision_Transformers_CVPR_2022_paper.html",
+          "language": "en",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "notes": {
+            "en": "Primary conference record used to verify the complete author list, abstract, 2-billion-parameter model, ImageNet and few-shot results, PDF and supplemental links.",
+            "zh": "用于核对完整作者表、摘要、20 亿参数模型、ImageNet 与少样本结果、PDF 和补充材料链接的会议原始记录。"
+          }
+        },
+        {
+          "id": "source-arxiv-paper",
+          "type": "paper-page",
+          "label": {
+            "en": "Preprint page",
+            "zh": "预印本页面"
+          },
+          "title": {
+            "en": "Scaling Vision Transformers - arXiv:2106.04560",
+            "zh": "《Scaling Vision Transformers》arXiv:2106.04560"
+          },
+          "authors": [
+            "Xiaohua Zhai",
+            "Alexander Kolesnikov",
+            "Neil Houlsby",
+            "Lucas Beyer"
+          ],
+          "year": 2022,
+          "url": "https://arxiv.org/abs/2106.04560",
+          "language": "en",
+          "purpose": "alternate-access",
+          "reliability": "primary",
+          "notes": {
+            "en": "Author-submitted record used to verify submission history, abstract and the stable downloadable manuscript identifier.",
+            "zh": "作者提交的预印本记录，用于核对提交历史、摘要和稳定的可下载论文标识。"
+          }
+        },
+        {
+          "id": "source-cvf-paper-pdf",
+          "type": "paper-file",
+          "label": {
+            "en": "Paper PDF",
+            "zh": "论文 PDF"
+          },
+          "title": {
+            "en": "Scaling Vision Transformers - accepted manuscript",
+            "zh": "Scaling Vision Transformers 会议接收稿 PDF"
+          },
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Zhai_Scaling_Vision_Transformers_CVPR_2022_paper.pdf",
+          "language": "en",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "notes": {
+            "en": "Full paper used to verify the experiment ranges, saturating power-law finding, training recipe, Google Research Brain Team Zürich affiliation, limitations and reported metrics.",
+            "zh": "论文全文，用于核对实验范围、逐渐饱和的幂律结论、训练方案、Google Research Brain Team Zürich 归属、局限性和报告指标。"
+          }
+        },
+        {
+          "id": "source-xiaohua-zhai-profile",
+          "type": "personal-page",
+          "label": {
+            "en": "Personal homepage",
+            "zh": "个人主页"
+          },
+          "title": {
+            "en": "Xiaohua Zhai academic homepage",
+            "zh": "翟晓华学术主页"
+          },
+          "url": "https://sites.google.com/view/xzhai",
+          "language": "en",
+          "purpose": "biography",
+          "reliability": "primary",
+          "notes": {
+            "en": "Researcher-controlled page displaying Xiaohua Zhai (翟晓华), listing Scaling Vision Transformers and its coauthors, and publishing the selected portrait. No redistribution license is stated for the portrait.",
+            "zh": "研究者本人维护的页面，显示 Xiaohua Zhai（翟晓华），列出《Scaling Vision Transformers》及其共同作者，并发布当前采用的肖像；页面未声明肖像再分发许可。"
+          }
+        },
+        {
+          "id": "source-lucas-beyer-profile",
+          "type": "personal-page",
+          "label": {
+            "en": "Personal homepage",
+            "zh": "个人主页"
+          },
+          "title": {
+            "en": "Lucas Beyer researcher homepage",
+            "zh": "卢卡斯·拜尔研究者主页"
+          },
+          "url": "https://lucasb.eyer.be/",
+          "language": "en",
+          "purpose": "biography",
+          "reliability": "primary",
+          "notes": {
+            "en": "Researcher-controlled page confirming Lucas Beyer's identity, historical Google Brain/DeepMind Zürich work, linked GitHub account, and direct links to Xiaohua Zhai and Alexander Kolesnikov.",
+            "zh": "研究者本人维护的页面，确认卢卡斯·拜尔的身份、曾在 Google Brain/DeepMind 苏黎世团队任职的经历、其 GitHub 账号，以及对翟晓华和亚历山大·科列斯尼科夫的直接链接。"
+          }
+        }
+      ],
+      "additionalClaims": [
+        {
+          "id": "claim-contributors-cross-verified",
+          "importance": "core",
+          "text": {
+            "en": "Xiaohua Zhai, Alexander Kolesnikov and Lucas Beyer, the three main contributors named by BenchCouncil, are all authors of the CVPR paper; the full paper author list additionally includes Neil Houlsby.",
+            "zh": "BenchCouncil 列出的三位主要人物翟晓华、亚历山大·科列斯尼科夫和卢卡斯·拜尔均为 CVPR 论文作者；完整论文作者表还包括尼尔·霍尔斯比。"
+          },
+          "sourceIds": [
+            "source-benchcouncil-annual",
+            "source-cvf-paper-page"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-scaling-range-and-frontier",
+          "importance": "core",
+          "text": {
+            "en": "The study spans models from about 5 million to 2 billion parameters, datasets from 1 million to 3 billion images, and compute from below one to over 10,000 TPUv3 core-days; its performance-compute frontier is approximated by a saturating power law.",
+            "zh": "研究覆盖约 500 万到 20 亿参数、100 万到 30 亿张图像，以及不足 1 到超过 1 万 TPUv3 core-days 的算力范围；性能与算力前沿可近似为逐渐饱和的幂律。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-pdf"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-training-recipe-and-results",
+          "importance": "display",
+          "text": {
+            "en": "The paper combines a memory-efficient ViT training recipe with ViT-G/14, reporting 90.45% ImageNet top-1 accuracy and 84.86% top-1 with 10 examples per class in linear evaluation.",
+            "zh": "论文把更节省内存的 ViT 训练方案用于 ViT-G/14，报告 90.45% 的 ImageNet top-1 准确率，以及每类 10 个样本线性评估下 84.86% 的 top-1 准确率。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-page",
+            "source-cvf-paper-pdf"
+          ],
+          "status": "verified"
+        }
+      ],
+      "commentarySections": [
+        {
+          "id": "historical-background",
+          "label": {
+            "en": "Historical Background",
+            "zh": "历史背景"
+          },
+          "html": {
+            "en": "After the original Vision Transformer showed that transformer encoders could compete with convolutional networks on image recognition, the next question was how ViT behaved when models, datasets and compute grew by orders of magnitude. Scaling ViT addressed that gap with a controlled family of experiments rather than assuming that language-model scaling observations would transfer unchanged to vision.",
+            "zh": "原始 Vision Transformer 证明 Transformer 编码器可以在图像识别上与卷积网络竞争后，下一个问题是当模型、数据集和算力跨数量级增长时，ViT 会如何变化。Scaling ViT 通过一组受控实验回答这一空白，而不是直接假设语言模型的缩放观察可以原样迁移到视觉领域。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-page",
+            "source-cvf-paper-pdf"
+          ]
+        },
+        {
+          "id": "core-idea",
+          "label": {
+            "en": "Core Idea",
+            "zh": "核心思想"
+          },
+          "html": {
+            "en": "The central result is a performance-compute frontier that is well approximated by a saturating power law when enough training data are available. Staying near that frontier requires scaling model capacity and compute together, while the revised head, pooling and optimizer choices make the largest ViT practical enough to fit and train on TPU hardware.",
+            "zh": "核心结果是：当训练数据充足时，性能与算力前沿可以由逐渐饱和的幂律较好近似。要保持接近这一前沿，模型容量和算力需要协同扩展；经过修改的预测头、池化方式和优化器则让最大规模 ViT 能够在 TPU 硬件上装入内存并完成训练。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-pdf"
+          ]
+        },
+        {
+          "id": "long-term-legacy",
+          "label": {
+            "en": "Long-Term Legacy",
+            "zh": "长期影响"
+          },
+          "html": {
+            "en": "Experts generally treat Scaling ViT as an early systematic scaling-law study for vision transformers and a practical bridge from the original ViT to billion-parameter vision backbones. Its conclusions are influential but deliberately bounded: the paper warns that the fitted relationships may not generalize beyond the studied scale or beyond the ViT family, making the work both a scaling guide and a model for stating empirical limits.",
+            "zh": "专家通常把 Scaling ViT 视为视觉 Transformer 早期具有系统性的缩放规律研究，也是从原始 ViT 走向十亿参数级视觉主干的重要实践桥梁。它的结论影响深远但边界明确：论文提醒这些拟合关系未必能推广到已研究规模之外或 ViT 家族之外，因此该工作既提供缩放指南，也示范了如何说明经验规律的适用限制。"
+          },
+          "sourceIds": [
+            "source-cvf-paper-pdf",
+            "source-cvf-paper-page"
+          ]
+        }
+      ],
+      "visualModule": {
+        "type": "archiveLink",
+        "site": {
+          "en": "CVPR Open Access",
+          "zh": "CVPR 开放论文库"
+        },
+        "title": {
+          "en": "Scaling Vision Transformers",
+          "zh": "《Scaling Vision Transformers》"
+        },
+        "description": {
+          "en": "The primary conference page provides the abstract, complete author list, accepted manuscript, supplement, arXiv record and reported headline results.",
+          "zh": "会议原始页面提供摘要、完整作者表、接收稿、补充材料、arXiv 记录和主要实验结果。"
+        },
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhai_Scaling_Vision_Transformers_CVPR_2022_paper.html",
+        "source": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhai_Scaling_Vision_Transformers_CVPR_2022_paper.html",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw and does not copy a paper figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制论文图形。"
+        },
+        "usage": {
+          "en": "Primary technical evidence reference",
+          "zh": "主要技术证据参考"
+        },
+        "action": {
+          "en": "Open CVPR paper page",
+          "zh": "打开 CVPR 论文页面"
+        }
+      },
+      "recordAsset": {
+        "caption": {
+          "en": "Vision Transformer scaling path",
+          "zh": "视觉 Transformer 缩放路径"
+        },
+        "subcaption": {
+          "en": "Original explainer connecting model size, training data, compute, the memory-efficient recipe and ViT-G results.",
+          "zh": "连接模型规模、训练数据、算力、节省内存的训练方案与 ViT-G 结果的原创解释图。"
+        },
+        "sourceIds": [
+          "source-cvf-paper-page",
+          "source-cvf-paper-pdf"
+        ],
+        "sourceName": {
+          "en": "CVPR paper page and accepted manuscript",
+          "zh": "CVPR 论文页面与会议接收稿"
+        },
+        "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhai_Scaling_Vision_Transformers_CVPR_2022_paper.html",
+        "displayUsage": {
+          "en": "Scaling-law and training-recipe explainer",
+          "zh": "缩放规律与训练方案解释图"
+        }
+      },
+      "achievement": {
+        "method": {
+          "en": "Coordinated ViT scaling and a memory-efficient training recipe",
+          "zh": "协同扩展 ViT 与节省内存的训练方案"
+        },
+        "artifact": {
+          "en": "ViT-G/14 with two billion parameters",
+          "zh": "20 亿参数的 ViT-G/14"
+        },
+        "material": {
+          "en": "CVPR paper, scaling experiments and accepted manuscript",
+          "zh": "CVPR 论文、缩放实验与会议接收稿"
+        },
+        "demo": {
+          "en": "Trace how model size, data and compute move together, then inspect the training changes that make the two-billion-parameter model feasible.",
+          "zh": "追踪模型规模、数据和算力如何协同增长，再查看让 20 亿参数模型可训练的方案改动。"
+        },
+        "keyConcepts": [
+          {
+            "label": {
+              "en": "Scale Range",
+              "zh": "规模范围"
+            },
+            "text": {
+              "en": "5M to 2B parameters; 1M to 3B training images",
+              "zh": "500 万到 20 亿参数；100 万到 30 亿张训练图像"
+            }
+          },
+          {
+            "label": {
+              "en": "Scaling Rule",
+              "zh": "缩放规律"
+            },
+            "text": {
+              "en": "Increase model capacity and compute together",
+              "zh": "模型容量与算力协同增长"
+            }
+          },
+          {
+            "label": {
+              "en": "Reported Result",
+              "zh": "报告结果"
+            },
+            "text": {
+              "en": "90.45% ImageNet top-1 with ViT-G/14",
+              "zh": "ViT-G/14 达到 90.45% ImageNet top-1"
+            }
+          }
+        ],
+        "demoSteps": [
+          {
+            "en": "Choose model capacity",
+            "zh": "选择模型容量"
+          },
+          {
+            "en": "Match data and compute",
+            "zh": "匹配数据与算力"
+          },
+          {
+            "en": "Apply the memory-efficient training recipe",
+            "zh": "应用节省内存的训练方案"
+          },
+          {
+            "en": "Evaluate full-data and few-shot transfer",
+            "zh": "评估全量数据与少样本迁移"
+          }
+        ],
+        "demoNotes": [
+          {
+            "label": {
+              "en": "Experimental cue",
+              "zh": "实验线索"
+            },
+            "text": {
+              "en": "The paper varies model size, dataset size and training duration across a broad compute range, then fits the Pareto frontier rather than comparing only one model pair.",
+              "zh": "论文在宽广算力范围内改变模型规模、数据集规模和训练时长，并拟合帕累托前沿，而不是只比较一对模型。"
+            }
+          },
+          {
+            "label": {
+              "en": "Interaction point",
+              "zh": "互动点"
+            },
+            "text": {
+              "en": "Follow the three scaling inputs from left to right and identify which training changes reduce memory before the ViT-G result appears.",
+              "zh": "从左到右追踪三个缩放输入，并找出在 ViT-G 结果出现前哪些训练改动降低了内存占用。"
+            }
+          }
+        ],
+        "visualModules": [
+          {
+            "type": "archiveLink",
+            "site": {
+              "en": "CVPR Open Access",
+              "zh": "CVPR 开放论文库"
+            },
+            "title": {
+              "en": "Scaling Vision Transformers",
+              "zh": "《Scaling Vision Transformers》"
+            },
+            "description": {
+              "en": "The conference page links the accepted paper and supplement and summarizes the two-billion-parameter ViT-G result.",
+              "zh": "会议页面链接接收稿与补充材料，并概述 20 亿参数 ViT-G 的主要结果。"
+            },
+            "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhai_Scaling_Vision_Transformers_CVPR_2022_paper.html",
+            "source": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhai_Scaling_Vision_Transformers_CVPR_2022_paper.html",
+            "license": {
+              "en": "Reference link only; the local explainer is an original redraw.",
+              "zh": "仅作为参考链接；本地解释图为原创重绘。"
+            },
+            "usage": {
+              "en": "Primary paper and experimental evidence reference",
+              "zh": "主论文与实验依据参考"
+            },
+            "action": {
+              "en": "Open CVPR paper page",
+              "zh": "打开 CVPR 论文页面"
+            }
+          }
+        ]
+      },
+      "quiz": {
+        "question": {
+          "en": "What must be increased together to stay near Scaling ViT's performance-compute frontier?",
+          "zh": "根据 Scaling ViT，要保持接近性能与算力前沿，哪些因素需要协同增长？"
+        },
+        "options": [
+          {
+            "en": "Model capacity and compute",
+            "zh": "模型容量与算力"
+          },
+          {
+            "en": "Only image resolution",
+            "zh": "只提高图像分辨率"
+          },
+          {
+            "en": "Only the number of class labels",
+            "zh": "只增加类别标签数量"
+          },
+          {
+            "en": "Only the prediction head",
+            "zh": "只扩大预测头"
+          }
+        ],
+        "answer": 0,
+        "explanation": {
+          "en": "Scaling ViT emphasizes that model capacity and compute should increase together.",
+          "zh": "Scaling ViT 强调模型容量与算力需要协同增长。"
+        },
+        "sourceIds": [
+          "source-cvf-paper-pdf"
+        ]
+      },
+      "reviewNotes": {
+        "en": "Completed event-specific research on 2026-08-03. The official BenchCouncil title, order, contributors, institution and country were preserved. All three listed contributors were confirmed against the primary paper and researcher-controlled pages; Neil Houlsby remains documented as the fourth paper author but is not inserted into the BenchCouncil contributor prefix. Xiaohua Zhai's homepage portrait is the single person image, Lucas Beyer's verified GitHub avatar is documented but not selected, and no reliable portrait was recovered for Alexander Kolesnikov.",
+        "zh": "于 2026-08-03 完成事件专项研究。保留 BenchCouncil 官方标题、顺序、主要人物、机构和国家字段。三位官方主要人物均通过主论文与研究者本人页面确认；尼尔·霍尔斯比作为论文第四位作者保留在资料中，但不插入 BenchCouncil 人物前缀。翟晓华主页肖像作为唯一人物图，卢卡斯·拜尔已核验的 GitHub 头像仅记录而不采用，亚历山大·科列斯尼科夫未找到可可靠采用的肖像。"
+      }
+    }
+  }
+}

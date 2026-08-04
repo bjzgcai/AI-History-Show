@@ -182,7 +182,7 @@ console.log('PASS runtime figure avatars are explicit local files');
 const compiledArchive = compileArchive(path.join(__dirname, '..'));
 assert.equal(compiledArchive.source, 'archive');
 assert.equal(compiledArchive.errors.length, 0);
-assert.equal(compiledArchive.milestones.length, 294);
+assert.equal(compiledArchive.milestones.length, 314);
 assert.ok(compiledArchive.milestones.every((milestone) => milestone.sourceKind === 'archive'));
 assert.deepEqual(
     new Set(compiledArchive.milestones.map((milestone) => milestone.id)).size,
@@ -224,7 +224,7 @@ for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'e
 }
 console.log('PASS storyline labels have one Archive authority');
 
-assert.equal(milestones.length, 294, 'Archive runtime should contain all five storylines and 294 milestones');
+assert.equal(milestones.length, 314, 'Archive runtime should contain all six storylines and 314 milestones');
 const annualAi100Milestones = milestones.filter(
     (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100-2022-2023'
 );
@@ -232,6 +232,15 @@ assert.equal(annualAi100Milestones.length, 120, 'Archive runtime should contain 
 assert.equal(annualAi100Milestones[0].title.en, 'Swin Transformer V2');
 assert.equal(annualAi100Milestones[119].title.en, 'OSTrack');
 console.log('PASS annual AI100 storyline preserves the official 120-row boundary');
+const annualAi100Highlights = milestones.filter(
+    (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100-2022-2023-highlights'
+);
+assert.equal(annualAi100Highlights.length, 20, 'Archive runtime should contain all 20 annual AI100 highlights');
+assert.ok(
+    annualAi100Highlights.some((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-057-claude'),
+    'annual AI100 highlights should contain Claude'
+);
+console.log('PASS annual AI100 highlights preserve the curated boundary');
 const ai100AlphaFold = milestones.find(
     (milestone) =>
         milestone.archiveEventId === '2020-alphafold' &&

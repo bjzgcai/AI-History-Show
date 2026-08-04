@@ -83,5 +83,160 @@
       "en": "Exact contributor-name match. The image is published on the researcher's personal website. Reliability: primary-identity-source. Usage note: The profile page does not state redistribution rights; retain the source note and recheck before external redistribution.",
       "zh": "人物姓名精确匹配，图片发布于研究者个人网站。 可靠性：primary-identity-source。使用备注：个人主页未声明再分发许可；必须保留来源备注，对外再分发前需再次核验。"
     }
+  },
+  {
+    "id": "source-cvf-paper-page",
+    "type": "paper-page",
+    "label": {
+      "en": "Conference paper page",
+      "zh": "会议论文页面"
+    },
+    "title": {
+      "en": "Swin Transformer V2: Scaling Up Capacity and Resolution - CVPR 2022 Open Access",
+      "zh": "《Swin Transformer V2: Scaling Up Capacity and Resolution》CVPR 2022 开放论文页"
+    },
+    "authors": [
+      "Ze Liu",
+      "Han Hu",
+      "Yutong Lin",
+      "Zhuliang Yao",
+      "Zhenda Xie",
+      "Yixuan Wei",
+      "Jia Ning",
+      "Yue Cao",
+      "Zheng Zhang",
+      "Li Dong",
+      "Furu Wei",
+      "Baining Guo"
+    ],
+    "year": 2022,
+    "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Liu_Swin_Transformer_V2_Scaling_Up_Capacity_and_Resolution_CVPR_2022_paper.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary conference record used to verify the full author list, abstract, reported scale, techniques, benchmarks and implementation link.",
+      "zh": "用于核对完整作者表、摘要、模型规模、技术方法、评测结果和实现链接的会议原始记录。"
+    }
+  },
+  {
+    "id": "source-microsoft-research-publication",
+    "type": "official-page",
+    "label": {
+      "en": "Institution page",
+      "zh": "机构页面"
+    },
+    "title": {
+      "en": "Swin Transformer V2: Scaling Up Capacity and Resolution - Microsoft Research",
+      "zh": "微软研究院：Swin Transformer V2 扩展模型容量与分辨率"
+    },
+    "url": "https://www.microsoft.com/en-us/research/publication/swin-transformer-v2-scaling-up-capacity-and-resolution/",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official institution publication page. It explains the three scaling problems, the three corresponding techniques, the 3-billion-parameter model, 1536 x 1536 inputs, four benchmark families and the linked implementation.",
+      "zh": "机构官方论文页面，说明三类扩展问题及对应方法、30 亿参数模型、1536 x 1536 输入、四类评测任务和实现入口。"
+    }
+  },
+  {
+    "id": "source-implementation-repository",
+    "type": "code",
+    "label": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "title": {
+      "en": "Microsoft Swin Transformer implementation repository",
+      "zh": "微软 Swin Transformer 实现仓库"
+    },
+    "url": "https://github.com/microsoft/Swin-Transformer",
+    "language": "en",
+    "purpose": "implementation",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official repository linked from the CVF and Microsoft Research publication pages; used to confirm that implementation materials were publicly released.",
+      "zh": "CVF 与微软研究院论文页面共同链接的官方仓库，用于确认实现材料已公开发布。"
+    }
+  },
+  {
+    "id": "source-ze-liu-profile",
+    "type": "personal-page",
+    "label": {
+      "en": "Personal homepage",
+      "zh": "个人主页"
+    },
+    "title": {
+      "en": "Ze Liu academic homepage",
+      "zh": "刘泽学术主页"
+    },
+    "url": "https://zeliu98.github.io/",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "Researcher-controlled identity source used to match Ze Liu to the paper and portrait. The page does not state a redistribution license for the portrait.",
+      "zh": "由研究者本人维护的身份来源，用于匹配刘泽、论文和肖像；页面未声明肖像的再分发许可。"
+    }
+  },
+  {
+    "id": "source-han-hu-profile",
+    "type": "personal-page",
+    "label": {
+      "en": "Personal homepage",
+      "zh": "个人主页"
+    },
+    "title": {
+      "en": "Han Hu academic homepage",
+      "zh": "胡瀚学术主页"
+    },
+    "url": "https://ancientmooner.github.io/",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "Researcher-controlled page listing Swin Transformer V2 and Han Hu's Microsoft Research Asia role at the time. It contains a matching portrait, but no redistribution license is stated; the portrait is recorded as a candidate and is not displayed.",
+      "zh": "研究者本人维护的页面，列出 Swin Transformer V2，并说明胡瀚当时在微软亚洲研究院任职。页面包含匹配肖像，但未声明再分发许可，因此仅记录为候选而不展示。"
+    }
+  },
+  {
+    "id": "source-annual-001-swin-transformer-v2-portrait-han-hu",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "zh": "胡瀚学术主页肖像",
+      "en": "Han Hu academic homepage portrait"
+    },
+    "url": "https://ancientmooner.github.io/",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Source page for the supplementary image \"Han Hu academic homepage\".",
+      "zh": "补充图片“胡瀚学术主页”的来源页面。"
+    }
+  },
+  {
+    "id": "source-swin-v2-paper-figure",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "zh": "Swin Transformer V1 与 V2 模块对比图",
+      "en": "Swin Transformer V1 and V2 block comparison"
+    },
+    "url": "https://arxiv.org/abs/2111.09883",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Source page for the supplementary image \"Swin Transformer V2 arXiv source package\".",
+      "zh": "补充图片“Swin Transformer V2 arXiv 源文件包”的来源页面。"
+    }
   }
 ]

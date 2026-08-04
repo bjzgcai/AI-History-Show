@@ -12,16 +12,24 @@
     },
     "authors": [
       "Roman Suvorov",
+      "Elizaveta Logacheva",
+      "Anton Mashikhin",
+      "Anastasia Remizova",
+      "Arsenii Ashukha",
+      "Aleksei Silvestrov",
+      "Naejin Kong",
+      "Harshith Goka",
+      "Kiwoong Park",
       "Victor Lempitsky"
     ],
     "year": 2022,
-    "url": "https://doi.org/10.1109/wacv51458.2022.00323",
+    "url": "https://openaccess.thecvf.com/content/WACV2022/html/Suvorov_Resolution-Robust_Large_Mask_Inpainting_With_Fourier_Convolutions_WACV_2022_paper.html",
     "language": "en",
     "purpose": "core-evidence",
     "reliability": "primary",
     "notes": {
-      "en": "Publication or official work page resolved from the exact title in the BenchCouncil annual table.",
-      "zh": "依据 BenchCouncil 年度表中的准确标题解析出的论文或官方项目页面。"
+      "en": "Primary WACV 2022 record for the exact paper. It verifies the complete author list, publication venue and year, abstract, open-access PDF, and links to the arXiv version; the paper source verifies the author affiliations and correspondence note.",
+      "zh": "与该论文精确匹配的 WACV 2022 主记录，用于核验完整作者列表、发表会议与年份、摘要、开放获取 PDF 和 arXiv 链接；论文源文件还核验了作者机构与通讯联系人说明。"
     }
   },
   {
@@ -32,16 +40,16 @@
       "zh": "论文索引"
     },
     "title": {
-      "en": "OpenAlex record for Resolution-robust Large Mask Inpainting with Fourier Convolutions",
-      "zh": "Resolution-robust Large Mask Inpainting with Fourier Convolutions 的 OpenAlex 文献记录"
+      "en": "OpenAlex work and author records for LaMa",
+      "zh": "LaMa 的 OpenAlex 论文与作者记录"
     },
     "url": "https://openalex.org/W3199003182",
     "language": "en",
     "purpose": "bibliographic-verification",
     "reliability": "secondary",
     "notes": {
-      "en": "Bibliographic metadata used to verify the publication year and landing page.",
-      "zh": "用于核对出版年份与落地页面的书目元数据。"
+      "en": "Secondary bibliographic verification for the DOI, 2022 publication year, full authorship, Roman Suvorov's Samsung AI Center Moscow affiliation, and Victor Lempitsky's Samsung/Skoltech affiliations and ORCID.",
+      "zh": "用于辅助核验 DOI、2022 年发表年份、完整作者列表、罗曼·苏沃洛夫的三星莫斯科 AI 中心机构，以及维克托·列姆皮茨基的三星/Skoltech 机构与 ORCID。"
     }
   },
   {
@@ -60,8 +68,68 @@
     "purpose": "core-evidence",
     "reliability": "primary",
     "notes": {
-      "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
-      "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+      "en": "Primary authority for row 6, the exact work and publication titles, citation value 305, the contributor prefix “Roman Suvorov, Victor Lempitsky”, and the aggregate institution and country fields.",
+      "zh": "第 6 行、准确成果与论文标题、引用数 305、人物前缀“Roman Suvorov, Victor Lempitsky”以及机构和国家聚合字段的主要权威来源。"
+    }
+  },
+  {
+    "id": "source-arxiv-fulltext",
+    "type": "paper",
+    "label": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "title": {
+      "en": "arXiv: Resolution-robust Large Mask Inpainting with Fourier Convolutions",
+      "zh": "《Resolution-robust Large Mask Inpainting with Fourier Convolutions》"
+    },
+    "url": "https://arxiv.org/abs/2109.07161",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Author-posted full paper under CC BY 4.0. It verifies the three LaMa components, the complete author order, affiliations, correspondence note, submission history, and WACV 2022 status.",
+      "zh": "作者提交并以 CC BY 4.0 发布的论文全文，用于核验 LaMa 的三个组成部分、完整作者顺序、机构、通讯联系人说明、提交历史和 WACV 2022 状态。"
+    }
+  },
+  {
+    "id": "source-lama-project",
+    "type": "project-page",
+    "label": {
+      "en": "Project page",
+      "zh": "项目页面"
+    },
+    "title": {
+      "en": "LaMa project page",
+      "zh": "LaMa 项目页面"
+    },
+    "url": "https://advimman.github.io/lama-project/",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "The project page lists the complete author team, links the paper and code, explains the image-wide receptive field and resolution generalization, and does not provide personal portraits for the two BenchCouncil contributors.",
+      "zh": "项目页列出完整作者团队，链接论文与代码，并解释全图感受野和分辨率泛化；该页没有提供两位 BenchCouncil 主要人物的个人肖像。"
+    }
+  },
+  {
+    "id": "source-lama-code",
+    "type": "code",
+    "label": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "title": {
+      "en": "advimman/lama",
+      "zh": "advimman/lama 代码仓库"
+    },
+    "url": "https://github.com/advimman/lama",
+    "language": "en",
+    "purpose": "implementation",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official implementation linked from the paper and project page; the repository is Apache-2.0 licensed. Its owner is the Image Manipulation organization, so the organization avatar was rejected as a portrait of Roman Suvorov.",
+      "zh": "论文与项目页链接的官方实现，仓库采用 Apache-2.0 许可。仓库所有者是 Image Manipulation 组织，因此其组织头像不能作为罗曼·苏沃洛夫肖像。"
     }
   }
 ]

@@ -3,35 +3,35 @@
     "id": "ai100-annual-2022-2023-058-chatgpt-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to ChatGPT?",
-      "zh": "BenchCouncil 年度表把 ChatGPT 归入哪个领域？"
+      "en": "What made ChatGPT distinct as a public experience in 2022?",
+      "zh": "2022 年 ChatGPT 作为公众体验最突出的特点是什么？"
     },
     "options": [
       {
-        "en": "LLM",
-        "zh": "大语言模型"
+        "en": "A continuing conversational interface",
+        "zh": "可持续追问的对话界面"
       },
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "A spreadsheet-only interface",
+        "zh": "只能使用电子表格的界面"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "A speech recognizer with no text output",
+        "zh": "没有文字输出的语音识别器"
       },
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "A robot controller requiring hardware",
+        "zh": "必须连接硬件的机器人控制器"
       }
     ],
-    "answer": 0,
     "explanation": {
-      "en": "ChatGPT appears in the LLM area of the official annual table.",
-      "zh": "ChatGPT 位于官方年度表的“大语言模型”领域。"
+      "en": "ChatGPT exposed an instruction-following model through an accessible interface that retained conversational context.",
+      "zh": "ChatGPT 通过易用界面提供指令遵循模型，并保留对话上下文。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-primary-record"
     ],
+    "answer": 0,
     "assetIds": [
       "asset-annual-058-chatgpt-record"
     ]

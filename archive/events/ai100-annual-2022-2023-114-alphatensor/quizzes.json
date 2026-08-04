@@ -3,35 +3,36 @@
     "id": "ai100-annual-2022-2023-114-alphatensor-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to AlphaTensor?",
-      "zh": "BenchCouncil 年度表把 AlphaTensor 归入哪个领域？"
+      "en": "How does AlphaTensor represent matrix multiplication?",
+      "zh": "AlphaTensor 如何表示矩阵乘法问题？"
     },
     "options": [
       {
-        "en": "AI4Others",
-        "zh": "AI 其他应用"
+        "en": "As a tensor-decomposition game",
+        "zh": "表示为张量分解游戏"
       },
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "As speech transcription",
+        "zh": "表示为语音转写"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "As image captioning",
+        "zh": "表示为图像描述"
       },
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "As web search ranking",
+        "zh": "表示为网页搜索排序"
       }
     ],
-    "answer": 0,
     "explanation": {
-      "en": "AlphaTensor appears in the AI4Others area of the official annual table.",
-      "zh": "AlphaTensor 位于官方年度表的“AI 其他应用”领域。"
+      "en": "The agent searches for rank-one tensor updates that decompose the matrix multiplication tensor.",
+      "zh": "智能体搜索秩一张量更新，以分解矩阵乘法张量。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-primary-record",
+      "source-alphatensor-deepmind"
     ],
+    "answer": 0,
     "assetIds": [
       "asset-annual-114-alphatensor-record"
     ]

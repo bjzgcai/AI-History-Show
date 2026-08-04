@@ -7,12 +7,12 @@
     "zh": "RepLKNet"
   },
   "displaySummary": {
-    "en": "AI100 (2022-2023) · Vision",
-    "zh": "AI100（2022-2023）· 视觉"
+    "en": "Large-kernel CNN · Structural re-parameterization",
+    "zh": "大核 CNN · 结构重参数化"
   },
   "displayDescription": {
-    "en": "<p>BenchCouncil lists RepLKNet in the Vision area of its AI100 (2022-2023) annual table. It associates the work with the publication “Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs”. The page names Xiaohan Ding,Xiangyu Zhang as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“视觉”领域列出 RepLKNet。该条目关联论文《Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs》。页面把 Xiaohan Ding（官方页拼写）、张祥雨 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>BenchCouncil lists RepLKNet as row 4 in the Vision area of its AI100 (2022-2023) annual table, preserving Xiaohan Ding and Xiangyu Zhang as the official contributor prefix. The associated CVPR 2022 paper asks whether modern CNNs can recover global context by using a few very large kernels instead of repeatedly stacking small ones.</p><p>RepLKNet uses re-parameterized large depth-wise convolutions with kernels as large as 31x31, then merges the training-time branches into a simpler deployment path. The paper reports competitive ImageNet and ADE20K results and finds that large-kernel CNNs have larger effective receptive fields and stronger shape bias than small-kernel counterparts.</p>",
+    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表视觉领域第 4 行列出 RepLKNet，并把丁霄汉、张祥雨作为官方主要人物前缀保留。关联的 CVPR 2022 论文重新提出一个基础问题：现代 CNN 能否通过少量超大卷积核获得更广的上下文，而不是反复堆叠小卷积核。</p><p>RepLKNet 使用最大 31×31 的重参数化大核深度卷积，并把训练期的多分支结构合并为更简单的部署路径。论文报告了有竞争力的 ImageNet 与 ADE20K 结果，同时发现大核 CNN 相比小核模型具有更大的有效感受野和更强的形状偏置。</p>"
   },
   "emphasis": [
     "benchcouncil-annual-2022-2023",
@@ -23,30 +23,30 @@
     {
       "type": "archiveLink",
       "site": {
-        "en": "Primary publication",
-        "zh": "主论文"
+        "en": "Official PyTorch repository",
+        "zh": "官方 PyTorch 仓库"
       },
       "title": {
-        "en": "Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs",
-        "zh": "《Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs》"
+        "en": "RepLKNet models and pretrained weights",
+        "zh": "RepLKNet 模型与预训练权重"
       },
       "description": {
-        "en": "Publication associated with this work by the BenchCouncil annual table.",
-        "zh": "BenchCouncil 年度表为该成果关联的论文。"
+        "en": "The first author's official implementation provides RepLKNet model definitions, pretrained weights and ImageNet evaluation materials.",
+        "zh": "第一作者维护的官方实现提供 RepLKNet 模型定义、预训练权重和 ImageNet 评估材料。"
       },
-      "url": "https://doi.org/10.48550/arxiv.2203.06717",
-      "source": "https://doi.org/10.48550/arxiv.2203.06717",
+      "url": "https://github.com/DingXiaoH/RepLKNet-pytorch",
+      "source": "https://github.com/DingXiaoH/RepLKNet-pytorch",
       "license": {
-        "en": "Reference link only; local visuals are original redraws.",
-        "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+        "en": "Repository code is released under the MIT License; the local explainer is an original redraw.",
+        "zh": "仓库代码采用 MIT License；本地解释图为原创重绘。"
       },
       "usage": {
-        "en": "Publication and evidence reference",
-        "zh": "论文与证据参考"
+        "en": "Implementation and model reference",
+        "zh": "实现与模型参考"
       },
       "action": {
-        "en": "Open publication",
-        "zh": "打开论文"
+        "en": "Open official repository",
+        "zh": "打开官方仓库"
       }
     }
   ],
@@ -57,12 +57,20 @@
   "sourceIds": [
     "source-primary-record",
     "source-openalex-record",
-    "source-benchcouncil-annual"
+    "source-benchcouncil-annual",
+    "source-arxiv-paper",
+    "source-official-pytorch-repository",
+    "source-xiaohan-ding-github",
+    "source-xiaohan-ding-personal-blog",
+    "source-xiangyu-zhang-biography"
   ],
   "claimIds": [
     "claim-annual-membership",
     "claim-publication-record",
-    "claim-contributor-record"
+    "claim-contributor-record",
+    "claim-replknet-contributors-cross-verified",
+    "claim-replknet-large-kernel-design",
+    "claim-replknet-results-and-analysis"
   ],
   "quizId": "ai100-annual-2022-2023-004-replknet-quiz-1",
   "commentarySections": [
@@ -73,11 +81,12 @@
         "zh": "历史背景"
       },
       "html": {
-        "en": "BenchCouncil published this row as part of its AI100 (2022-2023) annual selection in the Vision area. The annual list captures a time-bounded view of prominent recent work rather than the membership of the long-term AI100 table.",
-        "zh": "BenchCouncil 把该行发布在 AI100（2022-2023）年度入选表的“视觉”领域中。年度表记录的是当时对近期代表性工作的阶段性观察，不等同于长期 AI100 主表成员。"
+        "en": "Modern CNN design had converged on stacks of small kernels, while vision transformers renewed interest in obtaining broad spatial context. RepLKNet revisited the largely abandoned large-kernel path and asked whether a carefully engineered CNN could recover transformer-like context without abandoning convolution.",
+        "zh": "现代 CNN 设计曾逐渐收敛到反复堆叠小卷积核，而视觉 Transformer 的兴起重新凸显了广域空间上下文的重要性。RepLKNet 回到一度被放弃的大卷积核路线，探索精心设计的 CNN 能否在保留卷积的同时获得类似 Transformer 的上下文范围。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-primary-record",
+        "source-arxiv-paper"
       ]
     },
     {
@@ -87,12 +96,13 @@
         "zh": "核心思想"
       },
       "html": {
-        "en": "The official work name is RepLKNet, linked by the table to “Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs”. Xiaohan Ding,Xiangyu Zhang are preserved in the same order as the Main Contributors cell. The institution field is BNRist, Tsinghua University, MEGVII, Aberystwyth University.",
-        "zh": "官方成果名称为 RepLKNet，表格将其关联到论文《Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs》。Xiaohan Ding（官方页拼写）、张祥雨 按“主要人物”单元格中的相同顺序显示。官方英文拼写与顺序保存在年度记录中，机构字段为 BNRist、清华大学、MEGVII、Aberystwyth University。"
+        "en": "RepLKNet uses large depth-wise convolutions, reaching 31x31 kernels, and applies structural re-parameterization so training-time branches can be merged for deployment. The larger kernels expand the effective receptive field while the depth-wise form and branch fusion keep the design practical for image classification and dense prediction.",
+        "zh": "RepLKNet 使用最大 31×31 的大核深度卷积，并通过结构重参数化把训练期分支合并为部署结构。大卷积核扩大有效感受野，深度卷积与分支融合则让这一设计能够实际用于图像分类和稠密预测任务。"
       },
       "sourceIds": [
         "source-primary-record",
-        "source-benchcouncil-annual"
+        "source-arxiv-paper",
+        "source-official-pytorch-repository"
       ]
     },
     {
@@ -102,11 +112,13 @@
         "zh": "长期影响"
       },
       "html": {
-        "en": "Experts should treat this record as evidence of BenchCouncil's 2022-2023 annual assessment, not as a permanent consensus ranking. Its lasting archival value is the exact preservation of the work name, publication link, contributor field, institution, country, citation value, and source order.",
-        "zh": "专家应把本记录视为 BenchCouncil 对 2022-2023 年度成果的阶段性评价证据，而不是永久共识排名。它的长期档案价值在于准确保留成果名称、论文线索、人物字段、机构、国家、引用数与来源顺序。"
+        "en": "Experts generally treat RepLKNet as an important demonstration that convolutional networks still had underexplored architectural scale, especially in kernel size and effective receptive field. Its longer legacy lies in reopening large-kernel CNN research and influencing later designs that combine convolutional inductive bias with the scale and task generality associated with transformers.",
+        "zh": "专家通常把 RepLKNet 视为一个重要证明：卷积网络在卷积核尺寸和有效感受野等架构尺度上仍有未充分探索的空间。它的长期影响在于重新推动大核 CNN 研究，并影响后来把卷积归纳偏置与 Transformer 式规模化、任务通用性结合起来的设计。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-primary-record",
+        "source-arxiv-paper",
+        "source-official-pytorch-repository"
       ]
     }
   ],
@@ -118,11 +130,11 @@
     {
       "name": {
         "en": "Xiaohan Ding",
-        "zh": "Xiaohan Ding（官方页拼写）"
+        "zh": "丁霄汉"
       },
       "role": {
-        "en": "Main contributor for RepLKNet in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 RepLKNet 主要人物"
+        "en": "First author and the first main contributor listed by BenchCouncil",
+        "zh": "论文第一作者，BenchCouncil 列出的第一位主要人物"
       },
       "figureType": "person",
       "avatar": ""
@@ -133,8 +145,8 @@
         "zh": "张祥雨"
       },
       "role": {
-        "en": "Main contributor for RepLKNet in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 RepLKNet 主要人物"
+        "en": "Co-author and the second main contributor listed by BenchCouncil",
+        "zh": "论文共同作者，BenchCouncil 列出的第二位主要人物"
       },
       "figureType": "person",
       "avatar": ""
@@ -152,14 +164,14 @@
     },
     "workAuthors": {
       "en": "Xiaohan Ding,Xiangyu Zhang",
-      "zh": "Xiaohan Ding（官方页拼写）、张祥雨"
+      "zh": "丁霄汉、张祥雨"
     },
     "sourceLabel": "",
-    "sourceUrl": "https://doi.org/10.48550/arxiv.2203.06717"
+    "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Ding_Scaling_Up_Your_Kernels_to_31x31_Revisiting_Large_Kernel_Design_CVPR_2022_paper.html"
   },
   "quotePage": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry",
-    "zh": "BenchCouncil AI100（2022-2023）年度条目"
+    "en": "Primary publication record",
+    "zh": "原始论文记录"
   },
   "quoteAttribution": {
     "en": "Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs",
@@ -171,50 +183,50 @@
       "zh": "视觉"
     },
     "method": {
-      "en": "Annual selection record",
-      "zh": "年度入选记录"
+      "en": "Re-parameterized large-kernel CNN",
+      "zh": "重参数化大核 CNN"
     },
     "artifact": {
       "en": "RepLKNet",
       "zh": "RepLKNet"
     },
     "material": {
-      "en": "Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs",
-      "zh": "《Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs》与官方年度行"
+      "en": "CVPR 2022 paper and official implementation",
+      "zh": "CVPR 2022 论文与官方实现"
     },
     "demo": {
-      "en": "Trace the official row from RepLKNet to its publication, contributor field, institution, and country.",
-      "zh": "沿官方行查看 RepLKNet 如何关联到论文、主要人物字段、机构与国家。"
+      "en": "Follow the training branches into one fused 31x31 deployment kernel, then compare the resulting receptive-field and task outcomes.",
+      "zh": "沿训练期分支观察它们如何融合为一个 31×31 部署卷积核，再比较感受野与任务结果。"
     },
     "keyConcepts": [
       {
         "label": {
-          "en": "Official Work",
-          "zh": "官方成果名称"
+          "en": "Kernel Scale",
+          "zh": "卷积核规模"
         },
         "text": {
-          "en": "RepLKNet",
-          "zh": "RepLKNet"
+          "en": "Up to 31x31 depth-wise convolution",
+          "zh": "最大 31×31 深度卷积"
         }
       },
       {
         "label": {
-          "en": "Main Contributors",
-          "zh": "主要人物"
+          "en": "Training to Deployment",
+          "zh": "训练到部署"
         },
         "text": {
-          "en": "Xiaohan Ding,Xiangyu Zhang",
-          "zh": "Xiaohan Ding（官方页拼写）、张祥雨"
+          "en": "Fuse parallel branches into one equivalent kernel",
+          "zh": "把并行分支融合为一个等效卷积核"
         }
       },
       {
         "label": {
-          "en": "Institution",
-          "zh": "机构"
+          "en": "Observed Effect",
+          "zh": "观察结果"
         },
         "text": {
-          "en": "BNRist, Tsinghua University, MEGVII, Aberystwyth University",
-          "zh": "BNRist、清华大学、MEGVII、Aberystwyth University"
+          "en": "Larger effective receptive field and stronger shape bias",
+          "zh": "更大的有效感受野与更强的形状偏置"
         }
       }
     ],
@@ -231,28 +243,28 @@
     ],
     "demoSteps": [
       {
-        "en": "Official work",
-        "zh": "官方成果名称"
+        "en": "Training branches",
+        "zh": "训练期分支"
       },
       {
-        "en": "Publication record",
-        "zh": "论文记录"
+        "en": "Equivalent-kernel fusion",
+        "zh": "等效卷积核融合"
       },
       {
-        "en": "Contributors and institution",
-        "zh": "主要人物与机构"
+        "en": "Single deployment path",
+        "zh": "单路径部署"
       }
     ],
     "demoImage": "resources/images/benchcouncil-ai100-annual/annual-004-replknet_record.svg",
     "demoNotes": [
       {
         "label": {
-          "en": "Source cue",
-          "zh": "资料线索"
+          "en": "Architecture cue",
+          "zh": "架构线索"
         },
         "text": {
-          "en": "Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs",
-          "zh": "《Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs》与 BenchCouncil 年度行"
+          "en": "The paper combines large depth-wise kernels with structural re-parameterization rather than simply replacing every small convolution.",
+          "zh": "论文把大核深度卷积与结构重参数化结合起来，并不是简单替换所有小卷积。"
         }
       },
       {
@@ -261,8 +273,8 @@
           "zh": "互动点"
         },
         "text": {
-          "en": "Trace the official row from RepLKNet to its publication, contributor field, institution, and country.",
-          "zh": "沿官方行查看 RepLKNet 如何关联到论文、主要人物字段、机构与国家。"
+          "en": "Trace each training branch into the fused deployment kernel and compare the reported ImageNet, ADE20K and receptive-field evidence.",
+          "zh": "沿每个训练分支追踪到融合后的部署卷积核，并比较 ImageNet、ADE20K 与感受野证据。"
         }
       }
     ],
@@ -270,30 +282,30 @@
       {
         "type": "archiveLink",
         "site": {
-          "en": "Primary publication",
-          "zh": "主论文"
+          "en": "Official PyTorch repository",
+          "zh": "官方 PyTorch 仓库"
         },
         "title": {
-          "en": "Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs",
-          "zh": "《Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs》"
+          "en": "RepLKNet models and pretrained weights",
+          "zh": "RepLKNet 模型与预训练权重"
         },
         "description": {
-          "en": "Publication associated with this work by the BenchCouncil annual table.",
-          "zh": "BenchCouncil 年度表为该成果关联的论文。"
+          "en": "The first author's official implementation provides RepLKNet model definitions, pretrained weights and ImageNet evaluation materials.",
+          "zh": "第一作者维护的官方实现提供 RepLKNet 模型定义、预训练权重和 ImageNet 评估材料。"
         },
-        "url": "https://doi.org/10.48550/arxiv.2203.06717",
-        "source": "https://doi.org/10.48550/arxiv.2203.06717",
+        "url": "https://github.com/DingXiaoH/RepLKNet-pytorch",
+        "source": "https://github.com/DingXiaoH/RepLKNet-pytorch",
         "license": {
-          "en": "Reference link only; local visuals are original redraws.",
-          "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+          "en": "Repository code is released under the MIT License; the local explainer is an original redraw.",
+          "zh": "仓库代码采用 MIT License；本地解释图为原创重绘。"
         },
         "usage": {
-          "en": "Publication and evidence reference",
-          "zh": "论文与证据参考"
+          "en": "Implementation and model reference",
+          "zh": "实现与模型参考"
         },
         "action": {
-          "en": "Open publication",
-          "zh": "打开论文"
+          "en": "Open official repository",
+          "zh": "打开官方仓库"
         }
       }
     ],
@@ -312,7 +324,7 @@
   "location": {
     "name": {
       "en": "BNRist, Tsinghua University, MEGVII, Aberystwyth University",
-      "zh": "BNRist、清华大学、MEGVII、Aberystwyth University"
+      "zh": "北京信息科学与技术国家研究中心（BNRist）、清华大学、旷视科技、阿伯里斯特威斯大学"
     },
     "country": {
       "en": "China, United Kingdom",

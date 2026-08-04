@@ -29,10 +29,35 @@
     "importance": "display",
     "text": {
       "en": "The Main Contributors field is “Hugo Touvron, Thibaut Lavril, Gautier Izacard, Edouard Grave, Guillaume Lample”.",
-      "zh": "“主要人物”字段依次列出 Hugo Touvron（官方页拼写）、Thibaut Lavril（官方页拼写）、Gautier Izacard（官方页拼写）、Edouard Grave（官方页拼写）、Guillaume Lample（官方页拼写）；官方英文原文为“Hugo Touvron, Thibaut Lavril, Gautier Izacard, Edouard Grave, Guillaume Lample”。"
+      "zh": "“主要人物”字段依次列出 雨果·图夫龙、蒂博·拉夫里尔、戈蒂耶·伊扎卡尔、爱德华·格拉夫、纪尧姆·朗普勒；官方英文原文为“Hugo Touvron, Thibaut Lavril, Gautier Izacard, Edouard Grave, Guillaume Lample”。"
     },
     "sourceIds": [
       "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-model-family",
+    "importance": "core",
+    "text": {
+      "en": "LLaMA released foundation language models at 7B, 13B, 33B and 65B parameter scales.",
+      "zh": "LLaMA 发布了 70 亿、130 亿、330 亿和 650 亿参数规模的基础语言模型。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-meta-announcement"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-public-data",
+    "importance": "core",
+    "text": {
+      "en": "The paper states that the models were trained on publicly available datasets rather than proprietary data.",
+      "zh": "论文说明这些模型在公开可用数据集上训练，而非依赖专有数据。"
+    },
+    "sourceIds": [
+      "source-primary-record"
     ],
     "status": "verified"
   }

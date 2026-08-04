@@ -3,35 +3,35 @@
     "id": "ai100-annual-2022-2023-117-saycan-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to SayCan?",
-      "zh": "BenchCouncil 年度表把 SayCan 归入哪个领域？"
+      "en": "What two signals does SayCan combine to choose a robot skill?",
+      "zh": "SayCan 选择机器人技能时组合哪两类信号？"
     },
     "options": [
       {
-        "en": "Robots",
-        "zh": "机器人"
+        "en": "Language usefulness and physical feasibility",
+        "zh": "语言有用性与物理可行性"
       },
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "Image color and file size",
+        "zh": "图像颜色与文件大小"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "Citation count and publication year",
+        "zh": "引用数与发表年份"
       },
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "Speech volume and keyboard speed",
+        "zh": "语音音量与键盘速度"
       }
     ],
-    "answer": 0,
     "explanation": {
-      "en": "SayCan appears in the Robots area of the official annual table.",
-      "zh": "SayCan 位于官方年度表的“机器人”领域。"
+      "en": "SayCan multiplies a language-model relevance score by a learned affordance or value score.",
+      "zh": "SayCan 将语言模型相关性评分与学习到的可供性或价值评分相乘。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-saycan-paper"
     ],
+    "answer": 0,
     "assetIds": [
       "asset-annual-117-saycan-record"
     ]

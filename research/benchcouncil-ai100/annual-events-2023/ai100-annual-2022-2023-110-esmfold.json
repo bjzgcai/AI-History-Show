@@ -1,0 +1,699 @@
+{
+  "schemaVersion": 1,
+  "eventId": "ai100-annual-2022-2023-110-esmfold",
+  "status": "complete",
+  "officialOrder": 110,
+  "work": "ESMFold",
+  "official": {
+    "area": "AI4Science",
+    "publication": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
+    "citation": "451",
+    "contributors": "Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Alexander Rives",
+    "institution": "Meta,New York University, Stanford University, MIT",
+    "country": "USA",
+    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+  },
+  "summary": {
+    "en": "Single-sequence protein structure prediction with a large protein language model",
+    "zh": "使用大型蛋白质语言模型进行单序列结构预测"
+  },
+  "displaySummary": {
+    "en": "AI100 (2022-2023) · Language-model protein folding",
+    "zh": "AI100（2022-2023）· 语言模型蛋白质折叠"
+  },
+  "description": {
+    "en": "<p>ESMFold predicts atomic-level protein structures directly from a single amino-acid sequence using representations learned by the ESM-2 protein language model. It avoids the multiple-sequence-alignment search used by many earlier high-accuracy pipelines, enabling much faster inference across very large sequence collections.</p><p>The accompanying work used this speed to explore hundreds of millions of metagenomic protein sequences and release the ESM Metagenomic Atlas.</p>",
+    "zh": "<p>ESMFold 使用 ESM-2 蛋白质语言模型学到的表示，直接从单条氨基酸序列预测原子级蛋白质结构。它不依赖许多早期高精度流程使用的多序列比对搜索，因此能够更快地处理超大规模序列集合。</p><p>相关工作利用这种速度探索数亿条宏基因组蛋白质序列，并发布 ESM Metagenomic Atlas。</p>"
+  },
+  "people": [
+    {
+      "name": {
+        "en": "Zeming Lin",
+        "zh": "林泽明"
+      },
+      "role": {
+        "en": "First author of the ESMFold paper",
+        "zh": "ESMFold 论文第一作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-benchcouncil-annual",
+          "source-primary-record"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Zeming Lin at position 1 in the official contributor prefix, and the primary paper lists the same person among its authors.",
+          "zh": "BenchCouncil 在官方人物前缀第 1 位列出林泽明，主论文作者表也包含同一人物。"
+        }
+      },
+      "portraitSearch": {
+        "status": "no-reliable-candidate",
+        "reliability": "primary-publication-identity-confirmed-no-displayable-portrait",
+        "rights": "No image is selected. The paper and official project evidence confirm identity, but no candidate was retained with both a reliable identity match and sufficient usage context.",
+        "candidates": []
+      }
+    },
+    {
+      "name": {
+        "en": "Halil Akin",
+        "zh": "哈利勒·阿金"
+      },
+      "role": {
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-benchcouncil-annual",
+          "source-primary-record"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Halil Akin at position 2 in the official contributor prefix, and the primary paper lists the same person among its authors.",
+          "zh": "BenchCouncil 在官方人物前缀第 2 位列出哈利勒·阿金，主论文作者表也包含同一人物。"
+        }
+      },
+      "portraitSearch": {
+        "status": "no-reliable-candidate",
+        "reliability": "primary-publication-identity-confirmed-no-displayable-portrait",
+        "rights": "No image is selected. The paper and official project evidence confirm identity, but no candidate was retained with both a reliable identity match and sufficient usage context.",
+        "candidates": []
+      }
+    },
+    {
+      "name": {
+        "en": "Roshan Rao",
+        "zh": "罗尚·拉奥"
+      },
+      "role": {
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-benchcouncil-annual",
+          "source-primary-record"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Roshan Rao at position 3 in the official contributor prefix, and the primary paper lists the same person among its authors.",
+          "zh": "BenchCouncil 在官方人物前缀第 3 位列出罗尚·拉奥，主论文作者表也包含同一人物。"
+        }
+      },
+      "portraitSearch": {
+        "status": "no-reliable-candidate",
+        "reliability": "primary-publication-identity-confirmed-no-displayable-portrait",
+        "rights": "No image is selected. The paper and official project evidence confirm identity, but no candidate was retained with both a reliable identity match and sufficient usage context.",
+        "candidates": []
+      }
+    },
+    {
+      "name": {
+        "en": "Brian Hie",
+        "zh": "布赖恩·希"
+      },
+      "role": {
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-benchcouncil-annual",
+          "source-primary-record",
+          "source-brian-hie-stanford-profile"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Brian Hie at position 4 in the official contributor prefix, and the primary paper lists the same person among its authors. Stanford's official profile uses the exact name, publishes the selected headshot and records his previous role as a visiting researcher at Meta AI.",
+          "zh": "BenchCouncil 在官方人物前缀第 4 位列出布赖恩·希，主论文作者表也包含同一人物。斯坦福官方人物页使用完全相同的姓名，发布所选头像，并记录他曾任 Meta AI 访问研究员。"
+        }
+      },
+      "portraitSearch": {
+        "status": "selected",
+        "sourceUrl": "https://profiles.stanford.edu/brian-hie",
+        "imageUrl": "https://profiles.stanford.edu/proxy/api/cap/profiles/72917/resources/profilephoto/350x350.1754623357443.jpg",
+        "reliability": "official-university-profile",
+        "rights": "Stanford's official profile publishes the matching headshot but states no redistribution license. Copyright restrictions were relaxed for this research pass; retain attribution and recheck before reuse outside this project.",
+        "candidates": [
+          {
+            "imageUrl": "https://profiles.stanford.edu/proxy/api/cap/profiles/72917/resources/profilephoto/350x350.1754623357443.jpg",
+            "sourceUrl": "https://profiles.stanford.edu/brian-hie",
+            "decision": "selected",
+            "notes": "Stanford's official profile labels the headshot Brian Hie and records his current faculty identity, MIT training and previous visiting researcher role at Meta AI."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "en": "Alexander Rives",
+        "zh": "亚历山大·里夫斯"
+      },
+      "role": {
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-benchcouncil-annual",
+          "source-primary-record"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Alexander Rives at position 5 in the official contributor prefix, and the primary paper lists the same person among its authors.",
+          "zh": "BenchCouncil 在官方人物前缀第 5 位列出亚历山大·里夫斯，主论文作者表也包含同一人物。"
+        }
+      },
+      "portraitSearch": {
+        "status": "no-reliable-candidate",
+        "reliability": "primary-publication-identity-confirmed-no-displayable-portrait",
+        "rights": "No image is selected. The paper and official project evidence confirm identity, but no candidate was retained with both a reliable identity match and sufficient usage context.",
+        "candidates": []
+      }
+    }
+  ],
+  "selectedPortrait": {
+    "personName": "Brian Hie",
+    "image": {
+      "path": "resources/images/external/ai100-2023-esmfold/brian-hie.jpg",
+      "sourceName": {
+        "en": "Stanford Profiles",
+        "zh": "斯坦福人物资料"
+      },
+      "sourceUrl": "https://profiles.stanford.edu/brian-hie",
+      "imageUrl": "https://profiles.stanford.edu/proxy/api/cap/profiles/72917/resources/profilephoto/350x350.1754623357443.jpg",
+      "reliability": "official-university-profile",
+      "usageStatus": "external-reference",
+      "license": {
+        "en": "The source states no redistribution license; retain attribution and recheck before redistribution outside this project.",
+        "zh": "来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+      },
+      "notes": {
+        "en": "Stanford's official profile publishes the headshot and records Brian Hie's prior Meta AI visiting-researcher role, matching the ESMFold paper identity.",
+        "zh": "斯坦福官方人物页发布该头像，并记录布赖恩·希曾任 Meta AI 访问研究员，与 ESMFold 论文身份相符。"
+      },
+      "attribution": "Stanford Profiles",
+      "identityChecks": [
+        "exact-contributor-name",
+        "event-authorship-matches",
+        "official-affiliation-history-matches"
+      ]
+    }
+  },
+  "sourceOverrides": {
+    "source-primary-record": {
+      "type": "paper-page",
+      "label": {
+        "en": "Publication page",
+        "zh": "出版页面"
+      },
+      "title": {
+        "en": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
+        "zh": "《使用语言模型进行进化尺度的原子级蛋白质结构预测》"
+      },
+      "authors": [
+        "Zeming Lin",
+        "Halil Akin",
+        "Roshan Rao",
+        "Brian Hie",
+        "Zhongkai Zhu",
+        "Wenting Lu",
+        "Nikita Smetanin",
+        "Robert Verkuil",
+        "Ori Kabeli",
+        "Yaniv Shmueli",
+        "Allan dos Santos Costa",
+        "Maryam Fazel-Zarandi",
+        "Tom Sercu",
+        "Salvatore Candido",
+        "Alexander Rives"
+      ],
+      "year": 2023,
+      "url": "https://www.science.org/doi/10.1126/science.ade2574",
+      "language": "en",
+      "purpose": "core-evidence",
+      "reliability": "primary",
+      "notes": {
+        "en": "Primary Science record used to verify authorship, single-sequence structure prediction and metagenomic-scale analysis.",
+        "zh": "用于核对作者、单序列结构预测与宏基因组规模分析的 Science 原始记录。"
+      }
+    },
+    "source-openalex-record": {
+      "notes": {
+        "en": "Bibliographic metadata is retained only as a secondary cross-check; technical and identity claims use primary records.",
+        "zh": "书目元数据仅作为辅助交叉核对；技术与人物主张使用原始记录。"
+      }
+    }
+  },
+  "additionalSources": [
+    {
+      "id": "source-biorxiv-preprint",
+      "type": "paper-page",
+      "label": {
+        "en": "Preprint page",
+        "zh": "预印本页面"
+      },
+      "title": {
+        "en": "ESMFold preprint - bioRxiv",
+        "zh": "ESMFold bioRxiv 预印本"
+      },
+      "url": "https://www.biorxiv.org/content/10.1101/2022.07.20.500902v1",
+      "language": "en",
+      "purpose": "alternate-access",
+      "reliability": "primary",
+      "notes": {
+        "en": "Author-submitted ESMFold preprint with the model description, evaluations and metagenomic analysis. This replaces the previously recorded arXiv 2207.09574 link, which resolves to an unrelated mathematics paper.",
+        "zh": "作者提交的 ESMFold 预印本，包含模型说明、评测与宏基因组分析。它替换此前误录的 arXiv 2207.09574；该编号实际指向一篇无关的数学论文。"
+      }
+    },
+    {
+      "id": "source-esm-repository",
+      "type": "code",
+      "label": {
+        "en": "Code",
+        "zh": "代码"
+      },
+      "title": {
+        "en": "Meta ESM official repository",
+        "zh": "Meta ESM 官方仓库"
+      },
+      "url": "https://github.com/facebookresearch/esm",
+      "language": "en",
+      "purpose": "implementation",
+      "reliability": "primary",
+      "notes": {
+        "en": "Official repository with ESM-2 and ESMFold inference code, checkpoints and usage instructions.",
+        "zh": "官方仓库，提供 ESM-2 与 ESMFold 推理代码、检查点和使用说明。"
+      }
+    },
+    {
+      "id": "source-meta-esmfold",
+      "type": "official-page",
+      "label": {
+        "en": "Official page",
+        "zh": "官方页面"
+      },
+      "title": {
+        "en": "Folding the metagenomic world with ESMFold",
+        "zh": "使用 ESMFold 折叠宏基因组世界"
+      },
+      "url": "https://ai.meta.com/blog/protein-folding-esmfold-metagenomics/",
+      "language": "en",
+      "purpose": "official-statement",
+      "reliability": "primary",
+      "notes": {
+        "en": "Meta research article describing the model’s speed and the ESM Metagenomic Atlas release.",
+        "zh": "Meta 研究文章，说明模型速度与 ESM Metagenomic Atlas 发布背景。"
+      }
+    },
+    {
+      "id": "source-brian-hie-stanford-profile",
+      "type": "profile",
+      "label": {
+        "en": "Profile",
+        "zh": "人物资料"
+      },
+      "title": {
+        "en": "Brian Hie - Stanford Profiles",
+        "zh": "布赖恩·希 - 斯坦福人物资料"
+      },
+      "url": "https://profiles.stanford.edu/brian-hie",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "Official Stanford profile identifying Brian Hie, publishing the selected headshot and recording his prior visiting researcher role at Meta AI. The profile does not state a redistribution license for the photograph.",
+        "zh": "斯坦福官方人物页确认布赖恩·希身份，发布所选头像，并记录他曾任 Meta AI 访问研究员。页面未为照片声明再分发许可。"
+      }
+    },
+    {
+      "id": "source-esmfold-figure-2",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "ESMFold Figure 2: single-sequence structure prediction",
+        "zh": "ESMFold Figure 2：单序列结构预测"
+      },
+      "url": "https://www.biorxiv.org/content/biorxiv/early/2022/07/21/2022.07.20.500902/F2.large.jpg",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "The bioRxiv Figure 2 combines the ESM-2-to-folding-trunk architecture, ablations, benchmark comparisons and representative structures. It is the strongest commonly used technical screenshot for ESMFold, but the existing original local explainer remains the single selected explanatory image; no separate redistribution license is stated for the figure.",
+        "zh": "bioRxiv Figure 2 同时展示从 ESM-2 到折叠主干的架构、消融、基准比较与代表性结构，是 ESMFold 最常用且说明力最强的技术截图。页面仍只选用现有本地原创解释图；该图未单独声明再分发许可。"
+      }
+    }
+  ],
+  "additionalClaims": [
+    {
+      "id": "claim-single-sequence",
+      "importance": "core",
+      "text": {
+        "en": "ESMFold predicts protein structure from a single sequence without requiring a multiple-sequence-alignment search.",
+        "zh": "ESMFold 从单条序列预测蛋白质结构，不需要执行多序列比对搜索。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-biorxiv-preprint",
+        "source-esm-repository"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "claim-metagenomic-scale",
+      "importance": "core",
+      "text": {
+        "en": "The model’s speed enabled structure prediction across hundreds of millions of metagenomic protein sequences.",
+        "zh": "模型的速度使对数亿条宏基因组蛋白质序列进行结构预测成为可能。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-meta-esmfold"
+      ],
+      "status": "verified"
+    }
+  ],
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "High-accuracy protein structure prediction had made a major leap, but many pipelines still depended on computationally expensive searches for evolutionary relatives. ESMFold explored whether a large protein language model could internalize enough evolutionary information to predict structure directly from one sequence.",
+        "zh": "高精度蛋白质结构预测已经取得重大突破，但许多流程仍依赖计算昂贵的进化同源序列搜索。ESMFold 探索大型蛋白质语言模型能否内化足够的进化信息，从单条序列直接预测结构。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-biorxiv-preprint"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "ESM-2 learns contextual representations from large protein sequence databases, and a folding trunk converts those representations into three-dimensional coordinates and confidence estimates. Removing the multiple-sequence-alignment stage trades some peak accuracy for dramatically higher throughput and a simpler single-sequence workflow.",
+        "zh": "ESM-2 从大型蛋白质序列数据库学习上下文表示，折叠主干再把这些表示转换为三维坐标与置信度估计。移除多序列比对阶段，以部分峰值精度换取大幅提高的吞吐量和更简洁的单序列流程。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-biorxiv-preprint"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat ESMFold as strong evidence that protein language models learn structural information at useful biological scale. Its lasting contribution is not only a fast predictor but also a demonstration that language-model representations can support massive structure atlases and downstream protein analysis.",
+        "zh": "专家通常把 ESMFold 视为有力证据：蛋白质语言模型能够在有用的生物学尺度上学到结构信息。它的长期贡献不仅是快速预测器，还证明语言模型表示可以支撑超大规模结构图谱与下游蛋白质分析。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-biorxiv-preprint"
+      ]
+    }
+  ],
+  "visualModule": {
+    "type": "archiveLink",
+    "site": {
+      "en": "Science",
+      "zh": "Science"
+    },
+    "title": {
+      "en": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
+      "zh": "《Evolutionary-scale prediction of atomic-level protein structure with a language model》"
+    },
+    "description": {
+      "en": "The journal record anchors the authorship and the evidence for single-sequence folding at metagenomic scale.",
+      "zh": "期刊记录提供作者信息，并支撑宏基因组规模单序列折叠的证据。"
+    },
+    "url": "https://www.science.org/doi/10.1126/science.ade2574",
+    "source": "https://www.science.org/doi/10.1126/science.ade2574",
+    "license": {
+      "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+      "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+    },
+    "usage": {
+      "en": "Primary technical or official release evidence",
+      "zh": "主要技术或官方发布证据"
+    },
+    "action": {
+      "en": "Open Science paper page",
+      "zh": "打开 Science 论文页面"
+    }
+  },
+  "recordSvgSource": "research/benchcouncil-ai100/annual-events-2023/assets/ai100-annual-2022-2023-110-esmfold.svg",
+  "recordAsset": {
+    "caption": {
+      "en": "ESMFold single-sequence path",
+      "zh": "ESMFold 单序列预测路径"
+    },
+    "subcaption": {
+      "en": "Use protein language representations to predict a 3D structure without an MSA search",
+      "zh": "使用蛋白质语言模型表示预测三维结构，无需 MSA 搜索"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-biorxiv-preprint"
+    ],
+    "sourceName": {
+      "en": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
+      "zh": "《使用语言模型进行进化尺度的原子级蛋白质结构预测》"
+    },
+    "sourceUrl": "https://www.science.org/doi/10.1126/science.ade2574",
+    "displayUsage": {
+      "en": "Original achievement explainer",
+      "zh": "原创成就解释图"
+    }
+  },
+  "achievement": {
+    "area": {
+      "en": "AI4Science",
+      "zh": "AI for Science"
+    },
+    "method": {
+      "en": "Protein language modeling followed by end-to-end structure prediction",
+      "zh": "蛋白质语言建模与端到端结构预测"
+    },
+    "artifact": {
+      "en": "ESMFold and the ESM Metagenomic Atlas",
+      "zh": "ESMFold 与 ESM 宏基因组图谱"
+    },
+    "material": {
+      "en": "Primary publication or official release evidence, implementation materials and the original local explainer",
+      "zh": "主论文或官方发布证据、实现材料与本地原创解释图"
+    },
+    "demo": {
+      "en": "Follow the four-stage path and compare what enters, what is learned and what the system produces.",
+      "zh": "沿四阶段路径观察输入、学习内容与系统输出。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Sequence",
+          "zh": "序列"
+        },
+        "text": {
+          "en": "One amino-acid chain is sufficient",
+          "zh": "只需一条氨基酸链"
+        }
+      },
+      {
+        "label": {
+          "en": "Language Model",
+          "zh": "语言模型"
+        },
+        "text": {
+          "en": "ESM-2 encodes evolutionary regularities",
+          "zh": "ESM-2 编码进化规律"
+        }
+      },
+      {
+        "label": {
+          "en": "Throughput",
+          "zh": "吞吐量"
+        },
+        "text": {
+          "en": "Fast inference supports atlas-scale prediction",
+          "zh": "快速推理支持图谱规模预测"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Amino-acid sequence",
+        "zh": "氨基酸序列"
+      },
+      {
+        "en": "ESM-2 representations",
+        "zh": "ESM-2 表示"
+      },
+      {
+        "en": "Folding trunk",
+        "zh": "折叠主干"
+      },
+      {
+        "en": "3D coordinates and confidence",
+        "zh": "三维坐标与置信度"
+      }
+    ],
+    "demoImage": "resources/images/benchcouncil-ai100-annual/annual-110-esmfold_record.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Technical cue",
+          "zh": "技术线索"
+        },
+        "text": {
+          "en": "Use protein language representations to predict a 3D structure without an MSA search",
+          "zh": "这张图以四个阶段解释：氨基酸序列、ESM-2 表示、折叠主干、三维坐标与置信度。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Trace the arrows, then identify which stage reuses a pretrained component and which stage learns new information.",
+          "zh": "沿箭头逐步查看，并判断哪个阶段复用预训练组件、哪个阶段学习新信息。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Science",
+          "zh": "Science"
+        },
+        "title": {
+          "en": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
+          "zh": "《Evolutionary-scale prediction of atomic-level protein structure with a language model》"
+        },
+        "description": {
+          "en": "The journal record anchors the authorship and the evidence for single-sequence folding at metagenomic scale.",
+          "zh": "期刊记录提供作者信息，并支撑宏基因组规模单序列折叠的证据。"
+        },
+        "url": "https://www.science.org/doi/10.1126/science.ade2574",
+        "source": "https://www.science.org/doi/10.1126/science.ade2574",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+        },
+        "usage": {
+          "en": "Primary technical or official release evidence",
+          "zh": "主要技术或官方发布证据"
+        },
+        "action": {
+          "en": "Open Science paper page",
+          "zh": "打开 Science 论文页面"
+        }
+      }
+    ]
+  },
+  "quiz": {
+    "question": {
+      "en": "What expensive preprocessing step does ESMFold avoid?",
+      "zh": "ESMFold 避免了哪项昂贵的预处理步骤？"
+    },
+    "options": [
+      {
+        "en": "Searching for a multiple-sequence alignment",
+        "zh": "搜索多序列比对"
+      },
+      {
+        "en": "Reading the amino-acid sequence",
+        "zh": "读取氨基酸序列"
+      },
+      {
+        "en": "Producing 3D coordinates",
+        "zh": "生成三维坐标"
+      },
+      {
+        "en": "Estimating prediction confidence",
+        "zh": "估计预测置信度"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "ESMFold predicts from a single sequence and does not require the multiple-sequence-alignment search used by many earlier pipelines.",
+      "zh": "ESMFold 从单条序列进行预测，不需要许多早期流程使用的多序列比对搜索。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-biorxiv-preprint"
+    ]
+  },
+  "reviewNotes": {
+    "en": "Completed event-specific research on 2026-08-03. The exact BenchCouncil title, order, contributor prefix, institution, country and blank official fields were preserved. All listed people were checked against primary authorship evidence; portrait searches were completed and no portrait was selected because no candidate met the identity and usage-context threshold.",
+    "zh": "于 2026-08-03 完成事件专项研究。准确保留 BenchCouncil 的标题、顺序、人物前缀、机构、国家与官方空字段。所有列出人物均通过原始作者证据核对；肖像检索已完成，没有候选同时满足身份与使用语境门槛，因此不选用肖像。"
+  },
+  "supplementaryAssets": [
+    {
+      "id": "asset-annual-110-esmfold-paper-figure-2",
+      "type": "image",
+      "path": "resources/images/external/ai100-2023-esmfold/esmfold-paper-figure-2.jpg",
+      "role": "historical-diagram",
+      "caption": {
+        "en": "ESMFold architecture and ablation results",
+        "zh": "ESMFold 架构与消融结果"
+      },
+      "subcaption": {
+        "en": "Figure 2 traces a single protein sequence through ESM-2, the folding trunk and structure module, then reports component ablations.",
+        "zh": "论文 Figure 2 展示单条蛋白质序列经过 ESM-2、折叠主干与结构模块的路径，并给出组件消融结果。"
+      },
+      "sourceId": "source-esmfold-figure-2",
+      "sourceName": {
+        "en": "ESMFold bioRxiv preprint",
+        "zh": "ESMFold bioRxiv 预印本"
+      },
+      "sourceUrl": "https://www.biorxiv.org/content/10.1101/2022.07.20.500902v1",
+      "imageUrl": "https://www.biorxiv.org/content/biorxiv/early/2022/07/21/2022.07.20.500902/F2.large.jpg",
+      "sourceReliability": "primary-paper-or-official-project-image",
+      "provenanceNotes": {
+        "en": "Downloaded from the named primary paper, official project repository or official release page and retained with direct source attribution.",
+        "zh": "图片下载自主论文、官方项目仓库或官方发布页，并保留直接来源标注。"
+      },
+      "rights": {
+        "status": "external-reference",
+        "license": {
+          "en": "Primary-source reference image displayed with attribution under the project's relaxed reference-image policy.",
+          "zh": "主来源参考图片；依据项目放宽后的参考图片策略展示，并保留完整来源标注。"
+        },
+        "attribution": "Lin et al., ESMFold preprint (2022), Figure 2"
+      },
+      "displayUsage": {
+        "en": "Primary-paper architecture and evidence figure",
+        "zh": "主论文架构与证据图"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    }
+  ],
+  "assetIds": [
+    "asset-annual-110-esmfold-portrait-brian-hie",
+    "asset-annual-110-esmfold-paper-figure-2",
+    "asset-annual-110-esmfold-record"
+  ],
+  "overviewImageAssetId": "asset-annual-110-esmfold-portrait-brian-hie"
+}

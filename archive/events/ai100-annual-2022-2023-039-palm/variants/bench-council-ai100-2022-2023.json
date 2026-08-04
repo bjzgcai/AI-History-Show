@@ -7,12 +7,12 @@
     "zh": "PaLM"
   },
   "displaySummary": {
-    "en": "AI100 (2022-2023) · LLM",
-    "zh": "AI100（2022-2023）· 大语言模型"
+    "en": "AI100 (2022-2023) · Pathways-scale language modeling",
+    "zh": "AI100（2022-2023）· Pathways 规模语言建模"
   },
   "displayDescription": {
-    "en": "<p>BenchCouncil lists PaLM in the LLM area of its AI100 (2022-2023) annual table. It associates the work with the publication “PaLM: Scaling Language Modeling with Pathways”. The page names Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, Noah Fiedel as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“大语言模型”领域列出 PaLM。该条目关联论文《PaLM: Scaling Language Modeling with Pathways》。页面把 Aakanksha Chowdhery（官方页拼写）、Sharan Narang（官方页拼写）、雅各布·德夫林、Kathy Meier-Hellstern（官方页拼写）、Douglas Eck（官方页拼写）、杰夫·迪恩、Slav Petrov（官方页拼写）、Noah Fiedel（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>PaLM tested whether a single dense language model could be trained efficiently at 540 billion parameters using Google's Pathways system. The work used 6,144 TPU v4 chips and a 780-billion-token multilingual corpus, pairing systems engineering with a broad evaluation program.</p><p>As scale increased, PaLM improved few-shot language understanding, generation, reasoning and code tasks, while also showing discontinuous gains on some capabilities. The project became an important reference point for both large-model infrastructure and discussions of emergent behavior.</p>",
+    "zh": "<p>PaLM 检验了能否借助 Google 的 Pathways 系统高效训练一个 5,400 亿参数的稠密语言模型。该工作使用 6,144 个 TPU v4 芯片和 7,800 亿 token 的多语种语料，把系统工程与广泛评测结合起来。</p><p>随着规模增加，PaLM 在少样本语言理解、生成、推理和代码任务上持续提升，并在部分能力上出现不连续跃升。该项目因此成为大模型基础设施和涌现能力讨论的重要参照。</p>"
   },
   "emphasis": [
     "benchcouncil-annual-2022-2023",
@@ -23,35 +23,36 @@
     {
       "type": "archiveLink",
       "site": {
-        "en": "Primary publication",
-        "zh": "主论文"
+        "en": "Google Research",
+        "zh": "Google Research"
       },
       "title": {
-        "en": "PaLM: Scaling Language Modeling with Pathways",
-        "zh": "《PaLM: Scaling Language Modeling with Pathways》"
+        "en": "PaLM: Scaling to 540 Billion Parameters",
+        "zh": "PaLM：扩展到 5,400 亿参数"
       },
       "description": {
-        "en": "Publication associated with this work by the BenchCouncil annual table.",
-        "zh": "BenchCouncil 年度表为该成果关联的论文。"
+        "en": "Google Research explains the Pathways training system, model scale and representative evaluation results.",
+        "zh": "Google Research 说明 Pathways 训练系统、模型规模和代表性评测结果。"
       },
-      "url": "https://doi.org/10.48550/arxiv.2204.02311",
-      "source": "https://doi.org/10.48550/arxiv.2204.02311",
+      "url": "https://research.google/blog/pathways-language-model-palm-scaling-to-540-billion-parameters-for-breakthrough-performance/",
+      "action": {
+        "en": "Open Google Research page",
+        "zh": "打开 Google Research 页面"
+      },
+      "source": "https://research.google/blog/pathways-language-model-palm-scaling-to-540-billion-parameters-for-breakthrough-performance/",
       "license": {
-        "en": "Reference link only; local visuals are original redraws.",
-        "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+        "en": "Reference link only; the local explainer is an original redraw.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
       },
       "usage": {
-        "en": "Publication and evidence reference",
-        "zh": "论文与证据参考"
-      },
-      "action": {
-        "en": "Open publication",
-        "zh": "打开论文"
+        "en": "Technical, historical and interaction reference",
+        "zh": "技术、历史与互动说明参考"
       }
     }
   ],
   "assetIds": [
     "asset-annual-039-palm-portrait-jeff-dean",
+    "asset-annual-039-palm-paper-bigbench-results",
     "asset-annual-039-palm-record"
   ],
   "overviewImageAssetId": "asset-annual-039-palm-portrait-jeff-dean",
@@ -59,12 +60,17 @@
     "source-primary-record",
     "source-openalex-record",
     "source-benchcouncil-annual",
-    "source-annual-039-palm-portrait-jeff-dean"
+    "source-annual-039-palm-portrait-jeff-dean",
+    "source-palm-paper",
+    "source-palm-google-research",
+    "source-palm-paper-bigbench-figure"
   ],
   "claimIds": [
     "claim-annual-membership",
     "claim-publication-record",
-    "claim-contributor-record"
+    "claim-contributor-record",
+    "claim-core-method",
+    "claim-historical-significance"
   ],
   "quizId": "ai100-annual-2022-2023-039-palm-quiz-1",
   "commentarySections": [
@@ -75,11 +81,12 @@
         "zh": "历史背景"
       },
       "html": {
-        "en": "BenchCouncil published this row as part of its AI100 (2022-2023) annual selection in the LLM area. The annual list captures a time-bounded view of prominent recent work rather than the membership of the long-term AI100 table.",
-        "zh": "BenchCouncil 把该行发布在 AI100（2022-2023）年度入选表的“大语言模型”领域中。年度表记录的是当时对近期代表性工作的阶段性观察，不等同于长期 AI100 主表成员。"
+        "en": "By 2022, scaling laws had encouraged ever-larger language models, but training them efficiently required new distributed systems. PaLM joined model research to Pathways, showing how one dense model could span thousands of accelerators.",
+        "zh": "到 2022 年，缩放规律推动语言模型持续增大，但高效训练这些模型需要新的分布式系统。PaLM 把模型研究与 Pathways 结合，展示了一个稠密模型如何跨越数千个加速器。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-palm-paper",
+        "source-primary-record"
       ]
     },
     {
@@ -89,12 +96,12 @@
         "zh": "核心思想"
       },
       "html": {
-        "en": "The official work name is PaLM, linked by the table to “PaLM: Scaling Language Modeling with Pathways”. Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, Noah Fiedel are preserved in the same order as the Main Contributors cell. The institution field is Google.",
-        "zh": "官方成果名称为 PaLM，表格将其关联到论文《PaLM: Scaling Language Modeling with Pathways》。Aakanksha Chowdhery（官方页拼写）、Sharan Narang（官方页拼写）、雅各布·德夫林、Kathy Meier-Hellstern（官方页拼写）、Douglas Eck（官方页拼写）、杰夫·迪恩、Slav Petrov（官方页拼写）、Noah Fiedel（官方页拼写） 按“主要人物”单元格中的相同顺序显示。官方英文拼写与顺序保存在年度记录中，机构字段为 Google。"
+        "en": "PaLM is a decoder-only Transformer trained on a multilingual mixture of text and code. Its key engineering result was efficient single-Pod-scale training across 6,144 TPU v4 chips, while the evaluation traced how capability changed up to 540 billion parameters.",
+        "zh": "PaLM 是在多语种文本与代码混合语料上训练的仅解码器 Transformer。其关键工程成果是在 6,144 个 TPU v4 芯片上进行高效训练，同时通过评测追踪能力如何随规模增长到 5,400 亿参数。"
       },
       "sourceIds": [
-        "source-primary-record",
-        "source-benchcouncil-annual"
+        "source-palm-paper",
+        "source-primary-record"
       ]
     },
     {
@@ -104,11 +111,12 @@
         "zh": "长期影响"
       },
       "html": {
-        "en": "Experts should treat this record as evidence of BenchCouncil's 2022-2023 annual assessment, not as a permanent consensus ranking. Its lasting archival value is the exact preservation of the work name, publication link, contributor field, institution, country, citation value, and source order.",
-        "zh": "专家应把本记录视为 BenchCouncil 对 2022-2023 年度成果的阶段性评价证据，而不是永久共识排名。它的长期档案价值在于准确保留成果名称、论文线索、人物字段、机构、国家、引用数与来源顺序。"
+        "en": "Experts generally treat PaLM as a landmark in the co-design of large models and accelerator infrastructure. It also supplied influential evidence that some language-model capabilities can improve sharply rather than smoothly with scale.",
+        "zh": "专家通常把 PaLM 视为大模型与加速器基础设施协同设计的里程碑。它还提供了有影响力的证据，说明某些语言模型能力可能随规模出现跃升，而不是平滑增长。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-palm-paper",
+        "source-primary-record"
       ]
     }
   ],
@@ -120,11 +128,11 @@
     {
       "name": {
         "en": "Aakanksha Chowdhery",
-        "zh": "Aakanksha Chowdhery（官方页拼写）"
+        "zh": "阿坎莎·乔杜里"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "First author of the PaLM paper",
+        "zh": "PaLM 论文第一作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -132,11 +140,11 @@
     {
       "name": {
         "en": "Sharan Narang",
-        "zh": "Sharan Narang（官方页拼写）"
+        "zh": "沙兰·纳朗"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -147,8 +155,8 @@
         "zh": "雅各布·德夫林"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -156,11 +164,11 @@
     {
       "name": {
         "en": "Kathy Meier-Hellstern",
-        "zh": "Kathy Meier-Hellstern（官方页拼写）"
+        "zh": "凯西·迈尔-赫尔斯特恩"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -168,11 +176,11 @@
     {
       "name": {
         "en": "Douglas Eck",
-        "zh": "Douglas Eck（官方页拼写）"
+        "zh": "道格拉斯·埃克"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -183,8 +191,8 @@
         "zh": "杰夫·迪恩"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "figureType": "person",
       "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg"
@@ -192,11 +200,11 @@
     {
       "name": {
         "en": "Slav Petrov",
-        "zh": "Slav Petrov（官方页拼写）"
+        "zh": "斯拉夫·彼得罗夫"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -204,11 +212,11 @@
     {
       "name": {
         "en": "Noah Fiedel",
-        "zh": "Noah Fiedel（官方页拼写）"
+        "zh": "诺亚·菲德尔"
       },
       "role": {
-        "en": "Main contributor for PaLM in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 PaLM 主要人物"
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -226,14 +234,14 @@
     },
     "workAuthors": {
       "en": "Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, Noah Fiedel",
-      "zh": "Aakanksha Chowdhery（官方页拼写）、Sharan Narang（官方页拼写）、雅各布·德夫林、Kathy Meier-Hellstern（官方页拼写）、Douglas Eck（官方页拼写）、杰夫·迪恩、Slav Petrov（官方页拼写）、Noah Fiedel（官方页拼写）"
+      "zh": "阿坎莎·乔杜里、沙兰·纳朗、雅各布·德夫林、凯西·迈尔-赫尔斯特恩、道格拉斯·埃克、杰夫·迪恩、斯拉夫·彼得罗夫、诺亚·菲德尔"
     },
     "sourceLabel": "",
     "sourceUrl": "https://doi.org/10.48550/arxiv.2204.02311"
   },
   "quotePage": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry",
-    "zh": "BenchCouncil AI100（2022-2023）年度条目"
+    "en": "Primary publication record",
+    "zh": "原始论文记录"
   },
   "quoteAttribution": {
     "en": "PaLM: Scaling Language Modeling with Pathways",
@@ -245,50 +253,50 @@
       "zh": "大语言模型"
     },
     "method": {
-      "en": "Annual selection record",
-      "zh": "年度入选记录"
+      "en": "Pathways-distributed dense Transformer scaling",
+      "zh": "基于 Pathways 的稠密 Transformer 分布式扩展"
     },
     "artifact": {
-      "en": "PaLM",
-      "zh": "PaLM"
+      "en": "A 540-billion-parameter PaLM model",
+      "zh": "5,400 亿参数 PaLM 模型"
     },
     "material": {
-      "en": "PaLM: Scaling Language Modeling with Pathways",
-      "zh": "《PaLM: Scaling Language Modeling with Pathways》与官方年度行"
+      "en": "780 billion training tokens, 6,144 TPU v4 chips and the PaLM evaluation suite",
+      "zh": "7,800 亿训练 token、6,144 个 TPU v4 芯片与 PaLM 评测体系"
     },
     "demo": {
-      "en": "Trace the official row from PaLM to its publication, contributor field, institution, and country.",
-      "zh": "沿官方行查看 PaLM 如何关联到论文、主要人物字段、机构与国家。"
+      "en": "Trace how data, accelerators and dense parameters combine, then inspect which capability families improve at the largest scale.",
+      "zh": "追踪数据、加速器与稠密参数如何组合，再查看哪些能力类别在最大规模下提升。"
     },
     "keyConcepts": [
       {
         "label": {
-          "en": "Official Work",
-          "zh": "官方成果名称"
+          "en": "Scale",
+          "zh": "模型规模"
         },
         "text": {
-          "en": "PaLM",
-          "zh": "PaLM"
+          "en": "540B dense parameters",
+          "zh": "5,400 亿稠密参数"
         }
       },
       {
         "label": {
-          "en": "Main Contributors",
-          "zh": "主要人物"
+          "en": "Infrastructure",
+          "zh": "基础设施"
         },
         "text": {
-          "en": "Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, Noah Fiedel",
-          "zh": "Aakanksha Chowdhery（官方页拼写）、Sharan Narang（官方页拼写）、雅各布·德夫林、Kathy Meier-Hellstern（官方页拼写）、Douglas Eck（官方页拼写）、杰夫·迪恩、Slav Petrov（官方页拼写）、Noah Fiedel（官方页拼写）"
+          "en": "Pathways across 6,144 TPU v4 chips",
+          "zh": "Pathways 跨 6,144 个 TPU v4 芯片"
         }
       },
       {
         "label": {
-          "en": "Institution",
-          "zh": "机构"
+          "en": "Capability",
+          "zh": "能力变化"
         },
         "text": {
-          "en": "Google",
-          "zh": "Google"
+          "en": "Few-shot transfer and emergent gains",
+          "zh": "少样本迁移与涌现式提升"
         }
       }
     ],
@@ -301,28 +309,28 @@
     ],
     "demoSteps": [
       {
-        "en": "Official work",
-        "zh": "官方成果名称"
+        "en": "Multilingual text + code",
+        "zh": "多语种文本与代码"
       },
       {
-        "en": "Publication record",
-        "zh": "论文记录"
+        "en": "Pathways distributed training",
+        "zh": "Pathways 分布式训练"
       },
       {
-        "en": "Contributors and institution",
-        "zh": "主要人物与机构"
+        "en": "Few-shot tasks and reasoning",
+        "zh": "少样本任务与推理"
       }
     ],
     "demoImage": "resources/images/benchcouncil-ai100-annual/annual-039-palm_record.svg",
     "demoNotes": [
       {
         "label": {
-          "en": "Source cue",
+          "en": "Evidence cue",
           "zh": "资料线索"
         },
         "text": {
-          "en": "PaLM: Scaling Language Modeling with Pathways",
-          "zh": "《PaLM: Scaling Language Modeling with Pathways》与 BenchCouncil 年度行"
+          "en": "The paper ties model scale to the Pathways training system and reports results across language, reasoning and code.",
+          "zh": "论文把模型规模与 Pathways 训练系统联系起来，并报告语言、推理和代码任务结果。"
         }
       },
       {
@@ -331,8 +339,8 @@
           "zh": "互动点"
         },
         "text": {
-          "en": "Trace the official row from PaLM to its publication, contributor field, institution, and country.",
-          "zh": "沿官方行查看 PaLM 如何关联到论文、主要人物字段、机构与国家。"
+          "en": "Trace how data, accelerators and dense parameters combine, then inspect which capability families improve at the largest scale.",
+          "zh": "追踪数据、加速器与稠密参数如何组合，再查看哪些能力类别在最大规模下提升。"
         }
       }
     ],
@@ -340,30 +348,30 @@
       {
         "type": "archiveLink",
         "site": {
-          "en": "Primary publication",
-          "zh": "主论文"
+          "en": "Google Research",
+          "zh": "Google Research"
         },
         "title": {
-          "en": "PaLM: Scaling Language Modeling with Pathways",
-          "zh": "《PaLM: Scaling Language Modeling with Pathways》"
+          "en": "PaLM: Scaling to 540 Billion Parameters",
+          "zh": "PaLM：扩展到 5,400 亿参数"
         },
         "description": {
-          "en": "Publication associated with this work by the BenchCouncil annual table.",
-          "zh": "BenchCouncil 年度表为该成果关联的论文。"
+          "en": "Google Research explains the Pathways training system, model scale and representative evaluation results.",
+          "zh": "Google Research 说明 Pathways 训练系统、模型规模和代表性评测结果。"
         },
-        "url": "https://doi.org/10.48550/arxiv.2204.02311",
-        "source": "https://doi.org/10.48550/arxiv.2204.02311",
+        "url": "https://research.google/blog/pathways-language-model-palm-scaling-to-540-billion-parameters-for-breakthrough-performance/",
+        "action": {
+          "en": "Open Google Research page",
+          "zh": "打开 Google Research 页面"
+        },
+        "source": "https://research.google/blog/pathways-language-model-palm-scaling-to-540-billion-parameters-for-breakthrough-performance/",
         "license": {
-          "en": "Reference link only; local visuals are original redraws.",
-          "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+          "en": "Reference link only; the local explainer is an original redraw.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
         },
         "usage": {
-          "en": "Publication and evidence reference",
-          "zh": "论文与证据参考"
-        },
-        "action": {
-          "en": "Open publication",
-          "zh": "打开论文"
+          "en": "Technical, historical and interaction reference",
+          "zh": "技术、历史与互动说明参考"
         }
       }
     ],

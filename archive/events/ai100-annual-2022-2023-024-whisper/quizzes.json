@@ -3,35 +3,35 @@
     "id": "ai100-annual-2022-2023-024-whisper-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to Whisper?",
-      "zh": "BenchCouncil 年度表把 Whisper 归入哪个领域？"
+      "en": "What is the main source of Whisper's broad speech robustness?",
+      "zh": "Whisper 广泛语音稳健性的主要来源是什么？"
     },
     "options": [
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "Large, diverse weakly supervised audio",
+        "zh": "大规模、多样化的弱监督音频"
       },
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "A single clean English benchmark",
+        "zh": "单一干净英语基准"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "Only synthetic voices",
+        "zh": "只使用合成语音"
       },
       {
-        "en": "Multimodal",
-        "zh": "多模态"
+        "en": "A rule-based pronunciation dictionary",
+        "zh": "基于规则的发音词典"
       }
     ],
-    "answer": 0,
     "explanation": {
-      "en": "Whisper appears in the Speech area of the official annual table.",
-      "zh": "Whisper 位于官方年度表的“语音”领域。"
+      "en": "Whisper was trained on 680,000 hours of diverse multilingual and multitask weakly supervised audio.",
+      "zh": "Whisper 使用 68 万小时多样化、多语种、多任务弱监督音频训练。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-whisper-paper"
     ],
+    "answer": 0,
     "assetIds": [
       "asset-annual-024-whisper-record"
     ]

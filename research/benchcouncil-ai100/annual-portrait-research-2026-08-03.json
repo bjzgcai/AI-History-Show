@@ -13,10 +13,11 @@
     "Legacy reference images and source-review-needed portraits are not selected."
   ],
   "summary": {
-    "selected-local": 5,
-    "not-found": 304,
+    "selected-local": 7,
+    "not-found": 298,
     "selected-wikimedia": 5,
-    "candidate-needs-review": 2
+    "candidate-needs-review": 2,
+    "candidate-not-selected": 4
   },
   "people": [
     {
@@ -70,15 +71,39 @@
         "Microsoft Research Asia",
         "Tsinghua University, Microsoft Research Asia, Xi'an Jiaotong University"
       ],
-      "status": "not-found",
-      "selectedImage": null,
+      "status": "selected-local",
+      "selectedImage": {
+        "path": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg",
+        "sourceName": {
+          "en": "Han Hu academic homepage",
+          "zh": "胡瀚学术主页"
+        },
+        "sourceUrl": "https://ancientmooner.github.io/",
+        "imageUrl": "https://ancientmooner.github.io/assets/media/profile.jpg",
+        "reliability": "primary-identity-source",
+        "usageStatus": "external-reference",
+        "license": {
+          "en": "The personal homepage does not state redistribution rights; retain the source note and recheck before external redistribution.",
+          "zh": "个人主页未声明再分发许可；必须保留来源备注，对外再分发前需再次核验。"
+        },
+        "notes": {
+          "en": "Exact contributor-name match. The researcher-controlled page lists Swin Transformer V2 and SimMIM, and states Han Hu's Microsoft Research Asia role at the time.",
+          "zh": "人物姓名精确匹配；研究者本人维护的页面列出 Swin Transformer V2 与 SimMIM，并说明胡瀚当时在微软亚洲研究院任职。"
+        },
+        "identityChecks": [
+          "exact-contributor-name",
+          "researcher-controlled-profile",
+          "event-publication-listed",
+          "historical-affiliation-match"
+        ]
+      },
       "wikidataCandidate": null,
       "wikidataCandidates": []
     },
     {
       "name": {
         "en": "Zhenda Xie",
-        "zh": "Zhenda Xie（官方页拼写）"
+        "zh": "谢振达"
       },
       "eventIds": [
         "ai100-annual-2022-2023-002-simmim"
@@ -86,15 +111,38 @@
       "officialInstitutions": [
         "Tsinghua University, Microsoft Research Asia, Xi'an Jiaotong University"
       ],
-      "status": "not-found",
+      "status": "candidate-not-selected",
       "selectedImage": null,
+      "candidateImage": {
+        "sourceName": {
+          "en": "Zhenda Xie GitHub profile",
+          "zh": "谢振达 GitHub 主页"
+        },
+        "sourceUrl": "https://github.com/zdaxie",
+        "imageUrl": "https://avatars.githubusercontent.com/u/33708987?v=4",
+        "reliability": "primary-account-source",
+        "usageStatus": "not-selected",
+        "license": {
+          "en": "GitHub does not state a redistribution license for the profile image. SimMIM uses Han Hu's researcher-homepage portrait as its single person image.",
+          "zh": "GitHub 未声明该头像的再分发许可；SimMIM 已选择胡瀚研究者主页肖像作为唯一人物图。"
+        },
+        "notes": {
+          "en": "Exact-name account that contributes to the official Microsoft SimMIM repository. Current profile information is not used as evidence for the 2022 institutional affiliation.",
+          "zh": "姓名精确匹配，并参与微软官方 SimMIM 仓库；当前账号资料不用于证明 2022 年的机构归属。"
+        },
+        "identityChecks": [
+          "exact-contributor-name",
+          "official-repository-contributor",
+          "event-publication-match"
+        ]
+      },
       "wikidataCandidate": null,
       "wikidataCandidates": []
     },
     {
       "name": {
         "en": "Zheng Zhang",
-        "zh": "Zheng Zhang（官方页拼写）"
+        "zh": "张拯"
       },
       "eventIds": [
         "ai100-annual-2022-2023-002-simmim"
@@ -102,8 +150,33 @@
       "officialInstitutions": [
         "Tsinghua University, Microsoft Research Asia, Xi'an Jiaotong University"
       ],
-      "status": "not-found",
+      "status": "candidate-not-selected",
       "selectedImage": null,
+      "candidateImage": {
+        "sourceName": {
+          "en": "Zheng Zhang academic homepage",
+          "zh": "张拯学术主页"
+        },
+        "sourceUrl": "https://stupidzz.github.io/",
+        "imageUrl": "https://stupidzz.github.io/img/avatar.jpg",
+        "reliability": "primary-identity-source",
+        "usageStatus": "not-selected",
+        "license": {
+          "en": "The personal homepage does not state redistribution rights. SimMIM uses Han Hu's portrait as its single person image.",
+          "zh": "个人主页未声明再分发许可；SimMIM 已选择胡瀚肖像作为唯一人物图。"
+        },
+        "notes": {
+          "en": "Researcher-controlled page lists SimMIM, the official code, and collaboration at Microsoft Research Asia. The homepage repository also contains self-authored commits signed 张拯 with the researcher's Microsoft corporate email. The similarly named OpenAlex ORCID aggregation was rejected because it resolves to a different researcher.",
+          "zh": "研究者本人维护的页面列出 SimMIM、官方代码和微软亚洲研究院合作关系；主页仓库还包含以微软企业邮箱自署名“张拯”的提交。同名 OpenAlex ORCID 聚合指向另一位研究者，已排除。"
+        },
+        "identityChecks": [
+          "exact-contributor-name",
+          "researcher-controlled-profile",
+          "event-publication-listed",
+          "historical-affiliation-match",
+          "same-name-conflict-rejected"
+        ]
+      },
       "wikidataCandidate": null,
       "wikidataCandidates": []
     },
@@ -118,8 +191,31 @@
       "officialInstitutions": [
         "Tsinghua University, Microsoft Research Asia, Xi'an Jiaotong University"
       ],
-      "status": "not-found",
+      "status": "candidate-not-selected",
       "selectedImage": null,
+      "candidateImage": {
+        "sourceName": {
+          "en": "Yue Cao GitHub profile",
+          "zh": "曹越 GitHub 主页"
+        },
+        "sourceUrl": "https://github.com/caoyue10",
+        "imageUrl": "https://avatars.githubusercontent.com/u/7570113?v=4",
+        "reliability": "primary-account-source",
+        "usageStatus": "not-selected",
+        "license": {
+          "en": "GitHub does not state a redistribution license for the profile image. SimMIM uses Han Hu's researcher-homepage portrait as its single person image.",
+          "zh": "GitHub 未声明该头像的再分发许可；SimMIM 已选择胡瀚研究者主页肖像作为唯一人物图。"
+        },
+        "notes": {
+          "en": "Exact-name account that contributes to the official Microsoft SimMIM repository. Current profile information is not used as evidence for the 2022 institutional affiliation.",
+          "zh": "姓名精确匹配，并参与微软官方 SimMIM 仓库；当前账号资料不用于证明 2022 年的机构归属。"
+        },
+        "identityChecks": [
+          "exact-contributor-name",
+          "official-repository-contributor",
+          "event-publication-match"
+        ]
+      },
       "wikidataCandidate": null,
       "wikidataCandidates": []
     },
@@ -134,8 +230,34 @@
       "officialInstitutions": [
         "Google"
       ],
-      "status": "not-found",
-      "selectedImage": null,
+      "status": "selected-local",
+      "selectedImage": {
+        "path": "resources/images/external/ai100-2022-scaling-vit/xiaohua-zhai-portrait.jpg",
+        "sourceName": {
+          "en": "Xiaohua Zhai academic homepage",
+          "zh": "翟晓华学术主页"
+        },
+        "sourceUrl": "https://sites.google.com/view/xzhai",
+        "imageUrl": "https://lh3.googleusercontent.com/sitesv/AG8ngQXsPUFayQ75RgfApNzoomnHKPr-4wRtC-VuAHEiMpx9VC6IA4OLLs8EWb3SNBbbKxHme3XZHjM7d55AsmVqTRFZluOdRW8A_IXw-oWFNtM_unT33zi4HZXpEmBNv6T8cMZQjSRym5AzpiBypLqebAEWwFW7pkZZiavZUDo7hbK_JPDOW5eb3mmCZh6ZWTzvk_f0KxgavHc4fTP6u3KdEEqFke8H-YiGzzLt1cSd=w1280",
+        "reliability": "primary-identity-source",
+        "usageStatus": "external-reference",
+        "license": {
+          "en": "The researcher-controlled homepage does not state redistribution rights for the portrait; retain attribution and recheck before external redistribution.",
+          "zh": "研究者本人维护的主页未声明肖像再分发许可；必须保留署名，对外再分发前需再次核验。"
+        },
+        "notes": {
+          "en": "The researcher-controlled homepage displays the Chinese and English names Xiaohua Zhai (翟晓华), publishes this portrait, and lists Scaling Vision Transformers with the matching CVPR 2022 coauthors.",
+          "zh": "研究者本人维护的主页同时显示 Xiaohua Zhai 与中文名“翟晓华”，发布该肖像，并列出作者匹配的 CVPR 2022 论文《Scaling Vision Transformers》。"
+        },
+        "identityChecks": [
+          "exact-contributor-name",
+          "researcher-controlled-profile",
+          "chinese-name-self-published",
+          "event-publication-listed",
+          "historical-affiliation-match"
+        ],
+        "sourceNotesRequired": true
+      },
       "wikidataCandidate": null,
       "wikidataCandidates": []
     },
@@ -152,6 +274,10 @@
       ],
       "status": "not-found",
       "selectedImage": null,
+      "searchNotes": {
+        "en": "The CVPR paper and Xiaohua Zhai's researcher-controlled publication list confirm the identity and authorship. Lucas Beyer's homepage links kolesnikov.ch as Alexander Kolesnikov's personal site, but that domain did not resolve during the 2026-08-03 review and no independently licensed portrait was selected.",
+        "zh": "CVPR 论文与翟晓华研究者主页的论文列表已确认其身份和作者关系。卢卡斯·拜尔主页把 kolesnikov.ch 链接为亚历山大·科列斯尼科夫的个人网站，但该域名在 2026-08-03 核验时无法解析，因此未选择无法独立确认许可的肖像。"
+      },
       "wikidataCandidate": null,
       "wikidataCandidates": []
     },
@@ -166,8 +292,32 @@
       "officialInstitutions": [
         "Google"
       ],
-      "status": "not-found",
+      "status": "candidate-not-selected",
       "selectedImage": null,
+      "candidateImage": {
+        "sourceName": {
+          "en": "Lucas Beyer GitHub profile",
+          "zh": "卢卡斯·拜尔 GitHub 主页"
+        },
+        "sourceUrl": "https://github.com/lucasb-eyer",
+        "imageUrl": "https://avatars.githubusercontent.com/u/1476029?v=4",
+        "reliability": "primary-account-source",
+        "usageStatus": "not-selected",
+        "license": {
+          "en": "GitHub does not state a redistribution license for the profile image. Scaling ViT already uses Xiaohua Zhai's researcher-homepage portrait as its single person image.",
+          "zh": "GitHub 未声明该头像的再分发许可；Scaling ViT 已选择翟晓华研究者主页肖像作为唯一人物图。"
+        },
+        "notes": {
+          "en": "The GitHub account is linked from Lucas Beyer's researcher-controlled homepage. The homepage identifies him as a former Google Brain/DeepMind Zürich researcher and links Xiaohua Zhai and Alexander Kolesnikov as close research collaborators.",
+          "zh": "该 GitHub 账号由卢卡斯·拜尔本人维护的主页链接。主页说明他曾在 Google Brain/DeepMind 苏黎世团队任职，并链接翟晓华和亚历山大·科列斯尼科夫作为长期研究合作者。"
+        },
+        "identityChecks": [
+          "exact-contributor-name",
+          "researcher-controlled-profile",
+          "linked-primary-account",
+          "historical-affiliation-match"
+        ]
+      },
       "wikidataCandidate": null,
       "wikidataCandidates": []
     },

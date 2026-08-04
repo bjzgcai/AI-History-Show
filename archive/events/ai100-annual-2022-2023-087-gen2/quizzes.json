@@ -3,34 +3,34 @@
     "id": "ai100-annual-2022-2023-087-gen2-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to Gen2?",
-      "zh": "BenchCouncil 年度表把 Gen2 归入哪个领域？"
+      "en": "Which media can be used to guide Gen-2 according to its public research page?",
+      "zh": "根据公开研究页，哪些媒体可以引导 Gen-2？"
     },
     "options": [
       {
-        "en": "Diffusion Model Application",
-        "zh": "扩散模型应用"
+        "en": "Text, images and video references",
+        "zh": "文本、图像与视频参考"
       },
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "Only spreadsheets",
+        "zh": "只有电子表格"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "Only audio transcripts",
+        "zh": "只有音频文字稿"
       },
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "Only GPS coordinates",
+        "zh": "只有 GPS 坐标"
       }
     ],
     "answer": 0,
     "explanation": {
-      "en": "Gen2 appears in the Diffusion Model Application area of the official annual table.",
-      "zh": "Gen2 位于官方年度表的“扩散模型应用”领域。"
+      "en": "Runway presented Gen-2 with text-to-video, image-to-video and video-conditioned workflows.",
+      "zh": "Runway 展示了 Gen-2 的文生视频、图生视频与视频条件工作流。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-primary-record"
     ],
     "assetIds": [
       "asset-annual-087-gen2-record"

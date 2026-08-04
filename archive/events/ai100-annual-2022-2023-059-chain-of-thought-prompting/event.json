@@ -1,18 +1,18 @@
 {
   "id": "ai100-annual-2022-2023-059-chain-of-thought-prompting",
-  "year": 2023,
-  "date": "2023",
+  "year": 2022,
+  "date": "2022",
   "title": {
     "en": "Chain-of-Thought Prompting",
     "zh": "Chain-of-Thought Prompting"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in LLM",
-    "zh": "BenchCouncil AI100（2022-2023）大语言模型年度条目"
+    "en": "A prompting method that elicits intermediate reasoning steps from sufficiently large language models",
+    "zh": "通过提示让足够大的语言模型生成中间推理步骤的方法"
   },
   "description": {
-    "en": "<p>BenchCouncil lists Chain-of-Thought Prompting in the LLM area of its AI100 (2022-2023) annual table. It associates the work with the publication “Chain of Thought Prompting Elicits Reasoning in Large Language Models”. The page names Jason Wei, Denny Zhou as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“大语言模型”领域列出 Chain-of-Thought Prompting。该条目关联论文《Chain of Thought Prompting Elicits Reasoning in Large Language Models》。页面把 Jason Wei（官方页拼写）、Denny Zhou（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>Chain-of-thought prompting showed that a few demonstrations containing intermediate reasoning steps can substantially improve large language models on arithmetic, commonsense and symbolic reasoning tasks. The method changes the prompt rather than the model weights.</p><p>The gains appeared most strongly at large model scales, suggesting that prompting can expose capabilities already latent in a pretrained model. This simple technique became a foundation for later work on self-consistency, tool use and structured reasoning.</p>",
+    "zh": "<p>思维链提示表明，只需在少量示例中加入中间推理步骤，就能显著改善大语言模型在算术、常识和符号推理任务上的表现。该方法改变的是提示，而不是模型权重。</p><p>提升主要出现在较大模型规模上，说明提示能够显化预训练模型中已经潜藏的能力。这一简单方法后来成为自洽性、工具使用和结构化推理研究的基础。</p>"
   },
   "location": {
     "regionId": "united-states",
@@ -40,11 +40,11 @@
       "figureId": "jason-wei",
       "name": {
         "en": "Jason Wei",
-        "zh": "Jason Wei（官方页拼写）"
+        "zh": "杰森·魏"
       },
       "role": {
-        "en": "Main contributor for Chain-of-Thought Prompting in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Chain-of-Thought Prompting 主要人物"
+        "en": "First author of the Chain-of-Thought Prompting paper",
+        "zh": "Chain-of-Thought Prompting 论文第一作者"
       },
       "organizationIds": []
     },
@@ -52,13 +52,14 @@
       "figureId": "denny-zhou",
       "name": {
         "en": "Denny Zhou",
-        "zh": "Denny Zhou（官方页拼写）"
+        "zh": "丹尼·周"
       },
       "role": {
-        "en": "Main contributor for Chain-of-Thought Prompting in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Chain-of-Thought Prompting 主要人物"
+        "en": "Co-author of the Chain-of-Thought Prompting paper",
+        "zh": "Chain-of-Thought Prompting 论文共同作者"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg"
     }
   ],
   "organizations": [],
@@ -66,8 +67,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 59 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 59 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+      "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
     }
   }
 }

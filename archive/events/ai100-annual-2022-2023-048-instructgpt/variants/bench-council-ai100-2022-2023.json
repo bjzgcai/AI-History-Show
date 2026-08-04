@@ -7,12 +7,12 @@
     "zh": "InstructGPT"
   },
   "displaySummary": {
-    "en": "AI100 (2022-2023) · LLM",
-    "zh": "AI100（2022-2023）· 大语言模型"
+    "en": "AI100 (2022-2023) · Instruction following with human feedback",
+    "zh": "AI100（2022-2023）· 基于人类反馈的指令遵循"
   },
   "displayDescription": {
-    "en": "<p>BenchCouncil lists InstructGPT in the LLM area of its AI100 (2022-2023) annual table. It associates the work with the publication “Training language models to follow instructions with human feedback”. The page names Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Paul Christiano, Jan Leike, Ryan Lowe as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“大语言模型”领域列出 InstructGPT。该条目关联论文《Training language models to follow instructions with human feedback》。页面把 Long Ouyang（官方页拼写）、Jeff Wu（官方页拼写）、Xu Jiang（官方页拼写）、Diogo Almeida（官方页拼写）、Carroll L. Wainwright（官方页拼写）、Pamela Mishkin（官方页拼写）、Paul Christiano（官方页拼写）、Jan Leike（官方页拼写）、Ryan Lowe（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>InstructGPT addressed a mismatch between next-token prediction and what users actually ask a model to do. OpenAI collected demonstrations and preference comparisons, then used supervised fine-tuning, reward modeling and reinforcement learning to tune GPT-3 models toward helpful instruction following.</p><p>Human evaluators preferred the 1.3-billion-parameter InstructGPT model over the 175-billion-parameter GPT-3 baseline on the studied prompt distribution. The result made RLHF a practical recipe for post-training general-purpose language models.</p>",
+    "zh": "<p>InstructGPT 针对下一个 token 预测目标与用户实际要求之间的错位。OpenAI 收集示范答案和偏好比较，再通过监督微调、奖励模型与强化学习，让 GPT-3 模型更好地遵循有帮助的指令。</p><p>在研究使用的提示分布上，人类评估者更偏好 13 亿参数的 InstructGPT，而不是 1,750 亿参数的 GPT-3 基线。这一结果使 RLHF 成为通用语言模型后训练的实用范式。</p>"
   },
   "emphasis": [
     "benchcouncil-annual-2022-2023",
@@ -23,46 +23,60 @@
     {
       "type": "archiveLink",
       "site": {
-        "en": "Primary publication",
-        "zh": "主论文"
+        "en": "OpenAI research",
+        "zh": "OpenAI 研究页面"
       },
       "title": {
-        "en": "Training language models to follow instructions with human feedback",
-        "zh": "《Training language models to follow instructions with human feedback》"
+        "en": "Aligning language models to follow instructions",
+        "zh": "让语言模型遵循指令"
       },
       "description": {
-        "en": "Publication associated with this work by the BenchCouncil annual table.",
-        "zh": "BenchCouncil 年度表为该成果关联的论文。"
+        "en": "OpenAI explains the InstructGPT training stages, human evaluation and safety limitations.",
+        "zh": "OpenAI 说明 InstructGPT 的训练阶段、人类评测与安全局限。"
       },
-      "url": "https://scholar.google.com/scholar?q=%22Training%20language%20models%20to%20follow%20instructions%20with%20human%20feedback%22",
-      "source": "https://scholar.google.com/scholar?q=%22Training%20language%20models%20to%20follow%20instructions%20with%20human%20feedback%22",
+      "url": "https://openai.com/index/instruction-following/",
+      "action": {
+        "en": "Open InstructGPT page",
+        "zh": "打开 InstructGPT 页面"
+      },
+      "source": "https://openai.com/index/instruction-following/",
       "license": {
-        "en": "Reference link only; local visuals are original redraws.",
-        "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+        "en": "Reference link only; the local explainer is an original redraw.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
       },
       "usage": {
-        "en": "Publication and evidence reference",
-        "zh": "论文与证据参考"
-      },
-      "action": {
-        "en": "Open publication",
-        "zh": "打开论文"
+        "en": "Technical, historical and interaction reference",
+        "zh": "技术、历史与互动说明参考"
       }
     }
   ],
   "assetIds": [
+    "asset-annual-048-instructgpt-portrait-jeff-wu",
+    "asset-annual-048-instructgpt-portrait-john-schulman",
+    "asset-annual-048-instructgpt-paper-preference-results",
     "asset-annual-048-instructgpt-record"
   ],
-  "overviewImageAssetId": "asset-annual-048-instructgpt-record",
+  "overviewImageAssetId": "asset-annual-048-instructgpt-portrait-jeff-wu",
   "sourceIds": [
     "source-primary-record",
     "source-openalex-record",
-    "source-benchcouncil-annual"
+    "source-benchcouncil-annual",
+    "source-annual-048-instructgpt-portrait-jeff-wu",
+    "source-instructgpt-paper",
+    "source-openai-human-preferences",
+    "source-jeff-wu-personal-homepage",
+    "source-jeff-wu-wikidata",
+    "source-annual-048-instructgpt-portrait-john-schulman",
+    "source-hugging-face-rlhf",
+    "source-chip-huyen-rlhf",
+    "source-scale-ai-john-schulman-talk"
   ],
   "claimIds": [
     "claim-annual-membership",
     "claim-publication-record",
-    "claim-contributor-record"
+    "claim-contributor-record",
+    "claim-core-method",
+    "claim-historical-significance"
   ],
   "quizId": "ai100-annual-2022-2023-048-instructgpt-quiz-1",
   "commentarySections": [
@@ -73,11 +87,12 @@
         "zh": "历史背景"
       },
       "html": {
-        "en": "BenchCouncil published this row as part of its AI100 (2022-2023) annual selection in the LLM area. The annual list captures a time-bounded view of prominent recent work rather than the membership of the long-term AI100 table.",
-        "zh": "BenchCouncil 把该行发布在 AI100（2022-2023）年度入选表的“大语言模型”领域中。年度表记录的是当时对近期代表性工作的阶段性观察，不等同于长期 AI100 主表成员。"
+        "en": "Large pretrained models could complete text fluently but did not reliably infer a user's intent. InstructGPT emerged from earlier human-preference research as a direct attempt to align model behavior after pretraining.",
+        "zh": "大型预训练模型能够流畅续写文本，却不能稳定理解用户意图。InstructGPT 延续早期人类偏好研究，直接尝试在预训练之后对齐模型行为。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-instructgpt-paper",
+        "source-primary-record"
       ]
     },
     {
@@ -87,12 +102,12 @@
         "zh": "核心思想"
       },
       "html": {
-        "en": "The official work name is InstructGPT, linked by the table to “Training language models to follow instructions with human feedback”. Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Paul Christiano, Jan Leike, Ryan Lowe are preserved in the same order as the Main Contributors cell. The institution field is OpenAI.",
-        "zh": "官方成果名称为 InstructGPT，表格将其关联到论文《Training language models to follow instructions with human feedback》。Long Ouyang（官方页拼写）、Jeff Wu（官方页拼写）、Xu Jiang（官方页拼写）、Diogo Almeida（官方页拼写）、Carroll L. Wainwright（官方页拼写）、Pamela Mishkin（官方页拼写）、Paul Christiano（官方页拼写）、Jan Leike（官方页拼写）、Ryan Lowe（官方页拼写） 按“主要人物”单元格中的相同顺序显示。官方英文拼写与顺序保存在年度记录中，机构字段为 OpenAI。"
+        "en": "The pipeline first fine-tunes on human demonstrations, then learns a reward model from ranked responses, and finally optimizes the policy with PPO. Keeping these stages separate turns qualitative preference judgments into a trainable signal.",
+        "zh": "流程先使用人类示范进行监督微调，再从排序后的回答中学习奖励模型，最后用 PPO 优化策略。把这些阶段分开，使定性的偏好判断转化为可训练信号。"
       },
       "sourceIds": [
-        "source-primary-record",
-        "source-benchcouncil-annual"
+        "source-instructgpt-paper",
+        "source-primary-record"
       ]
     },
     {
@@ -102,11 +117,12 @@
         "zh": "长期影响"
       },
       "html": {
-        "en": "Experts should treat this record as evidence of BenchCouncil's 2022-2023 annual assessment, not as a permanent consensus ranking. Its lasting archival value is the exact preservation of the work name, publication link, contributor field, institution, country, citation value, and source order.",
-        "zh": "专家应把本记录视为 BenchCouncil 对 2022-2023 年度成果的阶段性评价证据，而不是永久共识排名。它的长期档案价值在于准确保留成果名称、论文线索、人物字段、机构、国家、引用数与来源顺序。"
+        "en": "Experts generally treat InstructGPT as the operational template for modern RLHF post-training. Its importance lies less in raw parameter scale than in showing that smaller aligned models can be preferred over much larger untuned baselines.",
+        "zh": "专家通常把 InstructGPT 视为现代 RLHF 后训练的操作模板。它的重要性不只在参数规模，而在于证明更小的对齐模型也可能比大得多的未调优基线更受用户偏好。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-instructgpt-paper",
+        "source-primary-record"
       ]
     }
   ],
@@ -118,11 +134,11 @@
     {
       "name": {
         "en": "Long Ouyang",
-        "zh": "Long Ouyang（官方页拼写）"
+        "zh": "欧阳龙"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "First author of the InstructGPT paper",
+        "zh": "InstructGPT 论文第一作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -130,23 +146,23 @@
     {
       "name": {
         "en": "Jeff Wu",
-        "zh": "Jeff Wu（官方页拼写）"
+        "zh": "杰夫·吴"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "figureType": "person",
-      "avatar": ""
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-wu.jpg"
     },
     {
       "name": {
         "en": "Xu Jiang",
-        "zh": "Xu Jiang（官方页拼写）"
+        "zh": "徐江"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -154,11 +170,11 @@
     {
       "name": {
         "en": "Diogo Almeida",
-        "zh": "Diogo Almeida（官方页拼写）"
+        "zh": "迪奥戈·阿尔梅达"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -166,11 +182,11 @@
     {
       "name": {
         "en": "Carroll L. Wainwright",
-        "zh": "Carroll L. Wainwright（官方页拼写）"
+        "zh": "卡罗尔·L·温赖特"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -178,11 +194,11 @@
     {
       "name": {
         "en": "Pamela Mishkin",
-        "zh": "Pamela Mishkin（官方页拼写）"
+        "zh": "帕梅拉·米什金"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -190,11 +206,11 @@
     {
       "name": {
         "en": "Paul Christiano",
-        "zh": "Paul Christiano（官方页拼写）"
+        "zh": "保罗·克里斯蒂亚诺"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -202,11 +218,11 @@
     {
       "name": {
         "en": "Jan Leike",
-        "zh": "Jan Leike（官方页拼写）"
+        "zh": "扬·莱克"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -214,14 +230,26 @@
     {
       "name": {
         "en": "Ryan Lowe",
-        "zh": "Ryan Lowe（官方页拼写）"
+        "zh": "瑞安·洛"
       },
       "role": {
-        "en": "Main contributor for InstructGPT in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 InstructGPT 主要人物"
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
+    },
+    {
+      "name": {
+        "en": "John Schulman",
+        "zh": "约翰·舒尔曼"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "figureType": "person",
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png"
     }
   ],
   "quote": {
@@ -236,14 +264,14 @@
     },
     "workAuthors": {
       "en": "Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Paul Christiano, Jan Leike, Ryan Lowe",
-      "zh": "Long Ouyang（官方页拼写）、Jeff Wu（官方页拼写）、Xu Jiang（官方页拼写）、Diogo Almeida（官方页拼写）、Carroll L. Wainwright（官方页拼写）、Pamela Mishkin（官方页拼写）、Paul Christiano（官方页拼写）、Jan Leike（官方页拼写）、Ryan Lowe（官方页拼写）"
+      "zh": "欧阳龙、杰夫·吴、徐江、迪奥戈·阿尔梅达、卡罗尔·L·温赖特、帕梅拉·米什金、保罗·克里斯蒂亚诺、扬·莱克、瑞安·洛、约翰·舒尔曼"
     },
     "sourceLabel": "",
-    "sourceUrl": "https://scholar.google.com/scholar?q=%22Training%20language%20models%20to%20follow%20instructions%20with%20human%20feedback%22"
+    "sourceUrl": "https://openai.com/index/instruction-following/"
   },
   "quotePage": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry",
-    "zh": "BenchCouncil AI100（2022-2023）年度条目"
+    "en": "Primary publication record",
+    "zh": "原始论文记录"
   },
   "quoteAttribution": {
     "en": "Training language models to follow instructions with human feedback",
@@ -255,50 +283,50 @@
       "zh": "大语言模型"
     },
     "method": {
-      "en": "Annual selection record",
-      "zh": "年度入选记录"
+      "en": "Supervised demonstrations, preference reward modeling and PPO",
+      "zh": "监督示范、偏好奖励建模与 PPO"
     },
     "artifact": {
-      "en": "InstructGPT",
-      "zh": "InstructGPT"
+      "en": "Instruction-following InstructGPT models",
+      "zh": "遵循指令的 InstructGPT 模型"
     },
     "material": {
-      "en": "Training language models to follow instructions with human feedback",
-      "zh": "《Training language models to follow instructions with human feedback》与官方年度行"
+      "en": "Human demonstrations, ranked model outputs and the InstructGPT paper",
+      "zh": "人类示范、模型输出排序与 InstructGPT 论文"
     },
     "demo": {
-      "en": "Trace the official row from InstructGPT to its publication, contributor field, institution, and country.",
-      "zh": "沿官方行查看 InstructGPT 如何关联到论文、主要人物字段、机构与国家。"
+      "en": "Move through the three stages and see how demonstrations become preferences, then become a reward signal for policy updates.",
+      "zh": "依次查看三个阶段，理解示范如何转成偏好，再转成更新策略的奖励信号。"
     },
     "keyConcepts": [
       {
         "label": {
-          "en": "Official Work",
-          "zh": "官方成果名称"
+          "en": "Demonstrations",
+          "zh": "示范数据"
         },
         "text": {
-          "en": "InstructGPT",
-          "zh": "InstructGPT"
+          "en": "Supervised instruction-response examples",
+          "zh": "监督式指令-回答样例"
         }
       },
       {
         "label": {
-          "en": "Main Contributors",
-          "zh": "主要人物"
+          "en": "Preferences",
+          "zh": "偏好数据"
         },
         "text": {
-          "en": "Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Paul Christiano, Jan Leike, Ryan Lowe",
-          "zh": "Long Ouyang（官方页拼写）、Jeff Wu（官方页拼写）、Xu Jiang（官方页拼写）、Diogo Almeida（官方页拼写）、Carroll L. Wainwright（官方页拼写）、Pamela Mishkin（官方页拼写）、Paul Christiano（官方页拼写）、Jan Leike（官方页拼写）、Ryan Lowe（官方页拼写）"
+          "en": "Humans rank competing model answers",
+          "zh": "人类排序多个候选回答"
         }
       },
       {
         "label": {
-          "en": "Institution",
-          "zh": "机构"
+          "en": "Policy optimization",
+          "zh": "策略优化"
         },
         "text": {
-          "en": "OpenAI",
-          "zh": "OpenAI"
+          "en": "PPO maximizes learned reward with a KL constraint",
+          "zh": "PPO 在 KL 约束下最大化学习到的奖励"
         }
       }
     ],
@@ -311,28 +339,28 @@
     ],
     "demoSteps": [
       {
-        "en": "Official work",
-        "zh": "官方成果名称"
+        "en": "Supervised fine-tuning",
+        "zh": "监督微调"
       },
       {
-        "en": "Publication record",
-        "zh": "论文记录"
+        "en": "Train reward model",
+        "zh": "训练奖励模型"
       },
       {
-        "en": "Contributors and institution",
-        "zh": "主要人物与机构"
+        "en": "Optimize policy with PPO",
+        "zh": "使用 PPO 优化策略"
       }
     ],
     "demoImage": "resources/images/benchcouncil-ai100-annual/annual-048-instructgpt_record.svg",
     "demoNotes": [
       {
         "label": {
-          "en": "Source cue",
+          "en": "Evidence cue",
           "zh": "资料线索"
         },
         "text": {
-          "en": "Training language models to follow instructions with human feedback",
-          "zh": "《Training language models to follow instructions with human feedback》与 BenchCouncil 年度行"
+          "en": "The paper compares the three training stages and human preference evaluations against GPT-3 baselines.",
+          "zh": "论文对照三阶段训练流程，并使用人类偏好评测与 GPT-3 基线比较。"
         }
       },
       {
@@ -341,8 +369,8 @@
           "zh": "互动点"
         },
         "text": {
-          "en": "Trace the official row from InstructGPT to its publication, contributor field, institution, and country.",
-          "zh": "沿官方行查看 InstructGPT 如何关联到论文、主要人物字段、机构与国家。"
+          "en": "Move through the three stages and see how demonstrations become preferences, then become a reward signal for policy updates.",
+          "zh": "依次查看三个阶段，理解示范如何转成偏好，再转成更新策略的奖励信号。"
         }
       }
     ],
@@ -350,30 +378,30 @@
       {
         "type": "archiveLink",
         "site": {
-          "en": "Primary publication",
-          "zh": "主论文"
+          "en": "OpenAI research",
+          "zh": "OpenAI 研究页面"
         },
         "title": {
-          "en": "Training language models to follow instructions with human feedback",
-          "zh": "《Training language models to follow instructions with human feedback》"
+          "en": "Aligning language models to follow instructions",
+          "zh": "让语言模型遵循指令"
         },
         "description": {
-          "en": "Publication associated with this work by the BenchCouncil annual table.",
-          "zh": "BenchCouncil 年度表为该成果关联的论文。"
+          "en": "OpenAI explains the InstructGPT training stages, human evaluation and safety limitations.",
+          "zh": "OpenAI 说明 InstructGPT 的训练阶段、人类评测与安全局限。"
         },
-        "url": "https://scholar.google.com/scholar?q=%22Training%20language%20models%20to%20follow%20instructions%20with%20human%20feedback%22",
-        "source": "https://scholar.google.com/scholar?q=%22Training%20language%20models%20to%20follow%20instructions%20with%20human%20feedback%22",
+        "url": "https://openai.com/index/instruction-following/",
+        "action": {
+          "en": "Open InstructGPT page",
+          "zh": "打开 InstructGPT 页面"
+        },
+        "source": "https://openai.com/index/instruction-following/",
         "license": {
-          "en": "Reference link only; local visuals are original redraws.",
-          "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+          "en": "Reference link only; the local explainer is an original redraw.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
         },
         "usage": {
-          "en": "Publication and evidence reference",
-          "zh": "论文与证据参考"
-        },
-        "action": {
-          "en": "Open publication",
-          "zh": "打开论文"
+          "en": "Technical, historical and interaction reference",
+          "zh": "技术、历史与互动说明参考"
         }
       }
     ],

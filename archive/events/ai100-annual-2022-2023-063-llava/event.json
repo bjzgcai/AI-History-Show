@@ -7,12 +7,12 @@
     "zh": "LLaVA"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in LLM",
-    "zh": "BenchCouncil AI100（2022-2023）大语言模型年度条目"
+    "en": "Visual instruction tuning that connects a vision encoder to a language model",
+    "zh": "把视觉编码器连接到语言模型的视觉指令微调方法"
   },
   "description": {
-    "en": "<p>BenchCouncil lists LLaVA in the LLM area of its AI100 (2022-2023) annual table. It associates the work with the publication “Visual instruction tuning”. The page names Haotian Liu, Chunyuan Li, Yong Jae Lee as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“大语言模型”领域列出 LLaVA。该条目关联论文《Visual instruction tuning》。页面把 Haotian Liu（官方页拼写）、Chunyuan Li（官方页拼写）、Yong Jae Lee（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>LLaVA builds a large language-and-vision assistant by connecting a frozen CLIP vision encoder to a large language model through a learned projection. GPT-4 is used to turn image captions and bounding-box descriptions into conversational instruction-following data.</p><p>A feature-alignment stage first teaches the projection to connect the two modalities, followed by visual instruction tuning for conversation and reasoning.</p>",
+    "zh": "<p>LLaVA 通过一个可学习投影，把冻结的 CLIP 视觉编码器连接到大语言模型，从而构建大型语言视觉助手。研究使用 GPT-4 把图像描述与边界框信息转换成对话式视觉指令数据。</p><p>特征对齐阶段先教会投影层连接两种模态，随后通过视觉指令微调获得对话与推理能力。</p>"
   },
   "location": {
     "regionId": "united-states",
@@ -40,23 +40,24 @@
       "figureId": "haotian-liu",
       "name": {
         "en": "Haotian Liu",
-        "zh": "Haotian Liu（官方页拼写）"
+        "zh": "刘昊天"
       },
       "role": {
-        "en": "Main contributor for LLaVA in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 LLaVA 主要人物"
+        "en": "First author of the LLaVA paper",
+        "zh": "LLaVA 论文第一作者"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2023-llava/haotian-liu.jpg"
     },
     {
       "figureId": "chunyuan-li",
       "name": {
         "en": "Chunyuan Li",
-        "zh": "Chunyuan Li（官方页拼写）"
+        "zh": "李春源"
       },
       "role": {
-        "en": "Main contributor for LLaVA in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 LLaVA 主要人物"
+        "en": "Co-first author of the LLaVA paper",
+        "zh": "LLaVA 论文共同第一作者"
       },
       "organizationIds": []
     },
@@ -64,11 +65,11 @@
       "figureId": "yong-jae-lee",
       "name": {
         "en": "Yong Jae Lee",
-        "zh": "Yong Jae Lee（官方页拼写）"
+        "zh": "李永宰"
       },
       "role": {
-        "en": "Main contributor for LLaVA in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 LLaVA 主要人物"
+        "en": "Co-author of the LLaVA paper",
+        "zh": "LLaVA 论文共同作者"
       },
       "organizationIds": []
     }
@@ -78,8 +79,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 63 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 63 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed event-specific research on 2026-08-03. The exact BenchCouncil title, order, contributor prefix, institution, country and blank official fields were preserved. All listed people were checked against primary authorship evidence; portrait searches were completed and one identity-matched, attributed external-reference image was selected.",
+      "zh": "于 2026-08-03 完成事件专项研究。准确保留 BenchCouncil 的标题、顺序、人物前缀、机构、国家与官方空字段。所有列出人物均通过原始作者证据核对；肖像检索已完成，选择一张身份匹配且保留署名的外部参考图片。"
     }
   }
 }

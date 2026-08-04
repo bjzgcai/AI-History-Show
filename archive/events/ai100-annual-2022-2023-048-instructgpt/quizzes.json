@@ -3,35 +3,35 @@
     "id": "ai100-annual-2022-2023-048-instructgpt-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to InstructGPT?",
-      "zh": "BenchCouncil 年度表把 InstructGPT 归入哪个领域？"
+      "en": "What supplies the reward signal in InstructGPT?",
+      "zh": "InstructGPT 的奖励信号来自什么？"
     },
     "options": [
       {
-        "en": "LLM",
-        "zh": "大语言模型"
+        "en": "A model learned from human preference rankings",
+        "zh": "从人类偏好排序中学习的奖励模型"
       },
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "Only next-token likelihood",
+        "zh": "只有下一个 token 的似然"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "A fixed grammar checker",
+        "zh": "固定语法检查器"
       },
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "Random scores",
+        "zh": "随机分数"
       }
     ],
-    "answer": 0,
     "explanation": {
-      "en": "InstructGPT appears in the LLM area of the official annual table.",
-      "zh": "InstructGPT 位于官方年度表的“大语言模型”领域。"
+      "en": "Human rankings train a reward model, which then guides PPO policy optimization.",
+      "zh": "人类排序用于训练奖励模型，随后由它指导 PPO 策略优化。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-instructgpt-paper"
     ],
+    "answer": 0,
     "assetIds": [
       "asset-annual-048-instructgpt-record"
     ]

@@ -5,22 +5,21 @@
     "path": "resources/images/benchcouncil-ai100-annual/annual-087-gen2_record.svg",
     "role": "annual-achievement-explainer",
     "caption": {
-      "en": "Gen2 annual evidence map",
-      "zh": "Gen2 年度证据图"
+      "en": "Gen-2 conditioning modes",
+      "zh": "Gen-2 条件生成模式"
     },
     "subcaption": {
-      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
-      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+      "en": "Combine semantic prompts with visual references to guide a generated video",
+      "zh": "结合语义提示与视觉参考，引导生成视频"
     },
     "sourceIds": [
-      "source-primary-record",
-      "source-benchcouncil-annual"
+      "source-primary-record"
     ],
     "sourceName": {
-      "en": "BenchCouncil and publication metadata",
-      "zh": "BenchCouncil 与论文元数据"
+      "en": "Gen-2 by Runway Research",
+      "zh": "Runway Research：Gen-2"
     },
-    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "sourceUrl": "https://runway.com/research/gen-2",
     "rights": {
       "status": "original-redraw",
       "license": {
@@ -33,12 +32,54 @@
       }
     },
     "displayUsage": {
-      "en": "Annual record explainer",
-      "zh": "年度记录解释图"
+      "en": "Original achievement explainer",
+      "zh": "原创成就解释图"
     },
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-annual-087-gen2-official-text-to-video-example",
+    "type": "image",
+    "path": "resources/images/external/ai100-2023-gen2/gen2-official-text-to-video-example.jpg",
+    "role": "supporting-image",
+    "caption": {
+      "en": "Gen-2 official text-to-video example frame",
+      "zh": "Gen-2 官方文生视频示例帧"
+    },
+    "subcaption": {
+      "en": "Runway used this generated interior scene to demonstrate the released text-to-video mode.",
+      "zh": "Runway 使用这幅生成的室内场景展示发布时的文生视频模式。"
+    },
+    "sourceId": "source-gen2-official-t2v-example",
+    "sourceName": {
+      "en": "Runway Gen-2 official research page",
+      "zh": "Runway Gen-2 官方研究页"
+    },
+    "sourceUrl": "https://runway.com/research/gen-2",
+    "imageUrl": "https://d3phaj0sisr2ct.cloudfront.net/research/gen2/WebGEN2R_T2V/WebGEN2R_T2V.jpg",
+    "sourceReliability": "primary-paper-or-official-project-image",
+    "provenanceNotes": {
+      "en": "Downloaded from the named primary paper, official project repository or official release page and retained with direct source attribution.",
+      "zh": "图片下载自主论文、官方项目仓库或官方发布页，并保留直接来源标注。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Primary-source reference image displayed with attribution under the project's relaxed reference-image policy.",
+        "zh": "主来源参考图片；依据项目放宽后的参考图片策略展示，并保留完整来源标注。"
+      },
+      "attribution": "Runway"
+    },
+    "displayUsage": {
+      "en": "Official product example",
+      "zh": "官方产品示例图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
   }
 ]

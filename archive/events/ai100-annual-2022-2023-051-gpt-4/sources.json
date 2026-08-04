@@ -7,8 +7,8 @@
       "zh": "官方页面"
     },
     "title": {
-      "en": "GPT-4 official project page",
-      "zh": "GPT-4 官方项目页面"
+      "en": "GPT-4 research release",
+      "zh": "GPT-4 研究发布页"
     },
     "authors": [],
     "year": 2023,
@@ -17,8 +17,8 @@
     "purpose": "core-evidence",
     "reliability": "primary",
     "notes": {
-      "en": "Publication or official work page resolved from the exact title in the BenchCouncil annual table.",
-      "zh": "依据 BenchCouncil 年度表中的准确标题解析出的论文或官方项目页面。"
+      "en": "Official OpenAI release page used for multimodal scope, benchmark summary, limitations and launch context.",
+      "zh": "OpenAI 官方发布页，用于核对多模态范围、基准摘要、局限与发布背景。"
     }
   },
   {
@@ -37,8 +37,8 @@
     "purpose": "bibliographic-verification",
     "reliability": "secondary",
     "notes": {
-      "en": "Bibliographic metadata used to verify the publication year and landing page.",
-      "zh": "用于核对出版年份与落地页面的书目元数据。"
+      "en": "Bibliographic metadata is retained only as a secondary cross-check; technical and identity claims use primary records.",
+      "zh": "书目元数据仅作为辅助交叉核对；技术与人物主张使用原始记录。"
     }
   },
   {
@@ -59,6 +59,146 @@
     "notes": {
       "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
       "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+    }
+  },
+  {
+    "id": "source-technical-report",
+    "type": "report",
+    "label": {
+      "en": "Report",
+      "zh": "报告"
+    },
+    "title": {
+      "en": "GPT-4 Technical Report",
+      "zh": "《GPT-4 技术报告》"
+    },
+    "url": "https://arxiv.org/abs/2303.08774",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary technical report describing capability evaluation, training predictability, limitations and safety work.",
+      "zh": "主要技术报告，说明能力评测、训练可预测性、局限与安全工作。"
+    }
+  },
+  {
+    "id": "source-system-card",
+    "type": "report",
+    "label": {
+      "en": "Report",
+      "zh": "报告"
+    },
+    "title": {
+      "en": "GPT-4 System Card",
+      "zh": "《GPT-4 系统卡》"
+    },
+    "url": "https://cdn.openai.com/papers/gpt-4-system-card.pdf",
+    "language": "en",
+    "purpose": "background",
+    "reliability": "primary",
+    "notes": {
+      "en": "OpenAI system card documenting risk evaluation, red teaming and mitigations around the release.",
+      "zh": "OpenAI 系统卡，记录发布前后的风险评测、红队测试与缓解措施。"
+    }
+  },
+  {
+    "id": "source-gpt4-figure-4",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "GPT-4 Figure 4: academic and professional exams",
+      "zh": "GPT-4 Figure 4：学术与职业考试表现"
+    },
+    "url": "https://ar5iv.labs.arxiv.org/html/2303.08774/assets/x4.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Figure 4 from the GPT-4 Technical Report compares GPT-4 and GPT-3.5 percentiles across academic and professional exams. It became one of the release's most frequently reproduced evaluation graphics, but it summarizes benchmark results rather than model architecture; the existing original local explainer remains the single selected explanatory image, and no separate redistribution license is stated for the figure.",
+      "zh": "GPT-4 技术报告 Figure 4 比较 GPT-4 与 GPT-3.5 在多项学术和职业考试中的百分位表现，是发布时最常被引用的评测图之一。它说明基准结果而非模型架构；页面仍只选用现有本地原创解释图，论文未为该图单独声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-openai-founding",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Introducing OpenAI",
+      "zh": "OpenAI 成立公告"
+    },
+    "url": "https://openai.com/index/introducing-openai/",
+    "language": "en",
+    "purpose": "official-statement",
+    "reliability": "primary",
+    "notes": {
+      "en": "OpenAI's December 2015 founding announcement names Sam Altman as co-chair and Greg Brockman as CTO. It is used only to establish their founding-era company roles, not GPT-4 authorship.",
+      "zh": "OpenAI 2015 年 12 月成立公告将 Sam Altman 列为联合主席、Greg Brockman 列为 CTO。这里只用它核对两人在公司创立时期的角色，不据此主张两人是 GPT-4 作者。"
+    }
+  },
+  {
+    "id": "source-sam-altman-ted",
+    "type": "profile",
+    "label": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "title": {
+      "en": "Sam Altman - TED speaker profile",
+      "zh": "山姆·奥特曼 TED 人物页"
+    },
+    "url": "https://www.ted.com/speakers/sam_altman",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "secondary",
+    "notes": {
+      "en": "TED's named speaker page identifies Sam Altman as OpenAI CEO and publishes a clear matching portrait. It verifies identity and leadership context, not authorship of GPT-4; the portrait has no stated redistribution license.",
+      "zh": "TED 具名人物页将山姆·奥特曼标为 OpenAI CEO，并发布清晰匹配的肖像。该页用于核对身份和公司领导背景，不证明其为 GPT-4 作者；肖像未声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-greg-brockman-ted",
+    "type": "profile",
+    "label": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "title": {
+      "en": "Greg Brockman - TED speaker profile",
+      "zh": "格雷格·布罗克曼 TED 人物页"
+    },
+    "url": "https://www.ted.com/speakers/greg_brockman",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "secondary",
+    "notes": {
+      "en": "TED's named speaker page labels Greg Brockman an OpenAI cofounder, publishes a clear matching portrait and links its account of his TED2023 GPT-4 demonstration. It supports identity and launch context but not a claim of GPT-4 authorship; the portrait has no stated redistribution license.",
+      "zh": "TED 具名人物页将格雷格·布罗克曼标为 OpenAI 联合创始人，发布清晰匹配的肖像，并链接其 TED2023 GPT-4 演示记录。该页支持身份与发布语境核验，不证明其为 GPT-4 作者；肖像未声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-openai-logo",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "OpenAI 2017 logo - Wikimedia Commons mirror",
+      "zh": "OpenAI 2017 标识 - Wikimedia Commons 镜像"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:OpenAI_Logo.svg",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "secondary",
+    "notes": {
+      "en": "The Commons file page identifies OpenAI as both source and author of this 2017 wordmark-and-knot logo and links the original SVG. Commons marks the text logo public domain for copyright purposes while warning that it remains trademarked; any display must be neutral company identification and follow OpenAI's current brand rules. It is documented as a company-symbol candidate and is not added as a second selected event visual.",
+      "zh": "Commons 文件页将 OpenAI 标为这版 2017 字标与结形标识的来源和作者，并提供原始 SVG。Commons 将其按文字标识视为版权层面的公有领域，同时明确提示仍受商标限制；实际展示只能用于中性的公司识别，并应遵守 OpenAI 当前品牌规则。这里只记录为公司象征图片候选，不作为第二张选用的事件解释图。"
     }
   }
 ]

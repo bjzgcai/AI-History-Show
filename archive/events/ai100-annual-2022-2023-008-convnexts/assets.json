@@ -1,26 +1,67 @@
 [
   {
+    "id": "asset-annual-008-convnexts-portrait-zhuang-liu",
+    "type": "image",
+    "path": "resources/images/external/ai100-2022-convnexts/zhuang-liu.png",
+    "role": "portrait",
+    "caption": {
+      "en": "Zhuang Liu portrait",
+      "zh": "刘壮肖像"
+    },
+    "subcaption": {
+      "en": "First author of A ConvNet for the 2020s and a main contributor listed by BenchCouncil",
+      "zh": "《A ConvNet for the 2020s》第一作者，BenchCouncil 列出的主要人物"
+    },
+    "sourceId": "source-annual-008-convnexts-portrait-zhuang-liu",
+    "sourceName": {
+      "en": "Zhuang Liu academic homepage",
+      "zh": "刘壮学术主页"
+    },
+    "sourceUrl": "https://liuzhuang13.github.io/",
+    "sourceReliability": "primary-identity-source",
+    "provenanceNotes": {
+      "en": "The portrait is displayed on Zhuang Liu's own homepage beside his identity, Chinese-name graphic, current academic role, prior Facebook AI Research role, UC Berkeley Ph.D. and ConvNeXt publication entry.",
+      "zh": "该肖像展示在刘壮本人主页中，与其姓名、中文名图片、现任学术职务、曾任 Facebook AI Research 研究员、伯克利博士经历和 ConvNeXt 论文条目同时出现。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The source does not state redistribution rights; retain attribution and recheck before redistribution outside this project.",
+        "zh": "来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+      },
+      "attribution": "Zhuang Liu academic homepage"
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
     "id": "asset-annual-008-convnexts-record",
     "type": "svg",
     "path": "resources/images/benchcouncil-ai100-annual/annual-008-convnexts_record.svg",
     "role": "annual-achievement-explainer",
     "caption": {
-      "en": "ConvNeXts annual evidence map",
-      "zh": "ConvNeXts 年度证据图"
+      "en": "ConvNeXt modernization path",
+      "zh": "ConvNeXt 现代化路径"
     },
     "subcaption": {
-      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
-      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+      "en": "Original explainer tracing a ResNet through modern training, macro design and block design to a scalable pure ConvNet.",
+      "zh": "追踪 ResNet 如何经过现代训练、宏观设计与模块设计形成可扩展纯卷积网络的原创解释图。"
     },
     "sourceIds": [
       "source-primary-record",
-      "source-benchcouncil-annual"
+      "source-arxiv-paper"
     ],
     "sourceName": {
-      "en": "BenchCouncil and publication metadata",
-      "zh": "BenchCouncil 与论文元数据"
+      "en": "CVPR paper and arXiv full paper",
+      "zh": "CVPR 论文与 arXiv 全文"
     },
-    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Liu_A_ConvNet_for_the_2020s_CVPR_2022_paper.html",
     "rights": {
       "status": "original-redraw",
       "license": {
@@ -33,8 +74,8 @@
       }
     },
     "displayUsage": {
-      "en": "Annual record explainer",
-      "zh": "年度记录解释图"
+      "en": "Architecture modernization explainer",
+      "zh": "架构现代化解释图"
     },
     "usage": [
       "variant:bench-council-ai100-2022-2023"

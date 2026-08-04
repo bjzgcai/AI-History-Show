@@ -3,25 +3,27 @@
     "id": "source-primary-record",
     "type": "paper-page",
     "label": {
-      "en": "Paper page",
-      "zh": "论文页面"
+      "en": "Conference paper page",
+      "zh": "会议论文页面"
     },
     "title": {
-      "en": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
-      "zh": "《Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models》"
+      "en": "BLIP-2 - ICML 2023 Proceedings",
+      "zh": "《BLIP-2》ICML 2023 论文页面"
     },
     "authors": [
       "Junnan Li",
+      "Dongxu Li",
+      "Silvio Savarese",
       "Steven Hoi"
     ],
     "year": 2023,
-    "url": "https://doi.org/10.48550/arxiv.2301.12597",
+    "url": "https://proceedings.mlr.press/v202/li23q.html",
     "language": "en",
     "purpose": "core-evidence",
     "reliability": "primary",
     "notes": {
-      "en": "Publication or official work page resolved from the exact title in the BenchCouncil annual table.",
-      "zh": "依据 BenchCouncil 年度表中的准确标题解析出的论文或官方项目页面。"
+      "en": "Primary ICML record used to verify the author list, frozen-model design, two-stage training and reported evaluation.",
+      "zh": "用于核对作者表、冻结模型设计、两阶段训练与报告评测结果的 ICML 原始记录。"
     }
   },
   {
@@ -40,8 +42,8 @@
     "purpose": "bibliographic-verification",
     "reliability": "secondary",
     "notes": {
-      "en": "Bibliographic metadata used to verify the publication year and landing page.",
-      "zh": "用于核对出版年份与落地页面的书目元数据。"
+      "en": "Bibliographic metadata is retained only as a secondary cross-check; technical and identity claims use primary records.",
+      "zh": "书目元数据仅作为辅助交叉核对；技术与人物主张使用原始记录。"
     }
   },
   {
@@ -62,6 +64,126 @@
     "notes": {
       "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
       "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+    }
+  },
+  {
+    "id": "source-annual-028-blip-2-portrait-junnan-li",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Junnan Li portrait source",
+      "zh": "李俊楠人物图片来源"
+    },
+    "url": "https://github.com/LiJunnan1992",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "secondary",
+    "notes": {
+      "en": "The exact-name GitHub account publishes this portrait and is directly listed among contributors to Salesforce's official LAVIS repository. Reliability: researcher-controlled-account-cross-linked-to-official-repository. Usage note: The source states no redistribution license; retain attribution and recheck before redistribution outside this project.",
+      "zh": "该同名 GitHub 账号发布此肖像，并直接列在 Salesforce 官方 LAVIS 仓库贡献者中。 可靠性：researcher-controlled-account-cross-linked-to-official-repository。使用备注：来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+    }
+  },
+  {
+    "id": "source-arxiv-paper",
+    "type": "paper-page",
+    "label": {
+      "en": "Preprint page",
+      "zh": "预印本页面"
+    },
+    "title": {
+      "en": "BLIP-2 - arXiv",
+      "zh": "《BLIP-2》arXiv 页面"
+    },
+    "url": "https://arxiv.org/abs/2301.12597",
+    "language": "en",
+    "purpose": "alternate-access",
+    "reliability": "primary",
+    "notes": {
+      "en": "Author-submitted full paper with the complete method and experiments.",
+      "zh": "作者提交的全文，包含完整方法与实验。"
+    }
+  },
+  {
+    "id": "source-lavis-repository",
+    "type": "code",
+    "label": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "title": {
+      "en": "Salesforce LAVIS official repository",
+      "zh": "Salesforce LAVIS 官方仓库"
+    },
+    "url": "https://github.com/salesforce/LAVIS",
+    "language": "en",
+    "purpose": "implementation",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official Salesforce repository containing BLIP-2 models, checkpoints and usage instructions.",
+      "zh": "Salesforce 官方仓库，包含 BLIP-2 模型、检查点与使用说明。"
+    }
+  },
+  {
+    "id": "source-junnan-github-profile",
+    "type": "profile",
+    "label": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "title": {
+      "en": "Junnan Li GitHub profile",
+      "zh": "李俊楠 GitHub 个人资料"
+    },
+    "url": "https://github.com/LiJunnan1992",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Researcher-controlled profile using the exact author name and publishing the selected photograph. The same account is directly listed as a contributor to Salesforce's official LAVIS repository; no redistribution license is stated for the avatar.",
+      "zh": "研究者本人维护的资料页使用与论文作者完全相同的姓名并发布所选照片；同一账号直接列在 Salesforce 官方 LAVIS 仓库贡献者中。头像未声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-blip2-qformer-figure",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "BLIP-2 Figure 2: Q-Former and first-stage objectives",
+      "zh": "BLIP-2 Figure 2：Q-Former 与第一阶段目标"
+    },
+    "url": "https://ar5iv.labs.arxiv.org/html/2301.12597/assets/x2.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Paper-rendered Figure 2 shows the Q-Former architecture, three first-stage objectives and their attention masks. It is a strong commonly used technical screenshot, but the existing original local explainer remains the single selected explanatory image; the paper figure has no separate redistribution license stated on the HTML rendering.",
+      "zh": "论文 HTML 渲染的 Figure 2 展示 Q-Former 架构、三个第一阶段目标及其注意力掩码。它是常用且说明力强的技术截图，但页面仍只选用现有本地原创解释图；论文 HTML 未为该图单独声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-blip2-official-architecture",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "BLIP-2 architecture illustration in the official LAVIS repository",
+      "zh": "LAVIS 官方仓库中的 BLIP-2 架构图"
+    },
+    "url": "https://github.com/salesforce/LAVIS/blob/main/projects/blip2/blip2_illustration.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Salesforce's official LAVIS repository publishes the selected Q-Former architecture illustration.",
+      "zh": "Salesforce 官方 LAVIS 仓库发布了所选的 Q-Former 架构图。"
     }
   }
 ]

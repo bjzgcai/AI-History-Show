@@ -7,12 +7,12 @@
     "zh": "AlphaTensor"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in AI4Others",
-    "zh": "BenchCouncil AI100（2022-2023）AI 其他应用年度条目"
+    "en": "A reinforcement-learning system that discovered new algorithms for matrix multiplication",
+    "zh": "使用强化学习发现新矩阵乘法算法的系统"
   },
   "description": {
-    "en": "<p>BenchCouncil lists AlphaTensor in the AI4Others area of its AI100 (2022-2023) annual table. It associates the work with the publication “Discovering faster matrix multiplication algorithms with reinforcement learning”. The page names Alhussein Fawzi, Matej Balog, Aja Huang, Thomas Hubert, Bernardino Romera-Paredes, Pushmeet Kohli as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“AI 其他应用”领域列出 AlphaTensor。该条目关联论文《Discovering faster matrix multiplication algorithms with reinforcement learning》。页面把 Alhussein Fawzi（官方页拼写）、Matej Balog（官方页拼写）、黄士杰、Thomas Hubert（官方页拼写）、Bernardino Romera-Paredes（官方页拼写）、Pushmeet Kohli（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>AlphaTensor represented matrix multiplication as a tensor-decomposition game and trained an AlphaZero-style agent to search for efficient sequences of rank-one updates. This converted a longstanding mathematical algorithm-design problem into a reinforcement-learning environment.</p><p>The system rediscovered known methods and found improved algorithms for several matrix sizes, including a finite-field result beyond the 1969 Strassen benchmark for 4 x 4 matrices. It demonstrated that learned search can contribute new algorithmic knowledge rather than only optimize an existing implementation.</p>",
+    "zh": "<p>AlphaTensor 把矩阵乘法表示为张量分解游戏，并训练类似 AlphaZero 的智能体搜索高效的秩一更新序列。这样，一个长期存在的数学算法设计问题被转化为强化学习环境。</p><p>系统既重新发现已知方法，也为若干矩阵规模找到改进算法，其中包括在有限域上超越 1969 年 Strassen 4 x 4 矩阵乘法结果的方法。它证明学习式搜索能够贡献新的算法知识，而不只是优化既有实现。</p>"
   },
   "location": {
     "regionId": "united-states",
@@ -40,11 +40,11 @@
       "figureId": "alhussein-fawzi",
       "name": {
         "en": "Alhussein Fawzi",
-        "zh": "Alhussein Fawzi（官方页拼写）"
+        "zh": "侯赛因·法兹"
       },
       "role": {
-        "en": "Main contributor for AlphaTensor in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 AlphaTensor 主要人物"
+        "en": "First author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文第一作者"
       },
       "organizationIds": []
     },
@@ -52,11 +52,11 @@
       "figureId": "matej-balog",
       "name": {
         "en": "Matej Balog",
-        "zh": "Matej Balog（官方页拼写）"
+        "zh": "马泰·巴洛格"
       },
       "role": {
-        "en": "Main contributor for AlphaTensor in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 AlphaTensor 主要人物"
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
       },
       "organizationIds": []
     },
@@ -67,8 +67,8 @@
         "zh": "黄士杰"
       },
       "role": {
-        "en": "Main contributor for AlphaTensor in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 AlphaTensor 主要人物"
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
       },
       "organizationIds": []
     },
@@ -76,11 +76,11 @@
       "figureId": "thomas-hubert",
       "name": {
         "en": "Thomas Hubert",
-        "zh": "Thomas Hubert（官方页拼写）"
+        "zh": "托马斯·于贝尔"
       },
       "role": {
-        "en": "Main contributor for AlphaTensor in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 AlphaTensor 主要人物"
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
       },
       "organizationIds": []
     },
@@ -88,11 +88,11 @@
       "figureId": "bernardino-romera-paredes",
       "name": {
         "en": "Bernardino Romera-Paredes",
-        "zh": "Bernardino Romera-Paredes（官方页拼写）"
+        "zh": "贝尔纳迪诺·罗梅拉-帕雷德斯"
       },
       "role": {
-        "en": "Main contributor for AlphaTensor in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 AlphaTensor 主要人物"
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
       },
       "organizationIds": []
     },
@@ -100,13 +100,14 @@
       "figureId": "pushmeet-kohli",
       "name": {
         "en": "Pushmeet Kohli",
-        "zh": "Pushmeet Kohli（官方页拼写）"
+        "zh": "普什米特·科利"
       },
       "role": {
-        "en": "Main contributor for AlphaTensor in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 AlphaTensor 主要人物"
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/pushmeet-kohli.jpg"
     }
   ],
   "organizations": [],
@@ -114,8 +115,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 114 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 114 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+      "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
     }
   }
 }

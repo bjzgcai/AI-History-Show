@@ -7,12 +7,12 @@
     "zh": "ESMFold"
   },
   "displaySummary": {
-    "en": "AI100 (2022-2023) · AI4Science",
-    "zh": "AI100（2022-2023）· AI for Science"
+    "en": "AI100 (2022-2023) · Language-model protein folding",
+    "zh": "AI100（2022-2023）· 语言模型蛋白质折叠"
   },
   "displayDescription": {
-    "en": "<p>BenchCouncil lists ESMFold in the AI4Science area of its AI100 (2022-2023) annual table. It associates the work with the publication “Evolutionary-scale prediction of atomic-level protein structure with a language model”. The page names Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Alexander Rives as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“AI for Science”领域列出 ESMFold。该条目关联论文《Evolutionary-scale prediction of atomic-level protein structure with a language model》。页面把 Zeming Lin（官方页拼写）、Halil Akin（官方页拼写）、Roshan Rao（官方页拼写）、Brian Hie（官方页拼写）、Alexander Rives（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>ESMFold predicts atomic-level protein structures directly from a single amino-acid sequence using representations learned by the ESM-2 protein language model. It avoids the multiple-sequence-alignment search used by many earlier high-accuracy pipelines, enabling much faster inference across very large sequence collections.</p><p>The accompanying work used this speed to explore hundreds of millions of metagenomic protein sequences and release the ESM Metagenomic Atlas.</p>",
+    "zh": "<p>ESMFold 使用 ESM-2 蛋白质语言模型学到的表示，直接从单条氨基酸序列预测原子级蛋白质结构。它不依赖许多早期高精度流程使用的多序列比对搜索，因此能够更快地处理超大规模序列集合。</p><p>相关工作利用这种速度探索数亿条宏基因组蛋白质序列，并发布 ESM Metagenomic Atlas。</p>"
   },
   "emphasis": [
     "benchcouncil-annual-2022-2023",
@@ -23,46 +23,56 @@
     {
       "type": "archiveLink",
       "site": {
-        "en": "Primary publication",
-        "zh": "主论文"
+        "en": "Science",
+        "zh": "Science"
       },
       "title": {
         "en": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
         "zh": "《Evolutionary-scale prediction of atomic-level protein structure with a language model》"
       },
       "description": {
-        "en": "Publication associated with this work by the BenchCouncil annual table.",
-        "zh": "BenchCouncil 年度表为该成果关联的论文。"
+        "en": "The journal record anchors the authorship and the evidence for single-sequence folding at metagenomic scale.",
+        "zh": "期刊记录提供作者信息，并支撑宏基因组规模单序列折叠的证据。"
       },
-      "url": "https://doi.org/10.1126/science.ade2574",
-      "source": "https://doi.org/10.1126/science.ade2574",
+      "url": "https://www.science.org/doi/10.1126/science.ade2574",
+      "source": "https://www.science.org/doi/10.1126/science.ade2574",
       "license": {
-        "en": "Reference link only; local visuals are original redraws.",
-        "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+        "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
       },
       "usage": {
-        "en": "Publication and evidence reference",
-        "zh": "论文与证据参考"
+        "en": "Primary technical or official release evidence",
+        "zh": "主要技术或官方发布证据"
       },
       "action": {
-        "en": "Open publication",
-        "zh": "打开论文"
+        "en": "Open Science paper page",
+        "zh": "打开 Science 论文页面"
       }
     }
   ],
   "assetIds": [
+    "asset-annual-110-esmfold-portrait-brian-hie",
+    "asset-annual-110-esmfold-paper-figure-2",
     "asset-annual-110-esmfold-record"
   ],
-  "overviewImageAssetId": "asset-annual-110-esmfold-record",
+  "overviewImageAssetId": "asset-annual-110-esmfold-portrait-brian-hie",
   "sourceIds": [
     "source-primary-record",
     "source-openalex-record",
-    "source-benchcouncil-annual"
+    "source-benchcouncil-annual",
+    "source-annual-110-esmfold-portrait-brian-hie",
+    "source-biorxiv-preprint",
+    "source-esm-repository",
+    "source-meta-esmfold",
+    "source-brian-hie-stanford-profile",
+    "source-esmfold-figure-2"
   ],
   "claimIds": [
     "claim-annual-membership",
     "claim-publication-record",
-    "claim-contributor-record"
+    "claim-contributor-record",
+    "claim-single-sequence",
+    "claim-metagenomic-scale"
   ],
   "quizId": "ai100-annual-2022-2023-110-esmfold-quiz-1",
   "commentarySections": [
@@ -73,11 +83,12 @@
         "zh": "历史背景"
       },
       "html": {
-        "en": "BenchCouncil published this row as part of its AI100 (2022-2023) annual selection in the AI4Science area. The annual list captures a time-bounded view of prominent recent work rather than the membership of the long-term AI100 table.",
-        "zh": "BenchCouncil 把该行发布在 AI100（2022-2023）年度入选表的“AI for Science”领域中。年度表记录的是当时对近期代表性工作的阶段性观察，不等同于长期 AI100 主表成员。"
+        "en": "High-accuracy protein structure prediction had made a major leap, but many pipelines still depended on computationally expensive searches for evolutionary relatives. ESMFold explored whether a large protein language model could internalize enough evolutionary information to predict structure directly from one sequence.",
+        "zh": "高精度蛋白质结构预测已经取得重大突破，但许多流程仍依赖计算昂贵的进化同源序列搜索。ESMFold 探索大型蛋白质语言模型能否内化足够的进化信息，从单条序列直接预测结构。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-primary-record",
+        "source-biorxiv-preprint"
       ]
     },
     {
@@ -87,12 +98,12 @@
         "zh": "核心思想"
       },
       "html": {
-        "en": "The official work name is ESMFold, linked by the table to “Evolutionary-scale prediction of atomic-level protein structure with a language model”. Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Alexander Rives are preserved in the same order as the Main Contributors cell. The institution field is Meta,New York University, Stanford University, MIT.",
-        "zh": "官方成果名称为 ESMFold，表格将其关联到论文《Evolutionary-scale prediction of atomic-level protein structure with a language model》。Zeming Lin（官方页拼写）、Halil Akin（官方页拼写）、Roshan Rao（官方页拼写）、Brian Hie（官方页拼写）、Alexander Rives（官方页拼写） 按“主要人物”单元格中的相同顺序显示。官方英文拼写与顺序保存在年度记录中，机构字段为 Meta、New York University、Stanford University、麻省理工学院。"
+        "en": "ESM-2 learns contextual representations from large protein sequence databases, and a folding trunk converts those representations into three-dimensional coordinates and confidence estimates. Removing the multiple-sequence-alignment stage trades some peak accuracy for dramatically higher throughput and a simpler single-sequence workflow.",
+        "zh": "ESM-2 从大型蛋白质序列数据库学习上下文表示，折叠主干再把这些表示转换为三维坐标与置信度估计。移除多序列比对阶段，以部分峰值精度换取大幅提高的吞吐量和更简洁的单序列流程。"
       },
       "sourceIds": [
         "source-primary-record",
-        "source-benchcouncil-annual"
+        "source-biorxiv-preprint"
       ]
     },
     {
@@ -102,11 +113,12 @@
         "zh": "长期影响"
       },
       "html": {
-        "en": "Experts should treat this record as evidence of BenchCouncil's 2022-2023 annual assessment, not as a permanent consensus ranking. Its lasting archival value is the exact preservation of the work name, publication link, contributor field, institution, country, citation value, and source order.",
-        "zh": "专家应把本记录视为 BenchCouncil 对 2022-2023 年度成果的阶段性评价证据，而不是永久共识排名。它的长期档案价值在于准确保留成果名称、论文线索、人物字段、机构、国家、引用数与来源顺序。"
+        "en": "Experts generally treat ESMFold as strong evidence that protein language models learn structural information at useful biological scale. Its lasting contribution is not only a fast predictor but also a demonstration that language-model representations can support massive structure atlases and downstream protein analysis.",
+        "zh": "专家通常把 ESMFold 视为有力证据：蛋白质语言模型能够在有用的生物学尺度上学到结构信息。它的长期贡献不仅是快速预测器，还证明语言模型表示可以支撑超大规模结构图谱与下游蛋白质分析。"
       },
       "sourceIds": [
-        "source-benchcouncil-annual"
+        "source-primary-record",
+        "source-biorxiv-preprint"
       ]
     }
   ],
@@ -118,11 +130,11 @@
     {
       "name": {
         "en": "Zeming Lin",
-        "zh": "Zeming Lin（官方页拼写）"
+        "zh": "林泽明"
       },
       "role": {
-        "en": "Main contributor for ESMFold in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ESMFold 主要人物"
+        "en": "First author of the ESMFold paper",
+        "zh": "ESMFold 论文第一作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -130,11 +142,11 @@
     {
       "name": {
         "en": "Halil Akin",
-        "zh": "Halil Akin（官方页拼写）"
+        "zh": "哈利勒·阿金"
       },
       "role": {
-        "en": "Main contributor for ESMFold in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ESMFold 主要人物"
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -142,11 +154,11 @@
     {
       "name": {
         "en": "Roshan Rao",
-        "zh": "Roshan Rao（官方页拼写）"
+        "zh": "罗尚·拉奥"
       },
       "role": {
-        "en": "Main contributor for ESMFold in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ESMFold 主要人物"
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -154,23 +166,23 @@
     {
       "name": {
         "en": "Brian Hie",
-        "zh": "Brian Hie（官方页拼写）"
+        "zh": "布赖恩·希"
       },
       "role": {
-        "en": "Main contributor for ESMFold in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ESMFold 主要人物"
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
       },
       "figureType": "person",
-      "avatar": ""
+      "avatar": "resources/images/external/ai100-2023-esmfold/brian-hie.jpg"
     },
     {
       "name": {
         "en": "Alexander Rives",
-        "zh": "Alexander Rives（官方页拼写）"
+        "zh": "亚历山大·里夫斯"
       },
       "role": {
-        "en": "Main contributor for ESMFold in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 ESMFold 主要人物"
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
       },
       "figureType": "person",
       "avatar": ""
@@ -188,14 +200,14 @@
     },
     "workAuthors": {
       "en": "Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Alexander Rives",
-      "zh": "Zeming Lin（官方页拼写）、Halil Akin（官方页拼写）、Roshan Rao（官方页拼写）、Brian Hie（官方页拼写）、Alexander Rives（官方页拼写）"
+      "zh": "林泽明、哈利勒·阿金、罗尚·拉奥、布赖恩·希、亚历山大·里夫斯"
     },
     "sourceLabel": "",
-    "sourceUrl": "https://doi.org/10.1126/science.ade2574"
+    "sourceUrl": "https://www.science.org/doi/10.1126/science.ade2574"
   },
   "quotePage": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry",
-    "zh": "BenchCouncil AI100（2022-2023）年度条目"
+    "en": "Primary publication record",
+    "zh": "原始论文记录"
   },
   "quoteAttribution": {
     "en": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
@@ -207,50 +219,50 @@
       "zh": "AI for Science"
     },
     "method": {
-      "en": "Annual selection record",
-      "zh": "年度入选记录"
+      "en": "Protein language modeling followed by end-to-end structure prediction",
+      "zh": "蛋白质语言建模与端到端结构预测"
     },
     "artifact": {
-      "en": "ESMFold",
-      "zh": "ESMFold"
+      "en": "ESMFold and the ESM Metagenomic Atlas",
+      "zh": "ESMFold 与 ESM 宏基因组图谱"
     },
     "material": {
-      "en": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
-      "zh": "《Evolutionary-scale prediction of atomic-level protein structure with a language model》与官方年度行"
+      "en": "Primary publication or official release evidence, implementation materials and the original local explainer",
+      "zh": "主论文或官方发布证据、实现材料与本地原创解释图"
     },
     "demo": {
-      "en": "Trace the official row from ESMFold to its publication, contributor field, institution, and country.",
-      "zh": "沿官方行查看 ESMFold 如何关联到论文、主要人物字段、机构与国家。"
+      "en": "Follow the four-stage path and compare what enters, what is learned and what the system produces.",
+      "zh": "沿四阶段路径观察输入、学习内容与系统输出。"
     },
     "keyConcepts": [
       {
         "label": {
-          "en": "Official Work",
-          "zh": "官方成果名称"
+          "en": "Sequence",
+          "zh": "序列"
         },
         "text": {
-          "en": "ESMFold",
-          "zh": "ESMFold"
+          "en": "One amino-acid chain is sufficient",
+          "zh": "只需一条氨基酸链"
         }
       },
       {
         "label": {
-          "en": "Main Contributors",
-          "zh": "主要人物"
+          "en": "Language Model",
+          "zh": "语言模型"
         },
         "text": {
-          "en": "Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Alexander Rives",
-          "zh": "Zeming Lin（官方页拼写）、Halil Akin（官方页拼写）、Roshan Rao（官方页拼写）、Brian Hie（官方页拼写）、Alexander Rives（官方页拼写）"
+          "en": "ESM-2 encodes evolutionary regularities",
+          "zh": "ESM-2 编码进化规律"
         }
       },
       {
         "label": {
-          "en": "Institution",
-          "zh": "机构"
+          "en": "Throughput",
+          "zh": "吞吐量"
         },
         "text": {
-          "en": "Meta,New York University, Stanford University, MIT",
-          "zh": "Meta、New York University、Stanford University、麻省理工学院"
+          "en": "Fast inference supports atlas-scale prediction",
+          "zh": "快速推理支持图谱规模预测"
         }
       }
     ],
@@ -263,28 +275,32 @@
     ],
     "demoSteps": [
       {
-        "en": "Official work",
-        "zh": "官方成果名称"
+        "en": "Amino-acid sequence",
+        "zh": "氨基酸序列"
       },
       {
-        "en": "Publication record",
-        "zh": "论文记录"
+        "en": "ESM-2 representations",
+        "zh": "ESM-2 表示"
       },
       {
-        "en": "Contributors and institution",
-        "zh": "主要人物与机构"
+        "en": "Folding trunk",
+        "zh": "折叠主干"
+      },
+      {
+        "en": "3D coordinates and confidence",
+        "zh": "三维坐标与置信度"
       }
     ],
     "demoImage": "resources/images/benchcouncil-ai100-annual/annual-110-esmfold_record.svg",
     "demoNotes": [
       {
         "label": {
-          "en": "Source cue",
-          "zh": "资料线索"
+          "en": "Technical cue",
+          "zh": "技术线索"
         },
         "text": {
-          "en": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
-          "zh": "《Evolutionary-scale prediction of atomic-level protein structure with a language model》与 BenchCouncil 年度行"
+          "en": "Use protein language representations to predict a 3D structure without an MSA search",
+          "zh": "这张图以四个阶段解释：氨基酸序列、ESM-2 表示、折叠主干、三维坐标与置信度。"
         }
       },
       {
@@ -293,8 +309,8 @@
           "zh": "互动点"
         },
         "text": {
-          "en": "Trace the official row from ESMFold to its publication, contributor field, institution, and country.",
-          "zh": "沿官方行查看 ESMFold 如何关联到论文、主要人物字段、机构与国家。"
+          "en": "Trace the arrows, then identify which stage reuses a pretrained component and which stage learns new information.",
+          "zh": "沿箭头逐步查看，并判断哪个阶段复用预训练组件、哪个阶段学习新信息。"
         }
       }
     ],
@@ -302,30 +318,30 @@
       {
         "type": "archiveLink",
         "site": {
-          "en": "Primary publication",
-          "zh": "主论文"
+          "en": "Science",
+          "zh": "Science"
         },
         "title": {
           "en": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
           "zh": "《Evolutionary-scale prediction of atomic-level protein structure with a language model》"
         },
         "description": {
-          "en": "Publication associated with this work by the BenchCouncil annual table.",
-          "zh": "BenchCouncil 年度表为该成果关联的论文。"
+          "en": "The journal record anchors the authorship and the evidence for single-sequence folding at metagenomic scale.",
+          "zh": "期刊记录提供作者信息，并支撑宏基因组规模单序列折叠的证据。"
         },
-        "url": "https://doi.org/10.1126/science.ade2574",
-        "source": "https://doi.org/10.1126/science.ade2574",
+        "url": "https://www.science.org/doi/10.1126/science.ade2574",
+        "source": "https://www.science.org/doi/10.1126/science.ade2574",
         "license": {
-          "en": "Reference link only; local visuals are original redraws.",
-          "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+          "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
         },
         "usage": {
-          "en": "Publication and evidence reference",
-          "zh": "论文与证据参考"
+          "en": "Primary technical or official release evidence",
+          "zh": "主要技术或官方发布证据"
         },
         "action": {
-          "en": "Open publication",
-          "zh": "打开论文"
+          "en": "Open Science paper page",
+          "zh": "打开 Science 论文页面"
         }
       }
     ],

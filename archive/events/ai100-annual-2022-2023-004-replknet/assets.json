@@ -5,27 +5,28 @@
     "path": "resources/images/benchcouncil-ai100-annual/annual-004-replknet_record.svg",
     "role": "annual-achievement-explainer",
     "caption": {
-      "en": "RepLKNet annual evidence map",
-      "zh": "RepLKNet 年度证据图"
+      "en": "RepLKNet re-parameterized large-kernel path",
+      "zh": "RepLKNet 重参数化大核路径"
     },
     "subcaption": {
-      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
-      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+      "en": "Original explainer showing training-time branches, kernel fusion, deployment and reported large-kernel effects.",
+      "zh": "展示训练期分支、卷积核融合、部署结构与大核效果的原创解释图。"
     },
     "sourceIds": [
       "source-primary-record",
-      "source-benchcouncil-annual"
+      "source-arxiv-paper",
+      "source-official-pytorch-repository"
     ],
     "sourceName": {
-      "en": "BenchCouncil and publication metadata",
-      "zh": "BenchCouncil 与论文元数据"
+      "en": "CVPR paper, arXiv record and official implementation",
+      "zh": "CVPR 论文、arXiv 记录与官方实现"
     },
-    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Ding_Scaling_Up_Your_Kernels_to_31x31_Revisiting_Large_Kernel_Design_CVPR_2022_paper.html",
     "rights": {
       "status": "original-redraw",
       "license": {
-        "en": "Original local SVG; source figures are not copied.",
-        "zh": "本地原创 SVG；未复制来源图形。"
+        "en": "Original local SVG; no publisher figure is copied.",
+        "zh": "本地原创 SVG；未复制出版方图形。"
       },
       "usage": {
         "en": "Display and educational use in this project.",
@@ -33,8 +34,8 @@
       }
     },
     "displayUsage": {
-      "en": "Annual record explainer",
-      "zh": "年度记录解释图"
+      "en": "Large-kernel and structural re-parameterization explainer",
+      "zh": "大卷积核与结构重参数化解释图"
     },
     "usage": [
       "variant:bench-council-ai100-2022-2023"

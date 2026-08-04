@@ -3,34 +3,35 @@
     "id": "ai100-annual-2022-2023-008-convnexts-quiz-1",
     "storylineId": "bench-council-ai100-2022-2023",
     "question": {
-      "en": "Which area does the BenchCouncil annual table assign to ConvNeXts?",
-      "zh": "BenchCouncil 年度表把 ConvNeXts 归入哪个领域？"
+      "en": "What did ConvNeXt keep at the center of its architecture?",
+      "zh": "ConvNeXt 在架构核心上保留了什么？"
     },
     "options": [
       {
-        "en": "Vision",
-        "zh": "视觉"
+        "en": "A pure convolutional network",
+        "zh": "纯卷积网络"
       },
       {
-        "en": "Video",
-        "zh": "视频"
+        "en": "A recurrent language model",
+        "zh": "循环语言模型"
       },
       {
-        "en": "Speech",
-        "zh": "语音"
+        "en": "A graph neural network",
+        "zh": "图神经网络"
       },
       {
-        "en": "Multimodal",
-        "zh": "多模态"
+        "en": "A reinforcement-learning agent",
+        "zh": "强化学习智能体"
       }
     ],
     "answer": 0,
     "explanation": {
-      "en": "ConvNeXts appears in the Vision area of the official annual table.",
-      "zh": "ConvNeXts 位于官方年度表的“视觉”领域。"
+      "en": "ConvNeXt adopts several transformer-era design and training choices but is built entirely from standard convolutional components.",
+      "zh": "ConvNeXt 吸收了多项 Transformer 时代的设计与训练选择，但整体仍完全由标准卷积组件构成。"
     },
     "sourceIds": [
-      "source-benchcouncil-annual"
+      "source-primary-record",
+      "source-arxiv-paper"
     ],
     "assetIds": [
       "asset-annual-008-convnexts-record"

@@ -7,12 +7,12 @@
     "zh": "Simmim"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in Vision",
-    "zh": "BenchCouncil AI100（2022-2023）视觉年度条目"
+    "en": "A simple masked image modeling framework built from random masks, raw-pixel regression and a lightweight prediction head",
+    "zh": "以随机遮挡、原始像素回归和轻量预测头构成的简洁掩码图像建模框架"
   },
   "description": {
-    "en": "<p>BenchCouncil lists Simmim in the Vision area of its AI100 (2022-2023) annual table. It associates the work with the publication “Simmim: A simple framework for masked image modeling”. The page names Zhenda Xie, Zheng Zhang, Yue Cao, Han Hu as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“视觉”领域列出 Simmim。该条目关联论文《Simmim: A simple framework for masked image modeling》。页面把 Zhenda Xie（官方页拼写）、Zheng Zhang（官方页拼写）、曹越、胡瀚 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>SimMIM asked how much machinery masked image modeling actually needed. Instead of block-wise masking, discrete-VAE tokenizers, clustering targets or a heavy decoder, it used random masks with moderately large patches, directly regressed the RGB values of masked pixels and reduced the prediction head to a linear layer.</p><p>The simple recipe produced strong representations with both ViT and Swin backbones, and the paper reports scaling from ViT-B to a 3-billion-parameter SwinV2-G model.</p>",
+    "zh": "<p>SimMIM 追问掩码图像建模究竟需要多少复杂机制。它不依赖分块遮挡、离散 VAE 分词器、聚类目标或沉重解码器，而是采用中等偏大的随机遮挡块，直接回归被遮挡位置的 RGB 像素值，并把预测头简化为单个线性层。</p><p>这套简洁方案在 ViT 与 Swin 主干上都学到强表征，论文还报告了从 ViT-B 扩展到 30 亿参数 SwinV2-G 的结果。</p>"
   },
   "location": {
     "regionId": "china",
@@ -22,7 +22,7 @@
     },
     "place": {
       "en": "Tsinghua University, Microsoft Research Asia, Xi'an Jiaotong University",
-      "zh": "清华大学、微软亚洲研究院、Xi'an Jiaotong University"
+      "zh": "清华大学、微软亚洲研究院、西安交通大学"
     },
     "coordinates": [
       35.8617,
@@ -40,11 +40,11 @@
       "figureId": "zhenda-xie",
       "name": {
         "en": "Zhenda Xie",
-        "zh": "Zhenda Xie（官方页拼写）"
+        "zh": "谢振达"
       },
       "role": {
-        "en": "Main contributor for Simmim in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Simmim 主要人物"
+        "en": "Co-first author of the SimMIM paper",
+        "zh": "SimMIM 论文共同第一作者"
       },
       "organizationIds": []
     },
@@ -52,11 +52,11 @@
       "figureId": "zheng-zhang",
       "name": {
         "en": "Zheng Zhang",
-        "zh": "Zheng Zhang（官方页拼写）"
+        "zh": "张拯"
       },
       "role": {
-        "en": "Main contributor for Simmim in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Simmim 主要人物"
+        "en": "Co-first author of the SimMIM paper",
+        "zh": "SimMIM 论文共同第一作者"
       },
       "organizationIds": []
     },
@@ -67,10 +67,11 @@
         "zh": "曹越"
       },
       "role": {
-        "en": "Main contributor for Simmim in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Simmim 主要人物"
+        "en": "Co-first author of the SimMIM paper",
+        "zh": "SimMIM 论文共同第一作者"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg"
     },
     {
       "figureId": "han-hu",
@@ -79,10 +80,11 @@
         "zh": "胡瀚"
       },
       "role": {
-        "en": "Main contributor for Simmim in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Simmim 主要人物"
+        "en": "Lead author of the SimMIM paper",
+        "zh": "SimMIM 论文主要作者"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg"
     }
   ],
   "organizations": [],
@@ -90,8 +92,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 2 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 2 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed event-specific research on 2026-08-03. All four BenchCouncil contributors were confirmed against the primary paper and Microsoft Research page, with researcher-controlled profiles used for identity disambiguation. Han Hu's matching homepage portrait is the event's single person image; three other portrait candidates are documented but not selected. A same-name OpenAlex ORCID mismatch for Zheng Zhang was explicitly rejected.",
+      "zh": "于 2026-08-03 完成事件专项研究。四位 BenchCouncil 主要人物均通过主论文与微软研究院页面确认，并使用研究者本人资料消除同名歧义。胡瀚主页肖像作为本事件唯一人物图，另外三个人物图片候选仅记录而不采用；Zheng Zhang 的同名 OpenAlex ORCID 误配已明确排除。"
     }
   }
 }

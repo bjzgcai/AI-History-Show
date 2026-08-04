@@ -1,18 +1,18 @@
 {
   "id": "ai100-annual-2022-2023-081-latent-diffusion-models",
-  "year": 2023,
-  "date": "2023",
+  "year": 2022,
+  "date": "2022",
   "title": {
     "en": "Latent Diffusion Models",
     "zh": "Latent Diffusion Models"
   },
   "summary": {
-    "en": "BenchCouncil AI100 (2022-2023) annual entry in Diffusion Model Application",
-    "zh": "BenchCouncil AI100（2022-2023）扩散模型应用年度条目"
+    "en": "A compute-efficient diffusion framework that generates high-resolution images in a learned latent space",
+    "zh": "在学习到的潜空间中高效生成高分辨率图像的扩散框架"
   },
   "description": {
-    "en": "<p>BenchCouncil lists Latent Diffusion Models in the Diffusion Model Application area of its AI100 (2022-2023) annual table. It associates the work with the publication “High-Resolution Image Synthesis with Latent Diffusion Models”. The page names Robin Rombach, Andreas Blattmann, Bjorn Ommer as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
-    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“扩散模型应用”领域列出 Latent Diffusion Models。该条目关联论文《High-Resolution Image Synthesis with Latent Diffusion Models》。页面把 罗宾·罗姆巴赫、Andreas Blattmann（官方页拼写）、Bjorn Ommer（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+    "en": "<p>Latent Diffusion Models moved the expensive denoising process from pixel space into the compressed latent space of a pretrained autoencoder. This preserved perceptual detail while reducing the spatial and computational burden of diffusion training and sampling.</p><p>Cross-attention made the same framework conditionable on text, bounding boxes, semantic maps and other inputs. The balance of quality, flexibility and efficiency became the technical foundation for widely used systems including Stable Diffusion.</p>",
+    "zh": "<p>潜扩散模型把昂贵的去噪过程从像素空间移到预训练自编码器的压缩潜空间。这样既保留感知细节，又降低扩散训练与采样的空间尺寸和计算负担。</p><p>交叉注意力使同一框架能够接受文本、边界框、语义图等条件。质量、灵活性与效率之间的平衡，使它成为 Stable Diffusion 等广泛使用系统的技术基础。</p>"
   },
   "location": {
     "regionId": "germany",
@@ -43,34 +43,37 @@
         "zh": "罗宾·罗姆巴赫"
       },
       "role": {
-        "en": "Main contributor for Latent Diffusion Models in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Latent Diffusion Models 主要人物"
+        "en": "First author of the Latent Diffusion Models paper",
+        "zh": "Latent Diffusion Models 论文第一作者"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg"
     },
     {
       "figureId": "andreas-blattmann",
       "name": {
         "en": "Andreas Blattmann",
-        "zh": "Andreas Blattmann（官方页拼写）"
+        "zh": "安德烈亚斯·布拉特曼"
       },
       "role": {
-        "en": "Main contributor for Latent Diffusion Models in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Latent Diffusion Models 主要人物"
+        "en": "Co-author of the Latent Diffusion Models paper",
+        "zh": "Latent Diffusion Models 论文共同作者"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/andreas-blattmann.jpg"
     },
     {
       "figureId": "bjorn-ommer",
       "name": {
         "en": "Bjorn Ommer",
-        "zh": "Bjorn Ommer（官方页拼写）"
+        "zh": "比约恩·奥默"
       },
       "role": {
-        "en": "Main contributor for Latent Diffusion Models in the BenchCouncil annual table",
-        "zh": "BenchCouncil 年度表列出的 Latent Diffusion Models 主要人物"
+        "en": "Co-author of the Latent Diffusion Models paper",
+        "zh": "Latent Diffusion Models 论文共同作者"
       },
-      "organizationIds": []
+      "organizationIds": [],
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/bjorn-ommer.jpg"
     }
   ],
   "organizations": [],
@@ -78,8 +81,8 @@
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from BenchCouncil annual row 81 on 2026-08-03; official field spelling and contributor order are preserved.",
-      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 81 行同步；保留官方字段拼写与主要人物顺序。"
+      "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+      "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
     }
   }
 }

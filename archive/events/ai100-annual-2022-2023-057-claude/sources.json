@@ -7,8 +7,8 @@
       "zh": "官方页面"
     },
     "title": {
-      "en": "Claude official project page",
-      "zh": "Claude 官方项目页面"
+      "en": "Introducing Claude",
+      "zh": "Anthropic：Claude 发布介绍"
     },
     "authors": [],
     "year": 2023,
@@ -17,8 +17,8 @@
     "purpose": "core-evidence",
     "reliability": "primary",
     "notes": {
-      "en": "Publication or official work page resolved from the exact title in the BenchCouncil annual table.",
-      "zh": "依据 BenchCouncil 年度表中的准确标题解析出的论文或官方项目页面。"
+      "en": "Official Anthropic launch page used to verify the release date, access modes, task scope and stated product goals.",
+      "zh": "Anthropic 官方发布页，用于核对发布日期、访问方式、任务范围与产品目标。"
     }
   },
   {
@@ -37,8 +37,8 @@
     "purpose": "bibliographic-verification",
     "reliability": "secondary",
     "notes": {
-      "en": "Bibliographic metadata used to verify the publication year and landing page.",
-      "zh": "用于核对出版年份与落地页面的书目元数据。"
+      "en": "Bibliographic metadata is retained only as a secondary cross-check; technical and identity claims use primary records.",
+      "zh": "书目元数据仅作为辅助交叉核对；技术与人物主张使用原始记录。"
     }
   },
   {
@@ -59,6 +59,166 @@
     "notes": {
       "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
       "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+    }
+  },
+  {
+    "id": "source-constitutional-ai",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Constitutional AI: Harmlessness from AI Feedback",
+      "zh": "《宪法式 AI：通过 AI 反馈实现无害性》"
+    },
+    "url": "https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback",
+    "language": "en",
+    "purpose": "background",
+    "reliability": "primary",
+    "notes": {
+      "en": "Anthropic research page explaining the principles, self-critique and AI-feedback approach associated with Claude’s safety lineage.",
+      "zh": "Anthropic 研究页，解释与 Claude 安全沿革相关的原则、自我批评与 AI 反馈方法。"
+    }
+  },
+  {
+    "id": "source-constitutional-paper",
+    "type": "paper-page",
+    "label": {
+      "en": "Preprint page",
+      "zh": "预印本页面"
+    },
+    "title": {
+      "en": "Constitutional AI - arXiv",
+      "zh": "《宪法式 AI》arXiv 页面"
+    },
+    "url": "https://arxiv.org/abs/2212.08073",
+    "language": "en",
+    "purpose": "background",
+    "reliability": "primary",
+    "notes": {
+      "en": "Author-submitted paper describing supervised self-critique and reinforcement learning from AI feedback.",
+      "zh": "作者提交论文，说明监督式自我批评与基于 AI 反馈的强化学习。"
+    }
+  },
+  {
+    "id": "source-constitutional-ai-figure-1",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Constitutional AI Figure 1: supervised and RLAIF stages",
+      "zh": "Constitutional AI Figure 1：监督学习与 RLAIF 阶段"
+    },
+    "url": "https://ar5iv.labs.arxiv.org/html/2212.08073/assets/x1.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Figure 1 from Anthropic's Constitutional AI paper shows the supervised critique-and-revision stage and the reinforcement-learning-from-AI-feedback stage. It is a strong technical-lineage image for Claude's safety approach, but it must not be captioned as Claude's disclosed product architecture; the existing original local explainer remains the single selected explanatory image, and no separate redistribution license is stated.",
+      "zh": "Anthropic《Constitutional AI》论文 Figure 1 展示监督式批评与修订阶段，以及基于 AI 反馈的强化学习阶段，是说明 Claude 安全技术沿革的可靠图片。但不得把它标注成 Claude 已公开的产品架构；页面仍只选用现有本地原创解释图，论文未单独声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-anthropic-series-b",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Anthropic raises Series B to build safe, reliable AI",
+      "zh": "Anthropic B 轮融资与公司领导公告"
+    },
+    "url": "https://www.anthropic.com/news/anthropic-raises-series-b-to-build-safe-reliable-ai",
+    "language": "en",
+    "purpose": "official-statement",
+    "reliability": "primary",
+    "notes": {
+      "en": "Anthropic's official 2022 announcement explicitly describes Dario Amodei as cofounder and CEO and Daniela Amodei as cofounder and president. It verifies company roles before Claude's 2023 launch but does not establish model authorship.",
+      "zh": "Anthropic 2022 年官方公告明确将 Dario Amodei 标为联合创始人兼 CEO，将 Daniela Amodei 标为联合创始人兼总裁。该公告可核对两人在 Claude 2023 年发布前的公司角色，但不证明模型作者身份。"
+    }
+  },
+  {
+    "id": "source-anthropic-founders-video",
+    "type": "profile",
+    "label": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "title": {
+      "en": "Building Anthropic - A conversation with our co-founders",
+      "zh": "《建设 Anthropic：与联合创始人对谈》"
+    },
+    "url": "https://www.youtube.com/watch?v=om2lIWXLLN4",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "Video published by Anthropic's official YouTube channel. Its description names the cofounders from left to right, including Daniela and Dario Amodei, making the group thumbnail a reliable identity cross-check; it is a later company-history image, not a contemporaneous Claude launch portrait, and has no stated redistribution license.",
+      "zh": "Anthropic 官方 YouTube 频道发布的视频。说明文字按从左到右顺序列出联合创始人，包括 Daniela 与 Dario Amodei，因此群像缩略图可可靠地交叉核对身份；它是较晚的公司历史图片，不是 Claude 发布同期肖像，也未声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-anthropic-logo",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Anthropic logo image used by the Claude launch page",
+      "zh": "Claude 发布页使用的 Anthropic 标识图"
+    },
+    "url": "https://cdn.sanity.io/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The current metadata for Anthropic's official Introducing Claude page uses this company-hosted image as its Open Graph image and labels it 'Anthropic logo.' It is a reliable company-symbol candidate, but it is generic branding rather than Claude architecture or a verified original 2023 launch artwork; no separate redistribution license is stated, and it is not added as a second selected event visual.",
+      "zh": "Anthropic 官方《Introducing Claude》页面当前元数据将这张公司托管图片用作 Open Graph 图片，并明确标注为“Anthropic logo”。它是可靠的公司象征图片候选，但属于通用品牌标识，不是 Claude 架构图，也不能确认是 2023 年发布时的原始主图；来源未声明单独的再分发许可，且不作为第二张选用的事件解释图。"
+    }
+  },
+  {
+    "id": "source-claude-official-launch-artwork",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Claude official launch artwork",
+      "zh": "Claude 官方发布插画"
+    },
+    "url": "https://cdn.sanity.io/images/4zrzovbb/website/598090233d64488d2c6fd8551c943b5a731e6e98-2880x1620.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Company-hosted artwork used on Anthropic's official Introducing Claude page.",
+      "zh": "Anthropic 官方 Introducing Claude 页面使用的公司托管插画。"
+    }
+  },
+  {
+    "id": "source-claude-poe-product-image",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Claude in Poe product image",
+      "zh": "Poe 中的 Claude 产品界面图"
+    },
+    "url": "https://cdn.sanity.io/images/4zrzovbb/website/0d1d653b2378e714f4557655300dea6c259c6bbe-2940x1510.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Company-hosted product image used on Anthropic's official Introducing Claude page.",
+      "zh": "Anthropic 官方 Introducing Claude 页面使用的公司托管产品界面图。"
     }
   }
 ]
