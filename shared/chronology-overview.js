@@ -74,6 +74,9 @@
     const DENSITY_CHART_WIDTH = 1000;
     const DENSITY_CHART_HEIGHT = 56;
     const DENSITY_BASELINE_PADDING = 5;
+    const CHRONOLOGY_DRAG_THRESHOLD = 8;
+    const CHRONOLOGY_DRAG_INTENT_RATIO = 1.2;
+    const CHRONOLOGY_CLICK_SUPPRESS_MS = 320;
 
     function getSortYear(milestone) {
         const value = milestone && milestone.year != null ? milestone.year : milestone;
@@ -374,6 +377,45 @@
         );
     }
 
+    function getChronologyScaleX(element) {
+        if (!element || !element.clientWidth || typeof element.getBoundingClientRect !== 'function') return 1;
+        const bounds = element.getBoundingClientRect();
+        const scale = Number(bounds && bounds.width) / Number(element.clientWidth);
+        return Number.isFinite(scale) && scale > 0 ? scale : 1;
+    }
+
+    function getChronologyWheelDelta(event, scroller, options = {}) {
+        const deltaX = Number.isFinite(event && event.deltaX) ? event.deltaX : 0;
+        const deltaY = Number.isFinite(event && event.deltaY) ? event.deltaY : 0;
+        const useHorizontal = Math.abs(deltaX) >= Math.abs(deltaY) && deltaX !== 0;
+        if (!useHorizontal && options.convertVertical === false) return 0;
+
+        let delta = useHorizontal ? deltaX : deltaY;
+        if (!delta) return 0;
+        if (event.deltaMode === 1) delta *= 48;
+        if (event.deltaMode === 2) delta *= Math.max(320, Number(scroller && scroller.clientWidth) || 0);
+        return delta / getChronologyScaleX(scroller);
+    }
+
+    function hasChronologyHorizontalDragIntent(deltaX, deltaY) {
+        const absX = Math.abs(Number(deltaX) || 0);
+        const absY = Math.abs(Number(deltaY) || 0);
+        return (
+            absX >= CHRONOLOGY_DRAG_THRESHOLD &&
+            (absY < CHRONOLOGY_DRAG_THRESHOLD || absX >= absY * CHRONOLOGY_DRAG_INTENT_RATIO)
+        );
+    }
+
+    function getChronologyDragScrollLeft(startScrollLeft, startX, currentX, scale = 1) {
+        const safeScale = Number.isFinite(scale) && scale > 0 ? scale : 1;
+        return Number(startScrollLeft || 0) - (Number(currentX || 0) - Number(startX || 0)) / safeScale;
+    }
+
+    function getChronologyScrollTarget(scrollLeft, scrollWidth, clientWidth, delta) {
+        const maxScroll = Math.max(0, Number(scrollWidth || 0) - Number(clientWidth || 0));
+        return Math.min(maxScroll, Math.max(0, Number(scrollLeft || 0) + Number(delta || 0)));
+    }
+
     function getOverviewViewport(root, scope) {
         const viewportWidth = scope.innerWidth || root.clientWidth || 0;
         const viewportHeight = scope.innerHeight || root.clientHeight || 0;
@@ -544,6 +586,7 @@
         let state = { storylineId: 'all', scrollLeft: 0 };
         let imageObserver = null;
         let resizeTimer = 0;
+        let suppressedCardClick = { eventId: '', until: 0 };
 
         const localize = (value) => {
             if (typeof config.localize === 'function') return String(config.localize(value) || '');
@@ -861,29 +904,86 @@
             let dragState = null;
             scroller.addEventListener('pointerdown', (event) => {
                 if (event.button !== undefined && event.button !== 0) return;
-                if (event.target.closest('.chrono-event-card')) return;
+                if (event.isPrimary === false) return;
+                if (event.pointerType === 'touch') return;
+                const card =
+                    event.target && typeof event.target.closest === 'function'
+                        ? event.target.closest('.chrono-event-card')
+                        : null;
                 dragState = {
                     pointerId: event.pointerId,
                     startX: event.clientX,
-                    scrollLeft: scroller.scrollLeft
+                    startY: event.clientY,
+                    scrollLeft: scroller.scrollLeft,
+                    scale: getChronologyScaleX(scroller),
+                    dragging: false,
+                    eventId: (card && card.dataset.eventId) || ''
                 };
-                scroller.classList.add('is-dragging');
-                if (typeof scroller.setPointerCapture === 'function') scroller.setPointerCapture(event.pointerId);
             });
             scroller.addEventListener('pointermove', (event) => {
                 if (!dragState || event.pointerId !== dragState.pointerId) return;
-                scroller.scrollLeft = dragState.scrollLeft - (event.clientX - dragState.startX);
+                if (event.pointerType !== 'touch' && event.buttons === 0) {
+                    release(event);
+                    return;
+                }
+                const deltaX = event.clientX - dragState.startX;
+                const deltaY = event.clientY - dragState.startY;
+                if (!dragState.dragging) {
+                    if (!hasChronologyHorizontalDragIntent(deltaX, deltaY)) {
+                        if (Math.abs(deltaY) >= CHRONOLOGY_DRAG_THRESHOLD) dragState = null;
+                        return;
+                    }
+                    dragState.dragging = true;
+                    scroller.classList.add('is-dragging');
+                    if (typeof scroller.setPointerCapture === 'function') {
+                        scroller.setPointerCapture(event.pointerId);
+                    }
+                }
+                scroller.scrollLeft = getChronologyDragScrollLeft(
+                    dragState.scrollLeft,
+                    dragState.startX,
+                    event.clientX,
+                    dragState.scale
+                );
                 state.scrollLeft = scroller.scrollLeft;
                 if (event.cancelable) event.preventDefault();
             });
-            const release = () => {
+            function release(event) {
+                if (event && dragState && event.pointerId !== dragState.pointerId) return;
+                if (dragState && dragState.dragging) {
+                    suppressedCardClick = {
+                        eventId: dragState.eventId,
+                        until: Date.now() + CHRONOLOGY_CLICK_SUPPRESS_MS
+                    };
+                }
                 dragState = null;
                 scroller.classList.remove('is-dragging');
                 state.scrollLeft = scroller.scrollLeft;
-            };
+            }
             scroller.addEventListener('pointerup', release);
             scroller.addEventListener('pointercancel', release);
             scroller.addEventListener('lostpointercapture', release);
+            scroller.addEventListener('dragstart', (event) => event.preventDefault());
+            scroller.addEventListener(
+                'wheel',
+                (event) => {
+                    if (event.ctrlKey) return;
+                    const delta = getChronologyWheelDelta(event, scroller, {
+                        convertVertical: globalScope.innerWidth > VIEWPORT_BREAKPOINTS.responsiveWidth
+                    });
+                    if (!delta) return;
+                    const nextScrollLeft = getChronologyScrollTarget(
+                        scroller.scrollLeft,
+                        scroller.scrollWidth,
+                        scroller.clientWidth,
+                        delta
+                    );
+                    if (nextScrollLeft === scroller.scrollLeft) return;
+                    if (event.cancelable) event.preventDefault();
+                    scroller.scrollLeft = nextScrollLeft;
+                },
+                { passive: false }
+            );
             scroller.addEventListener(
                 'scroll',
                 () => {
@@ -958,7 +1058,15 @@
                 });
             });
             root.querySelectorAll('.chrono-event-card').forEach((button) => {
-                button.addEventListener('click', () => {
+                button.addEventListener('click', (event) => {
+                    if (
+                        button.dataset.eventId === suppressedCardClick.eventId &&
+                        Date.now() < suppressedCardClick.until
+                    ) {
+                        suppressedCardClick = { eventId: '', until: 0 };
+                        event.preventDefault();
+                        return;
+                    }
                     if (typeof config.onOpenMilestone === 'function') {
                         config.onOpenMilestone(button.dataset.eventId || '');
                     }
@@ -1022,6 +1130,10 @@
         create,
         getCenteredScrollLeft,
         getCanonicalEventId,
+        getChronologyDragScrollLeft,
+        getChronologyScaleX,
+        getChronologyScrollTarget,
+        getChronologyWheelDelta,
         getDensityTargetYear,
         getMilestoneVariants,
         getNearestVisibleYear,
@@ -1030,6 +1142,7 @@
         getSortYear,
         getStorylineId,
         getStorylineMemberships,
+        hasChronologyHorizontalDragIntent,
         canPortraitCoverWithoutVerticalCrop,
         isPortraitImage,
         selectMilestonesByStoryline,
