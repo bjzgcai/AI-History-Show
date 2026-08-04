@@ -2060,6 +2060,41 @@
             display: none;
         }
 
+        .storyline-context {
+            display: none;
+            min-width: 0;
+            color: rgba(244, 239, 229, 0.88);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.24;
+            letter-spacing: 0;
+        }
+
+        .storyline-context-label {
+            display: -webkit-box;
+            min-width: 0;
+            overflow: hidden;
+            overflow-wrap: anywhere;
+            text-overflow: clip;
+            white-space: normal;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .single-stage.is-ui-browser.is-ui-detail .storyline-trigger {
+            display: none;
+        }
+
+        .single-stage.is-ui-browser.is-ui-detail .storyline-context {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: min(620px, 48vw);
+            min-height: 48px;
+            text-align: right;
+        }
+
         .storyline-trigger {
             width: 334px;
             min-height: 32px;
@@ -2124,32 +2159,6 @@
             stroke-width: 2.4;
             stroke-linecap: round;
             stroke-linejoin: round;
-        }
-
-        @media (min-width: 1200px) {
-            .single-stage.is-ui-browser.is-ui-detail .storyline-trigger {
-                width: min(620px, 48vw);
-                min-height: 48px;
-            }
-
-            .single-stage.is-ui-browser.is-ui-detail .storyline-trigger-copy {
-                align-items: center;
-            }
-
-            .single-stage.is-ui-browser.is-ui-detail .storyline-trigger-label {
-                display: -webkit-box;
-                overflow: hidden;
-                line-height: 1.18;
-                overflow-wrap: anywhere;
-                text-overflow: clip;
-                white-space: normal;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 2;
-            }
-
-            .single-stage.is-ui-browser.is-ui-detail .storyline-trigger-status {
-                flex: 0 0 auto;
-            }
         }
 
         .about-trigger {
@@ -6896,6 +6905,15 @@
                 text-transform: none;
             }
 
+            .single-stage.is-ui-browser.is-ui-detail .storyline-context {
+                width: auto;
+                max-width: 100%;
+                min-height: var(--touch-target);
+                justify-content: flex-start;
+                font-size: 13px;
+                text-align: left;
+            }
+
             .storyline-trigger-copy {
                 align-items: center;
             }
@@ -8756,7 +8774,7 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="shared/chronology-overview.css?v=20260728">
+    <link rel="stylesheet" href="shared/chronology-overview.css?v=20260804">
 </head>
 <body>
     <div class="stage-viewport">
@@ -8782,6 +8800,9 @@
                             <path d="m6 9 6 6 6-6"></path>
                         </svg>
                     </button>
+                    <div class="storyline-context" id="storylineContext" aria-live="polite">
+                        <span class="storyline-context-label" id="storylineContextLabel"></span>
+                    </div>
                     <button class="about-trigger" id="aboutTrigger" type="button" aria-haspopup="dialog" aria-controls="aboutModal">ABOUT</button>
                     <div class="mode-chip">
                         <span class="mode-chip-label" data-i18n="aiHistoryMode">人工智能历史</span>
@@ -9027,7 +9048,7 @@
     </script>
     <script src="shared/i18n.js"></script>
     <script src="shared/storyline-routing.js"></script>
-    <script src="shared/chronology-overview.js?v=20260728b"></script>
+    <script src="shared/chronology-overview.js?v=20260804"></script>
     <script src="shared/event-media-selection.js"></script>
     <script src="milestones-data.js?v=20260803-storyline-metadata" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
@@ -9424,6 +9445,8 @@
             storylineTrigger: document.getElementById('storylineTrigger'),
             storylineTriggerLabel: document.getElementById('storylineTriggerLabel'),
             storylineTriggerStatus: document.getElementById('storylineTriggerStatus'),
+            storylineContext: document.getElementById('storylineContext'),
+            storylineContextLabel: document.getElementById('storylineContextLabel'),
             storylineModal: document.getElementById('storylineModal'),
             storylineModalClose: document.getElementById('storylineModalClose'),
             storylineModalEyebrow: document.getElementById('storylineModalEyebrow'),
@@ -10000,12 +10023,17 @@
             const activeOption = getStorylineOption(selectedStorylineId);
             const activeCount = activeOption ? getStorylineMilestones(activeOption.id).length : 0;
             const activeStatus = getStorylineStatus(activeOption, activeCount);
+            const activeLabel = activeOption ? getStorylineLabel(activeOption) : tx('storylineSelector');
             if (refs.storylineTrigger) {
-                const activeLabel = activeOption ? getStorylineLabel(activeOption) : tx('storylineSelector');
                 refs.storylineTrigger.setAttribute('aria-label', `${tx('storylineSelector')}: ${activeLabel} (${activeStatus})`);
                 refs.storylineTrigger.title = activeLabel;
                 if (refs.storylineTriggerLabel) refs.storylineTriggerLabel.textContent = activeLabel;
                 if (refs.storylineTriggerStatus) refs.storylineTriggerStatus.textContent = `(${activeStatus})`;
+            }
+            if (refs.storylineContext) {
+                refs.storylineContext.setAttribute('aria-label', activeLabel);
+                refs.storylineContext.title = activeLabel;
+                if (refs.storylineContextLabel) refs.storylineContextLabel.textContent = activeLabel;
             }
 
             if (refs.uiBackButton) {
@@ -15946,7 +15974,8 @@
                     openEvent: uiText('Open event', '打开事件'),
                     storylines: uiText('Storylines', '所属故事线'),
                     timelineLabel: uiText('Chronological AI history timeline', '人工智能历史时间轴')
-                }
+                },
+                storylines: archiveStorylineDefinitions
             });
         }
 

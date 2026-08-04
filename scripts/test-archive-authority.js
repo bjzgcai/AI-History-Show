@@ -228,7 +228,11 @@ assert.equal(milestones.length, 334, 'Archive runtime should contain all six sto
 const ai100MapMilestones = milestones.filter(
     (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100'
 );
-assert.equal(ai100MapMilestones.length, 139, 'AI Achievement Map should contain 119 canonical and 20 selected achievements');
+assert.equal(
+    ai100MapMilestones.length,
+    139,
+    'AI Achievement Map should contain 119 canonical and 20 selected achievements'
+);
 assert.equal(
     ai100MapMilestones.filter((milestone) => milestone.id.startsWith('milestone-ai100-map-2022-')).length,
     10,

@@ -366,6 +366,26 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /\.single-stage\.is-ui-browser\.is-ui-detail \.storyline-trigger\s*\{[\s\S]*?display:\s*none[\s\S]*?\.single-stage\.is-ui-browser\.is-ui-detail \.storyline-context\s*\{[\s\S]*?display:\s*flex/,
+    'the detail view should replace the storyline selector with a static storyline label'
+);
+assert.match(
+    chronologySource,
+    /config\.storylines[\s\S]*?class="chrono-storyline-title-row"[\s\S]*?<strong data-overflow-title="\$\{escapeHtml\(filter\.name\)\}"[\s\S]*?class="chrono-storyline-subtitle" data-overflow-title="\$\{escapeHtml\(filter\.subtitle\)\}"/,
+    'the chronology storyline list should render Archive subtitles below storyline titles'
+);
+assert.match(
+    chronologySource,
+    /aria-label="\$\{escapeHtml\(\[filter\.name, filter\.subtitle\]\.filter\(Boolean\)\.join\(': '\)\)\}"/,
+    'storyline filters should expose their complete title and subtitle to assistive technology'
+);
+assert.match(
+    chronologySource,
+    /function syncOverflowTitles\(\)[\s\S]*?scrollWidth > element\.clientWidth \+ 1[\s\S]*?element\.title = fullText[\s\S]*?syncOverflowTitles\(\);/,
+    'storyline hover titles should appear only when the visible text is truncated'
+);
+assert.match(
+    indexHtml,
     /renderTimeline\(vm\);[\s\S]*?isUiBrowserActive\(\) && uiBrowserMode !== 'detail'[\s\S]*?document\.title = `\$\{tx\('appTitleSingle'\)\} - \$\{getStorylineLabel\(getActiveStorylineOption\(\)\)/,
     'the chronology overview should use its storyline title instead of retaining the last event title'
 );

@@ -194,7 +194,18 @@
         return (milestones || []).map((milestone) => selectMilestoneVariant(milestone, storylineId)).filter(Boolean);
     }
 
-    function summarizeStorylines(milestones, localize = localizeFallback, styles = DEFAULT_STORYLINE_STYLES) {
+    function summarizeStorylines(
+        milestones,
+        localize = localizeFallback,
+        styles = DEFAULT_STORYLINE_STYLES,
+        storylineDefinitions = []
+    ) {
+        const definitionsById = new Map(
+            (Array.isArray(storylineDefinitions) ? storylineDefinitions : []).map((definition) => [
+                definition.id,
+                definition
+            ])
+        );
         const summaries = new Map();
         for (const canonicalMilestone of milestones || []) {
             for (const milestone of getMilestoneVariants(canonicalMilestone)) {
@@ -203,9 +214,11 @@
                 const year = getSortYear(milestone);
                 const storyline =
                     milestone.storyline && typeof milestone.storyline === 'object' ? milestone.storyline : {};
+                const definition = definitionsById.get(id) || {};
                 const summary = summaries.get(id) || {
                     id,
                     name: localize(storyline.name) || id,
+                    subtitle: localize(definition.subtitle || storyline.subtitle),
                     count: 0,
                     minYear: Number.POSITIVE_INFINITY,
                     maxYear: Number.NEGATIVE_INFINITY,
@@ -561,7 +574,8 @@
             return summarizeStorylines(
                 getCanonicalMilestones(),
                 localize,
-                config.storylineStyles || DEFAULT_STORYLINE_STYLES
+                config.storylineStyles || DEFAULT_STORYLINE_STYLES,
+                config.storylines
             );
         }
 
@@ -582,6 +596,16 @@
                     color: summary.color || '#f68900',
                     name: localize(membership.name) || summary.name || membership.id
                 };
+            });
+        }
+
+        function syncOverflowTitles() {
+            root.querySelectorAll('[data-overflow-title]').forEach((element) => {
+                const fullText = String(element.dataset.overflowTitle || '').trim();
+                const isTruncated =
+                    element.scrollWidth > element.clientWidth + 1 || element.scrollHeight > element.clientHeight + 1;
+                if (fullText && isTruncated) element.title = fullText;
+                else element.removeAttribute('title');
             });
         }
 
@@ -687,7 +711,13 @@
             });
             const text = labels();
             const filters = [
-                { id: 'all', name: text.all, count: getCanonicalMilestones().length, color: ALL_EVENTS_COLOR },
+                {
+                    id: 'all',
+                    name: text.all,
+                    subtitle: '',
+                    count: getCanonicalMilestones().length,
+                    color: ALL_EVENTS_COLOR
+                },
                 ...summaries
             ];
 
@@ -697,19 +727,27 @@
                         ${filters
                             .map(
                                 (filter) => `
-                            <button class="chrono-storyline-segment${state.storylineId === filter.id ? ' is-active' : ''}" type="button"
-                                data-filter-id="${escapeHtml(filter.id)}" style="--story-color:${filter.color}" aria-pressed="${state.storylineId === filter.id ? 'true' : 'false'}">
+                            <button class="chrono-storyline-segment${filter.id === 'all' ? ' is-all' : ''}${state.storylineId === filter.id ? ' is-active' : ''}" type="button"
+                                data-filter-id="${escapeHtml(filter.id)}" style="--story-color:${filter.color}" aria-pressed="${state.storylineId === filter.id ? 'true' : 'false'}"
+                                aria-label="${escapeHtml([filter.name, filter.subtitle].filter(Boolean).join(': '))}">
                                 ${
                                     filter.id === 'all'
                                         ? `<span class="chrono-storyline-all-mark" aria-hidden="true">${summaries.map((summary) => `<i style="background:${summary.color}"></i>`).join('')}</span>`
                                         : '<span class="chrono-storyline-dot" aria-hidden="true"></span>'
                                 }
-                                <strong>${escapeHtml(filter.name)}</strong>
-                                ${
-                                    filter.id === 'all'
-                                        ? `<span>${filter.count}</span>`
-                                        : `<span>${filter.minYear}${filter.maxYear && filter.maxYear !== filter.minYear ? `–${filter.maxYear}` : ''}</span><span>${filter.count}</span>`
-                                }
+                                <span class="chrono-storyline-copy">
+                                    <span class="chrono-storyline-title-row">
+                                        <strong data-overflow-title="${escapeHtml(filter.name)}">${escapeHtml(filter.name)}</strong>
+                                        <span class="chrono-storyline-metrics">
+                                            ${
+                                                filter.id === 'all'
+                                                    ? `<span>${filter.count}</span>`
+                                                    : `<span>${filter.minYear}${filter.maxYear && filter.maxYear !== filter.minYear ? `–${filter.maxYear}` : ''}</span><span>${filter.count}</span>`
+                                            }
+                                        </span>
+                                    </span>
+                                    ${filter.subtitle ? `<span class="chrono-storyline-subtitle" data-overflow-title="${escapeHtml(filter.subtitle)}">${escapeHtml(filter.subtitle)}</span>` : ''}
+                                </span>
                             </button>
                         `
                             )
@@ -758,6 +796,7 @@
                 </section>
             `;
 
+            syncOverflowTitles();
             const scroller = root.querySelector('.chrono-scroll');
             if (scroller) {
                 scroller.scrollLeft = Math.min(
