@@ -120,6 +120,7 @@ const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf
 const dualScreenHtml = fs.readFileSync(path.join(__dirname, '..', 'dual-screen.html'), 'utf8');
 const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
 const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
+const imageLoadingSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'image-loading.js'), 'utf8');
 const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
 const pqMiniProgramQrPath = path.join(__dirname, '..', 'resources', 'pq.png');
 assert.match(
@@ -571,8 +572,28 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?image\.src = imageUrl[\s\S]*?captionTitle\.innerHTML = escapeHtmlWithCjkTail[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
+    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?setPreviewImage\(image, imageUrl[\s\S]*?captionTitle\.innerHTML = escapeHtmlWithCjkTail[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
     'detail image changes should update the media, caption, and pager without rebuilding the full detail page'
+);
+assert.match(
+    imageLoadingSource,
+    /const THUMB_ROOT = 'resources\/images\/_thumbs\/'[\s\S]*?function getPreviewUrl\(url\)[\s\S]*?function loadFullImageInto\(image, options = \{\}\)/,
+    'shared image loading should map local raster images to generated thumbnails and load full images on demand'
+);
+assert.match(
+    indexHtml,
+    /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?<script src="shared\/chronology-overview\.js[\s\S]*?function buildPreviewImageAttributes\(url, alt[\s\S]*?data-full-src[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?photo-viewer-frame image-load-frame[\s\S]*?loadFullImageInto\(viewerPhoto/,
+    'single-screen entry should load image helper before chronology and open full archive images only inside the viewer'
+);
+assert.match(
+    dualScreenHtml,
+    /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?function buildPreviewImageAttributes\(url, alt[\s\S]*?data-full-src[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?photo-viewer-frame image-load-frame[\s\S]*?loadFullImageInto\(viewerPhoto/,
+    'dual-screen entry should use thumbnail previews and on-demand full-image loading in the viewer'
+);
+assert.match(
+    chronologySource,
+    /function getPreviewImageUrl\(imageUrl\)[\s\S]*?const previewUrl = getPreviewImageUrl\(imageUrl\)[\s\S]*?data-src="\$\{escapeHtml\(previewUrl\)\}" data-full-src="\$\{escapeHtml\(imageUrl\)\}"/,
+    'chronology overview cards should lazy-load thumbnail URLs while preserving full image metadata'
 );
 assert.doesNotMatch(
     indexHtml,
