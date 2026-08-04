@@ -32,13 +32,29 @@ async function getVisibleCardPoint(scroller, excludedEventId = '') {
     }, excludedEventId);
 }
 
-async function synthesizeTouchScroll(page, options) {
+async function performTouchSwipe(page, options) {
+    const { x, y, xDistance = 0, yDistance = 0, steps = 12 } = options;
     const session = await page.context().newCDPSession(page);
     try {
-        await session.send('Input.synthesizeScrollGesture', {
-            speed: 500,
-            gestureSourceType: 'touch',
-            ...options
+        await session.send('Input.dispatchTouchEvent', {
+            type: 'touchStart',
+            touchPoints: [{ x, y, id: 1 }]
+        });
+        for (let step = 1; step <= steps; step += 1) {
+            await session.send('Input.dispatchTouchEvent', {
+                type: 'touchMove',
+                touchPoints: [
+                    {
+                        x: x + (xDistance * step) / steps,
+                        y: y + (yDistance * step) / steps,
+                        id: 1
+                    }
+                ]
+            });
+        }
+        await session.send('Input.dispatchTouchEvent', {
+            type: 'touchEnd',
+            touchPoints: []
         });
     } finally {
         await session.detach();
@@ -112,7 +128,7 @@ test('@mobile mobile touch gestures keep vertical page and horizontal timeline s
     });
     expect(initial.scrollHeight).toBeGreaterThan(initial.viewportHeight);
 
-    await synthesizeTouchScroll(page, {
+    await performTouchSwipe(page, {
         x: initial.centerX,
         y: initial.startY,
         yDistance: -250
@@ -120,6 +136,7 @@ test('@mobile mobile touch gestures keep vertical page and horizontal timeline s
     await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(100);
     expect(await scroller.evaluate((element) => element.scrollLeft)).toBe(initial.scrollLeft);
 
+    scroller = await openChronology(page);
     const horizontal = await scroller.evaluate((element) => {
         element.scrollLeft = 1000;
         window.scrollTo(0, 0);
@@ -129,7 +146,7 @@ test('@mobile mobile touch gestures keep vertical page and horizontal timeline s
             y: Math.min(window.innerHeight - 80, bounds.y + bounds.height / 2)
         };
     });
-    await synthesizeTouchScroll(page, {
+    await performTouchSwipe(page, {
         x: horizontal.startX,
         y: horizontal.y,
         xDistance: -250
