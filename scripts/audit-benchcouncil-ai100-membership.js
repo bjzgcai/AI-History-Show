@@ -6,6 +6,12 @@ const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const STORYLINE_PATH = path.join(ROOT, 'archive', 'storylines', 'bench-council-ai100.json');
+const HIGHLIGHTS_STORYLINE_PATH = path.join(
+    ROOT,
+    'archive',
+    'storylines',
+    'bench-council-ai100-2022-2023-highlights.json'
+);
 const CATALOG_PATH = path.join(ROOT, 'research', 'benchcouncil-ai100', 'canonical-root-table-2026-07-30.json');
 const EXCLUDED_EVENT_IDS = [
     'ai100-2021-clip',
@@ -25,7 +31,12 @@ function diff(left, right) {
 
 const catalog = readJson(CATALOG_PATH);
 const storyline = readJson(STORYLINE_PATH);
-const expected = catalog.items.map((item) => item.eventId);
+const highlightsStoryline = readJson(HIGHLIGHTS_STORYLINE_PATH);
+const canonicalEventIds = catalog.items.map((item) => item.eventId);
+const highlightEventIds = highlightsStoryline.events
+    .filter((item) => item.enabled !== false)
+    .map((item) => item.eventId);
+const expected = [...canonicalEventIds, ...highlightEventIds];
 const actual = storyline.events.filter((item) => item.enabled !== false).map((item) => item.eventId);
 const missing = diff(expected, actual);
 const extra = diff(actual, expected);
@@ -43,10 +54,12 @@ for (const eventId of EXCLUDED_EVENT_IDS) {
 }
 
 const failures = [];
-if (catalog.uniqueWorkCount !== 119 || expected.length !== 119) {
-    failures.push(`catalog count must be 119; found ${catalog.uniqueWorkCount}/${expected.length}`);
+if (catalog.uniqueWorkCount !== 119 || canonicalEventIds.length !== 119) {
+    failures.push(`catalog count must be 119; found ${catalog.uniqueWorkCount}/${canonicalEventIds.length}`);
 }
-if (actual.length !== 119) failures.push(`storyline count must be 119; found ${actual.length}`);
+if (highlightEventIds.length !== 20) failures.push(`highlight count must be 20; found ${highlightEventIds.length}`);
+if (new Set(expected).size !== expected.length) failures.push('canonical and highlight event IDs must not overlap');
+if (actual.length !== 139) failures.push(`storyline count must be 139; found ${actual.length}`);
 if (missing.length) failures.push(`missing event IDs: ${missing.join(', ')}`);
 if (extra.length) failures.push(`extra event IDs: ${extra.join(', ')}`);
 if (duplicateIds.length) failures.push(`duplicate event IDs: ${[...new Set(duplicateIds)].join(', ')}`);
@@ -68,7 +81,8 @@ if (failures.length) {
     process.exitCode = 1;
 } else {
     console.log(
-        `PASS BenchCouncil AI100 storyline matches all ${actual.length} canonical root-table works in official order.`
+        `PASS BenchCouncil AI100 storyline preserves all ${canonicalEventIds.length} canonical root-table works in official order.`
     );
+    console.log(`PASS all ${highlightEventIds.length} annual highlights follow the canonical table in curated order.`);
     console.log(`PASS ${EXCLUDED_EVENT_IDS.length} retained extension events are marked non-canonical.`);
 }

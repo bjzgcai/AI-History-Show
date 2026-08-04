@@ -10,8 +10,16 @@ const { archiveStorylines, milestones: generatedMilestones } = require(
 assert.equal(archiveStorylines.length, 6, 'generated runtime should expose all Archive storyline definitions');
 assert.deepEqual(
     archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100').title,
-    { zh: 'AI 顶尖成就（BenchCouncil）', en: 'Top AI Achievements (BenchCouncil)' },
+    { zh: 'AI 顶尖成就图谱（BenchCouncil）', en: 'AI Achievement Map (BenchCouncil)' },
     'the generated BenchCouncil storyline title should come from Archive'
+);
+assert.deepEqual(
+    archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100').subtitle,
+    {
+        zh: '119 项长期主表成就 + 20 项 2022–2023 年度精选',
+        en: '119 long-term main-table achievements + 20 selected achievements from 2022–2023'
+    },
+    'the generated BenchCouncil storyline subtitle should describe the long-term table and annual highlights'
 );
 assert.deepEqual(
     archiveStorylines.find((storyline) => storyline.id === 'deep-learning').title,
