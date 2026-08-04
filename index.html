@@ -9081,11 +9081,7 @@
         const UNIFIED_STORYLINE_ID = 'unified-ai-history';
         const DEEP_STORYLINE_ID = StorylineRouting.DEEP_STORYLINE_ID;
         const ANNUAL_AI100_STORYLINE_ID = 'bench-council-ai100-2022-2023';
-        const AI100_HIGHLIGHTS_STORYLINE_ID = 'bench-council-ai100-2022-2023-highlights';
-        const STANDALONE_AI100_STORYLINE_IDS = new Set([
-            ANNUAL_AI100_STORYLINE_ID,
-            AI100_HIGHLIGHTS_STORYLINE_ID
-        ]);
+        const STANDALONE_AI100_STORYLINE_IDS = new Set([ANNUAL_AI100_STORYLINE_ID]);
         const DEFAULT_STORYLINE_ID = UNIFIED_STORYLINE_ID;
         const CHRONOLOGY_FILTER_PARAM = 'storylineFilter';
         const AI_HISTORY_MAP_VARIANT_PRIORITY = [
@@ -9131,18 +9127,6 @@
             },
             {
                 id: ANNUAL_AI100_STORYLINE_ID,
-                layout: 'ui-browser',
-                label: {
-                    en: 'AI100 Annual Achievements (2022-2023)',
-                    zh: 'AI100 年度成就（2022-2023）'
-                },
-                note: {
-                    en: 'The standalone 120-row annual selection in official BenchCouncil order',
-                    zh: '按 BenchCouncil 官方顺序展示 120 条独立年度入选记录'
-                }
-            },
-            {
-                id: AI100_HIGHLIGHTS_STORYLINE_ID,
                 layout: 'ui-browser',
                 label: {
                     en: 'AI100 Annual Highlights (2022-2023)',

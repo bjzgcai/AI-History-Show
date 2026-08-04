@@ -7,7 +7,7 @@ const { archiveStorylines, milestones: generatedMilestones } = require(
     path.join(__dirname, '..', 'milestones-data.js')
 );
 
-assert.equal(archiveStorylines.length, 6, 'generated runtime should expose all Archive storyline definitions');
+assert.equal(archiveStorylines.length, 5, 'generated runtime should expose all Archive storyline definitions');
 assert.deepEqual(
     archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100').title,
     { zh: 'AI 顶尖成就图谱（BenchCouncil）', en: 'AI Achievement Map (BenchCouncil)' },
@@ -31,13 +31,8 @@ assert.deepEqual(
 );
 assert.deepEqual(
     archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100-2022-2023').title,
-    { zh: 'AI100 年度成就（2022-2023）', en: 'AI100 Annual Achievements (2022-2023)' },
-    'the generated annual AI100 storyline title should come from Archive'
-);
-assert.deepEqual(
-    archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100-2022-2023-highlights').title,
     { zh: 'AI100 年度精选（2022-2023）', en: 'AI100 Annual Highlights (2022-2023)' },
-    'the generated annual AI100 highlights title should come from Archive'
+    'the generated annual AI100 storyline title should come from Archive'
 );
 console.log('PASS generated storyline definitions');
 
@@ -119,11 +114,15 @@ const annualAi100Milestones = generatedMilestones.filter(
 );
 assert.equal(
     annualAi100Milestones.length,
-    120,
-    'the BenchCouncil 2022-2023 annual storyline should contain 120 events'
+    20,
+    'the BenchCouncil 2022-2023 annual storyline should contain 20 curated events'
 );
-assert.equal(annualAi100Milestones[0].title.en, 'Swin Transformer V2', 'the annual storyline should retain row 1');
-assert.equal(annualAi100Milestones.at(-1).title.en, 'OSTrack', 'the annual storyline should retain row 120');
+assert.equal(
+    annualAi100Milestones[0].title.en,
+    'Swin Transformer V2',
+    'the annual selection should start with Swin Transformer V2'
+);
+assert.equal(annualAi100Milestones.at(-1).title.en, 'ESMFold', 'the annual selection should end with ESMFold');
 assert.deepEqual(
     annualAi100Milestones[0].figures.map((figure) => figure.name.en),
     ['Ze Liu', 'Han Hu'],
@@ -148,40 +147,18 @@ assert.equal(
 );
 assert.equal(annualAi100Milestones[1].figures[2].avatar.endsWith('yue-cao-portrait.jpeg'), true);
 assert.equal(annualAi100Milestones[1].figures[3].avatar.endsWith('han-hu-portrait.jpg'), true);
-assert.deepEqual(
-    annualAi100Milestones[2].figures.map((figure) => figure.name.en),
-    ['Xiaohua Zhai', 'Alexander Kolesnikov', 'Lucas Beyer'],
-    'annual milestones should preserve the complete Scaling ViT contributor order'
-);
 assert.equal(
-    annualAi100Milestones[2].figures.filter((figure) => figure.avatar).length,
-    1,
-    'Scaling ViT should expose exactly one selected contributor portrait'
-);
-assert.equal(annualAi100Milestones[2].figures[0].avatar.endsWith('xiaohua-zhai-portrait.jpg'), true);
-assert.equal(
-    annualAi100Milestones[2].figures.slice(1).every((figure) => figure.avatar === ''),
-    true,
-    'Scaling ViT contributors without the selected portrait should remain text-only'
-);
-console.log('PASS BenchCouncil annual storyline order');
-
-const annualAi100Highlights = generatedMilestones.filter(
-    (milestone) => routing.getMilestoneStorylineId(milestone) === 'bench-council-ai100-2022-2023-highlights'
-);
-assert.equal(annualAi100Highlights.length, 20, 'the annual AI100 highlights storyline should contain 20 events');
-assert.equal(
-    annualAi100Highlights.filter((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-057-claude')
+    annualAi100Milestones.filter((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-057-claude')
         .length,
     1,
-    'the 2023 highlights should include Claude'
+    'the 2023 selection should include Claude'
 );
 assert.equal(
-    annualAi100Highlights.some((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-042-llama-2'),
+    annualAi100Milestones.some((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-042-llama-2'),
     false,
-    'the highlights should omit LLaMA 2 to avoid duplicating the LLaMA turning point'
+    'the annual selection should omit LLaMA 2 to avoid duplicating the LLaMA turning point'
 );
-console.log('PASS BenchCouncil annual highlights selection');
+console.log('PASS BenchCouncil annual highlights selection and contributor order');
 
 const archiveMilestones = [
     { id: 'milestone-1956-dartmouth', storyline: { id: 'deep-learning' } },
@@ -292,7 +269,7 @@ assert.match(
 assert.match(
     indexHtml,
     /function getChronologyOverviewMilestones\(\)[\s\S]*?STANDALONE_AI100_STORYLINE_IDS\.has\(chronologyFilterStorylineId\)[\s\S]*?getStorylineMilestones\(chronologyFilterStorylineId\)[\s\S]*?milestones: getChronologyOverviewMilestones\(\)[\s\S]*?preserveSourceOrder: preserveStandaloneOrder/,
-    'the complete annual and highlights storylines should supply their own datasets in configured order'
+    'the annual highlights storyline should supply its own dataset in configured order'
 );
 assert.match(
     indexHtml,
@@ -416,13 +393,13 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /const STANDALONE_AI100_STORYLINE_IDS = new Set\([\s\S]*?ANNUAL_AI100_STORYLINE_ID[\s\S]*?AI100_HIGHLIGHTS_STORYLINE_ID[\s\S]*?const UNIFIED_STORYLINE_EXCLUSIONS = new Set\(STANDALONE_AI100_STORYLINE_IDS\)[\s\S]*?unifiedSourceMilestones = allMilestones\.filter/,
-    'the complete annual and highlights storylines should remain separate from the unified long-term chronology'
+    /const STANDALONE_AI100_STORYLINE_IDS = new Set\(\[ANNUAL_AI100_STORYLINE_ID\]\)[\s\S]*?const UNIFIED_STORYLINE_EXCLUSIONS = new Set\(STANDALONE_AI100_STORYLINE_IDS\)[\s\S]*?unifiedSourceMilestones = allMilestones\.filter/,
+    'the annual highlights storyline should remain separate from the unified long-term chronology'
 );
 assert.match(
     indexHtml,
-    /const STORYLINE_OPTIONS = \[[\s\S]*?id: UNIFIED_STORYLINE_ID[\s\S]*?id: 'bench-council-ai100'[\s\S]*?id: ANNUAL_AI100_STORYLINE_ID[\s\S]*?id: AI100_HIGHLIGHTS_STORYLINE_ID[\s\S]*?id: 'gaming-ai'[\s\S]*?id: 'humanistic-cycle'[\s\S]*?id: DEEP_STORYLINE_ID[\s\S]*?\];/,
-    'the storyline selector should expose canonical, annual, and annual highlights AI100 views'
+    /const STORYLINE_OPTIONS = \[[\s\S]*?id: UNIFIED_STORYLINE_ID[\s\S]*?id: 'bench-council-ai100'[\s\S]*?id: ANNUAL_AI100_STORYLINE_ID[\s\S]*?id: 'gaming-ai'[\s\S]*?id: 'humanistic-cycle'[\s\S]*?id: DEEP_STORYLINE_ID[\s\S]*?\];/,
+    'the storyline selector should expose one curated annual AI100 view'
 );
 assert.match(
     indexHtml,

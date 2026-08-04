@@ -10,15 +10,15 @@ const localize = (value) => {
     return String(value.zh ?? value.en ?? '');
 };
 
-assert.equal(milestones.length, 334, 'the chronology overview should consume all generated Archive milestones');
+assert.equal(milestones.length, 214, 'the chronology overview should consume all generated Archive milestones');
 
 const annualMilestones = milestones.filter(
     (milestone) => overview.getStorylineId(milestone) === 'bench-council-ai100-2022-2023'
 );
-assert.equal(annualMilestones.length, 120, 'the annual AI100 storyline should remain available as a standalone view');
+assert.equal(annualMilestones.length, 20, 'the annual AI100 highlights should remain available as a standalone view');
 assert.equal(
     overview.selectMilestonesByStoryline(annualMilestones, 'bench-council-ai100-2022-2023').length,
-    120,
+    20,
     'a standalone storyline dataset should be directly filterable without canonical wrappers'
 );
 const annualLayout = overview.buildTimelineLayout(annualMilestones, {
@@ -28,15 +28,12 @@ const annualLayout = overview.buildTimelineLayout(annualMilestones, {
 assert.equal(
     annualLayout.cards[0].milestone.title.en,
     'Swin Transformer V2',
-    'annual layout should start at official row 1'
+    'annual layout should start with the first curated event'
 );
-assert.equal(annualLayout.cards.at(-1).milestone.title.en, 'OSTrack', 'annual layout should end at official row 120');
-assert.equal(annualLayout.years[0].label, '2022-2023', 'annual layout should label its official sequence');
+assert.equal(annualLayout.cards.at(-1).milestone.title.en, 'ESMFold', 'annual layout should end with ESMFold');
+assert.equal(annualLayout.years[0].label, '2022-2023', 'annual layout should label its curated sequence');
 const unifiedSourceMilestones = milestones.filter(
-    (milestone) =>
-        !new Set(['bench-council-ai100-2022-2023', 'bench-council-ai100-2022-2023-highlights']).has(
-            overview.getStorylineId(milestone)
-        )
+    (milestone) => overview.getStorylineId(milestone) !== 'bench-council-ai100-2022-2023'
 );
 
 const canonicalMilestones = overview.buildCanonicalMilestones(unifiedSourceMilestones, {

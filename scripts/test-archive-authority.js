@@ -182,7 +182,7 @@ console.log('PASS runtime figure avatars are explicit local files');
 const compiledArchive = compileArchive(path.join(__dirname, '..'));
 assert.equal(compiledArchive.source, 'archive');
 assert.equal(compiledArchive.errors.length, 0);
-assert.equal(compiledArchive.milestones.length, 334);
+assert.equal(compiledArchive.milestones.length, 214);
 assert.ok(compiledArchive.milestones.every((milestone) => milestone.sourceKind === 'archive'));
 assert.deepEqual(
     new Set(compiledArchive.milestones.map((milestone) => milestone.id)).size,
@@ -224,7 +224,7 @@ for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'e
 }
 console.log('PASS storyline labels have one Archive authority');
 
-assert.equal(milestones.length, 334, 'Archive runtime should contain all six storylines and 334 milestones');
+assert.equal(milestones.length, 214, 'Archive runtime should contain five storylines and 214 milestones');
 const ai100MapMilestones = milestones.filter(
     (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100'
 );
@@ -247,16 +247,11 @@ console.log('PASS AI Achievement Map combines the canonical table with all 20 an
 const annualAi100Milestones = milestones.filter(
     (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100-2022-2023'
 );
-assert.equal(annualAi100Milestones.length, 120, 'Archive runtime should contain all 120 annual AI100 entries');
+assert.equal(annualAi100Milestones.length, 20, 'Archive runtime should contain the 20 curated annual AI100 entries');
 assert.equal(annualAi100Milestones[0].title.en, 'Swin Transformer V2');
-assert.equal(annualAi100Milestones[119].title.en, 'OSTrack');
-console.log('PASS annual AI100 storyline preserves the official 120-row boundary');
-const annualAi100Highlights = milestones.filter(
-    (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100-2022-2023-highlights'
-);
-assert.equal(annualAi100Highlights.length, 20, 'Archive runtime should contain all 20 annual AI100 highlights');
+assert.equal(annualAi100Milestones[19].title.en, 'ESMFold');
 assert.ok(
-    annualAi100Highlights.some((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-057-claude'),
+    annualAi100Milestones.some((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-057-claude'),
     'annual AI100 highlights should contain Claude'
 );
 console.log('PASS annual AI100 highlights preserve the curated boundary');

@@ -3,11 +3,10 @@
 
     const DEFAULT_STORYLINE_STYLES = {
         'bench-council-ai100': { color: '#ff8833', order: 1 },
-        'bench-council-ai100-2022-2023': { color: '#2fb6a2', order: 2 },
-        'bench-council-ai100-2022-2023-highlights': { color: '#e6b84a', order: 3 },
-        'gaming-ai': { color: '#33b0ff', order: 4 },
-        'humanistic-cycle': { color: '#44dd88', order: 5 },
-        'deep-learning': { color: '#b088ff', order: 6 }
+        'bench-council-ai100-2022-2023': { color: '#e6b84a', order: 2 },
+        'gaming-ai': { color: '#33b0ff', order: 3 },
+        'humanistic-cycle': { color: '#44dd88', order: 4 },
+        'deep-learning': { color: '#b088ff', order: 5 }
     };
     const PORTRAIT_HINT_PATTERN =
         /\bportrait\b|\/people\/|(?:^|[_/-])portrait(?:[._/-]|$)|人物(?:肖像|照片|图|资料)?|肖像/i;
