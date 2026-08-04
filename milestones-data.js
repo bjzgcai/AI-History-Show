@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-04 06:32
+// 生成时间: 2026-08-04 07:56
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 5, milestones 214, errors 0
 
@@ -38791,14 +38791,14 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>勒昆及合作者在 1989 年证明，用反向传播训练的卷积神经网络可以识别手写邮政编码。局部感受野只连接图像的小区域，共享权重让同一特征检测器在不同位置重复使用，逐层下采样则降低对微小位移的敏感性；整个系统从像素到类别共同训练。</p><p>后来形成的 LeNet-5 把卷积、子采样和分类器整合为文档识别流水线，并实际用于支票和邮政字符处理。这一技术路线以较少参数利用图像的空间结构，取代大量手工特征。它在 2012 年规模化 CNN 浪潮之前，已证明端到端卷积学习具有工程价值。</p>",
+      "zh": "<p>杨立昆及合作者在 1989 年证明，用反向传播训练的卷积神经网络可以识别手写邮政编码。局部感受野只连接图像的小区域，共享权重让同一特征检测器在不同位置重复使用，逐层下采样则降低对微小位移的敏感性；整个系统从像素到类别共同训练。</p><p>后来形成的 LeNet-5 把卷积、子采样和分类器整合为文档识别流水线，并实际用于支票和邮政字符处理。这一技术路线以较少参数利用图像的空间结构，取代大量手工特征。它在 2012 年规模化 CNN 浪潮之前，已证明端到端卷积学习具有工程价值。</p>",
       "en": "<p>Yann LeCun and colleagues showed in 1989 that a convolutional neural network trained with backpropagation could recognize handwritten ZIP codes. Local receptive fields connect only to small image regions, shared weights reuse the same feature detector across positions, and progressive subsampling reduces sensitivity to small shifts. The complete system is trained jointly from pixels to classes.</p><p>The later LeNet-5 architecture integrated convolution, subsampling, and classification into a document-recognition pipeline used for checks and postal characters. This line of work exploited image structure with relatively few parameters and replaced extensive hand-designed features. Long before the scaled CNN wave of 2012, it demonstrated that end-to-end convolutional learning could deliver practical engineering value.</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Yann LeCun",
-          "zh": "扬·勒昆"
+          "zh": "杨立昆"
         },
         "role": {
           "en": "LeNet lead researcher",
@@ -38841,7 +38841,7 @@ const milestones = [
     "imageMeta": {
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
         "caption": {
-          "zh": "扬·勒昆肖像",
+          "zh": "杨立昆肖像",
           "en": "Yann LeCun portrait"
         },
         "subcaption": {
@@ -38913,7 +38913,7 @@ const milestones = [
       },
       "resources/images/external/1989-cnn/yann-lecun-portrait.jpg": {
         "caption": {
-          "zh": "扬·勒昆肖像",
+          "zh": "杨立昆肖像",
           "en": "Yann LeCun portrait"
         },
         "subcaption": {
@@ -38943,7 +38943,7 @@ const milestones = [
       },
       "resources/images/1989-cnn/people/1989-cnn_people_02.jpg": {
         "caption": {
-          "zh": "扬·勒昆肖像",
+          "zh": "杨立昆肖像",
           "en": "Yann LeCun portrait"
         },
         "subcaption": {
@@ -39037,7 +39037,7 @@ const milestones = [
             "en": "Personal homepage"
           },
           "label": {
-            "zh": "扬·勒昆个人主页",
+            "zh": "杨立昆个人主页",
             "en": "Yann LeCun personal homepage"
           },
           "url": "https://yann.lecun.com/",
@@ -39076,7 +39076,7 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "1989 年，扬·勒昆及合作者展示了用反向传播训练卷积网络识别手写邮政编码的方法。",
+            "zh": "1989 年，杨立昆及合作者展示了用反向传播训练卷积网络识别手写邮政编码的方法。",
             "en": "In 1989, Yann LeCun and collaborators demonstrated convolutional networks trained by backpropagation for handwritten ZIP-code recognition."
           },
           "sourceIds": [
@@ -39211,7 +39211,7 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。",
+          "zh": "杨立昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。",
           "en": "Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. LeNet became a defining example of end-to-end convolutional perception."
         },
         "sourceIds": [
@@ -39307,7 +39307,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "Yann LeCun et al., Neural Computation, 1989",
-        "zh": "扬·勒昆等，《Neural Computation》，1989"
+        "zh": "杨立昆等，《Neural Computation》，1989"
       },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541"
@@ -39318,7 +39318,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "<em>Backpropagation Applied to Handwritten Zip Code Recognition</em>, Yann LeCun et al., Neural Computation, 1989",
-      "zh": "《反向传播应用于手写邮编识别》, 扬·勒昆等，《Neural Computation》，1989"
+      "zh": "《反向传播应用于手写邮编识别》, 杨立昆等，《Neural Computation》，1989"
     }
   },
   {
@@ -75167,8 +75167,8 @@ const milestones = [
       },
       {
         "name": {
-          "en": "Michael Jordan",
-          "zh": "迈克尔·乔丹"
+          "en": "Michael I. Jordan",
+          "zh": "迈克尔·I·乔丹"
         },
         "role": {
           "en": "Co-author and probabilistic ML researcher",
@@ -94051,14 +94051,14 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>循环神经网络通过把先前时间步的状态反馈到网络中，使当前输出同时依赖当前输入和历史信息。1986 年，迈克尔·乔丹提出一种把输出状态反馈到上下文单元的序列网络，用内部状态帮助模型学习动作或符号的先后关系。</p><p>1990 年，杰弗里·埃尔曼进一步展示了把隐藏层状态复制到上下文单元的简单循环网络，并用它从连续序列中发现词汇和时间结构。因此，今天常说的 Jordan 网络与 Elman 网络并非同年提出，而是共同确立了早期 RNN 的两种典型反馈方式。这类模型打开了序列学习道路，也暴露了梯度在长时间跨度上传播困难的问题，随后推动了 LSTM 等门控结构的发展。</p>",
-      "en": "<p>Recurrent neural networks feed information from earlier time steps back into the network, allowing the current output to depend on both the present input and an internal history. In 1986, Michael Jordan proposed a sequential network that returned output state to context units, using this internal state to learn the ordering of actions or symbols.</p><p>In 1990, Jeffrey Elman demonstrated a simple recurrent network that copied hidden-layer state into context units and used it to discover lexical and temporal structure in continuous sequences. The Jordan and Elman networks were therefore not introduced in the same year; together they established two influential feedback patterns for early RNNs. They opened a path to sequence learning while also exposing the difficulty of carrying gradients across long spans, motivating later gated designs such as LSTM.</p>"
+      "zh": "<p>循环神经网络通过把先前时间步的状态反馈到网络中，使当前输出同时依赖当前输入和历史信息。1986 年，迈克尔·I·乔丹提出一种把输出状态反馈到上下文单元的序列网络，用内部状态帮助模型学习动作或符号的先后关系。</p><p>1990 年，杰弗里·埃尔曼进一步展示了把隐藏层状态复制到上下文单元的简单循环网络，并用它从连续序列中发现词汇和时间结构。因此，今天常说的 Jordan 网络与 Elman 网络并非同年提出，而是共同确立了早期 RNN 的两种典型反馈方式。这类模型打开了序列学习道路，也暴露了梯度在长时间跨度上传播困难的问题，随后推动了 LSTM 等门控结构的发展。</p>",
+      "en": "<p>Recurrent neural networks feed information from earlier time steps back into the network, allowing the current output to depend on both the present input and an internal history. In 1986, Michael I. Jordan proposed a sequential network that returned output state to context units, using this internal state to learn the ordering of actions or symbols.</p><p>In 1990, Jeffrey Elman demonstrated a simple recurrent network that copied hidden-layer state into context units and used it to discover lexical and temporal structure in continuous sequences. The Jordan and Elman networks were therefore not introduced in the same year; together they established two influential feedback patterns for early RNNs. They opened a path to sequence learning while also exposing the difficulty of carrying gradients across long spans, motivating later gated designs such as LSTM.</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Michael I. Jordan",
-          "zh": "迈克尔·乔丹"
+          "zh": "迈克尔·I·乔丹"
         },
         "role": {
           "en": "The creator of Jordan Network",
@@ -94201,8 +94201,8 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "迈克尔·乔丹在 1986 年提出输出反馈网络，杰弗里·埃尔曼在 1990 年展示隐藏状态反馈网络，两者成为早期 RNN 的代表结构。",
-            "en": "Michael Jordan proposed an output-feedback network in 1986, and Jeffrey Elman demonstrated a hidden-state feedback network in 1990; both became representative early RNN architectures."
+            "zh": "迈克尔·I·乔丹在 1986 年提出输出反馈网络，杰弗里·埃尔曼在 1990 年展示隐藏状态反馈网络，两者成为早期 RNN 的代表结构。",
+            "en": "Michael I. Jordan proposed an output-feedback network in 1986, and Jeffrey Elman demonstrated a hidden-state feedback network in 1990; both became representative early RNN architectures."
           },
           "sourceIds": [
             "source-jordan-serial-order-report",
@@ -94345,14 +94345,14 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>1989 年，扬·勒昆及合作者发表手写邮政编码识别研究，证明带有局部连接和共享权重的多层网络可以用反向传播端到端训练。卷积层在图像不同位置重复使用同一组滤波器，既减少参数，也让模型能够识别平移后仍相似的笔画结构。</p><p>这条路线后来发展为 LeNet-5，并在银行支票和文档识别中得到实际应用。CNN 把特征提取与分类放进同一个学习系统，取代了大量手工设计视觉特征的步骤，为 AlexNet 之后的大规模图像识别奠定了直接的架构基础。</p>",
+      "zh": "<p>1989 年，杨立昆及合作者发表手写邮政编码识别研究，证明带有局部连接和共享权重的多层网络可以用反向传播端到端训练。卷积层在图像不同位置重复使用同一组滤波器，既减少参数，也让模型能够识别平移后仍相似的笔画结构。</p><p>这条路线后来发展为 LeNet-5，并在银行支票和文档识别中得到实际应用。CNN 把特征提取与分类放进同一个学习系统，取代了大量手工设计视觉特征的步骤，为 AlexNet 之后的大规模图像识别奠定了直接的架构基础。</p>",
       "en": "<p>In 1989, Yann LeCun and collaborators published a system for handwritten ZIP-code recognition, showing that a multilayer network with local connections and shared weights could be trained end to end with backpropagation. Convolutional layers reused the same filters across image locations, reducing the number of parameters while detecting similar strokes after small shifts.</p><p>This line of work later matured into LeNet-5 and practical systems for reading bank checks and other documents. CNNs placed feature extraction and classification inside one learned pipeline, reducing dependence on hand-engineered visual features. The architecture became the direct foundation for the large-scale image-recognition systems that followed AlexNet.</p>"
     },
     "figures": [
       {
         "name": {
           "en": "Yann LeCun",
-          "zh": "扬·勒昆"
+          "zh": "杨立昆"
         },
         "role": {
           "en": "LeNet lead researcher",
@@ -94394,7 +94394,7 @@ const milestones = [
     "imageMeta": {
       "resources/images/external/1989-cnn/yann-lecun-portrait.jpg": {
         "caption": {
-          "zh": "扬·勒昆肖像",
+          "zh": "杨立昆肖像",
           "en": "Yann LeCun portrait"
         },
         "subcaption": {
@@ -94472,7 +94472,7 @@ const milestones = [
       },
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
         "caption": {
-          "zh": "扬·勒昆肖像",
+          "zh": "杨立昆肖像",
           "en": "Yann LeCun portrait"
         },
         "subcaption": {
@@ -94496,7 +94496,7 @@ const milestones = [
       },
       "resources/images/1989-cnn/people/1989-cnn_people_02.jpg": {
         "caption": {
-          "zh": "扬·勒昆肖像",
+          "zh": "杨立昆肖像",
           "en": "Yann LeCun portrait"
         },
         "subcaption": {
@@ -94605,7 +94605,7 @@ const milestones = [
             "en": "Personal homepage"
           },
           "label": {
-            "zh": "扬·勒昆个人主页",
+            "zh": "杨立昆个人主页",
             "en": "Yann LeCun personal homepage"
           },
           "url": "https://yann.lecun.com/",
@@ -94629,7 +94629,7 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "1989 年，扬·勒昆及合作者展示了用反向传播训练卷积网络识别手写邮政编码的方法。",
+            "zh": "1989 年，杨立昆及合作者展示了用反向传播训练卷积网络识别手写邮政编码的方法。",
             "en": "In 1989, Yann LeCun and collaborators demonstrated convolutional networks trained by backpropagation for handwritten ZIP-code recognition."
           },
           "sourceIds": [
@@ -94764,7 +94764,7 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。",
+          "zh": "杨立昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。",
           "en": "Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. LeNet became a defining example of end-to-end convolutional perception."
         },
         "sourceIds": [
@@ -94811,7 +94811,7 @@ const milestones = [
     "videoUrl": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
     "quote": {
       "en": "\"LeCun and collaborators demonstrated that convolutional networks trained with backpropagation could recognize handwritten digits by exploiting local image structure.\"",
-      "zh": "\"勒昆及合作者展示了用反向传播训练的卷积网络可以利用图像局部结构识别手写数字，为现代计算机视觉奠定了重要基础。\""
+      "zh": "\"杨立昆及合作者展示了用反向传播训练的卷积网络可以利用图像局部结构识别手写数字，为现代计算机视觉奠定了重要基础。\""
     },
     "quoteMeta": {
       "speaker": "",
@@ -94821,18 +94821,18 @@ const milestones = [
       },
       "workAuthors": {
         "en": "Yann LeCun et al., Neural Computation, 1989",
-        "zh": "扬·勒昆等，Neural Computation，1989"
+        "zh": "杨立昆等，Neural Computation，1989"
       },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541"
     },
     "quotePage": {
       "en": "LeCun et al., Neural Computation / Bell Labs publication",
-      "zh": "勒昆等，Neural Computation / 贝尔实验室论文"
+      "zh": "杨立昆等，Neural Computation / 贝尔实验室论文"
     },
     "quoteAttribution": {
       "en": "<em>Backpropagation Applied to Handwritten Zip Code Recognition</em>, Yann LeCun et al., Neural Computation, 1989",
-      "zh": "《反向传播应用于手写邮政编码识别》, 扬·勒昆等，Neural Computation，1989"
+      "zh": "《反向传播应用于手写邮政编码识别》, 杨立昆等，Neural Computation，1989"
     }
   },
   {

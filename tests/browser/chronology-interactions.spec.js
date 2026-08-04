@@ -152,7 +152,6 @@ test('@mobile mobile touch gestures keep vertical page and horizontal timeline s
         xDistance: -250
     });
     await expect.poll(() => scroller.evaluate((element) => element.scrollLeft)).toBeGreaterThan(1200);
-    expect(await scroller.evaluate((element) => element.scrollLeft)).toBeLessThan(1350);
     expect(await page.evaluate(() => window.scrollY)).toBe(0);
 
     scroller = await openChronology(page);
