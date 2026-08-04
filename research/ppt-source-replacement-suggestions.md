@@ -150,7 +150,7 @@
 ```js
 {
   en: "LeCun and collaborators demonstrated that convolutional networks trained with backpropagation could recognize handwritten digits by exploiting local image structure.",
-  zh: "勒昆及合作者展示了用反向传播训练的卷积网络可以利用图像局部结构识别手写数字，为现代计算机视觉奠定了重要基础。"
+  zh: "杨立昆及合作者展示了用反向传播训练的卷积网络可以利用图像局部结构识别手写数字，为现代计算机视觉奠定了重要基础。"
 }
 ```
 
@@ -159,7 +159,7 @@
 ```js
 {
   en: "LeCun et al., Neural Computation / Bell Labs publication",
-  zh: "勒昆等，Neural Computation / 贝尔实验室论文"
+  zh: "杨立昆等，Neural Computation / 贝尔实验室论文"
 }
 ```
 

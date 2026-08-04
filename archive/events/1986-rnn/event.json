@@ -7,8 +7,8 @@
     "en": "Recurrent Neural Networks"
   },
   "description": {
-    "zh": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，埃尔曼和Jordan分别提出了简单循环神经网络和乔丹网络，引入上下文单元作为显式的\"短期记忆\"单元，开创了循环神经网络的先河。",
-    "en": "Recurrent neural networks process sequences by maintaining memory through recurrent connections. In 1986, Jeffrey Elman and Michael Jordan proposed influential recurrent architectures, establishing key foundations for later language and sequence modeling."
+    "zh": "循环神经网络（RNN）通过循环连接保存历史信息，从而处理序列数据。1986 年，迈克尔·I·乔丹提出把输出状态反馈到上下文单元的乔丹网络；1990 年，杰弗里·埃尔曼展示把隐藏层状态反馈到上下文单元的简单循环网络，两种结构共同奠定了后来语言与序列建模的重要基础。",
+    "en": "Recurrent neural networks process sequences by preserving historical information through recurrent connections. In 1986, Michael I. Jordan proposed the Jordan network, which feeds output state back into context units; in 1990, Jeffrey Elman demonstrated a simple recurrent network that feeds hidden-layer state into context units. Together, these architectures established important foundations for later language and sequence modeling."
   },
   "location": {
     "regionId": "usa",

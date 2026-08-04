@@ -115,7 +115,7 @@ const quoteCandidates = {
         "quote": "LeCun and collaborators demonstrated that convolutional networks trained with backpropagation could recognize handwritten digits by exploiting local image structure.",
         "speaker": {
           "en": "Yann LeCun et al.",
-          "zh": "扬·勒昆等"
+          "zh": "杨立昆等"
         },
         "workType": "paper",
         "workTitle": {
@@ -124,7 +124,7 @@ const quoteCandidates = {
         },
         "workAuthors": {
           "en": "Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner",
-          "zh": "扬·勒昆、莱昂·博图、约书亚·本吉奥、帕特里克·哈夫纳"
+          "zh": "杨立昆、莱昂·博图、约书亚·本吉奥、帕特里克·哈夫纳"
         },
         "sourceLabel": {
           "en": "Neural Computation paper DOI",
