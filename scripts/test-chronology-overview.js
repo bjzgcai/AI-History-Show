@@ -494,6 +494,67 @@ assert.deepEqual(
 );
 console.log('PASS chronology density navigator maps clicks and viewport positions to timeline years');
 
+const scaledScroller = {
+    clientWidth: 1850,
+    getBoundingClientRect: () => ({ width: 1387.5 })
+};
+assert.equal(overview.getChronologyScaleX(scaledScroller), 0.75, 'chronology input should detect stage scaling');
+assert.equal(
+    overview.getChronologyDragScrollLeft(0, 1000, 400, 0.75),
+    800,
+    'dragging should compensate for the scaled stage coordinate system'
+);
+assert.equal(
+    overview.getChronologyScrollTarget(1000, 28051, 1850, 800),
+    1800,
+    'chronology wheel movement should advance within the scrollable range'
+);
+assert.equal(
+    overview.getChronologyScrollTarget(0, 28051, 1850, -800),
+    0,
+    'chronology wheel movement should stop at the leading edge'
+);
+assert.equal(
+    overview.getChronologyScrollTarget(26000, 28051, 1850, 800),
+    26201,
+    'chronology wheel movement should stop at the trailing edge'
+);
+assert.equal(
+    overview.getChronologyWheelDelta({ deltaX: 0, deltaY: 600, deltaMode: 0 }, scaledScroller),
+    800,
+    'desktop vertical wheel input should become scale-corrected horizontal movement'
+);
+assert.equal(
+    overview.getChronologyWheelDelta({ deltaX: 0, deltaY: 600, deltaMode: 0 }, scaledScroller, {
+        convertVertical: false
+    }),
+    0,
+    'responsive chronology should leave vertical wheel input for document scrolling'
+);
+assert.equal(
+    overview.getChronologyWheelDelta({ deltaX: 300, deltaY: 80, deltaMode: 0 }, scaledScroller, {
+        convertVertical: false
+    }),
+    400,
+    'horizontal trackpad input should remain available in responsive layouts'
+);
+assert.equal(
+    overview.hasChronologyHorizontalDragIntent(24, 4),
+    true,
+    'a deliberate horizontal pointer movement should start chronology dragging'
+);
+assert.equal(
+    overview.hasChronologyHorizontalDragIntent(6, 2),
+    false,
+    'small pointer movement should remain a card click'
+);
+assert.equal(
+    overview.hasChronologyHorizontalDragIntent(12, 24),
+    false,
+    'vertical pointer movement should not be captured as chronology dragging'
+);
+console.log('PASS chronology wheel and pointer input follow the scaled horizontal timeline');
+
 for (let index = 0; index < layout.cards.length; index += 1) {
     const left = layout.cards[index];
     for (let otherIndex = index + 1; otherIndex < layout.cards.length; otherIndex += 1) {

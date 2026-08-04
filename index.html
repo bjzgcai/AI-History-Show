@@ -8995,7 +8995,7 @@
     </script>
     <script src="shared/i18n.js"></script>
     <script src="shared/storyline-routing.js"></script>
-    <script src="shared/chronology-overview.js?v=20260728b"></script>
+    <script src="shared/chronology-overview.js?v=20260804-scroll"></script>
     <script src="shared/event-media-selection.js"></script>
     <script src="milestones-data.js?v=20260803-storyline-metadata" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
@@ -16429,7 +16429,7 @@
         }
 
         function handlePageWheelFallback(event) {
-            if (!event || event.ctrlKey || isBranchTimelineActive()) return;
+            if (!event || event.defaultPrevented || event.ctrlKey || isBranchTimelineActive()) return;
             const deltaX = Number.isFinite(event.deltaX) ? event.deltaX : 0;
             let deltaY = Number.isFinite(event.deltaY) ? event.deltaY : 0;
             if (!deltaY || Math.abs(deltaY) <= Math.abs(deltaX)) return;
