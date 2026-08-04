@@ -10,7 +10,7 @@ const localize = (value) => {
     return String(value.zh ?? value.en ?? '');
 };
 
-assert.equal(milestones.length, 314, 'the chronology overview should consume all generated Archive milestones');
+assert.equal(milestones.length, 334, 'the chronology overview should consume all generated Archive milestones');
 
 const annualMilestones = milestones.filter(
     (milestone) => overview.getStorylineId(milestone) === 'bench-council-ai100-2022-2023'
@@ -43,7 +43,7 @@ const canonicalMilestones = overview.buildCanonicalMilestones(unifiedSourceMiles
     storylinePriority: ['bench-council-ai100', 'deep-learning', 'gaming-ai', 'humanistic-cycle'],
     localize
 });
-assert.equal(canonicalMilestones.length, 148, 'the all-events view should render one card per routed Archive event');
+assert.equal(canonicalMilestones.length, 168, 'the all-events view should render one card per routed Archive event');
 assert.equal(
     new Set(canonicalMilestones.map((item) => overview.getCanonicalEventId(item))).size,
     canonicalMilestones.length,
@@ -393,7 +393,7 @@ const summaries = overview.summarizeStorylines(canonicalMilestones, localize);
 assert.deepEqual(
     summaries.map(({ id, count }) => ({ id, count })),
     [
-        { id: 'bench-council-ai100', count: 119 },
+        { id: 'bench-council-ai100', count: 139 },
         { id: 'gaming-ai', count: 13 },
         { id: 'humanistic-cycle', count: 12 },
         { id: 'deep-learning', count: 30 }
