@@ -17,6 +17,11 @@ function localizePair(value) {
     };
 }
 
+function localized(value, locale) {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return '';
+    return String(value[locale] || value[locale === 'en' ? 'zh' : 'en'] || '').trim();
+}
+
 function normalizeIdentityText(value) {
     return String(value || '')
         .normalize('NFKD')
@@ -175,6 +180,7 @@ module.exports = {
     createFigureRegistry,
     loadFigureRegistry,
     localizePair,
+    localized,
     normalizeIdentityText,
     resolveFigureRelations
 };
