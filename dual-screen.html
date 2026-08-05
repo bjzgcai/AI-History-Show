@@ -1669,11 +1669,24 @@
             z-index: 40;
         }
 
+        .photo-viewer-frame {
+            max-width: 86vw;
+            max-height: 82vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .viewer-photo {
             max-width: 86vw;
             max-height: 82vh;
             object-fit: contain;
             box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .photo-viewer-frame .viewer-photo {
+            max-width: 100%;
+            max-height: 100%;
         }
 
         .photo-prev,
@@ -1877,6 +1890,8 @@
         }
     </script>
     <script src="shared/i18n.js"></script>
+    <script src="shared/thumbnail-manifest.js"></script>
+    <script src="shared/image-loading.js"></script>
     <script src="milestones-data.js?v=20260803-storyline-metadata" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
@@ -1902,7 +1917,6 @@
         let currentArchiveIndex = 0;
         let idleAdvanceTimer = null;
         const vmCache = new Map();
-        const imagePreloadCache = new Map();
 
         let globeScene;
         let globeCamera;
@@ -2181,29 +2195,28 @@
             );
         }
 
-        function preloadImage(url) {
-            if (!url) return;
-            if (imagePreloadCache.has(url)) return;
-
-            const image = new Image();
-            image.decoding = 'async';
-            image.loading = 'eager';
-            image.src = url;
-            imagePreloadCache.set(url, image);
+        function getImageLoader() {
+            return window.AIHistoryImageLoading || null;
         }
 
-        function preloadMilestoneAssets(index) {
-            if (index < 0 || index >= milestones.length) return;
-            const vm = getVm(index);
-            sortPhotosForDisplay(vm.photos)
-                .slice(0, 20)
-                .forEach(preloadImage);
+        function getPreviewImageUrl(url) {
+            const loader = getImageLoader();
+            return loader && typeof loader.getPreviewUrl === 'function' ? loader.getPreviewUrl(url) : url;
         }
 
-        function preloadAdjacentAssets(index) {
-            preloadMilestoneAssets(index);
-            preloadMilestoneAssets(index - 1);
-            preloadMilestoneAssets(index + 1);
+        function buildPreviewImageAttributes(url, alt) {
+            const fullSrc = String(url || '').trim();
+            const previewSrc = getPreviewImageUrl(fullSrc);
+            const fullAttrs = fullSrc && previewSrc !== fullSrc
+                ? ` data-full-src="${escapeHtml(fullSrc)}" data-preview-src="${escapeHtml(previewSrc)}"`
+                : '';
+            return `src="${escapeHtml(previewSrc)}"${fullAttrs} alt="${escapeHtml(alt || '')}" decoding="async" loading="lazy"`;
+        }
+
+        function hydratePreviewImages(root) {
+            const loader = getImageLoader();
+            if (!root || !loader || typeof loader.attachPreviewFallback !== 'function') return;
+            root.querySelectorAll('img[data-full-src]').forEach((image) => loader.attachPreviewFallback(image));
         }
 
         function buildContextYears(year, beforeCount, afterCount) {
@@ -2269,7 +2282,7 @@
         function buildFigureAvatar(figure, avatarSource) {
             if (avatarSource && avatarSource.src) {
                 const styleAttr = avatarSource.style ? ` style="${avatarSource.style}"` : '';
-                return `<img src="${avatarSource.src}" alt="${escapeHtml(figure.name || tx('keyFigure'))}"${styleAttr}>`;
+                return `<img ${buildPreviewImageAttributes(avatarSource.src, figure.name || tx('keyFigure'))}${styleAttr}>`;
             }
             return `<span>${escapeHtml(initials(figure.name))}</span>`;
         }
@@ -3319,7 +3332,7 @@
 
             refs.leftArchiveStrip.innerHTML = cards.map((card) => `
                 <button class="left-archive-card ${card.cls} media-photo" type="button" data-photo-index="${card.index}">
-                    <img src="${card.src}" alt="${escapeHtml(card.label)}">
+                    <img src="${escapeHtml(card.src)}" alt="${escapeHtml(card.label)}" loading="lazy" decoding="async">
                 </button>
             `).join('');
         }
@@ -3411,12 +3424,14 @@
                 </article>
             `;
             }).join('');
+            hydratePreviewImages(refs.figureRow);
         }
 
         function setImage(imgEl, src, alt) {
             const nextSrc = src || '';
             if (imgEl.getAttribute('src') !== nextSrc) {
                 imgEl.decoding = 'async';
+                imgEl.loading = 'eager';
                 imgEl.src = nextSrc;
             }
             imgEl.alt = alt || '';
@@ -3461,10 +3476,10 @@
             refs.archiveYear.textContent = vm.year || '';
 
             refs.archiveThumbPrev.innerHTML = prevUrl
-                ? `<img src="${prevUrl}" alt="${tx('previousArchive')}">`
+                ? `<img src="${escapeHtml(prevUrl)}" alt="${escapeHtml(tx('previousArchive'))}" loading="lazy" decoding="async">`
                 : '';
             refs.archiveThumbNext.innerHTML = nextUrl
-                ? `<img src="${nextUrl}" alt="${tx('nextArchive')}">`
+                ? `<img src="${escapeHtml(nextUrl)}" alt="${escapeHtml(tx('nextArchive'))}" loading="lazy" decoding="async">`
                 : '';
             refs.archiveThumbPrev.dataset.photoIndex = prevUrl ? String(prevIndex) : '';
             refs.archiveThumbNext.dataset.photoIndex = nextUrl ? String(nextIndex) : '';
@@ -3638,11 +3653,23 @@
             viewer.innerHTML = `
                 <button class="close-viewer" type="button">✕</button>
                 <button class="photo-prev" type="button">◀</button>
-                <img src="${photos[currentPhotoIndex]}" class="viewer-photo" alt="${tx('historicalArchive')}">
+                <div class="photo-viewer-frame">
+                    <img class="viewer-photo" alt="${escapeHtml(tx('historicalArchive'))}">
+                </div>
                 <button class="photo-next" type="button">▶</button>
                 <div class="photo-counter">${currentPhotoIndex + 1} / ${photos.length}</div>
             `;
             document.body.appendChild(viewer);
+            const viewerPhoto = viewer.querySelector('.viewer-photo');
+            const viewerCounter = viewer.querySelector('.photo-counter');
+
+            const showViewerPhoto = () => {
+                viewerPhoto.decoding = 'async';
+                viewerPhoto.loading = 'eager';
+                viewerPhoto.src = photos[currentPhotoIndex];
+                viewerCounter.textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+            };
+            showViewerPhoto();
 
             const closeViewer = () => {
                 viewer.remove();
@@ -3651,13 +3678,11 @@
             viewer.querySelector('.close-viewer').onclick = closeViewer;
             viewer.querySelector('.photo-prev').onclick = () => {
                 currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
-                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
-                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+                showViewerPhoto();
             };
             viewer.querySelector('.photo-next').onclick = () => {
                 currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
-                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
-                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+                showViewerPhoto();
             };
 
             const handleKey = (event) => {
@@ -3694,14 +3719,12 @@
             renderStatus(vm);
             bindPhotoClicks();
             document.title = `${tx('appTitleDual')} - ${vm.year} ${vm.title}`;
-            preloadAdjacentAssets(index);
         }
 
         function jumpTo(index, options = {}) {
             const { resetAutoplay = true, analyticsSource = 'manual' } = options;
             if (index < 0 || index >= milestones.length || index === currentIndex) return;
 
-            preloadMilestoneAssets(index);
             currentIndex = index;
             currentArchiveIndex = 0;
             renderPage(currentIndex, {

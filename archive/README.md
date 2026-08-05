@@ -2,7 +2,7 @@
 
 ## Current production boundary
 
-Archive JSON is the production authority. `npm run generate` compiles `archive/storylines/*.json` and `archive/events/*` directly; milestone identities are owned by storyline refs, and the production compiler does not read Legacy event, catalog, or fusion metadata.
+Archive JSON is the production authority. `npm run generate` compiles `archive/storylines/*.json` and `archive/events/*` directly, then refreshes thumbnails required by homepage cards and figure avatars; milestone identities are owned by storyline refs, and the production compiler does not read Legacy event, catalog, or fusion metadata.
 
 The Legacy editor, generator, data modules, parity pages, and migration/comparison scripts have been retired. The official pages load only the generated production runtime data. Pages and Docker publish only `.tmp/static-site`.
 
@@ -18,6 +18,8 @@ resources/ = actual files and browser-loadable media
 ```
 
 `archive/` records what a resource means, where it comes from, how it can be used, and which event or storyline uses it. `resources/` stores the actual image, SVG, PDF, GIF, video, thumbnail, or other static file.
+
+Original media paths remain authoritative. `resources/images/_thumbs/` and `shared/thumbnail-manifest.js` are generated derived outputs: they contain only homepage-card and avatar previews that are smaller than their originals. Detail media loads the original file.
 
 Frontend pages continue loading generated display data and `resources/...` paths. They should not directly depend on the source `archive/` layout.
 
@@ -47,6 +49,8 @@ Do not edit generated display data by hand:
 ```text
 milestones-data.js
 milestones-data-default.js
+shared/thumbnail-manifest.js
+resources/images/_thumbs/**
 .tmp/**
 ```
 
@@ -123,7 +127,7 @@ Disabled refs are skipped by the compiler. Use this for archive variants that ex
 
 ## Retired Legacy boundary
 
-The default `npm run generate` path reads Archive storylines and event bundles and writes both runtime milestone files. The following former paths are intentionally absent:
+The default `npm run generate` path reads Archive storylines and event bundles, writes both runtime milestone files, and synchronizes the selective thumbnail set. The following former paths are intentionally absent:
 
 - `/archive-admin` and Legacy management APIs;
 - Legacy `manage/*.js` content data and generator;
@@ -140,7 +144,7 @@ Archive-native generation emits the complete current frontend milestone presenta
 npm run generate:archive
 ```
 
-`generate:archive` writes `milestones-data.js` and `milestones-data-default.js`.
+`generate:archive` writes `milestones-data.js`, `milestones-data-default.js`, and the selective thumbnail set with its manifest.
 
 Variant-owned presentation fields include quote formatting, figure cards, video metadata, achievement auxiliary fields, commentary, analysis, and quizzes. Canonical facts remain in `event.json`; sources, claims, assets, and quizzes remain in their dedicated event files.
 
