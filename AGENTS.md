@@ -43,7 +43,7 @@ npm run start:admin
 # 编辑 archive/events/<event-id>/* 和 archive/storylines/*.json 后
 npm run validate:archive
 npm run generate
-# → 同步生成 milestones-data.js 与 milestones-data-default.js
+# → 同步生成 milestones-data.js、milestones-data-default.js、首页/头像缩略图与缩略图清单
 ```
 
 `/admin` 是唯一管理入口。旧 `/archive-admin`、Legacy 数据模块、生成器、parity 与迁移/对比工具已经退役；旧管理 API 返回 HTTP 404。需要追溯旧实现时使用 Git 历史，不恢复为当前写作链路。
