@@ -33,58 +33,40 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Kaiming He",
-        "zh": "何恺明"
-      },
+      "figureId": "kaiming-he",
       "role": {
         "en": "ResNet lead author",
         "zh": "ResNet 第一作者"
       },
-      "avatar": "resources/images/figures/kaiming-he.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-kaiming-he"
     },
     {
-      "name": {
-        "en": "Jian Sun",
-        "zh": "孙剑"
-      },
+      "figureId": "jian-sun",
       "role": {
         "en": "ResNet co-author and corresponding author",
         "zh": "ResNet 共同作者与通讯作者"
       },
-      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-2015-resnet-people-01"
     },
     {
-      "name": {
-        "en": "Xiangyu Zhang",
-        "zh": "张祥雨"
-      },
+      "figureId": "xiangyu-zhang",
       "role": {
         "en": "ResNet co-author",
         "zh": "ResNet 共同作者"
       },
-      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_03.png",
-      "avatarStyle": "",
-      "figureType": "person"
+      "primary": true,
+      "avatarAssetId": "asset-2015-resnet-people-03"
     },
     {
-      "name": {
-        "en": "Shaoqing Ren",
-        "zh": "任少卿"
-      },
+      "figureId": "shaoqing-ren",
       "role": {
         "en": "ResNet co-author",
         "zh": "ResNet 共同作者"
       },
-      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
-      "avatarStyle": "",
-      "figureType": "person"
+      "primary": true,
+      "avatarAssetId": "asset-2015-resnet-people-02"
     }
   ],
   "organizations": [],

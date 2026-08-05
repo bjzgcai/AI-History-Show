@@ -58,34 +58,29 @@
         "figures": {
             "type": "array",
             "items": {
-                "oneOf": [
-                    {
+                "type": "object",
+                "required": ["figureId"],
+                "properties": {
+                    "figureId": {
                         "$ref": "shared.schema.json#/$defs/archiveId"
                     },
-                    {
-                        "type": "object",
-                        "required": ["figureId"],
-                        "properties": {
-                            "figureId": {
-                                "$ref": "shared.schema.json#/$defs/archiveId"
-                            },
-                            "name": {
-                                "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-                            },
-                            "role": {
-                                "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-                            },
-                            "organizationIds": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "shared.schema.json#/$defs/archiveId"
-                                },
-                                "uniqueItems": true
-                            }
-                        },
-                        "additionalProperties": true
+                    "role": {
+                        "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+                    },
+                    "primary": {
+                        "type": "boolean"
+                    },
+                    "avatarAssetId": {
+                        "$ref": "shared.schema.json#/$defs/archiveId"
+                    },
+                    "avatarStyle": {
+                        "type": "string"
+                    },
+                    "useDefaultAvatar": {
+                        "type": "boolean"
                     }
-                ]
+                },
+                "additionalProperties": false
             }
         },
         "organizations": {

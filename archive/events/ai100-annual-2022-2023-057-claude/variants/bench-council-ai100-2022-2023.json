@@ -127,16 +127,11 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Claude",
-        "zh": "Claude"
-      },
+      "figureId": "claude-product",
       "role": {
         "en": "Anthropic AI assistant",
         "zh": "Anthropic AI 助手"
-      },
-      "figureType": "product",
-      "avatar": "resources/images/benchcouncil-ai100-annual/claude-logo.png"
+      }
     }
   ],
   "quote": {

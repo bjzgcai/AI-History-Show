@@ -38,10 +38,7 @@
         "zh": "DeepMind 联合创始人、MuZero 论文共同作者",
         "en": "DeepMind co-founder and MuZero coauthor"
       },
-      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
-      "organizationIds": [
-        "deepmind"
-      ]
+      "primary": true
     },
     {
       "figureId": "david-silver",
@@ -49,10 +46,8 @@
         "zh": "DeepMind 强化学习负责人",
         "en": "DeepMind reinforcement learning lead"
       },
-      "avatar": "resources/images/figures/authoritative/david-silver.jpg",
-      "organizationIds": [
-        "deepmind"
-      ]
+      "primary": true,
+      "avatarAssetId": "asset-david-silver-commons-portrait"
     }
   ],
   "organizations": [

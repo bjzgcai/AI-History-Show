@@ -113,47 +113,26 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Gavin Rummery",
-        "zh": "加文·拉默里"
-      },
+      "figureId": "gavin-rummery",
       "role": {
         "en": "SARSA lead author",
         "zh": "SARSA 主要作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Mahesan Niranjan",
-        "zh": "马赫桑·尼兰詹"
-      },
+      "figureId": "mahesan-niranjan",
       "role": {
         "en": "SARSA co-author",
         "zh": "SARSA 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
       "figureId": "richard-sutton",
-      "name": {
-        "en": "Richard Sutton",
-        "zh": "理查德·萨顿"
-      },
       "role": {
         "en": "Related temporal-difference learning pioneer",
         "zh": "相关时序差分学习先驱"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-1994-sarsa-portrait"
     }
   ],
   "photos": [],

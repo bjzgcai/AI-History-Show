@@ -114,33 +114,18 @@
   "figures": [
     {
       "figureId": "ross-girshick",
-      "name": {
-        "en": "Ross Girshick",
-        "zh": "罗斯·格希克"
-      },
       "role": {
         "zh": "Faster R-CNN 共同作者",
         "en": "Co-author of Faster R-CNN"
       },
-      "avatar": "resources/images/external/ai100-2014-r-cnn/ross-girshick-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2014-r-cnn-portrait"
     },
     {
       "figureId": "jitendra-malik",
-      "name": {
-        "en": "Jitendra Malik",
-        "zh": "吉滕德拉·马利克"
-      },
       "role": {
         "zh": "2000 年归一化切分论文共同作者",
         "en": "Co-author of the 2000 normalized-cuts paper"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],

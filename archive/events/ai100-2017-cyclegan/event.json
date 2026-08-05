@@ -33,46 +33,29 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Jun-Yan Zhu",
-        "zh": "朱俊彦"
-      },
+      "figureId": "jun-yan-zhu",
       "role": {
         "en": "CycleGAN lead author",
         "zh": "CycleGAN 主要作者"
       },
-      "avatar": "resources/images/external/ai100-2017-cyclegan/jun-yan-zhu-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-ai100-2017-cyclegan-portrait3-lr"
     },
     {
-      "name": {
-        "en": "Taesung Park",
-        "zh": "朴泰成"
-      },
+      "figureId": "taesung-park",
       "role": {
         "en": "CycleGAN co-author",
         "zh": "CycleGAN 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     },
     {
-      "name": {
-        "en": "Alexei Efros",
-        "zh": "阿列克谢·埃夫罗斯"
-      },
+      "figureId": "alexei-efros",
       "role": {
         "en": "CycleGAN co-author",
         "zh": "CycleGAN 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

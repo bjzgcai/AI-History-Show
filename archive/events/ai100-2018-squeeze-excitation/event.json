@@ -33,32 +33,21 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Jie Hu",
-        "zh": "胡杰"
-      },
+      "figureId": "jie-hu",
       "role": {
         "en": "Squeeze-and-excitation lead author",
         "zh": "挤压与激励网络主要作者"
       },
-      "avatar": "resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-2018-squeeze-excitation-portrait"
     },
     {
-      "name": {
-        "en": "Gang Sun",
-        "zh": "孙刚"
-      },
+      "figureId": "gang-sun",
       "role": {
         "en": "Squeeze-and-excitation co-author",
         "zh": "挤压与激励网络共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

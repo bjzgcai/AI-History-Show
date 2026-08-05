@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-04 07:56
+// 生成时间: 2026-08-05 03:47
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 5, milestones 214, errors 0
 
@@ -140,28 +140,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "ze-liu",
         "name": {
-          "en": "Ze Liu",
-          "zh": "刘泽"
+          "zh": "刘泽",
+          "en": "Ze Liu"
         },
         "role": {
-          "en": "Co-first author of the Swin Transformer V2 paper",
-          "zh": "Swin Transformer V2 论文共同第一作者"
+          "zh": "Swin Transformer V2 论文共同第一作者",
+          "en": "Co-first author of the Swin Transformer V2 paper"
         },
+        "avatar": "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "han-hu",
         "name": {
-          "en": "Han Hu",
-          "zh": "胡瀚"
+          "zh": "胡瀚",
+          "en": "Han Hu"
         },
         "role": {
-          "en": "Co-first author of the Swin Transformer V2 paper",
-          "zh": "Swin Transformer V2 论文共同第一作者"
+          "zh": "Swin Transformer V2 论文共同第一作者",
+          "en": "Co-first author of the Swin Transformer V2 paper"
         },
+        "avatar": "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -214,7 +222,10 @@ const milestones = [
           "attribution": ""
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ze-liu"
+        ]
       },
       "resources/images/external/ai100-2022-swin-transformer-v2/paper-v1-v2-comparison.png": {
         "caption": {
@@ -248,7 +259,8 @@ const milestones = [
           "attribution": "Ze Liu et al."
         },
         "role": "architecture-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg": {
         "caption": {
@@ -282,7 +294,10 @@ const milestones = [
           "attribution": "Han Hu"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "han-hu"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/annual-001-swin-transformer-v2_record.svg": {
         "caption": {
@@ -319,7 +334,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -908,52 +924,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "zhenda-xie",
         "name": {
-          "en": "Zhenda Xie",
-          "zh": "谢振达"
+          "zh": "谢振达",
+          "en": "Zhenda Xie"
         },
         "role": {
-          "en": "Co-first author of the SimMIM paper",
-          "zh": "SimMIM 论文共同第一作者"
+          "zh": "SimMIM 论文共同第一作者",
+          "en": "Co-first author of the SimMIM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "zheng-zhang",
         "name": {
-          "en": "Zheng Zhang",
-          "zh": "张拯"
+          "zh": "张拯",
+          "en": "Zheng Zhang"
         },
         "role": {
-          "en": "Co-first author of the SimMIM paper",
-          "zh": "SimMIM 论文共同第一作者"
+          "zh": "SimMIM 论文共同第一作者",
+          "en": "Co-first author of the SimMIM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yue-cao",
         "name": {
-          "en": "Yue Cao",
-          "zh": "曹越"
+          "zh": "曹越",
+          "en": "Yue Cao"
         },
         "role": {
-          "en": "Co-first author of the SimMIM paper",
-          "zh": "SimMIM 论文共同第一作者"
+          "zh": "SimMIM 论文共同第一作者",
+          "en": "Co-first author of the SimMIM paper"
         },
+        "avatar": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "han-hu",
         "name": {
-          "en": "Han Hu",
-          "zh": "胡瀚"
+          "zh": "胡瀚",
+          "en": "Han Hu"
         },
         "role": {
-          "en": "Lead author of the SimMIM paper",
-          "zh": "SimMIM 论文主要作者"
+          "zh": "SimMIM 论文主要作者",
+          "en": "Lead author of the SimMIM paper"
         },
+        "avatar": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -1006,7 +1038,10 @@ const milestones = [
           "attribution": "Yue Cao"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yue-cao"
+        ]
       },
       "resources/images/external/ai100-2022-simmim/official-teaser.jpg": {
         "caption": {
@@ -1040,7 +1075,8 @@ const milestones = [
           "attribution": "Microsoft SimMIM authors"
         },
         "role": "architecture-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg": {
         "caption": {
@@ -1074,7 +1110,10 @@ const milestones = [
           "attribution": ""
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "han-hu"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/annual-002-simmim_record.svg": {
         "caption": {
@@ -1111,7 +1150,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -1750,40 +1790,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alec-radford",
         "name": {
-          "en": "Alec Radford",
-          "zh": "亚历克·拉德福德"
+          "zh": "亚历克·拉德福德",
+          "en": "Alec Radford"
         },
         "role": {
-          "en": "First author of the Whisper paper",
-          "zh": "Whisper 论文第一作者"
+          "zh": "Whisper 论文第一作者",
+          "en": "First author of the Whisper paper"
         },
+        "avatar": "resources/images/figures/alec-radford.png",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jong-wook-kim",
         "name": {
-          "en": "Jong Wook Kim",
-          "zh": "金钟旭"
+          "zh": "金钟旭",
+          "en": "Jong Wook Kim"
         },
         "role": {
-          "en": "Co-author of the Whisper paper",
-          "zh": "Whisper 论文共同作者"
+          "zh": "Whisper 论文共同作者",
+          "en": "Co-author of the Whisper paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ilya-sutskever",
         "name": {
-          "en": "Ilya Sutskever",
-          "zh": "伊利亚·苏茨克维"
+          "zh": "伊利亚·苏茨克维",
+          "en": "Ilya Sutskever"
         },
         "role": {
-          "en": "Co-author of the Whisper paper",
-          "zh": "Whisper 论文共同作者"
+          "zh": "Whisper 论文共同作者",
+          "en": "Co-author of the Whisper paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -1834,7 +1886,10 @@ const milestones = [
           "attribution": "Eladkarmel"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ilya-sutskever"
+        ]
       },
       "resources/images/external/ai100-2022-whisper/openai-approach.png": {
         "caption": {
@@ -1868,7 +1923,8 @@ const milestones = [
           "attribution": "OpenAI"
         },
         "role": "architecture-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-024-whisper_record.svg": {
         "caption": {
@@ -1905,7 +1961,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -2407,100 +2464,132 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "aakanksha-chowdhery",
         "name": {
-          "en": "Aakanksha Chowdhery",
-          "zh": "阿坎莎·乔杜里"
+          "zh": "阿坎莎·乔杜里",
+          "en": "Aakanksha Chowdhery"
         },
         "role": {
-          "en": "First author of the PaLM paper",
-          "zh": "PaLM 论文第一作者"
+          "zh": "PaLM 论文第一作者",
+          "en": "First author of the PaLM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "sharan-narang",
         "name": {
-          "en": "Sharan Narang",
-          "zh": "沙兰·纳朗"
+          "zh": "沙兰·纳朗",
+          "en": "Sharan Narang"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jacob-devlin",
         "name": {
-          "en": "Jacob Devlin",
-          "zh": "雅各布·德夫林"
+          "zh": "雅各布·德夫林",
+          "en": "Jacob Devlin"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "resources/images/figures/jacob-devlin.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "kathy-meier-hellstern",
         "name": {
-          "en": "Kathy Meier-Hellstern",
-          "zh": "凯西·迈尔-赫尔斯特恩"
+          "zh": "凯西·迈尔-赫尔斯特恩",
+          "en": "Kathy Meier-Hellstern"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "douglas-eck",
         "name": {
-          "en": "Douglas Eck",
-          "zh": "道格拉斯·埃克"
+          "zh": "道格拉斯·埃克",
+          "en": "Douglas Eck"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jeff-dean",
         "name": {
-          "en": "Jeff Dean",
-          "zh": "杰夫·迪恩"
+          "zh": "杰夫·迪恩",
+          "en": "Jeff Dean"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "slav-petrov",
         "name": {
-          "en": "Slav Petrov",
-          "zh": "斯拉夫·彼得罗夫"
+          "zh": "斯拉夫·彼得罗夫",
+          "en": "Slav Petrov"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "noah-fiedel",
         "name": {
-          "en": "Noah Fiedel",
-          "zh": "诺亚·菲德尔"
+          "zh": "诺亚·菲德尔",
+          "en": "Noah Fiedel"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -2551,7 +2640,10 @@ const milestones = [
           "attribution": "Cmichel67"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jeff-dean"
+        ]
       },
       "resources/images/external/ai100-2022-palm/palm-bigbench-results.png": {
         "caption": {
@@ -2585,7 +2677,8 @@ const milestones = [
           "attribution": "Chowdhery et al., PaLM: Scaling Language Modeling with Pathways (2022)"
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-039-palm_record.svg": {
         "caption": {
@@ -2622,7 +2715,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -3124,124 +3218,164 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "long-ouyang",
         "name": {
-          "en": "Long Ouyang",
-          "zh": "欧阳龙"
+          "zh": "欧阳龙",
+          "en": "Long Ouyang"
         },
         "role": {
-          "en": "First author of the InstructGPT paper",
-          "zh": "InstructGPT 论文第一作者"
+          "zh": "InstructGPT 论文第一作者",
+          "en": "First author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jeff-wu",
         "name": {
-          "en": "Jeff Wu",
-          "zh": "杰夫·吴"
+          "zh": "杰夫·吴",
+          "en": "Jeff Wu"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-wu.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-wu.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "xu-jiang",
         "name": {
-          "en": "Xu Jiang",
-          "zh": "徐江"
+          "zh": "徐江",
+          "en": "Xu Jiang"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "diogo-almeida",
         "name": {
-          "en": "Diogo Almeida",
-          "zh": "迪奥戈·阿尔梅达"
+          "zh": "迪奥戈·阿尔梅达",
+          "en": "Diogo Almeida"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "carroll-l-wainwright",
         "name": {
-          "en": "Carroll L. Wainwright",
-          "zh": "卡罗尔·L·温赖特"
+          "zh": "卡罗尔·L·温赖特",
+          "en": "Carroll L. Wainwright"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "pamela-mishkin",
         "name": {
-          "en": "Pamela Mishkin",
-          "zh": "帕梅拉·米什金"
+          "zh": "帕梅拉·米什金",
+          "en": "Pamela Mishkin"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "paul-christiano",
         "name": {
-          "en": "Paul Christiano",
-          "zh": "保罗·克里斯蒂亚诺"
+          "zh": "保罗·克里斯蒂亚诺",
+          "en": "Paul Christiano"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jan-leike",
         "name": {
-          "en": "Jan Leike",
-          "zh": "扬·莱克"
+          "zh": "扬·莱克",
+          "en": "Jan Leike"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ryan-lowe",
         "name": {
-          "en": "Ryan Lowe",
-          "zh": "瑞安·洛"
+          "zh": "瑞安·洛",
+          "en": "Ryan Lowe"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "john-schulman",
         "name": {
-          "en": "John Schulman",
-          "zh": "约翰·舒尔曼"
+          "zh": "约翰·舒尔曼",
+          "en": "John Schulman"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -3294,7 +3428,10 @@ const milestones = [
           "attribution": ""
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jeff-wu"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png": {
         "caption": {
@@ -3328,7 +3465,10 @@ const milestones = [
           "attribution": "MIT Technology Review"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "john-schulman"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/instructgpt-paper-preference-results.png": {
         "caption": {
@@ -3362,7 +3502,8 @@ const milestones = [
           "attribution": "Ouyang et al., Training language models to follow instructions with human feedback (2022)"
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-048-instructgpt_record.svg": {
         "caption": {
@@ -3399,7 +3540,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -3981,28 +4123,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jason-wei",
         "name": {
-          "en": "Jason Wei",
-          "zh": "杰森·魏"
+          "zh": "杰森·魏",
+          "en": "Jason Wei"
         },
         "role": {
-          "en": "First author of the Chain-of-Thought Prompting paper",
-          "zh": "Chain-of-Thought Prompting 论文第一作者"
+          "zh": "Chain-of-Thought Prompting 论文第一作者",
+          "en": "First author of the Chain-of-Thought Prompting paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "denny-zhou",
         "name": {
-          "en": "Denny Zhou",
-          "zh": "丹尼·周"
+          "zh": "丹尼·周",
+          "en": "Denny Zhou"
         },
         "role": {
-          "en": "Co-author of the Chain-of-Thought Prompting paper",
-          "zh": "Chain-of-Thought Prompting 论文共同作者"
+          "zh": "Chain-of-Thought Prompting 论文共同作者",
+          "en": "Co-author of the Chain-of-Thought Prompting paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -4053,7 +4203,10 @@ const milestones = [
           "attribution": "Denny Zhou"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "denny-zhou"
+        ]
       },
       "resources/images/external/ai100-2022-chain-of-thought/chain-of-thought-examples.png": {
         "caption": {
@@ -4087,7 +4240,8 @@ const milestones = [
           "attribution": "Wei et al., Chain-of-Thought Prompting Elicits Reasoning in Large Language Models (2022)"
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-059-chain-of-thought-prompting_record.svg": {
         "caption": {
@@ -4124,7 +4278,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -4658,16 +4813,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "chatgpt-product",
         "name": {
-          "en": "ChatGPT",
-          "zh": "ChatGPT"
+          "zh": "ChatGPT",
+          "en": "ChatGPT"
         },
         "role": {
-          "en": "OpenAI conversational AI product",
-          "zh": "OpenAI 对话式 AI 产品"
+          "zh": "OpenAI 对话式 AI 产品",
+          "en": "OpenAI conversational AI product"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png",
+        "avatarStyle": "",
         "figureType": "product",
-        "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -4716,7 +4875,8 @@ const milestones = [
           "attribution": "Hugging Face"
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-058-chatgpt_record.svg": {
         "caption": {
@@ -4753,7 +4913,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -5255,40 +5416,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "robin-rombach",
         "name": {
-          "en": "Robin Rombach",
-          "zh": "罗宾·罗姆巴赫"
+          "zh": "罗宾·罗姆巴赫",
+          "en": "Robin Rombach"
         },
         "role": {
-          "en": "First author of the Latent Diffusion Models paper",
-          "zh": "Latent Diffusion Models 论文第一作者"
+          "zh": "Latent Diffusion Models 论文第一作者",
+          "en": "First author of the Latent Diffusion Models paper"
         },
+        "avatar": "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "andreas-blattmann",
         "name": {
-          "en": "Andreas Blattmann",
-          "zh": "安德烈亚斯·布拉特曼"
+          "zh": "安德烈亚斯·布拉特曼",
+          "en": "Andreas Blattmann"
         },
         "role": {
-          "en": "Co-author of the Latent Diffusion Models paper",
-          "zh": "Latent Diffusion Models 论文共同作者"
+          "zh": "Latent Diffusion Models 论文共同作者",
+          "en": "Co-author of the Latent Diffusion Models paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/andreas-blattmann.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/andreas-blattmann.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "bjorn-ommer",
         "name": {
-          "en": "Bjorn Ommer",
-          "zh": "比约恩·奥默"
+          "zh": "比约恩·奥默",
+          "en": "Bjorn Ommer"
         },
         "role": {
-          "en": "Co-author of the Latent Diffusion Models paper",
-          "zh": "Latent Diffusion Models 论文共同作者"
+          "zh": "Latent Diffusion Models 论文共同作者",
+          "en": "Co-author of the Latent Diffusion Models paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/bjorn-ommer.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/bjorn-ommer.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -5343,7 +5516,10 @@ const milestones = [
           "attribution": ""
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "robin-rombach"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/portraits/andreas-blattmann.jpg": {
         "caption": {
@@ -5377,7 +5553,10 @@ const milestones = [
           "attribution": "Computer Vision & Learning Group, LMU Munich"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "andreas-blattmann"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/portraits/bjorn-ommer.jpg": {
         "caption": {
@@ -5411,7 +5590,10 @@ const milestones = [
           "attribution": "Computer Vision & Learning Group, LMU Munich"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "bjorn-ommer"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/annual-081-latent-diffusion-models-perceptual-compression.png": {
         "caption": {
@@ -5445,7 +5627,8 @@ const milestones = [
           "attribution": "Rombach et al.; Computer Vision & Learning Group, LMU Munich"
         },
         "role": "research-result",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-081-latent-diffusion-models_record.svg": {
         "caption": {
@@ -5482,7 +5665,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -6016,76 +6200,100 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alhussein-fawzi",
         "name": {
-          "en": "Alhussein Fawzi",
-          "zh": "侯赛因·法兹"
+          "zh": "侯赛因·法兹",
+          "en": "Alhussein Fawzi"
         },
         "role": {
-          "en": "First author of the AlphaTensor paper",
-          "zh": "AlphaTensor 论文第一作者"
+          "zh": "AlphaTensor 论文第一作者",
+          "en": "First author of the AlphaTensor paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "matej-balog",
         "name": {
-          "en": "Matej Balog",
-          "zh": "马泰·巴洛格"
+          "zh": "马泰·巴洛格",
+          "en": "Matej Balog"
         },
         "role": {
-          "en": "Co-author of the AlphaTensor paper",
-          "zh": "AlphaTensor 论文共同作者"
+          "zh": "AlphaTensor 论文共同作者",
+          "en": "Co-author of the AlphaTensor paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "aja-huang",
         "name": {
-          "en": "Aja Huang",
-          "zh": "黄士杰"
+          "zh": "黄士杰",
+          "en": "Aja Huang"
         },
         "role": {
-          "en": "Co-author of the AlphaTensor paper",
-          "zh": "AlphaTensor 论文共同作者"
+          "zh": "AlphaTensor 论文共同作者",
+          "en": "Co-author of the AlphaTensor paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "thomas-hubert",
         "name": {
-          "en": "Thomas Hubert",
-          "zh": "托马斯·于贝尔"
+          "zh": "托马斯·于贝尔",
+          "en": "Thomas Hubert"
         },
         "role": {
-          "en": "Co-author of the AlphaTensor paper",
-          "zh": "AlphaTensor 论文共同作者"
+          "zh": "AlphaTensor 论文共同作者",
+          "en": "Co-author of the AlphaTensor paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "bernardino-romera-paredes",
         "name": {
-          "en": "Bernardino Romera-Paredes",
-          "zh": "贝尔纳迪诺·罗梅拉-帕雷德斯"
+          "zh": "贝尔纳迪诺·罗梅拉-帕雷德斯",
+          "en": "Bernardino Romera-Paredes"
         },
         "role": {
-          "en": "Co-author of the AlphaTensor paper",
-          "zh": "AlphaTensor 论文共同作者"
+          "zh": "AlphaTensor 论文共同作者",
+          "en": "Co-author of the AlphaTensor paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "pushmeet-kohli",
         "name": {
-          "en": "Pushmeet Kohli",
-          "zh": "普什米特·科利"
+          "zh": "普什米特·科利",
+          "en": "Pushmeet Kohli"
         },
         "role": {
-          "en": "Co-author of the AlphaTensor paper",
-          "zh": "AlphaTensor 论文共同作者"
+          "zh": "AlphaTensor 论文共同作者",
+          "en": "Co-author of the AlphaTensor paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/pushmeet-kohli.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/pushmeet-kohli.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -6136,7 +6344,10 @@ const milestones = [
           "attribution": ""
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "pushmeet-kohli"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/annual-114-alphatensor-official-tensor.png": {
         "caption": {
@@ -6170,7 +6381,8 @@ const milestones = [
           "attribution": "Google DeepMind"
         },
         "role": "research-result",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-114-alphatensor_record.svg": {
         "caption": {
@@ -6207,7 +6419,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -6726,16 +6939,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "chelsea-finn",
         "name": {
-          "en": "Chelsea Finn",
-          "zh": "切尔西·芬恩"
+          "zh": "切尔西·芬恩",
+          "en": "Chelsea Finn"
         },
         "role": {
-          "en": "Co-author of the SayCan paper",
-          "zh": "SayCan 论文共同作者"
+          "zh": "SayCan 论文共同作者",
+          "en": "Co-author of the SayCan paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/chelsea-finn.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/chelsea-finn.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -6788,7 +7005,10 @@ const milestones = [
           "attribution": "Stanford University"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "chelsea-finn"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/annual-117-saycan-scoring.png": {
         "caption": {
@@ -6822,7 +7042,8 @@ const milestones = [
           "attribution": "SayCan authors / Robotics at Google"
         },
         "role": "research-result",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-117-saycan-robot-example.png": {
         "caption": {
@@ -6856,7 +7077,8 @@ const milestones = [
           "attribution": "SayCan authors / Robotics at Google"
         },
         "role": "research-result",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-117-saycan_record.svg": {
         "caption": {
@@ -6893,7 +7115,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -7411,64 +7634,84 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "hugo-touvron",
         "name": {
-          "en": "Hugo Touvron",
-          "zh": "雨果·图夫龙"
+          "zh": "雨果·图夫龙",
+          "en": "Hugo Touvron"
         },
         "role": {
-          "en": "First author of the LLaMA paper",
-          "zh": "LLaMA 论文第一作者"
+          "zh": "LLaMA 论文第一作者",
+          "en": "First author of the LLaMA paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "thibaut-lavril",
         "name": {
-          "en": "Thibaut Lavril",
-          "zh": "蒂博·拉夫里尔"
+          "zh": "蒂博·拉夫里尔",
+          "en": "Thibaut Lavril"
         },
         "role": {
-          "en": "Co-author of the LLaMA paper",
-          "zh": "LLaMA 论文共同作者"
+          "zh": "LLaMA 论文共同作者",
+          "en": "Co-author of the LLaMA paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "gautier-izacard",
         "name": {
-          "en": "Gautier Izacard",
-          "zh": "戈蒂耶·伊扎卡尔"
+          "zh": "戈蒂耶·伊扎卡尔",
+          "en": "Gautier Izacard"
         },
         "role": {
-          "en": "Co-author of the LLaMA paper",
-          "zh": "LLaMA 论文共同作者"
+          "zh": "LLaMA 论文共同作者",
+          "en": "Co-author of the LLaMA paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "edouard-grave",
         "name": {
-          "en": "Edouard Grave",
-          "zh": "爱德华·格拉夫"
+          "zh": "爱德华·格拉夫",
+          "en": "Edouard Grave"
         },
         "role": {
-          "en": "Co-author of the LLaMA paper",
-          "zh": "LLaMA 论文共同作者"
+          "zh": "LLaMA 论文共同作者",
+          "en": "Co-author of the LLaMA paper"
         },
+        "avatar": "resources/images/external/ai100-2023-llama/edouard-grave.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-llama/edouard-grave.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "guillaume-lample",
         "name": {
-          "en": "Guillaume Lample",
-          "zh": "纪尧姆·朗普勒"
+          "zh": "纪尧姆·朗普勒",
+          "en": "Guillaume Lample"
         },
         "role": {
-          "en": "Co-author of the LLaMA paper",
-          "zh": "LLaMA 论文共同作者"
+          "zh": "LLaMA 论文共同作者",
+          "en": "Co-author of the LLaMA paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -7519,7 +7762,10 @@ const milestones = [
           "attribution": "Edouard Grave GitHub profile"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "edouard-grave"
+        ]
       },
       "resources/images/external/ai100-2023-llama/llama-official-release-image.jpg": {
         "caption": {
@@ -7553,7 +7799,8 @@ const milestones = [
           "attribution": "Meta AI"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-035-llama_record.svg": {
         "caption": {
@@ -7590,7 +7837,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -8109,16 +8357,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "openai-company",
         "name": {
-          "en": "OpenAI",
-          "zh": "OpenAI"
+          "zh": "OpenAI",
+          "en": "OpenAI"
         },
         "role": {
-          "en": "Company behind GPT-4 and ChatGPT",
-          "zh": "GPT-4 与 ChatGPT 的开发公司"
+          "zh": "GPT-4 与 ChatGPT 的开发公司",
+          "en": "Company behind GPT-4 and ChatGPT"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png",
+        "avatarStyle": "",
         "figureType": "product",
-        "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -8167,7 +8419,8 @@ const milestones = [
           "attribution": "OpenAI, GPT-4 Technical Report (2023), Figure 4"
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-051-gpt-4_record.svg": {
         "caption": {
@@ -8204,7 +8457,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -8757,16 +9011,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "claude-product",
         "name": {
-          "en": "Claude",
-          "zh": "Claude"
+          "zh": "Claude",
+          "en": "Claude"
         },
         "role": {
-          "en": "Anthropic AI assistant",
-          "zh": "Anthropic AI 助手"
+          "zh": "Anthropic AI 助手",
+          "en": "Anthropic AI assistant"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/claude-logo.png",
+        "avatarStyle": "",
         "figureType": "product",
-        "avatar": "resources/images/benchcouncil-ai100-annual/claude-logo.png"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -8817,7 +9075,8 @@ const milestones = [
           "attribution": "Anthropic"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/ai100-2023-claude/claude-poe-chat-interface.png": {
         "caption": {
@@ -8851,7 +9110,8 @@ const milestones = [
           "attribution": "Anthropic / Poe"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-057-claude_record.svg": {
         "caption": {
@@ -8888,7 +9148,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -9455,28 +9716,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "junnan-li",
         "name": {
-          "en": "Junnan Li",
-          "zh": "李俊楠"
+          "zh": "李俊楠",
+          "en": "Junnan Li"
         },
         "role": {
-          "en": "First author of the BLIP-2 paper",
-          "zh": "BLIP-2 论文第一作者"
+          "zh": "BLIP-2 论文第一作者",
+          "en": "First author of the BLIP-2 paper"
         },
+        "avatar": "resources/images/external/ai100-2023-blip-2/junnan-li.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-blip-2/junnan-li.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "steven-hoi",
         "name": {
-          "en": "Steven Hoi",
-          "zh": "许彬"
+          "zh": "许彬",
+          "en": "Steven Hoi"
         },
         "role": {
-          "en": "Co-author of the BLIP-2 paper",
-          "zh": "BLIP-2 论文共同作者"
+          "zh": "BLIP-2 论文共同作者",
+          "en": "Co-author of the BLIP-2 paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -9527,7 +9796,10 @@ const milestones = [
           "attribution": "Junnan Li GitHub profile"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "junnan-li"
+        ]
       },
       "resources/images/external/ai100-2023-blip-2/blip2-official-architecture.png": {
         "caption": {
@@ -9561,7 +9833,8 @@ const milestones = [
           "attribution": "Li et al. / Salesforce Research"
         },
         "role": "historical-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-028-blip-2_record.svg": {
         "caption": {
@@ -9598,7 +9871,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -10138,40 +10412,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "haotian-liu",
         "name": {
-          "en": "Haotian Liu",
-          "zh": "刘昊天"
+          "zh": "刘昊天",
+          "en": "Haotian Liu"
         },
         "role": {
-          "en": "First author of the LLaVA paper",
-          "zh": "LLaVA 论文第一作者"
+          "zh": "LLaVA 论文第一作者",
+          "en": "First author of the LLaVA paper"
         },
+        "avatar": "resources/images/external/ai100-2023-llava/haotian-liu.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-llava/haotian-liu.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "chunyuan-li",
         "name": {
-          "en": "Chunyuan Li",
-          "zh": "李春源"
+          "zh": "李春源",
+          "en": "Chunyuan Li"
         },
         "role": {
-          "en": "Co-first author of the LLaVA paper",
-          "zh": "LLaVA 论文共同第一作者"
+          "zh": "LLaVA 论文共同第一作者",
+          "en": "Co-first author of the LLaVA paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yong-jae-lee",
         "name": {
-          "en": "Yong Jae Lee",
-          "zh": "李永宰"
+          "zh": "李永宰",
+          "en": "Yong Jae Lee"
         },
         "role": {
-          "en": "Co-author of the LLaVA paper",
-          "zh": "LLaVA 论文共同作者"
+          "zh": "LLaVA 论文共同作者",
+          "en": "Co-author of the LLaVA paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -10222,7 +10508,10 @@ const milestones = [
           "attribution": "Haotian Liu academic homepage"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "haotian-liu"
+        ]
       },
       "resources/images/external/ai100-2023-llava/llava-official-architecture.png": {
         "caption": {
@@ -10256,7 +10545,8 @@ const milestones = [
           "attribution": "Liu et al., LLaVA project"
         },
         "role": "historical-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-063-llava_record.svg": {
         "caption": {
@@ -10293,7 +10583,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -10829,28 +11120,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "danny-driess",
         "name": {
-          "en": "Danny Driess",
-          "zh": "丹尼·德里斯"
+          "zh": "丹尼·德里斯",
+          "en": "Danny Driess"
         },
         "role": {
-          "en": "First author of the PaLM-E paper",
-          "zh": "PaLM-E 论文第一作者"
+          "zh": "PaLM-E 论文第一作者",
+          "en": "First author of the PaLM-E paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "pete-florence",
         "name": {
-          "en": "Pete Florence",
-          "zh": "皮特·弗洛伦斯"
+          "zh": "皮特·弗洛伦斯",
+          "en": "Pete Florence"
         },
         "role": {
-          "en": "Co-author of the PaLM-E paper",
-          "zh": "PaLM-E 论文共同作者"
+          "zh": "PaLM-E 论文共同作者",
+          "en": "Co-author of the PaLM-E paper"
         },
+        "avatar": "resources/images/external/ai100-2023-palm-e/pete-florence.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-palm-e/pete-florence.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -10903,7 +11202,10 @@ const milestones = [
           "attribution": "Pete Florence personal homepage"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "pete-florence"
+        ]
       },
       "resources/images/external/ai100-2023-palm-e/palm-e-official-approach.png": {
         "caption": {
@@ -10937,7 +11239,8 @@ const milestones = [
           "attribution": "Driess et al., PaLM-E project"
         },
         "role": "historical-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/ai100-2023-palm-e/palm-e-official-teaser.png": {
         "caption": {
@@ -10971,7 +11274,8 @@ const milestones = [
           "attribution": "Driess et al., PaLM-E project"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-037-palm-e_record.svg": {
         "caption": {
@@ -11008,7 +11312,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -11543,28 +11848,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "lvmin-zhang",
         "name": {
-          "en": "Lvmin Zhang",
-          "zh": "张吕敏"
+          "zh": "张吕敏",
+          "en": "Lvmin Zhang"
         },
         "role": {
-          "en": "First author of the ControlNet paper",
-          "zh": "ControlNet 论文第一作者"
+          "zh": "ControlNet 论文第一作者",
+          "en": "First author of the ControlNet paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "maneesh-agrawala",
         "name": {
-          "en": "Maneesh Agrawala",
-          "zh": "马尼什·阿格拉瓦拉"
+          "zh": "马尼什·阿格拉瓦拉",
+          "en": "Maneesh Agrawala"
         },
         "role": {
-          "en": "Co-author of the ControlNet paper",
-          "zh": "ControlNet 论文共同作者"
+          "zh": "ControlNet 论文共同作者",
+          "en": "Co-author of the ControlNet paper"
         },
+        "avatar": "resources/images/external/ai100-2023-controlnet/maneesh-agrawala.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-controlnet/maneesh-agrawala.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -11617,7 +11930,10 @@ const milestones = [
           "attribution": "Maneesh Agrawala academic homepage"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "maneesh-agrawala"
+        ]
       },
       "resources/images/external/ai100-2023-controlnet/controlnet-official-full-architecture.png": {
         "caption": {
@@ -11651,7 +11967,8 @@ const milestones = [
           "attribution": "Zhang, Rao and Agrawala, ControlNet"
         },
         "role": "historical-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/ai100-2023-controlnet/controlnet-official-core-block.png": {
         "caption": {
@@ -11685,7 +12002,8 @@ const milestones = [
           "attribution": "Zhang, Rao and Agrawala, ControlNet"
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-094-controlnet_record.svg": {
         "caption": {
@@ -11722,7 +12040,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -12278,76 +12597,100 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alexander-kirillov",
         "name": {
-          "en": "Alexander Kirillov",
-          "zh": "亚历山大·基里洛夫"
+          "zh": "亚历山大·基里洛夫",
+          "en": "Alexander Kirillov"
         },
         "role": {
-          "en": "First author of the Segment Anything paper",
-          "zh": "Segment Anything 论文第一作者"
+          "zh": "Segment Anything 论文第一作者",
+          "en": "First author of the Segment Anything paper"
         },
+        "avatar": "resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "eric-mintun",
         "name": {
-          "en": "Eric Mintun",
-          "zh": "埃里克·明顿"
+          "zh": "埃里克·明顿",
+          "en": "Eric Mintun"
         },
         "role": {
-          "en": "Co-author of the Segment Anything paper",
-          "zh": "Segment Anything 论文共同作者"
+          "zh": "Segment Anything 论文共同作者",
+          "en": "Co-author of the Segment Anything paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "nikhila-ravi",
         "name": {
-          "en": "Nikhila Ravi",
-          "zh": "尼基拉·拉维"
+          "zh": "尼基拉·拉维",
+          "en": "Nikhila Ravi"
         },
         "role": {
-          "en": "Co-author of the Segment Anything paper",
-          "zh": "Segment Anything 论文共同作者"
+          "zh": "Segment Anything 论文共同作者",
+          "en": "Co-author of the Segment Anything paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "hanzi-mao",
         "name": {
-          "en": "Hanzi Mao",
-          "zh": "汉兹·毛"
+          "zh": "汉兹·毛",
+          "en": "Hanzi Mao"
         },
         "role": {
-          "en": "Co-author of the Segment Anything paper",
-          "zh": "Segment Anything 论文共同作者"
+          "zh": "Segment Anything 论文共同作者",
+          "en": "Co-author of the Segment Anything paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "piotr-dollar",
         "name": {
-          "en": "Piotr Dollar",
-          "zh": "彼得·多拉尔"
+          "zh": "彼得·多拉尔",
+          "en": "Piotr Dollar"
         },
         "role": {
-          "en": "Co-author of the Segment Anything paper",
-          "zh": "Segment Anything 论文共同作者"
+          "zh": "Segment Anything 论文共同作者",
+          "en": "Co-author of the Segment Anything paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ross-girshick",
         "name": {
-          "en": "Ross Girshick",
-          "zh": "罗斯·格希克"
+          "zh": "罗斯·格希克",
+          "en": "Ross Girshick"
         },
         "role": {
-          "en": "Co-author of the Segment Anything paper",
-          "zh": "Segment Anything 论文共同作者"
+          "zh": "Segment Anything 论文共同作者",
+          "en": "Co-author of the Segment Anything paper"
         },
+        "avatar": "resources/images/external/ai100-2023-segment-anything/ross-girshick.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-segment-anything/ross-girshick.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -12398,7 +12741,10 @@ const milestones = [
           "attribution": "Ross Girshick personal homepage"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ross-girshick"
+        ]
       },
       "resources/images/external/ai100-2023-segment-anything/sam-official-model-diagram.png": {
         "caption": {
@@ -12432,7 +12778,8 @@ const milestones = [
           "attribution": "Meta AI Research, Segment Anything"
         },
         "role": "historical-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-101-segment-anything_record.svg": {
         "caption": {
@@ -12469,7 +12816,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -13010,16 +13358,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "runway-company",
         "name": {
-          "en": "Runway",
-          "zh": "Runway"
+          "zh": "Runway",
+          "en": "Runway"
         },
         "role": {
-          "en": "Company behind the Gen-2 video generation system",
-          "zh": "Gen-2 视频生成系统开发公司"
+          "zh": "Gen-2 视频生成系统开发公司",
+          "en": "Company behind the Gen-2 video generation system"
         },
+        "avatar": "resources/images/external/ai100-2023-gen2/runway-logo.png",
+        "avatarStyle": "",
         "figureType": "product",
-        "avatar": "resources/images/external/ai100-2023-gen2/runway-logo.png"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -13068,7 +13420,8 @@ const milestones = [
           "attribution": "Runway"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-087-gen2_record.svg": {
         "caption": {
@@ -13105,7 +13458,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -13728,64 +14082,84 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "zeming-lin",
         "name": {
-          "en": "Zeming Lin",
-          "zh": "林泽明"
+          "zh": "林泽明",
+          "en": "Zeming Lin"
         },
         "role": {
-          "en": "First author of the ESMFold paper",
-          "zh": "ESMFold 论文第一作者"
+          "zh": "ESMFold 论文第一作者",
+          "en": "First author of the ESMFold paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "halil-akin",
         "name": {
-          "en": "Halil Akin",
-          "zh": "哈利勒·阿金"
+          "zh": "哈利勒·阿金",
+          "en": "Halil Akin"
         },
         "role": {
-          "en": "Co-author of the ESMFold paper",
-          "zh": "ESMFold 论文共同作者"
+          "zh": "ESMFold 论文共同作者",
+          "en": "Co-author of the ESMFold paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "roshan-rao",
         "name": {
-          "en": "Roshan Rao",
-          "zh": "罗尚·拉奥"
+          "zh": "罗尚·拉奥",
+          "en": "Roshan Rao"
         },
         "role": {
-          "en": "Co-author of the ESMFold paper",
-          "zh": "ESMFold 论文共同作者"
+          "zh": "ESMFold 论文共同作者",
+          "en": "Co-author of the ESMFold paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "brian-hie",
         "name": {
-          "en": "Brian Hie",
-          "zh": "布赖恩·希"
+          "zh": "布赖恩·希",
+          "en": "Brian Hie"
         },
         "role": {
-          "en": "Co-author of the ESMFold paper",
-          "zh": "ESMFold 论文共同作者"
+          "zh": "ESMFold 论文共同作者",
+          "en": "Co-author of the ESMFold paper"
         },
+        "avatar": "resources/images/external/ai100-2023-esmfold/brian-hie.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-esmfold/brian-hie.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "alexander-rives",
         "name": {
-          "en": "Alexander Rives",
-          "zh": "亚历山大·里夫斯"
+          "zh": "亚历山大·里夫斯",
+          "en": "Alexander Rives"
         },
         "role": {
-          "en": "Co-author of the ESMFold paper",
-          "zh": "ESMFold 论文共同作者"
+          "zh": "ESMFold 论文共同作者",
+          "en": "Co-author of the ESMFold paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -13836,7 +14210,10 @@ const milestones = [
           "attribution": "Stanford Profiles"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "brian-hie"
+        ]
       },
       "resources/images/external/ai100-2023-esmfold/esmfold-paper-figure-2.jpg": {
         "caption": {
@@ -13870,7 +14247,8 @@ const milestones = [
           "attribution": "Lin et al., ESMFold preprint (2022), Figure 2"
         },
         "role": "historical-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-110-esmfold_record.svg": {
         "caption": {
@@ -13907,7 +14285,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -14448,18 +14827,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alan-turing",
         "name": {
-          "en": "Alan Turing",
-          "zh": "艾伦·图灵"
+          "zh": "艾伦·图灵",
+          "en": "Alan Turing"
         },
         "role": {
-          "en": "Proposed the imitation game",
-          "zh": "提出模仿游戏"
+          "zh": "提出模仿游戏",
+          "en": "Proposed the imitation game"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -14496,7 +14877,10 @@ const milestones = [
           }
         },
         "role": "source-card",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "alan-turing"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png": {
         "caption": {
@@ -14520,7 +14904,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -14899,31 +15284,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "stephen-cook",
         "name": {
-          "en": "Stephen Cook",
-          "zh": "斯蒂芬·A·库克"
+          "zh": "斯蒂芬·A·库克",
+          "en": "Stephen Cook"
         },
         "role": {
-          "en": "Introduced NP-completeness",
-          "zh": "提出 NP 完全性"
+          "zh": "提出 NP 完全性",
+          "en": "Introduced NP-completeness"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "leonid-levin",
         "name": {
-          "en": "Leonid Levin",
-          "zh": "列昂尼德·列文"
+          "zh": "列昂尼德·列文",
+          "en": "Leonid Levin"
         },
         "role": {
-          "en": "Independently formulated related NP-completeness ideas",
-          "zh": "独立提出相关 NP 完全性思想"
+          "zh": "独立提出相关 NP 完全性思想",
+          "en": "Independently formulated related NP-completeness ideas"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -14960,7 +15350,10 @@ const milestones = [
           }
         },
         "role": "source-card",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "stephen-cook"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1971-complexity-theory_reduction-map.svg": {
         "caption": {
@@ -14984,7 +15377,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -15343,32 +15737,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "vladimir-vapnik",
         "name": {
-          "en": "Vladimir Vapnik",
-          "zh": "弗拉基米尔·N·瓦普尼克"
+          "zh": "弗拉基米尔·N·瓦普尼克",
+          "en": "Vladimir Vapnik"
         },
         "role": {
-          "en": "Co-developed VC theory",
-          "zh": "VC 理论共同创建者"
+          "zh": "VC 理论共同创建者",
+          "en": "Co-developed VC theory"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "alexey-chervonenkis",
         "name": {
-          "en": "Alexey Chervonenkis",
-          "zh": "阿列克谢·雅·切尔沃年基斯"
+          "zh": "阿列克谢·雅·切尔沃年基斯",
+          "en": "Alexey Chervonenkis"
         },
         "role": {
-          "en": "Co-developed VC theory",
-          "zh": "VC 理论共同创建者"
+          "zh": "VC 理论共同创建者",
+          "en": "Co-developed VC theory"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -15410,7 +15808,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "vladimir-vapnik"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1971-vc-theory_generalization.svg": {
         "caption": {
@@ -15434,7 +15835,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -15806,45 +16208,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "allen-newell",
         "name": {
-          "en": "Allen Newell",
-          "zh": "艾伦·纽厄尔"
+          "zh": "艾伦·纽厄尔",
+          "en": "Allen Newell"
         },
         "role": {
-          "en": "Logic Theorist co-creator",
-          "zh": "Logic Theorist 共同创建者"
+          "zh": "Logic Theorist 共同创建者",
+          "en": "Logic Theorist co-creator"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "herbert-a-simon",
         "name": {
-          "en": "Herbert Simon",
-          "zh": "赫伯特·A·西蒙"
+          "zh": "赫伯特·A·西蒙",
+          "en": "Herbert Simon"
         },
         "role": {
-          "en": "Logic Theorist co-creator",
-          "zh": "Logic Theorist 共同创建者"
+          "zh": "Logic Theorist 共同创建者",
+          "en": "Logic Theorist co-creator"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "j-c-shaw",
         "name": {
-          "en": "J. C. Shaw",
-          "zh": "J·C·肖"
+          "zh": "J·C·肖",
+          "en": "J. C. Shaw"
         },
         "role": {
-          "en": "Programmer and co-developer",
-          "zh": "程序员与共同开发者"
+          "zh": "程序员与共同开发者",
+          "en": "Programmer and co-developer"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -15881,7 +16290,10 @@ const milestones = [
           }
         },
         "role": "source-card",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "herbert-a-simon"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1956-logic-theorist_proof-search.svg": {
         "caption": {
@@ -15905,7 +16317,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -16264,18 +16677,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "hao-wang",
         "name": {
-          "en": "Hao Wang",
-          "zh": "王浩"
+          "zh": "王浩",
+          "en": "Hao Wang"
         },
         "role": {
-          "en": "Developed pattern-recognition theorem-proving procedures",
-          "zh": "提出基于模式识别的定理证明过程"
+          "zh": "提出基于模式识别的定理证明过程",
+          "en": "Developed pattern-recognition theorem-proving procedures"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -16312,7 +16727,10 @@ const milestones = [
           }
         },
         "role": "source-card",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "hao-wang"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg": {
         "caption": {
@@ -16336,7 +16754,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -16695,59 +17114,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "martin-davis",
         "name": {
-          "en": "Martin Davis",
-          "zh": "马丁·戴维斯"
+          "zh": "马丁·戴维斯",
+          "en": "Martin Davis"
         },
         "role": {
-          "en": "DP/DPLL co-developer",
-          "zh": "共同提出 Davis-Putnam 与 DPLL 过程"
+          "zh": "共同提出 Davis-Putnam 与 DPLL 过程",
+          "en": "DP/DPLL co-developer"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "hilary-putnam",
         "name": {
-          "en": "Hilary Putnam",
-          "zh": "希拉里·普特南"
+          "zh": "希拉里·普特南",
+          "en": "Hilary Putnam"
         },
         "role": {
-          "en": "1960 DP paper co-author",
-          "zh": "共同撰写 1960 年 Davis-Putnam 过程论文"
+          "zh": "共同撰写 1960 年 Davis-Putnam 过程论文",
+          "en": "1960 DP paper co-author"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "donald-loveland",
         "name": {
-          "en": "Donald Loveland",
-          "zh": "唐纳德·W·洛夫兰"
+          "zh": "唐纳德·W·洛夫兰",
+          "en": "Donald Loveland"
         },
         "role": {
-          "en": "1962 DPLL paper co-author",
-          "zh": "共同撰写 1962 年 DPLL 程序论文"
+          "zh": "共同撰写 1962 年 DPLL 程序论文",
+          "en": "1962 DPLL paper co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "george-logemann",
         "name": {
-          "en": "George Logemann",
-          "zh": "乔治·洛格曼"
+          "zh": "乔治·洛格曼",
+          "en": "George Logemann"
         },
         "role": {
-          "en": "1962 DPLL paper co-author",
-          "zh": "共同撰写 1962 年 DPLL 程序论文"
+          "zh": "共同撰写 1962 年 DPLL 程序论文",
+          "en": "1962 DPLL paper co-author"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -16784,7 +17212,10 @@ const milestones = [
           }
         },
         "role": "source-card",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "hilary-putnam"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg": {
         "caption": {
@@ -16808,7 +17239,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -17167,18 +17599,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "john-robinson",
         "name": {
-          "en": "John Robinson",
-          "zh": "约翰·艾伦·罗宾逊"
+          "zh": "约翰·艾伦·罗宾逊",
+          "en": "John Robinson"
         },
         "role": {
-          "en": "Inventor of the resolution principle",
-          "zh": "归结原理提出者"
+          "zh": "归结原理提出者",
+          "en": "Inventor of the resolution principle"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -17217,7 +17651,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "john-robinson"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1965-resolution-method_clause-refutation.svg": {
         "caption": {
@@ -17241,7 +17678,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1965-resolution-method_unification-map.svg": {
         "caption": {
@@ -17265,7 +17703,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -17646,18 +18085,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "william-mccune",
         "name": {
-          "en": "William McCune",
-          "zh": "威廉·麦丘恩"
+          "zh": "威廉·麦丘恩",
+          "en": "William McCune"
         },
         "role": {
-          "en": "Creator of Otter",
-          "zh": "Otter 创建者"
+          "zh": "Otter 创建者",
+          "en": "Creator of Otter"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -17711,7 +18152,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg": {
         "caption": {
@@ -17735,7 +18177,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg": {
         "caption": {
@@ -17759,7 +18202,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg": {
         "caption": {
@@ -17783,7 +18227,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg": {
         "caption": {
@@ -17807,7 +18252,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -18178,18 +18624,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "john-mccarthy",
         "name": {
-          "en": "John McCarthy",
-          "zh": "约翰·麦卡锡"
+          "zh": "约翰·麦卡锡",
+          "en": "John McCarthy"
         },
         "role": {
-          "en": "Designer of LISP",
-          "zh": "LISP 设计者"
+          "zh": "LISP 设计者",
+          "en": "Designer of LISP"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg",
         "avatarStyle": "transform: scale(1.08); transform-origin: 50% 45%;",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -18226,7 +18674,10 @@ const milestones = [
           }
         },
         "role": "source-card",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "john-mccarthy"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg": {
         "caption": {
@@ -18250,7 +18701,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -18591,32 +19043,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alain-colmerauer",
         "name": {
-          "en": "Alain Colmerauer",
-          "zh": "阿兰·科尔梅罗尔"
+          "zh": "阿兰·科尔梅罗尔",
+          "en": "Alain Colmerauer"
         },
         "role": {
-          "en": "Creator of the first Prolog implementation",
-          "zh": "早期 Prolog 实现创建者"
+          "zh": "早期 Prolog 实现创建者",
+          "en": "Creator of the first Prolog implementation"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "robert-kowalski",
         "name": {
-          "en": "Robert Kowalski",
-          "zh": "罗伯特·科瓦尔斯基"
+          "zh": "罗伯特·科瓦尔斯基",
+          "en": "Robert Kowalski"
         },
         "role": {
-          "en": "Logic programming theorist",
-          "zh": "逻辑程序设计理论贡献者"
+          "zh": "逻辑程序设计理论贡献者",
+          "en": "Logic programming theorist"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -18655,7 +19111,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "alain-colmerauer"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg": {
         "caption": {
@@ -18679,7 +19138,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1973-prolog_unification-trace.svg": {
         "caption": {
@@ -18703,7 +19163,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -19084,18 +19545,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "joseph-weizenbaum",
         "name": {
-          "en": "Joseph Weizenbaum",
-          "zh": "约瑟夫·魏岑鲍姆"
+          "zh": "约瑟夫·魏岑鲍姆",
+          "en": "Joseph Weizenbaum"
         },
         "role": {
-          "en": "Creator of ELIZA",
-          "zh": "ELIZA 创建者"
+          "zh": "ELIZA 创建者",
+          "en": "Creator of ELIZA"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum-rit-1982.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -19148,7 +19611,10 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Weizenbaum_1982.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "joseph-weizenbaum"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1966-eliza_doctor-script.svg": {
         "caption": {
@@ -19172,7 +19638,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/architecture/1966-eliza_ctss-system-diagram.png": {
         "caption": {
@@ -19202,7 +19669,8 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Compatible_time-sharing_system_A_programmer%27s_guide_-_Figure_1.1.png"
         },
         "role": "historical-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg": {
         "caption": {
@@ -19226,7 +19694,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/supporting/1966-eliza_weizenbaum-uszkoreit-2006.jpg": {
         "caption": {
@@ -19256,7 +19725,11 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hans_Uszkoreit,_Joseph_Weizenbaum_(238430262).jpg"
         },
         "role": "historical-photo",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "hans-uszkoreit",
+          "joseph-weizenbaum"
+        ]
       },
       "resources/images/bench-council-ai100/papers/1966-eliza_original-source-page-9.jpg": {
         "caption": {
@@ -19286,7 +19759,8 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:ORIGINAL_ELIZA_IN_MAD_SLIP.pdf"
         },
         "role": "primary-source",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/supporting/1966-eliza_conversation-reconstruction.png": {
         "caption": {
@@ -19316,7 +19790,8 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:ELIZA_conversation.png"
         },
         "role": "historical-reconstruction",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -19764,18 +20239,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "terry-winograd",
         "name": {
-          "en": "Terry Winograd",
-          "zh": "特里·维诺格拉德"
+          "zh": "特里·维诺格拉德",
+          "en": "Terry Winograd"
         },
         "role": {
-          "en": "Creator of SHRDLU",
-          "zh": "SHRDLU 创建者"
+          "zh": "SHRDLU 创建者",
+          "en": "Creator of SHRDLU"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -19814,7 +20291,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "terry-winograd"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg": {
         "caption": {
@@ -19838,7 +20318,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg": {
         "caption": {
@@ -19862,7 +20343,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -20239,31 +20721,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "david-ferrucci",
         "name": {
-          "en": "David Ferrucci",
-          "zh": "戴维·费鲁奇"
+          "zh": "戴维·费鲁奇",
+          "en": "David Ferrucci"
         },
         "role": {
-          "en": "Principal investigator of the Watson / DeepQA team",
-          "zh": "Watson / DeepQA 团队负责人"
+          "zh": "Watson / DeepQA 团队负责人",
+          "en": "Principal investigator of the Watson / DeepQA team"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ibm-deepqa-team",
         "name": {
-          "en": "IBM DeepQA team",
-          "zh": "IBM DeepQA 团队"
+          "zh": "IBM DeepQA 团队",
+          "en": "IBM DeepQA team"
         },
         "role": {
-          "en": "Built the question-answering system",
-          "zh": "构建问答系统"
+          "zh": "构建问答系统",
+          "en": "Built the question-answering system"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -20304,7 +20791,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "david-ferrucci"
+        ]
       },
       "resources/images/external/2011-ibm-watson/deepqa-question-answering-pipeline.png": {
         "caption": {
@@ -20334,7 +20824,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg"
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg": {
         "caption": {
@@ -20358,7 +20849,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/2011-ibm-watson/ibm-watson-jeopardy-demonstration.jpg": {
         "caption": {
@@ -20388,7 +20880,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -20775,18 +21268,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "christopher-strachey",
         "name": {
-          "en": "Christopher Strachey",
-          "zh": "克里斯托弗·斯特雷奇"
+          "zh": "克里斯托弗·斯特雷奇",
+          "en": "Christopher Strachey"
         },
         "role": {
-          "en": "Developer of the early draughts program",
-          "zh": "早期跳棋程序开发者"
+          "zh": "早期跳棋程序开发者",
+          "en": "Developer of the early draughts program"
         },
         "avatar": "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -20839,7 +21334,10 @@ const milestones = [
           "sourceUrl": "https://history.computer.org/pioneers/strachey.html"
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "christopher-strachey"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
         "caption": {
@@ -20863,7 +21361,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg": {
         "caption": {
@@ -20887,7 +21386,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png": {
         "caption": {
@@ -20917,7 +21417,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
         },
         "role": "game-record-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg": {
         "caption": {
@@ -20947,7 +21448,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -21334,18 +21836,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jonathan-schaeffer",
         "name": {
-          "en": "Jonathan Schaeffer",
-          "zh": "乔纳森·谢弗"
+          "zh": "乔纳森·谢弗",
+          "en": "Jonathan Schaeffer"
         },
         "role": {
-          "en": "Leader of the Chinook team",
-          "zh": "Chinook 团队负责人"
+          "zh": "Chinook 团队负责人",
+          "en": "Leader of the Chinook team"
         },
         "avatar": "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -21392,7 +21896,10 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jonathan-schaeffer"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg": {
         "caption": {
@@ -21416,7 +21923,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg": {
         "caption": {
@@ -21440,7 +21948,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
         "caption": {
@@ -21464,7 +21973,8 @@ const milestones = [
           }
         },
         "role": "game-record-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -21851,60 +22361,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "feng-hsiung-hsu",
         "name": {
-          "en": "Feng-hsiung Hsu",
-          "zh": "许峰雄"
+          "zh": "许峰雄",
+          "en": "Feng-hsiung Hsu"
         },
         "role": {
-          "en": "Chief architect; custom VLSI and hardware design",
-          "zh": "首席架构师；定制 VLSI 与硬件设计"
+          "zh": "首席架构师；定制 VLSI 与硬件设计",
+          "en": "Chief architect; custom VLSI and hardware design"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
         "avatarStyle": "object-position: 50% 20%; transform: scale(1.55); transform-origin: 50% 20%;",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "murray-campbell",
         "name": {
-          "en": "Murray Campbell",
-          "zh": "默里·坎贝尔"
+          "zh": "默里·坎贝尔",
+          "en": "Murray Campbell"
         },
         "role": {
-          "en": "Evaluation-function and search-strategy lead",
-          "zh": "评估函数与搜索策略负责人"
+          "zh": "评估函数与搜索策略负责人",
+          "en": "Evaluation-function and search-strategy lead"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "a-joseph-hoane-jr",
         "name": {
-          "en": "Arthur Hoane",
-          "zh": "约瑟夫·霍恩"
+          "zh": "约瑟夫·霍恩",
+          "en": "A. Joseph Hoane Jr."
         },
         "role": {
-          "en": "Parallel-search software lead",
-          "zh": "并行搜索软件负责人"
+          "zh": "并行搜索软件负责人",
+          "en": "Parallel-search software lead"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jerry-brody",
         "name": {
-          "en": "Jerry Brody",
-          "zh": "杰里·布罗迪"
+          "zh": "杰里·布罗迪",
+          "en": "Jerry Brody"
         },
         "role": {
-          "en": "Hardware integration and match operations",
-          "zh": "硬件集成与比赛现场运行"
+          "zh": "硬件集成与比赛现场运行",
+          "en": "Hardware integration and match operations"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -21954,7 +22472,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "feng-hsiung-hsu"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg": {
         "caption": {
@@ -21978,7 +22499,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg": {
         "caption": {
@@ -22002,7 +22524,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
         "caption": {
@@ -22026,7 +22549,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "murray-campbell"
+        ]
       }
     },
     "achievement": {
@@ -22435,18 +22961,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "oliver-selfridge",
         "name": {
-          "en": "Oliver Selfridge",
-          "zh": "奥利弗·塞尔弗里奇"
+          "zh": "奥利弗·塞尔弗里奇",
+          "en": "Oliver Selfridge"
         },
         "role": {
-          "en": "Author of the Pandemonium architecture",
-          "zh": "Pandemonium 架构提出者"
+          "zh": "Pandemonium 架构提出者",
+          "en": "Author of the Pandemonium architecture"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -22487,7 +23015,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "oliver-selfridge"
+        ]
       },
       "resources/images/external/1959-pandemonium/pandemonium-layered-recognition-architecture.jpg": {
         "caption": {
@@ -22517,7 +23048,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg"
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1959-pandemonium_feature-votes.svg": {
         "caption": {
@@ -22541,7 +23073,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg": {
         "caption": {
@@ -22565,7 +23098,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -22952,18 +23486,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "marvin-minsky",
         "name": {
-          "en": "Marvin Minsky",
-          "zh": "马文·明斯基"
+          "zh": "马文·明斯基",
+          "en": "Marvin Minsky"
         },
         "role": {
-          "en": "Author of the frame representation proposal",
-          "zh": "框架表示思想提出者"
+          "zh": "框架表示思想提出者",
+          "en": "Author of the frame representation proposal"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -23002,7 +23538,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "marvin-minsky"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg": {
         "caption": {
@@ -23026,7 +23565,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg": {
         "caption": {
@@ -23050,7 +23590,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -23427,31 +23968,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "douglas-lenat",
         "name": {
-          "en": "Douglas Lenat",
-          "zh": "道格拉斯·莱纳特"
+          "zh": "道格拉斯·莱纳特",
+          "en": "Douglas Lenat"
         },
         "role": {
-          "en": "Founder of the Cyc project",
-          "zh": "Cyc 项目创始人"
+          "zh": "Cyc 项目创始人",
+          "en": "Founder of the Cyc project"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "r-v-guha",
         "name": {
-          "en": "R. V. Guha",
-          "zh": "R·V·古哈"
+          "zh": "R·V·古哈",
+          "en": "R. V. Guha"
         },
         "role": {
-          "en": "Co-author of core Cyc representation work",
-          "zh": "Cyc 核心表示工作的共同作者"
+          "zh": "Cyc 核心表示工作的共同作者",
+          "en": "Co-author of core Cyc representation work"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -23492,7 +24038,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "douglas-lenat"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1984-cyc_microtheories.svg": {
         "caption": {
@@ -23516,7 +24065,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg": {
         "caption": {
@@ -23540,7 +24090,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/1984-cyc/cyc-related-project-marks.png": {
         "caption": {
@@ -23570,7 +24121,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -23957,60 +24509,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "edward-feigenbaum",
         "name": {
-          "en": "Edward Feigenbaum",
-          "zh": "爱德华·费根鲍姆"
+          "zh": "爱德华·费根鲍姆",
+          "en": "Edward Feigenbaum"
         },
         "role": {
-          "en": "Leader in expert-system AI",
-          "zh": "专家系统 AI 代表人物"
+          "zh": "专家系统 AI 代表人物",
+          "en": "Leader in expert-system AI"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "bruce-buchanan",
         "name": {
-          "en": "Bruce Buchanan",
-          "zh": "布鲁斯·布坎南"
+          "zh": "布鲁斯·布坎南",
+          "en": "Bruce Buchanan"
         },
         "role": {
-          "en": "Dendral co-author",
-          "zh": "Dendral 共同作者"
+          "zh": "Dendral 共同作者",
+          "en": "Dendral co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "joshua-lederberg",
         "name": {
-          "en": "Joshua Lederberg",
-          "zh": "约书亚·莱德伯格"
+          "zh": "约书亚·莱德伯格",
+          "en": "Joshua Lederberg"
         },
         "role": {
-          "en": "Dendral co-author",
-          "zh": "Dendral 共同作者"
+          "zh": "Dendral 共同作者",
+          "en": "Dendral co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "carl-djerassi",
         "name": {
-          "en": "Carl Djerassi",
-          "zh": "卡尔·杰拉西"
+          "zh": "卡尔·杰拉西",
+          "en": "Carl Djerassi"
         },
         "role": {
-          "en": "Dendral co-author",
-          "zh": "Dendral 共同作者"
+          "zh": "Dendral 共同作者",
+          "en": "Dendral co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -24049,7 +24609,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "edward-feigenbaum"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1965-dendral_mass-spectrum.svg": {
         "caption": {
@@ -24073,7 +24636,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1965-dendral_rule-filter.svg": {
         "caption": {
@@ -24097,7 +24661,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -24471,18 +25036,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "john-mcdermott",
         "name": {
-          "en": "John McDermott",
-          "zh": "约翰·麦克德莫特"
+          "zh": "约翰·麦克德莫特",
+          "en": "John McDermott"
         },
         "role": {
-          "en": "Developer of R1/XCON",
-          "zh": "R1/XCON 开发者"
+          "zh": "R1/XCON 开发者",
+          "en": "Developer of R1/XCON"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -24529,7 +25096,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/1980-xcon-r1/vax-11-780-cpu-backplane.jpg": {
         "caption": {
@@ -24559,7 +25127,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg": {
         "caption": {
@@ -24583,7 +25152,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg": {
         "caption": {
@@ -24607,7 +25177,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -24994,18 +25565,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "stuart-lloyd",
         "name": {
-          "en": "Stuart Lloyd",
-          "zh": "斯图尔特·劳埃德"
+          "zh": "斯图尔特·劳埃德",
+          "en": "Stuart Lloyd"
         },
         "role": {
-          "en": "Author of Lloyd's k-means-style quantization method",
-          "zh": "劳埃德 式 k-means 量化方法作者"
+          "zh": "劳埃德 式 k-means 量化方法作者",
+          "en": "Author of Lloyd's k-means-style quantization method"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -25052,7 +25625,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg": {
         "caption": {
@@ -25076,7 +25650,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg": {
         "caption": {
@@ -25100,7 +25675,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/1957-kmeans/k-means-clustering-of-iris-data.png": {
         "caption": {
@@ -25130,7 +25706,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg"
         },
         "role": "algorithm-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -25517,45 +26094,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "martin-ester",
         "name": {
-          "en": "Martin Ester",
-          "zh": "马丁·埃斯特"
+          "zh": "马丁·埃斯特",
+          "en": "Martin Ester"
         },
         "role": {
-          "en": "Co-author of DBSCAN",
-          "zh": "DBSCAN 共同作者"
+          "zh": "DBSCAN 共同作者",
+          "en": "Co-author of DBSCAN"
         },
         "avatar": "resources/images/external/1996-dbscan/martin-ester-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "xiaowei-xu",
         "name": {
-          "en": "Xiaowei Xu",
-          "zh": "徐晓伟"
+          "zh": "徐晓伟",
+          "en": "Xiaowei Xu"
         },
         "role": {
-          "en": "DBSCAN co-author",
-          "zh": "DBSCAN 共同作者"
+          "zh": "DBSCAN 共同作者",
+          "en": "DBSCAN co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "hans-peter-kriegel-jorg-sander-xiaowei-xu",
         "name": {
-          "en": "Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
-          "zh": "汉斯-彼得·克里格尔、约尔格·桑德、徐晓伟"
+          "zh": "汉斯-彼得·克里格尔、约尔格·桑德、徐晓伟",
+          "en": "Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu"
         },
         "role": {
-          "en": "DBSCAN research team",
-          "zh": "DBSCAN 研究团队"
+          "zh": "DBSCAN 研究团队",
+          "en": "DBSCAN research team"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -25602,7 +26186,10 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "martin-ester"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg": {
         "caption": {
@@ -25626,7 +26213,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg": {
         "caption": {
@@ -25650,7 +26238,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/1996-dbscan/dbscan-density-clustering-diagram.png": {
         "caption": {
@@ -25680,7 +26269,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg"
         },
         "role": "algorithm-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -26067,60 +26657,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jianbo-shi",
         "name": {
-          "en": "Jianbo Shi",
-          "zh": "史建波"
+          "zh": "史建波",
+          "en": "Jianbo Shi"
         },
         "role": {
-          "en": "Co-author of the 2000 normalized-cuts paper",
-          "zh": "2000 年归一化切分论文共同作者"
+          "zh": "2000 年归一化切分论文共同作者",
+          "en": "Co-author of the 2000 normalized-cuts paper"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jitendra-malik",
         "name": {
-          "en": "Jitendra Malik",
-          "zh": "吉滕德拉·马利克"
+          "zh": "吉滕德拉·马利克",
+          "en": "Jitendra Malik"
         },
         "role": {
-          "en": "Co-author of the 2000 normalized-cuts paper",
-          "zh": "2000 年归一化切分论文共同作者"
+          "zh": "2000 年归一化切分论文共同作者",
+          "en": "Co-author of the 2000 normalized-cuts paper"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "andrew-ng",
         "name": {
-          "en": "Andrew Ng",
-          "zh": "吴恩达"
+          "zh": "吴恩达",
+          "en": "Andrew Ng"
         },
         "role": {
-          "en": "Co-author of the 2001 spectral-clustering analysis",
-          "zh": "2001 年谱聚类分析论文共同作者"
+          "zh": "2001 年谱聚类分析论文共同作者",
+          "en": "Co-author of the 2001 spectral-clustering analysis"
         },
         "avatar": "resources/images/external/2000-spectral-clustering/andrew-ng-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yair-weiss",
         "name": {
-          "en": "Yair Weiss",
-          "zh": "亚伊尔·魏斯"
+          "zh": "亚伊尔·魏斯",
+          "en": "Yair Weiss"
         },
         "role": {
-          "en": "Co-author of the 2001 spectral-clustering analysis",
-          "zh": "2001 年谱聚类分析论文共同作者"
+          "zh": "2001 年谱聚类分析论文共同作者",
+          "en": "Co-author of the 2001 spectral-clustering analysis"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -26167,7 +26765,10 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "andrew-ng"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg": {
         "caption": {
@@ -26191,7 +26792,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg": {
         "caption": {
@@ -26215,7 +26817,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/2000-spectral-clustering/six-node-spectral-clustering-graph.png": {
         "caption": {
@@ -26245,7 +26848,8 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg"
         },
         "role": "algorithm-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -26652,32 +27256,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "thomas-cover",
         "name": {
-          "en": "Thomas Cover",
-          "zh": "托马斯·科弗"
+          "zh": "托马斯·科弗",
+          "en": "Thomas Cover"
         },
         "role": {
-          "en": "Co-author of nearest-neighbor classification",
-          "zh": "最近邻分类共同作者"
+          "zh": "最近邻分类共同作者",
+          "en": "Co-author of nearest-neighbor classification"
         },
         "avatar": "resources/images/external/ai100-1967-knn/thomas-cover-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "peter-hart",
         "name": {
-          "en": "Peter Hart",
-          "zh": "彼得·哈特"
+          "zh": "彼得·哈特",
+          "en": "Peter Hart"
         },
         "role": {
-          "en": "Co-author of nearest-neighbor classification",
-          "zh": "最近邻分类共同作者"
+          "zh": "最近邻分类共同作者",
+          "en": "Co-author of nearest-neighbor classification"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -26720,7 +27328,10 @@ const milestones = [
           "sourceUrl": "https://isl.stanford.edu/~cover/tc07small.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "thomas-cover"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg": {
         "caption": {
@@ -26744,7 +27355,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -27166,32 +27778,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "arthur-hoerl",
         "name": {
-          "en": "Arthur Hoerl",
-          "zh": "阿瑟·霍尔"
+          "zh": "阿瑟·霍尔",
+          "en": "Arthur Hoerl"
         },
         "role": {
-          "en": "Co-author of ridge regression",
-          "zh": "岭回归共同作者"
+          "zh": "岭回归共同作者",
+          "en": "Co-author of ridge regression"
         },
         "avatar": "resources/images/external/ai100-1970-ridge/arthur-hoerl-and-the-ridge-regression-formula.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "robert-kennard",
         "name": {
-          "en": "Robert Kennard",
-          "zh": "罗伯特·肯纳德"
+          "zh": "罗伯特·肯纳德",
+          "en": "Robert Kennard"
         },
         "role": {
-          "en": "Co-author of ridge regression",
-          "zh": "岭回归共同作者"
+          "zh": "岭回归共同作者",
+          "en": "Co-author of ridge regression"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -27234,7 +27850,10 @@ const milestones = [
           "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "arthur-hoerl"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg": {
         "caption": {
@@ -27258,7 +27877,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -27664,59 +28284,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "bernhard-boser",
         "name": {
-          "en": "Bernhard Boser",
-          "zh": "伯恩哈德·博泽尔"
+          "zh": "伯恩哈德·博泽尔",
+          "en": "Bernhard Boser"
         },
         "role": {
-          "en": "1992 SVM paper co-author",
-          "zh": "1992 年最优间隔分类器论文共同作者"
+          "zh": "1992 年最优间隔分类器论文共同作者",
+          "en": "1992 SVM paper co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "vladimir-vapnik",
         "name": {
-          "en": "Vladimir Vapnik",
-          "zh": "弗拉基米尔·瓦普尼克"
+          "zh": "弗拉基米尔·N·瓦普尼克",
+          "en": "Vladimir Vapnik"
         },
         "role": {
-          "en": "SVM co-developer",
-          "zh": "共同发展最优间隔分类器与统计学习理论"
+          "zh": "共同发展最优间隔分类器与统计学习理论",
+          "en": "SVM co-developer"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "corinna-cortes",
         "name": {
-          "en": "Corinna Cortes",
-          "zh": "科琳娜·科尔特斯"
+          "zh": "科琳娜·科尔特斯",
+          "en": "Corinna Cortes"
         },
         "role": {
-          "en": "SVM co-author",
-          "zh": "SVM 共同作者"
+          "zh": "SVM 共同作者",
+          "en": "SVM co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "isabelle-guyon",
         "name": {
-          "en": "Isabelle Guyon",
-          "zh": "伊莎贝尔·居永"
+          "zh": "伊莎贝尔·居永",
+          "en": "Isabelle Guyon"
         },
         "role": {
-          "en": "1992 SVM paper co-author",
-          "zh": "1992 年最优间隔分类器论文共同作者"
+          "zh": "1992 年最优间隔分类器论文共同作者",
+          "en": "1992 SVM paper co-author"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -27764,7 +28393,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "vladimir-vapnik"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg": {
         "caption": {
@@ -27788,7 +28420,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg": {
         "caption": {
@@ -27812,7 +28445,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg": {
         "caption": {
@@ -27836,7 +28470,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "isabelle-guyon"
+        ]
       }
     },
     "achievement": {
@@ -28226,18 +28863,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "robert-tibshirani",
         "name": {
-          "en": "Robert Tibshirani",
-          "zh": "罗伯特·蒂布希拉尼"
+          "zh": "罗伯特·蒂布希拉尼",
+          "en": "Robert Tibshirani"
         },
         "role": {
-          "en": "Introduced the lasso method",
-          "zh": "提出 Lasso 方法"
+          "zh": "提出 Lasso 方法",
+          "en": "Introduced the lasso method"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -28276,7 +28915,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "robert-tibshirani"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg": {
         "caption": {
@@ -28300,7 +28942,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg": {
         "caption": {
@@ -28324,7 +28967,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -28702,18 +29346,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "david-lowe",
         "name": {
-          "en": "David Lowe",
-          "zh": "戴维·洛"
+          "zh": "戴维·洛",
+          "en": "David Lowe"
         },
         "role": {
-          "en": "Inventor of SIFT",
-          "zh": "SIFT 发明者"
+          "zh": "SIFT 发明者",
+          "en": "Inventor of SIFT"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -28752,7 +29398,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "david-lowe"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1999-sift_scale-space.svg": {
         "caption": {
@@ -28776,7 +29425,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1999-sift_descriptor.svg": {
         "caption": {
@@ -28800,7 +29450,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -29174,32 +29825,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "navneet-dalal",
         "name": {
-          "en": "Navneet Dalal",
-          "zh": "纳夫尼特·达拉尔"
+          "zh": "纳夫尼特·达拉尔",
+          "en": "Navneet Dalal"
         },
         "role": {
-          "en": "First author of HOG",
-          "zh": "HOG 第一作者"
+          "zh": "HOG 第一作者",
+          "en": "First author of HOG"
         },
         "avatar": "resources/images/external/ai100-2005-hog/navneet-dalal-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "bill-triggs",
         "name": {
-          "en": "Bill Triggs",
-          "zh": "比尔·特里格斯"
+          "zh": "比尔·特里格斯",
+          "en": "Bill Triggs"
         },
         "role": {
-          "en": "Co-author of HOG",
-          "zh": "HOG 共同作者"
+          "zh": "HOG 共同作者",
+          "en": "Co-author of HOG"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -29242,7 +29897,10 @@ const milestones = [
           "sourceUrl": "https://sites.google.com/sitesv-images-rt/ACHe0d0ghjJG635BopferSOH-NCUfiIeUOaZtj9wAQZ5lVbhi_x46cCqe1aegqUA36mUQWjNApopHF40m24_YPV8an63u0_AW9SXRCiuCJJYBbpNnXpLgYv67Nfb_ws1xinbWRBWTY0x66jFHiprPQaUimaFEMxfNeyw72BP2kAFmBfR9-Lrk8JgvpQclKel55Zt0mOIvDbb8g=w1280"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "navneet-dalal"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg": {
         "caption": {
@@ -29266,7 +29924,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -29688,45 +30347,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "herbert-bay",
         "name": {
-          "en": "Herbert Bay",
-          "zh": "赫伯特·贝"
+          "zh": "赫伯特·贝",
+          "en": "Herbert Bay"
         },
         "role": {
-          "en": "Lead author of SURF",
-          "zh": "SURF 主要作者"
+          "zh": "SURF 主要作者",
+          "en": "Lead author of SURF"
         },
         "avatar": "resources/images/external/ai100-2006-surf/herbert-bay-portrait.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "andreas-ess",
         "name": {
-          "en": "Andreas Ess",
-          "zh": "安德烈亚斯·埃斯"
+          "zh": "安德烈亚斯·埃斯",
+          "en": "Andreas Ess"
         },
         "role": {
-          "en": "SURF co-author",
-          "zh": "SURF 共同作者"
+          "zh": "SURF 共同作者",
+          "en": "SURF co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "tinne-tuytelaars",
         "name": {
-          "en": "Tinne Tuytelaars",
-          "zh": "蒂娜·图伊特拉尔斯"
+          "zh": "蒂娜·图伊特拉尔斯",
+          "en": "Tinne Tuytelaars"
         },
         "role": {
-          "en": "Co-author of SURF",
-          "zh": "Co-author of SURF"
+          "zh": "Co-author of SURF",
+          "en": "Co-author of SURF"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -29769,7 +30435,10 @@ const milestones = [
           "sourceUrl": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "herbert-bay"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg": {
         "caption": {
@@ -29793,7 +30462,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -30199,32 +30869,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "bernhard-scholkopf",
         "name": {
-          "en": "Bernhard Schölkopf",
-          "zh": "伯恩哈德·舍尔科普夫"
+          "zh": "伯恩哈德·舍尔科普夫",
+          "en": "Bernhard Schölkopf"
         },
         "role": {
-          "en": "Co-author of Kernel PCA",
-          "zh": "Kernel PCA 共同作者"
+          "zh": "Kernel PCA 共同作者",
+          "en": "Co-author of Kernel PCA"
         },
         "avatar": "resources/images/external/ai100-1997-kernel-pca/bernhard-scholkopf-portrait.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "klaus-robert-muller",
         "name": {
-          "en": "Klaus-Robert Muller",
-          "zh": "克劳斯-罗伯特·穆勒"
+          "zh": "克劳斯-罗伯特·穆勒",
+          "en": "Klaus-Robert Muller"
         },
         "role": {
-          "en": "Co-author of Kernel PCA",
-          "zh": "Kernel PCA 共同作者"
+          "zh": "Kernel PCA 共同作者",
+          "en": "Co-author of Kernel PCA"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -30267,7 +30941,10 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "bernhard-scholkopf"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg": {
         "caption": {
@@ -30291,7 +30968,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -30697,32 +31375,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "daniel-lee",
         "name": {
-          "en": "Daniel Lee",
-          "zh": "丹尼尔·李"
+          "zh": "丹尼尔·李",
+          "en": "Daniel Lee"
         },
         "role": {
-          "en": "Co-author of NMF",
-          "zh": "NMF 共同作者"
+          "zh": "NMF 共同作者",
+          "en": "Co-author of NMF"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "h-sebastian-seung",
         "name": {
-          "en": "H Sebastian Seung",
-          "zh": "H. 塞巴斯蒂安·承"
+          "zh": "H. 塞巴斯蒂安·承",
+          "en": "H Sebastian Seung"
         },
         "role": {
-          "en": "Co-author of NMF",
-          "zh": "NMF 共同作者"
+          "zh": "NMF 共同作者",
+          "en": "Co-author of NMF"
         },
         "avatar": "resources/images/external/ai100-1999-nmf/h-sebastian-seung-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -30765,7 +31447,10 @@ const milestones = [
           "sourceUrl": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "h-sebastian-seung"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg": {
         "caption": {
@@ -30789,7 +31474,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -31195,31 +31881,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "joshua-tenenbaum",
         "name": {
-          "en": "Joshua Tenenbaum",
-          "zh": "约书亚·特南鲍姆"
+          "zh": "约书亚·特南鲍姆",
+          "en": "Joshua Tenenbaum"
         },
         "role": {
-          "en": "Lead author of Isomap",
-          "zh": "Isomap 主要作者"
+          "zh": "Isomap 主要作者",
+          "en": "Lead author of Isomap"
         },
         "avatar": "resources/images/external/ai100-2000-isomap/joshua-tenenbaum-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "john-langford",
         "name": {
-          "en": "John Langford",
-          "zh": "约翰·兰福德"
+          "zh": "约翰·兰福德",
+          "en": "John Langford"
         },
         "role": {
-          "en": "Co-author of Isomap",
-          "zh": "Co-author of Isomap"
+          "zh": "Co-author of Isomap",
+          "en": "Co-author of Isomap"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -31262,7 +31953,10 @@ const milestones = [
           "sourceUrl": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "joshua-tenenbaum"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg": {
         "caption": {
@@ -31286,7 +31980,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -31692,32 +32387,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "sam-roweis",
         "name": {
-          "en": "Sam Roweis",
-          "zh": "萨姆·罗维斯"
+          "zh": "萨姆·罗维斯",
+          "en": "Sam Roweis"
         },
         "role": {
-          "en": "Co-author of LLE",
-          "zh": "LLE 共同作者"
+          "zh": "LLE 共同作者",
+          "en": "Co-author of LLE"
         },
         "avatar": "resources/images/external/ai100-2000-lle/sam-roweis-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "lawrence-saul",
         "name": {
-          "en": "Lawrence Saul",
-          "zh": "劳伦斯·索尔"
+          "zh": "劳伦斯·索尔",
+          "en": "Lawrence Saul"
         },
         "role": {
-          "en": "Co-author of LLE",
-          "zh": "LLE 共同作者"
+          "zh": "LLE 共同作者",
+          "en": "Co-author of LLE"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -31760,7 +32459,10 @@ const milestones = [
           "sourceUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "sam-roweis"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg": {
         "caption": {
@@ -31784,7 +32486,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -32190,32 +32893,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "laurens-van-der-maaten",
         "name": {
-          "en": "Laurens van der Maaten",
-          "zh": "劳伦斯·范德马滕"
+          "zh": "劳伦斯·范德马滕",
+          "en": "Laurens van der Maaten"
         },
         "role": {
-          "en": "Co-author of t-SNE",
-          "zh": "t-SNE 共同作者"
+          "zh": "t-SNE 共同作者",
+          "en": "Co-author of t-SNE"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "geoffrey-hinton",
         "name": {
-          "en": "Geoffrey Hinton",
-          "zh": "杰弗里·辛顿"
+          "zh": "杰弗里·辛顿",
+          "en": "Geoffrey Hinton"
         },
         "role": {
-          "en": "Pioneer of deep learning",
-          "zh": "深度学习之父"
+          "zh": "深度学习之父",
+          "en": "Pioneer of deep learning"
         },
         "avatar": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
         "avatarStyle": "transform: scale(1.24); transform-origin: 50% 42%;",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -32254,7 +32961,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "laurens-van-der-maaten"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg": {
         "caption": {
@@ -32278,7 +32988,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg": {
         "caption": {
@@ -32302,7 +33013,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -32679,32 +33391,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "warren-mcculloch",
         "name": {
-          "en": "Warren McCulloch",
-          "zh": "沃伦·麦卡洛克"
+          "zh": "沃伦·麦卡洛克",
+          "en": "Warren McCulloch"
         },
         "role": {
-          "en": "Co-author of the logical neuron model",
-          "zh": "逻辑神经元模型共同作者"
+          "zh": "逻辑神经元模型共同作者",
+          "en": "Co-author of the logical neuron model"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "walter-pitts",
         "name": {
-          "en": "Walter Pitts",
-          "zh": "沃尔特·皮茨"
+          "zh": "沃尔特·皮茨",
+          "en": "Walter Pitts"
         },
         "role": {
-          "en": "Co-author of the logical neuron model",
-          "zh": "逻辑神经元模型共同作者"
+          "zh": "逻辑神经元模型共同作者",
+          "en": "Co-author of the logical neuron model"
         },
         "avatar": "resources/images/external/ai100-1943-mcculloch-pitts-neuron/walter-pitts-at-a-blackboard.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -32747,7 +33463,10 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "walter-pitts"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg": {
         "caption": {
@@ -32771,7 +33490,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -33177,31 +33897,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "marvin-minsky",
         "name": {
-          "en": "Marvin Minsky",
-          "zh": "马文·明斯基"
+          "zh": "马文·明斯基",
+          "en": "Marvin Minsky"
         },
         "role": {
-          "en": "Co-builder of SNARC",
-          "zh": "SNARC 共同建造者"
+          "zh": "SNARC 共同建造者",
+          "en": "Co-builder of SNARC"
         },
         "avatar": "resources/images/figures/marvin-minsky.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "dean-edmonds",
         "name": {
-          "en": "Dean Edmonds",
-          "zh": "迪恩·埃德蒙兹"
+          "zh": "迪恩·埃德蒙兹",
+          "en": "Dean Edmonds"
         },
         "role": {
-          "en": "Co-builder of SNARC",
-          "zh": "SNARC 共同建造者"
+          "zh": "SNARC 共同建造者",
+          "en": "Co-builder of SNARC"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -33238,7 +33963,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "marvin-minsky"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg": {
         "caption": {
@@ -33262,7 +33990,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -33700,18 +34429,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "frank-rosenblatt",
         "name": {
-          "en": "Frank Rosenblatt",
-          "zh": "弗兰克·罗森布拉特"
+          "zh": "弗兰克·罗森布拉特",
+          "en": "Frank Rosenblatt"
         },
         "role": {
-          "en": "Inventor of the perceptron",
-          "zh": "感知机发明者"
+          "zh": "感知机发明者",
+          "en": "Inventor of the perceptron"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg",
         "avatarStyle": "transform: scale(1.18); transform-origin: 44% 38%;",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -33769,7 +34500,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "frank-rosenblatt"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg": {
         "caption": {
@@ -33793,7 +34527,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg": {
         "caption": {
@@ -33817,7 +34552,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg": {
         "caption": {
@@ -33841,7 +34577,10 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "frank-rosenblatt"
+        ]
       },
       "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png": {
         "caption": {
@@ -33865,7 +34604,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg": {
         "caption": {
@@ -33889,7 +34629,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png": {
         "caption": {
@@ -33913,7 +34654,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -34287,18 +35029,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "john-hopfield",
         "name": {
-          "en": "John Hopfield",
-          "zh": "约翰·J·霍普菲尔德"
+          "zh": "约翰·J·霍普菲尔德",
+          "en": "John Hopfield"
         },
         "role": {
-          "en": "Inventor of Hopfield networks",
-          "zh": "Hopfield 网络提出者"
+          "zh": "Hopfield 网络提出者",
+          "en": "Inventor of Hopfield networks"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -34337,7 +35081,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "john-hopfield"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg": {
         "caption": {
@@ -34361,7 +35108,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg": {
         "caption": {
@@ -34385,7 +35133,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -34763,18 +35512,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "teuvo-kohonen",
         "name": {
-          "en": "Teuvo Kohonen",
-          "zh": "泰沃·科霍宁"
+          "zh": "泰沃·科霍宁",
+          "en": "Teuvo Kohonen"
         },
         "role": {
-          "en": "Creator of self-organizing maps",
-          "zh": "自组织映射提出者"
+          "zh": "自组织映射提出者",
+          "en": "Creator of self-organizing maps"
         },
         "avatar": "resources/images/external/ai100-1982-som/teuvo-kohonen-portrait.jpg",
         "avatarStyle": "object-position: 100% 50%; transform: scale(2.1); transform-origin: 86% 16%;",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -34817,7 +35568,10 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "teuvo-kohonen"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg": {
         "caption": {
@@ -34841,7 +35595,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -35247,46 +36002,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "geoffrey-hinton",
         "name": {
-          "en": "Geoffrey Hinton",
-          "zh": "杰弗里·辛顿"
+          "zh": "杰弗里·辛顿",
+          "en": "Geoffrey Hinton"
         },
         "role": {
-          "en": "Co-author of deep belief net learning",
-          "zh": "深度置信网络学习共同作者"
+          "zh": "深度置信网络学习共同作者",
+          "en": "Co-author of deep belief net learning"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yee-whye-the",
         "name": {
-          "en": "Yee-Whye The",
-          "zh": "义威·特"
+          "zh": "义威·特",
+          "en": "Yee-Whye The"
         },
         "role": {
-          "en": "DBN co-author",
-          "zh": "DBN 共同作者"
+          "zh": "DBN 共同作者",
+          "en": "DBN co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ruslan-salakhutdinov",
         "name": {
-          "en": "Ruslan Salakhutdinov",
-          "zh": "鲁斯兰·萨拉赫特迪诺夫"
+          "zh": "鲁斯兰·萨拉赫特迪诺夫",
+          "en": "Ruslan Salakhutdinov"
         },
         "role": {
-          "en": "DBN co-author",
-          "zh": "DBN 共同作者"
+          "zh": "DBN 共同作者",
+          "en": "DBN co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -35325,7 +36086,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "geoffrey-hinton"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg": {
         "caption": {
@@ -35349,7 +36113,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg": {
         "caption": {
@@ -35373,7 +36138,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -35747,46 +36513,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "shun-ichi-amari",
         "name": {
-          "en": "Shun'ichi Amari",
-          "zh": "甘利俊一"
+          "zh": "甘利俊一",
+          "en": "Shun'ichi Amari"
         },
         "role": {
-          "en": "Early contributor to adaptive neural learning",
-          "zh": "自适应神经学习早期贡献者"
+          "zh": "自适应神经学习早期贡献者",
+          "en": "Early contributor to adaptive neural learning"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "david-rumelhart",
         "name": {
-          "en": "David Rumelhart",
-          "zh": "大卫·鲁梅尔哈特"
+          "zh": "大卫·鲁梅尔哈特",
+          "en": "David Rumelhart"
         },
         "role": {
-          "en": "Co-author of the 1986 back-propagation paper",
-          "zh": "1986 年反向传播论文共同作者"
+          "zh": "1986 年反向传播论文共同作者",
+          "en": "Co-author of the 1986 back-propagation paper"
         },
         "avatar": "resources/images/figures/david-rumelhart.jpg",
         "avatarStyle": "transform: scale(1.28); transform-origin: 50% 35%;",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ronald-williams",
         "name": {
-          "en": "Ronald Williams",
-          "zh": "罗纳德·威廉姆斯"
+          "zh": "罗纳德·威廉姆斯",
+          "en": "Ronald Williams"
         },
         "role": {
-          "en": "Backpropagation co-author",
-          "zh": "BP算法共同作者"
+          "zh": "BP算法共同作者",
+          "en": "Backpropagation co-author"
         },
         "avatar": "resources/images/figures/ronald-williams.jpg",
         "avatarStyle": "transform: scale(1.16); transform-origin: 50% 36%;",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -35823,7 +36595,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "david-rumelhart"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg": {
         "caption": {
@@ -35847,7 +36622,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -36257,46 +37033,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "kunihiko-fukushima",
         "name": {
-          "en": "Kunihiko Fukushima",
-          "zh": "福岛邦彦"
+          "zh": "福岛邦彦",
+          "en": "Kunihiko Fukushima"
         },
         "role": {
-          "en": "Early neural vision researcher",
-          "zh": "早期神经视觉研究者"
+          "zh": "早期神经视觉研究者",
+          "en": "Early neural vision researcher"
         },
         "avatar": "resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "xavier-glorot",
         "name": {
-          "en": "Xavier Glorot",
-          "zh": "泽维尔·格洛罗"
+          "zh": "泽维尔·格洛罗",
+          "en": "Xavier Glorot"
         },
         "role": {
-          "en": "ReLU co-author",
-          "zh": "ReLU 共同作者"
+          "zh": "ReLU 共同作者",
+          "en": "ReLU co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yoshua-bengio",
         "name": {
-          "en": "Yoshua Bengio",
-          "zh": "约书亚·本吉奥"
+          "zh": "约书亚·本吉奥",
+          "en": "Yoshua Bengio"
         },
         "role": {
-          "en": "Co-author of later deep rectifier analysis",
-          "zh": "后续深度整流函数分析共同作者"
+          "zh": "后续深度整流函数分析共同作者",
+          "en": "Co-author of later deep rectifier analysis"
         },
         "avatar": "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -36341,7 +37123,10 @@ const milestones = [
           "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "kunihiko-fukushima"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg": {
         "caption": {
@@ -36365,7 +37150,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg": {
         "caption": {
@@ -36395,7 +37181,10 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yoshua-bengio"
+        ]
       }
     },
     "achievement": {
@@ -36824,32 +37613,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "diederik-kingma",
         "name": {
-          "en": "Diederik Kingma",
-          "zh": "迪德里克·P·金马"
+          "zh": "迪德里克·P·金马",
+          "en": "Diederik Kingma"
         },
         "role": {
-          "en": "Co-author of Adam",
-          "zh": "Adam 共同作者"
+          "zh": "Adam 共同作者",
+          "en": "Co-author of Adam"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jimmy-ba",
         "name": {
-          "en": "Jimmy Ba",
-          "zh": "吉米·巴"
+          "zh": "吉米·巴",
+          "en": "Jimmy Ba"
         },
         "role": {
-          "en": "Co-author of Adam",
-          "zh": "Adam 共同作者"
+          "zh": "Adam 共同作者",
+          "en": "Co-author of Adam"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -36888,7 +37681,10 @@ const milestones = [
           }
         },
         "role": "source-card",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "diederik-kingma"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2014-adam_moment-traces.svg": {
         "caption": {
@@ -36912,7 +37708,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg": {
         "caption": {
@@ -36936,7 +37733,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -37314,45 +38112,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "nitish-srivastava",
         "name": {
-          "en": "Nitish Srivastava",
-          "zh": "尼蒂什·斯里瓦斯塔瓦"
+          "zh": "尼蒂什·斯里瓦斯塔瓦",
+          "en": "Nitish Srivastava"
         },
         "role": {
-          "en": "First author of the JMLR dropout paper",
-          "zh": "《机器学习研究杂志》 Dropout 论文第一作者"
+          "zh": "《机器学习研究杂志》 Dropout 论文第一作者",
+          "en": "First author of the JMLR dropout paper"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ruslan-salakhutdinov",
         "name": {
-          "en": "Ruslan Salakhutdinov",
-          "zh": "鲁斯兰·萨拉赫特迪诺夫"
+          "zh": "鲁斯兰·萨拉赫特迪诺夫",
+          "en": "Ruslan Salakhutdinov"
         },
         "role": {
-          "en": "Dropout co-author",
-          "zh": "Dropout 共同作者"
+          "zh": "Dropout 共同作者",
+          "en": "Dropout co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "geoffrey-hinton",
         "name": {
-          "en": "Geoffrey Hinton",
-          "zh": "杰弗里·辛顿"
+          "zh": "杰弗里·辛顿",
+          "en": "Geoffrey Hinton"
         },
         "role": {
-          "en": "Co-author and deep learning pioneer",
-          "zh": "共同作者，深度学习先驱"
+          "zh": "共同作者，深度学习先驱",
+          "en": "Co-author and deep learning pioneer"
         },
         "avatar": "resources/images/figures/geoffrey-hinton.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -37391,7 +38196,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "nitish-srivastava"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2014-dropout_random-mask.svg": {
         "caption": {
@@ -37415,7 +38223,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2014-dropout_ensemble-average.svg": {
         "caption": {
@@ -37439,7 +38248,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -37820,32 +38630,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "sergey-ioffe",
         "name": {
-          "en": "Sergey Ioffe",
-          "zh": "谢尔盖·约费"
+          "zh": "谢尔盖·约费",
+          "en": "Sergey Ioffe"
         },
         "role": {
-          "en": "Co-author of Batch Normalization",
-          "zh": "批归一化共同作者"
+          "zh": "批归一化共同作者",
+          "en": "Co-author of Batch Normalization"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "christian-szegedy",
         "name": {
-          "en": "Christian Szegedy",
-          "zh": "克里斯蒂安·塞格迪"
+          "zh": "克里斯蒂安·塞格迪",
+          "en": "Christian Szegedy"
         },
         "role": {
-          "en": "Co-author of Batch Normalization",
-          "zh": "批归一化共同作者"
+          "zh": "批归一化共同作者",
+          "en": "Co-author of Batch Normalization"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -37882,7 +38696,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "christian-szegedy"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg": {
         "caption": {
@@ -37906,7 +38723,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -38312,18 +39130,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "kunihiko-fukushima",
         "name": {
-          "en": "Kunihiko Fukushima",
-          "zh": "福岛邦彦"
+          "zh": "福岛邦彦",
+          "en": "Kunihiko Fukushima"
         },
         "role": {
-          "en": "Creator of the neocognitron",
-          "zh": "Neocognitron 提出者"
+          "zh": "Neocognitron 提出者",
+          "en": "Creator of the neocognitron"
         },
         "avatar": "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -38366,7 +39186,10 @@ const milestones = [
           "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "kunihiko-fukushima"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg": {
         "caption": {
@@ -38390,7 +39213,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -38796,18 +39620,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "yann-lecun",
         "name": {
-          "en": "Yann LeCun",
-          "zh": "杨立昆"
+          "zh": "杨立昆",
+          "en": "Yann LeCun"
         },
         "role": {
-          "en": "LeNet lead researcher",
-          "zh": "LeNet 主要研究者"
+          "zh": "LeNet 主要研究者",
+          "en": "LeNet lead researcher"
         },
         "avatar": "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
         "avatarStyle": "transform: scale(2.28); transform-origin: 52% 43%;",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -38861,7 +39687,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yann-lecun"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg": {
         "caption": {
@@ -38885,7 +39714,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg": {
         "caption": {
@@ -38909,7 +39739,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/1989-cnn/yann-lecun-portrait.jpg": {
         "caption": {
@@ -38939,7 +39770,10 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yann-lecun"
+        ]
       },
       "resources/images/1989-cnn/people/1989-cnn_people_02.jpg": {
         "caption": {
@@ -38963,7 +39797,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yann-lecun"
+        ]
       }
     },
     "achievement": {
@@ -39369,45 +40206,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alex-krizhevsky",
         "name": {
-          "en": "Alex Krizhevsky",
-          "zh": "亚历克斯·克里热夫斯基"
+          "zh": "亚历克斯·克里热夫斯基",
+          "en": "Alex Krizhevsky"
         },
         "role": {
-          "en": "AlexNet lead author",
-          "zh": "AlexNet 主要作者"
+          "zh": "AlexNet 主要作者",
+          "en": "AlexNet lead author"
         },
         "avatar": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "geoffrey-hinton",
         "name": {
-          "en": "Geoffrey Hinton",
-          "zh": "杰弗里·辛顿"
+          "zh": "杰弗里·辛顿",
+          "en": "Geoffrey Hinton"
         },
         "role": {
-          "en": "AlexNet co-author and advisor",
-          "zh": "AlexNet 共同作者与导师"
+          "zh": "AlexNet 共同作者与导师",
+          "en": "AlexNet co-author and advisor"
         },
         "avatar": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ilya-sutskever",
         "name": {
-          "en": "Ilya Sutskever",
-          "zh": "伊利亚·苏茨克维"
+          "zh": "伊利亚·苏茨克维",
+          "en": "Ilya Sutskever"
         },
         "role": {
-          "en": "AlexNet co-author",
-          "zh": "AlexNet 共同作者"
+          "zh": "AlexNet 共同作者",
+          "en": "AlexNet co-author"
         },
-        "avatar": "",
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -39469,7 +40313,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "alex-krizhevsky"
+        ]
       },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
         "caption": {
@@ -39493,7 +40340,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png": {
         "caption": {
@@ -39517,7 +40365,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
         "caption": {
@@ -39541,7 +40390,8 @@ const milestones = [
           }
         },
         "role": "source-card",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -39948,32 +40798,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "karen-simonyan",
         "name": {
-          "en": "Karen Simonyan",
-          "zh": "卡伦·西莫尼扬"
+          "zh": "卡伦·西莫尼扬",
+          "en": "Karen Simonyan"
         },
         "role": {
-          "en": "Co-author of the VGG paper",
-          "zh": "VGG 论文共同作者"
+          "zh": "VGG 论文共同作者",
+          "en": "Co-author of the VGG paper"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "andrew-zisserman",
         "name": {
-          "en": "Andrew Zisserman",
-          "zh": "安德鲁·齐瑟曼"
+          "zh": "安德鲁·齐瑟曼",
+          "en": "Andrew Zisserman"
         },
         "role": {
-          "en": "Co-author and Visual Geometry Group lead",
-          "zh": "共同作者，视觉几何组负责人"
+          "zh": "共同作者，视觉几何组负责人",
+          "en": "Co-author and Visual Geometry Group lead"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -40012,7 +40866,10 @@ const milestones = [
           }
         },
         "role": "source-card",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "andrew-zisserman"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg": {
         "caption": {
@@ -40036,7 +40893,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg": {
         "caption": {
@@ -40060,7 +40918,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -40434,45 +41293,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "christian-szegedy",
         "name": {
-          "en": "Christian Szegedy",
-          "zh": "克里斯蒂安·塞格迪"
+          "zh": "克里斯蒂安·塞格迪",
+          "en": "Christian Szegedy"
         },
         "role": {
-          "en": "Lead author of the GoogLeNet paper",
-          "zh": "GoogLeNet 论文第一作者"
+          "zh": "GoogLeNet 论文第一作者",
+          "en": "Lead author of the GoogLeNet paper"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "vincent-vanhoucke",
         "name": {
-          "en": "Vincent Vanhoucke",
-          "zh": "文森特·范霍克"
+          "zh": "文森特·范霍克",
+          "en": "Vincent Vanhoucke"
         },
         "role": {
-          "en": "GooleNet (Inception) co-author",
-          "zh": "GooleNet (Inception) 共同作者"
+          "zh": "GooleNet (Inception) 共同作者",
+          "en": "GooleNet (Inception) co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "google-research-team",
         "name": {
-          "en": "Google research team",
-          "zh": "谷歌 研究团队"
+          "zh": "谷歌 研究团队",
+          "en": "Google research team"
         },
         "role": {
-          "en": "Developed the Inception architecture",
-          "zh": "开发 Inception 架构"
+          "zh": "开发 Inception 架构",
+          "en": "Developed the Inception architecture"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -40511,7 +41377,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "christian-szegedy"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg": {
         "caption": {
@@ -40535,7 +41404,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg": {
         "caption": {
@@ -40559,7 +41429,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -40936,58 +41807,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "kaiming-he",
         "name": {
-          "en": "Kaiming He",
-          "zh": "何恺明"
+          "zh": "何恺明",
+          "en": "Kaiming He"
         },
         "role": {
-          "en": "ResNet lead author",
-          "zh": "ResNet 第一作者"
+          "zh": "ResNet 第一作者",
+          "en": "ResNet lead author"
         },
         "avatar": "resources/images/figures/kaiming-he.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jian-sun",
         "name": {
-          "en": "Jian Sun",
-          "zh": "孙剑"
+          "zh": "孙剑",
+          "en": "Jian Sun"
         },
         "role": {
-          "en": "ResNet co-author and corresponding author",
-          "zh": "ResNet 共同作者与通讯作者"
+          "zh": "ResNet 共同作者与通讯作者",
+          "en": "ResNet co-author and corresponding author"
         },
         "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "xiangyu-zhang",
         "name": {
-          "en": "Xiangyu Zhang",
-          "zh": "张祥雨"
+          "zh": "张祥雨",
+          "en": "Xiangyu Zhang"
         },
         "role": {
-          "en": "ResNet co-author",
-          "zh": "ResNet 共同作者"
+          "zh": "ResNet 共同作者",
+          "en": "ResNet co-author"
         },
         "avatar": "resources/images/2015-resnet/people/2015-resnet_people_03.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "shaoqing-ren",
         "name": {
-          "en": "Shaoqing Ren",
-          "zh": "任少卿"
+          "zh": "任少卿",
+          "en": "Shaoqing Ren"
         },
         "role": {
-          "en": "ResNet co-author",
-          "zh": "ResNet 共同作者"
+          "zh": "ResNet 共同作者",
+          "en": "ResNet co-author"
         },
         "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -41045,7 +41926,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "kaiming-he"
+        ]
       },
       "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png": {
         "caption": {
@@ -41069,7 +41953,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png": {
         "caption": {
@@ -41093,7 +41978,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2015-resnet/people/2015-resnet_people_04.png": {
         "caption": {
@@ -41117,7 +42003,10 @@ const milestones = [
           }
         },
         "role": "team-photo",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "kaiming-he"
+        ]
       },
       "resources/images/2015-resnet/people/2015-resnet_people_03.png": {
         "caption": {
@@ -41141,7 +42030,10 @@ const milestones = [
           }
         },
         "role": "team-photo",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "xiangyu-zhang"
+        ]
       },
       "resources/images/2015-resnet/people/2015-resnet_people_02.png": {
         "caption": {
@@ -41165,7 +42057,10 @@ const milestones = [
           }
         },
         "role": "team-photo",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "shaoqing-ren"
+        ]
       },
       "resources/images/2015-resnet/people/2015-resnet_people_01.png": {
         "caption": {
@@ -41189,7 +42084,10 @@ const milestones = [
           }
         },
         "role": "team-photo",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jian-sun"
+        ]
       }
     },
     "achievement": {
@@ -41595,46 +42493,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "gao-huang",
         "name": {
-          "en": "Gao Huang",
-          "zh": "黄高"
+          "zh": "黄高",
+          "en": "Gao Huang"
         },
         "role": {
-          "en": "DenseNet lead author",
-          "zh": "DenseNet 主要作者"
+          "zh": "DenseNet 主要作者",
+          "en": "DenseNet lead author"
         },
         "avatar": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
         "avatarStyle": "transform: scale(1.72); transform-origin: 46% 28%;",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "zhuang-liu",
         "name": {
-          "en": "Zhuang Liu",
-          "zh": "刘壮"
+          "zh": "刘壮",
+          "en": "Zhuang Liu"
         },
         "role": {
-          "en": "DenseNet co-author",
-          "zh": "DenseNet 共同作者"
+          "zh": "DenseNet 共同作者",
+          "en": "DenseNet co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "kilian-weinberger",
         "name": {
-          "en": "Kilian Weinberger",
-          "zh": "基利安·温伯格"
+          "zh": "基利安·温伯格",
+          "en": "Kilian Weinberger"
         },
         "role": {
-          "en": "DenseNet co-author",
-          "zh": "DenseNet 共同作者"
+          "zh": "DenseNet 共同作者",
+          "en": "DenseNet co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -41684,7 +42588,10 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "gao-huang"
+        ]
       },
       "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png": {
         "caption": {
@@ -41708,7 +42615,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2016-densenet/people/2016-densenet_people_01.png": {
         "caption": {
@@ -41732,7 +42640,12 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "gao-huang",
+          "kilian-weinberger",
+          "zhuang-liu"
+        ]
       }
     },
     "achievement": {
@@ -42142,32 +43055,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "andrew-howard",
         "name": {
-          "en": "Andrew Howard",
-          "zh": "安德鲁·霍华德"
+          "zh": "安德鲁·霍华德",
+          "en": "Andrew Howard"
         },
         "role": {
-          "en": "Mobilenets lead author",
-          "zh": "Mobilenets 主要作者"
+          "zh": "Mobilenets 主要作者",
+          "en": "Mobilenets lead author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "mark-sandler",
         "name": {
-          "en": "Mark Sandler",
-          "zh": "马克·桑德勒"
+          "zh": "马克·桑德勒",
+          "en": "Mark Sandler"
         },
         "role": {
-          "en": "Mobilenets co-author",
-          "zh": "Mobilenets 共同作者"
+          "zh": "Mobilenets 共同作者",
+          "en": "Mobilenets co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -42217,7 +43134,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/ai100-2017-mobilenets/mobilenets-paper-first-page.png": {
         "caption": {
@@ -42251,7 +43169,8 @@ const milestones = [
           "sourceUrl": "https://arxiv.org/pdf/1704.04861"
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/ai100-2017-mobilenets/mobilenets-applications-figure.png": {
         "caption": {
@@ -42285,7 +43204,8 @@ const milestones = [
           "sourceUrl": "https://arxiv.org/e-print/1704.04861"
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -42688,32 +43608,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jie-hu",
         "name": {
-          "en": "Jie Hu",
-          "zh": "胡杰"
+          "zh": "胡杰",
+          "en": "Jie Hu"
         },
         "role": {
-          "en": "Squeeze-and-excitation lead author",
-          "zh": "挤压与激励网络主要作者"
+          "zh": "挤压与激励网络主要作者",
+          "en": "Squeeze-and-excitation lead author"
         },
         "avatar": "resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "gang-sun",
         "name": {
-          "en": "Gang Sun",
-          "zh": "孙刚"
+          "zh": "孙刚",
+          "en": "Gang Sun"
         },
         "role": {
-          "en": "Squeeze-and-excitation co-author",
-          "zh": "挤压与激励网络共同作者"
+          "zh": "挤压与激励网络共同作者",
+          "en": "Squeeze-and-excitation co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -42760,7 +43684,10 @@ const milestones = [
           "sourceUrl": "resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jie-hu"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2018-2018-squeeze-excitation_process.svg": {
         "caption": {
@@ -42793,7 +43720,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -43212,10 +44140,10 @@ const milestones = [
     },
     "figures": [
       {
-        "figureId": "ross-girshick",
+        "id": "ross-girshick",
         "name": {
-          "en": "Ross Girshick",
-          "zh": "罗斯·格希克"
+          "zh": "罗斯·格希克",
+          "en": "Ross Girshick"
         },
         "role": {
           "zh": "Faster R-CNN 共同作者",
@@ -43224,13 +44152,14 @@ const milestones = [
         "avatar": "resources/images/external/ai100-2014-r-cnn/ross-girshick-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
-        "figureId": "jitendra-malik",
+        "id": "jitendra-malik",
         "name": {
-          "en": "Jitendra Malik",
-          "zh": "吉滕德拉·马利克"
+          "zh": "吉滕德拉·马利克",
+          "en": "Jitendra Malik"
         },
         "role": {
           "zh": "2000 年归一化切分论文共同作者",
@@ -43239,7 +44168,8 @@ const milestones = [
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -43286,7 +44216,10 @@ const milestones = [
           "sourceUrl": "resources/images/external/ai100-2014-r-cnn/ross-girshick-portrait.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ross-girshick"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2014-2014-r-cnn_process.svg": {
         "caption": {
@@ -43319,7 +44252,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -43738,10 +44672,10 @@ const milestones = [
     },
     "figures": [
       {
-        "figureId": "ross-girshick",
+        "id": "ross-girshick",
         "name": {
-          "en": "Ross Girshick",
-          "zh": "罗斯·格希克"
+          "zh": "罗斯·格希克",
+          "en": "Ross Girshick"
         },
         "role": {
           "zh": "Faster R-CNN 共同作者",
@@ -43750,7 +44684,8 @@ const milestones = [
         "avatar": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -43797,7 +44732,10 @@ const milestones = [
           "sourceUrl": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ross-girshick"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2015-2015-fast-r-cnn_process.svg": {
         "caption": {
@@ -43830,7 +44768,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -44249,58 +45188,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "shaoqing-ren",
         "name": {
-          "en": "Shaoqing Ren",
-          "zh": "任少卿"
+          "zh": "任少卿",
+          "en": "Shaoqing Ren"
         },
         "role": {
-          "en": "Co-author of Faster R-CNN",
-          "zh": "Faster R-CNN 共同作者"
+          "zh": "Faster R-CNN 共同作者",
+          "en": "Co-author of Faster R-CNN"
         },
         "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jian-sun",
         "name": {
-          "en": "Jian Sun",
-          "zh": "孙剑"
+          "zh": "孙剑",
+          "en": "Jian Sun"
         },
         "role": {
-          "en": "Co-author of Faster R-CNN",
-          "zh": "Faster R-CNN 共同作者"
+          "zh": "Faster R-CNN 共同作者",
+          "en": "Co-author of Faster R-CNN"
         },
         "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "kaiming-he",
         "name": {
-          "en": "Kaiming He",
-          "zh": "何恺明"
+          "zh": "何恺明",
+          "en": "Kaiming He"
         },
         "role": {
-          "en": "Co-author of Faster R-CNN",
-          "zh": "Faster R-CNN 共同作者"
+          "zh": "Faster R-CNN 共同作者",
+          "en": "Co-author of Faster R-CNN"
         },
         "avatar": "resources/images/figures/kaiming-he.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ross-girshick",
         "name": {
-          "en": "Ross Girshick",
-          "zh": "罗斯·格希克"
+          "zh": "罗斯·格希克",
+          "en": "Ross Girshick"
         },
         "role": {
-          "en": "Co-author of Faster R-CNN",
-          "zh": "Faster R-CNN 共同作者"
+          "zh": "Faster R-CNN 共同作者",
+          "en": "Co-author of Faster R-CNN"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -44346,7 +45295,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "shaoqing-ren"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_rpn-pipeline.svg": {
         "caption": {
@@ -44374,7 +45326,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_detection-output.svg": {
         "caption": {
@@ -44402,7 +45355,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg": {
         "caption": {
@@ -44435,7 +45389,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "kaiming-he"
+        ]
       }
     },
     "achievement": {
@@ -44845,34 +45802,36 @@ const milestones = [
     },
     "figures": [
       {
-        "figureId": "kaiming-he",
+        "id": "kaiming-he",
         "name": {
-          "en": "Kaiming He",
-          "zh": "何恺明"
+          "zh": "何恺明",
+          "en": "Kaiming He"
         },
         "role": {
-          "en": "Mask R-CNN lead author",
-          "zh": "Mask R-CNN 主要作者"
+          "zh": "Mask R-CNN 主要作者",
+          "en": "Mask R-CNN lead author"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
-        "figureId": "ross-girshick",
+        "id": "ross-girshick",
         "name": {
-          "en": "Ross Girshick",
-          "zh": "罗斯·格希克"
+          "zh": "罗斯·格希克",
+          "en": "Ross Girshick"
         },
         "role": {
           "zh": "Faster R-CNN 共同作者",
           "en": "Co-author of Faster R-CNN"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -44919,7 +45878,10 @@ const milestones = [
           "sourceUrl": "https://people.csail.mit.edu/kaiming/"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "kaiming-he"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2017-2017-mask-r-cnn_process.svg": {
         "caption": {
@@ -44952,7 +45914,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -45371,47 +46334,52 @@ const milestones = [
     },
     "figures": [
       {
-        "figureId": "tsung-yi-lin",
+        "id": "tsung-yi-lin",
         "name": {
-          "en": "Tsung-Yi Lin",
-          "zh": "林宗毅"
+          "zh": "林宗毅",
+          "en": "Tsung-Yi Lin"
         },
         "role": {
-          "en": "FPN and RetinaNet lead author",
-          "zh": "FPN 与 RetinaNet 主要作者"
+          "zh": "FPN 与 RetinaNet 主要作者",
+          "en": "FPN and RetinaNet lead author"
         },
         "avatar": "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "serge-belongie",
         "name": {
-          "en": "Serge Belongie",
-          "zh": "塞尔日·贝隆吉"
+          "zh": "塞尔日·贝隆吉",
+          "en": "Serge Belongie"
         },
         "role": {
-          "en": "FPN (RetinaNet) co-author",
-          "zh": "FPN (RetinaNet) 共同作者"
+          "zh": "FPN (RetinaNet) 共同作者",
+          "en": "FPN (RetinaNet) co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "piotr-dollar",
         "name": {
-          "en": "Piotr Dollar",
-          "zh": "彼得·多拉尔"
+          "zh": "彼得·多拉尔",
+          "en": "Piotr Dollar"
         },
         "role": {
-          "en": "FPN (RetinaNet) co-author",
-          "zh": "FPN (RetinaNet) 共同作者"
+          "zh": "FPN (RetinaNet) 共同作者",
+          "en": "FPN (RetinaNet) co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -45458,7 +46426,10 @@ const milestones = [
           "sourceUrl": "https://tsungyilin.info/"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "tsung-yi-lin"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2017-2017-fpn-retinanet_process.svg": {
         "caption": {
@@ -45491,7 +46462,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -45910,32 +46882,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "joseph-redmon",
         "name": {
-          "en": "Joseph Redmon",
-          "zh": "约瑟夫·雷德蒙"
+          "zh": "约瑟夫·雷德蒙",
+          "en": "Joseph Redmon"
         },
         "role": {
-          "en": "First author of YOLO",
-          "zh": "YOLO 第一作者"
+          "zh": "YOLO 第一作者",
+          "en": "First author of YOLO"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ali-farhadi",
         "name": {
-          "en": "Ali Farhadi",
-          "zh": "阿里·法哈迪"
+          "zh": "阿里·法哈迪",
+          "en": "Ali Farhadi"
         },
         "role": {
-          "en": "Co-author of YOLO",
-          "zh": "YOLO 共同作者"
+          "zh": "YOLO 共同作者",
+          "en": "Co-author of YOLO"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -45974,7 +46950,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "joseph-redmon"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2016-yolo_grid-detector.svg": {
         "caption": {
@@ -45998,7 +46977,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2016-yolo_single-pass.svg": {
         "caption": {
@@ -46022,7 +47002,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -46403,32 +47384,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "wei-liu",
         "name": {
-          "en": "Wei Liu",
-          "zh": "刘威"
+          "zh": "刘威",
+          "en": "Wei Liu"
         },
         "role": {
-          "en": "SSD lead author",
-          "zh": "SSD 主要作者"
+          "zh": "SSD 主要作者",
+          "en": "SSD lead author"
         },
         "avatar": "resources/images/external/ai100-2016-ssd/wei-liu-portrait.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "alexander-berg",
         "name": {
-          "en": "Alexander Berg",
-          "zh": "亚历山大·伯格"
+          "zh": "亚历山大·伯格",
+          "en": "Alexander Berg"
         },
         "role": {
-          "en": "SSD co-author",
-          "zh": "SSD 共同作者"
+          "zh": "SSD 共同作者",
+          "en": "SSD co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -46475,7 +47460,10 @@ const milestones = [
           "sourceUrl": "resources/images/external/ai100-2016-ssd/wei-liu-portrait.png"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "wei-liu"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2016-2016-ssd_process.svg": {
         "caption": {
@@ -46508,7 +47496,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -46927,46 +47916,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jonathan-long",
         "name": {
-          "en": "Jonathan Long",
-          "zh": "乔纳森·朗"
+          "zh": "乔纳森·朗",
+          "en": "Jonathan Long"
         },
         "role": {
-          "en": "FCN lead author",
-          "zh": "FCN 主要作者"
+          "zh": "FCN 主要作者",
+          "en": "FCN lead author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "evan-shelhamer",
         "name": {
-          "en": "Evan Shelhamer",
-          "zh": "埃文·谢尔哈默"
+          "zh": "埃文·谢尔哈默",
+          "en": "Evan Shelhamer"
         },
         "role": {
-          "en": "FCN co-author",
-          "zh": "FCN 共同作者"
+          "zh": "FCN 共同作者",
+          "en": "FCN co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "trevor-darrell",
         "name": {
-          "en": "Trevor Darrell",
-          "zh": "特雷弗·达雷尔"
+          "zh": "特雷弗·达雷尔",
+          "en": "Trevor Darrell"
         },
         "role": {
-          "en": "FCN co-author",
-          "zh": "FCN 共同作者"
+          "zh": "FCN 共同作者",
+          "en": "FCN co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -47014,7 +48009,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/ai100-2015-fcn/fcn-paper-first-page.png": {
         "caption": {
@@ -47048,7 +48044,8 @@ const milestones = [
           "sourceUrl": "https://arxiv.org/pdf/1411.4038"
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -47451,45 +48448,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "olaf-ronneberger",
         "name": {
-          "en": "Olaf Ronneberger",
-          "zh": "奥拉夫·龙讷贝格"
+          "zh": "奥拉夫·龙讷贝格",
+          "en": "Olaf Ronneberger"
         },
         "role": {
-          "en": "Co-author of U-Net",
-          "zh": "U-Net 共同作者"
+          "zh": "U-Net 共同作者",
+          "en": "Co-author of U-Net"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "thomas-brox",
         "name": {
-          "en": "Thomas Brox",
-          "zh": "托马斯·布洛克斯"
+          "zh": "托马斯·布洛克斯",
+          "en": "Thomas Brox"
         },
         "role": {
-          "en": "Co-author of U-Net",
-          "zh": "U-Net 共同作者"
+          "zh": "U-Net 共同作者",
+          "en": "Co-author of U-Net"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "philipp-fischer",
         "name": {
-          "en": "Philipp Fischer",
-          "zh": "菲利普·菲舍尔"
+          "zh": "菲利普·菲舍尔",
+          "en": "Philipp Fischer"
         },
         "role": {
-          "en": "Co-author of U-Net",
-          "zh": "U-Net 共同作者"
+          "zh": "U-Net 共同作者",
+          "en": "Co-author of U-Net"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -47528,7 +48532,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "olaf-ronneberger"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg": {
         "caption": {
@@ -47552,7 +48559,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg": {
         "caption": {
@@ -47576,7 +48584,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -47953,32 +48962,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "sepp-hochreiter",
         "name": {
-          "en": "Sepp Hochreiter",
-          "zh": "塞普·霍赫赖特"
+          "zh": "塞普·霍赫赖特",
+          "en": "Sepp Hochreiter"
         },
         "role": {
-          "en": "LSTM co-author",
-          "zh": "LSTM 共同作者"
+          "zh": "LSTM 共同作者",
+          "en": "LSTM co-author"
         },
         "avatar": "resources/images/figures/sepp-hochreiter.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "juergen-schmidhuber",
         "name": {
-          "en": "Juergen Schmidhuber",
-          "zh": "尤尔根·施密德胡伯"
+          "zh": "尤尔根·施密德胡伯",
+          "en": "Jürgen Schmidhuber"
         },
         "role": {
-          "en": "LSTM co-author",
-          "zh": "LSTM 共同作者"
+          "zh": "LSTM 共同作者",
+          "en": "LSTM co-author"
         },
         "avatar": "resources/images/1997-lstm/people/1997-lstm_people_01.png",
         "avatarStyle": "transform: scale(1.08); transform-origin: 50% 42%;",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -48032,7 +49045,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "sepp-hochreiter"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg": {
         "caption": {
@@ -48056,7 +49072,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
         "caption": {
@@ -48080,7 +49097,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png": {
         "caption": {
@@ -48104,7 +49122,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1997-lstm/people/1997-lstm_people_01.png": {
         "caption": {
@@ -48128,7 +49147,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "juergen-schmidhuber"
+        ]
       }
     },
     "achievement": {
@@ -48538,61 +49560,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "kyunghyun-cho",
         "name": {
-          "en": "Kyunghyun Cho",
-          "zh": "赵京贤"
+          "zh": "赵京贤",
+          "en": "Kyunghyun Cho"
         },
         "role": {
-          "en": "Neural attention paper co-author",
-          "zh": "神经注意力论文共同作者"
+          "zh": "神经注意力论文共同作者",
+          "en": "Neural attention paper co-author"
         },
         "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
-        "figureId": "yoshua-bengio",
+        "id": "yoshua-bengio",
         "name": {
-          "en": "Yoshua Bengio",
-          "zh": "约书亚·本吉奥"
+          "zh": "约书亚·本吉奥",
+          "en": "Yoshua Bengio"
         },
         "role": {
-          "en": "RNN encoder-decoder co-author",
-          "zh": "RNN 编码器—解码器共同作者"
+          "zh": "RNN 编码器—解码器共同作者",
+          "en": "RNN encoder-decoder co-author"
         },
         "avatar": "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ilya-sutskever",
         "name": {
-          "en": "Ilya Sutskever",
-          "zh": "伊利亚·苏茨克维"
+          "zh": "伊利亚·苏茨克维",
+          "en": "Ilya Sutskever"
         },
         "role": {
-          "en": "AlexNet co-author",
-          "zh": "AlexNet 共同作者"
+          "zh": "AlexNet 共同作者",
+          "en": "AlexNet co-author"
+        },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "quoc-v-le",
+        "name": {
+          "zh": "黎国辉",
+          "en": "Quoc V. Le"
+        },
+        "role": {
+          "zh": "Seq2Seq 共同作者",
+          "en": "Seq2Seq co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
-      },
-      {
-        "name": {
-          "en": "Quoc V. Le",
-          "zh": "黎国辉"
-        },
-        "role": {
-          "en": "Seq2Seq co-author",
-          "zh": "Seq2Seq 共同作者"
-        },
-        "avatar": "",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -48639,7 +49668,10 @@ const milestones = [
           "sourceUrl": "https://mila.quebec/en/directory/yoshua-bengio"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yoshua-bengio"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2014-2014-seq2seq_process.svg": {
         "caption": {
@@ -48672,7 +49704,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -49091,86 +50124,100 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "dzmitry-bahdanau",
         "name": {
-          "en": "Dzmitry Bahdanau",
-          "zh": "兹米特里·巴赫达瑙"
+          "zh": "兹米特里·巴赫达瑙",
+          "en": "Dzmitry Bahdanau"
         },
         "role": {
-          "en": "Lead author of neural attention paper",
-          "zh": "神经注意力论文主要作者"
+          "zh": "神经注意力论文主要作者",
+          "en": "Lead author of neural attention paper"
         },
         "avatar": "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yoshua-bengio",
         "name": {
-          "en": "Yoshua Bengio",
-          "zh": "约书亚·本吉奥"
+          "zh": "约书亚·本吉奥",
+          "en": "Yoshua Bengio"
         },
         "role": {
-          "en": "Neural attention paper co-author",
-          "zh": "神经注意力论文共同作者"
+          "zh": "神经注意力论文共同作者",
+          "en": "Neural attention paper co-author"
         },
         "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "minh-thang-luong",
         "name": {
-          "en": "Minh-Thang Luong",
-          "zh": "明唐·梁"
+          "zh": "明唐·梁",
+          "en": "Minh-Thang Luong"
         },
         "role": {
-          "en": "Attention-related achievement contributor",
-          "zh": "注意力相关成就贡献者"
+          "zh": "注意力相关成就贡献者",
+          "en": "Attention-related achievement contributor"
         },
+        "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       },
       {
+        "id": "christopher-manning",
         "name": {
-          "en": "Christopher Manning",
-          "zh": "克里斯托弗·曼宁"
+          "zh": "克里斯托弗·曼宁",
+          "en": "Christopher Manning"
         },
         "role": {
-          "en": "Attention-related achievement contributor",
-          "zh": "注意力相关成就贡献者"
+          "zh": "注意力相关成就贡献者",
+          "en": "Attention-related achievement contributor"
         },
         "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       },
       {
+        "id": "kelvin-xu",
         "name": {
-          "en": "Kelvin Xu",
-          "zh": "徐凯文"
+          "zh": "徐凯文",
+          "en": "Kelvin Xu"
         },
         "role": {
-          "en": "Attention-related achievement contributor",
-          "zh": "注意力相关成就贡献者"
+          "zh": "注意力相关成就贡献者",
+          "en": "Attention-related achievement contributor"
         },
+        "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       },
       {
+        "id": "kyunghyun-cho",
         "name": {
-          "en": "Kyunghyun Cho",
-          "zh": "赵京贤"
+          "zh": "赵京贤",
+          "en": "Kyunghyun Cho"
         },
         "role": {
-          "en": "Neural attention paper co-author",
-          "zh": "神经注意力论文共同作者"
+          "zh": "神经注意力论文共同作者",
+          "en": "Neural attention paper co-author"
         },
         "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -49232,7 +50279,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "dzmitry-bahdanau"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg": {
         "caption": {
@@ -49256,7 +50306,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/2014-attention/architecture/2014-attention_architecture_01.png": {
         "caption": {
@@ -49280,7 +50331,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg": {
         "caption": {
@@ -49312,7 +50364,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "kyunghyun-cho"
+        ]
       },
       "resources/images/2014-attention/people/2014-attention_people_01.png": {
         "caption": {
@@ -49336,7 +50391,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yoshua-bengio"
+        ]
       }
     },
     "achievement": {
@@ -49743,102 +50801,116 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "ashish-vaswani",
         "name": {
-          "en": "Ashish Vaswani",
-          "zh": "阿希什·瓦斯瓦尼"
+          "zh": "阿希什·瓦斯瓦尼",
+          "en": "Ashish Vaswani"
         },
         "role": {
-          "en": "Transformer lead author",
-          "zh": "Transformer 主要作者"
+          "zh": "Transformer 主要作者",
+          "en": "Transformer lead author"
         },
         "avatar": "resources/images/figures/ashish-vaswani.jpg",
         "avatarStyle": "transform: scale(2.05); transform-origin: 50% 33%;",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "noam-shazeer",
         "name": {
-          "en": "Noam Shazeer",
-          "zh": "诺姆·沙泽尔"
+          "zh": "诺姆·沙泽尔",
+          "en": "Noam Shazeer"
         },
         "role": {
-          "en": "Transformer co-author",
-          "zh": "Transformer 共同作者"
+          "zh": "Transformer 共同作者",
+          "en": "Transformer co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "niki-parmar",
         "name": {
-          "en": "Niki Parmar",
-          "zh": "妮基·帕尔马"
+          "zh": "妮基·帕尔马",
+          "en": "Niki Parmar"
         },
         "role": {
-          "en": "Transformer co-author",
-          "zh": "Transformer 共同作者"
+          "zh": "Transformer 共同作者",
+          "en": "Transformer co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jakob-uszkoreit",
         "name": {
-          "en": "Jakob Uszkoreit",
-          "zh": "雅各布·乌斯科雷特"
+          "zh": "雅各布·乌斯科雷特",
+          "en": "Jakob Uszkoreit"
         },
         "role": {
-          "en": "Transformer co-author",
-          "zh": "Transformer 共同作者"
+          "zh": "Transformer 共同作者",
+          "en": "Transformer co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "llion-jones",
         "name": {
-          "en": "Llion Jones",
-          "zh": "利昂·琼斯"
+          "zh": "利昂·琼斯",
+          "en": "Llion Jones"
         },
         "role": {
-          "en": "Transformer co-author",
-          "zh": "Transformer 共同作者"
+          "zh": "Transformer 共同作者",
+          "en": "Transformer co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "aidan-gomez",
         "name": {
-          "en": "Aidan Gomez",
-          "zh": "艾丹·戈麦斯"
+          "zh": "艾丹·戈麦斯",
+          "en": "Aidan Gomez"
         },
         "role": {
-          "en": "Transformer co-author",
-          "zh": "Transformer 共同作者"
+          "zh": "Transformer 共同作者",
+          "en": "Transformer co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "lukasz-kaiser",
         "name": {
-          "en": "Lukasz Kaiser",
-          "zh": "卢卡什·凯泽"
+          "zh": "卢卡什·凯泽",
+          "en": "Lukasz Kaiser"
         },
         "role": {
-          "en": "Transformer co-author",
-          "zh": "Transformer 共同作者"
+          "zh": "Transformer 共同作者",
+          "en": "Transformer co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -49892,7 +50964,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ashish-vaswani"
+        ]
       },
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png": {
         "caption": {
@@ -49916,7 +50991,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2017-transformer/papers/2017-transformer_papers_01.png": {
         "caption": {
@@ -49940,7 +51016,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
         "caption": {
@@ -49964,7 +51041,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg": {
         "caption": {
@@ -49988,7 +51066,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -50400,32 +51479,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jacob-devlin",
         "name": {
-          "en": "Jacob Devlin",
-          "zh": "雅各布·德夫林"
+          "zh": "雅各布·德夫林",
+          "en": "Jacob Devlin"
         },
         "role": {
-          "en": "BERT lead author",
-          "zh": "BERT 主要作者"
+          "zh": "BERT 主要作者",
+          "en": "BERT lead author"
         },
         "avatar": "resources/images/figures/jacob-devlin.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "kristina-toutanova",
         "name": {
-          "en": "Kristina Toutanova",
-          "zh": "克里斯蒂娜·图塔诺娃"
+          "zh": "克里斯蒂娜·图塔诺娃",
+          "en": "Kristina Toutanova"
         },
         "role": {
-          "en": "BERT co-author",
-          "zh": "BERT 共同作者"
+          "zh": "BERT 共同作者",
+          "en": "BERT co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -50477,7 +51560,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jacob-devlin"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg": {
         "caption": {
@@ -50501,7 +51587,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg": {
         "caption": {
@@ -50525,7 +51612,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2018-bert/architecture/2018-bert_architecture_02.png": {
         "caption": {
@@ -50549,7 +51637,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -50955,116 +52044,132 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alec-radford",
         "name": {
-          "en": "Alec Radford",
-          "zh": "亚历克·拉德福德"
+          "zh": "亚历克·拉德福德",
+          "en": "Alec Radford"
         },
         "role": {
-          "en": "GPT lead author",
-          "zh": "GPT 主要作者"
+          "zh": "GPT 主要作者",
+          "en": "GPT lead author"
         },
         "avatar": "resources/images/figures/alec-radford.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ilya-sutskever",
         "name": {
-          "en": "Ilya Sutskever",
-          "zh": "伊利亚·苏茨克维"
+          "zh": "伊利亚·苏茨克维",
+          "en": "Ilya Sutskever"
         },
         "role": {
-          "en": "AlexNet co-author",
-          "zh": "AlexNet 共同作者"
+          "zh": "AlexNet 共同作者",
+          "en": "AlexNet co-author"
+        },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "jeffrey-wu",
+        "name": {
+          "zh": "杰弗里·吴",
+          "en": "Jeffrey Wu"
+        },
+        "role": {
+          "zh": "GPT 共同作者",
+          "en": "GPT co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "dario-amodei",
         "name": {
-          "en": "Jeffrey Wu",
-          "zh": "杰弗里·吴"
+          "zh": "达里奥·阿莫代",
+          "en": "Dario Amodei"
         },
         "role": {
-          "en": "GPT co-author",
-          "zh": "GPT 共同作者"
+          "zh": "GPT 共同作者",
+          "en": "GPT co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "tom-brown",
         "name": {
-          "en": "Dario Amodei",
-          "zh": "达里奥·阿莫代"
+          "zh": "汤姆·布朗",
+          "en": "Tom Brown"
         },
         "role": {
-          "en": "GPT co-author",
-          "zh": "GPT 共同作者"
+          "zh": "GPT 共同作者",
+          "en": "GPT co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "benjamin-mann",
         "name": {
-          "en": "Tom Brown",
-          "zh": "汤姆·布朗"
+          "zh": "本杰明·曼",
+          "en": "Benjamin Mann"
         },
         "role": {
-          "en": "GPT co-author",
-          "zh": "GPT 共同作者"
+          "zh": "GPT 共同作者",
+          "en": "GPT co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "nick-ryder",
         "name": {
-          "en": "Benjamin Mann",
-          "zh": "本杰明·曼"
+          "zh": "尼克·赖德",
+          "en": "Nick Ryder"
         },
         "role": {
-          "en": "GPT co-author",
-          "zh": "GPT 共同作者"
+          "zh": "GPT 共同作者",
+          "en": "GPT co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "melanie-subbiah",
         "name": {
-          "en": "Nick Ryder",
-          "zh": "尼克·赖德"
+          "zh": "梅拉妮·苏比亚",
+          "en": "Melanie Subbiah"
         },
         "role": {
-          "en": "GPT co-author",
-          "zh": "GPT 共同作者"
+          "zh": "GPT 共同作者",
+          "en": "GPT co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
-      },
-      {
-        "name": {
-          "en": "Melanie Subbiah",
-          "zh": "梅拉妮·苏比亚"
-        },
-        "role": {
-          "en": "GPT co-author",
-          "zh": "GPT 共同作者"
-        },
-        "avatar": "",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -51118,7 +52223,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "alec-radford"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg": {
         "caption": {
@@ -51142,7 +52250,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg": {
         "caption": {
@@ -51166,7 +52275,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png": {
         "caption": {
@@ -51190,7 +52300,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2018-gpt/historical/2018-gpt_historical_01.png": {
         "caption": {
@@ -51214,7 +52325,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -51604,101 +52716,116 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alexey-dosovitskiy",
         "name": {
-          "en": "Alexey Dosovitskiy",
-          "zh": "阿列克谢·多索维茨基"
+          "zh": "阿列克谢·多索维茨基",
+          "en": "Alexey Dosovitskiy"
         },
         "role": {
-          "en": "Lead author of Vision Transformer",
-          "zh": "视觉 Transformer 主要作者"
+          "zh": "视觉 Transformer 主要作者",
+          "en": "Lead author of Vision Transformer"
         },
         "avatar": "resources/images/external/ai100-2020-vit/alexey-dosovitskiy-portrait.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "lucas-beyer",
         "name": {
-          "en": "Lucas Beyer",
-          "zh": "卢卡斯·拜尔"
+          "zh": "卢卡斯·拜尔",
+          "en": "Lucas Beyer"
         },
         "role": {
-          "en": "ViT co-author",
-          "zh": "ViT 共同作者"
+          "zh": "ViT 共同作者",
+          "en": "ViT co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "alexander-kolesnikov",
         "name": {
-          "en": "Alexander Kolesnikov",
-          "zh": "亚历山大·科列斯尼科夫"
+          "zh": "亚历山大·科列斯尼科夫",
+          "en": "Alexander Kolesnikov"
         },
         "role": {
-          "en": "ViT co-author",
-          "zh": "ViT 共同作者"
+          "zh": "ViT 共同作者",
+          "en": "ViT co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "dirk-weissenborn",
         "name": {
-          "en": "Dirk Weissenborn",
-          "zh": "德克·魏森博恩"
+          "zh": "德克·魏森博恩",
+          "en": "Dirk Weissenborn"
         },
         "role": {
-          "en": "ViT co-author",
-          "zh": "ViT 共同作者"
+          "zh": "ViT 共同作者",
+          "en": "ViT co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "xiaohua-zhai",
         "name": {
-          "en": "Xiaohua Zhai",
-          "zh": "翟晓华"
+          "zh": "翟晓华",
+          "en": "Xiaohua Zhai"
         },
         "role": {
-          "en": "ViT co-author",
-          "zh": "ViT 共同作者"
+          "zh": "ViT 共同作者",
+          "en": "ViT co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "neil-houlsby",
         "name": {
-          "en": "Neil Houlsby",
-          "zh": "尼尔·霍尔斯比"
+          "zh": "尼尔·霍尔斯比",
+          "en": "Neil Houlsby"
         },
         "role": {
-          "en": "ViT co-author",
-          "zh": "ViT 共同作者"
+          "zh": "ViT 共同作者",
+          "en": "ViT co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "google-research",
         "name": {
-          "en": "Google Research",
-          "zh": "Google 研究院"
+          "zh": "Google 研究院",
+          "en": "Google Research"
         },
         "role": {
-          "en": "Research organization",
-          "zh": "研究机构"
+          "zh": "研究机构",
+          "en": "Research organization"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -51741,7 +52868,10 @@ const milestones = [
           "sourceUrl": "https://www.eml-munich.de/team/alexey-dosovitskiy.png"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "alexey-dosovitskiy"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg": {
         "caption": {
@@ -51765,7 +52895,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -52171,60 +53302,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "ze-liu",
         "name": {
-          "en": "Ze Liu",
-          "zh": "刘泽"
+          "zh": "刘泽",
+          "en": "Ze Liu"
         },
         "role": {
-          "en": "Swin Transformer lead author",
-          "zh": "Swin Transformer 主要作者"
+          "zh": "Swin Transformer 主要作者",
+          "en": "Swin Transformer lead author"
         },
         "avatar": "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yutong-lin",
         "name": {
-          "en": "Yutong Lin",
-          "zh": "林宇通"
+          "zh": "林宇通",
+          "en": "Yutong Lin"
         },
         "role": {
-          "en": "Swin Transformer co-author",
-          "zh": "Swin Transformer 共同作者"
+          "zh": "Swin Transformer 共同作者",
+          "en": "Swin Transformer co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yue-cao",
         "name": {
-          "en": "Yue Cao",
-          "zh": "曹越"
+          "zh": "曹越",
+          "en": "Yue Cao"
         },
         "role": {
-          "en": "Swin Transformer co-author",
-          "zh": "Swin Transformer 共同作者"
+          "zh": "Swin Transformer 共同作者",
+          "en": "Swin Transformer co-author"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "han-hu",
         "name": {
-          "en": "Han Hu",
-          "zh": "胡瀚"
+          "zh": "胡瀚",
+          "en": "Han Hu"
         },
         "role": {
-          "en": "Swin Transformer co-author",
-          "zh": "Swin Transformer 共同作者"
+          "zh": "Swin Transformer 共同作者",
+          "en": "Swin Transformer co-author"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -52267,7 +53406,10 @@ const milestones = [
           "sourceUrl": "https://zeliu98.github.io/images/zeliu.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ze-liu"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg": {
         "caption": {
@@ -52291,7 +53433,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -52723,18 +53866,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "yoshua-bengio",
         "name": {
-          "en": "Yoshua Bengio",
-          "zh": "约书亚·本吉奥"
+          "zh": "约书亚·本吉奥",
+          "en": "Yoshua Bengio"
         },
         "role": {
-          "en": "Lead author of the neural probabilistic language model",
-          "zh": "神经概率语言模型主要作者"
+          "zh": "神经概率语言模型主要作者",
+          "en": "Lead author of the neural probabilistic language model"
         },
         "avatar": "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -52777,7 +53922,10 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yoshua-bengio"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg": {
         "caption": {
@@ -52801,7 +53949,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -53207,32 +54356,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "tomas-mikolov",
         "name": {
-          "en": "Tomas Mikolov",
-          "zh": "托马斯·米科洛夫"
+          "zh": "托马斯·米科洛夫",
+          "en": "Tomas Mikolov"
         },
         "role": {
-          "en": "Lead author of word2vec papers",
-          "zh": "word2vec 论文主要作者"
+          "zh": "word2vec 论文主要作者",
+          "en": "Lead author of word2vec papers"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jeffrey-dean",
         "name": {
-          "en": "Jeffrey Dean",
-          "zh": "杰弗里·迪恩"
+          "zh": "杰弗里·迪恩",
+          "en": "Jeffrey Dean"
         },
         "role": {
-          "en": "Word2vec co-author",
-          "zh": "Word2vec 共同作者"
+          "zh": "Word2vec 共同作者",
+          "en": "Word2vec co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -53271,7 +54424,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "tomas-mikolov"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2013-word2vec_skipgram-window.svg": {
         "caption": {
@@ -53295,7 +54451,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2013-word2vec_vector-analogy.svg": {
         "caption": {
@@ -53319,7 +54476,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -53700,45 +54858,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jeffrey-pennington",
         "name": {
-          "en": "Jeffrey Pennington",
-          "zh": "杰弗里·彭宁顿"
+          "zh": "杰弗里·彭宁顿",
+          "en": "Jeffrey Pennington"
         },
         "role": {
-          "en": "GloVe lead author",
-          "zh": "GloVe 主要作者"
+          "zh": "GloVe 主要作者",
+          "en": "GloVe lead author"
         },
         "avatar": "resources/images/external/ai100-2014-glove/jeffrey-pennington-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "christopher-manning",
         "name": {
-          "en": "Christopher Manning",
-          "zh": "克里斯托弗·曼宁"
+          "zh": "克里斯托弗·曼宁",
+          "en": "Christopher Manning"
         },
         "role": {
-          "en": "GloVe co-author",
-          "zh": "GloVe 共同作者"
+          "zh": "GloVe 共同作者",
+          "en": "GloVe co-author"
         },
         "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "richard-socher",
         "name": {
-          "en": "Richard Socher",
-          "zh": "理查德·索彻"
+          "zh": "理查德·索彻",
+          "en": "Richard Socher"
         },
         "role": {
-          "en": "GloVe co-author",
-          "zh": "GloVe 共同作者"
+          "zh": "GloVe 共同作者",
+          "en": "GloVe co-author"
         },
         "avatar": "resources/images/external/ai100-2014-glove/richard-socher-portrait.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -53787,7 +54952,10 @@ const milestones = [
           "sourceUrl": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jeffrey-pennington"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg": {
         "caption": {
@@ -53811,7 +54979,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg": {
         "caption": {
@@ -53841,7 +55010,10 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Christopher_Manning_04_(cropped).jpg"
         },
         "role": "supporting-portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "christopher-manning"
+        ]
       },
       "resources/images/external/ai100-2014-glove/christopher-manning-stanford.jpg": {
         "caption": {
@@ -53871,7 +55043,10 @@ const milestones = [
           "sourceUrl": "https://nlp.stanford.edu/~manning/images/Christopher_Manning_027_1154x1154.jpg"
         },
         "role": "supporting-portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "christopher-manning"
+        ]
       },
       "resources/images/external/ai100-2014-glove/richard-socher-portrait.png": {
         "caption": {
@@ -53901,7 +55076,10 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richard_Socher_(born_1983)_at_World_Economic_Forum_Annual_Meeting_2025.png"
         },
         "role": "supporting-portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "richard-socher"
+        ]
       }
     },
     "achievement": {
@@ -54381,32 +55559,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "ian-goodfellow",
         "name": {
-          "en": "Ian Goodfellow",
-          "zh": "伊恩·古德费洛"
+          "zh": "伊恩·古德费洛",
+          "en": "Ian Goodfellow"
         },
         "role": {
-          "en": "GAN lead author",
-          "zh": "GAN 主要作者"
+          "zh": "GAN 主要作者",
+          "en": "GAN lead author"
         },
         "avatar": "resources/images/figures/ian-goodfellow.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yoshua-bengio",
         "name": {
-          "en": "Yoshua Bengio",
-          "zh": "约书亚·本吉奥"
+          "zh": "约书亚·本吉奥",
+          "en": "Yoshua Bengio"
         },
         "role": {
-          "en": "GAN co-author and advisor",
-          "zh": "GAN 共同作者与导师"
+          "zh": "GAN 共同作者与导师",
+          "en": "GAN co-author and advisor"
         },
         "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -54456,7 +55638,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ian-goodfellow"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg": {
         "caption": {
@@ -54480,7 +55665,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/2014-gan/architecture/2014-gan_architecture_01.png": {
         "caption": {
@@ -54504,7 +55690,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -54914,32 +56101,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "mehdi-mirza",
         "name": {
-          "en": "Mehdi Mirza",
-          "zh": "迈赫迪·米尔扎"
+          "zh": "迈赫迪·米尔扎",
+          "en": "Mehdi Mirza"
         },
         "role": {
-          "en": "Conditional GAN lead author",
-          "zh": "Conditional GAN 主要作者"
+          "zh": "Conditional GAN 主要作者",
+          "en": "Conditional GAN lead author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "simon-osindero",
         "name": {
-          "en": "Simon Osindero",
-          "zh": "西蒙·奥辛德罗"
+          "zh": "西蒙·奥辛德罗",
+          "en": "Simon Osindero"
         },
         "role": {
-          "en": "Conditional GAN co-author",
-          "zh": "Conditional GAN 共同作者"
+          "zh": "Conditional GAN 共同作者",
+          "en": "Conditional GAN co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -54982,7 +56173,8 @@ const milestones = [
           "sourceUrl": "https://arxiv.org/pdf/1411.1784"
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg": {
         "caption": {
@@ -55006,7 +56198,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -55438,32 +56631,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alec-radford",
         "name": {
-          "en": "Alec Radford",
-          "zh": "亚历克·拉德福德"
+          "zh": "亚历克·拉德福德",
+          "en": "Alec Radford"
         },
         "role": {
-          "en": "DCGAN lead author",
-          "zh": "DCGAN 主要作者"
+          "zh": "DCGAN 主要作者",
+          "en": "DCGAN lead author"
         },
         "avatar": "resources/images/figures/alec-radford.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "soumith-chintala",
         "name": {
-          "en": "Soumith Chintala",
-          "zh": "苏米特·钦塔拉"
+          "zh": "苏米特·钦塔拉",
+          "en": "Soumith Chintala"
         },
         "role": {
-          "en": "DCGAN co-author",
-          "zh": "DCGAN 共同作者"
+          "zh": "DCGAN 共同作者",
+          "en": "DCGAN co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -55500,7 +56697,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "alec-radford"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg": {
         "caption": {
@@ -55524,7 +56724,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -55956,32 +57157,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "martin-arjovsky",
         "name": {
-          "en": "Martin Arjovsky",
-          "zh": "马丁·阿尔乔夫斯基"
+          "zh": "马丁·阿尔乔夫斯基",
+          "en": "Martin Arjovsky"
         },
         "role": {
-          "en": "Wasserstein GAN lead author",
-          "zh": "Wasserstein GAN 主要作者"
+          "zh": "Wasserstein GAN 主要作者",
+          "en": "Wasserstein GAN lead author"
         },
         "avatar": "resources/images/external/ai100-2017-wasserstein-gan/martin-arjovsky-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "leon-bottou",
         "name": {
-          "en": "Leon Bottou",
-          "zh": "莱昂·博图"
+          "zh": "莱昂·博图",
+          "en": "Leon Bottou"
         },
         "role": {
-          "en": "Wasserstein GAN co-author",
-          "zh": "Wasserstein GAN 共同作者"
+          "zh": "Wasserstein GAN 共同作者",
+          "en": "Wasserstein GAN co-author"
         },
         "avatar": "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait-2025.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -56026,7 +57231,10 @@ const milestones = [
           "sourceUrl": "https://avatars.githubusercontent.com/u/5272722?v=4&s=800"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "martin-arjovsky"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg": {
         "caption": {
@@ -56050,7 +57258,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait-2025.jpg": {
         "caption": {
@@ -56080,7 +57289,10 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_2025_-_L%C3%A9on_Bottou_02.jpg"
         },
         "role": "supporting-portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "leon-bottou"
+        ]
       }
     },
     "achievement": {
@@ -56544,46 +57756,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jun-yan-zhu",
         "name": {
-          "en": "Jun-Yan Zhu",
-          "zh": "朱俊彦"
+          "zh": "朱俊彦",
+          "en": "Jun-Yan Zhu"
         },
         "role": {
-          "en": "CycleGAN lead author",
-          "zh": "CycleGAN 主要作者"
+          "zh": "CycleGAN 主要作者",
+          "en": "CycleGAN lead author"
         },
         "avatar": "resources/images/external/ai100-2017-cyclegan/jun-yan-zhu-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "taesung-park",
         "name": {
-          "en": "Taesung Park",
-          "zh": "朴泰成"
+          "zh": "朴泰成",
+          "en": "Taesung Park"
         },
         "role": {
-          "en": "CycleGAN co-author",
-          "zh": "CycleGAN 共同作者"
+          "zh": "CycleGAN 共同作者",
+          "en": "CycleGAN co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "alexei-efros",
         "name": {
-          "en": "Alexei Efros",
-          "zh": "阿列克谢·埃夫罗斯"
+          "zh": "阿列克谢·埃夫罗斯",
+          "en": "Alexei Efros"
         },
         "role": {
-          "en": "CycleGAN co-author",
-          "zh": "CycleGAN 共同作者"
+          "zh": "CycleGAN 共同作者",
+          "en": "CycleGAN co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -56626,7 +57844,10 @@ const milestones = [
           "sourceUrl": "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jun-yan-zhu"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg": {
         "caption": {
@@ -56650,7 +57871,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -57082,32 +58304,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "phillip-isola",
         "name": {
-          "en": "Phillip Isola",
-          "zh": "菲利普·伊索拉"
+          "zh": "菲利普·伊索拉",
+          "en": "Phillip Isola"
         },
         "role": {
-          "en": "Pix2Pix lead author",
-          "zh": "Pix2Pix 主要作者"
+          "zh": "Pix2Pix 主要作者",
+          "en": "Pix2Pix lead author"
         },
         "avatar": "resources/images/external/ai100-2017-pix2pix/phillip-isola-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "alexei-efros",
         "name": {
-          "en": "Alexei Efros",
-          "zh": "阿列克谢·埃夫罗斯"
+          "zh": "阿列克谢·埃夫罗斯",
+          "en": "Alexei Efros"
         },
         "role": {
-          "en": "Pix2Pix co-author",
-          "zh": "Pix2Pix 共同作者"
+          "zh": "Pix2Pix 共同作者",
+          "en": "Pix2Pix co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -57150,7 +58376,10 @@ const milestones = [
           "sourceUrl": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "phillip-isola"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg": {
         "caption": {
@@ -57174,7 +58403,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -57606,32 +58836,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "tero-karras",
         "name": {
-          "en": "Tero Karras",
-          "zh": "特罗·卡拉斯"
+          "zh": "特罗·卡拉斯",
+          "en": "Tero Karras"
         },
         "role": {
-          "en": "StyleGAN lead author",
-          "zh": "StyleGAN 主要作者"
+          "zh": "StyleGAN 主要作者",
+          "en": "StyleGAN lead author"
         },
         "avatar": "resources/images/external/ai100-2019-stylegan/tero-karras-github.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "timo-aila",
         "name": {
-          "en": "Timo Aila",
-          "zh": "蒂莫·艾拉"
+          "zh": "蒂莫·艾拉",
+          "en": "Timo Aila"
         },
         "role": {
-          "en": "StyleGAN co-author",
-          "zh": "StyleGAN 共同作者"
+          "zh": "StyleGAN 共同作者",
+          "en": "StyleGAN co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -57674,7 +58908,10 @@ const milestones = [
           "sourceUrl": "https://avatars.githubusercontent.com/u/3089181?v=4&s=800"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "tero-karras"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg": {
         "caption": {
@@ -57698,7 +58935,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -58146,32 +59384,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "diederik-kingma",
         "name": {
-          "en": "Diederik Kingma",
-          "zh": "迪德里克·金马"
+          "zh": "迪德里克·P·金马",
+          "en": "Diederik Kingma"
         },
         "role": {
-          "en": "Variational autoencoder co-author",
-          "zh": "变分自编码器共同作者"
+          "zh": "变分自编码器共同作者",
+          "en": "Variational autoencoder co-author"
         },
         "avatar": "resources/images/external/ai100-2013-variational-autoencoder/diederik-kingma-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "max-welling",
         "name": {
-          "en": "Max Welling",
-          "zh": "马克斯·韦林"
+          "zh": "马克斯·韦林",
+          "en": "Max Welling"
         },
         "role": {
-          "en": "Variational autoencoder co-author",
-          "zh": "Variational autoencoder 共同作者"
+          "zh": "Variational autoencoder 共同作者",
+          "en": "Variational autoencoder co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -58214,7 +59456,10 @@ const milestones = [
           "sourceUrl": "https://dpkingma.com/files/portrait.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "diederik-kingma"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg": {
         "caption": {
@@ -58238,7 +59483,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -58670,60 +59916,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jascha-sohl-dickstein",
         "name": {
-          "en": "Jascha Sohl-Dickstein",
-          "zh": "雅沙·索尔-迪克斯坦"
+          "zh": "雅沙·索尔-迪克斯坦",
+          "en": "Jascha Sohl-Dickstein"
         },
         "role": {
-          "en": "Diffusion model lead author",
-          "zh": "扩散模型主要作者"
+          "zh": "扩散模型主要作者",
+          "en": "Diffusion model lead author"
         },
         "avatar": "resources/images/external/ai100-2015-diffusion-model/jascha-sohl-dickstein-portrait.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "surya-ganguli",
         "name": {
-          "en": "Surya Ganguli",
-          "zh": "苏里亚·甘古利"
+          "zh": "苏里亚·甘古利",
+          "en": "Surya Ganguli"
         },
         "role": {
-          "en": "Diffusion Model co-author",
-          "zh": "Diffusion Model 共同作者"
+          "zh": "Diffusion Model 共同作者",
+          "en": "Diffusion Model co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jonathan-ho",
         "name": {
-          "en": "Jonathan Ho",
-          "zh": "乔纳森·何"
+          "zh": "乔纳森·何",
+          "en": "Jonathan Ho"
         },
         "role": {
-          "en": "Diffusion Model co-author",
-          "zh": "Diffusion Model 共同作者"
+          "zh": "Diffusion Model 共同作者",
+          "en": "Diffusion Model co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "pieter-abbee",
         "name": {
-          "en": "Pieter Abbee",
-          "zh": "彼得·阿比尔"
+          "zh": "彼得·阿比尔",
+          "en": "Pieter Abbee"
         },
         "role": {
-          "en": "Diffusion Model co-author",
-          "zh": "Diffusion Model 共同作者"
+          "zh": "Diffusion Model 共同作者",
+          "en": "Diffusion Model co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -58766,7 +60020,10 @@ const milestones = [
           "sourceUrl": "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jascha-sohl-dickstein"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg": {
         "caption": {
@@ -58790,7 +60047,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -59222,45 +60480,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "marco-gori",
         "name": {
-          "en": "Marco Gori",
-          "zh": "马尔科·戈里"
+          "zh": "马尔科·戈里",
+          "en": "Marco Gori"
         },
         "role": {
-          "en": "First author of the 2005 graph neural network paper",
-          "zh": "2005 年图神经网络论文第一作者"
+          "zh": "2005 年图神经网络论文第一作者",
+          "en": "First author of the 2005 graph neural network paper"
         },
         "avatar": "resources/images/external/ai100-2005-gnn/people/marco-gori-university-video-still.jpg",
         "avatarStyle": "transform: scale(1.75); transform-origin: 43% 35%;",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "franco-scarselli",
         "name": {
-          "en": "Franco Scarselli",
-          "zh": "弗兰科·斯卡塞利"
+          "zh": "弗兰科·斯卡塞利",
+          "en": "Franco Scarselli"
         },
         "role": {
-          "en": "Co-author of the 2005 graph neural network paper",
-          "zh": "2005 年图神经网络论文共同作者"
+          "zh": "2005 年图神经网络论文共同作者",
+          "en": "Co-author of the 2005 graph neural network paper"
         },
         "avatar": "resources/images/external/ai100-2005-gnn/franco-scarselli-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "gabriele-monfardini",
         "name": {
-          "en": "Gabriele Monfardini",
-          "zh": "加布里埃莱·蒙法尔迪尼"
+          "zh": "加布里埃莱·蒙法尔迪尼",
+          "en": "Gabriele Monfardini"
         },
         "role": {
-          "en": "Co-author of the 2005 graph neural network paper",
-          "zh": "2005 年图神经网络论文共同作者"
+          "zh": "2005 年图神经网络论文共同作者",
+          "en": "Co-author of the 2005 graph neural network paper"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -59305,7 +60570,10 @@ const milestones = [
           "sourceUrl": "https://www.youtube.com/watch?v=mnyz8r1GLG8"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "marco-gori"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg": {
         "caption": {
@@ -59329,7 +60597,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/ai100-2005-gnn/papers/2005-gnn-unisi-oai-record.png": {
         "caption": {
@@ -59359,7 +60628,8 @@ const milestones = [
           "sourceUrl": "https://usiena-air.unisi.it/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:usiena-air.unisi.it:11365/19137"
         },
         "role": "paper-record",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -59841,32 +61111,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "thomas-kipf",
         "name": {
-          "en": "Thomas Kipf",
-          "zh": "托马斯·基普夫"
+          "zh": "托马斯·基普夫",
+          "en": "Thomas Kipf"
         },
         "role": {
-          "en": "GCN lead author",
-          "zh": "GCN 主要作者"
+          "zh": "GCN 主要作者",
+          "en": "GCN lead author"
         },
         "avatar": "resources/images/external/ai100-2016-gcn/thomas-kipf-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "max-welling",
         "name": {
-          "en": "Max Welling",
-          "zh": "马克斯·韦林"
+          "zh": "马克斯·韦林",
+          "en": "Max Welling"
         },
         "role": {
-          "en": "GCN co-author",
-          "zh": "GCN 共同作者"
+          "zh": "GCN 共同作者",
+          "en": "GCN co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -59909,7 +61183,10 @@ const milestones = [
           "sourceUrl": "https://tkipf.github.io/images/photo.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "thomas-kipf"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg": {
         "caption": {
@@ -59933,7 +61210,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -60365,32 +61643,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "petar-velickovic",
         "name": {
-          "en": "Petar Velickovic",
-          "zh": "佩塔尔·韦利奇科维奇"
+          "zh": "佩塔尔·韦利奇科维奇",
+          "en": "Petar Velickovic"
         },
         "role": {
-          "en": "GAT lead author",
-          "zh": "GAT 主要作者"
+          "zh": "GAT 主要作者",
+          "en": "GAT lead author"
         },
         "avatar": "resources/images/external/ai100-2017-gat/petar-velickovic-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yoshua-bengio",
         "name": {
-          "en": "Yoshua Bengio",
-          "zh": "约书亚·本吉奥"
+          "zh": "约书亚·本吉奥",
+          "en": "Yoshua Bengio"
         },
         "role": {
-          "en": "Neural attention paper co-author",
-          "zh": "神经注意力论文共同作者"
+          "zh": "神经注意力论文共同作者",
+          "en": "Neural attention paper co-author"
         },
         "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -60433,7 +61715,10 @@ const milestones = [
           "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "petar-velickovic"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg": {
         "caption": {
@@ -60457,7 +61742,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -60899,32 +62185,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "barret-zoph",
         "name": {
-          "en": "Barret Zoph",
-          "zh": "巴雷特·佐夫"
+          "zh": "巴雷特·佐夫",
+          "en": "Barret Zoph"
         },
         "role": {
-          "en": "Neural architecture search lead author",
-          "zh": "神经架构搜索主要作者"
+          "zh": "神经架构搜索主要作者",
+          "en": "Neural architecture search lead author"
         },
         "avatar": "resources/images/external/ai100-2016-nas/barret-zoph-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "quoc-v-le",
         "name": {
-          "en": "Quoc V. Le",
-          "zh": "黎国辉"
+          "zh": "黎国辉",
+          "en": "Quoc V. Le"
         },
         "role": {
-          "en": "NAS co-author",
-          "zh": "NAS 共同作者"
+          "zh": "NAS 共同作者",
+          "en": "NAS co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -60967,7 +62257,10 @@ const milestones = [
           "sourceUrl": "https://barretzoph.github.io/images/headshot.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "barret-zoph"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg": {
         "caption": {
@@ -60991,7 +62284,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -61423,32 +62717,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "song-han",
         "name": {
-          "en": "Song Han",
-          "zh": "韩松"
+          "zh": "韩松",
+          "en": "Song Han"
         },
         "role": {
-          "en": "Deep Compression lead author",
-          "zh": "Deep Compression 主要作者"
+          "zh": "Deep Compression 主要作者",
+          "en": "Deep Compression lead author"
         },
         "avatar": "resources/images/external/ai100-2015-deep-compression/song-han-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "william-dally",
         "name": {
-          "en": "William Dally",
-          "zh": "威廉·达利"
+          "zh": "威廉·达利",
+          "en": "William Dally"
         },
         "role": {
-          "en": "Deep compression co-author",
-          "zh": "Deep compression 共同作者"
+          "zh": "Deep compression 共同作者",
+          "en": "Deep compression co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -61491,7 +62789,10 @@ const milestones = [
           "sourceUrl": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "song-han"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg": {
         "caption": {
@@ -61515,7 +62816,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -61957,46 +63259,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "geoffrey-hinton",
         "name": {
-          "en": "Geoffrey Hinton",
-          "zh": "杰弗里·辛顿"
+          "zh": "杰弗里·辛顿",
+          "en": "Geoffrey Hinton"
         },
         "role": {
-          "en": "Knowledge distillation co-author",
-          "zh": "知识蒸馏共同作者"
+          "zh": "知识蒸馏共同作者",
+          "en": "Knowledge distillation co-author"
         },
         "avatar": "resources/images/figures/geoffrey-hinton.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "oriol-vinyals",
         "name": {
-          "en": "Oriol Vinyals",
-          "zh": "奥里奥尔·维尼亚尔斯"
+          "zh": "奥里奥尔·维尼亚尔斯",
+          "en": "Oriol Vinyals"
         },
         "role": {
-          "en": "knowledge distillation co-author",
-          "zh": "knowledge distillation 共同作者"
+          "zh": "knowledge distillation 共同作者",
+          "en": "knowledge distillation co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jeff-dean",
         "name": {
-          "en": "Jeff Dean",
-          "zh": "杰夫·迪恩"
+          "zh": "杰夫·迪恩",
+          "en": "Jeff Dean"
         },
         "role": {
-          "en": "knowledge distillation co-author",
-          "zh": "knowledge distillation 共同作者"
+          "zh": "knowledge distillation 共同作者",
+          "en": "knowledge distillation co-author"
         },
-        "avatar": "",
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -62033,7 +63341,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "geoffrey-hinton"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg": {
         "caption": {
@@ -62057,7 +63368,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -62489,46 +63801,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jia-deng",
         "name": {
-          "en": "Jia Deng",
-          "zh": "邓嘉"
+          "zh": "邓嘉",
+          "en": "Jia Deng"
         },
         "role": {
-          "en": "First author of ImageNet paper",
-          "zh": "ImageNet 论文第一作者"
+          "zh": "ImageNet 论文第一作者",
+          "en": "First author of ImageNet paper"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "li-fei-fei",
         "name": {
-          "en": "Li Fei-Fei",
-          "zh": "李飞飞"
+          "zh": "李飞飞",
+          "en": "Li Fei-Fei"
         },
         "role": {
-          "en": "ImageNet project leader",
-          "zh": "ImageNet 项目主要推动者"
+          "zh": "ImageNet 项目主要推动者",
+          "en": "ImageNet project leader"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "olga-russakovsky",
         "name": {
-          "en": "Olga Russakovsky",
-          "zh": "奥尔加·鲁萨科夫斯基"
+          "zh": "奥尔加·鲁萨科夫斯基",
+          "en": "Olga Russakovsky"
         },
         "role": {
-          "en": "ImageNet co-author",
-          "zh": "ImageNet 共同作者"
+          "zh": "ImageNet 共同作者",
+          "en": "ImageNet co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -62567,7 +63885,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "li-fei-fei"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg": {
         "caption": {
@@ -62591,7 +63912,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg": {
         "caption": {
@@ -62615,7 +63937,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -62996,32 +64319,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "tsung-yi-lin",
         "name": {
-          "en": "Tsung-Yi Lin",
-          "zh": "林宗毅"
+          "zh": "林宗毅",
+          "en": "Tsung-Yi Lin"
         },
         "role": {
-          "en": "MS COCO lead author",
-          "zh": "MS COCO 主要作者"
+          "zh": "MS COCO 主要作者",
+          "en": "MS COCO lead author"
         },
         "avatar": "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "piotr-dollar",
         "name": {
-          "en": "Piotr Dollar",
-          "zh": "彼得·多拉尔"
+          "zh": "彼得·多拉尔",
+          "en": "Piotr Dollar"
         },
         "role": {
-          "en": "MS COCO co-author",
-          "zh": "MS COCO 共同作者"
+          "zh": "MS COCO 共同作者",
+          "en": "MS COCO co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -63064,7 +64391,10 @@ const milestones = [
           "sourceUrl": "https://tsungyilin.info/images/tsungyi.jpeg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "tsung-yi-lin"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg": {
         "caption": {
@@ -63088,7 +64418,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -63520,18 +64851,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "richard-sutton",
         "name": {
-          "en": "Richard Sutton",
-          "zh": "理查德·萨顿"
+          "zh": "理查德·萨顿",
+          "en": "Richard Sutton"
         },
         "role": {
-          "en": "Author of temporal-difference learning",
-          "zh": "时序差分学习提出者"
+          "zh": "时序差分学习提出者",
+          "en": "Author of temporal-difference learning"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -63570,7 +64903,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "richard-sutton"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg": {
         "caption": {
@@ -63594,7 +64930,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg": {
         "caption": {
@@ -63618,7 +64955,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -63992,32 +65330,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "christopher-watkins",
         "name": {
-          "en": "Christopher Watkins",
-          "zh": "克里斯托弗·沃特金斯"
+          "zh": "克里斯托弗·沃特金斯",
+          "en": "Christopher Watkins"
         },
         "role": {
-          "en": "Q-learning lead author",
-          "zh": "Q-learning 主要作者"
+          "zh": "Q-learning 主要作者",
+          "en": "Q-learning lead author"
         },
         "avatar": "resources/images/external/ai100-1989-q-learning/christopher-watkins-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "peter-dayan",
         "name": {
-          "en": "Peter Dayan",
-          "zh": "彼得·达扬"
+          "zh": "彼得·达扬",
+          "en": "Peter Dayan"
         },
         "role": {
-          "en": "Q Learning co-author",
-          "zh": "Q Learning 共同作者"
+          "zh": "Q Learning 共同作者",
+          "en": "Q Learning co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -64060,7 +65402,10 @@ const milestones = [
           "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "christopher-watkins"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg": {
         "caption": {
@@ -64084,7 +65429,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -64516,60 +65862,70 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "volodymyr-mnih",
         "name": {
-          "en": "Volodymyr Mnih",
-          "zh": "沃洛迪米尔·姆尼赫"
+          "zh": "沃洛迪米尔·姆尼赫",
+          "en": "Volodymyr Mnih"
         },
         "role": {
-          "en": "First author of DQN work",
-          "zh": "DQN 工作第一作者"
+          "zh": "DQN 工作第一作者",
+          "en": "First author of DQN work"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "martin-riedmiller",
         "name": {
-          "en": "Martin Riedmiller",
-          "zh": "马丁·里德米勒"
+          "zh": "马丁·里德米勒",
+          "en": "Martin Riedmiller"
         },
         "role": {
-          "en": "Deep Q Network co-author",
-          "zh": "Deep Q Network 共同作者"
+          "zh": "Deep Q Network 共同作者",
+          "en": "Deep Q Network co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "koray-kavukcuoglu",
         "name": {
-          "en": "Koray Kavukcuoglu",
-          "zh": "科雷·卡武克丘奥卢"
+          "zh": "科雷·卡武克丘奥卢",
+          "en": "Koray Kavukcuoglu"
         },
         "role": {
-          "en": "Deep Q Network co-author",
-          "zh": "Deep Q Network 共同作者"
+          "zh": "Deep Q Network 共同作者",
+          "en": "Deep Q Network co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "david-silver",
         "name": {
-          "en": "David Silver",
-          "zh": "大卫·席尔瓦"
+          "zh": "大卫·席尔瓦",
+          "en": "David Silver"
         },
         "role": {
-          "en": "DeepMind reinforcement learning researcher",
-          "zh": "DeepMind 强化学习研究者"
+          "zh": "DeepMind 强化学习研究者",
+          "en": "DeepMind reinforcement learning researcher"
         },
         "avatar": "resources/images/figures/authoritative/david-silver.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": false
       }
     ],
     "resources": {
@@ -64610,7 +65966,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "volodymyr-mnih"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
         "caption": {
@@ -64634,7 +65993,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg": {
         "caption": {
@@ -64658,7 +66018,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
@@ -64687,7 +66048,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "david-silver"
+        ]
       }
     },
     "achievement": {
@@ -65084,46 +66448,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "timothy-lillicrap",
         "name": {
-          "en": "Timothy Lillicrap",
-          "zh": "蒂莫西·利利克拉普"
+          "zh": "蒂莫西·利利克拉普",
+          "en": "Timothy Lillicrap"
         },
         "role": {
-          "en": "DDPG lead author",
-          "zh": "DDPG 主要作者"
+          "zh": "DDPG 主要作者",
+          "en": "DDPG lead author"
         },
         "avatar": "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait-display.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jonathan-hunt",
         "name": {
-          "en": "Jonathan Hunt",
-          "zh": "乔纳森·亨特"
+          "zh": "乔纳森·亨特",
+          "en": "Jonathan Hunt"
         },
         "role": {
-          "en": "DDPG co-author",
-          "zh": "DDPG 共同作者"
+          "zh": "DDPG 共同作者",
+          "en": "DDPG co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "daan-wierstra",
         "name": {
-          "en": "Daan Wierstra",
-          "zh": "丹·维尔斯特拉"
+          "zh": "丹·维尔斯特拉",
+          "en": "Daan Wierstra"
         },
         "role": {
-          "en": "DDPG co-author",
-          "zh": "DDPG 共同作者"
+          "zh": "DDPG 共同作者",
+          "en": "DDPG co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -65166,7 +66536,10 @@ const milestones = [
           "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "timothy-lillicrap"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg": {
         "caption": {
@@ -65190,7 +66563,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -65640,87 +67014,104 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "david-silver",
         "name": {
-          "en": "David Silver",
-          "zh": "大卫·席尔瓦"
+          "zh": "大卫·席尔瓦",
+          "en": "David Silver"
         },
         "role": {
-          "en": "AlphaGo lead researcher",
-          "zh": "AlphaGo 主要研究者"
+          "zh": "AlphaGo 主要研究者",
+          "en": "AlphaGo lead researcher"
         },
         "avatar": "resources/images/figures/authoritative/david-silver.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": true
       },
       {
+        "id": "aja-huang",
         "name": {
-          "en": "Aja Huang",
-          "zh": "黄士杰"
+          "zh": "黄士杰",
+          "en": "Aja Huang"
         },
         "role": {
-          "en": "AlphaGo co-author",
-          "zh": "AlphaGo 共同作者"
+          "zh": "AlphaGo 共同作者",
+          "en": "AlphaGo co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "demis-hassabis",
         "name": {
-          "en": "Demis Hassabis",
-          "zh": "戴密斯·哈萨比斯"
+          "zh": "德米斯·哈萨比斯",
+          "en": "Demis Hassabis"
         },
         "role": {
-          "en": "DeepMind co-founder",
-          "zh": "DeepMind 联合创始人"
+          "zh": "DeepMind 联合创始人",
+          "en": "DeepMind co-founder"
         },
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": true
       },
       {
+        "id": "julian-schrittwieser",
         "name": {
-          "en": "Julian Schrittwieser",
-          "zh": "朱利安·施里特维泽"
+          "zh": "朱利安·施里特维泽",
+          "en": "Julian Schrittwieser"
         },
         "role": {
-          "en": "DeepMind research scientist and one of the first authors of the MuZero paper",
-          "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一"
+          "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一",
+          "en": "DeepMind research scientist and one of the first authors of the MuZero paper"
         },
         "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "karen-simonyan",
         "name": {
-          "en": "Karen Simonyan",
-          "zh": "卡伦·西莫尼扬"
+          "zh": "卡伦·西莫尼扬",
+          "en": "Karen Simonyan"
         },
         "role": {
-          "en": "Co-author of the VGG paper",
-          "zh": "VGG 论文共同作者"
+          "zh": "VGG 论文共同作者",
+          "en": "Co-author of the VGG paper"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "lee-sedol",
         "name": {
-          "en": "Lee Sedol",
-          "zh": "李世石"
+          "zh": "李世石",
+          "en": "Lee Sedol"
         },
         "role": {
-          "en": "Go world champion in the landmark 2016 match",
-          "zh": "2016 年里程碑对局中的围棋世界冠军"
+          "zh": "2016 年里程碑对局中的围棋世界冠军",
+          "en": "Go world champion in the landmark 2016 match"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -65766,7 +67157,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "david-silver"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
         "caption": {
@@ -65790,7 +67184,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
         "caption": {
@@ -65814,7 +67209,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "lee-sedol"
+        ]
       }
     },
     "achievement": {
@@ -66185,32 +67583,38 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "john-jumper",
         "name": {
-          "en": "John Jumper",
-          "zh": "约翰·江珀"
+          "zh": "约翰·江珀",
+          "en": "John Jumper"
         },
         "role": {
-          "en": "AlphaFold2 lead researcher",
-          "zh": "AlphaFold2 主要研究者"
+          "zh": "AlphaFold2 主要研究者",
+          "en": "AlphaFold2 lead researcher"
         },
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "demis-hassabis",
         "name": {
-          "en": "Demis Hassabis",
-          "zh": "德米斯·哈萨比斯"
+          "zh": "德米斯·哈萨比斯",
+          "en": "Demis Hassabis"
         },
         "role": {
-          "en": "DeepMind co-founder and AlphaFold leader",
-          "zh": "DeepMind 联合创始人与 AlphaFold 负责人"
+          "zh": "DeepMind 联合创始人与 AlphaFold 负责人",
+          "en": "DeepMind co-founder and AlphaFold leader"
         },
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": true
       }
     ],
     "resources": {
@@ -66272,7 +67676,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "john-jumper"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg": {
         "caption": {
@@ -66296,7 +67703,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png": {
         "caption": {
@@ -66320,7 +67728,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png": {
         "caption": {
@@ -66344,7 +67753,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/2020-alphafold/john-jumper-portrait.jpg": {
         "caption": {
@@ -66374,7 +67784,10 @@ const milestones = [
           "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "john-jumper"
+        ]
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_02.png": {
         "caption": {
@@ -66398,7 +67811,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "demis-hassabis"
+        ]
       },
       "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg": {
         "caption": {
@@ -66422,7 +67838,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png": {
         "caption": {
@@ -66446,7 +67863,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png": {
         "caption": {
@@ -66470,7 +67888,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -66876,32 +68295,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "andrew-barto",
         "name": {
-          "en": "Andrew Barto",
-          "zh": "安德鲁·巴托"
+          "zh": "安德鲁·巴托",
+          "en": "Andrew Barto"
         },
         "role": {
-          "en": "Actor-Critic co-author",
-          "zh": "Actor-Critic 共同作者"
+          "zh": "Actor-Critic 共同作者",
+          "en": "Actor-Critic co-author"
         },
         "avatar": "resources/images/external/ai100-1983-actor-critic/andrew-barto-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "charles-anderson",
         "name": {
-          "en": "Charles Anderson",
-          "zh": "查尔斯·安德森"
+          "zh": "查尔斯·安德森",
+          "en": "Charles Anderson"
         },
         "role": {
-          "en": "Actor-Critic co-author",
-          "zh": "Actor-Critic 共同作者"
+          "zh": "Actor-Critic 共同作者",
+          "en": "Actor-Critic co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -66944,7 +68367,10 @@ const milestones = [
           "sourceUrl": "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "andrew-barto"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg": {
         "caption": {
@@ -66968,7 +68394,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -67400,33 +68827,36 @@ const milestones = [
     },
     "figures": [
       {
-        "figureId": "volodymyr-mnih",
+        "id": "volodymyr-mnih",
         "name": {
-          "en": "Volodymyr Mnih",
-          "zh": "沃洛迪米尔·姆尼赫"
+          "zh": "沃洛迪米尔·姆尼赫",
+          "en": "Volodymyr Mnih"
         },
         "role": {
-          "en": "A3C lead author",
-          "zh": "A3C 主要作者"
+          "zh": "A3C 主要作者",
+          "en": "A3C lead author"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "koray-kavukcuoglu",
         "name": {
-          "en": "Koray Kavukcuoglu",
-          "zh": "科雷·卡武克丘奥卢"
+          "zh": "科雷·卡武克丘奥卢",
+          "en": "Koray Kavukcuoglu"
         },
         "role": {
-          "en": "A3C co-author",
-          "zh": "A3C 共同作者"
+          "zh": "A3C 共同作者",
+          "en": "A3C co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -67473,7 +68903,10 @@ const milestones = [
           "sourceUrl": "https://www.cs.toronto.edu/~vmnih/"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "volodymyr-mnih"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2016-2016-a3c_process.svg": {
         "caption": {
@@ -67506,7 +68939,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -67925,47 +69359,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "gavin-rummery",
         "name": {
-          "en": "Gavin Rummery",
-          "zh": "加文·拉默里"
+          "zh": "加文·拉默里",
+          "en": "Gavin Rummery"
         },
         "role": {
-          "en": "SARSA lead author",
-          "zh": "SARSA 主要作者"
+          "zh": "SARSA 主要作者",
+          "en": "SARSA lead author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "mahesan-niranjan",
         "name": {
-          "en": "Mahesan Niranjan",
-          "zh": "马赫桑·尼兰詹"
+          "zh": "马赫桑·尼兰詹",
+          "en": "Mahesan Niranjan"
         },
         "role": {
-          "en": "SARSA co-author",
-          "zh": "SARSA 共同作者"
+          "zh": "SARSA 共同作者",
+          "en": "SARSA co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
-        "figureId": "richard-sutton",
+        "id": "richard-sutton",
         "name": {
-          "en": "Richard Sutton",
-          "zh": "理查德·萨顿"
+          "zh": "理查德·萨顿",
+          "en": "Richard Sutton"
         },
         "role": {
-          "en": "Related temporal-difference learning pioneer",
-          "zh": "相关时序差分学习先驱"
+          "zh": "相关时序差分学习先驱",
+          "en": "Related temporal-difference learning pioneer"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -68007,7 +69446,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg": {
         "caption": {
@@ -68040,7 +69480,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -68459,19 +69900,20 @@ const milestones = [
     },
     "figures": [
       {
-        "figureId": "ronald-williams",
+        "id": "ronald-williams",
         "name": {
-          "en": "Ronald Williams",
-          "zh": "罗纳德·威廉姆斯"
+          "zh": "罗纳德·威廉姆斯",
+          "en": "Ronald Williams"
         },
         "role": {
-          "en": "REINFORCE author",
-          "zh": "REINFORCE 作者"
+          "zh": "REINFORCE 作者",
+          "en": "REINFORCE author"
         },
         "avatar": "resources/images/figures/ronald-williams.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -68518,7 +69960,10 @@ const milestones = [
           "sourceUrl": "https://www.khoury.northeastern.edu/people/ronald-williams/"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ronald-williams"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1992-1992-reinforce_process.svg": {
         "caption": {
@@ -68551,7 +69996,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -68970,33 +70416,36 @@ const milestones = [
     },
     "figures": [
       {
-        "figureId": "richard-sutton",
+        "id": "richard-sutton",
         "name": {
-          "en": "Richard Sutton",
-          "zh": "理查德·萨顿"
+          "zh": "理查德·萨顿",
+          "en": "Richard Sutton"
         },
         "role": {
-          "en": "Policy-gradient theorem co-author",
-          "zh": "策略梯度定理共同作者"
+          "zh": "策略梯度定理共同作者",
+          "en": "Policy-gradient theorem co-author"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yishay-mansour",
         "name": {
-          "en": "Yishay Mansour",
-          "zh": "伊沙伊·曼苏尔"
+          "zh": "伊沙伊·曼苏尔",
+          "en": "Yishay Mansour"
         },
         "role": {
-          "en": "Policy gradient theorem co-author",
-          "zh": "Policy gradient theorem 共同作者"
+          "zh": "Policy gradient theorem 共同作者",
+          "en": "Policy gradient theorem co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -69043,7 +70492,10 @@ const milestones = [
           "sourceUrl": "http://incompleteideas.net/"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "richard-sutton"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1999-1999-policy-gradient_process.svg": {
         "caption": {
@@ -69076,7 +70528,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -69495,58 +70948,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "leo-breiman",
         "name": {
-          "en": "Leo Breiman",
-          "zh": "利奥·布雷曼"
+          "zh": "利奥·布雷曼",
+          "en": "Leo Breiman"
         },
         "role": {
-          "en": "CART monograph co-author",
-          "zh": "CART 专著共同作者"
+          "zh": "CART 专著共同作者",
+          "en": "CART monograph co-author"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "richard-olshen",
         "name": {
-          "en": "Richard olshen",
-          "zh": "理查德·奥尔申"
+          "zh": "理查德·奥尔申",
+          "en": "Richard olshen"
         },
         "role": {
-          "en": "CART monograph co-author",
-          "zh": "CART 专著共同作者"
+          "zh": "CART 专著共同作者",
+          "en": "CART monograph co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jerome-friedman",
         "name": {
-          "en": "Jerome Friedman",
-          "zh": "杰罗姆·弗里德曼"
+          "zh": "杰罗姆·弗里德曼",
+          "en": "Jerome Friedman"
         },
         "role": {
-          "en": "CART monograph co-author",
-          "zh": "CART 专著共同作者"
+          "zh": "CART 专著共同作者",
+          "en": "CART monograph co-author"
         },
         "avatar": "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "charles-stone",
         "name": {
-          "en": "Charles Stone",
-          "zh": "查尔斯·斯通"
+          "zh": "查尔斯·斯通",
+          "en": "Charles Stone"
         },
         "role": {
-          "en": "CART monograph co-author",
-          "zh": "CART 专著共同作者"
+          "zh": "CART 专著共同作者",
+          "en": "CART monograph co-author"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -69585,7 +71048,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "gif"
+        "type": "gif",
+        "figureIds": [
+          "leo-breiman"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1984-cart_split-regions.svg": {
         "caption": {
@@ -69609,7 +71075,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg": {
         "caption": {
@@ -69633,7 +71100,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -70007,18 +71475,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "ross-quinlan",
         "name": {
-          "en": "Ross Quinlan",
-          "zh": "罗斯·昆兰"
+          "zh": "罗斯·昆兰",
+          "en": "Ross Quinlan"
         },
         "role": {
-          "en": "ID3 lead author",
-          "zh": "ID3 主要作者"
+          "zh": "ID3 主要作者",
+          "en": "ID3 lead author"
         },
         "avatar": "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -70067,7 +71537,10 @@ const milestones = [
           "sourceUrl": "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ross-quinlan"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1986-1986-id3_process.svg": {
         "caption": {
@@ -70100,7 +71573,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/ai100-1986-id3/id3-paper-figure-3-complex-decision-tree.png": {
         "caption": {
@@ -70133,7 +71607,8 @@ const milestones = [
           }
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -70552,18 +72027,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "ross-quinlan",
         "name": {
-          "en": "Ross Quinlan",
-          "zh": "罗斯·昆兰"
+          "zh": "罗斯·昆兰",
+          "en": "Ross Quinlan"
         },
         "role": {
-          "en": "C4.5 lead author",
-          "zh": "C4.5 主要作者"
+          "zh": "C4.5 主要作者",
+          "en": "C4.5 lead author"
         },
         "avatar": "resources/images/external/ai100-1993-c45/ross-quinlan-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -70610,7 +72087,10 @@ const milestones = [
           "sourceUrl": "resources/images/external/ai100-1993-c45/ross-quinlan-portrait.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ross-quinlan"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1993-1993-c45_process.svg": {
         "caption": {
@@ -70643,7 +72123,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -71062,19 +72543,20 @@ const milestones = [
     },
     "figures": [
       {
-        "figureId": "leo-breiman",
+        "id": "leo-breiman",
         "name": {
-          "en": "Leo Breiman",
-          "zh": "利奥·布雷曼"
+          "zh": "利奥·布雷曼",
+          "en": "Leo Breiman"
         },
         "role": {
-          "en": "Bagging author",
-          "zh": "Bagging 作者"
+          "zh": "Bagging 作者",
+          "en": "Bagging author"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -71121,7 +72603,10 @@ const milestones = [
           "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif"
         },
         "role": "portrait",
-        "type": "gif"
+        "type": "gif",
+        "figureIds": [
+          "leo-breiman"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1996-1996-bagging_process.svg": {
         "caption": {
@@ -71154,7 +72639,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -71573,33 +73059,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "tin-kam-ho",
         "name": {
-          "en": "Tin Kam Ho",
-          "zh": "何天琴"
+          "zh": "何天琴",
+          "en": "Tin Kam Ho"
         },
         "role": {
-          "en": "Random forests lead author",
-          "zh": "Random forests 主要作者"
+          "zh": "Random forests 主要作者",
+          "en": "Random forests lead author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
-        "figureId": "leo-breiman",
+        "id": "leo-breiman",
         "name": {
-          "en": "Leo Breiman",
-          "zh": "利奥·布雷曼"
+          "zh": "利奥·布雷曼",
+          "en": "Leo Breiman"
         },
         "role": {
-          "en": "Random forests principal author",
-          "zh": "随机森林主要作者"
+          "zh": "随机森林主要作者",
+          "en": "Random forests principal author"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -71646,7 +73135,10 @@ const milestones = [
           "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif"
         },
         "role": "portrait",
-        "type": "gif"
+        "type": "gif",
+        "figureIds": [
+          "leo-breiman"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2001-2001-random-forests_process.svg": {
         "caption": {
@@ -71679,7 +73171,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -72098,18 +73591,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "robert-schapire",
         "name": {
-          "en": "Robert Schapire",
-          "zh": "罗伯特·沙皮尔"
+          "zh": "罗伯特·沙皮尔",
+          "en": "Robert Schapire"
         },
         "role": {
-          "en": "Boost lead author",
-          "zh": "Boost 主要作者"
+          "zh": "Boost 主要作者",
+          "en": "Boost lead author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -72157,7 +73652,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/ai100-1990-boosting/boosting-paper-first-page.svg": {
         "caption": {
@@ -72191,7 +73687,8 @@ const milestones = [
           "sourceUrl": "https://doi.org/10.1007/BF00116037"
         },
         "role": "paper-page",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -72594,32 +74091,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "yoav-freund",
         "name": {
-          "en": "Yoav Freund",
-          "zh": "约阿夫·弗罗因德"
+          "zh": "约阿夫·弗罗因德",
+          "en": "Yoav Freund"
         },
         "role": {
-          "en": "Adaboost lead author",
-          "zh": "Adaboost 主要作者"
+          "zh": "Adaboost 主要作者",
+          "en": "Adaboost lead author"
         },
         "avatar": "resources/images/external/ai100-1997-adaboost/yoav-freund-portrait.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "robert-schapire",
         "name": {
-          "en": "Robert Schapire",
-          "zh": "罗伯特·沙皮尔"
+          "zh": "罗伯特·沙皮尔",
+          "en": "Robert Schapire"
         },
         "role": {
-          "en": "Adaboost co-author",
-          "zh": "Adaboost 共同作者"
+          "zh": "Adaboost 共同作者",
+          "en": "Adaboost co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -72666,7 +74167,10 @@ const milestones = [
           "sourceUrl": "resources/images/external/ai100-1997-adaboost/yoav-freund-portrait.png"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yoav-freund"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1997-1997-adaboost_process.svg": {
         "caption": {
@@ -72699,7 +74203,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -73118,18 +74623,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jerome-friedman",
         "name": {
-          "en": "Jerome Friedman",
-          "zh": "杰罗姆·弗里德曼"
+          "zh": "杰罗姆·弗里德曼",
+          "en": "Jerome Friedman"
         },
         "role": {
-          "en": "CART monograph co-author",
-          "zh": "CART 专著共同作者"
+          "zh": "CART 专著共同作者",
+          "en": "CART monograph co-author"
         },
         "avatar": "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -73176,7 +74683,10 @@ const milestones = [
           "sourceUrl": "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jerome-friedman"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2001-2001-gradient-boosting_process.svg": {
         "caption": {
@@ -73209,7 +74719,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -73628,32 +75139,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "tianqi-chen",
         "name": {
-          "en": "Tianqi Chen",
-          "zh": "陈天奇"
+          "zh": "陈天奇",
+          "en": "Tianqi Chen"
         },
         "role": {
-          "en": "XGBoost lead author",
-          "zh": "XGBoost 主要作者"
+          "zh": "XGBoost 主要作者",
+          "en": "XGBoost lead author"
         },
         "avatar": "resources/images/external/ai100-2016-xgboost/tianqi-chen-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "carlos-guestrin",
         "name": {
-          "en": "Carlos Guestrin",
-          "zh": "卡洛斯·格斯特林"
+          "zh": "卡洛斯·格斯特林",
+          "en": "Carlos Guestrin"
         },
         "role": {
-          "en": "XGBoost co-author",
-          "zh": "XGBoost 共同作者"
+          "zh": "XGBoost 共同作者",
+          "en": "XGBoost co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -73700,7 +75215,10 @@ const milestones = [
           "sourceUrl": "resources/images/external/ai100-2016-xgboost/tianqi-chen-portrait.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "tianqi-chen"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2016-2016-xgboost_process.svg": {
         "caption": {
@@ -73733,7 +75251,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -74152,33 +75671,38 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "guolin-ke",
         "name": {
-          "en": "Guolin Ke",
-          "zh": "柯国霖"
+          "zh": "柯国霖",
+          "en": "Guolin Ke"
         },
         "role": {
-          "en": "LightGBM lead author",
-          "zh": "LightGBM 主要作者"
+          "zh": "LightGBM 主要作者",
+          "en": "LightGBM lead author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
-        "figureId": "tie-yan-liu",
+        "id": "tie-yan-liu",
         "name": {
-          "en": "Tie-Yan Liu",
-          "zh": "刘铁岩"
+          "zh": "刘铁岩",
+          "en": "Tie-Yan Liu"
         },
         "role": {
-          "en": "LightGBM co-author",
-          "zh": "LightGBM 共同作者"
+          "zh": "LightGBM 共同作者",
+          "en": "LightGBM co-author"
         },
         "avatar": "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [
+          "microsoft-research-asia"
+        ],
+        "primary": true
       }
     ],
     "resources": {
@@ -74225,7 +75749,10 @@ const milestones = [
           "sourceUrl": "https://www.microsoft.com/en-us/research/people/tyliu/"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "tie-yan-liu"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2017-2017-lightgbm_process.svg": {
         "caption": {
@@ -74258,7 +75785,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -74677,18 +76205,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "judea-pearl",
         "name": {
-          "en": "Judea Pearl",
-          "zh": "朱迪亚·珀尔"
+          "zh": "朱迪亚·珀尔",
+          "en": "Judea Pearl"
         },
         "role": {
-          "en": "Pioneer of Bayesian networks and causal AI",
-          "zh": "贝叶斯网络与因果 AI 先驱"
+          "zh": "贝叶斯网络与因果 AI 先驱",
+          "en": "Pioneer of Bayesian networks and causal AI"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -74727,7 +76257,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "judea-pearl"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1985-bayesian-network_dag.svg": {
         "caption": {
@@ -74751,7 +76284,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1985-bayesian-network_message-pass.svg": {
         "caption": {
@@ -74775,7 +76309,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -75152,32 +76687,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "david-blei",
         "name": {
-          "en": "David Blei",
-          "zh": "戴维·布莱"
+          "zh": "戴维·布莱",
+          "en": "David Blei"
         },
         "role": {
-          "en": "First author of LDA",
-          "zh": "LDA 第一作者"
+          "zh": "LDA 第一作者",
+          "en": "First author of LDA"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "michael-i-jordan",
         "name": {
-          "en": "Michael I. Jordan",
-          "zh": "迈克尔·I·乔丹"
+          "zh": "迈克尔·I·乔丹",
+          "en": "Michael I. Jordan"
         },
         "role": {
-          "en": "Co-author and probabilistic ML researcher",
-          "zh": "共同作者，概率机器学习研究者"
+          "zh": "共同作者，概率机器学习研究者",
+          "en": "Co-author and probabilistic ML researcher"
         },
         "avatar": "resources/images/1986-rnn/people/1986-rnn_people_01.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -75216,7 +76755,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "david-blei"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2003-lda_topic-simplex.svg": {
         "caption": {
@@ -75240,7 +76782,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2003-lda_plate-model.svg": {
         "caption": {
@@ -75264,7 +76807,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -75645,32 +77189,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "john-lafferty",
         "name": {
-          "en": "John Lafferty",
-          "zh": "约翰·拉弗蒂"
+          "zh": "约翰·拉弗蒂",
+          "en": "John Lafferty"
         },
         "role": {
-          "en": "CRF lead author",
-          "zh": "CRF 主要作者"
+          "zh": "CRF 主要作者",
+          "en": "CRF lead author"
         },
         "avatar": "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "fernando-pereira",
         "name": {
-          "en": "Fernando Pereira",
-          "zh": "费尔南多·佩雷拉"
+          "zh": "费尔南多·佩雷拉",
+          "en": "Fernando Pereira"
         },
         "role": {
-          "en": "CRF co-author",
-          "zh": "CRF 共同作者"
+          "zh": "CRF 共同作者",
+          "en": "CRF co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -75717,7 +77265,10 @@ const milestones = [
           "sourceUrl": "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "john-lafferty"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2001-2001-crf_process.svg": {
         "caption": {
@@ -75750,7 +77301,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -76169,18 +77721,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "john-holland",
         "name": {
-          "en": "John Holland",
-          "zh": "约翰·H·霍兰德"
+          "zh": "约翰·H·霍兰德",
+          "en": "John Holland"
         },
         "role": {
-          "en": "Developed the genetic algorithm framework",
-          "zh": "提出遗传算法框架"
+          "zh": "提出遗传算法框架",
+          "en": "Developed the genetic algorithm framework"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -76219,7 +77773,10 @@ const milestones = [
           }
         },
         "role": "source-card",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "john-holland"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_population-cycle.svg": {
         "caption": {
@@ -76243,7 +77800,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg": {
         "caption": {
@@ -76267,7 +77825,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -76644,45 +78203,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "scott-kirkpatrick",
         "name": {
-          "en": "Scott Kirkpatrick",
-          "zh": "斯科特·柯克帕特里克"
+          "zh": "斯科特·柯克帕特里克",
+          "en": "Scott Kirkpatrick"
         },
         "role": {
-          "en": "Lead author and IBM researcher",
-          "zh": "模拟退火论文第一作者、IBM 研究员"
+          "zh": "模拟退火论文第一作者、IBM 研究员",
+          "en": "Lead author and IBM researcher"
         },
         "avatar": "resources/images/external/1983-simulated-annealing/scott-kirkpatrick-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "mario-vecchi",
         "name": {
-          "en": "Mario Vecchi",
-          "zh": "马里奥·P·维基"
+          "zh": "马里奥·P·维基",
+          "en": "Mario Vecchi"
         },
         "role": {
-          "en": "Co-author and IBM researcher",
-          "zh": "模拟退火论文共同作者、IBM 研究员"
+          "zh": "模拟退火论文共同作者、IBM 研究员",
+          "en": "Co-author and IBM researcher"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "c-daniel-gelatt-jr",
         "name": {
-          "en": "C. Daniel Gelatt Jr.",
-          "zh": "C·丹尼尔·格拉特 Jr."
+          "zh": "C·丹尼尔·格拉特 Jr.",
+          "en": "C. Daniel Gelatt Jr."
         },
         "role": {
-          "en": "Co-author and IBM researcher",
-          "zh": "模拟退火论文共同作者、IBM 研究员"
+          "zh": "模拟退火论文共同作者、IBM 研究员",
+          "en": "Co-author and IBM researcher"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -76725,7 +78291,10 @@ const milestones = [
           "sourceUrl": "https://www.cs.huji.ac.il/~kirk/SKmugshot.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "scott-kirkpatrick"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg": {
         "caption": {
@@ -76754,7 +78323,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -77184,28 +78754,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "ze-liu",
         "name": {
-          "en": "Ze Liu",
-          "zh": "刘泽"
+          "zh": "刘泽",
+          "en": "Ze Liu"
         },
         "role": {
-          "en": "Co-first author of the Swin Transformer V2 paper",
-          "zh": "Swin Transformer V2 论文共同第一作者"
+          "zh": "Swin Transformer V2 论文共同第一作者",
+          "en": "Co-first author of the Swin Transformer V2 paper"
         },
+        "avatar": "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "han-hu",
         "name": {
-          "en": "Han Hu",
-          "zh": "胡瀚"
+          "zh": "胡瀚",
+          "en": "Han Hu"
         },
         "role": {
-          "en": "Co-first author of the Swin Transformer V2 paper",
-          "zh": "Swin Transformer V2 论文共同第一作者"
+          "zh": "Swin Transformer V2 论文共同第一作者",
+          "en": "Co-first author of the Swin Transformer V2 paper"
         },
+        "avatar": "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -77258,7 +78836,10 @@ const milestones = [
           "attribution": ""
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ze-liu"
+        ]
       },
       "resources/images/external/ai100-2022-swin-transformer-v2/paper-v1-v2-comparison.png": {
         "caption": {
@@ -77292,7 +78873,8 @@ const milestones = [
           "attribution": "Ze Liu et al."
         },
         "role": "architecture-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg": {
         "caption": {
@@ -77326,7 +78908,10 @@ const milestones = [
           "attribution": "Han Hu"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "han-hu"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/annual-001-swin-transformer-v2_record.svg": {
         "caption": {
@@ -77363,7 +78948,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -77952,52 +79538,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "zhenda-xie",
         "name": {
-          "en": "Zhenda Xie",
-          "zh": "谢振达"
+          "zh": "谢振达",
+          "en": "Zhenda Xie"
         },
         "role": {
-          "en": "Co-first author of the SimMIM paper",
-          "zh": "SimMIM 论文共同第一作者"
+          "zh": "SimMIM 论文共同第一作者",
+          "en": "Co-first author of the SimMIM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "zheng-zhang",
         "name": {
-          "en": "Zheng Zhang",
-          "zh": "张拯"
+          "zh": "张拯",
+          "en": "Zheng Zhang"
         },
         "role": {
-          "en": "Co-first author of the SimMIM paper",
-          "zh": "SimMIM 论文共同第一作者"
+          "zh": "SimMIM 论文共同第一作者",
+          "en": "Co-first author of the SimMIM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yue-cao",
         "name": {
-          "en": "Yue Cao",
-          "zh": "曹越"
+          "zh": "曹越",
+          "en": "Yue Cao"
         },
         "role": {
-          "en": "Co-first author of the SimMIM paper",
-          "zh": "SimMIM 论文共同第一作者"
+          "zh": "SimMIM 论文共同第一作者",
+          "en": "Co-first author of the SimMIM paper"
         },
+        "avatar": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "han-hu",
         "name": {
-          "en": "Han Hu",
-          "zh": "胡瀚"
+          "zh": "胡瀚",
+          "en": "Han Hu"
         },
         "role": {
-          "en": "Lead author of the SimMIM paper",
-          "zh": "SimMIM 论文主要作者"
+          "zh": "SimMIM 论文主要作者",
+          "en": "Lead author of the SimMIM paper"
         },
+        "avatar": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -78050,7 +79652,10 @@ const milestones = [
           "attribution": "Yue Cao"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yue-cao"
+        ]
       },
       "resources/images/external/ai100-2022-simmim/official-teaser.jpg": {
         "caption": {
@@ -78084,7 +79689,8 @@ const milestones = [
           "attribution": "Microsoft SimMIM authors"
         },
         "role": "architecture-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg": {
         "caption": {
@@ -78118,7 +79724,10 @@ const milestones = [
           "attribution": ""
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "han-hu"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/annual-002-simmim_record.svg": {
         "caption": {
@@ -78155,7 +79764,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -78794,40 +80404,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alec-radford",
         "name": {
-          "en": "Alec Radford",
-          "zh": "亚历克·拉德福德"
+          "zh": "亚历克·拉德福德",
+          "en": "Alec Radford"
         },
         "role": {
-          "en": "First author of the Whisper paper",
-          "zh": "Whisper 论文第一作者"
+          "zh": "Whisper 论文第一作者",
+          "en": "First author of the Whisper paper"
         },
+        "avatar": "resources/images/figures/alec-radford.png",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jong-wook-kim",
         "name": {
-          "en": "Jong Wook Kim",
-          "zh": "金钟旭"
+          "zh": "金钟旭",
+          "en": "Jong Wook Kim"
         },
         "role": {
-          "en": "Co-author of the Whisper paper",
-          "zh": "Whisper 论文共同作者"
+          "zh": "Whisper 论文共同作者",
+          "en": "Co-author of the Whisper paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ilya-sutskever",
         "name": {
-          "en": "Ilya Sutskever",
-          "zh": "伊利亚·苏茨克维"
+          "zh": "伊利亚·苏茨克维",
+          "en": "Ilya Sutskever"
         },
         "role": {
-          "en": "Co-author of the Whisper paper",
-          "zh": "Whisper 论文共同作者"
+          "zh": "Whisper 论文共同作者",
+          "en": "Co-author of the Whisper paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -78878,7 +80500,10 @@ const milestones = [
           "attribution": "Eladkarmel"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ilya-sutskever"
+        ]
       },
       "resources/images/external/ai100-2022-whisper/openai-approach.png": {
         "caption": {
@@ -78912,7 +80537,8 @@ const milestones = [
           "attribution": "OpenAI"
         },
         "role": "architecture-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-024-whisper_record.svg": {
         "caption": {
@@ -78949,7 +80575,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -79451,100 +81078,132 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "aakanksha-chowdhery",
         "name": {
-          "en": "Aakanksha Chowdhery",
-          "zh": "阿坎莎·乔杜里"
+          "zh": "阿坎莎·乔杜里",
+          "en": "Aakanksha Chowdhery"
         },
         "role": {
-          "en": "First author of the PaLM paper",
-          "zh": "PaLM 论文第一作者"
+          "zh": "PaLM 论文第一作者",
+          "en": "First author of the PaLM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "sharan-narang",
         "name": {
-          "en": "Sharan Narang",
-          "zh": "沙兰·纳朗"
+          "zh": "沙兰·纳朗",
+          "en": "Sharan Narang"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jacob-devlin",
         "name": {
-          "en": "Jacob Devlin",
-          "zh": "雅各布·德夫林"
+          "zh": "雅各布·德夫林",
+          "en": "Jacob Devlin"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "resources/images/figures/jacob-devlin.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "kathy-meier-hellstern",
         "name": {
-          "en": "Kathy Meier-Hellstern",
-          "zh": "凯西·迈尔-赫尔斯特恩"
+          "zh": "凯西·迈尔-赫尔斯特恩",
+          "en": "Kathy Meier-Hellstern"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "douglas-eck",
         "name": {
-          "en": "Douglas Eck",
-          "zh": "道格拉斯·埃克"
+          "zh": "道格拉斯·埃克",
+          "en": "Douglas Eck"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jeff-dean",
         "name": {
-          "en": "Jeff Dean",
-          "zh": "杰夫·迪恩"
+          "zh": "杰夫·迪恩",
+          "en": "Jeff Dean"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "slav-petrov",
         "name": {
-          "en": "Slav Petrov",
-          "zh": "斯拉夫·彼得罗夫"
+          "zh": "斯拉夫·彼得罗夫",
+          "en": "Slav Petrov"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "noah-fiedel",
         "name": {
-          "en": "Noah Fiedel",
-          "zh": "诺亚·菲德尔"
+          "zh": "诺亚·菲德尔",
+          "en": "Noah Fiedel"
         },
         "role": {
-          "en": "Co-author of the PaLM paper",
-          "zh": "PaLM 论文共同作者"
+          "zh": "PaLM 论文共同作者",
+          "en": "Co-author of the PaLM paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -79595,7 +81254,10 @@ const milestones = [
           "attribution": "Cmichel67"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jeff-dean"
+        ]
       },
       "resources/images/external/ai100-2022-palm/palm-bigbench-results.png": {
         "caption": {
@@ -79629,7 +81291,8 @@ const milestones = [
           "attribution": "Chowdhery et al., PaLM: Scaling Language Modeling with Pathways (2022)"
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-039-palm_record.svg": {
         "caption": {
@@ -79666,7 +81329,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -80168,124 +81832,164 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "long-ouyang",
         "name": {
-          "en": "Long Ouyang",
-          "zh": "欧阳龙"
+          "zh": "欧阳龙",
+          "en": "Long Ouyang"
         },
         "role": {
-          "en": "First author of the InstructGPT paper",
-          "zh": "InstructGPT 论文第一作者"
+          "zh": "InstructGPT 论文第一作者",
+          "en": "First author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jeff-wu",
         "name": {
-          "en": "Jeff Wu",
-          "zh": "杰夫·吴"
+          "zh": "杰夫·吴",
+          "en": "Jeff Wu"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-wu.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-wu.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "xu-jiang",
         "name": {
-          "en": "Xu Jiang",
-          "zh": "徐江"
+          "zh": "徐江",
+          "en": "Xu Jiang"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "diogo-almeida",
         "name": {
-          "en": "Diogo Almeida",
-          "zh": "迪奥戈·阿尔梅达"
+          "zh": "迪奥戈·阿尔梅达",
+          "en": "Diogo Almeida"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "carroll-l-wainwright",
         "name": {
-          "en": "Carroll L. Wainwright",
-          "zh": "卡罗尔·L·温赖特"
+          "zh": "卡罗尔·L·温赖特",
+          "en": "Carroll L. Wainwright"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "pamela-mishkin",
         "name": {
-          "en": "Pamela Mishkin",
-          "zh": "帕梅拉·米什金"
+          "zh": "帕梅拉·米什金",
+          "en": "Pamela Mishkin"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "paul-christiano",
         "name": {
-          "en": "Paul Christiano",
-          "zh": "保罗·克里斯蒂亚诺"
+          "zh": "保罗·克里斯蒂亚诺",
+          "en": "Paul Christiano"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jan-leike",
         "name": {
-          "en": "Jan Leike",
-          "zh": "扬·莱克"
+          "zh": "扬·莱克",
+          "en": "Jan Leike"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ryan-lowe",
         "name": {
-          "en": "Ryan Lowe",
-          "zh": "瑞安·洛"
+          "zh": "瑞安·洛",
+          "en": "Ryan Lowe"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "john-schulman",
         "name": {
-          "en": "John Schulman",
-          "zh": "约翰·舒尔曼"
+          "zh": "约翰·舒尔曼",
+          "en": "John Schulman"
         },
         "role": {
-          "en": "Co-author of the InstructGPT paper",
-          "zh": "InstructGPT 论文共同作者"
+          "zh": "InstructGPT 论文共同作者",
+          "en": "Co-author of the InstructGPT paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -80338,7 +82042,10 @@ const milestones = [
           "attribution": ""
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jeff-wu"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png": {
         "caption": {
@@ -80372,7 +82079,10 @@ const milestones = [
           "attribution": "MIT Technology Review"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "john-schulman"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/instructgpt-paper-preference-results.png": {
         "caption": {
@@ -80406,7 +82116,8 @@ const milestones = [
           "attribution": "Ouyang et al., Training language models to follow instructions with human feedback (2022)"
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-048-instructgpt_record.svg": {
         "caption": {
@@ -80443,7 +82154,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -81025,28 +82737,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jason-wei",
         "name": {
-          "en": "Jason Wei",
-          "zh": "杰森·魏"
+          "zh": "杰森·魏",
+          "en": "Jason Wei"
         },
         "role": {
-          "en": "First author of the Chain-of-Thought Prompting paper",
-          "zh": "Chain-of-Thought Prompting 论文第一作者"
+          "zh": "Chain-of-Thought Prompting 论文第一作者",
+          "en": "First author of the Chain-of-Thought Prompting paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "denny-zhou",
         "name": {
-          "en": "Denny Zhou",
-          "zh": "丹尼·周"
+          "zh": "丹尼·周",
+          "en": "Denny Zhou"
         },
         "role": {
-          "en": "Co-author of the Chain-of-Thought Prompting paper",
-          "zh": "Chain-of-Thought Prompting 论文共同作者"
+          "zh": "Chain-of-Thought Prompting 论文共同作者",
+          "en": "Co-author of the Chain-of-Thought Prompting paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -81097,7 +82817,10 @@ const milestones = [
           "attribution": "Denny Zhou"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "denny-zhou"
+        ]
       },
       "resources/images/external/ai100-2022-chain-of-thought/chain-of-thought-examples.png": {
         "caption": {
@@ -81131,7 +82854,8 @@ const milestones = [
           "attribution": "Wei et al., Chain-of-Thought Prompting Elicits Reasoning in Large Language Models (2022)"
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-059-chain-of-thought-prompting_record.svg": {
         "caption": {
@@ -81168,7 +82892,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -81702,16 +83427,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "chatgpt-product",
         "name": {
-          "en": "ChatGPT",
-          "zh": "ChatGPT"
+          "zh": "ChatGPT",
+          "en": "ChatGPT"
         },
         "role": {
-          "en": "OpenAI conversational AI product",
-          "zh": "OpenAI 对话式 AI 产品"
+          "zh": "OpenAI 对话式 AI 产品",
+          "en": "OpenAI conversational AI product"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png",
+        "avatarStyle": "",
         "figureType": "product",
-        "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -81760,7 +83489,8 @@ const milestones = [
           "attribution": "Hugging Face"
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-058-chatgpt_record.svg": {
         "caption": {
@@ -81797,7 +83527,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -82299,40 +84030,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "robin-rombach",
         "name": {
-          "en": "Robin Rombach",
-          "zh": "罗宾·罗姆巴赫"
+          "zh": "罗宾·罗姆巴赫",
+          "en": "Robin Rombach"
         },
         "role": {
-          "en": "First author of the Latent Diffusion Models paper",
-          "zh": "Latent Diffusion Models 论文第一作者"
+          "zh": "Latent Diffusion Models 论文第一作者",
+          "en": "First author of the Latent Diffusion Models paper"
         },
+        "avatar": "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "andreas-blattmann",
         "name": {
-          "en": "Andreas Blattmann",
-          "zh": "安德烈亚斯·布拉特曼"
+          "zh": "安德烈亚斯·布拉特曼",
+          "en": "Andreas Blattmann"
         },
         "role": {
-          "en": "Co-author of the Latent Diffusion Models paper",
-          "zh": "Latent Diffusion Models 论文共同作者"
+          "zh": "Latent Diffusion Models 论文共同作者",
+          "en": "Co-author of the Latent Diffusion Models paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/andreas-blattmann.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/andreas-blattmann.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "bjorn-ommer",
         "name": {
-          "en": "Bjorn Ommer",
-          "zh": "比约恩·奥默"
+          "zh": "比约恩·奥默",
+          "en": "Bjorn Ommer"
         },
         "role": {
-          "en": "Co-author of the Latent Diffusion Models paper",
-          "zh": "Latent Diffusion Models 论文共同作者"
+          "zh": "Latent Diffusion Models 论文共同作者",
+          "en": "Co-author of the Latent Diffusion Models paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/bjorn-ommer.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/bjorn-ommer.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -82387,7 +84130,10 @@ const milestones = [
           "attribution": ""
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "robin-rombach"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/portraits/andreas-blattmann.jpg": {
         "caption": {
@@ -82421,7 +84167,10 @@ const milestones = [
           "attribution": "Computer Vision & Learning Group, LMU Munich"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "andreas-blattmann"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/portraits/bjorn-ommer.jpg": {
         "caption": {
@@ -82455,7 +84204,10 @@ const milestones = [
           "attribution": "Computer Vision & Learning Group, LMU Munich"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "bjorn-ommer"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/annual-081-latent-diffusion-models-perceptual-compression.png": {
         "caption": {
@@ -82489,7 +84241,8 @@ const milestones = [
           "attribution": "Rombach et al.; Computer Vision & Learning Group, LMU Munich"
         },
         "role": "research-result",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-081-latent-diffusion-models_record.svg": {
         "caption": {
@@ -82526,7 +84279,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -83060,76 +84814,100 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alhussein-fawzi",
         "name": {
-          "en": "Alhussein Fawzi",
-          "zh": "侯赛因·法兹"
+          "zh": "侯赛因·法兹",
+          "en": "Alhussein Fawzi"
         },
         "role": {
-          "en": "First author of the AlphaTensor paper",
-          "zh": "AlphaTensor 论文第一作者"
+          "zh": "AlphaTensor 论文第一作者",
+          "en": "First author of the AlphaTensor paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "matej-balog",
         "name": {
-          "en": "Matej Balog",
-          "zh": "马泰·巴洛格"
+          "zh": "马泰·巴洛格",
+          "en": "Matej Balog"
         },
         "role": {
-          "en": "Co-author of the AlphaTensor paper",
-          "zh": "AlphaTensor 论文共同作者"
+          "zh": "AlphaTensor 论文共同作者",
+          "en": "Co-author of the AlphaTensor paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "aja-huang",
         "name": {
-          "en": "Aja Huang",
-          "zh": "黄士杰"
+          "zh": "黄士杰",
+          "en": "Aja Huang"
         },
         "role": {
-          "en": "Co-author of the AlphaTensor paper",
-          "zh": "AlphaTensor 论文共同作者"
+          "zh": "AlphaTensor 论文共同作者",
+          "en": "Co-author of the AlphaTensor paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "thomas-hubert",
         "name": {
-          "en": "Thomas Hubert",
-          "zh": "托马斯·于贝尔"
+          "zh": "托马斯·于贝尔",
+          "en": "Thomas Hubert"
         },
         "role": {
-          "en": "Co-author of the AlphaTensor paper",
-          "zh": "AlphaTensor 论文共同作者"
+          "zh": "AlphaTensor 论文共同作者",
+          "en": "Co-author of the AlphaTensor paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "bernardino-romera-paredes",
         "name": {
-          "en": "Bernardino Romera-Paredes",
-          "zh": "贝尔纳迪诺·罗梅拉-帕雷德斯"
+          "zh": "贝尔纳迪诺·罗梅拉-帕雷德斯",
+          "en": "Bernardino Romera-Paredes"
         },
         "role": {
-          "en": "Co-author of the AlphaTensor paper",
-          "zh": "AlphaTensor 论文共同作者"
+          "zh": "AlphaTensor 论文共同作者",
+          "en": "Co-author of the AlphaTensor paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "pushmeet-kohli",
         "name": {
-          "en": "Pushmeet Kohli",
-          "zh": "普什米特·科利"
+          "zh": "普什米特·科利",
+          "en": "Pushmeet Kohli"
         },
         "role": {
-          "en": "Co-author of the AlphaTensor paper",
-          "zh": "AlphaTensor 论文共同作者"
+          "zh": "AlphaTensor 论文共同作者",
+          "en": "Co-author of the AlphaTensor paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/pushmeet-kohli.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/pushmeet-kohli.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -83180,7 +84958,10 @@ const milestones = [
           "attribution": ""
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "pushmeet-kohli"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/annual-114-alphatensor-official-tensor.png": {
         "caption": {
@@ -83214,7 +84995,8 @@ const milestones = [
           "attribution": "Google DeepMind"
         },
         "role": "research-result",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-114-alphatensor_record.svg": {
         "caption": {
@@ -83251,7 +85033,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -83770,16 +85553,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "chelsea-finn",
         "name": {
-          "en": "Chelsea Finn",
-          "zh": "切尔西·芬恩"
+          "zh": "切尔西·芬恩",
+          "en": "Chelsea Finn"
         },
         "role": {
-          "en": "Co-author of the SayCan paper",
-          "zh": "SayCan 论文共同作者"
+          "zh": "SayCan 论文共同作者",
+          "en": "Co-author of the SayCan paper"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/chelsea-finn.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/chelsea-finn.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -83832,7 +85619,10 @@ const milestones = [
           "attribution": "Stanford University"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "chelsea-finn"
+        ]
       },
       "resources/images/benchcouncil-ai100-annual/annual-117-saycan-scoring.png": {
         "caption": {
@@ -83866,7 +85656,8 @@ const milestones = [
           "attribution": "SayCan authors / Robotics at Google"
         },
         "role": "research-result",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-117-saycan-robot-example.png": {
         "caption": {
@@ -83900,7 +85691,8 @@ const milestones = [
           "attribution": "SayCan authors / Robotics at Google"
         },
         "role": "research-result",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-117-saycan_record.svg": {
         "caption": {
@@ -83937,7 +85729,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -84455,64 +86248,84 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "hugo-touvron",
         "name": {
-          "en": "Hugo Touvron",
-          "zh": "雨果·图夫龙"
+          "zh": "雨果·图夫龙",
+          "en": "Hugo Touvron"
         },
         "role": {
-          "en": "First author of the LLaMA paper",
-          "zh": "LLaMA 论文第一作者"
+          "zh": "LLaMA 论文第一作者",
+          "en": "First author of the LLaMA paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "thibaut-lavril",
         "name": {
-          "en": "Thibaut Lavril",
-          "zh": "蒂博·拉夫里尔"
+          "zh": "蒂博·拉夫里尔",
+          "en": "Thibaut Lavril"
         },
         "role": {
-          "en": "Co-author of the LLaMA paper",
-          "zh": "LLaMA 论文共同作者"
+          "zh": "LLaMA 论文共同作者",
+          "en": "Co-author of the LLaMA paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "gautier-izacard",
         "name": {
-          "en": "Gautier Izacard",
-          "zh": "戈蒂耶·伊扎卡尔"
+          "zh": "戈蒂耶·伊扎卡尔",
+          "en": "Gautier Izacard"
         },
         "role": {
-          "en": "Co-author of the LLaMA paper",
-          "zh": "LLaMA 论文共同作者"
+          "zh": "LLaMA 论文共同作者",
+          "en": "Co-author of the LLaMA paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "edouard-grave",
         "name": {
-          "en": "Edouard Grave",
-          "zh": "爱德华·格拉夫"
+          "zh": "爱德华·格拉夫",
+          "en": "Edouard Grave"
         },
         "role": {
-          "en": "Co-author of the LLaMA paper",
-          "zh": "LLaMA 论文共同作者"
+          "zh": "LLaMA 论文共同作者",
+          "en": "Co-author of the LLaMA paper"
         },
+        "avatar": "resources/images/external/ai100-2023-llama/edouard-grave.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-llama/edouard-grave.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "guillaume-lample",
         "name": {
-          "en": "Guillaume Lample",
-          "zh": "纪尧姆·朗普勒"
+          "zh": "纪尧姆·朗普勒",
+          "en": "Guillaume Lample"
         },
         "role": {
-          "en": "Co-author of the LLaMA paper",
-          "zh": "LLaMA 论文共同作者"
+          "zh": "LLaMA 论文共同作者",
+          "en": "Co-author of the LLaMA paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -84563,7 +86376,10 @@ const milestones = [
           "attribution": "Edouard Grave GitHub profile"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "edouard-grave"
+        ]
       },
       "resources/images/external/ai100-2023-llama/llama-official-release-image.jpg": {
         "caption": {
@@ -84597,7 +86413,8 @@ const milestones = [
           "attribution": "Meta AI"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-035-llama_record.svg": {
         "caption": {
@@ -84634,7 +86451,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -85153,16 +86971,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "openai-company",
         "name": {
-          "en": "OpenAI",
-          "zh": "OpenAI"
+          "zh": "OpenAI",
+          "en": "OpenAI"
         },
         "role": {
-          "en": "Company behind GPT-4 and ChatGPT",
-          "zh": "GPT-4 与 ChatGPT 的开发公司"
+          "zh": "GPT-4 与 ChatGPT 的开发公司",
+          "en": "Company behind GPT-4 and ChatGPT"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png",
+        "avatarStyle": "",
         "figureType": "product",
-        "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -85211,7 +87033,8 @@ const milestones = [
           "attribution": "OpenAI, GPT-4 Technical Report (2023), Figure 4"
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-051-gpt-4_record.svg": {
         "caption": {
@@ -85248,7 +87071,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -85801,16 +87625,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "claude-product",
         "name": {
-          "en": "Claude",
-          "zh": "Claude"
+          "zh": "Claude",
+          "en": "Claude"
         },
         "role": {
-          "en": "Anthropic AI assistant",
-          "zh": "Anthropic AI 助手"
+          "zh": "Anthropic AI 助手",
+          "en": "Anthropic AI assistant"
         },
+        "avatar": "resources/images/benchcouncil-ai100-annual/claude-logo.png",
+        "avatarStyle": "",
         "figureType": "product",
-        "avatar": "resources/images/benchcouncil-ai100-annual/claude-logo.png"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -85861,7 +87689,8 @@ const milestones = [
           "attribution": "Anthropic"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/ai100-2023-claude/claude-poe-chat-interface.png": {
         "caption": {
@@ -85895,7 +87724,8 @@ const milestones = [
           "attribution": "Anthropic / Poe"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-057-claude_record.svg": {
         "caption": {
@@ -85932,7 +87762,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -86499,28 +88330,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "junnan-li",
         "name": {
-          "en": "Junnan Li",
-          "zh": "李俊楠"
+          "zh": "李俊楠",
+          "en": "Junnan Li"
         },
         "role": {
-          "en": "First author of the BLIP-2 paper",
-          "zh": "BLIP-2 论文第一作者"
+          "zh": "BLIP-2 论文第一作者",
+          "en": "First author of the BLIP-2 paper"
         },
+        "avatar": "resources/images/external/ai100-2023-blip-2/junnan-li.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-blip-2/junnan-li.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "steven-hoi",
         "name": {
-          "en": "Steven Hoi",
-          "zh": "许彬"
+          "zh": "许彬",
+          "en": "Steven Hoi"
         },
         "role": {
-          "en": "Co-author of the BLIP-2 paper",
-          "zh": "BLIP-2 论文共同作者"
+          "zh": "BLIP-2 论文共同作者",
+          "en": "Co-author of the BLIP-2 paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -86571,7 +88410,10 @@ const milestones = [
           "attribution": "Junnan Li GitHub profile"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "junnan-li"
+        ]
       },
       "resources/images/external/ai100-2023-blip-2/blip2-official-architecture.png": {
         "caption": {
@@ -86605,7 +88447,8 @@ const milestones = [
           "attribution": "Li et al. / Salesforce Research"
         },
         "role": "historical-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-028-blip-2_record.svg": {
         "caption": {
@@ -86642,7 +88485,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -87182,40 +89026,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "haotian-liu",
         "name": {
-          "en": "Haotian Liu",
-          "zh": "刘昊天"
+          "zh": "刘昊天",
+          "en": "Haotian Liu"
         },
         "role": {
-          "en": "First author of the LLaVA paper",
-          "zh": "LLaVA 论文第一作者"
+          "zh": "LLaVA 论文第一作者",
+          "en": "First author of the LLaVA paper"
         },
+        "avatar": "resources/images/external/ai100-2023-llava/haotian-liu.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-llava/haotian-liu.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "chunyuan-li",
         "name": {
-          "en": "Chunyuan Li",
-          "zh": "李春源"
+          "zh": "李春源",
+          "en": "Chunyuan Li"
         },
         "role": {
-          "en": "Co-first author of the LLaVA paper",
-          "zh": "LLaVA 论文共同第一作者"
+          "zh": "LLaVA 论文共同第一作者",
+          "en": "Co-first author of the LLaVA paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yong-jae-lee",
         "name": {
-          "en": "Yong Jae Lee",
-          "zh": "李永宰"
+          "zh": "李永宰",
+          "en": "Yong Jae Lee"
         },
         "role": {
-          "en": "Co-author of the LLaVA paper",
-          "zh": "LLaVA 论文共同作者"
+          "zh": "LLaVA 论文共同作者",
+          "en": "Co-author of the LLaVA paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -87266,7 +89122,10 @@ const milestones = [
           "attribution": "Haotian Liu academic homepage"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "haotian-liu"
+        ]
       },
       "resources/images/external/ai100-2023-llava/llava-official-architecture.png": {
         "caption": {
@@ -87300,7 +89159,8 @@ const milestones = [
           "attribution": "Liu et al., LLaVA project"
         },
         "role": "historical-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-063-llava_record.svg": {
         "caption": {
@@ -87337,7 +89197,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -87873,28 +89734,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "danny-driess",
         "name": {
-          "en": "Danny Driess",
-          "zh": "丹尼·德里斯"
+          "zh": "丹尼·德里斯",
+          "en": "Danny Driess"
         },
         "role": {
-          "en": "First author of the PaLM-E paper",
-          "zh": "PaLM-E 论文第一作者"
+          "zh": "PaLM-E 论文第一作者",
+          "en": "First author of the PaLM-E paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "pete-florence",
         "name": {
-          "en": "Pete Florence",
-          "zh": "皮特·弗洛伦斯"
+          "zh": "皮特·弗洛伦斯",
+          "en": "Pete Florence"
         },
         "role": {
-          "en": "Co-author of the PaLM-E paper",
-          "zh": "PaLM-E 论文共同作者"
+          "zh": "PaLM-E 论文共同作者",
+          "en": "Co-author of the PaLM-E paper"
         },
+        "avatar": "resources/images/external/ai100-2023-palm-e/pete-florence.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-palm-e/pete-florence.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -87947,7 +89816,10 @@ const milestones = [
           "attribution": "Pete Florence personal homepage"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "pete-florence"
+        ]
       },
       "resources/images/external/ai100-2023-palm-e/palm-e-official-approach.png": {
         "caption": {
@@ -87981,7 +89853,8 @@ const milestones = [
           "attribution": "Driess et al., PaLM-E project"
         },
         "role": "historical-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/ai100-2023-palm-e/palm-e-official-teaser.png": {
         "caption": {
@@ -88015,7 +89888,8 @@ const milestones = [
           "attribution": "Driess et al., PaLM-E project"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-037-palm-e_record.svg": {
         "caption": {
@@ -88052,7 +89926,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -88587,28 +90462,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "lvmin-zhang",
         "name": {
-          "en": "Lvmin Zhang",
-          "zh": "张吕敏"
+          "zh": "张吕敏",
+          "en": "Lvmin Zhang"
         },
         "role": {
-          "en": "First author of the ControlNet paper",
-          "zh": "ControlNet 论文第一作者"
+          "zh": "ControlNet 论文第一作者",
+          "en": "First author of the ControlNet paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "maneesh-agrawala",
         "name": {
-          "en": "Maneesh Agrawala",
-          "zh": "马尼什·阿格拉瓦拉"
+          "zh": "马尼什·阿格拉瓦拉",
+          "en": "Maneesh Agrawala"
         },
         "role": {
-          "en": "Co-author of the ControlNet paper",
-          "zh": "ControlNet 论文共同作者"
+          "zh": "ControlNet 论文共同作者",
+          "en": "Co-author of the ControlNet paper"
         },
+        "avatar": "resources/images/external/ai100-2023-controlnet/maneesh-agrawala.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-controlnet/maneesh-agrawala.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -88661,7 +90544,10 @@ const milestones = [
           "attribution": "Maneesh Agrawala academic homepage"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "maneesh-agrawala"
+        ]
       },
       "resources/images/external/ai100-2023-controlnet/controlnet-official-full-architecture.png": {
         "caption": {
@@ -88695,7 +90581,8 @@ const milestones = [
           "attribution": "Zhang, Rao and Agrawala, ControlNet"
         },
         "role": "historical-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/ai100-2023-controlnet/controlnet-official-core-block.png": {
         "caption": {
@@ -88729,7 +90616,8 @@ const milestones = [
           "attribution": "Zhang, Rao and Agrawala, ControlNet"
         },
         "role": "paper-figure",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-094-controlnet_record.svg": {
         "caption": {
@@ -88766,7 +90654,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -89322,76 +91211,100 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alexander-kirillov",
         "name": {
-          "en": "Alexander Kirillov",
-          "zh": "亚历山大·基里洛夫"
+          "zh": "亚历山大·基里洛夫",
+          "en": "Alexander Kirillov"
         },
         "role": {
-          "en": "First author of the Segment Anything paper",
-          "zh": "Segment Anything 论文第一作者"
+          "zh": "Segment Anything 论文第一作者",
+          "en": "First author of the Segment Anything paper"
         },
+        "avatar": "resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "eric-mintun",
         "name": {
-          "en": "Eric Mintun",
-          "zh": "埃里克·明顿"
+          "zh": "埃里克·明顿",
+          "en": "Eric Mintun"
         },
         "role": {
-          "en": "Co-author of the Segment Anything paper",
-          "zh": "Segment Anything 论文共同作者"
+          "zh": "Segment Anything 论文共同作者",
+          "en": "Co-author of the Segment Anything paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "nikhila-ravi",
         "name": {
-          "en": "Nikhila Ravi",
-          "zh": "尼基拉·拉维"
+          "zh": "尼基拉·拉维",
+          "en": "Nikhila Ravi"
         },
         "role": {
-          "en": "Co-author of the Segment Anything paper",
-          "zh": "Segment Anything 论文共同作者"
+          "zh": "Segment Anything 论文共同作者",
+          "en": "Co-author of the Segment Anything paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "hanzi-mao",
         "name": {
-          "en": "Hanzi Mao",
-          "zh": "汉兹·毛"
+          "zh": "汉兹·毛",
+          "en": "Hanzi Mao"
         },
         "role": {
-          "en": "Co-author of the Segment Anything paper",
-          "zh": "Segment Anything 论文共同作者"
+          "zh": "Segment Anything 论文共同作者",
+          "en": "Co-author of the Segment Anything paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "piotr-dollar",
         "name": {
-          "en": "Piotr Dollar",
-          "zh": "彼得·多拉尔"
+          "zh": "彼得·多拉尔",
+          "en": "Piotr Dollar"
         },
         "role": {
-          "en": "Co-author of the Segment Anything paper",
-          "zh": "Segment Anything 论文共同作者"
+          "zh": "Segment Anything 论文共同作者",
+          "en": "Co-author of the Segment Anything paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ross-girshick",
         "name": {
-          "en": "Ross Girshick",
-          "zh": "罗斯·格希克"
+          "zh": "罗斯·格希克",
+          "en": "Ross Girshick"
         },
         "role": {
-          "en": "Co-author of the Segment Anything paper",
-          "zh": "Segment Anything 论文共同作者"
+          "zh": "Segment Anything 论文共同作者",
+          "en": "Co-author of the Segment Anything paper"
         },
+        "avatar": "resources/images/external/ai100-2023-segment-anything/ross-girshick.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-segment-anything/ross-girshick.jpg"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -89442,7 +91355,10 @@ const milestones = [
           "attribution": "Ross Girshick personal homepage"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ross-girshick"
+        ]
       },
       "resources/images/external/ai100-2023-segment-anything/sam-official-model-diagram.png": {
         "caption": {
@@ -89476,7 +91392,8 @@ const milestones = [
           "attribution": "Meta AI Research, Segment Anything"
         },
         "role": "historical-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-101-segment-anything_record.svg": {
         "caption": {
@@ -89513,7 +91430,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -90054,16 +91972,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "runway-company",
         "name": {
-          "en": "Runway",
-          "zh": "Runway"
+          "zh": "Runway",
+          "en": "Runway"
         },
         "role": {
-          "en": "Company behind the Gen-2 video generation system",
-          "zh": "Gen-2 视频生成系统开发公司"
+          "zh": "Gen-2 视频生成系统开发公司",
+          "en": "Company behind the Gen-2 video generation system"
         },
+        "avatar": "resources/images/external/ai100-2023-gen2/runway-logo.png",
+        "avatarStyle": "",
         "figureType": "product",
-        "avatar": "resources/images/external/ai100-2023-gen2/runway-logo.png"
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -90112,7 +92034,8 @@ const milestones = [
           "attribution": "Runway"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-087-gen2_record.svg": {
         "caption": {
@@ -90149,7 +92072,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -90772,64 +92696,84 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "zeming-lin",
         "name": {
-          "en": "Zeming Lin",
-          "zh": "林泽明"
+          "zh": "林泽明",
+          "en": "Zeming Lin"
         },
         "role": {
-          "en": "First author of the ESMFold paper",
-          "zh": "ESMFold 论文第一作者"
+          "zh": "ESMFold 论文第一作者",
+          "en": "First author of the ESMFold paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "halil-akin",
         "name": {
-          "en": "Halil Akin",
-          "zh": "哈利勒·阿金"
+          "zh": "哈利勒·阿金",
+          "en": "Halil Akin"
         },
         "role": {
-          "en": "Co-author of the ESMFold paper",
-          "zh": "ESMFold 论文共同作者"
+          "zh": "ESMFold 论文共同作者",
+          "en": "Co-author of the ESMFold paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "roshan-rao",
         "name": {
-          "en": "Roshan Rao",
-          "zh": "罗尚·拉奥"
+          "zh": "罗尚·拉奥",
+          "en": "Roshan Rao"
         },
         "role": {
-          "en": "Co-author of the ESMFold paper",
-          "zh": "ESMFold 论文共同作者"
+          "zh": "ESMFold 论文共同作者",
+          "en": "Co-author of the ESMFold paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "brian-hie",
         "name": {
-          "en": "Brian Hie",
-          "zh": "布赖恩·希"
+          "zh": "布赖恩·希",
+          "en": "Brian Hie"
         },
         "role": {
-          "en": "Co-author of the ESMFold paper",
-          "zh": "ESMFold 论文共同作者"
+          "zh": "ESMFold 论文共同作者",
+          "en": "Co-author of the ESMFold paper"
         },
+        "avatar": "resources/images/external/ai100-2023-esmfold/brian-hie.jpg",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": "resources/images/external/ai100-2023-esmfold/brian-hie.jpg"
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "alexander-rives",
         "name": {
-          "en": "Alexander Rives",
-          "zh": "亚历山大·里夫斯"
+          "zh": "亚历山大·里夫斯",
+          "en": "Alexander Rives"
         },
         "role": {
-          "en": "Co-author of the ESMFold paper",
-          "zh": "ESMFold 论文共同作者"
+          "zh": "ESMFold 论文共同作者",
+          "en": "Co-author of the ESMFold paper"
         },
+        "avatar": "",
+        "avatarStyle": "",
         "figureType": "person",
-        "avatar": ""
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -90880,7 +92824,10 @@ const milestones = [
           "attribution": "Stanford Profiles"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "brian-hie"
+        ]
       },
       "resources/images/external/ai100-2023-esmfold/esmfold-paper-figure-2.jpg": {
         "caption": {
@@ -90914,7 +92861,8 @@ const milestones = [
           "attribution": "Lin et al., ESMFold preprint (2022), Figure 2"
         },
         "role": "historical-diagram",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/benchcouncil-ai100-annual/annual-110-esmfold_record.svg": {
         "caption": {
@@ -90951,7 +92899,8 @@ const milestones = [
           }
         },
         "role": "annual-achievement-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -91492,56 +93441,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "john-mccarthy",
         "name": {
-          "en": "John McCarthy",
-          "zh": "约翰·麦卡锡"
+          "zh": "约翰·麦卡锡",
+          "en": "John McCarthy"
         },
         "role": {
-          "en": "Coined the term \"AI\"",
-          "zh": "提出\"AI\"术语"
+          "zh": "提出\"AI\"术语",
+          "en": "Coined the term \"AI\""
         },
         "avatar": "resources/images/figures/historical/john-mccarthy-1956-v2.png",
         "avatarStyle": "transform: scale(1.08); transform-origin: 50% 45%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "marvin-minsky",
         "name": {
-          "en": "Marvin Minsky",
-          "zh": "马文·明斯基"
+          "zh": "马文·明斯基",
+          "en": "Marvin Minsky"
         },
         "role": {
-          "en": "Cognitive scientist",
-          "zh": "认知科学家"
+          "zh": "认知科学家",
+          "en": "Cognitive scientist"
         },
         "avatar": "resources/images/figures/historical/marvin-minsky-1956-v2.png",
         "avatarStyle": "transform: scale(1.06); transform-origin: 50% 46%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       },
       {
+        "id": "claude-shannon",
         "name": {
-          "en": "Claude Shannon",
-          "zh": "克劳德·香农"
+          "zh": "克劳德·香农",
+          "en": "Claude Shannon"
         },
         "role": {
-          "en": "Founder of information theory",
-          "zh": "信息论创始人"
+          "zh": "信息论创始人",
+          "en": "Founder of information theory"
         },
         "avatar": "resources/images/figures/historical/claude-shannon-1956-v2.png",
         "avatarStyle": "transform: scale(1.06); transform-origin: 50% 45%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "nathaniel-rochester",
         "name": {
-          "en": "Nathaniel Rochester",
-          "zh": "纳撒尼尔·罗切斯特"
+          "zh": "纳撒尼尔·罗切斯特",
+          "en": "Nathaniel Rochester"
         },
         "role": {
-          "en": "IBM architect",
-          "zh": "IBM 架构师"
+          "zh": "IBM 架构师",
+          "en": "IBM architect"
         },
         "avatar": "resources/images/figures/historical/nathaniel-rochester-1956-v2.png",
         "avatarStyle": "transform: scale(1.06); transform-origin: 50% 45%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -91595,7 +93556,8 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg": {
         "caption": {
@@ -91619,7 +93581,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg": {
         "caption": {
@@ -91643,7 +93606,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png": {
         "caption": {
@@ -91667,7 +93631,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -91884,17 +93849,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "frank-rosenblatt",
         "name": {
-          "en": "Frank Rosenblatt",
-          "zh": "弗兰克·罗森布拉特"
+          "zh": "弗兰克·罗森布拉特",
+          "en": "Frank Rosenblatt"
         },
         "role": {
-          "en": "Inventor of the perceptron",
-          "zh": "感知机发明者"
+          "zh": "感知机发明者",
+          "en": "Inventor of the perceptron"
         },
         "avatar": "resources/images/figures/frank-rosenblatt.png",
         "avatarStyle": "transform: scale(1.18); transform-origin: 44% 38%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -91952,7 +93920,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "frank-rosenblatt"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg": {
         "caption": {
@@ -91976,7 +93947,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg": {
         "caption": {
@@ -92000,7 +93972,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg": {
         "caption": {
@@ -92024,7 +93997,10 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "frank-rosenblatt"
+        ]
       },
       "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png": {
         "caption": {
@@ -92048,7 +94024,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg": {
         "caption": {
@@ -92072,7 +94049,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png": {
         "caption": {
@@ -92096,7 +94074,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -92431,17 +94410,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "marvin-minsky",
         "name": {
-          "en": "Marvin Minsky",
-          "zh": "马文·明斯基"
+          "zh": "马文·明斯基",
+          "en": "Marvin Minsky"
         },
         "role": {
-          "en": "Author of Perceptrons",
-          "zh": "《感知器》作者"
+          "zh": "《感知器》作者",
+          "en": "Author of Perceptrons"
         },
         "avatar": "resources/images/figures/historical/marvin-minsky-1968.png",
         "avatarStyle": "transform: scale(1.32); transform-origin: 50% 35%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -92491,7 +94473,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "marvin-minsky"
+        ]
       },
       "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg": {
         "caption": {
@@ -92515,7 +94500,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_01.png": {
         "caption": {
@@ -92539,7 +94525,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -92737,18 +94724,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "kunihiko-fukushima",
         "name": {
-          "en": "Kunihiko Fukushima",
-          "zh": "福岛邦彦"
+          "zh": "福岛邦彦",
+          "en": "Kunihiko Fukushima"
         },
         "role": {
-          "en": "Creator of the neocognitron",
-          "zh": "Neocognitron 提出者"
+          "zh": "Neocognitron 提出者",
+          "en": "Creator of the neocognitron"
         },
         "avatar": "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -92791,7 +94780,10 @@ const milestones = [
           "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "kunihiko-fukushima"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg": {
         "caption": {
@@ -92815,7 +94807,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -93221,18 +95214,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "john-hopfield",
         "name": {
-          "en": "John Hopfield",
-          "zh": "约翰·J·霍普菲尔德"
+          "zh": "约翰·J·霍普菲尔德",
+          "en": "John Hopfield"
         },
         "role": {
-          "en": "Inventor of Hopfield networks",
-          "zh": "Hopfield 网络提出者"
+          "zh": "Hopfield 网络提出者",
+          "en": "Inventor of Hopfield networks"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -93271,7 +95266,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "john-hopfield"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg": {
         "caption": {
@@ -93295,7 +95293,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg": {
         "caption": {
@@ -93319,7 +95318,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -93697,43 +95697,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "david-rumelhart",
         "name": {
-          "en": "David Rumelhart",
-          "zh": "戴维·鲁梅尔哈特"
+          "zh": "大卫·鲁梅尔哈特",
+          "en": "David Rumelhart"
         },
         "role": {
-          "en": "Backpropagation author",
-          "zh": "BP算法作者"
+          "zh": "BP算法作者",
+          "en": "Backpropagation author"
         },
         "avatar": "resources/images/figures/david-rumelhart.jpg",
         "avatarStyle": "transform: scale(1.28); transform-origin: 50% 35%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "geoffrey-hinton",
         "name": {
-          "en": "Geoffrey Hinton",
-          "zh": "杰弗里·辛顿"
+          "zh": "杰弗里·辛顿",
+          "en": "Geoffrey Hinton"
         },
         "role": {
-          "en": "Pioneer of deep learning",
-          "zh": "深度学习之父"
+          "zh": "深度学习之父",
+          "en": "Pioneer of deep learning"
         },
         "avatar": "resources/images/figures/historical/geoffrey-hinton-1986.png",
         "avatarStyle": "transform: scale(1.24); transform-origin: 50% 42%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       },
       {
+        "id": "ronald-williams",
         "name": {
-          "en": "Ronald Williams",
-          "zh": "罗纳德·威廉姆斯"
+          "zh": "罗纳德·威廉姆斯",
+          "en": "Ronald Williams"
         },
         "role": {
-          "en": "Backpropagation co-author",
-          "zh": "BP算法共同作者"
+          "zh": "BP算法共同作者",
+          "en": "Backpropagation co-author"
         },
         "avatar": "resources/images/figures/ronald-williams.jpg",
         "avatarStyle": "transform: scale(1.16); transform-origin: 50% 36%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -93787,7 +95796,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "david-rumelhart"
+        ]
       },
       "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png": {
         "caption": {
@@ -93811,7 +95823,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png": {
         "caption": {
@@ -93835,7 +95848,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "geoffrey-hinton"
+        ]
       },
       "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png": {
         "caption": {
@@ -93859,7 +95875,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -94056,30 +96073,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "michael-i-jordan",
         "name": {
-          "en": "Michael I. Jordan",
-          "zh": "迈克尔·I·乔丹"
+          "zh": "迈克尔·I·乔丹",
+          "en": "Michael I. Jordan"
         },
         "role": {
-          "en": "The creator of Jordan Network",
-          "zh": "乔丹网络提出者"
+          "zh": "乔丹网络提出者",
+          "en": "The creator of Jordan Network"
         },
         "avatar": "resources/images/figures/michael-i-jordan.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jeffrey-elman",
         "name": {
-          "en": "Jeffrey Elman",
-          "zh": "杰弗里·埃尔曼"
+          "zh": "杰弗里·埃尔曼",
+          "en": "Jeffrey Elman"
         },
         "role": {
-          "en": "The creator of Simple RNN",
-          "zh": "简单循环神经网络提出者"
+          "zh": "简单循环神经网络提出者",
+          "en": "The creator of Simple RNN"
         },
         "avatar": "resources/images/figures/jeffrey-elman.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -94127,7 +96150,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "michael-i-jordan"
+        ]
       },
       "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png": {
         "caption": {
@@ -94151,7 +96177,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -94350,17 +96377,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "yann-lecun",
         "name": {
-          "en": "Yann LeCun",
-          "zh": "杨立昆"
+          "zh": "杨立昆",
+          "en": "Yann LeCun"
         },
         "role": {
-          "en": "LeNet lead researcher",
-          "zh": "LeNet 主要研究者"
+          "zh": "LeNet 主要研究者",
+          "en": "LeNet lead researcher"
         },
         "avatar": "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
         "avatarStyle": "transform: scale(2.28); transform-origin: 52% 43%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -94420,7 +96450,10 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yann-lecun"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg": {
         "caption": {
@@ -94444,7 +96477,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg": {
         "caption": {
@@ -94468,7 +96502,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
         "caption": {
@@ -94492,7 +96527,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yann-lecun"
+        ]
       },
       "resources/images/1989-cnn/people/1989-cnn_people_02.jpg": {
         "caption": {
@@ -94516,7 +96554,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yann-lecun"
+        ]
       }
     },
     "achievement": {
@@ -94883,30 +96924,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "sepp-hochreiter",
         "name": {
-          "en": "Sepp Hochreiter",
-          "zh": "塞普·霍赫赖特"
+          "zh": "塞普·霍赫赖特",
+          "en": "Sepp Hochreiter"
         },
         "role": {
-          "en": "LSTM co-author",
-          "zh": "LSTM 共同作者"
+          "zh": "LSTM 共同作者",
+          "en": "LSTM co-author"
         },
         "avatar": "resources/images/figures/sepp-hochreiter.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "juergen-schmidhuber",
         "name": {
-          "en": "Jürgen Schmidhuber",
-          "zh": "尤尔根·施密德胡伯"
+          "zh": "尤尔根·施密德胡伯",
+          "en": "Jürgen Schmidhuber"
         },
         "role": {
-          "en": "LSTM co-author",
-          "zh": "LSTM 共同作者"
+          "zh": "LSTM 共同作者",
+          "en": "LSTM co-author"
         },
         "avatar": "resources/images/1997-lstm/people/1997-lstm_people_01.png",
         "avatarStyle": "transform: scale(1.08); transform-origin: 50% 42%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -94960,7 +97007,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "sepp-hochreiter"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg": {
         "caption": {
@@ -94984,7 +97034,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
         "caption": {
@@ -95008,7 +97059,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png": {
         "caption": {
@@ -95032,7 +97084,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/1997-lstm/people/1997-lstm_people_01.png": {
         "caption": {
@@ -95056,7 +97109,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "juergen-schmidhuber"
+        ]
       }
     },
     "achievement": {
@@ -95427,46 +97483,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "geoffrey-hinton",
         "name": {
-          "en": "Geoffrey Hinton",
-          "zh": "杰弗里·辛顿"
+          "zh": "杰弗里·辛顿",
+          "en": "Geoffrey Hinton"
         },
         "role": {
-          "en": "Co-author of deep belief net learning",
-          "zh": "深度置信网络学习共同作者"
+          "zh": "深度置信网络学习共同作者",
+          "en": "Co-author of deep belief net learning"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yee-whye-the",
         "name": {
-          "en": "Yee-Whye The",
-          "zh": "义威·特"
+          "zh": "义威·特",
+          "en": "Yee-Whye The"
         },
         "role": {
-          "en": "DBN co-author",
-          "zh": "DBN 共同作者"
+          "zh": "DBN 共同作者",
+          "en": "DBN co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ruslan-salakhutdinov",
         "name": {
-          "en": "Ruslan Salakhutdinov",
-          "zh": "鲁斯兰·萨拉赫特迪诺夫"
+          "zh": "鲁斯兰·萨拉赫特迪诺夫",
+          "en": "Ruslan Salakhutdinov"
         },
         "role": {
-          "en": "DBN co-author",
-          "zh": "DBN 共同作者"
+          "zh": "DBN 共同作者",
+          "en": "DBN co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -95505,7 +97567,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "geoffrey-hinton"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg": {
         "caption": {
@@ -95529,7 +97594,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg": {
         "caption": {
@@ -95553,7 +97619,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -95928,46 +97995,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jia-deng",
         "name": {
-          "en": "Jia Deng",
-          "zh": "邓嘉"
+          "zh": "邓嘉",
+          "en": "Jia Deng"
         },
         "role": {
-          "en": "First author of ImageNet paper",
-          "zh": "ImageNet 论文第一作者"
+          "zh": "ImageNet 论文第一作者",
+          "en": "First author of ImageNet paper"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "li-fei-fei",
         "name": {
-          "en": "Li Fei-Fei",
-          "zh": "李飞飞"
+          "zh": "李飞飞",
+          "en": "Li Fei-Fei"
         },
         "role": {
-          "en": "ImageNet project leader",
-          "zh": "ImageNet 项目主要推动者"
+          "zh": "ImageNet 项目主要推动者",
+          "en": "ImageNet project leader"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "olga-russakovsky",
         "name": {
-          "en": "Olga Russakovsky",
-          "zh": "奥尔加·鲁萨科夫斯基"
+          "zh": "奥尔加·鲁萨科夫斯基",
+          "en": "Olga Russakovsky"
         },
         "role": {
-          "en": "ImageNet co-author",
-          "zh": "ImageNet 共同作者"
+          "zh": "ImageNet 共同作者",
+          "en": "ImageNet co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -96006,7 +98079,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "li-fei-fei"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg": {
         "caption": {
@@ -96030,7 +98106,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg": {
         "caption": {
@@ -96054,7 +98131,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -96436,43 +98514,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alex-krizhevsky",
         "name": {
-          "en": "Alex Krizhevsky",
-          "zh": "亚历克斯·克里热夫斯基"
+          "zh": "亚历克斯·克里热夫斯基",
+          "en": "Alex Krizhevsky"
         },
         "role": {
-          "en": "AlexNet lead author",
-          "zh": "AlexNet 主要作者"
+          "zh": "AlexNet 主要作者",
+          "en": "AlexNet lead author"
         },
         "avatar": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "ilya-sutskever",
         "name": {
-          "en": "Ilya Sutskever",
-          "zh": "伊利亚·苏茨克维"
+          "zh": "伊利亚·苏茨克维",
+          "en": "Ilya Sutskever"
         },
         "role": {
-          "en": "AlexNet co-author",
-          "zh": "AlexNet 共同作者"
+          "zh": "AlexNet 共同作者",
+          "en": "AlexNet co-author"
         },
-        "avatar": "",
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "geoffrey-hinton",
         "name": {
-          "en": "Geoffrey Hinton",
-          "zh": "杰弗里·辛顿"
+          "zh": "杰弗里·辛顿",
+          "en": "Geoffrey Hinton"
         },
         "role": {
-          "en": "AlexNet co-author and advisor",
-          "zh": "AlexNet 共同作者与导师"
+          "zh": "AlexNet 共同作者与导师",
+          "en": "AlexNet co-author and advisor"
         },
         "avatar": "resources/images/figures/geoffrey-hinton.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -96534,7 +98621,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "alex-krizhevsky"
+        ]
       },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
         "caption": {
@@ -96558,7 +98648,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png": {
         "caption": {
@@ -96582,7 +98673,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
         "caption": {
@@ -96606,7 +98698,8 @@ const milestones = [
           }
         },
         "role": "source-card",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -96977,32 +99070,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "karen-simonyan",
         "name": {
-          "en": "Karen Simonyan",
-          "zh": "卡伦·西莫尼扬"
+          "zh": "卡伦·西莫尼扬",
+          "en": "Karen Simonyan"
         },
         "role": {
-          "en": "Co-author of the VGG paper",
-          "zh": "VGG 论文共同作者"
+          "zh": "VGG 论文共同作者",
+          "en": "Co-author of the VGG paper"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "andrew-zisserman",
         "name": {
-          "en": "Andrew Zisserman",
-          "zh": "安德鲁·齐瑟曼"
+          "zh": "安德鲁·齐瑟曼",
+          "en": "Andrew Zisserman"
         },
         "role": {
-          "en": "Co-author and Visual Geometry Group lead",
-          "zh": "共同作者，视觉几何组负责人"
+          "zh": "共同作者，视觉几何组负责人",
+          "en": "Co-author and Visual Geometry Group lead"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -97041,7 +99138,10 @@ const milestones = [
           }
         },
         "role": "source-card",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "andrew-zisserman"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg": {
         "caption": {
@@ -97065,7 +99165,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg": {
         "caption": {
@@ -97089,7 +99190,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -97464,45 +99566,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "christian-szegedy",
         "name": {
-          "en": "Christian Szegedy",
-          "zh": "克里斯蒂安·塞格迪"
+          "zh": "克里斯蒂安·塞格迪",
+          "en": "Christian Szegedy"
         },
         "role": {
-          "en": "Lead author of the GoogLeNet paper",
-          "zh": "GoogLeNet 论文第一作者"
+          "zh": "GoogLeNet 论文第一作者",
+          "en": "Lead author of the GoogLeNet paper"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "vincent-vanhoucke",
         "name": {
-          "en": "Vincent Vanhoucke",
-          "zh": "文森特·范霍克"
+          "zh": "文森特·范霍克",
+          "en": "Vincent Vanhoucke"
         },
         "role": {
-          "en": "GooleNet (Inception) co-author",
-          "zh": "GooleNet (Inception) 共同作者"
+          "zh": "GooleNet (Inception) 共同作者",
+          "en": "GooleNet (Inception) co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "google-research-team",
         "name": {
-          "en": "Google research team",
-          "zh": "谷歌 研究团队"
+          "zh": "谷歌 研究团队",
+          "en": "Google research team"
         },
         "role": {
-          "en": "Developed the Inception architecture",
-          "zh": "开发 Inception 架构"
+          "zh": "开发 Inception 架构",
+          "en": "Developed the Inception architecture"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -97541,7 +99650,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "christian-szegedy"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg": {
         "caption": {
@@ -97565,7 +99677,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg": {
         "caption": {
@@ -97589,7 +99702,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -97967,30 +100081,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "ian-goodfellow",
         "name": {
-          "en": "Ian Goodfellow",
-          "zh": "伊恩·古德费洛"
+          "zh": "伊恩·古德费洛",
+          "en": "Ian Goodfellow"
         },
         "role": {
-          "en": "GAN lead author",
-          "zh": "GAN 主要作者"
+          "zh": "GAN 主要作者",
+          "en": "GAN lead author"
         },
         "avatar": "resources/images/figures/ian-goodfellow.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yoshua-bengio",
         "name": {
-          "en": "Yoshua Bengio",
-          "zh": "约书亚·本吉奥"
+          "zh": "约书亚·本吉奥",
+          "en": "Yoshua Bengio"
         },
         "role": {
-          "en": "GAN co-author and advisor",
-          "zh": "GAN 共同作者与导师"
+          "zh": "GAN 共同作者与导师",
+          "en": "GAN co-author and advisor"
         },
         "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -98040,7 +100160,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ian-goodfellow"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg": {
         "caption": {
@@ -98064,7 +100187,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/2014-gan/architecture/2014-gan_architecture_01.png": {
         "caption": {
@@ -98088,7 +100212,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -98459,43 +100584,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "dzmitry-bahdanau",
         "name": {
-          "en": "Dzmitry Bahdanau",
-          "zh": "兹米特里·巴赫达瑙"
+          "zh": "兹米特里·巴赫达瑙",
+          "en": "Dzmitry Bahdanau"
         },
         "role": {
-          "en": "Lead author of neural attention paper",
-          "zh": "神经注意力论文主要作者"
+          "zh": "神经注意力论文主要作者",
+          "en": "Lead author of neural attention paper"
         },
         "avatar": "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "kyunghyun-cho",
         "name": {
-          "en": "Kyunghyun Cho",
-          "zh": "赵京贤"
+          "zh": "赵京贤",
+          "en": "Kyunghyun Cho"
         },
         "role": {
-          "en": "Neural attention paper co-author",
-          "zh": "神经注意力论文共同作者"
+          "zh": "神经注意力论文共同作者",
+          "en": "Neural attention paper co-author"
         },
         "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "yoshua-bengio",
         "name": {
-          "en": "Yoshua Bengio",
-          "zh": "约书亚·本吉奥"
+          "zh": "约书亚·本吉奥",
+          "en": "Yoshua Bengio"
         },
         "role": {
-          "en": "Neural attention paper co-author",
-          "zh": "神经注意力论文共同作者"
+          "zh": "神经注意力论文共同作者",
+          "en": "Neural attention paper co-author"
         },
         "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -98559,7 +100693,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "dzmitry-bahdanau"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg": {
         "caption": {
@@ -98583,7 +100720,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/2014-attention/architecture/2014-attention_architecture_01.png": {
         "caption": {
@@ -98607,7 +100745,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg": {
         "caption": {
@@ -98639,7 +100778,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "kyunghyun-cho"
+        ]
       },
       "resources/images/2014-attention/people/2014-attention_people_01.png": {
         "caption": {
@@ -98663,7 +100805,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "yoshua-bengio"
+        ]
       }
     },
     "achievement": {
@@ -99030,43 +101175,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "rupesh-kumar-srivastava",
         "name": {
-          "en": "Rupesh Kumar Srivastava",
-          "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦"
+          "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦",
+          "en": "Rupesh Kumar Srivastava"
         },
         "role": {
-          "en": "Lead author of Highway Networks",
-          "zh": "Highway Networks 第一作者"
+          "zh": "Highway Networks 第一作者",
+          "en": "Lead author of Highway Networks"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "klaus-greff",
         "name": {
-          "en": "Klaus Greff",
-          "zh": "克劳斯·格雷夫"
+          "zh": "克劳斯·格雷夫",
+          "en": "Klaus Greff"
         },
         "role": {
-          "en": "Co-author of Highway Networks",
-          "zh": "Highway Networks 共同作者"
+          "zh": "Highway Networks 共同作者",
+          "en": "Co-author of Highway Networks"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "juergen-schmidhuber",
         "name": {
-          "en": "Jürgen Schmidhuber",
-          "zh": "于尔根·施密德胡伯"
+          "zh": "尤尔根·施密德胡伯",
+          "en": "Jürgen Schmidhuber"
         },
         "role": {
-          "en": "Co-author of Highway Networks",
-          "zh": "Highway Networks 共同作者"
+          "zh": "Highway Networks 共同作者",
+          "en": "Co-author of Highway Networks"
         },
         "avatar": "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -99123,7 +101277,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "juergen-schmidhuber"
+        ]
       },
       "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png": {
         "caption": {
@@ -99151,7 +101308,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -99380,56 +101538,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "kaiming-he",
         "name": {
-          "en": "Kaiming He",
-          "zh": "何恺明"
+          "zh": "何恺明",
+          "en": "Kaiming He"
         },
         "role": {
-          "en": "ResNet lead author",
-          "zh": "ResNet 第一作者"
+          "zh": "ResNet 第一作者",
+          "en": "ResNet lead author"
         },
         "avatar": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "xiangyu-zhang",
         "name": {
-          "en": "Xiangyu Zhang",
-          "zh": "张祥雨"
+          "zh": "张祥雨",
+          "en": "Xiangyu Zhang"
         },
         "role": {
-          "en": "ResNet co-author",
-          "zh": "ResNet 共同作者"
+          "zh": "ResNet 共同作者",
+          "en": "ResNet co-author"
         },
         "avatar": "resources/images/2015-resnet/people/2015-resnet_people_03.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "shaoqing-ren",
         "name": {
-          "en": "Shaoqing Ren",
-          "zh": "任少卿"
+          "zh": "任少卿",
+          "en": "Shaoqing Ren"
         },
         "role": {
-          "en": "ResNet co-author",
-          "zh": "ResNet 共同作者"
+          "zh": "ResNet 共同作者",
+          "en": "ResNet co-author"
         },
         "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jian-sun",
         "name": {
-          "en": "Jian Sun",
-          "zh": "孙剑"
+          "zh": "孙剑",
+          "en": "Jian Sun"
         },
         "role": {
-          "en": "ResNet co-author and corresponding author",
-          "zh": "ResNet 共同作者与通讯作者"
+          "zh": "ResNet 共同作者与通讯作者",
+          "en": "ResNet co-author and corresponding author"
         },
         "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -99487,7 +101657,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "kaiming-he"
+        ]
       },
       "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png": {
         "caption": {
@@ -99511,7 +101684,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png": {
         "caption": {
@@ -99535,7 +101709,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2015-resnet/people/2015-resnet_people_04.png": {
         "caption": {
@@ -99559,7 +101734,10 @@ const milestones = [
           }
         },
         "role": "team-photo",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "kaiming-he"
+        ]
       },
       "resources/images/2015-resnet/people/2015-resnet_people_03.png": {
         "caption": {
@@ -99583,7 +101761,10 @@ const milestones = [
           }
         },
         "role": "team-photo",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "xiangyu-zhang"
+        ]
       },
       "resources/images/2015-resnet/people/2015-resnet_people_02.png": {
         "caption": {
@@ -99607,7 +101788,10 @@ const milestones = [
           }
         },
         "role": "team-photo",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "shaoqing-ren"
+        ]
       },
       "resources/images/2015-resnet/people/2015-resnet_people_01.png": {
         "caption": {
@@ -99631,7 +101815,10 @@ const milestones = [
           }
         },
         "role": "team-photo",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jian-sun"
+        ]
       }
     },
     "achievement": {
@@ -99998,60 +102185,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jascha-sohl-dickstein",
         "name": {
-          "en": "Jascha Sohl-Dickstein",
-          "zh": "雅沙·索尔-迪克斯坦"
+          "zh": "雅沙·索尔-迪克斯坦",
+          "en": "Jascha Sohl-Dickstein"
         },
         "role": {
-          "en": "Diffusion model lead author",
-          "zh": "扩散模型主要作者"
+          "zh": "扩散模型主要作者",
+          "en": "Diffusion model lead author"
         },
         "avatar": "resources/images/external/ai100-2015-diffusion-model/jascha-sohl-dickstein-portrait.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "surya-ganguli",
         "name": {
-          "en": "Surya Ganguli",
-          "zh": "苏里亚·甘古利"
+          "zh": "苏里亚·甘古利",
+          "en": "Surya Ganguli"
         },
         "role": {
-          "en": "Diffusion Model co-author",
-          "zh": "Diffusion Model 共同作者"
+          "zh": "Diffusion Model 共同作者",
+          "en": "Diffusion Model co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jonathan-ho",
         "name": {
-          "en": "Jonathan Ho",
-          "zh": "乔纳森·何"
+          "zh": "乔纳森·何",
+          "en": "Jonathan Ho"
         },
         "role": {
-          "en": "Diffusion Model co-author",
-          "zh": "Diffusion Model 共同作者"
+          "zh": "Diffusion Model 共同作者",
+          "en": "Diffusion Model co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "pieter-abbee",
         "name": {
-          "en": "Pieter Abbee",
-          "zh": "彼得·阿比尔"
+          "zh": "彼得·阿比尔",
+          "en": "Pieter Abbee"
         },
         "role": {
-          "en": "Diffusion Model co-author",
-          "zh": "Diffusion Model 共同作者"
+          "zh": "Diffusion Model 共同作者",
+          "en": "Diffusion Model co-author"
         },
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -100094,7 +102289,10 @@ const milestones = [
           "sourceUrl": "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jascha-sohl-dickstein"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg": {
         "caption": {
@@ -100118,7 +102316,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -100551,30 +102750,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "gao-huang",
         "name": {
-          "en": "Gao Huang",
-          "zh": "黄高"
+          "zh": "黄高",
+          "en": "Gao Huang"
         },
         "role": {
-          "en": "DenseNet lead author",
-          "zh": "DenseNet 主要作者"
+          "zh": "DenseNet 主要作者",
+          "en": "DenseNet lead author"
         },
         "avatar": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
         "avatarStyle": "transform: scale(1.72); transform-origin: 46% 28%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "zhuang-liu",
         "name": {
-          "en": "Zhuang Liu",
-          "zh": "刘壮"
+          "zh": "刘壮",
+          "en": "Zhuang Liu"
         },
         "role": {
-          "en": "DenseNet co-author",
-          "zh": "DenseNet 共同作者"
+          "zh": "DenseNet 共同作者",
+          "en": "DenseNet co-author"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -100624,7 +102829,10 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "gao-huang"
+        ]
       },
       "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png": {
         "caption": {
@@ -100648,7 +102856,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2016-densenet/people/2016-densenet_people_01.png": {
         "caption": {
@@ -100672,7 +102881,12 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "gao-huang",
+          "kilian-weinberger",
+          "zhuang-liu"
+        ]
       }
     },
     "achievement": {
@@ -101044,7 +103258,7 @@ const milestones = [
     },
     "figures": [
       {
-        "id": "",
+        "id": "david-silver",
         "name": {
           "zh": "大卫·席尔瓦",
           "en": "David Silver"
@@ -101056,10 +103270,13 @@ const milestones = [
         "avatar": "resources/images/figures/authoritative/david-silver.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": true
       },
       {
-        "id": "",
+        "id": "aja-huang",
         "name": {
           "zh": "黄士杰",
           "en": "Aja Huang"
@@ -101071,12 +103288,13 @@ const milestones = [
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
-        "id": "",
+        "id": "demis-hassabis",
         "name": {
-          "zh": "戴密斯·哈萨比斯",
+          "zh": "德米斯·哈萨比斯",
           "en": "Demis Hassabis"
         },
         "role": {
@@ -101086,10 +103304,13 @@ const milestones = [
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": true
       },
       {
-        "id": "",
+        "id": "julian-schrittwieser",
         "name": {
           "zh": "朱利安·施里特维泽",
           "en": "Julian Schrittwieser"
@@ -101101,10 +103322,11 @@ const milestones = [
         "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
-        "id": "",
+        "id": "karen-simonyan",
         "name": {
           "zh": "卡伦·西莫尼扬",
           "en": "Karen Simonyan"
@@ -101116,10 +103338,11 @@ const milestones = [
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
-        "id": "",
+        "id": "lee-sedol",
         "name": {
           "zh": "李世石",
           "en": "Lee Sedol"
@@ -101131,7 +103354,8 @@ const milestones = [
         "avatar": "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -101177,7 +103401,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "david-silver"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
         "caption": {
@@ -101201,7 +103428,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
         "caption": {
@@ -101225,7 +103453,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "lee-sedol"
+        ]
       }
     },
     "achievement": {
@@ -101490,30 +103721,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "ashish-vaswani",
         "name": {
-          "en": "Ashish Vaswani",
-          "zh": "阿希什·瓦斯瓦尼"
+          "zh": "阿希什·瓦斯瓦尼",
+          "en": "Ashish Vaswani"
         },
         "role": {
-          "en": "Transformer lead author",
-          "zh": "Transformer 主要作者"
+          "zh": "Transformer 主要作者",
+          "en": "Transformer lead author"
         },
         "avatar": "resources/images/figures/ashish-vaswani.jpg",
         "avatarStyle": "transform: scale(2.05); transform-origin: 50% 33%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "noam-shazeer",
         "name": {
-          "en": "Noam Shazeer",
-          "zh": "诺姆·沙泽尔"
+          "zh": "诺姆·沙泽尔",
+          "en": "Noam Shazeer"
         },
         "role": {
-          "en": "Transformer co-author",
-          "zh": "Transformer 共同作者"
+          "zh": "Transformer 共同作者",
+          "en": "Transformer co-author"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -101567,7 +103804,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ashish-vaswani"
+        ]
       },
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png": {
         "caption": {
@@ -101591,7 +103831,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2017-transformer/papers/2017-transformer_papers_01.png": {
         "caption": {
@@ -101615,7 +103856,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
         "caption": {
@@ -101639,7 +103881,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg": {
         "caption": {
@@ -101663,7 +103906,8 @@ const milestones = [
           }
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -102023,17 +104267,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jacob-devlin",
         "name": {
-          "en": "Jacob Devlin",
-          "zh": "雅各布·德夫林"
+          "zh": "雅各布·德夫林",
+          "en": "Jacob Devlin"
         },
         "role": {
-          "en": "BERT lead author",
-          "zh": "BERT 主要作者"
+          "zh": "BERT 主要作者",
+          "en": "BERT lead author"
         },
         "avatar": "resources/images/figures/jacob-devlin.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -102085,7 +104332,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jacob-devlin"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg": {
         "caption": {
@@ -102109,7 +104359,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg": {
         "caption": {
@@ -102133,7 +104384,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2018-bert/architecture/2018-bert_architecture_02.png": {
         "caption": {
@@ -102157,7 +104409,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -102524,17 +104777,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "alec-radford",
         "name": {
-          "en": "Alec Radford",
-          "zh": "亚历克·拉德福德"
+          "zh": "亚历克·拉德福德",
+          "en": "Alec Radford"
         },
         "role": {
-          "en": "GPT lead author",
-          "zh": "GPT 主要作者"
+          "zh": "GPT 主要作者",
+          "en": "GPT lead author"
         },
         "avatar": "resources/images/figures/alec-radford.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -102588,7 +104844,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "alec-radford"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg": {
         "caption": {
@@ -102612,7 +104871,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg": {
         "caption": {
@@ -102636,7 +104896,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png": {
         "caption": {
@@ -102660,7 +104921,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2018-gpt/historical/2018-gpt_historical_01.png": {
         "caption": {
@@ -102684,7 +104946,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -103035,17 +105298,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "max-tegmark",
         "name": {
-          "en": "Max Tegmark",
-          "zh": "马克斯·泰格马克"
+          "zh": "马克斯·泰格马克",
+          "en": "Max Tegmark"
         },
         "role": {
-          "en": "AI Feynman author",
-          "zh": "AI Feynman作者"
+          "zh": "AI Feynman作者",
+          "en": "AI Feynman author"
         },
         "avatar": "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -103097,7 +105363,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "max-tegmark"
+        ]
       },
       "resources/images/2019-ai-feynman/architecture/2019-ai-feynman_historical_01.png": {
         "caption": {
@@ -103121,7 +105390,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_01.png": {
         "caption": {
@@ -103145,7 +105415,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_02.png": {
         "caption": {
@@ -103169,7 +105440,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -103368,30 +105640,38 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "john-jumper",
         "name": {
-          "en": "John Jumper",
-          "zh": "约翰·江珀"
+          "zh": "约翰·江珀",
+          "en": "John Jumper"
         },
         "role": {
-          "en": "AlphaFold2 lead researcher",
-          "zh": "AlphaFold2 主要研究者"
+          "zh": "AlphaFold2 主要研究者",
+          "en": "AlphaFold2 lead researcher"
         },
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "demis-hassabis",
         "name": {
-          "en": "Demis Hassabis",
-          "zh": "德米斯·哈萨比斯"
+          "zh": "德米斯·哈萨比斯",
+          "en": "Demis Hassabis"
         },
         "role": {
-          "en": "DeepMind co-founder and AlphaFold leader",
-          "zh": "DeepMind 联合创始人与 AlphaFold 负责人"
+          "zh": "DeepMind 联合创始人与 AlphaFold 负责人",
+          "en": "DeepMind co-founder and AlphaFold leader"
         },
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": true
       }
     ],
     "resources": {
@@ -103459,7 +105739,10 @@ const milestones = [
           "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "john-jumper"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg": {
         "caption": {
@@ -103483,7 +105766,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png": {
         "caption": {
@@ -103507,7 +105791,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png": {
         "caption": {
@@ -103531,7 +105816,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
         "caption": {
@@ -103555,7 +105841,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "john-jumper"
+        ]
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_02.png": {
         "caption": {
@@ -103579,7 +105868,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "demis-hassabis"
+        ]
       },
       "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg": {
         "caption": {
@@ -103603,7 +105895,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png": {
         "caption": {
@@ -103627,7 +105920,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png": {
         "caption": {
@@ -103651,7 +105945,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -104018,17 +106313,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "research-institutions",
         "name": {
-          "en": "Research Institutions",
-          "zh": "研究机构"
+          "zh": "研究机构",
+          "en": "Research Institutions"
         },
         "role": {
-          "en": "Post-training methods and frontier model R&D organizations",
-          "zh": "后训练方法与前沿模型研发机构"
+          "zh": "后训练方法与前沿模型研发机构",
+          "en": "Post-training methods and frontier model R&D organizations"
         },
         "avatar": "resources/images/figures/research-institution.png",
         "avatarStyle": "",
-        "figureType": "team"
+        "figureType": "team",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -104072,7 +106370,8 @@ const milestones = [
           "sourceUrl": "resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png"
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg": {
         "caption": {
@@ -104096,7 +106395,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/2022-post-training-intelligence/architecture/rlhf-feedback-loop.jpeg": {
         "caption": {
@@ -104121,7 +106421,8 @@ const milestones = [
           "sourceUrl": "resources/images/2022-post-training-intelligence/architecture/rlhf-feedback-loop.jpeg"
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/figures/research-institution.png": {
         "caption": {
@@ -104145,7 +106446,10 @@ const milestones = [
           }
         },
         "role": "team-portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "research-institutions"
+        ]
       }
     },
     "achievement": {
@@ -104424,43 +106728,52 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "stuart-russell",
         "name": {
-          "en": "Stuart Russell",
-          "zh": "斯图尔特·罗素"
+          "zh": "斯图尔特·罗素",
+          "en": "Stuart Russell"
         },
         "role": {
-          "en": "Founder of Agent Theory",
-          "zh": "智能体理论奠基人"
+          "zh": "智能体理论奠基人",
+          "en": "Founder of Agent Theory"
         },
         "avatar": "resources/images/figures/stuart-russell.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "peter-norvig",
         "name": {
-          "en": "Peter Norvig",
-          "zh": "彼得·诺维格"
+          "zh": "彼得·诺维格",
+          "en": "Peter Norvig"
         },
         "role": {
-          "en": "AIMA author",
-          "zh": "《人工智能：一种现代方法》作者"
+          "zh": "《人工智能：一种现代方法》作者",
+          "en": "AIMA author"
         },
         "avatar": "resources/images/figures/peter-norvig.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "michael-wooldridge",
         "name": {
-          "en": "Michael Wooldridge",
-          "zh": "迈克尔·伍尔德里奇"
+          "zh": "迈克尔·伍尔德里奇",
+          "en": "Michael Wooldridge"
         },
         "role": {
-          "en": "Expert in Multi-Agent Systems",
-          "zh": "多智能体系统专家"
+          "zh": "多智能体系统专家",
+          "en": "Expert in Multi-Agent Systems"
         },
         "avatar": "resources/images/figures/michael-wooldridge.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -104510,7 +106823,8 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2023-agents/historical/2023-agents_historical_03.png": {
         "caption": {
@@ -104534,7 +106848,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2023-agents/historical/2023-agents_historical_04.png": {
         "caption": {
@@ -104558,7 +106873,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -104782,30 +107098,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "sakana-ai-team",
         "name": {
-          "en": "Sakana AI team",
-          "zh": "Sakana AI 团队"
+          "zh": "Sakana AI 团队",
+          "en": "Sakana AI team"
         },
         "role": {
-          "en": "AI Scientist Developer",
-          "zh": "AI Scientist开发者"
+          "zh": "AI Scientist开发者",
+          "en": "AI Scientist Developer"
         },
         "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "berkeley-team",
         "name": {
-          "en": "Berkeley Team",
-          "zh": "伯克利团队"
+          "zh": "伯克利团队",
+          "en": "Berkeley Team"
         },
         "role": {
-          "en": "A-Lab Developer",
-          "zh": "A-Lab开发者"
+          "zh": "A-Lab开发者",
+          "en": "A-Lab Developer"
         },
         "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png",
         "avatarStyle": "",
-        "figureType": "team"
+        "figureType": "team",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -104859,7 +107181,10 @@ const milestones = [
           }
         },
         "role": "team-photo",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "sakana-ai-team"
+        ]
       },
       "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_01.png": {
         "caption": {
@@ -104883,7 +107208,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_02.png": {
         "caption": {
@@ -104907,7 +107233,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png": {
         "caption": {
@@ -104931,7 +107258,10 @@ const milestones = [
           }
         },
         "role": "team-photo",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "berkeley-team"
+        ]
       },
       "resources/images/2024-ai-scientist/papers/2024-ai-scientist_papers_01.png": {
         "caption": {
@@ -104955,7 +107285,8 @@ const milestones = [
           }
         },
         "role": "paper-page",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -105186,30 +107517,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "research-institutions",
         "name": {
-          "en": "Research Institutions",
-          "zh": "研究机构"
+          "zh": "研究机构",
+          "en": "Research Institutions"
         },
         "role": {
-          "en": "Leading-edge model R&D organization",
-          "zh": "前沿模型研发机构"
+          "zh": "前沿模型研发机构",
+          "en": "Leading-edge model R&D organization"
         },
         "avatar": "resources/images/figures/research-institution.png",
         "avatarStyle": "",
-        "figureType": "team"
+        "figureType": "team",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "lianmin-zheng",
         "name": {
-          "en": "Lianmin Zheng",
-          "zh": "郑廉民"
+          "zh": "郑廉民",
+          "en": "Lianmin Zheng"
         },
         "role": {
-          "en": "Context figure and co-creator of Chatbot Arena / LMArena",
-          "zh": "Chatbot Arena / LMArena 共同创建者（背景人物）"
+          "zh": "Chatbot Arena / LMArena 共同创建者（背景人物）",
+          "en": "Context figure and co-creator of Chatbot Arena / LMArena"
         },
         "avatar": "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -105265,7 +107602,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
         "caption": {
@@ -105289,7 +107627,8 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg": {
         "caption": {
@@ -105319,7 +107658,10 @@ const milestones = [
           "sourceUrl": "https://lmzheng.net/images/profile.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "lianmin-zheng"
+        ]
       },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png": {
         "caption": {
@@ -105343,7 +107685,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png": {
         "caption": {
@@ -105367,7 +107710,8 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -105616,17 +107960,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "christopher-strachey",
         "name": {
-          "en": "Christopher Strachey",
-          "zh": "克里斯托弗·斯特雷奇"
+          "zh": "克里斯托弗·斯特雷奇",
+          "en": "Christopher Strachey"
         },
         "role": {
-          "en": "Developer of the early draughts program",
-          "zh": "早期跳棋程序开发者"
+          "zh": "早期跳棋程序开发者",
+          "en": "Developer of the early draughts program"
         },
         "avatar": "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -105679,7 +108026,10 @@ const milestones = [
           "sourceUrl": "https://history.computer.org/pioneers/strachey.html"
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "christopher-strachey"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
         "caption": {
@@ -105703,7 +108053,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg": {
         "caption": {
@@ -105727,7 +108078,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png": {
         "caption": {
@@ -105757,7 +108109,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
         },
         "role": "game-record-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg": {
         "caption": {
@@ -105787,7 +108140,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg"
         },
         "role": "supporting-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -106158,43 +108512,56 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "david-silver",
         "name": {
-          "en": "David Silver",
-          "zh": "大卫·席尔瓦"
+          "zh": "大卫·席尔瓦",
+          "en": "David Silver"
         },
         "role": {
-          "en": "AlphaGo lead researcher",
-          "zh": "AlphaGo 主要研究者"
+          "zh": "AlphaGo 主要研究者",
+          "en": "AlphaGo lead researcher"
         },
         "avatar": "resources/images/figures/authoritative/david-silver.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": true
       },
       {
+        "id": "demis-hassabis",
         "name": {
-          "en": "Demis Hassabis",
-          "zh": "戴密斯·哈萨比斯"
+          "zh": "德米斯·哈萨比斯",
+          "en": "Demis Hassabis"
         },
         "role": {
-          "en": "DeepMind co-founder",
-          "zh": "DeepMind 联合创始人"
+          "zh": "DeepMind 联合创始人",
+          "en": "DeepMind co-founder"
         },
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": true
       },
       {
+        "id": "lee-sedol",
         "name": {
-          "en": "Lee Sedol",
-          "zh": "李世石"
+          "zh": "李世石",
+          "en": "Lee Sedol"
         },
         "role": {
-          "en": "Go world champion in the landmark 2016 match",
-          "zh": "2016 年里程碑对局中的围棋世界冠军"
+          "zh": "2016 年里程碑对局中的围棋世界冠军",
+          "en": "Go world champion in the landmark 2016 match"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -106242,7 +108609,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "david-silver"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
         "caption": {
@@ -106266,7 +108636,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
         "caption": {
@@ -106290,7 +108661,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "lee-sedol"
+        ]
       },
       "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg": {
         "caption": {
@@ -106323,7 +108697,8 @@ const milestones = [
           }
         },
         "role": "game-record-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -106708,17 +109083,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "richard-sutton",
         "name": {
-          "en": "Richard Sutton",
-          "zh": "理查德·萨顿"
+          "zh": "理查德·萨顿",
+          "en": "Richard Sutton"
         },
         "role": {
-          "en": "Author of temporal-difference learning",
-          "zh": "时序差分学习提出者"
+          "zh": "时序差分学习提出者",
+          "en": "Author of temporal-difference learning"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -106759,7 +109137,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "richard-sutton"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg": {
         "caption": {
@@ -106783,7 +109164,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg": {
         "caption": {
@@ -106807,7 +109189,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/game-evolution/1988-td-gammon.svg": {
         "caption": {
@@ -106839,7 +109222,8 @@ const milestones = [
           }
         },
         "role": "game-analysis-image",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -107213,17 +109597,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "jonathan-schaeffer",
         "name": {
-          "en": "Jonathan Schaeffer",
-          "zh": "乔纳森·谢弗"
+          "zh": "乔纳森·谢弗",
+          "en": "Jonathan Schaeffer"
         },
         "role": {
-          "en": "Leader of the Chinook team",
-          "zh": "Chinook 团队负责人"
+          "zh": "Chinook 团队负责人",
+          "en": "Leader of the Chinook team"
         },
         "avatar": "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -107270,7 +109657,10 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "jonathan-schaeffer"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg": {
         "caption": {
@@ -107294,7 +109684,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg": {
         "caption": {
@@ -107318,7 +109709,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
         "caption": {
@@ -107342,7 +109734,8 @@ const milestones = [
           }
         },
         "role": "game-record-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -107729,17 +110122,20 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "michael-buro",
         "name": {
-          "en": "Michael Buro",
-          "zh": "迈克尔·布罗"
+          "zh": "迈克尔·布罗",
+          "en": "Michael Buro"
         },
         "role": {
-          "en": "Creator of Logistello",
-          "zh": "Logistello 创建者"
+          "zh": "Logistello 创建者",
+          "en": "Creator of Logistello"
         },
         "avatar": "resources/images/figures/authoritative/michael-buro.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -107783,7 +110179,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "michael-buro"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg": {
         "caption": {
@@ -107807,7 +110206,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/1997-logistello/logistello-game-1-first-25-positions.gif": {
         "caption": {
@@ -107840,7 +110240,8 @@ const milestones = [
           }
         },
         "role": "game-record-animation",
-        "type": "gif"
+        "type": "gif",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -108344,56 +110745,68 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "feng-hsiung-hsu",
         "name": {
-          "en": "Feng-hsiung Hsu",
-          "zh": "许峰雄"
+          "zh": "许峰雄",
+          "en": "Feng-hsiung Hsu"
         },
         "role": {
-          "en": "Chief architect; custom VLSI and hardware design",
-          "zh": "首席架构师；定制 VLSI 与硬件设计"
+          "zh": "首席架构师；定制 VLSI 与硬件设计",
+          "en": "Chief architect; custom VLSI and hardware design"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
         "avatarStyle": "object-position: 50% 20%; transform: scale(1.55); transform-origin: 50% 20%;",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "murray-campbell",
         "name": {
-          "en": "Murray Campbell",
-          "zh": "默里·坎贝尔"
+          "zh": "默里·坎贝尔",
+          "en": "Murray Campbell"
         },
         "role": {
-          "en": "Evaluation-function and search-strategy lead",
-          "zh": "评估函数与搜索策略负责人"
+          "zh": "评估函数与搜索策略负责人",
+          "en": "Evaluation-function and search-strategy lead"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "a-joseph-hoane-jr",
         "name": {
-          "en": "A. Joseph Hoane Jr.",
-          "zh": "约瑟夫·霍恩"
+          "zh": "约瑟夫·霍恩",
+          "en": "A. Joseph Hoane Jr."
         },
         "role": {
-          "en": "Parallel-search software lead",
-          "zh": "并行搜索软件负责人"
+          "zh": "并行搜索软件负责人",
+          "en": "Parallel-search software lead"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "jerry-brody",
         "name": {
-          "en": "Jerry Brody",
-          "zh": "杰里·布罗迪"
+          "zh": "杰里·布罗迪",
+          "en": "Jerry Brody"
         },
         "role": {
-          "en": "Hardware integration and match operations",
-          "zh": "硬件集成与比赛现场运行"
+          "zh": "硬件集成与比赛现场运行",
+          "en": "Hardware integration and match operations"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -108445,7 +110858,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "feng-hsiung-hsu"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg": {
         "caption": {
@@ -108469,7 +110885,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg": {
         "caption": {
@@ -108493,7 +110910,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
         "caption": {
@@ -108517,7 +110935,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "murray-campbell"
+        ]
       },
       "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif": {
         "caption": {
@@ -108550,7 +110971,8 @@ const milestones = [
           }
         },
         "role": "game-record-animation",
-        "type": "gif"
+        "type": "gif",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -108959,30 +111381,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "i-chen-wu",
         "name": {
-          "en": "I-Chen Wu",
-          "zh": "吴毅成"
+          "zh": "吴毅成",
+          "en": "I-Chen Wu"
         },
         "role": {
-          "en": "Coauthor of the xiangqi comparison-training paper",
-          "zh": "中国象棋比较训练论文共同作者"
+          "zh": "中国象棋比较训练论文共同作者",
+          "en": "Coauthor of the xiangqi comparison-training paper"
         },
         "avatar": "resources/images/external/2000s-alphacat/i-chen-wu-avatar.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "icga-xiangqi-programs",
         "name": {
-          "en": "ICGA Chinese Chess programs",
-          "zh": "ICGA 中国象棋程序谱系"
+          "zh": "ICGA 中国象棋程序谱系",
+          "en": "ICGA Chinese Chess programs"
         },
         "role": {
-          "en": "Competition lineage spanning 1989-2013",
-          "zh": "覆盖 1989 至 2013 年的竞赛程序谱系"
+          "zh": "覆盖 1989 至 2013 年的竞赛程序谱系",
+          "en": "Competition lineage spanning 1989-2013"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "system"
+        "figureType": "system",
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -109027,7 +111455,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "i-chen-wu"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2000s-alphacat_xiangqi-search.svg": {
         "caption": {
@@ -109051,7 +111482,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -109491,30 +111923,38 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "volodymyr-mnih",
         "name": {
-          "en": "Volodymyr Mnih",
-          "zh": "沃洛迪米尔·姆尼赫"
+          "zh": "沃洛迪米尔·姆尼赫",
+          "en": "Volodymyr Mnih"
         },
         "role": {
-          "en": "First author of DQN work",
-          "zh": "DQN 工作第一作者"
+          "zh": "DQN 工作第一作者",
+          "en": "First author of DQN work"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "david-silver",
         "name": {
-          "en": "David Silver",
-          "zh": "大卫·席尔瓦"
+          "zh": "大卫·席尔瓦",
+          "en": "David Silver"
         },
         "role": {
-          "en": "DeepMind reinforcement learning researcher",
-          "zh": "DeepMind 强化学习研究者"
+          "zh": "DeepMind 强化学习研究者",
+          "en": "DeepMind reinforcement learning researcher"
         },
         "avatar": "resources/images/figures/authoritative/david-silver.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": false
       }
     ],
     "resources": {
@@ -109555,7 +111995,10 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "volodymyr-mnih"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
         "caption": {
@@ -109579,7 +112022,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg": {
         "caption": {
@@ -109603,7 +112047,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
@@ -109632,7 +112077,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "david-silver"
+        ]
       }
     },
     "achievement": {
@@ -110029,43 +112477,56 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "david-silver",
         "name": {
-          "en": "David Silver",
-          "zh": "大卫·席尔瓦"
+          "zh": "大卫·席尔瓦",
+          "en": "David Silver"
         },
         "role": {
-          "en": "DeepMind reinforcement learning lead",
-          "zh": "DeepMind 强化学习负责人"
+          "zh": "DeepMind 强化学习负责人",
+          "en": "DeepMind reinforcement learning lead"
         },
         "avatar": "resources/images/figures/authoritative/david-silver.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": true
       },
       {
+        "id": "demis-hassabis",
         "name": {
-          "en": "Demis Hassabis",
-          "zh": "德米斯·哈萨比斯"
+          "zh": "德米斯·哈萨比斯",
+          "en": "Demis Hassabis"
         },
         "role": {
-          "en": "DeepMind co-founder",
-          "zh": "DeepMind 联合创始人"
+          "zh": "DeepMind 联合创始人",
+          "en": "DeepMind co-founder"
         },
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": true
       },
       {
+        "id": "julian-schrittwieser",
         "name": {
-          "en": "Julian Schrittwieser",
-          "zh": "朱利安·施里特维泽"
+          "zh": "朱利安·施里特维泽",
+          "en": "Julian Schrittwieser"
         },
         "role": {
-          "en": "DeepMind research scientist and one of the first authors of the MuZero paper",
-          "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一"
+          "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一",
+          "en": "DeepMind research scientist and one of the first authors of the MuZero paper"
         },
         "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -110109,7 +112570,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "david-silver"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg": {
         "caption": {
@@ -110133,7 +112597,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg": {
         "caption": {
@@ -110165,7 +112630,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "julian-schrittwieser"
+        ]
       }
     },
     "achievement": {
@@ -110633,30 +113101,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "noam-brown",
         "name": {
-          "en": "Noam Brown",
-          "zh": "诺姆·布朗"
+          "zh": "诺姆·布朗",
+          "en": "Noam Brown"
         },
         "role": {
-          "en": "Libratus co-creator",
-          "zh": "Libratus 共同创建者"
+          "zh": "Libratus 共同创建者",
+          "en": "Libratus co-creator"
         },
         "avatar": "resources/images/figures/authoritative/noam-brown.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "tuomas-sandholm",
         "name": {
-          "en": "Tuomas Sandholm",
-          "zh": "托马斯·桑德霍姆"
+          "zh": "托马斯·桑德霍姆",
+          "en": "Tuomas Sandholm"
         },
         "role": {
-          "en": "CMU professor and Libratus co-creator",
-          "zh": "CMU 教授，Libratus 共同创建者"
+          "zh": "CMU 教授，Libratus 共同创建者",
+          "en": "CMU professor and Libratus co-creator"
         },
         "avatar": "resources/images/figures/authoritative/tuomas-sandholm.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -110700,7 +113174,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "noam-brown"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2017-libratus_cfr-solving.svg": {
         "caption": {
@@ -110724,7 +113201,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/figures/authoritative/tuomas-sandholm.jpg": {
         "caption": {
@@ -110753,7 +113231,10 @@ const milestones = [
           }
         },
         "role": "supporting-portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "tuomas-sandholm"
+        ]
       }
     },
     "achievement": {
@@ -111217,30 +113698,36 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "noam-brown",
         "name": {
-          "en": "Noam Brown",
-          "zh": "诺姆·布朗"
+          "zh": "诺姆·布朗",
+          "en": "Noam Brown"
         },
         "role": {
-          "en": "Pluribus co-creator",
-          "zh": "Pluribus 共同创建者"
+          "zh": "Pluribus 共同创建者",
+          "en": "Pluribus co-creator"
         },
         "avatar": "resources/images/figures/authoritative/noam-brown.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       },
       {
+        "id": "tuomas-sandholm",
         "name": {
-          "en": "Tuomas Sandholm",
-          "zh": "托马斯·桑德霍姆"
+          "zh": "托马斯·桑德霍姆",
+          "en": "Tuomas Sandholm"
         },
         "role": {
-          "en": "Pluribus co-creator",
-          "zh": "Pluribus 共同创建者"
+          "zh": "Pluribus 共同创建者",
+          "en": "Pluribus co-creator"
         },
         "avatar": "resources/images/figures/authoritative/tuomas-sandholm.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -111284,7 +113771,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "noam-brown"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2019-pluribus_blueprint-search.svg": {
         "caption": {
@@ -111308,7 +113798,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/figures/authoritative/tuomas-sandholm.jpg": {
         "caption": {
@@ -111337,7 +113828,10 @@ const milestones = [
           }
         },
         "role": "supporting-portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "tuomas-sandholm"
+        ]
       }
     },
     "achievement": {
@@ -111801,56 +114295,76 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "tie-yan-liu",
         "name": {
-          "en": "Tie-Yan Liu",
-          "zh": "刘铁岩"
+          "zh": "刘铁岩",
+          "en": "Tie-Yan Liu"
         },
         "role": {
-          "en": "One of the principal leaders of Suphx and a principal researcher at Microsoft Research Asia",
-          "zh": "Suphx 项目主要负责人之一、微软亚洲研究院首席研究员"
+          "zh": "Suphx 项目主要负责人之一、微软亚洲研究院首席研究员",
+          "en": "One of the principal leaders of Suphx and a principal researcher at Microsoft Research Asia"
         },
         "avatar": "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [
+          "microsoft-research-asia"
+        ],
+        "primary": true
       },
       {
+        "id": "hsiao-wuen-hon",
         "name": {
-          "en": "Hsiao-Wuen Hon",
-          "zh": "洪小文"
+          "zh": "洪小文",
+          "en": "Hsiao-Wuen Hon"
         },
         "role": {
-          "en": "Microsoft global senior vice president and executive leader of the Suphx project",
-          "zh": "微软全球资深副总裁、Suphx 项目最高负责人"
+          "zh": "微软全球资深副总裁、Suphx 项目最高负责人",
+          "en": "Microsoft global senior vice president and executive leader of the Suphx project"
         },
         "avatar": "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [
+          "microsoft-research-asia"
+        ],
+        "primary": true
       },
       {
+        "id": "junjie-li",
         "name": {
-          "en": "Junjie Li",
-          "zh": "李俊杰"
+          "zh": "李俊杰",
+          "en": "Junjie Li"
         },
         "role": {
-          "en": "First author of the Suphx paper",
-          "zh": "Suphx 论文第一作者"
+          "zh": "Suphx 论文第一作者",
+          "en": "First author of the Suphx paper"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [
+          "microsoft-research-asia"
+        ],
+        "primary": true
       },
       {
+        "id": "tao-qin",
         "name": {
-          "en": "Tao Qin",
-          "zh": "秦涛"
+          "zh": "秦涛",
+          "en": "Tao Qin"
         },
         "role": {
-          "en": "Key author of the Suphx paper",
-          "zh": "Suphx 论文重要作者"
+          "zh": "Suphx 论文重要作者",
+          "en": "Key author of the Suphx paper"
         },
         "avatar": "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [
+          "microsoft-research-asia"
+        ],
+        "primary": true
       }
     ],
     "resources": {
@@ -111901,7 +114415,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "tie-yan-liu"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg": {
         "caption": {
@@ -111925,7 +114442,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg": {
         "caption": {
@@ -111957,7 +114475,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "hsiao-wuen-hon"
+        ]
       },
       "resources/images/external/2019-suphx/tao-qin-portrait.jpg": {
         "caption": {
@@ -111989,7 +114510,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "tao-qin"
+        ]
       },
       "resources/images/external/2019-suphx/suphx-logo.png": {
         "caption": {
@@ -112018,7 +114542,8 @@ const milestones = [
           }
         },
         "role": "project-identity",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -112474,30 +114999,40 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "demis-hassabis",
         "name": {
-          "en": "Demis Hassabis",
-          "zh": "德米斯·哈萨比斯"
+          "zh": "德米斯·哈萨比斯",
+          "en": "Demis Hassabis"
         },
         "role": {
-          "en": "DeepMind co-founder and MuZero coauthor",
-          "zh": "DeepMind 联合创始人、MuZero 论文共同作者"
+          "zh": "DeepMind 联合创始人、MuZero 论文共同作者",
+          "en": "DeepMind co-founder and MuZero coauthor"
         },
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": true
       },
       {
+        "id": "david-silver",
         "name": {
-          "en": "David Silver",
-          "zh": "大卫·席尔瓦"
+          "zh": "大卫·席尔瓦",
+          "en": "David Silver"
         },
         "role": {
-          "en": "DeepMind reinforcement learning lead",
-          "zh": "DeepMind 强化学习负责人"
+          "zh": "DeepMind 强化学习负责人",
+          "en": "DeepMind reinforcement learning lead"
         },
         "avatar": "resources/images/figures/authoritative/david-silver.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": true
       }
     ],
     "resources": {
@@ -112539,7 +115074,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "david-silver"
+        ]
       },
       "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg": {
         "caption": {
@@ -112563,7 +115101,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -113044,7 +115583,8 @@ const milestones = [
         "avatar": "resources/images/humanistic-cycle/people/1920-rur-robots_karel-capek.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -113081,7 +115621,10 @@ const milestones = [
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karel_%C4%8Capek.jpg"
           },
           "role": "portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "karel-capek"
+          ]
         },
         "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg": {
           "caption": {
@@ -113114,7 +115657,8 @@ const milestones = [
             }
           },
           "role": "architecture-explainer",
-          "type": "svg"
+          "type": "svg",
+          "figureIds": []
         }
       },
       "videos": [],
@@ -113152,7 +115696,10 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karel_%C4%8Capek.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "karel-capek"
+        ]
       },
       "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg": {
         "caption": {
@@ -113185,7 +115732,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -113493,7 +116041,8 @@ const milestones = [
         "avatar": "resources/images/humanistic-cycle/people/1942-asimov-runaround_isaac-asimov.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
         "id": "john-w-campbell",
@@ -113508,7 +116057,8 @@ const milestones = [
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -113545,7 +116095,10 @@ const milestones = [
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg"
           },
           "role": "portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "isaac-asimov"
+          ]
         },
         "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg": {
           "caption": {
@@ -113578,7 +116131,8 @@ const milestones = [
             }
           },
           "role": "architecture-explainer",
-          "type": "svg"
+          "type": "svg",
+          "figureIds": []
         }
       },
       "videos": [],
@@ -113616,7 +116170,10 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "isaac-asimov"
+        ]
       },
       "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg": {
         "caption": {
@@ -113649,7 +116206,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -113957,7 +116515,8 @@ const milestones = [
         "avatar": "resources/images/humanistic-cycle/people/1950-wiener-human-use_norbert-wiener.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -113994,7 +116553,10 @@ const milestones = [
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norbert_Wiener.png"
           },
           "role": "portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "norbert-wiener"
+          ]
         },
         "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg": {
           "caption": {
@@ -114027,7 +116589,8 @@ const milestones = [
             }
           },
           "role": "architecture-explainer",
-          "type": "svg"
+          "type": "svg",
+          "figureIds": []
         }
       },
       "videos": [],
@@ -114065,7 +116628,10 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norbert_Wiener.png"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "norbert-wiener"
+        ]
       },
       "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg": {
         "caption": {
@@ -114098,7 +116664,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -114397,7 +116964,7 @@ const milestones = [
         "id": "herbert-a-simon",
         "name": {
           "zh": "赫伯特·A·西蒙",
-          "en": "Herbert A. Simon"
+          "en": "Herbert Simon"
         },
         "role": {
           "zh": "AI 先驱，《人、管理与自动化的形态》作者",
@@ -114406,7 +116973,8 @@ const milestones = [
         "avatar": "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -114443,7 +117011,10 @@ const milestones = [
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg"
           },
           "role": "portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "herbert-a-simon"
+          ]
         },
         "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg": {
           "caption": {
@@ -114476,7 +117047,8 @@ const milestones = [
             }
           },
           "role": "architecture-explainer",
-          "type": "svg"
+          "type": "svg",
+          "figureIds": []
         }
       },
       "videos": [],
@@ -114514,7 +117086,10 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "herbert-a-simon"
+        ]
       },
       "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg": {
         "caption": {
@@ -114547,7 +117122,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -114867,7 +117443,8 @@ const milestones = [
         "avatar": "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
         "id": "arthur-c-clarke",
@@ -114882,7 +117459,8 @@ const milestones = [
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -114919,7 +117497,10 @@ const milestones = [
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg"
           },
           "role": "portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "stanley-kubrick"
+          ]
         },
         "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg": {
           "caption": {
@@ -114952,7 +117533,8 @@ const milestones = [
             }
           },
           "role": "architecture-explainer",
-          "type": "svg"
+          "type": "svg",
+          "figureIds": []
         }
       },
       "videos": [],
@@ -114990,7 +117572,10 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "stanley-kubrick"
+        ]
       },
       "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg": {
         "caption": {
@@ -115023,7 +117608,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -115331,7 +117917,8 @@ const milestones = [
         "avatar": "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
         "id": "donald-michie",
@@ -115346,7 +117933,8 @@ const milestones = [
         "avatar": "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -115386,7 +117974,10 @@ const milestones = [
             "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Miscellaneous/copyright/"
           },
           "role": "portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "sir-james-lighthill"
+          ]
         },
         "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
           "caption": {
@@ -115419,7 +118010,8 @@ const milestones = [
             }
           },
           "role": "architecture-explainer",
-          "type": "svg"
+          "type": "svg",
+          "figureIds": []
         },
         "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg": {
           "caption": {
@@ -115449,7 +118041,10 @@ const milestones = [
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg"
           },
           "role": "supporting-portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "donald-michie"
+          ]
         },
         "resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg": {
           "caption": {
@@ -115479,7 +118074,8 @@ const milestones = [
             "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/"
           },
           "role": "historical-photo",
-          "type": "image"
+          "type": "image",
+          "figureIds": []
         },
         "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg": {
           "caption": {
@@ -115509,7 +118105,8 @@ const milestones = [
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg"
           },
           "role": "venue-photo",
-          "type": "image"
+          "type": "image",
+          "figureIds": []
         }
       },
       "videos": [],
@@ -115550,7 +118147,10 @@ const milestones = [
           "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Miscellaneous/copyright/"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "sir-james-lighthill"
+        ]
       },
       "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
         "caption": {
@@ -115583,7 +118183,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg": {
         "caption": {
@@ -115613,7 +118214,10 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg"
         },
         "role": "supporting-portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "donald-michie"
+        ]
       },
       "resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg": {
         "caption": {
@@ -115643,7 +118247,8 @@ const milestones = [
           "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/"
         },
         "role": "historical-photo",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       },
       "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg": {
         "caption": {
@@ -115673,7 +118278,8 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg"
         },
         "role": "venue-photo",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -116002,7 +118608,8 @@ const milestones = [
         "avatar": "resources/images/humanistic-cycle/people/1978-xiaolingtong_ye-yonglie.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -116042,7 +118649,10 @@ const milestones = [
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ye_Yonglie_in_1963_(cropped).jpg"
           },
           "role": "portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "ye-yonglie"
+          ]
         },
         "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg": {
           "caption": {
@@ -116075,7 +118685,8 @@ const milestones = [
             }
           },
           "role": "architecture-explainer",
-          "type": "svg"
+          "type": "svg",
+          "figureIds": []
         },
         "resources/images/humanistic-cycle/artifacts/1978-xiaolingtong_cover.jpeg": {
           "caption": {
@@ -116105,7 +118716,8 @@ const milestones = [
             "sourceUrl": "https://upload.wikimedia.org/wikipedia/zh/5/5a/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A51978%E5%88%9D%E7%89%88.jpeg"
           },
           "role": "hero-image",
-          "type": "image"
+          "type": "image",
+          "figureIds": []
         }
       },
       "videos": [],
@@ -116144,7 +118756,10 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ye_Yonglie_in_1963_(cropped).jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "ye-yonglie"
+        ]
       },
       "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg": {
         "caption": {
@@ -116177,7 +118792,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/humanistic-cycle/artifacts/1978-xiaolingtong_cover.jpeg": {
         "caption": {
@@ -116207,7 +118823,8 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/zh/5/5a/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A51978%E5%88%9D%E7%89%88.jpeg"
         },
         "role": "hero-image",
-        "type": "image"
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -116516,7 +119133,8 @@ const milestones = [
         "avatar": "resources/images/humanistic-cycle/people/1984-neuromancer_william-gibson.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -116553,7 +119171,10 @@ const milestones = [
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait_(3x4_cropped).jpg"
           },
           "role": "portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "william-gibson"
+          ]
         },
         "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg": {
           "caption": {
@@ -116586,7 +119207,8 @@ const milestones = [
             }
           },
           "role": "architecture-explainer",
-          "type": "svg"
+          "type": "svg",
+          "figureIds": []
         }
       },
       "videos": [],
@@ -116624,7 +119246,10 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait_(3x4_cropped).jpg"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "william-gibson"
+        ]
       },
       "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg": {
         "caption": {
@@ -116657,7 +119282,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -116965,7 +119591,8 @@ const milestones = [
         "avatar": "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
         "id": "richard-stallman",
@@ -116980,7 +119607,8 @@ const milestones = [
         "avatar": "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -117018,7 +119646,10 @@ const milestones = [
             "sourceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
           },
           "role": "portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "richard-greenblatt"
+          ]
         },
         "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg": {
           "caption": {
@@ -117051,7 +119682,8 @@ const milestones = [
             }
           },
           "role": "architecture-explainer",
-          "type": "svg"
+          "type": "svg",
+          "figureIds": []
         },
         "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg": {
           "caption": {
@@ -117081,7 +119713,10 @@ const milestones = [
             "sourceUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
           },
           "role": "supporting-portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "richard-stallman"
+          ]
         }
       },
       "videos": [],
@@ -117120,7 +119755,10 @@ const milestones = [
           "sourceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "richard-greenblatt"
+        ]
       },
       "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg": {
         "caption": {
@@ -117153,7 +119791,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg": {
         "caption": {
@@ -117183,7 +119822,10 @@ const milestones = [
           "sourceUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
         },
         "role": "supporting-portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "richard-stallman"
+        ]
       }
     },
     "achievement": {
@@ -117528,7 +120170,8 @@ const milestones = [
         "avatar": "resources/images/figures/authoritative/elon-musk.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
         "id": "stephen-hawking",
@@ -117543,7 +120186,8 @@ const milestones = [
         "avatar": "resources/images/figures/authoritative/stephen-hawking.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -117580,7 +120224,10 @@ const milestones = [
             }
           },
           "role": "portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "elon-musk"
+          ]
         },
         "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg": {
           "caption": {
@@ -117613,7 +120260,8 @@ const milestones = [
             }
           },
           "role": "architecture-explainer",
-          "type": "svg"
+          "type": "svg",
+          "figureIds": []
         },
         "resources/images/figures/authoritative/stephen-hawking.jpg": {
           "caption": {
@@ -117642,7 +120290,10 @@ const milestones = [
             }
           },
           "role": "supporting-portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "stephen-hawking"
+          ]
         }
       },
       "videos": [],
@@ -117680,7 +120331,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "elon-musk"
+        ]
       },
       "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg": {
         "caption": {
@@ -117713,7 +120367,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/figures/authoritative/stephen-hawking.jpg": {
         "caption": {
@@ -117742,7 +120397,10 @@ const milestones = [
           }
         },
         "role": "supporting-portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "stephen-hawking"
+        ]
       }
     },
     "achievement": {
@@ -118051,7 +120709,8 @@ const milestones = [
         "avatar": "resources/images/figures/authoritative/sam-altman.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
         "id": "elon-musk",
@@ -118066,7 +120725,8 @@ const milestones = [
         "avatar": "resources/images/figures/authoritative/elon-musk.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       },
       {
         "id": "ilya-sutskever",
@@ -118078,10 +120738,11 @@ const milestones = [
           "zh": "OpenAI 成立时的研究主管",
           "en": "Research director at OpenAI's founding"
         },
-        "avatar": "",
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       },
       {
         "id": "greg-brockman",
@@ -118096,7 +120757,8 @@ const milestones = [
         "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       }
     ],
     "resources": {
@@ -118133,7 +120795,10 @@ const milestones = [
             }
           },
           "role": "portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "sam-altman"
+          ]
         },
         "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg": {
           "caption": {
@@ -118166,7 +120831,8 @@ const milestones = [
             }
           },
           "role": "architecture-explainer",
-          "type": "svg"
+          "type": "svg",
+          "figureIds": []
         },
         "resources/images/figures/authoritative/elon-musk.jpg": {
           "caption": {
@@ -118195,7 +120861,10 @@ const milestones = [
             }
           },
           "role": "portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "elon-musk"
+          ]
         }
       },
       "videos": [],
@@ -118233,7 +120902,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "sam-altman"
+        ]
       },
       "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg": {
         "caption": {
@@ -118266,7 +120938,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       },
       "resources/images/figures/authoritative/elon-musk.jpg": {
         "caption": {
@@ -118295,7 +120968,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "elon-musk"
+        ]
       }
     },
     "achievement": {
@@ -118604,7 +121280,8 @@ const milestones = [
         "avatar": "resources/images/figures/authoritative/dan-hendrycks.webp",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
         "id": "center-for-ai-safety",
@@ -118619,7 +121296,8 @@ const milestones = [
         "avatar": "",
         "avatarStyle": "",
         "figureType": "organization",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": false
       },
       {
         "id": "geoffrey-hinton",
@@ -118634,7 +121312,8 @@ const milestones = [
         "avatar": "resources/images/figures/geoffrey-hinton.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
         "id": "yoshua-bengio",
@@ -118649,7 +121328,8 @@ const milestones = [
         "avatar": "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [],
+        "primary": true
       },
       {
         "id": "demis-hassabis",
@@ -118664,7 +121344,10 @@ const milestones = [
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "avatarStyle": "",
         "figureType": "person",
-        "organizationIds": []
+        "organizationIds": [
+          "deepmind"
+        ],
+        "primary": true
       }
     ],
     "resources": {
@@ -118700,7 +121383,10 @@ const milestones = [
             }
           },
           "role": "portrait",
-          "type": "image"
+          "type": "image",
+          "figureIds": [
+            "dan-hendrycks"
+          ]
         },
         "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg": {
           "caption": {
@@ -118733,7 +121419,8 @@ const milestones = [
             }
           },
           "role": "architecture-explainer",
-          "type": "svg"
+          "type": "svg",
+          "figureIds": []
         }
       },
       "videos": [],
@@ -118770,7 +121457,10 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
+        "type": "image",
+        "figureIds": [
+          "dan-hendrycks"
+        ]
       },
       "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg": {
         "caption": {
@@ -118803,7 +121493,8 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "svg",
+        "figureIds": []
       }
     },
     "achievement": {

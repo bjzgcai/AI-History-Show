@@ -38,28 +38,20 @@
   "figures": [
     {
       "figureId": "jason-wei",
-      "name": {
-        "en": "Jason Wei",
-        "zh": "杰森·魏"
-      },
       "role": {
         "en": "First author of the Chain-of-Thought Prompting paper",
         "zh": "Chain-of-Thought Prompting 论文第一作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "denny-zhou",
-      "name": {
-        "en": "Denny Zhou",
-        "zh": "丹尼·周"
-      },
       "role": {
         "en": "Co-author of the Chain-of-Thought Prompting paper",
         "zh": "Chain-of-Thought Prompting 论文共同作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-059-chain-of-thought-prompting-portrait-denny-zhou"
     }
   ],
   "organizations": [],

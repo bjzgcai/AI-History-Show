@@ -38,7 +38,10 @@
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
-    "editable": false
+    "editable": false,
+    "figureIds": [
+      "ilya-sutskever"
+    ]
   },
   {
     "id": "asset-annual-024-whisper-record",

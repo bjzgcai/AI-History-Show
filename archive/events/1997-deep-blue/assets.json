@@ -34,7 +34,10 @@
       "variant:gaming-ai",
       "figure-avatar:feng-hsiung-hsu"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "feng-hsiung-hsu"
+    ]
   },
   {
     "id": "asset-1997-deep-blue-murray-campbell",
@@ -61,7 +64,10 @@
       "variant:bench-council-ai100",
       "variant:gaming-ai"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "murray-campbell"
+    ]
   },
   {
     "id": "asset-1997-deep-blue-garry-kasparov",
@@ -102,7 +108,10 @@
       "variant:bench-council-ai100",
       "variant:gaming-ai"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "garry-kasparov"
+    ]
   },
   {
     "id": "asset-1997-deep-blue-search-tree",

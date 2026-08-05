@@ -55,7 +55,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "martin-arjovsky"
+    ]
   },
   {
     "id": "asset-ai100-2017-wasserstein-gan-leon-bottou-2025",
@@ -87,6 +90,9 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "leon-bottou"
+    ]
   }
 ]

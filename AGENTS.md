@@ -40,7 +40,9 @@ Archive JSON 是生产内容权威：
 # 可选：启动本地编辑器并打开 http://localhost:3001/admin
 npm run start:admin
 
-# 编辑 archive/events/<event-id>/* 和 archive/storylines/*.json 后
+# 后台支持结构化人物资料、事件/variant 人物关系、人物审计与受控生成；
+# 高级 JSON 模式仍直接编辑 Archive JSON。
+# 编辑 archive/events/<event-id>/*、archive/storylines/*.json 或 archive/figures/figures.json 后
 npm run validate:archive
 npm run generate
 # → 同步生成 milestones-data.js 与 milestones-data-default.js
@@ -178,8 +180,18 @@ theta = -lng * (Math.PI / 180)
 - `GET /admin` — Archive JSON 编辑器，可编辑 event bundles 与已有 storylines
 - `GET/POST /api/archive/file` — 读取或保存 Archive JSON
 - `GET/POST /api/archive/storyline` — 读取或保存已有 storyline JSON
+- `GET /api/archive/figures` — 获取全局人物/实体摘要和 registry revision
+- `GET/POST /api/archive/figure` — 读取、新建或更新全局人物/实体；保存时执行 schema 与身份规则校验
+- `GET /api/archive/figure-options` — 获取事件与 variant 人物选择器的数据
+- `GET /api/archive/figure-usage` — 查询人物在事件、variant 与资产中的反向引用
+- `GET /api/archive/figure-assets` — 查询可用于事件头像覆盖的精确关联资产
+- `GET /api/archive/figure-audit` — 获取缺失身份、疑似重复、名称漂移、头像冲突、来源不足等结构化审计结果
+- `GET /api/archive/figure-merge-preview` 与 `POST /api/archive/figure-merge` — 预览并事务化合并重复身份，改写事件、variant、资产和机构引用
+- `POST /api/archive/figure-image` — 将 PNG/JPEG/GIF/WebP 追加到事件人物资源目录，并同步登记 `assets.json`
 - `POST /api/archive/validate` — 运行 Archive 校验
+- `POST /api/archive/generate` — 受控运行 Archive compiler；不接受任意命令或参数
 - 已退役的 Legacy 页面与 API 返回 HTTP 404
+- 人物、事件和 storyline 保存响应包含内容 revision；后台使用 revision 拒绝覆盖其他页面已经保存的新版本
 - 管理服务没有身份验证，只能用于本机、内网或受保护环境，不得直接暴露端口 3001
 
 ### 静态发布边界

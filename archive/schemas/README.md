@@ -6,17 +6,17 @@ The schemas define file shape and required fields. Cross-file checks, such as wh
 
 ## First-stage schema files
 
-| Schema | Intended file |
-| --- | --- |
-| `shared.schema.json` | Shared definitions such as localized text, IDs, coordinates, review status |
-| `event.schema.json` | `archive/events/{eventId}/event.json` |
-| `claim.schema.json` | `archive/events/{eventId}/claims.json` |
-| `source.schema.json` | `archive/events/{eventId}/sources.json` |
-| `asset.schema.json` | `archive/events/{eventId}/assets.json` |
-| `quiz.schema.json` | `archive/events/{eventId}/quizzes.json` |
-| `variant.schema.json` | `archive/events/{eventId}/variants/{storylineId}.json` |
-| `storyline.schema.json` | `archive/storylines/{storylineId}.json` |
-| `figure.schema.json` | Future `archive/figures/figures.json` |
+| Schema                  | Intended file                                                              |
+| ----------------------- | -------------------------------------------------------------------------- |
+| `shared.schema.json`    | Shared definitions such as localized text, IDs, coordinates, review status |
+| `event.schema.json`     | `archive/events/{eventId}/event.json`                                      |
+| `claim.schema.json`     | `archive/events/{eventId}/claims.json`                                     |
+| `source.schema.json`    | `archive/events/{eventId}/sources.json`                                    |
+| `asset.schema.json`     | `archive/events/{eventId}/assets.json`                                     |
+| `quiz.schema.json`      | `archive/events/{eventId}/quizzes.json`                                    |
+| `variant.schema.json`   | `archive/events/{eventId}/variants/{storylineId}.json`                     |
+| `storyline.schema.json` | `archive/storylines/{storylineId}.json`                                    |
+| `figure.schema.json`    | `archive/figures/figures.json`                                             |
 
 ## ID conventions
 
@@ -27,6 +27,7 @@ The schemas define file shape and required fields. Cross-file checks, such as wh
 - Source IDs only need to be unique within an event directory in the first stage. They can later be promoted to shared/global sources.
 - Asset IDs only need to be unique within an event directory in the first stage.
 - Variant file names should match the target storyline ID, for example `variants/bench-council-ai100.json`.
+- Figure IDs are global and stable. Event and variant relationships reference them through `figureId`.
 
 ## Bilingual text convention
 
@@ -34,8 +35,8 @@ Page-visible text should use localized objects:
 
 ```json
 {
-  "zh": "中文文本",
-  "en": "English text"
+    "zh": "中文文本",
+    "en": "English text"
 }
 ```
 
@@ -131,6 +132,7 @@ Recommended:
 - `rights.license`
 - `usage`
 - `editable`
+- `figureIds` for portraits, team photographs, or other media depicting registered identities
 
 `path` should point to an actual resource file, usually under `resources/`. Existence is validated by `validate:archive`, not by JSON Schema alone.
 
@@ -191,6 +193,30 @@ Variants may override display-level fields such as:
 - `theme`
 - `timelineLabel`
 - `regionOverride`
+
+Event and variant `figures` are relationship records, not identity records. They may contain:
+
+- `figureId`
+- bilingual `role`
+- `primary`
+- `avatarAssetId`
+- `useDefaultAvatar`
+- `avatarStyle`
+
+Identity fields such as `name`, `avatar`, `figureType`, and `organizationIds` belong only in the global figure registry.
+
+### `figures.json`
+
+Each global figure requires:
+
+- stable `id`
+- bilingual `name`
+- `type`: `person`, `team`, `organization`, `product`, or `system`
+- `aliases`
+- `profileSources`
+- `review`
+
+Optional fields include `disambiguation`, `organizationIds`, and `defaultAvatar`. Person names must have a Chinese-readable `zh` value. A default avatar path may belong to only one person identity.
 
 Variants should not copy or contradict canonical event facts, core claims, or primary sources.
 

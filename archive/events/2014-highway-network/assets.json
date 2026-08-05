@@ -1,105 +1,117 @@
 [
-    {
-        "id": "asset-2014-highway-network-architecture-01",
-        "type": "image",
-        "path": "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png",
-        "role": "architecture-explainer",
-        "caption": {
-            "zh": "高速网络结构图 1",
-            "en": "Highway Networks structure diagram 1"
-        },
-        "subcaption": {
-            "zh": "展示高速网络的关键组件、连接或信息流。",
-            "en": "Shows the key components, connections, or information flow of Highway Networks."
-        },
-        "sourceId": "source-legacy-event-record",
-        "rights": {
-            "status": "local-redraw",
-            "license": {
-                "zh": "由旧版媒体资料迁移的本地重绘；发布前仍需复核来源记录。",
-                "en": "Migrated from legacy media metadata; verify rights before publication."
-            }
-        },
-        "displayUsage": {
-            "zh": "用于解释高速网络中的门控捷径与信息流。",
-            "en": "Used to explain gated shortcuts and information flow in Highway Networks."
-        },
-        "usage": ["variant:deep-learning"],
-        "editable": true
+  {
+    "id": "asset-2014-highway-network-architecture-01",
+    "type": "image",
+    "path": "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "高速网络结构图 1",
+      "en": "Highway Networks structure diagram 1"
     },
-    {
-        "id": "asset-2014-highway-network-people-01",
-        "type": "image",
-        "path": "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg",
-        "role": "portrait",
-        "caption": {
-            "zh": "于尔根·施密德胡伯肖像",
-            "en": "Jürgen Schmidhuber portrait"
-        },
-        "subcaption": {
-            "zh": "Highway Network 共同作者。",
-            "en": "Co-author of Highway Networks."
-        },
-        "sourceId": "source-juergen-schmidhuber-idsia",
-        "sourceName": {
-            "zh": "IDSIA 于尔根·施密德胡伯个人主页",
-            "en": "Jürgen Schmidhuber's IDSIA homepage"
-        },
-        "sourceUrl": "https://people.idsia.ch/~juergen/",
-        "rights": {
-            "status": "external-reference",
-            "license": {
-                "zh": "IDSIA 个人主页公开照片；页面未声明可再分发许可，外部发布前需核验使用权。",
-                "en": "Publicly accessible photo from the IDSIA homepage; no redistribution license is stated, so usage rights must be checked before external publication."
-            }
-        },
-        "displayUsage": {
-            "zh": "用于识别 Highway Networks 共同作者于尔根·施密德胡伯。",
-            "en": "Used to identify Highway Networks co-author Jürgen Schmidhuber."
-        },
-        "usage": ["variant:deep-learning"],
-        "editable": true
+    "subcaption": {
+      "zh": "展示高速网络的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of Highway Networks."
     },
-    {
-        "id": "asset-2014-highway-network-klaus-greff",
-        "type": "image",
-        "path": "resources/images/external/2014-highway-network/klaus-greff-github.jpg",
-        "role": "portrait",
-        "caption": {
-            "zh": "克劳斯·格雷夫肖像",
-            "en": "Klaus Greff portrait"
-        },
-        "subcaption": {
-            "zh": "Highway Networks 共同作者。",
-            "en": "Co-author of Highway Networks."
-        },
-        "sourceId": "source-klaus-greff-github",
-        "sourceName": {
-            "zh": "Klaus Greff 的 GitHub 个人资料",
-            "en": "Klaus Greff's GitHub profile"
-        },
-        "sourceUrl": "https://github.com/Qwlouse",
-        "rights": {
-            "status": "external-reference",
-            "license": {
-                "zh": "本人 GitHub 个人资料公开头像；页面未声明可再分发许可，外部发布前需核验使用权。",
-                "en": "Public profile image from the subject's GitHub account; no redistribution license is stated, so usage rights must be checked before external publication."
-            }
-        },
-        "displayUsage": {
-            "zh": "候选肖像的构图与裁切显示不友好，暂不用于人物卡或详情图片；找到更合适的替代图后再复核。",
-            "en": "The candidate portrait has an unfriendly crop and composition for the UI. Keep it out of figure cards and detail images until a better replacement is reviewed."
-        },
-        "selectionReview": {
-            "status": "excluded-from-variants",
-            "reasonCode": "display-quality",
-            "reason": {
-                "zh": "构图与裁切显示不友好，不得自动加入详情图片列表。",
-                "en": "The crop and composition do not display well; do not auto-select this asset for detail images."
-            },
-            "reviewedAt": "2026-08-02"
-        },
-        "usage": ["variant:deep-learning"],
-        "editable": true
-    }
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "由旧版媒体资料迁移的本地重绘；发布前仍需复核来源记录。",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于解释高速网络中的门控捷径与信息流。",
+      "en": "Used to explain gated shortcuts and information flow in Highway Networks."
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-highway-network-people-01",
+    "type": "image",
+    "path": "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "于尔根·施密德胡伯肖像",
+      "en": "Jürgen Schmidhuber portrait"
+    },
+    "subcaption": {
+      "zh": "Highway Network 共同作者。",
+      "en": "Co-author of Highway Networks."
+    },
+    "sourceId": "source-juergen-schmidhuber-idsia",
+    "sourceName": {
+      "zh": "IDSIA 于尔根·施密德胡伯个人主页",
+      "en": "Jürgen Schmidhuber's IDSIA homepage"
+    },
+    "sourceUrl": "https://people.idsia.ch/~juergen/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "IDSIA 个人主页公开照片；页面未声明可再分发许可，外部发布前需核验使用权。",
+        "en": "Publicly accessible photo from the IDSIA homepage; no redistribution license is stated, so usage rights must be checked before external publication."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于识别 Highway Networks 共同作者于尔根·施密德胡伯。",
+      "en": "Used to identify Highway Networks co-author Jürgen Schmidhuber."
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true,
+    "figureIds": [
+      "juergen-schmidhuber"
+    ]
+  },
+  {
+    "id": "asset-2014-highway-network-klaus-greff",
+    "type": "image",
+    "path": "resources/images/external/2014-highway-network/klaus-greff-github.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "克劳斯·格雷夫肖像",
+      "en": "Klaus Greff portrait"
+    },
+    "subcaption": {
+      "zh": "Highway Networks 共同作者。",
+      "en": "Co-author of Highway Networks."
+    },
+    "sourceId": "source-klaus-greff-github",
+    "sourceName": {
+      "zh": "Klaus Greff 的 GitHub 个人资料",
+      "en": "Klaus Greff's GitHub profile"
+    },
+    "sourceUrl": "https://github.com/Qwlouse",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "本人 GitHub 个人资料公开头像；页面未声明可再分发许可，外部发布前需核验使用权。",
+        "en": "Public profile image from the subject's GitHub account; no redistribution license is stated, so usage rights must be checked before external publication."
+      }
+    },
+    "displayUsage": {
+      "zh": "候选肖像的构图与裁切显示不友好，暂不用于人物卡或详情图片；找到更合适的替代图后再复核。",
+      "en": "The candidate portrait has an unfriendly crop and composition for the UI. Keep it out of figure cards and detail images until a better replacement is reviewed."
+    },
+    "selectionReview": {
+      "status": "excluded-from-variants",
+      "reasonCode": "display-quality",
+      "reason": {
+        "zh": "构图与裁切显示不友好，不得自动加入详情图片列表。",
+        "en": "The crop and composition do not display well; do not auto-select this asset for detail images."
+      },
+      "reviewedAt": "2026-08-02"
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true,
+    "figureIds": [
+      "klaus-greff"
+    ]
+  }
 ]

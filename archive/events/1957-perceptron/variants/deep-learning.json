@@ -122,17 +122,12 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Frank Rosenblatt",
-        "zh": "弗兰克·罗森布拉特"
-      },
+      "figureId": "frank-rosenblatt",
       "role": {
         "en": "Inventor of the perceptron",
         "zh": "感知机发明者"
       },
-      "avatar": "resources/images/figures/frank-rosenblatt.png",
-      "avatarStyle": "transform: scale(1.18); transform-origin: 44% 38%;",
-      "figureType": "person"
+      "avatarAssetId": "asset-1957-perceptron-figure-avatar-frank-rosenblatt"
     }
   ],
   "photos": [],

@@ -113,18 +113,11 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Robert Schapire",
-        "zh": "罗伯特·沙皮尔"
-      },
+      "figureId": "robert-schapire",
       "role": {
         "en": "Boost lead author",
         "zh": "Boost 主要作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],

@@ -3,6 +3,7 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
+const { loadFigureRegistry, resolveFigureRelations } = require('./figure-registry');
 
 function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -68,27 +69,8 @@ function assetImageMeta(asset) {
         sourceId: asset.sourceId || (Array.isArray(asset.sourceIds) ? asset.sourceIds[0] : ''),
         rights,
         role: asset.role || '',
-        type: asset.type || ''
-    };
-}
-
-function normalizeFigure(figure) {
-    if (typeof figure === 'string') {
-        return {
-            id: figure,
-            name: { zh: figure, en: figure },
-            role: { zh: '', en: '' }
-        };
-    }
-
-    return {
-        id: figure.figureId || '',
-        name: localizePair(figure.name || { zh: figure.figureId || '', en: figure.figureId || '' }),
-        role: localizePair(figure.role || { zh: '', en: '' }),
-        ...(figure.avatar !== undefined ? { avatar: figure.avatar || '' } : {}),
-        ...(figure.avatarStyle !== undefined ? { avatarStyle: figure.avatarStyle || '' } : {}),
-        ...(figure.figureType !== undefined ? { figureType: figure.figureType || 'person' } : {}),
-        organizationIds: figure.organizationIds || []
+        type: asset.type || '',
+        figureIds: Array.isArray(asset.figureIds) ? [...asset.figureIds] : []
     };
 }
 
@@ -128,7 +110,7 @@ function loadVariant(bundle, variantId) {
     return readJson(variantPath);
 }
 
-function buildMilestone(root, storyline, ref) {
+function buildMilestone(root, storyline, ref, figureRegistry) {
     if (!ref.milestoneId) {
         throw new Error(`Missing milestoneId: ${storyline.id}/${ref.eventId}/${ref.variant}`);
     }
@@ -190,7 +172,12 @@ function buildMilestone(root, storyline, ref) {
             coordinates: (event.location && event.location.coordinates) || []
         },
         description,
-        figures: (event.figures || []).map(normalizeFigure),
+        figures: resolveFigureRelations({
+            eventFigures: event.figures,
+            variantFigures: variant.figures,
+            assets: bundle.assets,
+            registry: figureRegistry
+        }),
         resources: {
             images: imageAssets.map((asset) => asset.path),
             ...(overviewImageAsset
@@ -250,7 +237,6 @@ function applyVariantPresentation(milestone, variant) {
     const directFields = [
         'category',
         'location',
-        'figures',
         'papers',
         'photos',
         'videoUrl',
@@ -285,6 +271,20 @@ function applyVariantPresentation(milestone, variant) {
 
 function compileArchive(root) {
     const storylines = loadStorylines(root);
+    let figureRegistry;
+    try {
+        figureRegistry = loadFigureRegistry(root);
+    } catch (error) {
+        return {
+            generatedAt: new Date().toISOString(),
+            source: 'archive',
+            note: 'Compiled from Archive storylines, events, and variants.',
+            counts: { storylines: storylines.length, milestones: 0, errors: 1 },
+            storylines: [],
+            milestones: [],
+            errors: [{ storylineId: '', ref: null, message: error.message }]
+        };
+    }
     const milestones = [];
     const errors = [];
 
@@ -292,7 +292,7 @@ function compileArchive(root) {
         for (const ref of storyline.events || []) {
             if (ref && ref.enabled === false) continue;
             try {
-                milestones.push(buildMilestone(root, storyline, ref));
+                milestones.push(buildMilestone(root, storyline, ref, figureRegistry));
             } catch (error) {
                 errors.push({ storylineId: storyline.id, ref, message: error.message });
             }

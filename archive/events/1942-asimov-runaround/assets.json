@@ -29,7 +29,10 @@
     "usage": [
       "variant:humanistic-cycle"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "isaac-asimov"
+    ]
   },
   {
     "id": "asset-1942-asimov-runaround-three-laws",

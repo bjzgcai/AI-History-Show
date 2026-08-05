@@ -33,18 +33,13 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Joseph Weizenbaum",
-        "zh": "约瑟夫·魏岑鲍姆"
-      },
+      "figureId": "joseph-weizenbaum",
       "role": {
         "en": "Creator of ELIZA",
         "zh": "ELIZA 创建者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum-rit-1982.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1966-eliza-weizenbaum-rit-1982"
     }
   ],
   "organizations": [],

@@ -34,17 +34,12 @@
   "figures": [
     {
       "figureId": "research-institutions",
-      "name": {
-        "zh": "研究机构",
-        "en": "Research Institutions"
-      },
       "role": {
         "zh": "后训练方法与前沿模型研发机构",
         "en": "Post-training methods and frontier model R&D organizations"
       },
-      "avatar": "resources/images/figures/research-institution.png",
-      "figureType": "team",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-2022-post-training-research-institutions"
     }
   ],
   "organizations": [],

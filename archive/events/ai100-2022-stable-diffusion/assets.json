@@ -55,6 +55,9 @@
       "zh": "Latent Labs",
       "en": "Latent Labs"
     },
-    "sourceUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg"
+    "sourceUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+    "figureIds": [
+      "robin-rombach"
+    ]
   }
 ]

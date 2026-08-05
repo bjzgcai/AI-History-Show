@@ -113,18 +113,12 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Jerome Friedman",
-        "zh": "杰罗姆·弗里德曼"
-      },
+      "figureId": "jerome-friedman",
       "role": {
         "en": "CART monograph co-author",
         "zh": "CART 专著共同作者"
       },
-      "avatar": "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2001-gradient-boosting-portrait"
     }
   ],
   "photos": [],

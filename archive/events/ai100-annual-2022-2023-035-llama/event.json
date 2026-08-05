@@ -38,64 +38,44 @@
   "figures": [
     {
       "figureId": "hugo-touvron",
-      "name": {
-        "en": "Hugo Touvron",
-        "zh": "雨果·图夫龙"
-      },
       "role": {
         "en": "First author of the LLaMA paper",
         "zh": "LLaMA 论文第一作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "thibaut-lavril",
-      "name": {
-        "en": "Thibaut Lavril",
-        "zh": "蒂博·拉夫里尔"
-      },
       "role": {
         "en": "Co-author of the LLaMA paper",
         "zh": "LLaMA 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "gautier-izacard",
-      "name": {
-        "en": "Gautier Izacard",
-        "zh": "戈蒂耶·伊扎卡尔"
-      },
       "role": {
         "en": "Co-author of the LLaMA paper",
         "zh": "LLaMA 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "edouard-grave",
-      "name": {
-        "en": "Edouard Grave",
-        "zh": "爱德华·格拉夫"
-      },
       "role": {
         "en": "Co-author of the LLaMA paper",
         "zh": "LLaMA 论文共同作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/external/ai100-2023-llama/edouard-grave.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-035-llama-portrait-edouard-grave"
     },
     {
       "figureId": "guillaume-lample",
-      "name": {
-        "en": "Guillaume Lample",
-        "zh": "纪尧姆·朗普勒"
-      },
       "role": {
         "en": "Co-author of the LLaMA paper",
         "zh": "LLaMA 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

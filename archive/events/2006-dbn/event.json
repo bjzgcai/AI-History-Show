@@ -33,46 +33,29 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Geoffrey Hinton",
-        "zh": "杰弗里·辛顿"
-      },
+      "figureId": "geoffrey-hinton",
       "role": {
         "en": "Co-author of deep belief net learning",
         "zh": "深度置信网络学习共同作者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-2006-dbn-geoffrey-hinton"
     },
     {
-      "name": {
-        "en": "Yee-Whye The",
-        "zh": "义威·特"
-      },
+      "figureId": "yee-whye-the",
       "role": {
         "en": "DBN co-author",
         "zh": "DBN 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     },
     {
-      "name": {
-        "en": "Ruslan Salakhutdinov",
-        "zh": "鲁斯兰·萨拉赫特迪诺夫"
-      },
+      "figureId": "ruslan-salakhutdinov",
       "role": {
         "en": "DBN co-author",
         "zh": "DBN 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

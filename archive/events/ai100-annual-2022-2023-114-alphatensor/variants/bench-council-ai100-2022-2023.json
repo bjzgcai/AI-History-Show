@@ -127,76 +127,47 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Alhussein Fawzi",
-        "zh": "侯赛因·法兹"
-      },
+      "figureId": "alhussein-fawzi",
       "role": {
         "en": "First author of the AlphaTensor paper",
         "zh": "AlphaTensor 论文第一作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Matej Balog",
-        "zh": "马泰·巴洛格"
-      },
+      "figureId": "matej-balog",
+      "role": {
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
+      }
+    },
+    {
+      "figureId": "aja-huang",
+      "role": {
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
+      }
+    },
+    {
+      "figureId": "thomas-hubert",
+      "role": {
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
+      }
+    },
+    {
+      "figureId": "bernardino-romera-paredes",
+      "role": {
+        "en": "Co-author of the AlphaTensor paper",
+        "zh": "AlphaTensor 论文共同作者"
+      }
+    },
+    {
+      "figureId": "pushmeet-kohli",
       "role": {
         "en": "Co-author of the AlphaTensor paper",
         "zh": "AlphaTensor 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Aja Huang",
-        "zh": "黄士杰"
-      },
-      "role": {
-        "en": "Co-author of the AlphaTensor paper",
-        "zh": "AlphaTensor 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Thomas Hubert",
-        "zh": "托马斯·于贝尔"
-      },
-      "role": {
-        "en": "Co-author of the AlphaTensor paper",
-        "zh": "AlphaTensor 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Bernardino Romera-Paredes",
-        "zh": "贝尔纳迪诺·罗梅拉-帕雷德斯"
-      },
-      "role": {
-        "en": "Co-author of the AlphaTensor paper",
-        "zh": "AlphaTensor 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Pushmeet Kohli",
-        "zh": "普什米特·科利"
-      },
-      "role": {
-        "en": "Co-author of the AlphaTensor paper",
-        "zh": "AlphaTensor 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/pushmeet-kohli.jpg"
+      "avatarAssetId": "asset-annual-114-alphatensor-portrait-pushmeet-kohli"
     }
   ],
   "quote": {

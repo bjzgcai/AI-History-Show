@@ -38,7 +38,10 @@
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
-    "editable": false
+    "editable": false,
+    "figureIds": [
+      "jeff-wu"
+    ]
   },
   {
     "id": "asset-annual-048-instructgpt-record",
@@ -123,7 +126,10 @@
     "provenanceNotes": {
       "en": "John Schulman is not part of the nine-name BenchCouncil contributor prefix, so he is appended after those official figures. The primary paper confirms his authorship, while MIT Technology Review independently identifies him as an OpenAI reinforcement-learning researcher.",
       "zh": "约翰·舒尔曼不在 BenchCouncil 官方九人人物前缀中，因此排在这些官方人物之后。主论文确认其作者身份，《麻省理工科技评论》则独立确认其为 OpenAI 强化学习研究者。"
-    }
+    },
+    "figureIds": [
+      "john-schulman"
+    ]
   },
   {
     "id": "asset-annual-048-instructgpt-paper-preference-results",

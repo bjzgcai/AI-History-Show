@@ -38,17 +38,11 @@
   "figures": [
     {
       "figureId": "openai-company",
-      "name": {
-        "en": "OpenAI",
-        "zh": "OpenAI"
-      },
       "role": {
         "en": "Company behind GPT-4 and ChatGPT",
         "zh": "GPT-4 与 ChatGPT 的开发公司"
       },
-      "figureType": "product",
-      "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

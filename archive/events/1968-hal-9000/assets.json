@@ -29,7 +29,10 @@
     "usage": [
       "variant:humanistic-cycle"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "stanley-kubrick"
+    ]
   },
   {
     "id": "asset-1968-hal-9000-conflict",

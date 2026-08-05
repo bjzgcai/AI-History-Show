@@ -29,7 +29,10 @@
     "usage": [
       "variant:deep-learning"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "lianmin-zheng"
+    ]
   },
   {
     "id": "asset-2025-llm-competition-historical-01",

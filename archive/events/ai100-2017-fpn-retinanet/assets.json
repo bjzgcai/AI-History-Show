@@ -1,73 +1,76 @@
 [
-    {
-        "id": "asset-2017-fpn-retinanet-portrait",
-        "type": "image",
-        "path": "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
-        "role": "portrait",
-        "caption": {
-            "en": "Tsung-Yi Lin portrait",
-            "zh": "林宗毅肖像"
-        },
-        "subcaption": {
-            "en": "FPN and RetinaNet lead author",
-            "zh": "FPN 与 RetinaNet 主要作者"
-        },
-        "sourceId": "source-2017-fpn-retinanet-portrait",
-        "sourceName": {
-            "en": "Tsung-Yi Lin personal website",
-            "zh": "林宗毅个人网站"
-        },
-        "sourceUrl": "https://tsungyilin.info/",
-        "rights": {
-            "status": "external-reference",
-            "license": {
-                "en": "External reference image from the researcher website; redistribution rights should be rechecked.",
-                "zh": "来自研究者个人网站的外部参考图片；对外再分发前应复核授权。"
-            },
-            "sourceUrl": "https://tsungyilin.info/"
-        },
-        "displayUsage": {
-            "en": "Contributor portrait for the FPN (RetinaNet) achievement page",
-            "zh": "用于FPN (RetinaNet)成就页面的人物肖像"
-        },
-        "usage": [
-            "variant:bench-council-ai100"
-        ],
-        "editable": true
+  {
+    "id": "asset-2017-fpn-retinanet-portrait",
+    "type": "image",
+    "path": "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Tsung-Yi Lin portrait",
+      "zh": "林宗毅肖像"
     },
-    {
-        "id": "asset-2017-fpn-retinanet-explainer",
-        "type": "svg",
-        "path": "resources/images/bench-council-ai100/explainers/2017-2017-fpn-retinanet_process.svg",
-        "role": "architecture-explainer",
-        "caption": {
-            "en": "FPN and RetinaNet process explainer",
-            "zh": "FPN 与 RetinaNet流程解释图"
-        },
-        "subcaption": {
-            "en": "Top-down feature pyramids and focal loss",
-            "zh": "自顶向下特征金字塔与焦点损失"
-        },
-        "sourceId": "source-2017-fpn-retinanet-primary",
-        "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://arxiv.org/abs/1612.03144",
-        "rights": {
-            "status": "documented-in-legacy",
-            "license": {
-                "en": "Original local SVG redraw; source figures are not copied.",
-                "zh": "本地原创 SVG 重绘；未复制来源图形。"
-            }
-        },
-        "displayUsage": {
-            "en": "Architecture and process explainer",
-            "zh": "架构与流程解释图"
-        },
-        "usage": [
-            "variant:bench-council-ai100"
-        ],
-        "editable": true
-    }
+    "subcaption": {
+      "en": "FPN and RetinaNet lead author",
+      "zh": "FPN 与 RetinaNet 主要作者"
+    },
+    "sourceId": "source-2017-fpn-retinanet-portrait",
+    "sourceName": {
+      "en": "Tsung-Yi Lin personal website",
+      "zh": "林宗毅个人网站"
+    },
+    "sourceUrl": "https://tsungyilin.info/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "External reference image from the researcher website; redistribution rights should be rechecked.",
+        "zh": "来自研究者个人网站的外部参考图片；对外再分发前应复核授权。"
+      },
+      "sourceUrl": "https://tsungyilin.info/"
+    },
+    "displayUsage": {
+      "en": "Contributor portrait for the FPN (RetinaNet) achievement page",
+      "zh": "用于FPN (RetinaNet)成就页面的人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true,
+    "figureIds": [
+      "tsung-yi-lin"
+    ]
+  },
+  {
+    "id": "asset-2017-fpn-retinanet-explainer",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2017-2017-fpn-retinanet_process.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "en": "FPN and RetinaNet process explainer",
+      "zh": "FPN 与 RetinaNet流程解释图"
+    },
+    "subcaption": {
+      "en": "Top-down feature pyramids and focal loss",
+      "zh": "自顶向下特征金字塔与焦点损失"
+    },
+    "sourceId": "source-2017-fpn-retinanet-primary",
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1612.03144",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      }
+    },
+    "displayUsage": {
+      "en": "Architecture and process explainer",
+      "zh": "架构与流程解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
 ]

@@ -117,32 +117,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Barret Zoph",
-        "zh": "巴雷特·佐夫"
-      },
+      "figureId": "barret-zoph",
       "role": {
         "en": "Neural architecture search lead author",
         "zh": "神经架构搜索主要作者"
       },
-      "avatar": "resources/images/external/ai100-2016-nas/barret-zoph-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-ai100-2016-nas-headshot"
     },
     {
-      "name": {
-        "en": "Quoc V. Le",
-        "zh": "黎国辉"
-      },
+      "figureId": "quoc-v-le",
       "role": {
         "en": "NAS co-author",
         "zh": "NAS 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],

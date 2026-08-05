@@ -55,6 +55,9 @@
       "zh": "韩松人物资料来源 CDN",
       "en": "Song Han profile source CDN"
     },
-    "sourceUrl": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg"
+    "sourceUrl": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg",
+    "figureIds": [
+      "song-han"
+    ]
   }
 ]

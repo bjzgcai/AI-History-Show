@@ -33,32 +33,21 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "John Lafferty",
-        "zh": "约翰·拉弗蒂"
-      },
+      "figureId": "john-lafferty",
       "role": {
         "en": "CRF lead author",
         "zh": "CRF 主要作者"
       },
-      "avatar": "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-2001-crf-portrait"
     },
     {
-      "name": {
-        "en": "Fernando Pereira",
-        "zh": "费尔南多·佩雷拉"
-      },
+      "figureId": "fernando-pereira",
       "role": {
         "en": "CRF co-author",
         "zh": "CRF 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

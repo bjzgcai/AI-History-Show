@@ -55,6 +55,9 @@
       "zh": "斯坦福神经科学中心",
       "en": "Stanford Neurosciences"
     },
-    "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png"
+    "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
+    "figureIds": [
+      "timothy-lillicrap"
+    ]
   }
 ]

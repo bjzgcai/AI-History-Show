@@ -55,6 +55,9 @@
       "zh": "迪德里克·金马个人网站",
       "en": "Diederik Kingma personal website"
     },
-    "sourceUrl": "https://dpkingma.com/files/portrait.jpg"
+    "sourceUrl": "https://dpkingma.com/files/portrait.jpg",
+    "figureIds": [
+      "diederik-kingma"
+    ]
   }
 ]

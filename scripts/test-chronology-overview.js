@@ -281,22 +281,42 @@ const michaelJordan = ldaMilestone.figures.find((figure) => figure.name.en === '
 assert.ok(michaelJordan, 'LDA should identify Michael I. Jordan with his middle initial');
 assert.equal(michaelJordan.name.zh, '迈克尔·I·乔丹', 'LDA should localize Michael I. Jordan consistently');
 
-const michaelJordanArchiveFiles = [
+const michaelJordanRelationshipFiles = [
     'archive/events/1986-rnn/event.json',
-    'archive/events/1986-rnn/claims.json',
-    'archive/events/1986-rnn/sources.json',
-    'archive/events/1986-rnn/assets.json',
     'archive/events/1986-rnn/variants/deep-learning.json',
     'archive/events/2003-lda/event.json',
     'archive/events/2003-lda/variants/bench-council-ai100.json'
 ];
-for (const relativeFile of michaelJordanArchiveFiles) {
+for (const relativeFile of michaelJordanRelationshipFiles) {
+    const content = fs.readFileSync(path.join(__dirname, '..', relativeFile), 'utf8');
+    const document = JSON.parse(content);
+    assert.match(content, /"figureId": "michael-i-jordan"/, `${relativeFile} should use the stable figure ID`);
+    for (const relation of document.figures || []) {
+        assert.equal(Object.hasOwn(relation, 'name'), false, `${relativeFile} should not duplicate registry names`);
+    }
+}
+
+const michaelJordanContentFiles = [
+    'archive/events/1986-rnn/claims.json',
+    'archive/events/1986-rnn/sources.json',
+    'archive/events/1986-rnn/assets.json'
+];
+for (const relativeFile of michaelJordanContentFiles) {
     const content = fs.readFileSync(path.join(__dirname, '..', relativeFile), 'utf8');
     assert.match(content, /Michael I\. Jordan/, `${relativeFile} should use Michael I. Jordan`);
     assert.match(content, /迈克尔·I·乔丹/, `${relativeFile} should use 迈克尔·I·乔丹`);
     assert.doesNotMatch(content, /Michael Jordan/, `${relativeFile} should not omit Jordan's middle initial`);
     assert.doesNotMatch(content, /迈克尔·乔丹/, `${relativeFile} should not omit Jordan's middle initial in Chinese`);
 }
+
+const michaelJordanRegistry = JSON.parse(
+    fs.readFileSync(path.join(__dirname, '..', 'archive', 'figures', 'figures.json'), 'utf8')
+).find((figure) => figure.id === 'michael-i-jordan');
+assert.deepEqual(
+    michaelJordanRegistry.name,
+    { en: 'Michael I. Jordan', zh: '迈克尔·I·乔丹' },
+    'the global registry should own Michael I. Jordan standard names'
+);
 
 const michaelJordanArchiveContent = ['1986-rnn', '2003-lda']
     .flatMap((eventId) => readJsonFiles(path.join(__dirname, '..', 'archive', 'events', eventId)))

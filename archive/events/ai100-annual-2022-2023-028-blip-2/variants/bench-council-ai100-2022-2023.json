@@ -128,28 +128,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Junnan Li",
-        "zh": "李俊楠"
-      },
+      "figureId": "junnan-li",
       "role": {
         "en": "First author of the BLIP-2 paper",
         "zh": "BLIP-2 论文第一作者"
       },
-      "figureType": "person",
-      "avatar": "resources/images/external/ai100-2023-blip-2/junnan-li.jpg"
+      "avatarAssetId": "asset-annual-028-blip-2-portrait-junnan-li"
     },
     {
-      "name": {
-        "en": "Steven Hoi",
-        "zh": "许彬"
-      },
+      "figureId": "steven-hoi",
       "role": {
         "en": "Co-author of the BLIP-2 paper",
         "zh": "BLIP-2 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     }
   ],
   "quote": {

@@ -33,7 +33,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "yoav-freund"
+    ]
   },
   {
     "id": "asset-1997-adaboost-explainer",

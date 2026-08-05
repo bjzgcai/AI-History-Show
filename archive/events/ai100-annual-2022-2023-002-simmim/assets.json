@@ -38,7 +38,10 @@
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
-    "editable": false
+    "editable": false,
+    "figureIds": [
+      "han-hu"
+    ]
   },
   {
     "id": "asset-annual-002-simmim-record",
@@ -121,7 +124,10 @@
     "provenanceNotes": {
       "en": "The primary paper and Microsoft Research page list Yue Cao third. His exact-name GitHub account contributes to the official Microsoft SimMIM repository, corroborating the account-work match.",
       "zh": "主论文与微软研究院页面第三位列出曹越；其同名 GitHub 账号参与微软官方 SimMIM 仓库，进一步确认账号与成果的对应关系。"
-    }
+    },
+    "figureIds": [
+      "yue-cao"
+    ]
   },
   {
     "id": "asset-annual-002-simmim-official-teaser",

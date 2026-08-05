@@ -38,76 +38,52 @@
   "figures": [
     {
       "figureId": "alhussein-fawzi",
-      "name": {
-        "en": "Alhussein Fawzi",
-        "zh": "侯赛因·法兹"
-      },
       "role": {
         "en": "First author of the AlphaTensor paper",
         "zh": "AlphaTensor 论文第一作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "matej-balog",
-      "name": {
-        "en": "Matej Balog",
-        "zh": "马泰·巴洛格"
-      },
       "role": {
         "en": "Co-author of the AlphaTensor paper",
         "zh": "AlphaTensor 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "aja-huang",
-      "name": {
-        "en": "Aja Huang",
-        "zh": "黄士杰"
-      },
       "role": {
         "en": "Co-author of the AlphaTensor paper",
         "zh": "AlphaTensor 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "thomas-hubert",
-      "name": {
-        "en": "Thomas Hubert",
-        "zh": "托马斯·于贝尔"
-      },
       "role": {
         "en": "Co-author of the AlphaTensor paper",
         "zh": "AlphaTensor 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "bernardino-romera-paredes",
-      "name": {
-        "en": "Bernardino Romera-Paredes",
-        "zh": "贝尔纳迪诺·罗梅拉-帕雷德斯"
-      },
       "role": {
         "en": "Co-author of the AlphaTensor paper",
         "zh": "AlphaTensor 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "pushmeet-kohli",
-      "name": {
-        "en": "Pushmeet Kohli",
-        "zh": "普什米特·科利"
-      },
       "role": {
         "en": "Co-author of the AlphaTensor paper",
         "zh": "AlphaTensor 论文共同作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/pushmeet-kohli.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-114-alphatensor-portrait-pushmeet-kohli"
     }
   ],
   "organizations": [],

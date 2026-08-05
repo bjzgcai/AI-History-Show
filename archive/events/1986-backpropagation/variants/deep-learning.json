@@ -78,43 +78,29 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "David Rumelhart",
-        "zh": "戴维·鲁梅尔哈特"
-      },
+      "figureId": "david-rumelhart",
       "role": {
         "en": "Backpropagation author",
         "zh": "BP算法作者"
       },
-      "avatar": "resources/images/figures/david-rumelhart.jpg",
-      "avatarStyle": "transform: scale(1.28); transform-origin: 50% 35%;",
-      "figureType": "person"
+      "avatarStyle": "transform: scale(1.28); transform-origin: 50% 35%;"
     },
     {
-      "name": {
-        "en": "Geoffrey Hinton",
-        "zh": "杰弗里·辛顿"
-      },
+      "figureId": "geoffrey-hinton",
       "role": {
         "en": "Pioneer of deep learning",
         "zh": "深度学习之父"
       },
-      "avatar": "resources/images/figures/historical/geoffrey-hinton-1986.png",
-      "avatarStyle": "transform: scale(1.24); transform-origin: 50% 42%;",
-      "figureType": "person"
+      "avatarAssetId": "asset-1986-backpropagation-figure-avatar-geoffrey-hinton",
+      "avatarStyle": "transform: scale(1.24); transform-origin: 50% 42%;"
     },
     {
-      "name": {
-        "en": "Ronald Williams",
-        "zh": "罗纳德·威廉姆斯"
-      },
+      "figureId": "ronald-williams",
       "role": {
         "en": "Backpropagation co-author",
         "zh": "BP算法共同作者"
       },
-      "avatar": "resources/images/figures/ronald-williams.jpg",
-      "avatarStyle": "transform: scale(1.16); transform-origin: 50% 36%;",
-      "figureType": "person"
+      "avatarStyle": "transform: scale(1.16); transform-origin: 50% 36%;"
     }
   ],
   "photos": [],

@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "li-fei-fei"
+    ]
   },
   {
     "id": "asset-2009-imagenet-hierarchy",

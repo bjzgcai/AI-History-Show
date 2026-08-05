@@ -123,46 +123,26 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Jia Deng",
-        "zh": "邓嘉"
-      },
+      "figureId": "jia-deng",
       "role": {
         "en": "First author of ImageNet paper",
         "zh": "ImageNet 论文第一作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Li Fei-Fei",
-        "zh": "李飞飞"
-      },
+      "figureId": "li-fei-fei",
       "role": {
         "en": "ImageNet project leader",
         "zh": "ImageNet 项目主要推动者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2009-imagenet-fei-fei-li"
     },
     {
-      "name": {
-        "en": "Olga Russakovsky",
-        "zh": "奥尔加·鲁萨科夫斯基"
-      },
+      "figureId": "olga-russakovsky",
       "role": {
         "en": "ImageNet co-author",
         "zh": "ImageNet 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],

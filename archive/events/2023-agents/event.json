@@ -38,8 +38,7 @@
         "zh": "智能体理论奠基人",
         "en": "Founder of Agent Theory"
       },
-      "avatar": "resources/images/figures/stuart-russell.jpg",
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "peter-norvig",
@@ -47,17 +46,14 @@
         "zh": "《人工智能：一种现代方法》作者",
         "en": "AIMA author"
       },
-      "avatar": "resources/images/figures/peter-norvig.jpg",
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "michael-wooldridge",
       "role": {
         "zh": "多智能体系统专家",
         "en": "Expert in Multi-Agent Systems"
-      },
-      "avatar": "resources/images/figures/michael-wooldridge.jpg",
-      "organizationIds": []
+      }
     }
   ],
   "organizations": [],

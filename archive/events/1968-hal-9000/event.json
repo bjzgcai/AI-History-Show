@@ -34,33 +34,20 @@
   "figures": [
     {
       "figureId": "stanley-kubrick",
-      "name": {
-        "en": "Stanley Kubrick",
-        "zh": "斯坦利·库布里克"
-      },
       "role": {
         "en": "Director of 2001: A Space Odyssey",
         "zh": "《2001：太空漫游》导演"
       },
-      "avatar": "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1968-hal-9000-stanley-kubrick"
     },
     {
       "figureId": "arthur-c-clarke",
-      "name": {
-        "en": "Arthur C. Clarke",
-        "zh": "阿瑟·C·克拉克"
-      },
       "role": {
         "en": "Writer and novel author",
         "zh": "编剧与小说作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

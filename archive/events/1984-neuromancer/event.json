@@ -34,18 +34,12 @@
   "figures": [
     {
       "figureId": "william-gibson",
-      "name": {
-        "en": "William Gibson",
-        "zh": "威廉·吉布森"
-      },
       "role": {
         "en": "Author of Neuromancer",
         "zh": "《神经漫游者》作者"
       },
-      "avatar": "resources/images/humanistic-cycle/people/1984-neuromancer_william-gibson.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1984-neuromancer-william-gibson"
     }
   ],
   "organizations": [],

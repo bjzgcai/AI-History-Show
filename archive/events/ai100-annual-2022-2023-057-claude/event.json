@@ -38,17 +38,11 @@
   "figures": [
     {
       "figureId": "claude-product",
-      "name": {
-        "en": "Claude",
-        "zh": "Claude"
-      },
       "role": {
         "en": "Anthropic AI assistant",
         "zh": "Anthropic AI 助手"
       },
-      "figureType": "product",
-      "avatar": "resources/images/benchcouncil-ai100-annual/claude-logo.png",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

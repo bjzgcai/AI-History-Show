@@ -8,8 +8,10 @@ const path = require('node:path');
 const { auditVariant, isAssetSelectionExcluded, orderVariantAssetIds } = require('./event-figure-rules');
 const { findPortraitCandidate } = require('./ai100-contributors');
 const { validateAssetSelectionReview } = require('./asset-selection-review');
+const { loadFigureRegistry, resolveFigureRelations } = require('./figure-registry');
 
 const root = path.join(__dirname, '..');
+const figureRegistry = loadFigureRegistry(root);
 
 function image(id, role, caption, path = `resources/images/${id}.png`) {
     return {
@@ -307,7 +309,13 @@ const confirmedAvatarReuse = {
 for (const [eventId, [personName, expectedAvatar]] of Object.entries(confirmedAvatarReuse)) {
     const eventDir = path.join(root, 'archive', 'events', eventId);
     const event = JSON.parse(fs.readFileSync(path.join(eventDir, 'event.json'), 'utf8'));
-    const canonicalFigure = event.figures.find((figure) => figure.name && figure.name.en === personName);
+    const assets = JSON.parse(fs.readFileSync(path.join(eventDir, 'assets.json'), 'utf8'));
+    const canonicalFigure = resolveFigureRelations({
+        eventFigures: event.figures,
+        assets,
+        registry: figureRegistry
+    }).find((figure) => figure.name.en === personName);
+    assert.ok(canonicalFigure, `${eventId} should resolve ${personName} from the global figure registry`);
     assert.equal(
         canonicalFigure.avatar,
         expectedAvatar,
@@ -316,7 +324,12 @@ for (const [eventId, [personName, expectedAvatar]] of Object.entries(confirmedAv
 
     for (const file of fs.readdirSync(path.join(eventDir, 'variants')).filter((name) => name.endsWith('.json'))) {
         const variant = JSON.parse(fs.readFileSync(path.join(eventDir, 'variants', file), 'utf8'));
-        const variantFigure = (variant.figures || []).find((figure) => figure.name && figure.name.en === personName);
+        const variantFigure = resolveFigureRelations({
+            eventFigures: event.figures,
+            variantFigures: variant.figures,
+            assets,
+            registry: figureRegistry
+        }).find((figure) => figure.name.en === personName);
         if (variantFigure) {
             assert.equal(
                 variantFigure.avatar,

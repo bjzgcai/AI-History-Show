@@ -52,6 +52,34 @@
             "$ref": "shared.schema.json#/$defs/archiveId",
             "description": "Optional image asset used by the chronology overview card. It must also appear in assetIds."
         },
+        "figures": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": ["figureId"],
+                "properties": {
+                    "figureId": {
+                        "$ref": "shared.schema.json#/$defs/archiveId"
+                    },
+                    "role": {
+                        "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+                    },
+                    "primary": {
+                        "type": "boolean"
+                    },
+                    "avatarAssetId": {
+                        "$ref": "shared.schema.json#/$defs/archiveId"
+                    },
+                    "avatarStyle": {
+                        "type": "string"
+                    },
+                    "useDefaultAvatar": {
+                        "type": "boolean"
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
         "sourceIds": {
             "$ref": "shared.schema.json#/$defs/sourceIdList"
         },

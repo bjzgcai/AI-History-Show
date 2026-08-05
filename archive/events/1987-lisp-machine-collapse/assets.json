@@ -29,7 +29,10 @@
     "usage": [
       "variant:humanistic-cycle"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "richard-greenblatt"
+    ]
   },
   {
     "id": "asset-1987-lisp-machine-collapse-richard-stallman",
@@ -61,7 +64,10 @@
     "usage": [
       "variant:humanistic-cycle"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "richard-stallman"
+    ]
   },
   {
     "id": "asset-1987-lisp-machine-collapse-market-shift",

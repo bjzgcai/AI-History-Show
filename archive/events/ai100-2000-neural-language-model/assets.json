@@ -55,6 +55,9 @@
       "zh": "维基共享资源",
       "en": "Wikimedia Commons"
     },
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
+    "figureIds": [
+      "yoshua-bengio"
+    ]
   }
 ]

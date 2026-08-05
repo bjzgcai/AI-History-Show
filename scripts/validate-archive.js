@@ -8,11 +8,16 @@ const ROOT = path.resolve(__dirname, '..');
 const ARCHIVE_DIR = path.join(ROOT, 'archive');
 const EVENTS_DIR = path.join(ARCHIVE_DIR, 'events');
 const STORYLINES_DIR = path.join(ARCHIVE_DIR, 'storylines');
+const FIGURES_PATH = path.join(ARCHIVE_DIR, 'figures', 'figures.json');
 const REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-validation.md');
 const SOURCE_TYPE_TAXONOMY = require('../archive/taxonomies/source-types.json');
 const SOURCE_PURPOSE_TAXONOMY = require('../archive/taxonomies/source-purposes.json');
 const { auditArchive: auditEventFigureRules } = require('./event-figure-rules');
 const { validateAssetSelectionReview } = require('./asset-selection-review');
+const { createArchiveSchemaValidator } = require('./archive-schema-validator');
+const { createFigureRegistry } = require('./figure-registry');
+
+const validateSchema = createArchiveSchemaValidator(ROOT);
 
 const REQUIRED_EVENT_FILES = ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json'];
 const LOCALIZED_REQUIRED_KEYS = ['zh', 'en'];
@@ -83,6 +88,7 @@ const state = {
     storylines: [],
     assetRefs: [],
     figureRules: [],
+    figureRegistry: null,
     counts: {
         events: 0,
         claims: 0,
@@ -90,7 +96,8 @@ const state = {
         assets: 0,
         quizzes: 0,
         variants: 0,
-        storylines: 0
+        storylines: 0,
+        figures: 0
     }
 };
 
@@ -104,6 +111,11 @@ function addError(filePath, message) {
 
 function addWarning(filePath, message) {
     state.warnings.push({ file: rel(filePath), message });
+}
+
+function validateWithSchema(filePath, schemaId, value) {
+    const result = validateSchema(schemaId, value);
+    for (const error of result.errors) addError(filePath, `${schemaId}: ${error}`);
 }
 
 function readJson(filePath, options = {}) {
@@ -126,6 +138,11 @@ function isObject(value) {
 
 function hasText(value) {
     return typeof value === 'string' && value.trim().length > 0;
+}
+
+function localized(value, locale) {
+    if (!isObject(value)) return '';
+    return String(value[locale] || value.en || value.zh || '').trim();
 }
 
 function localizedValuesEqual(left, right) {
@@ -191,6 +208,76 @@ function checkUniqueIds(filePath, items, label) {
 function resolveAssetPath(assetPath) {
     if (!hasText(assetPath) || /^https?:\/\//i.test(assetPath)) return '';
     return path.resolve(ROOT, assetPath);
+}
+
+function validateFigureRegistry() {
+    if (!fs.existsSync(FIGURES_PATH)) {
+        addError(FIGURES_PATH, 'Missing global figure registry.');
+        return;
+    }
+    const figures = readJson(FIGURES_PATH);
+    if (!figures) return;
+    validateWithSchema(FIGURES_PATH, 'figure.schema.json', figures);
+    state.counts.figures = Array.isArray(figures) ? figures.length : 0;
+
+    try {
+        state.figureRegistry = createFigureRegistry(figures);
+    } catch (error) {
+        addError(FIGURES_PATH, error.message);
+        return;
+    }
+
+    for (const figure of figures) {
+        if (!isObject(figure)) continue;
+        if (figure.type === 'person' && !/[\u3400-\u9fff]/.test(localized(figure.name, 'zh'))) {
+            addError(FIGURES_PATH, `person figure must have a Chinese-readable name: ${figure.id}`);
+        }
+        for (const organizationId of figure.organizationIds || []) {
+            const organization = state.figureRegistry.byId.get(organizationId);
+            if (!organization) {
+                addError(FIGURES_PATH, `${figure.id} references missing organizationId: ${organizationId}`);
+            } else if (organization.type !== 'organization') {
+                addError(FIGURES_PATH, `${figure.id} organizationId is not an organization: ${organizationId}`);
+            }
+        }
+        if (figure.defaultAvatar && !fs.existsSync(resolveAssetPath(figure.defaultAvatar.path))) {
+            addError(FIGURES_PATH, `${figure.id} default avatar does not exist: ${figure.defaultAvatar.path}`);
+        }
+    }
+
+    for (const [avatarPath, figureIds] of state.figureRegistry.avatarOwners) {
+        const personIds = figureIds.filter((figureId) => state.figureRegistry.byId.get(figureId).type === 'person');
+        if (personIds.length > 1) {
+            addError(FIGURES_PATH, `different person IDs share default avatar ${avatarPath}: ${personIds.join(', ')}`);
+        }
+    }
+    for (const [identity, figureIds] of state.figureRegistry.identityCandidates) {
+        if (figureIds.size > 1) {
+            addWarning(FIGURES_PATH, `possible duplicate identity ${identity}: ${[...figureIds].join(', ')}`);
+        }
+    }
+}
+
+function validateFigureRelations(filePath, figures, assetsById) {
+    if (!Array.isArray(figures)) return;
+    const seen = new Set();
+    figures.forEach((relation, index) => {
+        const figureId = relation && relation.figureId;
+        if (!hasText(figureId)) return;
+        if (seen.has(figureId)) addError(filePath, `figures contains duplicate figureId: ${figureId}`);
+        seen.add(figureId);
+        if (!state.figureRegistry || !state.figureRegistry.byId.has(figureId)) {
+            addError(filePath, `figures[${index}] references missing figureId: ${figureId}`);
+        }
+        if (relation.avatarAssetId) {
+            const asset = assetsById.get(relation.avatarAssetId);
+            if (!asset) {
+                addError(filePath, `figures[${index}] references missing avatarAssetId: ${relation.avatarAssetId}`);
+            } else if (!Array.isArray(asset.figureIds) || !asset.figureIds.includes(figureId)) {
+                addError(filePath, `figures[${index}].avatarAssetId must reference an asset linked to ${figureId}`);
+            }
+        }
+    });
 }
 
 function isDisplayImageAsset(asset) {
@@ -308,6 +395,11 @@ function validateAssets(eventDir, assets, sourceIds) {
 
     for (const asset of assets) {
         if (!isObject(asset)) continue;
+        for (const figureId of asset.figureIds || []) {
+            if (!state.figureRegistry || !state.figureRegistry.byId.has(figureId)) {
+                addError(filePath, `asset ${asset.id || '<missing>'} references missing figureId: ${figureId}`);
+            }
+        }
         for (const issue of validateAssetSelectionReview(asset.selectionReview)) {
             addError(filePath, `asset ${asset.id || '<missing>'} selectionReview ${issue}.`);
         }
@@ -509,6 +601,7 @@ function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, qui
     }
     validateVariantPapers(filePath, variant.papers);
     validateVariantFigures(filePath, variant.figures);
+    validateFigureRelations(filePath, variant.figures, assetsById);
 
     if (Array.isArray(variant.commentarySections)) {
         variant.commentarySections.forEach((section, index) => {
@@ -558,6 +651,7 @@ function validateEventDir(eventDir) {
     const assets = readJson(path.join(eventDir, 'assets.json')) || [];
     const assetIds = validateAssets(eventDir, assets, sourceIds);
     const assetsById = toIdMap(assets);
+    validateFigureRelations(eventFile, event.figures, assetsById);
     const quizzes = readJson(path.join(eventDir, 'quizzes.json')) || [];
     const quizIds = validateQuizzes(eventDir, quizzes, sourceIds, assetIds);
 
@@ -681,6 +775,7 @@ function writeReport() {
     lines.push(`- Sources: ${state.counts.sources}`);
     lines.push(`- Assets: ${state.counts.assets}`);
     lines.push(`- Quizzes: ${state.counts.quizzes}`);
+    lines.push(`- Figures: ${state.counts.figures}`);
     lines.push(`- Errors: ${state.errors.length}`);
     lines.push(`- Warnings: ${state.warnings.length}`);
     lines.push('');
@@ -737,6 +832,7 @@ function writeReport() {
 }
 
 function main() {
+    validateFigureRegistry();
     if (!fs.existsSync(EVENTS_DIR)) {
         addError(EVENTS_DIR, 'Missing archive/events directory.');
     } else {

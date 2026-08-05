@@ -38,40 +38,28 @@
   "figures": [
     {
       "figureId": "alec-radford",
-      "name": {
-        "en": "Alec Radford",
-        "zh": "亚历克·拉德福德"
-      },
       "role": {
         "en": "First author of the Whisper paper",
         "zh": "Whisper 论文第一作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "jong-wook-kim",
-      "name": {
-        "en": "Jong Wook Kim",
-        "zh": "金钟旭"
-      },
       "role": {
         "en": "Co-author of the Whisper paper",
         "zh": "Whisper 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "ilya-sutskever",
-      "name": {
-        "en": "Ilya Sutskever",
-        "zh": "伊利亚·苏茨克维"
-      },
       "role": {
         "en": "Co-author of the Whisper paper",
         "zh": "Whisper 论文共同作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-024-whisper-portrait-ilya-sutskever"
     }
   ],
   "organizations": [],

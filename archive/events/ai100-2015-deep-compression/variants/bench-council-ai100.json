@@ -117,32 +117,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Song Han",
-        "zh": "韩松"
-      },
+      "figureId": "song-han",
       "role": {
         "en": "Deep Compression lead author",
         "zh": "Deep Compression 主要作者"
       },
-      "avatar": "resources/images/external/ai100-2015-deep-compression/song-han-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-ai100-2015-deep-compression-6514db3bc943fa1c599d89d5-songhan"
     },
     {
-      "name": {
-        "en": "William Dally",
-        "zh": "威廉·达利"
-      },
+      "figureId": "william-dally",
       "role": {
         "en": "Deep compression co-author",
         "zh": "Deep compression 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],

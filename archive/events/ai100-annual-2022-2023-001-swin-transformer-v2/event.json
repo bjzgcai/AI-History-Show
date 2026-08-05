@@ -38,29 +38,21 @@
   "figures": [
     {
       "figureId": "ze-liu",
-      "name": {
-        "en": "Ze Liu",
-        "zh": "刘泽"
-      },
       "role": {
         "en": "Co-first author of the Swin Transformer V2 paper",
         "zh": "Swin Transformer V2 论文共同第一作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-001-swin-transformer-v2-portrait-ze-liu"
     },
     {
       "figureId": "han-hu",
-      "name": {
-        "en": "Han Hu",
-        "zh": "胡瀚"
-      },
       "role": {
         "en": "Co-first author of the Swin Transformer V2 paper",
         "zh": "Swin Transformer V2 论文共同第一作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-001-swin-transformer-v2-portrait-han-hu"
     }
   ],
   "organizations": [],

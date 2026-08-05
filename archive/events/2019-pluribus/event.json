@@ -38,8 +38,8 @@
         "zh": "Pluribus 共同创建者",
         "en": "Pluribus co-creator"
       },
-      "avatar": "resources/images/figures/authoritative/noam-brown.jpg",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-noam-brown-official-portrait"
     },
     {
       "figureId": "tuomas-sandholm",
@@ -47,8 +47,8 @@
         "zh": "Pluribus 共同创建者",
         "en": "Pluribus co-creator"
       },
-      "avatar": "resources/images/figures/authoritative/tuomas-sandholm.jpg",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-tuomas-sandholm-commons-portrait"
     }
   ],
   "organizations": [],

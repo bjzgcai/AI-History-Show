@@ -55,6 +55,9 @@
       "zh": "林宗毅个人网站",
       "en": "Tsung-Yi Lin personal website"
     },
-    "sourceUrl": "https://tsungyilin.info/images/tsungyi.jpeg"
+    "sourceUrl": "https://tsungyilin.info/images/tsungyi.jpeg",
+    "figureIds": [
+      "tsung-yi-lin"
+    ]
   }
 ]

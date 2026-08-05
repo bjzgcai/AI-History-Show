@@ -38,16 +38,12 @@
   "figures": [
     {
       "figureId": "chelsea-finn",
-      "name": {
-        "en": "Chelsea Finn",
-        "zh": "切尔西·芬恩"
-      },
       "role": {
         "en": "Co-author of the SayCan paper",
         "zh": "SayCan 论文共同作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/chelsea-finn.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-117-saycan-portrait-chelsea-finn"
     }
   ],
   "organizations": [],

@@ -118,17 +118,12 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Alexander Kirillov",
-        "zh": "亚历山大·基里洛夫"
-      },
+      "figureId": "alexander-kirillov",
       "role": {
         "en": "Lead author of Segment Anything",
         "zh": "Segment Anything 主要作者"
       },
-      "avatar": "resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
+      "avatarAssetId": "asset-ai100-2023-segment-anything-alexander-kirillov"
     }
   ],
   "photos": [],

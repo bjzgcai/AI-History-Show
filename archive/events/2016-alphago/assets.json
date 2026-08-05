@@ -24,7 +24,10 @@
     "subcaption": {
       "zh": "与 AlphaGo 进行五番棋对局的职业围棋棋手。",
       "en": "Professional Go player who faced AlphaGo in the five-game match."
-    }
+    },
+    "figureIds": [
+      "lee-sedol"
+    ]
   },
   {
     "id": "asset-alphago-policy-value-search",
@@ -85,6 +88,9 @@
       "variant:bench-council-ai100",
       "variant:deep-learning",
       "variant:gaming-ai"
+    ],
+    "figureIds": [
+      "david-silver"
     ]
   },
   {

@@ -33,32 +33,21 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Warren McCulloch",
-        "zh": "沃伦·麦卡洛克"
-      },
+      "figureId": "warren-mcculloch",
       "role": {
         "en": "Co-author of the logical neuron model",
         "zh": "逻辑神经元模型共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     },
     {
-      "name": {
-        "en": "Walter Pitts",
-        "zh": "沃尔特·皮茨"
-      },
+      "figureId": "walter-pitts",
       "role": {
         "en": "Co-author of the logical neuron model",
         "zh": "逻辑神经元模型共同作者"
       },
-      "avatar": "resources/images/external/ai100-1943-mcculloch-pitts-neuron/walter-pitts-at-a-blackboard.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-ai100-1943-mcculloch-pitts-neuron-330px-1954-walter-pitts-and-a-blackboard"
     }
   ],
   "organizations": [],

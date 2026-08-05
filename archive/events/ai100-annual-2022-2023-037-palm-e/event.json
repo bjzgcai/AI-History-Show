@@ -38,28 +38,20 @@
   "figures": [
     {
       "figureId": "danny-driess",
-      "name": {
-        "en": "Danny Driess",
-        "zh": "丹尼·德里斯"
-      },
       "role": {
         "en": "First author of the PaLM-E paper",
         "zh": "PaLM-E 论文第一作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "pete-florence",
-      "name": {
-        "en": "Pete Florence",
-        "zh": "皮特·弗洛伦斯"
-      },
       "role": {
         "en": "Co-author of the PaLM-E paper",
         "zh": "PaLM-E 论文共同作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/external/ai100-2023-palm-e/pete-florence.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-037-palm-e-portrait-pete-florence"
     }
   ],
   "organizations": [],

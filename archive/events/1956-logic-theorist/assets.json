@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "herbert-a-simon"
+    ]
   },
   {
     "id": "asset-1956-logic-theorist-proof-search",

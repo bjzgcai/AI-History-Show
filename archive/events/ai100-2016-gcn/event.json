@@ -33,32 +33,21 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Thomas Kipf",
-        "zh": "托马斯·基普夫"
-      },
+      "figureId": "thomas-kipf",
       "role": {
         "en": "GCN lead author",
         "zh": "GCN 主要作者"
       },
-      "avatar": "resources/images/external/ai100-2016-gcn/thomas-kipf-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-ai100-2016-gcn-photo"
     },
     {
-      "name": {
-        "en": "Max Welling",
-        "zh": "马克斯·韦林"
-      },
+      "figureId": "max-welling",
       "role": {
         "en": "GCN co-author",
         "zh": "GCN 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

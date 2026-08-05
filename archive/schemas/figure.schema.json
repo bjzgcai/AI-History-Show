@@ -1,48 +1,121 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "figure.schema.json",
-  "title": "Archive figures",
-  "type": "array",
-  "items": {
-    "type": "object",
-    "required": ["id", "name"],
-    "properties": {
-      "id": {
-        "$ref": "shared.schema.json#/$defs/archiveId"
-      },
-      "name": {
-        "$ref": "shared.schema.json#/$defs/localizedText"
-      },
-      "aliases": {
-        "type": "array",
-        "items": {
-          "type": "string"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "figure.schema.json",
+    "title": "Archive global figure registry",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "required": ["id", "name", "type", "aliases", "profileSources", "review"],
+        "properties": {
+            "id": {
+                "$ref": "shared.schema.json#/$defs/archiveId"
+            },
+            "name": {
+                "$ref": "shared.schema.json#/$defs/localizedText"
+            },
+            "aliases": {
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "uniqueItems": true
+            },
+            "disambiguation": {
+                "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+            },
+            "type": {
+                "type": "string",
+                "enum": ["person", "team", "organization", "product", "system"]
+            },
+            "organizationIds": {
+                "type": "array",
+                "items": {
+                    "$ref": "shared.schema.json#/$defs/archiveId"
+                },
+                "uniqueItems": true
+            },
+            "profileSources": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "required": ["type", "label", "url"],
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "label": {
+                            "$ref": "shared.schema.json#/$defs/localizedText"
+                        },
+                        "url": {
+                            "type": "string",
+                            "minLength": 1
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "defaultAvatar": {
+                "type": "object",
+                "required": ["path", "sourceName", "sourceUrl", "rights"],
+                "properties": {
+                    "path": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "sourceName": {
+                        "$ref": "shared.schema.json#/$defs/localizedText"
+                    },
+                    "sourceUrl": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "rights": {
+                        "type": "object",
+                        "required": ["status", "license", "usage"],
+                        "properties": {
+                            "status": {
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "license": {
+                                "$ref": "shared.schema.json#/$defs/localizedText"
+                            },
+                            "usage": {
+                                "$ref": "shared.schema.json#/$defs/localizedText"
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "avatarStyle": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            },
+            "review": {
+                "type": "object",
+                "required": ["status", "reviewedAt", "reviewer"],
+                "properties": {
+                    "status": {
+                        "$ref": "shared.schema.json#/$defs/reviewStatus"
+                    },
+                    "reviewedAt": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "reviewer": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "notes": {
+                        "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+                    }
+                },
+                "additionalProperties": false
+            }
         },
-        "uniqueItems": true
-      },
-      "type": {
-        "type": "string"
-      },
-      "organizationIds": {
-        "type": "array",
-        "items": {
-          "$ref": "shared.schema.json#/$defs/archiveId"
-        },
-        "uniqueItems": true
-      },
-      "avatarAssetId": {
-        "$ref": "shared.schema.json#/$defs/archiveId"
-      },
-      "url": {
-        "type": "string"
-      },
-      "notes": {
-        "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-      },
-      "review": {
-        "$ref": "shared.schema.json#/$defs/reviewState"
-      }
-    },
-    "additionalProperties": true
-  }
+        "additionalProperties": false
+    }
 }

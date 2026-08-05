@@ -128,76 +128,47 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Alexander Kirillov",
-        "zh": "亚历山大·基里洛夫"
-      },
+      "figureId": "alexander-kirillov",
       "role": {
         "en": "First author of the Segment Anything paper",
         "zh": "Segment Anything 论文第一作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Eric Mintun",
-        "zh": "埃里克·明顿"
-      },
+      "figureId": "eric-mintun",
+      "role": {
+        "en": "Co-author of the Segment Anything paper",
+        "zh": "Segment Anything 论文共同作者"
+      }
+    },
+    {
+      "figureId": "nikhila-ravi",
+      "role": {
+        "en": "Co-author of the Segment Anything paper",
+        "zh": "Segment Anything 论文共同作者"
+      }
+    },
+    {
+      "figureId": "hanzi-mao",
+      "role": {
+        "en": "Co-author of the Segment Anything paper",
+        "zh": "Segment Anything 论文共同作者"
+      }
+    },
+    {
+      "figureId": "piotr-dollar",
+      "role": {
+        "en": "Co-author of the Segment Anything paper",
+        "zh": "Segment Anything 论文共同作者"
+      }
+    },
+    {
+      "figureId": "ross-girshick",
       "role": {
         "en": "Co-author of the Segment Anything paper",
         "zh": "Segment Anything 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Nikhila Ravi",
-        "zh": "尼基拉·拉维"
-      },
-      "role": {
-        "en": "Co-author of the Segment Anything paper",
-        "zh": "Segment Anything 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Hanzi Mao",
-        "zh": "汉兹·毛"
-      },
-      "role": {
-        "en": "Co-author of the Segment Anything paper",
-        "zh": "Segment Anything 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Piotr Dollar",
-        "zh": "彼得·多拉尔"
-      },
-      "role": {
-        "en": "Co-author of the Segment Anything paper",
-        "zh": "Segment Anything 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Ross Girshick",
-        "zh": "罗斯·格希克"
-      },
-      "role": {
-        "en": "Co-author of the Segment Anything paper",
-        "zh": "Segment Anything 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": "resources/images/external/ai100-2023-segment-anything/ross-girshick.jpg"
+      "avatarAssetId": "asset-annual-101-segment-anything-portrait-ross-girshick"
     }
   ],
   "quote": {
