@@ -15,7 +15,7 @@ const SOURCE_PURPOSE_TAXONOMY = require('../archive/taxonomies/source-purposes.j
 const { auditArchive: auditEventFigureRules } = require('./event-figure-rules');
 const { validateAssetSelectionReview } = require('./asset-selection-review');
 const { createArchiveSchemaValidator } = require('./archive-schema-validator');
-const { createFigureRegistry } = require('./figure-registry');
+const { createFigureRegistry, localized } = require('./figure-registry');
 
 const validateSchema = createArchiveSchemaValidator(ROOT);
 
@@ -138,11 +138,6 @@ function isObject(value) {
 
 function hasText(value) {
     return typeof value === 'string' && value.trim().length > 0;
-}
-
-function localized(value, locale) {
-    if (!isObject(value)) return '';
-    return String(value[locale] || value.en || value.zh || '').trim();
 }
 
 function localizedValuesEqual(left, right) {

@@ -7,7 +7,7 @@ const zlib = require('node:zlib');
 
 const { createArchiveSchemaValidator } = require('../scripts/archive-schema-validator');
 const { isGroupPersonAsset, isPersonAsset } = require('../scripts/event-figure-rules');
-const { createFigureRegistry, normalizeIdentityText } = require('../scripts/figure-registry');
+const { createFigureRegistry, localized, normalizeIdentityText } = require('../scripts/figure-registry');
 
 function createHttpError(message, statusCode) {
     const error = new Error(message);
@@ -60,11 +60,6 @@ function filesRevision(filePaths) {
         hash.update('\0');
     }
     return hash.digest('hex');
-}
-
-function localized(value, locale) {
-    if (!value || typeof value !== 'object' || Array.isArray(value)) return '';
-    return String(value[locale] || value[locale === 'en' ? 'zh' : 'en'] || '').trim();
 }
 
 function hasLocalizedPair(value) {
