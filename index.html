@@ -5840,14 +5840,6 @@
             background: rgba(255, 255, 255, 0.92);
         }
 
-        .ui-detail-image-stage.has-full-image {
-            cursor: zoom-in;
-        }
-
-        .ui-detail-image-stage[data-image-load-state="loaded"] {
-            cursor: default;
-        }
-
         .ui-detail-image-stage img {
             max-width: 100%;
             max-height: 100%;
@@ -5860,10 +5852,6 @@
 
         .ui-detail-image-stage img.is-changing {
             opacity: 0.18;
-        }
-
-        .ui-detail-image-stage[data-image-load-state="loading"] img {
-            opacity: 0.32;
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -6669,37 +6657,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        .image-load-frame {
-            position: relative;
-        }
-
-        .image-load-frame[data-image-load-state="loading"]::before,
-        .image-load-frame[data-image-load-state="error"]::before {
-            content: attr(data-loading-label);
-            position: absolute;
-            left: 50%;
-            bottom: 18px;
-            z-index: 5;
-            transform: translateX(-50%);
-            max-width: min(320px, calc(100% - 32px));
-            padding: 8px 12px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            border-radius: 4px;
-            background: rgba(0, 0, 0, 0.72);
-            color: #f4efe5;
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
-            font-size: 13px;
-            font-weight: 800;
-            line-height: 1.25;
-            text-align: center;
-            pointer-events: none;
-        }
-
-        .image-load-frame[data-image-load-state="error"]::before {
-            content: attr(data-error-label);
-            color: #ffd4c9;
         }
 
         .photo-viewer-frame {
@@ -9331,7 +9288,6 @@
         let completionQuizViewKey = '';
         let completionQuizViewStartedAt = 0;
         const vmCache = new Map();
-        const imagePreloadCache = new Map();
         const completedQuizMilestoneKeys = new Set();
 
         let globeScene;
@@ -10368,91 +10324,19 @@
             return loader && typeof loader.getPreviewUrl === 'function' ? loader.getPreviewUrl(url) : url;
         }
 
-        function hasPreviewImage(url) {
-            const loader = getImageLoader();
-            return loader && typeof loader.hasPreview === 'function' ? loader.hasPreview(url) : false;
-        }
-
-        function buildPreviewImageAttributes(url, alt, options = {}) {
+        function buildPreviewImageAttributes(url, alt) {
             const fullSrc = String(url || '').trim();
             const previewSrc = getPreviewImageUrl(fullSrc);
-            const loading = options.loading || 'lazy';
-            const classAttr = options.className ? ` class="${escapeHtml(options.className)}"` : '';
-            const draggableAttr = options.draggable === false ? ' draggable="false"' : '';
-            const activeIndexAttr = options.activeIndex != null
-                ? ` data-ui-active-image-index="${escapeHtml(options.activeIndex)}"`
-                : '';
             const fullAttrs = fullSrc && previewSrc !== fullSrc
                 ? ` data-full-src="${escapeHtml(fullSrc)}" data-preview-src="${escapeHtml(previewSrc)}"`
                 : '';
-            return `${classAttr} src="${escapeHtml(previewSrc)}"${fullAttrs} alt="${escapeHtml(alt || '')}" decoding="async" loading="${escapeHtml(loading)}"${activeIndexAttr}${draggableAttr}`;
+            return `src="${escapeHtml(previewSrc)}"${fullAttrs} alt="${escapeHtml(alt || '')}" decoding="async" loading="lazy"`;
         }
 
         function hydratePreviewImages(root) {
             const loader = getImageLoader();
             if (!root || !loader || typeof loader.attachPreviewFallback !== 'function') return;
             root.querySelectorAll('img[data-full-src]').forEach((image) => loader.attachPreviewFallback(image));
-        }
-
-        function setPreviewImage(imgEl, src, alt, options = {}) {
-            const loader = getImageLoader();
-            if (loader && typeof loader.setPreviewImage === 'function') {
-                loader.setPreviewImage(imgEl, src, alt, options);
-                return;
-            }
-            const nextSrc = src || '';
-            if (imgEl.getAttribute('src') !== nextSrc) {
-                imgEl.decoding = 'async';
-                imgEl.loading = options.loading || imgEl.loading || 'lazy';
-                imgEl.src = nextSrc;
-            }
-            imgEl.alt = alt || '';
-        }
-
-        function loadFullImageInto(imgEl, options = {}) {
-            const loader = getImageLoader();
-            if (loader && typeof loader.loadFullImageInto === 'function') {
-                return loader.loadFullImageInto(imgEl, options).catch(() => {});
-            }
-            return Promise.resolve('');
-        }
-
-        function setImageLoadFrameState(frame, state) {
-            const loader = getImageLoader();
-            if (loader && typeof loader.setFrameState === 'function') {
-                loader.setFrameState(frame, state);
-            } else if (frame) {
-                if (state) frame.dataset.imageLoadState = state;
-                else delete frame.dataset.imageLoadState;
-            }
-        }
-
-        function preloadImage(url) {
-            const previewUrl = getPreviewImageUrl(url);
-            if (!previewUrl || imagePreloadCache.has(previewUrl)) return;
-            const loader = getImageLoader();
-            const image = loader && typeof loader.preloadPreviewImage === 'function'
-                ? loader.preloadPreviewImage(url)
-                : (() => {
-                    const previewImage = new Image();
-                    previewImage.decoding = 'async';
-                    previewImage.loading = 'eager';
-                    previewImage.src = previewUrl;
-                    return previewImage;
-                })();
-            imagePreloadCache.set(previewUrl, image);
-        }
-
-        function preloadMilestoneAssets(index) {
-            if (index < 0 || index >= milestoneList.length) return;
-            const vm = getVm(index);
-            getPhotosForDisplay(vm.photos).slice(0, 20).forEach(preloadImage);
-        }
-
-        function preloadAdjacentAssets(index) {
-            preloadMilestoneAssets(index);
-            preloadMilestoneAssets(index - 1);
-            preloadMilestoneAssets(index + 1);
         }
 
         function buildContextYears(year, beforeCount, afterCount) {
@@ -10725,7 +10609,7 @@
             return `
                 <div class="bench-photo-frame bench-visual-card has-image">
                     <div class="bench-image-stage${isDiagram ? ' is-diagram' : ''}">
-                        <img ${buildPreviewImageAttributes(item.url, title)}>
+                        <img src="${escapeHtml(item.url)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async">
                     </div>
                     <div class="bench-hero-caption">
                         <span>${escapeHtml(title)}</span>
@@ -10754,12 +10638,12 @@
         function buildBenchVideoVisualCard(item) {
             const title = item.title || uiText('Game evolution clip', '棋局演化短片');
             const description = item.description || item.usage || '';
-            const poster = item.poster ? ` poster="${escapeHtml(getPreviewImageUrl(item.poster))}"` : '';
+            const poster = item.poster ? ` poster="${escapeHtml(item.poster)}"` : '';
             return `
                 <div class="bench-photo-frame bench-visual-card has-video">
                     <div class="bench-video-stage">
                         <video src="${escapeHtml(item.url)}"${poster} muted loop playsinline preload="metadata" aria-label="${escapeHtml(title)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"></video>
-                        ${item.poster ? `<img ${buildPreviewImageAttributes(item.poster, title)} hidden>` : ''}
+                        ${item.poster ? `<img src="${escapeHtml(item.poster)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" hidden>` : ''}
                         <span class="bench-video-badge">${escapeHtml(uiText('MP4', 'MP4'))}</span>
                     </div>
                     <div class="bench-hero-caption">
@@ -11896,7 +11780,7 @@
                 <button class="close-viewer" type="button" aria-label="${escapeHtml(tx('close'))}">×</button>
                 <div class="game-evolution-panel">
                     ${shouldUseVideo ? `<video class="game-evolution-player" src="${escapeHtml(videoUrl)}" controls autoplay muted loop playsinline preload="metadata"></video>` : ''}
-                    ${fallbackImageUrl ? `<img ${buildPreviewImageAttributes(fallbackImageUrl, title, { className: 'game-evolution-fallback' })}${shouldUseVideo ? ' hidden' : ''}>` : ''}
+                    ${fallbackImageUrl ? `<img class="game-evolution-fallback" src="${escapeHtml(fallbackImageUrl)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async"${shouldUseVideo ? ' hidden' : ''}>` : ''}
                     <div class="game-evolution-meta">
                         <strong>${escapeHtml(title)}</strong>
                         <span>${escapeHtml(sourceLine)}</span>
@@ -13056,10 +12940,16 @@
                     </div>
                 </article>
             `).join('');
+            hydratePreviewImages(refs.figureRow);
         }
 
         function setImage(imgEl, src, alt) {
-            setPreviewImage(imgEl, src, alt, { loading: 'eager' });
+            const nextSrc = src || '';
+            if (imgEl.getAttribute('src') !== nextSrc) {
+                imgEl.decoding = 'async';
+                imgEl.loading = 'eager';
+                imgEl.src = nextSrc;
+            }
             imgEl.alt = alt || '';
             imgEl.style.visibility = src ? 'visible' : 'hidden';
         }
@@ -13091,10 +12981,8 @@
             const activeMeta = buildArchivePhotoMeta(vm, focusUrl);
             const nextMeta = buildArchivePhotoMeta(vm, nextUrl);
 
-            refs.archiveThumbPrev.innerHTML = prevUrl ? `<img ${buildPreviewImageAttributes(prevUrl, tx('previousArchive'))}>` : '';
-            refs.archiveThumbNext.innerHTML = nextUrl ? `<img ${buildPreviewImageAttributes(nextUrl, tx('nextArchive'))}>` : '';
-            hydratePreviewImages(refs.archiveThumbPrev);
-            hydratePreviewImages(refs.archiveThumbNext);
+            refs.archiveThumbPrev.innerHTML = prevUrl ? `<img src="${escapeHtml(prevUrl)}" alt="${escapeHtml(tx('previousArchive'))}" loading="lazy" decoding="async">` : '';
+            refs.archiveThumbNext.innerHTML = nextUrl ? `<img src="${escapeHtml(nextUrl)}" alt="${escapeHtml(tx('nextArchive'))}" loading="lazy" decoding="async">` : '';
             refs.archiveThumbPrev.classList.toggle('is-empty', !prevUrl);
             refs.archiveThumbNext.classList.toggle('is-empty', !nextUrl);
             refs.archiveThumbPrev.disabled = !hasPhotos || safePhotos.length <= 1 || !prevUrl;
@@ -13409,7 +13297,7 @@
                             ${description ? `<div class="quiz-material-description">${escapeHtml(description)}</div>` : ''}
                         </div>
                         <div class="quiz-material-image">
-                            <img ${buildPreviewImageAttributes(item.url, title)}>
+                        <img src="${escapeHtml(item.url)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async">
                         </div>
                     </article>
                 `;
@@ -13445,7 +13333,6 @@
                 ${buildQuizMaterialVisualCard(visual)}
                 <div class="quiz-material-source-list">${sourceHtml}</div>
             `;
-            hydratePreviewImages(container);
         }
 
         function getCompletionQuizKey(vm) {
@@ -13931,7 +13818,7 @@
                 ? mediaMeta.caption
                 : (fallbackTitle || getAchievementField(rawMilestone, 'artifact', tx('archiveImage')));
             const imageHtml = mediaUrl
-                ? `<img ${buildPreviewImageAttributes(mediaUrl, mediaTitle || tx('archiveImage'))}>`
+                ? `<img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || tx('archiveImage'))}" loading="lazy" decoding="async">`
                 : `<div class="bench-code-label">${escapeHtml(mediaTitle || tx('archiveImage'))}</div>`;
             return buildPaperDemo(`
                 <div class="bench-paper-svg bench-paper-image-demo">
@@ -13948,7 +13835,7 @@
         function buildGameEvolutionVideoDemo(rawMilestone, module) {
             const title = module.title || getAchievementField(rawMilestone, 'artifact', uiText('Game evolution clip', '棋局演化短片'));
             const poster = module.poster || getGenericDemoImage(rawMilestone);
-            const posterAttr = poster ? ` poster="${escapeHtml(getPreviewImageUrl(poster))}"` : '';
+            const posterAttr = poster ? ` poster="${escapeHtml(poster)}"` : '';
             const sourceLine = module.sourceSgf
                 ? uiText(`Generated from SGF: ${module.sourceSgf}`, `由 SGF 生成：${module.sourceSgf}`)
                 : (module.description || uiText('Generated from a curated game record.', '由策展棋谱生成。'));
@@ -13960,7 +13847,7 @@
             return buildPaperDemo(`
                 <div class="bench-game-video-demo">
                     <video src="${escapeHtml(module.url)}"${posterAttr} controls muted loop playsinline preload="metadata" aria-label="${escapeHtml(title)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"></video>
-                    ${poster ? `<img ${buildPreviewImageAttributes(poster, title, { className: 'bench-game-video-fallback' })} hidden>` : ''}
+                    ${poster ? `<img class="bench-game-video-fallback" src="${escapeHtml(poster)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" hidden>` : ''}
                 </div>
             `, [
                 [uiText('SGF cue', 'SGF 线索'), sourceLine],
@@ -15018,7 +14905,7 @@
             const mediaTitle = mediaMeta && mediaMeta.caption ? mediaMeta.caption : artifact;
             const mediaHtml = mediaUrl ? `
                 <div class="bench-code-media">
-                    <img ${buildPreviewImageAttributes(mediaUrl, mediaTitle || artifact || tx('archiveImage'))}>
+                    <img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || artifact || tx('archiveImage'))}" loading="lazy" decoding="async">
                 </div>
                 ${mediaTitle ? `<div class="bench-code-media-caption">${escapeHtml(mediaTitle)}</div>` : ''}
             ` : '';
@@ -15073,7 +14960,6 @@
 
             const placeholders = Array.from({ length: Math.max(0, 3 - items.length) }, () => null);
             refs.benchHeroVisual.innerHTML = [...items, ...placeholders].map(buildBenchVisualCard).join('');
-            hydratePreviewImages(refs.benchHeroVisual);
         }
 
         function buildAchievementDemoVisualHtml(raw, options = {}) {
@@ -15184,7 +15070,6 @@
                 <div class="bench-demo-visual">${visualHtml}</div>
                 <div class="bench-demo-steps">${stepHtml}</div>
             `;
-            hydratePreviewImages(refs.benchDemoSurface);
         }
 
         function renderBenchSources(rawMilestone) {
@@ -15459,7 +15344,7 @@
             const imageUrl = getUiMediaVisualImage(vm);
             if (!imageUrl) return '';
             const meta = buildArchivePhotoMeta(vm, imageUrl);
-            return `<div class="ui-side-visual"><div class="ui-side-visual-stage"><img ${buildPreviewImageAttributes(imageUrl, meta.name || tx('archiveImage'))}></div><div class="ui-side-visual-caption">${escapeHtml(meta.name || meta.role || tx('archiveImage'))}</div></div>`;
+            return `<div class="ui-side-visual"><div class="ui-side-visual-stage"><img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(meta.name || tx('archiveImage'))}" loading="lazy" decoding="async"></div><div class="ui-side-visual-caption">${escapeHtml(meta.name || meta.role || tx('archiveImage'))}</div></div>`;
         }
 
         function buildUiConceptsHtml(vm) {
@@ -15576,8 +15461,6 @@
             const captionDetail = imageRoot.querySelector('.ui-detail-caption-detail');
             const expectedIndex = String(uiDetailImageIndex);
             let expectedSrc = '';
-            const previewUrl = getPreviewImageUrl(imageUrl);
-            const hasHighResImage = hasPreviewImage(imageUrl);
             const revealImage = () => {
                 if (image.dataset.uiActiveImageIndex !== expectedIndex || image.src !== expectedSrc) return;
                 image.classList.remove('is-changing');
@@ -15589,21 +15472,9 @@
             image.dataset.uiActiveImageIndex = expectedIndex;
             image.onload = revealImage;
             image.onerror = revealImage;
-            setPreviewImage(image, imageUrl, vm.title || tx('aiHistoryEvent'), { loading: 'eager', stateElement: imageStage });
-            imageStage.classList.toggle('has-full-image', hasHighResImage);
-            if (hasHighResImage) {
-                const highResActionLabel = uiText('Load high-resolution image', 'åŠ è½½é«˜æ¸…å›¾ç‰‡');
-                imageStage.tabIndex = 0;
-                imageStage.setAttribute('role', 'button');
-                imageStage.setAttribute('aria-label', highResActionLabel);
-                imageStage.title = highResActionLabel;
-            } else {
-                imageStage.removeAttribute('tabindex');
-                imageStage.removeAttribute('role');
-                imageStage.removeAttribute('aria-label');
-                imageStage.removeAttribute('title');
-            }
-            setImageLoadFrameState(imageStage, '');
+            image.decoding = 'async';
+            image.loading = 'eager';
+            image.src = imageUrl;
             expectedSrc = image.src;
             imageStage.classList.toggle('is-diagram', isDiagramImage(imageUrl));
             if (image.complete && image.naturalWidth) window.requestAnimationFrame(revealImage);
@@ -15647,24 +15518,6 @@
             imageStage.addEventListener('focusin', clearUiDetailImageAutoplay);
             imageStage.addEventListener('focusout', (event) => {
                 if (!imageStage.contains(event.relatedTarget)) scheduleUiDetailImageAutoplay();
-            });
-        }
-
-        function bindUiDetailHighResImage(imageStage) {
-            if (!imageStage || imageStage.dataset.highResBound === 'true') return;
-            imageStage.dataset.highResBound = 'true';
-            const activate = (event) => {
-                if (event && event.target && event.target.closest('[data-ui-image-step]')) return;
-                const image = imageStage.querySelector('img[data-full-src]');
-                if (!image) return;
-                clearUiDetailImageAutoplay();
-                loadFullImageInto(image, { stateElement: imageStage });
-            };
-            imageStage.addEventListener('click', activate);
-            imageStage.addEventListener('keydown', (event) => {
-                if (event.key !== 'Enter' && event.key !== ' ') return;
-                event.preventDefault();
-                activate(event);
             });
         }
 
@@ -15885,16 +15738,11 @@
             const imageCaptionTitle = imageMeta.name || title;
             const imageCaptionDetail = imageMeta.role || '';
             const sentimentTagHtml = buildUiSentimentTagHtml(raw);
-            const hasHighResImage = hasPreviewImage(imageUrl);
-            const highResActionLabel = uiText('Load high-resolution image', 'åŠ è½½é«˜æ¸…å›¾ç‰‡');
-            const highResStageAttrs = hasHighResImage
-                ? ` tabindex="0" role="button" aria-label="${escapeHtml(highResActionLabel)}" title="${escapeHtml(highResActionLabel)}"`
-                : '';
             const detailImageHtml = imageUrl
                 ? `
                     <div class="ui-detail-image">
-                        <div class="ui-detail-image-stage${detailImageClass}${hasHighResImage ? ' has-full-image' : ''} image-load-frame" data-loading-label="${escapeHtml(tx('loadingFullImage'))}" data-error-label="${escapeHtml(tx('imageLoadFailed'))}"${highResStageAttrs}>
-                            <img ${buildPreviewImageAttributes(imageUrl, title, { loading: 'eager', activeIndex: uiDetailImageIndex, draggable: false })}>
+                        <div class="ui-detail-image-stage${detailImageClass}">
+                            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}" loading="eager" decoding="async" data-ui-active-image-index="${uiDetailImageIndex}" draggable="false">
                             ${buildUiDetailImageEdgeButtonsHtml(detailImages)}
                         </div>
                         <div class="ui-detail-caption">
@@ -15955,7 +15803,6 @@
             });
             bindUiEventEdgeNavigation(refs.uiBrowserMain);
             const uiDetailImageStage = refs.uiBrowserMain.querySelector('.ui-detail-image-stage');
-            bindUiDetailHighResImage(uiDetailImageStage);
             bindUiDetailImageAutoplayPause(uiDetailImageStage, detailImages.length);
             bindUiSidePanelScrollProgress(refs.uiBrowserMain.querySelector('.ui-side-panel'));
             scheduleUiDetailLocationFit();
@@ -16060,29 +15907,20 @@
             viewer.innerHTML = `
                 <button class="close-viewer" type="button">×</button>
                 <button class="photo-prev" type="button">◀</button>
-                <div class="photo-viewer-frame image-load-frame" data-loading-label="${escapeHtml(tx('loadingFullImage'))}" data-error-label="${escapeHtml(tx('imageLoadFailed'))}">
+                <div class="photo-viewer-frame">
                     <img class="viewer-photo" alt="${escapeHtml(tx('historicalArchive'))}">
                 </div>
                 <button class="photo-next" type="button">▶</button>
                 <div class="photo-counter">${currentPhotoIndex + 1} / ${photos.length}</div>
             `;
             document.body.appendChild(viewer);
-            hydratePreviewImages(viewer);
-            const viewerFrame = viewer.querySelector('.photo-viewer-frame');
             const viewerPhoto = viewer.querySelector('.viewer-photo');
             const viewerCounter = viewer.querySelector('.photo-counter');
 
             const showViewerPhoto = () => {
-                setPreviewImage(viewerPhoto, photos[currentPhotoIndex], tx('historicalArchive'), {
-                    loading: 'eager',
-                    stateElement: viewerFrame
-                });
-                if (viewerPhoto.dataset.fullSrc) {
-                    setImageLoadFrameState(viewerFrame, 'loading');
-                    loadFullImageInto(viewerPhoto, { stateElement: viewerFrame });
-                } else {
-                    setImageLoadFrameState(viewerFrame, '');
-                }
+                viewerPhoto.decoding = 'async';
+                viewerPhoto.loading = 'eager';
+                viewerPhoto.src = photos[currentPhotoIndex];
                 viewerCounter.textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
             };
             showViewerPhoto();
@@ -16171,7 +16009,6 @@
                 resetInlineMedia();
                 renderBranchTimelinePage();
                 document.title = `${tx('appTitleSingle')} - ${getStorylineLabel(getActiveStorylineOption()) || vm.title}`;
-                preloadAdjacentAssets(currentIndex);
                 return;
             }
             renderHeader(vm);
@@ -16199,7 +16036,6 @@
             } else {
                 document.title = `${tx('appTitleSingle')} - ${vm.year} ${vm.title}`;
             }
-            preloadAdjacentAssets(currentIndex);
         }
 
         function isPortraitStackLayout() {
@@ -16488,7 +16324,6 @@
                 return;
             }
 
-            preloadMilestoneAssets(index);
             currentIndex = index;
             if (isUiBrowserActive() && milestoneList[index]) {
                 uiBrowserMode = 'detail';
