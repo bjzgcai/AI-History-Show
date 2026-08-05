@@ -1048,6 +1048,23 @@
             transform-origin: center center;
         }
 
+        .figure-avatar.is-product {
+            background: rgba(244, 239, 229, 0.94);
+            filter: none;
+        }
+
+        .figure-avatar.is-product img {
+            box-sizing: border-box;
+            object-fit: contain;
+            padding: 10px;
+            filter: none;
+        }
+
+        .figure-avatar.is-product img[src$="chatgpt-logo.png"] {
+            background: #101010;
+            padding: 8px;
+        }
+
         .figure-meta {
             min-width: 0;
             padding-top: 5px;
@@ -3394,15 +3411,18 @@
                     role: buildLocationLine(vm.location) || tx('keyHistoricalFigure')
                 }];
             refs.figureRow.className = `figure-row count-${Math.min(4, figures.length)}`;
-            refs.figureRow.innerHTML = figures.map((figure) => `
+            refs.figureRow.innerHTML = figures.map((figure) => {
+                const avatarClass = figure.figureType === 'product' ? ' is-product' : '';
+                return `
                 <article class="figure-chip">
-                    <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure))}</div>
+                    <div class="figure-avatar${avatarClass}">${buildFigureAvatar(figure, getFigureAvatarSource(figure))}</div>
                     <div class="figure-meta">
                         <div class="figure-name">${escapeHtmlWithCjkTail(figure.name || tx('keyFigure'))}</div>
                         <div class="figure-role">${escapeHtmlWithCjkTail(figure.role || tx('keyParticipant'))}</div>
                     </div>
                 </article>
-            `).join('');
+            `;
+            }).join('');
             hydratePreviewImages(refs.figureRow);
         }
 

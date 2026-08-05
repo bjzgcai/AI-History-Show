@@ -182,7 +182,7 @@ console.log('PASS runtime figure avatars are explicit local files');
 const compiledArchive = compileArchive(path.join(__dirname, '..'));
 assert.equal(compiledArchive.source, 'archive');
 assert.equal(compiledArchive.errors.length, 0);
-assert.equal(compiledArchive.milestones.length, 174);
+assert.equal(compiledArchive.milestones.length, 214);
 assert.ok(compiledArchive.milestones.every((milestone) => milestone.sourceKind === 'archive'));
 assert.deepEqual(
     new Set(compiledArchive.milestones.map((milestone) => milestone.id)).size,
@@ -224,7 +224,37 @@ for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'e
 }
 console.log('PASS storyline labels have one Archive authority');
 
-assert.equal(milestones.length, 174, 'Archive runtime should contain all four storylines and 174 milestones');
+assert.equal(milestones.length, 214, 'Archive runtime should contain five storylines and 214 milestones');
+const ai100MapMilestones = milestones.filter(
+    (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100'
+);
+assert.equal(
+    ai100MapMilestones.length,
+    139,
+    'AI Achievement Map should contain 119 canonical and 20 selected achievements'
+);
+assert.equal(
+    ai100MapMilestones.filter((milestone) => milestone.id.startsWith('milestone-ai100-map-2022-')).length,
+    10,
+    'AI Achievement Map should contain ten selected 2022 achievements'
+);
+assert.equal(
+    ai100MapMilestones.filter((milestone) => milestone.id.startsWith('milestone-ai100-map-2023-')).length,
+    10,
+    'AI Achievement Map should contain ten selected 2023 achievements'
+);
+console.log('PASS AI Achievement Map combines the canonical table with all 20 annual highlights');
+const annualAi100Milestones = milestones.filter(
+    (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100-2022-2023'
+);
+assert.equal(annualAi100Milestones.length, 20, 'Archive runtime should contain the 20 curated annual AI100 entries');
+assert.equal(annualAi100Milestones[0].title.en, 'Swin Transformer V2');
+assert.equal(annualAi100Milestones[19].title.en, 'ESMFold');
+assert.ok(
+    annualAi100Milestones.some((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-057-claude'),
+    'annual AI100 highlights should contain Claude'
+);
+console.log('PASS annual AI100 highlights preserve the curated boundary');
 const ai100AlphaFold = milestones.find(
     (milestone) =>
         milestone.archiveEventId === '2020-alphafold' &&

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "source-primary-record",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Training language models to follow instructions with human feedback",
+      "zh": "《Training language models to follow instructions with human feedback》"
+    },
+    "authors": [
+      "Long Ouyang",
+      "Jeff Wu",
+      "Xu Jiang",
+      "Diogo Almeida",
+      "Carroll L. Wainwright",
+      "Pamela Mishkin",
+      "Paul Christiano",
+      "Jan Leike",
+      "Ryan Lowe"
+    ],
+    "year": 2022,
+    "url": "https://openai.com/index/instruction-following/",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary publication or official project record used for the central technical claims.",
+      "zh": "用于核心技术主张的主论文或官方项目记录。"
+    }
+  },
+  {
+    "id": "source-openalex-record",
+    "type": "paper-index",
+    "label": {
+      "en": "Paper index",
+      "zh": "论文索引"
+    },
+    "title": {
+      "en": "OpenAlex record for Training language models to follow instructions with human feedback",
+      "zh": "Training language models to follow instructions with human feedback 的 OpenAlex 文献记录"
+    },
+    "url": "https://api.openalex.org/works?search=Training%20language%20models%20to%20follow%20instructions%20with%20human%20feedback",
+    "language": "en",
+    "purpose": "bibliographic-verification",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Bibliographic metadata used to verify the publication year and landing page.",
+      "zh": "用于核对出版年份与落地页面的书目元数据。"
+    }
+  },
+  {
+    "id": "source-benchcouncil-annual",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "AI100: Top 100 AI achievements (2022-2023)",
+      "zh": "AI100：人工智能百大成就（2022-2023）"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+      "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
+    }
+  },
+  {
+    "id": "source-annual-048-instructgpt-portrait-jeff-wu",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Jeff Wu portrait source",
+      "zh": "杰夫·吴人物图片来源"
+    },
+    "url": "https://www.wuthejeff.com/",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The selected 2048 x 1365 photograph is published directly on Jeff Wu's personal homepage. The linked GitHub account uses the same name and website; Wikidata identifies the website with an AI researcher profile, and the InstructGPT paper confirms Jeff Wu as an author. Reliability: primary-identity-source. Usage note: The personal homepage does not state redistribution rights; retain the source note and recheck before external redistribution.",
+      "zh": "当前选用的 2048 x 1365 照片直接发布在杰夫·吴个人主页。主页关联的 GitHub 账户使用相同姓名与网址；Wikidata 将该网址关联到 AI 研究者人物记录，InstructGPT 论文则确认杰夫·吴为作者。 可靠性：primary-identity-source。使用备注：个人主页未声明再分发许可；必须保留来源备注，对外再分发前需再次核验。"
+    }
+  },
+  {
+    "id": "source-instructgpt-paper",
+    "type": "paper",
+    "label": {
+      "en": "Primary paper",
+      "zh": "原始论文"
+    },
+    "title": {
+      "en": "Training language models to follow instructions with human feedback",
+      "zh": "《Training language models to follow instructions with human feedback》"
+    },
+    "url": "https://arxiv.org/abs/2203.02155",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary paper for the demonstration, preference, reward-model and PPO training stages.",
+      "zh": "用于核对示范、偏好、奖励模型和 PPO 训练阶段的原始论文。"
+    }
+  },
+  {
+    "id": "source-openai-human-preferences",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Learning from human preferences",
+      "zh": "OpenAI：从人类偏好中学习"
+    },
+    "url": "https://openai.com/index/learning-from-human-preferences/",
+    "language": "en",
+    "purpose": "precursor",
+    "reliability": "primary",
+    "notes": {
+      "en": "OpenAI background page on the human-preference learning approach that preceded InstructGPT.",
+      "zh": "OpenAI 对 InstructGPT 前序人类偏好学习方法的官方背景介绍。"
+    }
+  },
+  {
+    "id": "source-jeff-wu-personal-homepage",
+    "type": "personal-page",
+    "label": {
+      "en": "Personal homepage",
+      "zh": "个人主页"
+    },
+    "title": {
+      "en": "Jeff Wu personal website",
+      "zh": "杰夫·吴个人网站"
+    },
+    "url": "https://www.wuthejeff.com/",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary identity page that names Jeff Wu and publishes the selected photograph. Its linked GitHub account uses the same name and website.",
+      "zh": "直接标明 Jeff Wu 姓名并发布当前肖像的第一方身份页面；其关联 GitHub 账户使用相同姓名与网址。"
+    }
+  },
+  {
+    "id": "source-jeff-wu-wikidata",
+    "type": "profile",
+    "label": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "title": {
+      "en": "Jeffrey Wu AI researcher profile",
+      "zh": "杰夫·吴 AI 研究者人物记录"
+    },
+    "url": "https://www.wikidata.org/entity/Q115599109",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Secondary identity cross-check connecting the AI researcher record to the same personal website.",
+      "zh": "辅助身份核验记录，将 AI 研究者人物实体关联到同一个人网站。"
+    }
+  },
+  {
+    "id": "source-annual-048-instructgpt-portrait-john-schulman",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "John Schulman | Innovators Under 35",
+      "zh": "约翰·舒尔曼｜35 岁以下创新者"
+    },
+    "url": "https://www.technologyreview.com/innovator/john-schulman/",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "MIT Technology Review publishes the selected 483 x 483 portrait and identifies John Schulman as an OpenAI research scientist working on reinforcement learning. No open redistribution license is stated; retain attribution and recheck before external redistribution.",
+      "zh": "《麻省理工科技评论》发布当前选用的 483 x 483 肖像，并将约翰·舒尔曼介绍为从事强化学习的 OpenAI 研究员。页面未声明开放再分发许可；必须保留署名，对外再分发前需再次核验。"
+    }
+  },
+  {
+    "id": "source-hugging-face-rlhf",
+    "type": "article",
+    "label": {
+      "en": "Article",
+      "zh": "文章"
+    },
+    "title": {
+      "en": "Illustrating Reinforcement Learning from Human Feedback (RLHF)",
+      "zh": "图解基于人类反馈的强化学习（RLHF）"
+    },
+    "url": "https://huggingface.co/blog/rlhf",
+    "language": "en",
+    "purpose": "background",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Hugging Face explains pretraining, preference ranking, reward modeling and PPO with diagrams. Its documentation-images dataset is labeled CC BY-NC-SA 4.0; the event uses it only as an attributed reference for a separate original redraw.",
+      "zh": "Hugging Face 通过图示解释预训练、偏好排序、奖励建模与 PPO。其 documentation-images 数据集标注为 CC BY-NC-SA 4.0；本事件仅将其作为独立原创重绘的注明出处参考。"
+    }
+  },
+  {
+    "id": "source-chip-huyen-rlhf",
+    "type": "article",
+    "label": {
+      "en": "Article",
+      "zh": "文章"
+    },
+    "title": {
+      "en": "RLHF: Reinforcement Learning from Human Feedback",
+      "zh": "RLHF：基于人类反馈的强化学习"
+    },
+    "url": "https://huyenchip.com/2023/05/02/rlhf.html",
+    "language": "en",
+    "purpose": "background",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Chip Huyen connects the InstructGPT pipeline with preference results, labeling interfaces and the RL objective. The page states no open image license, so the figures are reference material only.",
+      "zh": "Chip Huyen 将 InstructGPT 流程与偏好结果、标注界面和强化学习目标联系起来。页面未声明图片开放许可，因此相关图形仅作为参考资料。"
+    }
+  },
+  {
+    "id": "source-scale-ai-john-schulman-talk",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Scale AI Leadership Summit 2024: Lightning Talk with John Schulman",
+      "zh": "Scale AI 2024 领导力峰会：约翰·舒尔曼闪电演讲"
+    },
+    "url": "https://www.youtube.com/watch?v=4VHMIiTdXMI",
+    "language": "en",
+    "purpose": "historical-context",
+    "reliability": "primary",
+    "notes": {
+      "en": "Scale AI's official video provides a later talk record for John Schulman and describes his OpenAI post-training work. It is contextual evidence rather than a 2022 event image, and no video-frame redistribution license is stated.",
+      "zh": "Scale AI 官方视频提供约翰·舒尔曼后期演讲记录，并介绍其在 OpenAI 的后训练工作。该视频属于补充背景资料，不是 2022 年事件图片，也未声明视频画面的再分发许可。"
+    }
+  }
+]

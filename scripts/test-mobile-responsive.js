@@ -45,6 +45,17 @@ const mobileRequirements = [
     },
     {
         pattern:
+            /\.single-stage\.is-ui-browser\.is-ui-detail \.storyline-context\s*\{[\s\S]*?min-height:\s*var\(--touch-target\)[\s\S]*?font-size:\s*13px/,
+        message: 'the static detail storyline label remains readable in the mobile top bar'
+    },
+    {
+        pattern:
+            /\.chrono-storyline-subtitle\s*\{[\s\S]*?width:\s*0[\s\S]*?min-width:\s*100%[\s\S]*?text-overflow:\s*ellipsis[\s\S]*?@media\s*\(max-width:\s*1199px\)[\s\S]*?--chrono-storyline-height:\s*66px[\s\S]*?\.chrono-storyline-subtitle\s*\{[\s\S]*?font-size:\s*10px/,
+        haystack: chronologySource,
+        message: 'storyline subtitles fill the title column without widening responsive filter items'
+    },
+    {
+        pattern:
             /@media\s*\(max-width:\s*700px\) and \(max-height:\s*760px\)[\s\S]*?\.single-stage\.is-ui-browser:not\(\.is-ui-detail\)[\s\S]*?overflow:\s*visible[\s\S]*?\.stage-grid[\s\S]*?min-height:\s*700px/,
         haystack: chronologySource,
         message: 'short portrait chronology pages grow vertically instead of clipping cards'
@@ -65,6 +76,10 @@ const mobileRequirements = [
         pattern: /@media\s*\(max-width:\s*1199px\)[\s\S]*?\.chrono-scroll\s*\{[\s\S]*?touch-action:\s*pan-x pan-y/,
         haystack: chronologySource,
         message: 'responsive chronology scrolling preserves vertical page gestures'
+    },
+    {
+        pattern: /@media\s*\(max-width:\s*1199px\)[\s\S]*?html,[\s\S]*?body\s*\{[\s\S]*?overscroll-behavior-y:\s*auto/,
+        message: 'responsive document scrolling keeps the native vertical touch chain open'
     },
     {
         pattern: /\.ui-detail[\s\S]*?grid-template-columns:\s*minmax\(0,\s*1fr\)/,

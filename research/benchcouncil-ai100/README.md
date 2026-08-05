@@ -10,6 +10,10 @@ The page was retrieved on 2026-07-30. Its long-term table contains 119 unique wo
 
 AI100 display locations use the table's institution and country columns as separate fields. English country names are expanded consistently (`USA` to `United States`, `UK` to `United Kingdom`), Chinese values are independently localized, and obvious source typos such as `University of Munic` are corrected only in display data while the preserved snapshot remains unchanged. `scripts/audit-ai100-locations.js` checks Archive events, storyline variants, and generated runtime data for exact alignment and rejects duplicated country suffixes.
 
-The separate `AI100 (2022-2023)` page uses a prospective annual-candidate standard. Its 120 rows are preserved in `annual-candidates-2022-2023-2026-07-30.json` for research, but they do not define membership in the canonical long-term storyline.
+The separate `bench-council-ai100-2022-2023` storyline retains twenty curated achievements from the BenchCouncil 2022-2023 annual list: ten from 2022 and ten from 2023. The production Archive does not retain the other annual candidates, and the curated set remains separate from the unified long-term chronology.
+
+Annual events use one locally redrawn achievement explainer by default. They do not generate contributor profile-card SVGs. A person image is selected only when the identity, source page, usage note, and reliability assessment are recorded; otherwise the official contributor remains text-only with no placeholder portrait.
+
+Event-specific evidence and explainer sources for the retained set live under `annual-events-2022/` and `annual-events-2023/`. The production bundles are maintained directly in `archive/events/`, then checked with `npm run audit:ai100-annual`, the Archive validators, and the standard generation workflow.
 
 The former storyline entries `CLIP`, `DALL-E`, `Stable Diffusion`, and `Segment Anything` remain in Archive as non-canonical extensions. They are excluded from the long-term storyline because they do not appear in the root-page table snapshot.

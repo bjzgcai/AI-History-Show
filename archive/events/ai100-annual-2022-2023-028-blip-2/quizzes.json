@@ -1,0 +1,40 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-028-blip-2-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "Which BLIP-2 components remain frozen during its main pretraining recipe?",
+      "zh": "BLIP-2 的主要预训练方案中，哪些组件保持冻结？"
+    },
+    "options": [
+      {
+        "en": "The image encoder and large language model",
+        "zh": "图像编码器与大语言模型"
+      },
+      {
+        "en": "A recurrent controller and database",
+        "zh": "循环控制器与数据库"
+      },
+      {
+        "en": "Only the tokenizer",
+        "zh": "只有分词器"
+      },
+      {
+        "en": "Every component including the Q-Former",
+        "zh": "包括 Q-Former 在内的全部组件"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "BLIP-2 trains the lightweight Q-Former bridge while reusing a frozen image encoder and frozen large language model.",
+      "zh": "BLIP-2 训练轻量级 Q-Former 桥，同时复用冻结的图像编码器和冻结的大语言模型。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
+    ],
+    "assetIds": [
+      "asset-annual-028-blip-2-record"
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">SimMIM masked image modeling path</title>
+  <desc id="desc">Original local explainer showing random masking, a vision encoder, a lightweight linear prediction head and direct raw RGB pixel regression.</desc>
+  <rect width="960" height="560" fill="#0d1722"/>
+  <text x="48" y="55" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="30" font-weight="700">SimMIM</text>
+  <text x="48" y="86" fill="#a9bdd0" font-family="Arial, sans-serif" font-size="17">A deliberately simple masked image modeling recipe</text>
+  <rect x="48" y="126" width="188" height="118" rx="8" fill="#19324b" stroke="#65a9dc" stroke-width="2"/>
+  <rect x="286" y="126" width="188" height="118" rx="8" fill="#2d2530" stroke="#c087c9" stroke-width="2"/>
+  <rect x="524" y="126" width="188" height="118" rx="8" fill="#263528" stroke="#74b77d" stroke-width="2"/>
+  <rect x="762" y="126" width="150" height="118" rx="8" fill="#3b2e1d" stroke="#d89b58" stroke-width="2"/>
+  <path d="M236 185 H286 M474 185 H524 M712 185 H762" stroke="#dce8f2" stroke-width="4" fill="none"/>
+  <path d="M269 176 L286 185 L269 194 M507 176 L524 185 L507 194 M745 176 L762 185 L745 194" stroke="#dce8f2" stroke-width="4" fill="none"/>
+  <text x="68" y="158" fill="#8fc4eb" font-family="Arial, sans-serif" font-size="14" font-weight="700"><tspan x="68" dy="0">INPUT IMAGE</tspan></text>
+  <text x="68" y="194" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="20" font-weight="700"><tspan x="68" dy="0">Randomly mask</tspan><tspan x="68" dy="28">large patches</tspan></text>
+  <text x="306" y="158" fill="#d9a3df" font-family="Arial, sans-serif" font-size="14" font-weight="700"><tspan x="306" dy="0">ENCODER</tspan></text>
+  <text x="306" y="194" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="20" font-weight="700"><tspan x="306" dy="0">ViT or Swin</tspan><tspan x="306" dy="28">backbone</tspan></text>
+  <text x="544" y="158" fill="#8fd29a" font-family="Arial, sans-serif" font-size="14" font-weight="700"><tspan x="544" dy="0">LIGHT HEAD</tspan></text>
+  <text x="544" y="194" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="20" font-weight="700"><tspan x="544" dy="0">A single</tspan><tspan x="544" dy="28">linear layer</tspan></text>
+  <text x="782" y="158" fill="#efb97b" font-family="Arial, sans-serif" font-size="14" font-weight="700"><tspan x="782" dy="0">TARGET</tspan></text>
+  <text x="782" y="194" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="20" font-weight="700"><tspan x="782" dy="0">Raw RGB</tspan><tspan x="782" dy="28">pixels</tspan></text>
+  <rect x="48" y="292" width="864" height="88" rx="8" fill="#172536" stroke="#6b8298" stroke-width="2"/>
+  <text x="70" y="326" fill="#8fc4eb" font-family="Arial, sans-serif" font-size="15" font-weight="700"><tspan x="70" dy="0">WHAT SIMMIM REMOVES</tspan></text>
+  <text x="70" y="359" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="20" font-weight="700"><tspan x="70" dy="0">No discrete VAE tokenizer  |  No clustering target  |  No heavy prediction decoder</tspan></text>
+  <rect x="48" y="428" width="412" height="78" rx="8" fill="#1a3a32" stroke="#62aa8c" stroke-width="2"/>
+  <rect x="500" y="428" width="412" height="78" rx="8" fill="#3b2e1d" stroke="#d89b58" stroke-width="2"/>
+  <text x="70" y="459" fill="#91d7bb" font-family="Arial, sans-serif" font-size="14" font-weight="700"><tspan x="70" dy="0">REPRESENTATION</tspan></text>
+  <text x="70" y="489" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="19" font-weight="700"><tspan x="70" dy="0">Learn by reconstructing masked pixels</tspan></text>
+  <text x="522" y="459" fill="#efb97b" font-family="Arial, sans-serif" font-size="14" font-weight="700"><tspan x="522" dy="0">SCALE</tspan></text>
+  <text x="522" y="489" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="19" font-weight="700"><tspan x="522" dy="0">From ViT-B to a 3B SwinV2-G model</tspan></text>
+</svg>

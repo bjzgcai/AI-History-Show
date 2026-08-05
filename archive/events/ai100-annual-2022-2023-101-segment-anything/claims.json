@@ -1,0 +1,66 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Segment anything is row 101 of the BenchCouncil AI100 (2022-2023) annual table in the Detection Segmentation area.",
+      "zh": "Segment anything 是 BenchCouncil AI100（2022-2023）年度表第 101 行，所属领域为“检测与分割”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Segment anything with “Segment anything”.",
+      "zh": "年度表把 Segment anything 与论文《Segment anything》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Alexander Kirillov, Eric Mintun, Nikhila Ravi, Hanzi Mao, Piotr Dollar, Ross Girshick”.",
+      "zh": "“主要人物”字段依次列出 亚历山大·基里洛夫、埃里克·明顿、尼基拉·拉维、汉兹·毛、彼得·多拉尔、罗斯·格希克；官方英文原文为“Alexander Kirillov, Eric Mintun, Nikhila Ravi, Hanzi Mao, Piotr Dollar, Ross Girshick”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-promptable-segmentation",
+    "importance": "core",
+    "text": {
+      "en": "SAM accepts points, boxes or masks as prompts and returns segmentation masks through a promptable interface.",
+      "zh": "SAM 接收点、框或掩码提示，并通过可提示接口返回分割掩码。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper",
+      "source-sam-repository"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-sa1b-scale",
+    "importance": "core",
+    "text": {
+      "en": "SA-1B contains more than one billion masks from roughly eleven million images collected with a model-assisted data engine.",
+      "zh": "SA-1B 通过模型辅助数据引擎，从约 1100 万张图像中收集超过 10 亿个掩码。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
+    ],
+    "status": "verified"
+  }
+]

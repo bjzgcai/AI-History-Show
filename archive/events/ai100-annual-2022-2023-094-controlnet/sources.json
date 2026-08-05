@@ -1,0 +1,207 @@
+[
+  {
+    "id": "source-primary-record",
+    "type": "paper-page",
+    "label": {
+      "en": "Conference paper page",
+      "zh": "会议论文页面"
+    },
+    "title": {
+      "en": "Adding Conditional Control to Text-to-Image Diffusion Models - ICCV 2023",
+      "zh": "《为文生图扩散模型加入条件控制》ICCV 2023 论文页"
+    },
+    "authors": [
+      "Lvmin Zhang",
+      "Maneesh Agrawala"
+    ],
+    "year": 2023,
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_Adding_Conditional_Control_to_Text-to-Image_Diffusion_Models_ICCV_2023_paper.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary ICCV record used to verify authorship, locked/trainable branches, zero convolutions and conditioning examples.",
+      "zh": "用于核对作者、锁定与可训练分支、零卷积及条件示例的 ICCV 原始记录。"
+    }
+  },
+  {
+    "id": "source-openalex-record",
+    "type": "paper-index",
+    "label": {
+      "en": "Paper index",
+      "zh": "论文索引"
+    },
+    "title": {
+      "en": "OpenAlex record for Adding conditional control to text-to-image diffusion models",
+      "zh": "Adding conditional control to text-to-image diffusion models 的 OpenAlex 文献记录"
+    },
+    "url": "https://api.openalex.org/works?search=Adding%20conditional%20control%20to%20text-to-image%20diffusion%20models",
+    "language": "en",
+    "purpose": "bibliographic-verification",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Bibliographic metadata is retained only as a secondary cross-check; technical and identity claims use primary records.",
+      "zh": "书目元数据仅作为辅助交叉核对；技术与人物主张使用原始记录。"
+    }
+  },
+  {
+    "id": "source-benchcouncil-annual",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "AI100: Top 100 AI achievements (2022-2023)",
+      "zh": "AI100：人工智能百大成就（2022-2023）"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
+      "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+    }
+  },
+  {
+    "id": "source-annual-094-controlnet-portrait-maneesh-agrawala",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Maneesh Agrawala portrait source",
+      "zh": "马尼什·阿格拉瓦拉人物图片来源"
+    },
+    "url": "https://graphics.stanford.edu/~maneesh/",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The Stanford-hosted homepage displays the headshot beside Maneesh Agrawala’s identity, affiliation and publication list that includes ControlNet. Reliability: primary-identity-source. Usage note: The source does not state redistribution rights; retain attribution and recheck before redistribution outside this project.",
+      "zh": "斯坦福托管主页把该头像与马尼什·阿格拉瓦拉的身份、任职信息及包含 ControlNet 的论文列表同时展示。 可靠性：primary-identity-source。使用备注：来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+    }
+  },
+  {
+    "id": "source-arxiv-paper",
+    "type": "paper-page",
+    "label": {
+      "en": "Preprint page",
+      "zh": "预印本页面"
+    },
+    "title": {
+      "en": "ControlNet - arXiv",
+      "zh": "《ControlNet》arXiv 页面"
+    },
+    "url": "https://arxiv.org/abs/2302.05543",
+    "language": "en",
+    "purpose": "alternate-access",
+    "reliability": "primary",
+    "notes": {
+      "en": "Author-submitted full paper with method diagrams, experiments and ablations.",
+      "zh": "作者提交全文，包含方法图、实验与消融研究。"
+    }
+  },
+  {
+    "id": "source-controlnet-repository",
+    "type": "code",
+    "label": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "title": {
+      "en": "lllyasviel/ControlNet official repository",
+      "zh": "lllyasviel/ControlNet 官方仓库"
+    },
+    "url": "https://github.com/lllyasviel/ControlNet",
+    "language": "en",
+    "purpose": "implementation",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official implementation and released condition models.",
+      "zh": "官方实现与已发布的条件控制模型。"
+    }
+  },
+  {
+    "id": "source-maneesh-profile",
+    "type": "profile",
+    "label": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "title": {
+      "en": "Maneesh Agrawala academic homepage",
+      "zh": "马尼什·阿格拉瓦拉学术主页"
+    },
+    "url": "https://graphics.stanford.edu/~maneesh/",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "Stanford-hosted researcher page identifying Maneesh Agrawala, listing ControlNet and displaying the selected headshot. No redistribution license is stated.",
+      "zh": "斯坦福托管的研究者主页，确认马尼什·阿格拉瓦拉身份、列出 ControlNet 并展示所选头像；页面未声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-controlnet-figure-1",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "ControlNet Figure 1: learned conditions for Stable Diffusion",
+      "zh": "ControlNet Figure 1：Stable Diffusion 的学习式条件控制"
+    },
+    "url": "https://ar5iv.labs.arxiv.org/html/2302.05543/assets/x1.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Paper-rendered Figure 1 pairs Canny edges and human poses with controlled Stable Diffusion outputs, making the method's purpose immediately visible. It is the most commonly reproduced ControlNet introduction image, but the existing original local explainer remains the single selected explanatory image; no separate redistribution license is stated for the figure.",
+      "zh": "论文 HTML 渲染的 Figure 1 把 Canny 边缘、人体姿态条件与受控 Stable Diffusion 输出并列，能直接说明方法用途，是最常被转载的 ControlNet 介绍图。页面仍只选用现有本地原创解释图；论文未为该图单独声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-controlnet-official-full-architecture",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "ControlNet full Stable Diffusion architecture",
+      "zh": "ControlNet 与 Stable Diffusion 完整架构图"
+    },
+    "url": "https://github.com/lllyasviel/ControlNet/blob/main/github_page/sd.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The authors' official repository publishes the selected frozen-backbone, trainable-copy and zero-convolution diagram.",
+      "zh": "作者官方仓库发布了所选的冻结主干、可训练副本与零卷积结构图。"
+    }
+  },
+  {
+    "id": "source-controlnet-official-core-block",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "ControlNet core block diagram",
+      "zh": "ControlNet 核心模块图"
+    },
+    "url": "https://github.com/lllyasviel/ControlNet/blob/main/github_page/he.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The authors' official repository publishes the selected before-and-after core block diagram.",
+      "zh": "作者官方仓库发布了所选的核心模块前后对比图。"
+    }
+  }
+]

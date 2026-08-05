@@ -2060,6 +2060,41 @@
             display: none;
         }
 
+        .storyline-context {
+            display: none;
+            min-width: 0;
+            color: rgba(244, 239, 229, 0.88);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.24;
+            letter-spacing: 0;
+        }
+
+        .storyline-context-label {
+            display: -webkit-box;
+            min-width: 0;
+            overflow: hidden;
+            overflow-wrap: anywhere;
+            text-overflow: clip;
+            white-space: normal;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .single-stage.is-ui-browser.is-ui-detail .storyline-trigger {
+            display: none;
+        }
+
+        .single-stage.is-ui-browser.is-ui-detail .storyline-context {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: min(620px, 48vw);
+            min-height: 48px;
+            text-align: right;
+        }
+
         .storyline-trigger {
             width: 334px;
             min-height: 32px;
@@ -2124,32 +2159,6 @@
             stroke-width: 2.4;
             stroke-linecap: round;
             stroke-linejoin: round;
-        }
-
-        @media (min-width: 1200px) {
-            .single-stage.is-ui-browser.is-ui-detail .storyline-trigger {
-                width: min(620px, 48vw);
-                min-height: 48px;
-            }
-
-            .single-stage.is-ui-browser.is-ui-detail .storyline-trigger-copy {
-                align-items: center;
-            }
-
-            .single-stage.is-ui-browser.is-ui-detail .storyline-trigger-label {
-                display: -webkit-box;
-                overflow: hidden;
-                line-height: 1.18;
-                overflow-wrap: anywhere;
-                text-overflow: clip;
-                white-space: normal;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 2;
-            }
-
-            .single-stage.is-ui-browser.is-ui-detail .storyline-trigger-status {
-                flex: 0 0 auto;
-            }
         }
 
         .about-trigger {
@@ -2672,6 +2681,23 @@
             filter: grayscale(0.1);
             object-position: center center;
             transform-origin: center center;
+        }
+
+        .figure-avatar.is-product {
+            background: rgba(244, 239, 229, 0.94);
+            filter: none;
+        }
+
+        .figure-avatar.is-product img {
+            box-sizing: border-box;
+            object-fit: contain;
+            padding: 7px;
+            filter: none;
+        }
+
+        .figure-avatar.is-product img[src$="chatgpt-logo.png"] {
+            background: #101010;
+            padding: 6px;
         }
 
         .figure-avatar span {
@@ -5711,6 +5737,21 @@
             object-fit: cover;
         }
 
+        .ui-avatar-face.is-product {
+            background: rgba(244, 239, 229, 0.94);
+        }
+
+        .ui-avatar-face.is-product img {
+            box-sizing: border-box;
+            object-fit: contain;
+            padding: 11px;
+        }
+
+        .ui-avatar-face.is-product img[src$="chatgpt-logo.png"] {
+            background: #101010;
+            padding: 9px;
+        }
+
         @media (min-width: 1200px) {
             .ui-avatar-strip.count-4 {
                 display: grid;
@@ -6767,7 +6808,7 @@
                 min-height: 100%;
                 overflow-x: hidden;
                 overflow-y: auto;
-                overscroll-behavior-y: contain;
+                overscroll-behavior-y: auto;
             }
 
             body {
@@ -6875,6 +6916,15 @@
                 font-size: 13px;
                 line-height: 1.2;
                 text-transform: none;
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .storyline-context {
+                width: auto;
+                max-width: 100%;
+                min-height: var(--touch-target);
+                justify-content: flex-start;
+                font-size: 13px;
+                text-align: left;
             }
 
             .storyline-trigger-copy {
@@ -7710,7 +7760,6 @@
                 min-height: 100%;
                 overflow-x: hidden;
                 overflow-y: auto;
-                overscroll-behavior-y: contain;
             }
 
             .stage-viewport {
@@ -8737,7 +8786,7 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="shared/chronology-overview.css?v=20260728">
+    <link rel="stylesheet" href="shared/chronology-overview.css?v=20260804">
 </head>
 <body>
     <div class="stage-viewport">
@@ -8763,6 +8812,9 @@
                             <path d="m6 9 6 6 6-6"></path>
                         </svg>
                     </button>
+                    <div class="storyline-context" id="storylineContext" aria-live="polite">
+                        <span class="storyline-context-label" id="storylineContextLabel"></span>
+                    </div>
                     <button class="about-trigger" id="aboutTrigger" type="button" aria-haspopup="dialog" aria-controls="aboutModal">ABOUT</button>
                     <div class="mode-chip">
                         <span class="mode-chip-label" data-i18n="aiHistoryMode">人工智能历史</span>
@@ -9009,7 +9061,7 @@
     <script src="shared/i18n.js"></script>
     <script src="shared/storyline-routing.js"></script>
     <script src="shared/image-loading.js"></script>
-    <script src="shared/chronology-overview.js?v=20260728b"></script>
+    <script src="shared/chronology-overview.js?v=20260804-storyline-scroll"></script>
     <script src="shared/event-media-selection.js"></script>
     <script src="milestones-data.js?v=20260803-storyline-metadata" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
@@ -9042,6 +9094,8 @@
         const TABLET_GLOBE_PIXEL_RATIO_CAP = 1.75;
         const UNIFIED_STORYLINE_ID = 'unified-ai-history';
         const DEEP_STORYLINE_ID = StorylineRouting.DEEP_STORYLINE_ID;
+        const ANNUAL_AI100_STORYLINE_ID = 'bench-council-ai100-2022-2023';
+        const STANDALONE_AI100_STORYLINE_IDS = new Set([ANNUAL_AI100_STORYLINE_ID]);
         const DEFAULT_STORYLINE_ID = UNIFIED_STORYLINE_ID;
         const CHRONOLOGY_FILTER_PARAM = 'storylineFilter';
         const AI_HISTORY_MAP_VARIANT_PRIORITY = [
@@ -9050,6 +9104,15 @@
             'gaming-ai',
             'humanistic-cycle'
         ];
+        const CHRONOLOGY_FILTER_STORYLINE_IDS = new Set([
+            ...AI_HISTORY_MAP_VARIANT_PRIORITY,
+            ...STANDALONE_AI100_STORYLINE_IDS
+        ]);
+        const UNIFIED_STORYLINE_EXCLUSIONS = new Set(STANDALONE_AI100_STORYLINE_IDS);
+        const ACHIEVEMENT_STORYLINE_IDS = new Set([
+            'bench-council-ai100',
+            ...STANDALONE_AI100_STORYLINE_IDS
+        ]);
         const analytics = window.AIHistoryAnalytics || null;
         if (analytics) {
             analytics.setContext({
@@ -9068,13 +9131,25 @@
                     zh: 'AI 历史地图'
                 },
                 note: {
-                    en: 'Canonical AI history map combining all storylines without duplicate events',
-                    zh: '汇总全部故事线的 AI 历史地图，相同事件仅展示一次'
+                    en: 'Canonical AI history map combining the long-term storylines without duplicate events',
+                    zh: '汇总长期故事线的 AI 历史地图，相同事件仅展示一次'
                 }
             },
             {
                 id: 'bench-council-ai100',
                 layout: 'ui-browser'
+            },
+            {
+                id: ANNUAL_AI100_STORYLINE_ID,
+                layout: 'ui-browser',
+                label: {
+                    en: 'AI100 Annual Highlights (2022-2023)',
+                    zh: 'AI100 年度精选（2022-2023）'
+                },
+                note: {
+                    en: 'Ten selected turning points from each year, including Claude in the 2023 selection',
+                    zh: '每年精选 10 个技术转折点，2023 年精选包含 Claude'
+                }
             },
             {
                 id: 'gaming-ai',
@@ -9134,7 +9209,10 @@
 
         function buildUnifiedMilestones() {
             if (unifiedMilestoneCache) return unifiedMilestoneCache;
-            unifiedMilestoneCache = window.ChronologyOverview.buildCanonicalMilestones(allMilestones, {
+            const unifiedSourceMilestones = allMilestones.filter(
+                (milestone) => !UNIFIED_STORYLINE_EXCLUSIONS.has(getMilestoneStorylineId(milestone))
+            );
+            unifiedMilestoneCache = window.ChronologyOverview.buildCanonicalMilestones(unifiedSourceMilestones, {
                 storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY,
                 localize: lx
             });
@@ -9171,7 +9249,7 @@
         function getChronologyFilterStorylineId(storylineId) {
             const normalizedStorylineId = StorylineRouting.normalizeStorylineId(storylineId);
             if (normalizedStorylineId === DEEP_STORYLINE_ID) return 'deep-learning';
-            if (AI_HISTORY_MAP_VARIANT_PRIORITY.includes(normalizedStorylineId)) return normalizedStorylineId;
+            if (CHRONOLOGY_FILTER_STORYLINE_IDS.has(normalizedStorylineId)) return normalizedStorylineId;
             return 'all';
         }
 
@@ -9195,10 +9273,19 @@
         }
 
         function getChronologyVisibleMilestones() {
+            if (STANDALONE_AI100_STORYLINE_IDS.has(chronologyFilterStorylineId)) {
+                return getStorylineMilestones(chronologyFilterStorylineId);
+            }
             return window.ChronologyOverview.selectMilestonesByStoryline(
                 buildUnifiedMilestones(),
                 chronologyFilterStorylineId
             );
+        }
+
+        function getChronologyOverviewMilestones() {
+            return STANDALONE_AI100_STORYLINE_IDS.has(chronologyFilterStorylineId)
+                ? getStorylineMilestones(chronologyFilterStorylineId)
+                : buildUnifiedMilestones();
         }
 
         function isHumanisticMilestone(milestone) {
@@ -9354,6 +9441,8 @@
             storylineTrigger: document.getElementById('storylineTrigger'),
             storylineTriggerLabel: document.getElementById('storylineTriggerLabel'),
             storylineTriggerStatus: document.getElementById('storylineTriggerStatus'),
+            storylineContext: document.getElementById('storylineContext'),
+            storylineContextLabel: document.getElementById('storylineContextLabel'),
             storylineModal: document.getElementById('storylineModal'),
             storylineModalClose: document.getElementById('storylineModalClose'),
             storylineModalEyebrow: document.getElementById('storylineModalEyebrow'),
@@ -9667,7 +9756,13 @@
             'France',
             'Japan',
             'Finland',
-            'Switzerland'
+            'Switzerland',
+            'Australia',
+            'Belgium',
+            'Denmark',
+            'Israel',
+            'Singapore',
+            'South Korea'
         ];
 
         const ACHIEVEMENT_REGION_LABELS = {
@@ -9681,7 +9776,13 @@
             France: '法国',
             Japan: '日本',
             Finland: '芬兰',
-            Switzerland: '瑞士'
+            Switzerland: '瑞士',
+            Australia: '澳大利亚',
+            Belgium: '比利时',
+            Denmark: '丹麦',
+            Israel: '以色列',
+            Singapore: '新加坡',
+            'South Korea': '韩国'
         };
 
         function uiText(en, zh) {
@@ -9723,7 +9824,7 @@
 
         function getVisibleStorylineMilestones(storylineId) {
             const source = getStorylineMilestones(storylineId);
-            if (!activeRegionFilter || storylineId !== 'bench-council-ai100') return source;
+            if (!activeRegionFilter || !ACHIEVEMENT_STORYLINE_IDS.has(storylineId)) return source;
             return source.filter((milestone) => getMilestoneRegions(milestone).includes(activeRegionFilter));
         }
 
@@ -9771,7 +9872,7 @@
 
         function getStorylineStatus(option, count) {
             if (count <= 0) return uiText('planned', '规划中');
-            if (option && option.id === 'bench-council-ai100') {
+            if (option && ACHIEVEMENT_STORYLINE_IDS.has(option.id)) {
                 return uiText(`${count} achievements`, `${count} 个成果`);
             }
             return uiText(`${count} events`, `${count} 个事件`);
@@ -9918,12 +10019,17 @@
             const activeOption = getStorylineOption(selectedStorylineId);
             const activeCount = activeOption ? getStorylineMilestones(activeOption.id).length : 0;
             const activeStatus = getStorylineStatus(activeOption, activeCount);
+            const activeLabel = activeOption ? getStorylineLabel(activeOption) : tx('storylineSelector');
             if (refs.storylineTrigger) {
-                const activeLabel = activeOption ? getStorylineLabel(activeOption) : tx('storylineSelector');
                 refs.storylineTrigger.setAttribute('aria-label', `${tx('storylineSelector')}: ${activeLabel} (${activeStatus})`);
                 refs.storylineTrigger.title = activeLabel;
                 if (refs.storylineTriggerLabel) refs.storylineTriggerLabel.textContent = activeLabel;
                 if (refs.storylineTriggerStatus) refs.storylineTriggerStatus.textContent = `(${activeStatus})`;
+            }
+            if (refs.storylineContext) {
+                refs.storylineContext.setAttribute('aria-label', activeLabel);
+                refs.storylineContext.title = activeLabel;
+                if (refs.storylineContextLabel) refs.storylineContextLabel.textContent = activeLabel;
             }
 
             if (refs.uiBackButton) {
@@ -10395,13 +10501,14 @@
             const raw = String(name || '').trim();
             if (!raw) return 'AI';
             const localizedName = raw.replace(/\s+/g, ' ');
-            const dividerMatch = localizedName.match(/^([^·・.．。]+)/);
-            const firstPart = String(dividerMatch && dividerMatch[1] ? dividerMatch[1] : localizedName).trim();
-            if (/[\u3400-\u9fff]/.test(localizedName)) {
-                return firstPart || localizedName;
+            const avatarName = localizedName.replace(/\s*[（(][^()（）]*[)）]\s*$/, '').trim() || localizedName;
+            const dividerMatch = avatarName.match(/^([^·・.．。]+)/);
+            const firstPart = String(dividerMatch && dividerMatch[1] ? dividerMatch[1] : avatarName).trim();
+            if (/[\u3400-\u9fff]/.test(avatarName)) {
+                return firstPart || avatarName;
             }
             const words = firstPart.split(/\s+/).filter(Boolean);
-            return String(words[0] || firstPart || localizedName).toUpperCase();
+            return String(words[0] || firstPart || avatarName).toUpperCase();
         }
 
         function getFigureAvatarSource(figure) {
@@ -12931,15 +13038,18 @@
                     role: buildLocationLine(vm.location) || tx('keyHistoricalFigure')
                 }];
             refs.figureRow.className = `figure-row count-${Math.min(UI_DETAIL_FIGURE_LIMIT, figures.length)}`;
-            refs.figureRow.innerHTML = figures.map((figure) => `
+            refs.figureRow.innerHTML = figures.map((figure) => {
+                const avatarClass = figure.figureType === 'product' ? ' is-product' : '';
+                return `
                 <article class="figure-chip">
-                    <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure))}</div>
+                    <div class="figure-avatar${avatarClass}">${buildFigureAvatar(figure, getFigureAvatarSource(figure))}</div>
                     <div class="figure-meta">
                         <div class="figure-name">${escapeHtmlWithCjkTail(figure.name || tx('keyFigure'))}</div>
                         <div class="figure-role">${escapeHtmlWithCjkTail(figure.role || tx('keyParticipant'))}</div>
                     </div>
                 </article>
-            `).join('');
+            `;
+            }).join('');
             hydratePreviewImages(refs.figureRow);
         }
 
@@ -15185,9 +15295,10 @@
         function buildUiAvatarHtml(vm, figures = getUiDetailFigures(vm)) {
             return figures.map((figure) => {
                 const avatar = buildFigureAvatar(figure, getFigureAvatarSource(figure));
+                const avatarClass = figure.figureType === 'product' ? ' is-product' : '';
                 return `
                     <div class="ui-avatar">
-                        <div class="ui-avatar-face">${avatar}</div>
+                        <div class="ui-avatar-face${avatarClass}">${avatar}</div>
                         <div>
                             <span class="ui-avatar-name">${escapeHtmlWithCjkTail(figure.name || tx('keyFigure'))}</span>
                             ${figure.role ? `<span class="ui-avatar-role">${escapeHtmlWithCjkTail(figure.role)}</span>` : ''}
@@ -15775,7 +15886,7 @@
                                         <div class="ui-detail-meta-inline">${escapeHtmlWithCjkTail([locationLine, getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
                                     </div>
                                 </div>
-                                <div class="ui-avatar-strip count-${detailFigureCount}">${buildUiAvatarHtml(vm, detailFigures)}</div>
+                                ${detailFigureCount ? `<div class="ui-avatar-strip count-${detailFigureCount}">${buildUiAvatarHtml(vm, detailFigures)}</div>` : ''}
                             </div>
                             ${detailImageHtml}
                         </div>
@@ -15846,8 +15957,11 @@
                 });
             }
             chronologyOverview.setState({ storylineId: chronologyFilterStorylineId });
+            const preserveStandaloneOrder = STANDALONE_AI100_STORYLINE_IDS.has(chronologyFilterStorylineId);
             chronologyOverview.update({
-                milestones: buildUnifiedMilestones(),
+                milestones: getChronologyOverviewMilestones(),
+                preserveSourceOrder: preserveStandaloneOrder,
+                sequenceLabel: preserveStandaloneOrder ? '2022-2023' : '',
                 selectedEventId: uiSelectedEventId,
                 localize: lx,
                 locale: window.I18n && typeof window.I18n.getLocale === 'function'
@@ -15862,7 +15976,8 @@
                     openEvent: uiText('Open event', '打开事件'),
                     storylines: uiText('Storylines', '所属故事线'),
                     timelineLabel: uiText('Chronological AI history timeline', '人工智能历史时间轴')
-                }
+                },
+                storylines: archiveStorylineDefinitions
             });
         }
 
@@ -16455,7 +16570,7 @@
         }
 
         function handlePageWheelFallback(event) {
-            if (!event || event.ctrlKey || isBranchTimelineActive()) return;
+            if (!event || event.defaultPrevented || event.ctrlKey || isBranchTimelineActive()) return;
             const deltaX = Number.isFinite(event.deltaX) ? event.deltaX : 0;
             let deltaY = Number.isFinite(event.deltaY) ? event.deltaY : 0;
             if (!deltaY || Math.abs(deltaY) <= Math.abs(deltaX)) return;

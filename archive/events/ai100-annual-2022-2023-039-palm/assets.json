@@ -1,0 +1,121 @@
+[
+  {
+    "id": "asset-annual-039-palm-portrait-jeff-dean",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Jeff Dean portrait",
+      "zh": "杰夫·迪恩肖像"
+    },
+    "subcaption": {
+      "en": "Co-author of the PaLM paper",
+      "zh": "PaLM 论文共同作者"
+    },
+    "sourceId": "source-annual-039-palm-portrait-jeff-dean",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeff_Dean_in_2025_x.jpg",
+    "sourceReliability": "secondary-identity-with-affiliation-match",
+    "provenanceNotes": {
+      "en": "Exact name and research-description match in Wikidata; employer match: Digital Equipment Corporation, Compaq, Google. Wikimedia file-page license metadata was present.",
+      "zh": "Wikidata 中姓名与研究者描述匹配，任职机构匹配：Digital Equipment Corporation、Compaq、Google。维基共享资源文件页包含明确许可元数据。"
+    },
+    "rights": {
+      "status": "licensed-wikimedia",
+      "license": {
+        "en": "CC BY-SA 4.0",
+        "zh": "CC BY-SA 4.0"
+      },
+      "attribution": "Cmichel67"
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
+    "id": "asset-annual-039-palm-record",
+    "type": "svg",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-039-palm_record.svg",
+    "role": "annual-achievement-explainer",
+    "caption": {
+      "en": "PaLM process explainer",
+      "zh": "PaLM 流程解释图"
+    },
+    "subcaption": {
+      "en": "Pathways-distributed dense Transformer scaling",
+      "zh": "基于 Pathways 的稠密 Transformer 分布式扩展"
+    },
+    "sourceIds": [
+      "source-palm-paper",
+      "source-primary-record"
+    ],
+    "sourceName": {
+      "en": "Primary publication and original local synthesis",
+      "zh": "主论文与本地原创整理"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2204.02311",
+    "rights": {
+      "status": "original-redraw",
+      "license": {
+        "en": "Original local SVG; source figures are not copied.",
+        "zh": "本地原创 SVG；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Display and educational use in this project.",
+        "zh": "用于本项目展示与教育用途。"
+      }
+    },
+    "displayUsage": {
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-annual-039-palm-paper-bigbench-results",
+    "type": "image",
+    "path": "resources/images/external/ai100-2022-palm/palm-bigbench-results.png",
+    "role": "paper-figure",
+    "caption": {
+      "zh": "PaLM 在 58 项 BIG-bench 任务上的表现",
+      "en": "PaLM performance on 58 BIG-bench tasks"
+    },
+    "subcaption": {
+      "zh": "主论文比较 PaLM、GPT-3、Gopher 与 Chinchilla 在不同模型规模和提示设置下的表现。",
+      "en": "The primary paper compares PaLM, GPT-3, Gopher and Chinchilla across model scales and prompting settings."
+    },
+    "sourceId": "source-palm-paper-bigbench-figure",
+    "sourceName": {
+      "en": "PaLM arXiv source package",
+      "zh": "PaLM arXiv 源文件包"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2204.02311",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Author-submitted paper figure; displayed with full paper attribution under the project's relaxed reference-image policy.",
+        "zh": "作者提交的论文配图；依据项目放宽后的参考图片策略展示，并完整标注论文来源。"
+      },
+      "attribution": "Chowdhery et al., PaLM: Scaling Language Modeling with Pathways (2022)"
+    },
+    "displayUsage": {
+      "en": "Primary-paper evaluation result",
+      "zh": "主论文评测结果资料"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  }
+]

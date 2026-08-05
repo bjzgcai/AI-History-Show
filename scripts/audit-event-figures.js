@@ -209,7 +209,7 @@ function findAvatarConflicts(items) {
 
     for (const item of items) {
         for (const figure of item.figures) {
-            if (!figure.avatarExists) continue;
+            if (!figure.avatarExists || figure.figureType !== 'person') continue;
             const identity = comparablePersonName(figure.name.en) || normalizeName(figure.name.zh) || figure.figureId;
             if (!identity) continue;
             if (!byAvatar.has(figure.avatar)) byAvatar.set(figure.avatar, new Map());

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-annual-058-chatgpt-record",
+    "type": "svg",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-058-chatgpt_record.svg",
+    "role": "annual-achievement-explainer",
+    "caption": {
+      "en": "ChatGPT process explainer",
+      "zh": "ChatGPT 流程解释图"
+    },
+    "subcaption": {
+      "en": "Dialogue supervision and reinforcement learning from human feedback",
+      "zh": "对话监督与基于人类反馈的强化学习"
+    },
+    "sourceIds": [
+      "source-chatgpt-instructgpt-background",
+      "source-primary-record"
+    ],
+    "sourceName": {
+      "en": "Primary publication and original local synthesis",
+      "zh": "主论文与本地原创整理"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2203.02155",
+    "rights": {
+      "status": "original-redraw",
+      "license": {
+        "en": "Original local SVG; source figures are not copied.",
+        "zh": "本地原创 SVG；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Display and educational use in this project.",
+        "zh": "用于本项目展示与教育用途。"
+      }
+    },
+    "displayUsage": {
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-annual-058-chatgpt-hugging-face-rlhf",
+    "type": "image",
+    "path": "resources/images/external/ai100-2022-chatgpt/hugging-face-rlhf.png",
+    "role": "paper-figure",
+    "caption": {
+      "zh": "RLHF 策略优化流程图",
+      "en": "RLHF policy-optimization diagram"
+    },
+    "subcaption": {
+      "zh": "Hugging Face 图解奖励模型、PPO 更新与 KL 惩罚如何把语言模型调向人类偏好。",
+      "en": "Hugging Face illustrates how a reward model, PPO updates and a KL penalty tune a language model toward human preferences."
+    },
+    "sourceId": "source-chatgpt-hugging-face-rlhf-image",
+    "sourceName": {
+      "en": "Hugging Face documentation images",
+      "zh": "Hugging Face 文档图片库"
+    },
+    "sourceUrl": "https://huggingface.co/blog/rlhf",
+    "rights": {
+      "status": "licensed-external",
+      "license": {
+        "en": "CC BY-NC-SA 4.0 as stated for the Hugging Face documentation-images dataset; attribution and share-alike terms apply.",
+        "zh": "Hugging Face documentation-images 数据集标注为 CC BY-NC-SA 4.0；使用时需署名并遵守相同方式共享条款。"
+      },
+      "attribution": "Hugging Face"
+    },
+    "displayUsage": {
+      "en": "Technical background diagram for ChatGPT's RLHF lineage",
+      "zh": "ChatGPT RLHF 技术路线背景图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  }
+]

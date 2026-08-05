@@ -1,0 +1,74 @@
+{
+  "id": "ai100-annual-2022-2023-028-blip-2",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "en": "Blip-2",
+    "zh": "Blip-2"
+  },
+  "summary": {
+    "en": "Efficient vision-language pretraining by bridging frozen image and language models",
+    "zh": "通过连接冻结的图像模型与语言模型实现高效视觉语言预训练"
+  },
+  "description": {
+    "en": "<p>BLIP-2 addresses the cost of vision-language pretraining by keeping both a pretrained image encoder and a large language model frozen. A lightweight Querying Transformer learns the interface between the two modalities through representation learning followed by generative vision-to-language learning.</p><p>This design reuses strong unimodal models instead of retraining an end-to-end stack, and the paper reports competitive zero-shot image-to-text generation and visual question answering with far fewer trainable parameters.</p>",
+    "zh": "<p>BLIP-2 通过冻结预训练图像编码器和大语言模型，降低视觉语言预训练的成本。一个轻量级 Querying Transformer 先学习跨模态表示，再学习从视觉到语言的生成接口。</p><p>这种设计复用强大的单模态模型，而不是重新训练完整端到端系统；论文报告它以更少的可训练参数，在零样本图文生成和视觉问答上取得有竞争力的结果。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "Salesforce Research",
+      "zh": "Salesforce Research"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "junnan-li",
+      "name": {
+        "en": "Junnan Li",
+        "zh": "李俊楠"
+      },
+      "role": {
+        "en": "First author of the BLIP-2 paper",
+        "zh": "BLIP-2 论文第一作者"
+      },
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2023-blip-2/junnan-li.jpg"
+    },
+    {
+      "figureId": "steven-hoi",
+      "name": {
+        "en": "Steven Hoi",
+        "zh": "许彬"
+      },
+      "role": {
+        "en": "Co-author of the BLIP-2 paper",
+        "zh": "BLIP-2 论文共同作者"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Completed event-specific research on 2026-08-03. The exact BenchCouncil title, order, contributor prefix, institution, country and blank official fields were preserved. All listed people were checked against primary authorship evidence; portrait searches were completed and no portrait was selected because no candidate met the identity and usage-context threshold.",
+      "zh": "于 2026-08-03 完成事件专项研究。准确保留 BenchCouncil 的标题、顺序、人物前缀、机构、国家与官方空字段。所有列出人物均通过原始作者证据核对；肖像检索已完成，没有候选同时满足身份与使用语境门槛，因此不选用肖像。"
+    }
+  }
+}

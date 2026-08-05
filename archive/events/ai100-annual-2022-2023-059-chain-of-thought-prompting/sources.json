@@ -1,0 +1,187 @@
+[
+  {
+    "id": "source-primary-record",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Chain of Thought Prompting Elicits Reasoning in Large Language Models",
+      "zh": "《Chain of Thought Prompting Elicits Reasoning in Large Language Models》"
+    },
+    "authors": [
+      "Jason Wei",
+      "Denny Zhou"
+    ],
+    "year": 2022,
+    "url": "https://research.google/pubs/chain-of-thought-prompting-elicits-reasoning-in-large-language-models/",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary publication or official project record used for the central technical claims.",
+      "zh": "用于核心技术主张的主论文或官方项目记录。"
+    }
+  },
+  {
+    "id": "source-openalex-record",
+    "type": "paper-index",
+    "label": {
+      "en": "Paper index",
+      "zh": "论文索引"
+    },
+    "title": {
+      "en": "OpenAlex record for Chain of Thought Prompting Elicits Reasoning in Large Language Models",
+      "zh": "Chain of Thought Prompting Elicits Reasoning in Large Language Models 的 OpenAlex 文献记录"
+    },
+    "url": "https://api.openalex.org/works?search=Chain%20of%20Thought%20Prompting%20Elicits%20Reasoning%20in%20Large%20Language%20Models",
+    "language": "en",
+    "purpose": "bibliographic-verification",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Bibliographic metadata used to verify the publication year and landing page.",
+      "zh": "用于核对出版年份与落地页面的书目元数据。"
+    }
+  },
+  {
+    "id": "source-benchcouncil-annual",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "AI100: Top 100 AI achievements (2022-2023)",
+      "zh": "AI100：人工智能百大成就（2022-2023）"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+      "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
+    }
+  },
+  {
+    "id": "source-annual-059-chain-of-thought-prompting-portrait-denny-zhou",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Denny Zhou portrait source",
+      "zh": "丹尼·周人物图片来源"
+    },
+    "url": "https://dennyzhou.github.io/",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The portrait is stored in the researcher's personal GitHub Pages repository. The homepage identifies Denny Zhou as a Google DeepMind research scientist and lists the chain-of-thought paper. Reliability: primary-identity-source. Usage note: No redistribution license is stated; used with attribution under the project's relaxed reference-image policy.",
+      "zh": "肖像存放在研究者个人 GitHub Pages 仓库中；主页将丹尼·周介绍为 Google DeepMind 研究科学家，并列出思维链提示论文。 可靠性：primary-identity-source。使用备注：未声明再分发许可；依据项目放宽后的参考图片策略使用，并保留来源署名。"
+    }
+  },
+  {
+    "id": "source-cot-paper",
+    "type": "paper",
+    "label": {
+      "en": "Primary paper",
+      "zh": "原始论文"
+    },
+    "title": {
+      "en": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "zh": "《Chain-of-Thought Prompting Elicits Reasoning in Large Language Models》"
+    },
+    "url": "https://arxiv.org/abs/2201.11903",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary paper for few-shot chain-of-thought experiments and scale-dependent results.",
+      "zh": "用于核对少样本思维链实验和规模相关结果的原始论文。"
+    }
+  },
+  {
+    "id": "source-cot-google-blog",
+    "type": "official-page",
+    "label": {
+      "en": "Institution page",
+      "zh": "机构页面"
+    },
+    "title": {
+      "en": "Language models perform reasoning via chain of thought",
+      "zh": "Google Research：语言模型通过思维链进行推理"
+    },
+    "url": "https://research.google/blog/language-models-perform-reasoning-via-chain-of-thought/",
+    "language": "en",
+    "purpose": "background",
+    "reliability": "primary",
+    "notes": {
+      "en": "Google Research explanation of the prompting method and representative reasoning examples.",
+      "zh": "Google Research 对提示方法和代表性推理示例的官方说明。"
+    }
+  },
+  {
+    "id": "source-denny-zhou-profile",
+    "type": "personal-page",
+    "label": {
+      "en": "Personal homepage",
+      "zh": "个人主页"
+    },
+    "title": {
+      "en": "Denny Zhou personal homepage",
+      "zh": "丹尼·周个人主页"
+    },
+    "url": "https://dennyzhou.github.io/",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "Researcher-controlled identity page and publication list.",
+      "zh": "由研究者本人维护的身份页面与论文列表。"
+    }
+  },
+  {
+    "id": "source-annual-059-chain-of-thought-portrait-denny-zhou",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Denny Zhou portrait from his personal homepage repository",
+      "zh": "丹尼·周个人主页仓库肖像"
+    },
+    "url": "https://github.com/dennyzhou/dennyzhou.github.io/blob/master/Pictures/zhou1.jpg",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "First-party repository portrait used with attribution under the relaxed image policy.",
+      "zh": "第一方仓库肖像，依据放宽后的图片策略使用并保留署名。"
+    }
+  },
+  {
+    "id": "source-cot-paper-examples-figure",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Chain-of-thought worked-example figure",
+      "zh": "思维链分步推理示例图"
+    },
+    "url": "https://arxiv.org/abs/2201.11903",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Rendered from main_fables/cot-examples.pdf in the author-submitted arXiv source package.",
+      "zh": "由作者提交的 arXiv 源文件包中 main_fables/cot-examples.pdf 转换得到。"
+    }
+  }
+]
