@@ -137,7 +137,7 @@ AI100 页面顶部必须像旧 achievement 一样有 3 个资料卡片：
 #### 7. 生成与验证
 
 - 修改 Archive source 后必须运行 `npm run validate:archive` 与 `npm run generate`。
-- 至少运行 `npm run lint` 和 `npm test`。
+- 提交或创建 PR 前必须运行 `npm run verify:pr`，确保本地执行与 CI 一致；该命令依次包含 Archive 校验、`npm run lint`、`npm run format:check` 和 `npm test`。
 - 新增或大批修改 AI100 achievement 时，运行 `npm run validate:ai100-context`，确保主要 context sections 满足至少两句要求。
 - 新增 archive/right-side cards 后，应抽查生成后的 `milestones-data.js`，确认 `visualModules` 的中文字段没有英文 UI 句子残留。
 - 若影响启动或页面加载，运行 `npm run validate:startup`。
