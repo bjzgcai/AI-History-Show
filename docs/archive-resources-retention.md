@@ -1,6 +1,6 @@
 # `resources/` 保留与发布边界
 
-`resources/` 是浏览器资产与历史资料的 append-only 目录。清理 Legacy 工具时不删除其中已有文件；是否进入静态发布包由 `scripts/build-static-site.js` 的 allowlist/filter 决定。
+`resources/` 是浏览器资产与历史资料的 append-only 目录。清理 Legacy 工具时不删除其中已有原始文件；是否进入静态发布包由 `scripts/build-static-site.js` 的 allowlist/filter 决定。唯一例外是 `resources/images/_thumbs/`：它是可重建的派生目录，由缩略图生成器按当前首页卡片和头像需求同步清理。
 
 ## 生产依赖
 
@@ -28,6 +28,8 @@ resources/papers/
 ```
 
 `npm run validate:archive` 会检查 Archive 引用；`npm run build:static` 会验证发布包包含运行时需要的关键文件。
+
+`npm run generate` 会生成 `shared/thumbnail-manifest.js` 和必要的 `resources/images/_thumbs/**` 文件。仅首页卡片与人物头像使用缩略图；详情页使用原图。若生成的 WebP 不小于原图，生成器不会保留该缩略图，前端会按清单直接加载原图。
 
 ## 保留但不发布
 
