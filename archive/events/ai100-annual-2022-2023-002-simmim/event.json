@@ -1,0 +1,99 @@
+{
+  "id": "ai100-annual-2022-2023-002-simmim",
+  "year": 2022,
+  "date": "2022",
+  "title": {
+    "en": "Simmim",
+    "zh": "Simmim"
+  },
+  "summary": {
+    "en": "A simple masked image modeling framework built from random masks, raw-pixel regression and a lightweight prediction head",
+    "zh": "以随机遮挡、原始像素回归和轻量预测头构成的简洁掩码图像建模框架"
+  },
+  "description": {
+    "en": "<p>SimMIM asked how much machinery masked image modeling actually needed. Instead of block-wise masking, discrete-VAE tokenizers, clustering targets or a heavy decoder, it used random masks with moderately large patches, directly regressed the RGB values of masked pixels and reduced the prediction head to a linear layer.</p><p>The simple recipe produced strong representations with both ViT and Swin backbones, and the paper reports scaling from ViT-B to a 3-billion-parameter SwinV2-G model.</p>",
+    "zh": "<p>SimMIM 追问掩码图像建模究竟需要多少复杂机制。它不依赖分块遮挡、离散 VAE 分词器、聚类目标或沉重解码器，而是采用中等偏大的随机遮挡块，直接回归被遮挡位置的 RGB 像素值，并把预测头简化为单个线性层。</p><p>这套简洁方案在 ViT 与 Swin 主干上都学到强表征，论文还报告了从 ViT-B 扩展到 30 亿参数 SwinV2-G 的结果。</p>"
+  },
+  "location": {
+    "regionId": "china",
+    "country": {
+      "en": "China",
+      "zh": "中国"
+    },
+    "place": {
+      "en": "Tsinghua University, Microsoft Research Asia, Xi'an Jiaotong University",
+      "zh": "清华大学、微软亚洲研究院、西安交通大学"
+    },
+    "coordinates": [
+      35.8617,
+      104.1954
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "zhenda-xie",
+      "name": {
+        "en": "Zhenda Xie",
+        "zh": "谢振达"
+      },
+      "role": {
+        "en": "Co-first author of the SimMIM paper",
+        "zh": "SimMIM 论文共同第一作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "zheng-zhang",
+      "name": {
+        "en": "Zheng Zhang",
+        "zh": "张拯"
+      },
+      "role": {
+        "en": "Co-first author of the SimMIM paper",
+        "zh": "SimMIM 论文共同第一作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "yue-cao",
+      "name": {
+        "en": "Yue Cao",
+        "zh": "曹越"
+      },
+      "role": {
+        "en": "Co-first author of the SimMIM paper",
+        "zh": "SimMIM 论文共同第一作者"
+      },
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg"
+    },
+    {
+      "figureId": "han-hu",
+      "name": {
+        "en": "Han Hu",
+        "zh": "胡瀚"
+      },
+      "role": {
+        "en": "Lead author of the SimMIM paper",
+        "zh": "SimMIM 论文主要作者"
+      },
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg"
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Completed event-specific research on 2026-08-03. All four BenchCouncil contributors were confirmed against the primary paper and Microsoft Research page, with researcher-controlled profiles used for identity disambiguation. Han Hu's matching homepage portrait is the event's single person image; three other portrait candidates are documented but not selected. A same-name OpenAlex ORCID mismatch for Zheng Zhang was explicitly rejected.",
+      "zh": "于 2026-08-03 完成事件专项研究。四位 BenchCouncil 主要人物均通过主论文与微软研究院页面确认，并使用研究者本人资料消除同名歧义。胡瀚主页肖像作为本事件唯一人物图，另外三个人物图片候选仅记录而不采用；Zheng Zhang 的同名 OpenAlex ORCID 误配已明确排除。"
+    }
+  }
+}

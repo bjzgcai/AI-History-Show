@@ -1,0 +1,146 @@
+{
+  "id": "ai100-annual-2022-2023-039-palm",
+  "year": 2022,
+  "date": "2022",
+  "title": {
+    "en": "PaLM",
+    "zh": "PaLM"
+  },
+  "summary": {
+    "en": "A 540-billion-parameter language model scaled efficiently across 6,144 TPU v4 chips with Pathways",
+    "zh": "通过 Pathways 在 6,144 个 TPU v4 芯片上高效扩展的 5,400 亿参数语言模型"
+  },
+  "description": {
+    "en": "<p>PaLM tested whether a single dense language model could be trained efficiently at 540 billion parameters using Google's Pathways system. The work used 6,144 TPU v4 chips and a 780-billion-token multilingual corpus, pairing systems engineering with a broad evaluation program.</p><p>As scale increased, PaLM improved few-shot language understanding, generation, reasoning and code tasks, while also showing discontinuous gains on some capabilities. The project became an important reference point for both large-model infrastructure and discussions of emergent behavior.</p>",
+    "zh": "<p>PaLM 检验了能否借助 Google 的 Pathways 系统高效训练一个 5,400 亿参数的稠密语言模型。该工作使用 6,144 个 TPU v4 芯片和 7,800 亿 token 的多语种语料，把系统工程与广泛评测结合起来。</p><p>随着规模增加，PaLM 在少样本语言理解、生成、推理和代码任务上持续提升，并在部分能力上出现不连续跃升。该项目因此成为大模型基础设施和涌现能力讨论的重要参照。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "Google",
+      "zh": "Google"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "aakanksha-chowdhery",
+      "name": {
+        "en": "Aakanksha Chowdhery",
+        "zh": "阿坎莎·乔杜里"
+      },
+      "role": {
+        "en": "First author of the PaLM paper",
+        "zh": "PaLM 论文第一作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "sharan-narang",
+      "name": {
+        "en": "Sharan Narang",
+        "zh": "沙兰·纳朗"
+      },
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "jacob-devlin",
+      "name": {
+        "en": "Jacob Devlin",
+        "zh": "雅各布·德夫林"
+      },
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "kathy-meier-hellstern",
+      "name": {
+        "en": "Kathy Meier-Hellstern",
+        "zh": "凯西·迈尔-赫尔斯特恩"
+      },
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "douglas-eck",
+      "name": {
+        "en": "Douglas Eck",
+        "zh": "道格拉斯·埃克"
+      },
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "jeff-dean",
+      "name": {
+        "en": "Jeff Dean",
+        "zh": "杰夫·迪恩"
+      },
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      },
+      "organizationIds": [],
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg"
+    },
+    {
+      "figureId": "slav-petrov",
+      "name": {
+        "en": "Slav Petrov",
+        "zh": "斯拉夫·彼得罗夫"
+      },
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "noah-fiedel",
+      "name": {
+        "en": "Noah Fiedel",
+        "zh": "诺亚·菲德尔"
+      },
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+      "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
+    }
+  }
+}

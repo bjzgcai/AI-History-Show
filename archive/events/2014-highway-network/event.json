@@ -6,10 +6,6 @@
         "zh": "高速网络",
         "en": "Highway Networks"
     },
-    "summary": {
-        "zh": "深度学习与范式归一",
-        "en": "Deep Learning and Unified Paradigms"
-    },
     "description": {
         "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
         "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."

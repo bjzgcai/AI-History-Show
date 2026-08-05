@@ -3,7 +3,38 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const routing = require(path.join(__dirname, '..', 'shared', 'storyline-routing.js'));
-const { milestones: generatedMilestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
+const { archiveStorylines, milestones: generatedMilestones } = require(
+    path.join(__dirname, '..', 'milestones-data.js')
+);
+
+assert.equal(archiveStorylines.length, 5, 'generated runtime should expose all Archive storyline definitions');
+assert.deepEqual(
+    archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100').title,
+    { zh: 'AI 顶尖成就图谱（BenchCouncil）', en: 'AI Achievement Map (BenchCouncil)' },
+    'the generated BenchCouncil storyline title should come from Archive'
+);
+assert.deepEqual(
+    archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100').subtitle,
+    {
+        zh: '119 项长期主表成就 + 20 项 2022–2023 年度精选',
+        en: '119 long-term main-table achievements + 20 selected achievements from 2022–2023'
+    },
+    'the generated BenchCouncil storyline subtitle should describe the long-term table and annual highlights'
+);
+assert.deepEqual(
+    archiveStorylines.find((storyline) => storyline.id === 'deep-learning').title,
+    {
+        zh: '连接主义的兴衰与复兴：AI七十年',
+        en: 'The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI'
+    },
+    'the generated connectionism storyline title should come from Archive'
+);
+assert.deepEqual(
+    archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100-2022-2023').title,
+    { zh: 'AI100 年度精选（2022-2023）', en: 'AI100 Annual Highlights (2022-2023)' },
+    'the generated annual AI100 storyline title should come from Archive'
+);
+console.log('PASS generated storyline definitions');
 
 assert.equal(
     routing.normalizeStorylineId('deep-learning'),
@@ -78,6 +109,57 @@ gamingMilestones.forEach((milestone) => {
 });
 console.log('PASS gaming AI unified UI content coverage');
 
+const annualAi100Milestones = generatedMilestones.filter(
+    (milestone) => routing.getMilestoneStorylineId(milestone) === 'bench-council-ai100-2022-2023'
+);
+assert.equal(
+    annualAi100Milestones.length,
+    20,
+    'the BenchCouncil 2022-2023 annual storyline should contain 20 curated events'
+);
+assert.equal(
+    annualAi100Milestones[0].title.en,
+    'Swin Transformer V2',
+    'the annual selection should start with Swin Transformer V2'
+);
+assert.equal(annualAi100Milestones.at(-1).title.en, 'ESMFold', 'the annual selection should end with ESMFold');
+assert.deepEqual(
+    annualAi100Milestones[0].figures.map((figure) => figure.name.en),
+    ['Ze Liu', 'Han Hu'],
+    'annual milestones should preserve the complete official contributor order'
+);
+assert.equal(annualAi100Milestones[0].figures[0].avatar.endsWith('ze-liu-portrait.jpg'), true);
+assert.equal(annualAi100Milestones[0].figures[1].avatar.endsWith('han-hu-portrait.jpg'), true);
+assert.deepEqual(
+    annualAi100Milestones[1].figures.map((figure) => figure.name.en),
+    ['Zhenda Xie', 'Zheng Zhang', 'Yue Cao', 'Han Hu'],
+    'annual milestones should preserve the complete SimMIM contributor order'
+);
+assert.equal(
+    annualAi100Milestones[1].figures.filter((figure) => figure.avatar).length,
+    2,
+    'an annual event should expose every verified contributor portrait'
+);
+assert.equal(
+    annualAi100Milestones[1].figures.slice(0, 2).every((figure) => figure.avatar === ''),
+    true,
+    'contributors without the selected portrait should remain text-only'
+);
+assert.equal(annualAi100Milestones[1].figures[2].avatar.endsWith('yue-cao-portrait.jpeg'), true);
+assert.equal(annualAi100Milestones[1].figures[3].avatar.endsWith('han-hu-portrait.jpg'), true);
+assert.equal(
+    annualAi100Milestones.filter((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-057-claude')
+        .length,
+    1,
+    'the 2023 selection should include Claude'
+);
+assert.equal(
+    annualAi100Milestones.some((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-042-llama-2'),
+    false,
+    'the annual selection should omit LLaMA 2 to avoid duplicating the LLaMA turning point'
+);
+console.log('PASS BenchCouncil annual highlights selection and contributor order');
+
 const archiveMilestones = [
     { id: 'milestone-1956-dartmouth', storyline: { id: 'deep-learning' } },
     { id: 'milestone-2017-transformer', storyline: { id: 'deep-learning' } },
@@ -102,8 +184,25 @@ const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf
 const dualScreenHtml = fs.readFileSync(path.join(__dirname, '..', 'dual-screen.html'), 'utf8');
 const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
 const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
+const imageLoadingSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'image-loading.js'), 'utf8');
+const thumbnailManifestSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'thumbnail-manifest.js'), 'utf8');
 const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
 const pqMiniProgramQrPath = path.join(__dirname, '..', 'resources', 'pq.png');
+assert.match(
+    indexHtml,
+    /const archiveStorylineDefinitions = typeof archiveStorylines[\s\S]*?const archiveStorylineById = new Map/,
+    'the storyline selector should consume generated Archive storyline definitions'
+);
+assert.match(
+    indexHtml,
+    /function getStorylineLabel\(option\)[\s\S]*?definition && definition\.title/,
+    'storyline selector labels should resolve from Archive metadata'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /en: 'Top AI Achievements \(BenchCouncil\)'/,
+    'the BenchCouncil storyline title should not be duplicated in index.html'
+);
 assert.match(
     indexHtml,
     /class="single-stage is-ui-browser" id="singleStage"/,
@@ -141,7 +240,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /unifiedMilestoneCache = window\.ChronologyOverview\.buildCanonicalMilestones\(allMilestones,[\s\S]*?storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY/,
+    /unifiedSourceMilestones = allMilestones\.filter[\s\S]*?unifiedMilestoneCache = window\.ChronologyOverview\.buildCanonicalMilestones\(unifiedSourceMilestones,[\s\S]*?storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY/,
     'the default overview should merge storyline variants by canonical Archive event'
 );
 assert.match(
@@ -156,13 +255,23 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /chronologyOverview\.setState\(\{ storylineId: chronologyFilterStorylineId \}\);[\s\S]*?chronologyOverview\.update\(\{[\s\S]*?milestones:\s*buildUnifiedMilestones\(\)/,
-    'the overview should retain the complete canonical filters while restoring the selected storyline'
+    /chronologyOverview\.setState\(\{ storylineId: chronologyFilterStorylineId \}\);[\s\S]*?chronologyOverview\.update\(\{[\s\S]*?milestones:\s*getChronologyOverviewMilestones\(\)/,
+    'the overview should restore the selected storyline against its matching dataset'
 );
 assert.match(
     indexHtml,
-    /function getChronologyFilterStorylineId\(storylineId\)[\s\S]*?normalizeStorylineId\(storylineId\)[\s\S]*?AI_HISTORY_MAP_VARIANT_PRIORITY\.includes\(normalizedStorylineId\)/,
+    /function getChronologyFilterStorylineId\(storylineId\)[\s\S]*?normalizeStorylineId\(storylineId\)[\s\S]*?CHRONOLOGY_FILTER_STORYLINE_IDS\.has\(normalizedStorylineId\)/,
     'all configured chronology storylines should map back to their matching overview filter'
+);
+assert.match(
+    indexHtml,
+    /let chronologyFilterStorylineId = requestedChronologyFilterStorylineId[\s\S]*?getChronologyFilterStorylineId\(activeStorylineId\)/,
+    'a storyline URL should initialize the chronology filter from the active storyline'
+);
+assert.match(
+    indexHtml,
+    /function getChronologyOverviewMilestones\(\)[\s\S]*?STANDALONE_AI100_STORYLINE_IDS\.has\(chronologyFilterStorylineId\)[\s\S]*?getStorylineMilestones\(chronologyFilterStorylineId\)[\s\S]*?milestones: getChronologyOverviewMilestones\(\)[\s\S]*?preserveSourceOrder: preserveStandaloneOrder/,
+    'the annual highlights storyline should supply its own dataset in configured order'
 );
 assert.match(
     indexHtml,
@@ -236,6 +345,36 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /\.single-stage\.is-ui-browser\.is-ui-detail \.storyline-trigger\s*\{[\s\S]*?display:\s*none[\s\S]*?\.single-stage\.is-ui-browser\.is-ui-detail \.storyline-context\s*\{[\s\S]*?display:\s*flex/,
+    'the detail view should replace the storyline selector with a static storyline label'
+);
+assert.match(
+    chronologySource,
+    /config\.storylines[\s\S]*?class="chrono-storyline-title-row"[\s\S]*?<strong data-overflow-title="\$\{escapeHtml\(filter\.name\)\}"[\s\S]*?class="chrono-storyline-subtitle" data-overflow-title="\$\{escapeHtml\(filter\.subtitle\)\}"/,
+    'the chronology storyline list should render Archive subtitles below storyline titles'
+);
+assert.match(
+    chronologySource,
+    /aria-label="\$\{escapeHtml\(\[filter\.name, filter\.subtitle\]\.filter\(Boolean\)\.join\(': '\)\)\}"/,
+    'storyline filters should expose their complete title and subtitle to assistive technology'
+);
+assert.match(
+    chronologySource,
+    /function createOverflowTooltipController\(root, scope\)[\s\S]*?function show\(element\)[\s\S]*?classList\.add\('is-visible'\)[\s\S]*?function sync\(\)[\s\S]*?scrollWidth > element\.clientWidth \+ 1[\s\S]*?classList\.toggle\('has-overflow-tooltip',[\s\S]*?root\.addEventListener\('pointerover',[\s\S]*?overflowTooltipController\.sync\(\);/,
+    'truncated storyline labels should use the delegated custom hover tooltip controller'
+);
+assert.match(
+    chronologyCss,
+    /\.chrono-storyline-subtitle\s*\{[\s\S]*?display:\s*block[\s\S]*?width:\s*0[\s\S]*?min-width:\s*100%[\s\S]*?text-overflow:\s*ellipsis[\s\S]*?\.chrono-overflow-tooltip\.is-visible\s*\{[\s\S]*?visibility:\s*visible/,
+    'storyline subtitles should fill the title column without affecting item width and reveal the custom tooltip quickly'
+);
+assert.doesNotMatch(
+    chronologyCss,
+    /\.chrono-storyline-subtitle\s*\{[^}]*max-width/,
+    'storyline subtitles should not truncate before the available content width is exhausted'
+);
+assert.match(
+    indexHtml,
     /renderTimeline\(vm\);[\s\S]*?isUiBrowserActive\(\) && uiBrowserMode !== 'detail'[\s\S]*?document\.title = `\$\{tx\('appTitleSingle'\)\} - \$\{getStorylineLabel\(getActiveStorylineOption\(\)\)/,
     'the chronology overview should use its storyline title instead of retaining the last event title'
 );
@@ -243,11 +382,6 @@ assert.match(
     indexHtml,
     /id: 'gaming-ai',[\s\S]*?layout: 'ui-browser'/,
     'the gaming AI storyline should use the same UI browser as the other public storylines'
-);
-assert.match(
-    indexHtml,
-    /UI_GAME_EVOLUTION_PLACEHOLDER_PATTERN[\s\S]*?sample-go-game[\s\S]*?function getUiGameEvolutionModule/,
-    'the unified gaming UI should not expose the shared sample game as event-specific playback'
 );
 assert.match(
     i18nSource,
@@ -267,12 +401,17 @@ assert.match(
 assert.match(
     indexHtml,
     /const AI_HISTORY_MAP_VARIANT_PRIORITY = \[[\s\S]*?'bench-council-ai100'[\s\S]*?DEEP_STORYLINE_ID[\s\S]*?'gaming-ai'[\s\S]*?'humanistic-cycle'[\s\S]*?\]/,
-    'the unified chronology should include all four public storylines'
+    'the unified chronology should include the four long-term public storylines'
 );
 assert.match(
     indexHtml,
-    /const STORYLINE_OPTIONS = \[[\s\S]*?id: UNIFIED_STORYLINE_ID[\s\S]*?id: 'bench-council-ai100'[\s\S]*?id: 'gaming-ai'[\s\S]*?id: 'humanistic-cycle'[\s\S]*?id: DEEP_STORYLINE_ID[\s\S]*?\];/,
-    'the storyline selector should place AI100 where the deep-learning option previously appeared'
+    /const STANDALONE_AI100_STORYLINE_IDS = new Set\(\[ANNUAL_AI100_STORYLINE_ID\]\)[\s\S]*?const UNIFIED_STORYLINE_EXCLUSIONS = new Set\(STANDALONE_AI100_STORYLINE_IDS\)[\s\S]*?unifiedSourceMilestones = allMilestones\.filter/,
+    'the annual highlights storyline should remain separate from the unified long-term chronology'
+);
+assert.match(
+    indexHtml,
+    /const STORYLINE_OPTIONS = \[[\s\S]*?id: UNIFIED_STORYLINE_ID[\s\S]*?id: 'bench-council-ai100'[\s\S]*?id: ANNUAL_AI100_STORYLINE_ID[\s\S]*?id: 'gaming-ai'[\s\S]*?id: 'humanistic-cycle'[\s\S]*?id: DEEP_STORYLINE_ID[\s\S]*?\];/,
+    'the storyline selector should expose one curated annual AI100 view'
 );
 assert.match(
     indexHtml,
@@ -398,10 +537,35 @@ assert.match(
     /buildUiAvatarHtml\(vm, detailFigures\)/,
     'figure rendering and figure-count layout should use the same selected figures'
 );
+assert.doesNotMatch(
+    indexHtml,
+    /function getUiDetailFigures\(vm\)[\s\S]*?figures\.filter\(\(figure\) => Boolean\(getFigureAvatarSource\(figure\)\)\)/,
+    'detail pages should not hide contributor information when a verified portrait is unavailable'
+);
+assert.match(
+    indexHtml,
+    /function initials\(name\)[\s\S]*?localizedName\.replace\(\/\\s\*\[（\(\]\[\^\(\)（）\]\*\[\)）\]\\s\*\$\/[\s\S]*?toUpperCase\(\)/,
+    'text avatars should omit parenthetical source qualifiers while preserving the full visible person name'
+);
+assert.match(
+    indexHtml,
+    /detailFigureCount \? `<div class="ui-avatar-strip count-\$\{detailFigureCount\}">\$\{buildUiAvatarHtml\(vm, detailFigures\)\}<\/div>` : ''/,
+    'events without contributor information should not render an empty person-card strip'
+);
 assert.match(
     indexHtml,
     /@media \(min-width: 1200px\)[\s\S]*?\.ui-avatar-strip\.count-4\s*\{[\s\S]*?grid-template-columns:\s*repeat\(4, minmax\(0, 1fr\)\)[\s\S]*?\.ui-avatar-strip\.count-4 \.ui-avatar-face\s*\{[\s\S]*?width:\s*72px/,
     'desktop four-figure layouts should use a compact four-column grid'
+);
+assert.match(
+    indexHtml,
+    /\.ui-avatar-face\.is-product img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?function buildUiAvatarHtml[\s\S]*?figure\.figureType === 'product' \? ' is-product' : ''/,
+    'single-screen product avatars should contain complete logos inside the circular frame'
+);
+assert.match(
+    dualScreenHtml,
+    /\.figure-avatar\.is-product img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?function renderFigures[\s\S]*?figure\.figureType === 'product' \? ' is-product' : ''/,
+    'dual-screen product avatars should contain complete logos inside the circular frame'
 );
 assert.match(
     indexHtml,
@@ -477,18 +641,8 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /class="ui-media-video-poster"/,
-    'AI100 commentary media should display a visual poster before playback'
-);
-assert.match(
-    indexHtml,
-    /\.ui-media-video-poster\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?\.ui-media-video video,[\s\S]*?object-fit:\s*contain/,
-    'commentary images and direct videos should scale to fit without cropping'
-);
-assert.match(
-    indexHtml,
-    /function getUiDetailImages\(vm\)[\s\S]*?const sideImageIndex = sideImageUrl \? candidates\.indexOf\(sideImageUrl\) : -1[\s\S]*?if \(sideImageIndex <= 0\) return candidates[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
-    'detail image lists should preserve the first candidate while excluding a later side-panel image'
+    /function getUiDetailImages\(vm\)[\s\S]*?EventMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
+    'detail image lists should always exclude the side-panel architecture or explanation image'
 );
 assert.doesNotMatch(
     indexHtml,
@@ -518,13 +672,18 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function findHumanisticExplainerImage\(vm, images\)[\s\S]*?isHumanisticMilestone\(vm && vm\.raw\)[\s\S]*?images\.find\(\(url\) => isExplainerMedia\(vm, url\)\)[\s\S]*?function getUiMediaVisualImage\(vm,[\s\S]*?findHumanisticExplainerImage\(vm, images\)/,
-    'humanistic commentary media should prioritize the first explainer image'
+    /function getUiMediaVisualImage\(vm, images = getUiImageCandidates\(vm\)\)[\s\S]*?EventMediaSelection\.findCommentaryMedia\(images/,
+    'all storylines should use the same architecture and explanation media selector'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /shouldHideUiCommentaryMediaVisual|commentaryMedia\.hideVisual|hideCommentaryMediaVisual/,
+    'the unified media path should not retain event-specific visual suppression'
 );
 assert.match(
     indexHtml,
-    /const mediaHtml = buildUiMediaHtml\(vm, \{ forceStaticImage: isHumanisticCycle \}\)[\s\S]*?uiText\('Sources', '资料来源'\)[\s\S]*?uiText\('Commentary & Media', '评论与媒体'\)/,
-    'humanistic explainers should render as static commentary media directly after sources'
+    /function buildUiMediaHtml\(vm\)[\s\S]*?if \(!imageUrl\) return ''/,
+    'missing structural media should omit the commentary media card'
 );
 assert.match(
     indexHtml,
@@ -548,8 +707,43 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?image\.src = imageUrl[\s\S]*?captionTitle\.innerHTML = escapeHtmlWithCjkTail[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
-    'detail image changes should update the media, caption, and pager without rebuilding the full detail page'
+    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?image\.loading = 'eager';[\s\S]*?image\.src = imageUrl;[\s\S]*?captionTitle\.innerHTML = escapeHtmlWithCjkTail[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
+    'detail image changes should update the original media, caption, and pager without rebuilding the full detail page'
+);
+assert.match(
+    imageLoadingSource,
+    /const THUMB_ROOT = 'resources\/images\/_thumbs\/'[\s\S]*?function getPreviewUrl\(url\)[\s\S]*?AIHistoryThumbnailManifest[\s\S]*?function attachPreviewFallback\(image\)/,
+    'shared image loading should use the generated thumbnail manifest and fall back to originals'
+);
+assert.match(
+    thumbnailManifestSource,
+    /AIHistoryThumbnailManifest = new Set\(/,
+    'the generated thumbnail manifest should expose the retained preview assets'
+);
+assert.match(
+    indexHtml,
+    /<script src="shared\/thumbnail-manifest\.js"><\/script>\s*<script src="shared\/image-loading\.js"><\/script>/,
+    'single-screen entry should load the thumbnail manifest before image loading'
+);
+assert.match(
+    dualScreenHtml,
+    /<script src="shared\/thumbnail-manifest\.js"><\/script>\s*<script src="shared\/image-loading\.js"><\/script>/,
+    'dual-screen entry should load the thumbnail manifest before image loading'
+);
+assert.match(
+    indexHtml,
+    /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?<script src="shared\/chronology-overview\.js[\s\S]*?function buildFigureAvatar\(figure, avatarSource\)[\s\S]*?buildPreviewImageAttributes\(avatarSource\.src[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?viewerPhoto\.src = photos\[currentPhotoIndex\]/,
+    'single-screen entry should use previews for avatars and originals in the archive viewer'
+);
+assert.match(
+    dualScreenHtml,
+    /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?function buildFigureAvatar\(figure, avatarSource\)[\s\S]*?buildPreviewImageAttributes\(avatarSource\.src[\s\S]*?function renderLeftArchive\(photos\)[\s\S]*?<img src="\$\{escapeHtml\(card\.src\)\}"[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?viewerPhoto\.src = photos\[currentPhotoIndex\]/,
+    'dual-screen entry should use previews for avatars and originals for event images'
+);
+assert.match(
+    chronologySource,
+    /function getPreviewImageUrl\(imageUrl\)[\s\S]*?const previewUrl = getPreviewImageUrl\(imageUrl\)[\s\S]*?data-src="\$\{escapeHtml\(previewUrl\)\}" data-full-src="\$\{escapeHtml\(imageUrl\)\}"/,
+    'chronology overview cards should lazy-load thumbnail URLs while preserving full image metadata'
 );
 assert.doesNotMatch(
     indexHtml,
@@ -591,10 +785,10 @@ assert.match(
     /function bindUiDetailImageAutoplayPause\(imageStage, imageCount\)[\s\S]*?mouseenter[\s\S]*?mouseleave[\s\S]*?focusin[\s\S]*?focusout[\s\S]*?function renderUiDetail\(\)[\s\S]*?bindUiDetailImageAutoplayPause[\s\S]*?scheduleUiDetailImageAutoplay\(\)[\s\S]*?visibilitychange[\s\S]*?document\.hidden\) clearUiDetailImageAutoplay/,
     'detail image autoplay should pause for navigation controls and when the document is hidden'
 );
-assert.match(
+assert.doesNotMatch(
     indexHtml,
-    /const player = button\.querySelector\('video'\)[\s\S]*?const playback = player\.play\(\)/,
-    'direct AI100 commentary videos should start playback from the user click'
+    /data-ui-media-video|data-ui-game-evolution|ui-side-demo-visual/,
+    'the unified detail sidebar should not retain legacy video or demo fallbacks'
 );
 console.log('PASS Pages media rendering safeguards');
 

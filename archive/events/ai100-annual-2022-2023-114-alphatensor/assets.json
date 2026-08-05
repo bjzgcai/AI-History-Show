@@ -1,0 +1,121 @@
+[
+  {
+    "id": "asset-annual-114-alphatensor-portrait-pushmeet-kohli",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/portraits/pushmeet-kohli.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Pushmeet Kohli portrait",
+      "zh": "普什米特·科利肖像"
+    },
+    "subcaption": {
+      "en": "Co-author of the AlphaTensor paper",
+      "zh": "AlphaTensor 论文共同作者"
+    },
+    "sourceId": "source-annual-114-alphatensor-portrait-pushmeet-kohli",
+    "sourceName": {
+      "en": "Wikimedia Commons / WikiPortraits",
+      "zh": "Wikimedia Commons / WikiPortraits"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pushmeet_Kohli_at_SXSW_London_2026.jpg",
+    "sourceReliability": "identified-event-portrait",
+    "provenanceNotes": {
+      "en": "WikiPortraits identifies the subject as Pushmeet Kohli at SXSW London 2026.",
+      "zh": "WikiPortraits 将画面人物标注为 2026 年 SXSW London 活动上的普什米特·科利。"
+    },
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "en": "CC BY-SA 4.0; attribution to Photographer.JuliaMustard / WikiPortraits.",
+        "zh": "CC BY-SA 4.0；署名 Photographer.JuliaMustard / WikiPortraits。"
+      },
+      "attribution": ""
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
+    "id": "asset-annual-114-alphatensor-record",
+    "type": "svg",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-114-alphatensor_record.svg",
+    "role": "annual-achievement-explainer",
+    "caption": {
+      "en": "AlphaTensor process explainer",
+      "zh": "AlphaTensor 流程解释图"
+    },
+    "subcaption": {
+      "en": "AlphaZero-style search over tensor decompositions",
+      "zh": "在张量分解空间中进行 AlphaZero 式搜索"
+    },
+    "sourceIds": [
+      "source-alphatensor-deepmind",
+      "source-primary-record"
+    ],
+    "sourceName": {
+      "en": "Primary publication and original local synthesis",
+      "zh": "主论文与本地原创整理"
+    },
+    "sourceUrl": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
+    "rights": {
+      "status": "original-redraw",
+      "license": {
+        "en": "Original local SVG; source figures are not copied.",
+        "zh": "本地原创 SVG；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Display and educational use in this project.",
+        "zh": "用于本项目展示与教育用途。"
+      }
+    },
+    "displayUsage": {
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-annual-114-alphatensor-official-tensor",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-114-alphatensor-official-tensor.png",
+    "role": "research-result",
+    "caption": {
+      "zh": "AlphaTensor 矩阵乘法张量可视化",
+      "en": "AlphaTensor matrix-multiplication tensor visualization"
+    },
+    "subcaption": {
+      "zh": "Google DeepMind 官方张量表示介绍图",
+      "en": "Official Google DeepMind illustration of the tensor representation"
+    },
+    "sourceId": "source-alphatensor-official-image",
+    "sourceName": {
+      "en": "Google DeepMind",
+      "zh": "Google DeepMind"
+    },
+    "sourceUrl": "https://lh3.googleusercontent.com/UfMZ44R9PrcXndNCa7Qt0ZVsGUEoAnpCiWiimmBYyUVhSHc97-qQFKUQVHBGDyj3ew5q-4dksmaJEifYlAYhAPC3o81IHL3_WDjh4jZRQIvgxZGJ0JQ=w1440-h810-n-nu",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Official institutional illustration; no separate open image license is stated on the article page.",
+        "zh": "官方机构介绍图；文章页面未另行声明开放图片许可。"
+      },
+      "attribution": "Google DeepMind"
+    },
+    "displayUsage": {
+      "en": "Official achievement illustration",
+      "zh": "官方成果介绍图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  }
+]

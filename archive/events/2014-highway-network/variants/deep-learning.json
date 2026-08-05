@@ -17,8 +17,8 @@
     "emphasis": ["batch-migration", "source-review-needed"],
     "visualModules": [],
     "assetIds": [
-        "asset-2014-highway-network-architecture-01",
-        "asset-2014-highway-network-people-01"
+        "asset-2014-highway-network-people-01",
+        "asset-2014-highway-network-architecture-01"
     ],
     "sourceIds": [
         "source-highway-networks-paper",

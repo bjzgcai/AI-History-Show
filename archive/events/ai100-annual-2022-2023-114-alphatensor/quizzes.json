@@ -1,0 +1,40 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-114-alphatensor-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "How does AlphaTensor represent matrix multiplication?",
+      "zh": "AlphaTensor 如何表示矩阵乘法问题？"
+    },
+    "options": [
+      {
+        "en": "As a tensor-decomposition game",
+        "zh": "表示为张量分解游戏"
+      },
+      {
+        "en": "As speech transcription",
+        "zh": "表示为语音转写"
+      },
+      {
+        "en": "As image captioning",
+        "zh": "表示为图像描述"
+      },
+      {
+        "en": "As web search ranking",
+        "zh": "表示为网页搜索排序"
+      }
+    ],
+    "explanation": {
+      "en": "The agent searches for rank-one tensor updates that decompose the matrix multiplication tensor.",
+      "zh": "智能体搜索秩一张量更新，以分解矩阵乘法张量。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-alphatensor-deepmind"
+    ],
+    "answer": 0,
+    "assetIds": [
+      "asset-annual-114-alphatensor-record"
+    ]
+  }
+]

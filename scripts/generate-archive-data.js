@@ -79,11 +79,13 @@ function buildOutputContent(milestones, now, result) {
         '// 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold',
         `// Archive native: storylines ${result.counts.storylines}, milestones ${result.counts.milestones}, errors ${result.counts.errors}`,
         '',
+        `const archiveStorylines = ${JSON.stringify(result.storylines || [], null, 2)};`,
+        '',
         `const milestones = ${JSON.stringify(milestones, null, 2)};`,
         '',
         '// 导出（兼容 Node.js require）',
         "if (typeof module !== 'undefined' && module.exports) {",
-        '  module.exports = { milestones };',
+        '  module.exports = { archiveStorylines, milestones };',
         '}',
         ''
     ].join('\n');

@@ -87,7 +87,16 @@
       "zh": "锡耶纳大学作者主页",
       "en": "University of Siena author homepage"
     },
-    "sourceUrl": "https://www3.diism.unisi.it/~franco/"
+    "sourceUrl": "https://www3.diism.unisi.it/~franco/",
+    "selectionReview": {
+      "status": "excluded-from-variants",
+      "reasonCode": "display-quality",
+      "reason": {
+        "zh": "图片清晰度过低，不适合加入详情图片列表；当前人物头像引用暂时保留，待获得更高质量来源后替换。",
+        "en": "The image resolution is too low for the detail image list. Its existing figure-avatar reference remains temporarily until a higher-quality source is available."
+      },
+      "reviewedAt": "2026-08-02"
+    }
   },
   {
     "id": "asset-ai100-2005-gnn-unisi-paper-record",

@@ -2060,6 +2060,41 @@
             display: none;
         }
 
+        .storyline-context {
+            display: none;
+            min-width: 0;
+            color: rgba(244, 239, 229, 0.88);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.24;
+            letter-spacing: 0;
+        }
+
+        .storyline-context-label {
+            display: -webkit-box;
+            min-width: 0;
+            overflow: hidden;
+            overflow-wrap: anywhere;
+            text-overflow: clip;
+            white-space: normal;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .single-stage.is-ui-browser.is-ui-detail .storyline-trigger {
+            display: none;
+        }
+
+        .single-stage.is-ui-browser.is-ui-detail .storyline-context {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: min(620px, 48vw);
+            min-height: 48px;
+            text-align: right;
+        }
+
         .storyline-trigger {
             width: 334px;
             min-height: 32px;
@@ -2646,6 +2681,23 @@
             filter: grayscale(0.1);
             object-position: center center;
             transform-origin: center center;
+        }
+
+        .figure-avatar.is-product {
+            background: rgba(244, 239, 229, 0.94);
+            filter: none;
+        }
+
+        .figure-avatar.is-product img {
+            box-sizing: border-box;
+            object-fit: contain;
+            padding: 7px;
+            filter: none;
+        }
+
+        .figure-avatar.is-product img[src$="chatgpt-logo.png"] {
+            background: #101010;
+            padding: 6px;
         }
 
         .figure-avatar span {
@@ -5732,6 +5784,21 @@
             object-fit: cover;
         }
 
+        .ui-avatar-face.is-product {
+            background: rgba(244, 239, 229, 0.94);
+        }
+
+        .ui-avatar-face.is-product img {
+            box-sizing: border-box;
+            object-fit: contain;
+            padding: 11px;
+        }
+
+        .ui-avatar-face.is-product img[src$="chatgpt-logo.png"] {
+            background: #101010;
+            padding: 9px;
+        }
+
         @media (min-width: 1200px) {
             .ui-avatar-strip.count-4 {
                 display: grid;
@@ -6164,113 +6231,6 @@
             font-weight: 800;
         }
 
-        .ui-media-video {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 530 / 298;
-            border: 1px solid rgba(244, 239, 229, 0.48);
-            border-radius: 0;
-            overflow: hidden;
-            background: #050505;
-            color: inherit;
-            padding: 0;
-            display: block;
-            cursor: pointer;
-            font: inherit;
-        }
-
-        .ui-media-video-poster {
-            width: 100%;
-            height: 100%;
-            display: block;
-            object-fit: contain;
-            object-position: center;
-            background: #050505;
-            opacity: 0.56;
-            filter: saturate(0.72) contrast(1.08);
-        }
-
-        .ui-media-video::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            z-index: 2;
-            pointer-events: none;
-            background:
-                linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent 14%, transparent 86%, rgba(255, 255, 255, 0.025)),
-                repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.032) 0 1px, transparent 1px 4px);
-            mix-blend-mode: screen;
-            opacity: 0.48;
-        }
-
-        .ui-media-video iframe,
-        .ui-media-video video,
-        .ui-media-video-media {
-            width: 100%;
-            height: 100%;
-            border: 0;
-            display: block;
-        }
-
-        .ui-media-video video,
-        video.ui-media-video-media {
-            object-fit: contain;
-            object-position: center;
-            background: #050505;
-        }
-
-        .ui-media-video-play {
-            position: absolute;
-            left: 36px;
-            top: 16px;
-            z-index: 3;
-            color: rgba(244, 239, 229, 0.42);
-            font-family: "Courier New", "SFMono-Regular", monospace;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-        }
-
-        .ui-media-video-play::after {
-            content: "▸";
-            margin-left: 8px;
-        }
-
-        .ui-media-video-quote {
-            position: absolute;
-            left: 36px;
-            right: 36px;
-            bottom: 54px;
-            z-index: 3;
-            color: #d99a00;
-            font-family: "Courier New", "SFMono-Regular", monospace;
-            font-size: 14px;
-            font-weight: 800;
-            line-height: 1.18;
-            text-align: left;
-            display: -webkit-box;
-            overflow: hidden;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 4;
-        }
-
-        .ui-media-video-time {
-            position: absolute;
-            left: 36px;
-            right: 36px;
-            bottom: 18px;
-            z-index: 3;
-            display: flex;
-            justify-content: space-between;
-            color: rgba(244, 239, 229, 0.42);
-            font-family: "Courier New", "SFMono-Regular", monospace;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-        }
-
         .ui-explainer-grid {
             display: grid;
             gap: 22px;
@@ -6353,39 +6313,6 @@
             font-size: 18px;
             font-weight: 500;
             line-height: 1.35;
-        }
-
-        .ui-side-demo-visual {
-            display: grid;
-            gap: 10px;
-        }
-
-        .ui-side-demo-visual .bench-paper-demo {
-            display: block;
-            min-height: 0;
-        }
-
-        .ui-side-demo-visual .bench-paper-notes,
-        .ui-side-demo-visual .bench-go-notes {
-            display: none;
-        }
-
-        .ui-side-demo-visual .bench-paper-svg {
-            width: 100%;
-            height: auto;
-            min-height: 0;
-            aspect-ratio: 520 / 250;
-            display: block;
-        }
-
-        .ui-side-demo-visual .bench-paper-image-demo {
-            aspect-ratio: auto;
-        }
-
-        .ui-side-demo-visual .bench-go-layout,
-        .ui-side-demo-visual .bench-transcript-grid,
-        .ui-side-demo-visual .bench-code-flow {
-            min-height: 0;
         }
 
         .ui-back-button {
@@ -6860,11 +6787,24 @@
             justify-content: center;
         }
 
+        .photo-viewer-frame {
+            max-width: 82vw;
+            max-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .viewer-photo {
             max-width: 82vw;
             max-height: 80vh;
             object-fit: contain;
             box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        .photo-viewer-frame .viewer-photo {
+            max-width: 100%;
+            max-height: 100%;
         }
 
         .game-evolution-panel {
@@ -6955,7 +6895,7 @@
                 min-height: 100%;
                 overflow-x: hidden;
                 overflow-y: auto;
-                overscroll-behavior-y: contain;
+                overscroll-behavior-y: auto;
             }
 
             body {
@@ -7063,6 +7003,15 @@
                 font-size: 13px;
                 line-height: 1.2;
                 text-transform: none;
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .storyline-context {
+                width: auto;
+                max-width: 100%;
+                min-height: var(--touch-target);
+                justify-content: flex-start;
+                font-size: 13px;
+                text-align: left;
             }
 
             .storyline-trigger-copy {
@@ -7644,19 +7593,9 @@
                 grid-template-columns: minmax(0, 1fr);
             }
 
-            .ui-side-demo-visual .bench-paper-demo,
             .bench-paper-demo {
                 display: grid;
                 grid-template-columns: minmax(0, 1fr);
-            }
-
-            .ui-side-demo-visual .bench-paper-notes,
-            .ui-side-demo-visual .bench-go-notes {
-                display: grid;
-            }
-
-            .ui-side-demo-visual .bench-paper-svg {
-                aspect-ratio: 4 / 3;
             }
 
             .single-stage.is-ui-browser.is-ui-detail .ui-back-button {
@@ -7917,7 +7856,6 @@
                 min-height: 100%;
                 overflow-x: hidden;
                 overflow-y: auto;
-                overscroll-behavior-y: contain;
             }
 
             .stage-viewport {
@@ -8340,6 +8278,17 @@
         }
 
         @media (max-width: 1199px) {
+            .storyline-trigger-label {
+                display: -webkit-box;
+                overflow: hidden;
+                line-height: 1.2;
+                overflow-wrap: anywhere;
+                text-overflow: clip;
+                white-space: normal;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+            }
+
             .storyline-trigger,
             .single-stage.is-ui-browser .storyline-trigger,
             .single-stage.is-branch-timeline .storyline-trigger,
@@ -8933,7 +8882,7 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="shared/chronology-overview.css?v=20260728">
+    <link rel="stylesheet" href="shared/chronology-overview.css?v=20260804">
 </head>
 <body>
     <div class="stage-viewport">
@@ -8959,6 +8908,9 @@
                             <path d="m6 9 6 6 6-6"></path>
                         </svg>
                     </button>
+                    <div class="storyline-context" id="storylineContext" aria-live="polite">
+                        <span class="storyline-context-label" id="storylineContextLabel"></span>
+                    </div>
                     <button class="about-trigger" id="aboutTrigger" type="button" aria-haspopup="dialog" aria-controls="aboutModal">ABOUT</button>
                     <div class="mode-chip">
                         <span class="mode-chip-label" data-i18n="aiHistoryMode">人工智能历史</span>
@@ -9208,14 +9160,16 @@
 
     <script>
         function _loadDefaultMilestones() {
-            document.write('<script src="milestones-data-default.js?v=20260613-gaming-ai-images"><\/script>');
+            document.write('<script src="milestones-data-default.js?v=20260803-storyline-metadata"><\/script>');
         }
     </script>
     <script src="shared/i18n.js"></script>
     <script src="shared/storyline-routing.js"></script>
-    <script src="shared/chronology-overview.js?v=20260728b"></script>
-    <script src="shared/gaming-media-selection.js"></script>
-    <script src="milestones-data.js?v=20260613-gaming-ai-images" onerror="_loadDefaultMilestones()"></script>
+    <script src="shared/thumbnail-manifest.js"></script>
+    <script src="shared/image-loading.js"></script>
+    <script src="shared/chronology-overview.js?v=20260804-storyline-scroll"></script>
+    <script src="shared/event-media-selection.js"></script>
+    <script src="milestones-data.js?v=20260803-storyline-metadata" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
     <script src="shared/umami-config.js"></script>
@@ -9246,6 +9200,8 @@
         const TABLET_GLOBE_PIXEL_RATIO_CAP = 1.75;
         const UNIFIED_STORYLINE_ID = 'unified-ai-history';
         const DEEP_STORYLINE_ID = StorylineRouting.DEEP_STORYLINE_ID;
+        const ANNUAL_AI100_STORYLINE_ID = 'bench-council-ai100-2022-2023';
+        const STANDALONE_AI100_STORYLINE_IDS = new Set([ANNUAL_AI100_STORYLINE_ID]);
         const DEFAULT_STORYLINE_ID = UNIFIED_STORYLINE_ID;
         const CHRONOLOGY_FILTER_PARAM = 'storylineFilter';
         const AI_HISTORY_MAP_VARIANT_PRIORITY = [
@@ -9254,6 +9210,15 @@
             'gaming-ai',
             'humanistic-cycle'
         ];
+        const CHRONOLOGY_FILTER_STORYLINE_IDS = new Set([
+            ...AI_HISTORY_MAP_VARIANT_PRIORITY,
+            ...STANDALONE_AI100_STORYLINE_IDS
+        ]);
+        const UNIFIED_STORYLINE_EXCLUSIONS = new Set(STANDALONE_AI100_STORYLINE_IDS);
+        const ACHIEVEMENT_STORYLINE_IDS = new Set([
+            'bench-council-ai100',
+            ...STANDALONE_AI100_STORYLINE_IDS
+        ]);
         const analytics = window.AIHistoryAnalytics || null;
         if (analytics) {
             analytics.setContext({
@@ -9272,59 +9237,46 @@
                     zh: 'AI 历史地图'
                 },
                 note: {
-                    en: 'Canonical AI history map combining all storylines without duplicate events',
-                    zh: '汇总全部故事线的 AI 历史地图，相同事件仅展示一次'
+                    en: 'Canonical AI history map combining the long-term storylines without duplicate events',
+                    zh: '汇总长期故事线的 AI 历史地图，相同事件仅展示一次'
                 }
             },
             {
                 id: 'bench-council-ai100',
+                layout: 'ui-browser'
+            },
+            {
+                id: ANNUAL_AI100_STORYLINE_ID,
                 layout: 'ui-browser',
                 label: {
-                    en: 'AI Top 100 Achievements (BenchCouncil)',
-                    zh: 'AI 百大成就（BenchCouncil）'
+                    en: 'AI100 Annual Highlights (2022-2023)',
+                    zh: 'AI100 年度精选（2022-2023）'
                 },
                 note: {
-                    en: 'Canonical storyline matching the BenchCouncil AI achievements table',
-                    zh: '严格对应 BenchCouncil AI 成果表的权威故事线'
+                    en: 'Ten selected turning points from each year, including Claude in the 2023 selection',
+                    zh: '每年精选 10 个技术转折点，2023 年精选包含 Claude'
                 }
             },
             {
                 id: 'gaming-ai',
-                layout: 'ui-browser',
-                label: {
-                    en: 'AI in Board & Tabletop Games',
-                    zh: 'AI 在棋牌与博弈论的演进'
-                },
-                note: {
-                    en: '1951-2019, from board search and evaluation to self-play and learned planning',
-                    zh: '1951 至 2019 年，从棋盘搜索与评估到自我对弈和学习型规划'
-                }
+                layout: 'ui-browser'
             },
             {
                 id: 'humanistic-cycle',
-                layout: 'ui-browser',
-                label: {
-                    en: 'Humanistic & Emotional Cycles of AI',
-                    zh: 'AI 的人文与情绪周期'
-                },
-                note: {
-                    en: 'Sci-fi prophecy, hype and AI winters as a cultural counterpoint to technical milestones',
-                    zh: '以科幻预言、技术狂热与 AI 寒冬，对照技术里程碑背后的人类想象'
-                }
+                layout: 'ui-browser'
             },
             {
                 id: DEEP_STORYLINE_ID,
-                layout: 'ui-browser',
-                label: {
-                    en: 'AI History (Deep Learning)',
-                    zh: 'AI 历史（深度学习）'
-                },
-                note: {
-                    en: '1956-now, centered on deep learning milestones',
-                    zh: '1956 至今，聚焦深度学习里程碑'
-                }
+                layout: 'ui-browser'
             }
         ];
+        const archiveStorylineDefinitions = typeof archiveStorylines !== 'undefined' && Array.isArray(archiveStorylines)
+            ? archiveStorylines
+            : [];
+        const archiveStorylineById = new Map(archiveStorylineDefinitions.map((storyline) => [
+            StorylineRouting.normalizeStorylineId(storyline && storyline.id),
+            storyline
+        ]));
         const allMilestones = typeof milestones !== 'undefined' && Array.isArray(milestones) ? milestones : [];
         const getMilestoneStorylineId = (milestone) => StorylineRouting.getMilestoneStorylineId(milestone, DEEP_STORYLINE_ID);
         const getStorylineMilestones = (storylineId) => (storylineId === UNIFIED_STORYLINE_ID
@@ -9363,7 +9315,10 @@
 
         function buildUnifiedMilestones() {
             if (unifiedMilestoneCache) return unifiedMilestoneCache;
-            unifiedMilestoneCache = window.ChronologyOverview.buildCanonicalMilestones(allMilestones, {
+            const unifiedSourceMilestones = allMilestones.filter(
+                (milestone) => !UNIFIED_STORYLINE_EXCLUSIONS.has(getMilestoneStorylineId(milestone))
+            );
+            unifiedMilestoneCache = window.ChronologyOverview.buildCanonicalMilestones(unifiedSourceMilestones, {
                 storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY,
                 localize: lx
             });
@@ -9400,7 +9355,7 @@
         function getChronologyFilterStorylineId(storylineId) {
             const normalizedStorylineId = StorylineRouting.normalizeStorylineId(storylineId);
             if (normalizedStorylineId === DEEP_STORYLINE_ID) return 'deep-learning';
-            if (AI_HISTORY_MAP_VARIANT_PRIORITY.includes(normalizedStorylineId)) return normalizedStorylineId;
+            if (CHRONOLOGY_FILTER_STORYLINE_IDS.has(normalizedStorylineId)) return normalizedStorylineId;
             return 'all';
         }
 
@@ -9424,10 +9379,19 @@
         }
 
         function getChronologyVisibleMilestones() {
+            if (STANDALONE_AI100_STORYLINE_IDS.has(chronologyFilterStorylineId)) {
+                return getStorylineMilestones(chronologyFilterStorylineId);
+            }
             return window.ChronologyOverview.selectMilestonesByStoryline(
                 buildUnifiedMilestones(),
                 chronologyFilterStorylineId
             );
+        }
+
+        function getChronologyOverviewMilestones() {
+            return STANDALONE_AI100_STORYLINE_IDS.has(chronologyFilterStorylineId)
+                ? getStorylineMilestones(chronologyFilterStorylineId)
+                : buildUnifiedMilestones();
         }
 
         function isHumanisticMilestone(milestone) {
@@ -9518,7 +9482,6 @@
         let completionQuizViewStartedAt = 0;
         let activeNarrationUtterance = null;
         const vmCache = new Map();
-        const imagePreloadCache = new Map();
         const completedQuizMilestoneKeys = new Set();
 
         let globeScene;
@@ -9586,6 +9549,8 @@
             storylineTrigger: document.getElementById('storylineTrigger'),
             storylineTriggerLabel: document.getElementById('storylineTriggerLabel'),
             storylineTriggerStatus: document.getElementById('storylineTriggerStatus'),
+            storylineContext: document.getElementById('storylineContext'),
+            storylineContextLabel: document.getElementById('storylineContextLabel'),
             storylineModal: document.getElementById('storylineModal'),
             storylineModalClose: document.getElementById('storylineModalClose'),
             storylineModalEyebrow: document.getElementById('storylineModalEyebrow'),
@@ -9663,12 +9628,12 @@
                 ],
                 bullets: [
                     {
-                        en: 'AI history timeline: builds an overall path from the Turing Test and the Dartmouth Workshop to deep learning and the large model era.',
-                        zh: 'AI 历史主线：按时间顺序串联图灵测试、达特茅斯会议、感知机、专家系统、深度学习和大模型时代，帮助观众建立整体脉络。'
+                        en: 'The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI traces the path from the perceptron and AI winters to deep learning, foundation models, and scientific intelligence.',
+                        zh: '连接主义的兴衰与复兴：AI七十年：从感知机与 AI 寒冬，到深度学习、基础模型和科学智能，帮助观众理解连接主义七十年的技术演进。'
                     },
                     {
                         en: 'Top AI achievements: organizes important algorithms, systems, papers, and applications, with maps, images, sources, and concise interpretation.',
-                        zh: 'AI 百大成就：整理重要算法、系统、论文和应用案例，并为每个成就补充地图位置、图片、资料来源和解释文本。'
+                        zh: 'AI 顶尖成就：整理重要算法、系统、论文和应用案例，并为每个成就补充地图位置、图片、资料来源和解释文本。'
                     },
                     {
                         en: 'Thematic storylines: expands into focused topics such as AI for Science, AI in games, AI and education, and AI, society, and ethics.',
@@ -9900,7 +9865,13 @@
             'France',
             'Japan',
             'Finland',
-            'Switzerland'
+            'Switzerland',
+            'Australia',
+            'Belgium',
+            'Denmark',
+            'Israel',
+            'Singapore',
+            'South Korea'
         ];
 
         const ACHIEVEMENT_REGION_LABELS = {
@@ -9914,7 +9885,13 @@
             France: '法国',
             Japan: '日本',
             Finland: '芬兰',
-            Switzerland: '瑞士'
+            Switzerland: '瑞士',
+            Australia: '澳大利亚',
+            Belgium: '比利时',
+            Denmark: '丹麦',
+            Israel: '以色列',
+            Singapore: '新加坡',
+            'South Korea': '韩国'
         };
 
         function uiText(en, zh) {
@@ -9956,7 +9933,7 @@
 
         function getVisibleStorylineMilestones(storylineId) {
             const source = getStorylineMilestones(storylineId);
-            if (!activeRegionFilter || storylineId !== 'bench-council-ai100') return source;
+            if (!activeRegionFilter || !ACHIEVEMENT_STORYLINE_IDS.has(storylineId)) return source;
             return source.filter((milestone) => getMilestoneRegions(milestone).includes(activeRegionFilter));
         }
 
@@ -9993,16 +9970,18 @@
         }
 
         function getStorylineLabel(option) {
-            return String(lx(option && option.label) || (option && option.id) || '').trim();
+            const definition = option ? archiveStorylineById.get(option.id) : null;
+            return String(lx((definition && definition.title) || (option && option.label)) || (option && option.id) || '').trim();
         }
 
         function getStorylineNote(option) {
-            return String(lx(option && option.note) || '').trim();
+            const definition = option ? archiveStorylineById.get(option.id) : null;
+            return String(lx((definition && definition.subtitle) || (option && option.note)) || '').trim();
         }
 
         function getStorylineStatus(option, count) {
             if (count <= 0) return uiText('planned', '规划中');
-            if (option && option.id === 'bench-council-ai100') {
+            if (option && ACHIEVEMENT_STORYLINE_IDS.has(option.id)) {
                 return uiText(`${count} achievements`, `${count} 个成果`);
             }
             return uiText(`${count} events`, `${count} 个事件`);
@@ -10149,12 +10128,17 @@
             const activeOption = getStorylineOption(selectedStorylineId);
             const activeCount = activeOption ? getStorylineMilestones(activeOption.id).length : 0;
             const activeStatus = getStorylineStatus(activeOption, activeCount);
+            const activeLabel = activeOption ? getStorylineLabel(activeOption) : tx('storylineSelector');
             if (refs.storylineTrigger) {
-                const activeLabel = activeOption ? getStorylineLabel(activeOption) : tx('storylineSelector');
                 refs.storylineTrigger.setAttribute('aria-label', `${tx('storylineSelector')}: ${activeLabel} (${activeStatus})`);
                 refs.storylineTrigger.title = activeLabel;
                 if (refs.storylineTriggerLabel) refs.storylineTriggerLabel.textContent = activeLabel;
                 if (refs.storylineTriggerStatus) refs.storylineTriggerStatus.textContent = `(${activeStatus})`;
+            }
+            if (refs.storylineContext) {
+                refs.storylineContext.setAttribute('aria-label', activeLabel);
+                refs.storylineContext.title = activeLabel;
+                if (refs.storylineContextLabel) refs.storylineContextLabel.textContent = activeLabel;
             }
 
             if (refs.uiBackButton) {
@@ -10546,25 +10530,28 @@
             return analytics.track(eventName, eventData);
         }
 
-        function preloadImage(url) {
-            if (!url || imagePreloadCache.has(url)) return;
-            const image = new Image();
-            image.decoding = 'async';
-            image.loading = 'eager';
-            image.src = url;
-            imagePreloadCache.set(url, image);
+        function getImageLoader() {
+            return window.AIHistoryImageLoading || null;
         }
 
-        function preloadMilestoneAssets(index) {
-            if (index < 0 || index >= milestoneList.length) return;
-            const vm = getVm(index);
-            getPhotosForDisplay(vm.photos).slice(0, 20).forEach(preloadImage);
+        function getPreviewImageUrl(url) {
+            const loader = getImageLoader();
+            return loader && typeof loader.getPreviewUrl === 'function' ? loader.getPreviewUrl(url) : url;
         }
 
-        function preloadAdjacentAssets(index) {
-            preloadMilestoneAssets(index);
-            preloadMilestoneAssets(index - 1);
-            preloadMilestoneAssets(index + 1);
+        function buildPreviewImageAttributes(url, alt) {
+            const fullSrc = String(url || '').trim();
+            const previewSrc = getPreviewImageUrl(fullSrc);
+            const fullAttrs = fullSrc && previewSrc !== fullSrc
+                ? ` data-full-src="${escapeHtml(fullSrc)}" data-preview-src="${escapeHtml(previewSrc)}"`
+                : '';
+            return `src="${escapeHtml(previewSrc)}"${fullAttrs} alt="${escapeHtml(alt || '')}" decoding="async" loading="lazy"`;
+        }
+
+        function hydratePreviewImages(root) {
+            const loader = getImageLoader();
+            if (!root || !loader || typeof loader.attachPreviewFallback !== 'function') return;
+            root.querySelectorAll('img[data-full-src]').forEach((image) => loader.attachPreviewFallback(image));
         }
 
         function buildContextYears(year, beforeCount, afterCount) {
@@ -10623,13 +10610,14 @@
             const raw = String(name || '').trim();
             if (!raw) return 'AI';
             const localizedName = raw.replace(/\s+/g, ' ');
-            const dividerMatch = localizedName.match(/^([^·・.．。]+)/);
-            const firstPart = String(dividerMatch && dividerMatch[1] ? dividerMatch[1] : localizedName).trim();
-            if (/[\u3400-\u9fff]/.test(localizedName)) {
-                return firstPart || localizedName;
+            const avatarName = localizedName.replace(/\s*[（(][^()（）]*[)）]\s*$/, '').trim() || localizedName;
+            const dividerMatch = avatarName.match(/^([^·・.．。]+)/);
+            const firstPart = String(dividerMatch && dividerMatch[1] ? dividerMatch[1] : avatarName).trim();
+            if (/[\u3400-\u9fff]/.test(avatarName)) {
+                return firstPart || avatarName;
             }
             const words = firstPart.split(/\s+/).filter(Boolean);
-            return String(words[0] || firstPart || localizedName).toUpperCase();
+            return String(words[0] || firstPart || avatarName).toUpperCase();
         }
 
         function getFigureAvatarSource(figure) {
@@ -10646,7 +10634,7 @@
         function buildFigureAvatar(figure, avatarSource) {
             if (avatarSource && avatarSource.src) {
                 const styleAttr = avatarSource.style ? ` style="${avatarSource.style}"` : '';
-                return `<img src="${avatarSource.src}" alt="${escapeHtml(figure.name || tx('keyFigure'))}"${styleAttr}>`;
+                return `<img ${buildPreviewImageAttributes(avatarSource.src, figure.name || tx('keyFigure'))}${styleAttr}>`;
             }
             const fallbackLabel = initials(figure.name);
             return `<span class="figure-avatar-fallback">${escapeHtml(fallbackLabel)}</span>`;
@@ -10654,19 +10642,6 @@
 
         function isPortraitLikePhoto(url) {
             return /\/people\/|portrait|headshot|avatar|人物|人像/i.test(String(url || ''));
-        }
-
-        function isPortraitLikeMedia(vm, url) {
-            const value = String(url || '');
-            if (!value) return false;
-            if (isPortraitLikePhoto(value)) return true;
-            const meta = getConfiguredImageMeta(vm, value);
-            const metaText = [
-                meta && meta.caption,
-                meta && meta.subcaption,
-                meta && meta.usage
-            ].filter(Boolean).join(' ');
-            return /portrait|person|figure photo|researcher photo|historical figure|人物|人像|肖像/i.test(metaText);
         }
 
         function isDocumentLikePhoto(url) {
@@ -10720,14 +10695,6 @@
             const usage = String(lx(entry.usage || entry.recommendedUse || '')).trim();
             if (!caption && !subcaption && !source && !license && !usage) return null;
             return { caption, subcaption, source, license, usage };
-        }
-
-        function isExplainerMedia(vm, url) {
-            const value = String(url || '').trim();
-            if (!value) return false;
-            const meta = getConfiguredImageMetaEntry(vm, value) || {};
-            const role = String(meta.role || '').trim();
-            return /(?:architecture|algorithm)-explainer/i.test(role) || /\/explainers\//i.test(value);
         }
 
         function buildArchivePhotoMeta(vm, url) {
@@ -10858,7 +10825,7 @@
             return `
                 <div class="bench-photo-frame bench-visual-card has-image">
                     <div class="bench-image-stage${isDiagram ? ' is-diagram' : ''}">
-                        <img src="${escapeHtml(item.url)}" alt="${escapeHtml(title)}">
+                        <img src="${escapeHtml(item.url)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async">
                     </div>
                     <div class="bench-hero-caption">
                         <span>${escapeHtml(title)}</span>
@@ -10892,7 +10859,7 @@
                 <div class="bench-photo-frame bench-visual-card has-video">
                     <div class="bench-video-stage">
                         <video src="${escapeHtml(item.url)}"${poster} muted loop playsinline preload="metadata" aria-label="${escapeHtml(title)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"></video>
-                        ${item.poster ? `<img src="${escapeHtml(item.poster)}" alt="${escapeHtml(title)}" hidden>` : ''}
+                        ${item.poster ? `<img src="${escapeHtml(item.poster)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" hidden>` : ''}
                         <span class="bench-video-badge">${escapeHtml(uiText('MP4', 'MP4'))}</span>
                     </div>
                     <div class="bench-hero-caption">
@@ -11537,7 +11504,7 @@
             const photoClass = isPortraitLikePhoto(image) ? ' is-photo' : '';
             return `
                 <figure class="branch-event-visual has-image${photoClass}">
-                    <img src="${escapeHtml(image)}" alt="${escapeHtml(meta.name || vm.title || tx('archiveImage'))}">
+                    <img ${buildPreviewImageAttributes(image, meta.name || vm.title || tx('archiveImage'))}>
                     ${recordTrigger}
                 </figure>
             `;
@@ -12029,7 +11996,7 @@
                 <button class="close-viewer" type="button" aria-label="${escapeHtml(tx('close'))}">×</button>
                 <div class="game-evolution-panel">
                     ${shouldUseVideo ? `<video class="game-evolution-player" src="${escapeHtml(videoUrl)}" controls autoplay muted loop playsinline preload="metadata"></video>` : ''}
-                    ${fallbackImageUrl ? `<img class="game-evolution-fallback" src="${escapeHtml(fallbackImageUrl)}" alt="${escapeHtml(title)}"${shouldUseVideo ? ' hidden' : ''}>` : ''}
+                    ${fallbackImageUrl ? `<img class="game-evolution-fallback" src="${escapeHtml(fallbackImageUrl)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async"${shouldUseVideo ? ' hidden' : ''}>` : ''}
                     <div class="game-evolution-meta">
                         <strong>${escapeHtml(title)}</strong>
                         <span>${escapeHtml(sourceLine)}</span>
@@ -12203,6 +12170,7 @@
                     ${cards || `<div class="empty-state">${escapeHtml(tx('noMilestones'))}</div>`}
                 </section>
             `;
+            hydratePreviewImages(refs.branchTimelinePage);
             bindBranchTimelineInteractions();
         }
 
@@ -13179,21 +13147,26 @@
                     role: buildLocationLine(vm.location) || tx('keyHistoricalFigure')
                 }];
             refs.figureRow.className = `figure-row count-${Math.min(UI_DETAIL_FIGURE_LIMIT, figures.length)}`;
-            refs.figureRow.innerHTML = figures.map((figure) => `
+            refs.figureRow.innerHTML = figures.map((figure) => {
+                const avatarClass = figure.figureType === 'product' ? ' is-product' : '';
+                return `
                 <article class="figure-chip">
-                    <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure))}</div>
+                    <div class="figure-avatar${avatarClass}">${buildFigureAvatar(figure, getFigureAvatarSource(figure))}</div>
                     <div class="figure-meta">
                         <div class="figure-name">${escapeHtmlWithCjkTail(figure.name || tx('keyFigure'))}</div>
                         <div class="figure-role">${escapeHtmlWithCjkTail(figure.role || tx('keyParticipant'))}</div>
                     </div>
                 </article>
-            `).join('');
+            `;
+            }).join('');
+            hydratePreviewImages(refs.figureRow);
         }
 
         function setImage(imgEl, src, alt) {
             const nextSrc = src || '';
             if (imgEl.getAttribute('src') !== nextSrc) {
                 imgEl.decoding = 'async';
+                imgEl.loading = 'eager';
                 imgEl.src = nextSrc;
             }
             imgEl.alt = alt || '';
@@ -13227,8 +13200,8 @@
             const activeMeta = buildArchivePhotoMeta(vm, focusUrl);
             const nextMeta = buildArchivePhotoMeta(vm, nextUrl);
 
-            refs.archiveThumbPrev.innerHTML = prevUrl ? `<img src="${prevUrl}" alt="${tx('previousArchive')}">` : '';
-            refs.archiveThumbNext.innerHTML = nextUrl ? `<img src="${nextUrl}" alt="${tx('nextArchive')}">` : '';
+            refs.archiveThumbPrev.innerHTML = prevUrl ? `<img src="${escapeHtml(prevUrl)}" alt="${escapeHtml(tx('previousArchive'))}" loading="lazy" decoding="async">` : '';
+            refs.archiveThumbNext.innerHTML = nextUrl ? `<img src="${escapeHtml(nextUrl)}" alt="${escapeHtml(tx('nextArchive'))}" loading="lazy" decoding="async">` : '';
             refs.archiveThumbPrev.classList.toggle('is-empty', !prevUrl);
             refs.archiveThumbNext.classList.toggle('is-empty', !nextUrl);
             refs.archiveThumbPrev.disabled = !hasPhotos || safePhotos.length <= 1 || !prevUrl;
@@ -13543,7 +13516,7 @@
                             ${description ? `<div class="quiz-material-description">${escapeHtml(description)}</div>` : ''}
                         </div>
                         <div class="quiz-material-image">
-                            <img src="${escapeHtml(item.url)}" alt="${escapeHtml(title)}">
+                        <img src="${escapeHtml(item.url)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async">
                         </div>
                     </article>
                 `;
@@ -14064,7 +14037,7 @@
                 ? mediaMeta.caption
                 : (fallbackTitle || getAchievementField(rawMilestone, 'artifact', tx('archiveImage')));
             const imageHtml = mediaUrl
-                ? `<img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || tx('archiveImage'))}">`
+                ? `<img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || tx('archiveImage'))}" loading="lazy" decoding="async">`
                 : `<div class="bench-code-label">${escapeHtml(mediaTitle || tx('archiveImage'))}</div>`;
             return buildPaperDemo(`
                 <div class="bench-paper-svg bench-paper-image-demo">
@@ -14093,7 +14066,7 @@
             return buildPaperDemo(`
                 <div class="bench-game-video-demo">
                     <video src="${escapeHtml(module.url)}"${posterAttr} controls muted loop playsinline preload="metadata" aria-label="${escapeHtml(title)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"></video>
-                    ${poster ? `<img class="bench-game-video-fallback" src="${escapeHtml(poster)}" alt="${escapeHtml(title)}" hidden>` : ''}
+                    ${poster ? `<img class="bench-game-video-fallback" src="${escapeHtml(poster)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" hidden>` : ''}
                 </div>
             `, [
                 [uiText('SGF cue', 'SGF 线索'), sourceLine],
@@ -15151,7 +15124,7 @@
             const mediaTitle = mediaMeta && mediaMeta.caption ? mediaMeta.caption : artifact;
             const mediaHtml = mediaUrl ? `
                 <div class="bench-code-media">
-                    <img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || artifact || tx('archiveImage'))}">
+                    <img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || artifact || tx('archiveImage'))}" loading="lazy" decoding="async">
                 </div>
                 ${mediaTitle ? `<div class="bench-code-media-caption">${escapeHtml(mediaTitle)}</div>` : ''}
             ` : '';
@@ -15441,15 +15414,12 @@
         }
 
         function getUiImageCandidates(vm) {
-            const visualImages = buildBenchVisualItems(vm)
-                .filter((item) => item && item.type === 'image' && item.url)
-                .map((item) => item.url);
             const photos = getPhotosForDisplay(vm.photos);
             const configuredDemoImage = isGamingMilestone(vm && vm.raw)
                 ? String(vm.raw && vm.raw.achievement && vm.raw.achievement.demoImage || '').trim()
                 : '';
             const seen = new Set();
-            return [...visualImages, ...photos, configuredDemoImage].map((url) => String(url || '').trim()).filter((url) => {
+            return [...photos, configuredDemoImage].map((url) => String(url || '').trim()).filter((url) => {
                 if (!url || seen.has(url)) return false;
                 seen.add(url);
                 return true;
@@ -15459,12 +15429,7 @@
         function getUiDetailImages(vm) {
             const candidates = getUiImageCandidates(vm);
             const sideImageUrl = getUiMediaVisualImage(vm, candidates);
-            // The homepage/default image is always the first detail image unless an
-            // explicit overview override is configured. A side-panel visual may
-            // reuse that image, but must never remove it from the detail carousel.
-            const sideImageIndex = sideImageUrl ? candidates.indexOf(sideImageUrl) : -1;
-            if (sideImageIndex <= 0) return candidates;
-            return window.GamingMediaSelection.excludeSelectedMedia(candidates, sideImageUrl);
+            return window.EventMediaSelection.excludeSelectedMedia(candidates, sideImageUrl);
         }
 
         function getUiPrimaryImageMeta(vm, imageUrl) {
@@ -15483,32 +15448,13 @@
             return /\/explainers\/|\/architecture\/|diagram|flow|pipeline|svg/i.test(value);
         }
 
-        const UI_MEDIA_VISUAL_OVERRIDES = {
-            'milestone-1990-otter': 'resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg'
-        };
         const UI_DETAIL_IMAGE_AUTOPLAY_MS = 3 * 1000;
 
-        function findHumanisticExplainerImage(vm, images) {
-            if (!isHumanisticMilestone(vm && vm.raw)) return '';
-            return images.find((url) => isExplainerMedia(vm, url)) || '';
-        }
-
         function getUiMediaVisualImage(vm, images = getUiImageCandidates(vm)) {
-            const eventId = vm && (vm.id || (vm.raw && vm.raw.id)) || '';
-            const overrideUrl = UI_MEDIA_VISUAL_OVERRIDES[eventId];
-            if (overrideUrl && images.includes(overrideUrl)) return overrideUrl;
-            const humanisticExplainer = findHumanisticExplainerImage(vm, images);
-            if (humanisticExplainer) return humanisticExplainer;
-            if (isGamingMilestone(vm && vm.raw)) {
-                const gameplayImage = window.GamingMediaSelection.findGameplayMedia(images, (url) => {
-                    const meta = getConfiguredImageMetaEntry(vm, url) || {};
-                    return meta.role;
-                });
-                if (gameplayImage) return gameplayImage;
-            }
-            const diagram = images.find((url) => isDiagramImage(url));
-            if (diagram) return diagram;
-            return images.find((url) => !isPortraitLikeMedia(vm, url)) || '';
+            return window.EventMediaSelection.findCommentaryMedia(images, (url) => {
+                const meta = getConfiguredImageMetaEntry(vm, url) || {};
+                return meta.role;
+            });
         }
 
         function renderUiDetailFromSelection(options = {}) {
@@ -15531,9 +15477,10 @@
         function buildUiAvatarHtml(vm, figures = getUiDetailFigures(vm)) {
             return figures.map((figure) => {
                 const avatar = buildFigureAvatar(figure, getFigureAvatarSource(figure));
+                const avatarClass = figure.figureType === 'product' ? ' is-product' : '';
                 return `
                     <div class="ui-avatar">
-                        <div class="ui-avatar-face">${avatar}</div>
+                        <div class="ui-avatar-face${avatarClass}">${avatar}</div>
                         <div>
                             <span class="ui-avatar-name">${escapeHtmlWithCjkTail(figure.name || tx('keyFigure'))}</span>
                             ${figure.role ? `<span class="ui-avatar-role">${escapeHtmlWithCjkTail(figure.role)}</span>` : ''}
@@ -15686,103 +15633,11 @@
             `;
         }
 
-        function getUiFallbackConceptSections(raw) {
-            return getAchievementKeyConcepts(raw);
-        }
-
-        const UI_GAME_EVOLUTION_PLACEHOLDER_PATTERN = /(?:^|\/)sample-go-game\.gif(?:[?#]|$)/i;
-
-        function getUiGameEvolutionModule(raw) {
-            const module = getAchievementGameEvolutionModule(raw);
-            if (!module) return null;
-            if (UI_GAME_EVOLUTION_PLACEHOLDER_PATTERN.test(module.url)) {
-                return null;
-            }
-            return module;
-        }
-
-        function buildUiGameEvolutionHtml(vm, module) {
-            const title = module.title || vm.title || uiText('Game evolution clip', '棋局演化短片');
-            const description = module.description || uiText(
-                'Replay the curated game-state sequence.',
-                '重放策展棋局状态序列。'
-            );
-            const posterUrl = module.poster || getUiMediaVisualImage(vm);
-            const posterHtml = posterUrl
-                ? `<img class="ui-media-video-poster" src="${escapeHtml(posterUrl)}" alt="${escapeHtml(title)}">`
-                : '';
-            return `
-                <button class="ui-media-video" type="button" data-ui-game-evolution="true" aria-label="${escapeHtml(title)}">
-                    ${posterHtml}
-                    <span class="ui-media-video-play">${escapeHtml(uiText('Replay', '重放'))}</span>
-                    <span class="ui-media-video-quote">${escapeHtml(description)}</span>
-                    <span class="ui-media-video-time">
-                        <span>${escapeHtml(uiText('Game record', '棋谱'))}</span>
-                        <span>${escapeHtml(module.duration || uiText('Interactive', '可交互'))}</span>
-                    </span>
-                </button>
-            `;
-        }
-
-        function buildUiDemoVisualHtml(raw, demoVisualHtml) {
-            if (!stripHtml(demoVisualHtml)) return '';
-            const caption = getAchievementField(
-                raw,
-                'demo',
-                getAchievementField(raw, 'artifact', tx('archiveImage'))
-            );
-            return `
-                <div class="ui-side-demo-visual">
-                    ${demoVisualHtml}
-                    <div class="ui-side-visual-caption">${escapeHtml(caption)}</div>
-                </div>
-            `;
-        }
-
-        function buildUiMediaHtml(vm, { forceStaticImage = false } = {}) {
-            const raw = vm.raw || {};
-            const gameEvolutionModule = getUiGameEvolutionModule(raw);
-            if (gameEvolutionModule && !forceStaticImage) {
-                return buildUiGameEvolutionHtml(vm, gameEvolutionModule);
-            }
-
-            if (vm.videoEmbedUrl && !forceStaticImage) {
-                const posterUrl = getUiMediaVisualImage(vm);
-                const posterMeta = posterUrl ? buildArchivePhotoMeta(vm, posterUrl) : null;
-                const posterHtml = posterUrl
-                    ? `<img class="ui-media-video-poster" src="${escapeHtml(posterUrl)}" alt="${escapeHtml(posterMeta && posterMeta.name || tx('archiveImage'))}">`
-                    : '';
-                return `
-                    <button class="ui-media-video" type="button" data-ui-media-video="${escapeHtml(vm.videoEmbedUrl)}" aria-label="${escapeHtml(tx('playVideo'))}">
-                        ${posterHtml}
-                        <span class="ui-media-video-play">PLAY</span>
-                        <span class="ui-media-video-quote">${escapeHtml(extractVideoQuote(vm))}</span>
-                        <span class="ui-media-video-time">
-                            <span>SP</span>
-                            <span>00:00:${String((currentIndex % 57) + 3).padStart(2, '0')}</span>
-                        </span>
-                    </button>
-                `;
-            }
-
+        function buildUiMediaHtml(vm) {
             const imageUrl = getUiMediaVisualImage(vm);
-            if (imageUrl) {
-                const meta = buildArchivePhotoMeta(vm, imageUrl);
-                return `<div class="ui-side-visual"><div class="ui-side-visual-stage"><img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(meta.name || tx('archiveImage'))}"></div><div class="ui-side-visual-caption">${escapeHtml(meta.name || meta.role || tx('archiveImage'))}</div></div>`;
-            }
-
-            const demoVisualHtml = buildAchievementDemoVisualHtml(raw);
-            const demoMediaHtml = buildUiDemoVisualHtml(raw, demoVisualHtml);
-            if (demoMediaHtml && isGamingMilestone(raw)) return demoMediaHtml;
-
-            const fallbackConceptHtml = buildUiConceptFeatureCardsHtml(getUiFallbackConceptSections(raw));
-            if (fallbackConceptHtml) {
-                return fallbackConceptHtml;
-            }
-
-            if (demoMediaHtml) return demoMediaHtml;
-
-            return '';
+            if (!imageUrl) return '';
+            const meta = buildArchivePhotoMeta(vm, imageUrl);
+            return `<div class="ui-side-visual"><div class="ui-side-visual-stage"><img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(meta.name || tx('archiveImage'))}" loading="lazy" decoding="async"></div><div class="ui-side-visual-caption">${escapeHtml(meta.name || meta.role || tx('archiveImage'))}</div></div>`;
         }
 
         function buildUiConceptsHtml(vm) {
@@ -15848,16 +15703,11 @@
 
         function buildUiSidePanelHtml(raw, vm) {
             const quoteSection = getUiQuoteSummarySection(vm);
-            const isHumanisticCycle = isHumanisticMilestone(raw);
-            const mediaHtml = buildUiMediaHtml(vm, { forceStaticImage: isHumanisticCycle });
-            const mediaHasDedicatedVisual = mediaHtml.includes('ui-media-video')
-                || mediaHtml.includes('ui-side-visual')
-                || mediaHtml.includes('ui-side-demo-visual');
-            const mediaUsesConceptFallback = Boolean(mediaHtml && !mediaHasDedicatedVisual);
+            const mediaHtml = buildUiMediaHtml(vm);
             return [
                 buildUiSideSectionHtml('ui-info-card', uiText('Sources', '资料来源'), buildUiSourcesHtml(raw, vm)),
                 buildUiSideSectionHtml('ui-media-card', uiText('Commentary & Media', '评论与媒体'), mediaHtml),
-                mediaUsesConceptFallback ? '' : buildUiSideSectionHtml('ui-concepts-card', uiText('Key Concepts', '关键概念'), buildUiConceptsHtml(vm)),
+                buildUiSideSectionHtml('ui-concepts-card', uiText('Key Concepts', '关键概念'), buildUiConceptsHtml(vm)),
                 buildUiSideSectionHtml('ui-quote-card', uiText('Quote Summary', '引言摘要'), quoteSection ? buildUiSectionCardsHtml([quoteSection], { hiddenLabels: [tx('quoteExcerpt')] }) : ''),
                 buildUiSideSectionHtml('ui-commentary-card', uiText('Background', '背景解读'), buildUiSectionCardsHtml(getUiBackgroundSections(vm), { hiddenLabels: [tx('background')] }))
             ].join('');
@@ -15915,9 +15765,10 @@
             image.dataset.uiActiveImageIndex = expectedIndex;
             image.onload = revealImage;
             image.onerror = revealImage;
+            image.decoding = 'async';
+            image.loading = 'eager';
             image.src = imageUrl;
             expectedSrc = image.src;
-            image.alt = vm.title || tx('aiHistoryEvent');
             imageStage.classList.toggle('is-diagram', isDiagramImage(imageUrl));
             if (image.complete && image.naturalWidth) window.requestAnimationFrame(revealImage);
 
@@ -16184,7 +16035,7 @@
                 ? `
                     <div class="ui-detail-image">
                         <div class="ui-detail-image-stage${detailImageClass}">
-                            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}" data-ui-active-image-index="${uiDetailImageIndex}" draggable="false">
+                            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}" loading="eager" decoding="async" data-ui-active-image-index="${uiDetailImageIndex}" draggable="false">
                             ${buildUiDetailImageEdgeButtonsHtml(detailImages)}
                         </div>
                         <div class="ui-detail-caption">
@@ -16217,7 +16068,7 @@
                                         <div class="ui-detail-meta-inline">${escapeHtmlWithCjkTail([locationLine, getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
                                     </div>
                                 </div>
-                                <div class="ui-avatar-strip count-${detailFigureCount}">${buildUiAvatarHtml(vm, detailFigures)}</div>
+                                ${detailFigureCount ? `<div class="ui-avatar-strip count-${detailFigureCount}">${buildUiAvatarHtml(vm, detailFigures)}</div>` : ''}
                             </div>
                             ${detailImageHtml}
                         </div>
@@ -16232,6 +16083,7 @@
             `;
             updateBenchNarrationButton('idle');
             if (refs.uiNarrationButton) refs.uiNarrationButton.onclick = () => toggleBenchNarration(vm);
+            hydratePreviewImages(refs.uiBrowserMain);
             refs.uiBrowserMain.querySelectorAll('[data-ui-image-index]').forEach((button) => {
                 button.addEventListener('click', () => {
                     const nextImageIndex = Number(button.dataset.uiImageIndex);
@@ -16245,29 +16097,8 @@
                 });
             });
             bindUiEventEdgeNavigation(refs.uiBrowserMain);
-            refs.uiBrowserMain.querySelectorAll('[data-ui-media-video]').forEach((button) => {
-                button.addEventListener('click', () => {
-                    const videoUrl = button.dataset.uiMediaVideo || '';
-                    const media = isDirectVideoMedia(videoUrl)
-                        ? `<video class="ui-media-video-media" controls autoplay playsinline preload="metadata" src="${escapeHtml(videoUrl)}"></video>`
-                        : `<iframe class="ui-media-video-media" src="${escapeHtml(videoUrl)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-                    button.innerHTML = media;
-                    const player = button.querySelector('video');
-                    if (player && typeof player.play === 'function') {
-                        const playback = player.play();
-                        if (playback && typeof playback.catch === 'function') {
-                            playback.catch(() => {});
-                        }
-                    }
-                }, { once: true });
-            });
-            refs.uiBrowserMain.querySelectorAll('[data-ui-game-evolution]').forEach((button) => {
-                button.addEventListener('click', () => openGameEvolutionVideo(vm));
-            });
-            bindUiDetailImageAutoplayPause(
-                refs.uiBrowserMain.querySelector('.ui-detail-image-stage'),
-                detailImages.length
-            );
+            const uiDetailImageStage = refs.uiBrowserMain.querySelector('.ui-detail-image-stage');
+            bindUiDetailImageAutoplayPause(uiDetailImageStage, detailImages.length);
             bindUiSidePanelScrollProgress(refs.uiBrowserMain.querySelector('.ui-side-panel'));
             scheduleUiDetailLocationFit();
             scheduleAvatarFallbackFit();
@@ -16310,8 +16141,11 @@
                 });
             }
             chronologyOverview.setState({ storylineId: chronologyFilterStorylineId });
+            const preserveStandaloneOrder = STANDALONE_AI100_STORYLINE_IDS.has(chronologyFilterStorylineId);
             chronologyOverview.update({
-                milestones: buildUnifiedMilestones(),
+                milestones: getChronologyOverviewMilestones(),
+                preserveSourceOrder: preserveStandaloneOrder,
+                sequenceLabel: preserveStandaloneOrder ? '2022-2023' : '',
                 selectedEventId: uiSelectedEventId,
                 localize: lx,
                 locale: window.I18n && typeof window.I18n.getLocale === 'function'
@@ -16326,7 +16160,8 @@
                     openEvent: uiText('Open event', '打开事件'),
                     storylines: uiText('Storylines', '所属故事线'),
                     timelineLabel: uiText('Chronological AI history timeline', '人工智能历史时间轴')
-                }
+                },
+                storylines: archiveStorylineDefinitions
             });
         }
 
@@ -16371,11 +16206,23 @@
             viewer.innerHTML = `
                 <button class="close-viewer" type="button">×</button>
                 <button class="photo-prev" type="button">◀</button>
-                <img src="${photos[currentPhotoIndex]}" class="viewer-photo" alt="${tx('historicalArchive')}">
+                <div class="photo-viewer-frame">
+                    <img class="viewer-photo" alt="${escapeHtml(tx('historicalArchive'))}">
+                </div>
                 <button class="photo-next" type="button">▶</button>
                 <div class="photo-counter">${currentPhotoIndex + 1} / ${photos.length}</div>
             `;
             document.body.appendChild(viewer);
+            const viewerPhoto = viewer.querySelector('.viewer-photo');
+            const viewerCounter = viewer.querySelector('.photo-counter');
+
+            const showViewerPhoto = () => {
+                viewerPhoto.decoding = 'async';
+                viewerPhoto.loading = 'eager';
+                viewerPhoto.src = photos[currentPhotoIndex];
+                viewerCounter.textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+            };
+            showViewerPhoto();
 
             const closeViewer = () => {
                 viewer.remove();
@@ -16384,13 +16231,11 @@
             viewer.querySelector('.close-viewer').onclick = closeViewer;
             viewer.querySelector('.photo-prev').onclick = () => {
                 currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
-                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
-                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+                showViewerPhoto();
             };
             viewer.querySelector('.photo-next').onclick = () => {
                 currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
-                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
-                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+                showViewerPhoto();
             };
 
             const handleKey = (event) => {
@@ -16464,7 +16309,6 @@
                 resetInlineMedia();
                 renderBranchTimelinePage();
                 document.title = `${tx('appTitleSingle')} - ${getStorylineLabel(getActiveStorylineOption()) || vm.title}`;
-                preloadAdjacentAssets(currentIndex);
                 return;
             }
             renderHeader(vm);
@@ -16492,7 +16336,6 @@
             } else {
                 document.title = `${tx('appTitleSingle')} - ${vm.year} ${vm.title}`;
             }
-            preloadAdjacentAssets(currentIndex);
         }
 
         function isPortraitStackLayout() {
@@ -16781,7 +16624,6 @@
                 return;
             }
 
-            preloadMilestoneAssets(index);
             currentIndex = index;
             if (isUiBrowserActive() && milestoneList[index]) {
                 uiBrowserMode = 'detail';
@@ -16913,7 +16755,7 @@
         }
 
         function handlePageWheelFallback(event) {
-            if (!event || event.ctrlKey || isBranchTimelineActive()) return;
+            if (!event || event.defaultPrevented || event.ctrlKey || isBranchTimelineActive()) return;
             const deltaX = Number.isFinite(event.deltaX) ? event.deltaX : 0;
             let deltaY = Number.isFinite(event.deltaY) ? event.deltaY : 0;
             if (!deltaY || Math.abs(deltaY) <= Math.abs(deltaX)) return;

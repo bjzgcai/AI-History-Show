@@ -6,10 +6,6 @@
     "zh": "带注意力机制的神经机器翻译",
     "en": "Neural Machine Translation with Attention"
   },
-  "displaySummary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "displayDescription": {
     "zh": "<p>巴赫达瑙、赵京贤和本吉奥在 2014 年改进神经机器翻译，解决编码器必须把整句压缩进单一固定向量的瓶颈。编码器为源句各位置生成表示，解码器每产生一个目标词，就计算与这些位置的匹配分数并归一化为权重，再用加权上下文决定输出。</p><p>这种可学习的“软对齐”让模型在翻译长句时动态关注不同词语，同时使对齐关系可以被观察。它最初仍运行在循环编码器—解码器之上，并不是后来的自注意力 Transformer；但它把内容相关的选择变成可微模块，为注意力成为现代序列模型的核心计算原语铺平道路。</p>",
     "en": "<p>Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio improved neural machine translation in 2014 by removing the bottleneck that forced an encoder to compress an entire sentence into one fixed vector. The encoder produces a representation at each source position. For every target word, the decoder scores its match to those positions, normalizes the scores into weights, and uses the weighted context to produce the output.</p><p>This learned “soft alignment” lets the model attend dynamically to different words while translating long sentences and makes alignment patterns inspectable. The original method still sat on top of recurrent encoders and decoders and was not the later self-attention Transformer. It nevertheless turned content-dependent selection into a differentiable module and prepared attention to become a central computational primitive of modern sequence models.</p>"
@@ -53,9 +49,9 @@
   "assetIds": [
     "asset-2014-attention-bahdanau-portrait",
     "asset-2014-attention-alignment",
+    "asset-2014-attention-architecture-01",
     "asset-2014-attention-cho-portrait",
-    "asset-2014-attention-people-01",
-    "asset-2014-attention-architecture-01"
+    "asset-2014-attention-people-01"
   ],
   "sourceIds": [
     "source-iclr-2015-paper-page",
@@ -174,6 +170,7 @@
         "en": "Attention-related achievement contributor",
         "zh": "注意力相关成就贡献者"
       },
+      "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []

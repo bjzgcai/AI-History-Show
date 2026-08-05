@@ -1,0 +1,66 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "ESMFold is row 110 of the BenchCouncil AI100 (2022-2023) annual table in the AI4Science area.",
+      "zh": "ESMFold 是 BenchCouncil AI100（2022-2023）年度表第 110 行，所属领域为“AI for Science”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates ESMFold with “Evolutionary-scale prediction of atomic-level protein structure with a language model”.",
+      "zh": "年度表把 ESMFold 与论文《Evolutionary-scale prediction of atomic-level protein structure with a language model》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Alexander Rives”.",
+      "zh": "“主要人物”字段依次列出 林泽明、哈利勒·阿金、罗尚·拉奥、布赖恩·希、亚历山大·里夫斯；官方英文原文为“Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Alexander Rives”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-single-sequence",
+    "importance": "core",
+    "text": {
+      "en": "ESMFold predicts protein structure from a single sequence without requiring a multiple-sequence-alignment search.",
+      "zh": "ESMFold 从单条序列预测蛋白质结构，不需要执行多序列比对搜索。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-biorxiv-preprint",
+      "source-esm-repository"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-metagenomic-scale",
+    "importance": "core",
+    "text": {
+      "en": "The model’s speed enabled structure prediction across hundreds of millions of metagenomic protein sequences.",
+      "zh": "模型的速度使对数亿条宏基因组蛋白质序列进行结构预测成为可能。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-meta-esmfold"
+    ],
+    "status": "verified"
+  }
+]

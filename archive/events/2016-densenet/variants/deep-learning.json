@@ -51,9 +51,9 @@
     }
   ],
   "assetIds": [
-    "asset-2016-densenet-people-01",
+    "asset-2016-densenet-people-02",
     "asset-2016-densenet-architecture-01",
-    "asset-2016-densenet-people-02"
+    "asset-2016-densenet-people-01"
   ],
   "sourceIds": [
     "source-densely-connected-convolutional-networks",

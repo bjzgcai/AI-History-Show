@@ -37,10 +37,16 @@ function containsNonAscii(value) {
 }
 
 const catalog = readJson(CATALOG_PATH);
+const catalogEventIds = new Set(catalog.items.map((item) => item.eventId));
 const runtime = require(path.join(ROOT, 'milestones-data.js')).milestones;
 const runtimeByEventId = new Map(
     runtime
-        .filter((item) => item.storyline && item.storyline.id === 'bench-council-ai100')
+        .filter(
+            (item) =>
+                item.storyline &&
+                item.storyline.id === 'bench-council-ai100' &&
+                catalogEventIds.has(item.archiveEventId)
+        )
         .map((item) => [item.archiveEventId, item])
 );
 const failures = [];

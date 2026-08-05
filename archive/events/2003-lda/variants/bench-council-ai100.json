@@ -6,10 +6,6 @@
     "zh": "潜在狄利克雷分配",
     "en": "Latent Dirichlet Allocation"
   },
-  "displaySummary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "displayDescription": {
     "zh": "<p>潜在狄利克雷分配在 2003 年为主题模型建立了清晰的生成式概率框架。每篇文档被表示为多个主题的不同比例混合，每个主题又是词汇表上的概率分布；狄利克雷先验约束这些混合，而推断算法根据观察到的词反推隐藏主题和每个词的主题归属。</p><p>LDA 让研究者能够在没有逐篇主题标签的情况下探索大型文档集合，并成为概率图模型、变分推断和贝叶斯文本分析的经典教学案例。它采用词袋假设，忽略词序，主题也不一定自动对应人类概念，因此结果需要谨慎解释；但其“用隐藏变量解释可见文本”的方法影响深远。</p>",
     "en": "<p>Latent Dirichlet Allocation gave topic modeling a clear generative probabilistic framework in 2003. Each document is represented as a different mixture of topics, and each topic is a probability distribution over the vocabulary. Dirichlet priors shape those mixtures, while inference algorithms work backward from observed words to estimate the hidden topics and each word's topic assignment.</p><p>LDA allowed researchers to explore large document collections without assigning a topic label to every text and became a standard teaching example for probabilistic graphical models, variational inference, and Bayesian text analysis. Its bag-of-words assumption ignores word order, and inferred topics do not automatically correspond to human concepts, so interpretation requires care. The broader method of explaining visible text through latent variables remained highly influential.</p>"
@@ -137,8 +133,8 @@
     },
     {
       "name": {
-        "en": "Michael Jordan",
-        "zh": "迈克尔·乔丹"
+        "en": "Michael I. Jordan",
+        "zh": "迈克尔·I·乔丹"
       },
       "role": {
         "en": "Co-author and probabilistic ML researcher",

@@ -89,6 +89,15 @@
         "en": "CC0; the source file page marks the image for unrestricted reuse."
       }
     },
+    "selectionReview": {
+      "status": "excluded-from-variants",
+      "reasonCode": "historical-reference",
+      "reason": {
+        "zh": "卡斯帕罗夫是比赛对手而非 Deep Blue 项目贡献者；肖像仅作历史背景资料，不加入贡献者导向的图片列表。",
+        "en": "Kasparov was the match opponent rather than a Deep Blue project contributor. Keep the portrait as historical context and out of contributor-focused image lists."
+      },
+      "reviewedAt": "2026-08-02"
+    },
     "usage": [
       "variant:bench-council-ai100",
       "variant:gaming-ai"

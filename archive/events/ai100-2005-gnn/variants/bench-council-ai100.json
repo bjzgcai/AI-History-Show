@@ -6,10 +6,6 @@
     "zh": "图神经网络",
     "en": "Graph Neural Network"
   },
-  "displaySummary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "displayDescription": {
     "zh": "<p>马尔科·戈里、加布里埃莱·蒙法尔迪尼和弗兰科·斯卡塞利在 2005 年提出一种可直接处理图结构的神经模型。每个节点根据自身特征、边信息和邻居状态反复更新表示，直到整个系统达到稳定点；输出函数再从这些状态预测节点、边或整张图的属性。</p><p>这种局部信息交换后来被概括为消息传递：同一组可学习规则能在不同大小和连接方式的图上复用，适用于分子、社交网络、知识图谱和物理系统。多轮传播可能让节点表示过度相似，模型表达能力也受聚合方式限制，但 GNN 建立了关系结构的通用学习框架。</p>",
     "en": "<p>Marco Gori, Gabriele Monfardini, and Franco Scarselli proposed a neural model in 2005 that could directly process graph structures. Each node repeatedly updates its representation from its own features, edge information, and neighboring states until the system reaches a stable point. An output function then predicts properties of nodes, edges, or the entire graph from those states.</p><p>This local exchange was later generalized as message passing: the same learned rules can be reused across graphs of different sizes and connectivity, supporting molecules, social networks, knowledge graphs, and physical systems. Repeated propagation can make node representations overly similar, and expressive power depends on the aggregation rule. GNNs nevertheless established a general learning framework for relational structure.</p>"

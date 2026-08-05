@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Block-NeRF annual evidence map</title>
+  <desc id="desc">Original local explainer connecting the official work name, area, publication, citation count and country.</desc>
+  <rect width="960" height="560" fill="#0d1722"/>
+  <rect x="48" y="52" width="260" height="116" rx="8" fill="#19324b" stroke="#65a9dc" stroke-width="2"/>
+  <rect x="350" y="52" width="562" height="116" rx="8" fill="#2d2530" stroke="#d28c55" stroke-width="2"/>
+  <rect x="48" y="216" width="864" height="220" rx="8" fill="#172536" stroke="#6b8298" stroke-width="2"/>
+  <path d="M308 110 H350 M631 168 V216" stroke="#f4f7fb" stroke-width="4" fill="none"/>
+  <text x="72" y="88" fill="#8fc4eb" font-family="Arial, sans-serif" font-size="17" font-weight="700"><tspan x="72" dy="0">AREA</tspan></text>
+  <text x="72" y="127" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="28" font-weight="700"><tspan x="72" dy="0">Vision</tspan></text>
+  <text x="376" y="88" fill="#e1a06e" font-family="Arial, sans-serif" font-size="17" font-weight="700"><tspan x="376" dy="0">OFFICIAL WORK</tspan></text>
+  <text x="376" y="127" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="30" font-weight="700"><tspan x="376" dy="0">Block-NeRF</tspan></text>
+  <text x="76" y="257" fill="#8fc4eb" font-family="Arial, sans-serif" font-size="17" font-weight="700"><tspan x="76" dy="0">PUBLICATION RECORD</tspan></text>
+  <text x="76" y="302" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="28" font-weight="500"><tspan x="76" dy="0">Block-NeRF: Scalable Large Scene Neural View Synthesis</tspan></text>
+  <rect x="48" y="470" width="410" height="54" rx="8" fill="#1a3a32"/>
+  <rect x="502" y="470" width="410" height="54" rx="8" fill="#3b2e1d"/>
+  <text x="72" y="505" fill="#a7e0c2" font-family="Arial, sans-serif" font-size="21" font-weight="700"><tspan x="72" dy="0">Citation: 279</tspan></text>
+  <text x="526" y="505" fill="#f3c28d" font-family="Arial, sans-serif" font-size="21" font-weight="700"><tspan x="526" dy="0">Country: USA · #11</tspan></text>
+</svg>

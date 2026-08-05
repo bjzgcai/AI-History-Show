@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-057-claude-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "What does Constitutional AI add to assistant training?",
+      "zh": "宪法式 AI 为助手训练加入了什么？"
+    },
+    "options": [
+      {
+        "en": "Written principles for critique and revision",
+        "zh": "用于批评与修订的书面原则"
+      },
+      {
+        "en": "A physical robot arm",
+        "zh": "一只实体机器人手臂"
+      },
+      {
+        "en": "Only a larger image dataset",
+        "zh": "只有更大的图像数据集"
+      },
+      {
+        "en": "A rule to ignore all feedback",
+        "zh": "忽略所有反馈的规则"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Anthropic’s method uses a written constitution to guide self-critique, revision and AI-generated preference feedback.",
+      "zh": "Anthropic 的方法使用书面宪法指导自我批评、修订与 AI 生成的偏好反馈。"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "assetIds": [
+      "asset-annual-057-claude-record"
+    ]
+  }
+]

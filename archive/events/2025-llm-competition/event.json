@@ -6,10 +6,6 @@
     "zh": "大语言模型百花齐放",
     "en": "A Flourishing Competition Among Large Language Models"
   },
-  "summary": {
-    "zh": "大模型与科学智能",
-    "en": "Large Models and Scientific Intelligence"
-  },
   "description": {
     "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。",
     "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency."
@@ -71,8 +67,8 @@
         "en": "Lianmin Zheng"
       },
       "role": {
-        "zh": "Chatbot Arena / LMArena 共同创建者",
-        "en": "Co-creator of Chatbot Arena / LMArena"
+        "zh": "Chatbot Arena / LMArena 共同创建者（背景人物）",
+        "en": "Context figure and co-creator of Chatbot Arena / LMArena"
       },
       "avatar": "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
       "figureType": "person",

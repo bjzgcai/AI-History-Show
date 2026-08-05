@@ -95,9 +95,9 @@
     }
   ],
   "assetIds": [
+    "asset-2014-attention-bahdanau-portrait",
     "asset-2014-attention-alignment",
     "asset-2014-attention-architecture-01",
-    "asset-2014-attention-bahdanau-portrait",
     "asset-2014-attention-cho-portrait",
     "asset-2014-attention-people-01"
   ],
@@ -394,5 +394,5 @@
       -73.6139
     ]
   },
-  "overviewImageAssetId": "asset-2014-attention-alignment"
+  "overviewImageAssetId": "asset-2014-attention-bahdanau-portrait"
 }

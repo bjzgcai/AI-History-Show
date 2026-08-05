@@ -1,0 +1,157 @@
+[
+  {
+    "id": "asset-annual-117-saycan-record",
+    "type": "svg",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-117-saycan_record.svg",
+    "role": "annual-achievement-explainer",
+    "caption": {
+      "en": "SayCan process explainer",
+      "zh": "SayCan 流程解释图"
+    },
+    "subcaption": {
+      "en": "Language-model planning multiplied by learned affordance values",
+      "zh": "语言模型规划与学习到的可供性价值相乘"
+    },
+    "sourceIds": [
+      "source-saycan-paper",
+      "source-primary-record"
+    ],
+    "sourceName": {
+      "en": "Primary publication and original local synthesis",
+      "zh": "主论文与本地原创整理"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2204.01691",
+    "rights": {
+      "status": "original-redraw",
+      "license": {
+        "en": "Original local SVG; source figures are not copied.",
+        "zh": "本地原创 SVG；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Display and educational use in this project.",
+        "zh": "用于本项目展示与教育用途。"
+      }
+    },
+    "displayUsage": {
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-annual-117-saycan-portrait-chelsea-finn",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/portraits/chelsea-finn.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "切尔西·芬恩肖像",
+      "en": "Chelsea Finn portrait"
+    },
+    "subcaption": {
+      "zh": "SayCan 共同作者与机器人学习研究者",
+      "en": "SayCan co-author and robot-learning researcher"
+    },
+    "sourceId": "source-saycan-portrait-chelsea-finn",
+    "sourceName": {
+      "en": "Stanford Profiles",
+      "zh": "斯坦福大学人物资料页"
+    },
+    "sourceUrl": "https://profiles.stanford.edu/proxy/api/cap/profiles/207671/resources/profilephoto/350x350.1655521282579.jpg",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The Stanford profile does not state an open image license.",
+        "zh": "斯坦福大学人物页未声明图片的开放许可。"
+      },
+      "attribution": "Stanford University"
+    },
+    "displayUsage": {
+      "en": "Verified paper-author portrait",
+      "zh": "已核验的论文作者肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false,
+    "sourceReliability": "official-university-profile",
+    "provenanceNotes": {
+      "en": "BenchCouncil leaves the contributor field blank for this row. The official SayCan project page lists Chelsea Finn among the paper authors, and Stanford confirms her identity and research role.",
+      "zh": "BenchCouncil 该行人物字段为空。SayCan 官方项目页将切尔西·芬恩列为论文作者，斯坦福大学资料页进一步核验其身份与研究方向。"
+    }
+  },
+  {
+    "id": "asset-annual-117-saycan-scoring",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-117-saycan-scoring.png",
+    "role": "research-result",
+    "caption": {
+      "zh": "SayCan 有用性与可供性评分流程",
+      "en": "SayCan usefulness and affordance scoring"
+    },
+    "subcaption": {
+      "zh": "官方项目图展示语言模型相关性与机器人价值函数的组合",
+      "en": "The official project diagram combines LLM relevance with robot value functions"
+    },
+    "sourceId": "source-saycan-official-project-images",
+    "sourceName": {
+      "en": "SayCan official project page",
+      "zh": "SayCan 官方项目页"
+    },
+    "sourceUrl": "https://say-can.github.io/img/saycan.png",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Official project illustration; no separate image license is stated.",
+        "zh": "官方项目介绍图；页面未另行声明图片许可。"
+      },
+      "attribution": "SayCan authors / Robotics at Google"
+    },
+    "displayUsage": {
+      "en": "Official method diagram",
+      "zh": "官方方法图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
+    "id": "asset-annual-117-saycan-robot-example",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-117-saycan-robot-example.png",
+    "role": "research-result",
+    "caption": {
+      "zh": "SayCan 机器人任务示例",
+      "en": "SayCan robot task example"
+    },
+    "subcaption": {
+      "zh": "语言指令被具身约束为可执行的取海绵技能序列",
+      "en": "A language instruction is grounded into a feasible sponge-fetching skill sequence"
+    },
+    "sourceId": "source-saycan-official-project-images",
+    "sourceName": {
+      "en": "SayCan official project page",
+      "zh": "SayCan 官方项目页"
+    },
+    "sourceUrl": "https://say-can.github.io/img/qualitative_1.png",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Official project result image; no separate image license is stated.",
+        "zh": "官方项目结果图；页面未另行声明图片许可。"
+      },
+      "attribution": "SayCan authors / Robotics at Google"
+    },
+    "displayUsage": {
+      "en": "Official robot demonstration result",
+      "zh": "官方机器人演示结果"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  }
+]

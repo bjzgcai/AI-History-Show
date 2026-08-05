@@ -18,8 +18,8 @@
   "assetIds": [
     "asset-alexnet-portrait",
     "asset-alexnet-architecture",
-    "asset-alexnet-deep-portrait",
-    "asset-alexnet-architecture-detail"
+    "asset-alexnet-architecture-detail",
+    "asset-alexnet-deep-portrait"
   ],
   "overviewImageAssetId": "asset-alexnet-portrait",
   "sourceIds": [

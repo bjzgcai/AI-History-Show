@@ -1,0 +1,171 @@
+[
+  {
+    "id": "source-primary-record",
+    "type": "paper-page",
+    "label": {
+      "en": "Paper page",
+      "zh": "论文页面"
+    },
+    "title": {
+      "en": "Discovering faster matrix multiplication algorithms with reinforcement learning",
+      "zh": "《Discovering faster matrix multiplication algorithms with reinforcement learning》"
+    },
+    "authors": [
+      "Alhussein Fawzi",
+      "Matej Balog",
+      "Aja Huang",
+      "Thomas Hubert",
+      "Bernardino Romera-Paredes",
+      "Pushmeet Kohli"
+    ],
+    "year": 2022,
+    "url": "https://doi.org/10.1038/s41586-022-05172-4",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary publication or official project record used for the central technical claims.",
+      "zh": "用于核心技术主张的主论文或官方项目记录。"
+    }
+  },
+  {
+    "id": "source-openalex-record",
+    "type": "paper-index",
+    "label": {
+      "en": "Paper index",
+      "zh": "论文索引"
+    },
+    "title": {
+      "en": "OpenAlex record for Discovering faster matrix multiplication algorithms with reinforcement learning",
+      "zh": "Discovering faster matrix multiplication algorithms with reinforcement learning 的 OpenAlex 文献记录"
+    },
+    "url": "https://openalex.org/W4302010773",
+    "language": "en",
+    "purpose": "bibliographic-verification",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Bibliographic metadata used to verify the publication year and landing page.",
+      "zh": "用于核对出版年份与落地页面的书目元数据。"
+    }
+  },
+  {
+    "id": "source-benchcouncil-annual",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "AI100: Top 100 AI achievements (2022-2023)",
+      "zh": "AI100：人工智能百大成就（2022-2023）"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+      "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
+    }
+  },
+  {
+    "id": "source-annual-114-alphatensor-portrait-pushmeet-kohli",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Pushmeet Kohli portrait source",
+      "zh": "普什米特·科利人物图片来源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Pushmeet_Kohli_at_SXSW_London_2026.jpg",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "secondary",
+    "notes": {
+      "en": "WikiPortraits identifies the subject as Pushmeet Kohli at SXSW London 2026. Reliability: identified-event-portrait. Usage note: CC BY-SA 4.0; attribution to Photographer.JuliaMustard / WikiPortraits.",
+      "zh": "WikiPortraits 将画面人物标注为 2026 年 SXSW London 活动上的普什米特·科利。 可靠性：identified-event-portrait。使用备注：CC BY-SA 4.0；署名 Photographer.JuliaMustard / WikiPortraits。"
+    }
+  },
+  {
+    "id": "source-alphatensor-deepmind",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Discovering novel algorithms with AlphaTensor",
+      "zh": "Google DeepMind：使用 AlphaTensor 发现新算法"
+    },
+    "url": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
+    "language": "en",
+    "purpose": "background",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official DeepMind explanation of the game formulation, discoveries and practical experiments.",
+      "zh": "DeepMind 对游戏建模、算法发现和实际实验的官方说明。"
+    }
+  },
+  {
+    "id": "source-alphatensor-code",
+    "type": "code",
+    "label": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "title": {
+      "en": "Google DeepMind AlphaTensor repository",
+      "zh": "Google DeepMind AlphaTensor 代码仓库"
+    },
+    "url": "https://github.com/google-deepmind/alphatensor",
+    "language": "en",
+    "purpose": "implementation",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official repository containing discovered algorithms and supporting material.",
+      "zh": "包含已发现算法与配套资料的官方代码仓库。"
+    }
+  },
+  {
+    "id": "source-alphatensor-portrait-pushmeet-kohli",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Pushmeet Kohli at SXSW London 2026",
+      "zh": "2026 年 SXSW London 活动上的普什米特·科利"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Pushmeet_Kohli_at_SXSW_London_2026.jpg",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "secondary",
+    "notes": {
+      "en": "WikiPortraits identifies Pushmeet Kohli; the photograph is CC BY-SA 4.0.",
+      "zh": "WikiPortraits 明确标注画面人物为普什米特·科利；图片采用 CC BY-SA 4.0 许可。"
+    }
+  },
+  {
+    "id": "source-alphatensor-official-image",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "AlphaTensor tensor-grid illustration",
+      "zh": "AlphaTensor 张量网格介绍图"
+    },
+    "url": "https://deepmind.google/discover/blog/discovering-novel-algorithms-with-alphatensor/",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The official DeepMind article publishes the three-dimensional tensor-grid illustration.",
+      "zh": "DeepMind 官方文章发布该三维张量网格介绍图。"
+    }
+  }
+]

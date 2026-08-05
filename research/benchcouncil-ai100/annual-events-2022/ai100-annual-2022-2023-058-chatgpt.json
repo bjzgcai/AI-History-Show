@@ -1,0 +1,497 @@
+{
+  "schemaVersion": 1,
+  "eventId": "ai100-annual-2022-2023-058-chatgpt",
+  "status": "complete",
+  "officialOrder": 58,
+  "work": "ChatGPT",
+  "official": {
+    "area": "LLM",
+    "publication": "ChatGPT: Optimizing Language Models for Dialogue",
+    "citation": "551",
+    "contributors": "",
+    "institution": "OpenAI",
+    "country": "USA",
+    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+  },
+  "summary": {
+    "en": "A conversational interface and dialogue-tuned model that brought instruction-following AI to a mass audience",
+    "zh": "通过对话界面与对话调优模型把指令式 AI 带给大众用户"
+  },
+  "displaySummary": {
+    "en": "AI100 (2022-2023) · Conversational instruction-following AI",
+    "zh": "AI100（2022-2023）· 对话式指令遵循 AI"
+  },
+  "description": {
+    "en": "<p>ChatGPT launched publicly on November 30, 2022 as a research preview built from the InstructGPT lineage. It used supervised dialogue data and reinforcement learning from human feedback so the model could answer follow-up questions, acknowledge mistakes and respond within a continuing conversation.</p><p>The accessible chat interface dramatically lowered the barrier to trying a general-purpose language model. Its rapid adoption changed public expectations for search, writing, coding, education and human-computer interaction, while exposing reliability and safety limits at unprecedented scale.</p>",
+    "zh": "<p>ChatGPT 于 2022 年 11 月 30 日作为研究预览公开发布，技术路线承接 InstructGPT。它使用监督式对话数据和基于人类反馈的强化学习，使模型能够回答追问、承认错误，并在连续对话中作出回应。</p><p>易用的聊天界面大幅降低了体验通用语言模型的门槛。它的快速普及改变了公众对搜索、写作、编程、教育和人机交互的预期，也以前所未有的规模暴露出可靠性与安全局限。</p>"
+  },
+  "people": [],
+  "displayFigures": [
+    {
+      "figureId": "chatgpt-product",
+      "name": {
+        "en": "ChatGPT",
+        "zh": "ChatGPT"
+      },
+      "role": {
+        "en": "OpenAI conversational AI product",
+        "zh": "OpenAI 对话式 AI 产品"
+      },
+      "figureType": "product",
+      "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png"
+    }
+  ],
+  "selectedPortrait": null,
+  "supplementalAssets": [
+    {
+      "id": "asset-annual-058-chatgpt-hugging-face-rlhf",
+      "path": "resources/images/external/ai100-2022-chatgpt/hugging-face-rlhf.png",
+      "role": "paper-figure",
+      "sourceUrl": "https://huggingface.co/blog/rlhf",
+      "imageUrl": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/rlhf/rlhf.png",
+      "caption": {
+        "en": "RLHF policy-optimization diagram",
+        "zh": "RLHF 策略优化流程图"
+      },
+      "license": {
+        "en": "CC BY-NC-SA 4.0 as stated for the Hugging Face documentation-images dataset.",
+        "zh": "Hugging Face documentation-images 数据集标注为 CC BY-NC-SA 4.0。"
+      },
+      "notes": {
+        "en": "Technical background diagram for the InstructGPT lineage cited by the ChatGPT launch page.",
+        "zh": "用于说明 ChatGPT 发布页所引用的 InstructGPT 技术路线。"
+      }
+    }
+  ],
+  "sourceOverrides": {
+    "source-primary-record": {
+      "notes": {
+        "en": "Primary publication or official project record used for the central technical claims.",
+        "zh": "用于核心技术主张的主论文或官方项目记录。"
+      }
+    },
+    "source-benchcouncil-annual": {
+      "notes": {
+        "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+        "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
+      }
+    }
+  },
+  "additionalSources": [
+    {
+      "id": "source-chatgpt-instructgpt-background",
+      "type": "paper",
+      "label": {
+        "en": "Background paper",
+        "zh": "背景论文"
+      },
+      "title": {
+        "en": "Training language models to follow instructions with human feedback",
+        "zh": "《Training language models to follow instructions with human feedback》"
+      },
+      "url": "https://arxiv.org/abs/2203.02155",
+      "language": "en",
+      "purpose": "background",
+      "reliability": "primary",
+      "notes": {
+        "en": "Method background for the RLHF lineage explicitly referenced by the ChatGPT launch page.",
+        "zh": "ChatGPT 发布页明确提及的 RLHF 方法路线背景论文。"
+      }
+    },
+    {
+      "id": "source-chatgpt-gpt3-background",
+      "type": "paper",
+      "label": {
+        "en": "Precursor paper",
+        "zh": "前序论文"
+      },
+      "title": {
+        "en": "Language Models are Few-Shot Learners",
+        "zh": "《Language Models are Few-Shot Learners》"
+      },
+      "url": "https://arxiv.org/abs/2005.14165",
+      "language": "en",
+      "purpose": "precursor",
+      "reliability": "primary",
+      "notes": {
+        "en": "Precursor GPT-3 paper for the base-model lineage behind the launch.",
+        "zh": "用于说明 ChatGPT 基础模型路线的 GPT-3 前序论文。"
+      }
+    },
+    {
+      "id": "source-chatgpt-hugging-face-rlhf",
+      "type": "article",
+      "label": {
+        "en": "Article",
+        "zh": "文章"
+      },
+      "title": {
+        "en": "Illustrating Reinforcement Learning from Human Feedback (RLHF)",
+        "zh": "图解基于人类反馈的强化学习（RLHF）"
+      },
+      "url": "https://huggingface.co/blog/rlhf",
+      "language": "en",
+      "purpose": "background",
+      "reliability": "secondary",
+      "notes": {
+        "en": "Technical article explaining reward modeling, PPO and KL regularization in the RLHF pipeline.",
+        "zh": "解释 RLHF 流程中奖励建模、PPO 与 KL 正则化的技术文章。"
+      }
+    },
+    {
+      "id": "source-chatgpt-hugging-face-rlhf-image",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "Hugging Face RLHF policy-optimization diagram",
+        "zh": "Hugging Face RLHF 策略优化流程图"
+      },
+      "url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/rlhf/rlhf.png",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "secondary",
+      "notes": {
+        "en": "Direct image from the documentation-images dataset, labeled CC BY-NC-SA 4.0.",
+        "zh": "documentation-images 数据集图片直链，标注为 CC BY-NC-SA 4.0。"
+      }
+    }
+  ],
+  "additionalClaims": [
+    {
+      "id": "claim-core-method",
+      "importance": "core",
+      "text": {
+        "en": "ChatGPT uses dialogue supervision and reinforcement learning from human feedback.",
+        "zh": "ChatGPT 采用对话监督与基于人类反馈的强化学习。"
+      },
+      "sourceIds": [
+        "source-chatgpt-instructgpt-background",
+        "source-primary-record"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "claim-historical-significance",
+      "importance": "display",
+      "text": {
+        "en": "Experts generally treat ChatGPT as the product event that made large language models a mainstream computing interface. Its legacy includes both the acceleration of conversational AI deployment and a much broader debate over hallucination, labor, education, copyright and governance.",
+        "zh": "专家通常把 ChatGPT 视为让大语言模型成为主流计算界面的产品事件。它的遗产既包括对话式 AI 部署加速，也包括围绕幻觉、劳动、教育、版权和治理展开的更广泛讨论。"
+      },
+      "sourceIds": [
+        "source-chatgpt-instructgpt-background"
+      ],
+      "status": "verified"
+    }
+  ],
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Instruction-tuned models had already improved compliance with user requests, but they were mostly encountered through APIs and demonstrations. ChatGPT paired that post-training lineage with a persistent dialogue interface and released it as a public research preview.",
+        "zh": "指令调优模型已经改善了对用户请求的遵循，但公众此前主要通过 API 和演示接触它们。ChatGPT 把这条后训练路线与持续对话界面结合，并以公开研究预览形式发布。"
+      },
+      "sourceIds": [
+        "source-chatgpt-instructgpt-background",
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "ChatGPT was trained with supervised dialogue examples and RLHF, with trainers playing both user and assistant roles during data collection. The conversational format lets prior turns become context, supporting follow-up questions, corrections and iterative tasks.",
+        "zh": "ChatGPT 使用监督式对话样例和 RLHF 训练，数据收集时训练人员同时扮演用户与助手。对话格式把之前的轮次纳入上下文，从而支持追问、纠正和迭代任务。"
+      },
+      "sourceIds": [
+        "source-chatgpt-instructgpt-background",
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat ChatGPT as the product event that made large language models a mainstream computing interface. Its legacy includes both the acceleration of conversational AI deployment and a much broader debate over hallucination, labor, education, copyright and governance.",
+        "zh": "专家通常把 ChatGPT 视为让大语言模型成为主流计算界面的产品事件。它的遗产既包括对话式 AI 部署加速，也包括围绕幻觉、劳动、教育、版权和治理展开的更广泛讨论。"
+      },
+      "sourceIds": [
+        "source-chatgpt-instructgpt-background",
+        "source-primary-record"
+      ]
+    }
+  ],
+  "visualModule": {
+    "type": "archiveLink",
+    "site": {
+      "en": "OpenAI product archive",
+      "zh": "OpenAI 产品档案"
+    },
+    "title": {
+      "en": "Introducing ChatGPT",
+      "zh": "ChatGPT 发布介绍"
+    },
+    "description": {
+      "en": "The original launch record explains the dialogue format, RLHF training lineage, examples and limitations.",
+      "zh": "原始发布记录说明对话格式、RLHF 训练路线、示例与局限。"
+    },
+    "url": "https://openai.com/index/chatgpt/",
+    "action": {
+      "en": "Open ChatGPT launch page",
+      "zh": "打开 ChatGPT 发布页"
+    },
+    "source": "https://openai.com/index/chatgpt/",
+    "license": {
+      "en": "Reference link only; the local explainer is an original redraw.",
+      "zh": "仅作为参考链接；本地解释图为原创重绘。"
+    },
+    "usage": {
+      "en": "Technical, historical and interaction reference",
+      "zh": "技术、历史与互动说明参考"
+    }
+  },
+  "recordSvgSource": "research/benchcouncil-ai100/annual-events-2022/assets/ai100-annual-2022-2023-058-chatgpt.svg",
+  "recordAsset": {
+    "caption": {
+      "en": "ChatGPT process explainer",
+      "zh": "ChatGPT 流程解释图"
+    },
+    "subcaption": {
+      "en": "Dialogue supervision and reinforcement learning from human feedback",
+      "zh": "对话监督与基于人类反馈的强化学习"
+    },
+    "sourceIds": [
+      "source-chatgpt-instructgpt-background",
+      "source-primary-record"
+    ],
+    "sourceName": {
+      "en": "Primary publication and original local synthesis",
+      "zh": "主论文与本地原创整理"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2203.02155",
+    "displayUsage": {
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
+    }
+  },
+  "achievement": {
+    "area": {
+      "en": "LLM",
+      "zh": "大语言模型"
+    },
+    "method": {
+      "en": "Dialogue supervision and reinforcement learning from human feedback",
+      "zh": "对话监督与基于人类反馈的强化学习"
+    },
+    "artifact": {
+      "en": "The public ChatGPT research preview",
+      "zh": "公开的 ChatGPT 研究预览"
+    },
+    "material": {
+      "en": "Dialogue demonstrations, comparison data and the InstructGPT training lineage",
+      "zh": "对话示范、比较数据与 InstructGPT 训练路线"
+    },
+    "demo": {
+      "en": "Follow a prompt through one response and a corrective follow-up to see how conversational context changes the next answer.",
+      "zh": "沿一次提示、一次回答和一次纠正性追问，观察对话上下文如何改变下一次回答。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Dialogue context",
+          "zh": "对话上下文"
+        },
+        "text": {
+          "en": "Earlier turns guide later responses",
+          "zh": "前序轮次引导后续回答"
+        }
+      },
+      {
+        "label": {
+          "en": "Human feedback",
+          "zh": "人类反馈"
+        },
+        "text": {
+          "en": "Ranked answers shape behavior",
+          "zh": "回答排序塑造模型行为"
+        }
+      },
+      {
+        "label": {
+          "en": "Public interface",
+          "zh": "大众界面"
+        },
+        "text": {
+          "en": "A low-friction chat product",
+          "zh": "低门槛聊天产品"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "User message",
+        "zh": "用户消息"
+      },
+      {
+        "en": "Dialogue-tuned language model",
+        "zh": "对话调优语言模型"
+      },
+      {
+        "en": "Response + follow-up context",
+        "zh": "回答与后续上下文"
+      }
+    ],
+    "demoImage": "resources/images/benchcouncil-ai100-annual/annual-058-chatgpt_record.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Evidence cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "The launch page describes dialogue training, RLHF lineage and known limitations such as plausible but incorrect answers.",
+          "zh": "发布页说明对话训练、RLHF 路线，以及看似合理但不正确等已知局限。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Follow a prompt through one response and a corrective follow-up to see how conversational context changes the next answer.",
+          "zh": "沿一次提示、一次回答和一次纠正性追问，观察对话上下文如何改变下一次回答。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "OpenAI product archive",
+          "zh": "OpenAI 产品档案"
+        },
+        "title": {
+          "en": "Introducing ChatGPT",
+          "zh": "ChatGPT 发布介绍"
+        },
+        "description": {
+          "en": "The original launch record explains the dialogue format, RLHF training lineage, examples and limitations.",
+          "zh": "原始发布记录说明对话格式、RLHF 训练路线、示例与局限。"
+        },
+        "url": "https://openai.com/index/chatgpt/",
+        "action": {
+          "en": "Open ChatGPT launch page",
+          "zh": "打开 ChatGPT 发布页"
+        },
+        "source": "https://openai.com/index/chatgpt/",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Technical, historical and interaction reference",
+          "zh": "技术、历史与互动说明参考"
+        }
+      }
+    ]
+  },
+  "quiz": {
+    "question": {
+      "en": "What made ChatGPT distinct as a public experience in 2022?",
+      "zh": "2022 年 ChatGPT 作为公众体验最突出的特点是什么？"
+    },
+    "options": [
+      {
+        "en": "A continuing conversational interface",
+        "zh": "可持续追问的对话界面"
+      },
+      {
+        "en": "A spreadsheet-only interface",
+        "zh": "只能使用电子表格的界面"
+      },
+      {
+        "en": "A speech recognizer with no text output",
+        "zh": "没有文字输出的语音识别器"
+      },
+      {
+        "en": "A robot controller requiring hardware",
+        "zh": "必须连接硬件的机器人控制器"
+      }
+    ],
+    "explanation": {
+      "en": "ChatGPT exposed an instruction-following model through an accessible interface that retained conversational context.",
+      "zh": "ChatGPT 通过易用界面提供指令遵循模型，并保留对话上下文。"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "answer": 0
+  },
+  "reviewNotes": {
+    "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+    "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
+  },
+  "supplementaryAssets": [
+    {
+      "id": "asset-annual-058-chatgpt-hugging-face-rlhf",
+      "type": "image",
+      "path": "resources/images/external/ai100-2022-chatgpt/hugging-face-rlhf.png",
+      "role": "paper-figure",
+      "caption": {
+        "zh": "RLHF 策略优化流程图",
+        "en": "RLHF policy-optimization diagram"
+      },
+      "subcaption": {
+        "zh": "Hugging Face 图解奖励模型、PPO 更新与 KL 惩罚如何把语言模型调向人类偏好。",
+        "en": "Hugging Face illustrates how a reward model, PPO updates and a KL penalty tune a language model toward human preferences."
+      },
+      "sourceId": "source-chatgpt-hugging-face-rlhf-image",
+      "sourceName": {
+        "en": "Hugging Face documentation images",
+        "zh": "Hugging Face 文档图片库"
+      },
+      "sourceUrl": "https://huggingface.co/blog/rlhf",
+      "rights": {
+        "status": "licensed-external",
+        "license": {
+          "en": "CC BY-NC-SA 4.0 as stated for the Hugging Face documentation-images dataset; attribution and share-alike terms apply.",
+          "zh": "Hugging Face documentation-images 数据集标注为 CC BY-NC-SA 4.0；使用时需署名并遵守相同方式共享条款。"
+        },
+        "attribution": "Hugging Face"
+      },
+      "displayUsage": {
+        "en": "Technical background diagram for ChatGPT's RLHF lineage",
+        "zh": "ChatGPT RLHF 技术路线背景图"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    }
+  ],
+  "assetIds": [
+    "asset-annual-058-chatgpt-hugging-face-rlhf",
+    "asset-annual-058-chatgpt-record"
+  ],
+  "overviewImageAssetId": "asset-annual-058-chatgpt-hugging-face-rlhf"
+}

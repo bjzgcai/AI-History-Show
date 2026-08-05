@@ -1,0 +1,74 @@
+{
+  "id": "ai100-annual-2022-2023-059-chain-of-thought-prompting",
+  "year": 2022,
+  "date": "2022",
+  "title": {
+    "en": "Chain-of-Thought Prompting",
+    "zh": "Chain-of-Thought Prompting"
+  },
+  "summary": {
+    "en": "A prompting method that elicits intermediate reasoning steps from sufficiently large language models",
+    "zh": "通过提示让足够大的语言模型生成中间推理步骤的方法"
+  },
+  "description": {
+    "en": "<p>Chain-of-thought prompting showed that a few demonstrations containing intermediate reasoning steps can substantially improve large language models on arithmetic, commonsense and symbolic reasoning tasks. The method changes the prompt rather than the model weights.</p><p>The gains appeared most strongly at large model scales, suggesting that prompting can expose capabilities already latent in a pretrained model. This simple technique became a foundation for later work on self-consistency, tool use and structured reasoning.</p>",
+    "zh": "<p>思维链提示表明，只需在少量示例中加入中间推理步骤，就能显著改善大语言模型在算术、常识和符号推理任务上的表现。该方法改变的是提示，而不是模型权重。</p><p>提升主要出现在较大模型规模上，说明提示能够显化预训练模型中已经潜藏的能力。这一简单方法后来成为自洽性、工具使用和结构化推理研究的基础。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "Google",
+      "zh": "Google"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "jason-wei",
+      "name": {
+        "en": "Jason Wei",
+        "zh": "杰森·魏"
+      },
+      "role": {
+        "en": "First author of the Chain-of-Thought Prompting paper",
+        "zh": "Chain-of-Thought Prompting 论文第一作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "denny-zhou",
+      "name": {
+        "en": "Denny Zhou",
+        "zh": "丹尼·周"
+      },
+      "role": {
+        "en": "Co-author of the Chain-of-Thought Prompting paper",
+        "zh": "Chain-of-Thought Prompting 论文共同作者"
+      },
+      "organizationIds": [],
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg"
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+      "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
+    }
+  }
+}

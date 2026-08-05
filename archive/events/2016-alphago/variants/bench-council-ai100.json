@@ -5,10 +5,6 @@
     "zh": "AlphaGo",
     "en": "AlphaGo"
   },
-  "displaySummary": {
-    "en": "AI Top 100 Achievements",
-    "zh": "AI 百大成就"
-  },
   "emphasis": [
     "research-breakthrough",
     "policy-value-network",
@@ -138,7 +134,7 @@
         "en": "DeepMind research scientist and one of the first authors of the MuZero paper",
         "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []

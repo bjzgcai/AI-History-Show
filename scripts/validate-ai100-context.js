@@ -5,6 +5,7 @@ const { milestones } = require('../milestones-data.js');
 const { countTextSentences, getLocalizedText } = require('../shared/utils.js');
 
 const REQUIRED_LABELS = new Set(['Historical Background', 'Core Idea', 'Long-Term Legacy']);
+const STORYLINE_IDS = new Set(['bench-council-ai100', 'bench-council-ai100-2022-2023']);
 const STRICT = process.argv.includes('--strict');
 
 const failures = [];
@@ -13,7 +14,7 @@ for (const milestone of milestones) {
     const storylineId =
         typeof milestone.storyline === 'string' ? milestone.storyline : milestone.storyline && milestone.storyline.id;
 
-    if (storylineId !== 'bench-council-ai100') continue;
+    if (!STORYLINE_IDS.has(storylineId)) continue;
 
     const sections = Array.isArray(milestone.commentarySections) ? milestone.commentarySections : [];
     for (const section of sections) {

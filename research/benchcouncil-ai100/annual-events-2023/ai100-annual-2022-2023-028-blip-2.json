@@ -1,0 +1,607 @@
+{
+  "schemaVersion": 1,
+  "eventId": "ai100-annual-2022-2023-028-blip-2",
+  "status": "complete",
+  "officialOrder": 28,
+  "work": "Blip-2",
+  "official": {
+    "area": "Multimodal",
+    "publication": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+    "citation": "561",
+    "contributors": "Junnan Li, Steven Hoi",
+    "institution": "Salesforce Research",
+    "country": "USA",
+    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+  },
+  "summary": {
+    "en": "Efficient vision-language pretraining by bridging frozen image and language models",
+    "zh": "通过连接冻结的图像模型与语言模型实现高效视觉语言预训练"
+  },
+  "displaySummary": {
+    "en": "AI100 (2022-2023) · Efficient vision-language bridging",
+    "zh": "AI100（2022-2023）· 高效视觉语言连接"
+  },
+  "description": {
+    "en": "<p>BLIP-2 addresses the cost of vision-language pretraining by keeping both a pretrained image encoder and a large language model frozen. A lightweight Querying Transformer learns the interface between the two modalities through representation learning followed by generative vision-to-language learning.</p><p>This design reuses strong unimodal models instead of retraining an end-to-end stack, and the paper reports competitive zero-shot image-to-text generation and visual question answering with far fewer trainable parameters.</p>",
+    "zh": "<p>BLIP-2 通过冻结预训练图像编码器和大语言模型，降低视觉语言预训练的成本。一个轻量级 Querying Transformer 先学习跨模态表示，再学习从视觉到语言的生成接口。</p><p>这种设计复用强大的单模态模型，而不是重新训练完整端到端系统；论文报告它以更少的可训练参数，在零样本图文生成和视觉问答上取得有竞争力的结果。</p>"
+  },
+  "people": [
+    {
+      "name": {
+        "en": "Junnan Li",
+        "zh": "李俊楠"
+      },
+      "role": {
+        "en": "First author of the BLIP-2 paper",
+        "zh": "BLIP-2 论文第一作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-benchcouncil-annual",
+          "source-primary-record",
+          "source-junnan-github-profile",
+          "source-lavis-repository"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Junnan Li at position 1 in the official contributor prefix, and the primary paper lists the same person as first author. His self-controlled GitHub account uses the exact name Junnan Li and is directly listed as a contributor to Salesforce's official LAVIS repository, providing an additional identity cross-check for the portrait.",
+          "zh": "BenchCouncil 在官方人物前缀第 1 位列出李俊楠，主论文将同一人物列为第一作者。其本人维护的 GitHub 账号使用完全相同的姓名，并直接出现在 Salesforce 官方 LAVIS 仓库贡献者列表中，因此可进一步交叉核验肖像身份。"
+        }
+      },
+      "portraitSearch": {
+        "status": "selected",
+        "sourceUrl": "https://github.com/LiJunnan1992",
+        "imageUrl": "https://avatars.githubusercontent.com/u/13638455?v=4",
+        "reliability": "researcher-controlled-account-cross-linked-to-official-repository",
+        "rights": "The researcher-controlled GitHub profile publishes the matching photograph but states no redistribution license. Copyright restrictions were relaxed for this research pass; retain attribution and recheck before reuse outside this project.",
+        "candidates": [
+          {
+            "imageUrl": "https://avatars.githubusercontent.com/u/13638455?v=4",
+            "sourceUrl": "https://github.com/LiJunnan1992",
+            "decision": "selected",
+            "notes": "The account uses the exact name Junnan Li and its avatar is a clear person photograph. The same account is a direct contributor to Salesforce's official LAVIS repository, which contains BLIP-2 models and checkpoints."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "en": "Steven Hoi",
+        "zh": "许彬"
+      },
+      "role": {
+        "en": "Co-author of the BLIP-2 paper",
+        "zh": "BLIP-2 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-benchcouncil-annual",
+          "source-primary-record"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Steven Hoi at position 2 in the official contributor prefix, and the primary paper lists the same person among its authors.",
+          "zh": "BenchCouncil 在官方人物前缀第 2 位列出许彬，主论文作者表也包含同一人物。"
+        }
+      },
+      "portraitSearch": {
+        "status": "no-reliable-candidate",
+        "reliability": "primary-publication-identity-confirmed-no-displayable-portrait",
+        "rights": "No image is selected. The paper and official project evidence confirm identity, but no candidate was retained with both a reliable identity match and sufficient usage context.",
+        "candidates": []
+      }
+    }
+  ],
+  "selectedPortrait": {
+    "personName": "Junnan Li",
+    "image": {
+      "path": "resources/images/external/ai100-2023-blip-2/junnan-li.jpg",
+      "sourceName": {
+        "en": "Junnan Li GitHub profile",
+        "zh": "李俊楠 GitHub 个人资料"
+      },
+      "sourceUrl": "https://github.com/LiJunnan1992",
+      "imageUrl": "https://avatars.githubusercontent.com/u/13638455?v=4",
+      "reliability": "researcher-controlled-account-cross-linked-to-official-repository",
+      "usageStatus": "external-reference",
+      "license": {
+        "en": "The source states no redistribution license; retain attribution and recheck before redistribution outside this project.",
+        "zh": "来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+      },
+      "notes": {
+        "en": "The exact-name GitHub account publishes this portrait and is directly listed among contributors to Salesforce's official LAVIS repository.",
+        "zh": "该同名 GitHub 账号发布此肖像，并直接列在 Salesforce 官方 LAVIS 仓库贡献者中。"
+      },
+      "attribution": "Junnan Li GitHub profile",
+      "identityChecks": [
+        "exact-contributor-name",
+        "event-authorship-matches",
+        "official-repository-contributor-match"
+      ]
+    }
+  },
+  "sourceOverrides": {
+    "source-primary-record": {
+      "type": "paper-page",
+      "label": {
+        "en": "Conference paper page",
+        "zh": "会议论文页面"
+      },
+      "title": {
+        "en": "BLIP-2 - ICML 2023 Proceedings",
+        "zh": "《BLIP-2》ICML 2023 论文页面"
+      },
+      "authors": [
+        "Junnan Li",
+        "Dongxu Li",
+        "Silvio Savarese",
+        "Steven Hoi"
+      ],
+      "year": 2023,
+      "url": "https://proceedings.mlr.press/v202/li23q.html",
+      "language": "en",
+      "purpose": "core-evidence",
+      "reliability": "primary",
+      "notes": {
+        "en": "Primary ICML record used to verify the author list, frozen-model design, two-stage training and reported evaluation.",
+        "zh": "用于核对作者表、冻结模型设计、两阶段训练与报告评测结果的 ICML 原始记录。"
+      }
+    },
+    "source-openalex-record": {
+      "notes": {
+        "en": "Bibliographic metadata is retained only as a secondary cross-check; technical and identity claims use primary records.",
+        "zh": "书目元数据仅作为辅助交叉核对；技术与人物主张使用原始记录。"
+      }
+    }
+  },
+  "additionalSources": [
+    {
+      "id": "source-arxiv-paper",
+      "type": "paper-page",
+      "label": {
+        "en": "Preprint page",
+        "zh": "预印本页面"
+      },
+      "title": {
+        "en": "BLIP-2 - arXiv",
+        "zh": "《BLIP-2》arXiv 页面"
+      },
+      "url": "https://arxiv.org/abs/2301.12597",
+      "language": "en",
+      "purpose": "alternate-access",
+      "reliability": "primary",
+      "notes": {
+        "en": "Author-submitted full paper with the complete method and experiments.",
+        "zh": "作者提交的全文，包含完整方法与实验。"
+      }
+    },
+    {
+      "id": "source-lavis-repository",
+      "type": "code",
+      "label": {
+        "en": "Code",
+        "zh": "代码"
+      },
+      "title": {
+        "en": "Salesforce LAVIS official repository",
+        "zh": "Salesforce LAVIS 官方仓库"
+      },
+      "url": "https://github.com/salesforce/LAVIS",
+      "language": "en",
+      "purpose": "implementation",
+      "reliability": "primary",
+      "notes": {
+        "en": "Official Salesforce repository containing BLIP-2 models, checkpoints and usage instructions.",
+        "zh": "Salesforce 官方仓库，包含 BLIP-2 模型、检查点与使用说明。"
+      }
+    },
+    {
+      "id": "source-junnan-github-profile",
+      "type": "profile",
+      "label": {
+        "en": "Profile",
+        "zh": "人物资料"
+      },
+      "title": {
+        "en": "Junnan Li GitHub profile",
+        "zh": "李俊楠 GitHub 个人资料"
+      },
+      "url": "https://github.com/LiJunnan1992",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "Researcher-controlled profile using the exact author name and publishing the selected photograph. The same account is directly listed as a contributor to Salesforce's official LAVIS repository; no redistribution license is stated for the avatar.",
+        "zh": "研究者本人维护的资料页使用与论文作者完全相同的姓名并发布所选照片；同一账号直接列在 Salesforce 官方 LAVIS 仓库贡献者中。头像未声明再分发许可。"
+      }
+    },
+    {
+      "id": "source-blip2-qformer-figure",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "BLIP-2 Figure 2: Q-Former and first-stage objectives",
+        "zh": "BLIP-2 Figure 2：Q-Former 与第一阶段目标"
+      },
+      "url": "https://ar5iv.labs.arxiv.org/html/2301.12597/assets/x2.png",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "Paper-rendered Figure 2 shows the Q-Former architecture, three first-stage objectives and their attention masks. It is a strong commonly used technical screenshot, but the existing original local explainer remains the single selected explanatory image; the paper figure has no separate redistribution license stated on the HTML rendering.",
+        "zh": "论文 HTML 渲染的 Figure 2 展示 Q-Former 架构、三个第一阶段目标及其注意力掩码。它是常用且说明力强的技术截图，但页面仍只选用现有本地原创解释图；论文 HTML 未为该图单独声明再分发许可。"
+      }
+    },
+    {
+      "id": "source-blip2-official-architecture",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "BLIP-2 architecture illustration in the official LAVIS repository",
+        "zh": "LAVIS 官方仓库中的 BLIP-2 架构图"
+      },
+      "url": "https://github.com/salesforce/LAVIS/blob/main/projects/blip2/blip2_illustration.png",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "Salesforce's official LAVIS repository publishes the selected Q-Former architecture illustration.",
+        "zh": "Salesforce 官方 LAVIS 仓库发布了所选的 Q-Former 架构图。"
+      }
+    }
+  ],
+  "additionalClaims": [
+    {
+      "id": "claim-frozen-bridge",
+      "importance": "core",
+      "text": {
+        "en": "BLIP-2 keeps the image encoder and large language model frozen and trains a lightweight Querying Transformer between them.",
+        "zh": "BLIP-2 冻结图像编码器与大语言模型，只训练位于两者之间的轻量级 Querying Transformer。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-arxiv-paper"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "claim-two-stage-training",
+      "importance": "core",
+      "text": {
+        "en": "Its training first aligns visual and language representations, then learns vision-to-language generation.",
+        "zh": "其训练先对齐视觉与语言表示，再学习从视觉到语言的生成。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-arxiv-paper"
+      ],
+      "status": "verified"
+    }
+  ],
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Large vision-language systems were increasingly built by joining separately pretrained image and language models, but end-to-end pretraining remained computationally expensive. BLIP-2 reframed the problem as learning a compact bridge between already capable frozen components.",
+        "zh": "大型视觉语言系统越来越多地连接独立预训练的图像模型与语言模型，但端到端预训练仍然成本高昂。BLIP-2 将问题重构为：在已经强大的冻结组件之间学习一个紧凑接口。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-arxiv-paper"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A Querying Transformer extracts a small set of visual query representations from the frozen image encoder and passes them toward the frozen language model. Two pretraining stages separate representation alignment from generative learning, allowing the interface to learn without updating either large backbone.",
+        "zh": "Querying Transformer 从冻结图像编码器中提取少量视觉查询表示，并把它们传向冻结语言模型。两个预训练阶段把表示对齐与生成学习分开，因此接口可以在不更新两侧大型主干的情况下完成学习。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-arxiv-paper"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat BLIP-2 as an influential demonstration that multimodal capability can be built by efficiently composing strong pretrained models. Its bridge-based recipe helped establish parameter-efficient visual instruction systems and foreshadowed later assistants that connect vision encoders to large language models.",
+        "zh": "专家通常把 BLIP-2 视为一项有影响力的证明：多模态能力可以通过高效组合强预训练模型获得。它的桥接方案推动了参数高效的视觉指令系统，并预示了后来把视觉编码器连接到大语言模型的助手。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-arxiv-paper"
+      ]
+    }
+  ],
+  "visualModule": {
+    "type": "archiveLink",
+    "site": {
+      "en": "PMLR",
+      "zh": "PMLR"
+    },
+    "title": {
+      "en": "BLIP-2: Bootstrapping Language-Image Pre-training",
+      "zh": "《BLIP-2: Bootstrapping Language-Image Pre-training》"
+    },
+    "description": {
+      "en": "The ICML page provides the accepted paper, complete authorship and the evidence for the frozen-component training design.",
+      "zh": "ICML 页面提供接收稿、完整作者信息，以及冻结组件训练设计的证据。"
+    },
+    "url": "https://proceedings.mlr.press/v202/li23q.html",
+    "source": "https://proceedings.mlr.press/v202/li23q.html",
+    "license": {
+      "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+      "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+    },
+    "usage": {
+      "en": "Primary technical or official release evidence",
+      "zh": "主要技术或官方发布证据"
+    },
+    "action": {
+      "en": "Open ICML paper page",
+      "zh": "打开 ICML 论文页面"
+    }
+  },
+  "recordSvgSource": "research/benchcouncil-ai100/annual-events-2023/assets/ai100-annual-2022-2023-028-blip-2.svg",
+  "recordAsset": {
+    "caption": {
+      "en": "BLIP-2 frozen-model bridge",
+      "zh": "BLIP-2 冻结模型桥接机制"
+    },
+    "subcaption": {
+      "en": "Train a compact interface instead of retraining both large backbones",
+      "zh": "用紧凑的 Q-Former 连接冻结的图像编码器与大语言模型"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
+    ],
+    "sourceName": {
+      "en": "BLIP-2 - ICML 2023 Proceedings",
+      "zh": "《BLIP-2》ICML 2023 论文页面"
+    },
+    "sourceUrl": "https://proceedings.mlr.press/v202/li23q.html",
+    "displayUsage": {
+      "en": "Original achievement explainer",
+      "zh": "原创成就解释图"
+    }
+  },
+  "achievement": {
+    "area": {
+      "en": "Multimodal",
+      "zh": "多模态"
+    },
+    "method": {
+      "en": "Efficient multimodal pretraining with a learned query bridge",
+      "zh": "使用可学习查询桥进行高效多模态预训练"
+    },
+    "artifact": {
+      "en": "BLIP-2 vision-language model family",
+      "zh": "BLIP-2 视觉语言模型系列"
+    },
+    "material": {
+      "en": "Primary publication or official release evidence, implementation materials and the original local explainer",
+      "zh": "主论文或官方发布证据、实现材料与本地原创解释图"
+    },
+    "demo": {
+      "en": "Follow the four-stage path and compare what enters, what is learned and what the system produces.",
+      "zh": "沿四阶段路径观察输入、学习内容与系统输出。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Frozen Backbones",
+          "zh": "冻结主干"
+        },
+        "text": {
+          "en": "Reuse pretrained image and language models",
+          "zh": "复用预训练图像与语言模型"
+        }
+      },
+      {
+        "label": {
+          "en": "Query Bridge",
+          "zh": "查询桥"
+        },
+        "text": {
+          "en": "A lightweight Q-Former transfers visual information",
+          "zh": "轻量级 Q-Former 传递视觉信息"
+        }
+      },
+      {
+        "label": {
+          "en": "Two Stages",
+          "zh": "两阶段"
+        },
+        "text": {
+          "en": "Representation alignment followed by generation",
+          "zh": "先表示对齐，再学习生成"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Frozen image encoder",
+        "zh": "冻结图像编码器"
+      },
+      {
+        "en": "Querying Transformer",
+        "zh": "Querying Transformer"
+      },
+      {
+        "en": "Frozen large language model",
+        "zh": "冻结大语言模型"
+      },
+      {
+        "en": "Image-conditioned text",
+        "zh": "图像条件文本"
+      }
+    ],
+    "demoImage": "resources/images/benchcouncil-ai100-annual/annual-028-blip-2_record.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Technical cue",
+          "zh": "技术线索"
+        },
+        "text": {
+          "en": "Train a compact interface instead of retraining both large backbones",
+          "zh": "这张图以四个阶段解释：冻结图像编码器、Querying Transformer、冻结大语言模型、图像条件文本。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Trace the arrows, then identify which stage reuses a pretrained component and which stage learns new information.",
+          "zh": "沿箭头逐步查看，并判断哪个阶段复用预训练组件、哪个阶段学习新信息。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "PMLR",
+          "zh": "PMLR"
+        },
+        "title": {
+          "en": "BLIP-2: Bootstrapping Language-Image Pre-training",
+          "zh": "《BLIP-2: Bootstrapping Language-Image Pre-training》"
+        },
+        "description": {
+          "en": "The ICML page provides the accepted paper, complete authorship and the evidence for the frozen-component training design.",
+          "zh": "ICML 页面提供接收稿、完整作者信息，以及冻结组件训练设计的证据。"
+        },
+        "url": "https://proceedings.mlr.press/v202/li23q.html",
+        "source": "https://proceedings.mlr.press/v202/li23q.html",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+        },
+        "usage": {
+          "en": "Primary technical or official release evidence",
+          "zh": "主要技术或官方发布证据"
+        },
+        "action": {
+          "en": "Open ICML paper page",
+          "zh": "打开 ICML 论文页面"
+        }
+      }
+    ]
+  },
+  "quiz": {
+    "question": {
+      "en": "Which BLIP-2 components remain frozen during its main pretraining recipe?",
+      "zh": "BLIP-2 的主要预训练方案中，哪些组件保持冻结？"
+    },
+    "options": [
+      {
+        "en": "The image encoder and large language model",
+        "zh": "图像编码器与大语言模型"
+      },
+      {
+        "en": "A recurrent controller and database",
+        "zh": "循环控制器与数据库"
+      },
+      {
+        "en": "Only the tokenizer",
+        "zh": "只有分词器"
+      },
+      {
+        "en": "Every component including the Q-Former",
+        "zh": "包括 Q-Former 在内的全部组件"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "BLIP-2 trains the lightweight Q-Former bridge while reusing a frozen image encoder and frozen large language model.",
+      "zh": "BLIP-2 训练轻量级 Q-Former 桥，同时复用冻结的图像编码器和冻结的大语言模型。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
+    ]
+  },
+  "reviewNotes": {
+    "en": "Completed event-specific research on 2026-08-03. The exact BenchCouncil title, order, contributor prefix, institution, country and blank official fields were preserved. All listed people were checked against primary authorship evidence; portrait searches were completed and no portrait was selected because no candidate met the identity and usage-context threshold.",
+    "zh": "于 2026-08-03 完成事件专项研究。准确保留 BenchCouncil 的标题、顺序、人物前缀、机构、国家与官方空字段。所有列出人物均通过原始作者证据核对；肖像检索已完成，没有候选同时满足身份与使用语境门槛，因此不选用肖像。"
+  },
+  "supplementaryAssets": [
+    {
+      "id": "asset-annual-028-blip-2-official-architecture",
+      "type": "image",
+      "path": "resources/images/external/ai100-2023-blip-2/blip2-official-architecture.png",
+      "role": "historical-diagram",
+      "caption": {
+        "en": "BLIP-2 Q-Former architecture",
+        "zh": "BLIP-2 Q-Former 架构图"
+      },
+      "subcaption": {
+        "en": "A compact querying transformer bridges a frozen image encoder and a frozen large language model.",
+        "zh": "紧凑的查询 Transformer 在冻结图像编码器与冻结大语言模型之间建立桥接。"
+      },
+      "sourceId": "source-blip2-official-architecture",
+      "sourceName": {
+        "en": "Salesforce LAVIS official repository",
+        "zh": "Salesforce LAVIS 官方仓库"
+      },
+      "sourceUrl": "https://github.com/salesforce/LAVIS/tree/main/projects/blip2",
+      "imageUrl": "https://github.com/salesforce/LAVIS/blob/main/projects/blip2/blip2_illustration.png",
+      "sourceReliability": "primary-paper-or-official-project-image",
+      "provenanceNotes": {
+        "en": "Downloaded from the named primary paper, official project repository or official release page and retained with direct source attribution.",
+        "zh": "图片下载自主论文、官方项目仓库或官方发布页，并保留直接来源标注。"
+      },
+      "rights": {
+        "status": "external-reference",
+        "license": {
+          "en": "Primary-source reference image displayed with attribution under the project's relaxed reference-image policy.",
+          "zh": "主来源参考图片；依据项目放宽后的参考图片策略展示，并保留完整来源标注。"
+        },
+        "attribution": "Li et al. / Salesforce Research"
+      },
+      "displayUsage": {
+        "en": "Official architecture illustration",
+        "zh": "官方架构图"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    }
+  ],
+  "assetIds": [
+    "asset-annual-028-blip-2-portrait-junnan-li",
+    "asset-annual-028-blip-2-official-architecture",
+    "asset-annual-028-blip-2-record"
+  ],
+  "overviewImageAssetId": "asset-annual-028-blip-2-portrait-junnan-li"
+}

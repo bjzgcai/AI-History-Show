@@ -6,10 +6,6 @@
     "zh": "后训练提升智能",
     "en": "Post-Training Improves Intelligence"
   },
-  "summary": {
-    "zh": "基础模型、后训练与智能体",
-    "en": "Foundation Models, Post-Training, and Agents"
-  },
   "description": {
     "zh": "随着高质量预训练数据、训练试验成本和模型规模化收益逐渐形成瓶颈，研究重心开始从单纯扩大预训练转向预训练之后的能力塑形。指令微调、人类反馈强化学习以及面向推理过程的强化学习，让基础模型更会遵循任务、对齐偏好并在复杂问题中探索更长的解题路径。",
     "en": "As high-quality pretraining data, experiment cost, and returns from scaling became more constraining, research attention shifted from simply enlarging pretraining toward shaping models after pretraining. Instruction tuning, reinforcement learning from feedback, and reinforcement learning for reasoning made foundation models better at following tasks, aligning with preferences, and exploring longer solution paths."

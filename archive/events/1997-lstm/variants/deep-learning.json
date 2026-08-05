@@ -53,9 +53,9 @@
   "assetIds": [
     "asset-sepp-hochreiter",
     "asset-1997-lstm-gated-memory",
-    "asset-1997-lstm-people-01",
     "asset-1997-lstm-architecture-01",
-    "asset-1997-lstm-architecture-02"
+    "asset-1997-lstm-architecture-02",
+    "asset-1997-lstm-people-01"
   ],
   "sourceIds": [
     "source-long-short-term-memory",

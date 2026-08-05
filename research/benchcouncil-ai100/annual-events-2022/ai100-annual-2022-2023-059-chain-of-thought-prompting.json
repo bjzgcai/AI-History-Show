@@ -1,0 +1,625 @@
+{
+  "schemaVersion": 1,
+  "eventId": "ai100-annual-2022-2023-059-chain-of-thought-prompting",
+  "status": "complete",
+  "officialOrder": 59,
+  "work": "Chain-of-Thought Prompting",
+  "official": {
+    "area": "LLM",
+    "publication": "Chain of Thought Prompting Elicits Reasoning in Large Language Models",
+    "citation": "1542",
+    "contributors": "Jason Wei, Denny Zhou",
+    "institution": "Google",
+    "country": "USA",
+    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+  },
+  "summary": {
+    "en": "A prompting method that elicits intermediate reasoning steps from sufficiently large language models",
+    "zh": "通过提示让足够大的语言模型生成中间推理步骤的方法"
+  },
+  "displaySummary": {
+    "en": "AI100 (2022-2023) · Intermediate reasoning through prompting",
+    "zh": "AI100（2022-2023）· 通过提示生成中间推理"
+  },
+  "description": {
+    "en": "<p>Chain-of-thought prompting showed that a few demonstrations containing intermediate reasoning steps can substantially improve large language models on arithmetic, commonsense and symbolic reasoning tasks. The method changes the prompt rather than the model weights.</p><p>The gains appeared most strongly at large model scales, suggesting that prompting can expose capabilities already latent in a pretrained model. This simple technique became a foundation for later work on self-consistency, tool use and structured reasoning.</p>",
+    "zh": "<p>思维链提示表明，只需在少量示例中加入中间推理步骤，就能显著改善大语言模型在算术、常识和符号推理任务上的表现。该方法改变的是提示，而不是模型权重。</p><p>提升主要出现在较大模型规模上，说明提示能够显化预训练模型中已经潜藏的能力。这一简单方法后来成为自洽性、工具使用和结构化推理研究的基础。</p>"
+  },
+  "people": [
+    {
+      "name": {
+        "en": "Jason Wei",
+        "zh": "杰森·魏"
+      },
+      "role": {
+        "en": "First author of the Chain-of-Thought Prompting paper",
+        "zh": "Chain-of-Thought Prompting 论文第一作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Jason Wei in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出杰森·魏，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "searched-no-selected-asset",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+        "reliability": "identity-confirmed-by-primary-publication; no sufficiently reusable portrait selected",
+        "rights": "No portrait is displayed; candidate identity and redistribution rights were not both strong enough for selection."
+      }
+    },
+    {
+      "name": {
+        "en": "Denny Zhou",
+        "zh": "丹尼·周"
+      },
+      "role": {
+        "en": "Co-author of the Chain-of-Thought Prompting paper",
+        "zh": "Chain-of-Thought Prompting 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Denny Zhou in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出丹尼·周，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "selected-primary-source",
+        "path": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg",
+        "sourceUrl": "https://dennyzhou.github.io/",
+        "imageUrl": "https://raw.githubusercontent.com/dennyzhou/dennyzhou.github.io/master/Pictures/zhou1.jpg",
+        "reliability": "primary-identity-source; personal homepage and publication list match",
+        "rights": "No image redistribution license is stated; used with attribution under the relaxed reference-image policy."
+      }
+    }
+  ],
+  "selectedPortrait": {
+    "personName": "Denny Zhou",
+    "image": {
+      "path": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg",
+      "sourceName": {
+        "en": "Denny Zhou personal homepage repository",
+        "zh": "丹尼·周个人主页仓库"
+      },
+      "sourceUrl": "https://dennyzhou.github.io/",
+      "imageUrl": "https://raw.githubusercontent.com/dennyzhou/dennyzhou.github.io/master/Pictures/zhou1.jpg",
+      "license": {
+        "en": "No redistribution license is stated; used with attribution under the project's relaxed reference-image policy.",
+        "zh": "未声明再分发许可；依据项目放宽后的参考图片策略使用，并保留来源署名。"
+      },
+      "attribution": "Denny Zhou",
+      "reliability": "primary-identity-source",
+      "usageStatus": "external-reference",
+      "notes": {
+        "en": "The portrait is stored in the researcher's personal GitHub Pages repository. The homepage identifies Denny Zhou as a Google DeepMind research scientist and lists the chain-of-thought paper.",
+        "zh": "肖像存放在研究者个人 GitHub Pages 仓库中；主页将丹尼·周介绍为 Google DeepMind 研究科学家，并列出思维链提示论文。"
+      },
+      "identityChecks": [
+        "exact-contributor-name",
+        "researcher-controlled-homepage",
+        "primary-paper-author",
+        "event-institution-match"
+      ],
+      "sourceNotesRequired": true
+    }
+  },
+  "supplementalAssets": [
+    {
+      "id": "asset-annual-059-chain-of-thought-paper-examples",
+      "path": "resources/images/external/ai100-2022-chain-of-thought/chain-of-thought-examples.png",
+      "role": "paper-figure",
+      "sourceUrl": "https://arxiv.org/abs/2201.11903",
+      "imageUrl": "https://export.arxiv.org/e-print/2201.11903",
+      "caption": {
+        "en": "Chain-of-thought reasoning examples",
+        "zh": "思维链推理示例"
+      },
+      "license": {
+        "en": "Author-submitted paper figure; displayed with full attribution under the relaxed reference-image policy.",
+        "zh": "作者提交的论文配图；依据放宽后的参考图片策略展示，并完整标注来源。"
+      },
+      "notes": {
+        "en": "Rendered locally from main_fables/cot-examples.pdf in the arXiv source package.",
+        "zh": "由 arXiv 源文件包中的 main_fables/cot-examples.pdf 在本地转换得到。"
+      }
+    }
+  ],
+  "sourceOverrides": {
+    "source-primary-record": {
+      "notes": {
+        "en": "Primary publication or official project record used for the central technical claims.",
+        "zh": "用于核心技术主张的主论文或官方项目记录。"
+      }
+    },
+    "source-benchcouncil-annual": {
+      "notes": {
+        "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+        "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
+      }
+    }
+  },
+  "additionalSources": [
+    {
+      "id": "source-cot-paper",
+      "type": "paper",
+      "label": {
+        "en": "Primary paper",
+        "zh": "原始论文"
+      },
+      "title": {
+        "en": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+        "zh": "《Chain-of-Thought Prompting Elicits Reasoning in Large Language Models》"
+      },
+      "url": "https://arxiv.org/abs/2201.11903",
+      "language": "en",
+      "purpose": "core-evidence",
+      "reliability": "primary",
+      "notes": {
+        "en": "Primary paper for few-shot chain-of-thought experiments and scale-dependent results.",
+        "zh": "用于核对少样本思维链实验和规模相关结果的原始论文。"
+      }
+    },
+    {
+      "id": "source-cot-google-blog",
+      "type": "official-page",
+      "label": {
+        "en": "Institution page",
+        "zh": "机构页面"
+      },
+      "title": {
+        "en": "Language models perform reasoning via chain of thought",
+        "zh": "Google Research：语言模型通过思维链进行推理"
+      },
+      "url": "https://research.google/blog/language-models-perform-reasoning-via-chain-of-thought/",
+      "language": "en",
+      "purpose": "background",
+      "reliability": "primary",
+      "notes": {
+        "en": "Google Research explanation of the prompting method and representative reasoning examples.",
+        "zh": "Google Research 对提示方法和代表性推理示例的官方说明。"
+      }
+    },
+    {
+      "id": "source-denny-zhou-profile",
+      "type": "personal-page",
+      "label": {
+        "en": "Personal homepage",
+        "zh": "个人主页"
+      },
+      "title": {
+        "en": "Denny Zhou personal homepage",
+        "zh": "丹尼·周个人主页"
+      },
+      "url": "https://dennyzhou.github.io/",
+      "language": "en",
+      "purpose": "biography",
+      "reliability": "primary",
+      "notes": {
+        "en": "Researcher-controlled identity page and publication list.",
+        "zh": "由研究者本人维护的身份页面与论文列表。"
+      }
+    },
+    {
+      "id": "source-annual-059-chain-of-thought-portrait-denny-zhou",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "Denny Zhou portrait from his personal homepage repository",
+        "zh": "丹尼·周个人主页仓库肖像"
+      },
+      "url": "https://github.com/dennyzhou/dennyzhou.github.io/blob/master/Pictures/zhou1.jpg",
+      "language": "und",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "First-party repository portrait used with attribution under the relaxed image policy.",
+        "zh": "第一方仓库肖像，依据放宽后的图片策略使用并保留署名。"
+      }
+    },
+    {
+      "id": "source-cot-paper-examples-figure",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "Chain-of-thought worked-example figure",
+        "zh": "思维链分步推理示例图"
+      },
+      "url": "https://arxiv.org/abs/2201.11903",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "Rendered from main_fables/cot-examples.pdf in the author-submitted arXiv source package.",
+        "zh": "由作者提交的 arXiv 源文件包中 main_fables/cot-examples.pdf 转换得到。"
+      }
+    }
+  ],
+  "additionalClaims": [
+    {
+      "id": "claim-core-method",
+      "importance": "core",
+      "text": {
+        "en": "Chain-of-Thought Prompting uses few-shot demonstrations with intermediate natural-language reasoning.",
+        "zh": "Chain-of-Thought Prompting 采用包含自然语言中间推理的少样本示范。"
+      },
+      "sourceIds": [
+        "source-cot-paper",
+        "source-primary-record"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "claim-historical-significance",
+      "importance": "display",
+      "text": {
+        "en": "Experts generally treat chain-of-thought prompting as a foundational interface for eliciting reasoning from large models, while cautioning that fluent rationales are not guaranteed to be faithful explanations. The method directly motivated self-consistency and many later reasoning-time strategies.",
+        "zh": "专家通常把思维链提示视为激发大模型推理能力的基础接口，同时提醒流畅的推理文字不一定忠实反映模型内部原因。该方法直接推动了自洽性以及许多后续推理时策略。"
+      },
+      "sourceIds": [
+        "source-cot-paper"
+      ],
+      "status": "verified"
+    }
+  ],
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Few-shot prompting let language models learn tasks from examples, but direct answer demonstrations often failed on multi-step problems. Chain-of-thought prompting inserted worked reasoning traces between each question and answer.",
+        "zh": "少样本提示让语言模型从示例中学习任务，但直接给答案的示例在多步问题上经常失败。思维链提示在问题与答案之间插入完整的推理过程。"
+      },
+      "sourceIds": [
+        "source-cot-paper",
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "The model is shown several natural-language rationales and then asked to produce its own intermediate steps before the final answer. This decomposition gives the model more computation in token space and makes errors easier to inspect.",
+        "zh": "模型先看到若干自然语言推理示例，再在给出最终答案前生成自己的中间步骤。这种分解让模型在 token 空间获得更多计算过程，也使错误更容易检查。"
+      },
+      "sourceIds": [
+        "source-cot-paper",
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat chain-of-thought prompting as a foundational interface for eliciting reasoning from large models, while cautioning that fluent rationales are not guaranteed to be faithful explanations. The method directly motivated self-consistency and many later reasoning-time strategies.",
+        "zh": "专家通常把思维链提示视为激发大模型推理能力的基础接口，同时提醒流畅的推理文字不一定忠实反映模型内部原因。该方法直接推动了自洽性以及许多后续推理时策略。"
+      },
+      "sourceIds": [
+        "source-cot-paper",
+        "source-primary-record"
+      ]
+    }
+  ],
+  "visualModule": {
+    "type": "archiveLink",
+    "site": {
+      "en": "Google Research publication",
+      "zh": "Google Research 论文页"
+    },
+    "title": {
+      "en": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "zh": "《Chain-of-Thought Prompting Elicits Reasoning in Large Language Models》"
+    },
+    "description": {
+      "en": "The institution page provides the paper record, abstract and author list for the original prompting study.",
+      "zh": "机构论文页提供原始提示研究的论文记录、摘要与作者表。"
+    },
+    "url": "https://research.google/pubs/chain-of-thought-prompting-elicits-reasoning-in-large-language-models/",
+    "action": {
+      "en": "Open Google Research paper page",
+      "zh": "打开 Google Research 论文页"
+    },
+    "source": "https://research.google/pubs/chain-of-thought-prompting-elicits-reasoning-in-large-language-models/",
+    "license": {
+      "en": "Reference link only; the local explainer is an original redraw.",
+      "zh": "仅作为参考链接；本地解释图为原创重绘。"
+    },
+    "usage": {
+      "en": "Technical, historical and interaction reference",
+      "zh": "技术、历史与互动说明参考"
+    }
+  },
+  "recordSvgSource": "research/benchcouncil-ai100/annual-events-2022/assets/ai100-annual-2022-2023-059-chain-of-thought-prompting.svg",
+  "recordAsset": {
+    "caption": {
+      "en": "Chain-of-Thought Prompting process explainer",
+      "zh": "Chain-of-Thought Prompting 流程解释图"
+    },
+    "subcaption": {
+      "en": "Few-shot demonstrations with intermediate natural-language reasoning",
+      "zh": "包含自然语言中间推理的少样本示范"
+    },
+    "sourceIds": [
+      "source-cot-paper",
+      "source-primary-record"
+    ],
+    "sourceName": {
+      "en": "Primary publication and original local synthesis",
+      "zh": "主论文与本地原创整理"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2201.11903",
+    "displayUsage": {
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
+    }
+  },
+  "achievement": {
+    "area": {
+      "en": "LLM",
+      "zh": "大语言模型"
+    },
+    "method": {
+      "en": "Few-shot demonstrations with intermediate natural-language reasoning",
+      "zh": "包含自然语言中间推理的少样本示范"
+    },
+    "artifact": {
+      "en": "A reusable chain-of-thought prompt pattern",
+      "zh": "可复用的思维链提示模式"
+    },
+    "material": {
+      "en": "Reasoning demonstrations and benchmark problem sets",
+      "zh": "推理示范与基准问题集"
+    },
+    "demo": {
+      "en": "Toggle between a direct-answer prompt and a worked-reasoning prompt, then compare the path to the final answer.",
+      "zh": "在直接回答提示与带推理过程的提示之间切换，比较到达最终答案的路径。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Demonstration",
+          "zh": "示范"
+        },
+        "text": {
+          "en": "Question, rationale and answer",
+          "zh": "问题、推理过程与答案"
+        }
+      },
+      {
+        "label": {
+          "en": "Elicitation",
+          "zh": "能力激发"
+        },
+        "text": {
+          "en": "No weight update is required",
+          "zh": "无需更新模型权重"
+        }
+      },
+      {
+        "label": {
+          "en": "Scale",
+          "zh": "规模效应"
+        },
+        "text": {
+          "en": "Benefits emerge in sufficiently large models",
+          "zh": "收益主要出现在足够大的模型"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Worked examples",
+        "zh": "带过程的示例"
+      },
+      {
+        "en": "Generate intermediate steps",
+        "zh": "生成中间步骤"
+      },
+      {
+        "en": "Produce final answer",
+        "zh": "给出最终答案"
+      }
+    ],
+    "demoImage": "resources/images/benchcouncil-ai100-annual/annual-059-chain-of-thought-prompting_record.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Evidence cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "The experiments compare standard prompting with chain-of-thought demonstrations across arithmetic, commonsense and symbolic tasks.",
+          "zh": "实验在算术、常识和符号任务上比较标准提示与思维链示范。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Toggle between a direct-answer prompt and a worked-reasoning prompt, then compare the path to the final answer.",
+          "zh": "在直接回答提示与带推理过程的提示之间切换，比较到达最终答案的路径。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Google Research publication",
+          "zh": "Google Research 论文页"
+        },
+        "title": {
+          "en": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "zh": "《Chain-of-Thought Prompting Elicits Reasoning in Large Language Models》"
+        },
+        "description": {
+          "en": "The institution page provides the paper record, abstract and author list for the original prompting study.",
+          "zh": "机构论文页提供原始提示研究的论文记录、摘要与作者表。"
+        },
+        "url": "https://research.google/pubs/chain-of-thought-prompting-elicits-reasoning-in-large-language-models/",
+        "action": {
+          "en": "Open Google Research paper page",
+          "zh": "打开 Google Research 论文页"
+        },
+        "source": "https://research.google/pubs/chain-of-thought-prompting-elicits-reasoning-in-large-language-models/",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Technical, historical and interaction reference",
+          "zh": "技术、历史与互动说明参考"
+        }
+      }
+    ]
+  },
+  "quiz": {
+    "question": {
+      "en": "What does chain-of-thought prompting add to few-shot examples?",
+      "zh": "思维链提示在少样本示例中增加了什么？"
+    },
+    "options": [
+      {
+        "en": "Intermediate reasoning steps",
+        "zh": "中间推理步骤"
+      },
+      {
+        "en": "New model weights",
+        "zh": "新的模型权重"
+      },
+      {
+        "en": "Robot sensor readings",
+        "zh": "机器人传感器读数"
+      },
+      {
+        "en": "Image segmentation masks",
+        "zh": "图像分割掩码"
+      }
+    ],
+    "explanation": {
+      "en": "The prompt includes worked rationales between each question and final answer.",
+      "zh": "提示在问题与最终答案之间加入完整的推理过程。"
+    },
+    "sourceIds": [
+      "source-cot-paper"
+    ],
+    "answer": 0
+  },
+  "reviewNotes": {
+    "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+    "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
+  },
+  "supplementaryAssets": [
+    {
+      "id": "asset-annual-059-chain-of-thought-portrait-denny-zhou",
+      "type": "image",
+      "path": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg",
+      "role": "portrait",
+      "caption": {
+        "zh": "丹尼·周肖像",
+        "en": "Denny Zhou portrait"
+      },
+      "subcaption": {
+        "en": "Co-author of the Chain-of-Thought Prompting paper",
+        "zh": "Chain-of-Thought Prompting 论文共同作者"
+      },
+      "sourceId": "source-annual-059-chain-of-thought-portrait-denny-zhou",
+      "sourceName": {
+        "en": "Denny Zhou personal homepage repository",
+        "zh": "丹尼·周个人主页仓库"
+      },
+      "sourceUrl": "https://dennyzhou.github.io/",
+      "rights": {
+        "status": "external-reference",
+        "license": {
+          "en": "The personal repository states no image redistribution license; used with attribution under the project's relaxed reference-image policy.",
+          "zh": "个人仓库未声明图片再分发许可；依据项目放宽后的参考图片策略使用，并保留来源署名。"
+        },
+        "attribution": "Denny Zhou"
+      },
+      "displayUsage": {
+        "en": "Verified contributor portrait",
+        "zh": "已核验的主要人物肖像"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    },
+    {
+      "id": "asset-annual-059-chain-of-thought-paper-examples",
+      "type": "image",
+      "path": "resources/images/external/ai100-2022-chain-of-thought/chain-of-thought-examples.png",
+      "role": "paper-figure",
+      "caption": {
+        "zh": "思维链推理示例",
+        "en": "Chain-of-thought reasoning examples"
+      },
+      "subcaption": {
+        "zh": "论文展示算术、常识、符号和具身任务中的分步推理过程。",
+        "en": "The paper shows worked rationales across arithmetic, commonsense, symbolic and embodied tasks."
+      },
+      "sourceId": "source-cot-paper-examples-figure",
+      "sourceName": {
+        "en": "Chain-of-thought arXiv source package",
+        "zh": "思维链提示论文 arXiv 源文件包"
+      },
+      "sourceUrl": "https://arxiv.org/abs/2201.11903",
+      "rights": {
+        "status": "external-reference",
+        "license": {
+          "en": "Author-submitted paper figure; displayed with full paper attribution under the project's relaxed reference-image policy.",
+          "zh": "作者提交的论文配图；依据项目放宽后的参考图片策略展示，并完整标注论文来源。"
+        },
+        "attribution": "Wei et al., Chain-of-Thought Prompting Elicits Reasoning in Large Language Models (2022)"
+      },
+      "displayUsage": {
+        "en": "Primary-paper worked examples",
+        "zh": "主论文分步推理示例"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    }
+  ],
+  "assetIds": [
+    "asset-annual-059-chain-of-thought-portrait-denny-zhou",
+    "asset-annual-059-chain-of-thought-paper-examples",
+    "asset-annual-059-chain-of-thought-prompting-record"
+  ],
+  "overviewImageAssetId": "asset-annual-059-chain-of-thought-portrait-denny-zhou"
+}
