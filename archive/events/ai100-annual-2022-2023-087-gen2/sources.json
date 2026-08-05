@@ -1,0 +1,246 @@
+[
+  {
+    "id": "source-primary-record",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Gen-2 by Runway Research",
+      "zh": "Runway Research：Gen-2"
+    },
+    "authors": [
+      "Anastasis Germanidis"
+    ],
+    "year": 2023,
+    "url": "https://runway.com/research/gen-2",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official Runway research page used to verify the system name, the Anastasis Germanidis byline, eight conditioning modes and Runway's self-reported preference results.",
+      "zh": "Runway 官方研究页，用于核对系统名称、Anastasis Germanidis 署名、八种条件模式与 Runway 自报的偏好测试结果。"
+    }
+  },
+  {
+    "id": "source-openalex-record",
+    "type": "paper-index",
+    "label": {
+      "en": "Paper index",
+      "zh": "论文索引"
+    },
+    "title": {
+      "en": "OpenAlex record for Gen2",
+      "zh": "Gen2 的 OpenAlex 文献记录"
+    },
+    "url": "https://api.openalex.org/works?search=Gen2",
+    "language": "en",
+    "purpose": "bibliographic-verification",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Bibliographic metadata is retained only as a secondary cross-check; technical and identity claims use primary records.",
+      "zh": "书目元数据仅作为辅助交叉核对；技术与人物主张使用原始记录。"
+    }
+  },
+  {
+    "id": "source-benchcouncil-annual",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "AI100: Top 100 AI achievements (2022-2023)",
+      "zh": "AI100：人工智能百大成就（2022-2023）"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
+      "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+    }
+  },
+  {
+    "id": "source-anastasis-homepage",
+    "type": "personal-page",
+    "label": {
+      "en": "Personal homepage",
+      "zh": "个人主页"
+    },
+    "title": {
+      "en": "Anastasis Germanidis personal homepage",
+      "zh": "Anastasis Germanidis 个人网站"
+    },
+    "url": "https://agermanidis.com/",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "Researcher-controlled page identifying Germanidis as a Runway co-founder and co-CEO focused on research efforts in video-generation models, with direct links to Gen-2 and the Ray Summit talk used for the portrait candidate.",
+      "zh": "研究者本人维护的页面，说明 Germanidis 是 Runway 联合创始人、联合 CEO，专注视频生成模型研究，并直接链接 Gen-2 与用于肖像候选核验的 Ray Summit 演讲。"
+    }
+  },
+  {
+    "id": "source-anastasis-ray-summit",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "A Brief History of Video Generation: Runway Co-founder Anastasis Germanidis",
+      "zh": "《视频生成简史：Runway 联合创始人 Anastasis Germanidis》"
+    },
+    "url": "https://www.youtube.com/watch?v=iMttGrkgn5E",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Anyscale's official Ray Summit 2024 video and thumbnail clearly name and depict Germanidis. His personal homepage links to this exact video; the thumbnail is a reliable identity match but is not selected because BenchCouncil lists no official contributor for Gen2.",
+      "zh": "Anyscale 发布的 Ray Summit 2024 官方视频及缩略图清楚标注并展示 Germanidis；其个人网站直接链接到该视频。缩略图的人物身份匹配可靠，但 Gen2 的 BenchCouncil 官方人物字段为空，因此不选用为事件肖像。"
+    }
+  },
+  {
+    "id": "source-anastasis-cognitive-interview",
+    "type": "article",
+    "label": {
+      "en": "Article",
+      "zh": "文章"
+    },
+    "title": {
+      "en": "Runway's Video Revolution, with CTO Anastasis",
+      "zh": "《Runway 的视频革命：与 CTO Anastasis 对谈》"
+    },
+    "url": "https://www.cognitiverevolution.ai/runwaymls-video-revolution-empowering-creators-with-general-world-models-with-cto-anastasis/",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "secondary",
+    "notes": {
+      "en": "The 2024 interview page identifies Anastasis Germanidis as a Runway co-founder and CTO and publishes a cover containing his clear portrait. The cover also contains two hosts and promotional text, so it is documented as a secondary candidate rather than selected as a standalone portrait.",
+      "zh": "这篇 2024 年访谈将 Anastasis Germanidis 标明为 Runway 联合创始人、CTO，并发布包含其清晰头像的封面。封面同时包含两位主持人和宣传文字，因此只记录为备用候选，不选作独立人物肖像。"
+    }
+  },
+  {
+    "id": "source-gen2-official-image",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Runway Gen-2 research-page introduction image",
+      "zh": "Runway Gen-2 研究页介绍图片"
+    },
+    "url": "https://runway-static-assets.s3.amazonaws.com/site/images/news/Researchhub_014.jpg",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official Runway-hosted image associated with the Gen-2 research page. It is a strong event-image candidate, but this package retains the required original local explainer as its single selected event visual; no redistribution license is stated.",
+      "zh": "Runway 官方托管、与 Gen-2 研究页关联的介绍图片。它是可靠的事件图片候选，但本事件继续以必需的本地原创解释图作为唯一选用的事件视觉；来源未声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-gen2-official-t2v-example",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Gen-2 Mode 01 text-to-video example frame",
+      "zh": "Gen-2 模式 01 文生视频示例帧"
+    },
+    "url": "https://d3phaj0sisr2ct.cloudfront.net/research/gen2/WebGEN2R_T2V/WebGEN2R_T2V.jpg",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Still frame hosted and embedded by Runway under Mode 01: Text to Video, paired with the prompt about late-afternoon sunlight in a New York City loft. It is a stronger explanatory product image than the abstract Open Graph image, but any use must label it as a generated example rather than documentary photography.",
+      "zh": "Runway 在“模式 01：文生视频”下官方托管并嵌入的示例帧，对应纽约阁楼午后阳光的提示词。它比抽象的 Open Graph 主图更适合说明产品能力，但使用时必须标注为生成示例，不能让观众误以为是真实纪实摄影。"
+    }
+  },
+  {
+    "id": "source-gen1-paper",
+    "type": "paper",
+    "label": {
+      "en": "Background paper",
+      "zh": "背景论文"
+    },
+    "title": {
+      "en": "Structure and Content-Guided Video Synthesis with Diffusion Models",
+      "zh": "《使用扩散模型进行结构与内容引导的视频合成》"
+    },
+    "url": "https://arxiv.org/abs/2302.03011",
+    "language": "en",
+    "purpose": "background",
+    "reliability": "primary",
+    "notes": {
+      "en": "Runway’s preceding Gen-1 paper provides technical background for structure- and content-guided video generation; it is not presented as a full technical specification of Gen-2. Figure 2 is the paper's most useful architecture overview, separating training from inference and showing the autoencoder, diffusion model, MiDaS structure signal and CLIP content signal.",
+      "zh": "Runway 的 Gen-1 论文提供结构与内容引导视频生成的技术背景；不把它视为 Gen-2 的完整技术说明。论文 Figure 2 是最有说明力的架构总览，区分训练与推理，并展示自编码器、扩散模型、MiDaS 结构信号与 CLIP 内容信号。"
+    }
+  },
+  {
+    "id": "source-gen1-overview-figure",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Gen-1 paper Figure 2: training and inference overview",
+      "zh": "Gen-1 论文 Figure 2：训练与推理总览"
+    },
+    "url": "https://ar5iv.labs.arxiv.org/html/2302.03011/assets/figures/overview-00.jpg",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Publisher-rendered copy of Figure 2 from the Gen-1 paper. It is a useful commonly cited technical screenshot for the Runway video-diffusion lineage, but it must not be captioned as the disclosed architecture of Gen-2. The existing local explainer remains preferred for display because it avoids that attribution risk.",
+      "zh": "Gen-1 论文 Figure 2 的论文 HTML 渲染图。它适合作为 Runway 视频扩散技术脉络中常见的技术截图，但不得标注成 Gen-2 已公开架构。现有本地原创解释图仍更适合页面展示，因为可以避免这种归属误读。"
+    }
+  },
+  {
+    "id": "source-runway-brand-guidelines",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Runway Brand Assets and Guidelines",
+      "zh": "Runway 品牌资产与使用指南"
+    },
+    "url": "https://runway.com/brand-guidelines",
+    "language": "en",
+    "purpose": "official-statement",
+    "reliability": "primary",
+    "notes": {
+      "en": "Runway's official brand page provides a downloadable logo pack and states that the company name should appear as 'Runway,' not 'Runway AI' or 'RunwayML.' It requires the wordmark to stand alone, permits the symbol as a substitute in small applications, sets a 24-pixel minimum digital height and specifies black-on-light or white-on-dark usage. Downloading the pack requires acceptance of Runway's applicable guidelines and terms, so no unrestricted redistribution license should be inferred.",
+      "zh": "Runway 官方品牌页提供可下载的 Logo Pack，并明确公司名称应写作“Runway”，而不是“Runway AI”或“RunwayML”。指南要求字标单独使用，小尺寸场景可用符号替代，数字媒体中的标识高度不得小于 24 像素，并规定浅色背景使用黑色字标、深色背景使用白色字标。下载素材包即表示接受 Runway 的适用指南与条款，因此不能推断为不受限制的再分发许可。"
+    }
+  },
+  {
+    "id": "source-runway-logo",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Runway official wordmark",
+      "zh": "Runway 官方字标"
+    },
+    "url": "https://runway.com/images/logos/runway-logo.png",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Runway's official homepage organization metadata declares this company-hosted PNG as its logo. The file is a 571 by 128 transparent wordmark and is selected as the event's institution-identification image ahead of the original Gen-2 explainer. It must remain unmodified on a light background and must not be rotated, skewed or combined with the separate symbol.",
+      "zh": "Runway 官方首页的机构结构化数据将这张公司托管 PNG 声明为 Logo。文件为 571×128 的透明背景字标，现选作事件的机构识别图，排列在原创 Gen-2 解释图之前。展示时必须保持图形不变并使用浅色背景，不得旋转、倾斜或与独立符号自行组合。"
+    }
+  }
+]

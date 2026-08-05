@@ -1,0 +1,179 @@
+[
+  {
+    "id": "source-primary-record",
+    "type": "paper",
+    "label": {
+      "en": "Primary paper",
+      "zh": "原始论文"
+    },
+    "title": {
+      "en": "LLaMA: Open and Efficient Foundation Language Models",
+      "zh": "《LLaMA：开放高效的基础语言模型》"
+    },
+    "authors": [
+      "Hugo Touvron",
+      "Thibaut Lavril",
+      "Gautier Izacard",
+      "Xavier Martinet",
+      "Marie-Anne Lachaux",
+      "Timothee Lacroix",
+      "Baptiste Roziere",
+      "Naman Goyal",
+      "Eric Hambro",
+      "Faisal Azhar",
+      "Aurelien Rodriguez",
+      "Armand Joulin",
+      "Edouard Grave",
+      "Guillaume Lample"
+    ],
+    "year": 2023,
+    "url": "https://arxiv.org/abs/2302.13971",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary paper used to verify authorship, model scales, training data policy and evaluation claims.",
+      "zh": "用于核对作者、模型规模、训练数据政策与评测主张的主论文。"
+    }
+  },
+  {
+    "id": "source-openalex-record",
+    "type": "paper-index",
+    "label": {
+      "en": "Paper index",
+      "zh": "论文索引"
+    },
+    "title": {
+      "en": "OpenAlex record for Llama: Open and efficient foundation language models",
+      "zh": "Llama: Open and efficient foundation language models 的 OpenAlex 文献记录"
+    },
+    "url": "https://openalex.org/W4322718191",
+    "language": "en",
+    "purpose": "bibliographic-verification",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Bibliographic metadata is retained only as a secondary cross-check; technical and identity claims use primary records.",
+      "zh": "书目元数据仅作为辅助交叉核对；技术与人物主张使用原始记录。"
+    }
+  },
+  {
+    "id": "source-benchcouncil-annual",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "AI100: Top 100 AI achievements (2022-2023)",
+      "zh": "AI100：人工智能百大成就（2022-2023）"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
+      "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+    }
+  },
+  {
+    "id": "source-annual-035-llama-portrait-edouard-grave",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Edouard Grave portrait source",
+      "zh": "爱德华·格拉夫人物图片来源"
+    },
+    "url": "https://github.com/EdouardGrave",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "secondary",
+    "notes": {
+      "en": "The exact-name GitHub profile publishes this portrait; the primary LLaMA paper independently confirms Edouard Grave as a Meta-affiliated author. Reliability: researcher-controlled-exact-name-profile. Usage note: The source states no redistribution license; retain attribution and recheck before redistribution outside this project.",
+      "zh": "该同名 GitHub 资料发布此肖像；LLaMA 主论文独立确认爱德华·格拉夫是 Meta 作者。 可靠性：researcher-controlled-exact-name-profile。使用备注：来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+    }
+  },
+  {
+    "id": "source-meta-announcement",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Introducing LLaMA: A foundational, 65-billion-parameter language model",
+      "zh": "Meta 发布 LLaMA：650 亿参数基础语言模型"
+    },
+    "url": "https://ai.meta.com/blog/large-language-model-llama-meta-ai/",
+    "language": "en",
+    "purpose": "official-statement",
+    "reliability": "primary",
+    "notes": {
+      "en": "Meta announcement describing the research release and intended research access.",
+      "zh": "Meta 官方发布页，说明研究发布与面向研究用途的访问方式。"
+    }
+  },
+  {
+    "id": "source-llama-repository",
+    "type": "code",
+    "label": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "title": {
+      "en": "Meta Llama official repository",
+      "zh": "Meta Llama 官方仓库"
+    },
+    "url": "https://github.com/facebookresearch/llama",
+    "language": "en",
+    "purpose": "implementation",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official repository for model loading and later Llama releases; used as implementation lineage evidence.",
+      "zh": "官方模型加载与后续 Llama 发布仓库，用作实现沿革证据。"
+    }
+  },
+  {
+    "id": "source-edouard-github-profile",
+    "type": "profile",
+    "label": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "title": {
+      "en": "Edouard Grave GitHub profile",
+      "zh": "爱德华·格拉夫 GitHub 个人资料"
+    },
+    "url": "https://github.com/EdouardGrave",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Researcher-controlled exact-name profile publishing the selected photograph. The LLaMA paper provides the independent authorship and Meta-affiliation check; the avatar has no stated redistribution license.",
+      "zh": "研究者本人维护的同名资料页发布所选照片；LLaMA 论文提供独立的作者与 Meta 机构核验。头像未声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-llama-official-image",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Meta LLaMA announcement hero image",
+      "zh": "Meta LLaMA 发布页主图"
+    },
+    "url": "https://ai.meta.com/static-resource/1246990805922172/",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Meta-hosted hero image from the official LLaMA announcement, presenting the release as a foundational model for AI research. It is a reliable official introduction image rather than a disclosed architecture diagram; the existing original local explainer remains the single selected explanatory image, and Meta states no separate redistribution license for the asset.",
+      "zh": "Meta 官方 LLaMA 发布页托管的主图，把该成果介绍为面向 AI 研究的基础模型。它是可靠的官方介绍图片，不是公开架构图；页面仍只选用现有本地原创解释图，Meta 未为该素材单独声明再分发许可。"
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-048-instructgpt-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "What supplies the reward signal in InstructGPT?",
+      "zh": "InstructGPT 的奖励信号来自什么？"
+    },
+    "options": [
+      {
+        "en": "A model learned from human preference rankings",
+        "zh": "从人类偏好排序中学习的奖励模型"
+      },
+      {
+        "en": "Only next-token likelihood",
+        "zh": "只有下一个 token 的似然"
+      },
+      {
+        "en": "A fixed grammar checker",
+        "zh": "固定语法检查器"
+      },
+      {
+        "en": "Random scores",
+        "zh": "随机分数"
+      }
+    ],
+    "explanation": {
+      "en": "Human rankings train a reward model, which then guides PPO policy optimization.",
+      "zh": "人类排序用于训练奖励模型，随后由它指导 PPO 策略优化。"
+    },
+    "sourceIds": [
+      "source-instructgpt-paper"
+    ],
+    "answer": 0,
+    "assetIds": [
+      "asset-annual-048-instructgpt-record"
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "id": "ai100-annual-2022-2023-058-chatgpt",
+  "year": 2022,
+  "date": "2022",
+  "title": {
+    "en": "ChatGPT",
+    "zh": "ChatGPT"
+  },
+  "summary": {
+    "en": "A conversational interface and dialogue-tuned model that brought instruction-following AI to a mass audience",
+    "zh": "通过对话界面与对话调优模型把指令式 AI 带给大众用户"
+  },
+  "description": {
+    "en": "<p>ChatGPT launched publicly on November 30, 2022 as a research preview built from the InstructGPT lineage. It used supervised dialogue data and reinforcement learning from human feedback so the model could answer follow-up questions, acknowledge mistakes and respond within a continuing conversation.</p><p>The accessible chat interface dramatically lowered the barrier to trying a general-purpose language model. Its rapid adoption changed public expectations for search, writing, coding, education and human-computer interaction, while exposing reliability and safety limits at unprecedented scale.</p>",
+    "zh": "<p>ChatGPT 于 2022 年 11 月 30 日作为研究预览公开发布，技术路线承接 InstructGPT。它使用监督式对话数据和基于人类反馈的强化学习，使模型能够回答追问、承认错误，并在连续对话中作出回应。</p><p>易用的聊天界面大幅降低了体验通用语言模型的门槛。它的快速普及改变了公众对搜索、写作、编程、教育和人机交互的预期，也以前所未有的规模暴露出可靠性与安全局限。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "chatgpt-product",
+      "name": {
+        "en": "ChatGPT",
+        "zh": "ChatGPT"
+      },
+      "role": {
+        "en": "OpenAI conversational AI product",
+        "zh": "OpenAI 对话式 AI 产品"
+      },
+      "figureType": "product",
+      "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+      "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
+    }
+  }
+}

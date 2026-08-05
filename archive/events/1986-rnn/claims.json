@@ -3,8 +3,8 @@
     "id": "claim-legacy-achievement-summary",
     "importance": "core",
     "text": {
-      "zh": "迈克尔·乔丹在 1986 年提出输出反馈网络，杰弗里·埃尔曼在 1990 年展示隐藏状态反馈网络，两者成为早期 RNN 的代表结构。",
-      "en": "Michael Jordan proposed an output-feedback network in 1986, and Jeffrey Elman demonstrated a hidden-state feedback network in 1990; both became representative early RNN architectures."
+      "zh": "迈克尔·I·乔丹在 1986 年提出输出反馈网络，杰弗里·埃尔曼在 1990 年展示隐藏状态反馈网络，两者成为早期 RNN 的代表结构。",
+      "en": "Michael I. Jordan proposed an output-feedback network in 1986, and Jeffrey Elman demonstrated a hidden-state feedback network in 1990; both became representative early RNN architectures."
     },
     "sourceIds": [
       "source-jordan-serial-order-report",

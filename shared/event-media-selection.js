@@ -1,6 +1,6 @@
 (function (globalScope) {
-    const ARCHITECTURE_ROLE_PATTERN = /^(?:architecture-explainer|historical-diagram)$/i;
-    const EXPLANATION_ROLE_PATTERN = /^algorithm-explainer$/i;
+    const ARCHITECTURE_ROLE_PATTERN = /^(?:architecture-explainer|architecture-diagram|historical-diagram)$/i;
+    const EXPLANATION_ROLE_PATTERN = /^(?:algorithm-explainer|annual-achievement-explainer)$/i;
     const PORTRAIT_ROLE_PATTERN = /(?:portrait|person|people|team-photo|hero-image)/i;
     const NON_STRUCTURAL_MEDIA_ROLE_PATTERN = /(?:game-record|gameplay|replay|video)/i;
     const STRUCTURAL_PATH_PATTERN = /(?:^|\/)(?:architecture|explainers)(?:\/|$)|diagram|flow|pipeline/i;

@@ -1,0 +1,64 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "PaLM-E is row 37 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "PaLM-E 是 BenchCouncil AI100（2022-2023）年度表第 37 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates PaLM-E with “Palm-e: An embodied multimodal language model”.",
+      "zh": "年度表把 PaLM-E 与论文《Palm-e: An embodied multimodal language model》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Danny Driess, Pete Florence”.",
+      "zh": "“主要人物”字段依次列出 丹尼·德里斯、皮特·弗洛伦斯；官方英文原文为“Danny Driess, Pete Florence”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-multimodal-sentence",
+    "importance": "core",
+    "text": {
+      "en": "PaLM-E maps continuous sensor observations into embeddings that are interleaved with text tokens for a pretrained language model.",
+      "zh": "PaLM-E 把连续传感器观察映射为嵌入，并与文本 token 交错输入预训练语言模型。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-palm-e-project"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-positive-transfer",
+    "importance": "core",
+    "text": {
+      "en": "The paper reports positive transfer across embodied, vision-language and language tasks as model scale increases.",
+      "zh": "论文报告随着模型规模增加，具身、视觉语言与语言任务之间出现正向迁移。"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "status": "verified"
+  }
+]

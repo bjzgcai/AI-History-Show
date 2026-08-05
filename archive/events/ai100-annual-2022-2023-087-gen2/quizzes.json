@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-087-gen2-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "Which media can be used to guide Gen-2 according to its public research page?",
+      "zh": "根据公开研究页，哪些媒体可以引导 Gen-2？"
+    },
+    "options": [
+      {
+        "en": "Text, images and video references",
+        "zh": "文本、图像与视频参考"
+      },
+      {
+        "en": "Only spreadsheets",
+        "zh": "只有电子表格"
+      },
+      {
+        "en": "Only audio transcripts",
+        "zh": "只有音频文字稿"
+      },
+      {
+        "en": "Only GPS coordinates",
+        "zh": "只有 GPS 坐标"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Runway presented Gen-2 with text-to-video, image-to-video and video-conditioned workflows.",
+      "zh": "Runway 展示了 Gen-2 的文生视频、图生视频与视频条件工作流。"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "assetIds": [
+      "asset-annual-087-gen2-record"
+    ]
+  }
+]

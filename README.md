@@ -70,13 +70,14 @@ When authoring content, use bilingual objects such as `{ zh: "...", en: "..." }`
 
 ## Storylines
 
-The single-screen entry includes a storyline selector dialog in the top bar. The generated runtime contains 174 Archive milestones across four source storylines, plus a unified map that merges deep-learning and AI100 records for browsing:
+The single-screen entry includes a storyline selector dialog in the top bar. The generated runtime contains 214 Archive milestones across five source storylines. The unified map merges the four long-term storylines; the 2022-2023 AI100 view retains only the twenty curated annual highlights:
 
 | Public view                     | Archive records | Notes                                                                                                                 |
 | ------------------------------- | --------------: | --------------------------------------------------------------------------------------------------------------------- |
 | AI History Map                  |    Derived view | Unified browser combining deep-learning milestones and AI100 achievements                                             |
 | The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI | 30 | Technical timeline from early AI through neural networks, scaled learning, and modern architectures            |
-| Top AI Achievements (BenchCouncil) |          119 | Canonical root-table membership with source cards, context sections, demos, and quizzes                               |
+| Top AI Achievements (BenchCouncil) |          139 | 119 canonical root-table achievements plus twenty curated 2022-2023 highlights                                      |
+| AI100 annual highlights         |              20 | Ten selected turning points from 2022 and ten from 2023, with sources, demos, and quizzes                            |
 | AI in Board & Tabletop Games    |              13 | Horizontal branch timeline covering search, learned evaluation, self-play, poker, mahjong, and learned-model planning |
 | Humanistic & emotional cycles   |              12 | Sci-fi prophecy, technology hype, AI winters, and risk debates                                                        |
 
@@ -85,6 +86,7 @@ Open a specific storyline directly with `?storyline=...`, for example:
 ```text
 http://localhost:8000/index.html?storyline=deep-learning-history
 http://localhost:8000/index.html?storyline=bench-council-ai100
+http://localhost:8000/index.html?storyline=bench-council-ai100-2022-2023
 http://localhost:8000/index.html?storyline=gaming-ai
 http://localhost:8000/index.html?storyline=humanistic-cycle
 ```
@@ -118,6 +120,7 @@ For AI100 content work, also run:
 npm run validate:ai100-context
 npm run validate:ai100-quizzes
 npm run audit:ai100-accuracy
+npm run audit:ai100-annual
 ```
 
 Modules that should be prioritized for additional test coverage:
@@ -245,7 +248,7 @@ AI-History-Show/
 - **3D globe**: Three.js rendering, auto-locates to the geographic coordinates of the current event
 - **Bilingual UI**: Switch between Chinese and English at any time; the choice persists across sessions
 - **Page navigation**: Buttons or keyboard arrows (`←` / `→`)
-- **Storyline selector**: Dialog-based selector for the unified history map, the connectionism storyline, AI100, gaming AI, and the humanistic cycle
+- **Storyline selector**: Dialog-based selector for the unified history map, the connectionism storyline, canonical AI100, AI100 (2022-2023), gaming AI, and the humanistic cycle
 - **AI100 achievement map**: Region filtering, source cards, paper-style demos, and grounded quizzes
 - **Gaming AI branch**: Horizontal timeline with game-record/evolution modules and branch-specific source cards
 - **Humanistic cycle**: Cultural counter-timeline connecting science fiction, hype, AI winters, ethics, and risk debates

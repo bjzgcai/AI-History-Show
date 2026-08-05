@@ -1,0 +1,80 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Swin Transformer V2 is row 1 of the BenchCouncil AI100 (2022-2023) annual table in the Vision area.",
+      "zh": "Swin Transformer V2 是 BenchCouncil AI100（2022-2023）年度表第 1 行，所属领域为“视觉”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Swin Transformer V2 with “Swin Transformer V2: Scaling Up Capacity and Resolution”.",
+      "zh": "年度表把 Swin Transformer V2 与论文《Swin Transformer V2: Scaling Up Capacity and Resolution》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Ze Liu, Han Hu”.",
+      "zh": "“主要人物”字段依次列出 刘泽、胡瀚；官方英文原文为“Ze Liu, Han Hu”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributors-cross-verified",
+    "importance": "core",
+    "text": {
+      "en": "Ze Liu and Han Hu, the two main contributors named by BenchCouncil, are both authors of the CVPR 2022 paper; their researcher-controlled homepages independently identify the same people and work.",
+      "zh": "BenchCouncil 列出的两位主要人物刘泽和胡瀚均为 CVPR 2022 论文作者；两人的个人学术主页也分别确认了同一人物与成果。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual",
+      "source-cvf-paper-page",
+      "source-ze-liu-profile",
+      "source-han-hu-profile"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-scaling-techniques",
+    "importance": "core",
+    "text": {
+      "en": "Swin Transformer V2 combines residual post-normalization and scaled cosine attention for stability, log-spaced continuous position bias for resolution transfer, and SimMIM pretraining to reduce labeled-data demand.",
+      "zh": "Swin Transformer V2 使用残差后归一化与缩放余弦注意力提升稳定性，以对数间隔连续位置偏置支持分辨率迁移，并用 SimMIM 预训练降低对标注数据的需求。"
+    },
+    "sourceIds": [
+      "source-cvf-paper-page",
+      "source-microsoft-research-publication"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-model-scale-and-benchmarks",
+    "importance": "display",
+    "text": {
+      "en": "The paper reports a 3-billion-parameter model, inputs up to 1536 x 1536, and results across ImageNet-V2, COCO, ADE20K and Kinetics-400.",
+      "zh": "论文报告了 30 亿参数模型、最高 1536 x 1536 的输入分辨率，以及在 ImageNet-V2、COCO、ADE20K 和 Kinetics-400 上的结果。"
+    },
+    "sourceIds": [
+      "source-cvf-paper-page",
+      "source-microsoft-research-publication"
+    ],
+    "status": "verified"
+  }
+]
