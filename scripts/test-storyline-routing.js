@@ -177,6 +177,8 @@ const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf
 const dualScreenHtml = fs.readFileSync(path.join(__dirname, '..', 'dual-screen.html'), 'utf8');
 const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
 const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
+const imageLoadingSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'image-loading.js'), 'utf8');
+const thumbnailManifestSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'thumbnail-manifest.js'), 'utf8');
 const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
 const pqMiniProgramQrPath = path.join(__dirname, '..', 'resources', 'pq.png');
 assert.match(
@@ -694,8 +696,43 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?image\.src = imageUrl[\s\S]*?captionTitle\.innerHTML = escapeHtmlWithCjkTail[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
-    'detail image changes should update the media, caption, and pager without rebuilding the full detail page'
+    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?image\.loading = 'eager';[\s\S]*?image\.src = imageUrl;[\s\S]*?captionTitle\.innerHTML = escapeHtmlWithCjkTail[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
+    'detail image changes should update the original media, caption, and pager without rebuilding the full detail page'
+);
+assert.match(
+    imageLoadingSource,
+    /const THUMB_ROOT = 'resources\/images\/_thumbs\/'[\s\S]*?function getPreviewUrl\(url\)[\s\S]*?AIHistoryThumbnailManifest[\s\S]*?function attachPreviewFallback\(image\)/,
+    'shared image loading should use the generated thumbnail manifest and fall back to originals'
+);
+assert.match(
+    thumbnailManifestSource,
+    /AIHistoryThumbnailManifest = new Set\(/,
+    'the generated thumbnail manifest should expose the retained preview assets'
+);
+assert.match(
+    indexHtml,
+    /<script src="shared\/thumbnail-manifest\.js"><\/script>\s*<script src="shared\/image-loading\.js"><\/script>/,
+    'single-screen entry should load the thumbnail manifest before image loading'
+);
+assert.match(
+    dualScreenHtml,
+    /<script src="shared\/thumbnail-manifest\.js"><\/script>\s*<script src="shared\/image-loading\.js"><\/script>/,
+    'dual-screen entry should load the thumbnail manifest before image loading'
+);
+assert.match(
+    indexHtml,
+    /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?<script src="shared\/chronology-overview\.js[\s\S]*?function buildFigureAvatar\(figure, avatarSource\)[\s\S]*?buildPreviewImageAttributes\(avatarSource\.src[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?viewerPhoto\.src = photos\[currentPhotoIndex\]/,
+    'single-screen entry should use previews for avatars and originals in the archive viewer'
+);
+assert.match(
+    dualScreenHtml,
+    /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?function buildFigureAvatar\(figure, avatarSource\)[\s\S]*?buildPreviewImageAttributes\(avatarSource\.src[\s\S]*?function renderLeftArchive\(photos\)[\s\S]*?<img src="\$\{escapeHtml\(card\.src\)\}"[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?viewerPhoto\.src = photos\[currentPhotoIndex\]/,
+    'dual-screen entry should use previews for avatars and originals for event images'
+);
+assert.match(
+    chronologySource,
+    /function getPreviewImageUrl\(imageUrl\)[\s\S]*?const previewUrl = getPreviewImageUrl\(imageUrl\)[\s\S]*?data-src="\$\{escapeHtml\(previewUrl\)\}" data-full-src="\$\{escapeHtml\(imageUrl\)\}"/,
+    'chronology overview cards should lazy-load thumbnail URLs while preserving full image metadata'
 );
 assert.doesNotMatch(
     indexHtml,
