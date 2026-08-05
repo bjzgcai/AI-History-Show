@@ -404,7 +404,7 @@ Edge `kiosk` 模式：
 
 ## 四、内容管理服务部署（manage/server.js）
 
-`server.js` 提供 Archive-only 本地内容管理服务（端口 3001）：使用 `/admin` 编辑 `archive/events/*` 与 `archive/storylines/*` JSON，并运行 `npm run validate:archive` 与 `npm run generate` 生成 `milestones-data.js`。旧 `/archive-admin` 与 Legacy API 已退役并返回 HTTP 404。**Nginx 无需重启，生成后刷新展示页即可生效**。
+`server.js` 提供 Archive-only 本地内容管理服务（端口 3001）：使用 `/admin` 编辑 `archive/events/*` 与 `archive/storylines/*` JSON，并运行 `npm run validate:archive` 与 `npm run generate` 生成运行时数据、首页与头像所需的缩略图及其清单。旧 `/archive-admin` 与 Legacy API 已退役并返回 HTTP 404。**Nginx 无需重启，生成后刷新展示页即可生效**。
 
 > `/admin` 当前是原始 JSON 编辑器；保存后应先运行 Archive validation，再生成运行时数据。
 > **安全原则：不要将 3001 端口直接暴露到公网**，推荐通过 SSH 隧道访问。
