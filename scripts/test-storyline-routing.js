@@ -572,23 +572,23 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?setPreviewImage\(image, imageUrl[\s\S]*?captionTitle\.innerHTML = escapeHtmlWithCjkTail[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
-    'detail image changes should update the media, caption, and pager without rebuilding the full detail page'
+    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?image\.loading = 'eager';[\s\S]*?image\.src = imageUrl;[\s\S]*?captionTitle\.innerHTML = escapeHtmlWithCjkTail[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
+    'detail image changes should update the original media, caption, and pager without rebuilding the full detail page'
 );
 assert.match(
     imageLoadingSource,
-    /const THUMB_ROOT = 'resources\/images\/_thumbs\/'[\s\S]*?function getPreviewUrl\(url\)[\s\S]*?function loadFullImageInto\(image, options = \{\}\)/,
-    'shared image loading should map local raster images to generated thumbnails and load full images on demand'
+    /const THUMB_ROOT = 'resources\/images\/_thumbs\/'[\s\S]*?function getPreviewUrl\(url\)[\s\S]*?function attachPreviewFallback\(image\)/,
+    'shared image loading should map local raster images to generated thumbnails and fall back to their originals'
 );
 assert.match(
     indexHtml,
-    /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?<script src="shared\/chronology-overview\.js[\s\S]*?function buildPreviewImageAttributes\(url, alt[\s\S]*?data-full-src[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?photo-viewer-frame image-load-frame[\s\S]*?loadFullImageInto\(viewerPhoto/,
-    'single-screen entry should load image helper before chronology and open full archive images only inside the viewer'
+    /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?<script src="shared\/chronology-overview\.js[\s\S]*?function buildFigureAvatar\(figure, avatarSource\)[\s\S]*?buildPreviewImageAttributes\(avatarSource\.src[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?viewerPhoto\.src = photos\[currentPhotoIndex\]/,
+    'single-screen entry should use previews for avatars and originals in the archive viewer'
 );
 assert.match(
     dualScreenHtml,
-    /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?function buildPreviewImageAttributes\(url, alt[\s\S]*?data-full-src[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?photo-viewer-frame image-load-frame[\s\S]*?loadFullImageInto\(viewerPhoto/,
-    'dual-screen entry should use thumbnail previews and on-demand full-image loading in the viewer'
+    /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?function buildFigureAvatar\(figure, avatarSource\)[\s\S]*?buildPreviewImageAttributes\(avatarSource\.src[\s\S]*?function renderLeftArchive\(photos\)[\s\S]*?<img src="\$\{escapeHtml\(card\.src\)\}"[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?viewerPhoto\.src = photos\[currentPhotoIndex\]/,
+    'dual-screen entry should use previews for avatars and originals for event images'
 );
 assert.match(
     chronologySource,
