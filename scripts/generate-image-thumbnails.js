@@ -7,7 +7,8 @@ const ROOT = path.resolve(__dirname, '..');
 const PYTHON_SCRIPT = path.join(__dirname, 'generate-image-thumbnails.py');
 const IMAGE_ROOT = 'resources/images/';
 const RASTER_EXTENSION_PATTERN = /\.(?:jpe?g|png|gif|webp)$/i;
-const BRANCH_EXPLAINER_PATTERN = /\/explainers\/|explainer|diagram|search|database|policy|value|mcts|tree|perfect-play/i;
+const BRANCH_EXPLAINER_PATTERN =
+    /\/explainers\/|explainer|diagram|search|database|policy|value|mcts|tree|perfect-play/i;
 
 function normalizeLocalImagePath(value) {
     const raw = String(value || '').trim();
@@ -28,13 +29,15 @@ function buildThumbnailTargets() {
         const images = Array.isArray(milestone && milestone.resources && milestone.resources.images)
             ? milestone.resources.images.filter(Boolean)
             : [];
-        const overviewImage = milestone && milestone.resources && milestone.resources.overviewImage
-            ? milestone.resources.overviewImage
-            : images[0];
+        const overviewImage =
+            milestone && milestone.resources && milestone.resources.overviewImage
+                ? milestone.resources.overviewImage
+                : images[0];
         addTarget(overviewImage);
 
         const demoImage = milestone && milestone.achievement ? milestone.achievement.demoImage : '';
-        const branchImage = demoImage || images.find((image) => BRANCH_EXPLAINER_PATTERN.test(String(image))) || images[0];
+        const branchImage =
+            demoImage || images.find((image) => BRANCH_EXPLAINER_PATTERN.test(String(image))) || images[0];
         addTarget(branchImage);
 
         (milestone.figures || []).forEach((figure) => addTarget(figure && figure.avatar));
@@ -55,15 +58,17 @@ function candidatePythonCommands() {
 
     const home = process.env.USERPROFILE || process.env.HOME || '';
     if (home) {
-        push(path.join(
-            home,
-            '.cache',
-            'codex-runtimes',
-            'codex-primary-runtime',
-            'dependencies',
-            'python',
-            process.platform === 'win32' ? 'python.exe' : 'bin/python'
-        ));
+        push(
+            path.join(
+                home,
+                '.cache',
+                'codex-runtimes',
+                'codex-primary-runtime',
+                'dependencies',
+                'python',
+                process.platform === 'win32' ? 'python.exe' : 'bin/python'
+            )
+        );
     }
 
     push('python');

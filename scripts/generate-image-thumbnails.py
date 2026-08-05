@@ -81,10 +81,19 @@ def write_manifest(sources):
         for source in sources
         if thumb_path(source).exists()
     )
-    content = (
-        "(function (globalScope) {\n"
-        f"    globalScope.AIHistoryThumbnailManifest = new Set({json.dumps(available_sources, indent=4)});\n"
-        "})(typeof window !== 'undefined' ? window : globalThis);\n"
+    escaped_sources = [source.replace("\\", "\\\\").replace("'", "\\'") for source in available_sources]
+    content = "\n".join(
+        [
+            "(function (globalScope) {",
+            "    globalScope.AIHistoryThumbnailManifest = new Set([",
+            *[
+                f"        '{source}'{',' if index < len(escaped_sources) - 1 else ''}"
+                for index, source in enumerate(escaped_sources)
+            ],
+            "    ]);",
+            "})(typeof window !== 'undefined' ? window : globalThis);",
+            "",
+        ]
     )
     if MANIFEST_PATH.exists() and MANIFEST_PATH.read_text(encoding="utf-8") == content:
         return len(available_sources)
