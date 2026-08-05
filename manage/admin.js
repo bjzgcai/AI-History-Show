@@ -240,9 +240,7 @@ function renderEntities() {
         );
     }
     elements.entityCount.textContent = String(visible.length);
-    const indexKeys = ['events', 'figures'].includes(state.type)
-        ? [...new Set(visible.map(entityIndexKey))]
-        : [];
+    const indexKeys = ['events', 'figures'].includes(state.type) ? [...new Set(visible.map(entityIndexKey))] : [];
     elements.figureAlphabet.hidden = indexKeys.length === 0;
     elements.figureAlphabet.setAttribute('aria-label', state.type === 'events' ? '事件年份索引' : '人物首字母索引');
     elements.figureAlphabet.classList.toggle('is-years', state.type === 'events');
@@ -297,7 +295,8 @@ function renderEntities() {
             const usageTitle = entity.used
                 ? `${state.type === 'figures' ? `${entity.usageCount} 个事件正在使用该人物` : `${entity.usageCount} 个展示成员`}`
                 : '当前未进入实际展示链路';
-            const alphaBadge = state.type === 'figures' ? `<span class="entity-alpha">${escapeHtml(indexKey)}</span>` : '';
+            const alphaBadge =
+                state.type === 'figures' ? `<span class="entity-alpha">${escapeHtml(indexKey)}</span>` : '';
             return `${letterDivider}<button class="entity${id === state.entityId ? ' active' : ''}" data-id="${escapeHtml(id)}">${thumb}<span class="entity-copy"><span class="entity-name-row"><span class="entity-name-group">${alphaBadge}<span class="entity-name">${escapeHtml(title)}</span></span><span class="entity-usage ${entity.used ? 'is-used' : 'is-unused'}" title="${escapeHtml(usageTitle)}"><span class="entity-usage-dot"></span>${usageLabel}</span></span><span class="entity-meta">${escapeHtml(detail)}</span></span><span class="entity-chevron">›</span></button>`;
         })
         .join('');
@@ -758,9 +757,7 @@ function groupFigureAssets() {
 
 function updateAssetMergeControls() {
     const selectedCount = state.assetMergeSelection.size;
-    const hasCanonical = Boolean(
-        state.assetMergeCanonical && state.assetMergeSelection.has(state.assetMergeCanonical)
-    );
+    const hasCanonical = Boolean(state.assetMergeCanonical && state.assetMergeSelection.has(state.assetMergeCanonical));
     elements.figureAssetMergeSummary.textContent = hasCanonical
         ? `已选择 ${selectedCount} 张 · 保留路径已指定`
         : selectedCount > 0

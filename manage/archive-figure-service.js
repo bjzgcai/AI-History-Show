@@ -766,7 +766,11 @@ function createArchiveFigureService(root) {
         if (!safeCanonicalPath) throw createHttpError('Canonical asset path is required', 400);
         if (safeDuplicatePaths.length === 0) throw createHttpError('Select at least one duplicate asset path', 400);
 
-        const figureAssetPaths = new Set(getFigureAssets(figure.id).map((asset) => asset.path).filter(Boolean));
+        const figureAssetPaths = new Set(
+            getFigureAssets(figure.id)
+                .map((asset) => asset.path)
+                .filter(Boolean)
+        );
         for (const assetPath of [safeCanonicalPath, ...safeDuplicatePaths]) {
             if (!figureAssetPaths.has(assetPath)) {
                 throw createHttpError(`Asset path is not linked to ${figure.id}: ${assetPath}`, 400);
@@ -810,8 +814,7 @@ function createArchiveFigureService(root) {
             canonicalPath: safeCanonicalPath,
             duplicatePaths: safeDuplicatePaths,
             revision: filesRevision(revisionFiles),
-            contentMatch:
-                comparableHashes.length === contentHashes.length && new Set(comparableHashes).size === 1,
+            contentMatch: comparableHashes.length === contentHashes.length && new Set(comparableHashes).size === 1,
             contentHashes,
             impact: {
                 assets: impactedAssets.length,
@@ -827,12 +830,7 @@ function createArchiveFigureService(root) {
         };
     }
 
-    function mergeFigureAssets({
-        figureId,
-        canonicalPath,
-        duplicatePaths,
-        expectedRevision = ''
-    }) {
+    function mergeFigureAssets({ figureId, canonicalPath, duplicatePaths, expectedRevision = '' }) {
         const preview = previewFigureAssetMerge({ figureId, canonicalPath, duplicatePaths });
         if (expectedRevision && expectedRevision !== preview.revision) {
             throw createHttpError('Asset references changed since merge preview; preview again before merging', 409);

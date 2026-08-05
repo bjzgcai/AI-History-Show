@@ -170,13 +170,7 @@ try {
     assert.equal(assetMergePreview.impact.assets, 1);
     assert.equal(assetMergePreview.impact.events, 1);
     assert.match(assetMergePreview.revision, /^[a-f0-9]{64}$/);
-    const mergeAssetsFile = path.join(
-        temporaryRoot,
-        'archive',
-        'events',
-        'asset-merge-event',
-        'assets.json'
-    );
+    const mergeAssetsFile = path.join(temporaryRoot, 'archive', 'events', 'asset-merge-event', 'assets.json');
     const changedAfterPreview = readJson(mergeAssetsFile);
     changedAfterPreview[0].caption.zh = '预览后更新的重复肖像';
     writeJson(mergeAssetsFile, changedAfterPreview);
@@ -203,10 +197,7 @@ try {
         expectedRevision: refreshedAssetMergePreview.revision
     });
     assert.ok(assetMergeResult.changedFiles.includes('archive/events/asset-merge-event/assets.json'));
-    assert.equal(
-        readJson(mergeAssetsFile)[0].path,
-        'resources/images/primary-person.jpg'
-    );
+    assert.equal(readJson(mergeAssetsFile)[0].path, 'resources/images/primary-person.jpg');
     assert.ok(fs.existsSync(path.join(temporaryRoot, duplicateImagePath)), 'asset merge must not delete old files');
     fs.rmSync(path.join(temporaryRoot, 'archive', 'events', 'asset-merge-event'), { recursive: true });
     fs.rmSync(path.join(temporaryRoot, duplicateImagePath));

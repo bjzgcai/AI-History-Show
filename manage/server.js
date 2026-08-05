@@ -422,9 +422,7 @@ const routes = {
                     const files = archiveEventFileList(entry.name);
                     const usage = usageByEventId.get(entry.name) || [];
                     const eventFile = path.join(ARCHIVE_EVENTS, entry.name, 'event.json');
-                    const event = fs.existsSync(eventFile)
-                        ? JSON.parse(fs.readFileSync(eventFile, 'utf8'))
-                        : {};
+                    const event = fs.existsSync(eventFile) ? JSON.parse(fs.readFileSync(eventFile, 'utf8')) : {};
                     return {
                         id: entry.name,
                         year: event.year || '',
