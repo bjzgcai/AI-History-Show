@@ -42,7 +42,8 @@
         "en": "First author of the Segment Anything paper",
         "zh": "Segment Anything 论文第一作者"
       },
-      "primary": true
+      "primary": true,
+      "avatarAssetId": "asset-annual-101-segment-anything-portrait-alexander-kirillov"
     },
     {
       "figureId": "eric-mintun",

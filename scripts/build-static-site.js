@@ -113,13 +113,13 @@ function validateBundle() {
 
     delete require.cache[require.resolve(path.join(OUTPUT, 'milestones-data.js'))];
     const runtime = require(path.join(OUTPUT, 'milestones-data.js'));
-    assert.equal(runtime.milestones.length, 214);
+    assert.equal(runtime.milestones.length, 194);
     assert.equal(
         runtime.milestones.filter(
-            (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100-2022-2023'
+            (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100'
         ).length,
-        20,
-        'The static bundle must publish the curated annual AI100 milestones'
+        139,
+        'The static bundle must publish the complete BenchCouncil AI100 map'
     );
     assert.ok(
         runtime.milestones.every(

@@ -144,10 +144,20 @@ async function validateAdminServer() {
         const archiveEvents = await waitForHttp(`http://${HOST}:${port}/api/archive/events`);
         const archiveEventList = await archiveEvents.json();
         assert.ok(Array.isArray(archiveEventList) && archiveEventList.length > 0);
+        assert.equal(typeof archiveEventList[0].used, 'boolean');
+        assert.equal(typeof archiveEventList[0].usageCount, 'number');
 
         const storylines = await waitForHttp(`http://${HOST}:${port}/api/archive/storylines`);
-        const storylineIds = await storylines.json();
-        assert.ok(storylineIds.includes('humanistic-cycle'));
+        const storylineList = await storylines.json();
+        assert.equal(storylineList.length, 4);
+        assert.equal(
+            storylineList.some((storyline) => storyline.id === 'bench-council-ai100-2022-2023'),
+            false
+        );
+        const humanisticStoryline = storylineList.find((storyline) => storyline.id === 'humanistic-cycle');
+        assert.ok(humanisticStoryline);
+        assert.equal(humanisticStoryline.used, true);
+        assert.ok(humanisticStoryline.enabledEventCount > 0);
 
         const storylineResponse = await waitForHttp(
             `http://${HOST}:${port}/api/archive/storyline?storylineId=humanistic-cycle`
@@ -162,11 +172,19 @@ async function validateAdminServer() {
         assert.equal(eventFileData.data.id, '1956-dartmouth');
         assert.match(eventFileData.revision, /^[a-f0-9]{64}$/);
 
+        const eventDisplayTargets = await waitForHttp(
+            `http://${HOST}:${port}/api/archive/event-display-targets?eventId=1956-dartmouth`
+        );
+        const eventDisplayTargetData = await eventDisplayTargets.json();
+        assert.ok(eventDisplayTargetData.some((target) => target.milestoneId));
+
         const figuresResponse = await waitForHttp(`http://${HOST}:${port}/api/archive/figures`);
         const figuresData = await figuresResponse.json();
         assert.ok(Array.isArray(figuresData.items) && figuresData.items.length > 300);
         assert.match(figuresData.revision, /^[a-f0-9]{64}$/);
         assert.ok(figuresData.items.some((figure) => figure.id === 'michael-i-jordan'));
+        assert.equal(typeof figuresData.items[0].used, 'boolean');
+        assert.equal(typeof figuresData.items[0].usageCount, 'number');
 
         const figureResponse = await waitForHttp(`http://${HOST}:${port}/api/archive/figure?figureId=michael-i-jordan`);
         const figureData = await figureResponse.json();
@@ -179,11 +197,30 @@ async function validateAdminServer() {
         const figureUsageData = await figureUsage.json();
         assert.ok(figureUsageData.events.includes('1986-rnn'));
         assert.ok(figureUsageData.events.includes('2003-lda'));
+        const rnnEventDetail = figureUsageData.eventDetails.find((event) => event.eventId === '1986-rnn');
+        assert.ok(rnnEventDetail);
+        assert.ok(rnnEventDetail.displayTargets.some((target) => target.milestoneId));
 
         const figureAssets = await waitForHttp(
             `http://${HOST}:${port}/api/archive/figure-assets?figureId=michael-i-jordan&eventId=1986-rnn`
         );
-        assert.ok((await figureAssets.json()).some((asset) => asset.eventId === '1986-rnn'));
+        const figureAssetData = await figureAssets.json();
+        assert.ok(figureAssetData.some((asset) => asset.eventId === '1986-rnn'));
+        assert.ok(figureAssetData.every((asset) => asset.source && asset.rights));
+        assert.ok(figureAssetData.every((asset) => Array.isArray(asset.relationUsages)));
+
+        const staleDefaultAvatarWrite = await fetch(`http://${HOST}:${port}/api/archive/figure-default-avatar`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                figureId: 'michael-i-jordan',
+                eventId: '1986-rnn',
+                assetId: figureAssetData[0].id,
+                expectedRevision: '0'.repeat(64)
+            })
+        });
+        assert.equal(staleDefaultAvatarWrite.status, 409);
+        assert.match((await staleDefaultAvatarWrite.json()).error, /changed since it was loaded/i);
 
         const figureAudit = await waitForHttp(`http://${HOST}:${port}/api/archive/figure-audit`);
         const figureAuditData = await figureAudit.json();

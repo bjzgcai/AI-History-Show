@@ -36,7 +36,7 @@
       "zh": "原创成就解释图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": true
   },
@@ -78,7 +78,7 @@
       "zh": "官方发布插画"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   },
@@ -120,7 +120,7 @@
       "zh": "官方产品示例图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   }

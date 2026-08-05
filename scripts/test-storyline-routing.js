@@ -7,7 +7,7 @@ const { archiveStorylines, milestones: generatedMilestones } = require(
     path.join(__dirname, '..', 'milestones-data.js')
 );
 
-assert.equal(archiveStorylines.length, 5, 'generated runtime should expose all Archive storyline definitions');
+assert.equal(archiveStorylines.length, 4, 'generated runtime should expose all Archive storyline definitions');
 assert.deepEqual(
     archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100').title,
     { zh: 'AI 顶尖成就图谱（BenchCouncil）', en: 'AI Achievement Map (BenchCouncil)' },
@@ -28,11 +28,6 @@ assert.deepEqual(
         en: 'The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI'
     },
     'the generated connectionism storyline title should come from Archive'
-);
-assert.deepEqual(
-    archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100-2022-2023').title,
-    { zh: 'AI100 年度精选（2022-2023）', en: 'AI100 Annual Highlights (2022-2023)' },
-    'the generated annual AI100 storyline title should come from Archive'
 );
 console.log('PASS generated storyline definitions');
 
@@ -110,13 +105,11 @@ gamingMilestones.forEach((milestone) => {
 console.log('PASS gaming AI unified UI content coverage');
 
 const annualAi100Milestones = generatedMilestones.filter(
-    (milestone) => routing.getMilestoneStorylineId(milestone) === 'bench-council-ai100-2022-2023'
+    (milestone) =>
+        routing.getMilestoneStorylineId(milestone) === 'bench-council-ai100' &&
+        milestone.archiveEventId.startsWith('ai100-annual-2022-2023-')
 );
-assert.equal(
-    annualAi100Milestones.length,
-    20,
-    'the BenchCouncil 2022-2023 annual storyline should contain 20 curated events'
-);
+assert.equal(annualAi100Milestones.length, 20, 'the BenchCouncil AI100 map should contain 20 curated annual events');
 assert.equal(
     annualAi100Milestones[0].title.en,
     'Swin Transformer V2',
@@ -238,7 +231,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /unifiedSourceMilestones = allMilestones\.filter[\s\S]*?unifiedMilestoneCache = window\.ChronologyOverview\.buildCanonicalMilestones\(unifiedSourceMilestones,[\s\S]*?storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY/,
+    /unifiedMilestoneCache = window\.ChronologyOverview\.buildCanonicalMilestones\(allMilestones,[\s\S]*?storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY/,
     'the default overview should merge storyline variants by canonical Archive event'
 );
 assert.match(
@@ -268,8 +261,8 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function getChronologyOverviewMilestones\(\)[\s\S]*?STANDALONE_AI100_STORYLINE_IDS\.has\(chronologyFilterStorylineId\)[\s\S]*?getStorylineMilestones\(chronologyFilterStorylineId\)[\s\S]*?milestones: getChronologyOverviewMilestones\(\)[\s\S]*?preserveSourceOrder: preserveStandaloneOrder/,
-    'the annual highlights storyline should supply its own dataset in configured order'
+    /function getChronologyOverviewMilestones\(\)[\s\S]*?return buildUnifiedMilestones\(\)[\s\S]*?milestones: getChronologyOverviewMilestones\(\)[\s\S]*?preserveSourceOrder: false/,
+    'the chronology overview should use the unified milestone dataset for every filter'
 );
 assert.match(
     indexHtml,
@@ -401,15 +394,11 @@ assert.match(
     /const AI_HISTORY_MAP_VARIANT_PRIORITY = \[[\s\S]*?'bench-council-ai100'[\s\S]*?DEEP_STORYLINE_ID[\s\S]*?'gaming-ai'[\s\S]*?'humanistic-cycle'[\s\S]*?\]/,
     'the unified chronology should include the four long-term public storylines'
 );
+assert.doesNotMatch(indexHtml, /ANNUAL_AI100_STORYLINE_ID|STANDALONE_AI100_STORYLINE_IDS/);
 assert.match(
     indexHtml,
-    /const STANDALONE_AI100_STORYLINE_IDS = new Set\(\[ANNUAL_AI100_STORYLINE_ID\]\)[\s\S]*?const UNIFIED_STORYLINE_EXCLUSIONS = new Set\(STANDALONE_AI100_STORYLINE_IDS\)[\s\S]*?unifiedSourceMilestones = allMilestones\.filter/,
-    'the annual highlights storyline should remain separate from the unified long-term chronology'
-);
-assert.match(
-    indexHtml,
-    /const STORYLINE_OPTIONS = \[[\s\S]*?id: UNIFIED_STORYLINE_ID[\s\S]*?id: 'bench-council-ai100'[\s\S]*?id: ANNUAL_AI100_STORYLINE_ID[\s\S]*?id: 'gaming-ai'[\s\S]*?id: 'humanistic-cycle'[\s\S]*?id: DEEP_STORYLINE_ID[\s\S]*?\];/,
-    'the storyline selector should expose one curated annual AI100 view'
+    /const STORYLINE_OPTIONS = \[[\s\S]*?id: UNIFIED_STORYLINE_ID[\s\S]*?id: 'bench-council-ai100'[\s\S]*?id: 'gaming-ai'[\s\S]*?id: 'humanistic-cycle'[\s\S]*?id: DEEP_STORYLINE_ID[\s\S]*?\];/,
+    'the storyline selector should expose only the four source storylines'
 );
 assert.match(
     indexHtml,

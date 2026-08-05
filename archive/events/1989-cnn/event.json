@@ -39,8 +39,7 @@
         "zh": "LeNet 主要研究者"
       },
       "primary": true,
-      "avatarAssetId": "asset-1989-cnn-people-01",
-      "avatarStyle": "transform: scale(2.28); transform-origin: 52% 43%;"
+      "useDefaultAvatar": true
     }
   ],
   "organizations": [],

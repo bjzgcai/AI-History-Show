@@ -36,7 +36,7 @@
       "zh": "已核验的主要人物肖像"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false,
     "figureIds": [
@@ -83,7 +83,7 @@
       "zh": "互动式成就解释图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": true
   },
@@ -119,7 +119,7 @@
       "zh": "已核验的扩展人物肖像"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false,
     "sourceReliability": "MIT Technology Review publishes the portrait on a named profile and identifies John Schulman as an OpenAI research scientist; the primary paper confirms his InstructGPT authorship.",
@@ -163,7 +163,7 @@
       "zh": "原始论文结果图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   }

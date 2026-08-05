@@ -2378,10 +2378,11 @@
   {
     "id": "diederik-kingma",
     "name": {
-      "en": "Diederik Kingma",
+      "en": "Diederik P. Kingma",
       "zh": "迪德里克·P·金马"
     },
     "aliases": [
+      "Diederik Kingma",
       "迪德里克·金马"
     ],
     "type": "person",
@@ -2396,6 +2397,15 @@
         "url": "https://arxiv.org/abs/1312.6114"
       }
     ],
+    "review": {
+      "status": "draft",
+      "reviewedAt": "2026-08-04",
+      "reviewer": "archive-migration",
+      "notes": {
+        "en": "Migrated from inline event and storyline figure data; identity review remains pending.",
+        "zh": "由事件与 storyline 的内联人物数据迁移；身份信息仍待人工复核。"
+      }
+    },
     "defaultAvatar": {
       "path": "resources/images/external/ai100-2013-variational-autoencoder/diederik-kingma-portrait.jpg",
       "sourceName": {
@@ -2406,23 +2416,13 @@
       "rights": {
         "status": "external-reference",
         "license": {
-          "zh": "本地副本来自迪德里克·金马个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
-          "en": "Local copy from Diederik Kingma personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
+          "en": "Local copy from Diederik P. Kingma personal website; the source page does not state a repository-compatible license. Recheck before external redistribution.",
+          "zh": "本地副本来自迪德里克·P·金马个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。"
         },
         "usage": {
           "en": "Used as a biographical figure image in this exhibition; review the recorded source terms before redistribution.",
           "zh": "用于本展览的人物资料展示；再次分发前应复核所记录来源的使用条款。"
         }
-      },
-      "avatarStyle": ""
-    },
-    "review": {
-      "status": "draft",
-      "reviewedAt": "2026-08-04",
-      "reviewer": "archive-migration",
-      "notes": {
-        "en": "Migrated from inline event and storyline figure data; identity review remains pending.",
-        "zh": "由事件与 storyline 的内联人物数据迁移；身份信息仍待人工复核。"
       }
     }
   },
@@ -3456,7 +3456,7 @@
       }
     ],
     "defaultAvatar": {
-      "path": "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg",
+      "path": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg",
       "sourceName": {
         "en": "Han Hu academic homepage portrait",
         "zh": "胡瀚学术主页肖像"
@@ -5807,21 +5807,21 @@
       }
     ],
     "defaultAvatar": {
-      "path": "resources/images/figures/kaiming-he.jpg",
+      "path": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
       "sourceName": {
-        "en": "Deep Residual Learning for Image Recognition",
-        "zh": "《用于图像识别的深度残差学习》"
+        "zh": "MIT CSAIL",
+        "en": "MIT CSAIL"
       },
-      "sourceUrl": "https://arxiv.org/abs/1512.03385",
+      "sourceUrl": "https://people.csail.mit.edu/kaiming/",
       "rights": {
-        "status": "documented-in-legacy",
+        "status": "external-reference",
         "license": {
-          "zh": "参考图片",
-          "en": "Reference image"
+          "zh": "图片来自何恺明的 MIT 个人主页；页面未声明再分发许可，对外发布前需复核授权。",
+          "en": "Image from Kaiming He's MIT personal homepage; redistribution rights are not stated and must be reviewed before publication."
         },
         "usage": {
-          "en": "Used as a biographical figure image in this exhibition; review the recorded source terms before redistribution.",
-          "zh": "用于本展览的人物资料展示；再次分发前应复核所记录来源的使用条款。"
+          "zh": "用于展示 Faster R-CNN 共同作者何恺明。",
+          "en": "Used to present Faster R-CNN co-author Kaiming He."
         }
       },
       "avatarStyle": ""
@@ -6065,7 +6065,7 @@
       }
     ],
     "defaultAvatar": {
-      "path": "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
+      "path": "resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg",
       "sourceName": {
         "en": "Neocognitron",
         "zh": "《Neocognitron》"
@@ -11054,24 +11054,23 @@
       }
     ],
     "defaultAvatar": {
-      "path": "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
+      "path": "resources/images/external/1989-cnn/yann-lecun-portrait.jpg",
       "sourceName": {
-        "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
-        "zh": "《反向传播应用于手写邮编识别》"
+        "en": "Wikimedia Commons",
+        "zh": "维基共享资源"
       },
-      "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
       "rights": {
         "status": "external-reference",
         "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "usage": {
           "en": "Used as a biographical figure image in this exhibition; review the recorded source terms before redistribution.",
           "zh": "用于本展览的人物资料展示；再次分发前应复核所记录来源的使用条款。"
         }
-      },
-      "avatarStyle": "transform: scale(2.28); transform-origin: 52% 43%;"
+      }
     },
     "review": {
       "status": "draft",

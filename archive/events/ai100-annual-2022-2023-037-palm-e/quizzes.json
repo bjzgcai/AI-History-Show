@@ -1,7 +1,7 @@
 [
   {
     "id": "ai100-annual-2022-2023-037-palm-e-quiz-1",
-    "storylineId": "bench-council-ai100-2022-2023",
+    "storylineId": "bench-council-ai100",
     "question": {
       "en": "How does PaLM-E present robot observations to its language model?",
       "zh": "PaLM-E 如何把机器人观察交给语言模型？"

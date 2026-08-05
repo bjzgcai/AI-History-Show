@@ -1,8 +1,52 @@
 [
   {
+    "id": "asset-annual-101-segment-anything-portrait-alexander-kirillov",
+    "type": "image",
+    "path": "resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Alexander Kirillov portrait",
+      "zh": "亚历山大·基里洛夫肖像"
+    },
+    "subcaption": {
+      "en": "First author of the Segment Anything paper",
+      "zh": "Segment Anything 论文第一作者"
+    },
+    "sourceId": "source-annual-101-segment-anything-portrait-alexander-kirillov",
+    "sourceName": {
+      "en": "Alexander Kirillov personal website",
+      "zh": "亚历山大·基里洛夫个人网站"
+    },
+    "sourceUrl": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg",
+    "sourceReliability": "primary-identity-source",
+    "provenanceNotes": {
+      "en": "The portrait is hosted on Alexander Kirillov's personal website and is retained with direct source attribution.",
+      "zh": "该肖像托管于亚历山大·基里洛夫个人网站，并保留直接来源标注。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The source does not state redistribution rights; retain attribution and recheck before redistribution outside this project.",
+        "zh": "来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+      },
+      "attribution": "Alexander Kirillov personal website"
+    },
+    "displayUsage": {
+      "en": "Verified lead-author portrait",
+      "zh": "已核验的第一作者肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": false,
+    "figureIds": [
+      "alexander-kirillov"
+    ]
+  },
+  {
     "id": "asset-annual-101-segment-anything-portrait-ross-girshick",
     "type": "image",
-    "path": "resources/images/external/ai100-2023-segment-anything/ross-girshick.jpg",
+    "path": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
     "role": "portrait",
     "caption": {
       "en": "Ross Girshick portrait",
@@ -36,7 +80,7 @@
       "zh": "已核验的主要人物肖像"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false,
     "figureIds": [
@@ -81,7 +125,7 @@
       "zh": "原创成就解释图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": true
   },
@@ -123,7 +167,7 @@
       "zh": "官方模型图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   }

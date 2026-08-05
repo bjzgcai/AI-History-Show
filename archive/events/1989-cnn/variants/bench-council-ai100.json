@@ -126,7 +126,7 @@
         "en": "LeNet lead researcher",
         "zh": "LeNet 主要研究者"
       },
-      "avatarAssetId": "asset-1989-cnn-people-01"
+      "useDefaultAvatar": true
     }
   ],
   "photos": [],

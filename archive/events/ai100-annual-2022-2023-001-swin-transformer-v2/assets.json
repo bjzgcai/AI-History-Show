@@ -36,7 +36,7 @@
       "zh": "已核验的主要人物肖像"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false,
     "figureIds": [
@@ -81,14 +81,14 @@
       "zh": "架构与扩展方法解释图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": true
   },
   {
     "id": "asset-annual-001-swin-transformer-v2-portrait-han-hu",
     "type": "image",
-    "path": "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg",
+    "path": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "胡瀚肖像",
@@ -117,7 +117,7 @@
       "zh": "补充展示的已核验主要人物肖像"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false,
     "sourceReliability": "primary-identity-source",
@@ -161,7 +161,7 @@
       "zh": "主论文架构对比资料"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   }

@@ -151,6 +151,36 @@ function archiveStorylinePath(storylineId) {
     return path.join(ARCHIVE_STORYLINES, `${safeStorylineId}.json`);
 }
 
+function listStorylineRecords() {
+    return fs
+        .readdirSync(ARCHIVE_STORYLINES)
+        .filter((file) => /^[a-z0-9][a-z0-9._-]*\.json$/.test(file))
+        .sort()
+        .map((file) => {
+            const id = file.slice(0, -'.json'.length);
+            const data = JSON.parse(fs.readFileSync(path.join(ARCHIVE_STORYLINES, file), 'utf8'));
+            const activeEvents = (data.events || []).filter(
+                (entry) => entry.enabled !== false && typeof entry.milestoneId === 'string' && entry.milestoneId.trim()
+            );
+            return { id, data, activeEvents };
+        });
+}
+
+function eventUsageById(storylineRecords) {
+    const usage = new Map();
+    for (const storyline of storylineRecords) {
+        for (const membership of storyline.activeEvents) {
+            if (!usage.has(membership.eventId)) usage.set(membership.eventId, []);
+            usage.get(membership.eventId).push({
+                storylineId: storyline.id,
+                milestoneId: membership.milestoneId,
+                variant: membership.variant || ''
+            });
+        }
+    }
+    return usage;
+}
+
 function archiveEventFileList(eventId) {
     const eventDirectory = path.join(ARCHIVE_EVENTS, eventId);
     if (!fs.existsSync(eventDirectory) || !fs.statSync(eventDirectory).isDirectory()) return [];
@@ -277,6 +307,14 @@ const routes = {
         }
     },
 
+    'GET /api/archive/event-display-targets': (_req, res, url) => {
+        try {
+            sendJson(res, figureService.getEventDisplayTargets(url.searchParams.get('eventId')));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
     'GET /api/archive/figure': (_req, res, url) => {
         try {
             sendJson(res, figureService.getFigure(url.searchParams.get('figureId')));
@@ -312,6 +350,14 @@ const routes = {
         }
     },
 
+    'POST /api/archive/figure-default-avatar': async (req, res) => {
+        try {
+            sendJson(res, figureService.setDefaultAvatar(await readJsonBody(req)));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
     'GET /api/archive/figure-audit': (_req, res) => {
         try {
             sendJson(res, figureService.getAudit());
@@ -342,6 +388,22 @@ const routes = {
         }
     },
 
+    'POST /api/archive/figure-asset-merge-preview': async (req, res) => {
+        try {
+            sendJson(res, figureService.previewFigureAssetMerge(await readJsonBody(req)));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/figure-asset-merge': async (req, res) => {
+        try {
+            sendJson(res, figureService.mergeFigureAssets(await readJsonBody(req)));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
     'POST /api/archive/figure-image': async (req, res) => {
         try {
             sendJson(res, figureService.importFigureImage(await readJsonBody(req)));
@@ -352,20 +414,34 @@ const routes = {
 
     'GET /api/archive/events': (_req, res) => {
         try {
+            const usageByEventId = eventUsageById(listStorylineRecords());
             const events = fs
                 .readdirSync(ARCHIVE_EVENTS, { withFileTypes: true })
                 .filter((entry) => entry.isDirectory() && /^[a-z0-9][a-z0-9._-]*$/.test(entry.name))
                 .map((entry) => {
                     const files = archiveEventFileList(entry.name);
+                    const usage = usageByEventId.get(entry.name) || [];
+                    const eventFile = path.join(ARCHIVE_EVENTS, entry.name, 'event.json');
+                    const event = fs.existsSync(eventFile)
+                        ? JSON.parse(fs.readFileSync(eventFile, 'utf8'))
+                        : {};
                     return {
                         id: entry.name,
+                        year: event.year || '',
                         files,
                         variants: files
                             .filter((file) => file.startsWith('variants/'))
-                            .map((file) => file.slice('variants/'.length, -'.json'.length))
+                            .map((file) => file.slice('variants/'.length, -'.json'.length)),
+                        used: usage.length > 0,
+                        usageCount: usage.length,
+                        storylineIds: usage.map((item) => item.storylineId)
                     };
                 })
-                .sort((a, b) => a.id.localeCompare(b.id));
+                .sort(
+                    (left, right) =>
+                        String(left.year).localeCompare(String(right.year), 'en', { numeric: true }) ||
+                        left.id.localeCompare(right.id)
+                );
             sendJson(res, events);
         } catch (error) {
             sendError(res, error.message);
@@ -374,11 +450,14 @@ const routes = {
 
     'GET /api/archive/storylines': (_req, res) => {
         try {
-            const storylines = fs
-                .readdirSync(ARCHIVE_STORYLINES)
-                .filter((file) => /^[a-z0-9][a-z0-9._-]*\.json$/.test(file))
-                .map((file) => file.slice(0, -'.json'.length))
-                .sort();
+            const storylines = listStorylineRecords().map(({ id, data, activeEvents }) => ({
+                id,
+                title: data.title || {},
+                used: activeEvents.length > 0,
+                usageCount: activeEvents.length,
+                enabledEventCount: activeEvents.length,
+                totalEventCount: (data.events || []).length
+            }));
             sendJson(res, storylines);
         } catch (error) {
             sendError(res, error.message);

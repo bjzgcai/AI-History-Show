@@ -51,6 +51,17 @@ function fileRevision(filePath) {
     return createHash('sha256').update(fs.readFileSync(filePath)).digest('hex');
 }
 
+function filesRevision(filePaths) {
+    const hash = createHash('sha256');
+    for (const filePath of [...new Set(filePaths)].sort()) {
+        hash.update(filePath);
+        hash.update('\0');
+        if (fs.existsSync(filePath)) hash.update(fs.readFileSync(filePath));
+        hash.update('\0');
+    }
+    return hash.digest('hex');
+}
+
 function localized(value, locale) {
     if (!value || typeof value !== 'object' || Array.isArray(value)) return '';
     return String(value[locale] || value[locale === 'en' ? 'zh' : 'en'] || '').trim();
@@ -443,6 +454,30 @@ function createArchiveFigureService(root) {
             .sort((left, right) => left.eventId.localeCompare(right.eventId));
     }
 
+    function getEventDisplayTargets(eventId) {
+        const storylinesDir = path.join(root, 'archive', 'storylines');
+        if (!fs.existsSync(storylinesDir)) return [];
+        return fs
+            .readdirSync(storylinesDir)
+            .filter((fileName) => fileName.endsWith('.json'))
+            .sort()
+            .flatMap((fileName) => {
+                const storyline = readJson(path.join(storylinesDir, fileName));
+                const membership = (storyline.events || []).find(
+                    (entry) => entry.eventId === eventId && entry.enabled !== false
+                );
+                if (!membership || !membership.milestoneId) return [];
+                return [
+                    {
+                        storylineId: storyline.id || fileName.replace(/\.json$/, ''),
+                        storylineTitle: storyline.title || {},
+                        variant: membership.variant || '',
+                        milestoneId: membership.milestoneId
+                    }
+                ];
+            });
+    }
+
     function scanUsage() {
         const usageByFigureId = new Map();
         const allAssets = [];
@@ -457,6 +492,7 @@ function createArchiveFigureService(root) {
             const assetsFile = path.join(eventDir, 'assets.json');
             const variantsDir = path.join(eventDir, 'variants');
             const event = fs.existsSync(eventFile) ? readJson(eventFile) : {};
+            const eventTitle = event.title || {};
             const assets = fs.existsSync(assetsFile) ? readJson(assetsFile) : [];
 
             for (const relationValue of event.figures || []) {
@@ -464,10 +500,12 @@ function createArchiveFigureService(root) {
                 addUsage(relation.figureId, {
                     kind: 'event-relation',
                     eventId,
+                    eventTitle,
                     file: `archive/events/${eventId}/event.json`,
                     role: relation.role || {},
                     primary: relation.primary === true,
-                    avatarAssetId: relation.avatarAssetId || ''
+                    avatarAssetId: relation.avatarAssetId || '',
+                    avatarStyle: relation.avatarStyle || ''
                 });
             }
 
@@ -477,6 +515,7 @@ function createArchiveFigureService(root) {
                     addUsage(figureId, {
                         kind: 'asset',
                         eventId,
+                        eventTitle,
                         file: `archive/events/${eventId}/assets.json`,
                         assetId: asset.id,
                         path: asset.path,
@@ -498,11 +537,13 @@ function createArchiveFigureService(root) {
                     addUsage(relation.figureId, {
                         kind: 'variant-relation',
                         eventId,
+                        eventTitle,
                         storylineId: variant.storylineId || fileName.replace(/\.json$/, ''),
                         file: `archive/events/${eventId}/variants/${fileName}`,
                         role: relation.role || {},
                         primary: relation.primary === true,
                         avatarAssetId: relation.avatarAssetId || '',
+                        avatarStyle: relation.avatarStyle || '',
                         useDefaultAvatar: relation.useDefaultAvatar === true
                     });
                 }
@@ -517,6 +558,12 @@ function createArchiveFigureService(root) {
         const { usageByFigureId } = scanUsage();
         return figures.map((figure) => {
             const usage = usageByFigureId.get(figure.id) || [];
+            const relationUsage = usage.filter((entry) => entry.kind.endsWith('relation'));
+            const assetUsage = usage.filter((entry) => entry.kind === 'asset');
+            const uniqueAssetKeys = new Set(
+                assetUsage.map((entry) => entry.path || `${entry.eventId}:${entry.assetId}`)
+            );
+            const usedEventCount = new Set(relationUsage.map((entry) => entry.eventId).filter(Boolean)).size;
             return {
                 id: figure.id,
                 name: figure.name,
@@ -526,8 +573,11 @@ function createArchiveFigureService(root) {
                 defaultAvatar: figure.defaultAvatar ? figure.defaultAvatar.path : '',
                 defaultAvatarStyle: figure.defaultAvatar ? figure.defaultAvatar.avatarStyle || '' : '',
                 eventCount: new Set(usage.map((entry) => entry.eventId).filter(Boolean)).size,
-                relationCount: usage.filter((entry) => entry.kind.endsWith('relation')).length,
-                assetCount: usage.filter((entry) => entry.kind === 'asset').length
+                relationCount: relationUsage.length,
+                assetCount: uniqueAssetKeys.size,
+                used: relationUsage.length > 0,
+                usageCount: usedEventCount,
+                usedEventCount
             };
         });
     }
@@ -572,10 +622,27 @@ function createArchiveFigureService(root) {
         const figure = getFigure(figureId).data;
         const { usageByFigureId } = scanUsage();
         const usage = usageByFigureId.get(figure.id) || [];
+        const eventIds = [...new Set(usage.map((entry) => entry.eventId).filter(Boolean))];
         return {
             figureId: figure.id,
             name: figure.name,
-            events: [...new Set(usage.map((entry) => entry.eventId).filter(Boolean))],
+            events: eventIds,
+            eventDetails: eventIds.map((eventId) => {
+                const entries = usage.filter((entry) => entry.eventId === eventId);
+                return {
+                    eventId,
+                    title:
+                        (
+                            entries.find(
+                                (entry) => localized(entry.eventTitle, 'en') || localized(entry.eventTitle, 'zh')
+                            ) || {}
+                        ).eventTitle || {},
+                    displayTargets: getEventDisplayTargets(eventId),
+                    eventRelations: entries.filter((entry) => entry.kind === 'event-relation'),
+                    variantRelations: entries.filter((entry) => entry.kind === 'variant-relation'),
+                    assets: entries.filter((entry) => entry.kind === 'asset')
+                };
+            }),
             eventRelations: usage.filter((entry) => entry.kind === 'event-relation'),
             variantRelations: usage.filter((entry) => entry.kind === 'variant-relation'),
             assets: usage.filter((entry) => entry.kind === 'asset')
@@ -583,8 +650,9 @@ function createArchiveFigureService(root) {
     }
 
     function getFigureAssets(figureId, eventId = '') {
-        getFigure(figureId);
-        const { allAssets } = scanUsage();
+        const figure = getFigure(figureId).data;
+        const { usageByFigureId, allAssets } = scanUsage();
+        const relations = (usageByFigureId.get(figure.id) || []).filter((entry) => entry.kind.endsWith('relation'));
         return allAssets
             .filter(
                 (entry) =>
@@ -592,7 +660,235 @@ function createArchiveFigureService(root) {
                     Array.isArray(entry.asset.figureIds) &&
                     entry.asset.figureIds.includes(figureId)
             )
-            .map(({ eventId: assetEventId, asset }) => ({ eventId: assetEventId, ...asset }));
+            .map(({ eventId: assetEventId, asset }) => {
+                const sourcesFile = path.join(eventsDir, assetEventId, 'sources.json');
+                const sources = fs.existsSync(sourcesFile) ? readJson(sourcesFile) : [];
+                const sourceId = asset.sourceId || (asset.sourceIds || [])[0] || '';
+                const source = sources.find((candidate) => candidate.id === sourceId) || {};
+                const sourceName = asset.sourceName || source.label || source.title || {};
+                const sourceUrl =
+                    asset.sourceUrl ||
+                    source.url ||
+                    source.doi ||
+                    source.archiveUrl ||
+                    (asset.rights && asset.rights.sourceUrl) ||
+                    '';
+                const rights = {
+                    status: (asset.rights && asset.rights.status) || '',
+                    license: (asset.rights && asset.rights.license) || {},
+                    usage: asset.displayUsage || (asset.rights && asset.rights.usage) || {}
+                };
+                const relationUsages = relations.filter(
+                    (entry) => entry.eventId === assetEventId && entry.avatarAssetId === asset.id
+                );
+                const isDefaultAvatar = Boolean(figure.defaultAvatar && figure.defaultAvatar.path === asset.path);
+                const preferredAvatarStyle =
+                    (relationUsages.find((entry) => entry.avatarStyle) || {}).avatarStyle ||
+                    (isDefaultAvatar && figure.defaultAvatar ? figure.defaultAvatar.avatarStyle || '' : '');
+                const localAssetExists =
+                    !/^https?:\/\//i.test(asset.path) && fs.existsSync(path.join(root, asset.path));
+                const defaultAvatarIssues = [
+                    asset.type === 'image' ? '' : '资产类型不是 image',
+                    localAssetExists ? '' : '本地图片文件不存在',
+                    hasLocalizedPair(sourceName) ? '' : '缺少双语来源名称',
+                    sourceUrl ? '' : '缺少来源 URL',
+                    rights.status ? '' : '缺少 rights status',
+                    hasLocalizedPair(rights.license) ? '' : '缺少双语许可说明',
+                    hasLocalizedPair(rights.usage) ? '' : '缺少双语使用说明'
+                ].filter(Boolean);
+                return {
+                    eventId: assetEventId,
+                    ...asset,
+                    source: { id: sourceId, name: sourceName, url: sourceUrl },
+                    rights,
+                    isDefaultAvatar,
+                    usedByRelations: relationUsages.length > 0,
+                    relationUsages,
+                    preferredAvatarStyle,
+                    canSetAsDefaultAvatar: defaultAvatarIssues.length === 0,
+                    defaultAvatarIssues
+                };
+            });
+    }
+
+    function setDefaultAvatar({ figureId, eventId, assetId, expectedRevision = '' }) {
+        const safeFigureId = String(figureId || '').trim();
+        const safeEventId = String(eventId || '').trim();
+        const safeAssetId = String(assetId || '').trim();
+        for (const [label, value] of [
+            ['figureId', safeFigureId],
+            ['eventId', safeEventId],
+            ['assetId', safeAssetId]
+        ]) {
+            if (!/^[a-z0-9][a-z0-9._-]*$/.test(value)) throw createHttpError(`Invalid archive ${label}`, 400);
+        }
+
+        const currentRevision = fileRevision(figuresPath);
+        if (expectedRevision && expectedRevision !== currentRevision) {
+            throw createHttpError('Figure registry changed since it was loaded; reload before changing avatar', 409);
+        }
+
+        const figures = loadFigures();
+        const figureIndex = figures.findIndex((candidate) => candidate.id === safeFigureId);
+        if (figureIndex < 0) throw createHttpError('Archive figure not found', 404);
+        const asset = getFigureAssets(safeFigureId, safeEventId).find((candidate) => candidate.id === safeAssetId);
+        if (!asset) throw createHttpError('Figure asset not found in the selected event', 404);
+        if (!asset.canSetAsDefaultAvatar) {
+            throw createHttpError(
+                `Asset cannot be used as default avatar: ${asset.defaultAvatarIssues.join('; ')}`,
+                400
+            );
+        }
+
+        const defaultAvatar = {
+            path: asset.path,
+            sourceName: asset.source.name,
+            sourceUrl: asset.source.url,
+            rights: asset.rights,
+            avatarStyle: asset.preferredAvatarStyle || ''
+        };
+        const nextFigures = figures.map((candidate, index) =>
+            index === figureIndex ? { ...candidate, defaultAvatar } : candidate
+        );
+        validateRegistry(nextFigures);
+        atomicWrite(figuresPath, `${JSON.stringify(nextFigures, null, 2)}\n`);
+        return {
+            ok: true,
+            figureId: safeFigureId,
+            eventId: safeEventId,
+            assetId: safeAssetId,
+            defaultAvatar,
+            revision: fileRevision(figuresPath)
+        };
+    }
+
+    function previewFigureAssetMerge({ figureId, canonicalPath, duplicatePaths }) {
+        const figure = getFigure(figureId).data;
+        const safeCanonicalPath = String(canonicalPath || '').trim();
+        const safeDuplicatePaths = uniqueValues(
+            (Array.isArray(duplicatePaths) ? duplicatePaths : []).map((value) => String(value || '').trim())
+        ).filter((value) => value !== safeCanonicalPath);
+        if (!safeCanonicalPath) throw createHttpError('Canonical asset path is required', 400);
+        if (safeDuplicatePaths.length === 0) throw createHttpError('Select at least one duplicate asset path', 400);
+
+        const figureAssetPaths = new Set(getFigureAssets(figure.id).map((asset) => asset.path).filter(Boolean));
+        for (const assetPath of [safeCanonicalPath, ...safeDuplicatePaths]) {
+            if (!figureAssetPaths.has(assetPath)) {
+                throw createHttpError(`Asset path is not linked to ${figure.id}: ${assetPath}`, 400);
+            }
+        }
+
+        const duplicatePathSet = new Set(safeDuplicatePaths);
+        const impactedAssets = [];
+        const impactedFiles = new Set();
+        for (const { eventId, eventDir } of listEventDirectories()) {
+            const assetsFile = path.join(eventDir, 'assets.json');
+            if (!fs.existsSync(assetsFile)) continue;
+            for (const asset of readJson(assetsFile)) {
+                if (!duplicatePathSet.has(asset.path)) continue;
+                impactedFiles.add(assetsFile);
+                impactedAssets.push({
+                    eventId,
+                    assetId: asset.id,
+                    path: asset.path,
+                    figureIds: asset.figureIds || []
+                });
+            }
+        }
+        if (impactedAssets.length === 0) throw createHttpError('No duplicate asset references were found', 404);
+
+        const figures = loadFigures();
+        const impactedDefaultAvatars = figures
+            .filter((candidate) => duplicatePathSet.has(candidate.defaultAvatar && candidate.defaultAvatar.path))
+            .map((candidate) => candidate.id);
+        const revisionFiles = [figuresPath, ...impactedFiles];
+        const contentHashes = [safeCanonicalPath, ...safeDuplicatePaths].map((assetPath) => {
+            const absolutePath = /^https?:\/\//i.test(assetPath) ? '' : path.join(root, assetPath);
+            return {
+                path: assetPath,
+                hash: absolutePath && fs.existsSync(absolutePath) ? fileRevision(absolutePath) : ''
+            };
+        });
+        const comparableHashes = contentHashes.map((entry) => entry.hash).filter(Boolean);
+        return {
+            figureId: figure.id,
+            canonicalPath: safeCanonicalPath,
+            duplicatePaths: safeDuplicatePaths,
+            revision: filesRevision(revisionFiles),
+            contentMatch:
+                comparableHashes.length === contentHashes.length && new Set(comparableHashes).size === 1,
+            contentHashes,
+            impact: {
+                assets: impactedAssets.length,
+                events: new Set(impactedAssets.map((asset) => asset.eventId)).size,
+                files: impactedFiles.size + (impactedDefaultAvatars.length > 0 ? 1 : 0),
+                defaultAvatars: impactedDefaultAvatars.length,
+                otherFigures: uniqueValues(
+                    impactedAssets.flatMap((asset) => asset.figureIds).filter((id) => id !== figure.id)
+                )
+            },
+            impactedAssets,
+            impactedDefaultAvatars
+        };
+    }
+
+    function mergeFigureAssets({
+        figureId,
+        canonicalPath,
+        duplicatePaths,
+        expectedRevision = ''
+    }) {
+        const preview = previewFigureAssetMerge({ figureId, canonicalPath, duplicatePaths });
+        if (expectedRevision && expectedRevision !== preview.revision) {
+            throw createHttpError('Asset references changed since merge preview; preview again before merging', 409);
+        }
+
+        const duplicatePathSet = new Set(preview.duplicatePaths);
+        const writes = [];
+        const changedFiles = [];
+        for (const { eventId, eventDir } of listEventDirectories()) {
+            const assetsFile = path.join(eventDir, 'assets.json');
+            if (!fs.existsSync(assetsFile)) continue;
+            const assets = readJson(assetsFile);
+            let changed = false;
+            for (const asset of assets) {
+                if (!duplicatePathSet.has(asset.path)) continue;
+                asset.path = preview.canonicalPath;
+                changed = true;
+            }
+            if (!changed) continue;
+            writes.push({ filePath: assetsFile, content: `${JSON.stringify(assets, null, 2)}\n` });
+            changedFiles.push(`archive/events/${eventId}/assets.json`);
+        }
+
+        const figures = loadFigures();
+        let figuresChanged = false;
+        const nextFigures = figures.map((candidate) => {
+            if (!duplicatePathSet.has(candidate.defaultAvatar && candidate.defaultAvatar.path)) return candidate;
+            figuresChanged = true;
+            return {
+                ...candidate,
+                defaultAvatar: {
+                    ...candidate.defaultAvatar,
+                    path: preview.canonicalPath
+                }
+            };
+        });
+        if (figuresChanged) {
+            validateRegistry(nextFigures);
+            writes.push({ filePath: figuresPath, content: `${JSON.stringify(nextFigures, null, 2)}\n` });
+            changedFiles.push('archive/figures/figures.json');
+        }
+
+        transactionalWrite(writes);
+        return {
+            ok: true,
+            figureId: preview.figureId,
+            canonicalPath: preview.canonicalPath,
+            mergedPaths: preview.duplicatePaths,
+            changedFiles,
+            revision: fileRevision(figuresPath)
+        };
     }
 
     function previewFigureMerge(sourceFigureId, targetFigureId) {
@@ -972,14 +1268,18 @@ function createArchiveFigureService(root) {
 
     return {
         getAudit,
+        getEventDisplayTargets,
         getFigure,
         getFigureAssets,
         getRegistryRevision: () => fileRevision(figuresPath),
         getFigureUsage,
         importFigureImage,
         listFigures,
+        mergeFigureAssets,
         mergeFigures,
+        previewFigureAssetMerge,
         previewFigureMerge,
+        setDefaultAvatar,
         saveFigure
     };
 }

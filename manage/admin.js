@@ -11,6 +11,11 @@ const state = {
     figureOptions: [],
     eventOptions: [],
     figureListRevision: '',
+    figureAssets: [],
+    figureUsage: null,
+    assetMergeSelection: new Set(),
+    assetMergeCanonical: '',
+    eventDisplayTargets: [],
     mergePreview: null,
     taskRunning: false
 };
@@ -19,10 +24,14 @@ const elements = Object.fromEntries(
     [
         'entityType',
         'entityList',
+        'figureAlphabet',
         'entitySearch',
         'entityCount',
         'newFigureBtn',
         'fileSelect',
+        'eventDisplayActions',
+        'eventDisplayTarget',
+        'openEventDisplayBtn',
         'editor',
         'status',
         'currentEntity',
@@ -32,6 +41,14 @@ const elements = Object.fromEntries(
         'auditPanel',
         'jsonPanel',
         'figureUsage',
+        'figureAssetCount',
+        'figureAssetMergeSummary',
+        'figureAssetMergeBtn',
+        'figureAssetGallery',
+        'figureAssetEmpty',
+        'figureEventCount',
+        'figureEventList',
+        'figureEventEmpty',
         'relationRows',
         'addFigureSelect',
         'auditSummary',
@@ -142,6 +159,29 @@ function figureLabel(figure) {
     return `${name || figure.id} · ${figure.id}`;
 }
 
+function figureSortName(figure) {
+    return localize(figure.name, 'en') || localize(figure.name, 'zh') || figure.id;
+}
+
+function figureInitial(figure) {
+    const normalized = figureSortName(figure)
+        .normalize('NFKD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .trim();
+    const match = normalized.match(/[a-z]/i);
+    return match ? match[0].toUpperCase() : '#';
+}
+
+function eventYear(event) {
+    return String(event.year || '').trim() || '#';
+}
+
+function entityIndexKey(entity) {
+    if (state.type === 'figures') return figureInitial(entity);
+    if (state.type === 'events') return eventYear(entity);
+    return '';
+}
+
 function isRelationshipFile() {
     return state.type === 'events' && (state.file === 'event.json' || state.file.startsWith('variants/'));
 }
@@ -156,6 +196,7 @@ function updatePanelVisibility() {
     elements.auditPanel.hidden = state.type !== 'audit';
     elements.jsonPanel.hidden = state.type === 'audit' || !state.document;
     elements.fileSelect.hidden = state.type !== 'events';
+    elements.eventDisplayActions.hidden = state.type !== 'events' || !state.document;
     elements.newFigureBtn.hidden = state.type !== 'figures';
     elements.loadBtn.hidden = state.type === 'audit';
     elements.saveBtn.hidden = state.type === 'audit';
@@ -181,17 +222,61 @@ function entityMatchesSearch(entity, query) {
 function renderEntities() {
     const query = elements.entitySearch.value.trim().toLowerCase();
     const visible = state.entities.filter((entity) => entityMatchesSearch(entity, query));
+    if (state.type === 'figures') {
+        visible.sort(
+            (left, right) =>
+                figureInitial(left).localeCompare(figureInitial(right), 'en') ||
+                figureSortName(left).localeCompare(figureSortName(right), 'en', {
+                    sensitivity: 'base',
+                    numeric: true
+                }) ||
+                left.id.localeCompare(right.id)
+        );
+    } else if (state.type === 'events') {
+        visible.sort(
+            (left, right) =>
+                eventYear(left).localeCompare(eventYear(right), 'en', { numeric: true }) ||
+                left.id.localeCompare(right.id)
+        );
+    }
     elements.entityCount.textContent = String(visible.length);
+    const indexKeys = ['events', 'figures'].includes(state.type)
+        ? [...new Set(visible.map(entityIndexKey))]
+        : [];
+    elements.figureAlphabet.hidden = indexKeys.length === 0;
+    elements.figureAlphabet.setAttribute('aria-label', state.type === 'events' ? '事件年份索引' : '人物首字母索引');
+    elements.figureAlphabet.classList.toggle('is-years', state.type === 'events');
+    elements.figureAlphabet.innerHTML = indexKeys
+        .map(
+            (indexKey) =>
+                `<button type="button" data-entity-index="${escapeHtml(indexKey)}" title="跳转到 ${escapeHtml(indexKey)}">${escapeHtml(indexKey)}</button>`
+        )
+        .join('');
+    elements.entityList.classList.toggle('has-alphabet', state.type === 'figures' && indexKeys.length > 0);
+    elements.entityList.classList.toggle('has-year-index', state.type === 'events' && indexKeys.length > 0);
+    let previousIndexKey = '';
     elements.entityList.innerHTML = visible
         .map((entity) => {
             const id = typeof entity === 'string' ? entity : entity.id;
+            const indexKey = entityIndexKey(entity);
+            const letterDivider =
+                indexKey && indexKey !== previousIndexKey
+                    ? `<div class="entity-letter-divider" data-index-group="${escapeHtml(indexKey)}"><span>${escapeHtml(indexKey)}</span></div>`
+                    : '';
+            previousIndexKey = indexKey;
             let title = id;
             let detail = state.type === 'storylines' ? 'storyline JSON' : '';
             let preview = '';
-            if (state.type === 'events') detail = `${entity.files.length} files · ${entity.variants.length} variants`;
+            if (state.type === 'events') {
+                detail = `${entity.files.length} files · ${entity.variants.length} variants · ${entity.usageCount} 个启用 Storyline`;
+            }
+            if (state.type === 'storylines') {
+                title = localize(entity.title, 'zh') || localize(entity.title, 'en') || id;
+                detail = `${entity.enabledEventCount}/${entity.totalEventCount} 个展示事件 · ${id}`;
+            }
             if (state.type === 'figures') {
                 title = `${localize(entity.name, 'zh') || localize(entity.name, 'en')} · ${id}`;
-                detail = `${entity.type} · ${entity.reviewStatus || 'draft'} · ${entity.eventCount} events · ${entity.assetCount} assets`;
+                detail = `${entity.type} · ${entity.reviewStatus || 'draft'} · ${entity.usedEventCount} 个展示事件 · ${entity.assetCount} 个唯一资产`;
                 if (entity.defaultAvatar) {
                     const source = /^https?:\/\//i.test(entity.defaultAvatar)
                         ? entity.defaultAvatar
@@ -208,7 +293,12 @@ function renderEntities() {
                 .slice(0, state.type === 'events' ? 4 : 2)
                 .toUpperCase();
             const thumb = preview || `<span class="entity-placeholder">${escapeHtml(fallback || 'A')}</span>`;
-            return `<button class="entity${id === state.entityId ? ' active' : ''}" data-id="${escapeHtml(id)}">${thumb}<span class="entity-copy"><span class="entity-name">${escapeHtml(title)}</span><span class="entity-meta">${escapeHtml(detail)}</span></span><span class="entity-chevron">›</span></button>`;
+            const usageLabel = entity.used ? '已使用' : '未使用';
+            const usageTitle = entity.used
+                ? `${state.type === 'figures' ? `${entity.usageCount} 个事件正在使用该人物` : `${entity.usageCount} 个展示成员`}`
+                : '当前未进入实际展示链路';
+            const alphaBadge = state.type === 'figures' ? `<span class="entity-alpha">${escapeHtml(indexKey)}</span>` : '';
+            return `${letterDivider}<button class="entity${id === state.entityId ? ' active' : ''}" data-id="${escapeHtml(id)}">${thumb}<span class="entity-copy"><span class="entity-name-row"><span class="entity-name-group">${alphaBadge}<span class="entity-name">${escapeHtml(title)}</span></span><span class="entity-usage ${entity.used ? 'is-used' : 'is-unused'}" title="${escapeHtml(usageTitle)}"><span class="entity-usage-dot"></span>${usageLabel}</span></span><span class="entity-meta">${escapeHtml(detail)}</span></span><span class="entity-chevron">›</span></button>`;
         })
         .join('');
     for (const image of elements.entityList.querySelectorAll('.entity-avatar[data-avatar-style]')) {
@@ -232,6 +322,9 @@ async function refresh() {
     state.document = null;
     state.revision = '';
     state.creatingFigure = false;
+    state.figureAssets = [];
+    state.figureUsage = null;
+    state.eventDisplayTargets = [];
     elements.currentEntity.textContent = '尚未选择实体';
     elements.editor.value = '';
     if (state.type === 'events') state.entities = await api('/api/archive/events');
@@ -255,6 +348,8 @@ function selectEntity(id) {
     state.document = null;
     state.revision = '';
     state.creatingFigure = false;
+    state.assetMergeSelection.clear();
+    state.assetMergeCanonical = '';
     if (state.type === 'events') {
         const entity = state.entities.find((item) => item.id === id);
         const files = entity ? entity.files : [];
@@ -263,6 +358,7 @@ function selectEntity(id) {
             .join('');
         state.file = files.includes('event.json') ? 'event.json' : files[0] || '';
         elements.fileSelect.value = state.file;
+        state.eventDisplayTargets = [];
     } else {
         state.file = '';
     }
@@ -298,8 +394,10 @@ async function loadEntity() {
     syncEditor();
     elements.currentEntity.textContent = `${state.type === 'events' ? `${state.entityId} / ${state.file}` : state.entityId}`;
     updatePanelVisibility();
+    if (state.type === 'events') await renderEventDisplayActions();
     if (state.type === 'figures') {
         renderFigureForm();
+        await renderFigureAssets();
         await renderFigureUsage();
         await renderAdvancedFigureTools();
     }
@@ -599,27 +697,316 @@ function collectFigureForm() {
 
 async function renderFigureUsage() {
     if (!state.entityId || state.creatingFigure) {
+        state.figureUsage = null;
         elements.figureUsage.innerHTML = '';
+        renderFigureEvents();
         return;
     }
-    const usage = await api(`/api/archive/figure-usage?figureId=${encodeURIComponent(state.entityId)}`);
+    state.figureUsage = await api(`/api/archive/figure-usage?figureId=${encodeURIComponent(state.entityId)}`);
+    const usage = state.figureUsage;
     const cards = [
-        ['事件', usage.events.length],
+        ['关联事件', usage.events.length],
+        ['唯一资产', groupFigureAssets().length],
         ['Canonical 关系', usage.eventRelations.length],
         ['Variant 关系', usage.variantRelations.length],
-        ['人物资产', usage.assets.length]
+        ['资产引用', usage.assets.length]
     ];
-    const details = [...usage.eventRelations, ...usage.variantRelations, ...usage.assets]
-        .map(
-            (entry) =>
-                `<li>${escapeHtml(entry.kind)} · ${escapeHtml(entry.eventId)}${entry.storylineId ? ` / ${escapeHtml(entry.storylineId)}` : ''}${entry.assetId ? ` · ${escapeHtml(entry.assetId)}` : ''}</li>`
-        )
-        .join('');
-    elements.figureUsage.innerHTML = `${cards
+    elements.figureUsage.innerHTML = cards
         .map(([label, value]) => `<div class="usage-card"><strong>${value}</strong>${escapeHtml(label)}</div>`)
-        .join(
-            ''
-        )}<div class="usage-card span-2"><strong>引用明细</strong><ul>${details || '<li>尚未被事件或资产引用</li>'}</ul></div>`;
+        .join('');
+    renderFigureEvents();
+}
+
+function assetImageSource(asset) {
+    return /^https?:\/\//i.test(asset.path) ? asset.path : `/${asset.path}`;
+}
+
+function groupFigureAssets() {
+    const groups = new Map();
+    for (const asset of state.figureAssets) {
+        const key = asset.path || `${asset.eventId}:${asset.id}`;
+        if (!groups.has(key)) groups.set(key, { key, path: asset.path, associations: [] });
+        groups.get(key).associations.push(asset);
+    }
+    return [...groups.values()]
+        .map((group) => {
+            const representative =
+                group.associations.find((asset) => asset.isDefaultAvatar) ||
+                group.associations.find((asset) => asset.canSetAsDefaultAvatar) ||
+                group.associations[0];
+            const metadataSignatures = new Set(
+                group.associations.map((asset) =>
+                    JSON.stringify({ source: asset.source || {}, rights: asset.rights || {} })
+                )
+            );
+            return {
+                ...group,
+                representative,
+                eventIds: [...new Set(group.associations.map((asset) => asset.eventId))].sort(),
+                assetIds: [...new Set(group.associations.map((asset) => asset.id))],
+                roles: [...new Set(group.associations.map((asset) => asset.role).filter(Boolean))],
+                isDefaultAvatar: group.associations.some((asset) => asset.isDefaultAvatar),
+                usedByRelations: group.associations.some((asset) => asset.usedByRelations),
+                metadataConflict: metadataSignatures.size > 1
+            };
+        })
+        .sort(
+            (left, right) =>
+                Number(right.isDefaultAvatar) - Number(left.isDefaultAvatar) || left.path.localeCompare(right.path)
+        );
+}
+
+function updateAssetMergeControls() {
+    const selectedCount = state.assetMergeSelection.size;
+    const hasCanonical = Boolean(
+        state.assetMergeCanonical && state.assetMergeSelection.has(state.assetMergeCanonical)
+    );
+    elements.figureAssetMergeSummary.textContent = hasCanonical
+        ? `已选择 ${selectedCount} 张 · 保留路径已指定`
+        : selectedCount > 0
+          ? `已选择 ${selectedCount} 张 · 请选择保留路径`
+          : '选择至少两张图片';
+    elements.figureAssetMergeBtn.disabled = selectedCount < 2 || !hasCanonical;
+}
+
+function resetAssetMergeSelection() {
+    state.assetMergeSelection.clear();
+    state.assetMergeCanonical = '';
+    updateAssetMergeControls();
+}
+
+async function mergeSelectedFigureAssets() {
+    const selectedPaths = [...state.assetMergeSelection];
+    const canonicalPath = state.assetMergeCanonical;
+    const duplicatePaths = selectedPaths.filter((assetPath) => assetPath !== canonicalPath);
+    if (!canonicalPath || duplicatePaths.length === 0) throw new Error('请选择至少两张图片并指定保留路径');
+
+    const request = {
+        figureId: state.entityId,
+        canonicalPath,
+        duplicatePaths
+    };
+    const preview = await api('/api/archive/figure-asset-merge-preview', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(request)
+    });
+    const impact = preview.impact;
+    const contentWarning = preview.contentMatch
+        ? '所选本地文件内容哈希一致。'
+        : '所选文件内容哈希不完全一致，请确认它们确实是同一图片。';
+    const otherFigureWarning = impact.otherFigures.length
+        ? `\n同时影响其他人物：${impact.otherFigures.join('、')}`
+        : '';
+    if (
+        !window.confirm(
+            `确认将 ${duplicatePaths.length} 个路径合并到：\n${canonicalPath}\n\n将改写 ${impact.assets} 个资产记录、${impact.events} 个事件、${impact.defaultAvatars} 个默认头像。\n${contentWarning}${otherFigureWarning}\n\n旧图片文件不会删除。`
+        )
+    )
+        return;
+
+    const result = await api('/api/archive/figure-asset-merge', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...request, expectedRevision: preview.revision })
+    });
+    resetAssetMergeSelection();
+    await loadEntity();
+    setStatus(`图片路径已合并，改写 ${result.changedFiles.length} 个文件`, 'ok');
+}
+
+function renderFigureAssetCards() {
+    const assetGroups = groupFigureAssets();
+    elements.figureAssetCount.textContent = `${assetGroups.length} 个唯一文件`;
+    elements.figureAssetEmpty.hidden = assetGroups.length > 0;
+    elements.figureAssetGallery.innerHTML = assetGroups
+        .map((group) => {
+            const asset = group.representative;
+            const caption = localize(asset.caption, 'zh') || localize(asset.caption, 'en') || asset.id;
+            const subcaption = localize(asset.subcaption, 'zh') || localize(asset.subcaption, 'en');
+            const sourceName =
+                localize(asset.source && asset.source.name, 'zh') ||
+                localize(asset.source && asset.source.name, 'en') ||
+                (asset.source && asset.source.id) ||
+                '未记录来源';
+            const preview =
+                asset.type === 'image'
+                    ? `<img class="figure-asset-image" src="${escapeHtml(assetImageSource(asset))}" alt="${escapeHtml(caption)}" loading="lazy">`
+                    : `<div class="figure-asset-filetype">${escapeHtml(String(asset.type || 'file').toUpperCase())}</div>`;
+            const defaultTitle = asset.canSetAsDefaultAvatar
+                ? '将这张图片设为人物全局默认头像'
+                : (asset.defaultAvatarIssues || []).join('；');
+            const defaultActionLabel = group.isDefaultAvatar ? '当前默认头像' : '设为默认头像';
+            const selectedForMerge = state.assetMergeSelection.has(group.path);
+            const canonicalForMerge = state.assetMergeCanonical === group.path;
+            const mergeControls =
+                asset.type === 'image'
+                    ? `<div class="asset-merge-controls"><label><input type="checkbox" data-asset-merge-select value="${escapeHtml(group.path)}"${selectedForMerge ? ' checked' : ''}>参与合并</label><label><input type="radio" name="figureAssetMergeCanonical" data-asset-merge-canonical value="${escapeHtml(group.path)}"${canonicalForMerge ? ' checked' : ''}>保留此路径</label></div>`
+                    : '';
+            return `<article class="figure-asset-card${group.isDefaultAvatar ? ' is-default' : ''}${selectedForMerge ? ' is-merge-selected' : ''}" data-event-id="${escapeHtml(asset.eventId)}" data-asset-id="${escapeHtml(asset.id)}">
+                <div class="figure-asset-preview">${preview}<div class="figure-asset-overlay"><span>${group.eventIds.length} 个事件</span><span>${escapeHtml(group.roles.join(' / ') || asset.type)}</span></div></div>
+                <div class="figure-asset-body">
+                    <div class="figure-asset-title-row"><strong>${escapeHtml(caption)}</strong>${group.isDefaultAvatar ? '<span class="badge verified">默认头像</span>' : ''}</div>
+                    ${mergeControls}
+                    ${subcaption ? `<p>${escapeHtml(subcaption)}</p>` : ''}
+                    <dl class="figure-asset-meta">
+                        <div><dt>文件路径</dt><dd>${escapeHtml(group.path)}</dd></div>
+                        <div><dt>来源</dt><dd>${escapeHtml(sourceName)}</dd></div>
+                        <div><dt>授权</dt><dd>${escapeHtml((asset.rights && asset.rights.status) || '未标记')}</dd></div>
+                        <div><dt>引用记录</dt><dd>${group.associations.length} 条 · ${group.assetIds.length} 个资产 ID</dd></div>
+                    </dl>
+                    <div class="figure-asset-tags">
+                        ${group.usedByRelations ? '<span class="asset-tag active">被事件关系选作头像</span>' : '<span class="asset-tag">未被事件关系选用</span>'}
+                        ${group.metadataConflict ? '<span class="asset-tag warning">来源或授权元数据不一致</span>' : ''}
+                        ${group.eventIds.map((eventId) => `<span class="asset-tag">${escapeHtml(eventId)}</span>`).join('')}
+                    </div>
+                    <div class="figure-asset-actions">
+                        <button data-asset-action="view">查看原图</button>
+                        <button data-asset-action="copy-path">复制路径</button>
+                        <button class="primary" data-asset-action="set-default" title="${escapeHtml(defaultTitle)}"${group.isDefaultAvatar || !asset.canSetAsDefaultAvatar ? ' disabled' : ''}>${defaultActionLabel}</button>
+                    </div>
+                </div>
+            </article>`;
+        })
+        .join('');
+    updateAssetMergeControls();
+}
+
+async function renderFigureAssets() {
+    if (!state.entityId || state.creatingFigure) {
+        state.figureAssets = [];
+        resetAssetMergeSelection();
+        elements.figureAssetCount.textContent = '0';
+        elements.figureAssetGallery.innerHTML = '';
+        elements.figureAssetEmpty.hidden = false;
+        return;
+    }
+    state.figureAssets = await api(`/api/archive/figure-assets?figureId=${encodeURIComponent(state.entityId)}`);
+    renderFigureAssetCards();
+}
+
+function relationRoleText(relation) {
+    return localize(relation.role, 'zh') || localize(relation.role, 'en') || '未填写角色';
+}
+
+function renderFigureEvents() {
+    const eventDetails = (state.figureUsage && state.figureUsage.eventDetails) || [];
+    elements.figureEventCount.textContent = `${eventDetails.length} 个事件`;
+    elements.figureEventEmpty.hidden = eventDetails.length > 0;
+    elements.figureEventList.innerHTML = eventDetails
+        .map((detail) => {
+            const title = localize(detail.title, 'zh') || localize(detail.title, 'en') || detail.eventId;
+            const canonical = detail.eventRelations.length
+                ? detail.eventRelations
+                      .map(
+                          (relation) =>
+                              `<span class="event-relation-chip${relation.primary ? ' primary' : ''}">${escapeHtml(relationRoleText(relation))}${relation.primary ? ' · 主要' : ''}</span>`
+                      )
+                      .join('')
+                : '<span class="muted">无 Canonical 关系</span>';
+            const variants = detail.variantRelations.length
+                ? detail.variantRelations
+                      .map(
+                          (relation) =>
+                              `<span class="event-relation-chip">${escapeHtml(relation.storylineId || 'variant')} · ${escapeHtml(relationRoleText(relation))}</span>`
+                      )
+                      .join('')
+                : '<span class="muted">无 Variant 关系</span>';
+            const eventAssets = state.figureAssets.filter((asset) => asset.eventId === detail.eventId);
+            const uniquePaths = new Set(eventAssets.map((asset) => asset.path));
+            const avatarIds = [
+                ...detail.eventRelations.map((relation) => relation.avatarAssetId),
+                ...detail.variantRelations.map((relation) => relation.avatarAssetId)
+            ].filter(Boolean);
+            const displayTargets = detail.displayTargets || [];
+            const displayOptions = displayTargets
+                .map((target, index) => {
+                    const storylineTitle =
+                        localize(target.storylineTitle, 'zh') ||
+                        localize(target.storylineTitle, 'en') ||
+                        target.storylineId;
+                    return `<option value="${index}">${escapeHtml(storylineTitle)} · ${escapeHtml(target.storylineId)}</option>`;
+                })
+                .join('');
+            return `<article class="figure-event-row" data-event-id="${escapeHtml(detail.eventId)}">
+                <div class="figure-event-identity"><strong>${escapeHtml(title)}</strong><span>${escapeHtml(detail.eventId)}</span></div>
+                <div class="figure-event-cell"><span class="figure-event-label">Canonical</span><div class="event-relation-chips">${canonical}</div></div>
+                <div class="figure-event-cell"><span class="figure-event-label">Variants</span><div class="event-relation-chips">${variants}</div></div>
+                <div class="figure-event-cell"><span class="figure-event-label">资产引用</span><div>${eventAssets.length} 条记录 · ${uniquePaths.size} 个文件</div>${avatarIds.length ? `<div class="event-avatar-ids">头像：${escapeHtml([...new Set(avatarIds)].join('、'))}</div>` : ''}</div>
+                <div class="figure-event-actions">
+                    <button data-event-action="open-admin">后台事件</button>
+                    ${displayTargets.length ? `<span class="figure-event-label">展示版本</span><select data-display-target aria-label="选择展示 Storyline">${displayOptions}</select><button class="primary" data-event-action="open-display">展示事件 ↗</button>` : '<button data-event-action="open-display" disabled title="该事件未加入启用的 Storyline">暂无展示页</button>'}
+                </div>
+            </article>`;
+        })
+        .join('');
+}
+
+async function openAdminEvent(eventId, file = 'event.json') {
+    state.type = 'events';
+    elements.entityType.value = 'events';
+    await refresh();
+    selectEntity(eventId);
+    if (![...elements.fileSelect.options].some((option) => option.value === file)) {
+        throw new Error(`${eventId} 没有 ${file}`);
+    }
+    state.file = file;
+    elements.fileSelect.value = state.file;
+    await loadEntity();
+}
+
+function buildPresentationEventUrl(target) {
+    const url = new window.URL(window.location.href);
+    url.port = '8000';
+    url.pathname = '/index.html';
+    url.search = '';
+    url.hash = '';
+    url.searchParams.set('storyline', target.storylineId);
+    url.searchParams.set('uiMode', 'detail');
+    url.searchParams.set('event', target.milestoneId);
+    return url.href;
+}
+
+async function renderEventDisplayActions() {
+    if (state.type !== 'events' || !state.entityId || !state.document) {
+        state.eventDisplayTargets = [];
+        elements.eventDisplayTarget.innerHTML = '';
+        elements.openEventDisplayBtn.disabled = true;
+        return;
+    }
+    state.eventDisplayTargets = await api(
+        `/api/archive/event-display-targets?eventId=${encodeURIComponent(state.entityId)}`
+    );
+    elements.eventDisplayTarget.innerHTML = state.eventDisplayTargets
+        .map((target, index) => {
+            const storylineTitle =
+                localize(target.storylineTitle, 'zh') || localize(target.storylineTitle, 'en') || target.storylineId;
+            return `<option value="${index}">${escapeHtml(storylineTitle)} · ${escapeHtml(target.storylineId)}</option>`;
+        })
+        .join('');
+    elements.openEventDisplayBtn.disabled = state.eventDisplayTargets.length === 0;
+    elements.openEventDisplayBtn.title = state.eventDisplayTargets.length
+        ? '在展示页打开当前事件'
+        : '该事件未加入启用的 Storyline';
+}
+
+async function setFigureDefaultAvatar(asset) {
+    if (!window.confirm(`将 ${asset.id} 设为 ${state.entityId} 的全局默认头像？`)) return;
+    const figureId = state.entityId;
+    await api('/api/archive/figure-default-avatar', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            figureId,
+            eventId: asset.eventId,
+            assetId: asset.id,
+            expectedRevision: state.revision
+        })
+    });
+    await refresh();
+    selectEntity(figureId);
+    await loadEntity();
+    setStatus(`已将 ${asset.id} 设为默认头像`, 'ok');
 }
 
 function currentRelations() {
@@ -673,7 +1060,7 @@ async function renderRelations() {
             return `<div class="relation-row" data-index="${index}">
               <div class="relation-title">
                 <div><strong>${escapeHtml(localize(figure.name, 'zh') || localize(figure.name, 'en'))}</strong><div class="muted">${escapeHtml(relation.figureId)} · ${escapeHtml(figure.type)}</div></div>
-                <div class="relation-actions"><button data-action="up" title="上移">↑</button><button data-action="down" title="下移">↓</button><button data-action="remove">移除</button></div>
+                <div class="relation-actions"><button class="relation-open-button" data-action="open-figure">打开 Figure</button><button data-action="up" title="上移">↑</button><button data-action="down" title="下移">↓</button><button data-action="remove">移除</button></div>
               </div>
               <div class="form-grid">
                 <label>人物身份<select data-field="figureId">${state.figureOptions.map((option) => `<option value="${escapeHtml(option.id)}"${option.id === relation.figureId ? ' selected' : ''}>${escapeHtml(figureLabel(option))}</option>`).join('')}</select></label>
@@ -715,6 +1102,17 @@ function updateRelationField(index, field, target) {
         else delete relation[field];
     }
     syncEditor();
+}
+
+async function openFigureDetails(figureId) {
+    state.type = 'figures';
+    elements.entityType.value = 'figures';
+    await refresh();
+    if (!state.entities.some((figure) => figure.id === figureId)) {
+        throw new Error(`Figure 不存在：${figureId}`);
+    }
+    selectEntity(figureId);
+    await loadEntity();
 }
 
 async function saveEntity(runValidation = false) {
@@ -863,6 +1261,10 @@ function createFigure() {
     renderFigureForm();
     renderAdvancedFigureTools().catch((error) => setStatus(error.message, 'bad'));
     elements.figureUsage.innerHTML = '';
+    state.figureAssets = [];
+    state.figureUsage = null;
+    renderFigureAssets().catch((error) => setStatus(error.message, 'bad'));
+    renderFigureEvents();
     elements.figureId.focus();
 }
 
@@ -871,6 +1273,30 @@ elements.entityList.addEventListener('click', async (event) => {
     if (!button) return;
     selectEntity(button.dataset.id);
     await loadEntity().catch((error) => setStatus(error.message, 'bad'));
+});
+elements.figureAlphabet.addEventListener('click', (event) => {
+    const button = event.target.closest('button[data-entity-index]');
+    if (!button) return;
+    const group = [...elements.entityList.querySelectorAll('[data-index-group]')].find(
+        (candidate) => candidate.dataset.indexGroup === button.dataset.entityIndex
+    );
+    if (!group) return;
+    elements.entityList.scrollTop = Math.max(0, group.offsetTop - 2);
+    for (const candidate of elements.figureAlphabet.querySelectorAll('button')) {
+        candidate.classList.toggle('is-active', candidate === button);
+    }
+});
+elements.entityList.addEventListener('scroll', () => {
+    if (!['events', 'figures'].includes(state.type) || elements.figureAlphabet.hidden) return;
+    const dividers = [...elements.entityList.querySelectorAll('[data-index-group]')];
+    const active = dividers.reduce(
+        (current, divider) => (divider.offsetTop <= elements.entityList.scrollTop + 8 ? divider : current),
+        dividers[0]
+    );
+    if (!active) return;
+    for (const button of elements.figureAlphabet.querySelectorAll('button')) {
+        button.classList.toggle('is-active', button.dataset.entityIndex === active.dataset.indexGroup);
+    }
 });
 
 elements.entityType.addEventListener('change', () => {
@@ -923,6 +1349,67 @@ for (const id of figureFieldIds) {
 }
 elements.avatarPath.addEventListener('input', renderAvatarPreview);
 elements.avatarStyle.addEventListener('input', renderAvatarPreview);
+elements.openEventDisplayBtn.addEventListener('click', () => {
+    const target = state.eventDisplayTargets[Number(elements.eventDisplayTarget.value)];
+    if (target) window.open(buildPresentationEventUrl(target), '_blank', 'noopener');
+});
+elements.figureAssetGallery.addEventListener('click', (event) => {
+    const button = event.target.closest('button[data-asset-action]');
+    const card = event.target.closest('.figure-asset-card');
+    if (!button || !card) return;
+    const asset = state.figureAssets.find(
+        (candidate) => candidate.eventId === card.dataset.eventId && candidate.id === card.dataset.assetId
+    );
+    if (!asset) return;
+    const action = button.dataset.assetAction;
+    if (action === 'view') window.open(assetImageSource(asset), '_blank', 'noopener');
+    if (action === 'copy-path') {
+        navigator.clipboard
+            .writeText(asset.path)
+            .then(() => setStatus(`已复制 ${asset.path}`, 'ok'))
+            .catch((error) => setStatus(`复制失败：${error.message}`, 'bad'));
+    }
+    if (action === 'set-default') {
+        setFigureDefaultAvatar(asset).catch((error) => setStatus(error.message, 'bad'));
+    }
+});
+elements.figureAssetGallery.addEventListener('change', (event) => {
+    const mergeSelect = event.target.closest('[data-asset-merge-select]');
+    const mergeCanonical = event.target.closest('[data-asset-merge-canonical]');
+    if (mergeSelect) {
+        if (mergeSelect.checked) state.assetMergeSelection.add(mergeSelect.value);
+        else {
+            state.assetMergeSelection.delete(mergeSelect.value);
+            if (state.assetMergeCanonical === mergeSelect.value) state.assetMergeCanonical = '';
+        }
+        renderFigureAssetCards();
+        return;
+    }
+    if (mergeCanonical) {
+        state.assetMergeCanonical = mergeCanonical.value;
+        state.assetMergeSelection.add(mergeCanonical.value);
+        renderFigureAssetCards();
+    }
+});
+elements.figureAssetMergeBtn.addEventListener('click', () =>
+    mergeSelectedFigureAssets().catch((error) => setStatus(error.message, 'bad'))
+);
+elements.figureEventList.addEventListener('click', (event) => {
+    const button = event.target.closest('button[data-event-action]');
+    const row = event.target.closest('.figure-event-row');
+    if (!button || !row) return;
+    if (button.dataset.eventAction === 'open-admin') {
+        openAdminEvent(row.dataset.eventId).catch((error) => setStatus(error.message, 'bad'));
+    }
+    if (button.dataset.eventAction === 'open-display') {
+        const detail = ((state.figureUsage && state.figureUsage.eventDetails) || []).find(
+            (candidate) => candidate.eventId === row.dataset.eventId
+        );
+        const select = row.querySelector('[data-display-target]');
+        const target = detail && select ? detail.displayTargets[Number(select.value)] : null;
+        if (target) window.open(buildPresentationEventUrl(target), '_blank', 'noopener');
+    }
+});
 elements.mergeTargetSelect.addEventListener('change', resetMergePreview);
 elements.mergePreviewBtn.addEventListener('click', () =>
     previewFigureMerge().catch((error) => setStatus(error.message, 'bad'))
@@ -992,6 +1479,13 @@ elements.relationRows.addEventListener('click', (event) => {
     if (!button || !row) return;
     const relations = currentRelations();
     const index = Number(row.dataset.index);
+    if (button.dataset.action === 'open-figure') {
+        const relation = relations[index];
+        if (relation && relation.figureId) {
+            openFigureDetails(relation.figureId).catch((error) => setStatus(error.message, 'bad'));
+        }
+        return;
+    }
     if (button.dataset.action === 'remove') relations.splice(index, 1);
     if (button.dataset.action === 'up' && index > 0)
         [relations[index - 1], relations[index]] = [relations[index], relations[index - 1]];
