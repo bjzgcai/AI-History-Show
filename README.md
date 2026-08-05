@@ -179,6 +179,8 @@ npm run generate
 
 Do not hand-edit `milestones-data.js`, `milestones-data-default.js`, `shared/thumbnail-manifest.js`, or files under `resources/images/_thumbs/`. `npm run generate` refreshes runtime data and selectively regenerates thumbnails for homepage cards and figure avatars. Detail images always use their originals; a thumbnail is omitted when it is not smaller than its source.
 
+Thumbnail generation requires Python with Pillow. GitHub Actions and the Docker build image install it automatically; install Pillow locally before running `npm run generate` on a new machine.
+
 Pages and the Docker presentation image share the same allowlisted release bundle:
 
 ```bash
