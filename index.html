@@ -6700,11 +6700,24 @@
             justify-content: center;
         }
 
+        .photo-viewer-frame {
+            max-width: 82vw;
+            max-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .viewer-photo {
             max-width: 82vw;
             max-height: 80vh;
             object-fit: contain;
             box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        .photo-viewer-frame .viewer-photo {
+            max-width: 100%;
+            max-height: 100%;
         }
 
         .game-evolution-panel {
@@ -9047,6 +9060,8 @@
     </script>
     <script src="shared/i18n.js"></script>
     <script src="shared/storyline-routing.js"></script>
+    <script src="shared/thumbnail-manifest.js"></script>
+    <script src="shared/image-loading.js"></script>
     <script src="shared/chronology-overview.js?v=20260804-storyline-scroll"></script>
     <script src="shared/event-media-selection.js"></script>
     <script src="milestones-data.js?v=20260803-storyline-metadata" onerror="_loadDefaultMilestones()"></script>
@@ -9361,7 +9376,6 @@
         let completionQuizViewKey = '';
         let completionQuizViewStartedAt = 0;
         const vmCache = new Map();
-        const imagePreloadCache = new Map();
         const completedQuizMilestoneKeys = new Set();
 
         let globeScene;
@@ -10408,25 +10422,28 @@
             return analytics.track(eventName, eventData);
         }
 
-        function preloadImage(url) {
-            if (!url || imagePreloadCache.has(url)) return;
-            const image = new Image();
-            image.decoding = 'async';
-            image.loading = 'eager';
-            image.src = url;
-            imagePreloadCache.set(url, image);
+        function getImageLoader() {
+            return window.AIHistoryImageLoading || null;
         }
 
-        function preloadMilestoneAssets(index) {
-            if (index < 0 || index >= milestoneList.length) return;
-            const vm = getVm(index);
-            getPhotosForDisplay(vm.photos).slice(0, 20).forEach(preloadImage);
+        function getPreviewImageUrl(url) {
+            const loader = getImageLoader();
+            return loader && typeof loader.getPreviewUrl === 'function' ? loader.getPreviewUrl(url) : url;
         }
 
-        function preloadAdjacentAssets(index) {
-            preloadMilestoneAssets(index);
-            preloadMilestoneAssets(index - 1);
-            preloadMilestoneAssets(index + 1);
+        function buildPreviewImageAttributes(url, alt) {
+            const fullSrc = String(url || '').trim();
+            const previewSrc = getPreviewImageUrl(fullSrc);
+            const fullAttrs = fullSrc && previewSrc !== fullSrc
+                ? ` data-full-src="${escapeHtml(fullSrc)}" data-preview-src="${escapeHtml(previewSrc)}"`
+                : '';
+            return `src="${escapeHtml(previewSrc)}"${fullAttrs} alt="${escapeHtml(alt || '')}" decoding="async" loading="lazy"`;
+        }
+
+        function hydratePreviewImages(root) {
+            const loader = getImageLoader();
+            if (!root || !loader || typeof loader.attachPreviewFallback !== 'function') return;
+            root.querySelectorAll('img[data-full-src]').forEach((image) => loader.attachPreviewFallback(image));
         }
 
         function buildContextYears(year, beforeCount, afterCount) {
@@ -10509,7 +10526,7 @@
         function buildFigureAvatar(figure, avatarSource) {
             if (avatarSource && avatarSource.src) {
                 const styleAttr = avatarSource.style ? ` style="${avatarSource.style}"` : '';
-                return `<img src="${avatarSource.src}" alt="${escapeHtml(figure.name || tx('keyFigure'))}"${styleAttr}>`;
+                return `<img ${buildPreviewImageAttributes(avatarSource.src, figure.name || tx('keyFigure'))}${styleAttr}>`;
             }
             const fallbackLabel = initials(figure.name);
             return `<span class="figure-avatar-fallback">${escapeHtml(fallbackLabel)}</span>`;
@@ -10700,7 +10717,7 @@
             return `
                 <div class="bench-photo-frame bench-visual-card has-image">
                     <div class="bench-image-stage${isDiagram ? ' is-diagram' : ''}">
-                        <img src="${escapeHtml(item.url)}" alt="${escapeHtml(title)}">
+                        <img src="${escapeHtml(item.url)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async">
                     </div>
                     <div class="bench-hero-caption">
                         <span>${escapeHtml(title)}</span>
@@ -10734,7 +10751,7 @@
                 <div class="bench-photo-frame bench-visual-card has-video">
                     <div class="bench-video-stage">
                         <video src="${escapeHtml(item.url)}"${poster} muted loop playsinline preload="metadata" aria-label="${escapeHtml(title)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"></video>
-                        ${item.poster ? `<img src="${escapeHtml(item.poster)}" alt="${escapeHtml(title)}" hidden>` : ''}
+                        ${item.poster ? `<img src="${escapeHtml(item.poster)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" hidden>` : ''}
                         <span class="bench-video-badge">${escapeHtml(uiText('MP4', 'MP4'))}</span>
                     </div>
                     <div class="bench-hero-caption">
@@ -11379,7 +11396,7 @@
             const photoClass = isPortraitLikePhoto(image) ? ' is-photo' : '';
             return `
                 <figure class="branch-event-visual has-image${photoClass}">
-                    <img src="${escapeHtml(image)}" alt="${escapeHtml(meta.name || vm.title || tx('archiveImage'))}">
+                    <img ${buildPreviewImageAttributes(image, meta.name || vm.title || tx('archiveImage'))}>
                     ${recordTrigger}
                 </figure>
             `;
@@ -11871,7 +11888,7 @@
                 <button class="close-viewer" type="button" aria-label="${escapeHtml(tx('close'))}">×</button>
                 <div class="game-evolution-panel">
                     ${shouldUseVideo ? `<video class="game-evolution-player" src="${escapeHtml(videoUrl)}" controls autoplay muted loop playsinline preload="metadata"></video>` : ''}
-                    ${fallbackImageUrl ? `<img class="game-evolution-fallback" src="${escapeHtml(fallbackImageUrl)}" alt="${escapeHtml(title)}"${shouldUseVideo ? ' hidden' : ''}>` : ''}
+                    ${fallbackImageUrl ? `<img class="game-evolution-fallback" src="${escapeHtml(fallbackImageUrl)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async"${shouldUseVideo ? ' hidden' : ''}>` : ''}
                     <div class="game-evolution-meta">
                         <strong>${escapeHtml(title)}</strong>
                         <span>${escapeHtml(sourceLine)}</span>
@@ -12045,6 +12062,7 @@
                     ${cards || `<div class="empty-state">${escapeHtml(tx('noMilestones'))}</div>`}
                 </section>
             `;
+            hydratePreviewImages(refs.branchTimelinePage);
             bindBranchTimelineInteractions();
         }
 
@@ -13033,12 +13051,14 @@
                 </article>
             `;
             }).join('');
+            hydratePreviewImages(refs.figureRow);
         }
 
         function setImage(imgEl, src, alt) {
             const nextSrc = src || '';
             if (imgEl.getAttribute('src') !== nextSrc) {
                 imgEl.decoding = 'async';
+                imgEl.loading = 'eager';
                 imgEl.src = nextSrc;
             }
             imgEl.alt = alt || '';
@@ -13072,8 +13092,8 @@
             const activeMeta = buildArchivePhotoMeta(vm, focusUrl);
             const nextMeta = buildArchivePhotoMeta(vm, nextUrl);
 
-            refs.archiveThumbPrev.innerHTML = prevUrl ? `<img src="${prevUrl}" alt="${tx('previousArchive')}">` : '';
-            refs.archiveThumbNext.innerHTML = nextUrl ? `<img src="${nextUrl}" alt="${tx('nextArchive')}">` : '';
+            refs.archiveThumbPrev.innerHTML = prevUrl ? `<img src="${escapeHtml(prevUrl)}" alt="${escapeHtml(tx('previousArchive'))}" loading="lazy" decoding="async">` : '';
+            refs.archiveThumbNext.innerHTML = nextUrl ? `<img src="${escapeHtml(nextUrl)}" alt="${escapeHtml(tx('nextArchive'))}" loading="lazy" decoding="async">` : '';
             refs.archiveThumbPrev.classList.toggle('is-empty', !prevUrl);
             refs.archiveThumbNext.classList.toggle('is-empty', !nextUrl);
             refs.archiveThumbPrev.disabled = !hasPhotos || safePhotos.length <= 1 || !prevUrl;
@@ -13388,7 +13408,7 @@
                             ${description ? `<div class="quiz-material-description">${escapeHtml(description)}</div>` : ''}
                         </div>
                         <div class="quiz-material-image">
-                            <img src="${escapeHtml(item.url)}" alt="${escapeHtml(title)}">
+                        <img src="${escapeHtml(item.url)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async">
                         </div>
                     </article>
                 `;
@@ -13909,7 +13929,7 @@
                 ? mediaMeta.caption
                 : (fallbackTitle || getAchievementField(rawMilestone, 'artifact', tx('archiveImage')));
             const imageHtml = mediaUrl
-                ? `<img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || tx('archiveImage'))}">`
+                ? `<img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || tx('archiveImage'))}" loading="lazy" decoding="async">`
                 : `<div class="bench-code-label">${escapeHtml(mediaTitle || tx('archiveImage'))}</div>`;
             return buildPaperDemo(`
                 <div class="bench-paper-svg bench-paper-image-demo">
@@ -13938,7 +13958,7 @@
             return buildPaperDemo(`
                 <div class="bench-game-video-demo">
                     <video src="${escapeHtml(module.url)}"${posterAttr} controls muted loop playsinline preload="metadata" aria-label="${escapeHtml(title)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"></video>
-                    ${poster ? `<img class="bench-game-video-fallback" src="${escapeHtml(poster)}" alt="${escapeHtml(title)}" hidden>` : ''}
+                    ${poster ? `<img class="bench-game-video-fallback" src="${escapeHtml(poster)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" hidden>` : ''}
                 </div>
             `, [
                 [uiText('SGF cue', 'SGF 线索'), sourceLine],
@@ -14996,7 +15016,7 @@
             const mediaTitle = mediaMeta && mediaMeta.caption ? mediaMeta.caption : artifact;
             const mediaHtml = mediaUrl ? `
                 <div class="bench-code-media">
-                    <img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || artifact || tx('archiveImage'))}">
+                    <img src="${escapeHtml(mediaUrl)}" alt="${escapeHtml(mediaTitle || artifact || tx('archiveImage'))}" loading="lazy" decoding="async">
                 </div>
                 ${mediaTitle ? `<div class="bench-code-media-caption">${escapeHtml(mediaTitle)}</div>` : ''}
             ` : '';
@@ -15436,7 +15456,7 @@
             const imageUrl = getUiMediaVisualImage(vm);
             if (!imageUrl) return '';
             const meta = buildArchivePhotoMeta(vm, imageUrl);
-            return `<div class="ui-side-visual"><div class="ui-side-visual-stage"><img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(meta.name || tx('archiveImage'))}"></div><div class="ui-side-visual-caption">${escapeHtml(meta.name || meta.role || tx('archiveImage'))}</div></div>`;
+            return `<div class="ui-side-visual"><div class="ui-side-visual-stage"><img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(meta.name || tx('archiveImage'))}" loading="lazy" decoding="async"></div><div class="ui-side-visual-caption">${escapeHtml(meta.name || meta.role || tx('archiveImage'))}</div></div>`;
         }
 
         function buildUiConceptsHtml(vm) {
@@ -15564,9 +15584,10 @@
             image.dataset.uiActiveImageIndex = expectedIndex;
             image.onload = revealImage;
             image.onerror = revealImage;
+            image.decoding = 'async';
+            image.loading = 'eager';
             image.src = imageUrl;
             expectedSrc = image.src;
-            image.alt = vm.title || tx('aiHistoryEvent');
             imageStage.classList.toggle('is-diagram', isDiagramImage(imageUrl));
             if (image.complete && image.naturalWidth) window.requestAnimationFrame(revealImage);
 
@@ -15833,7 +15854,7 @@
                 ? `
                     <div class="ui-detail-image">
                         <div class="ui-detail-image-stage${detailImageClass}">
-                            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}" data-ui-active-image-index="${uiDetailImageIndex}" draggable="false">
+                            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}" loading="eager" decoding="async" data-ui-active-image-index="${uiDetailImageIndex}" draggable="false">
                             ${buildUiDetailImageEdgeButtonsHtml(detailImages)}
                         </div>
                         <div class="ui-detail-caption">
@@ -15879,6 +15900,7 @@
                     </aside>
                 </div>
             `;
+            hydratePreviewImages(refs.uiBrowserMain);
             refs.uiBrowserMain.querySelectorAll('[data-ui-image-index]').forEach((button) => {
                 button.addEventListener('click', () => {
                     const nextImageIndex = Number(button.dataset.uiImageIndex);
@@ -15892,10 +15914,8 @@
                 });
             });
             bindUiEventEdgeNavigation(refs.uiBrowserMain);
-            bindUiDetailImageAutoplayPause(
-                refs.uiBrowserMain.querySelector('.ui-detail-image-stage'),
-                detailImages.length
-            );
+            const uiDetailImageStage = refs.uiBrowserMain.querySelector('.ui-detail-image-stage');
+            bindUiDetailImageAutoplayPause(uiDetailImageStage, detailImages.length);
             bindUiSidePanelScrollProgress(refs.uiBrowserMain.querySelector('.ui-side-panel'));
             scheduleUiDetailLocationFit();
             scheduleAvatarFallbackFit();
@@ -16003,11 +16023,23 @@
             viewer.innerHTML = `
                 <button class="close-viewer" type="button">×</button>
                 <button class="photo-prev" type="button">◀</button>
-                <img src="${photos[currentPhotoIndex]}" class="viewer-photo" alt="${tx('historicalArchive')}">
+                <div class="photo-viewer-frame">
+                    <img class="viewer-photo" alt="${escapeHtml(tx('historicalArchive'))}">
+                </div>
                 <button class="photo-next" type="button">▶</button>
                 <div class="photo-counter">${currentPhotoIndex + 1} / ${photos.length}</div>
             `;
             document.body.appendChild(viewer);
+            const viewerPhoto = viewer.querySelector('.viewer-photo');
+            const viewerCounter = viewer.querySelector('.photo-counter');
+
+            const showViewerPhoto = () => {
+                viewerPhoto.decoding = 'async';
+                viewerPhoto.loading = 'eager';
+                viewerPhoto.src = photos[currentPhotoIndex];
+                viewerCounter.textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+            };
+            showViewerPhoto();
 
             const closeViewer = () => {
                 viewer.remove();
@@ -16016,13 +16048,11 @@
             viewer.querySelector('.close-viewer').onclick = closeViewer;
             viewer.querySelector('.photo-prev').onclick = () => {
                 currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
-                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
-                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+                showViewerPhoto();
             };
             viewer.querySelector('.photo-next').onclick = () => {
                 currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
-                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
-                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+                showViewerPhoto();
             };
 
             const handleKey = (event) => {
@@ -16095,7 +16125,6 @@
                 resetInlineMedia();
                 renderBranchTimelinePage();
                 document.title = `${tx('appTitleSingle')} - ${getStorylineLabel(getActiveStorylineOption()) || vm.title}`;
-                preloadAdjacentAssets(currentIndex);
                 return;
             }
             renderHeader(vm);
@@ -16123,7 +16152,6 @@
             } else {
                 document.title = `${tx('appTitleSingle')} - ${vm.year} ${vm.title}`;
             }
-            preloadAdjacentAssets(currentIndex);
         }
 
         function isPortraitStackLayout() {
@@ -16412,7 +16440,6 @@
                 return;
             }
 
-            preloadMilestoneAssets(index);
             currentIndex = index;
             if (isUiBrowserActive() && milestoneList[index]) {
                 uiBrowserMode = 'detail';

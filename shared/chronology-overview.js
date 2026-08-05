@@ -489,6 +489,15 @@
         return images[0] || '';
     }
 
+    function getImageLoader() {
+        return globalScope.AIHistoryImageLoading || null;
+    }
+
+    function getPreviewImageUrl(imageUrl) {
+        const loader = getImageLoader();
+        return loader && typeof loader.getPreviewUrl === 'function' ? loader.getPreviewUrl(imageUrl) : imageUrl;
+    }
+
     function getImageMeta(milestone, imageUrl) {
         const resourceMeta = (milestone && milestone.resources && milestone.resources.imageMeta) || {};
         const imageMeta = (milestone && milestone.imageMeta) || {};
@@ -741,6 +750,7 @@
                 .filter(Boolean)
                 .join(' · ');
             const imageUrl = getPrimaryImage(milestone);
+            const previewUrl = getPreviewImageUrl(imageUrl);
             const imageAlt = getImageAlt(milestone, imageUrl, localize);
             const portraitImage = isPortraitImage(milestone, imageUrl);
             const selected = config.selectedEventId && config.selectedEventId === milestone.id;
@@ -760,7 +770,7 @@
                     <span class="chrono-card-media${portraitImage ? ' is-portrait' : ''}">
                         ${
                             imageUrl
-                                ? `<img data-src="${escapeHtml(imageUrl)}" alt="${escapeHtml(imageAlt)}" decoding="async">`
+                                ? `<img data-src="${escapeHtml(previewUrl)}" data-full-src="${escapeHtml(imageUrl)}" alt="${escapeHtml(imageAlt)}" decoding="async">`
                                 : '<span class="chrono-card-placeholder" aria-hidden="true"></span>'
                         }
                     </span>
@@ -937,6 +947,12 @@
             const loadImage = (image) => {
                 const media = image.closest('.chrono-card-media.is-portrait');
                 const imageUrl = image.dataset.src;
+                const fullSrc = image.dataset.fullSrc || imageUrl;
+                const loader = getImageLoader();
+                if (loader && typeof loader.attachPreviewFallback === 'function' && fullSrc !== imageUrl) {
+                    image.dataset.previewSrc = imageUrl;
+                    loader.attachPreviewFallback(image);
+                }
                 image.src = imageUrl;
                 if (media && imageUrl) {
                     const escapedUrl = image.src.replace(/["\\]/g, '\\$&');
