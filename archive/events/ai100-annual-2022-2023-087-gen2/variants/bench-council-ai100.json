@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-087-gen2",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "Gen2",
     "zh": "Gen2"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Prompt-driven video generation",
-    "zh": "AI100（2022-2023）· 提示驱动的视频生成"
   },
   "displayDescription": {
     "en": "<p>Runway presented Gen-2 in February 2023 as a multimodal system that can generate video from text, images or existing video references. Its official research page demonstrates eight modes: text to video, text plus image to video, image to video, stylization, storyboard, mask, render and customization.</p><p>The release expanded generative video beyond transforming an input clip, allowing creators to begin with a prompt or still image and then control content, appearance and composition through different workflows. In comparisons published on the Gen-2 page, Runway reported that users preferred its results 73.53% of the time over Stable Diffusion 1.5 and 88.24% over Text2Live.</p>",

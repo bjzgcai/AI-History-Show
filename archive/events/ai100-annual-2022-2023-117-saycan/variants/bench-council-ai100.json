@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-117-saycan",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "SayCan",
     "zh": "SayCan"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Grounding language plans in robot affordances",
-    "zh": "AI100（2022-2023）· 用机器人可供性约束语言计划"
   },
   "displayDescription": {
     "en": "<p>SayCan connected a large language model's broad semantic knowledge with a robot's learned ability to execute concrete skills. For each possible action, the language model estimates how useful it is for the instruction while an affordance model estimates whether the robot can successfully perform it in the current scene.</p><p>Multiplying these scores selects steps that are both meaningful and feasible, allowing a mobile manipulator to carry out long-horizon household instructions. The approach became an influential template for grounding language-model planning in embodied feedback.</p>",

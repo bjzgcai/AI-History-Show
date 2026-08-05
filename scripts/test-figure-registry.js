@@ -172,6 +172,13 @@ assert.ok(michaelJordan, 'Michael I. Jordan should have a stable registry identi
 assert.match(michaelJordan.disambiguation.en, /computer scientist/i);
 assert.match(michaelJordan.disambiguation.zh, /计算机科学家/);
 
+const diederikKingma = archiveRegistry.byId.get('diederik-kingma');
+assert.ok(diederikKingma, 'Diederik P. Kingma should have a stable registry identity');
+assert.equal(diederikKingma.name.en, 'Diederik P. Kingma');
+assert.equal(diederikKingma.name.zh, '迪德里克·P·金马');
+assert.ok(diederikKingma.aliases.includes('Diederik Kingma'));
+assert.ok(diederikKingma.aliases.includes('迪德里克·金马'));
+
 const registryOnlyFigure = figure('registry-only-person', { en: 'Registry Only Person', zh: '仅注册表人物' });
 const firstMigration = buildRegistry([], new Map(), [registryOnlyFigure]);
 const secondMigration = buildRegistry([], new Map(), firstMigration);

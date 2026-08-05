@@ -1,7 +1,7 @@
 [
   {
     "id": "ai100-annual-2022-2023-081-latent-diffusion-models-quiz-1",
-    "storylineId": "bench-council-ai100-2022-2023",
+    "storylineId": "bench-council-ai100",
     "question": {
       "en": "Where does a latent diffusion model perform most denoising steps?",
       "zh": "潜扩散模型主要在哪里执行去噪步骤？"

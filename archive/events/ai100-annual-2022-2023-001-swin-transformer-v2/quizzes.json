@@ -1,7 +1,7 @@
 [
   {
     "id": "ai100-annual-2022-2023-001-swin-transformer-v2-quiz-1",
-    "storylineId": "bench-council-ai100-2022-2023",
+    "storylineId": "bench-council-ai100",
     "question": {
       "en": "Which Swin Transformer V2 technique helps transfer a model from smaller pretraining windows to larger high-resolution windows?",
       "zh": "Swin Transformer V2 中哪项技术帮助模型从较小预训练窗口迁移到更大的高分辨率窗口？"

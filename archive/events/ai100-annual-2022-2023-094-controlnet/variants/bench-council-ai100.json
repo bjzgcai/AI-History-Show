@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-094-controlnet",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "ControlNet",
     "zh": "ControlNet"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Controllable diffusion generation",
-    "zh": "AI100（2022-2023）· 可控扩散生成"
   },
   "displayDescription": {
     "en": "<p>ControlNet adds spatial conditioning to a pretrained text-to-image diffusion model without discarding the original model’s learned capability. A trainable copy of the encoder is connected to a locked backbone through zero-initialized convolution layers, allowing edge maps, depth, pose, segmentation and other controls to guide generation.</p><p>The zero-convolution design starts with no disturbance to the pretrained network and gradually learns how much control information to inject.</p>",

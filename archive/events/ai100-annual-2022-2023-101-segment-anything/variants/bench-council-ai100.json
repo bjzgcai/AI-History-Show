@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-101-segment-anything",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "Segment anything",
     "zh": "Segment anything"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Foundation model for segmentation",
-    "zh": "AI100（2022-2023）· 分割基础模型"
   },
   "displayDescription": {
     "en": "<p>Segment Anything reframed image segmentation as a promptable task: a user or downstream system supplies points, boxes or masks, and one model returns valid object masks. Its architecture separates a reusable image encoder from lightweight prompt and mask decoders so one image embedding can support interactive responses.</p><p>The project also introduced SA-1B, a dataset of more than one billion masks collected from about eleven million licensed and privacy-respecting images through a model-assisted data engine.</p>",
@@ -51,18 +47,21 @@
     }
   ],
   "assetIds": [
-    "asset-annual-101-segment-anything-portrait-ross-girshick",
+    "asset-annual-101-segment-anything-portrait-alexander-kirillov",
     "asset-annual-101-segment-anything-official-model-diagram",
+    "asset-annual-101-segment-anything-portrait-ross-girshick",
     "asset-annual-101-segment-anything-record"
   ],
-  "overviewImageAssetId": "asset-annual-101-segment-anything-portrait-ross-girshick",
+  "overviewImageAssetId": "asset-annual-101-segment-anything-portrait-alexander-kirillov",
   "sourceIds": [
     "source-primary-record",
     "source-openalex-record",
     "source-benchcouncil-annual",
+    "source-annual-101-segment-anything-portrait-alexander-kirillov",
     "source-annual-101-segment-anything-portrait-ross-girshick",
     "source-arxiv-paper",
     "source-sam-repository",
+    "source-sam-project-page",
     "source-ross-profile",
     "source-sam-figure-4",
     "source-sam-official-model-diagram"
@@ -132,7 +131,8 @@
       "role": {
         "en": "First author of the Segment Anything paper",
         "zh": "Segment Anything 论文第一作者"
-      }
+      },
+      "avatarAssetId": "asset-annual-101-segment-anything-portrait-alexander-kirillov"
     },
     {
       "figureId": "eric-mintun",

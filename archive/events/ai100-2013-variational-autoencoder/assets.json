@@ -31,15 +31,15 @@
     "path": "resources/images/external/ai100-2013-variational-autoencoder/diederik-kingma-portrait.jpg",
     "role": "portrait",
     "caption": {
-      "zh": "迪德里克·金马肖像",
-      "en": "Diederik Kingma portrait"
+      "zh": "迪德里克·P·金马肖像",
+      "en": "Diederik P. Kingma portrait"
     },
     "sourceId": "source-auto-encoding-variational-bayes",
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "本地副本来自迪德里克·金马个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
-        "en": "Local copy from Diederik Kingma personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
+        "zh": "本地副本来自迪德里克·P·金马个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from Diederik P. Kingma personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://dpkingma.com/files/portrait.jpg"
     },
@@ -52,8 +52,8 @@
       "en": "Co-author of the variational autoencoder."
     },
     "sourceName": {
-      "zh": "迪德里克·金马个人网站",
-      "en": "Diederik Kingma personal website"
+      "zh": "迪德里克·P·金马个人网站",
+      "en": "Diederik P. Kingma personal website"
     },
     "sourceUrl": "https://dpkingma.com/files/portrait.jpg",
     "figureIds": [

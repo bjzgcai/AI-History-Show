@@ -36,7 +36,7 @@
       "zh": "已核验的主要人物肖像"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false,
     "figureIds": [
@@ -80,7 +80,7 @@
       "zh": "原创成就解释图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": true
   },
@@ -122,7 +122,7 @@
       "zh": "官方发布资料图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   }

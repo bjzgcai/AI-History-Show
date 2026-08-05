@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-059-chain-of-thought-prompting",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "Chain-of-Thought Prompting",
     "zh": "Chain-of-Thought Prompting"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Intermediate reasoning through prompting",
-    "zh": "AI100（2022-2023）· 通过提示生成中间推理"
   },
   "displayDescription": {
     "en": "<p>Chain-of-thought prompting showed that a few demonstrations containing intermediate reasoning steps can substantially improve large language models on arithmetic, commonsense and symbolic reasoning tasks. The method changes the prompt rather than the model weights.</p><p>The gains appeared most strongly at large model scales, suggesting that prompting can expose capabilities already latent in a pretrained model. This simple technique became a foundation for later work on self-consistency, tool use and structured reasoning.</p>",

@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-024-whisper",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "Whisper",
     "zh": "Whisper"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Large-scale weakly supervised speech recognition",
-    "zh": "AI100（2022-2023）· 大规模弱监督语音识别"
   },
   "displayDescription": {
     "en": "<p>Whisper reframed speech recognition as a scale-and-diversity problem. OpenAI trained an encoder-decoder Transformer on 680,000 hours of multilingual and multitask audio gathered with weak supervision, avoiding dependence on a narrowly curated benchmark corpus.</p><p>The model performs transcription, translation, language identification and timestamp prediction through a shared token interface. Its zero-shot robustness across datasets made a practical case for broad web-scale supervision in speech systems.</p>",

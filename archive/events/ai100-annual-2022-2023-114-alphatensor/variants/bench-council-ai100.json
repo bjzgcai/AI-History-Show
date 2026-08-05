@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-114-alphatensor",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "AlphaTensor",
     "zh": "AlphaTensor"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Algorithm discovery with reinforcement learning",
-    "zh": "AI100（2022-2023）· 强化学习发现算法"
   },
   "displayDescription": {
     "en": "<p>AlphaTensor represented matrix multiplication as a tensor-decomposition game and trained an AlphaZero-style agent to search for efficient sequences of rank-one updates. This converted a longstanding mathematical algorithm-design problem into a reinforcement-learning environment.</p><p>The system rediscovered known methods and found improved algorithms for several matrix sizes, including a finite-field result beyond the 1969 Strassen benchmark for 4 x 4 matrices. It demonstrated that learned search can contribute new algorithmic knowledge rather than only optimize an existing implementation.</p>",

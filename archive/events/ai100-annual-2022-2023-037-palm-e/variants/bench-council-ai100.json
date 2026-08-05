@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-037-palm-e",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "PaLM-E",
     "zh": "PaLM-E"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Embodied multimodal reasoning",
-    "zh": "AI100（2022-2023）· 具身多模态推理"
   },
   "displayDescription": {
     "en": "<p>PaLM-E extends a pretrained language model with continuous observations from vision and robotic sensors. Encoded images, robot states and other measurements are inserted into the same sequence as text, allowing one model to answer visual questions, describe scenes and support embodied planning.</p><p>The study shows positive transfer between robotics, vision-language and language tasks as the model scales, rather than treating each robot task as an isolated policy.</p>",

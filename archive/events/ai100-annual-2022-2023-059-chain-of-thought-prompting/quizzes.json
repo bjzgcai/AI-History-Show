@@ -1,7 +1,7 @@
 [
   {
     "id": "ai100-annual-2022-2023-059-chain-of-thought-prompting-quiz-1",
-    "storylineId": "bench-council-ai100-2022-2023",
+    "storylineId": "bench-council-ai100",
     "question": {
       "en": "What does chain-of-thought prompting add to few-shot examples?",
       "zh": "思维链提示在少样本示例中增加了什么？"

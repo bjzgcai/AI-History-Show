@@ -41,13 +41,20 @@
                 </div>
                 <input id="entitySearch" class="search" type="search" placeholder="搜索 ID、名称或 alias" />
                 <button id="newFigureBtn" class="wide" hidden>新建人物 / 实体</button>
-                <div id="entityList" class="entity-list"></div>
+                <div class="entity-list-shell">
+                    <div id="entityList" class="entity-list"></div>
+                    <nav id="figureAlphabet" class="figure-alphabet" aria-label="人物首字母索引" hidden></nav>
+                </div>
             </aside>
 
             <section class="workspace">
                 <div class="toolbar">
                     <strong id="currentEntity">尚未选择实体</strong>
                     <select id="fileSelect" hidden></select>
+                    <div id="eventDisplayActions" class="toolbar-event-display" hidden>
+                        <select id="eventDisplayTarget" aria-label="选择展示 Storyline"></select>
+                        <button id="openEventDisplayBtn" class="primary">展示事件 ↗</button>
+                    </div>
                     <button id="loadBtn">加载</button>
                     <button id="saveBtn">保存草稿</button>
                     <button id="saveValidateBtn">保存并验证</button>
@@ -136,6 +143,38 @@
                     </div>
 
                     <div id="figureUsage" class="usage-grid"></div>
+
+                    <section class="figure-assets-section">
+                        <div class="section-heading">
+                            <div>
+                                <div class="section-title-row">
+                                    <h3>人物资产</h3>
+                                    <span id="figureAssetCount" class="badge">0</span>
+                                </div>
+                                <p class="muted">按实际文件路径合并；同一图片在多个事件中的引用只显示一次。</p>
+                            </div>
+                            <div class="asset-merge-toolbar">
+                                <span id="figureAssetMergeSummary" class="muted">选择至少两张图片</span>
+                                <button id="figureAssetMergeBtn" disabled>合并选中图片</button>
+                            </div>
+                        </div>
+                        <div id="figureAssetGallery" class="figure-assets-grid"></div>
+                        <div id="figureAssetEmpty" class="figure-assets-empty" hidden>暂无人物资产</div>
+                    </section>
+
+                    <section class="figure-events-section">
+                        <div class="section-heading">
+                            <div>
+                                <div class="section-title-row">
+                                    <h3>关联事件</h3>
+                                    <span id="figureEventCount" class="badge">0</span>
+                                </div>
+                                <p class="muted">人物与事件的角色、variant 和资产引用分别展示。</p>
+                            </div>
+                        </div>
+                        <div id="figureEventList" class="figure-event-list"></div>
+                        <div id="figureEventEmpty" class="figure-assets-empty" hidden>暂无关联事件</div>
+                    </section>
 
                     <h3>高级操作</h3>
                     <div class="advanced-grid">

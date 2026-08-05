@@ -1,7 +1,7 @@
 [
   {
     "id": "ai100-annual-2022-2023-110-esmfold-quiz-1",
-    "storylineId": "bench-council-ai100-2022-2023",
+    "storylineId": "bench-council-ai100",
     "question": {
       "en": "What expensive preprocessing step does ESMFold avoid?",
       "zh": "ESMFold 避免了哪项昂贵的预处理步骤？"

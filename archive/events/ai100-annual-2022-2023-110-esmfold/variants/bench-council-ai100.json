@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-110-esmfold",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "ESMFold",
     "zh": "ESMFold"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Language-model protein folding",
-    "zh": "AI100（2022-2023）· 语言模型蛋白质折叠"
   },
   "displayDescription": {
     "en": "<p>ESMFold predicts atomic-level protein structures directly from a single amino-acid sequence using representations learned by the ESM-2 protein language model. It avoids the multiple-sequence-alignment search used by many earlier high-accuracy pipelines, enabling much faster inference across very large sequence collections.</p><p>The accompanying work used this speed to explore hundreds of millions of metagenomic protein sequences and release the ESM Metagenomic Atlas.</p>",

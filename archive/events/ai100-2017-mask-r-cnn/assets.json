@@ -2,7 +2,7 @@
   {
     "id": "asset-2017-mask-r-cnn-portrait",
     "type": "image",
-    "path": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+    "path": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
     "role": "portrait",
     "caption": {
       "en": "Kaiming He portrait",

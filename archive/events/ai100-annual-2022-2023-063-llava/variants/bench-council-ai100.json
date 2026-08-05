@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-063-llava",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "LLaVA",
     "zh": "LLaVA"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Visual instruction following",
-    "zh": "AI100（2022-2023）· 视觉指令跟随"
   },
   "displayDescription": {
     "en": "<p>LLaVA builds a large language-and-vision assistant by connecting a frozen CLIP vision encoder to a large language model through a learned projection. GPT-4 is used to turn image captions and bounding-box descriptions into conversational instruction-following data.</p><p>A feature-alignment stage first teaches the projection to connect the two modalities, followed by visual instruction tuning for conversation and reasoning.</p>",

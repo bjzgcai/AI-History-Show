@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-028-blip-2",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "Blip-2",
     "zh": "Blip-2"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Efficient vision-language bridging",
-    "zh": "AI100（2022-2023）· 高效视觉语言连接"
   },
   "displayDescription": {
     "en": "<p>BLIP-2 addresses the cost of vision-language pretraining by keeping both a pretrained image encoder and a large language model frozen. A lightweight Querying Transformer learns the interface between the two modalities through representation learning followed by generative vision-to-language learning.</p><p>This design reuses strong unimodal models instead of retraining an end-to-end stack, and the paper reports competitive zero-shot image-to-text generation and visual question answering with far fewer trainable parameters.</p>",

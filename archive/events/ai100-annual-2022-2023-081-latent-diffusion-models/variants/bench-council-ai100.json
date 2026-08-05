@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-081-latent-diffusion-models",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "Latent Diffusion Models",
     "zh": "Latent Diffusion Models"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · High-resolution generation in latent space",
-    "zh": "AI100（2022-2023）· 潜空间高分辨率生成"
   },
   "displayDescription": {
     "en": "<p>Latent Diffusion Models moved the expensive denoising process from pixel space into the compressed latent space of a pretrained autoencoder. This preserved perceptual detail while reducing the spatial and computational burden of diffusion training and sampling.</p><p>Cross-attention made the same framework conditionable on text, bounding boxes, semantic maps and other inputs. The balance of quality, flexibility and efficiency became the technical foundation for widely used systems including Stable Diffusion.</p>",

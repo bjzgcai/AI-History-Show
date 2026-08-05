@@ -37,7 +37,7 @@
       "zh": "互动式成就解释图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": true
   },
@@ -73,7 +73,7 @@
       "zh": "ChatGPT RLHF 技术路线背景图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   }
