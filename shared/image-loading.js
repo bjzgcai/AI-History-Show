@@ -1,7 +1,7 @@
 (function (globalScope) {
     const IMAGE_ROOT = 'resources/images/';
     const THUMB_ROOT = 'resources/images/_thumbs/';
-    const RASTER_EXTENSION_PATTERN = /\.(?:jpe?g|png|webp)$/i;
+    const RASTER_EXTENSION_PATTERN = /\.(?:jpe?g|png|gif|webp)$/i;
     const ABSOLUTE_URL_PATTERN = /^(?:[a-z][a-z0-9+.-]*:|\/\/|data:|blob:)/i;
 
     function splitUrl(value) {
@@ -21,6 +21,8 @@
     function getPreviewUrl(url) {
         const parsed = splitUrl(url);
         if (!parsed) return String(url || '').trim();
+        const manifest = globalScope.AIHistoryThumbnailManifest;
+        if (manifest instanceof Set && !manifest.has(parsed.relativePath)) return String(url || '').trim();
         return `${THUMB_ROOT}${parsed.relativePath}.webp${parsed.suffix}`;
     }
 

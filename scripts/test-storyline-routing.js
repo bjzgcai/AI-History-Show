@@ -185,6 +185,7 @@ const dualScreenHtml = fs.readFileSync(path.join(__dirname, '..', 'dual-screen.h
 const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
 const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
 const imageLoadingSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'image-loading.js'), 'utf8');
+const thumbnailManifestSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'thumbnail-manifest.js'), 'utf8');
 const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
 const pqMiniProgramQrPath = path.join(__dirname, '..', 'resources', 'pq.png');
 assert.match(
@@ -711,8 +712,23 @@ assert.match(
 );
 assert.match(
     imageLoadingSource,
-    /const THUMB_ROOT = 'resources\/images\/_thumbs\/'[\s\S]*?function getPreviewUrl\(url\)[\s\S]*?function attachPreviewFallback\(image\)/,
-    'shared image loading should map local raster images to generated thumbnails and fall back to their originals'
+    /const THUMB_ROOT = 'resources\/images\/_thumbs\/'[\s\S]*?function getPreviewUrl\(url\)[\s\S]*?AIHistoryThumbnailManifest[\s\S]*?function attachPreviewFallback\(image\)/,
+    'shared image loading should use the generated thumbnail manifest and fall back to originals'
+);
+assert.match(
+    thumbnailManifestSource,
+    /AIHistoryThumbnailManifest = new Set\(/,
+    'the generated thumbnail manifest should expose the retained preview assets'
+);
+assert.match(
+    indexHtml,
+    /<script src="shared\/thumbnail-manifest\.js"><\/script>\s*<script src="shared\/image-loading\.js"><\/script>/,
+    'single-screen entry should load the thumbnail manifest before image loading'
+);
+assert.match(
+    dualScreenHtml,
+    /<script src="shared\/thumbnail-manifest\.js"><\/script>\s*<script src="shared\/image-loading\.js"><\/script>/,
+    'dual-screen entry should load the thumbnail manifest before image loading'
 );
 assert.match(
     indexHtml,

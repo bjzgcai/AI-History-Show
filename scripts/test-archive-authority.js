@@ -31,9 +31,14 @@ function successfulPreview() {
 }
 
 assert.equal(
-    packageJson.scripts.generate,
+    packageJson.scripts.generate.split(' && ')[0],
     'node scripts/generate-archive-data.js',
     'the default generator must use Archive data'
+);
+assert.match(
+    packageJson.scripts.generate,
+    / && npm run generate:thumbnails$/,
+    'the default generator must refresh the thumbnail manifest after Archive data'
 );
 const retiredScripts = [
     'generate:legacy',
