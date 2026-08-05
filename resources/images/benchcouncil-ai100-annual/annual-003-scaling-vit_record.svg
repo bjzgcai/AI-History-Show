@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Scaling Vision Transformers</title>
+  <desc id="desc">Original local explainer showing the coordinated scaling of model size, training data and compute, the memory-efficient training recipe, and the reported ViT-G results.</desc>
+  <rect width="960" height="560" fill="#0d1722"/>
+  <text x="48" y="55" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="30" font-weight="700">Scaling Vision Transformers</text>
+  <text x="48" y="86" fill="#a9bdd0" font-family="Arial, sans-serif" font-size="17">Model, data and compute must move together</text>
+  <rect x="48" y="126" width="220" height="116" rx="8" fill="#19324b" stroke="#65a9dc" stroke-width="2"/>
+  <rect x="370" y="126" width="220" height="116" rx="8" fill="#263528" stroke="#74b77d" stroke-width="2"/>
+  <rect x="692" y="126" width="220" height="116" rx="8" fill="#3b2e1d" stroke="#d89b58" stroke-width="2"/>
+  <path d="M268 184 H370 M590 184 H692" stroke="#dce8f2" stroke-width="4" fill="none"/>
+  <path d="M352 175 L370 184 L352 193 M674 175 L692 184 L674 193" stroke="#dce8f2" stroke-width="4" fill="none"/>
+  <text x="70" y="159" fill="#8fc4eb" font-family="Arial, sans-serif" font-size="14" font-weight="700"><tspan x="70" dy="0">MODEL SIZE</tspan></text>
+  <text x="70" y="196" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="22" font-weight="700"><tspan x="70" dy="0">5M to 2B</tspan><tspan x="70" dy="28">parameters</tspan></text>
+  <text x="392" y="159" fill="#8fd29a" font-family="Arial, sans-serif" font-size="14" font-weight="700"><tspan x="392" dy="0">TRAINING DATA</tspan></text>
+  <text x="392" y="196" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="22" font-weight="700"><tspan x="392" dy="0">1M to 3B</tspan><tspan x="392" dy="28">images</tspan></text>
+  <text x="714" y="159" fill="#efb97b" font-family="Arial, sans-serif" font-size="14" font-weight="700"><tspan x="714" dy="0">COMPUTE</tspan></text>
+  <text x="714" y="196" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="20" font-weight="700"><tspan x="714" dy="0">Below 1 to 10K+</tspan><tspan x="714" dy="27">TPUv3 core-days</tspan></text>
+  <rect x="48" y="290" width="864" height="86" rx="8" fill="#2d2530" stroke="#c087c9" stroke-width="2"/>
+  <text x="70" y="324" fill="#d9a3df" font-family="Arial, sans-serif" font-size="15" font-weight="700"><tspan x="70" dy="0">LARGE-SCALE TRAINING RECIPE</tspan></text>
+  <text x="70" y="355" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="19" font-weight="700"><tspan x="70" dy="0">Decoupled head/body weight decay  |  MAP pooling  |  Modified Adafactor</tspan></text>
+  <rect x="48" y="424" width="412" height="88" rx="8" fill="#1a3a32" stroke="#62aa8c" stroke-width="2"/>
+  <rect x="500" y="424" width="412" height="88" rx="8" fill="#3b2e1d" stroke="#d89b58" stroke-width="2"/>
+  <text x="70" y="457" fill="#91d7bb" font-family="Arial, sans-serif" font-size="14" font-weight="700"><tspan x="70" dy="0">ViT-G / 14</tspan></text>
+  <text x="70" y="490" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="22" font-weight="700"><tspan x="70" dy="0">90.45% ImageNet top-1</tspan></text>
+  <text x="522" y="457" fill="#efb97b" font-family="Arial, sans-serif" font-size="14" font-weight="700"><tspan x="522" dy="0">10-SHOT TRANSFER</tspan></text>
+  <text x="522" y="490" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="22" font-weight="700"><tspan x="522" dy="0">84.86% ImageNet top-1</tspan></text>
+</svg>

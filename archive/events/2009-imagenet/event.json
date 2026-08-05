@@ -6,10 +6,6 @@
     "zh": "ImageNet",
     "en": "ImageNet"
   },
-  "summary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "description": {
     "zh": "<p>ImageNet 通过把规模变成研究工具，改变了计算机视觉。它借助 WordNet 层级组织数百万张标注图像，并支撑 ImageNet 大规模视觉识别挑战。这个数据集和基准帮助 2012 年深度卷积网络的能力被清晰地看见。</p>",
     "en": "<p>ImageNet changed computer vision by making scale a research instrument. It organized millions of labeled images through the WordNet hierarchy and powered the ImageNet Large Scale Visual Recognition Challenge. The dataset and benchmark helped reveal the power of deep convolutional networks in 2012.</p>"

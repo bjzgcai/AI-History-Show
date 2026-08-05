@@ -1,0 +1,40 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-101-segment-anything-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "What can a user provide to prompt Segment Anything?",
+      "zh": "用户可以用什么提示 Segment Anything？"
+    },
+    "options": [
+      {
+        "en": "Points or boxes on an image",
+        "zh": "图像上的点或框"
+      },
+      {
+        "en": "Only a protein sequence",
+        "zh": "只有蛋白质序列"
+      },
+      {
+        "en": "Only a sound recording",
+        "zh": "只有录音"
+      },
+      {
+        "en": "Only a database password",
+        "zh": "只有数据库密码"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "SAM is designed to respond to spatial prompts such as points, boxes and masks.",
+      "zh": "SAM 被设计为响应点、框和掩码等空间提示。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
+    ],
+    "assetIds": [
+      "asset-annual-101-segment-anything-record"
+    ]
+  }
+]

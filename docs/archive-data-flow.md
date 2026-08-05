@@ -54,10 +54,11 @@ flowchart TD
     RESOURCES["resources/"]
     VALIDATE["npm run validate:archive<br/>scripts/validate-archive.js"]
     VALIDATION_REPORT[".tmp/archive-reports/archive-validation.md"]
-    GENERATE["npm run generate<br/>scripts/generate-archive-data.js"]
+    GENERATE["npm run generate<br/>runtime data + selective thumbnails"]
     COMPILER["scripts/archive-compiler.js"]
     PRIMARY["milestones-data.js"]
     FALLBACK["milestones-data-default.js"]
+    THUMBNAILS["resources/images/_thumbs/<br/>shared/thumbnail-manifest.js"]
     SINGLE["index.html"]
     DUAL["dual-screen.html"]
     SHARED["shared/milestone-view.js<br/>shared/i18n.js 等"]
@@ -80,6 +81,7 @@ flowchart TD
     COMPILER --> GENERATE
     GENERATE -->|原子同步写入| PRIMARY
     GENERATE -->|原子同步写入| FALLBACK
+    GENERATE --> THUMBNAILS
     PRIMARY --> SINGLE
     PRIMARY --> DUAL
     FALLBACK -->|主数据加载失败时| SINGLE
@@ -153,7 +155,7 @@ flowchart LR
 
 边界约束：
 
-- 默认 `npm run generate` 只编译 Archive storyline 和 event bundle。
+- 默认 `npm run generate` 编译 Archive storyline 和 event bundle，并同步首页卡片与人物头像所需的缩略图及其清单。
 - `/admin` 是唯一管理入口；旧 `/archive-admin` 与 Legacy API 返回 HTTP 404。
 - Legacy 数据模块、生成器、parity 页面和一次性迁移/对比脚本不再存在于工作树。
 - 可重建报告写入被忽略的 `.tmp/`，不会进入 Pages/Docker 静态包。
@@ -169,7 +171,8 @@ flowchart TD
     CHECK -->|是| TEMP["写入两个临时文件"]
     TEMP --> BACKUP["备份现有 primary/fallback"]
     BACKUP --> INSTALL["安装两个新文件"]
-    INSTALL --> DONE["删除临时备份<br/>两份输出保持同步"]
+    INSTALL --> THUMBNAILS["同步选择性缩略图与清单"]
+    THUMBNAILS --> DONE["删除临时备份<br/>运行时数据保持同步"]
     INSTALL -->|任一步失败| ROLLBACK["回滚原文件并报告错误"]
 ```
 
@@ -178,6 +181,8 @@ flowchart TD
 ```text
 milestones-data.js
 milestones-data-default.js
+shared/thumbnail-manifest.js
+resources/images/_thumbs/**
 .tmp/archive-*/**
 ```
 
@@ -187,12 +192,13 @@ milestones-data-default.js
 |---|---|---|
 | 内容权威 | `archive/**` | 长期跟踪，人工编辑入口 |
 | 正式 runtime | `milestones-data*.js` | 长期跟踪，只能由 generator 更新 |
+| 选择性缩略图 | `resources/images/_thumbs/**`、`shared/thumbnail-manifest.js` | 长期跟踪，只能由 generator 更新；仅保留首页和头像需要且体积更小的预览 |
 | 自动报告与机器工作集 | `.tmp/archive-reports/`、`.tmp/archive-review/` 等 | 可重建，不跟踪 |
 | 人工研究与审阅结论 | `research/` | 长期跟踪，人工维护 |
 
 Archive 迁移期的阶段报告已从当前工作树移除，仍可通过 Git 历史查阅。
 
-`resources/` 继续按 append-only 规则管理。资源报告中的“未引用”只表示没有找到某类静态引用，不构成删除授权。
+`resources/` 中的原始媒体继续按 append-only 规则管理；`resources/images/_thumbs/` 是可重建的例外，会由生成器按当前预览需求清理。资源报告中的“未引用”只表示没有找到某类静态引用，不构成删除原始媒体授权。
 
 ## 6. 关键实现入口
 

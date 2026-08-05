@@ -6,10 +6,6 @@
     "zh": "深度压缩",
     "en": "Deep Compression"
   },
-  "summary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "description": {
     "zh": "<p>深度压缩表明，大型神经网络可以在几乎不损失准确率的情况下大幅缩小。三阶段流程移除冗余权重、共享量化数值，并对结果进行紧凑编码。</p>",
     "en": "<p>Deep Compression showed that large neural networks could be dramatically reduced without losing much accuracy. The three-stage pipeline removed redundant weights, shared quantized values, and encoded the result compactly.</p>"

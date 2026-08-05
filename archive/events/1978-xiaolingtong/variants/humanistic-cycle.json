@@ -48,9 +48,9 @@
         }
     ],
     "assetIds": [
-        "asset-1978-xiaolingtong-cover",
         "asset-1978-xiaolingtong-ye-yonglie",
-        "asset-1978-xiaolingtong-future-city"
+        "asset-1978-xiaolingtong-future-city",
+        "asset-1978-xiaolingtong-cover"
     ],
     "overviewImageAssetId": "asset-1978-xiaolingtong-cover",
     "sourceIds": [

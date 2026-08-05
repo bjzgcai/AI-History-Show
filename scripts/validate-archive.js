@@ -12,6 +12,7 @@ const REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-validati
 const SOURCE_TYPE_TAXONOMY = require('../archive/taxonomies/source-types.json');
 const SOURCE_PURPOSE_TAXONOMY = require('../archive/taxonomies/source-purposes.json');
 const { auditArchive: auditEventFigureRules } = require('./event-figure-rules');
+const { validateAssetSelectionReview } = require('./asset-selection-review');
 
 const REQUIRED_EVENT_FILES = ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json'];
 const LOCALIZED_REQUIRED_KEYS = ['zh', 'en'];
@@ -125,6 +126,11 @@ function isObject(value) {
 
 function hasText(value) {
     return typeof value === 'string' && value.trim().length > 0;
+}
+
+function localizedValuesEqual(left, right) {
+    if (!isObject(left) || !isObject(right)) return false;
+    return LOCALIZED_REQUIRED_KEYS.every((key) => String(left[key] || '').trim() === String(right[key] || '').trim());
 }
 
 function checkLocalized(filePath, value, label, options = {}) {
@@ -302,6 +308,9 @@ function validateAssets(eventDir, assets, sourceIds) {
 
     for (const asset of assets) {
         if (!isObject(asset)) continue;
+        for (const issue of validateAssetSelectionReview(asset.selectionReview)) {
+            addError(filePath, `asset ${asset.id || '<missing>'} selectionReview ${issue}.`);
+        }
         const isDisplayImage = isDisplayImageAsset(asset);
         if (!hasText(asset.type)) addError(filePath, `asset ${asset.id || '<missing>'} is missing type.`);
         if (!hasText(asset.path)) {
@@ -467,6 +476,9 @@ function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, qui
     if (variant.storylineId !== variantId) {
         addWarning(filePath, `variant storylineId (${variant.storylineId}) differs from file name (${variantId}).`);
     }
+    if (variant.storylineId === 'bench-council-ai100' && variant.displaySummary) {
+        addError(filePath, 'BenchCouncil AI100 displaySummary must be omitted; the storyline title is inherited.');
+    }
 
     for (const sourceId of variant.sourceIds || []) {
         if (!sourceIds.has(sourceId)) addError(filePath, `variant references missing sourceId: ${sourceId}`);
@@ -510,7 +522,13 @@ function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, qui
         });
     }
 
-    return { id: variantId, file: rel(filePath), eventId, storylineId: variant.storylineId };
+    return {
+        id: variantId,
+        file: rel(filePath),
+        eventId,
+        storylineId: variant.storylineId,
+        displaySummary: variant.displaySummary
+    };
 }
 
 function validateEventDir(eventDir) {
@@ -564,6 +582,10 @@ function validateEventDir(eventDir) {
             );
             if (variant) variants.push(variant);
         }
+    }
+
+    if (event.summary && variants.some((variant) => localizedValuesEqual(event.summary, variant.displaySummary))) {
+        addError(eventFile, 'event.summary must describe the event, not duplicate a variant displaySummary.');
     }
 
     state.events.push({ id: eventId, file: rel(eventFile), variants });

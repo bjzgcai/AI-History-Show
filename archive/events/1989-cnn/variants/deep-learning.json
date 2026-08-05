@@ -11,7 +11,7 @@
     "en": "Neural Networks and Connectionism"
   },
   "displayDescription": {
-    "zh": "<p>1989 年，扬·勒昆及合作者发表手写邮政编码识别研究，证明带有局部连接和共享权重的多层网络可以用反向传播端到端训练。卷积层在图像不同位置重复使用同一组滤波器，既减少参数，也让模型能够识别平移后仍相似的笔画结构。</p><p>这条路线后来发展为 LeNet-5，并在银行支票和文档识别中得到实际应用。CNN 把特征提取与分类放进同一个学习系统，取代了大量手工设计视觉特征的步骤，为 AlexNet 之后的大规模图像识别奠定了直接的架构基础。</p>",
+    "zh": "<p>1989 年，杨立昆及合作者发表手写邮政编码识别研究，证明带有局部连接和共享权重的多层网络可以用反向传播端到端训练。卷积层在图像不同位置重复使用同一组滤波器，既减少参数，也让模型能够识别平移后仍相似的笔画结构。</p><p>这条路线后来发展为 LeNet-5，并在银行支票和文档识别中得到实际应用。CNN 把特征提取与分类放进同一个学习系统，取代了大量手工设计视觉特征的步骤，为 AlexNet 之后的大规模图像识别奠定了直接的架构基础。</p>",
     "en": "<p>In 1989, Yann LeCun and collaborators published a system for handwritten ZIP-code recognition, showing that a multilayer network with local connections and shared weights could be trained end to end with backpropagation. Convolutional layers reused the same filters across image locations, reducing the number of parameters while detecting similar strokes after small shifts.</p><p>This line of work later matured into LeNet-5 and practical systems for reading bank checks and other documents. CNNs placed feature extraction and classification inside one learned pipeline, reducing dependence on hand-engineered visual features. The architecture became the direct foundation for the large-scale image-recognition systems that followed AlexNet.</p>"
   },
   "emphasis": [
@@ -53,9 +53,9 @@
   "assetIds": [
     "asset-1989-cnn-yann-lecun-external",
     "asset-1989-lenet-zip-code-cnn",
+    "asset-1989-cnn-architecture-01",
     "asset-1989-cnn-people-01",
-    "asset-1989-cnn-people-02",
-    "asset-1989-cnn-architecture-01"
+    "asset-1989-cnn-people-02"
   ],
   "sourceIds": [
     "source-backpropagation-applied-to-handwritten-zip-code-recognition",
@@ -75,7 +75,7 @@
         "en": "Historical Background"
       },
       "html": {
-        "zh": "扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。",
+        "zh": "杨立昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。",
         "en": "Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. LeNet became a defining example of end-to-end convolutional perception."
       },
       "sourceIds": [
@@ -126,7 +126,7 @@
     {
       "name": {
         "en": "Yann LeCun",
-        "zh": "扬·勒昆"
+        "zh": "杨立昆"
       },
       "role": {
         "en": "LeNet lead researcher",
@@ -155,7 +155,7 @@
   },
   "quote": {
     "en": "\"LeCun and collaborators demonstrated that convolutional networks trained with backpropagation could recognize handwritten digits by exploiting local image structure.\"",
-    "zh": "\"勒昆及合作者展示了用反向传播训练的卷积网络可以利用图像局部结构识别手写数字，为现代计算机视觉奠定了重要基础。\""
+    "zh": "\"杨立昆及合作者展示了用反向传播训练的卷积网络可以利用图像局部结构识别手写数字，为现代计算机视觉奠定了重要基础。\""
   },
   "quoteMeta": {
     "speaker": "",
@@ -165,18 +165,18 @@
     },
     "workAuthors": {
       "en": "Yann LeCun et al., Neural Computation, 1989",
-      "zh": "扬·勒昆等，Neural Computation，1989"
+      "zh": "杨立昆等，Neural Computation，1989"
     },
     "sourceLabel": "",
     "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541"
   },
   "quotePage": {
     "en": "LeCun et al., Neural Computation / Bell Labs publication",
-    "zh": "勒昆等，Neural Computation / 贝尔实验室论文"
+    "zh": "杨立昆等，Neural Computation / 贝尔实验室论文"
   },
   "quoteAttribution": {
     "en": "<em>Backpropagation Applied to Handwritten Zip Code Recognition</em>, Yann LeCun et al., Neural Computation, 1989",
-    "zh": "《反向传播应用于手写邮政编码识别》, 扬·勒昆等，Neural Computation，1989"
+    "zh": "《反向传播应用于手写邮政编码识别》, 杨立昆等，Neural Computation，1989"
   },
   "achievement": {
     "area": {

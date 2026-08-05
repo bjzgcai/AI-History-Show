@@ -150,6 +150,15 @@
         "en": "Migrated from legacy media metadata; verify rights before publication."
       }
     },
+    "selectionReview": {
+      "status": "excluded-from-variants",
+      "reasonCode": "historical-reference",
+      "reason": {
+        "zh": "Sam Altman 访谈画面晚于 GPT-1 论文，且不是该论文作者资料；仅作旧历史资源保留，不应加入页面。",
+        "en": "The Sam Altman interview frame postdates the GPT-1 paper and is not author material for that paper. Retain it only as a legacy historical resource and do not select it."
+      },
+      "reviewedAt": "2026-08-02"
+    },
     "usage": [
       "variant:bench-council-ai100"
     ],

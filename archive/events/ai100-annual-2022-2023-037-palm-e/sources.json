@@ -1,0 +1,207 @@
+[
+  {
+    "id": "source-primary-record",
+    "type": "paper",
+    "label": {
+      "en": "Primary paper",
+      "zh": "原始论文"
+    },
+    "title": {
+      "en": "PaLM-E: An Embodied Multimodal Language Model",
+      "zh": "《PaLM-E：具身多模态语言模型》"
+    },
+    "authors": [
+      "Danny Driess",
+      "Fei Xia",
+      "Mehdi S. M. Sajjadi",
+      "Corey Lynch",
+      "Aakanksha Chowdhery",
+      "Brian Ichter",
+      "Ayzaan Wahid",
+      "Jonathan Tompson",
+      "Quan Vuong",
+      "Tianhe Yu",
+      "Wenlong Huang",
+      "Yevgen Chebotar",
+      "Pierre Sermanet",
+      "Daniel Duckworth",
+      "Sergey Levine",
+      "Vincent Vanhoucke",
+      "Karol Hausman",
+      "Marc Toussaint",
+      "Klaus Greff",
+      "Andy Zeng",
+      "Igor Mordatch",
+      "Pete Florence"
+    ],
+    "year": 2023,
+    "url": "https://arxiv.org/abs/2303.03378",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary paper used to verify authorship, multimodal tokenization, embodied tasks and scaling results.",
+      "zh": "用于核对作者、多模态 token 化、具身任务与扩展结果的主论文。"
+    }
+  },
+  {
+    "id": "source-openalex-record",
+    "type": "paper-index",
+    "label": {
+      "en": "Paper index",
+      "zh": "论文索引"
+    },
+    "title": {
+      "en": "OpenAlex record for Palm-e: An embodied multimodal language model",
+      "zh": "Palm-e: An embodied multimodal language model 的 OpenAlex 文献记录"
+    },
+    "url": "https://openalex.org/W4323572061",
+    "language": "en",
+    "purpose": "bibliographic-verification",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Bibliographic metadata is retained only as a secondary cross-check; technical and identity claims use primary records.",
+      "zh": "书目元数据仅作为辅助交叉核对；技术与人物主张使用原始记录。"
+    }
+  },
+  {
+    "id": "source-benchcouncil-annual",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "AI100: Top 100 AI achievements (2022-2023)",
+      "zh": "AI100：人工智能百大成就（2022-2023）"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
+      "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+    }
+  },
+  {
+    "id": "source-annual-037-palm-e-portrait-pete-florence",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Pete Florence portrait source",
+      "zh": "皮特·弗洛伦斯人物图片来源"
+    },
+    "url": "https://www.peteflorence.com/",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The portrait appears beside Pete Florence’s name, biography and Google research history on his own homepage. Reliability: primary-identity-source. Usage note: The source does not state redistribution rights; retain attribution and recheck before redistribution outside this project.",
+      "zh": "该肖像在皮特·弗洛伦斯本人主页中与姓名、简介和 Google 研究经历同时出现。 可靠性：primary-identity-source。使用备注：来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+    }
+  },
+  {
+    "id": "source-palm-e-project",
+    "type": "project-page",
+    "label": {
+      "en": "Project page",
+      "zh": "项目页面"
+    },
+    "title": {
+      "en": "PaLM-E project page",
+      "zh": "PaLM-E 项目页面"
+    },
+    "url": "https://palm-e.github.io/",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Research-team project page with the paper, task videos and model overview.",
+      "zh": "研究团队项目页，提供论文、任务视频与模型概览。"
+    }
+  },
+  {
+    "id": "source-pete-florence-profile",
+    "type": "personal-page",
+    "label": {
+      "en": "Personal homepage",
+      "zh": "个人主页"
+    },
+    "title": {
+      "en": "Pete Florence personal homepage",
+      "zh": "皮特·弗洛伦斯个人主页"
+    },
+    "url": "https://www.peteflorence.com/",
+    "language": "en",
+    "purpose": "biography",
+    "reliability": "primary",
+    "notes": {
+      "en": "Researcher-controlled page that identifies Pete Florence, records his Google DeepMind role, announces PaLM-E and displays the selected portrait. No redistribution license is stated.",
+      "zh": "研究者本人维护的页面，确认皮特·弗洛伦斯身份与 Google DeepMind 经历，发布 PaLM-E 动态并展示所选肖像；页面未声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-palm-e-figure-1",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "PaLM-E Figure 1: embodied multimodal model overview",
+      "zh": "PaLM-E Figure 1：具身多模态模型总览"
+    },
+    "url": "https://ar5iv.labs.arxiv.org/html/2303.03378/assets/x2.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Paper-rendered Figure 1 combines mobile manipulation, task-and-motion planning, tabletop manipulation, visual question answering and the multimodal-token path into PaLM. It is the most representative commonly used overview screenshot, but the existing original local explainer remains the single selected explanatory image; the HTML rendering states no separate redistribution license.",
+      "zh": "论文 HTML 渲染的 Figure 1 汇集移动操作、任务与运动规划、桌面操作、视觉问答，以及多模态 token 进入 PaLM 的路径，是最具代表性的常用总览截图。页面仍只选用现有本地原创解释图；HTML 渲染未为该图单独声明再分发许可。"
+    }
+  },
+  {
+    "id": "source-palm-e-official-approach",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "PaLM-E official approach diagram",
+      "zh": "PaLM-E 官方方法图"
+    },
+    "url": "https://palm-e.github.io/img/approach.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The official PaLM-E project page publishes the selected multimodal-token and control-output method diagram.",
+      "zh": "PaLM-E 官方项目页发布了所选的多模态 token 注入与控制输出方法图。"
+    }
+  },
+  {
+    "id": "source-palm-e-official-teaser",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "PaLM-E official task overview",
+      "zh": "PaLM-E 官方任务概览图"
+    },
+    "url": "https://palm-e.github.io/img/palm-e-teaser.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The official project page publishes the selected overview of robotics, visual-language and language-only tasks.",
+      "zh": "官方项目页发布了所选的机器人、视觉语言和纯语言任务概览图。"
+    }
+  }
+]

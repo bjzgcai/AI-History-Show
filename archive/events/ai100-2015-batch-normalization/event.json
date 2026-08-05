@@ -6,10 +6,6 @@
     "zh": "批归一化",
     "en": "Batch Normalization"
   },
-  "summary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "description": {
     "zh": "<p>批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。</p>",
     "en": "<p>Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice.</p>"

@@ -1,0 +1,63 @@
+{
+  "id": "ai100-annual-2022-2023-057-claude",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "en": "Claude",
+    "zh": "Claude"
+  },
+  "summary": {
+    "en": "An AI assistant launched around helpfulness, honesty and harmlessness",
+    "zh": "围绕有用、诚实与无害目标推出的 AI 助手"
+  },
+  "description": {
+    "en": "<p>Anthropic introduced Claude in March 2023 as an AI assistant available through chat and API interfaces. The launch emphasized conversation, summarization, search, writing, coding and question answering while positioning helpfulness, honesty and harmlessness as central product goals.</p><p>Claude's safety lineage is closely associated with Constitutional AI, which uses a written set of principles and AI-generated feedback to reduce reliance on direct human labels for every harmful-output example. This linked the product release to a concrete alignment method rather than presenting safety only as a general aspiration.</p>",
+    "zh": "<p>Anthropic 于 2023 年 3 月推出 Claude，并通过聊天与 API 提供这一 AI 助手。发布材料强调对话、摘要、检索、写作、编程和问答，并把有用、诚实与无害作为核心产品目标。</p><p>Claude 的安全技术沿革与“宪法式 AI”密切相关：系统依据一组书面原则并利用 AI 反馈，减少对每个有害输出示例都进行人工标注的依赖。这让产品发布与一种具体的对齐方法相连接，而不是只把安全表述为抽象目标。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "Anthropic",
+      "zh": "Anthropic"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "claude-product",
+      "name": {
+        "en": "Claude",
+        "zh": "Claude"
+      },
+      "role": {
+        "en": "Anthropic AI assistant",
+        "zh": "Anthropic AI 助手"
+      },
+      "figureType": "product",
+      "avatar": "resources/images/benchcouncil-ai100-annual/claude-logo.png",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Completed event-specific research on 2026-08-03 and expanded company-context research after copyright restrictions were relaxed. The exact BenchCouncil title, order, institution, country and blank contributor/publication fields remain preserved. Anthropic's official Series B announcement verifies Dario Amodei as cofounder and CEO and Daniela Amodei as cofounder and president; both are recorded only as related company figures, not direct Claude authors or BenchCouncil official contributors. Anthropic's official cofounder-conversation video provides a named group-image identity cross-check, but its later multi-person thumbnail is not selected. The company-hosted Open Graph image currently used by the Claude launch page is explicitly labeled 'Anthropic logo' and is documented only as a generic company-symbol candidate, not Claude architecture or verified original 2023 launch artwork. The package retains one original explainer and selectedPortrait remains null.",
+      "zh": "于 2026-08-03 完成事件专项研究，并在放宽版权限制后扩展公司背景检索。BenchCouncil 的准确标题、顺序、机构、国家以及空人物/空论文字段均保持不变。Anthropic 官方 B 轮融资公告核验达里奥·阿莫迪是联合创始人兼 CEO、丹妮拉·阿莫迪是联合创始人兼总裁；两人只作为公司相关人物记录，不称为 Claude 直接作者或 BenchCouncil 官方贡献者。Anthropic 官方创始人对谈视频提供具名群像身份交叉核对，但这张较晚的多人缩略图不选用。Claude 发布页当前使用的公司托管 Open Graph 图片明确标注为“Anthropic logo”，这里只将它记录为通用公司象征图片候选，不视为 Claude 架构图或已核实的 2023 原始发布主图。本事件仍只使用一张原创解释图，selectedPortrait 保持 null。"
+    }
+  }
+}

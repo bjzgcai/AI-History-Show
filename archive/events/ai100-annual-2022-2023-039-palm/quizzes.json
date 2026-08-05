@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-039-palm-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "What system enabled PaLM to train across 6,144 TPU v4 chips?",
+      "zh": "PaLM 借助什么系统在 6,144 个 TPU v4 芯片上训练？"
+    },
+    "options": [
+      {
+        "en": "Pathways",
+        "zh": "Pathways"
+      },
+      {
+        "en": "MapReduce",
+        "zh": "MapReduce"
+      },
+      {
+        "en": "AlphaGo",
+        "zh": "AlphaGo"
+      },
+      {
+        "en": "TensorFlow Lite",
+        "zh": "TensorFlow Lite"
+      }
+    ],
+    "explanation": {
+      "en": "PaLM used Google's Pathways system to coordinate large-scale distributed training.",
+      "zh": "PaLM 使用 Google 的 Pathways 系统协调大规模分布式训练。"
+    },
+    "sourceIds": [
+      "source-palm-paper"
+    ],
+    "answer": 0,
+    "assetIds": [
+      "asset-annual-039-palm-record"
+    ]
+  }
+]

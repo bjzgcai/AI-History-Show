@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Swin Transformer V2 scaling path</title>
+  <desc id="desc">Original local explainer showing how residual post normalization, scaled cosine attention, continuous position bias and SimMIM pretraining support a three-billion-parameter high-resolution vision model.</desc>
+  <rect width="960" height="560" fill="#0d1722"/>
+  <text x="48" y="55" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="30" font-weight="700">Swin Transformer V2</text>
+  <text x="48" y="86" fill="#a9bdd0" font-family="Arial, sans-serif" font-size="17">Scaling capacity and resolution without losing training stability</text>
+  <rect x="48" y="126" width="250" height="118" rx="8" fill="#19324b" stroke="#65a9dc" stroke-width="2"/>
+  <rect x="355" y="126" width="250" height="118" rx="8" fill="#263528" stroke="#74b77d" stroke-width="2"/>
+  <rect x="662" y="126" width="250" height="118" rx="8" fill="#3b2e1d" stroke="#d89b58" stroke-width="2"/>
+  <path d="M298 185 H355 M605 185 H662" stroke="#dce8f2" stroke-width="4" fill="none"/>
+  <path d="M338 176 L355 185 L338 194 M645 176 L662 185 L645 194" stroke="#dce8f2" stroke-width="4" fill="none"/>
+  <text x="70" y="159" fill="#8fc4eb" font-family="Arial, sans-serif" font-size="15" font-weight="700"><tspan x="70" dy="0">STABLE BLOCKS</tspan></text>
+  <text x="70" y="194" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="21" font-weight="700"><tspan x="70" dy="0">Residual post-norm</tspan><tspan x="70" dy="29">+ scaled cosine attention</tspan></text>
+  <text x="377" y="159" fill="#8fd29a" font-family="Arial, sans-serif" font-size="15" font-weight="700"><tspan x="377" dy="0">RESOLUTION TRANSFER</tspan></text>
+  <text x="377" y="194" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="21" font-weight="700"><tspan x="377" dy="0">Log-spaced continuous</tspan><tspan x="377" dy="29">position bias</tspan></text>
+  <text x="684" y="159" fill="#efb97b" font-family="Arial, sans-serif" font-size="15" font-weight="700"><tspan x="684" dy="0">MODEL SCALE</tspan></text>
+  <text x="684" y="194" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="21" font-weight="700"><tspan x="684" dy="0">3B parameters</tspan><tspan x="684" dy="29">up to 1536 x 1536</tspan></text>
+  <rect x="48" y="292" width="250" height="92" rx="8" fill="#2d2530" stroke="#c087c9" stroke-width="2"/>
+  <text x="70" y="326" fill="#d9a3df" font-family="Arial, sans-serif" font-size="15" font-weight="700"><tspan x="70" dy="0">SIMMIM PRETRAINING</tspan></text>
+  <text x="70" y="357" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="20" font-weight="700"><tspan x="70" dy="0">Less dependence on</tspan><tspan x="70" dy="27">labeled images</tspan></text>
+  <path d="M298 338 H355" stroke="#dce8f2" stroke-width="4" fill="none"/>
+  <path d="M338 329 L355 338 L338 347" stroke="#dce8f2" stroke-width="4" fill="none"/>
+  <rect x="355" y="292" width="557" height="92" rx="8" fill="#172536" stroke="#6b8298" stroke-width="2"/>
+  <text x="379" y="326" fill="#8fc4eb" font-family="Arial, sans-serif" font-size="15" font-weight="700"><tspan x="379" dy="0">TRANSFER TO FOUR VISION TASKS</tspan></text>
+  <text x="379" y="362" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="20" font-weight="700"><tspan x="379" dy="0">ImageNet-V2  |  COCO  |  ADE20K  |  Kinetics-400</tspan></text>
+  <rect x="48" y="432" width="864" height="72" rx="8" fill="#1a3a32" stroke="#62aa8c" stroke-width="2"/>
+  <text x="70" y="462" fill="#91d7bb" font-family="Arial, sans-serif" font-size="15" font-weight="700"><tspan x="70" dy="0">Core relationship</tspan></text>
+  <text x="70" y="489" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="21" font-weight="700"><tspan x="70" dy="0">Stabilize optimization + transfer across resolutions + reduce label demand</tspan></text>
+</svg>

@@ -7,7 +7,7 @@ const os = require('node:os');
 const path = require('node:path');
 
 const packageJson = require('../package.json');
-const { milestones } = require('../milestones-data.js');
+const { archiveStorylines, milestones } = require('../milestones-data.js');
 const sourcePurposeTaxonomy = require('../archive/taxonomies/source-purposes.json');
 const sourceSchema = require('../archive/schemas/source.schema.json');
 const sourceTypeTaxonomy = require('../archive/taxonomies/source-types.json');
@@ -31,9 +31,14 @@ function successfulPreview() {
 }
 
 assert.equal(
-    packageJson.scripts.generate,
+    packageJson.scripts.generate.split(' && ')[0],
     'node scripts/generate-archive-data.js',
     'the default generator must use Archive data'
+);
+assert.match(
+    packageJson.scripts.generate,
+    / && npm run generate:thumbnails$/,
+    'the default generator must refresh the thumbnail manifest after Archive data'
 );
 const retiredScripts = [
     'generate:legacy',
@@ -182,16 +187,79 @@ console.log('PASS runtime figure avatars are explicit local files');
 const compiledArchive = compileArchive(path.join(__dirname, '..'));
 assert.equal(compiledArchive.source, 'archive');
 assert.equal(compiledArchive.errors.length, 0);
-assert.equal(compiledArchive.milestones.length, 174);
+assert.equal(compiledArchive.milestones.length, 214);
 assert.ok(compiledArchive.milestones.every((milestone) => milestone.sourceKind === 'archive'));
 assert.deepEqual(
     new Set(compiledArchive.milestones.map((milestone) => milestone.id)).size,
     compiledArchive.milestones.length,
     'compiled Archive milestone IDs must be unique'
 );
+assert.deepEqual(archiveStorylines, compiledArchive.storylines, 'generated storyline metadata should match Archive');
 console.log('PASS production compiler emits Archive provenance');
 
-assert.equal(milestones.length, 174, 'Archive runtime should contain all four storylines and 174 milestones');
+for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'events'), { withFileTypes: true })) {
+    if (!eventEntry.isDirectory()) continue;
+    const eventDir = path.join(__dirname, '..', 'archive', 'events', eventEntry.name);
+    const event = JSON.parse(fs.readFileSync(path.join(eventDir, 'event.json'), 'utf8'));
+    const variantsDir = path.join(eventDir, 'variants');
+    const variants = fs
+        .readdirSync(variantsDir)
+        .filter((file) => file.endsWith('.json'))
+        .map((file) => JSON.parse(fs.readFileSync(path.join(variantsDir, file), 'utf8')));
+    const ai100Variant = variants.find((variant) => variant.storylineId === 'bench-council-ai100');
+    if (ai100Variant) {
+        assert.equal(
+            ai100Variant.displaySummary,
+            undefined,
+            `${eventEntry.name} should inherit the BenchCouncil storyline title instead of duplicating displaySummary`
+        );
+    }
+    if (event.summary) {
+        assert.equal(
+            variants.some(
+                (variant) =>
+                    variant.displaySummary &&
+                    variant.displaySummary.en === event.summary.en &&
+                    variant.displaySummary.zh === event.summary.zh
+            ),
+            false,
+            `${eventEntry.name} event.summary should not duplicate a variant displaySummary`
+        );
+    }
+}
+console.log('PASS storyline labels have one Archive authority');
+
+assert.equal(milestones.length, 214, 'Archive runtime should contain five storylines and 214 milestones');
+const ai100MapMilestones = milestones.filter(
+    (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100'
+);
+assert.equal(
+    ai100MapMilestones.length,
+    139,
+    'AI Achievement Map should contain 119 canonical and 20 selected achievements'
+);
+assert.equal(
+    ai100MapMilestones.filter((milestone) => milestone.id.startsWith('milestone-ai100-map-2022-')).length,
+    10,
+    'AI Achievement Map should contain ten selected 2022 achievements'
+);
+assert.equal(
+    ai100MapMilestones.filter((milestone) => milestone.id.startsWith('milestone-ai100-map-2023-')).length,
+    10,
+    'AI Achievement Map should contain ten selected 2023 achievements'
+);
+console.log('PASS AI Achievement Map combines the canonical table with all 20 annual highlights');
+const annualAi100Milestones = milestones.filter(
+    (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100-2022-2023'
+);
+assert.equal(annualAi100Milestones.length, 20, 'Archive runtime should contain the 20 curated annual AI100 entries');
+assert.equal(annualAi100Milestones[0].title.en, 'Swin Transformer V2');
+assert.equal(annualAi100Milestones[19].title.en, 'ESMFold');
+assert.ok(
+    annualAi100Milestones.some((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-057-claude'),
+    'annual AI100 highlights should contain Claude'
+);
+console.log('PASS annual AI100 highlights preserve the curated boundary');
 const ai100AlphaFold = milestones.find(
     (milestone) =>
         milestone.archiveEventId === '2020-alphafold' &&

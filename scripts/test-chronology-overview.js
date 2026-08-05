@@ -1,8 +1,9 @@
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
 const path = require('node:path');
 
 const overview = require(path.join(__dirname, '..', 'shared', 'chronology-overview.js'));
-const { milestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
+const { archiveStorylines, milestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
 
 const localize = (value) => {
     if (value == null) return '';
@@ -10,13 +11,44 @@ const localize = (value) => {
     return String(value.zh ?? value.en ?? '');
 };
 
-assert.equal(milestones.length, 174, 'the chronology overview should consume all generated Archive milestones');
+const readJsonFiles = (directory) =>
+    fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+        const entryPath = path.join(directory, entry.name);
+        if (entry.isDirectory()) return readJsonFiles(entryPath);
+        return entry.name.endsWith('.json') ? [fs.readFileSync(entryPath, 'utf8')] : [];
+    });
 
-const canonicalMilestones = overview.buildCanonicalMilestones(milestones, {
+assert.equal(milestones.length, 214, 'the chronology overview should consume all generated Archive milestones');
+
+const annualMilestones = milestones.filter(
+    (milestone) => overview.getStorylineId(milestone) === 'bench-council-ai100-2022-2023'
+);
+assert.equal(annualMilestones.length, 20, 'the annual AI100 highlights should remain available as a standalone view');
+assert.equal(
+    overview.selectMilestonesByStoryline(annualMilestones, 'bench-council-ai100-2022-2023').length,
+    20,
+    'a standalone storyline dataset should be directly filterable without canonical wrappers'
+);
+const annualLayout = overview.buildTimelineLayout(annualMilestones, {
+    preserveSourceOrder: true,
+    sequenceLabel: '2022-2023'
+});
+assert.equal(
+    annualLayout.cards[0].milestone.title.en,
+    'Swin Transformer V2',
+    'annual layout should start with the first curated event'
+);
+assert.equal(annualLayout.cards.at(-1).milestone.title.en, 'ESMFold', 'annual layout should end with ESMFold');
+assert.equal(annualLayout.years[0].label, '2022-2023', 'annual layout should label its curated sequence');
+const unifiedSourceMilestones = milestones.filter(
+    (milestone) => overview.getStorylineId(milestone) !== 'bench-council-ai100-2022-2023'
+);
+
+const canonicalMilestones = overview.buildCanonicalMilestones(unifiedSourceMilestones, {
     storylinePriority: ['bench-council-ai100', 'deep-learning', 'gaming-ai', 'humanistic-cycle'],
     localize
 });
-assert.equal(canonicalMilestones.length, 148, 'the all-events view should render one card per routed Archive event');
+assert.equal(canonicalMilestones.length, 168, 'the all-events view should render one card per routed Archive event');
 assert.equal(
     new Set(canonicalMilestones.map((item) => overview.getCanonicalEventId(item))).size,
     canonicalMilestones.length,
@@ -204,7 +236,8 @@ for (const [milestoneId, expectedImage, expectedFirstImage = expectedImage] of [
     ['milestone-2016-alphago', 'resources/images/figures/authoritative/david-silver.jpg'],
     [
         'milestone-2025-llm-competition',
-        'resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png'
+        'resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png',
+        'resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png'
     ]
 ]) {
     const milestone = milestones.find((item) => item.id === milestoneId);
@@ -217,10 +250,25 @@ for (const [milestoneId, expectedImage, expectedFirstImage = expectedImage] of [
 }
 console.log('PASS configured overview images and detail image order compile from Archive variants');
 
+assert.deepEqual(
+    llmCompetition.resources.images.slice(0, 3),
+    [
+        'resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png',
+        'resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png',
+        'resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg'
+    ],
+    'the 2025 LLM competition Archive order should place its context portrait after the first event reference image'
+);
+
 const rnnMilestone = milestones.find((item) => item.id === 'milestone-1986-rnn');
 const rnnPortrait = 'resources/images/1986-rnn/people/1986-rnn_people_01.png';
 assert.equal(rnnMilestone.resources.overviewImage, undefined, 'RNN should use the default first image');
 assert.equal(rnnMilestone.resources.images[0], rnnPortrait, 'RNN should list the Michael I. Jordan portrait first');
+assert.deepEqual(
+    rnnMilestone.figures[0].name,
+    { en: 'Michael I. Jordan', zh: '迈克尔·I·乔丹' },
+    'RNN should use Michael I. Jordan consistently in both display languages'
+);
 assert.equal(
     overview.getPrimaryImage(rnnMilestone),
     rnnPortrait,
@@ -228,8 +276,59 @@ assert.equal(
 );
 console.log('PASS RNN overview uses the first detail image by default');
 
+const ldaMilestone = milestones.find((item) => item.id === 'milestone-2003-lda');
+const michaelJordan = ldaMilestone.figures.find((figure) => figure.name.en === 'Michael I. Jordan');
+assert.ok(michaelJordan, 'LDA should identify Michael I. Jordan with his middle initial');
+assert.equal(michaelJordan.name.zh, '迈克尔·I·乔丹', 'LDA should localize Michael I. Jordan consistently');
+
+const michaelJordanArchiveFiles = [
+    'archive/events/1986-rnn/event.json',
+    'archive/events/1986-rnn/claims.json',
+    'archive/events/1986-rnn/sources.json',
+    'archive/events/1986-rnn/assets.json',
+    'archive/events/1986-rnn/variants/deep-learning.json',
+    'archive/events/2003-lda/event.json',
+    'archive/events/2003-lda/variants/bench-council-ai100.json'
+];
+for (const relativeFile of michaelJordanArchiveFiles) {
+    const content = fs.readFileSync(path.join(__dirname, '..', relativeFile), 'utf8');
+    assert.match(content, /Michael I\. Jordan/, `${relativeFile} should use Michael I. Jordan`);
+    assert.match(content, /迈克尔·I·乔丹/, `${relativeFile} should use 迈克尔·I·乔丹`);
+    assert.doesNotMatch(content, /Michael Jordan/, `${relativeFile} should not omit Jordan's middle initial`);
+    assert.doesNotMatch(content, /迈克尔·乔丹/, `${relativeFile} should not omit Jordan's middle initial in Chinese`);
+}
+
+const michaelJordanArchiveContent = ['1986-rnn', '2003-lda']
+    .flatMap((eventId) => readJsonFiles(path.join(__dirname, '..', 'archive', 'events', eventId)))
+    .join('\n');
+assert.doesNotMatch(
+    michaelJordanArchiveContent,
+    /Michael Jordan|迈克尔·乔丹/,
+    'the complete RNN and LDA Archive bundles should not retain legacy Michael Jordan names'
+);
+
+for (const milestone of [rnnMilestone, ldaMilestone]) {
+    const content = JSON.stringify(milestone);
+    assert.match(
+        content,
+        /Michael I\. Jordan/,
+        `${milestone.id} should include Michael I. Jordan in generated content`
+    );
+    assert.match(content, /迈克尔·I·乔丹/, `${milestone.id} should include 迈克尔·I·乔丹 in generated content`);
+    assert.doesNotMatch(content, /Michael Jordan|迈克尔·乔丹/, `${milestone.id} should not retain legacy names`);
+}
+console.log('PASS Michael I. Jordan is consistent across Archive sections and generated milestone content');
+
+for (const milestoneId of ['milestone-1989-cnn', 'milestone-ai100-1989-lenet']) {
+    const milestone = milestones.find((item) => item.id === milestoneId);
+    const serializedMilestone = JSON.stringify(milestone);
+    assert.equal(milestone.figures[0].name.zh, '杨立昆', `${milestoneId} should use Yang Likun in Chinese`);
+    assert.match(serializedMilestone, /杨立昆/, `${milestoneId} should include the preferred Chinese name`);
+    assert.doesNotMatch(serializedMilestone, /扬·勒昆|勒昆/, `${milestoneId} should not retain older Chinese names`);
+}
+
 const highwayMilestone = milestones.find((item) => item.id === 'milestone-2014-highway-network');
-const highwayFirstImage = 'resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png';
+const highwayFirstImage = 'resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg';
 assert.equal(
     highwayMilestone.resources.overviewImage,
     undefined,
@@ -238,30 +337,36 @@ assert.equal(
 assert.equal(
     highwayMilestone.resources.images[0],
     highwayFirstImage,
-    'Highway Networks should preserve its first image'
+    'Highway Networks should lead with the Jürgen Schmidhuber portrait'
 );
 assert.equal(
     overview.getPrimaryImage(highwayMilestone),
     highwayFirstImage,
-    'Highway Networks overview should use its first image'
+    'Highway Networks overview should use the Jürgen Schmidhuber portrait'
 );
-console.log('PASS Highway Networks overview uses the first detail image by default');
+console.log('PASS Highway Networks overview uses the Jürgen Schmidhuber portrait by default');
 
 const postTraining = milestones.find((item) => item.id === 'milestone-2022-post-training-intelligence');
-const postTrainingFirstImage =
+const postTrainingArchiveFirstImage =
     'resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png';
-assert.equal(postTraining.resources.overviewImage, undefined, 'post-training should use the default first image');
+const postTrainingOverviewImage =
+    'resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg';
+assert.equal(
+    postTraining.resources.overviewImage,
+    postTrainingOverviewImage,
+    'post-training should explicitly align its overview with the first displayed detail image'
+);
 assert.equal(
     postTraining.resources.images[0],
-    postTrainingFirstImage,
-    'post-training should lead with its first detail image'
+    postTrainingArchiveFirstImage,
+    'post-training should retain the instruction-tuning diagram first for commentary media selection'
 );
 assert.equal(
     overview.getPrimaryImage(postTraining),
-    postTrainingFirstImage,
-    'post-training overview should use its first detail image'
+    postTrainingOverviewImage,
+    'post-training overview should use the post-training pipeline shown first in detail'
 );
-console.log('PASS post-training overview uses the first detail image by default');
+console.log('PASS post-training overview matches the first displayed detail image');
 
 const aiScientist = milestones.find((item) => item.id === 'milestone-2024-ai-scientist');
 const aiScientistFirstImage = 'resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png';
@@ -345,16 +450,21 @@ for (const milestoneId of ['milestone-ai100-2012-alexnet', 'milestone-2012-alexn
 }
 console.log('PASS AlexNet variants use the user-provided portrait consistently');
 
-const summaries = overview.summarizeStorylines(canonicalMilestones, localize);
+const summaries = overview.summarizeStorylines(canonicalMilestones, localize, undefined, archiveStorylines);
 assert.deepEqual(
     summaries.map(({ id, count }) => ({ id, count })),
     [
-        { id: 'bench-council-ai100', count: 119 },
+        { id: 'bench-council-ai100', count: 139 },
         { id: 'gaming-ai', count: 13 },
         { id: 'humanistic-cycle', count: 12 },
         { id: 'deep-learning', count: 30 }
     ],
     'the overview should derive the four production storylines and their generated counts'
+);
+assert.equal(
+    summaries.find(({ id }) => id === 'bench-council-ai100').subtitle,
+    '119 项长期主表成就 + 20 项 2022–2023 年度精选',
+    'the overview should expose the localized Archive storyline subtitle'
 );
 assert.deepEqual(
     summaries.map(({ id, color }) => ({ id, color })),
@@ -476,6 +586,67 @@ assert.deepEqual(
     'the density cursor should follow the year nearest the timeline viewport center'
 );
 console.log('PASS chronology density navigator maps clicks and viewport positions to timeline years');
+
+const scaledScroller = {
+    clientWidth: 1850,
+    getBoundingClientRect: () => ({ width: 1387.5 })
+};
+assert.equal(overview.getChronologyScaleX(scaledScroller), 0.75, 'chronology input should detect stage scaling');
+assert.equal(
+    overview.getChronologyDragScrollLeft(0, 1000, 400, 0.75),
+    800,
+    'dragging should compensate for the scaled stage coordinate system'
+);
+assert.equal(
+    overview.getChronologyScrollTarget(1000, 28051, 1850, 800),
+    1800,
+    'chronology wheel movement should advance within the scrollable range'
+);
+assert.equal(
+    overview.getChronologyScrollTarget(0, 28051, 1850, -800),
+    0,
+    'chronology wheel movement should stop at the leading edge'
+);
+assert.equal(
+    overview.getChronologyScrollTarget(26000, 28051, 1850, 800),
+    26201,
+    'chronology wheel movement should stop at the trailing edge'
+);
+assert.equal(
+    overview.getChronologyWheelDelta({ deltaX: 0, deltaY: 600, deltaMode: 0 }, scaledScroller),
+    800,
+    'desktop vertical wheel input should become scale-corrected horizontal movement'
+);
+assert.equal(
+    overview.getChronologyWheelDelta({ deltaX: 0, deltaY: 600, deltaMode: 0 }, scaledScroller, {
+        convertVertical: false
+    }),
+    0,
+    'responsive chronology should leave vertical wheel input for document scrolling'
+);
+assert.equal(
+    overview.getChronologyWheelDelta({ deltaX: 300, deltaY: 80, deltaMode: 0 }, scaledScroller, {
+        convertVertical: false
+    }),
+    400,
+    'horizontal trackpad input should remain available in responsive layouts'
+);
+assert.equal(
+    overview.hasChronologyHorizontalDragIntent(24, 4),
+    true,
+    'a deliberate horizontal pointer movement should start chronology dragging'
+);
+assert.equal(
+    overview.hasChronologyHorizontalDragIntent(6, 2),
+    false,
+    'small pointer movement should remain a card click'
+);
+assert.equal(
+    overview.hasChronologyHorizontalDragIntent(12, 24),
+    false,
+    'vertical pointer movement should not be captured as chronology dragging'
+);
+console.log('PASS chronology wheel and pointer input follow the scaled horizontal timeline');
 
 for (let index = 0; index < layout.cards.length; index += 1) {
     const left = layout.cards[index];

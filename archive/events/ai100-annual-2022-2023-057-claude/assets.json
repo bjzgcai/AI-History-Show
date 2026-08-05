@@ -1,0 +1,127 @@
+[
+  {
+    "id": "asset-annual-057-claude-record",
+    "type": "svg",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-057-claude_record.svg",
+    "role": "annual-achievement-explainer",
+    "caption": {
+      "en": "Claude post-training loop",
+      "zh": "Claude 后训练循环"
+    },
+    "subcaption": {
+      "en": "Use principles and feedback to shape assistant behavior",
+      "zh": "使用原则与反馈塑造助手行为"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "sourceName": {
+      "en": "Introducing Claude",
+      "zh": "Anthropic：Claude 发布介绍"
+    },
+    "sourceUrl": "https://www.anthropic.com/news/introducing-claude",
+    "rights": {
+      "status": "original-redraw",
+      "license": {
+        "en": "Original local SVG; source figures are not copied.",
+        "zh": "本地原创 SVG；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Display and educational use in this project.",
+        "zh": "用于本项目展示与教育用途。"
+      }
+    },
+    "displayUsage": {
+      "en": "Original achievement explainer",
+      "zh": "原创成就解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-annual-057-claude-official-launch-artwork",
+    "type": "image",
+    "path": "resources/images/external/ai100-2023-claude/claude-official-launch-artwork.png",
+    "role": "supporting-image",
+    "caption": {
+      "en": "Claude official launch artwork",
+      "zh": "Claude 官方发布插画"
+    },
+    "subcaption": {
+      "en": "Anthropic used this human-and-network illustration when introducing Claude in March 2023.",
+      "zh": "Anthropic 在 2023 年 3 月介绍 Claude 时使用了这张人与网络主题插画。"
+    },
+    "sourceId": "source-claude-official-launch-artwork",
+    "sourceName": {
+      "en": "Anthropic official launch page",
+      "zh": "Anthropic 官方发布页"
+    },
+    "sourceUrl": "https://www.anthropic.com/news/introducing-claude",
+    "imageUrl": "https://cdn.sanity.io/images/4zrzovbb/website/598090233d64488d2c6fd8551c943b5a731e6e98-2880x1620.png",
+    "sourceReliability": "primary-paper-or-official-project-image",
+    "provenanceNotes": {
+      "en": "Downloaded from the named primary paper, official project repository or official release page and retained with direct source attribution.",
+      "zh": "图片下载自主论文、官方项目仓库或官方发布页，并保留直接来源标注。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Primary-source reference image displayed with attribution under the project's relaxed reference-image policy.",
+        "zh": "主来源参考图片；依据项目放宽后的参考图片策略展示，并保留完整来源标注。"
+      },
+      "attribution": "Anthropic"
+    },
+    "displayUsage": {
+      "en": "Official release artwork",
+      "zh": "官方发布插画"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
+    "id": "asset-annual-057-claude-poe-product-image",
+    "type": "image",
+    "path": "resources/images/external/ai100-2023-claude/claude-poe-chat-interface.png",
+    "role": "supporting-image",
+    "caption": {
+      "en": "Claude chat experience in Poe",
+      "zh": "Poe 中的 Claude 对话体验"
+    },
+    "subcaption": {
+      "en": "The launch page showed an early consumer-facing Claude conversation through Quora's Poe interface.",
+      "zh": "发布页通过 Quora 的 Poe 界面展示了早期面向用户的 Claude 对话体验。"
+    },
+    "sourceId": "source-claude-poe-product-image",
+    "sourceName": {
+      "en": "Anthropic official launch page",
+      "zh": "Anthropic 官方发布页"
+    },
+    "sourceUrl": "https://www.anthropic.com/news/introducing-claude",
+    "imageUrl": "https://cdn.sanity.io/images/4zrzovbb/website/0d1d653b2378e714f4557655300dea6c259c6bbe-2940x1510.png",
+    "sourceReliability": "primary-paper-or-official-project-image",
+    "provenanceNotes": {
+      "en": "Downloaded from the named primary paper, official project repository or official release page and retained with direct source attribution.",
+      "zh": "图片下载自主论文、官方项目仓库或官方发布页，并保留直接来源标注。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Primary-source reference image displayed with attribution under the project's relaxed reference-image policy.",
+        "zh": "主来源参考图片；依据项目放宽后的参考图片策略展示，并保留完整来源标注。"
+      },
+      "attribution": "Anthropic / Poe"
+    },
+    "displayUsage": {
+      "en": "Official product example",
+      "zh": "官方产品示例图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  }
+]

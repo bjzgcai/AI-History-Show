@@ -43,11 +43,11 @@
     }
   ],
   "assetIds": [
-    "asset-1951-strachey-draughts-program-external",
     "asset-1951-strachey-draughts-christopher-strachey-portrait",
-    "asset-1951-strachey-draughts-checkers-board-external",
     "asset-1951-strachey-draughts-board-search",
-    "asset-1951-strachey-draughts-program-flow"
+    "asset-1951-strachey-draughts-program-flow",
+    "asset-1951-strachey-draughts-program-external",
+    "asset-1951-strachey-draughts-checkers-board-external"
   ],
   "sourceIds": [
     "source-logical-or-non-mathematical-programmes",

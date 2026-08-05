@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">ESMFold single-sequence path</title>
+  <desc id="desc">Use protein language representations to predict 3D structure without an MSA search. The folding trunk consumes language-model representations directly, avoiding a separate MSA database search. Change one residue and trace where structure coordinates or confidence may shift.</desc>
+  <rect width="960" height="560" fill="#0d1722"/>
+  <text x="48" y="52" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="28" font-weight="700"><tspan x="48" dy="0">ESMFold single-sequence path</tspan></text>
+  <text x="48" y="82" fill="#a9bdd0" font-family="Arial, sans-serif" font-size="15" font-weight="400"><tspan x="48" dy="0">Use protein language representations to predict 3D structure without an MSA search</tspan></text>
+  <g>
+  <rect x="48" y="126" width="198" height="176" rx="8" fill="#173d51" stroke="#62b7d7" stroke-width="2"/>
+  <text x="66" y="155" fill="#62b7d7" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="66" dy="0">STEP 1</tspan></text>
+  <text x="66" y="192" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="18" font-weight="700"><tspan x="66" dy="0">Amino-acid sequence</tspan></text>
+  <text x="66" y="254" fill="#c8d6e2" font-family="Arial, sans-serif" font-size="14" font-weight="400"><tspan x="66" dy="0">One protein sequence</tspan></text>
+  <path d="M246 214 H252" stroke="#d8e5ef" stroke-width="4" fill="none"/><path d="M240 205 L252 214 L240 223" stroke="#d8e5ef" stroke-width="4" fill="none"/>
+</g>
+<g>
+  <rect x="270" y="126" width="198" height="176" rx="8" fill="#254631" stroke="#79c58c" stroke-width="2"/>
+  <text x="288" y="155" fill="#79c58c" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="288" dy="0">STEP 2</tspan></text>
+  <text x="288" y="192" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="18" font-weight="700"><tspan x="288" dy="0">ESM-2 representations</tspan></text>
+  <text x="288" y="254" fill="#c8d6e2" font-family="Arial, sans-serif" font-size="14" font-weight="400"><tspan x="288" dy="0">Language-model features</tspan></text>
+  <path d="M468 214 H474" stroke="#d8e5ef" stroke-width="4" fill="none"/><path d="M462 205 L474 214 L462 223" stroke="#d8e5ef" stroke-width="4" fill="none"/>
+</g>
+<g>
+  <rect x="492" y="126" width="198" height="176" rx="8" fill="#55401f" stroke="#e0aa59" stroke-width="2"/>
+  <text x="510" y="155" fill="#e0aa59" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="510" dy="0">STEP 3</tspan></text>
+  <text x="510" y="192" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="18" font-weight="700"><tspan x="510" dy="0">Folding trunk +</tspan><tspan x="510" dy="22">recycling</tspan></text>
+  <text x="510" y="254" fill="#c8d6e2" font-family="Arial, sans-serif" font-size="14" font-weight="400"><tspan x="510" dy="0">Sequence and pair</tspan><tspan x="510" dy="18">updates</tspan></text>
+  <path d="M690 214 H696" stroke="#d8e5ef" stroke-width="4" fill="none"/><path d="M684 205 L696 214 L684 223" stroke="#d8e5ef" stroke-width="4" fill="none"/>
+</g>
+<g>
+  <rect x="714" y="126" width="198" height="176" rx="8" fill="#563246" stroke="#ce86a6" stroke-width="2"/>
+  <text x="732" y="155" fill="#ce86a6" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="732" dy="0">STEP 4</tspan></text>
+  <text x="732" y="192" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="18" font-weight="700"><tspan x="732" dy="0">Structure +</tspan><tspan x="732" dy="22">confidence</tspan></text>
+  <text x="732" y="254" fill="#c8d6e2" font-family="Arial, sans-serif" font-size="14" font-weight="400"><tspan x="732" dy="0">Atomic coordinates and</tspan><tspan x="732" dy="18">scores</tspan></text>
+
+</g>
+  <rect x="48" y="336" width="864" height="82" rx="8" fill="#132635" stroke="#315267" stroke-width="1.5"/>
+  <text x="68" y="363" fill="#7cc0df" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="68" dy="0">EVIDENCE BOUNDARY</tspan></text>
+  <text x="68" y="390" fill="#d9e5ee" font-family="Arial, sans-serif" font-size="15" font-weight="400"><tspan x="68" dy="0">The folding trunk consumes language-model representations directly, avoiding a separate MSA</tspan><tspan x="68" dy="19">database search.</tspan></text>
+  <rect x="48" y="438" width="864" height="78" rx="8" fill="#132635" stroke="#315267" stroke-width="1.5"/>
+  <text x="68" y="465" fill="#86d19b" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="68" dy="0">INTERACTION</tspan></text>
+  <text x="68" y="492" fill="#d9e5ee" font-family="Arial, sans-serif" font-size="15" font-weight="400"><tspan x="68" dy="0">Change one residue and trace where structure coordinates or confidence may shift.</tspan></text>
+  <text x="912" y="542" text-anchor="end" fill="#7890a3" font-family="Arial, sans-serif" font-size="10">Original local redraw · 2026-08-03</text>
+</svg>

@@ -1,0 +1,64 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "InstructGPT is row 48 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "InstructGPT 是 BenchCouncil AI100（2022-2023）年度表第 48 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates InstructGPT with “Training language models to follow instructions with human feedback”.",
+      "zh": "年度表把 InstructGPT 与论文《Training language models to follow instructions with human feedback》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Paul Christiano, Jan Leike, Ryan Lowe”.",
+      "zh": "“主要人物”字段依次列出 欧阳龙、杰夫·吴、徐江、迪奥戈·阿尔梅达、卡罗尔·L·温赖特、帕梅拉·米什金、保罗·克里斯蒂亚诺、扬·莱克、瑞安·洛、约翰·舒尔曼；官方英文原文为“Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Paul Christiano, Jan Leike, Ryan Lowe”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-core-method",
+    "importance": "core",
+    "text": {
+      "en": "InstructGPT uses supervised demonstrations, preference reward modeling and ppo.",
+      "zh": "InstructGPT 采用监督示范、偏好奖励建模与 PPO。"
+    },
+    "sourceIds": [
+      "source-instructgpt-paper",
+      "source-primary-record"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-historical-significance",
+    "importance": "display",
+    "text": {
+      "en": "Experts generally treat InstructGPT as the operational template for modern RLHF post-training. Its importance lies less in raw parameter scale than in showing that smaller aligned models can be preferred over much larger untuned baselines.",
+      "zh": "专家通常把 InstructGPT 视为现代 RLHF 后训练的操作模板。它的重要性不只在参数规模，而在于证明更小的对齐模型也可能比大得多的未调优基线更受用户偏好。"
+    },
+    "sourceIds": [
+      "source-instructgpt-paper"
+    ],
+    "status": "verified"
+  }
+]

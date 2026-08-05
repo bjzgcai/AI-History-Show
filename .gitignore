@@ -4,6 +4,9 @@
 # Local browser review artifacts
 .playwright-cli/
 
+# Retired local AI100 annual contributor-card renders
+resources/images/benchcouncil-ai100-annual/*_contributors.svg
+
 # Node.js
 node_modules/
 *.log

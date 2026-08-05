@@ -1,0 +1,149 @@
+[
+  {
+    "id": "source-primary-record",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "Robust Speech Recognition via Large-Scale Weak Supervision",
+      "zh": "《Robust Speech Recognition via Large-Scale Weak Supervision》"
+    },
+    "authors": [
+      "Alec Radford",
+      "Jong Wook Kim",
+      "Ilya Sutskever"
+    ],
+    "year": 2022,
+    "url": "https://openai.com/index/whisper/",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary publication or official project record used for the central technical claims.",
+      "zh": "用于核心技术主张的主论文或官方项目记录。"
+    }
+  },
+  {
+    "id": "source-openalex-record",
+    "type": "paper-index",
+    "label": {
+      "en": "Paper index",
+      "zh": "论文索引"
+    },
+    "title": {
+      "en": "OpenAlex record for Robust Speech Recognition via Large-Scale Weak Supervision",
+      "zh": "Robust Speech Recognition via Large-Scale Weak Supervision 的 OpenAlex 文献记录"
+    },
+    "url": "https://api.openalex.org/works?search=Robust%20Speech%20Recognition%20via%20Large-Scale%20Weak%20Supervision",
+    "language": "en",
+    "purpose": "bibliographic-verification",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Bibliographic metadata used to verify the publication year and landing page.",
+      "zh": "用于核对出版年份与落地页面的书目元数据。"
+    }
+  },
+  {
+    "id": "source-benchcouncil-annual",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "AI100: Top 100 AI achievements (2022-2023)",
+      "zh": "AI100：人工智能百大成就（2022-2023）"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+      "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
+    }
+  },
+  {
+    "id": "source-annual-024-whisper-portrait-ilya-sutskever",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Ilya Sutskever portrait source",
+      "zh": "伊利亚·苏茨克维人物图片来源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Ilya_Sutskever_and_Sam_Altman_in_TAU_(cropped).jpg",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Exact name and research-description match in Wikidata; employer match: Safe Superintelligence Inc., OpenAI, Google Brain. Wikimedia file-page license metadata was present. Reliability: secondary-identity-with-affiliation-match. Usage note: CC BY-SA 4.0",
+      "zh": "Wikidata 中姓名与研究者描述匹配，任职机构匹配：Safe Superintelligence Inc.、OpenAI、Google Brain。维基共享资源文件页包含明确许可元数据。 可靠性：secondary-identity-with-affiliation-match。使用备注：CC BY-SA 4.0"
+    }
+  },
+  {
+    "id": "source-whisper-paper",
+    "type": "paper",
+    "label": {
+      "en": "Primary paper",
+      "zh": "原始论文"
+    },
+    "title": {
+      "en": "Robust Speech Recognition via Large-Scale Weak Supervision",
+      "zh": "《Robust Speech Recognition via Large-Scale Weak Supervision》"
+    },
+    "url": "https://arxiv.org/abs/2212.04356",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary technical report for Whisper, used for the training scale, multitask format and evaluation claims.",
+      "zh": "Whisper 原始技术报告，用于核对训练规模、多任务格式和评测结论。"
+    }
+  },
+  {
+    "id": "source-whisper-code",
+    "type": "code",
+    "label": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "title": {
+      "en": "OpenAI Whisper repository",
+      "zh": "OpenAI Whisper 代码仓库"
+    },
+    "url": "https://github.com/openai/whisper",
+    "language": "en",
+    "purpose": "implementation",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official implementation and model release maintained by OpenAI.",
+      "zh": "OpenAI 维护的官方实现与模型发布页面。"
+    }
+  },
+  {
+    "id": "source-whisper-official-approach",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "OpenAI Whisper official approach diagram",
+      "zh": "OpenAI Whisper 官方方法图"
+    },
+    "url": "https://github.com/openai/whisper",
+    "imageUrl": "https://raw.githubusercontent.com/openai/whisper/main/approach.png",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official repository README illustration selected as supplementary visual evidence for the event.",
+      "zh": "官方仓库 README 使用的介绍图，作为本事件的补充视觉证据。"
+    }
+  }
+]

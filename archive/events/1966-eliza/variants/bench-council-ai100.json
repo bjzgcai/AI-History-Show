@@ -6,10 +6,6 @@
     "zh": "ELIZA",
     "en": "ELIZA"
   },
-  "displaySummary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "displayDescription": {
     "zh": "<p>约瑟夫·魏岑鲍姆在 1960 年代中期开发 ELIZA，用脚本、关键词和模式匹配模拟文字对话。著名的 DOCTOR 脚本采用类似非指导式心理治疗师的回应方式：识别用户句式，替换人称或关键词，再把内容改写成追问，从而鼓励用户继续表达。</p><p>ELIZA 没有建立深层语义模型，也不真正理解心理治疗，但部分用户仍把理解和同理心投射到系统上。魏岑鲍姆把这种反应视为重要警示。ELIZA 因而既是聊天机器人先驱，也是研究“ELIZA 效应”的经典案例：流畅互动可能让人高估系统内部的理解程度。</p>",
     "en": "<p>Joseph Weizenbaum developed ELIZA in the mid-1960s to simulate text conversation through scripts, keywords, and pattern matching. Its famous DOCTOR script imitated a nondirective psychotherapist: it recognized forms in a user's input, substituted pronouns or keywords, and transformed the material into reflective questions that encouraged the user to continue.</p><p>ELIZA built no deep semantic model and did not understand therapy, yet some users projected understanding and empathy onto it. Weizenbaum treated that response as an important warning. The program therefore became both a chatbot landmark and the classic example of the “ELIZA effect”: persuasive interaction can lead people to overestimate how much understanding exists inside a system.</p>"
@@ -53,11 +49,11 @@
   "assetIds": [
     "asset-1966-eliza-weizenbaum-rit-1982",
     "asset-1966-eliza-doctor-script",
+    "asset-1966-eliza-ctss-system-diagram",
+    "asset-1966-eliza-terminal-dialog",
     "asset-1966-eliza-weizenbaum-uszkoreit-2006",
     "asset-1966-eliza-original-source-page-9",
-    "asset-1966-eliza-ctss-system-diagram",
-    "asset-1966-eliza-conversation-reconstruction",
-    "asset-1966-eliza-terminal-dialog"
+    "asset-1966-eliza-conversation-reconstruction"
   ],
   "sourceIds": [
     "source-eliza-cacm-paper",

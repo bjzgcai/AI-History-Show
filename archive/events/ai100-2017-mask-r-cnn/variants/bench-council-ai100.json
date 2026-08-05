@@ -6,10 +6,6 @@
     "en": "Mask R-CNN",
     "zh": "Mask R-CNN"
   },
-  "displaySummary": {
-    "en": "BenchCouncil AI100 Achievement",
-    "zh": "BenchCouncil AI100 成就"
-  },
   "displayDescription": {
     "en": "<p>Detection systems could locate objects with boxes, while semantic segmentation assigned labels to pixels without separating individual instances. Mask R-CNN unified these needs by extending a strong two-stage detector with an instance-mask branch.</p><p>A parallel mask head predicts a binary mask for every detected instance, while classification and box regression remain separate tasks. RoIAlign avoids the coordinate quantization of RoI pooling and preserves pixel-level alignment. Experts generally regard Mask R-CNN as a canonical instance-segmentation framework and a versatile base for pose, keypoint, and dense prediction tasks. RoIAlign also became a widely reused alignment technique.</p>",
     "zh": "<p>检测系统可以用边界框定位物体，语义分割则给像素赋予类别，却不能区分同类的不同实例。Mask R-CNN 在强大的两阶段检测器上增加实例掩码分支，把两类需求统一起来。</p><p>并行的掩码头为每个检测实例预测二值掩码，分类与边界框回归仍作为独立任务。RoIAlign 避免 RoI 池化的坐标量化，保留像素级对齐。专家通常把 Mask R-CNN 视为实例分割的经典框架，并把它作为姿态、关键点和稠密预测任务的通用基础。RoIAlign 也成为被广泛复用的对齐技术。</p>"

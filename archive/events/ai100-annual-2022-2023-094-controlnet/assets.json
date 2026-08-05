@@ -1,0 +1,169 @@
+[
+  {
+    "id": "asset-annual-094-controlnet-portrait-maneesh-agrawala",
+    "type": "image",
+    "path": "resources/images/external/ai100-2023-controlnet/maneesh-agrawala.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Maneesh Agrawala portrait",
+      "zh": "马尼什·阿格拉瓦拉肖像"
+    },
+    "subcaption": {
+      "en": "Co-author of the ControlNet paper",
+      "zh": "ControlNet 论文共同作者"
+    },
+    "sourceId": "source-annual-094-controlnet-portrait-maneesh-agrawala",
+    "sourceName": {
+      "en": "Maneesh Agrawala academic homepage",
+      "zh": "马尼什·阿格拉瓦拉学术主页"
+    },
+    "sourceUrl": "https://graphics.stanford.edu/~maneesh/",
+    "sourceReliability": "primary-identity-source",
+    "provenanceNotes": {
+      "en": "The Stanford-hosted homepage displays the headshot beside Maneesh Agrawala’s identity, affiliation and publication list that includes ControlNet.",
+      "zh": "斯坦福托管主页把该头像与马尼什·阿格拉瓦拉的身份、任职信息及包含 ControlNet 的论文列表同时展示。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The source does not state redistribution rights; retain attribution and recheck before redistribution outside this project.",
+        "zh": "来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+      },
+      "attribution": "Maneesh Agrawala academic homepage"
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
+    "id": "asset-annual-094-controlnet-record",
+    "type": "svg",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-094-controlnet_record.svg",
+    "role": "annual-achievement-explainer",
+    "caption": {
+      "en": "ControlNet control path",
+      "zh": "ControlNet 控制路径"
+    },
+    "subcaption": {
+      "en": "Add spatial guidance while preserving the pretrained diffusion backbone",
+      "zh": "在保留预训练扩散主干的同时加入空间条件引导"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
+    ],
+    "sourceName": {
+      "en": "Adding Conditional Control to Text-to-Image Diffusion Models - ICCV 2023",
+      "zh": "《为文生图扩散模型加入条件控制》ICCV 2023 论文页"
+    },
+    "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_Adding_Conditional_Control_to_Text-to-Image_Diffusion_Models_ICCV_2023_paper.html",
+    "rights": {
+      "status": "original-redraw",
+      "license": {
+        "en": "Original local SVG; source figures are not copied.",
+        "zh": "本地原创 SVG；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Display and educational use in this project.",
+        "zh": "用于本项目展示与教育用途。"
+      }
+    },
+    "displayUsage": {
+      "en": "Original achievement explainer",
+      "zh": "原创成就解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-annual-094-controlnet-official-full-architecture",
+    "type": "image",
+    "path": "resources/images/external/ai100-2023-controlnet/controlnet-official-full-architecture.png",
+    "role": "historical-diagram",
+    "caption": {
+      "en": "ControlNet attached to a frozen Stable Diffusion backbone",
+      "zh": "ControlNet 接入冻结的 Stable Diffusion 主干"
+    },
+    "subcaption": {
+      "en": "A trainable encoder copy receives spatial conditions and returns residuals through zero convolutions.",
+      "zh": "可训练编码器副本接收空间条件，并通过零卷积把残差送回冻结主干。"
+    },
+    "sourceId": "source-controlnet-official-full-architecture",
+    "sourceName": {
+      "en": "ControlNet official repository",
+      "zh": "ControlNet 官方仓库"
+    },
+    "sourceUrl": "https://github.com/lllyasviel/ControlNet",
+    "imageUrl": "https://github.com/lllyasviel/ControlNet/blob/main/github_page/sd.png",
+    "sourceReliability": "primary-paper-or-official-project-image",
+    "provenanceNotes": {
+      "en": "Downloaded from the named primary paper, official project repository or official release page and retained with direct source attribution.",
+      "zh": "图片下载自主论文、官方项目仓库或官方发布页，并保留直接来源标注。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Primary-source reference image displayed with attribution under the project's relaxed reference-image policy.",
+        "zh": "主来源参考图片；依据项目放宽后的参考图片策略展示，并保留完整来源标注。"
+      },
+      "attribution": "Zhang, Rao and Agrawala, ControlNet"
+    },
+    "displayUsage": {
+      "en": "Official architecture diagram",
+      "zh": "官方架构图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
+    "id": "asset-annual-094-controlnet-official-core-block",
+    "type": "image",
+    "path": "resources/images/external/ai100-2023-controlnet/controlnet-official-core-block.png",
+    "role": "paper-figure",
+    "caption": {
+      "en": "ControlNet core block before-and-after comparison",
+      "zh": "ControlNet 核心模块前后对比"
+    },
+    "subcaption": {
+      "en": "The compact diagram isolates the locked block, trainable copy, condition input and zero convolutions.",
+      "zh": "简化图突出冻结模块、可训练副本、条件输入与零卷积。"
+    },
+    "sourceId": "source-controlnet-official-core-block",
+    "sourceName": {
+      "en": "ControlNet official repository",
+      "zh": "ControlNet 官方仓库"
+    },
+    "sourceUrl": "https://github.com/lllyasviel/ControlNet",
+    "imageUrl": "https://github.com/lllyasviel/ControlNet/blob/main/github_page/he.png",
+    "sourceReliability": "primary-paper-or-official-project-image",
+    "provenanceNotes": {
+      "en": "Downloaded from the named primary paper, official project repository or official release page and retained with direct source attribution.",
+      "zh": "图片下载自主论文、官方项目仓库或官方发布页，并保留直接来源标注。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Primary-source reference image displayed with attribution under the project's relaxed reference-image policy.",
+        "zh": "主来源参考图片；依据项目放宽后的参考图片策略展示，并保留完整来源标注。"
+      },
+      "attribution": "Zhang, Rao and Agrawala, ControlNet"
+    },
+    "displayUsage": {
+      "en": "Official method detail",
+      "zh": "官方方法细节图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  }
+]

@@ -432,7 +432,7 @@ function buildRecipientPrimary(primary, canonicalEvent) {
         year: canonicalEvent.year != null ? canonicalEvent.year : primary.year,
         date: canonicalEvent.date || primary.date,
         title: canonicalEvent.title || primary.title,
-        category: canonicalEvent.summary || primary.category,
+        category: primary.category || canonicalEvent.summary,
         description: canonicalEvent.description || primary.description,
         location: {
             name: canonicalLocation.place || (primary.location && primary.location.name),

@@ -1,0 +1,63 @@
+{
+  "id": "ai100-annual-2022-2023-087-gen2",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "en": "Gen2",
+    "zh": "Gen2"
+  },
+  "summary": {
+    "en": "A multimodal generative system for synthesizing and editing video",
+    "zh": "用于合成与编辑视频的多模态生成系统"
+  },
+  "description": {
+    "en": "<p>Runway presented Gen-2 in February 2023 as a multimodal system that can generate video from text, images or existing video references. Its official research page demonstrates eight modes: text to video, text plus image to video, image to video, stylization, storyboard, mask, render and customization.</p><p>The release expanded generative video beyond transforming an input clip, allowing creators to begin with a prompt or still image and then control content, appearance and composition through different workflows. In comparisons published on the Gen-2 page, Runway reported that users preferred its results 73.53% of the time over Stable Diffusion 1.5 and 88.24% over Text2Live.</p>",
+    "zh": "<p>Runway 于 2023 年 2 月发布 Gen-2，将其介绍为能够依据文本、图像或现有视频参考生成视频的多模态系统。官方研究页展示八种模式：文生视频、文本加图像生成视频、图生视频、风格化、故事板、遮罩、渲染与定制。</p><p>这次发布让生成式视频不再局限于转换输入片段，创作者可以从提示词或静态图像出发，并通过不同工作流控制内容、外观与构图。Runway 在 Gen-2 页面公布的对比中称，用户相较 Stable Diffusion 1.5 有 73.53% 的情况更偏好 Gen-2 结果，相较 Text2Live 的偏好比例为 88.24%。</p>"
+  },
+  "location": {
+    "regionId": "germany",
+    "country": {
+      "en": "Germany",
+      "zh": "德国"
+    },
+    "place": {
+      "en": "Runway",
+      "zh": "Runway"
+    },
+    "coordinates": [
+      51.1657,
+      10.4515
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "runway-company",
+      "name": {
+        "en": "Runway",
+        "zh": "Runway"
+      },
+      "role": {
+        "en": "Company behind the Gen-2 video generation system",
+        "zh": "Gen-2 视频生成系统开发公司"
+      },
+      "figureType": "product",
+      "avatar": "resources/images/external/ai100-2023-gen2/runway-logo.png",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Completed event-specific research on 2026-08-03 and expanded image and company-brand research after copyright restrictions were relaxed. The exact BenchCouncil title, order, institution, country and blank contributor/publication fields remain preserved. Anastasis Germanidis is verified as the official Gen-2 page's bylined author and as a Runway co-founder focused on video-generation research; the clear Ray Summit portrait and the multi-person Cognitive Revolution interview cover are documented but not selected because he is not an official BenchCouncil-listed contributor. Runway's Open Graph introduction image and Mode 01 text-to-video frame are documented as official product-image candidates. The official company-hosted transparent Runway wordmark is selected as the institution-identification image and is displayed unmodified on a light background before the original Gen-2 explainer, with naming, minimum-size, contrast, non-modification and terms-of-use notes retained. Gen-1 Figure 2 is documented only as technical lineage, not as a Gen-2 architecture disclosure. selectedPortrait remains null.",
+      "zh": "于 2026-08-03 完成事件专项研究，并在放宽版权限制后扩展图片与公司品牌检索。BenchCouncil 的准确标题、顺序、机构、国家以及空人物/空论文字段均保持不变。现已核验 Anastasis Germanidis 是 Gen-2 官方页面署名者，也是专注视频生成研究的 Runway 联合创始人；清晰的 Ray Summit 肖像与多人构图的 Cognitive Revolution 访谈封面均已记录，但因其不是 BenchCouncil 官方列出人物而不选用。Runway 的 Open Graph 介绍图和模式 01 文生视频帧已记录为官方产品图片候选。现选用公司官方托管的透明 Runway 字标作为机构识别图，以未修改形式显示在浅色背景上，并排列在原创 Gen-2 解释图之前；名称写法、最小尺寸、明暗对比、禁止修改和条款约束说明均已保留。Gen-1 Figure 2 只作为技术脉络记录，不视为 Gen-2 架构披露。selectedPortrait 保持 null。"
+    }
+  }
+}
