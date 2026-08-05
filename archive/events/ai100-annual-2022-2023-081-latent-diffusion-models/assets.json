@@ -38,7 +38,10 @@
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
-    "editable": false
+    "editable": false,
+    "figureIds": [
+      "robin-rombach"
+    ]
   },
   {
     "id": "asset-annual-081-latent-diffusion-models-record",
@@ -121,7 +124,10 @@
     "provenanceNotes": {
       "en": "BenchCouncil lists Andreas Blattmann in the official contributor field, and the primary publication confirms the same author identity and work association.",
       "zh": "BenchCouncil 官方人物字段列出安德烈亚斯·布拉特曼，主论文作者表确认了同一人物及其与该成果的关系。"
-    }
+    },
+    "figureIds": [
+      "andreas-blattmann"
+    ]
   },
   {
     "id": "asset-annual-081-latent-diffusion-models-portrait-bjorn-ommer",
@@ -162,7 +168,10 @@
     "provenanceNotes": {
       "en": "BenchCouncil lists Bjorn Ommer in the official contributor field, and the primary publication confirms the same author identity and work association.",
       "zh": "BenchCouncil 官方人物字段列出比约恩·奥默，主论文作者表确认了同一人物及其与该成果的关系。"
-    }
+    },
+    "figureIds": [
+      "bjorn-ommer"
+    ]
   },
   {
     "id": "asset-annual-081-latent-diffusion-models-perceptual-compression",

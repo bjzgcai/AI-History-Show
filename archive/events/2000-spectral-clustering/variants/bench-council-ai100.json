@@ -117,60 +117,33 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Jianbo Shi",
-        "zh": "史建波"
-      },
+      "figureId": "jianbo-shi",
       "role": {
         "en": "Co-author of the 2000 normalized-cuts paper",
         "zh": "2000 年归一化切分论文共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Jitendra Malik",
-        "zh": "吉滕德拉·马利克"
-      },
+      "figureId": "jitendra-malik",
       "role": {
         "en": "Co-author of the 2000 normalized-cuts paper",
         "zh": "2000 年归一化切分论文共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Andrew Ng",
-        "zh": "吴恩达"
-      },
+      "figureId": "andrew-ng",
       "role": {
         "en": "Co-author of the 2001 spectral-clustering analysis",
         "zh": "2001 年谱聚类分析论文共同作者"
       },
-      "avatar": "resources/images/external/2000-spectral-clustering/andrew-ng-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2000-spectral-clustering-andrew-ng-at-techcrunch-disrupt-sf-2017"
     },
     {
-      "name": {
-        "en": "Yair Weiss",
-        "zh": "亚伊尔·魏斯"
-      },
+      "figureId": "yair-weiss",
       "role": {
         "en": "Co-author of the 2001 spectral-clustering analysis",
         "zh": "2001 年谱聚类分析论文共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],

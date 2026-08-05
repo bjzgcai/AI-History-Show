@@ -38,8 +38,8 @@
         "zh": "BP算法作者",
         "en": "Backpropagation author"
       },
-      "avatar": "resources/images/figures/david-rumelhart.jpg",
-      "organizationIds": []
+      "primary": true,
+      "avatarStyle": ""
     },
     {
       "figureId": "geoffrey-hinton",
@@ -47,8 +47,7 @@
         "zh": "深度学习之父",
         "en": "Pioneer of deep learning"
       },
-      "avatar": "resources/images/figures/historical/geoffrey-hinton-1986.png",
-      "organizationIds": []
+      "avatarAssetId": "asset-1986-backpropagation-figure-avatar-geoffrey-hinton"
     },
     {
       "figureId": "ronald-williams",
@@ -56,8 +55,8 @@
         "zh": "BP算法共同作者",
         "en": "Backpropagation co-author"
       },
-      "avatar": "resources/images/figures/ronald-williams.jpg",
-      "organizationIds": []
+      "primary": true,
+      "avatarStyle": ""
     }
   ],
   "organizations": [],

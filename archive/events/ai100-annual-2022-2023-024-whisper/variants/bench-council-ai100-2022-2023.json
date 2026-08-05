@@ -126,40 +126,26 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Alec Radford",
-        "zh": "亚历克·拉德福德"
-      },
+      "figureId": "alec-radford",
       "role": {
         "en": "First author of the Whisper paper",
         "zh": "Whisper 论文第一作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Jong Wook Kim",
-        "zh": "金钟旭"
-      },
+      "figureId": "jong-wook-kim",
+      "role": {
+        "en": "Co-author of the Whisper paper",
+        "zh": "Whisper 论文共同作者"
+      }
+    },
+    {
+      "figureId": "ilya-sutskever",
       "role": {
         "en": "Co-author of the Whisper paper",
         "zh": "Whisper 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Ilya Sutskever",
-        "zh": "伊利亚·苏茨克维"
-      },
-      "role": {
-        "en": "Co-author of the Whisper paper",
-        "zh": "Whisper 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg"
+      "avatarAssetId": "asset-annual-024-whisper-portrait-ilya-sutskever"
     }
   ],
   "quote": {

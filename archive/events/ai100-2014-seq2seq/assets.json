@@ -1,73 +1,76 @@
 [
-    {
-        "id": "asset-2014-seq2seq-portrait",
-        "type": "image",
-        "path": "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
-        "role": "portrait",
-        "caption": {
-            "en": "Yoshua Bengio portrait",
-            "zh": "约书亚·本吉奥肖像"
-        },
-        "subcaption": {
-            "en": "RNN encoder-decoder co-author",
-            "zh": "RNN 编码器—解码器共同作者"
-        },
-        "sourceId": "source-2014-seq2seq-portrait",
-        "sourceName": {
-            "en": "Mila",
-            "zh": "Mila"
-        },
-        "sourceUrl": "https://mila.quebec/en/directory/yoshua-bengio",
-        "rights": {
-            "status": "external-reference",
-            "license": {
-                "en": "Local reference copy with attribution to the linked profile and original file page.",
-                "zh": "本地参考副本；使用时保留所链接资料页与原文件页署名。"
-            },
-            "sourceUrl": "https://mila.quebec/en/directory/yoshua-bengio"
-        },
-        "displayUsage": {
-            "en": "Contributor portrait for the Seq2Seq achievement page",
-            "zh": "用于Seq2Seq成就页面的人物肖像"
-        },
-        "usage": [
-            "variant:bench-council-ai100"
-        ],
-        "editable": true
+  {
+    "id": "asset-2014-seq2seq-portrait",
+    "type": "image",
+    "path": "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Yoshua Bengio portrait",
+      "zh": "约书亚·本吉奥肖像"
     },
-    {
-        "id": "asset-2014-seq2seq-explainer",
-        "type": "svg",
-        "path": "resources/images/bench-council-ai100/explainers/2014-2014-seq2seq_process.svg",
-        "role": "architecture-explainer",
-        "caption": {
-            "en": "Sequence-to-Sequence Learning process explainer",
-            "zh": "序列到序列学习流程解释图"
-        },
-        "subcaption": {
-            "en": "Encoder-decoder recurrent sequence modeling",
-            "zh": "编码器—解码器循环序列建模"
-        },
-        "sourceId": "source-2014-seq2seq-primary",
-        "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://arxiv.org/abs/1406.1078",
-        "rights": {
-            "status": "documented-in-legacy",
-            "license": {
-                "en": "Original local SVG redraw; source figures are not copied.",
-                "zh": "本地原创 SVG 重绘；未复制来源图形。"
-            }
-        },
-        "displayUsage": {
-            "en": "Architecture and process explainer",
-            "zh": "架构与流程解释图"
-        },
-        "usage": [
-            "variant:bench-council-ai100"
-        ],
-        "editable": true
-    }
+    "subcaption": {
+      "en": "RNN encoder-decoder co-author",
+      "zh": "RNN 编码器—解码器共同作者"
+    },
+    "sourceId": "source-2014-seq2seq-portrait",
+    "sourceName": {
+      "en": "Mila",
+      "zh": "Mila"
+    },
+    "sourceUrl": "https://mila.quebec/en/directory/yoshua-bengio",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Local reference copy with attribution to the linked profile and original file page.",
+        "zh": "本地参考副本；使用时保留所链接资料页与原文件页署名。"
+      },
+      "sourceUrl": "https://mila.quebec/en/directory/yoshua-bengio"
+    },
+    "displayUsage": {
+      "en": "Contributor portrait for the Seq2Seq achievement page",
+      "zh": "用于Seq2Seq成就页面的人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true,
+    "figureIds": [
+      "yoshua-bengio"
+    ]
+  },
+  {
+    "id": "asset-2014-seq2seq-explainer",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2014-2014-seq2seq_process.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "en": "Sequence-to-Sequence Learning process explainer",
+      "zh": "序列到序列学习流程解释图"
+    },
+    "subcaption": {
+      "en": "Encoder-decoder recurrent sequence modeling",
+      "zh": "编码器—解码器循环序列建模"
+    },
+    "sourceId": "source-2014-seq2seq-primary",
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1406.1078",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      }
+    },
+    "displayUsage": {
+      "en": "Architecture and process explainer",
+      "zh": "架构与流程解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
 ]

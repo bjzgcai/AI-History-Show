@@ -33,18 +33,12 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "William McCune",
-        "zh": "威廉·麦丘恩"
-      },
+      "figureId": "william-mccune",
       "role": {
         "en": "Creator of Otter",
         "zh": "Otter 创建者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

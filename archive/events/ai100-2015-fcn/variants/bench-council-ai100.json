@@ -113,46 +113,25 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Jonathan Long",
-        "zh": "乔纳森·朗"
-      },
+      "figureId": "jonathan-long",
       "role": {
         "en": "FCN lead author",
         "zh": "FCN 主要作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Evan Shelhamer",
-        "zh": "埃文·谢尔哈默"
-      },
+      "figureId": "evan-shelhamer",
       "role": {
         "en": "FCN co-author",
         "zh": "FCN 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Trevor Darrell",
-        "zh": "特雷弗·达雷尔"
-      },
+      "figureId": "trevor-darrell",
       "role": {
         "en": "FCN co-author",
         "zh": "FCN 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],

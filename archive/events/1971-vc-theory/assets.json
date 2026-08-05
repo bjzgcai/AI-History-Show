@@ -28,7 +28,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "vladimir-vapnik"
+    ]
   },
   {
     "id": "asset-1971-vc-theory-generalization",

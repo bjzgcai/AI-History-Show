@@ -122,30 +122,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Gao Huang",
-        "zh": "黄高"
-      },
+      "figureId": "gao-huang",
       "role": {
         "en": "DenseNet lead author",
         "zh": "DenseNet 主要作者"
       },
-      "avatar": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
-      "avatarStyle": "transform: scale(1.72); transform-origin: 46% 28%;",
-      "figureType": "person"
+      "avatarAssetId": "asset-2016-densenet-people-02"
     },
     {
-      "name": {
-        "en": "Zhuang Liu",
-        "zh": "刘壮"
-      },
+      "figureId": "zhuang-liu",
       "role": {
         "en": "DenseNet co-author",
         "zh": "DenseNet 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      }
     }
   ],
   "photos": [],

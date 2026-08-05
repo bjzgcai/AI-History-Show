@@ -55,6 +55,9 @@
       "zh": "亚历山大·基里洛夫个人网站",
       "en": "Alexander Kirillov personal website"
     },
-    "sourceUrl": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg"
+    "sourceUrl": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg",
+    "figureIds": [
+      "alexander-kirillov"
+    ]
   }
 ]

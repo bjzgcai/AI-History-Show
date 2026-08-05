@@ -130,40 +130,28 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Robin Rombach",
-        "zh": "罗宾·罗姆巴赫"
-      },
+      "figureId": "robin-rombach",
       "role": {
         "en": "First author of the Latent Diffusion Models paper",
         "zh": "Latent Diffusion Models 论文第一作者"
       },
-      "figureType": "person",
-      "avatar": "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg"
+      "avatarAssetId": "asset-annual-081-latent-diffusion-models-portrait-robin-rombach"
     },
     {
-      "name": {
-        "en": "Andreas Blattmann",
-        "zh": "安德烈亚斯·布拉特曼"
-      },
+      "figureId": "andreas-blattmann",
       "role": {
         "en": "Co-author of the Latent Diffusion Models paper",
         "zh": "Latent Diffusion Models 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/andreas-blattmann.jpg"
+      "avatarAssetId": "asset-annual-081-latent-diffusion-models-portrait-andreas-blattmann"
     },
     {
-      "name": {
-        "en": "Bjorn Ommer",
-        "zh": "比约恩·奥默"
-      },
+      "figureId": "bjorn-ommer",
       "role": {
         "en": "Co-author of the Latent Diffusion Models paper",
         "zh": "Latent Diffusion Models 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/bjorn-ommer.jpg"
+      "avatarAssetId": "asset-annual-081-latent-diffusion-models-portrait-bjorn-ommer"
     }
   ],
   "quote": {

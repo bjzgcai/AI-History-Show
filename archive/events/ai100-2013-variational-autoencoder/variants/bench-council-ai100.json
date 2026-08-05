@@ -117,32 +117,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Diederik Kingma",
-        "zh": "迪德里克·金马"
-      },
+      "figureId": "diederik-kingma",
       "role": {
         "en": "Variational autoencoder co-author",
         "zh": "变分自编码器共同作者"
       },
-      "avatar": "resources/images/external/ai100-2013-variational-autoencoder/diederik-kingma-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-ai100-2013-variational-autoencoder-portrait"
     },
     {
-      "name": {
-        "en": "Max Welling",
-        "zh": "马克斯·韦林"
-      },
+      "figureId": "max-welling",
       "role": {
         "en": "Variational autoencoder co-author",
         "zh": "Variational autoencoder 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],

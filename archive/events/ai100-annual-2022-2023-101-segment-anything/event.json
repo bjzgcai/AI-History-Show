@@ -38,76 +38,52 @@
   "figures": [
     {
       "figureId": "alexander-kirillov",
-      "name": {
-        "en": "Alexander Kirillov",
-        "zh": "亚历山大·基里洛夫"
-      },
       "role": {
         "en": "First author of the Segment Anything paper",
         "zh": "Segment Anything 论文第一作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "eric-mintun",
-      "name": {
-        "en": "Eric Mintun",
-        "zh": "埃里克·明顿"
-      },
       "role": {
         "en": "Co-author of the Segment Anything paper",
         "zh": "Segment Anything 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "nikhila-ravi",
-      "name": {
-        "en": "Nikhila Ravi",
-        "zh": "尼基拉·拉维"
-      },
       "role": {
         "en": "Co-author of the Segment Anything paper",
         "zh": "Segment Anything 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "hanzi-mao",
-      "name": {
-        "en": "Hanzi Mao",
-        "zh": "汉兹·毛"
-      },
       "role": {
         "en": "Co-author of the Segment Anything paper",
         "zh": "Segment Anything 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "piotr-dollar",
-      "name": {
-        "en": "Piotr Dollar",
-        "zh": "彼得·多拉尔"
-      },
       "role": {
         "en": "Co-author of the Segment Anything paper",
         "zh": "Segment Anything 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "ross-girshick",
-      "name": {
-        "en": "Ross Girshick",
-        "zh": "罗斯·格希克"
-      },
       "role": {
         "en": "Co-author of the Segment Anything paper",
         "zh": "Segment Anything 论文共同作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/external/ai100-2023-segment-anything/ross-girshick.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-101-segment-anything-portrait-ross-girshick"
     }
   ],
   "organizations": [],

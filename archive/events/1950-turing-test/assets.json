@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "alan-turing"
+    ]
   },
   {
     "id": "asset-1950-turing-test-diagram",

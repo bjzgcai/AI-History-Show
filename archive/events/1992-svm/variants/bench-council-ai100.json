@@ -118,59 +118,34 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Bernhard Boser",
-        "zh": "伯恩哈德·博泽尔"
-      },
+      "figureId": "bernhard-boser",
       "role": {
         "en": "1992 SVM paper co-author",
         "zh": "1992 年最优间隔分类器论文共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Vladimir Vapnik",
-        "zh": "弗拉基米尔·瓦普尼克"
-      },
+      "figureId": "vladimir-vapnik",
       "role": {
         "en": "SVM co-developer",
         "zh": "共同发展最优间隔分类器与统计学习理论"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-1992-svm-vladimir-vapnik"
     },
     {
-      "name": {
-        "en": "Corinna Cortes",
-        "zh": "科琳娜·科尔特斯"
-      },
+      "figureId": "corinna-cortes",
       "role": {
         "en": "SVM co-author",
         "zh": "SVM 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Isabelle Guyon",
-        "zh": "伊莎贝尔·居永"
-      },
+      "figureId": "isabelle-guyon",
       "role": {
         "en": "1992 SVM paper co-author",
         "zh": "1992 年最优间隔分类器论文共同作者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
+      "avatarAssetId": "asset-1992-svm-isabelle-guyon"
     }
   ],
   "photos": [],

@@ -38,7 +38,10 @@
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
-    "editable": false
+    "editable": false,
+    "figureIds": [
+      "denny-zhou"
+    ]
   },
   {
     "id": "asset-annual-059-chain-of-thought-prompting-record",
@@ -121,7 +124,10 @@
     "provenanceNotes": {
       "en": "BenchCouncil lists Denny Zhou in the official contributor field, and the primary publication confirms the same author identity and work association.",
       "zh": "BenchCouncil 官方人物字段列出丹尼·周，主论文作者表确认了同一人物及其与该成果的关系。"
-    }
+    },
+    "figureIds": [
+      "denny-zhou"
+    ]
   },
   {
     "id": "asset-annual-059-chain-of-thought-paper-examples",

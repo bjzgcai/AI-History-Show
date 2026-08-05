@@ -38,8 +38,8 @@
         "zh": "Segment Anything 主要作者",
         "en": "Lead author of Segment Anything"
       },
-      "avatar": "resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-ai100-2023-segment-anything-alexander-kirillov"
     }
   ],
   "organizations": [],

@@ -126,100 +126,61 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Aakanksha Chowdhery",
-        "zh": "阿坎莎·乔杜里"
-      },
+      "figureId": "aakanksha-chowdhery",
       "role": {
         "en": "First author of the PaLM paper",
         "zh": "PaLM 论文第一作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Sharan Narang",
-        "zh": "沙兰·纳朗"
-      },
+      "figureId": "sharan-narang",
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      }
+    },
+    {
+      "figureId": "jacob-devlin",
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      }
+    },
+    {
+      "figureId": "kathy-meier-hellstern",
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      }
+    },
+    {
+      "figureId": "douglas-eck",
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      }
+    },
+    {
+      "figureId": "jeff-dean",
       "role": {
         "en": "Co-author of the PaLM paper",
         "zh": "PaLM 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": ""
+      "avatarAssetId": "asset-annual-039-palm-portrait-jeff-dean"
     },
     {
-      "name": {
-        "en": "Jacob Devlin",
-        "zh": "雅各布·德夫林"
-      },
+      "figureId": "slav-petrov",
       "role": {
         "en": "Co-author of the PaLM paper",
         "zh": "PaLM 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Kathy Meier-Hellstern",
-        "zh": "凯西·迈尔-赫尔斯特恩"
-      },
+      "figureId": "noah-fiedel",
       "role": {
         "en": "Co-author of the PaLM paper",
         "zh": "PaLM 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Douglas Eck",
-        "zh": "道格拉斯·埃克"
-      },
-      "role": {
-        "en": "Co-author of the PaLM paper",
-        "zh": "PaLM 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Jeff Dean",
-        "zh": "杰夫·迪恩"
-      },
-      "role": {
-        "en": "Co-author of the PaLM paper",
-        "zh": "PaLM 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg"
-    },
-    {
-      "name": {
-        "en": "Slav Petrov",
-        "zh": "斯拉夫·彼得罗夫"
-      },
-      "role": {
-        "en": "Co-author of the PaLM paper",
-        "zh": "PaLM 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Noah Fiedel",
-        "zh": "诺亚·菲德尔"
-      },
-      "role": {
-        "en": "Co-author of the PaLM paper",
-        "zh": "PaLM 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     }
   ],
   "quote": {

@@ -59,7 +59,10 @@
     "subcaption": {
       "zh": "最近邻分类共同作者。",
       "en": "Co-author of nearest-neighbor classification."
-    }
+    },
+    "figureIds": [
+      "thomas-cover"
+    ]
   },
   {
     "id": "asset-ai100-1967-knn-thomas-cover-stanford",
@@ -91,6 +94,9 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "thomas-cover"
+    ]
   }
 ]

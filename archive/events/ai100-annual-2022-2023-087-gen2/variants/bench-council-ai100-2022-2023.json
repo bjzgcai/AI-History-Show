@@ -130,16 +130,11 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Runway",
-        "zh": "Runway"
-      },
+      "figureId": "runway-company",
       "role": {
         "en": "Company behind the Gen-2 video generation system",
         "zh": "Gen-2 视频生成系统开发公司"
-      },
-      "figureType": "product",
-      "avatar": "resources/images/external/ai100-2023-gen2/runway-logo.png"
+      }
     }
   ],
   "quote": {

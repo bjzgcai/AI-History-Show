@@ -80,7 +80,10 @@
     "provenanceNotes": {
       "en": "BenchCouncil leaves the contributor field blank for this row. The official SayCan project page lists Chelsea Finn among the paper authors, and Stanford confirms her identity and research role.",
       "zh": "BenchCouncil 该行人物字段为空。SayCan 官方项目页将切尔西·芬恩列为论文作者，斯坦福大学资料页进一步核验其身份与研究方向。"
-    }
+    },
+    "figureIds": [
+      "chelsea-finn"
+    ]
   },
   {
     "id": "asset-annual-117-saycan-scoring",

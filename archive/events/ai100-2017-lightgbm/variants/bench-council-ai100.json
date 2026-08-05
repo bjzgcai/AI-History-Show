@@ -113,33 +113,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Guolin Ke",
-        "zh": "柯国霖"
-      },
+      "figureId": "guolin-ke",
       "role": {
         "en": "LightGBM lead author",
         "zh": "LightGBM 主要作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
       "figureId": "tie-yan-liu",
-      "name": {
-        "en": "Tie-Yan Liu",
-        "zh": "刘铁岩"
-      },
       "role": {
         "en": "LightGBM co-author",
         "zh": "LightGBM 共同作者"
       },
-      "avatar": "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2017-lightgbm-portrait"
     }
   ],
   "photos": [],

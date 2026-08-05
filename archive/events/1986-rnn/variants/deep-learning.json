@@ -76,30 +76,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Michael I. Jordan",
-        "zh": "迈克尔·I·乔丹"
-      },
+      "figureId": "michael-i-jordan",
       "role": {
         "en": "The creator of Jordan Network",
         "zh": "乔丹网络提出者"
       },
-      "avatar": "resources/images/figures/michael-i-jordan.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
+      "avatarAssetId": "asset-1986-rnn-figure-avatar-michael-i-jordan"
     },
     {
-      "name": {
-        "en": "Jeffrey Elman",
-        "zh": "杰弗里·埃尔曼"
-      },
+      "figureId": "jeffrey-elman",
       "role": {
         "en": "The creator of Simple RNN",
         "zh": "简单循环神经网络提出者"
-      },
-      "avatar": "resources/images/figures/jeffrey-elman.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
+      }
     }
   ],
   "photos": [],

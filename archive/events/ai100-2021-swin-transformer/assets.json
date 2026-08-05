@@ -55,6 +55,9 @@
       "zh": "刘泽个人网站",
       "en": "Ze Liu personal website"
     },
-    "sourceUrl": "https://zeliu98.github.io/images/zeliu.jpg"
+    "sourceUrl": "https://zeliu98.github.io/images/zeliu.jpg",
+    "figureIds": [
+      "ze-liu"
+    ]
   }
 ]

@@ -29,7 +29,10 @@
     "usage": [
       "variant:humanistic-cycle"
     ],
-    "editable": false
+    "editable": false,
+    "figureIds": [
+      "sir-james-lighthill"
+    ]
   },
   {
     "id": "asset-1973-lighthill-report-donald-michie",
@@ -61,7 +64,10 @@
     "usage": [
       "variant:humanistic-cycle"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "donald-michie"
+    ]
   },
   {
     "id": "asset-1973-lighthill-report-freddy-ii",

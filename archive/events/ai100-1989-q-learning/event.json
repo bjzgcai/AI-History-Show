@@ -33,32 +33,21 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Christopher Watkins",
-        "zh": "克里斯托弗·沃特金斯"
-      },
+      "figureId": "christopher-watkins",
       "role": {
         "en": "Q-learning lead author",
         "zh": "Q-learning 主要作者"
       },
-      "avatar": "resources/images/external/ai100-1989-q-learning/christopher-watkins-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-ai100-1989-q-learning-citations"
     },
     {
-      "name": {
-        "en": "Peter Dayan",
-        "zh": "彼得·达扬"
-      },
+      "figureId": "peter-dayan",
       "role": {
         "en": "Q Learning co-author",
         "zh": "Q Learning 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

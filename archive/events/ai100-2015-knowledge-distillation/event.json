@@ -33,46 +33,29 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Geoffrey Hinton",
-        "zh": "杰弗里·辛顿"
-      },
+      "figureId": "geoffrey-hinton",
       "role": {
         "en": "Knowledge distillation co-author",
         "zh": "知识蒸馏共同作者"
       },
-      "avatar": "resources/images/figures/geoffrey-hinton.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-geoffrey-hinton"
     },
     {
-      "name": {
-        "en": "Oriol Vinyals",
-        "zh": "奥里奥尔·维尼亚尔斯"
-      },
+      "figureId": "oriol-vinyals",
       "role": {
         "en": "knowledge distillation co-author",
         "zh": "knowledge distillation 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     },
     {
-      "name": {
-        "en": "Jeff Dean",
-        "zh": "杰夫·迪恩"
-      },
+      "figureId": "jeff-dean",
       "role": {
         "en": "knowledge distillation co-author",
         "zh": "knowledge distillation 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

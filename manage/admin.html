@@ -1,143 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Archive Entity Editor</title>
-  <style>
-    :root { color-scheme: dark; --bg:#101114; --panel:#181a20; --line:#30343d; --text:#f2efe7; --muted:#a9adba; --accent:#f68900; --ok:#3fb950; --bad:#f85149; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:var(--bg); color:var(--text); font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    header { padding:18px 22px; border-bottom:1px solid var(--line); background:#14161b; display:flex; justify-content:space-between; gap:16px; align-items:center; }
-    h1 { margin:0; font-size:22px; }
-    main { display:grid; grid-template-columns:320px 1fr; min-height:calc(100vh - 68px); }
-    aside { border-right:1px solid var(--line); padding:16px; overflow:auto; }
-    section { padding:16px; min-width:0; }
-    button, select { background:#222631; color:var(--text); border:1px solid var(--line); border-radius:8px; padding:8px 10px; font:inherit; cursor:pointer; }
-    button:hover { border-color:var(--accent); }
-    .entity { display:block; width:100%; text-align:left; margin:4px 0; }
-    .entity.active { border-color:var(--accent); color:var(--accent); }
-    .toolbar { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; align-items:center; }
-    textarea { width:100%; min-height:68vh; resize:vertical; background:#0d0e11; color:#f2efe7; border:1px solid var(--line); border-radius:12px; padding:14px; font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; tab-size:2; }
-    .status { color:var(--muted); margin-left:auto; }
-    .status.ok { color:var(--ok); } .status.bad { color:var(--bad); }
-    pre { background:#0d0e11; border:1px solid var(--line); border-radius:12px; padding:12px; overflow:auto; max-height:240px; }
-    .muted { color:var(--muted); }
-  </style>
-</head>
-<body>
-<header>
-  <div>
-    <h1>Archive Entity Editor</h1>
-    <div class="muted">Edit Archive event bundles and storylines. Save, validate here, then run <code>npm run generate</code>.</div>
-  </div>
-  <button id="validateBtn">Run validation</button>
-</header>
-<main>
-  <aside>
-    <div class="toolbar">
-      <select id="entityType"><option value="events">Events</option><option value="storylines">Storylines</option></select>
-      <button id="refreshBtn">Refresh</button>
-    </div>
-    <div id="entityList"></div>
-  </aside>
-  <section>
-    <div class="toolbar">
-      <strong id="currentEntity">No entity selected</strong>
-      <select id="fileSelect"></select>
-      <button id="loadBtn">Load</button>
-      <button id="saveBtn">Save</button>
-      <span id="status" class="status"></span>
-    </div>
-    <textarea id="editor" spellcheck="false" placeholder="Select an Archive event or storyline..."></textarea>
-    <h3>Validation output</h3>
-    <pre id="validationOutput">Not run yet.</pre>
-  </section>
-</main>
-<script>
-const state = { type: 'events', entities: [], entityId: '', file: '' };
-const entityType = document.getElementById('entityType');
-const entityList = document.getElementById('entityList');
-const fileSelect = document.getElementById('fileSelect');
-const editor = document.getElementById('editor');
-const statusEl = document.getElementById('status');
-const currentEntity = document.getElementById('currentEntity');
-const validationOutput = document.getElementById('validationOutput');
-function setStatus(text, cls='') { statusEl.textContent = text; statusEl.className = 'status ' + cls; }
-async function api(url, options) {
-  const res = await fetch(url, options);
-  const data = await res.json();
-  if (!res.ok || data.error) throw new Error(data.error || res.statusText);
-  return data;
-}
-function escapeHtml(value) {
-  return String(value).replace(/[&<>"']/g, char => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' })[char]);
-}
-function renderEntities() {
-  entityList.innerHTML = state.entities.map(entity => {
-    const id = typeof entity === 'string' ? entity : entity.id;
-    const detail = typeof entity === 'string' ? 'storyline JSON' : `${entity.files.length} files · ${entity.variants.length} variants`;
-    return `<button class="entity${id===state.entityId?' active':''}" data-id="${escapeHtml(id)}">${escapeHtml(id)}<br><span class="muted">${escapeHtml(detail)}</span></button>`;
-  }).join('');
-}
-async function refresh() {
-  state.entities = await api(`/api/archive/${state.type}`);
-  renderEntities();
-}
-function selectEntity(id) {
-  state.entityId = id;
-  currentEntity.textContent = `${state.type === 'events' ? 'Event' : 'Storyline'}: ${id}`;
-  if (state.type === 'events') {
-    const entity = state.entities.find(item => item.id === id);
-    const files = entity ? entity.files : [];
-    fileSelect.hidden = false;
-    fileSelect.innerHTML = files.map(file => `<option value="${file}">${file}</option>`).join('');
-    state.file = files[0] || '';
-  } else {
-    fileSelect.hidden = true;
-    fileSelect.innerHTML = '';
-    state.file = '';
-  }
-  renderEntities();
-}
-async function loadEntity() {
-  if (!state.entityId) { setStatus('Select an entity first', 'bad'); return; }
-  if (state.type === 'events' && !fileSelect.value) { setStatus('Select an event file first', 'bad'); return; }
-  const url = state.type === 'events'
-    ? `/api/archive/file?eventId=${encodeURIComponent(state.entityId)}&file=${encodeURIComponent(fileSelect.value)}`
-    : `/api/archive/storyline?storylineId=${encodeURIComponent(state.entityId)}`;
-  if (state.type === 'events') state.file = fileSelect.value;
-  const data = await api(url);
-  editor.value = JSON.stringify(data.data, null, 2);
-  setStatus(`Loaded ${state.file || state.entityId}`, 'ok');
-}
-async function saveEntity() {
-  if (!state.entityId) { setStatus('Select an entity first', 'bad'); return; }
-  if (state.type === 'events' && !state.file) { setStatus('Select an event file first', 'bad'); return; }
-  let parsed;
-  try { parsed = JSON.parse(editor.value); }
-  catch (error) { setStatus('Invalid JSON: ' + error.message, 'bad'); return; }
-  const body = state.type === 'events'
-    ? { eventId: state.entityId, file: state.file, data: parsed }
-    : { storylineId: state.entityId, data: parsed };
-  const url = state.type === 'events' ? '/api/archive/file' : '/api/archive/storyline';
-  await api(url, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
-  setStatus(`Saved ${state.file || state.entityId}; run validation, then npm run generate`, 'ok');
-}
-async function validate() {
-  validationOutput.textContent = 'Running...';
-  const data = await api('/api/archive/validate', { method:'POST' });
-  validationOutput.textContent = [data.stdout, data.stderr].filter(Boolean).join('\n') || `exitCode=${data.exitCode}`;
-  setStatus(data.ok ? 'Validation passed' : 'Validation failed', data.ok ? 'ok' : 'bad');
-}
-entityList.addEventListener('click', event => { const btn = event.target.closest('button[data-id]'); if (btn) { selectEntity(btn.dataset.id); loadEntity().catch(err => setStatus(err.message, 'bad')); } });
-entityType.addEventListener('change', () => { state.type = entityType.value; state.entityId = ''; state.file = ''; currentEntity.textContent = 'No entity selected'; editor.value = ''; refresh().catch(err => setStatus(err.message, 'bad')); });
-fileSelect.addEventListener('change', () => { state.file = fileSelect.value; });
-document.getElementById('refreshBtn').addEventListener('click', () => refresh().catch(err => setStatus(err.message, 'bad')));
-document.getElementById('loadBtn').addEventListener('click', () => loadEntity().catch(err => setStatus(err.message, 'bad')));
-document.getElementById('saveBtn').addEventListener('click', () => saveEntity().catch(err => setStatus(err.message, 'bad')));
-document.getElementById('validateBtn').addEventListener('click', () => validate().catch(err => setStatus(err.message, 'bad')));
-refresh().catch(err => setStatus(err.message, 'bad'));
-</script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Archive Entity Editor</title>
+        <link rel="icon" href="data:," />
+        <link rel="stylesheet" href="/admin.css" />
+    </head>
+    <body>
+        <header>
+            <div class="brand">
+                <div class="brand-mark">AH</div>
+                <div>
+                    <div class="eyebrow">AI HISTORY SHOW · CONTENT STUDIO</div>
+                    <h1>Archive 管理后台</h1>
+                    <div class="muted">JSON 是内容权威，后台负责安全编辑、校验与生成。</div>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button id="auditBtn">人物审计</button>
+                <button id="validateBtn">运行校验</button>
+                <button id="generateBtn" class="primary">生成运行时数据</button>
+            </div>
+        </header>
+
+        <main>
+            <aside>
+                <div class="sidebar-heading">
+                    <span>内容导航</span>
+                    <span id="entityCount" class="count-badge">0</span>
+                </div>
+                <div class="sidebar-tools">
+                    <select id="entityType">
+                        <option value="events">Events</option>
+                        <option value="storylines">Storylines</option>
+                        <option value="figures">Figures</option>
+                        <option value="audit">Figure Audit</option>
+                    </select>
+                    <button id="refreshBtn">刷新</button>
+                </div>
+                <input id="entitySearch" class="search" type="search" placeholder="搜索 ID、名称或 alias" />
+                <button id="newFigureBtn" class="wide" hidden>新建人物 / 实体</button>
+                <div id="entityList" class="entity-list"></div>
+            </aside>
+
+            <section class="workspace">
+                <div class="toolbar">
+                    <strong id="currentEntity">尚未选择实体</strong>
+                    <select id="fileSelect" hidden></select>
+                    <button id="loadBtn">加载</button>
+                    <button id="saveBtn">保存草稿</button>
+                    <button id="saveValidateBtn">保存并验证</button>
+                    <span id="status" class="status"></span>
+                </div>
+
+                <div id="emptyState" class="panel empty-state">
+                    <div class="empty-icon">⌘</div>
+                    <h2>选择左侧内容开始编辑</h2>
+                    <p class="muted">人物模式提供结构化资料、头像和引用管理；事件模式可直接维护人物关系。</p>
+                </div>
+
+                <div id="figurePanel" class="panel" hidden>
+                    <div class="panel-heading">
+                        <div>
+                            <h2>全局身份资料</h2>
+                            <p class="muted">标准名称与默认头像只在人物库维护；事件仅维护角色关系。</p>
+                        </div>
+                        <span id="figureReviewBadge" class="badge"></span>
+                    </div>
+                    <div class="form-grid">
+                        <label>稳定 ID<input id="figureId" autocomplete="off" /></label>
+                        <label
+                            >类型<select id="figureType">
+                                <option>person</option>
+                                <option>team</option>
+                                <option>organization</option>
+                                <option>product</option>
+                                <option>system</option>
+                            </select></label
+                        >
+                        <label>英文标准名<input id="figureNameEn" /></label>
+                        <label>中文标准名<input id="figureNameZh" /></label>
+                        <label class="span-2"
+                            >Aliases（每行一个）<textarea id="figureAliases" class="short"></textarea>
+                        </label>
+                        <label>英文消歧说明<textarea id="figureDisambiguationEn" class="short"></textarea></label>
+                        <label>中文消歧说明<textarea id="figureDisambiguationZh" class="short"></textarea></label>
+                        <label class="span-2"
+                            >关联机构 ID（每行一个）<textarea id="figureOrganizations" class="short"></textarea>
+                        </label>
+                        <label class="span-2"
+                            >Profile sources JSON 数组<textarea
+                                id="figureProfileSources"
+                                class="medium code"
+                            ></textarea>
+                        </label>
+                    </div>
+
+                    <h3>默认头像</h3>
+                    <div class="avatar-editor">
+                        <div class="avatar-preview">
+                            <img id="avatarPreview" alt="默认头像预览" /><span id="avatarPlaceholder">无默认头像</span>
+                        </div>
+                        <div class="form-grid">
+                            <label class="span-2"
+                                >资源路径<input id="avatarPath" placeholder="resources/images/..."
+                            /></label>
+                            <label>英文来源名<input id="avatarSourceNameEn" /></label>
+                            <label>中文来源名<input id="avatarSourceNameZh" /></label>
+                            <label class="span-2">来源 URL<input id="avatarSourceUrl" /></label>
+                            <label>Rights status<input id="avatarRightsStatus" /></label>
+                            <label>avatarStyle<input id="avatarStyle" /></label>
+                            <label>英文许可<textarea id="avatarLicenseEn" class="short"></textarea></label>
+                            <label>中文许可<textarea id="avatarLicenseZh" class="short"></textarea></label>
+                            <label>英文 usage<textarea id="avatarUsageEn" class="short"></textarea></label>
+                            <label>中文 usage<textarea id="avatarUsageZh" class="short"></textarea></label>
+                        </div>
+                    </div>
+
+                    <h3>审核状态</h3>
+                    <div class="form-grid">
+                        <label
+                            >状态<select id="reviewStatus">
+                                <option>draft</option>
+                                <option>needs-source</option>
+                                <option>verified</option>
+                                <option>disputed</option>
+                                <option>deprecated</option>
+                            </select></label
+                        >
+                        <label>审核日期<input id="reviewedAt" placeholder="YYYY-MM-DD" /></label>
+                        <label class="span-2">审核人<input id="reviewer" /></label>
+                        <label>英文备注<textarea id="reviewNotesEn" class="short"></textarea></label>
+                        <label>中文备注<textarea id="reviewNotesZh" class="short"></textarea></label>
+                    </div>
+
+                    <div id="figureUsage" class="usage-grid"></div>
+
+                    <h3>高级操作</h3>
+                    <div class="advanced-grid">
+                        <section class="action-card danger-zone">
+                            <div>
+                                <div class="action-label">身份合并</div>
+                                <p class="muted">把当前身份的事件、variant、资产和机构引用迁移到目标身份。</p>
+                            </div>
+                            <label
+                                >合并到<select id="mergeTargetSelect">
+                                    <option value="">选择目标身份</option>
+                                </select></label
+                            >
+                            <div id="mergePreview" class="action-output muted">先选择目标并检查影响范围。</div>
+                            <div class="inline-actions">
+                                <button id="mergePreviewBtn">预览影响</button>
+                                <button id="mergeExecuteBtn" class="danger" disabled>确认合并</button>
+                            </div>
+                        </section>
+
+                        <section class="action-card">
+                            <div>
+                                <div class="action-label">导入人物图片</div>
+                                <p class="muted">仅接受 PNG、JPEG、GIF 或 WebP，文件会追加到事件人物资源目录。</p>
+                            </div>
+                            <div class="image-import-layout">
+                                <label class="image-dropzone" for="imageImportFile">
+                                    <img id="imageImportPreview" alt="待导入图片预览" hidden />
+                                    <span id="imageImportPlaceholder">选择图片文件</span>
+                                    <input
+                                        id="imageImportFile"
+                                        type="file"
+                                        accept="image/png,image/jpeg,image/gif,image/webp"
+                                    />
+                                </label>
+                                <div class="form-grid compact-grid">
+                                    <label
+                                        >所属事件<select id="imageImportEvent">
+                                            <option value="">选择事件</option>
+                                        </select></label
+                                    >
+                                    <label
+                                        >资产 ID<input id="imageImportAssetId" placeholder="asset-event-portrait-name"
+                                    /></label>
+                                    <label
+                                        >来源记录<select id="imageImportSourceId">
+                                            <option value="">先选择事件</option>
+                                        </select></label
+                                    >
+                                    <label
+                                        >资源角色<select id="imageImportRole">
+                                            <option value="portrait">portrait</option>
+                                            <option value="team">team</option>
+                                            <option value="historical">historical</option>
+                                        </select></label
+                                    >
+                                    <label>英文 caption<input id="imageImportCaptionEn" /></label>
+                                    <label>中文 caption<input id="imageImportCaptionZh" /></label>
+                                    <label>英文 subcaption<input id="imageImportSubcaptionEn" /></label>
+                                    <label>中文 subcaption<input id="imageImportSubcaptionZh" /></label>
+                                    <label>英文来源名<input id="imageImportSourceNameEn" /></label>
+                                    <label>中文来源名<input id="imageImportSourceNameZh" /></label>
+                                    <label class="span-2">来源 URL<input id="imageImportSourceUrl" /></label>
+                                    <label
+                                        >Rights status<input id="imageImportRightsStatus" value="needs-source"
+                                    /></label>
+                                    <label class="checkbox-field"
+                                        ><input id="imageImportSetDefault" type="checkbox" />设为全局默认头像</label
+                                    >
+                                    <label>英文许可<textarea id="imageImportLicenseEn" class="short"></textarea></label>
+                                    <label>中文许可<textarea id="imageImportLicenseZh" class="short"></textarea></label>
+                                    <label>英文 usage<textarea id="imageImportUsageEn" class="short"></textarea></label>
+                                    <label>中文 usage<textarea id="imageImportUsageZh" class="short"></textarea></label>
+                                </div>
+                            </div>
+                            <button id="imageImportBtn" class="primary">导入图片并登记资产</button>
+                        </section>
+                    </div>
+                </div>
+
+                <div id="relationPanel" class="panel" hidden>
+                    <div class="panel-heading">
+                        <div>
+                            <h2>人物关系</h2>
+                            <p class="muted">按稳定 figureId 维护顺序、事件角色和头像覆盖。</p>
+                        </div>
+                        <div class="inline-actions">
+                            <select id="addFigureSelect"></select>
+                            <button id="addFigureBtn">添加人物</button>
+                        </div>
+                    </div>
+                    <div id="relationRows"></div>
+                </div>
+
+                <div id="auditPanel" class="panel" hidden>
+                    <div class="panel-heading">
+                        <div>
+                            <h2>人物审计</h2>
+                            <p class="muted">按严重级别展示身份、关系、资产与审核问题。</p>
+                        </div>
+                    </div>
+                    <div id="auditSummary" class="summary-cards"></div>
+                    <div id="auditCategories"></div>
+                </div>
+
+                <details id="jsonPanel" class="panel json-panel" hidden>
+                    <summary>高级 JSON 模式</summary>
+                    <textarea
+                        id="editor"
+                        class="code"
+                        spellcheck="false"
+                        placeholder="选择 Archive 实体后加载 JSON"
+                    ></textarea>
+                </details>
+
+                <div class="panel output-panel">
+                    <h3>任务输出</h3>
+                    <pre id="validationOutput">尚未运行任务。</pre>
+                </div>
+            </section>
+        </main>
+
+        <script src="/admin.js" defer></script>
+    </body>
 </html>

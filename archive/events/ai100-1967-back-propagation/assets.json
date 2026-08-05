@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "david-rumelhart"
+    ]
   },
   {
     "id": "asset-1967-back-propagation-error-flow",

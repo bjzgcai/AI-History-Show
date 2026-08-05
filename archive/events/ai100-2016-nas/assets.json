@@ -55,6 +55,9 @@
       "zh": "巴雷特·佐夫个人网站",
       "en": "Barret Zoph personal website"
     },
-    "sourceUrl": "https://barretzoph.github.io/images/headshot.jpg"
+    "sourceUrl": "https://barretzoph.github.io/images/headshot.jpg",
+    "figureIds": [
+      "barret-zoph"
+    ]
   }
 ]

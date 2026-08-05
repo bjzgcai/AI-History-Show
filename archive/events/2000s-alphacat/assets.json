@@ -31,7 +31,10 @@
     "sourceName": {
       "zh": "用户提供照片",
       "en": "User-provided photograph"
-    }
+    },
+    "figureIds": [
+      "i-chen-wu"
+    ]
   },
   {
     "id": "asset-2000s-alphacat-xiangqi-search",

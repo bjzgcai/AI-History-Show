@@ -119,32 +119,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Thomas Cover",
-        "zh": "托马斯·科弗"
-      },
+      "figureId": "thomas-cover",
       "role": {
         "en": "Co-author of nearest-neighbor classification",
         "zh": "最近邻分类共同作者"
       },
-      "avatar": "resources/images/external/ai100-1967-knn/thomas-cover-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-ai100-1967-knn-thomas-cover-stanford"
     },
     {
-      "name": {
-        "en": "Peter Hart",
-        "zh": "彼得·哈特"
-      },
+      "figureId": "peter-hart",
       "role": {
         "en": "Co-author of nearest-neighbor classification",
         "zh": "最近邻分类共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],

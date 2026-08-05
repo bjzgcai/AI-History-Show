@@ -114,32 +114,18 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Andrew Howard",
-        "zh": "安德鲁·霍华德"
-      },
+      "figureId": "andrew-howard",
       "role": {
         "en": "Mobilenets lead author",
         "zh": "Mobilenets 主要作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Mark Sandler",
-        "zh": "马克·桑德勒"
-      },
+      "figureId": "mark-sandler",
       "role": {
         "en": "Mobilenets co-author",
         "zh": "Mobilenets 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],

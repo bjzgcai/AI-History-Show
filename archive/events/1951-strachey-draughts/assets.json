@@ -34,7 +34,10 @@
       "zh": "IEEE Computer Society Computer Pioneers 档案",
       "en": "IEEE Computer Society Computer Pioneers archive"
     },
-    "sourceUrl": "https://history.computer.org/pioneers/strachey.html"
+    "sourceUrl": "https://history.computer.org/pioneers/strachey.html",
+    "figureIds": [
+      "christopher-strachey"
+    ]
   },
   {
     "id": "asset-1951-strachey-draughts-board-search",

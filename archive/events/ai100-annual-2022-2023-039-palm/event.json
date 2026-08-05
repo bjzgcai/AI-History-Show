@@ -38,100 +38,68 @@
   "figures": [
     {
       "figureId": "aakanksha-chowdhery",
-      "name": {
-        "en": "Aakanksha Chowdhery",
-        "zh": "阿坎莎·乔杜里"
-      },
       "role": {
         "en": "First author of the PaLM paper",
         "zh": "PaLM 论文第一作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "sharan-narang",
-      "name": {
-        "en": "Sharan Narang",
-        "zh": "沙兰·纳朗"
-      },
       "role": {
         "en": "Co-author of the PaLM paper",
         "zh": "PaLM 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "jacob-devlin",
-      "name": {
-        "en": "Jacob Devlin",
-        "zh": "雅各布·德夫林"
-      },
       "role": {
         "en": "Co-author of the PaLM paper",
         "zh": "PaLM 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "kathy-meier-hellstern",
-      "name": {
-        "en": "Kathy Meier-Hellstern",
-        "zh": "凯西·迈尔-赫尔斯特恩"
-      },
       "role": {
         "en": "Co-author of the PaLM paper",
         "zh": "PaLM 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "douglas-eck",
-      "name": {
-        "en": "Douglas Eck",
-        "zh": "道格拉斯·埃克"
-      },
       "role": {
         "en": "Co-author of the PaLM paper",
         "zh": "PaLM 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "jeff-dean",
-      "name": {
-        "en": "Jeff Dean",
-        "zh": "杰夫·迪恩"
-      },
       "role": {
         "en": "Co-author of the PaLM paper",
         "zh": "PaLM 论文共同作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-039-palm-portrait-jeff-dean"
     },
     {
       "figureId": "slav-petrov",
-      "name": {
-        "en": "Slav Petrov",
-        "zh": "斯拉夫·彼得罗夫"
-      },
       "role": {
         "en": "Co-author of the PaLM paper",
         "zh": "PaLM 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "noah-fiedel",
-      "name": {
-        "en": "Noah Fiedel",
-        "zh": "诺亚·菲德尔"
-      },
       "role": {
         "en": "Co-author of the PaLM paper",
         "zh": "PaLM 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

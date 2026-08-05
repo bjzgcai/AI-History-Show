@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "alain-colmerauer"
+    ]
   },
   {
     "id": "asset-1973-prolog-query-tree",

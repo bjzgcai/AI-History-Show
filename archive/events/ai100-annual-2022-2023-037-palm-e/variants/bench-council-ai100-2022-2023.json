@@ -126,28 +126,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Danny Driess",
-        "zh": "丹尼·德里斯"
-      },
+      "figureId": "danny-driess",
       "role": {
         "en": "First author of the PaLM-E paper",
         "zh": "PaLM-E 论文第一作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Pete Florence",
-        "zh": "皮特·弗洛伦斯"
-      },
+      "figureId": "pete-florence",
       "role": {
         "en": "Co-author of the PaLM-E paper",
         "zh": "PaLM-E 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": "resources/images/external/ai100-2023-palm-e/pete-florence.jpg"
+      "avatarAssetId": "asset-annual-037-palm-e-portrait-pete-florence"
     }
   ],
   "quote": {

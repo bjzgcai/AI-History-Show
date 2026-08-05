@@ -38,7 +38,10 @@
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
-    "editable": false
+    "editable": false,
+    "figureIds": [
+      "ross-girshick"
+    ]
   },
   {
     "id": "asset-annual-101-segment-anything-record",

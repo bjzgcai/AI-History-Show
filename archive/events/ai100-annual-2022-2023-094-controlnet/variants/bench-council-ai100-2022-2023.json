@@ -130,28 +130,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Lvmin Zhang",
-        "zh": "张吕敏"
-      },
+      "figureId": "lvmin-zhang",
       "role": {
         "en": "First author of the ControlNet paper",
         "zh": "ControlNet 论文第一作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Maneesh Agrawala",
-        "zh": "马尼什·阿格拉瓦拉"
-      },
+      "figureId": "maneesh-agrawala",
       "role": {
         "en": "Co-author of the ControlNet paper",
         "zh": "ControlNet 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": "resources/images/external/ai100-2023-controlnet/maneesh-agrawala.jpg"
+      "avatarAssetId": "asset-annual-094-controlnet-portrait-maneesh-agrawala"
     }
   ],
   "quote": {

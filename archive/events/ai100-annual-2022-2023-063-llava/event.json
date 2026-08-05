@@ -38,40 +38,28 @@
   "figures": [
     {
       "figureId": "haotian-liu",
-      "name": {
-        "en": "Haotian Liu",
-        "zh": "刘昊天"
-      },
       "role": {
         "en": "First author of the LLaVA paper",
         "zh": "LLaVA 论文第一作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/external/ai100-2023-llava/haotian-liu.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-063-llava-portrait-haotian-liu"
     },
     {
       "figureId": "chunyuan-li",
-      "name": {
-        "en": "Chunyuan Li",
-        "zh": "李春源"
-      },
       "role": {
         "en": "Co-first author of the LLaVA paper",
         "zh": "LLaVA 论文共同第一作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "yong-jae-lee",
-      "name": {
-        "en": "Yong Jae Lee",
-        "zh": "李永宰"
-      },
       "role": {
         "en": "Co-author of the LLaVA paper",
         "zh": "LLaVA 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

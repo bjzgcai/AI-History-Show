@@ -84,87 +84,48 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "David Silver",
-        "zh": "大卫·席尔瓦"
-      },
+      "figureId": "david-silver",
       "role": {
         "en": "AlphaGo lead researcher",
         "zh": "AlphaGo 主要研究者"
       },
-      "avatar": "resources/images/figures/authoritative/david-silver.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-david-silver-commons-portrait"
     },
     {
-      "name": {
-        "en": "Aja Huang",
-        "zh": "黄士杰"
-      },
+      "figureId": "aja-huang",
       "role": {
         "en": "AlphaGo co-author",
         "zh": "AlphaGo 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Demis Hassabis",
-        "zh": "戴密斯·哈萨比斯"
-      },
+      "figureId": "demis-hassabis",
       "role": {
         "en": "DeepMind co-founder",
         "zh": "DeepMind 联合创始人"
-      },
-      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Julian Schrittwieser",
-        "zh": "朱利安·施里特维泽"
-      },
+      "figureId": "julian-schrittwieser",
       "role": {
         "en": "DeepMind research scientist and one of the first authors of the MuZero paper",
         "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一"
-      },
-      "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Karen Simonyan",
-        "zh": "卡伦·西莫尼扬"
-      },
+      "figureId": "karen-simonyan",
       "role": {
         "en": "Co-author of the VGG paper",
         "zh": "VGG 论文共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Lee Sedol",
-        "zh": "李世石"
-      },
+      "figureId": "lee-sedol",
       "role": {
         "en": "Go world champion in the landmark 2016 match",
         "zh": "2016 年里程碑对局中的围棋世界冠军"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
+      "avatarAssetId": "asset-alphago-lee-sedol"
     }
   ],
   "photos": [],

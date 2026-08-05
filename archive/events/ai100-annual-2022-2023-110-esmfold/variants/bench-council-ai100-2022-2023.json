@@ -128,64 +128,40 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Zeming Lin",
-        "zh": "林泽明"
-      },
+      "figureId": "zeming-lin",
       "role": {
         "en": "First author of the ESMFold paper",
         "zh": "ESMFold 论文第一作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Halil Akin",
-        "zh": "哈利勒·阿金"
-      },
+      "figureId": "halil-akin",
+      "role": {
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
+      }
+    },
+    {
+      "figureId": "roshan-rao",
+      "role": {
+        "en": "Co-author of the ESMFold paper",
+        "zh": "ESMFold 论文共同作者"
+      }
+    },
+    {
+      "figureId": "brian-hie",
       "role": {
         "en": "Co-author of the ESMFold paper",
         "zh": "ESMFold 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": ""
+      "avatarAssetId": "asset-annual-110-esmfold-portrait-brian-hie"
     },
     {
-      "name": {
-        "en": "Roshan Rao",
-        "zh": "罗尚·拉奥"
-      },
+      "figureId": "alexander-rives",
       "role": {
         "en": "Co-author of the ESMFold paper",
         "zh": "ESMFold 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Brian Hie",
-        "zh": "布赖恩·希"
-      },
-      "role": {
-        "en": "Co-author of the ESMFold paper",
-        "zh": "ESMFold 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": "resources/images/external/ai100-2023-esmfold/brian-hie.jpg"
-    },
-    {
-      "name": {
-        "en": "Alexander Rives",
-        "zh": "亚历山大·里夫斯"
-      },
-      "role": {
-        "en": "Co-author of the ESMFold paper",
-        "zh": "ESMFold 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     }
   ],
   "quote": {

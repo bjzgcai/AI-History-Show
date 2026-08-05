@@ -38,7 +38,10 @@
     "usage": [
       "variant:bench-council-ai100-2022-2023"
     ],
-    "editable": false
+    "editable": false,
+    "figureIds": [
+      "edouard-grave"
+    ]
   },
   {
     "id": "asset-annual-035-llama-record",

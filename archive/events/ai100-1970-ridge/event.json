@@ -33,32 +33,21 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Arthur Hoerl",
-        "zh": "阿瑟·霍尔"
-      },
+      "figureId": "arthur-hoerl",
       "role": {
         "en": "Co-author of ridge regression",
         "zh": "岭回归共同作者"
       },
-      "avatar": "resources/images/external/ai100-1970-ridge/arthur-hoerl-and-the-ridge-regression-formula.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-ai100-1970-ridge-ai-ridge-regression-main"
     },
     {
-      "name": {
-        "en": "Robert Kennard",
-        "zh": "罗伯特·肯纳德"
-      },
+      "figureId": "robert-kennard",
       "role": {
         "en": "Co-author of ridge regression",
         "zh": "岭回归共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

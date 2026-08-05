@@ -38,125 +38,85 @@
   "figures": [
     {
       "figureId": "long-ouyang",
-      "name": {
-        "en": "Long Ouyang",
-        "zh": "欧阳龙"
-      },
       "role": {
         "en": "First author of the InstructGPT paper",
         "zh": "InstructGPT 论文第一作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "jeff-wu",
-      "name": {
-        "en": "Jeff Wu",
-        "zh": "杰夫·吴"
-      },
       "role": {
         "en": "Co-author of the InstructGPT paper",
         "zh": "InstructGPT 论文共同作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-wu.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-048-instructgpt-portrait-jeff-wu"
     },
     {
       "figureId": "xu-jiang",
-      "name": {
-        "en": "Xu Jiang",
-        "zh": "徐江"
-      },
       "role": {
         "en": "Co-author of the InstructGPT paper",
         "zh": "InstructGPT 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "diogo-almeida",
-      "name": {
-        "en": "Diogo Almeida",
-        "zh": "迪奥戈·阿尔梅达"
-      },
       "role": {
         "en": "Co-author of the InstructGPT paper",
         "zh": "InstructGPT 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "carroll-l-wainwright",
-      "name": {
-        "en": "Carroll L. Wainwright",
-        "zh": "卡罗尔·L·温赖特"
-      },
       "role": {
         "en": "Co-author of the InstructGPT paper",
         "zh": "InstructGPT 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "pamela-mishkin",
-      "name": {
-        "en": "Pamela Mishkin",
-        "zh": "帕梅拉·米什金"
-      },
       "role": {
         "en": "Co-author of the InstructGPT paper",
         "zh": "InstructGPT 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "paul-christiano",
-      "name": {
-        "en": "Paul Christiano",
-        "zh": "保罗·克里斯蒂亚诺"
-      },
       "role": {
         "en": "Co-author of the InstructGPT paper",
         "zh": "InstructGPT 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "jan-leike",
-      "name": {
-        "en": "Jan Leike",
-        "zh": "扬·莱克"
-      },
       "role": {
         "en": "Co-author of the InstructGPT paper",
         "zh": "InstructGPT 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "ryan-lowe",
-      "name": {
-        "en": "Ryan Lowe",
-        "zh": "瑞安·洛"
-      },
       "role": {
         "en": "Co-author of the InstructGPT paper",
         "zh": "InstructGPT 论文共同作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "john-schulman",
-      "name": {
-        "en": "John Schulman",
-        "zh": "约翰·舒尔曼"
-      },
       "role": {
         "en": "Co-author of the InstructGPT paper",
         "zh": "InstructGPT 论文共同作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png"
+      "primary": true,
+      "avatarAssetId": "asset-annual-048-instructgpt-portrait-john-schulman"
     }
   ],
   "organizations": [],

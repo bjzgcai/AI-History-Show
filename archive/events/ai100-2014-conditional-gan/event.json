@@ -33,32 +33,20 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Mehdi Mirza",
-        "zh": "迈赫迪·米尔扎"
-      },
+      "figureId": "mehdi-mirza",
       "role": {
         "en": "Conditional GAN lead author",
         "zh": "Conditional GAN 主要作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     },
     {
-      "name": {
-        "en": "Simon Osindero",
-        "zh": "西蒙·奥辛德罗"
-      },
+      "figureId": "simon-osindero",
       "role": {
         "en": "Conditional GAN co-author",
         "zh": "Conditional GAN 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

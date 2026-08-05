@@ -38,10 +38,8 @@
         "zh": "Suphx 项目主要负责人之一、微软亚洲研究院首席研究员",
         "en": "One of the principal leaders of Suphx and a principal researcher at Microsoft Research Asia"
       },
-      "avatar": "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
-      "organizationIds": [
-        "microsoft-research-asia"
-      ]
+      "primary": true,
+      "avatarAssetId": "asset-2019-suphx-tie-yan-liu"
     },
     {
       "figureId": "hsiao-wuen-hon",
@@ -49,10 +47,8 @@
         "zh": "微软全球资深副总裁、Suphx 项目最高负责人",
         "en": "Microsoft global senior vice president and executive leader of the Suphx project"
       },
-      "avatar": "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
-      "organizationIds": [
-        "microsoft-research-asia"
-      ]
+      "primary": true,
+      "avatarAssetId": "asset-2019-suphx-hsiao-wuen-hon"
     },
     {
       "figureId": "junjie-li",
@@ -60,9 +56,7 @@
         "zh": "Suphx 论文第一作者",
         "en": "First author of the Suphx paper"
       },
-      "organizationIds": [
-        "microsoft-research-asia"
-      ]
+      "primary": true
     },
     {
       "figureId": "tao-qin",
@@ -70,10 +64,8 @@
         "zh": "Suphx 论文重要作者",
         "en": "Key author of the Suphx paper"
       },
-      "avatar": "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
-      "organizationIds": [
-        "microsoft-research-asia"
-      ]
+      "primary": true,
+      "avatarAssetId": "asset-2019-suphx-tao-qin"
     }
   ],
   "organizations": [
