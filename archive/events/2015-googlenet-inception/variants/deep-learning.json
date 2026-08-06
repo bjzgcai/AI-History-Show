@@ -123,45 +123,26 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Christian Szegedy",
-        "zh": "克里斯蒂安·塞格迪"
-      },
+      "figureId": "christian-szegedy",
       "role": {
         "en": "Lead author of the GoogLeNet paper",
         "zh": "GoogLeNet 论文第一作者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2015-googlenet-inception-christian-szegedy"
     },
     {
-      "name": {
-        "en": "Vincent Vanhoucke",
-        "zh": "文森特·范霍克"
-      },
+      "figureId": "vincent-vanhoucke",
       "role": {
         "en": "GooleNet (Inception) co-author",
         "zh": "GooleNet (Inception) 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Google research team",
-        "zh": "谷歌 研究团队"
-      },
+      "figureId": "google-research-team",
       "role": {
         "en": "Developed the Inception architecture",
         "zh": "开发 Inception 架构"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      }
     }
   ],
   "photos": [],

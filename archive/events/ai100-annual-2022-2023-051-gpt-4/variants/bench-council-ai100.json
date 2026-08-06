@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-051-gpt-4",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "GPT-4",
     "zh": "GPT-4"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Multimodal frontier model",
-    "zh": "AI100（2022-2023）· 多模态前沿模型"
   },
   "displayDescription": {
     "en": "<p>GPT-4 was introduced as a large multimodal model that accepts image and text inputs and produces text outputs. OpenAI reported broad improvements over GPT-3.5 on professional and academic benchmarks while emphasizing that the model still hallucinates, has a limited context window and can make reasoning errors.</p><p>The release paired capability evaluation with a technical report and system card describing adversarial testing, expert feedback and post-training safety work. This combined treatment of capability and risk made the GPT-4 release an important reference point for later frontier-model evaluations.</p>",
@@ -125,16 +121,11 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "OpenAI",
-        "zh": "OpenAI"
-      },
+      "figureId": "openai-company",
       "role": {
         "en": "Company behind GPT-4 and ChatGPT",
         "zh": "GPT-4 与 ChatGPT 的开发公司"
-      },
-      "figureType": "product",
-      "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png"
+      }
     }
   ],
   "quote": {

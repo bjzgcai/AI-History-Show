@@ -1,7 +1,7 @@
 [
   {
     "id": "ai100-annual-2022-2023-048-instructgpt-quiz-1",
-    "storylineId": "bench-council-ai100-2022-2023",
+    "storylineId": "bench-council-ai100",
     "question": {
       "en": "What supplies the reward signal in InstructGPT?",
       "zh": "InstructGPT 的奖励信号来自什么？"

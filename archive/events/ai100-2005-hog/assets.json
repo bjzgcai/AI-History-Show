@@ -55,6 +55,9 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "navneet-dalal"
+    ]
   }
 ]

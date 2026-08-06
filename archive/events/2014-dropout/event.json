@@ -33,45 +33,29 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Nitish Srivastava",
-        "zh": "尼蒂什·斯里瓦斯塔瓦"
-      },
+      "figureId": "nitish-srivastava",
       "role": {
         "en": "First author of the JMLR dropout paper",
         "zh": "《机器学习研究杂志》 Dropout 论文第一作者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-2014-dropout-nitish-srivastava"
     },
     {
-      "name": {
-        "en": "Ruslan Salakhutdinov",
-        "zh": "鲁斯兰·萨拉赫特迪诺夫"
-      },
+      "figureId": "ruslan-salakhutdinov",
       "role": {
         "en": "Dropout co-author",
         "zh": "Dropout 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     },
     {
-      "name": {
-        "en": "Geoffrey Hinton",
-        "zh": "杰弗里·辛顿"
-      },
+      "figureId": "geoffrey-hinton",
       "role": {
         "en": "Co-author and deep learning pioneer",
         "zh": "共同作者，深度学习先驱"
       },
-      "avatar": "resources/images/figures/geoffrey-hinton.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
+      "primary": true
     }
   ],
   "organizations": [],

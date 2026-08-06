@@ -29,7 +29,10 @@
     "usage": [
       "variant:humanistic-cycle"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "norbert-wiener"
+    ]
   },
   {
     "id": "asset-1950-wiener-human-use-feedback-warning",

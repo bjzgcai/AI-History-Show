@@ -123,17 +123,12 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Jacob Devlin",
-        "zh": "雅各布·德夫林"
-      },
+      "figureId": "jacob-devlin",
       "role": {
         "en": "BERT lead author",
         "zh": "BERT 主要作者"
       },
-      "avatar": "resources/images/figures/jacob-devlin.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
+      "avatarAssetId": "asset-jacob-devlin"
     }
   ],
   "photos": [],

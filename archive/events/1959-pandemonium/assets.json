@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "oliver-selfridge"
+    ]
   },
   {
     "id": "asset-1959-pandemonium-feature-votes",

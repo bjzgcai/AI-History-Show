@@ -125,32 +125,20 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "John Jumper",
-        "zh": "约翰·江珀"
-      },
+      "figureId": "john-jumper",
       "role": {
         "en": "AlphaFold2 lead researcher",
         "zh": "AlphaFold2 主要研究者"
       },
-      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2020-alphafold-people-01"
     },
     {
-      "name": {
-        "en": "Demis Hassabis",
-        "zh": "德米斯·哈萨比斯"
-      },
+      "figureId": "demis-hassabis",
       "role": {
         "en": "DeepMind co-founder and AlphaFold leader",
         "zh": "DeepMind 联合创始人与 AlphaFold 负责人"
       },
-      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2020-alphafold-people-02"
     }
   ],
   "photos": [],

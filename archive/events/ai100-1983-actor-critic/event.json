@@ -33,32 +33,21 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Andrew Barto",
-        "zh": "安德鲁·巴托"
-      },
+      "figureId": "andrew-barto",
       "role": {
         "en": "Actor-Critic co-author",
         "zh": "Actor-Critic 共同作者"
       },
-      "avatar": "resources/images/external/ai100-1983-actor-critic/andrew-barto-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-ai100-1983-actor-critic-barto-andrew-square"
     },
     {
-      "name": {
-        "en": "Charles Anderson",
-        "zh": "查尔斯·安德森"
-      },
+      "figureId": "charles-anderson",
       "role": {
         "en": "Actor-Critic co-author",
         "zh": "Actor-Critic 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

@@ -33,32 +33,21 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Wei Liu",
-        "zh": "刘威"
-      },
+      "figureId": "wei-liu",
       "role": {
         "en": "SSD lead author",
         "zh": "SSD 主要作者"
       },
-      "avatar": "resources/images/external/ai100-2016-ssd/wei-liu-portrait.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-2016-ssd-portrait"
     },
     {
-      "name": {
-        "en": "Alexander Berg",
-        "zh": "亚历山大·伯格"
-      },
+      "figureId": "alexander-berg",
       "role": {
         "en": "SSD co-author",
         "zh": "SSD 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

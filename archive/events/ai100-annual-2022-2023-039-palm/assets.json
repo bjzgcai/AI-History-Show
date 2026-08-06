@@ -36,9 +36,12 @@
       "zh": "已核验的主要人物肖像"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
-    "editable": false
+    "editable": false,
+    "figureIds": [
+      "jeff-dean"
+    ]
   },
   {
     "id": "asset-annual-039-palm-record",
@@ -78,7 +81,7 @@
       "zh": "互动式成就解释图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": true
   },
@@ -114,7 +117,7 @@
       "zh": "主论文评测结果资料"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   }

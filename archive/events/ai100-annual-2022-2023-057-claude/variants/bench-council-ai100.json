@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-057-claude",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "Claude",
     "zh": "Claude"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Constitutional AI assistant",
-    "zh": "AI100（2022-2023）· 宪法式 AI 助手"
   },
   "displayDescription": {
     "en": "<p>Anthropic introduced Claude in March 2023 as an AI assistant available through chat and API interfaces. The launch emphasized conversation, summarization, search, writing, coding and question answering while positioning helpfulness, honesty and harmlessness as central product goals.</p><p>Claude's safety lineage is closely associated with Constitutional AI, which uses a written set of principles and AI-generated feedback to reduce reliance on direct human labels for every harmful-output example. This linked the product release to a concrete alignment method rather than presenting safety only as a general aspiration.</p>",
@@ -127,16 +123,11 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Claude",
-        "zh": "Claude"
-      },
+      "figureId": "claude-product",
       "role": {
         "en": "Anthropic AI assistant",
         "zh": "Anthropic AI 助手"
-      },
-      "figureType": "product",
-      "avatar": "resources/images/benchcouncil-ai100-annual/claude-logo.png"
+      }
     }
   ],
   "quote": {

@@ -38,8 +38,8 @@
         "zh": "CLIP 主要作者",
         "en": "Lead author of CLIP"
       },
-      "avatar": "resources/images/figures/alec-radford.png",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-alec-radford"
     }
   ],
   "organizations": [],

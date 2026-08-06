@@ -81,7 +81,10 @@
       "zh": "维基共享资源",
       "en": "Wikimedia Commons"
     },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+    "figureIds": [
+      "andrew-ng"
+    ]
   },
   {
     "id": "asset-2000-spectral-clustering-6n-graf",

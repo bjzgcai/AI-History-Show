@@ -3,7 +3,7 @@
 
 const { milestones } = require('../milestones-data.js');
 
-const STORYLINE_IDS = new Set(['bench-council-ai100', 'bench-council-ai100-2022-2023']);
+const STORYLINE_IDS = new Set(['bench-council-ai100']);
 const MIN_OVERLAP_RATIO = 0.35;
 const MIN_OVERLAP_TOKENS = 2;
 

@@ -75,6 +75,26 @@
     }
   },
   {
+    "id": "source-annual-101-segment-anything-portrait-alexander-kirillov",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Alexander Kirillov portrait source",
+      "zh": "亚历山大·基里洛夫人物图片来源"
+    },
+    "url": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The portrait is hosted on Alexander Kirillov's personal website. The source does not state redistribution rights; retain attribution and recheck before redistribution outside this project.",
+      "zh": "该肖像托管于亚历山大·基里洛夫个人网站。来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+    }
+  },
+  {
     "id": "source-annual-101-segment-anything-portrait-ross-girshick",
     "type": "image-source",
     "label": {
@@ -132,6 +152,26 @@
     "notes": {
       "en": "Official repository with inference code, checkpoints and SA-1B links.",
       "zh": "官方仓库，提供推理代码、检查点与 SA-1B 链接。"
+    }
+  },
+  {
+    "id": "source-sam-project-page",
+    "type": "project-page",
+    "label": {
+      "en": "Project page",
+      "zh": "项目页面"
+    },
+    "title": {
+      "en": "Segment Anything project page",
+      "zh": "Segment Anything 项目页面"
+    },
+    "url": "https://segment-anything.com/",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official project page with links to the paper, model, dataset and interactive demo.",
+      "zh": "官方项目页面，提供论文、模型、数据集与交互演示链接。"
     }
   },
   {

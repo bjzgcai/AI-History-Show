@@ -5,7 +5,7 @@ const { milestones } = require('../milestones-data.js');
 const { countTextSentences, getLocalizedText } = require('../shared/utils.js');
 
 const REQUIRED_LABELS = new Set(['Historical Background', 'Core Idea', 'Long-Term Legacy']);
-const STORYLINE_IDS = new Set(['bench-council-ai100', 'bench-council-ai100-2022-2023']);
+const STORYLINE_IDS = new Set(['bench-council-ai100']);
 const STRICT = process.argv.includes('--strict');
 
 const failures = [];

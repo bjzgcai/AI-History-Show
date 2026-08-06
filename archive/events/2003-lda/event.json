@@ -33,32 +33,21 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "David Blei",
-        "zh": "戴维·布莱"
-      },
+      "figureId": "david-blei",
       "role": {
         "en": "First author of LDA",
         "zh": "LDA 第一作者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-2003-lda-david-blei"
     },
     {
-      "name": {
-        "en": "Michael I. Jordan",
-        "zh": "迈克尔·I·乔丹"
-      },
+      "figureId": "michael-i-jordan",
       "role": {
         "en": "Co-author and probabilistic ML researcher",
         "zh": "共同作者，概率机器学习研究者"
       },
-      "avatar": "resources/images/1986-rnn/people/1986-rnn_people_01.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
-const STORYLINE_ID = 'bench-council-ai100-2022-2023';
+const STORYLINE_ID = 'bench-council-ai100';
 const STORYLINE_PATH = path.join(ROOT, 'archive', 'storylines', `${STORYLINE_ID}.json`);
 const EVENTS_ROOT = path.join(ROOT, 'archive', 'events');
 const EVENT_PREFIX = 'ai100-annual-2022-2023-';
@@ -16,8 +16,10 @@ function readJson(filePath) {
 
 const storyline = readJson(STORYLINE_PATH);
 const failures = [];
-const enabledEvents = storyline.events.filter((event) => event.enabled !== false);
-const selectedByYear = storyline.curation && storyline.curation.years;
+const enabledEvents = storyline.events.filter(
+    (event) => event.enabled !== false && event.eventId.startsWith(EVENT_PREFIX)
+);
+const selectedByYear = storyline.annualHighlights && storyline.annualHighlights.years;
 const expectedIds = selectedByYear ? [...selectedByYear['2022'], ...selectedByYear['2023']] : [];
 const actualIds = enabledEvents.map((event) => event.eventId);
 const archiveEventIds = fs
@@ -26,7 +28,7 @@ const archiveEventIds = fs
     .map((entry) => entry.name)
     .sort();
 
-if (!selectedByYear) failures.push('storyline must define curation.years');
+if (!selectedByYear) failures.push('storyline must define annualHighlights.years');
 if ((selectedByYear && selectedByYear['2022'].length) !== 10) failures.push('2022 selection must contain 10 events');
 if ((selectedByYear && selectedByYear['2023'].length) !== 10) failures.push('2023 selection must contain 10 events');
 if (enabledEvents.length !== 20)
@@ -50,7 +52,7 @@ for (const [index, eventRef] of enabledEvents.entries()) {
     const requiredFiles = ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json'];
 
     if (eventRef.variant !== STORYLINE_ID) failures.push(`${eventRef.eventId}: unexpected variant ${eventRef.variant}`);
-    if (eventRef.order !== (index + 1) * 10) failures.push(`${eventRef.eventId}: unexpected order ${eventRef.order}`);
+    if (eventRef.order !== 1200 + index * 10) failures.push(`${eventRef.eventId}: unexpected order ${eventRef.order}`);
     for (const file of requiredFiles) {
         if (!fs.existsSync(path.join(eventDir, file))) failures.push(`${eventRef.eventId}: missing ${file}`);
     }

@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-1980-neocognitron-dr-kunihikofukushima",
     "type": "image",
-    "path": "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
+    "path": "resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "福岛邦彦肖像",
@@ -55,6 +55,9 @@
       "zh": "C&C 奖官网",
       "en": "C&C Prize website"
     },
-    "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg"
+    "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg",
+    "figureIds": [
+      "kunihiko-fukushima"
+    ]
   }
 ]

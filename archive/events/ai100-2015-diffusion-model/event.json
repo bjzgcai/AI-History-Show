@@ -33,60 +33,37 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Jascha Sohl-Dickstein",
-        "zh": "雅沙·索尔-迪克斯坦"
-      },
+      "figureId": "jascha-sohl-dickstein",
       "role": {
         "en": "Diffusion model lead author",
         "zh": "扩散模型主要作者"
       },
-      "avatar": "resources/images/external/ai100-2015-diffusion-model/jascha-sohl-dickstein-portrait.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-ai100-2015-diffusion-model-jascha-profile"
     },
     {
-      "name": {
-        "en": "Surya Ganguli",
-        "zh": "苏里亚·甘古利"
-      },
+      "figureId": "surya-ganguli",
       "role": {
         "en": "Diffusion Model co-author",
         "zh": "Diffusion Model 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     },
     {
-      "name": {
-        "en": "Jonathan Ho",
-        "zh": "乔纳森·何"
-      },
+      "figureId": "jonathan-ho",
       "role": {
         "en": "Diffusion Model co-author",
         "zh": "Diffusion Model 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     },
     {
-      "name": {
-        "en": "Pieter Abbee",
-        "zh": "彼得·阿比尔"
-      },
+      "figureId": "pieter-abbee",
       "role": {
         "en": "Diffusion Model co-author",
         "zh": "Diffusion Model 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

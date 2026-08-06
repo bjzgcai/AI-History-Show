@@ -121,18 +121,12 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Yann LeCun",
-        "zh": "杨立昆"
-      },
+      "figureId": "yann-lecun",
       "role": {
         "en": "LeNet lead researcher",
         "zh": "LeNet 主要研究者"
       },
-      "avatar": "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
-      "avatarStyle": "transform: scale(2.28); transform-origin: 52% 43%;",
-      "figureType": "person",
-      "organizationIds": []
+      "useDefaultAvatar": true
     }
   ],
   "photos": [],

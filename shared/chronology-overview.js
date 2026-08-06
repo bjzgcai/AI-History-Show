@@ -3,10 +3,9 @@
 
     const DEFAULT_STORYLINE_STYLES = {
         'bench-council-ai100': { color: '#ff8833', order: 1 },
-        'bench-council-ai100-2022-2023': { color: '#e6b84a', order: 2 },
-        'gaming-ai': { color: '#33b0ff', order: 3 },
-        'humanistic-cycle': { color: '#44dd88', order: 4 },
-        'deep-learning': { color: '#b088ff', order: 5 }
+        'gaming-ai': { color: '#33b0ff', order: 2 },
+        'humanistic-cycle': { color: '#44dd88', order: 3 },
+        'deep-learning': { color: '#b088ff', order: 4 }
     };
     const PORTRAIT_HINT_PATTERN =
         /\bportrait\b|\/people\/|(?:^|[_/-])portrait(?:[._/-]|$)|人物(?:肖像|照片|图|资料)?|肖像/i;

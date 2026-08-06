@@ -37,59 +37,37 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Martin Davis",
-        "zh": "马丁·戴维斯"
-      },
+      "figureId": "martin-davis",
       "role": {
         "en": "DP/DPLL co-developer",
         "zh": "共同提出 Davis-Putnam 与 DPLL 过程"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     },
     {
-      "name": {
-        "en": "Hilary Putnam",
-        "zh": "希拉里·普特南"
-      },
+      "figureId": "hilary-putnam",
       "role": {
         "en": "1960 DP paper co-author",
         "zh": "共同撰写 1960 年 Davis-Putnam 过程论文"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1960-davis-putnam-dpll-hilary-putnam"
     },
     {
-      "name": {
-        "en": "Donald Loveland",
-        "zh": "唐纳德·W·洛夫兰"
-      },
+      "figureId": "donald-loveland",
       "role": {
         "en": "1962 DPLL paper co-author",
         "zh": "共同撰写 1962 年 DPLL 程序论文"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     },
     {
-      "name": {
-        "en": "George Logemann",
-        "zh": "乔治·洛格曼"
-      },
+      "figureId": "george-logemann",
       "role": {
         "en": "1962 DPLL paper co-author",
         "zh": "共同撰写 1962 年 DPLL 程序论文"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      "primary": true
     }
   ],
   "organizations": [],

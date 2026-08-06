@@ -1,73 +1,76 @@
 [
-    {
-        "id": "asset-1992-reinforce-portrait",
-        "type": "image",
-        "path": "resources/images/figures/ronald-williams.jpg",
-        "role": "portrait",
-        "caption": {
-            "en": "Ronald Williams portrait",
-            "zh": "罗纳德·威廉姆斯肖像"
-        },
-        "subcaption": {
-            "en": "REINFORCE author",
-            "zh": "REINFORCE 作者"
-        },
-        "sourceId": "source-1992-reinforce-portrait",
-        "sourceName": {
-            "en": "Northeastern University",
-            "zh": "东北大学"
-        },
-        "sourceUrl": "https://www.khoury.northeastern.edu/people/ronald-williams/",
-        "rights": {
-            "status": "external-reference",
-            "license": {
-                "en": "External reference portrait; redistribution rights should be rechecked with the source institution.",
-                "zh": "外部参考肖像；对外再分发前应向来源机构复核授权。"
-            },
-            "sourceUrl": "https://www.khoury.northeastern.edu/people/ronald-williams/"
-        },
-        "displayUsage": {
-            "en": "Contributor portrait for the Williams's REINFORCE achievement page",
-            "zh": "用于Williams's REINFORCE成就页面的人物肖像"
-        },
-        "usage": [
-            "variant:bench-council-ai100"
-        ],
-        "editable": true
+  {
+    "id": "asset-1992-reinforce-portrait",
+    "type": "image",
+    "path": "resources/images/figures/ronald-williams.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Ronald Williams portrait",
+      "zh": "罗纳德·威廉姆斯肖像"
     },
-    {
-        "id": "asset-1992-reinforce-explainer",
-        "type": "svg",
-        "path": "resources/images/bench-council-ai100/explainers/1992-1992-reinforce_process.svg",
-        "role": "architecture-explainer",
-        "caption": {
-            "en": "Williams's REINFORCE process explainer",
-            "zh": "Williams 的 REINFORCE流程解释图"
-        },
-        "subcaption": {
-            "en": "Return-weighted log-policy gradient",
-            "zh": "回报加权的对数策略梯度"
-        },
-        "sourceId": "source-1992-reinforce-primary",
-        "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://doi.org/10.1007/BF00992696",
-        "rights": {
-            "status": "documented-in-legacy",
-            "license": {
-                "en": "Original local SVG redraw; source figures are not copied.",
-                "zh": "本地原创 SVG 重绘；未复制来源图形。"
-            }
-        },
-        "displayUsage": {
-            "en": "Architecture and process explainer",
-            "zh": "架构与流程解释图"
-        },
-        "usage": [
-            "variant:bench-council-ai100"
-        ],
-        "editable": true
-    }
+    "subcaption": {
+      "en": "REINFORCE author",
+      "zh": "REINFORCE 作者"
+    },
+    "sourceId": "source-1992-reinforce-portrait",
+    "sourceName": {
+      "en": "Northeastern University",
+      "zh": "东北大学"
+    },
+    "sourceUrl": "https://www.khoury.northeastern.edu/people/ronald-williams/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "External reference portrait; redistribution rights should be rechecked with the source institution.",
+        "zh": "外部参考肖像；对外再分发前应向来源机构复核授权。"
+      },
+      "sourceUrl": "https://www.khoury.northeastern.edu/people/ronald-williams/"
+    },
+    "displayUsage": {
+      "en": "Contributor portrait for the Williams's REINFORCE achievement page",
+      "zh": "用于Williams's REINFORCE成就页面的人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true,
+    "figureIds": [
+      "ronald-williams"
+    ]
+  },
+  {
+    "id": "asset-1992-reinforce-explainer",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1992-1992-reinforce_process.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "en": "Williams's REINFORCE process explainer",
+      "zh": "Williams 的 REINFORCE流程解释图"
+    },
+    "subcaption": {
+      "en": "Return-weighted log-policy gradient",
+      "zh": "回报加权的对数策略梯度"
+    },
+    "sourceId": "source-1992-reinforce-primary",
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://doi.org/10.1007/BF00992696",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      }
+    },
+    "displayUsage": {
+      "en": "Architecture and process explainer",
+      "zh": "架构与流程解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
 ]

@@ -29,7 +29,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "scott-kirkpatrick"
+    ]
   },
   {
     "id": "asset-1983-simulated-annealing-energy-landscape",

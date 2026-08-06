@@ -55,7 +55,10 @@
       "zh": "Stanford NLP",
       "en": "Stanford NLP"
     },
-    "sourceUrl": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg"
+    "sourceUrl": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg",
+    "figureIds": [
+      "jeffrey-pennington"
+    ]
   },
   {
     "id": "asset-ai100-2014-glove-christopher-manning-commons",
@@ -87,7 +90,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "christopher-manning"
+    ]
   },
   {
     "id": "asset-ai100-2014-glove-christopher-manning-stanford",
@@ -119,7 +125,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "christopher-manning"
+    ]
   },
   {
     "id": "asset-ai100-2014-glove-richard-socher-portrait",
@@ -151,6 +160,9 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "richard-socher"
+    ]
   }
 ]

@@ -61,7 +61,10 @@
     "usage": [
       "variant:humanistic-cycle"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "ye-yonglie"
+    ]
   },
   {
     "id": "asset-1978-xiaolingtong-future-city",

@@ -34,18 +34,12 @@
   "figures": [
     {
       "figureId": "ronald-williams",
-      "name": {
-        "en": "Ronald Williams",
-        "zh": "罗纳德·威廉姆斯"
-      },
       "role": {
         "en": "REINFORCE author",
         "zh": "REINFORCE 作者"
       },
-      "avatar": "resources/images/figures/ronald-williams.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1992-reinforce-portrait"
     }
   ],
   "organizations": [],

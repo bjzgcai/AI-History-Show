@@ -36,9 +36,12 @@
       "zh": "已核验的主要人物肖像"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
-    "editable": false
+    "editable": false,
+    "figureIds": [
+      "jeff-wu"
+    ]
   },
   {
     "id": "asset-annual-048-instructgpt-record",
@@ -80,7 +83,7 @@
       "zh": "互动式成就解释图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": true
   },
@@ -116,14 +119,17 @@
       "zh": "已核验的扩展人物肖像"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false,
     "sourceReliability": "MIT Technology Review publishes the portrait on a named profile and identifies John Schulman as an OpenAI research scientist; the primary paper confirms his InstructGPT authorship.",
     "provenanceNotes": {
       "en": "John Schulman is not part of the nine-name BenchCouncil contributor prefix, so he is appended after those official figures. The primary paper confirms his authorship, while MIT Technology Review independently identifies him as an OpenAI reinforcement-learning researcher.",
       "zh": "约翰·舒尔曼不在 BenchCouncil 官方九人人物前缀中，因此排在这些官方人物之后。主论文确认其作者身份，《麻省理工科技评论》则独立确认其为 OpenAI 强化学习研究者。"
-    }
+    },
+    "figureIds": [
+      "john-schulman"
+    ]
   },
   {
     "id": "asset-annual-048-instructgpt-paper-preference-results",
@@ -157,7 +163,7 @@
       "zh": "原始论文结果图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   }

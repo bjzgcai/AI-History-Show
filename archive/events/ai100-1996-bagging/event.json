@@ -34,18 +34,12 @@
   "figures": [
     {
       "figureId": "leo-breiman",
-      "name": {
-        "en": "Leo Breiman",
-        "zh": "利奥·布雷曼"
-      },
       "role": {
         "en": "Bagging author",
         "zh": "Bagging 作者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1996-bagging-portrait"
     }
   ],
   "organizations": [],

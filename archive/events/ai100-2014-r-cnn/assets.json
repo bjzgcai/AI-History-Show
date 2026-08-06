@@ -2,7 +2,7 @@
   {
     "id": "asset-2014-r-cnn-portrait",
     "type": "image",
-    "path": "resources/images/external/ai100-2014-r-cnn/ross-girshick-portrait.jpg",
+    "path": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
     "role": "portrait",
     "caption": {
       "en": "Ross Girshick portrait",
@@ -33,7 +33,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "ross-girshick"
+    ]
   },
   {
     "id": "asset-2014-r-cnn-explainer",

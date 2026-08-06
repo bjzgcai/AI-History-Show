@@ -121,86 +121,49 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Dzmitry Bahdanau",
-        "zh": "兹米特里·巴赫达瑙"
-      },
+      "figureId": "dzmitry-bahdanau",
       "role": {
         "en": "Lead author of neural attention paper",
         "zh": "神经注意力论文主要作者"
       },
-      "avatar": "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2014-attention-bahdanau-portrait"
     },
     {
-      "name": {
-        "en": "Yoshua Bengio",
-        "zh": "约书亚·本吉奥"
-      },
+      "figureId": "yoshua-bengio",
       "role": {
         "en": "Neural attention paper co-author",
         "zh": "神经注意力论文共同作者"
       },
-      "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2014-attention-people-01"
     },
     {
-      "name": {
-        "en": "Minh-Thang Luong",
-        "zh": "明唐·梁"
-      },
+      "figureId": "minh-thang-luong",
       "role": {
         "en": "Attention-related achievement contributor",
         "zh": "注意力相关成就贡献者"
-      },
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Christopher Manning",
-        "zh": "克里斯托弗·曼宁"
-      },
+      "figureId": "christopher-manning",
       "role": {
         "en": "Attention-related achievement contributor",
         "zh": "注意力相关成就贡献者"
-      },
-      "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Kelvin Xu",
-        "zh": "徐凯文"
-      },
+      "figureId": "kelvin-xu",
       "role": {
         "en": "Attention-related achievement contributor",
         "zh": "注意力相关成就贡献者"
-      },
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Kyunghyun Cho",
-        "zh": "赵京贤"
-      },
+      "figureId": "kyunghyun-cho",
       "role": {
         "en": "Neural attention paper co-author",
         "zh": "神经注意力论文共同作者"
       },
-      "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2014-attention-cho-portrait"
     }
   ],
   "photos": [],

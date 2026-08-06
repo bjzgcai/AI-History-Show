@@ -33,32 +33,21 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Yoav Freund",
-        "zh": "约阿夫·弗罗因德"
-      },
+      "figureId": "yoav-freund",
       "role": {
         "en": "Adaboost lead author",
         "zh": "Adaboost 主要作者"
       },
-      "avatar": "resources/images/external/ai100-1997-adaboost/yoav-freund-portrait.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1997-adaboost-portrait"
     },
     {
-      "name": {
-        "en": "Robert Schapire",
-        "zh": "罗伯特·沙皮尔"
-      },
+      "figureId": "robert-schapire",
       "role": {
         "en": "Adaboost co-author",
         "zh": "Adaboost 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

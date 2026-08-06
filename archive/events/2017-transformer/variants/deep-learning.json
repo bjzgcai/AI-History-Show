@@ -42,30 +42,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Ashish Vaswani",
-        "zh": "阿希什·瓦斯瓦尼"
-      },
+      "figureId": "ashish-vaswani",
       "role": {
         "en": "Transformer lead author",
         "zh": "Transformer 主要作者"
       },
-      "avatar": "resources/images/figures/ashish-vaswani.jpg",
-      "avatarStyle": "transform: scale(2.05); transform-origin: 50% 33%;",
-      "figureType": "person"
+      "avatarAssetId": "asset-transformer-portrait"
     },
     {
-      "name": {
-        "en": "Noam Shazeer",
-        "zh": "诺姆·沙泽尔"
-      },
+      "figureId": "noam-shazeer",
       "role": {
         "en": "Transformer co-author",
         "zh": "Transformer 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      }
     }
   ],
   "photos": [],

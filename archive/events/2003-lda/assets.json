@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "david-blei"
+    ]
   },
   {
     "id": "asset-2003-lda-topic-simplex",

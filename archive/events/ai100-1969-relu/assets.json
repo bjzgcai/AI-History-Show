@@ -55,7 +55,10 @@
       "zh": "C&C 奖官网",
       "en": "C&C Prize website"
     },
-    "sourceUrl": "https://www.candc.or.jp/kensyo/2021/group_a.html"
+    "sourceUrl": "https://www.candc.or.jp/kensyo/2021/group_a.html",
+    "figureIds": [
+      "kunihiko-fukushima"
+    ]
   },
   {
     "id": "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02",
@@ -87,6 +90,9 @@
       "zh": "维基共享资源",
       "en": "Wikimedia Commons"
     },
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+    "figureIds": [
+      "yoshua-bengio"
+    ]
   }
 ]

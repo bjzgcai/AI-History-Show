@@ -1,7 +1,7 @@
 [
   {
     "id": "ai100-annual-2022-2023-002-simmim-quiz-1",
-    "storylineId": "bench-council-ai100-2022-2023",
+    "storylineId": "bench-council-ai100",
     "question": {
       "en": "What does SimMIM's lightweight prediction head reconstruct at masked positions?",
       "zh": "SimMIM 的轻量预测头在被遮挡位置重建什么？"

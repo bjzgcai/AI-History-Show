@@ -33,18 +33,13 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Christopher Strachey",
-        "zh": "克里斯托弗·斯特雷奇"
-      },
+      "figureId": "christopher-strachey",
       "role": {
         "en": "Developer of the early draughts program",
         "zh": "早期跳棋程序开发者"
       },
-      "avatar": "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1951-strachey-draughts-christopher-strachey-portrait"
     }
   ],
   "organizations": [],

@@ -5,6 +5,7 @@ const path = require('node:path');
 
 const { namesMatch, splitContributors } = require('./ai100-contributors');
 const { isAssetSelectionExcluded } = require('./asset-selection-review');
+const { loadFigureRegistry, resolveFigureRelations } = require('./figure-registry');
 const eventMediaSelection = require('../shared/event-media-selection');
 
 const STORYLINE_ID = 'bench-council-ai100';
@@ -24,32 +25,6 @@ function localized(value, locale) {
     if (typeof value === 'string') return value.trim();
     if (!value || typeof value !== 'object') return '';
     return String(value[locale] || value.en || value.zh || '').trim();
-}
-
-function humanizeFigureId(value) {
-    return String(value || '')
-        .split('-')
-        .filter(Boolean)
-        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-        .join(' ');
-}
-
-function figureNameCandidates(figure) {
-    if (!figure || typeof figure !== 'object') return [];
-    return [localized(figure.name, 'en'), localized(figure.name, 'zh'), humanizeFigureId(figure.figureId)]
-        .filter(Boolean)
-        .map((value) => value.toLowerCase());
-}
-
-function normalizedNameTokens(value) {
-    return String(value || '')
-        .normalize('NFKD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .toLowerCase()
-        .replace(/[^a-z0-9\u3400-\u9fff]+/g, ' ')
-        .trim()
-        .split(' ')
-        .filter((token) => token.length > 1);
 }
 
 function mergeFigures(eventFigures, variantFigures) {
@@ -93,7 +68,9 @@ function isGroupPersonAsset(asset) {
         .filter(Boolean)
         .join(' ')
         .toLowerCase();
-    return /team|group|author group|researchers behind|团队|作者团队|研究团队|研究者群体/.test(text);
+    return /team(?: photo)?|author group|research group|researchers behind|团队|作者团队|研究团队|研究者群体/.test(
+        text
+    );
 }
 
 function isGenericOrganizationAsset(asset) {
@@ -112,26 +89,14 @@ function isGenericOrganizationAsset(asset) {
 
 function assetMatchesFigure(asset, figure) {
     if (!asset || !figure) return false;
+    const figureId = figure.id || figure.figureId || '';
+    if (Array.isArray(asset.figureIds)) return Boolean(figureId && asset.figureIds.includes(figureId));
     if (figure.avatar && figure.avatar === asset.path) return true;
-    const text = [
-        asset.path,
-        localized(asset.caption, 'en'),
-        localized(asset.caption, 'zh'),
-        localized(asset.subcaption, 'en'),
-        localized(asset.subcaption, 'zh')
-    ]
-        .filter(Boolean)
-        .join(' ')
-        .toLowerCase();
-    const normalizedAssetTokens = new Set(normalizedNameTokens(text));
-    return figureNameCandidates(figure).some((name) => {
-        if (text.includes(name)) return true;
-        const tokens = normalizedNameTokens(name);
-        return tokens.length > 1 && tokens.every((token) => normalizedAssetTokens.has(token));
-    });
+    return false;
 }
 
 function isPrimaryFigure(figure, index) {
+    if (figure && figure.primary !== undefined) return figure.primary === true;
     if (index === 0) return true;
     const role = [localized(figure && figure.role, 'en'), localized(figure && figure.role, 'zh')]
         .join(' ')
@@ -193,20 +158,20 @@ function isSupportingFigurePersonAsset(asset, figures) {
     );
 }
 
-function isPersonDisplayAsset(event, variant, asset) {
+function isPersonDisplayAsset(event, variant, asset, resolvedFigures) {
     if (!asset || isGenericOrganizationAsset(asset)) return false;
-    const figures = mergeFigures(event && event.figures, variant && variant.figures);
+    const figures = resolvedFigures || mergeFigures(event && event.figures, variant && variant.figures);
     return isPersonAsset(asset) || isFigurePersonAsset(asset, figures);
 }
 
-function orderVariantAssetIds(event, variant, assets) {
+function orderVariantAssetIds(event, variant, assets, resolvedFigures) {
     const assetsById = new Map((Array.isArray(assets) ? assets : []).map((asset) => [asset.id, asset]));
     const entries = (Array.isArray(variant && variant.assetIds) ? variant.assetIds : []).map((assetId, index) => ({
         assetId,
         asset: assetsById.get(assetId) || null,
         index
     }));
-    const figures = mergeFigures(event && event.figures, variant && variant.figures);
+    const figures = resolvedFigures || mergeFigures(event && event.figures, variant && variant.figures);
     const primaryAsset = findPrimaryPersonAsset(entries.map((entry) => entry.asset).filter(Boolean), figures);
 
     const groupFor = (entry) => {
@@ -247,16 +212,23 @@ function loadCanonicalCatalog() {
     return new Map((catalog.items || []).map((item) => [item.eventId, splitContributors(item.contributors)]));
 }
 
-function auditVariant({ eventId, event, variant, assets, catalog }) {
+function auditVariant({ eventId, event, variant, assets, catalog, registry }) {
     const assetsById = new Map((Array.isArray(assets) ? assets : []).map((asset) => [asset.id, asset]));
-    const figures = mergeFigures(event.figures, variant.figures);
+    const figures = registry
+        ? resolveFigureRelations({
+              eventFigures: event.figures,
+              variantFigures: variant.figures,
+              assets,
+              registry
+          })
+        : mergeFigures(event.figures, variant.figures);
     const issues = [];
     const first = firstImageAsset(variant, assetsById);
     const ai100Contributors = variant.storylineId === STORYLINE_ID ? catalog.get(eventId) || [] : [];
     const excludedAssetIds = (variant.assetIds || []).filter((assetId) =>
         isAssetSelectionExcluded(assetsById.get(assetId))
     );
-    const orderedAssets = orderVariantAssetIds(event, variant, assets);
+    const orderedAssets = orderVariantAssetIds(event, variant, assets, figures);
     const overviewAsset = variant.overviewImageAssetId ? assetsById.get(variant.overviewImageAssetId) || null : null;
 
     if (excludedAssetIds.length > 0) {
@@ -273,7 +245,7 @@ function auditVariant({ eventId, event, variant, assets, catalog }) {
         orderedAssets.primaryAssetId &&
         variant.overviewImageAssetId &&
         variant.overviewImageAssetId !== orderedAssets.primaryAssetId &&
-        isPersonDisplayAsset(event, variant, overviewAsset)
+        isPersonDisplayAsset(event, variant, overviewAsset, figures)
     ) {
         issues.push(`overviewImageAssetId must use the primary person asset: ${orderedAssets.primaryAssetId}`);
     }
@@ -334,6 +306,7 @@ function auditVariant({ eventId, event, variant, assets, catalog }) {
 function auditArchive(root) {
     const eventsDir = path.join(root, 'archive', 'events');
     const catalog = loadCanonicalCatalog();
+    const registry = loadFigureRegistry(root);
     const results = [];
     if (!fs.existsSync(eventsDir)) return results;
     for (const eventId of fs.readdirSync(eventsDir).sort()) {
@@ -351,7 +324,7 @@ function auditArchive(root) {
             const variant = readJson(path.join(variantsDir, fileName));
             results.push({
                 file: path.relative(root, path.join(variantsDir, fileName)).replace(/\\/g, '/'),
-                ...auditVariant({ eventId, event, variant, assets, catalog })
+                ...auditVariant({ eventId, event, variant, assets, catalog, registry })
             });
         }
     }

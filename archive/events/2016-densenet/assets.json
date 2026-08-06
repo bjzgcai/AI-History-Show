@@ -23,7 +23,12 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "gao-huang",
+      "kilian-weinberger",
+      "zhuang-liu"
+    ]
   },
   {
     "id": "asset-2016-densenet-architecture-01",
@@ -75,6 +80,9 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "gao-huang"
+    ]
   }
 ]

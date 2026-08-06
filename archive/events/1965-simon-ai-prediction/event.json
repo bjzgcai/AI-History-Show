@@ -34,18 +34,12 @@
   "figures": [
     {
       "figureId": "herbert-a-simon",
-      "name": {
-        "en": "Herbert A. Simon",
-        "zh": "赫伯特·A·西蒙"
-      },
       "role": {
         "en": "AI pioneer and author of The Shape of Automation",
         "zh": "AI 先驱，《人、管理与自动化的形态》作者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1965-simon-ai-prediction-herbert-simon"
     }
   ],
   "organizations": [],

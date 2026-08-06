@@ -38,8 +38,8 @@
         "zh": "AI Feynman作者",
         "en": "AI Feynman author"
       },
-      "avatar": "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-2019-ai-feynman-people-01"
     }
   ],
   "organizations": [],

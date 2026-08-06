@@ -45,43 +45,27 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "David Silver",
-        "zh": "大卫·席尔瓦"
-      },
+      "figureId": "david-silver",
       "role": {
         "en": "AlphaGo lead researcher",
         "zh": "AlphaGo 主要研究者"
       },
-      "avatar": "resources/images/figures/authoritative/david-silver.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
+      "avatarAssetId": "asset-david-silver-commons-portrait"
     },
     {
-      "name": {
-        "en": "Demis Hassabis",
-        "zh": "戴密斯·哈萨比斯"
-      },
+      "figureId": "demis-hassabis",
       "role": {
         "en": "DeepMind co-founder",
         "zh": "DeepMind 联合创始人"
-      },
-      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
-      "avatarStyle": "",
-      "figureType": "person"
+      }
     },
     {
-      "name": {
-        "en": "Lee Sedol",
-        "zh": "李世石"
-      },
+      "figureId": "lee-sedol",
       "role": {
         "en": "Go world champion in the landmark 2016 match",
         "zh": "2016 年里程碑对局中的围棋世界冠军"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
+      "avatarAssetId": "asset-alphago-lee-sedol"
     }
   ],
   "photos": [],

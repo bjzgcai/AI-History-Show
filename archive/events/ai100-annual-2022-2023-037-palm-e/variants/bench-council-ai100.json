@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-037-palm-e",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "PaLM-E",
     "zh": "PaLM-E"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Embodied multimodal reasoning",
-    "zh": "AI100（2022-2023）· 具身多模态推理"
   },
   "displayDescription": {
     "en": "<p>PaLM-E extends a pretrained language model with continuous observations from vision and robotic sensors. Encoded images, robot states and other measurements are inserted into the same sequence as text, allowing one model to answer visual questions, describe scenes and support embodied planning.</p><p>The study shows positive transfer between robotics, vision-language and language tasks as the model scales, rather than treating each robot task as an isolated policy.</p>",
@@ -126,28 +122,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Danny Driess",
-        "zh": "丹尼·德里斯"
-      },
+      "figureId": "danny-driess",
       "role": {
         "en": "First author of the PaLM-E paper",
         "zh": "PaLM-E 论文第一作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Pete Florence",
-        "zh": "皮特·弗洛伦斯"
-      },
+      "figureId": "pete-florence",
       "role": {
         "en": "Co-author of the PaLM-E paper",
         "zh": "PaLM-E 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": "resources/images/external/ai100-2023-palm-e/pete-florence.jpg"
+      "avatarAssetId": "asset-annual-037-palm-e-portrait-pete-florence"
     }
   ],
   "quote": {

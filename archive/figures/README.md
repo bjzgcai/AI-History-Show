@@ -1,12 +1,42 @@
-# Archive Figures
+# Archive Figure Registry
 
-This directory is reserved for future shared figure records and aliases.
+`figures.json` is the global identity authority for people, teams, organizations, products, and systems used by Archive events.
 
-Planned files:
+## Identity and relationship split
 
-```text
-archive/figures/figures.json
-archive/figures/aliases.json
+- `archive/figures/figures.json` stores stable identity facts: bilingual standard names, aliases, type, organization relationships, profile sources, optional default avatar metadata, disambiguation, and review state.
+- `archive/events/{eventId}/event.json` stores canonical event relationships using `figureId`, bilingual `role`, `primary`, and optional event-specific avatar controls.
+- `archive/events/{eventId}/variants/*.json` stores storyline-specific ordering and role/avatar overrides using the same stable `figureId` values.
+- `archive/events/{eventId}/assets.json` uses `figureIds` to state exactly which identities appear in a portrait, team photograph, or other person-bearing media.
+
+Do not copy `name`, `avatar`, `figureType`, or `organizationIds` into event or variant figure relationships. The compiler resolves those fields from the registry.
+
+## Avatar precedence
+
+For a resolved event or variant figure, avatar selection follows this order:
+
+1. A variant `avatarAssetId`.
+2. An event `avatarAssetId`.
+3. The registry `defaultAvatar`.
+
+Set `useDefaultAvatar: true` on a relationship when a storyline intentionally bypasses an event-specific avatar. Every `avatarAssetId` must reference an asset whose `figureIds` contains the same `figureId`. Different person identities may not share one registry default-avatar path.
+
+## Migration workflow
+
+Use the report mode before changing Archive data:
+
+```bash
+npm run report:figure-migration
+npm run migrate:figure-references
 ```
 
-Current figure facts live in each event's `event.json`; presentation overrides and avatar paths may live in storyline variants. `npm run audit:figures` checks the Archive records directly. The retired Legacy avatar registry is available only through Git history.
+The migration is rerunnable. It preserves registry-only identities that are not event contributors, such as a historical opponent or another person depicted only in an archived photograph.
+
+After changing identities, relationships, or person-bearing assets, run:
+
+```bash
+npm run validate:archive
+npm run audit:event-figure-rules
+npm run generate
+npm test
+```

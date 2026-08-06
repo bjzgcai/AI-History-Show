@@ -38,8 +38,8 @@
         "zh": "《感知器》作者",
         "en": "Author of Perceptrons"
       },
-      "avatar": "resources/images/figures/historical/marvin-minsky-1968.png",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1969-ai-winter-figure-avatar-marvin-minsky"
     }
   ],
   "organizations": [],

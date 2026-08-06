@@ -33,7 +33,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "ross-girshick"
+    ]
   },
   {
     "id": "asset-2015-fast-r-cnn-explainer",

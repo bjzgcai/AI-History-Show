@@ -78,17 +78,12 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Max Tegmark",
-        "zh": "马克斯·泰格马克"
-      },
+      "figureId": "max-tegmark",
       "role": {
         "en": "AI Feynman author",
         "zh": "AI Feynman作者"
       },
-      "avatar": "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
-      "avatarStyle": "",
-      "figureType": "person"
+      "avatarAssetId": "asset-2019-ai-feynman-people-01"
     }
   ],
   "photos": [],

@@ -81,56 +81,38 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "John McCarthy",
-        "zh": "约翰·麦卡锡"
-      },
+      "figureId": "john-mccarthy",
       "role": {
         "en": "Coined the term \"AI\"",
         "zh": "提出\"AI\"术语"
       },
-      "avatar": "resources/images/figures/historical/john-mccarthy-1956-v2.png",
-      "avatarStyle": "transform: scale(1.08); transform-origin: 50% 45%;",
-      "figureType": "person"
+      "avatarAssetId": "asset-1956-dartmouth-figure-avatar-john-mccarthy",
+      "avatarStyle": "transform: scale(1.08); transform-origin: 50% 45%;"
     },
     {
-      "name": {
-        "en": "Marvin Minsky",
-        "zh": "马文·明斯基"
-      },
+      "figureId": "marvin-minsky",
       "role": {
         "en": "Cognitive scientist",
         "zh": "认知科学家"
       },
-      "avatar": "resources/images/figures/historical/marvin-minsky-1956-v2.png",
-      "avatarStyle": "transform: scale(1.06); transform-origin: 50% 46%;",
-      "figureType": "person"
+      "avatarAssetId": "asset-1956-dartmouth-figure-avatar-marvin-minsky",
+      "avatarStyle": "transform: scale(1.06); transform-origin: 50% 46%;"
     },
     {
-      "name": {
-        "en": "Claude Shannon",
-        "zh": "克劳德·香农"
-      },
+      "figureId": "claude-shannon",
       "role": {
         "en": "Founder of information theory",
         "zh": "信息论创始人"
       },
-      "avatar": "resources/images/figures/historical/claude-shannon-1956-v2.png",
-      "avatarStyle": "transform: scale(1.06); transform-origin: 50% 45%;",
-      "figureType": "person"
+      "avatarStyle": "transform: scale(1.06); transform-origin: 50% 45%;"
     },
     {
-      "name": {
-        "en": "Nathaniel Rochester",
-        "zh": "纳撒尼尔·罗切斯特"
-      },
+      "figureId": "nathaniel-rochester",
       "role": {
         "en": "IBM architect",
         "zh": "IBM 架构师"
       },
-      "avatar": "resources/images/figures/historical/nathaniel-rochester-1956-v2.png",
-      "avatarStyle": "transform: scale(1.06); transform-origin: 50% 45%;",
-      "figureType": "person"
+      "avatarStyle": "transform: scale(1.06); transform-origin: 50% 45%;"
     }
   ],
   "photos": [],

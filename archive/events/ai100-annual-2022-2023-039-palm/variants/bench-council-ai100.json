@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-039-palm",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "PaLM",
     "zh": "PaLM"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Pathways-scale language modeling",
-    "zh": "AI100（2022-2023）· Pathways 规模语言建模"
   },
   "displayDescription": {
     "en": "<p>PaLM tested whether a single dense language model could be trained efficiently at 540 billion parameters using Google's Pathways system. The work used 6,144 TPU v4 chips and a 780-billion-token multilingual corpus, pairing systems engineering with a broad evaluation program.</p><p>As scale increased, PaLM improved few-shot language understanding, generation, reasoning and code tasks, while also showing discontinuous gains on some capabilities. The project became an important reference point for both large-model infrastructure and discussions of emergent behavior.</p>",
@@ -126,100 +122,61 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Aakanksha Chowdhery",
-        "zh": "阿坎莎·乔杜里"
-      },
+      "figureId": "aakanksha-chowdhery",
       "role": {
         "en": "First author of the PaLM paper",
         "zh": "PaLM 论文第一作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Sharan Narang",
-        "zh": "沙兰·纳朗"
-      },
+      "figureId": "sharan-narang",
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      }
+    },
+    {
+      "figureId": "jacob-devlin",
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      }
+    },
+    {
+      "figureId": "kathy-meier-hellstern",
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      }
+    },
+    {
+      "figureId": "douglas-eck",
+      "role": {
+        "en": "Co-author of the PaLM paper",
+        "zh": "PaLM 论文共同作者"
+      }
+    },
+    {
+      "figureId": "jeff-dean",
       "role": {
         "en": "Co-author of the PaLM paper",
         "zh": "PaLM 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": ""
+      "avatarAssetId": "asset-annual-039-palm-portrait-jeff-dean"
     },
     {
-      "name": {
-        "en": "Jacob Devlin",
-        "zh": "雅各布·德夫林"
-      },
+      "figureId": "slav-petrov",
       "role": {
         "en": "Co-author of the PaLM paper",
         "zh": "PaLM 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Kathy Meier-Hellstern",
-        "zh": "凯西·迈尔-赫尔斯特恩"
-      },
+      "figureId": "noah-fiedel",
       "role": {
         "en": "Co-author of the PaLM paper",
         "zh": "PaLM 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Douglas Eck",
-        "zh": "道格拉斯·埃克"
-      },
-      "role": {
-        "en": "Co-author of the PaLM paper",
-        "zh": "PaLM 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Jeff Dean",
-        "zh": "杰夫·迪恩"
-      },
-      "role": {
-        "en": "Co-author of the PaLM paper",
-        "zh": "PaLM 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg"
-    },
-    {
-      "name": {
-        "en": "Slav Petrov",
-        "zh": "斯拉夫·彼得罗夫"
-      },
-      "role": {
-        "en": "Co-author of the PaLM paper",
-        "zh": "PaLM 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Noah Fiedel",
-        "zh": "诺亚·菲德尔"
-      },
-      "role": {
-        "en": "Co-author of the PaLM paper",
-        "zh": "PaLM 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     }
   ],
   "quote": {

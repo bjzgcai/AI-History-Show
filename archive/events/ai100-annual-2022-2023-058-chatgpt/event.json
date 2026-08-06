@@ -38,17 +38,11 @@
   "figures": [
     {
       "figureId": "chatgpt-product",
-      "name": {
-        "en": "ChatGPT",
-        "zh": "ChatGPT"
-      },
       "role": {
         "en": "OpenAI conversational AI product",
         "zh": "OpenAI 对话式 AI 产品"
       },
-      "figureType": "product",
-      "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

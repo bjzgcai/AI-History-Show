@@ -29,7 +29,10 @@
     "usage": [
       "variant:humanistic-cycle"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "herbert-a-simon"
+    ]
   },
   {
     "id": "asset-1965-simon-ai-prediction-hype-curve",

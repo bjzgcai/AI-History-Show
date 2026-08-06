@@ -6,14 +6,8 @@ const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const STORYLINE_PATH = path.join(ROOT, 'archive', 'storylines', 'bench-council-ai100.json');
-const ANNUAL_STORYLINE_PATH = path.join(ROOT, 'archive', 'storylines', 'bench-council-ai100-2022-2023.json');
 const CATALOG_PATH = path.join(ROOT, 'research', 'benchcouncil-ai100', 'canonical-root-table-2026-07-30.json');
-const EXCLUDED_EVENT_IDS = [
-    'ai100-2021-clip',
-    'ai100-2021-dalle',
-    'ai100-2022-stable-diffusion',
-    'ai100-2023-segment-anything'
-];
+const EXCLUDED_EVENT_IDS = ['ai100-2021-clip', 'ai100-2021-dalle', 'ai100-2022-stable-diffusion'];
 
 function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -26,9 +20,9 @@ function diff(left, right) {
 
 const catalog = readJson(CATALOG_PATH);
 const storyline = readJson(STORYLINE_PATH);
-const annualStoryline = readJson(ANNUAL_STORYLINE_PATH);
 const canonicalEventIds = catalog.items.map((item) => item.eventId);
-const highlightEventIds = annualStoryline.events.filter((item) => item.enabled !== false).map((item) => item.eventId);
+const selectedByYear = storyline.annualHighlights && storyline.annualHighlights.years;
+const highlightEventIds = selectedByYear ? [...selectedByYear['2022'], ...selectedByYear['2023']] : [];
 const expected = [...canonicalEventIds, ...highlightEventIds];
 const actual = storyline.events.filter((item) => item.enabled !== false).map((item) => item.eventId);
 const missing = diff(expected, actual);
@@ -50,6 +44,7 @@ const failures = [];
 if (catalog.uniqueWorkCount !== 119 || canonicalEventIds.length !== 119) {
     failures.push(`catalog count must be 119; found ${catalog.uniqueWorkCount}/${canonicalEventIds.length}`);
 }
+if (!selectedByYear) failures.push('storyline must define annualHighlights.years');
 if (highlightEventIds.length !== 20) failures.push(`highlight count must be 20; found ${highlightEventIds.length}`);
 if (new Set(expected).size !== expected.length) failures.push('canonical and highlight event IDs must not overlap');
 if (actual.length !== 139) failures.push(`storyline count must be 139; found ${actual.length}`);

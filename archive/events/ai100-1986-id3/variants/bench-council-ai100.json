@@ -114,18 +114,12 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Ross Quinlan",
-        "zh": "罗斯·昆兰"
-      },
+      "figureId": "ross-quinlan",
       "role": {
         "en": "ID3 lead author",
         "zh": "ID3 主要作者"
       },
-      "avatar": "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-1986-id3-portrait"
     }
   ],
   "photos": [],

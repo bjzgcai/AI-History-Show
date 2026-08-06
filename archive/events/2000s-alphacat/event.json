@@ -38,16 +38,14 @@
         "zh": "中国象棋比较训练论文共同作者",
         "en": "Coauthor of the xiangqi comparison-training paper"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "icga-xiangqi-programs",
-      "figureType": "system",
       "role": {
         "zh": "1989 至 2013 年 ICGA 中国象棋参赛程序谱系",
         "en": "ICGA Chinese Chess program lineage, 1989-2013"
-      },
-      "organizationIds": []
+      }
     }
   ],
   "organizations": [],

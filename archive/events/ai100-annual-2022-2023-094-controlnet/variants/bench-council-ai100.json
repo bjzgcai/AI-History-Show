@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-094-controlnet",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "ControlNet",
     "zh": "ControlNet"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Controllable diffusion generation",
-    "zh": "AI100（2022-2023）· 可控扩散生成"
   },
   "displayDescription": {
     "en": "<p>ControlNet adds spatial conditioning to a pretrained text-to-image diffusion model without discarding the original model’s learned capability. A trainable copy of the encoder is connected to a locked backbone through zero-initialized convolution layers, allowing edge maps, depth, pose, segmentation and other controls to guide generation.</p><p>The zero-convolution design starts with no disturbance to the pretrained network and gradually learns how much control information to inject.</p>",
@@ -130,28 +126,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Lvmin Zhang",
-        "zh": "张吕敏"
-      },
+      "figureId": "lvmin-zhang",
       "role": {
         "en": "First author of the ControlNet paper",
         "zh": "ControlNet 论文第一作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Maneesh Agrawala",
-        "zh": "马尼什·阿格拉瓦拉"
-      },
+      "figureId": "maneesh-agrawala",
       "role": {
         "en": "Co-author of the ControlNet paper",
         "zh": "ControlNet 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": "resources/images/external/ai100-2023-controlnet/maneesh-agrawala.jpg"
+      "avatarAssetId": "asset-annual-094-controlnet-portrait-maneesh-agrawala"
     }
   ],
   "quote": {

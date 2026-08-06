@@ -1,73 +1,76 @@
 [
-    {
-        "id": "asset-2017-lightgbm-portrait",
-        "type": "image",
-        "path": "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
-        "role": "portrait",
-        "caption": {
-            "en": "Tie-Yan Liu portrait",
-            "zh": "刘铁岩肖像"
-        },
-        "subcaption": {
-            "en": "LightGBM co-author",
-            "zh": "LightGBM 共同作者"
-        },
-        "sourceId": "source-2017-lightgbm-portrait",
-        "sourceName": {
-            "en": "Microsoft Research",
-            "zh": "微软研究院"
-        },
-        "sourceUrl": "https://www.microsoft.com/en-us/research/people/tyliu/",
-        "rights": {
-            "status": "external-reference",
-            "license": {
-                "en": "User-provided local photograph for this exhibition; confirm the original rights scope before redistribution.",
-                "zh": "用户提供用于本项目展览的本地照片；对外再分发前需复核原始授权范围。"
-            },
-            "sourceUrl": "https://www.microsoft.com/en-us/research/people/tyliu/"
-        },
-        "displayUsage": {
-            "en": "Contributor portrait for the LightGBM achievement page",
-            "zh": "用于LightGBM成就页面的人物肖像"
-        },
-        "usage": [
-            "variant:bench-council-ai100"
-        ],
-        "editable": true
+  {
+    "id": "asset-2017-lightgbm-portrait",
+    "type": "image",
+    "path": "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Tie-Yan Liu portrait",
+      "zh": "刘铁岩肖像"
     },
-    {
-        "id": "asset-2017-lightgbm-explainer",
-        "type": "svg",
-        "path": "resources/images/bench-council-ai100/explainers/2017-2017-lightgbm_process.svg",
-        "role": "architecture-explainer",
-        "caption": {
-            "en": "LightGBM process explainer",
-            "zh": "LightGBM流程解释图"
-        },
-        "subcaption": {
-            "en": "Gradient-based sampling, feature bundling, and leaf-wise growth",
-            "zh": "基于梯度的采样、特征捆绑与按叶生长"
-        },
-        "sourceId": "source-2017-lightgbm-primary",
-        "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://proceedings.neurips.cc/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html",
-        "rights": {
-            "status": "documented-in-legacy",
-            "license": {
-                "en": "Original local SVG redraw; source figures are not copied.",
-                "zh": "本地原创 SVG 重绘；未复制来源图形。"
-            }
-        },
-        "displayUsage": {
-            "en": "Architecture and process explainer",
-            "zh": "架构与流程解释图"
-        },
-        "usage": [
-            "variant:bench-council-ai100"
-        ],
-        "editable": true
-    }
+    "subcaption": {
+      "en": "LightGBM co-author",
+      "zh": "LightGBM 共同作者"
+    },
+    "sourceId": "source-2017-lightgbm-portrait",
+    "sourceName": {
+      "en": "Microsoft Research",
+      "zh": "微软研究院"
+    },
+    "sourceUrl": "https://www.microsoft.com/en-us/research/people/tyliu/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "User-provided local photograph for this exhibition; confirm the original rights scope before redistribution.",
+        "zh": "用户提供用于本项目展览的本地照片；对外再分发前需复核原始授权范围。"
+      },
+      "sourceUrl": "https://www.microsoft.com/en-us/research/people/tyliu/"
+    },
+    "displayUsage": {
+      "en": "Contributor portrait for the LightGBM achievement page",
+      "zh": "用于LightGBM成就页面的人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true,
+    "figureIds": [
+      "tie-yan-liu"
+    ]
+  },
+  {
+    "id": "asset-2017-lightgbm-explainer",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2017-2017-lightgbm_process.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "en": "LightGBM process explainer",
+      "zh": "LightGBM流程解释图"
+    },
+    "subcaption": {
+      "en": "Gradient-based sampling, feature bundling, and leaf-wise growth",
+      "zh": "基于梯度的采样、特征捆绑与按叶生长"
+    },
+    "sourceId": "source-2017-lightgbm-primary",
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://proceedings.neurips.cc/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      }
+    },
+    "displayUsage": {
+      "en": "Architecture and process explainer",
+      "zh": "架构与流程解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
 ]

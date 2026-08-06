@@ -32,7 +32,10 @@
       "variant:bench-council-ai100",
       "variant:deep-learning"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "dzmitry-bahdanau"
+    ]
   },
   {
     "id": "asset-2014-attention-cho-portrait",
@@ -67,7 +70,10 @@
       "variant:bench-council-ai100",
       "variant:deep-learning"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "kyunghyun-cho"
+    ]
   },
   {
     "id": "asset-2014-attention-alignment",
@@ -145,6 +151,9 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "yoshua-bengio"
+    ]
   }
 ]

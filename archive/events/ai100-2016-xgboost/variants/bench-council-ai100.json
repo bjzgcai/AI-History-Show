@@ -113,32 +113,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Tianqi Chen",
-        "zh": "陈天奇"
-      },
+      "figureId": "tianqi-chen",
       "role": {
         "en": "XGBoost lead author",
         "zh": "XGBoost 主要作者"
       },
-      "avatar": "resources/images/external/ai100-2016-xgboost/tianqi-chen-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2016-xgboost-portrait"
     },
     {
-      "name": {
-        "en": "Carlos Guestrin",
-        "zh": "卡洛斯·格斯特林"
-      },
+      "figureId": "carlos-guestrin",
       "role": {
         "en": "XGBoost co-author",
         "zh": "XGBoost 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],

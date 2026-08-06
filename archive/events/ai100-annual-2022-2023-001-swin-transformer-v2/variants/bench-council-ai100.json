@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-001-swin-transformer-v2",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "Swin Transformer V2",
     "zh": "Swin Transformer V2"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Stable large-scale vision transformers",
-    "zh": "AI100（2022-2023）· 稳定扩展大规模视觉 Transformer"
   },
   "displayDescription": {
     "en": "<p>Swin Transformer V2 addressed three obstacles that appeared when vision transformers were scaled up: unstable optimization, a mismatch between low-resolution pretraining and high-resolution downstream tasks, and heavy dependence on labeled images. It combined residual post-normalization with scaled cosine attention, introduced log-spaced continuous position bias for resolution transfer, and used SimMIM self-supervised pretraining.</p><p>The resulting system scaled to 3 billion parameters and images as large as 1536 x 1536, while reporting strong results on ImageNet-V2, COCO, ADE20K and Kinetics-400.</p>",
@@ -133,28 +129,20 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Ze Liu",
-        "zh": "刘泽"
-      },
+      "figureId": "ze-liu",
       "role": {
         "en": "Co-first author of the Swin Transformer V2 paper",
         "zh": "Swin Transformer V2 论文共同第一作者"
       },
-      "figureType": "person",
-      "avatar": "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg"
+      "avatarAssetId": "asset-annual-001-swin-transformer-v2-portrait-ze-liu"
     },
     {
-      "name": {
-        "en": "Han Hu",
-        "zh": "胡瀚"
-      },
+      "figureId": "han-hu",
       "role": {
         "en": "Co-first author of the Swin Transformer V2 paper",
         "zh": "Swin Transformer V2 论文共同第一作者"
       },
-      "figureType": "person",
-      "avatar": "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg"
+      "avatarAssetId": "asset-annual-001-swin-transformer-v2-portrait-han-hu"
     }
   ],
   "quote": {

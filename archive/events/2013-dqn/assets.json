@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "volodymyr-mnih"
+    ]
   },
   {
     "id": "asset-2013-dqn-replay-buffer",
@@ -107,6 +110,9 @@
     "usage": [
       "variant:bench-council-ai100",
       "variant:gaming-ai"
+    ],
+    "figureIds": [
+      "david-silver"
     ]
   },
   {

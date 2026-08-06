@@ -82,30 +82,20 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Sakana AI team",
-        "zh": "Sakana AI 团队"
-      },
+      "figureId": "sakana-ai-team",
       "role": {
         "en": "AI Scientist Developer",
         "zh": "AI Scientist开发者"
       },
-      "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png",
-      "avatarStyle": "",
-      "figureType": "person"
+      "avatarAssetId": "asset-2024-ai-scientist-people-02"
     },
     {
-      "name": {
-        "en": "Berkeley Team",
-        "zh": "伯克利团队"
-      },
+      "figureId": "berkeley-team",
       "role": {
         "en": "A-Lab Developer",
         "zh": "A-Lab开发者"
       },
-      "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png",
-      "avatarStyle": "",
-      "figureType": "team"
+      "avatarAssetId": "asset-2024-ai-scientist-people-01"
     }
   ],
   "photos": [],

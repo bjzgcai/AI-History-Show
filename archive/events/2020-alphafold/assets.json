@@ -179,7 +179,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "john-jumper"
+    ]
   },
   {
     "id": "asset-2020-alphafold-people-02",
@@ -205,7 +208,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "demis-hassabis"
+    ]
   },
   {
     "id": "asset-2020-alphafold-john-jumper-external",
@@ -238,6 +244,9 @@
       "zh": "范德堡大学新闻",
       "en": "Vanderbilt University News"
     },
-    "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
+    "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
+    "figureIds": [
+      "john-jumper"
+    ]
   }
 ]

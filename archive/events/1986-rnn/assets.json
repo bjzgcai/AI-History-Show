@@ -49,6 +49,42 @@
     "usage": [
       "variant:deep-learning"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "michael-i-jordan"
+    ]
+  },
+  {
+    "id": "asset-1986-rnn-figure-avatar-michael-i-jordan",
+    "type": "image",
+    "path": "resources/images/figures/michael-i-jordan.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Michael I. Jordan portrait",
+      "zh": "迈克尔·I·乔丹肖像"
+    },
+    "subcaption": {
+      "en": "Event-specific biographical image retained during the global figure migration.",
+      "zh": "全局人物库迁移期间保留的事件专属人物图片。"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "needs-source",
+      "license": {
+        "en": "The original image source and reuse license were not recorded before the global figure migration; source review is required.",
+        "zh": "全局人物库迁移前未记录该图片的原始来源与再利用许可，仍需补充来源审核。"
+      }
+    },
+    "displayUsage": {
+      "en": "Used as a biographical figure image in this exhibition; review the recorded source terms before redistribution.",
+      "zh": "用于本展览的人物资料展示；再次分发前应复核所记录来源的使用条款。"
+    },
+    "usage": [
+      "figure-avatar"
+    ],
+    "editable": true,
+    "figureIds": [
+      "michael-i-jordan"
+    ]
   }
 ]

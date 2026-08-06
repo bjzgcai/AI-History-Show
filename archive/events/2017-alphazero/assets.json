@@ -54,6 +54,9 @@
     "editable": true,
     "usage": [
       "variant:gaming-ai"
+    ],
+    "figureIds": [
+      "david-silver"
     ]
   },
   {
@@ -88,6 +91,9 @@
     "editable": true,
     "usage": [
       "variant:gaming-ai"
+    ],
+    "figureIds": [
+      "julian-schrittwieser"
     ]
   },
   {
