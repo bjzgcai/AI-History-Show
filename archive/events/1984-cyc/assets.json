@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "douglas-lenat"
+    ]
   },
   {
     "id": "asset-1984-cyc-microtheories",

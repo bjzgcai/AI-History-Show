@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-058-chatgpt",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "ChatGPT",
     "zh": "ChatGPT"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Conversational instruction-following AI",
-    "zh": "AI100（2022-2023）· 对话式指令遵循 AI"
   },
   "displayDescription": {
     "en": "<p>ChatGPT launched publicly on November 30, 2022 as a research preview built from the InstructGPT lineage. It used supervised dialogue data and reinforcement learning from human feedback so the model could answer follow-up questions, acknowledge mistakes and respond within a continuing conversation.</p><p>The accessible chat interface dramatically lowered the barrier to trying a general-purpose language model. Its rapid adoption changed public expectations for search, writing, coding, education and human-computer interaction, while exposing reliability and safety limits at unprecedented scale.</p>",
@@ -125,16 +121,11 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "ChatGPT",
-        "zh": "ChatGPT"
-      },
+      "figureId": "chatgpt-product",
       "role": {
         "en": "OpenAI conversational AI product",
         "zh": "OpenAI 对话式 AI 产品"
-      },
-      "figureType": "product",
-      "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png"
+      }
     }
   ],
   "quote": {

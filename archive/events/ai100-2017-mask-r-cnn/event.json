@@ -34,33 +34,20 @@
   "figures": [
     {
       "figureId": "kaiming-he",
-      "name": {
-        "en": "Kaiming He",
-        "zh": "何恺明"
-      },
       "role": {
         "en": "Mask R-CNN lead author",
         "zh": "Mask R-CNN 主要作者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-2017-mask-r-cnn-portrait"
     },
     {
       "figureId": "ross-girshick",
-      "name": {
-        "en": "Ross Girshick",
-        "zh": "罗斯·格希克"
-      },
       "role": {
         "zh": "Faster R-CNN 共同作者",
         "en": "Co-author of Faster R-CNN"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

@@ -118,18 +118,12 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Yoshua Bengio",
-        "zh": "约书亚·本吉奥"
-      },
+      "figureId": "yoshua-bengio",
       "role": {
         "en": "Lead author of the neural probabilistic language model",
         "zh": "神经概率语言模型主要作者"
       },
-      "avatar": "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-ai100-2000-neural-language-model-330px-iclr-2025-yoshua-bengio-02"
     }
   ],
   "photos": [],

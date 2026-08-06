@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "terry-winograd"
+    ]
   },
   {
     "id": "asset-1970-shrdlu-blocks-world",

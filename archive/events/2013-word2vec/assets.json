@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "tomas-mikolov"
+    ]
   },
   {
     "id": "asset-2013-word2vec-skipgram-window",

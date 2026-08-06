@@ -63,6 +63,9 @@
     "editable": true,
     "usage": [
       "variant:humanistic-cycle"
+    ],
+    "figureIds": [
+      "sam-altman"
     ]
   },
   {
@@ -94,6 +97,9 @@
     "editable": true,
     "usage": [
       "variant:humanistic-cycle"
+    ],
+    "figureIds": [
+      "elon-musk"
     ]
   }
 ]

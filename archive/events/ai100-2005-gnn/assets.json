@@ -55,7 +55,10 @@
       "zh": "锡耶纳大学官方 YouTube 频道",
       "en": "Official University of Siena YouTube channel"
     },
-    "sourceUrl": "https://www.youtube.com/watch?v=mnyz8r1GLG8"
+    "sourceUrl": "https://www.youtube.com/watch?v=mnyz8r1GLG8",
+    "figureIds": [
+      "marco-gori"
+    ]
   },
   {
     "id": "asset-ai100-2005-gnn-citations",
@@ -96,7 +99,10 @@
         "en": "The image resolution is too low for the detail image list. Its existing figure-avatar reference remains temporarily until a higher-quality source is available."
       },
       "reviewedAt": "2026-08-02"
-    }
+    },
+    "figureIds": [
+      "franco-scarselli"
+    ]
   },
   {
     "id": "asset-ai100-2005-gnn-unisi-paper-record",

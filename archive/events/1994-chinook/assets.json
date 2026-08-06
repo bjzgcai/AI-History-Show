@@ -108,6 +108,9 @@
       "zh": "维基共享资源",
       "en": "Wikimedia Commons"
     },
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
+    "figureIds": [
+      "jonathan-schaeffer"
+    ]
   }
 ]

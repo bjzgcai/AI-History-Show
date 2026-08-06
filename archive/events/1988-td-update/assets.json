@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "richard-sutton"
+    ]
   },
   {
     "id": "asset-1988-td-update-value-timeline",

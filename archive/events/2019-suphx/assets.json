@@ -31,7 +31,10 @@
     "usage": [
       "variant:gaming-ai"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "tie-yan-liu"
+    ]
   },
   {
     "id": "asset-2019-suphx-hsiao-wuen-hon",
@@ -65,7 +68,10 @@
     "usage": [
       "variant:gaming-ai"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "hsiao-wuen-hon"
+    ]
   },
   {
     "id": "asset-2019-suphx-tao-qin",
@@ -99,7 +105,10 @@
     "usage": [
       "variant:gaming-ai"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "tao-qin"
+    ]
   },
   {
     "id": "asset-2019-suphx-guoqing-liu",
@@ -139,7 +148,10 @@
     "usage": [
       "variant:gaming-ai"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "guoqing-liu"
+    ]
   },
   {
     "id": "asset-2019-suphx-li-zhao",
@@ -179,7 +191,10 @@
     "usage": [
       "variant:gaming-ai"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "li-zhao"
+    ]
   },
   {
     "id": "asset-2019-suphx-project-logo",

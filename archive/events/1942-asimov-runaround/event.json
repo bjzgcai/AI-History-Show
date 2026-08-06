@@ -34,33 +34,19 @@
   "figures": [
     {
       "figureId": "isaac-asimov",
-      "name": {
-        "en": "Isaac Asimov",
-        "zh": "艾萨克·阿西莫夫"
-      },
       "role": {
         "en": "Author of Runaround",
         "zh": "《转圈圈》作者"
       },
-      "avatar": "resources/images/humanistic-cycle/people/1942-asimov-runaround_isaac-asimov.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1942-asimov-runaround-isaac-asimov"
     },
     {
       "figureId": "john-w-campbell",
-      "name": {
-        "en": "John W. Campbell",
-        "zh": "约翰·W·坎贝尔"
-      },
       "role": {
         "en": "Astounding editor and robot-story interlocutor",
         "zh": "《惊奇科幻》编辑，机器人故事讨论者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "organizations": [],

@@ -38,28 +38,20 @@
   "figures": [
     {
       "figureId": "lvmin-zhang",
-      "name": {
-        "en": "Lvmin Zhang",
-        "zh": "张吕敏"
-      },
       "role": {
         "en": "First author of the ControlNet paper",
         "zh": "ControlNet 论文第一作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "maneesh-agrawala",
-      "name": {
-        "en": "Maneesh Agrawala",
-        "zh": "马尼什·阿格拉瓦拉"
-      },
       "role": {
         "en": "Co-author of the ControlNet paper",
         "zh": "ControlNet 论文共同作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/external/ai100-2023-controlnet/maneesh-agrawala.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-094-controlnet-portrait-maneesh-agrawala"
     }
   ],
   "organizations": [],

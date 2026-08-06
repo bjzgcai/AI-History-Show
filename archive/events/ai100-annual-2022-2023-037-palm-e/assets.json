@@ -36,9 +36,12 @@
       "zh": "已核验的主要人物肖像"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
-    "editable": false
+    "editable": false,
+    "figureIds": [
+      "pete-florence"
+    ]
   },
   {
     "id": "asset-annual-037-palm-e-record",
@@ -77,7 +80,7 @@
       "zh": "原创成就解释图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": true
   },
@@ -119,7 +122,7 @@
       "zh": "官方方法图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   },
@@ -161,7 +164,7 @@
       "zh": "官方任务概览图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   }

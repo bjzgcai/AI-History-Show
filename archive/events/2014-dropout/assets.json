@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "nitish-srivastava"
+    ]
   },
   {
     "id": "asset-2014-dropout-random-mask",

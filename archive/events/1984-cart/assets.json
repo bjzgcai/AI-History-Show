@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "leo-breiman"
+    ]
   },
   {
     "id": "asset-1984-cart-split-regions",

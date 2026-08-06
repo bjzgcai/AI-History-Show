@@ -37,18 +37,14 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "John McCarthy",
-        "zh": "约翰·麦卡锡"
-      },
+      "figureId": "john-mccarthy",
       "role": {
         "en": "Designer of LISP",
         "zh": "LISP 设计者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg",
-      "avatarStyle": "transform: scale(1.08); transform-origin: 50% 45%;",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1958-lisp-john-mccarthy",
+      "avatarStyle": "transform: scale(1.08); transform-origin: 50% 45%;"
     }
   ],
   "organizations": [],

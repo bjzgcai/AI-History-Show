@@ -29,7 +29,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "joseph-weizenbaum"
+    ]
   },
   {
     "id": "asset-1966-eliza-doctor-script",
@@ -87,7 +90,11 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "hans-uszkoreit",
+      "joseph-weizenbaum"
+    ]
   },
   {
     "id": "asset-1966-eliza-original-source-page-9",

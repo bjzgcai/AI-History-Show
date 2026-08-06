@@ -114,46 +114,25 @@
   "figures": [
     {
       "figureId": "tsung-yi-lin",
-      "name": {
-        "en": "Tsung-Yi Lin",
-        "zh": "林宗毅"
-      },
       "role": {
         "en": "FPN and RetinaNet lead author",
         "zh": "FPN 与 RetinaNet 主要作者"
       },
-      "avatar": "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2017-fpn-retinanet-portrait"
     },
     {
-      "name": {
-        "en": "Serge Belongie",
-        "zh": "塞尔日·贝隆吉"
-      },
+      "figureId": "serge-belongie",
       "role": {
         "en": "FPN (RetinaNet) co-author",
         "zh": "FPN (RetinaNet) 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Piotr Dollar",
-        "zh": "彼得·多拉尔"
-      },
+      "figureId": "piotr-dollar",
       "role": {
         "en": "FPN (RetinaNet) co-author",
         "zh": "FPN (RetinaNet) 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],

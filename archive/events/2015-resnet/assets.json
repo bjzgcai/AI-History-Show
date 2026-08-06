@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "kaiming-he"
+    ]
   },
   {
     "id": "asset-2015-resnet-architecture-01",
@@ -75,7 +78,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "kaiming-he"
+    ]
   },
   {
     "id": "asset-2015-resnet-people-03",
@@ -101,7 +107,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "xiangyu-zhang"
+    ]
   },
   {
     "id": "asset-2015-resnet-people-02",
@@ -127,7 +136,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "shaoqing-ren"
+    ]
   },
   {
     "id": "asset-2015-resnet-people-01",
@@ -153,7 +165,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "jian-sun"
+    ]
   },
   {
     "id": "asset-2015-resnet-architecture-02",

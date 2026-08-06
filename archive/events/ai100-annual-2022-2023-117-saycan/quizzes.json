@@ -1,7 +1,7 @@
 [
   {
     "id": "ai100-annual-2022-2023-117-saycan-quiz-1",
-    "storylineId": "bench-council-ai100-2022-2023",
+    "storylineId": "bench-council-ai100",
     "question": {
       "en": "What two signals does SayCan combine to choose a robot skill?",
       "zh": "SayCan 选择机器人技能时组合哪两类信号？"

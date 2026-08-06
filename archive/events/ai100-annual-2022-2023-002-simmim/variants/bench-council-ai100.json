@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-002-simmim",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "Simmim",
     "zh": "Simmim"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Simple masked image pretraining",
-    "zh": "AI100（2022-2023）· 简洁的掩码图像预训练"
   },
   "displayDescription": {
     "en": "<p>SimMIM asked how much machinery masked image modeling actually needed. Instead of block-wise masking, discrete-VAE tokenizers, clustering targets or a heavy decoder, it used random masks with moderately large patches, directly regressed the RGB values of masked pixels and reduced the prediction head to a linear layer.</p><p>The simple recipe produced strong representations with both ViT and Swin backbones, and the paper reports scaling from ViT-B to a 3-billion-parameter SwinV2-G model.</p>",
@@ -136,52 +132,34 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Zhenda Xie",
-        "zh": "谢振达"
-      },
+      "figureId": "zhenda-xie",
+      "role": {
+        "en": "Co-first author of the SimMIM paper",
+        "zh": "SimMIM 论文共同第一作者"
+      }
+    },
+    {
+      "figureId": "zheng-zhang",
+      "role": {
+        "en": "Co-first author of the SimMIM paper",
+        "zh": "SimMIM 论文共同第一作者"
+      }
+    },
+    {
+      "figureId": "yue-cao",
       "role": {
         "en": "Co-first author of the SimMIM paper",
         "zh": "SimMIM 论文共同第一作者"
       },
-      "figureType": "person",
-      "avatar": ""
+      "avatarAssetId": "asset-annual-002-simmim-portrait-yue-cao"
     },
     {
-      "name": {
-        "en": "Zheng Zhang",
-        "zh": "张拯"
-      },
-      "role": {
-        "en": "Co-first author of the SimMIM paper",
-        "zh": "SimMIM 论文共同第一作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Yue Cao",
-        "zh": "曹越"
-      },
-      "role": {
-        "en": "Co-first author of the SimMIM paper",
-        "zh": "SimMIM 论文共同第一作者"
-      },
-      "figureType": "person",
-      "avatar": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg"
-    },
-    {
-      "name": {
-        "en": "Han Hu",
-        "zh": "胡瀚"
-      },
+      "figureId": "han-hu",
       "role": {
         "en": "Lead author of the SimMIM paper",
         "zh": "SimMIM 论文主要作者"
       },
-      "figureType": "person",
-      "avatar": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg"
+      "avatarAssetId": "asset-annual-002-simmim-portrait-han-hu"
     }
   ],
   "quote": {

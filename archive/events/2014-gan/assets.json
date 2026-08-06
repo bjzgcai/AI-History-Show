@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "ian-goodfellow"
+    ]
   },
   {
     "id": "asset-2014-gan-adversarial-loop",

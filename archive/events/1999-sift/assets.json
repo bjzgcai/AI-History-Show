@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "david-lowe"
+    ]
   },
   {
     "id": "asset-1999-sift-scale-space",

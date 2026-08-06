@@ -38,8 +38,8 @@
         "zh": "DeepMind 强化学习负责人",
         "en": "DeepMind reinforcement learning lead"
       },
-      "avatar": "resources/images/figures/authoritative/david-silver.jpg",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-david-silver-commons-portrait"
     },
     {
       "figureId": "demis-hassabis",
@@ -47,8 +47,7 @@
         "zh": "DeepMind 联合创始人",
         "en": "DeepMind co-founder"
       },
-      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "julian-schrittwieser",
@@ -56,8 +55,8 @@
         "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一",
         "en": "DeepMind research scientist and one of the first authors of the MuZero paper"
       },
-      "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-2017-alphazero-julian-schrittwieser"
     }
   ],
   "organizations": [],

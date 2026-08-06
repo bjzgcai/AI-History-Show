@@ -86,32 +86,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Karen Simonyan",
-        "zh": "卡伦·西莫尼扬"
-      },
+      "figureId": "karen-simonyan",
       "role": {
         "en": "Co-author of the VGG paper",
         "zh": "VGG 论文共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Andrew Zisserman",
-        "zh": "安德鲁·齐瑟曼"
-      },
+      "figureId": "andrew-zisserman",
       "role": {
         "en": "Co-author and Visual Geometry Group lead",
         "zh": "共同作者，视觉几何组负责人"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2014-vgg-andrew-zisserman"
     }
   ],
   "photos": [],

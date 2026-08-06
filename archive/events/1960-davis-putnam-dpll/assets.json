@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "hilary-putnam"
+    ]
   },
   {
     "id": "asset-1960-davis-putnam-dpll-sat-search",

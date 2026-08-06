@@ -103,6 +103,9 @@
     "usage": [
       "variant:deep-learning"
     ],
-    "editable": false
+    "editable": false,
+    "figureIds": [
+      "research-institutions"
+    ]
   }
 ]

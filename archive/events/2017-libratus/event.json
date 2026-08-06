@@ -38,8 +38,8 @@
         "zh": "Libratus 共同创建者",
         "en": "Libratus co-creator"
       },
-      "avatar": "resources/images/figures/authoritative/noam-brown.jpg",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-noam-brown-official-portrait"
     },
     {
       "figureId": "tuomas-sandholm",
@@ -47,8 +47,8 @@
         "zh": "CMU 教授，Libratus 共同创建者",
         "en": "CMU professor and Libratus co-creator"
       },
-      "avatar": "resources/images/figures/authoritative/tuomas-sandholm.jpg",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-tuomas-sandholm-commons-portrait"
     }
   ],
   "organizations": [],

@@ -1,7 +1,7 @@
 [
   {
     "id": "ai100-annual-2022-2023-024-whisper-quiz-1",
-    "storylineId": "bench-council-ai100-2022-2023",
+    "storylineId": "bench-council-ai100",
     "question": {
       "en": "What is the main source of Whisper's broad speech robustness?",
       "zh": "Whisper 广泛语音稳健性的主要来源是什么？"

@@ -1,7 +1,7 @@
 [
   {
     "id": "ai100-annual-2022-2023-063-llava-quiz-1",
-    "storylineId": "bench-council-ai100-2022-2023",
+    "storylineId": "bench-council-ai100",
     "question": {
       "en": "What connects LLaVA’s vision encoder to its language model?",
       "zh": "什么组件连接 LLaVA 的视觉编码器与语言模型？"

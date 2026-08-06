@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-059-chain-of-thought-prompting",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "Chain-of-Thought Prompting",
     "zh": "Chain-of-Thought Prompting"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Intermediate reasoning through prompting",
-    "zh": "AI100（2022-2023）· 通过提示生成中间推理"
   },
   "displayDescription": {
     "en": "<p>Chain-of-thought prompting showed that a few demonstrations containing intermediate reasoning steps can substantially improve large language models on arithmetic, commonsense and symbolic reasoning tasks. The method changes the prompt rather than the model weights.</p><p>The gains appeared most strongly at large model scales, suggesting that prompting can expose capabilities already latent in a pretrained model. This simple technique became a foundation for later work on self-consistency, tool use and structured reasoning.</p>",
@@ -128,28 +124,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Jason Wei",
-        "zh": "杰森·魏"
-      },
+      "figureId": "jason-wei",
       "role": {
         "en": "First author of the Chain-of-Thought Prompting paper",
         "zh": "Chain-of-Thought Prompting 论文第一作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Denny Zhou",
-        "zh": "丹尼·周"
-      },
+      "figureId": "denny-zhou",
       "role": {
         "en": "Co-author of the Chain-of-Thought Prompting paper",
         "zh": "Chain-of-Thought Prompting 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg"
+      "avatarAssetId": "asset-annual-059-chain-of-thought-prompting-portrait-denny-zhou"
     }
   ],
   "quote": {

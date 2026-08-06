@@ -112,31 +112,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Douglas Lenat",
-        "zh": "道格拉斯·莱纳特"
-      },
+      "figureId": "douglas-lenat",
       "role": {
         "en": "Founder of the Cyc project",
         "zh": "Cyc 项目创始人"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-1984-cyc-douglas-lenat"
     },
     {
-      "name": {
-        "en": "R. V. Guha",
-        "zh": "R·V·古哈"
-      },
+      "figureId": "r-v-guha",
       "role": {
         "en": "Co-author of core Cyc representation work",
         "zh": "Cyc 核心表示工作的共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      }
     }
   ],
   "photos": [],

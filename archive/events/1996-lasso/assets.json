@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "robert-tibshirani"
+    ]
   },
   {
     "id": "asset-1996-lasso-l1-constraint",

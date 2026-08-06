@@ -123,45 +123,27 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Marco Gori",
-        "zh": "马尔科·戈里"
-      },
+      "figureId": "marco-gori",
       "role": {
         "en": "First author of the 2005 graph neural network paper",
         "zh": "2005 年图神经网络论文第一作者"
       },
-      "avatar": "resources/images/external/ai100-2005-gnn/people/marco-gori-university-video-still.jpg",
-      "avatarStyle": "transform: scale(1.75); transform-origin: 43% 35%;",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-ai100-2005-gnn-marco-gori-portrait"
     },
     {
-      "name": {
-        "en": "Franco Scarselli",
-        "zh": "弗兰科·斯卡塞利"
-      },
+      "figureId": "franco-scarselli",
       "role": {
         "en": "Co-author of the 2005 graph neural network paper",
         "zh": "2005 年图神经网络论文共同作者"
       },
-      "avatar": "resources/images/external/ai100-2005-gnn/franco-scarselli-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-ai100-2005-gnn-citations"
     },
     {
-      "name": {
-        "en": "Gabriele Monfardini",
-        "zh": "加布里埃莱·蒙法尔迪尼"
-      },
+      "figureId": "gabriele-monfardini",
       "role": {
         "en": "Co-author of the 2005 graph neural network paper",
         "zh": "2005 年图神经网络论文共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      }
     }
   ],
   "photos": [],

@@ -55,6 +55,9 @@
       "zh": "托马斯·基普夫个人网站",
       "en": "Thomas Kipf personal website"
     },
-    "sourceUrl": "https://tkipf.github.io/images/photo.jpg"
+    "sourceUrl": "https://tkipf.github.io/images/photo.jpg",
+    "figureIds": [
+      "thomas-kipf"
+    ]
   }
 ]

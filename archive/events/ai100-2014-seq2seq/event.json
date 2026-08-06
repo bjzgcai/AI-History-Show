@@ -33,61 +33,37 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Kyunghyun Cho",
-        "zh": "赵京贤"
-      },
+      "figureId": "kyunghyun-cho",
       "role": {
         "en": "Neural attention paper co-author",
         "zh": "神经注意力论文共同作者"
       },
-      "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "yoshua-bengio",
-      "name": {
-        "en": "Yoshua Bengio",
-        "zh": "约书亚·本吉奥"
-      },
       "role": {
         "en": "RNN encoder-decoder co-author",
         "zh": "RNN 编码器—解码器共同作者"
       },
-      "avatar": "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-2014-seq2seq-portrait"
     },
     {
-      "name": {
-        "en": "Ilya Sutskever",
-        "zh": "伊利亚·苏茨克维"
-      },
+      "figureId": "ilya-sutskever",
       "role": {
         "en": "AlexNet co-author",
         "zh": "AlexNet 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     },
     {
-      "name": {
-        "en": "Quoc V. Le",
-        "zh": "黎国辉"
-      },
+      "figureId": "quoc-v-le",
       "role": {
         "en": "Seq2Seq co-author",
         "zh": "Seq2Seq 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

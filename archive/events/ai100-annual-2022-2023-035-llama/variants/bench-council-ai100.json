@@ -1,14 +1,10 @@
 {
-  "storylineId": "bench-council-ai100-2022-2023",
+  "storylineId": "bench-council-ai100",
   "eventId": "ai100-annual-2022-2023-035-llama",
   "presentationMode": "archive",
   "displayTitle": {
     "en": "LLaMa",
     "zh": "LLaMa"
-  },
-  "displaySummary": {
-    "en": "AI100 (2022-2023) · Open foundation language models",
-    "zh": "AI100（2022-2023）· 开放基础语言模型"
   },
   "displayDescription": {
     "en": "<p>LLaMA introduced a family of 7B to 65B parameter foundation language models trained on publicly available datasets. The work emphasized that smaller models trained on more tokens could deliver strong inference-time efficiency and competitive benchmark performance.</p><p>The release gave researchers access to capable base models at several scales and accelerated work on adaptation, quantization and instruction tuning.</p>",
@@ -124,64 +120,40 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Hugo Touvron",
-        "zh": "雨果·图夫龙"
-      },
+      "figureId": "hugo-touvron",
       "role": {
         "en": "First author of the LLaMA paper",
         "zh": "LLaMA 论文第一作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     },
     {
-      "name": {
-        "en": "Thibaut Lavril",
-        "zh": "蒂博·拉夫里尔"
-      },
+      "figureId": "thibaut-lavril",
+      "role": {
+        "en": "Co-author of the LLaMA paper",
+        "zh": "LLaMA 论文共同作者"
+      }
+    },
+    {
+      "figureId": "gautier-izacard",
+      "role": {
+        "en": "Co-author of the LLaMA paper",
+        "zh": "LLaMA 论文共同作者"
+      }
+    },
+    {
+      "figureId": "edouard-grave",
       "role": {
         "en": "Co-author of the LLaMA paper",
         "zh": "LLaMA 论文共同作者"
       },
-      "figureType": "person",
-      "avatar": ""
+      "avatarAssetId": "asset-annual-035-llama-portrait-edouard-grave"
     },
     {
-      "name": {
-        "en": "Gautier Izacard",
-        "zh": "戈蒂耶·伊扎卡尔"
-      },
+      "figureId": "guillaume-lample",
       "role": {
         "en": "Co-author of the LLaMA paper",
         "zh": "LLaMA 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
-    },
-    {
-      "name": {
-        "en": "Edouard Grave",
-        "zh": "爱德华·格拉夫"
-      },
-      "role": {
-        "en": "Co-author of the LLaMA paper",
-        "zh": "LLaMA 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": "resources/images/external/ai100-2023-llama/edouard-grave.jpg"
-    },
-    {
-      "name": {
-        "en": "Guillaume Lample",
-        "zh": "纪尧姆·朗普勒"
-      },
-      "role": {
-        "en": "Co-author of the LLaMA paper",
-        "zh": "LLaMA 论文共同作者"
-      },
-      "figureType": "person",
-      "avatar": ""
+      }
     }
   ],
   "quote": {

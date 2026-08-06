@@ -55,6 +55,9 @@
       "zh": "卡内基梅隆大学作者主页",
       "en": "Carnegie Mellon author homepage"
     },
-    "sourceUrl": "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg"
+    "sourceUrl": "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg",
+    "figureIds": [
+      "jun-yan-zhu"
+    ]
   }
 ]

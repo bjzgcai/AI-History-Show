@@ -2,18 +2,22 @@
 'use strict';
 
 const { execFile } = require('node:child_process');
-const { randomUUID } = require('node:crypto');
+const { createHash, randomUUID } = require('node:crypto');
 const fs = require('node:fs');
 const http = require('node:http');
 const path = require('node:path');
 const { URL } = require('node:url');
+
+const { createArchiveFigureService } = require('./archive-figure-service');
 
 const HOST = process.env.HOST || '127.0.0.1';
 const PORT = Number(process.env.PORT || 3001);
 const ROOT = path.resolve(__dirname, '..');
 const ARCHIVE_EVENTS = path.join(ROOT, 'archive', 'events');
 const ARCHIVE_STORYLINES = path.join(ROOT, 'archive', 'storylines');
-const MAX_BODY_BYTES = 5 * 1024 * 1024;
+const MAX_BODY_BYTES = 15 * 1024 * 1024;
+const figureService = createArchiveFigureService(ROOT);
+let activeArchiveCommand = '';
 
 if (!Number.isInteger(PORT) || PORT <= 0 || PORT > 65535) {
     console.error(`Invalid port: ${process.env.PORT}`);
@@ -93,6 +97,18 @@ function atomicWrite(filePath, content) {
     }
 }
 
+function fileRevision(filePath) {
+    return createHash('sha256').update(fs.readFileSync(filePath)).digest('hex');
+}
+
+function assertExpectedRevision(filePath, expectedRevision) {
+    if (expectedRevision && expectedRevision !== fileRevision(filePath)) {
+        const error = new Error('Archive file changed since it was loaded; reload before saving');
+        error.statusCode = 409;
+        throw error;
+    }
+}
+
 function isTrustedOrigin(req) {
     const origin = req.headers.origin;
     if (!origin) return true;
@@ -133,6 +149,36 @@ function archiveEventPath(eventId, file) {
 function archiveStorylinePath(storylineId) {
     const safeStorylineId = safeArchiveId(storylineId, 'archive storylineId');
     return path.join(ARCHIVE_STORYLINES, `${safeStorylineId}.json`);
+}
+
+function listStorylineRecords() {
+    return fs
+        .readdirSync(ARCHIVE_STORYLINES)
+        .filter((file) => /^[a-z0-9][a-z0-9._-]*\.json$/.test(file))
+        .sort()
+        .map((file) => {
+            const id = file.slice(0, -'.json'.length);
+            const data = JSON.parse(fs.readFileSync(path.join(ARCHIVE_STORYLINES, file), 'utf8'));
+            const activeEvents = (data.events || []).filter(
+                (entry) => entry.enabled !== false && typeof entry.milestoneId === 'string' && entry.milestoneId.trim()
+            );
+            return { id, data, activeEvents };
+        });
+}
+
+function eventUsageById(storylineRecords) {
+    const usage = new Map();
+    for (const storyline of storylineRecords) {
+        for (const membership of storyline.activeEvents) {
+            if (!usage.has(membership.eventId)) usage.set(membership.eventId, []);
+            usage.get(membership.eventId).push({
+                storylineId: storyline.id,
+                milestoneId: membership.milestoneId,
+                variant: membership.variant || ''
+            });
+        }
+    }
+    return usage;
 }
 
 function archiveEventFileList(eventId) {
@@ -213,25 +259,187 @@ function serveResource(res, pathname, headOnly = false) {
     serveFile(res, filePath, 'public, max-age=3600', headOnly);
 }
 
+function runArchiveCommand(res, commandName, scriptName) {
+    if (activeArchiveCommand) {
+        sendError(res, `Archive command already running: ${activeArchiveCommand}`, 409);
+        return;
+    }
+    activeArchiveCommand = commandName;
+    execFile(
+        process.execPath,
+        [path.join(ROOT, 'scripts', scriptName)],
+        { cwd: ROOT, maxBuffer: 10 * 1024 * 1024, timeout: 120000 },
+        (error, stdout, stderr) => {
+            activeArchiveCommand = '';
+            sendJson(res, {
+                ok: !error,
+                command: commandName,
+                stdout: stdout || '',
+                stderr: stderr || '',
+                exitCode: error ? error.code : 0
+            });
+        }
+    );
+}
+
 const routes = {
     'GET /admin': (req, res) => serveFile(res, path.join(__dirname, 'admin.html'), 'no-store', req.method === 'HEAD'),
+    'GET /admin.css': (req, res) =>
+        serveFile(res, path.join(__dirname, 'admin.css'), 'no-store', req.method === 'HEAD'),
+    'GET /admin.js': (req, res) => serveFile(res, path.join(__dirname, 'admin.js'), 'no-store', req.method === 'HEAD'),
+
+    'GET /api/archive/figures': (_req, res) => {
+        try {
+            sendJson(res, {
+                items: figureService.listFigures(),
+                revision: figureService.getRegistryRevision()
+            });
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 500);
+        }
+    },
+
+    'GET /api/archive/figure-options': (_req, res) => {
+        try {
+            sendJson(res, figureService.listFigures());
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 500);
+        }
+    },
+
+    'GET /api/archive/event-display-targets': (_req, res, url) => {
+        try {
+            sendJson(res, figureService.getEventDisplayTargets(url.searchParams.get('eventId')));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'GET /api/archive/figure': (_req, res, url) => {
+        try {
+            sendJson(res, figureService.getFigure(url.searchParams.get('figureId')));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/figure': async (req, res) => {
+        try {
+            sendJson(res, figureService.saveFigure(await readJsonBody(req)));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'GET /api/archive/figure-usage': (_req, res, url) => {
+        try {
+            sendJson(res, figureService.getFigureUsage(url.searchParams.get('figureId')));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'GET /api/archive/figure-assets': (_req, res, url) => {
+        try {
+            sendJson(
+                res,
+                figureService.getFigureAssets(url.searchParams.get('figureId'), url.searchParams.get('eventId') || '')
+            );
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/figure-default-avatar': async (req, res) => {
+        try {
+            sendJson(res, figureService.setDefaultAvatar(await readJsonBody(req)));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'GET /api/archive/figure-audit': (_req, res) => {
+        try {
+            sendJson(res, figureService.getAudit());
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 500);
+        }
+    },
+
+    'GET /api/archive/figure-merge-preview': (_req, res, url) => {
+        try {
+            sendJson(
+                res,
+                figureService.previewFigureMerge(
+                    url.searchParams.get('sourceFigureId'),
+                    url.searchParams.get('targetFigureId')
+                )
+            );
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/figure-merge': async (req, res) => {
+        try {
+            sendJson(res, figureService.mergeFigures(await readJsonBody(req)));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/figure-asset-merge-preview': async (req, res) => {
+        try {
+            sendJson(res, figureService.previewFigureAssetMerge(await readJsonBody(req)));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/figure-asset-merge': async (req, res) => {
+        try {
+            sendJson(res, figureService.mergeFigureAssets(await readJsonBody(req)));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/figure-image': async (req, res) => {
+        try {
+            sendJson(res, figureService.importFigureImage(await readJsonBody(req)));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
 
     'GET /api/archive/events': (_req, res) => {
         try {
+            const usageByEventId = eventUsageById(listStorylineRecords());
             const events = fs
                 .readdirSync(ARCHIVE_EVENTS, { withFileTypes: true })
                 .filter((entry) => entry.isDirectory() && /^[a-z0-9][a-z0-9._-]*$/.test(entry.name))
                 .map((entry) => {
                     const files = archiveEventFileList(entry.name);
+                    const usage = usageByEventId.get(entry.name) || [];
+                    const eventFile = path.join(ARCHIVE_EVENTS, entry.name, 'event.json');
+                    const event = fs.existsSync(eventFile) ? JSON.parse(fs.readFileSync(eventFile, 'utf8')) : {};
                     return {
                         id: entry.name,
+                        year: event.year || '',
                         files,
                         variants: files
                             .filter((file) => file.startsWith('variants/'))
-                            .map((file) => file.slice('variants/'.length, -'.json'.length))
+                            .map((file) => file.slice('variants/'.length, -'.json'.length)),
+                        used: usage.length > 0,
+                        usageCount: usage.length,
+                        storylineIds: usage.map((item) => item.storylineId)
                     };
                 })
-                .sort((a, b) => a.id.localeCompare(b.id));
+                .sort(
+                    (left, right) =>
+                        String(left.year).localeCompare(String(right.year), 'en', { numeric: true }) ||
+                        left.id.localeCompare(right.id)
+                );
             sendJson(res, events);
         } catch (error) {
             sendError(res, error.message);
@@ -240,11 +448,14 @@ const routes = {
 
     'GET /api/archive/storylines': (_req, res) => {
         try {
-            const storylines = fs
-                .readdirSync(ARCHIVE_STORYLINES)
-                .filter((file) => /^[a-z0-9][a-z0-9._-]*\.json$/.test(file))
-                .map((file) => file.slice(0, -'.json'.length))
-                .sort();
+            const storylines = listStorylineRecords().map(({ id, data, activeEvents }) => ({
+                id,
+                title: data.title || {},
+                used: activeEvents.length > 0,
+                usageCount: activeEvents.length,
+                enabledEventCount: activeEvents.length,
+                totalEventCount: (data.events || []).length
+            }));
             sendJson(res, storylines);
         } catch (error) {
             sendError(res, error.message);
@@ -256,7 +467,11 @@ const routes = {
             const storylineId = url.searchParams.get('storylineId');
             const filePath = archiveStorylinePath(storylineId);
             if (!fs.existsSync(filePath)) return sendError(res, 'Archive storyline not found', 404);
-            sendJson(res, { storylineId, data: JSON.parse(fs.readFileSync(filePath, 'utf8')) });
+            sendJson(res, {
+                storylineId,
+                data: JSON.parse(fs.readFileSync(filePath, 'utf8')),
+                revision: fileRevision(filePath)
+            });
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -274,8 +489,9 @@ const routes = {
             }
             const filePath = archiveStorylinePath(storylineId);
             if (!fs.existsSync(filePath)) return sendError(res, 'Archive storyline not found', 404);
+            assertExpectedRevision(filePath, body.expectedRevision);
             atomicWrite(filePath, `${JSON.stringify(body.data, null, 2)}\n`);
-            sendJson(res, { ok: true, storylineId });
+            sendJson(res, { ok: true, storylineId, revision: fileRevision(filePath) });
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -287,7 +503,12 @@ const routes = {
             const file = url.searchParams.get('file');
             const filePath = archiveEventPath(eventId, file);
             if (!fs.existsSync(filePath)) return sendError(res, 'Archive file not found', 404);
-            sendJson(res, { eventId, file, data: JSON.parse(fs.readFileSync(filePath, 'utf8')) });
+            sendJson(res, {
+                eventId,
+                file,
+                data: JSON.parse(fs.readFileSync(filePath, 'utf8')),
+                revision: fileRevision(filePath)
+            });
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -301,28 +522,22 @@ const routes = {
             }
             const filePath = archiveEventPath(body.eventId, body.file);
             if (!fs.existsSync(filePath)) return sendError(res, 'Archive file not found', 404);
+            assertExpectedRevision(filePath, body.expectedRevision);
             atomicWrite(filePath, `${JSON.stringify(body.data, null, 2)}\n`);
-            sendJson(res, { ok: true, eventId: body.eventId, file: body.file });
+            sendJson(res, {
+                ok: true,
+                eventId: body.eventId,
+                file: body.file,
+                revision: fileRevision(filePath)
+            });
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
     },
 
-    'POST /api/archive/validate': (_req, res) => {
-        execFile(
-            process.execPath,
-            [path.join(ROOT, 'scripts', 'validate-archive.js')],
-            { cwd: ROOT },
-            (error, stdout, stderr) => {
-                sendJson(res, {
-                    ok: !error,
-                    stdout: stdout || '',
-                    stderr: stderr || '',
-                    exitCode: error ? error.code : 0
-                });
-            }
-        );
-    }
+    'POST /api/archive/validate': (_req, res) => runArchiveCommand(res, 'validate', 'validate-archive.js'),
+
+    'POST /api/archive/generate': (_req, res) => runArchiveCommand(res, 'generate', 'generate-archive-data.js')
 };
 
 const server = http.createServer((req, res) => {

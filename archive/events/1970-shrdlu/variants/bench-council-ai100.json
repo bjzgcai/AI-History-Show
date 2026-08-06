@@ -118,18 +118,12 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Terry Winograd",
-        "zh": "特里·维诺格拉德"
-      },
+      "figureId": "terry-winograd",
       "role": {
         "en": "Creator of SHRDLU",
         "zh": "SHRDLU 创建者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-1970-shrdlu-terry-winograd"
     }
   ],
   "photos": [],

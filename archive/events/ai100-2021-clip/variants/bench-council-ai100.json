@@ -118,17 +118,12 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Alec Radford",
-        "zh": "亚历克·拉德福德"
-      },
+      "figureId": "alec-radford",
       "role": {
         "en": "Lead author of CLIP",
         "zh": "CLIP 主要作者"
       },
-      "avatar": "resources/images/figures/alec-radford.png",
-      "avatarStyle": "",
-      "figureType": "person"
+      "avatarAssetId": "asset-alec-radford"
     }
   ],
   "photos": [],

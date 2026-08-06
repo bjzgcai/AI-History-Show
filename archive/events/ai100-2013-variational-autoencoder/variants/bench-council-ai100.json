@@ -8,7 +8,7 @@
   },
   "displayDescription": {
     "zh": "<p>金马和威灵在 2013 年提出变分自编码器，把神经网络与概率潜变量模型连接起来。编码器不为输入输出单一点，而是估计潜变量分布的均值和方差；通过 z=μ+σε 的重参数化，随机采样可以写成可微计算，使梯度能够穿过潜变量训练编码器和解码器。</p><p>目标函数同时要求解码器重构数据，并用 KL 散度让潜分布接近简单先验，形成连续、可采样的表示空间。VAE 支撑生成、异常检测和表示学习，训练通常比 GAN 稳定，但像素级重构目标可能产生较平滑或模糊样本。其核心贡献是让大规模近似贝叶斯推断适配端到端神经训练。</p>",
-    "en": "<p>Diederik Kingma and Max Welling introduced the variational autoencoder in 2013, joining neural networks with probabilistic latent-variable models. The encoder does not output one point for an input; it estimates the mean and variance of a latent distribution. Through the reparameterization z=μ+σε, stochastic sampling becomes a differentiable computation, allowing gradients to train both encoder and decoder through the latent variable.</p><p>The objective asks the decoder to reconstruct data while a KL-divergence term keeps the latent distribution near a simple prior, creating a continuous space that can be sampled. VAEs support generation, anomaly detection, and representation learning and are often more stable to train than GANs, though pixel-level reconstruction can produce smooth or blurry samples. Their central contribution was making scalable approximate Bayesian inference compatible with end-to-end neural training.</p>"
+    "en": "<p>Diederik P. Kingma and Max Welling introduced the variational autoencoder in 2013, joining neural networks with probabilistic latent-variable models. The encoder does not output one point for an input; it estimates the mean and variance of a latent distribution. Through the reparameterization z=μ+σε, stochastic sampling becomes a differentiable computation, allowing gradients to train both encoder and decoder through the latent variable.</p><p>The objective asks the decoder to reconstruct data while a KL-divergence term keeps the latent distribution near a simple prior, creating a continuous space that can be sampled. VAEs support generation, anomaly detection, and representation learning and are often more stable to train than GANs, though pixel-level reconstruction can produce smooth or blurry samples. Their central contribution was making scalable approximate Bayesian inference compatible with end-to-end neural training.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -117,32 +117,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Diederik Kingma",
-        "zh": "迪德里克·金马"
-      },
+      "figureId": "diederik-kingma",
       "role": {
         "en": "Variational autoencoder co-author",
         "zh": "变分自编码器共同作者"
       },
-      "avatar": "resources/images/external/ai100-2013-variational-autoencoder/diederik-kingma-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-ai100-2013-variational-autoencoder-portrait"
     },
     {
-      "name": {
-        "en": "Max Welling",
-        "zh": "马克斯·韦林"
-      },
+      "figureId": "max-welling",
       "role": {
         "en": "Variational autoencoder co-author",
         "zh": "Variational autoencoder 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],
@@ -158,8 +145,8 @@
       "zh": "自动编码变分贝叶斯"
     },
     "workAuthors": {
-      "en": "Diederik Kingma and Max Welling, ICLR, 2014",
-      "zh": "迪德里克·金马、马克斯·韦林，ICLR，2014"
+      "en": "Diederik P. Kingma and Max Welling, ICLR, 2014",
+      "zh": "迪德里克·P·金马、马克斯·韦林，ICLR，2014"
     },
     "sourceLabel": "",
     "sourceUrl": "https://arxiv.org/abs/1312.6114"
@@ -169,8 +156,8 @@
     "zh": "BenchCouncil AI100 成就条目"
   },
   "quoteAttribution": {
-    "en": "<em>Auto-Encoding Variational Bayes</em>, Diederik Kingma and Max Welling, ICLR, 2014",
-    "zh": "《自动编码变分贝叶斯》, 迪德里克·金马、马克斯·韦林，ICLR，2014"
+    "en": "<em>Auto-Encoding Variational Bayes</em>, Diederik P. Kingma and Max Welling, ICLR, 2014",
+    "zh": "《自动编码变分贝叶斯》, 迪德里克·P·金马、马克斯·韦林，ICLR，2014"
   },
   "achievement": {
     "area": {
