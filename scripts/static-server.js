@@ -18,7 +18,12 @@ const MIME = {
     '.gif': 'image/gif',
     '.webp': 'image/webp',
     '.svg': 'image/svg+xml',
-    '.ico': 'image/x-icon'
+    '.ico': 'image/x-icon',
+    '.aac': 'audio/aac',
+    '.m4a': 'audio/mp4',
+    '.mp3': 'audio/mpeg',
+    '.ogg': 'audio/ogg',
+    '.wav': 'audio/wav'
 };
 
 function getArg(name, fallback) {
@@ -79,17 +84,52 @@ const server = http.createServer((req, res) => {
         }
 
         const ext = path.extname(filePath).toLowerCase();
-        res.writeHead(200, {
+        const rangeMatch = /^bytes=(\d*)-(\d*)$/i.exec(String(req.headers.range || '').trim());
+        let start = 0;
+        let end = Math.max(0, stat.size - 1);
+        let statusCode = 200;
+
+        if (rangeMatch) {
+            const requestedStart = rangeMatch[1] ? Number(rangeMatch[1]) : null;
+            const requestedEnd = rangeMatch[2] ? Number(rangeMatch[2]) : null;
+            if (requestedStart === null && requestedEnd !== null) {
+                start = Math.max(0, stat.size - requestedEnd);
+            } else {
+                start = requestedStart === null ? 0 : requestedStart;
+                end = requestedEnd === null ? end : Math.min(requestedEnd, end);
+            }
+            if (
+                !Number.isSafeInteger(start) ||
+                !Number.isSafeInteger(end) ||
+                start < 0 ||
+                start > end ||
+                start >= stat.size
+            ) {
+                res.writeHead(416, {
+                    'Content-Range': `bytes */${stat.size}`,
+                    'Accept-Ranges': 'bytes'
+                });
+                res.end();
+                return;
+            }
+            statusCode = 206;
+        }
+
+        const headers = {
             'Content-Type': MIME[ext] || 'application/octet-stream',
+            'Content-Length': String(stat.size === 0 ? 0 : end - start + 1),
+            'Accept-Ranges': 'bytes',
             'Cache-Control': 'no-cache'
-        });
+        };
+        if (statusCode === 206) headers['Content-Range'] = `bytes ${start}-${end}/${stat.size}`;
+        res.writeHead(statusCode, headers);
 
         if (req.method === 'HEAD') {
             res.end();
             return;
         }
 
-        const stream = fs.createReadStream(filePath);
+        const stream = fs.createReadStream(filePath, stat.size === 0 ? undefined : { start, end });
         stream.on('error', (error) => {
             if (res.headersSent) {
                 res.destroy(error);

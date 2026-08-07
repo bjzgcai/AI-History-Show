@@ -134,6 +134,8 @@ Recommended:
 
 `path` should point to an actual resource file, usually under `resources/`. Existence is validated by `validate:archive`, not by JSON Schema alone.
 
+Audio assets additionally require `language` and S3 `storage` metadata. Keep `path` as the local production source until a verified `deliveryUrl` is available. The storage block records `provider`, `bucket`, `objectKey`, `contentType`, and optional cache/public URL settings; it must never contain access credentials.
+
 ### `quizzes.json`
 
 Each quiz requires:

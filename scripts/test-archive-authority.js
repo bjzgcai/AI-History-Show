@@ -11,7 +11,7 @@ const { archiveStorylines, milestones } = require('../milestones-data.js');
 const sourcePurposeTaxonomy = require('../archive/taxonomies/source-purposes.json');
 const sourceSchema = require('../archive/schemas/source.schema.json');
 const sourceTypeTaxonomy = require('../archive/taxonomies/source-types.json');
-const { compileArchive } = require('./archive-compiler.js');
+const { compileArchive, resolveAudioUrl } = require('./archive-compiler.js');
 const { generateArchiveData, normalizeGeneratedTime, writeOutputsAtomically } = require('./generate-archive-data.js');
 
 function createTempDir() {
@@ -142,6 +142,30 @@ for (const storylineFile of fs.readdirSync(path.join(__dirname, '..', 'archive',
 }
 console.log('PASS production compiler uses Archive-owned milestone identities');
 
+assert.equal(
+    resolveAudioUrl({
+        path: 'resources/audio/example.mp3',
+        deliveryUrl: 'https://media.example/audio/example.mp3',
+        storage: { publicUrl: 'https://s3.example/audio/example.mp3' }
+    }),
+    'https://media.example/audio/example.mp3',
+    'explicit audio delivery URLs should take priority'
+);
+assert.equal(
+    resolveAudioUrl({
+        path: 'resources/audio/example.mp3',
+        storage: { publicUrl: 'https://s3.example/audio/example.mp3' }
+    }),
+    'https://s3.example/audio/example.mp3',
+    'S3 public URLs should take priority over the local fallback'
+);
+assert.equal(
+    resolveAudioUrl({ path: 'resources/audio/example.mp3', storage: {} }),
+    'resources/audio/example.mp3',
+    'audio assets should retain a local fallback until S3 delivery is configured'
+);
+console.log('PASS audio delivery URL priority');
+
 for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'events'), { withFileTypes: true })) {
     if (!eventEntry.isDirectory()) continue;
     const eventDir = path.join(__dirname, '..', 'archive', 'events', eventEntry.name);
@@ -190,6 +214,30 @@ assert.deepEqual(
     'compiled Archive milestone IDs must be unique'
 );
 assert.deepEqual(archiveStorylines, compiledArchive.storylines, 'generated storyline metadata should match Archive');
+const dartmouthMilestone = compiledArchive.milestones.find(
+    (milestone) =>
+        milestone.id === 'milestone-1956-dartmouth' && milestone.storyline && milestone.storyline.id === 'deep-learning'
+);
+assert.ok(dartmouthMilestone, 'the Dartmouth milestone should compile for the deep-learning storyline');
+assert.equal(
+    dartmouthMilestone.resources.audios[0].url,
+    'resources/audio/1956-dartmouth/dartmouth-dialogue-zh.mp3',
+    'the Dartmouth milestone should expose its selected narration audio'
+);
+assert.deepEqual(
+    dartmouthMilestone.resources.audios[0].storage,
+    {
+        provider: 'bza-s3',
+        bucket: 'ai-history',
+        objectKey: 'audio/delivery/1956-dartmouth/zh/dartmouth-dialogue-v1.mp3'
+    },
+    'the Dartmouth narration should retain its S3 object location without exposing credentials'
+);
+assert.equal(
+    fs.existsSync(path.join(__dirname, '..', dartmouthMilestone.resources.audios[0].url)),
+    true,
+    'the compiled Dartmouth narration audio should exist locally'
+);
 console.log('PASS production compiler emits Archive provenance');
 
 for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'events'), { withFileTypes: true })) {

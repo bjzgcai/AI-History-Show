@@ -185,6 +185,7 @@ const dualScreenHtml = fs.readFileSync(path.join(__dirname, '..', 'dual-screen.h
 const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
 const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
 const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
+const milestoneViewSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'milestone-view.js'), 'utf8');
 const pqMiniProgramQrPath = path.join(__dirname, '..', 'resources', 'pq.png');
 assert.match(
     indexHtml,
@@ -215,6 +216,41 @@ assert.match(
     indexHtml,
     /class="ui-back-button"[^>]*aria-label="返回">返回<\/button>/,
     'event details should expose a visible text back action before JavaScript initializes'
+);
+assert.match(
+    indexHtml,
+    /class="ui-audio-player" id="uiAudioPlayer" hidden>[\s\S]*?uiAudioPlayerPlay[\s\S]*?uiAudioPlayerProgress[\s\S]*?<\/div>\s*<button class="ui-back-button"/,
+    'event details should keep the optional audio player beside the back action and hidden by default'
+);
+assert.match(
+    indexHtml,
+    /\.ui-audio-player\s*\{[\s\S]*?left:\s*36px[\s\S]*?bottom:\s*16px[\s\S]*?border:\s*none[\s\S]*?\.ui-back-button\s*\{[\s\S]*?right:\s*36px[\s\S]*?bottom:\s*16px/,
+    'the desktop audio player should align with the back action without an orange outer border'
+);
+assert.match(
+    indexHtml,
+    /function renderUiAudioPlayer\(vm\)[\s\S]*?isUiBrowserActive\(\) && uiBrowserMode === 'detail' && Boolean\(nextUrl\)[\s\S]*?resetUiAudioPlayer\(\)[\s\S]*?player\.hidden = false/,
+    'the audio player should render only for audio-enabled event details'
+);
+assert.match(
+    indexHtml,
+    /function renderUiAudioPlayer\(vm\)[\s\S]*?uiAudioPlayerTitle\.textContent = tx\('audioNarration'\)/,
+    'the audio player should use the localized generic narration label instead of an event-specific title'
+);
+assert.match(
+    indexHtml,
+    /uiAudioPlayerPlay\.addEventListener\('click'[\s\S]*?audio\.play\(\)[\s\S]*?audio\.pause\(\)[\s\S]*?uiAudioPlayerProgress\.addEventListener\('input'[\s\S]*?currentTime = nextTime/,
+    'the audio player should support play, pause, and seeking'
+);
+assert.match(
+    milestoneViewSource,
+    /function getPrimaryAudio\(milestone\)[\s\S]*?I18n\.getLocale\(\)[\s\S]*?localizedCandidates\.find\([\s\S]*?candidate\.language[\s\S]*?=== locale\)[\s\S]*?localizedCandidates\.length === 0 \? validCandidates\[0\] : null/,
+    'audio selection should use the current locale and must not fall back to a differently localized narration'
+);
+assert.match(
+    indexHtml,
+    /window\.addEventListener\('languageChanged',[\s\S]*?resetUiAudioPlayer\(\)[\s\S]*?vmCache\.clear\(\)[\s\S]*?renderPage\(currentIndex/,
+    'language changes should stop and reset audio before loading the narration for the new locale'
 );
 assert.match(
     indexHtml,

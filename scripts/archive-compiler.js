@@ -107,6 +107,10 @@ function normalizeQuiz(quiz) {
     };
 }
 
+function resolveAudioUrl(asset) {
+    return asset.deliveryUrl || (asset.storage && asset.storage.publicUrl) || asset.path || '';
+}
+
 function loadEventBundle(root, eventId) {
     const eventDir = path.join(root, 'archive', 'events', eventId);
     if (!fileExists(eventDir)) throw new Error(`Missing archive event: ${eventId}`);
@@ -156,6 +160,7 @@ function buildMilestone(root, storyline, ref) {
     const selectedQuiz = variant.quizId ? quizMap.get(variant.quizId) : null;
 
     const imageAssets = selectedAssets.filter((asset) => ['image', 'svg', 'gif'].includes(asset.type));
+    const audioAssets = selectedAssets.filter((asset) => asset.type === 'audio');
     const imageMeta = {};
     for (const asset of imageAssets) imageMeta[asset.path] = assetImageMeta(asset);
 
@@ -203,6 +208,35 @@ function buildMilestone(root, storyline, ref) {
             videos: selectedAssets
                 .filter((asset) => asset.type === 'video')
                 .map((asset) => ({ id: asset.id, url: asset.path })),
+            ...(audioAssets.length > 0
+                ? {
+                      audios: audioAssets.map((asset) => ({
+                          id: asset.id,
+                          url: resolveAudioUrl(asset),
+                          sourcePath:
+                              (asset.storage && asset.storage.sourcePath) ||
+                              (/^https?:\/\//i.test(asset.path) ? '' : asset.path),
+                          title: localizePair(asset.caption),
+                          language: asset.language || '',
+                          contentType:
+                              (asset.storage && asset.storage.contentType) ||
+                              (String(asset.path || '')
+                                  .toLowerCase()
+                                  .endsWith('.mp3')
+                                  ? 'audio/mpeg'
+                                  : ''),
+                          ...(asset.storage
+                              ? {
+                                    storage: {
+                                        provider: asset.storage.provider || '',
+                                        bucket: asset.storage.bucket || '',
+                                        objectKey: asset.storage.objectKey || ''
+                                    }
+                                }
+                              : {})
+                      }))
+                  }
+                : {}),
             assetIds: selectedAssets.map((asset) => asset.id)
         },
         imageMeta,
@@ -322,5 +356,6 @@ function compileArchive(root) {
 }
 
 module.exports = {
-    compileArchive
+    compileArchive,
+    resolveAudioUrl
 };

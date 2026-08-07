@@ -72,6 +72,45 @@
         return null;
     }
 
+    function getPrimaryAudio(milestone) {
+        const candidates = [];
+        if (milestone && milestone.audio) {
+            candidates.push(...(Array.isArray(milestone.audio) ? milestone.audio : [milestone.audio]));
+        }
+        if (milestone && milestone.resources) {
+            const resources = milestone.resources;
+            if (resources.audio) {
+                candidates.push(...(Array.isArray(resources.audio) ? resources.audio : [resources.audio]));
+            }
+            if (resources.audios) {
+                candidates.push(...(Array.isArray(resources.audios) ? resources.audios : [resources.audios]));
+            }
+        }
+        if (milestone && milestone.audioUrl) candidates.push({ url: milestone.audioUrl });
+
+        const validCandidates = candidates.filter((candidate) => {
+            if (typeof candidate === 'string') return candidate.trim();
+            return candidate && String(candidate.url || candidate.src || candidate.path || candidate.file || '').trim();
+        });
+        const locale =
+            global.I18n && typeof global.I18n.getLocale === 'function' ? global.I18n.getLocale() : global.currentLocale;
+        const localizedCandidates = validCandidates.filter(
+            (candidate) => candidate && typeof candidate === 'object' && String(candidate.language || '').trim()
+        );
+        const item =
+            localizedCandidates.find((candidate) => String(candidate.language || '').trim() === locale) ||
+            (localizedCandidates.length === 0 ? validCandidates[0] : null);
+        if (!item) return null;
+        if (typeof item === 'string') return { url: item.trim(), title: '', source: '' };
+
+        return {
+            ...item,
+            url: String(item.url || item.src || item.path || item.file || '').trim(),
+            title: localize(item.title || item.label || item.name) || '',
+            source: localize(item.source || item.credit) || ''
+        };
+    }
+
     function collectPhotos(milestone, limit) {
         const photos = [];
         const seen = new Set();
@@ -157,6 +196,7 @@
         const quizzes = collectQuizzes(milestone);
         const commentarySections = buildCommentarySections(milestone);
         const primaryVideo = getPrimaryVideo(milestone);
+        const primaryAudio = getPrimaryAudio(milestone);
         const description = localize(milestone.description) || '';
         const location = localizeObject(milestone.location || { name: '', country: '', coordinates: [] });
         const quote = String(localize(milestone.quote) || '').trim();
@@ -176,6 +216,8 @@
             archivePhotos: photos.slice(1),
             primaryVideo,
             videoEmbedUrl: primaryVideo ? primaryVideo.embed_url : '',
+            primaryAudio,
+            audioUrl: primaryAudio ? primaryAudio.url : '',
             quoteHtml: quote && quote !== '待补充' ? quote : '',
             quoteAttribution: String(localize(milestone.quoteAttribution) || '').trim(),
             quoteLabel: String(localize(milestone.quoteLabel) || '').trim(),
@@ -190,6 +232,7 @@
     global.MilestoneView = {
         normalizeMilestone,
         collectPhotos,
+        getPrimaryAudio,
         isWorkAttribution,
         splitDescription,
         stripHtml

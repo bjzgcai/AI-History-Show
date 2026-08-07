@@ -27,6 +27,48 @@
       "subcaption": {
         "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
       },
+      "language": {
+        "type": "string",
+        "minLength": 2
+      },
+      "deliveryUrl": {
+        "type": "string",
+        "format": "uri"
+      },
+      "storage": {
+        "type": "object",
+        "properties": {
+          "provider": {
+            "const": "bza-s3"
+          },
+          "bucket": {
+            "type": "string",
+            "minLength": 1
+          },
+          "objectKey": {
+            "type": "string",
+            "pattern": "^audio/"
+          },
+          "sourcePath": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contentType": {
+            "type": "string",
+            "pattern": "^audio/"
+          },
+          "cacheControl": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publicUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": ["provider", "bucket", "objectKey", "contentType"],
+        "additionalProperties": false
+      },
       "sourceId": {
         "$ref": "shared.schema.json#/$defs/archiveId"
       },
@@ -65,6 +107,19 @@
     "anyOf": [
       { "required": ["sourceId"] },
       { "required": ["sourceIds"] }
+    ],
+    "allOf": [
+      {
+        "if": {
+          "properties": {
+            "type": { "const": "audio" }
+          },
+          "required": ["type"]
+        },
+        "then": {
+          "required": ["language", "storage"]
+        }
+      }
     ],
     "additionalProperties": true
   }
