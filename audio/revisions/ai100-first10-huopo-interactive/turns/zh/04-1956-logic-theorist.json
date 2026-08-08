@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huopo-interactive-v5-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 4,
+    "eventId": "1956-logic-theorist",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "1950 年代的计算机连算力都很有限，怎么会有人先让它去证明数学定理？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "因为艾伦·纽厄尔、赫伯特·西蒙和 J·C·肖想验证的，正是推理能否被写成程序。1955 至 1956 年间，他们开发 Logic Theorist，让计算机尝试证明《数学原理》中的命题。",
+            "sourceIds": ["source-the-logic-theory-machine"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "它难道把所有公理和规则都从头到尾试一遍？那不是很快就会爆炸吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "正因如此，它没有只靠盲目枚举。系统把公理、定理和变换规则表示为符号结构，再从目标出发搜索证明路径，并使用启发式规则优先探索更可能成功的变换，放弃缺乏希望的分支。",
+            "sourceIds": ["source-the-logic-theory-machine"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "“更可能成功”听起来像猜测。这样得到的证明还可靠吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "可靠性仍由形式规则保证。启发式只决定先搜索哪条路，不会把错误步骤变成正确证明；它改变的是寻找证明的效率，而不是证明成立的标准。",
+            "sourceIds": ["source-the-logic-theory-machine"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "所以它真正证明的，不只是某几道题，而是推理过程本身可以被拆开？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "对。Logic Theorist 展示了推理可以组织成符号表示、搜索和选择组成的可执行过程，也成为符号 AI、自动定理证明和认知建模的早期范例。接下来的问题，就是怎样让这种证明更系统、更高效。",
+            "sourceIds": [
+                "source-carnegie-mellon-university-archives",
+                "source-allen-newell-acm-a-m-turing-award",
+                "source-the-logic-theory-machine"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-interactive-closing"
+        }
+    ]
+}

@@ -187,6 +187,7 @@ npm run build:static
 ```
 
 The bundle contains the presentation pages, runtime data, `shared/`, browser-required `resources/`, required `public/` assets, and `.nojekyll`. It excludes Archive source JSON, management tools, reports, research files, scripts, and retired candidate/video metadata helpers.
+Generated audio under `resources/audio/` is also excluded because production audio will be served from object storage.
 
 For the complete entity graph, compile sequence, failure safeguards, and deployment boundary, see [`docs/archive-data-flow.md`](docs/archive-data-flow.md). For the Archive entity layout and source/asset relationships, see [`archive/README.md`](archive/README.md). For retained browser resources, see [`docs/archive-resources-retention.md`](docs/archive-resources-retention.md).
 
@@ -212,6 +213,10 @@ AI-History-Show/
 │   ├── storylines/               # Storyline membership, variants, enablement, and order
 │   └── events/                   # Canonical event JSON, evidence, assets, quizzes, and variants
 │
+├── audio/                        # Audio revision configs, sourced turns, and voice profiles
+│   ├── revisions/                # Declarative candidate revisions
+│   └── voices/                   # Reusable TTS voice and delivery profiles
+│
 ├── manage/                      # Local Archive content tools
 │   ├── admin.html                # Writable Archive JSON editor
 │   └── server.js                 # Archive-only local management server
@@ -224,7 +229,8 @@ AI-History-Show/
 │   └── utils.js
 │
 ├── scripts/                     # Generation, validation, testing, and audit scripts
-│   ├── generate-archive-data.js # Default Archive-native generator
+│   ├── audio/                    # Audio planning, TTS, revision, review, and release pipeline
+│   ├── generate-archive-data.js  # Default Archive-native generator
 │   ├── archive-compiler.js       # Archive storyline/event compiler
 │   ├── test-archive-authority.js
 │   ├── test-layout-router.js
@@ -241,6 +247,10 @@ AI-History-Show/
 ├── DEPLOYMENT.md                # Deployment guide (Nginx / GitHub Pages / Gitee)
 └── README.md                    # This file
 ```
+
+Audio production uses the workflow documented in [`audio/README.md`](audio/README.md). Source turns
+and generation settings belong under `audio/`; generated MP3 files and derived manifests are kept out
+of Git and will be distributed through object storage.
 
 ---
 

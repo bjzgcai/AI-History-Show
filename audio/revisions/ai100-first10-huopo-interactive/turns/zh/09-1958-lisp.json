@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huopo-interactive-v5-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 9,
+    "eventId": "1958-lisp",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "前面机器一直在规则中寻找证明。研究者又该用什么语言，把这些符号和规则写进计算机？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "约翰·麦卡锡给出了一种影响深远的答案。他在 1958 年开始设计 LISP，并在 1960 年论文中用 S 表达式和递归函数系统说明这种语言；列表成为它组织符号信息的核心结构。",
+            "sourceIds": ["source-recursive-functions-of-symbolic-expressions"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "常说 LISP 里“代码也是数据”，这句话到底是什么意思？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "程序和程序处理的数据都可以表示成列表。于是程序能够读取、构造甚至改写表示程序的结构；这种统一表示特别适合需要操作公式、规则、语句和搜索过程的符号 AI。",
+            "sourceIds": ["source-recursive-functions-of-symbolic-expressions"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "可 CONS、CAR、CDR 这些原语这么少，真的足够构造复杂系统吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "恰恰因为基础操作少而且可以组合，研究者能够用它们构造递归函数和更高层抽象。再加上 QUOTE、COND 与 EVAL 等机制，LISP 可以逐层搭出定理证明、规划、自然语言和知识表示程序。",
+            "sourceIds": ["source-recursive-functions-of-symbolic-expressions"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "所以它真正交给 AI 的，不只是一门语法，而是一种处理符号的方式？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "没错。LISP 还推动了交互式开发、垃圾回收等编程实践，并持续影响函数式编程和可编程符号系统。下一步，Prolog 会把这个问题再推进一层：能不能让事实和规则本身直接成为程序？",
+            "sourceIds": [
+                "source-lisp-i-programmer-s-manual",
+                "source-history-of-lisp",
+                "source-recursive-functions-of-symbolic-expressions"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-interactive-closing"
+        }
+    ]
+}

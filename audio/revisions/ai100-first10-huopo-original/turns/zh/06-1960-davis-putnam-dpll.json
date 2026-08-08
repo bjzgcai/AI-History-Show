@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huoposhuanglang-v3-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 6,
+    "eventId": "1960-davis-putnam-dpll",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "当逻辑公式变成成千上万个真假选择，机器怎样避免把所有组合都试一遍？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-revision"
+        },
+        {
+            "role": "B",
+            "text": "戴维斯与普特南在 1960 年提出面向量词理论和布尔可满足性问题的计算过程；1962 年，戴维斯、洛格曼和洛夫兰将其发展为后来称作 DPLL 的机器程序。前者通过消去变量变换子句集合，后者以分支搜索配合单元传播等简化规则判断公式是否可满足。",
+            "sourceIds": ["source-a-computing-procedure-for-quantification-theory"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "variant.displayDescription.background"
+        },
+        {
+            "role": "A",
+            "text": "变量一多，搜索树还是会迅速膨胀。DPLL 怎样剪掉无效分支？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-revision"
+        },
+        {
+            "role": "B",
+            "text": "DPLL 把逻辑推理组织成一棵可剪枝的搜索树：选择变量赋值，传播由此被迫确定的结果，在出现矛盾时回溯。现代 SAT 求解器又加入子句学习、重启和更强启发式，但搜索与传播的基本框架仍源于这条路线，并广泛服务于验证、规划、配置和约束求解。",
+            "sourceIds": ["source-a-computing-procedure-for-quantification-theory"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "variant.displayDescription.explanation"
+        },
+        {
+            "role": "A",
+            "text": "启发式和剪枝可以把搜索推得很远，但它们究竟能在多大程度上绕开问题固有的复杂性？",
+            "sourceIds": [
+                "source-a-machine-program-for-theorem-proving",
+                "source-wikimedia-commons-hilary-putnam",
+                "source-a-computing-procedure-for-quantification-theory"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-closing-revision"
+        }
+    ]
+}

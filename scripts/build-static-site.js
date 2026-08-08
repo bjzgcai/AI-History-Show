@@ -42,6 +42,7 @@ function copyRequired(source, destination, options = {}) {
 
 function includeStaticFile(source) {
     const relativePath = path.relative(ROOT, source).split(path.sep).join('/');
+    if (relativePath === 'resources/audio' || relativePath.startsWith('resources/audio/')) return false;
     if (OMITTED_STATIC_FILES.has(relativePath)) return false;
     if (RIGHTS_REVIEW_STATIC_FILES.has(relativePath)) return false;
     if (RETIRED_RESOURCE_METADATA.has(relativePath)) return false;
@@ -102,6 +103,11 @@ function validateBundle() {
         fs.readdirSync(path.join(OUTPUT, 'resources', 'videos')).some((file) => file.endsWith('.json')),
         false,
         'Legacy video metadata must not be published'
+    );
+    assert.equal(
+        fs.existsSync(path.join(OUTPUT, 'resources', 'audio')),
+        false,
+        'Generated audio must be delivered through object storage, not the static bundle'
     );
 
     for (const htmlFile of ['index.html', 'dual-screen.html']) {
