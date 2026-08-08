@@ -247,6 +247,17 @@ const mobileRequirements = [
         pattern:
             /function fitAvatarFallbackLabels\(root = refs\.uiBrowserMain\)[\s\S]*?lineCounts\[lineCounts\.length - 1\] !== 1[\s\S]*?classList\.add\('is-squeezed'\)[\s\S]*?--avatar-fallback-scale/,
         message: 'single-character fallback avatar orphans are centered on one squeezed line'
+    },
+    {
+        pattern:
+            /function renderUiDetail\(\)[\s\S]*?uiNarrationButton\.onclick = \(\) => toggleBenchNarration\(vm\)/,
+        message: 'every unified event detail page binds the narration control'
+    },
+    {
+        pattern:
+            /id="dualNarrationButton"[\s\S]*?function renderPage\(index, renderOptions = \{\}\)[\s\S]*?dualNarrationButton\.onclick = \(\) => toggleNarration\(vm\)/,
+        haystack: dualScreenSource,
+        message: 'every fixed dual-screen event page binds the narration control'
     }
 ];
 
