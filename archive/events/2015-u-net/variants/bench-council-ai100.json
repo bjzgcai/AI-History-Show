@@ -118,45 +118,26 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Olaf Ronneberger",
-        "zh": "奥拉夫·龙讷贝格"
-      },
+      "figureId": "olaf-ronneberger",
       "role": {
         "en": "Co-author of U-Net",
         "zh": "U-Net 共同作者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2015-u-net-olaf-ronneberger"
     },
     {
-      "name": {
-        "en": "Thomas Brox",
-        "zh": "托马斯·布洛克斯"
-      },
+      "figureId": "thomas-brox",
       "role": {
         "en": "Co-author of U-Net",
         "zh": "U-Net 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Philipp Fischer",
-        "zh": "菲利普·菲舍尔"
-      },
+      "figureId": "philipp-fischer",
       "role": {
         "en": "Co-author of U-Net",
         "zh": "U-Net 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      }
     }
   ],
   "photos": [],

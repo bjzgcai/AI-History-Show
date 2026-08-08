@@ -117,32 +117,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Alec Radford",
-        "zh": "亚历克·拉德福德"
-      },
+      "figureId": "alec-radford",
       "role": {
         "en": "DCGAN lead author",
         "zh": "DCGAN 主要作者"
       },
-      "avatar": "resources/images/figures/alec-radford.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-alec-radford"
     },
     {
-      "name": {
-        "en": "Soumith Chintala",
-        "zh": "苏米特·钦塔拉"
-      },
+      "figureId": "soumith-chintala",
       "role": {
         "en": "DCGAN co-author",
         "zh": "DCGAN 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "photos": [],

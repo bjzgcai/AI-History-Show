@@ -33,31 +33,20 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Marvin Minsky",
-        "zh": "马文·明斯基"
-      },
+      "figureId": "marvin-minsky",
       "role": {
         "en": "Co-builder of SNARC",
         "zh": "SNARC 共同建造者"
       },
-      "avatar": "resources/images/figures/marvin-minsky.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-marvin-minsky"
     },
     {
-      "name": {
-        "en": "Dean Edmonds",
-        "zh": "迪恩·埃德蒙兹"
-      },
+      "figureId": "dean-edmonds",
       "role": {
         "en": "Co-builder of SNARC",
         "zh": "SNARC 共同建造者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      }
     }
   ],
   "organizations": [],

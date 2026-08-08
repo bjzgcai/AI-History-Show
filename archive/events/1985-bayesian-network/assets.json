@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "judea-pearl"
+    ]
   },
   {
     "id": "asset-1985-bayesian-network-dag",

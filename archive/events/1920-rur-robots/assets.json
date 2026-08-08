@@ -29,7 +29,10 @@
     "usage": [
       "variant:humanistic-cycle"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "karel-capek"
+    ]
   },
   {
     "id": "asset-1920-rur-robots-labor-revolt",

@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "laurens-van-der-maaten"
+    ]
   },
   {
     "id": "asset-2008-tsne-neighbor-probabilities",
@@ -76,5 +79,43 @@
       "variant:bench-council-ai100"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-2008-tsne-figure-avatar-geoffrey-hinton",
+    "type": "image",
+    "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
+    "role": "portrait",
+    "caption": {
+      "en": "Geoffrey Hinton portrait",
+      "zh": "杰弗里·辛顿肖像"
+    },
+    "subcaption": {
+      "en": "Event-specific biographical image retained during the global figure migration.",
+      "zh": "全局人物库迁移期间保留的事件专属人物图片。"
+    },
+    "sourceId": "source-visualizing-data-using-t-sne",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "displayUsage": {
+      "en": "Used as a biographical figure image in this exhibition; review the recorded source terms before redistribution.",
+      "zh": "用于本展览的人物资料展示；再次分发前应复核所记录来源的使用条款。"
+    },
+    "usage": [
+      "figure-avatar"
+    ],
+    "editable": true,
+    "figureIds": [
+      "geoffrey-hinton"
+    ],
+    "sourceName": {
+      "en": "Legacy event record for 1986-backpropagation",
+      "zh": "Legacy event record for 1986-backpropagation"
+    },
+    "sourceUrl": "https://www.benchcouncil.org/"
   }
 ]

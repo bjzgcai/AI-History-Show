@@ -33,7 +33,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "ross-quinlan"
+    ]
   },
   {
     "id": "asset-1986-id3-explainer",

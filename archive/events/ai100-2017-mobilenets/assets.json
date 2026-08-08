@@ -1,109 +1,109 @@
 [
-    {
-        "id": "asset-2017-mobilenets-paper-first-page",
-        "type": "image",
-        "path": "resources/images/external/ai100-2017-mobilenets/mobilenets-paper-first-page.png",
-        "role": "paper-page",
-        "caption": {
-            "en": "MobileNets paper first page",
-            "zh": "MobileNets 论文首页"
-        },
-        "subcaption": {
-            "en": "First page of the original paper led by Andrew G. Howard",
-            "zh": "安德鲁·霍华德领衔的 MobileNets 原始论文首页"
-        },
-        "sourceId": "source-2017-mobilenets-primary",
-        "sourceName": {
-            "en": "arXiv",
-            "zh": "arXiv"
-        },
-        "sourceUrl": "https://arxiv.org/abs/1704.04861",
-        "rights": {
-            "status": "external-reference",
-            "license": {
-                "en": "First-page preview generated from the arXiv-hosted manuscript for reference display only.",
-                "zh": "根据 arXiv 托管论文生成的首页预览，仅用于资料引用展示。"
-            },
-            "sourceUrl": "https://arxiv.org/pdf/1704.04861"
-        },
-        "displayUsage": {
-            "en": "Primary MobileNets event image and overview thumbnail",
-            "zh": "MobileNets 事件首图与首页缩略图"
-        },
-        "usage": [
-            "variant:bench-council-ai100"
-        ],
-        "editable": true
+  {
+    "id": "asset-2017-mobilenets-paper-first-page",
+    "type": "image",
+    "path": "resources/images/external/ai100-2017-mobilenets/mobilenets-paper-first-page.png",
+    "role": "paper-page",
+    "caption": {
+      "en": "MobileNets paper first page",
+      "zh": "MobileNets 论文首页"
     },
-    {
-        "id": "asset-2017-mobilenets-applications",
-        "type": "image",
-        "path": "resources/images/external/ai100-2017-mobilenets/mobilenets-applications-figure.png",
-        "role": "paper-figure",
-        "caption": {
-            "en": "MobileNets application scenarios",
-            "zh": "MobileNets 应用场景"
-        },
-        "subcaption": {
-            "en": "The original paper illustrates object detection, face attributes, fine-grained classification, and landmark recognition on mobile devices.",
-            "zh": "原论文展示了 MobileNets 在移动设备上的目标检测、人脸属性、细粒度分类与地标识别应用。"
-        },
-        "sourceId": "source-2017-mobilenets-primary",
-        "sourceName": {
-            "en": "arXiv",
-            "zh": "arXiv"
-        },
-        "sourceUrl": "https://arxiv.org/abs/1704.04861",
-        "rights": {
-            "status": "external-reference",
-            "license": {
-                "en": "Figure preview generated from the arXiv-hosted source package; embedded third-party image credits are retained in the figure.",
-                "zh": "根据 arXiv 托管源码包生成的论文插图预览；图中保留了第三方图片的原始署名。"
-            },
-            "sourceUrl": "https://arxiv.org/e-print/1704.04861"
-        },
-        "displayUsage": {
-            "en": "Second supporting image for the MobileNets achievement page",
-            "zh": "MobileNets 成就页面的第二张资料图片"
-        },
-        "usage": [
-            "variant:bench-council-ai100"
-        ],
-        "editable": true
+    "subcaption": {
+      "en": "First page of the original paper led by Andrew G. Howard",
+      "zh": "安德鲁·霍华德领衔的 MobileNets 原始论文首页"
     },
-    {
-        "id": "asset-2017-mobilenets-explainer",
-        "type": "svg",
-        "path": "resources/images/bench-council-ai100/explainers/2017-2017-mobilenets_process.svg",
-        "role": "architecture-explainer",
-        "caption": {
-            "en": "MobileNets process explainer",
-            "zh": "MobileNets流程解释图"
-        },
-        "subcaption": {
-            "en": "Depthwise separable convolution and inverted residual bottlenecks",
-            "zh": "深度可分离卷积与倒残差瓶颈"
-        },
-        "sourceId": "source-2017-mobilenets-primary",
-        "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://arxiv.org/abs/1704.04861",
-        "rights": {
-            "status": "documented-in-legacy",
-            "license": {
-                "en": "Original local SVG redraw; source figures are not copied.",
-                "zh": "本地原创 SVG 重绘；未复制来源图形。"
-            }
-        },
-        "displayUsage": {
-            "en": "Architecture and process explainer",
-            "zh": "架构与流程解释图"
-        },
-        "usage": [
-            "variant:bench-council-ai100"
-        ],
-        "editable": true
-    }
+    "sourceId": "source-2017-mobilenets-primary",
+    "sourceName": {
+      "en": "arXiv",
+      "zh": "arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1704.04861",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "First-page preview generated from the arXiv-hosted manuscript for reference display only.",
+        "zh": "根据 arXiv 托管论文生成的首页预览，仅用于资料引用展示。"
+      },
+      "sourceUrl": "https://arxiv.org/pdf/1704.04861"
+    },
+    "displayUsage": {
+      "en": "Primary MobileNets event image and overview thumbnail",
+      "zh": "MobileNets 事件首图与首页缩略图"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2017-mobilenets-applications",
+    "type": "image",
+    "path": "resources/images/external/ai100-2017-mobilenets/mobilenets-applications-figure.png",
+    "role": "paper-figure",
+    "caption": {
+      "en": "MobileNets application scenarios",
+      "zh": "MobileNets 应用场景"
+    },
+    "subcaption": {
+      "en": "The original paper illustrates object detection, face attributes, fine-grained classification, and landmark recognition on mobile devices.",
+      "zh": "原论文展示了 MobileNets 在移动设备上的目标检测、人脸属性、细粒度分类与地标识别应用。"
+    },
+    "sourceId": "source-2017-mobilenets-primary",
+    "sourceName": {
+      "en": "arXiv",
+      "zh": "arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1704.04861",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Figure preview generated from the arXiv-hosted source package; embedded third-party image credits are retained in the figure.",
+        "zh": "根据 arXiv 托管源码包生成的论文插图预览；图中保留了第三方图片的原始署名。"
+      },
+      "sourceUrl": "https://arxiv.org/e-print/1704.04861"
+    },
+    "displayUsage": {
+      "en": "Second supporting image for the MobileNets achievement page",
+      "zh": "MobileNets 成就页面的第二张资料图片"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2017-mobilenets-explainer",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2017-2017-mobilenets_process.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "en": "MobileNets process explainer",
+      "zh": "MobileNets流程解释图"
+    },
+    "subcaption": {
+      "en": "Depthwise separable convolution and inverted residual bottlenecks",
+      "zh": "深度可分离卷积与倒残差瓶颈"
+    },
+    "sourceId": "source-2017-mobilenets-primary",
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1704.04861",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      }
+    },
+    "displayUsage": {
+      "en": "Architecture and process explainer",
+      "zh": "架构与流程解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
 ]

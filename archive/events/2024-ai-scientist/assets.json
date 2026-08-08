@@ -101,7 +101,10 @@
     "usage": [
       "variant:deep-learning"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "berkeley-team"
+    ]
   },
   {
     "id": "asset-2024-ai-scientist-people-02",
@@ -127,6 +130,9 @@
     "usage": [
       "variant:deep-learning"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "sakana-ai-team"
+    ]
   }
 ]

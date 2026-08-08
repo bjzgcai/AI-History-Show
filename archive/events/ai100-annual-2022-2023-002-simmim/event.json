@@ -38,53 +38,37 @@
   "figures": [
     {
       "figureId": "zhenda-xie",
-      "name": {
-        "en": "Zhenda Xie",
-        "zh": "谢振达"
-      },
       "role": {
         "en": "Co-first author of the SimMIM paper",
         "zh": "SimMIM 论文共同第一作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "zheng-zhang",
-      "name": {
-        "en": "Zheng Zhang",
-        "zh": "张拯"
-      },
       "role": {
         "en": "Co-first author of the SimMIM paper",
         "zh": "SimMIM 论文共同第一作者"
       },
-      "organizationIds": []
+      "primary": true
     },
     {
       "figureId": "yue-cao",
-      "name": {
-        "en": "Yue Cao",
-        "zh": "曹越"
-      },
       "role": {
         "en": "Co-first author of the SimMIM paper",
         "zh": "SimMIM 论文共同第一作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-002-simmim-portrait-yue-cao"
     },
     {
       "figureId": "han-hu",
-      "name": {
-        "en": "Han Hu",
-        "zh": "胡瀚"
-      },
       "role": {
         "en": "Lead author of the SimMIM paper",
         "zh": "SimMIM 论文主要作者"
       },
-      "organizationIds": [],
-      "avatar": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg"
+      "primary": true,
+      "avatarAssetId": "asset-annual-002-simmim-portrait-han-hu"
     }
   ],
   "organizations": [],

@@ -112,31 +112,19 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "David Ferrucci",
-        "zh": "戴维·费鲁奇"
-      },
+      "figureId": "david-ferrucci",
       "role": {
         "en": "Principal investigator of the Watson / DeepQA team",
         "zh": "Watson / DeepQA 团队负责人"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2011-ibm-watson-david-ferrucci"
     },
     {
-      "name": {
-        "en": "IBM DeepQA team",
-        "zh": "IBM DeepQA 团队"
-      },
+      "figureId": "ibm-deepqa-team",
       "role": {
         "en": "Built the question-answering system",
         "zh": "构建问答系统"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      }
     }
   ],
   "photos": [],

@@ -1,7 +1,7 @@
 [
   {
     "id": "ai100-annual-2022-2023-028-blip-2-quiz-1",
-    "storylineId": "bench-council-ai100-2022-2023",
+    "storylineId": "bench-council-ai100",
     "question": {
       "en": "Which BLIP-2 components remain frozen during its main pretraining recipe?",
       "zh": "BLIP-2 的主要预训练方案中，哪些组件保持冻结？"

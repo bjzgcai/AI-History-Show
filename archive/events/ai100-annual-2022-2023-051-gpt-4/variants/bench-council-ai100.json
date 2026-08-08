@@ -1,0 +1,321 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-annual-2022-2023-051-gpt-4",
+  "presentationMode": "archive",
+  "displayTitle": {
+    "en": "GPT-4",
+    "zh": "GPT-4"
+  },
+  "displayDescription": {
+    "en": "<p>GPT-4 was introduced as a large multimodal model that accepts image and text inputs and produces text outputs. OpenAI reported broad improvements over GPT-3.5 on professional and academic benchmarks while emphasizing that the model still hallucinates, has a limited context window and can make reasoning errors.</p><p>The release paired capability evaluation with a technical report and system card describing adversarial testing, expert feedback and post-training safety work. This combined treatment of capability and risk made the GPT-4 release an important reference point for later frontier-model evaluations.</p>",
+    "zh": "<p>GPT-4 被介绍为能够接收图像与文本输入、生成文本输出的大型多模态模型。OpenAI 报告它在专业与学术基准上普遍超过 GPT-3.5，同时强调模型仍会产生幻觉、上下文窗口有限，并可能出现推理错误。</p><p>这次发布同时提供技术报告与系统卡，说明对抗测试、专家反馈和后训练安全工作。这种同时呈现能力与风险的发布方式，使 GPT-4 成为后来前沿模型评测的重要参照点。</p>"
+  },
+  "emphasis": [
+    "benchcouncil-annual-2022-2023",
+    "official-row-51"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "OpenAI",
+        "zh": "OpenAI"
+      },
+      "title": {
+        "en": "GPT-4 research release",
+        "zh": "《GPT-4 research release》"
+      },
+      "description": {
+        "en": "The official release page summarizes multimodal inputs, benchmark evidence, limitations and the associated safety work.",
+        "zh": "官方发布页概述多模态输入、基准证据、局限及相关安全工作。"
+      },
+      "url": "https://openai.com/index/gpt-4-research/",
+      "source": "https://openai.com/index/gpt-4-research/",
+      "license": {
+        "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+      },
+      "usage": {
+        "en": "Primary technical or official release evidence",
+        "zh": "主要技术或官方发布证据"
+      },
+      "action": {
+        "en": "Open GPT-4 research page",
+        "zh": "打开 GPT-4 研究页面"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-annual-051-gpt-4-paper-exam-performance",
+    "asset-annual-051-gpt-4-record"
+  ],
+  "overviewImageAssetId": "asset-annual-051-gpt-4-paper-exam-performance",
+  "sourceIds": [
+    "source-primary-record",
+    "source-openalex-record",
+    "source-benchcouncil-annual",
+    "source-technical-report",
+    "source-system-card",
+    "source-gpt4-figure-4",
+    "source-openai-founding",
+    "source-sam-altman-ted",
+    "source-greg-brockman-ted",
+    "source-openai-logo"
+  ],
+  "claimIds": [
+    "claim-annual-membership",
+    "claim-publication-record",
+    "claim-contributor-record",
+    "claim-multimodal-input",
+    "claim-limitations"
+  ],
+  "quizId": "ai100-annual-2022-2023-051-gpt-4-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Large language models had already shown strong few-shot and instruction-following behavior, but leading systems were still mostly presented as text-only assistants. GPT-4 brought image input, stronger benchmark performance and a more extensive public safety evaluation into one frontier-model release.",
+        "zh": "大语言模型已经展示出较强的少样本学习与指令跟随能力，但领先系统仍主要以纯文本助手呈现。GPT-4 在一次前沿模型发布中同时带来图像输入、更强基准表现和更广泛的公开安全评测。"
+      },
+      "sourceIds": [
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "GPT-4 uses a transformer-based next-token prediction system whose implementation details were intentionally not disclosed in the technical report. Its product behavior combines large-scale pretraining with post-training alignment, while the release evidence focuses on measured capabilities, limitations and risk mitigations rather than a reproducible architecture recipe.",
+        "zh": "GPT-4 使用基于 Transformer 的下一 token 预测系统，但技术报告有意不披露具体实现细节。其产品行为结合大规模预训练与后训练对齐，公开证据重点放在已测能力、局限和风险缓解，而不是可复现的架构配方。"
+      },
+      "sourceIds": [
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat GPT-4 as a major 2023 capability threshold for multimodal general-purpose assistants and as a case study in evaluating opaque frontier systems. Its legacy includes both wider deployment of high-capability models and sharper debate about reproducibility, benchmark saturation, safety testing and model access.",
+        "zh": "专家通常把 GPT-4 视为 2023 年多模态通用助手的重要能力门槛，也把它视为评测不透明前沿系统的典型案例。它既推动高能力模型广泛部署，也加剧了围绕可复现性、基准饱和、安全测试和模型访问的讨论。"
+      },
+      "sourceIds": [
+        "source-primary-record"
+      ]
+    }
+  ],
+  "category": {
+    "en": "BenchCouncil AI100 (2022-2023)",
+    "zh": "BenchCouncil AI100（2022-2023）"
+  },
+  "figures": [
+    {
+      "figureId": "openai-company",
+      "role": {
+        "en": "Company behind GPT-4 and ChatGPT",
+        "zh": "GPT-4 与 ChatGPT 的开发公司"
+      }
+    }
+  ],
+  "quote": {
+    "en": "GPT-4",
+    "zh": "GPT-4"
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "GPT-4 official project page",
+      "zh": "GPT-4 官方项目页面"
+    },
+    "workAuthors": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://openai.com/index/gpt-4-research/"
+  },
+  "quotePage": {
+    "en": "Official project record",
+    "zh": "官方项目记录"
+  },
+  "quoteAttribution": {
+    "en": "GPT-4 official project page",
+    "zh": "GPT-4 官方项目页面"
+  },
+  "achievement": {
+    "area": {
+      "en": "LLM",
+      "zh": "大语言模型"
+    },
+    "method": {
+      "en": "Multimodal prompting plus post-trained general-purpose assistance",
+      "zh": "多模态提示与后训练通用助手能力"
+    },
+    "artifact": {
+      "en": "GPT-4 model and evaluation release",
+      "zh": "GPT-4 模型与评测发布"
+    },
+    "material": {
+      "en": "Primary publication or official release evidence, implementation materials and the original local explainer",
+      "zh": "主论文或官方发布证据、实现材料与本地原创解释图"
+    },
+    "demo": {
+      "en": "Follow the four-stage path and compare what enters, what is learned and what the system produces.",
+      "zh": "沿四阶段路径观察输入、学习内容与系统输出。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Inputs",
+          "zh": "输入"
+        },
+        "text": {
+          "en": "Text and images",
+          "zh": "文本与图像"
+        }
+      },
+      {
+        "label": {
+          "en": "Evidence",
+          "zh": "证据"
+        },
+        "text": {
+          "en": "Benchmarks, technical report and system card",
+          "zh": "基准、技术报告与系统卡"
+        }
+      },
+      {
+        "label": {
+          "en": "Limits",
+          "zh": "局限"
+        },
+        "text": {
+          "en": "Hallucinations and reasoning errors remain",
+          "zh": "仍存在幻觉与推理错误"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Text and image prompts",
+        "zh": "文本与图像提示"
+      },
+      {
+        "en": "Frontier model",
+        "zh": "前沿模型"
+      },
+      {
+        "en": "Post-training alignment",
+        "zh": "后训练对齐"
+      },
+      {
+        "en": "Text response and evaluation",
+        "zh": "文本响应与评测"
+      }
+    ],
+    "demoImage": "resources/images/benchcouncil-ai100-annual/annual-051-gpt-4_record.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Technical cue",
+          "zh": "技术线索"
+        },
+        "text": {
+          "en": "Separate the public capability evidence from undisclosed implementation details",
+          "zh": "这张图以四个阶段解释：文本与图像提示、前沿模型、后训练对齐、文本响应与评测。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Trace the arrows, then identify which stage reuses a pretrained component and which stage learns new information.",
+          "zh": "沿箭头逐步查看，并判断哪个阶段复用预训练组件、哪个阶段学习新信息。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "OpenAI",
+          "zh": "OpenAI"
+        },
+        "title": {
+          "en": "GPT-4 research release",
+          "zh": "《GPT-4 research release》"
+        },
+        "description": {
+          "en": "The official release page summarizes multimodal inputs, benchmark evidence, limitations and the associated safety work.",
+          "zh": "官方发布页概述多模态输入、基准证据、局限及相关安全工作。"
+        },
+        "url": "https://openai.com/index/gpt-4-research/",
+        "source": "https://openai.com/index/gpt-4-research/",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+        },
+        "usage": {
+          "en": "Primary technical or official release evidence",
+          "zh": "主要技术或官方发布证据"
+        },
+        "action": {
+          "en": "Open GPT-4 research page",
+          "zh": "打开 GPT-4 研究页面"
+        }
+      }
+    ],
+    "annualRecord": {
+      "officialOrder": 51,
+      "area": "LLM",
+      "work": "GPT-4",
+      "publication": "",
+      "citation": "",
+      "contributors": "",
+      "institution": "OpenAI",
+      "country": "USA",
+      "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+    }
+  },
+  "location": {
+    "name": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Generated from official annual row 51; source spellings and blank fields are intentionally preserved.",
+      "zh": "依据官方年度表第 51 行生成；有意保留来源拼写与空白字段。"
+    }
+  }
+}

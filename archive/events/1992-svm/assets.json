@@ -28,7 +28,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "vladimir-vapnik"
+    ]
   },
   {
     "id": "asset-1992-svm-isabelle-guyon",
@@ -54,7 +57,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "isabelle-guyon"
+    ]
   },
   {
     "id": "asset-1992-svm-max-margin",

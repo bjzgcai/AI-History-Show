@@ -36,9 +36,12 @@
       "zh": "已核验的主要人物肖像"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
-    "editable": false
+    "editable": false,
+    "figureIds": [
+      "ze-liu"
+    ]
   },
   {
     "id": "asset-annual-001-swin-transformer-v2-record",
@@ -78,14 +81,14 @@
       "zh": "架构与扩展方法解释图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": true
   },
   {
     "id": "asset-annual-001-swin-transformer-v2-portrait-han-hu",
     "type": "image",
-    "path": "resources/images/external/ai100-2022-swin-transformer-v2/han-hu-portrait.jpg",
+    "path": "resources/images/external/ai100-2022-simmim/han-hu-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "胡瀚肖像",
@@ -114,14 +117,17 @@
       "zh": "补充展示的已核验主要人物肖像"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false,
     "sourceReliability": "primary-identity-source",
     "provenanceNotes": {
       "en": "BenchCouncil lists Han Hu second in the Main Contributors field. The CVF paper page includes him in the author list, and his personal academic homepage lists the paper and states that he worked at Microsoft Research Asia until December 2023.",
       "zh": "BenchCouncil 在主要人物字段中第二位列出胡瀚。CVF 论文页的作者表包含胡瀚，其个人学术主页也列出该论文，并说明他任职微软亚洲研究院至 2023 年 12 月。"
-    }
+    },
+    "figureIds": [
+      "han-hu"
+    ]
   },
   {
     "id": "asset-annual-001-swin-transformer-v2-paper-v1-v2-comparison",
@@ -155,7 +161,7 @@
       "zh": "主论文架构对比资料"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   }

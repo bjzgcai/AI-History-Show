@@ -187,7 +187,7 @@ console.log('PASS runtime figure avatars are explicit local files');
 const compiledArchive = compileArchive(path.join(__dirname, '..'));
 assert.equal(compiledArchive.source, 'archive');
 assert.equal(compiledArchive.errors.length, 0);
-assert.equal(compiledArchive.milestones.length, 214);
+assert.equal(compiledArchive.milestones.length, 194);
 assert.ok(compiledArchive.milestones.every((milestone) => milestone.sourceKind === 'archive'));
 assert.deepEqual(
     new Set(compiledArchive.milestones.map((milestone) => milestone.id)).size,
@@ -229,7 +229,7 @@ for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'e
 }
 console.log('PASS storyline labels have one Archive authority');
 
-assert.equal(milestones.length, 214, 'Archive runtime should contain five storylines and 214 milestones');
+assert.equal(milestones.length, 194, 'Archive runtime should contain four storylines and 194 milestones');
 const ai100MapMilestones = milestones.filter(
     (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100'
 );
@@ -250,9 +250,12 @@ assert.equal(
 );
 console.log('PASS AI Achievement Map combines the canonical table with all 20 annual highlights');
 const annualAi100Milestones = milestones.filter(
-    (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100-2022-2023'
+    (milestone) =>
+        milestone.storyline &&
+        milestone.storyline.id === 'bench-council-ai100' &&
+        milestone.archiveEventId.startsWith('ai100-annual-2022-2023-')
 );
-assert.equal(annualAi100Milestones.length, 20, 'Archive runtime should contain the 20 curated annual AI100 entries');
+assert.equal(annualAi100Milestones.length, 20, 'AI Achievement Map should contain the 20 curated annual entries');
 assert.equal(annualAi100Milestones[0].title.en, 'Swin Transformer V2');
 assert.equal(annualAi100Milestones[19].title.en, 'ESMFold');
 assert.ok(

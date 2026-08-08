@@ -33,18 +33,13 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "John Hopfield",
-        "zh": "约翰·J·霍普菲尔德"
-      },
+      "figureId": "john-hopfield",
       "role": {
         "en": "Inventor of Hopfield networks",
         "zh": "Hopfield 网络提出者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1982-hopfield-network-john-hopfield"
     }
   ],
   "organizations": [],

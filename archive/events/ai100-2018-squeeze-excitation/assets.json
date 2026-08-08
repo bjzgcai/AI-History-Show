@@ -33,7 +33,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "jie-hu"
+    ]
   },
   {
     "id": "asset-2018-squeeze-excitation-explainer",

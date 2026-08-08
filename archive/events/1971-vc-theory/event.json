@@ -37,32 +37,20 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Vladimir Vapnik",
-        "zh": "弗拉基米尔·N·瓦普尼克"
-      },
+      "figureId": "vladimir-vapnik",
       "role": {
         "en": "Co-developed VC theory",
         "zh": "VC 理论共同创建者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1971-vc-theory-vladimir-vapnik"
     },
     {
-      "name": {
-        "en": "Alexey Chervonenkis",
-        "zh": "阿列克谢·雅·切尔沃年基斯"
-      },
+      "figureId": "alexey-chervonenkis",
       "role": {
         "en": "Co-developed VC theory",
         "zh": "VC 理论共同创建者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     }
   ],
   "organizations": [],

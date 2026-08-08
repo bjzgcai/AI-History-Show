@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "christian-szegedy"
+    ]
   },
   {
     "id": "asset-2015-googlenet-inception-parallel-branches",

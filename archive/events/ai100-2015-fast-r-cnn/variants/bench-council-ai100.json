@@ -114,18 +114,11 @@
   "figures": [
     {
       "figureId": "ross-girshick",
-      "name": {
-        "en": "Ross Girshick",
-        "zh": "罗斯·格希克"
-      },
       "role": {
         "zh": "Faster R-CNN 共同作者",
         "en": "Co-author of Faster R-CNN"
       },
-      "avatar": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2015-fast-r-cnn-portrait"
     }
   ],
   "photos": [],

@@ -33,32 +33,21 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Phillip Isola",
-        "zh": "菲利普·伊索拉"
-      },
+      "figureId": "phillip-isola",
       "role": {
         "en": "Pix2Pix lead author",
         "zh": "Pix2Pix 主要作者"
       },
-      "avatar": "resources/images/external/ai100-2017-pix2pix/phillip-isola-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-ai100-2017-pix2pix-photo-of-me-korea"
     },
     {
-      "name": {
-        "en": "Alexei Efros",
-        "zh": "阿列克谢·埃夫罗斯"
-      },
+      "figureId": "alexei-efros",
       "role": {
         "en": "Pix2Pix co-author",
         "zh": "Pix2Pix 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

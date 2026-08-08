@@ -23,7 +23,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "john-robinson"
+    ]
   },
   {
     "id": "asset-1965-resolution-method-clause-refutation",

@@ -29,7 +29,10 @@
     "usage": [
       "variant:humanistic-cycle"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "william-gibson"
+    ]
   },
   {
     "id": "asset-1984-neuromancer-ai-containment",

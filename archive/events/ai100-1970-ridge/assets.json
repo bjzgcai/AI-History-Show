@@ -55,6 +55,9 @@
       "zh": "特拉华大学 UDaily",
       "en": "University of Delaware UDaily"
     },
-    "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg"
+    "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg",
+    "figureIds": [
+      "arthur-hoerl"
+    ]
   }
 ]

@@ -126,56 +126,34 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Feng-hsiung Hsu",
-        "zh": "许峰雄"
-      },
+      "figureId": "feng-hsiung-hsu",
       "role": {
         "en": "Chief architect; custom VLSI and hardware design",
         "zh": "首席架构师；定制 VLSI 与硬件设计"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
-      "avatarStyle": "object-position: 50% 20%; transform: scale(1.55); transform-origin: 50% 20%;",
-      "figureType": "person"
+      "avatarAssetId": "asset-1997-deep-blue-feng-hsiung-hsu"
     },
     {
-      "name": {
-        "en": "Murray Campbell",
-        "zh": "默里·坎贝尔"
-      },
+      "figureId": "murray-campbell",
       "role": {
         "en": "Evaluation-function and search-strategy lead",
         "zh": "评估函数与搜索策略负责人"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
+      "avatarAssetId": "asset-1997-deep-blue-murray-campbell"
     },
     {
-      "name": {
-        "en": "A. Joseph Hoane Jr.",
-        "zh": "约瑟夫·霍恩"
-      },
+      "figureId": "a-joseph-hoane-jr",
       "role": {
         "en": "Parallel-search software lead",
         "zh": "并行搜索软件负责人"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      }
     },
     {
-      "name": {
-        "en": "Jerry Brody",
-        "zh": "杰里·布罗迪"
-      },
+      "figureId": "jerry-brody",
       "role": {
         "en": "Hardware integration and match operations",
         "zh": "硬件集成与比赛现场运行"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      }
     }
   ],
   "photos": [],

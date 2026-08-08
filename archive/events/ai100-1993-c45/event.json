@@ -33,18 +33,13 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Ross Quinlan",
-        "zh": "罗斯·昆兰"
-      },
+      "figureId": "ross-quinlan",
       "role": {
         "en": "C4.5 lead author",
         "zh": "C4.5 主要作者"
       },
-      "avatar": "resources/images/external/ai100-1993-c45/ross-quinlan-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1993-c45-portrait"
     }
   ],
   "organizations": [],

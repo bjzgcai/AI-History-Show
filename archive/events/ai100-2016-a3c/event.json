@@ -34,32 +34,20 @@
   "figures": [
     {
       "figureId": "volodymyr-mnih",
-      "name": {
-        "en": "Volodymyr Mnih",
-        "zh": "沃洛迪米尔·姆尼赫"
-      },
       "role": {
         "en": "A3C lead author",
         "zh": "A3C 主要作者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-2016-a3c-portrait"
     },
     {
-      "name": {
-        "en": "Koray Kavukcuoglu",
-        "zh": "科雷·卡武克丘奥卢"
-      },
+      "figureId": "koray-kavukcuoglu",
       "role": {
         "en": "A3C co-author",
         "zh": "A3C 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     }
   ],
   "organizations": [],

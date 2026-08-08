@@ -9200,8 +9200,6 @@
         const TABLET_GLOBE_PIXEL_RATIO_CAP = 1.75;
         const UNIFIED_STORYLINE_ID = 'unified-ai-history';
         const DEEP_STORYLINE_ID = StorylineRouting.DEEP_STORYLINE_ID;
-        const ANNUAL_AI100_STORYLINE_ID = 'bench-council-ai100-2022-2023';
-        const STANDALONE_AI100_STORYLINE_IDS = new Set([ANNUAL_AI100_STORYLINE_ID]);
         const DEFAULT_STORYLINE_ID = UNIFIED_STORYLINE_ID;
         const CHRONOLOGY_FILTER_PARAM = 'storylineFilter';
         const AI_HISTORY_MAP_VARIANT_PRIORITY = [
@@ -9210,15 +9208,8 @@
             'gaming-ai',
             'humanistic-cycle'
         ];
-        const CHRONOLOGY_FILTER_STORYLINE_IDS = new Set([
-            ...AI_HISTORY_MAP_VARIANT_PRIORITY,
-            ...STANDALONE_AI100_STORYLINE_IDS
-        ]);
-        const UNIFIED_STORYLINE_EXCLUSIONS = new Set(STANDALONE_AI100_STORYLINE_IDS);
-        const ACHIEVEMENT_STORYLINE_IDS = new Set([
-            'bench-council-ai100',
-            ...STANDALONE_AI100_STORYLINE_IDS
-        ]);
+        const CHRONOLOGY_FILTER_STORYLINE_IDS = new Set(AI_HISTORY_MAP_VARIANT_PRIORITY);
+        const ACHIEVEMENT_STORYLINE_IDS = new Set(['bench-council-ai100']);
         const analytics = window.AIHistoryAnalytics || null;
         if (analytics) {
             analytics.setContext({
@@ -9244,18 +9235,6 @@
             {
                 id: 'bench-council-ai100',
                 layout: 'ui-browser'
-            },
-            {
-                id: ANNUAL_AI100_STORYLINE_ID,
-                layout: 'ui-browser',
-                label: {
-                    en: 'AI100 Annual Highlights (2022-2023)',
-                    zh: 'AI100 年度精选（2022-2023）'
-                },
-                note: {
-                    en: 'Ten selected turning points from each year, including Claude in the 2023 selection',
-                    zh: '每年精选 10 个技术转折点，2023 年精选包含 Claude'
-                }
             },
             {
                 id: 'gaming-ai',
@@ -9315,10 +9294,7 @@
 
         function buildUnifiedMilestones() {
             if (unifiedMilestoneCache) return unifiedMilestoneCache;
-            const unifiedSourceMilestones = allMilestones.filter(
-                (milestone) => !UNIFIED_STORYLINE_EXCLUSIONS.has(getMilestoneStorylineId(milestone))
-            );
-            unifiedMilestoneCache = window.ChronologyOverview.buildCanonicalMilestones(unifiedSourceMilestones, {
+            unifiedMilestoneCache = window.ChronologyOverview.buildCanonicalMilestones(allMilestones, {
                 storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY,
                 localize: lx
             });
@@ -9379,9 +9355,6 @@
         }
 
         function getChronologyVisibleMilestones() {
-            if (STANDALONE_AI100_STORYLINE_IDS.has(chronologyFilterStorylineId)) {
-                return getStorylineMilestones(chronologyFilterStorylineId);
-            }
             return window.ChronologyOverview.selectMilestonesByStoryline(
                 buildUnifiedMilestones(),
                 chronologyFilterStorylineId
@@ -9389,9 +9362,7 @@
         }
 
         function getChronologyOverviewMilestones() {
-            return STANDALONE_AI100_STORYLINE_IDS.has(chronologyFilterStorylineId)
-                ? getStorylineMilestones(chronologyFilterStorylineId)
-                : buildUnifiedMilestones();
+            return buildUnifiedMilestones();
         }
 
         function isHumanisticMilestone(milestone) {
@@ -16141,11 +16112,10 @@
                 });
             }
             chronologyOverview.setState({ storylineId: chronologyFilterStorylineId });
-            const preserveStandaloneOrder = STANDALONE_AI100_STORYLINE_IDS.has(chronologyFilterStorylineId);
             chronologyOverview.update({
                 milestones: getChronologyOverviewMilestones(),
-                preserveSourceOrder: preserveStandaloneOrder,
-                sequenceLabel: preserveStandaloneOrder ? '2022-2023' : '',
+                preserveSourceOrder: false,
+                sequenceLabel: '',
                 selectedEventId: uiSelectedEventId,
                 localize: lx,
                 locale: window.I18n && typeof window.I18n.getLocale === 'function'

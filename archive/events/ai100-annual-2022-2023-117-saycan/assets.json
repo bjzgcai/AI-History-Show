@@ -37,7 +37,7 @@
       "zh": "互动式成就解释图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": true
   },
@@ -73,14 +73,17 @@
       "zh": "已核验的论文作者肖像"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false,
     "sourceReliability": "official-university-profile",
     "provenanceNotes": {
       "en": "BenchCouncil leaves the contributor field blank for this row. The official SayCan project page lists Chelsea Finn among the paper authors, and Stanford confirms her identity and research role.",
       "zh": "BenchCouncil 该行人物字段为空。SayCan 官方项目页将切尔西·芬恩列为论文作者，斯坦福大学资料页进一步核验其身份与研究方向。"
-    }
+    },
+    "figureIds": [
+      "chelsea-finn"
+    ]
   },
   {
     "id": "asset-annual-117-saycan-scoring",
@@ -114,7 +117,7 @@
       "zh": "官方方法图"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   },
@@ -150,7 +153,7 @@
       "zh": "官方机器人演示结果"
     },
     "usage": [
-      "variant:bench-council-ai100-2022-2023"
+      "variant:bench-council-ai100"
     ],
     "editable": false
   }

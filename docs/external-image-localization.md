@@ -63,6 +63,6 @@
 | ai100-2021-dalle | 阿迪蒂亚·拉梅什肖像 | `resources/images/external/ai100-2021-dalle/aditya-ramesh-portrait.png` | [北京智源人工智能研究院](https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png) |
 | ai100-2021-swin-transformer | 刘泽肖像 | `resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg` | [刘泽个人网站](https://zeliu98.github.io/images/zeliu.jpg) |
 | ai100-2022-stable-diffusion | 罗宾·罗姆巴赫肖像 | `resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg` | [Latent Labs](https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg) |
-| ai100-2023-segment-anything | 亚历山大·基里洛夫肖像 | `resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg` | [亚历山大·基里洛夫个人网站](https://alexander-kirillov.github.io/images/alexander_kirillov.jpg) |
+| ai100-annual-2022-2023-101-segment-anything | 亚历山大·基里洛夫肖像 | `resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg` | [亚历山大·基里洛夫个人网站](https://alexander-kirillov.github.io/images/alexander_kirillov.jpg) |
 
 ReLU 事件同时展示福岛邦彦与约书亚·本吉奥的本地肖像，图片顺序为“福岛邦彦肖像 + ReLU 解释图 + 约书亚·本吉奥肖像”，确保福岛邦彦始终优先展示。

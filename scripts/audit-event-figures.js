@@ -4,7 +4,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-const { isAssetSelectionExcluded } = require('./event-figure-rules');
+const { isAssetSelectionExcluded, isGroupPersonAsset, isPersonAsset } = require('./event-figure-rules');
+const { loadFigureRegistry, resolveFigureRelations } = require('./figure-registry');
 
 const ROOT = path.join(__dirname, '..');
 const EVENTS_DIR = path.join(ROOT, 'archive', 'events');
@@ -12,6 +13,7 @@ const MACHINE_REPORT_DIR = path.join(ROOT, '.tmp', 'archive-reports');
 const REPORT_JSON = path.join(MACHINE_REPORT_DIR, 'event-figure-audit.json');
 const REPORT_MD = path.join(MACHINE_REPORT_DIR, 'event-figure-audit.md');
 const writeReports = !process.argv.includes('--check');
+const figureRegistry = loadFigureRegistry(ROOT);
 
 function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -39,44 +41,15 @@ function comparablePersonName(value) {
         .join(' ');
 }
 
-function humanizeFigureId(figureId) {
-    return String(figureId || '')
-        .split('-')
-        .filter(Boolean)
-        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-        .join(' ');
+function avatarExists(avatarPath) {
+    return Boolean(avatarPath && (/^https?:\/\//i.test(avatarPath) || fs.existsSync(path.join(ROOT, avatarPath))));
 }
 
-function localFileExists(relativePath) {
-    return Boolean(relativePath && !/^https?:\/\//i.test(relativePath) && fs.existsSync(path.join(ROOT, relativePath)));
-}
-
-function isPortraitAsset(asset, figures) {
-    const role = String(asset && asset.role ? asset.role : '').toLowerCase();
-    const assetPath = String(asset && asset.path ? asset.path : '').toLowerCase();
-    const captionNameText = [localized(asset && asset.caption, 'en'), localized(asset && asset.caption, 'zh')]
-        .join(' ')
-        .toLowerCase();
-    const descriptorText = [
-        localized(asset && asset.caption, 'en'),
-        localized(asset && asset.caption, 'zh'),
-        localized(asset && asset.subcaption, 'en'),
-        localized(asset && asset.subcaption, 'zh')
-    ]
-        .join(' ')
-        .toLowerCase();
-    const namesFigure = figures.some((figure) =>
-        [figure.name.en, figure.name.zh]
-            .map((name) => String(name || '').toLowerCase())
-            .filter(Boolean)
-            .some((name) => captionNameText.includes(name))
-    );
+function isPortraitAsset(asset) {
     return (
-        /portrait|person-photo|people-photo|author-photo|team-photo/.test(role) ||
-        /\/(?:people|photos)\//.test(assetPath) ||
-        /portrait|headshot/.test(assetPath) ||
-        /portrait|肖像|人物照|人物图|photographed|at a blackboard/.test(descriptorText) ||
-        namesFigure
+        (isPersonAsset(asset) || isGroupPersonAsset(asset)) &&
+        Array.isArray(asset.figureIds) &&
+        asset.figureIds.length > 0
     );
 }
 
@@ -90,46 +63,24 @@ function listVariantFiles(eventDir) {
         .map((file) => ({ file, data: readJson(path.join(variantsDir, file)) }));
 }
 
-function resolveFigure(eventFigure, variantFigures, index) {
-    const variantFigure = variantFigures[index] || {};
-    const figureId = typeof eventFigure === 'string' ? eventFigure : eventFigure.figureId || '';
-    const explicitName = typeof eventFigure === 'object' ? eventFigure.name : null;
-    const nameEn = localized(explicitName, 'en') || localized(variantFigure.name, 'en') || humanizeFigureId(figureId);
-    const nameZh = localized(explicitName, 'zh') || localized(variantFigure.name, 'zh') || nameEn;
-    const role = typeof eventFigure === 'object' ? eventFigure.role : null;
-    const avatar = (typeof eventFigure === 'object' && eventFigure.avatar) || variantFigure.avatar || '';
-    const figureType =
-        (typeof eventFigure === 'object' && eventFigure.figureType) || variantFigure.figureType || 'person';
-    return {
-        figureId,
-        name: { en: nameEn, zh: nameZh },
-        role: {
-            en: localized(role, 'en') || localized(variantFigure.role, 'en'),
-            zh: localized(role, 'zh') || localized(variantFigure.role, 'zh')
-        },
-        figureType,
-        avatar,
-        avatarExists: localFileExists(avatar)
-    };
-}
-
-function assetCaptionMatchesFigure(asset, figure) {
-    const caption = [localized(asset.caption, 'en'), localized(asset.caption, 'zh')].join(' ').toLowerCase();
-    return [figure.name.en, figure.name.zh]
-        .map((name) => String(name || '').toLowerCase())
-        .filter(Boolean)
-        .some((name) => caption.includes(name));
-}
-
 function auditEvent(eventId) {
     const eventDir = path.join(EVENTS_DIR, eventId);
     const event = readJson(path.join(eventDir, 'event.json'));
     const assets = readJson(path.join(eventDir, 'assets.json'));
     const variants = listVariantFiles(eventDir);
-    const variantFigures = variants.flatMap(({ data }) => (Array.isArray(data.figures) ? data.figures : []));
-    const canonicalFigures = Array.isArray(event.figures) ? event.figures : [];
-    let figures = canonicalFigures.map((figure, index) => resolveFigure(figure, variantFigures, index));
-    const portraitAssets = assets.filter((asset) => isPortraitAsset(asset, figures));
+    const variantFigureIds = variants.flatMap(({ data }) =>
+        (Array.isArray(data.figures) ? data.figures : []).map((relation) => relation.figureId).filter(Boolean)
+    );
+    let figures = resolveFigureRelations({
+        eventFigures: event.figures,
+        assets,
+        registry: figureRegistry
+    }).map((figure) => ({
+        ...figure,
+        figureId: figure.id,
+        avatarExists: avatarExists(figure.avatar)
+    }));
+    const portraitAssets = assets.filter(isPortraitAsset);
     const selectedAssetIds = new Set(variants.flatMap(({ data }) => data.assetIds || []));
     const selectedPortraits = portraitAssets.filter((asset) => selectedAssetIds.has(asset.id));
     const excludedPortraits = portraitAssets.filter(
@@ -141,21 +92,16 @@ function auditEvent(eventId) {
     figures = figures.map((figure) => ({
         ...figure,
         matchingSelectedPortraits: selectedPortraits
-            .filter((asset) => assetCaptionMatchesFigure(asset, figure))
+            .filter((asset) => asset.figureIds.includes(figure.figureId))
             .map((asset) => ({ id: asset.id, path: asset.path }))
     }));
     const brokenFigureAvatars = figures.filter((figure) => figure.avatar && !figure.avatarExists);
     const figuresWithoutAvatar = figures.filter((figure) => !figure.avatarExists);
 
-    const canonicalNames = new Set(
-        figures.flatMap((figure) => [normalizeName(figure.name.en), normalizeName(figure.name.zh)]).filter(Boolean)
-    );
-    const variantOnlyNames = variantFigures
-        .map((figure) => ({ en: localized(figure.name, 'en'), zh: localized(figure.name, 'zh') }))
-        .filter((name) => {
-            const keys = [normalizeName(name.en), normalizeName(name.zh)].filter(Boolean);
-            return keys.length > 0 && !keys.some((key) => canonicalNames.has(key));
-        });
+    const canonicalIds = new Set(figures.map((figure) => figure.figureId));
+    const variantOnlyNames = [...new Set(variantFigureIds)]
+        .filter((figureId) => !canonicalIds.has(figureId))
+        .map((figureId) => figureRegistry.byId.get(figureId)?.name || { en: figureId, zh: figureId });
 
     const issues = [];
     if (figures.length === 0) issues.push('missing canonical main figure');

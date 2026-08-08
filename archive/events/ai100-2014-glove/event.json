@@ -33,45 +33,31 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Jeffrey Pennington",
-        "zh": "杰弗里·彭宁顿"
-      },
+      "figureId": "jeffrey-pennington",
       "role": {
         "en": "GloVe lead author",
         "zh": "GloVe 主要作者"
       },
-      "avatar": "resources/images/external/ai100-2014-glove/jeffrey-pennington-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-ai100-2014-glove-photo"
     },
     {
-      "name": {
-        "en": "Christopher Manning",
-        "zh": "克里斯托弗·曼宁"
-      },
+      "figureId": "christopher-manning",
       "role": {
         "en": "GloVe co-author",
         "zh": "GloVe 共同作者"
       },
-      "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-ai100-2014-glove-christopher-manning-commons"
     },
     {
-      "name": {
-        "en": "Richard Socher",
-        "zh": "理查德·索彻"
-      },
+      "figureId": "richard-socher",
       "role": {
         "en": "GloVe co-author",
         "zh": "GloVe 共同作者"
       },
-      "avatar": "resources/images/external/ai100-2014-glove/richard-socher-portrait.png",
-      "avatarStyle": "",
-      "figureType": "person"
+      "primary": true,
+      "avatarAssetId": "asset-ai100-2014-glove-richard-socher-portrait"
     }
   ],
   "organizations": [],

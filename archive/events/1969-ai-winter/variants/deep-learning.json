@@ -77,17 +77,13 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Marvin Minsky",
-        "zh": "马文·明斯基"
-      },
+      "figureId": "marvin-minsky",
       "role": {
         "en": "Author of Perceptrons",
         "zh": "《感知器》作者"
       },
-      "avatar": "resources/images/figures/historical/marvin-minsky-1968.png",
-      "avatarStyle": "transform: scale(1.32); transform-origin: 50% 35%;",
-      "figureType": "person"
+      "avatarAssetId": "asset-1969-ai-winter-figure-avatar-marvin-minsky",
+      "avatarStyle": "transform: scale(1.32); transform-origin: 50% 35%;"
     }
   ],
   "photos": [],

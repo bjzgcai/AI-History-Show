@@ -55,6 +55,9 @@
       "zh": "麻省理工学院作者主页",
       "en": "MIT author homepage"
     },
-    "sourceUrl": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg"
+    "sourceUrl": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg",
+    "figureIds": [
+      "phillip-isola"
+    ]
   }
 ]

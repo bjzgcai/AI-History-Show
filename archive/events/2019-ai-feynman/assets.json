@@ -23,7 +23,10 @@
     "usage": [
       "variant:deep-learning"
     ],
-    "editable": true
+    "editable": true,
+    "figureIds": [
+      "max-tegmark"
+    ]
   },
   {
     "id": "asset-2019-ai-feynman-historical-01",

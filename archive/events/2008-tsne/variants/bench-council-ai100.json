@@ -118,32 +118,20 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Laurens van der Maaten",
-        "zh": "劳伦斯·范德马滕"
-      },
+      "figureId": "laurens-van-der-maaten",
       "role": {
         "en": "Co-author of t-SNE",
         "zh": "t-SNE 共同作者"
       },
-      "avatar": "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2008-tsne-laurens-van-der-maaten"
     },
     {
-      "name": {
-        "en": "Geoffrey Hinton",
-        "zh": "杰弗里·辛顿"
-      },
+      "figureId": "geoffrey-hinton",
       "role": {
         "en": "Pioneer of deep learning",
         "zh": "深度学习之父"
       },
-      "avatar": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
-      "avatarStyle": "transform: scale(1.24); transform-origin: 50% 42%;",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-2008-tsne-figure-avatar-geoffrey-hinton"
     }
   ],
   "photos": [],

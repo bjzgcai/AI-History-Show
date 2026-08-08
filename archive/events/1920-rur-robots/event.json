@@ -34,18 +34,12 @@
   "figures": [
     {
       "figureId": "karel-capek",
-      "name": {
-        "en": "Karel Capek",
-        "zh": "卡雷尔·恰佩克"
-      },
       "role": {
         "en": "Playwright of R.U.R.",
         "zh": "《罗素姆的万能机器人》作者"
       },
-      "avatar": "resources/images/humanistic-cycle/people/1920-rur-robots_karel-capek.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-1920-rur-robots-karel-capek"
     }
   ],
   "organizations": [],

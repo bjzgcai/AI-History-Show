@@ -55,6 +55,9 @@
       "zh": "ELLIS 慕尼黑单位",
       "en": "ELLIS Munich Unit"
     },
-    "sourceUrl": "https://www.eml-munich.de/team/alexey-dosovitskiy.png"
+    "sourceUrl": "https://www.eml-munich.de/team/alexey-dosovitskiy.png",
+    "figureIds": [
+      "alexey-dosovitskiy"
+    ]
   }
 ]

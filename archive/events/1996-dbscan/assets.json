@@ -81,7 +81,10 @@
       "zh": "维基共享资源",
       "en": "Wikimedia Commons"
     },
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg"
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
+    "figureIds": [
+      "martin-ester"
+    ]
   },
   {
     "id": "asset-1996-dbscan-dbscan-density-data",

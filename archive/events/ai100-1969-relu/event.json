@@ -33,46 +33,30 @@
   ],
   "figures": [
     {
-      "name": {
-        "en": "Kunihiko Fukushima",
-        "zh": "福岛邦彦"
-      },
+      "figureId": "kunihiko-fukushima",
       "role": {
         "en": "Early neural vision researcher",
         "zh": "早期神经视觉研究者"
       },
-      "avatar": "resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-ai100-1969-relu-kunihiko-fukushima-candc"
     },
     {
-      "name": {
-        "en": "Xavier Glorot",
-        "zh": "泽维尔·格洛罗"
-      },
+      "figureId": "xavier-glorot",
       "role": {
         "en": "ReLU co-author",
         "zh": "ReLU 共同作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true
     },
     {
-      "name": {
-        "en": "Yoshua Bengio",
-        "zh": "约书亚·本吉奥"
-      },
+      "figureId": "yoshua-bengio",
       "role": {
         "en": "Co-author of later deep rectifier analysis",
         "zh": "后续深度整流函数分析共同作者"
       },
-      "avatar": "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "primary": true,
+      "avatarAssetId": "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02"
     }
   ],
   "organizations": [],

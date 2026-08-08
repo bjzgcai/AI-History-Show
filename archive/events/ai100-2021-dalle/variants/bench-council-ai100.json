@@ -118,17 +118,12 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Aditya Ramesh",
-        "zh": "阿迪蒂亚·拉梅什"
-      },
+      "figureId": "aditya-ramesh",
       "role": {
         "en": "Lead author and creator of DALL-E",
         "zh": "DALL-E 主要作者与创建者"
       },
-      "avatar": "resources/images/external/ai100-2021-dalle/aditya-ramesh-portrait.png",
-      "avatarStyle": "",
-      "figureType": "person"
+      "avatarAssetId": "asset-ai100-2021-dalle-b0fdc3694e0d34821c1a35fbe494cb9c"
     }
   ],
   "photos": [],

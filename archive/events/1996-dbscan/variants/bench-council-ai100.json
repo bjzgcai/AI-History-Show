@@ -112,45 +112,26 @@
   },
   "figures": [
     {
-      "name": {
-        "en": "Martin Ester",
-        "zh": "马丁·埃斯特"
-      },
+      "figureId": "martin-ester",
       "role": {
         "en": "Co-author of DBSCAN",
         "zh": "DBSCAN 共同作者"
       },
-      "avatar": "resources/images/external/1996-dbscan/martin-ester-portrait.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarAssetId": "asset-1996-dbscan-sfu-professor-martin-ester-2019"
     },
     {
-      "name": {
-        "en": "Xiaowei Xu",
-        "zh": "徐晓伟"
-      },
+      "figureId": "xiaowei-xu",
       "role": {
         "en": "DBSCAN co-author",
         "zh": "DBSCAN 共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
+      }
     },
     {
-      "name": {
-        "en": "Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
-        "zh": "汉斯-彼得·克里格尔、约尔格·桑德、徐晓伟"
-      },
+      "figureId": "hans-peter-kriegel-jorg-sander-xiaowei-xu",
       "role": {
         "en": "DBSCAN research team",
         "zh": "DBSCAN 研究团队"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      }
     }
   ],
   "photos": [],
