@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huoposhuanglang-v3-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 7,
+    "eventId": "1965-resolution-method",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "DPLL 用搜索和传播处理真假约束。归结方法则更进一步，能不能用一条统一规则推动整个证明？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-revision"
+        },
+        {
+            "role": "B",
+            "text": "J·艾伦·罗宾逊在 1965 年提出面向机器的一阶逻辑归结方法。证明时先把前提和被否定的结论转换为子句，再寻找含有互补文字的子句；合一算法计算使相关项匹配的变量替换，归结规则据此生成新子句，直到推出代表矛盾的空子句。",
+            "sourceIds": ["source-a-machine-oriented-logic-based-on-the-resolution-principle"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "variant.displayDescription.background"
+        },
+        {
+            "role": "A",
+            "text": "只靠一条统一规则，真能覆盖复杂的一阶逻辑证明吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-revision"
+        },
+        {
+            "role": "B",
+            "text": "这种反驳式方法用一套统一规则取代许多专门推理步骤，并具备适合自动化的重要完备性性质。实际系统仍需要索引、搜索策略和启发式方法控制组合增长，但归结与合一成为自动定理证明、逻辑程序设计及后续 SAT/SMT 推理谱系的基础概念。",
+            "sourceIds": ["source-a-machine-oriented-logic-based-on-the-resolution-principle"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "variant.displayDescription.explanation"
+        },
+        {
+            "role": "B",
+            "text": "归结方法的影响，在于它把复杂推理压缩到统一规则与合一操作上。真正困难的部分，也随之转向如何控制搜索。",
+            "sourceIds": [
+                "source-journal-of-symbolic-logic-review-record",
+                "source-stanford-encyclopedia-automated-reasoning",
+                "source-a-machine-oriented-logic-based-on-the-resolution-principle"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing-revision"
+        }
+    ]
+}

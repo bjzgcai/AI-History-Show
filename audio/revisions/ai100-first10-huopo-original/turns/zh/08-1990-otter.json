@@ -1,0 +1,43 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huoposhuanglang-v3-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 8,
+    "eventId": "1990-otter",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "N",
+            "text": "一条漂亮的归结规则，真正进入软件系统后，还要解决哪些工程难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-revision"
+        },
+        {
+            "role": "N",
+            "text": "威廉·麦丘恩在阿贡国家实验室开发 OTTER，使一阶逻辑和等式推理的高性能自动证明成为研究者可实际使用的工具。系统结合归结、超归结和参数调解，并用项索引快速寻找可匹配公式；given-clause 循环则从待处理集合中逐步选择子句，生成新的推论。",
+            "sourceIds": ["source-otter-3-3-reference-manual"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "variant.displayDescription.background"
+        },
+        {
+            "role": "N",
+            "text": "用户可以通过权重、优先级和推理规则控制庞大证明空间中的搜索，使 OTTER 既适合逻辑实验，也能处理代数和组合数学问题。它体现了自动推理从单一算法走向成熟软件系统的阶段，并为 McCune 后续的 Prover9 等证明器积累了工程基础。",
+            "sourceIds": ["source-otter-3-3-reference-manual"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "variant.displayDescription.explanation"
+        },
+        {
+            "role": "N",
+            "text": "到了 OTTER，自动推理已经不只是一条算法，而是一套研究者能够调节、运行和反复实验的软件工具。",
+            "sourceIds": [
+                "source-otter-3-3-reference-manual",
+                "source-a-spectrum-of-applications-of-automated-reasoning",
+                "source-checking-clinical-guidelines-using-automated-reasoning-tools"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing-revision"
+        }
+    ]
+}

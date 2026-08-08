@@ -1,0 +1,51 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huoposhuanglang-v3-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 3,
+    "eventId": "1971-vc-theory",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "NP 完全性讨论问题为什么难，VC 理论则追问另一个边界。模型凭什么从有限样本学会面对未知？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-revision"
+        },
+        {
+            "role": "B",
+            "text": "瓦普尼克与切尔沃年基斯在 1971 年把学习中的泛化问题写成严格数学问题：一个假设类别在有限样本上表现良好时，什么条件能保证它在未见数据上仍然可靠？VC 维通过考察模型能否对一组样本实现所有可能的二元划分，刻画假设类别的表达容量。",
+            "sourceIds": ["source-on-the-uniform-convergence-of-relative-frequencies"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "variant.displayDescription.background"
+        },
+        {
+            "role": "A",
+            "text": "VC 维是不是越大越好？它和模型面对新数据的能力究竟是什么关系？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-revision"
+        },
+        {
+            "role": "B",
+            "text": "这套理论把模型复杂度、样本数量和泛化误差联系起来，为统计学习提供了统一语言。它说明训练误差低并不自动代表学到了可推广规律，也为结构风险最小化和支持向量机奠定基础。经典 VC 界对现代深度网络往往较保守，但容量与泛化之间的核心问题仍未过时。",
+            "sourceIds": ["source-on-the-uniform-convergence-of-relative-frequencies"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "variant.displayDescription.explanation"
+        },
+        {
+            "role": "B",
+            "text": "VC 理论真正留下的，是一把衡量学习能力的尺子。模型不只要拟合眼前的数据，还要考虑自己能否面对未知。",
+            "sourceIds": [
+                "source-on-the-uniform-convergence-of-relative-frequencies",
+                "source-the-nature-of-statistical-learning-theory",
+                "source-an-overview-of-statistical-learning-theory",
+                "source-vladimir-vapnik-simons-profile"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-closing-revision"
+        }
+    ]
+}

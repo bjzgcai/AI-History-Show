@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huoposhuanglang-v3-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 9,
+    "eventId": "1958-lisp",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "前面几段，机器一直在规则中寻找证明。接下来问题变成，研究者用什么语言把这些符号和规则写进计算机？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-revision"
+        },
+        {
+            "role": "N",
+            "text": "约翰·麦卡锡在 1958 年开始设计 LISP，并在 1960 年论文中用 S 表达式和递归函数系统说明这种语言。列表既能表示程序操作的数据，也能表示程序本身；CONS、CAR、CDR、QUOTE、COND 与 EVAL 等少量原语，就能组合出复杂的符号处理过程。",
+            "sourceIds": ["source-recursive-functions-of-symbolic-expressions"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "variant.displayDescription.background"
+        },
+        {
+            "role": "A",
+            "text": "只有这么少的原语，为什么反而适合构造复杂的 AI 程序？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-revision"
+        },
+        {
+            "role": "B",
+            "text": "这种“代码与数据采用同一种结构”的设计，使研究者可以灵活构造定理证明、规划、自然语言和知识表示程序，也推动了交互式开发、垃圾回收等编程实践。LISP 后来形成众多方言；即使 AI 工程转向其他语言，它仍深刻影响函数式编程和可编程符号系统。",
+            "sourceIds": ["source-recursive-functions-of-symbolic-expressions"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "variant.displayDescription.explanation"
+        },
+        {
+            "role": "N",
+            "text": "LISP 让符号处理拥有了一种可编程的表达方式。接下来，另一条路线会尝试让事实和规则本身直接成为程序。",
+            "sourceIds": [
+                "source-lisp-i-programmer-s-manual",
+                "source-history-of-lisp",
+                "source-recursive-functions-of-symbolic-expressions"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-closing-revision"
+        }
+    ]
+}

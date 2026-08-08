@@ -24,6 +24,15 @@ manage/.backups/
 # Local candidate media assets
 /local-assets/
 
+# Generated audio artifacts and metadata are stored outside Git.
+/resources/audio/
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.ogg
+*.flac
+
 # Local design and reference exports
 /designs/
 /人工智能历史网页代码文件/

@@ -1,0 +1,51 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huoposhuanglang-v3-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 1,
+    "eventId": "1950-turing-test",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "如果隔着一面墙，只能靠打字交流，你真能判断对面是人还是机器吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-revision"
+        },
+        {
+            "role": "B",
+            "text": "1950 年，艾伦·图灵在《计算机器与智能》中没有直接为“思考”下定义，而是提出“模仿游戏”：一名评判者通过文字通道与隐藏的人类和机器交谈，再判断谁是谁。这个设计把难以解决的哲学争论转换成可观察、可比较的行为测试。",
+            "sourceIds": ["source-computing-machinery-and-intelligence"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "variant.displayDescription.background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的想法。真正让它运转起来的机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "图灵测试的重要性不在于给智能提供唯一标准，而在于建立了一种评测思想：限制信息通道、隐藏系统身份，并让人类根据交互表现作出判断。现代研究通常不把它视为完整的智能测量，但人类评测、聊天机器人比较和对抗测试仍延续着这种方法论。",
+            "sourceIds": ["source-computing-machinery-and-intelligence"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "variant.displayDescription.explanation"
+        },
+        {
+            "role": "A",
+            "text": "当语言表现越来越像人，我们该用什么证据区分流畅模仿与真正理解？",
+            "sourceIds": [
+                "source-turing-digital-archive",
+                "source-internet-archive-digital-preview",
+                "source-stanford-encyclopedia-of-philosophy",
+                "source-computing-machinery-and-intelligence"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-closing-revision"
+        }
+    ]
+}
