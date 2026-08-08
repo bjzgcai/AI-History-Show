@@ -4406,6 +4406,53 @@
             text-wrap: balance;
         }
 
+        .bench-core-titlebar {
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .bench-core-titlebar .bench-core-title {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .bench-narration-button {
+            flex: 0 0 auto;
+            width: 48px;
+            height: 48px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(246, 137, 0, 0.5);
+            border-radius: 50%;
+            color: var(--accent);
+            background: rgba(246, 137, 0, 0.08);
+            cursor: pointer;
+            transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+        }
+
+        .bench-narration-button:hover,
+        .bench-narration-button:focus-visible,
+        .bench-narration-button.is-speaking {
+            border-color: var(--accent);
+            background: rgba(246, 137, 0, 0.2);
+            outline: none;
+            transform: scale(1.05);
+        }
+
+        .bench-narration-button:disabled {
+            opacity: 0.38;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .bench-narration-button svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
         .bench-core-summary {
             position: relative;
             max-height: 132px;
@@ -6312,6 +6359,46 @@
             pointer-events: auto;
         }
 
+        .ui-narration-button {
+            position: absolute;
+            left: 36px;
+            bottom: 16px;
+            z-index: 26;
+            width: 176px;
+            height: 42px;
+            border-radius: 3px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            padding: 0 16px;
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 15px;
+            font-weight: 800;
+            white-space: nowrap;
+            box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.94), 0 9px 24px rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .single-stage.is-ui-browser.is-ui-detail .ui-narration-button {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .ui-narration-button svg {
+            position: absolute;
+            left: 16px;
+            flex: 0 0 auto;
+            width: 20px;
+            height: 20px;
+        }
+
+        .ui-narration-button .narration-label {
+            width: 100%;
+            text-align: center;
+        }
+
         @media (min-width: 1200px) {
             .single-stage.is-ui-browser.is-ui-detail .ui-browser-main {
                 height: 878px;
@@ -7522,6 +7609,15 @@
                 box-shadow:
                     var(--ui-back-buffer-shadow),
                     0 8px 24px rgba(0, 0, 0, 0.46);
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .ui-narration-button {
+                position: fixed;
+                left: 18px;
+                bottom: 18px;
+                width: 164px;
+                height: var(--touch-target);
+                border-radius: 4px;
             }
 
             .bench-dossier,
@@ -8821,6 +8917,10 @@
                     </div>
                 </div>
             </header>
+            <button class="bench-narration-button ui-narration-button" id="uiNarrationButton" type="button" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4.03v8.05A4.5 4.5 0 0 0 16.5 12zm-2.5-8.77v2.06a7 7 0 0 1 0 13.42v2.06a9 9 0 0 0 0-17.54z"/></svg>
+                <span class="narration-label"></span>
+            </button>
             <button class="ui-back-button" id="uiBackButton" type="button" data-ui-back="true" aria-label="返回">返回</button>
 
             <main class="stage-grid">
@@ -8950,7 +9050,12 @@
                             <div class="bench-core-area" id="benchCoreArea"></div>
                             <div class="bench-core-year" id="benchCoreYear"></div>
                         </div>
-                        <h1 class="bench-core-title" id="benchCoreTitle"></h1>
+                        <div class="bench-core-titlebar">
+                            <h1 class="bench-core-title" id="benchCoreTitle"></h1>
+                            <button class="bench-narration-button" id="benchNarrationButton" type="button" aria-pressed="false">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4.03v8.05A4.5 4.5 0 0 0 16.5 12zm-2.5-8.77v2.06a7 7 0 0 1 0 13.42v2.06a9 9 0 0 0 0-17.54z"/></svg>
+                            </button>
+                        </div>
                         <div class="bench-core-summary" id="benchCoreSummary"></div>
                         <div class="bench-hero-visual" id="benchHeroVisual"></div>
                         <div class="bench-demo-surface" id="benchDemoSurface"></div>
@@ -9346,6 +9451,7 @@
         let idleAdvanceTimer = null;
         let completionQuizViewKey = '';
         let completionQuizViewStartedAt = 0;
+        let activeNarrationUtterance = null;
         const vmCache = new Map();
         const completedQuizMilestoneKeys = new Set();
 
@@ -9410,6 +9516,7 @@
             nextBtn: document.getElementById('nextBtn'),
             storylineSelect: document.getElementById('storylineSelect'),
             uiBackButton: document.getElementById('uiBackButton'),
+            uiNarrationButton: document.getElementById('uiNarrationButton'),
             storylineTrigger: document.getElementById('storylineTrigger'),
             storylineTriggerLabel: document.getElementById('storylineTriggerLabel'),
             storylineTriggerStatus: document.getElementById('storylineTriggerStatus'),
@@ -9446,6 +9553,7 @@
             benchCoreArea: document.getElementById('benchCoreArea'),
             benchCoreYear: document.getElementById('benchCoreYear'),
             benchCoreTitle: document.getElementById('benchCoreTitle'),
+            benchNarrationButton: document.getElementById('benchNarrationButton'),
             benchCoreSummary: document.getElementById('benchCoreSummary'),
             benchHeroVisual: document.getElementById('benchHeroVisual'),
             benchDemoSurface: document.getElementById('benchDemoSurface'),
@@ -15176,6 +15284,77 @@
             `).join('');
         }
 
+        function getCurrentLocale() {
+            return window.I18n && typeof window.I18n.getLocale === 'function'
+                ? window.I18n.getLocale()
+                : window.currentLocale;
+        }
+
+        function updateBenchNarrationButton(state = 'idle') {
+            const supported = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+            const isSpeaking = state === 'speaking';
+            const isPaused = state === 'paused';
+            const label = isSpeaking
+                ? uiText('Click again to pause', '再次点击暂停')
+                : isPaused
+                    ? uiText('Resume narration', '继续播放')
+                    : uiText('Play narration', '播放语音');
+            document.querySelectorAll('.bench-narration-button').forEach((button) => {
+                button.disabled = !supported;
+                button.classList.toggle('is-speaking', isSpeaking);
+                button.classList.toggle('is-paused', isPaused);
+                button.setAttribute('aria-pressed', state === 'idle' ? 'false' : 'true');
+                button.setAttribute('aria-label', supported ? label : uiText('Narration is unavailable in this browser', '此浏览器不支持语音解说'));
+                button.title = button.getAttribute('aria-label');
+                const text = button.querySelector('.narration-label');
+                if (text) text.textContent = label;
+            });
+        }
+
+        function stopBenchNarration() {
+            if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+            activeNarrationUtterance = null;
+            updateBenchNarrationButton('idle');
+        }
+
+        function toggleBenchNarration(vm) {
+            if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) return;
+            if (activeNarrationUtterance) {
+                if (window.speechSynthesis.paused) {
+                    window.speechSynthesis.resume();
+                    updateBenchNarrationButton('speaking');
+                } else {
+                    window.speechSynthesis.pause();
+                    updateBenchNarrationButton('paused');
+                }
+                return;
+            }
+
+            const title = stripHtml(vm && vm.title);
+            const summary = stripHtml(vm && (vm.descriptionHtml || vm.descriptionText));
+            const text = [title, summary].filter(Boolean).join('。');
+            if (!text) return;
+
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(text);
+            const locale = getCurrentLocale() === 'zh' ? 'zh-CN' : 'en-US';
+            utterance.lang = locale;
+            utterance.rate = 0.94;
+            utterance.pitch = 1;
+            const voices = window.speechSynthesis.getVoices();
+            const voice = voices.find((item) => String(item.lang || '').toLowerCase() === locale.toLowerCase())
+                || voices.find((item) => String(item.lang || '').toLowerCase().startsWith(locale.slice(0, 2).toLowerCase()));
+            if (voice) utterance.voice = voice;
+            utterance.onend = utterance.onerror = () => {
+                if (activeNarrationUtterance !== utterance) return;
+                activeNarrationUtterance = null;
+                updateBenchNarrationButton('idle');
+            };
+            activeNarrationUtterance = utterance;
+            updateBenchNarrationButton('speaking');
+            window.speechSynthesis.speak(utterance);
+        }
+
         function renderBenchDossier(vm) {
             if (!refs.benchDossier) return;
             const raw = vm.raw || {};
@@ -15185,6 +15364,8 @@
             refs.benchCoreYear.textContent = String(vm.year || '');
             refs.benchCoreTitle.textContent = vm.title || '';
             refs.benchCoreSummary.innerHTML = buildSummaryHtml(vm);
+            updateBenchNarrationButton('idle');
+            refs.benchNarrationButton.onclick = () => toggleBenchNarration(vm);
             renderBenchMapList();
             renderBenchHeroVisual(vm);
             renderBenchDemo(vm);
@@ -15871,6 +16052,8 @@
                     </aside>
                 </div>
             `;
+            updateBenchNarrationButton('idle');
+            if (refs.uiNarrationButton) refs.uiNarrationButton.onclick = () => toggleBenchNarration(vm);
             hydratePreviewImages(refs.uiBrowserMain);
             refs.uiBrowserMain.querySelectorAll('[data-ui-image-index]').forEach((button) => {
                 button.addEventListener('click', () => {
@@ -16042,6 +16225,7 @@
         }
 
         function renderPage(index, renderOptions = {}) {
+            if (activeNarrationUtterance) stopBenchNarration();
             currentIndex = Math.max(0, Math.min(Number(index) || 0, milestoneList.length - 1));
             const uiBrowserActive = isUiBrowserActive();
             if (uiBrowserActive) ensureUiSelection();
