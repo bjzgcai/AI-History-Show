@@ -249,8 +249,7 @@ const mobileRequirements = [
         message: 'single-character fallback avatar orphans are centered on one squeezed line'
     },
     {
-        pattern:
-            /function renderUiDetail\(\)[\s\S]*?uiNarrationButton\.onclick = \(\) => toggleBenchNarration\(vm\)/,
+        pattern: /function renderUiDetail\(\)[\s\S]*?uiNarrationButton\.onclick = \(\) => toggleBenchNarration\(vm\)/,
         message: 'every unified event detail page binds the narration control'
     },
     {
