@@ -243,6 +243,28 @@ assert.equal(
     true,
     'the compiled Dartmouth narration audio should exist locally'
 );
+const turingTestMilestone = compiledArchive.milestones.find(
+    (milestone) =>
+        milestone.id === 'milestone-1950-turing-test' &&
+        milestone.storyline &&
+        milestone.storyline.id === 'bench-council-ai100'
+);
+assert.ok(turingTestMilestone, 'the Turing Test milestone should compile for the AI100 storyline');
+assert.deepEqual(
+    turingTestMilestone.resources.audios.map((audio) => audio.language),
+    ['zh', 'en'],
+    'the AI100 runtime should select the interactive Chinese and English release audio'
+);
+assert.match(
+    turingTestMilestone.resources.audios[0].url,
+    /audio\/releases\/1950-turing-test-zh-interact-v1\.mp3$/,
+    'the Chinese runtime audio should use the interactive release URL'
+);
+assert.equal(
+    Object.hasOwn(turingTestMilestone.resources.audios[0], 'sourcePath'),
+    false,
+    'published runtime audio must not expose its local production source path'
+);
 console.log('PASS production compiler emits Archive provenance');
 
 for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'events'), { withFileTypes: true })) {

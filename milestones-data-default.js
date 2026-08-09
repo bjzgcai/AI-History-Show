@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-09 02:10
+// 生成时间: 2026-08-09 03:19
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 194, errors 0
 
@@ -145,8 +145,42 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1950-turing-test-audio-zh-interact-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1950-turing-test-zh-interact-v1.mp3",
+          "title": {
+            "zh": "1950-turing-test 中文互动增强版科普音频",
+            "en": "1950-turing-test interactive Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1950-turing-test-zh-interact-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1950-turing-test-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1950-turing-test-en-v1.mp3",
+          "title": {
+            "zh": "1950-turing-test 英文科普音频",
+            "en": "1950-turing-test English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1950-turing-test-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1950-turing-test-alan-turing",
+        "asset-1950-turing-test-audio-zh-interact-v1",
+        "asset-1950-turing-test-audio-en-v1",
         "asset-1950-turing-test-diagram"
       ]
     },
@@ -618,9 +652,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1971-complexity-theory_reduction-map.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1971-complexity-theory-audio-zh-interact-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1971-complexity-theory-zh-interact-v1.mp3",
+          "title": {
+            "zh": "1971-complexity-theory 中文互动增强版科普音频",
+            "en": "1971-complexity-theory interactive Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1971-complexity-theory-zh-interact-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1971-complexity-theory-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1971-complexity-theory-en-v1.mp3",
+          "title": {
+            "zh": "1971-complexity-theory 英文科普音频",
+            "en": "1971-complexity-theory English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1971-complexity-theory-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1971-complexity-theory-stephen-cook",
-        "asset-1971-complexity-theory-reduction-map"
+        "asset-1971-complexity-theory-reduction-map",
+        "asset-1971-complexity-theory-audio-zh-interact-v1",
+        "asset-1971-complexity-theory-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -1071,9 +1139,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1971-vc-theory_generalization.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1971-vc-theory-audio-zh-interact-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1971-vc-theory-zh-interact-v1.mp3",
+          "title": {
+            "zh": "1971-vc-theory 中文互动增强版科普音频",
+            "en": "1971-vc-theory interactive Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1971-vc-theory-zh-interact-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1971-vc-theory-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1971-vc-theory-en-v1.mp3",
+          "title": {
+            "zh": "1971-vc-theory 英文科普音频",
+            "en": "1971-vc-theory English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1971-vc-theory-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1971-vc-theory-vladimir-vapnik",
-        "asset-1971-vc-theory-generalization"
+        "asset-1971-vc-theory-generalization",
+        "asset-1971-vc-theory-audio-zh-interact-v1",
+        "asset-1971-vc-theory-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -1558,9 +1660,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1956-logic-theorist_proof-search.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1956-logic-theorist-audio-zh-interact-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1956-logic-theorist-zh-interact-v1.mp3",
+          "title": {
+            "zh": "1956-logic-theorist 中文互动增强版科普音频",
+            "en": "1956-logic-theorist interactive Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1956-logic-theorist-zh-interact-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1956-logic-theorist-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1956-logic-theorist-en-v1.mp3",
+          "title": {
+            "zh": "1956-logic-theorist 英文科普音频",
+            "en": "1956-logic-theorist English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1956-logic-theorist-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1956-logic-theorist-herbert-simon",
-        "asset-1956-logic-theorist-proof-search"
+        "asset-1956-logic-theorist-proof-search",
+        "asset-1956-logic-theorist-audio-zh-interact-v1",
+        "asset-1956-logic-theorist-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -1995,9 +2131,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1958-wangs-algorithm-audio-zh-interact-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1958-wangs-algorithm-zh-interact-v1.mp3",
+          "title": {
+            "zh": "1958-wangs-algorithm 中文互动增强版科普音频",
+            "en": "1958-wangs-algorithm interactive Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1958-wangs-algorithm-zh-interact-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1958-wangs-algorithm-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1958-wangs-algorithm-en-v1.mp3",
+          "title": {
+            "zh": "1958-wangs-algorithm 英文科普音频",
+            "en": "1958-wangs-algorithm English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1958-wangs-algorithm-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1958-wangs-algorithm-hao-wang",
-        "asset-1958-wangs-algorithm-pattern-proof"
+        "asset-1958-wangs-algorithm-pattern-proof",
+        "asset-1958-wangs-algorithm-audio-zh-interact-v1",
+        "asset-1958-wangs-algorithm-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -2480,9 +2650,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1960-davis-putnam-dpll-audio-zh-interact-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3",
+          "title": {
+            "zh": "1960-davis-putnam-dpll 中文互动增强版科普音频",
+            "en": "1960-davis-putnam-dpll interactive Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1960-davis-putnam-dpll-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1960-davis-putnam-dpll-en-v1.mp3",
+          "title": {
+            "zh": "1960-davis-putnam-dpll 英文科普音频",
+            "en": "1960-davis-putnam-dpll English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1960-davis-putnam-dpll-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1960-davis-putnam-dpll-hilary-putnam",
-        "asset-1960-davis-putnam-dpll-sat-search"
+        "asset-1960-davis-putnam-dpll-sat-search",
+        "asset-1960-davis-putnam-dpll-audio-zh-interact-v1",
+        "asset-1960-davis-putnam-dpll-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -2918,10 +3122,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1965-resolution-method_unification-map.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1965-resolution-method-audio-zh-interact-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1965-resolution-method-zh-interact-v1.mp3",
+          "title": {
+            "zh": "1965-resolution-method 中文互动增强版科普音频",
+            "en": "1965-resolution-method interactive Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1965-resolution-method-zh-interact-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1965-resolution-method-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1965-resolution-method-en-v1.mp3",
+          "title": {
+            "zh": "1965-resolution-method 英文科普音频",
+            "en": "1965-resolution-method English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1965-resolution-method-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1965-resolution-method-john-alan-robinson",
         "asset-1965-resolution-method-clause-refutation",
-        "asset-1965-resolution-method-unification-map"
+        "asset-1965-resolution-method-unification-map",
+        "asset-1965-resolution-method-audio-zh-interact-v1",
+        "asset-1965-resolution-method-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -3408,8 +3646,42 @@ const milestones = [
       "overviewImage": "resources/images/external/1990-otter/otter-3-3-reference-manual-first-page.svg",
       "overviewImageAssetId": "asset-1990-otter-manual-first-page",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1990-otter-audio-zh-interact-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1990-otter-zh-interact-v1.mp3",
+          "title": {
+            "zh": "1990-otter 中文互动增强版科普音频",
+            "en": "1990-otter interactive Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1990-otter-zh-interact-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1990-otter-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1990-otter-en-v1.mp3",
+          "title": {
+            "zh": "1990-otter 英文科普音频",
+            "en": "1990-otter English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1990-otter-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1990-otter-manual-first-page",
+        "asset-1990-otter-audio-zh-interact-v1",
+        "asset-1990-otter-audio-en-v1",
         "asset-1990-otter-input-clauses",
         "asset-1990-otter-proof-trace",
         "asset-1990-otter-given-clause",
@@ -3942,9 +4214,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1958-lisp-audio-zh-interact-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1958-lisp-zh-interact-v1.mp3",
+          "title": {
+            "zh": "1958-lisp 中文互动增强版科普音频",
+            "en": "1958-lisp interactive Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1958-lisp-zh-interact-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1958-lisp-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1958-lisp-en-v1.mp3",
+          "title": {
+            "zh": "1958-lisp 英文科普音频",
+            "en": "1958-lisp English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1958-lisp-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1958-lisp-john-mccarthy",
-        "asset-1958-lisp-eval-flow"
+        "asset-1958-lisp-eval-flow",
+        "asset-1958-lisp-audio-zh-interact-v1",
+        "asset-1958-lisp-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -4378,10 +4684,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1973-prolog_unification-trace.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1973-prolog-audio-zh-interact-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1973-prolog-zh-interact-v1.mp3",
+          "title": {
+            "zh": "1973-prolog 中文互动增强版科普音频",
+            "en": "1973-prolog interactive Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1973-prolog-zh-interact-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1973-prolog-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1973-prolog-en-v1.mp3",
+          "title": {
+            "zh": "1973-prolog 英文科普音频",
+            "en": "1973-prolog English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1973-prolog-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1973-prolog-alain-colmerauer",
         "asset-1973-prolog-query-tree",
-        "asset-1973-prolog-unification-trace"
+        "asset-1973-prolog-unification-trace",
+        "asset-1973-prolog-audio-zh-interact-v1",
+        "asset-1973-prolog-audio-en-v1"
       ]
     },
     "imageMeta": {

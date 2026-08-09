@@ -53,5 +53,125 @@
       "variant:bench-council-ai100"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-1960-davis-putnam-dpll-audio-zh-original-v1",
+    "type": "audio",
+    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1960-davis-putnam-dpll-zh-original-v1.mp3",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "1960-davis-putnam-dpll 中文原版科普音频",
+      "en": "1960-davis-putnam-dpll original Chinese audio narration"
+    },
+    "subcaption": {
+      "zh": "双人问答原版，作为已发布音频版本保留。",
+      "en": "Original two-speaker edition retained as a published audio version."
+    },
+    "sourceId": "source-a-computing-procedure-for-quantification-theory",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于本展览的事件科普音频播放。",
+        "en": "Used for event narration in this exhibition."
+      }
+    },
+    "language": "zh",
+    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1960-davis-putnam-dpll-zh-original-v1.mp3",
+    "storage": {
+      "provider": "bza-s3",
+      "bucket": "ai-history",
+      "objectKey": "audio/releases/1960-davis-putnam-dpll-zh-original-v1.mp3",
+      "sourcePath": "resources/audio/generated/ai100-first-40-and-gaming/revisions/ai100-first10-storyline-zh-huoposhuanglang-v3-2026-08-07/audio/bench-council-ai100/storyline/zh/06-1960-davis-putnam-dpll.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "usage": [
+      "archive-only"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1960-davis-putnam-dpll-audio-zh-interact-v1",
+    "type": "audio",
+    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "1960-davis-putnam-dpll 中文互动增强版科普音频",
+      "en": "1960-davis-putnam-dpll interactive Chinese audio narration"
+    },
+    "subcaption": {
+      "zh": "增强角色承接与回应的双人问答版，供中文页面播放。",
+      "en": "Two-speaker edition with stronger conversational handoffs, used on the Chinese page."
+    },
+    "sourceId": "source-a-computing-procedure-for-quantification-theory",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于本展览的事件科普音频播放。",
+        "en": "Used for event narration in this exhibition."
+      }
+    },
+    "language": "zh",
+    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3",
+    "storage": {
+      "provider": "bza-s3",
+      "bucket": "ai-history",
+      "objectKey": "audio/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3",
+      "sourcePath": "resources/audio/generated/ai100-first-40-and-gaming/revisions/ai100-first10-storyline-zh-huopo-interactive-v5-2026-08-07/audio/bench-council-ai100/storyline/zh/06-1960-davis-putnam-dpll.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1960-davis-putnam-dpll-audio-en-v1",
+    "type": "audio",
+    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1960-davis-putnam-dpll-en-v1.mp3",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "1960-davis-putnam-dpll 英文科普音频",
+      "en": "1960-davis-putnam-dpll English audio narration"
+    },
+    "subcaption": {
+      "zh": "英文双人问答版，供英文页面播放。",
+      "en": "English two-speaker edition used on the English page."
+    },
+    "sourceId": "source-a-computing-procedure-for-quantification-theory",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于本展览的事件科普音频播放。",
+        "en": "Used for event narration in this exhibition."
+      }
+    },
+    "language": "en",
+    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1960-davis-putnam-dpll-en-v1.mp3",
+    "storage": {
+      "provider": "bza-s3",
+      "bucket": "ai-history",
+      "objectKey": "audio/releases/1960-davis-putnam-dpll-en-v1.mp3",
+      "sourcePath": "resources/audio/generated/ai100-first-40-and-gaming/audio/bench-council-ai100/storyline/en/06-1960-davis-putnam-dpll.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
   }
 ]

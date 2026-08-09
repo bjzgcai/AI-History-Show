@@ -16,7 +16,9 @@
   "visual": "transcript",
   "assetIds": [
     "asset-1958-wangs-algorithm-hao-wang",
-    "asset-1958-wangs-algorithm-pattern-proof"
+    "asset-1958-wangs-algorithm-pattern-proof",
+    "asset-1958-wangs-algorithm-audio-zh-interact-v1",
+    "asset-1958-wangs-algorithm-audio-en-v1"
   ],
   "sourceIds": [
     "source-proving-theorems-by-pattern-recognition-ii",

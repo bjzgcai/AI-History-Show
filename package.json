@@ -63,6 +63,8 @@
         "audio:manifest": "node scripts/sync-audio-s3.js manifest",
         "audio:push": "node scripts/sync-audio-s3.js push",
         "audio:push:dry-run": "node scripts/sync-audio-s3.js push --dry-run",
+        "audio:publish": "node scripts/sync-audio-s3.js publish-access",
+        "audio:publish:dry-run": "node scripts/sync-audio-s3.js publish-access --dry-run",
         "audio:verify": "node scripts/sync-audio-s3.js verify"
     },
     "devDependencies": {
