@@ -10,6 +10,9 @@ resources/images/benchcouncil-ai100-annual/*_contributors.svg
 # Node.js
 node_modules/
 *.log
+.env
+.env.*
+!.env.example
 
 # Auto-generated backups
 manage/.backups/

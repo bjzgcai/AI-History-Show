@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-05 10:45
+// 生成时间: 2026-08-09 02:10
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 194, errors 0
 
@@ -78893,11 +78893,30 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-1956-dartmouth-dialogue-zh",
+          "url": "resources/audio/1956-dartmouth/dartmouth-dialogue-zh.mp3",
+          "sourcePath": "resources/audio/1956-dartmouth/dartmouth-dialogue-zh.mp3",
+          "title": {
+            "zh": "达特茅斯会议中文音频讲解",
+            "en": "Chinese audio narration for the Dartmouth Workshop"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/delivery/1956-dartmouth/zh/dartmouth-dialogue-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1956-dartmouth-historical-02",
         "asset-1956-dartmouth-historical-01",
         "asset-1956-dartmouth-historical-04",
-        "asset-1956-dartmouth-school"
+        "asset-1956-dartmouth-school",
+        "asset-1956-dartmouth-dialogue-zh"
       ]
     },
     "imageMeta": {
