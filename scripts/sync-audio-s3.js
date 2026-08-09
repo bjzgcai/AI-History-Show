@@ -28,6 +28,7 @@ function printUsage() {
             '  node scripts/sync-audio-s3.js manifest [--output FILE] [--json]',
             '  node scripts/sync-audio-s3.js push [--dry-run] [--force] [--output FILE] [--json]',
             '  node scripts/sync-audio-s3.js verify [--json]',
+            '  node scripts/sync-audio-s3.js publish-access [--dry-run] [--json]',
             '',
             'Configuration:',
             `  BZA_S3_ENDPOINT       S3 endpoint (default: ${DEFAULT_ENDPOINT})`,
@@ -287,6 +288,13 @@ function remoteMatches(remote, asset) {
     );
 }
 
+function selectUploadAction(remote, asset, force = false) {
+    if (force) return 'upload';
+    if (remoteMatches(remote, asset)) return 'skip';
+    if (remote.exists) return 'conflict';
+    return 'upload';
+}
+
 async function uploadAudioAsset(client, config, entry, asset) {
     const { Upload } = loadS3Sdk();
     const upload = new Upload({
@@ -340,12 +348,20 @@ async function pushAudioAssets(entries, manifest, config, options = {}) {
             const asset = manifest.assets[index];
             const entry = entries[index];
             try {
-                const remote = options.force
-                    ? { exists: false }
-                    : await readRemoteState(client, config.bucket, asset.objectKey);
-                if (remoteMatches(remote, asset)) {
+                const remote = await readRemoteState(client, config.bucket, asset.objectKey);
+                const action = selectUploadAction(remote, asset, options.force === true);
+                if (action === 'skip') {
                     summary.skipped += 1;
                     summary.results.push({ objectKey: asset.objectKey, action: 'skipped' });
+                    continue;
+                }
+                if (action === 'conflict') {
+                    summary.failed += 1;
+                    summary.results.push({
+                        objectKey: asset.objectKey,
+                        action: 'conflict',
+                        error: 'remote object exists with different content or metadata; use --force to overwrite'
+                    });
                     continue;
                 }
                 await uploadAudioAsset(client, config, entry, asset);
@@ -392,6 +408,92 @@ async function verifyAudioAssets(manifest, config) {
     return results;
 }
 
+function mergePublicReleasePolicy(policy, bucket) {
+    const statementId = 'PublicReadAudioReleases';
+    const statements = Array.isArray(policy.Statement) ? policy.Statement : policy.Statement ? [policy.Statement] : [];
+    return {
+        ...policy,
+        Version: policy.Version || '2012-10-17',
+        Statement: [
+            ...statements.filter((statement) => statement && statement.Sid !== statementId),
+            {
+                Sid: statementId,
+                Effect: 'Allow',
+                Principal: '*',
+                Action: 's3:GetObject',
+                Resource: `arn:aws:s3:::${bucket}/audio/releases/*`
+            }
+        ]
+    };
+}
+
+function mergeAudioCorsRules(corsRules) {
+    const ruleId = 'PublicAudioPlayback';
+    return [
+        ...(corsRules || []).filter((rule) => rule && rule.ID !== ruleId),
+        {
+            ID: ruleId,
+            AllowedHeaders: ['Range'],
+            AllowedMethods: ['GET', 'HEAD'],
+            AllowedOrigins: ['*'],
+            ExposeHeaders: ['Accept-Ranges', 'Content-Length', 'Content-Range', 'ETag'],
+            MaxAgeSeconds: 86400
+        }
+    ];
+}
+
+async function readBucketPolicy(client, bucket) {
+    const { GetBucketPolicyCommand } = loadS3Sdk();
+    try {
+        const result = await client.send(new GetBucketPolicyCommand({ Bucket: bucket }));
+        return result.Policy ? JSON.parse(result.Policy) : {};
+    } catch (error) {
+        if (isNotFound(error)) return {};
+        throw error;
+    }
+}
+
+async function readBucketCors(client, bucket) {
+    const { GetBucketCorsCommand } = loadS3Sdk();
+    try {
+        const result = await client.send(new GetBucketCorsCommand({ Bucket: bucket }));
+        return result.CORSRules || [];
+    } catch (error) {
+        if (isNotFound(error)) return [];
+        throw error;
+    }
+}
+
+async function configurePublicAudioAccess(config, options = {}) {
+    const { PutBucketCorsCommand, PutBucketPolicyCommand } = loadS3Sdk();
+    const client = createS3Client(config);
+    try {
+        const [currentPolicy, currentCorsRules] = await Promise.all([
+            readBucketPolicy(client, config.bucket),
+            readBucketCors(client, config.bucket)
+        ]);
+        const policy = mergePublicReleasePolicy(currentPolicy, config.bucket);
+        const corsRules = mergeAudioCorsRules(currentCorsRules);
+        if (!options.dryRun) {
+            await client.send(
+                new PutBucketPolicyCommand({
+                    Bucket: config.bucket,
+                    Policy: JSON.stringify(policy)
+                })
+            );
+            await client.send(
+                new PutBucketCorsCommand({
+                    Bucket: config.bucket,
+                    CORSConfiguration: { CORSRules: corsRules }
+                })
+            );
+        }
+        return { dryRun: options.dryRun === true, policy, corsRules };
+    } finally {
+        client.destroy();
+    }
+}
+
 function printIssues(issues) {
     for (const issue of issues) console.error(`ERROR ${issue}`);
 }
@@ -417,7 +519,7 @@ async function main(argv = process.argv.slice(2)) {
         printUsage();
         return;
     }
-    if (!['check', 'manifest', 'push', 'verify'].includes(command)) {
+    if (!['check', 'manifest', 'push', 'verify', 'publish-access'].includes(command)) {
         printUsage();
         throw new Error(`Unknown command: ${command}`);
     }
@@ -439,6 +541,23 @@ async function main(argv = process.argv.slice(2)) {
         return;
     }
 
+    const config = resolveS3Config(args, entries);
+    if (command === 'publish-access') {
+        const result = await configurePublicAudioAccess(config, { dryRun: args['dry-run'] === true });
+        if (args.json) console.log(JSON.stringify(result, null, 2));
+        else {
+            console.log(
+                `${result.dryRun ? 'Would configure' : 'Configured'} public read for ` +
+                    `s3://${config.bucket}/audio/releases/*; audio/manifests/* remains private.`
+            );
+            console.log(
+                `${result.dryRun ? 'Would merge' : 'Merged'} audio playback CORS with ` +
+                    `${result.corsRules.length} total rule(s).`
+            );
+        }
+        return;
+    }
+
     const manifest = await buildManifest(entries);
     const outputPath = path.resolve(args.output || DEFAULT_MANIFEST_PATH);
     if (command === 'manifest') {
@@ -451,7 +570,6 @@ async function main(argv = process.argv.slice(2)) {
         return;
     }
 
-    const config = resolveS3Config(args, entries);
     if (command === 'push') {
         writeManifest(manifest, outputPath);
         const summary = await pushAudioAssets(entries, manifest, config, {
@@ -490,12 +608,16 @@ module.exports = {
     DEFAULT_MANIFEST_KEY,
     buildManifest,
     collectAudioAssets,
+    configurePublicAudioAccess,
     contentTypeForPath,
+    mergeAudioCorsRules,
+    mergePublicReleasePolicy,
     normalizeObjectKey,
     parseArgs,
     pushAudioAssets,
     remoteMatches,
     resolveS3Config,
+    selectUploadAction,
     sha256File,
     validateAudioAssets,
     verifyAudioAssets,

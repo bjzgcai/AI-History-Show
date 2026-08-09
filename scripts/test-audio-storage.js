@@ -9,9 +9,12 @@ const path = require('node:path');
 const {
     buildManifest,
     collectAudioAssets,
+    mergeAudioCorsRules,
+    mergePublicReleasePolicy,
     normalizeObjectKey,
     remoteMatches,
     resolveS3Config,
+    selectUploadAction,
     validateAudioAssets
 } = require('./sync-audio-s3.js');
 
@@ -66,11 +69,42 @@ async function main() {
             remoteMatches({ ...matchingRemote, contentType: 'application/octet-stream' }, manifest.assets[0]),
             false
         );
+        assert.equal(selectUploadAction(matchingRemote, manifest.assets[0]), 'skip');
+        assert.equal(selectUploadAction({ exists: false }, manifest.assets[0]), 'upload');
+        assert.equal(selectUploadAction({ ...matchingRemote, size: 15 }, manifest.assets[0]), 'conflict');
+        assert.equal(selectUploadAction({ ...matchingRemote, size: 15 }, manifest.assets[0], true), 'upload');
 
         const config = resolveS3Config({}, entries);
         assert.equal(config.endpoint, 'https://s3.inner.bza.edu.cn');
         assert.equal(config.bucket, 'ai-history');
         assert.equal(config.forcePathStyle, true);
+
+        const policy = mergePublicReleasePolicy(
+            {
+                Version: '2012-10-17',
+                Statement: [{ Sid: 'KeepExistingAccess', Effect: 'Allow', Action: 's3:ListBucket' }]
+            },
+            'ai-history'
+        );
+        assert.equal(policy.Statement.length, 2);
+        assert.equal(policy.Statement[0].Sid, 'KeepExistingAccess');
+        assert.deepEqual(policy.Statement[1], {
+            Sid: 'PublicReadAudioReleases',
+            Effect: 'Allow',
+            Principal: '*',
+            Action: 's3:GetObject',
+            Resource: 'arn:aws:s3:::ai-history/audio/releases/*'
+        });
+        assert.equal(mergePublicReleasePolicy(policy, 'ai-history').Statement.length, 2);
+
+        const corsRules = mergeAudioCorsRules([
+            { ID: 'KeepExistingCors', AllowedMethods: ['GET'], AllowedOrigins: ['https://example.com'] }
+        ]);
+        assert.equal(corsRules.length, 2);
+        assert.equal(corsRules[0].ID, 'KeepExistingCors');
+        assert.deepEqual(corsRules[1].AllowedMethods, ['GET', 'HEAD']);
+        assert.deepEqual(corsRules[1].AllowedHeaders, ['Range']);
+        assert.equal(mergeAudioCorsRules(corsRules).length, 2);
 
         entries[0].objectKey = '../outside.mp3';
         assert.match(validateAudioAssets(entries).join('\n'), /must stay under audio|parent traversal/);

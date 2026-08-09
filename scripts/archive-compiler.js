@@ -200,9 +200,13 @@ function buildMilestone(root, storyline, ref, figureRegistry) {
                       audios: audioAssets.map((asset) => ({
                           id: asset.id,
                           url: resolveAudioUrl(asset),
-                          sourcePath:
-                              (asset.storage && asset.storage.sourcePath) ||
-                              (/^https?:\/\//i.test(asset.path) ? '' : asset.path),
+                          ...(!asset.deliveryUrl && !(asset.storage && asset.storage.publicUrl)
+                              ? {
+                                    sourcePath:
+                                        (asset.storage && asset.storage.sourcePath) ||
+                                        (/^https?:\/\//i.test(asset.path) ? '' : asset.path)
+                                }
+                              : {}),
                           title: localizePair(asset.caption),
                           language: asset.language || '',
                           contentType:

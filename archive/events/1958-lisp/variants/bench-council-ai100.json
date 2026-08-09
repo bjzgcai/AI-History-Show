@@ -16,7 +16,9 @@
   "visual": "eval",
   "assetIds": [
     "asset-1958-lisp-john-mccarthy",
-    "asset-1958-lisp-eval-flow"
+    "asset-1958-lisp-eval-flow",
+    "asset-1958-lisp-audio-zh-interact-v1",
+    "asset-1958-lisp-audio-en-v1"
   ],
   "sourceIds": [
     "source-lisp-i-programmer-s-manual",

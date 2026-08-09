@@ -32,6 +32,8 @@ AI 历史事件讲解音频使用两院对象存储的 `ai-history` Bucket。对
 
 访问密钥已经单独配置，但本文档不记录 AK/SK 的值。密钥应存放在本机环境变量、CI Secret 或公司的密钥管理服务中。
 
+该 Endpoint 使用 Ceph RGW 多租户命名。签名 SDK 请求仍使用 Bucket 名 `ai-history`；匿名 path-style URL 必须使用租户限定路径 `innovation%3Aai-history`，否则网关会返回 `NoSuchBucket`。
+
 由于当前 Endpoint 域名包含 `inner`，部署前必须确认展示终端或线上服务所在网络能够访问该地址。若公网客户端不能访问，应由可访问内网 Endpoint 的媒体网关或反向代理对外提供音频。
 
 ## 对象键结构
@@ -41,12 +43,12 @@ AI 历史事件讲解音频使用两院对象存储的 `ai-history` Bucket。对
 ```text
 s3://ai-history/audio/
   masters/<event-id>/<lang>/narration-v1.wav
-  delivery/<event-id>/<lang>/narration-v1.mp3
+  releases/<event-id>-<lang>-<edition>-v1.mp3
   manifests/audio-manifest.json
 ```
 
 - `masters/` 保存无损或高质量母版。
-- `delivery/` 保存网页实际播放的压缩版本。
+- `releases/` 保存网页实际播放的版本化压缩文件；中文可包含 `original` 与 `interact` 版本。
 - `manifests/` 保存对象键、版本、大小、checksum 和生产 URL。
 - `<event-id>` 使用 Archive 事件 ID，例如 `1956-dartmouth`。
 - `<lang>` 使用 `zh`、`en` 等固定语言代码。
@@ -55,7 +57,7 @@ s3://ai-history/audio/
 示例对象：
 
 ```text
-s3://ai-history/audio/delivery/1956-dartmouth/zh/dartmouth-dialogue-v1.mp3
+s3://ai-history/audio/releases/1950-turing-test-zh-interact-v1.mp3
 ```
 
 Bucket 当前未开启版本控制。即使文件名已经版本化，也建议评估开启 Bucket 版本控制，以降低误覆盖或误删除造成的数据损失风险。
@@ -89,8 +91,8 @@ export AWS_SECRET_ACCESS_KEY='<从密钥管理服务读取>'
 
 ```bash
 aws --endpoint-url "$BZA_S3_ENDPOINT" s3 cp \
-  ./dartmouth-dialogue-zh.mp3 \
-  "s3://$BZA_S3_BUCKET/audio/delivery/1956-dartmouth/zh/dartmouth-dialogue-v1.mp3" \
+  ./1950-turing-test-zh-interact-v1.mp3 \
+  "s3://$BZA_S3_BUCKET/audio/releases/1950-turing-test-zh-interact-v1.mp3" \
   --content-type audio/mpeg \
   --cache-control 'public, max-age=31536000, immutable'
 ```
@@ -103,6 +105,8 @@ npm run audio:manifest
 npm run audio:push:dry-run
 npm run audio:push
 npm run audio:verify
+npm run audio:publish:dry-run
+npm run audio:publish
 ```
 
 脚本从 Archive 中查找 `type: "audio"` 的资产，读取其 `storage` 元数据，生成 SHA-256 checksum，并通过对象 metadata 判断是否需要重复上传。生成的本地 manifest 位于 `.tmp/audio/audio-manifest.json`，远端默认写入 `audio/manifests/audio-manifest.json`。
@@ -128,7 +132,7 @@ S3 对象可以形成稳定媒体地址，但“已上传到 Bucket”不等于�
 
 ```text
 浏览器
-→ https://<media-domain>/audio/delivery/1956-dartmouth/zh/narration-v1.mp3
+→ https://<media-domain>/audio/releases/1950-turing-test-zh-interact-v1.mp3
 → Nginx/CDN/音频网关
 → https://s3.inner.bza.edu.cn
 → ai-history Bucket
@@ -138,10 +142,10 @@ Bucket 保持私有，媒体网关负责鉴权、Range 请求、缓存、CORS �
 
 ### 模式 B：Bucket 匿名只读
 
-只对 `audio/delivery/` 前缀开放匿名 `GetObject`，母版和 manifest 仍保持私有。浏览器直接使用对象 URL，但需要先确认对象存储支持的 URL 风格，例如 path-style 地址可能是：
+只对 `audio/releases/` 前缀开放匿名 `GetObject`，母版和 manifest 仍保持私有。`npm run audio:publish` 会保留已有 Bucket policy 与 CORS 规则，并合并项目专用规则；不会开放 `ListBucket`、上传或删除权限。浏览器直接使用对象 URL，例如 path-style 地址为：
 
 ```text
-https://s3.inner.bza.edu.cn/ai-history/audio/delivery/1956-dartmouth/zh/dartmouth-dialogue-v1.mp3
+https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1950-turing-test-zh-interact-v1.mp3
 ```
 
 上述 URL 需要在对象读取策略配置后验证。正式使用前需要通过无登录浏览器测试实际返回音频、`Content-Type`、CORS 和 Range 响应。不要为了直链播放把 AK/SK 放入前端。
@@ -154,8 +158,8 @@ Archive 中每个音频资源建议记录稳定生产 URL，而不是本机路�
 {
     "provider": "bza-s3",
     "bucket": "ai-history",
-    "objectKey": "audio/delivery/1956-dartmouth/zh/dartmouth-dialogue-v1.mp3",
-    "url": "https://<media-domain>/audio/delivery/1956-dartmouth/zh/dartmouth-dialogue-v1.mp3",
+    "objectKey": "audio/releases/1950-turing-test-zh-interact-v1.mp3",
+    "url": "https://<media-domain>/audio/releases/1950-turing-test-zh-interact-v1.mp3",
     "language": "zh",
     "format": "mp3",
     "version": 1,
@@ -173,15 +177,15 @@ Archive 中每个音频资源建议记录稳定生产 URL，而不是本机路�
 - 前端和静态站点永远不包含 AK/SK。
 - 日志不得打印 Authorization Header、AK、SK 或完整签名 URL。
 - 若使用预签名 URL，应由后端按需生成短时链接，不把它作为 Archive 中的永久 URL。
-- 母版目录保持私有；需要匿名播放时只开放 `audio/delivery/`。
+- 母版和 manifest 目录保持私有；匿名播放只开放 `audio/releases/`。
 
 ## 当前状态
 
 - S3 Endpoint 基础连通正常。
-- Dartmouth 中文音频和 `audio-manifest.json` 已成功上传。
-- 签名 HEAD 校验已通过，音频的 checksum、大小、MIME 和缓存 metadata 一致。
-- Bucket 当前保持私有，匿名对象 URL 返回 404；尚未配置公开读取策略或媒体网关。
-- Archive、compiler 和播放器已经支持 `deliveryUrl` / `storage.publicUrl`。取得稳定生产 URL 后只需写入该字段，无需改播放器代码。
-- 在稳定生产 URL 配置前，运行时继续使用本地 `path` 作为测试回退。
+- Dartmouth 中文音频已按旧 `audio/delivery/` 键上传，`audio-manifest.json` 已成功上传。
+- 30 个 AI100 release 音频已上传到 `audio/releases/`，签名 HEAD 校验的 checksum、大小、MIME 和缓存 metadata 全部一致。
+- `audio/releases/*` 已开放匿名 `GetObject`；30 个对象的匿名 Range、CORS、MIME 与缓存校验全部通过。
+- `audio/manifests/*` 与旧 `audio/delivery/*` 保持私有，租户限定匿名请求返回 HTTP 403。
+- Archive、compiler 和播放器已经使用 tenant-qualified `deliveryUrl`；中文页面选择互动增强版，英文页面选择英文版。
 
-后续需要轮换已通过对话传递的凭证，并在“媒体网关”与“仅开放 `audio/delivery/` 匿名读取”之间完成安全评审和部署选择。
+后续需要轮换已通过对话传递的凭证，并按正式展示网络环境决定是否在当前匿名只读链路前增加媒体网关或 CDN。
