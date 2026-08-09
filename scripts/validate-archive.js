@@ -279,6 +279,34 @@ function isDisplayImageAsset(asset) {
     return isObject(asset) && ['image', 'svg', 'gif'].includes(asset.type);
 }
 
+function validateAudioStorage(filePath, asset) {
+    const label = `asset ${asset.id || '<missing>'}`;
+    if (!hasText(asset.language)) addError(filePath, `${label} audio language is required.`);
+    if (!isObject(asset.storage)) {
+        addError(filePath, `${label} audio storage metadata is required.`);
+        return;
+    }
+
+    const storage = asset.storage;
+    if (storage.provider !== 'bza-s3') addError(filePath, `${label} storage.provider must be bza-s3.`);
+    if (storage.bucket !== 'ai-history') addError(filePath, `${label} storage.bucket must be ai-history.`);
+    if (!hasText(storage.objectKey) || !/^audio\//.test(storage.objectKey)) {
+        addError(filePath, `${label} storage.objectKey must stay under audio/.`);
+    } else if (storage.objectKey.includes('..') || storage.objectKey.includes('\\')) {
+        addError(filePath, `${label} storage.objectKey must be a normalized S3 key.`);
+    }
+    if (!hasText(storage.contentType) || !/^audio\//.test(storage.contentType)) {
+        addError(filePath, `${label} storage.contentType must be an audio MIME type.`);
+    }
+    if (asset.deliveryUrl && !/^https:\/\//i.test(asset.deliveryUrl)) {
+        addError(filePath, `${label} deliveryUrl must use HTTPS.`);
+    }
+    const serializedStorage = JSON.stringify(storage);
+    if (/access.?key|secret|credential|authorization/i.test(serializedStorage)) {
+        addError(filePath, `${label} storage metadata must not contain credentials.`);
+    }
+}
+
 function validateClaims(eventDir, claims, sourceIds) {
     const filePath = path.join(eventDir, 'claims.json');
     if (!Array.isArray(claims)) {
@@ -411,6 +439,7 @@ function validateAssets(eventDir, assets, sourceIds) {
         }
         if (!hasText(asset.role)) addError(filePath, `asset ${asset.id || '<missing>'} is missing role.`);
         checkLocalized(filePath, asset.caption, `asset ${asset.id || '<missing>'} caption`);
+        if (asset.type === 'audio') validateAudioStorage(filePath, asset);
         if (isDisplayImage) {
             checkLocalized(filePath, asset.subcaption, `asset ${asset.id || '<missing>'} subcaption`);
             if (/^external-reference-(?:image|diagram)$/i.test(String(asset.role || ''))) {

@@ -70,8 +70,8 @@
     "language": "en",
     "reliability": "reference-only",
     "notes": {
-      "zh": "仅保留用于既有图片资源的迁移溯源，不作为正文事实依据或页面展示来源。",
-      "en": "Retained only for migrated image provenance; it is not used as evidence for the body copy or as a displayed source."
+      "zh": "仅保留用于既有媒体资源的迁移与内部测试溯源，不作为正文事实依据或页面展示来源。",
+      "en": "Retained only for migrated media and internal test provenance; it is not used as evidence for the body copy or as a displayed source."
     },
     "label": {
       "zh": "内部记录",
