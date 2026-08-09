@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-08 03:54
+// 生成时间: 2026-08-09 20:47
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 194, errors 0
 
@@ -506,6 +506,13 @@ const milestones = [
     },
     "photos": [],
     "videoUrl": "",
+    "narrationAudio": {
+      "en": "resources/audio/1950-turing-test/baseline-en.mp3",
+      "zh": "resources/audio/1950-turing-test/interactive-enhanced-zh.mp3"
+    },
+    "narrationAudioAlternates": {
+      "baselineZh": "resources/audio/1950-turing-test/baseline-zh.mp3"
+    },
     "quote": {
       "en": "\"I propose to consider the question, 'Can machines think?'\"",
       "zh": "\"我建议考虑这样一个问题：机器能思考吗？\""

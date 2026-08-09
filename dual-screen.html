@@ -1972,6 +1972,7 @@
         let currentArchiveIndex = 0;
         let idleAdvanceTimer = null;
         let activeNarrationUtterance = null;
+        let activeNarrationAudio = null;
         const vmCache = new Map();
 
         let globeScene;
@@ -2136,7 +2137,8 @@
         function updateNarrationButton(state = 'idle') {
             const button = refs.dualNarrationButton;
             if (!button) return;
-            const supported = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+            const supported = 'Audio' in window
+                || ('speechSynthesis' in window && 'SpeechSynthesisUtterance' in window);
             const isSpeaking = state === 'speaking';
             const isPaused = state === 'paused';
             const label = isSpeaking
@@ -2157,12 +2159,38 @@
         }
 
         function stopNarration() {
+            if (activeNarrationAudio) {
+                activeNarrationAudio.pause();
+                activeNarrationAudio.currentTime = 0;
+                activeNarrationAudio = null;
+            }
             if ('speechSynthesis' in window) window.speechSynthesis.cancel();
             activeNarrationUtterance = null;
             updateNarrationButton('idle');
         }
 
         function toggleNarration(vm) {
+            const narrationAudioUrl = lx(vm && vm.raw && vm.raw.narrationAudio);
+            if (narrationAudioUrl) {
+                if (!activeNarrationAudio || activeNarrationAudio.src !== new URL(narrationAudioUrl, document.baseURI).href) {
+                    if (activeNarrationAudio) activeNarrationAudio.pause();
+                    activeNarrationAudio = new Audio(narrationAudioUrl);
+                    activeNarrationAudio.onended = activeNarrationAudio.onerror = () => {
+                        activeNarrationAudio = null;
+                        updateNarrationButton('idle');
+                    };
+                }
+                if (activeNarrationAudio.paused) {
+                    activeNarrationAudio.play().then(() => updateNarrationButton('speaking')).catch(() => {
+                        activeNarrationAudio = null;
+                        updateNarrationButton('idle');
+                    });
+                } else {
+                    activeNarrationAudio.pause();
+                    updateNarrationButton('paused');
+                }
+                return;
+            }
             if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) return;
             if (activeNarrationUtterance) {
                 if (window.speechSynthesis.paused) {
@@ -3835,7 +3863,7 @@
         }
 
         function renderPage(index, renderOptions = {}) {
-            if (activeNarrationUtterance) stopNarration();
+            if (activeNarrationUtterance || activeNarrationAudio) stopNarration();
             const vm = getVm(index);
             startAnalyticsMilestoneView(vm, {
                 navigationSource: renderOptions.navigationSource || 'render',

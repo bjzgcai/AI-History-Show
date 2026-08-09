@@ -6387,15 +6387,13 @@
         }
 
         .ui-narration-button svg {
-            position: absolute;
-            left: 16px;
             flex: 0 0 auto;
             width: 20px;
             height: 20px;
         }
 
         .ui-narration-button .narration-label {
-            width: 100%;
+            min-width: 0;
             text-align: center;
         }
 
@@ -9452,6 +9450,7 @@
         let completionQuizViewKey = '';
         let completionQuizViewStartedAt = 0;
         let activeNarrationUtterance = null;
+        let activeNarrationAudio = null;
         const vmCache = new Map();
         const completedQuizMilestoneKeys = new Set();
 
@@ -15291,7 +15290,8 @@
         }
 
         function updateBenchNarrationButton(state = 'idle') {
-            const supported = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+            const supported = 'Audio' in window
+                || ('speechSynthesis' in window && 'SpeechSynthesisUtterance' in window);
             const isSpeaking = state === 'speaking';
             const isPaused = state === 'paused';
             const label = isSpeaking
@@ -15312,12 +15312,38 @@
         }
 
         function stopBenchNarration() {
+            if (activeNarrationAudio) {
+                activeNarrationAudio.pause();
+                activeNarrationAudio.currentTime = 0;
+                activeNarrationAudio = null;
+            }
             if ('speechSynthesis' in window) window.speechSynthesis.cancel();
             activeNarrationUtterance = null;
             updateBenchNarrationButton('idle');
         }
 
         function toggleBenchNarration(vm) {
+            const narrationAudioUrl = lx(vm && vm.raw && vm.raw.narrationAudio);
+            if (narrationAudioUrl) {
+                if (!activeNarrationAudio || activeNarrationAudio.src !== new URL(narrationAudioUrl, document.baseURI).href) {
+                    if (activeNarrationAudio) activeNarrationAudio.pause();
+                    activeNarrationAudio = new Audio(narrationAudioUrl);
+                    activeNarrationAudio.onended = activeNarrationAudio.onerror = () => {
+                        activeNarrationAudio = null;
+                        updateBenchNarrationButton('idle');
+                    };
+                }
+                if (activeNarrationAudio.paused) {
+                    activeNarrationAudio.play().then(() => updateBenchNarrationButton('speaking')).catch(() => {
+                        activeNarrationAudio = null;
+                        updateBenchNarrationButton('idle');
+                    });
+                } else {
+                    activeNarrationAudio.pause();
+                    updateBenchNarrationButton('paused');
+                }
+                return;
+            }
             if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) return;
             if (activeNarrationUtterance) {
                 if (window.speechSynthesis.paused) {
@@ -16225,7 +16251,7 @@
         }
 
         function renderPage(index, renderOptions = {}) {
-            if (activeNarrationUtterance) stopBenchNarration();
+            if (activeNarrationUtterance || activeNarrationAudio) stopBenchNarration();
             currentIndex = Math.max(0, Math.min(Number(index) || 0, milestoneList.length - 1));
             const uiBrowserActive = isUiBrowserActive();
             if (uiBrowserActive) ensureUiSelection();

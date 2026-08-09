@@ -240,6 +240,8 @@ function applyVariantPresentation(milestone, variant) {
         'papers',
         'photos',
         'videoUrl',
+        'narrationAudio',
+        'narrationAudioAlternates',
         'quote',
         'quoteText',
         'quoteHtml',
