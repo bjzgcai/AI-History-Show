@@ -1733,6 +1733,56 @@
             font-size: 18px;
             letter-spacing: 0.08em;
         }
+
+        .dual-narration-button {
+            position: absolute;
+            left: 57px;
+            bottom: 132px;
+            z-index: 12;
+            width: 176px;
+            height: 42px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(246, 137, 0, 0.92);
+            border-radius: 3px;
+            padding: 0 16px;
+            background: rgba(246, 137, 0, 0.08);
+            color: var(--accent);
+            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-size: 15px;
+            font-weight: 800;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+        }
+
+        .dual-narration-button:hover,
+        .dual-narration-button:focus-visible,
+        .dual-narration-button.is-speaking,
+        .dual-narration-button.is-paused {
+            border-color: var(--accent);
+            background: rgba(246, 137, 0, 0.2);
+            outline: none;
+        }
+
+        .dual-narration-button:disabled {
+            opacity: 0.38;
+            cursor: not-allowed;
+        }
+
+        .dual-narration-button svg {
+            position: absolute;
+            left: 16px;
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .dual-narration-button .narration-label {
+            width: 100%;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -1788,6 +1838,11 @@
                     <div class="timeline-track" id="timelineTrack"></div>
                     <button class="left-timeline-nav left-timeline-next" id="leftTimelineNext" type="button" aria-label="下一页">›</button>
                 </footer>
+
+                <button class="dual-narration-button" id="dualNarrationButton" type="button" aria-pressed="false">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4.03v8.05A4.5 4.5 0 0 0 16.5 12zm-2.5-8.77v2.06a7 7 0 0 0 0-17.54z"/></svg>
+                    <span class="narration-label"></span>
+                </button>
 
                 <div class="left-screen-divider" aria-hidden="true"></div>
             </section>
@@ -1916,6 +1971,8 @@
         let currentIndex = 0;
         let currentArchiveIndex = 0;
         let idleAdvanceTimer = null;
+        let activeNarrationUtterance = null;
+        let activeNarrationAudio = null;
         const vmCache = new Map();
 
         let globeScene;
@@ -1962,6 +2019,7 @@
             summaryTitle: document.getElementById('summaryTitle'),
             summaryLocation: document.getElementById('summaryLocation'),
             summaryBody: document.getElementById('summaryBody'),
+            dualNarrationButton: document.getElementById('dualNarrationButton'),
             leftArchiveStrip: document.getElementById('leftArchiveStrip'),
             timelineTrack: document.getElementById('timelineTrack'),
             rightTimelineTrack: document.getElementById('rightTimelineTrack'),
@@ -2064,6 +2122,109 @@
 
         function lx(value) {
             return window.I18n && typeof window.I18n.localize === 'function' ? window.I18n.localize(value) : (value == null ? '' : value);
+        }
+
+        function getCurrentLocale() {
+            return window.I18n && typeof window.I18n.getLocale === 'function'
+                ? window.I18n.getLocale()
+                : window.currentLocale;
+        }
+
+        function localizedNarrationText(en, zh) {
+            return getCurrentLocale() === 'zh' ? zh : en;
+        }
+
+        function updateNarrationButton(state = 'idle') {
+            const button = refs.dualNarrationButton;
+            if (!button) return;
+            const supported = 'Audio' in window
+                || ('speechSynthesis' in window && 'SpeechSynthesisUtterance' in window);
+            const isSpeaking = state === 'speaking';
+            const isPaused = state === 'paused';
+            const label = isSpeaking
+                ? localizedNarrationText('Click again to pause', '再次点击暂停')
+                : isPaused
+                    ? localizedNarrationText('Resume narration', '继续播放')
+                    : localizedNarrationText('Play narration', '播放语音');
+            button.disabled = !supported;
+            button.classList.toggle('is-speaking', isSpeaking);
+            button.classList.toggle('is-paused', isPaused);
+            button.setAttribute('aria-pressed', state === 'idle' ? 'false' : 'true');
+            button.setAttribute('aria-label', supported
+                ? label
+                : localizedNarrationText('Narration is unavailable in this browser', '此浏览器不支持语音解说'));
+            button.title = button.getAttribute('aria-label');
+            const text = button.querySelector('.narration-label');
+            if (text) text.textContent = label;
+        }
+
+        function stopNarration() {
+            if (activeNarrationAudio) {
+                activeNarrationAudio.pause();
+                activeNarrationAudio.currentTime = 0;
+                activeNarrationAudio = null;
+            }
+            if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+            activeNarrationUtterance = null;
+            updateNarrationButton('idle');
+        }
+
+        function toggleNarration(vm) {
+            const narrationAudioUrl = lx(vm && vm.raw && vm.raw.narrationAudio);
+            if (narrationAudioUrl) {
+                if (!activeNarrationAudio || activeNarrationAudio.src !== new URL(narrationAudioUrl, document.baseURI).href) {
+                    if (activeNarrationAudio) activeNarrationAudio.pause();
+                    activeNarrationAudio = new Audio(narrationAudioUrl);
+                    activeNarrationAudio.onended = activeNarrationAudio.onerror = () => {
+                        activeNarrationAudio = null;
+                        updateNarrationButton('idle');
+                    };
+                }
+                if (activeNarrationAudio.paused) {
+                    activeNarrationAudio.play().then(() => updateNarrationButton('speaking')).catch(() => {
+                        activeNarrationAudio = null;
+                        updateNarrationButton('idle');
+                    });
+                } else {
+                    activeNarrationAudio.pause();
+                    updateNarrationButton('paused');
+                }
+                return;
+            }
+            if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) return;
+            if (activeNarrationUtterance) {
+                if (window.speechSynthesis.paused) {
+                    window.speechSynthesis.resume();
+                    updateNarrationButton('speaking');
+                } else {
+                    window.speechSynthesis.pause();
+                    updateNarrationButton('paused');
+                }
+                return;
+            }
+
+            const text = [stripHtml(vm && vm.title), stripHtml(vm && (vm.descriptionHtml || vm.descriptionText))]
+                .filter(Boolean)
+                .join('。');
+            if (!text) return;
+
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(text);
+            const locale = getCurrentLocale() === 'zh' ? 'zh-CN' : 'en-US';
+            utterance.lang = locale;
+            utterance.rate = 0.94;
+            const voices = window.speechSynthesis.getVoices();
+            const voice = voices.find((item) => String(item.lang || '').toLowerCase() === locale.toLowerCase())
+                || voices.find((item) => String(item.lang || '').toLowerCase().startsWith(locale.slice(0, 2).toLowerCase()));
+            if (voice) utterance.voice = voice;
+            utterance.onend = utterance.onerror = () => {
+                if (activeNarrationUtterance !== utterance) return;
+                activeNarrationUtterance = null;
+                updateNarrationButton('idle');
+            };
+            activeNarrationUtterance = utterance;
+            updateNarrationButton('speaking');
+            window.speechSynthesis.speak(utterance);
         }
 
         function cssString(value) {
@@ -3702,6 +3863,7 @@
         }
 
         function renderPage(index, renderOptions = {}) {
+            if (activeNarrationUtterance || activeNarrationAudio) stopNarration();
             const vm = getVm(index);
             startAnalyticsMilestoneView(vm, {
                 navigationSource: renderOptions.navigationSource || 'render',
@@ -3717,6 +3879,8 @@
             renderArchive(vm);
             renderCommentary(vm);
             renderStatus(vm);
+            updateNarrationButton('idle');
+            if (refs.dualNarrationButton) refs.dualNarrationButton.onclick = () => toggleNarration(vm);
             bindPhotoClicks();
             document.title = `${tx('appTitleDual')} - ${vm.year} ${vm.title}`;
         }
