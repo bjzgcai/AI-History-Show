@@ -43,17 +43,45 @@ build-audio-review-page-data.mjs
 本地音频输出为 append-only；修改文稿、音色或参数时必须创建新的 `revisionId`，不能覆盖旧
 MP3。`resources/audio/` 中的 MP3、overlay、质量报告和资源映射均不得提交到 Git。
 
+同一事件进入多个故事线时，可将已发布音频复用到所有启用 variant：
+
+```bash
+npm run audio:archive:sync-originals -- --link-shared-variants --apply
+```
+
+该选项只复用已有 audio asset ID，不复制 MP3 或创建新的 S3 对象。
+
+`audio:archive:sync-originals` 是发布工作站命令，不是 CI 或全新 checkout 可直接复现的命令。
+它会读取 Git 忽略的 `resources/audio/generated/**/overlay.json` 与对应本地 MP3，以确认发布键、
+时长和来源后再更新 Archive。运行该命令前必须先恢复或生成 README 中列出的完整原版批次；
+普通校验、构建和测试不依赖这些本地发布资产。
+
 ## Revision 脚本
 
-| 文件                               | 职责                                                     |
-| ---------------------------------- | -------------------------------------------------------- |
-| `audio-pipeline.mjs`               | 统一编排 `build/generate/validate/check/activate/review` |
-| `build-audio-revision.mjs`         | 校验来源 turns，编译 TTS 文本和 revision plan            |
-| `generate-audio-revision.mjs`      | 调用对话 TTS、规范化 MP3、生成 overlay                   |
-| `validate-audio-revision.mjs`      | 校验 turns、音频文件、时长、格式、响度和峰值             |
-| `build-audio-review-page-data.mjs` | 合并基线音频和候选 overlay，生成审听台数据               |
-| `generate-dialogue-audio.mjs`      | 底层 A/B/N/Summary 多角色 TTS 工具                       |
-| `lib/audio-revision.mjs`           | revision 路径、配置加载和文本编译公共函数                |
+| 文件                               | 职责                                                      |
+| ---------------------------------- | --------------------------------------------------------- |
+| `audio-pipeline.mjs`               | 统一编排 `build/generate/validate/check/activate/review`  |
+| `build-audio-revision.mjs`         | 校验来源 turns，编译 TTS 文本和 revision plan             |
+| `generate-audio-revision.mjs`      | 调用对话 TTS、规范化 MP3、生成 overlay                    |
+| `validate-audio-revision.mjs`      | 校验 turns、音频文件、时长、格式、响度和峰值              |
+| `build-audio-review-page-data.mjs` | 从激活的 revision overlay 与已跟踪 turns 生成审听台数据   |
+| `sync-original-audio-release.mjs`  | 将四条启用故事线的双语原版批次关联到 Archive 与 S3 发布键 |
+| `generate-dialogue-audio.mjs`      | 底层 A/B/N/Summary 多角色 TTS 工具                        |
+| `lib/audio-revision.mjs`           | revision 路径、配置加载和文本编译公共函数                 |
+
+## 完整原版批次
+
+`build-complete-original-revisions.mjs` 维护当前启用故事线的可复现原版 turns：
+
+- AI Achievements 第 11–139 项；
+- AI 棋牌全部事件；
+- `deep-learning` 中尚未由前两条故事线覆盖的 10 个事件；
+- `humanistic-cycle` 全部 12 个事件。
+
+后一组 revision 配置位于 `audio/revisions/deep-learning-remaining-original-*.json` 与
+`audio/revisions/humanistic-cycle-original-*.json`。事件清单固定写入构建器，不依赖 Archive 当前是否
+已经关联音频，因此发布后仍能复现同一批文稿。已有 revision turns 视为冻结内容：构建器只会创建
+缺失文件或校验相同内容；如果 Archive 变化导致内容不同，它会拒绝覆盖，必须创建新的 revision ID。
 
 ## 历史基线批次
 
@@ -77,3 +105,13 @@ revision 的首选入口：
 - 默认 Seed-TTS 凭据文件为 `/home/ubuntu/.openclaw/workspace/.secrets/tts.env`；
 - 生成前先运行 `check` 或 `build`，生成后必须运行 `validate`；
 - 多个候选可同时进入审听台，但每个事件、语言和模式最终只能批准一个版本。
+
+## 审听台
+
+审听台源码位于 `tools/audio-review-console/`，HTML、CSS 和 JavaScript 进入 Git。运行
+`npm run audio:revision -- activate ...` 会写入本地的 `active-overlays.json`，随后根据 overlay
+中的 `revisionId` 回查 `audio/revisions/*.json`、对应冻结 turns 和 Archive 事件资料，生成
+`review-data.json`。这两个 JSON 以及浏览器审查截图均为派生产物，不提交到 Git。
+
+审听数据不再读取旧 AI100 基线目录、release manifest 或历史质量报告；某个 revision 只包含
+一种语言时，审听台只会在该语言筛选下展示对应事件。

@@ -36,8 +36,12 @@ manage/.backups/
 *.ogg
 *.flac
 
+# Generated audio review console data and visual checks
+/tools/audio-review-console/review-data.json
+/tools/audio-review-console/active-overlays.json
+/tools/audio-review-console/*.png
+
 # Local design and reference exports
-/designs/
 /人工智能历史网页代码文件/
 
 # OS

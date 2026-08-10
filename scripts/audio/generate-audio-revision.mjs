@@ -248,8 +248,13 @@ function buildJobs(plan) {
 }
 
 function generateJob(job, retries) {
-    for (const asset of job.assets) {
-        if (fs.existsSync(asset.outputPath)) fail(`Refusing to overwrite append-only asset: ${asset.path}`);
+    const existingAssets = job.assets.filter((asset) => fs.existsSync(asset.outputPath));
+    if (existingAssets.length === job.assets.length) {
+        for (const asset of existingAssets) probeAudio(asset.outputPath);
+        return { resumed: true };
+    }
+    if (existingAssets.length > 0) {
+        fail(`Revision job is only partially present: ${existingAssets.map((asset) => asset.path).join(', ')}`);
     }
     const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), 'ai-history-voice-revision-'));
     try {

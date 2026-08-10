@@ -3,14 +3,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 import { ROOT, fail, loadRevisionConfig, relativeToRoot, revisionPaths } from './lib/audio-revision.mjs';
 
+const SCRIPT_PATH = fileURLToPath(import.meta.url);
 const AUDIO_SCRIPT_ROOT = path.join(ROOT, 'scripts/audio');
 const BUILD_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'build-audio-revision.mjs');
 const GENERATE_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'generate-audio-revision.mjs');
 const VALIDATE_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'validate-audio-revision.mjs');
 const REVIEW_BUILD_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'build-audio-review-page-data.mjs');
-const ACTIVE_OVERLAYS_PATH = path.join(ROOT, 'designs/audio-review-console/active-overlays.json');
+const ACTIVE_OVERLAYS_PATH = path.join(ROOT, 'tools/audio-review-console/active-overlays.json');
 
 function run(scriptPath, args = []) {
     const result = spawnSync(process.execPath, [scriptPath, ...args], {
@@ -30,6 +32,7 @@ function activate(configArguments) {
         if (!fs.existsSync(overlayPath)) fail(`Missing ${relativeToRoot(overlayPath)}`);
         run(VALIDATE_SCRIPT, [config.configPath]);
         return {
+            configPath: relativeToRoot(config.configPath),
             path: relativeToRoot(overlayPath),
             revisionId: config.revisionId,
             comparisonKind: config.comparisonKind,
@@ -39,6 +42,28 @@ function activate(configArguments) {
     fs.writeFileSync(ACTIVE_OVERLAYS_PATH, `${JSON.stringify(descriptors, null, 2)}\n`);
     run(REVIEW_BUILD_SCRIPT);
     console.log(`Activated ${descriptors.length} revision overlays for review.`);
+}
+
+export function generationActions({ planExists, overlayExists }) {
+    return [planExists ? 'build-check' : 'build', ...(overlayExists ? [] : ['generate']), 'validate'];
+}
+
+function generate(configArgument) {
+    const config = loadRevisionConfig(configArgument);
+    const paths = revisionPaths(config);
+    const actions = generationActions({
+        planExists: fs.existsSync(paths.planPath),
+        overlayExists: fs.existsSync(paths.overlayPath)
+    });
+    for (const action of actions) {
+        if (action === 'build') run(BUILD_SCRIPT, [config.configPath]);
+        else if (action === 'build-check') run(BUILD_SCRIPT, [config.configPath, '--check']);
+        else if (action === 'generate') run(GENERATE_SCRIPT, [paths.planPath]);
+        else if (action === 'validate') run(VALIDATE_SCRIPT, [config.configPath]);
+    }
+    if (!actions.includes('generate')) {
+        console.log(`Revision ${config.revisionId} already has an overlay; validated existing append-only output.`);
+    }
 }
 
 function main() {
@@ -55,12 +80,8 @@ function main() {
         return;
     }
     if (command === 'build') run(BUILD_SCRIPT, args);
-    else if (command === 'generate') {
-        const config = loadRevisionConfig(args[0]);
-        run(BUILD_SCRIPT, [config.configPath]);
-        run(GENERATE_SCRIPT, [revisionPaths(config).planPath]);
-        run(VALIDATE_SCRIPT, [config.configPath]);
-    } else if (command === 'validate') run(VALIDATE_SCRIPT, args);
+    else if (command === 'generate') generate(args[0]);
+    else if (command === 'validate') run(VALIDATE_SCRIPT, args);
     else if (command === 'source-check') run(BUILD_SCRIPT, [...args, '--source-only']);
     else if (command === 'check') {
         run(BUILD_SCRIPT, [...args, '--check']);
@@ -71,9 +92,11 @@ function main() {
     else fail(`Unknown audio revision command: ${command}`);
 }
 
-try {
-    main();
-} catch (error) {
-    console.error(error instanceof Error ? error.message : String(error));
-    process.exitCode = 1;
+if (process.argv[1] && path.resolve(process.argv[1]) === SCRIPT_PATH) {
+    try {
+        main();
+    } catch (error) {
+        console.error(error instanceof Error ? error.message : String(error));
+        process.exitCode = 1;
+    }
 }
