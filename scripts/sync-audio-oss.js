@@ -28,7 +28,7 @@ function printUsage() {
             'Usage:',
             '  node scripts/sync-audio-oss.js check',
             '  node scripts/sync-audio-oss.js manifest [--output FILE] [--json]',
-            '  node scripts/sync-audio-oss.js push [--dry-run] [--force] [--output FILE] [--json]',
+            '  node scripts/sync-audio-oss.js push [--dry-run] [--output FILE] [--json]',
             '  node scripts/sync-audio-oss.js verify [--json]',
             '  node scripts/sync-audio-oss.js publish-access [--dry-run] [--json]',
             '',
@@ -295,6 +295,24 @@ async function readRemoteState(client, bucket, objectKey) {
     }
 }
 
+async function readPublicRemoteState(entry, fetchImpl = globalThis.fetch) {
+    const deliveryUrl = String(entry.url || entry.deliveryUrl || '').trim();
+    if (!deliveryUrl) throw new Error(`No public delivery URL is configured for ${entry.objectKey}`);
+    if (typeof fetchImpl !== 'function') throw new Error('The runtime does not provide fetch for public HEAD checks');
+
+    const response = await fetchImpl(deliveryUrl, { method: 'HEAD', redirect: 'follow' });
+    if (response.status === 404) return { exists: false };
+    if (!response.ok) throw new Error(`HEAD ${deliveryUrl} returned HTTP ${response.status}`);
+
+    return {
+        exists: true,
+        size: Number(response.headers.get('content-length') || 0),
+        sha256: String(response.headers.get('x-oss-meta-sha256') || '').toLowerCase(),
+        contentType: String(response.headers.get('content-type') || ''),
+        cacheControl: String(response.headers.get('cache-control') || '')
+    };
+}
+
 function remoteMatches(remote, asset) {
     return (
         remote.exists &&
@@ -305,8 +323,7 @@ function remoteMatches(remote, asset) {
     );
 }
 
-function selectUploadAction(remote, asset, force = false) {
-    if (force) return 'upload';
+function selectUploadAction(remote, asset) {
     if (remoteMatches(remote, asset)) return 'skip';
     if (remote.exists) return 'conflict';
     return 'upload';
@@ -352,12 +369,53 @@ async function uploadManifest(client, config, manifest) {
 }
 
 async function pushAudioAssets(entries, manifest, config, options = {}) {
-    const summary = { planned: 0, uploaded: 0, skipped: 0, failed: 0, manifestUploaded: false, results: [] };
+    if (options.force === true) {
+        throw new Error(
+            'Immutable release objects cannot be overwritten; publish changed audio under a new versioned key'
+        );
+    }
+
+    const summary = {
+        dryRun: options.dryRun === true,
+        planned: 0,
+        uploaded: 0,
+        skipped: 0,
+        conflicts: 0,
+        failed: 0,
+        manifestUploaded: false,
+        manifestPlanned: false,
+        results: []
+    };
     if (options.dryRun) {
-        for (const asset of manifest.assets) {
-            summary.planned += 1;
-            summary.results.push({ objectKey: asset.objectKey, action: 'would-upload' });
+        for (let index = 0; index < manifest.assets.length; index += 1) {
+            const asset = manifest.assets[index];
+            const entry = entries[index] || {};
+            try {
+                const remote = await readPublicRemoteState(
+                    { ...entry, ...asset, deliveryUrl: asset.url || entry.deliveryUrl },
+                    options.fetchImpl
+                );
+                const action = selectUploadAction(remote, asset);
+                if (action === 'skip') {
+                    summary.skipped += 1;
+                    summary.results.push({ objectKey: asset.objectKey, action: 'would-skip' });
+                } else if (action === 'conflict') {
+                    summary.conflicts += 1;
+                    summary.results.push({
+                        objectKey: asset.objectKey,
+                        action: 'conflict',
+                        error: 'remote immutable object differs; publish the audio under a new versioned object key'
+                    });
+                } else {
+                    summary.planned += 1;
+                    summary.results.push({ objectKey: asset.objectKey, action: 'would-upload' });
+                }
+            } catch (error) {
+                summary.failed += 1;
+                summary.results.push({ objectKey: asset.objectKey, action: 'failed', error: error.message });
+            }
         }
+        summary.manifestPlanned = summary.conflicts === 0 && summary.failed === 0;
         return summary;
     }
 
@@ -368,18 +426,18 @@ async function pushAudioAssets(entries, manifest, config, options = {}) {
             const entry = entries[index];
             try {
                 const remote = await readRemoteState(client, config.bucket, asset.objectKey);
-                const action = selectUploadAction(remote, asset, options.force === true);
+                const action = selectUploadAction(remote, asset);
                 if (action === 'skip') {
                     summary.skipped += 1;
                     summary.results.push({ objectKey: asset.objectKey, action: 'skipped' });
                     continue;
                 }
                 if (action === 'conflict') {
-                    summary.failed += 1;
+                    summary.conflicts += 1;
                     summary.results.push({
                         objectKey: asset.objectKey,
                         action: 'conflict',
-                        error: 'remote object exists with different content or metadata; use --force to overwrite'
+                        error: 'remote immutable object differs; publish the audio under a new versioned object key'
                     });
                     continue;
                 }
@@ -391,7 +449,7 @@ async function pushAudioAssets(entries, manifest, config, options = {}) {
                 summary.results.push({ objectKey: asset.objectKey, action: 'failed', error: error.message });
             }
         }
-        if (summary.failed === 0) {
+        if (summary.conflicts === 0 && summary.failed === 0) {
             await uploadManifest(client, config, manifest);
             summary.manifestUploaded = true;
         }
@@ -507,11 +565,13 @@ function printPushSummary(summary, config) {
         console.log(`${result.action}: oss://${config.bucket}/${result.objectKey}${suffix}`);
     }
     console.log(
-        summary.planned > 0
-            ? `Audio push dry-run: ${summary.planned} object(s) would upload; manifest would upload after success.`
-            : `Audio push: ${summary.uploaded} uploaded, ${summary.skipped} skipped, ${summary.failed} failed, manifest ${
-                  summary.manifestUploaded ? 'uploaded' : 'not uploaded'
-              }.`
+        summary.dryRun
+            ? `Audio push dry-run: ${summary.planned} would upload, ${summary.skipped} would skip, ` +
+                  `${summary.conflicts} conflict(s), ${summary.failed} check(s) failed; manifest ` +
+                  `${summary.manifestPlanned ? 'would upload' : 'would not upload'}.`
+            : `Audio push: ${summary.uploaded} uploaded, ${summary.skipped} skipped, ` +
+                  `${summary.conflicts} conflict(s), ${summary.failed} failed, manifest ` +
+                  `${summary.manifestUploaded ? 'uploaded' : 'not uploaded'}.`
     );
 }
 
@@ -525,6 +585,9 @@ async function main(argv = process.argv.slice(2)) {
     if (!['check', 'manifest', 'push', 'verify', 'publish-access'].includes(command)) {
         printUsage();
         throw new Error(`Unknown command: ${command}`);
+    }
+    if (command === 'push' && args.force) {
+        throw new Error('--force is not supported for immutable release objects; use a new versioned object key');
     }
 
     const entries = collectAudioAssets(ROOT);
@@ -581,7 +644,7 @@ async function main(argv = process.argv.slice(2)) {
         });
         if (args.json) console.log(JSON.stringify(summary, null, 2));
         else printPushSummary(summary, config);
-        if (summary.failed > 0) process.exitCode = 1;
+        if (summary.conflicts > 0 || summary.failed > 0) process.exitCode = 1;
         return;
     }
 
@@ -619,6 +682,7 @@ module.exports = {
     normalizeObjectKey,
     parseArgs,
     pushAudioAssets,
+    readPublicRemoteState,
     remoteMatches,
     resolveOssConfig,
     selectUploadAction,

@@ -56,7 +56,6 @@ docker run --rm -p 8000:8000 ai-history-show
 
 ```text
 http://localhost:8000/
-http://localhost:8000/dual-screen.html
 ```
 
 ### Docker Compose
@@ -280,10 +279,10 @@ curl -o vendor/three.min.js https://unpkg.com/three@0.160.0/build/three.min.js
 - 浏览器 UI 最小化
 - 适合现场稳定重复演示
 
-双屏展陈页面入口：
+统一展陈页面入口：
 
 ```text
-http://localhost:8000/dual-screen.html
+http://localhost:8000/
 ```
 
 ### 方案对比
@@ -314,18 +313,18 @@ npm ci
 npm run start:demo
 ```
 
-**第二步：优先验证双屏页面**
+**第二步：优先验证展示页面**
 
 浏览器访问：
 
 ```text
-http://localhost:8000/dual-screen.html
+http://localhost:8000/
 ```
 
 或直接用 Edge `app` 模式：
 
 ```powershell
-& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --app="http://localhost:8000/dual-screen.html"
+& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --app="http://localhost:8000/"
 ```
 
 **第三步：优先尝试显卡控制软件合屏**
@@ -342,7 +341,7 @@ http://localhost:8000/dual-screen.html
 - `--kiosk`：更适合现场演示
 
 ```powershell
-& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --kiosk "http://localhost:8000/dual-screen.html"
+& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --kiosk "http://localhost:8000/"
 ```
 
 ### Windows 故障排查
@@ -391,13 +390,13 @@ npm run start:static
 Edge `app` 模式：
 
 ```powershell
-& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --app="http://localhost:8000/dual-screen.html"
+& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --app="http://localhost:8000/"
 ```
 
 Edge `kiosk` 模式：
 
 ```powershell
-& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --kiosk "http://localhost:8000/dual-screen.html"
+& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --kiosk "http://localhost:8000/"
 ```
 
 ---

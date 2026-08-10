@@ -43,7 +43,6 @@ module.exports = [
             'resources/videos/**',
             'milestones-data*.js',
             'index.html',
-            'dual-screen.html',
             'resources/quote-candidates.js',
             'resources/research-candidates.js'
         ]
@@ -75,15 +74,6 @@ module.exports = [
         files: ['**/*.mjs'],
         languageOptions: {
             sourceType: 'module'
-        }
-    },
-    {
-        files: ['shared/layout-router.js'],
-        languageOptions: {
-            globals: {
-                URL: 'readonly',
-                URLSearchParams: 'readonly'
-            }
         }
     }
 ];

@@ -11,6 +11,8 @@ const {
     collectAudioAssets,
     mergeAudioCorsRules,
     normalizeObjectKey,
+    pushAudioAssets,
+    readPublicRemoteState,
     remoteMatches,
     resolveOssConfig,
     selectUploadAction,
@@ -108,12 +110,76 @@ async function main() {
         assert.equal(selectUploadAction(matchingRemote, manifest.assets[0]), 'skip');
         assert.equal(selectUploadAction({ exists: false }, manifest.assets[0]), 'upload');
         assert.equal(selectUploadAction({ ...matchingRemote, size: 15 }, manifest.assets[0]), 'conflict');
-        assert.equal(selectUploadAction({ ...matchingRemote, size: 15 }, manifest.assets[0], true), 'upload');
 
         const config = resolveOssConfig({}, entries);
         assert.equal(config.endpoint, 'https://oss-cn-beijing.aliyuncs.com');
         assert.equal(config.bucket, 'zgca-medias');
         assert.equal(config.forcePathStyle, false);
+
+        const makeHeadResponse = (status, headers = {}) => ({
+            status,
+            ok: status >= 200 && status < 300,
+            headers: {
+                get(name) {
+                    return headers[String(name).toLowerCase()] || null;
+                }
+            }
+        });
+        const publicState = await readPublicRemoteState(
+            { objectKey: manifest.assets[0].objectKey, url: 'https://media.example/matching.mp3' },
+            async () =>
+                makeHeadResponse(200, {
+                    'content-length': '16',
+                    'content-type': 'audio/mpeg',
+                    'cache-control': 'public, max-age=31536000, immutable',
+                    'x-oss-meta-sha256': expectedHash
+                })
+        );
+        assert.deepEqual(publicState, matchingRemote);
+
+        const dryRunAssets = [
+            {
+                ...manifest.assets[0],
+                objectKey: `${manifest.assets[0].objectKey}.matching`,
+                url: 'https://media.example/matching.mp3'
+            },
+            {
+                ...manifest.assets[0],
+                objectKey: `${manifest.assets[0].objectKey}.missing`,
+                url: 'https://media.example/missing.mp3'
+            },
+            {
+                ...manifest.assets[0],
+                objectKey: `${manifest.assets[0].objectKey}.conflict`,
+                url: 'https://media.example/conflict.mp3'
+            }
+        ];
+        const dryRunEntries = dryRunAssets.map((asset) => ({ deliveryUrl: asset.url }));
+        const dryRunSummary = await pushAudioAssets(dryRunEntries, { ...manifest, assets: dryRunAssets }, config, {
+            dryRun: true,
+            fetchImpl: async (url) => {
+                if (url.endsWith('/missing.mp3')) return makeHeadResponse(404);
+                return makeHeadResponse(200, {
+                    'content-length': url.endsWith('/conflict.mp3') ? '15' : '16',
+                    'content-type': 'audio/mpeg',
+                    'cache-control': 'public, max-age=31536000, immutable',
+                    'x-oss-meta-sha256': expectedHash
+                });
+            }
+        });
+        assert.equal(dryRunSummary.planned, 1);
+        assert.equal(dryRunSummary.skipped, 1);
+        assert.equal(dryRunSummary.conflicts, 1);
+        assert.equal(dryRunSummary.failed, 0);
+        assert.equal(dryRunSummary.manifestPlanned, false);
+        assert.deepEqual(
+            dryRunSummary.results.map((result) => result.action),
+            ['would-skip', 'would-upload', 'conflict']
+        );
+        await assert.rejects(
+            pushAudioAssets(entries, manifest, config, { force: true }),
+            /Immutable release objects cannot be overwritten/
+        );
 
         const corsRules = mergeAudioCorsRules([
             { ID: 'KeepExistingCors', AllowedMethods: ['GET'], AllowedOrigins: ['https://example.com'] }

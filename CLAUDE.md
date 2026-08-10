@@ -12,7 +12,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Lint: `npm run lint`.
 - Format check: `npm run format:check`; apply formatting with `npm run format`.
 - Test all current JS checks: `npm test`.
-- Run a single current test script: `node scripts/test-layout-router.js` or `node scripts/test-swipe-navigation.js`.
+- Run a single current test script: `node scripts/test-mobile-responsive.js` or `node scripts/test-swipe-navigation.js`.
 - Full quality gate: `npm run quality` (lint + format check + tests).
 - Startup/deployment validation: `npm run validate:startup` or `npm run validate:deployment`.
 - Archive workflow: `npm run validate:archive`, `npm run generate`, `npm run quality`, `npm run validate:deployment`.
@@ -25,12 +25,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a no-build-tool exhibition app: the frontend is static HTML/CSS/vanilla JS, with Three.js loaded from a CDN. Node.js is used for content generation, local static/admin servers, validation scripts, and Docker build stages.
 
-### Runtime entries
+### Runtime entry
 
-- `index.html` is the adaptive single/mobile entry. It can switch to the dual layout based on viewport or be forced with `?layout=single` / `?layout=dual`. It also contains the storyline selector and rich single-screen/branch/AI100 rendering logic.
-- `dual-screen.html` is the fixed two-horizontal-screen entry for exhibition use.
-- Both entries load `shared/layout-router.js`, `shared/i18n.js`, `milestones-data.js` with fallback to `milestones-data-default.js`, `shared/milestone-view.js`, `shared/swipe-navigation.js`, and Three.js.
-- `shared/layout-router.js` is UMD-style and is tested directly from Node. It decides single vs dual mode using viewport width/ratio, handheld pointer detection, and explicit URL overrides.
+- `index.html` is the only public presentation entry. It contains the storyline selector and responsive desktop, exhibition, mobile, branch, and AI100 rendering logic.
+- The entry loads `shared/i18n.js`, `milestones-data.js` with fallback to `milestones-data-default.js`, `shared/milestone-view.js`, `shared/swipe-navigation.js`, and Three.js.
 - `shared/i18n.js` owns the bilingual dictionary, `{ zh, en }` value selection, language toggle, and `localStorage` key `ai-history-locale`.
 - `shared/milestone-view.js` normalizes generated milestone records into the view model used by both entries: localized text, photos, videos, quotes, figures, commentary sections, quizzes, and timeline items.
 - `shared/swipe-navigation.js` implements touch/pen/emulated-touch swipe navigation and exports helpers for Node tests.
@@ -57,7 +55,7 @@ node scripts/generate-archive-data.js
 milestones-data.js + milestones-data-default.js
         │
         ▼
-index.html / dual-screen.html
+index.html
 ```
 
 - `archive/storylines/*.json` controls storyline membership, variant selection, enablement, and order.

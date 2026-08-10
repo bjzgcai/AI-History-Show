@@ -5,21 +5,20 @@
 交互式AI历史展览大屏应用。
 
 - **技术栈**: HTML5 + CSS3 + Vanilla JS + Three.js（3D地球）
-- **展示入口**: `index.html`（自适应单屏/移动端）与 `dual-screen.html`（固定双屏）
+- **展示入口**: `index.html`（自适应展厅大屏/桌面/移动端）
 - **数据文件**: `milestones-data.js` 与 `milestones-data-default.js`（由 `npm run generate` 从 Archive JSON 同步生成，勿手动编辑）
 
 ## 文件结构
 
 ```
 AI-History-Show/
-├── index.html                    # 自适应单屏/移动端入口
-├── dual-screen.html              # 固定双屏入口
+├── index.html                    # 自适应展示入口
 ├── milestones-data.js            # Archive 生成的正式运行时数据
 ├── milestones-data-default.js    # 同步生成的 fallback 数据
 ├── archive/
 │   ├── storylines/               # Storyline 成员、variant、顺序和展示 ID
 │   └── events/                   # 事件事实、来源、资源、quiz 与 variants
-├── shared/                       # 两个展示入口共用的前端逻辑
+├── shared/                       # 展示入口共用的前端逻辑
 ├── resources/
 │   ├── images/                   # 里程碑图片（append-only）
 │   ├── papers/                   # 页面使用的本地论文资料

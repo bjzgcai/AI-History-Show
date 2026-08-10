@@ -49,7 +49,7 @@ Completed:
 - Main map/list flow supports branch selection, event selection, grouped location selection, language switching, and detail entry on touch devices.
 - Horizontal rails and timelines keep `touch-action: pan-x pan-y` so vertical page scrolling remains available.
 - Detail entry now pushes browser history, so native mobile browser back gestures return to the map/list page like a normal website.
-- Desktop and presentation behavior is protected by existing layout-router tests.
+- Desktop and presentation behavior is protected by the responsive entry tests.
 
 Manual check:
 
@@ -121,7 +121,7 @@ npm run audit:ai100-accuracy
 - Phone portrait at 390px / 430px can switch branch, select event, and open detail.
 - Tablet portrait at 768px has non-overlapping main and detail layouts.
 - Tablet landscape at 1024px stays close to desktop without fixed-panel compression.
-- Desktop and presentation layout remain covered by layout-router checks.
+- Desktop and presentation layout remain covered by responsive entry checks.
 - Three.js globe remains visible and responds to resize/orientation changes.
 - Touch targets use at least the shared 44px target where controls are compact.
 - Event details, captions, sources, quote text, commentary sections, and quiz options wrap instead of overflowing.
