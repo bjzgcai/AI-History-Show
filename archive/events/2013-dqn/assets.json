@@ -153,7 +153,7 @@
   {
     "id": "asset-2013-dqn-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2013-dqn-zh-original-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/2013-dqn-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2013-dqn 中文原版科普音频",
@@ -176,7 +176,7 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2013-dqn-zh-original-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/2013-dqn-zh-original-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",
@@ -194,7 +194,7 @@
   {
     "id": "asset-2013-dqn-audio-en-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2013-dqn-en-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/2013-dqn-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2013-dqn 英文科普音频",
@@ -217,7 +217,7 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2013-dqn-en-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/2013-dqn-en-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",

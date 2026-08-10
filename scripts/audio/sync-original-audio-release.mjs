@@ -10,7 +10,7 @@ const require = createRequire(import.meta.url);
 const { orderVariantAssetIds } = require('../event-figure-rules');
 const { loadFigureRegistry, resolveFigureRelations } = require('../figure-registry');
 const BUCKET = 'zgca-medias';
-const PUBLIC_ROOT = 'https://zgca-medias.oss-cn-beijing.aliyuncs.com';
+const PUBLIC_ROOT = 'https://media.sciencearena.cn';
 const CACHE_CONTROL = 'public, max-age=31536000, immutable';
 const PREFERRED_STORYLINE_ID = 'bench-council-ai100';
 const RELEASES = [

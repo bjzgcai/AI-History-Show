@@ -264,13 +264,13 @@ assert.equal(
                 },
                 {
                     language: 'zh',
-                    url: 'https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/example.mp3',
+                    url: 'https://media.sciencearena.cn/audio/ai-history/releases/example.mp3',
                     storage: { provider: 'aliyun-oss' }
                 }
             ]
         }
     }).url,
-    'https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/example.mp3',
+    'https://media.sciencearena.cn/audio/ai-history/releases/example.mp3',
     'audio selection should prefer an actual OSS delivery URL over a same-language local fallback'
 );
 assert.equal(
@@ -285,9 +285,7 @@ for (const locale of ['zh', 'en']) {
         .filter(
             ({ audio }) =>
                 !audio ||
-                !String(audio.url || '').startsWith(
-                    'https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/'
-                )
+                !String(audio.url || '').startsWith('https://media.sciencearena.cn/audio/ai-history/releases/')
         )
         .map(({ milestone }) => `${milestone.storyline.id}:${milestone.archiveEventId}`);
     assert.deepEqual(

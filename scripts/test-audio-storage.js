@@ -36,7 +36,7 @@ function assertArchiveAudioUsage(root) {
             const deliveryUrl = String(asset.deliveryUrl || asset.path || '');
             assert.match(
                 deliveryUrl,
-                /^https:\/\/zgca-medias\.oss-cn-beijing\.aliyuncs\.com\/audio\/ai-history\/releases\//,
+                /^https:\/\/media\.sciencearena\.cn\/audio\/ai-history\/releases\//,
                 `${eventEntry.name}/${asset.id} must use the OSS delivery endpoint instead of a local MP3 path`
             );
             const usage = new Set(asset.usage || []);

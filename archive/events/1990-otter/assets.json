@@ -141,7 +141,7 @@
   {
     "id": "asset-1990-otter-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1990-otter-zh-original-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1990-otter-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1990-otter 中文原版科普音频",
@@ -164,7 +164,7 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1990-otter-zh-original-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1990-otter-zh-original-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",
@@ -181,7 +181,7 @@
   {
     "id": "asset-1990-otter-audio-zh-interact-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1990-otter-zh-interact-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1990-otter-zh-interact-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1990-otter 中文互动增强版科普音频",
@@ -204,7 +204,7 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1990-otter-zh-interact-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1990-otter-zh-interact-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",
@@ -221,7 +221,7 @@
   {
     "id": "asset-1990-otter-audio-en-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1990-otter-en-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1990-otter-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1990-otter 英文科普音频",
@@ -244,7 +244,7 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1990-otter-en-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1990-otter-en-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",

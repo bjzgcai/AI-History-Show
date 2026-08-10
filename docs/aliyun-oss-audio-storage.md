@@ -5,14 +5,14 @@ Archive compiler 生成的 URL，不依赖本地 MP3。
 
 ## 存储约定
 
-| 配置       | 值                                                |
-| ---------- | ------------------------------------------------- |
-| Bucket     | `zgca-medias`                                     |
-| Region     | `cn-beijing`                                      |
-| Endpoint   | `https://oss-cn-beijing.aliyuncs.com`             |
-| 公开根地址 | `https://zgca-medias.oss-cn-beijing.aliyuncs.com` |
-| 发布目录   | `audio/ai-history/releases/`                      |
-| Manifest   | `audio/ai-history/manifests/audio-manifest.json`  |
+| 配置       | 值                                               |
+| ---------- | ------------------------------------------------ |
+| Bucket     | `zgca-medias`                                    |
+| Region     | `cn-beijing`                                     |
+| Endpoint   | `https://oss-cn-beijing.aliyuncs.com`            |
+| 公开根地址 | `https://media.sciencearena.cn`                  |
+| 发布目录   | `audio/ai-history/releases/`                     |
+| Manifest   | `audio/ai-history/manifests/audio-manifest.json` |
 
 发布目录中的音频对象使用 `public-read`，支持浏览器直接访问和 HTTP Range 请求。Manifest 使用
 `private`，不允许匿名读取。Bucket CORS 允许公开来源执行 `GET`、`HEAD` 和 Range 播放。
@@ -21,7 +21,7 @@ Archive compiler 生成的 URL，不依赖本地 MP3。
 
 ```text
 oss://zgca-medias/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3
-https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3
+https://media.sciencearena.cn/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3
 ```
 
 ## 凭证
@@ -46,8 +46,8 @@ export ALIYUN_OSS_REGION='cn-beijing'
 ```json
 {
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3",
     "storage": {
         "provider": "aliyun-oss",
         "bucket": "zgca-medias",
@@ -92,9 +92,9 @@ npm run audio:release -- publish-access
 
 ```bash
 npm run audio:status -- --remote
-curl -I 'https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3'
+curl -I 'https://media.sciencearena.cn/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3'
 curl -H 'Range: bytes=0-31' -o /dev/null -D - \
-  'https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3'
+  'https://media.sciencearena.cn/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3'
 ```
 
 公开音频应返回 `200`，Range 请求应返回 `206`。匿名访问 manifest 应返回 `403`。

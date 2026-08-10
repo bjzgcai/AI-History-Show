@@ -134,7 +134,7 @@
   {
     "id": "asset-2017-alphazero-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2017-alphazero-zh-original-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/2017-alphazero-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2017-alphazero 中文原版科普音频",
@@ -157,7 +157,7 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2017-alphazero-zh-original-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/2017-alphazero-zh-original-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",
@@ -174,7 +174,7 @@
   {
     "id": "asset-2017-alphazero-audio-en-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2017-alphazero-en-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/2017-alphazero-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2017-alphazero 英文科普音频",
@@ -197,7 +197,7 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2017-alphazero-en-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/2017-alphazero-en-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",

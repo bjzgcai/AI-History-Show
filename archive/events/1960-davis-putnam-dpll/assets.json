@@ -57,7 +57,7 @@
   {
     "id": "asset-1960-davis-putnam-dpll-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1960-davis-putnam-dpll-zh-original-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1960-davis-putnam-dpll-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1960-davis-putnam-dpll 中文原版科普音频",
@@ -80,7 +80,7 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1960-davis-putnam-dpll-zh-original-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1960-davis-putnam-dpll-zh-original-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",
@@ -97,7 +97,7 @@
   {
     "id": "asset-1960-davis-putnam-dpll-audio-zh-interact-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1960-davis-putnam-dpll 中文互动增强版科普音频",
@@ -120,7 +120,7 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",
@@ -137,7 +137,7 @@
   {
     "id": "asset-1960-davis-putnam-dpll-audio-en-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1960-davis-putnam-dpll-en-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1960-davis-putnam-dpll-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1960-davis-putnam-dpll 英文科普音频",
@@ -160,7 +160,7 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1960-davis-putnam-dpll-en-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1960-davis-putnam-dpll-en-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",

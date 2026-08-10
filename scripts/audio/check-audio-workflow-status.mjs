@@ -207,9 +207,7 @@ function inspectArchive() {
                 audio.storage?.provider !== 'aliyun-oss' ||
                 audio.storage?.bucket !== 'zgca-medias' ||
                 !objectKey.startsWith('audio/ai-history/releases/') ||
-                !/^https:\/\/zgca-medias\.oss-cn-beijing\.aliyuncs\.com\/audio\/ai-history\/releases\//.test(
-                    deliveryUrl
-                )
+                !/^https:\/\/media\.sciencearena\.cn\/audio\/ai-history\/releases\//.test(deliveryUrl)
             ) {
                 deliveryErrors.push(`${eventId}/${audio.id}`);
             }

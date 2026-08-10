@@ -159,7 +159,7 @@
   {
     "id": "asset-2014-attention-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2014-attention-zh-original-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/2014-attention-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2014-attention 中文原版科普音频",
@@ -182,7 +182,7 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2014-attention-zh-original-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/2014-attention-zh-original-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",
@@ -200,7 +200,7 @@
   {
     "id": "asset-2014-attention-audio-en-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2014-attention-en-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/2014-attention-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2014-attention 英文科普音频",
@@ -223,7 +223,7 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2014-attention-en-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/2014-attention-en-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",

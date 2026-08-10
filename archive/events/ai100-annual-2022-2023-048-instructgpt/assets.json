@@ -170,7 +170,7 @@
   {
     "id": "asset-ai100-annual-2022-2023-048-instructgpt-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-zh-original-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "ai100-annual-2022-2023-048-instructgpt 中文原版科普音频",
@@ -193,7 +193,7 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-zh-original-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-zh-original-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",
@@ -210,7 +210,7 @@
   {
     "id": "asset-ai100-annual-2022-2023-048-instructgpt-audio-en-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-en-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "ai100-annual-2022-2023-048-instructgpt 英文科普音频",
@@ -233,7 +233,7 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-en-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-en-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",

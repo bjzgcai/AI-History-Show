@@ -162,12 +162,12 @@ assert.equal(
         storage: { publicUrl: 'https://s3.example/audio/example.mp3' }
     }),
     'https://s3.example/audio/example.mp3',
-    'S3 public URLs should take priority over the local fallback'
+    'published remote URLs should take priority over the local fallback'
 );
 assert.equal(
     resolveAudioUrl({ path: 'resources/audio/example.mp3', storage: {} }),
     'resources/audio/example.mp3',
-    'audio assets should retain a local fallback until S3 delivery is configured'
+    'audio assets should retain a local fallback until remote delivery is configured'
 );
 console.log('PASS audio delivery URL priority');
 
@@ -232,7 +232,7 @@ assert.deepEqual(
 assert.ok(
     dartmouthMilestone.resources.audios.every(
         (audio) =>
-            audio.url.startsWith('https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/') &&
+            audio.url.startsWith('https://media.sciencearena.cn/audio/ai-history/releases/') &&
             audio.storage?.provider === 'aliyun-oss' &&
             audio.storage?.bucket === 'zgca-medias' &&
             audio.storage?.objectKey.startsWith('audio/ai-history/releases/')

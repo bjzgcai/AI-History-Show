@@ -57,7 +57,7 @@
   {
     "id": "asset-1958-lisp-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1958-lisp-zh-original-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1958-lisp-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1958-lisp 中文原版科普音频",
@@ -80,7 +80,7 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1958-lisp-zh-original-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1958-lisp-zh-original-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",
@@ -97,7 +97,7 @@
   {
     "id": "asset-1958-lisp-audio-zh-interact-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1958-lisp-zh-interact-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1958-lisp-zh-interact-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1958-lisp 中文互动增强版科普音频",
@@ -120,7 +120,7 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1958-lisp-zh-interact-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1958-lisp-zh-interact-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",
@@ -137,7 +137,7 @@
   {
     "id": "asset-1958-lisp-audio-en-v1",
     "type": "audio",
-    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1958-lisp-en-v1.mp3",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1958-lisp-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1958-lisp 英文科普音频",
@@ -160,7 +160,7 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1958-lisp-en-v1.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1958-lisp-en-v1.mp3",
     "storage": {
       "provider": "aliyun-oss",
       "bucket": "zgca-medias",

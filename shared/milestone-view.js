@@ -82,7 +82,11 @@
         if (!/^https:\/\//i.test(url)) return false;
         const provider =
             candidate && typeof candidate === 'object' ? String(candidate.storage?.provider || '').trim() : '';
-        return provider === 'aliyun-oss' || /^https:\/\/zgca-medias\.oss-cn-beijing\.aliyuncs\.com(?:\/|$)/i.test(url);
+        return (
+            provider === 'aliyun-oss' ||
+            /^https:\/\/media\.sciencearena\.cn(?:\/|$)/i.test(url) ||
+            /^https:\/\/zgca-medias\.oss-cn-beijing\.aliyuncs\.com(?:\/|$)/i.test(url)
+        );
     }
 
     function getPrimaryAudio(milestone) {
