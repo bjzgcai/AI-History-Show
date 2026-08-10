@@ -32,16 +32,20 @@ npm run start:audio-review
 
 默认地址为 `http://127.0.0.1:3002`。局域网使用时设置 `HOST=0.0.0.0`；公网部署必须放在 HTTPS 反向代理后，并设置 `AUDIO_REVIEW_SECURE_COOKIE=true`。
 
+审核台支持挂在已有展示域名的子目录，例如 `https://example.com/audio-review/`。反向代理必须保留
+浏览器地址中的末尾斜线，并把 `/audio-review/` 前缀剥离后转发到服务根路径。页面内部使用相对
+API 和音频 URL，因此根路径运行与子目录运行都可用。
+
 ## 数据与配置
 
-| 环境变量 | 默认值 | 说明 |
-| --- | --- | --- |
-| `HOST` | `127.0.0.1` | 监听地址 |
-| `PORT` | `3002` | 监听端口 |
-| `AUDIO_REVIEW_DATA` | `tools/audio-review-console/review-data.json` | 当前审核数据 |
-| `AUDIO_REVIEW_DB` | `.tmp/audio-review/reviews.sqlite` | SQLite 数据库 |
-| `AUDIO_REVIEW_TOKEN_FILE` | `.secrets/audio-review-tokens.json` | Token 摘要配置 |
-| `AUDIO_REVIEW_SECURE_COOKIE` | `false` | HTTPS 部署时设为 `true` |
+| 环境变量                     | 默认值                                        | 说明                    |
+| ---------------------------- | --------------------------------------------- | ----------------------- |
+| `HOST`                       | `127.0.0.1`                                   | 监听地址                |
+| `PORT`                       | `3002`                                        | 监听端口                |
+| `AUDIO_REVIEW_DATA`          | `tools/audio-review-console/review-data.json` | 当前审核数据            |
+| `AUDIO_REVIEW_DB`            | `.tmp/audio-review/reviews.sqlite`            | SQLite 数据库           |
+| `AUDIO_REVIEW_TOKEN_FILE`    | `.secrets/audio-review-tokens.json`           | Token 摘要配置          |
+| `AUDIO_REVIEW_SECURE_COOKIE` | `false`                                       | HTTPS 部署时设为 `true` |
 
 数据库使用 WAL 模式。正式部署必须把数据库放在持久卷中，并定期备份数据库及其 WAL 文件，或在停写窗口复制完整数据库。
 

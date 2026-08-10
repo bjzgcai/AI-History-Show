@@ -1,6 +1,7 @@
 # 部署指南
 
 本项目包含三个独立部分：
+
 - **展示页**（`index.html`）：纯静态 HTML5，任何静态文件服务器均可运行
 - **内容管理服务**（`manage/server.js`）：Archive-only Node.js 服务，用于编辑和校验 Archive JSON，**仅需在有编辑需求时运行**
 - **音频审核服务**（`audio-review/server.js`）：带 Token 登录和 SQLite 持久化的多人审核服务，独立于公开展示页部署
@@ -101,8 +102,9 @@ Compose 中的 `admin` 服务会把当前项目目录挂载到容器的 `/app`�
 
 ### 音频审核独立部署
 
-正常展示页继续只发布 `.tmp/static-site/`，不包含审核代码、候选音频或审核数据库。审核服务建议使用
-独立域名，例如 `review.example.com`，由 Nginx 反向代理到仅监听内网的 `3002` 端口：
+正常展示页继续只发布 `.tmp/static-site/`，不包含审核代码、候选音频或审核数据库。审核服务可以
+使用独立域名，也可以挂在展示页同一域名的子目录。若使用独立域名，例如 `review.example.com`，
+由 Nginx 反向代理到仅监听内网的 `3002` 端口：
 
 ```nginx
 server {
@@ -116,6 +118,25 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_request_buffering off;
     }
+}
+```
+
+若与展示页共用域名，推荐使用 `/audio-review/` 子目录。需要把无末尾斜线的地址重定向到标准
+地址，并在 `proxy_pass` 中保留末尾斜线，从而剥离 `/audio-review/` 前缀：
+
+```nginx
+location = /audio-review {
+    return 308 /audio-review/;
+}
+
+location /audio-review/ {
+    proxy_pass http://127.0.0.1:3002/;
+    proxy_http_version 1.1;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-Proto https;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_buffering off;
+    proxy_read_timeout 300s;
 }
 ```
 
@@ -176,15 +197,15 @@ globalScope.AI_HISTORY_UMAMI_CONFIG = {
 
 ### 方案对比
 
-| 维度 | 方案一：Nginx 云服务器 | 方案二：Gitee Pages |
-|------|----------------------|-------------------|
-| 上手难度 | 中（需 Linux 基础） | 低（网页操作） |
-| 启动时间 | 30~60 分钟 | 5~10 分钟 |
-| 展厅离线/内网使用 | ✅ 支持 | ❌ 不支持 |
-| 访问控制 | 完全可控（IP 白名单等） | 仅公开访问 |
-| 维护成本 | 需定期维护服务器 | 零维护 |
-| 费用 | 服务器费（约 40~100元/月） | 免费 |
-| 推荐场景 | 生产/展厅/长期运行 | 演示/分享/快速验证 |
+| 维度              | 方案一：Nginx 云服务器     | 方案二：Gitee Pages |
+| ----------------- | -------------------------- | ------------------- |
+| 上手难度          | 中（需 Linux 基础）        | 低（网页操作）      |
+| 启动时间          | 30~60 分钟                 | 5~10 分钟           |
+| 展厅离线/内网使用 | ✅ 支持                    | ❌ 不支持           |
+| 访问控制          | 完全可控（IP 白名单等）    | 仅公开访问          |
+| 维护成本          | 需定期维护服务器           | 零维护              |
+| 费用              | 服务器费（约 40~100元/月） | 免费                |
+| 推荐场景          | 生产/展厅/长期运行         | 演示/分享/快速验证  |
 
 ### 方案一：Nginx 云服务器（推荐展厅/生产环境）
 
@@ -250,9 +271,9 @@ sudo systemctl reload nginx
 
 在云控制台的安全组中放行：
 
-| 端口 | 协议 | 用途 |
-|------|------|------|
-| 80   | TCP  | HTTP |
+| 端口 | 协议 | 用途                       |
+| ---- | ---- | -------------------------- |
+| 80   | TCP  | HTTP                       |
 | 443  | TCP  | HTTPS（配置 HTTPS 后需要） |
 
 **第五步（可选）：配置 HTTPS**
@@ -338,11 +359,11 @@ http://localhost:8000/
 
 ### 方案对比
 
-| 方案 | 典型做法 | 能否跨双屏 | 能否去掉地址栏/标签栏 | 能否去掉系统标题栏 | 稳定性 |
-|------|----------|------------|----------------------|-------------------|--------|
-| 跨屏窗口方案 | `Edge/Chrome --app` + DisplayFusion 跨屏 | ✅ | ✅ | ❌ 通常不行 | 中 |
-| 合成超宽屏方案 | `Intel Graphics Software` / `NVIDIA Surround` 合成单个逻辑显示器，再 `F11` / `--kiosk` | ✅ | ✅ | ✅ 更容易实现 | 高 |
-| 正式布展方案 | 桌面壳程序（如 Electron）或专业拼接器 | ✅ | ✅ | ✅ | 很高 |
+| 方案           | 典型做法                                                                               | 能否跨双屏 | 能否去掉地址栏/标签栏 | 能否去掉系统标题栏 | 稳定性 |
+| -------------- | -------------------------------------------------------------------------------------- | ---------- | --------------------- | ------------------ | ------ |
+| 跨屏窗口方案   | `Edge/Chrome --app` + DisplayFusion 跨屏                                               | ✅         | ✅                    | ❌ 通常不行        | 中     |
+| 合成超宽屏方案 | `Intel Graphics Software` / `NVIDIA Surround` 合成单个逻辑显示器，再 `F11` / `--kiosk` | ✅         | ✅                    | ✅ 更容易实现      | 高     |
+| 正式布展方案   | 桌面壳程序（如 Electron）或专业拼接器                                                  | ✅         | ✅                    | ✅                 | 很高   |
 
 ### 当前已知结论与限制
 
