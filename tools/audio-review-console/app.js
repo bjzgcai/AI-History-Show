@@ -125,8 +125,8 @@ function scopeLabel(scopeId) {
         {
             'bench-council-ai100': 'AI Achievements',
             'gaming-ai': 'AI 棋牌',
-            'deep-learning': '深度学习',
-            'humanistic-cycle': '人文思辨'
+            'deep-learning': 'AI 70 年',
+            'humanistic-cycle': 'AI 人文'
         }[scopeId] || scopeId
     );
 }
@@ -625,6 +625,14 @@ function renderMetadataTab(event) {
                 ${dataRow('模型', 'seed-tts-2.0')}
                 ${dataRow('版本', variant.revision?.label || '故事线音频')}
                 ${dataRow('修订', variant.revision ? variant.revision.id : '正式候选母版')}
+                ${
+                    variant.revision?.reusedFrom
+                        ? dataRow(
+                              '故事线复用',
+                              `${scopeLabel(variant.revision.reusedFrom.sourceScopeId)} → ${scopeLabel(variant.revision.reusedFrom.targetScopeId)}`
+                          )
+                        : ''
+                }
             </section>
             <section class="data-block wide">
                 <h3>音频文件</h3>

@@ -199,7 +199,8 @@ function applyOverlay(overlay) {
             id: overlay.revisionId,
             status: overlay.status,
             kind: overlay.comparisonKind,
-            label: overlay.comparisonLabel
+            label: overlay.comparisonLabel,
+            reusedFrom: overlay.reviewReuse || null
         }
     };
 }
@@ -220,6 +221,78 @@ function buildOverlayVariant(candidates) {
         ...revisionOptions.at(-1),
         revisionOptions
     };
+}
+
+async function archiveAudioSourcePath(storylineEntry, locale) {
+    const eventDirectory = path.join(ROOT, 'archive/events', storylineEntry.eventId);
+    const [variant, assets] = await Promise.all([
+        readJson(path.join(eventDirectory, 'variants', `${storylineEntry.variant}.json`)),
+        readJson(path.join(eventDirectory, 'assets.json'))
+    ]);
+    const assetsById = new Map(assets.map((asset) => [asset.id, asset]));
+    const sourcePaths = [
+        ...new Set(
+            (variant.assetIds || [])
+                .map((assetId) => assetsById.get(assetId))
+                .filter((asset) => asset?.type === 'audio' && asset.language === locale)
+                .map((asset) => asset.storage?.sourcePath)
+                .filter(Boolean)
+        )
+    ];
+    if (sourcePaths.length > 1) {
+        throw new Error(
+            `${storylineEntry.eventId}/${storylineEntry.variant}/${locale} references multiple audio source paths`
+        );
+    }
+    return sourcePaths[0] || null;
+}
+
+export async function expandSharedStorylineOverlays({ overlays, storylineEntries }) {
+    const expanded = new Map(overlays);
+    const activeScopeIds = new Set([...overlays.keys()].map((key) => key.split(':')[0]));
+    const candidatesByAudioPath = new Map();
+    for (const candidates of overlays.values()) {
+        for (const candidate of candidates) {
+            const pathCandidates = candidatesByAudioPath.get(candidate.audio.path) || [];
+            pathCandidates.push(candidate);
+            candidatesByAudioPath.set(candidate.audio.path, pathCandidates);
+        }
+    }
+
+    let reusedCount = 0;
+    for (const scopeId of activeScopeIds) {
+        const storyline = storylineEntries.get(scopeId) || [];
+        for (const [entryIndex, storylineEntry] of storyline.entries()) {
+            const sequenceIndex = entryIndex + 1;
+            for (const locale of ['zh', 'en']) {
+                const key = overlayKey(scopeId, sequenceIndex, locale, 'storyline');
+                if (expanded.has(key)) continue;
+                const sourcePath = await archiveAudioSourcePath(storylineEntry, locale);
+                if (!sourcePath) continue;
+                const sourceCandidates = (candidatesByAudioPath.get(sourcePath) || []).filter(
+                    (candidate) =>
+                        candidate.eventId === storylineEntry.eventId &&
+                        candidate.locale === locale &&
+                        candidate.mode === 'storyline'
+                );
+                if (!sourceCandidates.length) continue;
+                expanded.set(
+                    key,
+                    sourceCandidates.map((candidate) => ({
+                        ...candidate,
+                        reviewReuse: {
+                            sourceScopeId: candidate.scopeId,
+                            sourceSequenceIndex: candidate.sequenceIndex,
+                            targetScopeId: scopeId,
+                            targetSequenceIndex: sequenceIndex
+                        }
+                    }))
+                );
+                reusedCount += 1;
+            }
+        }
+    }
+    return { overlays: expanded, reusedCount };
 }
 
 export async function buildOverlayOnlyEvent({ scopeId, sequenceIndex, overlays, storylineEntries }) {
@@ -243,7 +316,7 @@ export async function buildOverlayOnlyEvent({ scopeId, sequenceIndex, overlays, 
     const eventDirectory = path.join(ROOT, 'archive/events', latest.eventId);
     const event = await readJson(path.join(eventDirectory, 'event.json'));
     const editorial = latestEditorialMetadata(overlays, scopeId, sequenceIndex);
-    const variantId = editorial?.variantId || storylineEntry.variant;
+    const variantId = storylineEntry.variant;
     const variant = await readJson(path.join(eventDirectory, 'variants', `${variantId}.json`));
     const sourceIds = collectEvidenceIds(allCandidates, 'sourceIds');
     const claimIds = collectEvidenceIds(allCandidates, 'claimIds');
@@ -277,6 +350,7 @@ export async function buildOverlayOnlyEvent({ scopeId, sequenceIndex, overlays, 
             warnings: [],
             selectedClaimStatuses: {}
         },
+        audioReuse: latest.reviewReuse || null,
         sources,
         variants: Object.fromEntries(
             locales.map((locale) => [locale, { storyline: buildOverlayVariant(candidatesByLocale[locale]) }])
@@ -302,6 +376,11 @@ async function main() {
     const [storylineEntries, active] = await Promise.all([loadStorylineEntries(), loadActiveOverlays()]);
     if (!active.overlays.size)
         throw new Error(`No active overlays configured in ${path.relative(ROOT, ACTIVE_OVERLAYS_PATH)}`);
+    const expanded = await expandSharedStorylineOverlays({
+        overlays: active.overlays,
+        storylineEntries
+    });
+    active.overlays = expanded.overlays;
 
     const eventKeys = new Set();
     for (const key of active.overlays.keys()) {
@@ -347,7 +426,9 @@ async function main() {
 
     await fs.mkdir(TOOL_ROOT, { recursive: true });
     await fs.writeFile(OUTPUT_PATH, `${JSON.stringify(output, null, 2)}\n`);
-    console.log(`Built ${path.relative(ROOT, OUTPUT_PATH)} with ${events.length} event packages.`);
+    console.log(
+        `Built ${path.relative(ROOT, OUTPUT_PATH)} with ${events.length} event packages and ${expanded.reusedCount} shared audio mapping(s).`
+    );
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === SCRIPT_PATH) {

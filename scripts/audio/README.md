@@ -115,3 +115,7 @@ revision 的首选入口：
 
 审听数据不再读取旧 AI100 基线目录、release manifest 或历史质量报告；某个 revision 只包含
 一种语言时，审听台只会在该语言筛选下展示对应事件。
+
+当一个已激活故事线的事件没有直接 overlay 时，构建器会检查该 variant 引用的 audio asset，
+并通过 `storage.sourcePath` 精确匹配其他已激活 revision 的音频。匹配成功后，审听台复用同一
+音频和 turns，但保留目标故事线自己的顺序、标题、variant 与相邻事件关系。
