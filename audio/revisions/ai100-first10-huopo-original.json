@@ -12,7 +12,7 @@
         "name": "volc",
         "model": "seed-tts-2.0",
         "endpoint": "https://openspeech.bytedance.com/api/v3/plan/tts/unidirectional",
-        "envFile": "/home/ubuntu/.openclaw/workspace/.secrets/tts.env",
+        "envFile": ".secrets/tts.env",
         "retries": 3
     },
     "specification": {

@@ -160,6 +160,13 @@ AI100 页面顶部必须像旧 achievement 一样有 3 个资料卡片：
 - **大模型时代**: 2018-bert, 2018-gpt, 2023-agents, 2025-llm-competition
 - **AI for Science**: 2020-alphafold, 2019-ai-feynman, 2024-ai-scientist
 
+## GitHub 协作规范
+
+- 后续创建或修改 GitHub Issue、Pull Request 时，标题、正文、评论和检查结论默认统一使用中文。
+- 代码标识、文件路径、命令、API 名称、标准名称和无法自然翻译的技术专名可以保留英文；其余说明文字不要使用英文模板或中英混杂表达。
+- 使用 `gh issue create/edit/comment`、`gh pr create/edit/comment/review` 等命令前，先检查将要提交的可见文案是否为中文。
+- 除非用户明确要求英文或双语，否则不要创建英文 Issue 或 PR 文案。
+
 ## 技术细节
 
 ### Three.js 地球

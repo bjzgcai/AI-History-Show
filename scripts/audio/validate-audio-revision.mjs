@@ -6,6 +6,7 @@ import { spawnSync } from 'node:child_process';
 import {
     ROOT,
     fail,
+    formatCommandFailure,
     loadRevisionConfig,
     loadRevisionTurns,
     readJson,
@@ -28,7 +29,9 @@ function probeAudio(filePath) {
         ],
         { cwd: ROOT, encoding: 'utf8' }
     );
-    if (result.status !== 0) fail(`ffprobe failed for ${relativeToRoot(filePath)}`);
+    if (result.error || result.status !== 0) {
+        fail(formatCommandFailure('ffprobe', result, relativeToRoot(filePath)));
+    }
     const data = JSON.parse(result.stdout);
     return {
         durationSec: Number(data.format?.duration),
