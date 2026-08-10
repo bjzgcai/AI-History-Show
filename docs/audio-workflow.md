@@ -5,18 +5,18 @@
 
 ## 权威边界
 
-| 层级                          | 权威内容                                        | 是否进入 Git |
-| ----------------------------- | ----------------------------------------------- | ------------ |
-| Archive                       | 事件事实、来源、variant 与已发布 S3 audio asset | 是           |
-| `audio/`                      | revision 配置、冻结 turns、voice profile        | 是           |
-| `scripts/audio/`              | 生成、校验、审听和发布逻辑                      | 是           |
-| `resources/audio/`            | plan、编译文稿、overlay、质量报告、MP3          | 否           |
-| `tools/audio-review-console/` | HTML、CSS、JavaScript                           | 是           |
-| 审听数据与截图                | active overlays、review data、截图              | 否           |
-| S3 `audio/releases/`          | 页面播放的版本化 MP3                            | 对象存储     |
-| S3 `audio/manifests/`         | 私有发布 manifest                               | 对象存储     |
+| 层级                              | 权威内容                                         | 是否进入 Git |
+| --------------------------------- | ------------------------------------------------ | ------------ |
+| Archive                           | 事件事实、来源、variant 与已发布 OSS audio asset | 是           |
+| `audio/`                          | revision 配置、冻结 turns、voice profile         | 是           |
+| `scripts/audio/`                  | 生成、校验、审听和发布逻辑                       | 是           |
+| `resources/audio/`                | plan、编译文稿、overlay、质量报告、MP3           | 否           |
+| `tools/audio-review-console/`     | HTML、CSS、JavaScript                            | 是           |
+| 审听数据与截图                    | active overlays、review data、截图               | 否           |
+| OSS `audio/ai-history/releases/`  | 页面播放的版本化 MP3                             | 对象存储     |
+| OSS `audio/ai-history/manifests/` | 私有发布 manifest                                | 对象存储     |
 
-生产页面只读取 Archive 编译出的 S3 URL，不读取本地 MP3、revision、overlay 或 review data。
+生产页面只读取 Archive 编译出的 OSS URL，不读取本地 MP3、revision、overlay 或 review data。
 
 ## 统一入口
 
@@ -30,13 +30,13 @@ npm run audio:status
 `audio:status` 默认只要求 Git 源码与 Archive 发布配置完整，因此可在全新 checkout 中运行：
 
 ```bash
-# Git 源码、revision 引用和 Archive/S3 配置
+# Git 源码、revision 引用和 Archive/OSS 配置
 npm run audio:status
 
 # 额外要求本地 plan、overlay、MP3 和审听数据完整
 npm run audio:status -- --strict
 
-# 探测所有公开 S3 release URL
+# 探测所有公开 OSS release URL
 npm run audio:status -- --remote
 
 # 机器可读输出
@@ -104,10 +104,10 @@ npm run audio:release -- archive-sync-originals --link-shared-variants
 npm run audio:release -- archive-sync-originals --link-shared-variants --apply
 ```
 
-该命令只用于已有原版批次。未来内容优化产生的新 revision 应在审听批准后新增版本化 S3 key
+该命令只用于已有原版批次。未来内容优化产生的新 revision 应在审听批准后新增版本化 OSS object key
 和 Archive audio asset，不覆盖旧对象。
 
-## 5. S3 发布
+## 5. OSS 发布
 
 ```bash
 # 校验 Archive storage 元数据和本地发布源
@@ -154,10 +154,10 @@ npm run audio:release -- verify
 ## Fresh Checkout 与工作站
 
 全新 checkout 必须能够完成 source-check、Archive 校验、生成运行时数据和项目测试。它不需要
-本地 MP3，也不执行 S3 上传。
+本地 MP3，也不执行 OSS 上传。
 
 发布工作站需要恢复 `resources/audio/` 中与 Archive `storage.sourcePath` 对应的本地文件，安装
-FFmpeg，并通过环境注入 TTS/S3 凭证。`audio:status -- --strict` 用于确认工作站状态完整。
+FFmpeg，并通过环境注入 TTS/OSS 凭证。`audio:status -- --strict` 用于确认工作站状态完整。
 
 ## 历史基线工具
 

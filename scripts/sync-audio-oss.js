@@ -6,11 +6,13 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
-const DEFAULT_ENDPOINT = 'https://s3.inner.bza.edu.cn';
-const DEFAULT_BUCKET = 'ai-history';
-const DEFAULT_REGION = 'us-east-1';
+const DEFAULT_PROVIDER = 'aliyun-oss';
+const DEFAULT_ENDPOINT = '[REDACTED_OSS_ENDPOINT]';
+const DEFAULT_BUCKET = '[REDACTED_OSS_BUCKET]';
+const DEFAULT_REGION = 'cn-beijing';
 const DEFAULT_MANIFEST_PATH = path.join(ROOT, '.tmp', 'audio', 'audio-manifest.json');
-const DEFAULT_MANIFEST_KEY = 'audio/manifests/audio-manifest.json';
+const DEFAULT_MANIFEST_KEY = 'audio/ai-history/manifests/audio-manifest.json';
+const RELEASE_PREFIX = 'audio/ai-history/releases/';
 const DEFAULT_CACHE_CONTROL = 'public, max-age=31536000, immutable';
 const AUDIO_CONTENT_TYPES = new Map([
     ['.aac', 'audio/aac'],
@@ -24,21 +26,20 @@ function printUsage() {
     console.log(
         [
             'Usage:',
-            '  node scripts/sync-audio-s3.js check',
-            '  node scripts/sync-audio-s3.js manifest [--output FILE] [--json]',
-            '  node scripts/sync-audio-s3.js push [--dry-run] [--force] [--output FILE] [--json]',
-            '  node scripts/sync-audio-s3.js verify [--json]',
-            '  node scripts/sync-audio-s3.js publish-access [--dry-run] [--json]',
+            '  node scripts/sync-audio-oss.js check',
+            '  node scripts/sync-audio-oss.js manifest [--output FILE] [--json]',
+            '  node scripts/sync-audio-oss.js push [--dry-run] [--force] [--output FILE] [--json]',
+            '  node scripts/sync-audio-oss.js verify [--json]',
+            '  node scripts/sync-audio-oss.js publish-access [--dry-run] [--json]',
             '',
             'Configuration:',
-            `  BZA_S3_ENDPOINT       S3 endpoint (default: ${DEFAULT_ENDPOINT})`,
-            `  BZA_S3_BUCKET         bucket name (default: ${DEFAULT_BUCKET})`,
-            `  BZA_S3_REGION         signing region (default: ${DEFAULT_REGION})`,
-            '  BZA_S3_FORCE_PATH_STYLE=false to disable path-style access',
-            `  BZA_S3_MANIFEST_KEY   remote manifest key (default: ${DEFAULT_MANIFEST_KEY})`,
-            '  AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY are required for push/verify.',
+            `  ALIYUN_OSS_ENDPOINT       OSS endpoint (default: ${DEFAULT_ENDPOINT})`,
+            `  ALIYUN_OSS_BUCKET         bucket name (default: ${DEFAULT_BUCKET})`,
+            `  ALIYUN_OSS_REGION         signing region (default: ${DEFAULT_REGION})`,
+            `  ALIYUN_OSS_MANIFEST_KEY   remote manifest key (default: ${DEFAULT_MANIFEST_KEY})`,
+            '  ALIYUN_ACCESS_KEY_ID and ALIYUN_ACCESS_KEY_SECRET are required for push/verify.',
             '',
-            'Credentials must come from the environment or the standard AWS credential chain.'
+            'Credentials must come from the environment; never store them in Archive metadata.'
         ].join('\n')
     );
 }
@@ -149,13 +150,17 @@ function validateAudioAssets(entries) {
         } else if (!fs.statSync(entry.absoluteSourcePath).isFile()) {
             issues.push(`${label}: local source is not a file: ${entry.sourcePath}`);
         }
-        if (entry.provider !== 'bza-s3') issues.push(`${label}: storage.provider must be bza-s3`);
-        if (!entry.bucket) issues.push(`${label}: storage.bucket is required`);
+        if (entry.provider !== DEFAULT_PROVIDER) {
+            issues.push(`${label}: storage.provider must be ${DEFAULT_PROVIDER}`);
+        }
+        if (entry.bucket !== DEFAULT_BUCKET) {
+            issues.push(`${label}: storage.bucket must be ${DEFAULT_BUCKET}`);
+        }
         if (!entry.objectKey) {
             issues.push(`${label}: storage.objectKey is required`);
         } else {
-            if (!entry.objectKey.startsWith('audio/')) {
-                issues.push(`${label}: storage.objectKey must stay under audio/: ${entry.objectKey}`);
+            if (!entry.objectKey.startsWith(RELEASE_PREFIX)) {
+                issues.push(`${label}: storage.objectKey must stay under ${RELEASE_PREFIX}: ${entry.objectKey}`);
             }
             if (entry.objectKey.split('/').includes('..')) {
                 issues.push(`${label}: storage.objectKey must not contain parent traversal`);
@@ -200,7 +205,7 @@ async function buildManifest(entries, options = {}) {
     return {
         schemaVersion: 1,
         generatedAt: options.generatedAt || new Date().toISOString(),
-        provider: 'bza-s3',
+        provider: entries[0]?.provider || DEFAULT_PROVIDER,
         assets
     };
 }
@@ -211,12 +216,16 @@ function writeManifest(manifest, outputPath = DEFAULT_MANIFEST_PATH) {
     return outputPath;
 }
 
-function resolveS3Config(args, entries) {
+function resolveOssConfig(args, entries) {
+    const configuredProviders = new Set(entries.map((entry) => entry.provider).filter(Boolean));
     const configuredBuckets = new Set(entries.map((entry) => entry.bucket).filter(Boolean));
     const bucket = String(
-        args.bucket || process.env.BZA_S3_BUCKET || [...configuredBuckets][0] || DEFAULT_BUCKET
+        args.bucket || process.env.ALIYUN_OSS_BUCKET || [...configuredBuckets][0] || DEFAULT_BUCKET
     ).trim();
-    if (configuredBuckets.size > 1 && !args.bucket && !process.env.BZA_S3_BUCKET) {
+    if (configuredProviders.size > 1 || [...configuredProviders].some((value) => value !== DEFAULT_PROVIDER)) {
+        throw new Error(`Archive audio provider must be ${DEFAULT_PROVIDER}`);
+    }
+    if (configuredBuckets.size > 1 && !args.bucket && !process.env.ALIYUN_OSS_BUCKET) {
         throw new Error(`Audio assets reference multiple buckets: ${[...configuredBuckets].join(', ')}`);
     }
     if ([...configuredBuckets].some((value) => value !== bucket)) {
@@ -224,15 +233,18 @@ function resolveS3Config(args, entries) {
     }
 
     return {
-        endpoint: String(args.endpoint || process.env.BZA_S3_ENDPOINT || DEFAULT_ENDPOINT).replace(/\/+$/, ''),
+        provider: DEFAULT_PROVIDER,
+        endpoint: String(args.endpoint || process.env.ALIYUN_OSS_ENDPOINT || DEFAULT_ENDPOINT).replace(/\/+$/, ''),
         bucket,
-        region: String(args.region || process.env.BZA_S3_REGION || process.env.AWS_REGION || DEFAULT_REGION).trim(),
-        forcePathStyle: String(process.env.BZA_S3_FORCE_PATH_STYLE || 'true').toLowerCase() !== 'false',
-        manifestKey: normalizeObjectKey(args['manifest-key'] || process.env.BZA_S3_MANIFEST_KEY || DEFAULT_MANIFEST_KEY)
+        region: String(args.region || process.env.ALIYUN_OSS_REGION || DEFAULT_REGION).trim(),
+        forcePathStyle: false,
+        manifestKey: normalizeObjectKey(
+            args['manifest-key'] || process.env.ALIYUN_OSS_MANIFEST_KEY || DEFAULT_MANIFEST_KEY
+        )
     };
 }
 
-function loadS3Sdk() {
+function loadS3CompatibleSdk() {
     try {
         return {
             ...require('@aws-sdk/client-s3'),
@@ -244,11 +256,16 @@ function loadS3Sdk() {
 }
 
 function createS3Client(config) {
-    const { S3Client } = loadS3Sdk();
+    const { S3Client } = loadS3CompatibleSdk();
+    const accessKeyId = String(process.env.ALIYUN_ACCESS_KEY_ID || '').trim();
+    const secretAccessKey = String(process.env.ALIYUN_ACCESS_KEY_SECRET || '').trim();
     return new S3Client({
         endpoint: config.endpoint,
         region: config.region,
-        forcePathStyle: config.forcePathStyle
+        forcePathStyle: config.forcePathStyle,
+        ...(accessKeyId && secretAccessKey ? { credentials: { accessKeyId, secretAccessKey } } : {}),
+        requestChecksumCalculation: 'WHEN_REQUIRED',
+        responseChecksumValidation: 'WHEN_REQUIRED'
     });
 }
 
@@ -262,7 +279,7 @@ function isNotFound(error) {
 }
 
 async function readRemoteState(client, bucket, objectKey) {
-    const { HeadObjectCommand } = loadS3Sdk();
+    const { HeadObjectCommand } = loadS3CompatibleSdk();
     try {
         const result = await client.send(new HeadObjectCommand({ Bucket: bucket, Key: objectKey }));
         return {
@@ -296,7 +313,7 @@ function selectUploadAction(remote, asset, force = false) {
 }
 
 async function uploadAudioAsset(client, config, entry, asset) {
-    const { Upload } = loadS3Sdk();
+    const { Upload } = loadS3CompatibleSdk();
     const upload = new Upload({
         client,
         queueSize: 2,
@@ -313,21 +330,23 @@ async function uploadAudioAsset(client, config, entry, asset) {
                 eventid: asset.eventId,
                 assetid: asset.assetId,
                 language: asset.language
-            }
+            },
+            ACL: 'public-read'
         }
     });
     await upload.done();
 }
 
 async function uploadManifest(client, config, manifest) {
-    const { PutObjectCommand } = loadS3Sdk();
+    const { PutObjectCommand } = loadS3CompatibleSdk();
     await client.send(
         new PutObjectCommand({
             Bucket: config.bucket,
             Key: config.manifestKey,
             Body: `${JSON.stringify(manifest, null, 2)}\n`,
             ContentType: 'application/json; charset=utf-8',
-            CacheControl: 'no-cache'
+            CacheControl: 'no-cache',
+            ACL: 'private'
         })
     );
 }
@@ -408,53 +427,42 @@ async function verifyAudioAssets(manifest, config) {
     return results;
 }
 
-function mergePublicReleasePolicy(policy, bucket) {
-    const statementId = 'PublicReadAudioReleases';
-    const statements = Array.isArray(policy.Statement) ? policy.Statement : policy.Statement ? [policy.Statement] : [];
-    return {
-        ...policy,
-        Version: policy.Version || '2012-10-17',
-        Statement: [
-            ...statements.filter((statement) => statement && statement.Sid !== statementId),
-            {
-                Sid: statementId,
-                Effect: 'Allow',
-                Principal: '*',
-                Action: 's3:GetObject',
-                Resource: `arn:aws:s3:::${bucket}/audio/releases/*`
-            }
-        ]
-    };
-}
-
 function mergeAudioCorsRules(corsRules) {
-    const ruleId = 'PublicAudioPlayback';
+    const publicPlaybackRules = [];
+    const unrelatedRules = [];
+    for (const rule of corsRules || []) {
+        const methods = new Set((rule?.AllowedMethods || []).map((value) => String(value).toUpperCase()));
+        const origins = new Set(rule?.AllowedOrigins || []);
+        if (origins.has('*') && methods.has('GET') && methods.has('HEAD')) publicPlaybackRules.push(rule);
+        else if (rule) unrelatedRules.push(rule);
+    }
+    const existingHeaders = publicPlaybackRules.flatMap((rule) => rule.AllowedHeaders || []);
+    const allowedHeaders = existingHeaders.some((header) => header === '*')
+        ? ['*']
+        : [...new Set([...existingHeaders, 'Range'].map((header) => String(header).toLowerCase()))].sort();
+    const exposeHeaders = [
+        ...new Set([
+            ...publicPlaybackRules.flatMap((rule) => rule.ExposeHeaders || []),
+            'Accept-Ranges',
+            'Content-Length',
+            'Content-Range',
+            'ETag'
+        ])
+    ].sort((left, right) => left.localeCompare(right));
     return [
-        ...(corsRules || []).filter((rule) => rule && rule.ID !== ruleId),
+        ...unrelatedRules,
         {
-            ID: ruleId,
-            AllowedHeaders: ['Range'],
+            AllowedHeaders: allowedHeaders,
             AllowedMethods: ['GET', 'HEAD'],
             AllowedOrigins: ['*'],
-            ExposeHeaders: ['Accept-Ranges', 'Content-Length', 'Content-Range', 'ETag'],
-            MaxAgeSeconds: 86400
+            ExposeHeaders: exposeHeaders,
+            MaxAgeSeconds: Math.max(86400, ...publicPlaybackRules.map((rule) => Number(rule.MaxAgeSeconds || 0)))
         }
     ];
 }
 
-async function readBucketPolicy(client, bucket) {
-    const { GetBucketPolicyCommand } = loadS3Sdk();
-    try {
-        const result = await client.send(new GetBucketPolicyCommand({ Bucket: bucket }));
-        return result.Policy ? JSON.parse(result.Policy) : {};
-    } catch (error) {
-        if (isNotFound(error)) return {};
-        throw error;
-    }
-}
-
 async function readBucketCors(client, bucket) {
-    const { GetBucketCorsCommand } = loadS3Sdk();
+    const { GetBucketCorsCommand } = loadS3CompatibleSdk();
     try {
         const result = await client.send(new GetBucketCorsCommand({ Bucket: bucket }));
         return result.CORSRules || [];
@@ -464,23 +472,18 @@ async function readBucketCors(client, bucket) {
     }
 }
 
-async function configurePublicAudioAccess(config, options = {}) {
-    const { PutBucketCorsCommand, PutBucketPolicyCommand } = loadS3Sdk();
+async function configurePublicAudioAccess(config, entries, options = {}) {
+    const { PutBucketCorsCommand, PutObjectAclCommand } = loadS3CompatibleSdk();
     const client = createS3Client(config);
     try {
-        const [currentPolicy, currentCorsRules] = await Promise.all([
-            readBucketPolicy(client, config.bucket),
-            readBucketCors(client, config.bucket)
-        ]);
-        const policy = mergePublicReleasePolicy(currentPolicy, config.bucket);
+        const currentCorsRules = await readBucketCors(client, config.bucket);
         const corsRules = mergeAudioCorsRules(currentCorsRules);
         if (!options.dryRun) {
-            await client.send(
-                new PutBucketPolicyCommand({
-                    Bucket: config.bucket,
-                    Policy: JSON.stringify(policy)
-                })
-            );
+            for (const entry of entries) {
+                await client.send(
+                    new PutObjectAclCommand({ Bucket: config.bucket, Key: entry.objectKey, ACL: 'public-read' })
+                );
+            }
             await client.send(
                 new PutBucketCorsCommand({
                     Bucket: config.bucket,
@@ -488,7 +491,7 @@ async function configurePublicAudioAccess(config, options = {}) {
                 })
             );
         }
-        return { dryRun: options.dryRun === true, policy, corsRules };
+        return { dryRun: options.dryRun === true, publicObjectCount: entries.length, corsRules };
     } finally {
         client.destroy();
     }
@@ -501,7 +504,7 @@ function printIssues(issues) {
 function printPushSummary(summary, config) {
     for (const result of summary.results) {
         const suffix = result.error ? `: ${result.error}` : '';
-        console.log(`${result.action}: s3://${config.bucket}/${result.objectKey}${suffix}`);
+        console.log(`${result.action}: oss://${config.bucket}/${result.objectKey}${suffix}`);
     }
     console.log(
         summary.planned > 0
@@ -541,14 +544,14 @@ async function main(argv = process.argv.slice(2)) {
         return;
     }
 
-    const config = resolveS3Config(args, entries);
+    const config = resolveOssConfig(args, entries);
     if (command === 'publish-access') {
-        const result = await configurePublicAudioAccess(config, { dryRun: args['dry-run'] === true });
+        const result = await configurePublicAudioAccess(config, entries, { dryRun: args['dry-run'] === true });
         if (args.json) console.log(JSON.stringify(result, null, 2));
         else {
             console.log(
                 `${result.dryRun ? 'Would configure' : 'Configured'} public read for ` +
-                    `s3://${config.bucket}/audio/releases/*; audio/manifests/* remains private.`
+                    `${result.publicObjectCount} OSS audio object(s); ${config.manifestKey} remains private.`
             );
             console.log(
                 `${result.dryRun ? 'Would merge' : 'Merged'} audio playback CORS with ` +
@@ -587,7 +590,7 @@ async function main(argv = process.argv.slice(2)) {
     if (args.json) console.log(JSON.stringify({ ok: failed.length === 0, results }, null, 2));
     else {
         for (const result of results) {
-            console.log(`${result.ok ? 'verified' : 'mismatch'}: s3://${config.bucket}/${result.objectKey}`);
+            console.log(`${result.ok ? 'verified' : 'mismatch'}: oss://${config.bucket}/${result.objectKey}`);
         }
         console.log(`Audio verify: ${results.length - failed.length} passed, ${failed.length} failed.`);
     }
@@ -596,7 +599,7 @@ async function main(argv = process.argv.slice(2)) {
 
 if (require.main === module) {
     main().catch((error) => {
-        console.error(`Audio storage error: ${error.message}`);
+        console.error(`OSS audio storage error: ${error.message}`);
         process.exitCode = 1;
     });
 }
@@ -606,17 +609,18 @@ module.exports = {
     DEFAULT_BUCKET,
     DEFAULT_ENDPOINT,
     DEFAULT_MANIFEST_KEY,
+    DEFAULT_PROVIDER,
+    RELEASE_PREFIX,
     buildManifest,
     collectAudioAssets,
     configurePublicAudioAccess,
     contentTypeForPath,
     mergeAudioCorsRules,
-    mergePublicReleasePolicy,
     normalizeObjectKey,
     parseArgs,
     pushAudioAssets,
     remoteMatches,
-    resolveS3Config,
+    resolveOssConfig,
     selectUploadAction,
     sha256File,
     validateAudioAssets,
