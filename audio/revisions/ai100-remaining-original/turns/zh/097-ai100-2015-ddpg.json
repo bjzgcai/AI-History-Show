@@ -1,0 +1,76 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 97,
+    "eventId": "ai100-2015-ddpg",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "上一段讲到「深度 Q 网络」。现在把镜头转向「DDPG」，沿着这条故事线换一个问题：把时间拨回2015年，「DDPG」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "DQN 在 Atari 上证明了深度网络可以学习离散动作价值，但机器人控制常需要连续输出转向角、速度或力矩。2014 年的确定性策略梯度提供了理论基础，DDPG 随后把它与深度网络及 DQN 的稳定训练机制结合起来。",
+            "sourceIds": [
+                "source-deterministic-policy-gradient-algorithms",
+                "source-continuous-control-with-deep-reinforcement-learning"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Actor 根据状态直接输出确定性连续动作，critic 评估 Q(s,a)，再通过动作梯度更新 actor。经验回放打散样本相关性，缓慢更新的目标 actor 与目标 critic 稳定学习，探索噪声则帮助智能体收集不同动作附近的经验。",
+            "sourceIds": ["source-continuous-control-with-deep-reinforcement-learning"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 DDPG 视为把深度强化学习带入连续控制的重要早期基线，同时也把价值过估计、探索不足和超参数敏感等问题暴露得很清楚。TD3 通过双 critic 和延迟策略更新改善稳定性，SAC 则采用随机策略与熵正则化；二者都延续了 DDPG 推广的深度 actor-critic 路线。",
+            "sourceIds": [
+                "source-continuous-control-with-deep-reinforcement-learning",
+                "source-td3-function-approximation-error"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「DDPG」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-continuous-control-with-deep-reinforcement-learning",
+                "source-iclr-openreview-record",
+                "source-deterministic-policy-gradient-algorithms",
+                "source-td3-function-approximation-error",
+                "source-timothy-lillicrap-stanford-portrait"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-1989-q-learning-citations",
-    "asset-1989-q-learning-bellman-update"
+    "asset-1989-q-learning-bellman-update",
+    "asset-ai100-1989-q-learning-audio-zh-original-v1",
+    "asset-ai100-1989-q-learning-audio-en-v1"
   ],
   "sourceIds": [
     "source-q-learning",

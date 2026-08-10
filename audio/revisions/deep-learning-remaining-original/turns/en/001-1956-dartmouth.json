@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "deep-learning-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "deep-learning",
+    "sequenceIndex": 1,
+    "eventId": "1956-dartmouth",
+    "variantId": "deep-learning",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "deep-learning",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Turn the clock back to 1956. What problem was Dartmouth Workshop - AI Is Born! actually trying to solve?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "The Dartmouth project mattered not just as a summer workshop, but because it brought language, abstraction, learning, neural networks, and self-improvement into one research agenda for the first time, giving scattered lines of work a shared problem space.",
+            "sourceIds": ["source-dartmouth-proposal", "source-dartmouth-history"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The meeting did not immediately produce a unified theory, but it achieved something more durable: it turned \"artificial intelligence\" from a phrase in a proposal into a disciplinary label that could keep attracting researchers, funding, and public imagination.",
+            "sourceIds": ["source-dartmouth-proposal", "source-dartmouth-history", "source-ieee-dartmouth-workshop"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.context"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Dartmouth Workshop - AI Is Born! mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": ["source-dartmouth-proposal", "source-dartmouth-history", "source-ieee-dartmouth-workshop"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

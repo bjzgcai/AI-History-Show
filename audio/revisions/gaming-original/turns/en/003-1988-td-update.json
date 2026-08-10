@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "gaming-all-storyline-en-original-v1-2026-08-09",
+    "scopeId": "gaming-ai",
+    "sequenceIndex": 3,
+    "eventId": "1988-td-update",
+    "variantId": "gaming-ai",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Behind the technical name Temporal-Difference Update, what intuitive problem were researchers confronting?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Learning from delayed rewards requires assigning credit to states and actions before an entire interaction has ended. Temporal-difference learning turned that problem into incremental updates, allowing predictions to change as new experience arrives.",
+            "sourceIds": ["source-learning-to-predict-by-the-methods-of-temporal-differences"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "TD compares the current prediction with a one-step target formed from the immediate reward plus the next prediction, then moves the current value toward it. This bootstrapping mechanism does not wait for a final outcome, making it well suited to continuing games and online control.",
+            "sourceIds": ["source-learning-to-predict-by-the-methods-of-temporal-differences"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat temporal-difference learning as a cornerstone of reinforcement learning. Its long-term legacy is the bootstrapping idea that value estimates can learn from later predictions, supporting Q-learning, actor-critic methods, and modern value-based control.",
+            "sourceIds": ["source-learning-to-predict-by-the-methods-of-temporal-differences"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Temporal-Difference Update mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-learning-to-predict-by-the-methods-of-temporal-differences",
+                "source-richard-sutton-homepage",
+                "source-acm-2024-turing-award-announcement"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

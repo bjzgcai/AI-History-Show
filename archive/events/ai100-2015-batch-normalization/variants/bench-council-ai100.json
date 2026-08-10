@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-2015-googlenet-inception-christian-szegedy",
-    "asset-2015-batch-normalization-activation-scale"
+    "asset-2015-batch-normalization-activation-scale",
+    "asset-ai100-2015-batch-normalization-audio-zh-original-v1",
+    "asset-ai100-2015-batch-normalization-audio-en-v1"
   ],
   "sourceIds": [
     "source-batch-normalization-on-arxiv",

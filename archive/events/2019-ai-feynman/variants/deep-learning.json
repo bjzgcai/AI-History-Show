@@ -23,7 +23,9 @@
     "asset-2019-ai-feynman-people-01",
     "asset-2019-ai-feynman-historical-01",
     "asset-2019-ai-feynman-papers-01",
-    "asset-2019-ai-feynman-papers-02"
+    "asset-2019-ai-feynman-papers-02",
+    "asset-2019-ai-feynman-audio-zh-original-v1",
+    "asset-2019-ai-feynman-audio-en-v1"
   ],
   "sourceIds": [
     "source-ai-feynman-science-advances",

@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 33,
+    "eventId": "ai100-1999-nmf",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined Kernel PCA. Now the camera turns to NMF and a new question along the same timeline: If we take NMF apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations.",
+            "sourceIds": ["source-learning-the-parts-of-objects-by-non-negative-matrix-factorization"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "A data matrix is approximated as nonnegative basis parts multiplied by nonnegative activations.",
+            "sourceIds": ["source-learning-the-parts-of-objects-by-non-negative-matrix-factorization"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat NMF as a foundational method for interpretable latent factors. Its long-term legacy is the parts-based view that influenced topic modeling, source separation, recommender systems, and explainable representation learning.",
+            "sourceIds": ["source-learning-the-parts-of-objects-by-non-negative-matrix-factorization"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside Kernel PCA, NMF reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-nature-article-page",
+                "source-pubmed-record-for-the-nature-paper",
+                "source-scikit-learn-nmf-documentation",
+                "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

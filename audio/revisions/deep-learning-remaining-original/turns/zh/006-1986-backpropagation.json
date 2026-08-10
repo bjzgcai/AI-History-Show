@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "deep-learning-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "deep-learning",
+    "sequenceIndex": 6,
+    "eventId": "1986-backpropagation",
+    "variantId": "deep-learning",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "deep-learning",
+    "turns": [
+        {
+            "role": "N",
+            "text": "如果把「反向传播算法」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "反向传播的关键不只是“把误差往回传”，而是把多层网络中每一层参数都嵌入统一的可微计算图里，让表示学习第一次变成真正可训练的工程流程。",
+            "sourceIds": ["source-nature-backpropagation-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "它为后来深度学习复兴打下的基础，是让“隐藏层能学到什么”从人工设计问题变成数据驱动问题；这一步把神经网络从概念模型推进到了可扩展的方法论。",
+            "sourceIds": ["source-nature-backpropagation-paper", "source-hinton-backpropagation-pdf"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.context"
+        },
+        {
+            "role": "N",
+            "text": "回看「Hopfield 网络」，再看「反向传播算法」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": ["source-nature-backpropagation-paper", "source-hinton-backpropagation-pdf"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

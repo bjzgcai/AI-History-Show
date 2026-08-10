@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "gaming-all-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "gaming-ai",
+    "sequenceIndex": 7,
+    "eventId": "2000s-alphacat",
+    "variantId": "gaming-ai",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "gaming-ai",
+    "turns": [
+        {
+            "role": "A",
+            "text": "把时间拨回1989-2018年，「中国象棋引擎：搜索与学习型评估」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "中国象棋与国际象棋足够接近，因此搜索和评估是自然起点。它又足够不同：炮的隔子打、九宫限制、过河规则和长打规则，迫使引擎作者重新设计棋盘表示和战术评估。",
+            "sourceIds": ["source-icga-chinese-chess-page"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "实用路线不是一个万能技巧，而是一组面向领域的工程组合。快速走法生成、激进 alpha-beta 剪枝、开局知识和调校后的评估矩阵共同作用，才能应对高度战术化的搜索空间。",
+            "sourceIds": ["source-icga-chinese-chess-page"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把强中国象棋引擎视为证据：只要深度适配具体游戏，经典搜索仍然非常有力。这条路线也预示了后来的学习型评估工作，手工兵种位置表逐步被自动调校权重补充。",
+            "sourceIds": ["source-icga-chinese-chess-page"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「中国象棋引擎：搜索与学习型评估」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-icga-chinese-chess-page",
+                "source-comparison-training-for-computer-chinese-chess",
+                "source-xiangqi-overview"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

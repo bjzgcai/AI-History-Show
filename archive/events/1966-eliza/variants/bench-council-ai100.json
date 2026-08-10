@@ -53,7 +53,9 @@
     "asset-1966-eliza-terminal-dialog",
     "asset-1966-eliza-weizenbaum-uszkoreit-2006",
     "asset-1966-eliza-original-source-page-9",
-    "asset-1966-eliza-conversation-reconstruction"
+    "asset-1966-eliza-conversation-reconstruction",
+    "asset-1966-eliza-audio-zh-original-v1",
+    "asset-1966-eliza-audio-en-v1"
   ],
   "sourceIds": [
     "source-eliza-cacm-paper",

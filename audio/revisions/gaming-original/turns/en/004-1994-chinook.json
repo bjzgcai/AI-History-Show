@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "gaming-all-storyline-en-original-v1-2026-08-09",
+    "scopeId": "gaming-ai",
+    "sequenceIndex": 4,
+    "eventId": "1994-chinook",
+    "variantId": "gaming-ai",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "If we take Chinook apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Checkers was complex enough to challenge contemporary search algorithms, yet structured enough for decades of endgame-database construction. That made Chinook an unusually productive bridge between competitive game programs and formal game solving.",
+            "sourceIds": ["source-chinook-project-home"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Chinook combined opening knowledge, alpha-beta forward search, hand-built position evaluation, and solved endgame tables so current choices could connect to proven late-game outcomes. As the databases expanded, the unknown search space contracted until the team could establish a proof chain from the initial position to a draw.",
+            "sourceIds": ["source-chinook-project-home"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat Chinook as a landmark in game-solving research and high-performance search. Its long-term legacy is showing how expert evaluation, alpha-beta search, opening knowledge, and endgame databases can combine to approach perfect play.",
+            "sourceIds": ["source-chinook-project-home"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside Temporal-Difference Update, Chinook reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-chinook-project-home",
+                "source-checkers-is-solved",
+                "source-chinook-publications",
+                "source-jonathan-schaeffer-portrait"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

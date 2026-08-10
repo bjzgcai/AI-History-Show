@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 111,
+    "eventId": "ai100-1997-adaboost",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "如果把「AdaBoost 自适应提升」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "早期 Boosting 理论证明弱学习器可以被增强，但实用算法还需要一种简单方法选择并加权训练样本。AdaBoost 提供了由分类错误驱动的自适应过程。",
+            "sourceIds": ["source-1997-adaboost-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-1997-adaboost-membership", "claim-1997-adaboost-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "每训练一个弱分类器后，AdaBoost 提高误分类样本权重，降低正确分类样本权重。最终预测是加权投票，各学习器系数取决于其准确性。",
+            "sourceIds": ["source-1997-adaboost-primary"],
+            "claimIds": ["claim-1997-adaboost-membership", "claim-1997-adaboost-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 AdaBoost 视为使 Boosting 走向实用且概念清晰的关键算法。它影响了间隔理论、级联检测器以及后来对集成学习的加性模型解释。",
+            "sourceIds": ["source-1997-adaboost-primary", "source-1997-adaboost-secondary"],
+            "claimIds": ["claim-1997-adaboost-membership", "claim-1997-adaboost-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「Boosting 提升法」，再看「AdaBoost 自适应提升」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-1997-adaboost-primary",
+                "source-1997-adaboost-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-1997-adaboost-portrait"
+            ],
+            "claimIds": ["claim-1997-adaboost-membership", "claim-1997-adaboost-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

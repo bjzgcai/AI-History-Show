@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2006-surf-herbert-bay-gm",
-    "asset-2006-surf-interest-points"
+    "asset-2006-surf-interest-points",
+    "asset-ai100-2006-surf-audio-zh-original-v1",
+    "asset-ai100-2006-surf-audio-en-v1"
   ],
   "sourceIds": [
     "source-eth-surf-paper-pdf",

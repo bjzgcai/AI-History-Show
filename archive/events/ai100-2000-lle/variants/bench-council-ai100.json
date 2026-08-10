@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2000-lle-20010411-snowbird-dsc00680-h-thumb",
-    "asset-2000-lle-neighbor-reconstruction"
+    "asset-2000-lle-neighbor-reconstruction",
+    "asset-ai100-2000-lle-audio-zh-original-v1",
+    "asset-ai100-2000-lle-audio-en-v1"
   ],
   "sourceIds": [
     "source-science-article-page",

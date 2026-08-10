@@ -277,25 +277,25 @@ Duration: 40–150 seconds
 
 ```bash
 # 只校验配置、来源 turns 和 Archive 引用，不依赖本地音频。
-npm run audio:revision -- source-check audio/revisions/<revision>.json
+npm run audio:workflow -- source-check audio/revisions/<revision>.json
 
 # 检查来源 turns、编译脚本和已有音频是否同步。
-npm run audio:revision -- check audio/revisions/<revision>.json
+npm run audio:workflow -- check audio/revisions/<revision>.json
 
 # 只编译新 revision 的脚本与生成计划，不调用 TTS。
-npm run audio:revision -- build audio/revisions/<revision>.json
+npm run audio:workflow -- build audio/revisions/<revision>.json
 
 # 编译、调用 Seed-TTS、规范化媒体并校验。
-npm run audio:revision -- generate audio/revisions/<revision>.json
+npm run audio:workflow -- generate audio/revisions/<revision>.json
 
 # 单独校验已有 revision。
-npm run audio:revision -- validate audio/revisions/<revision>.json
+npm run audio:workflow -- validate audio/revisions/<revision>.json
 
 # 将一个或多个候选加入试听控制台并重建评审数据。
-npm run audio:revision -- activate audio/revisions/<revision-a>.json audio/revisions/<revision-b>.json
+npm run audio:workflow -- activate audio/revisions/<revision-a>.json audio/revisions/<revision-b>.json
 
 # 只重建试听控制台数据。
-npm run audio:revision -- review
+npm run audio:review
 ```
 
 `generate` 遵守 `resources/` append-only 规则：已存在的计划、overlay 或 MP3 不会被覆盖。需要修改文稿、音色或参数时必须使用新的 `revisionId` 和输出目录。

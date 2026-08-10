@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "deep-learning-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "deep-learning",
+    "sequenceIndex": 29,
+    "eventId": "2024-ai-scientist",
+    "variantId": "deep-learning",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "deep-learning",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「智能体：LLM驱动的自主系统」。现在把镜头转向「AI科学家与自主实验室」，沿着这条故事线换一个问题：如果把「AI科学家与自主实验室」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "这类系统真正新的地方，并不是能写出论文段落，而是把“提出假设、设计流程、调用工具、执行实验、评估结果”连成了闭环，开始触碰科学研究的工作流自动化。",
+            "sourceIds": [
+                "source-ai-scientist-paper",
+                "source-sakana-ai-scientist-page",
+                "source-autonomous-materials-lab-paper"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "它也意味着 AI for Science 的评价标准正在改变：未来的关键问题不再只是模型能否解释一张图或一个序列，而是它能否持续产出可验证、可复现实验流程，并在反馈中自我改进。",
+            "sourceIds": [
+                "source-ai-scientist-paper",
+                "source-sakana-ai-scientist-page",
+                "source-autonomous-materials-lab-paper"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.context"
+        },
+        {
+            "role": "N",
+            "text": "回看「智能体：LLM驱动的自主系统」，再看「AI科学家与自主实验室」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-ai-scientist-paper",
+                "source-sakana-ai-scientist-page",
+                "source-autonomous-materials-lab-paper"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

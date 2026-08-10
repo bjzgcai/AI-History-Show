@@ -1,0 +1,61 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 75,
+    "eventId": "2013-word2vec",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "If we take Word2Vec apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Before word2vec, many NLP systems relied on sparse counts or hand-built features. Word2vec made dense vectors practical at web scale.",
+            "sourceIds": ["source-efficient-estimation-of-word-representations-in-vector-space"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The model predicts context from a word or a word from context, forcing related words to occupy nearby regions of vector space. The key mechanism is Skip-gram and CBOW neural word embeddings, which links the source material to the visible demo behavior.",
+            "sourceIds": ["source-efficient-estimation-of-word-representations-in-vector-space"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat Word2Vec as a foundational embedding method that made distributional semantics operational at scale. Its long-term legacy is the geometric view of meaning that still informs retrieval, representation learning, and vector databases.",
+            "sourceIds": ["source-efficient-estimation-of-word-representations-in-vector-space"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside Neural Language Model, Word2Vec reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-distributed-representations-of-words-and-phrases-and-their-compositionality",
+                "source-google-code-archive-word2vec",
+                "source-efficient-estimation-of-word-representations-in-vector-space"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

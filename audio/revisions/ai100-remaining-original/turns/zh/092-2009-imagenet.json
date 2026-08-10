@@ -1,0 +1,54 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 92,
+    "eventId": "2009-imagenet",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "为什么「ImageNet」会成为人工智能史上值得单独记住的一步？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "ImageNet 之前，视觉数据集更小且常常领域化。ImageNet 把通用目标识别变成数据规模挑战。",
+            "sourceIds": ["source-imagenet-a-large-scale-hierarchical-image-database"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "它把图像标签连接到 WordNet synsets，使数据集组织本身也成为科学贡献。 关键机制是大规模层级图像标注，它把资料线索与可见的演示行为连接起来。",
+            "sourceIds": ["source-imagenet-a-large-scale-hierarchical-image-database"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 ImageNet 同时视为决定性基准和基准局限的提醒。它的长期影响在于展示了数据规模、标签、排行榜和算力压力如何重塑整个研究领域。",
+            "sourceIds": ["source-imagenet-a-large-scale-hierarchical-image-database"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "当今天的系统规模越来越大时，「ImageNet」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-imagenet-project-website",
+                "source-stanford-profile-fei-fei-li",
+                "source-imagenet-a-large-scale-hierarchical-image-database"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

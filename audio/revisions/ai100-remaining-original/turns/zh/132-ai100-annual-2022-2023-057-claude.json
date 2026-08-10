@@ -1,0 +1,100 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 132,
+    "eventId": "ai100-annual-2022-2023-057-claude",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "「Claude」最有意思的地方，是结果本身，还是它重新定义问题的方式？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "指令跟随助手正迅速从研究演示走向公共产品，模型行为与安全因而成为用户可见的质量组成。Anthropic 推出 Claude 时明确强调有用、诚实与无害，而不只强调能力基准。",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-launch-scope",
+                "claim-constitutional-lineage"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Claude 把大语言模型预训练与面向助手的后训练结合起来，Anthropic 的宪法式 AI 工作则提供用于批评与修订的书面原则。随后可以利用 AI 生成的偏好反馈进行强化学习，减少人工逐条标注不安全回答的需要。",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-launch-scope",
+                "claim-constitutional-lineage"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 Claude 的发布视为部署通用助手的一条重要替代路径：在后训练中显式嵌入安全原则。它的持续影响在于让模型宪法、自我批评和可扩展监督成为商业 AI 助手设计与评测的核心议题。",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-launch-scope",
+                "claim-constitutional-lineage"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "当今天的系统规模越来越大时，「Claude」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-constitutional-ai",
+                "source-constitutional-paper",
+                "source-constitutional-ai-figure-1",
+                "source-anthropic-series-b",
+                "source-anthropic-founders-video",
+                "source-anthropic-logo",
+                "source-claude-official-launch-artwork",
+                "source-claude-poe-product-image"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-launch-scope",
+                "claim-constitutional-lineage"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

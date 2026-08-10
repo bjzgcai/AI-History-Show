@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-1999-nmf-sebastian",
-    "asset-1999-nmf-parts-factorization"
+    "asset-1999-nmf-parts-factorization",
+    "asset-ai100-1999-nmf-audio-zh-original-v1",
+    "asset-ai100-1999-nmf-audio-en-v1"
   ],
   "sourceIds": [
     "source-nature-article-page",

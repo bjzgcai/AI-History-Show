@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-2015-fast-r-cnn-portrait",
-    "asset-2015-fast-r-cnn-explainer"
+    "asset-2015-fast-r-cnn-explainer",
+    "asset-ai100-2015-fast-r-cnn-audio-zh-original-v1",
+    "asset-ai100-2015-fast-r-cnn-audio-en-v1"
   ],
   "sourceIds": [
     "source-2015-fast-r-cnn-primary",

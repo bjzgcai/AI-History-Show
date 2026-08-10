@@ -11,6 +11,7 @@ import {
     loadStorylineEntries
 } from './audio/build-audio-review-page-data.mjs';
 import { writeFrozenJson } from './audio/build-complete-original-revisions.mjs';
+import { buildWorkflowReport } from './audio/check-audio-workflow-status.mjs';
 
 assert.deepEqual(generationActions({ planExists: false, overlayExists: false }), ['build', 'generate', 'validate']);
 assert.deepEqual(generationActions({ planExists: true, overlayExists: false }), [
@@ -123,6 +124,28 @@ assert(
 for (const fileName of ['index.html', 'styles.css', 'app.js']) {
     assert(fs.existsSync(path.join(reviewConsoleRoot, fileName)), `Missing review console source ${fileName}`);
 }
+
+const packageJson = JSON.parse(fs.readFileSync(path.resolve(import.meta.dirname, '../package.json'), 'utf8'));
+for (const command of ['audio:workflow', 'audio:status', 'audio:review', 'audio:release']) {
+    assert(packageJson.scripts[command], `Missing stable package command ${command}`);
+}
+for (const retiredCommand of ['audio:plan:build', 'audio:base:generate', 'audio:push', 'audio:publish']) {
+    assert(!packageJson.scripts[retiredCommand], `Retired package command ${retiredCommand} must stay removed`);
+}
+
+const workflowReport = await buildWorkflowReport();
+assert.deepEqual(workflowReport.errors, []);
+assert.equal(workflowReport.source.configCount, 10);
+assert.equal(workflowReport.source.validConfigCount, 10);
+assert.equal(workflowReport.source.turnCount, 348);
+assert.deepEqual(workflowReport.source.untrackedFiles, []);
+assert.equal(workflowReport.archive.storylineEntryCount, 194);
+assert.equal(workflowReport.archive.uniqueEventCount, 168);
+assert.equal(workflowReport.archive.releaseObjectCount, 346);
+assert.equal(workflowReport.archive.referencedAudioAssetCount, 336);
+assert.equal(workflowReport.archive.unreferencedAudioAssetCount, 10);
+assert.deepEqual(workflowReport.archive.missingAudio, []);
+assert.deepEqual(workflowReport.archive.deliveryErrors, []);
 
 const frozenRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'audio-frozen-turn-'));
 try {

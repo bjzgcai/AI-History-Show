@@ -1,0 +1,98 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 133,
+    "eventId": "ai100-annual-2022-2023-028-blip-2",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "上一段讲到「Claude」。现在把镜头转向「Blip-2」，沿着这条故事线换一个问题：把时间拨回2023年，「Blip-2」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "大型视觉语言系统越来越多地连接独立预训练的图像模型与语言模型，但端到端预训练仍然成本高昂。BLIP-2 将问题重构为：在已经强大的冻结组件之间学习一个紧凑接口。",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-frozen-bridge",
+                "claim-two-stage-training"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Querying Transformer 从冻结图像编码器中提取少量视觉查询表示，并把它们传向冻结语言模型。两个预训练阶段把表示对齐与生成学习分开，因此接口可以在不更新两侧大型主干的情况下完成学习。",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-frozen-bridge",
+                "claim-two-stage-training"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 BLIP-2 视为一项有影响力的证明：多模态能力可以通过高效组合强预训练模型获得。它的桥接方案推动了参数高效的视觉指令系统，并预示了后来把视觉编码器连接到大语言模型的助手。",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-frozen-bridge",
+                "claim-two-stage-training"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「Blip-2」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-028-blip-2-portrait-junnan-li",
+                "source-arxiv-paper",
+                "source-lavis-repository",
+                "source-junnan-github-profile",
+                "source-blip2-qformer-figure",
+                "source-blip2-official-architecture"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-frozen-bridge",
+                "claim-two-stage-training"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

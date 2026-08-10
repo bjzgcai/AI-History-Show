@@ -52,7 +52,9 @@
   ],
   "assetIds": [
     "asset-1942-asimov-runaround-isaac-asimov",
-    "asset-1942-asimov-runaround-three-laws"
+    "asset-1942-asimov-runaround-three-laws",
+    "asset-1942-asimov-runaround-audio-zh-original-v1",
+    "asset-1942-asimov-runaround-audio-en-v1"
   ],
   "sourceIds": [
     "source-isaac-asimov-commons-portrait",

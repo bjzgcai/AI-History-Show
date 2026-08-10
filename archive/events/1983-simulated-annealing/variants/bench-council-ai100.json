@@ -49,7 +49,9 @@
   ],
   "assetIds": [
     "asset-1983-simulated-annealing-scott-kirkpatrick",
-    "asset-1983-simulated-annealing-energy-landscape"
+    "asset-1983-simulated-annealing-energy-landscape",
+    "asset-1983-simulated-annealing-audio-zh-original-v1",
+    "asset-1983-simulated-annealing-audio-en-v1"
   ],
   "sourceIds": [
     "source-optimization-by-simulated-annealing",

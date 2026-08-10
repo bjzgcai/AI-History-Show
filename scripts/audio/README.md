@@ -6,16 +6,16 @@
 
 ## 推荐入口
 
-日常 revision 工作只需要使用 `audio-pipeline.mjs`，通过 npm 命令调用：
+日常工作统一使用 `audio-pipeline.mjs`，完整操作说明见
+[`docs/audio-workflow.md`](../../docs/audio-workflow.md)：
 
 ```bash
-npm run audio:revision -- source-check audio/revisions/<revision>.json
-npm run audio:revision -- check audio/revisions/<revision>.json
-npm run audio:revision -- build audio/revisions/<revision>.json
-npm run audio:revision -- generate audio/revisions/<revision>.json
-npm run audio:revision -- validate audio/revisions/<revision>.json
-npm run audio:revision -- activate audio/revisions/<revision-a>.json audio/revisions/<revision-b>.json
-npm run audio:revision -- review
+npm run audio:status
+npm run audio:workflow -- source-check-all
+npm run audio:workflow -- generate audio/revisions/<revision>.json
+npm run audio:workflow -- activate audio/revisions/<revision-a>.json audio/revisions/<revision-b>.json
+npm run audio:review
+npm run audio:release -- verify
 ```
 
 流程关系：
@@ -46,12 +46,12 @@ MP3。`resources/audio/` 中的 MP3、overlay、质量报告和资源映射均�
 同一事件进入多个故事线时，可将已发布音频复用到所有启用 variant：
 
 ```bash
-npm run audio:archive:sync-originals -- --link-shared-variants --apply
+npm run audio:release -- archive-sync-originals --link-shared-variants --apply
 ```
 
 该选项只复用已有 audio asset ID，不复制 MP3 或创建新的 S3 对象。
 
-`audio:archive:sync-originals` 是发布工作站命令，不是 CI 或全新 checkout 可直接复现的命令。
+`archive-sync-originals` 是发布工作站命令，不是 CI 或全新 checkout 可直接复现的命令。
 它会读取 Git 忽略的 `resources/audio/generated/**/overlay.json` 与对应本地 MP3，以确认发布键、
 时长和来源后再更新 Archive。运行该命令前必须先恢复或生成 README 中列出的完整原版批次；
 普通校验、构建和测试不依赖这些本地发布资产。
@@ -61,6 +61,7 @@ npm run audio:archive:sync-originals -- --link-shared-variants --apply
 | 文件                               | 职责                                                      |
 | ---------------------------------- | --------------------------------------------------------- |
 | `audio-pipeline.mjs`               | 统一编排 `build/generate/validate/check/activate/review`  |
+| `check-audio-workflow-status.mjs`  | 审计 Git 源码、生成物、审听数据、Archive 与公开 S3 状态   |
 | `build-audio-revision.mjs`         | 校验来源 turns，编译 TTS 文本和 revision plan             |
 | `generate-audio-revision.mjs`      | 调用对话 TTS、规范化 MP3、生成 overlay                    |
 | `validate-audio-revision.mjs`      | 校验 turns、音频文件、时长、格式、响度和峰值              |
@@ -95,7 +96,7 @@ revision 的首选入口：
 | 音频生成   | `generate-audio-story-assets.mjs` | `validate-audio-story-assets.mjs`                                     |
 | 试听与发布 | `audit-audio-story-samples.mjs`   | `finalize-audio-story-release.mjs`                                    |
 
-对应 npm 命令记录在根目录 `package.json` 和 [`audio/README.md`](../../audio/README.md)。
+对应 npm 命令使用 `audio:legacy:*` 前缀，新 revision 不得使用这些入口。
 
 ## 运行要求
 
@@ -109,7 +110,7 @@ revision 的首选入口：
 ## 审听台
 
 审听台源码位于 `tools/audio-review-console/`，HTML、CSS 和 JavaScript 进入 Git。运行
-`npm run audio:revision -- activate ...` 会写入本地的 `active-overlays.json`，随后根据 overlay
+`npm run audio:workflow -- activate ...` 会写入本地的 `active-overlays.json`，随后根据 overlay
 中的 `revisionId` 回查 `audio/revisions/*.json`、对应冻结 turns 和 Archive 事件资料，生成
 `review-data.json`。这两个 JSON 以及浏览器审查截图均为派生产物，不提交到 Git。
 

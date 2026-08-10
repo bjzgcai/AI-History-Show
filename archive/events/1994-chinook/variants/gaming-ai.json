@@ -46,7 +46,9 @@
     "asset-1994-chinook-jonathan-schaeffer-external",
     "asset-1994-chinook-endgame-database",
     "asset-1994-chinook-perfect-play",
-    "asset-1994-chinook-homepage"
+    "asset-1994-chinook-homepage",
+    "asset-1994-chinook-audio-zh-original-v1",
+    "asset-1994-chinook-audio-en-v1"
   ],
   "sourceIds": [
     "source-chinook-project-home",

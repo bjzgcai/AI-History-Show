@@ -48,7 +48,9 @@
     "asset-1992-svm-vladimir-vapnik",
     "asset-1992-svm-max-margin",
     "asset-1992-svm-kernel-lift",
-    "asset-1992-svm-isabelle-guyon"
+    "asset-1992-svm-isabelle-guyon",
+    "asset-1992-svm-audio-zh-original-v1",
+    "asset-1992-svm-audio-en-v1"
   ],
   "sourceIds": [
     "source-a-training-algorithm-for-optimal-margin-classifiers",

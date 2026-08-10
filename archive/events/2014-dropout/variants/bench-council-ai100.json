@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-2014-dropout-nitish-srivastava",
     "asset-2014-dropout-random-mask",
-    "asset-2014-dropout-ensemble-average"
+    "asset-2014-dropout-ensemble-average",
+    "asset-2014-dropout-audio-zh-original-v1",
+    "asset-2014-dropout-audio-en-v1"
   ],
   "sourceIds": [
     "source-improving-neural-networks-by-preventing-co-adaptation",

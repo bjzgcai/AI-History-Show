@@ -113,5 +113,85 @@
     "figureIds": [
       "klaus-greff"
     ]
+  },
+  {
+    "id": "asset-2014-highway-network-audio-zh-original-v1",
+    "type": "audio",
+    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-highway-network-zh-original-v1.mp3",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "2014-highway-network 中文原版科普音频",
+      "en": "2014-highway-network original Chinese audio narration"
+    },
+    "subcaption": {
+      "zh": "中文原版科普讲述，供中文页面播放。",
+      "en": "Original Chinese science narration used on the Chinese page."
+    },
+    "sourceId": "source-highway-networks-paper",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于本展览的事件科普音频播放。",
+        "en": "Used for event narration in this exhibition."
+      }
+    },
+    "language": "zh",
+    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-highway-network-zh-original-v1.mp3",
+    "storage": {
+      "provider": "bza-s3",
+      "bucket": "ai-history",
+      "objectKey": "audio/releases/2014-highway-network-zh-original-v1.mp3",
+      "sourcePath": "resources/audio/generated/remaining-storylines-original-v1/deep-learning-remaining-storyline-zh-original-v1-2026-08-09/audio/deep-learning/storyline/zh/17-2014-highway-network.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-highway-network-audio-en-v1",
+    "type": "audio",
+    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-highway-network-en-v1.mp3",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "2014-highway-network 英文科普音频",
+      "en": "2014-highway-network English audio narration"
+    },
+    "subcaption": {
+      "zh": "英文原版科普讲述，供英文页面播放。",
+      "en": "Original English science narration used on the English page."
+    },
+    "sourceId": "source-highway-networks-paper",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于本展览的事件科普音频播放。",
+        "en": "Used for event narration in this exhibition."
+      }
+    },
+    "language": "en",
+    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-highway-network-en-v1.mp3",
+    "storage": {
+      "provider": "bza-s3",
+      "bucket": "ai-history",
+      "objectKey": "audio/releases/2014-highway-network-en-v1.mp3",
+      "sourcePath": "resources/audio/generated/remaining-storylines-original-v1/deep-learning-remaining-storyline-en-original-v1-2026-08-09/audio/deep-learning/storyline/en/17-2014-highway-network.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
   }
 ]

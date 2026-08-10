@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-1986-id3-portrait",
     "asset-1986-id3-explainer",
-    "asset-1986-id3-paper-figure-3"
+    "asset-1986-id3-paper-figure-3",
+    "asset-ai100-1986-id3-audio-zh-original-v1",
+    "asset-ai100-1986-id3-audio-en-v1"
   ],
   "sourceIds": [
     "source-1986-id3-primary",

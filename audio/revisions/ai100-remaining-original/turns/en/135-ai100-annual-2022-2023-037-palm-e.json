@@ -1,0 +1,91 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 135,
+    "eventId": "ai100-annual-2022-2023-037-palm-e",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "If we take PaLM-E apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Robotic learning systems often used task-specific policies, while large language models showed broad transfer across textual tasks. PaLM-E asked whether sensor observations could enter a language model directly so that embodied tasks share the same general-purpose reasoning substrate.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-multimodal-sentence",
+                "claim-positive-transfer"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Images and robot states are encoded as continuous embeddings and placed into a multimodal sentence alongside ordinary text tokens. The language model then predicts text that can express answers, plans or high-level decisions, while joint training mixes robotics data with vision-language and language tasks.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-multimodal-sentence",
+                "claim-positive-transfer"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat PaLM-E as an early large-scale bridge between embodied AI and multimodal language modeling. Its formulation influenced later vision-language-action systems by showing that robot observations and general web-scale knowledge can coexist inside one sequence model.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-multimodal-sentence",
+                "claim-positive-transfer"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside LLaVA, PaLM-E reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-037-palm-e-portrait-pete-florence",
+                "source-palm-e-project",
+                "source-pete-florence-profile",
+                "source-palm-e-figure-1",
+                "source-palm-e-official-approach",
+                "source-palm-e-official-teaser"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-multimodal-sentence",
+                "claim-positive-transfer"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

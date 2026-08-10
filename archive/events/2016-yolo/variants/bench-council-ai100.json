@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-2016-yolo-joseph-redmon",
     "asset-2016-yolo-grid-detector",
-    "asset-2016-yolo-single-pass"
+    "asset-2016-yolo-single-pass",
+    "asset-2016-yolo-audio-zh-original-v1",
+    "asset-2016-yolo-audio-en-v1"
   ],
   "sourceIds": [
     "source-cvpr-open-access-paper-page",

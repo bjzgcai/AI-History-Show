@@ -53,7 +53,9 @@
   "assetIds": [
     "asset-sam-altman-commons-portrait",
     "asset-2015-openai-founding-broad-benefit",
-    "asset-elon-musk-commons-portrait"
+    "asset-elon-musk-commons-portrait",
+    "asset-2015-openai-founding-audio-zh-original-v1",
+    "asset-2015-openai-founding-audio-en-v1"
   ],
   "sourceIds": [
     "source-sam-altman-commons-portrait",

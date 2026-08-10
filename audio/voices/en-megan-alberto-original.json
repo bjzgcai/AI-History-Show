@@ -1,0 +1,15 @@
+{
+    "language": "en",
+    "voiceA": "en_female_wenrouzhishijieshuonv_uranus_bigtts",
+    "voiceB": "en_male_alberto_uranus_bigtts",
+    "voiceNarrator": "en_male_alberto_uranus_bigtts",
+    "voiceSummary": "en_male_alberto_uranus_bigtts",
+    "instructionA": "Speak in clear, warm, curious English like a science-program host. Keep the pace conversational, respond naturally to the previous turn, and avoid promotional delivery. Treat punctuation only as phrasing guidance.",
+    "instructionB": "Speak in calm, informed, approachable English like a knowledgeable science-podcast guest. Use a measured conversational pace, articulate dates, names, model names, and abbreviations clearly, and pause lightly around key ideas without sounding theatrical, solemn, or promotional. Treat punctuation only as phrasing guidance.",
+    "instructionNarrator": "Speak in clear, engaging English like a science-podcast storyteller. Begin with restrained curiosity, keep technical explanations steady and precise, and avoid a heavy documentary-announcer tone. Treat punctuation only as phrasing guidance.",
+    "instructionSummary": "Continue naturally from the preceding explanation and close with concise, calm English. Slow only slightly at the end; do not announce that this is a summary or force an inspirational conclusion.",
+    "speedA": 1,
+    "speedB": 0.96,
+    "speedNarrator": 0.96,
+    "speedSummary": 0.94
+}

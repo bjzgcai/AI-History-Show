@@ -1,0 +1,61 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 45,
+    "eventId": "2014-adam",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「ReLU」。现在把镜头转向「Adam 优化器」，沿着这条故事线换一个问题：如果把「Adam 优化器」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "到 2014 年，深度网络越来越大，训练噪声也越来越明显。研究者需要一种减少手工调参、同时能处理小批量、稀疏梯度和非平稳目标的优化器。",
+            "sourceIds": ["source-adam-a-method-for-stochastic-optimization"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Adam 把动量的方向记忆与 RMSProp 的逐参数缩放结合起来。由此形成的紧凑更新规则通常能较快进入可用训练状态。",
+            "sourceIds": ["source-adam-a-method-for-stochastic-optimization"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 Adam 视为实用默认优化器，而不是万能最优解。它的长期影响在于推动了快速、稳定的神经网络训练，并催生了 AdamW 和结合学习率计划的训练配方。",
+            "sourceIds": ["source-adam-a-method-for-stochastic-optimization"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「ReLU」，再看「Adam 优化器」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-pytorch-torch-optim-adam",
+                "source-tensorflow-keras-adam-optimizer",
+                "source-adam-a-method-for-stochastic-optimization"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

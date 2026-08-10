@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2015-deep-compression-6514db3bc943fa1c599d89d5-songhan",
-    "asset-2015-deep-compression-prune-quantize-code"
+    "asset-2015-deep-compression-prune-quantize-code",
+    "asset-ai100-2015-deep-compression-audio-zh-original-v1",
+    "asset-ai100-2015-deep-compression-audio-en-v1"
   ],
   "sourceIds": [
     "source-iclr-openreview-record",

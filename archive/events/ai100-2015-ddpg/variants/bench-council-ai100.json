@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2015-ddpg-timothy-lillicrap-1",
-    "asset-2015-ddpg-actor-critic"
+    "asset-2015-ddpg-actor-critic",
+    "asset-ai100-2015-ddpg-audio-zh-original-v1",
+    "asset-ai100-2015-ddpg-audio-en-v1"
   ],
   "sourceIds": [
     "source-continuous-control-with-deep-reinforcement-learning",

@@ -51,7 +51,9 @@
     "asset-2014-glove-cooccurrence",
     "asset-ai100-2014-glove-christopher-manning-commons",
     "asset-ai100-2014-glove-christopher-manning-stanford",
-    "asset-ai100-2014-glove-richard-socher-portrait"
+    "asset-ai100-2014-glove-richard-socher-portrait",
+    "asset-ai100-2014-glove-audio-zh-original-v1",
+    "asset-ai100-2014-glove-audio-en-v1"
   ],
   "sourceIds": [
     "source-stanford-glove-project-page",

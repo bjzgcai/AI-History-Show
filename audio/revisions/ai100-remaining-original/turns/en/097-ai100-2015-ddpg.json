@@ -1,0 +1,76 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 97,
+    "eventId": "ai100-2015-ddpg",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "The previous story examined Deep Q Network. Now the camera turns to DDPG and a new question along the same timeline: Turn the clock back to 2015. What problem was DDPG actually trying to solve?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "DQN showed that deep networks could learn values for discrete Atari actions, but robotic control often requires continuous steering angles, velocities, or torques. Deterministic policy gradients supplied the theoretical basis in 2014, and DDPG then combined that idea with deep networks and DQN-style stabilization.",
+            "sourceIds": [
+                "source-deterministic-policy-gradient-algorithms",
+                "source-continuous-control-with-deep-reinforcement-learning"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The actor maps a state directly to a deterministic continuous action, while the critic estimates Q(s,a) and supplies the action gradient used to update the actor. Experience replay breaks temporal correlations, slowly updated target actor and critic networks stabilize learning, and exploration noise gathers experience around different actions.",
+            "sourceIds": ["source-continuous-control-with-deep-reinforcement-learning"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat DDPG as an important early baseline that brought deep reinforcement learning into continuous control while clearly exposing value overestimation, weak exploration, and hyperparameter sensitivity. TD3 improved stability with twin critics and delayed policy updates, while SAC used stochastic policies and entropy regularization; both continued the deep actor-critic direction popularized by DDPG.",
+            "sourceIds": [
+                "source-continuous-control-with-deep-reinforcement-learning",
+                "source-td3-function-approximation-error"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "DDPG mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-continuous-control-with-deep-reinforcement-learning",
+                "source-iclr-openreview-record",
+                "source-deterministic-policy-gradient-algorithms",
+                "source-td3-function-approximation-error",
+                "source-timothy-lillicrap-stanford-portrait"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

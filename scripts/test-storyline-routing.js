@@ -1,6 +1,7 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const vm = require('node:vm');
 
 const routing = require(path.join(__dirname, '..', 'shared', 'storyline-routing.js'));
 const { archiveStorylines, milestones: generatedMilestones } = require(
@@ -237,11 +238,53 @@ assert.match(
     /uiAudioPlayerPlay\.addEventListener\('click'[\s\S]*?audio\.play\(\)[\s\S]*?audio\.pause\(\)[\s\S]*?uiAudioPlayerProgress\.addEventListener\('input'[\s\S]*?currentTime = nextTime/,
     'the audio player should support play, pause, and seeking'
 );
-assert.match(
-    milestoneViewSource,
-    /function getPrimaryAudio\(milestone\)[\s\S]*?I18n\.getLocale\(\)[\s\S]*?localizedCandidates\.find\([\s\S]*?candidate\.language[\s\S]*?=== locale\)[\s\S]*?localizedCandidates\.length === 0 \? validCandidates\[0\] : null/,
-    'audio selection should use the current locale and must not fall back to a differently localized narration'
+const milestoneViewLocale = { value: 'zh' };
+const milestoneViewWindow = {
+    I18n: {
+        getLocale: () => milestoneViewLocale.value,
+        localize: (value) =>
+            value && typeof value === 'object' ? value[milestoneViewLocale.value] || value.zh || value.en || '' : value
+    }
+};
+vm.runInNewContext(milestoneViewSource, { window: milestoneViewWindow });
+const getPrimaryAudio = milestoneViewWindow.MilestoneView.getPrimaryAudio;
+assert.equal(
+    getPrimaryAudio({
+        resources: {
+            audios: [
+                {
+                    language: 'zh',
+                    url: 'resources/audio/local.mp3',
+                    storage: { provider: 'bza-s3' }
+                },
+                {
+                    language: 'zh',
+                    url: 'https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/example.mp3',
+                    storage: { provider: 'bza-s3' }
+                }
+            ]
+        }
+    }).url,
+    'https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/example.mp3',
+    'audio selection should prefer an actual S3 delivery URL over a same-language local fallback'
 );
+assert.equal(
+    getPrimaryAudio({ resources: { audios: [{ language: 'en', url: 'https://s3.example/audio-en.mp3' }] } }),
+    null,
+    'audio selection must not fall back to a differently localized narration'
+);
+for (const locale of ['zh', 'en']) {
+    milestoneViewLocale.value = locale;
+    const nonS3Milestones = generatedMilestones
+        .map((milestone) => ({ milestone, audio: getPrimaryAudio(milestone) }))
+        .filter(({ audio }) => !audio || !String(audio.url || '').startsWith('https://s3.inner.bza.edu.cn/'))
+        .map(({ milestone }) => `${milestone.storyline.id}:${milestone.archiveEventId}`);
+    assert.deepEqual(
+        nonS3Milestones,
+        [],
+        `every ${locale} milestone narration should resolve to the configured S3 delivery endpoint`
+    );
+}
 assert.match(
     indexHtml,
     /window\.addEventListener\('languageChanged',[\s\S]*?resetUiAudioPlayer\(\)[\s\S]*?vmCache\.clear\(\)[\s\S]*?renderPage\(currentIndex/,

@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-2017-mask-r-cnn-portrait",
-    "asset-2017-mask-r-cnn-explainer"
+    "asset-2017-mask-r-cnn-explainer",
+    "asset-ai100-2017-mask-r-cnn-audio-zh-original-v1",
+    "asset-ai100-2017-mask-r-cnn-audio-en-v1"
   ],
   "sourceIds": [
     "source-2017-mask-r-cnn-primary",

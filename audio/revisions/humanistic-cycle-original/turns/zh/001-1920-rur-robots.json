@@ -1,0 +1,70 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 1,
+    "eventId": "1920-rur-robots",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "把时间拨回1920年，「《罗素姆的万能机器人》与“机器人”的诞生」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "《罗素姆的万能机器人》出现在二十世纪早期工业化语境中，当时工厂、规模化劳动与机械化生产正在重塑社会想象。它的重要性在于，在技术意义上的 AI 尚未出现之前，就让公众能够用情绪化方式理解“人工劳动者”。",
+            "sourceIds": ["source-project-gutenberg-r-u-r-text"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "它的核心戏剧冲突不是技术故障，而是社会关系倒转：被制造的劳工变成具有集体力量的行动者。因此它很适合作为 AI 历史与劳动、权力、责任之间联系的起点。",
+            "sourceIds": ["source-project-gutenberg-r-u-r-text"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "AI 史与科幻研究者通常把《罗素姆的万能机器人》视为机器自主性想象的基础文化参照。它的遗产并不是预测了某项具体技术，而是给后来的世代提供了恐惧与讨论人工行动者的词汇。",
+            "sourceIds": ["source-project-gutenberg-r-u-r-text"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「《罗素姆的万能机器人》与“机器人”的诞生」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-karel-capek-commons-portrait",
+                "source-project-gutenberg-r-u-r-text",
+                "source-1920-czech-edition-scan",
+                "source-r-u-r-publication-and-word-history-overview",
+                "source-robot-etymology-background"
+            ],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

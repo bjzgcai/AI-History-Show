@@ -40,6 +40,8 @@
   ],
   "assetIds": [
     "asset-1957-kmeans-bell-labs-holmdel",
+    "asset-1957-kmeans-audio-zh-original-v1",
+    "asset-1957-kmeans-audio-en-v1",
     "asset-1957-kmeans-centroid-loop",
     "asset-1957-kmeans-cluster-update",
     "asset-1957-kmeans-iris-flowers-clustering-kmeans"

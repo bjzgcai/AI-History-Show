@@ -54,7 +54,9 @@
     "asset-1957-perceptron-people-01",
     "asset-1957-perceptron-papers-01",
     "asset-1957-perceptron-historical-01",
-    "asset-1957-perceptron-historical-01-2"
+    "asset-1957-perceptron-historical-01-2",
+    "asset-1957-perceptron-audio-zh-original-v1",
+    "asset-1957-perceptron-audio-en-v1"
   ],
   "sourceIds": [
     "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",

@@ -1,0 +1,43 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "deep-learning-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "deep-learning",
+    "sequenceIndex": 28,
+    "eventId": "2023-agents",
+    "variantId": "deep-learning",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "deep-learning",
+    "turns": [
+        {
+            "role": "N",
+            "text": "为什么「智能体：LLM驱动的自主系统」会成为人工智能史上值得单独记住的一步？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "当代 Agentic AI 的关键变化，并不是“会调用工具”这一点本身，而是大语言模型开始同时承担目标分解、状态解释、行动选择与自我修正的认知中枢角色。",
+            "sourceIds": ["source-react-paper", "source-toolformer-paper", "source-llm-agent-survey"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.background"
+        },
+        {
+            "role": "N",
+            "text": "这让智能体从过去依赖手写规划器的系统，变成了一种可通过提示、记忆、工具链和反馈环不断重构行为策略的开放式软件形态，也解释了为什么 2023 后 Agent 产品会迅速爆发。",
+            "sourceIds": ["source-react-paper", "source-toolformer-paper", "source-llm-agent-survey"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.context"
+        },
+        {
+            "role": "N",
+            "text": "当今天的系统规模越来越大时，「智能体：LLM驱动的自主系统」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": ["source-react-paper", "source-toolformer-paper", "source-llm-agent-survey"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

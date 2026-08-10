@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-2015-fcn-explainer",
-    "asset-2015-fcn-paper-first-page"
+    "asset-2015-fcn-paper-first-page",
+    "asset-ai100-2015-fcn-audio-zh-original-v1",
+    "asset-ai100-2015-fcn-audio-en-v1"
   ],
   "overviewImageAssetId": "asset-2015-fcn-paper-first-page",
   "sourceIds": [

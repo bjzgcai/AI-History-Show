@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 111,
+    "eventId": "ai100-1997-adaboost",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "If we take AdaBoost apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Early boosting theory established that weak learners could be strengthened, but practical algorithms needed a simple way to choose and weight training examples. AdaBoost supplied an adaptive procedure driven by classification mistakes.",
+            "sourceIds": ["source-1997-adaboost-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-1997-adaboost-membership", "claim-1997-adaboost-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "After each weak classifier, AdaBoost increases the weights of misclassified examples and decreases the weights of correctly classified ones. The final prediction is a weighted vote whose coefficients depend on each learner’s accuracy.",
+            "sourceIds": ["source-1997-adaboost-primary"],
+            "claimIds": ["claim-1997-adaboost-membership", "claim-1997-adaboost-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally regard AdaBoost as the algorithm that made boosting practical and conceptually transparent. It shaped margin theory, cascade detectors, and later additive-model views of ensemble learning.",
+            "sourceIds": ["source-1997-adaboost-primary", "source-1997-adaboost-secondary"],
+            "claimIds": ["claim-1997-adaboost-membership", "claim-1997-adaboost-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside Boosting, AdaBoost reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-1997-adaboost-primary",
+                "source-1997-adaboost-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-1997-adaboost-portrait"
+            ],
+            "claimIds": ["claim-1997-adaboost-membership", "claim-1997-adaboost-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

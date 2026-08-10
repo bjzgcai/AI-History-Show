@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-1983-actor-critic-barto-andrew-square",
-    "asset-1983-actor-critic-two-paths"
+    "asset-1983-actor-critic-two-paths",
+    "asset-ai100-1983-actor-critic-audio-zh-original-v1",
+    "asset-ai100-1983-actor-critic-audio-en-v1"
   ],
   "sourceIds": [
     "source-reinforcement-learning-an-introduction",

@@ -48,6 +48,8 @@
   ],
   "assetIds": [
     "asset-ai100-2014-conditional-gan-flickportrait1",
+    "asset-ai100-2014-conditional-gan-audio-zh-original-v1",
+    "asset-ai100-2014-conditional-gan-audio-en-v1",
     "asset-2014-conditional-gan-conditioned-generator"
   ],
   "sourceIds": [

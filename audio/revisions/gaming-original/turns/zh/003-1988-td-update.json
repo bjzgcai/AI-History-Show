@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "gaming-all-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "gaming-ai",
+    "sequenceIndex": 3,
+    "eventId": "1988-td-update",
+    "variantId": "gaming-ai",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "一个看似专业的名字「时序差分更新」，背后藏着怎样一个直观问题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "从延迟奖励中学习，需要在整段交互结束前判断哪些状态和动作应当获得信用。时序差分学习把这种信用分配变成逐步更新，使预测能够随新经验即时修正。",
+            "sourceIds": ["source-learning-to-predict-by-the-methods-of-temporal-differences"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "TD 比较当前预测与“即时奖励加下一步预测”形成的一步目标，再把当前价值向该目标推进。这个自举机制不必等待最终胜负，因此特别适合连续对局和在线控制。",
+            "sourceIds": ["source-learning-to-predict-by-the-methods-of-temporal-differences"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把时序差分学习视为强化学习的基石。它的长期影响在于提出价值估计可以从后续预测中自举学习，并支撑了 Q-learning、actor-critic 方法和现代基于价值的控制。",
+            "sourceIds": ["source-learning-to-predict-by-the-methods-of-temporal-differences"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「时序差分更新」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-learning-to-predict-by-the-methods-of-temporal-differences",
+                "source-richard-sutton-homepage",
+                "source-acm-2024-turing-award-announcement"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 57,
+    "eventId": "ai100-2014-r-cnn",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「挤压与激励网络」。现在把镜头转向「R-CNN」，沿着这条故事线换一个问题：如果把「R-CNN」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "目标检测落后于图像分类，因为检测器不仅要识别物体，还要在大量候选位置中完成定位。R-CNN 把区域候选与大型预训练卷积网络迁移得到的特征连接起来。",
+            "sourceIds": ["source-2014-r-cnn-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2014-r-cnn-membership", "claim-2014-r-cnn-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "系统先生成候选区域，把每个区域缩放到固定尺寸，再提取 CNN 特征并用类别模型进行分类。最后通过边界框回归进一步修正候选位置。",
+            "sourceIds": ["source-2014-r-cnn-primary"],
+            "claimIds": ["claim-2014-r-cnn-membership", "claim-2014-r-cnn-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 R-CNN 视为现代区域式检测器家族的起点。尽管原始流程需要重复运行 CNN、速度较慢且步骤繁琐，它带来的精度提升仍具有决定性意义。",
+            "sourceIds": ["source-2014-r-cnn-primary", "source-2014-r-cnn-secondary"],
+            "claimIds": ["claim-2014-r-cnn-membership", "claim-2014-r-cnn-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「挤压与激励网络」，再看「R-CNN」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-2014-r-cnn-primary",
+                "source-2014-r-cnn-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-2014-r-cnn-portrait"
+            ],
+            "claimIds": ["claim-2014-r-cnn-membership", "claim-2014-r-cnn-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

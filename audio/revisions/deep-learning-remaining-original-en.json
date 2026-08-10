@@ -1,0 +1,28 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "deep-learning-remaining-storyline-en-original-v1-2026-08-09",
+    "label": "Deep learning remaining events English original",
+    "comparisonKind": "previous",
+    "outputRoot": "resources/audio/generated/remaining-storylines-original-v1/deep-learning-remaining-storyline-en-original-v1-2026-08-09",
+    "turnsDir": "audio/revisions/deep-learning-remaining-original/turns/en",
+    "voiceProfilePath": "audio/voices/en-megan-alberto-original.json",
+    "expectedEntryCount": 10,
+    "provider": {
+        "name": "volc",
+        "model": "seed-tts-2.0",
+        "endpoint": "https://openspeech.bytedance.com/api/v3/plan/tts/unidirectional",
+        "envFile": "/home/ubuntu/.openclaw/workspace/.secrets/tts.env",
+        "retries": 3
+    },
+    "specification": {
+        "modes": ["storyline"],
+        "locales": ["en"],
+        "normalPauseMs": 450,
+        "summaryPauseMs": 550,
+        "minimumDurationSec": 40,
+        "maximumDurationSec": 150,
+        "targetIntegratedLoudnessLufs": -16,
+        "targetTruePeakDbtp": -1,
+        "targetLoudnessRangeLu": 11
+    }
+}

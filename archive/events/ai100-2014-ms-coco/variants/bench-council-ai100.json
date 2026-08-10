@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2014-ms-coco-tsungyi",
-    "asset-2014-ms-coco-context-dataset"
+    "asset-2014-ms-coco-context-dataset",
+    "asset-ai100-2014-ms-coco-audio-zh-original-v1",
+    "asset-ai100-2014-ms-coco-audio-en-v1"
   ],
   "sourceIds": [
     "source-coco-dataset-website",

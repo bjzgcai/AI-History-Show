@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 42,
+    "eventId": "2006-dbn",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "What is most interesting about Deep Belief Network: the result itself, or the way it reframed the problem?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Deep neural networks were hard to optimize with ordinary supervised training. Layer-wise pretraining offered a practical route.",
+            "sourceIds": ["source-a-fast-learning-algorithm-for-deep-belief-nets"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Each layer learns to model patterns in the previous layer, creating a good initialization for the whole deep network. The key mechanism is Layer-wise unsupervised pretraining, which links the source material to the visible demo behavior.",
+            "sourceIds": ["source-a-fast-learning-algorithm-for-deep-belief-nets"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat deep belief networks as a key step in the pre-2012 revival of deep learning. Their long-term legacy is showing that deep stacks could be trained layer by layer, helping reopen representation-learning research before large-scale GPU training took over.",
+            "sourceIds": ["source-a-fast-learning-algorithm-for-deep-belief-nets"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "As today's systems grow larger, which lessons from Deep Belief Network still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-a-fast-learning-algorithm-for-deep-belief-nets",
+                "source-reducing-the-dimensionality-of-data-with-neural-networks",
+                "source-geoffrey-hinton-photo-page"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

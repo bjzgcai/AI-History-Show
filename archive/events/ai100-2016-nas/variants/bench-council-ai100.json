@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2016-nas-headshot",
-    "asset-2016-nas-controller-search"
+    "asset-2016-nas-controller-search",
+    "asset-ai100-2016-nas-audio-zh-original-v1",
+    "asset-ai100-2016-nas-audio-en-v1"
   ],
   "sourceIds": [
     "source-iclr-openreview-record",

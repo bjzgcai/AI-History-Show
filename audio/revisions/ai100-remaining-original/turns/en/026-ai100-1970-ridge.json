@@ -1,0 +1,55 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 26,
+    "eventId": "ai100-1970-ridge",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does Ridge deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable.",
+            "sourceIds": ["source-ridge-regression-biased-estimation-for-nonorthogonal-problems"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "A penalty term shrinks coefficients so correlated predictors no longer dominate the fit.",
+            "sourceIds": ["source-ridge-regression-biased-estimation-for-nonorthogonal-problems"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat ridge regression as a classic regularization result that made controlled bias a practical tool. Its long-term legacy is the L2 penalty pattern used across statistics, kernel methods, and deep-learning weight decay.",
+            "sourceIds": ["source-ridge-regression-biased-estimation-for-nonorthogonal-problems"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from Ridge still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-open-pdf-copy-of-the-technometrics-paper",
+                "source-ridge-regression-overview",
+                "source-scikit-learn-ridge-documentation",
+                "source-ridge-regression-biased-estimation-for-nonorthogonal-problems"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

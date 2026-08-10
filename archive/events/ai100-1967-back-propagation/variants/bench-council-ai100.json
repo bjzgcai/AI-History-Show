@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-david-rumelhart",
-    "asset-1967-back-propagation-error-flow"
+    "asset-1967-back-propagation-error-flow",
+    "asset-ai100-1967-back-propagation-audio-zh-original-v1",
+    "asset-ai100-1967-back-propagation-audio-en-v1"
   ],
   "sourceIds": [
     "source-a-theory-of-adaptive-pattern-classifiers",

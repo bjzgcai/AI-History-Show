@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 29,
+    "eventId": "1999-sift",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined Lasso. Now the camera turns to SIFT and a new question along the same timeline: Why did researchers need SIFT, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "Vision systems needed features that matched the same object despite viewpoint and scale changes.",
+            "sourceIds": ["source-object-recognition-from-local-scale-invariant-features"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "SIFT builds a scale space, finds distinctive keypoints, assigns orientation, and stores a gradient histogram descriptor. The key mechanism is Scale-invariant local features, which links the source material to the visible demo behavior.",
+            "sourceIds": ["source-object-recognition-from-local-scale-invariant-features"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat SIFT as a landmark handcrafted feature for pre-deep-learning computer vision. Its long-term legacy is the feature-engineering mindset behind local descriptors, structure-from-motion pipelines, matching benchmarks, and robust visual correspondence.",
+            "sourceIds": ["source-object-recognition-from-local-scale-invariant-features"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with HOG, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

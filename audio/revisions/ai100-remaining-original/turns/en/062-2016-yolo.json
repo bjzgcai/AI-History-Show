@@ -1,0 +1,54 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 62,
+    "eventId": "2016-yolo",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does YOLO deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Before YOLO, high-accuracy detectors often relied on multi-stage pipelines. YOLO asked what would happen if detection became one dense prediction problem.",
+            "sourceIds": ["source-you-only-look-once-unified-real-time-object-detection"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "The image is divided into a grid; each cell predicts boxes, confidence, and classes, all in one forward pass. The key mechanism is Single-shot grid-based object detection, which links the source material to the visible demo behavior.",
+            "sourceIds": ["source-you-only-look-once-unified-real-time-object-detection"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat YOLO as the system that made real-time object detection a central benchmark goal. Its long-term legacy is the framing of detection as fast single-pass prediction, influencing many later detector families and deployment expectations.",
+            "sourceIds": ["source-you-only-look-once-unified-real-time-object-detection"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from YOLO still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-cvpr-open-access-paper-page",
+                "source-darknet-yolo-project-page",
+                "source-you-only-look-once-unified-real-time-object-detection"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

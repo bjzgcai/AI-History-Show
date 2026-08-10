@@ -1,0 +1,56 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 2,
+    "eventId": "1942-asimov-runaround",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "为什么「阿西莫夫在《转圈圈》中提出机器人三定律」会成为人工智能史上值得单独记住的一步？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《转圈圈》出现于战时科幻杂志文化中，当时机器人正逐渐成为工业与道德想象中的常见角色。它的重要性在于，故事把机器人安全写成规则、优先级与失效模式的问题，而不只是怪物叙事。",
+            "sourceIds": ["source-astounding-march-1942-archive"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "这里的情绪转向是用伦理来约束机器：恐惧被一套设计出来的规则系统回应。但故事也显示规则会彼此冲突，因此焦虑并没有消失，而是留在了解决方案内部。",
+            "sourceIds": ["source-astounding-march-1942-archive"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "科幻研究者通常把阿西莫夫的机器人故事视为虚构机器伦理的基础案例。AI 研究者并不把三定律当作工程解决方案，但这个文化模板仍然影响公众如何想象安全的人工行动者。",
+            "sourceIds": ["source-astounding-march-1942-archive"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "当今天的系统规模越来越大时，「阿西莫夫在《转圈圈》中提出机器人三定律」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-isaac-asimov-commons-portrait",
+                "source-astounding-march-1942-archive",
+                "source-asimov-online-three-laws-faq",
+                "source-runaround-story-overview",
+                "source-science-fiction-encyclopedia-asimov"
+            ],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

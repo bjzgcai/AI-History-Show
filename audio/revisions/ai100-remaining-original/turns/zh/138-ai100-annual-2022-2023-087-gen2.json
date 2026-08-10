@@ -1,0 +1,113 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 138,
+    "eventId": "ai100-annual-2022-2023-087-gen2",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "「Gen2」最有意思的地方，是结果本身，还是它重新定义问题的方式？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "文生图扩散模型已经广泛可用，但在多个帧之间生成连贯运动要困难得多。Runway 在 2023 年 2 月介绍 Gen-2，把八种视频条件工作流带入公开创作语境，并让提示驱动视频成为可见的产品类别。",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-official-page-byline",
+                "claim-eight-modes",
+                "claim-self-reported-preference",
+                "claim-multimodal-video",
+                "claim-structure-transfer"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Gen-2 把语义提示与可选图像或视频参考结合，使创作者能够在不同层次指定内容、外观与结构。八种公开模式覆盖生成、转换与选择性编辑，但页面没有披露完整架构；因此早期 Gen-1 论文只作为技术脉络，而不被当作 Gen-2 规格说明。",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-official-page-byline",
+                "claim-eight-modes",
+                "claim-self-reported-preference",
+                "claim-multimodal-video",
+                "claim-structure-transfer"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 Gen-2 视为生成视频商业化的重要里程碑，而不是一套完整公开的研究架构。它推动文生视频与图生视频成为常见创作方式，并为后续系统在运动质量、时间一致性和可控性方面设定预期。",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-official-page-byline",
+                "claim-eight-modes",
+                "claim-self-reported-preference",
+                "claim-multimodal-video",
+                "claim-structure-transfer"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "当今天的系统规模越来越大时，「Gen2」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-anastasis-homepage",
+                "source-anastasis-ray-summit",
+                "source-anastasis-cognitive-interview",
+                "source-gen2-official-image",
+                "source-gen2-official-t2v-example",
+                "source-gen1-paper",
+                "source-gen1-overview-figure",
+                "source-runway-brand-guidelines",
+                "source-runway-logo"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-official-page-byline",
+                "claim-eight-modes",
+                "claim-self-reported-preference",
+                "claim-multimodal-video",
+                "claim-structure-transfer"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

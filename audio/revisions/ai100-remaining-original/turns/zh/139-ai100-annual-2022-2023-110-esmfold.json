@@ -1,0 +1,98 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 139,
+    "eventId": "ai100-annual-2022-2023-110-esmfold",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "把时间拨回2023年，「ESMFold」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "高精度蛋白质结构预测已经取得重大突破，但许多流程仍依赖计算昂贵的进化同源序列搜索。ESMFold 探索大型蛋白质语言模型能否内化足够的进化信息，从单条序列直接预测结构。",
+            "sourceIds": ["source-primary-record", "source-biorxiv-preprint"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-single-sequence",
+                "claim-metagenomic-scale"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "ESM-2 从大型蛋白质序列数据库学习上下文表示，折叠主干再把这些表示转换为三维坐标与置信度估计。移除多序列比对阶段，以部分峰值精度换取大幅提高的吞吐量和更简洁的单序列流程。",
+            "sourceIds": ["source-primary-record", "source-biorxiv-preprint"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-single-sequence",
+                "claim-metagenomic-scale"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 ESMFold 视为有力证据：蛋白质语言模型能够在有用的生物学尺度上学到结构信息。它的长期贡献不仅是快速预测器，还证明语言模型表示可以支撑超大规模结构图谱与下游蛋白质分析。",
+            "sourceIds": ["source-primary-record", "source-biorxiv-preprint"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-single-sequence",
+                "claim-metagenomic-scale"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「ESMFold」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-110-esmfold-portrait-brian-hie",
+                "source-biorxiv-preprint",
+                "source-esm-repository",
+                "source-meta-esmfold",
+                "source-brian-hie-stanford-profile",
+                "source-esmfold-figure-2"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-single-sequence",
+                "claim-metagenomic-scale"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

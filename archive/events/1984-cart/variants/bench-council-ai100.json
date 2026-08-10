@@ -46,7 +46,9 @@
   "assetIds": [
     "asset-1984-cart-leo-breiman",
     "asset-1984-cart-split-regions",
-    "asset-1984-cart-pruning-curve"
+    "asset-1984-cart-pruning-curve",
+    "asset-1984-cart-audio-zh-original-v1",
+    "asset-1984-cart-audio-en-v1"
   ],
   "sourceIds": [
     "source-scikit-learn-decisiontreeclassifier",

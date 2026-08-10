@@ -1,0 +1,55 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 32,
+    "eventId": "ai100-1997-kernel-pca",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does Kernel PCA deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities.",
+            "sourceIds": ["source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "A kernel matrix replaces explicit coordinates, letting PCA find nonlinear components.",
+            "sourceIds": ["source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat Kernel PCA as a clean bridge between classical PCA and kernel methods. Its long-term legacy is showing how nonlinear representation learning can be expressed through similarity matrices before deep embeddings became common.",
+            "sourceIds": ["source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from Kernel PCA still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-max-planck-publication-page",
+                "source-open-kernel-pca-pdf",
+                "source-scikit-learn-kernelpca-documentation",
+                "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

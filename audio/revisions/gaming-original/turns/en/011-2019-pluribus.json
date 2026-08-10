@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "gaming-all-storyline-en-original-v1-2026-08-09",
+    "scopeId": "gaming-ai",
+    "sequenceIndex": 11,
+    "eventId": "2019-pluribus",
+    "variantId": "gaming-ai",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "gaming-ai",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why did researchers need Pluribus, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Many real strategic settings are neither two-player nor zero-sum in the clean chess sense. Multiplayer poker made that gap concrete by adding several opponents with private information and shifting incentives.",
+            "sourceIds": ["source-science-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "Pluribus used a compact self-play blueprint as the baseline policy. During play it applied limited-lookahead search to refine decisions without trying to solve the entire six-player game from scratch.",
+            "sourceIds": ["source-science-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat Pluribus as an important demonstration that imperfect-information AI can scale beyond two players. Its legacy is the blueprint-plus-search pattern for messy multi-agent domains where exact equilibrium computation is out of reach.",
+            "sourceIds": ["source-science-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with Suphx: Mahjong with Deep Reinforcement Learning, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-1970-ridge-ai-ridge-regression-main",
-    "asset-1970-ridge-shrinkage"
+    "asset-1970-ridge-shrinkage",
+    "asset-ai100-1970-ridge-audio-zh-original-v1",
+    "asset-ai100-1970-ridge-audio-en-v1"
   ],
   "sourceIds": [
     "source-open-pdf-copy-of-the-technometrics-paper",

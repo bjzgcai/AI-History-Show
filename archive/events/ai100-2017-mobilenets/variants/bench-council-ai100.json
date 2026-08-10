@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-2017-mobilenets-explainer",
     "asset-2017-mobilenets-paper-first-page",
-    "asset-2017-mobilenets-applications"
+    "asset-2017-mobilenets-applications",
+    "asset-ai100-2017-mobilenets-audio-zh-original-v1",
+    "asset-ai100-2017-mobilenets-audio-en-v1"
   ],
   "overviewImageAssetId": "asset-2017-mobilenets-paper-first-page",
   "sourceIds": [

@@ -21,7 +21,9 @@
   "visualModules": [],
   "assetIds": [
     "asset-1986-rnn-people-01",
-    "asset-1986-rnn-architecture-01"
+    "asset-1986-rnn-architecture-01",
+    "asset-1986-rnn-audio-zh-original-v1",
+    "asset-1986-rnn-audio-en-v1"
   ],
   "sourceIds": [
     "source-jordan-serial-order-report",

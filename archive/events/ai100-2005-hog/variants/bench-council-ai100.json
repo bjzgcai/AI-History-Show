@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2005-hog-navneet-dalal-portrait",
-    "asset-2005-hog-descriptor-grid"
+    "asset-2005-hog-descriptor-grid",
+    "asset-ai100-2005-hog-audio-zh-original-v1",
+    "asset-ai100-2005-hog-audio-en-v1"
   ],
   "sourceIds": [
     "source-histograms-of-oriented-gradients-for-human-detection",

@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 86,
+    "eventId": "ai100-2005-gnn",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "为什么「图神经网络」会成为人工智能史上值得单独记住的一步？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "图神经网络把神经计算推广到包含节点、边和关系的数据。通过在图上反复传递消息，它们学习节点、边或整个结构的表示。",
+            "sourceIds": ["source-a-new-model-for-learning-in-graph-domains", "source-unisi-oai-2005-gnn-record"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "每个节点从邻居收集消息，更新自己的隐藏状态，并在下一轮分享新状态。",
+            "sourceIds": ["source-a-new-model-for-learning-in-graph-domains"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 GNN 视为关系数据深度学习的基础框架。它的长期影响在于消息传递机制，如今用于化学、推荐系统、知识图谱和科学建模。",
+            "sourceIds": ["source-the-graph-neural-network-model", "source-a-new-model-for-learning-in-graph-domains"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "当今天的系统规模越来越大时，「图神经网络」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-the-graph-neural-network-model",
+                "source-a-new-model-for-learning-in-graph-domains",
+                "source-graph-neural-network-overview",
+                "source-franco-scarselli-homepage",
+                "source-unisi-oai-2005-gnn-record",
+                "source-marco-gori-university-video"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

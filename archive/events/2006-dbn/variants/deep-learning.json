@@ -51,7 +51,9 @@
   "assetIds": [
     "asset-2006-dbn-geoffrey-hinton",
     "asset-2006-dbn-stacked-rbms",
-    "asset-2006-dbn-wake-finetune"
+    "asset-2006-dbn-wake-finetune",
+    "asset-2006-dbn-audio-zh-original-v1",
+    "asset-2006-dbn-audio-en-v1"
   ],
   "sourceIds": [
     "source-a-fast-learning-algorithm-for-deep-belief-nets",

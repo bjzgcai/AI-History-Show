@@ -57,7 +57,9 @@
     "asset-2015-resnet-people-04",
     "asset-2015-resnet-people-03",
     "asset-2015-resnet-people-02",
-    "asset-2015-resnet-people-01"
+    "asset-2015-resnet-people-01",
+    "asset-2015-resnet-audio-zh-original-v1",
+    "asset-2015-resnet-audio-en-v1"
   ],
   "sourceIds": [
     "source-deep-residual-learning-for-image-recognition",

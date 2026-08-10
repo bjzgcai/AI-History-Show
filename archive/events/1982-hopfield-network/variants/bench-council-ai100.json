@@ -46,7 +46,9 @@
   "assetIds": [
     "asset-1982-hopfield-network-john-hopfield",
     "asset-1982-hopfield-network-energy-basin",
-    "asset-1982-hopfield-network-memory-grid"
+    "asset-1982-hopfield-network-memory-grid",
+    "asset-1982-hopfield-network-audio-zh-original-v1",
+    "asset-1982-hopfield-network-audio-en-v1"
   ],
   "sourceIds": [
     "source-nobel-prize-john-j-hopfield-facts",

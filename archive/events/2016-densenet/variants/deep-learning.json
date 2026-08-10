@@ -53,7 +53,9 @@
   "assetIds": [
     "asset-2016-densenet-people-02",
     "asset-2016-densenet-architecture-01",
-    "asset-2016-densenet-people-01"
+    "asset-2016-densenet-people-01",
+    "asset-2016-densenet-audio-zh-original-v1",
+    "asset-2016-densenet-audio-en-v1"
   ],
   "sourceIds": [
     "source-densely-connected-convolutional-networks",

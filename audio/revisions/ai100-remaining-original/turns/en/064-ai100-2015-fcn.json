@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 64,
+    "eventId": "ai100-2015-fcn",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Behind the technical name Fully Convolutional Networks, what intuitive problem were researchers confronting?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Classification CNNs produced one label for an image, while semantic segmentation required a label at every pixel. Fully Convolutional Networks showed how classification networks could be converted into end-to-end dense predictors.",
+            "sourceIds": ["source-2015-fcn-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2015-fcn-membership", "claim-2015-fcn-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Fully connected layers are replaced by convolutions so arbitrary-size images produce spatial score maps. Learned upsampling and skip connections combine coarse semantic information with finer spatial detail.",
+            "sourceIds": ["source-2015-fcn-primary"],
+            "claimIds": ["claim-2015-fcn-membership", "claim-2015-fcn-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally regard FCN as the template that established modern end-to-end semantic segmentation. Its conversion, upsampling, and skip-fusion ideas became foundations for U-Net, DeepLab, and many dense prediction systems.",
+            "sourceIds": ["source-2015-fcn-primary", "source-2015-fcn-secondary"],
+            "claimIds": ["claim-2015-fcn-membership", "claim-2015-fcn-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Fully Convolutional Networks mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": ["source-2015-fcn-primary", "source-2015-fcn-secondary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2015-fcn-membership", "claim-2015-fcn-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

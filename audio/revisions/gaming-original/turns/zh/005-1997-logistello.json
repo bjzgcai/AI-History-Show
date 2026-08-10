@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "gaming-all-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "gaming-ai",
+    "sequenceIndex": 5,
+    "eventId": "1997-logistello",
+    "variantId": "gaming-ai",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "gaming-ai",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「Chinook 跳棋程序」。现在把镜头转向「Logistello：黑白棋评估函数学习」，沿着这条故事线换一个问题：研究者为什么需要「Logistello：黑白棋评估函数学习」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "黑白棋足够紧凑，可以进行深层搜索；但它又足够复杂，不能只靠浅层子数统计。到 1990 年代，关键瓶颈不只是速度，而是程序能否准确评估不稳定的中盘局面。",
+            "sourceIds": ["source-logistello-homepage"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "Logistello 把评估函数看成一个跨棋盘模式和阶段的统计学习问题。搜索仍然重要，但学习到的评估器让搜索更清楚哪些局面具有战略潜力。",
+            "sourceIds": ["source-logistello-homepage"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 Logistello 视为经典博弈树搜索与机器学习评估函数之间的桥梁。它的长期影响在于说明：当评估参数来自大规模棋局语料学习时，搜索质量会发生显著变化。",
+            "sourceIds": ["source-logistello-homepage"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「深蓝」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

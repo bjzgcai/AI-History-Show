@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2019-stylegan-tero-karras",
-    "asset-2019-stylegan-style-modulation"
+    "asset-2019-stylegan-style-modulation",
+    "asset-ai100-2019-stylegan-audio-zh-original-v1",
+    "asset-ai100-2019-stylegan-audio-en-v1"
   ],
   "sourceIds": [
     "source-a-style-based-generator-architecture-for-gans",

@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-1970-shrdlu-terry-winograd",
     "asset-1970-shrdlu-blocks-world",
-    "asset-1970-shrdlu-parser-plan"
+    "asset-1970-shrdlu-parser-plan",
+    "asset-1970-shrdlu-audio-zh-original-v1",
+    "asset-1970-shrdlu-audio-en-v1"
   ],
   "sourceIds": [
     "source-terry-winograd-stanford-computer-science",

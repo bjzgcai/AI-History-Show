@@ -1,0 +1,69 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 106,
+    "eventId": "ai100-1986-id3",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Behind the technical name ID3, what intuitive problem were researchers confronting?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Rule-based learning needed methods that could induce readable decision structures from examples rather than rely on hand-written rules. ID3 formalized a recursive tree-building procedure around information gain.",
+            "sourceIds": ["source-1986-id3-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-1986-id3-membership", "claim-1986-id3-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "At each node, ID3 selects the attribute that most reduces class entropy and splits the examples by its values. The process repeats until leaves are sufficiently pure or no useful attributes remain.",
+            "sourceIds": ["source-1986-id3-primary"],
+            "claimIds": ["claim-1986-id3-membership", "claim-1986-id3-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally regard ID3 as a foundational decision-tree induction algorithm and a major step toward interpretable machine learning. Its entropy-based splitting directly influenced C4.5 and later tree learners.",
+            "sourceIds": ["source-1986-id3-primary", "source-1986-id3-secondary"],
+            "claimIds": ["claim-1986-id3-membership", "claim-1986-id3-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "ID3 mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-1986-id3-primary",
+                "source-1986-id3-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-1986-id3-portrait"
+            ],
+            "claimIds": ["claim-1986-id3-membership", "claim-1986-id3-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}
