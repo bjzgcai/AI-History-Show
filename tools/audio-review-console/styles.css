@@ -40,6 +40,59 @@ body {
     letter-spacing: 0;
 }
 
+[hidden] {
+    display: none !important;
+}
+
+.login-screen {
+    display: grid;
+    width: 100%;
+    min-height: 100dvh;
+    place-items: center;
+    padding: 24px;
+    background: var(--canvas);
+}
+
+.login-panel {
+    display: grid;
+    width: min(420px, 100%);
+    gap: 14px;
+    padding: 28px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.login-panel h1,
+.login-panel p {
+    margin: 0;
+}
+
+.login-panel p,
+.login-panel label {
+    color: var(--muted);
+}
+
+.login-panel label {
+    font-size: 12px;
+    font-weight: 650;
+}
+
+.login-panel input {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+}
+
+.login-error {
+    min-height: 20px;
+    color: var(--danger);
+    font-size: 12px;
+}
+
 button,
 input,
 select,
@@ -157,6 +210,15 @@ a:focus-visible {
     display: flex;
     align-items: center;
     gap: 6px;
+}
+
+.reviewer-name {
+    max-width: 180px;
+    overflow: hidden;
+    color: var(--muted);
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .button,
@@ -695,6 +757,45 @@ a:focus-visible {
     color: var(--danger);
 }
 
+.status-button[data-status='pass'] {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+}
+
+.status-button[data-status='revise'] {
+    border-color: var(--danger);
+    background: var(--danger-soft);
+    color: var(--danger);
+}
+
+.status-button:disabled {
+    cursor: wait;
+    opacity: 0.6;
+}
+
+.review-summary {
+    min-height: 28px;
+    padding: 6px 9px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.review-summary.pass {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+}
+
+.review-summary.revise {
+    border-color: var(--danger);
+    background: var(--danger-soft);
+    color: var(--danger);
+}
+
 .issue-button.is-active {
     border-color: #d7b16f;
     background: var(--amber-soft);
@@ -751,6 +852,73 @@ a:focus-visible {
     border-radius: var(--radius);
     color: var(--ink);
     line-height: 1.6;
+}
+
+.review-history {
+    display: grid;
+    gap: 10px;
+    padding-top: 4px;
+    border-top: 1px solid var(--line);
+}
+
+.review-history-heading,
+.review-record-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.review-history-heading {
+    justify-content: space-between;
+}
+
+.review-history-heading h3,
+.review-record p {
+    margin: 0;
+}
+
+.review-history-heading span,
+.review-record time,
+.record-invalidated,
+.empty-review-history {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.review-record {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px 14px;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface-muted);
+}
+
+.review-record-main,
+.review-record p,
+.record-invalidated {
+    grid-column: 1;
+}
+
+.review-record .button {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: center;
+}
+
+.review-record p {
+    line-height: 1.6;
+}
+
+.review-record.is-invalidated {
+    opacity: 0.62;
+}
+
+.quality-badge.fail {
+    border-color: var(--danger);
+    background: var(--danger-soft);
+    color: var(--danger);
 }
 
 .source-list,
@@ -1003,7 +1171,8 @@ a:focus-visible {
     .topbar {
         position: sticky;
         top: 0;
-        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 8px;
         height: auto;
         min-height: 64px;
         padding: 10px 14px;
@@ -1013,8 +1182,20 @@ a:focus-visible {
         display: none;
     }
 
-    .button-secondary {
-        display: none;
+    .topbar-actions {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .reviewer-name {
+        min-width: 0;
+        max-width: none;
+        flex: 1;
+    }
+
+    .topbar-actions .button {
+        min-height: 34px;
+        padding: 0 11px;
     }
 
     .workspace {
@@ -1095,6 +1276,16 @@ a:focus-visible {
 
     .toast {
         bottom: 132px;
+    }
+}
+
+@media (max-width: 380px) {
+    .topbar-actions {
+        flex-wrap: wrap;
+    }
+
+    .reviewer-name {
+        flex-basis: 100%;
     }
 }
 

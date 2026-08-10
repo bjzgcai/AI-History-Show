@@ -1,8 +1,9 @@
 # 部署指南
 
-本项目包含两个独立部分：
+本项目包含三个独立部分：
 - **展示页**（`index.html`）：纯静态 HTML5，任何静态文件服务器均可运行
 - **内容管理服务**（`manage/server.js`）：Archive-only Node.js 服务，用于编辑和校验 Archive JSON，**仅需在有编辑需求时运行**
+- **音频审核服务**（`audio-review/server.js`）：带 Token 登录和 SQLite 持久化的多人审核服务，独立于公开展示页部署
 
 ---
 
@@ -27,6 +28,9 @@ npm run start:demo
 
 # Archive 内容管理服务，默认入口 http://localhost:3001/admin
 npm run start:admin
+
+# 音频审核服务，默认入口 http://localhost:3002
+npm run start:audio-review
 ```
 
 如需改端口：
@@ -34,6 +38,7 @@ npm run start:admin
 ```bash
 PORT=8080 npm run start:static
 PORT=3002 npm run start:admin
+PORT=3003 npm run start:audio-review
 ```
 
 管理服务默认只监听 `127.0.0.1`。确需在受保护内网监听其他网卡时，显式设置 `HOST`；Docker admin stage 已配置为容器内监听 `0.0.0.0`。
@@ -72,16 +77,62 @@ docker compose up --build presentation
 docker compose --profile admin up --build
 ```
 
+如需启动多人音频审核服务：
+
+```bash
+npm run audio:workflow -- review
+docker compose --profile review up --build audio-review
+```
+
 访问：
 
 ```text
 展示页：http://localhost:8000/
 管理后台：http://localhost:3001/admin
+音频审核：http://localhost:3002/
 ```
 
 Compose 中的 `admin` 服务会把当前项目目录挂载到容器的 `/app`，因此 Archive 编辑器保存的 `archive/events/*` 与 `archive/storylines/*` JSON，以及随后通过 `npm run generate` 产生的运行时数据，会同步写回本地工作区。
 
 > **安全提示**：`admin` 服务无认证保护，只能用于本机、内网或受保护环境。不要把 `3001` 直接暴露到公网。
+
+音频审核服务使用个人 Token 登录，SQLite 数据库存放在独立持久卷。公网部署仍必须使用 HTTPS，
+并设置 `AUDIO_REVIEW_SECURE_COOKIE=true`；不要用 `scripts/static-server.js` 暴露仓库根目录代替审核服务。
+
+### 音频审核独立部署
+
+正常展示页继续只发布 `.tmp/static-site/`，不包含审核代码、候选音频或审核数据库。审核服务建议使用
+独立域名，例如 `review.example.com`，由 Nginx 反向代理到仅监听内网的 `3002` 端口：
+
+```nginx
+server {
+    listen 443 ssl;
+    server_name review.example.com;
+
+    location / {
+        proxy_pass http://127.0.0.1:3002;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_request_buffering off;
+    }
+}
+```
+
+部署前为审核人生成 Token，并将摘要配置写入服务器密钥文件：
+
+```bash
+npm run audio:review:token -- --id reviewer-zhang --name 张三
+```
+
+正式环境至少持久化以下内容：
+
+- `/data/reviews.sqlite` 及 SQLite WAL 数据；
+- 当前 `review-data.json`；
+- `resources/audio/generated/` 的只读候选音频，或后续替换为私有 OSS；
+- `/run/secrets/audio-review-tokens.json` Token 摘要配置。
+
+审核服务只公开自己的 HTML/CSS/JS、鉴权 API 和候选音频 Range 接口，不公开 Archive、脚本或仓库目录。
 
 ### CI 验证
 
