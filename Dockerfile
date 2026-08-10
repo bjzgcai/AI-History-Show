@@ -1,3 +1,25 @@
+FROM node:22-alpine AS audio-review
+
+WORKDIR /app
+
+COPY audio-review/ ./audio-review/
+COPY tools/audio-review-console/index.html tools/audio-review-console/styles.css tools/audio-review-console/app.js ./tools/audio-review-console/
+
+ENV NODE_ENV=production
+ENV HOST=0.0.0.0
+ENV PORT=3002
+ENV AUDIO_REVIEW_DATA=/data/review-data.json
+ENV AUDIO_REVIEW_DB=/data/reviews.sqlite
+ENV AUDIO_REVIEW_TOKEN_FILE=/run/secrets/audio-review-tokens.json
+ENV AUDIO_REVIEW_SECURE_COOKIE=true
+
+EXPOSE 3002
+
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+    CMD wget -q -O /dev/null http://127.0.0.1:3002/healthz || exit 1
+
+CMD ["node", "audio-review/server.js"]
+
 FROM node:22-alpine AS build
 
 WORKDIR /app

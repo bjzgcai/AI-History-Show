@@ -115,6 +115,11 @@ revision 的首选入口：
 中的 `revisionId` 回查 `audio/revisions/*.json`、对应冻结 turns 和 Archive 事件资料，生成
 `review-data.json`。这两个 JSON 以及浏览器审查截图均为派生产物，不提交到 Git。
 
+多人审核通过独立的 `audio-review/` Node.js 服务运行，不再直接用仓库根目录静态服务打开页面。
+每位审核人使用独立 Token 登录；每次提交追加一条 `pass` 或 `fail` 记录到 SQLite。审核人之间
+互不覆盖，只要一个候选存在一条未撤销的 `pass` 记录，汇总状态就是已通过。服务启动、Token
+配置、持久卷和接口说明见 [`audio-review/README.md`](../../audio-review/README.md)。
+
 审听数据不再读取旧 AI100 基线目录、release manifest 或历史质量报告；某个 revision 只包含
 一种语言时，审听台只会在该语言筛选下展示对应事件。
 

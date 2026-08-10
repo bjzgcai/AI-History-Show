@@ -1,18 +1,12 @@
 'use strict';
 
-const DATA_URL = './review-data.json';
-const REVIEW_STORAGE_KEY = 'ai-history-audio-review-v1';
+const API_PREFIX = './api';
+const DATA_URL = `${API_PREFIX}/review-data`;
 const UI_STORAGE_KEY = 'ai-history-audio-review-ui-v1';
 const POSITION_STORAGE_KEY = 'ai-history-audio-review-position-v1';
-const SCORE_FIELDS = [
-    ['pronunciation', '发音与专名'],
-    ['naturalness', '自然度'],
-    ['pacing', '节奏与停顿'],
-    ['contentFit', '文稿匹配']
-];
-const ISSUE_LABELS = ['发音', '语速/停顿', '音色', '情绪', '文稿事实', '事件串联', '其他'];
 
 const state = {
+    user: null,
     data: null,
     query: '',
     scope: 'all',
@@ -25,12 +19,18 @@ const state = {
     activeTab: 'script',
     autoNext: false,
     showTrace: true,
-    reviews: loadStorage(REVIEW_STORAGE_KEY, {}),
+    reviews: {},
     positions: loadStorage(POSITION_STORAGE_KEY, {}),
-    currentAudioPath: null
+    currentAudioPath: null,
+    reviewSaving: false
 };
 
 const elements = {
+    loginScreen: document.querySelector('#login-screen'),
+    loginForm: document.querySelector('#login-form'),
+    loginToken: document.querySelector('#login-token'),
+    loginError: document.querySelector('#login-error'),
+    appShell: document.querySelector('#app-shell'),
     releaseSummary: document.querySelector('#release-summary'),
     filterPanel: document.querySelector('#filter-panel'),
     eventCount: document.querySelector('#event-count'),
@@ -43,9 +43,9 @@ const elements = {
     previousEvent: document.querySelector('#previous-event'),
     nextEvent: document.querySelector('#next-event'),
     autoNext: document.querySelector('#auto-next'),
+    reviewerName: document.querySelector('#reviewer-name'),
     exportReview: document.querySelector('#export-review'),
-    importReview: document.querySelector('#import-review'),
-    importReviewFile: document.querySelector('#import-review-file'),
+    logout: document.querySelector('#logout'),
     toast: document.querySelector('#toast')
 };
 
@@ -85,6 +85,18 @@ function formatBytes(bytes) {
     return `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
 }
 
+function createRequestId() {
+    if (typeof window.crypto?.randomUUID === 'function') return window.crypto.randomUUID();
+    if (typeof window.crypto?.getRandomValues === 'function') {
+        const bytes = window.crypto.getRandomValues(new Uint8Array(16));
+        bytes[6] = (bytes[6] & 0x0f) | 0x40;
+        bytes[8] = (bytes[8] & 0x3f) | 0x80;
+        const hex = [...bytes].map((value) => value.toString(16).padStart(2, '0')).join('');
+        return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-${hex.slice(12, 16)}-${hex.slice(16, 20)}-${hex.slice(20)}`;
+    }
+    return `review-${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
+}
+
 function eventKey(event) {
     return `${event.scopeId}:${event.sequenceIndex}`;
 }
@@ -100,7 +112,8 @@ function localeVariant(event, locale = state.locale) {
 function activeVariant(event) {
     const variant = localeVariant(event);
     if (!variant) return null;
-    return variant.revisionOptions?.find((option) => option.revision?.kind === state.version) || variant;
+    const revisionOptions = variant.revisionOptions || [];
+    return revisionOptions.find((option) => option.revision?.kind === state.version) || revisionOptions[0] || variant;
 }
 
 function versionLabel(version) {
@@ -110,12 +123,13 @@ function versionLabel(version) {
 function activeReview(event) {
     const variant = activeVariant(event);
     return (
-        (variant && state.reviews[variant.audio.path]) || {
+        (variant && state.reviews[variant.candidateId]) || {
             status: 'pending',
-            issues: [],
-            scores: {},
-            notes: '',
-            updatedAt: null
+            approved: false,
+            passCount: 0,
+            failCount: 0,
+            recordCount: 0,
+            records: []
         }
     );
 }
@@ -159,7 +173,7 @@ function roleLabel(role, locale) {
 }
 
 function reviewStatusLabel(status) {
-    return { pending: '未审听', pass: '通过', revise: '需调整' }[status];
+    return { pending: '未审核', pass: '已通过', revise: '未通过' }[status];
 }
 
 function getFilteredEvents() {
@@ -223,15 +237,15 @@ function renderReleaseSummary() {
             return variant.revisionOptions?.length ? variant.revisionOptions : [variant];
         })
     );
-    const variantsByPath = new Map(storylineVariants.map((variant) => [variant.audio.path, variant]));
-    const validPaths = new Set(variantsByPath.keys());
-    const totalAssets = variantsByPath.size;
-    const totalDurationSec = [...variantsByPath.values()].reduce(
+    const variantsByCandidate = new Map(storylineVariants.map((variant) => [variant.candidateId, variant]));
+    const validCandidateIds = new Set(variantsByCandidate.keys());
+    const totalAssets = variantsByCandidate.size;
+    const totalDurationSec = [...variantsByCandidate.values()].reduce(
         (total, variant) => total + variant.audio.durationSec,
         0
     );
     const reviewed = Object.entries(state.reviews).filter(
-        ([path, review]) => validPaths.has(path) && review.status && review.status !== 'pending'
+        ([candidateId, review]) => validCandidateIds.has(candidateId) && review.status === 'pass'
     ).length;
     const percent = totalAssets ? (reviewed / totalAssets) * 100 : 0;
     elements.releaseSummary.innerHTML = `
@@ -262,9 +276,9 @@ function renderFilters() {
             ${renderSelect('locale-filter', '语言', state.locale, localeOptions)}
             ${renderSelect('review-filter', '审听状态', state.reviewFilter, [
                 ['all', '全部'],
-                ['pending', '未审听'],
-                ['pass', '通过'],
-                ['revise', '需调整']
+                ['pending', '未审核'],
+                ['pass', '已通过'],
+                ['revise', '未通过']
             ])}
             ${renderSelect('format-filter', '讲述形式', state.format, [
                 ['all', '全部'],
@@ -591,7 +605,7 @@ function renderQualityTab(event) {
                             ? previews
                                   .map(
                                       (preview) =>
-                                          `<button class="button button-secondary" type="button" data-preview-path="${escapeHtml(preview.path)}" data-preview-locale="${preview.locale}">${localeLabel(preview.locale)} · ${formatDuration(preview.durationSec)}</button>`
+                                          `<button class="button button-secondary" type="button" data-preview-path="${escapeHtml(preview.path)}" data-preview-url="${escapeHtml(preview.reviewUrl)}" data-preview-locale="${preview.locale}">${localeLabel(preview.locale)} · ${formatDuration(preview.durationSec)}</button>`
                                   )
                                   .join('')
                             : '<p class="detail-subtitle">当前激活的 revision 未配置连续审听样本。</p>'
@@ -639,7 +653,7 @@ function renderMetadataTab(event) {
                 <div class="path-row">
                     <span class="path-value">${escapeHtml(variant.audio.path)}</span>
                     <button class="button button-secondary" type="button" data-action="copy-path">复制路径</button>
-                    <a class="button button-primary" href="/${escapeHtml(variant.audio.path)}" download>下载 MP3</a>
+                    <a class="button button-primary" href="${escapeHtml(variant.audio.reviewUrl)}" download>下载 MP3</a>
                 </div>
             </section>
             <section class="data-block wide">
@@ -674,7 +688,8 @@ function bindTabActions(root, event) {
             loadAudioPath(
                 button.dataset.previewPath,
                 `${localeLabel(button.dataset.previewLocale)}连续审听样本`,
-                'AI100 09–13 · 故事线版'
+                'AI100 09–13 · 故事线版',
+                button.dataset.previewUrl
             );
             elements.audio.play().catch(() => {});
         });
@@ -686,107 +701,107 @@ function renderReviewForm() {
     const event = selectedEvent();
     if (!root || !event) return;
     const review = activeReview(event);
+    const records = review.records || [];
     root.innerHTML = `
         <section class="review-form">
             <div class="review-form-header">
-                <h2>本音频审听记录</h2>
-                <span class="autosave-label">${review.updatedAt ? `更新于 ${new Date(review.updatedAt).toLocaleString()}` : '尚未记录'}</span>
-            </div>
-            <div class="status-options">
-                ${['pending', 'pass', 'revise']
-                    .map(
-                        (status) =>
-                            `<button class="status-button ${review.status === status ? 'is-active' : ''}" type="button" data-review-status="${status}" data-status="${status}">${reviewStatusLabel(status)}</button>`
-                    )
-                    .join('')}
-            </div>
-            <div class="score-grid">
-                ${SCORE_FIELDS.map(([key, label]) => renderScoreField(key, label, review.scores[key])).join('')}
-            </div>
-            <div class="issue-options">
-                ${ISSUE_LABELS.map(
-                    (issue) =>
-                        `<button class="issue-button ${review.issues.includes(issue) ? 'is-active' : ''}" type="button" data-issue="${escapeHtml(issue)}">${escapeHtml(issue)}</button>`
-                ).join('')}
+                <div>
+                    <h2>审核结论</h2>
+                    <span class="autosave-label">任意一条有效通过记录即可使当前候选通过</span>
+                </div>
+                <span class="review-summary ${review.status}">${reviewStatusLabel(review.status)} · 通过 ${review.passCount} / 不通过 ${review.failCount}</span>
             </div>
             <div class="notes-field">
-                <label for="review-notes">备注</label>
-                <textarea id="review-notes" placeholder="记录具体发音、时间点或修改建议">${escapeHtml(review.notes)}</textarea>
+                <label for="review-notes">备注（可选）</label>
+                <textarea id="review-notes" placeholder="可记录具体发音、时间点或修改建议"></textarea>
+            </div>
+            <div class="status-options">
+                <button class="status-button" type="button" data-submit-review="fail" data-status="revise" ${state.reviewSaving ? 'disabled' : ''}>提交不通过</button>
+                <button class="status-button" type="button" data-submit-review="pass" data-status="pass" ${state.reviewSaving ? 'disabled' : ''}>提交通过</button>
+            </div>
+            <div class="review-history">
+                <div class="review-history-heading"><h3>审核历史</h3><span>${records.length} 条记录</span></div>
+                ${
+                    records.length
+                        ? records
+                              .map(
+                                  (record) => `
+                                    <article class="review-record ${record.invalidatedAt ? 'is-invalidated' : ''}">
+                                        <div class="review-record-main">
+                                            <span class="quality-badge ${record.result === 'pass' ? 'pass' : 'fail'}">${record.result === 'pass' ? '通过' : '不通过'}</span>
+                                            <strong>${escapeHtml(record.reviewer.name)}</strong>
+                                            <time>${new Date(record.createdAt).toLocaleString()}</time>
+                                        </div>
+                                        ${record.note ? `<p>${escapeHtml(record.note)}</p>` : ''}
+                                        ${record.invalidatedAt ? `<span class="record-invalidated">已撤销：${escapeHtml(record.invalidationReason || '')}</span>` : ''}
+                                        ${state.user?.role === 'admin' && !record.invalidatedAt ? `<button class="button button-secondary" type="button" data-invalidate-review="${record.id}">撤销记录</button>` : ''}
+                                    </article>`
+                              )
+                              .join('')
+                        : '<div class="empty-review-history">尚无审核记录</div>'
+                }
             </div>
         </section>
     `;
 
-    root.querySelectorAll('[data-review-status]').forEach((button) => {
-        button.addEventListener('click', () => {
-            updateReview({ status: button.dataset.reviewStatus });
-        });
+    root.querySelectorAll('[data-submit-review]').forEach((button) => {
+        button.addEventListener('click', () => submitReview(button.dataset.submitReview));
     });
-    root.querySelectorAll('[data-score-field]').forEach((button) => {
-        button.addEventListener('click', () => {
-            const current = activeReview(selectedEvent());
-            updateReview({
-                scores: {
-                    ...current.scores,
-                    [button.dataset.scoreField]: Number(button.dataset.scoreValue)
-                }
-            });
-        });
-    });
-    root.querySelectorAll('[data-issue]').forEach((button) => {
-        button.addEventListener('click', () => {
-            const current = activeReview(selectedEvent());
-            const issues = new Set(current.issues);
-            if (issues.has(button.dataset.issue)) issues.delete(button.dataset.issue);
-            else issues.add(button.dataset.issue);
-            updateReview({ issues: [...issues] });
-        });
-    });
-    let notesTimer;
-    root.querySelector('#review-notes').addEventListener('input', (eventObject) => {
-        clearTimeout(notesTimer);
-        notesTimer = setTimeout(() => {
-            updateReview({ notes: eventObject.target.value }, false);
-        }, 350);
+    root.querySelectorAll('[data-invalidate-review]').forEach((button) => {
+        button.addEventListener('click', () => invalidateReview(button.dataset.invalidateReview));
     });
 }
 
-function renderScoreField(key, label, value) {
-    return `
-        <div class="score-field">
-            <label>${label}</label>
-            <div class="score-options">
-                ${[1, 2, 3, 4, 5]
-                    .map(
-                        (score) =>
-                            `<button class="score-button ${value === score ? 'is-active' : ''}" type="button" data-score-field="${key}" data-score-value="${score}" aria-label="${label} ${score} 分">${score}</button>`
-                    )
-                    .join('')}
-            </div>
-        </div>
-    `;
-}
-
-function updateReview(patch, rerender = true) {
+async function submitReview(result) {
     const event = selectedEvent();
-    if (!event) return;
-    const previousSelection = state.selectedKey;
-    const path = activeVariant(event).audio.path;
-    const current = activeReview(event);
-    state.reviews[path] = {
-        ...current,
-        ...patch,
-        updatedAt: new Date().toISOString()
-    };
-    saveStorage(REVIEW_STORAGE_KEY, state.reviews);
-    ensureSelection();
-    persistUiState();
-    renderReleaseSummary();
-    renderEventList();
-    if (previousSelection !== state.selectedKey) {
-        renderDetail();
-        renderPlayer();
-    } else if (rerender) {
+    if (!event || state.reviewSaving) return;
+    const candidateId = activeVariant(event).candidateId;
+    const note = document.querySelector('#review-notes')?.value || '';
+    state.reviewSaving = true;
+    renderReviewForm();
+    try {
+        const response = await apiFetch(`${API_PREFIX}/reviews`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ candidateId, result, note, requestId: createRequestId() })
+        });
+        const payload = await response.json();
+        state.reviews[candidateId] = payload.summary;
+        renderReleaseSummary();
+        renderEventList();
+        const successMessage =
+            result === 'pass'
+                ? '已提交通过记录'
+                : payload.summary.approved
+                  ? '已记录不通过；已有通过记录，汇总仍为已通过'
+                  : '已提交不通过记录';
+        showToast(successMessage);
+    } catch (error) {
+        showToast(`提交失败：${error.message}`);
+    } finally {
+        state.reviewSaving = false;
         renderReviewForm();
+    }
+}
+
+async function invalidateReview(recordId) {
+    const reason = window.prompt('请输入撤销原因');
+    if (!reason) return;
+    try {
+        const response = await apiFetch(`${API_PREFIX}/reviews/${encodeURIComponent(recordId)}/invalidate`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ reason })
+        });
+        const payload = await response.json();
+        const candidateId = activeVariant(selectedEvent()).candidateId;
+        state.reviews[candidateId] = payload.summary;
+        renderReleaseSummary();
+        renderEventList();
+        renderReviewForm();
+        showToast('审核记录已撤销');
+    } catch (error) {
+        showToast(`撤销失败：${error.message}`);
     }
 }
 
@@ -805,7 +820,7 @@ function renderPlayer() {
     );
 }
 
-function loadAudioPath(path, title, subtitle) {
+function loadAudioPath(path, title, subtitle, reviewUrl = '') {
     elements.playerTitle.textContent = title;
     elements.playerSubtitle.textContent = subtitle;
     if (state.currentAudioPath === path) return;
@@ -815,7 +830,8 @@ function loadAudioPath(path, title, subtitle) {
         saveStorage(POSITION_STORAGE_KEY, state.positions);
     }
     state.currentAudioPath = path;
-    elements.audio.src = `/${path}`;
+    const candidate = selectedEvent() ? activeVariant(selectedEvent()) : null;
+    elements.audio.src = reviewUrl || (candidate?.audio.path === path ? candidate.audio.reviewUrl : path);
     elements.audio.load();
 }
 
@@ -863,38 +879,87 @@ function showToast(message) {
     }, 1800);
 }
 
-function exportReviews() {
-    const payload = {
-        schemaVersion: 1,
-        exportedAt: new Date().toISOString(),
-        sourceRelease: state.data.release.status,
-        reviews: state.reviews
-    };
+async function apiFetch(url, options = {}) {
+    const response = await fetch(url, { cache: 'no-store', ...options });
+    if (response.ok) return response;
+    let message = `HTTP ${response.status}`;
+    try {
+        message = (await response.json()).error || message;
+    } catch (_) {}
+    if (response.status === 401 && state.user) {
+        showLoginScreen('会话已过期，请重新登录。');
+    }
+    throw new Error(message);
+}
+
+function showLoginScreen(message = '') {
+    state.user = null;
+    elements.audio.pause();
+    elements.audio.removeAttribute('src');
+    elements.appShell.hidden = true;
+    elements.loginScreen.hidden = false;
+    elements.loginError.textContent = message;
+    elements.loginToken.focus();
+}
+
+async function exportReviews() {
+    try {
+        const response = await apiFetch(`${API_PREFIX}/reviews/export`);
+        const payload = await response.json();
+        downloadJson(payload, `ai-history-audio-review-${new Date().toISOString().slice(0, 10)}.json`);
+    } catch (error) {
+        showToast(`导出失败：${error.message}`);
+    }
+}
+
+function downloadJson(payload, fileName) {
     const blob = new window.Blob([JSON.stringify(payload, null, 2)], {
         type: 'application/json'
     });
     const url = window.URL.createObjectURL(blob);
     const anchor = document.createElement('a');
     anchor.href = url;
-    anchor.download = `ai-history-audio-review-${new Date().toISOString().slice(0, 10)}.json`;
+    anchor.download = fileName;
     anchor.click();
     window.URL.revokeObjectURL(url);
 }
 
-async function importReviews(file) {
+async function login(token) {
+    const response = await apiFetch(`${API_PREFIX}/auth/session`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token })
+    });
+    return (await response.json()).user;
+}
+
+async function loadApplication(user) {
+    state.user = user;
+    elements.reviewerName.textContent = `${user.name}${user.role === 'admin' ? ' · 管理员' : ''}`;
+    elements.loginScreen.hidden = true;
+    elements.appShell.hidden = false;
     try {
-        const payload = JSON.parse(await file.text());
-        if (!payload.reviews || typeof payload.reviews !== 'object') {
-            throw new Error('Invalid review file');
-        }
-        state.reviews = { ...state.reviews, ...payload.reviews };
-        saveStorage(REVIEW_STORAGE_KEY, state.reviews);
+        const [dataResponse, reviewsResponse] = await Promise.all([
+            apiFetch(DATA_URL),
+            apiFetch(`${API_PREFIX}/reviews`)
+        ]);
+        state.data = await dataResponse.json();
+        state.reviews = (await reviewsResponse.json()).reviews || {};
+        restoreUiState();
+        ensureSelection();
+        elements.autoNext.checked = state.autoNext;
         renderReleaseSummary();
+        renderFilters();
         renderEventList();
-        renderReviewForm();
-        showToast('审听记录已导入');
-    } catch (_) {
-        showToast('导入失败：文件格式不正确');
+        renderDetail();
+        renderPlayer();
+    } catch (error) {
+        elements.reviewPane.innerHTML = `
+            <div class="error-state">
+                <strong>审听资料加载失败</strong>
+                <span>${escapeHtml(error.message)}</span>
+            </div>
+        `;
     }
 }
 
@@ -924,35 +989,39 @@ function bindGlobalEvents() {
         if (state.autoNext) selectAdjacent(1, true);
     });
     elements.exportReview.addEventListener('click', exportReviews);
-    elements.importReview.addEventListener('click', () => elements.importReviewFile.click());
-    elements.importReviewFile.addEventListener('change', (event) => {
-        const [file] = event.target.files;
-        if (file) importReviews(file);
-        event.target.value = '';
+    elements.logout.addEventListener('click', async () => {
+        try {
+            await apiFetch(`${API_PREFIX}/auth/session`, { method: 'DELETE' });
+        } finally {
+            window.location.reload();
+        }
+    });
+    elements.loginForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        elements.loginError.textContent = '';
+        const submit = elements.loginForm.querySelector('button[type="submit"]');
+        submit.disabled = true;
+        try {
+            const user = await login(elements.loginToken.value);
+            elements.loginToken.value = '';
+            await loadApplication(user);
+        } catch (error) {
+            elements.loginError.textContent = error.message;
+        } finally {
+            submit.disabled = false;
+        }
     });
 }
 
 async function init() {
     bindGlobalEvents();
     try {
-        const response = await fetch(DATA_URL, { cache: 'no-store' });
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        state.data = await response.json();
-        restoreUiState();
-        ensureSelection();
-        elements.autoNext.checked = state.autoNext;
-        renderReleaseSummary();
-        renderFilters();
-        renderEventList();
-        renderDetail();
-        renderPlayer();
-    } catch (error) {
-        elements.reviewPane.innerHTML = `
-            <div class="error-state">
-                <strong>审听资料加载失败</strong>
-                <span>${escapeHtml(error.message)}</span>
-            </div>
-        `;
+        const response = await apiFetch(`${API_PREFIX}/auth/session`);
+        const user = (await response.json()).user;
+        if (!user) throw new Error('需要登录');
+        await loadApplication(user);
+    } catch (_) {
+        showLoginScreen();
     }
 }
 

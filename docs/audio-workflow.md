@@ -87,10 +87,18 @@ npm run audio:workflow -- activate \
 npm run audio:review
 ```
 
-审听台地址为 `tools/audio-review-console/index.html`。跨故事线共享音频通过 Archive variant
-引用的 audio asset `storage.sourcePath` 精确映射，不重复生成或复制 MP3。
+审听台通过独立服务运行：
 
-审听结果属于发布决策，不改变 revision 历史。每个事件、语言和模式最终只能批准一个候选。
+```bash
+npm run start:audio-review
+```
+
+默认地址为 `http://127.0.0.1:3002`。跨故事线共享音频通过 Archive variant 引用的 audio asset
+`storage.sourcePath` 精确映射，不重复生成或复制 MP3。
+
+审核人使用独立 Token 登录，每次提交向 SQLite 追加一条通过或不通过记录，不覆盖他人记录。
+只要当前候选存在一条未撤销的通过记录，该候选就视为通过。修改后的 MP3 必须创建新的
+revision 和候选 ID，旧候选及审核历史继续保留。每个事件、语言和模式最终仍只发布一个候选。
 
 ## 4. Archive 关联
 

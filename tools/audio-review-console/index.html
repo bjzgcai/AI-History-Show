@@ -10,7 +10,18 @@
         <script src="app.js" defer></script>
     </head>
     <body>
-        <div class="app-shell" data-screen-label="audio-review-console">
+        <section class="login-screen" id="login-screen">
+            <form class="login-panel" id="login-form">
+                <span class="product-kicker">AI HISTORY SHOW</span>
+                <h1>音频审听台</h1>
+                <p>使用分配给你的审核 Token 登录。</p>
+                <label for="login-token">审核 Token</label>
+                <input id="login-token" name="token" type="password" autocomplete="current-password" required />
+                <button class="button button-primary" type="submit">登录</button>
+                <span class="login-error" id="login-error" role="alert"></span>
+            </form>
+        </section>
+        <div class="app-shell" id="app-shell" data-screen-label="audio-review-console" hidden>
             <header class="topbar">
                 <div class="product-mark">
                     <span class="product-kicker">AI HISTORY SHOW</span>
@@ -18,9 +29,9 @@
                 </div>
                 <div class="release-summary" id="release-summary" aria-live="polite"></div>
                 <div class="topbar-actions">
-                    <button class="button button-secondary" id="import-review" type="button">导入记录</button>
+                    <span class="reviewer-name" id="reviewer-name"></span>
                     <button class="button button-primary" id="export-review" type="button">导出记录</button>
-                    <input id="import-review-file" type="file" accept="application/json" hidden />
+                    <button class="button button-secondary" id="logout" type="button">退出</button>
                 </div>
             </header>
 

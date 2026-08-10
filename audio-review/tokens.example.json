@@ -1,0 +1,8 @@
+[
+    {
+        "id": "reviewer-zhang",
+        "name": "张三",
+        "role": "reviewer",
+        "tokenHash": "sha256:使用 npm run audio:review:token 生成"
+    }
+]
