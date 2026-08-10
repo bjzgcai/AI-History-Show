@@ -36,6 +36,7 @@
             --accent-strong: #ff7f11;
             --deep-red: #4f0404;
             --touch-target: 44px;
+            --ui-detail-control-height: 62px;
             --mobile-page-pad: 16px;
             --mobile-card-radius: 8px;
             --scrollbar-track: rgba(255, 255, 255, 0.045);
@@ -6274,6 +6275,7 @@
             bottom: 16px;
             z-index: 26;
             width: min(430px, calc(100% - 230px));
+            height: var(--ui-detail-control-height);
             min-width: 280px;
             padding: 8px 12px 8px 8px;
             border: none;
@@ -6392,7 +6394,7 @@
             z-index: 26;
             width: auto;
             min-width: 124px;
-            height: 42px;
+            height: var(--ui-detail-control-height);
             border: 1px solid rgba(246, 137, 0, 0.92);
             border-radius: 3px;
             background: var(--accent);
@@ -6918,6 +6920,10 @@
         }
 
         @media (max-width: 1199px) {
+            :root {
+                --ui-detail-control-height: 52px;
+            }
+
             html,
             body {
                 height: auto;
@@ -7632,7 +7638,7 @@
                 right: 18px;
                 bottom: 18px;
                 min-width: 112px;
-                height: var(--touch-target);
+                height: var(--ui-detail-control-height);
                 padding: 0 22px;
                 border-radius: 4px;
                 box-shadow:
