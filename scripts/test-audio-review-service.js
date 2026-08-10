@@ -64,14 +64,16 @@ fs.writeFileSync(
     )}\n`
 );
 
-function createServer() {
+function createServer(options = {}) {
     return createAudioReviewServer({
         projectRoot: temporaryRoot,
         publicRoot,
         reviewDataPath,
-        databasePath,
+        databasePath: options.databasePath || databasePath,
         tokenEntries,
-        secureCookie: false
+        secureCookie: false,
+        strictOrigin: options.strictOrigin,
+        allowedOrigins: options.allowedOrigins
     });
 }
 
@@ -86,12 +88,18 @@ async function close(server) {
     await once(server, 'close');
 }
 
-async function login(baseUrl, token) {
+async function postSession(baseUrl, token, headers = {}) {
     const response = await fetch(`${baseUrl}/api/auth/session`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Origin: baseUrl },
+        headers: { 'Content-Type': 'application/json', ...headers },
         body: JSON.stringify({ token })
     });
+    const payload = await response.json();
+    return { response, payload };
+}
+
+async function login(baseUrl, token, origin = baseUrl) {
+    const { response } = await postSession(baseUrl, token, { Origin: origin });
     assert.equal(response.status, 200);
     return response.headers.get('set-cookie').split(';')[0];
 }
@@ -109,7 +117,76 @@ async function requestJson(baseUrl, pathname, cookie, options = {}) {
     return { response, payload };
 }
 
+async function testStrictOriginPolicy() {
+    let server = createServer({
+        databasePath: path.join(temporaryRoot, 'data', 'strict-origin.sqlite'),
+        strictOrigin: true
+    });
+    let baseUrl = await listen(server);
+    try {
+        const missingOrigin = await postSession(baseUrl, reviewerToken);
+        assert.equal(missingOrigin.response.status, 403);
+        assert.equal(missingOrigin.payload.error, 'Forbidden origin');
+
+        const mismatchedOrigin = await postSession(baseUrl, reviewerToken, { Origin: 'https://evil.example' });
+        assert.equal(mismatchedOrigin.response.status, 403);
+
+        const sameHost = await postSession(baseUrl, reviewerToken, { Origin: baseUrl });
+        assert.equal(sameHost.response.status, 200);
+    } finally {
+        await close(server);
+    }
+
+    server = createServer({
+        databasePath: path.join(temporaryRoot, 'data', 'allowed-origin.sqlite'),
+        strictOrigin: true,
+        allowedOrigins: ['https://review.example.com']
+    });
+    baseUrl = await listen(server);
+    try {
+        const sameHost = await postSession(baseUrl, reviewerToken, { Origin: baseUrl });
+        assert.equal(sameHost.response.status, 403);
+
+        const allowedCookie = await login(baseUrl, reviewerToken, 'https://review.example.com');
+        const reviewData = await requestJson(baseUrl, '/api/review-data', allowedCookie);
+        assert.equal(reviewData.response.status, 200);
+        const candidate = reviewData.payload.events[0].variants.zh.storyline;
+
+        const allowedReview = await requestJson(baseUrl, '/api/reviews', allowedCookie, {
+            method: 'POST',
+            headers: { Origin: 'https://review.example.com' },
+            body: JSON.stringify({
+                candidateId: candidate.candidateId,
+                result: 'pass',
+                requestId: 'allowed-origin-review'
+            })
+        });
+        assert.equal(allowedReview.response.status, 201);
+
+        const blockedReview = await requestJson(baseUrl, '/api/reviews', allowedCookie, {
+            method: 'POST',
+            headers: { Origin: 'https://evil.example' },
+            body: JSON.stringify({
+                candidateId: candidate.candidateId,
+                result: 'fail',
+                requestId: 'blocked-origin-review'
+            })
+        });
+        assert.equal(blockedReview.response.status, 403);
+
+        const logout = await requestJson(baseUrl, '/api/auth/session', allowedCookie, {
+            method: 'DELETE',
+            headers: { Origin: 'https://review.example.com' }
+        });
+        assert.equal(logout.response.status, 200);
+    } finally {
+        await close(server);
+    }
+}
+
 async function main() {
+    await testStrictOriginPolicy();
+
     let server = createServer();
     try {
         let baseUrl = await listen(server);

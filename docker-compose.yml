@@ -39,6 +39,8 @@ services:
             AUDIO_REVIEW_DB: /data/reviews.sqlite
             AUDIO_REVIEW_TOKEN_FILE: /run/secrets/audio-review-tokens.json
             AUDIO_REVIEW_SECURE_COOKIE: ${AUDIO_REVIEW_SECURE_COOKIE:-false}
+            AUDIO_REVIEW_STRICT_ORIGIN: ${AUDIO_REVIEW_STRICT_ORIGIN:-false}
+            AUDIO_REVIEW_ALLOWED_ORIGINS: ${AUDIO_REVIEW_ALLOWED_ORIGINS:-}
         read_only: true
         tmpfs:
             - /tmp

@@ -75,11 +75,33 @@ function readJsonBody(req) {
     });
 }
 
-function isTrustedOrigin(req) {
-    const origin = req.headers.origin;
-    if (!origin) return true;
+function firstHeaderValue(value) {
+    return Array.isArray(value) ? value[0] : value;
+}
+
+function normalizeOrigin(value) {
+    const raw = String(value || '').trim();
+    if (!raw) return null;
     try {
-        return new URL(origin).host.toLowerCase() === String(req.headers.host || '').toLowerCase();
+        return new URL(raw).origin;
+    } catch {
+        return null;
+    }
+}
+
+function parseAllowedOrigins(value) {
+    if (!value) return new Set();
+    const values = Array.isArray(value) ? value : String(value).split(',');
+    return new Set(values.map(normalizeOrigin).filter(Boolean));
+}
+
+function isTrustedOrigin(req, policy) {
+    const origin = normalizeOrigin(firstHeaderValue(req.headers.origin));
+    if (!origin) return !policy.strict;
+    if (policy.allowedOrigins.size > 0) return policy.allowedOrigins.has(origin);
+    try {
+        const host = String(firstHeaderValue(req.headers.host) || '').toLowerCase();
+        return new URL(origin).host.toLowerCase() === host;
     } catch {
         return false;
     }
@@ -180,6 +202,10 @@ function createAudioReviewServer(options = {}) {
     const auth = createAuthService(tokenEntries, options.authOptions);
     const store = new AudioReviewStore(databasePath);
     const forceSecureCookie = options.secureCookie ?? process.env.AUDIO_REVIEW_SECURE_COOKIE === 'true';
+    const originPolicy = {
+        strict: options.strictOrigin ?? process.env.AUDIO_REVIEW_STRICT_ORIGIN === 'true',
+        allowedOrigins: parseAllowedOrigins(options.allowedOrigins ?? process.env.AUDIO_REVIEW_ALLOWED_ORIGINS)
+    };
     let catalogMtime = -1;
     let catalog;
 
@@ -205,7 +231,8 @@ function createAudioReviewServer(options = {}) {
                 return;
             }
             if (url.pathname === '/api/auth/session' && method === 'POST') {
-                if (!isTrustedOrigin(req)) throw Object.assign(new Error('Forbidden origin'), { statusCode: 403 });
+                if (!isTrustedOrigin(req, originPolicy))
+                    throw Object.assign(new Error('Forbidden origin'), { statusCode: 403 });
                 const body = await readJsonBody(req);
                 const user = auth.authenticateToken(body.token);
                 if (!user) throw Object.assign(new Error('Token 无效'), { statusCode: 401 });
@@ -227,7 +254,8 @@ function createAudioReviewServer(options = {}) {
                 return;
             }
             if (url.pathname === '/api/auth/session' && method === 'DELETE') {
-                if (!isTrustedOrigin(req)) throw Object.assign(new Error('Forbidden origin'), { statusCode: 403 });
+                if (!isTrustedOrigin(req, originPolicy))
+                    throw Object.assign(new Error('Forbidden origin'), { statusCode: 403 });
                 auth.destroySession(req);
                 sendJson(res, { ok: true }, 200, {
                     'Set-Cookie': auth.clearSessionCookie(requestUsesHttps(req, forceSecureCookie))
@@ -244,7 +272,8 @@ function createAudioReviewServer(options = {}) {
                 return;
             }
             if (url.pathname === '/api/reviews' && method === 'POST') {
-                if (!isTrustedOrigin(req)) throw Object.assign(new Error('Forbidden origin'), { statusCode: 403 });
+                if (!isTrustedOrigin(req, originPolicy))
+                    throw Object.assign(new Error('Forbidden origin'), { statusCode: 403 });
                 currentCatalog();
                 const body = await readJsonBody(req);
                 sendJson(res, store.appendReview({ ...body, reviewer: user }), 201);
@@ -265,7 +294,8 @@ function createAudioReviewServer(options = {}) {
             const invalidationMatch = /^\/api\/reviews\/([^/]+)\/invalidate$/.exec(url.pathname);
             if (invalidationMatch && method === 'POST') {
                 if (user.role !== 'admin') throw Object.assign(new Error('需要管理员权限'), { statusCode: 403 });
-                if (!isTrustedOrigin(req)) throw Object.assign(new Error('Forbidden origin'), { statusCode: 403 });
+                if (!isTrustedOrigin(req, originPolicy))
+                    throw Object.assign(new Error('Forbidden origin'), { statusCode: 403 });
                 const body = await readJsonBody(req);
                 sendJson(
                     res,
