@@ -56,6 +56,12 @@ npm run audio:workflow -- review
 docker compose --profile review up --build audio-review
 ```
 
+如需改端口，设置 `AUDIO_REVIEW_PORT` 即可，例如：
+
+```bash
+AUDIO_REVIEW_PORT=3003 docker compose --profile review up --build audio-review
+```
+
 Compose 将审核数据和候选音频只读挂载进容器，只允许 `/data` 持久卷写入。它不会把仓库根目录作为静态目录暴露出去。
 
 ## 服务端接口

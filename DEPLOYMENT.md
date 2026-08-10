@@ -85,6 +85,12 @@ npm run audio:workflow -- review
 docker compose --profile review up --build audio-review
 ```
 
+如需改审核端口，可在 Compose 启动时设置 `AUDIO_REVIEW_PORT`，例如：
+
+```bash
+AUDIO_REVIEW_PORT=3003 docker compose --profile review up --build audio-review
+```
+
 访问：
 
 ```text
@@ -99,6 +105,7 @@ Compose 中的 `admin` 服务会把当前项目目录挂载到容器的 `/app`�
 
 音频审核服务使用个人 Token 登录，SQLite 数据库存放在独立持久卷。公网部署仍必须使用 HTTPS，
 并设置 `AUDIO_REVIEW_SECURE_COOKIE=true`；不要用 `scripts/static-server.js` 暴露仓库根目录代替审核服务。
+若通过 Docker Compose 部署并改过 `AUDIO_REVIEW_PORT`，反向代理也要同步指向对应端口。
 
 ### 音频审核独立部署
 
