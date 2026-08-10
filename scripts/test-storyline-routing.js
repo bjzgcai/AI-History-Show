@@ -175,7 +175,6 @@ assert.equal(
 console.log('PASS archive deep-learning detail lookup');
 
 const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
-const dualScreenHtml = fs.readFileSync(path.join(__dirname, '..', 'dual-screen.html'), 'utf8');
 const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
 const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
 const imageLoadingSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'image-loading.js'), 'utf8');
@@ -640,11 +639,6 @@ assert.match(
     'single-screen product avatars should contain complete logos inside the circular frame'
 );
 assert.match(
-    dualScreenHtml,
-    /\.figure-avatar\.is-product img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?function renderFigures[\s\S]*?figure\.figureType === 'product' \? ' is-product' : ''/,
-    'dual-screen product avatars should contain complete logos inside the circular frame'
-);
-assert.match(
     indexHtml,
     /function updateStorylineUrl[\s\S]*?searchParams\.delete\('uiMode'\)[\s\S]*?searchParams\.delete\('event'\)/,
     'storyline changes should clear stale detail URL parameters'
@@ -726,17 +720,6 @@ assert.doesNotMatch(
     /UI_CHRONOLOGY_IMAGE_OVERRIDES|getChronologyCardImage|resolveCardImage/,
     'overview cards should read generated Archive image configuration without index.html overrides'
 );
-assert.match(
-    dualScreenHtml,
-    /function sortPhotosForDisplay\(photos\)[\s\S]*?return \[\.\.\.\(photos \|\| \[\]\)\]\.filter\(Boolean\);/,
-    'dual-screen detail images should preserve Archive resources.images order by default'
-);
-assert.doesNotMatch(
-    dualScreenHtml,
-    /function sortPhotosForDisplay\(photos\)[\s\S]*?\.sort\(/,
-    'dual-screen detail images should not reorder Archive resources by media type'
-);
-console.log('PASS dual-screen detail images preserve Archive order');
 assert.doesNotMatch(
     indexHtml,
     /function getUiDetailImages\(vm\)[\s\S]*?isHumanisticMilestone\(vm && vm\.raw\)\) return candidates/,
@@ -803,19 +786,9 @@ assert.match(
     'single-screen entry should load the thumbnail manifest before image loading'
 );
 assert.match(
-    dualScreenHtml,
-    /<script src="shared\/thumbnail-manifest\.js"><\/script>\s*<script src="shared\/image-loading\.js"><\/script>/,
-    'dual-screen entry should load the thumbnail manifest before image loading'
-);
-assert.match(
     indexHtml,
     /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?<script src="shared\/chronology-overview\.js[\s\S]*?function buildFigureAvatar\(figure, avatarSource\)[\s\S]*?buildPreviewImageAttributes\(avatarSource\.src[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?viewerPhoto\.src = photos\[currentPhotoIndex\]/,
     'single-screen entry should use previews for avatars and originals in the archive viewer'
-);
-assert.match(
-    dualScreenHtml,
-    /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?function buildFigureAvatar\(figure, avatarSource\)[\s\S]*?buildPreviewImageAttributes\(avatarSource\.src[\s\S]*?function renderLeftArchive\(photos\)[\s\S]*?<img src="\$\{escapeHtml\(card\.src\)\}"[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?viewerPhoto\.src = photos\[currentPhotoIndex\]/,
-    'dual-screen entry should use previews for avatars and originals for event images'
 );
 assert.match(
     chronologySource,

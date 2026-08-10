@@ -60,7 +60,6 @@ flowchart TD
     FALLBACK["milestones-data-default.js"]
     THUMBNAILS["resources/images/_thumbs/<br/>shared/thumbnail-manifest.js"]
     SINGLE["index.html"]
-    DUAL["dual-screen.html"]
     SHARED["shared/milestone-view.js<br/>shared/i18n.js 等"]
     STATIC["npm run build:static<br/>.tmp/static-site/"]
     PAGES["GitHub Pages"]
@@ -83,15 +82,11 @@ flowchart TD
     GENERATE -->|原子同步写入| FALLBACK
     GENERATE --> THUMBNAILS
     PRIMARY --> SINGLE
-    PRIMARY --> DUAL
     FALLBACK -->|主数据加载失败时| SINGLE
-    FALLBACK -->|主数据加载失败时| DUAL
     SHARED --> SINGLE
-    SHARED --> DUAL
     PRIMARY --> STATIC
     FALLBACK --> STATIC
     SINGLE --> STATIC
-    DUAL --> STATIC
     RESOURCES --> STATIC
     SHARED --> STATIC
     STATIC --> PAGES

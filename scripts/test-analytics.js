@@ -143,7 +143,7 @@ assert.equal(storylineLeave.eventData.leave_reason, 'switch');
 console.log('PASS storyline views keep one session ID and record engaged duration');
 
 const root = path.join(__dirname, '..');
-for (const fileName of ['index.html', 'dual-screen.html']) {
+for (const fileName of ['index.html']) {
     const html = fs.readFileSync(path.join(root, fileName), 'utf8');
     assert.match(
         html,

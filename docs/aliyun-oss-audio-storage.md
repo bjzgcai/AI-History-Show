@@ -85,8 +85,8 @@ npm run audio:release -- verify
 npm run audio:release -- publish-access
 ```
 
-上传逻辑不会覆盖内容或 metadata 不一致的已有对象，除非明确传入 `--force`。音频对象上传时设置
-`public-read`，manifest 上传时强制设置 `private`。
+上传逻辑不会覆盖内容或 metadata 不一致的已有对象，`--force` 也会被拒绝。音频内容发生变化时，
+必须使用新的版本化 object key。音频对象上传时设置 `public-read`，manifest 上传时强制设置 `private`。
 
 ## 验证
 

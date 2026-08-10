@@ -76,16 +76,13 @@ async function validateStaticServer() {
         const index = await waitForHttp(`http://${HOST}:${port}/`);
         assert.match(await index.text(), /AI\s*历史回顾展览|milestones-data/i);
 
-        const dual = await waitForHttp(`http://${HOST}:${port}/dual-screen.html`);
-        assert.match(await dual.text(), /dual|milestones/i);
+        const retiredDualEntry = await fetch(`http://${HOST}:${port}/dual-screen.html`);
+        assert.equal(retiredDualEntry.status, 404);
 
         const indexPreview = await waitForHttp(`http://${HOST}:${port}/?archivePreview=1`);
         const indexPreviewHtml = await indexPreview.text();
         assert.doesNotMatch(indexPreviewHtml, /milestones-data-archive-preview\.js/);
         assert.match(indexPreviewHtml, /milestones-data\.js/);
-
-        const dualPreview = await waitForHttp(`http://${HOST}:${port}/dual-screen.html?archivePreview=1`);
-        assert.doesNotMatch(await dualPreview.text(), /milestones-data-archive-preview\.js/);
 
         const data = await waitForHttp(`http://${HOST}:${port}/milestones-data.js`);
         assert.match(await data.text(), /const\s+milestones\s*=/);

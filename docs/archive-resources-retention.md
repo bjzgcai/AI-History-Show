@@ -11,7 +11,6 @@ archive/events/<event-id>/assets.json
 archive/events/<event-id>/variants/<storyline>.json
 archive/events/<event-id>/quizzes.json
 index.html
-dual-screen.html
 shared/
 ```
 

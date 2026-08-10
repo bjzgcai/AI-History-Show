@@ -2,7 +2,7 @@
 
 **English** | [简体中文](README.zh.md)
 
-An interactive frontend application designed for exhibition-hall large-screen displays, showcasing key milestones in the history of artificial intelligence. It supports Chinese and English (with an in-page language switch), adapts automatically between single-screen, mobile, and dual-screen layouts, and presents The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI, Top AI Achievements (BenchCouncil), gaming AI, and the humanistic and emotional cycles surrounding AI.
+An interactive frontend application designed for exhibition-hall large-screen displays, showcasing key milestones in the history of artificial intelligence. It supports Chinese and English (with an in-page language switch), adapts across large screens and mobile devices, and presents The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI, Top AI Achievements (BenchCouncil), gaming AI, and the humanistic and emotional cycles surrounding AI.
 
 ## Repositories
 
@@ -63,14 +63,14 @@ The exhibition ships with built-in Chinese/English support:
 
 - Language dictionary and runtime switching: [shared/i18n.js](shared/i18n.js)
 - Default locale is Chinese; the active locale is persisted in `localStorage` under the key `ai-history-locale`
-- A language toggle button is rendered in both single- and dual-screen layouts
+- A language toggle button is rendered in the main presentation layout
 - Milestone content fields (titles, descriptions, quotes, etc.) support a bilingual object form `{ zh: "...", en: "..." }`; missing locales fall back gracefully
 
 When authoring content, use bilingual objects such as `{ zh: "...", en: "..." }` in Archive event and variant JSON. The Archive compiler resolves these records into the final `milestones-data.js`.
 
 ## Storylines
 
-The single-screen entry includes a storyline selector dialog in the top bar. The generated runtime contains 194 Archive milestones across four source storylines. The unified map merges these storylines without duplicate event cards:
+The main entry includes a storyline selector dialog in the top bar. The generated runtime contains 194 Archive milestones across four source storylines. The unified map merges these storylines without duplicate event cards:
 
 | Public view                     | Archive records | Notes                                                                                                                 |
 | ------------------------------- | --------------: | --------------------------------------------------------------------------------------------------------------------- |
@@ -140,13 +140,11 @@ git push origin main
 
 If you also configure a Gitee remote locally (e.g. `git remote add gitee ssh://git@z.gitee.cn:223/zgca/AI-History-Show.git`), push with `git push gitee master` — Gitee's default branch is `master`. See [DEPLOYMENT.md](DEPLOYMENT.md) for the canonical remote setup.
 
-## Dual-Screen Exhibition Demo
+## Exhibition Demo
 
-- Adaptive entry: `http://localhost:8000/`
-- `index.html` automatically switches to single-screen/mobile or dual-screen layout based on the current viewport
-- Fixed dual-screen entry: `http://localhost:8000/dual-screen.html`
-- To force a mode manually, append `?layout=single` or `?layout=dual` to the URL
-- For Windows on-site demos, first verify the page with `msedge --app="http://localhost:8000/dual-screen.html"`, then decide whether to compose an ultrawide display via the GPU control software before switching to `F11` or `--kiosk`
+- Presentation entry: `http://localhost:8000/`
+- `index.html` is the only public entry and adapts to desktop, exhibition, and mobile viewports
+- For Windows on-site demos, first verify the page with `msedge --app="http://localhost:8000/"`, then decide whether to compose an ultrawide display via the GPU control software before switching to `F11` or `--kiosk`
 - Multi-monitor full-screen demos, Edge app/kiosk modes, Intel/NVIDIA display composition, DisplayFusion caveats, etc. are documented in [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ---
@@ -203,8 +201,7 @@ The former Legacy editor, generator, data modules, parity pages, and migration/c
 
 ```
 AI-History-Show/
-├── index.html                   # Adaptive entry (Three.js globe + milestone view)
-├── dual-screen.html             # Fixed dual-screen entry
+├── index.html                   # Responsive presentation entry (Three.js globe + milestone view)
 │
 ├── milestones-data.js           # ⚠️ Archive-generated runtime data; do not hand-edit
 ├── milestones-data-default.js   # Archive-generated fallback data; do not hand-edit
@@ -221,10 +218,9 @@ AI-History-Show/
 │   ├── admin.html                # Writable Archive JSON editor
 │   └── server.js                 # Archive-only local management server
 │
-├── shared/                      # Shared frontend logic across single/dual screen
+├── shared/                      # Shared frontend logic
 │   ├── i18n.js                  # Bilingual dictionary and runtime locale switching
 │   ├── milestone-view.js        # Milestone rendering
-│   ├── layout-router.js         # Adaptive single/dual-screen routing
 │   ├── swipe-navigation.js      # Touch swipe paging
 │   └── utils.js
 │
@@ -233,7 +229,6 @@ AI-History-Show/
 │   ├── generate-archive-data.js  # Default Archive-native generator
 │   ├── archive-compiler.js       # Archive storyline/event compiler
 │   ├── test-archive-authority.js
-│   ├── test-layout-router.js
 │   ├── test-swipe-navigation.js
 │   └── validate-archive.js
 │
@@ -263,7 +258,6 @@ of Git and will be distributed through object storage.
 - **AI100 achievement map**: Region filtering, source cards, paper-style demos, and grounded quizzes
 - **Gaming AI branch**: Horizontal timeline with game-record/evolution modules and branch-specific source cards
 - **Humanistic cycle**: Cultural counter-timeline connecting science fiction, hype, AI winters, ethics, and risk debates
-- **Dual-screen auto paging**: `dual-screen.html` supports "Start/Stop auto play" — off by default; once enabled, pages cycle every 10 seconds
 - **Video playback**: Embedded YouTube videos plus local commentary videos
 - **SGF/game evolution playback**: Optional generated board-state clips with GIF fallback
 - **Image viewer**: Click to enter fullscreen, navigate with `←` / `→` / `Esc`

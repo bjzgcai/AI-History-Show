@@ -2,7 +2,7 @@
 
 [English](README.md) | **简体中文**
 
-面向展厅大屏的互动式 AI 历史展览应用，支持中英文切换，并能在单屏、移动端和双屏布局间自动适配。当前数据包含“连接主义的兴衰与复兴：AI七十年”、AI 顶尖成就（BenchCouncil）、棋牌与博弈 AI，以及 AI 人文与情绪周期四条叙事线。
+面向展厅大屏的互动式 AI 历史展览应用，支持中英文切换，并能适配大屏、桌面和移动端。当前数据包含“连接主义的兴衰与复兴：AI七十年”、AI 顶尖成就（BenchCouncil）、棋牌与博弈 AI，以及 AI 人文与情绪周期四条叙事线。
 
 ## 快速开始
 
@@ -98,10 +98,8 @@ http://localhost:8000/index.html?storyline=humanistic-cycle
 
 ## 页面与布局
 
-- 自适应入口：`http://localhost:8000/`
-- 固定双屏入口：`http://localhost:8000/dual-screen.html`
-- 强制单屏：`?layout=single`
-- 强制双屏：`?layout=dual`
+- 唯一展示入口：`http://localhost:8000/`
+- `index.html` 自适应展厅大屏、桌面和移动端
 - 语言选择保存在 `localStorage` 的 `ai-history-locale` 键中
 
 正式页面始终加载 `milestones-data.js`，失败时回退到同步生成的 `milestones-data-default.js`。页面不支持通过 query 参数切换到其他数据源。
@@ -160,8 +158,7 @@ npm run audit:svg-geometry
 
 ```text
 AI-History-Show/
-├── index.html                    # 自适应单屏/移动入口
-├── dual-screen.html              # 固定双屏入口
+├── index.html                    # 自适应展示入口
 ├── milestones-data.js            # Archive 生成的正式 runtime data
 ├── milestones-data-default.js    # 同步生成的 fallback data
 ├── archive/
