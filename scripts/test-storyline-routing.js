@@ -220,18 +220,13 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /\.ui-audio-player\s*\{[\s\S]*?left:\s*36px[\s\S]*?bottom:\s*16px[\s\S]*?border:\s*none[\s\S]*?\.ui-back-button\s*\{[\s\S]*?right:\s*36px[\s\S]*?bottom:\s*16px/,
-    'the desktop audio player should align with the back action without an orange outer border'
+    /\.ui-audio-player\s*\{[\s\S]*?left:\s*36px[\s\S]*?bottom:\s*16px[\s\S]*?padding:\s*8px 12px 8px 8px[\s\S]*?border:\s*none[\s\S]*?\.ui-back-button\s*\{[\s\S]*?right:\s*36px[\s\S]*?bottom:\s*24px[\s\S]*?height:\s*42px/,
+    'the desktop back action should keep its compact height and align with the play button bottom edge'
 );
 assert.match(
     indexHtml,
-    /--ui-detail-control-height:\s*62px[\s\S]*?\.ui-audio-player\s*\{[\s\S]*?height:\s*var\(--ui-detail-control-height\)[\s\S]*?\.ui-back-button\s*\{[\s\S]*?height:\s*var\(--ui-detail-control-height\)/,
-    'the desktop audio player and back action should share one control height'
-);
-assert.match(
-    indexHtml,
-    /@media\s*\(max-width:\s*1199px\)[\s\S]*?--ui-detail-control-height:\s*52px[\s\S]*?\.single-stage\.is-ui-browser\.is-ui-detail \.ui-back-button\s*\{[\s\S]*?height:\s*var\(--ui-detail-control-height\)/,
-    'responsive detail controls should preserve the shared audio and back action height'
+    /\.single-stage\.is-ui-browser\.is-ui-detail \.ui-back-button\s*\{[\s\S]*?right:\s*18px[\s\S]*?bottom:\s*22px[\s\S]*?height:\s*var\(--touch-target\)[\s\S]*?\.single-stage\.is-ui-browser\.is-ui-detail \.ui-audio-player\s*\{[\s\S]*?bottom:\s*18px[\s\S]*?padding:\s*4px 8px 4px 4px/,
+    'responsive back and play controls should share a bottom edge while retaining compact button height'
 );
 assert.match(
     indexHtml,

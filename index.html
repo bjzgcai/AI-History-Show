@@ -36,7 +36,6 @@
             --accent-strong: #ff7f11;
             --deep-red: #4f0404;
             --touch-target: 44px;
-            --ui-detail-control-height: 62px;
             --mobile-page-pad: 16px;
             --mobile-card-radius: 8px;
             --scrollbar-track: rgba(255, 255, 255, 0.045);
@@ -6275,7 +6274,6 @@
             bottom: 16px;
             z-index: 26;
             width: min(430px, calc(100% - 230px));
-            height: var(--ui-detail-control-height);
             min-width: 280px;
             padding: 8px 12px 8px 8px;
             border: none;
@@ -6390,11 +6388,11 @@
             --ui-back-buffer-shadow: 0 0 0 7px rgba(0, 0, 0, 0.94);
             position: absolute;
             right: 36px;
-            bottom: 16px;
+            bottom: 24px;
             z-index: 26;
             width: auto;
             min-width: 124px;
-            height: var(--ui-detail-control-height);
+            height: 42px;
             border: 1px solid rgba(246, 137, 0, 0.92);
             border-radius: 3px;
             background: var(--accent);
@@ -6920,10 +6918,6 @@
         }
 
         @media (max-width: 1199px) {
-            :root {
-                --ui-detail-control-height: 52px;
-            }
-
             html,
             body {
                 height: auto;
@@ -7636,9 +7630,9 @@
             .single-stage.is-ui-browser.is-ui-detail .ui-back-button {
                 position: fixed;
                 right: 18px;
-                bottom: 18px;
+                bottom: 22px;
                 min-width: 112px;
-                height: var(--ui-detail-control-height);
+                height: var(--touch-target);
                 padding: 0 22px;
                 border-radius: 4px;
                 box-shadow:
