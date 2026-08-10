@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { resolveTtsEnvFile } from './lib/audio-revision.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const GENERATOR_PATH = path.join(ROOT, 'scripts/audio/generate-dialogue-audio.mjs');
@@ -367,13 +368,14 @@ function main() {
     if (plan.provider !== 'volc') fail(`Unsupported revision provider: ${plan.provider}`);
     if (!plan.endpoint) fail('Revision plan is missing endpoint');
     if (!plan.envFile) fail('Revision plan is missing envFile');
-    if (!fs.existsSync(plan.envFile)) fail(`Missing TTS environment file: ${plan.envFile}`);
+    const envFile = resolveTtsEnvFile(plan.envFile);
+    if (!fs.existsSync(envFile)) fail(`Missing TTS environment file: ${envFile}`);
     run('ffmpeg', ['-version']);
     run('ffprobe', ['-version']);
     const outputRoot = path.join(ROOT, plan.outputRoot);
     const overlayPath = path.join(outputRoot, 'overlay.json');
     if (fs.existsSync(overlayPath)) fail(`Refusing to overwrite append-only overlay: ${overlayPath}`);
-    const jobs = buildJobs(plan);
+    const jobs = buildJobs({ ...plan, envFile });
     console.log(
         `${jobs.length} unique dialogue assets will generate ${jobs.reduce((sum, job) => sum + job.assets.length, 0)} revision files.`
     );

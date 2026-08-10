@@ -21,6 +21,21 @@ export function resolveFromRoot(filePath) {
     return path.isAbsolute(filePath) ? filePath : path.join(ROOT, filePath);
 }
 
+export function resolveTtsEnvFile(envFile, environment = process.env) {
+    const configuredPath = String(environment.TTS_ENV_FILE || '').trim() || String(envFile || '').trim();
+    return configuredPath ? resolveFromRoot(configuredPath) : '';
+}
+
+export function formatCommandFailure(command, result, target = '') {
+    const targetLabel = target ? ` for ${target}` : '';
+    if (result.error?.code === 'ENOENT' || (result.status === null && !result.error)) {
+        return `${command} not found in PATH`;
+    }
+    if (result.error) return `${command} could not start${targetLabel}: ${result.error.message}`;
+    const detail = `${result.stderr || ''}\n${result.stdout || ''}`.trim();
+    return `${command} failed${targetLabel} (exit ${result.status})${detail ? `: ${detail.slice(-2000)}` : ''}`;
+}
+
 export function revisionPaths(config) {
     const outputRoot = resolveFromRoot(config.outputRoot);
     return {

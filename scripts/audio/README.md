@@ -103,7 +103,8 @@ revision 的首选入口：
 - Node.js 22 或更高版本；
 - `ffmpeg` 与 `ffprobe` 在 `PATH` 中；
 - TTS 凭据由 revision 配置的 `provider.envFile` 指向，密钥值不得写入仓库；
-- 默认 Seed-TTS 凭据文件为 `/home/ubuntu/.openclaw/workspace/.secrets/tts.env`；
+- 默认 Seed-TTS 凭据文件为仓库内已忽略的 `.secrets/tts.env`；可通过 `TTS_ENV_FILE`
+  指向其他绝对路径或仓库相对路径，运行时环境变量优先；
 - 生成前先运行 `check` 或 `build`，生成后必须运行 `validate`；
 - 多个候选可同时进入审听台，但每个事件、语言和模式最终只能批准一个版本。
 

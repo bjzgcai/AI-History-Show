@@ -12,6 +12,25 @@ import {
 } from './audio/build-audio-review-page-data.mjs';
 import { writeFrozenJson } from './audio/build-complete-original-revisions.mjs';
 import { buildWorkflowReport } from './audio/check-audio-workflow-status.mjs';
+import { ROOT, formatCommandFailure, resolveTtsEnvFile } from './audio/lib/audio-revision.mjs';
+
+assert.equal(resolveTtsEnvFile('.secrets/tts.env', {}), path.join(ROOT, '.secrets/tts.env'));
+assert.equal(
+    resolveTtsEnvFile('.secrets/tts.env', { TTS_ENV_FILE: '/tmp/ai-history-tts.env' }),
+    '/tmp/ai-history-tts.env'
+);
+assert.equal(resolveTtsEnvFile('.secrets/tts.env', { TTS_ENV_FILE: '  ' }), path.join(ROOT, '.secrets/tts.env'));
+assert.equal(
+    formatCommandFailure('ffprobe', {
+        error: Object.assign(new Error('spawn ffprobe ENOENT'), { code: 'ENOENT' }),
+        status: null
+    }),
+    'ffprobe not found in PATH'
+);
+assert.match(
+    formatCommandFailure('ffprobe', { status: 1, stderr: 'Invalid data found', stdout: '' }, 'bad.mp3'),
+    /ffprobe failed for bad\.mp3 \(exit 1\): Invalid data found/
+);
 
 assert.deepEqual(generationActions({ planExists: false, overlayExists: false }), ['build', 'generate', 'validate']);
 assert.deepEqual(generationActions({ planExists: true, overlayExists: false }), [
@@ -132,6 +151,10 @@ for (const command of ['audio:workflow', 'audio:status', 'audio:review', 'audio:
 for (const retiredCommand of ['audio:plan:build', 'audio:base:generate', 'audio:push', 'audio:publish']) {
     assert(!packageJson.scripts[retiredCommand], `Retired package command ${retiredCommand} must stay removed`);
 }
+assert(
+    !packageJson.scripts['migrate:figure-references'],
+    'Retired writable figure migration command must stay removed'
+);
 
 const workflowReport = await buildWorkflowReport();
 assert.deepEqual(workflowReport.errors, []);
