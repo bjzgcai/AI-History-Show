@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-10 03:58
+// 生成时间: 2026-08-10 05:59
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 194, errors 0
 
@@ -148,7 +148,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1950-turing-test-audio-zh-interact-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3",
           "title": {
             "zh": "1950-turing-test 中文互动增强版科普音频",
             "en": "1950-turing-test interactive Chinese audio narration"
@@ -163,7 +163,7 @@ const milestones = [
         },
         {
           "id": "asset-1950-turing-test-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1950-turing-test-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1950-turing-test-en-v1.mp3",
           "title": {
             "zh": "1950-turing-test 英文科普音频",
             "en": "1950-turing-test English audio narration"
@@ -655,7 +655,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1971-complexity-theory-audio-zh-interact-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1971-complexity-theory-zh-interact-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1971-complexity-theory-zh-interact-v1.mp3",
           "title": {
             "zh": "1971-complexity-theory 中文互动增强版科普音频",
             "en": "1971-complexity-theory interactive Chinese audio narration"
@@ -670,7 +670,7 @@ const milestones = [
         },
         {
           "id": "asset-1971-complexity-theory-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1971-complexity-theory-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1971-complexity-theory-en-v1.mp3",
           "title": {
             "zh": "1971-complexity-theory 英文科普音频",
             "en": "1971-complexity-theory English audio narration"
@@ -1142,7 +1142,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1971-vc-theory-audio-zh-interact-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1971-vc-theory-zh-interact-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1971-vc-theory-zh-interact-v1.mp3",
           "title": {
             "zh": "1971-vc-theory 中文互动增强版科普音频",
             "en": "1971-vc-theory interactive Chinese audio narration"
@@ -1157,7 +1157,7 @@ const milestones = [
         },
         {
           "id": "asset-1971-vc-theory-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1971-vc-theory-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1971-vc-theory-en-v1.mp3",
           "title": {
             "zh": "1971-vc-theory 英文科普音频",
             "en": "1971-vc-theory English audio narration"
@@ -1663,7 +1663,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1956-logic-theorist-audio-zh-interact-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1956-logic-theorist-zh-interact-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1956-logic-theorist-zh-interact-v1.mp3",
           "title": {
             "zh": "1956-logic-theorist 中文互动增强版科普音频",
             "en": "1956-logic-theorist interactive Chinese audio narration"
@@ -1678,7 +1678,7 @@ const milestones = [
         },
         {
           "id": "asset-1956-logic-theorist-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1956-logic-theorist-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1956-logic-theorist-en-v1.mp3",
           "title": {
             "zh": "1956-logic-theorist 英文科普音频",
             "en": "1956-logic-theorist English audio narration"
@@ -2134,7 +2134,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1958-wangs-algorithm-audio-zh-interact-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1958-wangs-algorithm-zh-interact-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1958-wangs-algorithm-zh-interact-v1.mp3",
           "title": {
             "zh": "1958-wangs-algorithm 中文互动增强版科普音频",
             "en": "1958-wangs-algorithm interactive Chinese audio narration"
@@ -2149,7 +2149,7 @@ const milestones = [
         },
         {
           "id": "asset-1958-wangs-algorithm-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1958-wangs-algorithm-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1958-wangs-algorithm-en-v1.mp3",
           "title": {
             "zh": "1958-wangs-algorithm 英文科普音频",
             "en": "1958-wangs-algorithm English audio narration"
@@ -2653,7 +2653,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1960-davis-putnam-dpll-audio-zh-interact-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3",
           "title": {
             "zh": "1960-davis-putnam-dpll 中文互动增强版科普音频",
             "en": "1960-davis-putnam-dpll interactive Chinese audio narration"
@@ -2668,7 +2668,7 @@ const milestones = [
         },
         {
           "id": "asset-1960-davis-putnam-dpll-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1960-davis-putnam-dpll-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1960-davis-putnam-dpll-en-v1.mp3",
           "title": {
             "zh": "1960-davis-putnam-dpll 英文科普音频",
             "en": "1960-davis-putnam-dpll English audio narration"
@@ -3125,7 +3125,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1965-resolution-method-audio-zh-interact-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1965-resolution-method-zh-interact-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1965-resolution-method-zh-interact-v1.mp3",
           "title": {
             "zh": "1965-resolution-method 中文互动增强版科普音频",
             "en": "1965-resolution-method interactive Chinese audio narration"
@@ -3140,7 +3140,7 @@ const milestones = [
         },
         {
           "id": "asset-1965-resolution-method-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1965-resolution-method-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1965-resolution-method-en-v1.mp3",
           "title": {
             "zh": "1965-resolution-method 英文科普音频",
             "en": "1965-resolution-method English audio narration"
@@ -3649,7 +3649,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1990-otter-audio-zh-interact-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1990-otter-zh-interact-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1990-otter-zh-interact-v1.mp3",
           "title": {
             "zh": "1990-otter 中文互动增强版科普音频",
             "en": "1990-otter interactive Chinese audio narration"
@@ -3664,7 +3664,7 @@ const milestones = [
         },
         {
           "id": "asset-1990-otter-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1990-otter-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1990-otter-en-v1.mp3",
           "title": {
             "zh": "1990-otter 英文科普音频",
             "en": "1990-otter English audio narration"
@@ -4217,7 +4217,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1958-lisp-audio-zh-interact-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1958-lisp-zh-interact-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1958-lisp-zh-interact-v1.mp3",
           "title": {
             "zh": "1958-lisp 中文互动增强版科普音频",
             "en": "1958-lisp interactive Chinese audio narration"
@@ -4232,7 +4232,7 @@ const milestones = [
         },
         {
           "id": "asset-1958-lisp-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1958-lisp-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1958-lisp-en-v1.mp3",
           "title": {
             "zh": "1958-lisp 英文科普音频",
             "en": "1958-lisp English audio narration"
@@ -4687,7 +4687,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1973-prolog-audio-zh-interact-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1973-prolog-zh-interact-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1973-prolog-zh-interact-v1.mp3",
           "title": {
             "zh": "1973-prolog 中文互动增强版科普音频",
             "en": "1973-prolog interactive Chinese audio narration"
@@ -4702,7 +4702,7 @@ const milestones = [
         },
         {
           "id": "asset-1973-prolog-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1973-prolog-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1973-prolog-en-v1.mp3",
           "title": {
             "zh": "1973-prolog 英文科普音频",
             "en": "1973-prolog English audio narration"
@@ -5211,7 +5211,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1966-eliza-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1966-eliza-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1966-eliza-zh-original-v1.mp3",
           "title": {
             "zh": "1966-eliza 中文原版科普音频",
             "en": "1966-eliza original Chinese audio narration"
@@ -5226,7 +5226,7 @@ const milestones = [
         },
         {
           "id": "asset-1966-eliza-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1966-eliza-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1966-eliza-en-v1.mp3",
           "title": {
             "zh": "1966-eliza 英文科普音频",
             "en": "1966-eliza English audio narration"
@@ -5935,7 +5935,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1970-shrdlu-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1970-shrdlu-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1970-shrdlu-zh-original-v1.mp3",
           "title": {
             "zh": "1970-shrdlu 中文原版科普音频",
             "en": "1970-shrdlu original Chinese audio narration"
@@ -5950,7 +5950,7 @@ const milestones = [
         },
         {
           "id": "asset-1970-shrdlu-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1970-shrdlu-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1970-shrdlu-en-v1.mp3",
           "title": {
             "zh": "1970-shrdlu 英文科普音频",
             "en": "1970-shrdlu English audio narration"
@@ -6468,7 +6468,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2011-ibm-watson-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2011-ibm-watson-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2011-ibm-watson-zh-original-v1.mp3",
           "title": {
             "zh": "2011-ibm-watson 中文原版科普音频",
             "en": "2011-ibm-watson original Chinese audio narration"
@@ -6483,7 +6483,7 @@ const milestones = [
         },
         {
           "id": "asset-2011-ibm-watson-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2011-ibm-watson-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2011-ibm-watson-en-v1.mp3",
           "title": {
             "zh": "2011-ibm-watson 英文科普音频",
             "en": "2011-ibm-watson English audio narration"
@@ -7034,7 +7034,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1951-strachey-draughts-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1951-strachey-draughts-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1951-strachey-draughts-zh-original-v1.mp3",
           "title": {
             "zh": "1951-strachey-draughts 中文原版科普音频",
             "en": "1951-strachey-draughts original Chinese audio narration"
@@ -7049,7 +7049,7 @@ const milestones = [
         },
         {
           "id": "asset-1951-strachey-draughts-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1951-strachey-draughts-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1951-strachey-draughts-en-v1.mp3",
           "title": {
             "zh": "1951-strachey-draughts 英文科普音频",
             "en": "1951-strachey-draughts English audio narration"
@@ -7635,7 +7635,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1994-chinook-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1994-chinook-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1994-chinook-zh-original-v1.mp3",
           "title": {
             "zh": "1994-chinook 中文原版科普音频",
             "en": "1994-chinook original Chinese audio narration"
@@ -7650,7 +7650,7 @@ const milestones = [
         },
         {
           "id": "asset-1994-chinook-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1994-chinook-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1994-chinook-en-v1.mp3",
           "title": {
             "zh": "1994-chinook 英文科普音频",
             "en": "1994-chinook English audio narration"
@@ -8242,7 +8242,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1997-deep-blue-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1997-deep-blue-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1997-deep-blue-zh-original-v1.mp3",
           "title": {
             "zh": "1997-deep-blue 中文原版科普音频",
             "en": "1997-deep-blue original Chinese audio narration"
@@ -8257,7 +8257,7 @@ const milestones = [
         },
         {
           "id": "asset-1997-deep-blue-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1997-deep-blue-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1997-deep-blue-en-v1.mp3",
           "title": {
             "zh": "1997-deep-blue 英文科普音频",
             "en": "1997-deep-blue English audio narration"
@@ -8828,7 +8828,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1959-pandemonium-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1959-pandemonium-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1959-pandemonium-zh-original-v1.mp3",
           "title": {
             "zh": "1959-pandemonium 中文原版科普音频",
             "en": "1959-pandemonium original Chinese audio narration"
@@ -8843,7 +8843,7 @@ const milestones = [
         },
         {
           "id": "asset-1959-pandemonium-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1959-pandemonium-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1959-pandemonium-en-v1.mp3",
           "title": {
             "zh": "1959-pandemonium 英文科普音频",
             "en": "1959-pandemonium English audio narration"
@@ -9386,7 +9386,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1974-frame-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1974-frame-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1974-frame-zh-original-v1.mp3",
           "title": {
             "zh": "1974-frame 中文原版科普音频",
             "en": "1974-frame original Chinese audio narration"
@@ -9401,7 +9401,7 @@ const milestones = [
         },
         {
           "id": "asset-1974-frame-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1974-frame-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1974-frame-en-v1.mp3",
           "title": {
             "zh": "1974-frame 英文科普音频",
             "en": "1974-frame English audio narration"
@@ -9919,7 +9919,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1984-cyc-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1984-cyc-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1984-cyc-zh-original-v1.mp3",
           "title": {
             "zh": "1984-cyc 中文原版科普音频",
             "en": "1984-cyc original Chinese audio narration"
@@ -9934,7 +9934,7 @@ const milestones = [
         },
         {
           "id": "asset-1984-cyc-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1984-cyc-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1984-cyc-en-v1.mp3",
           "title": {
             "zh": "1984-cyc 英文科普音频",
             "en": "1984-cyc English audio narration"
@@ -10525,7 +10525,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1965-dendral-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1965-dendral-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1965-dendral-zh-original-v1.mp3",
           "title": {
             "zh": "1965-dendral 中文原版科普音频",
             "en": "1965-dendral original Chinese audio narration"
@@ -10540,7 +10540,7 @@ const milestones = [
         },
         {
           "id": "asset-1965-dendral-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1965-dendral-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1965-dendral-en-v1.mp3",
           "title": {
             "zh": "1965-dendral 英文科普音频",
             "en": "1965-dendral English audio narration"
@@ -11039,7 +11039,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1980-xcon-r1-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1980-xcon-r1-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1980-xcon-r1-zh-original-v1.mp3",
           "title": {
             "zh": "1980-xcon-r1 中文原版科普音频",
             "en": "1980-xcon-r1 original Chinese audio narration"
@@ -11054,7 +11054,7 @@ const milestones = [
         },
         {
           "id": "asset-1980-xcon-r1-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1980-xcon-r1-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1980-xcon-r1-en-v1.mp3",
           "title": {
             "zh": "1980-xcon-r1 英文科普音频",
             "en": "1980-xcon-r1 English audio narration"
@@ -11602,7 +11602,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1957-kmeans-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1957-kmeans-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1957-kmeans-zh-original-v1.mp3",
           "title": {
             "zh": "1957-kmeans 中文原版科普音频",
             "en": "1957-kmeans original Chinese audio narration"
@@ -11617,7 +11617,7 @@ const milestones = [
         },
         {
           "id": "asset-1957-kmeans-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1957-kmeans-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1957-kmeans-en-v1.mp3",
           "title": {
             "zh": "1957-kmeans 英文科普音频",
             "en": "1957-kmeans English audio narration"
@@ -12197,7 +12197,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1996-dbscan-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1996-dbscan-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1996-dbscan-zh-original-v1.mp3",
           "title": {
             "zh": "1996-dbscan 中文原版科普音频",
             "en": "1996-dbscan original Chinese audio narration"
@@ -12212,7 +12212,7 @@ const milestones = [
         },
         {
           "id": "asset-1996-dbscan-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1996-dbscan-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1996-dbscan-en-v1.mp3",
           "title": {
             "zh": "1996-dbscan 英文科普音频",
             "en": "1996-dbscan English audio narration"
@@ -12810,7 +12810,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2000-spectral-clustering-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2000-spectral-clustering-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2000-spectral-clustering-zh-original-v1.mp3",
           "title": {
             "zh": "2000-spectral-clustering 中文原版科普音频",
             "en": "2000-spectral-clustering original Chinese audio narration"
@@ -12825,7 +12825,7 @@ const milestones = [
         },
         {
           "id": "asset-2000-spectral-clustering-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2000-spectral-clustering-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2000-spectral-clustering-en-v1.mp3",
           "title": {
             "zh": "2000-spectral-clustering 英文科普音频",
             "en": "2000-spectral-clustering English audio narration"
@@ -13409,7 +13409,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1967-knn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1967-knn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1967-knn-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1967-knn 中文原版科普音频",
             "en": "ai100-1967-knn original Chinese audio narration"
@@ -13424,7 +13424,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1967-knn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1967-knn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1967-knn-en-v1.mp3",
           "title": {
             "zh": "ai100-1967-knn 英文科普音频",
             "en": "ai100-1967-knn English audio narration"
@@ -13965,7 +13965,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1970-ridge-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1970-ridge-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1970-ridge-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1970-ridge 中文原版科普音频",
             "en": "ai100-1970-ridge original Chinese audio narration"
@@ -13980,7 +13980,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1970-ridge-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1970-ridge-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1970-ridge-en-v1.mp3",
           "title": {
             "zh": "ai100-1970-ridge 英文科普音频",
             "en": "ai100-1970-ridge English audio narration"
@@ -14541,7 +14541,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1992-svm-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1992-svm-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1992-svm-zh-original-v1.mp3",
           "title": {
             "zh": "1992-svm 中文原版科普音频",
             "en": "1992-svm original Chinese audio narration"
@@ -14556,7 +14556,7 @@ const milestones = [
         },
         {
           "id": "asset-1992-svm-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1992-svm-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1992-svm-en-v1.mp3",
           "title": {
             "zh": "1992-svm 英文科普音频",
             "en": "1992-svm English audio narration"
@@ -15103,7 +15103,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1996-lasso-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1996-lasso-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1996-lasso-zh-original-v1.mp3",
           "title": {
             "zh": "1996-lasso 中文原版科普音频",
             "en": "1996-lasso original Chinese audio narration"
@@ -15118,7 +15118,7 @@ const milestones = [
         },
         {
           "id": "asset-1996-lasso-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1996-lasso-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1996-lasso-en-v1.mp3",
           "title": {
             "zh": "1996-lasso 英文科普音频",
             "en": "1996-lasso English audio narration"
@@ -15620,7 +15620,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1999-sift-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1999-sift-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1999-sift-zh-original-v1.mp3",
           "title": {
             "zh": "1999-sift 中文原版科普音频",
             "en": "1999-sift original Chinese audio narration"
@@ -15635,7 +15635,7 @@ const milestones = [
         },
         {
           "id": "asset-1999-sift-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1999-sift-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1999-sift-en-v1.mp3",
           "title": {
             "zh": "1999-sift 英文科普音频",
             "en": "1999-sift English audio narration"
@@ -16148,7 +16148,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2005-hog-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2005-hog-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2005-hog-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2005-hog 中文原版科普音频",
             "en": "ai100-2005-hog original Chinese audio narration"
@@ -16163,7 +16163,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2005-hog-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2005-hog-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2005-hog-en-v1.mp3",
           "title": {
             "zh": "ai100-2005-hog 英文科普音频",
             "en": "ai100-2005-hog English audio narration"
@@ -16720,7 +16720,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2006-surf-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2006-surf-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2006-surf-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2006-surf 中文原版科普音频",
             "en": "ai100-2006-surf original Chinese audio narration"
@@ -16735,7 +16735,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2006-surf-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2006-surf-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2006-surf-en-v1.mp3",
           "title": {
             "zh": "ai100-2006-surf 英文科普音频",
             "en": "ai100-2006-surf English audio narration"
@@ -17260,7 +17260,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1997-kernel-pca-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1997-kernel-pca-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1997-kernel-pca-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1997-kernel-pca 中文原版科普音频",
             "en": "ai100-1997-kernel-pca original Chinese audio narration"
@@ -17275,7 +17275,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1997-kernel-pca-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1997-kernel-pca-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1997-kernel-pca-en-v1.mp3",
           "title": {
             "zh": "ai100-1997-kernel-pca 英文科普音频",
             "en": "ai100-1997-kernel-pca English audio narration"
@@ -17800,7 +17800,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1999-nmf-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1999-nmf-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1999-nmf-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1999-nmf 中文原版科普音频",
             "en": "ai100-1999-nmf original Chinese audio narration"
@@ -17815,7 +17815,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1999-nmf-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1999-nmf-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1999-nmf-en-v1.mp3",
           "title": {
             "zh": "ai100-1999-nmf 英文科普音频",
             "en": "ai100-1999-nmf English audio narration"
@@ -18340,7 +18340,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2000-isomap-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2000-isomap-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2000-isomap-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2000-isomap 中文原版科普音频",
             "en": "ai100-2000-isomap original Chinese audio narration"
@@ -18355,7 +18355,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2000-isomap-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2000-isomap-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2000-isomap-en-v1.mp3",
           "title": {
             "zh": "ai100-2000-isomap 英文科普音频",
             "en": "ai100-2000-isomap English audio narration"
@@ -18880,7 +18880,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2000-lle-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2000-lle-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2000-lle-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2000-lle 中文原版科普音频",
             "en": "ai100-2000-lle original Chinese audio narration"
@@ -18895,7 +18895,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2000-lle-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2000-lle-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2000-lle-en-v1.mp3",
           "title": {
             "zh": "ai100-2000-lle 英文科普音频",
             "en": "ai100-2000-lle English audio narration"
@@ -19421,7 +19421,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2008-tsne-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2008-tsne-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2008-tsne-zh-original-v1.mp3",
           "title": {
             "zh": "2008-tsne 中文原版科普音频",
             "en": "2008-tsne original Chinese audio narration"
@@ -19436,7 +19436,7 @@ const milestones = [
         },
         {
           "id": "asset-2008-tsne-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2008-tsne-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2008-tsne-en-v1.mp3",
           "title": {
             "zh": "2008-tsne 英文科普音频",
             "en": "2008-tsne English audio narration"
@@ -19952,7 +19952,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1943-mcculloch-pitts-neuron-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1943-mcculloch-pitts-neuron-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1943-mcculloch-pitts-neuron-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1943-mcculloch-pitts-neuron 中文原版科普音频",
             "en": "ai100-1943-mcculloch-pitts-neuron original Chinese audio narration"
@@ -19967,7 +19967,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1943-mcculloch-pitts-neuron-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1943-mcculloch-pitts-neuron-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1943-mcculloch-pitts-neuron-en-v1.mp3",
           "title": {
             "zh": "ai100-1943-mcculloch-pitts-neuron 英文科普音频",
             "en": "ai100-1943-mcculloch-pitts-neuron English audio narration"
@@ -20492,7 +20492,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1951-snarc-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1951-snarc-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1951-snarc-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1951-snarc 中文原版科普音频",
             "en": "ai100-1951-snarc original Chinese audio narration"
@@ -20507,7 +20507,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1951-snarc-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1951-snarc-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1951-snarc-en-v1.mp3",
           "title": {
             "zh": "ai100-1951-snarc 英文科普音频",
             "en": "ai100-1951-snarc English audio narration"
@@ -21058,7 +21058,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1957-perceptron-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1957-perceptron-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1957-perceptron-zh-original-v1.mp3",
           "title": {
             "zh": "1957-perceptron 中文原版科普音频",
             "en": "1957-perceptron original Chinese audio narration"
@@ -21073,7 +21073,7 @@ const milestones = [
         },
         {
           "id": "asset-1957-perceptron-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1957-perceptron-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1957-perceptron-en-v1.mp3",
           "title": {
             "zh": "1957-perceptron 英文科普音频",
             "en": "1957-perceptron English audio narration"
@@ -21677,7 +21677,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1982-hopfield-network-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1982-hopfield-network-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1982-hopfield-network-zh-original-v1.mp3",
           "title": {
             "zh": "1982-hopfield-network 中文原版科普音频",
             "en": "1982-hopfield-network original Chinese audio narration"
@@ -21692,7 +21692,7 @@ const milestones = [
         },
         {
           "id": "asset-1982-hopfield-network-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1982-hopfield-network-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1982-hopfield-network-en-v1.mp3",
           "title": {
             "zh": "1982-hopfield-network 英文科普音频",
             "en": "1982-hopfield-network English audio narration"
@@ -22193,7 +22193,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1982-som-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1982-som-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1982-som-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1982-som 中文原版科普音频",
             "en": "ai100-1982-som original Chinese audio narration"
@@ -22208,7 +22208,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1982-som-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1982-som-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1982-som-en-v1.mp3",
           "title": {
             "zh": "ai100-1982-som 英文科普音频",
             "en": "ai100-1982-som English audio narration"
@@ -22750,7 +22750,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2006-dbn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2006-dbn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2006-dbn-zh-original-v1.mp3",
           "title": {
             "zh": "2006-dbn 中文原版科普音频",
             "en": "2006-dbn original Chinese audio narration"
@@ -22765,7 +22765,7 @@ const milestones = [
         },
         {
           "id": "asset-2006-dbn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2006-dbn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2006-dbn-en-v1.mp3",
           "title": {
             "zh": "2006-dbn 英文科普音频",
             "en": "2006-dbn English audio narration"
@@ -23294,7 +23294,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1967-back-propagation-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1967-back-propagation-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1967-back-propagation-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1967-back-propagation 中文原版科普音频",
             "en": "ai100-1967-back-propagation original Chinese audio narration"
@@ -23309,7 +23309,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1967-back-propagation-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1967-back-propagation-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1967-back-propagation-en-v1.mp3",
           "title": {
             "zh": "ai100-1967-back-propagation 英文科普音频",
             "en": "ai100-1967-back-propagation English audio narration"
@@ -23849,7 +23849,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1969-relu-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1969-relu-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1969-relu-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1969-relu 中文原版科普音频",
             "en": "ai100-1969-relu original Chinese audio narration"
@@ -23864,7 +23864,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1969-relu-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1969-relu-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1969-relu-en-v1.mp3",
           "title": {
             "zh": "ai100-1969-relu 英文科普音频",
             "en": "ai100-1969-relu English audio narration"
@@ -24447,7 +24447,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2014-adam-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-adam-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-adam-zh-original-v1.mp3",
           "title": {
             "zh": "2014-adam 中文原版科普音频",
             "en": "2014-adam original Chinese audio narration"
@@ -24462,7 +24462,7 @@ const milestones = [
         },
         {
           "id": "asset-2014-adam-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-adam-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-adam-en-v1.mp3",
           "title": {
             "zh": "2014-adam 英文科普音频",
             "en": "2014-adam English audio narration"
@@ -24996,7 +24996,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2014-dropout-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-dropout-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-dropout-zh-original-v1.mp3",
           "title": {
             "zh": "2014-dropout 中文原版科普音频",
             "en": "2014-dropout original Chinese audio narration"
@@ -25011,7 +25011,7 @@ const milestones = [
         },
         {
           "id": "asset-2014-dropout-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-dropout-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-dropout-en-v1.mp3",
           "title": {
             "zh": "2014-dropout 英文科普音频",
             "en": "2014-dropout English audio narration"
@@ -25531,7 +25531,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2015-batch-normalization-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-batch-normalization-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-batch-normalization-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2015-batch-normalization 中文原版科普音频",
             "en": "ai100-2015-batch-normalization original Chinese audio narration"
@@ -25546,7 +25546,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2015-batch-normalization-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-batch-normalization-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-batch-normalization-en-v1.mp3",
           "title": {
             "zh": "ai100-2015-batch-normalization 英文科普音频",
             "en": "ai100-2015-batch-normalization English audio narration"
@@ -26049,7 +26049,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1980-neocognitron-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1980-neocognitron-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1980-neocognitron-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1980-neocognitron 中文原版科普音频",
             "en": "ai100-1980-neocognitron original Chinese audio narration"
@@ -26064,7 +26064,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1980-neocognitron-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1980-neocognitron-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1980-neocognitron-en-v1.mp3",
           "title": {
             "zh": "ai100-1980-neocognitron 英文科普音频",
             "en": "ai100-1980-neocognitron English audio narration"
@@ -26587,7 +26587,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1989-cnn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1989-cnn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1989-cnn-zh-original-v1.mp3",
           "title": {
             "zh": "1989-cnn 中文原版科普音频",
             "en": "1989-cnn original Chinese audio narration"
@@ -26602,7 +26602,7 @@ const milestones = [
         },
         {
           "id": "asset-1989-cnn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1989-cnn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1989-cnn-en-v1.mp3",
           "title": {
             "zh": "1989-cnn 英文科普音频",
             "en": "1989-cnn English audio narration"
@@ -27240,7 +27240,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2012-alexnet-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2012-alexnet-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2012-alexnet-zh-original-v1.mp3",
           "title": {
             "zh": "2012-alexnet 中文原版科普音频",
             "en": "2012-alexnet original Chinese audio narration"
@@ -27255,7 +27255,7 @@ const milestones = [
         },
         {
           "id": "asset-2012-alexnet-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2012-alexnet-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2012-alexnet-en-v1.mp3",
           "title": {
             "zh": "2012-alexnet 英文科普音频",
             "en": "2012-alexnet English audio narration"
@@ -27836,7 +27836,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2014-vgg-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-vgg-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-vgg-zh-original-v1.mp3",
           "title": {
             "zh": "2014-vgg 中文原版科普音频",
             "en": "2014-vgg original Chinese audio narration"
@@ -27851,7 +27851,7 @@ const milestones = [
         },
         {
           "id": "asset-2014-vgg-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-vgg-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-vgg-en-v1.mp3",
           "title": {
             "zh": "2014-vgg 英文科普音频",
             "en": "2014-vgg English audio narration"
@@ -28381,7 +28381,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2015-googlenet-inception-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-googlenet-inception-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-googlenet-inception-zh-original-v1.mp3",
           "title": {
             "zh": "2015-googlenet-inception 中文原版科普音频",
             "en": "2015-googlenet-inception original Chinese audio narration"
@@ -28396,7 +28396,7 @@ const milestones = [
         },
         {
           "id": "asset-2015-googlenet-inception-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-googlenet-inception-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-googlenet-inception-en-v1.mp3",
           "title": {
             "zh": "2015-googlenet-inception 英文科普音频",
             "en": "2015-googlenet-inception English audio narration"
@@ -28960,7 +28960,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2015-resnet-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-resnet-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-resnet-zh-original-v1.mp3",
           "title": {
             "zh": "2015-resnet 中文原版科普音频",
             "en": "2015-resnet original Chinese audio narration"
@@ -28975,7 +28975,7 @@ const milestones = [
         },
         {
           "id": "asset-2015-resnet-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-resnet-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-resnet-en-v1.mp3",
           "title": {
             "zh": "2015-resnet 英文科普音频",
             "en": "2015-resnet English audio narration"
@@ -29660,7 +29660,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2016-densenet-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2016-densenet-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2016-densenet-zh-original-v1.mp3",
           "title": {
             "zh": "2016-densenet 中文原版科普音频",
             "en": "2016-densenet original Chinese audio narration"
@@ -29675,7 +29675,7 @@ const milestones = [
         },
         {
           "id": "asset-2016-densenet-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2016-densenet-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2016-densenet-en-v1.mp3",
           "title": {
             "zh": "2016-densenet 英文科普音频",
             "en": "2016-densenet English audio narration"
@@ -30231,7 +30231,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2017-mobilenets-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-mobilenets-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-mobilenets-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2017-mobilenets 中文原版科普音频",
             "en": "ai100-2017-mobilenets original Chinese audio narration"
@@ -30246,7 +30246,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2017-mobilenets-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-mobilenets-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-mobilenets-en-v1.mp3",
           "title": {
             "zh": "ai100-2017-mobilenets 英文科普音频",
             "en": "ai100-2017-mobilenets English audio narration"
@@ -30815,7 +30815,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2018-squeeze-excitation-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2018-squeeze-excitation-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2018-squeeze-excitation-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2018-squeeze-excitation 中文原版科普音频",
             "en": "ai100-2018-squeeze-excitation original Chinese audio narration"
@@ -30830,7 +30830,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2018-squeeze-excitation-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2018-squeeze-excitation-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2018-squeeze-excitation-en-v1.mp3",
           "title": {
             "zh": "ai100-2018-squeeze-excitation 英文科普音频",
             "en": "ai100-2018-squeeze-excitation English audio narration"
@@ -31381,7 +31381,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2014-r-cnn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2014-r-cnn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2014-r-cnn-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2014-r-cnn 中文原版科普音频",
             "en": "ai100-2014-r-cnn original Chinese audio narration"
@@ -31396,7 +31396,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2014-r-cnn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2014-r-cnn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2014-r-cnn-en-v1.mp3",
           "title": {
             "zh": "ai100-2014-r-cnn 英文科普音频",
             "en": "ai100-2014-r-cnn English audio narration"
@@ -31931,7 +31931,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2015-fast-r-cnn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-fast-r-cnn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-fast-r-cnn-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2015-fast-r-cnn 中文原版科普音频",
             "en": "ai100-2015-fast-r-cnn original Chinese audio narration"
@@ -31946,7 +31946,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2015-fast-r-cnn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-fast-r-cnn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-fast-r-cnn-en-v1.mp3",
           "title": {
             "zh": "ai100-2015-fast-r-cnn 英文科普音频",
             "en": "ai100-2015-fast-r-cnn English audio narration"
@@ -32531,7 +32531,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2015-faster-r-cnn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-faster-r-cnn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-faster-r-cnn-zh-original-v1.mp3",
           "title": {
             "zh": "2015-faster-r-cnn 中文原版科普音频",
             "en": "2015-faster-r-cnn original Chinese audio narration"
@@ -32546,7 +32546,7 @@ const milestones = [
         },
         {
           "id": "asset-2015-faster-r-cnn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-faster-r-cnn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-faster-r-cnn-en-v1.mp3",
           "title": {
             "zh": "2015-faster-r-cnn 英文科普音频",
             "en": "2015-faster-r-cnn English audio narration"
@@ -33145,7 +33145,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2017-mask-r-cnn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-mask-r-cnn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-mask-r-cnn-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2017-mask-r-cnn 中文原版科普音频",
             "en": "ai100-2017-mask-r-cnn original Chinese audio narration"
@@ -33160,7 +33160,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2017-mask-r-cnn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-mask-r-cnn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-mask-r-cnn-en-v1.mp3",
           "title": {
             "zh": "ai100-2017-mask-r-cnn 英文科普音频",
             "en": "ai100-2017-mask-r-cnn English audio narration"
@@ -33727,7 +33727,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2017-fpn-retinanet-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-fpn-retinanet-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-fpn-retinanet-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2017-fpn-retinanet 中文原版科普音频",
             "en": "ai100-2017-fpn-retinanet original Chinese audio narration"
@@ -33742,7 +33742,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2017-fpn-retinanet-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-fpn-retinanet-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-fpn-retinanet-en-v1.mp3",
           "title": {
             "zh": "ai100-2017-fpn-retinanet 英文科普音频",
             "en": "ai100-2017-fpn-retinanet English audio narration"
@@ -34294,7 +34294,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2016-yolo-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2016-yolo-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2016-yolo-zh-original-v1.mp3",
           "title": {
             "zh": "2016-yolo 中文原版科普音频",
             "en": "2016-yolo original Chinese audio narration"
@@ -34309,7 +34309,7 @@ const milestones = [
         },
         {
           "id": "asset-2016-yolo-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2016-yolo-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2016-yolo-en-v1.mp3",
           "title": {
             "zh": "2016-yolo 英文科普音频",
             "en": "2016-yolo English audio narration"
@@ -34829,7 +34829,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2016-ssd-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2016-ssd-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2016-ssd-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2016-ssd 中文原版科普音频",
             "en": "ai100-2016-ssd original Chinese audio narration"
@@ -34844,7 +34844,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2016-ssd-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2016-ssd-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2016-ssd-en-v1.mp3",
           "title": {
             "zh": "ai100-2016-ssd 英文科普音频",
             "en": "ai100-2016-ssd English audio narration"
@@ -35413,7 +35413,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2015-fcn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-fcn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-fcn-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2015-fcn 中文原版科普音频",
             "en": "ai100-2015-fcn original Chinese audio narration"
@@ -35428,7 +35428,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2015-fcn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-fcn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-fcn-en-v1.mp3",
           "title": {
             "zh": "ai100-2015-fcn 英文科普音频",
             "en": "ai100-2015-fcn English audio narration"
@@ -35978,7 +35978,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2015-u-net-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-u-net-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-u-net-zh-original-v1.mp3",
           "title": {
             "zh": "2015-u-net 中文原版科普音频",
             "en": "2015-u-net original Chinese audio narration"
@@ -35993,7 +35993,7 @@ const milestones = [
         },
         {
           "id": "asset-2015-u-net-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-u-net-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-u-net-en-v1.mp3",
           "title": {
             "zh": "2015-u-net 英文科普音频",
             "en": "2015-u-net English audio narration"
@@ -36523,7 +36523,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1997-lstm-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1997-lstm-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1997-lstm-zh-original-v1.mp3",
           "title": {
             "zh": "1997-lstm 中文原版科普音频",
             "en": "1997-lstm original Chinese audio narration"
@@ -36538,7 +36538,7 @@ const milestones = [
         },
         {
           "id": "asset-1997-lstm-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1997-lstm-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1997-lstm-en-v1.mp3",
           "title": {
             "zh": "1997-lstm 英文科普音频",
             "en": "1997-lstm English audio narration"
@@ -37173,7 +37173,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2014-seq2seq-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2014-seq2seq-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2014-seq2seq-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2014-seq2seq 中文原版科普音频",
             "en": "ai100-2014-seq2seq original Chinese audio narration"
@@ -37188,7 +37188,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2014-seq2seq-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2014-seq2seq-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2014-seq2seq-en-v1.mp3",
           "title": {
             "zh": "ai100-2014-seq2seq 英文科普音频",
             "en": "ai100-2014-seq2seq English audio narration"
@@ -37817,7 +37817,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2014-attention-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-attention-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-attention-zh-original-v1.mp3",
           "title": {
             "zh": "2014-attention 中文原版科普音频",
             "en": "2014-attention original Chinese audio narration"
@@ -37832,7 +37832,7 @@ const milestones = [
         },
         {
           "id": "asset-2014-attention-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-attention-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-attention-en-v1.mp3",
           "title": {
             "zh": "2014-attention 英文科普音频",
             "en": "2014-attention English audio narration"
@@ -38544,7 +38544,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2017-transformer-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2017-transformer-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2017-transformer-zh-original-v1.mp3",
           "title": {
             "zh": "2017-transformer 中文原版科普音频",
             "en": "2017-transformer original Chinese audio narration"
@@ -38559,7 +38559,7 @@ const milestones = [
         },
         {
           "id": "asset-2017-transformer-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2017-transformer-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2017-transformer-en-v1.mp3",
           "title": {
             "zh": "2017-transformer 英文科普音频",
             "en": "2017-transformer English audio narration"
@@ -39175,7 +39175,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2018-bert-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2018-bert-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2018-bert-zh-original-v1.mp3",
           "title": {
             "zh": "2018-bert 中文原版科普音频",
             "en": "2018-bert original Chinese audio narration"
@@ -39190,7 +39190,7 @@ const milestones = [
         },
         {
           "id": "asset-2018-bert-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2018-bert-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2018-bert-en-v1.mp3",
           "title": {
             "zh": "2018-bert 英文科普音频",
             "en": "2018-bert English audio narration"
@@ -39871,7 +39871,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2018-gpt-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2018-gpt-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2018-gpt-zh-original-v1.mp3",
           "title": {
             "zh": "2018-gpt 中文原版科普音频",
             "en": "2018-gpt original Chinese audio narration"
@@ -39886,7 +39886,7 @@ const milestones = [
         },
         {
           "id": "asset-2018-gpt-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2018-gpt-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2018-gpt-en-v1.mp3",
           "title": {
             "zh": "2018-gpt 英文科普音频",
             "en": "2018-gpt English audio narration"
@@ -40547,7 +40547,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2020-vit-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2020-vit-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2020-vit-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2020-vit 中文原版科普音频",
             "en": "ai100-2020-vit original Chinese audio narration"
@@ -40562,7 +40562,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2020-vit-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2020-vit-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2020-vit-en-v1.mp3",
           "title": {
             "zh": "ai100-2020-vit 英文科普音频",
             "en": "ai100-2020-vit English audio narration"
@@ -41119,7 +41119,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2021-swin-transformer-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2021-swin-transformer-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2021-swin-transformer-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2021-swin-transformer 中文原版科普音频",
             "en": "ai100-2021-swin-transformer original Chinese audio narration"
@@ -41134,7 +41134,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2021-swin-transformer-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2021-swin-transformer-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2021-swin-transformer-en-v1.mp3",
           "title": {
             "zh": "ai100-2021-swin-transformer 英文科普音频",
             "en": "ai100-2021-swin-transformer English audio narration"
@@ -41669,7 +41669,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2000-neural-language-model-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2000-neural-language-model-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2000-neural-language-model-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2000-neural-language-model 中文原版科普音频",
             "en": "ai100-2000-neural-language-model original Chinese audio narration"
@@ -41684,7 +41684,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2000-neural-language-model-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2000-neural-language-model-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2000-neural-language-model-en-v1.mp3",
           "title": {
             "zh": "ai100-2000-neural-language-model 英文科普音频",
             "en": "ai100-2000-neural-language-model English audio narration"
@@ -42210,7 +42210,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2013-word2vec-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2013-word2vec-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2013-word2vec-zh-original-v1.mp3",
           "title": {
             "zh": "2013-word2vec 中文原版科普音频",
             "en": "2013-word2vec original Chinese audio narration"
@@ -42225,7 +42225,7 @@ const milestones = [
         },
         {
           "id": "asset-2013-word2vec-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2013-word2vec-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2013-word2vec-en-v1.mp3",
           "title": {
             "zh": "2013-word2vec 英文科普音频",
             "en": "2013-word2vec English audio narration"
@@ -42764,7 +42764,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2014-glove-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2014-glove-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2014-glove-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2014-glove 中文原版科普音频",
             "en": "ai100-2014-glove original Chinese audio narration"
@@ -42779,7 +42779,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2014-glove-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2014-glove-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2014-glove-en-v1.mp3",
           "title": {
             "zh": "ai100-2014-glove 英文科普音频",
             "en": "ai100-2014-glove English audio narration"
@@ -43492,7 +43492,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2014-gan-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-gan-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-gan-zh-original-v1.mp3",
           "title": {
             "zh": "2014-gan 中文原版科普音频",
             "en": "2014-gan original Chinese audio narration"
@@ -43507,7 +43507,7 @@ const milestones = [
         },
         {
           "id": "asset-2014-gan-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-gan-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-gan-en-v1.mp3",
           "title": {
             "zh": "2014-gan 英文科普音频",
             "en": "2014-gan English audio narration"
@@ -44056,7 +44056,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2014-conditional-gan-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2014-conditional-gan-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2014-conditional-gan-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2014-conditional-gan 中文原版科普音频",
             "en": "ai100-2014-conditional-gan original Chinese audio narration"
@@ -44071,7 +44071,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2014-conditional-gan-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2014-conditional-gan-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2014-conditional-gan-en-v1.mp3",
           "title": {
             "zh": "ai100-2014-conditional-gan 英文科普音频",
             "en": "ai100-2014-conditional-gan English audio narration"
@@ -44620,7 +44620,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2015-dcgan-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-dcgan-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-dcgan-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2015-dcgan 中文原版科普音频",
             "en": "ai100-2015-dcgan original Chinese audio narration"
@@ -44635,7 +44635,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2015-dcgan-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-dcgan-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-dcgan-en-v1.mp3",
           "title": {
             "zh": "ai100-2015-dcgan 英文科普音频",
             "en": "ai100-2015-dcgan English audio narration"
@@ -45181,7 +45181,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2017-wasserstein-gan-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-wasserstein-gan-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-wasserstein-gan-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2017-wasserstein-gan 中文原版科普音频",
             "en": "ai100-2017-wasserstein-gan original Chinese audio narration"
@@ -45196,7 +45196,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2017-wasserstein-gan-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-wasserstein-gan-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-wasserstein-gan-en-v1.mp3",
           "title": {
             "zh": "ai100-2017-wasserstein-gan 英文科普音频",
             "en": "ai100-2017-wasserstein-gan English audio narration"
@@ -45829,7 +45829,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2017-cyclegan-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-cyclegan-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-cyclegan-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2017-cyclegan 中文原版科普音频",
             "en": "ai100-2017-cyclegan original Chinese audio narration"
@@ -45844,7 +45844,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2017-cyclegan-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-cyclegan-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-cyclegan-en-v1.mp3",
           "title": {
             "zh": "ai100-2017-cyclegan 英文科普音频",
             "en": "ai100-2017-cyclegan English audio narration"
@@ -46395,7 +46395,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2017-pix2pix-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-pix2pix-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-pix2pix-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2017-pix2pix 中文原版科普音频",
             "en": "ai100-2017-pix2pix original Chinese audio narration"
@@ -46410,7 +46410,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2017-pix2pix-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-pix2pix-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-pix2pix-en-v1.mp3",
           "title": {
             "zh": "ai100-2017-pix2pix 英文科普音频",
             "en": "ai100-2017-pix2pix English audio narration"
@@ -46961,7 +46961,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2019-stylegan-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2019-stylegan-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2019-stylegan-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2019-stylegan 中文原版科普音频",
             "en": "ai100-2019-stylegan original Chinese audio narration"
@@ -46976,7 +46976,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2019-stylegan-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2019-stylegan-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2019-stylegan-en-v1.mp3",
           "title": {
             "zh": "ai100-2019-stylegan 英文科普音频",
             "en": "ai100-2019-stylegan English audio narration"
@@ -47543,7 +47543,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2013-variational-autoencoder-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2013-variational-autoencoder-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2013-variational-autoencoder-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2013-variational-autoencoder 中文原版科普音频",
             "en": "ai100-2013-variational-autoencoder original Chinese audio narration"
@@ -47558,7 +47558,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2013-variational-autoencoder-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2013-variational-autoencoder-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2013-variational-autoencoder-en-v1.mp3",
           "title": {
             "zh": "ai100-2013-variational-autoencoder 英文科普音频",
             "en": "ai100-2013-variational-autoencoder English audio narration"
@@ -48141,7 +48141,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2015-diffusion-model-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-diffusion-model-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-diffusion-model-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2015-diffusion-model 中文原版科普音频",
             "en": "ai100-2015-diffusion-model original Chinese audio narration"
@@ -48156,7 +48156,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2015-diffusion-model-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-diffusion-model-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-diffusion-model-en-v1.mp3",
           "title": {
             "zh": "ai100-2015-diffusion-model 英文科普音频",
             "en": "ai100-2015-diffusion-model English audio narration"
@@ -48724,7 +48724,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2005-gnn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2005-gnn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2005-gnn-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2005-gnn 中文原版科普音频",
             "en": "ai100-2005-gnn original Chinese audio narration"
@@ -48739,7 +48739,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2005-gnn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2005-gnn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2005-gnn-en-v1.mp3",
           "title": {
             "zh": "ai100-2005-gnn 英文科普音频",
             "en": "ai100-2005-gnn English audio narration"
@@ -49372,7 +49372,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2016-gcn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2016-gcn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2016-gcn-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2016-gcn 中文原版科普音频",
             "en": "ai100-2016-gcn original Chinese audio narration"
@@ -49387,7 +49387,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2016-gcn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2016-gcn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2016-gcn-en-v1.mp3",
           "title": {
             "zh": "ai100-2016-gcn 英文科普音频",
             "en": "ai100-2016-gcn English audio narration"
@@ -49938,7 +49938,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2017-gat-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-gat-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-gat-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2017-gat 中文原版科普音频",
             "en": "ai100-2017-gat original Chinese audio narration"
@@ -49953,7 +49953,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2017-gat-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-gat-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-gat-en-v1.mp3",
           "title": {
             "zh": "ai100-2017-gat 英文科普音频",
             "en": "ai100-2017-gat English audio narration"
@@ -50514,7 +50514,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2016-nas-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2016-nas-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2016-nas-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2016-nas 中文原版科普音频",
             "en": "ai100-2016-nas original Chinese audio narration"
@@ -50529,7 +50529,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2016-nas-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2016-nas-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2016-nas-en-v1.mp3",
           "title": {
             "zh": "ai100-2016-nas 英文科普音频",
             "en": "ai100-2016-nas English audio narration"
@@ -51080,7 +51080,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2015-deep-compression-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-deep-compression-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-deep-compression-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2015-deep-compression 中文原版科普音频",
             "en": "ai100-2015-deep-compression original Chinese audio narration"
@@ -51095,7 +51095,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2015-deep-compression-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-deep-compression-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-deep-compression-en-v1.mp3",
           "title": {
             "zh": "ai100-2015-deep-compression 英文科普音频",
             "en": "ai100-2015-deep-compression English audio narration"
@@ -51672,7 +51672,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2015-knowledge-distillation-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-knowledge-distillation-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-knowledge-distillation-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2015-knowledge-distillation 中文原版科普音频",
             "en": "ai100-2015-knowledge-distillation original Chinese audio narration"
@@ -51687,7 +51687,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2015-knowledge-distillation-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-knowledge-distillation-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-knowledge-distillation-en-v1.mp3",
           "title": {
             "zh": "ai100-2015-knowledge-distillation 英文科普音频",
             "en": "ai100-2015-knowledge-distillation English audio narration"
@@ -52249,7 +52249,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2009-imagenet-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2009-imagenet-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2009-imagenet-zh-original-v1.mp3",
           "title": {
             "zh": "2009-imagenet 中文原版科普音频",
             "en": "2009-imagenet original Chinese audio narration"
@@ -52264,7 +52264,7 @@ const milestones = [
         },
         {
           "id": "asset-2009-imagenet-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2009-imagenet-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2009-imagenet-en-v1.mp3",
           "title": {
             "zh": "2009-imagenet 英文科普音频",
             "en": "2009-imagenet English audio narration"
@@ -52784,7 +52784,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2014-ms-coco-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2014-ms-coco-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2014-ms-coco-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2014-ms-coco 中文原版科普音频",
             "en": "ai100-2014-ms-coco original Chinese audio narration"
@@ -52799,7 +52799,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2014-ms-coco-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2014-ms-coco-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2014-ms-coco-en-v1.mp3",
           "title": {
             "zh": "ai100-2014-ms-coco 英文科普音频",
             "en": "ai100-2014-ms-coco English audio narration"
@@ -53335,7 +53335,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1988-td-update-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1988-td-update-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1988-td-update-zh-original-v1.mp3",
           "title": {
             "zh": "1988-td-update 中文原版科普音频",
             "en": "1988-td-update original Chinese audio narration"
@@ -53350,7 +53350,7 @@ const milestones = [
         },
         {
           "id": "asset-1988-td-update-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1988-td-update-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1988-td-update-en-v1.mp3",
           "title": {
             "zh": "1988-td-update 英文科普音频",
             "en": "1988-td-update English audio narration"
@@ -53863,7 +53863,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1989-q-learning-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1989-q-learning-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1989-q-learning-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1989-q-learning 中文原版科普音频",
             "en": "ai100-1989-q-learning original Chinese audio narration"
@@ -53878,7 +53878,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1989-q-learning-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1989-q-learning-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1989-q-learning-en-v1.mp3",
           "title": {
             "zh": "ai100-1989-q-learning 英文科普音频",
             "en": "ai100-1989-q-learning English audio narration"
@@ -54465,7 +54465,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2013-dqn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2013-dqn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2013-dqn-zh-original-v1.mp3",
           "title": {
             "zh": "2013-dqn 中文原版科普音频",
             "en": "2013-dqn original Chinese audio narration"
@@ -54480,7 +54480,7 @@ const milestones = [
         },
         {
           "id": "asset-2013-dqn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2013-dqn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2013-dqn-en-v1.mp3",
           "title": {
             "zh": "2013-dqn 英文科普音频",
             "en": "2013-dqn English audio narration"
@@ -55065,7 +55065,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2015-ddpg-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-ddpg-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-ddpg-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2015-ddpg 中文原版科普音频",
             "en": "ai100-2015-ddpg original Chinese audio narration"
@@ -55080,7 +55080,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2015-ddpg-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-ddpg-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-ddpg-en-v1.mp3",
           "title": {
             "zh": "ai100-2015-ddpg 英文科普音频",
             "en": "ai100-2015-ddpg English audio narration"
@@ -55720,7 +55720,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2016-alphago-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
           "title": {
             "zh": "2016-alphago 中文原版科普音频",
             "en": "2016-alphago original Chinese audio narration"
@@ -55735,7 +55735,7 @@ const milestones = [
         },
         {
           "id": "asset-2016-alphago-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2016-alphago-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2016-alphago-en-v1.mp3",
           "title": {
             "zh": "2016-alphago 英文科普音频",
             "en": "2016-alphago English audio narration"
@@ -56272,7 +56272,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2020-alphafold-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2020-alphafold-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2020-alphafold-zh-original-v1.mp3",
           "title": {
             "zh": "2020-alphafold 中文原版科普音频",
             "en": "2020-alphafold original Chinese audio narration"
@@ -56287,7 +56287,7 @@ const milestones = [
         },
         {
           "id": "asset-2020-alphafold-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2020-alphafold-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2020-alphafold-en-v1.mp3",
           "title": {
             "zh": "2020-alphafold 英文科普音频",
             "en": "2020-alphafold English audio narration"
@@ -56998,7 +56998,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1983-actor-critic-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1983-actor-critic-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1983-actor-critic-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1983-actor-critic 中文原版科普音频",
             "en": "ai100-1983-actor-critic original Chinese audio narration"
@@ -57013,7 +57013,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1983-actor-critic-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1983-actor-critic-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1983-actor-critic-en-v1.mp3",
           "title": {
             "zh": "ai100-1983-actor-critic 英文科普音频",
             "en": "ai100-1983-actor-critic English audio narration"
@@ -57564,7 +57564,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2016-a3c-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2016-a3c-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2016-a3c-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2016-a3c 中文原版科普音频",
             "en": "ai100-2016-a3c original Chinese audio narration"
@@ -57579,7 +57579,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2016-a3c-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2016-a3c-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2016-a3c-en-v1.mp3",
           "title": {
             "zh": "ai100-2016-a3c 英文科普音频",
             "en": "ai100-2016-a3c English audio narration"
@@ -58146,7 +58146,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1994-sarsa-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1994-sarsa-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1994-sarsa-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1994-sarsa 中文原版科普音频",
             "en": "ai100-1994-sarsa original Chinese audio narration"
@@ -58161,7 +58161,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1994-sarsa-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1994-sarsa-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1994-sarsa-en-v1.mp3",
           "title": {
             "zh": "ai100-1994-sarsa 英文科普音频",
             "en": "ai100-1994-sarsa English audio narration"
@@ -58689,7 +58689,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1992-reinforce-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1992-reinforce-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1992-reinforce-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1992-reinforce 中文原版科普音频",
             "en": "ai100-1992-reinforce original Chinese audio narration"
@@ -58704,7 +58704,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1992-reinforce-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1992-reinforce-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1992-reinforce-en-v1.mp3",
           "title": {
             "zh": "ai100-1992-reinforce 英文科普音频",
             "en": "ai100-1992-reinforce English audio narration"
@@ -59255,7 +59255,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1999-policy-gradient-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1999-policy-gradient-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1999-policy-gradient-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1999-policy-gradient 中文原版科普音频",
             "en": "ai100-1999-policy-gradient original Chinese audio narration"
@@ -59270,7 +59270,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1999-policy-gradient-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1999-policy-gradient-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1999-policy-gradient-en-v1.mp3",
           "title": {
             "zh": "ai100-1999-policy-gradient 英文科普音频",
             "en": "ai100-1999-policy-gradient English audio narration"
@@ -59854,7 +59854,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1984-cart-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1984-cart-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1984-cart-zh-original-v1.mp3",
           "title": {
             "zh": "1984-cart 中文原版科普音频",
             "en": "1984-cart original Chinese audio narration"
@@ -59869,7 +59869,7 @@ const milestones = [
         },
         {
           "id": "asset-1984-cart-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1984-cart-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1984-cart-en-v1.mp3",
           "title": {
             "zh": "1984-cart 英文科普音频",
             "en": "1984-cart English audio narration"
@@ -60367,7 +60367,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1986-id3-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1986-id3-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1986-id3-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1986-id3 中文原版科普音频",
             "en": "ai100-1986-id3 original Chinese audio narration"
@@ -60382,7 +60382,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1986-id3-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1986-id3-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1986-id3-en-v1.mp3",
           "title": {
             "zh": "ai100-1986-id3 英文科普音频",
             "en": "ai100-1986-id3 English audio narration"
@@ -60952,7 +60952,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1993-c45-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1993-c45-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1993-c45-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1993-c45 中文原版科普音频",
             "en": "ai100-1993-c45 original Chinese audio narration"
@@ -60967,7 +60967,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1993-c45-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1993-c45-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1993-c45-en-v1.mp3",
           "title": {
             "zh": "ai100-1993-c45 英文科普音频",
             "en": "ai100-1993-c45 English audio narration"
@@ -61502,7 +61502,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1996-bagging-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1996-bagging-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1996-bagging-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1996-bagging 中文原版科普音频",
             "en": "ai100-1996-bagging original Chinese audio narration"
@@ -61517,7 +61517,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1996-bagging-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1996-bagging-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1996-bagging-en-v1.mp3",
           "title": {
             "zh": "ai100-1996-bagging 英文科普音频",
             "en": "ai100-1996-bagging English audio narration"
@@ -62068,7 +62068,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2001-random-forests-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2001-random-forests-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2001-random-forests-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2001-random-forests 中文原版科普音频",
             "en": "ai100-2001-random-forests original Chinese audio narration"
@@ -62083,7 +62083,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2001-random-forests-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2001-random-forests-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2001-random-forests-en-v1.mp3",
           "title": {
             "zh": "ai100-2001-random-forests 英文科普音频",
             "en": "ai100-2001-random-forests English audio narration"
@@ -62620,7 +62620,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1990-boosting-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1990-boosting-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1990-boosting-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1990-boosting 中文原版科普音频",
             "en": "ai100-1990-boosting original Chinese audio narration"
@@ -62635,7 +62635,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1990-boosting-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1990-boosting-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1990-boosting-en-v1.mp3",
           "title": {
             "zh": "ai100-1990-boosting 英文科普音频",
             "en": "ai100-1990-boosting English audio narration"
@@ -63168,7 +63168,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1997-adaboost-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1997-adaboost-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1997-adaboost-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1997-adaboost 中文原版科普音频",
             "en": "ai100-1997-adaboost original Chinese audio narration"
@@ -63183,7 +63183,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1997-adaboost-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1997-adaboost-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1997-adaboost-en-v1.mp3",
           "title": {
             "zh": "ai100-1997-adaboost 英文科普音频",
             "en": "ai100-1997-adaboost English audio narration"
@@ -63718,7 +63718,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2001-gradient-boosting-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2001-gradient-boosting-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2001-gradient-boosting-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2001-gradient-boosting 中文原版科普音频",
             "en": "ai100-2001-gradient-boosting original Chinese audio narration"
@@ -63733,7 +63733,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2001-gradient-boosting-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2001-gradient-boosting-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2001-gradient-boosting-en-v1.mp3",
           "title": {
             "zh": "ai100-2001-gradient-boosting 英文科普音频",
             "en": "ai100-2001-gradient-boosting English audio narration"
@@ -64284,7 +64284,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2016-xgboost-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2016-xgboost-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2016-xgboost-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2016-xgboost 中文原版科普音频",
             "en": "ai100-2016-xgboost original Chinese audio narration"
@@ -64299,7 +64299,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2016-xgboost-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2016-xgboost-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2016-xgboost-en-v1.mp3",
           "title": {
             "zh": "ai100-2016-xgboost 英文科普音频",
             "en": "ai100-2016-xgboost English audio narration"
@@ -64852,7 +64852,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2017-lightgbm-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-lightgbm-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-lightgbm-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2017-lightgbm 中文原版科普音频",
             "en": "ai100-2017-lightgbm original Chinese audio narration"
@@ -64867,7 +64867,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2017-lightgbm-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2017-lightgbm-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2017-lightgbm-en-v1.mp3",
           "title": {
             "zh": "ai100-2017-lightgbm 英文科普音频",
             "en": "ai100-2017-lightgbm English audio narration"
@@ -65403,7 +65403,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1985-bayesian-network-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1985-bayesian-network-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1985-bayesian-network-zh-original-v1.mp3",
           "title": {
             "zh": "1985-bayesian-network 中文原版科普音频",
             "en": "1985-bayesian-network original Chinese audio narration"
@@ -65418,7 +65418,7 @@ const milestones = [
         },
         {
           "id": "asset-1985-bayesian-network-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1985-bayesian-network-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1985-bayesian-network-en-v1.mp3",
           "title": {
             "zh": "1985-bayesian-network 英文科普音频",
             "en": "1985-bayesian-network English audio narration"
@@ -65935,7 +65935,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2003-lda-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2003-lda-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2003-lda-zh-original-v1.mp3",
           "title": {
             "zh": "2003-lda 中文原版科普音频",
             "en": "2003-lda original Chinese audio narration"
@@ -65950,7 +65950,7 @@ const milestones = [
         },
         {
           "id": "asset-2003-lda-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2003-lda-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2003-lda-en-v1.mp3",
           "title": {
             "zh": "2003-lda 英文科普音频",
             "en": "2003-lda English audio narration"
@@ -66470,7 +66470,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2001-crf-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2001-crf-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2001-crf-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2001-crf 中文原版科普音频",
             "en": "ai100-2001-crf original Chinese audio narration"
@@ -66485,7 +66485,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2001-crf-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2001-crf-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2001-crf-en-v1.mp3",
           "title": {
             "zh": "ai100-2001-crf 英文科普音频",
             "en": "ai100-2001-crf English audio narration"
@@ -67021,7 +67021,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1975-genetic-algorithm-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1975-genetic-algorithm-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1975-genetic-algorithm-zh-original-v1.mp3",
           "title": {
             "zh": "1975-genetic-algorithm 中文原版科普音频",
             "en": "1975-genetic-algorithm original Chinese audio narration"
@@ -67036,7 +67036,7 @@ const milestones = [
         },
         {
           "id": "asset-1975-genetic-algorithm-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1975-genetic-algorithm-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1975-genetic-algorithm-en-v1.mp3",
           "title": {
             "zh": "1975-genetic-algorithm 英文科普音频",
             "en": "1975-genetic-algorithm English audio narration"
@@ -67568,7 +67568,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1983-simulated-annealing-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1983-simulated-annealing-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1983-simulated-annealing-zh-original-v1.mp3",
           "title": {
             "zh": "1983-simulated-annealing 中文原版科普音频",
             "en": "1983-simulated-annealing original Chinese audio narration"
@@ -67583,7 +67583,7 @@ const milestones = [
         },
         {
           "id": "asset-1983-simulated-annealing-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1983-simulated-annealing-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1983-simulated-annealing-en-v1.mp3",
           "title": {
             "zh": "1983-simulated-annealing 英文科普音频",
             "en": "1983-simulated-annealing English audio narration"
@@ -68141,7 +68141,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-001-swin-transformer-v2-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-001-swin-transformer-v2-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-001-swin-transformer-v2-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-001-swin-transformer-v2 中文原版科普音频",
             "en": "ai100-annual-2022-2023-001-swin-transformer-v2 original Chinese audio narration"
@@ -68156,7 +68156,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-001-swin-transformer-v2-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-001-swin-transformer-v2-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-001-swin-transformer-v2-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-001-swin-transformer-v2 英文科普音频",
             "en": "ai100-annual-2022-2023-001-swin-transformer-v2 English audio narration"
@@ -68991,7 +68991,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-002-simmim-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-002-simmim-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-002-simmim-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-002-simmim 中文原版科普音频",
             "en": "ai100-annual-2022-2023-002-simmim original Chinese audio narration"
@@ -69006,7 +69006,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-002-simmim-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-002-simmim-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-002-simmim-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-002-simmim 英文科普音频",
             "en": "ai100-annual-2022-2023-002-simmim English audio narration"
@@ -69874,7 +69874,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-024-whisper-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-024-whisper-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-024-whisper-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-024-whisper 中文原版科普音频",
             "en": "ai100-annual-2022-2023-024-whisper original Chinese audio narration"
@@ -69889,7 +69889,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-024-whisper-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-024-whisper-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-024-whisper-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-024-whisper 英文科普音频",
             "en": "ai100-annual-2022-2023-024-whisper English audio narration"
@@ -70662,7 +70662,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-039-palm-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-039-palm-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-039-palm-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-039-palm 中文原版科普音频",
             "en": "ai100-annual-2022-2023-039-palm original Chinese audio narration"
@@ -70677,7 +70677,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-039-palm-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-039-palm-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-039-palm-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-039-palm 英文科普音频",
             "en": "ai100-annual-2022-2023-039-palm English audio narration"
@@ -71483,7 +71483,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-048-instructgpt-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-048-instructgpt 中文原版科普音频",
             "en": "ai100-annual-2022-2023-048-instructgpt original Chinese audio narration"
@@ -71498,7 +71498,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-048-instructgpt-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-048-instructgpt 英文科普音频",
             "en": "ai100-annual-2022-2023-048-instructgpt English audio narration"
@@ -72293,7 +72293,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-059-chain-of-thought-prompting-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-059-chain-of-thought-prompting 中文原版科普音频",
             "en": "ai100-annual-2022-2023-059-chain-of-thought-prompting original Chinese audio narration"
@@ -72308,7 +72308,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-059-chain-of-thought-prompting-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-059-chain-of-thought-prompting 英文科普音频",
             "en": "ai100-annual-2022-2023-059-chain-of-thought-prompting English audio narration"
@@ -73000,7 +73000,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-058-chatgpt-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-058-chatgpt-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-058-chatgpt-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-058-chatgpt 中文原版科普音频",
             "en": "ai100-annual-2022-2023-058-chatgpt original Chinese audio narration"
@@ -73015,7 +73015,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-058-chatgpt-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-058-chatgpt-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-058-chatgpt-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-058-chatgpt 英文科普音频",
             "en": "ai100-annual-2022-2023-058-chatgpt English audio narration"
@@ -73672,7 +73672,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-081-latent-diffusion-models-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-081-latent-diffusion-models-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-081-latent-diffusion-models-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-081-latent-diffusion-models 中文原版科普音频",
             "en": "ai100-annual-2022-2023-081-latent-diffusion-models original Chinese audio narration"
@@ -73687,7 +73687,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-081-latent-diffusion-models-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-081-latent-diffusion-models-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-081-latent-diffusion-models-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-081-latent-diffusion-models 英文科普音频",
             "en": "ai100-annual-2022-2023-081-latent-diffusion-models English audio narration"
@@ -74536,7 +74536,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-114-alphatensor-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-114-alphatensor 中文原版科普音频",
             "en": "ai100-annual-2022-2023-114-alphatensor original Chinese audio narration"
@@ -74551,7 +74551,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-114-alphatensor-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-114-alphatensor 英文科普音频",
             "en": "ai100-annual-2022-2023-114-alphatensor English audio narration"
@@ -75230,7 +75230,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-117-saycan-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-117-saycan-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-117-saycan-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-117-saycan 中文原版科普音频",
             "en": "ai100-annual-2022-2023-117-saycan original Chinese audio narration"
@@ -75245,7 +75245,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-117-saycan-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-117-saycan-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-117-saycan-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-117-saycan 英文科普音频",
             "en": "ai100-annual-2022-2023-117-saycan English audio narration"
@@ -76022,7 +76022,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-035-llama-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-035-llama-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-035-llama-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-035-llama 中文原版科普音频",
             "en": "ai100-annual-2022-2023-035-llama original Chinese audio narration"
@@ -76037,7 +76037,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-035-llama-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-035-llama-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-035-llama-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-035-llama 英文科普音频",
             "en": "ai100-annual-2022-2023-035-llama English audio narration"
@@ -76714,7 +76714,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-051-gpt-4-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-051-gpt-4-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-051-gpt-4-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-051-gpt-4 中文原版科普音频",
             "en": "ai100-annual-2022-2023-051-gpt-4 original Chinese audio narration"
@@ -76729,7 +76729,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-051-gpt-4-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-051-gpt-4-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-051-gpt-4-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-051-gpt-4 英文科普音频",
             "en": "ai100-annual-2022-2023-051-gpt-4 English audio narration"
@@ -77403,7 +77403,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-057-claude-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-057-claude-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-057-claude-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-057-claude 中文原版科普音频",
             "en": "ai100-annual-2022-2023-057-claude original Chinese audio narration"
@@ -77418,7 +77418,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-057-claude-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-057-claude-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-057-claude-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-057-claude 英文科普音频",
             "en": "ai100-annual-2022-2023-057-claude English audio narration"
@@ -78158,7 +78158,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-028-blip-2-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-028-blip-2-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-028-blip-2-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-028-blip-2 中文原版科普音频",
             "en": "ai100-annual-2022-2023-028-blip-2 original Chinese audio narration"
@@ -78173,7 +78173,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-028-blip-2-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-028-blip-2-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-028-blip-2-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-028-blip-2 英文科普音频",
             "en": "ai100-annual-2022-2023-028-blip-2 English audio narration"
@@ -78904,7 +78904,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-063-llava-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-063-llava-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-063-llava-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-063-llava 中文原版科普音频",
             "en": "ai100-annual-2022-2023-063-llava original Chinese audio narration"
@@ -78919,7 +78919,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-063-llava-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-063-llava-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-063-llava-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-063-llava 英文科普音频",
             "en": "ai100-annual-2022-2023-063-llava English audio narration"
@@ -79631,7 +79631,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-037-palm-e-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-037-palm-e-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-037-palm-e-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-037-palm-e 中文原版科普音频",
             "en": "ai100-annual-2022-2023-037-palm-e original Chinese audio narration"
@@ -79646,7 +79646,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-037-palm-e-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-037-palm-e-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-037-palm-e-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-037-palm-e 英文科普音频",
             "en": "ai100-annual-2022-2023-037-palm-e English audio narration"
@@ -80393,7 +80393,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-094-controlnet-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-094-controlnet-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-094-controlnet-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-094-controlnet 中文原版科普音频",
             "en": "ai100-annual-2022-2023-094-controlnet original Chinese audio narration"
@@ -80408,7 +80408,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-094-controlnet-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-094-controlnet-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-094-controlnet-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-094-controlnet 英文科普音频",
             "en": "ai100-annual-2022-2023-094-controlnet English audio narration"
@@ -81240,7 +81240,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-101-segment-anything-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-101-segment-anything-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-101-segment-anything-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-101-segment-anything 中文原版科普音频",
             "en": "ai100-annual-2022-2023-101-segment-anything original Chinese audio narration"
@@ -81255,7 +81255,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-101-segment-anything-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-101-segment-anything-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-101-segment-anything-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-101-segment-anything 英文科普音频",
             "en": "ai100-annual-2022-2023-101-segment-anything English audio narration"
@@ -82024,7 +82024,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-087-gen2-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-087-gen2-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-087-gen2-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-087-gen2 中文原版科普音频",
             "en": "ai100-annual-2022-2023-087-gen2 original Chinese audio narration"
@@ -82039,7 +82039,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-087-gen2-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-087-gen2-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-087-gen2-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-087-gen2 英文科普音频",
             "en": "ai100-annual-2022-2023-087-gen2 English audio narration"
@@ -82847,7 +82847,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-110-esmfold-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-110-esmfold-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-110-esmfold-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-110-esmfold 中文原版科普音频",
             "en": "ai100-annual-2022-2023-110-esmfold original Chinese audio narration"
@@ -82862,7 +82862,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-annual-2022-2023-110-esmfold-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-annual-2022-2023-110-esmfold-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-annual-2022-2023-110-esmfold-en-v1.mp3",
           "title": {
             "zh": "ai100-annual-2022-2023-110-esmfold 英文科普音频",
             "en": "ai100-annual-2022-2023-110-esmfold English audio narration"
@@ -83622,7 +83622,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1956-dartmouth-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1956-dartmouth-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1956-dartmouth-zh-original-v1.mp3",
           "title": {
             "zh": "1956-dartmouth 中文原版科普音频",
             "en": "1956-dartmouth original Chinese audio narration"
@@ -83637,7 +83637,7 @@ const milestones = [
         },
         {
           "id": "asset-1956-dartmouth-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1956-dartmouth-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1956-dartmouth-en-v1.mp3",
           "title": {
             "zh": "1956-dartmouth 英文科普音频",
             "en": "1956-dartmouth English audio narration"
@@ -84017,7 +84017,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1957-perceptron-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1957-perceptron-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1957-perceptron-zh-original-v1.mp3",
           "title": {
             "zh": "1957-perceptron 中文原版科普音频",
             "en": "1957-perceptron original Chinese audio narration"
@@ -84032,7 +84032,7 @@ const milestones = [
         },
         {
           "id": "asset-1957-perceptron-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1957-perceptron-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1957-perceptron-en-v1.mp3",
           "title": {
             "zh": "1957-perceptron 英文科普音频",
             "en": "1957-perceptron English audio narration"
@@ -84608,7 +84608,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1969-ai-winter-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1969-ai-winter-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1969-ai-winter-zh-original-v1.mp3",
           "title": {
             "zh": "1969-ai-winter 中文原版科普音频",
             "en": "1969-ai-winter original Chinese audio narration"
@@ -84623,7 +84623,7 @@ const milestones = [
         },
         {
           "id": "asset-1969-ai-winter-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1969-ai-winter-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1969-ai-winter-en-v1.mp3",
           "title": {
             "zh": "1969-ai-winter 英文科普音频",
             "en": "1969-ai-winter English audio narration"
@@ -84944,7 +84944,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-1980-neocognitron-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1980-neocognitron-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1980-neocognitron-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-1980-neocognitron 中文原版科普音频",
             "en": "ai100-1980-neocognitron original Chinese audio narration"
@@ -84959,7 +84959,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-1980-neocognitron-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-1980-neocognitron-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-1980-neocognitron-en-v1.mp3",
           "title": {
             "zh": "ai100-1980-neocognitron 英文科普音频",
             "en": "ai100-1980-neocognitron English audio narration"
@@ -85469,7 +85469,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1982-hopfield-network-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1982-hopfield-network-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1982-hopfield-network-zh-original-v1.mp3",
           "title": {
             "zh": "1982-hopfield-network 中文原版科普音频",
             "en": "1982-hopfield-network original Chinese audio narration"
@@ -85484,7 +85484,7 @@ const milestones = [
         },
         {
           "id": "asset-1982-hopfield-network-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1982-hopfield-network-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1982-hopfield-network-en-v1.mp3",
           "title": {
             "zh": "1982-hopfield-network 英文科普音频",
             "en": "1982-hopfield-network English audio narration"
@@ -86032,7 +86032,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1986-backpropagation-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1986-backpropagation-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1986-backpropagation-zh-original-v1.mp3",
           "title": {
             "zh": "1986-backpropagation 中文原版科普音频",
             "en": "1986-backpropagation original Chinese audio narration"
@@ -86047,7 +86047,7 @@ const milestones = [
         },
         {
           "id": "asset-1986-backpropagation-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1986-backpropagation-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1986-backpropagation-en-v1.mp3",
           "title": {
             "zh": "1986-backpropagation 英文科普音频",
             "en": "1986-backpropagation English audio narration"
@@ -86422,7 +86422,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1986-rnn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1986-rnn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1986-rnn-zh-original-v1.mp3",
           "title": {
             "zh": "1986-rnn 中文原版科普音频",
             "en": "1986-rnn original Chinese audio narration"
@@ -86437,7 +86437,7 @@ const milestones = [
         },
         {
           "id": "asset-1986-rnn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1986-rnn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1986-rnn-en-v1.mp3",
           "title": {
             "zh": "1986-rnn 英文科普音频",
             "en": "1986-rnn English audio narration"
@@ -86747,7 +86747,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1989-cnn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1989-cnn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1989-cnn-zh-original-v1.mp3",
           "title": {
             "zh": "1989-cnn 中文原版科普音频",
             "en": "1989-cnn original Chinese audio narration"
@@ -86762,7 +86762,7 @@ const milestones = [
         },
         {
           "id": "asset-1989-cnn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1989-cnn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1989-cnn-en-v1.mp3",
           "title": {
             "zh": "1989-cnn 英文科普音频",
             "en": "1989-cnn English audio narration"
@@ -87344,7 +87344,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1997-lstm-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1997-lstm-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1997-lstm-zh-original-v1.mp3",
           "title": {
             "zh": "1997-lstm 中文原版科普音频",
             "en": "1997-lstm original Chinese audio narration"
@@ -87359,7 +87359,7 @@ const milestones = [
         },
         {
           "id": "asset-1997-lstm-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1997-lstm-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1997-lstm-en-v1.mp3",
           "title": {
             "zh": "1997-lstm 英文科普音频",
             "en": "1997-lstm English audio narration"
@@ -87940,7 +87940,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2006-dbn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2006-dbn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2006-dbn-zh-original-v1.mp3",
           "title": {
             "zh": "2006-dbn 中文原版科普音频",
             "en": "2006-dbn original Chinese audio narration"
@@ -87955,7 +87955,7 @@ const milestones = [
         },
         {
           "id": "asset-2006-dbn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2006-dbn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2006-dbn-en-v1.mp3",
           "title": {
             "zh": "2006-dbn 英文科普音频",
             "en": "2006-dbn English audio narration"
@@ -88486,7 +88486,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2009-imagenet-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2009-imagenet-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2009-imagenet-zh-original-v1.mp3",
           "title": {
             "zh": "2009-imagenet 中文原版科普音频",
             "en": "2009-imagenet original Chinese audio narration"
@@ -88501,7 +88501,7 @@ const milestones = [
         },
         {
           "id": "asset-2009-imagenet-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2009-imagenet-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2009-imagenet-en-v1.mp3",
           "title": {
             "zh": "2009-imagenet 英文科普音频",
             "en": "2009-imagenet English audio narration"
@@ -89053,7 +89053,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2012-alexnet-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2012-alexnet-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2012-alexnet-zh-original-v1.mp3",
           "title": {
             "zh": "2012-alexnet 中文原版科普音频",
             "en": "2012-alexnet original Chinese audio narration"
@@ -89068,7 +89068,7 @@ const milestones = [
         },
         {
           "id": "asset-2012-alexnet-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2012-alexnet-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2012-alexnet-en-v1.mp3",
           "title": {
             "zh": "2012-alexnet 英文科普音频",
             "en": "2012-alexnet English audio narration"
@@ -89613,7 +89613,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2014-vgg-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-vgg-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-vgg-zh-original-v1.mp3",
           "title": {
             "zh": "2014-vgg 中文原版科普音频",
             "en": "2014-vgg original Chinese audio narration"
@@ -89628,7 +89628,7 @@ const milestones = [
         },
         {
           "id": "asset-2014-vgg-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-vgg-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-vgg-en-v1.mp3",
           "title": {
             "zh": "2014-vgg 英文科普音频",
             "en": "2014-vgg English audio narration"
@@ -90159,7 +90159,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2015-googlenet-inception-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-googlenet-inception-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-googlenet-inception-zh-original-v1.mp3",
           "title": {
             "zh": "2015-googlenet-inception 中文原版科普音频",
             "en": "2015-googlenet-inception original Chinese audio narration"
@@ -90174,7 +90174,7 @@ const milestones = [
         },
         {
           "id": "asset-2015-googlenet-inception-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-googlenet-inception-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-googlenet-inception-en-v1.mp3",
           "title": {
             "zh": "2015-googlenet-inception 英文科普音频",
             "en": "2015-googlenet-inception English audio narration"
@@ -90703,7 +90703,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2014-gan-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-gan-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-gan-zh-original-v1.mp3",
           "title": {
             "zh": "2014-gan 中文原版科普音频",
             "en": "2014-gan original Chinese audio narration"
@@ -90718,7 +90718,7 @@ const milestones = [
         },
         {
           "id": "asset-2014-gan-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-gan-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-gan-en-v1.mp3",
           "title": {
             "zh": "2014-gan 英文科普音频",
             "en": "2014-gan English audio narration"
@@ -91260,7 +91260,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2014-attention-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-attention-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-attention-zh-original-v1.mp3",
           "title": {
             "zh": "2014-attention 中文原版科普音频",
             "en": "2014-attention original Chinese audio narration"
@@ -91275,7 +91275,7 @@ const milestones = [
         },
         {
           "id": "asset-2014-attention-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-attention-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-attention-en-v1.mp3",
           "title": {
             "zh": "2014-attention 英文科普音频",
             "en": "2014-attention English audio narration"
@@ -91880,7 +91880,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2014-highway-network-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-highway-network-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-highway-network-zh-original-v1.mp3",
           "title": {
             "zh": "2014-highway-network 中文原版科普音频",
             "en": "2014-highway-network original Chinese audio narration"
@@ -91895,7 +91895,7 @@ const milestones = [
         },
         {
           "id": "asset-2014-highway-network-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-highway-network-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-highway-network-en-v1.mp3",
           "title": {
             "zh": "2014-highway-network 英文科普音频",
             "en": "2014-highway-network English audio narration"
@@ -92298,7 +92298,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2015-resnet-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-resnet-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-resnet-zh-original-v1.mp3",
           "title": {
             "zh": "2015-resnet 中文原版科普音频",
             "en": "2015-resnet original Chinese audio narration"
@@ -92313,7 +92313,7 @@ const milestones = [
         },
         {
           "id": "asset-2015-resnet-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-resnet-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-resnet-en-v1.mp3",
           "title": {
             "zh": "2015-resnet 英文科普音频",
             "en": "2015-resnet English audio narration"
@@ -92963,7 +92963,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-ai100-2015-diffusion-model-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-diffusion-model-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-diffusion-model-zh-original-v1.mp3",
           "title": {
             "zh": "ai100-2015-diffusion-model 中文原版科普音频",
             "en": "ai100-2015-diffusion-model original Chinese audio narration"
@@ -92978,7 +92978,7 @@ const milestones = [
         },
         {
           "id": "asset-ai100-2015-diffusion-model-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/ai100-2015-diffusion-model-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ai100-2015-diffusion-model-en-v1.mp3",
           "title": {
             "zh": "ai100-2015-diffusion-model 英文科普音频",
             "en": "ai100-2015-diffusion-model English audio narration"
@@ -93542,7 +93542,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2016-densenet-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2016-densenet-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2016-densenet-zh-original-v1.mp3",
           "title": {
             "zh": "2016-densenet 中文原版科普音频",
             "en": "2016-densenet original Chinese audio narration"
@@ -93557,7 +93557,7 @@ const milestones = [
         },
         {
           "id": "asset-2016-densenet-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2016-densenet-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2016-densenet-en-v1.mp3",
           "title": {
             "zh": "2016-densenet 英文科普音频",
             "en": "2016-densenet English audio narration"
@@ -94143,7 +94143,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2016-alphago-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
           "title": {
             "zh": "2016-alphago 中文原版科普音频",
             "en": "2016-alphago original Chinese audio narration"
@@ -94158,7 +94158,7 @@ const milestones = [
         },
         {
           "id": "asset-2016-alphago-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2016-alphago-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2016-alphago-en-v1.mp3",
           "title": {
             "zh": "2016-alphago 英文科普音频",
             "en": "2016-alphago English audio narration"
@@ -94583,7 +94583,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2017-transformer-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2017-transformer-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2017-transformer-zh-original-v1.mp3",
           "title": {
             "zh": "2017-transformer 中文原版科普音频",
             "en": "2017-transformer original Chinese audio narration"
@@ -94598,7 +94598,7 @@ const milestones = [
         },
         {
           "id": "asset-2017-transformer-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2017-transformer-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2017-transformer-en-v1.mp3",
           "title": {
             "zh": "2017-transformer 英文科普音频",
             "en": "2017-transformer English audio narration"
@@ -95146,7 +95146,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2018-bert-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2018-bert-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2018-bert-zh-original-v1.mp3",
           "title": {
             "zh": "2018-bert 中文原版科普音频",
             "en": "2018-bert original Chinese audio narration"
@@ -95161,7 +95161,7 @@ const milestones = [
         },
         {
           "id": "asset-2018-bert-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2018-bert-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2018-bert-en-v1.mp3",
           "title": {
             "zh": "2018-bert 英文科普音频",
             "en": "2018-bert English audio narration"
@@ -95691,7 +95691,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2018-gpt-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2018-gpt-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2018-gpt-zh-original-v1.mp3",
           "title": {
             "zh": "2018-gpt 中文原版科普音频",
             "en": "2018-gpt original Chinese audio narration"
@@ -95706,7 +95706,7 @@ const milestones = [
         },
         {
           "id": "asset-2018-gpt-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2018-gpt-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2018-gpt-en-v1.mp3",
           "title": {
             "zh": "2018-gpt 英文科普音频",
             "en": "2018-gpt English audio narration"
@@ -96245,7 +96245,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2019-ai-feynman-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2019-ai-feynman-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2019-ai-feynman-zh-original-v1.mp3",
           "title": {
             "zh": "2019-ai-feynman 中文原版科普音频",
             "en": "2019-ai-feynman original Chinese audio narration"
@@ -96260,7 +96260,7 @@ const milestones = [
         },
         {
           "id": "asset-2019-ai-feynman-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2019-ai-feynman-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2019-ai-feynman-en-v1.mp3",
           "title": {
             "zh": "2019-ai-feynman 英文科普音频",
             "en": "2019-ai-feynman English audio narration"
@@ -96644,7 +96644,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2020-alphafold-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2020-alphafold-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2020-alphafold-zh-original-v1.mp3",
           "title": {
             "zh": "2020-alphafold 中文原版科普音频",
             "en": "2020-alphafold original Chinese audio narration"
@@ -96659,7 +96659,7 @@ const milestones = [
         },
         {
           "id": "asset-2020-alphafold-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2020-alphafold-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2020-alphafold-en-v1.mp3",
           "title": {
             "zh": "2020-alphafold 英文科普音频",
             "en": "2020-alphafold English audio narration"
@@ -97319,7 +97319,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2022-post-training-intelligence-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2022-post-training-intelligence-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2022-post-training-intelligence-zh-original-v1.mp3",
           "title": {
             "zh": "2022-post-training-intelligence 中文原版科普音频",
             "en": "2022-post-training-intelligence original Chinese audio narration"
@@ -97334,7 +97334,7 @@ const milestones = [
         },
         {
           "id": "asset-2022-post-training-intelligence-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2022-post-training-intelligence-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2022-post-training-intelligence-en-v1.mp3",
           "title": {
             "zh": "2022-post-training-intelligence 英文科普音频",
             "en": "2022-post-training-intelligence English audio narration"
@@ -97808,7 +97808,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2023-agents-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2023-agents-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2023-agents-zh-original-v1.mp3",
           "title": {
             "zh": "2023-agents 中文原版科普音频",
             "en": "2023-agents original Chinese audio narration"
@@ -97823,7 +97823,7 @@ const milestones = [
         },
         {
           "id": "asset-2023-agents-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2023-agents-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2023-agents-en-v1.mp3",
           "title": {
             "zh": "2023-agents 英文科普音频",
             "en": "2023-agents English audio narration"
@@ -98198,7 +98198,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2024-ai-scientist-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2024-ai-scientist-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2024-ai-scientist-zh-original-v1.mp3",
           "title": {
             "zh": "2024-ai-scientist 中文原版科普音频",
             "en": "2024-ai-scientist original Chinese audio narration"
@@ -98213,7 +98213,7 @@ const milestones = [
         },
         {
           "id": "asset-2024-ai-scientist-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2024-ai-scientist-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2024-ai-scientist-en-v1.mp3",
           "title": {
             "zh": "2024-ai-scientist 英文科普音频",
             "en": "2024-ai-scientist English audio narration"
@@ -98653,7 +98653,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2025-llm-competition-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2025-llm-competition-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2025-llm-competition-zh-original-v1.mp3",
           "title": {
             "zh": "2025-llm-competition 中文原版科普音频",
             "en": "2025-llm-competition original Chinese audio narration"
@@ -98668,7 +98668,7 @@ const milestones = [
         },
         {
           "id": "asset-2025-llm-competition-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2025-llm-competition-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2025-llm-competition-en-v1.mp3",
           "title": {
             "zh": "2025-llm-competition 英文科普音频",
             "en": "2025-llm-competition English audio narration"
@@ -99101,7 +99101,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1951-strachey-draughts-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1951-strachey-draughts-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1951-strachey-draughts-zh-original-v1.mp3",
           "title": {
             "zh": "1951-strachey-draughts 中文原版科普音频",
             "en": "1951-strachey-draughts original Chinese audio narration"
@@ -99116,7 +99116,7 @@ const milestones = [
         },
         {
           "id": "asset-1951-strachey-draughts-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1951-strachey-draughts-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1951-strachey-draughts-en-v1.mp3",
           "title": {
             "zh": "1951-strachey-draughts 英文科普音频",
             "en": "1951-strachey-draughts English audio narration"
@@ -99724,7 +99724,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2016-alphago-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
           "title": {
             "zh": "2016-alphago 中文原版科普音频",
             "en": "2016-alphago original Chinese audio narration"
@@ -99739,7 +99739,7 @@ const milestones = [
         },
         {
           "id": "asset-2016-alphago-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2016-alphago-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2016-alphago-en-v1.mp3",
           "title": {
             "zh": "2016-alphago 英文科普音频",
             "en": "2016-alphago English audio narration"
@@ -100291,7 +100291,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1988-td-update-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1988-td-update-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1988-td-update-zh-original-v1.mp3",
           "title": {
             "zh": "1988-td-update 中文原版科普音频",
             "en": "1988-td-update original Chinese audio narration"
@@ -100306,7 +100306,7 @@ const milestones = [
         },
         {
           "id": "asset-1988-td-update-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1988-td-update-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1988-td-update-en-v1.mp3",
           "title": {
             "zh": "1988-td-update 英文科普音频",
             "en": "1988-td-update English audio narration"
@@ -100839,7 +100839,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1994-chinook-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1994-chinook-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1994-chinook-zh-original-v1.mp3",
           "title": {
             "zh": "1994-chinook 中文原版科普音频",
             "en": "1994-chinook original Chinese audio narration"
@@ -100854,7 +100854,7 @@ const milestones = [
         },
         {
           "id": "asset-1994-chinook-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1994-chinook-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1994-chinook-en-v1.mp3",
           "title": {
             "zh": "1994-chinook 英文科普音频",
             "en": "1994-chinook English audio narration"
@@ -101397,7 +101397,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1997-logistello-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1997-logistello-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1997-logistello-zh-original-v1.mp3",
           "title": {
             "zh": "1997-logistello 中文原版科普音频",
             "en": "1997-logistello original Chinese audio narration"
@@ -101412,7 +101412,7 @@ const milestones = [
         },
         {
           "id": "asset-1997-logistello-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1997-logistello-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1997-logistello-en-v1.mp3",
           "title": {
             "zh": "1997-logistello 英文科普音频",
             "en": "1997-logistello English audio narration"
@@ -102104,7 +102104,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1997-deep-blue-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1997-deep-blue-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1997-deep-blue-zh-original-v1.mp3",
           "title": {
             "zh": "1997-deep-blue 中文原版科普音频",
             "en": "1997-deep-blue original Chinese audio narration"
@@ -102119,7 +102119,7 @@ const milestones = [
         },
         {
           "id": "asset-1997-deep-blue-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1997-deep-blue-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1997-deep-blue-en-v1.mp3",
           "title": {
             "zh": "1997-deep-blue 英文科普音频",
             "en": "1997-deep-blue English audio narration"
@@ -102739,7 +102739,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2000s-alphacat-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2000s-alphacat-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2000s-alphacat-zh-original-v1.mp3",
           "title": {
             "zh": "2000s-alphacat 中文原版科普音频",
             "en": "2000s-alphacat original Chinese audio narration"
@@ -102754,7 +102754,7 @@ const milestones = [
         },
         {
           "id": "asset-2000s-alphacat-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2000s-alphacat-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2000s-alphacat-en-v1.mp3",
           "title": {
             "zh": "2000s-alphacat 英文科普音频",
             "en": "2000s-alphacat English audio narration"
@@ -103319,7 +103319,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2013-dqn-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2013-dqn-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2013-dqn-zh-original-v1.mp3",
           "title": {
             "zh": "2013-dqn 中文原版科普音频",
             "en": "2013-dqn original Chinese audio narration"
@@ -103334,7 +103334,7 @@ const milestones = [
         },
         {
           "id": "asset-2013-dqn-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2013-dqn-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2013-dqn-en-v1.mp3",
           "title": {
             "zh": "2013-dqn 英文科普音频",
             "en": "2013-dqn English audio narration"
@@ -103924,7 +103924,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2017-alphazero-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2017-alphazero-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2017-alphazero-zh-original-v1.mp3",
           "title": {
             "zh": "2017-alphazero 中文原版科普音频",
             "en": "2017-alphazero original Chinese audio narration"
@@ -103939,7 +103939,7 @@ const milestones = [
         },
         {
           "id": "asset-2017-alphazero-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2017-alphazero-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2017-alphazero-en-v1.mp3",
           "title": {
             "zh": "2017-alphazero 英文科普音频",
             "en": "2017-alphazero English audio narration"
@@ -104562,7 +104562,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2017-libratus-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2017-libratus-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2017-libratus-zh-original-v1.mp3",
           "title": {
             "zh": "2017-libratus 中文原版科普音频",
             "en": "2017-libratus original Chinese audio narration"
@@ -104577,7 +104577,7 @@ const milestones = [
         },
         {
           "id": "asset-2017-libratus-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2017-libratus-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2017-libratus-en-v1.mp3",
           "title": {
             "zh": "2017-libratus 英文科普音频",
             "en": "2017-libratus English audio narration"
@@ -105193,7 +105193,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2019-pluribus-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2019-pluribus-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2019-pluribus-zh-original-v1.mp3",
           "title": {
             "zh": "2019-pluribus 中文原版科普音频",
             "en": "2019-pluribus original Chinese audio narration"
@@ -105208,7 +105208,7 @@ const milestones = [
         },
         {
           "id": "asset-2019-pluribus-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2019-pluribus-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2019-pluribus-en-v1.mp3",
           "title": {
             "zh": "2019-pluribus 英文科普音频",
             "en": "2019-pluribus English audio narration"
@@ -105866,7 +105866,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2019-suphx-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2019-suphx-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2019-suphx-zh-original-v1.mp3",
           "title": {
             "zh": "2019-suphx 中文原版科普音频",
             "en": "2019-suphx original Chinese audio narration"
@@ -105881,7 +105881,7 @@ const milestones = [
         },
         {
           "id": "asset-2019-suphx-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2019-suphx-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2019-suphx-en-v1.mp3",
           "title": {
             "zh": "2019-suphx 英文科普音频",
             "en": "2019-suphx English audio narration"
@@ -106565,7 +106565,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2019-muzero-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2019-muzero-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2019-muzero-zh-original-v1.mp3",
           "title": {
             "zh": "2019-muzero 中文原版科普音频",
             "en": "2019-muzero original Chinese audio narration"
@@ -106580,7 +106580,7 @@ const milestones = [
         },
         {
           "id": "asset-2019-muzero-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2019-muzero-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2019-muzero-en-v1.mp3",
           "title": {
             "zh": "2019-muzero 英文科普音频",
             "en": "2019-muzero English audio narration"
@@ -107220,7 +107220,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1920-rur-robots-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1920-rur-robots-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1920-rur-robots-zh-original-v1.mp3",
           "title": {
             "zh": "1920-rur-robots 中文原版科普音频",
             "en": "1920-rur-robots original Chinese audio narration"
@@ -107235,7 +107235,7 @@ const milestones = [
         },
         {
           "id": "asset-1920-rur-robots-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1920-rur-robots-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1920-rur-robots-en-v1.mp3",
           "title": {
             "zh": "1920-rur-robots 英文科普音频",
             "en": "1920-rur-robots English audio narration"
@@ -107728,7 +107728,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1942-asimov-runaround-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1942-asimov-runaround-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1942-asimov-runaround-zh-original-v1.mp3",
           "title": {
             "zh": "1942-asimov-runaround 中文原版科普音频",
             "en": "1942-asimov-runaround original Chinese audio narration"
@@ -107743,7 +107743,7 @@ const milestones = [
         },
         {
           "id": "asset-1942-asimov-runaround-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1942-asimov-runaround-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1942-asimov-runaround-en-v1.mp3",
           "title": {
             "zh": "1942-asimov-runaround 英文科普音频",
             "en": "1942-asimov-runaround English audio narration"
@@ -108220,7 +108220,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1950-wiener-human-use-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1950-wiener-human-use-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1950-wiener-human-use-zh-original-v1.mp3",
           "title": {
             "zh": "1950-wiener-human-use 中文原版科普音频",
             "en": "1950-wiener-human-use original Chinese audio narration"
@@ -108235,7 +108235,7 @@ const milestones = [
         },
         {
           "id": "asset-1950-wiener-human-use-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1950-wiener-human-use-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1950-wiener-human-use-en-v1.mp3",
           "title": {
             "zh": "1950-wiener-human-use 英文科普音频",
             "en": "1950-wiener-human-use English audio narration"
@@ -108712,7 +108712,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1965-simon-ai-prediction-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1965-simon-ai-prediction-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1965-simon-ai-prediction-zh-original-v1.mp3",
           "title": {
             "zh": "1965-simon-ai-prediction 中文原版科普音频",
             "en": "1965-simon-ai-prediction original Chinese audio narration"
@@ -108727,7 +108727,7 @@ const milestones = [
         },
         {
           "id": "asset-1965-simon-ai-prediction-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1965-simon-ai-prediction-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1965-simon-ai-prediction-en-v1.mp3",
           "title": {
             "zh": "1965-simon-ai-prediction 英文科普音频",
             "en": "1965-simon-ai-prediction English audio narration"
@@ -109232,7 +109232,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1968-hal-9000-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1968-hal-9000-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1968-hal-9000-zh-original-v1.mp3",
           "title": {
             "zh": "1968-hal-9000 中文原版科普音频",
             "en": "1968-hal-9000 original Chinese audio narration"
@@ -109247,7 +109247,7 @@ const milestones = [
         },
         {
           "id": "asset-1968-hal-9000-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1968-hal-9000-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1968-hal-9000-en-v1.mp3",
           "title": {
             "zh": "1968-hal-9000 英文科普音频",
             "en": "1968-hal-9000 English audio narration"
@@ -109838,7 +109838,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1973-lighthill-report-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1973-lighthill-report-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1973-lighthill-report-zh-original-v1.mp3",
           "title": {
             "zh": "1973-lighthill-report 中文原版科普音频",
             "en": "1973-lighthill-report original Chinese audio narration"
@@ -109853,7 +109853,7 @@ const milestones = [
         },
         {
           "id": "asset-1973-lighthill-report-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1973-lighthill-report-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1973-lighthill-report-en-v1.mp3",
           "title": {
             "zh": "1973-lighthill-report 英文科普音频",
             "en": "1973-lighthill-report English audio narration"
@@ -110483,7 +110483,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1978-xiaolingtong-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1978-xiaolingtong-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1978-xiaolingtong-zh-original-v1.mp3",
           "title": {
             "zh": "1978-xiaolingtong 中文原版科普音频",
             "en": "1978-xiaolingtong original Chinese audio narration"
@@ -110498,7 +110498,7 @@ const milestones = [
         },
         {
           "id": "asset-1978-xiaolingtong-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1978-xiaolingtong-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1978-xiaolingtong-en-v1.mp3",
           "title": {
             "zh": "1978-xiaolingtong 英文科普音频",
             "en": "1978-xiaolingtong English audio narration"
@@ -111008,7 +111008,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1984-neuromancer-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1984-neuromancer-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1984-neuromancer-zh-original-v1.mp3",
           "title": {
             "zh": "1984-neuromancer 中文原版科普音频",
             "en": "1984-neuromancer original Chinese audio narration"
@@ -111023,7 +111023,7 @@ const milestones = [
         },
         {
           "id": "asset-1984-neuromancer-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1984-neuromancer-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1984-neuromancer-en-v1.mp3",
           "title": {
             "zh": "1984-neuromancer 英文科普音频",
             "en": "1984-neuromancer English audio narration"
@@ -111550,7 +111550,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-1987-lisp-machine-collapse-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1987-lisp-machine-collapse-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1987-lisp-machine-collapse-zh-original-v1.mp3",
           "title": {
             "zh": "1987-lisp-machine-collapse 中文原版科普音频",
             "en": "1987-lisp-machine-collapse original Chinese audio narration"
@@ -111565,7 +111565,7 @@ const milestones = [
         },
         {
           "id": "asset-1987-lisp-machine-collapse-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/1987-lisp-machine-collapse-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1987-lisp-machine-collapse-en-v1.mp3",
           "title": {
             "zh": "1987-lisp-machine-collapse 英文科普音频",
             "en": "1987-lisp-machine-collapse English audio narration"
@@ -112161,7 +112161,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2014-ai-existential-warnings-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-ai-existential-warnings-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-ai-existential-warnings-zh-original-v1.mp3",
           "title": {
             "zh": "2014-ai-existential-warnings 中文原版科普音频",
             "en": "2014-ai-existential-warnings original Chinese audio narration"
@@ -112176,7 +112176,7 @@ const milestones = [
         },
         {
           "id": "asset-2014-ai-existential-warnings-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2014-ai-existential-warnings-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-ai-existential-warnings-en-v1.mp3",
           "title": {
             "zh": "2014-ai-existential-warnings 英文科普音频",
             "en": "2014-ai-existential-warnings English audio narration"
@@ -112766,7 +112766,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2015-openai-founding-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-openai-founding-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-openai-founding-zh-original-v1.mp3",
           "title": {
             "zh": "2015-openai-founding 中文原版科普音频",
             "en": "2015-openai-founding original Chinese audio narration"
@@ -112781,7 +112781,7 @@ const milestones = [
         },
         {
           "id": "asset-2015-openai-founding-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2015-openai-founding-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-openai-founding-en-v1.mp3",
           "title": {
             "zh": "2015-openai-founding 英文科普音频",
             "en": "2015-openai-founding English audio narration"
@@ -113356,7 +113356,7 @@ const milestones = [
       "audios": [
         {
           "id": "asset-2023-ai-risk-statement-audio-zh-original-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2023-ai-risk-statement-zh-original-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2023-ai-risk-statement-zh-original-v1.mp3",
           "title": {
             "zh": "2023-ai-risk-statement 中文原版科普音频",
             "en": "2023-ai-risk-statement original Chinese audio narration"
@@ -113371,7 +113371,7 @@ const milestones = [
         },
         {
           "id": "asset-2023-ai-risk-statement-audio-en-v1",
-          "url": "https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]/audio/ai-history/releases/2023-ai-risk-statement-en-v1.mp3",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2023-ai-risk-statement-en-v1.mp3",
           "title": {
             "zh": "2023-ai-risk-statement 英文科普音频",
             "en": "2023-ai-risk-statement English audio narration"

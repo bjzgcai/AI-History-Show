@@ -10,7 +10,7 @@ const require = createRequire(import.meta.url);
 const { orderVariantAssetIds } = require('../event-figure-rules');
 const { loadFigureRegistry, resolveFigureRelations } = require('../figure-registry');
 const BUCKET = '[REDACTED_OSS_BUCKET]';
-const PUBLIC_ROOT = 'https://[REDACTED_OSS_BUCKET].[REDACTED_OSS_ENDPOINT]';
+const PUBLIC_ROOT = 'https://media.sciencearena.cn';
 const CACHE_CONTROL = 'public, max-age=31536000, immutable';
 const PREFERRED_STORYLINE_ID = 'bench-council-ai100';
 const RELEASES = [
