@@ -5,7 +5,11 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { generationActions } from './audio/audio-pipeline.mjs';
-import { buildOverlayOnlyEvent, loadStorylineEntries } from './audio/build-audio-review-page-data.mjs';
+import {
+    buildOverlayOnlyEvent,
+    expandSharedStorylineOverlays,
+    loadStorylineEntries
+} from './audio/build-audio-review-page-data.mjs';
 import { writeFrozenJson } from './audio/build-complete-original-revisions.mjs';
 
 assert.deepEqual(generationActions({ planExists: false, overlayExists: false }), ['build', 'generate', 'validate']);
@@ -57,6 +61,47 @@ const singleLocaleEvent = await buildOverlayOnlyEvent({
 });
 assert.deepEqual(Object.keys(singleLocaleEvent.variants), ['zh']);
 assert.equal(singleLocaleEvent.variants.zh.storyline.audio.path, 'test-zh.mp3');
+
+const perceptronSourcePath =
+    'resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-zh-original-v1-2026-08-09/audio/bench-council-ai100/storyline/zh/39-1957-perceptron.mp3';
+const sharedPerceptronCandidate = {
+    ...overlayCandidate('zh'),
+    scopeId: 'bench-council-ai100',
+    sequenceIndex: 39,
+    eventId: '1957-perceptron',
+    revisionId: 'test-ai100-perceptron-zh',
+    audio: { path: perceptronSourcePath, durationSec: 60 }
+};
+const deepActivationCandidate = {
+    ...overlayCandidate('zh'),
+    scopeId: 'deep-learning',
+    sequenceIndex: 1
+};
+const expanded = await expandSharedStorylineOverlays({
+    overlays: new Map([
+        ['bench-council-ai100:39:zh:storyline', [sharedPerceptronCandidate]],
+        ['deep-learning:1:zh:storyline', [deepActivationCandidate]]
+    ]),
+    storylineEntries: storylines
+});
+const reusedPerceptron = expanded.overlays.get('deep-learning:2:zh:storyline');
+assert.equal(reusedPerceptron.length, 1);
+assert.equal(reusedPerceptron[0].audio.path, perceptronSourcePath);
+assert.deepEqual(reusedPerceptron[0].reviewReuse, {
+    sourceScopeId: 'bench-council-ai100',
+    sourceSequenceIndex: 39,
+    targetScopeId: 'deep-learning',
+    targetSequenceIndex: 2
+});
+const deepPerceptronEvent = await buildOverlayOnlyEvent({
+    scopeId: 'deep-learning',
+    sequenceIndex: 2,
+    overlays: expanded.overlays,
+    storylineEntries: storylines
+});
+assert.equal(deepPerceptronEvent.eventId, '1957-perceptron');
+assert.equal(deepPerceptronEvent.variantId, 'deep-learning');
+assert.equal(deepPerceptronEvent.audioReuse.sourceScopeId, 'bench-council-ai100');
 
 const reviewBuilderPath = path.join(import.meta.dirname, 'audio/build-audio-review-page-data.mjs');
 const pipelinePath = path.join(import.meta.dirname, 'audio/audio-pipeline.mjs');
