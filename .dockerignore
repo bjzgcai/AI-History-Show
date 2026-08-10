@@ -3,6 +3,12 @@
 .claude
 node_modules
 manage/.backups
+.tmp
+.secrets
+resources/audio
+tools/audio-review-console/active-overlays.json
+tools/audio-review-console/review-data.json
+tools/audio-review-console/*.png
 *.log
 .DS_Store
 Thumbs.db
