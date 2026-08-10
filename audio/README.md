@@ -39,7 +39,12 @@ npm run audio:revision -- activate \
   audio/revisions/ai100-first10-huopo-interactive.json
 ```
 
-`activate` writes `designs/audio-review-console/active-overlays.json` and rebuilds the review data.
+`activate` writes the generated local selection to
+`tools/audio-review-console/active-overlays.json` and rebuilds
+`tools/audio-review-console/review-data.json`. The review data is compiled from the selected revision
+overlays, their tracked `audio/revisions/*.json` configs and frozen turns. It does not depend on the
+legacy AI100 baseline manifests or reports. The review console HTML, CSS and JavaScript are tracked;
+the overlay selection, generated review data and screenshots are ignored.
 Credentials are read from the `envFile` declared by the revision config; secret values are never
 stored in revision plans or logs.
 
