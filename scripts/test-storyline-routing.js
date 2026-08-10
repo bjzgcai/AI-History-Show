@@ -225,6 +225,16 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /--ui-detail-control-height:\s*62px[\s\S]*?\.ui-audio-player\s*\{[\s\S]*?height:\s*var\(--ui-detail-control-height\)[\s\S]*?\.ui-back-button\s*\{[\s\S]*?height:\s*var\(--ui-detail-control-height\)/,
+    'the desktop audio player and back action should share one control height'
+);
+assert.match(
+    indexHtml,
+    /@media\s*\(max-width:\s*1199px\)[\s\S]*?--ui-detail-control-height:\s*52px[\s\S]*?\.single-stage\.is-ui-browser\.is-ui-detail \.ui-back-button\s*\{[\s\S]*?height:\s*var\(--ui-detail-control-height\)/,
+    'responsive detail controls should preserve the shared audio and back action height'
+);
+assert.match(
+    indexHtml,
     /function renderUiAudioPlayer\(vm\)[\s\S]*?isUiBrowserActive\(\) && uiBrowserMode === 'detail' && Boolean\(nextUrl\)[\s\S]*?resetUiAudioPlayer\(\)[\s\S]*?player\.hidden = false/,
     'the audio player should render only for audio-enabled event details'
 );
