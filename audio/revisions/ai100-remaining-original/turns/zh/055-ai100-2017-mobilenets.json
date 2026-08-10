@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 55,
+    "eventId": "ai100-2017-mobilenets",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "把时间拨回2017年，「MobileNets」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "图像分类器越来越准确，但计算量和内存开销使它们难以部署到手机和嵌入式设备。MobileNets 把架构设计目标从单纯追求基准精度转向同时考虑延迟与资源约束。",
+            "sourceIds": ["source-2017-mobilenets-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2017-mobilenets-membership", "claim-2017-mobilenets-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "深度可分离卷积把空间滤波与通道混合拆开，从而显著减少乘加运算。MobileNetV2 又加入倒残差块和线性瓶颈，让狭窄的移动端表示保留更多有效信息。",
+            "sourceIds": ["source-2017-mobilenets-primary"],
+            "claimIds": ["claim-2017-mobilenets-membership", "claim-2017-mobilenets-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 MobileNets 视为高效模型家族的奠基成果，使端侧视觉成为独立而重要的研究目标。其设计原则影响了后续高效 CNN、神经架构搜索与移动推理系统。",
+            "sourceIds": ["source-2017-mobilenets-primary", "source-2017-mobilenets-secondary"],
+            "claimIds": ["claim-2017-mobilenets-membership", "claim-2017-mobilenets-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「MobileNets」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-2017-mobilenets-primary",
+                "source-2017-mobilenets-secondary",
+                "source-benchcouncil-ai100-catalog"
+            ],
+            "claimIds": ["claim-2017-mobilenets-membership", "claim-2017-mobilenets-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

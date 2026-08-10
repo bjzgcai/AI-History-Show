@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 53,
+    "eventId": "2015-resnet",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined GoogLeNet / Inception. Now the camera turns to ResNet and a new question along the same timeline: Why did researchers need ResNet, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "ResNet introduced residual connections that let very deep networks learn refinements instead of full transformations. It made hundreds of layers trainable and became a backbone for vision systems.",
+            "sourceIds": ["source-deep-residual-learning-for-image-recognition"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "A shortcut path adds the input back to a learned residual transformation.",
+            "sourceIds": ["source-deep-residual-learning-for-image-recognition"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat ResNet as a turning point in very deep network design. Its long-term legacy is residual learning: the shortcut-connection pattern that made depth easier to optimize and became a standard backbone idea across vision and beyond.",
+            "sourceIds": ["source-deep-residual-learning-for-image-recognition"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with DenseNet, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

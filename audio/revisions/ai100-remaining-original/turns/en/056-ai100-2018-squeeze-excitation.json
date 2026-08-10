@@ -1,0 +1,55 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 56,
+    "eventId": "ai100-2018-squeeze-excitation",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does Squeeze-and-Excitation Networks deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Convolutional networks usually treated channels as a fixed stack even though different channels carry different semantic signals. Squeeze-and-Excitation networks asked whether a model could learn to recalibrate those channels for each input.",
+            "sourceIds": ["source-2018-squeeze-excitation-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2018-squeeze-excitation-membership", "claim-2018-squeeze-excitation-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "A squeeze operation summarizes each channel globally, and a small excitation network predicts channel-wise gates. Multiplying those gates back into the feature map lets the network amplify informative channels and suppress weaker ones.",
+            "sourceIds": ["source-2018-squeeze-excitation-primary"],
+            "claimIds": ["claim-2018-squeeze-excitation-membership", "claim-2018-squeeze-excitation-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally regard channel attention as a simple but durable architectural idea, and SE blocks became a common addition to CNN backbones. The work also helped establish attention as a mechanism that could operate beyond sequence models.",
+            "sourceIds": ["source-2018-squeeze-excitation-primary", "source-2018-squeeze-excitation-secondary"],
+            "claimIds": ["claim-2018-squeeze-excitation-membership", "claim-2018-squeeze-excitation-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from Squeeze-and-Excitation Networks still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-2018-squeeze-excitation-primary",
+                "source-2018-squeeze-excitation-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-2018-squeeze-excitation-portrait"
+            ],
+            "claimIds": ["claim-2018-squeeze-excitation-membership", "claim-2018-squeeze-excitation-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

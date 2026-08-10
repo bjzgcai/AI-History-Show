@@ -72,6 +72,19 @@
         return null;
     }
 
+    function audioCandidateUrl(candidate) {
+        if (typeof candidate === 'string') return candidate.trim();
+        return candidate ? String(candidate.url || candidate.src || candidate.path || candidate.file || '').trim() : '';
+    }
+
+    function isPreferredS3Audio(candidate) {
+        const url = audioCandidateUrl(candidate);
+        if (!/^https:\/\//i.test(url)) return false;
+        const provider =
+            candidate && typeof candidate === 'object' ? String(candidate.storage?.provider || '').trim() : '';
+        return provider === 'bza-s3' || /^https:\/\/s3\.inner\.bza\.edu\.cn(?:\/|$)/i.test(url);
+    }
+
     function getPrimaryAudio(milestone) {
         const candidates = [];
         if (milestone && milestone.audio) {
@@ -97,9 +110,13 @@
         const localizedCandidates = validCandidates.filter(
             (candidate) => candidate && typeof candidate === 'object' && String(candidate.language || '').trim()
         );
+        const matchingLocaleCandidates = localizedCandidates.filter(
+            (candidate) => String(candidate.language || '').trim() === locale
+        );
         const item =
-            localizedCandidates.find((candidate) => String(candidate.language || '').trim() === locale) ||
-            (localizedCandidates.length === 0 ? validCandidates[0] : null);
+            matchingLocaleCandidates.find(isPreferredS3Audio) ||
+            matchingLocaleCandidates[0] ||
+            (localizedCandidates.length === 0 ? validCandidates.find(isPreferredS3Audio) || validCandidates[0] : null);
         if (!item) return null;
         if (typeof item === 'string') return { url: item.trim(), title: '', source: '' };
 

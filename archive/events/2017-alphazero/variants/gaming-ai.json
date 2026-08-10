@@ -53,7 +53,9 @@
   "assetIds": [
     "asset-david-silver-commons-portrait",
     "asset-2017-alphazero-self-play-loop",
-    "asset-2017-alphazero-julian-schrittwieser"
+    "asset-2017-alphazero-julian-schrittwieser",
+    "asset-2017-alphazero-audio-zh-original-v1",
+    "asset-2017-alphazero-audio-en-v1"
   ],
   "sourceIds": [
     "source-david-silver-commons-portrait",

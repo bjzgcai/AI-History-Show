@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-2014-seq2seq-portrait",
-    "asset-2014-seq2seq-explainer"
+    "asset-2014-seq2seq-explainer",
+    "asset-ai100-2014-seq2seq-audio-zh-original-v1",
+    "asset-ai100-2014-seq2seq-audio-en-v1"
   ],
   "sourceIds": [
     "source-2014-seq2seq-primary",

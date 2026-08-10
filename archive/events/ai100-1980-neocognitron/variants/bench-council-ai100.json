@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-1980-neocognitron-dr-kunihikofukushima",
-    "asset-1980-neocognitron-hierarchy"
+    "asset-1980-neocognitron-hierarchy",
+    "asset-ai100-1980-neocognitron-audio-zh-original-v1",
+    "asset-ai100-1980-neocognitron-audio-en-v1"
   ],
   "sourceIds": [
     "source-open-neocognitron-pdf",

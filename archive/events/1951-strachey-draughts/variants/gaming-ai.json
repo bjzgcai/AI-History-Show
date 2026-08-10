@@ -47,7 +47,9 @@
     "asset-1951-strachey-draughts-board-search",
     "asset-1951-strachey-draughts-program-flow",
     "asset-1951-strachey-draughts-program-external",
-    "asset-1951-strachey-draughts-checkers-board-external"
+    "asset-1951-strachey-draughts-checkers-board-external",
+    "asset-1951-strachey-draughts-audio-zh-original-v1",
+    "asset-1951-strachey-draughts-audio-en-v1"
   ],
   "sourceIds": [
     "source-logical-or-non-mathematical-programmes",

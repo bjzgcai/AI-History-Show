@@ -1,0 +1,99 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 136,
+    "eventId": "ai100-annual-2022-2023-094-controlnet",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "一个看似专业的名字「ControlNet」，背后藏着怎样一个直观问题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "文生图扩散模型已经能够生成高质量图像，但创作者难以精确控制几何、姿态与布局。ControlNet 通过给现有预训练模型加入空间条件解决这一缺口，而不必为每种控制类型重新训练独立生成器。",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-locked-copy",
+                "claim-zero-convolution"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "架构锁定原始扩散编码器，并创建接收边缘、深度、姿态或其他条件的可训练副本。零初始化卷积连接两个分支，使系统从等价于预训练模型的状态出发，逐步学习控制信号。",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-locked-copy",
+                "claim-zero-convolution"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 ControlNet 视为可控扩散的标准接口，因为它在保留强大基础模型的同时加入可复用空间引导。它广泛影响创作工具与后续适配器，使内容生成能够与姿态、深度、边缘、分割或布局控制分离。",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-locked-copy",
+                "claim-zero-convolution"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「ControlNet」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-094-controlnet-portrait-maneesh-agrawala",
+                "source-arxiv-paper",
+                "source-controlnet-repository",
+                "source-maneesh-profile",
+                "source-controlnet-figure-1",
+                "source-controlnet-official-full-architecture",
+                "source-controlnet-official-core-block"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-locked-copy",
+                "claim-zero-convolution"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

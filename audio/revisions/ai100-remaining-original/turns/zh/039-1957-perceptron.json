@@ -1,0 +1,61 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 39,
+    "eventId": "1957-perceptron",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "如果把「感知机与连接主义」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "20 世纪 50 年代，研究者正在探索受神经和心理感知模型启发的机器。",
+            "sourceIds": ["source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "感知机计算输入加权和，当总和越过阈值时激活；错误会触发权重更新。 关键机制是线性阈值学习机，它把资料线索与可见的演示行为连接起来。",
+            "sourceIds": ["source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把罗森布拉特感知机视为基础性的神经学习模型，也是早期连接主义乐观精神的象征。它的长期影响在于引发关于线性可分性的讨论，并铺垫了从单个阈值单元到多层表示学习的道路。",
+            "sourceIds": ["source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「SNARC」，再看「感知机与连接主义」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-cornell-chronicle-perceptron-retrospective",
+                "source-smithsonian-mark-i-perceptron-object-record",
+                "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 113,
+    "eventId": "ai100-2016-xgboost",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「梯度提升」。现在把镜头转向「XGBoost」，沿着这条故事线换一个问题：研究者为什么需要「XGBoost」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "梯度提升树精度很高，但大规模数据和稀疏特征暴露出系统瓶颈。XGBoost 把正则化目标与面向并行和外存学习的工程设计结合起来。",
+            "sourceIds": ["source-2016-xgboost-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2016-xgboost-membership", "claim-2016-xgboost-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "系统使用二阶梯度统计、正则化树评分、稀疏感知划分搜索、列块和缓存友好计算。这些设计使提升树能在不同机器和数据格式上高效运行。",
+            "sourceIds": ["source-2016-xgboost-primary"],
+            "claimIds": ["claim-2016-xgboost-membership", "claim-2016-xgboost-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 XGBoost 视为使梯度提升树成为表格预测默认高性能工具的关键系统。其开源生态和竞赛表现推动了广泛工业应用。",
+            "sourceIds": ["source-2016-xgboost-primary", "source-2016-xgboost-secondary"],
+            "claimIds": ["claim-2016-xgboost-membership", "claim-2016-xgboost-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「LightGBM」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

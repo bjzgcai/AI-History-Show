@@ -1,0 +1,83 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 128,
+    "eventId": "ai100-annual-2022-2023-114-alphatensor",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "为什么「AlphaTensor」会成为人工智能史上值得单独记住的一步？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "矩阵乘法是科学计算和机器学习的基础运算，但寻找更少标量乘法的算法是困难的组合问题。在 AlphaTensor 之前，重要改进通常来自长期的人类数学推导。",
+            "sourceIds": ["source-alphatensor-deepmind", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "AlphaTensor 把乘法张量编码为游戏状态，每一步减去一个秩一张量，直到目标归零。神经网络与树搜索学习选择动作，从而产生短而有效的分解。",
+            "sourceIds": ["source-alphatensor-deepmind", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 AlphaTensor 视为 AI 辅助算法发现的里程碑，因为其输出是明确且可验证的算法。它把 AlphaZero 范式从棋类扩展到数学搜索，并推动了后续底层计算优化研究。",
+            "sourceIds": ["source-alphatensor-deepmind", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "当今天的系统规模越来越大时，「AlphaTensor」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-114-alphatensor-portrait-pushmeet-kohli",
+                "source-alphatensor-deepmind",
+                "source-alphatensor-code",
+                "source-alphatensor-portrait-pushmeet-kohli",
+                "source-alphatensor-official-image"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

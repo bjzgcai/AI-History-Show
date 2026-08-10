@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 69,
+    "eventId": "2017-transformer",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined Neural Machine Translation with Attention. Now the camera turns to Transformer and a new question along the same timeline: If we take Transformer apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems.",
+            "sourceIds": ["source-transformer-arxiv", "source-google-research-publication"],
+            "claimIds": ["claim-attention-only-architecture", "claim-foundation-model-legacy"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling. The demo should highlight how self-attention replaced recurrent processing.",
+            "sourceIds": ["source-transformer-arxiv"],
+            "claimIds": ["claim-attention-only-architecture", "claim-foundation-model-legacy"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat the Transformer as one of the defining architectures of modern AI. Its long-term legacy is the scalable self-attention recipe that reorganized natural language processing, vision, speech, code, agents, and foundation-model research.",
+            "sourceIds": ["source-google-transformer-blog"],
+            "claimIds": ["claim-attention-only-architecture", "claim-foundation-model-legacy"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside Neural Machine Translation with Attention, Transformer reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-transformer-neurips",
+                "source-google-research-publication",
+                "source-google-transformer-blog",
+                "source-transformer-arxiv"
+            ],
+            "claimIds": ["claim-attention-only-architecture", "claim-foundation-model-legacy"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

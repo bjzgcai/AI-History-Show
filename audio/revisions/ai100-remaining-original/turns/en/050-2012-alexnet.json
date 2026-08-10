@@ -1,0 +1,55 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 50,
+    "eventId": "2012-alexnet",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does AlexNet and the ImageNet Breakthrough deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. GPU training, ReLU activations, data augmentation, and dropout made scale visible.",
+            "sourceIds": ["source-alexnet-neurips-paper", "source-imagenet-challenge"],
+            "claimIds": ["claim-imagenet-breakthrough", "claim-scale-recipe"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "A deep CNN transforms pixels through learned convolutional layers into object classes. The demo should highlight how data, GPUs, convolution, ReLU, and regularization formed a trainable system.",
+            "sourceIds": ["source-alexnet-neurips-paper"],
+            "claimIds": ["claim-imagenet-breakthrough", "claim-scale-recipe"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat AlexNet as the breakthrough that made deep learning unavoidable in computer vision. Its long-term legacy is the scale recipe of data, GPUs, deep CNNs, ReLU, augmentation, and regularization that reshaped vision research.",
+            "sourceIds": ["source-alexnet-neurips-paper"],
+            "claimIds": ["claim-imagenet-breakthrough", "claim-scale-recipe"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from AlexNet and the ImageNet Breakthrough still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-alexnet-neurips-paper",
+                "source-alexnet-neurips-pdf",
+                "source-imagenet-challenge",
+                "source-alexnet-overview"
+            ],
+            "claimIds": ["claim-imagenet-breakthrough", "claim-scale-recipe"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

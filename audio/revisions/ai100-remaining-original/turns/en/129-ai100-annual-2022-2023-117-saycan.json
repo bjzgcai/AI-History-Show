@@ -1,0 +1,90 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 129,
+    "eventId": "ai100-annual-2022-2023-117-saycan",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined AlphaTensor. Now the camera turns to SayCan and a new question along the same timeline: If we take SayCan apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "Large language models could propose plausible high-level plans, but they did not know which actions a particular robot could execute in its current environment. Robotics policies knew local skills, yet lacked the language knowledge needed to interpret open-ended instructions.",
+            "sourceIds": ["source-saycan-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "SayCan scores each candidate skill twice: the language model estimates whether it advances the instruction, and a value function estimates whether the robot can perform it now. Their product selects the next skill, and the process repeats after the environment changes.",
+            "sourceIds": ["source-saycan-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat SayCan as an early and influential blueprint for combining foundation models with embodied control rather than letting language models act as unconstrained planners. Its usefulness-feasibility split reappears in later vision-language-action and robotic agent systems.",
+            "sourceIds": ["source-saycan-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside AlphaTensor, SayCan reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-saycan-paper",
+                "source-saycan-google-research",
+                "source-saycan-code",
+                "source-saycan-portrait-chelsea-finn",
+                "source-saycan-official-project-images"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 63,
+    "eventId": "ai100-2016-ssd",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "如果把「SSD 单次多框检测器」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "两阶段检测器精度很高，但依赖独立的候选区域阶段。SSD 通过单次网络前向直接预测物体类别和边界框偏移，追求实时检测。",
+            "sourceIds": ["source-2016-ssd-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2016-ssd-membership", "claim-2016-ssd-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "不同分辨率的多张特征图针对多种形状的默认框预测类别分数和位置偏移。高分辨率特征图负责小物体，深层特征图则覆盖更大的感受野。",
+            "sourceIds": ["source-2016-ssd-primary"],
+            "claimIds": ["claim-2016-ssd-membership", "claim-2016-ssd-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常认为 SSD 是具有重要影响的单阶段检测器，使多尺度默认框预测成为实用方案。它在速度与精度之间的权衡影响了后续实时检测系统。",
+            "sourceIds": ["source-2016-ssd-primary", "source-2016-ssd-secondary"],
+            "claimIds": ["claim-2016-ssd-membership", "claim-2016-ssd-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「YOLO」，再看「SSD 单次多框检测器」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-2016-ssd-primary",
+                "source-2016-ssd-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-2016-ssd-portrait"
+            ],
+            "claimIds": ["claim-2016-ssd-membership", "claim-2016-ssd-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

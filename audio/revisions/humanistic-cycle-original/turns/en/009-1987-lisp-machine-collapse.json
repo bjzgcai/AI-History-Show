@@ -1,0 +1,67 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-en-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 9,
+    "eventId": "1987-lisp-machine-collapse",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined Neuromancer and AI Escape in Cyberspace. Now the camera turns to The Lisp Machine Market Collapse and a new question along the same timeline: If we take The Lisp Machine Market Collapse apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "The 1980s expert-system boom created demand for specialized Lisp hardware and knowledge-engineering tools. The collapse mattered because it translated technical disappointment into layoffs, failed vendors and a stigma around the AI label.",
+            "sourceIds": ["source-ai-winter-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The emotional mechanism is commercial overhang: a story of inevitable AI productivity becomes fragile when cheaper platforms undercut its infrastructure. Once users can run useful tools elsewhere, specialized AI hardware loses its aura.",
+            "sourceIds": ["source-ai-winter-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat the late-1980s market collapse as a major signal of the second AI winter. Its legacy is a warning that AI enthusiasm depends on economics, maintainability and platform timing as much as on algorithms.",
+            "sourceIds": ["source-ai-winter-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside Neuromancer and AI Escape in Cyberspace, The Lisp Machine Market Collapse reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-richard-greenblatt-portrait",
+                "source-richard-stallman-portrait",
+                "source-greenblatt-oral-history",
+                "source-stallman-lisp-experiences",
+                "source-gnu-initial-announcement",
+                "source-ai-winter-overview",
+                "source-lisp-machine-history",
+                "source-avoiding-another-ai-winter",
+                "source-fifth-generation-project-context"
+            ],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 61,
+    "eventId": "ai100-2017-fpn-retinanet",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "上一段讲到「Mask R-CNN」。现在把镜头转向「FPN 与 RetinaNet」，沿着这条故事线换一个问题：把时间拨回2017年，「FPN 与 RetinaNet」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "检测器需要多尺度特征，但图像金字塔计算昂贵，而深层特征图又会丢失细粒度空间信息。稠密单阶段检测器还面临大量简单背景样本与少量前景物体之间的严重不平衡。",
+            "sourceIds": ["source-2017-fpn-retinanet-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2017-fpn-retinanet-membership", "claim-2017-fpn-retinanet-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "FPN 通过自顶向下路径和横向连接，在多个分辨率上构建语义强的特征图。RetinaNet 将该金字塔与焦点损失结合，降低简单负样本的影响，让困难检测样本主导学习。",
+            "sourceIds": ["source-2017-fpn-retinanet-primary"],
+            "claimIds": ["claim-2017-fpn-retinanet-membership", "claim-2017-fpn-retinanet-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 FPN 视为标准多尺度骨干，并把焦点损失视为解决单阶段检测样本不平衡的关键方法。二者共同缩小了单阶段与两阶段检测器之间的精度差距。",
+            "sourceIds": ["source-2017-fpn-retinanet-primary", "source-2017-fpn-retinanet-secondary"],
+            "claimIds": ["claim-2017-fpn-retinanet-membership", "claim-2017-fpn-retinanet-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「FPN 与 RetinaNet」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-2017-fpn-retinanet-primary",
+                "source-2017-fpn-retinanet-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-2017-fpn-retinanet-portrait"
+            ],
+            "claimIds": ["claim-2017-fpn-retinanet-membership", "claim-2017-fpn-retinanet-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

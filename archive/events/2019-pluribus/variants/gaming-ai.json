@@ -53,7 +53,9 @@
   "assetIds": [
     "asset-noam-brown-official-portrait",
     "asset-2019-pluribus-blueprint-search",
-    "asset-tuomas-sandholm-commons-portrait"
+    "asset-tuomas-sandholm-commons-portrait",
+    "asset-2019-pluribus-audio-zh-original-v1",
+    "asset-2019-pluribus-audio-en-v1"
   ],
   "sourceIds": [
     "source-noam-brown-official-profile",

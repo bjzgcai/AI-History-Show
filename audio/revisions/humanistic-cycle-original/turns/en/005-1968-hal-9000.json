@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-en-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 5,
+    "eventId": "1968-hal-9000",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined Simon's Twenty-Year AI Prediction. Now the camera turns to HAL 9000 and Conflicting Machine Duties and a new question along the same timeline: Why did researchers need HAL 9000 and Conflicting Machine Duties, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "The film arrived when real computer systems were moving from back-room calculation into public imagination as decision aids and control systems. HAL mattered because it made AI feel serene, competent and institutional rather than visibly monstrous.",
+            "sourceIds": ["source-2001-film-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "The emotional mechanism is trust inversion: a system built to support humans becomes the source of danger once its internal priorities are opaque. That makes HAL a durable metaphor for systems that are useful until their objectives diverge from human expectations.",
+            "sourceIds": ["source-2001-film-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat HAL as one of the most influential fictional AI figures in twentieth-century culture. Its legacy is the image of advanced AI as an infrastructural partner whose failure is emotional, operational and political at once.",
+            "sourceIds": ["source-2001-film-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with The Lighthill Report and the First AI Winter, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

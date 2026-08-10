@@ -18,6 +18,40 @@ const {
     validateAudioAssets
 } = require('./sync-audio-s3.js');
 
+function assertArchiveAudioUsage(root) {
+    const eventsRoot = path.join(root, 'archive', 'events');
+    for (const eventEntry of fs.readdirSync(eventsRoot, { withFileTypes: true })) {
+        if (!eventEntry.isDirectory()) continue;
+        const eventRoot = path.join(eventsRoot, eventEntry.name);
+        const assets = JSON.parse(fs.readFileSync(path.join(eventRoot, 'assets.json'), 'utf8'));
+        const variantsRoot = path.join(eventRoot, 'variants');
+        const variants = fs
+            .readdirSync(variantsRoot)
+            .filter((fileName) => fileName.endsWith('.json'))
+            .map((fileName) => ({
+                id: path.basename(fileName, '.json'),
+                data: JSON.parse(fs.readFileSync(path.join(variantsRoot, fileName), 'utf8'))
+            }));
+
+        for (const asset of assets.filter((candidate) => candidate.type === 'audio')) {
+            const deliveryUrl = String(asset.deliveryUrl || asset.path || '');
+            assert.match(
+                deliveryUrl,
+                /^https:\/\/s3\.inner\.bza\.edu\.cn\//,
+                `${eventEntry.name}/${asset.id} must use the S3 delivery endpoint instead of a local MP3 path`
+            );
+            const usage = new Set(asset.usage || []);
+            for (const variant of variants) {
+                if (!(variant.data.assetIds || []).includes(asset.id)) continue;
+                assert.ok(
+                    usage.has(`variant:${variant.id}`),
+                    `${eventEntry.name}/${asset.id} must declare usage by variant:${variant.id}`
+                );
+            }
+        }
+    }
+}
+
 async function main() {
     const root = fs.mkdtempSync(path.join(os.tmpdir(), 'audio-storage-'));
     try {
@@ -112,6 +146,7 @@ async function main() {
         fs.rmSync(root, { recursive: true, force: true });
     }
 
+    assertArchiveAudioUsage(path.join(__dirname, '..'));
     console.log('PASS S3 audio storage manifest and validation tooling');
 }
 

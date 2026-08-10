@@ -19,7 +19,9 @@
     "asset-alexnet-portrait",
     "asset-alexnet-architecture",
     "asset-alexnet-architecture-detail",
-    "asset-alexnet-deep-portrait"
+    "asset-alexnet-deep-portrait",
+    "asset-2012-alexnet-audio-zh-original-v1",
+    "asset-2012-alexnet-audio-en-v1"
   ],
   "overviewImageAssetId": "asset-alexnet-portrait",
   "sourceIds": [

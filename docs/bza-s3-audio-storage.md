@@ -100,13 +100,12 @@ aws --endpoint-url "$BZA_S3_ENDPOINT" s3 cp \
 项目已经提供对应命令：
 
 ```bash
-npm run audio:check
-npm run audio:manifest
-npm run audio:push:dry-run
-npm run audio:push
-npm run audio:verify
-npm run audio:publish:dry-run
-npm run audio:publish
+npm run audio:release -- check
+npm run audio:release -- manifest
+npm run audio:release:dry-run
+npm run audio:release -- push
+npm run audio:release -- verify
+npm run audio:release -- publish-access
 ```
 
 脚本从 Archive 中查找 `type: "audio"` 的资产，读取其 `storage` 元数据，生成 SHA-256 checksum，并通过对象 metadata 判断是否需要重复上传。生成的本地 manifest 位于 `.tmp/audio/audio-manifest.json`，远端默认写入 `audio/manifests/audio-manifest.json`。
@@ -142,7 +141,8 @@ Bucket 保持私有，媒体网关负责鉴权、Range 请求、缓存、CORS �
 
 ### 模式 B：Bucket 匿名只读
 
-只对 `audio/releases/` 前缀开放匿名 `GetObject`，母版和 manifest 仍保持私有。`npm run audio:publish` 会保留已有 Bucket policy 与 CORS 规则，并合并项目专用规则；不会开放 `ListBucket`、上传或删除权限。浏览器直接使用对象 URL，例如 path-style 地址为：
+只对 `audio/releases/` 前缀开放匿名 `GetObject`，母版和 manifest 仍保持私有。
+`npm run audio:release -- publish-access` 会保留已有 Bucket policy 与 CORS 规则，并合并项目专用规则；不会开放 `ListBucket`、上传或删除权限。浏览器直接使用对象 URL，例如 path-style 地址为：
 
 ```text
 https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1950-turing-test-zh-interact-v1.mp3
@@ -181,11 +181,11 @@ Archive 中每个音频资源建议记录稳定生产 URL，而不是本机路�
 
 ## 当前状态
 
-- S3 Endpoint 基础连通正常。
-- Dartmouth 中文音频已按旧 `audio/delivery/` 键上传，`audio-manifest.json` 已成功上传。
-- 30 个 AI100 release 音频已上传到 `audio/releases/`，签名 HEAD 校验的 checksum、大小、MIME 和缓存 metadata 全部一致。
-- `audio/releases/*` 已开放匿名 `GetObject`；30 个对象的匿名 Range、CORS、MIME 与缓存校验全部通过。
-- `audio/manifests/*` 与旧 `audio/delivery/*` 保持私有，租户限定匿名请求返回 HTTP 403。
-- Archive、compiler 和播放器已经使用 tenant-qualified `deliveryUrl`；中文页面选择互动增强版，英文页面选择英文版。
+- 四条启用故事线的 194 个 storyline entries 均已关联中英文 S3 audio asset。
+- 168 个唯一事件当前配置 346 个版本化 release asset，其中 336 个被启用 variants 选中；
+  其余 10 个是保留的历史候选版本。共享事件复用同一 audio asset。
+- `audio/releases/*` 公开读取，`audio/manifests/*` 保持私有。
+- Archive、compiler 和播放器优先使用 tenant-qualified S3 `deliveryUrl`，不依赖本地 MP3。
+- 使用 `npm run audio:status -- --remote` 获取实时对象可达性，不在文档中维护易过期的对象计数结论。
 
-后续需要轮换已通过对话传递的凭证，并按正式展示网络环境决定是否在当前匿名只读链路前增加媒体网关或 CDN。
+后续仍应轮换曾通过对话传递的旧凭证，并按正式展示网络环境决定是否增加媒体网关或 CDN。

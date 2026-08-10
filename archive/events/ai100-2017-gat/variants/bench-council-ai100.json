@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2017-gat-citations",
-    "asset-2017-gat-attention-neighbors"
+    "asset-2017-gat-attention-neighbors",
+    "asset-ai100-2017-gat-audio-zh-original-v1",
+    "asset-ai100-2017-gat-audio-en-v1"
   ],
   "sourceIds": [
     "source-iclr-openreview-record",

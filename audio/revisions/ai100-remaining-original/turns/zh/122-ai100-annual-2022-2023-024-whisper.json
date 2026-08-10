@@ -1,0 +1,82 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 122,
+    "eventId": "ai100-annual-2022-2023-024-whisper",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "为什么「Whisper」会成为人工智能史上值得单独记住的一步？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Whisper 之前，强大的语音识别系统往往针对特定语言、领域或人工整理数据集优化。2022 年这项工作检验了更大、更多样的弱监督语料能否以较少的基准专门化换取更广泛的稳健性。",
+            "sourceIds": ["source-whisper-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "Whisper 使用编码器-解码器 Transformer，并把转写、翻译、语言识别和时间戳统一表示为序列到序列任务。68 万小时训练数据让一个模型能够跨语言、跨任务复用信号，而不必维护彼此分离的流水线。",
+            "sourceIds": ["source-whisper-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 Whisper 视为开放通用语音识别的重要转折点，因为公开模型让稳健的多语种转写更容易获得。它的影响还延伸到后来多模态系统和对话系统的语音入口。",
+            "sourceIds": ["source-whisper-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "当今天的系统规模越来越大时，「Whisper」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-024-whisper-portrait-ilya-sutskever",
+                "source-whisper-paper",
+                "source-whisper-code",
+                "source-whisper-official-approach"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

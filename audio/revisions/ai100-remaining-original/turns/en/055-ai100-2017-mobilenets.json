@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 55,
+    "eventId": "ai100-2017-mobilenets",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Turn the clock back to 2017. What problem was MobileNets actually trying to solve?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Image classifiers were becoming more accurate, but their computation and memory costs made deployment on phones and embedded devices difficult. MobileNets reframed architecture design around latency and resource constraints rather than benchmark accuracy alone.",
+            "sourceIds": ["source-2017-mobilenets-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2017-mobilenets-membership", "claim-2017-mobilenets-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Depthwise separable convolution splits spatial filtering from channel mixing, sharply reducing multiply-add operations. MobileNetV2 added inverted residual blocks and linear bottlenecks so narrow mobile representations could retain useful information.",
+            "sourceIds": ["source-2017-mobilenets-primary"],
+            "claimIds": ["claim-2017-mobilenets-membership", "claim-2017-mobilenets-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat MobileNets as a foundational efficient-model family that made on-device vision a first-class research objective. Its design principles influenced later efficient CNNs, neural architecture search, and mobile inference systems.",
+            "sourceIds": ["source-2017-mobilenets-primary", "source-2017-mobilenets-secondary"],
+            "claimIds": ["claim-2017-mobilenets-membership", "claim-2017-mobilenets-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "MobileNets mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-2017-mobilenets-primary",
+                "source-2017-mobilenets-secondary",
+                "source-benchcouncil-ai100-catalog"
+            ],
+            "claimIds": ["claim-2017-mobilenets-membership", "claim-2017-mobilenets-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

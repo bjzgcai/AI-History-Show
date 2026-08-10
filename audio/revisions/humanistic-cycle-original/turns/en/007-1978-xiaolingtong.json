@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-en-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 7,
+    "eventId": "1978-xiaolingtong",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Turn the clock back to 1978. What problem was Little Smart Roaming the Future actually trying to solve?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "The book appeared as China reopened scientific and educational imagination after the Cultural Revolution. Its importance lies in showing a future-facing technological optimism that differs sharply from Western robot-revolt narratives.",
+            "sourceIds": ["source-little-smart-publication-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The emotional mechanism is guided wonder: future technology is explained through travel, observation and civic improvement. Machines become part of a better public world rather than signs of human obsolescence.",
+            "sourceIds": ["source-little-smart-publication-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts in Chinese science-fiction history generally treat Ye Yonglie as a key post-1978 popularizer of scientific imagination. The book's legacy is an optimistic counterweight inside this branch, reminding viewers that AI emotion is culturally situated.",
+            "sourceIds": ["source-little-smart-publication-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Little Smart Roaming the Future mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-xiaolingtong-cover-wikipedia",
+                "source-ye-yonglie-commons-portrait",
+                "source-little-smart-publication-overview",
+                "source-ye-yonglie-biography",
+                "source-science-fiction-encyclopedia-ye-yonglie",
+                "source-chinese-science-fiction-context"
+            ],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

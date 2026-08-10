@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-2014-r-cnn-portrait",
-    "asset-2014-r-cnn-explainer"
+    "asset-2014-r-cnn-explainer",
+    "asset-ai100-2014-r-cnn-audio-zh-original-v1",
+    "asset-ai100-2014-r-cnn-audio-en-v1"
   ],
   "sourceIds": [
     "source-2014-r-cnn-primary",

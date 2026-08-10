@@ -53,7 +53,9 @@
   "assetIds": [
     "asset-michael-buro-university-portrait",
     "asset-1997-logistello-pattern-eval",
-    "asset-1997-logistello-game-1-positions"
+    "asset-1997-logistello-game-1-positions",
+    "asset-1997-logistello-audio-zh-original-v1",
+    "asset-1997-logistello-audio-en-v1"
   ],
   "sourceIds": [
     "source-michael-buro-university-profile",

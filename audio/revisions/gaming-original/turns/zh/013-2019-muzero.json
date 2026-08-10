@@ -1,0 +1,69 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "gaming-all-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "gaming-ai",
+    "sequenceIndex": 13,
+    "eventId": "2019-muzero",
+    "variantId": "gaming-ai",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "gaming-ai",
+    "turns": [
+        {
+            "role": "A",
+            "text": "上一段讲到「Suphx：深度强化学习麻将 AI」。现在把镜头转向「MuZero」，沿着这条故事线换一个问题：把时间拨回2019-2020年，「MuZero」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "AlphaZero 依赖已知规则搜索，而许多强化学习智能体从像素学习但缺少显式前瞻。MuZero 通过学习一个对规划有用的模型，把这两个世界连接起来，即使没有提供精确规则也能工作。",
+            "sourceIds": ["source-nature-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "MuZero 不预测每个未来观测，而是学习面向奖励、价值、策略和搜索的潜在动力学模型。这个模型按是否帮助决策来评价，而不是按是否重建完整世界来评价。",
+            "sourceIds": ["source-nature-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 MuZero 视为学习模型规划的标志性成果。它的长期影响在于说明：基于模型的强化学习可以结合 AlphaZero 式搜索和经验驱动模型学习的优势。",
+            "sourceIds": ["source-nature-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「MuZero」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-david-silver-commons-portrait",
+                "source-nature-paper",
+                "source-arxiv-preprint",
+                "source-deepmind-muzero-blog"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

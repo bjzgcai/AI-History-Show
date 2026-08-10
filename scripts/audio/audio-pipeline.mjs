@@ -12,6 +12,9 @@ const BUILD_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'build-audio-revision.mjs');
 const GENERATE_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'generate-audio-revision.mjs');
 const VALIDATE_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'validate-audio-revision.mjs');
 const REVIEW_BUILD_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'build-audio-review-page-data.mjs');
+const STATUS_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'check-audio-workflow-status.mjs');
+const ARCHIVE_SYNC_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'sync-original-audio-release.mjs');
+const S3_SCRIPT = path.join(ROOT, 'scripts/sync-audio-s3.js');
 const ACTIVE_OVERLAYS_PATH = path.join(ROOT, 'tools/audio-review-console/active-overlays.json');
 
 function run(scriptPath, args = []) {
@@ -66,29 +69,58 @@ function generate(configArgument) {
     }
 }
 
+function sourceCheckAll() {
+    const revisionsRoot = path.join(ROOT, 'audio/revisions');
+    const configPaths = fs
+        .readdirSync(revisionsRoot)
+        .filter((fileName) => fileName.endsWith('.json'))
+        .sort()
+        .map((fileName) => path.join(revisionsRoot, fileName));
+    for (const configPath of configPaths) run(BUILD_SCRIPT, [configPath, '--source-only']);
+}
+
+function release(args) {
+    const [command, ...commandArgs] = args;
+    if (command === 'archive-sync-originals') {
+        run(ARCHIVE_SYNC_SCRIPT, commandArgs);
+        return;
+    }
+    if (!['check', 'manifest', 'push', 'verify', 'publish-access'].includes(command)) {
+        fail('release requires check, manifest, push, verify, publish-access, or archive-sync-originals');
+    }
+    run(S3_SCRIPT, [command, ...commandArgs]);
+}
+
 function main() {
     const [command, ...args] = process.argv.slice(2);
     if (!command || command === 'help' || command === '--help') {
         console.log(`Usage:
-  npm run audio:revision -- build <config.json>
-  npm run audio:revision -- generate <config.json>
-  npm run audio:revision -- validate <config.json>
-  npm run audio:revision -- source-check <config.json>
-  npm run audio:revision -- check <config.json>
-  npm run audio:revision -- activate <config-a.json> [config-b.json ...]
-  npm run audio:revision -- review`);
+  npm run audio:workflow -- status [--json] [--strict] [--remote]
+  npm run audio:workflow -- source-check <config.json>
+  npm run audio:workflow -- source-check-all
+  npm run audio:workflow -- build <config.json>
+  npm run audio:workflow -- generate <config.json>
+  npm run audio:workflow -- validate <config.json>
+  npm run audio:workflow -- check <config.json>
+  npm run audio:workflow -- activate <config-a.json> [config-b.json ...]
+  npm run audio:workflow -- review
+  npm run audio:workflow -- release <check|manifest|push|verify|publish-access> [options]
+  npm run audio:workflow -- release archive-sync-originals [--apply] [--link-shared-variants]`);
         return;
     }
-    if (command === 'build') run(BUILD_SCRIPT, args);
+    if (command === 'status') run(STATUS_SCRIPT, args);
+    else if (command === 'build') run(BUILD_SCRIPT, args);
     else if (command === 'generate') generate(args[0]);
     else if (command === 'validate') run(VALIDATE_SCRIPT, args);
     else if (command === 'source-check') run(BUILD_SCRIPT, [...args, '--source-only']);
+    else if (command === 'source-check-all') sourceCheckAll();
     else if (command === 'check') {
         run(BUILD_SCRIPT, [...args, '--check']);
         const config = loadRevisionConfig(args[0]);
         if (fs.existsSync(revisionPaths(config).overlayPath)) run(VALIDATE_SCRIPT, [config.configPath]);
     } else if (command === 'activate') activate(args);
     else if (command === 'review') run(REVIEW_BUILD_SCRIPT);
+    else if (command === 'release') release(args);
     else fail(`Unknown audio revision command: ${command}`);
 }
 

@@ -1,0 +1,69 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "gaming-all-storyline-en-original-v1-2026-08-09",
+    "scopeId": "gaming-ai",
+    "sequenceIndex": 12,
+    "eventId": "2019-suphx",
+    "variantId": "gaming-ai",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "gaming-ai",
+    "turns": [
+        {
+            "role": "A",
+            "text": "What is most interesting about Suphx: Mahjong with Deep Reinforcement Learning: the result itself, or the way it reframed the problem?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Mahjong is more difficult for direct search than chess-like board games because players see only part of the state. Every discard affects hand value, safety, turn order, and the hidden intentions of three opponents.",
+            "sourceIds": ["source-suphx-arxiv-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Suphx learned from human games and then improved through reinforcement learning. Its additional reward prediction, oracle guiding, and policy adaptation components helped it reason about delayed points, hidden tiles, and changing table context.",
+            "sourceIds": ["source-suphx-arxiv-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat Suphx as a signal that deep reinforcement learning can handle multi-player stochastic imperfect-information games beyond poker. Its legacy is broadening the game-AI testbed from clean boards and two-player equilibrium toward messy cultural games with rich hidden state.",
+            "sourceIds": ["source-suphx-arxiv-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "As today's systems grow larger, which lessons from Suphx: Mahjong with Deep Reinforcement Learning still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-suphx-arxiv-paper",
+                "source-arxiv-doi-page",
+                "source-building-a-computer-mahjong-player-via-deep-cnns",
+                "source-microsoft-suphx-project"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 133,
+    "eventId": "ai100-annual-2022-2023-028-blip-2",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "The previous story examined Claude. Now the camera turns to Blip-2 and a new question along the same timeline: Turn the clock back to 2023. What problem was Blip-2 actually trying to solve?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "Large vision-language systems were increasingly built by joining separately pretrained image and language models, but end-to-end pretraining remained computationally expensive. BLIP-2 reframed the problem as learning a compact bridge between already capable frozen components.",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-frozen-bridge",
+                "claim-two-stage-training"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "A Querying Transformer extracts a small set of visual query representations from the frozen image encoder and passes them toward the frozen language model. Two pretraining stages separate representation alignment from generative learning, allowing the interface to learn without updating either large backbone.",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-frozen-bridge",
+                "claim-two-stage-training"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat BLIP-2 as an influential demonstration that multimodal capability can be built by efficiently composing strong pretrained models. Its bridge-based recipe helped establish parameter-efficient visual instruction systems and foreshadowed later assistants that connect vision encoders to large language models.",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-frozen-bridge",
+                "claim-two-stage-training"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Blip-2 mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-028-blip-2-portrait-junnan-li",
+                "source-arxiv-paper",
+                "source-lavis-repository",
+                "source-junnan-github-profile",
+                "source-blip2-qformer-figure",
+                "source-blip2-official-architecture"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-frozen-bridge",
+                "claim-two-stage-training"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 24,
+    "eventId": "2000-spectral-clustering",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "What is most interesting about Normalized Cuts and Spectral Clustering: the result itself, or the way it reframed the problem?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Image segmentation and data clustering needed methods that could separate non-convex groups without assuming spherical geometry.",
+            "sourceIds": [
+                "source-normalized-cuts-and-image-segmentation",
+                "source-on-spectral-clustering-analysis-and-an-algorithm"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The method builds an affinity graph, computes spectral embeddings from graph Laplacian eigenvectors, and clusters or cuts in that embedded space. The key mechanism is Graph Laplacian eigenvector embedding, which links the source material to the visible demo behavior.",
+            "sourceIds": [
+                "source-normalized-cuts-and-image-segmentation",
+                "source-on-spectral-clustering-analysis-and-an-algorithm"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat spectral clustering as a major graph-based approach to grouping non-convex data. Its long-term legacy is the use of graph Laplacian eigenvectors to connect image segmentation, manifold learning, graph clustering, and modern graph data analysis.",
+            "sourceIds": [
+                "source-normalized-cuts-and-image-segmentation",
+                "source-on-spectral-clustering-analysis-and-an-algorithm",
+                "source-scikit-learn-spectral-clustering-documentation"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "As today's systems grow larger, which lessons from Normalized Cuts and Spectral Clustering still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-normalized-cuts-and-image-segmentation",
+                "source-on-spectral-clustering-analysis-and-an-algorithm",
+                "source-scikit-learn-spectral-clustering-documentation",
+                "source-spectral-graph-illustration",
+                "source-andrew-ng-wikimedia-portrait"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

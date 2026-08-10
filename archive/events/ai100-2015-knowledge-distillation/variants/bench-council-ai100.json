@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-geoffrey-hinton",
-    "asset-2015-knowledge-distillation-teacher-student"
+    "asset-2015-knowledge-distillation-teacher-student",
+    "asset-ai100-2015-knowledge-distillation-audio-zh-original-v1",
+    "asset-ai100-2015-knowledge-distillation-audio-en-v1"
   ],
   "sourceIds": [
     "source-knowledge-distillation-overview",

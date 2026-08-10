@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 11,
+    "eventId": "2015-openai-founding",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "研究者为什么需要「OpenAI 宣告成立」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "这一宣告出现在深度学习进展、公共风险警告和对 AI 能力集中担忧同时升温之后。它的重要性在于，AI 安全与广泛受益不再只是研究话题，也成为一个机构的创始身份。",
+            "sourceIds": ["source-archived-openai-announcement"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "这里的情绪机制是建设性防御：如果强大 AI 可能危险或被集中控制，那么新机构或许能把它引向公共受益。这把焦虑转化为使命语言、资金策略与组织设计。",
+            "sourceIds": ["source-archived-openai-announcement"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 OpenAI 的成立视为 2010 年代中期 AI 安全与广泛受益话语主流化的一部分。它的遗产很复杂，但在历史上标志着情绪关切变成机构基础设施。",
+            "sourceIds": ["source-archived-openai-announcement"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「AI 风险声明」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

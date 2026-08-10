@@ -51,7 +51,9 @@
     "asset-2014-attention-alignment",
     "asset-2014-attention-architecture-01",
     "asset-2014-attention-cho-portrait",
-    "asset-2014-attention-people-01"
+    "asset-2014-attention-people-01",
+    "asset-2014-attention-audio-zh-original-v1",
+    "asset-2014-attention-audio-en-v1"
   ],
   "sourceIds": [
     "source-iclr-2015-paper-page",

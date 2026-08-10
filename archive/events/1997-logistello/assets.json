@@ -93,5 +93,85 @@
       "variant:gaming-ai"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-1997-logistello-audio-zh-original-v1",
+    "type": "audio",
+    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-logistello-zh-original-v1.mp3",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "1997-logistello 中文原版科普音频",
+      "en": "1997-logistello original Chinese audio narration"
+    },
+    "subcaption": {
+      "zh": "中文原版科普讲述，供中文页面播放。",
+      "en": "Original Chinese science narration used on the Chinese page."
+    },
+    "sourceId": "source-michael-buro-university-profile",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于本展览的事件科普音频播放。",
+        "en": "Used for event narration in this exhibition."
+      }
+    },
+    "language": "zh",
+    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-logistello-zh-original-v1.mp3",
+    "storage": {
+      "provider": "bza-s3",
+      "bucket": "ai-history",
+      "objectKey": "audio/releases/1997-logistello-zh-original-v1.mp3",
+      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/gaming-all-storyline-zh-original-v1-2026-08-09/audio/gaming-ai/storyline/zh/05-1997-logistello.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1997-logistello-audio-en-v1",
+    "type": "audio",
+    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-logistello-en-v1.mp3",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "1997-logistello 英文科普音频",
+      "en": "1997-logistello English audio narration"
+    },
+    "subcaption": {
+      "zh": "英文原版科普讲述，供英文页面播放。",
+      "en": "Original English science narration used on the English page."
+    },
+    "sourceId": "source-michael-buro-university-profile",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于本展览的事件科普音频播放。",
+        "en": "Used for event narration in this exhibition."
+      }
+    },
+    "language": "en",
+    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-logistello-en-v1.mp3",
+    "storage": {
+      "provider": "bza-s3",
+      "bucket": "ai-history",
+      "objectKey": "audio/releases/1997-logistello-en-v1.mp3",
+      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/gaming-all-storyline-en-original-v1-2026-08-09/audio/gaming-ai/storyline/en/05-1997-logistello.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
   }
 ]

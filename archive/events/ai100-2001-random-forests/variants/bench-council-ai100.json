@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-2001-random-forests-portrait",
-    "asset-2001-random-forests-explainer"
+    "asset-2001-random-forests-explainer",
+    "asset-ai100-2001-random-forests-audio-zh-original-v1",
+    "asset-ai100-2001-random-forests-audio-en-v1"
   ],
   "sourceIds": [
     "source-2001-random-forests-primary",

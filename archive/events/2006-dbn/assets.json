@@ -79,5 +79,87 @@
       "variant:bench-council-ai100"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-2006-dbn-audio-zh-original-v1",
+    "type": "audio",
+    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2006-dbn-zh-original-v1.mp3",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "2006-dbn 中文原版科普音频",
+      "en": "2006-dbn original Chinese audio narration"
+    },
+    "subcaption": {
+      "zh": "中文原版科普讲述，供中文页面播放。",
+      "en": "Original Chinese science narration used on the Chinese page."
+    },
+    "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于本展览的事件科普音频播放。",
+        "en": "Used for event narration in this exhibition."
+      }
+    },
+    "language": "zh",
+    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2006-dbn-zh-original-v1.mp3",
+    "storage": {
+      "provider": "bza-s3",
+      "bucket": "ai-history",
+      "objectKey": "audio/releases/2006-dbn-zh-original-v1.mp3",
+      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-zh-original-v1-2026-08-09/audio/bench-council-ai100/storyline/zh/42-2006-dbn.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "usage": [
+      "variant:deep-learning",
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2006-dbn-audio-en-v1",
+    "type": "audio",
+    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2006-dbn-en-v1.mp3",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "2006-dbn 英文科普音频",
+      "en": "2006-dbn English audio narration"
+    },
+    "subcaption": {
+      "zh": "英文原版科普讲述，供英文页面播放。",
+      "en": "Original English science narration used on the English page."
+    },
+    "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于本展览的事件科普音频播放。",
+        "en": "Used for event narration in this exhibition."
+      }
+    },
+    "language": "en",
+    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2006-dbn-en-v1.mp3",
+    "storage": {
+      "provider": "bza-s3",
+      "bucket": "ai-history",
+      "objectKey": "audio/releases/2006-dbn-en-v1.mp3",
+      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-en-original-v1-2026-08-09/audio/bench-council-ai100/storyline/en/42-2006-dbn.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "usage": [
+      "variant:deep-learning",
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
   }
 ]

@@ -1,0 +1,70 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-en-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 1,
+    "eventId": "1920-rur-robots",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Turn the clock back to 1920. What problem was R.U.R. and the Birth of the Robot actually trying to solve?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "R.U.R. appeared amid early twentieth-century industrialization, when factories, mass labor and mechanized production were reshaping social imagination. The play matters because it made artificial workers emotionally legible to the public long before technical AI existed.",
+            "sourceIds": ["source-project-gutenberg-r-u-r-text"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The central drama is not a technical malfunction but a social reversal: manufactured laborers become agents with collective force. That makes the work a useful starting point for connecting AI history to labor, power and responsibility.",
+            "sourceIds": ["source-project-gutenberg-r-u-r-text"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts in AI history and science-fiction studies generally treat R.U.R. as a foundational cultural reference for machine autonomy. Its legacy is not that it predicted a specific technology, but that it gave later generations a vocabulary for fearing and debating artificial agents.",
+            "sourceIds": ["source-project-gutenberg-r-u-r-text"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "R.U.R. and the Birth of the Robot mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-karel-capek-commons-portrait",
+                "source-project-gutenberg-r-u-r-text",
+                "source-1920-czech-edition-scan",
+                "source-r-u-r-publication-and-word-history-overview",
+                "source-robot-etymology-background"
+            ],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

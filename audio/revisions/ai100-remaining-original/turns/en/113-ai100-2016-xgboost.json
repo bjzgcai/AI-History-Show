@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 113,
+    "eventId": "ai100-2016-xgboost",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined Gradient Boosting. Now the camera turns to XGBoost and a new question along the same timeline: Why did researchers need XGBoost, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "Gradient-boosted trees were highly accurate, but large datasets and sparse features exposed systems bottlenecks. XGBoost combined a regularized objective with an engineering design built for scalable parallel and out-of-core learning.",
+            "sourceIds": ["source-2016-xgboost-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2016-xgboost-membership", "claim-2016-xgboost-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "The system uses second-order gradient statistics, regularized tree scoring, sparsity-aware split finding, column blocks, and cache-conscious computation. These choices make boosted trees efficient across machines and data formats.",
+            "sourceIds": ["source-2016-xgboost-primary"],
+            "claimIds": ["claim-2016-xgboost-membership", "claim-2016-xgboost-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally regard XGBoost as the system that made gradient-boosted trees a default high-performance tool for tabular prediction. Its open-source ecosystem and competition success drove broad industrial adoption.",
+            "sourceIds": ["source-2016-xgboost-primary", "source-2016-xgboost-secondary"],
+            "claimIds": ["claim-2016-xgboost-membership", "claim-2016-xgboost-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with LightGBM, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

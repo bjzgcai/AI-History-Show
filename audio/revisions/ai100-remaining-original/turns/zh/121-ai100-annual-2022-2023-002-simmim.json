@@ -1,0 +1,111 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 121,
+    "eventId": "ai100-annual-2022-2023-002-simmim",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "上一段讲到「Swin Transformer V2」。现在把镜头转向「Simmim」，沿着这条故事线换一个问题：把时间拨回2022年，「Simmim」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "掩码图像建模把语言模型中的自监督预训练思路带入计算机视觉，但早期系统往往加入分词器、聚类目标或较重的解码结构。SimMIM 直接检验这些机制是否必要，并把任务压缩为少量可控设计选择。",
+            "sourceIds": ["source-cvf-paper-page", "source-microsoft-research-publication"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-simple-masked-modeling",
+                "claim-scale-results"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "输入图像先以中等偏大的图块随机遮挡，可见内容再交给标准视觉主干处理。轻量线性头直接预测被遮挡像素的原始 RGB 值，使研究者可以在不受复杂分词器或解码器干扰的情况下观察表征质量。",
+            "sourceIds": ["source-cvf-paper-page", "source-microsoft-research-publication"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-simple-masked-modeling",
+                "claim-scale-results"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 SimMIM 视为一项重要证据：强大的掩码图像预训练并不必然需要复杂离散目标或沉重重建模块。它的长期价值在于方法清晰，简洁方案成为比较遮挡策略、预测目标、模型规模和数据规模的干净基线，公开实现也提高了这些比较的可复现性。",
+            "sourceIds": [
+                "source-cvf-paper-page",
+                "source-microsoft-research-publication",
+                "source-implementation-repository"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-simple-masked-modeling",
+                "claim-scale-results"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「Simmim」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-002-simmim-portrait-han-hu",
+                "source-cvf-paper-page",
+                "source-microsoft-research-publication",
+                "source-implementation-repository",
+                "source-zhenda-xie-github",
+                "source-zheng-zhang-profile",
+                "source-zheng-zhang-name-record",
+                "source-yue-cao-github",
+                "source-han-hu-profile",
+                "source-annual-002-simmim-portrait-yue-cao",
+                "source-simmim-official-teaser"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-simple-masked-modeling",
+                "claim-scale-results"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

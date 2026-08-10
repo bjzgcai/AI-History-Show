@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 23,
+    "eventId": "1996-dbscan",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why did researchers need DBSCAN, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Many clustering methods preferred round clusters and required the number of clusters before analysis.",
+            "sourceIds": ["source-a-density-based-algorithm-for-discovering-clusters"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "A point with enough neighbors within epsilon is a core point; clusters expand through chains of density reachability. The key mechanism is Density reachability with epsilon and MinPts, which links the source material to the visible demo behavior.",
+            "sourceIds": ["source-a-density-based-algorithm-for-discovering-clusters"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat DBSCAN as a standard density-based clustering method, especially for spatial data and irregular cluster shapes. Its long-term legacy is the core-border-noise vocabulary that made outlier handling and arbitrary-shape clusters practical.",
+            "sourceIds": ["source-a-density-based-algorithm-for-discovering-clusters"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with Normalized Cuts and Spectral Clustering, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

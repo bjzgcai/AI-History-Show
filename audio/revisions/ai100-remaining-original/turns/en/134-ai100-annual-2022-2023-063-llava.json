@@ -1,0 +1,84 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 134,
+    "eventId": "ai100-annual-2022-2023-063-llava",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does LLaVA deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Language-only instruction tuning had made assistants much easier to direct, while vision-language models were still commonly trained for fixed tasks such as captioning or question answering. LLaVA brought the instruction-following paradigm to image-grounded conversation with a deliberately simple connector architecture.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-visual-instruction-data",
+                "claim-two-stage"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "A learned linear projection maps CLIP visual features into the token embedding space of a large language model. Synthetic conversations generated with GPT-4 provide instruction data, and two-stage training first aligns modalities before tuning the combined assistant for multimodal dialogue.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-visual-instruction-data",
+                "claim-two-stage"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat LLaVA as a foundational open recipe for visual instruction tuning because it paired a simple architecture with reproducible data generation and code. Its influence is visible in the rapid expansion of open multimodal assistants and in later work that improves encoders, connectors, data mixtures and visual reasoning.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-visual-instruction-data",
+                "claim-two-stage"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from LLaVA still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-063-llava-portrait-haotian-liu",
+                "source-llava-project",
+                "source-llava-repository",
+                "source-haotian-liu-profile",
+                "source-llava-figure-1",
+                "source-llava-official-architecture"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-visual-instruction-data",
+                "claim-two-stage"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

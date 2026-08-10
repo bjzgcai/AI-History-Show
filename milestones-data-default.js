@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-09 03:19
+// 生成时间: 2026-08-10 01:42
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 194, errors 0
 
@@ -5208,6 +5208,38 @@ const milestones = [
         "resources/images/bench-council-ai100/supporting/1966-eliza_conversation-reconstruction.png"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1966-eliza-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1966-eliza-zh-original-v1.mp3",
+          "title": {
+            "zh": "1966-eliza 中文原版科普音频",
+            "en": "1966-eliza original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1966-eliza-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1966-eliza-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1966-eliza-en-v1.mp3",
+          "title": {
+            "zh": "1966-eliza 英文科普音频",
+            "en": "1966-eliza English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1966-eliza-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1966-eliza-weizenbaum-rit-1982",
         "asset-1966-eliza-doctor-script",
@@ -5215,7 +5247,9 @@ const milestones = [
         "asset-1966-eliza-terminal-dialog",
         "asset-1966-eliza-weizenbaum-uszkoreit-2006",
         "asset-1966-eliza-original-source-page-9",
-        "asset-1966-eliza-conversation-reconstruction"
+        "asset-1966-eliza-conversation-reconstruction",
+        "asset-1966-eliza-audio-zh-original-v1",
+        "asset-1966-eliza-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -5898,10 +5932,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1970-shrdlu-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1970-shrdlu-zh-original-v1.mp3",
+          "title": {
+            "zh": "1970-shrdlu 中文原版科普音频",
+            "en": "1970-shrdlu original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1970-shrdlu-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1970-shrdlu-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1970-shrdlu-en-v1.mp3",
+          "title": {
+            "zh": "1970-shrdlu 英文科普音频",
+            "en": "1970-shrdlu English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1970-shrdlu-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1970-shrdlu-terry-winograd",
         "asset-1970-shrdlu-blocks-world",
-        "asset-1970-shrdlu-parser-plan"
+        "asset-1970-shrdlu-parser-plan",
+        "asset-1970-shrdlu-audio-zh-original-v1",
+        "asset-1970-shrdlu-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -6397,11 +6465,45 @@ const milestones = [
         "resources/images/external/2011-ibm-watson/ibm-watson-jeopardy-demonstration.jpg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2011-ibm-watson-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2011-ibm-watson-zh-original-v1.mp3",
+          "title": {
+            "zh": "2011-ibm-watson 中文原版科普音频",
+            "en": "2011-ibm-watson original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2011-ibm-watson-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2011-ibm-watson-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2011-ibm-watson-en-v1.mp3",
+          "title": {
+            "zh": "2011-ibm-watson 英文科普音频",
+            "en": "2011-ibm-watson English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2011-ibm-watson-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2011-ibm-watson-david-ferrucci",
         "asset-2011-ibm-watson-deepqa",
         "asset-2011-ibm-watson-evidence-ranking",
-        "asset-2011-ibm-watson-ibmwatson"
+        "asset-2011-ibm-watson-ibmwatson",
+        "asset-2011-ibm-watson-audio-zh-original-v1",
+        "asset-2011-ibm-watson-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -6929,12 +7031,46 @@ const milestones = [
         "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1951-strachey-draughts-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1951-strachey-draughts-zh-original-v1.mp3",
+          "title": {
+            "zh": "1951-strachey-draughts 中文原版科普音频",
+            "en": "1951-strachey-draughts original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1951-strachey-draughts-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1951-strachey-draughts-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1951-strachey-draughts-en-v1.mp3",
+          "title": {
+            "zh": "1951-strachey-draughts 英文科普音频",
+            "en": "1951-strachey-draughts English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1951-strachey-draughts-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1951-strachey-draughts-christopher-strachey-portrait",
         "asset-1951-strachey-draughts-board-search",
         "asset-1951-strachey-draughts-program-flow",
         "asset-1951-strachey-draughts-program-external",
-        "asset-1951-strachey-draughts-checkers-board-external"
+        "asset-1951-strachey-draughts-checkers-board-external",
+        "asset-1951-strachey-draughts-audio-zh-original-v1",
+        "asset-1951-strachey-draughts-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -7496,11 +7632,45 @@ const milestones = [
         "resources/images/bench-council-ai100/source/1994-chinook_homepage.png"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1994-chinook-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1994-chinook-zh-original-v1.mp3",
+          "title": {
+            "zh": "1994-chinook 中文原版科普音频",
+            "en": "1994-chinook original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1994-chinook-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1994-chinook-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1994-chinook-en-v1.mp3",
+          "title": {
+            "zh": "1994-chinook 英文科普音频",
+            "en": "1994-chinook English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1994-chinook-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1994-chinook-jonathan-schaeffer-external",
         "asset-1994-chinook-endgame-database",
         "asset-1994-chinook-perfect-play",
-        "asset-1994-chinook-homepage"
+        "asset-1994-chinook-homepage",
+        "asset-1994-chinook-audio-zh-original-v1",
+        "asset-1994-chinook-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -8069,11 +8239,45 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1997-deep-blue-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-deep-blue-zh-original-v1.mp3",
+          "title": {
+            "zh": "1997-deep-blue 中文原版科普音频",
+            "en": "1997-deep-blue original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1997-deep-blue-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1997-deep-blue-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-deep-blue-en-v1.mp3",
+          "title": {
+            "zh": "1997-deep-blue 英文科普音频",
+            "en": "1997-deep-blue English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1997-deep-blue-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1997-deep-blue-feng-hsiung-hsu",
         "asset-1997-deep-blue-search-tree",
         "asset-1997-deep-blue-chip-board",
-        "asset-1997-deep-blue-murray-campbell"
+        "asset-1997-deep-blue-murray-campbell",
+        "asset-1997-deep-blue-audio-zh-original-v1",
+        "asset-1997-deep-blue-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -8621,11 +8825,45 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1959-pandemonium-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1959-pandemonium-zh-original-v1.mp3",
+          "title": {
+            "zh": "1959-pandemonium 中文原版科普音频",
+            "en": "1959-pandemonium original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1959-pandemonium-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1959-pandemonium-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1959-pandemonium-en-v1.mp3",
+          "title": {
+            "zh": "1959-pandemonium 英文科普音频",
+            "en": "1959-pandemonium English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1959-pandemonium-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1959-pandemonium-oliver-selfridge",
         "asset-1959-pandemonium-original-pande2",
         "asset-1959-pandemonium-feature-votes",
-        "asset-1959-pandemonium-layered-recognition"
+        "asset-1959-pandemonium-layered-recognition",
+        "asset-1959-pandemonium-audio-zh-original-v1",
+        "asset-1959-pandemonium-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -9145,10 +9383,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1974-frame-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1974-frame-zh-original-v1.mp3",
+          "title": {
+            "zh": "1974-frame 中文原版科普音频",
+            "en": "1974-frame original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1974-frame-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1974-frame-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1974-frame-en-v1.mp3",
+          "title": {
+            "zh": "1974-frame 英文科普音频",
+            "en": "1974-frame English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1974-frame-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1974-frame-marvin-minsky",
         "asset-1974-frame-slot-card",
-        "asset-1974-frame-inheritance"
+        "asset-1974-frame-inheritance",
+        "asset-1974-frame-audio-zh-original-v1",
+        "asset-1974-frame-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -9644,11 +9916,45 @@ const milestones = [
         "resources/images/external/1984-cyc/cyc-related-project-marks.png"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1984-cyc-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1984-cyc-zh-original-v1.mp3",
+          "title": {
+            "zh": "1984-cyc 中文原版科普音频",
+            "en": "1984-cyc original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1984-cyc-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1984-cyc-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1984-cyc-en-v1.mp3",
+          "title": {
+            "zh": "1984-cyc 英文科普音频",
+            "en": "1984-cyc English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1984-cyc-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1984-cyc-douglas-lenat",
         "asset-1984-cyc-microtheories",
         "asset-1984-cyc-common-sense-rule",
-        "asset-1984-cyc-cyc-projects-logos"
+        "asset-1984-cyc-cyc-projects-logos",
+        "asset-1984-cyc-audio-zh-original-v1",
+        "asset-1984-cyc-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -10216,10 +10522,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1965-dendral_rule-filter.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1965-dendral-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1965-dendral-zh-original-v1.mp3",
+          "title": {
+            "zh": "1965-dendral 中文原版科普音频",
+            "en": "1965-dendral original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1965-dendral-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1965-dendral-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1965-dendral-en-v1.mp3",
+          "title": {
+            "zh": "1965-dendral 英文科普音频",
+            "en": "1965-dendral English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1965-dendral-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1965-dendral-edward-feigenbaum",
         "asset-1965-dendral-mass-spectrum",
-        "asset-1965-dendral-rule-filter"
+        "asset-1965-dendral-rule-filter",
+        "asset-1965-dendral-audio-zh-original-v1",
+        "asset-1965-dendral-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -10696,9 +11036,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1980-xcon-r1-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1980-xcon-r1-zh-original-v1.mp3",
+          "title": {
+            "zh": "1980-xcon-r1 中文原版科普音频",
+            "en": "1980-xcon-r1 original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1980-xcon-r1-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1980-xcon-r1-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1980-xcon-r1-en-v1.mp3",
+          "title": {
+            "zh": "1980-xcon-r1 英文科普音频",
+            "en": "1980-xcon-r1 English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1980-xcon-r1-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1980-xcon-r1-lcm-dec-vax-11-780-5-01",
         "asset-1980-xcon-r1-vax-11-780-cpu-backplane",
+        "asset-1980-xcon-r1-audio-zh-original-v1",
+        "asset-1980-xcon-r1-audio-en-v1",
         "asset-1980-xcon-r1-rule-configurator",
         "asset-1980-xcon-r1-order-flow"
       ]
@@ -11225,8 +11599,42 @@ const milestones = [
         "resources/images/external/1957-kmeans/k-means-clustering-of-iris-data.png"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1957-kmeans-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1957-kmeans-zh-original-v1.mp3",
+          "title": {
+            "zh": "1957-kmeans 中文原版科普音频",
+            "en": "1957-kmeans original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1957-kmeans-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1957-kmeans-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1957-kmeans-en-v1.mp3",
+          "title": {
+            "zh": "1957-kmeans 英文科普音频",
+            "en": "1957-kmeans English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1957-kmeans-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1957-kmeans-bell-labs-holmdel",
+        "asset-1957-kmeans-audio-zh-original-v1",
+        "asset-1957-kmeans-audio-en-v1",
         "asset-1957-kmeans-centroid-loop",
         "asset-1957-kmeans-cluster-update",
         "asset-1957-kmeans-iris-flowers-clustering-kmeans"
@@ -11786,10 +12194,44 @@ const milestones = [
         "resources/images/external/1996-dbscan/dbscan-density-clustering-diagram.png"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1996-dbscan-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1996-dbscan-zh-original-v1.mp3",
+          "title": {
+            "zh": "1996-dbscan 中文原版科普音频",
+            "en": "1996-dbscan original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1996-dbscan-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1996-dbscan-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1996-dbscan-en-v1.mp3",
+          "title": {
+            "zh": "1996-dbscan 英文科普音频",
+            "en": "1996-dbscan English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1996-dbscan-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1996-dbscan-sfu-professor-martin-ester-2019",
         "asset-1996-dbscan-density-reachability",
         "asset-1996-dbscan-noise-core-border",
+        "asset-1996-dbscan-audio-zh-original-v1",
+        "asset-1996-dbscan-audio-en-v1",
         "asset-1996-dbscan-dbscan-density-data"
       ]
     },
@@ -12365,10 +12807,44 @@ const milestones = [
         "resources/images/external/2000-spectral-clustering/six-node-spectral-clustering-graph.png"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2000-spectral-clustering-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2000-spectral-clustering-zh-original-v1.mp3",
+          "title": {
+            "zh": "2000-spectral-clustering 中文原版科普音频",
+            "en": "2000-spectral-clustering original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2000-spectral-clustering-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2000-spectral-clustering-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2000-spectral-clustering-en-v1.mp3",
+          "title": {
+            "zh": "2000-spectral-clustering 英文科普音频",
+            "en": "2000-spectral-clustering English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2000-spectral-clustering-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2000-spectral-clustering-andrew-ng-at-techcrunch-disrupt-sf-2017",
         "asset-2000-spectral-clustering-graph-cut",
         "asset-2000-spectral-clustering-eigen-map",
+        "asset-2000-spectral-clustering-audio-zh-original-v1",
+        "asset-2000-spectral-clustering-audio-en-v1",
         "asset-2000-spectral-clustering-6n-graf"
       ]
     },
@@ -12930,9 +13406,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1967-knn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1967-knn-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1967-knn 中文原版科普音频",
+            "en": "ai100-1967-knn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1967-knn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1967-knn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1967-knn-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1967-knn 英文科普音频",
+            "en": "ai100-1967-knn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1967-knn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-1967-knn-thomas-cover-stanford",
-        "asset-1967-knn-neighbor-vote"
+        "asset-1967-knn-neighbor-vote",
+        "asset-ai100-1967-knn-audio-zh-original-v1",
+        "asset-ai100-1967-knn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -13452,9 +13962,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1970-ridge-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1970-ridge-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1970-ridge 中文原版科普音频",
+            "en": "ai100-1970-ridge original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1970-ridge-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1970-ridge-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1970-ridge-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1970-ridge 英文科普音频",
+            "en": "ai100-1970-ridge English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1970-ridge-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-1970-ridge-ai-ridge-regression-main",
-        "asset-1970-ridge-shrinkage"
+        "asset-1970-ridge-shrinkage",
+        "asset-ai100-1970-ridge-audio-zh-original-v1",
+        "asset-ai100-1970-ridge-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -13994,11 +14538,45 @@ const milestones = [
       "overviewImage": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
       "overviewImageAssetId": "asset-1992-svm-vladimir-vapnik",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1992-svm-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1992-svm-zh-original-v1.mp3",
+          "title": {
+            "zh": "1992-svm 中文原版科普音频",
+            "en": "1992-svm original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1992-svm-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1992-svm-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1992-svm-en-v1.mp3",
+          "title": {
+            "zh": "1992-svm 英文科普音频",
+            "en": "1992-svm English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1992-svm-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1992-svm-vladimir-vapnik",
         "asset-1992-svm-max-margin",
         "asset-1992-svm-kernel-lift",
-        "asset-1992-svm-isabelle-guyon"
+        "asset-1992-svm-isabelle-guyon",
+        "asset-1992-svm-audio-zh-original-v1",
+        "asset-1992-svm-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -14522,10 +15100,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1996-lasso-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1996-lasso-zh-original-v1.mp3",
+          "title": {
+            "zh": "1996-lasso 中文原版科普音频",
+            "en": "1996-lasso original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1996-lasso-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1996-lasso-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1996-lasso-en-v1.mp3",
+          "title": {
+            "zh": "1996-lasso 英文科普音频",
+            "en": "1996-lasso English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1996-lasso-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1996-lasso-robert-tibshirani",
         "asset-1996-lasso-l1-constraint",
-        "asset-1996-lasso-coefficient-path"
+        "asset-1996-lasso-coefficient-path",
+        "asset-1996-lasso-audio-zh-original-v1",
+        "asset-1996-lasso-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -15005,10 +15617,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1999-sift_descriptor.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1999-sift-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1999-sift-zh-original-v1.mp3",
+          "title": {
+            "zh": "1999-sift 中文原版科普音频",
+            "en": "1999-sift original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1999-sift-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1999-sift-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1999-sift-en-v1.mp3",
+          "title": {
+            "zh": "1999-sift 英文科普音频",
+            "en": "1999-sift English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1999-sift-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1999-sift-david-lowe",
         "asset-1999-sift-scale-space",
-        "asset-1999-sift-descriptor"
+        "asset-1999-sift-descriptor",
+        "asset-1999-sift-audio-zh-original-v1",
+        "asset-1999-sift-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -15499,9 +16145,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2005-hog-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2005-hog-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2005-hog 中文原版科普音频",
+            "en": "ai100-2005-hog original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2005-hog-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2005-hog-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2005-hog-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2005-hog 英文科普音频",
+            "en": "ai100-2005-hog English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2005-hog-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2005-hog-navneet-dalal-portrait",
-        "asset-2005-hog-descriptor-grid"
+        "asset-2005-hog-descriptor-grid",
+        "asset-ai100-2005-hog-audio-zh-original-v1",
+        "asset-ai100-2005-hog-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -16037,9 +16717,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2006-surf-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2006-surf-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2006-surf 中文原版科普音频",
+            "en": "ai100-2006-surf original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2006-surf-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2006-surf-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2006-surf-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2006-surf 英文科普音频",
+            "en": "ai100-2006-surf English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2006-surf-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2006-surf-herbert-bay-gm",
-        "asset-2006-surf-interest-points"
+        "asset-2006-surf-interest-points",
+        "asset-ai100-2006-surf-audio-zh-original-v1",
+        "asset-ai100-2006-surf-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -16543,9 +17257,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1997-kernel-pca-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1997-kernel-pca-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1997-kernel-pca 中文原版科普音频",
+            "en": "ai100-1997-kernel-pca original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1997-kernel-pca-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1997-kernel-pca-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1997-kernel-pca-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1997-kernel-pca 英文科普音频",
+            "en": "ai100-1997-kernel-pca English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1997-kernel-pca-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-1997-kernel-pca-bernhard-sch-lkopf",
-        "asset-1997-kernel-pca-eigenmap"
+        "asset-1997-kernel-pca-eigenmap",
+        "asset-ai100-1997-kernel-pca-audio-zh-original-v1",
+        "asset-ai100-1997-kernel-pca-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -17049,9 +17797,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1999-nmf-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1999-nmf-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1999-nmf 中文原版科普音频",
+            "en": "ai100-1999-nmf original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1999-nmf-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1999-nmf-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1999-nmf-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1999-nmf 英文科普音频",
+            "en": "ai100-1999-nmf English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1999-nmf-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-1999-nmf-sebastian",
-        "asset-1999-nmf-parts-factorization"
+        "asset-1999-nmf-parts-factorization",
+        "asset-ai100-1999-nmf-audio-zh-original-v1",
+        "asset-ai100-1999-nmf-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -17555,9 +18337,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2000-isomap-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2000-isomap-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2000-isomap 中文原版科普音频",
+            "en": "ai100-2000-isomap original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2000-isomap-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2000-isomap-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2000-isomap-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2000-isomap 英文科普音频",
+            "en": "ai100-2000-isomap English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2000-isomap-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2000-isomap-tenenbaum-2019-profile-240",
-        "asset-2000-isomap-geodesic-map"
+        "asset-2000-isomap-geodesic-map",
+        "asset-ai100-2000-isomap-audio-zh-original-v1",
+        "asset-ai100-2000-isomap-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -18061,9 +18877,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2000-lle-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2000-lle-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2000-lle 中文原版科普音频",
+            "en": "ai100-2000-lle original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2000-lle-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2000-lle-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2000-lle-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2000-lle 英文科普音频",
+            "en": "ai100-2000-lle English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2000-lle-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2000-lle-20010411-snowbird-dsc00680-h-thumb",
-        "asset-2000-lle-neighbor-reconstruction"
+        "asset-2000-lle-neighbor-reconstruction",
+        "asset-ai100-2000-lle-audio-zh-original-v1",
+        "asset-ai100-2000-lle-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -18568,10 +19418,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2008-tsne-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2008-tsne-zh-original-v1.mp3",
+          "title": {
+            "zh": "2008-tsne 中文原版科普音频",
+            "en": "2008-tsne original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2008-tsne-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2008-tsne-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2008-tsne-en-v1.mp3",
+          "title": {
+            "zh": "2008-tsne 英文科普音频",
+            "en": "2008-tsne English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2008-tsne-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2008-tsne-laurens-van-der-maaten",
         "asset-2008-tsne-neighbor-probabilities",
-        "asset-2008-tsne-cluster-map"
+        "asset-2008-tsne-cluster-map",
+        "asset-2008-tsne-audio-zh-original-v1",
+        "asset-2008-tsne-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -19065,9 +19949,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1943-mcculloch-pitts-neuron-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1943-mcculloch-pitts-neuron-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1943-mcculloch-pitts-neuron 中文原版科普音频",
+            "en": "ai100-1943-mcculloch-pitts-neuron original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1943-mcculloch-pitts-neuron-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1943-mcculloch-pitts-neuron-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1943-mcculloch-pitts-neuron-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1943-mcculloch-pitts-neuron 英文科普音频",
+            "en": "ai100-1943-mcculloch-pitts-neuron English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1943-mcculloch-pitts-neuron-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-1943-mcculloch-pitts-neuron-330px-1954-walter-pitts-and-a-blackboard",
-        "asset-1943-mcculloch-pitts-neuron-threshold-logic"
+        "asset-1943-mcculloch-pitts-neuron-threshold-logic",
+        "asset-ai100-1943-mcculloch-pitts-neuron-audio-zh-original-v1",
+        "asset-ai100-1943-mcculloch-pitts-neuron-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -19571,9 +20489,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1951-snarc-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1951-snarc-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1951-snarc 中文原版科普音频",
+            "en": "ai100-1951-snarc original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1951-snarc-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1951-snarc-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1951-snarc-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1951-snarc 英文科普音频",
+            "en": "ai100-1951-snarc English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1951-snarc-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-marvin-minsky",
-        "asset-1951-snarc-maze-reinforcement"
+        "asset-1951-snarc-maze-reinforcement",
+        "asset-ai100-1951-snarc-audio-zh-original-v1",
+        "asset-ai100-1951-snarc-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -20103,6 +21055,38 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-1957-perceptron-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1957-perceptron-zh-original-v1.mp3",
+          "title": {
+            "zh": "1957-perceptron 中文原版科普音频",
+            "en": "1957-perceptron original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1957-perceptron-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1957-perceptron-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1957-perceptron-en-v1.mp3",
+          "title": {
+            "zh": "1957-perceptron 英文科普音频",
+            "en": "1957-perceptron English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1957-perceptron-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1958-rosenblatt-perceptron-frank-rosenblatt",
         "asset-1958-rosenblatt-perceptron-threshold",
@@ -20110,7 +21094,9 @@ const milestones = [
         "asset-1957-perceptron-people-01",
         "asset-1957-perceptron-papers-01",
         "asset-1957-perceptron-historical-01",
-        "asset-1957-perceptron-historical-01-2"
+        "asset-1957-perceptron-historical-01-2",
+        "asset-1957-perceptron-audio-zh-original-v1",
+        "asset-1957-perceptron-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -20688,10 +21674,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1982-hopfield-network-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1982-hopfield-network-zh-original-v1.mp3",
+          "title": {
+            "zh": "1982-hopfield-network 中文原版科普音频",
+            "en": "1982-hopfield-network original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1982-hopfield-network-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1982-hopfield-network-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1982-hopfield-network-en-v1.mp3",
+          "title": {
+            "zh": "1982-hopfield-network 英文科普音频",
+            "en": "1982-hopfield-network English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1982-hopfield-network-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1982-hopfield-network-john-hopfield",
         "asset-1982-hopfield-network-energy-basin",
-        "asset-1982-hopfield-network-memory-grid"
+        "asset-1982-hopfield-network-memory-grid",
+        "asset-1982-hopfield-network-audio-zh-original-v1",
+        "asset-1982-hopfield-network-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -21170,9 +22190,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1982-som-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1982-som-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1982-som 中文原版科普音频",
+            "en": "ai100-1982-som original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1982-som-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1982-som-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1982-som-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1982-som 英文科普音频",
+            "en": "ai100-1982-som English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1982-som-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-1982-som-teuvo-kohonen",
-        "asset-1982-som-topology-map"
+        "asset-1982-som-topology-map",
+        "asset-ai100-1982-som-audio-zh-original-v1",
+        "asset-ai100-1982-som-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -21693,10 +22747,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2006-dbn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2006-dbn-zh-original-v1.mp3",
+          "title": {
+            "zh": "2006-dbn 中文原版科普音频",
+            "en": "2006-dbn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2006-dbn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2006-dbn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2006-dbn-en-v1.mp3",
+          "title": {
+            "zh": "2006-dbn 英文科普音频",
+            "en": "2006-dbn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2006-dbn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2006-dbn-geoffrey-hinton",
         "asset-2006-dbn-stacked-rbms",
-        "asset-2006-dbn-wake-finetune"
+        "asset-2006-dbn-wake-finetune",
+        "asset-2006-dbn-audio-zh-original-v1",
+        "asset-2006-dbn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -22203,9 +23291,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1967-back-propagation-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1967-back-propagation-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1967-back-propagation 中文原版科普音频",
+            "en": "ai100-1967-back-propagation original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1967-back-propagation-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1967-back-propagation-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1967-back-propagation-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1967-back-propagation 英文科普音频",
+            "en": "ai100-1967-back-propagation English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1967-back-propagation-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-david-rumelhart",
-        "asset-1967-back-propagation-error-flow"
+        "asset-1967-back-propagation-error-flow",
+        "asset-ai100-1967-back-propagation-audio-zh-original-v1",
+        "asset-ai100-1967-back-propagation-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -22724,10 +23846,44 @@ const milestones = [
         "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1969-relu-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1969-relu-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1969-relu 中文原版科普音频",
+            "en": "ai100-1969-relu original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1969-relu-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1969-relu-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1969-relu-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1969-relu 英文科普音频",
+            "en": "ai100-1969-relu English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1969-relu-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-1969-relu-kunihiko-fukushima-candc",
         "asset-1969-relu-activation",
-        "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02"
+        "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02",
+        "asset-ai100-1969-relu-audio-zh-original-v1",
+        "asset-ai100-1969-relu-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -23288,10 +24444,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2014-adam-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-adam-zh-original-v1.mp3",
+          "title": {
+            "zh": "2014-adam 中文原版科普音频",
+            "en": "2014-adam original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-adam-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2014-adam-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-adam-en-v1.mp3",
+          "title": {
+            "zh": "2014-adam 英文科普音频",
+            "en": "2014-adam English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-adam-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2014-adam-diederik-kingma",
         "asset-2014-adam-moment-traces",
-        "asset-2014-adam-loss-trajectory"
+        "asset-2014-adam-loss-trajectory",
+        "asset-2014-adam-audio-zh-original-v1",
+        "asset-2014-adam-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -23803,10 +24993,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-dropout_ensemble-average.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2014-dropout-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-dropout-zh-original-v1.mp3",
+          "title": {
+            "zh": "2014-dropout 中文原版科普音频",
+            "en": "2014-dropout original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-dropout-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2014-dropout-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-dropout-en-v1.mp3",
+          "title": {
+            "zh": "2014-dropout 英文科普音频",
+            "en": "2014-dropout English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-dropout-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2014-dropout-nitish-srivastava",
         "asset-2014-dropout-random-mask",
-        "asset-2014-dropout-ensemble-average"
+        "asset-2014-dropout-ensemble-average",
+        "asset-2014-dropout-audio-zh-original-v1",
+        "asset-2014-dropout-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -24304,9 +25528,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2015-batch-normalization-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-batch-normalization-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-batch-normalization 中文原版科普音频",
+            "en": "ai100-2015-batch-normalization original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-batch-normalization-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2015-batch-normalization-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-batch-normalization-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-batch-normalization 英文科普音频",
+            "en": "ai100-2015-batch-normalization English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-batch-normalization-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2015-googlenet-inception-christian-szegedy",
-        "asset-2015-batch-normalization-activation-scale"
+        "asset-2015-batch-normalization-activation-scale",
+        "asset-ai100-2015-batch-normalization-audio-zh-original-v1",
+        "asset-ai100-2015-batch-normalization-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -24788,9 +26046,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1980-neocognitron-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1980-neocognitron-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1980-neocognitron 中文原版科普音频",
+            "en": "ai100-1980-neocognitron original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1980-neocognitron-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1980-neocognitron-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1980-neocognitron-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1980-neocognitron 英文科普音频",
+            "en": "ai100-1980-neocognitron English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1980-neocognitron-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-1980-neocognitron-dr-kunihikofukushima",
-        "asset-1980-neocognitron-hierarchy"
+        "asset-1980-neocognitron-hierarchy",
+        "asset-ai100-1980-neocognitron-audio-zh-original-v1",
+        "asset-ai100-1980-neocognitron-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -25292,12 +26584,46 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-1989-cnn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1989-cnn-zh-original-v1.mp3",
+          "title": {
+            "zh": "1989-cnn 中文原版科普音频",
+            "en": "1989-cnn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1989-cnn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1989-cnn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1989-cnn-en-v1.mp3",
+          "title": {
+            "zh": "1989-cnn 英文科普音频",
+            "en": "1989-cnn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1989-cnn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1989-cnn-people-01",
         "asset-1989-lenet-zip-code-cnn",
         "asset-1989-cnn-architecture-01",
         "asset-1989-cnn-yann-lecun-external",
-        "asset-1989-cnn-people-02"
+        "asset-1989-cnn-people-02",
+        "asset-1989-cnn-audio-zh-original-v1",
+        "asset-1989-cnn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -25911,11 +27237,45 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2012-alexnet-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2012-alexnet-zh-original-v1.mp3",
+          "title": {
+            "zh": "2012-alexnet 中文原版科普音频",
+            "en": "2012-alexnet original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2012-alexnet-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2012-alexnet-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2012-alexnet-en-v1.mp3",
+          "title": {
+            "zh": "2012-alexnet 英文科普音频",
+            "en": "2012-alexnet English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2012-alexnet-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-alexnet-portrait",
         "asset-alexnet-architecture",
         "asset-alexnet-architecture-detail",
-        "asset-alexnet-deep-portrait"
+        "asset-alexnet-deep-portrait",
+        "asset-2012-alexnet-audio-zh-original-v1",
+        "asset-2012-alexnet-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -26473,10 +27833,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2014-vgg-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-vgg-zh-original-v1.mp3",
+          "title": {
+            "zh": "2014-vgg 中文原版科普音频",
+            "en": "2014-vgg original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-vgg-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2014-vgg-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-vgg-en-v1.mp3",
+          "title": {
+            "zh": "2014-vgg 英文科普音频",
+            "en": "2014-vgg English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-vgg-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2014-vgg-andrew-zisserman",
         "asset-2014-vgg-depth-configurations",
-        "asset-2014-vgg-receptive-field"
+        "asset-2014-vgg-receptive-field",
+        "asset-2014-vgg-audio-zh-original-v1",
+        "asset-2014-vgg-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -26984,10 +28378,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2015-googlenet-inception-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-googlenet-inception-zh-original-v1.mp3",
+          "title": {
+            "zh": "2015-googlenet-inception 中文原版科普音频",
+            "en": "2015-googlenet-inception original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-googlenet-inception-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2015-googlenet-inception-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-googlenet-inception-en-v1.mp3",
+          "title": {
+            "zh": "2015-googlenet-inception 英文科普音频",
+            "en": "2015-googlenet-inception English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-googlenet-inception-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2015-googlenet-inception-christian-szegedy",
         "asset-2015-googlenet-inception-parallel-branches",
-        "asset-2015-googlenet-inception-bottleneck"
+        "asset-2015-googlenet-inception-bottleneck",
+        "asset-2015-googlenet-inception-audio-zh-original-v1",
+        "asset-2015-googlenet-inception-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -27529,6 +28957,38 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2015-resnet-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-resnet-zh-original-v1.mp3",
+          "title": {
+            "zh": "2015-resnet 中文原版科普音频",
+            "en": "2015-resnet original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-resnet-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2015-resnet-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-resnet-en-v1.mp3",
+          "title": {
+            "zh": "2015-resnet 英文科普音频",
+            "en": "2015-resnet English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-resnet-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-kaiming-he",
         "asset-2015-resnet-architecture-01",
@@ -27536,7 +28996,9 @@ const milestones = [
         "asset-2015-resnet-people-04",
         "asset-2015-resnet-people-03",
         "asset-2015-resnet-people-02",
-        "asset-2015-resnet-people-01"
+        "asset-2015-resnet-people-01",
+        "asset-2015-resnet-audio-zh-original-v1",
+        "asset-2015-resnet-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -28195,10 +29657,44 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2016-densenet-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-densenet-zh-original-v1.mp3",
+          "title": {
+            "zh": "2016-densenet 中文原版科普音频",
+            "en": "2016-densenet original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2016-densenet-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2016-densenet-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-densenet-en-v1.mp3",
+          "title": {
+            "zh": "2016-densenet 英文科普音频",
+            "en": "2016-densenet English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2016-densenet-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2016-densenet-people-02",
         "asset-2016-densenet-architecture-01",
-        "asset-2016-densenet-people-01"
+        "asset-2016-densenet-people-01",
+        "asset-2016-densenet-audio-zh-original-v1",
+        "asset-2016-densenet-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -28732,10 +30228,44 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2017-mobilenets/mobilenets-paper-first-page.png",
       "overviewImageAssetId": "asset-2017-mobilenets-paper-first-page",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2017-mobilenets-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-mobilenets-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-mobilenets 中文原版科普音频",
+            "en": "ai100-2017-mobilenets original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-mobilenets-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2017-mobilenets-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-mobilenets-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-mobilenets 英文科普音频",
+            "en": "ai100-2017-mobilenets English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-mobilenets-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2017-mobilenets-explainer",
         "asset-2017-mobilenets-paper-first-page",
-        "asset-2017-mobilenets-applications"
+        "asset-2017-mobilenets-applications",
+        "asset-ai100-2017-mobilenets-audio-zh-original-v1",
+        "asset-ai100-2017-mobilenets-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -29282,9 +30812,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2018-2018-squeeze-excitation_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2018-squeeze-excitation-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2018-squeeze-excitation-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2018-squeeze-excitation 中文原版科普音频",
+            "en": "ai100-2018-squeeze-excitation original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2018-squeeze-excitation-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2018-squeeze-excitation-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2018-squeeze-excitation-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2018-squeeze-excitation 英文科普音频",
+            "en": "ai100-2018-squeeze-excitation English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2018-squeeze-excitation-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2018-squeeze-excitation-portrait",
-        "asset-2018-squeeze-excitation-explainer"
+        "asset-2018-squeeze-excitation-explainer",
+        "asset-ai100-2018-squeeze-excitation-audio-zh-original-v1",
+        "asset-ai100-2018-squeeze-excitation-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -29814,9 +31378,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-2014-r-cnn_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2014-r-cnn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-r-cnn-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2014-r-cnn 中文原版科普音频",
+            "en": "ai100-2014-r-cnn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2014-r-cnn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2014-r-cnn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-r-cnn-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2014-r-cnn 英文科普音频",
+            "en": "ai100-2014-r-cnn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2014-r-cnn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2014-r-cnn-portrait",
-        "asset-2014-r-cnn-explainer"
+        "asset-2014-r-cnn-explainer",
+        "asset-ai100-2014-r-cnn-audio-zh-original-v1",
+        "asset-ai100-2014-r-cnn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -30330,9 +31928,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-2015-fast-r-cnn_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2015-fast-r-cnn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-fast-r-cnn-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-fast-r-cnn 中文原版科普音频",
+            "en": "ai100-2015-fast-r-cnn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-fast-r-cnn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2015-fast-r-cnn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-fast-r-cnn-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-fast-r-cnn 英文科普音频",
+            "en": "ai100-2015-fast-r-cnn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-fast-r-cnn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2015-fast-r-cnn-portrait",
-        "asset-2015-fast-r-cnn-explainer"
+        "asset-2015-fast-r-cnn-explainer",
+        "asset-ai100-2015-fast-r-cnn-audio-zh-original-v1",
+        "asset-ai100-2015-fast-r-cnn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -30896,11 +32528,45 @@ const milestones = [
         "resources/images/2015-resnet/people/2015-resnet_people_04.png"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2015-faster-r-cnn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-faster-r-cnn-zh-original-v1.mp3",
+          "title": {
+            "zh": "2015-faster-r-cnn 中文原版科普音频",
+            "en": "2015-faster-r-cnn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-faster-r-cnn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2015-faster-r-cnn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-faster-r-cnn-en-v1.mp3",
+          "title": {
+            "zh": "2015-faster-r-cnn 英文科普音频",
+            "en": "2015-faster-r-cnn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-faster-r-cnn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-contributor-shaoqing-ren",
         "asset-2015-faster-r-cnn-rpn-pipeline",
         "asset-2015-faster-r-cnn-detection-output",
-        "asset-2015-faster-r-cnn-kaiming-he"
+        "asset-2015-faster-r-cnn-kaiming-he",
+        "asset-2015-faster-r-cnn-audio-zh-original-v1",
+        "asset-2015-faster-r-cnn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -31476,9 +33142,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2017-2017-mask-r-cnn_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2017-mask-r-cnn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-mask-r-cnn-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-mask-r-cnn 中文原版科普音频",
+            "en": "ai100-2017-mask-r-cnn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-mask-r-cnn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2017-mask-r-cnn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-mask-r-cnn-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-mask-r-cnn 英文科普音频",
+            "en": "ai100-2017-mask-r-cnn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-mask-r-cnn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2017-mask-r-cnn-portrait",
-        "asset-2017-mask-r-cnn-explainer"
+        "asset-2017-mask-r-cnn-explainer",
+        "asset-ai100-2017-mask-r-cnn-audio-zh-original-v1",
+        "asset-ai100-2017-mask-r-cnn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -32024,9 +33724,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2017-2017-fpn-retinanet_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2017-fpn-retinanet-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-fpn-retinanet-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-fpn-retinanet 中文原版科普音频",
+            "en": "ai100-2017-fpn-retinanet original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-fpn-retinanet-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2017-fpn-retinanet-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-fpn-retinanet-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-fpn-retinanet 英文科普音频",
+            "en": "ai100-2017-fpn-retinanet English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-fpn-retinanet-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2017-fpn-retinanet-portrait",
-        "asset-2017-fpn-retinanet-explainer"
+        "asset-2017-fpn-retinanet-explainer",
+        "asset-ai100-2017-fpn-retinanet-audio-zh-original-v1",
+        "asset-ai100-2017-fpn-retinanet-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -32557,10 +34291,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2016-yolo_single-pass.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2016-yolo-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-yolo-zh-original-v1.mp3",
+          "title": {
+            "zh": "2016-yolo 中文原版科普音频",
+            "en": "2016-yolo original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2016-yolo-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2016-yolo-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-yolo-en-v1.mp3",
+          "title": {
+            "zh": "2016-yolo 英文科普音频",
+            "en": "2016-yolo English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2016-yolo-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2016-yolo-joseph-redmon",
         "asset-2016-yolo-grid-detector",
-        "asset-2016-yolo-single-pass"
+        "asset-2016-yolo-single-pass",
+        "asset-2016-yolo-audio-zh-original-v1",
+        "asset-2016-yolo-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -33058,9 +34826,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2016-2016-ssd_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2016-ssd-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2016-ssd-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2016-ssd 中文原版科普音频",
+            "en": "ai100-2016-ssd original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2016-ssd-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2016-ssd-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2016-ssd-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2016-ssd 英文科普音频",
+            "en": "ai100-2016-ssd English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2016-ssd-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2016-ssd-portrait",
-        "asset-2016-ssd-explainer"
+        "asset-2016-ssd-explainer",
+        "asset-ai100-2016-ssd-audio-zh-original-v1",
+        "asset-ai100-2016-ssd-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -33608,9 +35410,43 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2015-fcn/fcn-paper-first-page.png",
       "overviewImageAssetId": "asset-2015-fcn-paper-first-page",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2015-fcn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-fcn-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-fcn 中文原版科普音频",
+            "en": "ai100-2015-fcn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-fcn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2015-fcn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-fcn-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-fcn 英文科普音频",
+            "en": "ai100-2015-fcn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-fcn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2015-fcn-explainer",
-        "asset-2015-fcn-paper-first-page"
+        "asset-2015-fcn-paper-first-page",
+        "asset-ai100-2015-fcn-audio-zh-original-v1",
+        "asset-ai100-2015-fcn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -34139,10 +35975,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2015-u-net-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-u-net-zh-original-v1.mp3",
+          "title": {
+            "zh": "2015-u-net 中文原版科普音频",
+            "en": "2015-u-net original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-u-net-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2015-u-net-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-u-net-en-v1.mp3",
+          "title": {
+            "zh": "2015-u-net 英文科普音频",
+            "en": "2015-u-net English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-u-net-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2015-u-net-olaf-ronneberger",
         "asset-2015-u-net-u-shape-architecture",
-        "asset-2015-u-net-segmentation-mask"
+        "asset-2015-u-net-segmentation-mask",
+        "asset-2015-u-net-audio-zh-original-v1",
+        "asset-2015-u-net-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -34650,12 +36520,46 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-1997-lstm-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-lstm-zh-original-v1.mp3",
+          "title": {
+            "zh": "1997-lstm 中文原版科普音频",
+            "en": "1997-lstm original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1997-lstm-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1997-lstm-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-lstm-en-v1.mp3",
+          "title": {
+            "zh": "1997-lstm 英文科普音频",
+            "en": "1997-lstm English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1997-lstm-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-sepp-hochreiter",
         "asset-1997-lstm-gated-memory",
         "asset-1997-lstm-architecture-01",
         "asset-1997-lstm-architecture-02",
-        "asset-1997-lstm-people-01"
+        "asset-1997-lstm-people-01",
+        "asset-1997-lstm-audio-zh-original-v1",
+        "asset-1997-lstm-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -35266,9 +37170,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-2014-seq2seq_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2014-seq2seq-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-seq2seq-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2014-seq2seq 中文原版科普音频",
+            "en": "ai100-2014-seq2seq original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2014-seq2seq-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2014-seq2seq-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-seq2seq-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2014-seq2seq 英文科普音频",
+            "en": "ai100-2014-seq2seq English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2014-seq2seq-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2014-seq2seq-portrait",
-        "asset-2014-seq2seq-explainer"
+        "asset-2014-seq2seq-explainer",
+        "asset-ai100-2014-seq2seq-audio-zh-original-v1",
+        "asset-ai100-2014-seq2seq-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -35876,12 +37814,46 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2014-attention-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-attention-zh-original-v1.mp3",
+          "title": {
+            "zh": "2014-attention 中文原版科普音频",
+            "en": "2014-attention original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-attention-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2014-attention-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-attention-en-v1.mp3",
+          "title": {
+            "zh": "2014-attention 英文科普音频",
+            "en": "2014-attention English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-attention-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2014-attention-bahdanau-portrait",
         "asset-2014-attention-alignment",
         "asset-2014-attention-architecture-01",
         "asset-2014-attention-cho-portrait",
-        "asset-2014-attention-people-01"
+        "asset-2014-attention-people-01",
+        "asset-2014-attention-audio-zh-original-v1",
+        "asset-2014-attention-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -36569,10 +38541,44 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2017-transformer-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2017-transformer-zh-original-v1.mp3",
+          "title": {
+            "zh": "2017-transformer 中文原版科普音频",
+            "en": "2017-transformer original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2017-transformer-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2017-transformer-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2017-transformer-en-v1.mp3",
+          "title": {
+            "zh": "2017-transformer 英文科普音频",
+            "en": "2017-transformer English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2017-transformer-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-transformer-portrait",
         "asset-transformer-architecture-detail",
         "asset-transformer-paper-page",
+        "asset-2017-transformer-audio-zh-original-v1",
+        "asset-2017-transformer-audio-en-v1",
         "asset-transformer-architecture",
         "asset-transformer-attention"
       ]
@@ -37166,11 +39172,45 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2018-bert-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2018-bert-zh-original-v1.mp3",
+          "title": {
+            "zh": "2018-bert 中文原版科普音频",
+            "en": "2018-bert original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2018-bert-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2018-bert-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2018-bert-en-v1.mp3",
+          "title": {
+            "zh": "2018-bert 英文科普音频",
+            "en": "2018-bert English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2018-bert-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-jacob-devlin",
         "asset-2018-bert-masked-lm",
         "asset-2018-bert-architecture-01",
-        "asset-2018-bert-architecture-02"
+        "asset-2018-bert-architecture-02",
+        "asset-2018-bert-audio-zh-original-v1",
+        "asset-2018-bert-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -37828,12 +39868,46 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2018-gpt-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2018-gpt-zh-original-v1.mp3",
+          "title": {
+            "zh": "2018-gpt 中文原版科普音频",
+            "en": "2018-gpt original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2018-gpt-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2018-gpt-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2018-gpt-en-v1.mp3",
+          "title": {
+            "zh": "2018-gpt 英文科普音频",
+            "en": "2018-gpt English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2018-gpt-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-alec-radford",
         "asset-2018-gpt-next-token",
         "asset-2018-gpt-architecture-01",
         "asset-2018-gpt-architecture-02",
-        "asset-2018-gpt-historical-01"
+        "asset-2018-gpt-historical-01",
+        "asset-2018-gpt-audio-zh-original-v1",
+        "asset-2018-gpt-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -38470,9 +40544,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2020-vit-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2020-vit-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2020-vit 中文原版科普音频",
+            "en": "ai100-2020-vit original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2020-vit-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2020-vit-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2020-vit-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2020-vit 英文科普音频",
+            "en": "ai100-2020-vit English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2020-vit-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2020-vit-alexey-dosovitskiy",
-        "asset-2020-vit-patch-tokens"
+        "asset-2020-vit-patch-tokens",
+        "asset-ai100-2020-vit-audio-zh-original-v1",
+        "asset-ai100-2020-vit-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -39008,9 +41116,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2021-swin-transformer-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2021-swin-transformer-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2021-swin-transformer 中文原版科普音频",
+            "en": "ai100-2021-swin-transformer original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2021-swin-transformer-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2021-swin-transformer-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2021-swin-transformer-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2021-swin-transformer 英文科普音频",
+            "en": "ai100-2021-swin-transformer English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2021-swin-transformer-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2021-swin-transformer-zeliu",
-        "asset-2021-swin-transformer-shifted-windows"
+        "asset-2021-swin-transformer-shifted-windows",
+        "asset-ai100-2021-swin-transformer-audio-zh-original-v1",
+        "asset-ai100-2021-swin-transformer-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -39524,9 +41666,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2000-neural-language-model-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2000-neural-language-model-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2000-neural-language-model 中文原版科普音频",
+            "en": "ai100-2000-neural-language-model original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2000-neural-language-model-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2000-neural-language-model-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2000-neural-language-model-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2000-neural-language-model 英文科普音频",
+            "en": "ai100-2000-neural-language-model English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2000-neural-language-model-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2000-neural-language-model-330px-iclr-2025-yoshua-bengio-02",
-        "asset-2000-neural-language-model-context-prediction"
+        "asset-2000-neural-language-model-context-prediction",
+        "asset-ai100-2000-neural-language-model-audio-zh-original-v1",
+        "asset-ai100-2000-neural-language-model-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -40031,10 +42207,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2013-word2vec_vector-analogy.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2013-word2vec-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2013-word2vec-zh-original-v1.mp3",
+          "title": {
+            "zh": "2013-word2vec 中文原版科普音频",
+            "en": "2013-word2vec original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2013-word2vec-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2013-word2vec-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2013-word2vec-en-v1.mp3",
+          "title": {
+            "zh": "2013-word2vec 英文科普音频",
+            "en": "2013-word2vec English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2013-word2vec-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2013-word2vec-tomas-mikolov",
         "asset-2013-word2vec-skipgram-window",
-        "asset-2013-word2vec-vector-analogy"
+        "asset-2013-word2vec-vector-analogy",
+        "asset-2013-word2vec-audio-zh-original-v1",
+        "asset-2013-word2vec-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -40551,12 +42761,46 @@ const milestones = [
         "resources/images/external/ai100-2014-glove/richard-socher-portrait.png"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2014-glove-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-glove-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2014-glove 中文原版科普音频",
+            "en": "ai100-2014-glove original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2014-glove-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2014-glove-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-glove-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2014-glove 英文科普音频",
+            "en": "ai100-2014-glove English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2014-glove-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2014-glove-photo",
         "asset-2014-glove-cooccurrence",
         "asset-ai100-2014-glove-christopher-manning-commons",
         "asset-ai100-2014-glove-christopher-manning-stanford",
-        "asset-ai100-2014-glove-richard-socher-portrait"
+        "asset-ai100-2014-glove-richard-socher-portrait",
+        "asset-ai100-2014-glove-audio-zh-original-v1",
+        "asset-ai100-2014-glove-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -41245,10 +43489,44 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2014-gan-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-gan-zh-original-v1.mp3",
+          "title": {
+            "zh": "2014-gan 中文原版科普音频",
+            "en": "2014-gan original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-gan-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2014-gan-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-gan-en-v1.mp3",
+          "title": {
+            "zh": "2014-gan 英文科普音频",
+            "en": "2014-gan English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-gan-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ian-goodfellow",
         "asset-2014-gan-adversarial-loop",
-        "asset-2014-gan-architecture-01"
+        "asset-2014-gan-architecture-01",
+        "asset-2014-gan-audio-zh-original-v1",
+        "asset-2014-gan-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -41775,8 +44053,42 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2014-conditional-gan-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-conditional-gan-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2014-conditional-gan 中文原版科普音频",
+            "en": "ai100-2014-conditional-gan original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2014-conditional-gan-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2014-conditional-gan-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-conditional-gan-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2014-conditional-gan 英文科普音频",
+            "en": "ai100-2014-conditional-gan English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2014-conditional-gan-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2014-conditional-gan-flickportrait1",
+        "asset-ai100-2014-conditional-gan-audio-zh-original-v1",
+        "asset-ai100-2014-conditional-gan-audio-en-v1",
         "asset-2014-conditional-gan-conditioned-generator"
       ]
     },
@@ -42305,9 +44617,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2015-dcgan-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-dcgan-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-dcgan 中文原版科普音频",
+            "en": "ai100-2015-dcgan original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-dcgan-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2015-dcgan-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-dcgan-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-dcgan 英文科普音频",
+            "en": "ai100-2015-dcgan English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-dcgan-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-alec-radford",
-        "asset-2015-dcgan-conv-generator"
+        "asset-2015-dcgan-conv-generator",
+        "asset-ai100-2015-dcgan-audio-zh-original-v1",
+        "asset-ai100-2015-dcgan-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -42832,10 +45178,44 @@ const milestones = [
         "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait-2025.jpg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2017-wasserstein-gan-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-wasserstein-gan-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-wasserstein-gan 中文原版科普音频",
+            "en": "ai100-2017-wasserstein-gan original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-wasserstein-gan-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2017-wasserstein-gan-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-wasserstein-gan-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-wasserstein-gan 英文科普音频",
+            "en": "ai100-2017-wasserstein-gan English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-wasserstein-gan-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2017-wasserstein-gan-martin-arjovsky",
         "asset-2017-wasserstein-gan-critic-distance",
-        "asset-ai100-2017-wasserstein-gan-leon-bottou-2025"
+        "asset-ai100-2017-wasserstein-gan-leon-bottou-2025",
+        "asset-ai100-2017-wasserstein-gan-audio-zh-original-v1",
+        "asset-ai100-2017-wasserstein-gan-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -43446,9 +45826,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2017-cyclegan-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-cyclegan-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-cyclegan 中文原版科普音频",
+            "en": "ai100-2017-cyclegan original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-cyclegan-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2017-cyclegan-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-cyclegan-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-cyclegan 英文科普音频",
+            "en": "ai100-2017-cyclegan English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-cyclegan-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2017-cyclegan-portrait3-lr",
-        "asset-2017-cyclegan-cycle-consistency"
+        "asset-2017-cyclegan-cycle-consistency",
+        "asset-ai100-2017-cyclegan-audio-zh-original-v1",
+        "asset-ai100-2017-cyclegan-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -43978,9 +46392,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2017-pix2pix-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-pix2pix-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-pix2pix 中文原版科普音频",
+            "en": "ai100-2017-pix2pix original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-pix2pix-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2017-pix2pix-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-pix2pix-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-pix2pix 英文科普音频",
+            "en": "ai100-2017-pix2pix English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-pix2pix-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2017-pix2pix-photo-of-me-korea",
-        "asset-2017-pix2pix-paired-translation"
+        "asset-2017-pix2pix-paired-translation",
+        "asset-ai100-2017-pix2pix-audio-zh-original-v1",
+        "asset-ai100-2017-pix2pix-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -44510,9 +46958,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2019-stylegan-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2019-stylegan-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2019-stylegan 中文原版科普音频",
+            "en": "ai100-2019-stylegan original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2019-stylegan-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2019-stylegan-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2019-stylegan-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2019-stylegan 英文科普音频",
+            "en": "ai100-2019-stylegan English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2019-stylegan-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2019-stylegan-tero-karras",
-        "asset-2019-stylegan-style-modulation"
+        "asset-2019-stylegan-style-modulation",
+        "asset-ai100-2019-stylegan-audio-zh-original-v1",
+        "asset-ai100-2019-stylegan-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -45058,9 +47540,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2013-variational-autoencoder-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2013-variational-autoencoder-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2013-variational-autoencoder 中文原版科普音频",
+            "en": "ai100-2013-variational-autoencoder original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2013-variational-autoencoder-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2013-variational-autoencoder-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2013-variational-autoencoder-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2013-variational-autoencoder 英文科普音频",
+            "en": "ai100-2013-variational-autoencoder English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2013-variational-autoencoder-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2013-variational-autoencoder-portrait",
-        "asset-2013-vae-latent-sampling"
+        "asset-2013-vae-latent-sampling",
+        "asset-ai100-2013-variational-autoencoder-audio-zh-original-v1",
+        "asset-ai100-2013-variational-autoencoder-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -45622,9 +48138,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2015-diffusion-model-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-diffusion-model-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-diffusion-model 中文原版科普音频",
+            "en": "ai100-2015-diffusion-model original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-diffusion-model-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2015-diffusion-model-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-diffusion-model-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-diffusion-model 英文科普音频",
+            "en": "ai100-2015-diffusion-model English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-diffusion-model-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2015-diffusion-model-jascha-profile",
-        "asset-2015-diffusion-forward-reverse"
+        "asset-2015-diffusion-forward-reverse",
+        "asset-ai100-2015-diffusion-model-audio-zh-original-v1",
+        "asset-ai100-2015-diffusion-model-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -46171,10 +48721,44 @@ const milestones = [
         "resources/images/external/ai100-2005-gnn/papers/2005-gnn-unisi-oai-record.png"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2005-gnn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2005-gnn-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2005-gnn 中文原版科普音频",
+            "en": "ai100-2005-gnn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2005-gnn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2005-gnn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2005-gnn-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2005-gnn 英文科普音频",
+            "en": "ai100-2005-gnn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2005-gnn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2005-gnn-marco-gori-portrait",
         "asset-2005-gnn-message-passing",
-        "asset-ai100-2005-gnn-unisi-paper-record"
+        "asset-ai100-2005-gnn-unisi-paper-record",
+        "asset-ai100-2005-gnn-audio-zh-original-v1",
+        "asset-ai100-2005-gnn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -46785,9 +49369,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2016-gcn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2016-gcn-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2016-gcn 中文原版科普音频",
+            "en": "ai100-2016-gcn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2016-gcn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2016-gcn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2016-gcn-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2016-gcn 英文科普音频",
+            "en": "ai100-2016-gcn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2016-gcn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2016-gcn-photo",
-        "asset-2016-gcn-spectral-convolution"
+        "asset-2016-gcn-spectral-convolution",
+        "asset-ai100-2016-gcn-audio-zh-original-v1",
+        "asset-ai100-2016-gcn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -47317,9 +49935,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2017-gat-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-gat-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-gat 中文原版科普音频",
+            "en": "ai100-2017-gat original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-gat-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2017-gat-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-gat-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-gat 英文科普音频",
+            "en": "ai100-2017-gat English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-gat-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2017-gat-citations",
-        "asset-2017-gat-attention-neighbors"
+        "asset-2017-gat-attention-neighbors",
+        "asset-ai100-2017-gat-audio-zh-original-v1",
+        "asset-ai100-2017-gat-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -47859,9 +50511,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2016-nas-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2016-nas-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2016-nas 中文原版科普音频",
+            "en": "ai100-2016-nas original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2016-nas-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2016-nas-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2016-nas-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2016-nas 英文科普音频",
+            "en": "ai100-2016-nas English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2016-nas-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2016-nas-headshot",
-        "asset-2016-nas-controller-search"
+        "asset-2016-nas-controller-search",
+        "asset-ai100-2016-nas-audio-zh-original-v1",
+        "asset-ai100-2016-nas-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -48391,9 +51077,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2015-deep-compression-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-deep-compression-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-deep-compression 中文原版科普音频",
+            "en": "ai100-2015-deep-compression original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-deep-compression-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2015-deep-compression-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-deep-compression-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-deep-compression 英文科普音频",
+            "en": "ai100-2015-deep-compression English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-deep-compression-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2015-deep-compression-6514db3bc943fa1c599d89d5-songhan",
-        "asset-2015-deep-compression-prune-quantize-code"
+        "asset-2015-deep-compression-prune-quantize-code",
+        "asset-ai100-2015-deep-compression-audio-zh-original-v1",
+        "asset-ai100-2015-deep-compression-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -48949,9 +51669,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2015-knowledge-distillation-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-knowledge-distillation-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-knowledge-distillation 中文原版科普音频",
+            "en": "ai100-2015-knowledge-distillation original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-knowledge-distillation-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2015-knowledge-distillation-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-knowledge-distillation-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-knowledge-distillation 英文科普音频",
+            "en": "ai100-2015-knowledge-distillation English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-knowledge-distillation-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-geoffrey-hinton",
-        "asset-2015-knowledge-distillation-teacher-student"
+        "asset-2015-knowledge-distillation-teacher-student",
+        "asset-ai100-2015-knowledge-distillation-audio-zh-original-v1",
+        "asset-ai100-2015-knowledge-distillation-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -49492,10 +52246,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2009-imagenet-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2009-imagenet-zh-original-v1.mp3",
+          "title": {
+            "zh": "2009-imagenet 中文原版科普音频",
+            "en": "2009-imagenet original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2009-imagenet-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2009-imagenet-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2009-imagenet-en-v1.mp3",
+          "title": {
+            "zh": "2009-imagenet 英文科普音频",
+            "en": "2009-imagenet English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2009-imagenet-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2009-imagenet-fei-fei-li",
         "asset-2009-imagenet-hierarchy",
-        "asset-2009-imagenet-benchmark"
+        "asset-2009-imagenet-benchmark",
+        "asset-2009-imagenet-audio-zh-original-v1",
+        "asset-2009-imagenet-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -49993,9 +52781,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2014-ms-coco-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-ms-coco-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2014-ms-coco 中文原版科普音频",
+            "en": "ai100-2014-ms-coco original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2014-ms-coco-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2014-ms-coco-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-ms-coco-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2014-ms-coco 英文科普音频",
+            "en": "ai100-2014-ms-coco English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2014-ms-coco-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2014-ms-coco-tsungyi",
-        "asset-2014-ms-coco-context-dataset"
+        "asset-2014-ms-coco-context-dataset",
+        "asset-ai100-2014-ms-coco-audio-zh-original-v1",
+        "asset-ai100-2014-ms-coco-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -50510,10 +53332,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1988-td-update-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1988-td-update-zh-original-v1.mp3",
+          "title": {
+            "zh": "1988-td-update 中文原版科普音频",
+            "en": "1988-td-update original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1988-td-update-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1988-td-update-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1988-td-update-en-v1.mp3",
+          "title": {
+            "zh": "1988-td-update 英文科普音频",
+            "en": "1988-td-update English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1988-td-update-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1988-td-update-richard-sutton",
         "asset-1988-td-update-value-timeline",
-        "asset-1988-td-update-error-meter"
+        "asset-1988-td-update-error-meter",
+        "asset-1988-td-update-audio-zh-original-v1",
+        "asset-1988-td-update-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -51004,9 +53860,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1989-q-learning-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1989-q-learning-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1989-q-learning 中文原版科普音频",
+            "en": "ai100-1989-q-learning original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1989-q-learning-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1989-q-learning-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1989-q-learning-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1989-q-learning 英文科普音频",
+            "en": "ai100-1989-q-learning English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1989-q-learning-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-1989-q-learning-citations",
-        "asset-1989-q-learning-bellman-update"
+        "asset-1989-q-learning-bellman-update",
+        "asset-ai100-1989-q-learning-audio-zh-original-v1",
+        "asset-ai100-1989-q-learning-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -51572,11 +54462,45 @@ const milestones = [
         "resources/images/figures/authoritative/david-silver.jpg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2013-dqn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2013-dqn-zh-original-v1.mp3",
+          "title": {
+            "zh": "2013-dqn 中文原版科普音频",
+            "en": "2013-dqn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2013-dqn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2013-dqn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2013-dqn-en-v1.mp3",
+          "title": {
+            "zh": "2013-dqn 英文科普音频",
+            "en": "2013-dqn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2013-dqn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2013-dqn-volodymyr-mnih",
         "asset-2013-dqn-replay-buffer",
         "asset-2013-dqn-q-control",
-        "asset-david-silver-commons-portrait"
+        "asset-david-silver-commons-portrait",
+        "asset-2013-dqn-audio-zh-original-v1",
+        "asset-2013-dqn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -52138,9 +55062,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2015-ddpg-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-ddpg-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-ddpg 中文原版科普音频",
+            "en": "ai100-2015-ddpg original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-ddpg-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2015-ddpg-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-ddpg-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-ddpg 英文科普音频",
+            "en": "ai100-2015-ddpg English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-ddpg-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2015-ddpg-timothy-lillicrap-1",
-        "asset-2015-ddpg-actor-critic"
+        "asset-2015-ddpg-actor-critic",
+        "asset-ai100-2015-ddpg-audio-zh-original-v1",
+        "asset-ai100-2015-ddpg-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -52759,10 +55717,44 @@ const milestones = [
       "overviewImage": "resources/images/figures/authoritative/david-silver.jpg",
       "overviewImageAssetId": "asset-david-silver-commons-portrait",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2016-alphago-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-alphago-zh-original-v1.mp3",
+          "title": {
+            "zh": "2016-alphago 中文原版科普音频",
+            "en": "2016-alphago original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2016-alphago-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2016-alphago-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-alphago-en-v1.mp3",
+          "title": {
+            "zh": "2016-alphago 英文科普音频",
+            "en": "2016-alphago English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2016-alphago-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-david-silver-commons-portrait",
         "asset-alphago-policy-value-search",
-        "asset-alphago-lee-sedol"
+        "asset-alphago-lee-sedol",
+        "asset-2016-alphago-audio-zh-original-v1",
+        "asset-2016-alphago-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -53277,6 +56269,38 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2020-alphafold-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2020-alphafold-zh-original-v1.mp3",
+          "title": {
+            "zh": "2020-alphafold 中文原版科普音频",
+            "en": "2020-alphafold original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2020-alphafold-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2020-alphafold-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2020-alphafold-en-v1.mp3",
+          "title": {
+            "zh": "2020-alphafold 英文科普音频",
+            "en": "2020-alphafold English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2020-alphafold-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2020-alphafold-people-01",
         "asset-2020-alphafold2-structure-pipeline",
@@ -53286,7 +56310,9 @@ const milestones = [
         "asset-2020-alphafold-people-02",
         "asset-2020-alphafold-historical-01",
         "asset-2020-alphafold-historical-02",
-        "asset-2020-alphafold-papers-01"
+        "asset-2020-alphafold-papers-01",
+        "asset-2020-alphafold-audio-zh-original-v1",
+        "asset-2020-alphafold-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -53969,9 +56995,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1983-actor-critic-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1983-actor-critic-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1983-actor-critic 中文原版科普音频",
+            "en": "ai100-1983-actor-critic original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1983-actor-critic-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1983-actor-critic-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1983-actor-critic-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1983-actor-critic 英文科普音频",
+            "en": "ai100-1983-actor-critic English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1983-actor-critic-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-1983-actor-critic-barto-andrew-square",
-        "asset-1983-actor-critic-two-paths"
+        "asset-1983-actor-critic-two-paths",
+        "asset-ai100-1983-actor-critic-audio-zh-original-v1",
+        "asset-ai100-1983-actor-critic-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -54501,9 +57561,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2016-2016-a3c_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2016-a3c-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2016-a3c-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2016-a3c 中文原版科普音频",
+            "en": "ai100-2016-a3c original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2016-a3c-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2016-a3c-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2016-a3c-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2016-a3c 英文科普音频",
+            "en": "ai100-2016-a3c English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2016-a3c-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2016-a3c-portrait",
-        "asset-2016-a3c-explainer"
+        "asset-2016-a3c-explainer",
+        "asset-ai100-2016-a3c-audio-zh-original-v1",
+        "asset-ai100-2016-a3c-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -55049,8 +58143,42 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1994-sarsa-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1994-sarsa-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1994-sarsa 中文原版科普音频",
+            "en": "ai100-1994-sarsa original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1994-sarsa-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1994-sarsa-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1994-sarsa-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1994-sarsa 英文科普音频",
+            "en": "ai100-1994-sarsa English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1994-sarsa-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1994-sarsa-paper-record",
+        "asset-ai100-1994-sarsa-audio-zh-original-v1",
+        "asset-ai100-1994-sarsa-audio-en-v1",
         "asset-1994-sarsa-explainer"
       ]
     },
@@ -55558,9 +58686,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1992-1992-reinforce_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1992-reinforce-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1992-reinforce-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1992-reinforce 中文原版科普音频",
+            "en": "ai100-1992-reinforce original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1992-reinforce-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1992-reinforce-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1992-reinforce-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1992-reinforce 英文科普音频",
+            "en": "ai100-1992-reinforce English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1992-reinforce-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1992-reinforce-portrait",
-        "asset-1992-reinforce-explainer"
+        "asset-1992-reinforce-explainer",
+        "asset-ai100-1992-reinforce-audio-zh-original-v1",
+        "asset-ai100-1992-reinforce-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -56090,9 +59252,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1999-1999-policy-gradient_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1999-policy-gradient-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1999-policy-gradient-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1999-policy-gradient 中文原版科普音频",
+            "en": "ai100-1999-policy-gradient original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1999-policy-gradient-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1999-policy-gradient-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1999-policy-gradient-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1999-policy-gradient 英文科普音频",
+            "en": "ai100-1999-policy-gradient English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1999-policy-gradient-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1999-policy-gradient-portrait",
-        "asset-1999-policy-gradient-explainer"
+        "asset-1999-policy-gradient-explainer",
+        "asset-ai100-1999-policy-gradient-audio-zh-original-v1",
+        "asset-ai100-1999-policy-gradient-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -56655,10 +59851,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1984-cart-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1984-cart-zh-original-v1.mp3",
+          "title": {
+            "zh": "1984-cart 中文原版科普音频",
+            "en": "1984-cart original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1984-cart-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1984-cart-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1984-cart-en-v1.mp3",
+          "title": {
+            "zh": "1984-cart 英文科普音频",
+            "en": "1984-cart English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1984-cart-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1984-cart-leo-breiman",
         "asset-1984-cart-split-regions",
-        "asset-1984-cart-pruning-curve"
+        "asset-1984-cart-pruning-curve",
+        "asset-1984-cart-audio-zh-original-v1",
+        "asset-1984-cart-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -57134,10 +60364,44 @@ const milestones = [
         "resources/images/external/ai100-1986-id3/id3-paper-figure-3-complex-decision-tree.png"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1986-id3-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1986-id3-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1986-id3 中文原版科普音频",
+            "en": "ai100-1986-id3 original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1986-id3-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1986-id3-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1986-id3-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1986-id3 英文科普音频",
+            "en": "ai100-1986-id3 English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1986-id3-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1986-id3-portrait",
         "asset-1986-id3-explainer",
-        "asset-1986-id3-paper-figure-3"
+        "asset-1986-id3-paper-figure-3",
+        "asset-ai100-1986-id3-audio-zh-original-v1",
+        "asset-ai100-1986-id3-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -57685,9 +60949,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1993-1993-c45_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1993-c45-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1993-c45-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1993-c45 中文原版科普音频",
+            "en": "ai100-1993-c45 original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1993-c45-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1993-c45-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1993-c45-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1993-c45 英文科普音频",
+            "en": "ai100-1993-c45 English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1993-c45-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1993-c45-portrait",
-        "asset-1993-c45-explainer"
+        "asset-1993-c45-explainer",
+        "asset-ai100-1993-c45-audio-zh-original-v1",
+        "asset-ai100-1993-c45-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -58201,9 +61499,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1996-1996-bagging_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1996-bagging-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1996-bagging-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1996-bagging 中文原版科普音频",
+            "en": "ai100-1996-bagging original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1996-bagging-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1996-bagging-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1996-bagging-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1996-bagging 英文科普音频",
+            "en": "ai100-1996-bagging English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1996-bagging-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1996-bagging-portrait",
-        "asset-1996-bagging-explainer"
+        "asset-1996-bagging-explainer",
+        "asset-ai100-1996-bagging-audio-zh-original-v1",
+        "asset-ai100-1996-bagging-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -58733,9 +62065,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2001-2001-random-forests_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2001-random-forests-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2001-random-forests-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2001-random-forests 中文原版科普音频",
+            "en": "ai100-2001-random-forests original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2001-random-forests-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2001-random-forests-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2001-random-forests-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2001-random-forests 英文科普音频",
+            "en": "ai100-2001-random-forests English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2001-random-forests-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2001-random-forests-portrait",
-        "asset-2001-random-forests-explainer"
+        "asset-2001-random-forests-explainer",
+        "asset-ai100-2001-random-forests-audio-zh-original-v1",
+        "asset-ai100-2001-random-forests-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -59251,9 +62617,43 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-1990-boosting/boosting-paper-first-page.svg",
       "overviewImageAssetId": "asset-1990-boosting-paper-first-page",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1990-boosting-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1990-boosting-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1990-boosting 中文原版科普音频",
+            "en": "ai100-1990-boosting original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1990-boosting-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1990-boosting-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1990-boosting-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1990-boosting 英文科普音频",
+            "en": "ai100-1990-boosting English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1990-boosting-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1990-boosting-explainer",
-        "asset-1990-boosting-paper-first-page"
+        "asset-1990-boosting-paper-first-page",
+        "asset-ai100-1990-boosting-audio-zh-original-v1",
+        "asset-ai100-1990-boosting-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -59765,9 +63165,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1997-1997-adaboost_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1997-adaboost-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1997-adaboost-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1997-adaboost 中文原版科普音频",
+            "en": "ai100-1997-adaboost original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1997-adaboost-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1997-adaboost-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1997-adaboost-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1997-adaboost 英文科普音频",
+            "en": "ai100-1997-adaboost English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1997-adaboost-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1997-adaboost-portrait",
-        "asset-1997-adaboost-explainer"
+        "asset-1997-adaboost-explainer",
+        "asset-ai100-1997-adaboost-audio-zh-original-v1",
+        "asset-ai100-1997-adaboost-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -60281,9 +63715,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2001-2001-gradient-boosting_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2001-gradient-boosting-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2001-gradient-boosting-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2001-gradient-boosting 中文原版科普音频",
+            "en": "ai100-2001-gradient-boosting original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2001-gradient-boosting-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2001-gradient-boosting-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2001-gradient-boosting-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2001-gradient-boosting 英文科普音频",
+            "en": "ai100-2001-gradient-boosting English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2001-gradient-boosting-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2001-gradient-boosting-portrait",
-        "asset-2001-gradient-boosting-explainer"
+        "asset-2001-gradient-boosting-explainer",
+        "asset-ai100-2001-gradient-boosting-audio-zh-original-v1",
+        "asset-ai100-2001-gradient-boosting-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -60813,9 +64281,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2016-2016-xgboost_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2016-xgboost-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2016-xgboost-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2016-xgboost 中文原版科普音频",
+            "en": "ai100-2016-xgboost original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2016-xgboost-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2016-xgboost-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2016-xgboost-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2016-xgboost 英文科普音频",
+            "en": "ai100-2016-xgboost English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2016-xgboost-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2016-xgboost-portrait",
-        "asset-2016-xgboost-explainer"
+        "asset-2016-xgboost-explainer",
+        "asset-ai100-2016-xgboost-audio-zh-original-v1",
+        "asset-ai100-2016-xgboost-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -61347,9 +64849,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2017-2017-lightgbm_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2017-lightgbm-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-lightgbm-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-lightgbm 中文原版科普音频",
+            "en": "ai100-2017-lightgbm original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-lightgbm-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2017-lightgbm-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2017-lightgbm-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2017-lightgbm 英文科普音频",
+            "en": "ai100-2017-lightgbm English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2017-lightgbm-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2017-lightgbm-portrait",
-        "asset-2017-lightgbm-explainer"
+        "asset-2017-lightgbm-explainer",
+        "asset-ai100-2017-lightgbm-audio-zh-original-v1",
+        "asset-ai100-2017-lightgbm-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -61864,10 +65400,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1985-bayesian-network_message-pass.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1985-bayesian-network-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1985-bayesian-network-zh-original-v1.mp3",
+          "title": {
+            "zh": "1985-bayesian-network 中文原版科普音频",
+            "en": "1985-bayesian-network original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1985-bayesian-network-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1985-bayesian-network-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1985-bayesian-network-en-v1.mp3",
+          "title": {
+            "zh": "1985-bayesian-network 英文科普音频",
+            "en": "1985-bayesian-network English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1985-bayesian-network-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1985-bayesian-network-judea-pearl",
         "asset-1985-bayesian-network-dag",
-        "asset-1985-bayesian-network-message-pass"
+        "asset-1985-bayesian-network-message-pass",
+        "asset-1985-bayesian-network-audio-zh-original-v1",
+        "asset-1985-bayesian-network-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -62362,10 +65932,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2003-lda_plate-model.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2003-lda-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2003-lda-zh-original-v1.mp3",
+          "title": {
+            "zh": "2003-lda 中文原版科普音频",
+            "en": "2003-lda original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2003-lda-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2003-lda-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2003-lda-en-v1.mp3",
+          "title": {
+            "zh": "2003-lda 英文科普音频",
+            "en": "2003-lda English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2003-lda-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2003-lda-david-blei",
         "asset-2003-lda-topic-simplex",
-        "asset-2003-lda-plate-model"
+        "asset-2003-lda-plate-model",
+        "asset-2003-lda-audio-zh-original-v1",
+        "asset-2003-lda-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -62863,9 +66467,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2001-2001-crf_process.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2001-crf-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2001-crf-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2001-crf 中文原版科普音频",
+            "en": "ai100-2001-crf original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2001-crf-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2001-crf-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2001-crf-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2001-crf 英文科普音频",
+            "en": "ai100-2001-crf English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2001-crf-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2001-crf-portrait",
-        "asset-2001-crf-explainer"
+        "asset-2001-crf-explainer",
+        "asset-ai100-2001-crf-audio-zh-original-v1",
+        "asset-ai100-2001-crf-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -63380,10 +67018,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1975-genetic-algorithm-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1975-genetic-algorithm-zh-original-v1.mp3",
+          "title": {
+            "zh": "1975-genetic-algorithm 中文原版科普音频",
+            "en": "1975-genetic-algorithm original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1975-genetic-algorithm-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1975-genetic-algorithm-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1975-genetic-algorithm-en-v1.mp3",
+          "title": {
+            "zh": "1975-genetic-algorithm 英文科普音频",
+            "en": "1975-genetic-algorithm English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1975-genetic-algorithm-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1975-genetic-algorithm-john-henry-holland",
         "asset-1975-genetic-algorithm-population-cycle",
-        "asset-1975-genetic-algorithm-chromosome-crossover"
+        "asset-1975-genetic-algorithm-chromosome-crossover",
+        "asset-1975-genetic-algorithm-audio-zh-original-v1",
+        "asset-1975-genetic-algorithm-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -63893,9 +67565,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1983-simulated-annealing-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1983-simulated-annealing-zh-original-v1.mp3",
+          "title": {
+            "zh": "1983-simulated-annealing 中文原版科普音频",
+            "en": "1983-simulated-annealing original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1983-simulated-annealing-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1983-simulated-annealing-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1983-simulated-annealing-en-v1.mp3",
+          "title": {
+            "zh": "1983-simulated-annealing 英文科普音频",
+            "en": "1983-simulated-annealing English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1983-simulated-annealing-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1983-simulated-annealing-scott-kirkpatrick",
-        "asset-1983-simulated-annealing-energy-landscape"
+        "asset-1983-simulated-annealing-energy-landscape",
+        "asset-1983-simulated-annealing-audio-zh-original-v1",
+        "asset-1983-simulated-annealing-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -64432,10 +68138,44 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg",
       "overviewImageAssetId": "asset-annual-001-swin-transformer-v2-portrait-ze-liu",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-001-swin-transformer-v2-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-001-swin-transformer-v2-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-001-swin-transformer-v2 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-001-swin-transformer-v2 original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-001-swin-transformer-v2-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-001-swin-transformer-v2-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-001-swin-transformer-v2-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-001-swin-transformer-v2 英文科普音频",
+            "en": "ai100-annual-2022-2023-001-swin-transformer-v2 English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-001-swin-transformer-v2-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-001-swin-transformer-v2-portrait-ze-liu",
         "asset-annual-001-swin-transformer-v2-paper-v1-v2-comparison",
         "asset-annual-001-swin-transformer-v2-portrait-han-hu",
+        "asset-ai100-annual-2022-2023-001-swin-transformer-v2-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-001-swin-transformer-v2-audio-en-v1",
         "asset-annual-001-swin-transformer-v2-record"
       ]
     },
@@ -65248,10 +68988,44 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg",
       "overviewImageAssetId": "asset-annual-002-simmim-portrait-yue-cao",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-002-simmim-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-002-simmim-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-002-simmim 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-002-simmim original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-002-simmim-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-002-simmim-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-002-simmim-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-002-simmim 英文科普音频",
+            "en": "ai100-annual-2022-2023-002-simmim English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-002-simmim-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-002-simmim-portrait-yue-cao",
         "asset-annual-002-simmim-official-teaser",
         "asset-annual-002-simmim-portrait-han-hu",
+        "asset-ai100-annual-2022-2023-002-simmim-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-002-simmim-audio-en-v1",
         "asset-annual-002-simmim-record"
       ]
     },
@@ -66097,9 +69871,43 @@ const milestones = [
       "overviewImage": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg",
       "overviewImageAssetId": "asset-annual-024-whisper-portrait-ilya-sutskever",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-024-whisper-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-024-whisper-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-024-whisper 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-024-whisper original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-024-whisper-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-024-whisper-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-024-whisper-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-024-whisper 英文科普音频",
+            "en": "ai100-annual-2022-2023-024-whisper English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-024-whisper-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-024-whisper-portrait-ilya-sutskever",
         "asset-annual-024-whisper-official-approach",
+        "asset-ai100-annual-2022-2023-024-whisper-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-024-whisper-audio-en-v1",
         "asset-annual-024-whisper-record"
       ]
     },
@@ -66851,9 +70659,43 @@ const milestones = [
       "overviewImage": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg",
       "overviewImageAssetId": "asset-annual-039-palm-portrait-jeff-dean",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-039-palm-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-039-palm-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-039-palm 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-039-palm original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-039-palm-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-039-palm-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-039-palm-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-039-palm 英文科普音频",
+            "en": "ai100-annual-2022-2023-039-palm English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-039-palm-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-039-palm-portrait-jeff-dean",
         "asset-annual-039-palm-paper-bigbench-results",
+        "asset-ai100-annual-2022-2023-039-palm-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-039-palm-audio-en-v1",
         "asset-annual-039-palm-record"
       ]
     },
@@ -67638,10 +71480,44 @@ const milestones = [
       "overviewImage": "resources/images/benchcouncil-ai100-annual/portraits/jeff-wu.jpg",
       "overviewImageAssetId": "asset-annual-048-instructgpt-portrait-jeff-wu",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-048-instructgpt-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-048-instructgpt-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-048-instructgpt 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-048-instructgpt original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-048-instructgpt-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-048-instructgpt-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-048-instructgpt-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-048-instructgpt 英文科普音频",
+            "en": "ai100-annual-2022-2023-048-instructgpt English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-048-instructgpt-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-048-instructgpt-portrait-jeff-wu",
         "asset-annual-048-instructgpt-portrait-john-schulman",
         "asset-annual-048-instructgpt-paper-preference-results",
+        "asset-ai100-annual-2022-2023-048-instructgpt-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-048-instructgpt-audio-en-v1",
         "asset-annual-048-instructgpt-record"
       ]
     },
@@ -68414,9 +72290,43 @@ const milestones = [
       "overviewImage": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg",
       "overviewImageAssetId": "asset-annual-059-chain-of-thought-portrait-denny-zhou",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-059-chain-of-thought-prompting-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-059-chain-of-thought-prompting 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-059-chain-of-thought-prompting original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-059-chain-of-thought-prompting-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-059-chain-of-thought-prompting 英文科普音频",
+            "en": "ai100-annual-2022-2023-059-chain-of-thought-prompting English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-059-chain-of-thought-portrait-denny-zhou",
         "asset-annual-059-chain-of-thought-paper-examples",
+        "asset-ai100-annual-2022-2023-059-chain-of-thought-prompting-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-059-chain-of-thought-prompting-audio-en-v1",
         "asset-annual-059-chain-of-thought-prompting-record"
       ]
     },
@@ -69087,8 +72997,42 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2022-chatgpt/hugging-face-rlhf.png",
       "overviewImageAssetId": "asset-annual-058-chatgpt-hugging-face-rlhf",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-058-chatgpt-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-058-chatgpt-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-058-chatgpt 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-058-chatgpt original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-058-chatgpt-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-058-chatgpt-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-058-chatgpt-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-058-chatgpt 英文科普音频",
+            "en": "ai100-annual-2022-2023-058-chatgpt English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-058-chatgpt-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-058-chatgpt-hugging-face-rlhf",
+        "asset-ai100-annual-2022-2023-058-chatgpt-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-058-chatgpt-audio-en-v1",
         "asset-annual-058-chatgpt-record"
       ]
     },
@@ -69725,11 +73669,45 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg",
       "overviewImageAssetId": "asset-annual-081-latent-diffusion-models-portrait-robin-rombach",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-081-latent-diffusion-models-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-081-latent-diffusion-models-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-081-latent-diffusion-models 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-081-latent-diffusion-models original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-081-latent-diffusion-models-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-081-latent-diffusion-models-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-081-latent-diffusion-models-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-081-latent-diffusion-models 英文科普音频",
+            "en": "ai100-annual-2022-2023-081-latent-diffusion-models English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-081-latent-diffusion-models-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-081-latent-diffusion-models-portrait-robin-rombach",
         "asset-annual-081-latent-diffusion-models-portrait-andreas-blattmann",
         "asset-annual-081-latent-diffusion-models-portrait-bjorn-ommer",
         "asset-annual-081-latent-diffusion-models-perceptual-compression",
+        "asset-ai100-annual-2022-2023-081-latent-diffusion-models-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-081-latent-diffusion-models-audio-en-v1",
         "asset-annual-081-latent-diffusion-models-record"
       ]
     },
@@ -70555,9 +74533,43 @@ const milestones = [
       "overviewImage": "resources/images/benchcouncil-ai100-annual/portraits/pushmeet-kohli.jpg",
       "overviewImageAssetId": "asset-annual-114-alphatensor-portrait-pushmeet-kohli",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-114-alphatensor-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-114-alphatensor 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-114-alphatensor original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-114-alphatensor-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-114-alphatensor-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-114-alphatensor 英文科普音频",
+            "en": "ai100-annual-2022-2023-114-alphatensor English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-114-alphatensor-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-114-alphatensor-portrait-pushmeet-kohli",
         "asset-annual-114-alphatensor-official-tensor",
+        "asset-ai100-annual-2022-2023-114-alphatensor-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-114-alphatensor-audio-en-v1",
         "asset-annual-114-alphatensor-record"
       ]
     },
@@ -71215,10 +75227,44 @@ const milestones = [
       "overviewImage": "resources/images/benchcouncil-ai100-annual/portraits/chelsea-finn.jpg",
       "overviewImageAssetId": "asset-annual-117-saycan-portrait-chelsea-finn",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-117-saycan-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-117-saycan-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-117-saycan 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-117-saycan original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-117-saycan-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-117-saycan-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-117-saycan-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-117-saycan 英文科普音频",
+            "en": "ai100-annual-2022-2023-117-saycan English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-117-saycan-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-117-saycan-portrait-chelsea-finn",
         "asset-annual-117-saycan-scoring",
         "asset-annual-117-saycan-robot-example",
+        "asset-ai100-annual-2022-2023-117-saycan-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-117-saycan-audio-en-v1",
         "asset-annual-117-saycan-record"
       ]
     },
@@ -71973,9 +76019,43 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2023-llama/edouard-grave.jpg",
       "overviewImageAssetId": "asset-annual-035-llama-portrait-edouard-grave",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-035-llama-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-035-llama-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-035-llama 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-035-llama original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-035-llama-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-035-llama-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-035-llama-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-035-llama 英文科普音频",
+            "en": "ai100-annual-2022-2023-035-llama English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-035-llama-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-035-llama-portrait-edouard-grave",
         "asset-annual-035-llama-official-release-image",
+        "asset-ai100-annual-2022-2023-035-llama-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-035-llama-audio-en-v1",
         "asset-annual-035-llama-record"
       ]
     },
@@ -72631,8 +76711,42 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2023-gpt-4/gpt-4-technical-report-exam-performance.jpg",
       "overviewImageAssetId": "asset-annual-051-gpt-4-paper-exam-performance",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-051-gpt-4-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-051-gpt-4-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-051-gpt-4 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-051-gpt-4 original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-051-gpt-4-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-051-gpt-4-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-051-gpt-4-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-051-gpt-4 英文科普音频",
+            "en": "ai100-annual-2022-2023-051-gpt-4 English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-051-gpt-4-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-051-gpt-4-paper-exam-performance",
+        "asset-ai100-annual-2022-2023-051-gpt-4-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-051-gpt-4-audio-en-v1",
         "asset-annual-051-gpt-4-record"
       ]
     },
@@ -73286,9 +77400,43 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2023-claude/claude-official-launch-artwork.png",
       "overviewImageAssetId": "asset-annual-057-claude-official-launch-artwork",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-057-claude-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-057-claude-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-057-claude 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-057-claude original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-057-claude-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-057-claude-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-057-claude-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-057-claude 英文科普音频",
+            "en": "ai100-annual-2022-2023-057-claude English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-057-claude-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-057-claude-official-launch-artwork",
         "asset-annual-057-claude-poe-product-image",
+        "asset-ai100-annual-2022-2023-057-claude-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-057-claude-audio-en-v1",
         "asset-annual-057-claude-record"
       ]
     },
@@ -74007,9 +78155,43 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2023-blip-2/junnan-li.jpg",
       "overviewImageAssetId": "asset-annual-028-blip-2-portrait-junnan-li",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-028-blip-2-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-028-blip-2-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-028-blip-2 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-028-blip-2 original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-028-blip-2-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-028-blip-2-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-028-blip-2-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-028-blip-2 英文科普音频",
+            "en": "ai100-annual-2022-2023-028-blip-2 English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-028-blip-2-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-028-blip-2-portrait-junnan-li",
         "asset-annual-028-blip-2-official-architecture",
+        "asset-ai100-annual-2022-2023-028-blip-2-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-028-blip-2-audio-en-v1",
         "asset-annual-028-blip-2-record"
       ]
     },
@@ -74719,9 +78901,43 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2023-llava/haotian-liu.jpg",
       "overviewImageAssetId": "asset-annual-063-llava-portrait-haotian-liu",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-063-llava-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-063-llava-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-063-llava 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-063-llava original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-063-llava-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-063-llava-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-063-llava-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-063-llava 英文科普音频",
+            "en": "ai100-annual-2022-2023-063-llava English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-063-llava-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-063-llava-portrait-haotian-liu",
         "asset-annual-063-llava-official-architecture",
+        "asset-ai100-annual-2022-2023-063-llava-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-063-llava-audio-en-v1",
         "asset-annual-063-llava-record"
       ]
     },
@@ -75412,10 +79628,44 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2023-palm-e/pete-florence.jpg",
       "overviewImageAssetId": "asset-annual-037-palm-e-portrait-pete-florence",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-037-palm-e-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-037-palm-e-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-037-palm-e 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-037-palm-e original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-037-palm-e-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-037-palm-e-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-037-palm-e-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-037-palm-e 英文科普音频",
+            "en": "ai100-annual-2022-2023-037-palm-e English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-037-palm-e-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-037-palm-e-portrait-pete-florence",
         "asset-annual-037-palm-e-official-approach",
         "asset-annual-037-palm-e-official-teaser",
+        "asset-ai100-annual-2022-2023-037-palm-e-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-037-palm-e-audio-en-v1",
         "asset-annual-037-palm-e-record"
       ]
     },
@@ -76140,10 +80390,44 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2023-controlnet/maneesh-agrawala.jpg",
       "overviewImageAssetId": "asset-annual-094-controlnet-portrait-maneesh-agrawala",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-094-controlnet-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-094-controlnet-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-094-controlnet 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-094-controlnet original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-094-controlnet-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-094-controlnet-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-094-controlnet-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-094-controlnet 英文科普音频",
+            "en": "ai100-annual-2022-2023-094-controlnet English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-094-controlnet-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-094-controlnet-portrait-maneesh-agrawala",
         "asset-annual-094-controlnet-official-full-architecture",
         "asset-annual-094-controlnet-official-core-block",
+        "asset-ai100-annual-2022-2023-094-controlnet-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-094-controlnet-audio-en-v1",
         "asset-annual-094-controlnet-record"
       ]
     },
@@ -76953,10 +81237,44 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg",
       "overviewImageAssetId": "asset-annual-101-segment-anything-portrait-alexander-kirillov",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-101-segment-anything-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-101-segment-anything-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-101-segment-anything 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-101-segment-anything original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-101-segment-anything-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-101-segment-anything-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-101-segment-anything-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-101-segment-anything 英文科普音频",
+            "en": "ai100-annual-2022-2023-101-segment-anything English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-101-segment-anything-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-101-segment-anything-portrait-alexander-kirillov",
         "asset-annual-101-segment-anything-official-model-diagram",
         "asset-annual-101-segment-anything-portrait-ross-girshick",
+        "asset-ai100-annual-2022-2023-101-segment-anything-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-101-segment-anything-audio-en-v1",
         "asset-annual-101-segment-anything-record"
       ]
     },
@@ -77703,8 +82021,42 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2023-gen2/gen2-official-text-to-video-example.jpg",
       "overviewImageAssetId": "asset-annual-087-gen2-official-text-to-video-example",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-087-gen2-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-087-gen2-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-087-gen2 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-087-gen2 original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-087-gen2-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-087-gen2-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-087-gen2-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-087-gen2 英文科普音频",
+            "en": "ai100-annual-2022-2023-087-gen2 English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-087-gen2-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-087-gen2-official-text-to-video-example",
+        "asset-ai100-annual-2022-2023-087-gen2-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-087-gen2-audio-en-v1",
         "asset-annual-087-gen2-record"
       ]
     },
@@ -78492,9 +82844,43 @@ const milestones = [
       "overviewImage": "resources/images/external/ai100-2023-esmfold/brian-hie.jpg",
       "overviewImageAssetId": "asset-annual-110-esmfold-portrait-brian-hie",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-annual-2022-2023-110-esmfold-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-110-esmfold-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-110-esmfold 中文原版科普音频",
+            "en": "ai100-annual-2022-2023-110-esmfold original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-110-esmfold-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-annual-2022-2023-110-esmfold-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-110-esmfold-en-v1.mp3",
+          "title": {
+            "zh": "ai100-annual-2022-2023-110-esmfold 英文科普音频",
+            "en": "ai100-annual-2022-2023-110-esmfold English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-annual-2022-2023-110-esmfold-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-annual-110-esmfold-portrait-brian-hie",
         "asset-annual-110-esmfold-paper-figure-2",
+        "asset-ai100-annual-2022-2023-110-esmfold-audio-zh-original-v1",
+        "asset-ai100-annual-2022-2023-110-esmfold-audio-en-v1",
         "asset-annual-110-esmfold-record"
       ]
     },
@@ -79235,19 +83621,33 @@ const milestones = [
       ],
       "audios": [
         {
-          "id": "asset-1956-dartmouth-dialogue-zh",
-          "url": "resources/audio/1956-dartmouth/dartmouth-dialogue-zh.mp3",
-          "sourcePath": "resources/audio/1956-dartmouth/dartmouth-dialogue-zh.mp3",
+          "id": "asset-1956-dartmouth-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1956-dartmouth-zh-original-v1.mp3",
           "title": {
-            "zh": "达特茅斯会议中文音频讲解",
-            "en": "Chinese audio narration for the Dartmouth Workshop"
+            "zh": "1956-dartmouth 中文原版科普音频",
+            "en": "1956-dartmouth original Chinese audio narration"
           },
           "language": "zh",
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "bza-s3",
             "bucket": "ai-history",
-            "objectKey": "audio/delivery/1956-dartmouth/zh/dartmouth-dialogue-v1.mp3"
+            "objectKey": "audio/releases/1956-dartmouth-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1956-dartmouth-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1956-dartmouth-en-v1.mp3",
+          "title": {
+            "zh": "1956-dartmouth 英文科普音频",
+            "en": "1956-dartmouth English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1956-dartmouth-en-v1.mp3"
           }
         }
       ],
@@ -79256,7 +83656,8 @@ const milestones = [
         "asset-1956-dartmouth-historical-01",
         "asset-1956-dartmouth-historical-04",
         "asset-1956-dartmouth-school",
-        "asset-1956-dartmouth-dialogue-zh"
+        "asset-1956-dartmouth-audio-zh-original-v1",
+        "asset-1956-dartmouth-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -79613,6 +84014,38 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-1957-perceptron-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1957-perceptron-zh-original-v1.mp3",
+          "title": {
+            "zh": "1957-perceptron 中文原版科普音频",
+            "en": "1957-perceptron original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1957-perceptron-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1957-perceptron-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1957-perceptron-en-v1.mp3",
+          "title": {
+            "zh": "1957-perceptron 英文科普音频",
+            "en": "1957-perceptron English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1957-perceptron-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1958-rosenblatt-perceptron-frank-rosenblatt",
         "asset-1958-rosenblatt-perceptron-threshold",
@@ -79620,7 +84053,9 @@ const milestones = [
         "asset-1957-perceptron-people-01",
         "asset-1957-perceptron-papers-01",
         "asset-1957-perceptron-historical-01",
-        "asset-1957-perceptron-historical-01-2"
+        "asset-1957-perceptron-historical-01-2",
+        "asset-1957-perceptron-audio-zh-original-v1",
+        "asset-1957-perceptron-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -80170,10 +84605,44 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-1969-ai-winter-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1969-ai-winter-zh-original-v1.mp3",
+          "title": {
+            "zh": "1969-ai-winter 中文原版科普音频",
+            "en": "1969-ai-winter original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1969-ai-winter-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1969-ai-winter-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1969-ai-winter-en-v1.mp3",
+          "title": {
+            "zh": "1969-ai-winter 英文科普音频",
+            "en": "1969-ai-winter English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1969-ai-winter-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1969-ai-winter-papers-01",
         "asset-1969-ai-winter-papers-02",
-        "asset-1969-ai-winter-papers-01-2"
+        "asset-1969-ai-winter-papers-01-2",
+        "asset-1969-ai-winter-audio-zh-original-v1",
+        "asset-1969-ai-winter-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -80472,9 +84941,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-1980-neocognitron-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1980-neocognitron-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-1980-neocognitron 中文原版科普音频",
+            "en": "ai100-1980-neocognitron original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1980-neocognitron-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-1980-neocognitron-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-1980-neocognitron-en-v1.mp3",
+          "title": {
+            "zh": "ai100-1980-neocognitron 英文科普音频",
+            "en": "ai100-1980-neocognitron English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-1980-neocognitron-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-1980-neocognitron-dr-kunihikofukushima",
-        "asset-1980-neocognitron-hierarchy"
+        "asset-1980-neocognitron-hierarchy",
+        "asset-ai100-1980-neocognitron-audio-zh-original-v1",
+        "asset-ai100-1980-neocognitron-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -80963,10 +85466,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1982-hopfield-network-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1982-hopfield-network-zh-original-v1.mp3",
+          "title": {
+            "zh": "1982-hopfield-network 中文原版科普音频",
+            "en": "1982-hopfield-network original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1982-hopfield-network-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1982-hopfield-network-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1982-hopfield-network-en-v1.mp3",
+          "title": {
+            "zh": "1982-hopfield-network 英文科普音频",
+            "en": "1982-hopfield-network English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1982-hopfield-network-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1982-hopfield-network-john-hopfield",
         "asset-1982-hopfield-network-energy-basin",
-        "asset-1982-hopfield-network-memory-grid"
+        "asset-1982-hopfield-network-memory-grid",
+        "asset-1982-hopfield-network-audio-zh-original-v1",
+        "asset-1982-hopfield-network-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -81492,11 +86029,45 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-1986-backpropagation-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1986-backpropagation-zh-original-v1.mp3",
+          "title": {
+            "zh": "1986-backpropagation 中文原版科普音频",
+            "en": "1986-backpropagation original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1986-backpropagation-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1986-backpropagation-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1986-backpropagation-en-v1.mp3",
+          "title": {
+            "zh": "1986-backpropagation 英文科普音频",
+            "en": "1986-backpropagation English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1986-backpropagation-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1986-backpropagation-paper-02",
         "asset-1986-backpropagation-architecture01",
         "asset-1986-backpropagation-paper-01",
-        "asset-1986-backpropagation-papers-01"
+        "asset-1986-backpropagation-papers-01",
+        "asset-1986-backpropagation-audio-zh-original-v1",
+        "asset-1986-backpropagation-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -81848,9 +86419,43 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-1986-rnn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1986-rnn-zh-original-v1.mp3",
+          "title": {
+            "zh": "1986-rnn 中文原版科普音频",
+            "en": "1986-rnn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1986-rnn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1986-rnn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1986-rnn-en-v1.mp3",
+          "title": {
+            "zh": "1986-rnn 英文科普音频",
+            "en": "1986-rnn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1986-rnn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1986-rnn-people-01",
-        "asset-1986-rnn-architecture-01"
+        "asset-1986-rnn-architecture-01",
+        "asset-1986-rnn-audio-zh-original-v1",
+        "asset-1986-rnn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -82139,12 +86744,46 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-1989-cnn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1989-cnn-zh-original-v1.mp3",
+          "title": {
+            "zh": "1989-cnn 中文原版科普音频",
+            "en": "1989-cnn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1989-cnn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1989-cnn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1989-cnn-en-v1.mp3",
+          "title": {
+            "zh": "1989-cnn 英文科普音频",
+            "en": "1989-cnn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1989-cnn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1989-cnn-yann-lecun-external",
         "asset-1989-lenet-zip-code-cnn",
         "asset-1989-cnn-architecture-01",
         "asset-1989-cnn-people-01",
-        "asset-1989-cnn-people-02"
+        "asset-1989-cnn-people-02",
+        "asset-1989-cnn-audio-zh-original-v1",
+        "asset-1989-cnn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -82702,12 +87341,46 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-1997-lstm-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-lstm-zh-original-v1.mp3",
+          "title": {
+            "zh": "1997-lstm 中文原版科普音频",
+            "en": "1997-lstm original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1997-lstm-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1997-lstm-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-lstm-en-v1.mp3",
+          "title": {
+            "zh": "1997-lstm 英文科普音频",
+            "en": "1997-lstm English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1997-lstm-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-sepp-hochreiter",
         "asset-1997-lstm-gated-memory",
         "asset-1997-lstm-architecture-01",
         "asset-1997-lstm-architecture-02",
-        "asset-1997-lstm-people-01"
+        "asset-1997-lstm-people-01",
+        "asset-1997-lstm-audio-zh-original-v1",
+        "asset-1997-lstm-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -83264,10 +87937,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2006-dbn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2006-dbn-zh-original-v1.mp3",
+          "title": {
+            "zh": "2006-dbn 中文原版科普音频",
+            "en": "2006-dbn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2006-dbn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2006-dbn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2006-dbn-en-v1.mp3",
+          "title": {
+            "zh": "2006-dbn 英文科普音频",
+            "en": "2006-dbn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2006-dbn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2006-dbn-geoffrey-hinton",
         "asset-2006-dbn-stacked-rbms",
-        "asset-2006-dbn-wake-finetune"
+        "asset-2006-dbn-wake-finetune",
+        "asset-2006-dbn-audio-zh-original-v1",
+        "asset-2006-dbn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -83776,10 +88483,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2009-imagenet-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2009-imagenet-zh-original-v1.mp3",
+          "title": {
+            "zh": "2009-imagenet 中文原版科普音频",
+            "en": "2009-imagenet original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2009-imagenet-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2009-imagenet-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2009-imagenet-en-v1.mp3",
+          "title": {
+            "zh": "2009-imagenet 英文科普音频",
+            "en": "2009-imagenet English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2009-imagenet-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2009-imagenet-fei-fei-li",
         "asset-2009-imagenet-hierarchy",
-        "asset-2009-imagenet-benchmark"
+        "asset-2009-imagenet-benchmark",
+        "asset-2009-imagenet-audio-zh-original-v1",
+        "asset-2009-imagenet-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -84309,11 +89050,45 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2012-alexnet-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2012-alexnet-zh-original-v1.mp3",
+          "title": {
+            "zh": "2012-alexnet 中文原版科普音频",
+            "en": "2012-alexnet original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2012-alexnet-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2012-alexnet-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2012-alexnet-en-v1.mp3",
+          "title": {
+            "zh": "2012-alexnet 英文科普音频",
+            "en": "2012-alexnet English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2012-alexnet-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-alexnet-portrait",
         "asset-alexnet-architecture",
         "asset-alexnet-architecture-detail",
-        "asset-alexnet-deep-portrait"
+        "asset-alexnet-deep-portrait",
+        "asset-2012-alexnet-audio-zh-original-v1",
+        "asset-2012-alexnet-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -84835,10 +89610,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2014-vgg-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-vgg-zh-original-v1.mp3",
+          "title": {
+            "zh": "2014-vgg 中文原版科普音频",
+            "en": "2014-vgg original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-vgg-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2014-vgg-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-vgg-en-v1.mp3",
+          "title": {
+            "zh": "2014-vgg 英文科普音频",
+            "en": "2014-vgg English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-vgg-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2014-vgg-andrew-zisserman",
         "asset-2014-vgg-depth-configurations",
-        "asset-2014-vgg-receptive-field"
+        "asset-2014-vgg-receptive-field",
+        "asset-2014-vgg-audio-zh-original-v1",
+        "asset-2014-vgg-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -85347,10 +90156,44 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2015-googlenet-inception-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-googlenet-inception-zh-original-v1.mp3",
+          "title": {
+            "zh": "2015-googlenet-inception 中文原版科普音频",
+            "en": "2015-googlenet-inception original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-googlenet-inception-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2015-googlenet-inception-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-googlenet-inception-en-v1.mp3",
+          "title": {
+            "zh": "2015-googlenet-inception 英文科普音频",
+            "en": "2015-googlenet-inception English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-googlenet-inception-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2015-googlenet-inception-christian-szegedy",
         "asset-2015-googlenet-inception-parallel-branches",
-        "asset-2015-googlenet-inception-bottleneck"
+        "asset-2015-googlenet-inception-bottleneck",
+        "asset-2015-googlenet-inception-audio-zh-original-v1",
+        "asset-2015-googlenet-inception-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -85857,10 +90700,44 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2014-gan-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-gan-zh-original-v1.mp3",
+          "title": {
+            "zh": "2014-gan 中文原版科普音频",
+            "en": "2014-gan original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-gan-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2014-gan-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-gan-en-v1.mp3",
+          "title": {
+            "zh": "2014-gan 英文科普音频",
+            "en": "2014-gan English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-gan-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ian-goodfellow",
         "asset-2014-gan-adversarial-loop",
-        "asset-2014-gan-architecture-01"
+        "asset-2014-gan-architecture-01",
+        "asset-2014-gan-audio-zh-original-v1",
+        "asset-2014-gan-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -86380,12 +91257,46 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2014-attention-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-attention-zh-original-v1.mp3",
+          "title": {
+            "zh": "2014-attention 中文原版科普音频",
+            "en": "2014-attention original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-attention-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2014-attention-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-attention-en-v1.mp3",
+          "title": {
+            "zh": "2014-attention 英文科普音频",
+            "en": "2014-attention English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-attention-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2014-attention-bahdanau-portrait",
         "asset-2014-attention-alignment",
         "asset-2014-attention-architecture-01",
         "asset-2014-attention-cho-portrait",
-        "asset-2014-attention-people-01"
+        "asset-2014-attention-people-01",
+        "asset-2014-attention-audio-zh-original-v1",
+        "asset-2014-attention-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -86966,9 +91877,43 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2014-highway-network-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-highway-network-zh-original-v1.mp3",
+          "title": {
+            "zh": "2014-highway-network 中文原版科普音频",
+            "en": "2014-highway-network original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-highway-network-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2014-highway-network-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-highway-network-en-v1.mp3",
+          "title": {
+            "zh": "2014-highway-network 英文科普音频",
+            "en": "2014-highway-network English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-highway-network-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2014-highway-network-people-01",
-        "asset-2014-highway-network-architecture-01"
+        "asset-2014-highway-network-architecture-01",
+        "asset-2014-highway-network-audio-zh-original-v1",
+        "asset-2014-highway-network-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -87350,6 +92295,38 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2015-resnet-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-resnet-zh-original-v1.mp3",
+          "title": {
+            "zh": "2015-resnet 中文原版科普音频",
+            "en": "2015-resnet original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-resnet-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2015-resnet-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-resnet-en-v1.mp3",
+          "title": {
+            "zh": "2015-resnet 英文科普音频",
+            "en": "2015-resnet English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-resnet-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-kaiming-he",
         "asset-2015-resnet-architecture-01",
@@ -87357,7 +92334,9 @@ const milestones = [
         "asset-2015-resnet-people-04",
         "asset-2015-resnet-people-03",
         "asset-2015-resnet-people-02",
-        "asset-2015-resnet-people-01"
+        "asset-2015-resnet-people-01",
+        "asset-2015-resnet-audio-zh-original-v1",
+        "asset-2015-resnet-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -87981,9 +92960,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-ai100-2015-diffusion-model-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-diffusion-model-zh-original-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-diffusion-model 中文原版科普音频",
+            "en": "ai100-2015-diffusion-model original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-diffusion-model-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-ai100-2015-diffusion-model-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2015-diffusion-model-en-v1.mp3",
+          "title": {
+            "zh": "ai100-2015-diffusion-model 英文科普音频",
+            "en": "ai100-2015-diffusion-model English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/ai100-2015-diffusion-model-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ai100-2015-diffusion-model-jascha-profile",
-        "asset-2015-diffusion-forward-reverse"
+        "asset-2015-diffusion-forward-reverse",
+        "asset-ai100-2015-diffusion-model-audio-zh-original-v1",
+        "asset-ai100-2015-diffusion-model-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -88526,10 +93539,44 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2016-densenet-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-densenet-zh-original-v1.mp3",
+          "title": {
+            "zh": "2016-densenet 中文原版科普音频",
+            "en": "2016-densenet original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2016-densenet-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2016-densenet-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-densenet-en-v1.mp3",
+          "title": {
+            "zh": "2016-densenet 英文科普音频",
+            "en": "2016-densenet English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2016-densenet-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2016-densenet-people-02",
         "asset-2016-densenet-architecture-01",
-        "asset-2016-densenet-people-01"
+        "asset-2016-densenet-people-01",
+        "asset-2016-densenet-audio-zh-original-v1",
+        "asset-2016-densenet-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -89093,10 +94140,44 @@ const milestones = [
       "overviewImage": "resources/images/figures/authoritative/david-silver.jpg",
       "overviewImageAssetId": "asset-david-silver-commons-portrait",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2016-alphago-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-alphago-zh-original-v1.mp3",
+          "title": {
+            "zh": "2016-alphago 中文原版科普音频",
+            "en": "2016-alphago original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2016-alphago-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2016-alphago-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-alphago-en-v1.mp3",
+          "title": {
+            "zh": "2016-alphago 英文科普音频",
+            "en": "2016-alphago English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2016-alphago-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-david-silver-commons-portrait",
         "asset-alphago-policy-value-search",
-        "asset-alphago-lee-sedol"
+        "asset-alphago-lee-sedol",
+        "asset-2016-alphago-audio-zh-original-v1",
+        "asset-2016-alphago-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -89499,10 +94580,44 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2017-transformer-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2017-transformer-zh-original-v1.mp3",
+          "title": {
+            "zh": "2017-transformer 中文原版科普音频",
+            "en": "2017-transformer original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2017-transformer-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2017-transformer-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2017-transformer-en-v1.mp3",
+          "title": {
+            "zh": "2017-transformer 英文科普音频",
+            "en": "2017-transformer English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2017-transformer-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-transformer-portrait",
         "asset-transformer-architecture-detail",
         "asset-transformer-paper-page",
+        "asset-2017-transformer-audio-zh-original-v1",
+        "asset-2017-transformer-audio-en-v1",
         "asset-transformer-architecture",
         "asset-transformer-attention"
       ]
@@ -90028,11 +95143,45 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2018-bert-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2018-bert-zh-original-v1.mp3",
+          "title": {
+            "zh": "2018-bert 中文原版科普音频",
+            "en": "2018-bert original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2018-bert-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2018-bert-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2018-bert-en-v1.mp3",
+          "title": {
+            "zh": "2018-bert 英文科普音频",
+            "en": "2018-bert English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2018-bert-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-jacob-devlin",
         "asset-2018-bert-masked-lm",
         "asset-2018-bert-architecture-01",
-        "asset-2018-bert-architecture-02"
+        "asset-2018-bert-architecture-02",
+        "asset-2018-bert-audio-zh-original-v1",
+        "asset-2018-bert-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -90539,12 +95688,46 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2018-gpt-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2018-gpt-zh-original-v1.mp3",
+          "title": {
+            "zh": "2018-gpt 中文原版科普音频",
+            "en": "2018-gpt original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2018-gpt-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2018-gpt-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2018-gpt-en-v1.mp3",
+          "title": {
+            "zh": "2018-gpt 英文科普音频",
+            "en": "2018-gpt English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2018-gpt-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-alec-radford",
         "asset-2018-gpt-next-token",
         "asset-2018-gpt-architecture-01",
         "asset-2018-gpt-architecture-02",
-        "asset-2018-gpt-historical-01"
+        "asset-2018-gpt-historical-01",
+        "asset-2018-gpt-audio-zh-original-v1",
+        "asset-2018-gpt-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -91059,11 +96242,45 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2019-ai-feynman-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2019-ai-feynman-zh-original-v1.mp3",
+          "title": {
+            "zh": "2019-ai-feynman 中文原版科普音频",
+            "en": "2019-ai-feynman original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2019-ai-feynman-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2019-ai-feynman-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2019-ai-feynman-en-v1.mp3",
+          "title": {
+            "zh": "2019-ai-feynman 英文科普音频",
+            "en": "2019-ai-feynman English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2019-ai-feynman-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2019-ai-feynman-people-01",
         "asset-2019-ai-feynman-historical-01",
         "asset-2019-ai-feynman-papers-01",
-        "asset-2019-ai-feynman-papers-02"
+        "asset-2019-ai-feynman-papers-02",
+        "asset-2019-ai-feynman-audio-zh-original-v1",
+        "asset-2019-ai-feynman-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -91424,6 +96641,38 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2020-alphafold-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2020-alphafold-zh-original-v1.mp3",
+          "title": {
+            "zh": "2020-alphafold 中文原版科普音频",
+            "en": "2020-alphafold original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2020-alphafold-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2020-alphafold-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2020-alphafold-en-v1.mp3",
+          "title": {
+            "zh": "2020-alphafold 英文科普音频",
+            "en": "2020-alphafold English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2020-alphafold-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2020-alphafold-john-jumper-external",
         "asset-2020-alphafold2-structure-pipeline",
@@ -91433,7 +96682,9 @@ const milestones = [
         "asset-2020-alphafold-people-02",
         "asset-2020-alphafold-historical-01",
         "asset-2020-alphafold-historical-02",
-        "asset-2020-alphafold-papers-01"
+        "asset-2020-alphafold-papers-01",
+        "asset-2020-alphafold-audio-zh-original-v1",
+        "asset-2020-alphafold-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -92065,11 +97316,45 @@ const milestones = [
       "overviewImage": "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg",
       "overviewImageAssetId": "asset-2022-post-training-pipeline",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2022-post-training-intelligence-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2022-post-training-intelligence-zh-original-v1.mp3",
+          "title": {
+            "zh": "2022-post-training-intelligence 中文原版科普音频",
+            "en": "2022-post-training-intelligence original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2022-post-training-intelligence-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2022-post-training-intelligence-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2022-post-training-intelligence-en-v1.mp3",
+          "title": {
+            "zh": "2022-post-training-intelligence 英文科普音频",
+            "en": "2022-post-training-intelligence English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2022-post-training-intelligence-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2022-post-training-instruction-tuning-ppt",
         "asset-2022-post-training-pipeline",
         "asset-2022-post-training-rlhf-ppt",
-        "asset-2022-post-training-research-institutions"
+        "asset-2022-post-training-research-institutions",
+        "asset-2022-post-training-intelligence-audio-zh-original-v1",
+        "asset-2022-post-training-intelligence-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -92520,10 +97805,44 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2023-agents-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2023-agents-zh-original-v1.mp3",
+          "title": {
+            "zh": "2023-agents 中文原版科普音频",
+            "en": "2023-agents original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2023-agents-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2023-agents-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2023-agents-en-v1.mp3",
+          "title": {
+            "zh": "2023-agents 英文科普音频",
+            "en": "2023-agents English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2023-agents-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2023-agents-historical-02",
         "asset-2023-agents-historical-03",
-        "asset-2023-agents-historical-04"
+        "asset-2023-agents-historical-04",
+        "asset-2023-agents-audio-zh-original-v1",
+        "asset-2023-agents-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -92876,12 +98195,46 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2024-ai-scientist-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2024-ai-scientist-zh-original-v1.mp3",
+          "title": {
+            "zh": "2024-ai-scientist 中文原版科普音频",
+            "en": "2024-ai-scientist original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2024-ai-scientist-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2024-ai-scientist-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2024-ai-scientist-en-v1.mp3",
+          "title": {
+            "zh": "2024-ai-scientist 英文科普音频",
+            "en": "2024-ai-scientist English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2024-ai-scientist-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2024-ai-scientist-people-02",
         "asset-2024-ai-scientist-architecture-01",
         "asset-2024-ai-scientist-architecture-02",
         "asset-2024-ai-scientist-people-01",
-        "asset-2024-ai-scientist-papers-01"
+        "asset-2024-ai-scientist-papers-01",
+        "asset-2024-ai-scientist-audio-zh-original-v1",
+        "asset-2024-ai-scientist-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -93297,12 +98650,46 @@ const milestones = [
           "source": "Web"
         }
       ],
+      "audios": [
+        {
+          "id": "asset-2025-llm-competition-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2025-llm-competition-zh-original-v1.mp3",
+          "title": {
+            "zh": "2025-llm-competition 中文原版科普音频",
+            "en": "2025-llm-competition original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2025-llm-competition-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2025-llm-competition-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2025-llm-competition-en-v1.mp3",
+          "title": {
+            "zh": "2025-llm-competition 英文科普音频",
+            "en": "2025-llm-competition English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2025-llm-competition-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2025-llm-competition-architecture-01",
         "asset-2025-llm-competition-historical-01",
         "asset-2025-llm-competition-lianmin-zheng",
         "asset-2025-llm-competition-historical-02",
-        "asset-2025-llm-competition-historical-03"
+        "asset-2025-llm-competition-historical-03",
+        "asset-2025-llm-competition-audio-zh-original-v1",
+        "asset-2025-llm-competition-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -93711,12 +99098,46 @@ const milestones = [
         "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1951-strachey-draughts-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1951-strachey-draughts-zh-original-v1.mp3",
+          "title": {
+            "zh": "1951-strachey-draughts 中文原版科普音频",
+            "en": "1951-strachey-draughts original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1951-strachey-draughts-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1951-strachey-draughts-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1951-strachey-draughts-en-v1.mp3",
+          "title": {
+            "zh": "1951-strachey-draughts 英文科普音频",
+            "en": "1951-strachey-draughts English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1951-strachey-draughts-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1951-strachey-draughts-christopher-strachey-portrait",
         "asset-1951-strachey-draughts-board-search",
         "asset-1951-strachey-draughts-program-flow",
         "asset-1951-strachey-draughts-program-external",
-        "asset-1951-strachey-draughts-checkers-board-external"
+        "asset-1951-strachey-draughts-checkers-board-external",
+        "asset-1951-strachey-draughts-audio-zh-original-v1",
+        "asset-1951-strachey-draughts-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -94300,11 +99721,45 @@ const milestones = [
       "overviewImage": "resources/images/figures/authoritative/david-silver.jpg",
       "overviewImageAssetId": "asset-david-silver-commons-portrait",
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2016-alphago-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-alphago-zh-original-v1.mp3",
+          "title": {
+            "zh": "2016-alphago 中文原版科普音频",
+            "en": "2016-alphago original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2016-alphago-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2016-alphago-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-alphago-en-v1.mp3",
+          "title": {
+            "zh": "2016-alphago 英文科普音频",
+            "en": "2016-alphago English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2016-alphago-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-david-silver-commons-portrait",
         "asset-alphago-policy-value-search",
         "asset-alphago-lee-sedol",
-        "asset-2016-alphago-game-4-photo"
+        "asset-2016-alphago-game-4-photo",
+        "asset-2016-alphago-audio-zh-original-v1",
+        "asset-2016-alphago-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -94833,11 +100288,45 @@ const milestones = [
         "resources/images/game-evolution/1988-td-gammon.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1988-td-update-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1988-td-update-zh-original-v1.mp3",
+          "title": {
+            "zh": "1988-td-update 中文原版科普音频",
+            "en": "1988-td-update original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1988-td-update-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1988-td-update-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1988-td-update-en-v1.mp3",
+          "title": {
+            "zh": "1988-td-update 英文科普音频",
+            "en": "1988-td-update English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1988-td-update-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1988-td-update-richard-sutton",
         "asset-1988-td-update-value-timeline",
         "asset-1988-td-update-error-meter",
-        "asset-1988-td-update-td-gammon-media"
+        "asset-1988-td-update-td-gammon-media",
+        "asset-1988-td-update-audio-zh-original-v1",
+        "asset-1988-td-update-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -95347,11 +100836,45 @@ const milestones = [
         "resources/images/bench-council-ai100/source/1994-chinook_homepage.png"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1994-chinook-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1994-chinook-zh-original-v1.mp3",
+          "title": {
+            "zh": "1994-chinook 中文原版科普音频",
+            "en": "1994-chinook original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1994-chinook-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1994-chinook-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1994-chinook-en-v1.mp3",
+          "title": {
+            "zh": "1994-chinook 英文科普音频",
+            "en": "1994-chinook English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1994-chinook-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1994-chinook-jonathan-schaeffer-external",
         "asset-1994-chinook-endgame-database",
         "asset-1994-chinook-perfect-play",
-        "asset-1994-chinook-homepage"
+        "asset-1994-chinook-homepage",
+        "asset-1994-chinook-audio-zh-original-v1",
+        "asset-1994-chinook-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -95871,10 +101394,44 @@ const milestones = [
         "resources/images/external/1997-logistello/logistello-game-1-first-25-positions.gif"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1997-logistello-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-logistello-zh-original-v1.mp3",
+          "title": {
+            "zh": "1997-logistello 中文原版科普音频",
+            "en": "1997-logistello original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1997-logistello-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1997-logistello-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-logistello-en-v1.mp3",
+          "title": {
+            "zh": "1997-logistello 英文科普音频",
+            "en": "1997-logistello English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1997-logistello-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-michael-buro-university-portrait",
         "asset-1997-logistello-pattern-eval",
-        "asset-1997-logistello-game-1-positions"
+        "asset-1997-logistello-game-1-positions",
+        "asset-1997-logistello-audio-zh-original-v1",
+        "asset-1997-logistello-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -96544,12 +102101,46 @@ const milestones = [
         "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1997-deep-blue-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-deep-blue-zh-original-v1.mp3",
+          "title": {
+            "zh": "1997-deep-blue 中文原版科普音频",
+            "en": "1997-deep-blue original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1997-deep-blue-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1997-deep-blue-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1997-deep-blue-en-v1.mp3",
+          "title": {
+            "zh": "1997-deep-blue 英文科普音频",
+            "en": "1997-deep-blue English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1997-deep-blue-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1997-deep-blue-feng-hsiung-hsu",
         "asset-1997-deep-blue-search-tree",
         "asset-1997-deep-blue-chip-board",
         "asset-1997-deep-blue-murray-campbell",
-        "asset-1997-deep-blue-game-6-animation"
+        "asset-1997-deep-blue-game-6-animation",
+        "asset-1997-deep-blue-audio-zh-original-v1",
+        "asset-1997-deep-blue-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -97145,9 +102736,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2000s-alphacat_xiangqi-search.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2000s-alphacat-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2000s-alphacat-zh-original-v1.mp3",
+          "title": {
+            "zh": "2000s-alphacat 中文原版科普音频",
+            "en": "2000s-alphacat original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2000s-alphacat-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2000s-alphacat-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2000s-alphacat-en-v1.mp3",
+          "title": {
+            "zh": "2000s-alphacat 英文科普音频",
+            "en": "2000s-alphacat English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2000s-alphacat-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2000s-alphacat-i-chen-wu-portrait",
-        "asset-2000s-alphacat-xiangqi-search"
+        "asset-2000s-alphacat-xiangqi-search",
+        "asset-2000s-alphacat-audio-zh-original-v1",
+        "asset-2000s-alphacat-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -97691,11 +103316,45 @@ const milestones = [
         "resources/images/figures/authoritative/david-silver.jpg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2013-dqn-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2013-dqn-zh-original-v1.mp3",
+          "title": {
+            "zh": "2013-dqn 中文原版科普音频",
+            "en": "2013-dqn original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2013-dqn-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2013-dqn-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2013-dqn-en-v1.mp3",
+          "title": {
+            "zh": "2013-dqn 英文科普音频",
+            "en": "2013-dqn English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2013-dqn-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2013-dqn-volodymyr-mnih",
         "asset-2013-dqn-replay-buffer",
         "asset-2013-dqn-q-control",
-        "asset-david-silver-commons-portrait"
+        "asset-david-silver-commons-portrait",
+        "asset-2013-dqn-audio-zh-original-v1",
+        "asset-2013-dqn-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -98262,10 +103921,44 @@ const milestones = [
         "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2017-alphazero-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2017-alphazero-zh-original-v1.mp3",
+          "title": {
+            "zh": "2017-alphazero 中文原版科普音频",
+            "en": "2017-alphazero original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2017-alphazero-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2017-alphazero-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2017-alphazero-en-v1.mp3",
+          "title": {
+            "zh": "2017-alphazero 英文科普音频",
+            "en": "2017-alphazero English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2017-alphazero-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-david-silver-commons-portrait",
         "asset-2017-alphazero-self-play-loop",
-        "asset-2017-alphazero-julian-schrittwieser"
+        "asset-2017-alphazero-julian-schrittwieser",
+        "asset-2017-alphazero-audio-zh-original-v1",
+        "asset-2017-alphazero-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -98866,10 +104559,44 @@ const milestones = [
         "resources/images/figures/authoritative/tuomas-sandholm.jpg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2017-libratus-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2017-libratus-zh-original-v1.mp3",
+          "title": {
+            "zh": "2017-libratus 中文原版科普音频",
+            "en": "2017-libratus original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2017-libratus-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2017-libratus-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2017-libratus-en-v1.mp3",
+          "title": {
+            "zh": "2017-libratus 英文科普音频",
+            "en": "2017-libratus English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2017-libratus-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-noam-brown-official-portrait",
         "asset-2017-libratus-cfr-solving",
-        "asset-tuomas-sandholm-commons-portrait"
+        "asset-tuomas-sandholm-commons-portrait",
+        "asset-2017-libratus-audio-zh-original-v1",
+        "asset-2017-libratus-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -99463,10 +105190,44 @@ const milestones = [
         "resources/images/figures/authoritative/tuomas-sandholm.jpg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2019-pluribus-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2019-pluribus-zh-original-v1.mp3",
+          "title": {
+            "zh": "2019-pluribus 中文原版科普音频",
+            "en": "2019-pluribus original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2019-pluribus-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2019-pluribus-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2019-pluribus-en-v1.mp3",
+          "title": {
+            "zh": "2019-pluribus 英文科普音频",
+            "en": "2019-pluribus English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2019-pluribus-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-noam-brown-official-portrait",
         "asset-2019-pluribus-blueprint-search",
-        "asset-tuomas-sandholm-commons-portrait"
+        "asset-tuomas-sandholm-commons-portrait",
+        "asset-2019-pluribus-audio-zh-original-v1",
+        "asset-2019-pluribus-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -100102,12 +105863,46 @@ const milestones = [
         "resources/images/external/2019-suphx/suphx-logo.png"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2019-suphx-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2019-suphx-zh-original-v1.mp3",
+          "title": {
+            "zh": "2019-suphx 中文原版科普音频",
+            "en": "2019-suphx original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2019-suphx-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2019-suphx-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2019-suphx-en-v1.mp3",
+          "title": {
+            "zh": "2019-suphx 英文科普音频",
+            "en": "2019-suphx English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2019-suphx-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-2019-suphx-tie-yan-liu",
         "asset-2019-suphx-mahjong-policy",
         "asset-2019-suphx-hsiao-wuen-hon",
         "asset-2019-suphx-tao-qin",
-        "asset-2019-suphx-project-logo"
+        "asset-2019-suphx-project-logo",
+        "asset-2019-suphx-audio-zh-original-v1",
+        "asset-2019-suphx-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -100767,9 +106562,43 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg"
       ],
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2019-muzero-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2019-muzero-zh-original-v1.mp3",
+          "title": {
+            "zh": "2019-muzero 中文原版科普音频",
+            "en": "2019-muzero original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2019-muzero-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2019-muzero-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2019-muzero-en-v1.mp3",
+          "title": {
+            "zh": "2019-muzero 英文科普音频",
+            "en": "2019-muzero English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2019-muzero-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-david-silver-commons-portrait",
-        "asset-2019-muzero-learned-model"
+        "asset-2019-muzero-learned-model",
+        "asset-2019-muzero-audio-zh-original-v1",
+        "asset-2019-muzero-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -101388,9 +107217,43 @@ const milestones = [
         }
       },
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1920-rur-robots-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1920-rur-robots-zh-original-v1.mp3",
+          "title": {
+            "zh": "1920-rur-robots 中文原版科普音频",
+            "en": "1920-rur-robots original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1920-rur-robots-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1920-rur-robots-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1920-rur-robots-en-v1.mp3",
+          "title": {
+            "zh": "1920-rur-robots 英文科普音频",
+            "en": "1920-rur-robots English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1920-rur-robots-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1920-rur-robots-karel-capek",
-        "asset-1920-rur-robots-labor-revolt"
+        "asset-1920-rur-robots-labor-revolt",
+        "asset-1920-rur-robots-audio-zh-original-v1",
+        "asset-1920-rur-robots-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -101862,9 +107725,43 @@ const milestones = [
         }
       },
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1942-asimov-runaround-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1942-asimov-runaround-zh-original-v1.mp3",
+          "title": {
+            "zh": "1942-asimov-runaround 中文原版科普音频",
+            "en": "1942-asimov-runaround original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1942-asimov-runaround-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1942-asimov-runaround-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1942-asimov-runaround-en-v1.mp3",
+          "title": {
+            "zh": "1942-asimov-runaround 英文科普音频",
+            "en": "1942-asimov-runaround English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1942-asimov-runaround-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1942-asimov-runaround-isaac-asimov",
-        "asset-1942-asimov-runaround-three-laws"
+        "asset-1942-asimov-runaround-three-laws",
+        "asset-1942-asimov-runaround-audio-zh-original-v1",
+        "asset-1942-asimov-runaround-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -102320,9 +108217,43 @@ const milestones = [
         }
       },
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1950-wiener-human-use-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1950-wiener-human-use-zh-original-v1.mp3",
+          "title": {
+            "zh": "1950-wiener-human-use 中文原版科普音频",
+            "en": "1950-wiener-human-use original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1950-wiener-human-use-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1950-wiener-human-use-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1950-wiener-human-use-en-v1.mp3",
+          "title": {
+            "zh": "1950-wiener-human-use 英文科普音频",
+            "en": "1950-wiener-human-use English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1950-wiener-human-use-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1950-wiener-human-use-norbert-wiener",
-        "asset-1950-wiener-human-use-feedback-warning"
+        "asset-1950-wiener-human-use-feedback-warning",
+        "asset-1950-wiener-human-use-audio-zh-original-v1",
+        "asset-1950-wiener-human-use-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -102778,9 +108709,43 @@ const milestones = [
         }
       },
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1965-simon-ai-prediction-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1965-simon-ai-prediction-zh-original-v1.mp3",
+          "title": {
+            "zh": "1965-simon-ai-prediction 中文原版科普音频",
+            "en": "1965-simon-ai-prediction original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1965-simon-ai-prediction-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1965-simon-ai-prediction-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1965-simon-ai-prediction-en-v1.mp3",
+          "title": {
+            "zh": "1965-simon-ai-prediction 英文科普音频",
+            "en": "1965-simon-ai-prediction English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1965-simon-ai-prediction-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1965-simon-ai-prediction-herbert-simon",
-        "asset-1965-simon-ai-prediction-hype-curve"
+        "asset-1965-simon-ai-prediction-hype-curve",
+        "asset-1965-simon-ai-prediction-audio-zh-original-v1",
+        "asset-1965-simon-ai-prediction-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -103264,9 +109229,43 @@ const milestones = [
         }
       },
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1968-hal-9000-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1968-hal-9000-zh-original-v1.mp3",
+          "title": {
+            "zh": "1968-hal-9000 中文原版科普音频",
+            "en": "1968-hal-9000 original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1968-hal-9000-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1968-hal-9000-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1968-hal-9000-en-v1.mp3",
+          "title": {
+            "zh": "1968-hal-9000 英文科普音频",
+            "en": "1968-hal-9000 English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1968-hal-9000-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1968-hal-9000-stanley-kubrick",
-        "asset-1968-hal-9000-conflict"
+        "asset-1968-hal-9000-conflict",
+        "asset-1968-hal-9000-audio-zh-original-v1",
+        "asset-1968-hal-9000-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -103836,12 +109835,46 @@ const milestones = [
         }
       },
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1973-lighthill-report-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1973-lighthill-report-zh-original-v1.mp3",
+          "title": {
+            "zh": "1973-lighthill-report 中文原版科普音频",
+            "en": "1973-lighthill-report original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1973-lighthill-report-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1973-lighthill-report-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1973-lighthill-report-en-v1.mp3",
+          "title": {
+            "zh": "1973-lighthill-report 英文科普音频",
+            "en": "1973-lighthill-report English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1973-lighthill-report-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1973-lighthill-report-james-lighthill",
         "asset-1973-lighthill-report-winter-filter",
         "asset-1973-lighthill-report-donald-michie",
         "asset-1973-lighthill-report-freddy-ii",
-        "asset-1973-lighthill-report-royal-institution-theatre"
+        "asset-1973-lighthill-report-royal-institution-theatre",
+        "asset-1973-lighthill-report-audio-zh-original-v1",
+        "asset-1973-lighthill-report-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -104447,10 +110480,44 @@ const milestones = [
         }
       },
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1978-xiaolingtong-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1978-xiaolingtong-zh-original-v1.mp3",
+          "title": {
+            "zh": "1978-xiaolingtong 中文原版科普音频",
+            "en": "1978-xiaolingtong original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1978-xiaolingtong-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1978-xiaolingtong-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1978-xiaolingtong-en-v1.mp3",
+          "title": {
+            "zh": "1978-xiaolingtong 英文科普音频",
+            "en": "1978-xiaolingtong English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1978-xiaolingtong-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1978-xiaolingtong-ye-yonglie",
         "asset-1978-xiaolingtong-future-city",
-        "asset-1978-xiaolingtong-cover"
+        "asset-1978-xiaolingtong-cover",
+        "asset-1978-xiaolingtong-audio-zh-original-v1",
+        "asset-1978-xiaolingtong-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -104938,9 +111005,43 @@ const milestones = [
         }
       },
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1984-neuromancer-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1984-neuromancer-zh-original-v1.mp3",
+          "title": {
+            "zh": "1984-neuromancer 中文原版科普音频",
+            "en": "1984-neuromancer original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1984-neuromancer-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1984-neuromancer-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1984-neuromancer-en-v1.mp3",
+          "title": {
+            "zh": "1984-neuromancer 英文科普音频",
+            "en": "1984-neuromancer English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1984-neuromancer-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1984-neuromancer-william-gibson",
-        "asset-1984-neuromancer-ai-containment"
+        "asset-1984-neuromancer-ai-containment",
+        "asset-1984-neuromancer-audio-zh-original-v1",
+        "asset-1984-neuromancer-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -105446,10 +111547,44 @@ const milestones = [
         }
       },
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-1987-lisp-machine-collapse-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1987-lisp-machine-collapse-zh-original-v1.mp3",
+          "title": {
+            "zh": "1987-lisp-machine-collapse 中文原版科普音频",
+            "en": "1987-lisp-machine-collapse original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1987-lisp-machine-collapse-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1987-lisp-machine-collapse-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1987-lisp-machine-collapse-en-v1.mp3",
+          "title": {
+            "zh": "1987-lisp-machine-collapse 英文科普音频",
+            "en": "1987-lisp-machine-collapse English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/1987-lisp-machine-collapse-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-1987-lisp-machine-collapse-richard-greenblatt",
         "asset-1987-lisp-machine-collapse-market-shift",
-        "asset-1987-lisp-machine-collapse-richard-stallman"
+        "asset-1987-lisp-machine-collapse-richard-stallman",
+        "asset-1987-lisp-machine-collapse-audio-zh-original-v1",
+        "asset-1987-lisp-machine-collapse-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -106023,10 +112158,44 @@ const milestones = [
         }
       },
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2014-ai-existential-warnings-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-ai-existential-warnings-zh-original-v1.mp3",
+          "title": {
+            "zh": "2014-ai-existential-warnings 中文原版科普音频",
+            "en": "2014-ai-existential-warnings original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-ai-existential-warnings-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2014-ai-existential-warnings-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2014-ai-existential-warnings-en-v1.mp3",
+          "title": {
+            "zh": "2014-ai-existential-warnings 英文科普音频",
+            "en": "2014-ai-existential-warnings English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2014-ai-existential-warnings-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-elon-musk-commons-portrait",
         "asset-2014-ai-existential-warnings-public-risk",
-        "asset-stephen-hawking-commons-portrait"
+        "asset-stephen-hawking-commons-portrait",
+        "asset-2014-ai-existential-warnings-audio-zh-original-v1",
+        "asset-2014-ai-existential-warnings-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -106594,10 +112763,44 @@ const milestones = [
         }
       },
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2015-openai-founding-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-openai-founding-zh-original-v1.mp3",
+          "title": {
+            "zh": "2015-openai-founding 中文原版科普音频",
+            "en": "2015-openai-founding original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-openai-founding-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2015-openai-founding-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2015-openai-founding-en-v1.mp3",
+          "title": {
+            "zh": "2015-openai-founding 英文科普音频",
+            "en": "2015-openai-founding English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2015-openai-founding-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-sam-altman-commons-portrait",
         "asset-2015-openai-founding-broad-benefit",
-        "asset-elon-musk-commons-portrait"
+        "asset-elon-musk-commons-portrait",
+        "asset-2015-openai-founding-audio-zh-original-v1",
+        "asset-2015-openai-founding-audio-en-v1"
       ]
     },
     "imageMeta": {
@@ -107150,9 +113353,43 @@ const milestones = [
         }
       },
       "videos": [],
+      "audios": [
+        {
+          "id": "asset-2023-ai-risk-statement-audio-zh-original-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2023-ai-risk-statement-zh-original-v1.mp3",
+          "title": {
+            "zh": "2023-ai-risk-statement 中文原版科普音频",
+            "en": "2023-ai-risk-statement original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2023-ai-risk-statement-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-2023-ai-risk-statement-audio-en-v1",
+          "url": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2023-ai-risk-statement-en-v1.mp3",
+          "title": {
+            "zh": "2023-ai-risk-statement 英文科普音频",
+            "en": "2023-ai-risk-statement English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "bza-s3",
+            "bucket": "ai-history",
+            "objectKey": "audio/releases/2023-ai-risk-statement-en-v1.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-dan-hendrycks-cais-portrait",
-        "asset-2023-ai-risk-statement-global-priority"
+        "asset-2023-ai-risk-statement-global-priority",
+        "asset-2023-ai-risk-statement-audio-zh-original-v1",
+        "asset-2023-ai-risk-statement-audio-en-v1"
       ]
     },
     "imageMeta": {

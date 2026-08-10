@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2015-diffusion-model-jascha-profile",
-    "asset-2015-diffusion-forward-reverse"
+    "asset-2015-diffusion-forward-reverse",
+    "asset-ai100-2015-diffusion-model-audio-zh-original-v1",
+    "asset-ai100-2015-diffusion-model-audio-en-v1"
   ],
   "sourceIds": [
     "source-denoising-diffusion-probabilistic-models",

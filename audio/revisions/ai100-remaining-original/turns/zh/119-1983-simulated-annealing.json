@@ -1,0 +1,66 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 119,
+    "eventId": "1983-simulated-annealing",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "研究者为什么需要「模拟退火」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "20 世纪 50 年代的 Metropolis 方法已经展示了如何按热平衡概率对物理状态进行随机采样，但它最初不是为工程优化提出的。1983 年的模拟退火论文把固体退火类比带入组合优化，使研究者能够用受控的“上坡”移动处理容易困住贪心搜索的巨大搜索空间。",
+            "sourceIds": ["source-optimization-by-simulated-annealing", "source-metropolis-fast-computing-machines"],
+            "claimIds": [
+                "claim-simulated-annealing-origin",
+                "claim-simulated-annealing-mechanism",
+                "claim-simulated-annealing-cooling-tradeoff"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "算法无条件接受降低代价的候选，并以约 exp(-ΔE/T) 的概率接受代价更高的候选；因此同一个坏移动在高温时更可能通过。降温计划逐步降低这种容忍度，让搜索从跨越能垒的广泛探索转向低代价区域内的精细调整。",
+            "sourceIds": ["source-optimization-by-simulated-annealing", "source-metropolis-fast-computing-machines"],
+            "claimIds": [
+                "claim-simulated-annealing-origin",
+                "claim-simulated-annealing-mechanism",
+                "claim-simulated-annealing-cooling-tradeoff"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把模拟退火视为连接统计物理与现代元启发式优化的经典方法，而不是快速获得全局最优的保证。早期理论工作说明极慢降温可带来渐近收敛性质，工程实践则更重视在解质量和运行时间之间折中；这种思想至今仍见于调度、路径规划、电路布局和混合搜索。",
+            "sourceIds": [
+                "source-optimization-by-simulated-annealing",
+                "source-geman-geman-stochastic-relaxation",
+                "source-scipy-dual-annealing"
+            ],
+            "claimIds": [
+                "claim-simulated-annealing-origin",
+                "claim-simulated-annealing-mechanism",
+                "claim-simulated-annealing-cooling-tradeoff"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「Swin Transformer V2」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-1992-reinforce-portrait",
-    "asset-1992-reinforce-explainer"
+    "asset-1992-reinforce-explainer",
+    "asset-ai100-1992-reinforce-audio-zh-original-v1",
+    "asset-ai100-1992-reinforce-audio-en-v1"
   ],
   "sourceIds": [
     "source-1992-reinforce-primary",

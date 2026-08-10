@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 12,
+    "eventId": "1970-shrdlu",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "「SHRDLU」最有意思的地方，是结果本身，还是它重新定义问题的方式？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "早期语言程序往往只处理孤立句子。SHRDLU 让语言、指称、记忆和动作共享同一个微型世界。",
+            "sourceIds": ["source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "系统通过积木、空间关系和可以改变场景的过程来落地理解用户话语。 关键机制是积木世界语言理解，它把资料线索与可见的演示行为连接起来。",
+            "sourceIds": ["source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 SHRDLU 视为微世界 AI 的希望与脆弱性的经典展示。它的长期影响在于说明语言理解在受限世界模型中可以显得很强大，同时也暴露了这种限制本身的边界。",
+            "sourceIds": ["source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "当今天的系统规模越来越大时，「SHRDLU」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-terry-winograd-stanford-computer-science",
+                "source-terry-winograd-oral-history-cbi",
+                "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

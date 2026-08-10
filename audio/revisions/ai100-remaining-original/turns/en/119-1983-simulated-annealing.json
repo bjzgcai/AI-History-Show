@@ -1,0 +1,66 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 119,
+    "eventId": "1983-simulated-annealing",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why did researchers need Simulated Annealing, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "The Metropolis method of the 1950s had already shown how to sample physical states according to thermal probabilities, but it was not originally framed as an engineering optimizer. The 1983 simulated annealing paper carried the solid-annealing analogy into combinatorial optimization, giving researchers controlled uphill moves for search spaces that trap greedy improvement.",
+            "sourceIds": ["source-optimization-by-simulated-annealing", "source-metropolis-fast-computing-machines"],
+            "claimIds": [
+                "claim-simulated-annealing-origin",
+                "claim-simulated-annealing-mechanism",
+                "claim-simulated-annealing-cooling-tradeoff"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "The algorithm accepts every cost-reducing candidate and accepts a higher-cost candidate with probability approximately exp(-ΔE/T), so the same bad move is more likely to pass at high temperature. A cooling schedule gradually removes that tolerance, shifting search from broad barrier crossing to refinement inside lower-cost regions.",
+            "sourceIds": ["source-optimization-by-simulated-annealing", "source-metropolis-fast-computing-machines"],
+            "claimIds": [
+                "claim-simulated-annealing-origin",
+                "claim-simulated-annealing-mechanism",
+                "claim-simulated-annealing-cooling-tradeoff"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat simulated annealing as a classic bridge between statistical physics and modern metaheuristic optimization, not as a promise of quick global optimality. Early theory established asymptotic properties for very slow cooling, while engineering practice emphasizes the tradeoff between solution quality and runtime; the idea remains influential in scheduling, routing, circuit placement, and hybrid search.",
+            "sourceIds": [
+                "source-optimization-by-simulated-annealing",
+                "source-geman-geman-stochastic-relaxation",
+                "source-scipy-dual-annealing"
+            ],
+            "claimIds": [
+                "claim-simulated-annealing-origin",
+                "claim-simulated-annealing-mechanism",
+                "claim-simulated-annealing-cooling-tradeoff"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with Swin Transformer V2, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

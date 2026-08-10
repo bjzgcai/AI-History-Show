@@ -1,0 +1,61 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 45,
+    "eventId": "2014-adam",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined ReLU. Now the camera turns to Adam Optimizer and a new question along the same timeline: If we take Adam Optimizer apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "By 2014, deep networks were becoming larger and noisier to train. Researchers needed optimizers that reduced hand-tuning while still working with minibatches, sparse gradients, and nonstationary objectives.",
+            "sourceIds": ["source-adam-a-method-for-stochastic-optimization"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Adam merges the direction memory of momentum with the per-parameter scaling of RMSProp. The result is a compact update rule that usually reaches useful training regimes quickly.",
+            "sourceIds": ["source-adam-a-method-for-stochastic-optimization"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat Adam as a practical default optimizer rather than a universal optimum. Its long-term legacy is fast and stable neural-network training, plus a family of descendants such as AdamW and schedule-aware training recipes.",
+            "sourceIds": ["source-adam-a-method-for-stochastic-optimization"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside ReLU, Adam Optimizer reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-pytorch-torch-optim-adam",
+                "source-tensorflow-keras-adam-optimizer",
+                "source-adam-a-method-for-stochastic-optimization"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

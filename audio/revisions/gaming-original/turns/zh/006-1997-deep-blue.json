@@ -1,0 +1,70 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "gaming-all-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "gaming-ai",
+    "sequenceIndex": 6,
+    "eventId": "1997-deep-blue",
+    "variantId": "gaming-ai",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "一个看似专业的名字「深蓝」，背后藏着怎样一个直观问题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "计算机国际象棋经过数十年发展，逐步依靠更深搜索、更精细的局面评估和专用硬件逼近顶尖人类水平。1997 年与卡斯帕罗夫的六局比赛，把这条长期技术路线第一次带到全球公众面前。",
+            "sourceIds": ["source-murray-campbell-ibm-research"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Deep Blue 用并行 alpha-beta 搜索检查大量候选走法，通过剪枝跳过不可能改变决策的分支，再用包含棋类专家知识的评估函数给局面打分。定制国际象棋芯片、开局库和残局知识共同提高搜索速度与判断质量。",
+            "sourceIds": ["source-murray-campbell-ibm-research"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把深蓝视为专用搜索、局面评估和高性能游戏 AI 的标志性成果。它的长期影响在于塑造了公众对 AI 里程碑的期待，并成为 AlphaGo 等后续游戏系统的参照点。",
+            "sourceIds": ["source-murray-campbell-ibm-research"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「深蓝」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-feng-hsiung-hsu-chm-portrait",
+                "source-murray-campbell-ibm-research",
+                "source-mastering-the-game-computer-history-museum",
+                "source-ibm100-deep-blue",
+                "source-deep-blue-game-6-commons"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

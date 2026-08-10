@@ -1,0 +1,99 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 136,
+    "eventId": "ai100-annual-2022-2023-094-controlnet",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Behind the technical name ControlNet, what intuitive problem were researchers confronting?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Text-to-image diffusion models produced strong images but gave creators limited control over exact geometry, pose or layout. ControlNet addressed this gap by adding spatial conditions to an already trained model instead of requiring a separate generator for every control type.",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-locked-copy",
+                "claim-zero-convolution"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The architecture locks the original diffusion encoder and creates a trainable copy that receives an edge map, depth map, pose or other condition. Zero-initialized convolutions connect the branches, so the system starts equivalent to the pretrained model and learns control signals gradually.",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-locked-copy",
+                "claim-zero-convolution"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat ControlNet as a standard interface for controllable diffusion because it preserves a strong base model while adding reusable spatial guidance. Its influence appears across creative tools and later adapters that separate content generation from pose, depth, edges, segmentation or layout control.",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-locked-copy",
+                "claim-zero-convolution"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "ControlNet mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-094-controlnet-portrait-maneesh-agrawala",
+                "source-arxiv-paper",
+                "source-controlnet-repository",
+                "source-maneesh-profile",
+                "source-controlnet-figure-1",
+                "source-controlnet-official-full-architecture",
+                "source-controlnet-official-core-block"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-locked-copy",
+                "claim-zero-convolution"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

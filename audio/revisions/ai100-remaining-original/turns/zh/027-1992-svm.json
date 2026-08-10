@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 27,
+    "eventId": "1992-svm",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "如果把「支持向量机」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "20 世纪 90 年代初，机器学习需要能在有限数据上泛化并具有清晰数学保证的方法。SVM 将 VC 式容量控制转化为实用分类器。",
+            "sourceIds": ["source-a-training-algorithm-for-optimal-margin-classifiers"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "SVM 偏好不只是训练集正确、而且离最近样本足够远的边界。核函数让非线性边界成为可能，同时保留凸优化问题。",
+            "sourceIds": ["source-a-training-algorithm-for-optimal-margin-classifiers"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 SVM 视为成熟的经典方法，其概念重要性超过了它在多数现代深度学习流水线中的实际角色。它的长期影响在于用间隔和核方法理解泛化、稳健边界和非线性分类。",
+            "sourceIds": ["source-a-training-algorithm-for-optimal-margin-classifiers"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「岭回归」，再看「支持向量机」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-a-training-algorithm-for-optimal-margin-classifiers",
+                "source-libsvm-project-page",
+                "source-scikit-learn-svc",
+                "source-vladimir-vapnik-simons-profile"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

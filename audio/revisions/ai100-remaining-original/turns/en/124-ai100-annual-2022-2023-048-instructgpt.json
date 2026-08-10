@@ -1,0 +1,101 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 124,
+    "eventId": "ai100-annual-2022-2023-048-instructgpt",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Behind the technical name InstructGPT, what intuitive problem were researchers confronting?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Large pretrained models could complete text fluently but did not reliably infer a user's intent. InstructGPT emerged from earlier human-preference research as a direct attempt to align model behavior after pretraining.",
+            "sourceIds": ["source-instructgpt-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The pipeline first fine-tunes on human demonstrations, then learns a reward model from ranked responses, and finally optimizes the policy with PPO. Keeping these stages separate turns qualitative preference judgments into a trainable signal.",
+            "sourceIds": ["source-instructgpt-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat InstructGPT as the operational template for modern RLHF post-training. Its importance lies less in raw parameter scale than in showing that smaller aligned models can be preferred over much larger untuned baselines.",
+            "sourceIds": ["source-instructgpt-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "InstructGPT mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-048-instructgpt-portrait-jeff-wu",
+                "source-instructgpt-paper",
+                "source-openai-human-preferences",
+                "source-jeff-wu-personal-homepage",
+                "source-jeff-wu-wikidata",
+                "source-annual-048-instructgpt-portrait-john-schulman",
+                "source-hugging-face-rlhf",
+                "source-chip-huyen-rlhf",
+                "source-scale-ai-john-schulman-talk"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

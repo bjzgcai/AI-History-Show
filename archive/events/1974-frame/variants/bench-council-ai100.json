@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-1974-frame-marvin-minsky",
     "asset-1974-frame-slot-card",
-    "asset-1974-frame-inheritance"
+    "asset-1974-frame-inheritance",
+    "asset-1974-frame-audio-zh-original-v1",
+    "asset-1974-frame-audio-en-v1"
   ],
   "sourceIds": [
     "source-marvin-minsky-obituary-mit-news",

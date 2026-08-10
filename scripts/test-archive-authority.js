@@ -224,24 +224,20 @@ const dartmouthMilestone = compiledArchive.milestones.find(
         milestone.id === 'milestone-1956-dartmouth' && milestone.storyline && milestone.storyline.id === 'deep-learning'
 );
 assert.ok(dartmouthMilestone, 'the Dartmouth milestone should compile for the deep-learning storyline');
-assert.equal(
-    dartmouthMilestone.resources.audios[0].url,
-    'resources/audio/1956-dartmouth/dartmouth-dialogue-zh.mp3',
-    'the Dartmouth milestone should expose its selected narration audio'
-);
 assert.deepEqual(
-    dartmouthMilestone.resources.audios[0].storage,
-    {
-        provider: 'bza-s3',
-        bucket: 'ai-history',
-        objectKey: 'audio/delivery/1956-dartmouth/zh/dartmouth-dialogue-v1.mp3'
-    },
-    'the Dartmouth narration should retain its S3 object location without exposing credentials'
+    dartmouthMilestone.resources.audios.map((audio) => audio.language),
+    ['zh', 'en'],
+    'the Dartmouth milestone should expose its Chinese and English S3 narration audio'
 );
-assert.equal(
-    fs.existsSync(path.join(__dirname, '..', dartmouthMilestone.resources.audios[0].url)),
-    true,
-    'the compiled Dartmouth narration audio should exist locally'
+assert.ok(
+    dartmouthMilestone.resources.audios.every(
+        (audio) =>
+            audio.url.startsWith('https://s3.inner.bza.edu.cn/') &&
+            audio.storage?.provider === 'bza-s3' &&
+            audio.storage?.bucket === 'ai-history' &&
+            audio.storage?.objectKey.startsWith('audio/releases/')
+    ),
+    'the Dartmouth narration should not depend on a local MP3 fallback'
 );
 const turingTestMilestone = compiledArchive.milestones.find(
     (milestone) =>

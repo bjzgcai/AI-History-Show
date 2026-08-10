@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "deep-learning-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "deep-learning",
+    "sequenceIndex": 29,
+    "eventId": "2024-ai-scientist",
+    "variantId": "deep-learning",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "deep-learning",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined Agents: LLM-Driven Autonomous Systems. Now the camera turns to AI Scientists and Autonomous Laboratories and a new question along the same timeline: If we take AI Scientists and Autonomous Laboratories apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "What is genuinely new in these systems is not that they can write paper paragraphs. It is that they connect hypothesis generation, workflow design, tool use, experiment execution, and result evaluation into a closed loop, beginning to automate the scientific research workflow.",
+            "sourceIds": [
+                "source-ai-scientist-paper",
+                "source-sakana-ai-scientist-page",
+                "source-autonomous-materials-lab-paper"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "They also imply a shift in how AI for Science is evaluated. The key future question is not only whether a model can explain an image or sequence, but whether it can continually produce verifiable, reproducible experimental workflows and improve through feedback.",
+            "sourceIds": [
+                "source-ai-scientist-paper",
+                "source-sakana-ai-scientist-page",
+                "source-autonomous-materials-lab-paper"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.context"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside Agents: LLM-Driven Autonomous Systems, AI Scientists and Autonomous Laboratories reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-ai-scientist-paper",
+                "source-sakana-ai-scientist-page",
+                "source-autonomous-materials-lab-paper"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

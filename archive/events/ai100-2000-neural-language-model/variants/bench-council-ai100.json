@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2000-neural-language-model-330px-iclr-2025-yoshua-bengio-02",
-    "asset-2000-neural-language-model-context-prediction"
+    "asset-2000-neural-language-model-context-prediction",
+    "asset-ai100-2000-neural-language-model-audio-zh-original-v1",
+    "asset-ai100-2000-neural-language-model-audio-en-v1"
   ],
   "sourceIds": [
     "source-jmlr-full-paper-pdf",
