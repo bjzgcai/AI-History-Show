@@ -25,3 +25,27 @@ services:
             - .:/app
         profiles:
             - admin
+
+    audio-review:
+        build:
+            context: .
+            target: audio-review
+        ports:
+            - '3002:3002'
+        environment:
+            HOST: 0.0.0.0
+            PORT: 3002
+            AUDIO_REVIEW_DATA: /review-input/review-data.json
+            AUDIO_REVIEW_DB: /data/reviews.sqlite
+            AUDIO_REVIEW_TOKEN_FILE: /run/secrets/audio-review-tokens.json
+            AUDIO_REVIEW_SECURE_COOKIE: 'false'
+        read_only: true
+        tmpfs:
+            - /tmp
+        volumes:
+            - ./.tmp/audio-review-data:/data
+            - ./tools/audio-review-console/review-data.json:/review-input/review-data.json:ro
+            - ./resources/audio/generated:/app/resources/audio/generated:ro
+            - ./.secrets/audio-review-tokens.json:/run/secrets/audio-review-tokens.json:ro
+        profiles:
+            - review
