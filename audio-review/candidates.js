@@ -8,6 +8,10 @@ function candidateIdFor(revisionId, audioPath) {
     return `audio-${digest.slice(0, 24)}`;
 }
 
+function reviewAudioUrl(candidateId) {
+    return `./api/audio/${candidateId}`;
+}
+
 function loadReviewCatalog(filePath) {
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     const candidates = new Map();
@@ -23,7 +27,7 @@ function loadReviewCatalog(filePath) {
                     const revisionId = String(option.revision?.id || option.revisionId || 'archive').trim();
                     const candidateId = candidateIdFor(revisionId, audioPath);
                     option.candidateId = candidateId;
-                    option.audio.reviewUrl = `./api/audio/${candidateId}`;
+                    option.audio.reviewUrl = reviewAudioUrl(candidateId);
                     audioFiles.set(candidateId, audioPath);
 
                     const context = {
@@ -55,8 +59,8 @@ function loadReviewCatalog(filePath) {
                 }
                 if (!baseVariant.revisionOptions?.length) {
                     baseVariant.candidateId = options[0]?.candidateId;
-                    if (baseVariant.audio && options[0]?.audio?.reviewUrl) {
-                        baseVariant.audio.reviewUrl = options[0].audio.reviewUrl;
+                    if (baseVariant.audio && options[0]?.candidateId) {
+                        baseVariant.audio.reviewUrl = reviewAudioUrl(options[0].candidateId);
                     }
                 }
             }
@@ -67,7 +71,7 @@ function loadReviewCatalog(filePath) {
         const audioPath = String(preview.path || '').trim();
         if (!audioPath) continue;
         const audioId = candidateIdFor('release-preview', audioPath);
-        preview.reviewUrl = `./api/audio/${audioId}`;
+        preview.reviewUrl = reviewAudioUrl(audioId);
         audioFiles.set(audioId, audioPath);
     }
 
