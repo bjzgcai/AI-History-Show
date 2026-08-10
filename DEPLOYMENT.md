@@ -104,7 +104,7 @@ Compose 中的 `admin` 服务会把当前项目目录挂载到容器的 `/app`�
 > **安全提示**：`admin` 服务无认证保护，只能用于本机、内网或受保护环境。不要把 `3001` 直接暴露到公网。
 
 音频审核服务使用个人 Token 登录，SQLite 数据库存放在独立持久卷。公网部署仍必须使用 HTTPS，
-并设置 `AUDIO_REVIEW_SECURE_COOKIE=true`；不要用 `scripts/static-server.js` 暴露仓库根目录代替审核服务。
+并设置 `AUDIO_REVIEW_SECURE_COOKIE=true` 和 `AUDIO_REVIEW_STRICT_ORIGIN=true`；不要用 `scripts/static-server.js` 暴露仓库根目录代替审核服务。
 若通过 Docker Compose 部署并改过 `AUDIO_REVIEW_PORT`，反向代理也要同步指向对应端口。
 
 ### 音频审核独立部署
@@ -145,6 +145,20 @@ location /audio-review/ {
     proxy_buffering off;
     proxy_read_timeout 300s;
 }
+```
+
+公网或多人审核部署建议开启严格 Origin 校验，并配置审核台所在站点的 Origin 白名单：
+
+```bash
+AUDIO_REVIEW_STRICT_ORIGIN=true
+AUDIO_REVIEW_ALLOWED_ORIGINS=https://review.example.com
+```
+
+如果审核台挂在展示页同域名子目录，例如 `https://example.com/audio-review/`，白名单仍只写 Origin，不写路径：
+
+```bash
+AUDIO_REVIEW_STRICT_ORIGIN=true
+AUDIO_REVIEW_ALLOWED_ORIGINS=https://example.com
 ```
 
 部署前为审核人生成 Token，并将摘要配置写入服务器密钥文件：
