@@ -30,7 +30,7 @@ npm run audio:review:token -- --id reviewer-zhang --name 张三
 npm run start:audio-review
 ```
 
-默认地址为 `http://127.0.0.1:3002`。局域网使用时设置 `HOST=0.0.0.0`；公网部署必须放在 HTTPS 反向代理后，并设置 `AUDIO_REVIEW_SECURE_COOKIE=true`。
+默认地址为 `http://127.0.0.1:3002`。局域网使用时设置 `HOST=0.0.0.0`；公网部署必须放在 HTTPS 反向代理后，并设置 `AUDIO_REVIEW_SECURE_COOKIE=true`。多人或公网部署建议同时设置 `AUDIO_REVIEW_STRICT_ORIGIN=true`，并用 `AUDIO_REVIEW_ALLOWED_ORIGINS` 明确允许访问审核台的站点 Origin。
 
 审核台支持挂在已有展示域名的子目录，例如 `https://example.com/audio-review/`。反向代理必须保留
 浏览器地址中的末尾斜线，并把 `/audio-review/` 前缀剥离后转发到服务根路径。页面内部使用相对
@@ -38,16 +38,25 @@ API 和音频 URL，因此根路径运行与子目录运行都可用。
 
 ## 数据与配置
 
-| 环境变量                     | 默认值                                        | 说明                    |
-| ---------------------------- | --------------------------------------------- | ----------------------- |
-| `HOST`                       | `127.0.0.1`                                   | 监听地址                |
-| `PORT`                       | `3002`                                        | 监听端口                |
-| `AUDIO_REVIEW_DATA`          | `tools/audio-review-console/review-data.json` | 当前审核数据            |
-| `AUDIO_REVIEW_DB`            | `.tmp/audio-review/reviews.sqlite`            | SQLite 数据库           |
-| `AUDIO_REVIEW_TOKEN_FILE`    | `.secrets/audio-review-tokens.json`           | Token 摘要配置          |
-| `AUDIO_REVIEW_SECURE_COOKIE` | `false`                                       | HTTPS 部署时设为 `true` |
+| 环境变量                       | 默认值                                        | 说明                                     |
+| ------------------------------ | --------------------------------------------- | ---------------------------------------- |
+| `HOST`                         | `127.0.0.1`                                   | 监听地址                                 |
+| `PORT`                         | `3002`                                        | 监听端口                                 |
+| `AUDIO_REVIEW_DATA`            | `tools/audio-review-console/review-data.json` | 当前审核数据                             |
+| `AUDIO_REVIEW_DB`              | `.tmp/audio-review/reviews.sqlite`            | SQLite 数据库                            |
+| `AUDIO_REVIEW_TOKEN_FILE`      | `.secrets/audio-review-tokens.json`           | Token 摘要配置                           |
+| `AUDIO_REVIEW_SECURE_COOKIE`   | `false`                                       | HTTPS 部署时设为 `true`                  |
+| `AUDIO_REVIEW_STRICT_ORIGIN`   | `false`                                       | 设为 `true` 后写接口必须带可信 `Origin`  |
+| `AUDIO_REVIEW_ALLOWED_ORIGINS` | 空                                            | 逗号分隔的可信 Origin 白名单，例如域名源 |
 
 数据库使用 WAL 模式。正式部署必须把数据库放在持久卷中，并定期备份数据库及其 WAL 文件，或在停写窗口复制完整数据库。
+
+严格 Origin 模式关闭时，服务保持本地调试兼容：缺失 `Origin` 的写请求会放行，存在 `Origin` 时必须与请求 `Host` 同源。严格模式开启时，写请求缺失 `Origin` 会返回 403；配置白名单后，只有白名单内的 Origin 可以登录、提交审核、撤销记录或退出登录。白名单只填写协议、域名和端口，不包含路径；审核台挂在 `https://example.com/audio-review/` 时应写为：
+
+```bash
+AUDIO_REVIEW_STRICT_ORIGIN=true
+AUDIO_REVIEW_ALLOWED_ORIGINS=https://example.com
+```
 
 ## Docker Compose
 
