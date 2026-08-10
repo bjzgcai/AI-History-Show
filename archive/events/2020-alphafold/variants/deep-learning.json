@@ -59,7 +59,9 @@
     "asset-2020-alphafold-people-02",
     "asset-2020-alphafold-historical-01",
     "asset-2020-alphafold-historical-02",
-    "asset-2020-alphafold-papers-01"
+    "asset-2020-alphafold-papers-01",
+    "asset-2020-alphafold-audio-zh-original-v1",
+    "asset-2020-alphafold-audio-en-v1"
   ],
   "sourceIds": [
     "source-highly-accurate-protein-structure-prediction-with-alphafold",

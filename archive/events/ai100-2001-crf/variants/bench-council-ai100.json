@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-2001-crf-portrait",
-    "asset-2001-crf-explainer"
+    "asset-2001-crf-explainer",
+    "asset-ai100-2001-crf-audio-zh-original-v1",
+    "asset-ai100-2001-crf-audio-en-v1"
   ],
   "sourceIds": [
     "source-2001-crf-primary",

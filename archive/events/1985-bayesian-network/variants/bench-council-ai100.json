@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-1985-bayesian-network-judea-pearl",
     "asset-1985-bayesian-network-dag",
-    "asset-1985-bayesian-network-message-pass"
+    "asset-1985-bayesian-network-message-pass",
+    "asset-1985-bayesian-network-audio-zh-original-v1",
+    "asset-1985-bayesian-network-audio-en-v1"
   ],
   "sourceIds": [
     "source-judea-pearl-homepage",

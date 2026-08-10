@@ -1,0 +1,108 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 120,
+    "eventId": "ai100-annual-2022-2023-001-swin-transformer-v2",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "「Swin Transformer V2」最有意思的地方，是结果本身，还是它重新定义问题的方式？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "到 2021 年，分层窗口式 Transformer 已让 Transformer 主干能够用于主流视觉任务，但直接扩大模型会暴露优化不稳定和分辨率迁移困难。Swin Transformer V2 的目标是在参数量与输入分辨率上同时扩展，并避免依赖难以承受的大规模标注数据。",
+            "sourceIds": ["source-cvf-paper-page", "source-microsoft-research-publication"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-scaling-techniques",
+                "claim-model-scale-and-benchmarks"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "残差后归一化与缩放余弦注意力让超大规模 Swin 模块更易于优化。对数间隔连续位置偏置把较小预训练窗口中的空间关系迁移到更大的下游窗口，SimMIM 则在任务适配前提供自监督预训练。",
+            "sourceIds": ["source-cvf-paper-page", "source-microsoft-research-publication"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-scaling-techniques",
+                "claim-model-scale-and-benchmarks"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 Swin Transformer V2 视为原始 Swin 系列的重要工程与架构改进，而不是完全独立的视觉范式。它的长期贡献在于协同处理优化稳定性、位置偏置迁移和自监督预训练，并通过公开实现提高十亿参数级高分辨率视觉实验的可复现性。",
+            "sourceIds": [
+                "source-cvf-paper-page",
+                "source-microsoft-research-publication",
+                "source-implementation-repository"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-scaling-techniques",
+                "claim-model-scale-and-benchmarks"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "当今天的系统规模越来越大时，「Swin Transformer V2」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-001-swin-transformer-v2-portrait-ze-liu",
+                "source-cvf-paper-page",
+                "source-microsoft-research-publication",
+                "source-implementation-repository",
+                "source-ze-liu-profile",
+                "source-han-hu-profile",
+                "source-annual-001-swin-transformer-v2-portrait-han-hu",
+                "source-swin-v2-paper-figure"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-scaling-techniques",
+                "claim-model-scale-and-benchmarks"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

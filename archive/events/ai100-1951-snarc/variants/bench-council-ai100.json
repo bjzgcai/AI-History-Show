@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-marvin-minsky",
-    "asset-1951-snarc-maze-reinforcement"
+    "asset-1951-snarc-maze-reinforcement",
+    "asset-ai100-1951-snarc-audio-zh-original-v1",
+    "asset-ai100-1951-snarc-audio-en-v1"
   ],
   "sourceIds": [
     "source-mit-minsky-history",

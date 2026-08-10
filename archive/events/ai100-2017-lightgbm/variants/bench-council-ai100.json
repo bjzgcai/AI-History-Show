@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-2017-lightgbm-portrait",
-    "asset-2017-lightgbm-explainer"
+    "asset-2017-lightgbm-explainer",
+    "asset-ai100-2017-lightgbm-audio-zh-original-v1",
+    "asset-ai100-2017-lightgbm-audio-en-v1"
   ],
   "sourceIds": [
     "source-2017-lightgbm-primary",

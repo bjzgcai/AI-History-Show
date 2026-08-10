@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 历史回顾展览 - 单屏模式</title>
-    <script src="shared/layout-router.js"></script>
+    <title>AI 历史回顾展览</title>
     <style>
         :root {
             --screen-width: 1920px;
@@ -6268,11 +6267,127 @@
             line-height: 1.35;
         }
 
+        .ui-audio-player {
+            position: absolute;
+            left: 36px;
+            bottom: 16px;
+            z-index: 26;
+            width: min(430px, calc(100% - 230px));
+            min-width: 280px;
+            padding: 8px 12px 8px 8px;
+            border: none;
+            border-radius: 7px;
+            background: rgba(244, 239, 229, 0.06);
+            display: grid;
+            grid-template-columns: 46px minmax(0, 1fr);
+            gap: 12px;
+            align-items: center;
+            box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.94);
+        }
+
+        .ui-audio-player[hidden] {
+            display: none;
+        }
+
+        .ui-audio-player-play {
+            width: 46px;
+            height: 46px;
+            padding: 0;
+            border: 1px solid var(--accent);
+            border-radius: 50%;
+            background: var(--accent);
+            color: #090705;
+            cursor: pointer;
+            display: inline-grid;
+            place-items: center;
+            transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+        }
+
+        .ui-audio-player-play:hover,
+        .ui-audio-player-play:focus-visible {
+            border-color: #f4efe5;
+            background: #f4efe5;
+            outline: none;
+            transform: translateY(-1px);
+        }
+
+        .ui-audio-player-play:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+        }
+
+        .ui-audio-player-play-icon {
+            width: 0;
+            height: 0;
+            margin-left: 3px;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-left: 10px solid currentColor;
+        }
+
+        .ui-audio-player.is-playing .ui-audio-player-play-icon {
+            width: 12px;
+            height: 14px;
+            margin-left: 0;
+            border: none;
+            background: linear-gradient(90deg, currentColor 0 4px, transparent 4px 8px, currentColor 8px 12px);
+        }
+
+        .ui-audio-player-copy {
+            min-width: 0;
+            display: grid;
+            gap: 7px;
+        }
+
+        .ui-audio-player-heading {
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .ui-audio-player-title {
+            min-width: 0;
+            overflow: hidden;
+            color: rgba(255, 255, 255, 0.96);
+            font-size: 14px;
+            font-weight: 850;
+            line-height: 1.2;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .ui-audio-player-time {
+            flex: 0 0 auto;
+            color: rgba(244, 239, 229, 0.56);
+            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-size: 10px;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .ui-audio-player-progress {
+            width: 100%;
+            height: 16px;
+            margin: 0;
+            accent-color: var(--accent);
+            cursor: pointer;
+        }
+
+        .ui-audio-player-native {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+            pointer-events: none;
+        }
+
         .ui-back-button {
             --ui-back-buffer-shadow: 0 0 0 7px rgba(0, 0, 0, 0.94);
             position: absolute;
             right: 36px;
-            bottom: 16px;
+            bottom: 24px;
             z-index: 26;
             width: auto;
             min-width: 124px;
@@ -7514,7 +7629,7 @@
             .single-stage.is-ui-browser.is-ui-detail .ui-back-button {
                 position: fixed;
                 right: 18px;
-                bottom: 18px;
+                bottom: 22px;
                 min-width: 112px;
                 height: var(--touch-target);
                 padding: 0 22px;
@@ -7522,6 +7637,33 @@
                 box-shadow:
                     var(--ui-back-buffer-shadow),
                     0 8px 24px rgba(0, 0, 0, 0.46);
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .ui-audio-player {
+                position: fixed;
+                left: 18px;
+                bottom: 18px;
+                width: calc(100vw - 166px);
+                min-width: 0;
+                max-width: 360px;
+                padding: 4px 8px 4px 4px;
+                grid-template-columns: var(--touch-target) minmax(0, 1fr);
+                gap: 9px;
+                border-radius: 6px;
+                background: rgba(11, 12, 11, 0.94);
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .ui-audio-player-play {
+                width: var(--touch-target);
+                height: var(--touch-target);
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .ui-audio-player-title {
+                font-size: 12px;
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .ui-audio-player-time {
+                font-size: 9px;
             }
 
             .bench-dossier,
@@ -8821,6 +8963,19 @@
                     </div>
                 </div>
             </header>
+            <div class="ui-audio-player" id="uiAudioPlayer" hidden>
+                <button class="ui-audio-player-play" id="uiAudioPlayerPlay" type="button" aria-label="播放音频讲解">
+                    <span class="ui-audio-player-play-icon" aria-hidden="true"></span>
+                </button>
+                <div class="ui-audio-player-copy">
+                    <div class="ui-audio-player-heading">
+                        <span class="ui-audio-player-title" id="uiAudioPlayerTitle">音频讲解</span>
+                        <span class="ui-audio-player-time" id="uiAudioPlayerTime">00:00 / 00:00</span>
+                    </div>
+                    <input class="ui-audio-player-progress" id="uiAudioPlayerProgress" type="range" min="0" max="0" value="0" step="0.1" aria-label="音频进度">
+                </div>
+                <audio class="ui-audio-player-native" id="uiAudioPlayerNative" preload="metadata"></audio>
+            </div>
             <button class="ui-back-button" id="uiBackButton" type="button" data-ui-back="true" aria-label="返回">返回</button>
 
             <main class="stage-grid">
@@ -9089,7 +9244,7 @@
         const PORTRAIT_EDGE_NAV_MIN_Y = 90;
         const PORTRAIT_EDGE_NAV_TOLERANCE = 24;
         const PORTRAIT_EDGE_POINTER_SUPPRESSION_MS = 800;
-        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, .quiz-modal, .storyline-modal, .storyline-trigger, .about-modal, .about-trigger, .region-modal, iframe, .storyline-select, .ui-detail-image-stage';
+        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, .quiz-modal, .storyline-modal, .storyline-trigger, .about-modal, .about-trigger, .region-modal, iframe, .storyline-select, .ui-detail-image-stage, .ui-audio-player';
         const IDLE_AUTO_ADVANCE_MS = 5 * 60 * 1000;
         const MOBILE_GLOBE_PIXEL_RATIO_CAP = 1.5;
         const TABLET_GLOBE_PIXEL_RATIO_CAP = 1.75;
@@ -9368,6 +9523,7 @@
         let globeLastFrameTime = 0;
         let portraitEdgeGesture = null;
         let lastPortraitTouchAt = 0;
+        let uiAudioSourceUrl = '';
 
         const refs = {
             viewport: document.querySelector('.stage-viewport'),
@@ -9454,6 +9610,12 @@
             benchEvidenceList: document.getElementById('benchEvidenceList'),
             uiBrowser: document.getElementById('uiBrowser'),
             uiBrowserMain: document.getElementById('uiBrowserMain'),
+            uiAudioPlayer: document.getElementById('uiAudioPlayer'),
+            uiAudioPlayerPlay: document.getElementById('uiAudioPlayerPlay'),
+            uiAudioPlayerTitle: document.getElementById('uiAudioPlayerTitle'),
+            uiAudioPlayerTime: document.getElementById('uiAudioPlayerTime'),
+            uiAudioPlayerProgress: document.getElementById('uiAudioPlayerProgress'),
+            uiAudioPlayerNative: document.getElementById('uiAudioPlayerNative'),
             quizModal: document.getElementById('quizModal'),
             quizModalClose: document.getElementById('quizModalClose'),
             quizModalEyebrow: document.getElementById('quizModalEyebrow'),
@@ -9830,6 +9992,91 @@
             refs.prevBtn.setAttribute('aria-label', tx('previousPage'));
             refs.nextBtn.setAttribute('aria-label', tx('nextPage'));
             if (refs.storylineModalClose) refs.storylineModalClose.setAttribute('aria-label', tx('close'));
+        }
+
+        function formatAudioTime(value) {
+            const seconds = Number.isFinite(Number(value)) ? Math.max(0, Math.floor(Number(value))) : 0;
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const remainingSeconds = seconds % 60;
+            if (hours > 0) {
+                return `${hours}:${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
+            }
+            return `${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
+        }
+
+        function updateUiAudioPlayerState() {
+            const player = refs.uiAudioPlayer;
+            const audio = refs.uiAudioPlayerNative;
+            if (!player || !audio) return;
+
+            const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
+            const currentTime = Number.isFinite(audio.currentTime) ? audio.currentTime : 0;
+            const isPlaying = !audio.paused && !audio.ended;
+            player.classList.toggle('is-playing', isPlaying);
+            if (refs.uiAudioPlayerPlay) {
+                refs.uiAudioPlayerPlay.setAttribute('aria-label', tx(isPlaying ? 'pauseAudio' : 'playAudio'));
+                refs.uiAudioPlayerPlay.setAttribute('aria-pressed', String(isPlaying));
+            }
+            if (refs.uiAudioPlayerProgress) {
+                refs.uiAudioPlayerProgress.max = String(duration || 0);
+                refs.uiAudioPlayerProgress.value = String(Math.min(currentTime, duration || currentTime));
+                refs.uiAudioPlayerProgress.disabled = duration <= 0;
+                refs.uiAudioPlayerProgress.setAttribute('aria-label', tx('audioProgress'));
+            }
+            if (refs.uiAudioPlayerTime) {
+                refs.uiAudioPlayerTime.textContent = `${formatAudioTime(currentTime)} / ${formatAudioTime(duration)}`;
+            }
+        }
+
+        function resetUiAudioPlayer(options = {}) {
+            const audio = refs.uiAudioPlayerNative;
+            if (audio) {
+                audio.pause();
+                if (options.clearSource !== false) {
+                    audio.removeAttribute('src');
+                    audio.load();
+                    uiAudioSourceUrl = '';
+                }
+            }
+            if (refs.uiAudioPlayer) {
+                refs.uiAudioPlayer.classList.remove('is-playing');
+                refs.uiAudioPlayer.hidden = options.hide !== false;
+            }
+            if (refs.uiAudioPlayerProgress) {
+                refs.uiAudioPlayerProgress.max = '0';
+                refs.uiAudioPlayerProgress.value = '0';
+                refs.uiAudioPlayerProgress.disabled = true;
+            }
+            if (refs.uiAudioPlayerTime) refs.uiAudioPlayerTime.textContent = '00:00 / 00:00';
+            if (refs.uiAudioPlayerPlay) {
+                refs.uiAudioPlayerPlay.setAttribute('aria-label', tx('playAudio'));
+                refs.uiAudioPlayerPlay.setAttribute('aria-pressed', 'false');
+            }
+        }
+
+        function renderUiAudioPlayer(vm) {
+            const player = refs.uiAudioPlayer;
+            const audio = refs.uiAudioPlayerNative;
+            if (!player || !audio) return;
+
+            const primaryAudio = vm && vm.primaryAudio ? vm.primaryAudio : null;
+            const nextUrl = String((primaryAudio && primaryAudio.url) || (vm && vm.audioUrl) || '').trim();
+            const shouldShow = isUiBrowserActive() && uiBrowserMode === 'detail' && Boolean(nextUrl);
+            if (!shouldShow) {
+                resetUiAudioPlayer();
+                return;
+            }
+
+            if (refs.uiAudioPlayerTitle) refs.uiAudioPlayerTitle.textContent = tx('audioNarration');
+            if (uiAudioSourceUrl !== nextUrl) {
+                resetUiAudioPlayer({ hide: false });
+                uiAudioSourceUrl = nextUrl;
+                audio.src = nextUrl;
+                audio.load();
+            }
+            player.hidden = false;
+            updateUiAudioPlayerState();
         }
 
         function getStorylineLabel(option) {
@@ -10303,6 +10550,11 @@
             const primaryVideo = safeMilestone.resources && Array.isArray(safeMilestone.resources.videos) && safeMilestone.resources.videos.length > 0
                 ? safeMilestone.resources.videos[0]
                 : null;
+            const primaryAudio = window.MilestoneView && typeof window.MilestoneView.getPrimaryAudio === 'function'
+                ? window.MilestoneView.getPrimaryAudio(safeMilestone)
+                : safeMilestone.audioUrl
+                  ? { url: String(safeMilestone.audioUrl).trim(), title: '', source: '' }
+                  : null;
             const category = safeMilestone.category || safeMilestone.subtitle || '';
 
             return {
@@ -10320,6 +10572,8 @@
                 archivePhotos: photos.slice(1),
                 primaryVideo,
                 videoEmbedUrl: primaryVideo ? primaryVideo.embed_url : '',
+                primaryAudio,
+                audioUrl: primaryAudio ? primaryAudio.url : '',
                 quoteHtml: quote,
                 quoteAttribution,
                 quoteLabel,
@@ -16082,6 +16336,7 @@
             refs.stage.classList.toggle('is-bench-dossier', isResearchDossierActive());
             refs.stage.classList.toggle('is-ui-browser', isUiBrowserActive());
             refs.stage.classList.toggle('is-ui-detail', isUiBrowserActive() && uiBrowserMode === 'detail');
+            renderUiAudioPlayer(vm);
             if (refs.branchTimelinePage) {
                 refs.branchTimelinePage.classList.toggle('is-humanistic-cycle', humanisticCycleActive);
                 refs.branchTimelinePage.hidden = !branchTimelineActive;
@@ -16600,6 +16855,28 @@
             if (refs.uiBackButton) {
                 refs.uiBackButton.addEventListener('click', () => returnFromUiDetail({ preferHistory: true }));
             }
+            if (refs.uiAudioPlayerPlay && refs.uiAudioPlayerNative) {
+                refs.uiAudioPlayerPlay.addEventListener('click', () => {
+                    const audio = refs.uiAudioPlayerNative;
+                    if (audio.paused || audio.ended) {
+                        const playback = audio.play();
+                        if (playback && typeof playback.catch === 'function') {
+                            playback.catch(() => updateUiAudioPlayerState());
+                        }
+                    } else {
+                        audio.pause();
+                    }
+                });
+                refs.uiAudioPlayerProgress.addEventListener('input', () => {
+                    const nextTime = Number(refs.uiAudioPlayerProgress.value);
+                    if (Number.isFinite(nextTime)) refs.uiAudioPlayerNative.currentTime = nextTime;
+                    updateUiAudioPlayerState();
+                });
+                ['loadedmetadata', 'durationchange', 'timeupdate', 'play', 'pause', 'ended'].forEach((eventName) => {
+                    refs.uiAudioPlayerNative.addEventListener(eventName, updateUiAudioPlayerState);
+                });
+                refs.uiAudioPlayerNative.addEventListener('error', () => resetUiAudioPlayer());
+            }
             if (refs.quizModalClose) refs.quizModalClose.addEventListener('click', completeQuizModal);
             if (refs.quizModalSkip) refs.quizModalSkip.addEventListener('click', completeQuizModal);
             if (refs.quizModalContinue) refs.quizModalContinue.addEventListener('click', () => {
@@ -16630,6 +16907,7 @@
             document.addEventListener('visibilitychange', () => {
                 if (document.hidden) clearUiDetailImageAutoplay();
                 else scheduleUiDetailImageAutoplay();
+                if (document.hidden && refs.uiAudioPlayerNative) refs.uiAudioPlayerNative.pause();
             });
             document.addEventListener('pointerdown', registerUserActivity, { passive: true });
             document.addEventListener('pointermove', registerUserActivity, { passive: true });
@@ -16675,6 +16953,7 @@
             });
 
             window.addEventListener('languageChanged', () => {
+                resetUiAudioPlayer();
                 vmCache.clear();
                 renderStorylineSelect();
                 renderAboutModal();

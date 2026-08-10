@@ -1,0 +1,61 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 51,
+    "eventId": "2014-vgg",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "如果把「VGG 网络」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "AlexNet 之后，研究者知道大型 CNN 能赢得 ImageNet，但架构设计空间仍然混乱。VGG 追问：如果谨慎增加深度，一个简单同质化设计能走多远？",
+            "sourceIds": ["source-very-deep-convolutional-networks-for-large-scale-image-recognition"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "VGG 不混用大量卷积核尺寸，而是按规则堆叠小卷积。网络因此变深，同时架构仍保持统一。",
+            "sourceIds": ["source-very-deep-convolutional-networks-for-large-scale-image-recognition"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 VGG 视为重要参照架构，而不是最先进的部署选择。它的长期影响在于清晰性：即使新模型更高效，它仍适合讲解网络深度、预训练视觉特征和基线比较。",
+            "sourceIds": ["source-very-deep-convolutional-networks-for-large-scale-image-recognition"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「AlexNet 与 ImageNet 突破」，再看「VGG 网络」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-oxford-vgg-very-deep-convnets",
+                "source-torchvision-vgg-model-family",
+                "source-very-deep-convolutional-networks-for-large-scale-image-recognition"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

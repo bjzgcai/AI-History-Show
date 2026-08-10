@@ -1,0 +1,43 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "deep-learning-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "deep-learning",
+    "sequenceIndex": 3,
+    "eventId": "1969-ai-winter",
+    "variantId": "deep-learning",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "deep-learning",
+    "turns": [
+        {
+            "role": "N",
+            "text": "为什么「《感知机》与连接主义退潮」会成为人工智能史上值得单独记住的一步？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《Perceptrons》真正改变研究方向的地方，在于它把“哪些任务是单层感知机做不到的”说清楚了；学术界随后开始把注意力从神经网络热潮转向更容易形式化和证明的路线。",
+            "sourceIds": ["source-perceptrons-book", "source-cornell-perceptron-retrospective"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.background"
+        },
+        {
+            "role": "N",
+            "text": "寒冬并不意味着神经网络从此失效，而是意味着在当时的计算与算法条件下，它的承诺被重新估价；后来 BP、LSTM 与大算力的回归，本质上是在补齐当年缺失的训练机制与资源基础。",
+            "sourceIds": ["source-perceptrons-book", "source-cornell-perceptron-retrospective"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.context"
+        },
+        {
+            "role": "N",
+            "text": "当今天的系统规模越来越大时，「《感知机》与连接主义退潮」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": ["source-perceptrons-book", "source-cornell-perceptron-retrospective"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

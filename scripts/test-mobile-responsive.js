@@ -4,7 +4,6 @@ const path = require('node:path');
 
 const indexPath = path.join(__dirname, '..', 'index.html');
 const source = fs.readFileSync(indexPath, 'utf8');
-const dualScreenSource = fs.readFileSync(path.join(__dirname, '..', 'dual-screen.html'), 'utf8');
 const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
 const chronologyScriptSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
 
@@ -254,10 +253,7 @@ for (const requirement of mobileRequirements) {
     assertContains(requirement.pattern, requirement.message, requirement.haystack);
 }
 
-for (const [entry, entrySource] of [
-    ['single-screen', source],
-    ['dual-screen', dualScreenSource]
-]) {
+for (const [entry, entrySource] of [['index', source]]) {
     assert.equal(
         entrySource.includes('portraitPool[index]'),
         false,

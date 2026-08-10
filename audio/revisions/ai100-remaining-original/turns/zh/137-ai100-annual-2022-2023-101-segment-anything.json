@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 137,
+    "eventId": "ai100-annual-2022-2023-101-segment-anything",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「ControlNet」。现在把镜头转向「Segment anything」，沿着这条故事线换一个问题：研究者为什么需要「Segment anything」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "分割模型通常针对固定标签集合或狭窄任务训练，适配新任务需要重新标注与训练。Segment Anything 采用基础模型思路，让提示在推理时定义感兴趣对象。",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-promptable-segmentation",
+                "claim-sa1b-scale"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "大型图像编码器只计算一次嵌入，独立的提示编码器与掩码解码器则快速响应点、框或掩码输入。对歧义的多掩码输出和模型辅助数据引擎，使交互使用与超大规模分割数据集建设成为可能。",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-promptable-segmentation",
+                "claim-sa1b-scale"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 Segment Anything 视为图像分割进入基础模型阶段的标志，因为一个可提示接口可以迁移到多种对象与下游任务。其模型与数据发布成为标注、编辑、跟踪、医学影像实验和多模态系统的常用基础设施。",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-promptable-segmentation",
+                "claim-sa1b-scale"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「Gen2」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

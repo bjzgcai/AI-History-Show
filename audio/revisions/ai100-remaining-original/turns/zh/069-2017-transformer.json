@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 69,
+    "eventId": "2017-transformer",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「带注意力机制的神经机器翻译」。现在把镜头转向「Transformer」，沿着这条故事线换一个问题：如果把「Transformer」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。",
+            "sourceIds": ["source-transformer-arxiv", "source-google-research-publication"],
+            "claimIds": ["claim-attention-only-architecture", "claim-foundation-model-legacy"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。互动演示应突出自注意力如何替代循环式处理。",
+            "sourceIds": ["source-transformer-arxiv"],
+            "claimIds": ["claim-attention-only-architecture", "claim-foundation-model-legacy"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 Transformer 视为现代 AI 的定义性架构之一。它的长期影响在于可扩展的自注意力配方重塑了自然语言处理、视觉、语音、代码、智能体和基础模型研究。",
+            "sourceIds": ["source-google-transformer-blog"],
+            "claimIds": ["claim-attention-only-architecture", "claim-foundation-model-legacy"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「带注意力机制的神经机器翻译」，再看「Transformer」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-transformer-neurips",
+                "source-google-research-publication",
+                "source-google-transformer-blog",
+                "source-transformer-arxiv"
+            ],
+            "claimIds": ["claim-attention-only-architecture", "claim-foundation-model-legacy"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

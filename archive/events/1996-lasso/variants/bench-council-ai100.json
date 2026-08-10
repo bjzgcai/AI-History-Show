@@ -46,7 +46,9 @@
   "assetIds": [
     "asset-1996-lasso-robert-tibshirani",
     "asset-1996-lasso-l1-constraint",
-    "asset-1996-lasso-coefficient-path"
+    "asset-1996-lasso-coefficient-path",
+    "asset-1996-lasso-audio-zh-original-v1",
+    "asset-1996-lasso-audio-en-v1"
   ],
   "sourceIds": [
     "source-scikit-learn-lasso",

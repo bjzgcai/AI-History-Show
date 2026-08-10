@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-ai100-2017-wasserstein-gan-martin-arjovsky",
     "asset-2017-wasserstein-gan-critic-distance",
-    "asset-ai100-2017-wasserstein-gan-leon-bottou-2025"
+    "asset-ai100-2017-wasserstein-gan-leon-bottou-2025",
+    "asset-ai100-2017-wasserstein-gan-audio-zh-original-v1",
+    "asset-ai100-2017-wasserstein-gan-audio-en-v1"
   ],
   "sourceIds": [
     "source-wasserstein-generative-adversarial-networks",

@@ -1,6 +1,7 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const vm = require('node:vm');
 
 const routing = require(path.join(__dirname, '..', 'shared', 'storyline-routing.js'));
 const { archiveStorylines, milestones: generatedMilestones } = require(
@@ -174,12 +175,12 @@ assert.equal(
 console.log('PASS archive deep-learning detail lookup');
 
 const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
-const dualScreenHtml = fs.readFileSync(path.join(__dirname, '..', 'dual-screen.html'), 'utf8');
 const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
 const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
 const imageLoadingSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'image-loading.js'), 'utf8');
 const thumbnailManifestSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'thumbnail-manifest.js'), 'utf8');
 const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
+const milestoneViewSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'milestone-view.js'), 'utf8');
 const pqMiniProgramQrPath = path.join(__dirname, '..', 'resources', 'pq.png');
 assert.match(
     indexHtml,
@@ -210,6 +211,92 @@ assert.match(
     indexHtml,
     /class="ui-back-button"[^>]*aria-label="返回">返回<\/button>/,
     'event details should expose a visible text back action before JavaScript initializes'
+);
+assert.match(
+    indexHtml,
+    /class="ui-audio-player" id="uiAudioPlayer" hidden>[\s\S]*?uiAudioPlayerPlay[\s\S]*?uiAudioPlayerProgress[\s\S]*?<\/div>\s*<button class="ui-back-button"/,
+    'event details should keep the optional audio player beside the back action and hidden by default'
+);
+assert.match(
+    indexHtml,
+    /\.ui-audio-player\s*\{[\s\S]*?left:\s*36px[\s\S]*?bottom:\s*16px[\s\S]*?padding:\s*8px 12px 8px 8px[\s\S]*?border:\s*none[\s\S]*?\.ui-back-button\s*\{[\s\S]*?right:\s*36px[\s\S]*?bottom:\s*24px[\s\S]*?height:\s*42px/,
+    'the desktop back action should keep its compact height and align with the play button bottom edge'
+);
+assert.match(
+    indexHtml,
+    /\.single-stage\.is-ui-browser\.is-ui-detail \.ui-back-button\s*\{[\s\S]*?right:\s*18px[\s\S]*?bottom:\s*22px[\s\S]*?height:\s*var\(--touch-target\)[\s\S]*?\.single-stage\.is-ui-browser\.is-ui-detail \.ui-audio-player\s*\{[\s\S]*?bottom:\s*18px[\s\S]*?padding:\s*4px 8px 4px 4px/,
+    'responsive back and play controls should share a bottom edge while retaining compact button height'
+);
+assert.match(
+    indexHtml,
+    /function renderUiAudioPlayer\(vm\)[\s\S]*?isUiBrowserActive\(\) && uiBrowserMode === 'detail' && Boolean\(nextUrl\)[\s\S]*?resetUiAudioPlayer\(\)[\s\S]*?player\.hidden = false/,
+    'the audio player should render only for audio-enabled event details'
+);
+assert.match(
+    indexHtml,
+    /function renderUiAudioPlayer\(vm\)[\s\S]*?uiAudioPlayerTitle\.textContent = tx\('audioNarration'\)/,
+    'the audio player should use the localized generic narration label instead of an event-specific title'
+);
+assert.match(
+    indexHtml,
+    /uiAudioPlayerPlay\.addEventListener\('click'[\s\S]*?audio\.play\(\)[\s\S]*?audio\.pause\(\)[\s\S]*?uiAudioPlayerProgress\.addEventListener\('input'[\s\S]*?currentTime = nextTime/,
+    'the audio player should support play, pause, and seeking'
+);
+const milestoneViewLocale = { value: 'zh' };
+const milestoneViewWindow = {
+    I18n: {
+        getLocale: () => milestoneViewLocale.value,
+        localize: (value) =>
+            value && typeof value === 'object' ? value[milestoneViewLocale.value] || value.zh || value.en || '' : value
+    }
+};
+vm.runInNewContext(milestoneViewSource, { window: milestoneViewWindow });
+const getPrimaryAudio = milestoneViewWindow.MilestoneView.getPrimaryAudio;
+assert.equal(
+    getPrimaryAudio({
+        resources: {
+            audios: [
+                {
+                    language: 'zh',
+                    url: 'resources/audio/local.mp3',
+                    storage: { provider: 'local' }
+                },
+                {
+                    language: 'zh',
+                    url: 'https://media.sciencearena.cn/audio/ai-history/releases/example.mp3',
+                    storage: { provider: 'aliyun-oss' }
+                }
+            ]
+        }
+    }).url,
+    'https://media.sciencearena.cn/audio/ai-history/releases/example.mp3',
+    'audio selection should prefer an actual OSS delivery URL over a same-language local fallback'
+);
+assert.equal(
+    getPrimaryAudio({ resources: { audios: [{ language: 'en', url: 'https://s3.example/audio-en.mp3' }] } }),
+    null,
+    'audio selection must not fall back to a differently localized narration'
+);
+for (const locale of ['zh', 'en']) {
+    milestoneViewLocale.value = locale;
+    const nonOssMilestones = generatedMilestones
+        .map((milestone) => ({ milestone, audio: getPrimaryAudio(milestone) }))
+        .filter(
+            ({ audio }) =>
+                !audio ||
+                !String(audio.url || '').startsWith('https://media.sciencearena.cn/audio/ai-history/releases/')
+        )
+        .map(({ milestone }) => `${milestone.storyline.id}:${milestone.archiveEventId}`);
+    assert.deepEqual(
+        nonOssMilestones,
+        [],
+        `every ${locale} milestone narration should resolve to the configured OSS delivery endpoint`
+    );
+}
+assert.match(
+    indexHtml,
+    /window\.addEventListener\('languageChanged',[\s\S]*?resetUiAudioPlayer\(\)[\s\S]*?vmCache\.clear\(\)[\s\S]*?renderPage\(currentIndex/,
+    'language changes should stop and reset audio before loading the narration for the new locale'
 );
 assert.match(
     indexHtml,
@@ -552,11 +639,6 @@ assert.match(
     'single-screen product avatars should contain complete logos inside the circular frame'
 );
 assert.match(
-    dualScreenHtml,
-    /\.figure-avatar\.is-product img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?function renderFigures[\s\S]*?figure\.figureType === 'product' \? ' is-product' : ''/,
-    'dual-screen product avatars should contain complete logos inside the circular frame'
-);
-assert.match(
     indexHtml,
     /function updateStorylineUrl[\s\S]*?searchParams\.delete\('uiMode'\)[\s\S]*?searchParams\.delete\('event'\)/,
     'storyline changes should clear stale detail URL parameters'
@@ -638,17 +720,6 @@ assert.doesNotMatch(
     /UI_CHRONOLOGY_IMAGE_OVERRIDES|getChronologyCardImage|resolveCardImage/,
     'overview cards should read generated Archive image configuration without index.html overrides'
 );
-assert.match(
-    dualScreenHtml,
-    /function sortPhotosForDisplay\(photos\)[\s\S]*?return \[\.\.\.\(photos \|\| \[\]\)\]\.filter\(Boolean\);/,
-    'dual-screen detail images should preserve Archive resources.images order by default'
-);
-assert.doesNotMatch(
-    dualScreenHtml,
-    /function sortPhotosForDisplay\(photos\)[\s\S]*?\.sort\(/,
-    'dual-screen detail images should not reorder Archive resources by media type'
-);
-console.log('PASS dual-screen detail images preserve Archive order');
 assert.doesNotMatch(
     indexHtml,
     /function getUiDetailImages\(vm\)[\s\S]*?isHumanisticMilestone\(vm && vm\.raw\)\) return candidates/,
@@ -715,19 +786,9 @@ assert.match(
     'single-screen entry should load the thumbnail manifest before image loading'
 );
 assert.match(
-    dualScreenHtml,
-    /<script src="shared\/thumbnail-manifest\.js"><\/script>\s*<script src="shared\/image-loading\.js"><\/script>/,
-    'dual-screen entry should load the thumbnail manifest before image loading'
-);
-assert.match(
     indexHtml,
     /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?<script src="shared\/chronology-overview\.js[\s\S]*?function buildFigureAvatar\(figure, avatarSource\)[\s\S]*?buildPreviewImageAttributes\(avatarSource\.src[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?viewerPhoto\.src = photos\[currentPhotoIndex\]/,
     'single-screen entry should use previews for avatars and originals in the archive viewer'
-);
-assert.match(
-    dualScreenHtml,
-    /<script src="shared\/image-loading\.js"><\/script>[\s\S]*?function buildFigureAvatar\(figure, avatarSource\)[\s\S]*?buildPreviewImageAttributes\(avatarSource\.src[\s\S]*?function renderLeftArchive\(photos\)[\s\S]*?<img src="\$\{escapeHtml\(card\.src\)\}"[\s\S]*?function openPhotoViewer\(startIndex\)[\s\S]*?viewerPhoto\.src = photos\[currentPhotoIndex\]/,
-    'dual-screen entry should use previews for avatars and originals for event images'
 );
 assert.match(
     chronologySource,

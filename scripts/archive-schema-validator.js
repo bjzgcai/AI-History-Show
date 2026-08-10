@@ -19,6 +19,17 @@ const SCHEMA_FILES = [
 function createArchiveSchemaValidator(root) {
     const schemasDir = path.join(root, 'archive', 'schemas');
     const ajv = new Ajv2020({ allErrors: true, strict: false });
+    ajv.addFormat('uri', {
+        type: 'string',
+        validate(value) {
+            try {
+                new globalThis.URL(value);
+                return true;
+            } catch (_) {
+                return false;
+            }
+        }
+    });
     for (const fileName of SCHEMA_FILES) {
         ajv.addSchema(JSON.parse(fs.readFileSync(path.join(schemasDir, fileName), 'utf8')));
     }

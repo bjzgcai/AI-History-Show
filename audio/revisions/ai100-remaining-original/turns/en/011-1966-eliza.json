@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 11,
+    "eventId": "1966-eliza",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why did researchers need ELIZA, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "In the 1960s, AI language systems were mostly symbolic and hand-built. ELIZA tested whether a small set of scripts could sustain the impression of natural conversation.",
+            "sourceIds": ["source-eliza-cacm-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "The DOCTOR script does not understand therapy; it transforms recognized patterns into reflective prompts that invite the user to continue. The key mechanism is Pattern matching and scripted reflection, which links the source material to the visible demo behavior.",
+            "sourceIds": ["source-eliza-cacm-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat ELIZA as both historically important and cautionary: it produced conversational illusion without deep understanding. Its long-term legacy is the reminder that interaction design, expectation, and user projection strongly shape judgments about AI.",
+            "sourceIds": ["source-eliza-cacm-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with SHRDLU, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-1996-bagging-portrait",
-    "asset-1996-bagging-explainer"
+    "asset-1996-bagging-explainer",
+    "asset-ai100-1996-bagging-audio-zh-original-v1",
+    "asset-ai100-1996-bagging-audio-en-v1"
   ],
   "sourceIds": [
     "source-1996-bagging-primary",

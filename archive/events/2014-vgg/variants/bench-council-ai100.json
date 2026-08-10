@@ -17,7 +17,9 @@
   "assetIds": [
     "asset-2014-vgg-andrew-zisserman",
     "asset-2014-vgg-depth-configurations",
-    "asset-2014-vgg-receptive-field"
+    "asset-2014-vgg-receptive-field",
+    "asset-2014-vgg-audio-zh-original-v1",
+    "asset-2014-vgg-audio-en-v1"
   ],
   "sourceIds": [
     "source-oxford-vgg-very-deep-convnets",

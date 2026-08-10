@@ -5,21 +5,20 @@
 交互式AI历史展览大屏应用。
 
 - **技术栈**: HTML5 + CSS3 + Vanilla JS + Three.js（3D地球）
-- **展示入口**: `index.html`（自适应单屏/移动端）与 `dual-screen.html`（固定双屏）
+- **展示入口**: `index.html`（自适应展厅大屏/桌面/移动端）
 - **数据文件**: `milestones-data.js` 与 `milestones-data-default.js`（由 `npm run generate` 从 Archive JSON 同步生成，勿手动编辑）
 
 ## 文件结构
 
 ```
 AI-History-Show/
-├── index.html                    # 自适应单屏/移动端入口
-├── dual-screen.html              # 固定双屏入口
+├── index.html                    # 自适应展示入口
 ├── milestones-data.js            # Archive 生成的正式运行时数据
 ├── milestones-data-default.js    # 同步生成的 fallback 数据
 ├── archive/
 │   ├── storylines/               # Storyline 成员、variant、顺序和展示 ID
 │   └── events/                   # 事件事实、来源、资源、quiz 与 variants
-├── shared/                       # 两个展示入口共用的前端逻辑
+├── shared/                       # 展示入口共用的前端逻辑
 ├── resources/
 │   ├── images/                   # 里程碑图片（append-only）
 │   ├── papers/                   # 页面使用的本地论文资料
@@ -160,6 +159,13 @@ AI100 页面顶部必须像旧 achievement 一样有 3 个资料卡片：
 - **深度学习**: 2012-alexnet, 2014-highway-network, 2015-resnet, 2016-densenet, 2014-gan, 2014-attention, 2017-transformer
 - **大模型时代**: 2018-bert, 2018-gpt, 2023-agents, 2025-llm-competition
 - **AI for Science**: 2020-alphafold, 2019-ai-feynman, 2024-ai-scientist
+
+## GitHub 协作规范
+
+- 后续创建或修改 GitHub Issue、Pull Request 时，标题、正文、评论和检查结论默认统一使用中文。
+- 代码标识、文件路径、命令、API 名称、标准名称和无法自然翻译的技术专名可以保留英文；其余说明文字不要使用英文模板或中英混杂表达。
+- 使用 `gh issue create/edit/comment`、`gh pr create/edit/comment/review` 等命令前，先检查将要提交的可见文案是否为中文。
+- 除非用户明确要求英文或双语，否则不要创建英文 Issue 或 PR 文案。
 
 ## 技术细节
 

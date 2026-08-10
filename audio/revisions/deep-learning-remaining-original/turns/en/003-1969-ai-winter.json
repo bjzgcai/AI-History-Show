@@ -1,0 +1,43 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "deep-learning-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "deep-learning",
+    "sequenceIndex": 3,
+    "eventId": "1969-ai-winter",
+    "variantId": "deep-learning",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "deep-learning",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does Perceptrons and the Retreat of Connectionism deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "What changed the field in Perceptrons was that it clarified exactly which tasks single-layer perceptrons could not solve. Researchers then shifted attention away from the neural-network boom toward approaches that were easier to formalize and prove.",
+            "sourceIds": ["source-perceptrons-book", "source-cornell-perceptron-retrospective"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.background"
+        },
+        {
+            "role": "N",
+            "text": "The winter did not mean neural networks had failed forever. It meant their promise was revalued under the computing and algorithmic limits of the time. The later return of backpropagation, LSTM, and large-scale compute essentially filled in the missing training mechanisms and resources.",
+            "sourceIds": ["source-perceptrons-book", "source-cornell-perceptron-retrospective"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.context"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from Perceptrons and the Retreat of Connectionism still matter, and which limits deserve to be questioned again?",
+            "sourceIds": ["source-perceptrons-book", "source-cornell-perceptron-retrospective"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

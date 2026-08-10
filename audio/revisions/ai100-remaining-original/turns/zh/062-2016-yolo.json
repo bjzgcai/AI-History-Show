@@ -1,0 +1,54 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 62,
+    "eventId": "2016-yolo",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "为什么「YOLO」会成为人工智能史上值得单独记住的一步？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "YOLO 之前，高精度检测器常依赖多阶段管线。YOLO 追问：如果检测变成一个稠密预测问题会怎样？",
+            "sourceIds": ["source-you-only-look-once-unified-real-time-object-detection"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "图像被划成网格；每个网格单元一次前向传播就预测框、置信度和类别。 关键机制是基于网格的单阶段目标检测，它把资料线索与可见的演示行为连接起来。",
+            "sourceIds": ["source-you-only-look-once-unified-real-time-object-detection"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 YOLO 视为让实时目标检测成为核心基准目标的系统。它的长期影响在于把检测表述为快速的单次前向预测，并影响了许多后续检测器家族和部署预期。",
+            "sourceIds": ["source-you-only-look-once-unified-real-time-object-detection"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "当今天的系统规模越来越大时，「YOLO」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-cvpr-open-access-paper-page",
+                "source-darknet-yolo-project-page",
+                "source-you-only-look-once-unified-real-time-object-detection"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

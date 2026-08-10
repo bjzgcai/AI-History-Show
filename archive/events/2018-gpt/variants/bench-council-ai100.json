@@ -51,7 +51,9 @@
     "asset-2018-gpt-next-token",
     "asset-2018-gpt-architecture-01",
     "asset-2018-gpt-architecture-02",
-    "asset-2018-gpt-historical-01"
+    "asset-2018-gpt-historical-01",
+    "asset-2018-gpt-audio-zh-original-v1",
+    "asset-2018-gpt-audio-en-v1"
   ],
   "sourceIds": [
     "source-openai-language-unsupervised-page",

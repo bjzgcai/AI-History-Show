@@ -1,0 +1,108 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 120,
+    "eventId": "ai100-annual-2022-2023-001-swin-transformer-v2",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "What is most interesting about Swin Transformer V2: the result itself, or the way it reframed the problem?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "By 2021, hierarchical window-based transformers had made transformer backbones practical for mainstream vision tasks, but simply enlarging them exposed optimization and resolution-transfer problems. Swin Transformer V2 was designed to make the architecture scale in both parameter count and input resolution without demanding an impractical amount of labeled data.",
+            "sourceIds": ["source-cvf-paper-page", "source-microsoft-research-publication"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-scaling-techniques",
+                "claim-model-scale-and-benchmarks"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Residual post-normalization and scaled cosine attention make very large Swin blocks easier to optimize. Log-spaced continuous position bias transfers spatial relationships from smaller pretraining windows to larger downstream windows, while SimMIM supplies self-supervised pretraining before task-specific adaptation.",
+            "sourceIds": ["source-cvf-paper-page", "source-microsoft-research-publication"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-scaling-techniques",
+                "claim-model-scale-and-benchmarks"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat Swin Transformer V2 as an important engineering and architectural refinement of the original Swin family rather than a wholly separate vision paradigm. Its lasting contribution is the coordinated treatment of optimization stability, position-bias transfer and self-supervised pretraining, which made billion-scale high-resolution vision experiments more reproducible through an openly released implementation.",
+            "sourceIds": [
+                "source-cvf-paper-page",
+                "source-microsoft-research-publication",
+                "source-implementation-repository"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-scaling-techniques",
+                "claim-model-scale-and-benchmarks"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "As today's systems grow larger, which lessons from Swin Transformer V2 still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-001-swin-transformer-v2-portrait-ze-liu",
+                "source-cvf-paper-page",
+                "source-microsoft-research-publication",
+                "source-implementation-repository",
+                "source-ze-liu-profile",
+                "source-han-hu-profile",
+                "source-annual-001-swin-transformer-v2-portrait-han-hu",
+                "source-swin-v2-paper-figure"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-scaling-techniques",
+                "claim-model-scale-and-benchmarks"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

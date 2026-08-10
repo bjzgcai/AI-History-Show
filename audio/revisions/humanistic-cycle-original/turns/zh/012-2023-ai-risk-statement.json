@@ -1,0 +1,70 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 12,
+    "eventId": "2023-ai-risk-statement",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "「AI 风险声明」最有意思的地方，是结果本身，还是它重新定义问题的方式？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "这份声明出现在 2023 年生成式 AI 与前沿模型讨论快速升温期间。它的重要性在于把极端 AI 风险变成一个简洁的公共命题，而不只是长篇专业论证。",
+            "sourceIds": ["source-official-statement-on-ai-risk"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "这里的情绪机制是优先级压缩：一组复杂的技术、社会与政治关切被凝缩成单一高风险框架。这种压缩让声明有力量，也让它充满争议。",
+            "sourceIds": ["source-official-statement-on-ai-risk"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把这份声明视为前沿 AI 安全话语的重要公共标记，即使他们对其框架存在分歧。它的遗产是把存在性风险、治理与技术安全放进同一公共讨论。",
+            "sourceIds": ["source-official-statement-on-ai-risk"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "当今天的系统规模越来越大时，「AI 风险声明」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-cais-dan-hendrycks-profile",
+                "source-official-statement-on-ai-risk",
+                "source-managing-extreme-ai-risks",
+                "source-statement-on-ai-risk-overview",
+                "source-center-for-ai-safety"
+            ],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

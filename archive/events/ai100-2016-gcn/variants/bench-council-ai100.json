@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2016-gcn-photo",
-    "asset-2016-gcn-spectral-convolution"
+    "asset-2016-gcn-spectral-convolution",
+    "asset-ai100-2016-gcn-audio-zh-original-v1",
+    "asset-ai100-2016-gcn-audio-en-v1"
   ],
   "sourceIds": [
     "source-iclr-openreview-record",

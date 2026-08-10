@@ -1,0 +1,15 @@
+{
+    "language": "zh",
+    "voiceA": "zh_female_vv_uranus_bigtts",
+    "voiceB": "ICL_uranus_zh_male_huoposhuanglang_tob",
+    "voiceNarrator": "ICL_uranus_zh_male_huoposhuanglang_tob",
+    "voiceSummary": "ICL_uranus_zh_male_huoposhuanglang_tob",
+    "instructionA": "请用亲切、好奇、自然的普通话提问，像科普节目主持人。语速中等，避免广告腔。标点只用于停顿，不要读出符号名称。",
+    "instructionB": "请用清晰、爽朗、自然的普通话讲解，像知识型播客中善于把复杂概念讲明白的青年科普嘉宾。整体语速中等，语气轻松、有交流感，适度体现好奇和发现感，但不要持续亢奋。技术机制的解释要沉稳，年份、人物姓名、技术名词和英文缩写要清楚咬字；重点概念前后自然停顿，问答之间保持真实对话感。避免综艺主持腔、广告腔、新闻播报腔、刻意煽情和过度夸张。标点符号只用于控制停顿，不要读出符号名称。",
+    "instructionNarrator": "请用清晰、爽朗但克制的普通话讲述，像青年科普播客中的故事讲述者。开头可以带一点悬念和好奇，中段讲解保持稳定、清楚，重要转折适度加强，但不要表演化。语速中等，句间留出自然呼吸，技术名词和人物姓名清晰准确。避免纪录片播音腔、综艺腔和广告腔。标点符号只用于控制停顿，不要读出符号名称。",
+    "instructionSummary": "请自然延续正文的语气完成最后一段，声音清晰、轻松、有收束感。结尾适度放慢，但不要突然压低声音，也不要刻意升华或使用播报式总结语气。不要口播“总结”等角色标签。",
+    "speedA": 1,
+    "speedB": 0.99,
+    "speedNarrator": 0.98,
+    "speedSummary": 0.98
+}

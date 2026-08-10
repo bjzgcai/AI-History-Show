@@ -53,7 +53,9 @@
   "assetIds": [
     "asset-ian-goodfellow",
     "asset-2014-gan-adversarial-loop",
-    "asset-2014-gan-architecture-01"
+    "asset-2014-gan-architecture-01",
+    "asset-2014-gan-audio-zh-original-v1",
+    "asset-2014-gan-audio-en-v1"
   ],
   "sourceIds": [
     "source-generative-adversarial-nets",

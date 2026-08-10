@@ -1,0 +1,56 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-en-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 8,
+    "eventId": "1984-neuromancer",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does Neuromancer and AI Escape in Cyberspace deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Neuromancer appeared as personal computing, networks and corporate information systems were becoming new cultural materials. Its importance lies in moving AI fear from factory labor into cyberspace, data and institutions.",
+            "sourceIds": ["source-open-library-book-metadata"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "The emotional mechanism is boundary pressure: intelligent systems become unsettling when the limits around them appear negotiable. Cyberpunk makes autonomy feel like a question of access, identity and infrastructure.",
+            "sourceIds": ["source-open-library-book-metadata"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat Neuromancer as a foundational cyberpunk text that shaped public imagination about cyberspace and artificial minds. Its legacy is not a direct technical lineage, but a durable emotional vocabulary for networked AI power.",
+            "sourceIds": ["source-open-library-book-metadata"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from Neuromancer and AI Escape in Cyberspace still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-william-gibson-commons-portrait",
+                "source-open-library-book-metadata",
+                "source-open-library-metadata-search-result",
+                "source-science-fiction-encyclopedia-gibson",
+                "source-neuromancer-overview"
+            ],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -27,6 +27,48 @@
             "subcaption": {
                 "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
             },
+            "language": {
+                "type": "string",
+                "minLength": 2
+            },
+            "deliveryUrl": {
+                "type": "string",
+                "format": "uri"
+            },
+            "storage": {
+                "type": "object",
+                "properties": {
+                    "provider": {
+                        "const": "aliyun-oss"
+                    },
+                    "bucket": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "objectKey": {
+                        "type": "string",
+                        "pattern": "^audio/ai-history/releases/"
+                    },
+                    "sourcePath": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "contentType": {
+                        "type": "string",
+                        "pattern": "^audio/"
+                    },
+                    "cacheControl": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "publicUrl": {
+                        "type": "string",
+                        "format": "uri"
+                    }
+                },
+                "required": ["provider", "bucket", "objectKey", "contentType"],
+                "additionalProperties": false
+            },
             "figureIds": {
                 "type": "array",
                 "items": {
@@ -69,7 +111,29 @@
                 "$ref": "shared.schema.json#/$defs/reviewState"
             }
         },
-        "anyOf": [{ "required": ["sourceId"] }, { "required": ["sourceIds"] }],
-        "additionalProperties": true
+        "anyOf": [
+            {
+                "required": ["sourceId"]
+            },
+            {
+                "required": ["sourceIds"]
+            }
+        ],
+        "additionalProperties": true,
+        "allOf": [
+            {
+                "if": {
+                    "properties": {
+                        "type": {
+                            "const": "audio"
+                        }
+                    },
+                    "required": ["type"]
+                },
+                "then": {
+                    "required": ["language", "storage"]
+                }
+            }
+        ]
     }
 }

@@ -1,0 +1,83 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 128,
+    "eventId": "ai100-annual-2022-2023-114-alphatensor",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does AlphaTensor deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Matrix multiplication is a basic operation behind scientific computing and machine learning, yet finding algorithms with fewer scalar multiplications is a difficult combinatorial problem. Before AlphaTensor, major improvements were usually derived through sustained human mathematical work.",
+            "sourceIds": ["source-alphatensor-deepmind", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "AlphaTensor encodes the multiplication tensor as a game state, where each move subtracts a rank-one tensor until the target is reduced to zero. A neural network and tree search learn to choose moves that produce short, valid decompositions.",
+            "sourceIds": ["source-alphatensor-deepmind", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat AlphaTensor as a landmark for AI-assisted algorithm discovery because the output is an explicit, verifiable algorithm. It broadened the AlphaZero paradigm from board games to mathematical search and inspired later work on optimizing low-level computation.",
+            "sourceIds": ["source-alphatensor-deepmind", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from AlphaTensor still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-114-alphatensor-portrait-pushmeet-kohli",
+                "source-alphatensor-deepmind",
+                "source-alphatensor-code",
+                "source-alphatensor-portrait-pushmeet-kohli",
+                "source-alphatensor-official-image"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

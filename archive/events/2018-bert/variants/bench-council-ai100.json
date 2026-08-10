@@ -50,7 +50,9 @@
     "asset-jacob-devlin",
     "asset-2018-bert-masked-lm",
     "asset-2018-bert-architecture-01",
-    "asset-2018-bert-architecture-02"
+    "asset-2018-bert-architecture-02",
+    "asset-2018-bert-audio-zh-original-v1",
+    "asset-2018-bert-audio-en-v1"
   ],
   "sourceIds": [
     "source-acl-anthology-bert-paper",

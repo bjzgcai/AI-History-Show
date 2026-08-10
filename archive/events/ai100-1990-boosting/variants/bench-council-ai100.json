@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-1990-boosting-explainer",
-    "asset-1990-boosting-paper-first-page"
+    "asset-1990-boosting-paper-first-page",
+    "asset-ai100-1990-boosting-audio-zh-original-v1",
+    "asset-ai100-1990-boosting-audio-en-v1"
   ],
   "overviewImageAssetId": "asset-1990-boosting-paper-first-page",
   "sourceIds": [

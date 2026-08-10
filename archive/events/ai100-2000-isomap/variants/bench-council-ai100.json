@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2000-isomap-tenenbaum-2019-profile-240",
-    "asset-2000-isomap-geodesic-map"
+    "asset-2000-isomap-geodesic-map",
+    "asset-ai100-2000-isomap-audio-zh-original-v1",
+    "asset-ai100-2000-isomap-audio-en-v1"
   ],
   "sourceIds": [
     "source-science-article-page",

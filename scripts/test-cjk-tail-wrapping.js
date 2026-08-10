@@ -5,8 +5,7 @@ const vm = require('node:vm');
 
 const rootDir = path.join(__dirname, '..');
 const entrySources = {
-    'single-screen': fs.readFileSync(path.join(rootDir, 'index.html'), 'utf8'),
-    'dual-screen': fs.readFileSync(path.join(rootDir, 'dual-screen.html'), 'utf8')
+    index: fs.readFileSync(path.join(rootDir, 'index.html'), 'utf8')
 };
 
 function extractFunction(source, name) {
@@ -130,40 +129,8 @@ const singleScreenBindings = [
     }
 ];
 
-const dualScreenBindings = [
-    {
-        pattern: /refs\.summaryTitle\.innerHTML\s*=\s*escapeHtmlWithCjkTail\(vm\.title \|\| ''\)/,
-        message: 'summary title'
-    },
-    {
-        pattern:
-            /function buildLocationHtml\(location\)[\s\S]*?escapeHtmlWithCjkTail\(location[\s\S]*?escapeHtmlWithCjkTail\(location/,
-        message: 'address fields'
-    },
-    {
-        pattern: /figure-name[\s\S]*?escapeHtmlWithCjkTail\(figure\.name/,
-        message: 'person name'
-    },
-    {
-        pattern: /figure-role[\s\S]*?escapeHtmlWithCjkTail\(figure\.role/,
-        message: 'person role'
-    },
-    {
-        pattern: /refs\.archiveCaption\.innerHTML\s*=\s*escapeHtmlWithCjkTail\(activeMeta\.name\)/,
-        message: 'portrait title'
-    },
-    {
-        pattern: /refs\.archiveSubcaption\.innerHTML\s*=\s*escapeHtmlWithCjkTail\(activeMeta\.role\)/,
-        message: 'portrait description'
-    }
-];
-
 for (const binding of singleScreenBindings) {
-    assert.match(entrySources['single-screen'], binding.pattern, `single-screen: ${binding.message} uses tail binding`);
-}
-
-for (const binding of dualScreenBindings) {
-    assert.match(entrySources['dual-screen'], binding.pattern, `dual-screen: ${binding.message} uses tail binding`);
+    assert.match(entrySources.index, binding.pattern, `index: ${binding.message} uses tail binding`);
 }
 
 console.log('PASS address, title, portrait metadata, and person metadata bindings');

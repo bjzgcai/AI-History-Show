@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-2015-u-net-olaf-ronneberger",
     "asset-2015-u-net-u-shape-architecture",
-    "asset-2015-u-net-segmentation-mask"
+    "asset-2015-u-net-segmentation-mask",
+    "asset-2015-u-net-audio-zh-original-v1",
+    "asset-2015-u-net-audio-en-v1"
   ],
   "sourceIds": [
     "source-freiburg-u-net-release-page",

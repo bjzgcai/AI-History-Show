@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-2018-squeeze-excitation-portrait",
-    "asset-2018-squeeze-excitation-explainer"
+    "asset-2018-squeeze-excitation-explainer",
+    "asset-ai100-2018-squeeze-excitation-audio-zh-original-v1",
+    "asset-ai100-2018-squeeze-excitation-audio-en-v1"
   ],
   "sourceIds": [
     "source-2018-squeeze-excitation-primary",

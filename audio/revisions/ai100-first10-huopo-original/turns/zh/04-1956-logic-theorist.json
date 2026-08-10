@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huoposhuanglang-v3-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 4,
+    "eventId": "1956-logic-theorist",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1950 年代，一台计算机第一次尝试的不是算数字，而是证明数学命题。它会从哪里开始？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-revision"
+        },
+        {
+            "role": "N",
+            "text": "1955 至 1956 年间，艾伦·纽厄尔、赫伯特·西蒙和 J·C·肖开发了 Logic Theorist，让计算机尝试证明《数学原理》中的命题。系统把公理、定理和变换规则表示为符号结构，再从目标出发搜索可能的证明路径，而不是只进行数值计算。",
+            "sourceIds": ["source-the-logic-theory-machine"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "variant.displayDescription.background"
+        },
+        {
+            "role": "A",
+            "text": "早期机器的算力很有限，它靠什么避免在证明路径里迷路？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-revision"
+        },
+        {
+            "role": "B",
+            "text": "它的关键突破是使用启发式规则控制组合爆炸：优先探索更可能成功的变换，并放弃缺乏希望的分支。Logic Theorist 因而成为符号 AI、自动定理证明和认知建模的早期范例，展示了“推理”可以被组织成符号表示、搜索和选择组成的可执行过程。",
+            "sourceIds": ["source-the-logic-theory-machine"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "variant.displayDescription.explanation"
+        },
+        {
+            "role": "N",
+            "text": "这次成功证明了一件事，推理可以被拆成表示、搜索和选择。接下来的挑战，是让这种证明过程更系统、更高效。",
+            "sourceIds": [
+                "source-carnegie-mellon-university-archives",
+                "source-allen-newell-acm-a-m-turing-award",
+                "source-the-logic-theory-machine"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-closing-revision"
+        }
+    ]
+}

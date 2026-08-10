@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huopo-interactive-v5-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 7,
+    "eventId": "1965-resolution-method",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "DPLL 依靠搜索和传播。归结方法为什么敢说，一条统一规则也能推动复杂证明？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "J·艾伦·罗宾逊在 1965 年提出了面向机器的一阶逻辑归结方法。证明时先把前提和被否定的结论转换成子句，再不断寻找能够相互抵消的逻辑成分。",
+            "sourceIds": ["source-a-machine-oriented-logic-based-on-the-resolution-principle"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "“相互抵消”是不是就像同时遇到 P 和“非 P”？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "对，命题逻辑里可以这样理解。一阶逻辑还多了一步合一：算法要计算怎样替换变量，才能让两个相关项匹配。完成匹配后，归结规则生成新子句，直到推出代表矛盾的空子句。",
+            "sourceIds": ["source-a-machine-oriented-logic-based-on-the-resolution-principle"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "既然规则统一而且具备完备性，是不是把它反复运行就一定很快？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "一定能推出和很快推出是两回事。归结适合自动化，也具备重要的完备性性质，但可能生成大量中间子句；实际系统仍需要索引、搜索策略和启发式方法控制组合增长。",
+            "sourceIds": ["source-a-machine-oriented-logic-based-on-the-resolution-principle"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "所以统一规则没有消灭搜索，反而把难题更清楚地暴露出来了？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "正是如此。归结与合一成为自动定理证明、逻辑程序设计以及后续 SAT、SMT 推理谱系的重要基础，而真正困难的部分，也随之转向如何组织和控制搜索。",
+            "sourceIds": [
+                "source-journal-of-symbolic-logic-review-record",
+                "source-stanford-encyclopedia-automated-reasoning",
+                "source-a-machine-oriented-logic-based-on-the-resolution-principle"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-interactive-closing"
+        }
+    ]
+}

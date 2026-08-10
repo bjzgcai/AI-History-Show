@@ -17,7 +17,9 @@
   "assetIds": [
     "asset-2014-adam-diederik-kingma",
     "asset-2014-adam-moment-traces",
-    "asset-2014-adam-loss-trajectory"
+    "asset-2014-adam-loss-trajectory",
+    "asset-2014-adam-audio-zh-original-v1",
+    "asset-2014-adam-audio-en-v1"
   ],
   "sourceIds": [
     "source-pytorch-torch-optim-adam",

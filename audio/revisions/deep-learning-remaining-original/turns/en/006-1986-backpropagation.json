@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "deep-learning-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "deep-learning",
+    "sequenceIndex": 6,
+    "eventId": "1986-backpropagation",
+    "variantId": "deep-learning",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "deep-learning",
+    "turns": [
+        {
+            "role": "N",
+            "text": "If we take Backpropagation apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "The key to backpropagation was not merely sending errors backward. It embedded every layer's parameters in a unified differentiable computation graph, making representation learning a genuinely trainable engineering process for the first time.",
+            "sourceIds": ["source-nature-backpropagation-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Its foundation for the later deep-learning revival was to turn the question of what hidden layers can learn from a hand-design problem into a data-driven one. That step moved neural networks from conceptual models toward a scalable methodology.",
+            "sourceIds": ["source-nature-backpropagation-paper", "source-hinton-backpropagation-pdf"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.context"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside Hopfield Network, Backpropagation reveals how the same technical question can echo across different eras.",
+            "sourceIds": ["source-nature-backpropagation-paper", "source-hinton-backpropagation-pdf"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

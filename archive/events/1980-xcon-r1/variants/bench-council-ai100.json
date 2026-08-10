@@ -41,6 +41,8 @@
   "assetIds": [
     "asset-1980-xcon-r1-lcm-dec-vax-11-780-5-01",
     "asset-1980-xcon-r1-vax-11-780-cpu-backplane",
+    "asset-1980-xcon-r1-audio-zh-original-v1",
+    "asset-1980-xcon-r1-audio-en-v1",
     "asset-1980-xcon-r1-rule-configurator",
     "asset-1980-xcon-r1-order-flow"
   ],

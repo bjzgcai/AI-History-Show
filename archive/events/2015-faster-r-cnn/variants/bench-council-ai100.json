@@ -47,7 +47,9 @@
     "asset-ai100-contributor-shaoqing-ren",
     "asset-2015-faster-r-cnn-rpn-pipeline",
     "asset-2015-faster-r-cnn-detection-output",
-    "asset-2015-faster-r-cnn-kaiming-he"
+    "asset-2015-faster-r-cnn-kaiming-he",
+    "asset-2015-faster-r-cnn-audio-zh-original-v1",
+    "asset-2015-faster-r-cnn-audio-en-v1"
   ],
   "sourceIds": [
     "source-kaiming-he-profile-at-mit-csail",

@@ -1,0 +1,54 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 92,
+    "eventId": "2009-imagenet",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does ImageNet deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Before ImageNet, vision datasets were smaller and often specialized. ImageNet made general object recognition a data-scale challenge.",
+            "sourceIds": ["source-imagenet-a-large-scale-hierarchical-image-database"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "Its hierarchy connected image labels to WordNet synsets, making dataset organization part of the scientific contribution. The key mechanism is Large-scale hierarchical image annotation, which links the source material to the visible demo behavior.",
+            "sourceIds": ["source-imagenet-a-large-scale-hierarchical-image-database"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat ImageNet as both a decisive benchmark and a reminder of benchmark limits. Its long-term legacy is showing how dataset scale, labels, leaderboards, and compute pressure can redirect an entire research field.",
+            "sourceIds": ["source-imagenet-a-large-scale-hierarchical-image-database"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from ImageNet still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-imagenet-project-website",
+                "source-stanford-profile-fei-fei-li",
+                "source-imagenet-a-large-scale-hierarchical-image-database"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

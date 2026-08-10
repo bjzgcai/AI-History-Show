@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 131,
+    "eventId": "ai100-annual-2022-2023-051-gpt-4",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why did researchers need GPT-4, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Large language models had already shown strong few-shot and instruction-following behavior, but leading systems were still mostly presented as text-only assistants. GPT-4 brought image input, stronger benchmark performance and a more extensive public safety evaluation into one frontier-model release.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-multimodal-input",
+                "claim-limitations"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "GPT-4 uses a transformer-based next-token prediction system whose implementation details were intentionally not disclosed in the technical report. Its product behavior combines large-scale pretraining with post-training alignment, while the release evidence focuses on measured capabilities, limitations and risk mitigations rather than a reproducible architecture recipe.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-multimodal-input",
+                "claim-limitations"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat GPT-4 as a major 2023 capability threshold for multimodal general-purpose assistants and as a case study in evaluating opaque frontier systems. Its legacy includes both wider deployment of high-capability models and sharper debate about reproducibility, benchmark saturation, safety testing and model access.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-multimodal-input",
+                "claim-limitations"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with Claude, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

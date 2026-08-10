@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-2001-gradient-boosting-portrait",
-    "asset-2001-gradient-boosting-explainer"
+    "asset-2001-gradient-boosting-explainer",
+    "asset-ai100-2001-gradient-boosting-audio-zh-original-v1",
+    "asset-ai100-2001-gradient-boosting-audio-en-v1"
   ],
   "sourceIds": [
     "source-2001-gradient-boosting-primary",

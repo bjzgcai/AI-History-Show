@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2017-pix2pix-photo-of-me-korea",
-    "asset-2017-pix2pix-paired-translation"
+    "asset-2017-pix2pix-paired-translation",
+    "asset-ai100-2017-pix2pix-audio-zh-original-v1",
+    "asset-ai100-2017-pix2pix-audio-en-v1"
   ],
   "sourceIds": [
     "source-cvpr-open-access-paper-page",

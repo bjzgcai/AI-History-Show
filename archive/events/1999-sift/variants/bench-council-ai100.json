@@ -46,7 +46,9 @@
   "assetIds": [
     "asset-1999-sift-david-lowe",
     "asset-1999-sift-scale-space",
-    "asset-1999-sift-descriptor"
+    "asset-1999-sift-descriptor",
+    "asset-1999-sift-audio-zh-original-v1",
+    "asset-1999-sift-audio-en-v1"
   ],
   "sourceIds": [
     "source-distinctive-image-features-from-scale-invariant-keypoints",

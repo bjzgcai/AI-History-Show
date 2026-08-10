@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 64,
+    "eventId": "ai100-2015-fcn",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "一个看似专业的名字「全卷积网络」，背后藏着怎样一个直观问题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "分类 CNN 为整张图像输出一个标签，而语义分割要求每个像素都有标签。全卷积网络展示了如何把分类网络转换为端到端的稠密预测器。",
+            "sourceIds": ["source-2015-fcn-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2015-fcn-membership", "claim-2015-fcn-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "全连接层被卷积层替代，使任意尺寸图像都能产生空间得分图。可学习上采样与跳跃连接把粗粒度语义信息和更细的空间细节结合起来。",
+            "sourceIds": ["source-2015-fcn-primary"],
+            "claimIds": ["claim-2015-fcn-membership", "claim-2015-fcn-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 FCN 视为确立现代端到端语义分割范式的模板。其网络转换、上采样和跳跃融合思想成为 U-Net、DeepLab 及众多稠密预测系统的基础。",
+            "sourceIds": ["source-2015-fcn-primary", "source-2015-fcn-secondary"],
+            "claimIds": ["claim-2015-fcn-membership", "claim-2015-fcn-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「全卷积网络」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": ["source-2015-fcn-primary", "source-2015-fcn-secondary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2015-fcn-membership", "claim-2015-fcn-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -16,7 +16,9 @@
   "visual": "transcript",
   "assetIds": [
     "asset-1960-davis-putnam-dpll-hilary-putnam",
-    "asset-1960-davis-putnam-dpll-sat-search"
+    "asset-1960-davis-putnam-dpll-sat-search",
+    "asset-1960-davis-putnam-dpll-audio-zh-interact-v1",
+    "asset-1960-davis-putnam-dpll-audio-en-v1"
   ],
   "sourceIds": [
     "source-a-machine-program-for-theorem-proving",

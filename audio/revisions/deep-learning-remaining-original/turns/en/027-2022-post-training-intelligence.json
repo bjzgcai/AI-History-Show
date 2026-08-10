@@ -1,0 +1,83 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "deep-learning-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "deep-learning",
+    "sequenceIndex": 27,
+    "eventId": "2022-post-training-intelligence",
+    "variantId": "deep-learning",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "deep-learning",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Turn the clock back to 2022. What problem was Post-Training Improves Intelligence actually trying to solve?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Pretraining stores broad language patterns and world knowledge in parameters, but it does not automatically make a model answer, refuse, reason, or use tools in the way people want. The cost of frontier training and the supply of high-quality data also make continued pretraining harder to use as the only explanation for capability gains.",
+            "sourceIds": ["source-stanford-ai-index-2025"],
+            "claimIds": [
+                "claim-post-training-shapes-foundation-models",
+                "claim-reinforcement-learning-extends-reasoning"
+            ],
+            "contentOrigin": "commentarySections.background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Instruction tuning teaches the model task formats and response habits, while reinforcement learning from feedback turns preferences, constraints, and usefulness into training signals. In reasoning-model work, reinforcement learning can also reward longer exploration processes, giving the model more checkable intermediate steps while solving problems.",
+            "sourceIds": ["source-instructgpt-paper", "source-flan-paper", "source-deepseek-r1-paper"],
+            "claimIds": [
+                "claim-post-training-shapes-foundation-models",
+                "claim-reinforcement-learning-extends-reasoning"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat post-training as a key boundary between foundation models and ChatGPT-style products or reasoning models. It turns connectionist representation learning at scale into intelligent-system engineering that can be shaped by feedback, tasks, and interaction.",
+            "sourceIds": ["source-instructgpt-paper", "source-deepseek-r1-paper"],
+            "claimIds": [
+                "claim-post-training-shapes-foundation-models",
+                "claim-reinforcement-learning-extends-reasoning"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Post-Training Improves Intelligence mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-instructgpt-paper",
+                "source-flan-paper",
+                "source-deepseek-r1-paper",
+                "source-stanford-ai-index-2025",
+                "source-ppt-slide-43-instruction-tuning",
+                "source-ppt-slide-44-rlhf"
+            ],
+            "claimIds": [
+                "claim-post-training-shapes-foundation-models",
+                "claim-reinforcement-learning-extends-reasoning"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

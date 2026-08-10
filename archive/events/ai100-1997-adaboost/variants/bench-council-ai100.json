@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-1997-adaboost-portrait",
-    "asset-1997-adaboost-explainer"
+    "asset-1997-adaboost-explainer",
+    "asset-ai100-1997-adaboost-audio-zh-original-v1",
+    "asset-ai100-1997-adaboost-audio-en-v1"
   ],
   "sourceIds": [
     "source-1997-adaboost-primary",

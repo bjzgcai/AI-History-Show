@@ -1,0 +1,55 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 50,
+    "eventId": "2012-alexnet",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "为什么「AlexNet 与 ImageNet 突破」会成为人工智能史上值得单独记住的一步？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。",
+            "sourceIds": ["source-alexnet-neurips-paper", "source-imagenet-challenge"],
+            "claimIds": ["claim-imagenet-breakthrough", "claim-scale-recipe"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。互动演示应突出数据、GPU、卷积、ReLU 和正则化如何共同构成可训练系统。",
+            "sourceIds": ["source-alexnet-neurips-paper"],
+            "claimIds": ["claim-imagenet-breakthrough", "claim-scale-recipe"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 AlexNet 视为让深度学习在计算机视觉中无法被忽视的突破。它的长期影响在于数据、GPU、深度 CNN、ReLU、数据增强和正则化组成的规模化配方重塑了视觉研究。",
+            "sourceIds": ["source-alexnet-neurips-paper"],
+            "claimIds": ["claim-imagenet-breakthrough", "claim-scale-recipe"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "当今天的系统规模越来越大时，「AlexNet 与 ImageNet 突破」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-alexnet-neurips-paper",
+                "source-alexnet-neurips-pdf",
+                "source-imagenet-challenge",
+                "source-alexnet-overview"
+            ],
+            "claimIds": ["claim-imagenet-breakthrough", "claim-scale-recipe"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

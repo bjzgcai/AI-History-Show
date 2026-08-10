@@ -1,0 +1,65 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huopo-interactive-v5-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 1,
+    "eventId": "1950-turing-test",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "如果隔着一面墙，只能靠打字交流，你真能判断对面是人还是机器吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "还真不一定。这正是艾伦·图灵在 1950 年提出“模仿游戏”时抓住的问题。评判者只能通过文字与隐藏的人类和机器交谈，再判断谁是谁；图灵借此把“机器会不会思考”的哲学争论，转换成可以观察和比较的行为测试。",
+            "sourceIds": ["source-computing-machinery-and-intelligence"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "也就是说，他没有急着定义什么叫思考，而是先换成了一个能实际评判的问题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "对，关键就是改变问题的问法。测试限制信息通道、隐藏参与者身份，再让人根据交互表现作出判断。它没有打开机器内部检查“思想”，而是把注意力放在机器能否表现出让人难以区分的语言行为。",
+            "sourceIds": ["source-computing-machinery-and-intelligence"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "可如果机器只是特别会聊天，通过测试就能说明它真的理解了吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "不能直接画等号。现代研究通常不把图灵测试视为完整的智能测量，但它建立的评测思想一直延续下来：让系统在受控条件下接受人类判断，并比较它在真实交互中的表现。",
+            "sourceIds": ["source-stanford-encyclopedia-of-philosophy", "source-computing-machinery-and-intelligence"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "那么，当机器越来越会说话，我们究竟是在测量它的智能，还是在测量人类有多容易被说服？",
+            "sourceIds": [
+                "source-turing-digital-archive",
+                "source-internet-archive-digital-preview",
+                "source-stanford-encyclopedia-of-philosophy",
+                "source-computing-machinery-and-intelligence"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-interactive-closing"
+        }
+    ]
+}

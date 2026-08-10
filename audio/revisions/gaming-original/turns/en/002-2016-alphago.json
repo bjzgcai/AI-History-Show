@@ -1,0 +1,56 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "gaming-all-storyline-en-original-v1-2026-08-09",
+    "scopeId": "gaming-ai",
+    "sequenceIndex": 2,
+    "eventId": "2016-alphago",
+    "variantId": "gaming-ai",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does AlphaGo deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Go had long resisted brute-force game programs because its branching factor is enormous and the value of a position can remain strategically uncertain for many moves. AlphaGo's 2016 match victory over Lee Sedol made learned evaluation and search a public demonstration of machine capability, not only a laboratory result.",
+            "sourceIds": ["source-alphago-nature-paper", "source-deepmind-alphago-page"],
+            "claimIds": ["claim-hybrid-policy-value-search", "claim-lee-sedol-match", "claim-self-play-legacy"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "A policy network narrows the enormous move space, a value network estimates which positions are promising, and Monte Carlo tree search converts those learned predictions into explicit lookahead. Supervised learning from expert games supplied the initial policy, while reinforcement learning through self-play made it stronger.",
+            "sourceIds": ["source-alphago-nature-paper"],
+            "claimIds": ["claim-hybrid-policy-value-search", "claim-lee-sedol-match", "claim-self-play-legacy"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat AlphaGo as a landmark demonstration that deep learning, search, and reinforcement learning could surpass elite human intuition in a complex domain. Its long-term legacy is the self-play and neural search pattern that shaped later game AI, planning systems, and public expectations for AI breakthroughs.",
+            "sourceIds": ["source-alphago-nature-paper", "source-deepmind-alphago-page"],
+            "claimIds": ["claim-hybrid-policy-value-search", "claim-lee-sedol-match", "claim-self-play-legacy"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from AlphaGo still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-david-silver-commons-portrait",
+                "source-alphago-nature-paper",
+                "source-deepmind-alphago-page",
+                "source-katago-analysis-engine",
+                "source-alphago-game-4-commons"
+            ],
+            "claimIds": ["claim-hybrid-policy-value-search", "claim-lee-sedol-match", "claim-self-play-legacy"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

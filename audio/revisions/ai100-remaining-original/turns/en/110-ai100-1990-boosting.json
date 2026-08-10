@@ -1,0 +1,54 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 110,
+    "eventId": "ai100-1990-boosting",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does Boosting deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Learning theory asked whether a procedure that performs only slightly better than chance could be transformed into a highly accurate learner. Schapire proved that weak and strong learnability are equivalent under the boosting framework.",
+            "sourceIds": ["source-1990-boosting-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-1990-boosting-membership", "claim-1990-boosting-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "Boosting repeatedly invokes a weak learner on reweighted or resampled data and combines the resulting hypotheses. Later rounds focus on examples that earlier hypotheses handled poorly.",
+            "sourceIds": ["source-1990-boosting-primary"],
+            "claimIds": ["claim-1990-boosting-membership", "claim-1990-boosting-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally regard the weak-to-strong result as the theoretical foundation of boosting. It opened a major line of ensemble learning that led to AdaBoost, gradient boosting, XGBoost, and LightGBM.",
+            "sourceIds": ["source-1990-boosting-primary", "source-1990-boosting-secondary"],
+            "claimIds": ["claim-1990-boosting-membership", "claim-1990-boosting-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from Boosting still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-1990-boosting-primary",
+                "source-1990-boosting-secondary",
+                "source-benchcouncil-ai100-catalog"
+            ],
+            "claimIds": ["claim-1990-boosting-membership", "claim-1990-boosting-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

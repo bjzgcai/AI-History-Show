@@ -1,0 +1,90 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 129,
+    "eventId": "ai100-annual-2022-2023-117-saycan",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「AlphaTensor」。现在把镜头转向「SayCan」，沿着这条故事线换一个问题：如果把「SayCan」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "大语言模型能够提出看似合理的高层计划，却不知道特定机器人在当前环境中能执行哪些动作。机器人策略掌握局部技能，却缺少理解开放式指令所需的语言知识。",
+            "sourceIds": ["source-saycan-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "SayCan 对每个候选技能进行两次评分：语言模型判断它是否推进指令，价值函数判断机器人此刻能否执行。两者乘积决定下一项技能，环境变化后再重复这一过程。",
+            "sourceIds": ["source-saycan-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 SayCan 视为基础模型与具身控制结合的早期重要蓝图，而不是让语言模型不受约束地规划。它对“有用性”和“可行性”的拆分，后来反复出现在视觉-语言-动作模型和机器人智能体中。",
+            "sourceIds": ["source-saycan-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「AlphaTensor」，再看「SayCan」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-saycan-paper",
+                "source-saycan-google-research",
+                "source-saycan-code",
+                "source-saycan-portrait-chelsea-finn",
+                "source-saycan-official-project-images"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

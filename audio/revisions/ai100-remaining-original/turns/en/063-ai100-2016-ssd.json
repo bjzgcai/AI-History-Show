@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 63,
+    "eventId": "ai100-2016-ssd",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "If we take SSD apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Two-stage detectors were accurate but depended on a separate proposal phase. SSD pursued real-time detection by predicting object classes and box offsets directly from a single network pass.",
+            "sourceIds": ["source-2016-ssd-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2016-ssd-membership", "claim-2016-ssd-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Several feature maps at different resolutions predict scores and offsets for default boxes of multiple shapes. High-resolution maps capture small objects, while deeper maps cover larger receptive fields.",
+            "sourceIds": ["source-2016-ssd-primary"],
+            "claimIds": ["claim-2016-ssd-membership", "claim-2016-ssd-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally see SSD as an influential single-stage detector that made multiscale default-box prediction practical. Its speed-accuracy tradeoff shaped later real-time detection systems.",
+            "sourceIds": ["source-2016-ssd-primary", "source-2016-ssd-secondary"],
+            "claimIds": ["claim-2016-ssd-membership", "claim-2016-ssd-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside YOLO, SSD reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-2016-ssd-primary",
+                "source-2016-ssd-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-2016-ssd-portrait"
+            ],
+            "claimIds": ["claim-2016-ssd-membership", "claim-2016-ssd-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

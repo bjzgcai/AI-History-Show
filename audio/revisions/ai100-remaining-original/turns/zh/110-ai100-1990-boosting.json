@@ -1,0 +1,54 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 110,
+    "eventId": "ai100-1990-boosting",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "为什么「Boosting 提升法」会成为人工智能史上值得单独记住的一步？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "学习理论提出：一个只比随机猜测略好的学习过程，能否被转化为高精度学习器。Schapire 在 Boosting 框架下证明了弱可学习与强可学习的等价性。",
+            "sourceIds": ["source-1990-boosting-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-1990-boosting-membership", "claim-1990-boosting-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "Boosting 在重新加权或重采样的数据上反复调用弱学习器，并组合得到的多个假设。后续轮次重点关注此前假设处理不好的样本。",
+            "sourceIds": ["source-1990-boosting-primary"],
+            "claimIds": ["claim-1990-boosting-membership", "claim-1990-boosting-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把“由弱变强”的结果视为 Boosting 的理论基础。它开启了重要的集成学习路线，后来发展出 AdaBoost、梯度提升、XGBoost 和 LightGBM。",
+            "sourceIds": ["source-1990-boosting-primary", "source-1990-boosting-secondary"],
+            "claimIds": ["claim-1990-boosting-membership", "claim-1990-boosting-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "当今天的系统规模越来越大时，「Boosting 提升法」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-1990-boosting-primary",
+                "source-1990-boosting-secondary",
+                "source-benchcouncil-ai100-catalog"
+            ],
+            "claimIds": ["claim-1990-boosting-membership", "claim-1990-boosting-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

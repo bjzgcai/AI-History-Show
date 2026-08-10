@@ -1,0 +1,100 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 132,
+    "eventId": "ai100-annual-2022-2023-057-claude",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "What is most interesting about Claude: the result itself, or the way it reframed the problem?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Instruction-following assistants were rapidly moving from research demos into public products, making behavior and safety part of the model’s visible quality. Anthropic launched Claude with an explicit emphasis on helpfulness, honesty and harmlessness rather than capability benchmarks alone.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-launch-scope",
+                "claim-constitutional-lineage"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Claude combines large language model pretraining with assistant-oriented post-training, while Anthropic’s Constitutional AI work supplies written principles for critique and revision. AI-generated preference feedback can then support reinforcement learning, reducing the need for humans to label every unsafe response directly.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-launch-scope",
+                "claim-constitutional-lineage"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat Claude’s launch as a prominent alternative path for deploying general assistants with safety principles embedded in post-training. Its continuing influence lies in making model constitutions, self-critique and scalable oversight central topics in the design and evaluation of commercial AI assistants.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-launch-scope",
+                "claim-constitutional-lineage"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "As today's systems grow larger, which lessons from Claude still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-constitutional-ai",
+                "source-constitutional-paper",
+                "source-constitutional-ai-figure-1",
+                "source-anthropic-series-b",
+                "source-anthropic-founders-video",
+                "source-anthropic-logo",
+                "source-claude-official-launch-artwork",
+                "source-claude-poe-product-image"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-launch-scope",
+                "claim-constitutional-lineage"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

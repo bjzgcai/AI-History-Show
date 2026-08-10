@@ -1,0 +1,69 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 103,
+    "eventId": "ai100-1992-reinforce",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "把时间拨回1992年，「Williams 的 REINFORCE」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "强化学习智能体需要一种无需对环境求导、仅依据延迟奖励就能直接改进随机策略的方法。Williams 提出了一组似然比更新算法，后来统称为 REINFORCE。",
+            "sourceIds": ["source-1992-reinforce-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-1992-reinforce-membership", "claim-1992-reinforce-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "算法按采样动作获得的回报大小，提高该动作对数概率。这样可得到无偏的策略梯度估计，但如果没有基线或其他降方差方法，估计方差可能很高。",
+            "sourceIds": ["source-1992-reinforce-primary"],
+            "claimIds": ["claim-1992-reinforce-membership", "claim-1992-reinforce-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 REINFORCE 视为蒙特卡洛策略梯度的奠基算法。现代策略优化、语言模型强化学习和可微采样方法仍建立在其得分函数估计器之上。",
+            "sourceIds": ["source-1992-reinforce-primary", "source-1992-reinforce-secondary"],
+            "claimIds": ["claim-1992-reinforce-membership", "claim-1992-reinforce-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「Williams 的 REINFORCE」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-1992-reinforce-primary",
+                "source-1992-reinforce-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-1992-reinforce-portrait"
+            ],
+            "claimIds": ["claim-1992-reinforce-membership", "claim-1992-reinforce-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

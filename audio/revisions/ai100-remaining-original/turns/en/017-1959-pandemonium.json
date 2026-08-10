@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 17,
+    "eventId": "1959-pandemonium",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined Deep Blue. Now the camera turns to Pandemonium and a new question along the same timeline: Why did researchers need Pandemonium, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "Early AI needed models for pattern recognition that were less brittle than hand-coded one-shot templates.",
+            "sourceIds": ["source-pandemonium-a-paradigm-for-learning"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "Multiple small recognizers respond to features; stronger responses propagate upward until a winning interpretation emerges. The key mechanism is Layered feature detection and voting, which links the source material to the visible demo behavior.",
+            "sourceIds": ["source-pandemonium-a-paradigm-for-learning"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat Pandemonium as an influential early model of distributed pattern recognition. Its long-term legacy is the idea of perception as evidence accumulation across layered detectors, which echoes in ensemble methods and hierarchical recognition systems.",
+            "sourceIds": ["source-pandemonium-a-paradigm-for-learning"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with Frame, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

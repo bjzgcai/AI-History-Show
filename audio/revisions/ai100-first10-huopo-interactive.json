@@ -1,0 +1,29 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huopo-interactive-v5-2026-08-07",
+    "label": "互动增强版",
+    "comparisonKind": "interactive",
+    "outputRoot": "resources/audio/generated/ai100-first-40-and-gaming/revisions/ai100-first10-storyline-zh-huopo-interactive-v5-2026-08-07",
+    "turnsDir": "audio/revisions/ai100-first10-huopo-interactive/turns/zh",
+    "voiceProfilePath": "audio/voices/zh-huopo-interactive.json",
+    "expectedEntryCount": 10,
+    "allowLegacyPlanMetadata": true,
+    "provider": {
+        "name": "volc",
+        "model": "seed-tts-2.0",
+        "endpoint": "https://openspeech.bytedance.com/api/v3/plan/tts/unidirectional",
+        "envFile": ".secrets/tts.env",
+        "retries": 3
+    },
+    "specification": {
+        "modes": ["storyline"],
+        "locales": ["zh"],
+        "normalPauseMs": 450,
+        "summaryPauseMs": 550,
+        "minimumDurationSec": 40,
+        "maximumDurationSec": 150,
+        "targetIntegratedLoudnessLufs": -16,
+        "targetTruePeakDbtp": -1,
+        "targetLoudnessRangeLu": 11
+    }
+}

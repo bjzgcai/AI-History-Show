@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-2003-lda-david-blei",
     "asset-2003-lda-topic-simplex",
-    "asset-2003-lda-plate-model"
+    "asset-2003-lda-plate-model",
+    "asset-2003-lda-audio-zh-original-v1",
+    "asset-2003-lda-audio-en-v1"
   ],
   "sourceIds": [
     "source-david-m-blei-homepage",

@@ -52,7 +52,9 @@
   ],
   "assetIds": [
     "asset-dan-hendrycks-cais-portrait",
-    "asset-2023-ai-risk-statement-global-priority"
+    "asset-2023-ai-risk-statement-global-priority",
+    "asset-2023-ai-risk-statement-audio-zh-original-v1",
+    "asset-2023-ai-risk-statement-audio-en-v1"
   ],
   "sourceIds": [
     "source-cais-dan-hendrycks-profile",

@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-1999-policy-gradient-portrait",
-    "asset-1999-policy-gradient-explainer"
+    "asset-1999-policy-gradient-explainer",
+    "asset-ai100-1999-policy-gradient-audio-zh-original-v1",
+    "asset-ai100-1999-policy-gradient-audio-en-v1"
   ],
   "sourceIds": [
     "source-1999-policy-gradient-primary",

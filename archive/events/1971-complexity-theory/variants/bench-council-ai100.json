@@ -16,7 +16,9 @@
   "visual": "transcript",
   "assetIds": [
     "asset-1971-complexity-theory-stephen-cook",
-    "asset-1971-complexity-theory-reduction-map"
+    "asset-1971-complexity-theory-reduction-map",
+    "asset-1971-complexity-theory-audio-zh-interact-v1",
+    "asset-1971-complexity-theory-audio-en-v1"
   ],
   "sourceIds": [
     "source-stephen-a-cook-acm-a-m-turing-award",

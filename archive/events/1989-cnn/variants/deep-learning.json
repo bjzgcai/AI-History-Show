@@ -55,7 +55,9 @@
     "asset-1989-lenet-zip-code-cnn",
     "asset-1989-cnn-architecture-01",
     "asset-1989-cnn-people-01",
-    "asset-1989-cnn-people-02"
+    "asset-1989-cnn-people-02",
+    "asset-1989-cnn-audio-zh-original-v1",
+    "asset-1989-cnn-audio-en-v1"
   ],
   "sourceIds": [
     "source-backpropagation-applied-to-handwritten-zip-code-recognition",

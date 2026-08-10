@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#f3f5f4" />
+        <link rel="icon" href="data:," />
+        <title>AI 历史音频审听台</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <div class="app-shell" data-screen-label="audio-review-console">
+            <header class="topbar">
+                <div class="product-mark">
+                    <span class="product-kicker">AI HISTORY SHOW</span>
+                    <strong>音频审听台</strong>
+                </div>
+                <div class="release-summary" id="release-summary" aria-live="polite"></div>
+                <div class="topbar-actions">
+                    <button class="button button-secondary" id="import-review" type="button">导入记录</button>
+                    <button class="button button-primary" id="export-review" type="button">导出记录</button>
+                    <input id="import-review-file" type="file" accept="application/json" hidden />
+                </div>
+            </header>
+
+            <main class="workspace">
+                <aside class="sidebar" aria-label="事件列表">
+                    <div class="filter-panel" id="filter-panel"></div>
+                    <div class="event-list-heading">
+                        <strong id="event-count">0 个事件</strong>
+                        <span id="active-variant-label"></span>
+                    </div>
+                    <div class="event-list" id="event-list"></div>
+                </aside>
+
+                <section class="review-pane" id="review-pane" aria-live="polite">
+                    <div class="loading-state">
+                        <strong>正在加载审听资料</strong>
+                        <span>读取音频清单与结构化话本...</span>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="playerbar" id="playerbar">
+                <div class="player-context">
+                    <span class="player-eyebrow">当前音频</span>
+                    <strong id="player-title">等待选择事件</strong>
+                    <span id="player-subtitle"></span>
+                </div>
+                <div class="player-navigation">
+                    <button
+                        class="icon-command"
+                        id="previous-event"
+                        type="button"
+                        title="上一个事件"
+                        aria-label="上一个事件"
+                    >
+                        ←
+                    </button>
+                    <button
+                        class="icon-command"
+                        id="next-event"
+                        type="button"
+                        title="下一个事件"
+                        aria-label="下一个事件"
+                    >
+                        →
+                    </button>
+                </div>
+                <audio id="audio-player" controls preload="metadata"></audio>
+                <label class="auto-next-control">
+                    <input id="auto-next" type="checkbox" />
+                    <span>自动下一条</span>
+                </label>
+            </footer>
+        </div>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </body>
+</html>

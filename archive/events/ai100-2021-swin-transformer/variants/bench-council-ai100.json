@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2021-swin-transformer-zeliu",
-    "asset-2021-swin-transformer-shifted-windows"
+    "asset-2021-swin-transformer-shifted-windows",
+    "asset-ai100-2021-swin-transformer-audio-zh-original-v1",
+    "asset-ai100-2021-swin-transformer-audio-en-v1"
   ],
   "sourceIds": [
     "source-iccv-open-access-paper-page",

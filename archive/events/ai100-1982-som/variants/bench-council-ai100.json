@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-1982-som-teuvo-kohonen",
-    "asset-1982-som-topology-map"
+    "asset-1982-som-topology-map",
+    "asset-ai100-1982-som-audio-zh-original-v1",
+    "asset-ai100-1982-som-audio-en-v1"
   ],
   "sourceIds": [
     "source-open-som-paper-pdf",

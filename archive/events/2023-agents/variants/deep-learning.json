@@ -22,7 +22,9 @@
   "assetIds": [
     "asset-2023-agents-historical-02",
     "asset-2023-agents-historical-03",
-    "asset-2023-agents-historical-04"
+    "asset-2023-agents-historical-04",
+    "asset-2023-agents-audio-zh-original-v1",
+    "asset-2023-agents-audio-en-v1"
   ],
   "sourceIds": [
     "source-react-paper",

@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2013-variational-autoencoder-portrait",
-    "asset-2013-vae-latent-sampling"
+    "asset-2013-vae-latent-sampling",
+    "asset-ai100-2013-variational-autoencoder-audio-zh-original-v1",
+    "asset-ai100-2013-variational-autoencoder-audio-en-v1"
   ],
   "sourceIds": [
     "source-iclr-paper-record",

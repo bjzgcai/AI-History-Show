@@ -1,0 +1,55 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 98,
+    "eventId": "2016-alphago",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does AlphaGo deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
+            "sourceIds": ["source-deepmind-alphago-page"],
+            "claimIds": ["claim-hybrid-policy-value-search", "claim-lee-sedol-match", "claim-self-play-legacy"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves.",
+            "sourceIds": ["source-alphago-nature-paper"],
+            "claimIds": ["claim-hybrid-policy-value-search", "claim-lee-sedol-match", "claim-self-play-legacy"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat AlphaGo as a landmark demonstration that deep learning, search, and reinforcement learning could surpass elite human intuition in a complex domain. Its long-term legacy is the self-play and neural search pattern that shaped later game AI, planning systems, and public expectations for AI breakthroughs.",
+            "sourceIds": ["source-alphago-nature-paper", "source-deepmind-alphago-page"],
+            "claimIds": ["claim-hybrid-policy-value-search", "claim-lee-sedol-match", "claim-self-play-legacy"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from AlphaGo still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-alphago-nature-paper",
+                "source-deepmind-alphago-page",
+                "source-katago-analysis-engine",
+                "source-david-silver-commons-portrait"
+            ],
+            "claimIds": ["claim-hybrid-policy-value-search", "claim-lee-sedol-match", "claim-self-play-legacy"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

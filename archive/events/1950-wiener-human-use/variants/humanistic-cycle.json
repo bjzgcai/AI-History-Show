@@ -52,7 +52,9 @@
   ],
   "assetIds": [
     "asset-1950-wiener-human-use-norbert-wiener",
-    "asset-1950-wiener-human-use-feedback-warning"
+    "asset-1950-wiener-human-use-feedback-warning",
+    "asset-1950-wiener-human-use-audio-zh-original-v1",
+    "asset-1950-wiener-human-use-audio-en-v1"
   ],
   "sourceIds": [
     "source-norbert-wiener-commons-portrait",

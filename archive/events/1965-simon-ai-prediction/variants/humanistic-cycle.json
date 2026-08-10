@@ -52,7 +52,9 @@
   ],
   "assetIds": [
     "asset-1965-simon-ai-prediction-herbert-simon",
-    "asset-1965-simon-ai-prediction-hype-curve"
+    "asset-1965-simon-ai-prediction-hype-curve",
+    "asset-1965-simon-ai-prediction-audio-zh-original-v1",
+    "asset-1965-simon-ai-prediction-audio-en-v1"
   ],
   "sourceIds": [
     "source-herbert-simon-commons-portrait",
