@@ -6,6 +6,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const { once } = require('node:events');
+const { URL } = require('node:url');
 
 const { hashToken } = require('../audio-review/auth');
 const { createAudioReviewServer } = require('../audio-review/server');
@@ -127,9 +128,9 @@ async function main() {
         assert.equal(reviewData.response.status, 200);
         const candidate = reviewData.payload.events[0].variants.zh.storyline;
         assert.match(candidate.candidateId, /^audio-[a-f0-9]{24}$/);
-        assert.equal(candidate.audio.reviewUrl, `/api/audio/${candidate.candidateId}`);
+        assert.equal(candidate.audio.reviewUrl, `./api/audio/${candidate.candidateId}`);
         const [preview] = reviewData.payload.release.previews;
-        assert.match(preview.reviewUrl, /^\/api\/audio\/audio-[a-f0-9]{24}$/);
+        assert.match(preview.reviewUrl, /^\.\/api\/audio\/audio-[a-f0-9]{24}$/);
 
         const initial = await requestJson(baseUrl, '/api/reviews', reviewerCookie);
         assert.equal(initial.payload.reviews[candidate.candidateId].status, 'pending');
@@ -141,13 +142,18 @@ async function main() {
         assert.equal(missingCandidate.response.status, 400);
         assert.equal(missingCandidate.payload.error, 'candidateId is required');
 
-        const range = await fetch(`${baseUrl}${candidate.audio.reviewUrl}`, {
+        assert.equal(
+            new URL(candidate.audio.reviewUrl, `${baseUrl}/audio-review/`).pathname,
+            `/audio-review/api/audio/${candidate.candidateId}`
+        );
+
+        const range = await fetch(new URL(candidate.audio.reviewUrl, `${baseUrl}/`), {
             headers: { Cookie: reviewerCookie, Range: 'bytes=2-5' }
         });
         assert.equal(range.status, 206);
         assert.equal(await range.text(), '2345');
 
-        const previewRange = await fetch(`${baseUrl}${preview.reviewUrl}`, {
+        const previewRange = await fetch(new URL(preview.reviewUrl, `${baseUrl}/`), {
             headers: { Cookie: reviewerCookie, Range: 'bytes=6-9' }
         });
         assert.equal(previewRange.status, 206);

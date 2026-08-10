@@ -23,7 +23,7 @@ function loadReviewCatalog(filePath) {
                     const revisionId = String(option.revision?.id || option.revisionId || 'archive').trim();
                     const candidateId = candidateIdFor(revisionId, audioPath);
                     option.candidateId = candidateId;
-                    option.audio.reviewUrl = `/api/audio/${candidateId}`;
+                    option.audio.reviewUrl = `./api/audio/${candidateId}`;
                     audioFiles.set(candidateId, audioPath);
 
                     const context = {
@@ -67,7 +67,7 @@ function loadReviewCatalog(filePath) {
         const audioPath = String(preview.path || '').trim();
         if (!audioPath) continue;
         const audioId = candidateIdFor('release-preview', audioPath);
-        preview.reviewUrl = `/api/audio/${audioId}`;
+        preview.reviewUrl = `./api/audio/${audioId}`;
         audioFiles.set(audioId, audioPath);
     }
 

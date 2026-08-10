@@ -1,6 +1,7 @@
 'use strict';
 
-const DATA_URL = '/api/review-data';
+const API_PREFIX = './api';
+const DATA_URL = `${API_PREFIX}/review-data`;
 const UI_STORAGE_KEY = 'ai-history-audio-review-ui-v1';
 const POSITION_STORAGE_KEY = 'ai-history-audio-review-position-v1';
 
@@ -759,7 +760,7 @@ async function submitReview(result) {
     state.reviewSaving = true;
     renderReviewForm();
     try {
-        const response = await apiFetch('/api/reviews', {
+        const response = await apiFetch(`${API_PREFIX}/reviews`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ candidateId, result, note, requestId: createRequestId() })
@@ -787,7 +788,7 @@ async function invalidateReview(recordId) {
     const reason = window.prompt('请输入撤销原因');
     if (!reason) return;
     try {
-        const response = await apiFetch(`/api/reviews/${encodeURIComponent(recordId)}/invalidate`, {
+        const response = await apiFetch(`${API_PREFIX}/reviews/${encodeURIComponent(recordId)}/invalidate`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ reason })
@@ -903,7 +904,7 @@ function showLoginScreen(message = '') {
 
 async function exportReviews() {
     try {
-        const response = await apiFetch('/api/reviews/export');
+        const response = await apiFetch(`${API_PREFIX}/reviews/export`);
         const payload = await response.json();
         downloadJson(payload, `ai-history-audio-review-${new Date().toISOString().slice(0, 10)}.json`);
     } catch (error) {
@@ -924,7 +925,7 @@ function downloadJson(payload, fileName) {
 }
 
 async function login(token) {
-    const response = await apiFetch('/api/auth/session', {
+    const response = await apiFetch(`${API_PREFIX}/auth/session`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ token })
@@ -938,7 +939,10 @@ async function loadApplication(user) {
     elements.loginScreen.hidden = true;
     elements.appShell.hidden = false;
     try {
-        const [dataResponse, reviewsResponse] = await Promise.all([apiFetch(DATA_URL), apiFetch('/api/reviews')]);
+        const [dataResponse, reviewsResponse] = await Promise.all([
+            apiFetch(DATA_URL),
+            apiFetch(`${API_PREFIX}/reviews`)
+        ]);
         state.data = await dataResponse.json();
         state.reviews = (await reviewsResponse.json()).reviews || {};
         restoreUiState();
@@ -987,7 +991,7 @@ function bindGlobalEvents() {
     elements.exportReview.addEventListener('click', exportReviews);
     elements.logout.addEventListener('click', async () => {
         try {
-            await apiFetch('/api/auth/session', { method: 'DELETE' });
+            await apiFetch(`${API_PREFIX}/auth/session`, { method: 'DELETE' });
         } finally {
             window.location.reload();
         }
@@ -1012,7 +1016,7 @@ function bindGlobalEvents() {
 async function init() {
     bindGlobalEvents();
     try {
-        const response = await apiFetch('/api/auth/session');
+        const response = await apiFetch(`${API_PREFIX}/auth/session`);
         const user = (await response.json()).user;
         if (!user) throw new Error('需要登录');
         await loadApplication(user);
