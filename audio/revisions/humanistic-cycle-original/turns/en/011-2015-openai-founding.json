@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-en-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 11,
+    "eventId": "2015-openai-founding",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why did researchers need The Founding of OpenAI, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "The announcement followed a period when deep learning progress, public-risk warnings and concern about concentrated AI power were all intensifying. It mattered because AI safety and broad benefit became part of an organization's founding identity rather than only a research topic.",
+            "sourceIds": ["source-archived-openai-announcement"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "The emotional mechanism is constructive defense: if powerful AI could be dangerous or concentrated, then a new institution might steer it toward public benefit. This turned anxiety into mission language, funding strategy and organizational design.",
+            "sourceIds": ["source-archived-openai-announcement"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat OpenAI's founding as part of the mainstreaming of AI-safety and broad-benefit discourse in the mid-2010s. Its legacy is complicated, but historically it marks the point where emotional concern became institutional infrastructure.",
+            "sourceIds": ["source-archived-openai-announcement"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with The Statement on AI Risk, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

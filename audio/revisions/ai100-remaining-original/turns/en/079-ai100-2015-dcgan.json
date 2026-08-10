@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 79,
+    "eventId": "ai100-2015-dcgan",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Turn the clock back to 2015. What problem was DCGAN actually trying to solve?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "DCGAN supplied practical convolutional architecture rules for stable GAN image generation. It also showed that discriminator features learned without labels could transfer to recognition tasks.",
+            "sourceIds": ["source-unsupervised-representation-learning-with-deep-convolutional-gans"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "A latent vector is progressively upsampled through convolutional blocks while a discriminator learns image features in the opposite direction.",
+            "sourceIds": ["source-unsupervised-representation-learning-with-deep-convolutional-gans"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat DCGAN as the architecture recipe that made GAN images easier to reproduce and study. Its long-term legacy is the convolutional generator-discriminator pattern used in many later image synthesis systems.",
+            "sourceIds": ["source-unsupervised-representation-learning-with-deep-convolutional-gans"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "DCGAN mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-pytorch-dcgan-tutorial",
+                "source-dcgan-overview",
+                "source-unsupervised-representation-learning-with-deep-convolutional-gans"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

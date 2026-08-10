@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 117,
+    "eventId": "ai100-2001-crf",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined Latent Dirichlet Allocation. Now the camera turns to Conditional Random Fields and a new question along the same timeline: If we take Conditional Random Fields apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "Sequence labeling systems such as hidden Markov models modeled how observations were generated, which made overlapping and long-range input features awkward to use. Conditional Random Fields instead modeled the label sequence directly given the observed sequence.",
+            "sourceIds": ["source-2001-crf-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2001-crf-membership", "claim-2001-crf-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "A CRF assigns a globally normalized conditional probability to an entire label sequence using feature functions over observations and neighboring labels. Dynamic programming supports exact inference and training for linear-chain models.",
+            "sourceIds": ["source-2001-crf-primary"],
+            "claimIds": ["claim-2001-crf-membership", "claim-2001-crf-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally regard CRFs as a foundational discriminative model for structured prediction. They became standard for named-entity recognition, part-of-speech tagging, segmentation, and hybrid neural-CRF systems.",
+            "sourceIds": ["source-2001-crf-primary", "source-2001-crf-secondary"],
+            "claimIds": ["claim-2001-crf-membership", "claim-2001-crf-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside Latent Dirichlet Allocation, Conditional Random Fields reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-2001-crf-primary",
+                "source-2001-crf-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-2001-crf-portrait"
+            ],
+            "claimIds": ["claim-2001-crf-membership", "claim-2001-crf-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

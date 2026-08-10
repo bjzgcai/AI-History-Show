@@ -1,0 +1,98 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 127,
+    "eventId": "ai100-annual-2022-2023-081-latent-diffusion-models",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "把时间拨回2022年，「Latent Diffusion Models」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "像素空间扩散模型能够生成高质量图像，但反复对每个像素去噪会消耗大量算力。潜扩散研究追问：能否在生成开始前通过感知压缩去除冗余细节。",
+            "sourceIds": ["source-ldm-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "预训练自编码器把图像映射到更低维的潜表示，U-Net 在其中学习扩散过程。交叉注意力注入文本或空间条件，解码器再把去噪后的潜表示还原为像素。",
+            "sourceIds": ["source-ldm-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把潜扩散视为让高质量文生图得以广泛部署的效率突破。其架构成为 Stable Diffusion 以及大量条件控制、编辑和个性化方法的核心。",
+            "sourceIds": ["source-ldm-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「Latent Diffusion Models」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-081-latent-diffusion-models-portrait-robin-rombach",
+                "source-ldm-paper",
+                "source-ldm-code",
+                "source-ldm-portrait-andreas-blattmann",
+                "source-ldm-portrait-bjorn-ommer",
+                "source-ldm-official-project-images"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

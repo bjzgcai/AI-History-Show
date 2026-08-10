@@ -136,6 +136,8 @@ Recommended:
 
 `path` should point to an actual resource file, usually under `resources/`. Existence is validated by `validate:archive`, not by JSON Schema alone.
 
+Audio assets additionally require `language` and Alibaba Cloud OSS `storage` metadata. Before publication, `path` may be the local production source. Published assets should use the stable HTTPS delivery URL for both `path` and `deliveryUrl`, while `storage.sourcePath` may retain the ignored local upload source used only on a publisher machine. The storage block records `provider`, `bucket`, `objectKey`, `contentType`, and optional cache/public URL settings; it must never contain access credentials.
+
 ### `quizzes.json`
 
 Each quiz requires:

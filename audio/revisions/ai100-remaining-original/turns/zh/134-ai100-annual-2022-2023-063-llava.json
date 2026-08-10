@@ -1,0 +1,84 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 134,
+    "eventId": "ai100-annual-2022-2023-063-llava",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "为什么「LLaVA」会成为人工智能史上值得单独记住的一步？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "纯语言指令微调已经让助手更容易被自然语言控制，而视觉语言模型仍常围绕图像描述或问答等固定任务训练。LLaVA 以刻意简洁的连接架构，把指令跟随范式带入基于图像的对话。",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-visual-instruction-data",
+                "claim-two-stage"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "一个可学习线性投影把 CLIP 视觉特征映射到大语言模型的 token 嵌入空间。GPT-4 生成的合成对话提供指令数据，两阶段训练先对齐模态，再微调整体助手完成多模态对话。",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-visual-instruction-data",
+                "claim-two-stage"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 LLaVA 视为开放视觉指令微调的基础方案，因为它把简洁架构、可复现的数据生成和代码结合起来。它推动了开放多模态助手快速扩张，也影响了后来对编码器、连接器、数据混合与视觉推理的改进。",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-visual-instruction-data",
+                "claim-two-stage"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "当今天的系统规模越来越大时，「LLaVA」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-063-llava-portrait-haotian-liu",
+                "source-llava-project",
+                "source-llava-repository",
+                "source-haotian-liu-profile",
+                "source-llava-figure-1",
+                "source-llava-official-architecture"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-visual-instruction-data",
+                "claim-two-stage"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

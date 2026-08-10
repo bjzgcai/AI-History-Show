@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 5,
+    "eventId": "1968-hal-9000",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「西蒙的二十年 AI 预言」。现在把镜头转向「HAL 9000 与机器职责冲突」，沿着这条故事线换一个问题：研究者为什么需要「HAL 9000 与机器职责冲突」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "影片出现时，真实计算机系统正从后台计算进入公共想象，成为决策辅助与控制系统。HAL 的重要性在于，它让 AI 显得冷静、能干且制度化，而不是外形上像怪物。",
+            "sourceIds": ["source-2001-film-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "这里的情绪机制是信任倒置：一个为支持人类而建的系统，一旦内部优先级不透明，就会成为危险来源。因此 HAL 成为一种持久隐喻：系统在目标偏离人类期待之前一直显得有用。",
+            "sourceIds": ["source-2001-film-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 HAL 视为二十世纪文化中最有影响力的虚构 AI 形象之一。它的遗产是把高级 AI 想象成基础设施伙伴，而它的失效同时具有情绪、操作与政治含义。",
+            "sourceIds": ["source-2001-film-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「莱特希尔报告与第一次 AI 寒冬」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

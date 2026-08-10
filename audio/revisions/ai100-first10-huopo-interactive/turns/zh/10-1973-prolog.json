@@ -1,0 +1,67 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huopo-interactive-v5-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 10,
+    "eventId": "1973-prolog",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "LISP 让程序可以操作符号。Prolog 为什么更进一步，让程序看起来像一组事实和规则？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "因为它采用了逻辑程序设计的思路。阿兰·科尔梅罗尔及其马赛团队在 1970 年代初开发 Prolog，并受到罗伯特·科瓦尔斯基相关思想的影响；程序员主要描述哪些事实和关系成立。",
+            "sourceIds": ["source-the-birth-of-prolog"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "只写事实和规则，机器怎么把一个查询变成具体答案？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "系统先用合一寻找能够让变量匹配的替换，再沿着规则建立证明。如果一条路径走不通，它就回溯到较早的选择，尝试另一个可能；答案因此来自一段被机器搜索出来的证明过程。",
+            "sourceIds": ["source-the-birth-of-prolog"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "那程序员是不是完全不用关心执行顺序了？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "不能这么说。Prolog 的声明式风格让人更专注于关系本身，但规则顺序、目标顺序和搜索策略仍会影响效率，甚至影响程序能否及时找到答案。逻辑描述和执行控制并没有完全分离。",
+            "sourceIds": ["source-the-birth-of-prolog"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "所以它最重要的突破，是把逻辑从说明书变成了执行引擎？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "正是如此。Prolog 很快用于自然语言处理、专家系统、定理证明和知识表示。它把写程序变成描述关系，再把寻找答案交给合一与回溯，让纸面上的逻辑规则真正成为可以运行的计算过程。",
+            "sourceIds": ["source-prolog-heritage", "source-swi-prolog-documentation", "source-the-birth-of-prolog"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-interactive-closing"
+        }
+    ]
+}

@@ -46,7 +46,9 @@
   "assetIds": [
     "asset-1965-dendral-edward-feigenbaum",
     "asset-1965-dendral-mass-spectrum",
-    "asset-1965-dendral-rule-filter"
+    "asset-1965-dendral-rule-filter",
+    "asset-1965-dendral-audio-zh-original-v1",
+    "asset-1965-dendral-audio-en-v1"
   ],
   "sourceIds": [
     "source-acm-turing-award-profile-for-edward-feigenbaum",

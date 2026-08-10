@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 88,
+    "eventId": "ai100-2017-gat",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Behind the technical name GAT, what intuitive problem were researchers confronting?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "GAT replaced fixed graph aggregation weights with learned attention over neighbors. This let each node decide which neighbors mattered most for its representation.",
+            "sourceIds": ["source-graph-attention-networks"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "A node scores its neighbors, normalizes attention weights, and combines their features into an updated node state.",
+            "sourceIds": ["source-graph-attention-networks"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat GAT as a defining attention-based graph model. Its long-term legacy is the idea that graph neighborhoods can be weighted dynamically instead of only by graph degree or fixed normalization.",
+            "sourceIds": ["source-graph-attention-networks"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "GAT mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-iclr-openreview-record",
+                "source-original-gat-repository",
+                "source-graph-attention-networks"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

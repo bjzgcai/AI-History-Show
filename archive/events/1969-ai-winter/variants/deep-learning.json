@@ -22,7 +22,9 @@
   "assetIds": [
     "asset-1969-ai-winter-papers-01",
     "asset-1969-ai-winter-papers-02",
-    "asset-1969-ai-winter-papers-01-2"
+    "asset-1969-ai-winter-papers-01-2",
+    "asset-1969-ai-winter-audio-zh-original-v1",
+    "asset-1969-ai-winter-audio-en-v1"
   ],
   "sourceIds": [
     "source-perceptrons-book",

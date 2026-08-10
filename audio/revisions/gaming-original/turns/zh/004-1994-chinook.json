@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "gaming-all-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "gaming-ai",
+    "sequenceIndex": 4,
+    "eventId": "1994-chinook",
+    "variantId": "gaming-ai",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "如果把「Chinook 跳棋程序」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "跳棋足够复杂，可以挑战当时的搜索算法；同时规则和状态空间又足够明确，适合长期构建残局数据库。Chinook 因而成为连接竞技程序与形式化游戏求解的理想试验场。",
+            "sourceIds": ["source-chinook-project-home"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Chinook 将开局知识、alpha-beta 前向搜索、人工局面评估与已求解残局表结合，使当前选择能够连接到被证明的终局结果。随着残局数据库不断扩大，未知搜索空间被逐步压缩，最终形成从初始局面到和棋结论的证明链。",
+            "sourceIds": ["source-chinook-project-home"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 Chinook 视为游戏求解研究和高性能搜索的里程碑。它的长期影响在于展示专家评估、alpha-beta 搜索、开局知识和残局数据库如何结合并逼近完美对弈。",
+            "sourceIds": ["source-chinook-project-home"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「时序差分更新」，再看「Chinook 跳棋程序」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-chinook-project-home",
+                "source-checkers-is-solved",
+                "source-chinook-publications",
+                "source-jonathan-schaeffer-portrait"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

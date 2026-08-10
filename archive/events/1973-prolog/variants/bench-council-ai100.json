@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-1973-prolog-alain-colmerauer",
     "asset-1973-prolog-query-tree",
-    "asset-1973-prolog-unification-trace"
+    "asset-1973-prolog-unification-trace",
+    "asset-1973-prolog-audio-zh-interact-v1",
+    "asset-1973-prolog-audio-en-v1"
   ],
   "sourceIds": [
     "source-prolog-heritage",

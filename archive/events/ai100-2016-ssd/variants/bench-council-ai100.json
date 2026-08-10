@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-2016-ssd-portrait",
-    "asset-2016-ssd-explainer"
+    "asset-2016-ssd-explainer",
+    "asset-ai100-2016-ssd-audio-zh-original-v1",
+    "asset-ai100-2016-ssd-audio-en-v1"
   ],
   "sourceIds": [
     "source-2016-ssd-primary",

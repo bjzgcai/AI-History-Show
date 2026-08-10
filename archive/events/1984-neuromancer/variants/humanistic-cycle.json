@@ -52,7 +52,9 @@
   ],
   "assetIds": [
     "asset-1984-neuromancer-william-gibson",
-    "asset-1984-neuromancer-ai-containment"
+    "asset-1984-neuromancer-ai-containment",
+    "asset-1984-neuromancer-audio-zh-original-v1",
+    "asset-1984-neuromancer-audio-en-v1"
   ],
   "sourceIds": [
     "source-william-gibson-commons-portrait",

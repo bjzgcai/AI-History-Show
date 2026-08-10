@@ -1,0 +1,82 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 122,
+    "eventId": "ai100-annual-2022-2023-024-whisper",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does Whisper deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Before Whisper, strong speech recognizers were often optimized for specific languages, domains or curated datasets. The 2022 work tested whether a much larger and more diverse weakly supervised corpus could trade benchmark specialization for broad robustness.",
+            "sourceIds": ["source-whisper-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "Whisper uses an encoder-decoder Transformer and represents transcription, translation, language identification and timestamps in one sequence-to-sequence format. Training on 680,000 hours lets one model reuse signals across languages and tasks instead of maintaining separate pipelines.",
+            "sourceIds": ["source-whisper-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat Whisper as a turning point in open, general-purpose speech recognition because its released models made robust multilingual transcription widely accessible. Its influence also extends to speech interfaces for later multimodal and conversational systems.",
+            "sourceIds": ["source-whisper-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from Whisper still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-024-whisper-portrait-ilya-sutskever",
+                "source-whisper-paper",
+                "source-whisper-code",
+                "source-whisper-official-approach"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

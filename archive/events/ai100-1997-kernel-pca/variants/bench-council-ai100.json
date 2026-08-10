@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-1997-kernel-pca-bernhard-sch-lkopf",
-    "asset-1997-kernel-pca-eigenmap"
+    "asset-1997-kernel-pca-eigenmap",
+    "asset-ai100-1997-kernel-pca-audio-zh-original-v1",
+    "asset-ai100-1997-kernel-pca-audio-en-v1"
   ],
   "sourceIds": [
     "source-max-planck-publication-page",

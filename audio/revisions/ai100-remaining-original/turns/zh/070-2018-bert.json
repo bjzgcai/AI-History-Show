@@ -1,0 +1,69 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 70,
+    "eventId": "2018-bert",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "一个看似专业的名字「BERT」，背后藏着怎样一个直观问题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "雅各布·德夫林及合作者提出 BERT，这是一种用掩码语言建模和下一句预测预训练的双向 Transformer 语言模型。它让“先预训练、再微调”成为自然语言理解的主流配方。",
+            "sourceIds": ["source-bert"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "模型用左右两侧上下文预测被遮盖的词，然后把预训练模型微调用于下游任务。这让一个编码器可以复用于分类、问答、检索和信息抽取。",
+            "sourceIds": ["source-bert"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 BERT 视为把 Transformer 预训练标准化用于语言理解的里程碑。它的长期影响在于编码器基础模型模式被用于搜索、分类、抽取、检索和领域适配。",
+            "sourceIds": ["source-bert"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「BERT」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-acl-anthology-bert-paper",
+                "source-google-research-bert-repository",
+                "source-google-ai-bert-blog-post",
+                "source-bert"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

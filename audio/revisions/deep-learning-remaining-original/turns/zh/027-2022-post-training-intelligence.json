@@ -1,0 +1,83 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "deep-learning-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "deep-learning",
+    "sequenceIndex": 27,
+    "eventId": "2022-post-training-intelligence",
+    "variantId": "deep-learning",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "deep-learning",
+    "turns": [
+        {
+            "role": "A",
+            "text": "把时间拨回2022年，「后训练提升智能」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "预训练把大量世界知识和语言模式压入参数，但它不自动保证模型会按人类希望的方式回答、拒答、推理或调用工具。当前前沿模型的训练成本和高质量数据供给也让“继续堆预训练”变得更难单独解释能力提升。",
+            "sourceIds": ["source-stanford-ai-index-2025"],
+            "claimIds": [
+                "claim-post-training-shapes-foundation-models",
+                "claim-reinforcement-learning-extends-reasoning"
+            ],
+            "contentOrigin": "commentarySections.background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "指令微调把任务格式和回答习惯教给模型；基于反馈的强化学习则把偏好、约束和可用性转化为训练信号。到了推理模型阶段，强化学习还可以奖励更长的探索过程，使模型在解题时形成可检查的中间步骤。",
+            "sourceIds": ["source-instructgpt-paper", "source-flan-paper", "source-deepseek-r1-paper"],
+            "claimIds": [
+                "claim-post-training-shapes-foundation-models",
+                "claim-reinforcement-learning-extends-reasoning"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把后训练视为基础模型走向 ChatGPT 式产品和推理模型的关键分水岭。它把连接主义的规模化表示学习，推进为可通过反馈、任务和互动持续塑形的智能系统工程。",
+            "sourceIds": ["source-instructgpt-paper", "source-deepseek-r1-paper"],
+            "claimIds": [
+                "claim-post-training-shapes-foundation-models",
+                "claim-reinforcement-learning-extends-reasoning"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「后训练提升智能」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-instructgpt-paper",
+                "source-flan-paper",
+                "source-deepseek-r1-paper",
+                "source-stanford-ai-index-2025",
+                "source-ppt-slide-43-instruction-tuning",
+                "source-ppt-slide-44-rlhf"
+            ],
+            "claimIds": [
+                "claim-post-training-shapes-foundation-models",
+                "claim-reinforcement-learning-extends-reasoning"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

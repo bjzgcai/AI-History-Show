@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-ai100-2005-gnn-marco-gori-portrait",
     "asset-2005-gnn-message-passing",
-    "asset-ai100-2005-gnn-unisi-paper-record"
+    "asset-ai100-2005-gnn-unisi-paper-record",
+    "asset-ai100-2005-gnn-audio-zh-original-v1",
+    "asset-ai100-2005-gnn-audio-en-v1"
   ],
   "sourceIds": [
     "source-the-graph-neural-network-model",

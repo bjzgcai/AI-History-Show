@@ -52,7 +52,9 @@
   ],
   "assetIds": [
     "asset-1968-hal-9000-stanley-kubrick",
-    "asset-1968-hal-9000-conflict"
+    "asset-1968-hal-9000-conflict",
+    "asset-1968-hal-9000-audio-zh-original-v1",
+    "asset-1968-hal-9000-audio-en-v1"
   ],
   "sourceIds": [
     "source-stanley-kubrick-commons-portrait",

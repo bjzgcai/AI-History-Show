@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 99,
+    "eventId": "2020-alphafold",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "如果把「AlphaFold」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "DeepMind 的 AlphaFold2 在 CASP14 蛋白质结构预测中取得重大跃升，结合进化信息、基于注意力的表示和端到端结构优化。它展示了深度学习如何改变长期存在的科学难题。",
+            "sourceIds": ["source-highly-accurate-protein-structure-prediction-with-alphafold"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。",
+            "sourceIds": ["source-highly-accurate-protein-structure-prediction-with-alphafold"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 AlphaFold2 视为科学机器学习的标志性成果，因为它改变了生物学家能够常规查询和检验的内容。它的长期影响在于让人们期待 AI 系统不仅是基准模型，也能成为发现基础设施。",
+            "sourceIds": ["source-highly-accurate-protein-structure-prediction-with-alphafold"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「AlphaGo」，再看「AlphaFold」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-deepmind-alphafold-page",
+                "source-alphafold-protein-structure-database",
+                "source-alphafold-github-repository",
+                "source-highly-accurate-protein-structure-prediction-with-alphafold"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

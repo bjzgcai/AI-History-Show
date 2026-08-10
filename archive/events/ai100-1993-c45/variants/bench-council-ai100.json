@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-1993-c45-portrait",
-    "asset-1993-c45-explainer"
+    "asset-1993-c45-explainer",
+    "asset-ai100-1993-c45-audio-zh-original-v1",
+    "asset-ai100-1993-c45-audio-en-v1"
   ],
   "sourceIds": [
     "source-1993-c45-primary",

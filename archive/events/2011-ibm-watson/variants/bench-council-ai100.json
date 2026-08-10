@@ -42,7 +42,9 @@
     "asset-2011-ibm-watson-david-ferrucci",
     "asset-2011-ibm-watson-deepqa",
     "asset-2011-ibm-watson-evidence-ranking",
-    "asset-2011-ibm-watson-ibmwatson"
+    "asset-2011-ibm-watson-ibmwatson",
+    "asset-2011-ibm-watson-audio-zh-original-v1",
+    "asset-2011-ibm-watson-audio-en-v1"
   ],
   "sourceIds": [
     "source-building-watson-an-overview-of-the-deepqa-project",

@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 77,
+    "eventId": "2014-gan",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「GloVe」。现在把镜头转向「生成对抗网络」，沿着这条故事线换一个问题：研究者为什么需要「生成对抗网络」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。这个框架让图像生成、表示学习和对抗训练成为现代生成式 AI 的核心线索之一。",
+            "sourceIds": ["source-generative-adversarial-nets"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "生成器尝试合成逼真样本，判别器则学习区分生成样本和真实数据。两者的竞争把生成过程变成可学习的博弈，推动生成器接近真实数据分布。",
+            "sourceIds": ["source-generative-adversarial-nets"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 GAN 视为神经生成式建模的标志性突破，尽管扩散模型后来在许多部署中更受青睐。它的长期影响在于对抗训练成为合成、领域迁移和表示学习中可复用的思想。",
+            "sourceIds": ["source-generative-adversarial-nets"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「Conditional GAN」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

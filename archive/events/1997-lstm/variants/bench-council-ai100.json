@@ -51,7 +51,9 @@
     "asset-1997-lstm-gated-memory",
     "asset-1997-lstm-architecture-01",
     "asset-1997-lstm-architecture-02",
-    "asset-1997-lstm-people-01"
+    "asset-1997-lstm-people-01",
+    "asset-1997-lstm-audio-zh-original-v1",
+    "asset-1997-lstm-audio-en-v1"
   ],
   "sourceIds": [
     "source-author-hosted-lstm-paper-pdf",

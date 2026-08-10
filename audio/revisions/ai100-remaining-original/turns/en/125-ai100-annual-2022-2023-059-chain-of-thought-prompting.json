@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 125,
+    "eventId": "ai100-annual-2022-2023-059-chain-of-thought-prompting",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined InstructGPT. Now the camera turns to Chain-of-Thought Prompting and a new question along the same timeline: Why did researchers need Chain-of-Thought Prompting, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "Few-shot prompting let language models learn tasks from examples, but direct answer demonstrations often failed on multi-step problems. Chain-of-thought prompting inserted worked reasoning traces between each question and answer.",
+            "sourceIds": ["source-cot-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "The model is shown several natural-language rationales and then asked to produce its own intermediate steps before the final answer. This decomposition gives the model more computation in token space and makes errors easier to inspect.",
+            "sourceIds": ["source-cot-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat chain-of-thought prompting as a foundational interface for eliciting reasoning from large models, while cautioning that fluent rationales are not guaranteed to be faithful explanations. The method directly motivated self-consistency and many later reasoning-time strategies.",
+            "sourceIds": ["source-cot-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with ChatGPT, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

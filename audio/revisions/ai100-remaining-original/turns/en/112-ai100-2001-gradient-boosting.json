@@ -1,0 +1,69 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 112,
+    "eventId": "ai100-2001-gradient-boosting",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Behind the technical name Gradient Boosting, what intuitive problem were researchers confronting?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Boosting was often described through classification-specific reweighting rules. Friedman recast it as stage-wise function optimization, allowing the same idea to minimize many differentiable loss functions.",
+            "sourceIds": ["source-2001-gradient-boosting-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2001-gradient-boosting-membership", "claim-2001-gradient-boosting-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Each new weak learner fits the negative gradient, or pseudo-residual, of the current model’s loss. Adding that learner moves the ensemble toward lower loss in function space.",
+            "sourceIds": ["source-2001-gradient-boosting-primary"],
+            "claimIds": ["claim-2001-gradient-boosting-membership", "claim-2001-gradient-boosting-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat gradient boosting as the unifying optimization view behind modern boosted-tree systems. It became a dominant approach for structured data and enabled specialized implementations such as XGBoost and LightGBM.",
+            "sourceIds": ["source-2001-gradient-boosting-primary", "source-2001-gradient-boosting-secondary"],
+            "claimIds": ["claim-2001-gradient-boosting-membership", "claim-2001-gradient-boosting-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Gradient Boosting mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-2001-gradient-boosting-primary",
+                "source-2001-gradient-boosting-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-2001-gradient-boosting-portrait"
+            ],
+            "claimIds": ["claim-2001-gradient-boosting-membership", "claim-2001-gradient-boosting-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

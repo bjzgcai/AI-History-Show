@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-2009-imagenet-fei-fei-li",
     "asset-2009-imagenet-hierarchy",
-    "asset-2009-imagenet-benchmark"
+    "asset-2009-imagenet-benchmark",
+    "asset-2009-imagenet-audio-zh-original-v1",
+    "asset-2009-imagenet-audio-en-v1"
   ],
   "sourceIds": [
     "source-imagenet-project-website",

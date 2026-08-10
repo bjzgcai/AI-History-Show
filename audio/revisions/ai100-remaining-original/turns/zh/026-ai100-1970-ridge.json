@@ -1,0 +1,55 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 26,
+    "eventId": "ai100-1970-ridge",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "为什么「岭回归」会成为人工智能史上值得单独记住的一步？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。",
+            "sourceIds": ["source-ridge-regression-biased-estimation-for-nonorthogonal-problems"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "惩罚项会收缩系数，使相关预测变量不再主导拟合。",
+            "sourceIds": ["source-ridge-regression-biased-estimation-for-nonorthogonal-problems"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把岭回归视为经典正则化成果，使可控偏差成为实用工具。它的长期影响在于 L2 惩罚模式被统计学习、核方法和深度学习权重衰减广泛采用。",
+            "sourceIds": ["source-ridge-regression-biased-estimation-for-nonorthogonal-problems"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "当今天的系统规模越来越大时，「岭回归」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-open-pdf-copy-of-the-technometrics-paper",
+                "source-ridge-regression-overview",
+                "source-scikit-learn-ridge-documentation",
+                "source-ridge-regression-biased-estimation-for-nonorthogonal-problems"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2020-vit-alexey-dosovitskiy",
-    "asset-2020-vit-patch-tokens"
+    "asset-2020-vit-patch-tokens",
+    "asset-ai100-2020-vit-audio-zh-original-v1",
+    "asset-ai100-2020-vit-audio-en-v1"
   ],
   "sourceIds": [
     "source-iclr-openreview-page",

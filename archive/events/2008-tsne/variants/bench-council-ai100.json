@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-2008-tsne-laurens-van-der-maaten",
     "asset-2008-tsne-neighbor-probabilities",
-    "asset-2008-tsne-cluster-map"
+    "asset-2008-tsne-cluster-map",
+    "asset-2008-tsne-audio-zh-original-v1",
+    "asset-2008-tsne-audio-en-v1"
   ],
   "sourceIds": [
     "source-laurens-van-der-maaten-homepage",

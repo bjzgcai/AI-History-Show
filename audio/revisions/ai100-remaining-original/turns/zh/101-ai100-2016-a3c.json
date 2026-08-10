@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 101,
+    "eventId": "ai100-2016-a3c",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「Actor-Critic」。现在把镜头转向「A3C 异步优势演员—评论家」，沿着这条故事线换一个问题：研究者为什么需要「A3C 异步优势演员—评论家」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "深度强化学习系统常依赖大型经验回放缓冲区和专用硬件，以缓解经验相关性。A3C 探索了多个轻量智能体并行行动，是否能在不使用回放的情况下提供多样化更新。",
+            "sourceIds": ["source-2016-a3c-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2016-a3c-membership", "claim-2016-a3c-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "多个工作智能体与各自的环境副本交互，并异步更新共享的 actor 与 critic 参数。优势估计把观测回报与 critic 基线比较，从而降低方差。",
+            "sourceIds": ["source-2016-a3c-primary"],
+            "claimIds": ["claim-2016-a3c-membership", "claim-2016-a3c-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常认为 A3C 有力证明了异步 actor-critic 训练可以保持简单、稳定并适用于多类任务。它推动了基于优势函数的策略优化和并行环境采样。",
+            "sourceIds": ["source-2016-a3c-primary", "source-2016-a3c-secondary"],
+            "claimIds": ["claim-2016-a3c-membership", "claim-2016-a3c-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「SARSA」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

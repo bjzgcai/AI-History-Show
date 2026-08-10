@@ -7,7 +7,7 @@ const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUTPUT = path.join(ROOT, '.tmp', 'static-site');
-const ROOT_FILES = ['.nojekyll', 'index.html', 'dual-screen.html', 'milestones-data.js', 'milestones-data-default.js'];
+const ROOT_FILES = ['.nojekyll', 'index.html', 'milestones-data.js', 'milestones-data-default.js'];
 const DIRECTORIES = ['shared', 'resources', 'public'];
 const RETIRED_RESOURCE_METADATA = new Set([
     'resources/quote-candidates.js',
@@ -42,6 +42,7 @@ function copyRequired(source, destination, options = {}) {
 
 function includeStaticFile(source) {
     const relativePath = path.relative(ROOT, source).split(path.sep).join('/');
+    if (relativePath === 'resources/audio' || relativePath.startsWith('resources/audio/')) return false;
     if (OMITTED_STATIC_FILES.has(relativePath)) return false;
     if (RIGHTS_REVIEW_STATIC_FILES.has(relativePath)) return false;
     if (RETIRED_RESOURCE_METADATA.has(relativePath)) return false;
@@ -103,8 +104,19 @@ function validateBundle() {
         false,
         'Legacy video metadata must not be published'
     );
+    assert.equal(
+        fs.existsSync(path.join(OUTPUT, 'resources', 'audio')),
+        false,
+        'Generated audio must be delivered through object storage, not the static bundle'
+    );
 
-    for (const htmlFile of ['index.html', 'dual-screen.html']) {
+    assert.equal(
+        fs.existsSync(path.join(OUTPUT, 'dual-screen.html')),
+        false,
+        'The retired dual-screen entry must not enter the static bundle'
+    );
+
+    for (const htmlFile of ['index.html']) {
         const html = fs.readFileSync(path.join(OUTPUT, htmlFile), 'utf8');
         assert.match(html, /milestones-data\.js/);
         assert.doesNotMatch(html, /milestones-data-archive-preview\.js/);

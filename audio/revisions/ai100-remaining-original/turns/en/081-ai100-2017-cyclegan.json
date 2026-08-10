@@ -1,0 +1,61 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 81,
+    "eventId": "ai100-2017-cyclegan",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined Wasserstein GAN. Now the camera turns to CycleGAN and a new question along the same timeline: If we take CycleGAN apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.",
+            "sourceIds": ["source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "An image moves from domain A to domain B and back to A, with the cycle loss checking whether the original structure is recovered.",
+            "sourceIds": ["source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat CycleGAN as a landmark in unpaired translation and controllable visual synthesis. Its long-term legacy is the cycle-consistency idea used whenever paired supervision is expensive or unavailable.",
+            "sourceIds": ["source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside Wasserstein GAN, CycleGAN reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-iccv-open-access-paper-page",
+                "source-cyclegan-project-page",
+                "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

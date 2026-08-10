@@ -52,7 +52,9 @@
   ],
   "assetIds": [
     "asset-2000s-alphacat-i-chen-wu-portrait",
-    "asset-2000s-alphacat-xiangqi-search"
+    "asset-2000s-alphacat-xiangqi-search",
+    "asset-2000s-alphacat-audio-zh-original-v1",
+    "asset-2000s-alphacat-audio-en-v1"
   ],
   "sourceIds": [
     "source-icga-chinese-chess-page",

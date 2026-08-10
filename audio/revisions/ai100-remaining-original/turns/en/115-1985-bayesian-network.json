@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 115,
+    "eventId": "1985-bayesian-network",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Turn the clock back to 1985. What problem was Bayesian Network actually trying to solve?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Symbolic AI struggled with uncertainty. Probabilistic graphical models connected knowledge representation with statistical inference.",
+            "sourceIds": ["source-bayesian-networks"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "A Bayesian network factorizes a joint distribution according to a directed acyclic graph, making inference modular. The key mechanism is Directed acyclic graph plus conditional probabilities, which links the source material to the visible demo behavior.",
+            "sourceIds": ["source-bayesian-networks"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat Bayesian networks as a foundational language for uncertain reasoning. Their long-term legacy is the graphical connection between probability, evidence, and dependency structure, which later influenced causal reasoning and decision support.",
+            "sourceIds": ["source-bayesian-networks"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Bayesian Network mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": ["source-judea-pearl-homepage", "source-judea-pearl-ucla-samueli", "source-bayesian-networks"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

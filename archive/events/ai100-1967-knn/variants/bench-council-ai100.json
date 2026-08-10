@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-1967-knn-thomas-cover-stanford",
-    "asset-1967-knn-neighbor-vote"
+    "asset-1967-knn-neighbor-vote",
+    "asset-ai100-1967-knn-audio-zh-original-v1",
+    "asset-ai100-1967-knn-audio-en-v1"
   ],
   "sourceIds": [
     "source-nearest-neighbor-pattern-classification",

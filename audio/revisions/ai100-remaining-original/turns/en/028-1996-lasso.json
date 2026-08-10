@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 28,
+    "eventId": "1996-lasso",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Behind the technical name Lasso, what intuitive problem were researchers confronting?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "As datasets grew wider, analysts needed models that could avoid overfitting and identify useful variables. Ridge regression shrank coefficients, but it did not usually set them to zero.",
+            "sourceIds": ["source-regression-shrinkage-and-selection-via-the-lasso"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The lasso adds an L1 penalty to regression. The geometry of that penalty naturally creates exact zeros, so prediction and selection are tied together.",
+            "sourceIds": ["source-regression-shrinkage-and-selection-via-the-lasso"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat Lasso as a standard tool for sparse, interpretable linear modeling. Its long-term legacy is regularization-driven feature selection, especially in high-dimensional statistics, genomics, and transparent predictive modeling.",
+            "sourceIds": ["source-regression-shrinkage-and-selection-via-the-lasso"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Lasso mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-scikit-learn-lasso",
+                "source-glmnet-project",
+                "source-regression-shrinkage-and-selection-via-the-lasso"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

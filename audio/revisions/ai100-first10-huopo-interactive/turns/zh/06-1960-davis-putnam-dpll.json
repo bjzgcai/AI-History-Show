@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huopo-interactive-v5-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 6,
+    "eventId": "1960-davis-putnam-dpll",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "当逻辑公式变成成千上万个真假选择，机器怎样避免把所有组合都试一遍？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "戴维斯与普特南在 1960 年提出面向量词理论和布尔可满足性问题的计算过程；1962 年，戴维斯、洛格曼和洛夫兰又把它发展成后来称作 DPLL 的机器程序。它把搜索和逻辑简化结合了起来。",
+            "sourceIds": ["source-a-computing-procedure-for-quantification-theory"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "“逻辑简化”具体是怎么替机器省步骤的？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "一个关键机制是单元传播。如果某个子句只剩下一种取值能让它成立，系统就直接确定那个变量，并把这个结果继续传播到其他子句，不必为已经被迫确定的选择再开分支。",
+            "sourceIds": ["source-a-machine-program-for-theorem-proving"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "那只要不断传播，就完全不用猜了吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "还做不到。没有更多强制结果时，DPLL 仍要选择变量尝试赋值；如果随后出现矛盾，就回溯到较早的分支。传播负责推导必然后果，分支和回溯负责处理真正的不确定性。",
+            "sourceIds": ["source-a-machine-program-for-theorem-proving"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "现代 SAT 求解器已经复杂得多，为什么还总能看到 DPLL 的影子？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "因为搜索、传播、冲突和回溯仍是核心骨架。现代系统加入了子句学习、重启和更强启发式，让这套框架能服务于验证、规划、配置和约束求解，但它面对的问题依然是怎样在巨大的搜索树中尽早排除错误方向。",
+            "sourceIds": [
+                "source-a-machine-program-for-theorem-proving",
+                "source-wikimedia-commons-hilary-putnam",
+                "source-a-computing-procedure-for-quantification-theory"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-interactive-closing"
+        }
+    ]
+}

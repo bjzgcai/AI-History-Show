@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 107,
+    "eventId": "ai100-1993-c45",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "研究者为什么需要「C4.5 决策树」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "ID3 证明了基于熵的决策树归纳有效，但在连续属性、缺失数据和树过度生长方面存在实际限制。C4.5 把这一方法扩展为更完整、更可部署的学习系统。",
+            "sourceIds": ["source-1993-c45-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-1993-c45-membership", "claim-1993-c45-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "C4.5 使用增益率，能够处理连续属性和缺失属性，并在训练后剪枝以提升泛化能力。它还可以把学习到的树转换为紧凑的分类规则集合。",
+            "sourceIds": ["source-1993-c45-primary"],
+            "claimIds": ["claim-1993-c45-membership", "claim-1993-c45-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 C4.5 视为最具影响力的实用决策树系统之一。它对数据缺陷和剪枝的处理影响了后续工业树模型与可解释性实践。",
+            "sourceIds": ["source-1993-c45-primary", "source-1993-c45-secondary"],
+            "claimIds": ["claim-1993-c45-membership", "claim-1993-c45-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「Bagging 装袋法」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

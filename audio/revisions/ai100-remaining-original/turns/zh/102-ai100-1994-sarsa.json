@@ -1,0 +1,69 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 102,
+    "eventId": "ai100-1994-sarsa",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "「SARSA」最有意思的地方，是结果本身，还是它重新定义问题的方式？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "时序差分控制需要一种能在执行探索策略时持续学习的实用方法。后来被称为 SARSA 的算法，依据智能体实际经历的“状态—动作—奖励—下一状态—下一动作”序列更新动作价值。",
+            "sourceIds": ["source-1994-sarsa-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-1994-sarsa-membership", "claim-1994-sarsa-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "SARSA 是同策略算法：更新中使用的下一动作来自生成行为的同一个策略。因此，其价值估计会反映探索选择，在某些任务中可比离策略的贪心目标产生更安全的行为。",
+            "sourceIds": ["source-1994-sarsa-primary"],
+            "claimIds": ["claim-1994-sarsa-membership", "claim-1994-sarsa-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 SARSA 视为经典的同策略时序差分控制算法，也是与 Q-learning 对照的标准案例。这一对比清楚说明了学习目标如何编码智能体正在评估的策略。",
+            "sourceIds": ["source-1994-sarsa-primary", "source-1994-sarsa-secondary"],
+            "claimIds": ["claim-1994-sarsa-membership", "claim-1994-sarsa-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "当今天的系统规模越来越大时，「SARSA」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-1994-sarsa-primary",
+                "source-1994-sarsa-secondary",
+                "source-1994-sarsa-portrait",
+                "source-benchcouncil-ai100-catalog"
+            ],
+            "claimIds": ["claim-1994-sarsa-membership", "claim-1994-sarsa-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

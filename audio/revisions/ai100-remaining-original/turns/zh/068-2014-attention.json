@@ -1,0 +1,55 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 68,
+    "eventId": "2014-attention",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "为什么「带注意力机制的神经机器翻译」会成为人工智能史上值得单独记住的一步？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥提出注意力机制，让神经翻译解码器能回看源句中的不同位置。这使对齐成为序列到序列建模中可学习、可微分的一部分。",
+            "sourceIds": ["source-neural-machine-translation-by-jointly-learning-to-align-and-translate"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。",
+            "sourceIds": ["source-neural-machine-translation-by-jointly-learning-to-align-and-translate"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把神经翻译中的注意力视为从循环编码器-解码器系统走向 Transformer 式架构的桥梁。它的长期影响在于让学习得到的令牌相关性成为语言、视觉和多模态 AI 的核心操作。",
+            "sourceIds": ["source-neural-machine-translation-by-jointly-learning-to-align-and-translate"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "当今天的系统规模越来越大时，「带注意力机制的神经机器翻译」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-iclr-2015-paper-page",
+                "source-attention-mechanism-overview",
+                "source-yoshua-bengio-lab-profile",
+                "source-neural-machine-translation-by-jointly-learning-to-align-and-translate"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

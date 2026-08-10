@@ -21,7 +21,9 @@
   "visualModules": [],
   "assetIds": [
     "asset-2014-highway-network-people-01",
-    "asset-2014-highway-network-architecture-01"
+    "asset-2014-highway-network-architecture-01",
+    "asset-2014-highway-network-audio-zh-original-v1",
+    "asset-2014-highway-network-audio-en-v1"
   ],
   "sourceIds": [
     "source-highway-networks-paper",

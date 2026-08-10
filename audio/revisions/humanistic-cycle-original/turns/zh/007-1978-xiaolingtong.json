@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 7,
+    "eventId": "1978-xiaolingtong",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "把时间拨回1978年，「《小灵通漫游未来》」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "这本书出现在中国重新打开科学与教育想象的时期。它的重要性在于呈现一种面向未来的技术乐观，与西方机器人反叛叙事形成鲜明差异。",
+            "sourceIds": ["source-little-smart-publication-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "这里的情绪机制是被引导的惊奇：未来技术通过旅行、观察与公共改善被解释。机器成为更好公共世界的一部分，而不是人类过时的信号。",
+            "sourceIds": ["source-little-smart-publication-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "中国科幻史研究者通常把叶永烈视为 1978 年后科学想象普及的重要人物。它的遗产是在这条分支中提供乐观对照，提醒观众 AI 情绪始终嵌在具体文化处境里。",
+            "sourceIds": ["source-little-smart-publication-overview"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「《小灵通漫游未来》」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-xiaolingtong-cover-wikipedia",
+                "source-ye-yonglie-commons-portrait",
+                "source-little-smart-publication-overview",
+                "source-ye-yonglie-biography",
+                "source-science-fiction-encyclopedia-ye-yonglie",
+                "source-chinese-science-fiction-context"
+            ],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huopo-interactive-v5-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 3,
+    "eventId": "1971-vc-theory",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "NP 完全性讨论问题为什么难，VC 理论却换了一个方向。模型凭什么从有限样本学会面对未知？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "它关心的不是搜索要花多久，而是学习能否泛化。瓦普尼克与切尔沃年基斯在 1971 年把这个问题写成严格的数学形式：一个假设类别在有限样本上表现良好，什么条件能保证它面对未见数据时仍然可靠？",
+            "sourceIds": ["source-on-the-uniform-convergence-of-relative-frequencies"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "那 VC 维是在测模型能记住多少训练样本吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "接近，但不只是记忆数量。它考察一个假设类别能否对某组样本实现所有可能的二元划分；如果可以，就说这组样本能被它打散。能够打散的最大规模，刻画了这个模型类别的表达容量。",
+            "sourceIds": ["source-on-the-uniform-convergence-of-relative-frequencies"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "既然容量代表表达能力，那 VC 维是不是越大越好？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "并不是。容量更大意味着能表达更复杂的规律，也通常意味着需要更多样本约束它。VC 理论把模型复杂度、样本数量和泛化误差联系起来，提醒我们训练误差低，不等于模型真的学到了可以推广的规律。",
+            "sourceIds": ["source-on-the-uniform-convergence-of-relative-frequencies"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "可现代深度网络容量巨大，却常常也能泛化，这不是和理论冲突了吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "不必直接看成冲突。经典 VC 界面对深度网络时往往比较保守，但它留下的核心问题没有过时：我们到底该怎样同时衡量模型的表达能力、数据规模和面对未知的可靠性？",
+            "sourceIds": [
+                "source-on-the-uniform-convergence-of-relative-frequencies",
+                "source-the-nature-of-statistical-learning-theory",
+                "source-an-overview-of-statistical-learning-theory",
+                "source-vladimir-vapnik-simons-profile"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-interactive-closing"
+        }
+    ]
+}

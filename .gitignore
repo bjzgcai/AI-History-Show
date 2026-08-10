@@ -10,6 +10,10 @@ resources/images/benchcouncil-ai100-annual/*_contributors.svg
 # Node.js
 node_modules/
 *.log
+.env
+.env.*
+!.env.example
+.secrets/
 
 # Auto-generated backups
 manage/.backups/
@@ -24,8 +28,21 @@ manage/.backups/
 # Local candidate media assets
 /local-assets/
 
+# Generated audio artifacts and metadata are stored outside Git.
+/resources/audio/
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.ogg
+*.flac
+
+# Generated audio review console data and visual checks
+/tools/audio-review-console/review-data.json
+/tools/audio-review-console/active-overlays.json
+/tools/audio-review-console/*.png
+
 # Local design and reference exports
-/designs/
 /人工智能历史网页代码文件/
 
 # OS

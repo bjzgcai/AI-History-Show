@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 107,
+    "eventId": "ai100-1993-c45",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why did researchers need C4.5, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "ID3 demonstrated entropy-based tree induction but had practical limits with continuous values, missing data, and overgrown trees. C4.5 extended the method into a more complete and deployable learning system.",
+            "sourceIds": ["source-1993-c45-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-1993-c45-membership", "claim-1993-c45-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "C4.5 uses gain ratio, handles continuous and missing attributes, and prunes branches after training to improve generalization. It can also convert a learned tree into a compact set of classification rules.",
+            "sourceIds": ["source-1993-c45-primary"],
+            "claimIds": ["claim-1993-c45-membership", "claim-1993-c45-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally regard C4.5 as one of the most influential practical decision-tree systems. Its handling of data imperfections and pruning shaped later industrial tree implementations and interpretability practice.",
+            "sourceIds": ["source-1993-c45-primary", "source-1993-c45-secondary"],
+            "claimIds": ["claim-1993-c45-membership", "claim-1993-c45-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with Bagging, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

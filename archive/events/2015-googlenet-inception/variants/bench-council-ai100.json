@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-2015-googlenet-inception-christian-szegedy",
     "asset-2015-googlenet-inception-parallel-branches",
-    "asset-2015-googlenet-inception-bottleneck"
+    "asset-2015-googlenet-inception-bottleneck",
+    "asset-2015-googlenet-inception-audio-zh-original-v1",
+    "asset-2015-googlenet-inception-audio-en-v1"
   ],
   "sourceIds": [
     "source-torchvision-googlenet",

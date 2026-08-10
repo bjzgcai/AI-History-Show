@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huopo-interactive-v5-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 8,
+    "eventId": "1990-otter",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "一条漂亮的归结规则真正进入软件系统后，最麻烦的还是证明规则本身吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "规则只是起点，工程难题是怎样在海量候选中迅速找到值得处理的子句。威廉·麦丘恩在阿贡国家实验室开发 OTTER，让一阶逻辑和等式推理的高性能自动证明成为研究者可以实际使用的工具。",
+            "sourceIds": ["source-otter-3-3-reference-manual"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "它不就是把归结方法写成速度更快的程序吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "远不止如此。OTTER 结合归结、超归结和参数调解，用项索引快速寻找可匹配公式；given-clause 循环则从待处理集合中逐步选择子句，再生成新的推论。不同模块共同决定搜索能否继续推进。",
+            "sourceIds": ["source-otter-3-3-reference-manual"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "既然是自动证明，为什么还要让用户调整权重和优先级？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "因为自动不等于没有策略。用户可以通过权重、优先级和推理规则引导庞大的证明空间，让系统优先处理更有希望的子句。OTTER 因而既适合逻辑实验，也能处理代数和组合数学问题。",
+            "sourceIds": ["source-otter-3-3-reference-manual"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "所以 OTTER 的里程碑，不是一条新公式，而是把推理变成了可反复实验的工具？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "对。它体现了自动推理从单一算法走向成熟软件系统的阶段，并为麦丘恩后续的 Prover9 等证明器积累了工程基础。研究者终于可以调节、运行并比较不同的证明策略。",
+            "sourceIds": [
+                "source-otter-3-3-reference-manual",
+                "source-a-spectrum-of-applications-of-automated-reasoning",
+                "source-checking-clinical-guidelines-using-automated-reasoning-tools"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-interactive-closing"
+        }
+    ]
+}

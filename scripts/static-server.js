@@ -18,7 +18,12 @@ const MIME = {
     '.gif': 'image/gif',
     '.webp': 'image/webp',
     '.svg': 'image/svg+xml',
-    '.ico': 'image/x-icon'
+    '.ico': 'image/x-icon',
+    '.mp3': 'audio/mpeg',
+    '.aac': 'audio/aac',
+    '.wav': 'audio/wav',
+    '.m4a': 'audio/mp4',
+    '.ogg': 'audio/ogg'
 };
 
 function getArg(name, fallback) {
@@ -57,6 +62,31 @@ function resolveRequestPath(url) {
     return filePath;
 }
 
+function parseByteRange(range, size) {
+    const match = /^bytes=(\d*)-(\d*)$/.exec(range);
+    if (!match || size <= 0 || (!match[1] && !match[2])) return null;
+
+    if (!match[1]) {
+        const suffixLength = Number(match[2]);
+        if (!Number.isSafeInteger(suffixLength) || suffixLength <= 0) return null;
+        return { start: Math.max(size - suffixLength, 0), end: size - 1 };
+    }
+
+    const start = Number(match[1]);
+    const requestedEnd = match[2] ? Number(match[2]) : size - 1;
+    if (
+        !Number.isSafeInteger(start) ||
+        !Number.isSafeInteger(requestedEnd) ||
+        start < 0 ||
+        start >= size ||
+        requestedEnd < start
+    ) {
+        return null;
+    }
+
+    return { start, end: Math.min(requestedEnd, size - 1) };
+}
+
 const server = http.createServer((req, res) => {
     if (req.method !== 'GET' && req.method !== 'HEAD') {
         res.writeHead(405, { 'Content-Type': 'text/plain; charset=utf-8' });
@@ -79,10 +109,44 @@ const server = http.createServer((req, res) => {
         }
 
         const ext = path.extname(filePath).toLowerCase();
-        res.writeHead(200, {
+        const headers = {
             'Content-Type': MIME[ext] || 'application/octet-stream',
-            'Cache-Control': 'no-cache'
-        });
+            'Cache-Control': 'no-cache',
+            'Accept-Ranges': 'bytes'
+        };
+
+        const range = req.headers.range;
+        if (range) {
+            const parsedRange = parseByteRange(range, stat.size);
+            if (!parsedRange) {
+                res.writeHead(416, {
+                    ...headers,
+                    'Content-Range': `bytes */${stat.size}`
+                });
+                res.end();
+                return;
+            }
+
+            const { start, end } = parsedRange;
+
+            res.writeHead(206, {
+                ...headers,
+                'Content-Length': end - start + 1,
+                'Content-Range': `bytes ${start}-${end}/${stat.size}`
+            });
+
+            if (req.method === 'HEAD') {
+                res.end();
+                return;
+            }
+
+            const rangeStream = fs.createReadStream(filePath, { start, end });
+            rangeStream.on('error', (error) => res.destroy(error));
+            rangeStream.pipe(res);
+            return;
+        }
+
+        res.writeHead(200, { ...headers, 'Content-Length': stat.size });
 
         if (req.method === 'HEAD') {
             res.end();
@@ -103,6 +167,10 @@ const server = http.createServer((req, res) => {
     });
 });
 
-server.listen(port, host, () => {
-    console.log(`Static presentation server listening at http://${host}:${port}`);
-});
+if (require.main === module) {
+    server.listen(port, host, () => {
+        console.log(`Static presentation server listening at http://${host}:${port}`);
+    });
+}
+
+module.exports = { parseByteRange };

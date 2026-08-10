@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "gaming-all-storyline-en-original-v1-2026-08-09",
+    "scopeId": "gaming-ai",
+    "sequenceIndex": 5,
+    "eventId": "1997-logistello",
+    "variantId": "gaming-ai",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "gaming-ai",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined Chinook. Now the camera turns to Logistello: Learning Evaluation for Othello and a new question along the same timeline: Why did researchers need Logistello: Learning Evaluation for Othello, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "Othello was small enough for deep search but rich enough that shallow material counting failed. By the 1990s, the key bottleneck was not just speed but how accurately a program could evaluate unstable midgame positions.",
+            "sourceIds": ["source-logistello-homepage"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "Logistello treated evaluation as a statistical learning problem over board patterns and game phases. Search still mattered, but the learned evaluator gave search a sharper sense of which positions were strategically promising.",
+            "sourceIds": ["source-logistello-homepage"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat Logistello as a bridge between classical game-tree search and machine-learned evaluation functions. Its legacy is the lesson that search quality can change dramatically when evaluation parameters are learned from large game-position corpora.",
+            "sourceIds": ["source-logistello-homepage"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with Deep Blue, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

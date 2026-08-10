@@ -1,0 +1,43 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "deep-learning-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "deep-learning",
+    "sequenceIndex": 17,
+    "eventId": "2014-highway-network",
+    "variantId": "deep-learning",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "deep-learning",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined Neural Machine Translation with Attention. Now the camera turns to Highway Networks and a new question along the same timeline: Why did researchers need Highway Networks, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "The key idea in Highway Networks was to add learnable carry gates to deep networks. When a layer did not need to rewrite information, the model could let signals pass through almost unchanged, turning very deep training from mandatory layer-by-layer rewriting into transformation only when needed.",
+            "sourceIds": ["source-highway-networks-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.background"
+        },
+        {
+            "role": "N",
+            "text": "Its place in deep-learning history is bridge-like: on one side, gating repaired trainability; on the other, ResNet used a simpler shortcut structure to carry the same optimization intuition into the mainstream.",
+            "sourceIds": ["source-highway-networks-paper", "source-resnet-follow-up-paper"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.context"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with ResNet, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

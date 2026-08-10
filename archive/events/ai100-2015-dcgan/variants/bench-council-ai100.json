@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-alec-radford",
-    "asset-2015-dcgan-conv-generator"
+    "asset-2015-dcgan-conv-generator",
+    "asset-ai100-2015-dcgan-audio-zh-original-v1",
+    "asset-ai100-2015-dcgan-audio-en-v1"
   ],
   "sourceIds": [
     "source-pytorch-dcgan-tutorial",

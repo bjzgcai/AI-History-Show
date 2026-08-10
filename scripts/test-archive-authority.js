@@ -11,7 +11,7 @@ const { archiveStorylines, milestones } = require('../milestones-data.js');
 const sourcePurposeTaxonomy = require('../archive/taxonomies/source-purposes.json');
 const sourceSchema = require('../archive/schemas/source.schema.json');
 const sourceTypeTaxonomy = require('../archive/taxonomies/source-types.json');
-const { compileArchive } = require('./archive-compiler.js');
+const { compileArchive, resolveAudioUrl } = require('./archive-compiler.js');
 const { generateArchiveData, normalizeGeneratedTime, writeOutputsAtomically } = require('./generate-archive-data.js');
 
 function createTempDir() {
@@ -147,6 +147,30 @@ for (const storylineFile of fs.readdirSync(path.join(__dirname, '..', 'archive',
 }
 console.log('PASS production compiler uses Archive-owned milestone identities');
 
+assert.equal(
+    resolveAudioUrl({
+        path: 'resources/audio/example.mp3',
+        deliveryUrl: 'https://media.example/audio/example.mp3',
+        storage: { publicUrl: 'https://s3.example/audio/example.mp3' }
+    }),
+    'https://media.example/audio/example.mp3',
+    'explicit audio delivery URLs should take priority'
+);
+assert.equal(
+    resolveAudioUrl({
+        path: 'resources/audio/example.mp3',
+        storage: { publicUrl: 'https://s3.example/audio/example.mp3' }
+    }),
+    'https://s3.example/audio/example.mp3',
+    'published remote URLs should take priority over the local fallback'
+);
+assert.equal(
+    resolveAudioUrl({ path: 'resources/audio/example.mp3', storage: {} }),
+    'resources/audio/example.mp3',
+    'audio assets should retain a local fallback until remote delivery is configured'
+);
+console.log('PASS audio delivery URL priority');
+
 for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'events'), { withFileTypes: true })) {
     if (!eventEntry.isDirectory()) continue;
     const eventDir = path.join(__dirname, '..', 'archive', 'events', eventEntry.name);
@@ -195,6 +219,48 @@ assert.deepEqual(
     'compiled Archive milestone IDs must be unique'
 );
 assert.deepEqual(archiveStorylines, compiledArchive.storylines, 'generated storyline metadata should match Archive');
+const dartmouthMilestone = compiledArchive.milestones.find(
+    (milestone) =>
+        milestone.id === 'milestone-1956-dartmouth' && milestone.storyline && milestone.storyline.id === 'deep-learning'
+);
+assert.ok(dartmouthMilestone, 'the Dartmouth milestone should compile for the deep-learning storyline');
+assert.deepEqual(
+    dartmouthMilestone.resources.audios.map((audio) => audio.language),
+    ['zh', 'en'],
+    'the Dartmouth milestone should expose its Chinese and English OSS narration audio'
+);
+assert.ok(
+    dartmouthMilestone.resources.audios.every(
+        (audio) =>
+            audio.url.startsWith('https://media.sciencearena.cn/audio/ai-history/releases/') &&
+            audio.storage?.provider === 'aliyun-oss' &&
+            audio.storage?.bucket === 'zgca-medias' &&
+            audio.storage?.objectKey.startsWith('audio/ai-history/releases/')
+    ),
+    'the Dartmouth narration should not depend on a local MP3 fallback'
+);
+const turingTestMilestone = compiledArchive.milestones.find(
+    (milestone) =>
+        milestone.id === 'milestone-1950-turing-test' &&
+        milestone.storyline &&
+        milestone.storyline.id === 'bench-council-ai100'
+);
+assert.ok(turingTestMilestone, 'the Turing Test milestone should compile for the AI100 storyline');
+assert.deepEqual(
+    turingTestMilestone.resources.audios.map((audio) => audio.language),
+    ['zh', 'en'],
+    'the AI100 runtime should select the interactive Chinese and English release audio'
+);
+assert.match(
+    turingTestMilestone.resources.audios[0].url,
+    /audio\/ai-history\/releases\/1950-turing-test-zh-interact-v1\.mp3$/,
+    'the Chinese runtime audio should use the interactive release URL'
+);
+assert.equal(
+    Object.hasOwn(turingTestMilestone.resources.audios[0], 'sourcePath'),
+    false,
+    'published runtime audio must not expose its local production source path'
+);
 console.log('PASS production compiler emits Archive provenance');
 
 for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'events'), { withFileTypes: true })) {

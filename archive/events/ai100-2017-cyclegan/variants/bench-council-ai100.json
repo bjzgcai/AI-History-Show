@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-ai100-2017-cyclegan-portrait3-lr",
-    "asset-2017-cyclegan-cycle-consistency"
+    "asset-2017-cyclegan-cycle-consistency",
+    "asset-ai100-2017-cyclegan-audio-zh-original-v1",
+    "asset-ai100-2017-cyclegan-audio-en-v1"
   ],
   "sourceIds": [
     "source-iccv-open-access-paper-page",

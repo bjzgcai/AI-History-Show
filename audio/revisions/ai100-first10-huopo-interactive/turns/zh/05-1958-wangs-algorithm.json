@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-zh-huopo-interactive-v5-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 5,
+    "eventId": "1958-wangs-algorithm",
+    "locale": "zh",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Logic Theorist 靠启发式寻找证明路径。王浩为什么又把注意力转向公式本身的形状？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "因为公式的结构本身就能提供下一步线索。王浩在 1950 年代末研究如何让机器按逻辑形状构造证明，并在 1960、1961 年发表“通过模式识别证明定理”系列论文。",
+            "sourceIds": ["source-proving-theorems-by-pattern-recognition-i"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "这里的“模式识别”是像看图一样识别图案吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "不是视觉图案，而是逻辑公式中的结构模式。算法先把命题或谓词演算公式转换成规则能够识别的形式，再按照连接词和量词反复拆分、简化，并检查各个分支是否满足闭合条件。",
+            "sourceIds": ["source-proving-theorems-by-pattern-recognition-i"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "那和把所有证明步骤都列出来相比，它真正省下了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "它把大量选择变成了由公式结构决定的规则变换，只在确实存在多种可能时保留搜索。机器不必不断猜下一条规则，而是先利用公式形状缩小空间。",
+            "sourceIds": ["source-proving-theorems-by-pattern-recognition-i"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "sourced-interactive-rewrite"
+        },
+        {
+            "role": "A",
+            "text": "所以自动推理开始从“聪明地猜”，转向“按结构执行”？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-interaction"
+        },
+        {
+            "role": "B",
+            "text": "可以这样概括。王氏算法证明形式逻辑能够高效转译成机器程序，是自动定理证明的重要早期成果，也为后来的证明过程、逻辑编程和 SAT 式推理提供了方法线索。",
+            "sourceIds": [
+                "source-proving-theorems-by-pattern-recognition-ii",
+                "source-rockefeller-university-digital-commons-wang-hao",
+                "source-proving-theorems-by-pattern-recognition-i"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-interactive-closing"
+        }
+    ]
+}

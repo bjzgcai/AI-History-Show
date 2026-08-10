@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 15,
+    "eventId": "1994-chinook",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "如果把「Chinook 跳棋程序」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。",
+            "sourceIds": ["source-chinook-project-home"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。 关键机制是alpha-beta 搜索加残局数据库，它把资料线索与可见的演示行为连接起来。",
+            "sourceIds": ["source-chinook-project-home"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 Chinook 视为游戏求解研究和高性能搜索的里程碑。它的长期影响在于展示专家评估、alpha-beta 搜索、开局知识和残局数据库如何结合并逼近完美对弈。",
+            "sourceIds": ["source-chinook-project-home"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「克里斯托弗·斯特雷奇 的跳棋程序」，再看「Chinook 跳棋程序」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-chinook-project-home",
+                "source-checkers-is-solved",
+                "source-chinook-publications",
+                "source-jonathan-schaeffer-portrait"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

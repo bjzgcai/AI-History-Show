@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 57,
+    "eventId": "ai100-2014-r-cnn",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined Squeeze-and-Excitation Networks. Now the camera turns to R-CNN and a new question along the same timeline: If we take R-CNN apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "Object detection lagged behind image classification because a detector had to localize many possible objects as well as recognize them. R-CNN connected region proposals with features transferred from a large pretrained convolutional network.",
+            "sourceIds": ["source-2014-r-cnn-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2014-r-cnn-membership", "claim-2014-r-cnn-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The system generates candidate regions, warps each region to a fixed size, extracts CNN features, and classifies the regions with category-specific models. Bounding-box regression then refines the proposed locations.",
+            "sourceIds": ["source-2014-r-cnn-primary"],
+            "claimIds": ["claim-2014-r-cnn-membership", "claim-2014-r-cnn-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat R-CNN as the starting point of the modern region-based detector family. Its accuracy gains were decisive even though repeated CNN computation made the original pipeline slow and cumbersome.",
+            "sourceIds": ["source-2014-r-cnn-primary", "source-2014-r-cnn-secondary"],
+            "claimIds": ["claim-2014-r-cnn-membership", "claim-2014-r-cnn-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside Squeeze-and-Excitation Networks, R-CNN reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-2014-r-cnn-primary",
+                "source-2014-r-cnn-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-2014-r-cnn-portrait"
+            ],
+            "claimIds": ["claim-2014-r-cnn-membership", "claim-2014-r-cnn-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

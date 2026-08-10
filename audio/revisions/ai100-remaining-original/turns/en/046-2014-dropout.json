@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 46,
+    "eventId": "2014-dropout",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Behind the technical name Dropout, what intuitive problem were researchers confronting?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "As networks grew larger, memorization became a practical training problem. Dropout offered a simple intervention that did not require changing the dataset.",
+            "sourceIds": ["source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The core idea is to hide random units during training so hidden features cannot rely too strongly on each other. The key mechanism is Randomly thinned networks for regularization, which links the source material to the visible demo behavior.",
+            "sourceIds": ["source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat dropout as a simple and effective regularization idea whose value depends on architecture and scale. Its long-term legacy is the training-time noise principle, now taught alongside normalization, augmentation, and other regularizers.",
+            "sourceIds": ["source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Dropout mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-improving-neural-networks-by-preventing-co-adaptation",
+                "source-pytorch-torch-nn-dropout",
+                "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

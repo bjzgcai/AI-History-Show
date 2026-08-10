@@ -49,7 +49,9 @@
   "assetIds": [
     "asset-ai100-1969-relu-kunihiko-fukushima-candc",
     "asset-1969-relu-activation",
-    "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02"
+    "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02",
+    "asset-ai100-1969-relu-audio-zh-original-v1",
+    "asset-ai100-1969-relu-audio-en-v1"
   ],
   "sourceIds": [
     "source-fukushima-analog-threshold-elements",

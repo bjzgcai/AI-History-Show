@@ -1,0 +1,61 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 39,
+    "eventId": "1957-perceptron",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "If we take The Perceptron and Connectionism apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "In the 1950s, researchers were exploring machines inspired by neural and psychological models of perception.",
+            "sourceIds": ["source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "A perceptron computes a weighted sum of inputs and fires when the sum crosses a threshold; mistakes trigger weight updates. The key mechanism is Linear threshold learning machine, which links the source material to the visible demo behavior.",
+            "sourceIds": ["source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat Rosenblatt's perceptron as a foundational neural-learning model and a symbol of early connectionist optimism. Its long-term legacy is the debate over linear separability and the path from single threshold units to multilayer representation learning.",
+            "sourceIds": ["source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside SNARC, The Perceptron and Connectionism reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-cornell-chronicle-perceptron-retrospective",
+                "source-smithsonian-mark-i-perceptron-object-record",
+                "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

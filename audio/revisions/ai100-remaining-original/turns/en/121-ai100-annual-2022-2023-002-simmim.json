@@ -1,0 +1,111 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 121,
+    "eventId": "ai100-annual-2022-2023-002-simmim",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "The previous story examined Swin Transformer V2. Now the camera turns to Simmim and a new question along the same timeline: Turn the clock back to 2022. What problem was Simmim actually trying to solve?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "Masked image modeling emerged as a way to bring self-supervised pretraining ideas from language models into computer vision, but early systems often introduced tokenizers, clustering targets or substantial decoder machinery. SimMIM tested whether those additions were essential and deliberately reduced the task to a small set of controllable design choices.",
+            "sourceIds": ["source-cvf-paper-page", "source-microsoft-research-publication"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-simple-masked-modeling",
+                "claim-scale-results"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The input image is randomly masked with moderately large patches, and the visible content is processed by a standard vision backbone. A lightweight linear head predicts the raw RGB values of masked pixels, making the reconstruction target simple enough that representation quality can be studied without confounding tokenizer or decoder complexity.",
+            "sourceIds": ["source-cvf-paper-page", "source-microsoft-research-publication"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-simple-masked-modeling",
+                "claim-scale-results"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat SimMIM as evidence that strong masked-image pretraining does not require elaborate discrete targets or a heavy reconstruction stack. Its lasting value is methodological clarity: the simple recipe became a clean baseline for comparing masking strategy, target choice, model scale and data scale, while the open implementation made those comparisons easier to reproduce.",
+            "sourceIds": [
+                "source-cvf-paper-page",
+                "source-microsoft-research-publication",
+                "source-implementation-repository"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-simple-masked-modeling",
+                "claim-scale-results"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Simmim mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-002-simmim-portrait-han-hu",
+                "source-cvf-paper-page",
+                "source-microsoft-research-publication",
+                "source-implementation-repository",
+                "source-zhenda-xie-github",
+                "source-zheng-zhang-profile",
+                "source-zheng-zhang-name-record",
+                "source-yue-cao-github",
+                "source-han-hu-profile",
+                "source-annual-002-simmim-portrait-yue-cao",
+                "source-simmim-official-teaser"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-contributors-cross-verified",
+                "claim-simple-masked-modeling",
+                "claim-scale-results"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

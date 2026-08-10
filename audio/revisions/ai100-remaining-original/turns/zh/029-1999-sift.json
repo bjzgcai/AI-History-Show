@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 29,
+    "eventId": "1999-sift",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「Lasso 回归」。现在把镜头转向「SIFT」，沿着这条故事线换一个问题：研究者为什么需要「SIFT」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "视觉系统需要能在视角和尺度变化下匹配同一物体的特征。",
+            "sourceIds": ["source-object-recognition-from-local-scale-invariant-features"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "SIFT 构建尺度空间、寻找显著关键点、分配方向，并保存梯度直方图描述子。 关键机制是尺度不变局部特征，它把资料线索与可见的演示行为连接起来。",
+            "sourceIds": ["source-object-recognition-from-local-scale-invariant-features"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 SIFT 视为深度学习之前计算机视觉中标志性的手工特征。它的长期影响在于塑造了局部描述子、运动恢复结构流程、匹配基准和稳健视觉对应背后的特征工程思路。",
+            "sourceIds": ["source-object-recognition-from-local-scale-invariant-features"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「HOG 方向梯度直方图」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

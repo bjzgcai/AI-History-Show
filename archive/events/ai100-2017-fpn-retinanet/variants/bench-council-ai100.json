@@ -48,7 +48,9 @@
   ],
   "assetIds": [
     "asset-2017-fpn-retinanet-portrait",
-    "asset-2017-fpn-retinanet-explainer"
+    "asset-2017-fpn-retinanet-explainer",
+    "asset-ai100-2017-fpn-retinanet-audio-zh-original-v1",
+    "asset-ai100-2017-fpn-retinanet-audio-en-v1"
   ],
   "sourceIds": [
     "source-2017-fpn-retinanet-primary",

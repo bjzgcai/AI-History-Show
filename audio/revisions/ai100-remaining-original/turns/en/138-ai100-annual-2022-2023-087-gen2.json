@@ -1,0 +1,113 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 138,
+    "eventId": "ai100-annual-2022-2023-087-gen2",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "What is most interesting about Gen2: the result itself, or the way it reframed the problem?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Text-to-image diffusion models had become broadly usable, but generating coherent motion over many frames was substantially harder. Runway's February 2023 Gen-2 presentation brought eight video-conditioning workflows into a public creative context and made prompt-driven video a visible product category.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-official-page-byline",
+                "claim-eight-modes",
+                "claim-self-reported-preference",
+                "claim-multimodal-video",
+                "claim-structure-transfer"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Gen-2 combines semantic prompts with optional image or video references so creators can specify content, appearance and structure at different levels. Its eight public modes cover generation, transformation and selective editing, but the page does not disclose a complete architecture; the earlier Gen-1 paper is therefore used only as technical lineage, not as a Gen-2 specification.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-official-page-byline",
+                "claim-eight-modes",
+                "claim-self-reported-preference",
+                "claim-multimodal-video",
+                "claim-structure-transfer"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat Gen-2 as an important commercialization milestone in generative video rather than as a fully documented research architecture. Its influence lies in normalizing text-to-video and image-to-video creation, setting expectations for later systems on motion quality, temporal consistency and controllability.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-official-page-byline",
+                "claim-eight-modes",
+                "claim-self-reported-preference",
+                "claim-multimodal-video",
+                "claim-structure-transfer"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "As today's systems grow larger, which lessons from Gen2 still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-anastasis-homepage",
+                "source-anastasis-ray-summit",
+                "source-anastasis-cognitive-interview",
+                "source-gen2-official-image",
+                "source-gen2-official-t2v-example",
+                "source-gen1-paper",
+                "source-gen1-overview-figure",
+                "source-runway-brand-guidelines",
+                "source-runway-logo"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-official-page-byline",
+                "claim-eight-modes",
+                "claim-self-reported-preference",
+                "claim-multimodal-video",
+                "claim-structure-transfer"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

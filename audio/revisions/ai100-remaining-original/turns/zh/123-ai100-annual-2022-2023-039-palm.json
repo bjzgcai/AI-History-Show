@@ -1,0 +1,89 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 123,
+    "eventId": "ai100-annual-2022-2023-039-palm",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "如果把「PaLM」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "到 2022 年，缩放规律推动语言模型持续增大，但高效训练这些模型需要新的分布式系统。PaLM 把模型研究与 Pathways 结合，展示了一个稠密模型如何跨越数千个加速器。",
+            "sourceIds": ["source-palm-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "PaLM 是在多语种文本与代码混合语料上训练的仅解码器 Transformer。其关键工程成果是在 6,144 个 TPU v4 芯片上进行高效训练，同时通过评测追踪能力如何随规模增长到 5,400 亿参数。",
+            "sourceIds": ["source-palm-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 PaLM 视为大模型与加速器基础设施协同设计的里程碑。它还提供了有影响力的证据，说明某些语言模型能力可能随规模出现跃升，而不是平滑增长。",
+            "sourceIds": ["source-palm-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「Whisper」，再看「PaLM」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-039-palm-portrait-jeff-dean",
+                "source-palm-paper",
+                "source-palm-google-research",
+                "source-palm-paper-bigbench-figure"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

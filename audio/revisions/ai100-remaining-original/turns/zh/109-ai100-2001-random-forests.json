@@ -1,0 +1,69 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 109,
+    "eventId": "ai100-2001-random-forests",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "上一段讲到「Bagging 装袋法」。现在把镜头转向「随机森林」，沿着这条故事线换一个问题：把时间拨回2001年，「随机森林」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "Bagging 降低了决策树方差，但高度相关的树仍容易犯相似错误。随机森林在每次划分时加入额外随机性，使集成内部具有更强多样性。",
+            "sourceIds": ["source-2001-random-forests-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2001-random-forests-membership", "claim-2001-random-forests-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "每棵树使用自助样本训练，并在每个节点只考虑随机选取的一部分特征。对大量低相关树进行投票或平均，可以在较少调参的情况下获得强劲精度。",
+            "sourceIds": ["source-2001-random-forests-primary"],
+            "claimIds": ["claim-2001-random-forests-membership", "claim-2001-random-forests-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把随机森林视为最持久的通用机器学习方法之一。它在结构化数据上仍具有竞争力，并提供特征重要性、样本邻近性和不确定性分析工具。",
+            "sourceIds": ["source-2001-random-forests-primary", "source-2001-random-forests-secondary"],
+            "claimIds": ["claim-2001-random-forests-membership", "claim-2001-random-forests-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「随机森林」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-2001-random-forests-primary",
+                "source-2001-random-forests-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-2001-random-forests-portrait"
+            ],
+            "claimIds": ["claim-2001-random-forests-membership", "claim-2001-random-forests-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

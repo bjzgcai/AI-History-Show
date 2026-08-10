@@ -1,0 +1,70 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 25,
+    "eventId": "ai100-1967-knn",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "上一段讲到「归一化切分与谱聚类」。现在把镜头转向「KNN 最近邻」，沿着这条故事线换一个问题：把时间拨回1967年，「KNN 最近邻」究竟在解决一个什么样的难题？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。",
+            "sourceIds": ["source-nearest-neighbor-pattern-classification"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "查询点获得附近训练样本中最常见的标签。",
+            "sourceIds": ["source-nearest-neighbor-pattern-classification"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 KNN 视为基础性的非参数基线：简单、可解释，并且在距离有意义时表现很强。它的长期影响在于说明存储样本和局部相似性本身就可以构成模型，而不只是训练数据。",
+            "sourceIds": ["source-nearest-neighbor-pattern-classification"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "「KNN 最近邻」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+            "sourceIds": [
+                "source-nearest-neighbor-pattern-classification",
+                "source-stanford-hosted-paper-pdf",
+                "source-k-nearest-neighbors-algorithm-overview",
+                "source-scikit-learn-nearest-neighbors-documentation",
+                "source-thomas-cover-stanford-profile"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

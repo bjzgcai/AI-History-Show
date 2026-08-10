@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 'use strict';
 
+/**
+ * Completed one-time figure registry migration, retained only for read-only
+ * historical reproduction and audit reporting. It is not an editing workflow.
+ */
+
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -10,7 +15,6 @@ const ROOT = path.resolve(__dirname, '..');
 const EVENTS_DIR = path.join(ROOT, 'archive', 'events');
 const FIGURES_PATH = path.join(ROOT, 'archive', 'figures', 'figures.json');
 const REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'figure-migration.md');
-const WRITE = process.argv.includes('--write');
 const REVIEWED_AT = '2026-08-04';
 const FIGURE_ID_OVERRIDES = new Map([['1997-deep-blue:2', 'a-joseph-hoane-jr']]);
 const FIGURE_NAME_OVERRIDES = new Map([
@@ -29,11 +33,6 @@ const ORGANIZATION_NAMES = new Map([
 
 function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
-}
-
-function writeJson(filePath, value) {
-    fs.mkdirSync(path.dirname(filePath), { recursive: true });
-    fs.writeFileSync(filePath, `${JSON.stringify(value, null, 2)}\n`);
 }
 
 function localized(value, locale) {
@@ -570,11 +569,6 @@ function rewriteArchive(groups, figures, assetsByPath) {
                 .map(({ primary: _primary, ...relation }) => relation);
         }
 
-        if (WRITE) {
-            writeJson(entry.eventPath, entry.event);
-            if (fs.existsSync(entry.assetsPath)) writeJson(entry.assetsPath, entry.assets);
-            for (const variant of entry.variants) writeJson(variant.filePath, variant.data);
-        }
         if (!eventId) throw new Error('Unexpected empty event id.');
     }
 }
@@ -599,7 +593,7 @@ function writeReport(groups, figures) {
     const lines = [
         '# Figure Registry Migration',
         '',
-        `- Mode: ${WRITE ? 'write' : 'report only'}`,
+        '- Mode: report only (retired one-time migration)',
         `- Figure relations: ${groups.length}`,
         `- Global identities: ${figures.length}`,
         `- Person identities without a default avatar: ${missingAvatars.length}`,
@@ -628,16 +622,18 @@ function writeReport(groups, figures) {
 }
 
 function main() {
+    if (process.argv.includes('--write')) {
+        throw new Error('Figure registry migration is retired; --write is no longer supported.');
+    }
     const { events, assetsByPath } = loadArchive();
     const groups = buildGroups(events);
     assignFigureIds(groups);
     const existingFigures = fs.existsSync(FIGURES_PATH) ? readJson(FIGURES_PATH) : [];
     const figures = buildRegistry(groups, assetsByPath, existingFigures);
     rewriteArchive(groups, figures, assetsByPath);
-    if (WRITE) writeJson(FIGURES_PATH, figures);
     writeReport(groups, figures);
     console.log(`Figure migration report: ${path.relative(ROOT, REPORT_PATH)}`);
-    console.log(`${WRITE ? 'Migrated' : 'Analyzed'} ${groups.length} relations into ${figures.length} identities.`);
+    console.log(`Analyzed ${groups.length} relations into ${figures.length} identities.`);
 }
 
 if (require.main === module) main();

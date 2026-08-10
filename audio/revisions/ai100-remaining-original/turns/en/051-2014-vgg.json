@@ -1,0 +1,61 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 51,
+    "eventId": "2014-vgg",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "If we take VGG Networks apart, which idea truly changed the direction of research?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "After AlexNet, the field knew that large CNNs could win ImageNet, but the design space was still messy. VGG asked how far a simple homogeneous design could go if depth was increased carefully.",
+            "sourceIds": ["source-very-deep-convolutional-networks-for-large-scale-image-recognition"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Instead of mixing many filter sizes, VGG stacks small convolutions in a regular pattern. The network becomes deeper without turning the architecture into a collection of special cases.",
+            "sourceIds": ["source-very-deep-convolutional-networks-for-large-scale-image-recognition"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat VGG as an important reference architecture, not a state-of-the-art deployment choice. Its long-term legacy is clarity: it still teaches depth, pretrained visual features, and baseline comparison even though newer models are more efficient.",
+            "sourceIds": ["source-very-deep-convolutional-networks-for-large-scale-image-recognition"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Seen alongside AlexNet and the ImageNet Breakthrough, VGG Networks reveals how the same technical question can echo across different eras.",
+            "sourceIds": [
+                "source-oxford-vgg-very-deep-convnets",
+                "source-torchvision-vgg-model-family",
+                "source-very-deep-convolutional-networks-for-large-scale-image-recognition"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

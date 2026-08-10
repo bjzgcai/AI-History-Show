@@ -1,0 +1,97 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 130,
+    "eventId": "ai100-annual-2022-2023-035-llama",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Behind the technical name LLaMa, what intuitive problem were researchers confronting?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Frontier language models were becoming larger and less accessible, while scaling-law research showed that parameter count alone did not determine compute-efficient training. LLaMA explored how smaller base models trained on more tokens could remain capable while being less expensive to run.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-model-family",
+                "claim-public-data"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The team trained decoder-only transformers at four sizes using a large mixture of publicly available text and code. More training tokens were allocated to the smaller models, making the 7B and 13B variants practical research targets rather than merely reduced versions of the largest model.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-model-family",
+                "claim-public-data"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat the first LLaMA release as a turning point for research on adaptable foundation models outside a small set of hosted APIs. Its compact checkpoints catalyzed instruction tuning, low-rank adaptation, quantization and a broad open-model ecosystem, even though the original weights were released under research-oriented access terms.",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-model-family",
+                "claim-public-data"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "LLaMa mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-primary-record",
+                "source-openalex-record",
+                "source-benchcouncil-annual",
+                "source-annual-035-llama-portrait-edouard-grave",
+                "source-meta-announcement",
+                "source-llama-repository",
+                "source-edouard-github-profile",
+                "source-llama-official-image"
+            ],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-model-family",
+                "claim-public-data"
+            ],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

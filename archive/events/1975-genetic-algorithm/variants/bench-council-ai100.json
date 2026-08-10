@@ -17,7 +17,9 @@
   "assetIds": [
     "asset-1975-genetic-algorithm-john-henry-holland",
     "asset-1975-genetic-algorithm-population-cycle",
-    "asset-1975-genetic-algorithm-chromosome-crossover"
+    "asset-1975-genetic-algorithm-chromosome-crossover",
+    "asset-1975-genetic-algorithm-audio-zh-original-v1",
+    "asset-1975-genetic-algorithm-audio-en-v1"
   ],
   "sourceIds": [
     "source-deap-evolutionary-computation-framework",

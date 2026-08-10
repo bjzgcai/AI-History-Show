@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 12,
+    "eventId": "1970-shrdlu",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "What is most interesting about SHRDLU: the result itself, or the way it reframed the problem?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Early language programs often handled isolated sentences. SHRDLU made language, reference, memory, and action share one miniature world.",
+            "sourceIds": ["source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The system understood utterances by grounding them in blocks, spatial relations, and procedures that could actually change the scene. The key mechanism is Blocks-world language understanding, which links the source material to the visible demo behavior.",
+            "sourceIds": ["source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat SHRDLU as a classic demonstration of both the promise and brittleness of microworld AI. Its long-term legacy is showing that language understanding can look powerful when grounded in a tightly constrained world model, while also exposing the limits of that constraint.",
+            "sourceIds": ["source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "As today's systems grow larger, which lessons from SHRDLU still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-terry-winograd-stanford-computer-science",
+                "source-terry-winograd-oral-history-cbi",
+                "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

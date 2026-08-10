@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 125,
+    "eventId": "ai100-annual-2022-2023-059-chain-of-thought-prompting",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「InstructGPT」。现在把镜头转向「Chain-of-Thought Prompting」，沿着这条故事线换一个问题：研究者为什么需要「Chain-of-Thought Prompting」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "少样本提示让语言模型从示例中学习任务，但直接给答案的示例在多步问题上经常失败。思维链提示在问题与答案之间插入完整的推理过程。",
+            "sourceIds": ["source-cot-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "模型先看到若干自然语言推理示例，再在给出最终答案前生成自己的中间步骤。这种分解让模型在 token 空间获得更多计算过程，也使错误更容易检查。",
+            "sourceIds": ["source-cot-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把思维链提示视为激发大模型推理能力的基础接口，同时提醒流畅的推理文字不一定忠实反映模型内部原因。该方法直接推动了自洽性以及许多后续推理时策略。",
+            "sourceIds": ["source-cot-paper", "source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-core-method",
+                "claim-historical-significance"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「ChatGPT」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 137,
+    "eventId": "ai100-annual-2022-2023-101-segment-anything",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The previous story examined ControlNet. Now the camera turns to Segment anything and a new question along the same timeline: Why did researchers need Segment anything, and where were the existing methods getting stuck?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "Segmentation models were usually trained for a fixed label set or narrow task, so adapting them required new annotations and retraining. Segment Anything pursued a foundation-model approach in which prompts define the object of interest at inference time.",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-promptable-segmentation",
+                "claim-sa1b-scale"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "A large image encoder computes an embedding once, while separate prompt and mask decoders respond quickly to points, boxes or mask inputs. Ambiguity-aware output and a model-assisted data engine make it possible to support interactive use and grow a very large segmentation dataset.",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-promptable-segmentation",
+                "claim-sa1b-scale"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts generally treat Segment Anything as a foundation-model moment for image segmentation because one promptable interface transfers across many object types and downstream tasks. Its model and data release became common infrastructure for annotation, editing, tracking, medical imaging experiments and multimodal systems.",
+            "sourceIds": ["source-primary-record", "source-arxiv-paper"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-promptable-segmentation",
+                "claim-sa1b-scale"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "The thread continues with Gen2, where researchers push the problem one step further.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-en-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 4,
+    "eventId": "1965-simon-ai-prediction",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Behind the technical name Simon's Twenty-Year AI Prediction, what intuitive problem were researchers confronting?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "By the mid-1960s, symbolic AI had produced impressive demonstrations in theorem proving, game playing and problem solving. Simon's prediction is important because it shows how these bounded successes could be translated into public confidence about machines replacing broad human work.",
+            "sourceIds": ["source-open-library-book-metadata"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The emotional mechanism is extrapolation: if reasoning can be formalized in one domain, perhaps all work will soon be formalized. That leap made early AI feel historically inevitable even when compute, data and real-world robustness were still fragile.",
+            "sourceIds": ["source-open-library-book-metadata"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat the prediction as a classic example of AI over-optimism rather than as a precise technical claim. Its legacy is a warning that public timelines can become part of the technology itself by shaping funding, media attention and later backlash.",
+            "sourceIds": ["source-open-library-book-metadata"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Simon's Twenty-Year AI Prediction mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-herbert-simon-commons-portrait",
+                "source-open-library-book-metadata",
+                "source-open-library-metadata-search-result",
+                "source-herbert-a-simon-overview",
+                "source-nobel-prize-simon-facts",
+                "source-progress-in-artificial-intelligence-overview"
+            ],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 17,
+    "eventId": "1959-pandemonium",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「深蓝」。现在把镜头转向「Pandemonium 感知架构」，沿着这条故事线换一个问题：研究者为什么需要「Pandemonium 感知架构」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "早期 AI 需要比一次性手写模板更不脆弱的模式识别模型。",
+            "sourceIds": ["source-pandemonium-a-paradigm-for-learning"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "多个小型识别器响应特征；较强响应向上传播，直到形成获胜解释。 关键机制是分层特征检测与投票，它把资料线索与可见的演示行为连接起来。",
+            "sourceIds": ["source-pandemonium-a-paradigm-for-learning"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 Pandemonium 视为有影响力的早期分布式模式识别模型。它的长期影响在于把感知理解为分层检测器之间的证据累积，这一思想在集成方法和分层识别系统中仍有回响。",
+            "sourceIds": ["source-pandemonium-a-paradigm-for-learning"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「框架」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

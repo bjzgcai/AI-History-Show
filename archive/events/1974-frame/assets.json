@@ -79,5 +79,85 @@
       "variant:bench-council-ai100"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-1974-frame-audio-zh-original-v1",
+    "type": "audio",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1974-frame-zh-original-v1.mp3",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "1974-frame 中文原版科普音频",
+      "en": "1974-frame original Chinese audio narration"
+    },
+    "subcaption": {
+      "zh": "中文原版科普讲述，供中文页面播放。",
+      "en": "Original Chinese science narration used on the Chinese page."
+    },
+    "sourceId": "source-marvin-minsky-obituary-mit-news",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于本展览的事件科普音频播放。",
+        "en": "Used for event narration in this exhibition."
+      }
+    },
+    "language": "zh",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1974-frame-zh-original-v1.mp3",
+    "storage": {
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/1974-frame-zh-original-v1.mp3",
+      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-zh-original-v1-2026-08-09/audio/bench-council-ai100/storyline/zh/18-1974-frame.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1974-frame-audio-en-v1",
+    "type": "audio",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1974-frame-en-v1.mp3",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "1974-frame 英文科普音频",
+      "en": "1974-frame English audio narration"
+    },
+    "subcaption": {
+      "zh": "英文原版科普讲述，供英文页面播放。",
+      "en": "Original English science narration used on the English page."
+    },
+    "sourceId": "source-marvin-minsky-obituary-mit-news",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于本展览的事件科普音频播放。",
+        "en": "Used for event narration in this exhibition."
+      }
+    },
+    "language": "en",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1974-frame-en-v1.mp3",
+    "storage": {
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/1974-frame-en-v1.mp3",
+      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-en-original-v1-2026-08-09/audio/bench-council-ai100/storyline/en/18-1974-frame.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
   }
 ]

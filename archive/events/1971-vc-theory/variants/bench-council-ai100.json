@@ -16,7 +16,9 @@
   "visual": "transcript",
   "assetIds": [
     "asset-1971-vc-theory-vladimir-vapnik",
-    "asset-1971-vc-theory-generalization"
+    "asset-1971-vc-theory-generalization",
+    "asset-1971-vc-theory-audio-zh-interact-v1",
+    "asset-1971-vc-theory-audio-en-v1"
   ],
   "sourceIds": [
     "source-on-the-uniform-convergence-of-relative-frequencies",

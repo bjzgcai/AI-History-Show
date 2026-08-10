@@ -1,0 +1,73 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-en-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 6,
+    "eventId": "1973-lighthill-report",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "What is most interesting about The Lighthill Report and the First AI Winter: the result itself, or the way it reframed the problem?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "The report followed a period of ambitious AI promises in the United Kingdom and the United States. Its importance lies in shifting the question from whether AI demonstrations were clever to whether they justified sustained public funding.",
+            "sourceIds": ["source-lighthill-report-archive"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Lighthill separated limited successes from the harder problem of building systems that work outside constrained domains. This critique exposed the mismatch between public expectations and the field's ability to scale.",
+            "sourceIds": ["source-lighthill-report-archive"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat the Lighthill Report as a major policy marker of the first AI winter, especially in the UK. Its legacy is the reminder that AI progress is judged not only by prototypes, but also by institutions deciding whether the promise still deserves trust.",
+            "sourceIds": ["source-lighthill-report-archive"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "As today's systems grow larger, which lessons from The Lighthill Report and the First AI Winter still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-mactutor-lighthill-portrait",
+                "source-donald-michie-portrait",
+                "source-lighthill-controversy-debate-archive",
+                "source-royal-institution-theatre-commons",
+                "source-lighthill-report-archive",
+                "source-edinburgh-ai-history-perspective",
+                "source-edinburgh-freddy-robot-archive",
+                "source-ai-winter-overview"
+            ],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

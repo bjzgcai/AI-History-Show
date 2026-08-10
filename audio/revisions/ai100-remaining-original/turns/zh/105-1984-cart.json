@@ -1,0 +1,61 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 105,
+    "eventId": "1984-cart",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「策略梯度定理」。现在把镜头转向「CART 决策树」，沿着这条故事线换一个问题：如果把「CART 决策树」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "决策规则很有吸引力，因为它们可解释，但它们需要有纪律的统计过程。CART 为分类与数值输出都提供了这样的过程。",
+            "sourceIds": ["source-classification-and-regression-trees"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "CART 通过选择让子节点更同质的划分来生成树，再进行剪枝，使最终模型平衡拟合度与简洁性。 关键机制是递归划分与剪枝，它把资料线索与可见的演示行为连接起来。",
+            "sourceIds": ["source-classification-and-regression-trees"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 CART 视为基础性的可解释模型，也是更强树集成方法背后的基本单元。它的长期影响在于划分与剪枝逻辑被用于解释、表格建模、随机森林和梯度提升。",
+            "sourceIds": ["source-classification-and-regression-trees"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「策略梯度定理」，再看「CART 决策树」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-scikit-learn-decisiontreeclassifier",
+                "source-r-rpart-package",
+                "source-classification-and-regression-trees"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

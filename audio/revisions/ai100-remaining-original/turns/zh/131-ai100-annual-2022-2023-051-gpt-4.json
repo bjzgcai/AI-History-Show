@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 131,
+    "eventId": "ai100-annual-2022-2023-051-gpt-4",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "研究者为什么需要「GPT-4」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "大语言模型已经展示出较强的少样本学习与指令跟随能力，但领先系统仍主要以纯文本助手呈现。GPT-4 在一次前沿模型发布中同时带来图像输入、更强基准表现和更广泛的公开安全评测。",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-multimodal-input",
+                "claim-limitations"
+            ],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "GPT-4 使用基于 Transformer 的下一 token 预测系统，但技术报告有意不披露具体实现细节。其产品行为结合大规模预训练与后训练对齐，公开证据重点放在已测能力、局限和风险缓解，而不是可复现的架构配方。",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-multimodal-input",
+                "claim-limitations"
+            ],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 GPT-4 视为 2023 年多模态通用助手的重要能力门槛，也把它视为评测不透明前沿系统的典型案例。它既推动高能力模型广泛部署，也加剧了围绕可复现性、基准饱和、安全测试和模型访问的讨论。",
+            "sourceIds": ["source-primary-record"],
+            "claimIds": [
+                "claim-annual-membership",
+                "claim-publication-record",
+                "claim-contributor-record",
+                "claim-multimodal-input",
+                "claim-limitations"
+            ],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「Claude」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-en-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 2,
+    "eventId": "1942-asimov-runaround",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Why does Asimov's Three Laws in Runaround deserve its own place in the history of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Runaround appeared in a wartime science-fiction magazine culture where robots were becoming recurring industrial and moral figures. It matters because the story made robot safety a problem of rules, priorities and failure modes rather than only a monster narrative.",
+            "sourceIds": ["source-astounding-march-1942-archive"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "The emotional move is containment through ethics: fear is answered by a designed rule system. Yet the story also shows that rules can collide, which keeps the anxiety alive inside the solution itself.",
+            "sourceIds": ["source-astounding-march-1942-archive"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Experts in science-fiction studies generally treat Asimov's robot stories as foundational examples of fictional machine ethics. AI researchers do not treat the Three Laws as an engineering solution, but the cultural template still shapes how publics imagine safe artificial agents.",
+            "sourceIds": ["source-astounding-march-1942-archive"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "As today's systems grow larger, which lessons from Asimov's Three Laws in Runaround still matter, and which limits deserve to be questioned again?",
+            "sourceIds": [
+                "source-isaac-asimov-commons-portrait",
+                "source-astounding-march-1942-archive",
+                "source-asimov-online-three-laws-faq",
+                "source-runaround-story-overview",
+                "source-science-fiction-encyclopedia-asimov"
+            ],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

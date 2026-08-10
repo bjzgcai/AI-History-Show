@@ -1,0 +1,62 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 33,
+    "eventId": "ai100-1999-nmf",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "上一段讲到「Kernel PCA」。现在把镜头转向「非负矩阵分解」，沿着这条故事线换一个问题：如果把「非负矩阵分解」拆开来看，真正改变研究方向的部分是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "N",
+            "text": "丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。",
+            "sourceIds": ["source-learning-the-parts-of-objects-by-non-negative-matrix-factorization"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "数据矩阵被近似为非负基部件与非负激活的乘积。",
+            "sourceIds": ["source-learning-the-parts-of-objects-by-non-negative-matrix-factorization"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 NMF 视为可解释潜在因子的基础方法。它的长期影响在于部件化视角影响了主题建模、源分离、推荐系统和可解释表示学习。",
+            "sourceIds": ["source-learning-the-parts-of-objects-by-non-negative-matrix-factorization"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看「Kernel PCA」，再看「非负矩阵分解」，我们能听见同一个技术问题跨越年代后的回响。",
+            "sourceIds": [
+                "source-nature-article-page",
+                "source-pubmed-record-for-the-nature-paper",
+                "source-scikit-learn-nmf-documentation",
+                "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

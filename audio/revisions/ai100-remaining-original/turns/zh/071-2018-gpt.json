@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 71,
+    "eventId": "2018-gpt",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "研究者为什么需要「GPT」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，把语言模型先在大规模无标注文本上训练，再适配下游任务。它确立了解码器式预训练模式，后来扩展为 GPT-2、GPT-3 和现代语言模型。",
+            "sourceIds": ["source-improving-language-understanding-by-generative-pre-training"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "Transformer 解码器在大规模文本语料上预测下一个令牌，然后把任务样例格式化为序列进行适配。同一个生成目标由此成为许多语言任务的灵活接口。",
+            "sourceIds": ["source-improving-language-understanding-by-generative-pre-training"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 GPT 视为通向当今大语言模型的解码器式规模化路线起点。它的长期影响在于生成式预训练配方把下一个令牌预测变成语言任务的通用接口。",
+            "sourceIds": ["source-improving-language-understanding-by-generative-pre-training"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「视觉 Transformer」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

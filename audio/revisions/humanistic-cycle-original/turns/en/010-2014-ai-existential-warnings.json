@@ -1,0 +1,71 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-cycle-storyline-en-original-v1-2026-08-09",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 10,
+    "eventId": "2014-ai-existential-warnings",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Behind the technical name Public Warnings About Advanced AI Risk, what intuitive problem were researchers confronting?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "The warnings followed rapid public excitement around machine learning, autonomous systems and large-scale computing. They mattered because they shifted AI from a story of progress into a story that also demanded governance, restraint and foresight.",
+            "sourceIds": ["source-guardian-on-musk-remarks"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The emotional mechanism is scale panic: if AI capabilities keep expanding, small control mistakes might become civilization-scale risks. Whether one accepts the strongest claims or not, the discourse changed what the public expected responsible AI actors to discuss.",
+            "sourceIds": ["source-guardian-on-musk-remarks"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat the 2014-2015 period as a moment when AI safety became a mainstream public concern. Its legacy is a new expectation that capability claims should be accompanied by risk, governance and alignment questions.",
+            "sourceIds": ["source-guardian-on-musk-remarks"],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Public Warnings About Advanced AI Risk mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-elon-musk-commons-portrait",
+                "source-stephen-hawking-commons-portrait",
+                "source-guardian-on-musk-remarks",
+                "source-bbc-on-hawking-warning",
+                "source-future-of-life-institute-open-letter",
+                "source-expert-ai-forecast-survey"
+            ],
+            "claimIds": ["claim-branch-summary", "claim-event-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

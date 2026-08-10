@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-en-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 85,
+    "eventId": "ai100-2015-diffusion-model",
+    "variantId": "bench-council-ai100",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "The previous story examined Variational Autoencoder. Now the camera turns to Diffusion Model and a new question along the same timeline: Turn the clock back to 2015. What problem was Diffusion Model actually trying to solve?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        },
+        {
+            "role": "B",
+            "text": "Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems.",
+            "sourceIds": ["source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds like a promising direction. What mechanism actually makes it work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Data is slowly corrupted into noise during training, and a neural network learns the reverse steps that turn noise back into samples.",
+            "sourceIds": ["source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea outlive one paper or experiment? What did later researchers actually inherit?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Experts generally treat diffusion models as one of the major generative-model families after GANs and VAEs. Its long-term legacy is the iterative denoising recipe that powers many high-quality image, audio, and video generators.",
+            "sourceIds": ["source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Diffusion Model mattered not only as a result, but as a method that later researchers could test, adapt, and extend.",
+            "sourceIds": [
+                "source-denoising-diffusion-probabilistic-models",
+                "source-diffusion-model-overview",
+                "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics"
+            ],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 23,
+    "eventId": "1996-dbscan",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "N",
+            "text": "研究者为什么需要「DBSCAN 密度聚类」？当时已有的方法究竟卡在了哪里？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "许多聚类方法偏好圆形簇，并要求分析前指定簇数量。",
+            "sourceIds": ["source-a-density-based-algorithm-for-discovering-clusters"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "如果一个点在 epsilon 范围内有足够邻居，它就是核心点；簇通过密度可达链条扩展。 关键机制是基于 epsilon 与 MinPts 的密度可达，它把资料线索与可见的演示行为连接起来。",
+            "sourceIds": ["source-a-density-based-algorithm-for-discovering-clusters"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "专家通常把 DBSCAN 视为标准的基于密度聚类方法，尤其适用于空间数据和不规则簇形状。它的长期影响在于核心点、边界点和噪声点的语言让异常处理和任意形状簇变得实用。",
+            "sourceIds": ["source-a-density-based-algorithm-for-discovering-clusters"],
+            "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到「归一化切分与谱聚类」，我们会看到研究者怎样把问题继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

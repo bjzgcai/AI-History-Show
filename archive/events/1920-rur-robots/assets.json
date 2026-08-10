@@ -68,5 +68,85 @@
       "en": "Branch timeline visual",
       "zh": "分支时间线视觉图"
     }
+  },
+  {
+    "id": "asset-1920-rur-robots-audio-zh-original-v1",
+    "type": "audio",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1920-rur-robots-zh-original-v1.mp3",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "1920-rur-robots 中文原版科普音频",
+      "en": "1920-rur-robots original Chinese audio narration"
+    },
+    "subcaption": {
+      "zh": "中文原版科普讲述，供中文页面播放。",
+      "en": "Original Chinese science narration used on the Chinese page."
+    },
+    "sourceId": "source-karel-capek-commons-portrait",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于本展览的事件科普音频播放。",
+        "en": "Used for event narration in this exhibition."
+      }
+    },
+    "language": "zh",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1920-rur-robots-zh-original-v1.mp3",
+    "storage": {
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/1920-rur-robots-zh-original-v1.mp3",
+      "sourcePath": "resources/audio/generated/remaining-storylines-original-v1/humanistic-cycle-storyline-zh-original-v1-2026-08-09/audio/humanistic-cycle/storyline/zh/01-1920-rur-robots.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1920-rur-robots-audio-en-v1",
+    "type": "audio",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1920-rur-robots-en-v1.mp3",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "1920-rur-robots 英文科普音频",
+      "en": "1920-rur-robots English audio narration"
+    },
+    "subcaption": {
+      "zh": "英文原版科普讲述，供英文页面播放。",
+      "en": "Original English science narration used on the English page."
+    },
+    "sourceId": "source-karel-capek-commons-portrait",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于本展览的事件科普音频播放。",
+        "en": "Used for event narration in this exhibition."
+      }
+    },
+    "language": "en",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1920-rur-robots-en-v1.mp3",
+    "storage": {
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/1920-rur-robots-en-v1.mp3",
+      "sourcePath": "resources/audio/generated/remaining-storylines-original-v1/humanistic-cycle-storyline-en-original-v1-2026-08-09/audio/humanistic-cycle/storyline/en/01-1920-rur-robots.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
   }
 ]

@@ -21,16 +21,15 @@ For a resolved event or variant figure, avatar selection follows this order:
 
 Set `useDefaultAvatar: true` on a relationship when a storyline intentionally bypasses an event-specific avatar. Every `avatarAssetId` must reference an asset whose `figureIds` contains the same `figureId`. Different person identities may not share one registry default-avatar path.
 
-## Migration workflow
+## Historical migration report
 
-Use the report mode before changing Archive data:
+The one-time figure registry migration is complete. Its script remains available only to reproduce the read-only audit report:
 
 ```bash
 npm run report:figure-migration
-npm run migrate:figure-references
 ```
 
-The migration is rerunnable. It preserves registry-only identities that are not event contributors, such as a historical opponent or another person depicted only in an archived photograph.
+Do not use the migration script to edit Archive data. Make ongoing identity and relationship changes through the Archive files or `/admin` workflow; registry-only identities that are not event contributors remain preserved in `figures.json`.
 
 After changing identities, relationships, or person-bearing assets, run:
 
