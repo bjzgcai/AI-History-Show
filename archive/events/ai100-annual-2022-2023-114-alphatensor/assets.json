@@ -124,7 +124,7 @@
   {
     "id": "asset-ai100-annual-2022-2023-114-alphatensor-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3",
+    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "ai100-annual-2022-2023-114-alphatensor 中文原版科普音频",
@@ -147,11 +147,11 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3",
+    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3",
     "storage": {
-      "provider": "bza-s3",
-      "bucket": "ai-history",
-      "objectKey": "audio/releases/ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-zh-original-v1-2026-08-09/audio/bench-council-ai100/storyline/zh/128-ai100-annual-2022-2023-114-alphatensor.mp3",
       "contentType": "audio/mpeg",
       "cacheControl": "public, max-age=31536000, immutable"
@@ -164,7 +164,7 @@
   {
     "id": "asset-ai100-annual-2022-2023-114-alphatensor-audio-en-v1",
     "type": "audio",
-    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-114-alphatensor-en-v1.mp3",
+    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "ai100-annual-2022-2023-114-alphatensor 英文科普音频",
@@ -187,11 +187,11 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-annual-2022-2023-114-alphatensor-en-v1.mp3",
+    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-en-v1.mp3",
     "storage": {
-      "provider": "bza-s3",
-      "bucket": "ai-history",
-      "objectKey": "audio/releases/ai100-annual-2022-2023-114-alphatensor-en-v1.mp3",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-en-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-en-original-v1-2026-08-09/audio/bench-council-ai100/storyline/en/128-ai100-annual-2022-2023-114-alphatensor.mp3",
       "contentType": "audio/mpeg",
       "cacheControl": "public, max-age=31536000, immutable"

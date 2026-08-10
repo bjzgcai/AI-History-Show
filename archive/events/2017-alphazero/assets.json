@@ -134,7 +134,7 @@
   {
     "id": "asset-2017-alphazero-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2017-alphazero-zh-original-v1.mp3",
+    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2017-alphazero-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2017-alphazero 中文原版科普音频",
@@ -157,11 +157,11 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2017-alphazero-zh-original-v1.mp3",
+    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2017-alphazero-zh-original-v1.mp3",
     "storage": {
-      "provider": "bza-s3",
-      "bucket": "ai-history",
-      "objectKey": "audio/releases/2017-alphazero-zh-original-v1.mp3",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/2017-alphazero-zh-original-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/gaming-all-storyline-zh-original-v1-2026-08-09/audio/gaming-ai/storyline/zh/09-2017-alphazero.mp3",
       "contentType": "audio/mpeg",
       "cacheControl": "public, max-age=31536000, immutable"
@@ -174,7 +174,7 @@
   {
     "id": "asset-2017-alphazero-audio-en-v1",
     "type": "audio",
-    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2017-alphazero-en-v1.mp3",
+    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2017-alphazero-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2017-alphazero 英文科普音频",
@@ -197,11 +197,11 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2017-alphazero-en-v1.mp3",
+    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2017-alphazero-en-v1.mp3",
     "storage": {
-      "provider": "bza-s3",
-      "bucket": "ai-history",
-      "objectKey": "audio/releases/2017-alphazero-en-v1.mp3",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/2017-alphazero-en-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/gaming-all-storyline-en-original-v1-2026-08-09/audio/gaming-ai/storyline/en/09-2017-alphazero.mp3",
       "contentType": "audio/mpeg",
       "cacheControl": "public, max-age=31536000, immutable"

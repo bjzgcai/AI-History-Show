@@ -131,7 +131,7 @@
   {
     "id": "asset-2016-alphago-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-alphago-zh-original-v1.mp3",
+    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2016-alphago 中文原版科普音频",
@@ -154,11 +154,11 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-alphago-zh-original-v1.mp3",
+    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
     "storage": {
-      "provider": "bza-s3",
-      "bucket": "ai-history",
-      "objectKey": "audio/releases/2016-alphago-zh-original-v1.mp3",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-zh-original-v1-2026-08-09/audio/bench-council-ai100/storyline/zh/98-2016-alphago.mp3",
       "contentType": "audio/mpeg",
       "cacheControl": "public, max-age=31536000, immutable"
@@ -173,7 +173,7 @@
   {
     "id": "asset-2016-alphago-audio-en-v1",
     "type": "audio",
-    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-alphago-en-v1.mp3",
+    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2016-alphago-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2016-alphago 英文科普音频",
@@ -196,11 +196,11 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2016-alphago-en-v1.mp3",
+    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2016-alphago-en-v1.mp3",
     "storage": {
-      "provider": "bza-s3",
-      "bucket": "ai-history",
-      "objectKey": "audio/releases/2016-alphago-en-v1.mp3",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/2016-alphago-en-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-en-original-v1-2026-08-09/audio/bench-council-ai100/storyline/en/98-2016-alphago.mp3",
       "contentType": "audio/mpeg",
       "cacheControl": "public, max-age=31536000, immutable"

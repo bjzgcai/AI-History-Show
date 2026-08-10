@@ -80,7 +80,7 @@
   {
     "id": "asset-2023-agents-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2023-agents-zh-original-v1.mp3",
+    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2023-agents-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2023-agents 中文原版科普音频",
@@ -103,11 +103,11 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2023-agents-zh-original-v1.mp3",
+    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2023-agents-zh-original-v1.mp3",
     "storage": {
-      "provider": "bza-s3",
-      "bucket": "ai-history",
-      "objectKey": "audio/releases/2023-agents-zh-original-v1.mp3",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/2023-agents-zh-original-v1.mp3",
       "sourcePath": "resources/audio/generated/remaining-storylines-original-v1/deep-learning-remaining-storyline-zh-original-v1-2026-08-09/audio/deep-learning/storyline/zh/28-2023-agents.mp3",
       "contentType": "audio/mpeg",
       "cacheControl": "public, max-age=31536000, immutable"
@@ -120,7 +120,7 @@
   {
     "id": "asset-2023-agents-audio-en-v1",
     "type": "audio",
-    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2023-agents-en-v1.mp3",
+    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2023-agents-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2023-agents 英文科普音频",
@@ -143,11 +143,11 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/2023-agents-en-v1.mp3",
+    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/2023-agents-en-v1.mp3",
     "storage": {
-      "provider": "bza-s3",
-      "bucket": "ai-history",
-      "objectKey": "audio/releases/2023-agents-en-v1.mp3",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/2023-agents-en-v1.mp3",
       "sourcePath": "resources/audio/generated/remaining-storylines-original-v1/deep-learning-remaining-storyline-en-original-v1-2026-08-09/audio/deep-learning/storyline/en/28-2023-agents.mp3",
       "contentType": "audio/mpeg",
       "cacheControl": "public, max-age=31536000, immutable"

@@ -58,17 +58,17 @@ npm run audio:release -- archive-sync-originals --link-shared-variants --apply
 
 ## Revision 脚本
 
-| 文件                               | 职责                                                      |
-| ---------------------------------- | --------------------------------------------------------- |
-| `audio-pipeline.mjs`               | 统一编排 `build/generate/validate/check/activate/review`  |
-| `check-audio-workflow-status.mjs`  | 审计 Git 源码、生成物、审听数据、Archive 与公开 S3 状态   |
-| `build-audio-revision.mjs`         | 校验来源 turns，编译 TTS 文本和 revision plan             |
-| `generate-audio-revision.mjs`      | 调用对话 TTS、规范化 MP3、生成 overlay                    |
-| `validate-audio-revision.mjs`      | 校验 turns、音频文件、时长、格式、响度和峰值              |
-| `build-audio-review-page-data.mjs` | 从激活的 revision overlay 与已跟踪 turns 生成审听台数据   |
-| `sync-original-audio-release.mjs`  | 将四条启用故事线的双语原版批次关联到 Archive 与 S3 发布键 |
-| `generate-dialogue-audio.mjs`      | 底层 A/B/N/Summary 多角色 TTS 工具                        |
-| `lib/audio-revision.mjs`           | revision 路径、配置加载和文本编译公共函数                 |
+| 文件                               | 职责                                                       |
+| ---------------------------------- | ---------------------------------------------------------- |
+| `audio-pipeline.mjs`               | 统一编排 `build/generate/validate/check/activate/review`   |
+| `check-audio-workflow-status.mjs`  | 审计 Git 源码、生成物、审听数据、Archive 与公开 S3 状态    |
+| `build-audio-revision.mjs`         | 校验来源 turns，编译 TTS 文本和 revision plan              |
+| `generate-audio-revision.mjs`      | 调用对话 TTS、规范化 MP3、生成 overlay                     |
+| `validate-audio-revision.mjs`      | 校验 turns、音频文件、时长、格式、响度和峰值               |
+| `build-audio-review-page-data.mjs` | 从激活的 revision overlay 与已跟踪 turns 生成审听台数据    |
+| `sync-original-audio-release.mjs`  | 将四条启用故事线的双语原版批次关联到 Archive 与 OSS 发布键 |
+| `generate-dialogue-audio.mjs`      | 底层 A/B/N/Summary 多角色 TTS 工具                         |
+| `lib/audio-revision.mjs`           | revision 路径、配置加载和文本编译公共函数                  |
 
 ## 完整原版批次
 

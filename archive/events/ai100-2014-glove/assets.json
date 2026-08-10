@@ -168,7 +168,7 @@
   {
     "id": "asset-ai100-2014-glove-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-glove-zh-original-v1.mp3",
+    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/ai100-2014-glove-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "ai100-2014-glove 中文原版科普音频",
@@ -191,11 +191,11 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-glove-zh-original-v1.mp3",
+    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/ai100-2014-glove-zh-original-v1.mp3",
     "storage": {
-      "provider": "bza-s3",
-      "bucket": "ai-history",
-      "objectKey": "audio/releases/ai100-2014-glove-zh-original-v1.mp3",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/ai100-2014-glove-zh-original-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-zh-original-v1-2026-08-09/audio/bench-council-ai100/storyline/zh/76-ai100-2014-glove.mp3",
       "contentType": "audio/mpeg",
       "cacheControl": "public, max-age=31536000, immutable"
@@ -208,7 +208,7 @@
   {
     "id": "asset-ai100-2014-glove-audio-en-v1",
     "type": "audio",
-    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-glove-en-v1.mp3",
+    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/ai100-2014-glove-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "ai100-2014-glove 英文科普音频",
@@ -231,11 +231,11 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/ai100-2014-glove-en-v1.mp3",
+    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/ai100-2014-glove-en-v1.mp3",
     "storage": {
-      "provider": "bza-s3",
-      "bucket": "ai-history",
-      "objectKey": "audio/releases/ai100-2014-glove-en-v1.mp3",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/ai100-2014-glove-en-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-en-original-v1-2026-08-09/audio/bench-council-ai100/storyline/en/76-ai100-2014-glove.mp3",
       "contentType": "audio/mpeg",
       "cacheControl": "public, max-age=31536000, immutable"

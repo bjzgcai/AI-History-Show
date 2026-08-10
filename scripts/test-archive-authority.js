@@ -227,15 +227,15 @@ assert.ok(dartmouthMilestone, 'the Dartmouth milestone should compile for the de
 assert.deepEqual(
     dartmouthMilestone.resources.audios.map((audio) => audio.language),
     ['zh', 'en'],
-    'the Dartmouth milestone should expose its Chinese and English S3 narration audio'
+    'the Dartmouth milestone should expose its Chinese and English OSS narration audio'
 );
 assert.ok(
     dartmouthMilestone.resources.audios.every(
         (audio) =>
-            audio.url.startsWith('https://s3.inner.bza.edu.cn/') &&
-            audio.storage?.provider === 'bza-s3' &&
-            audio.storage?.bucket === 'ai-history' &&
-            audio.storage?.objectKey.startsWith('audio/releases/')
+            audio.url.startsWith('https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/') &&
+            audio.storage?.provider === 'aliyun-oss' &&
+            audio.storage?.bucket === 'zgca-medias' &&
+            audio.storage?.objectKey.startsWith('audio/ai-history/releases/')
     ),
     'the Dartmouth narration should not depend on a local MP3 fallback'
 );
@@ -253,7 +253,7 @@ assert.deepEqual(
 );
 assert.match(
     turingTestMilestone.resources.audios[0].url,
-    /audio\/releases\/1950-turing-test-zh-interact-v1\.mp3$/,
+    /audio\/ai-history\/releases\/1950-turing-test-zh-interact-v1\.mp3$/,
     'the Chinese runtime audio should use the interactive release URL'
 );
 assert.equal(

@@ -288,12 +288,12 @@ function validateAudioStorage(filePath, asset) {
     }
 
     const storage = asset.storage;
-    if (storage.provider !== 'bza-s3') addError(filePath, `${label} storage.provider must be bza-s3.`);
-    if (storage.bucket !== 'ai-history') addError(filePath, `${label} storage.bucket must be ai-history.`);
-    if (!hasText(storage.objectKey) || !/^audio\//.test(storage.objectKey)) {
-        addError(filePath, `${label} storage.objectKey must stay under audio/.`);
+    if (storage.provider !== 'aliyun-oss') addError(filePath, `${label} storage.provider must be aliyun-oss.`);
+    if (storage.bucket !== 'zgca-medias') addError(filePath, `${label} storage.bucket must be zgca-medias.`);
+    if (!hasText(storage.objectKey) || !/^audio\/ai-history\/releases\//.test(storage.objectKey)) {
+        addError(filePath, `${label} storage.objectKey must stay under audio/ai-history/releases/.`);
     } else if (storage.objectKey.includes('..') || storage.objectKey.includes('\\')) {
-        addError(filePath, `${label} storage.objectKey must be a normalized S3 key.`);
+        addError(filePath, `${label} storage.objectKey must be a normalized OSS object key.`);
     }
     if (!hasText(storage.contentType) || !/^audio\//.test(storage.contentType)) {
         addError(filePath, `${label} storage.contentType must be an audio MIME type.`);

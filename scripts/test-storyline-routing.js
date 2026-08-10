@@ -260,18 +260,18 @@ assert.equal(
                 {
                     language: 'zh',
                     url: 'resources/audio/local.mp3',
-                    storage: { provider: 'bza-s3' }
+                    storage: { provider: 'local' }
                 },
                 {
                     language: 'zh',
-                    url: 'https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/example.mp3',
-                    storage: { provider: 'bza-s3' }
+                    url: 'https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/example.mp3',
+                    storage: { provider: 'aliyun-oss' }
                 }
             ]
         }
     }).url,
-    'https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/example.mp3',
-    'audio selection should prefer an actual S3 delivery URL over a same-language local fallback'
+    'https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/example.mp3',
+    'audio selection should prefer an actual OSS delivery URL over a same-language local fallback'
 );
 assert.equal(
     getPrimaryAudio({ resources: { audios: [{ language: 'en', url: 'https://s3.example/audio-en.mp3' }] } }),
@@ -280,14 +280,20 @@ assert.equal(
 );
 for (const locale of ['zh', 'en']) {
     milestoneViewLocale.value = locale;
-    const nonS3Milestones = generatedMilestones
+    const nonOssMilestones = generatedMilestones
         .map((milestone) => ({ milestone, audio: getPrimaryAudio(milestone) }))
-        .filter(({ audio }) => !audio || !String(audio.url || '').startsWith('https://s3.inner.bza.edu.cn/'))
+        .filter(
+            ({ audio }) =>
+                !audio ||
+                !String(audio.url || '').startsWith(
+                    'https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/'
+                )
+        )
         .map(({ milestone }) => `${milestone.storyline.id}:${milestone.archiveEventId}`);
     assert.deepEqual(
-        nonS3Milestones,
+        nonOssMilestones,
         [],
-        `every ${locale} milestone narration should resolve to the configured S3 delivery endpoint`
+        `every ${locale} milestone narration should resolve to the configured OSS delivery endpoint`
     );
 }
 assert.match(

@@ -204,10 +204,12 @@ function inspectArchive() {
             const deliveryUrl = String(audio.deliveryUrl || audio.path || '').trim();
             const objectKey = String(audio.storage?.objectKey || '').trim();
             if (
-                audio.storage?.provider !== 'bza-s3' ||
-                audio.storage?.bucket !== 'ai-history' ||
-                !objectKey.startsWith('audio/releases/') ||
-                !/^https:\/\/s3\.inner\.bza\.edu\.cn\//.test(deliveryUrl)
+                audio.storage?.provider !== 'aliyun-oss' ||
+                audio.storage?.bucket !== 'zgca-medias' ||
+                !objectKey.startsWith('audio/ai-history/releases/') ||
+                !/^https:\/\/zgca-medias\.oss-cn-beijing\.aliyuncs\.com\/audio\/ai-history\/releases\//.test(
+                    deliveryUrl
+                )
             ) {
                 deliveryErrors.push(`${eventId}/${audio.id}`);
             }
@@ -281,7 +283,7 @@ export async function buildWorkflowReport(options = {}) {
         ...archive.deliveryErrors.map((item) => `Archive audio delivery is invalid: ${item}`)
     ];
     const remote = options.remote ? await inspectRemote(archive.assets) : null;
-    if (remote?.failed.length) errors.push(`${remote.failed.length} published S3 audio object(s) are unreachable`);
+    if (remote?.failed.length) errors.push(`${remote.failed.length} published OSS audio object(s) are unreachable`);
     return {
         ok: errors.length === 0 && (!options.strict || warnings.length === 0),
         generatedAt: new Date().toISOString(),
@@ -310,13 +312,13 @@ function printReport(report) {
     );
     console.log(
         `Archive: ${report.archive.storylineEntryCount} storyline entries, ${report.archive.uniqueEventCount} events, ` +
-            `${report.archive.releaseObjectCount} S3 release asset(s), ${report.archive.referencedAudioAssetCount} selected by variants, ` +
+            `${report.archive.releaseObjectCount} OSS release asset(s), ${report.archive.referencedAudioAssetCount} selected by variants, ` +
             `${report.archive.missingAudio.length} missing locale binding(s)`
     );
     console.log(
         report.remote
-            ? `Remote: ${report.remote.passed}/${report.remote.checked} public S3 object(s) reachable`
-            : 'Remote: not checked; pass --remote to probe public S3 objects'
+            ? `Remote: ${report.remote.passed}/${report.remote.checked} public OSS object(s) reachable`
+            : 'Remote: not checked; pass --remote to probe public OSS objects'
     );
     for (const warning of report.warnings) console.warn(`WARN ${warning}`);
     for (const error of report.errors) console.error(`ERROR ${error}`);

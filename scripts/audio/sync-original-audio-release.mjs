@@ -9,8 +9,8 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const require = createRequire(import.meta.url);
 const { orderVariantAssetIds } = require('../event-figure-rules');
 const { loadFigureRegistry, resolveFigureRelations } = require('../figure-registry');
-const BUCKET = 'ai-history';
-const PUBLIC_ROOT = 'https://s3.inner.bza.edu.cn/innovation%3Aai-history';
+const BUCKET = 'zgca-medias';
+const PUBLIC_ROOT = 'https://zgca-medias.oss-cn-beijing.aliyuncs.com';
 const CACHE_CONTROL = 'public, max-age=31536000, immutable';
 const PREFERRED_STORYLINE_ID = 'bench-council-ai100';
 const RELEASES = [
@@ -157,7 +157,7 @@ function replaceTopLevelArray(relativePath, propertyName, value) {
 }
 
 function objectKey(eventId, locale) {
-    return `audio/releases/${eventId}-${locale === 'zh' ? 'zh-original-v1' : 'en-v1'}.mp3`;
+    return `audio/ai-history/releases/${eventId}-${locale === 'zh' ? 'zh-original-v1' : 'en-v1'}.mp3`;
 }
 
 function assetId(eventId, locale) {
@@ -242,7 +242,7 @@ function createAudioAsset({ eventId, locale, sourcePath, sourceId, variantIds })
         language: locale,
         deliveryUrl: `${PUBLIC_ROOT}/${key}`,
         storage: {
-            provider: 'bza-s3',
+            provider: 'aliyun-oss',
             bucket: BUCKET,
             objectKey: key,
             sourcePath,

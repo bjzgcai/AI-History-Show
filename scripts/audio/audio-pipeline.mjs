@@ -14,7 +14,7 @@ const VALIDATE_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'validate-audio-revision.mj
 const REVIEW_BUILD_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'build-audio-review-page-data.mjs');
 const STATUS_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'check-audio-workflow-status.mjs');
 const ARCHIVE_SYNC_SCRIPT = path.join(AUDIO_SCRIPT_ROOT, 'sync-original-audio-release.mjs');
-const S3_SCRIPT = path.join(ROOT, 'scripts/sync-audio-s3.js');
+const OSS_SCRIPT = path.join(ROOT, 'scripts/sync-audio-oss.js');
 const ACTIVE_OVERLAYS_PATH = path.join(ROOT, 'tools/audio-review-console/active-overlays.json');
 
 function run(scriptPath, args = []) {
@@ -88,7 +88,7 @@ function release(args) {
     if (!['check', 'manifest', 'push', 'verify', 'publish-access'].includes(command)) {
         fail('release requires check, manifest, push, verify, publish-access, or archive-sync-originals');
     }
-    run(S3_SCRIPT, [command, ...commandArgs]);
+    run(OSS_SCRIPT, [command, ...commandArgs]);
 }
 
 function main() {

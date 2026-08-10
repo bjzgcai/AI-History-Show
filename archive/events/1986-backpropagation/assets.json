@@ -180,7 +180,7 @@
   {
     "id": "asset-1986-backpropagation-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1986-backpropagation-zh-original-v1.mp3",
+    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1986-backpropagation-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1986-backpropagation 中文原版科普音频",
@@ -203,11 +203,11 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1986-backpropagation-zh-original-v1.mp3",
+    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1986-backpropagation-zh-original-v1.mp3",
     "storage": {
-      "provider": "bza-s3",
-      "bucket": "ai-history",
-      "objectKey": "audio/releases/1986-backpropagation-zh-original-v1.mp3",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/1986-backpropagation-zh-original-v1.mp3",
       "sourcePath": "resources/audio/generated/remaining-storylines-original-v1/deep-learning-remaining-storyline-zh-original-v1-2026-08-09/audio/deep-learning/storyline/zh/06-1986-backpropagation.mp3",
       "contentType": "audio/mpeg",
       "cacheControl": "public, max-age=31536000, immutable"
@@ -220,7 +220,7 @@
   {
     "id": "asset-1986-backpropagation-audio-en-v1",
     "type": "audio",
-    "path": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1986-backpropagation-en-v1.mp3",
+    "path": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1986-backpropagation-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1986-backpropagation 英文科普音频",
@@ -243,11 +243,11 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://s3.inner.bza.edu.cn/innovation%3Aai-history/audio/releases/1986-backpropagation-en-v1.mp3",
+    "deliveryUrl": "https://zgca-medias.oss-cn-beijing.aliyuncs.com/audio/ai-history/releases/1986-backpropagation-en-v1.mp3",
     "storage": {
-      "provider": "bza-s3",
-      "bucket": "ai-history",
-      "objectKey": "audio/releases/1986-backpropagation-en-v1.mp3",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/1986-backpropagation-en-v1.mp3",
       "sourcePath": "resources/audio/generated/remaining-storylines-original-v1/deep-learning-remaining-storyline-en-original-v1-2026-08-09/audio/deep-learning/storyline/en/06-1986-backpropagation.mp3",
       "contentType": "audio/mpeg",
       "cacheControl": "public, max-age=31536000, immutable"

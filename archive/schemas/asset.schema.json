@@ -5,13 +5,7 @@
     "type": "array",
     "items": {
         "type": "object",
-        "required": [
-            "id",
-            "type",
-            "path",
-            "role",
-            "caption"
-        ],
+        "required": ["id", "type", "path", "role", "caption"],
         "properties": {
             "id": {
                 "$ref": "shared.schema.json#/$defs/archiveId"
@@ -45,7 +39,7 @@
                 "type": "object",
                 "properties": {
                     "provider": {
-                        "const": "bza-s3"
+                        "const": "aliyun-oss"
                     },
                     "bucket": {
                         "type": "string",
@@ -53,7 +47,7 @@
                     },
                     "objectKey": {
                         "type": "string",
-                        "pattern": "^audio/"
+                        "pattern": "^audio/ai-history/releases/"
                     },
                     "sourcePath": {
                         "type": "string",
@@ -72,12 +66,7 @@
                         "format": "uri"
                     }
                 },
-                "required": [
-                    "provider",
-                    "bucket",
-                    "objectKey",
-                    "contentType"
-                ],
+                "required": ["provider", "bucket", "objectKey", "contentType"],
                 "additionalProperties": false
             },
             "figureIds": {
@@ -124,14 +113,10 @@
         },
         "anyOf": [
             {
-                "required": [
-                    "sourceId"
-                ]
+                "required": ["sourceId"]
             },
             {
-                "required": [
-                    "sourceIds"
-                ]
+                "required": ["sourceIds"]
             }
         ],
         "additionalProperties": true,
@@ -143,15 +128,10 @@
                             "const": "audio"
                         }
                     },
-                    "required": [
-                        "type"
-                    ]
+                    "required": ["type"]
                 },
                 "then": {
-                    "required": [
-                        "language",
-                        "storage"
-                    ]
+                    "required": ["language", "storage"]
                 }
             }
         ]
