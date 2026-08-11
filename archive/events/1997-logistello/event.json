@@ -128,8 +128,8 @@
           "en": "Interactive game replay for the gaming AI storyline."
         },
         "duration": {
-          "zh": "32 秒",
-          "en": "32 seconds"
+          "zh": "42 秒",
+          "en": "42 seconds"
         },
         "fps": 24,
         "generator": "scripts/game-evolution/render_game_record.py"

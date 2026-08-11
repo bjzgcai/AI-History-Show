@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-11 08:28
+// 生成时间: 2026-08-11 08:43
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 194, errors 0
 
@@ -8523,8 +8523,8 @@ const milestones = [
             "en": "Interactive game replay for the gaming AI storyline."
           },
           "duration": {
-            "zh": "28 秒",
-            "en": "28 seconds"
+            "zh": "36 秒",
+            "en": "36 seconds"
           },
           "fps": 24,
           "generator": "scripts/game-evolution/render_game_record.py",
@@ -56201,8 +56201,8 @@ const milestones = [
             "en": "Interactive game replay for the gaming AI storyline."
           },
           "duration": {
-            "zh": "42 秒",
-            "en": "42 seconds"
+            "zh": "65 秒",
+            "en": "65 seconds"
           },
           "fps": 24,
           "generator": "scripts/game-evolution/render_game_record.py",
@@ -95132,8 +95132,8 @@ const milestones = [
             "en": "Interactive game replay for the gaming AI storyline."
           },
           "duration": {
-            "zh": "42 秒",
-            "en": "42 seconds"
+            "zh": "65 秒",
+            "en": "65 seconds"
           },
           "fps": 24,
           "generator": "scripts/game-evolution/render_game_record.py",
@@ -101312,8 +101312,8 @@ const milestones = [
             "en": "Interactive game replay for the gaming AI storyline."
           },
           "duration": {
-            "zh": "42 秒",
-            "en": "42 seconds"
+            "zh": "65 秒",
+            "en": "65 seconds"
           },
           "fps": 24,
           "generator": "scripts/game-evolution/render_game_record.py",
@@ -103032,8 +103032,8 @@ const milestones = [
             "en": "Interactive game replay for the gaming AI storyline."
           },
           "duration": {
-            "zh": "32 秒",
-            "en": "32 seconds"
+            "zh": "42 秒",
+            "en": "42 seconds"
           },
           "fps": 24,
           "generator": "scripts/game-evolution/render_game_record.py",
@@ -103866,8 +103866,8 @@ const milestones = [
             "en": "Interactive game replay for the gaming AI storyline."
           },
           "duration": {
-            "zh": "28 秒",
-            "en": "28 seconds"
+            "zh": "36 秒",
+            "en": "36 seconds"
           },
           "fps": 24,
           "generator": "scripts/game-evolution/render_game_record.py",
