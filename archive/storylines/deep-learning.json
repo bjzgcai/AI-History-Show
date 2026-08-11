@@ -22,7 +22,6 @@
     },
     {
       "eventId": "1957-perceptron",
-      "variant": "deep-learning",
       "order": 20,
       "enabled": true,
       "milestoneId": "milestone-1957-perceptron"
@@ -59,63 +58,54 @@
     },
     {
       "eventId": "1989-cnn",
-      "variant": "deep-learning",
       "order": 60,
       "enabled": true,
       "milestoneId": "milestone-1989-cnn"
     },
     {
       "eventId": "1997-lstm",
-      "variant": "deep-learning",
       "order": 70,
       "enabled": true,
       "milestoneId": "milestone-1997-lstm"
     },
     {
       "eventId": "2006-dbn",
-      "variant": "deep-learning",
       "order": 80,
       "enabled": true,
       "milestoneId": "milestone-deep-learning-2006-dbn"
     },
     {
       "eventId": "2009-imagenet",
-      "variant": "deep-learning",
       "order": 90,
       "enabled": true,
       "milestoneId": "milestone-deep-learning-2009-imagenet"
     },
     {
       "eventId": "2012-alexnet",
-      "variant": "deep-learning",
       "order": 100,
       "enabled": true,
       "milestoneId": "milestone-2012-alexnet"
     },
     {
       "eventId": "2014-vgg",
-      "variant": "deep-learning",
       "order": 110,
       "enabled": true,
       "milestoneId": "milestone-deep-learning-2014-vgg"
     },
     {
       "eventId": "2015-googlenet-inception",
-      "variant": "deep-learning",
       "order": 120,
       "enabled": true,
       "milestoneId": "milestone-deep-learning-2015-googlenet-inception"
     },
     {
       "eventId": "2014-gan",
-      "variant": "deep-learning",
       "order": 130,
       "enabled": true,
       "milestoneId": "milestone-2014-gan"
     },
     {
       "eventId": "2014-attention",
-      "variant": "deep-learning",
       "order": 140,
       "enabled": true,
       "milestoneId": "milestone-2014-attention"
@@ -128,49 +118,42 @@
     },
     {
       "eventId": "2015-resnet",
-      "variant": "deep-learning",
       "order": 160,
       "enabled": true,
       "milestoneId": "milestone-2015-resnet"
     },
     {
       "eventId": "ai100-2015-diffusion-model",
-      "variant": "deep-learning",
       "order": 170,
       "enabled": true,
       "milestoneId": "milestone-deep-learning-ai100-2015-diffusion-model"
     },
     {
       "eventId": "2016-densenet",
-      "variant": "deep-learning",
       "order": 180,
       "enabled": true,
       "milestoneId": "milestone-2016-densenet"
     },
     {
       "eventId": "2016-alphago",
-      "variant": "deep-learning",
       "order": 190,
       "enabled": true,
       "milestoneId": "milestone-deep-learning-2016-alphago"
     },
     {
       "eventId": "2017-transformer",
-      "variant": "deep-learning",
       "order": 200,
       "enabled": true,
       "milestoneId": "milestone-2017-transformer"
     },
     {
       "eventId": "2018-bert",
-      "variant": "deep-learning",
       "order": 210,
       "enabled": true,
       "milestoneId": "milestone-2018-bert"
     },
     {
       "eventId": "2018-gpt",
-      "variant": "deep-learning",
       "order": 220,
       "enabled": true,
       "milestoneId": "milestone-2018-gpt"
@@ -183,7 +166,6 @@
     },
     {
       "eventId": "2020-alphafold",
-      "variant": "deep-learning",
       "order": 240,
       "enabled": true,
       "milestoneId": "milestone-2020-alphafold"

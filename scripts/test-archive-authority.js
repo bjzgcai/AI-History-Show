@@ -293,6 +293,23 @@ assert.deepEqual(
     'compiled Archive milestone IDs must be unique'
 );
 assert.deepEqual(archiveStorylines, compiledArchive.storylines, 'generated storyline metadata should match Archive');
+const deepLearningStoryline = JSON.parse(
+    fs.readFileSync(path.join(__dirname, '..', 'archive', 'storylines', 'deep-learning.json'), 'utf8')
+);
+assert.ok(
+    deepLearningStoryline.events.every((eventRef) => !Object.hasOwn(eventRef, 'variant')),
+    'the deep-learning storyline should inherit every event default presentation'
+);
+for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'events'), { withFileTypes: true })) {
+    if (!eventEntry.isDirectory()) continue;
+    assert.equal(
+        fs.existsSync(
+            path.join(__dirname, '..', 'archive', 'events', eventEntry.name, 'variants', 'deep-learning.json')
+        ),
+        false,
+        `${eventEntry.name} should not retain a deep-learning variant file`
+    );
+}
 const dartmouthMilestone = compiledArchive.milestones.find(
     (milestone) =>
         milestone.id === 'milestone-1956-dartmouth' && milestone.storyline && milestone.storyline.id === 'deep-learning'
@@ -312,6 +329,20 @@ assert.ok(
             audio.storage?.objectKey.startsWith(audioProfile.objectKeyPrefix)
     ),
     'the Dartmouth narration should not depend on a local MP3 fallback'
+);
+const perceptronMilestone = compiledArchive.milestones.find(
+    (milestone) =>
+        milestone.archiveEventId === '1957-perceptron' &&
+        milestone.storyline &&
+        milestone.storyline.id === 'deep-learning'
+);
+assert.deepEqual(
+    perceptronMilestone.resources.images.slice(3, 5),
+    [
+        'resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg',
+        'resources/images/figures/frank-rosenblatt.png'
+    ],
+    'the default perceptron presentation should retain the former variant-only portrait after the existing people image'
 );
 const turingTestMilestone = compiledArchive.milestones.find(
     (milestone) =>
@@ -430,6 +461,16 @@ assert.deepEqual(
     'deep learning should use the unified AlphaFold title'
 );
 console.log('PASS AlphaFold titles stay unified across storylines');
+const deepLearningAlphaGo = milestones.find(
+    (milestone) =>
+        milestone.archiveEventId === '2016-alphago' && milestone.storyline && milestone.storyline.id === 'deep-learning'
+);
+assert.deepEqual(
+    deepLearningAlphaGo.title,
+    { zh: 'AlphaGo', en: 'AlphaGo' },
+    'deep learning should inherit the default AlphaGo title'
+);
+console.log('PASS deep-learning events inherit default presentations');
 const humanisticMilestones = milestones.filter(
     (milestone) => milestone.storyline && milestone.storyline.id === 'humanistic-cycle'
 );

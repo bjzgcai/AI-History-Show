@@ -388,23 +388,7 @@ assert.equal(
 );
 console.log('PASS Squeeze-and-Excitation contributor information is localized in Chinese');
 
-const attentionFigureNames = ['Dzmitry Bahdanau', 'Kyunghyun Cho', 'Yoshua Bengio'];
-const attentionAvatars = [
-    'resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg',
-    'resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg',
-    'resources/images/2014-attention/people/2014-attention_people_01.png'
-];
 const deepAttention = milestones.find((item) => item.id === 'milestone-2014-attention');
-assert.deepEqual(
-    deepAttention.figures.map((figure) => figure.name.en),
-    attentionFigureNames,
-    'the deep-learning attention page should list only the original neural attention paper authors'
-);
-assert.deepEqual(
-    deepAttention.figures.map((figure) => figure.avatar),
-    attentionAvatars,
-    'the deep-learning attention page should provide portraits for the original neural attention paper authors'
-);
 const ai100Attention = milestones.find(
     (item) => item.id === 'milestone-ai100-2014-neural-machine-translation-attention'
 );
@@ -429,7 +413,17 @@ assert.deepEqual(
     ],
     'the AI100 attention page should lead with Bahdanau and retain the alignment explainer second'
 );
-console.log('PASS neural machine translation attention uses core-author portraits without related figures');
+assert.deepEqual(
+    deepAttention.figures,
+    ai100Attention.figures,
+    'the deep-learning attention page should inherit the default contributor list'
+);
+assert.deepEqual(
+    deepAttention.resources.images,
+    ai100Attention.resources.images,
+    'the deep-learning attention page should inherit the default image list'
+);
+console.log('PASS neural machine translation attention inherits the default presentation');
 
 for (const milestoneId of ['milestone-ai100-2012-alexnet', 'milestone-2012-alexnet']) {
     const milestone = milestones.find((item) => item.id === milestoneId);
