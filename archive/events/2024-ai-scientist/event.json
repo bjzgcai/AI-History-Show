@@ -66,5 +66,173 @@
       "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
       "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "zh": "AI科学家与自主实验室",
+      "en": "AI Scientists and Autonomous Laboratories"
+    },
+    "displaySummary": {
+      "zh": "大模型与科学智能",
+      "en": "Large Models and Scientific Intelligence"
+    },
+    "displayDescription": {
+      "zh": "<p>2024 年，Sakana AI 等团队发布 AI Scientist 原型，把机器学习研究中的想法生成、代码修改、实验运行、结果可视化、论文撰写和自动评审串成一个循环。它展示的是特定计算研究流程的自动化实验，并不等同于论文已被真实学术会议接收，也不能替代独立复现和同行评议。</p><p>物理实验自动化则更早在 A-Lab 等系统中推进。2023 年 Nature 论文报告，A-Lab 把文献与计算数据库、机器学习、机器人设备和主动学习结合，在 17 天运行中成功合成 58 个目标中的 41 个新材料。两条路线共同表明，AI for Science 正从单步预测扩展到闭环工作流，但可靠性、实验验证、数据质量和责任归属仍决定这些系统能否产生可信科学成果。</p>",
+      "en": "<p>In 2024, Sakana AI and collaborators released the AI Scientist prototype, linking idea generation, code modification, experiment execution, visualization, manuscript writing, and automated review into a loop for machine-learning research. It demonstrated automation within a specific computational workflow; it did not mean that generated papers had been accepted by real conferences, nor could it replace independent replication and peer review.</p><p>Physical experimentation had already advanced through systems such as A-Lab. A 2023 Nature paper reported that A-Lab combined literature and computational databases, machine learning, robotic equipment, and active learning to synthesize 41 of 58 targeted novel materials during 17 days of operation. Together, these paths extended AI for Science from single predictions toward closed-loop workflows, while reliability, experimental validation, data quality, and accountability remained decisive.</p>"
+    },
+    "emphasis": [
+      "batch-migration",
+      "source-review-needed"
+    ],
+    "visualModules": [],
+    "assetIds": [
+      "asset-2024-ai-scientist-people-02",
+      "asset-2024-ai-scientist-architecture-01",
+      "asset-2024-ai-scientist-architecture-02",
+      "asset-2024-ai-scientist-people-01",
+      "asset-2024-ai-scientist-papers-01",
+      "asset-2024-ai-scientist-audio-zh-original-v1",
+      "asset-2024-ai-scientist-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-ai-scientist-paper",
+      "source-sakana-ai-scientist-page",
+      "source-autonomous-materials-lab-paper"
+    ],
+    "claimIds": [
+      "claim-legacy-achievement-summary",
+      "claim-legacy-description"
+    ],
+    "commentarySections": [
+      {
+        "id": "background",
+        "label": {
+          "zh": "背景解读",
+          "en": "Background"
+        },
+        "html": {
+          "zh": "这类系统真正新的地方，并不是能写出论文段落，而是把“提出假设、设计流程、调用工具、执行实验、评估结果”连成了闭环，开始触碰科学研究的工作流自动化。",
+          "en": "What is genuinely new in these systems is not that they can write paper paragraphs. It is that they connect hypothesis generation, workflow design, tool use, experiment execution, and result evaluation into a closed loop, beginning to automate the scientific research workflow."
+        },
+        "sourceIds": [
+          "source-ai-scientist-paper",
+          "source-sakana-ai-scientist-page",
+          "source-autonomous-materials-lab-paper"
+        ]
+      },
+      {
+        "id": "context",
+        "label": {
+          "zh": "延展说明",
+          "en": "Context"
+        },
+        "html": {
+          "zh": "它也意味着 AI for Science 的评价标准正在改变：未来的关键问题不再只是模型能否解释一张图或一个序列，而是它能否持续产出可验证、可复现实验流程，并在反馈中自我改进。",
+          "en": "They also imply a shift in how AI for Science is evaluated. The key future question is not only whether a model can explain an image or sequence, but whether it can continually produce verifiable, reproducible experimental workflows and improve through feedback."
+        },
+        "sourceIds": [
+          "source-ai-scientist-paper",
+          "source-sakana-ai-scientist-page",
+          "source-autonomous-materials-lab-paper"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+        "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+      }
+    },
+    "category": {
+      "en": "Large Models and Scientific Intelligence",
+      "zh": "大模型与科学智能"
+    },
+    "figures": [
+      {
+        "figureId": "sakana-ai-team",
+        "role": {
+          "en": "AI Scientist Developer",
+          "zh": "AI Scientist开发者"
+        },
+        "avatarAssetId": "asset-2024-ai-scientist-people-02"
+      },
+      {
+        "figureId": "berkeley-team",
+        "role": {
+          "en": "A-Lab Developer",
+          "zh": "A-Lab开发者"
+        },
+        "avatarAssetId": "asset-2024-ai-scientist-people-01"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+    "resources": {
+      "videos": [
+        {
+          "id": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+          "url": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+          "title": "2024AI科学家：探索发现的新纪元",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
+        }
+      ]
+    },
+    "quote": {
+      "en": "\"The AI Scientist explored an end-to-end research loop in which foundation models generate ideas, run experiments, write papers, and review results, while autonomous labs pushed similar automation into physical experimentation.\"",
+      "zh": "\"AI Scientist 探索了由基础模型生成想法、运行实验、撰写论文并评审结果的端到端研究循环；自主实验室则把类似自动化推进到真实物理实验。\""
+    },
+    "quoteMeta": {
+      "speaker": {
+        "en": "Chris Lu et al.",
+        "zh": "克里斯·卢等"
+      },
+      "workTitle": {
+        "en": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+        "zh": "AI Scientist：迈向全自动开放式科学发现"
+      },
+      "workAuthors": {
+        "en": "Sakana AI team, arXiv, 2024",
+        "zh": "Sakana AI 团队，arXiv，2024"
+      },
+      "sourceLabel": {
+        "en": "Sakana AI official project page",
+        "zh": "Sakana AI 官方项目页面"
+      },
+      "sourceUrl": "https://sakana.ai/ai-scientist/"
+    },
+    "quotePage": {
+      "en": "Sakana AI official project page and arXiv paper: The AI Scientist",
+      "zh": "Sakana AI 官方项目页与 arXiv 论文《AI Scientist》"
+    },
+    "quoteAttribution": {
+      "en": "<em>The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery</em>, Sakana AI team, arXiv, 2024",
+      "zh": "《AI 科学家》，克里斯·卢等"
+    },
+    "location": {
+      "name": {
+        "en": "Sakana AI / UC Berkeley",
+        "zh": "Sakana AI / UC Berkeley"
+      },
+      "country": {
+        "en": "Japan / United States",
+        "zh": "日本 / 美国"
+      },
+      "coordinates": [
+        [
+          35.6762,
+          139.6503
+        ],
+        [
+          37.8719,
+          -122.2585
+        ]
+      ]
+    }
   }
 }

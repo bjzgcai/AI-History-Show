@@ -257,17 +257,12 @@ const michaelJordan = ldaMilestone.figures.find((figure) => figure.name.en === '
 assert.ok(michaelJordan, 'LDA should identify Michael I. Jordan with his middle initial');
 assert.equal(michaelJordan.name.zh, '迈克尔·I·乔丹', 'LDA should localize Michael I. Jordan consistently');
 
-const michaelJordanRelationshipFiles = [
-    'archive/events/1986-rnn/event.json',
-    'archive/events/1986-rnn/variants/deep-learning.json',
-    'archive/events/2003-lda/event.json',
-    'archive/events/2003-lda/variants/bench-council-ai100.json'
-];
+const michaelJordanRelationshipFiles = ['archive/events/1986-rnn/event.json', 'archive/events/2003-lda/event.json'];
 for (const relativeFile of michaelJordanRelationshipFiles) {
     const content = fs.readFileSync(path.join(__dirname, '..', relativeFile), 'utf8');
     const document = JSON.parse(content);
     assert.match(content, /"figureId": "michael-i-jordan"/, `${relativeFile} should use the stable figure ID`);
-    for (const relation of document.figures || []) {
+    for (const relation of [...(document.figures || []), ...((document.defaultPresentation || {}).figures || [])]) {
         assert.equal(Object.hasOwn(relation, 'name'), false, `${relativeFile} should not duplicate registry names`);
     }
 }

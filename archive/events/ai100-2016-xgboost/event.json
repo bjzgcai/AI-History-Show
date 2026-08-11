@@ -59,5 +59,320 @@
       "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
       "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "en": "XGBoost",
+      "zh": "XGBoost"
+    },
+    "displayDescription": {
+      "en": "<p>Gradient-boosted trees were highly accurate, but large datasets and sparse features exposed systems bottlenecks. XGBoost combined a regularized objective with an engineering design built for scalable parallel and out-of-core learning.</p><p>The system uses second-order gradient statistics, regularized tree scoring, sparsity-aware split finding, column blocks, and cache-conscious computation. These choices make boosted trees efficient across machines and data formats. Experts generally regard XGBoost as the system that made gradient-boosted trees a default high-performance tool for tabular prediction. Its open-source ecosystem and competition success drove broad industrial adoption.</p>",
+      "zh": "<p>梯度提升树精度很高，但大规模数据和稀疏特征暴露出系统瓶颈。XGBoost 把正则化目标与面向并行和外存学习的工程设计结合起来。</p><p>系统使用二阶梯度统计、正则化树评分、稀疏感知划分搜索、列块和缓存友好计算。这些设计使提升树能在不同机器和数据格式上高效运行。专家通常把 XGBoost 视为使梯度提升树成为表格预测默认高性能工具的关键系统。其开源生态和竞赛表现推动了广泛工业应用。</p>"
+    },
+    "emphasis": [
+      "benchcouncil-canonical-2026-07-30",
+      "source-reviewed"
+    ],
+    "visual": "configuredPaper",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "XGBoost: A Scalable Tree Boosting System",
+          "zh": "XGBoost：可扩展树提升系统"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed XGBoost achievement.",
+          "zh": "BenchCouncil 主表中XGBoost成就的主要资料。"
+        },
+        "url": "https://doi.org/10.1145/2939672.2939785",
+        "source": "https://doi.org/10.1145/2939672.2939785",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-2016-xgboost-portrait",
+      "asset-2016-xgboost-explainer",
+      "asset-ai100-2016-xgboost-audio-zh-original-v1",
+      "asset-ai100-2016-xgboost-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-2016-xgboost-primary",
+      "source-2016-xgboost-secondary",
+      "source-benchcouncil-ai100-catalog",
+      "source-2016-xgboost-portrait"
+    ],
+    "claimIds": [
+      "claim-2016-xgboost-membership",
+      "claim-2016-xgboost-description"
+    ],
+    "quizId": "ai100-2016-xgboost-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Gradient-boosted trees were highly accurate, but large datasets and sparse features exposed systems bottlenecks. XGBoost combined a regularized objective with an engineering design built for scalable parallel and out-of-core learning.",
+          "zh": "梯度提升树精度很高，但大规模数据和稀疏特征暴露出系统瓶颈。XGBoost 把正则化目标与面向并行和外存学习的工程设计结合起来。"
+        },
+        "sourceIds": [
+          "source-2016-xgboost-primary",
+          "source-benchcouncil-ai100-catalog"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The system uses second-order gradient statistics, regularized tree scoring, sparsity-aware split finding, column blocks, and cache-conscious computation. These choices make boosted trees efficient across machines and data formats.",
+          "zh": "系统使用二阶梯度统计、正则化树评分、稀疏感知划分搜索、列块和缓存友好计算。这些设计使提升树能在不同机器和数据格式上高效运行。"
+        },
+        "sourceIds": [
+          "source-2016-xgboost-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally regard XGBoost as the system that made gradient-boosted trees a default high-performance tool for tabular prediction. Its open-source ecosystem and competition success drove broad industrial adoption.",
+          "zh": "专家通常把 XGBoost 视为使梯度提升树成为表格预测默认高性能工具的关键系统。其开源生态和竞赛表现推动了广泛工业应用。"
+        },
+        "sourceIds": [
+          "source-2016-xgboost-primary",
+          "source-2016-xgboost-secondary"
+        ]
+      }
+    ],
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "tianqi-chen",
+        "role": {
+          "en": "XGBoost lead author",
+          "zh": "XGBoost 主要作者"
+        },
+        "avatarAssetId": "asset-2016-xgboost-portrait"
+      },
+      {
+        "figureId": "carlos-guestrin",
+        "role": {
+          "en": "XGBoost co-author",
+          "zh": "XGBoost 共同作者"
+        }
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "“XGBoost: A Scalable Tree Boosting System”",
+      "zh": "“XGBoost：可扩展树提升系统”"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "XGBoost: A Scalable Tree Boosting System",
+        "zh": "XGBoost：可扩展树提升系统"
+      },
+      "workAuthors": {
+        "en": "See primary publication record",
+        "zh": "见主论文记录"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1145/2939672.2939785"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>XGBoost: A Scalable Tree Boosting System</em>",
+      "zh": "《XGBoost：可扩展树提升系统》"
+    },
+    "achievement": {
+      "area": {
+        "en": "Decision Trees and Ensemble Learning",
+        "zh": "决策树与集成学习"
+      },
+      "method": {
+        "en": "Regularized second-order tree boosting with scalable systems optimization",
+        "zh": "正则化二阶树提升与可扩展系统优化"
+      },
+      "artifact": {
+        "en": "Scalable boosted-tree library",
+        "zh": "可扩展提升树库"
+      },
+      "material": {
+        "en": "XGBoost: A Scalable Tree Boosting System, companion source, and BenchCouncil catalog record",
+        "zh": "《XGBoost：可扩展树提升系统》、配套资料与 BenchCouncil 清单记录"
+      },
+      "demo": {
+        "en": "Follow the four stages and compare how changing one stage affects the final scalable boosted-tree library.",
+        "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的可扩展提升树库。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Stage 1",
+            "zh": "阶段 1"
+          },
+          "text": {
+            "en": "Gradient statistics",
+            "zh": "梯度统计"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 2",
+            "zh": "阶段 2"
+          },
+          "text": {
+            "en": "Find regularized splits",
+            "zh": "寻找正则化划分"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 3",
+            "zh": "阶段 3"
+          },
+          "text": {
+            "en": "Build tree in parallel",
+            "zh": "并行构建树"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 4",
+            "zh": "阶段 4"
+          },
+          "text": {
+            "en": "Add tree to ensemble",
+            "zh": "把树加入集成"
+          }
+        }
+      ],
+      "relatedAchievements": [],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Gradient statistics",
+          "zh": "梯度统计"
+        },
+        {
+          "en": "Find regularized splits",
+          "zh": "寻找正则化划分"
+        },
+        {
+          "en": "Build tree in parallel",
+          "zh": "并行构建树"
+        },
+        {
+          "en": "Add tree to ensemble",
+          "zh": "把树加入集成"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2016-2016-xgboost_process.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "BenchCouncil lists XGBoost and cites XGBoost: A Scalable Tree Boosting System as a defining publication.",
+            "zh": "BenchCouncil 将XGBoost列入主表，并把《XGBoost：可扩展树提升系统》作为代表性资料。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+            "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Primary publication",
+            "zh": "主论文"
+          },
+          "title": {
+            "en": "XGBoost: A Scalable Tree Boosting System",
+            "zh": "XGBoost：可扩展树提升系统"
+          },
+          "description": {
+            "en": "Primary source for the BenchCouncil-listed XGBoost achievement.",
+            "zh": "BenchCouncil 主表中XGBoost成就的主要资料。"
+          },
+          "url": "https://doi.org/10.1145/2939672.2939785",
+          "source": "https://doi.org/10.1145/2939672.2939785",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "University of Washington",
+        "zh": "华盛顿大学"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        47.6553,
+        -122.3035
+      ]
+    }
   }
 }

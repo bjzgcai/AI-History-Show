@@ -75,5 +75,322 @@
       "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
       "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "zh": "深度 Q 网络",
+      "en": "Deep Q Network"
+    },
+    "displayDescription": {
+      "zh": "<p>DeepMind 的 DQN 把卷积神经网络与 Q-learning 结合起来，让智能体直接从 Atari 屏幕像素估计每个动作的长期价值。经验回放随机抽取过去的转移，减少连续样本之间的相关性；固定一段时间的目标网络为自举更新提供较稳定的学习目标。</p><p>同一套基本架构在多款游戏中从视觉输入学习策略，证明深度表示可以与强化学习共同工作，而不必为每个游戏手工设计状态特征。DQN 开启深度强化学习的重要浪潮，但仍存在样本效率低、训练不稳定和对奖励设计敏感等问题，后续研究围绕这些限制发展出大量改进。</p>",
+      "en": "<p>DeepMind's DQN combined a convolutional neural network with Q-learning so an agent could estimate the long-term value of actions directly from Atari screen pixels. Experience replay sampled past transitions in randomized order, reducing correlations between consecutive observations. A target network held parameters fixed for intervals, providing a more stable target for bootstrapped updates.</p><p>The same basic architecture learned policies across many games from visual input without hand-designing a separate state representation for each one. DQN became a major bridge from classical reinforcement learning to deep reinforcement learning. It still required large amounts of experience and could be unstable or sensitive to reward design, limitations that motivated a broad family of later improvements.</p>"
+    },
+    "emphasis": [
+      "batch-migration",
+      "source-review-needed"
+    ],
+    "visual": "dqn",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv / Nature",
+          "zh": "arXiv / 《自然》"
+        },
+        "title": {
+          "en": "DQN paper",
+          "zh": "DQN 论文"
+        },
+        "description": {
+          "en": "Primary DeepMind DQN source; local images redraw replay memory and Q-value control.",
+          "zh": "DeepMind DQN 原始来源；本地图重画回放记忆和 Q 值控制。"
+        },
+        "url": "https://arxiv.org/abs/1312.5602",
+        "source": "https://arxiv.org/abs/1312.5602",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open preprint",
+          "zh": "打开预印本"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-2013-dqn-volodymyr-mnih",
+      "asset-2013-dqn-replay-buffer",
+      "asset-2013-dqn-q-control",
+      "asset-david-silver-commons-portrait",
+      "asset-2013-dqn-audio-zh-original-v1",
+      "asset-2013-dqn-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-david-silver-commons-portrait",
+      "source-human-level-control-through-deep-reinforcement-learning",
+      "source-google-deepmind-deep-reinforcement-learning",
+      "source-playing-atari-with-deep-reinforcement-learning"
+    ],
+    "claimIds": [
+      "claim-legacy-achievement-summary",
+      "claim-legacy-description"
+    ],
+    "quizId": "2013-dqn-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "经典强化学习有坚实理论，但从原始像素扩展到控制任务仍然困难。DQN 让这种扩展变得可见。",
+          "en": "Classic reinforcement learning had strong theory, but scaling from raw pixels to control remained difficult. DQN made that scaling visible."
+        },
+        "sourceIds": [
+          "source-playing-atari-with-deep-reinforcement-learning"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。 关键机制是结合卷积网络、经验回放与目标网络的 Q 学习，它把资料线索与可见的演示行为连接起来。",
+          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates. The key mechanism is Q-learning with convolutional networks, replay, and target networks, which links the source material to the visible demo behavior."
+        },
+        "sourceIds": [
+          "source-playing-atari-with-deep-reinforcement-learning"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 DQN 视为让深度强化学习变得可见且具体的突破。它的长期影响在于把感知、行动、奖励、经验回放和价值学习接成神经循环，尽管样本效率和稳定性问题仍存在。",
+          "en": "Experts generally treat DQN as the breakthrough that made deep reinforcement learning visible and concrete. Its long-term legacy is the neural loop connecting perception, action, reward, replay, and value learning, despite ongoing sample-efficiency and stability challenges."
+        },
+        "sourceIds": [
+          "source-playing-atari-with-deep-reinforcement-learning"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+        "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+      }
+    },
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "volodymyr-mnih",
+        "role": {
+          "en": "First author of DQN work",
+          "zh": "DQN 工作第一作者"
+        },
+        "avatarAssetId": "asset-2013-dqn-volodymyr-mnih"
+      },
+      {
+        "figureId": "martin-riedmiller",
+        "role": {
+          "en": "Deep Q Network co-author",
+          "zh": "Deep Q Network 共同作者"
+        }
+      },
+      {
+        "figureId": "koray-kavukcuoglu",
+        "role": {
+          "en": "Deep Q Network co-author",
+          "zh": "Deep Q Network 共同作者"
+        }
+      },
+      {
+        "figureId": "david-silver",
+        "role": {
+          "en": "DeepMind reinforcement learning researcher",
+          "zh": "DeepMind 强化学习研究者"
+        },
+        "avatarAssetId": "asset-david-silver-commons-portrait"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"playing Atari with deep reinforcement learning\"",
+      "zh": "\"用深度强化学习玩 Atari\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Playing Atari with Deep Reinforcement Learning",
+        "zh": "用深度强化学习玩 Atari"
+      },
+      "workAuthors": {
+        "en": "Volodymyr Mnih et al., DeepMind, 2013",
+        "zh": "沃洛迪米尔·姆尼赫等, DeepMind，2013"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1312.5602"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Reinforcement learning / Deep Q Network",
+      "zh": "BenchCouncil AI100：强化学习 / 深度 Q 网络"
+    },
+    "quoteAttribution": {
+      "en": "<em>Playing Atari with Deep Reinforcement Learning</em>, Volodymyr Mnih et al., DeepMind, 2013",
+      "zh": "《用深度强化学习玩 Atari》, 沃洛迪米尔·姆尼赫等, DeepMind，2013"
+    },
+    "achievement": {
+      "area": {
+        "en": "Reinforce learning",
+        "zh": "强化学习"
+      },
+      "method": {
+        "en": "Q-learning with convolutional networks, replay, and target networks",
+        "zh": "结合卷积网络、经验回放与目标网络的 Q 学习"
+      },
+      "artifact": {
+        "en": "Atari-playing Deep Q Network",
+        "zh": "能玩 Atari 的深度 Q 网络"
+      },
+      "material": {
+        "en": "arXiv paper, Nature paper, and DeepMind blog",
+        "zh": "arXiv 论文、《自然》 论文与 DeepMind 博客"
+      },
+      "demo": {
+        "en": "Pixels enter replay; Q-values choose actions",
+        "zh": "像素进入回放；Q 值选择动作"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Experience Replay",
+            "zh": "经验回放"
+          },
+          "text": {
+            "en": "Past transitions are sampled again to make learning more stable and data-efficient.",
+            "zh": "过去转移会被再次采样，使学习更稳定也更省数据。"
+          }
+        },
+        {
+          "label": {
+            "en": "Target Network",
+            "zh": "目标网络"
+          },
+          "text": {
+            "en": "A delayed copy of the value network reduces moving-target instability.",
+            "zh": "价值网络的延迟副本减少移动目标的不稳定。"
+          }
+        },
+        {
+          "label": {
+            "en": "Q-value",
+            "zh": "Q 值"
+          },
+          "text": {
+            "en": "The network estimates future return for each action.",
+            "zh": "网络估计每个动作的未来回报。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Q Learning",
+          "zh": "Q 学习"
+        },
+        {
+          "en": "AlphaGo",
+          "zh": "AlphaGo"
+        },
+        {
+          "en": "A3C",
+          "zh": "A3C"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
+        },
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Experience Replay",
+          "zh": "经验回放"
+        },
+        {
+          "en": "Target Network",
+          "zh": "目标网络"
+        },
+        {
+          "en": "Q-value",
+          "zh": "Q 值"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv / Nature",
+            "zh": "arXiv / 《自然》"
+          },
+          "title": {
+            "en": "DQN paper",
+            "zh": "DQN 论文"
+          },
+          "description": {
+            "en": "Primary DeepMind DQN source; local images redraw replay memory and Q-value control.",
+            "zh": "DeepMind DQN 原始来源；本地图重画回放记忆和 Q 值控制。"
+          },
+          "url": "https://arxiv.org/abs/1312.5602",
+          "source": "https://arxiv.org/abs/1312.5602",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open preprint",
+            "zh": "打开预印本"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "Google DeepMind",
+        "zh": "Google DeepMind"
+      },
+      "country": {
+        "en": "United Kingdom",
+        "zh": "英国"
+      },
+      "coordinates": [
+        51.523,
+        -0.128
+      ]
+    }
   }
 }

@@ -97,7 +97,6 @@
   {
     "id": "asset-1997-logistello-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1997-logistello-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1997-logistello 中文原版科普音频",
@@ -120,24 +119,20 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1997-logistello-zh-original-v1.mp3",
     "storage": {
-      "provider": "aliyun-oss",
-      "bucket": "zgca-medias",
-      "objectKey": "audio/ai-history/releases/1997-logistello-zh-original-v1.mp3",
+      "profileId": "ai-history-audio-releases",
+      "objectName": "1997-logistello-zh-original-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/gaming-all-storyline-zh-original-v1-2026-08-09/audio/gaming-ai/storyline/zh/05-1997-logistello.mp3",
-      "contentType": "audio/mpeg",
-      "cacheControl": "public, max-age=31536000, immutable"
+      "contentType": "audio/mpeg"
     },
     "usage": [
-      "variant:gaming-ai"
+      "storyline:gaming-ai"
     ],
     "editable": true
   },
   {
     "id": "asset-1997-logistello-audio-en-v1",
     "type": "audio",
-    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1997-logistello-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1997-logistello 英文科普音频",
@@ -160,17 +155,14 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1997-logistello-en-v1.mp3",
     "storage": {
-      "provider": "aliyun-oss",
-      "bucket": "zgca-medias",
-      "objectKey": "audio/ai-history/releases/1997-logistello-en-v1.mp3",
+      "profileId": "ai-history-audio-releases",
+      "objectName": "1997-logistello-en-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/gaming-all-storyline-en-original-v1-2026-08-09/audio/gaming-ai/storyline/en/05-1997-logistello.mp3",
-      "contentType": "audio/mpeg",
-      "cacheControl": "public, max-age=31536000, immutable"
+      "contentType": "audio/mpeg"
     },
     "usage": [
-      "variant:gaming-ai"
+      "storyline:gaming-ai"
     ],
     "editable": true
   }

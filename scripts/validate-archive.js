@@ -9,15 +9,19 @@ const ARCHIVE_DIR = path.join(ROOT, 'archive');
 const EVENTS_DIR = path.join(ARCHIVE_DIR, 'events');
 const STORYLINES_DIR = path.join(ARCHIVE_DIR, 'storylines');
 const FIGURES_PATH = path.join(ARCHIVE_DIR, 'figures', 'figures.json');
+const MEDIA_STORAGE_PATH = path.join(ARCHIVE_DIR, 'config', 'media-storage.json');
 const REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-validation.md');
 const SOURCE_TYPE_TAXONOMY = require('../archive/taxonomies/source-types.json');
 const SOURCE_PURPOSE_TAXONOMY = require('../archive/taxonomies/source-purposes.json');
+const { resolveEffectivePresentation } = require('./archive-presentation');
 const { auditArchive: auditEventFigureRules } = require('./event-figure-rules');
 const { validateAssetSelectionReview } = require('./asset-selection-review');
 const { createArchiveSchemaValidator } = require('./archive-schema-validator');
 const { createFigureRegistry, localized } = require('./figure-registry');
+const { loadMediaStorageConfig, normalizeObjectKey, resolveMediaStorage } = require('./media-storage');
 
 const validateSchema = createArchiveSchemaValidator(ROOT);
+const mediaStorageConfig = loadMediaStorageConfig(ROOT);
 
 const REQUIRED_EVENT_FILES = ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json'];
 const LOCALIZED_REQUIRED_KEYS = ['zh', 'en'];
@@ -253,6 +257,50 @@ function validateFigureRegistry() {
     }
 }
 
+function validateMediaStorageConfig() {
+    const config = readJson(MEDIA_STORAGE_PATH);
+    if (!config) return;
+    validateWithSchema(MEDIA_STORAGE_PATH, 'media-storage.schema.json', config);
+    const profilesById = new Map();
+    for (const profile of config.profiles || []) {
+        if (!isObject(profile)) continue;
+        if (profilesById.has(profile.id))
+            addError(MEDIA_STORAGE_PATH, `duplicate media storage profile id: ${profile.id}`);
+        profilesById.set(profile.id, profile);
+        const serialized = JSON.stringify(profile);
+        if (/access.?key|secret|credential|authorization/i.test(serialized)) {
+            addError(
+                MEDIA_STORAGE_PATH,
+                `media storage profile ${profile.id || '<missing>'} must not contain credentials.`
+            );
+        }
+        const objectKeyPrefix = normalizeObjectKey(profile.objectKeyPrefix);
+        if (!objectKeyPrefix || objectKeyPrefix.split('/').includes('..')) {
+            addError(
+                MEDIA_STORAGE_PATH,
+                `media storage profile ${profile.id || '<missing>'} has an invalid objectKeyPrefix.`
+            );
+        }
+        if (!/^https:\/\//i.test(profile.publicUrlPrefix || '')) {
+            addError(
+                MEDIA_STORAGE_PATH,
+                `media storage profile ${profile.id || '<missing>'} publicUrlPrefix must use HTTPS.`
+            );
+        }
+    }
+    for (const [mediaType, profileId] of Object.entries(config.defaultProfiles || {})) {
+        const profile = profilesById.get(profileId);
+        if (!profile) {
+            addError(MEDIA_STORAGE_PATH, `defaultProfiles.${mediaType} references missing profile: ${profileId}`);
+        } else if (profile.mediaType !== mediaType) {
+            addError(
+                MEDIA_STORAGE_PATH,
+                `defaultProfiles.${mediaType} references ${profileId}, which is for ${profile.mediaType}.`
+            );
+        }
+    }
+}
+
 function validateFigureRelations(filePath, figures, assetsById) {
     if (!Array.isArray(figures)) return;
     const seen = new Set();
@@ -288,14 +336,25 @@ function validateAudioStorage(filePath, asset) {
     }
 
     const storage = asset.storage;
-    if (storage.provider !== 'aliyun-oss') addError(filePath, `${label} storage.provider must be aliyun-oss.`);
-    if (storage.bucket !== 'zgca-medias') addError(filePath, `${label} storage.bucket must be zgca-medias.`);
-    if (!hasText(storage.objectKey) || !/^audio\/ai-history\/releases\//.test(storage.objectKey)) {
-        addError(filePath, `${label} storage.objectKey must stay under audio/ai-history/releases/.`);
-    } else if (storage.objectKey.includes('..') || storage.objectKey.includes('\\')) {
-        addError(filePath, `${label} storage.objectKey must be a normalized OSS object key.`);
+    let resolved;
+    try {
+        resolved = resolveMediaStorage(asset, { config: mediaStorageConfig });
+    } catch (error) {
+        addError(filePath, `${label} ${error.message}.`);
+        return;
     }
-    if (!hasText(storage.contentType) || !/^audio\//.test(storage.contentType)) {
+    if (!hasText(resolved.provider)) addError(filePath, `${label} storage provider is required.`);
+    if (!hasText(resolved.bucket)) addError(filePath, `${label} storage bucket is required.`);
+    const objectKeyPrefix = normalizeObjectKey(resolved.objectKeyPrefix).replace(/\/+$/, '');
+    if (!hasText(resolved.objectKey) || !objectKeyPrefix || !resolved.objectKey.startsWith(`${objectKeyPrefix}/`)) {
+        addError(filePath, `${label} storage object key must stay under its configured profile prefix.`);
+    } else if (resolved.objectKey.split('/').includes('..') || resolved.objectKey.includes('\\')) {
+        addError(filePath, `${label} storage.objectKey must be normalized and must not contain parent traversal.`);
+    }
+    if (!hasText(resolved.objectName)) {
+        addError(filePath, `${label} storage.objectName or storage.objectKey is required.`);
+    }
+    if (!hasText(resolved.contentType) || !/^audio\//.test(resolved.contentType)) {
         addError(filePath, `${label} storage.contentType must be an audio MIME type.`);
     }
     if (asset.deliveryUrl && !/^https:\/\//i.test(asset.deliveryUrl)) {
@@ -428,14 +487,22 @@ function validateAssets(eventDir, assets, sourceIds) {
         }
         const isDisplayImage = isDisplayImageAsset(asset);
         if (!hasText(asset.type)) addError(filePath, `asset ${asset.id || '<missing>'} is missing type.`);
-        if (!hasText(asset.path)) {
+        const resolvedStorage =
+            asset.type === 'audio' ? resolveMediaStorage(asset, { config: mediaStorageConfig }) : null;
+        if (!hasText(asset.path) && asset.type !== 'audio') {
             addError(filePath, `asset ${asset.id || '<missing>'} is missing path.`);
         } else if (/^https?:\/\//i.test(asset.path)) {
             state.assetRefs.push({ eventId: path.basename(eventDir), assetId: asset.id, path: asset.path });
-        } else if (!fs.existsSync(resolveAssetPath(asset.path))) {
+        } else if (hasText(asset.path) && !fs.existsSync(resolveAssetPath(asset.path))) {
             addError(filePath, `asset ${asset.id} path does not exist: ${asset.path}`);
-        } else {
+        } else if (hasText(asset.path)) {
             state.assetRefs.push({ eventId: path.basename(eventDir), assetId: asset.id, path: asset.path });
+        } else if (resolvedStorage && (resolvedStorage.publicUrl || resolvedStorage.sourcePath)) {
+            state.assetRefs.push({
+                eventId: path.basename(eventDir),
+                assetId: asset.id,
+                path: resolvedStorage.publicUrl || resolvedStorage.sourcePath
+            });
         }
         if (!hasText(asset.role)) addError(filePath, `asset ${asset.id || '<missing>'} is missing role.`);
         checkLocalized(filePath, asset.caption, `asset ${asset.id || '<missing>'} caption`);
@@ -539,7 +606,7 @@ function validateQuizzes(eventDir, quizzes, sourceIds, assetIds) {
 }
 
 function validateVariantPapers(filePath, papers) {
-    if (papers === undefined) return;
+    if (papers == null) return;
     if (!Array.isArray(papers)) {
         addError(filePath, 'variant papers must be an array.');
         return;
@@ -564,7 +631,7 @@ function validateVariantPapers(filePath, papers) {
 }
 
 function validateVariantFigures(filePath, figures) {
-    if (figures === undefined) return;
+    if (figures == null) return;
     if (!Array.isArray(figures)) {
         addError(filePath, 'variant figures must be an array.');
         return;
@@ -580,55 +647,64 @@ function validateVariantFigures(filePath, figures) {
     });
 }
 
-function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, quizIds) {
-    const variant = readJson(filePath);
-    if (!variant) return null;
-    state.counts.variants += 1;
-
-    const variantId = path.basename(filePath, '.json');
-    if (variant.eventId !== eventId) {
-        addError(filePath, `variant eventId (${variant.eventId}) must match event directory (${eventId}).`);
+function validatePresentation(eventId, filePath, presentation, sourceIds, assetsById, claimIds, quizIds, options = {}) {
+    if (!isObject(presentation)) {
+        addError(filePath, `${options.label || 'presentation'} must be an object.`);
+        return null;
     }
-    if (variant.storylineId !== variantId) {
-        addWarning(filePath, `variant storylineId (${variant.storylineId}) differs from file name (${variantId}).`);
-    }
-    if (variant.storylineId === 'bench-council-ai100' && variant.displaySummary) {
+    const presentationId = options.presentationId || path.basename(filePath, '.json');
+    const storylineId = options.storylineId || presentation.storylineId || presentationId;
+    if (storylineId === 'bench-council-ai100' && presentation.displaySummary) {
         addError(filePath, 'BenchCouncil AI100 displaySummary must be omitted; the storyline title is inherited.');
     }
 
-    for (const sourceId of variant.sourceIds || []) {
-        if (!sourceIds.has(sourceId)) addError(filePath, `variant references missing sourceId: ${sourceId}`);
+    for (const sourceId of presentation.sourceIds || []) {
+        if (!sourceIds.has(sourceId))
+            addError(filePath, `${options.label || 'presentation'} references missing sourceId: ${sourceId}`);
     }
-    for (const assetId of variant.assetIds || []) {
+    for (const assetId of presentation.assetIds || []) {
         const asset = assetsById.get(assetId);
         if (!asset) {
-            addError(filePath, `variant references missing assetId: ${assetId}`);
+            addError(filePath, `${options.label || 'presentation'} references missing assetId: ${assetId}`);
         } else if (isDisplayImageAsset(asset) && /^https?:\/\//i.test(asset.path)) {
-            addError(filePath, `variant selects external image asset ${assetId}; localize it before runtime use.`);
+            addError(
+                filePath,
+                `${options.label || 'presentation'} selects external image asset ${assetId}; localize it before runtime use.`
+            );
         }
     }
-    if (variant.overviewImageAssetId) {
-        const overviewAsset = assetsById.get(variant.overviewImageAssetId);
+    if (presentation.overviewImageAssetId) {
+        const overviewAsset = assetsById.get(presentation.overviewImageAssetId);
         if (!overviewAsset) {
-            addError(filePath, `variant references missing overviewImageAssetId: ${variant.overviewImageAssetId}`);
-        } else if (!(variant.assetIds || []).includes(variant.overviewImageAssetId)) {
-            addError(filePath, 'variant overviewImageAssetId must also appear in assetIds.');
+            addError(
+                filePath,
+                `${options.label || 'presentation'} references missing overviewImageAssetId: ${presentation.overviewImageAssetId}`
+            );
+        } else if (
+            Array.isArray(presentation.assetIds) &&
+            !presentation.assetIds.includes(presentation.overviewImageAssetId)
+        ) {
+            addError(filePath, `${options.label || 'presentation'} overviewImageAssetId must also appear in assetIds.`);
         } else if (!isDisplayImageAsset(overviewAsset)) {
-            addError(filePath, 'variant overviewImageAssetId must reference an image, SVG, or GIF asset.');
+            addError(
+                filePath,
+                `${options.label || 'presentation'} overviewImageAssetId must reference an image, SVG, or GIF asset.`
+            );
         }
     }
-    for (const claimId of variant.claimIds || []) {
-        if (!claimIds.has(claimId)) addError(filePath, `variant references missing claimId: ${claimId}`);
+    for (const claimId of presentation.claimIds || []) {
+        if (!claimIds.has(claimId))
+            addError(filePath, `${options.label || 'presentation'} references missing claimId: ${claimId}`);
     }
-    if (variant.quizId && !quizIds.has(variant.quizId)) {
-        addError(filePath, `variant references missing quizId: ${variant.quizId}`);
+    if (presentation.quizId && !quizIds.has(presentation.quizId)) {
+        addError(filePath, `${options.label || 'presentation'} references missing quizId: ${presentation.quizId}`);
     }
-    validateVariantPapers(filePath, variant.papers);
-    validateVariantFigures(filePath, variant.figures);
-    validateFigureRelations(filePath, variant.figures, assetsById);
+    validateVariantPapers(filePath, presentation.papers);
+    validateVariantFigures(filePath, presentation.figures);
+    validateFigureRelations(filePath, presentation.figures, assetsById);
 
-    if (Array.isArray(variant.commentarySections)) {
-        variant.commentarySections.forEach((section, index) => {
+    if (Array.isArray(presentation.commentarySections)) {
+        presentation.commentarySections.forEach((section, index) => {
             checkLocalized(filePath, section && section.label, `commentarySections[${index}].label`);
             checkLocalized(filePath, section && section.html, `commentarySections[${index}].html`);
             for (const sourceId of (section && section.sourceIds) || []) {
@@ -640,12 +716,32 @@ function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, qui
     }
 
     return {
-        id: variantId,
+        id: presentationId,
         file: rel(filePath),
         eventId,
-        storylineId: variant.storylineId,
-        displaySummary: variant.displaySummary
+        storylineId,
+        displaySummary: presentation.displaySummary
     };
+}
+
+function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, quizIds) {
+    const variant = readJson(filePath);
+    if (!variant) return null;
+    state.counts.variants += 1;
+    validateWithSchema(filePath, 'variant.schema.json', variant);
+
+    const variantId = path.basename(filePath, '.json');
+    if (variant.eventId && variant.eventId !== eventId) {
+        addError(filePath, `variant eventId (${variant.eventId}) must match event directory (${eventId}).`);
+    }
+    if (variant.storylineId && variant.storylineId !== variantId) {
+        addWarning(filePath, `variant storylineId (${variant.storylineId}) differs from file name (${variantId}).`);
+    }
+    return validatePresentation(eventId, filePath, variant, sourceIds, assetsById, claimIds, quizIds, {
+        label: 'variant',
+        presentationId: variantId,
+        storylineId: variant.storylineId || variantId
+    });
 }
 
 function validateEventDir(eventDir) {
@@ -678,11 +774,19 @@ function validateEventDir(eventDir) {
     validateFigureRelations(eventFile, event.figures, assetsById);
     const quizzes = readJson(path.join(eventDir, 'quizzes.json')) || [];
     const quizIds = validateQuizzes(eventDir, quizzes, sourceIds, assetIds);
+    if (event.defaultPresentation) {
+        validatePresentation(eventId, eventFile, event.defaultPresentation, sourceIds, assetsById, claimIds, quizIds, {
+            label: 'defaultPresentation',
+            presentationId: 'default',
+            storylineId: ''
+        });
+    }
 
     const variantsDir = path.join(eventDir, 'variants');
     const variants = [];
     if (!fs.existsSync(variantsDir)) {
-        addError(variantsDir, 'Missing variants directory.');
+        if (!event.defaultPresentation)
+            addWarning(variantsDir, 'Event has no variants directory and no defaultPresentation.');
     } else {
         const variantFiles = fs
             .readdirSync(variantsDir)
@@ -706,10 +810,21 @@ function validateEventDir(eventDir) {
         addError(eventFile, 'event.summary must describe the event, not duplicate a variant displaySummary.');
     }
 
-    state.events.push({ id: eventId, file: rel(eventFile), variants });
+    state.events.push({
+        id: eventId,
+        file: rel(eventFile),
+        dir: eventDir,
+        event,
+        hasDefaultPresentation: isObject(event.defaultPresentation),
+        sourceIds,
+        assetsById,
+        claimIds,
+        quizIds,
+        variants
+    });
 }
 
-function validateStorylines(eventIds) {
+function validateStorylines(eventsById) {
     if (!fs.existsSync(STORYLINES_DIR)) {
         addError(STORYLINES_DIR, 'Missing archive/storylines directory.');
         return;
@@ -742,23 +857,59 @@ function validateStorylines(eventIds) {
                 addError(filePath, 'storyline event references must be objects.');
                 continue;
             }
-            if (!eventIds.has(ref.eventId)) {
+            if (!eventsById.has(ref.eventId)) {
                 addError(filePath, `storyline references missing eventId: ${ref.eventId}`);
                 continue;
             }
-            const variantFile = path.join(EVENTS_DIR, ref.eventId, 'variants', `${ref.variant}.json`);
-            if (!fs.existsSync(variantFile)) {
-                addError(filePath, `storyline references missing variant: ${ref.eventId}/variants/${ref.variant}.json`);
+            const variantId = String(ref.variant || storyline.id || '').trim();
+            const variantFile = path.join(EVENTS_DIR, ref.eventId, 'variants', `${variantId}.json`);
+            const hasVariantFile = fs.existsSync(variantFile);
+            const eventMeta = eventsById.get(ref.eventId);
+            if (ref.variant && !hasVariantFile) {
+                addError(filePath, `storyline references missing variant: ${ref.eventId}/variants/${variantId}.json`);
+            } else if (!ref.variant && !hasVariantFile && !eventMeta.hasDefaultPresentation) {
+                addError(
+                    filePath,
+                    `storyline references ${ref.eventId} without variant but event has no defaultPresentation.`
+                );
+            }
+            if (ref.enabled !== false && (hasVariantFile || eventMeta.hasDefaultPresentation)) {
+                try {
+                    const effectivePresentation = resolveEffectivePresentation({
+                        root: ROOT,
+                        eventDir: eventMeta.dir,
+                        event: eventMeta.event,
+                        eventId: ref.eventId,
+                        storylineId: storyline.id,
+                        ref
+                    }).presentation;
+                    validatePresentation(
+                        ref.eventId,
+                        filePath,
+                        effectivePresentation,
+                        eventMeta.sourceIds,
+                        eventMeta.assetsById,
+                        eventMeta.claimIds,
+                        eventMeta.quizIds,
+                        {
+                            label: `effective presentation ${ref.eventId}/${variantId}`,
+                            presentationId: variantId,
+                            storylineId: storyline.id
+                        }
+                    );
+                } catch (error) {
+                    addError(filePath, `unable to resolve presentation ${ref.eventId}/${variantId}: ${error.message}`);
+                }
             }
             if (ref.enabled === false) {
-                const key = `${ref.eventId}/${ref.variant}`;
+                const key = `${ref.eventId}/${variantId}`;
                 if (seenRefs.has(key)) addError(filePath, `storyline has duplicate event reference: ${key}`);
                 seenRefs.add(key);
                 continue;
             }
             const milestoneId = ref.milestoneId;
             if (!hasText(milestoneId)) {
-                addError(filePath, `storyline event is missing milestoneId: ${ref.eventId}/${ref.variant}`);
+                addError(filePath, `storyline event is missing milestoneId: ${ref.eventId}/${variantId}`);
             } else if (!/^milestone-[a-z0-9][a-z0-9._-]*$/.test(milestoneId)) {
                 addError(filePath, `storyline event has invalid milestoneId: ${milestoneId}`);
             } else if (ref.enabled !== false && milestoneIds.has(milestoneId)) {
@@ -766,7 +917,7 @@ function validateStorylines(eventIds) {
             } else if (ref.enabled !== false) {
                 milestoneIds.add(milestoneId);
             }
-            const key = `${ref.eventId}/${ref.variant}`;
+            const key = `${ref.eventId}/${variantId}`;
             if (seenRefs.has(key)) addError(filePath, `storyline has duplicate event reference: ${key}`);
             seenRefs.add(key);
         }
@@ -856,6 +1007,7 @@ function writeReport() {
 }
 
 function main() {
+    validateMediaStorageConfig();
     validateFigureRegistry();
     if (!fs.existsSync(EVENTS_DIR)) {
         addError(EVENTS_DIR, 'Missing archive/events directory.');
@@ -868,7 +1020,7 @@ function main() {
         for (const eventDir of eventDirs) validateEventDir(eventDir);
     }
 
-    validateStorylines(new Set(state.events.map((event) => event.id)));
+    validateStorylines(new Map(state.events.map((event) => [event.id, event])));
     validateEventFigureRules();
     writeReport();
 

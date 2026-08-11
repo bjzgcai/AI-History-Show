@@ -58,5 +58,320 @@
       "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
       "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "en": "MobileNets",
+      "zh": "MobileNets"
+    },
+    "displayDescription": {
+      "en": "<p>Image classifiers were becoming more accurate, but their computation and memory costs made deployment on phones and embedded devices difficult. MobileNets reframed architecture design around latency and resource constraints rather than benchmark accuracy alone.</p><p>Depthwise separable convolution splits spatial filtering from channel mixing, sharply reducing multiply-add operations. MobileNetV2 added inverted residual blocks and linear bottlenecks so narrow mobile representations could retain useful information. Experts generally treat MobileNets as a foundational efficient-model family that made on-device vision a first-class research objective. Its design principles influenced later efficient CNNs, neural architecture search, and mobile inference systems.</p>",
+      "zh": "<p>图像分类器越来越准确，但计算量和内存开销使它们难以部署到手机和嵌入式设备。MobileNets 把架构设计目标从单纯追求基准精度转向同时考虑延迟与资源约束。</p><p>深度可分离卷积把空间滤波与通道混合拆开，从而显著减少乘加运算。MobileNetV2 又加入倒残差块和线性瓶颈，让狭窄的移动端表示保留更多有效信息。专家通常把 MobileNets 视为高效模型家族的奠基成果，使端侧视觉成为独立而重要的研究目标。其设计原则影响了后续高效 CNN、神经架构搜索与移动推理系统。</p>"
+    },
+    "emphasis": [
+      "benchcouncil-canonical-2026-07-30",
+      "source-reviewed"
+    ],
+    "visual": "configuredPaper",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications",
+          "zh": "MobileNets：面向移动视觉应用的高效卷积神经网络"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed MobileNets achievement.",
+          "zh": "BenchCouncil 主表中MobileNets成就的主要资料。"
+        },
+        "url": "https://arxiv.org/abs/1704.04861",
+        "source": "https://arxiv.org/abs/1704.04861",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-2017-mobilenets-explainer",
+      "asset-2017-mobilenets-paper-first-page",
+      "asset-2017-mobilenets-applications",
+      "asset-ai100-2017-mobilenets-audio-zh-original-v1",
+      "asset-ai100-2017-mobilenets-audio-en-v1"
+    ],
+    "overviewImageAssetId": "asset-2017-mobilenets-paper-first-page",
+    "sourceIds": [
+      "source-2017-mobilenets-primary",
+      "source-2017-mobilenets-secondary",
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "claimIds": [
+      "claim-2017-mobilenets-membership",
+      "claim-2017-mobilenets-description"
+    ],
+    "quizId": "ai100-2017-mobilenets-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Image classifiers were becoming more accurate, but their computation and memory costs made deployment on phones and embedded devices difficult. MobileNets reframed architecture design around latency and resource constraints rather than benchmark accuracy alone.",
+          "zh": "图像分类器越来越准确，但计算量和内存开销使它们难以部署到手机和嵌入式设备。MobileNets 把架构设计目标从单纯追求基准精度转向同时考虑延迟与资源约束。"
+        },
+        "sourceIds": [
+          "source-2017-mobilenets-primary",
+          "source-benchcouncil-ai100-catalog"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Depthwise separable convolution splits spatial filtering from channel mixing, sharply reducing multiply-add operations. MobileNetV2 added inverted residual blocks and linear bottlenecks so narrow mobile representations could retain useful information.",
+          "zh": "深度可分离卷积把空间滤波与通道混合拆开，从而显著减少乘加运算。MobileNetV2 又加入倒残差块和线性瓶颈，让狭窄的移动端表示保留更多有效信息。"
+        },
+        "sourceIds": [
+          "source-2017-mobilenets-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat MobileNets as a foundational efficient-model family that made on-device vision a first-class research objective. Its design principles influenced later efficient CNNs, neural architecture search, and mobile inference systems.",
+          "zh": "专家通常把 MobileNets 视为高效模型家族的奠基成果，使端侧视觉成为独立而重要的研究目标。其设计原则影响了后续高效 CNN、神经架构搜索与移动推理系统。"
+        },
+        "sourceIds": [
+          "source-2017-mobilenets-primary",
+          "source-2017-mobilenets-secondary"
+        ]
+      }
+    ],
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "andrew-howard",
+        "role": {
+          "en": "Mobilenets lead author",
+          "zh": "Mobilenets 主要作者"
+        }
+      },
+      {
+        "figureId": "mark-sandler",
+        "role": {
+          "en": "Mobilenets co-author",
+          "zh": "Mobilenets 共同作者"
+        }
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "“MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications”",
+      "zh": "“MobileNets：面向移动视觉应用的高效卷积神经网络”"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications",
+        "zh": "MobileNets：面向移动视觉应用的高效卷积神经网络"
+      },
+      "workAuthors": {
+        "en": "See primary publication record",
+        "zh": "见主论文记录"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1704.04861"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications</em>",
+      "zh": "《MobileNets：面向移动视觉应用的高效卷积神经网络》"
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Depthwise separable convolution and inverted residual bottlenecks",
+        "zh": "深度可分离卷积与倒残差瓶颈"
+      },
+      "artifact": {
+        "en": "Mobile-efficient convolutional networks",
+        "zh": "移动端高效卷积网络"
+      },
+      "material": {
+        "en": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications, companion source, and BenchCouncil catalog record",
+        "zh": "《MobileNets：面向移动视觉应用的高效卷积神经网络》、配套资料与 BenchCouncil 清单记录"
+      },
+      "demo": {
+        "en": "Follow the four stages and compare how changing one stage affects the final mobile-efficient convolutional networks.",
+        "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的移动端高效卷积网络。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Stage 1",
+            "zh": "阶段 1"
+          },
+          "text": {
+            "en": "Input feature map",
+            "zh": "输入特征图"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 2",
+            "zh": "阶段 2"
+          },
+          "text": {
+            "en": "Depthwise spatial filter",
+            "zh": "逐通道空间滤波"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 3",
+            "zh": "阶段 3"
+          },
+          "text": {
+            "en": "Pointwise channel mixing",
+            "zh": "逐点通道混合"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 4",
+            "zh": "阶段 4"
+          },
+          "text": {
+            "en": "Efficient mobile output",
+            "zh": "高效移动端输出"
+          }
+        }
+      ],
+      "relatedAchievements": [],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Input feature map",
+          "zh": "输入特征图"
+        },
+        {
+          "en": "Depthwise spatial filter",
+          "zh": "逐通道空间滤波"
+        },
+        {
+          "en": "Pointwise channel mixing",
+          "zh": "逐点通道混合"
+        },
+        {
+          "en": "Efficient mobile output",
+          "zh": "高效移动端输出"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2017-2017-mobilenets_process.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "BenchCouncil lists MobileNets and cites MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications as a defining publication.",
+            "zh": "BenchCouncil 将MobileNets列入主表，并把《MobileNets：面向移动视觉应用的高效卷积神经网络》作为代表性资料。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+            "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Primary publication",
+            "zh": "主论文"
+          },
+          "title": {
+            "en": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications",
+            "zh": "MobileNets：面向移动视觉应用的高效卷积神经网络"
+          },
+          "description": {
+            "en": "Primary source for the BenchCouncil-listed MobileNets achievement.",
+            "zh": "BenchCouncil 主表中MobileNets成就的主要资料。"
+          },
+          "url": "https://arxiv.org/abs/1704.04861",
+          "source": "https://arxiv.org/abs/1704.04861",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "Google",
+        "zh": "Google"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        37.422,
+        -122.0841
+      ]
+    }
   }
 }

@@ -51,5 +51,313 @@
       "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
       "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "en": "Bagging",
+      "zh": "Bagging 装袋法"
+    },
+    "displayDescription": {
+      "en": "<p>High-variance learners such as deep decision trees could change sharply when the training sample changed slightly. Bagging proposed using resampling and aggregation to turn that instability into an advantage.</p><p>Multiple bootstrap samples are drawn from the training set, one predictor is fitted to each sample, and their outputs are averaged or voted. Aggregation reduces variance while preserving the strength of the base learner. Experts generally treat bagging as a foundational ensemble method and the conceptual base of random forests. Bootstrap aggregation remains a standard strategy for uncertainty reduction and robust prediction.</p>",
+      "zh": "<p>深决策树等高方差学习器会因训练样本的轻微变化而产生显著不同的模型。Bagging 提出通过重采样与聚合，把这种不稳定性转化为优势。</p><p>从训练集抽取多个自助样本，为每个样本训练一个预测器，再对输出进行平均或投票。聚合在保留基学习器能力的同时降低方差。专家通常把 Bagging 视为基础集成方法，也是随机森林的概念基础。自助聚合至今仍是降低不确定性和提升预测稳健性的标准策略。</p>"
+    },
+    "emphasis": [
+      "benchcouncil-canonical-2026-07-30",
+      "source-reviewed"
+    ],
+    "visual": "configuredPaper",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "Bagging Predictors",
+          "zh": "装袋预测器"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed Bagging achievement.",
+          "zh": "BenchCouncil 主表中Bagging 装袋法成就的主要资料。"
+        },
+        "url": "https://doi.org/10.1007/BF00058655",
+        "source": "https://doi.org/10.1007/BF00058655",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-1996-bagging-portrait",
+      "asset-1996-bagging-explainer",
+      "asset-ai100-1996-bagging-audio-zh-original-v1",
+      "asset-ai100-1996-bagging-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-1996-bagging-primary",
+      "source-1996-bagging-secondary",
+      "source-benchcouncil-ai100-catalog",
+      "source-1996-bagging-portrait"
+    ],
+    "claimIds": [
+      "claim-1996-bagging-membership",
+      "claim-1996-bagging-description"
+    ],
+    "quizId": "ai100-1996-bagging-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "High-variance learners such as deep decision trees could change sharply when the training sample changed slightly. Bagging proposed using resampling and aggregation to turn that instability into an advantage.",
+          "zh": "深决策树等高方差学习器会因训练样本的轻微变化而产生显著不同的模型。Bagging 提出通过重采样与聚合，把这种不稳定性转化为优势。"
+        },
+        "sourceIds": [
+          "source-1996-bagging-primary",
+          "source-benchcouncil-ai100-catalog"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Multiple bootstrap samples are drawn from the training set, one predictor is fitted to each sample, and their outputs are averaged or voted. Aggregation reduces variance while preserving the strength of the base learner.",
+          "zh": "从训练集抽取多个自助样本，为每个样本训练一个预测器，再对输出进行平均或投票。聚合在保留基学习器能力的同时降低方差。"
+        },
+        "sourceIds": [
+          "source-1996-bagging-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat bagging as a foundational ensemble method and the conceptual base of random forests. Bootstrap aggregation remains a standard strategy for uncertainty reduction and robust prediction.",
+          "zh": "专家通常把 Bagging 视为基础集成方法，也是随机森林的概念基础。自助聚合至今仍是降低不确定性和提升预测稳健性的标准策略。"
+        },
+        "sourceIds": [
+          "source-1996-bagging-primary",
+          "source-1996-bagging-secondary"
+        ]
+      }
+    ],
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "leo-breiman",
+        "role": {
+          "en": "Bagging author",
+          "zh": "Bagging 作者"
+        },
+        "avatarAssetId": "asset-1996-bagging-portrait"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "“Bagging Predictors”",
+      "zh": "“装袋预测器”"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Bagging Predictors",
+        "zh": "装袋预测器"
+      },
+      "workAuthors": {
+        "en": "See primary publication record",
+        "zh": "见主论文记录"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1007/BF00058655"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>Bagging Predictors</em>",
+      "zh": "《装袋预测器》"
+    },
+    "achievement": {
+      "area": {
+        "en": "Decision Trees and Ensemble Learning",
+        "zh": "决策树与集成学习"
+      },
+      "method": {
+        "en": "Bootstrap resampling and prediction aggregation",
+        "zh": "自助重采样与预测聚合"
+      },
+      "artifact": {
+        "en": "Bootstrap ensemble",
+        "zh": "自助采样集成模型"
+      },
+      "material": {
+        "en": "Bagging Predictors, companion source, and BenchCouncil catalog record",
+        "zh": "《装袋预测器》、配套资料与 BenchCouncil 清单记录"
+      },
+      "demo": {
+        "en": "Follow the four stages and compare how changing one stage affects the final bootstrap ensemble.",
+        "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的自助采样集成模型。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Stage 1",
+            "zh": "阶段 1"
+          },
+          "text": {
+            "en": "Training set",
+            "zh": "训练集"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 2",
+            "zh": "阶段 2"
+          },
+          "text": {
+            "en": "Bootstrap samples",
+            "zh": "自助样本"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 3",
+            "zh": "阶段 3"
+          },
+          "text": {
+            "en": "Train base models",
+            "zh": "训练基模型"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 4",
+            "zh": "阶段 4"
+          },
+          "text": {
+            "en": "Average or vote",
+            "zh": "平均或投票"
+          }
+        }
+      ],
+      "relatedAchievements": [],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Training set",
+          "zh": "训练集"
+        },
+        {
+          "en": "Bootstrap samples",
+          "zh": "自助样本"
+        },
+        {
+          "en": "Train base models",
+          "zh": "训练基模型"
+        },
+        {
+          "en": "Average or vote",
+          "zh": "平均或投票"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1996-1996-bagging_process.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "BenchCouncil lists Bagging and cites Bagging Predictors as a defining publication.",
+            "zh": "BenchCouncil 将Bagging 装袋法列入主表，并把《装袋预测器》作为代表性资料。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+            "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Primary publication",
+            "zh": "主论文"
+          },
+          "title": {
+            "en": "Bagging Predictors",
+            "zh": "装袋预测器"
+          },
+          "description": {
+            "en": "Primary source for the BenchCouncil-listed Bagging achievement.",
+            "zh": "BenchCouncil 主表中Bagging 装袋法成就的主要资料。"
+          },
+          "url": "https://doi.org/10.1007/BF00058655",
+          "source": "https://doi.org/10.1007/BF00058655",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "UC Berkeley",
+        "zh": "加州大学伯克利分校"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        37.8719,
+        -122.2585
+      ]
+    }
   }
 }

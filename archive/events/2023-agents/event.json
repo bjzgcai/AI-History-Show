@@ -65,5 +65,170 @@
       "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
       "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "zh": "智能体：LLM驱动的自主系统",
+      "en": "Agents: LLM-Driven Autonomous Systems"
+    },
+    "displaySummary": {
+      "zh": "大模型与科学智能",
+      "en": "Large Models and Scientific Intelligence"
+    },
+    "displayDescription": {
+      "zh": "<p>2022 年提出、并在 2023 年广泛传播的 ReAct 方法，让语言模型交错生成推理步骤、具体行动和环境返回的观察结果。与只输出答案不同，模型可以查询知识库、调用工具，再根据新信息继续推理。Toolformer 等研究也展示了模型学习何时插入 API 调用的可能性。</p><p>由此形成的 LLM 智能体通常把模型置于循环控制中心，外接任务规划、记忆、工具和结果评估模块，把一次文本生成扩展为多步行动过程。它们推动了编程、检索、数据分析和软件自动化实验，但“自主”并不等于可靠：错误会在长链路中累积，工具权限、成本、评测和安全边界仍是实际部署的核心问题。</p>",
+      "en": "<p>ReAct, introduced in 2022 and widely adopted in 2023, allowed language models to interleave reasoning steps, concrete actions, and observations returned by an environment. Instead of producing only a final answer, a model could query a knowledge source or invoke a tool, then continue reasoning from the new information. Toolformer similarly explored how models could learn when to insert API calls.</p><p>LLM agents placed the model at the center of a control loop connected to planning, memory, tools, and result evaluation, extending one text generation into a multi-step process. They accelerated experiments in coding, retrieval, data analysis, and software automation. “Autonomous,” however, does not mean reliable: errors accumulate across long trajectories, and permissions, cost, evaluation, and security remain central deployment constraints.</p>"
+    },
+    "emphasis": [
+      "batch-migration",
+      "source-review-needed"
+    ],
+    "visualModules": [],
+    "assetIds": [
+      "asset-2023-agents-historical-02",
+      "asset-2023-agents-historical-03",
+      "asset-2023-agents-historical-04",
+      "asset-2023-agents-audio-zh-original-v1",
+      "asset-2023-agents-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-react-paper",
+      "source-toolformer-paper",
+      "source-llm-agent-survey"
+    ],
+    "claimIds": [
+      "claim-legacy-achievement-summary",
+      "claim-legacy-description"
+    ],
+    "commentarySections": [
+      {
+        "id": "background",
+        "label": {
+          "zh": "背景解读",
+          "en": "Background"
+        },
+        "html": {
+          "zh": "当代 Agentic AI 的关键变化，并不是“会调用工具”这一点本身，而是大语言模型开始同时承担目标分解、状态解释、行动选择与自我修正的认知中枢角色。",
+          "en": "The key change in contemporary agentic AI is not tool use by itself. Large language models began to act as the cognitive center for goal decomposition, state interpretation, action selection, and self-correction."
+        },
+        "sourceIds": [
+          "source-react-paper",
+          "source-toolformer-paper",
+          "source-llm-agent-survey"
+        ]
+      },
+      {
+        "id": "context",
+        "label": {
+          "zh": "延展说明",
+          "en": "Context"
+        },
+        "html": {
+          "zh": "这让智能体从过去依赖手写规划器的系统，变成了一种可通过提示、记忆、工具链和反馈环不断重构行为策略的开放式软件形态，也解释了为什么 2023 后 Agent 产品会迅速爆发。",
+          "en": "That turns agents from systems dependent on hand-written planners into open software forms whose behavior strategies can be rebuilt through prompts, memory, toolchains, and feedback loops. It also explains why agent products expanded so quickly after 2023."
+        },
+        "sourceIds": [
+          "source-react-paper",
+          "source-toolformer-paper",
+          "source-llm-agent-survey"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+        "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+      }
+    },
+    "category": {
+      "en": "Large Models and Scientific Intelligence",
+      "zh": "大模型与科学智能"
+    },
+    "figures": [
+      {
+        "figureId": "stuart-russell",
+        "role": {
+          "en": "Founder of Agent Theory",
+          "zh": "智能体理论奠基人"
+        }
+      },
+      {
+        "figureId": "peter-norvig",
+        "role": {
+          "en": "AIMA author",
+          "zh": "《人工智能：一种现代方法》作者"
+        }
+      },
+      {
+        "figureId": "michael-wooldridge",
+        "role": {
+          "en": "Expert in Multi-Agent Systems",
+          "zh": "多智能体系统专家"
+        }
+      }
+    ],
+    "photos": [],
+    "videoUrl": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
+    "resources": {
+      "videos": [
+        {
+          "id": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
+          "url": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
+          "title": "2023AI智能体：70年的梦想",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
+        }
+      ]
+    },
+    "quote": {
+      "en": "\"ReAct and related systems showed how language models could interleave reasoning traces with actions, turning LLMs from text predictors into components of tool-using agents.\"",
+      "zh": "\"ReAct 及相关系统展示了语言模型如何交错生成推理轨迹与行动，使 LLM 从文本预测器延伸为可调用工具的智能体组件。\""
+    },
+    "quoteMeta": {
+      "speaker": {
+        "en": "Shunyu Yao et al.",
+        "zh": "姚顺雨等"
+      },
+      "workTitle": {
+        "en": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "zh": "ReAct：在语言模型中协同推理与行动"
+      },
+      "workAuthors": {
+        "en": "Shunyu Yao et al., arXiv, 2022",
+        "zh": "姚顺雨等，arXiv，2022"
+      },
+      "sourceLabel": {
+        "en": "ReAct arXiv paper page",
+        "zh": "ReAct arXiv 论文页面"
+      },
+      "sourceUrl": "https://arxiv.org/abs/2210.03629"
+    },
+    "quotePage": {
+      "en": "ReAct paper: Synergizing Reasoning and Acting in Language Models",
+      "zh": "ReAct 论文《在语言模型中协同推理与行动》"
+    },
+    "quoteAttribution": {
+      "en": "<em>ReAct: Synergizing Reasoning and Acting in Language Models</em>, Shunyu Yao et al., arXiv, 2022",
+      "zh": "《ReAct：在语言模型中协同推理与行动》，姚顺雨等"
+    },
+    "location": {
+      "name": {
+        "en": "Global AI Labs",
+        "zh": "全球研究"
+      },
+      "country": {
+        "en": "Global",
+        "zh": "多个机构"
+      },
+      "coordinates": [
+        37.7749,
+        -122.4194
+      ]
+    }
   }
 }

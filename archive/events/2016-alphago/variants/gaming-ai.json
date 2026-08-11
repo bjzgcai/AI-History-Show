@@ -1,22 +1,10 @@
 {
-  "storylineId": "gaming-ai",
-  "eventId": "2016-alphago",
-  "displayTitle": {
-    "en": "AlphaGo",
-    "zh": "AlphaGo"
-  },
-  "displaySummary": {
-    "en": "Game AI as a Testbed for Search, Learning and Planning",
-    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进"
-  },
   "emphasis": [
     "game-ai-lineage",
     "search",
     "self-play",
     "game-record-evolution"
   ],
-  "visual": "go",
-  "overviewImageAssetId": "asset-david-silver-commons-portrait",
   "assetIds": [
     "asset-david-silver-commons-portrait",
     "asset-alphago-policy-value-search",
@@ -32,154 +20,7 @@
     "source-katago-analysis-engine",
     "source-alphago-game-4-commons"
   ],
-  "claimIds": [
-    "claim-hybrid-policy-value-search",
-    "claim-lee-sedol-match",
-    "claim-self-play-legacy"
-  ],
-  "displayDescription": {
-    "en": "<p>AlphaGo combined policy networks, a value network, Monte Carlo tree search, and reinforcement learning. Supervised learning from expert games first gave the policy network a strong starting point; self-play then improved move selection, while tree search joined learned intuition with explicit look-ahead. The 2016 Nature paper reported its victory over European champion Fan Hui, and its later 4-1 match win against Lee Sedol brought the achievement to a global audience.</p><p>Go had long resisted brute-force approaches because its branching factor and strategic horizon are enormous. AlphaGo showed that learned representations could narrow search and evaluate positions that were difficult to encode by hand. Its deeper legacy is the combination of neural evaluation, planning, and self-play, a pattern that influenced later game systems and research on decision-making beyond board games.</p>",
-    "zh": "<p>AlphaGo 结合策略网络、价值网络、蒙特卡洛树搜索和强化学习。系统先从职业棋手棋谱中进行监督学习，再通过自我对弈改进策略，并让树搜索把学习到的直觉与显式前瞻结合起来。2016 年《自然》论文报告了它战胜欧洲冠军樊麾，随后以 4 比 1 战胜李世石的比赛让这项成果进入全球公众视野。</p><p>围棋的分支数量和战略跨度极大，长期难以依靠蛮力搜索解决。AlphaGo 证明学习得到的表示可以缩小搜索范围，并评估难以手工编码的局面。它更深远的遗产是神经评估、规划与自我对弈的组合，这一模式影响了后续游戏系统及更广泛的决策研究。</p>"
-  },
-  "category": {
-    "en": "AI in Board & Tabletop Games",
-    "zh": "AI 在棋牌与博弈论的演进"
-  },
-  "figures": [
-    {
-      "figureId": "david-silver",
-      "role": {
-        "en": "AlphaGo lead researcher",
-        "zh": "AlphaGo 主要研究者"
-      },
-      "avatarAssetId": "asset-david-silver-commons-portrait"
-    },
-    {
-      "figureId": "demis-hassabis",
-      "role": {
-        "en": "DeepMind co-founder",
-        "zh": "DeepMind 联合创始人"
-      }
-    },
-    {
-      "figureId": "lee-sedol",
-      "role": {
-        "en": "Go world champion in the landmark 2016 match",
-        "zh": "2016 年里程碑对局中的围棋世界冠军"
-      },
-      "avatarAssetId": "asset-alphago-lee-sedol"
-    }
-  ],
-  "photos": [],
-  "videoUrl": "",
-  "quote": {
-    "en": "\"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.\"",
-    "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
-  },
-  "quoteMeta": {
-    "speaker": "",
-    "workTitle": {
-      "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
-      "zh": "用深度神经网络和树搜索掌握围棋"
-    },
-    "workAuthors": {
-      "en": "David Silver et al., Nature, 2016",
-      "zh": "大卫·席尔瓦等, 《自然》, 2016"
-    },
-    "sourceLabel": "",
-    "sourceUrl": "https://www.nature.com/articles/nature16961"
-  },
-  "quotePage": {
-    "en": "BenchCouncil AI100: Reinforcement learning / AlphaGo",
-    "zh": "BenchCouncil AI100：强化学习 / AlphaGo"
-  },
-  "quoteAttribution": {
-    "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
-    "zh": "《用深度神经网络和树搜索掌握围棋》, 大卫·席尔瓦等, 《自然》, 2016"
-  },
-  "achievement": {
-    "area": {
-      "en": "Reinforcement Learning",
-      "zh": "强化学习"
-    },
-    "method": {
-      "en": "Self-play search",
-      "zh": "自我对弈搜索"
-    },
-    "artifact": {
-      "en": "Policy/value networks + MCTS",
-      "zh": "策略 / 价值网络 + MCTS"
-    },
-    "material": {
-      "en": "Nature paper + blog + SGF/API",
-      "zh": "《自然》 论文 + 博客 + 棋谱/API"
-    },
-    "demo": {
-      "en": "Move 37 board explainer",
-      "zh": "第 37 手棋盘解释器"
-    },
-    "demoSteps": [
-      {
-        "en": "Policy prior",
-        "zh": "策略先验"
-      },
-      {
-        "en": "Value estimate",
-        "zh": "价值估计"
-      },
-      {
-        "en": "Search variation",
-        "zh": "搜索分支"
-      }
-    ],
-    "relatedAchievements": [
-      {
-        "en": "Deep Blue",
-        "zh": "深蓝"
-      },
-      {
-        "en": "AlphaZero",
-        "zh": "AlphaZero"
-      }
-    ],
-    "relatedRegions": [
-      {
-        "en": "United Kingdom",
-        "zh": "英国"
-      }
-    ],
-    "visualModules": [
-      {
-        "type": "archiveLink",
-        "site": {
-          "en": "Nature",
-          "zh": "《自然》"
-        },
-        "title": {
-          "en": "Mastering the game of Go with deep neural networks and tree search",
-          "zh": "《用深度神经网络和树搜索掌握围棋》"
-        },
-        "description": {
-          "en": "Official Nature article page for the 2016 AlphaGo paper, documenting policy networks, value networks and Monte Carlo tree search.",
-          "zh": "《自然》 官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
-        },
-        "url": "https://www.nature.com/articles/nature16961",
-        "source": "https://www.nature.com/articles/nature16961",
-        "license": {
-          "en": "Nature article access page; reuse rights for article figures are restricted by publisher terms.",
-          "zh": "《自然》文章访问页；论文图表的复用受出版方条款限制。"
-        },
-        "usage": {
-          "en": "Source material / Published paper reference",
-          "zh": "原始材料入口 / 发表论文参考"
-        },
-        "action": {
-          "en": "Open Nature paper",
-          "zh": "打开 《自然》 论文"
-        }
-      }
-    ]
-  },
+  "quizId": "2016-alphago-quiz-1",
   "commentarySections": [
     {
       "id": "historical-background",
@@ -226,19 +67,49 @@
       ]
     }
   ],
-  "quizId": "2016-alphago-quiz-1",
+  "displayDescription": {
+    "en": "<p>AlphaGo combined policy networks, a value network, Monte Carlo tree search, and reinforcement learning. Supervised learning from expert games first gave the policy network a strong starting point; self-play then improved move selection, while tree search joined learned intuition with explicit look-ahead. The 2016 Nature paper reported its victory over European champion Fan Hui, and its later 4-1 match win against Lee Sedol brought the achievement to a global audience.</p><p>Go had long resisted brute-force approaches because its branching factor and strategic horizon are enormous. AlphaGo showed that learned representations could narrow search and evaluate positions that were difficult to encode by hand. Its deeper legacy is the combination of neural evaluation, planning, and self-play, a pattern that influenced later game systems and research on decision-making beyond board games.</p>"
+  },
+  "category": {
+    "en": "AI in Board & Tabletop Games",
+    "zh": "AI 在棋牌与博弈论的演进"
+  },
+  "figures": [
+    {
+      "figureId": "david-silver",
+      "role": {
+        "en": "AlphaGo lead researcher",
+        "zh": "AlphaGo 主要研究者"
+      },
+      "avatarAssetId": "asset-david-silver-commons-portrait"
+    },
+    {
+      "figureId": "demis-hassabis",
+      "role": {
+        "en": "DeepMind co-founder",
+        "zh": "DeepMind 联合创始人"
+      }
+    },
+    {
+      "figureId": "lee-sedol",
+      "role": {
+        "en": "Go world champion in the landmark 2016 match",
+        "zh": "2016 年里程碑对局中的围棋世界冠军"
+      },
+      "avatarAssetId": "asset-alphago-lee-sedol"
+    }
+  ],
   "location": {
     "name": {
-      "en": "Google DeepMind",
       "zh": "谷歌 DeepMind"
     },
     "country": {
       "en": "London, United Kingdom",
       "zh": "英国，伦敦"
-    },
-    "coordinates": [
-      51.5074,
-      -0.1278
-    ]
+    }
+  },
+  "displaySummary": {
+    "en": "Game AI as a Testbed for Search, Learning and Planning",
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进"
   }
 }

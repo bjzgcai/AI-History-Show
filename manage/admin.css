@@ -540,6 +540,17 @@ aside {
     max-width: 260px;
 }
 
+.presentation-preview {
+    max-height: 420px;
+    margin: 0;
+    padding: 12px;
+    overflow: auto;
+    border: 1px solid var(--line-soft);
+    border-radius: 10px;
+    background: #0b0d11;
+    white-space: pre;
+}
+
 .muted {
     color: var(--muted);
 }

@@ -1,27 +1,12 @@
 {
-  "storylineId": "deep-learning",
-  "eventId": "2016-alphago",
   "displayTitle": {
     "zh": "深度学习进入复杂决策系统",
     "en": "Deep Learning Enters Complex Decision Systems"
-  },
-  "displaySummary": {
-    "zh": "AlphaGo 展示了深度神经网络不仅能处理感知任务，也能通过搜索和强化学习参与复杂决策。",
-    "en": "AlphaGo showed that deep neural networks could go beyond perception and contribute to complex decision-making through search and reinforcement learning."
   },
   "emphasis": [
     "deep-learning-expansion",
     "reinforcement-learning",
     "search-system"
-  ],
-  "visual": "go",
-  "overviewImageAssetId": "asset-david-silver-commons-portrait",
-  "assetIds": [
-    "asset-david-silver-commons-portrait",
-    "asset-alphago-policy-value-search",
-    "asset-alphago-lee-sedol",
-    "asset-2016-alphago-audio-zh-original-v1",
-    "asset-2016-alphago-audio-en-v1"
   ],
   "sourceIds": [
     "source-david-silver-commons-portrait",
@@ -29,12 +14,6 @@
     "source-deepmind-alphago-page",
     "source-katago-analysis-engine"
   ],
-  "claimIds": [
-    "claim-hybrid-policy-value-search",
-    "claim-lee-sedol-match",
-    "claim-self-play-legacy"
-  ],
-  "quizId": "quiz-2016-alphago-ai100",
   "commentarySections": [
     {
       "id": "historical-background",
@@ -80,5 +59,20 @@
         "source-deepmind-alphago-page"
       ]
     }
-  ]
+  ],
+  "displayDescription": null,
+  "category": null,
+  "figures": null,
+  "photos": null,
+  "videoUrl": null,
+  "quote": null,
+  "quoteMeta": null,
+  "quotePage": null,
+  "quoteAttribution": null,
+  "achievement": null,
+  "location": null,
+  "displaySummary": {
+    "zh": "AlphaGo 展示了深度神经网络不仅能处理感知任务，也能通过搜索和强化学习参与复杂决策。",
+    "en": "AlphaGo showed that deep neural networks could go beyond perception and contribute to complex decision-making through search and reinforcement learning."
+  }
 }

@@ -80,5 +80,350 @@
       "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
       "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "zh": "ResNet",
+      "en": "ResNet"
+    },
+    "displayDescription": {
+      "zh": "<p>何恺明、张祥雨、任少卿和孙剑在 2015 年提出残差学习，解决网络加深后训练误差反而上升的“退化问题”。残差块不直接学习完整映射 H(x)，而是学习修正量 F(x)，再通过恒等快捷连接输出 F(x)+x；信息和梯度因此可以沿更直接路径穿过网络。</p><p>这一极简结构使 50、101、152 层等非常深的网络能够稳定训练，并在 ImageNet 和检测任务上取得突破。ResNet 随后成为视觉系统的常用骨干，也影响语音、语言和生成模型中的跳跃连接设计。它的重要性在于改变了深层架构的基本问题：每层不必重建全部表示，只需学习必要变化。</p>",
+      "en": "<p>Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced residual learning in 2015 to address the “degradation problem,” where adding layers could increase training error. A residual block does not learn the complete mapping H(x) directly; it learns a correction F(x) and adds an identity shortcut to output F(x)+x. Information and gradients can therefore travel through a more direct path.</p><p>This minimal structure made very deep networks such as 50-, 101-, and 152-layer models practical to train and produced major ImageNet and detection results. ResNet became a standard visual backbone and influenced skip connections in speech, language, and generative models. Its central lesson changed the architecture question: a layer need not rebuild the whole representation when it can learn only the necessary change.</p>"
+    },
+    "emphasis": [
+      "batch-migration",
+      "source-review-needed"
+    ],
+    "visual": "resnet",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Deep Residual Learning for Image Recognition",
+          "zh": "用于图像识别的深度残差学习"
+        },
+        "description": {
+          "en": "Open paper for residual networks.",
+          "zh": "残差网络的开放论文。"
+        },
+        "url": "https://arxiv.org/abs/1512.03385",
+        "source": "https://arxiv.org/abs/1512.03385",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-kaiming-he",
+      "asset-2015-resnet-architecture-01",
+      "asset-2015-resnet-architecture-02",
+      "asset-2015-resnet-people-04",
+      "asset-2015-resnet-people-03",
+      "asset-2015-resnet-people-02",
+      "asset-2015-resnet-people-01",
+      "asset-2015-resnet-audio-zh-original-v1",
+      "asset-2015-resnet-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-cvf-open-access-paper-page",
+      "source-cvpr-full-paper-pdf",
+      "source-kaiming-he-profile-at-mit-csail",
+      "source-deep-residual-learning-for-image-recognition"
+    ],
+    "claimIds": [
+      "claim-legacy-achievement-summary",
+      "claim-legacy-description"
+    ],
+    "quizId": "ai100-2015-resnet-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "ResNet 引入残差连接，使很深的网络可以学习增量修正，而不是完整变换。它让数百层网络变得可训练，并成为视觉系统的常用骨干网络。",
+          "en": "ResNet introduced residual connections that let very deep networks learn refinements instead of full transformations. It made hundreds of layers trainable and became a backbone for vision systems."
+        },
+        "sourceIds": [
+          "source-deep-residual-learning-for-image-recognition"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "捷径路径把输入加回学习得到的残差变换。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+          "en": "A shortcut path adds the input back to a learned residual transformation. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+        },
+        "sourceIds": [
+          "source-deep-residual-learning-for-image-recognition"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 ResNet 视为超深网络设计的转折点。它的长期影响在于残差学习：捷径连接让深度更容易优化，并成为视觉及其他领域的标准骨干思想。",
+          "en": "Experts generally treat ResNet as a turning point in very deep network design. Its long-term legacy is residual learning: the shortcut-connection pattern that made depth easier to optimize and became a standard backbone idea across vision and beyond."
+        },
+        "sourceIds": [
+          "source-deep-residual-learning-for-image-recognition"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+        "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+      }
+    },
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "kaiming-he",
+        "role": {
+          "en": "ResNet lead author",
+          "zh": "ResNet 第一作者"
+        },
+        "avatarAssetId": "asset-kaiming-he"
+      },
+      {
+        "figureId": "jian-sun",
+        "role": {
+          "en": "ResNet co-author and corresponding author",
+          "zh": "ResNet 共同作者与通讯作者"
+        },
+        "avatarAssetId": "asset-2015-resnet-people-01"
+      },
+      {
+        "figureId": "xiangyu-zhang",
+        "role": {
+          "en": "ResNet co-author",
+          "zh": "ResNet 共同作者"
+        },
+        "avatarAssetId": "asset-2015-resnet-people-03"
+      },
+      {
+        "figureId": "shaoqing-ren",
+        "role": {
+          "en": "ResNet co-author",
+          "zh": "ResNet 共同作者"
+        },
+        "avatarAssetId": "asset-2015-resnet-people-02"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+    "resources": {
+      "videos": [
+        {
+          "id": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+          "url": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+          "title": "",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
+        }
+      ]
+    },
+    "quote": {
+      "en": "\"Deep Residual Learning for Image Recognition\"",
+      "zh": "\"用于图像识别的深度残差学习\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Deep Residual Learning for Image Recognition",
+        "zh": "用于图像识别的深度残差学习"
+      },
+      "workAuthors": {
+        "en": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
+        "zh": "何恺明、张祥雨、任少卿、孙剑，CVPR，2016"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1512.03385"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>Deep Residual Learning for Image Recognition</em>, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
+      "zh": "《用于图像识别的深度残差学习》, 何恺明、张祥雨、任少卿、孙剑，CVPR，2016"
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Residual learning with shortcut connections",
+        "zh": "带捷径连接的残差学习"
+      },
+      "artifact": {
+        "en": "Deep residual network",
+        "zh": "深度残差网络"
+      },
+      "material": {
+        "en": "CVPR paper",
+        "zh": "CVPR 论文"
+      },
+      "demo": {
+        "en": "A shortcut path adds the input back to a learned residual transformation.",
+        "zh": "捷径路径把输入加回学习得到的残差变换。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Shortcut Connection",
+            "zh": "捷径连接"
+          },
+          "text": {
+            "en": "The input can flow around a block and be added back.",
+            "zh": "输入可以绕过模块并被加回输出。"
+          }
+        },
+        {
+          "label": {
+            "en": "Residual Function",
+            "zh": "残差函数"
+          },
+          "text": {
+            "en": "The network learns changes to features rather than replacing them entirely.",
+            "zh": "网络学习特征变化，而不是完全替换特征。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        },
+        {
+          "en": "VGG",
+          "zh": "VGG"
+        },
+        {
+          "en": "DenseNet",
+          "zh": "DenseNet"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "China",
+          "zh": "中国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Input",
+          "zh": "输入"
+        },
+        {
+          "en": "Residual block",
+          "zh": "残差模块"
+        },
+        {
+          "en": "Add shortcut",
+          "zh": "加入捷径"
+        }
+      ],
+      "demoImage": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "CVPR paper",
+            "zh": "CVPR 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A shortcut path adds the input back to a learned residual transformation.",
+            "zh": "捷径路径把输入加回学习得到的残差变换。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "Deep Residual Learning for Image Recognition",
+            "zh": "用于图像识别的深度残差学习"
+          },
+          "description": {
+            "en": "Open paper for residual networks.",
+            "zh": "残差网络的开放论文。"
+          },
+          "url": "https://arxiv.org/abs/1512.03385",
+          "source": "https://arxiv.org/abs/1512.03385",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open article",
+            "zh": "打开文章"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "Microsoft Research (Asia)",
+        "zh": "微软亚洲研究院"
+      },
+      "country": {
+        "en": "China",
+        "zh": "中国"
+      },
+      "coordinates": [
+        39.9042,
+        116.4074
+      ]
+    }
   }
 }

@@ -23,6 +23,9 @@
         "description": {
             "$ref": "shared.schema.json#/$defs/localizedHtml"
         },
+        "defaultPresentation": {
+            "$ref": "variant.schema.json#/$defs/presentation"
+        },
         "location": {
             "type": "object",
             "properties": {

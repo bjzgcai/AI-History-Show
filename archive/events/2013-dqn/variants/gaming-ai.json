@@ -1,74 +1,10 @@
 {
-  "storylineId": "gaming-ai",
-  "eventId": "2013-dqn",
-  "presentationMode": "preserve-legacy",
-  "displayTitle": {
-    "zh": "深度 Q 网络",
-    "en": "Deep Q Network"
-  },
-  "displaySummary": {
-    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
-    "en": "Game AI as a Testbed for Search, Learning and Planning"
-  },
-  "displayDescription": {
-    "zh": "<p>DeepMind 的 DQN 把卷积神经网络与 Q-learning 结合起来，让智能体直接从 Atari 屏幕像素估计每个动作的长期价值。经验回放随机抽取过去的转移，减少连续样本之间的相关性；固定一段时间的目标网络为自举更新提供较稳定的学习目标。</p><p>同一套基本架构在多款游戏中从视觉输入学习策略，证明深度表示可以与强化学习共同工作，而不必为每个游戏手工设计状态特征。DQN 开启深度强化学习的重要浪潮，但仍存在样本效率低、训练不稳定和对奖励设计敏感等问题，后续研究围绕这些限制发展出大量改进。</p>",
-    "en": "<p>DeepMind's DQN combined a convolutional neural network with Q-learning so an agent could estimate the long-term value of actions directly from Atari screen pixels. Experience replay sampled past transitions in randomized order, reducing correlations between consecutive observations. A target network held parameters fixed for intervals, providing a more stable target for bootstrapped updates.</p><p>The same basic architecture learned policies across many games from visual input without hand-designing a separate state representation for each one. DQN became a major bridge from classical reinforcement learning to deep reinforcement learning. It still required large amounts of experience and could be unstable or sensitive to reward design, limitations that motivated a broad family of later improvements.</p>"
-  },
-  "emphasis": [
-    "batch-migration",
-    "source-review-needed"
-  ],
-  "visual": "dqn",
-  "visualModules": [
-    {
-      "type": "archiveLink",
-      "site": {
-        "en": "arXiv / Nature",
-        "zh": "arXiv / 《自然》"
-      },
-      "title": {
-        "en": "DQN paper",
-        "zh": "DQN 论文"
-      },
-      "description": {
-        "en": "Primary DeepMind DQN source; local images redraw replay memory and Q-value control.",
-        "zh": "DeepMind DQN 原始来源；本地图重画回放记忆和 Q 值控制。"
-      },
-      "url": "https://arxiv.org/abs/1312.5602",
-      "source": "https://arxiv.org/abs/1312.5602",
-      "license": {
-        "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
-        "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
-      },
-      "usage": {
-        "en": "Literature reference link",
-        "zh": "文献参考链接"
-      },
-      "action": {
-        "en": "Open preprint",
-        "zh": "打开预印本"
-      }
-    }
-  ],
-  "assetIds": [
-    "asset-2013-dqn-volodymyr-mnih",
-    "asset-2013-dqn-replay-buffer",
-    "asset-2013-dqn-q-control",
-    "asset-david-silver-commons-portrait",
-    "asset-2013-dqn-audio-zh-original-v1",
-    "asset-2013-dqn-audio-en-v1"
-  ],
   "sourceIds": [
     "source-david-silver-commons-portrait",
     "source-playing-atari-with-deep-reinforcement-learning",
     "source-human-level-control-through-deep-reinforcement-learning",
     "source-google-deepmind-deep-reinforcement-learning"
   ],
-  "claimIds": [
-    "claim-legacy-achievement-summary",
-    "claim-legacy-description"
-  ],
-  "quizId": "2013-dqn-quiz-1",
   "commentarySections": [
     {
       "id": "historical-background",
@@ -113,13 +49,6 @@
       ]
     }
   ],
-  "review": {
-    "status": "draft",
-    "notes": {
-      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
-      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
-    }
-  },
   "category": {
     "en": "AI in Board & Tabletop Games",
     "zh": "AI 在棋牌与博弈论的演进"
@@ -142,156 +71,6 @@
       "avatarAssetId": "asset-david-silver-commons-portrait"
     }
   ],
-  "photos": [],
-  "videoUrl": "",
-  "quote": {
-    "en": "\"playing Atari with deep reinforcement learning\"",
-    "zh": "\"用深度强化学习玩 Atari\""
-  },
-  "quoteMeta": {
-    "speaker": "",
-    "workTitle": {
-      "en": "Playing Atari with Deep Reinforcement Learning",
-      "zh": "用深度强化学习玩 Atari"
-    },
-    "workAuthors": {
-      "en": "Volodymyr Mnih et al., DeepMind, 2013",
-      "zh": "沃洛迪米尔·姆尼赫等, DeepMind，2013"
-    },
-    "sourceLabel": "",
-    "sourceUrl": "https://arxiv.org/abs/1312.5602"
-  },
-  "quotePage": {
-    "en": "BenchCouncil AI100: Reinforcement learning / Deep Q Network",
-    "zh": "BenchCouncil AI100：强化学习 / 深度 Q 网络"
-  },
-  "quoteAttribution": {
-    "en": "<em>Playing Atari with Deep Reinforcement Learning</em>, Volodymyr Mnih et al., DeepMind, 2013",
-    "zh": "《用深度强化学习玩 Atari》, 沃洛迪米尔·姆尼赫等, DeepMind，2013"
-  },
-  "achievement": {
-    "area": {
-      "en": "Reinforce learning",
-      "zh": "强化学习"
-    },
-    "method": {
-      "en": "Q-learning with convolutional networks, replay, and target networks",
-      "zh": "结合卷积网络、经验回放与目标网络的 Q 学习"
-    },
-    "artifact": {
-      "en": "Atari-playing Deep Q Network",
-      "zh": "能玩 Atari 的深度 Q 网络"
-    },
-    "material": {
-      "en": "arXiv paper, Nature paper, and DeepMind blog",
-      "zh": "arXiv 论文、《自然》 论文与 DeepMind 博客"
-    },
-    "demo": {
-      "en": "Pixels enter replay; Q-values choose actions",
-      "zh": "像素进入回放；Q 值选择动作"
-    },
-    "keyConcepts": [
-      {
-        "label": {
-          "en": "Experience Replay",
-          "zh": "经验回放"
-        },
-        "text": {
-          "en": "Past transitions are sampled again to make learning more stable and data-efficient.",
-          "zh": "过去转移会被再次采样，使学习更稳定也更省数据。"
-        }
-      },
-      {
-        "label": {
-          "en": "Target Network",
-          "zh": "目标网络"
-        },
-        "text": {
-          "en": "A delayed copy of the value network reduces moving-target instability.",
-          "zh": "价值网络的延迟副本减少移动目标的不稳定。"
-        }
-      },
-      {
-        "label": {
-          "en": "Q-value",
-          "zh": "Q 值"
-        },
-        "text": {
-          "en": "The network estimates future return for each action.",
-          "zh": "网络估计每个动作的未来回报。"
-        }
-      }
-    ],
-    "relatedAchievements": [
-      {
-        "en": "Q Learning",
-        "zh": "Q 学习"
-      },
-      {
-        "en": "AlphaGo",
-        "zh": "AlphaGo"
-      },
-      {
-        "en": "A3C",
-        "zh": "A3C"
-      }
-    ],
-    "relatedRegions": [
-      {
-        "en": "United Kingdom",
-        "zh": "英国"
-      },
-      {
-        "en": "Canada",
-        "zh": "加拿大"
-      }
-    ],
-    "demoSteps": [
-      {
-        "en": "Experience Replay",
-        "zh": "经验回放"
-      },
-      {
-        "en": "Target Network",
-        "zh": "目标网络"
-      },
-      {
-        "en": "Q-value",
-        "zh": "Q 值"
-      }
-    ],
-    "visualModules": [
-      {
-        "type": "archiveLink",
-        "site": {
-          "en": "arXiv / Nature",
-          "zh": "arXiv / 《自然》"
-        },
-        "title": {
-          "en": "DQN paper",
-          "zh": "DQN 论文"
-        },
-        "description": {
-          "en": "Primary DeepMind DQN source; local images redraw replay memory and Q-value control.",
-          "zh": "DeepMind DQN 原始来源；本地图重画回放记忆和 Q 值控制。"
-        },
-        "url": "https://arxiv.org/abs/1312.5602",
-        "source": "https://arxiv.org/abs/1312.5602",
-        "license": {
-          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
-          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
-        },
-        "usage": {
-          "en": "Literature reference link",
-          "zh": "文献参考链接"
-        },
-        "action": {
-          "en": "Open preprint",
-          "zh": "打开预印本"
-        }
-      }
-    ]
-  },
   "location": {
     "name": {
       "en": "DeepMind",
@@ -300,10 +79,10 @@
     "country": {
       "en": "London, United Kingdom",
       "zh": "英国伦敦"
-    },
-    "coordinates": [
-      51.523,
-      -0.128
-    ]
+    }
+  },
+  "displaySummary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
   }
 }

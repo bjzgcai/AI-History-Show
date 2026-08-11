@@ -165,13 +165,21 @@ Each storyline requires:
 Each event reference requires:
 
 - `eventId`
-- `variant`
 
-The validator should later confirm that `eventId` exists and `archive/events/{eventId}/variants/{variant}.json` exists.
+Optional:
+
+- `variant` when a storyline needs a named override different from the default presentation
+
+The validator confirms that `eventId` exists. If `variant` is omitted, the compiler reads
+`event.defaultPresentation` and then applies `variants/{storylineId}.json` only when that override exists. If
+`variant` is present, `archive/events/{eventId}/variants/{variant}.json` must exist.
 
 ### `variant.json`
 
-Each variant requires:
+Variant override files are optional partial patches. They no longer need to repeat identity fields because identity is
+derived from the event directory, the file name, and the storyline reference.
+
+Legacy full variant files may still include:
 
 - `storylineId`
 - `eventId`

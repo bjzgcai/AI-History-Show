@@ -67,5 +67,321 @@
       "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
       "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "zh": "SURF 加速稳健特征",
+      "en": "SURF"
+    },
+    "displayDescription": {
+      "zh": "<p>贝、图伊特拉尔斯和范古尔在 2006 年提出 SURF，目标是在保留尺度与旋转稳健性的同时提高局部特征计算速度。检测器用盒式滤波近似 Hessian 矩阵响应，并借助积分图以近似固定成本计算不同尺度的滤波；描述子则汇总关键点邻域中的 Haar 小波响应。</p><p>SURF 可以为图像匹配、目标识别和三维重建提供可重复的局部对应点，在许多场景中比 SIFT 更快。速度来自近似和紧凑表示，因此不同数据上的精度权衡并不相同。它代表手工局部特征时代对稳健性与实时性的系统优化。</p>",
+      "en": "<p>Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF in 2006 to improve the speed of local features while retaining robustness to scale and rotation. Its detector approximates Hessian-matrix responses with box filters and uses integral images to evaluate filters at different scales efficiently. The descriptor summarizes Haar-wavelet responses around each keypoint.</p><p>SURF supplies repeatable local correspondences for image matching, object recognition, and 3D reconstruction and was faster than SIFT in many settings. Its speed comes from approximations and a compact representation, so the accuracy tradeoff varies across data. The method represents the hand-crafted local-feature era's systematic effort to balance robustness with real-time computation.</p>"
+    },
+    "emphasis": [
+      "batch-migration",
+      "source-review-needed"
+    ],
+    "visual": "surf",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Springer",
+          "zh": "Springer"
+        },
+        "title": {
+          "en": "SURF: Speeded Up Robust Features",
+          "zh": "SURF：加速稳健特征"
+        },
+        "description": {
+          "en": "Primary ECCV paper record for SURF.",
+          "zh": "SURF 的 ECCV 主论文记录。"
+        },
+        "url": "https://doi.org/10.1007/11744023_32",
+        "source": "https://doi.org/10.1007/11744023_32",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-ai100-2006-surf-herbert-bay-gm",
+      "asset-2006-surf-interest-points",
+      "asset-ai100-2006-surf-audio-zh-original-v1",
+      "asset-ai100-2006-surf-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-eth-surf-paper-pdf",
+      "source-original-surf-project-page",
+      "source-surf-overview",
+      "source-surf-speeded-up-robust-features"
+    ],
+    "claimIds": [
+      "claim-legacy-achievement-summary",
+      "claim-legacy-description"
+    ],
+    "quizId": "ai100-2006-surf-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。",
+          "en": "Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF as a faster scale- and rotation-invariant local feature detector and descriptor. It used integral images and approximated Hessian responses to make robust matching more efficient."
+        },
+        "sourceIds": [
+          "source-surf-speeded-up-robust-features"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "积分图加速盒式滤波响应，然后为稳定兴趣点生成紧凑描述子。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+          "en": "Integral images speed up box-filter responses, then stable interest points receive compact descriptors. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+        },
+        "sourceIds": [
+          "source-surf-speeded-up-robust-features"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 SURF 视为深度学习前局部特征工程的重要进展。它的长期影响在于强调足够快速的稳健匹配，支撑图像检索、拼接和机器人视觉流程。",
+          "en": "Experts generally treat SURF as an important engineering advance in pre-deep-learning local features. Its long-term legacy is the emphasis on robust matching that is fast enough for practical image retrieval, stitching, and robotics pipelines."
+        },
+        "sourceIds": [
+          "source-surf-speeded-up-robust-features"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+        "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+      }
+    },
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "herbert-bay",
+        "role": {
+          "en": "Lead author of SURF",
+          "zh": "SURF 主要作者"
+        },
+        "avatarAssetId": "asset-ai100-2006-surf-herbert-bay-gm"
+      },
+      {
+        "figureId": "andreas-ess",
+        "role": {
+          "en": "SURF co-author",
+          "zh": "SURF 共同作者"
+        }
+      },
+      {
+        "figureId": "tinne-tuytelaars",
+        "role": {
+          "en": "Co-author of SURF",
+          "zh": "Co-author of SURF"
+        }
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"SURF: Speeded Up Robust Features\"",
+      "zh": "\"SURF：加速稳健特征\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "SURF: Speeded Up Robust Features",
+        "zh": "SURF：加速稳健特征"
+      },
+      "workAuthors": {
+        "en": "Herbert Bay, Tinne Tuytelaars, and Luc Van Gool, ECCV, 2006",
+        "zh": "赫伯特·贝、蒂娜·图伊特拉尔斯、卢克·范古尔，ECCV，2006"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1007/11744023_32"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>SURF: Speeded Up Robust Features</em>, Herbert Bay, Tinne Tuytelaars, and Luc Van Gool, ECCV, 2006",
+      "zh": "《SURF：加速稳健特征》, 赫伯特·贝、蒂娜·图伊特拉尔斯、卢克·范古尔，ECCV，2006"
+    },
+    "achievement": {
+      "area": {
+        "en": "Dimension reduction, Feature extraction",
+        "zh": "降维与特征提取"
+      },
+      "method": {
+        "en": "Fast local feature descriptor",
+        "zh": "快速局部特征描述子"
+      },
+      "artifact": {
+        "en": "SURF detector and descriptor",
+        "zh": "SURF 检测器与描述子"
+      },
+      "material": {
+        "en": "ECCV paper",
+        "zh": "ECCV 论文"
+      },
+      "demo": {
+        "en": "Integral images speed up box-filter responses, then stable interest points receive compact descriptors.",
+        "zh": "积分图加速盒式滤波响应，然后为稳定兴趣点生成紧凑描述子。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Integral Images",
+            "zh": "积分图"
+          },
+          "text": {
+            "en": "Rectangle responses can be computed quickly.",
+            "zh": "矩形响应可以快速计算。"
+          }
+        },
+        {
+          "label": {
+            "en": "Scale Invariance",
+            "zh": "尺度不变性"
+          },
+          "text": {
+            "en": "Interest points are compared across scales.",
+            "zh": "兴趣点跨尺度比较。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "SIFT",
+          "zh": "SIFT"
+        },
+        {
+          "en": "HOG",
+          "zh": "HOG"
+        },
+        {
+          "en": "ImageNet",
+          "zh": "ImageNet"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Switzerland",
+          "zh": "瑞士"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Integral image",
+          "zh": "积分图"
+        },
+        {
+          "en": "Hessian response",
+          "zh": "Hessian 响应"
+        },
+        {
+          "en": "Descriptor match",
+          "zh": "描述子匹配"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ECCV paper",
+            "zh": "ECCV 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Integral images speed up box-filter responses, then stable interest points receive compact descriptors.",
+            "zh": "积分图加速盒式滤波响应，然后为稳定兴趣点生成紧凑描述子。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Springer",
+            "zh": "Springer"
+          },
+          "title": {
+            "en": "SURF: Speeded Up Robust Features",
+            "zh": "SURF：加速稳健特征"
+          },
+          "description": {
+            "en": "Primary ECCV paper record for SURF.",
+            "zh": "SURF 的 ECCV 主论文记录。"
+          },
+          "url": "https://doi.org/10.1007/11744023_32",
+          "source": "https://doi.org/10.1007/11744023_32",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "ETH Zurich",
+        "zh": "苏黎世联邦理工学院"
+      },
+      "country": {
+        "en": "Switzerland",
+        "zh": "瑞士"
+      },
+      "coordinates": [
+        47.3763,
+        8.5481
+      ]
+    }
   }
 }

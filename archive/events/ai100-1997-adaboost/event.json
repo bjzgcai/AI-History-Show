@@ -59,5 +59,320 @@
       "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
       "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "en": "AdaBoost",
+      "zh": "AdaBoost 自适应提升"
+    },
+    "displayDescription": {
+      "en": "<p>Early boosting theory established that weak learners could be strengthened, but practical algorithms needed a simple way to choose and weight training examples. AdaBoost supplied an adaptive procedure driven by classification mistakes.</p><p>After each weak classifier, AdaBoost increases the weights of misclassified examples and decreases the weights of correctly classified ones. The final prediction is a weighted vote whose coefficients depend on each learner’s accuracy. Experts generally regard AdaBoost as the algorithm that made boosting practical and conceptually transparent. It shaped margin theory, cascade detectors, and later additive-model views of ensemble learning.</p>",
+      "zh": "<p>早期 Boosting 理论证明弱学习器可以被增强，但实用算法还需要一种简单方法选择并加权训练样本。AdaBoost 提供了由分类错误驱动的自适应过程。</p><p>每训练一个弱分类器后，AdaBoost 提高误分类样本权重，降低正确分类样本权重。最终预测是加权投票，各学习器系数取决于其准确性。专家通常把 AdaBoost 视为使 Boosting 走向实用且概念清晰的关键算法。它影响了间隔理论、级联检测器以及后来对集成学习的加性模型解释。</p>"
+    },
+    "emphasis": [
+      "benchcouncil-canonical-2026-07-30",
+      "source-reviewed"
+    ],
+    "visual": "configuredPaper",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting",
+          "zh": "在线学习的决策理论推广及其在提升法中的应用"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed AdaBoost achievement.",
+          "zh": "BenchCouncil 主表中AdaBoost 自适应提升成就的主要资料。"
+        },
+        "url": "https://doi.org/10.1006/jcss.1997.1504",
+        "source": "https://doi.org/10.1006/jcss.1997.1504",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-1997-adaboost-portrait",
+      "asset-1997-adaboost-explainer",
+      "asset-ai100-1997-adaboost-audio-zh-original-v1",
+      "asset-ai100-1997-adaboost-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-1997-adaboost-primary",
+      "source-1997-adaboost-secondary",
+      "source-benchcouncil-ai100-catalog",
+      "source-1997-adaboost-portrait"
+    ],
+    "claimIds": [
+      "claim-1997-adaboost-membership",
+      "claim-1997-adaboost-description"
+    ],
+    "quizId": "ai100-1997-adaboost-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Early boosting theory established that weak learners could be strengthened, but practical algorithms needed a simple way to choose and weight training examples. AdaBoost supplied an adaptive procedure driven by classification mistakes.",
+          "zh": "早期 Boosting 理论证明弱学习器可以被增强，但实用算法还需要一种简单方法选择并加权训练样本。AdaBoost 提供了由分类错误驱动的自适应过程。"
+        },
+        "sourceIds": [
+          "source-1997-adaboost-primary",
+          "source-benchcouncil-ai100-catalog"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "After each weak classifier, AdaBoost increases the weights of misclassified examples and decreases the weights of correctly classified ones. The final prediction is a weighted vote whose coefficients depend on each learner’s accuracy.",
+          "zh": "每训练一个弱分类器后，AdaBoost 提高误分类样本权重，降低正确分类样本权重。最终预测是加权投票，各学习器系数取决于其准确性。"
+        },
+        "sourceIds": [
+          "source-1997-adaboost-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally regard AdaBoost as the algorithm that made boosting practical and conceptually transparent. It shaped margin theory, cascade detectors, and later additive-model views of ensemble learning.",
+          "zh": "专家通常把 AdaBoost 视为使 Boosting 走向实用且概念清晰的关键算法。它影响了间隔理论、级联检测器以及后来对集成学习的加性模型解释。"
+        },
+        "sourceIds": [
+          "source-1997-adaboost-primary",
+          "source-1997-adaboost-secondary"
+        ]
+      }
+    ],
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "yoav-freund",
+        "role": {
+          "en": "Adaboost lead author",
+          "zh": "Adaboost 主要作者"
+        },
+        "avatarAssetId": "asset-1997-adaboost-portrait"
+      },
+      {
+        "figureId": "robert-schapire",
+        "role": {
+          "en": "Adaboost co-author",
+          "zh": "Adaboost 共同作者"
+        }
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "“A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting”",
+      "zh": "“在线学习的决策理论推广及其在提升法中的应用”"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting",
+        "zh": "在线学习的决策理论推广及其在提升法中的应用"
+      },
+      "workAuthors": {
+        "en": "See primary publication record",
+        "zh": "见主论文记录"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1006/jcss.1997.1504"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting</em>",
+      "zh": "《在线学习的决策理论推广及其在提升法中的应用》"
+    },
+    "achievement": {
+      "area": {
+        "en": "Decision Trees and Ensemble Learning",
+        "zh": "决策树与集成学习"
+      },
+      "method": {
+        "en": "Adaptive example reweighting and weighted voting",
+        "zh": "自适应样本重加权与加权投票"
+      },
+      "artifact": {
+        "en": "Adaptive boosted classifier",
+        "zh": "自适应提升分类器"
+      },
+      "material": {
+        "en": "A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting, companion source, and BenchCouncil catalog record",
+        "zh": "《在线学习的决策理论推广及其在提升法中的应用》、配套资料与 BenchCouncil 清单记录"
+      },
+      "demo": {
+        "en": "Follow the four stages and compare how changing one stage affects the final adaptive boosted classifier.",
+        "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的自适应提升分类器。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Stage 1",
+            "zh": "阶段 1"
+          },
+          "text": {
+            "en": "Weighted examples",
+            "zh": "带权样本"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 2",
+            "zh": "阶段 2"
+          },
+          "text": {
+            "en": "Train weak classifier",
+            "zh": "训练弱分类器"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 3",
+            "zh": "阶段 3"
+          },
+          "text": {
+            "en": "Increase error weights",
+            "zh": "提高错误样本权重"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 4",
+            "zh": "阶段 4"
+          },
+          "text": {
+            "en": "Weighted final vote",
+            "zh": "最终加权投票"
+          }
+        }
+      ],
+      "relatedAchievements": [],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Weighted examples",
+          "zh": "带权样本"
+        },
+        {
+          "en": "Train weak classifier",
+          "zh": "训练弱分类器"
+        },
+        {
+          "en": "Increase error weights",
+          "zh": "提高错误样本权重"
+        },
+        {
+          "en": "Weighted final vote",
+          "zh": "最终加权投票"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1997-1997-adaboost_process.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "BenchCouncil lists AdaBoost and cites A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting as a defining publication.",
+            "zh": "BenchCouncil 将AdaBoost 自适应提升列入主表，并把《在线学习的决策理论推广及其在提升法中的应用》作为代表性资料。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+            "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Primary publication",
+            "zh": "主论文"
+          },
+          "title": {
+            "en": "A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting",
+            "zh": "在线学习的决策理论推广及其在提升法中的应用"
+          },
+          "description": {
+            "en": "Primary source for the BenchCouncil-listed AdaBoost achievement.",
+            "zh": "BenchCouncil 主表中AdaBoost 自适应提升成就的主要资料。"
+          },
+          "url": "https://doi.org/10.1006/jcss.1997.1504",
+          "source": "https://doi.org/10.1006/jcss.1997.1504",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "Bell Lab",
+        "zh": "贝尔实验室"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        40.6843,
+        -74.4013
+      ]
+    }
   }
 }

@@ -4,9 +4,15 @@ const path = require('node:path');
 const vm = require('node:vm');
 
 const routing = require(path.join(__dirname, '..', 'shared', 'storyline-routing.js'));
+const { loadMediaStorageConfig } = require('./media-storage.js');
 const { archiveStorylines, milestones: generatedMilestones } = require(
     path.join(__dirname, '..', 'milestones-data.js')
 );
+const mediaStorageConfig = loadMediaStorageConfig(path.join(__dirname, '..'));
+const audioProfile = mediaStorageConfig.profiles.find(
+    (profile) => profile.id === mediaStorageConfig.defaultProfiles.audio
+);
+assert.ok(audioProfile, 'default audio storage profile must exist');
 
 assert.equal(archiveStorylines.length, 4, 'generated runtime should expose all Archive storyline definitions');
 assert.deepEqual(
@@ -281,11 +287,7 @@ for (const locale of ['zh', 'en']) {
     milestoneViewLocale.value = locale;
     const nonOssMilestones = generatedMilestones
         .map((milestone) => ({ milestone, audio: getPrimaryAudio(milestone) }))
-        .filter(
-            ({ audio }) =>
-                !audio ||
-                !String(audio.url || '').startsWith('https://media.sciencearena.cn/audio/ai-history/releases/')
-        )
+        .filter(({ audio }) => !audio || !String(audio.url || '').startsWith(audioProfile.publicUrlPrefix))
         .map(({ milestone }) => `${milestone.storyline.id}:${milestone.archiveEventId}`);
     assert.deepEqual(
         nonOssMilestones,

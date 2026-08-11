@@ -59,5 +59,305 @@
       "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
       "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "zh": "YOLO",
+      "en": "YOLO"
+    },
+    "displayDescription": {
+      "zh": "<p>YOLO 将目标检测重新表述为从图像像素直接回归边界框和类别概率的单一网络任务。原始系统把图像划分为网格，每个单元在一次前向传播中预测候选框、置信度和类别，而不再先运行独立的区域建议算法再逐个分类。</p><p>统一流水线能够利用整张图的上下文，并显著提高检测速度，使实时目标检测成为主流工程目标。第一代 YOLO 在小物体和精确定位上存在局限，后续版本不断修改框表示、特征层和训练方法；但“单阶段、单次前向预测”的核心表述深刻影响了检测器设计和部署预期。</p>",
+      "en": "<p>YOLO reframed object detection as one neural-network task that regresses bounding boxes and class probabilities directly from image pixels. The original system divided an image into a grid, with each cell predicting candidate boxes, confidence, and classes in a single forward pass instead of running a separate region-proposal algorithm and classifying proposals one by one.</p><p>The unified pipeline could use context from the whole image and greatly increased detection speed, making real-time object detection a mainstream engineering goal. The first YOLO had limitations in precise localization and small-object detection, and later versions changed box representations, feature layers, and training recipes. Its central idea of single-stage, single-pass prediction nevertheless reshaped detector design and deployment expectations.</p>"
+    },
+    "emphasis": [
+      "batch-migration",
+      "source-review-needed"
+    ],
+    "visual": "yolo",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "CVPR / arXiv",
+          "zh": "计算机视觉与模式识别会议 / arXiv"
+        },
+        "title": {
+          "en": "YOLO paper",
+          "zh": "YOLO 论文"
+        },
+        "description": {
+          "en": "Canonical paper for single-shot real-time detection; local graphics redraw grid and box prediction.",
+          "zh": "单阶段实时检测的经典论文；本地图重画网格和框预测。"
+        },
+        "url": "https://arxiv.org/abs/1506.02640",
+        "source": "https://arxiv.org/abs/1506.02640",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-2016-yolo-joseph-redmon",
+      "asset-2016-yolo-grid-detector",
+      "asset-2016-yolo-single-pass",
+      "asset-2016-yolo-audio-zh-original-v1",
+      "asset-2016-yolo-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-cvpr-open-access-paper-page",
+      "source-darknet-yolo-project-page",
+      "source-you-only-look-once-unified-real-time-object-detection"
+    ],
+    "claimIds": [
+      "claim-legacy-achievement-summary",
+      "claim-legacy-description"
+    ],
+    "quizId": "2016-yolo-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "YOLO 之前，高精度检测器常依赖多阶段管线。YOLO 追问：如果检测变成一个稠密预测问题会怎样？",
+          "en": "Before YOLO, high-accuracy detectors often relied on multi-stage pipelines. YOLO asked what would happen if detection became one dense prediction problem."
+        },
+        "sourceIds": [
+          "source-you-only-look-once-unified-real-time-object-detection"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "图像被划成网格；每个网格单元一次前向传播就预测框、置信度和类别。 关键机制是基于网格的单阶段目标检测，它把资料线索与可见的演示行为连接起来。",
+          "en": "The image is divided into a grid; each cell predicts boxes, confidence, and classes, all in one forward pass. The key mechanism is Single-shot grid-based object detection, which links the source material to the visible demo behavior."
+        },
+        "sourceIds": [
+          "source-you-only-look-once-unified-real-time-object-detection"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 YOLO 视为让实时目标检测成为核心基准目标的系统。它的长期影响在于把检测表述为快速的单次前向预测，并影响了许多后续检测器家族和部署预期。",
+          "en": "Experts generally treat YOLO as the system that made real-time object detection a central benchmark goal. Its long-term legacy is the framing of detection as fast single-pass prediction, influencing many later detector families and deployment expectations."
+        },
+        "sourceIds": [
+          "source-you-only-look-once-unified-real-time-object-detection"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+        "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+      }
+    },
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "joseph-redmon",
+        "role": {
+          "en": "First author of YOLO",
+          "zh": "YOLO 第一作者"
+        },
+        "avatarAssetId": "asset-2016-yolo-joseph-redmon"
+      },
+      {
+        "figureId": "ali-farhadi",
+        "role": {
+          "en": "Co-author of YOLO",
+          "zh": "YOLO 共同作者"
+        }
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"You Only Look Once\"",
+      "zh": "\"只看一次\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "You Only Look Once: Unified, Real-Time Object Detection",
+        "zh": "你只看一次：统一的实时目标检测"
+      },
+      "workAuthors": {
+        "en": "Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, CVPR, 2016",
+        "zh": "约瑟夫·雷德蒙, 桑托什·迪瓦拉, 罗斯·格希克, 阿里·法哈迪, 计算机视觉与模式识别会议, 2016"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1506.02640"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Neural Network / YOLO",
+      "zh": "BenchCouncil AI100：神经网络 / YOLO"
+    },
+    "quoteAttribution": {
+      "en": "<em>You Only Look Once: Unified, Real-Time Object Detection</em>, Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, CVPR, 2016",
+      "zh": "《你只看一次：统一的实时目标检测》, 约瑟夫·雷德蒙, 桑托什·迪瓦拉, 罗斯·格希克, 阿里·法哈迪, 计算机视觉与模式识别会议, 2016"
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Single-shot grid-based object detection",
+        "zh": "基于网格的单阶段目标检测"
+      },
+      "artifact": {
+        "en": "Real-time YOLO detector",
+        "zh": "实时 YOLO 检测器"
+      },
+      "material": {
+        "en": "CVPR paper, Darknet project, and open-access paper page",
+        "zh": "计算机视觉与模式识别会议 论文、Darknet 项目与开放论文页"
+      },
+      "demo": {
+        "en": "Grid cells predict boxes and classes at once",
+        "zh": "网格单元同时预测框和类别"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Grid Prediction",
+            "zh": "网格预测"
+          },
+          "text": {
+            "en": "Each grid cell is responsible for objects whose centers fall inside it.",
+            "zh": "每个网格单元负责中心落在其中的目标。"
+          }
+        },
+        {
+          "label": {
+            "en": "One Forward Pass",
+            "zh": "一次前向传播"
+          },
+          "text": {
+            "en": "Detection happens in a single network pass instead of a proposal cascade.",
+            "zh": "检测在一次网络前向传播中完成，而不是候选区域级联。"
+          }
+        },
+        {
+          "label": {
+            "en": "Real Time",
+            "zh": "实时性"
+          },
+          "text": {
+            "en": "Speed becomes part of the model’s identity, not a later deployment detail.",
+            "zh": "速度成为模型身份的一部分，而不是后期部署细节。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Faster R-CNN",
+          "zh": "Faster R-CNN"
+        },
+        {
+          "en": "SSD",
+          "zh": "SSD"
+        },
+        {
+          "en": "Real-time vision",
+          "zh": "实时视觉"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Computer vision",
+          "zh": "计算机视觉"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Grid Prediction",
+          "zh": "网格预测"
+        },
+        {
+          "en": "One Forward Pass",
+          "zh": "一次前向传播"
+        },
+        {
+          "en": "Real Time",
+          "zh": "实时性"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "CVPR / arXiv",
+            "zh": "计算机视觉与模式识别会议 / arXiv"
+          },
+          "title": {
+            "en": "YOLO paper",
+            "zh": "YOLO 论文"
+          },
+          "description": {
+            "en": "Canonical paper for single-shot real-time detection; local graphics redraw grid and box prediction.",
+            "zh": "单阶段实时检测的经典论文；本地图重画网格和框预测。"
+          },
+          "url": "https://arxiv.org/abs/1506.02640",
+          "source": "https://arxiv.org/abs/1506.02640",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "University of Washington, Allen Institute for AI, Facebook AI Research",
+        "zh": "华盛顿大学、艾伦人工智能研究所、Facebook 人工智能研究院"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        47.6553,
+        -122.3035
+      ]
+    }
   }
 }
