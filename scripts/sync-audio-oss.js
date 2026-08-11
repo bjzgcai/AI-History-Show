@@ -14,6 +14,7 @@ const {
     DEFAULT_PROVIDER,
     DEFAULT_REGION,
     contentTypeForPath,
+    isObjectKeyWithinPrefix,
     loadMediaStorageConfig,
     normalizeObjectKey,
     resolveMediaStorage
@@ -151,7 +152,7 @@ function validateAudioAssets(entries) {
         if (!entry.objectKey) {
             issues.push(`${label}: storage.objectKey is required`);
         } else {
-            if (!entry.objectKey.startsWith(entry.objectKeyPrefix || RELEASE_PREFIX)) {
+            if (!isObjectKeyWithinPrefix(entry.objectKey, entry.objectKeyPrefix || RELEASE_PREFIX)) {
                 issues.push(
                     `${label}: storage.objectKey must stay under ${entry.objectKeyPrefix || RELEASE_PREFIX}: ${entry.objectKey}`
                 );

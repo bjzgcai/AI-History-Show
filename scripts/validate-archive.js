@@ -4,7 +4,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-const ROOT = path.resolve(__dirname, '..');
+const ROOT = path.resolve(process.env.AI_HISTORY_ARCHIVE_ROOT || path.join(__dirname, '..'));
 const ARCHIVE_DIR = path.join(ROOT, 'archive');
 const EVENTS_DIR = path.join(ARCHIVE_DIR, 'events');
 const STORYLINES_DIR = path.join(ARCHIVE_DIR, 'storylines');
@@ -18,10 +18,10 @@ const { auditArchive: auditEventFigureRules } = require('./event-figure-rules');
 const { validateAssetSelectionReview } = require('./asset-selection-review');
 const { createArchiveSchemaValidator } = require('./archive-schema-validator');
 const { createFigureRegistry, localized } = require('./figure-registry');
-const { loadMediaStorageConfig, normalizeObjectKey, resolveMediaStorage } = require('./media-storage');
+const { builtInConfig, isObjectKeyWithinPrefix, normalizeObjectKey, resolveMediaStorage } = require('./media-storage');
 
 const validateSchema = createArchiveSchemaValidator(ROOT);
-const mediaStorageConfig = loadMediaStorageConfig(ROOT);
+let mediaStorageConfig = builtInConfig();
 
 const REQUIRED_EVENT_FILES = ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json'];
 const LOCALIZED_REQUIRED_KEYS = ['zh', 'en'];
@@ -259,10 +259,11 @@ function validateFigureRegistry() {
 
 function validateMediaStorageConfig() {
     const config = readJson(MEDIA_STORAGE_PATH);
-    if (!config) return;
+    if (!config) return builtInConfig();
     validateWithSchema(MEDIA_STORAGE_PATH, 'media-storage.schema.json', config);
     const profilesById = new Map();
-    for (const profile of config.profiles || []) {
+    const profiles = Array.isArray(config.profiles) ? config.profiles : [];
+    for (const profile of profiles) {
         if (!isObject(profile)) continue;
         if (profilesById.has(profile.id))
             addError(MEDIA_STORAGE_PATH, `duplicate media storage profile id: ${profile.id}`);
@@ -288,7 +289,8 @@ function validateMediaStorageConfig() {
             );
         }
     }
-    for (const [mediaType, profileId] of Object.entries(config.defaultProfiles || {})) {
+    const defaultProfiles = isObject(config.defaultProfiles) ? config.defaultProfiles : {};
+    for (const [mediaType, profileId] of Object.entries(defaultProfiles)) {
         const profile = profilesById.get(profileId);
         if (!profile) {
             addError(MEDIA_STORAGE_PATH, `defaultProfiles.${mediaType} references missing profile: ${profileId}`);
@@ -299,6 +301,7 @@ function validateMediaStorageConfig() {
             );
         }
     }
+    return config;
 }
 
 function validateFigureRelations(filePath, figures, assetsById) {
@@ -332,7 +335,7 @@ function validateAudioStorage(filePath, asset) {
     if (!hasText(asset.language)) addError(filePath, `${label} audio language is required.`);
     if (!isObject(asset.storage)) {
         addError(filePath, `${label} audio storage metadata is required.`);
-        return;
+        return null;
     }
 
     const storage = asset.storage;
@@ -341,12 +344,12 @@ function validateAudioStorage(filePath, asset) {
         resolved = resolveMediaStorage(asset, { config: mediaStorageConfig });
     } catch (error) {
         addError(filePath, `${label} ${error.message}.`);
-        return;
+        return null;
     }
     if (!hasText(resolved.provider)) addError(filePath, `${label} storage provider is required.`);
     if (!hasText(resolved.bucket)) addError(filePath, `${label} storage bucket is required.`);
     const objectKeyPrefix = normalizeObjectKey(resolved.objectKeyPrefix).replace(/\/+$/, '');
-    if (!hasText(resolved.objectKey) || !objectKeyPrefix || !resolved.objectKey.startsWith(`${objectKeyPrefix}/`)) {
+    if (!hasText(resolved.objectKey) || !isObjectKeyWithinPrefix(resolved.objectKey, objectKeyPrefix)) {
         addError(filePath, `${label} storage object key must stay under its configured profile prefix.`);
     } else if (resolved.objectKey.split('/').includes('..') || resolved.objectKey.includes('\\')) {
         addError(filePath, `${label} storage.objectKey must be normalized and must not contain parent traversal.`);
@@ -364,6 +367,7 @@ function validateAudioStorage(filePath, asset) {
     if (/access.?key|secret|credential|authorization/i.test(serializedStorage)) {
         addError(filePath, `${label} storage metadata must not contain credentials.`);
     }
+    return resolved;
 }
 
 function validateClaims(eventDir, claims, sourceIds) {
@@ -487,8 +491,7 @@ function validateAssets(eventDir, assets, sourceIds) {
         }
         const isDisplayImage = isDisplayImageAsset(asset);
         if (!hasText(asset.type)) addError(filePath, `asset ${asset.id || '<missing>'} is missing type.`);
-        const resolvedStorage =
-            asset.type === 'audio' ? resolveMediaStorage(asset, { config: mediaStorageConfig }) : null;
+        const resolvedStorage = asset.type === 'audio' ? validateAudioStorage(filePath, asset) : null;
         if (!hasText(asset.path) && asset.type !== 'audio') {
             addError(filePath, `asset ${asset.id || '<missing>'} is missing path.`);
         } else if (/^https?:\/\//i.test(asset.path)) {
@@ -506,7 +509,6 @@ function validateAssets(eventDir, assets, sourceIds) {
         }
         if (!hasText(asset.role)) addError(filePath, `asset ${asset.id || '<missing>'} is missing role.`);
         checkLocalized(filePath, asset.caption, `asset ${asset.id || '<missing>'} caption`);
-        if (asset.type === 'audio') validateAudioStorage(filePath, asset);
         if (isDisplayImage) {
             checkLocalized(filePath, asset.subcaption, `asset ${asset.id || '<missing>'} subcaption`);
             if (/^external-reference-(?:image|diagram)$/i.test(String(asset.role || ''))) {
@@ -1007,7 +1009,7 @@ function writeReport() {
 }
 
 function main() {
-    validateMediaStorageConfig();
+    mediaStorageConfig = validateMediaStorageConfig();
     validateFigureRegistry();
     if (!fs.existsSync(EVENTS_DIR)) {
         addError(EVENTS_DIR, 'Missing archive/events directory.');

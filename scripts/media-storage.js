@@ -29,6 +29,12 @@ function normalizeObjectKey(value) {
         .replace(/\/{2,}/g, '/');
 }
 
+function isObjectKeyWithinPrefix(objectKey, objectKeyPrefix) {
+    const key = normalizeObjectKey(objectKey);
+    const prefix = normalizeObjectKey(objectKeyPrefix).replace(/\/+$/, '');
+    return Boolean(key && prefix && (key === prefix || key.startsWith(`${prefix}/`)));
+}
+
 function trimTrailingSlash(value) {
     return String(value || '').replace(/\/+$/, '');
 }
@@ -173,6 +179,7 @@ module.exports = {
     contentTypeForPath,
     isRemotePath,
     loadMediaStorageConfig,
+    isObjectKeyWithinPrefix,
     normalizeObjectKey,
     resolveAudioUrl,
     resolveMediaStorage

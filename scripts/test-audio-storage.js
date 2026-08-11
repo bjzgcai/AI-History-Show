@@ -264,6 +264,9 @@ async function main() {
 
         entries[0].objectKey = '../outside.mp3';
         assert.match(validateAudioAssets(entries).join('\n'), /must stay under audio|parent traversal/);
+        entries[0].objectKey = 'audio/ai-history/releases-escape/outside.mp3';
+        entries[0].objectKeyPrefix = 'audio/ai-history/releases';
+        assert.match(validateAudioAssets(entries).join('\n'), /must stay under audio\/ai-history\/releases/);
     } finally {
         fs.rmSync(root, { recursive: true, force: true });
     }
