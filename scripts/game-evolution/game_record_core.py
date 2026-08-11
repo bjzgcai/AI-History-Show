@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Callable
@@ -260,10 +261,176 @@ def parse_go(path: Path) -> ParsedGame:
     return ParsedGame(states, canonical)
 
 
+DRAUGHTS_MOVE_PATTERN = re.compile(r"\b(?:[1-9]|[12][0-9]|3[0-2])(?:[-x](?:[1-9]|[12][0-9]|3[0-2]))+\b")
+
+
+def _draughts_coord(square: int) -> tuple[int, int]:
+    if not 1 <= square <= 32:
+        raise GameRecordError(f"Draughts square must be between 1 and 32: {square}")
+    row, offset = divmod(square - 1, 4)
+    return offset * 2 + (1 if row % 2 == 0 else 0), row
+
+
+def _draughts_square(x: int, y: int) -> int | None:
+    if not (0 <= x < 8 and 0 <= y < 8) or (x + y) % 2 == 0:
+        return None
+    offset = (x - (1 if y % 2 == 0 else 0)) // 2
+    return y * 4 + offset + 1
+
+
+def _draughts_directions(player: int, king: bool) -> tuple[tuple[int, int], ...]:
+    if king:
+        return ((-1, -1), (1, -1), (-1, 1), (1, 1))
+    step = 1 if player == 1 else -1
+    return ((-1, step), (1, step))
+
+
+def _draughts_capture_destinations(
+    board: dict[int, tuple[int, bool]], square: int
+) -> list[tuple[int, int]]:
+    player, king = board[square]
+    x, y = _draughts_coord(square)
+    captures: list[tuple[int, int]] = []
+    for dx, dy in _draughts_directions(player, king):
+        jumped = _draughts_square(x + dx, y + dy)
+        destination = _draughts_square(x + 2 * dx, y + 2 * dy)
+        if jumped is None or destination is None or destination in board:
+            continue
+        jumped_piece = board.get(jumped)
+        if jumped_piece is not None and jumped_piece[0] != player:
+            captures.append((destination, jumped))
+    return captures
+
+
+def _has_draughts_capture(board: dict[int, tuple[int, bool]], player: int) -> bool:
+    return any(
+        _draughts_capture_destinations(board, square)
+        for square, piece in board.items()
+        if piece[0] == player
+    )
+
+
+def _draughts_snapshot(board: dict[int, tuple[int, bool]]) -> tuple[tuple[int, ...], ...]:
+    grid = [[0 for _ in range(8)] for _ in range(8)]
+    for square, (player, king) in board.items():
+        x, y = _draughts_coord(square)
+        grid[y][x] = player + (2 if king else 0)
+    return _freeze_grid(grid)
+
+
+def _draughts_score(board: dict[int, tuple[int, bool]]) -> str:
+    black = sum(piece[0] == 1 for piece in board.values())
+    white = sum(piece[0] == 2 for piece in board.values())
+    return f"Black {black} | White {white}"
+
+
+def _draughts_promoted(player: int, square: int) -> bool:
+    _, row = _draughts_coord(square)
+    return (player == 1 and row == 7) or (player == 2 and row == 0)
+
+
+def _strip_pdn_variations(text: str) -> str:
+    previous = None
+    while previous != text:
+        previous = text
+        text = re.sub(r"\([^()]*\)", " ", text)
+    if "(" in text or ")" in text:
+        raise GameRecordError("Cannot parse unbalanced PDN variations.")
+    return text
+
+
+def parse_draughts(path: Path) -> ParsedGame:
+    text = path.read_text(encoding="utf-8-sig")
+    text = re.sub(r"^\s*\[[^\]]*\]\s*$", " ", text, flags=re.MULTILINE)
+    text = re.sub(r"\{.*?\}", " ", text, flags=re.DOTALL)
+    text = re.sub(r";[^\n]*", " ", text)
+    text = _strip_pdn_variations(text)
+    text = re.sub(r"(?<!\S)(?:1/2-1/2|1-0|0-1|\*)(?!\S)", " ", text)
+    moves = [match.group(0) for match in DRAUGHTS_MOVE_PATTERN.finditer(text)]
+    if not moves:
+        raise GameRecordError(f"PDN contains no moves: {path}")
+
+    board: dict[int, tuple[int, bool]] = {
+        **{square: (1, False) for square in range(1, 13)},
+        **{square: (2, False) for square in range(21, 33)},
+    }
+    player = 1
+    states = [GameState(_draughts_snapshot(board), 0, "Initial position", "", _draughts_score(board))]
+
+    for number, token in enumerate(moves, start=1):
+        squares = [int(value) for value in re.split(r"[-x]", token)]
+        start = squares[0]
+        piece = board.get(start)
+        if piece is None or piece[0] != player:
+            raise GameRecordError(f"Draughts move {number} starts from the wrong piece: {token}")
+
+        capture_required = _has_draughts_capture(board, player)
+        current = start
+        _, king = piece
+        del board[start]
+        crowned_during_move = False
+        captured = False
+
+        for segment, destination in enumerate(squares[1:], start=1):
+            if destination in board:
+                raise GameRecordError(f"Draughts move {number} lands on an occupied square: {token}")
+            x0, y0 = _draughts_coord(current)
+            x1, y1 = _draughts_coord(destination)
+            dx, dy = x1 - x0, y1 - y0
+            allowed_directions = _draughts_directions(player, king)
+
+            # Historical Tinsley PDNs sometimes use "x" for adjacent steps, so geometry is authoritative.
+            if abs(dx) == 1 and abs(dy) == 1:
+                if len(squares) != 2 or (dx, dy) not in allowed_directions or capture_required:
+                    raise GameRecordError(f"Illegal Draughts step at move {number}: {token}")
+            elif abs(dx) == 2 and abs(dy) == 2:
+                direction = (dx // 2, dy // 2) if abs(dx) == 2 and abs(dy) == 2 else None
+                if direction not in allowed_directions:
+                    raise GameRecordError(f"Illegal Draughts jump at move {number}: {token}")
+                jumped = _draughts_square(x0 + direction[0], y0 + direction[1])
+                jumped_piece = board.get(jumped) if jumped is not None else None
+                if jumped_piece is None or jumped_piece[0] == player:
+                    raise GameRecordError(f"Draughts move {number} jumps no opponent: {token}")
+                del board[jumped]
+                captured = True
+            else:
+                raise GameRecordError(f"Illegal Draughts geometry at move {number}: {token}")
+
+            current = destination
+            if not king and _draughts_promoted(player, current):
+                king = True
+                crowned_during_move = True
+                if captured and segment != len(squares) - 1:
+                    raise GameRecordError(f"Draughts move {number} continues after crowning: {token}")
+
+        board[current] = (player, king)
+        if capture_required and not captured:
+            raise GameRecordError(f"Draughts move {number} ignores a mandatory capture: {token}")
+        if captured and not crowned_during_move and _draughts_capture_destinations(board, current):
+            raise GameRecordError(f"Draughts move {number} stops before a required continuation: {token}")
+
+        side = "Black" if player == 1 else "White"
+        x, y = _draughts_coord(current)
+        states.append(
+            GameState(
+                _draughts_snapshot(board),
+                number,
+                token,
+                side,
+                _draughts_score(board),
+                (x, y),
+            )
+        )
+        player = 3 - player
+
+    return ParsedGame(states, moves)
+
+
 PARSERS: dict[str, Callable[[Path], ParsedGame]] = {
     "chess": parse_chess,
     "reversi": parse_reversi,
     "go": parse_go,
+    "draughts": parse_draughts,
 }
 
 

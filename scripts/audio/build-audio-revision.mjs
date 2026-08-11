@@ -40,10 +40,13 @@ function loadStoryline(scopeId) {
     return result;
 }
 
-function validateTurns(source) {
+function validateTurns(source, config) {
     const { data, fileName } = source;
     const { storyline, enabledEvents } = loadStoryline(data.scopeId);
-    const storylineEvent = enabledEvents[data.sequenceIndex - 1];
+    const storylineEvent =
+        config.storylineOrderPolicy === 'frozen-revision'
+            ? enabledEvents.find((event) => event.eventId === data.eventId)
+            : enabledEvents[data.sequenceIndex - 1];
     if (!storylineEvent || storylineEvent.eventId !== data.eventId) {
         fail(`${fileName}: event does not match enabled Archive storyline order`);
     }
@@ -192,7 +195,7 @@ function main() {
     if (sources.length !== config.expectedEntryCount) {
         fail(`Expected ${config.expectedEntryCount} turn files, found ${sources.length}`);
     }
-    for (const source of sources) validateTurns(source);
+    for (const source of sources) validateTurns(source, config);
     const expected = { ...expectedFiles(config, sources), config };
 
     if (sourceOnly) {

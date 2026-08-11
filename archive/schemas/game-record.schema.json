@@ -28,7 +28,7 @@
             "$ref": "shared.schema.json#/$defs/archiveId"
         },
         "gameType": {
-            "enum": ["chess", "reversi", "go"]
+            "enum": ["chess", "reversi", "go", "draughts"]
         },
         "title": {
             "$ref": "shared.schema.json#/$defs/localizedText"
@@ -52,7 +52,7 @@
                     "minLength": 1
                 },
                 "format": {
-                    "enum": ["pgn", "reversi-moves", "sgf"]
+                    "enum": ["pgn", "reversi-moves", "sgf", "pdn"]
                 },
                 "sha256": {
                     "type": "string",

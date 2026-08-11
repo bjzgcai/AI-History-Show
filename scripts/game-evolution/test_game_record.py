@@ -7,7 +7,7 @@ import tempfile
 from pathlib import Path
 
 
-from game_record_core import ROOT, frame_durations, parse_go, parse_reversi
+from game_record_core import ROOT, frame_durations, parse_draughts, parse_go, parse_reversi
 
 
 def test_sgf_main_variation_continues_after_branch() -> None:
@@ -23,6 +23,13 @@ def test_reversi_full_record() -> None:
     parsed = parse_reversi(path)
     assert len(parsed.canonical_moves) == 60
     assert parsed.states[-1].score_label == "Black 16 | White 48"
+
+
+def test_draughts_full_record() -> None:
+    path = ROOT / "archive/events/1994-chinook/game-records/chinook-tinsley-boston-1994-game-2.pdn"
+    parsed = parse_draughts(path)
+    assert len(parsed.canonical_moves) == 96
+    assert parsed.digest == "e5c5994d5b0964321c5a88e0890cb2d19043bcc83e3c83ecc3ca0985eac3adde"
 
 
 def test_explicit_opening_highlight_and_result_holds() -> None:
@@ -42,6 +49,7 @@ def test_explicit_opening_highlight_and_result_holds() -> None:
 def main() -> None:
     test_sgf_main_variation_continues_after_branch()
     test_reversi_full_record()
+    test_draughts_full_record()
     test_explicit_opening_highlight_and_result_holds()
     print("PASS game-record parsing and explicit replay pacing")
 
