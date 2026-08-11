@@ -29,6 +29,7 @@
         const fetchImpl = options.fetchImpl || (globalScope && globalScope.fetch);
         if (typeof fetchImpl !== 'function') return false;
 
+        // This is a best-effort probe; callers should use their image fallback when it fails.
         try {
             const response = await fetchImpl(value, { method: 'HEAD', cache: 'no-store' });
             if (response.ok) return true;
