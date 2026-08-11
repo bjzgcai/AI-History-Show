@@ -504,6 +504,22 @@ function createArchiveFigureService(root) {
                 });
             }
 
+            for (const relationValue of (event.defaultPresentation && event.defaultPresentation.figures) || []) {
+                const relation = relationObject(relationValue);
+                addUsage(relation.figureId, {
+                    kind: 'variant-relation',
+                    eventId,
+                    eventTitle,
+                    storylineId: 'default',
+                    file: `archive/events/${eventId}/event.json`,
+                    role: relation.role || {},
+                    primary: relation.primary === true,
+                    avatarAssetId: relation.avatarAssetId || '',
+                    avatarStyle: relation.avatarStyle || '',
+                    useDefaultAvatar: relation.useDefaultAvatar === true
+                });
+            }
+
             for (const asset of assets) {
                 allAssets.push({ eventId, asset });
                 for (const figureId of asset.figureIds || []) {
@@ -966,8 +982,24 @@ function createArchiveFigureService(root) {
             const eventFile = path.join(eventDir, 'event.json');
             if (fs.existsSync(eventFile)) {
                 const event = readJson(eventFile);
+                let eventChanged = false;
                 if ((event.figures || []).some((value) => relationObject(value).figureId === source.id)) {
                     event.figures = mergeRelations(event.figures, source.id, target.id);
+                    eventChanged = true;
+                }
+                if (
+                    ((event.defaultPresentation && event.defaultPresentation.figures) || []).some(
+                        (value) => relationObject(value).figureId === source.id
+                    )
+                ) {
+                    event.defaultPresentation.figures = mergeRelations(
+                        event.defaultPresentation.figures,
+                        source.id,
+                        target.id
+                    );
+                    eventChanged = true;
+                }
+                if (eventChanged) {
                     writes.push({ filePath: eventFile, content: `${JSON.stringify(event, null, 2)}\n` });
                     changedFiles.push(`archive/events/${eventId}/event.json`);
                 }
@@ -1189,6 +1221,22 @@ function createArchiveFigureService(root) {
                     add('missing-identity', 'error', '事件引用不存在的人物身份', {
                         eventId,
                         file: `archive/events/${eventId}/event.json`,
+                        figureId
+                    });
+                }
+            }
+            for (const relationValue of (event.defaultPresentation && event.defaultPresentation.figures) || []) {
+                const figureId = relationObject(relationValue).figureId;
+                if (!byId.has(figureId)) {
+                    add('missing-identity', 'error', '默认展示引用不存在的人物身份', {
+                        eventId,
+                        file: `archive/events/${eventId}/event.json`,
+                        figureId
+                    });
+                } else if (!canonicalIds.has(figureId)) {
+                    add('variant-identity-drift', 'warning', '默认展示人物不在 canonical event 中', {
+                        eventId,
+                        storylineId: 'default',
                         figureId
                     });
                 }

@@ -58,7 +58,7 @@ npm run generate
 | `event.json` | 年份、标题、地点、人物等 canonical event facts |
 | `claims.json` | 可追溯的事实主张与证据引用 |
 | `sources.json` | 论文、档案、机构页等来源 |
-| `assets.json` | 图片、视频、论文等资源及双语元数据 |
+| `assets.json` | 图片、音频、视频、论文等资源及双语元数据 |
 | `quizzes.json` | 事件可用的 quiz 集合 |
 | `variants/*.json` | Storyline 专属的描述、展示模块、资源/来源/quiz 选择 |
 
@@ -206,6 +206,14 @@ theta = -lng * (Math.PI / 180)
 - Docker presentation stage 与 `.github/workflows/pages.yml` 都只发布这个 allowlist 静态包。
 - GitHub Pages 工作流会先校验 Archive、生成数据、运行质量门禁并构建 `.tmp/static-site`，再从 `main` 部署。
 - `archive/` 源 JSON、`manage/`、`research/`、`scripts/`、候选资料/视频 metadata helper 和 `.tmp/` 产物不进入 Pages/Docker presentation 发布物。
+
+### 音视频策略
+
+- 通用事件讲解统一使用 `assets.json` 中的中英文 `audio` 资产，由对象存储提供正式播放地址。
+- `defaultPresentation` 不再配置旧的 `videoUrl` 或 `resources.videos`；统一详情页不展示通用事件讲解视频。
+- 视频只保留给确有动态演示价值的独立 `achievement.visualModules`，例如 `gameEvolutionVideo`，不能作为事件讲解音频的替代来源。
+- 视频播放能力集中在 `shared/video-player.js`。`index.html` 不得静态加载该模块，视频标签使用 `data-video-src` 和 `preload="none"`，由模块进入可视区域或用户触发播放时再设置 `src`。
+- `resources/videos/*.json` 是历史候选资料，不进入静态发布包，也不是当前生产展示的数据源；`resources/videos/game-evolution/` 可继续保存互动演示需要的素材。
 
 ### 注意事项
 

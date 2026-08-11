@@ -137,7 +137,6 @@
   {
     "id": "asset-2017-transformer-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://media.sciencearena.cn/audio/ai-history/releases/2017-transformer-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2017-transformer 中文原版科普音频",
@@ -160,25 +159,21 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/2017-transformer-zh-original-v1.mp3",
     "storage": {
-      "provider": "aliyun-oss",
-      "bucket": "zgca-medias",
-      "objectKey": "audio/ai-history/releases/2017-transformer-zh-original-v1.mp3",
+      "profileId": "ai-history-audio-releases",
+      "objectName": "2017-transformer-zh-original-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-zh-original-v1-2026-08-09/audio/bench-council-ai100/storyline/zh/69-2017-transformer.mp3",
-      "contentType": "audio/mpeg",
-      "cacheControl": "public, max-age=31536000, immutable"
+      "contentType": "audio/mpeg"
     },
     "usage": [
-      "variant:deep-learning",
-      "variant:bench-council-ai100"
+      "storyline:deep-learning",
+      "storyline:bench-council-ai100"
     ],
     "editable": true
   },
   {
     "id": "asset-2017-transformer-audio-en-v1",
     "type": "audio",
-    "path": "https://media.sciencearena.cn/audio/ai-history/releases/2017-transformer-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2017-transformer 英文科普音频",
@@ -201,18 +196,15 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/2017-transformer-en-v1.mp3",
     "storage": {
-      "provider": "aliyun-oss",
-      "bucket": "zgca-medias",
-      "objectKey": "audio/ai-history/releases/2017-transformer-en-v1.mp3",
+      "profileId": "ai-history-audio-releases",
+      "objectName": "2017-transformer-en-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-en-original-v1-2026-08-09/audio/bench-council-ai100/storyline/en/69-2017-transformer.mp3",
-      "contentType": "audio/mpeg",
-      "cacheControl": "public, max-age=31536000, immutable"
+      "contentType": "audio/mpeg"
     },
     "usage": [
-      "variant:deep-learning",
-      "variant:bench-council-ai100"
+      "storyline:deep-learning",
+      "storyline:bench-council-ai100"
     ],
     "editable": true
   }

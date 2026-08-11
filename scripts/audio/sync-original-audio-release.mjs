@@ -9,9 +9,12 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const require = createRequire(import.meta.url);
 const { orderVariantAssetIds } = require('../event-figure-rules');
 const { loadFigureRegistry, resolveFigureRelations } = require('../figure-registry');
-const BUCKET = 'zgca-medias';
-const PUBLIC_ROOT = 'https://media.sciencearena.cn';
-const CACHE_CONTROL = 'public, max-age=31536000, immutable';
+const { loadMediaStorageConfig } = require('../media-storage');
+const { resolveEffectivePresentation } = require('../archive-presentation');
+const mediaStorageConfig = loadMediaStorageConfig(ROOT);
+const audioProfileId = mediaStorageConfig.defaultProfiles.audio;
+const audioProfile = mediaStorageConfig.profiles.find((profile) => profile.id === audioProfileId);
+if (!audioProfile) throw new Error(`Missing media storage profile: ${audioProfileId}`);
 const PREFERRED_STORYLINE_ID = 'bench-council-ai100';
 const RELEASES = [
     {
@@ -140,7 +143,7 @@ function findJsonValueEnd(source, startIndex) {
     throw new Error(`Unable to find JSON value end at offset ${startIndex}`);
 }
 
-function replaceTopLevelArray(relativePath, propertyName, value) {
+function replaceTopLevelValue(relativePath, propertyName, value) {
     const absolutePath = path.join(ROOT, relativePath);
     const source = fs.readFileSync(absolutePath, 'utf8');
     const pattern = new RegExp(`^([ \\t]*)"${propertyName}"[ \\t]*:[ \\t]*`, 'm');
@@ -156,8 +159,8 @@ function replaceTopLevelArray(relativePath, propertyName, value) {
     fs.writeFileSync(absolutePath, `${source.slice(0, valueStart)}${replacement}${source.slice(valueEnd)}`, 'utf8');
 }
 
-function objectKey(eventId, locale) {
-    return `audio/ai-history/releases/${eventId}-${locale === 'zh' ? 'zh-original-v1' : 'en-v1'}.mp3`;
+function objectName(eventId, locale) {
+    return `${eventId}-${locale === 'zh' ? 'zh-original-v1' : 'en-v1'}.mp3`;
 }
 
 function assetId(eventId, locale) {
@@ -173,7 +176,7 @@ function loadStorylineMemberships() {
             .sort((left, right) => left.order - right.order);
         for (const entry of entries) {
             const variants = memberships.get(entry.eventId) || new Map();
-            variants.set(storylineId, entry.variant);
+            variants.set(storylineId, { storylineId, ref: entry });
             memberships.set(entry.eventId, variants);
         }
     }
@@ -209,13 +212,11 @@ function loadReleaseSources() {
     return { selected, collisions };
 }
 
-function createAudioAsset({ eventId, locale, sourcePath, sourceId, variantIds }) {
-    const key = objectKey(eventId, locale);
+function createAudioAsset({ eventId, locale, sourcePath, sourceId, storylineIds }) {
     const isChinese = locale === 'zh';
     return {
         id: assetId(eventId, locale),
         type: 'audio',
-        path: `${PUBLIC_ROOT}/${key}`,
         role: 'audio-narration',
         caption: {
             zh: `${eventId} ${isChinese ? '中文原版' : '英文'}科普音频`,
@@ -240,16 +241,13 @@ function createAudioAsset({ eventId, locale, sourcePath, sourceId, variantIds })
             }
         },
         language: locale,
-        deliveryUrl: `${PUBLIC_ROOT}/${key}`,
         storage: {
-            provider: 'aliyun-oss',
-            bucket: BUCKET,
-            objectKey: key,
+            profileId: audioProfileId,
+            objectName: objectName(eventId, locale),
             sourcePath,
-            contentType: 'audio/mpeg',
-            cacheControl: CACHE_CONTROL
+            contentType: 'audio/mpeg'
         },
-        usage: variantIds.map((variantId) => `variant:${variantId}`),
+        usage: storylineIds.map((storylineId) => `storyline:${storylineId}`),
         editable: true
     };
 }
@@ -282,6 +280,7 @@ async function main() {
     const plannedAssetAppends = [];
     const plannedAssetUpdates = [];
     const plannedVariantWrites = [];
+    const plannedDefaultPresentationWrites = new Map();
     let managedAssetCount = 0;
 
     for (const event of [...selected.values()].sort((left, right) => left.eventId.localeCompare(right.eventId))) {
@@ -289,7 +288,9 @@ async function main() {
         const variantMemberships = memberships.get(event.eventId);
         if (!variantMemberships?.size) throw new Error(`${event.eventId} is not selected by a target storyline`);
         const eventDirectory = `archive/events/${event.eventId}`;
-        const canonicalEvent = readJson(`${eventDirectory}/event.json`);
+        const eventDirectoryAbsolute = path.join(ROOT, eventDirectory);
+        const eventPath = `${eventDirectory}/event.json`;
+        const canonicalEvent = readJson(eventPath);
         const assetsPath = `${eventDirectory}/assets.json`;
         const sources = readJson(`${eventDirectory}/sources.json`);
         const assets = readJson(assetsPath);
@@ -297,12 +298,22 @@ async function main() {
             event.sourceStorylineIds.has(storylineId)
         );
         const linkedVariantEntries = linkSharedVariants ? [...variantMemberships.entries()] : sourceVariantEntries;
-        const linkedVariantIds = [...new Set(linkedVariantEntries.map(([, variantId]) => variantId))];
-        const sourceVariantIds = [...new Set(sourceVariantEntries.map(([, variantId]) => variantId))];
-        const primaryVariantId = variantMemberships.get(event.sourceStorylineId) || sourceVariantIds[0];
-        const primaryVariant = readJson(`${eventDirectory}/variants/${primaryVariantId}.json`);
+        const linkedStorylineIds = [...new Set(linkedVariantEntries.map(([storylineId]) => storylineId))];
+        const sourceStorylineIds = [...new Set(sourceVariantEntries.map(([storylineId]) => storylineId))];
+        const primaryMembership =
+            variantMemberships.get(event.sourceStorylineId) ||
+            sourceVariantEntries[0]?.[1] ||
+            linkedVariantEntries[0][1];
+        const primaryPresentation = resolveEffectivePresentation({
+            root: ROOT,
+            eventDir: eventDirectoryAbsolute,
+            event: canonicalEvent,
+            eventId: event.eventId,
+            storylineId: primaryMembership.storylineId,
+            ref: primaryMembership.ref
+        }).presentation;
         const sourceId =
-            primaryVariant.sourceIds?.find((id) => sources.some((source) => source.id === id)) || sources[0]?.id;
+            primaryPresentation.sourceIds?.find((id) => sources.some((source) => source.id === id)) || sources[0]?.id;
         if (!sourceId) throw new Error(`${event.eventId} has no source available for audio provenance`);
 
         const newAssets = [];
@@ -317,7 +328,7 @@ async function main() {
                 locale,
                 sourcePath,
                 sourceId,
-                variantIds: linkSharedVariants ? linkedVariantIds : sourceVariantIds
+                storylineIds: linkSharedVariants ? linkedStorylineIds : sourceStorylineIds
             });
             const action = upsertAsset(assets, asset, event.eventId);
             if (action === 'added') newAssets.push(asset);
@@ -327,23 +338,46 @@ async function main() {
         if (newAssets.length) plannedAssetAppends.push([assetsPath, newAssets]);
         for (const asset of updatedAssets) plannedAssetUpdates.push([assetsPath, asset]);
 
-        for (const variantId of linkedVariantIds) {
-            const variantPath = `${eventDirectory}/variants/${variantId}.json`;
-            const variant = readJson(variantPath);
-            variant.assetIds ||= [];
+        for (const [storylineId, membership] of linkedVariantEntries) {
+            const resolved = resolveEffectivePresentation({
+                root: ROOT,
+                eventDir: eventDirectoryAbsolute,
+                event: canonicalEvent,
+                eventId: event.eventId,
+                storylineId,
+                ref: membership.ref
+            });
+            const presentation = resolved.presentation;
+            const originalAssetIds = Array.isArray(presentation.assetIds) ? [...presentation.assetIds] : [];
+            presentation.assetIds ||= [];
             for (const locale of ['zh', 'en']) {
                 const id = assetId(event.eventId, locale);
-                if (!variant.assetIds.includes(id)) variant.assetIds.push(id);
+                if (!presentation.assetIds.includes(id)) presentation.assetIds.push(id);
             }
             const resolvedFigures = resolveFigureRelations({
                 eventFigures: canonicalEvent.figures,
-                variantFigures: variant.figures,
+                variantFigures: presentation.figures,
                 assets,
                 registry: figureRegistry
             });
-            const orderedAssetIds = orderVariantAssetIds(canonicalEvent, variant, assets, resolvedFigures).assetIds;
-            if (JSON.stringify(variant.assetIds) !== JSON.stringify(orderedAssetIds)) {
-                plannedVariantWrites.push([variantPath, orderedAssetIds]);
+            const orderedAssetIds = orderVariantAssetIds(
+                canonicalEvent,
+                presentation,
+                assets,
+                resolvedFigures
+            ).assetIds;
+            if (JSON.stringify(originalAssetIds) !== JSON.stringify(orderedAssetIds)) {
+                if (resolved.overridePath) {
+                    plannedVariantWrites.push([
+                        path.relative(ROOT, resolved.overridePath).replace(/\\/g, '/'),
+                        orderedAssetIds
+                    ]);
+                } else {
+                    plannedDefaultPresentationWrites.set(eventPath, {
+                        ...(canonicalEvent.defaultPresentation || {}),
+                        assetIds: orderedAssetIds
+                    });
+                }
             }
         }
     }
@@ -352,14 +386,17 @@ async function main() {
         for (const [relativePath, asset] of plannedAssetUpdates) replaceJsonArrayItem(relativePath, asset);
         for (const [relativePath, items] of plannedAssetAppends) appendJsonArrayItems(relativePath, items);
         for (const [relativePath, assetIds] of plannedVariantWrites)
-            replaceTopLevelArray(relativePath, 'assetIds', assetIds);
+            replaceTopLevelValue(relativePath, 'assetIds', assetIds);
+        for (const [relativePath, defaultPresentation] of plannedDefaultPresentationWrites)
+            replaceTopLevelValue(relativePath, 'defaultPresentation', defaultPresentation);
     }
 
     console.log(
         `Managed ${selected.size} release event(s) and ${managedAssetCount} audio asset(s): ` +
             `${apply ? 'applied' : 'planned'} ${plannedAssetAppends.reduce((sum, [, items]) => sum + items.length, 0)} ` +
             `asset addition(s), ${plannedAssetUpdates.length} metadata update(s), and ` +
-            `${plannedVariantWrites.length} variant update(s).`
+            `${plannedVariantWrites.length} variant update(s), ` +
+            `${plannedDefaultPresentationWrites.size} default presentation update(s).`
     );
     if (linkSharedVariants) console.log('Shared-event audio IDs are linked across all enabled storyline variants.');
     console.log(

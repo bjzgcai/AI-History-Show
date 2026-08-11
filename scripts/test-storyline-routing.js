@@ -4,9 +4,15 @@ const path = require('node:path');
 const vm = require('node:vm');
 
 const routing = require(path.join(__dirname, '..', 'shared', 'storyline-routing.js'));
+const { loadMediaStorageConfig } = require('./media-storage.js');
 const { archiveStorylines, milestones: generatedMilestones } = require(
     path.join(__dirname, '..', 'milestones-data.js')
 );
+const mediaStorageConfig = loadMediaStorageConfig(path.join(__dirname, '..'));
+const audioProfile = mediaStorageConfig.profiles.find(
+    (profile) => profile.id === mediaStorageConfig.defaultProfiles.audio
+);
+assert.ok(audioProfile, 'default audio storage profile must exist');
 
 assert.equal(archiveStorylines.length, 4, 'generated runtime should expose all Archive storyline definitions');
 assert.deepEqual(
@@ -281,11 +287,7 @@ for (const locale of ['zh', 'en']) {
     milestoneViewLocale.value = locale;
     const nonOssMilestones = generatedMilestones
         .map((milestone) => ({ milestone, audio: getPrimaryAudio(milestone) }))
-        .filter(
-            ({ audio }) =>
-                !audio ||
-                !String(audio.url || '').startsWith('https://media.sciencearena.cn/audio/ai-history/releases/')
-        )
+        .filter(({ audio }) => !audio || !String(audio.url || '').startsWith(audioProfile.publicUrlPrefix))
         .map(({ milestone }) => `${milestone.storyline.id}:${milestone.archiveEventId}`);
     assert.deepEqual(
         nonOssMilestones,
@@ -707,8 +709,38 @@ console.log('PASS PQ-only quiz course entrance');
 
 assert.match(
     indexHtml,
-    /const shouldUseVideo = isDirectVideoMedia\(videoUrl\)[\s\S]*?canLoadGameEvolutionVideo/,
-    'game evolution images such as GIF files should not be rendered through a video element'
+    /function loadVideoPlayerModule\(\)[\s\S]*?script\.src = 'shared\/video-player\.js'[\s\S]*?const shouldUseVideo = Boolean\(videoPlayer\)[\s\S]*?videoPlayer\.isDirectVideoMedia\(videoUrl\)[\s\S]*?videoPlayer\.canLoad/,
+    'game evolution playback should load the shared video module only when it is needed'
+);
+assert.match(
+    indexHtml,
+    /async function openGameEvolutionVideo\(vm\)[\s\S]*?let videoPlayer = null[\s\S]*?videoPlayer = await loadVideoPlayerModule\(\)[\s\S]*?const fallbackImageUrl = videoPlayer[\s\S]*?: playableImage[\s\S]*?if \(!shouldUseVideo && !fallbackImageUrl\) return/,
+    'game evolution playback should retain its image fallback when the lazy player module is unavailable'
+);
+assert.match(
+    indexHtml,
+    /let inlineMediaRequestId = 0[\s\S]*?function resetInlineMedia\(\)[\s\S]*?inlineMediaRequestId \+= 1[\s\S]*?const requestId = \+\+inlineMediaRequestId[\s\S]*?requestId !== inlineMediaRequestId[\s\S]*?refs\.videoFrame\.dataset\.videoUrl !== expectedUrl/,
+    'inline playback should discard a pending request after the active event changes'
+);
+assert.match(
+    indexHtml,
+    /catch \(error\) \{[\s\S]*?requestId === inlineMediaRequestId[\s\S]*?bindInlineMediaPlayback\(expectedUrl\)[\s\S]*?throw error/,
+    'inline playback should restore its click handler after a lazy module load failure'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /<script[^>]+src=["']shared\/video-player\.js/,
+    'the shared video player must not be loaded eagerly by the initial document'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /<video[^>]+\ssrc=/,
+    'video markup should defer assigning src until the shared player activates it'
+);
+assert.match(
+    indexHtml,
+    /<video[^>]+data-video-src=[\s\S]*?preload="none"/,
+    'video modules should expose lazy source metadata without preloading media'
 );
 assert.match(
     indexHtml,

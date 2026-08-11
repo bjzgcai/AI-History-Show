@@ -67,5 +67,311 @@
       "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
       "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "zh": "ImageNet",
+      "en": "ImageNet"
+    },
+    "displayDescription": {
+      "zh": "<p>ImageNet 项目在 2009 年论文中提出以 WordNet 的概念层级组织大规模图像数据库，并通过网络收集与人工标注为每个概念配备大量实例。它把过去相对有限的数据集扩展到数百万张图像和成千上万个类别，使视觉算法能够在更接近真实世界多样性的范围内训练和比较。</p><p>随后建立的 ImageNet 大规模视觉识别挑战提供统一任务、训练集和评测指标，让算法进步能够连续追踪，也让 AlexNet 在 2012 年的突破清晰可见。ImageNet 证明数据规模和公开基准本身可以改变研究方向，同时也促使领域认真面对类别设计、标注偏差、数据许可和社会代表性问题。</p>",
+      "en": "<p>The 2009 ImageNet paper proposed a large image database organized through the concept hierarchy of WordNet, using web collection and human annotation to supply many examples for each concept. It expanded computer-vision data from comparatively limited collections to millions of images across thousands of categories, allowing algorithms to train and be compared over much greater visual diversity.</p><p>The later ImageNet Large Scale Visual Recognition Challenge supplied common tasks, training data, and metrics, making progress continuously measurable and AlexNet's 2012 breakthrough unmistakable. ImageNet demonstrated that dataset scale and a public benchmark could redirect an entire field. It also pushed researchers to confront category design, annotation bias, licensing, and social representation in large datasets.</p>"
+    },
+    "emphasis": [
+      "batch-migration",
+      "source-review-needed"
+    ],
+    "visual": "imagenet",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "CVPR / IEEE",
+          "zh": "计算机视觉与模式识别会议 / IEEE"
+        },
+        "title": {
+          "en": "ImageNet paper",
+          "zh": "ImageNet 论文"
+        },
+        "description": {
+          "en": "Primary ImageNet paper; local visuals redraw hierarchy and benchmark signals.",
+          "zh": "ImageNet 原始论文；本地图重画层级和基准信号。"
+        },
+        "url": "https://ieeexplore.ieee.org/document/5206848",
+        "source": "https://ieeexplore.ieee.org/document/5206848",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open IEEE record",
+          "zh": "打开 IEEE 记录"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-2009-imagenet-fei-fei-li",
+      "asset-2009-imagenet-hierarchy",
+      "asset-2009-imagenet-benchmark",
+      "asset-2009-imagenet-audio-zh-original-v1",
+      "asset-2009-imagenet-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-imagenet-project-website",
+      "source-stanford-profile-fei-fei-li",
+      "source-imagenet-a-large-scale-hierarchical-image-database"
+    ],
+    "claimIds": [
+      "claim-legacy-achievement-summary",
+      "claim-legacy-description"
+    ],
+    "quizId": "2009-imagenet-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "ImageNet 之前，视觉数据集更小且常常领域化。ImageNet 把通用目标识别变成数据规模挑战。",
+          "en": "Before ImageNet, vision datasets were smaller and often specialized. ImageNet made general object recognition a data-scale challenge."
+        },
+        "sourceIds": [
+          "source-imagenet-a-large-scale-hierarchical-image-database"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它把图像标签连接到 WordNet synsets，使数据集组织本身也成为科学贡献。 关键机制是大规模层级图像标注，它把资料线索与可见的演示行为连接起来。",
+          "en": "Its hierarchy connected image labels to WordNet synsets, making dataset organization part of the scientific contribution. The key mechanism is Large-scale hierarchical image annotation, which links the source material to the visible demo behavior."
+        },
+        "sourceIds": [
+          "source-imagenet-a-large-scale-hierarchical-image-database"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 ImageNet 同时视为决定性基准和基准局限的提醒。它的长期影响在于展示了数据规模、标签、排行榜和算力压力如何重塑整个研究领域。",
+          "en": "Experts generally treat ImageNet as both a decisive benchmark and a reminder of benchmark limits. Its long-term legacy is showing how dataset scale, labels, leaderboards, and compute pressure can redirect an entire research field."
+        },
+        "sourceIds": [
+          "source-imagenet-a-large-scale-hierarchical-image-database"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+        "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+      }
+    },
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "jia-deng",
+        "role": {
+          "en": "First author of ImageNet paper",
+          "zh": "ImageNet 论文第一作者"
+        }
+      },
+      {
+        "figureId": "li-fei-fei",
+        "role": {
+          "en": "ImageNet project leader",
+          "zh": "ImageNet 项目主要推动者"
+        },
+        "avatarAssetId": "asset-2009-imagenet-fei-fei-li"
+      },
+      {
+        "figureId": "olga-russakovsky",
+        "role": {
+          "en": "ImageNet co-author",
+          "zh": "ImageNet 共同作者"
+        }
+      }
+    ],
+    "photos": [],
+    "quote": {
+      "en": "\"large-scale hierarchical image database\"",
+      "zh": "\"大规模层级图像数据库\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "ImageNet: A Large-Scale Hierarchical Image Database",
+        "zh": "ImageNet：大规模层级图像数据库"
+      },
+      "workAuthors": {
+        "en": "Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
+        "zh": "邓佳、董伟、理查德·索彻、李丽佳、李凯、李飞飞, 计算机视觉与模式识别会议, 2009"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://ieeexplore.ieee.org/document/5206848"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Neural Network / ImageNet",
+      "zh": "BenchCouncil AI100：神经网络 / ImageNet"
+    },
+    "quoteAttribution": {
+      "en": "<em>ImageNet: A Large-Scale Hierarchical Image Database</em>, Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
+      "zh": "《ImageNet：大规模层级图像数据库》, 邓佳、董伟、理查德·索彻、李丽佳、李凯、李飞飞, 计算机视觉与模式识别会议, 2009"
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Large-scale hierarchical image annotation",
+        "zh": "大规模层级图像标注"
+      },
+      "artifact": {
+        "en": "ImageNet dataset and ILSVRC benchmark",
+        "zh": "ImageNet 数据集与 ILSVRC 基准"
+      },
+      "material": {
+        "en": "CVPR paper, project site, and Stanford profile",
+        "zh": "计算机视觉与模式识别会议 论文、项目网站与 斯坦福大学 人物页"
+      },
+      "demo": {
+        "en": "Labels move from WordNet hierarchy to benchmark leaderboard",
+        "zh": "标签从 WordNet 层级走向基准排行榜"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Synset",
+            "zh": "Synset"
+          },
+          "text": {
+            "en": "A WordNet concept anchors each visual category.",
+            "zh": "每个视觉类别由一个 WordNet 概念锚定。"
+          }
+        },
+        {
+          "label": {
+            "en": "Scale",
+            "zh": "规模"
+          },
+          "text": {
+            "en": "Millions of labeled images changed what training and evaluation could measure.",
+            "zh": "数百万标注图像改变了训练和评测能衡量的东西。"
+          }
+        },
+        {
+          "label": {
+            "en": "Benchmark",
+            "zh": "基准"
+          },
+          "text": {
+            "en": "ILSVRC turned progress into a shared annual comparison.",
+            "zh": "ILSVRC 把进展变成共同年度比较。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        },
+        {
+          "en": "VGG",
+          "zh": "VGG"
+        },
+        {
+          "en": "ResNet",
+          "zh": "ResNet"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Computer vision",
+          "zh": "计算机视觉"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Synset",
+          "zh": "Synset"
+        },
+        {
+          "en": "Scale",
+          "zh": "规模"
+        },
+        {
+          "en": "Benchmark",
+          "zh": "基准"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "CVPR / IEEE",
+            "zh": "计算机视觉与模式识别会议 / IEEE"
+          },
+          "title": {
+            "en": "ImageNet paper",
+            "zh": "ImageNet 论文"
+          },
+          "description": {
+            "en": "Primary ImageNet paper; local visuals redraw hierarchy and benchmark signals.",
+            "zh": "ImageNet 原始论文；本地图重画层级和基准信号。"
+          },
+          "url": "https://ieeexplore.ieee.org/document/5206848",
+          "source": "https://ieeexplore.ieee.org/document/5206848",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open IEEE record",
+            "zh": "打开 IEEE 记录"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "Princeton University, Stanford University, University of Michigan, MIT, UNC Chapel Hill",
+        "zh": "普林斯顿大学、斯坦福大学、密歇根大学、麻省理工学院、北卡罗来纳大学教堂山分校"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        40.3431,
+        -74.6551
+      ]
+    }
   }
 }

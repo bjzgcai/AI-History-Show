@@ -2,11 +2,14 @@
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 
 const SCRIPT_PATH = fileURLToPath(import.meta.url);
 const SCRIPT_DIR = path.dirname(SCRIPT_PATH);
 const ROOT = path.resolve(SCRIPT_DIR, '../..');
+const require = createRequire(import.meta.url);
+const { resolveEffectivePresentation } = require('../archive-presentation');
 const STORYLINES_ROOT = path.join(ROOT, 'archive/storylines');
 const REVISIONS_ROOT = path.join(ROOT, 'audio/revisions');
 const TOOL_ROOT = path.join(ROOT, 'tools/audio-review-console');
@@ -223,12 +226,20 @@ function buildOverlayVariant(candidates) {
     };
 }
 
-async function archiveAudioSourcePath(storylineEntry, locale) {
+async function archiveAudioSourcePath(scopeId, storylineEntry, locale) {
     const eventDirectory = path.join(ROOT, 'archive/events', storylineEntry.eventId);
-    const [variant, assets] = await Promise.all([
-        readJson(path.join(eventDirectory, 'variants', `${storylineEntry.variant}.json`)),
+    const [event, assets] = await Promise.all([
+        readJson(path.join(eventDirectory, 'event.json')),
         readJson(path.join(eventDirectory, 'assets.json'))
     ]);
+    const variant = resolveEffectivePresentation({
+        root: ROOT,
+        eventDir: eventDirectory,
+        event,
+        eventId: storylineEntry.eventId,
+        storylineId: scopeId,
+        ref: storylineEntry
+    }).presentation;
     const assetsById = new Map(assets.map((asset) => [asset.id, asset]));
     const sourcePaths = [
         ...new Set(
@@ -241,7 +252,7 @@ async function archiveAudioSourcePath(storylineEntry, locale) {
     ];
     if (sourcePaths.length > 1) {
         throw new Error(
-            `${storylineEntry.eventId}/${storylineEntry.variant}/${locale} references multiple audio source paths`
+            `${storylineEntry.eventId}/${storylineEntry.variant || scopeId}/${locale} references multiple audio source paths`
         );
     }
     return sourcePaths[0] || null;
@@ -267,7 +278,7 @@ export async function expandSharedStorylineOverlays({ overlays, storylineEntries
             for (const locale of ['zh', 'en']) {
                 const key = overlayKey(scopeId, sequenceIndex, locale, 'storyline');
                 if (expanded.has(key)) continue;
-                const sourcePath = await archiveAudioSourcePath(storylineEntry, locale);
+                const sourcePath = await archiveAudioSourcePath(scopeId, storylineEntry, locale);
                 if (!sourcePath) continue;
                 const sourceCandidates = (candidatesByAudioPath.get(sourcePath) || []).filter(
                     (candidate) =>
@@ -316,8 +327,15 @@ export async function buildOverlayOnlyEvent({ scopeId, sequenceIndex, overlays, 
     const eventDirectory = path.join(ROOT, 'archive/events', latest.eventId);
     const event = await readJson(path.join(eventDirectory, 'event.json'));
     const editorial = latestEditorialMetadata(overlays, scopeId, sequenceIndex);
-    const variantId = storylineEntry.variant;
-    const variant = await readJson(path.join(eventDirectory, 'variants', `${variantId}.json`));
+    const variantId = storylineEntry.variant || scopeId;
+    const variant = resolveEffectivePresentation({
+        root: ROOT,
+        eventDir: eventDirectory,
+        event,
+        eventId: latest.eventId,
+        storylineId: scopeId,
+        ref: storylineEntry
+    }).presentation;
     const sourceIds = collectEvidenceIds(allCandidates, 'sourceIds');
     const claimIds = collectEvidenceIds(allCandidates, 'claimIds');
     const archiveSources = await readJson(path.join(eventDirectory, 'sources.json'));

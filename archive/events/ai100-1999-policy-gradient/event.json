@@ -59,5 +59,319 @@
       "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
       "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "en": "Policy Gradient Theorem",
+      "zh": "策略梯度定理"
+    },
+    "displayDescription": {
+      "en": "<p>Policy-based reinforcement learning needed a rigorous expression for how long-run performance changes with policy parameters. The policy gradient theorem supplied that expression without requiring derivatives of the environment dynamics.</p><p>The performance gradient can be written as an expectation of action-value estimates multiplied by the policy score. Actor-critic methods use a learned critic to estimate that value while the actor follows the resulting gradient. Experts generally treat the policy gradient theorem as the mathematical backbone of modern actor-critic and policy-optimization algorithms. PPO, natural policy gradients, deterministic policy gradients, and many RLHF methods inherit its structure.</p>",
+      "zh": "<p>基于策略的强化学习需要一个严格公式，说明长期性能如何随策略参数变化。策略梯度定理给出了这一表达式，而且不需要对环境动力学求导。</p><p>性能梯度可以写成动作价值估计与策略得分乘积的期望。Actor-critic 方法用学习到的 critic 估计价值，actor 则沿该梯度更新。专家通常把策略梯度定理视为现代 actor-critic 和策略优化算法的数学骨架。PPO、自然策略梯度、确定性策略梯度以及许多 RLHF 方法都继承了这一结构。</p>"
+    },
+    "emphasis": [
+      "benchcouncil-canonical-2026-07-30",
+      "source-reviewed"
+    ],
+    "visual": "configuredPaper",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "Policy Gradient Methods for Reinforcement Learning with Function Approximation",
+          "zh": "带函数逼近的强化学习策略梯度方法"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed Policy Gradient Theorem achievement.",
+          "zh": "BenchCouncil 主表中策略梯度定理成就的主要资料。"
+        },
+        "url": "https://proceedings.neurips.cc/paper/1999/hash/464d828b85b0bed98e80ade0a5c43b0f-Abstract.html",
+        "source": "https://proceedings.neurips.cc/paper/1999/hash/464d828b85b0bed98e80ade0a5c43b0f-Abstract.html",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-1999-policy-gradient-portrait",
+      "asset-1999-policy-gradient-explainer",
+      "asset-ai100-1999-policy-gradient-audio-zh-original-v1",
+      "asset-ai100-1999-policy-gradient-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-1999-policy-gradient-primary",
+      "source-1999-policy-gradient-secondary",
+      "source-benchcouncil-ai100-catalog",
+      "source-1999-policy-gradient-portrait"
+    ],
+    "claimIds": [
+      "claim-1999-policy-gradient-membership",
+      "claim-1999-policy-gradient-description"
+    ],
+    "quizId": "ai100-1999-policy-gradient-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Policy-based reinforcement learning needed a rigorous expression for how long-run performance changes with policy parameters. The policy gradient theorem supplied that expression without requiring derivatives of the environment dynamics.",
+          "zh": "基于策略的强化学习需要一个严格公式，说明长期性能如何随策略参数变化。策略梯度定理给出了这一表达式，而且不需要对环境动力学求导。"
+        },
+        "sourceIds": [
+          "source-1999-policy-gradient-primary",
+          "source-benchcouncil-ai100-catalog"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The performance gradient can be written as an expectation of action-value estimates multiplied by the policy score. Actor-critic methods use a learned critic to estimate that value while the actor follows the resulting gradient.",
+          "zh": "性能梯度可以写成动作价值估计与策略得分乘积的期望。Actor-critic 方法用学习到的 critic 估计价值，actor 则沿该梯度更新。"
+        },
+        "sourceIds": [
+          "source-1999-policy-gradient-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat the policy gradient theorem as the mathematical backbone of modern actor-critic and policy-optimization algorithms. PPO, natural policy gradients, deterministic policy gradients, and many RLHF methods inherit its structure.",
+          "zh": "专家通常把策略梯度定理视为现代 actor-critic 和策略优化算法的数学骨架。PPO、自然策略梯度、确定性策略梯度以及许多 RLHF 方法都继承了这一结构。"
+        },
+        "sourceIds": [
+          "source-1999-policy-gradient-primary",
+          "source-1999-policy-gradient-secondary"
+        ]
+      }
+    ],
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "richard-sutton",
+        "role": {
+          "en": "Policy-gradient theorem co-author",
+          "zh": "策略梯度定理共同作者"
+        },
+        "avatarAssetId": "asset-1999-policy-gradient-portrait"
+      },
+      {
+        "figureId": "yishay-mansour",
+        "role": {
+          "en": "Policy gradient theorem co-author",
+          "zh": "Policy gradient theorem 共同作者"
+        }
+      }
+    ],
+    "photos": [],
+    "quote": {
+      "en": "“Policy Gradient Methods for Reinforcement Learning with Function Approximation”",
+      "zh": "“带函数逼近的强化学习策略梯度方法”"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Policy Gradient Methods for Reinforcement Learning with Function Approximation",
+        "zh": "带函数逼近的强化学习策略梯度方法"
+      },
+      "workAuthors": {
+        "en": "See primary publication record",
+        "zh": "见主论文记录"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://proceedings.neurips.cc/paper/1999/hash/464d828b85b0bed98e80ade0a5c43b0f-Abstract.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>Policy Gradient Methods for Reinforcement Learning with Function Approximation</em>",
+      "zh": "《带函数逼近的强化学习策略梯度方法》"
+    },
+    "achievement": {
+      "area": {
+        "en": "Reinforcement Learning",
+        "zh": "强化学习"
+      },
+      "method": {
+        "en": "Expected action-value times policy score",
+        "zh": "动作价值与策略得分乘积的期望"
+      },
+      "artifact": {
+        "en": "General policy-gradient identity",
+        "zh": "通用策略梯度恒等式"
+      },
+      "material": {
+        "en": "Policy Gradient Methods for Reinforcement Learning with Function Approximation, companion source, and BenchCouncil catalog record",
+        "zh": "《带函数逼近的强化学习策略梯度方法》、配套资料与 BenchCouncil 清单记录"
+      },
+      "demo": {
+        "en": "Follow the four stages and compare how changing one stage affects the final general policy-gradient identity.",
+        "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的通用策略梯度恒等式。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Stage 1",
+            "zh": "阶段 1"
+          },
+          "text": {
+            "en": "Parameterized policy",
+            "zh": "参数化策略"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 2",
+            "zh": "阶段 2"
+          },
+          "text": {
+            "en": "Sample states and actions",
+            "zh": "采样状态与动作"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 3",
+            "zh": "阶段 3"
+          },
+          "text": {
+            "en": "Estimate action values",
+            "zh": "估计动作价值"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 4",
+            "zh": "阶段 4"
+          },
+          "text": {
+            "en": "Follow expected gradient",
+            "zh": "沿期望梯度更新"
+          }
+        }
+      ],
+      "relatedAchievements": [],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Parameterized policy",
+          "zh": "参数化策略"
+        },
+        {
+          "en": "Sample states and actions",
+          "zh": "采样状态与动作"
+        },
+        {
+          "en": "Estimate action values",
+          "zh": "估计动作价值"
+        },
+        {
+          "en": "Follow expected gradient",
+          "zh": "沿期望梯度更新"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1999-1999-policy-gradient_process.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "BenchCouncil lists Policy Gradient Theorem and cites Policy Gradient Methods for Reinforcement Learning with Function Approximation as a defining publication.",
+            "zh": "BenchCouncil 将策略梯度定理列入主表，并把《带函数逼近的强化学习策略梯度方法》作为代表性资料。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+            "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Primary publication",
+            "zh": "主论文"
+          },
+          "title": {
+            "en": "Policy Gradient Methods for Reinforcement Learning with Function Approximation",
+            "zh": "带函数逼近的强化学习策略梯度方法"
+          },
+          "description": {
+            "en": "Primary source for the BenchCouncil-listed Policy Gradient Theorem achievement.",
+            "zh": "BenchCouncil 主表中策略梯度定理成就的主要资料。"
+          },
+          "url": "https://proceedings.neurips.cc/paper/1999/hash/464d828b85b0bed98e80ade0a5c43b0f-Abstract.html",
+          "source": "https://proceedings.neurips.cc/paper/1999/hash/464d828b85b0bed98e80ade0a5c43b0f-Abstract.html",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "AT&T Labs",
+        "zh": "AT&T 实验室"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        40.6843,
+        -74.4013
+      ]
+    }
   }
 }

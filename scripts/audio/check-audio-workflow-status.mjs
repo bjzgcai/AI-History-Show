@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 import {
     ROOT,
@@ -12,6 +13,9 @@ import {
     relativeToRoot,
     revisionPaths
 } from './lib/audio-revision.mjs';
+const require = createRequire(import.meta.url);
+const { resolveEffectivePresentation } = require('../archive-presentation');
+const { loadMediaStorageConfig, normalizeObjectKey, resolveMediaStorage } = require('../media-storage');
 
 const SCRIPT_PATH = fileURLToPath(import.meta.url);
 const REVISIONS_ROOT = path.join(ROOT, 'audio/revisions');
@@ -150,7 +154,9 @@ function inspectReview() {
 
 function inspectArchive() {
     const storylinesRoot = path.join(ROOT, 'archive/storylines');
+    const mediaStorageConfig = loadMediaStorageConfig(ROOT);
     const assetCache = new Map();
+    const eventCache = new Map();
     const variantCache = new Map();
     const eventIds = new Set();
     const referencedAudioIds = new Set();
@@ -175,11 +181,23 @@ function inspectArchive() {
                     readJson(path.join(ROOT, 'archive/events', entry.eventId, 'assets.json'))
                 );
             }
-            const variantKey = `${entry.eventId}:${entry.variant}`;
+            if (!eventCache.has(entry.eventId)) {
+                eventCache.set(entry.eventId, readJson(path.join(ROOT, 'archive/events', entry.eventId, 'event.json')));
+            }
+            const variantId = entry.variant || storyline.id;
+            const variantKey = `${entry.eventId}:${variantId}`;
             if (!variantCache.has(variantKey)) {
+                const eventDir = path.join(ROOT, 'archive/events', entry.eventId);
                 variantCache.set(
                     variantKey,
-                    readJson(path.join(ROOT, 'archive/events', entry.eventId, 'variants', `${entry.variant}.json`))
+                    resolveEffectivePresentation({
+                        root: ROOT,
+                        eventDir,
+                        event: eventCache.get(entry.eventId),
+                        eventId: entry.eventId,
+                        storylineId: storyline.id,
+                        ref: entry
+                    }).presentation
                 );
             }
             const assets = assetCache.get(entry.eventId);
@@ -190,7 +208,7 @@ function inspectArchive() {
                     (asset) => assetIds.has(asset.id) && asset.type === 'audio' && asset.language === locale
                 );
                 if (!audio) {
-                    missingAudio.push(`${storyline.id}/${entry.eventId}/${entry.variant}/${locale}`);
+                    missingAudio.push(`${storyline.id}/${entry.eventId}/${variantId}/${locale}`);
                     continue;
                 }
                 referencedAudioIds.add(`${entry.eventId}:${audio.id}`);
@@ -201,17 +219,19 @@ function inspectArchive() {
     const assets = [];
     for (const [eventId, eventAssets] of assetCache) {
         for (const audio of eventAssets.filter((asset) => asset.type === 'audio')) {
-            const deliveryUrl = String(audio.deliveryUrl || audio.path || '').trim();
-            const objectKey = String(audio.storage?.objectKey || '').trim();
+            const storage = resolveMediaStorage(audio, { config: mediaStorageConfig });
+            const deliveryUrl = storage.publicUrl;
+            const objectKey = storage.objectKey;
+            const objectKeyPrefix = normalizeObjectKey(storage.objectKeyPrefix).replace(/\/+$/, '');
             if (
-                audio.storage?.provider !== 'aliyun-oss' ||
-                audio.storage?.bucket !== 'zgca-medias' ||
-                !objectKey.startsWith('audio/ai-history/releases/') ||
-                !/^https:\/\/media\.sciencearena\.cn\/audio\/ai-history\/releases\//.test(deliveryUrl)
+                !storage.provider ||
+                !storage.bucket ||
+                !objectKey.startsWith(`${objectKeyPrefix}/`) ||
+                !deliveryUrl.startsWith(storage.publicUrlPrefix)
             ) {
                 deliveryErrors.push(`${eventId}/${audio.id}`);
             }
-            const sourcePath = String(audio.storage?.sourcePath || '').trim();
+            const sourcePath = String(storage.sourcePath || '').trim();
             assets.push({
                 eventId,
                 assetId: audio.id,

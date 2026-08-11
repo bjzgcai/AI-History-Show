@@ -53,6 +53,8 @@
                     <select id="fileSelect" hidden></select>
                     <div id="eventDisplayActions" class="toolbar-event-display" hidden>
                         <select id="eventDisplayTarget" aria-label="选择展示 Storyline"></select>
+                        <button id="inspectEventPresentationBtn">查看展示配置</button>
+                        <button id="restorePresentationInheritanceBtn" class="danger">恢复继承</button>
                         <button id="openEventDisplayBtn" class="primary">展示事件 ↗</button>
                     </div>
                     <button id="loadBtn">加载</button>
@@ -267,6 +269,16 @@
                         </div>
                     </div>
                     <div id="relationRows"></div>
+                </div>
+
+                <div id="eventPresentationPanel" class="panel" hidden>
+                    <div class="panel-heading">
+                        <div>
+                            <h2>展示继承</h2>
+                            <p id="eventPresentationSummary" class="muted">选择 Storyline 查看默认值、覆盖值与最终展示内容。</p>
+                        </div>
+                    </div>
+                    <pre id="eventPresentationPreview" class="presentation-preview"></pre>
                 </div>
 
                 <div id="auditPanel" class="panel" hidden>

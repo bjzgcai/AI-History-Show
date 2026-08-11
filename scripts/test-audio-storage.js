@@ -18,37 +18,61 @@ const {
     selectUploadAction,
     validateAudioAssets
 } = require('./sync-audio-oss.js');
+const { resolveEffectivePresentation } = require('./archive-presentation.js');
+const { loadMediaStorageConfig, resolveAudioUrl, resolveMediaStorage } = require('./media-storage.js');
 
 function assertArchiveAudioUsage(root) {
     const eventsRoot = path.join(root, 'archive', 'events');
+    const storylinesRoot = path.join(root, 'archive', 'storylines');
+    const mediaStorageConfig = loadMediaStorageConfig(root);
+    const audioProfile = mediaStorageConfig.profiles.find(
+        (profile) => profile.id === mediaStorageConfig.defaultProfiles.audio
+    );
+    assert.ok(audioProfile, 'default audio storage profile must exist');
+    const selectedAudioIds = new Map();
+    for (const storylineFile of fs.readdirSync(storylinesRoot).filter((fileName) => fileName.endsWith('.json'))) {
+        const storyline = JSON.parse(fs.readFileSync(path.join(storylinesRoot, storylineFile), 'utf8'));
+        for (const ref of storyline.events || []) {
+            if (!ref || ref.enabled === false) continue;
+            const eventRoot = path.join(eventsRoot, ref.eventId);
+            const event = JSON.parse(fs.readFileSync(path.join(eventRoot, 'event.json'), 'utf8'));
+            const assets = JSON.parse(fs.readFileSync(path.join(eventRoot, 'assets.json'), 'utf8'));
+            const assetMap = new Map(assets.map((asset) => [asset.id, asset]));
+            const presentation = resolveEffectivePresentation({
+                root,
+                eventDir: eventRoot,
+                event,
+                eventId: ref.eventId,
+                storylineId: storyline.id,
+                ref
+            }).presentation;
+            for (const assetId of presentation.assetIds || []) {
+                const asset = assetMap.get(assetId);
+                if (asset && asset.type === 'audio') {
+                    const refs = selectedAudioIds.get(`${ref.eventId}:${assetId}`) || [];
+                    refs.push(`${storyline.id}/${ref.variant || storyline.id}`);
+                    selectedAudioIds.set(`${ref.eventId}:${assetId}`, refs);
+                }
+            }
+        }
+    }
+
     for (const eventEntry of fs.readdirSync(eventsRoot, { withFileTypes: true })) {
         if (!eventEntry.isDirectory()) continue;
         const eventRoot = path.join(eventsRoot, eventEntry.name);
         const assets = JSON.parse(fs.readFileSync(path.join(eventRoot, 'assets.json'), 'utf8'));
-        const variantsRoot = path.join(eventRoot, 'variants');
-        const variants = fs
-            .readdirSync(variantsRoot)
-            .filter((fileName) => fileName.endsWith('.json'))
-            .map((fileName) => ({
-                id: path.basename(fileName, '.json'),
-                data: JSON.parse(fs.readFileSync(path.join(variantsRoot, fileName), 'utf8'))
-            }));
 
         for (const asset of assets.filter((candidate) => candidate.type === 'audio')) {
-            const deliveryUrl = String(asset.deliveryUrl || asset.path || '');
-            assert.match(
-                deliveryUrl,
-                /^https:\/\/media\.sciencearena\.cn\/audio\/ai-history\/releases\//,
-                `${eventEntry.name}/${asset.id} must use the OSS delivery endpoint instead of a local MP3 path`
+            const deliveryUrl = resolveAudioUrl(asset, { config: mediaStorageConfig });
+            assert.ok(
+                deliveryUrl.startsWith(audioProfile.publicUrlPrefix),
+                `${eventEntry.name}/${asset.id} must use the configured delivery endpoint instead of a local MP3 path`
             );
-            const usage = new Set(asset.usage || []);
-            for (const variant of variants) {
-                if (!(variant.data.assetIds || []).includes(asset.id)) continue;
-                assert.ok(
-                    usage.has(`variant:${variant.id}`),
-                    `${eventEntry.name}/${asset.id} must declare usage by variant:${variant.id}`
-                );
-            }
+            if ((asset.usage || []).includes('archive-only')) continue;
+            assert.ok(
+                selectedAudioIds.has(`${eventEntry.name}:${asset.id}`),
+                `${eventEntry.name}/${asset.id} must be selected by at least one effective presentation`
+            );
         }
     }
 }
@@ -115,6 +139,35 @@ async function main() {
         assert.equal(config.endpoint, 'https://oss-cn-beijing.aliyuncs.com');
         assert.equal(config.bucket, 'zgca-medias');
         assert.equal(config.forcePathStyle, false);
+
+        assert.throws(
+            () =>
+                resolveMediaStorage(
+                    { type: 'audio', storage: { profileId: 'missing-profile', objectName: 'sample.mp3' } },
+                    { config: loadMediaStorageConfig(path.join(__dirname, '..')) }
+                ),
+            /Unknown media storage profile/
+        );
+        const customPrefixStorage = resolveMediaStorage(
+            { type: 'audio', storage: { profileId: 'custom-audio', objectName: 'sample.mp3' } },
+            {
+                config: {
+                    defaultProfiles: { audio: 'custom-audio' },
+                    profiles: [
+                        {
+                            id: 'custom-audio',
+                            mediaType: 'audio',
+                            provider: 'aliyun-oss',
+                            bucket: 'test-bucket',
+                            publicUrlPrefix: 'https://media.example/audio',
+                            objectKeyPrefix: 'audio/releases'
+                        }
+                    ]
+                }
+            }
+        );
+        assert.equal(customPrefixStorage.objectKey, 'audio/releases/sample.mp3');
+        assert.equal(customPrefixStorage.publicUrl, 'https://media.example/audio/sample.mp3');
 
         const makeHeadResponse = (status, headers = {}) => ({
             status,
@@ -211,6 +264,9 @@ async function main() {
 
         entries[0].objectKey = '../outside.mp3';
         assert.match(validateAudioAssets(entries).join('\n'), /must stay under audio|parent traversal/);
+        entries[0].objectKey = 'audio/ai-history/releases-escape/outside.mp3';
+        entries[0].objectKeyPrefix = 'audio/ai-history/releases';
+        assert.match(validateAudioAssets(entries).join('\n'), /must stay under audio\/ai-history\/releases/);
     } finally {
         fs.rmSync(root, { recursive: true, force: true });
     }

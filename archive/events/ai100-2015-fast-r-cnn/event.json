@@ -51,5 +51,312 @@
       "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
       "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "en": "Fast R-CNN",
+      "zh": "Fast R-CNN"
+    },
+    "displayDescription": {
+      "en": "<p>R-CNN achieved strong detection accuracy but ran a convolutional network independently for thousands of proposed regions. Fast R-CNN reorganized the computation so the expensive convolutional backbone was shared across the whole image.</p><p>The image is processed once into a feature map, and RoI pooling extracts fixed-size features for each proposal. A single network jointly predicts class probabilities and refined bounding boxes. Experts generally view Fast R-CNN as the key efficiency bridge between R-CNN and fully integrated proposal networks. Its shared features and joint loss became standard design patterns in two-stage detectors.</p>",
+      "zh": "<p>R-CNN 的检测精度很高，但需要对数千个候选区域分别运行卷积网络。Fast R-CNN 重新组织计算，让昂贵的卷积骨干能够在整张图像上共享。</p><p>图像只需处理一次得到特征图，RoI 池化再为每个候选区域提取固定尺寸特征。单个网络联合预测类别概率和修正后的边界框。专家通常把 Fast R-CNN 视为连接 R-CNN 与完整区域候选网络的关键效率桥梁。共享特征和联合损失后来成为两阶段检测器的标准设计。</p>"
+    },
+    "emphasis": [
+      "benchcouncil-canonical-2026-07-30",
+      "source-reviewed"
+    ],
+    "visual": "configuredPaper",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "Fast R-CNN",
+          "zh": "Fast R-CNN"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed Fast R-CNN achievement.",
+          "zh": "BenchCouncil 主表中Fast R-CNN成就的主要资料。"
+        },
+        "url": "https://arxiv.org/abs/1504.08083",
+        "source": "https://arxiv.org/abs/1504.08083",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-2015-fast-r-cnn-portrait",
+      "asset-2015-fast-r-cnn-explainer",
+      "asset-ai100-2015-fast-r-cnn-audio-zh-original-v1",
+      "asset-ai100-2015-fast-r-cnn-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-2015-fast-r-cnn-primary",
+      "source-2015-fast-r-cnn-secondary",
+      "source-benchcouncil-ai100-catalog",
+      "source-2015-fast-r-cnn-portrait"
+    ],
+    "claimIds": [
+      "claim-2015-fast-r-cnn-membership",
+      "claim-2015-fast-r-cnn-description"
+    ],
+    "quizId": "ai100-2015-fast-r-cnn-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "R-CNN achieved strong detection accuracy but ran a convolutional network independently for thousands of proposed regions. Fast R-CNN reorganized the computation so the expensive convolutional backbone was shared across the whole image.",
+          "zh": "R-CNN 的检测精度很高，但需要对数千个候选区域分别运行卷积网络。Fast R-CNN 重新组织计算，让昂贵的卷积骨干能够在整张图像上共享。"
+        },
+        "sourceIds": [
+          "source-2015-fast-r-cnn-primary",
+          "source-benchcouncil-ai100-catalog"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The image is processed once into a feature map, and RoI pooling extracts fixed-size features for each proposal. A single network jointly predicts class probabilities and refined bounding boxes.",
+          "zh": "图像只需处理一次得到特征图，RoI 池化再为每个候选区域提取固定尺寸特征。单个网络联合预测类别概率和修正后的边界框。"
+        },
+        "sourceIds": [
+          "source-2015-fast-r-cnn-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally view Fast R-CNN as the key efficiency bridge between R-CNN and fully integrated proposal networks. Its shared features and joint loss became standard design patterns in two-stage detectors.",
+          "zh": "专家通常把 Fast R-CNN 视为连接 R-CNN 与完整区域候选网络的关键效率桥梁。共享特征和联合损失后来成为两阶段检测器的标准设计。"
+        },
+        "sourceIds": [
+          "source-2015-fast-r-cnn-primary",
+          "source-2015-fast-r-cnn-secondary"
+        ]
+      }
+    ],
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "ross-girshick",
+        "role": {
+          "zh": "Faster R-CNN 共同作者",
+          "en": "Co-author of Faster R-CNN"
+        },
+        "avatarAssetId": "asset-2015-fast-r-cnn-portrait"
+      }
+    ],
+    "photos": [],
+    "quote": {
+      "en": "“Fast R-CNN”",
+      "zh": "“Fast R-CNN”"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Fast R-CNN",
+        "zh": "Fast R-CNN"
+      },
+      "workAuthors": {
+        "en": "See primary publication record",
+        "zh": "见主论文记录"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1504.08083"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>Fast R-CNN</em>",
+      "zh": "《Fast R-CNN》"
+    },
+    "achievement": {
+      "area": {
+        "en": "Object Detection",
+        "zh": "目标检测"
+      },
+      "method": {
+        "en": "Shared feature map with RoI pooling and joint prediction",
+        "zh": "共享特征图、RoI 池化与联合预测"
+      },
+      "artifact": {
+        "en": "Fast region-based detector",
+        "zh": "快速区域式检测器"
+      },
+      "material": {
+        "en": "Fast R-CNN, companion source, and BenchCouncil catalog record",
+        "zh": "《Fast R-CNN》、配套资料与 BenchCouncil 清单记录"
+      },
+      "demo": {
+        "en": "Follow the four stages and compare how changing one stage affects the final fast region-based detector.",
+        "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的快速区域式检测器。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Stage 1",
+            "zh": "阶段 1"
+          },
+          "text": {
+            "en": "One CNN feature map",
+            "zh": "一次 CNN 特征图"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 2",
+            "zh": "阶段 2"
+          },
+          "text": {
+            "en": "External proposals",
+            "zh": "外部候选区域"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 3",
+            "zh": "阶段 3"
+          },
+          "text": {
+            "en": "RoI pooling",
+            "zh": "RoI 池化"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 4",
+            "zh": "阶段 4"
+          },
+          "text": {
+            "en": "Joint class and box heads",
+            "zh": "联合分类与框回归头"
+          }
+        }
+      ],
+      "relatedAchievements": [],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "One CNN feature map",
+          "zh": "一次 CNN 特征图"
+        },
+        {
+          "en": "External proposals",
+          "zh": "外部候选区域"
+        },
+        {
+          "en": "RoI pooling",
+          "zh": "RoI 池化"
+        },
+        {
+          "en": "Joint class and box heads",
+          "zh": "联合分类与框回归头"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2015-2015-fast-r-cnn_process.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "BenchCouncil lists Fast R-CNN and cites Fast R-CNN as a defining publication.",
+            "zh": "BenchCouncil 将Fast R-CNN列入主表，并把《Fast R-CNN》作为代表性资料。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+            "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Primary publication",
+            "zh": "主论文"
+          },
+          "title": {
+            "en": "Fast R-CNN",
+            "zh": "Fast R-CNN"
+          },
+          "description": {
+            "en": "Primary source for the BenchCouncil-listed Fast R-CNN achievement.",
+            "zh": "BenchCouncil 主表中Fast R-CNN成就的主要资料。"
+          },
+          "url": "https://arxiv.org/abs/1504.08083",
+          "source": "https://arxiv.org/abs/1504.08083",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "Microsoft Research",
+        "zh": "微软研究院"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        47.674,
+        -122.1215
+      ]
+    }
   }
 }

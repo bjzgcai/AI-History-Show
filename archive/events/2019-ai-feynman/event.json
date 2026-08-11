@@ -51,5 +51,140 @@
       "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
       "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "zh": "AI Feynman：自主科学规律发现",
+      "en": "AI Feynman: Autonomous Discovery of Scientific Laws"
+    },
+    "displaySummary": {
+      "zh": "大模型与科学智能",
+      "en": "Large Models and Scientific Intelligence"
+    },
+    "displayDescription": {
+      "zh": "<p>2019 年，西尔维乌-马里安·乌多雷斯库和马克斯·泰格马克公开 AI Feynman，用于从数值数据中寻找可读的符号方程。系统先用神经网络拟合数据，再检查可分性、对称性和量纲等物理线索，把高维问题拆成更简单的子问题，最后通过符号搜索恢复公式。</p><p>论文报告，AI Feynman 解出了测试集中全部 100 个《费曼物理学讲义》方程，而此前公开软件解出 71 个；在更困难的物理方程测试集上，成功率由基线的 15% 提升到 90%。它的重要性不只是提高预测精度，而是输出可由科学家检查和使用的解析表达式，展示了机器学习与科学先验结合进行规律发现的路径。</p>",
+      "en": "<p>In 2019, Silviu-Marian Udrescu and Max Tegmark released AI Feynman, a system for recovering human-readable symbolic equations from numerical data. It first used a neural network to fit the observations, then tested physics-inspired clues such as separability, symmetry, and dimensional structure. These clues decomposed difficult high-dimensional problems before a symbolic search reconstructed the formula.</p><p>The paper reported solving all 100 equations drawn from the Feynman Lectures test set, compared with 71 solved by earlier publicly available software. On a harder physics-based set, success rose from a 15 percent baseline to 90 percent. The significance was not merely predictive accuracy: AI Feynman returned analytic expressions that scientists could inspect and reuse, demonstrating a path for combining machine learning with scientific priors in law discovery.</p>"
+    },
+    "emphasis": [
+      "batch-migration",
+      "source-review-needed"
+    ],
+    "visualModules": [],
+    "assetIds": [
+      "asset-2019-ai-feynman-people-01",
+      "asset-2019-ai-feynman-historical-01",
+      "asset-2019-ai-feynman-papers-01",
+      "asset-2019-ai-feynman-papers-02",
+      "asset-2019-ai-feynman-audio-zh-original-v1",
+      "asset-2019-ai-feynman-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-ai-feynman-science-advances",
+      "source-ai-feynman-arxiv"
+    ],
+    "claimIds": [
+      "claim-legacy-achievement-summary",
+      "claim-legacy-description"
+    ],
+    "commentarySections": [
+      {
+        "id": "background",
+        "label": {
+          "zh": "背景解读",
+          "en": "Background"
+        },
+        "html": {
+          "zh": "AI Feynman 的思路很有代表性：它没有把符号回归完全交给暴力搜索，而是引入对称性、量纲分析等物理先验，缩小候选空间，让“机器发现公式”从玩具问题走向真实规律重建。",
+          "en": "AI Feynman's approach is representative because it did not leave symbolic regression entirely to brute-force search. By adding physical priors such as symmetry and dimensional analysis, it narrowed the candidate space and moved machine formula discovery from toy problems toward reconstructing real laws."
+        },
+        "sourceIds": [
+          "source-ai-feynman-science-advances",
+          "source-ai-feynman-arxiv"
+        ]
+      },
+      {
+        "id": "context",
+        "label": {
+          "zh": "延展说明",
+          "en": "Context"
+        },
+        "html": {
+          "zh": "这类系统的重要价值在于可解释性。与只给出预测结果的黑盒模型相比，AI Feynman 直接输出人类可读的方程，因此它更像是“可交付给科学共同体”的中间发现工具。",
+          "en": "The value of such systems lies in interpretability. Unlike black-box models that only return predictions, AI Feynman outputs human-readable equations, making it more like an intermediate discovery tool that can be handed to the scientific community."
+        },
+        "sourceIds": [
+          "source-ai-feynman-science-advances",
+          "source-ai-feynman-arxiv"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+        "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+      }
+    },
+    "category": {
+      "en": "Large Models and Scientific Intelligence",
+      "zh": "大模型与科学智能"
+    },
+    "figures": [
+      {
+        "figureId": "max-tegmark",
+        "role": {
+          "en": "AI Feynman author",
+          "zh": "AI Feynman作者"
+        },
+        "avatarAssetId": "asset-2019-ai-feynman-people-01"
+      }
+    ],
+    "photos": [],
+    "quote": {
+      "en": "\"AI Feynman combined neural-network fitting with physics-inspired constraints to recover symbolic equations from data, pointing toward AI-assisted scientific discovery.\"",
+      "zh": "\"AI Feynman 将神经网络拟合与受物理启发的约束结合起来，从数据中恢复符号方程，指向 AI 辅助科学发现的路径。\""
+    },
+    "quoteMeta": {
+      "speaker": {
+        "en": "Silviu-Marian Udrescu, Max Tegmark",
+        "zh": "西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
+      },
+      "workTitle": {
+        "en": "AI Feynman: a physics-inspired method for symbolic regression",
+        "zh": "AI Feynman：受物理启发的符号回归方法"
+      },
+      "workAuthors": {
+        "en": "Silviu-Marian Udrescu and Max Tegmark, Science Advances, 2020",
+        "zh": "Silviu-Marian Udrescu、马克斯·泰格马克，Science Advances，2020"
+      },
+      "sourceLabel": {
+        "en": "Science Advances paper DOI page",
+        "zh": "Science Advances 论文 DOI 页面"
+      },
+      "sourceUrl": "https://www.science.org/doi/10.1126/sciadv.aay2631"
+    },
+    "quotePage": {
+      "en": "Science Advances paper: AI Feynman",
+      "zh": "Science Advances 论文《AI Feynman》"
+    },
+    "quoteAttribution": {
+      "en": "<em>AI Feynman: a physics-inspired method for symbolic regression</em>, Silviu-Marian Udrescu and Max Tegmark, Science Advances, 2020",
+      "zh": "《AI Feynman：一种受物理启发的符号回归方法》，西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
+    },
+    "location": {
+      "name": {
+        "en": "MIT",
+        "zh": "麻省理工学院"
+      },
+      "country": {
+        "en": "MA, United States",
+        "zh": "美国, 马萨诸塞州"
+      },
+      "coordinates": [
+        42.3601,
+        -71.0942
+      ]
+    }
   }
 }

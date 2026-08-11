@@ -16,6 +16,7 @@ const state = {
     assetMergeSelection: new Set(),
     assetMergeCanonical: '',
     eventDisplayTargets: [],
+    eventPresentationOpen: false,
     mergePreview: null,
     taskRunning: false
 };
@@ -31,7 +32,12 @@ const elements = Object.fromEntries(
         'fileSelect',
         'eventDisplayActions',
         'eventDisplayTarget',
+        'inspectEventPresentationBtn',
+        'restorePresentationInheritanceBtn',
         'openEventDisplayBtn',
+        'eventPresentationPanel',
+        'eventPresentationSummary',
+        'eventPresentationPreview',
         'editor',
         'status',
         'currentEntity',
@@ -193,6 +199,7 @@ function isVariantFile() {
 function updatePanelVisibility() {
     elements.figurePanel.hidden = state.type !== 'figures' || !state.document;
     elements.relationPanel.hidden = !isRelationshipFile() || !state.document;
+    elements.eventPresentationPanel.hidden = state.type !== 'events' || !state.document || !state.eventPresentationOpen;
     elements.auditPanel.hidden = state.type !== 'audit';
     elements.jsonPanel.hidden = state.type === 'audit' || !state.document;
     elements.fileSelect.hidden = state.type !== 'events';
@@ -349,6 +356,7 @@ function selectEntity(id) {
     state.creatingFigure = false;
     state.assetMergeSelection.clear();
     state.assetMergeCanonical = '';
+    state.eventPresentationOpen = false;
     if (state.type === 'events') {
         const entity = state.entities.find((item) => item.id === id);
         const files = entity ? entity.files : [];
@@ -969,22 +977,87 @@ async function renderEventDisplayActions() {
         state.eventDisplayTargets = [];
         elements.eventDisplayTarget.innerHTML = '';
         elements.openEventDisplayBtn.disabled = true;
+        elements.inspectEventPresentationBtn.disabled = true;
+        elements.restorePresentationInheritanceBtn.disabled = true;
+        state.eventPresentationOpen = false;
+        elements.eventPresentationPreview.textContent = '';
         return;
     }
     state.eventDisplayTargets = await api(
-        `/api/archive/event-display-targets?eventId=${encodeURIComponent(state.entityId)}`
+        `/api/archive/event-presentation-targets?eventId=${encodeURIComponent(state.entityId)}`
     );
     elements.eventDisplayTarget.innerHTML = state.eventDisplayTargets
         .map((target, index) => {
             const storylineTitle =
                 localize(target.storylineTitle, 'zh') || localize(target.storylineTitle, 'en') || target.storylineId;
-            return `<option value="${index}">${escapeHtml(storylineTitle)} · ${escapeHtml(target.storylineId)}</option>`;
+            const sourceLabel = target.hasOverride ? '覆盖' : '继承';
+            return `<option value="${index}">${escapeHtml(storylineTitle)} · ${escapeHtml(target.storylineId)} · ${sourceLabel}</option>`;
         })
         .join('');
     elements.openEventDisplayBtn.disabled = state.eventDisplayTargets.length === 0;
     elements.openEventDisplayBtn.title = state.eventDisplayTargets.length
         ? '在展示页打开当前事件'
         : '该事件未加入启用的 Storyline';
+    updateEventPresentationControls();
+}
+
+function selectedEventPresentationTarget() {
+    return state.eventDisplayTargets[Number(elements.eventDisplayTarget.value)] || null;
+}
+
+function updateEventPresentationControls() {
+    const target = selectedEventPresentationTarget();
+    const canInspect = Boolean(target);
+    const canRestore = Boolean(target && (target.hasOverride || target.refVariant));
+    elements.inspectEventPresentationBtn.disabled = !canInspect;
+    elements.restorePresentationInheritanceBtn.disabled = !canRestore;
+    elements.restorePresentationInheritanceBtn.title = canRestore
+        ? '删除当前覆盖并回到 event.defaultPresentation'
+        : '当前展示已继承默认值';
+    if (state.eventPresentationOpen && target) renderEventPresentationPanel(target);
+}
+
+function renderEventPresentationPanel(target) {
+    state.eventPresentationOpen = true;
+    elements.eventPresentationPanel.hidden = false;
+    const source = target.hasOverride ? `使用覆盖文件 ${target.overrideFile}` : '继承 event.defaultPresentation';
+    const variantNote = target.refVariant ? `，Storyline 显式指定 ${target.refVariant}` : '';
+    elements.eventPresentationSummary.textContent = `${target.storylineId}：${source}${variantNote}。`;
+    elements.eventPresentationPreview.textContent = JSON.stringify(
+        {
+            effectivePresentation: target.effectivePresentation,
+            override: target.override,
+            defaultPresentation: target.defaultPresentation
+        },
+        null,
+        2
+    );
+}
+
+async function restorePresentationInheritance() {
+    const target = selectedEventPresentationTarget();
+    if (!target) throw new Error('请选择展示 Storyline');
+    if (!target.hasOverride && !target.refVariant) throw new Error('当前展示已经继承默认值');
+    const source = target.hasOverride ? target.overrideFile : target.refVariant;
+    if (!window.confirm(`确认让 ${state.entityId} / ${target.storylineId} 恢复继承默认展示？\n\n将清除：${source}`))
+        return;
+    const eventId = state.entityId;
+    const result = await api('/api/archive/event-presentation-restore-inheritance', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            eventId,
+            storylineId: target.storylineId,
+            milestoneId: target.milestoneId,
+            expectedOverrideRevision: target.overrideRevision,
+            expectedStorylineRevision: target.storylineRevision
+        })
+    });
+    const keptNote = result.keptOverrideDueToReferences ? '，共享覆盖文件已保留' : '';
+    setStatus(`已恢复继承，改写 ${result.changedFiles.length} 个文件${keptNote}`, 'ok');
+    await refresh();
+    selectEntity(eventId);
+    await loadEntity();
 }
 
 async function setFigureDefaultAvatar(asset) {
@@ -1347,9 +1420,20 @@ for (const id of figureFieldIds) {
 elements.avatarPath.addEventListener('input', renderAvatarPreview);
 elements.avatarStyle.addEventListener('input', renderAvatarPreview);
 elements.openEventDisplayBtn.addEventListener('click', () => {
-    const target = state.eventDisplayTargets[Number(elements.eventDisplayTarget.value)];
+    const target = selectedEventPresentationTarget();
     if (target) window.open(buildPresentationEventUrl(target), '_blank', 'noopener');
 });
+elements.eventDisplayTarget.addEventListener('change', updateEventPresentationControls);
+elements.inspectEventPresentationBtn.addEventListener('click', () => {
+    const target = selectedEventPresentationTarget();
+    if (target) {
+        renderEventPresentationPanel(target);
+        updatePanelVisibility();
+    }
+});
+elements.restorePresentationInheritanceBtn.addEventListener('click', () =>
+    restorePresentationInheritance().catch((error) => setStatus(error.message, 'bad'))
+);
 elements.figureAssetGallery.addEventListener('click', (event) => {
     const button = event.target.closest('button[data-asset-action]');
     const card = event.target.closest('.figure-asset-card');

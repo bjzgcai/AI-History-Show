@@ -4,6 +4,12 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { loadFigureRegistry, resolveFigureRelations } = require('./figure-registry');
+const { resolveEffectivePresentation } = require('./archive-presentation');
+const {
+    loadMediaStorageConfig,
+    resolveAudioUrl: resolveStoredAudioUrl,
+    resolveMediaStorage
+} = require('./media-storage');
 
 function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -89,8 +95,8 @@ function normalizeQuiz(quiz) {
     };
 }
 
-function resolveAudioUrl(asset) {
-    return asset.deliveryUrl || (asset.storage && asset.storage.publicUrl) || asset.path || '';
+function resolveAudioUrl(asset, options = {}) {
+    return resolveStoredAudioUrl(asset, options);
 }
 
 function loadEventBundle(root, eventId) {
@@ -108,19 +114,22 @@ function loadEventBundle(root, eventId) {
     };
 }
 
-function loadVariant(bundle, variantId) {
-    const variantPath = path.join(bundle.dir, 'variants', `${variantId}.json`);
-    if (!fileExists(variantPath)) throw new Error(`Missing variant: ${bundle.id}/${variantId}`);
-    return readJson(variantPath);
-}
-
-function buildMilestone(root, storyline, ref, figureRegistry) {
+function buildMilestone(root, storyline, ref, figureRegistry, mediaStorageConfig) {
     if (!ref.milestoneId) {
-        throw new Error(`Missing milestoneId: ${storyline.id}/${ref.eventId}/${ref.variant}`);
+        throw new Error(`Missing milestoneId: ${storyline.id}/${ref.eventId}/${ref.variant || storyline.id}`);
     }
     const bundle = loadEventBundle(root, ref.eventId);
-    const variant = loadVariant(bundle, ref.variant);
     const event = bundle.event;
+    const resolvedPresentation = resolveEffectivePresentation({
+        root,
+        eventDir: bundle.dir,
+        event,
+        eventId: bundle.id,
+        storylineId: storyline.id,
+        ref
+    });
+    const variant = resolvedPresentation.presentation;
+    const archiveVariantId = resolvedPresentation.overrideId || storyline.id;
 
     const selectedAssets = selectByIds(bundle.assets, variant.assetIds || []);
     const assetsById = byId(bundle.assets);
@@ -142,6 +151,7 @@ function buildMilestone(root, storyline, ref, figureRegistry) {
     const selectedQuiz = variant.quizId ? quizMap.get(variant.quizId) : null;
 
     const imageAssets = selectedAssets.filter((asset) => ['image', 'svg', 'gif'].includes(asset.type));
+    const videoAssets = selectedAssets.filter((asset) => asset.type === 'video');
     const audioAssets = selectedAssets.filter((asset) => asset.type === 'audio');
     const imageMeta = {};
     for (const asset of imageAssets) imageMeta[asset.path] = assetImageMeta(asset);
@@ -153,7 +163,7 @@ function buildMilestone(root, storyline, ref, figureRegistry) {
     const milestone = {
         id: ref.milestoneId,
         archiveEventId: event.id,
-        archiveVariantId: ref.variant,
+        archiveVariantId,
         archivePresentationMode: variant.presentationMode || 'preserve-legacy',
         sourceKind: 'archive',
         storyline: {
@@ -192,40 +202,46 @@ function buildMilestone(root, storyline, ref, figureRegistry) {
                   }
                 : {}),
             ...(storyline.id === 'humanistic-cycle' ? { imageMeta } : {}),
-            videos: selectedAssets
-                .filter((asset) => asset.type === 'video')
-                .map((asset) => ({ id: asset.id, url: asset.path })),
+            ...(videoAssets.length > 0
+                ? {
+                      videos: videoAssets.map((asset) => ({ id: asset.id, url: asset.path }))
+                  }
+                : {}),
             ...(audioAssets.length > 0
                 ? {
-                      audios: audioAssets.map((asset) => ({
-                          id: asset.id,
-                          url: resolveAudioUrl(asset),
-                          ...(!asset.deliveryUrl && !(asset.storage && asset.storage.publicUrl)
-                              ? {
-                                    sourcePath:
-                                        (asset.storage && asset.storage.sourcePath) ||
-                                        (/^https?:\/\//i.test(asset.path) ? '' : asset.path)
-                                }
-                              : {}),
-                          title: localizePair(asset.caption),
-                          language: asset.language || '',
-                          contentType:
-                              (asset.storage && asset.storage.contentType) ||
-                              (String(asset.path || '')
-                                  .toLowerCase()
-                                  .endsWith('.mp3')
-                                  ? 'audio/mpeg'
-                                  : ''),
-                          ...(asset.storage
-                              ? {
-                                    storage: {
-                                        provider: asset.storage.provider || '',
-                                        bucket: asset.storage.bucket || '',
-                                        objectKey: asset.storage.objectKey || ''
+                      audios: audioAssets.map((asset) => {
+                          const storage = resolveMediaStorage(asset, { config: mediaStorageConfig });
+                          return {
+                              id: asset.id,
+                              url: resolveAudioUrl(asset, { config: mediaStorageConfig }),
+                              ...(!storage.publicUrl
+                                  ? {
+                                        sourcePath:
+                                            storage.sourcePath || (/^https?:\/\//i.test(asset.path) ? '' : asset.path)
                                     }
-                                }
-                              : {})
-                      }))
+                                  : {}),
+                              title: localizePair(asset.caption),
+                              language: asset.language || '',
+                              contentType:
+                                  storage.contentType ||
+                                  (String(asset.path || '')
+                                      .toLowerCase()
+                                      .endsWith('.mp3')
+                                      ? 'audio/mpeg'
+                                      : ''),
+                              ...(asset.storage
+                                  ? {
+                                        storage: {
+                                            provider: storage.provider,
+                                            bucket: storage.bucket,
+                                            objectKey: storage.objectKey,
+                                            profileId: storage.profileId,
+                                            objectName: storage.objectName
+                                        }
+                                    }
+                                  : {})
+                          };
+                      })
                   }
                 : {}),
             assetIds: selectedAssets.map((asset) => asset.id)
@@ -251,9 +267,14 @@ function buildMilestone(root, storyline, ref, figureRegistry) {
         quizzes: selectedQuiz ? [normalizeQuiz(selectedQuiz)] : [],
         archive: {
             eventFile: path.relative(root, path.join(bundle.dir, 'event.json')).replace(/\\/g, '/'),
-            variantFile: path
-                .relative(root, path.join(bundle.dir, 'variants', `${ref.variant}.json`))
-                .replace(/\\/g, '/'),
+            ...(resolvedPresentation.overrideFile ? { variantFile: resolvedPresentation.overrideFile } : {}),
+            ...(resolvedPresentation.hasDefaultPresentation
+                ? {
+                      defaultPresentationFile: path
+                          .relative(root, path.join(bundle.dir, 'event.json'))
+                          .replace(/\\/g, '/')
+                  }
+                : {}),
             presentationMode: variant.presentationMode || 'preserve-legacy'
         }
     };
@@ -310,6 +331,7 @@ function applyVariantPresentation(milestone, variant) {
 function compileArchive(root) {
     const storylines = loadStorylines(root);
     let figureRegistry;
+    const mediaStorageConfig = loadMediaStorageConfig(root);
     try {
         figureRegistry = loadFigureRegistry(root);
     } catch (error) {
@@ -330,7 +352,7 @@ function compileArchive(root) {
         for (const ref of storyline.events || []) {
             if (ref && ref.enabled === false) continue;
             try {
-                milestones.push(buildMilestone(root, storyline, ref, figureRegistry));
+                milestones.push(buildMilestone(root, storyline, ref, figureRegistry, mediaStorageConfig));
             } catch (error) {
                 errors.push({ storylineId: storyline.id, ref, message: error.message });
             }

@@ -11,7 +11,10 @@ const { archiveStorylines, milestones } = require('../milestones-data.js');
 const sourcePurposeTaxonomy = require('../archive/taxonomies/source-purposes.json');
 const sourceSchema = require('../archive/schemas/source.schema.json');
 const sourceTypeTaxonomy = require('../archive/taxonomies/source-types.json');
+const { resolveEffectivePresentation } = require('./archive-presentation.js');
 const { compileArchive, resolveAudioUrl } = require('./archive-compiler.js');
+const { createArchiveSchemaValidator } = require('./archive-schema-validator.js');
+const { loadMediaStorageConfig } = require('./media-storage.js');
 const { generateArchiveData, normalizeGeneratedTime, writeOutputsAtomically } = require('./generate-archive-data.js');
 
 function createTempDir() {
@@ -171,12 +174,78 @@ assert.equal(
 );
 console.log('PASS audio delivery URL priority');
 
+{
+    const validateSchema = createArchiveSchemaValidator(path.join(__dirname, '..'));
+    const variantSchemaResult = validateSchema('variant.schema.json', {
+        assetIds: null,
+        sentiment: null
+    });
+    assert.deepEqual(
+        variantSchemaResult.errors,
+        [],
+        'variant schema accepts identity-free partial overrides and null inheritance deletions'
+    );
+
+    const tempDir = createTempDir();
+    try {
+        const eventDir = path.join(tempDir, 'archive', 'events', 'example');
+        fs.mkdirSync(path.join(eventDir, 'variants'), { recursive: true });
+        const event = {
+            id: 'example',
+            defaultPresentation: {
+                assetIds: ['portrait', 'diagram'],
+                achievement: {
+                    visual: 'default-demo',
+                    method: { zh: '默认方法', en: 'Default method' }
+                },
+                sentiment: 'optimistic'
+            }
+        };
+        fs.writeFileSync(
+            path.join(eventDir, 'variants', 'story.json'),
+            `${JSON.stringify(
+                {
+                    assetIds: ['story-diagram'],
+                    achievement: { method: { zh: '覆盖方法', en: 'Override method' } },
+                    sentiment: null,
+                    quoteId: null
+                },
+                null,
+                2
+            )}\n`
+        );
+        const resolved = resolveEffectivePresentation({
+            root: tempDir,
+            eventDir,
+            event,
+            eventId: 'example',
+            storylineId: 'story',
+            ref: {}
+        }).presentation;
+        assert.deepEqual(resolved.assetIds, ['story-diagram'], 'override arrays replace default arrays');
+        assert.deepEqual(
+            resolved.achievement,
+            {
+                visual: 'default-demo',
+                method: { zh: '覆盖方法', en: 'Override method' }
+            },
+            'override objects merge recursively'
+        );
+        assert.equal(Object.hasOwn(resolved, 'sentiment'), false, 'null clears inherited presentation fields');
+        assert.equal(Object.hasOwn(resolved, 'quoteId'), false, 'null clears inherited ID fields');
+    } finally {
+        fs.rmSync(tempDir, { recursive: true, force: true });
+    }
+}
+console.log('PASS default presentation inheritance semantics');
+
 for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'events'), { withFileTypes: true })) {
     if (!eventEntry.isDirectory()) continue;
     const eventDir = path.join(__dirname, '..', 'archive', 'events', eventEntry.name);
     const assets = JSON.parse(fs.readFileSync(path.join(eventDir, 'assets.json'), 'utf8'));
     const assetsById = new Map(assets.map((asset) => [asset.id, asset]));
     const variantsDir = path.join(eventDir, 'variants');
+    if (!fs.existsSync(variantsDir)) continue;
 
     for (const variantFile of fs.readdirSync(variantsDir)) {
         if (!variantFile.endsWith('.json')) continue;
@@ -209,6 +278,11 @@ console.log('PASS runtime variants select only local image assets');
 console.log('PASS runtime figure avatars are explicit local files');
 
 const compiledArchive = compileArchive(path.join(__dirname, '..'));
+const mediaStorageConfig = loadMediaStorageConfig(path.join(__dirname, '..'));
+const audioProfile = mediaStorageConfig.profiles.find(
+    (profile) => profile.id === mediaStorageConfig.defaultProfiles.audio
+);
+assert.ok(audioProfile, 'default audio storage profile must exist');
 assert.equal(compiledArchive.source, 'archive');
 assert.equal(compiledArchive.errors.length, 0);
 assert.equal(compiledArchive.milestones.length, 194);
@@ -219,6 +293,54 @@ assert.deepEqual(
     'compiled Archive milestone IDs must be unique'
 );
 assert.deepEqual(archiveStorylines, compiledArchive.storylines, 'generated storyline metadata should match Archive');
+const archiveStorylineSources = fs
+    .readdirSync(path.join(__dirname, '..', 'archive', 'storylines'))
+    .filter((fileName) => fileName.endsWith('.json'))
+    .map((fileName) =>
+        JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'archive', 'storylines', fileName), 'utf8'))
+    );
+assert.ok(
+    archiveStorylineSources.every((storyline) =>
+        storyline.events.every((eventRef) => !Object.hasOwn(eventRef, 'variant'))
+    ),
+    'every storyline should inherit event default presentations without explicit variants'
+);
+for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'events'), { withFileTypes: true })) {
+    if (!eventEntry.isDirectory()) continue;
+    const eventPath = path.join(__dirname, '..', 'archive', 'events', eventEntry.name, 'event.json');
+    const event = JSON.parse(fs.readFileSync(eventPath, 'utf8'));
+    const defaultPresentation = event.defaultPresentation || {};
+    assert.equal(
+        Object.hasOwn(defaultPresentation, 'videoUrl'),
+        false,
+        `${eventEntry.name} should use narration audio instead of a legacy event video URL`
+    );
+    assert.equal(
+        Boolean(defaultPresentation.resources && Object.hasOwn(defaultPresentation.resources, 'videos')),
+        false,
+        `${eventEntry.name} should not retain legacy event video resources`
+    );
+    const variantsDirectory = path.join(__dirname, '..', 'archive', 'events', eventEntry.name, 'variants');
+    const variantFiles = fs.existsSync(variantsDirectory)
+        ? fs.readdirSync(variantsDirectory).filter((fileName) => fileName.endsWith('.json'))
+        : [];
+    assert.deepEqual(variantFiles, [], `${eventEntry.name} should not retain variant files`);
+}
+assert.ok(
+    compiledArchive.milestones.every(
+        (milestone) =>
+            !Object.hasOwn(milestone, 'videoUrl') &&
+            !(milestone.resources && Object.hasOwn(milestone.resources, 'videos'))
+    ),
+    'compiled runtime should not contain legacy event video configuration'
+);
+assert.ok(
+    compiledArchive.milestones.every((milestone) => {
+        const languages = new Set((milestone.resources?.audios || []).map((audio) => audio.language));
+        return languages.has('zh') && languages.has('en');
+    }),
+    'every compiled milestone should expose Chinese and English narration audio'
+);
 const dartmouthMilestone = compiledArchive.milestones.find(
     (milestone) =>
         milestone.id === 'milestone-1956-dartmouth' && milestone.storyline && milestone.storyline.id === 'deep-learning'
@@ -232,13 +354,42 @@ assert.deepEqual(
 assert.ok(
     dartmouthMilestone.resources.audios.every(
         (audio) =>
-            audio.url.startsWith('https://media.sciencearena.cn/audio/ai-history/releases/') &&
-            audio.storage?.provider === 'aliyun-oss' &&
-            audio.storage?.bucket === 'zgca-medias' &&
-            audio.storage?.objectKey.startsWith('audio/ai-history/releases/')
+            audio.url.startsWith(audioProfile.publicUrlPrefix) &&
+            audio.storage?.provider === audioProfile.provider &&
+            audio.storage?.bucket === audioProfile.bucket &&
+            audio.storage?.objectKey.startsWith(audioProfile.objectKeyPrefix)
     ),
     'the Dartmouth narration should not depend on a local MP3 fallback'
 );
+const perceptronMilestone = compiledArchive.milestones.find(
+    (milestone) =>
+        milestone.archiveEventId === '1957-perceptron' &&
+        milestone.storyline &&
+        milestone.storyline.id === 'deep-learning'
+);
+assert.deepEqual(
+    perceptronMilestone.resources.images.slice(3, 5),
+    [
+        'resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg',
+        'resources/images/figures/frank-rosenblatt.png'
+    ],
+    'the default perceptron presentation should retain the former variant-only portrait after the existing people image'
+);
+const mergedGamingImages = {
+    '1988-td-update': 'resources/images/game-evolution/1988-td-gammon.svg',
+    '1997-deep-blue': 'resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif',
+    '2016-alphago': 'resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg'
+};
+for (const [archiveEventId, expectedImage] of Object.entries(mergedGamingImages)) {
+    const milestone = compiledArchive.milestones.find(
+        (candidate) => candidate.archiveEventId === archiveEventId && candidate.storyline?.id === 'gaming-ai'
+    );
+    assert.equal(
+        milestone.resources.images.at(-1),
+        expectedImage,
+        `${archiveEventId} should retain its former gaming variant image at the end of the default image list`
+    );
+}
 const turingTestMilestone = compiledArchive.milestones.find(
     (milestone) =>
         milestone.id === 'milestone-1950-turing-test' &&
@@ -268,10 +419,12 @@ for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'e
     const eventDir = path.join(__dirname, '..', 'archive', 'events', eventEntry.name);
     const event = JSON.parse(fs.readFileSync(path.join(eventDir, 'event.json'), 'utf8'));
     const variantsDir = path.join(eventDir, 'variants');
-    const variants = fs
-        .readdirSync(variantsDir)
-        .filter((file) => file.endsWith('.json'))
-        .map((file) => JSON.parse(fs.readFileSync(path.join(variantsDir, file), 'utf8')));
+    const variants = fs.existsSync(variantsDir)
+        ? fs
+              .readdirSync(variantsDir)
+              .filter((file) => file.endsWith('.json'))
+              .map((file) => JSON.parse(fs.readFileSync(path.join(variantsDir, file), 'utf8')))
+        : [];
     const ai100Variant = variants.find((variant) => variant.storylineId === 'bench-council-ai100');
     if (ai100Variant) {
         assert.equal(
@@ -354,6 +507,16 @@ assert.deepEqual(
     'deep learning should use the unified AlphaFold title'
 );
 console.log('PASS AlphaFold titles stay unified across storylines');
+const deepLearningAlphaGo = milestones.find(
+    (milestone) =>
+        milestone.archiveEventId === '2016-alphago' && milestone.storyline && milestone.storyline.id === 'deep-learning'
+);
+assert.deepEqual(
+    deepLearningAlphaGo.title,
+    { zh: 'AlphaGo', en: 'AlphaGo' },
+    'deep learning should inherit the default AlphaGo title'
+);
+console.log('PASS deep-learning events inherit default presentations');
 const humanisticMilestones = milestones.filter(
     (milestone) => milestone.storyline && milestone.storyline.id === 'humanistic-cycle'
 );
