@@ -221,7 +221,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation”",
       "zh": "“使用 RNN 编码器—解码器学习短语表示”"

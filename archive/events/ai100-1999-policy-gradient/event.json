@@ -191,7 +191,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Policy Gradient Methods for Reinforcement Learning with Function Approximation”",
       "zh": "“带函数逼近的强化学习策略梯度方法”"

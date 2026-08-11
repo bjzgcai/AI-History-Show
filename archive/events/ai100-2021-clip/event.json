@@ -179,7 +179,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Learning transferable visual models from natural language supervision\"",
       "zh": "\"从自然语言监督中学习可迁移视觉模型\""

@@ -195,7 +195,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Compressing deep neural networks with pruning, trained quantization and Huffman coding\"",
       "zh": "\"用剪枝、训练型量化和霍夫曼编码压缩深度神经网络\""

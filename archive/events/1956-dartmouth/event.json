@@ -195,21 +195,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
-    "resources": {
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
-          "url": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
-          "title": "1956年：人工智能的诞生",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ]
-    },
     "quote": {
       "en": "\"The Dartmouth proposal framed artificial intelligence as a research program: learning and other features of intelligence could, in principle, be described precisely enough for machines to simulate them.\"",
       "zh": "\"达特茅斯提案把人工智能定义为一个可研究的科学计划：学习以及智能的其他特征，原则上可以被精确描述，并由机器加以模拟。\""

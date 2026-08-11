@@ -170,21 +170,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
-    "resources": {
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
-          "url": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
-          "title": "2023AI智能体：70年的梦想",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ]
-    },
     "quote": {
       "en": "\"ReAct and related systems showed how language models could interleave reasoning traces with actions, turning LLMs from text predictors into components of tool-using agents.\"",
       "zh": "\"ReAct 及相关系统展示了语言模型如何交错生成推理轨迹与行动，使 LLM 从文本预测器延伸为可调用工具的智能体组件。\""

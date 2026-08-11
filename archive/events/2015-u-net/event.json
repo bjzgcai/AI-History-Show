@@ -211,7 +211,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"convolutional networks for biomedical image segmentation\"",
       "zh": "\"用于生物医学图像分割的卷积网络\""

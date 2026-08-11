@@ -141,21 +141,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
-    "resources": {
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
-          "url": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
-          "title": "2019AI_Feynman：破解宇宙的密码",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ]
-    },
     "quote": {
       "en": "\"AI Feynman combined neural-network fitting with physics-inspired constraints to recover symbolic equations from data, pointing toward AI-assisted scientific discovery.\"",
       "zh": "\"AI Feynman 将神经网络拟合与受物理启发的约束结合起来，从数据中恢复符号方程，指向 AI 辅助科学发现的路径。\""

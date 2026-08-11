@@ -175,21 +175,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
-    "resources": {
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
-          "url": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
-          "title": "1986：神经网络的复兴与反向传播算法_720p",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ]
-    },
     "quote": {
       "en": "\"Rumelhart, Hinton, and Williams showed that back-propagating errors could train internal representations in multilayer neural networks, making feature learning practical again.\"",
       "zh": "\"鲁梅尔哈特、辛顿和威廉姆斯证明，反向传播误差可以训练多层神经网络的内部表示，使特征学习重新变得可行。\""

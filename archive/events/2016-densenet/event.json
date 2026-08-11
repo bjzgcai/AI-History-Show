@@ -215,21 +215,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
-    "resources": {
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
-          "url": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ]
-    },
     "quote": {
       "en": "\"Densely Connected Convolutional Networks\"",
       "zh": "\"密集连接卷积网络\""

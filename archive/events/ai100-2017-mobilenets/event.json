@@ -190,7 +190,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications”",
       "zh": "“MobileNets：面向移动视觉应用的高效卷积神经网络”"

@@ -207,21 +207,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
-    "resources": {
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
-          "url": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ]
-    },
     "quote": {
       "en": "\"Highly accurate protein structure prediction with AlphaFold\"",
       "zh": "\"使用 AlphaFold 进行高精度蛋白质结构预测\""

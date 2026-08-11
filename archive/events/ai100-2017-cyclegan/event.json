@@ -210,7 +210,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Unpaired image-to-image translation using cycle-consistent adversarial networks\"",
       "zh": "\"使用循环一致对抗网络进行非配对图像到图像转换\""

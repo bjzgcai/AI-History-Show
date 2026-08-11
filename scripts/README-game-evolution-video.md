@@ -1,5 +1,7 @@
 # Game Evolution Video Clips
 
+This tooling is an exception to the audio-only event narration policy: it produces an interactive visual module rather than a general event narration video. The presentation loads `shared/video-player.js` and the generated media lazily only when the module is shown or opened.
+
 Use `scripts/sgf_to_video.py` to turn a Go SGF main line into a fast board-evolution clip for the AI history exhibition.
 
 Minimum MP4 example:

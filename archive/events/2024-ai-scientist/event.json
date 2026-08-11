@@ -168,21 +168,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
-    "resources": {
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
-          "url": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
-          "title": "2024AI科学家：探索发现的新纪元",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ]
-    },
     "quote": {
       "en": "\"The AI Scientist explored an end-to-end research loop in which foundation models generate ideas, run experiments, write papers, and review results, while autonomous labs pushed similar automation into physical experimentation.\"",
       "zh": "\"AI Scientist 探索了由基础模型生成想法、运行实验、撰写论文并评审结果的端到端研究循环；自主实验室则把类似自动化推进到真实物理实验。\""

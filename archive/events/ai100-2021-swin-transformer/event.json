@@ -225,7 +225,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Hierarchical vision Transformer using shifted windows\"",
       "zh": "\"使用移位窗口的层级视觉 Transformer\""

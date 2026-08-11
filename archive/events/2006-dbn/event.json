@@ -208,7 +208,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Layer-wise unsupervised pretraining\"",
       "zh": "\"逐层无监督预训练\""

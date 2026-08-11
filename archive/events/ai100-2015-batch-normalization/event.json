@@ -196,7 +196,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift\"",
       "zh": "\"批归一化：通过减少内部协变量偏移加速深度网络训练\""

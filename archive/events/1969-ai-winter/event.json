@@ -141,21 +141,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
-    "resources": {
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
-          "url": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
-          "title": "1969第一次人工智能寒冬：逻辑谜题如何冰封AI之梦",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ]
-    },
     "quote": {
       "en": "\"Minsky and Papert's Perceptrons became a landmark critique of single-layer perceptrons, sharpening the field's understanding of what simple neural models could and could not represent.\"",
       "zh": "\"明斯基和帕珀特的《感知机》成为对单层感知机的重要批判，促使研究者更清楚地认识简单神经模型能表示什么、不能表示什么。\""

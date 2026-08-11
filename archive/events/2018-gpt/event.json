@@ -290,21 +290,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
-    "resources": {
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
-          "url": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ]
-    },
     "quote": {
       "en": "\"Improving language understanding by generative pre-training\"",
       "zh": "\"通过生成式预训练改进语言理解\""

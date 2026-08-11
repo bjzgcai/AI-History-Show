@@ -709,8 +709,23 @@ console.log('PASS PQ-only quiz course entrance');
 
 assert.match(
     indexHtml,
-    /const shouldUseVideo = isDirectVideoMedia\(videoUrl\)[\s\S]*?canLoadGameEvolutionVideo/,
-    'game evolution images such as GIF files should not be rendered through a video element'
+    /function loadVideoPlayerModule\(\)[\s\S]*?script\.src = 'shared\/video-player\.js'[\s\S]*?const shouldUseVideo = videoPlayer\.isDirectVideoMedia\(videoUrl\)[\s\S]*?videoPlayer\.canLoad/,
+    'game evolution playback should load the shared video module only when it is needed'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /<script[^>]+src=["']shared\/video-player\.js/,
+    'the shared video player must not be loaded eagerly by the initial document'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /<video[^>]+\ssrc=/,
+    'video markup should defer assigning src until the shared player activates it'
+);
+assert.match(
+    indexHtml,
+    /<video[^>]+data-video-src=[\s\S]*?preload="none"/,
+    'video modules should expose lazy source metadata without preloading media'
 );
 assert.match(
     indexHtml,

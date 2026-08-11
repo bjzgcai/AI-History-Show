@@ -170,21 +170,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-    "resources": {
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-          "url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-          "title": "2015高速网络：深度学习中被遗忘的英雄",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ]
-    },
     "quote": {
       "en": "\"Highway Networks used learned gates to regulate information flow, showing that very deep feedforward networks could be trained before residual networks became dominant.\"",
       "zh": "\"高速网络用可学习的门控调节信息流，证明在残差网络成为主流之前，极深的前馈网络也可以被训练。\""

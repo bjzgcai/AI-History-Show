@@ -191,7 +191,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data”",
       "zh": "“条件随机场：用于序列分割与标注的概率模型”"

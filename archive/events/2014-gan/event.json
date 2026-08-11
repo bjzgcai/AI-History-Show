@@ -199,21 +199,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
-    "resources": {
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
-          "url": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ]
-    },
     "quote": {
       "en": "\"Generative adversarial nets\"",
       "zh": "\"生成对抗网络\""

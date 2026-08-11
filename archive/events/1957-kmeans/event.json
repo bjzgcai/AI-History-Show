@@ -173,7 +173,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Assign points, update centroids, repeat\"",
       "zh": "\"分配样本、更新质心、反复迭代\""

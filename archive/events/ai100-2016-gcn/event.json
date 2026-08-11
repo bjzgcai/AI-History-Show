@@ -195,7 +195,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Semi-supervised classification with graph convolutional networks\"",
       "zh": "\"使用图卷积网络进行半监督分类\""

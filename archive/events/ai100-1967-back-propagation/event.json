@@ -212,7 +212,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Learning representations by back-propagating errors\"",
       "zh": "\"通过反向传播误差学习表示\""

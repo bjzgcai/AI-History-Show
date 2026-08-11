@@ -179,7 +179,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"High-resolution image synthesis with latent diffusion models\"",
       "zh": "\"使用潜扩散模型进行高分辨率图像合成\""

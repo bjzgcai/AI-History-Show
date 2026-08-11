@@ -214,7 +214,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Continuous control with deep reinforcement learning\"",
       "zh": "\"使用深度强化学习进行连续控制\""

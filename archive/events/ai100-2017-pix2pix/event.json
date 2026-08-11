@@ -195,7 +195,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Image-to-image translation with conditional adversarial networks\"",
       "zh": "\"使用条件对抗网络进行图像到图像转换\""

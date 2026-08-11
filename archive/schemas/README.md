@@ -138,6 +138,8 @@ Recommended:
 
 Audio assets additionally require `language` and Alibaba Cloud OSS `storage` metadata. Before publication, `path` may be the local production source. Published assets should use the stable HTTPS delivery URL for both `path` and `deliveryUrl`, while `storage.sourcePath` may retain the ignored local upload source used only on a publisher machine. The storage block records `provider`, `bucket`, `objectKey`, `contentType`, and optional cache/public URL settings; it must never contain access credentials.
 
+General event narration is audio-only. Current `defaultPresentation` records should select the Chinese and English audio asset IDs and should not carry the retired `videoUrl` or `resources.videos` fields. This is a content policy rather than a schema prohibition. Independent visual modules may still use video when motion is essential to the demonstration; those modules are loaded lazily through `shared/video-player.js`.
+
 ### `quizzes.json`
 
 Each quiz requires:

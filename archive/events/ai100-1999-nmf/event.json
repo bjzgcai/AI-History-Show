@@ -196,7 +196,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Learning the parts of objects by non-negative matrix factorization\"",
       "zh": "\"通过非负矩阵分解学习物体部件\""

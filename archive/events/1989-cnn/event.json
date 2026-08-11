@@ -186,21 +186,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
-    "resources": {
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
-          "url": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ]
-    },
     "quote": {
       "en": "\"Backpropagation Applied to Handwritten Zip Code Recognition\"",
       "zh": "\"反向传播应用于手写邮编识别\""

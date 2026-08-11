@@ -307,12 +307,41 @@ assert.ok(
 );
 for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'events'), { withFileTypes: true })) {
     if (!eventEntry.isDirectory()) continue;
+    const eventPath = path.join(__dirname, '..', 'archive', 'events', eventEntry.name, 'event.json');
+    const event = JSON.parse(fs.readFileSync(eventPath, 'utf8'));
+    const defaultPresentation = event.defaultPresentation || {};
+    assert.equal(
+        Object.hasOwn(defaultPresentation, 'videoUrl'),
+        false,
+        `${eventEntry.name} should use narration audio instead of a legacy event video URL`
+    );
+    assert.equal(
+        Boolean(defaultPresentation.resources && Object.hasOwn(defaultPresentation.resources, 'videos')),
+        false,
+        `${eventEntry.name} should not retain legacy event video resources`
+    );
     const variantsDirectory = path.join(__dirname, '..', 'archive', 'events', eventEntry.name, 'variants');
     const variantFiles = fs.existsSync(variantsDirectory)
         ? fs.readdirSync(variantsDirectory).filter((fileName) => fileName.endsWith('.json'))
         : [];
     assert.deepEqual(variantFiles, [], `${eventEntry.name} should not retain variant files`);
 }
+assert.ok(
+    compiledArchive.milestones.every(
+        (milestone) =>
+            !Object.hasOwn(milestone, 'videoUrl') &&
+            !(milestone.resources && Object.hasOwn(milestone.resources, 'videos'))
+    ),
+    'compiled runtime should not contain legacy event video configuration'
+);
+assert.ok(
+    compiledArchive.milestones.every(
+        (milestone) =>
+            Array.isArray(milestone.resources?.audios) &&
+            JSON.stringify(milestone.resources.audios.map((audio) => audio.language)) === JSON.stringify(['zh', 'en'])
+    ),
+    'every compiled milestone should expose Chinese and English narration audio'
+);
 const dartmouthMilestone = compiledArchive.milestones.find(
     (milestone) =>
         milestone.id === 'milestone-1956-dartmouth' && milestone.storyline && milestone.storyline.id === 'deep-learning'

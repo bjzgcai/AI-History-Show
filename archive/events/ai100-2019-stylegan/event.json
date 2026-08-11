@@ -196,7 +196,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"A style-based generator architecture for generative adversarial networks\"",
       "zh": "\"面向生成对抗网络的基于风格的生成器架构\""

@@ -151,6 +151,7 @@ function buildMilestone(root, storyline, ref, figureRegistry, mediaStorageConfig
     const selectedQuiz = variant.quizId ? quizMap.get(variant.quizId) : null;
 
     const imageAssets = selectedAssets.filter((asset) => ['image', 'svg', 'gif'].includes(asset.type));
+    const videoAssets = selectedAssets.filter((asset) => asset.type === 'video');
     const audioAssets = selectedAssets.filter((asset) => asset.type === 'audio');
     const imageMeta = {};
     for (const asset of imageAssets) imageMeta[asset.path] = assetImageMeta(asset);
@@ -201,9 +202,11 @@ function buildMilestone(root, storyline, ref, figureRegistry, mediaStorageConfig
                   }
                 : {}),
             ...(storyline.id === 'humanistic-cycle' ? { imageMeta } : {}),
-            videos: selectedAssets
-                .filter((asset) => asset.type === 'video')
-                .map((asset) => ({ id: asset.id, url: asset.path })),
+            ...(videoAssets.length > 0
+                ? {
+                      videos: videoAssets.map((asset) => ({ id: asset.id, url: asset.path }))
+                  }
+                : {}),
             ...(audioAssets.length > 0
                 ? {
                       audios: audioAssets.map((asset) => {

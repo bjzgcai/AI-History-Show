@@ -162,7 +162,6 @@
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Training language models to follow instructions with human feedback\"",
       "zh": "\"用人类反馈训练语言模型遵循指令\""
