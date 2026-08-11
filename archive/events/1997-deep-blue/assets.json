@@ -273,5 +273,68 @@
       "storyline:bench-council-ai100"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-1997-deep-blue-game-6-video",
+    "type": "video",
+    "path": "resources/videos/game-evolution/1997-deep-blue/deep-blue-kasparov-1997-game-6.mp4",
+    "role": "game-evolution-video",
+    "caption": {
+      "zh": "深蓝对卡斯帕罗夫第 6 局演化视频",
+      "en": "Deep Blue versus Kasparov Game 6 evolution video"
+    },
+    "subcaption": {
+      "zh": "根据三处相符记录原创重绘的 37 个半回合。",
+      "en": "Original redraw of 37 plies matched across three records."
+    },
+    "sourceIds": [
+      "source-deep-blue-game-6-pgn-jwher",
+      "source-deep-blue-game-6-pgn-chess-review",
+      "source-deep-blue-game-6-commons"
+    ],
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目原创棋盘重绘；走子事实来自所列记录，不复用第三方画面。",
+        "en": "Original board redraw by this project; move facts come from the listed records and no third-party frames are reused."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1997-deep-blue-game-6-poster",
+    "type": "image",
+    "path": "resources/images/game-evolution/1997-deep-blue/deep-blue-kasparov-1997-game-6.png",
+    "role": "game-evolution-poster",
+    "caption": {
+      "zh": "深蓝第 6 局第 15 个半回合局面",
+      "en": "Deep Blue Game 6 position after ply 15"
+    },
+    "subcaption": {
+      "zh": "深蓝以 8.Nxe6 发起决定性战术打击后的原创重绘局面。",
+      "en": "Original redraw after Deep Blue's decisive tactical strike 8.Nxe6."
+    },
+    "sourceIds": [
+      "source-deep-blue-game-6-pgn-jwher",
+      "source-deep-blue-game-6-pgn-chess-review"
+    ],
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目原创 PNG 棋盘重绘。",
+        "en": "Original PNG board redraw by this project."
+      }
+    },
+    "displayUsage": {
+      "zh": "作为对局演化视频的延迟加载海报。",
+      "en": "Lazy-loading poster for the game-evolution video."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
   }
 ]

@@ -4563,6 +4563,11 @@
             background: rgba(255, 255, 255, 0.92);
         }
 
+        .bench-video-stage img[hidden],
+        .bench-game-video-fallback[hidden] {
+            display: none;
+        }
+
         .bench-video-badge {
             position: absolute;
             left: 10px;
@@ -5213,6 +5218,20 @@
             font-size: 12px;
             font-weight: 800;
             line-height: 1.28;
+        }
+
+        .ui-game-record-card .bench-paper-demo {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 10px;
+        }
+
+        .ui-game-record-card .bench-game-video-demo {
+            min-height: 0;
+            aspect-ratio: 16 / 9;
+        }
+
+        .ui-game-record-card .bench-game-video-demo video {
+            min-height: 0;
         }
 
         .bench-paper-note strong {
@@ -10932,6 +10951,8 @@
                         fallbackUrl: String(module.fallbackUrl || module.fallback || '').trim(),
                         poster: String(module.poster || module.thumbnail || '').trim(),
                         sourceSgf: String(module.sourceSgf || module.sgf || '').trim(),
+                        recordLabel: String(lx(module.recordLabel || '')).trim(),
+                        recordFormat: String(module.recordFormat || '').trim(),
                         generator: String(module.generator || '').trim(),
                         duration: String(lx(module.duration || '')).trim(),
                         fps: String(module.fps || '').trim()
@@ -12101,11 +12122,12 @@
                 && videoPlayer.isDirectVideoMedia(videoUrl)
                 && await videoPlayer.canLoad(videoUrl, { hasFallback: Boolean(playableImage) });
             if (!shouldUseVideo && !fallbackImageUrl) return;
-            const sourceSgf = String(module.sourceSgf || '').trim();
+            const recordLabel = String(module.recordLabel || module.sourceSgf || '').trim();
+            const recordFormat = String(module.recordFormat || 'game record').trim().toUpperCase();
             const generator = String(module.generator || '').trim();
-            const sourceLine = sourceSgf
-                ? uiText(`Generated from SGF: ${sourceSgf}`, `由 SGF 棋谱生成：${sourceSgf}`)
-                : uiText('Generated from curated game-state data.', '由策展棋局状态数据生成。');
+            const sourceLine = recordLabel
+                ? uiText(`Generated from ${recordFormat}: ${recordLabel}`, `由 ${recordFormat} 对局记录生成：${recordLabel}`)
+                : uiText('Generated from curated game-state data.', '由策展对局状态数据生成。');
             const generatorLine = generator
                 ? uiText(`Renderer: ${generator}`, `生成脚本：${generator}`)
                 : '';
@@ -14118,9 +14140,11 @@
             const title = module.title || getAchievementField(rawMilestone, 'artifact', uiText('Game evolution clip', '棋局演化短片'));
             const poster = module.poster || getGenericDemoImage(rawMilestone);
             const posterAttr = poster ? ` poster="${escapeHtml(poster)}"` : '';
-            const sourceLine = module.sourceSgf
-                ? uiText(`Generated from SGF: ${module.sourceSgf}`, `由 SGF 生成：${module.sourceSgf}`)
-                : (module.description || uiText('Generated from a curated game record.', '由策展棋谱生成。'));
+            const recordFormat = (module.recordFormat || 'game record').toUpperCase();
+            const recordLabel = module.recordLabel || module.sourceSgf;
+            const sourceLine = recordLabel
+                ? uiText(`Generated from ${recordFormat}: ${recordLabel}`, `由 ${recordFormat} 对局记录生成：${recordLabel}`)
+                : (module.description || uiText('Generated from a curated game record.', '由策展对局记录生成。'));
             const interactionLine = uiText(
                 'Scrub or replay the clip to watch the opening compress into a critical midgame state.',
                 '拖动或重放短片，观察开局如何快速压缩到关键中盘。'
@@ -14132,7 +14156,7 @@
                     ${poster ? `<img class="bench-game-video-fallback" src="${escapeHtml(poster)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" hidden>` : ''}
                 </div>
             `, [
-                [uiText('SGF cue', 'SGF 线索'), sourceLine],
+                [uiText('Game record', '对局记录'), sourceLine],
                 [uiText('interaction', '互动点'), interactionLine]
             ]);
         }
@@ -15696,8 +15720,13 @@
         function buildUiSidePanelHtml(raw, vm) {
             const quoteSection = getUiQuoteSummarySection(vm);
             const mediaHtml = buildUiMediaHtml(vm);
+            const gameEvolutionModule = getAchievementGameEvolutionModule(raw);
+            const gameEvolutionHtml = gameEvolutionModule
+                ? buildGameEvolutionVideoDemo(raw, gameEvolutionModule)
+                : '';
             return [
                 buildUiSideSectionHtml('ui-info-card', uiText('Sources', '资料来源'), buildUiSourcesHtml(raw, vm)),
+                buildUiSideSectionHtml('ui-game-record-card', uiText('Game replay', '对局回放'), gameEvolutionHtml),
                 buildUiSideSectionHtml('ui-media-card', uiText('Commentary & Media', '评论与媒体'), mediaHtml),
                 buildUiSideSectionHtml('ui-concepts-card', uiText('Key Concepts', '关键概念'), buildUiConceptsHtml(vm)),
                 buildUiSideSectionHtml('ui-quote-card', uiText('Quote Summary', '引言摘要'), quoteSection ? buildUiSectionCardsHtml([quoteSection], { hiddenLabels: [tx('quoteExcerpt')] }) : ''),
@@ -16074,6 +16103,7 @@
                 </div>
             `;
             hydratePreviewImages(refs.uiBrowserMain);
+            hydrateLazyVideos(refs.uiBrowserMain);
             refs.uiBrowserMain.querySelectorAll('[data-ui-image-index]').forEach((button) => {
                 button.addEventListener('click', () => {
                     const nextImageIndex = Number(button.dataset.uiImageIndex);

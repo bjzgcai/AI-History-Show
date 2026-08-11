@@ -44,6 +44,27 @@ function selectByIds(items, ids) {
     return (ids || []).map((id) => map.get(id)).filter(Boolean);
 }
 
+function resolveVisualModules(modules, assetsById) {
+    return (Array.isArray(modules) ? modules : []).map((module) => {
+        const resolved = cloneJson(module);
+        if (!resolved || resolved.type !== 'gameEvolutionVideo') return resolved;
+
+        const videoAsset = assetsById.get(resolved.videoAssetId);
+        const posterAsset = assetsById.get(resolved.posterAssetId);
+        if (!videoAsset || videoAsset.type !== 'video') {
+            throw new Error(`Missing game evolution video asset: ${resolved.videoAssetId || '<missing>'}`);
+        }
+        if (!posterAsset || !['image', 'svg', 'gif'].includes(posterAsset.type)) {
+            throw new Error(`Missing game evolution poster asset: ${resolved.posterAssetId || '<missing>'}`);
+        }
+        return {
+            ...resolved,
+            url: videoAsset.path,
+            poster: posterAsset.path
+        };
+    });
+}
+
 function isDisplaySource(source) {
     return source && source.id !== 'source-legacy-event-record';
 }
@@ -279,7 +300,12 @@ function buildMilestone(root, storyline, ref, figureRegistry, mediaStorageConfig
         }
     };
 
-    return applyVariantPresentation(milestone, variant);
+    const compiledMilestone = applyVariantPresentation(milestone, variant);
+    compiledMilestone.achievement.visualModules = resolveVisualModules(
+        Array.isArray(variant.visualModules) ? variant.visualModules : compiledMilestone.achievement.visualModules,
+        assetsById
+    );
+    return compiledMilestone;
 }
 
 function loadStorylines(root) {

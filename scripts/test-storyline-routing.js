@@ -744,6 +744,16 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /function buildUiSidePanelHtml\(raw, vm\)[\s\S]*?getAchievementGameEvolutionModule\(raw\)[\s\S]*?buildGameEvolutionVideoDemo[\s\S]*?ui-game-record-card/,
+    'the unified detail sidebar should render configured verified game records'
+);
+assert.match(
+    indexHtml,
+    /\.bench-game-video-fallback\[hidden\]\s*\{\s*display:\s*none/,
+    'a successful game video should not display its poster fallback as a duplicate frame'
+);
+assert.match(
+    indexHtml,
     /function getUiDetailImages\(vm\)[\s\S]*?EventMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
     'detail image lists should always exclude the side-panel architecture or explanation image'
 );

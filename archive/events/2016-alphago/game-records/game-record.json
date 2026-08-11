@@ -1,0 +1,104 @@
+{
+    "schemaVersion": 1,
+    "id": "lee-sedol-alphago-2016-game-2",
+    "eventId": "2016-alphago",
+    "gameType": "go",
+    "title": {
+        "zh": "李世石对 AlphaGo，2016 年第 2 局",
+        "en": "Lee Sedol versus AlphaGo, 2016 Game 2"
+    },
+    "date": "2016-03-10",
+    "round": {
+        "zh": "第 2 局",
+        "en": "Game 2"
+    },
+    "location": {
+        "zh": "韩国首尔",
+        "en": "Seoul, South Korea"
+    },
+    "record": {
+        "path": "lee-sedol-alphago-2016-game-2.sgf",
+        "format": "sgf",
+        "sha256": "f7be0a72be0f5bee3e9a1ed02f948291f84fd99edc8b6475d4a6260bc9d7f809",
+        "moveCount": 211
+    },
+    "players": [
+        {
+            "side": "black",
+            "name": {
+                "zh": "AlphaGo",
+                "en": "AlphaGo"
+            },
+            "kind": "computer"
+        },
+        {
+            "side": "white",
+            "name": {
+                "zh": "李世石",
+                "en": "Lee Sedol"
+            },
+            "kind": "human"
+        }
+    ],
+    "result": {
+        "zh": "AlphaGo 执黑中盘胜",
+        "en": "AlphaGo won as Black by resignation"
+    },
+    "sources": [
+        {
+            "sourceId": "source-alphago-game-2-alphago-games-sgf",
+            "url": "https://www.alphago-games.com/static/games/leesedol/2016.03.10-Lee_Sedol-AlphaGo.sgf",
+            "role": "record",
+            "checkedAt": "2026-08-11",
+            "mainLineSha256": "e0b9582a8449762b2625cc28c605273f5f4bc49ec04d6e7d1b8054af00590cce",
+            "notes": {
+                "zh": "带范麾等人注释的 211 手 SGF；站点自述为爱好者项目，因此不单独作为唯一依据。",
+                "en": "A 211-move SGF with commentary by Fan Hui and others; the site describes itself as fan art, so it is not used as the sole authority."
+            }
+        },
+        {
+            "sourceId": "source-alphago-game-2-gobandroid-sgf",
+            "url": "https://github.com/ligi/gobandroid/blob/1d93a44c8980299bc0fbc146917077e8cc36dffb/android/src/main/assets/sgf_init/review/pro/Lee%20Sedol%20vs%20AlphaGo/2-AlphaGo-vs-Lee-Sedol.sgf",
+            "role": "cross-check",
+            "checkedAt": "2026-08-11",
+            "mainLineSha256": "e0b9582a8449762b2625cc28c605273f5f4bc49ec04d6e7d1b8054af00590cce",
+            "notes": {
+                "zh": "固定提交中的紧凑 SGF；211 手规范化主线与 alphago-games.com 逐手完全一致。",
+                "en": "Compact SGF at a pinned commit; its normalized 211-move main line matches alphago-games.com move for move."
+            }
+        },
+        {
+            "sourceId": "source-alphago-game-2-deepmind-video",
+            "url": "https://www.youtube.com/watch?v=l-GsfyVCBu0",
+            "role": "event-context",
+            "checkedAt": "2026-08-11",
+            "notes": {
+                "zh": "DeepMind 官方第 2 局录像用于核对比赛身份、日期、执子和结果；本地视频不复用转播画面。",
+                "en": "DeepMind's official Game 2 video corroborates the game identity, date, colors and result; no broadcast footage is reused."
+            }
+        }
+    ],
+    "verification": {
+        "status": "verified",
+        "method": {
+            "zh": "使用 sgfmill 选择 SGF 第一主变，比较两个独立托管副本的 211 手规范化主线，并由 DeepMind 官方录像核对比赛身份。",
+            "en": "Use sgfmill to select the first SGF main variation, compare all 211 normalized moves across two independently hosted copies, and corroborate the game identity with DeepMind's official video."
+        },
+        "matchedRecordSources": 2,
+        "mainLineSha256": "e0b9582a8449762b2625cc28c605273f5f4bc49ec04d6e7d1b8054af00590cce"
+    },
+    "render": {
+        "videoPath": "resources/videos/game-evolution/2016-alphago/lee-sedol-alphago-2016-game-2.mp4",
+        "posterPath": "resources/images/game-evolution/2016-alphago/lee-sedol-alphago-2016-game-2.png",
+        "width": 1280,
+        "height": 720,
+        "fps": 24,
+        "durationSeconds": 42,
+        "posterMove": 37,
+        "maxBytes": 5242880
+    },
+    "archive": {
+        "videoAssetId": "asset-2016-alphago-game-2-video",
+        "posterAssetId": "asset-2016-alphago-game-2-poster"
+    }
+}
