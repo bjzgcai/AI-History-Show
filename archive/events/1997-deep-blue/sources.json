@@ -138,5 +138,45 @@
       "en": "The Wikimedia Commons file page identifies the work as CC0 and credits Morn."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-deep-blue-game-6-pgn-jwher",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "深蓝对卡斯帕罗夫第 6 局 PGN 副本",
+      "en": "Deep Blue versus Kasparov Game 6 PGN copy"
+    },
+    "url": "https://github.com/JWHer/jwher.github.io/blob/9c7e8f46aff55d668e91ef27cbb7669ebd6cda38/static/chess/games/kasparov-deep-blue-g6-1997.pgn",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "固定 Git 提交中的完整 PGN；与第二份 PGN 和 CC0 逐手动画交叉核对。",
+      "en": "Complete PGN at a pinned Git commit, cross-checked against a second PGN and the CC0 move animation."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-deep-blue-game-6-pgn-chess-review",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "1997 年深蓝对卡斯帕罗夫第 6 局 PGN 交叉记录",
+      "en": "1997 Deep Blue versus Kasparov Game 6 PGN cross-check"
+    },
+    "url": "https://github.com/tuliopd17/chess-review/blob/8dcb0769ca1424f8056aa75d2f7cfc1de86ca63a/examples/kasparov-deep-blue-1997.pgn",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "独立托管的第二份 PGN；规范化后的 37 个半回合与本地记录完全一致。",
+      "en": "A second independently hosted PGN whose 37 normalized plies exactly match the local record."
+    },
+    "purpose": "bibliographic-verification"
   }
 ]

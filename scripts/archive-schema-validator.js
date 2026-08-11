@@ -11,6 +11,7 @@ const SCHEMA_FILES = [
     'source.schema.json',
     'asset.schema.json',
     'media-storage.schema.json',
+    'game-record.schema.json',
     'quiz.schema.json',
     'variant.schema.json',
     'storyline.schema.json',
@@ -29,6 +30,13 @@ function createArchiveSchemaValidator(root) {
             } catch (_) {
                 return false;
             }
+        }
+    });
+    ajv.addFormat('date', {
+        type: 'string',
+        validate(value) {
+            if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+            return !Number.isNaN(Date.parse(`${value}T00:00:00Z`));
         }
     });
     for (const fileName of SCHEMA_FILES) {

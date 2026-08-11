@@ -1,27 +1,39 @@
 # Game Evolution Video Clips
 
-This tooling is an exception to the audio-only event narration policy: it produces an interactive visual module rather than a general event narration video. The presentation loads `shared/video-player.js` and the generated media lazily only when the module is shown or opened.
+Game-evolution clips are independent visual modules, not general event narration videos. The static site lazily loads the generated MP4 only when a module is shown or opened.
 
-Use `scripts/sgf_to_video.py` to turn a Go SGF main line into a fast board-evolution clip for the AI history exhibition.
+## Authoritative inputs
 
-Minimum MP4 example:
+Each curated sample lives under `archive/events/<event-id>/game-records/`:
 
-```bash
-python scripts/sgf_to_video.py examples/sgf/sample-go-game.sgf resources/videos/game-evolution/sample-go-game.mp4 --duration 60 --fps 30 --title "Sample Go evolution"
-```
+- the PGN, SGF, or Reversi move file contains the playable main line;
+- `game-record.json` records source URLs, verification notes, the raw-file SHA-256, the normalized main-line SHA-256, render settings, and Archive asset IDs;
+- at least two distinct record sources must agree on the normalized main line;
+- videos and posters are original board redraws. Broadcast footage, website screenshots, and publisher figures are not copied.
 
-The script creates the output directory if needed, parses board size and B/W moves from SGF, applies captures, draws each board state, samples the sequence across the requested duration, and writes a high-fps video.
-
-Dependencies:
-
-```bash
-python -m pip install -r requirements-game-video.txt
-```
-
-Quick check without a video encoder:
+Run the Archive-level checks with:
 
 ```bash
-python scripts/sgf_to_video.py examples/sgf/sample-go-game.sgf resources/videos/game-evolution/sample-go-game.gif --duration 6 --fps 8
+npm run validate:game-records
 ```
 
-The AlphaGo game pages at `https://www.alphago-games.com/` are useful references for move-by-move interaction and SGF-style game playback, but local exhibition clips should be generated from SGF files stored in the project or curated source archives.
+## Generate all clips
+
+Create a virtual environment and install the optional offline tooling:
+
+```bash
+python3 -m venv .venv-game-video
+.venv-game-video/bin/pip install -r requirements-game-video.txt
+.venv-game-video/bin/python scripts/game-evolution/render_game_record.py
+```
+
+The renderer uses `python-chess`'s `chess` package for PGN, `sgfmill` for SGF first-main-variation selection, a rule-checked Reversi replay, Pillow for original frames, and ffmpeg for H.264/yuv420p/faststart MP4 output.
+
+Validate the records and existing media without regenerating them:
+
+```bash
+.venv-game-video/bin/python scripts/game-evolution/render_game_record.py --check
+.venv-game-video/bin/python scripts/game-evolution/test_game_record.py
+```
+
+The older `scripts/sgf_to_video.py` remains available for one-off square Go clips. It now also uses `sgfmill`, so annotated SGFs continue through the first main variation instead of stopping at the first branch.

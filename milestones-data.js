@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-11 03:25
+// 生成时间: 2026-08-11 08:28
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 194, errors 0
 
@@ -8495,6 +8495,41 @@ const milestones = [
             "en": "Open article record",
             "zh": "打开论文记录"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "recordId": "deep-blue-kasparov-1997-game-6",
+          "videoAssetId": "asset-1997-deep-blue-game-6-video",
+          "posterAssetId": "asset-1997-deep-blue-game-6-poster",
+          "recordFormat": "pgn",
+          "recordLabel": {
+            "zh": "1997 年人机重赛第 6 局完整 PGN 主线",
+            "en": "Complete PGN main line of the 1997 rematch, Game 6"
+          },
+          "title": {
+            "zh": "深蓝对卡斯帕罗夫第 6 局演化",
+            "en": "Deep Blue versus Kasparov, Game 6 evolution"
+          },
+          "description": {
+            "zh": "依据两份逐手一致的 PGN 副本重绘 37 个半回合，并用第三方逐手动画抽查，展示深蓝如何在决定局中迅速形成战术优势。",
+            "en": "An original redraw of all 37 plies matched across two PGN copies and spot-checked against a third-party move animation, showing how Deep Blue built a rapid tactical advantage in the deciding game."
+          },
+          "license": {
+            "zh": "本地原创棋盘重绘；仅使用可核验的走子事实，不复用转播或第三方画面。",
+            "en": "Original local board redraw using verified move facts only; no broadcast or third-party frames are reused."
+          },
+          "usage": {
+            "zh": "用于 AI 棋牌分支的可拖动对局演示。",
+            "en": "Interactive game replay for the gaming AI storyline."
+          },
+          "duration": {
+            "zh": "28 秒",
+            "en": "28 seconds"
+          },
+          "fps": 24,
+          "generator": "scripts/game-evolution/render_game_record.py",
+          "url": "resources/videos/game-evolution/1997-deep-blue/deep-blue-kasparov-1997-game-6.mp4",
+          "poster": "resources/images/game-evolution/1997-deep-blue/deep-blue-kasparov-1997-game-6.png"
         }
       ],
       "sources": [
@@ -8572,6 +8607,51 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-deep-blue-game-6-pgn-jwher",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "深蓝对卡斯帕罗夫第 6 局 PGN 副本",
+            "en": "Deep Blue versus Kasparov Game 6 PGN copy"
+          },
+          "url": "https://github.com/JWHer/jwher.github.io/blob/9c7e8f46aff55d668e91ef27cbb7669ebd6cda38/static/chess/games/kasparov-deep-blue-g6-1997.pgn",
+          "purpose": "core-evidence",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-deep-blue-game-6-pgn-chess-review",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "1997 年深蓝对卡斯帕罗夫第 6 局 PGN 交叉记录",
+            "en": "1997 Deep Blue versus Kasparov Game 6 PGN cross-check"
+          },
+          "url": "https://github.com/tuliopd17/chess-review/blob/8dcb0769ca1424f8056aa75d2f7cfc1de86ca63a/examples/kasparov-deep-blue-1997.pgn",
+          "purpose": "bibliographic-verification",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-deep-blue-game-6-commons",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局动画",
+            "en": "Deep Blue versus Kasparov, 1997 Game 6 animation"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -8579,7 +8659,10 @@ const milestones = [
         "source-murray-campbell-ibm-research",
         "source-mastering-the-game-computer-history-museum",
         "source-ibm100-deep-blue",
-        "source-feng-hsiung-hsu-chm-portrait"
+        "source-feng-hsiung-hsu-chm-portrait",
+        "source-deep-blue-game-6-pgn-jwher",
+        "source-deep-blue-game-6-pgn-chess-review",
+        "source-deep-blue-game-6-commons"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -56090,6 +56173,41 @@ const milestones = [
             "en": "Open Nature paper",
             "zh": "打开 《自然》 论文"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "recordId": "lee-sedol-alphago-2016-game-2",
+          "videoAssetId": "asset-2016-alphago-game-2-video",
+          "posterAssetId": "asset-2016-alphago-game-2-poster",
+          "recordFormat": "sgf",
+          "recordLabel": {
+            "zh": "两个独立托管副本逐手一致的第 2 局 211 手 SGF 主线",
+            "en": "211-move Game 2 SGF main line matched across two independently hosted copies"
+          },
+          "title": {
+            "zh": "李世石对 AlphaGo 第 2 局演化",
+            "en": "Lee Sedol versus AlphaGo, Game 2 evolution"
+          },
+          "description": {
+            "zh": "以 sgfmill 读取第一主变并原创重绘 211 手，包含 AlphaGo 著名的第 37 手。",
+            "en": "The first main variation is parsed with sgfmill and redrawn across all 211 moves, including AlphaGo's famous move 37."
+          },
+          "license": {
+            "zh": "本地原创棋盘重绘；仅使用经双源核对的走子事实，不复用转播或出版画面。",
+            "en": "Original local board redraw using move facts verified by two sources; no broadcast or publisher imagery is reused."
+          },
+          "usage": {
+            "zh": "用于 AI 棋牌分支的可拖动对局演示。",
+            "en": "Interactive game replay for the gaming AI storyline."
+          },
+          "duration": {
+            "zh": "42 秒",
+            "en": "42 seconds"
+          },
+          "fps": 24,
+          "generator": "scripts/game-evolution/render_game_record.py",
+          "url": "resources/videos/game-evolution/2016-alphago/lee-sedol-alphago-2016-game-2.mp4",
+          "poster": "resources/images/game-evolution/2016-alphago/lee-sedol-alphago-2016-game-2.png"
         }
       ],
       "sources": [
@@ -56152,13 +56270,61 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-alphago-game-2-alphago-games-sgf",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "李世石对 AlphaGo 第 2 局注释 SGF",
+            "en": "Annotated SGF for Lee Sedol versus AlphaGo, Game 2"
+          },
+          "url": "https://www.alphago-games.com/static/games/leesedol/2016.03.10-Lee_Sedol-AlphaGo.sgf",
+          "purpose": "core-evidence",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-alphago-game-2-gobandroid-sgf",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "Gobandroid 保存的 AlphaGo 第 2 局紧凑 SGF",
+            "en": "Compact AlphaGo Game 2 SGF preserved by Gobandroid"
+          },
+          "url": "https://github.com/ligi/gobandroid/blob/1d93a44c8980299bc0fbc146917077e8cc36dffb/android/src/main/assets/sgf_init/review/pro/Lee%20Sedol%20vs%20AlphaGo/2-AlphaGo-vs-Lee-Sedol.sgf",
+          "purpose": "bibliographic-verification",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-alphago-game-2-deepmind-video",
+          "type": {
+            "zh": "官方页面",
+            "en": "Official page"
+          },
+          "label": {
+            "zh": "DeepMind：李世石对 AlphaGo 第 2 局官方录像",
+            "en": "DeepMind: official Lee Sedol versus AlphaGo Game 2 video"
+          },
+          "url": "https://www.youtube.com/watch?v=l-GsfyVCBu0",
+          "purpose": "official-statement",
+          "reliability": "primary",
+          "sourceType": "official-page"
         }
       ],
       "sourceIds": [
         "source-alphago-nature-paper",
         "source-deepmind-alphago-page",
         "source-katago-analysis-engine",
-        "source-david-silver-commons-portrait"
+        "source-david-silver-commons-portrait",
+        "source-alphago-game-2-alphago-games-sgf",
+        "source-alphago-game-2-gobandroid-sgf",
+        "source-alphago-game-2-deepmind-video"
       ],
       "claimIds": [
         "claim-hybrid-policy-value-search",
@@ -68591,14 +68757,14 @@ const milestones = [
             "zh": "《Swin Transformer V2: Scaling Up Capacity and Resolution》"
           },
           "description": {
-            "en": "The official institution page summarizes the scaling problems, techniques, results and implementation link.",
-            "zh": "机构官方页面概述模型扩展问题、技术方法、实验结果和实现链接。"
+            "en": "The official institution page summarizes the scaling problems, three technical responses, model size, high-resolution inputs, benchmark results and implementation link.",
+            "zh": "机构官方页面概述扩展模型时的难题、三项技术应对、模型规模、高分辨率输入、评测结果和实现链接。"
           },
           "url": "https://www.microsoft.com/en-us/research/publication/swin-transformer-v2-scaling-up-capacity-and-resolution/",
           "source": "https://www.microsoft.com/en-us/research/publication/swin-transformer-v2-scaling-up-capacity-and-resolution/",
           "license": {
-            "en": "Reference link only; the local explainer is an original redraw.",
-            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+            "en": "Reference link only; the local explainer is an original redraw and does not copy the paper figure.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘，不复制论文图形。"
           },
           "usage": {
             "en": "Technical and institutional evidence reference",
@@ -69444,14 +69610,14 @@ const milestones = [
             "zh": "《SimMIM: A Simple Framework for Masked Image Modeling》"
           },
           "description": {
-            "en": "The official institution page summarizes the method, results and implementation link.",
-            "zh": "机构官方页面概述方法、实验结果和实现链接。"
+            "en": "The official institution page summarizes the simple masking recipe, raw-pixel target, lightweight head, ImageNet results and billion-parameter scaling experiment.",
+            "zh": "机构官方页面概述简洁遮挡方案、原始像素目标、轻量预测头、ImageNet 结果和十亿参数级扩展实验。"
           },
           "url": "https://www.microsoft.com/en-us/research/publication/simmim-a-simple-framework-for-masked-image-modeling/",
           "source": "https://www.microsoft.com/en-us/research/publication/simmim-a-simple-framework-for-masked-image-modeling/",
           "license": {
-            "en": "Reference link only; the local explainer is an original redraw.",
-            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+            "en": "Reference link only; the local explainer is an original redraw and does not copy the paper figure.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘，不复制论文图形。"
           },
           "usage": {
             "en": "Technical and institutional evidence reference",
@@ -94938,6 +95104,41 @@ const milestones = [
             "en": "Open Nature paper",
             "zh": "打开 《自然》 论文"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "recordId": "lee-sedol-alphago-2016-game-2",
+          "videoAssetId": "asset-2016-alphago-game-2-video",
+          "posterAssetId": "asset-2016-alphago-game-2-poster",
+          "recordFormat": "sgf",
+          "recordLabel": {
+            "zh": "两个独立托管副本逐手一致的第 2 局 211 手 SGF 主线",
+            "en": "211-move Game 2 SGF main line matched across two independently hosted copies"
+          },
+          "title": {
+            "zh": "李世石对 AlphaGo 第 2 局演化",
+            "en": "Lee Sedol versus AlphaGo, Game 2 evolution"
+          },
+          "description": {
+            "zh": "以 sgfmill 读取第一主变并原创重绘 211 手，包含 AlphaGo 著名的第 37 手。",
+            "en": "The first main variation is parsed with sgfmill and redrawn across all 211 moves, including AlphaGo's famous move 37."
+          },
+          "license": {
+            "zh": "本地原创棋盘重绘；仅使用经双源核对的走子事实，不复用转播或出版画面。",
+            "en": "Original local board redraw using move facts verified by two sources; no broadcast or publisher imagery is reused."
+          },
+          "usage": {
+            "zh": "用于 AI 棋牌分支的可拖动对局演示。",
+            "en": "Interactive game replay for the gaming AI storyline."
+          },
+          "duration": {
+            "zh": "42 秒",
+            "en": "42 seconds"
+          },
+          "fps": 24,
+          "generator": "scripts/game-evolution/render_game_record.py",
+          "url": "resources/videos/game-evolution/2016-alphago/lee-sedol-alphago-2016-game-2.mp4",
+          "poster": "resources/images/game-evolution/2016-alphago/lee-sedol-alphago-2016-game-2.png"
         }
       ],
       "sources": [
@@ -95000,13 +95201,61 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-alphago-game-2-alphago-games-sgf",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "李世石对 AlphaGo 第 2 局注释 SGF",
+            "en": "Annotated SGF for Lee Sedol versus AlphaGo, Game 2"
+          },
+          "url": "https://www.alphago-games.com/static/games/leesedol/2016.03.10-Lee_Sedol-AlphaGo.sgf",
+          "purpose": "core-evidence",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-alphago-game-2-gobandroid-sgf",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "Gobandroid 保存的 AlphaGo 第 2 局紧凑 SGF",
+            "en": "Compact AlphaGo Game 2 SGF preserved by Gobandroid"
+          },
+          "url": "https://github.com/ligi/gobandroid/blob/1d93a44c8980299bc0fbc146917077e8cc36dffb/android/src/main/assets/sgf_init/review/pro/Lee%20Sedol%20vs%20AlphaGo/2-AlphaGo-vs-Lee-Sedol.sgf",
+          "purpose": "bibliographic-verification",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-alphago-game-2-deepmind-video",
+          "type": {
+            "zh": "官方页面",
+            "en": "Official page"
+          },
+          "label": {
+            "zh": "DeepMind：李世石对 AlphaGo 第 2 局官方录像",
+            "en": "DeepMind: official Lee Sedol versus AlphaGo Game 2 video"
+          },
+          "url": "https://www.youtube.com/watch?v=l-GsfyVCBu0",
+          "purpose": "official-statement",
+          "reliability": "primary",
+          "sourceType": "official-page"
         }
       ],
       "sourceIds": [
         "source-alphago-nature-paper",
         "source-deepmind-alphago-page",
         "source-katago-analysis-engine",
-        "source-david-silver-commons-portrait"
+        "source-david-silver-commons-portrait",
+        "source-alphago-game-2-alphago-games-sgf",
+        "source-alphago-game-2-gobandroid-sgf",
+        "source-alphago-game-2-deepmind-video"
       ],
       "claimIds": [
         "claim-hybrid-policy-value-search",
@@ -101035,6 +101284,41 @@ const milestones = [
             "en": "Open Nature paper",
             "zh": "打开 《自然》 论文"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "recordId": "lee-sedol-alphago-2016-game-2",
+          "videoAssetId": "asset-2016-alphago-game-2-video",
+          "posterAssetId": "asset-2016-alphago-game-2-poster",
+          "recordFormat": "sgf",
+          "recordLabel": {
+            "zh": "两个独立托管副本逐手一致的第 2 局 211 手 SGF 主线",
+            "en": "211-move Game 2 SGF main line matched across two independently hosted copies"
+          },
+          "title": {
+            "zh": "李世石对 AlphaGo 第 2 局演化",
+            "en": "Lee Sedol versus AlphaGo, Game 2 evolution"
+          },
+          "description": {
+            "zh": "以 sgfmill 读取第一主变并原创重绘 211 手，包含 AlphaGo 著名的第 37 手。",
+            "en": "The first main variation is parsed with sgfmill and redrawn across all 211 moves, including AlphaGo's famous move 37."
+          },
+          "license": {
+            "zh": "本地原创棋盘重绘；仅使用经双源核对的走子事实，不复用转播或出版画面。",
+            "en": "Original local board redraw using move facts verified by two sources; no broadcast or publisher imagery is reused."
+          },
+          "usage": {
+            "zh": "用于 AI 棋牌分支的可拖动对局演示。",
+            "en": "Interactive game replay for the gaming AI storyline."
+          },
+          "duration": {
+            "zh": "42 秒",
+            "en": "42 seconds"
+          },
+          "fps": 24,
+          "generator": "scripts/game-evolution/render_game_record.py",
+          "url": "resources/videos/game-evolution/2016-alphago/lee-sedol-alphago-2016-game-2.mp4",
+          "poster": "resources/images/game-evolution/2016-alphago/lee-sedol-alphago-2016-game-2.png"
         }
       ],
       "sources": [
@@ -101097,13 +101381,61 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-alphago-game-2-alphago-games-sgf",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "李世石对 AlphaGo 第 2 局注释 SGF",
+            "en": "Annotated SGF for Lee Sedol versus AlphaGo, Game 2"
+          },
+          "url": "https://www.alphago-games.com/static/games/leesedol/2016.03.10-Lee_Sedol-AlphaGo.sgf",
+          "purpose": "core-evidence",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-alphago-game-2-gobandroid-sgf",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "Gobandroid 保存的 AlphaGo 第 2 局紧凑 SGF",
+            "en": "Compact AlphaGo Game 2 SGF preserved by Gobandroid"
+          },
+          "url": "https://github.com/ligi/gobandroid/blob/1d93a44c8980299bc0fbc146917077e8cc36dffb/android/src/main/assets/sgf_init/review/pro/Lee%20Sedol%20vs%20AlphaGo/2-AlphaGo-vs-Lee-Sedol.sgf",
+          "purpose": "bibliographic-verification",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-alphago-game-2-deepmind-video",
+          "type": {
+            "zh": "官方页面",
+            "en": "Official page"
+          },
+          "label": {
+            "zh": "DeepMind：李世石对 AlphaGo 第 2 局官方录像",
+            "en": "DeepMind: official Lee Sedol versus AlphaGo Game 2 video"
+          },
+          "url": "https://www.youtube.com/watch?v=l-GsfyVCBu0",
+          "purpose": "official-statement",
+          "reliability": "primary",
+          "sourceType": "official-page"
         }
       ],
       "sourceIds": [
         "source-alphago-nature-paper",
         "source-deepmind-alphago-page",
         "source-katago-analysis-engine",
-        "source-david-silver-commons-portrait"
+        "source-david-silver-commons-portrait",
+        "source-alphago-game-2-alphago-games-sgf",
+        "source-alphago-game-2-gobandroid-sgf",
+        "source-alphago-game-2-deepmind-video"
       ],
       "claimIds": [
         "claim-hybrid-policy-value-search",
@@ -102672,6 +103004,41 @@ const milestones = [
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "recordId": "logistello-murakami-1997-game-1",
+          "videoAssetId": "asset-1997-logistello-game-1-video",
+          "posterAssetId": "asset-1997-logistello-game-1-poster",
+          "recordFormat": "reversi-moves",
+          "recordLabel": {
+            "zh": "官方编号棋盘与程序日志核对后的 60 手主线",
+            "en": "60-move main line verified against the official numbered board and program log"
+          },
+          "title": {
+            "zh": "Logistello 对村上健第 1 局演化",
+            "en": "Logistello versus Takeshi Murakami, Game 1 evolution"
+          },
+          "description": {
+            "zh": "按黑白棋规则重放完整 60 手，终局得到村上健 16 子、Logistello 48 子。",
+            "en": "A legal replay of all 60 moves, ending with Takeshi Murakami on 16 discs and Logistello on 48."
+          },
+          "license": {
+            "zh": "本地原创棋盘重绘；提取官方档案中的走子事实，不复制网页棋盘图或截图。",
+            "en": "Original local board redraw using move facts from the official archive; no web-board graphics or screenshots are copied."
+          },
+          "usage": {
+            "zh": "用于 AI 棋牌分支的可拖动对局演示。",
+            "en": "Interactive game replay for the gaming AI storyline."
+          },
+          "duration": {
+            "zh": "32 秒",
+            "en": "32 seconds"
+          },
+          "fps": 24,
+          "generator": "scripts/game-evolution/render_game_record.py",
+          "url": "resources/videos/game-evolution/1997-logistello/logistello-murakami-1997-game-1.mp4",
+          "poster": "resources/images/game-evolution/1997-logistello/logistello-murakami-1997-game-1.png"
         }
       ],
       "sources": [
@@ -102764,6 +103131,36 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "archive"
+        },
+        {
+          "id": "source-logistello-game-1-official-record",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "村上健对 Logistello 第 1 局官方编号棋盘",
+            "en": "Official numbered board for Murakami versus Logistello, Game 1"
+          },
+          "url": "https://skatgame.net/mburo/game1.html",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-logistello-game-1-official-log",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "Logistello 第 1 局官方程序日志",
+            "en": "Official Logistello Game 1 program log"
+          },
+          "url": "https://skatgame.net/mburo/match/out1",
+          "purpose": "bibliographic-verification",
+          "reliability": "primary",
+          "sourceType": "archive"
         }
       ],
       "sourceIds": [
@@ -102772,7 +103169,9 @@ const milestones = [
         "source-murakami-vs-logistello",
         "source-statistical-feature-combination",
         "source-michael-buro-publications",
-        "source-logistello-game-1-positions"
+        "source-logistello-game-1-positions",
+        "source-logistello-game-1-official-record",
+        "source-logistello-game-1-official-log"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -103439,6 +103838,41 @@ const milestones = [
             "en": "Open article record",
             "zh": "打开论文记录"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "recordId": "deep-blue-kasparov-1997-game-6",
+          "videoAssetId": "asset-1997-deep-blue-game-6-video",
+          "posterAssetId": "asset-1997-deep-blue-game-6-poster",
+          "recordFormat": "pgn",
+          "recordLabel": {
+            "zh": "1997 年人机重赛第 6 局完整 PGN 主线",
+            "en": "Complete PGN main line of the 1997 rematch, Game 6"
+          },
+          "title": {
+            "zh": "深蓝对卡斯帕罗夫第 6 局演化",
+            "en": "Deep Blue versus Kasparov, Game 6 evolution"
+          },
+          "description": {
+            "zh": "依据两份逐手一致的 PGN 副本重绘 37 个半回合，并用第三方逐手动画抽查，展示深蓝如何在决定局中迅速形成战术优势。",
+            "en": "An original redraw of all 37 plies matched across two PGN copies and spot-checked against a third-party move animation, showing how Deep Blue built a rapid tactical advantage in the deciding game."
+          },
+          "license": {
+            "zh": "本地原创棋盘重绘；仅使用可核验的走子事实，不复用转播或第三方画面。",
+            "en": "Original local board redraw using verified move facts only; no broadcast or third-party frames are reused."
+          },
+          "usage": {
+            "zh": "用于 AI 棋牌分支的可拖动对局演示。",
+            "en": "Interactive game replay for the gaming AI storyline."
+          },
+          "duration": {
+            "zh": "28 秒",
+            "en": "28 seconds"
+          },
+          "fps": 24,
+          "generator": "scripts/game-evolution/render_game_record.py",
+          "url": "resources/videos/game-evolution/1997-deep-blue/deep-blue-kasparov-1997-game-6.mp4",
+          "poster": "resources/images/game-evolution/1997-deep-blue/deep-blue-kasparov-1997-game-6.png"
         }
       ],
       "sources": [
@@ -103516,6 +103950,51 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-deep-blue-game-6-pgn-jwher",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "深蓝对卡斯帕罗夫第 6 局 PGN 副本",
+            "en": "Deep Blue versus Kasparov Game 6 PGN copy"
+          },
+          "url": "https://github.com/JWHer/jwher.github.io/blob/9c7e8f46aff55d668e91ef27cbb7669ebd6cda38/static/chess/games/kasparov-deep-blue-g6-1997.pgn",
+          "purpose": "core-evidence",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-deep-blue-game-6-pgn-chess-review",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "1997 年深蓝对卡斯帕罗夫第 6 局 PGN 交叉记录",
+            "en": "1997 Deep Blue versus Kasparov Game 6 PGN cross-check"
+          },
+          "url": "https://github.com/tuliopd17/chess-review/blob/8dcb0769ca1424f8056aa75d2f7cfc1de86ca63a/examples/kasparov-deep-blue-1997.pgn",
+          "purpose": "bibliographic-verification",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-deep-blue-game-6-commons",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局动画",
+            "en": "Deep Blue versus Kasparov, 1997 Game 6 animation"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -103523,7 +104002,10 @@ const milestones = [
         "source-murray-campbell-ibm-research",
         "source-mastering-the-game-computer-history-museum",
         "source-ibm100-deep-blue",
-        "source-feng-hsiung-hsu-chm-portrait"
+        "source-feng-hsiung-hsu-chm-portrait",
+        "source-deep-blue-game-6-pgn-jwher",
+        "source-deep-blue-game-6-pgn-chess-review",
+        "source-deep-blue-game-6-commons"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
