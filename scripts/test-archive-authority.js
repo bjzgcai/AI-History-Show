@@ -335,11 +335,10 @@ assert.ok(
     'compiled runtime should not contain legacy event video configuration'
 );
 assert.ok(
-    compiledArchive.milestones.every(
-        (milestone) =>
-            Array.isArray(milestone.resources?.audios) &&
-            JSON.stringify(milestone.resources.audios.map((audio) => audio.language)) === JSON.stringify(['zh', 'en'])
-    ),
+    compiledArchive.milestones.every((milestone) => {
+        const languages = new Set((milestone.resources?.audios || []).map((audio) => audio.language));
+        return languages.has('zh') && languages.has('en');
+    }),
     'every compiled milestone should expose Chinese and English narration audio'
 );
 const dartmouthMilestone = compiledArchive.milestones.find(

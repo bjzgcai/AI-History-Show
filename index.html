@@ -9267,6 +9267,7 @@
             });
         }
         let videoPlayerModulePromise = null;
+        let inlineMediaRequestId = 0;
 
         function loadVideoPlayerModule() {
             if (window.VideoPlayer) return Promise.resolve(window.VideoPlayer);
@@ -12082,7 +12083,10 @@
             const raw = vm && vm.raw ? vm.raw : {};
             const module = getAchievementGameEvolutionModule(raw);
             if (!module) return;
-            const videoPlayer = await loadVideoPlayerModule();
+            let videoPlayer = null;
+            try {
+                videoPlayer = await loadVideoPlayerModule();
+            } catch (_) {}
 
             const returnFocus = document.activeElement;
             const title = module.title || vm.title || uiText('Game evolution video', '棋局演化视频');
@@ -12090,9 +12094,13 @@
             const fallbackUrl = String(module.fallbackUrl || '').trim();
             const poster = String(module.poster || '').trim();
             const playableImage = fallbackUrl || poster;
-            const fallbackImageUrl = videoPlayer.appendPlaybackRestartToken(playableImage);
-            const shouldUseVideo = videoPlayer.isDirectVideoMedia(videoUrl)
+            const fallbackImageUrl = videoPlayer
+                ? videoPlayer.appendPlaybackRestartToken(playableImage)
+                : playableImage;
+            const shouldUseVideo = Boolean(videoPlayer)
+                && videoPlayer.isDirectVideoMedia(videoUrl)
                 && await videoPlayer.canLoad(videoUrl, { hasFallback: Boolean(playableImage) });
+            if (!shouldUseVideo && !fallbackImageUrl) return;
             const sourceSgf = String(module.sourceSgf || '').trim();
             const generator = String(module.generator || '').trim();
             const sourceLine = sourceSgf
@@ -12123,12 +12131,12 @@
 
             const closeButton = viewer.querySelector('.close-viewer');
             const video = viewer.querySelector('.game-evolution-player');
-            if (video) {
+            if (video && videoPlayer) {
                 videoPlayer.activate(video, { autoplay: true, restart: true });
             }
 
             const closeViewer = () => {
-                if (video) videoPlayer.unload(video);
+                if (video && videoPlayer) videoPlayer.unload(video);
                 viewer.remove();
                 if (returnFocus && typeof returnFocus.focus === 'function') {
                     returnFocus.focus();
@@ -12202,7 +12210,7 @@
                     event.stopPropagation();
                     const index = Number(button.dataset.branchVideoIndex || -1);
                     if (!Number.isInteger(index) || index < 0) return;
-                    openGameEvolutionVideo(getVm(index));
+                    openGameEvolutionVideo(getVm(index)).catch(() => {});
                 });
             });
         }
@@ -13342,14 +13350,33 @@
         }
 
         function resetInlineMedia() {
+            inlineMediaRequestId += 1;
             if (window.VideoPlayer) window.VideoPlayer.resetContainer(refs.videoFrame);
         }
 
+        function bindInlineMediaPlayback(url) {
+            refs.videoFrame.onclick = url ? () => playInlineVideo(url).catch(() => {}) : null;
+        }
+
         async function playInlineVideo(url) {
-            if (!url) return;
+            const expectedUrl = String(url || '').trim();
+            if (!expectedUrl) return;
+            const requestId = ++inlineMediaRequestId;
             refs.videoFrame.onclick = null;
-            const videoPlayer = await loadVideoPlayerModule();
-            videoPlayer.playInContainer(refs.videoFrame, url, { autoplay: true });
+            try {
+                const videoPlayer = await loadVideoPlayerModule();
+                if (
+                    requestId !== inlineMediaRequestId
+                    || refs.videoFrame.dataset.videoUrl !== expectedUrl
+                ) return;
+                videoPlayer.playInContainer(refs.videoFrame, expectedUrl, { autoplay: true });
+            } catch (error) {
+                if (
+                    requestId === inlineMediaRequestId
+                    && refs.videoFrame.dataset.videoUrl === expectedUrl
+                ) bindInlineMediaPlayback(expectedUrl);
+                throw error;
+            }
         }
 
         function getQuizItems(vm) {
@@ -13758,7 +13785,7 @@
             refs.videoFrame.classList.toggle('has-video-data', Boolean(vm.videoEmbedUrl));
             refs.videoFrame.classList.toggle('empty', !vm.videoEmbedUrl);
             refs.videoFrame.dataset.videoUrl = vm.videoEmbedUrl || '';
-            refs.videoFrame.onclick = vm.videoEmbedUrl ? () => playInlineVideo(vm.videoEmbedUrl).catch(() => {}) : null;
+            bindInlineMediaPlayback(vm.videoEmbedUrl);
             refs.videoFrame.title = vm.videoEmbedUrl ? tx('playVideo') : tx('noMedia');
             resetInlineMedia();
 

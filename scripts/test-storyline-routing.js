@@ -709,8 +709,23 @@ console.log('PASS PQ-only quiz course entrance');
 
 assert.match(
     indexHtml,
-    /function loadVideoPlayerModule\(\)[\s\S]*?script\.src = 'shared\/video-player\.js'[\s\S]*?const shouldUseVideo = videoPlayer\.isDirectVideoMedia\(videoUrl\)[\s\S]*?videoPlayer\.canLoad/,
+    /function loadVideoPlayerModule\(\)[\s\S]*?script\.src = 'shared\/video-player\.js'[\s\S]*?const shouldUseVideo = Boolean\(videoPlayer\)[\s\S]*?videoPlayer\.isDirectVideoMedia\(videoUrl\)[\s\S]*?videoPlayer\.canLoad/,
     'game evolution playback should load the shared video module only when it is needed'
+);
+assert.match(
+    indexHtml,
+    /async function openGameEvolutionVideo\(vm\)[\s\S]*?let videoPlayer = null[\s\S]*?videoPlayer = await loadVideoPlayerModule\(\)[\s\S]*?const fallbackImageUrl = videoPlayer[\s\S]*?: playableImage[\s\S]*?if \(!shouldUseVideo && !fallbackImageUrl\) return/,
+    'game evolution playback should retain its image fallback when the lazy player module is unavailable'
+);
+assert.match(
+    indexHtml,
+    /let inlineMediaRequestId = 0[\s\S]*?function resetInlineMedia\(\)[\s\S]*?inlineMediaRequestId \+= 1[\s\S]*?const requestId = \+\+inlineMediaRequestId[\s\S]*?requestId !== inlineMediaRequestId[\s\S]*?refs\.videoFrame\.dataset\.videoUrl !== expectedUrl/,
+    'inline playback should discard a pending request after the active event changes'
+);
+assert.match(
+    indexHtml,
+    /catch \(error\) \{[\s\S]*?requestId === inlineMediaRequestId[\s\S]*?bindInlineMediaPlayback\(expectedUrl\)[\s\S]*?throw error/,
+    'inline playback should restore its click handler after a lazy module load failure'
 );
 assert.doesNotMatch(
     indexHtml,
