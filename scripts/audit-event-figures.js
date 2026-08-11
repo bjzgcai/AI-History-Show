@@ -4,11 +4,13 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
+const { resolveEffectivePresentation } = require('./archive-presentation');
 const { isAssetSelectionExcluded, isGroupPersonAsset, isPersonAsset } = require('./event-figure-rules');
 const { loadFigureRegistry, resolveFigureRelations } = require('./figure-registry');
 
 const ROOT = path.join(__dirname, '..');
 const EVENTS_DIR = path.join(ROOT, 'archive', 'events');
+const STORYLINES_DIR = path.join(ROOT, 'archive', 'storylines');
 const MACHINE_REPORT_DIR = path.join(ROOT, '.tmp', 'archive-reports');
 const REPORT_JSON = path.join(MACHINE_REPORT_DIR, 'event-figure-audit.json');
 const REPORT_MD = path.join(MACHINE_REPORT_DIR, 'event-figure-audit.md');
@@ -53,21 +55,37 @@ function isPortraitAsset(asset) {
     );
 }
 
-function listVariantFiles(eventDir) {
-    const variantsDir = path.join(eventDir, 'variants');
-    if (!fs.existsSync(variantsDir)) return [];
+function listEffectivePresentations(eventId, eventDir, event) {
+    if (!fs.existsSync(STORYLINES_DIR)) return [];
     return fs
-        .readdirSync(variantsDir)
+        .readdirSync(STORYLINES_DIR)
         .filter((file) => file.endsWith('.json'))
         .sort()
-        .map((file) => ({ file, data: readJson(path.join(variantsDir, file)) }));
+        .flatMap((file) => {
+            const storyline = readJson(path.join(STORYLINES_DIR, file));
+            return (storyline.events || [])
+                .filter((ref) => ref && ref.enabled !== false && ref.eventId === eventId)
+                .map((ref) => ({
+                    file: ref.variant
+                        ? `variants/${ref.variant}.json`
+                        : `event.json#defaultPresentation/${storyline.id}`,
+                    data: resolveEffectivePresentation({
+                        root: ROOT,
+                        eventDir,
+                        event,
+                        eventId,
+                        storylineId: storyline.id,
+                        ref
+                    }).presentation
+                }));
+        });
 }
 
 function auditEvent(eventId) {
     const eventDir = path.join(EVENTS_DIR, eventId);
     const event = readJson(path.join(eventDir, 'event.json'));
     const assets = readJson(path.join(eventDir, 'assets.json'));
-    const variants = listVariantFiles(eventDir);
+    const variants = listEffectivePresentations(eventId, eventDir, event);
     const variantFigureIds = variants.flatMap(({ data }) =>
         (Array.isArray(data.figures) ? data.figures : []).map((relation) => relation.figureId).filter(Boolean)
     );

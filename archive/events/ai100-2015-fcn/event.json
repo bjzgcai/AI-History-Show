@@ -66,5 +66,325 @@
       "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
       "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "en": "Fully Convolutional Networks",
+      "zh": "全卷积网络"
+    },
+    "displayDescription": {
+      "en": "<p>Classification CNNs produced one label for an image, while semantic segmentation required a label at every pixel. Fully Convolutional Networks showed how classification networks could be converted into end-to-end dense predictors.</p><p>Fully connected layers are replaced by convolutions so arbitrary-size images produce spatial score maps. Learned upsampling and skip connections combine coarse semantic information with finer spatial detail. Experts generally regard FCN as the template that established modern end-to-end semantic segmentation. Its conversion, upsampling, and skip-fusion ideas became foundations for U-Net, DeepLab, and many dense prediction systems.</p>",
+      "zh": "<p>分类 CNN 为整张图像输出一个标签，而语义分割要求每个像素都有标签。全卷积网络展示了如何把分类网络转换为端到端的稠密预测器。</p><p>全连接层被卷积层替代，使任意尺寸图像都能产生空间得分图。可学习上采样与跳跃连接把粗粒度语义信息和更细的空间细节结合起来。专家通常把 FCN 视为确立现代端到端语义分割范式的模板。其网络转换、上采样和跳跃融合思想成为 U-Net、DeepLab 及众多稠密预测系统的基础。</p>"
+    },
+    "emphasis": [
+      "benchcouncil-canonical-2026-07-30",
+      "source-reviewed"
+    ],
+    "visual": "configuredPaper",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "Fully Convolutional Networks for Semantic Segmentation",
+          "zh": "用于语义分割的全卷积网络"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed Fully Convolutional Networks achievement.",
+          "zh": "BenchCouncil 主表中全卷积网络成就的主要资料。"
+        },
+        "url": "https://arxiv.org/abs/1411.4038",
+        "source": "https://arxiv.org/abs/1411.4038",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-2015-fcn-explainer",
+      "asset-2015-fcn-paper-first-page",
+      "asset-ai100-2015-fcn-audio-zh-original-v1",
+      "asset-ai100-2015-fcn-audio-en-v1"
+    ],
+    "overviewImageAssetId": "asset-2015-fcn-paper-first-page",
+    "sourceIds": [
+      "source-2015-fcn-primary",
+      "source-2015-fcn-secondary",
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "claimIds": [
+      "claim-2015-fcn-membership",
+      "claim-2015-fcn-description"
+    ],
+    "quizId": "ai100-2015-fcn-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Classification CNNs produced one label for an image, while semantic segmentation required a label at every pixel. Fully Convolutional Networks showed how classification networks could be converted into end-to-end dense predictors.",
+          "zh": "分类 CNN 为整张图像输出一个标签，而语义分割要求每个像素都有标签。全卷积网络展示了如何把分类网络转换为端到端的稠密预测器。"
+        },
+        "sourceIds": [
+          "source-2015-fcn-primary",
+          "source-benchcouncil-ai100-catalog"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Fully connected layers are replaced by convolutions so arbitrary-size images produce spatial score maps. Learned upsampling and skip connections combine coarse semantic information with finer spatial detail.",
+          "zh": "全连接层被卷积层替代，使任意尺寸图像都能产生空间得分图。可学习上采样与跳跃连接把粗粒度语义信息和更细的空间细节结合起来。"
+        },
+        "sourceIds": [
+          "source-2015-fcn-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally regard FCN as the template that established modern end-to-end semantic segmentation. Its conversion, upsampling, and skip-fusion ideas became foundations for U-Net, DeepLab, and many dense prediction systems.",
+          "zh": "专家通常把 FCN 视为确立现代端到端语义分割范式的模板。其网络转换、上采样和跳跃融合思想成为 U-Net、DeepLab 及众多稠密预测系统的基础。"
+        },
+        "sourceIds": [
+          "source-2015-fcn-primary",
+          "source-2015-fcn-secondary"
+        ]
+      }
+    ],
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "jonathan-long",
+        "role": {
+          "en": "FCN lead author",
+          "zh": "FCN 主要作者"
+        }
+      },
+      {
+        "figureId": "evan-shelhamer",
+        "role": {
+          "en": "FCN co-author",
+          "zh": "FCN 共同作者"
+        }
+      },
+      {
+        "figureId": "trevor-darrell",
+        "role": {
+          "en": "FCN co-author",
+          "zh": "FCN 共同作者"
+        }
+      }
+    ],
+    "photos": [],
+    "quote": {
+      "en": "“Fully Convolutional Networks for Semantic Segmentation”",
+      "zh": "“用于语义分割的全卷积网络”"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Fully Convolutional Networks for Semantic Segmentation",
+        "zh": "用于语义分割的全卷积网络"
+      },
+      "workAuthors": {
+        "en": "See primary publication record",
+        "zh": "见主论文记录"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1411.4038"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>Fully Convolutional Networks for Semantic Segmentation</em>",
+      "zh": "《用于语义分割的全卷积网络》"
+    },
+    "achievement": {
+      "area": {
+        "en": "Semantic Segmentation",
+        "zh": "语义分割"
+      },
+      "method": {
+        "en": "Convolutional score maps with learned upsampling and skip fusion",
+        "zh": "卷积分数图、可学习上采样与跳跃融合"
+      },
+      "artifact": {
+        "en": "End-to-end semantic segmentation network",
+        "zh": "端到端语义分割网络"
+      },
+      "material": {
+        "en": "Fully Convolutional Networks for Semantic Segmentation, companion source, and BenchCouncil catalog record",
+        "zh": "《用于语义分割的全卷积网络》、配套资料与 BenchCouncil 清单记录"
+      },
+      "demo": {
+        "en": "Follow the four stages and compare how changing one stage affects the final end-to-end semantic segmentation network.",
+        "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的端到端语义分割网络。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Stage 1",
+            "zh": "阶段 1"
+          },
+          "text": {
+            "en": "Image",
+            "zh": "图像"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 2",
+            "zh": "阶段 2"
+          },
+          "text": {
+            "en": "Convolutional features",
+            "zh": "卷积特征"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 3",
+            "zh": "阶段 3"
+          },
+          "text": {
+            "en": "Coarse score map",
+            "zh": "粗粒度得分图"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 4",
+            "zh": "阶段 4"
+          },
+          "text": {
+            "en": "Upsampled pixel labels",
+            "zh": "上采样像素标签"
+          }
+        }
+      ],
+      "relatedAchievements": [],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Image",
+          "zh": "图像"
+        },
+        {
+          "en": "Convolutional features",
+          "zh": "卷积特征"
+        },
+        {
+          "en": "Coarse score map",
+          "zh": "粗粒度得分图"
+        },
+        {
+          "en": "Upsampled pixel labels",
+          "zh": "上采样像素标签"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2015-2015-fcn_process.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "BenchCouncil lists Fully Convolutional Networks and cites Fully Convolutional Networks for Semantic Segmentation as a defining publication.",
+            "zh": "BenchCouncil 将全卷积网络列入主表，并把《用于语义分割的全卷积网络》作为代表性资料。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+            "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Primary publication",
+            "zh": "主论文"
+          },
+          "title": {
+            "en": "Fully Convolutional Networks for Semantic Segmentation",
+            "zh": "用于语义分割的全卷积网络"
+          },
+          "description": {
+            "en": "Primary source for the BenchCouncil-listed Fully Convolutional Networks achievement.",
+            "zh": "BenchCouncil 主表中全卷积网络成就的主要资料。"
+          },
+          "url": "https://arxiv.org/abs/1411.4038",
+          "source": "https://arxiv.org/abs/1411.4038",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "UC Berkeley",
+        "zh": "加州大学伯克利分校"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        37.8719,
+        -122.2585
+      ]
+    }
   }
 }

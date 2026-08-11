@@ -51,5 +51,313 @@
       "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
       "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "en": "ID3",
+      "zh": "ID3 决策树"
+    },
+    "displayDescription": {
+      "en": "<p>Rule-based learning needed methods that could induce readable decision structures from examples rather than rely on hand-written rules. ID3 formalized a recursive tree-building procedure around information gain.</p><p>At each node, ID3 selects the attribute that most reduces class entropy and splits the examples by its values. The process repeats until leaves are sufficiently pure or no useful attributes remain. Experts generally regard ID3 as a foundational decision-tree induction algorithm and a major step toward interpretable machine learning. Its entropy-based splitting directly influenced C4.5 and later tree learners.</p>",
+      "zh": "<p>规则学习需要一种能从样本自动归纳可读决策结构的方法，而不是完全依赖手写规则。ID3 围绕信息增益形式化了递归建树过程。</p><p>在每个节点，ID3 选择最能降低类别熵的属性，并按属性取值划分样本。该过程递归进行，直到叶节点足够纯或没有可用属性。专家通常把 ID3 视为决策树归纳的奠基算法，也是可解释机器学习的重要一步。其基于熵的划分方式直接影响了 C4.5 和后续树模型。</p>"
+    },
+    "emphasis": [
+      "benchcouncil-canonical-2026-07-30",
+      "source-reviewed"
+    ],
+    "visual": "configuredPaper",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "Induction of Decision Trees",
+          "zh": "决策树归纳"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed ID3 achievement.",
+          "zh": "BenchCouncil 主表中ID3 决策树成就的主要资料。"
+        },
+        "url": "https://doi.org/10.1007/BF00116251",
+        "source": "https://doi.org/10.1007/BF00116251",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-1986-id3-portrait",
+      "asset-1986-id3-explainer",
+      "asset-1986-id3-paper-figure-3",
+      "asset-ai100-1986-id3-audio-zh-original-v1",
+      "asset-ai100-1986-id3-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-1986-id3-primary",
+      "source-1986-id3-secondary",
+      "source-benchcouncil-ai100-catalog",
+      "source-1986-id3-portrait"
+    ],
+    "claimIds": [
+      "claim-1986-id3-membership",
+      "claim-1986-id3-description"
+    ],
+    "quizId": "ai100-1986-id3-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Rule-based learning needed methods that could induce readable decision structures from examples rather than rely on hand-written rules. ID3 formalized a recursive tree-building procedure around information gain.",
+          "zh": "规则学习需要一种能从样本自动归纳可读决策结构的方法，而不是完全依赖手写规则。ID3 围绕信息增益形式化了递归建树过程。"
+        },
+        "sourceIds": [
+          "source-1986-id3-primary",
+          "source-benchcouncil-ai100-catalog"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "At each node, ID3 selects the attribute that most reduces class entropy and splits the examples by its values. The process repeats until leaves are sufficiently pure or no useful attributes remain.",
+          "zh": "在每个节点，ID3 选择最能降低类别熵的属性，并按属性取值划分样本。该过程递归进行，直到叶节点足够纯或没有可用属性。"
+        },
+        "sourceIds": [
+          "source-1986-id3-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally regard ID3 as a foundational decision-tree induction algorithm and a major step toward interpretable machine learning. Its entropy-based splitting directly influenced C4.5 and later tree learners.",
+          "zh": "专家通常把 ID3 视为决策树归纳的奠基算法，也是可解释机器学习的重要一步。其基于熵的划分方式直接影响了 C4.5 和后续树模型。"
+        },
+        "sourceIds": [
+          "source-1986-id3-primary",
+          "source-1986-id3-secondary"
+        ]
+      }
+    ],
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "ross-quinlan",
+        "role": {
+          "en": "ID3 lead author",
+          "zh": "ID3 主要作者"
+        },
+        "avatarAssetId": "asset-1986-id3-portrait"
+      }
+    ],
+    "photos": [],
+    "quote": {
+      "en": "“Induction of Decision Trees”",
+      "zh": "“决策树归纳”"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Induction of Decision Trees",
+        "zh": "决策树归纳"
+      },
+      "workAuthors": {
+        "en": "See primary publication record",
+        "zh": "见主论文记录"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1007/BF00116251"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>Induction of Decision Trees</em>",
+      "zh": "《决策树归纳》"
+    },
+    "achievement": {
+      "area": {
+        "en": "Decision Trees and Ensemble Learning",
+        "zh": "决策树与集成学习"
+      },
+      "method": {
+        "en": "Greedy information-gain splitting",
+        "zh": "贪心信息增益划分"
+      },
+      "artifact": {
+        "en": "Induced classification tree",
+        "zh": "归纳分类树"
+      },
+      "material": {
+        "en": "Induction of Decision Trees, companion source, and BenchCouncil catalog record",
+        "zh": "《决策树归纳》、配套资料与 BenchCouncil 清单记录"
+      },
+      "demo": {
+        "en": "Follow the four stages and compare how changing one stage affects the final induced classification tree.",
+        "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的归纳分类树。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Stage 1",
+            "zh": "阶段 1"
+          },
+          "text": {
+            "en": "Training examples",
+            "zh": "训练样本"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 2",
+            "zh": "阶段 2"
+          },
+          "text": {
+            "en": "Measure entropy",
+            "zh": "计算熵"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 3",
+            "zh": "阶段 3"
+          },
+          "text": {
+            "en": "Choose best attribute",
+            "zh": "选择最佳属性"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 4",
+            "zh": "阶段 4"
+          },
+          "text": {
+            "en": "Create recursive branches",
+            "zh": "递归生成分支"
+          }
+        }
+      ],
+      "relatedAchievements": [],
+      "relatedRegions": [
+        {
+          "en": "Australia",
+          "zh": "澳大利亚"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Training examples",
+          "zh": "训练样本"
+        },
+        {
+          "en": "Measure entropy",
+          "zh": "计算熵"
+        },
+        {
+          "en": "Choose best attribute",
+          "zh": "选择最佳属性"
+        },
+        {
+          "en": "Create recursive branches",
+          "zh": "递归生成分支"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1986-1986-id3_process.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "BenchCouncil lists ID3 and cites Induction of Decision Trees as a defining publication.",
+            "zh": "BenchCouncil 将ID3 决策树列入主表，并把《决策树归纳》作为代表性资料。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+            "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Primary publication",
+            "zh": "主论文"
+          },
+          "title": {
+            "en": "Induction of Decision Trees",
+            "zh": "决策树归纳"
+          },
+          "description": {
+            "en": "Primary source for the BenchCouncil-listed ID3 achievement.",
+            "zh": "BenchCouncil 主表中ID3 决策树成就的主要资料。"
+          },
+          "url": "https://doi.org/10.1007/BF00116251",
+          "source": "https://doi.org/10.1007/BF00116251",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "New South Wales Institute of Technology",
+        "zh": "新南威尔士理工学院"
+      },
+      "country": {
+        "en": "Australia",
+        "zh": "澳大利亚"
+      },
+      "coordinates": [
+        -33.8688,
+        151.2093
+      ]
+    }
   }
 }

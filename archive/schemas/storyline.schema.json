@@ -24,7 +24,7 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "required": ["eventId", "variant"],
+                "required": ["eventId"],
                 "properties": {
                     "eventId": {
                         "$ref": "shared.schema.json#/$defs/archiveId"

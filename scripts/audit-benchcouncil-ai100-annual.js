@@ -4,6 +4,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
+const { resolveEffectivePresentation } = require('./archive-presentation');
+
 const ROOT = path.resolve(__dirname, '..');
 const STORYLINE_ID = 'bench-council-ai100';
 const STORYLINE_PATH = path.join(ROOT, 'archive', 'storylines', `${STORYLINE_ID}.json`);
@@ -48,21 +50,25 @@ if (JSON.stringify(archiveEventIds) !== JSON.stringify([...expectedIds].sort()))
 
 for (const [index, eventRef] of enabledEvents.entries()) {
     const eventDir = path.join(EVENTS_ROOT, eventRef.eventId);
-    const variantPath = path.join(eventDir, 'variants', `${STORYLINE_ID}.json`);
     const requiredFiles = ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json'];
 
-    if (eventRef.variant !== STORYLINE_ID) failures.push(`${eventRef.eventId}: unexpected variant ${eventRef.variant}`);
+    if (eventRef.variant && eventRef.variant !== STORYLINE_ID) {
+        failures.push(`${eventRef.eventId}: unexpected variant ${eventRef.variant}`);
+    }
     if (eventRef.order !== 1200 + index * 10) failures.push(`${eventRef.eventId}: unexpected order ${eventRef.order}`);
     for (const file of requiredFiles) {
         if (!fs.existsSync(path.join(eventDir, file))) failures.push(`${eventRef.eventId}: missing ${file}`);
     }
-    if (!fs.existsSync(variantPath)) {
-        failures.push(`${eventRef.eventId}: missing storyline variant`);
-        continue;
-    }
 
-    const variant = readJson(variantPath);
-    if (variant.storylineId !== STORYLINE_ID) failures.push(`${eventRef.eventId}: variant storyline mismatch`);
+    const event = readJson(path.join(eventDir, 'event.json'));
+    const variant = resolveEffectivePresentation({
+        root: ROOT,
+        eventDir,
+        event,
+        eventId: eventRef.eventId,
+        storylineId: STORYLINE_ID,
+        ref: eventRef
+    }).presentation;
     if (!variant.quizId) failures.push(`${eventRef.eventId}: missing quiz selection`);
     if (!variant.visual) {
         failures.push(`${eventRef.eventId}: missing achievement visual`);

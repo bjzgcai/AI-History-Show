@@ -2,13 +2,16 @@
 'use strict';
 
 const path = require('node:path');
+const { resolveEffectivePresentation } = require('./archive-presentation');
 const { localized, namesMatch, readJson, splitContributors } = require('./ai100-contributors');
 const { isPersonAsset } = require('./event-figure-rules');
+const { loadFigureRegistry, resolveFigureRelations } = require('./figure-registry');
 
 const ROOT = path.resolve(__dirname, '..');
 const catalog = readJson(path.join(ROOT, 'research', 'benchcouncil-ai100', 'canonical-root-table-2026-07-30.json'));
 const storyline = readJson(path.join(ROOT, 'archive', 'storylines', 'bench-council-ai100.json'));
 const refs = new Map(storyline.events.filter((item) => item.enabled !== false).map((item) => [item.eventId, item]));
+const figureRegistry = loadFigureRegistry(ROOT);
 const failures = [];
 let firstAuthorPortraits = 0;
 let fallbackPortraits = 0;
@@ -22,11 +25,24 @@ for (const item of catalog.items) {
         continue;
     }
     const eventDir = path.join(ROOT, 'archive', 'events', item.eventId);
-    const variant = readJson(path.join(eventDir, 'variants', `${ref.variant}.json`));
+    const event = readJson(path.join(eventDir, 'event.json'));
+    const variant = resolveEffectivePresentation({
+        root: ROOT,
+        eventDir,
+        event,
+        eventId: item.eventId,
+        storylineId: storyline.id,
+        ref
+    }).presentation;
     const assets = readJson(path.join(eventDir, 'assets.json'));
     const assetMap = new Map(assets.map((asset) => [asset.id, asset]));
     const expected = splitContributors(item.contributors);
-    const actual = variant.figures || [];
+    const actual = resolveFigureRelations({
+        eventFigures: event.figures,
+        variantFigures: variant.figures,
+        assets,
+        registry: figureRegistry
+    });
 
     for (let index = 0; index < expected.length; index += 1) {
         const actualName = localized(actual[index] && actual[index].name, 'en');

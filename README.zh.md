@@ -102,6 +102,12 @@ http://localhost:8000/index.html?storyline=humanistic-cycle
 - `index.html` 自适应展厅大屏、桌面和移动端
 - 语言选择保存在 `localStorage` 的 `ai-history-locale` 键中
 
+### 音视频策略
+
+事件讲解统一使用 Archive `assets.json` 选择的中英文音频，正式播放地址由对象存储提供。Archive 默认展示不再保留旧 `videoUrl` 或 `resources.videos` 配置，统一详情页也不展示通用事件讲解视频。
+
+视频能力仅用于棋局演化等独立互动演示模块。播放器位于 `shared/video-player.js`，页面首次需要视频时才加载该脚本；视频进入可视区域或用户触发播放前不会设置真实 `src`，因此普通事件页面不会请求视频文件或视频 metadata。
+
 正式页面始终加载 `milestones-data.js`，失败时回退到同步生成的 `milestones-data-default.js`。页面不支持通过 query 参数切换到其他数据源。
 
 Windows 双屏、Edge app/kiosk、Intel/NVIDIA 合屏和 DisplayFusion 限制见 [DEPLOYMENT.md](DEPLOYMENT.md)。移动端支持范围见 [docs/mobile-responsive-support.md](docs/mobile-responsive-support.md)。

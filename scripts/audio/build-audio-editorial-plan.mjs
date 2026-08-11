@@ -2,10 +2,14 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 import prettier from 'prettier';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+const SCRIPT_PATH = fileURLToPath(import.meta.url);
+const require = createRequire(import.meta.url);
+const { resolveEffectivePresentation } = require('../archive-presentation');
 const ARCHIVE = path.join(ROOT, 'archive');
 const STORYLINES = path.join(ARCHIVE, 'storylines');
 const EVENTS = path.join(ARCHIVE, 'events');
@@ -484,7 +488,11 @@ function getEnabledStorylines() {
         for (const entry of storyline.events || []) {
             if (!entry.enabled) continue;
             const memberships = result.get(entry.eventId) || [];
-            memberships.push({ storylineId: storyline.id, variantId: entry.variant, order: entry.order });
+            memberships.push({
+                storylineId: storyline.id,
+                variantId: entry.variant || storyline.id,
+                order: entry.order
+            });
             result.set(entry.eventId, memberships);
         }
     }
@@ -514,13 +522,16 @@ function primarySourceCount(sources) {
     return sources.filter((source) => primaryTypes.has(source.type)).length;
 }
 
-function auditEvent(eventId, variantId) {
+function auditEvent(eventId, variantId, storylineId, ref = { eventId }) {
     const eventDir = path.join(EVENTS, eventId);
     const eventPath = path.join(eventDir, 'event.json');
     const claimsPath = path.join(eventDir, 'claims.json');
     const sourcesPath = path.join(eventDir, 'sources.json');
     const variantPath = path.join(eventDir, 'variants', `${variantId}.json`);
-    const missingFiles = [eventPath, claimsPath, sourcesPath, variantPath].filter((filePath) => !exists(filePath));
+    const needsVariantFile = Boolean(ref.variant);
+    const missingFiles = [eventPath, claimsPath, sourcesPath, ...(needsVariantFile ? [variantPath] : [])].filter(
+        (filePath) => !exists(filePath)
+    );
 
     if (missingFiles.length) {
         return {
@@ -536,7 +547,14 @@ function auditEvent(eventId, variantId) {
     const event = readJson(eventPath);
     const claims = readJson(claimsPath);
     const sources = readJson(sourcesPath);
-    const variant = readJson(variantPath);
+    const variant = resolveEffectivePresentation({
+        root: ROOT,
+        eventDir,
+        event,
+        eventId,
+        storylineId,
+        ref
+    }).presentation;
     const sourceById = new Map(sources.map((source) => [source.id, source]));
     const claimById = new Map(claims.map((claim) => [claim.id, claim]));
     const selectedSourceIds = unique(variant.sourceIds || []);
@@ -597,12 +615,39 @@ function auditEvent(eventId, variantId) {
     };
 }
 
-function buildEventPlan({ scopeId, entry, sequenceIndex, memberships, ai100MemberSet, assignmentById }) {
-    const eventPath = path.join(EVENTS, entry.eventId, 'event.json');
-    const event = readJson(eventPath);
+export function resolvePresentationAuthority({ scopeId, entry, ai100MemberSet, ai100EntryById }) {
     const overlapsAi100 = ai100MemberSet.has(entry.eventId);
     const styleAuthority = scopeId === GAMING_ID && overlapsAi100 ? AI100_ID : scopeId;
-    const effectiveVariantId = styleAuthority === AI100_ID ? AI100_ID : entry.variant;
+    const authorityEntry =
+        styleAuthority === AI100_ID ? ai100EntryById.get(entry.eventId) || { eventId: entry.eventId } : entry;
+    return {
+        overlapsAi100,
+        styleAuthority,
+        effectiveVariantId: authorityEntry.variant || styleAuthority,
+        presentationRef: {
+            eventId: entry.eventId,
+            ...(authorityEntry.variant ? { variant: authorityEntry.variant } : {})
+        }
+    };
+}
+
+function buildEventPlan({
+    scopeId,
+    entry,
+    sequenceIndex,
+    memberships,
+    ai100MemberSet,
+    ai100EntryById,
+    assignmentById
+}) {
+    const eventPath = path.join(EVENTS, entry.eventId, 'event.json');
+    const event = readJson(eventPath);
+    const { overlapsAi100, styleAuthority, effectiveVariantId, presentationRef } = resolvePresentationAuthority({
+        scopeId,
+        entry,
+        ai100MemberSet,
+        ai100EntryById
+    });
     const editorial = assignmentById.get(entry.eventId);
     if (!editorial) throw new Error(`No editorial assignment for ${scopeId}/${entry.eventId}`);
 
@@ -613,12 +658,13 @@ function buildEventPlan({ scopeId, entry, sequenceIndex, memberships, ai100Membe
         eventId: entry.eventId,
         year: event.year,
         title: event.title,
-        requestedVariantId: entry.variant,
+        requestedVariantId: entry.variant || scopeId,
         effectiveVariantId,
+        presentationRef,
         styleAuthority,
         overlapsAi100,
         storylineMemberships: memberships.get(entry.eventId) || [],
-        audit: auditEvent(entry.eventId, effectiveVariantId),
+        audit: auditEvent(entry.eventId, effectiveVariantId, styleAuthority, presentationRef),
         editorial
     };
 }
@@ -797,6 +843,7 @@ async function main() {
     const memberships = getEnabledStorylines();
     const allAi100Entries = (ai100Storyline.events || []).filter((entry) => entry.enabled);
     const ai100MemberSet = new Set(allAi100Entries.map((entry) => entry.eventId));
+    const ai100EntryById = new Map(allAi100Entries.map((entry) => [entry.eventId, entry]));
     const ai100Entries = selectAi100First40(ai100Storyline);
     const gamingEntries = (gamingStoryline.events || [])
         .map((entry, sourceIndex) => ({ ...entry, sourceIndex }))
@@ -819,6 +866,7 @@ async function main() {
             sequenceIndex: index + 1,
             memberships,
             ai100MemberSet,
+            ai100EntryById,
             assignmentById: ai100AssignmentById
         })
     );
@@ -829,6 +877,7 @@ async function main() {
             sequenceIndex: index + 1,
             memberships,
             ai100MemberSet,
+            ai100EntryById,
             assignmentById: gamingAssignmentById
         })
     );
@@ -872,4 +921,4 @@ async function main() {
     console.log(`Created ${path.relative(ROOT, OUTPUT_MARKDOWN)}`);
 }
 
-await main();
+if (process.argv[1] && path.resolve(process.argv[1]) === SCRIPT_PATH) await main();

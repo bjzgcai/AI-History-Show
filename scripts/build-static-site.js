@@ -69,6 +69,10 @@ function validateBundle() {
         'Bundle is missing shared/milestone-view.js'
     );
     assert.ok(
+        fs.existsSync(path.join(OUTPUT, 'shared', 'video-player.js')),
+        'Bundle is missing shared/video-player.js'
+    );
+    assert.ok(
         fs.existsSync(path.join(OUTPUT, 'shared', 'chronology-overview.js')),
         'Bundle is missing shared/chronology-overview.js'
     );

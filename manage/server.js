@@ -9,6 +9,11 @@ const path = require('node:path');
 const { URL } = require('node:url');
 
 const { createArchiveFigureService } = require('./archive-figure-service');
+const {
+    presentationIdForRef,
+    resolveEffectivePresentation,
+    variantFilePath
+} = require('../scripts/archive-presentation');
 
 const HOST = process.env.HOST || '127.0.0.1';
 const PORT = Number(process.env.PORT || 3001);
@@ -97,6 +102,10 @@ function atomicWrite(filePath, content) {
     }
 }
 
+function readJsonFile(filePath) {
+    return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
 function fileRevision(filePath) {
     return createHash('sha256').update(fs.readFileSync(filePath)).digest('hex');
 }
@@ -179,6 +188,137 @@ function eventUsageById(storylineRecords) {
         }
     }
     return usage;
+}
+
+function eventPresentationTargets(eventId) {
+    const safeEventId = safeArchiveId(eventId, 'archive eventId');
+    const eventDirectory = path.join(ARCHIVE_EVENTS, safeEventId);
+    const eventFile = path.join(eventDirectory, 'event.json');
+    if (!fs.existsSync(eventFile)) throw Object.assign(new Error('Archive event not found'), { statusCode: 404 });
+    const event = readJsonFile(eventFile);
+    return listStorylineRecords()
+        .flatMap(({ id: storylineId, data }) => {
+            const storylineFile = archiveStorylinePath(storylineId);
+            return (data.events || [])
+                .filter((entry) => entry.eventId === safeEventId && entry.enabled !== false && entry.milestoneId)
+                .map((entry) => {
+                    const resolved = resolveEffectivePresentation({
+                        root: ROOT,
+                        eventDir: eventDirectory,
+                        event,
+                        eventId: safeEventId,
+                        storylineId,
+                        ref: entry
+                    });
+                    const overridePath = resolved.overridePath;
+                    const hasOverride = Boolean(overridePath);
+                    return {
+                        storylineId,
+                        storylineTitle: data.title || {},
+                        milestoneId: entry.milestoneId,
+                        refVariant: entry.variant || '',
+                        presentationId: resolved.overrideId || storylineId,
+                        source: hasOverride ? 'override' : 'default',
+                        sourceLabel: hasOverride ? '使用故事线覆盖' : '继承默认展示',
+                        hasDefaultPresentation: resolved.hasDefaultPresentation,
+                        hasOverride,
+                        overrideFile: resolved.overrideFile,
+                        overrideRevision: hasOverride ? fileRevision(overridePath) : '',
+                        storylineRevision: fileRevision(storylineFile),
+                        defaultPresentation: resolved.defaultPresentation,
+                        override: resolved.override,
+                        effectivePresentation: resolved.presentation
+                    };
+                });
+        })
+        .sort((left, right) => left.storylineId.localeCompare(right.storylineId));
+}
+
+function countOtherPresentationReferences(eventId, variantId, currentStorylineId, currentMilestoneId) {
+    let references = 0;
+    for (const { id: storylineId, data } of listStorylineRecords()) {
+        for (const entry of data.events || []) {
+            if (entry.eventId !== eventId || entry.enabled === false) continue;
+            if (storylineId === currentStorylineId && entry.milestoneId === currentMilestoneId) continue;
+            if (presentationIdForRef(entry, storylineId) === variantId) references += 1;
+        }
+    }
+    return references;
+}
+
+function restorePresentationInheritance(body) {
+    const eventId = safeArchiveId(body.eventId, 'archive eventId');
+    const storylineId = safeArchiveId(body.storylineId, 'archive storylineId');
+    const milestoneId = safeArchiveId(body.milestoneId, 'archive milestoneId');
+    const eventDirectory = path.join(ARCHIVE_EVENTS, eventId);
+    const storylineFile = archiveStorylinePath(storylineId);
+    const storylineSource = fs.readFileSync(storylineFile, 'utf8');
+    const storyline = readJsonFile(storylineFile);
+    const membership = (storyline.events || []).find(
+        (entry) => entry.eventId === eventId && entry.milestoneId === milestoneId && entry.enabled !== false
+    );
+    if (!membership) throw Object.assign(new Error('Storyline event membership not found'), { statusCode: 404 });
+
+    const presentationId = presentationIdForRef(membership, storylineId);
+    const overridePath = variantFilePath(eventDirectory, presentationId);
+    const overrideExists = fs.existsSync(overridePath);
+    const changedFiles = [];
+    let clearedStorylineVariant = false;
+    let deletedOverride = false;
+    let keptOverrideDueToReferences = false;
+    const otherReferences = overrideExists
+        ? countOtherPresentationReferences(eventId, presentationId, storylineId, milestoneId)
+        : 0;
+
+    if (membership.variant) assertExpectedRevision(storylineFile, body.expectedStorylineRevision);
+    if (overrideExists) assertExpectedRevision(overridePath, body.expectedOverrideRevision);
+    if (otherReferences > 0 && presentationId === storylineId) {
+        const error = new Error(
+            `覆盖文件 ${presentationId} 仍被其他展示引用，且当前故事线会继续隐式加载该文件，无法恢复继承`
+        );
+        error.statusCode = 409;
+        throw error;
+    }
+
+    const stagedOverridePath = overrideExists && otherReferences === 0 ? `${overridePath}.${randomUUID()}.delete` : '';
+    try {
+        if (stagedOverridePath) fs.renameSync(overridePath, stagedOverridePath);
+        if (membership.variant) {
+            delete membership.variant;
+            atomicWrite(storylineFile, `${JSON.stringify(storyline, null, 2)}\n`);
+            clearedStorylineVariant = true;
+        }
+        if (stagedOverridePath) fs.rmSync(stagedOverridePath);
+    } catch (error) {
+        if (membership.variant === undefined && clearedStorylineVariant) atomicWrite(storylineFile, storylineSource);
+        if (stagedOverridePath && fs.existsSync(stagedOverridePath) && !fs.existsSync(overridePath)) {
+            fs.renameSync(stagedOverridePath, overridePath);
+        }
+        throw error;
+    }
+
+    if (clearedStorylineVariant) {
+        changedFiles.push(path.relative(ROOT, storylineFile).replace(/\\/g, '/'));
+    }
+    if (stagedOverridePath) {
+        changedFiles.push(path.relative(ROOT, overridePath).replace(/\\/g, '/'));
+        deletedOverride = true;
+    } else if (overrideExists) {
+        keptOverrideDueToReferences = true;
+    }
+
+    return {
+        ok: true,
+        eventId,
+        storylineId,
+        milestoneId,
+        presentationId,
+        clearedStorylineVariant,
+        deletedOverride,
+        keptOverrideDueToReferences,
+        changedFiles,
+        targets: eventPresentationTargets(eventId)
+    };
 }
 
 function archiveEventFileList(eventId) {
@@ -310,6 +450,22 @@ const routes = {
     'GET /api/archive/event-display-targets': (_req, res, url) => {
         try {
             sendJson(res, figureService.getEventDisplayTargets(url.searchParams.get('eventId')));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'GET /api/archive/event-presentation-targets': (_req, res, url) => {
+        try {
+            sendJson(res, eventPresentationTargets(url.searchParams.get('eventId')));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/event-presentation-restore-inheritance': async (req, res) => {
+        try {
+            sendJson(res, restorePresentationInheritance(await readJsonBody(req)));
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }

@@ -11,6 +11,7 @@ import {
     loadStorylineEntries
 } from './audio/build-audio-review-page-data.mjs';
 import { writeFrozenJson } from './audio/build-complete-original-revisions.mjs';
+import { resolvePresentationAuthority } from './audio/build-audio-editorial-plan.mjs';
 import { buildWorkflowReport } from './audio/check-audio-workflow-status.mjs';
 import { ROOT, formatCommandFailure, resolveTtsEnvFile } from './audio/lib/audio-revision.mjs';
 
@@ -20,6 +21,32 @@ assert.equal(
     '/tmp/ai-history-tts.env'
 );
 assert.equal(resolveTtsEnvFile('.secrets/tts.env', { TTS_ENV_FILE: '  ' }), path.join(ROOT, '.secrets/tts.env'));
+const overlapAuthority = resolvePresentationAuthority({
+    scopeId: 'gaming-ai',
+    entry: { eventId: '2016-alphago', variant: 'gaming-custom' },
+    ai100MemberSet: new Set(['2016-alphago']),
+    ai100EntryById: new Map([['2016-alphago', { eventId: '2016-alphago', variant: 'ai100-custom' }]])
+});
+assert.deepEqual(overlapAuthority, {
+    overlapsAi100: true,
+    styleAuthority: 'bench-council-ai100',
+    effectiveVariantId: 'ai100-custom',
+    presentationRef: { eventId: '2016-alphago', variant: 'ai100-custom' }
+});
+assert.deepEqual(
+    resolvePresentationAuthority({
+        scopeId: 'gaming-ai',
+        entry: { eventId: '2016-alphago', variant: 'gaming-custom' },
+        ai100MemberSet: new Set(['2016-alphago']),
+        ai100EntryById: new Map()
+    }),
+    {
+        overlapsAi100: true,
+        styleAuthority: 'bench-council-ai100',
+        effectiveVariantId: 'bench-council-ai100',
+        presentationRef: { eventId: '2016-alphago' }
+    }
+);
 assert.equal(
     formatCommandFailure('ffprobe', {
         error: Object.assign(new Error('spawn ffprobe ENOENT'), { code: 'ENOENT' }),

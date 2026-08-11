@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-10 05:59
+// 生成时间: 2026-08-11 03:25
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 194, errors 0
 
@@ -144,7 +144,6 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
         "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1950-turing-test-audio-zh-interact-v1",
@@ -158,7 +157,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1950-turing-test-zh-interact-v1.mp3"
           }
         },
         {
@@ -173,7 +174,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1950-turing-test-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1950-turing-test-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1950-turing-test-en-v1.mp3"
           }
         }
       ],
@@ -535,11 +538,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1950-turing-test/event.json",
-      "variantFile": "archive/events/1950-turing-test/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1950-turing-test/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"I propose to consider the question, 'Can machines think?'\"",
       "zh": "\"我建议考虑这样一个问题：机器能思考吗？\""
@@ -651,7 +653,6 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg",
         "resources/images/bench-council-ai100/explainers/1971-complexity-theory_reduction-map.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1971-complexity-theory-audio-zh-interact-v1",
@@ -665,7 +666,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1971-complexity-theory-zh-interact-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1971-complexity-theory-zh-interact-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1971-complexity-theory-zh-interact-v1.mp3"
           }
         },
         {
@@ -680,7 +683,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1971-complexity-theory-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1971-complexity-theory-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1971-complexity-theory-en-v1.mp3"
           }
         }
       ],
@@ -1022,11 +1027,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1971-complexity-theory/event.json",
-      "variantFile": "archive/events/1971-complexity-theory/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1971-complexity-theory/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"laid the foundations for the theory of NP-Completeness\"",
       "zh": "\"奠定了 NP 完全性理论的基础\""
@@ -1138,7 +1142,6 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
         "resources/images/bench-council-ai100/explainers/1971-vc-theory_generalization.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1971-vc-theory-audio-zh-interact-v1",
@@ -1152,7 +1155,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1971-vc-theory-zh-interact-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1971-vc-theory-zh-interact-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1971-vc-theory-zh-interact-v1.mp3"
           }
         },
         {
@@ -1167,7 +1172,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1971-vc-theory-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1971-vc-theory-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1971-vc-theory-en-v1.mp3"
           }
         }
       ],
@@ -1527,11 +1534,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1971-vc-theory/event.json",
-      "variantFile": "archive/events/1971-vc-theory/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1971-vc-theory/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Statistical learning theory was introduced in the late 1960's.\"",
       "zh": "\"统计学习理论是在 20 世纪 60 年代末提出的。\""
@@ -1659,7 +1665,6 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
         "resources/images/bench-council-ai100/explainers/1956-logic-theorist_proof-search.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1956-logic-theorist-audio-zh-interact-v1",
@@ -1673,7 +1678,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1956-logic-theorist-zh-interact-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1956-logic-theorist-zh-interact-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1956-logic-theorist-zh-interact-v1.mp3"
           }
         },
         {
@@ -1688,7 +1695,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1956-logic-theorist-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1956-logic-theorist-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1956-logic-theorist-en-v1.mp3"
           }
         }
       ],
@@ -2030,11 +2039,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1956-logic-theorist/event.json",
-      "variantFile": "archive/events/1956-logic-theorist/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1956-logic-theorist/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"capable of discovering proofs for theorems in symbolic logic\"",
       "zh": "\"能够发现符号逻辑中定理的证明\""
@@ -2130,7 +2138,6 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg",
         "resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1958-wangs-algorithm-audio-zh-interact-v1",
@@ -2144,7 +2151,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1958-wangs-algorithm-zh-interact-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1958-wangs-algorithm-zh-interact-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1958-wangs-algorithm-zh-interact-v1.mp3"
           }
         },
         {
@@ -2159,7 +2168,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1958-wangs-algorithm-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1958-wangs-algorithm-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1958-wangs-algorithm-en-v1.mp3"
           }
         }
       ],
@@ -2501,11 +2512,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1958-wangs-algorithm/event.json",
-      "variantFile": "archive/events/1958-wangs-algorithm/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1958-wangs-algorithm/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"A proof procedure for the predicate calculus is given\"",
       "zh": "\"给出了一个谓词演算的证明过程\""
@@ -2649,7 +2659,6 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
         "resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1960-davis-putnam-dpll-audio-zh-interact-v1",
@@ -2663,7 +2672,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1960-davis-putnam-dpll-zh-interact-v1.mp3"
           }
         },
         {
@@ -2678,7 +2689,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1960-davis-putnam-dpll-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1960-davis-putnam-dpll-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1960-davis-putnam-dpll-en-v1.mp3"
           }
         }
       ],
@@ -3020,11 +3033,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1960-davis-putnam-dpll/event.json",
-      "variantFile": "archive/events/1960-davis-putnam-dpll/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1960-davis-putnam-dpll/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"a uniform proof procedure for quantification theory is given\"",
       "zh": "\"给出了量词理论的统一证明过程\""
@@ -3121,7 +3133,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1965-resolution-method_clause-refutation.svg",
         "resources/images/bench-council-ai100/explainers/1965-resolution-method_unification-map.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1965-resolution-method-audio-zh-interact-v1",
@@ -3135,7 +3146,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1965-resolution-method-zh-interact-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1965-resolution-method-zh-interact-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1965-resolution-method-zh-interact-v1.mp3"
           }
         },
         {
@@ -3150,7 +3163,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1965-resolution-method-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1965-resolution-method-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1965-resolution-method-en-v1.mp3"
           }
         }
       ],
@@ -3540,11 +3555,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1965-resolution-method/event.json",
-      "variantFile": "archive/events/1965-resolution-method/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1965-resolution-method/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"the resolution principle\"",
       "zh": "\"归结原理\""
@@ -3645,7 +3659,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/1990-otter/otter-3-3-reference-manual-first-page.svg",
       "overviewImageAssetId": "asset-1990-otter-manual-first-page",
-      "videos": [],
       "audios": [
         {
           "id": "asset-1990-otter-audio-zh-interact-v1",
@@ -3659,7 +3672,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1990-otter-zh-interact-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1990-otter-zh-interact-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1990-otter-zh-interact-v1.mp3"
           }
         },
         {
@@ -3674,7 +3689,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1990-otter-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1990-otter-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1990-otter-en-v1.mp3"
           }
         }
       ],
@@ -4113,11 +4130,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1990-otter/event.json",
-      "variantFile": "archive/events/1990-otter/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1990-otter/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Resolution-style proof search made practical\"",
       "zh": "\"让归结式证明搜索变得实用\""
@@ -4213,7 +4229,6 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg",
         "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1958-lisp-audio-zh-interact-v1",
@@ -4227,7 +4242,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1958-lisp-zh-interact-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1958-lisp-zh-interact-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1958-lisp-zh-interact-v1.mp3"
           }
         },
         {
@@ -4242,7 +4259,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1958-lisp-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1958-lisp-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1958-lisp-en-v1.mp3"
           }
         }
       ],
@@ -4566,11 +4585,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1958-lisp/event.json",
-      "variantFile": "archive/events/1958-lisp/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1958-lisp/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Recursive functions of symbolic expressions became a working language for artificial intelligence.\"",
       "zh": "\"符号表达式的递归函数成为人工智能可以实际使用的语言。\""
@@ -4683,7 +4701,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg",
         "resources/images/bench-council-ai100/explainers/1973-prolog_unification-trace.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1973-prolog-audio-zh-interact-v1",
@@ -4697,7 +4714,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1973-prolog-zh-interact-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1973-prolog-zh-interact-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1973-prolog-zh-interact-v1.mp3"
           }
         },
         {
@@ -4712,7 +4731,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1973-prolog-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1973-prolog-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1973-prolog-en-v1.mp3"
           }
         }
       ],
@@ -5102,11 +5123,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1973-prolog/event.json",
-      "variantFile": "archive/events/1973-prolog/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1973-prolog/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"logic programming\"",
       "zh": "\"逻辑程序设计\""
@@ -5207,7 +5227,6 @@ const milestones = [
         "resources/images/bench-council-ai100/papers/1966-eliza_original-source-page-9.jpg",
         "resources/images/bench-council-ai100/supporting/1966-eliza_conversation-reconstruction.png"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1966-eliza-audio-zh-original-v1",
@@ -5221,7 +5240,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1966-eliza-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1966-eliza-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1966-eliza-zh-original-v1.mp3"
           }
         },
         {
@@ -5236,7 +5257,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1966-eliza-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1966-eliza-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1966-eliza-en-v1.mp3"
           }
         }
       ],
@@ -5830,11 +5853,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1966-eliza/event.json",
-      "variantFile": "archive/events/1966-eliza/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1966-eliza/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"communication between man and machine\"",
       "zh": "\"人与机器之间的交流\""
@@ -5931,7 +5953,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg",
         "resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1970-shrdlu-audio-zh-original-v1",
@@ -5945,7 +5966,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1970-shrdlu-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1970-shrdlu-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1970-shrdlu-zh-original-v1.mp3"
           }
         },
         {
@@ -5960,7 +5983,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1970-shrdlu-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1970-shrdlu-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1970-shrdlu-en-v1.mp3"
           }
         }
       ],
@@ -6346,11 +6371,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1970-shrdlu/event.json",
-      "variantFile": "archive/events/1970-shrdlu/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1970-shrdlu/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Blocks-world language understanding\"",
       "zh": "\"积木世界语言理解\""
@@ -6464,7 +6488,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg",
         "resources/images/external/2011-ibm-watson/ibm-watson-jeopardy-demonstration.jpg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2011-ibm-watson-audio-zh-original-v1",
@@ -6478,7 +6501,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2011-ibm-watson-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2011-ibm-watson-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2011-ibm-watson-zh-original-v1.mp3"
           }
         },
         {
@@ -6493,7 +6518,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2011-ibm-watson-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2011-ibm-watson-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2011-ibm-watson-en-v1.mp3"
           }
         }
       ],
@@ -6927,11 +6954,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2011-ibm-watson/event.json",
-      "variantFile": "archive/events/2011-ibm-watson/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2011-ibm-watson/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Generate hypotheses, score evidence, rank answers\"",
       "zh": "\"生成假设、评分证据、排序答案\""
@@ -7030,7 +7056,6 @@ const milestones = [
         "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
         "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1951-strachey-draughts-audio-zh-original-v1",
@@ -7044,7 +7069,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1951-strachey-draughts-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1951-strachey-draughts-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1951-strachey-draughts-zh-original-v1.mp3"
           }
         },
         {
@@ -7059,7 +7086,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1951-strachey-draughts-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1951-strachey-draughts-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1951-strachey-draughts-en-v1.mp3"
           }
         }
       ],
@@ -7529,11 +7558,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1951-strachey-draughts/event.json",
-      "variantFile": "archive/events/1951-strachey-draughts/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1951-strachey-draughts/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Non-numerical programs could play\"",
       "zh": "\"非数值程序也可以对弈\""
@@ -7631,7 +7659,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
         "resources/images/bench-council-ai100/source/1994-chinook_homepage.png"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1994-chinook-audio-zh-original-v1",
@@ -7645,7 +7672,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1994-chinook-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1994-chinook-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1994-chinook-zh-original-v1.mp3"
           }
         },
         {
@@ -7660,7 +7689,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1994-chinook-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1994-chinook-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1994-chinook-en-v1.mp3"
           }
         }
       ],
@@ -8088,11 +8119,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1994-chinook/event.json",
-      "variantFile": "archive/events/1994-chinook/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1994-chinook/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Perfect play in checkers is a draw\"",
       "zh": "\"跳棋完美对弈结果为和棋\""
@@ -8236,9 +8266,9 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg",
-        "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg"
+        "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+        "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1997-deep-blue-audio-zh-original-v1",
@@ -8252,7 +8282,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1997-deep-blue-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1997-deep-blue-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1997-deep-blue-zh-original-v1.mp3"
           }
         },
         {
@@ -8267,7 +8299,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1997-deep-blue-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1997-deep-blue-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1997-deep-blue-en-v1.mp3"
           }
         }
       ],
@@ -8276,6 +8310,7 @@ const milestones = [
         "asset-1997-deep-blue-search-tree",
         "asset-1997-deep-blue-chip-board",
         "asset-1997-deep-blue-murray-campbell",
+        "asset-1997-deep-blue-game-6-animation",
         "asset-1997-deep-blue-audio-zh-original-v1",
         "asset-1997-deep-blue-audio-en-v1"
       ]
@@ -8393,6 +8428,40 @@ const milestones = [
         "figureIds": [
           "murray-campbell"
         ]
+      },
+      "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif": {
+        "caption": {
+          "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局",
+          "en": "Deep Blue versus Kasparov, 1997 Game 6"
+        },
+        "subcaption": {
+          "zh": "逐手重放深蓝赢得重赛的决定局。",
+          "en": "Move-by-move replay of the decisive game in Deep Blue's rematch victory."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+        "license": {
+          "zh": "CC0 公共领域贡献；制作者为 Morn。",
+          "en": "CC0 public-domain dedication; created by Morn."
+        },
+        "usage": {
+          "zh": "用于展示 1997 年深蓝对卡斯帕罗夫第 6 局的实际走子过程。",
+          "en": "Used to show the actual move sequence of Deep Blue versus Kasparov, Game 6, in 1997."
+        },
+        "sourceId": "source-deep-blue-game-6-commons",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC0 公共领域贡献；制作者为 Morn。",
+            "en": "CC0 public-domain dedication; created by Morn."
+          }
+        },
+        "role": "game-record-animation",
+        "type": "gif",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -8722,11 +8791,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1997-deep-blue/event.json",
-      "variantFile": "archive/events/1997-deep-blue/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1997-deep-blue/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Specialized chess search hardware\"",
       "zh": "\"专用国际象棋搜索硬件\""
@@ -8824,7 +8892,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1959-pandemonium_feature-votes.svg",
         "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1959-pandemonium-audio-zh-original-v1",
@@ -8838,7 +8905,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1959-pandemonium-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1959-pandemonium-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1959-pandemonium-zh-original-v1.mp3"
           }
         },
         {
@@ -8853,7 +8922,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1959-pandemonium-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1959-pandemonium-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1959-pandemonium-en-v1.mp3"
           }
         }
       ],
@@ -9281,11 +9352,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1959-pandemonium/event.json",
-      "variantFile": "archive/events/1959-pandemonium/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1959-pandemonium/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Layered feature voters build perception\"",
       "zh": "\"分层特征投票构成感知\""
@@ -9382,7 +9452,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg",
         "resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1974-frame-audio-zh-original-v1",
@@ -9396,7 +9465,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1974-frame-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1974-frame-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1974-frame-zh-original-v1.mp3"
           }
         },
         {
@@ -9411,7 +9482,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1974-frame-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1974-frame-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1974-frame-en-v1.mp3"
           }
         }
       ],
@@ -9797,11 +9870,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1974-frame/event.json",
-      "variantFile": "archive/events/1974-frame/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1974-frame/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Structured slots with defaults and inheritance\"",
       "zh": "\"带默认值和继承的槽结构\""
@@ -9915,7 +9987,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg",
         "resources/images/external/1984-cyc/cyc-related-project-marks.png"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1984-cyc-audio-zh-original-v1",
@@ -9929,7 +10000,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1984-cyc-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1984-cyc-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1984-cyc-zh-original-v1.mp3"
           }
         },
         {
@@ -9944,7 +10017,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1984-cyc-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1984-cyc-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1984-cyc-en-v1.mp3"
           }
         }
       ],
@@ -10372,11 +10447,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1984-cyc/event.json",
-      "variantFile": "archive/events/1984-cyc/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1984-cyc/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Common sense as explicit knowledge\"",
       "zh": "\"把常识显式化为知识\""
@@ -10521,7 +10595,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1965-dendral_mass-spectrum.svg",
         "resources/images/bench-council-ai100/explainers/1965-dendral_rule-filter.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1965-dendral-audio-zh-original-v1",
@@ -10535,7 +10608,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1965-dendral-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1965-dendral-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1965-dendral-zh-original-v1.mp3"
           }
         },
         {
@@ -10550,7 +10625,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1965-dendral-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1965-dendral-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1965-dendral-en-v1.mp3"
           }
         }
       ],
@@ -10933,11 +11010,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1965-dendral/event.json",
-      "variantFile": "archive/events/1965-dendral/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1965-dendral/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Rule-guided chemical structure inference\"",
       "zh": "\"规则引导的化学结构推断\""
@@ -11035,7 +11111,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg",
         "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1980-xcon-r1-audio-zh-original-v1",
@@ -11049,7 +11124,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1980-xcon-r1-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1980-xcon-r1-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1980-xcon-r1-zh-original-v1.mp3"
           }
         },
         {
@@ -11064,7 +11141,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1980-xcon-r1-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1980-xcon-r1-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1980-xcon-r1-en-v1.mp3"
           }
         }
       ],
@@ -11496,11 +11575,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1980-xcon-r1/event.json",
-      "variantFile": "archive/events/1980-xcon-r1/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1980-xcon-r1/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Production rules configured real orders\"",
       "zh": "\"产生式规则配置真实订单\""
@@ -11598,7 +11676,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg",
         "resources/images/external/1957-kmeans/k-means-clustering-of-iris-data.png"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1957-kmeans-audio-zh-original-v1",
@@ -11612,7 +11689,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1957-kmeans-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1957-kmeans-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1957-kmeans-zh-original-v1.mp3"
           }
         },
         {
@@ -11627,7 +11706,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1957-kmeans-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1957-kmeans-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1957-kmeans-en-v1.mp3"
           }
         }
       ],
@@ -12059,11 +12140,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1957-kmeans/event.json",
-      "variantFile": "archive/events/1957-kmeans/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1957-kmeans/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Assign points, update centroids, repeat\"",
       "zh": "\"分配样本、更新质心、反复迭代\""
@@ -12193,7 +12273,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg",
         "resources/images/external/1996-dbscan/dbscan-density-clustering-diagram.png"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1996-dbscan-audio-zh-original-v1",
@@ -12207,7 +12286,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1996-dbscan-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1996-dbscan-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1996-dbscan-zh-original-v1.mp3"
           }
         },
         {
@@ -12222,7 +12303,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1996-dbscan-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1996-dbscan-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1996-dbscan-en-v1.mp3"
           }
         }
       ],
@@ -12656,11 +12739,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1996-dbscan/event.json",
-      "variantFile": "archive/events/1996-dbscan/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1996-dbscan/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Clusters are dense regions separated by sparse noise\"",
       "zh": "\"簇是被稀疏噪声隔开的密集区域\""
@@ -12806,7 +12888,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg",
         "resources/images/external/2000-spectral-clustering/six-node-spectral-clustering-graph.png"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2000-spectral-clustering-audio-zh-original-v1",
@@ -12820,7 +12901,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2000-spectral-clustering-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2000-spectral-clustering-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2000-spectral-clustering-zh-original-v1.mp3"
           }
         },
         {
@@ -12835,7 +12918,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2000-spectral-clustering-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2000-spectral-clustering-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2000-spectral-clustering-en-v1.mp3"
           }
         }
       ],
@@ -13289,11 +13374,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2000-spectral-clustering/event.json",
-      "variantFile": "archive/events/2000-spectral-clustering/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2000-spectral-clustering/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Cut the graph through its spectrum\"",
       "zh": "\"通过图的谱来切分图\""
@@ -13405,7 +13489,6 @@ const milestones = [
         "resources/images/external/ai100-1967-knn/thomas-cover-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1967-knn-audio-zh-original-v1",
@@ -13419,7 +13502,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1967-knn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1967-knn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1967-knn-zh-original-v1.mp3"
           }
         },
         {
@@ -13434,7 +13519,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1967-knn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1967-knn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1967-knn-en-v1.mp3"
           }
         }
       ],
@@ -13845,11 +13932,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1967-knn/event.json",
-      "variantFile": "archive/events/ai100-1967-knn/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1967-knn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Nearest neighbor pattern classification\"",
       "zh": "\"最近邻模式分类\""
@@ -13961,7 +14047,6 @@ const milestones = [
         "resources/images/external/ai100-1970-ridge/arthur-hoerl-and-the-ridge-regression-formula.jpg",
         "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1970-ridge-audio-zh-original-v1",
@@ -13975,7 +14060,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1970-ridge-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1970-ridge-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1970-ridge-zh-original-v1.mp3"
           }
         },
         {
@@ -13990,7 +14077,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1970-ridge-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1970-ridge-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1970-ridge-en-v1.mp3"
           }
         }
       ],
@@ -14385,11 +14474,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1970-ridge/event.json",
-      "variantFile": "archive/events/ai100-1970-ridge/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1970-ridge/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Ridge Regression: Biased Estimation for Nonorthogonal Problems\"",
       "zh": "\"岭回归：非正交问题中的有偏估计\""
@@ -14537,7 +14625,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
       "overviewImageAssetId": "asset-1992-svm-vladimir-vapnik",
-      "videos": [],
       "audios": [
         {
           "id": "asset-1992-svm-audio-zh-original-v1",
@@ -14551,7 +14638,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1992-svm-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1992-svm-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1992-svm-zh-original-v1.mp3"
           }
         },
         {
@@ -14566,7 +14655,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1992-svm-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1992-svm-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1992-svm-en-v1.mp3"
           }
         }
       ],
@@ -14998,11 +15089,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1992-svm/event.json",
-      "variantFile": "archive/events/1992-svm/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1992-svm/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"optimal margin classifiers\"",
       "zh": "\"最优间隔分类器\""
@@ -15099,7 +15189,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg",
         "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1996-lasso-audio-zh-original-v1",
@@ -15113,7 +15202,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1996-lasso-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1996-lasso-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1996-lasso-zh-original-v1.mp3"
           }
         },
         {
@@ -15128,7 +15219,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1996-lasso-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1996-lasso-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1996-lasso-en-v1.mp3"
           }
         }
       ],
@@ -15515,11 +15608,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1996-lasso/event.json",
-      "variantFile": "archive/events/1996-lasso/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1996-lasso/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"regression shrinkage and selection\"",
       "zh": "\"回归收缩与选择\""
@@ -15616,7 +15708,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1999-sift_scale-space.svg",
         "resources/images/bench-council-ai100/explainers/1999-sift_descriptor.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1999-sift-audio-zh-original-v1",
@@ -15630,7 +15721,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1999-sift-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1999-sift-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1999-sift-zh-original-v1.mp3"
           }
         },
         {
@@ -15645,7 +15738,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1999-sift-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1999-sift-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1999-sift-en-v1.mp3"
           }
         }
       ],
@@ -16028,11 +16123,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1999-sift/event.json",
-      "variantFile": "archive/events/1999-sift/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1999-sift/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Scale-invariant local features\"",
       "zh": "\"尺度不变局部特征\""
@@ -16144,7 +16238,6 @@ const milestones = [
         "resources/images/external/ai100-2005-hog/navneet-dalal-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2005-hog-audio-zh-original-v1",
@@ -16158,7 +16251,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2005-hog-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2005-hog-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2005-hog-zh-original-v1.mp3"
           }
         },
         {
@@ -16173,7 +16268,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2005-hog-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2005-hog-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2005-hog-en-v1.mp3"
           }
         }
       ],
@@ -16584,11 +16681,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2005-hog/event.json",
-      "variantFile": "archive/events/ai100-2005-hog/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2005-hog/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Histograms of Oriented Gradients for Human Detection\"",
       "zh": "\"用于人体检测的方向梯度直方图\""
@@ -16716,7 +16812,6 @@ const milestones = [
         "resources/images/external/ai100-2006-surf/herbert-bay-portrait.png",
         "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2006-surf-audio-zh-original-v1",
@@ -16730,7 +16825,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2006-surf-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2006-surf-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2006-surf-zh-original-v1.mp3"
           }
         },
         {
@@ -16745,7 +16842,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2006-surf-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2006-surf-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2006-surf-en-v1.mp3"
           }
         }
       ],
@@ -17140,11 +17239,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2006-surf/event.json",
-      "variantFile": "archive/events/ai100-2006-surf/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2006-surf/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"SURF: Speeded Up Robust Features\"",
       "zh": "\"SURF：加速稳健特征\""
@@ -17256,7 +17354,6 @@ const milestones = [
         "resources/images/external/ai100-1997-kernel-pca/bernhard-scholkopf-portrait.png",
         "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1997-kernel-pca-audio-zh-original-v1",
@@ -17270,7 +17367,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1997-kernel-pca-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1997-kernel-pca-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1997-kernel-pca-zh-original-v1.mp3"
           }
         },
         {
@@ -17285,7 +17384,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1997-kernel-pca-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1997-kernel-pca-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1997-kernel-pca-en-v1.mp3"
           }
         }
       ],
@@ -17680,11 +17781,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1997-kernel-pca/event.json",
-      "variantFile": "archive/events/ai100-1997-kernel-pca/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1997-kernel-pca/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Nonlinear Component Analysis as a Kernel Eigenvalue Problem\"",
       "zh": "\"作为核特征值问题的非线性成分分析\""
@@ -17796,7 +17896,6 @@ const milestones = [
         "resources/images/external/ai100-1999-nmf/h-sebastian-seung-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1999-nmf-audio-zh-original-v1",
@@ -17810,7 +17909,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1999-nmf-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1999-nmf-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1999-nmf-zh-original-v1.mp3"
           }
         },
         {
@@ -17825,7 +17926,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1999-nmf-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1999-nmf-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1999-nmf-en-v1.mp3"
           }
         }
       ],
@@ -18220,11 +18323,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1999-nmf/event.json",
-      "variantFile": "archive/events/ai100-1999-nmf/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1999-nmf/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Learning the parts of objects by non-negative matrix factorization\"",
       "zh": "\"通过非负矩阵分解学习物体部件\""
@@ -18336,7 +18438,6 @@ const milestones = [
         "resources/images/external/ai100-2000-isomap/joshua-tenenbaum-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2000-isomap-audio-zh-original-v1",
@@ -18350,7 +18451,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2000-isomap-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2000-isomap-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2000-isomap-zh-original-v1.mp3"
           }
         },
         {
@@ -18365,7 +18468,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2000-isomap-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2000-isomap-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2000-isomap-en-v1.mp3"
           }
         }
       ],
@@ -18760,11 +18865,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2000-isomap/event.json",
-      "variantFile": "archive/events/ai100-2000-isomap/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2000-isomap/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"A Global Geometric Framework for Nonlinear Dimensionality Reduction\"",
       "zh": "\"非线性降维的全局几何框架\""
@@ -18876,7 +18980,6 @@ const milestones = [
         "resources/images/external/ai100-2000-lle/sam-roweis-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2000-lle-audio-zh-original-v1",
@@ -18890,7 +18993,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2000-lle-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2000-lle-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2000-lle-zh-original-v1.mp3"
           }
         },
         {
@@ -18905,7 +19010,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2000-lle-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2000-lle-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2000-lle-en-v1.mp3"
           }
         }
       ],
@@ -19300,11 +19407,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2000-lle/event.json",
-      "variantFile": "archive/events/ai100-2000-lle/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2000-lle/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Nonlinear Dimensionality Reduction by Locally Linear Embedding\"",
       "zh": "\"通过局部线性嵌入进行非线性降维\""
@@ -19417,7 +19523,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg",
         "resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2008-tsne-audio-zh-original-v1",
@@ -19431,7 +19536,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2008-tsne-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2008-tsne-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2008-tsne-zh-original-v1.mp3"
           }
         },
         {
@@ -19446,7 +19553,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2008-tsne-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2008-tsne-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2008-tsne-en-v1.mp3"
           }
         }
       ],
@@ -19832,11 +19941,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2008-tsne/event.json",
-      "variantFile": "archive/events/2008-tsne/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2008-tsne/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Neighbor-preserving nonlinear embedding\"",
       "zh": "\"保持邻域的非线性嵌入\""
@@ -19948,7 +20056,6 @@ const milestones = [
         "resources/images/external/ai100-1943-mcculloch-pitts-neuron/walter-pitts-at-a-blackboard.jpg",
         "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1943-mcculloch-pitts-neuron-audio-zh-original-v1",
@@ -19962,7 +20069,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1943-mcculloch-pitts-neuron-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1943-mcculloch-pitts-neuron-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1943-mcculloch-pitts-neuron-zh-original-v1.mp3"
           }
         },
         {
@@ -19977,7 +20086,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1943-mcculloch-pitts-neuron-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1943-mcculloch-pitts-neuron-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1943-mcculloch-pitts-neuron-en-v1.mp3"
           }
         }
       ],
@@ -20372,11 +20483,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1943-mcculloch-pitts-neuron/event.json",
-      "variantFile": "archive/events/ai100-1943-mcculloch-pitts-neuron/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1943-mcculloch-pitts-neuron/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"A logical calculus of the ideas immanent in nervous activity\"",
       "zh": "\"神经活动内在观念的逻辑演算\""
@@ -20488,7 +20598,6 @@ const milestones = [
         "resources/images/figures/marvin-minsky.jpg",
         "resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1951-snarc-audio-zh-original-v1",
@@ -20502,7 +20611,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1951-snarc-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1951-snarc-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1951-snarc-zh-original-v1.mp3"
           }
         },
         {
@@ -20517,7 +20628,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1951-snarc-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1951-snarc-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1951-snarc-en-v1.mp3"
           }
         }
       ],
@@ -20938,11 +21051,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1951-snarc/event.json",
-      "variantFile": "archive/events/ai100-1951-snarc/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1951-snarc/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"stochastic neural analog reinforcement calculator\"",
       "zh": "\"随机神经模拟强化计算器\""
@@ -21039,21 +21151,10 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg",
         "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg",
         "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg",
+        "resources/images/figures/frank-rosenblatt.png",
         "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png",
         "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg",
         "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png"
-      ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
-          "url": "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
       ],
       "audios": [
         {
@@ -21068,7 +21169,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1957-perceptron-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1957-perceptron-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1957-perceptron-zh-original-v1.mp3"
           }
         },
         {
@@ -21083,7 +21186,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1957-perceptron-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1957-perceptron-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1957-perceptron-en-v1.mp3"
           }
         }
       ],
@@ -21092,6 +21197,7 @@ const milestones = [
         "asset-1958-rosenblatt-perceptron-threshold",
         "asset-1958-rosenblatt-perceptron-sensor-grid",
         "asset-1957-perceptron-people-01",
+        "asset-1957-perceptron-figure-avatar-frank-rosenblatt",
         "asset-1957-perceptron-papers-01",
         "asset-1957-perceptron-historical-01",
         "asset-1957-perceptron-historical-01-2",
@@ -21199,6 +21305,37 @@ const milestones = [
           }
         },
         "role": "supporting-image",
+        "type": "image",
+        "figureIds": [
+          "frank-rosenblatt"
+        ]
+      },
+      "resources/images/figures/frank-rosenblatt.png": {
+        "caption": {
+          "zh": "弗兰克·罗森布拉特肖像",
+          "en": "Frank Rosenblatt portrait"
+        },
+        "subcaption": {
+          "zh": "全局人物库迁移期间保留的事件专属人物图片。",
+          "en": "Event-specific biographical image retained during the global figure migration."
+        },
+        "license": {
+          "en": "The original image source and reuse license were not recorded before the global figure migration; source review is required.",
+          "zh": "全局人物库迁移前未记录该图片的原始来源与再利用许可，仍需补充来源审核。"
+        },
+        "usage": {
+          "en": "Used as a biographical figure image in this exhibition; review the recorded source terms before redistribution.",
+          "zh": "用于本展览的人物资料展示；再次分发前应复核所记录来源的使用条款。"
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "needs-source",
+          "license": {
+            "en": "The original image source and reuse license were not recorded before the global figure migration; source review is required.",
+            "zh": "全局人物库迁移前未记录该图片的原始来源与再利用许可，仍需补充来源审核。"
+          }
+        },
+        "role": "portrait",
         "type": "image",
         "figureIds": [
           "frank-rosenblatt"
@@ -21572,11 +21709,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1957-perceptron/event.json",
-      "variantFile": "archive/events/1957-perceptron/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1957-perceptron/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
     "quote": {
       "en": "\"Linear threshold learning machine\"",
       "zh": "\"线性阈值学习机\""
@@ -21673,7 +21809,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg",
         "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1982-hopfield-network-audio-zh-original-v1",
@@ -21687,7 +21822,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1982-hopfield-network-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1982-hopfield-network-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1982-hopfield-network-zh-original-v1.mp3"
           }
         },
         {
@@ -21702,7 +21839,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1982-hopfield-network-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1982-hopfield-network-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1982-hopfield-network-en-v1.mp3"
           }
         }
       ],
@@ -22089,11 +22228,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1982-hopfield-network/event.json",
-      "variantFile": "archive/events/1982-hopfield-network/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1982-hopfield-network/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"neural networks and physical systems\"",
       "zh": "\"神经网络与物理系统\""
@@ -22189,7 +22327,6 @@ const milestones = [
         "resources/images/external/ai100-1982-som/teuvo-kohonen-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1982-som-audio-zh-original-v1",
@@ -22203,7 +22340,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1982-som-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1982-som-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1982-som-zh-original-v1.mp3"
           }
         },
         {
@@ -22218,7 +22357,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1982-som-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1982-som-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1982-som-en-v1.mp3"
           }
         }
       ],
@@ -22613,11 +22754,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1982-som/event.json",
-      "variantFile": "archive/events/ai100-1982-som/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1982-som/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Self-organized formation of topologically correct feature maps\"",
       "zh": "\"拓扑正确特征映射的自组织形成\""
@@ -22746,7 +22886,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg",
         "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2006-dbn-audio-zh-original-v1",
@@ -22760,7 +22899,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2006-dbn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2006-dbn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2006-dbn-zh-original-v1.mp3"
           }
         },
         {
@@ -22775,7 +22916,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2006-dbn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2006-dbn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2006-dbn-en-v1.mp3"
           }
         }
       ],
@@ -23158,11 +23301,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2006-dbn/event.json",
-      "variantFile": "archive/events/2006-dbn/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2006-dbn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Layer-wise unsupervised pretraining\"",
       "zh": "\"逐层无监督预训练\""
@@ -23290,7 +23432,6 @@ const milestones = [
         "resources/images/figures/david-rumelhart.jpg",
         "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1967-back-propagation-audio-zh-original-v1",
@@ -23304,7 +23445,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1967-back-propagation-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1967-back-propagation-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1967-back-propagation-zh-original-v1.mp3"
           }
         },
         {
@@ -23319,7 +23462,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1967-back-propagation-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1967-back-propagation-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1967-back-propagation-en-v1.mp3"
           }
         }
       ],
@@ -23712,11 +23857,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1967-back-propagation/event.json",
-      "variantFile": "archive/events/ai100-1967-back-propagation/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1967-back-propagation/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Learning representations by back-propagating errors\"",
       "zh": "\"通过反向传播误差学习表示\""
@@ -23845,7 +23989,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg",
         "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1969-relu-audio-zh-original-v1",
@@ -23859,7 +24002,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1969-relu-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1969-relu-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1969-relu-zh-original-v1.mp3"
           }
         },
         {
@@ -23874,7 +24019,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1969-relu-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1969-relu-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1969-relu-en-v1.mp3"
           }
         }
       ],
@@ -24326,11 +24473,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1969-relu/event.json",
-      "variantFile": "archive/events/ai100-1969-relu/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1969-relu/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"rectified linear units\"",
       "zh": "\"整流线性单元\""
@@ -24443,7 +24589,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-adam_moment-traces.svg",
         "resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2014-adam-audio-zh-original-v1",
@@ -24457,7 +24602,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-adam-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-adam-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-adam-zh-original-v1.mp3"
           }
         },
         {
@@ -24472,7 +24619,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-adam-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-adam-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-adam-en-v1.mp3"
           }
         }
       ],
@@ -24859,11 +25008,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2014-adam/event.json",
-      "variantFile": "archive/events/2014-adam/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2014-adam/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"straightforward to implement, computationally efficient\"",
       "zh": "\"易于实现且计算高效\""
@@ -24992,7 +25140,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-dropout_random-mask.svg",
         "resources/images/bench-council-ai100/explainers/2014-dropout_ensemble-average.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2014-dropout-audio-zh-original-v1",
@@ -25006,7 +25153,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-dropout-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-dropout-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-dropout-zh-original-v1.mp3"
           }
         },
         {
@@ -25021,7 +25170,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-dropout-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-dropout-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-dropout-en-v1.mp3"
           }
         }
       ],
@@ -25411,11 +25562,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2014-dropout/event.json",
-      "variantFile": "archive/events/2014-dropout/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2014-dropout/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"prevent neural networks from overfitting\"",
       "zh": "\"防止神经网络过拟合\""
@@ -25527,7 +25677,6 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
         "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2015-batch-normalization-audio-zh-original-v1",
@@ -25541,7 +25690,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-batch-normalization-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-batch-normalization-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-batch-normalization-zh-original-v1.mp3"
           }
         },
         {
@@ -25556,7 +25707,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-batch-normalization-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-batch-normalization-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-batch-normalization-en-v1.mp3"
           }
         }
       ],
@@ -25945,11 +26098,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2015-batch-normalization/event.json",
-      "variantFile": "archive/events/ai100-2015-batch-normalization/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2015-batch-normalization/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift\"",
       "zh": "\"批归一化：通过减少内部协变量偏移加速深度网络训练\""
@@ -26045,7 +26197,6 @@ const milestones = [
         "resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1980-neocognitron-audio-zh-original-v1",
@@ -26059,7 +26210,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1980-neocognitron-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1980-neocognitron-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1980-neocognitron-zh-original-v1.mp3"
           }
         },
         {
@@ -26074,7 +26227,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1980-neocognitron-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1980-neocognitron-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1980-neocognitron-en-v1.mp3"
           }
         }
       ],
@@ -26469,11 +26624,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1980-neocognitron/event.json",
-      "variantFile": "archive/events/ai100-1980-neocognitron/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1980-neocognitron/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position\"",
       "zh": "\"一种不受位置平移影响的模式识别机制自组织神经网络模型\""
@@ -26572,18 +26726,6 @@ const milestones = [
         "resources/images/external/1989-cnn/yann-lecun-portrait.jpg",
         "resources/images/1989-cnn/people/1989-cnn_people_02.jpg"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
-          "url": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-1989-cnn-audio-zh-original-v1",
@@ -26597,7 +26739,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1989-cnn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1989-cnn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1989-cnn-zh-original-v1.mp3"
           }
         },
         {
@@ -26612,7 +26756,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1989-cnn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1989-cnn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1989-cnn-en-v1.mp3"
           }
         }
       ],
@@ -27089,11 +27235,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1989-cnn/event.json",
-      "variantFile": "archive/events/1989-cnn/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1989-cnn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
     "quote": {
       "en": "\"Backpropagation Applied to Handwritten Zip Code Recognition\"",
       "zh": "\"反向传播应用于手写邮编识别\""
@@ -27225,18 +27370,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
       "overviewImageAssetId": "asset-alexnet-portrait",
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
-          "url": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2012-alexnet-audio-zh-original-v1",
@@ -27250,7 +27383,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2012-alexnet-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2012-alexnet-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2012-alexnet-zh-original-v1.mp3"
           }
         },
         {
@@ -27265,7 +27400,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2012-alexnet-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2012-alexnet-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2012-alexnet-en-v1.mp3"
           }
         }
       ],
@@ -27715,11 +27852,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2012-alexnet/event.json",
-      "variantFile": "archive/events/2012-alexnet/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2012-alexnet/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
     "quote": {
       "en": "\"ImageNet Classification with Deep Convolutional Neural Networks\"",
       "zh": "\"使用深度卷积神经网络进行 ImageNet 分类\""
@@ -27832,7 +27968,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg",
         "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2014-vgg-audio-zh-original-v1",
@@ -27846,7 +27981,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-vgg-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-vgg-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-vgg-zh-original-v1.mp3"
           }
         },
         {
@@ -27861,7 +27998,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-vgg-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-vgg-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-vgg-en-v1.mp3"
           }
         }
       ],
@@ -28244,11 +28383,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2014-vgg/event.json",
-      "variantFile": "archive/events/2014-vgg/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2014-vgg/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"very deep convolutional networks\"",
       "zh": "\"非常深的卷积网络\""
@@ -28377,7 +28515,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg",
         "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2015-googlenet-inception-audio-zh-original-v1",
@@ -28391,7 +28528,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-googlenet-inception-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-googlenet-inception-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-googlenet-inception-zh-original-v1.mp3"
           }
         },
         {
@@ -28406,7 +28545,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-googlenet-inception-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-googlenet-inception-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-googlenet-inception-en-v1.mp3"
           }
         }
       ],
@@ -28792,11 +28933,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2015-googlenet-inception/event.json",
-      "variantFile": "archive/events/2015-googlenet-inception/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2015-googlenet-inception/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"going deeper with convolutions\"",
       "zh": "\"用卷积走得更深\""
@@ -28945,18 +29085,6 @@ const milestones = [
         "resources/images/2015-resnet/people/2015-resnet_people_02.png",
         "resources/images/2015-resnet/people/2015-resnet_people_01.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
-          "url": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2015-resnet-audio-zh-original-v1",
@@ -28970,7 +29098,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-resnet-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-resnet-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-resnet-zh-original-v1.mp3"
           }
         },
         {
@@ -28985,7 +29115,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-resnet-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-resnet-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-resnet-en-v1.mp3"
           }
         }
       ],
@@ -29512,11 +29644,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2015-resnet/event.json",
-      "variantFile": "archive/events/2015-resnet/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2015-resnet/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
     "quote": {
       "en": "\"Deep Residual Learning for Image Recognition\"",
       "zh": "\"用于图像识别的深度残差学习\""
@@ -29645,18 +29776,6 @@ const milestones = [
         "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
         "resources/images/2016-densenet/people/2016-densenet_people_01.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
-          "url": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2016-densenet-audio-zh-original-v1",
@@ -29670,7 +29789,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2016-densenet-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2016-densenet-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2016-densenet-zh-original-v1.mp3"
           }
         },
         {
@@ -29685,7 +29806,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2016-densenet-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2016-densenet-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2016-densenet-en-v1.mp3"
           }
         }
       ],
@@ -30108,11 +30231,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2016-densenet/event.json",
-      "variantFile": "archive/events/2016-densenet/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2016-densenet/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
     "quote": {
       "en": "\"Densely Connected Convolutional Networks\"",
       "zh": "\"密集连接卷积网络\""
@@ -30227,7 +30349,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2017-mobilenets/mobilenets-paper-first-page.png",
       "overviewImageAssetId": "asset-2017-mobilenets-paper-first-page",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2017-mobilenets-audio-zh-original-v1",
@@ -30241,7 +30362,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-mobilenets-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-mobilenets-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-mobilenets-zh-original-v1.mp3"
           }
         },
         {
@@ -30256,7 +30379,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-mobilenets-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-mobilenets-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-mobilenets-en-v1.mp3"
           }
         }
       ],
@@ -30695,11 +30820,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2017-mobilenets/event.json",
-      "variantFile": "archive/events/ai100-2017-mobilenets/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2017-mobilenets/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications”",
       "zh": "“MobileNets：面向移动视觉应用的高效卷积神经网络”"
@@ -30811,7 +30935,6 @@ const milestones = [
         "resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2018-2018-squeeze-excitation_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2018-squeeze-excitation-audio-zh-original-v1",
@@ -30825,7 +30948,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2018-squeeze-excitation-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2018-squeeze-excitation-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2018-squeeze-excitation-zh-original-v1.mp3"
           }
         },
         {
@@ -30840,7 +30965,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2018-squeeze-excitation-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2018-squeeze-excitation-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2018-squeeze-excitation-en-v1.mp3"
           }
         }
       ],
@@ -31261,11 +31388,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2018-squeeze-excitation/event.json",
-      "variantFile": "archive/events/ai100-2018-squeeze-excitation/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2018-squeeze-excitation/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Squeeze-and-Excitation Networks”",
       "zh": "“挤压与激励网络”"
@@ -31377,7 +31503,6 @@ const milestones = [
         "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2014-2014-r-cnn_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2014-r-cnn-audio-zh-original-v1",
@@ -31391,7 +31516,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2014-r-cnn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2014-r-cnn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2014-r-cnn-zh-original-v1.mp3"
           }
         },
         {
@@ -31406,7 +31533,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2014-r-cnn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2014-r-cnn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2014-r-cnn-en-v1.mp3"
           }
         }
       ],
@@ -31827,11 +31956,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2014-r-cnn/event.json",
-      "variantFile": "archive/events/ai100-2014-r-cnn/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2014-r-cnn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation”",
       "zh": "“用于精确目标检测与语义分割的丰富特征层次”"
@@ -31927,7 +32055,6 @@ const milestones = [
         "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2015-2015-fast-r-cnn_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2015-fast-r-cnn-audio-zh-original-v1",
@@ -31941,7 +32068,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-fast-r-cnn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-fast-r-cnn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-fast-r-cnn-zh-original-v1.mp3"
           }
         },
         {
@@ -31956,7 +32085,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-fast-r-cnn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-fast-r-cnn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-fast-r-cnn-en-v1.mp3"
           }
         }
       ],
@@ -32377,11 +32508,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2015-fast-r-cnn/event.json",
-      "variantFile": "archive/events/ai100-2015-fast-r-cnn/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2015-fast-r-cnn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Fast R-CNN”",
       "zh": "“Fast R-CNN”"
@@ -32527,7 +32657,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_detection-output.svg",
         "resources/images/2015-resnet/people/2015-resnet_people_04.png"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2015-faster-r-cnn-audio-zh-original-v1",
@@ -32541,7 +32670,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-faster-r-cnn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-faster-r-cnn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-faster-r-cnn-zh-original-v1.mp3"
           }
         },
         {
@@ -32556,7 +32687,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-faster-r-cnn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-faster-r-cnn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-faster-r-cnn-en-v1.mp3"
           }
         }
       ],
@@ -33025,11 +33158,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2015-faster-r-cnn/event.json",
-      "variantFile": "archive/events/2015-faster-r-cnn/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2015-faster-r-cnn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"towards real-time object detection\"",
       "zh": "\"迈向实时目标检测\""
@@ -33141,7 +33273,6 @@ const milestones = [
         "resources/images/2015-resnet/people/2015-resnet_people_04.png",
         "resources/images/bench-council-ai100/explainers/2017-2017-mask-r-cnn_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2017-mask-r-cnn-audio-zh-original-v1",
@@ -33155,7 +33286,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-mask-r-cnn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-mask-r-cnn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-mask-r-cnn-zh-original-v1.mp3"
           }
         },
         {
@@ -33170,7 +33303,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-mask-r-cnn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-mask-r-cnn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-mask-r-cnn-en-v1.mp3"
           }
         }
       ],
@@ -33591,11 +33726,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2017-mask-r-cnn/event.json",
-      "variantFile": "archive/events/ai100-2017-mask-r-cnn/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2017-mask-r-cnn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Mask R-CNN”",
       "zh": "“Mask R-CNN”"
@@ -33723,7 +33857,6 @@ const milestones = [
         "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2017-2017-fpn-retinanet_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2017-fpn-retinanet-audio-zh-original-v1",
@@ -33737,7 +33870,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-fpn-retinanet-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-fpn-retinanet-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-fpn-retinanet-zh-original-v1.mp3"
           }
         },
         {
@@ -33752,7 +33887,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-fpn-retinanet-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-fpn-retinanet-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-fpn-retinanet-en-v1.mp3"
           }
         }
       ],
@@ -34173,11 +34310,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2017-fpn-retinanet/event.json",
-      "variantFile": "archive/events/ai100-2017-fpn-retinanet/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2017-fpn-retinanet/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Feature Pyramid Networks for Object Detection”",
       "zh": "“用于目标检测的特征金字塔网络”"
@@ -34290,7 +34426,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2016-yolo_grid-detector.svg",
         "resources/images/bench-council-ai100/explainers/2016-yolo_single-pass.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2016-yolo-audio-zh-original-v1",
@@ -34304,7 +34439,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2016-yolo-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2016-yolo-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2016-yolo-zh-original-v1.mp3"
           }
         },
         {
@@ -34319,7 +34456,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2016-yolo-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2016-yolo-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2016-yolo-en-v1.mp3"
           }
         }
       ],
@@ -34709,11 +34848,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2016-yolo/event.json",
-      "variantFile": "archive/events/2016-yolo/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2016-yolo/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"You Only Look Once\"",
       "zh": "\"只看一次\""
@@ -34825,7 +34963,6 @@ const milestones = [
         "resources/images/external/ai100-2016-ssd/wei-liu-portrait.png",
         "resources/images/bench-council-ai100/explainers/2016-2016-ssd_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2016-ssd-audio-zh-original-v1",
@@ -34839,7 +34976,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2016-ssd-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2016-ssd-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2016-ssd-zh-original-v1.mp3"
           }
         },
         {
@@ -34854,7 +34993,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2016-ssd-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2016-ssd-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2016-ssd-en-v1.mp3"
           }
         }
       ],
@@ -35275,11 +35416,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2016-ssd/event.json",
-      "variantFile": "archive/events/ai100-2016-ssd/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2016-ssd/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“SSD: Single Shot MultiBox Detector”",
       "zh": "“SSD：单次多框检测器”"
@@ -35409,7 +35549,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2015-fcn/fcn-paper-first-page.png",
       "overviewImageAssetId": "asset-2015-fcn-paper-first-page",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2015-fcn-audio-zh-original-v1",
@@ -35423,7 +35562,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-fcn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-fcn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-fcn-zh-original-v1.mp3"
           }
         },
         {
@@ -35438,7 +35579,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-fcn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-fcn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-fcn-en-v1.mp3"
           }
         }
       ],
@@ -35841,11 +35984,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2015-fcn/event.json",
-      "variantFile": "archive/events/ai100-2015-fcn/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2015-fcn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Fully Convolutional Networks for Semantic Segmentation”",
       "zh": "“用于语义分割的全卷积网络”"
@@ -35974,7 +36116,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg",
         "resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2015-u-net-audio-zh-original-v1",
@@ -35988,7 +36129,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-u-net-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-u-net-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-u-net-zh-original-v1.mp3"
           }
         },
         {
@@ -36003,7 +36146,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-u-net-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-u-net-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-u-net-en-v1.mp3"
           }
         }
       ],
@@ -36389,11 +36534,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2015-u-net/event.json",
-      "variantFile": "archive/events/2015-u-net/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2015-u-net/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"convolutional networks for biomedical image segmentation\"",
       "zh": "\"用于生物医学图像分割的卷积网络\""
@@ -36508,18 +36652,6 @@ const milestones = [
         "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png",
         "resources/images/1997-lstm/people/1997-lstm_people_01.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
-          "url": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-1997-lstm-audio-zh-original-v1",
@@ -36533,7 +36665,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1997-lstm-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1997-lstm-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1997-lstm-zh-original-v1.mp3"
           }
         },
         {
@@ -36548,7 +36682,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1997-lstm-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1997-lstm-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1997-lstm-en-v1.mp3"
           }
         }
       ],
@@ -37021,11 +37157,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1997-lstm/event.json",
-      "variantFile": "archive/events/1997-lstm/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1997-lstm/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
     "quote": {
       "en": "\"Long short-term memory\"",
       "zh": "\"长短期记忆\""
@@ -37169,7 +37304,6 @@ const milestones = [
         "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2014-2014-seq2seq_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2014-seq2seq-audio-zh-original-v1",
@@ -37183,7 +37317,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2014-seq2seq-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2014-seq2seq-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2014-seq2seq-zh-original-v1.mp3"
           }
         },
         {
@@ -37198,7 +37334,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2014-seq2seq-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2014-seq2seq-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2014-seq2seq-en-v1.mp3"
           }
         }
       ],
@@ -37619,11 +37757,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2014-seq2seq/event.json",
-      "variantFile": "archive/events/ai100-2014-seq2seq/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2014-seq2seq/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation”",
       "zh": "“使用 RNN 编码器—解码器学习短语表示”"
@@ -37802,18 +37939,6 @@ const milestones = [
         "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
         "resources/images/2014-attention/people/2014-attention_people_01.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
-          "url": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2014-attention-audio-zh-original-v1",
@@ -37827,7 +37952,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-attention-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-attention-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-attention-zh-original-v1.mp3"
           }
         },
         {
@@ -37842,7 +37969,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-attention-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-attention-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-attention-en-v1.mp3"
           }
         }
       ],
@@ -38330,11 +38459,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2014-attention/event.json",
-      "variantFile": "archive/events/2014-attention/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2014-attention/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
     "quote": {
       "en": "\"Neural machine translation by jointly learning to align and translate\"",
       "zh": "\"通过联合学习对齐与翻译实现神经机器翻译\""
@@ -38529,18 +38657,6 @@ const milestones = [
         "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
         "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
-          "url": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2017-transformer-audio-zh-original-v1",
@@ -38554,7 +38670,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2017-transformer-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2017-transformer-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2017-transformer-zh-original-v1.mp3"
           }
         },
         {
@@ -38569,7 +38687,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2017-transformer-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2017-transformer-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2017-transformer-en-v1.mp3"
           }
         }
       ],
@@ -39042,11 +39162,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2017-transformer/event.json",
-      "variantFile": "archive/events/2017-transformer/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2017-transformer/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
     "quote": {
       "en": "\"Attention Is All You Need\"",
       "zh": "\"Attention Is All You Need\""
@@ -39160,18 +39279,6 @@ const milestones = [
         "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
         "resources/images/2018-bert/architecture/2018-bert_architecture_02.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
-          "url": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2018-bert-audio-zh-original-v1",
@@ -39185,7 +39292,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2018-bert-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2018-bert-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2018-bert-zh-original-v1.mp3"
           }
         },
         {
@@ -39200,7 +39309,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2018-bert-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2018-bert-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2018-bert-en-v1.mp3"
           }
         }
       ],
@@ -39641,11 +39752,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2018-bert/event.json",
-      "variantFile": "archive/events/2018-bert/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2018-bert/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
     "quote": {
       "en": "\"Pre-training of deep bidirectional transformers for language understanding\"",
       "zh": "\"用于语言理解的深度双向 Transformer 预训练\""
@@ -39856,18 +39966,6 @@ const milestones = [
         "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png",
         "resources/images/2018-gpt/historical/2018-gpt_historical_01.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
-          "url": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2018-gpt-audio-zh-original-v1",
@@ -39881,7 +39979,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2018-gpt-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2018-gpt-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2018-gpt-zh-original-v1.mp3"
           }
         },
         {
@@ -39896,7 +39996,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2018-gpt-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2018-gpt-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2018-gpt-en-v1.mp3"
           }
         }
       ],
@@ -40347,11 +40449,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2018-gpt/event.json",
-      "variantFile": "archive/events/2018-gpt/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2018-gpt/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
     "quote": {
       "en": "\"Improving language understanding by generative pre-training\"",
       "zh": "\"通过生成式预训练改进语言理解\""
@@ -40543,7 +40644,6 @@ const milestones = [
         "resources/images/external/ai100-2020-vit/alexey-dosovitskiy-portrait.png",
         "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2020-vit-audio-zh-original-v1",
@@ -40557,7 +40657,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2020-vit-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2020-vit-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2020-vit-zh-original-v1.mp3"
           }
         },
         {
@@ -40572,7 +40674,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2020-vit-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2020-vit-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2020-vit-en-v1.mp3"
           }
         }
       ],
@@ -40967,11 +41071,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2020-vit/event.json",
-      "variantFile": "archive/events/ai100-2020-vit/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2020-vit/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"An Image is Worth 16x16 Words\"",
       "zh": "\"一张图像价值 16x16 个词\""
@@ -41115,7 +41218,6 @@ const milestones = [
         "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2021-swin-transformer-audio-zh-original-v1",
@@ -41129,7 +41231,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2021-swin-transformer-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2021-swin-transformer-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2021-swin-transformer-zh-original-v1.mp3"
           }
         },
         {
@@ -41144,7 +41248,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2021-swin-transformer-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2021-swin-transformer-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2021-swin-transformer-en-v1.mp3"
           }
         }
       ],
@@ -41565,11 +41671,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2021-swin-transformer/event.json",
-      "variantFile": "archive/events/ai100-2021-swin-transformer/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2021-swin-transformer/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Hierarchical vision Transformer using shifted windows\"",
       "zh": "\"使用移位窗口的层级视觉 Transformer\""
@@ -41665,7 +41770,6 @@ const milestones = [
         "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2000-neural-language-model-audio-zh-original-v1",
@@ -41679,7 +41783,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2000-neural-language-model-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2000-neural-language-model-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2000-neural-language-model-zh-original-v1.mp3"
           }
         },
         {
@@ -41694,7 +41800,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2000-neural-language-model-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2000-neural-language-model-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2000-neural-language-model-en-v1.mp3"
           }
         }
       ],
@@ -42089,11 +42197,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2000-neural-language-model/event.json",
-      "variantFile": "archive/events/ai100-2000-neural-language-model/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2000-neural-language-model/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"A Neural Probabilistic Language Model\"",
       "zh": "\"神经概率语言模型\""
@@ -42206,7 +42313,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2013-word2vec_skipgram-window.svg",
         "resources/images/bench-council-ai100/explainers/2013-word2vec_vector-analogy.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2013-word2vec-audio-zh-original-v1",
@@ -42220,7 +42326,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2013-word2vec-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2013-word2vec-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2013-word2vec-zh-original-v1.mp3"
           }
         },
         {
@@ -42235,7 +42343,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2013-word2vec-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2013-word2vec-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2013-word2vec-en-v1.mp3"
           }
         }
       ],
@@ -42625,11 +42735,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2013-word2vec/event.json",
-      "variantFile": "archive/events/2013-word2vec/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2013-word2vec/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"distributed representations of words\"",
       "zh": "\"词的分布式表示\""
@@ -42760,7 +42869,6 @@ const milestones = [
         "resources/images/external/ai100-2014-glove/christopher-manning-stanford.jpg",
         "resources/images/external/ai100-2014-glove/richard-socher-portrait.png"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2014-glove-audio-zh-original-v1",
@@ -42774,7 +42882,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2014-glove-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2014-glove-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2014-glove-zh-original-v1.mp3"
           }
         },
         {
@@ -42789,7 +42899,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2014-glove-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2014-glove-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2014-glove-en-v1.mp3"
           }
         }
       ],
@@ -43360,11 +43472,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2014-glove/event.json",
-      "variantFile": "archive/events/ai100-2014-glove/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2014-glove/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Global vectors for word representation\"",
       "zh": "\"用于词表示的全局向量\""
@@ -43477,18 +43588,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg",
         "resources/images/2014-gan/architecture/2014-gan_architecture_01.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
-          "url": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2014-gan-audio-zh-original-v1",
@@ -43502,7 +43601,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-gan-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-gan-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-gan-zh-original-v1.mp3"
           }
         },
         {
@@ -43517,7 +43618,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-gan-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-gan-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-gan-en-v1.mp3"
           }
         }
       ],
@@ -43936,11 +44039,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2014-gan/event.json",
-      "variantFile": "archive/events/2014-gan/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2014-gan/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
     "quote": {
       "en": "\"Generative adversarial nets\"",
       "zh": "\"生成对抗网络\""
@@ -44052,7 +44154,6 @@ const milestones = [
         "resources/images/external/ai100-2014-conditional-gan/conditional-gan-paper-first-page.jpg",
         "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2014-conditional-gan-audio-zh-original-v1",
@@ -44066,7 +44167,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2014-conditional-gan-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2014-conditional-gan-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2014-conditional-gan-zh-original-v1.mp3"
           }
         },
         {
@@ -44081,7 +44184,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2014-conditional-gan-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2014-conditional-gan-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2014-conditional-gan-en-v1.mp3"
           }
         }
       ],
@@ -44500,11 +44605,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2014-conditional-gan/event.json",
-      "variantFile": "archive/events/ai100-2014-conditional-gan/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2014-conditional-gan/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Conditional generative adversarial nets\"",
       "zh": "\"条件生成对抗网络\""
@@ -44616,7 +44720,6 @@ const milestones = [
         "resources/images/figures/alec-radford.png",
         "resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2015-dcgan-audio-zh-original-v1",
@@ -44630,7 +44733,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-dcgan-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-dcgan-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-dcgan-zh-original-v1.mp3"
           }
         },
         {
@@ -44645,7 +44750,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-dcgan-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-dcgan-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-dcgan-en-v1.mp3"
           }
         }
       ],
@@ -45060,11 +45167,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2015-dcgan/event.json",
-      "variantFile": "archive/events/ai100-2015-dcgan/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2015-dcgan/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Unsupervised representation learning with deep convolutional generative adversarial networks\"",
       "zh": "\"使用深度卷积生成对抗网络进行无监督表示学习\""
@@ -45177,7 +45283,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg",
         "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait-2025.jpg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2017-wasserstein-gan-audio-zh-original-v1",
@@ -45191,7 +45296,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-wasserstein-gan-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-wasserstein-gan-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-wasserstein-gan-zh-original-v1.mp3"
           }
         },
         {
@@ -45206,7 +45313,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-wasserstein-gan-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-wasserstein-gan-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-wasserstein-gan-en-v1.mp3"
           }
         }
       ],
@@ -45693,11 +45802,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2017-wasserstein-gan/event.json",
-      "variantFile": "archive/events/ai100-2017-wasserstein-gan/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2017-wasserstein-gan/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Wasserstein generative adversarial networks\"",
       "zh": "\"Wasserstein 生成对抗网络\""
@@ -45825,7 +45933,6 @@ const milestones = [
         "resources/images/external/ai100-2017-cyclegan/jun-yan-zhu-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2017-cyclegan-audio-zh-original-v1",
@@ -45839,7 +45946,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-cyclegan-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-cyclegan-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-cyclegan-zh-original-v1.mp3"
           }
         },
         {
@@ -45854,7 +45963,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-cyclegan-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-cyclegan-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-cyclegan-en-v1.mp3"
           }
         }
       ],
@@ -46275,11 +46386,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2017-cyclegan/event.json",
-      "variantFile": "archive/events/ai100-2017-cyclegan/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2017-cyclegan/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Unpaired image-to-image translation using cycle-consistent adversarial networks\"",
       "zh": "\"使用循环一致对抗网络进行非配对图像到图像转换\""
@@ -46391,7 +46501,6 @@ const milestones = [
         "resources/images/external/ai100-2017-pix2pix/phillip-isola-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2017-pix2pix-audio-zh-original-v1",
@@ -46405,7 +46514,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-pix2pix-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-pix2pix-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-pix2pix-zh-original-v1.mp3"
           }
         },
         {
@@ -46420,7 +46531,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-pix2pix-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-pix2pix-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-pix2pix-en-v1.mp3"
           }
         }
       ],
@@ -46841,11 +46954,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2017-pix2pix/event.json",
-      "variantFile": "archive/events/ai100-2017-pix2pix/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2017-pix2pix/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Image-to-image translation with conditional adversarial networks\"",
       "zh": "\"使用条件对抗网络进行图像到图像转换\""
@@ -46957,7 +47069,6 @@ const milestones = [
         "resources/images/external/ai100-2019-stylegan/tero-karras-github.jpg",
         "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2019-stylegan-audio-zh-original-v1",
@@ -46971,7 +47082,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2019-stylegan-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2019-stylegan-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2019-stylegan-zh-original-v1.mp3"
           }
         },
         {
@@ -46986,7 +47099,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2019-stylegan-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2019-stylegan-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2019-stylegan-en-v1.mp3"
           }
         }
       ],
@@ -47423,11 +47538,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2019-stylegan/event.json",
-      "variantFile": "archive/events/ai100-2019-stylegan/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2019-stylegan/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"A style-based generator architecture for generative adversarial networks\"",
       "zh": "\"面向生成对抗网络的基于风格的生成器架构\""
@@ -47539,7 +47653,6 @@ const milestones = [
         "resources/images/external/ai100-2013-variational-autoencoder/diederik-kingma-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2013-variational-autoencoder-audio-zh-original-v1",
@@ -47553,7 +47666,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2013-variational-autoencoder-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2013-variational-autoencoder-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2013-variational-autoencoder-zh-original-v1.mp3"
           }
         },
         {
@@ -47568,7 +47683,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2013-variational-autoencoder-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2013-variational-autoencoder-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2013-variational-autoencoder-en-v1.mp3"
           }
         }
       ],
@@ -47989,11 +48106,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2013-variational-autoencoder/event.json",
-      "variantFile": "archive/events/ai100-2013-variational-autoencoder/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2013-variational-autoencoder/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Auto-encoding variational Bayes\"",
       "zh": "\"自动编码变分贝叶斯\""
@@ -48137,7 +48253,6 @@ const milestones = [
         "resources/images/external/ai100-2015-diffusion-model/jascha-sohl-dickstein-portrait.png",
         "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2015-diffusion-model-audio-zh-original-v1",
@@ -48151,7 +48266,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-diffusion-model-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-diffusion-model-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-diffusion-model-zh-original-v1.mp3"
           }
         },
         {
@@ -48166,7 +48283,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-diffusion-model-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-diffusion-model-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-diffusion-model-en-v1.mp3"
           }
         }
       ],
@@ -48587,11 +48706,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2015-diffusion-model/event.json",
-      "variantFile": "archive/events/ai100-2015-diffusion-model/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2015-diffusion-model/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Deep unsupervised learning using nonequilibrium thermodynamics\"",
       "zh": "\"使用非平衡热力学进行深度无监督学习\""
@@ -48720,7 +48838,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg",
         "resources/images/external/ai100-2005-gnn/papers/2005-gnn-unisi-oai-record.png"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2005-gnn-audio-zh-original-v1",
@@ -48734,7 +48851,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2005-gnn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2005-gnn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2005-gnn-zh-original-v1.mp3"
           }
         },
         {
@@ -48749,7 +48868,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2005-gnn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2005-gnn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2005-gnn-en-v1.mp3"
           }
         }
       ],
@@ -49252,11 +49373,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2005-gnn/event.json",
-      "variantFile": "archive/events/ai100-2005-gnn/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2005-gnn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"A new model for learning in graph domains\"",
       "zh": "\"一种用于图领域学习的新模型\""
@@ -49368,7 +49488,6 @@ const milestones = [
         "resources/images/external/ai100-2016-gcn/thomas-kipf-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2016-gcn-audio-zh-original-v1",
@@ -49382,7 +49501,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2016-gcn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2016-gcn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2016-gcn-zh-original-v1.mp3"
           }
         },
         {
@@ -49397,7 +49518,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2016-gcn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2016-gcn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2016-gcn-en-v1.mp3"
           }
         }
       ],
@@ -49818,11 +49941,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2016-gcn/event.json",
-      "variantFile": "archive/events/ai100-2016-gcn/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2016-gcn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Semi-supervised classification with graph convolutional networks\"",
       "zh": "\"使用图卷积网络进行半监督分类\""
@@ -49934,7 +50056,6 @@ const milestones = [
         "resources/images/external/ai100-2017-gat/petar-velickovic-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2017-gat-audio-zh-original-v1",
@@ -49948,7 +50069,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-gat-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-gat-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-gat-zh-original-v1.mp3"
           }
         },
         {
@@ -49963,7 +50086,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-gat-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-gat-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-gat-en-v1.mp3"
           }
         }
       ],
@@ -50394,11 +50519,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2017-gat/event.json",
-      "variantFile": "archive/events/ai100-2017-gat/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2017-gat/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Graph attention networks\"",
       "zh": "\"图注意力网络\""
@@ -50510,7 +50634,6 @@ const milestones = [
         "resources/images/external/ai100-2016-nas/barret-zoph-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2016-nas-audio-zh-original-v1",
@@ -50524,7 +50647,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2016-nas-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2016-nas-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2016-nas-zh-original-v1.mp3"
           }
         },
         {
@@ -50539,7 +50664,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2016-nas-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2016-nas-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2016-nas-en-v1.mp3"
           }
         }
       ],
@@ -50960,11 +51087,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2016-nas/event.json",
-      "variantFile": "archive/events/ai100-2016-nas/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2016-nas/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Neural architecture search with reinforcement learning\"",
       "zh": "\"基于强化学习的神经架构搜索\""
@@ -51076,7 +51202,6 @@ const milestones = [
         "resources/images/external/ai100-2015-deep-compression/song-han-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2015-deep-compression-audio-zh-original-v1",
@@ -51090,7 +51215,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-deep-compression-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-deep-compression-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-deep-compression-zh-original-v1.mp3"
           }
         },
         {
@@ -51105,7 +51232,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-deep-compression-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-deep-compression-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-deep-compression-en-v1.mp3"
           }
         }
       ],
@@ -51536,11 +51665,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2015-deep-compression/event.json",
-      "variantFile": "archive/events/ai100-2015-deep-compression/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2015-deep-compression/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Compressing deep neural networks with pruning, trained quantization and Huffman coding\"",
       "zh": "\"用剪枝、训练型量化和霍夫曼编码压缩深度神经网络\""
@@ -51668,7 +51796,6 @@ const milestones = [
         "resources/images/figures/geoffrey-hinton.jpg",
         "resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2015-knowledge-distillation-audio-zh-original-v1",
@@ -51682,7 +51809,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-knowledge-distillation-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-knowledge-distillation-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-knowledge-distillation-zh-original-v1.mp3"
           }
         },
         {
@@ -51697,7 +51826,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-knowledge-distillation-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-knowledge-distillation-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-knowledge-distillation-en-v1.mp3"
           }
         }
       ],
@@ -52112,11 +52243,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2015-knowledge-distillation/event.json",
-      "variantFile": "archive/events/ai100-2015-knowledge-distillation/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2015-knowledge-distillation/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Distilling the knowledge in a neural network\"",
       "zh": "\"蒸馏神经网络中的知识\""
@@ -52245,7 +52375,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg",
         "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2009-imagenet-audio-zh-original-v1",
@@ -52259,7 +52388,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2009-imagenet-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2009-imagenet-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2009-imagenet-zh-original-v1.mp3"
           }
         },
         {
@@ -52274,7 +52405,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2009-imagenet-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2009-imagenet-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2009-imagenet-en-v1.mp3"
           }
         }
       ],
@@ -52664,11 +52797,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2009-imagenet/event.json",
-      "variantFile": "archive/events/2009-imagenet/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2009-imagenet/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"large-scale hierarchical image database\"",
       "zh": "\"大规模层级图像数据库\""
@@ -52780,7 +52912,6 @@ const milestones = [
         "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2014-ms-coco-audio-zh-original-v1",
@@ -52794,7 +52925,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2014-ms-coco-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2014-ms-coco-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2014-ms-coco-zh-original-v1.mp3"
           }
         },
         {
@@ -52809,7 +52942,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2014-ms-coco-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2014-ms-coco-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2014-ms-coco-en-v1.mp3"
           }
         }
       ],
@@ -53230,11 +53365,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2014-ms-coco/event.json",
-      "variantFile": "archive/events/ai100-2014-ms-coco/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2014-ms-coco/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Common objects in context\"",
       "zh": "\"上下文中的常见物体\""
@@ -53329,9 +53463,9 @@ const milestones = [
       "images": [
         "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
-        "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg"
+        "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg",
+        "resources/images/game-evolution/1988-td-gammon.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1988-td-update-audio-zh-original-v1",
@@ -53345,7 +53479,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1988-td-update-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1988-td-update-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1988-td-update-zh-original-v1.mp3"
           }
         },
         {
@@ -53360,7 +53496,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1988-td-update-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1988-td-update-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1988-td-update-en-v1.mp3"
           }
         }
       ],
@@ -53368,6 +53506,7 @@ const milestones = [
         "asset-1988-td-update-richard-sutton",
         "asset-1988-td-update-value-timeline",
         "asset-1988-td-update-error-meter",
+        "asset-1988-td-update-td-gammon-media",
         "asset-1988-td-update-audio-zh-original-v1",
         "asset-1988-td-update-audio-en-v1"
       ]
@@ -53447,6 +53586,39 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
+        "type": "svg",
+        "figureIds": []
+      },
+      "resources/images/game-evolution/1988-td-gammon.svg": {
+        "caption": {
+          "zh": "时序差分学习与后来的 TD-Gammon",
+          "en": "Temporal-difference learning and the later TD-Gammon"
+        },
+        "subcaption": {
+          "zh": "以双陆棋状态变化、随机掷骰和价值曲线解释 TD 学习如何随对局逐步更新预测。",
+          "en": "Backgammon state changes, dice rolls, and a value trace illustrate how TD learning updates predictions during play."
+        },
+        "sourceName": {
+          "zh": "本项目原创解释图",
+          "en": "Original exhibition explainer"
+        },
+        "license": {
+          "zh": "本地原创 SVG 解释图；未复制论文或比赛图像。",
+          "en": "Original local SVG explainer; no paper or match imagery is copied."
+        },
+        "usage": {
+          "zh": "用于 1988 年时序差分更新事件的评论与媒体区，展示该方法在 TD-Gammon 棋局中的后续应用。",
+          "en": "Used in the 1988 Temporal-Difference Update commentary and media panel to show the method's later application in TD-Gammon."
+        },
+        "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+        "rights": {
+          "status": "local-original",
+          "license": {
+            "zh": "本地原创 SVG 解释图；未复制论文或比赛图像。",
+            "en": "Original local SVG explainer; no paper or match imagery is copied."
+          }
+        },
+        "role": "game-analysis-image",
         "type": "svg",
         "figureIds": []
       }
@@ -53743,11 +53915,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1988-td-update/event.json",
-      "variantFile": "archive/events/1988-td-update/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1988-td-update/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Bootstrapped value prediction\"",
       "zh": "\"自举式价值预测\""
@@ -53859,7 +54030,6 @@ const milestones = [
         "resources/images/external/ai100-1989-q-learning/christopher-watkins-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1989-q-learning-audio-zh-original-v1",
@@ -53873,7 +54043,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1989-q-learning-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1989-q-learning-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1989-q-learning-zh-original-v1.mp3"
           }
         },
         {
@@ -53888,7 +54060,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1989-q-learning-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1989-q-learning-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1989-q-learning-en-v1.mp3"
           }
         }
       ],
@@ -54309,11 +54483,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1989-q-learning/event.json",
-      "variantFile": "archive/events/ai100-1989-q-learning/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1989-q-learning/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Learning from delayed rewards\"",
       "zh": "\"从延迟奖励中学习\""
@@ -54461,7 +54634,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg",
         "resources/images/figures/authoritative/david-silver.jpg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2013-dqn-audio-zh-original-v1",
@@ -54475,7 +54647,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2013-dqn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2013-dqn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2013-dqn-zh-original-v1.mp3"
           }
         },
         {
@@ -54490,7 +54664,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2013-dqn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2013-dqn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2013-dqn-en-v1.mp3"
           }
         }
       ],
@@ -54929,11 +55105,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2013-dqn/event.json",
-      "variantFile": "archive/events/2013-dqn/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2013-dqn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"playing Atari with deep reinforcement learning\"",
       "zh": "\"用深度强化学习玩 Atari\""
@@ -55061,7 +55236,6 @@ const milestones = [
         "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait-display.png",
         "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2015-ddpg-audio-zh-original-v1",
@@ -55075,7 +55249,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-ddpg-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-ddpg-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-ddpg-zh-original-v1.mp3"
           }
         },
         {
@@ -55090,7 +55266,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-ddpg-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-ddpg-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-ddpg-en-v1.mp3"
           }
         }
       ],
@@ -55529,11 +55707,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2015-ddpg/event.json",
-      "variantFile": "archive/events/ai100-2015-ddpg/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2015-ddpg/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Continuous control with deep reinforcement learning\"",
       "zh": "\"使用深度强化学习进行连续控制\""
@@ -55712,11 +55889,11 @@ const milestones = [
       "images": [
         "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg"
+        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
+        "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg"
       ],
       "overviewImage": "resources/images/figures/authoritative/david-silver.jpg",
       "overviewImageAssetId": "asset-david-silver-commons-portrait",
-      "videos": [],
       "audios": [
         {
           "id": "asset-2016-alphago-audio-zh-original-v1",
@@ -55730,7 +55907,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2016-alphago-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2016-alphago-zh-original-v1.mp3"
           }
         },
         {
@@ -55745,7 +55924,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2016-alphago-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2016-alphago-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2016-alphago-en-v1.mp3"
           }
         }
       ],
@@ -55753,6 +55934,7 @@ const milestones = [
         "asset-david-silver-commons-portrait",
         "asset-alphago-policy-value-search",
         "asset-alphago-lee-sedol",
+        "asset-2016-alphago-game-4-photo",
         "asset-2016-alphago-audio-zh-original-v1",
         "asset-2016-alphago-audio-en-v1"
       ]
@@ -55841,6 +56023,40 @@ const milestones = [
         "figureIds": [
           "lee-sedol"
         ]
+      },
+      "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg": {
+        "caption": {
+          "zh": "李世石对 AlphaGo 第 4 局",
+          "en": "Lee Sedol versus AlphaGo, Game 4"
+        },
+        "subcaption": {
+          "zh": "2016 年首尔人机大战第 4 局的实际棋盘。",
+          "en": "The actual board during Game 4 of the 2016 Seoul match."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Sedol_(B)_vs_AlphaGo_(W)_-_Game_4.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0；摄影者 Wesalius，须保留署名并遵循相同方式共享。",
+          "en": "CC BY-SA 4.0; photograph by Wesalius. Attribution and share-alike terms apply."
+        },
+        "usage": {
+          "zh": "用于展示李世石在第 4 局击败 AlphaGo 的实际对局场景。",
+          "en": "Used to show the actual game in which Lee Sedol defeated AlphaGo."
+        },
+        "sourceId": "source-alphago-game-4-commons",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0；摄影者 Wesalius，须保留署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0; photograph by Wesalius. Attribution and share-alike terms apply."
+          }
+        },
+        "role": "game-record-image",
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -56132,11 +56348,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2016-alphago/event.json",
-      "variantFile": "archive/events/2016-alphago/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2016-alphago/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.\"",
       "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
@@ -56257,18 +56472,6 @@ const milestones = [
         "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png",
         "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
-          "url": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
-          "title": "",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2020-alphafold-audio-zh-original-v1",
@@ -56282,7 +56485,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2020-alphafold-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2020-alphafold-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2020-alphafold-zh-original-v1.mp3"
           }
         },
         {
@@ -56297,7 +56502,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2020-alphafold-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2020-alphafold-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2020-alphafold-en-v1.mp3"
           }
         }
       ],
@@ -56878,11 +57085,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2020-alphafold/event.json",
-      "variantFile": "archive/events/2020-alphafold/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2020-alphafold/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
     "quote": {
       "en": "\"Highly accurate protein structure prediction with AlphaFold\"",
       "zh": "\"使用 AlphaFold 进行高精度蛋白质结构预测\""
@@ -56994,7 +57200,6 @@ const milestones = [
         "resources/images/external/ai100-1983-actor-critic/andrew-barto-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1983-actor-critic-audio-zh-original-v1",
@@ -57008,7 +57213,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1983-actor-critic-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1983-actor-critic-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1983-actor-critic-zh-original-v1.mp3"
           }
         },
         {
@@ -57023,7 +57230,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1983-actor-critic-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1983-actor-critic-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1983-actor-critic-en-v1.mp3"
           }
         }
       ],
@@ -57444,11 +57653,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1983-actor-critic/event.json",
-      "variantFile": "archive/events/ai100-1983-actor-critic/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1983-actor-critic/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Neuronlike adaptive elements that can solve difficult learning control problems\"",
       "zh": "\"能够解决困难学习控制问题的类神经自适应元件\""
@@ -57560,7 +57768,6 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
         "resources/images/bench-council-ai100/explainers/2016-2016-a3c_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2016-a3c-audio-zh-original-v1",
@@ -57574,7 +57781,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2016-a3c-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2016-a3c-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2016-a3c-zh-original-v1.mp3"
           }
         },
         {
@@ -57589,7 +57798,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2016-a3c-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2016-a3c-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2016-a3c-en-v1.mp3"
           }
         }
       ],
@@ -58010,11 +58221,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2016-a3c/event.json",
-      "variantFile": "archive/events/ai100-2016-a3c/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2016-a3c/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Asynchronous Methods for Deep Reinforcement Learning”",
       "zh": "“深度强化学习的异步方法”"
@@ -58142,7 +58352,6 @@ const milestones = [
         "resources/images/bench-council-ai100/supporting/1994-sarsa-paper-record.svg",
         "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1994-sarsa-audio-zh-original-v1",
@@ -58156,7 +58365,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1994-sarsa-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1994-sarsa-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1994-sarsa-zh-original-v1.mp3"
           }
         },
         {
@@ -58171,7 +58382,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1994-sarsa-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1994-sarsa-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1994-sarsa-en-v1.mp3"
           }
         }
       ],
@@ -58585,11 +58798,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1994-sarsa/event.json",
-      "variantFile": "archive/events/ai100-1994-sarsa/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1994-sarsa/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“On-line Q-Learning Using Connectionist Systems”",
       "zh": "“使用连接主义系统的在线 Q 学习”"
@@ -58685,7 +58897,6 @@ const milestones = [
         "resources/images/figures/ronald-williams.jpg",
         "resources/images/bench-council-ai100/explainers/1992-1992-reinforce_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1992-reinforce-audio-zh-original-v1",
@@ -58699,7 +58910,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1992-reinforce-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1992-reinforce-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1992-reinforce-zh-original-v1.mp3"
           }
         },
         {
@@ -58714,7 +58927,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1992-reinforce-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1992-reinforce-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1992-reinforce-en-v1.mp3"
           }
         }
       ],
@@ -59135,11 +59350,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1992-reinforce/event.json",
-      "variantFile": "archive/events/ai100-1992-reinforce/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1992-reinforce/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning”",
       "zh": "“用于连接主义强化学习的简单统计梯度跟随算法”"
@@ -59251,7 +59465,6 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
         "resources/images/bench-council-ai100/explainers/1999-1999-policy-gradient_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1999-policy-gradient-audio-zh-original-v1",
@@ -59265,7 +59478,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1999-policy-gradient-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1999-policy-gradient-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1999-policy-gradient-zh-original-v1.mp3"
           }
         },
         {
@@ -59280,7 +59495,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1999-policy-gradient-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1999-policy-gradient-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1999-policy-gradient-en-v1.mp3"
           }
         }
       ],
@@ -59701,11 +59918,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1999-policy-gradient/event.json",
-      "variantFile": "archive/events/ai100-1999-policy-gradient/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1999-policy-gradient/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Policy Gradient Methods for Reinforcement Learning with Function Approximation”",
       "zh": "“带函数逼近的强化学习策略梯度方法”"
@@ -59850,7 +60066,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1984-cart_split-regions.svg",
         "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1984-cart-audio-zh-original-v1",
@@ -59864,7 +60079,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1984-cart-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1984-cart-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1984-cart-zh-original-v1.mp3"
           }
         },
         {
@@ -59879,7 +60096,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1984-cart-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1984-cart-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1984-cart-en-v1.mp3"
           }
         }
       ],
@@ -60262,11 +60481,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1984-cart/event.json",
-      "variantFile": "archive/events/1984-cart/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1984-cart/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"classification and regression trees\"",
       "zh": "\"分类与回归树\""
@@ -60363,7 +60581,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1986-1986-id3_process.svg",
         "resources/images/external/ai100-1986-id3/id3-paper-figure-3-complex-decision-tree.png"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1986-id3-audio-zh-original-v1",
@@ -60377,7 +60594,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1986-id3-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1986-id3-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1986-id3-zh-original-v1.mp3"
           }
         },
         {
@@ -60392,7 +60611,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1986-id3-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1986-id3-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1986-id3-en-v1.mp3"
           }
         }
       ],
@@ -60848,11 +61069,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1986-id3/event.json",
-      "variantFile": "archive/events/ai100-1986-id3/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1986-id3/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Induction of Decision Trees”",
       "zh": "“决策树归纳”"
@@ -60948,7 +61168,6 @@ const milestones = [
         "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1993-1993-c45_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1993-c45-audio-zh-original-v1",
@@ -60962,7 +61181,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1993-c45-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1993-c45-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1993-c45-zh-original-v1.mp3"
           }
         },
         {
@@ -60977,7 +61198,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1993-c45-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1993-c45-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1993-c45-en-v1.mp3"
           }
         }
       ],
@@ -61398,11 +61621,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1993-c45/event.json",
-      "variantFile": "archive/events/ai100-1993-c45/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1993-c45/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“C4.5: Programs for Machine Learning”",
       "zh": "“C4.5：机器学习程序”"
@@ -61498,7 +61720,6 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
         "resources/images/bench-council-ai100/explainers/1996-1996-bagging_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1996-bagging-audio-zh-original-v1",
@@ -61512,7 +61733,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1996-bagging-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1996-bagging-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1996-bagging-zh-original-v1.mp3"
           }
         },
         {
@@ -61527,7 +61750,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1996-bagging-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1996-bagging-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1996-bagging-en-v1.mp3"
           }
         }
       ],
@@ -61948,11 +62173,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1996-bagging/event.json",
-      "variantFile": "archive/events/ai100-1996-bagging/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1996-bagging/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Bagging Predictors”",
       "zh": "“装袋预测器”"
@@ -62064,7 +62288,6 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
         "resources/images/bench-council-ai100/explainers/2001-2001-random-forests_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2001-random-forests-audio-zh-original-v1",
@@ -62078,7 +62301,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2001-random-forests-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2001-random-forests-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2001-random-forests-zh-original-v1.mp3"
           }
         },
         {
@@ -62093,7 +62318,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2001-random-forests-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2001-random-forests-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2001-random-forests-en-v1.mp3"
           }
         }
       ],
@@ -62514,11 +62741,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2001-random-forests/event.json",
-      "variantFile": "archive/events/ai100-2001-random-forests/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2001-random-forests/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Random Forests”",
       "zh": "“随机森林”"
@@ -62616,7 +62842,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-1990-boosting/boosting-paper-first-page.svg",
       "overviewImageAssetId": "asset-1990-boosting-paper-first-page",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1990-boosting-audio-zh-original-v1",
@@ -62630,7 +62855,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1990-boosting-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1990-boosting-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1990-boosting-zh-original-v1.mp3"
           }
         },
         {
@@ -62645,7 +62872,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1990-boosting-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1990-boosting-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1990-boosting-en-v1.mp3"
           }
         }
       ],
@@ -63048,11 +63277,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1990-boosting/event.json",
-      "variantFile": "archive/events/ai100-1990-boosting/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1990-boosting/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“The Strength of Weak Learnability”",
       "zh": "“弱可学习性的能力”"
@@ -63164,7 +63392,6 @@ const milestones = [
         "resources/images/external/ai100-1997-adaboost/yoav-freund-portrait.png",
         "resources/images/bench-council-ai100/explainers/1997-1997-adaboost_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1997-adaboost-audio-zh-original-v1",
@@ -63178,7 +63405,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1997-adaboost-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1997-adaboost-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1997-adaboost-zh-original-v1.mp3"
           }
         },
         {
@@ -63193,7 +63422,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1997-adaboost-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1997-adaboost-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1997-adaboost-en-v1.mp3"
           }
         }
       ],
@@ -63614,11 +63845,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1997-adaboost/event.json",
-      "variantFile": "archive/events/ai100-1997-adaboost/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1997-adaboost/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting”",
       "zh": "“在线学习的决策理论推广及其在提升法中的应用”"
@@ -63714,7 +63944,6 @@ const milestones = [
         "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png",
         "resources/images/bench-council-ai100/explainers/2001-2001-gradient-boosting_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2001-gradient-boosting-audio-zh-original-v1",
@@ -63728,7 +63957,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2001-gradient-boosting-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2001-gradient-boosting-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2001-gradient-boosting-zh-original-v1.mp3"
           }
         },
         {
@@ -63743,7 +63974,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2001-gradient-boosting-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2001-gradient-boosting-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2001-gradient-boosting-en-v1.mp3"
           }
         }
       ],
@@ -64164,11 +64397,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2001-gradient-boosting/event.json",
-      "variantFile": "archive/events/ai100-2001-gradient-boosting/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2001-gradient-boosting/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Greedy Function Approximation: A Gradient Boosting Machine”",
       "zh": "“贪心函数逼近：梯度提升机”"
@@ -64280,7 +64512,6 @@ const milestones = [
         "resources/images/external/ai100-2016-xgboost/tianqi-chen-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2016-2016-xgboost_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2016-xgboost-audio-zh-original-v1",
@@ -64294,7 +64525,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2016-xgboost-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2016-xgboost-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2016-xgboost-zh-original-v1.mp3"
           }
         },
         {
@@ -64309,7 +64542,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2016-xgboost-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2016-xgboost-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2016-xgboost-en-v1.mp3"
           }
         }
       ],
@@ -64730,11 +64965,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2016-xgboost/event.json",
-      "variantFile": "archive/events/ai100-2016-xgboost/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2016-xgboost/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“XGBoost: A Scalable Tree Boosting System”",
       "zh": "“XGBoost：可扩展树提升系统”"
@@ -64848,7 +65082,6 @@ const milestones = [
         "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2017-2017-lightgbm_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2017-lightgbm-audio-zh-original-v1",
@@ -64862,7 +65095,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-lightgbm-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-lightgbm-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-lightgbm-zh-original-v1.mp3"
           }
         },
         {
@@ -64877,7 +65112,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2017-lightgbm-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2017-lightgbm-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-lightgbm-en-v1.mp3"
           }
         }
       ],
@@ -65298,11 +65535,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2017-lightgbm/event.json",
-      "variantFile": "archive/events/ai100-2017-lightgbm/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2017-lightgbm/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“LightGBM: A Highly Efficient Gradient Boosting Decision Tree”",
       "zh": "“LightGBM：高效梯度提升决策树”"
@@ -65399,7 +65635,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1985-bayesian-network_dag.svg",
         "resources/images/bench-council-ai100/explainers/1985-bayesian-network_message-pass.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1985-bayesian-network-audio-zh-original-v1",
@@ -65413,7 +65648,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1985-bayesian-network-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1985-bayesian-network-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1985-bayesian-network-zh-original-v1.mp3"
           }
         },
         {
@@ -65428,7 +65665,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1985-bayesian-network-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1985-bayesian-network-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1985-bayesian-network-en-v1.mp3"
           }
         }
       ],
@@ -65814,11 +66053,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1985-bayesian-network/event.json",
-      "variantFile": "archive/events/1985-bayesian-network/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1985-bayesian-network/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Directed acyclic graph plus conditional probabilities\"",
       "zh": "\"有向无环图加条件概率\""
@@ -65931,7 +66169,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2003-lda_topic-simplex.svg",
         "resources/images/bench-council-ai100/explainers/2003-lda_plate-model.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2003-lda-audio-zh-original-v1",
@@ -65945,7 +66182,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2003-lda-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2003-lda-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2003-lda-zh-original-v1.mp3"
           }
         },
         {
@@ -65960,7 +66199,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2003-lda-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2003-lda-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2003-lda-en-v1.mp3"
           }
         }
       ],
@@ -66350,11 +66591,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2003-lda/event.json",
-      "variantFile": "archive/events/2003-lda/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/2003-lda/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"latent Dirichlet allocation\"",
       "zh": "\"潜在狄利克雷分配\""
@@ -66466,7 +66706,6 @@ const milestones = [
         "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2001-2001-crf_process.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2001-crf-audio-zh-original-v1",
@@ -66480,7 +66719,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2001-crf-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2001-crf-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2001-crf-zh-original-v1.mp3"
           }
         },
         {
@@ -66495,7 +66736,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2001-crf-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2001-crf-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2001-crf-en-v1.mp3"
           }
         }
       ],
@@ -66916,11 +67159,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2001-crf/event.json",
-      "variantFile": "archive/events/ai100-2001-crf/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-2001-crf/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "“Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data”",
       "zh": "“条件随机场：用于序列分割与标注的概率模型”"
@@ -67017,7 +67259,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_population-cycle.svg",
         "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1975-genetic-algorithm-audio-zh-original-v1",
@@ -67031,7 +67272,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1975-genetic-algorithm-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1975-genetic-algorithm-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1975-genetic-algorithm-zh-original-v1.mp3"
           }
         },
         {
@@ -67046,7 +67289,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1975-genetic-algorithm-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1975-genetic-algorithm-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1975-genetic-algorithm-en-v1.mp3"
           }
         }
       ],
@@ -67432,11 +67677,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1975-genetic-algorithm/event.json",
-      "variantFile": "archive/events/1975-genetic-algorithm/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1975-genetic-algorithm/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"adaptation in natural and artificial systems\"",
       "zh": "\"自然与人工系统中的适应\""
@@ -67564,7 +67808,6 @@ const milestones = [
         "resources/images/external/1983-simulated-annealing/scott-kirkpatrick-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1983-simulated-annealing-audio-zh-original-v1",
@@ -67578,7 +67821,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1983-simulated-annealing-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1983-simulated-annealing-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1983-simulated-annealing-zh-original-v1.mp3"
           }
         },
         {
@@ -67593,7 +67838,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1983-simulated-annealing-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1983-simulated-annealing-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1983-simulated-annealing-en-v1.mp3"
           }
         }
       ],
@@ -68017,11 +68264,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1983-simulated-annealing/event.json",
-      "variantFile": "archive/events/1983-simulated-annealing/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1983-simulated-annealing/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"optimization by simulated annealing\"",
       "zh": "\"通过模拟退火进行优化\""
@@ -68137,7 +68383,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg",
       "overviewImageAssetId": "asset-annual-001-swin-transformer-v2-portrait-ze-liu",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-001-swin-transformer-v2-audio-zh-original-v1",
@@ -68151,7 +68396,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-001-swin-transformer-v2-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-001-swin-transformer-v2-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-001-swin-transformer-v2-zh-original-v1.mp3"
           }
         },
         {
@@ -68166,7 +68413,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-001-swin-transformer-v2-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-001-swin-transformer-v2-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-001-swin-transformer-v2-en-v1.mp3"
           }
         }
       ],
@@ -68837,7 +69086,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-001-swin-transformer-v2/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-001-swin-transformer-v2/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-001-swin-transformer-v2/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -68987,7 +69236,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2022-simmim/yue-cao-portrait.jpeg",
       "overviewImageAssetId": "asset-annual-002-simmim-portrait-yue-cao",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-002-simmim-audio-zh-original-v1",
@@ -69001,7 +69249,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-002-simmim-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-002-simmim-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-002-simmim-zh-original-v1.mp3"
           }
         },
         {
@@ -69016,7 +69266,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-002-simmim-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-002-simmim-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-002-simmim-en-v1.mp3"
           }
         }
       ],
@@ -69737,7 +69989,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-002-simmim/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-002-simmim/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-002-simmim/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -69870,7 +70122,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg",
       "overviewImageAssetId": "asset-annual-024-whisper-portrait-ilya-sutskever",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-024-whisper-audio-zh-original-v1",
@@ -69884,7 +70135,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-024-whisper-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-024-whisper-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-024-whisper-zh-original-v1.mp3"
           }
         },
         {
@@ -69899,7 +70152,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-024-whisper-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-024-whisper-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-024-whisper-en-v1.mp3"
           }
         }
       ],
@@ -70445,7 +70700,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-024-whisper/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-024-whisper/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-024-whisper/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -70658,7 +70913,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg",
       "overviewImageAssetId": "asset-annual-039-palm-portrait-jeff-dean",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-039-palm-audio-zh-original-v1",
@@ -70672,7 +70926,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-039-palm-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-039-palm-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-039-palm-zh-original-v1.mp3"
           }
         },
         {
@@ -70687,7 +70943,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-039-palm-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-039-palm-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-039-palm-en-v1.mp3"
           }
         }
       ],
@@ -71233,7 +71491,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-039-palm/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-039-palm/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-039-palm/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -71479,7 +71737,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/benchcouncil-ai100-annual/portraits/jeff-wu.jpg",
       "overviewImageAssetId": "asset-annual-048-instructgpt-portrait-jeff-wu",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-048-instructgpt-audio-zh-original-v1",
@@ -71493,7 +71750,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-048-instructgpt-zh-original-v1.mp3"
           }
         },
         {
@@ -71508,7 +71767,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-048-instructgpt-en-v1.mp3"
           }
         }
       ],
@@ -72172,7 +72433,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-048-instructgpt/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-048-instructgpt/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-048-instructgpt/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -72289,7 +72550,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/benchcouncil-ai100-annual/portraits/denny-zhou.jpg",
       "overviewImageAssetId": "asset-annual-059-chain-of-thought-portrait-denny-zhou",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-059-chain-of-thought-prompting-audio-zh-original-v1",
@@ -72303,7 +72563,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-059-chain-of-thought-prompting-zh-original-v1.mp3"
           }
         },
         {
@@ -72318,7 +72580,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-059-chain-of-thought-prompting-en-v1.mp3"
           }
         }
       ],
@@ -72896,7 +73160,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-059-chain-of-thought-prompting/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-059-chain-of-thought-prompting/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-059-chain-of-thought-prompting/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -72996,7 +73260,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2022-chatgpt/hugging-face-rlhf.png",
       "overviewImageAssetId": "asset-annual-058-chatgpt-hugging-face-rlhf",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-058-chatgpt-audio-zh-original-v1",
@@ -73010,7 +73273,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-058-chatgpt-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-058-chatgpt-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-058-chatgpt-zh-original-v1.mp3"
           }
         },
         {
@@ -73025,7 +73290,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-058-chatgpt-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-058-chatgpt-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-058-chatgpt-en-v1.mp3"
           }
         }
       ],
@@ -73533,7 +73800,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-058-chatgpt/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-058-chatgpt/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-058-chatgpt/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -73668,7 +73935,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg",
       "overviewImageAssetId": "asset-annual-081-latent-diffusion-models-portrait-robin-rombach",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-081-latent-diffusion-models-audio-zh-original-v1",
@@ -73682,7 +73948,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-081-latent-diffusion-models-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-081-latent-diffusion-models-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-081-latent-diffusion-models-zh-original-v1.mp3"
           }
         },
         {
@@ -73697,7 +73965,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-081-latent-diffusion-models-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-081-latent-diffusion-models-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-081-latent-diffusion-models-en-v1.mp3"
           }
         }
       ],
@@ -74351,7 +74621,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-081-latent-diffusion-models/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-081-latent-diffusion-models/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-081-latent-diffusion-models/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -74532,7 +74802,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/benchcouncil-ai100-annual/portraits/pushmeet-kohli.jpg",
       "overviewImageAssetId": "asset-annual-114-alphatensor-portrait-pushmeet-kohli",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-114-alphatensor-audio-zh-original-v1",
@@ -74546,7 +74815,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3"
           }
         },
         {
@@ -74561,7 +74832,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-114-alphatensor-en-v1.mp3"
           }
         }
       ],
@@ -75124,7 +75397,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-114-alphatensor/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-114-alphatensor/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-114-alphatensor/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -75226,7 +75499,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/benchcouncil-ai100-annual/portraits/chelsea-finn.jpg",
       "overviewImageAssetId": "asset-annual-117-saycan-portrait-chelsea-finn",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-117-saycan-audio-zh-original-v1",
@@ -75240,7 +75512,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-117-saycan-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-117-saycan-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-117-saycan-zh-original-v1.mp3"
           }
         },
         {
@@ -75255,7 +75529,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-117-saycan-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-117-saycan-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-117-saycan-en-v1.mp3"
           }
         }
       ],
@@ -75853,7 +76129,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-117-saycan/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-117-saycan/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-117-saycan/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -76018,7 +76294,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2023-llama/edouard-grave.jpg",
       "overviewImageAssetId": "asset-annual-035-llama-portrait-edouard-grave",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-035-llama-audio-zh-original-v1",
@@ -76032,7 +76307,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-035-llama-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-035-llama-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-035-llama-zh-original-v1.mp3"
           }
         },
         {
@@ -76047,7 +76324,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-035-llama-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-035-llama-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-035-llama-en-v1.mp3"
           }
         }
       ],
@@ -76610,7 +76889,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-035-llama/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-035-llama/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-035-llama/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -76710,7 +76989,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2023-gpt-4/gpt-4-technical-report-exam-performance.jpg",
       "overviewImageAssetId": "asset-annual-051-gpt-4-paper-exam-performance",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-051-gpt-4-audio-zh-original-v1",
@@ -76724,7 +77002,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-051-gpt-4-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-051-gpt-4-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-051-gpt-4-zh-original-v1.mp3"
           }
         },
         {
@@ -76739,7 +77019,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-051-gpt-4-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-051-gpt-4-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-051-gpt-4-en-v1.mp3"
           }
         }
       ],
@@ -77298,7 +77580,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-051-gpt-4/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-051-gpt-4/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-051-gpt-4/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -77399,7 +77681,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2023-claude/claude-official-launch-artwork.png",
       "overviewImageAssetId": "asset-annual-057-claude-official-launch-artwork",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-057-claude-audio-zh-original-v1",
@@ -77413,7 +77694,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-057-claude-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-057-claude-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-057-claude-zh-original-v1.mp3"
           }
         },
         {
@@ -77428,7 +77711,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-057-claude-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-057-claude-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-057-claude-en-v1.mp3"
           }
         }
       ],
@@ -78037,7 +78322,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-057-claude/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-057-claude/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-057-claude/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -78154,7 +78439,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2023-blip-2/junnan-li.jpg",
       "overviewImageAssetId": "asset-annual-028-blip-2-portrait-junnan-li",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-028-blip-2-audio-zh-original-v1",
@@ -78168,7 +78452,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-028-blip-2-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-028-blip-2-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-028-blip-2-zh-original-v1.mp3"
           }
         },
         {
@@ -78183,7 +78469,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-028-blip-2-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-028-blip-2-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-028-blip-2-en-v1.mp3"
           }
         }
       ],
@@ -78767,7 +79055,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-028-blip-2/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-028-blip-2/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-028-blip-2/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -78900,7 +79188,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2023-llava/haotian-liu.jpg",
       "overviewImageAssetId": "asset-annual-063-llava-portrait-haotian-liu",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-063-llava-audio-zh-original-v1",
@@ -78914,7 +79201,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-063-llava-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-063-llava-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-063-llava-zh-original-v1.mp3"
           }
         },
         {
@@ -78929,7 +79218,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-063-llava-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-063-llava-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-063-llava-en-v1.mp3"
           }
         }
       ],
@@ -79509,7 +79800,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-063-llava/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-063-llava/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-063-llava/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -79627,7 +79918,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2023-palm-e/pete-florence.jpg",
       "overviewImageAssetId": "asset-annual-037-palm-e-portrait-pete-florence",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-037-palm-e-audio-zh-original-v1",
@@ -79641,7 +79931,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-037-palm-e-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-037-palm-e-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-037-palm-e-zh-original-v1.mp3"
           }
         },
         {
@@ -79656,7 +79948,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-037-palm-e-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-037-palm-e-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-037-palm-e-en-v1.mp3"
           }
         }
       ],
@@ -80271,7 +80565,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-037-palm-e/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-037-palm-e/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-037-palm-e/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -80389,7 +80683,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2023-controlnet/maneesh-agrawala.jpg",
       "overviewImageAssetId": "asset-annual-094-controlnet-portrait-maneesh-agrawala",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-094-controlnet-audio-zh-original-v1",
@@ -80403,7 +80696,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-094-controlnet-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-094-controlnet-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-094-controlnet-zh-original-v1.mp3"
           }
         },
         {
@@ -80418,7 +80713,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-094-controlnet-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-094-controlnet-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-094-controlnet-en-v1.mp3"
           }
         }
       ],
@@ -81054,7 +81351,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-094-controlnet/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-094-controlnet/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-094-controlnet/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -81236,7 +81533,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg",
       "overviewImageAssetId": "asset-annual-101-segment-anything-portrait-alexander-kirillov",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-101-segment-anything-audio-zh-original-v1",
@@ -81250,7 +81546,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-101-segment-anything-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-101-segment-anything-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-101-segment-anything-zh-original-v1.mp3"
           }
         },
         {
@@ -81265,7 +81563,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-101-segment-anything-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-101-segment-anything-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-101-segment-anything-en-v1.mp3"
           }
         }
       ],
@@ -81920,7 +82220,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-101-segment-anything/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-101-segment-anything/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-101-segment-anything/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -82020,7 +82320,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2023-gen2/gen2-official-text-to-video-example.jpg",
       "overviewImageAssetId": "asset-annual-087-gen2-official-text-to-video-example",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-087-gen2-audio-zh-original-v1",
@@ -82034,7 +82333,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-087-gen2-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-087-gen2-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-087-gen2-zh-original-v1.mp3"
           }
         },
         {
@@ -82049,7 +82350,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-087-gen2-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-087-gen2-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-087-gen2-en-v1.mp3"
           }
         }
       ],
@@ -82678,7 +82981,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-087-gen2/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-087-gen2/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-087-gen2/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -82843,7 +83146,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/external/ai100-2023-esmfold/brian-hie.jpg",
       "overviewImageAssetId": "asset-annual-110-esmfold-portrait-brian-hie",
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-annual-2022-2023-110-esmfold-audio-zh-original-v1",
@@ -82857,7 +83159,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-110-esmfold-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-110-esmfold-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-110-esmfold-zh-original-v1.mp3"
           }
         },
         {
@@ -82872,7 +83176,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-110-esmfold-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-110-esmfold-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-annual-2022-2023-110-esmfold-en-v1.mp3"
           }
         }
       ],
@@ -83457,7 +83763,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-annual-2022-2023-110-esmfold/event.json",
-      "variantFile": "archive/events/ai100-annual-2022-2023-110-esmfold/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-annual-2022-2023-110-esmfold/event.json",
       "presentationMode": "archive"
     },
     "quote": {
@@ -83607,18 +83913,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
       "overviewImageAssetId": "asset-1956-dartmouth-historical-04",
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
-          "url": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
-          "title": "1956年：人工智能的诞生",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-1956-dartmouth-audio-zh-original-v1",
@@ -83632,7 +83926,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1956-dartmouth-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1956-dartmouth-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1956-dartmouth-zh-original-v1.mp3"
           }
         },
         {
@@ -83647,7 +83943,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1956-dartmouth-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1956-dartmouth-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1956-dartmouth-en-v1.mp3"
           }
         }
       ],
@@ -83891,11 +84189,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/1956-dartmouth/event.json",
-      "variantFile": "archive/events/1956-dartmouth/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/1956-dartmouth/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
     "quote": {
       "en": "\"The Dartmouth proposal framed artificial intelligence as a research program: learning and other features of intelligence could, in principle, be described precisely enough for machines to simulate them.\"",
       "zh": "\"达特茅斯提案把人工智能定义为一个可研究的科学计划：学习以及智能的其他特征，原则上可以被精确描述，并由机器加以模拟。\""
@@ -83949,21 +84246,21 @@ const milestones = [
       "en": "The Perceptron and Connectionism"
     },
     "subtitle": {
-      "zh": "AI创世纪",
-      "en": "Genesis of AI"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "en": "Genesis of AI (1950s-1970s)",
-      "zh": "AI创世纪（20世纪50年代至70年代）"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
-        "en": "Cornell Aeronautical Laboratory",
-        "zh": "康奈尔航空实验室"
+        "en": "Cornell University",
+        "zh": "康奈尔大学"
       },
       "country": {
-        "en": "New York, United States",
-        "zh": "美国纽约州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         42.8864,
@@ -83971,8 +84268,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>1957 年，弗兰克·罗森布拉特在康奈尔航空实验室开展感知机研究，并在随后发表的论文中把它描述为一种受神经系统启发的信息存储与组织模型。感知机根据训练样本调整连接权重，使机器不必依赖人工编写的完整规则，也能学习把输入模式分到不同类别。</p><p>Mark I 感知机随后把这一思想做成带有感光输入和可调连接的实验装置。它的能力仍受单层线性分类边界限制，却首次以醒目的理论和硬件演示表明“机器可以从样本中学习”，由此成为连接主义、模式识别和后来神经网络研究的重要起点。</p>",
-      "en": "<p>Beginning in 1957, Frank Rosenblatt developed the perceptron at the Cornell Aeronautical Laboratory and later described it as a brain-inspired model for information storage and organization. By adjusting connection weights from training examples, a perceptron could learn to assign input patterns to categories without requiring a complete set of hand-written decision rules.</p><p>The Mark I Perceptron soon turned the idea into an experimental machine with a light-sensing input and adjustable connections. Its single-layer decision boundary was limited to linearly separable problems, but the project gave a striking theoretical and hardware demonstration that a machine could learn from examples. It became a foundational reference for connectionism, pattern recognition, and later neural-network research.</p>"
+      "zh": "<p>弗兰克·罗森布拉特在 1957 年技术报告和 1958 年论文中提出感知机，把一组输入通过可调权重连接到决策单元。训练时，模型根据分类错误增减权重，使决策边界逐步移动；康奈尔航空实验室随后制造 Mark I Perceptron，把部分连接实现为硬件并用于视觉模式实验。</p><p>感知机的重要性在于展示机器可以从标注样本中调整内部参数，而不必由程序员写出全部识别规则。单层感知机只能学习线性可分边界，无法解决 XOR 等问题，这些限制后来引发重要争论；但“加权求和、误差驱动更新和分布式单元”的基本模式成为神经网络历史的关键起点。</p>",
+      "en": "<p>Frank Rosenblatt introduced the perceptron in a 1957 technical report and a 1958 paper, connecting a set of inputs through adjustable weights to a decision unit. During training, the model increases or decreases weights in response to classification errors so the decision boundary moves toward a solution. Cornell Aeronautical Laboratory later built the Mark I Perceptron, implementing parts of the connections in hardware for visual-pattern experiments.</p><p>The perceptron demonstrated that a machine could adjust internal parameters from labeled examples instead of requiring a programmer to write every recognition rule. A single-layer perceptron can learn only linearly separable boundaries and cannot solve problems such as XOR, limitations that later shaped major debates. Its pattern of weighted sums, error-driven updates, and distributed units nevertheless became a crucial starting point for neural-network research.</p>"
     },
     "figures": [
       {
@@ -83985,7 +84282,7 @@ const milestones = [
           "zh": "感知机发明者",
           "en": "Inventor of the perceptron"
         },
-        "avatar": "resources/images/figures/frank-rosenblatt.png",
+        "avatar": "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg",
         "avatarStyle": "transform: scale(1.18); transform-origin: 44% 38%;",
         "figureType": "person",
         "organizationIds": [],
@@ -83998,21 +84295,10 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg",
         "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg",
         "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg",
+        "resources/images/figures/frank-rosenblatt.png",
         "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png",
         "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg",
         "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png"
-      ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
-          "url": "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
-          "title": "1957感知机：人工智能的最初火花",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
       ],
       "audios": [
         {
@@ -84027,7 +84313,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1957-perceptron-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1957-perceptron-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1957-perceptron-zh-original-v1.mp3"
           }
         },
         {
@@ -84042,7 +84330,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1957-perceptron-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1957-perceptron-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1957-perceptron-en-v1.mp3"
           }
         }
       ],
@@ -84051,6 +84341,7 @@ const milestones = [
         "asset-1958-rosenblatt-perceptron-threshold",
         "asset-1958-rosenblatt-perceptron-sensor-grid",
         "asset-1957-perceptron-people-01",
+        "asset-1957-perceptron-figure-avatar-frank-rosenblatt",
         "asset-1957-perceptron-papers-01",
         "asset-1957-perceptron-historical-01",
         "asset-1957-perceptron-historical-01-2",
@@ -84158,6 +84449,37 @@ const milestones = [
           }
         },
         "role": "supporting-image",
+        "type": "image",
+        "figureIds": [
+          "frank-rosenblatt"
+        ]
+      },
+      "resources/images/figures/frank-rosenblatt.png": {
+        "caption": {
+          "zh": "弗兰克·罗森布拉特肖像",
+          "en": "Frank Rosenblatt portrait"
+        },
+        "subcaption": {
+          "zh": "全局人物库迁移期间保留的事件专属人物图片。",
+          "en": "Event-specific biographical image retained during the global figure migration."
+        },
+        "license": {
+          "en": "The original image source and reuse license were not recorded before the global figure migration; source review is required.",
+          "zh": "全局人物库迁移前未记录该图片的原始来源与再利用许可，仍需补充来源审核。"
+        },
+        "usage": {
+          "en": "Used as a biographical figure image in this exhibition; review the recorded source terms before redistribution.",
+          "zh": "用于本展览的人物资料展示；再次分发前应复核所记录来源的使用条款。"
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "needs-source",
+          "license": {
+            "en": "The original image source and reuse license were not recorded before the global figure migration; source review is required.",
+            "zh": "全局人物库迁移前未记录该图片的原始来源与再利用许可，仍需补充来源审核。"
+          }
+        },
+        "role": "portrait",
         "type": "image",
         "figureIds": [
           "frank-rosenblatt"
@@ -84271,21 +84593,6 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
-          "type": {
-            "zh": "论文",
-            "en": "Paper"
-          },
-          "label": {
-            "zh": "《感知机：大脑中信息存储与组织的概率模型》",
-            "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
-          },
-          "url": "https://doi.org/10.1037/h0042519",
-          "purpose": "core-evidence",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-cornell-chronicle-perceptron-retrospective",
           "type": {
             "zh": "新闻报道",
@@ -84314,12 +84621,27 @@ const milestones = [
           "purpose": "historical-context",
           "reliability": "reference-only",
           "sourceType": "archive"
+        },
+        {
+          "id": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《感知机：大脑中信息存储与组织的概率模型》",
+            "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
+          },
+          "url": "https://doi.org/10.1037/h0042519",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
         }
       ],
       "sourceIds": [
-        "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "source-cornell-chronicle-perceptron-retrospective",
-        "source-smithsonian-mark-i-perceptron-object-record"
+        "source-smithsonian-mark-i-perceptron-object-record",
+        "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -84489,38 +84811,76 @@ const milestones = [
       }
     ],
     "analysis": null,
-    "quizzes": [],
+    "quizzes": [
+      {
+        "id": "1958-rosenblatt-perceptron-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "感知机的基本计算是什么？",
+          "en": "What is the basic computation in a perceptron?"
+        },
+        "options": [
+          {
+            "zh": "加权求和后进行阈值决策",
+            "en": "A weighted sum followed by a threshold decision"
+          },
+          {
+            "zh": "t-SNE 困惑度搜索",
+            "en": "A t-SNE perplexity search"
+          },
+          {
+            "zh": "仅贝叶斯网络消息传递",
+            "en": "A Bayesian network message pass only"
+          },
+          {
+            "zh": "分子质谱过滤器",
+            "en": "A molecular mass spectrum filter"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "感知机通过输入加权求和并与阈值比较来分类。",
+          "en": "A perceptron classifies by summing weighted inputs and comparing the result to a threshold."
+        },
+        "sourceIds": [
+          "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in"
+        ],
+        "assetIds": [
+          "asset-1958-rosenblatt-perceptron-frank-rosenblatt"
+        ]
+      }
+    ],
     "archive": {
       "eventFile": "archive/events/1957-perceptron/event.json",
-      "variantFile": "archive/events/1957-perceptron/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/1957-perceptron/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
     "quote": {
-      "en": "\"Rosenblatt's perceptron presented a trainable model of information storage and organization, linking ideas from brain science, psychology, and machine learning.\"",
-      "zh": "\"罗森布拉特的感知机提出了一种可训练的信息存储与组织模型，把脑科学、心理学和机器学习早期思想连接起来。\""
+      "en": "\"Linear threshold learning machine\"",
+      "zh": "\"线性阈值学习机\""
     },
     "quoteMeta": {
       "speaker": "",
       "workTitle": {
-        "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
-        "zh": "感知机：大脑中信息存储与组织的概率模型"
+        "en": "The perceptron paper record",
+        "zh": "感知机论文记录"
       },
       "workAuthors": {
-        "en": "Frank Rosenblatt, Psychological Review, 1958",
-        "zh": "弗兰克·罗森布拉特，Psychological Review，1958"
+        "en": "Frank Rosenblatt",
+        "zh": "弗兰克·罗森布拉特"
       },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1037/h0042519"
     },
     "quotePage": {
-      "en": "Rosenblatt, Psychological Review, 1958",
-      "zh": "罗森布拉特，Psychological Review，1958 年论文"
+      "en": "BenchCouncil AI100: Neural networks / Rosenblatt Perceptron",
+      "zh": "BenchCouncil AI100：神经网络 / 罗森布拉特 感知机"
     },
     "quoteAttribution": {
-      "en": "<em>The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</em>, Frank Rosenblatt, Psychological Review, 1958",
-      "zh": "《感知机：大脑中信息存储与组织的概率模型》, 弗兰克·罗森布拉特，Psychological Review，1958"
+      "en": "<em>The perceptron paper record</em>, Frank Rosenblatt",
+      "zh": "《感知机论文记录》, 弗兰克·罗森布拉特"
     }
   },
   {
@@ -84593,18 +84953,6 @@ const milestones = [
         "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg",
         "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_01.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
-          "url": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
-          "title": "1969第一次人工智能寒冬：逻辑谜题如何冰封AI之梦",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-1969-ai-winter-audio-zh-original-v1",
@@ -84618,7 +84966,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1969-ai-winter-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1969-ai-winter-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1969-ai-winter-zh-original-v1.mp3"
           }
         },
         {
@@ -84633,7 +84983,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1969-ai-winter-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1969-ai-winter-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1969-ai-winter-en-v1.mp3"
           }
         }
       ],
@@ -84834,11 +85186,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/1969-ai-winter/event.json",
-      "variantFile": "archive/events/1969-ai-winter/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/1969-ai-winter/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
     "quote": {
       "en": "\"Minsky and Papert's Perceptrons became a landmark critique of single-layer perceptrons, sharpening the field's understanding of what simple neural models could and could not represent.\"",
       "zh": "\"明斯基和帕珀特的《感知机》成为对单层感知机的重要批判，促使研究者更清楚地认识简单神经模型能表示什么、不能表示什么。\""
@@ -84874,7 +85225,7 @@ const milestones = [
   {
     "id": "milestone-deep-learning-ai100-1980-neocognitron",
     "archiveEventId": "ai100-1980-neocognitron",
-    "archiveVariantId": "bench-council-ai100",
+    "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
     "sourceKind": "archive",
     "storyline": {
@@ -84940,7 +85291,6 @@ const milestones = [
         "resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-1980-neocognitron-audio-zh-original-v1",
@@ -84954,7 +85304,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1980-neocognitron-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1980-neocognitron-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1980-neocognitron-zh-original-v1.mp3"
           }
         },
         {
@@ -84969,7 +85321,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-1980-neocognitron-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-1980-neocognitron-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-1980-neocognitron-en-v1.mp3"
           }
         }
       ],
@@ -85364,11 +85718,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-1980-neocognitron/event.json",
-      "variantFile": "archive/events/ai100-1980-neocognitron/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/ai100-1980-neocognitron/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position\"",
       "zh": "\"一种不受位置平移影响的模式识别机制自组织神经网络模型\""
@@ -85398,7 +85751,7 @@ const milestones = [
   {
     "id": "milestone-deep-learning-1982-hopfield-network",
     "archiveEventId": "1982-hopfield-network",
-    "archiveVariantId": "bench-council-ai100",
+    "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
     "sourceKind": "archive",
     "storyline": {
@@ -85465,7 +85818,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg",
         "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1982-hopfield-network-audio-zh-original-v1",
@@ -85479,7 +85831,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1982-hopfield-network-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1982-hopfield-network-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1982-hopfield-network-zh-original-v1.mp3"
           }
         },
         {
@@ -85494,7 +85848,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1982-hopfield-network-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1982-hopfield-network-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1982-hopfield-network-en-v1.mp3"
           }
         }
       ],
@@ -85881,11 +86237,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1982-hopfield-network/event.json",
-      "variantFile": "archive/events/1982-hopfield-network/variants/bench-council-ai100.json",
+      "defaultPresentationFile": "archive/events/1982-hopfield-network/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"neural networks and physical systems\"",
       "zh": "\"神经网络与物理系统\""
@@ -86017,18 +86372,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
       "overviewImageAssetId": "asset-1986-backpropagation-paper-02",
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
-          "url": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
-          "title": "1986：神经网络的复兴与反向传播算法_720p",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-1986-backpropagation-audio-zh-original-v1",
@@ -86042,7 +86385,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1986-backpropagation-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1986-backpropagation-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1986-backpropagation-zh-original-v1.mp3"
           }
         },
         {
@@ -86057,7 +86402,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1986-backpropagation-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1986-backpropagation-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1986-backpropagation-en-v1.mp3"
           }
         }
       ],
@@ -86285,11 +86632,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/1986-backpropagation/event.json",
-      "variantFile": "archive/events/1986-backpropagation/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/1986-backpropagation/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
     "quote": {
       "en": "\"Rumelhart, Hinton, and Williams showed that back-propagating errors could train internal representations in multilayer neural networks, making feature learning practical again.\"",
       "zh": "\"鲁梅尔哈特、辛顿和威廉姆斯证明，反向传播误差可以训练多层神经网络的内部表示，使特征学习重新变得可行。\""
@@ -86407,18 +86753,6 @@ const milestones = [
         "resources/images/1986-rnn/people/1986-rnn_people_01.png",
         "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
-          "url": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
-          "title": "1986追寻AI的记忆：1986年RNN的突破",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-1986-rnn-audio-zh-original-v1",
@@ -86432,7 +86766,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1986-rnn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1986-rnn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1986-rnn-zh-original-v1.mp3"
           }
         },
         {
@@ -86447,7 +86783,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1986-rnn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1986-rnn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1986-rnn-en-v1.mp3"
           }
         }
       ],
@@ -86623,11 +86961,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/1986-rnn/event.json",
-      "variantFile": "archive/events/1986-rnn/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/1986-rnn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
     "quote": {
       "en": "\"Recurrent networks introduced explicit state over time, allowing neural models to process sequences by carrying information from earlier inputs into later computations.\"",
       "zh": "\"循环神经网络引入了随时间变化的内部状态，使神经模型能够把早先输入的信息带入后续计算，从而处理序列数据。\""
@@ -86681,12 +87018,12 @@ const milestones = [
       "en": "Convolutional Networks and LeNet"
     },
     "subtitle": {
-      "zh": "神经网络与连接主义的复兴",
-      "en": "Neural Networks and Connectionism"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)",
-      "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
@@ -86694,8 +87031,8 @@ const milestones = [
         "zh": "贝尔实验室"
       },
       "country": {
-        "en": "New Jersey, United States",
-        "zh": "美国新泽西州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         40.684,
@@ -86703,8 +87040,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>1989 年，杨立昆及合作者发表手写邮政编码识别研究，证明带有局部连接和共享权重的多层网络可以用反向传播端到端训练。卷积层在图像不同位置重复使用同一组滤波器，既减少参数，也让模型能够识别平移后仍相似的笔画结构。</p><p>这条路线后来发展为 LeNet-5，并在银行支票和文档识别中得到实际应用。CNN 把特征提取与分类放进同一个学习系统，取代了大量手工设计视觉特征的步骤，为 AlexNet 之后的大规模图像识别奠定了直接的架构基础。</p>",
-      "en": "<p>In 1989, Yann LeCun and collaborators published a system for handwritten ZIP-code recognition, showing that a multilayer network with local connections and shared weights could be trained end to end with backpropagation. Convolutional layers reused the same filters across image locations, reducing the number of parameters while detecting similar strokes after small shifts.</p><p>This line of work later matured into LeNet-5 and practical systems for reading bank checks and other documents. CNNs placed feature extraction and classification inside one learned pipeline, reducing dependence on hand-engineered visual features. The architecture became the direct foundation for the large-scale image-recognition systems that followed AlexNet.</p>"
+      "zh": "<p>杨立昆及合作者在 1989 年证明，用反向传播训练的卷积神经网络可以识别手写邮政编码。局部感受野只连接图像的小区域，共享权重让同一特征检测器在不同位置重复使用，逐层下采样则降低对微小位移的敏感性；整个系统从像素到类别共同训练。</p><p>后来形成的 LeNet-5 把卷积、子采样和分类器整合为文档识别流水线，并实际用于支票和邮政字符处理。这一技术路线以较少参数利用图像的空间结构，取代大量手工特征。它在 2012 年规模化 CNN 浪潮之前，已证明端到端卷积学习具有工程价值。</p>",
+      "en": "<p>Yann LeCun and colleagues showed in 1989 that a convolutional neural network trained with backpropagation could recognize handwritten ZIP codes. Local receptive fields connect only to small image regions, shared weights reuse the same feature detector across positions, and progressive subsampling reduces sensitivity to small shifts. The complete system is trained jointly from pixels to classes.</p><p>The later LeNet-5 architecture integrated convolution, subsampling, and classification into a document-recognition pipeline used for checks and postal characters. This line of work exploited image structure with relatively few parameters and replaced extensive hand-designed features. Long before the scaled CNN wave of 2012, it demonstrated that end-to-end convolutional learning could deliver practical engineering value.</p>"
     },
     "figures": [
       {
@@ -86726,23 +87063,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/1989-cnn/yann-lecun-portrait.jpg",
+        "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
         "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg",
         "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg",
-        "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
+        "resources/images/external/1989-cnn/yann-lecun-portrait.jpg",
         "resources/images/1989-cnn/people/1989-cnn_people_02.jpg"
-      ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
-          "url": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
-          "title": "1989CNN-计算机视觉的隐秘历史",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
       ],
       "audios": [
         {
@@ -86757,7 +87082,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1989-cnn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1989-cnn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1989-cnn-zh-original-v1.mp3"
           }
         },
         {
@@ -86772,22 +87099,24 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1989-cnn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1989-cnn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1989-cnn-en-v1.mp3"
           }
         }
       ],
       "assetIds": [
-        "asset-1989-cnn-yann-lecun-external",
+        "asset-1989-cnn-people-01",
         "asset-1989-lenet-zip-code-cnn",
         "asset-1989-cnn-architecture-01",
-        "asset-1989-cnn-people-01",
+        "asset-1989-cnn-yann-lecun-external",
         "asset-1989-cnn-people-02",
         "asset-1989-cnn-audio-zh-original-v1",
         "asset-1989-cnn-audio-en-v1"
       ]
     },
     "imageMeta": {
-      "resources/images/external/1989-cnn/yann-lecun-portrait.jpg": {
+      "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
         "caption": {
           "zh": "杨立昆肖像",
           "en": "Yann LeCun portrait"
@@ -86796,23 +87125,17 @@ const milestones = [
           "zh": "LeNet 主要研究者。",
           "en": "Lead researcher of LeNet."
         },
-        "sourceName": {
-          "zh": "维基共享资源",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
         "license": {
-          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
-        "sourceId": "source-yann-lecun-s-home-page",
+        "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-          },
-          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg"
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
         },
         "role": "portrait",
         "type": "image",
@@ -86870,7 +87193,7 @@ const milestones = [
         "type": "image",
         "figureIds": []
       },
-      "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
+      "resources/images/external/1989-cnn/yann-lecun-portrait.jpg": {
         "caption": {
           "zh": "杨立昆肖像",
           "en": "Yann LeCun portrait"
@@ -86879,17 +87202,23 @@ const milestones = [
           "zh": "LeNet 主要研究者。",
           "en": "Lead researcher of LeNet."
         },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
         },
-        "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
+        "license": {
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+        },
+        "sourceId": "source-yann-lecun-s-home-page",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg"
         },
         "role": "portrait",
         "type": "image",
@@ -86960,21 +87289,6 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
-          "type": {
-            "zh": "论文",
-            "en": "Paper"
-          },
-          "label": {
-            "zh": "《反向传播应用于手写邮编识别》",
-            "en": "Backpropagation Applied to Handwritten Zip Code Recognition"
-          },
-          "url": "https://doi.org/10.1162/neco.1989.1.4.541",
-          "purpose": "core-evidence",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-lenet-5-demos-and-documentation",
           "type": {
             "zh": "项目页面",
@@ -87018,13 +87332,28 @@ const milestones = [
           "purpose": "biography",
           "reliability": "primary",
           "sourceType": "personal-page"
+        },
+        {
+          "id": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《反向传播应用于手写邮编识别》",
+            "en": "Backpropagation Applied to Handwritten Zip Code Recognition"
+          },
+          "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
         }
       ],
       "sourceIds": [
-        "source-backpropagation-applied-to-handwritten-zip-code-recognition",
         "source-lenet-5-demos-and-documentation",
         "source-gradient-based-learning-applied-to-document-recognition",
-        "source-yann-lecun-s-home-page"
+        "source-yann-lecun-s-home-page",
+        "source-backpropagation-applied-to-handwritten-zip-code-recognition"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -87207,38 +87536,76 @@ const milestones = [
       }
     ],
     "analysis": null,
-    "quizzes": [],
+    "quizzes": [
+      {
+        "id": "ai100-1989-lenet-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "LeNet 因什么任务而闻名？",
+          "en": "What kind of task made LeNet famous?"
+        },
+        "options": [
+          {
+            "zh": "识别手写数字或邮编",
+            "en": "Reading handwritten digits or ZIP codes"
+          },
+          {
+            "zh": "证明所有数学定理",
+            "en": "Solving every math theorem"
+          },
+          {
+            "zh": "只用树搜索下围棋",
+            "en": "Playing Go with tree search only"
+          },
+          {
+            "zh": "按封面颜色给书排序",
+            "en": "Sorting books by cover color"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "LeNet 展示了端到端训练的卷积网络可以识别手写内容。",
+          "en": "LeNet showed that convolutional networks trained end-to-end could recognize handwriting."
+        },
+        "sourceIds": [
+          "source-backpropagation-applied-to-handwritten-zip-code-recognition"
+        ],
+        "assetIds": [
+          "asset-1989-lenet-zip-code-cnn"
+        ]
+      }
+    ],
     "archive": {
       "eventFile": "archive/events/1989-cnn/event.json",
-      "variantFile": "archive/events/1989-cnn/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/1989-cnn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
     "quote": {
-      "en": "\"LeCun and collaborators demonstrated that convolutional networks trained with backpropagation could recognize handwritten digits by exploiting local image structure.\"",
-      "zh": "\"杨立昆及合作者展示了用反向传播训练的卷积网络可以利用图像局部结构识别手写数字，为现代计算机视觉奠定了重要基础。\""
+      "en": "\"Backpropagation Applied to Handwritten Zip Code Recognition\"",
+      "zh": "\"反向传播应用于手写邮编识别\""
     },
     "quoteMeta": {
       "speaker": "",
       "workTitle": {
         "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
-        "zh": "反向传播应用于手写邮政编码识别"
+        "zh": "反向传播应用于手写邮编识别"
       },
       "workAuthors": {
         "en": "Yann LeCun et al., Neural Computation, 1989",
-        "zh": "杨立昆等，Neural Computation，1989"
+        "zh": "杨立昆等，《Neural Computation》，1989"
       },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541"
     },
     "quotePage": {
-      "en": "LeCun et al., Neural Computation / Bell Labs publication",
-      "zh": "杨立昆等，Neural Computation / 贝尔实验室论文"
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
     },
     "quoteAttribution": {
       "en": "<em>Backpropagation Applied to Handwritten Zip Code Recognition</em>, Yann LeCun et al., Neural Computation, 1989",
-      "zh": "《反向传播应用于手写邮政编码识别》, 杨立昆等，Neural Computation，1989"
+      "zh": "《反向传播应用于手写邮编识别》, 杨立昆等，《Neural Computation》，1989"
     }
   },
   {
@@ -87262,21 +87629,21 @@ const milestones = [
       "en": "LSTM and Gated Memory"
     },
     "subtitle": {
-      "zh": "神经网络与连接主义的复兴",
-      "en": "Neural Networks and Connectionism"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)",
-      "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
-        "en": "Technical University of Munich",
-        "zh": "慕尼黑工业大学"
+        "en": "Technical University of Munich, IDSIA",
+        "zh": "慕尼黑工业大学、瑞士人工智能实验室（IDSIA）"
       },
       "country": {
-        "en": "Munich, Germany",
-        "zh": "德国慕尼黑"
+        "en": "Germany, Switzerland",
+        "zh": "德国、瑞士"
       },
       "coordinates": [
         48.1496,
@@ -87284,8 +87651,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>1997 年，塞普·霍赫赖特和于尔根·施密德胡伯提出长短期记忆网络，针对普通循环网络在长序列训练中容易出现的梯度衰减问题。原始 LSTM 通过记忆单元、输入门和输出门控制信息写入与读取，并用近似恒定的误差通路让学习信号跨越更多时间步。</p><p>后续版本又加入遗忘门，使模型能够主动清除不再需要的状态。LSTM 因而成为语音识别、手写识别、机器翻译和时间序列建模的核心架构之一，也说明在注意力机制普及之前，门控状态可以有效延长神经网络的记忆范围。</p>",
-      "en": "<p>In 1997, Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the decay of learning signals in ordinary recurrent networks. The original LSTM used memory cells with input and output gates to control writing and reading, together with a nearly constant error path that allowed useful gradients to cross many more time steps.</p><p>Later variants added a forget gate so the network could actively discard obsolete state. LSTM consequently became a core architecture for speech recognition, handwriting recognition, machine translation, and time-series modeling. Before attention mechanisms became dominant, it showed that gated state could substantially extend the practical memory of a neural network.</p>"
+      "zh": "<p>霍赫赖特和施密德胡伯在 1997 年提出 LSTM，缓解循环神经网络在长序列上梯度消失或爆炸的问题。核心记忆单元通过近似恒定的自连接让误差信号沿时间传播，输入门控制何时写入，输出门控制何时读取，从而把短期计算与较长期状态分开。</p><p>原始 LSTM 并不包含后来标准架构中的遗忘门；遗忘机制由后续工作加入，使网络可以主动清除旧状态。LSTM 及其变体曾广泛用于语音识别、翻译、手写识别和时间序列，在注意力模型占据主导前，使长距离序列学习成为实用技术，并确立门控信息流的设计范式。</p>",
+      "en": "<p>Sepp Hochreiter and Jürgen Schmidhuber introduced LSTM in 1997 to address vanishing or exploding gradients across long recurrent sequences. Its central memory cell uses an approximately constant self-connection so error signals can travel through time. An input gate controls when information is written, and an output gate controls when it is read, separating short-term computation from longer-lived state.</p><p>The original LSTM did not contain the forget gate found in later standard architectures; subsequent work added forgetting so the network could actively clear obsolete state. LSTM variants became widely used in speech recognition, translation, handwriting recognition, and time-series modeling. Before attention models became dominant, they made long-range sequence learning practical and established gated information flow as a durable design pattern.</p>"
     },
     "figures": [
       {
@@ -87329,18 +87696,6 @@ const milestones = [
         "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png",
         "resources/images/1997-lstm/people/1997-lstm_people_01.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
-          "url": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
-          "title": "1997：LSTM与AI的结构性胜利",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-1997-lstm-audio-zh-original-v1",
@@ -87354,7 +87709,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1997-lstm-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1997-lstm-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1997-lstm-zh-original-v1.mp3"
           }
         },
         {
@@ -87369,7 +87726,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1997-lstm-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1997-lstm-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1997-lstm-en-v1.mp3"
           }
         }
       ],
@@ -87549,21 +87908,6 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-long-short-term-memory",
-          "type": {
-            "zh": "论文",
-            "en": "Paper"
-          },
-          "label": {
-            "zh": "《长短期记忆》",
-            "en": "Long Short-Term Memory"
-          },
-          "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
-          "purpose": "core-evidence",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-author-hosted-lstm-paper-pdf",
           "type": {
             "zh": "论文 PDF",
@@ -87607,13 +87951,28 @@ const milestones = [
           "purpose": "biography",
           "reliability": "reference-only",
           "sourceType": "profile"
+        },
+        {
+          "id": "source-long-short-term-memory",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《长短期记忆》",
+            "en": "Long Short-Term Memory"
+          },
+          "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
         }
       ],
       "sourceIds": [
-        "source-long-short-term-memory",
         "source-author-hosted-lstm-paper-pdf",
         "source-lstm-overview",
-        "source-sepp-hochreiter-profile"
+        "source-sepp-hochreiter-profile",
+        "source-long-short-term-memory"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -87800,17 +88159,55 @@ const milestones = [
       }
     ],
     "analysis": null,
-    "quizzes": [],
+    "quizzes": [
+      {
+        "id": "ai100-1997-lstm-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "LSTM 单元用什么保留长程序列信息？",
+          "en": "What does an LSTM cell use to preserve long-range sequence information?"
+        },
+        "options": [
+          {
+            "zh": "门控和持久记忆状态",
+            "en": "Gates and a persistent memory state"
+          },
+          {
+            "zh": "只有最近邻投票",
+            "en": "Only a nearest-neighbor vote"
+          },
+          {
+            "zh": "固定棋类开局",
+            "en": "A fixed chess opening"
+          },
+          {
+            "zh": "化学质谱",
+            "en": "A chemical mass spectrum"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "LSTM 用门决定写入、保留和输出哪些记忆。",
+          "en": "LSTM regulates memory with gates that decide what to write, keep, and expose."
+        },
+        "sourceIds": [
+          "source-long-short-term-memory"
+        ],
+        "assetIds": [
+          "asset-sepp-hochreiter"
+        ]
+      }
+    ],
     "archive": {
       "eventFile": "archive/events/1997-lstm/event.json",
-      "variantFile": "archive/events/1997-lstm/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/1997-lstm/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
     "quote": {
-      "en": "\"Hochreiter and Schmidhuber introduced LSTM to preserve error signals across long time spans, addressing a central weakness of ordinary recurrent networks.\"",
-      "zh": "\"霍赫赖特和施密德胡伯提出 LSTM，用门控结构在长时间跨度中保持误差信号，回应了普通循环网络难以学习长期依赖的核心问题。\""
+      "en": "\"Long short-term memory\"",
+      "zh": "\"长短期记忆\""
     },
     "quoteMeta": {
       "speaker": "",
@@ -87819,19 +88216,19 @@ const milestones = [
         "zh": "长短期记忆"
       },
       "workAuthors": {
-        "en": "Sepp Hochreiter and Jürgen Schmidhuber, Neural Computation, 1997",
-        "zh": "塞普·霍赫赖特、于尔根·施密德胡伯，Neural Computation，1997"
+        "en": "Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
+        "zh": "塞普·霍赫赖特、尤尔根·施密德胡伯，《Neural Computation》，1997"
       },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1162/neco.1997.9.8.1735"
     },
     "quotePage": {
-      "en": "Neural Computation paper: Long Short-Term Memory",
-      "zh": "Neural Computation 论文《长短期记忆》"
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
     },
     "quoteAttribution": {
-      "en": "<em>Long Short-Term Memory</em>, Sepp Hochreiter and Jürgen Schmidhuber, Neural Computation, 1997",
-      "zh": "《长短期记忆》, 塞普·霍赫赖特、于尔根·施密德胡伯，Neural Computation，1997"
+      "en": "<em>Long Short-Term Memory</em>, Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
+      "zh": "《长短期记忆》, 塞普·霍赫赖特、尤尔根·施密德胡伯，《Neural Computation》，1997"
     }
   },
   {
@@ -87855,12 +88252,12 @@ const milestones = [
       "en": "Deep Belief Network"
     },
     "subtitle": {
-      "zh": "神经网络与连接主义的复兴",
-      "en": "Neural Networks and the Revival of Connectionism"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）",
-      "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
@@ -87936,7 +88333,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg",
         "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2006-dbn-audio-zh-original-v1",
@@ -87950,7 +88346,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2006-dbn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2006-dbn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2006-dbn-zh-original-v1.mp3"
           }
         },
         {
@@ -87965,7 +88363,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2006-dbn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2006-dbn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2006-dbn-en-v1.mp3"
           }
         }
       ],
@@ -88171,9 +88571,8 @@ const milestones = [
         }
       ],
       "emphasis": [
-        "connectionist-revival",
-        "layer-wise-pretraining",
-        "representation-learning"
+        "batch-migration",
+        "source-review-needed"
       ],
       "area": {
         "en": "Deep learning",
@@ -88349,11 +88748,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2006-dbn/event.json",
-      "variantFile": "archive/events/2006-dbn/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2006-dbn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Layer-wise unsupervised pretraining\"",
       "zh": "\"逐层无监督预训练\""
@@ -88401,12 +88799,12 @@ const milestones = [
       "en": "ImageNet"
     },
     "subtitle": {
-      "zh": "深度学习与范式归一",
-      "en": "Deep Learning and Unified Paradigms"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "zh": "深度学习与范式归一（2006-2017）",
-      "en": "Deep Learning and the Unification of Paradigms (2006-2017)"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
@@ -88482,7 +88880,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg",
         "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2009-imagenet-audio-zh-original-v1",
@@ -88496,7 +88893,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2009-imagenet-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2009-imagenet-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2009-imagenet-zh-original-v1.mp3"
           }
         },
         {
@@ -88511,7 +88910,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2009-imagenet-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2009-imagenet-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2009-imagenet-en-v1.mp3"
           }
         }
       ],
@@ -88720,9 +89121,8 @@ const milestones = [
         }
       ],
       "emphasis": [
-        "data-scale",
-        "benchmark-infrastructure",
-        "deep-learning-enabler"
+        "batch-migration",
+        "source-review-needed"
       ],
       "area": {
         "en": "Neural Network",
@@ -88902,11 +89302,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2009-imagenet/event.json",
-      "variantFile": "archive/events/2009-imagenet/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2009-imagenet/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"large-scale hierarchical image database\"",
       "zh": "\"大规模层级图像数据库\""
@@ -88954,12 +89353,12 @@ const milestones = [
       "en": "AlexNet and the ImageNet Breakthrough"
     },
     "subtitle": {
-      "zh": "深度学习与范式归一",
-      "en": "Deep Learning and Unified Paradigms"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一（2010年代至2020年代）"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
@@ -88967,8 +89366,8 @@ const milestones = [
         "zh": "多伦多大学"
       },
       "country": {
-        "en": "Toronto, Canada",
-        "zh": "加拿大多伦多"
+        "en": "Canada",
+        "zh": "加拿大"
       },
       "coordinates": [
         43.6629,
@@ -88976,8 +89375,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2012 年，亚历克斯·克里泽夫斯基、伊利亚·苏茨克维和杰弗里·辛顿用 AlexNet 赢得 ImageNet 大规模视觉识别挑战赛。论文报告的 top-5 测试错误率为 15.3%，明显低于第二名的 26.2%，让深度卷积网络的优势第一次在统一的大型基准上变得无法忽视。</p><p>AlexNet 在约 120 万张训练图像上训练约 6000 万个参数，并结合 GPU、ReLU、数据增强和 dropout。它的突破并非来自单一新公式，而是把算法、数据、算力和工程实现组织成可扩展系统。此后，计算机视觉迅速从手工特征转向端到端表示学习，AlexNet 也成为深度学习复兴的标志性节点。</p>",
-      "en": "<p>In 2012, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton won the ImageNet Large Scale Visual Recognition Challenge with AlexNet. Their paper reported a 15.3 percent top-5 test error, far below the 26.2 percent achieved by the second-best entry, making the advantage of deep convolutional networks impossible to ignore on a common large-scale benchmark.</p><p>AlexNet trained roughly 60 million parameters on about 1.2 million images and combined GPUs, ReLU activations, data augmentation, and dropout. Its breakthrough was not one isolated formula, but a scalable system joining algorithms, data, compute, and implementation. Computer vision rapidly shifted from hand-engineered features toward end-to-end representation learning, making AlexNet a defining event in the deep-learning revival.</p>"
+      "zh": "<p>2012 年，AlexNet 以巨大优势赢得 ImageNet 图像分类挑战，使深度卷积网络成为计算机视觉无法忽视的方向。它的八个学习层在 GPU 上训练，并结合 ReLU 激活、数据增强、重叠池化和 dropout。单项技术并非全部首次出现，突破来自把它们组织成一个能在 ImageNet 规模上训练的完整系统。</p><p>这一结果推动视觉研究从手工设计特征转向直接从大规模标注数据中学习表示，也确立了持久的工程经验：数据、算力、架构、优化和正则化可以相互放大。后续网络很快超过 AlexNet 的精度，但 2012 年论文仍是规模化深度学习成为领域中心路线的标志。</p>",
+      "en": "<p>In 2012, AlexNet won the ImageNet classification challenge by a large margin and made deep convolutional networks impossible for computer vision researchers to ignore. Its eight learned layers were trained on GPUs with ReLU activations, data augmentation, overlapping pooling, and dropout. No single ingredient was entirely new; the breakthrough came from combining them at ImageNet scale in a system that could actually be trained.</p><p>The result shifted vision research away from hand-designed features toward representations learned directly from large labeled datasets. AlexNet also established a durable engineering lesson: advances in data, compute, architecture, optimization, and regularization can reinforce one another. Later networks quickly surpassed its accuracy, but the 2012 paper remains the event that made scaled deep learning the field's central program.</p>"
     },
     "figures": [
       {
@@ -88991,6 +89390,22 @@ const milestones = [
           "en": "AlexNet lead author"
         },
         "avatar": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "geoffrey-hinton",
+        "name": {
+          "zh": "杰弗里·辛顿",
+          "en": "Geoffrey Hinton"
+        },
+        "role": {
+          "zh": "AlexNet 共同作者与导师",
+          "en": "AlexNet co-author and advisor"
+        },
+        "avatar": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -89011,22 +89426,6 @@ const milestones = [
         "figureType": "person",
         "organizationIds": [],
         "primary": true
-      },
-      {
-        "id": "geoffrey-hinton",
-        "name": {
-          "zh": "杰弗里·辛顿",
-          "en": "Geoffrey Hinton"
-        },
-        "role": {
-          "zh": "AlexNet 共同作者与导师",
-          "en": "AlexNet co-author and advisor"
-        },
-        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": true
       }
     ],
     "resources": {
@@ -89038,18 +89437,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
       "overviewImageAssetId": "asset-alexnet-portrait",
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
-          "url": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
-          "title": "2012年ImageNet：引爆人工智能革命的一年",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2012-alexnet-audio-zh-original-v1",
@@ -89063,7 +89450,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2012-alexnet-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2012-alexnet-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2012-alexnet-zh-original-v1.mp3"
           }
         },
         {
@@ -89078,7 +89467,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2012-alexnet-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2012-alexnet-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2012-alexnet-en-v1.mp3"
           }
         }
       ],
@@ -89296,29 +89687,13 @@ const milestones = [
           "purpose": "background",
           "reliability": "reference-only",
           "sourceType": "encyclopedia-entry"
-        },
-        {
-          "id": "source-alex-krizhevsky-user-provided-portrait",
-          "type": {
-            "zh": "图片来源",
-            "en": "Image source"
-          },
-          "label": {
-            "zh": "亚历克斯·克里热夫斯基肖像（用户提供）",
-            "en": "Alex Krizhevsky portrait (user provided)"
-          },
-          "url": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
-          "purpose": "image-provenance",
-          "reliability": "primary",
-          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-alexnet-neurips-paper",
         "source-alexnet-neurips-pdf",
         "source-imagenet-challenge",
-        "source-alexnet-overview",
-        "source-alex-krizhevsky-user-provided-portrait"
+        "source-alexnet-overview"
       ],
       "claimIds": [
         "claim-imagenet-breakthrough",
@@ -89352,9 +89727,9 @@ const milestones = [
         }
       ],
       "emphasis": [
-        "deep-learning-breakthrough",
-        "computer-vision",
-        "scaled-training"
+        "research-breakthrough",
+        "paper-source",
+        "computer-vision"
       ],
       "area": {
         "en": "Neural Network",
@@ -89458,48 +89833,99 @@ const milestones = [
     },
     "commentarySections": [
       {
+        "id": "historical-background",
         "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
+          "zh": "历史背景",
+          "en": "Historical Background"
         },
         "html": {
-          "en": "AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. GPU training, ReLU activations, data augmentation, and dropout made scale visible.",
-          "zh": "AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。"
-        }
+          "zh": "AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。",
+          "en": "AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. GPU training, ReLU activations, data augmentation, and dropout made scale visible."
+        },
+        "sourceIds": [
+          "source-alexnet-neurips-paper",
+          "source-imagenet-challenge"
+        ]
       },
       {
+        "id": "core-idea",
         "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
+          "zh": "核心思想",
+          "en": "Core Idea"
         },
         "html": {
-          "en": "A deep CNN transforms pixels through learned convolutional layers into object classes. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
-          "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
-        }
+          "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。互动演示应突出数据、GPU、卷积、ReLU 和正则化如何共同构成可训练系统。",
+          "en": "A deep CNN transforms pixels through learned convolutional layers into object classes. The demo should highlight how data, GPUs, convolution, ReLU, and regularization formed a trainable system."
+        },
+        "sourceIds": [
+          "source-alexnet-neurips-paper"
+        ]
       },
       {
+        "id": "long-term-legacy",
         "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
         },
         "html": {
-          "en": "Experts generally treat AlexNet as the breakthrough that made deep learning unavoidable in computer vision. Its long-term legacy is the scale recipe of data, GPUs, deep CNNs, ReLU, augmentation, and regularization that reshaped vision research.",
-          "zh": "专家通常把 AlexNet 视为让深度学习在计算机视觉中无法被忽视的突破。它的长期影响在于数据、GPU、深度 CNN、ReLU、数据增强和正则化组成的规模化配方重塑了视觉研究。"
-        }
+          "zh": "专家通常把 AlexNet 视为让深度学习在计算机视觉中无法被忽视的突破。它的长期影响在于数据、GPU、深度 CNN、ReLU、数据增强和正则化组成的规模化配方重塑了视觉研究。",
+          "en": "Experts generally treat AlexNet as the breakthrough that made deep learning unavoidable in computer vision. Its long-term legacy is the scale recipe of data, GPUs, deep CNNs, ReLU, augmentation, and regularization that reshaped vision research."
+        },
+        "sourceIds": [
+          "source-alexnet-neurips-paper"
+        ]
       }
     ],
     "analysis": null,
-    "quizzes": [],
+    "quizzes": [
+      {
+        "id": "quiz-2012-alexnet-ai100",
+        "storylineId": "bench-council-ai100",
+        "question": {
+          "zh": "为什么 AlexNet 是计算机视觉的重要突破？",
+          "en": "Why was AlexNet a major computer-vision breakthrough?"
+        },
+        "options": [
+          {
+            "zh": "它展示了深度 CNN 可以在大规模 ImageNet 上取胜",
+            "en": "It showed deep CNNs could win ImageNet at large scale"
+          },
+          {
+            "zh": "它删除了所有训练数据",
+            "en": "It removed all training data"
+          },
+          {
+            "zh": "它只统计词频",
+            "en": "It only counted word frequency"
+          },
+          {
+            "zh": "它是一个定理证明器",
+            "en": "It was a theorem prover"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "AlexNet 结合深度 CNN、GPU、ReLU、数据增强和正则化，大幅提升了 ImageNet 结果。",
+          "en": "AlexNet combined deep CNNs, GPUs, ReLU, augmentation and regularization to sharply improve ImageNet results."
+        },
+        "sourceIds": [
+          "source-alexnet-neurips-paper"
+        ],
+        "assetIds": [
+          "asset-alexnet-architecture"
+        ]
+      }
+    ],
     "archive": {
       "eventFile": "archive/events/2012-alexnet/event.json",
-      "variantFile": "archive/events/2012-alexnet/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2012-alexnet/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
     "quote": {
-      "en": "\"AlexNet showed that a large deep convolutional network, trained on ImageNet with GPUs and modern regularization, could dramatically improve large-scale visual recognition.\"",
-      "zh": "\"AlexNet 证明，利用 GPU、大规模 ImageNet 数据和现代正则化方法训练的大型深度卷积网络，可以显著提升大规模视觉识别效果。\""
+      "en": "\"ImageNet Classification with Deep Convolutional Neural Networks\"",
+      "zh": "\"使用深度卷积神经网络进行 ImageNet 分类\""
     },
     "quoteMeta": {
       "speaker": "",
@@ -89508,19 +89934,19 @@ const milestones = [
         "zh": "使用深度卷积神经网络进行 ImageNet 分类"
       },
       "workAuthors": {
-        "en": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, NeurIPS, 2012",
-        "zh": "亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
+        "en": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
+        "zh": "亚历克斯·克里泽夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
       },
       "sourceLabel": "",
-      "sourceUrl": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
+      "sourceUrl": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
     },
     "quotePage": {
-      "en": "NeurIPS 2012 paper: ImageNet Classification with Deep Convolutional Neural Networks",
-      "zh": "NeurIPS 2012 论文《使用深度卷积神经网络进行 ImageNet 分类》"
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
     },
     "quoteAttribution": {
-      "en": "<em>ImageNet Classification with Deep Convolutional Neural Networks</em>, Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, NeurIPS, 2012",
-      "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, 亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
+      "en": "<em>ImageNet Classification with Deep Convolutional Neural Networks</em>, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
+      "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, 亚历克斯·克里泽夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
     }
   },
   {
@@ -89544,12 +89970,12 @@ const milestones = [
       "en": "VGG Networks"
     },
     "subtitle": {
-      "zh": "深度学习与范式归一",
-      "en": "Deep Learning and Unified Paradigms"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "zh": "深度学习与范式归一（2006-2017）",
-      "en": "Deep Learning and the Unification of Paradigms (2006-2017)"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
@@ -89609,7 +90035,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg",
         "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2014-vgg-audio-zh-original-v1",
@@ -89623,7 +90048,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-vgg-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-vgg-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-vgg-zh-original-v1.mp3"
           }
         },
         {
@@ -89638,7 +90065,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-vgg-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-vgg-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-vgg-en-v1.mp3"
           }
         }
       ],
@@ -89844,9 +90273,8 @@ const milestones = [
         }
       ],
       "emphasis": [
-        "computer-vision",
-        "network-depth",
-        "architecture-lineage"
+        "ai100-batch-migration",
+        "source-review-needed"
       ],
       "area": {
         "en": "Computer Vision",
@@ -90022,11 +90450,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2014-vgg/event.json",
-      "variantFile": "archive/events/2014-vgg/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2014-vgg/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"very deep convolutional networks\"",
       "zh": "\"非常深的卷积网络\""
@@ -90074,12 +90501,12 @@ const milestones = [
       "en": "GoogLeNet / Inception"
     },
     "subtitle": {
-      "zh": "深度学习与范式归一",
-      "en": "Deep Learning and Unified Paradigms"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "zh": "深度学习与范式归一（2006-2017）",
-      "en": "Deep Learning and the Unification of Paradigms (2006-2017)"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
@@ -90155,7 +90582,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg",
         "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2015-googlenet-inception-audio-zh-original-v1",
@@ -90169,7 +90595,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-googlenet-inception-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-googlenet-inception-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-googlenet-inception-zh-original-v1.mp3"
           }
         },
         {
@@ -90184,7 +90612,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-googlenet-inception-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-googlenet-inception-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-googlenet-inception-en-v1.mp3"
           }
         }
       ],
@@ -90393,9 +90823,8 @@ const milestones = [
         }
       ],
       "emphasis": [
-        "computer-vision",
-        "multi-scale-features",
-        "efficient-depth"
+        "batch-migration",
+        "source-review-needed"
       ],
       "area": {
         "en": "Computer Vision",
@@ -90571,11 +91000,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2015-googlenet-inception/event.json",
-      "variantFile": "archive/events/2015-googlenet-inception/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2015-googlenet-inception/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"going deeper with convolutions\"",
       "zh": "\"用卷积走得更深\""
@@ -90623,12 +91051,12 @@ const milestones = [
       "en": "Generative Adversarial Networks"
     },
     "subtitle": {
-      "zh": "深度学习与范式归一",
-      "en": "Deep Learning and Unified Paradigms"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一（2010年代至2020年代）"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
@@ -90636,8 +91064,8 @@ const milestones = [
         "zh": "蒙特利尔大学"
       },
       "country": {
-        "en": "Montreal, Canada",
-        "zh": "加拿大蒙特利尔"
+        "en": "Canada",
+        "zh": "加拿大"
       },
       "coordinates": [
         45.5056,
@@ -90645,8 +91073,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2014 年，伊恩·古德费洛及合作者提出生成对抗网络。生成器把随机噪声变成合成样本，判别器则学习区分真实数据与生成结果；两者在同一个极小极大目标中相互改进，使模型能够在不显式写出数据概率分布的情况下学习生成过程。</p><p>原论文证明，在理想条件下，这场博弈会在生成分布与真实分布一致时达到平衡。实际训练常面临不稳定、模式坍塌等困难，但 GAN 很快推动了高质量图像生成、图像翻译、超分辨率和表示学习，也把“用另一个网络提供学习信号”的对抗训练思想带入更广泛的机器学习研究。</p>",
-      "en": "<p>In 2014, Ian Goodfellow and collaborators introduced generative adversarial networks. A generator transformed random noise into synthetic samples, while a discriminator learned to distinguish generated outputs from real data. The two networks improved against each other through a shared minimax objective, allowing the system to learn a generative process without explicitly specifying the data probability distribution.</p><p>The paper showed that, under ideal conditions, the game reaches equilibrium when the generated and real distributions match. Practical training can be unstable and vulnerable to mode collapse, but GANs quickly advanced image synthesis, image translation, super-resolution, and representation learning. They also made adversarial training, in which one network supplies a learning signal to another, a major machine-learning paradigm.</p>"
+      "zh": "<p>古德费洛等人在 2014 年提出生成对抗网络，把生成建模写成两个神经网络的博弈。生成器把随机噪声转换为候选样本，判别器学习区分真实数据与生成结果；生成器则根据判别器反馈调整参数，目标是让生成分布逐渐接近真实分布。</p><p>GAN 不需要显式写出复杂概率密度，就能生成清晰图像，并迅速推动图像合成、表示学习和条件生成研究。训练可能出现不稳定、模式崩溃和评价困难，两个网络的平衡也很敏感。尽管扩散模型后来在许多生成任务中占据优势，GAN 建立的对抗学习框架仍深刻影响生成式 AI。</p>",
+      "en": "<p>Ian Goodfellow and colleagues introduced generative adversarial networks in 2014 by formulating generative modeling as a game between two neural networks. A generator transforms random noise into candidate samples, while a discriminator learns to distinguish real data from generated outputs. Feedback from the discriminator trains the generator to move its distribution closer to the real one.</p><p>GANs could produce sharp images without explicitly specifying a complicated probability density and rapidly advanced image synthesis, representation learning, and conditional generation. Training can be unstable, collapse to limited modes, and be difficult to evaluate, while the balance between the two networks is sensitive. Diffusion models later became stronger in many generation tasks, but the adversarial-learning framework established by GANs remains deeply influential.</p>"
     },
     "figures": [
       {
@@ -90688,18 +91116,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg",
         "resources/images/2014-gan/architecture/2014-gan_architecture_01.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
-          "url": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
-          "title": "2014生成对抗网络：决斗、延迟与辩论",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2014-gan-audio-zh-original-v1",
@@ -90713,7 +91129,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-gan-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-gan-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-gan-zh-original-v1.mp3"
           }
         },
         {
@@ -90728,7 +91146,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-gan-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-gan-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-gan-en-v1.mp3"
           }
         }
       ],
@@ -90854,21 +91274,6 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-generative-adversarial-nets",
-          "type": {
-            "zh": "论文",
-            "en": "Paper"
-          },
-          "label": {
-            "zh": "《生成对抗网络》",
-            "en": "Generative Adversarial Nets"
-          },
-          "url": "https://arxiv.org/abs/1406.2661",
-          "purpose": "core-evidence",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-neurips-paper-page",
           "type": {
             "zh": "会议论文页面",
@@ -90912,13 +91317,28 @@ const milestones = [
           "purpose": "biography",
           "reliability": "primary",
           "sourceType": "personal-page"
+        },
+        {
+          "id": "source-generative-adversarial-nets",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《生成对抗网络》",
+            "en": "Generative Adversarial Nets"
+          },
+          "url": "https://arxiv.org/abs/1406.2661",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
         }
       ],
       "sourceIds": [
-        "source-generative-adversarial-nets",
         "source-neurips-paper-page",
         "source-goodfellow-gan-tutorial",
-        "source-ian-goodfellow-profile"
+        "source-ian-goodfellow-profile",
+        "source-generative-adversarial-nets"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -91105,17 +91525,55 @@ const milestones = [
       }
     ],
     "analysis": null,
-    "quizzes": [],
+    "quizzes": [
+      {
+        "id": "ai100-2014-gan-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "GAN 中的两个主要参与者是什么？",
+          "en": "What are the two main players in a GAN?"
+        },
+        "options": [
+          {
+            "zh": "生成器和判别器",
+            "en": "A generator and a discriminator"
+          },
+          {
+            "zh": "定理证明器和围棋棋盘",
+            "en": "A theorem prover and a Go board"
+          },
+          {
+            "zh": "数据库行和电子表格单元",
+            "en": "A database row and a spreadsheet cell"
+          },
+          {
+            "zh": "只有解析器和打印机",
+            "en": "A parser and a printer only"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "生成器制造样本，判别器学习区分真实数据和生成数据。",
+          "en": "The generator makes samples while the discriminator learns to distinguish real from generated data."
+        },
+        "sourceIds": [
+          "source-generative-adversarial-nets"
+        ],
+        "assetIds": [
+          "asset-ian-goodfellow"
+        ]
+      }
+    ],
     "archive": {
       "eventFile": "archive/events/2014-gan/event.json",
-      "variantFile": "archive/events/2014-gan/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2014-gan/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
     "quote": {
-      "en": "\"GANs framed generative modeling as a competition between a generator and a discriminator, turning adversarial training into a central idea in modern generative AI.\"",
-      "zh": "\"GAN 把生成建模表述为生成器与判别器之间的竞争，使对抗训练成为现代生成式 AI 的核心思想之一。\""
+      "en": "\"Generative adversarial nets\"",
+      "zh": "\"生成对抗网络\""
     },
     "quoteMeta": {
       "speaker": "",
@@ -91128,11 +91586,11 @@ const milestones = [
         "zh": "伊恩·古德费洛等，NeurIPS，2014"
       },
       "sourceLabel": "",
-      "sourceUrl": "https://papers.nips.cc/paper/5423-generative-adversarial-nets"
+      "sourceUrl": "https://arxiv.org/abs/1406.2661"
     },
     "quotePage": {
-      "en": "NeurIPS 2014 paper: Generative Adversarial Nets",
-      "zh": "NeurIPS 2014 论文《生成对抗网络》"
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
     },
     "quoteAttribution": {
       "en": "<em>Generative Adversarial Nets</em>, Ian Goodfellow et al., NeurIPS, 2014",
@@ -91160,21 +91618,21 @@ const milestones = [
       "en": "Neural Machine Translation with Attention"
     },
     "subtitle": {
-      "zh": "深度学习与范式归一",
-      "en": "Deep Learning and Unified Paradigms"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一（2010年代至2020年代）"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
-        "en": "University of Montreal",
-        "zh": "蒙特利尔大学"
+        "en": "Jacobs University Bremen, University of Montreal, Stanford University, University of Toronto",
+        "zh": "不来梅雅各布大学、蒙特利尔大学、斯坦福大学、多伦多大学"
       },
       "country": {
-        "en": "Montreal, Canada",
-        "zh": "加拿大蒙特利尔"
+        "en": "Germany, Canada, United States",
+        "zh": "德国、加拿大、美国"
       },
       "coordinates": [
         45.5056,
@@ -91182,8 +91640,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2014 年，兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥提出用于神经机器翻译的注意力机制。传统编码器需要把整句源文本压缩成一个固定长度向量，而新方法让解码器在生成每个目标词时，为源句各位置计算不同权重并形成当前所需的上下文。</p><p>这种“边翻译、边对齐”的方式改善了长句处理，也让模型的关注位置可以被可视化。注意力最初服务于循环编码器—解码器，但它确立了一个更普遍的原则：模型应按当前任务动态选择相关信息。三年后，Transformer 将这一原则扩展为完全基于自注意力的序列架构。</p>",
-      "en": "<p>In 2014, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced an attention mechanism for neural machine translation. Earlier encoder-decoder systems compressed an entire source sentence into one fixed-length vector. Their method instead allowed the decoder, for every generated target word, to assign different weights to source positions and construct the context needed at that moment.</p><p>This process learned alignment while translating, improved the handling of longer sentences, and made the model's focus partly visible. Attention first operated inside a recurrent encoder-decoder, but it established a broader principle: a model should dynamically select relevant information for the current computation. Three years later, the Transformer expanded that principle into a sequence architecture based entirely on self-attention.</p>"
+      "zh": "<p>巴赫达瑙、赵京贤和本吉奥在 2014 年改进神经机器翻译，解决编码器必须把整句压缩进单一固定向量的瓶颈。编码器为源句各位置生成表示，解码器每产生一个目标词，就计算与这些位置的匹配分数并归一化为权重，再用加权上下文决定输出。</p><p>这种可学习的“软对齐”让模型在翻译长句时动态关注不同词语，同时使对齐关系可以被观察。它最初仍运行在循环编码器—解码器之上，并不是后来的自注意力 Transformer；但它把内容相关的选择变成可微模块，为注意力成为现代序列模型的核心计算原语铺平道路。</p>",
+      "en": "<p>Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio improved neural machine translation in 2014 by removing the bottleneck that forced an encoder to compress an entire sentence into one fixed vector. The encoder produces a representation at each source position. For every target word, the decoder scores its match to those positions, normalizes the scores into weights, and uses the weighted context to produce the output.</p><p>This learned “soft alignment” lets the model attend dynamically to different words while translating long sentences and makes alignment patterns inspectable. The original method still sat on top of recurrent encoders and decoders and was not the later self-attention Transformer. It nevertheless turned content-dependent selection into a differentiable module and prepared attention to become a central computational primitive of modern sequence models.</p>"
     },
     "figures": [
       {
@@ -91197,22 +91655,6 @@ const milestones = [
           "en": "Lead author of neural attention paper"
         },
         "avatar": "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": true
-      },
-      {
-        "id": "kyunghyun-cho",
-        "name": {
-          "zh": "赵京贤",
-          "en": "Kyunghyun Cho"
-        },
-        "role": {
-          "zh": "神经注意力论文共同作者",
-          "en": "Neural attention paper co-author"
-        },
-        "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -91233,6 +91675,70 @@ const milestones = [
         "figureType": "person",
         "organizationIds": [],
         "primary": true
+      },
+      {
+        "id": "minh-thang-luong",
+        "name": {
+          "zh": "明唐·梁",
+          "en": "Minh-Thang Luong"
+        },
+        "role": {
+          "zh": "注意力相关成就贡献者",
+          "en": "Attention-related achievement contributor"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
+      },
+      {
+        "id": "christopher-manning",
+        "name": {
+          "zh": "克里斯托弗·曼宁",
+          "en": "Christopher Manning"
+        },
+        "role": {
+          "zh": "注意力相关成就贡献者",
+          "en": "Attention-related achievement contributor"
+        },
+        "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
+      },
+      {
+        "id": "kelvin-xu",
+        "name": {
+          "zh": "徐凯文",
+          "en": "Kelvin Xu"
+        },
+        "role": {
+          "zh": "注意力相关成就贡献者",
+          "en": "Attention-related achievement contributor"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
+      },
+      {
+        "id": "kyunghyun-cho",
+        "name": {
+          "zh": "赵京贤",
+          "en": "Kyunghyun Cho"
+        },
+        "role": {
+          "zh": "神经注意力论文共同作者",
+          "en": "Neural attention paper co-author"
+        },
+        "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -91242,20 +91748,6 @@ const milestones = [
         "resources/images/2014-attention/architecture/2014-attention_architecture_01.png",
         "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
         "resources/images/2014-attention/people/2014-attention_people_01.png"
-      ],
-      "overviewImage": "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
-      "overviewImageAssetId": "asset-2014-attention-bahdanau-portrait",
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
-          "url": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
-          "title": "2014现代AI的突破：注意力机制",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
       ],
       "audios": [
         {
@@ -91270,7 +91762,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-attention-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-attention-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-attention-zh-original-v1.mp3"
           }
         },
         {
@@ -91285,7 +91779,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-attention-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-attention-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-attention-en-v1.mp3"
           }
         }
       ],
@@ -91483,21 +91979,6 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
-          "type": {
-            "zh": "论文",
-            "en": "Paper"
-          },
-          "label": {
-            "zh": "《通过联合学习对齐与翻译实现神经机器翻译》",
-            "en": "Neural Machine Translation by Jointly Learning to Align and Translate"
-          },
-          "url": "https://arxiv.org/abs/1409.0473",
-          "purpose": "core-evidence",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-iclr-2015-paper-page",
           "type": {
             "zh": "会议论文页面",
@@ -91541,13 +92022,28 @@ const milestones = [
           "purpose": "biography",
           "reliability": "reference-only",
           "sourceType": "profile"
+        },
+        {
+          "id": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《通过联合学习对齐与翻译实现神经机器翻译》",
+            "en": "Neural Machine Translation by Jointly Learning to Align and Translate"
+          },
+          "url": "https://arxiv.org/abs/1409.0473",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
         }
       ],
       "sourceIds": [
-        "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
         "source-iclr-2015-paper-page",
         "source-attention-mechanism-overview",
-        "source-yoshua-bengio-lab-profile"
+        "source-yoshua-bengio-lab-profile",
+        "source-neural-machine-translation-by-jointly-learning-to-align-and-translate"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -91730,38 +92226,77 @@ const milestones = [
       }
     ],
     "analysis": null,
-    "quizzes": [],
+    "quizzes": [
+      {
+        "id": "ai100-2014-neural-machine-translation-attention-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "神经注意力为机器翻译加入了什么？",
+          "en": "What did neural attention add to machine translation?"
+        },
+        "options": [
+          {
+            "zh": "源词与目标词之间的学习型对齐",
+            "en": "Learned alignment between source and target words"
+          },
+          {
+            "zh": "固定棋步列表",
+            "en": "A fixed list of chess moves"
+          },
+          {
+            "zh": "只有图像去噪",
+            "en": "Only image denoising"
+          },
+          {
+            "zh": "化学规则数据库",
+            "en": "A chemical rule database"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "注意力让解码器针对每个目标词为源语言位置分配不同权重。",
+          "en": "Attention lets the decoder weight source positions differently for each target word."
+        },
+        "sourceIds": [
+          "source-neural-machine-translation-by-jointly-learning-to-align-and-translate"
+        ],
+        "assetIds": [
+          "asset-2014-attention-bahdanau-portrait",
+          "asset-2014-attention-alignment"
+        ]
+      }
+    ],
     "archive": {
       "eventFile": "archive/events/2014-attention/event.json",
-      "variantFile": "archive/events/2014-attention/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2014-attention/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
     "quote": {
-      "en": "\"Bahdanau, Cho, and Bengio introduced attention for neural machine translation, allowing the decoder to focus on relevant source positions instead of relying on one fixed vector.\"",
-      "zh": "\"Bahdanau、Cho 和 Bengio 在神经机器翻译中引入注意力，使解码器能够关注相关源语言位置，而不再只依赖一个固定长度向量。\""
+      "en": "\"Neural machine translation by jointly learning to align and translate\"",
+      "zh": "\"通过联合学习对齐与翻译实现神经机器翻译\""
     },
     "quoteMeta": {
       "speaker": "",
       "workTitle": {
         "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
-        "zh": "通过联合学习对齐与翻译的神经机器翻译"
+        "zh": "通过联合学习对齐与翻译实现神经机器翻译"
       },
       "workAuthors": {
-        "en": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, arXiv, 2014",
-        "zh": "Dzmitry Bahdanau、Kyunghyun Cho、约书亚·本吉奥，arXiv，2014"
+        "en": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, ICLR, 2015",
+        "zh": "兹米特里·巴赫达瑙、赵京贤、约书亚·本吉奥，ICLR，2015"
       },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/1409.0473"
     },
     "quotePage": {
-      "en": "arXiv paper: Neural Machine Translation by Jointly Learning to Align and Translate",
-      "zh": "arXiv 论文《通过联合学习对齐与翻译的神经机器翻译》"
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
     },
     "quoteAttribution": {
-      "en": "<em>Neural Machine Translation by Jointly Learning to Align and Translate</em>, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, arXiv, 2014",
-      "zh": "《通过联合学习对齐与翻译的神经机器翻译》, Dzmitry Bahdanau、Kyunghyun Cho、约书亚·本吉奥，arXiv，2014"
+      "en": "<em>Neural Machine Translation by Jointly Learning to Align and Translate</em>, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, ICLR, 2015",
+      "zh": "《通过联合学习对齐与翻译实现神经机器翻译》, 兹米特里·巴赫达瑙、赵京贤、约书亚·本吉奥，ICLR，2015"
     }
   },
   {
@@ -91865,18 +92400,6 @@ const milestones = [
         "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg",
         "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-          "url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-          "title": "2015高速网络：深度学习中被遗忘的英雄",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2014-highway-network-audio-zh-original-v1",
@@ -91890,7 +92413,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-highway-network-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-highway-network-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-highway-network-zh-original-v1.mp3"
           }
         },
         {
@@ -91905,7 +92430,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-highway-network-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-highway-network-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-highway-network-en-v1.mp3"
           }
         }
       ],
@@ -92124,11 +92651,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/2014-highway-network/event.json",
-      "variantFile": "archive/events/2014-highway-network/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2014-highway-network/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
     "quote": {
       "en": "\"Highway Networks used learned gates to regulate information flow, showing that very deep feedforward networks could be trained before residual networks became dominant.\"",
       "zh": "\"高速网络用可学习的门控调节信息流，证明在残差网络成为主流之前，极深的前馈网络也可以被训练。\""
@@ -92182,21 +92708,21 @@ const milestones = [
       "en": "ResNet"
     },
     "subtitle": {
-      "zh": "深度学习与范式归一",
-      "en": "Deep Learning and Unified Paradigms"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一（2010年代至2020年代）"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
-        "en": "Microsoft Research Asia",
+        "en": "Microsoft Research (Asia)",
         "zh": "微软亚洲研究院"
       },
       "country": {
-        "en": "Beijing, China",
-        "zh": "中国北京"
+        "en": "China",
+        "zh": "中国"
       },
       "coordinates": [
         39.9042,
@@ -92204,8 +92730,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2015 年，何恺明、张祥雨、任少卿和孙剑提出深度残差学习。他们观察到，普通网络加深后即使没有明显过拟合，训练误差也可能反而上升。ResNet 用恒等快捷连接绕过若干层，让这些层学习相对于输入的残差修正，而不是重新构造完整映射。</p><p>快捷连接几乎不增加参数，却显著改善了梯度传播和超深网络优化。论文中的 152 层 ResNet 在 ImageNet 上取得领先结果，并赢得 ILSVRC 2015 分类任务。残差块随后成为视觉、语音、语言和生成模型中的通用组件，证明简单的信息直通路径可以改变网络可训练深度。</p>",
-      "en": "<p>In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced deep residual learning. They observed that making a conventional network deeper could increase training error even without obvious overfitting. ResNet inserted identity shortcut connections around groups of layers, asking those layers to learn a residual correction to the input rather than reconstructing a complete transformation.</p><p>The shortcuts added almost no parameters but substantially improved gradient flow and the optimization of very deep networks. A 152-layer ResNet achieved leading ImageNet results and won the ILSVRC 2015 classification task. Residual blocks soon became general components in vision, speech, language, and generative models, showing that simple information paths could change the trainable depth of neural systems.</p>"
+      "zh": "<p>何恺明、张祥雨、任少卿和孙剑在 2015 年提出残差学习，解决网络加深后训练误差反而上升的“退化问题”。残差块不直接学习完整映射 H(x)，而是学习修正量 F(x)，再通过恒等快捷连接输出 F(x)+x；信息和梯度因此可以沿更直接路径穿过网络。</p><p>这一极简结构使 50、101、152 层等非常深的网络能够稳定训练，并在 ImageNet 和检测任务上取得突破。ResNet 随后成为视觉系统的常用骨干，也影响语音、语言和生成模型中的跳跃连接设计。它的重要性在于改变了深层架构的基本问题：每层不必重建全部表示，只需学习必要变化。</p>",
+      "en": "<p>Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced residual learning in 2015 to address the “degradation problem,” where adding layers could increase training error. A residual block does not learn the complete mapping H(x) directly; it learns a correction F(x) and adds an identity shortcut to output F(x)+x. Information and gradients can therefore travel through a more direct path.</p><p>This minimal structure made very deep networks such as 50-, 101-, and 152-layer models practical to train and produced major ImageNet and detection results. ResNet became a standard visual backbone and influenced skip connections in speech, language, and generative models. Its central lesson changed the architecture question: a layer need not rebuild the whole representation when it can learn only the necessary change.</p>"
     },
     "figures": [
       {
@@ -92218,7 +92744,23 @@ const milestones = [
           "zh": "ResNet 第一作者",
           "en": "ResNet lead author"
         },
-        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+        "avatar": "resources/images/figures/kaiming-he.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "jian-sun",
+        "name": {
+          "zh": "孙剑",
+          "en": "Jian Sun"
+        },
+        "role": {
+          "zh": "ResNet 共同作者与通讯作者",
+          "en": "ResNet co-author and corresponding author"
+        },
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -92255,22 +92797,6 @@ const milestones = [
         "figureType": "person",
         "organizationIds": [],
         "primary": true
-      },
-      {
-        "id": "jian-sun",
-        "name": {
-          "zh": "孙剑",
-          "en": "Jian Sun"
-        },
-        "role": {
-          "zh": "ResNet 共同作者与通讯作者",
-          "en": "ResNet co-author and corresponding author"
-        },
-        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": true
       }
     ],
     "resources": {
@@ -92282,18 +92808,6 @@ const milestones = [
         "resources/images/2015-resnet/people/2015-resnet_people_03.png",
         "resources/images/2015-resnet/people/2015-resnet_people_02.png",
         "resources/images/2015-resnet/people/2015-resnet_people_01.png"
-      ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
-          "url": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
-          "title": "2015ResNet：深度学习的突破",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
       ],
       "audios": [
         {
@@ -92308,7 +92822,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-resnet-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-resnet-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-resnet-zh-original-v1.mp3"
           }
         },
         {
@@ -92323,7 +92839,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-resnet-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-resnet-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-resnet-en-v1.mp3"
           }
         }
       ],
@@ -92561,21 +93079,6 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-deep-residual-learning-for-image-recognition",
-          "type": {
-            "zh": "论文",
-            "en": "Paper"
-          },
-          "label": {
-            "zh": "《用于图像识别的深度残差学习》",
-            "en": "Deep Residual Learning for Image Recognition"
-          },
-          "url": "https://arxiv.org/abs/1512.03385",
-          "purpose": "core-evidence",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-cvf-open-access-paper-page",
           "type": {
             "zh": "会议论文页面",
@@ -92619,13 +93122,28 @@ const milestones = [
           "purpose": "biography",
           "reliability": "primary",
           "sourceType": "personal-page"
+        },
+        {
+          "id": "source-deep-residual-learning-for-image-recognition",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《用于图像识别的深度残差学习》",
+            "en": "Deep Residual Learning for Image Recognition"
+          },
+          "url": "https://arxiv.org/abs/1512.03385",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
         }
       ],
       "sourceIds": [
-        "source-deep-residual-learning-for-image-recognition",
         "source-cvf-open-access-paper-page",
         "source-cvpr-full-paper-pdf",
-        "source-kaiming-he-profile-at-mit-csail"
+        "source-kaiming-he-profile-at-mit-csail",
+        "source-deep-residual-learning-for-image-recognition"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -92808,17 +93326,55 @@ const milestones = [
       }
     ],
     "analysis": null,
-    "quizzes": [],
+    "quizzes": [
+      {
+        "id": "ai100-2015-resnet-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "ResNet 的关键思想是什么？",
+          "en": "What is the key idea in ResNet?"
+        },
+        "options": [
+          {
+            "zh": "用捷径连接学习残差变化",
+            "en": "Shortcut connections that learn residual changes"
+          },
+          {
+            "zh": "训练后删除每一层",
+            "en": "Deleting every layer after training"
+          },
+          {
+            "zh": "只使用一个像素",
+            "en": "Using only one pixel"
+          },
+          {
+            "zh": "把程序写成 S 表达式",
+            "en": "Writing programs as S-expressions"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "残差捷径把学习到的变化加回输入，使很深的网络更容易优化。",
+          "en": "Residual shortcuts make very deep networks easier to optimize by adding learned changes back to the input."
+        },
+        "sourceIds": [
+          "source-deep-residual-learning-for-image-recognition"
+        ],
+        "assetIds": [
+          "asset-kaiming-he"
+        ]
+      }
+    ],
     "archive": {
       "eventFile": "archive/events/2015-resnet/event.json",
-      "variantFile": "archive/events/2015-resnet/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2015-resnet/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
     "quote": {
-      "en": "\"ResNet reformulated layers as residual functions and used identity shortcuts, making it possible to optimize much deeper visual recognition networks.\"",
-      "zh": "\"ResNet 把网络层重新表述为残差函数，并使用恒等捷径连接，使更深的视觉识别网络能够被有效优化。\""
+      "en": "\"Deep Residual Learning for Image Recognition\"",
+      "zh": "\"用于图像识别的深度残差学习\""
     },
     "quoteMeta": {
       "speaker": "",
@@ -92831,11 +93387,11 @@ const milestones = [
         "zh": "何恺明、张祥雨、任少卿、孙剑，CVPR，2016"
       },
       "sourceLabel": "",
-      "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html"
+      "sourceUrl": "https://arxiv.org/abs/1512.03385"
     },
     "quotePage": {
-      "en": "CVPR 2016 paper: Deep Residual Learning for Image Recognition",
-      "zh": "CVPR 2016 论文《用于图像识别的深度残差学习》"
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
     },
     "quoteAttribution": {
       "en": "<em>Deep Residual Learning for Image Recognition</em>, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
@@ -92863,12 +93419,12 @@ const milestones = [
       "en": "Diffusion Model"
     },
     "subtitle": {
-      "zh": "深度学习与范式归一",
-      "en": "Deep Learning and Unified Paradigms"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "zh": "深度学习与范式归一（2006-2017）",
-      "en": "Deep Learning and the Unification of Paradigms (2006-2017)"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
@@ -92959,7 +93515,6 @@ const milestones = [
         "resources/images/external/ai100-2015-diffusion-model/jascha-sohl-dickstein-portrait.png",
         "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-ai100-2015-diffusion-model-audio-zh-original-v1",
@@ -92973,7 +93528,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-diffusion-model-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-diffusion-model-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-diffusion-model-zh-original-v1.mp3"
           }
         },
         {
@@ -92988,7 +93545,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/ai100-2015-diffusion-model-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/ai100-2015-diffusion-model-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-diffusion-model-en-v1.mp3"
           }
         }
       ],
@@ -93177,9 +93736,8 @@ const milestones = [
         }
       ],
       "emphasis": [
-        "generative-modeling",
-        "reverse-diffusion",
-        "historical-lineage"
+        "batch-migration",
+        "source-review-needed"
       ],
       "area": {
         "en": "Generative modeling",
@@ -93410,11 +93968,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/ai100-2015-diffusion-model/event.json",
-      "variantFile": "archive/events/ai100-2015-diffusion-model/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/ai100-2015-diffusion-model/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Deep unsupervised learning using nonequilibrium thermodynamics\"",
       "zh": "\"使用非平衡热力学进行深度无监督学习\""
@@ -93462,21 +94019,21 @@ const milestones = [
       "en": "DenseNet"
     },
     "subtitle": {
-      "zh": "深度学习与范式归一",
-      "en": "Deep Learning and Unified Paradigms"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一（2010年代至2020年代）"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
-        "en": "Cornell University",
-        "zh": "康奈尔大学"
+        "en": "Cornell University, Tsinghua University, Facebook AI Research",
+        "zh": "康奈尔大学、清华大学、Facebook 人工智能研究院"
       },
       "country": {
-        "en": "Ithaca, United States",
-        "zh": "美国伊萨卡"
+        "en": "United States, China",
+        "zh": "美国、中国"
       },
       "coordinates": [
         42.4534,
@@ -93484,8 +94041,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2016 年，高华、刘壮、劳伦斯·范德马滕和基利安·温伯格公开 DenseNet。与残差网络相加特征不同，DenseNet 在一个密集块内把前面所有层的特征图拼接起来，作为下一层输入；具有 L 层的网络因此形成 L(L+1)/2 条直接连接。</p><p>这种设计让早期提取的边缘、纹理等特征可以被后续层反复利用，也为梯度提供更短的传播路径。论文实验显示，DenseNet 能以较少参数取得有竞争力的图像分类结果。它把“每层都能访问历史特征”发展成明确架构，成为特征复用与高效连接设计的重要范例。</p>",
-      "en": "<p>In 2016, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger released DenseNet. Unlike residual networks, which add feature maps, DenseNet concatenated the outputs of every earlier layer inside a dense block and supplied them to each later layer. A network with L layers therefore contained L(L+1)/2 direct connections.</p><p>The design allowed later layers to reuse edges, textures, and other features extracted earlier, while giving gradients shorter routes through the network. The paper showed competitive image-classification accuracy with relatively few parameters. DenseNet turned the idea that every layer should have access to the feature history into an explicit architecture and became an influential example of feature reuse and efficient connectivity.</p>"
+      "zh": "<p>黄高等人在 2016 年公开 DenseNet，把密集块中的每一层与其后所有层直接连接。新层接收前面各层特征图的拼接，而不是只读取上一层输出；它只需产生少量新的特征通道，早期特征则可以被后续层反复复用。</p><p>这些短连接为梯度提供多条直接路径，缓解深层网络的优化困难，并在较少参数下获得有竞争力的准确率。特征拼接会增加显存访问和中间激活成本，因此不一定在所有硬件上最高效；但 DenseNet 把“保留并复用历史特征”推到极致，成为连接设计的重要参照。</p>",
+      "en": "<p>Gao Huang and colleagues released DenseNet in 2016, connecting every layer inside a dense block directly to all later layers. A new layer receives the concatenated feature maps of all preceding layers instead of only the previous output. It can produce a small number of new channels while later layers repeatedly reuse earlier features.</p><p>These short connections give gradients many direct routes, easing optimization in deep networks and delivering competitive accuracy with relatively few parameters. Concatenation can increase memory traffic and the cost of stored activations, so DenseNet is not the most efficient choice on every device. Its extreme commitment to preserving and reusing earlier features nevertheless became an important reference for connectivity design.</p>"
     },
     "figures": [
       {
@@ -93519,6 +94076,22 @@ const milestones = [
         "figureType": "person",
         "organizationIds": [],
         "primary": true
+      },
+      {
+        "id": "kilian-weinberger",
+        "name": {
+          "zh": "基利安·温伯格",
+          "en": "Kilian Weinberger"
+        },
+        "role": {
+          "zh": "DenseNet 共同作者",
+          "en": "DenseNet co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -93526,18 +94099,6 @@ const milestones = [
         "resources/images/2016-densenet/people/2016-densenet_people_02.png",
         "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
         "resources/images/2016-densenet/people/2016-densenet_people_01.png"
-      ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
-          "url": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
-          "title": "2016DenseNet：奔向更深层的人工智能",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
       ],
       "audios": [
         {
@@ -93552,7 +94113,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2016-densenet-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2016-densenet-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2016-densenet-zh-original-v1.mp3"
           }
         },
         {
@@ -93567,7 +94130,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2016-densenet-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2016-densenet-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2016-densenet-en-v1.mp3"
           }
         }
       ],
@@ -93697,21 +94262,6 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-densely-connected-convolutional-networks",
-          "type": {
-            "zh": "论文",
-            "en": "Paper"
-          },
-          "label": {
-            "zh": "《密集连接卷积网络》",
-            "en": "Densely Connected Convolutional Networks"
-          },
-          "url": "https://arxiv.org/abs/1608.06993",
-          "purpose": "core-evidence",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-cvf-open-access-paper-page",
           "type": {
             "zh": "会议论文页面",
@@ -93755,13 +94305,28 @@ const milestones = [
           "purpose": "alternate-access",
           "reliability": "reference-only",
           "sourceType": "paper-page"
+        },
+        {
+          "id": "source-densely-connected-convolutional-networks",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《密集连接卷积网络》",
+            "en": "Densely Connected Convolutional Networks"
+          },
+          "url": "https://arxiv.org/abs/1608.06993",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
         }
       ],
       "sourceIds": [
-        "source-densely-connected-convolutional-networks",
         "source-cvf-open-access-paper-page",
         "source-original-densenet-code-repository",
-        "source-meta-ai-publication-page"
+        "source-meta-ai-publication-page",
+        "source-densely-connected-convolutional-networks"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -93948,17 +94513,55 @@ const milestones = [
       }
     ],
     "analysis": null,
-    "quizzes": [],
+    "quizzes": [
+      {
+        "id": "ai100-2017-densenet-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "DenseNet 在网络内部鼓励什么？",
+          "en": "What does DenseNet encourage inside a network?"
+        },
+        "options": [
+          {
+            "zh": "通过密集连接复用特征",
+            "en": "Feature reuse through dense connections"
+          },
+          {
+            "zh": "忘记所有早期层",
+            "en": "Forgetting all earlier layers"
+          },
+          {
+            "zh": "只使用手写规则",
+            "en": "Only using handwritten rules"
+          },
+          {
+            "zh": "用棋盘替换图像",
+            "en": "Replacing images with chess boards"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "DenseNet 连接各层，使后续层可以直接使用早期特征图。",
+          "en": "DenseNet connects layers so later layers can directly use earlier feature maps."
+        },
+        "sourceIds": [
+          "source-densely-connected-convolutional-networks"
+        ],
+        "assetIds": [
+          "asset-2016-densenet-people-01"
+        ]
+      }
+    ],
     "archive": {
       "eventFile": "archive/events/2016-densenet/event.json",
-      "variantFile": "archive/events/2016-densenet/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2016-densenet/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
     "quote": {
-      "en": "\"DenseNet connected each layer to all later layers, improving feature reuse and gradient flow while encouraging compact convolutional models.\"",
-      "zh": "\"DenseNet 将每一层连接到后续所有层，增强了特征复用和梯度流动，也推动了更紧凑的卷积模型设计。\""
+      "en": "\"Densely Connected Convolutional Networks\"",
+      "zh": "\"密集连接卷积网络\""
     },
     "quoteMeta": {
       "speaker": "",
@@ -93967,19 +94570,19 @@ const milestones = [
         "zh": "密集连接卷积网络"
       },
       "workAuthors": {
-        "en": "Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Q. Weinberger, CVPR, 2017",
-        "zh": "黄高、刘壮、Laurens van der Maaten、Kilian Q. Weinberger，CVPR，2017"
+        "en": "Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
+        "zh": "黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格，CVPR，2017"
       },
       "sourceLabel": "",
-      "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html"
+      "sourceUrl": "https://arxiv.org/abs/1608.06993"
     },
     "quotePage": {
-      "en": "CVPR 2017 paper: Densely Connected Convolutional Networks",
-      "zh": "CVPR 2017 论文《密集连接卷积网络》"
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
     },
     "quoteAttribution": {
-      "en": "<em>Densely Connected Convolutional Networks</em>, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Q. Weinberger, CVPR, 2017",
-      "zh": "《密集连接卷积网络》, 黄高、刘壮、Laurens van der Maaten、Kilian Q. Weinberger，CVPR，2017"
+      "en": "<em>Densely Connected Convolutional Networks</em>, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
+      "zh": "《密集连接卷积网络》, 黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格，CVPR，2017"
     }
   },
   {
@@ -93999,16 +94602,16 @@ const milestones = [
     "year": 2016,
     "date": "2016-03",
     "title": {
-      "zh": "深度学习进入复杂决策系统",
-      "en": "Deep Learning Enters Complex Decision Systems"
+      "zh": "AlphaGo",
+      "en": "AlphaGo"
     },
     "subtitle": {
-      "zh": "AlphaGo 展示了深度神经网络不仅能处理感知任务，也能通过搜索和强化学习参与复杂决策。",
-      "en": "AlphaGo showed that deep neural networks could go beyond perception and contribute to complex decision-making through search and reinforcement learning."
-    },
-    "category": {
       "zh": "连接主义的兴衰与复兴：AI七十年",
       "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+    },
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
@@ -94019,7 +94622,6 @@ const milestones = [
         "en": "United Kingdom, United States",
         "zh": "英国、美国"
       },
-      "regionId": "united-kingdom",
       "coordinates": [
         51.5074,
         -0.1278
@@ -94027,7 +94629,7 @@ const milestones = [
     },
     "description": {
       "zh": "<p>AlphaGo 结合策略网络、价值网络、蒙特卡洛树搜索和强化学习。系统先从职业棋手棋谱中进行监督学习，再通过自我对弈改进策略，并让树搜索把学习到的直觉与显式前瞻结合起来。2016 年《自然》论文报告了它战胜欧洲冠军樊麾，随后以 4 比 1 战胜李世石的比赛让这项成果进入全球公众视野。</p><p>围棋的分支数量和战略跨度极大，长期难以依靠蛮力搜索解决。AlphaGo 证明学习得到的表示可以缩小搜索范围，并评估难以手工编码的局面。它更深远的遗产是神经评估、规划与自我对弈的组合，这一模式影响了后续游戏系统及更广泛的决策研究。</p>",
-      "en": "<p>AlphaGo combined policy networks, a value network, Monte Carlo tree search, and reinforcement learning. Supervised learning from expert games first gave the policy network a strong starting point; self-play then improved move selection, while tree search joined learned intuition with explicit look-ahead. The 2016 Nature paper reported its victory over European champion Fan Hui, and its later 4-1 match win against Lee Sedol brought the achievement to a global audience.</p><p>Go had long resisted brute-force approaches because its branching factor and strategic horizon are enormous. AlphaGo showed that learned representations could narrow search and evaluate positions that were difficult to encode by hand. Its deeper legacy is the combination of neural evaluation, planning, and self-play, a pattern that influenced later game systems and research on decision-making beyond board games.</p>"
+      "en": "<p>AlphaGo combined policy networks, a value network, Monte Carlo tree search, and reinforcement learning. Supervised learning from expert games first gave the policy network a strong starting point; self-play then improved move selection, while tree search joined learned intuition with explicit look-ahead. The 2016 Nature paper reported its victory over European champion Fan Hui, and its later 4–1 match win against Lee Sedol brought the achievement to a global audience.</p><p>Go had long resisted brute-force approaches because its branching factor and strategic horizon are enormous. AlphaGo showed that learned representations could narrow search and evaluate positions that were difficult to encode by hand. Its deeper legacy is the combination of neural evaluation, planning, and self-play, a pattern that influenced later game systems and research on decision-making beyond board games.</p>"
     },
     "figures": [
       {
@@ -94135,11 +94737,11 @@ const milestones = [
       "images": [
         "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg"
+        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
+        "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg"
       ],
       "overviewImage": "resources/images/figures/authoritative/david-silver.jpg",
       "overviewImageAssetId": "asset-david-silver-commons-portrait",
-      "videos": [],
       "audios": [
         {
           "id": "asset-2016-alphago-audio-zh-original-v1",
@@ -94153,7 +94755,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2016-alphago-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2016-alphago-zh-original-v1.mp3"
           }
         },
         {
@@ -94168,7 +94772,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2016-alphago-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2016-alphago-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2016-alphago-en-v1.mp3"
           }
         }
       ],
@@ -94176,6 +94782,7 @@ const milestones = [
         "asset-david-silver-commons-portrait",
         "asset-alphago-policy-value-search",
         "asset-alphago-lee-sedol",
+        "asset-2016-alphago-game-4-photo",
         "asset-2016-alphago-audio-zh-original-v1",
         "asset-2016-alphago-audio-en-v1"
       ]
@@ -94264,27 +94871,76 @@ const milestones = [
         "figureIds": [
           "lee-sedol"
         ]
+      },
+      "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg": {
+        "caption": {
+          "zh": "李世石对 AlphaGo 第 4 局",
+          "en": "Lee Sedol versus AlphaGo, Game 4"
+        },
+        "subcaption": {
+          "zh": "2016 年首尔人机大战第 4 局的实际棋盘。",
+          "en": "The actual board during Game 4 of the 2016 Seoul match."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Sedol_(B)_vs_AlphaGo_(W)_-_Game_4.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0；摄影者 Wesalius，须保留署名并遵循相同方式共享。",
+          "en": "CC BY-SA 4.0; photograph by Wesalius. Attribution and share-alike terms apply."
+        },
+        "usage": {
+          "zh": "用于展示李世石在第 4 局击败 AlphaGo 的实际对局场景。",
+          "en": "Used to show the actual game in which Lee Sedol defeated AlphaGo."
+        },
+        "sourceId": "source-alphago-game-4-commons",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0；摄影者 Wesalius，须保留署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0; photograph by Wesalius. Attribution and share-alike terms apply."
+          }
+        },
+        "role": "game-record-image",
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
       "visual": "go",
-      "visualModules": [],
-      "sources": [
+      "visualModules": [
         {
-          "id": "source-david-silver-commons-portrait",
-          "type": {
-            "zh": "图片来源",
-            "en": "Image source"
+          "type": "archiveLink",
+          "site": {
+            "en": "Nature",
+            "zh": "《自然》"
           },
-          "label": {
-            "zh": "大卫·席尔瓦资料照片",
-            "en": "David Silver archival portrait"
+          "title": {
+            "en": "Mastering the game of Go with deep neural networks and tree search",
+            "zh": "《用深度神经网络和树搜索掌握围棋》"
           },
-          "url": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
-          "purpose": "image-provenance",
-          "reliability": "primary",
-          "sourceType": "image-source"
-        },
+          "description": {
+            "en": "Official Nature article page for the 2016 AlphaGo paper, documenting policy networks, value networks and Monte Carlo tree search.",
+            "zh": "《自然》 官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
+          },
+          "url": "https://www.nature.com/articles/nature16961",
+          "source": "https://www.nature.com/articles/nature16961",
+          "license": {
+            "en": "Nature article access page; reuse rights for article figures are restricted by publisher terms.",
+            "zh": "《自然》文章访问页；论文图表的复用受出版方条款限制。"
+          },
+          "usage": {
+            "en": "Source material / Published paper reference",
+            "zh": "原始材料入口 / 发表论文参考"
+          },
+          "action": {
+            "en": "Open Nature paper",
+            "zh": "打开 《自然》 论文"
+          }
+        }
+      ],
+      "sources": [
         {
           "id": "source-alphago-nature-paper",
           "type": {
@@ -94329,13 +94985,28 @@ const milestones = [
           "purpose": "implementation",
           "reliability": "reference-only",
           "sourceType": "documentation"
+        },
+        {
+          "id": "source-david-silver-commons-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "大卫·席尔瓦资料照片",
+            "en": "David Silver archival portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
-        "source-david-silver-commons-portrait",
         "source-alphago-nature-paper",
         "source-deepmind-alphago-page",
-        "source-katago-analysis-engine"
+        "source-katago-analysis-engine",
+        "source-david-silver-commons-portrait"
       ],
       "claimIds": [
         "claim-hybrid-policy-value-search",
@@ -94382,9 +95053,59 @@ const milestones = [
         }
       ],
       "emphasis": [
-        "deep-learning-expansion",
-        "reinforcement-learning",
-        "search-system"
+        "research-breakthrough",
+        "policy-value-network",
+        "mcts"
+      ],
+      "area": {
+        "en": "Reinforcement Learning",
+        "zh": "强化学习"
+      },
+      "method": {
+        "en": "Self-play search",
+        "zh": "自我对弈搜索"
+      },
+      "artifact": {
+        "en": "Policy/value networks + MCTS",
+        "zh": "策略 / 价值网络 + MCTS"
+      },
+      "material": {
+        "en": "Nature paper + blog + SGF/API",
+        "zh": "《自然》 论文 + 博客 + 棋谱/API"
+      },
+      "demo": {
+        "en": "Move 37 board explainer",
+        "zh": "第 37 手棋盘解释器"
+      },
+      "demoSteps": [
+        {
+          "en": "Policy prior",
+          "zh": "策略先验"
+        },
+        {
+          "en": "Value estimate",
+          "zh": "价值估计"
+        },
+        {
+          "en": "Search variation",
+          "zh": "搜索分支"
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Deep Blue",
+          "zh": "深蓝"
+        },
+        {
+          "en": "AlphaZero",
+          "zh": "AlphaZero"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
+        }
       ]
     },
     "commentarySections": [
@@ -94395,11 +95116,11 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "围棋长期被视为难以依靠蛮力搜索攻克的复杂决策任务，因为它具有巨大的分支数量和很长的战略跨度。AlphaGo 把深度神经网络与树搜索结合起来，使连接主义从感知和表示学习进一步进入规划与决策系统。",
-          "en": "Go had long been treated as a complex decision problem resistant to brute-force search because of its enormous branching factor and strategic horizon. AlphaGo combined deep neural networks with tree search, extending connectionism beyond perception and representation learning into planning and decision systems."
+          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。",
+          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data."
         },
         "sourceIds": [
-          "source-alphago-nature-paper"
+          "source-deepmind-alphago-page"
         ]
       },
       {
@@ -94409,12 +95130,11 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "策略网络缩小候选落子范围，价值网络评估棋盘局面，蒙特卡洛树搜索负责显式前瞻，自我对弈则持续改进策略。它的关键不是单纯增加搜索量，而是让学习到的表示和评估能力引导搜索。",
-          "en": "Policy networks narrow candidate moves, the value network evaluates positions, Monte Carlo tree search provides explicit look-ahead, and self-play continually improves the policy. The key was not simply searching more, but using learned representations and evaluations to guide search."
+          "zh": "DeepMind 的 AlphaGo 页面和 AlphaGo Zero 博客适合做叙事材料。若要做现代交互演示，可结合 KataGo 分析引擎 API 与公开 SGF 棋谱，展示名局附近的胜率变化、策略建议和搜索分支。",
+          "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves."
         },
         "sourceIds": [
-          "source-alphago-nature-paper",
-          "source-deepmind-alphago-page"
+          "source-alphago-nature-paper"
         ]
       },
       {
@@ -94424,8 +95144,8 @@ const milestones = [
           "en": "Long-Term Legacy"
         },
         "html": {
-          "zh": "专家通常把 AlphaGo 视为深度学习、强化学习和搜索协同工作的标志性展示。它的长期影响在于证明连接主义系统可以把学习到的直觉与规划结合起来，并通过自我对弈扩展到难以手工编码的复杂决策任务。",
-          "en": "Experts generally treat AlphaGo as a landmark demonstration of deep learning, reinforcement learning, and search working together. Its long-term legacy is showing that connectionist systems can combine learned intuition with planning and use self-play to address complex decisions that are difficult to encode by hand."
+          "zh": "专家通常把 AlphaGo 视为标志性展示，说明深度学习、搜索和强化学习可以在复杂领域超越顶尖人类直觉。它的长期影响在于自我对弈和神经搜索模式影响了后来的游戏 AI、规划系统以及公众对 AI 突破的期待。",
+          "en": "Experts generally treat AlphaGo as a landmark demonstration that deep learning, search, and reinforcement learning could surpass elite human intuition in a complex domain. Its long-term legacy is the self-play and neural search pattern that shaped later game AI, planning systems, and public expectations for AI breakthroughs."
         },
         "sourceIds": [
           "source-alphago-nature-paper",
@@ -94476,8 +95196,34 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2016-alphago/event.json",
-      "variantFile": "archive/events/2016-alphago/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2016-alphago/event.json",
       "presentationMode": "preserve-legacy"
+    },
+    "photos": [],
+    "quote": {
+      "en": "\"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.\"",
+      "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
+        "zh": "用深度神经网络和树搜索掌握围棋"
+      },
+      "workAuthors": {
+        "en": "David Silver et al., Nature, 2016",
+        "zh": "大卫·席尔瓦等, 《自然》, 2016"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://www.nature.com/articles/nature16961"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Reinforcement learning / AlphaGo",
+      "zh": "BenchCouncil AI100：强化学习 / AlphaGo"
+    },
+    "quoteAttribution": {
+      "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
+      "zh": "《用深度神经网络和树搜索掌握围棋》, 大卫·席尔瓦等, 《自然》, 2016"
     }
   },
   {
@@ -94501,21 +95247,21 @@ const milestones = [
       "en": "Transformer"
     },
     "subtitle": {
-      "zh": "深度学习与范式归一",
-      "en": "Deep Learning and Unified Paradigms"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一（2010年代至2020年代）"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
-        "en": "Google Brain",
-        "zh": "Google Brain"
+        "en": "Google, University of Toronto",
+        "zh": "Google、多伦多大学"
       },
       "country": {
-        "en": "Mountain View, United States",
-        "zh": "美国山景城"
+        "en": "United States, Canada",
+        "zh": "美国、加拿大"
       },
       "coordinates": [
         37.422,
@@ -94523,8 +95269,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2017 年，阿希什·瓦斯瓦尼等人在《Attention Is All You Need》中提出 Transformer。它用多头自注意力比较序列中不同位置的 query、key 和 value，并配合前馈网络、残差连接和位置编码，构成不依赖循环或卷积的编码器—解码器。</p><p>自注意力允许训练时并行处理整段序列，缩短远距离信息之间的计算路径。原论文在机器翻译基准上取得更高质量，同时显著减少训练成本。Transformer 随后成为 BERT、GPT、视觉 Transformer、多模态基础模型和现代生成式 AI 的共同架构基础。</p>",
-      "en": "<p>In 2017, Ashish Vaswani and colleagues introduced the Transformer in <em>Attention Is All You Need</em>. Multi-head self-attention compared queries, keys, and values across sequence positions, while feed-forward layers, residual connections, and positional encodings formed an encoder-decoder architecture without recurrence or convolution.</p><p>Self-attention allowed whole sequences to be processed in parallel during training and shortened the computational path between distant pieces of information. The original paper achieved stronger machine-translation quality with substantially lower training cost. The Transformer subsequently became the shared architectural foundation of BERT, GPT, vision transformers, multimodal foundation models, and modern generative AI.</p>"
+      "zh": "<p>2017 年的 Transformer 用堆叠的多头自注意力和前馈模块替代循环序列处理。每个词元生成 query、key 和 value 表示，使模型能够并行衡量序列中不同位置的关系；位置编码则补充原本由循环结构携带的顺序信息。最初的编码器—解码器系统面向机器翻译，并通过更高的训练并行度取得强劲结果。</p><p>这一架构让注意力从附着在 RNN 上的辅助模块变成通用计算单元。可扩展的模块后来支撑 BERT、GPT 式语言模型、视觉 Transformer、多模态系统和许多智能体基础。专家通常把 Transformer 视为现代 AI 的定义性架构，同时也指出标准注意力处理超长序列时会带来较高计算开销。</p>",
+      "en": "<p>The 2017 Transformer replaced recurrent sequence processing with stacked multi-head self-attention and feed-forward blocks. Each token forms query, key, and value representations, allowing the model to weigh relationships across a sequence in parallel; positional encodings supply order information that recurrence previously carried. The original encoder-decoder system was designed for machine translation and achieved strong results with substantially more parallel training.</p><p>This architecture made attention a general computational primitive rather than an auxiliary component attached to an RNN. Its scalable blocks later supported BERT, GPT-style language models, vision transformers, multimodal systems, and many agent foundations. Experts generally regard the Transformer as a defining modern AI architecture, while recognizing that its standard attention mechanism can become expensive on very long sequences.</p>"
     },
     "figures": [
       {
@@ -94558,6 +95304,86 @@ const milestones = [
         "figureType": "person",
         "organizationIds": [],
         "primary": true
+      },
+      {
+        "id": "niki-parmar",
+        "name": {
+          "zh": "妮基·帕尔马",
+          "en": "Niki Parmar"
+        },
+        "role": {
+          "zh": "Transformer 共同作者",
+          "en": "Transformer co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "jakob-uszkoreit",
+        "name": {
+          "zh": "雅各布·乌斯科雷特",
+          "en": "Jakob Uszkoreit"
+        },
+        "role": {
+          "zh": "Transformer 共同作者",
+          "en": "Transformer co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "llion-jones",
+        "name": {
+          "zh": "利昂·琼斯",
+          "en": "Llion Jones"
+        },
+        "role": {
+          "zh": "Transformer 共同作者",
+          "en": "Transformer co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "aidan-gomez",
+        "name": {
+          "zh": "艾丹·戈麦斯",
+          "en": "Aidan Gomez"
+        },
+        "role": {
+          "zh": "Transformer 共同作者",
+          "en": "Transformer co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "lukasz-kaiser",
+        "name": {
+          "zh": "卢卡什·凯泽",
+          "en": "Lukasz Kaiser"
+        },
+        "role": {
+          "zh": "Transformer 共同作者",
+          "en": "Transformer co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -94567,18 +95393,6 @@ const milestones = [
         "resources/images/2017-transformer/papers/2017-transformer_papers_01.png",
         "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
         "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg"
-      ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
-          "url": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
-          "title": "2017Transformer：改变AI的2017年论文",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
       ],
       "audios": [
         {
@@ -94593,7 +95407,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2017-transformer-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2017-transformer-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2017-transformer-zh-original-v1.mp3"
           }
         },
         {
@@ -94608,7 +95424,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2017-transformer-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2017-transformer-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2017-transformer-en-v1.mp3"
           }
         }
       ],
@@ -94786,21 +95604,6 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-transformer-arxiv",
-          "type": {
-            "zh": "论文",
-            "en": "Paper"
-          },
-          "label": {
-            "zh": "《Attention Is All You Need》",
-            "en": "Attention Is All You Need"
-          },
-          "url": "https://arxiv.org/abs/1706.03762",
-          "purpose": "core-evidence",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-transformer-neurips",
           "type": {
             "zh": "会议论文页面",
@@ -94844,13 +95647,28 @@ const milestones = [
           "purpose": "historical-context",
           "reliability": "secondary",
           "sourceType": "article"
+        },
+        {
+          "id": "source-transformer-arxiv",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《Attention Is All You Need》",
+            "en": "Attention Is All You Need"
+          },
+          "url": "https://arxiv.org/abs/1706.03762",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
         }
       ],
       "sourceIds": [
-        "source-transformer-arxiv",
         "source-transformer-neurips",
         "source-google-research-publication",
-        "source-google-transformer-blog"
+        "source-google-transformer-blog",
+        "source-transformer-arxiv"
       ],
       "claimIds": [
         "claim-attention-only-architecture",
@@ -94885,9 +95703,9 @@ const milestones = [
         }
       ],
       "emphasis": [
-        "attention",
-        "sequence-modeling",
-        "foundation-models"
+        "research-breakthrough",
+        "paper-source",
+        "self-attention"
       ],
       "area": {
         "en": "Neural Network",
@@ -94995,69 +95813,120 @@ const milestones = [
     },
     "commentarySections": [
       {
+        "id": "historical-background",
         "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
+          "zh": "历史背景",
+          "en": "Historical Background"
         },
         "html": {
-          "en": "The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems.",
-          "zh": "Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。"
-        }
+          "zh": "Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。",
+          "en": "The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems."
+        },
+        "sourceIds": [
+          "source-transformer-arxiv",
+          "source-google-research-publication"
+        ]
       },
       {
+        "id": "core-idea",
         "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
+          "zh": "核心思想",
+          "en": "Core Idea"
         },
         "html": {
-          "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
-          "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
-        }
+          "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。互动演示应突出自注意力如何替代循环式处理。",
+          "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling. The demo should highlight how self-attention replaced recurrent processing."
+        },
+        "sourceIds": [
+          "source-transformer-arxiv"
+        ]
       },
       {
+        "id": "long-term-legacy",
         "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
         },
         "html": {
-          "en": "Experts generally treat the Transformer as one of the defining architectures of modern AI. Its long-term legacy is the scalable self-attention recipe that reorganized natural language processing, vision, speech, code, agents, and foundation-model research.",
-          "zh": "专家通常把 Transformer 视为现代 AI 的定义性架构之一。它的长期影响在于可扩展的自注意力配方重塑了自然语言处理、视觉、语音、代码、智能体和基础模型研究。"
-        }
+          "zh": "专家通常把 Transformer 视为现代 AI 的定义性架构之一。它的长期影响在于可扩展的自注意力配方重塑了自然语言处理、视觉、语音、代码、智能体和基础模型研究。",
+          "en": "Experts generally treat the Transformer as one of the defining architectures of modern AI. Its long-term legacy is the scalable self-attention recipe that reorganized natural language processing, vision, speech, code, agents, and foundation-model research."
+        },
+        "sourceIds": [
+          "source-google-transformer-blog"
+        ]
       }
     ],
     "analysis": null,
-    "quizzes": [],
+    "quizzes": [
+      {
+        "id": "quiz-2017-transformer-ai100",
+        "storylineId": "bench-council-ai100",
+        "question": {
+          "zh": "Transformer 主要围绕什么构建？",
+          "en": "What is the Transformer built around?"
+        },
+        "options": [
+          {
+            "zh": "令牌之间的自注意力",
+            "en": "Self-attention over tokens"
+          },
+          {
+            "zh": "只有最近邻投票",
+            "en": "Only nearest-neighbor voting"
+          },
+          {
+            "zh": "化学专家规则",
+            "en": "A chemical expert rule"
+          },
+          {
+            "zh": "固定决策树",
+            "en": "A fixed decision tree"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "Transformer 使用自注意力模块，而不是循环式序列处理。",
+          "en": "The Transformer uses self-attention blocks instead of recurrent sequence processing."
+        },
+        "sourceIds": [
+          "source-transformer-arxiv"
+        ],
+        "assetIds": [
+          "asset-transformer-attention"
+        ]
+      }
+    ],
     "archive": {
       "eventFile": "archive/events/2017-transformer/event.json",
-      "variantFile": "archive/events/2017-transformer/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2017-transformer/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
     "quote": {
-      "en": "\"The Transformer replaced recurrence and convolution with self-attention, creating a scalable architecture that became the foundation for modern language models.\"",
-      "zh": "\"Transformer 用自注意力替代循环和卷积，形成了一种可扩展架构，并成为现代语言模型的基础。\""
+      "en": "\"Attention Is All You Need\"",
+      "zh": "\"Attention Is All You Need\""
     },
     "quoteMeta": {
       "speaker": "",
       "workTitle": {
         "en": "Attention Is All You Need",
-        "zh": "注意力就是你所需要的一切"
+        "zh": "Attention Is All You Need"
       },
       "workAuthors": {
         "en": "Ashish Vaswani et al., NeurIPS, 2017",
         "zh": "阿希什·瓦斯瓦尼等，NeurIPS，2017"
       },
       "sourceLabel": "",
-      "sourceUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need"
+      "sourceUrl": "https://arxiv.org/abs/1706.03762"
     },
     "quotePage": {
-      "en": "NeurIPS 2017 paper: Attention Is All You Need",
-      "zh": "NeurIPS 2017 论文《注意力就是你所需要的一切》"
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
     },
     "quoteAttribution": {
       "en": "<em>Attention Is All You Need</em>, Ashish Vaswani et al., NeurIPS, 2017",
-      "zh": "《注意力就是你所需要的一切》, 阿希什·瓦斯瓦尼等，NeurIPS，2017"
+      "zh": "《Attention Is All You Need》, 阿希什·瓦斯瓦尼等，NeurIPS，2017"
     }
   },
   {
@@ -95081,12 +95950,12 @@ const milestones = [
       "en": "BERT"
     },
     "subtitle": {
-      "zh": "大模型与科学智能",
-      "en": "Large Models and Scientific Intelligence"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "en": "Large Models and Scientific Intelligence",
-      "zh": "大模型与科学智能"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
@@ -95094,8 +95963,8 @@ const milestones = [
         "zh": "Google"
       },
       "country": {
-        "en": "Mountain View, United States",
-        "zh": "美国山景城"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.422,
@@ -95103,8 +95972,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2018 年，Google 的雅各布·德夫林等人提出 BERT，即“双向 Transformer 编码器表示”。它随机遮盖输入中的部分词并要求模型恢复，同时在原始方案中加入下一句预测，使每一层表示都能同时利用左侧和右侧上下文。</p><p>预训练完成后，BERT 只需增加很小的任务输出层并微调整个模型，就能用于问答、自然语言推断、文本分类等任务。论文在 11 项 NLP 基准上刷新结果，推动行业从“为每个任务单独设计模型”转向“先在大规模文本上预训练，再面向任务微调”的统一范式。</p>",
-      "en": "<p>In 2018, Jacob Devlin and colleagues at Google introduced BERT, or Bidirectional Encoder Representations from Transformers. It randomly masked some input tokens and trained the model to recover them, while the original system also used next-sentence prediction. Every layer could therefore condition on both left and right context.</p><p>After pre-training, BERT needed only a small task-specific output layer and end-to-end fine-tuning for question answering, natural-language inference, classification, and other tasks. The paper reported new results across eleven NLP benchmarks. It accelerated the shift from designing a separate architecture for each task toward a unified pattern of large-scale language pre-training followed by task adaptation.</p>"
+      "zh": "<p>德夫林等人在 2018 年提出 BERT，用 Transformer 编码器从左右两侧上下文共同学习词语表示。预训练时，模型预测被随机遮盖的词元，并在原始版本中同时执行下一句预测；完成后，只需加入较小任务头并用标注数据微调，就能适配问答、文本分类和序列标注。</p><p>BERT 把“大规模无标签预训练 + 少量任务微调”变成 NLP 的标准范式，并在多项基准上显著提升表现。它主要学习理解型双向表示，并非像 GPT 那样按从左到右方式生成长文本。后续模型修改了预训练目标和规模，但 BERT 确立的上下文化编码器路线持续影响搜索、信息抽取和语言理解。</p>",
+      "en": "<p>Jacob Devlin and colleagues introduced BERT in 2018 as a Transformer encoder that learns each token from both left and right context. During pretraining it predicts randomly masked tokens and, in the original version, also performs next-sentence prediction. A comparatively small task head can then be added and the whole model fine-tuned with labeled data for question answering, classification, or sequence labeling.</p><p>BERT made “large-scale unlabeled pretraining plus limited task-specific fine-tuning” a standard NLP pattern and produced major gains across benchmarks. It primarily learns bidirectional representations for understanding tasks rather than generating long text from left to right like GPT. Later models changed the objectives and scale, but BERT's contextual encoder route continued to shape search, information extraction, and language understanding.</p>"
     },
     "figures": [
       {
@@ -95122,6 +95991,22 @@ const milestones = [
         "figureType": "person",
         "organizationIds": [],
         "primary": true
+      },
+      {
+        "id": "kristina-toutanova",
+        "name": {
+          "zh": "克里斯蒂娜·图塔诺娃",
+          "en": "Kristina Toutanova"
+        },
+        "role": {
+          "zh": "BERT 共同作者",
+          "en": "BERT co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -95130,18 +96015,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg",
         "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
         "resources/images/2018-bert/architecture/2018-bert_architecture_02.png"
-      ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
-          "url": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
-          "title": "2018BERT：自然语言处理的革命",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
       ],
       "audios": [
         {
@@ -95156,7 +96029,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2018-bert-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2018-bert-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2018-bert-zh-original-v1.mp3"
           }
         },
         {
@@ -95171,7 +96046,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2018-bert-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2018-bert-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2018-bert-en-v1.mp3"
           }
         }
       ],
@@ -95323,21 +96200,6 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-bert",
-          "type": {
-            "zh": "论文",
-            "en": "Paper"
-          },
-          "label": {
-            "zh": "《BERT》",
-            "en": "BERT"
-          },
-          "url": "https://arxiv.org/abs/1810.04805",
-          "purpose": "core-evidence",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-acl-anthology-bert-paper",
           "type": {
             "zh": "会议论文页面",
@@ -95381,13 +96243,28 @@ const milestones = [
           "purpose": "background",
           "reliability": "secondary",
           "sourceType": "article"
+        },
+        {
+          "id": "source-bert",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《BERT》",
+            "en": "BERT"
+          },
+          "url": "https://arxiv.org/abs/1810.04805",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
         }
       ],
       "sourceIds": [
-        "source-bert",
         "source-acl-anthology-bert-paper",
         "source-google-research-bert-repository",
-        "source-google-ai-bert-blog-post"
+        "source-google-ai-bert-blog-post",
+        "source-bert"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -95570,17 +96447,55 @@ const milestones = [
       }
     ],
     "analysis": null,
-    "quizzes": [],
+    "quizzes": [
+      {
+        "id": "ai100-2018-bert-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "BERT 主要如何预训练？",
+          "en": "How is BERT mainly pre-trained?"
+        },
+        "options": [
+          {
+            "zh": "从双向上下文预测被遮盖的词",
+            "en": "By predicting masked words from bidirectional context"
+          },
+          {
+            "zh": "只给蛋白质原子排序",
+            "en": "By sorting protein atoms only"
+          },
+          {
+            "zh": "剪枝棋类搜索树",
+            "en": "By pruning a chess search tree"
+          },
+          {
+            "zh": "只统计边缘梯度",
+            "en": "By counting only edge gradients"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "BERT 遮盖部分令牌，并利用左右上下文重建它们。",
+          "en": "BERT hides some tokens and learns to reconstruct them using both left and right context."
+        },
+        "sourceIds": [
+          "source-bert"
+        ],
+        "assetIds": [
+          "asset-jacob-devlin"
+        ]
+      }
+    ],
     "archive": {
       "eventFile": "archive/events/2018-bert/event.json",
-      "variantFile": "archive/events/2018-bert/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2018-bert/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
     "quote": {
-      "en": "\"BERT made bidirectional Transformer pretraining a practical default for language understanding, combining masked language modeling with task-specific fine-tuning.\"",
-      "zh": "\"BERT 让双向 Transformer 预训练成为语言理解任务中的实用范式，并将掩码语言模型与任务微调结合起来。\""
+      "en": "\"Pre-training of deep bidirectional transformers for language understanding\"",
+      "zh": "\"用于语言理解的深度双向 Transformer 预训练\""
     },
     "quoteMeta": {
       "speaker": "",
@@ -95589,19 +96504,19 @@ const milestones = [
         "zh": "BERT：用于语言理解的深度双向 Transformer 预训练"
       },
       "workAuthors": {
-        "en": "Jacob Devlin et al., arXiv, 2018",
-        "zh": "雅各布·德夫林等，arXiv，2018"
+        "en": "Jacob Devlin et al., NAACL, 2019",
+        "zh": "雅各布·德夫林等，NAACL，2019"
       },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/1810.04805"
     },
     "quotePage": {
-      "en": "BERT paper and Google Research release note",
-      "zh": "BERT 论文与 Google Research 发布说明"
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
     },
     "quoteAttribution": {
-      "en": "<em>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</em>, Jacob Devlin et al., arXiv, 2018",
-      "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》, 雅各布·德夫林等，arXiv，2018"
+      "en": "<em>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</em>, Jacob Devlin et al., NAACL, 2019",
+      "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》, 雅各布·德夫林等，NAACL，2019"
     }
   },
   {
@@ -95625,12 +96540,12 @@ const milestones = [
       "en": "GPT"
     },
     "subtitle": {
-      "zh": "从生成式预训练到 ChatGPT",
-      "en": "From Generative Pretraining to ChatGPT"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "en": "Large Models and Scientific Intelligence",
-      "zh": "大模型与科学智能"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
@@ -95638,8 +96553,8 @@ const milestones = [
         "zh": "OpenAI"
       },
       "country": {
-        "en": "San Francisco, United States",
-        "zh": "美国旧金山"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.7749,
@@ -95647,8 +96562,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2018 年，OpenAI 的亚历克·拉德福德等人提出生成式预训练 Transformer。模型先在大规模无标注文本上按照从左到右预测下一个词的目标训练，再用少量任务标注数据微调，从而把通用语言知识迁移到分类、问答、文本蕴含等不同任务。</p><p>论文使用以 Transformer 解码器为基础的统一架构，在 12 项任务中的多数项目上取得当时有竞争力的结果。GPT 证明生成式语言建模可以充当通用预训练目标，并开启了持续扩大模型、数据和计算规模的解码器路线。GPT-2、GPT-3 延续了这条规模化路径，2022 年推出的 ChatGPT 又结合指令微调和基于人类反馈的后训练，把同一技术谱系转化为面向公众的对话系统。</p>",
-      "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the Generative Pre-trained Transformer. The model first learned from large amounts of unlabeled text by predicting the next word from left to right, then transferred that general language knowledge to classification, question answering, textual entailment, and other tasks through supervised fine-tuning.</p><p>The paper used one Transformer-decoder-based architecture and reported competitive results on most of twelve evaluated tasks. GPT showed that generative language modeling could serve as a general pre-training objective and opened the decoder-only scaling path for larger models, datasets, and compute. GPT-2 and GPT-3 continued that path; ChatGPT, released in 2022, combined the same model lineage with instruction tuning and human-feedback-based post-training to turn it into a public conversational system.</p>"
+      "zh": "<p>OpenAI 团队在 2018 年提出第一代 GPT，先用 BooksCorpus 等无标签文本训练只看左侧上下文的 Transformer 解码器预测下一个词，再把通用语言表示用监督微调适配分类、问答和文本蕴含等任务。不同任务被转换成模型能够按统一序列接口处理的输入。</p><p>这项工作证明生成式语言建模可以成为通用预训练目标，减少每个 NLP 任务对大量标注数据和专用架构的依赖。首代 GPT 的规模和能力远小于后来的模型，也不是对话产品；但“解码器式预训练、任务适配并持续扩大数据与参数”的路线成为 GPT-2、GPT-3 及现代大语言模型的重要起点。</p>",
+      "en": "<p>OpenAI's first GPT, introduced in 2018, pretrained a Transformer decoder on unlabeled text such as BooksCorpus by predicting the next word from left context. The general language representation was then adapted with supervised fine-tuning to classification, question answering, and textual-entailment tasks, with different tasks transformed into a common sequence interface.</p><p>The work showed that generative language modeling could serve as a general pretraining objective, reducing dependence on large labeled datasets and specialized architectures for every NLP task. The first GPT was far smaller and less capable than later systems and was not a conversational product. Its route of decoder pretraining, task adaptation, and continued scaling of data and parameters nevertheless became the starting line for GPT-2, GPT-3, and modern large language models.</p>"
     },
     "figures": [
       {
@@ -95666,6 +96581,118 @@ const milestones = [
         "figureType": "person",
         "organizationIds": [],
         "primary": true
+      },
+      {
+        "id": "ilya-sutskever",
+        "name": {
+          "zh": "伊利亚·苏茨克维",
+          "en": "Ilya Sutskever"
+        },
+        "role": {
+          "zh": "AlexNet 共同作者",
+          "en": "AlexNet co-author"
+        },
+        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "jeffrey-wu",
+        "name": {
+          "zh": "杰弗里·吴",
+          "en": "Jeffrey Wu"
+        },
+        "role": {
+          "zh": "GPT 共同作者",
+          "en": "GPT co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "dario-amodei",
+        "name": {
+          "zh": "达里奥·阿莫代",
+          "en": "Dario Amodei"
+        },
+        "role": {
+          "zh": "GPT 共同作者",
+          "en": "GPT co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "tom-brown",
+        "name": {
+          "zh": "汤姆·布朗",
+          "en": "Tom Brown"
+        },
+        "role": {
+          "zh": "GPT 共同作者",
+          "en": "GPT co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "benjamin-mann",
+        "name": {
+          "zh": "本杰明·曼",
+          "en": "Benjamin Mann"
+        },
+        "role": {
+          "zh": "GPT 共同作者",
+          "en": "GPT co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "nick-ryder",
+        "name": {
+          "zh": "尼克·赖德",
+          "en": "Nick Ryder"
+        },
+        "role": {
+          "zh": "GPT 共同作者",
+          "en": "GPT co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "melanie-subbiah",
+        "name": {
+          "zh": "梅拉妮·苏比亚",
+          "en": "Melanie Subbiah"
+        },
+        "role": {
+          "zh": "GPT 共同作者",
+          "en": "GPT co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
       }
     ],
     "resources": {
@@ -95675,18 +96702,6 @@ const milestones = [
         "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg",
         "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png",
         "resources/images/2018-gpt/historical/2018-gpt_historical_01.png"
-      ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
-          "url": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
-          "title": "2018年GPT突破：极简的胜利",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
       ],
       "audios": [
         {
@@ -95701,7 +96716,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2018-gpt-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2018-gpt-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2018-gpt-zh-original-v1.mp3"
           }
         },
         {
@@ -95716,7 +96733,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2018-gpt-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2018-gpt-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2018-gpt-en-v1.mp3"
           }
         }
       ],
@@ -95894,21 +96913,6 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-improving-language-understanding-by-generative-pre-training",
-          "type": {
-            "zh": "论文 PDF",
-            "en": "Paper PDF"
-          },
-          "label": {
-            "zh": "《通过生成式预训练改进语言理解》",
-            "en": "Improving Language Understanding by Generative Pre-Training"
-          },
-          "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
-          "purpose": "alternate-access",
-          "reliability": "primary",
-          "sourceType": "paper-file"
-        },
-        {
           "id": "source-openai-language-unsupervised-page",
           "type": {
             "zh": "文章",
@@ -95937,12 +96941,27 @@ const milestones = [
           "purpose": "background",
           "reliability": "reference-only",
           "sourceType": "encyclopedia-entry"
+        },
+        {
+          "id": "source-improving-language-understanding-by-generative-pre-training",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "《通过生成式预训练改进语言理解》",
+            "en": "Improving Language Understanding by Generative Pre-Training"
+          },
+          "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+          "purpose": "alternate-access",
+          "reliability": "primary",
+          "sourceType": "paper-file"
         }
       ],
       "sourceIds": [
-        "source-improving-language-understanding-by-generative-pre-training",
         "source-openai-language-unsupervised-page",
-        "source-gpt-model-overview"
+        "source-gpt-model-overview",
+        "source-improving-language-understanding-by-generative-pre-training"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -96116,8 +97135,8 @@ const milestones = [
           "en": "Long-Term Legacy"
         },
         "html": {
-          "zh": "专家通常把 GPT 视为通向当今大语言模型的解码器式规模化路线起点。它的长期影响不仅在于把下一个令牌预测变成语言任务的通用接口，也在于这条路线经 GPT-2、GPT-3 和后训练方法延伸到 ChatGPT，使基础模型成为公众可以直接交互的系统。",
-          "en": "Experts generally treat GPT as the start of the decoder-only scaling line that led to today's large language models. Its long-term legacy is not only turning next-token prediction into a broad interface for language tasks, but also extending through GPT-2, GPT-3, and post-training methods into ChatGPT, where foundation models became directly interactive public systems."
+          "zh": "专家通常把 GPT 视为通向当今大语言模型的解码器式规模化路线起点。它的长期影响在于生成式预训练配方把下一个令牌预测变成语言任务的通用接口。",
+          "en": "Experts generally treat GPT as the start of the decoder-only scaling line that led to today’s large language models. Its long-term legacy is the generative pre-training recipe that turned next-token prediction into a broad interface for language tasks."
         },
         "sourceIds": [
           "source-improving-language-understanding-by-generative-pre-training"
@@ -96125,17 +97144,55 @@ const milestones = [
       }
     ],
     "analysis": null,
-    "quizzes": [],
+    "quizzes": [
+      {
+        "id": "ai100-2018-gpt-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "GPT 式预训练主要依靠什么预测任务？",
+          "en": "What prediction task drives GPT-style pre-training?"
+        },
+        "options": [
+          {
+            "zh": "预测下一个令牌",
+            "en": "Predicting the next token"
+          },
+          {
+            "zh": "只寻找蛋白质键角",
+            "en": "Finding a protein bond angle only"
+          },
+          {
+            "zh": "让邻近点投票",
+            "en": "Voting among nearby points"
+          },
+          {
+            "zh": "选择固定数据库键",
+            "en": "Choosing a fixed database key"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "GPT 使用解码器式 Transformer 学习延续文本序列。",
+          "en": "GPT uses a decoder transformer trained to continue text sequences."
+        },
+        "sourceIds": [
+          "source-improving-language-understanding-by-generative-pre-training"
+        ],
+        "assetIds": [
+          "asset-alec-radford"
+        ]
+      }
+    ],
     "archive": {
       "eventFile": "archive/events/2018-gpt/event.json",
-      "variantFile": "archive/events/2018-gpt/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2018-gpt/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
     "quote": {
-      "en": "\"OpenAI's GPT showed that generative pretraining on unlabeled text, followed by task adaptation, could transfer strongly across language understanding benchmarks.\"",
-      "zh": "\"OpenAI 的 GPT 证明，在无标注文本上进行生成式预训练，再针对任务进行适配，可以在多种语言理解基准上实现有效迁移。\""
+      "en": "\"Improving language understanding by generative pre-training\"",
+      "zh": "\"通过生成式预训练改进语言理解\""
     },
     "quoteMeta": {
       "speaker": "",
@@ -96151,8 +97208,8 @@ const milestones = [
       "sourceUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
     },
     "quotePage": {
-      "en": "OpenAI official paper: Improving Language Understanding by Generative Pre-Training",
-      "zh": "OpenAI 官方论文《通过生成式预训练改进语言理解》"
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
     },
     "quoteAttribution": {
       "en": "<em>Improving Language Understanding by Generative Pre-Training</em>, Alec Radford et al., OpenAI, 2018",
@@ -96230,18 +97287,6 @@ const milestones = [
         "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_01.png",
         "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_02.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
-          "url": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
-          "title": "2019AI_Feynman：破解宇宙的密码",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2019-ai-feynman-audio-zh-original-v1",
@@ -96255,7 +97300,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2019-ai-feynman-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2019-ai-feynman-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2019-ai-feynman-zh-original-v1.mp3"
           }
         },
         {
@@ -96270,7 +97317,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2019-ai-feynman-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2019-ai-feynman-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2019-ai-feynman-en-v1.mp3"
           }
         }
       ],
@@ -96498,11 +97547,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/2019-ai-feynman/event.json",
-      "variantFile": "archive/events/2019-ai-feynman/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2019-ai-feynman/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
     "quote": {
       "en": "\"AI Feynman combined neural-network fitting with physics-inspired constraints to recover symbolic equations from data, pointing toward AI-assisted scientific discovery.\"",
       "zh": "\"AI Feynman 将神经网络拟合与受物理启发的约束结合起来，从数据中恢复符号方程，指向 AI 辅助科学发现的路径。\""
@@ -96556,12 +97604,12 @@ const milestones = [
       "en": "AlphaFold"
     },
     "subtitle": {
-      "zh": "大模型与科学智能",
-      "en": "Large Models and Scientific Intelligence"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
-      "en": "Large Models and Scientific Intelligence",
-      "zh": "大模型与科学智能"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
@@ -96569,8 +97617,8 @@ const milestones = [
         "zh": "DeepMind"
       },
       "country": {
-        "en": "London, United Kingdom",
-        "zh": "英国伦敦"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
       "coordinates": [
         51.5072,
@@ -96578,8 +97626,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2020 年，DeepMind 的 AlphaFold2 在第十四届蛋白质结构预测关键评估 CASP14 中取得突破。系统从氨基酸序列、多序列比对和模板信息出发，用注意力网络反复交换序列与残基对信息，再直接预测三维坐标及其可信度。</p><p>2021 年发表的 Nature 论文报告，AlphaFold2 在多数目标上达到接近实验结构的精度，显著缩小了计算预测与实验测定之间的差距。随后开放的代码和 AlphaFold 蛋白质结构数据库把大规模结构预测带入日常生物学研究，为蛋白功能分析、疾病研究和药物发现提供了新的计算起点，但预测结果仍需结合实验和生物学背景判断。</p>",
-      "en": "<p>In 2020, DeepMind's AlphaFold2 achieved a breakthrough at the fourteenth Critical Assessment of Protein Structure Prediction, CASP14. Starting from an amino-acid sequence, multiple-sequence alignments, and available templates, attention-based networks repeatedly exchanged sequence and residue-pair information before directly predicting three-dimensional coordinates and confidence estimates.</p><p>The 2021 Nature paper reported accuracy close to experimental structures for many targets, sharply narrowing the gap between computational prediction and laboratory determination. The subsequent open-source code and AlphaFold Protein Structure Database brought large-scale prediction into everyday biological research, offering a new starting point for studying protein function, disease, and drug discovery. Predictions still require interpretation alongside experiments and biological context.</p>"
+      "zh": "<p>DeepMind 的 AlphaFold2 在 2020 年 CASP14 盲测中取得突破性精度，并于 2021 年论文中公开系统方法。模型联合处理多序列比对中的进化信息和氨基酸残基对关系，通过 Evoformer 的注意力更新两类表示，再由结构模块直接预测三维坐标并反复精修。</p><p>它使大量蛋白质能够在缺少实验结构时获得高质量预测，AlphaFold 数据库又把结果扩展到大规模开放资源，显著改变结构生物学的日常工作。预测仍不能替代实验验证，也不完整描述动态、配体和所有复合物状态；但它证明深度学习可以解决长期科学瓶颈并直接服务研究。</p>",
+      "en": "<p>DeepMind's AlphaFold2 achieved breakthrough accuracy in the blind CASP14 assessment in 2020, with the system described publicly in a 2021 paper. It jointly processes evolutionary information from multiple-sequence alignments and relationships between amino-acid residue pairs. Attention in the Evoformer updates both representations, and a structure module predicts three-dimensional coordinates with iterative refinement.</p><p>The system supplied high-quality predictions for many proteins lacking experimental structures, and the AlphaFold database expanded those results into a large open resource that changed everyday structural-biology work. Predictions do not replace experimental validation and do not fully represent dynamics, ligands, or every complex state. AlphaFold nevertheless demonstrated that deep learning could overcome a long-standing scientific bottleneck and directly support research.</p>"
     },
     "figures": [
       {
@@ -96619,27 +97667,15 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/2020-alphafold/john-jumper-portrait.jpg",
+        "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
         "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg",
         "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png",
         "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png",
-        "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
+        "resources/images/external/2020-alphafold/john-jumper-portrait.jpg",
         "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg",
         "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png",
         "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png"
-      ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
-          "url": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
-          "title": "2020AlphaFold：破解生物学的终极挑战",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
       ],
       "audios": [
         {
@@ -96654,7 +97690,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2020-alphafold-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2020-alphafold-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2020-alphafold-zh-original-v1.mp3"
           }
         },
         {
@@ -96669,16 +97707,18 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2020-alphafold-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2020-alphafold-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2020-alphafold-en-v1.mp3"
           }
         }
       ],
       "assetIds": [
-        "asset-2020-alphafold-john-jumper-external",
+        "asset-2020-alphafold-people-01",
         "asset-2020-alphafold2-structure-pipeline",
         "asset-2020-alphafold-architecture-01",
         "asset-2020-alphafold-architecture-02",
-        "asset-2020-alphafold-people-01",
+        "asset-2020-alphafold-john-jumper-external",
         "asset-2020-alphafold-people-02",
         "asset-2020-alphafold-historical-01",
         "asset-2020-alphafold-historical-02",
@@ -96688,7 +97728,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/external/2020-alphafold/john-jumper-portrait.jpg": {
+      "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
         "caption": {
           "zh": "约翰·江珀肖像",
           "en": "John Jumper portrait"
@@ -96697,23 +97737,17 @@ const milestones = [
           "zh": "AlphaFold2 主要研究者。",
           "en": "Lead researcher of AlphaFold2."
         },
-        "sourceName": {
-          "zh": "范德堡大学新闻",
-          "en": "Vanderbilt University News"
-        },
-        "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
         "license": {
-          "zh": "本地副本来自范德堡大学新闻；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
-          "en": "Local copy from Vanderbilt University News; the source page does not state a repository-compatible license. Recheck before external redistribution."
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
-        "sourceId": "source-deepmind-alphafold-page",
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "本地副本来自范德堡大学新闻；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
-            "en": "Local copy from Vanderbilt University News; the source page does not state a repository-compatible license. Recheck before external redistribution."
-          },
-          "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
         },
         "role": "portrait",
         "type": "image",
@@ -96796,7 +97830,7 @@ const milestones = [
         "type": "image",
         "figureIds": []
       },
-      "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
+      "resources/images/external/2020-alphafold/john-jumper-portrait.jpg": {
         "caption": {
           "zh": "约翰·江珀肖像",
           "en": "John Jumper portrait"
@@ -96805,17 +97839,23 @@ const milestones = [
           "zh": "AlphaFold2 主要研究者。",
           "en": "Lead researcher of AlphaFold2."
         },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
+        "sourceName": {
+          "zh": "范德堡大学新闻",
+          "en": "Vanderbilt University News"
         },
-        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
+        "license": {
+          "zh": "本地副本来自范德堡大学新闻；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Vanderbilt University News; the source page does not state a repository-compatible license. Recheck before external redistribution."
+        },
+        "sourceId": "source-deepmind-alphafold-page",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
+            "zh": "本地副本来自范德堡大学新闻；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Vanderbilt University News; the source page does not state a repository-compatible license. Recheck before external redistribution."
+          },
+          "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
         },
         "role": "portrait",
         "type": "image",
@@ -96961,21 +98001,6 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-highly-accurate-protein-structure-prediction-with-alphafold",
-          "type": {
-            "zh": "论文",
-            "en": "Paper"
-          },
-          "label": {
-            "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》",
-            "en": "Highly accurate protein structure prediction with AlphaFold"
-          },
-          "url": "https://doi.org/10.1038/s41586-021-03819-2",
-          "purpose": "core-evidence",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-deepmind-alphafold-page",
           "type": {
             "zh": "项目页面",
@@ -97019,13 +98044,28 @@ const milestones = [
           "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
+        },
+        {
+          "id": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》",
+            "en": "Highly accurate protein structure prediction with AlphaFold"
+          },
+          "url": "https://doi.org/10.1038/s41586-021-03819-2",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
         }
       ],
       "sourceIds": [
-        "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "source-deepmind-alphafold-page",
         "source-alphafold-protein-structure-database",
-        "source-alphafold-github-repository"
+        "source-alphafold-github-repository",
+        "source-highly-accurate-protein-structure-prediction-with-alphafold"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -97208,17 +98248,55 @@ const milestones = [
       }
     ],
     "analysis": null,
-    "quizzes": [],
+    "quizzes": [
+      {
+        "id": "ai100-2020-alphafold2-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "AlphaFold2 改变了什么问题？",
+          "en": "What problem did AlphaFold2 transform?"
+        },
+        "options": [
+          {
+            "zh": "蛋白质结构预测",
+            "en": "Protein structure prediction"
+          },
+          {
+            "zh": "只有聊天机器人闲聊",
+            "en": "Chatbot small talk only"
+          },
+          {
+            "zh": "电子表格格式设置",
+            "en": "Spreadsheet formatting"
+          },
+          {
+            "zh": "只有定理子句排序",
+            "en": "Theorem clause ordering only"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "AlphaFold2 根据序列和进化特征预测三维蛋白质结构。",
+          "en": "AlphaFold2 predicts 3D protein structures from sequence and evolutionary features."
+        },
+        "sourceIds": [
+          "source-highly-accurate-protein-structure-prediction-with-alphafold"
+        ],
+        "assetIds": [
+          "asset-2020-alphafold2-structure-pipeline"
+        ]
+      }
+    ],
     "archive": {
       "eventFile": "archive/events/2020-alphafold/event.json",
-      "variantFile": "archive/events/2020-alphafold/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2020-alphafold/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
     "quote": {
-      "en": "\"AlphaFold2 combined deep learning with evolutionary and geometric signals to predict protein structures with a level of accuracy that changed structural biology workflows.\"",
-      "zh": "\"AlphaFold2 将深度学习与进化、几何信号结合起来，以足以改变结构生物学工作流程的精度预测蛋白质结构。\""
+      "en": "\"Highly accurate protein structure prediction with AlphaFold\"",
+      "zh": "\"使用 AlphaFold 进行高精度蛋白质结构预测\""
     },
     "quoteMeta": {
       "speaker": "",
@@ -97228,18 +98306,18 @@ const milestones = [
       },
       "workAuthors": {
         "en": "John Jumper et al., Nature, 2021",
-        "zh": "约翰·江珀等，Nature，2021"
+        "zh": "约翰·江珀等，《Nature》，2021"
       },
       "sourceLabel": "",
-      "sourceUrl": "https://www.nature.com/articles/s41586-021-03819-2"
+      "sourceUrl": "https://doi.org/10.1038/s41586-021-03819-2"
     },
     "quotePage": {
-      "en": "Nature paper and DeepMind AlphaFold announcement",
-      "zh": "Nature 论文与 DeepMind AlphaFold 官方说明"
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
     },
     "quoteAttribution": {
       "en": "<em>Highly accurate protein structure prediction with AlphaFold</em>, John Jumper et al., Nature, 2021",
-      "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》, 约翰·江珀等，Nature，2021"
+      "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》, 约翰·江珀等，《Nature》，2021"
     }
   },
   {
@@ -97315,7 +98393,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg",
       "overviewImageAssetId": "asset-2022-post-training-pipeline",
-      "videos": [],
       "audios": [
         {
           "id": "asset-2022-post-training-intelligence-audio-zh-original-v1",
@@ -97329,7 +98406,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2022-post-training-intelligence-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2022-post-training-intelligence-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2022-post-training-intelligence-zh-original-v1.mp3"
           }
         },
         {
@@ -97344,7 +98423,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2022-post-training-intelligence-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2022-post-training-intelligence-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2022-post-training-intelligence-en-v1.mp3"
           }
         }
       ],
@@ -97654,11 +98735,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/2022-post-training-intelligence/event.json",
-      "variantFile": "archive/events/2022-post-training-intelligence/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2022-post-training-intelligence/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Training language models to follow instructions with human feedback\"",
       "zh": "\"用人类反馈训练语言模型遵循指令\""
@@ -97793,18 +98873,6 @@ const milestones = [
         "resources/images/2023-agents/historical/2023-agents_historical_03.png",
         "resources/images/2023-agents/historical/2023-agents_historical_04.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
-          "url": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
-          "title": "2023AI智能体：70年的梦想",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2023-agents-audio-zh-original-v1",
@@ -97818,7 +98886,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2023-agents-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2023-agents-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2023-agents-zh-original-v1.mp3"
           }
         },
         {
@@ -97833,7 +98903,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2023-agents-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2023-agents-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2023-agents-en-v1.mp3"
           }
         }
       ],
@@ -98052,11 +99124,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/2023-agents/event.json",
-      "variantFile": "archive/events/2023-agents/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2023-agents/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
     "quote": {
       "en": "\"ReAct and related systems showed how language models could interleave reasoning traces with actions, turning LLMs from text predictors into components of tool-using agents.\"",
       "zh": "\"ReAct 及相关系统展示了语言模型如何交错生成推理轨迹与行动，使 LLM 从文本预测器延伸为可调用工具的智能体组件。\""
@@ -98183,18 +99254,6 @@ const milestones = [
         "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png",
         "resources/images/2024-ai-scientist/papers/2024-ai-scientist_papers_01.png"
       ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
-          "url": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
-          "title": "2024AI科学家：探索发现的新纪元",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2024-ai-scientist-audio-zh-original-v1",
@@ -98208,7 +99267,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2024-ai-scientist-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2024-ai-scientist-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2024-ai-scientist-zh-original-v1.mp3"
           }
         },
         {
@@ -98223,7 +99284,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2024-ai-scientist-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2024-ai-scientist-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2024-ai-scientist-en-v1.mp3"
           }
         }
       ],
@@ -98497,11 +99560,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/2024-ai-scientist/event.json",
-      "variantFile": "archive/events/2024-ai-scientist/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2024-ai-scientist/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
     "quote": {
       "en": "\"The AI Scientist explored an end-to-end research loop in which foundation models generate ideas, run experiments, write papers, and review results, while autonomous labs pushed similar automation into physical experimentation.\"",
       "zh": "\"AI Scientist 探索了由基础模型生成想法、运行实验、撰写论文并评审结果的端到端研究循环；自主实验室则把类似自动化推进到真实物理实验。\""
@@ -98638,18 +99700,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
       "overviewImageAssetId": "asset-2025-llm-competition-historical-01",
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
-          "url": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
-          "title": "2025新AI竞技场：我们如何评判最强AI",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
       "audios": [
         {
           "id": "asset-2025-llm-competition-audio-zh-original-v1",
@@ -98663,7 +99713,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2025-llm-competition-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2025-llm-competition-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2025-llm-competition-zh-original-v1.mp3"
           }
         },
         {
@@ -98678,7 +99730,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2025-llm-competition-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2025-llm-competition-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2025-llm-competition-en-v1.mp3"
           }
         }
       ],
@@ -98988,11 +100042,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/2025-llm-competition/event.json",
-      "variantFile": "archive/events/2025-llm-competition/variants/deep-learning.json",
+      "defaultPresentationFile": "archive/events/2025-llm-competition/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
     "quote": {
       "en": "\"Chatbot Arena introduced large-scale human-preference evaluation for language models, making public model comparison a visible part of the LLM ecosystem.\"",
       "zh": "\"Chatbot Arena 引入了面向语言模型的大规模人类偏好评测，使公开模型比较成为大语言模型生态中可见的一部分。\""
@@ -99046,21 +100099,21 @@ const milestones = [
       "en": "Christopher Strachey's Draughts"
     },
     "subtitle": {
-      "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
-      "en": "Game AI as a Testbed for Search, Learning and Planning"
+      "zh": "AI 在棋牌与博弈论的演进",
+      "en": "AI in Board & Tabletop Games"
     },
     "category": {
-      "en": "AI in Board & Tabletop Games",
-      "zh": "AI 在棋牌与博弈论的演进"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
-        "en": "National Physical Laboratory",
-        "zh": "英国国家物理实验室"
+        "en": "National Research Development Corporation",
+        "zh": "英国国家研究开发公司"
       },
       "country": {
-        "en": "Teddington, United Kingdom",
-        "zh": "英国特丁顿"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
       "coordinates": [
         51.4245,
@@ -99097,7 +100150,6 @@ const milestones = [
         "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
         "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1951-strachey-draughts-audio-zh-original-v1",
@@ -99111,7 +100163,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1951-strachey-draughts-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1951-strachey-draughts-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1951-strachey-draughts-zh-original-v1.mp3"
           }
         },
         {
@@ -99126,7 +100180,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1951-strachey-draughts-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1951-strachey-draughts-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1951-strachey-draughts-en-v1.mp3"
           }
         }
       ],
@@ -99361,12 +100417,28 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "reference-only",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-computer-pioneers-christopher-strachey",
+          "type": {
+            "zh": "人物资料",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
+            "en": "Computer Pioneers - Christopher Strachey"
+          },
+          "url": "https://history.computer.org/pioneers/strachey.html",
+          "purpose": "biography",
+          "reliability": "reference-only",
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
         "source-logical-or-non-mathematical-programmes",
         "source-strachey-draughts-program-screenshot",
-        "source-checkers-board-photo"
+        "source-checkers-board-photo",
+        "source-computer-pioneers-christopher-strachey"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -99501,8 +100573,8 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "在 1950 年代早期，电子计算机主要被视为数值计算设备，内存容量和编程工具也极其有限。在这种条件下实现跳棋，意味着机器必须表示棋盘、生成合法走法并在有限资源内比较候选行动。",
-          "en": "In the early 1950s, electronic computers were still understood mainly as numerical calculating machines, with extremely limited memory and fragile programming tools. Implementing draughts under those conditions required a machine to represent a board, generate legal moves, and compare candidate actions within tight resource limits."
+          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。 这段背景帮助观众把克里斯托弗·斯特雷奇 的跳棋程序放回当时的技术问题和研究重点中理解。",
+          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools. This context helps viewers place Christopher Strachey's Draughts in the technical problems and research priorities of its time."
         },
         "sourceIds": [
           "source-logical-or-non-mathematical-programmes"
@@ -99515,8 +100587,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "程序把合法走法生成、局面评估和有限前瞻组合起来，使机器能够根据当前棋盘选择行动，而不是只回放预先写好的脚本。这个结构已经包含后来许多博弈程序反复使用的基本循环：生成、搜索、评估和选择。",
-          "en": "The program combined legal-move generation, position evaluation, and limited lookahead so the machine could choose an action from the current board rather than merely replay a script. That structure already contained the recurring loop of later game programs: generate, search, evaluate, and select."
+          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。 关键机制是棋盘状态搜索与评估，它把资料线索与可见的演示行为连接起来。",
+          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script. The key mechanism is Board-state search and evaluation, which links the source material to the visible demo behavior."
         },
         "sourceIds": [
           "source-logical-or-non-mathematical-programmes"
@@ -99580,11 +100652,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1951-strachey-draughts/event.json",
-      "variantFile": "archive/events/1951-strachey-draughts/variants/gaming-ai.json",
+      "defaultPresentationFile": "archive/events/1951-strachey-draughts/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Non-numerical programs could play\"",
       "zh": "\"非数值程序也可以对弈\""
@@ -99632,21 +100703,21 @@ const milestones = [
       "en": "AlphaGo"
     },
     "subtitle": {
-      "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
-      "en": "Game AI as a Testbed for Search, Learning and Planning"
+      "zh": "AI 在棋牌与博弈论的演进",
+      "en": "AI in Board & Tabletop Games"
     },
     "category": {
-      "en": "AI in Board & Tabletop Games",
-      "zh": "AI 在棋牌与博弈论的演进"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
         "en": "Google DeepMind",
-        "zh": "谷歌 DeepMind"
+        "zh": "Google DeepMind"
       },
       "country": {
-        "en": "London, United Kingdom",
-        "zh": "英国，伦敦"
+        "en": "United Kingdom, United States",
+        "zh": "英国、美国"
       },
       "coordinates": [
         51.5074,
@@ -99655,7 +100726,7 @@ const milestones = [
     },
     "description": {
       "zh": "<p>AlphaGo 结合策略网络、价值网络、蒙特卡洛树搜索和强化学习。系统先从职业棋手棋谱中进行监督学习，再通过自我对弈改进策略，并让树搜索把学习到的直觉与显式前瞻结合起来。2016 年《自然》论文报告了它战胜欧洲冠军樊麾，随后以 4 比 1 战胜李世石的比赛让这项成果进入全球公众视野。</p><p>围棋的分支数量和战略跨度极大，长期难以依靠蛮力搜索解决。AlphaGo 证明学习得到的表示可以缩小搜索范围，并评估难以手工编码的局面。它更深远的遗产是神经评估、规划与自我对弈的组合，这一模式影响了后续游戏系统及更广泛的决策研究。</p>",
-      "en": "<p>AlphaGo combined policy networks, a value network, Monte Carlo tree search, and reinforcement learning. Supervised learning from expert games first gave the policy network a strong starting point; self-play then improved move selection, while tree search joined learned intuition with explicit look-ahead. The 2016 Nature paper reported its victory over European champion Fan Hui, and its later 4-1 match win against Lee Sedol brought the achievement to a global audience.</p><p>Go had long resisted brute-force approaches because its branching factor and strategic horizon are enormous. AlphaGo showed that learned representations could narrow search and evaluate positions that were difficult to encode by hand. Its deeper legacy is the combination of neural evaluation, planning, and self-play, a pattern that influenced later game systems and research on decision-making beyond board games.</p>"
+      "en": "<p>AlphaGo combined policy networks, a value network, Monte Carlo tree search, and reinforcement learning. Supervised learning from expert games first gave the policy network a strong starting point; self-play then improved move selection, while tree search joined learned intuition with explicit look-ahead. The 2016 Nature paper reported its victory over European champion Fan Hui, and its later 4–1 match win against Lee Sedol brought the achievement to a global audience.</p><p>Go had long resisted brute-force approaches because its branching factor and strategic horizon are enormous. AlphaGo showed that learned representations could narrow search and evaluate positions that were difficult to encode by hand. Its deeper legacy is the combination of neural evaluation, planning, and self-play, a pattern that influenced later game systems and research on decision-making beyond board games.</p>"
     },
     "figures": [
       {
@@ -99677,6 +100748,22 @@ const milestones = [
         "primary": true
       },
       {
+        "id": "aja-huang",
+        "name": {
+          "zh": "黄士杰",
+          "en": "Aja Huang"
+        },
+        "role": {
+          "zh": "AlphaGo 共同作者",
+          "en": "AlphaGo co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
         "id": "demis-hassabis",
         "name": {
           "zh": "德米斯·哈萨比斯",
@@ -99692,6 +100779,38 @@ const milestones = [
         "organizationIds": [
           "deepmind"
         ],
+        "primary": true
+      },
+      {
+        "id": "julian-schrittwieser",
+        "name": {
+          "zh": "朱利安·施里特维泽",
+          "en": "Julian Schrittwieser"
+        },
+        "role": {
+          "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一",
+          "en": "DeepMind research scientist and one of the first authors of the MuZero paper"
+        },
+        "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "karen-simonyan",
+        "name": {
+          "zh": "卡伦·西莫尼扬",
+          "en": "Karen Simonyan"
+        },
+        "role": {
+          "zh": "VGG 论文共同作者",
+          "en": "Co-author of the VGG paper"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
         "primary": true
       },
       {
@@ -99720,7 +100839,6 @@ const milestones = [
       ],
       "overviewImage": "resources/images/figures/authoritative/david-silver.jpg",
       "overviewImageAssetId": "asset-david-silver-commons-portrait",
-      "videos": [],
       "audios": [
         {
           "id": "asset-2016-alphago-audio-zh-original-v1",
@@ -99734,7 +100852,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2016-alphago-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2016-alphago-zh-original-v1.mp3"
           }
         },
         {
@@ -99749,7 +100869,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2016-alphago-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2016-alphago-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2016-alphago-en-v1.mp3"
           }
         }
       ],
@@ -99917,21 +101039,6 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-david-silver-commons-portrait",
-          "type": {
-            "zh": "图片来源",
-            "en": "Image source"
-          },
-          "label": {
-            "zh": "大卫·席尔瓦资料照片",
-            "en": "David Silver archival portrait"
-          },
-          "url": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
-          "purpose": "image-provenance",
-          "reliability": "primary",
-          "sourceType": "image-source"
-        },
-        {
           "id": "source-alphago-nature-paper",
           "type": {
             "zh": "论文页面",
@@ -99977,27 +101084,26 @@ const milestones = [
           "sourceType": "documentation"
         },
         {
-          "id": "source-alphago-game-4-commons",
+          "id": "source-david-silver-commons-portrait",
           "type": {
             "zh": "图片来源",
             "en": "Image source"
           },
           "label": {
-            "zh": "李世石对 AlphaGo 第 4 局棋盘照片",
-            "en": "Lee Sedol versus AlphaGo, Game 4 board photograph"
+            "zh": "大卫·席尔瓦资料照片",
+            "en": "David Silver archival portrait"
           },
-          "url": "https://commons.wikimedia.org/wiki/File:Lee_Sedol_(B)_vs_AlphaGo_(W)_-_Game_4.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
         }
       ],
       "sourceIds": [
-        "source-david-silver-commons-portrait",
         "source-alphago-nature-paper",
         "source-deepmind-alphago-page",
         "source-katago-analysis-engine",
-        "source-alphago-game-4-commons"
+        "source-david-silver-commons-portrait"
       ],
       "claimIds": [
         "claim-hybrid-policy-value-search",
@@ -100044,10 +101150,9 @@ const milestones = [
         }
       ],
       "emphasis": [
-        "game-ai-lineage",
-        "search",
-        "self-play",
-        "game-record-evolution"
+        "research-breakthrough",
+        "policy-value-network",
+        "mcts"
       ],
       "area": {
         "en": "Reinforcement Learning",
@@ -100104,27 +101209,26 @@ const milestones = [
       {
         "id": "historical-background",
         "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
+          "zh": "历史背景",
+          "en": "Historical Background"
         },
         "html": {
-          "en": "Go had long resisted brute-force game programs because its branching factor is enormous and the value of a position can remain strategically uncertain for many moves. AlphaGo's 2016 match victory over Lee Sedol made learned evaluation and search a public demonstration of machine capability, not only a laboratory result.",
-          "zh": "围棋的分支数量极大，局面价值又可能在很多手之后才显现，因此长期难以用蛮力搜索突破。2016 年 AlphaGo 战胜李世石，使学习型评估与搜索不再只是实验室成果，而成为全球公众理解机器能力的标志性事件。"
+          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。",
+          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data."
         },
         "sourceIds": [
-          "source-alphago-nature-paper",
           "source-deepmind-alphago-page"
         ]
       },
       {
         "id": "core-idea",
         "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
+          "zh": "核心思想",
+          "en": "Core Idea"
         },
         "html": {
-          "en": "A policy network narrows the enormous move space, a value network estimates which positions are promising, and Monte Carlo tree search converts those learned predictions into explicit lookahead. Supervised learning from expert games supplied the initial policy, while reinforcement learning through self-play made it stronger.",
-          "zh": "策略网络缩小庞大的候选落子空间，价值网络估计哪些局面更有希望，蒙特卡洛树搜索再把这些学习到的预测转化为显式前瞻。系统先从职业棋谱进行监督学习获得初始策略，再通过自我对弈强化学习继续提升。"
+          "zh": "DeepMind 的 AlphaGo 页面和 AlphaGo Zero 博客适合做叙事材料。若要做现代交互演示，可结合 KataGo 分析引擎 API 与公开 SGF 棋谱，展示名局附近的胜率变化、策略建议和搜索分支。",
+          "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves."
         },
         "sourceIds": [
           "source-alphago-nature-paper"
@@ -100133,12 +101237,12 @@ const milestones = [
       {
         "id": "long-term-legacy",
         "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
         },
         "html": {
-          "en": "Experts generally treat AlphaGo as a landmark demonstration that deep learning, search, and reinforcement learning could surpass elite human intuition in a complex domain. Its long-term legacy is the self-play and neural search pattern that shaped later game AI, planning systems, and public expectations for AI breakthroughs.",
-          "zh": "专家通常把 AlphaGo 视为标志性展示，说明深度学习、搜索和强化学习可以在复杂领域超越顶尖人类直觉。它的长期影响在于自我对弈和神经搜索模式影响了后来的游戏 AI、规划系统以及公众对 AI 突破的期待。"
+          "zh": "专家通常把 AlphaGo 视为标志性展示，说明深度学习、搜索和强化学习可以在复杂领域超越顶尖人类直觉。它的长期影响在于自我对弈和神经搜索模式影响了后来的游戏 AI、规划系统以及公众对 AI 突破的期待。",
+          "en": "Experts generally treat AlphaGo as a landmark demonstration that deep learning, search, and reinforcement learning could surpass elite human intuition in a complex domain. Its long-term legacy is the self-play and neural search pattern that shaped later game AI, planning systems, and public expectations for AI breakthroughs."
         },
         "sourceIds": [
           "source-alphago-nature-paper",
@@ -100149,8 +101253,8 @@ const milestones = [
     "analysis": null,
     "quizzes": [
       {
-        "id": "2016-alphago-quiz-1",
-        "storylineId": "gaming-ai",
+        "id": "quiz-2016-alphago-ai100",
+        "storylineId": "bench-council-ai100",
         "question": {
           "zh": "AlphaGo 不只是“搜得更多”。它学会了什么来引导搜索？",
           "en": "AlphaGo did not just search harder. What did it learn to guide search?"
@@ -100179,17 +101283,20 @@ const milestones = [
           "zh": "策略网络缩小候选落子，价值网络评估局面，树搜索向前规划。",
           "en": "Policy networks narrow candidate moves, value networks estimate positions, and tree search plans ahead."
         },
-        "sourceIds": [],
-        "assetIds": []
+        "sourceIds": [
+          "source-alphago-nature-paper"
+        ],
+        "assetIds": [
+          "asset-alphago-policy-value-search"
+        ]
       }
     ],
     "archive": {
       "eventFile": "archive/events/2016-alphago/event.json",
-      "variantFile": "archive/events/2016-alphago/variants/gaming-ai.json",
+      "defaultPresentationFile": "archive/events/2016-alphago/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.\"",
       "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
@@ -100237,21 +101344,21 @@ const milestones = [
       "en": "Temporal-Difference Update"
     },
     "subtitle": {
-      "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
-      "en": "Game AI as a Testbed for Search, Learning and Planning"
+      "zh": "AI 在棋牌与博弈论的演进",
+      "en": "AI in Board & Tabletop Games"
     },
     "category": {
-      "en": "AI in Board & Tabletop Games",
-      "zh": "AI 在棋牌与博弈论的演进"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
-        "en": "GTE Laboratories / University of Massachusetts lineage",
-        "zh": "GTE 实验室 / 麻省大学学术谱系"
+        "en": "GTE Laboratories Incorporated",
+        "zh": "GTE 实验室"
       },
       "country": {
-        "en": "United States and Canada",
-        "zh": "美国与加拿大"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         42.3732,
@@ -100287,7 +101394,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg",
         "resources/images/game-evolution/1988-td-gammon.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1988-td-update-audio-zh-original-v1",
@@ -100301,7 +101407,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1988-td-update-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1988-td-update-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1988-td-update-zh-original-v1.mp3"
           }
         },
         {
@@ -100316,7 +101424,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1988-td-update-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1988-td-update-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1988-td-update-en-v1.mp3"
           }
         }
       ],
@@ -100473,21 +101583,6 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-learning-to-predict-by-the-methods-of-temporal-differences",
-          "type": {
-            "zh": "论文",
-            "en": "Paper"
-          },
-          "label": {
-            "zh": "《利用时序差分方法学习预测》",
-            "en": "Learning to Predict by the Methods of Temporal Differences"
-          },
-          "url": "https://doi.org/10.1007/BF00115009",
-          "purpose": "core-evidence",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-richard-sutton-homepage",
           "type": {
             "zh": "个人主页",
@@ -100516,12 +101611,27 @@ const milestones = [
           "purpose": "contemporary-reporting",
           "reliability": "reference-only",
           "sourceType": "news"
+        },
+        {
+          "id": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《利用时序差分方法学习预测》",
+            "en": "Learning to Predict by the Methods of Temporal Differences"
+          },
+          "url": "https://doi.org/10.1007/BF00115009",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
         }
       ],
       "sourceIds": [
-        "source-learning-to-predict-by-the-methods-of-temporal-differences",
         "source-richard-sutton-homepage",
-        "source-acm-2024-turing-award-announcement"
+        "source-acm-2024-turing-award-announcement",
+        "source-learning-to-predict-by-the-methods-of-temporal-differences"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -100654,8 +101764,8 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "从延迟奖励中学习，需要在整段交互结束前判断哪些状态和动作应当获得信用。时序差分学习把这种信用分配变成逐步更新，使预测能够随新经验即时修正。",
-          "en": "Learning from delayed rewards requires assigning credit to states and actions before an entire interaction has ended. Temporal-difference learning turned that problem into incremental updates, allowing predictions to change as new experience arrives."
+          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。 这段背景帮助观众把时序差分更新放回当时的技术问题和研究重点中理解。",
+          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended. This context helps viewers place Temporal-Difference Update in the technical problems and research priorities of its time."
         },
         "sourceIds": [
           "source-learning-to-predict-by-the-methods-of-temporal-differences"
@@ -100668,8 +101778,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "TD 比较当前预测与“即时奖励加下一步预测”形成的一步目标，再把当前价值向该目标推进。这个自举机制不必等待最终胜负，因此特别适合连续对局和在线控制。",
-          "en": "TD compares the current prediction with a one-step target formed from the immediate reward plus the next prediction, then moves the current value toward it. This bootstrapping mechanism does not wait for a final outcome, making it well suited to continuing games and online control."
+          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。 关键机制是自举式价值预测，它把资料线索与可见的演示行为连接起来。",
+          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target. The key mechanism is Bootstrapped value prediction, which links the source material to the visible demo behavior."
         },
         "sourceIds": [
           "source-learning-to-predict-by-the-methods-of-temporal-differences"
@@ -100733,11 +101843,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1988-td-update/event.json",
-      "variantFile": "archive/events/1988-td-update/variants/gaming-ai.json",
+      "defaultPresentationFile": "archive/events/1988-td-update/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Bootstrapped value prediction\"",
       "zh": "\"自举式价值预测\""
@@ -100785,12 +101894,12 @@ const milestones = [
       "en": "Chinook"
     },
     "subtitle": {
-      "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
-      "en": "Game AI as a Testbed for Search, Learning and Planning"
+      "zh": "AI 在棋牌与博弈论的演进",
+      "en": "AI in Board & Tabletop Games"
     },
     "category": {
-      "en": "AI in Board & Tabletop Games",
-      "zh": "AI 在棋牌与博弈论的演进"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
@@ -100798,8 +101907,8 @@ const milestones = [
         "zh": "阿尔伯塔大学"
       },
       "country": {
-        "en": "Alberta, Canada",
-        "zh": "加拿大阿尔伯塔省"
+        "en": "Canada",
+        "zh": "加拿大"
       },
       "coordinates": [
         53.5232,
@@ -100835,7 +101944,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
         "resources/images/bench-council-ai100/source/1994-chinook_homepage.png"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1994-chinook-audio-zh-original-v1",
@@ -100849,7 +101957,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1994-chinook-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1994-chinook-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1994-chinook-zh-original-v1.mp3"
           }
         },
         {
@@ -100864,7 +101974,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1994-chinook-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1994-chinook-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1994-chinook-en-v1.mp3"
           }
         }
       ],
@@ -101213,8 +102325,8 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "跳棋足够复杂，可以挑战当时的搜索算法；同时规则和状态空间又足够明确，适合长期构建残局数据库。Chinook 因而成为连接竞技程序与形式化游戏求解的理想试验场。",
-          "en": "Checkers was complex enough to challenge contemporary search algorithms, yet structured enough for decades of endgame-database construction. That made Chinook an unusually productive bridge between competitive game programs and formal game solving."
+          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。 这段背景帮助观众把Chinook 跳棋程序放回当时的技术问题和研究重点中理解。",
+          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction. This context helps viewers place Chinook in the technical problems and research priorities of its time."
         },
         "sourceIds": [
           "source-chinook-project-home"
@@ -101227,8 +102339,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "Chinook 将开局知识、alpha-beta 前向搜索、人工局面评估与已求解残局表结合，使当前选择能够连接到被证明的终局结果。随着残局数据库不断扩大，未知搜索空间被逐步压缩，最终形成从初始局面到和棋结论的证明链。",
-          "en": "Chinook combined opening knowledge, alpha-beta forward search, hand-built position evaluation, and solved endgame tables so current choices could connect to proven late-game outcomes. As the databases expanded, the unknown search space contracted until the team could establish a proof chain from the initial position to a draw."
+          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。 关键机制是alpha-beta 搜索加残局数据库，它把资料线索与可见的演示行为连接起来。",
+          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes. The key mechanism is Alpha-beta search plus endgame databases, which links the source material to the visible demo behavior."
         },
         "sourceIds": [
           "source-chinook-project-home"
@@ -101292,11 +102404,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1994-chinook/event.json",
-      "variantFile": "archive/events/1994-chinook/variants/gaming-ai.json",
+      "defaultPresentationFile": "archive/events/1994-chinook/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Perfect play in checkers is a draw\"",
       "zh": "\"跳棋完美对弈结果为和棋\""
@@ -101393,7 +102504,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg",
         "resources/images/external/1997-logistello/logistello-game-1-first-25-positions.gif"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1997-logistello-audio-zh-original-v1",
@@ -101407,7 +102517,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1997-logistello-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1997-logistello-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1997-logistello-zh-original-v1.mp3"
           }
         },
         {
@@ -101422,7 +102534,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1997-logistello-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1997-logistello-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1997-logistello-en-v1.mp3"
           }
         }
       ],
@@ -101911,7 +103025,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1997-logistello/event.json",
-      "variantFile": "archive/events/1997-logistello/variants/gaming-ai.json",
+      "defaultPresentationFile": "archive/events/1997-logistello/event.json",
       "presentationMode": "preserve-legacy"
     },
     "papers": [
@@ -101949,7 +103063,6 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Takeshi Murakami (0) vs. Logistello (6)\"",
       "zh": "\"村上健 0 比 6 负于 Logistello\""
@@ -102001,21 +103114,21 @@ const milestones = [
       "en": "Deep Blue"
     },
     "subtitle": {
-      "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
-      "en": "Game AI as a Testbed for Search, Learning and Planning"
+      "zh": "AI 在棋牌与博弈论的演进",
+      "en": "AI in Board & Tabletop Games"
     },
     "category": {
-      "en": "AI in Board & Tabletop Games",
-      "zh": "AI 在棋牌与博弈论的演进"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
-        "en": "IBM Research",
-        "zh": "IBM 研究院"
+        "en": "IBM",
+        "zh": "IBM"
       },
       "country": {
-        "en": "New York, United States",
-        "zh": "美国纽约州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         41.2108,
@@ -102023,8 +103136,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>IBM 的 Deep Blue 在 1997 年六局比赛中以 3.5 比 2.5 击败卫冕世界冠军加里·卡斯帕罗夫，成为首个在标准比赛条件下战胜现任国际象棋世界冠军的计算机系统。许峰雄、默里·坎贝尔等核心成员把并行 alpha-beta 搜索、国际象棋专用评估函数、开局库、残局知识和定制芯片整合成一套高性能系统。</p><p>Deep Blue 的成功来自搜索规模、硬件和专家知识的系统工程，而不是像现代系统那样从自我对弈中学习通用表征。它并不意味着获得一般智能，却成为公众理解机器能力的重要转折点，并展示了在规则明确的复杂领域中，计算、启发式搜索和领域知识可以共同超过顶尖人类表现。</p>",
-      "en": "<p>IBM's Deep Blue defeated reigning world champion Garry Kasparov by 3.5-2.5 in a six-game match in 1997, becoming the first computer system to defeat a sitting chess world champion under standard match conditions. Core team members including Feng-hsiung Hsu and Murray Campbell integrated parallel alpha-beta search, chess-specific evaluation functions, opening books, endgame knowledge, and custom chips into a high-performance system.</p><p>Deep Blue's strength came from systems engineering across search scale, hardware, and expert knowledge, not from learning general representations through self-play in the modern sense. It did not constitute general intelligence, but it became a major public turning point and showed how computation, heuristic search, and domain knowledge could jointly exceed elite human performance in a complex, precisely defined field.</p>"
+      "zh": "<p>IBM 的 Deep Blue 在 1997 年六局比赛中以 3.5 比 2.5 击败卫冕世界冠军加里·卡斯帕罗夫，成为首个在标准比赛条件下战胜现任国际象棋世界冠军的计算机系统。它利用并行 alpha-beta 搜索、国际象棋专用评估函数、开局库、残局知识和定制芯片，每秒检查大量候选局面。</p><p>Deep Blue 的成功来自搜索规模、硬件和专家知识的系统工程，而不是像现代系统那样从自我对弈中学习通用表征。它并不意味着获得一般智能，却成为公众理解机器能力的重要转折点，并展示了在规则明确的复杂领域中，计算、启发式搜索和领域知识可以共同超过顶尖人类表现。</p>",
+      "en": "<p>IBM's Deep Blue defeated reigning world champion Garry Kasparov by 3.5–2.5 in a six-game match in 1997, becoming the first computer system to defeat a sitting chess world champion under standard match conditions. It combined parallel alpha-beta search, chess-specific evaluation functions, opening books, endgame knowledge, and custom chips to examine enormous numbers of candidate positions.</p><p>Deep Blue's strength came from systems engineering across search scale, hardware, and expert knowledge, not from learning general representations through self-play in the modern sense. It did not constitute general intelligence, but it became a major public turning point and showed how computation, heuristic search, and domain knowledge could jointly exceed elite human performance in a complex, precisely defined field.</p>"
     },
     "figures": [
       {
@@ -102100,7 +103213,6 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
         "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-1997-deep-blue-audio-zh-original-v1",
@@ -102114,7 +103226,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1997-deep-blue-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1997-deep-blue-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1997-deep-blue-zh-original-v1.mp3"
           }
         },
         {
@@ -102129,7 +103243,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1997-deep-blue-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1997-deep-blue-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1997-deep-blue-en-v1.mp3"
           }
         }
       ],
@@ -102327,19 +103443,19 @@ const milestones = [
       ],
       "sources": [
         {
-          "id": "source-feng-hsiung-hsu-chm-portrait",
+          "id": "source-deep-blue-system-paper",
           "type": {
-            "zh": "图片来源",
-            "en": "Image source"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "许峰雄肖像，计算机历史博物馆",
-            "en": "Feng-Hsiung Hsu portrait, Computer History Museum"
+            "zh": "《Deep Blue》",
+            "en": "Deep Blue"
           },
-          "url": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
-          "purpose": "image-provenance",
+          "url": "https://doi.org/10.1016/S0004-3702(01)00129-1",
+          "purpose": "core-evidence",
           "reliability": "primary",
-          "sourceType": "image-source"
+          "sourceType": "paper"
         },
         {
           "id": "source-murray-campbell-ibm-research",
@@ -102387,27 +103503,27 @@ const milestones = [
           "sourceType": "official-page"
         },
         {
-          "id": "source-deep-blue-game-6-commons",
+          "id": "source-feng-hsiung-hsu-chm-portrait",
           "type": {
             "zh": "图片来源",
             "en": "Image source"
           },
           "label": {
-            "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局动画",
-            "en": "Deep Blue versus Kasparov, 1997 Game 6 animation"
+            "zh": "许峰雄肖像，计算机历史博物馆",
+            "en": "Feng-Hsiung Hsu portrait, Computer History Museum"
           },
-          "url": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+          "url": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
         }
       ],
       "sourceIds": [
-        "source-feng-hsiung-hsu-chm-portrait",
+        "source-deep-blue-system-paper",
         "source-murray-campbell-ibm-research",
         "source-mastering-the-game-computer-history-museum",
         "source-ibm100-deep-blue",
-        "source-deep-blue-game-6-commons"
+        "source-feng-hsiung-hsu-chm-portrait"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -102540,8 +103656,8 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "计算机国际象棋经过数十年发展，逐步依靠更深搜索、更精细的局面评估和专用硬件逼近顶尖人类水平。1997 年与卡斯帕罗夫的六局比赛，把这条长期技术路线第一次带到全球公众面前。",
-          "en": "Computer chess advanced over several decades through deeper search, more refined position evaluation, and increasingly specialized hardware. The six-game match against Garry Kasparov in 1997 brought that long technical lineage before a global public audience."
+          "zh": "计算机国际象棋几十年来依靠搜索、评估和硬件进步。深蓝 把这条路线带到全球舞台。",
+          "en": "Computer chess had advanced for decades through better search, evaluation, and hardware. Deep Blue made that lineage visible on a global stage."
         },
         "sourceIds": [
           "source-murray-campbell-ibm-research"
@@ -102554,8 +103670,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "Deep Blue 用并行 alpha-beta 搜索检查大量候选走法，通过剪枝跳过不可能改变决策的分支，再用包含棋类专家知识的评估函数给局面打分。定制国际象棋芯片、开局库和残局知识共同提高搜索速度与判断质量。",
-          "en": "Deep Blue examined many candidate moves with parallel alpha-beta search, pruning branches that could no longer change the decision and scoring positions with an evaluation function informed by chess expertise. Custom chess chips, opening books, and endgame knowledge jointly increased both search speed and decision quality."
+          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。 关键机制是专用国际象棋搜索硬件，它把资料线索与可见的演示行为连接起来。",
+          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge. The key mechanism is Specialized chess search hardware, which links the source material to the visible demo behavior."
         },
         "sourceIds": [
           "source-murray-campbell-ibm-research"
@@ -102619,11 +103735,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/1997-deep-blue/event.json",
-      "variantFile": "archive/events/1997-deep-blue/variants/gaming-ai.json",
+      "defaultPresentationFile": "archive/events/1997-deep-blue/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Specialized chess search hardware\"",
       "zh": "\"专用国际象棋搜索硬件\""
@@ -102735,7 +103850,6 @@ const milestones = [
         "resources/images/external/2000s-alphacat/i-chen-wu-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2000s-alphacat_xiangqi-search.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2000s-alphacat-audio-zh-original-v1",
@@ -102749,7 +103863,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2000s-alphacat-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2000s-alphacat-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2000s-alphacat-zh-original-v1.mp3"
           }
         },
         {
@@ -102764,7 +103880,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2000s-alphacat-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2000s-alphacat-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2000s-alphacat-en-v1.mp3"
           }
         }
       ],
@@ -103173,7 +104291,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2000s-alphacat/event.json",
-      "variantFile": "archive/events/2000s-alphacat/variants/gaming-ai.json",
+      "defaultPresentationFile": "archive/events/2000s-alphacat/event.json",
       "presentationMode": "preserve-legacy"
     },
     "papers": [
@@ -103195,7 +104313,6 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Chinese Chess: 16 tournaments, 38 programs\"",
       "zh": "\"中国象棋：16 次赛事，38 个程序\""
@@ -103247,21 +104364,21 @@ const milestones = [
       "en": "Deep Q Network"
     },
     "subtitle": {
-      "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
-      "en": "Game AI as a Testbed for Search, Learning and Planning"
+      "zh": "AI 在棋牌与博弈论的演进",
+      "en": "AI in Board & Tabletop Games"
     },
     "category": {
-      "en": "AI in Board & Tabletop Games",
-      "zh": "AI 在棋牌与博弈论的演进"
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
     },
     "location": {
       "name": {
-        "en": "DeepMind",
-        "zh": "DeepMind"
+        "en": "Google DeepMind",
+        "zh": "Google DeepMind"
       },
       "country": {
-        "en": "London, United Kingdom",
-        "zh": "英国伦敦"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
       "coordinates": [
         51.523,
@@ -103284,6 +104401,38 @@ const milestones = [
           "en": "First author of DQN work"
         },
         "avatar": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "martin-riedmiller",
+        "name": {
+          "zh": "马丁·里德米勒",
+          "en": "Martin Riedmiller"
+        },
+        "role": {
+          "zh": "Deep Q Network 共同作者",
+          "en": "Deep Q Network co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "koray-kavukcuoglu",
+        "name": {
+          "zh": "科雷·卡武克丘奥卢",
+          "en": "Koray Kavukcuoglu"
+        },
+        "role": {
+          "zh": "Deep Q Network 共同作者",
+          "en": "Deep Q Network co-author"
+        },
+        "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -103315,7 +104464,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg",
         "resources/images/figures/authoritative/david-silver.jpg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2013-dqn-audio-zh-original-v1",
@@ -103329,7 +104477,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2013-dqn-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2013-dqn-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2013-dqn-zh-original-v1.mp3"
           }
         },
         {
@@ -103344,7 +104494,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2013-dqn-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2013-dqn-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2013-dqn-en-v1.mp3"
           }
         }
       ],
@@ -103518,21 +104670,6 @@ const milestones = [
           "sourceType": "image-source"
         },
         {
-          "id": "source-playing-atari-with-deep-reinforcement-learning",
-          "type": {
-            "zh": "预印本页面",
-            "en": "Preprint page"
-          },
-          "label": {
-            "zh": "用深度强化学习玩 Atari",
-            "en": "Playing Atari with Deep Reinforcement Learning"
-          },
-          "url": "https://arxiv.org/abs/1312.5602",
-          "purpose": "alternate-access",
-          "reliability": "primary",
-          "sourceType": "paper-page"
-        },
-        {
           "id": "source-human-level-control-through-deep-reinforcement-learning",
           "type": {
             "zh": "论文",
@@ -103561,13 +104698,28 @@ const milestones = [
           "purpose": "historical-context",
           "reliability": "secondary",
           "sourceType": "article"
+        },
+        {
+          "id": "source-playing-atari-with-deep-reinforcement-learning",
+          "type": {
+            "zh": "预印本页面",
+            "en": "Preprint page"
+          },
+          "label": {
+            "zh": "用深度强化学习玩 Atari",
+            "en": "Playing Atari with Deep Reinforcement Learning"
+          },
+          "url": "https://arxiv.org/abs/1312.5602",
+          "purpose": "alternate-access",
+          "reliability": "primary",
+          "sourceType": "paper-page"
         }
       ],
       "sourceIds": [
         "source-david-silver-commons-portrait",
-        "source-playing-atari-with-deep-reinforcement-learning",
         "source-human-level-control-through-deep-reinforcement-learning",
-        "source-google-deepmind-deep-reinforcement-learning"
+        "source-google-deepmind-deep-reinforcement-learning",
+        "source-playing-atari-with-deep-reinforcement-learning"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -103718,8 +104870,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "经验回放随机重用过去的状态转移，打破连续经验之间的相关性；目标网络则在一段时间内固定学习目标，减轻自举更新的震荡。卷积网络由此可以把像素表示、动作选择和长期回报估计连接成一个端到端控制循环。",
-          "en": "Experience replay randomly reuses past transitions to break correlations between consecutive observations, while a target network holds the learning target fixed for intervals and reduces oscillation in bootstrapped updates. The convolutional network can therefore connect pixel representation, action selection, and long-term return estimation in an end-to-end control loop."
+          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。 关键机制是结合卷积网络、经验回放与目标网络的 Q 学习，它把资料线索与可见的演示行为连接起来。",
+          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates. The key mechanism is Q-learning with convolutional networks, replay, and target networks, which links the source material to the visible demo behavior."
         },
         "sourceIds": [
           "source-playing-atari-with-deep-reinforcement-learning"
@@ -103783,11 +104935,10 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2013-dqn/event.json",
-      "variantFile": "archive/events/2013-dqn/variants/gaming-ai.json",
+      "defaultPresentationFile": "archive/events/2013-dqn/event.json",
       "presentationMode": "preserve-legacy"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"playing Atari with deep reinforcement learning\"",
       "zh": "\"用深度强化学习玩 Atari\""
@@ -103920,7 +105071,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg",
         "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2017-alphazero-audio-zh-original-v1",
@@ -103934,7 +105084,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2017-alphazero-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2017-alphazero-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2017-alphazero-zh-original-v1.mp3"
           }
         },
         {
@@ -103949,7 +105101,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2017-alphazero-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2017-alphazero-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2017-alphazero-en-v1.mp3"
           }
         }
       ],
@@ -104403,7 +105557,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2017-alphazero/event.json",
-      "variantFile": "archive/events/2017-alphazero/variants/gaming-ai.json",
+      "defaultPresentationFile": "archive/events/2017-alphazero/event.json",
       "presentationMode": "preserve-legacy"
     },
     "papers": [
@@ -104441,7 +105595,6 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"a general reinforcement learning algorithm\"",
       "zh": "\"一种通用强化学习算法\""
@@ -104558,7 +105711,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2017-libratus_cfr-solving.svg",
         "resources/images/figures/authoritative/tuomas-sandholm.jpg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2017-libratus-audio-zh-original-v1",
@@ -104572,7 +105724,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2017-libratus-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2017-libratus-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2017-libratus-zh-original-v1.mp3"
           }
         },
         {
@@ -104587,7 +105741,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2017-libratus-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2017-libratus-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2017-libratus-en-v1.mp3"
           }
         }
       ],
@@ -105050,7 +106206,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2017-libratus/event.json",
-      "variantFile": "archive/events/2017-libratus/variants/gaming-ai.json",
+      "defaultPresentationFile": "archive/events/2017-libratus/event.json",
       "presentationMode": "preserve-legacy"
     },
     "papers": [
@@ -105072,7 +106228,6 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"superhuman AI for heads-up no-limit poker\"",
       "zh": "\"面向一对一无限注扑克的超人 AI\""
@@ -105189,7 +106344,6 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2019-pluribus_blueprint-search.svg",
         "resources/images/figures/authoritative/tuomas-sandholm.jpg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2019-pluribus-audio-zh-original-v1",
@@ -105203,7 +106357,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2019-pluribus-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2019-pluribus-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2019-pluribus-zh-original-v1.mp3"
           }
         },
         {
@@ -105218,7 +106374,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2019-pluribus-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2019-pluribus-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2019-pluribus-en-v1.mp3"
           }
         }
       ],
@@ -105681,7 +106839,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2019-pluribus/event.json",
-      "variantFile": "archive/events/2019-pluribus/variants/gaming-ai.json",
+      "defaultPresentationFile": "archive/events/2019-pluribus/event.json",
       "presentationMode": "preserve-legacy"
     },
     "papers": [
@@ -105703,7 +106861,6 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"superhuman AI for multiplayer poker\"",
       "zh": "\"面向多人扑克的超人 AI\""
@@ -105862,7 +107019,6 @@ const milestones = [
         "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
         "resources/images/external/2019-suphx/suphx-logo.png"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2019-suphx-audio-zh-original-v1",
@@ -105876,7 +107032,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2019-suphx-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2019-suphx-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2019-suphx-zh-original-v1.mp3"
           }
         },
         {
@@ -105891,7 +107049,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2019-suphx-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2019-suphx-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2019-suphx-en-v1.mp3"
           }
         }
       ],
@@ -106419,7 +107579,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2019-suphx/event.json",
-      "variantFile": "archive/events/2019-suphx/variants/gaming-ai.json",
+      "defaultPresentationFile": "archive/events/2019-suphx/event.json",
       "presentationMode": "preserve-legacy"
     },
     "papers": [
@@ -106441,7 +107601,6 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"Mastering Mahjong with Deep Reinforcement Learning\"",
       "zh": "\"用深度强化学习掌握麻将\""
@@ -106561,7 +107720,6 @@ const milestones = [
         "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg"
       ],
-      "videos": [],
       "audios": [
         {
           "id": "asset-2019-muzero-audio-zh-original-v1",
@@ -106575,7 +107733,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2019-muzero-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2019-muzero-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2019-muzero-zh-original-v1.mp3"
           }
         },
         {
@@ -106590,7 +107750,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2019-muzero-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2019-muzero-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2019-muzero-en-v1.mp3"
           }
         }
       ],
@@ -107008,7 +108170,7 @@ const milestones = [
     ],
     "archive": {
       "eventFile": "archive/events/2019-muzero/event.json",
-      "variantFile": "archive/events/2019-muzero/variants/gaming-ai.json",
+      "defaultPresentationFile": "archive/events/2019-muzero/event.json",
       "presentationMode": "preserve-legacy"
     },
     "papers": [
@@ -107046,7 +108208,6 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": {
       "en": "\"planning with a learned model\"",
       "zh": "\"用学习到的模型进行规划\""
@@ -107216,7 +108377,6 @@ const milestones = [
           "figureIds": []
         }
       },
-      "videos": [],
       "audios": [
         {
           "id": "asset-1920-rur-robots-audio-zh-original-v1",
@@ -107230,7 +108390,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1920-rur-robots-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1920-rur-robots-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1920-rur-robots-zh-original-v1.mp3"
           }
         },
         {
@@ -107245,7 +108407,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1920-rur-robots-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1920-rur-robots-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1920-rur-robots-en-v1.mp3"
           }
         }
       ],
@@ -107531,11 +108695,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/1920-rur-robots/event.json",
-      "variantFile": "archive/events/1920-rur-robots/variants/humanistic-cycle.json",
+      "defaultPresentationFile": "archive/events/1920-rur-robots/event.json",
       "presentationMode": "archive"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": "",
     "quoteMeta": {},
     "quotePage": "",
@@ -107724,7 +108887,6 @@ const milestones = [
           "figureIds": []
         }
       },
-      "videos": [],
       "audios": [
         {
           "id": "asset-1942-asimov-runaround-audio-zh-original-v1",
@@ -107738,7 +108900,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1942-asimov-runaround-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1942-asimov-runaround-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1942-asimov-runaround-zh-original-v1.mp3"
           }
         },
         {
@@ -107753,7 +108917,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1942-asimov-runaround-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1942-asimov-runaround-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1942-asimov-runaround-en-v1.mp3"
           }
         }
       ],
@@ -108039,11 +109205,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/1942-asimov-runaround/event.json",
-      "variantFile": "archive/events/1942-asimov-runaround/variants/humanistic-cycle.json",
+      "defaultPresentationFile": "archive/events/1942-asimov-runaround/event.json",
       "presentationMode": "archive"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": "",
     "quoteMeta": {},
     "quotePage": "",
@@ -108216,7 +109381,6 @@ const milestones = [
           "figureIds": []
         }
       },
-      "videos": [],
       "audios": [
         {
           "id": "asset-1950-wiener-human-use-audio-zh-original-v1",
@@ -108230,7 +109394,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1950-wiener-human-use-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1950-wiener-human-use-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1950-wiener-human-use-zh-original-v1.mp3"
           }
         },
         {
@@ -108245,7 +109411,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1950-wiener-human-use-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1950-wiener-human-use-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1950-wiener-human-use-en-v1.mp3"
           }
         }
       ],
@@ -108531,11 +109699,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/1950-wiener-human-use/event.json",
-      "variantFile": "archive/events/1950-wiener-human-use/variants/humanistic-cycle.json",
+      "defaultPresentationFile": "archive/events/1950-wiener-human-use/event.json",
       "presentationMode": "archive"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": "",
     "quoteMeta": {},
     "quotePage": "",
@@ -108708,7 +109875,6 @@ const milestones = [
           "figureIds": []
         }
       },
-      "videos": [],
       "audios": [
         {
           "id": "asset-1965-simon-ai-prediction-audio-zh-original-v1",
@@ -108722,7 +109888,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1965-simon-ai-prediction-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1965-simon-ai-prediction-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1965-simon-ai-prediction-zh-original-v1.mp3"
           }
         },
         {
@@ -108737,7 +109905,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1965-simon-ai-prediction-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1965-simon-ai-prediction-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1965-simon-ai-prediction-en-v1.mp3"
           }
         }
       ],
@@ -109035,11 +110205,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/1965-simon-ai-prediction/event.json",
-      "variantFile": "archive/events/1965-simon-ai-prediction/variants/humanistic-cycle.json",
+      "defaultPresentationFile": "archive/events/1965-simon-ai-prediction/event.json",
       "presentationMode": "archive"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": "",
     "quoteMeta": {},
     "quotePage": "",
@@ -109228,7 +110397,6 @@ const milestones = [
           "figureIds": []
         }
       },
-      "videos": [],
       "audios": [
         {
           "id": "asset-1968-hal-9000-audio-zh-original-v1",
@@ -109242,7 +110410,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1968-hal-9000-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1968-hal-9000-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1968-hal-9000-zh-original-v1.mp3"
           }
         },
         {
@@ -109257,7 +110427,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1968-hal-9000-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1968-hal-9000-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1968-hal-9000-en-v1.mp3"
           }
         }
       ],
@@ -109543,11 +110715,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/1968-hal-9000/event.json",
-      "variantFile": "archive/events/1968-hal-9000/variants/humanistic-cycle.json",
+      "defaultPresentationFile": "archive/events/1968-hal-9000/event.json",
       "presentationMode": "archive"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": "",
     "quoteMeta": {},
     "quotePage": "",
@@ -109834,7 +111005,6 @@ const milestones = [
           "figureIds": []
         }
       },
-      "videos": [],
       "audios": [
         {
           "id": "asset-1973-lighthill-report-audio-zh-original-v1",
@@ -109848,7 +111018,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1973-lighthill-report-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1973-lighthill-report-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1973-lighthill-report-zh-original-v1.mp3"
           }
         },
         {
@@ -109863,7 +111035,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1973-lighthill-report-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1973-lighthill-report-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1973-lighthill-report-en-v1.mp3"
           }
         }
       ],
@@ -110250,7 +111424,7 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/1973-lighthill-report/event.json",
-      "variantFile": "archive/events/1973-lighthill-report/variants/humanistic-cycle.json",
+      "defaultPresentationFile": "archive/events/1973-lighthill-report/event.json",
       "presentationMode": "archive"
     },
     "papers": [
@@ -110272,7 +111446,6 @@ const milestones = [
       }
     ],
     "photos": [],
-    "videoUrl": "",
     "quote": "",
     "quoteMeta": {},
     "quotePage": "",
@@ -110479,7 +111652,6 @@ const milestones = [
           "figureIds": []
         }
       },
-      "videos": [],
       "audios": [
         {
           "id": "asset-1978-xiaolingtong-audio-zh-original-v1",
@@ -110493,7 +111665,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1978-xiaolingtong-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1978-xiaolingtong-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1978-xiaolingtong-zh-original-v1.mp3"
           }
         },
         {
@@ -110508,7 +111682,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1978-xiaolingtong-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1978-xiaolingtong-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1978-xiaolingtong-en-v1.mp3"
           }
         }
       ],
@@ -110827,11 +112003,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/1978-xiaolingtong/event.json",
-      "variantFile": "archive/events/1978-xiaolingtong/variants/humanistic-cycle.json",
+      "defaultPresentationFile": "archive/events/1978-xiaolingtong/event.json",
       "presentationMode": "archive"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": "",
     "quoteMeta": {},
     "quotePage": "",
@@ -111004,7 +112179,6 @@ const milestones = [
           "figureIds": []
         }
       },
-      "videos": [],
       "audios": [
         {
           "id": "asset-1984-neuromancer-audio-zh-original-v1",
@@ -111018,7 +112192,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1984-neuromancer-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1984-neuromancer-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1984-neuromancer-zh-original-v1.mp3"
           }
         },
         {
@@ -111033,7 +112209,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1984-neuromancer-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1984-neuromancer-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1984-neuromancer-en-v1.mp3"
           }
         }
       ],
@@ -111319,11 +112497,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/1984-neuromancer/event.json",
-      "variantFile": "archive/events/1984-neuromancer/variants/humanistic-cycle.json",
+      "defaultPresentationFile": "archive/events/1984-neuromancer/event.json",
       "presentationMode": "archive"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": "",
     "quoteMeta": {},
     "quotePage": "",
@@ -111546,7 +112723,6 @@ const milestones = [
           ]
         }
       },
-      "videos": [],
       "audios": [
         {
           "id": "asset-1987-lisp-machine-collapse-audio-zh-original-v1",
@@ -111560,7 +112736,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1987-lisp-machine-collapse-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1987-lisp-machine-collapse-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1987-lisp-machine-collapse-zh-original-v1.mp3"
           }
         },
         {
@@ -111575,7 +112753,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/1987-lisp-machine-collapse-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/1987-lisp-machine-collapse-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1987-lisp-machine-collapse-en-v1.mp3"
           }
         }
       ],
@@ -111932,11 +113112,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/1987-lisp-machine-collapse/event.json",
-      "variantFile": "archive/events/1987-lisp-machine-collapse/variants/humanistic-cycle.json",
+      "defaultPresentationFile": "archive/events/1987-lisp-machine-collapse/event.json",
       "presentationMode": "archive"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": "",
     "quoteMeta": {},
     "quotePage": "",
@@ -112157,7 +113336,6 @@ const milestones = [
           ]
         }
       },
-      "videos": [],
       "audios": [
         {
           "id": "asset-2014-ai-existential-warnings-audio-zh-original-v1",
@@ -112171,7 +113349,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-ai-existential-warnings-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-ai-existential-warnings-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-ai-existential-warnings-zh-original-v1.mp3"
           }
         },
         {
@@ -112186,7 +113366,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2014-ai-existential-warnings-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2014-ai-existential-warnings-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2014-ai-existential-warnings-en-v1.mp3"
           }
         }
       ],
@@ -112505,11 +113687,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/2014-ai-existential-warnings/event.json",
-      "variantFile": "archive/events/2014-ai-existential-warnings/variants/humanistic-cycle.json",
+      "defaultPresentationFile": "archive/events/2014-ai-existential-warnings/event.json",
       "presentationMode": "archive"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": "",
     "quoteMeta": {},
     "quotePage": "",
@@ -112762,7 +113943,6 @@ const milestones = [
           ]
         }
       },
-      "videos": [],
       "audios": [
         {
           "id": "asset-2015-openai-founding-audio-zh-original-v1",
@@ -112776,7 +113956,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-openai-founding-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-openai-founding-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-openai-founding-zh-original-v1.mp3"
           }
         },
         {
@@ -112791,7 +113973,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2015-openai-founding-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2015-openai-founding-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2015-openai-founding-en-v1.mp3"
           }
         }
       ],
@@ -113110,11 +114294,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/2015-openai-founding/event.json",
-      "variantFile": "archive/events/2015-openai-founding/variants/humanistic-cycle.json",
+      "defaultPresentationFile": "archive/events/2015-openai-founding/event.json",
       "presentationMode": "archive"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": "",
     "quoteMeta": {},
     "quotePage": "",
@@ -113352,7 +114535,6 @@ const milestones = [
           "figureIds": []
         }
       },
-      "videos": [],
       "audios": [
         {
           "id": "asset-2023-ai-risk-statement-audio-zh-original-v1",
@@ -113366,7 +114548,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2023-ai-risk-statement-zh-original-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2023-ai-risk-statement-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2023-ai-risk-statement-zh-original-v1.mp3"
           }
         },
         {
@@ -113381,7 +114565,9 @@ const milestones = [
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "[REDACTED_OSS_BUCKET]",
-            "objectKey": "audio/ai-history/releases/2023-ai-risk-statement-en-v1.mp3"
+            "objectKey": "audio/ai-history/releases/2023-ai-risk-statement-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "2023-ai-risk-statement-en-v1.mp3"
           }
         }
       ],
@@ -113666,11 +114852,10 @@ const milestones = [
     "quizzes": [],
     "archive": {
       "eventFile": "archive/events/2023-ai-risk-statement/event.json",
-      "variantFile": "archive/events/2023-ai-risk-statement/variants/humanistic-cycle.json",
+      "defaultPresentationFile": "archive/events/2023-ai-risk-statement/event.json",
       "presentationMode": "archive"
     },
     "photos": [],
-    "videoUrl": "",
     "quote": "",
     "quoteMeta": {},
     "quotePage": "",

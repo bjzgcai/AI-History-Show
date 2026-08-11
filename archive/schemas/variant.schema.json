@@ -2,161 +2,169 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "variant.schema.json",
     "title": "Archive event storyline variant",
+    "$defs": {
+        "presentation": {
+            "type": "object",
+            "properties": {
+                "displayTitle": {
+                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/optionalLocalizedText" }, { "type": "null" }]
+                },
+                "displaySummary": {
+                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/optionalLocalizedText" }, { "type": "null" }]
+                },
+                "displaySubtitle": {
+                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/optionalLocalizedText" }, { "type": "null" }]
+                },
+                "displayDescription": {
+                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/optionalLocalizedText" }, { "type": "null" }]
+                },
+                "presentationMode": {
+                    "type": ["string", "null"],
+                    "enum": ["preserve-legacy", "archive", null],
+                    "default": "preserve-legacy",
+                    "description": "preserve-legacy keeps existing generated presentation and only attaches archive metadata; archive intentionally lets this presentation replace legacy presentation fields."
+                },
+                "emphasis": {
+                    "type": ["array", "null"],
+                    "items": {
+                        "$ref": "shared.schema.json#/$defs/archiveId"
+                    },
+                    "uniqueItems": true
+                },
+                "visual": {
+                    "type": ["string", "null"]
+                },
+                "visualModules": {
+                    "type": ["array", "null"],
+                    "items": {
+                        "type": "object"
+                    }
+                },
+                "assetIds": {
+                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/assetIdList" }, { "type": "null" }]
+                },
+                "overviewImageAssetId": {
+                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/archiveId" }, { "type": "null" }],
+                    "description": "Optional image asset used by the chronology overview card. It must also appear in assetIds."
+                },
+                "figures": {
+                    "type": ["array", "null"],
+                    "items": {
+                        "type": "object",
+                        "required": ["figureId"],
+                        "properties": {
+                            "figureId": {
+                                "$ref": "shared.schema.json#/$defs/archiveId"
+                            },
+                            "role": {
+                                "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+                            },
+                            "primary": {
+                                "type": "boolean"
+                            },
+                            "avatarAssetId": {
+                                "$ref": "shared.schema.json#/$defs/archiveId"
+                            },
+                            "avatarStyle": {
+                                "type": "string"
+                            },
+                            "useDefaultAvatar": {
+                                "type": "boolean"
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "sourceIds": {
+                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/sourceIdList" }, { "type": "null" }]
+                },
+                "claimIds": {
+                    "type": ["array", "null"],
+                    "items": {
+                        "$ref": "shared.schema.json#/$defs/archiveId"
+                    },
+                    "uniqueItems": true
+                },
+                "quizId": {
+                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/archiveId" }, { "type": "null" }]
+                },
+                "quoteId": {
+                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/archiveId" }, { "type": "null" }]
+                },
+                "commentarySections": {
+                    "type": ["array", "null"],
+                    "items": {
+                        "type": "object",
+                        "required": ["label", "html"],
+                        "properties": {
+                            "id": {
+                                "$ref": "shared.schema.json#/$defs/archiveId"
+                            },
+                            "label": {
+                                "$ref": "shared.schema.json#/$defs/localizedText"
+                            },
+                            "html": {
+                                "$ref": "shared.schema.json#/$defs/localizedHtml"
+                            },
+                            "sourceIds": {
+                                "$ref": "shared.schema.json#/$defs/sourceIdList"
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                },
+                "sentiment": {
+                    "type": ["string", "null"]
+                },
+                "realityLinks": {
+                    "type": ["array", "null"],
+                    "items": {
+                        "type": "object",
+                        "required": ["label", "term", "modernTerm"],
+                        "properties": {
+                            "label": { "$ref": "shared.schema.json#/$defs/localizedText" },
+                            "term": { "$ref": "shared.schema.json#/$defs/localizedText" },
+                            "modernTerm": { "$ref": "shared.schema.json#/$defs/localizedText" }
+                        },
+                        "additionalProperties": true
+                    }
+                },
+                "branchSummary": {
+                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/optionalLocalizedText" }, { "type": "null" }]
+                },
+                "analysis": {
+                    "type": ["object", "null"],
+                    "additionalProperties": {
+                        "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+                    }
+                },
+                "layout": {
+                    "type": ["string", "null"]
+                },
+                "theme": {
+                    "type": ["string", "null"]
+                },
+                "timelineLabel": {
+                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/optionalLocalizedText" }, { "type": "null" }]
+                },
+                "regionOverride": {
+                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/archiveId" }, { "type": "null" }]
+                },
+                "review": {
+                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/reviewState" }, { "type": "null" }]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "allOf": [{ "$ref": "#/$defs/presentation" }],
     "type": "object",
-    "required": ["storylineId", "eventId"],
     "properties": {
         "storylineId": {
             "$ref": "shared.schema.json#/$defs/archiveId"
         },
         "eventId": {
             "$ref": "shared.schema.json#/$defs/archiveId"
-        },
-        "displayTitle": {
-            "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-        },
-        "displaySummary": {
-            "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-        },
-        "displaySubtitle": {
-            "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-        },
-        "displayDescription": {
-            "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-        },
-        "presentationMode": {
-            "type": "string",
-            "enum": ["preserve-legacy", "archive"],
-            "default": "preserve-legacy",
-            "description": "preserve-legacy keeps existing generated presentation and only attaches archive metadata; archive intentionally lets this variant replace legacy presentation fields."
-        },
-        "emphasis": {
-            "type": "array",
-            "items": {
-                "$ref": "shared.schema.json#/$defs/archiveId"
-            },
-            "uniqueItems": true
-        },
-        "visual": {
-            "type": "string"
-        },
-        "visualModules": {
-            "type": "array",
-            "items": {
-                "type": "object"
-            }
-        },
-        "assetIds": {
-            "$ref": "shared.schema.json#/$defs/assetIdList"
-        },
-        "overviewImageAssetId": {
-            "$ref": "shared.schema.json#/$defs/archiveId",
-            "description": "Optional image asset used by the chronology overview card. It must also appear in assetIds."
-        },
-        "figures": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "required": ["figureId"],
-                "properties": {
-                    "figureId": {
-                        "$ref": "shared.schema.json#/$defs/archiveId"
-                    },
-                    "role": {
-                        "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-                    },
-                    "primary": {
-                        "type": "boolean"
-                    },
-                    "avatarAssetId": {
-                        "$ref": "shared.schema.json#/$defs/archiveId"
-                    },
-                    "avatarStyle": {
-                        "type": "string"
-                    },
-                    "useDefaultAvatar": {
-                        "type": "boolean"
-                    }
-                },
-                "additionalProperties": false
-            }
-        },
-        "sourceIds": {
-            "$ref": "shared.schema.json#/$defs/sourceIdList"
-        },
-        "claimIds": {
-            "type": "array",
-            "items": {
-                "$ref": "shared.schema.json#/$defs/archiveId"
-            },
-            "uniqueItems": true
-        },
-        "quizId": {
-            "$ref": "shared.schema.json#/$defs/archiveId"
-        },
-        "quoteId": {
-            "$ref": "shared.schema.json#/$defs/archiveId"
-        },
-        "commentarySections": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "required": ["label", "html"],
-                "properties": {
-                    "id": {
-                        "$ref": "shared.schema.json#/$defs/archiveId"
-                    },
-                    "label": {
-                        "$ref": "shared.schema.json#/$defs/localizedText"
-                    },
-                    "html": {
-                        "$ref": "shared.schema.json#/$defs/localizedHtml"
-                    },
-                    "sourceIds": {
-                        "$ref": "shared.schema.json#/$defs/sourceIdList"
-                    }
-                },
-                "additionalProperties": true
-            }
-        },
-        "sentiment": {
-            "type": "string"
-        },
-        "realityLinks": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "required": ["label", "term", "modernTerm"],
-                "properties": {
-                    "label": { "$ref": "shared.schema.json#/$defs/localizedText" },
-                    "term": { "$ref": "shared.schema.json#/$defs/localizedText" },
-                    "modernTerm": { "$ref": "shared.schema.json#/$defs/localizedText" }
-                },
-                "additionalProperties": true
-            }
-        },
-        "branchSummary": {
-            "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-        },
-        "analysis": {
-            "type": "object",
-            "additionalProperties": {
-                "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-            }
-        },
-        "layout": {
-            "type": "string"
-        },
-        "theme": {
-            "type": "string"
-        },
-        "timelineLabel": {
-            "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-        },
-        "regionOverride": {
-            "$ref": "shared.schema.json#/$defs/archiveId"
-        },
-        "review": {
-            "$ref": "shared.schema.json#/$defs/reviewState"
         }
     },
     "additionalProperties": true
