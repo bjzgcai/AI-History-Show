@@ -171,6 +171,29 @@ function localizedPairKey(value) {
     return `${String(value.zh || '').trim()} / ${String(value.en || '').trim()}`;
 }
 
+function findNullPaths(value, currentPath = 'defaultPresentation', paths = []) {
+    if (value === null) {
+        paths.push(currentPath);
+        return paths;
+    }
+    if (Array.isArray(value)) {
+        value.forEach((item, index) => findNullPaths(item, `${currentPath}[${index}]`, paths));
+        return paths;
+    }
+    if (isObject(value)) {
+        for (const [key, item] of Object.entries(value)) {
+            findNullPaths(item, `${currentPath}.${key}`, paths);
+        }
+    }
+    return paths;
+}
+
+function validateDefaultPresentationNulls(filePath, presentation) {
+    for (const nullPath of findNullPaths(presentation)) {
+        addError(filePath, `${nullPath} must not be null; null is reserved for variant override deletions.`);
+    }
+}
+
 function toIdSet(items) {
     return new Set((Array.isArray(items) ? items : []).map((item) => item && item.id).filter(Boolean));
 }
@@ -776,7 +799,8 @@ function validateEventDir(eventDir) {
     validateFigureRelations(eventFile, event.figures, assetsById);
     const quizzes = readJson(path.join(eventDir, 'quizzes.json')) || [];
     const quizIds = validateQuizzes(eventDir, quizzes, sourceIds, assetIds);
-    if (event.defaultPresentation) {
+    if (event.defaultPresentation !== undefined) {
+        validateDefaultPresentationNulls(eventFile, event.defaultPresentation);
         validatePresentation(eventId, eventFile, event.defaultPresentation, sourceIds, assetsById, claimIds, quizIds, {
             label: 'defaultPresentation',
             presentationId: 'default',

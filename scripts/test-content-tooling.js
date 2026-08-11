@@ -75,6 +75,21 @@ const archiveRoot = path.join(validationRoot, 'archive');
 fs.mkdirSync(archiveRoot, { recursive: true });
 for (const entry of fs.readdirSync(path.join(projectRoot, 'archive'), { withFileTypes: true })) {
     if (entry.name === 'config') continue;
+    if (entry.name === 'events') {
+        const sourceEventsRoot = path.join(projectRoot, 'archive', 'events');
+        const targetEventsRoot = path.join(archiveRoot, 'events');
+        fs.mkdirSync(targetEventsRoot, { recursive: true });
+        for (const eventEntry of fs.readdirSync(sourceEventsRoot, { withFileTypes: true })) {
+            const sourcePath = path.join(sourceEventsRoot, eventEntry.name);
+            const targetPath = path.join(targetEventsRoot, eventEntry.name);
+            if (eventEntry.name === '1956-dartmouth') {
+                fs.cpSync(sourcePath, targetPath, { recursive: true });
+            } else {
+                fs.symlinkSync(sourcePath, targetPath, eventEntry.isDirectory() ? 'dir' : 'file');
+            }
+        }
+        continue;
+    }
     fs.symlinkSync(
         path.join(projectRoot, 'archive', entry.name),
         path.join(archiveRoot, entry.name),
@@ -117,6 +132,27 @@ validationReport = fs.readFileSync(
 assert.match(validationReport, /defaultProfiles\.audio references missing profile: missing-profile/);
 assert.match(validationReport, /Unknown media storage profile: ai-history-audio-releases/);
 assert.match(validationReport, /## Storylines/);
+
+fs.copyFileSync(path.join(projectRoot, 'archive', 'config', 'media-storage.json'), validationConfigPath);
+const defaultPresentationEventPath = path.join(archiveRoot, 'events', '1956-dartmouth', 'event.json');
+const defaultPresentationEvent = JSON.parse(fs.readFileSync(defaultPresentationEventPath, 'utf8'));
+defaultPresentationEvent.defaultPresentation.sentiment = null;
+defaultPresentationEvent.defaultPresentation.analysis = { evidence: [null] };
+fs.writeFileSync(defaultPresentationEventPath, `${JSON.stringify(defaultPresentationEvent, null, 2)}\n`);
+const defaultNullValidation = runArchiveValidation();
+assert.equal(defaultNullValidation.status, 1);
+validationReport = fs.readFileSync(
+    path.join(validationRoot, '.tmp', 'archive-reports', 'archive-validation.md'),
+    'utf8'
+);
+assert.match(
+    validationReport,
+    /defaultPresentation\.sentiment must not be null; null is reserved for variant override deletions\./
+);
+assert.match(
+    validationReport,
+    /defaultPresentation\.analysis\.evidence\[0\] must not be null; null is reserved for variant override deletions\./
+);
 
 fs.rmSync(tempDir, { recursive: true, force: true });
 console.log('PASS content tooling rejects invalid JSON, invalid Archive URIs, and broken avatar paths');
