@@ -167,6 +167,8 @@
                 "height",
                 "fps",
                 "durationSeconds",
+                "openingHoldSeconds",
+                "endHoldSeconds",
                 "posterMove",
                 "maxBytes"
             ],
@@ -195,6 +197,35 @@
                 "durationSeconds": {
                     "type": "number",
                     "exclusiveMinimum": 0
+                },
+                "openingHoldSeconds": {
+                    "type": "number",
+                    "minimum": 0.5,
+                    "maximum": 5
+                },
+                "endHoldSeconds": {
+                    "type": "number",
+                    "minimum": 3,
+                    "maximum": 4
+                },
+                "highlights": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": ["move", "holdSeconds"],
+                        "properties": {
+                            "move": {
+                                "type": "integer",
+                                "minimum": 1
+                            },
+                            "holdSeconds": {
+                                "type": "number",
+                                "minimum": 1,
+                                "maximum": 6
+                            }
+                        },
+                        "additionalProperties": false
+                    }
                 },
                 "posterMove": {
                     "type": "integer",

@@ -428,7 +428,7 @@ def _draw_go(draw: Any, state: GameState, box: tuple[int, int, int, int]) -> Non
         draw.ellipse((cx - ring, cy - ring, cx + ring, cy + ring), outline=(244, 145, 43), width=4)
 
 
-def draw_frame(manifest: dict[str, Any], state: GameState, total_moves: int):
+def draw_frame(manifest: dict[str, Any], state: GameState, total_moves: int, *, is_final: bool = False):
     try:
         from PIL import Image, ImageDraw
     except ImportError as exc:
@@ -471,23 +471,64 @@ def draw_frame(manifest: dict[str, Any], state: GameState, total_moves: int):
     y += 16
     draw.line((744, y, 1168, y), fill=(177, 180, 173), width=2)
     y += 24
-    move_heading = "START" if state.move_number == 0 else f"MOVE {state.move_number:03d} / {total_moves:03d}"
+    if is_final:
+        move_heading = "FINAL POSITION"
+    else:
+        move_heading = "START" if state.move_number == 0 else f"MOVE {state.move_number:03d} / {total_moves:03d}"
     draw.text((744, y), move_heading, font=kicker_font, fill=(176, 57, 43))
     y += 34
-    move_text = state.move_label if not state.side_label else f"{state.side_label}: {state.move_label}"
+    move_text = "GAME COMPLETE" if is_final else (
+        state.move_label if not state.side_label else f"{state.side_label}: {state.move_label}"
+    )
     draw.text((744, y), move_text, font=body_bold, fill=(25, 33, 35))
     y += 42
     if state.score_label:
         draw.text((744, y), state.score_label, font=body_font, fill=(55, 67, 69))
         y += 40
 
-    progress = state.move_number / max(1, total_moves)
-    draw.rounded_rectangle((744, y, 1168, y + 12), radius=6, fill=(195, 198, 190))
-    draw.rounded_rectangle((744, y, 744 + int(424 * progress), y + 12), radius=6, fill=(214, 77, 57))
-    y += 42
-    result_y = max(y, 510)
-    draw.text((744, result_y), "RESULT", font=small_font, fill=(97, 105, 104))
-    _draw_wrapped(draw, localized(manifest["result"], "en"), (744, result_y + 28), body_font, (25, 33, 35), 425, 6)
+    if is_final:
+        y += 8
+    else:
+        progress = state.move_number / max(1, total_moves)
+        draw.rounded_rectangle((744, y, 1168, y + 12), radius=6, fill=(195, 198, 190))
+        draw.rounded_rectangle((744, y, 744 + int(424 * progress), y + 12), radius=6, fill=(214, 77, 57))
+        y += 42
+    result_y = max(y, 474 if is_final else 510)
+    if is_final:
+        draw.rounded_rectangle(
+            (744, result_y, 1168, 624),
+            radius=8,
+            fill=(249, 224, 216),
+            outline=(214, 77, 57),
+            width=2,
+        )
+        draw.text((766, result_y + 18), "RESULT", font=small_font, fill=(176, 57, 43))
+        result_bottom = _draw_wrapped(
+            draw,
+            localized(manifest["result"], "en"),
+            (766, result_y + 47),
+            body_bold,
+            (25, 33, 35),
+            380,
+            5,
+        )
+        draw.text(
+            (766, min(result_bottom + 10, 596)),
+            "Replay starts again in a moment",
+            font=small_font,
+            fill=(97, 75, 69),
+        )
+    else:
+        draw.text((744, result_y), "RESULT", font=small_font, fill=(97, 105, 104))
+        _draw_wrapped(
+            draw,
+            localized(manifest["result"], "en"),
+            (744, result_y + 28),
+            body_font,
+            (25, 33, 35),
+            425,
+            6,
+        )
 
     source_count = int(manifest["verification"]["matchedRecordSources"])
     draw.text((744, 642), f"{source_count} RECORD SOURCES MATCHED  |  ORIGINAL BOARD REDRAW", font=small_font, fill=(89, 96, 94))
@@ -496,6 +537,37 @@ def draw_frame(manifest: dict[str, Any], state: GameState, total_moves: int):
 
 def _ffconcat_escape(path: Path) -> str:
     return str(path).replace("'", "'\\''")
+
+
+def frame_durations(manifest: dict[str, Any], state_count: int) -> list[float]:
+    if state_count < 2:
+        raise GameRecordError("A rendered game requires an opening state and a final state.")
+
+    render = manifest["render"]
+    total = float(render["durationSeconds"])
+    opening_hold = float(render["openingHoldSeconds"])
+    end_hold = float(render["endHoldSeconds"])
+    highlight_holds: dict[int, float] = {}
+    for highlight in render.get("highlights", []):
+        move = int(highlight["move"])
+        if move <= 0 or move >= state_count - 1:
+            raise GameRecordError(f"Highlight move must be before the final move: {move}")
+        if move in highlight_holds:
+            raise GameRecordError(f"Duplicate highlight move: {move}")
+        highlight_holds[move] = float(highlight["holdSeconds"])
+
+    normal_count = state_count - 2 - len(highlight_holds)
+    reserved = opening_hold + end_hold + sum(highlight_holds.values())
+    if normal_count <= 0 or total <= reserved:
+        raise GameRecordError("Configured duration leaves no time for ordinary game states.")
+    normal_hold = (total - reserved) / normal_count
+
+    durations = [normal_hold for _ in range(state_count)]
+    durations[0] = opening_hold
+    durations[-1] = end_hold
+    for move, hold in highlight_holds.items():
+        durations[move] = hold
+    return durations
 
 
 def render_video(manifest: dict[str, Any], parsed: ParsedGame) -> None:
@@ -511,20 +583,20 @@ def render_video(manifest: dict[str, Any], parsed: ParsedGame) -> None:
     poster_index = min(len(parsed.states) - 1, int(manifest["render"]["posterMove"]))
     draw_frame(manifest, parsed.states[poster_index], total_moves).save(poster, format="PNG", optimize=True)
 
-    duration = float(manifest["render"]["durationSeconds"])
-    weights = [1.0 for _ in parsed.states]
-    weights[0] = 1.8
-    weights[-1] = 3.0
-    unit = duration / sum(weights)
+    durations = frame_durations(manifest, len(parsed.states))
 
     with tempfile.TemporaryDirectory(prefix="ai-history-game-frames-") as temp_name:
         temp_dir = Path(temp_name)
         concat_lines = ["ffconcat version 1.0"]
-        for index, (state, weight) in enumerate(zip(parsed.states, weights, strict=True)):
+        for index, (state, frame_duration) in enumerate(zip(parsed.states, durations, strict=True)):
             frame_path = temp_dir / f"frame-{index:04d}.png"
-            draw_frame(manifest, state, total_moves).save(frame_path, format="PNG", optimize=True)
+            draw_frame(manifest, state, total_moves, is_final=index == len(parsed.states) - 1).save(
+                frame_path,
+                format="PNG",
+                optimize=True,
+            )
             concat_lines.append(f"file '{_ffconcat_escape(frame_path)}'")
-            concat_lines.append(f"duration {unit * weight:.9f}")
+            concat_lines.append(f"duration {frame_duration:.9f}")
         concat_lines.append(f"file '{_ffconcat_escape(frame_path)}'")
         concat_path = temp_dir / "frames.ffconcat"
         concat_path.write_text("\n".join(concat_lines) + "\n", encoding="utf-8")
@@ -603,6 +675,13 @@ def validate_outputs(manifest: dict[str, Any]) -> dict[str, Any]:
         raise GameRecordError(f"Unexpected video dimensions for {video_path}: {stream['width']}x{stream['height']}")
     if video_path.stat().st_size > int(manifest["render"]["maxBytes"]):
         raise GameRecordError(f"Video exceeds maxBytes: {video_path}")
+    expected_duration = float(manifest["render"]["durationSeconds"])
+    actual_duration = float(probe["format"]["duration"])
+    frame_tolerance = 1 / int(manifest["render"]["fps"]) + 0.01
+    if abs(actual_duration - expected_duration) > frame_tolerance:
+        raise GameRecordError(
+            f"Unexpected video duration for {video_path}: expected {expected_duration}, got {actual_duration}"
+        )
     return probe
 
 

@@ -93,7 +93,15 @@
         "width": 1280,
         "height": 720,
         "fps": 24,
-        "durationSeconds": 42,
+        "durationSeconds": 65,
+        "openingHoldSeconds": 1.5,
+        "endHoldSeconds": 3.5,
+        "highlights": [
+            {
+                "move": 37,
+                "holdSeconds": 2.5
+            }
+        ],
         "posterMove": 37,
         "maxBytes": 5242880
     },

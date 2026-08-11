@@ -37,10 +37,25 @@ def test_reversi_full_record() -> None:
     assert parsed.states[-1].score_label == "Black 16 | White 48"
 
 
+def test_explicit_opening_highlight_and_result_holds() -> None:
+    manifest = {
+        "render": {
+            "durationSeconds": 10,
+            "openingHoldSeconds": 1.5,
+            "endHoldSeconds": 3.5,
+            "highlights": [{"move": 2, "holdSeconds": 2}],
+        }
+    }
+    durations = MODULE.frame_durations(manifest, 5)
+    assert durations == [1.5, 1.5, 2.0, 1.5, 3.5]
+    assert sum(durations) == 10
+
+
 def main() -> None:
     test_sgf_main_variation_continues_after_branch()
     test_reversi_full_record()
-    print("PASS game-record parsers preserve SGF main variations and the verified Reversi result")
+    test_explicit_opening_highlight_and_result_holds()
+    print("PASS game-record parsing and explicit replay pacing")
 
 
 if __name__ == "__main__":
