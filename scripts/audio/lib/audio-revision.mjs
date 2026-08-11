@@ -68,6 +68,12 @@ export function loadRevisionConfig(configArgument) {
     if (!['previous', 'interactive'].includes(config.comparisonKind)) {
         fail('comparisonKind must be previous or interactive');
     }
+    if (
+        config.storylineOrderPolicy !== undefined &&
+        !['current', 'frozen-revision'].includes(config.storylineOrderPolicy)
+    ) {
+        fail('storylineOrderPolicy must be current or frozen-revision');
+    }
     if (config.schemaVersion !== 1) fail('Revision config schemaVersion must be 1');
     if (!Number.isInteger(config.expectedEntryCount) || config.expectedEntryCount < 1) {
         fail('expectedEntryCount must be a positive integer');

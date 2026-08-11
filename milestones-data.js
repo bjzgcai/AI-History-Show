@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-11 08:43
+// 生成时间: 2026-08-11 11:30
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 194, errors 0
 
@@ -7837,6 +7837,41 @@ const milestones = [
             "en": "Open Science record",
             "zh": "打开 《科学》 记录"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "recordId": "chinook-tinsley-boston-1994-game-2",
+          "videoAssetId": "asset-1994-chinook-boston-game-2-video",
+          "posterAssetId": "asset-1994-chinook-boston-game-2-poster",
+          "recordFormat": "pdn",
+          "recordLabel": {
+            "zh": "两个固定提交逐着一致的 Boston 1994 第 2 局完整 PDN 主线",
+            "en": "Complete Boston 1994 Game 2 PDN main line matched across two pinned copies"
+          },
+          "title": {
+            "zh": "廷斯利对 Chinook 第 2 局演化",
+            "en": "Tinsley versus Chinook, Game 2 evolution"
+          },
+          "description": {
+            "zh": "按美式跳棋规则合法重放并原创重绘全部 96 个半回合，展示双方如何经过连续交换进入各剩 4 子的和棋残局。",
+            "en": "A legal American Checkers replay and original redraw of all 96 plies, showing how repeated exchanges led to a drawn ending with four pieces per side."
+          },
+          "license": {
+            "zh": "本地原创棋盘重绘；仅使用经双源核对的走子事实，不复用第三方画面。",
+            "en": "Original local board redraw using move facts verified by two sources; no third-party frames are reused."
+          },
+          "usage": {
+            "zh": "用于 AI 棋牌分支的可拖动真实对局演示。",
+            "en": "Interactive verified-game replay for the gaming AI storyline."
+          },
+          "duration": {
+            "zh": "54 秒",
+            "en": "54 seconds"
+          },
+          "fps": 24,
+          "generator": "scripts/game-evolution/render_game_record.py",
+          "url": "resources/videos/game-evolution/1994-chinook/chinook-tinsley-boston-1994-game-2.mp4",
+          "poster": "resources/images/game-evolution/1994-chinook/chinook-tinsley-boston-1994-game-2.png"
         }
       ],
       "sources": [
@@ -7899,13 +7934,45 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "reference-only",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-chinook-boston-1994-pdn-checkerboard",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "廷斯利对局集中的 Boston 1994 第 2 局",
+            "en": "Boston 1994 Game 2 in the Tinsley game collection"
+          },
+          "url": "https://github.com/eygilbert/CheckerBoard/blob/691ab495/games/tinsley.pdn",
+          "purpose": "core-evidence",
+          "reliability": "secondary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-chinook-boston-1994-pdn-raven",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "Boston 1994 第 2 局独立托管副本",
+            "en": "Independently hosted Boston 1994 Game 2 copy"
+          },
+          "url": "https://github.com/bcorfman/raven-checkers/blob/da7708ce/training/tinsley.pdn",
+          "purpose": "alternate-access",
+          "reliability": "secondary",
+          "sourceType": "archive"
         }
       ],
       "sourceIds": [
         "source-chinook-project-home",
         "source-checkers-is-solved",
         "source-chinook-publications",
-        "source-jonathan-schaeffer-portrait"
+        "source-jonathan-schaeffer-portrait",
+        "source-chinook-boston-1994-pdn-checkerboard",
+        "source-chinook-boston-1994-pdn-raven"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -100944,7 +101011,7 @@ const milestones = [
         "en": "AI in Board & Tabletop Games"
       }
     },
-    "order": 10,
+    "order": 80,
     "year": 2016,
     "date": "2016-03",
     "title": {
@@ -102454,6 +102521,41 @@ const milestones = [
             "en": "Open Science record",
             "zh": "打开 《科学》 记录"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "recordId": "chinook-tinsley-boston-1994-game-2",
+          "videoAssetId": "asset-1994-chinook-boston-game-2-video",
+          "posterAssetId": "asset-1994-chinook-boston-game-2-poster",
+          "recordFormat": "pdn",
+          "recordLabel": {
+            "zh": "两个固定提交逐着一致的 Boston 1994 第 2 局完整 PDN 主线",
+            "en": "Complete Boston 1994 Game 2 PDN main line matched across two pinned copies"
+          },
+          "title": {
+            "zh": "廷斯利对 Chinook 第 2 局演化",
+            "en": "Tinsley versus Chinook, Game 2 evolution"
+          },
+          "description": {
+            "zh": "按美式跳棋规则合法重放并原创重绘全部 96 个半回合，展示双方如何经过连续交换进入各剩 4 子的和棋残局。",
+            "en": "A legal American Checkers replay and original redraw of all 96 plies, showing how repeated exchanges led to a drawn ending with four pieces per side."
+          },
+          "license": {
+            "zh": "本地原创棋盘重绘；仅使用经双源核对的走子事实，不复用第三方画面。",
+            "en": "Original local board redraw using move facts verified by two sources; no third-party frames are reused."
+          },
+          "usage": {
+            "zh": "用于 AI 棋牌分支的可拖动真实对局演示。",
+            "en": "Interactive verified-game replay for the gaming AI storyline."
+          },
+          "duration": {
+            "zh": "54 秒",
+            "en": "54 seconds"
+          },
+          "fps": 24,
+          "generator": "scripts/game-evolution/render_game_record.py",
+          "url": "resources/videos/game-evolution/1994-chinook/chinook-tinsley-boston-1994-game-2.mp4",
+          "poster": "resources/images/game-evolution/1994-chinook/chinook-tinsley-boston-1994-game-2.png"
         }
       ],
       "sources": [
@@ -102516,13 +102618,45 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "reference-only",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-chinook-boston-1994-pdn-checkerboard",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "廷斯利对局集中的 Boston 1994 第 2 局",
+            "en": "Boston 1994 Game 2 in the Tinsley game collection"
+          },
+          "url": "https://github.com/eygilbert/CheckerBoard/blob/691ab495/games/tinsley.pdn",
+          "purpose": "core-evidence",
+          "reliability": "secondary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-chinook-boston-1994-pdn-raven",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "Boston 1994 第 2 局独立托管副本",
+            "en": "Independently hosted Boston 1994 Game 2 copy"
+          },
+          "url": "https://github.com/bcorfman/raven-checkers/blob/da7708ce/training/tinsley.pdn",
+          "purpose": "alternate-access",
+          "reliability": "secondary",
+          "sourceType": "archive"
         }
       ],
       "sourceIds": [
         "source-chinook-project-home",
         "source-checkers-is-solved",
         "source-chinook-publications",
-        "source-jonathan-schaeffer-portrait"
+        "source-jonathan-schaeffer-portrait",
+        "source-chinook-boston-1994-pdn-checkerboard",
+        "source-chinook-boston-1994-pdn-raven"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -105722,6 +105856,41 @@ const milestones = [
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
           }
+        },
+        {
+          "type": "gameEvolutionVideo",
+          "recordId": "alphazero-stockfish-2018-top10-game-3",
+          "videoAssetId": "asset-2017-alphazero-top10-game-3-video",
+          "posterAssetId": "asset-2017-alphazero-top10-game-3-poster",
+          "recordFormat": "pgn",
+          "recordLabel": {
+            "zh": "DeepMind 2018 官方 top-10 资源第 3 局完整 PGN 主线",
+            "en": "Complete PGN main line of Game 3 in DeepMind's official 2018 top-10 resource"
+          },
+          "title": {
+            "zh": "AlphaZero 对 Stockfish 精选第 3 局演化",
+            "en": "AlphaZero versus Stockfish selected Game 3 evolution"
+          },
+          "description": {
+            "zh": "依据 DeepMind 官方档案与固定提交镜像逐手一致的 97 个半回合原创重绘；该对局发布于 2018 年，是 2017 年 AlphaZero 技术路线的官方后续对局资料。",
+            "en": "An original redraw of all 97 plies matched between the official DeepMind archive and a pinned mirror; published in 2018, this game is an official follow-up record of the 2017 AlphaZero system."
+          },
+          "license": {
+            "zh": "本地原创棋盘重绘；仅使用经双源核对的走子事实，不复用第三方画面。",
+            "en": "Original local board redraw using move facts verified by two sources; no third-party frames are reused."
+          },
+          "usage": {
+            "zh": "用于 AI 棋牌分支的可拖动真实对局演示。",
+            "en": "Interactive verified-game replay for the gaming AI storyline."
+          },
+          "duration": {
+            "zh": "54 秒",
+            "en": "54 seconds"
+          },
+          "fps": 24,
+          "generator": "scripts/game-evolution/render_game_record.py",
+          "url": "resources/videos/game-evolution/2017-alphazero/alphazero-stockfish-2018-top10-game-3.mp4",
+          "poster": "resources/images/game-evolution/2017-alphazero/alphazero-stockfish-2018-top10-game-3.png"
         }
       ],
       "sources": [
@@ -105784,13 +105953,45 @@ const milestones = [
           "purpose": "background",
           "reliability": "secondary",
           "sourceType": "article"
+        },
+        {
+          "id": "source-alphazero-official-top20-archive",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "DeepMind AlphaZero 对 Stockfish 精选对局档案",
+            "en": "DeepMind AlphaZero versus Stockfish selected-game archive"
+          },
+          "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Open-Source/alphazero-resources/alphazero_stockfish_top20.zip",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-alphazero-top10-pgn-mentor-fish",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "AlphaZero 对 Stockfish top-10 PGN 固定副本",
+            "en": "Pinned AlphaZero versus Stockfish top-10 PGN copy"
+          },
+          "url": "https://github.com/Sakuleta/MentorFish/blob/acc28c21/knowledge/pgn/alphazero_vs_stockfish_top10.pgn",
+          "purpose": "alternate-access",
+          "reliability": "secondary",
+          "sourceType": "archive"
         }
       ],
       "sourceIds": [
         "source-david-silver-commons-portrait",
         "source-science-paper",
         "source-arxiv-preprint",
-        "source-deepmind-alphazero-blog"
+        "source-deepmind-alphazero-blog",
+        "source-alphazero-official-top20-archive",
+        "source-alphazero-top10-pgn-mentor-fish"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",

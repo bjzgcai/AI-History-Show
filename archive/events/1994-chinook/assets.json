@@ -186,5 +186,68 @@
       "storyline:bench-council-ai100"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-1994-chinook-boston-game-2-video",
+    "type": "video",
+    "path": "resources/videos/game-evolution/1994-chinook/chinook-tinsley-boston-1994-game-2.mp4",
+    "role": "game-evolution-video",
+    "caption": {
+      "zh": "Chinook 对廷斯利 Boston 1994 第 2 局演化视频",
+      "en": "Chinook versus Tinsley, Boston 1994 Game 2 evolution video"
+    },
+    "subcaption": {
+      "zh": "依据两个固定提交中逐着一致的 96 个半回合原创重绘。",
+      "en": "Original redraw of 96 plies matched across two pinned records."
+    },
+    "sourceIds": [
+      "source-chinook-boston-1994-pdn-checkerboard",
+      "source-chinook-boston-1994-pdn-raven",
+      "source-chinook-project-home"
+    ],
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目原创棋盘重绘；仅使用经核验的走子事实，不复用第三方画面。",
+        "en": "Original board redraw by this project using verified move facts only; no third-party frames are reused."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1994-chinook-boston-game-2-poster",
+    "type": "image",
+    "path": "resources/images/game-evolution/1994-chinook/chinook-tinsley-boston-1994-game-2.png",
+    "role": "game-evolution-poster",
+    "caption": {
+      "zh": "Chinook Boston 1994 第 2 局第 59 个半回合局面",
+      "en": "Chinook Boston 1994 Game 2 position after ply 59"
+    },
+    "subcaption": {
+      "zh": "连续交换进入王棋残局时的原创棋盘重绘。",
+      "en": "Original board redraw as the exchanges lead into a king endgame."
+    },
+    "sourceIds": [
+      "source-chinook-boston-1994-pdn-checkerboard",
+      "source-chinook-boston-1994-pdn-raven"
+    ],
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目原创 PNG 棋盘重绘。",
+        "en": "Original PNG board redraw by this project."
+      }
+    },
+    "displayUsage": {
+      "zh": "作为对局演化视频的延迟加载海报。",
+      "en": "Lazy-loading poster for the game-evolution video."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
   }
 ]

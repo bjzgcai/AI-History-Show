@@ -3,6 +3,7 @@
     "revisionId": "gaming-all-storyline-zh-original-v1-2026-08-09",
     "label": "AI 棋牌中文原版",
     "comparisonKind": "previous",
+    "storylineOrderPolicy": "frozen-revision",
     "outputRoot": "resources/audio/generated/ai100-and-gaming-original-v1/gaming-all-storyline-zh-original-v1-2026-08-09",
     "turnsDir": "audio/revisions/gaming-original/turns/zh",
     "voiceProfilePath": "audio/voices/zh-huopo-original.json",

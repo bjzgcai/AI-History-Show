@@ -12,7 +12,13 @@ const validation = validateGameRecords(root);
 assert.deepEqual(validation.errors, []);
 assert.deepEqual(
     validation.records.map((record) => record.id),
-    ['deep-blue-kasparov-1997-game-6', 'logistello-murakami-1997-game-1', 'lee-sedol-alphago-2016-game-2']
+    [
+        'chinook-tinsley-boston-1994-game-2',
+        'deep-blue-kasparov-1997-game-6',
+        'logistello-murakami-1997-game-1',
+        'lee-sedol-alphago-2016-game-2',
+        'alphazero-stockfish-2018-top10-game-3'
+    ]
 );
 
 const compiled = compileArchive(root);

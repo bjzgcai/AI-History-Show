@@ -6,7 +6,7 @@ Game-evolution clips are independent visual modules, not general event narration
 
 Each curated sample lives under `archive/events/<event-id>/game-records/`:
 
-- the PGN, SGF, or Reversi move file contains the playable main line;
+- the PGN, PDN, SGF, or Reversi move file contains the playable main line;
 - `game-record.json` records source URLs, verification notes, the raw-file SHA-256, the normalized main-line SHA-256, render settings, and Archive asset IDs;
 - at least two distinct record sources must agree on the normalized main line;
 - videos and posters are original board redraws. Broadcast footage, website screenshots, and publisher figures are not copied.
@@ -34,7 +34,7 @@ Pass one or more manifest paths to regenerate only selected clips:
   archive/events/2016-alphago/game-records/game-record.json
 ```
 
-The renderer uses `python-chess`'s `chess` package for PGN, `sgfmill` for SGF first-main-variation selection, a rule-checked Reversi replay, Pillow for original frames, and ffmpeg for H.264/yuv420p/faststart MP4 output.
+The renderer uses `python-chess`'s `chess` package for PGN, `sgfmill` for SGF first-main-variation selection, rule-checked American Draughts and Reversi replays, Pillow for original frames, and ffmpeg for H.264/yuv420p/faststart MP4 output.
 
 The implementation is split by responsibility:
 

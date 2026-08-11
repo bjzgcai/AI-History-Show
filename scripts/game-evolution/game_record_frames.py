@@ -161,6 +161,60 @@ def _draw_reversi(draw: Any, state: GameState, box: tuple[int, int, int, int]) -
         )
 
 
+def _draw_draughts(draw: Any, state: GameState, box: tuple[int, int, int, int]) -> None:
+    x0, y0, x1, y1 = box
+    cell = (x1 - x0) // 8
+    number_font = load_font(11, bold=True)
+    king_font = load_font(max(16, int(cell * 0.26)), bold=True)
+    light = (222, 205, 172)
+    dark = (105, 72, 50)
+    square_number = 1
+    for row in range(8):
+        for col in range(8):
+            x = x0 + col * cell
+            y = y0 + row * cell
+            playable = (row + col) % 2 == 1
+            draw.rectangle((x, y, x + cell, y + cell), fill=dark if playable else light)
+            if not playable:
+                continue
+            draw.text((x + 5, y + 4), str(square_number), font=number_font, fill=(211, 187, 154))
+            value = state.board[row][col]
+            if value:
+                margin = cell * 0.14
+                is_black = value in (1, 3)
+                is_king = value in (3, 4)
+                fill = (34, 38, 37) if is_black else (232, 226, 207)
+                outline = (7, 10, 9) if is_black else (104, 94, 77)
+                draw.ellipse(
+                    (x + margin, y + margin, x + cell - margin, y + cell - margin),
+                    fill=fill,
+                    outline=outline,
+                    width=3,
+                )
+                draw.ellipse(
+                    (x + margin + 5, y + margin + 5, x + cell - margin - 5, y + cell - margin - 5),
+                    outline=(215, 77, 57) if is_king else outline,
+                    width=2,
+                )
+                if is_king:
+                    label_fill = (246, 233, 211) if is_black else (76, 58, 43)
+                    bbox = draw.textbbox((0, 0), "K", font=king_font)
+                    draw.text(
+                        (
+                            x + cell / 2 - (bbox[2] - bbox[0]) / 2,
+                            y + cell / 2 - (bbox[3] - bbox[1]) / 2 - 2,
+                        ),
+                        "K",
+                        font=king_font,
+                        fill=label_fill,
+                    )
+            if state.last_point == (col, row):
+                draw.rectangle(
+                    (x + 3, y + 3, x + cell - 3, y + cell - 3),
+                    outline=(250, 190, 61),
+                    width=5,
+                )
+            square_number += 1
 def _star_points(size: int) -> Iterable[tuple[int, int]]:
     if size == 19:
         coords = (3, 9, 15)
@@ -220,6 +274,7 @@ BOARD_DRAWERS = {
     "chess": _draw_chess,
     "reversi": _draw_reversi,
     "go": _draw_go,
+    "draughts": _draw_draughts,
 }
 
 
