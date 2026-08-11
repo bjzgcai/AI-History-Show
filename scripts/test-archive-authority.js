@@ -293,22 +293,25 @@ assert.deepEqual(
     'compiled Archive milestone IDs must be unique'
 );
 assert.deepEqual(archiveStorylines, compiledArchive.storylines, 'generated storyline metadata should match Archive');
-const deepLearningStoryline = JSON.parse(
-    fs.readFileSync(path.join(__dirname, '..', 'archive', 'storylines', 'deep-learning.json'), 'utf8')
-);
+const archiveStorylineSources = fs
+    .readdirSync(path.join(__dirname, '..', 'archive', 'storylines'))
+    .filter((fileName) => fileName.endsWith('.json'))
+    .map((fileName) =>
+        JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'archive', 'storylines', fileName), 'utf8'))
+    );
 assert.ok(
-    deepLearningStoryline.events.every((eventRef) => !Object.hasOwn(eventRef, 'variant')),
-    'the deep-learning storyline should inherit every event default presentation'
+    archiveStorylineSources.every((storyline) =>
+        storyline.events.every((eventRef) => !Object.hasOwn(eventRef, 'variant'))
+    ),
+    'every storyline should inherit event default presentations without explicit variants'
 );
 for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'events'), { withFileTypes: true })) {
     if (!eventEntry.isDirectory()) continue;
-    assert.equal(
-        fs.existsSync(
-            path.join(__dirname, '..', 'archive', 'events', eventEntry.name, 'variants', 'deep-learning.json')
-        ),
-        false,
-        `${eventEntry.name} should not retain a deep-learning variant file`
-    );
+    const variantsDirectory = path.join(__dirname, '..', 'archive', 'events', eventEntry.name, 'variants');
+    const variantFiles = fs.existsSync(variantsDirectory)
+        ? fs.readdirSync(variantsDirectory).filter((fileName) => fileName.endsWith('.json'))
+        : [];
+    assert.deepEqual(variantFiles, [], `${eventEntry.name} should not retain variant files`);
 }
 const dartmouthMilestone = compiledArchive.milestones.find(
     (milestone) =>
@@ -344,6 +347,21 @@ assert.deepEqual(
     ],
     'the default perceptron presentation should retain the former variant-only portrait after the existing people image'
 );
+const mergedGamingImages = {
+    '1988-td-update': 'resources/images/game-evolution/1988-td-gammon.svg',
+    '1997-deep-blue': 'resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif',
+    '2016-alphago': 'resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg'
+};
+for (const [archiveEventId, expectedImage] of Object.entries(mergedGamingImages)) {
+    const milestone = compiledArchive.milestones.find(
+        (candidate) => candidate.archiveEventId === archiveEventId && candidate.storyline?.id === 'gaming-ai'
+    );
+    assert.equal(
+        milestone.resources.images.at(-1),
+        expectedImage,
+        `${archiveEventId} should retain its former gaming variant image at the end of the default image list`
+    );
+}
 const turingTestMilestone = compiledArchive.milestones.find(
     (milestone) =>
         milestone.id === 'milestone-1950-turing-test' &&

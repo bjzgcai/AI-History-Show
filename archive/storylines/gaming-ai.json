@@ -16,28 +16,24 @@
   "events": [
     {
       "eventId": "1951-strachey-draughts",
-      "variant": "gaming-ai",
       "order": 10,
       "enabled": true,
       "milestoneId": "milestone-gaming-ai-1951-strachey-draughts"
     },
     {
       "eventId": "2016-alphago",
-      "variant": "gaming-ai",
       "order": 10,
       "enabled": true,
       "milestoneId": "milestone-gaming-ai-2016-alphago"
     },
     {
       "eventId": "1988-td-update",
-      "variant": "gaming-ai",
       "order": 20,
       "enabled": true,
       "milestoneId": "milestone-gaming-ai-1988-td-update"
     },
     {
       "eventId": "1994-chinook",
-      "variant": "gaming-ai",
       "order": 30,
       "enabled": true,
       "milestoneId": "milestone-gaming-ai-1994-chinook"
@@ -50,7 +46,6 @@
     },
     {
       "eventId": "1997-deep-blue",
-      "variant": "gaming-ai",
       "order": 50,
       "enabled": true,
       "milestoneId": "milestone-gaming-ai-1997-deep-blue"
@@ -63,7 +58,6 @@
     },
     {
       "eventId": "2013-dqn",
-      "variant": "gaming-ai",
       "order": 70,
       "enabled": true,
       "milestoneId": "milestone-gaming-ai-2013-dqn"
