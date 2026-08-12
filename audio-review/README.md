@@ -45,6 +45,7 @@ API 和音频 URL，因此根路径运行与子目录运行都可用。
 | `AUDIO_REVIEW_DATA`            | `tools/audio-review-console/review-data.json` | 当前审核数据                             |
 | `AUDIO_REVIEW_DB`              | `.tmp/audio-review/reviews.sqlite`            | SQLite 数据库                            |
 | `AUDIO_REVIEW_TOKEN_FILE`      | `.secrets/audio-review-tokens.json`           | Token 摘要配置                           |
+| `AUDIO_REVIEW_AUDIO_ROOT`      | `resources/audio/generated`                   | 候选音频根目录                           |
 | `AUDIO_REVIEW_SECURE_COOKIE`   | `false`                                       | HTTPS 部署时设为 `true`                  |
 | `AUDIO_REVIEW_STRICT_ORIGIN`   | `false`                                       | 设为 `true` 后写接口必须带可信 `Origin`  |
 | `AUDIO_REVIEW_ALLOWED_ORIGINS` | 空                                            | 逗号分隔的可信 Origin 白名单，例如域名源 |
@@ -57,6 +58,14 @@ API 和音频 URL，因此根路径运行与子目录运行都可用。
 AUDIO_REVIEW_STRICT_ORIGIN=true
 AUDIO_REVIEW_ALLOWED_ORIGINS=https://example.com
 ```
+
+默认情况下，审核数据里的 `resources/audio/generated/...` 会从项目目录下的同名路径读取。配置 `AUDIO_REVIEW_AUDIO_ROOT` 后，该前缀会映射到指定的外置音频根目录，例如：
+
+```bash
+AUDIO_REVIEW_AUDIO_ROOT=/opt/ai-history-test/shared/audio-generated
+```
+
+此时审核数据中的 `resources/audio/generated/bench-council-ai100/foo.mp3` 会读取为 `/opt/ai-history-test/shared/audio-generated/bench-council-ai100/foo.mp3`。服务仍会校验最终路径必须位于 `AUDIO_REVIEW_AUDIO_ROOT` 内，路径穿越或非审核音频目录路径会被拒绝。
 
 ## Docker Compose
 
