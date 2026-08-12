@@ -100,6 +100,39 @@
           "en": "Source card for the gaming AI branch",
           "zh": "AI 棋牌分支的资料卡片"
         }
+      },
+      {
+        "type": "gameEvolutionVideo",
+        "recordId": "logistello-murakami-1997-game-1",
+        "videoAssetId": "asset-1997-logistello-game-1-video",
+        "posterAssetId": "asset-1997-logistello-game-1-poster",
+        "recordFormat": "reversi-moves",
+        "recordLabel": {
+          "zh": "官方编号棋盘与程序日志核对后的 60 手主线",
+          "en": "60-move main line verified against the official numbered board and program log"
+        },
+        "title": {
+          "zh": "Logistello 对村上健第 1 局演化",
+          "en": "Logistello versus Takeshi Murakami, Game 1 evolution"
+        },
+        "description": {
+          "zh": "按黑白棋规则重放完整 60 手，终局得到村上健 16 子、Logistello 48 子。",
+          "en": "A legal replay of all 60 moves, ending with Takeshi Murakami on 16 discs and Logistello on 48."
+        },
+        "license": {
+          "zh": "本地原创棋盘重绘；提取官方档案中的走子事实，不复制网页棋盘图或截图。",
+          "en": "Original local board redraw using move facts from the official archive; no web-board graphics or screenshots are copied."
+        },
+        "usage": {
+          "zh": "用于 AI 棋牌分支的可拖动对局演示。",
+          "en": "Interactive game replay for the gaming AI storyline."
+        },
+        "duration": {
+          "zh": "42 秒",
+          "en": "42 seconds"
+        },
+        "fps": 24,
+        "generator": "scripts/game-evolution/render_game_record.py"
       }
     ],
     "assetIds": [
@@ -115,7 +148,9 @@
       "source-murakami-vs-logistello",
       "source-statistical-feature-combination",
       "source-michael-buro-publications",
-      "source-logistello-game-1-positions"
+      "source-logistello-game-1-positions",
+      "source-logistello-game-1-official-record",
+      "source-logistello-game-1-official-log"
     ],
     "claimIds": [
       "claim-legacy-achievement-summary",

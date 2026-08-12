@@ -1,5 +1,7 @@
 # 关于 AI History Show
 
+[English](about.md) | **简体中文**
+
 ## 关于 AI History
 
 AI History Show 是一个面向展览、课堂和公共传播场景的开源交互项目。

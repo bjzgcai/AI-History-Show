@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "alphazero-stockfish-2018-top10-game-3",
+  "eventId": "2017-alphazero",
+  "gameType": "chess",
+  "title": {
+    "zh": "AlphaZero 对 Stockfish 8，官方精选第 3 局",
+    "en": "AlphaZero versus Stockfish 8, official selected Game 3"
+  },
+  "date": "2018-01-18",
+  "round": {
+    "zh": "DeepMind top-10 第 3 局，round 6854337384941683259",
+    "en": "DeepMind top-10 Game 3, round 6854337384941683259"
+  },
+  "location": {
+    "zh": "英国伦敦",
+    "en": "London, United Kingdom"
+  },
+  "record": {
+    "path": "alphazero-stockfish-2018-top10-game-3.pgn",
+    "format": "pgn",
+    "sha256": "b9fc93aae9306e2d78eb05fa151d96f2ffa899084a5fcbfaedd0d75f8df15580",
+    "moveCount": 97
+  },
+  "players": [
+    {
+      "side": "white",
+      "name": {
+        "zh": "AlphaZero",
+        "en": "AlphaZero"
+      },
+      "kind": "computer"
+    },
+    {
+      "side": "black",
+      "name": {
+        "zh": "Stockfish 8",
+        "en": "Stockfish 8"
+      },
+      "kind": "computer"
+    }
+  ],
+  "result": {
+    "zh": "AlphaZero 执白获胜，Stockfish 8 在 49.e5 后结束对局",
+    "en": "AlphaZero won as White; the game ended after 49.e5"
+  },
+  "sources": [
+    {
+      "sourceId": "source-alphazero-official-top20-archive",
+      "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Open-Source/alphazero-resources/alphazero_stockfish_top20.zip",
+      "role": "record",
+      "checkedAt": "2026-08-11",
+      "mainLineSha256": "6325b6d339bee7dd3c457cb595a52a27ab4fac72cbd96d6b1ba0bd30b07ee71c",
+      "notes": {
+        "zh": "从 SHA-256 已核对的 DeepMind 官方 ZIP 中提取 top-10 PGN 的第 3 局。",
+        "en": "Game 3 extracted from the top-10 PGN inside the SHA-256-verified official DeepMind ZIP."
+      }
+    },
+    {
+      "sourceId": "source-alphazero-top10-pgn-mentor-fish",
+      "url": "https://github.com/Sakuleta/MentorFish/blob/acc28c21/knowledge/pgn/alphazero_vs_stockfish_top10.pgn",
+      "role": "cross-check",
+      "checkedAt": "2026-08-11",
+      "mainLineSha256": "6325b6d339bee7dd3c457cb595a52a27ab4fac72cbd96d6b1ba0bd30b07ee71c",
+      "notes": {
+        "zh": "固定提交中的独立副本；round ID、执子、结果和全部 97 个半回合与官方档案一致。",
+        "en": "Independent copy at a pinned commit; round ID, colors, result, and all 97 plies match the official archive."
+      }
+    },
+    {
+      "sourceId": "source-science-paper",
+      "url": "https://www.science.org/doi/10.1126/science.aar6404",
+      "role": "event-context",
+      "checkedAt": "2026-08-11",
+      "notes": {
+        "zh": "同行评议论文用于核对 AlphaZero 与 Stockfish 8 的系统和实验背景。",
+        "en": "Peer-reviewed paper used to corroborate the AlphaZero and Stockfish 8 system and experiment context."
+      }
+    }
+  ],
+  "verification": {
+    "status": "verified",
+    "method": {
+      "zh": "校验 DeepMind 官方 ZIP 摘要，提取指定 round 的 PGN，以合法国际象棋走子重放，并与固定提交镜像的 97 个半回合规范化主线逐着比较。",
+      "en": "Verify the official DeepMind ZIP digest, extract the specified PGN round, replay it as legal chess moves, and compare all 97 normalized plies with a pinned mirror."
+    },
+    "matchedRecordSources": 2,
+    "mainLineSha256": "6325b6d339bee7dd3c457cb595a52a27ab4fac72cbd96d6b1ba0bd30b07ee71c"
+  },
+  "render": {
+    "videoPath": "resources/videos/game-evolution/2017-alphazero/alphazero-stockfish-2018-top10-game-3.mp4",
+    "posterPath": "resources/images/game-evolution/2017-alphazero/alphazero-stockfish-2018-top10-game-3.png",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "durationSeconds": 54,
+    "openingHoldSeconds": 1.5,
+    "endHoldSeconds": 3.5,
+    "highlights": [
+      {
+        "move": 37,
+        "holdSeconds": 2.5
+      }
+    ],
+    "posterMove": 37,
+    "maxBytes": 5242880
+  },
+  "archive": {
+    "videoAssetId": "asset-2017-alphazero-top10-game-3-video",
+    "posterAssetId": "asset-2017-alphazero-top10-game-3-poster"
+  }
+}

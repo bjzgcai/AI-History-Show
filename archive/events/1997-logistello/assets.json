@@ -165,5 +165,67 @@
       "storyline:gaming-ai"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-1997-logistello-game-1-video",
+    "type": "video",
+    "path": "resources/videos/game-evolution/1997-logistello/logistello-murakami-1997-game-1.mp4",
+    "role": "game-evolution-video",
+    "caption": {
+      "zh": "Logistello 对村上健第 1 局演化视频",
+      "en": "Logistello versus Takeshi Murakami Game 1 evolution video"
+    },
+    "subcaption": {
+      "zh": "根据官方编号棋盘与程序日志原创重绘的完整 60 手。",
+      "en": "Original redraw of all 60 moves from the official numbered board and program log."
+    },
+    "sourceIds": [
+      "source-logistello-game-1-official-record",
+      "source-logistello-game-1-official-log"
+    ],
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目原创棋盘重绘；只提取走子事实，不复制官方网页图形。",
+        "en": "Original board redraw by this project; only move facts are extracted and no official web graphics are copied."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1997-logistello-game-1-poster",
+    "type": "image",
+    "path": "resources/images/game-evolution/1997-logistello/logistello-murakami-1997-game-1.png",
+    "role": "game-evolution-poster",
+    "caption": {
+      "zh": "Logistello 第 1 局 48 比 16 终局",
+      "en": "Logistello Game 1 final position, 48-16"
+    },
+    "subcaption": {
+      "zh": "按完整 60 手重放得到的原创终局重绘。",
+      "en": "Original final-board redraw produced by replaying all 60 moves."
+    },
+    "sourceIds": [
+      "source-logistello-game-1-official-record",
+      "source-logistello-game-1-official-log"
+    ],
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目原创 PNG 棋盘重绘。",
+        "en": "Original PNG board redraw by this project."
+      }
+    },
+    "displayUsage": {
+      "zh": "作为对局演化视频的延迟加载海报。",
+      "en": "Lazy-loading poster for the game-evolution video."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
   }
 ]

@@ -21,6 +21,14 @@ jobs:
                   node-version: 24
                   cache: npm
 
+            - name: Set up Python
+              uses: actions/setup-python@v5
+              with:
+                  python-version: '3.12'
+
+            - name: Install game-record parser dependencies
+              run: pip install -r scripts/game-evolution/requirements-validate.txt
+
             - name: Install dependencies
               run: npm ci
 

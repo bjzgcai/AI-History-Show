@@ -9,6 +9,8 @@ resources/images/benchcouncil-ai100-annual/*_contributors.svg
 
 # Node.js
 node_modules/
+__pycache__/
+*.py[cod]
 *.log
 .env
 .env.*
