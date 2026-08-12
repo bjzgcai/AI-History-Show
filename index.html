@@ -4563,6 +4563,11 @@
             background: rgba(255, 255, 255, 0.92);
         }
 
+        .bench-video-stage img[hidden],
+        .bench-game-video-fallback[hidden] {
+            display: none;
+        }
+
         .bench-video-badge {
             position: absolute;
             left: 10px;
@@ -5213,6 +5218,20 @@
             font-size: 12px;
             font-weight: 800;
             line-height: 1.28;
+        }
+
+        .ui-game-record-card .bench-paper-demo {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 10px;
+        }
+
+        .ui-game-record-card .bench-game-video-demo {
+            min-height: 0;
+            aspect-ratio: 16 / 9;
+        }
+
+        .ui-game-record-card .bench-game-video-demo video {
+            min-height: 0;
         }
 
         .bench-paper-note strong {
@@ -10932,7 +10951,11 @@
                         fallbackUrl: String(module.fallbackUrl || module.fallback || '').trim(),
                         poster: String(module.poster || module.thumbnail || '').trim(),
                         sourceSgf: String(module.sourceSgf || module.sgf || '').trim(),
+                        recordLabel: String(lx(module.recordLabel || '')).trim(),
+                        recordFormat: String(module.recordFormat || '').trim(),
                         generator: String(module.generator || '').trim(),
+                        disclaimer: String(lx(module.disclaimer || '')).trim(),
+                        completeGameReplay: module.completeGameReplay !== false,
                         duration: String(lx(module.duration || '')).trim(),
                         fps: String(module.fps || '').trim()
                     };
@@ -10956,7 +10979,7 @@
             });
 
             const configuredModules = getAchievementVisualModules(vm.raw);
-            const nonVideoModules = configuredModules.filter((module) => module.type !== 'gameEvolutionVideo');
+            const nonVideoModules = configuredModules.filter((module) => !['gameEvolutionVideo', 'paperCaseVideo'].includes(module.type));
             const heroModules = nonVideoModules.length > 0 ? nonVideoModules : configuredModules;
             if (heroModules.length > 0 && photos.length >= 2) {
                 return [...photos.slice(0, 2), heroModules[0]].slice(0, 3);
@@ -10999,7 +11022,10 @@
         }
 
         function buildBenchVideoVisualCard(item) {
-            const title = item.title || uiText('Game evolution clip', '棋局演化短片');
+            const isPaperCase = item.type === 'paperCaseVideo';
+            const title = item.title || (isPaperCase
+                ? uiText('Partial paper case', '论文局部案例')
+                : uiText('Game evolution clip', '棋局演化短片'));
             const description = item.description || item.usage || '';
             const poster = item.poster ? ` poster="${escapeHtml(item.poster)}"` : '';
             return `
@@ -11007,7 +11033,7 @@
                     <div class="bench-video-stage">
                         <video data-video-src="${escapeHtml(item.url)}"${poster} muted loop playsinline preload="none" aria-label="${escapeHtml(title)}"></video>
                         ${item.poster ? `<img src="${escapeHtml(item.poster)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" hidden>` : ''}
-                        <span class="bench-video-badge">${escapeHtml(uiText('MP4', 'MP4'))}</span>
+                        <span class="bench-video-badge">${escapeHtml(isPaperCase ? uiText('PAPER CASE', '论文案例') : uiText('MP4', 'MP4'))}</span>
                     </div>
                     <div class="bench-hero-caption">
                         <span>${escapeHtml(title)}</span>
@@ -11020,7 +11046,7 @@
         function buildBenchVisualCard(item) {
             if (!item) return '<div class="bench-photo-frame is-placeholder" aria-hidden="true"></div>';
             if (item.type === 'image') return buildBenchImageVisualCard(item);
-            if (item.type === 'gameEvolutionVideo') return buildBenchVideoVisualCard(item);
+            if (['gameEvolutionVideo', 'paperCaseVideo'].includes(item.type)) return buildBenchVideoVisualCard(item);
             return buildBenchArchiveVisualCard(item);
         }
 
@@ -11615,9 +11641,12 @@
             const module = getAchievementGameEvolutionModule(raw);
             if (!module) return '';
 
-            const title = module.title || vm.title || uiText('Game record', '\u5bf9\u5f08\u8bb0\u5f55');
+            const isPaperCase = module.type === 'paperCaseVideo';
+            const title = module.title || vm.title || (isPaperCase ? uiText('Paper case', '论文案例') : uiText('Game record', '\u5bf9\u5f08\u8bb0\u5f55'));
             const boardType = getBranchGameRecordBoardType(vm);
-            const actionLabel = uiText(`Play game record: ${title}`, `\u64ad\u653e\u5bf9\u5f08\u8bb0\u5f55\uff1a${title}`);
+            const actionLabel = isPaperCase
+                ? uiText(`Play paper case: ${title}`, `播放论文案例：${title}`)
+                : uiText(`Play game record: ${title}`, `\u64ad\u653e\u5bf9\u5f08\u8bb0\u5f55\uff1a${title}`);
             return `
                 <button class="branch-game-record-trigger branch-video-trigger is-${escapeHtml(boardType)}" type="button" data-branch-video-index="${index}" aria-label="${escapeHtml(actionLabel)}" title="${escapeHtml(title)}" tabindex="-1" aria-hidden="true" style="--record-offset: ${offset}px">
                     <span class="branch-record-board" aria-hidden="true">
@@ -12089,7 +12118,10 @@
             } catch (_) {}
 
             const returnFocus = document.activeElement;
-            const title = module.title || vm.title || uiText('Game evolution video', '棋局演化视频');
+            const isPaperCase = module.type === 'paperCaseVideo';
+            const title = module.title || vm.title || (isPaperCase
+                ? uiText('Partial paper case', '论文局部案例')
+                : uiText('Game evolution video', '棋局演化视频'));
             const videoUrl = String(module.url || '').trim();
             const fallbackUrl = String(module.fallbackUrl || '').trim();
             const poster = String(module.poster || '').trim();
@@ -12101,11 +12133,14 @@
                 && videoPlayer.isDirectVideoMedia(videoUrl)
                 && await videoPlayer.canLoad(videoUrl, { hasFallback: Boolean(playableImage) });
             if (!shouldUseVideo && !fallbackImageUrl) return;
-            const sourceSgf = String(module.sourceSgf || '').trim();
+            const recordLabel = String(module.recordLabel || module.sourceSgf || '').trim();
+            const recordFormat = String(module.recordFormat || 'game record').trim().toUpperCase();
             const generator = String(module.generator || '').trim();
-            const sourceLine = sourceSgf
-                ? uiText(`Generated from SGF: ${sourceSgf}`, `由 SGF 棋谱生成：${sourceSgf}`)
-                : uiText('Generated from curated game-state data.', '由策展棋局状态数据生成。');
+            const sourceLine = module.disclaimer || (recordLabel
+                ? (isPaperCase
+                    ? uiText(`Redrawn from ${recordFormat}: ${recordLabel}`, `依据 ${recordFormat} 论文材料重绘：${recordLabel}`)
+                    : uiText(`Generated from ${recordFormat}: ${recordLabel}`, `由 ${recordFormat} 对局记录生成：${recordLabel}`))
+                : uiText('Generated from curated game-state data.', '由策展对局状态数据生成。'));
             const generatorLine = generator
                 ? uiText(`Renderer: ${generator}`, `生成脚本：${generator}`)
                 : '';
@@ -14111,20 +14146,35 @@
         }
 
         function getAchievementGameEvolutionModule(rawMilestone) {
-            return getAchievementVisualModules(rawMilestone).find((module) => module.type === 'gameEvolutionVideo') || null;
+            return getAchievementVisualModules(rawMilestone)
+                .find((module) => ['gameEvolutionVideo', 'paperCaseVideo'].includes(module.type)) || null;
         }
 
         function buildGameEvolutionVideoDemo(rawMilestone, module) {
-            const title = module.title || getAchievementField(rawMilestone, 'artifact', uiText('Game evolution clip', '棋局演化短片'));
+            const isPaperCase = module.type === 'paperCaseVideo';
+            const title = module.title || getAchievementField(
+                rawMilestone,
+                'artifact',
+                isPaperCase ? uiText('Partial paper case', '论文局部案例') : uiText('Game evolution clip', '棋局演化短片')
+            );
             const poster = module.poster || getGenericDemoImage(rawMilestone);
             const posterAttr = poster ? ` poster="${escapeHtml(poster)}"` : '';
-            const sourceLine = module.sourceSgf
-                ? uiText(`Generated from SGF: ${module.sourceSgf}`, `由 SGF 生成：${module.sourceSgf}`)
-                : (module.description || uiText('Generated from a curated game record.', '由策展棋谱生成。'));
-            const interactionLine = uiText(
-                'Scrub or replay the clip to watch the opening compress into a critical midgame state.',
-                '拖动或重放短片，观察开局如何快速压缩到关键中盘。'
-            );
+            const recordFormat = (module.recordFormat || 'game record').toUpperCase();
+            const recordLabel = module.recordLabel || module.sourceSgf;
+            const sourceLine = recordLabel
+                ? (isPaperCase
+                    ? uiText(`Redrawn from ${recordFormat}: ${recordLabel}`, `依据 ${recordFormat} 论文材料重绘：${recordLabel}`)
+                    : uiText(`Generated from ${recordFormat}: ${recordLabel}`, `由 ${recordFormat} 对局记录生成：${recordLabel}`))
+                : (module.description || uiText('Generated from a curated game record.', '由策展对局记录生成。'));
+            const interactionLine = isPaperCase
+                ? uiText(
+                    'Scrub the animation to compare the documented discard with the paper\'s hypothetical later-state explanation.',
+                    '拖动动画，对比论文记录的实际弃牌与论文提出的假设性后续解释。'
+                )
+                : uiText(
+                    'Scrub or replay the clip to watch the opening compress into a critical midgame state.',
+                    '拖动或重放短片，观察开局如何快速压缩到关键中盘。'
+                );
 
             return buildPaperDemo(`
                 <div class="bench-game-video-demo">
@@ -14132,7 +14182,7 @@
                     ${poster ? `<img class="bench-game-video-fallback" src="${escapeHtml(poster)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" hidden>` : ''}
                 </div>
             `, [
-                [uiText('SGF cue', 'SGF 线索'), sourceLine],
+                [isPaperCase ? uiText('Evidence boundary', '证据边界') : uiText('Game record', '对局记录'), module.disclaimer || sourceLine],
                 [uiText('interaction', '互动点'), interactionLine]
             ]);
         }
@@ -15696,8 +15746,16 @@
         function buildUiSidePanelHtml(raw, vm) {
             const quoteSection = getUiQuoteSummarySection(vm);
             const mediaHtml = buildUiMediaHtml(vm);
+            const gameEvolutionModule = getAchievementGameEvolutionModule(raw);
+            const gameEvolutionHtml = gameEvolutionModule
+                ? buildGameEvolutionVideoDemo(raw, gameEvolutionModule)
+                : '';
+            const dynamicEvidenceHeading = gameEvolutionModule && gameEvolutionModule.type === 'paperCaseVideo'
+                ? uiText('Partial paper case', '论文局部案例')
+                : uiText('Game replay', '对局回放');
             return [
                 buildUiSideSectionHtml('ui-info-card', uiText('Sources', '资料来源'), buildUiSourcesHtml(raw, vm)),
+                buildUiSideSectionHtml('ui-game-record-card', dynamicEvidenceHeading, gameEvolutionHtml),
                 buildUiSideSectionHtml('ui-media-card', uiText('Commentary & Media', '评论与媒体'), mediaHtml),
                 buildUiSideSectionHtml('ui-concepts-card', uiText('Key Concepts', '关键概念'), buildUiConceptsHtml(vm)),
                 buildUiSideSectionHtml('ui-quote-card', uiText('Quote Summary', '引言摘要'), quoteSection ? buildUiSectionCardsHtml([quoteSection], { hiddenLabels: [tx('quoteExcerpt')] }) : ''),
@@ -16074,6 +16132,7 @@
                 </div>
             `;
             hydratePreviewImages(refs.uiBrowserMain);
+            hydrateLazyVideos(refs.uiBrowserMain);
             refs.uiBrowserMain.querySelectorAll('[data-ui-image-index]').forEach((button) => {
                 button.addEventListener('click', () => {
                     const nextImageIndex = Number(button.dataset.uiImageIndex);

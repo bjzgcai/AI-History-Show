@@ -203,5 +203,68 @@
       "storyline:bench-council-ai100"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-2016-alphago-game-2-video",
+    "type": "video",
+    "path": "resources/videos/game-evolution/2016-alphago/lee-sedol-alphago-2016-game-2.mp4",
+    "role": "game-evolution-video",
+    "caption": {
+      "zh": "李世石对 AlphaGo 第 2 局演化视频",
+      "en": "Lee Sedol versus AlphaGo Game 2 evolution video"
+    },
+    "subcaption": {
+      "zh": "根据双源一致的 211 手 SGF 第一主变原创重绘。",
+      "en": "Original redraw from a 211-move SGF first main variation matched across two sources."
+    },
+    "sourceIds": [
+      "source-alphago-game-2-alphago-games-sgf",
+      "source-alphago-game-2-gobandroid-sgf",
+      "source-alphago-game-2-deepmind-video"
+    ],
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目原创棋盘重绘；仅使用走子事实，不复用转播或出版画面。",
+        "en": "Original board redraw by this project using move facts only; no broadcast or publisher imagery is reused."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2016-alphago-game-2-poster",
+    "type": "image",
+    "path": "resources/images/game-evolution/2016-alphago/lee-sedol-alphago-2016-game-2.png",
+    "role": "game-evolution-poster",
+    "caption": {
+      "zh": "AlphaGo 第 2 局第 37 手局面",
+      "en": "AlphaGo Game 2 position after move 37"
+    },
+    "subcaption": {
+      "zh": "AlphaGo 著名的五路第 37 手之后的原创棋盘重绘。",
+      "en": "Original board redraw after AlphaGo's famous fifth-line move 37."
+    },
+    "sourceIds": [
+      "source-alphago-game-2-alphago-games-sgf",
+      "source-alphago-game-2-gobandroid-sgf"
+    ],
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目原创 PNG 棋盘重绘。",
+        "en": "Original PNG board redraw by this project."
+      }
+    },
+    "displayUsage": {
+      "zh": "作为对局演化视频的延迟加载海报。",
+      "en": "Lazy-loading poster for the game-evolution video."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
   }
 ]

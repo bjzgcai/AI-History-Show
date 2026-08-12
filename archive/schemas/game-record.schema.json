@@ -1,0 +1,256 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "game-record.schema.json",
+    "title": "Curated game record and offline render manifest",
+    "type": "object",
+    "required": [
+        "schemaVersion",
+        "id",
+        "eventId",
+        "gameType",
+        "title",
+        "record",
+        "players",
+        "result",
+        "sources",
+        "verification",
+        "render",
+        "archive"
+    ],
+    "properties": {
+        "schemaVersion": {
+            "const": 1
+        },
+        "id": {
+            "$ref": "shared.schema.json#/$defs/archiveId"
+        },
+        "eventId": {
+            "$ref": "shared.schema.json#/$defs/archiveId"
+        },
+        "gameType": {
+            "enum": ["chess", "reversi", "go", "draughts"]
+        },
+        "title": {
+            "$ref": "shared.schema.json#/$defs/localizedText"
+        },
+        "date": {
+            "type": "string",
+            "format": "date"
+        },
+        "round": {
+            "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+        },
+        "location": {
+            "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+        },
+        "record": {
+            "type": "object",
+            "required": ["path", "format", "sha256", "moveCount"],
+            "properties": {
+                "path": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "format": {
+                    "enum": ["pgn", "reversi-moves", "sgf", "pdn"]
+                },
+                "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                },
+                "moveCount": {
+                    "type": "integer",
+                    "minimum": 1
+                }
+            },
+            "additionalProperties": false
+        },
+        "players": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "object",
+                "required": ["side", "name"],
+                "properties": {
+                    "side": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "name": {
+                        "$ref": "shared.schema.json#/$defs/localizedText"
+                    },
+                    "kind": {
+                        "enum": ["human", "computer"]
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "result": {
+            "$ref": "shared.schema.json#/$defs/localizedText"
+        },
+        "sources": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+                "type": "object",
+                "required": ["sourceId", "url", "role", "checkedAt", "notes"],
+                "properties": {
+                    "sourceId": {
+                        "$ref": "shared.schema.json#/$defs/archiveId"
+                    },
+                    "url": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "role": {
+                        "enum": ["record", "cross-check", "event-context"]
+                    },
+                    "checkedAt": {
+                        "type": "string",
+                        "format": "date"
+                    },
+                    "mainLineSha256": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "notes": {
+                        "$ref": "shared.schema.json#/$defs/localizedText"
+                    }
+                },
+                "additionalProperties": false,
+                "allOf": [
+                    {
+                        "if": {
+                            "properties": {
+                                "role": {
+                                    "enum": ["record", "cross-check"]
+                                }
+                            },
+                            "required": ["role"]
+                        },
+                        "then": {
+                            "required": ["mainLineSha256"]
+                        }
+                    }
+                ]
+            }
+        },
+        "verification": {
+            "type": "object",
+            "required": ["status", "method", "matchedRecordSources", "mainLineSha256"],
+            "properties": {
+                "status": {
+                    "const": "verified"
+                },
+                "method": {
+                    "$ref": "shared.schema.json#/$defs/localizedText"
+                },
+                "matchedRecordSources": {
+                    "type": "integer",
+                    "minimum": 2
+                },
+                "mainLineSha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                }
+            },
+            "additionalProperties": false
+        },
+        "render": {
+            "type": "object",
+            "required": [
+                "videoPath",
+                "posterPath",
+                "width",
+                "height",
+                "fps",
+                "durationSeconds",
+                "openingHoldSeconds",
+                "endHoldSeconds",
+                "posterMove",
+                "maxBytes"
+            ],
+            "properties": {
+                "videoPath": {
+                    "type": "string",
+                    "pattern": "^resources/videos/game-evolution/.+\\.mp4$"
+                },
+                "posterPath": {
+                    "type": "string",
+                    "pattern": "^resources/images/game-evolution/.+\\.png$"
+                },
+                "width": {
+                    "type": "integer",
+                    "minimum": 640
+                },
+                "height": {
+                    "type": "integer",
+                    "minimum": 360
+                },
+                "fps": {
+                    "type": "integer",
+                    "minimum": 12,
+                    "maximum": 60
+                },
+                "durationSeconds": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                },
+                "openingHoldSeconds": {
+                    "type": "number",
+                    "minimum": 0.5,
+                    "maximum": 5
+                },
+                "endHoldSeconds": {
+                    "type": "number",
+                    "minimum": 3,
+                    "maximum": 4
+                },
+                "highlights": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": ["move", "holdSeconds"],
+                        "properties": {
+                            "move": {
+                                "type": "integer",
+                                "minimum": 1
+                            },
+                            "holdSeconds": {
+                                "type": "number",
+                                "minimum": 1,
+                                "maximum": 6
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "posterMove": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "maxBytes": {
+                    "type": "integer",
+                    "minimum": 1
+                }
+            },
+            "additionalProperties": false
+        },
+        "archive": {
+            "type": "object",
+            "required": ["videoAssetId", "posterAssetId"],
+            "properties": {
+                "videoAssetId": {
+                    "$ref": "shared.schema.json#/$defs/archiveId"
+                },
+                "posterAssetId": {
+                    "$ref": "shared.schema.json#/$defs/archiveId"
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}

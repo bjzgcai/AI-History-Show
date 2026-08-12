@@ -22,7 +22,7 @@
     },
     {
       "eventId": "2016-alphago",
-      "order": 10,
+      "order": 80,
       "enabled": true,
       "milestoneId": "milestone-gaming-ai-2016-alphago"
     },
@@ -94,10 +94,10 @@
     }
   ],
   "review": {
-    "status": "draft",
+    "status": "reviewed",
     "notes": {
-      "zh": "Step 2 初版，仅引用 Step 3 计划迁移的样例事件。",
-      "en": "Step 2 draft that only references the sample events planned for Step 3."
+      "zh": "已纳入完整的 13 个棋牌与博弈 AI 节点；真实对局回放与概念动画按可核验证据逐项完善。",
+      "en": "All 13 gaming and game-theory AI milestones are included; verified game replays and conceptual animations are being completed according to the available evidence."
     }
   }
 }

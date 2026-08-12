@@ -4,6 +4,8 @@
 
 An interactive frontend application designed for exhibition-hall large-screen displays, showcasing key milestones in the history of artificial intelligence. It supports Chinese and English (with an in-page language switch), adapts across large screens and mobile devices, and presents The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI, Top AI Achievements (BenchCouncil), gaming AI, and the humanistic and emotional cycles surrounding AI.
 
+For the project's goals, public-learning scope, and contribution paths, see [About AI History Show](docs/about.md).
+
 ## Repositories
 
 - Gitee: `ssh://git@z.gitee.cn:223/zgca/AI-History-Show.git`

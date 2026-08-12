@@ -1,0 +1,96 @@
+{
+    "schemaVersion": 1,
+    "id": "logistello-murakami-1997-game-1",
+    "eventId": "1997-logistello",
+    "gameType": "reversi",
+    "title": {
+        "zh": "Logistello 对村上健，1997 年第 1 局",
+        "en": "Logistello versus Takeshi Murakami, 1997 Game 1"
+    },
+    "date": "1997-08-04",
+    "round": {
+        "zh": "第 1 局",
+        "en": "Game 1"
+    },
+    "location": {
+        "zh": "线上挑战赛",
+        "en": "Online challenge match"
+    },
+    "record": {
+        "path": "logistello-murakami-1997-game-1.moves",
+        "format": "reversi-moves",
+        "sha256": "71a0ccca49118fcab895e205c6ac2bd361a9c83941c03f7e72e9313784d548bb",
+        "moveCount": 60
+    },
+    "players": [
+        {
+            "side": "black",
+            "name": {
+                "zh": "村上健",
+                "en": "Takeshi Murakami"
+            },
+            "kind": "human"
+        },
+        {
+            "side": "white",
+            "name": {
+                "zh": "Logistello",
+                "en": "Logistello"
+            },
+            "kind": "computer"
+        }
+    ],
+    "result": {
+        "zh": "Logistello 以 48 比 16 获胜",
+        "en": "Logistello won 48-16"
+    },
+    "sources": [
+        {
+            "sourceId": "source-logistello-game-1-official-record",
+            "url": "https://skatgame.net/mburo/game1.html",
+            "role": "record",
+            "checkedAt": "2026-08-11",
+            "mainLineSha256": "b0a544fb60b065636910e85f2887a727a6f06ddedd8c08a639f8e2808e878a9a",
+            "notes": {
+                "zh": "迈克尔·布罗维护的官方比赛页以 1 至 60 标出每个落子格，并列出最终比分与日期。",
+                "en": "Michael Buro's official match page numbers every occupied square from 1 to 60 and gives the final score and date."
+            }
+        },
+        {
+            "sourceId": "source-logistello-game-1-official-log",
+            "url": "https://skatgame.net/mburo/match/out1",
+            "role": "cross-check",
+            "checkedAt": "2026-08-11",
+            "mainLineSha256": "b0a544fb60b065636910e85f2887a727a6f06ddedd8c08a639f8e2808e878a9a",
+            "notes": {
+                "zh": "同一官方档案中的程序日志逐手记录 continuation 和落子，可独立重建完整主线与 48 比 16 的终局。",
+                "en": "The program log in the official archive records each continuation and played move, independently reconstructing the full line and 48-16 final board."
+            }
+        }
+    ],
+    "verification": {
+        "status": "verified",
+        "method": {
+            "zh": "从官方编号棋盘提取 60 手，并用官方程序日志逐手交叉核对；再以黑白棋规则重放到 48 比 16。",
+            "en": "Extract all 60 moves from the official numbered board, cross-check them against the official program log, and replay them legally to the 48-16 final score."
+        },
+        "matchedRecordSources": 2,
+        "mainLineSha256": "b0a544fb60b065636910e85f2887a727a6f06ddedd8c08a639f8e2808e878a9a"
+    },
+    "render": {
+        "videoPath": "resources/videos/game-evolution/1997-logistello/logistello-murakami-1997-game-1.mp4",
+        "posterPath": "resources/images/game-evolution/1997-logistello/logistello-murakami-1997-game-1.png",
+        "width": 1280,
+        "height": 720,
+        "fps": 24,
+        "durationSeconds": 42,
+        "openingHoldSeconds": 1.5,
+        "endHoldSeconds": 3.5,
+        "posterMove": 60,
+        "maxBytes": 5242880
+    },
+    "archive": {
+        "videoAssetId": "asset-1997-logistello-game-1-video",
+        "posterAssetId": "asset-1997-logistello-game-1-poster"
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "schemaVersion": 1,
+    "id": "deep-blue-kasparov-1997-game-6",
+    "eventId": "1997-deep-blue",
+    "gameType": "chess",
+    "title": {
+        "zh": "深蓝对卡斯帕罗夫，1997 年第 6 局",
+        "en": "Deep Blue versus Kasparov, 1997 Game 6"
+    },
+    "date": "1997-05-11",
+    "round": {
+        "zh": "第 6 局",
+        "en": "Game 6"
+    },
+    "location": {
+        "zh": "美国纽约",
+        "en": "New York, United States"
+    },
+    "record": {
+        "path": "deep-blue-kasparov-1997-game-6.pgn",
+        "format": "pgn",
+        "sha256": "60eb51b8b25399d5c17647a0e9d2a330ce4adc1c286b71813716f5813e5b2a2a",
+        "moveCount": 37
+    },
+    "players": [
+        {
+            "side": "white",
+            "name": {
+                "zh": "深蓝",
+                "en": "Deep Blue"
+            },
+            "kind": "computer"
+        },
+        {
+            "side": "black",
+            "name": {
+                "zh": "加里·卡斯帕罗夫",
+                "en": "Garry Kasparov"
+            },
+            "kind": "human"
+        }
+    ],
+    "result": {
+        "zh": "深蓝执白获胜，卡斯帕罗夫在第 19 回合后认输",
+        "en": "Deep Blue won as White after Kasparov resigned on move 19"
+    },
+    "sources": [
+        {
+            "sourceId": "source-deep-blue-game-6-pgn-jwher",
+            "url": "https://github.com/JWHer/jwher.github.io/blob/9c7e8f46aff55d668e91ef27cbb7669ebd6cda38/static/chess/games/kasparov-deep-blue-g6-1997.pgn",
+            "role": "record",
+            "checkedAt": "2026-08-11",
+            "mainLineSha256": "cb184311ba190576627f0347896f9d7e3150015bd9ba9bb3130a3fac676d67d6",
+            "notes": {
+                "zh": "固定提交中的 PGN 主线；赛事身份、日期、执子与结果均与策展记录一致。",
+                "en": "PGN main line at a pinned commit; event identity, date, colors and result match the curated record."
+            }
+        },
+        {
+            "sourceId": "source-deep-blue-game-6-pgn-chess-review",
+            "url": "https://github.com/tuliopd17/chess-review/blob/8dcb0769ca1424f8056aa75d2f7cfc1de86ca63a/examples/kasparov-deep-blue-1997.pgn",
+            "role": "cross-check",
+            "checkedAt": "2026-08-11",
+            "mainLineSha256": "cb184311ba190576627f0347896f9d7e3150015bd9ba9bb3130a3fac676d67d6",
+            "notes": {
+                "zh": "第二份独立 PGN 副本；规范化后的 37 个半回合与本地记录逐手一致。",
+                "en": "A second independently hosted PGN copy; all 37 normalized plies match the local record."
+            }
+        },
+        {
+            "sourceId": "source-deep-blue-game-6-commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+            "role": "event-context",
+            "checkedAt": "2026-08-11",
+            "notes": {
+                "zh": "维基共享资源的 CC0 逐手动画用于第三方视觉抽查；新视频不复用其画面。",
+                "en": "The CC0 move animation on Wikimedia Commons provides a third visual spot-check; the new video does not reuse its frames."
+            }
+        }
+    ],
+    "verification": {
+        "status": "verified",
+        "method": {
+            "zh": "以合法棋步解析 PGN，比较两份独立托管副本的规范化主线，并用维基共享资源的 CC0 逐手动画做视觉抽查。",
+            "en": "Parse the PGN as legal chess moves, compare the normalized main line across two independently hosted copies, and visually spot-check it against the CC0 move animation on Wikimedia Commons."
+        },
+        "matchedRecordSources": 2,
+        "mainLineSha256": "cb184311ba190576627f0347896f9d7e3150015bd9ba9bb3130a3fac676d67d6"
+    },
+    "render": {
+        "videoPath": "resources/videos/game-evolution/1997-deep-blue/deep-blue-kasparov-1997-game-6.mp4",
+        "posterPath": "resources/images/game-evolution/1997-deep-blue/deep-blue-kasparov-1997-game-6.png",
+        "width": 1280,
+        "height": 720,
+        "fps": 24,
+        "durationSeconds": 36,
+        "openingHoldSeconds": 1.5,
+        "endHoldSeconds": 3.5,
+        "posterMove": 15,
+        "maxBytes": 5242880
+    },
+    "archive": {
+        "videoAssetId": "asset-1997-deep-blue-game-6-video",
+        "posterAssetId": "asset-1997-deep-blue-game-6-poster"
+    }
+}

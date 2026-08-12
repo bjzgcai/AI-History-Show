@@ -118,5 +118,45 @@
       "en": "Move-by-move board page in the official Logistello match archive."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-logistello-game-1-official-record",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "村上健对 Logistello 第 1 局官方编号棋盘",
+      "en": "Official numbered board for Murakami versus Logistello, Game 1"
+    },
+    "url": "https://skatgame.net/mburo/game1.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "迈克尔·布罗维护的比赛档案，以 1 至 60 标出完整落子顺序，并列出日期和 16 比 48 的结果。",
+      "en": "Michael Buro's match archive numbers the complete move order from 1 to 60 and gives the date and 16-48 result."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-logistello-game-1-official-log",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "Logistello 第 1 局官方程序日志",
+      "en": "Official Logistello Game 1 program log"
+    },
+    "url": "https://skatgame.net/mburo/match/out1",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "官方程序日志逐手记录 continuation 与实际落子，用于独立核对编号棋盘提取出的主线。",
+      "en": "The official program log records each continuation and played move, independently checking the line extracted from the numbered board."
+    },
+    "purpose": "bibliographic-verification"
   }
 ]

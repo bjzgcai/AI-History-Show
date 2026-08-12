@@ -3,6 +3,7 @@
     "revisionId": "gaming-all-storyline-en-original-v1-2026-08-09",
     "label": "Gaming AI English original",
     "comparisonKind": "previous",
+    "storylineOrderPolicy": "frozen-revision",
     "outputRoot": "resources/audio/generated/ai100-and-gaming-original-v1/gaming-all-storyline-en-original-v1-2026-08-09",
     "turnsDir": "audio/revisions/gaming-original/turns/en",
     "voiceProfilePath": "audio/voices/en-megan-alberto-original.json",

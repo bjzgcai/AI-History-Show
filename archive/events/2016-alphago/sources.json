@@ -114,5 +114,65 @@
       "en": "Photograph by Wesalius; the Wikimedia Commons file page identifies the work as CC BY-SA 4.0."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-alphago-game-2-alphago-games-sgf",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "李世石对 AlphaGo 第 2 局注释 SGF",
+      "en": "Annotated SGF for Lee Sedol versus AlphaGo, Game 2"
+    },
+    "url": "https://www.alphago-games.com/static/games/leesedol/2016.03.10-Lee_Sedol-AlphaGo.sgf",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "包含 211 手主线及范麾等人的注释；站点自述为爱好者项目，因此与独立 SGF 副本共同使用。",
+      "en": "Contains the 211-move main line and commentary by Fan Hui and others; because the site describes itself as fan art, it is paired with an independent SGF copy."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-alphago-game-2-gobandroid-sgf",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "Gobandroid 保存的 AlphaGo 第 2 局紧凑 SGF",
+      "en": "Compact AlphaGo Game 2 SGF preserved by Gobandroid"
+    },
+    "url": "https://github.com/ligi/gobandroid/blob/1d93a44c8980299bc0fbc146917077e8cc36dffb/android/src/main/assets/sgf_init/review/pro/Lee%20Sedol%20vs%20AlphaGo/2-AlphaGo-vs-Lee-Sedol.sgf",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "固定提交中的第二份 SGF；规范化后的 211 手第一主变与 alphago-games.com 完全一致。",
+      "en": "A second SGF at a pinned commit; its normalized 211-move first main variation exactly matches alphago-games.com."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-alphago-game-2-deepmind-video",
+    "type": "official-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "DeepMind：李世石对 AlphaGo 第 2 局官方录像",
+      "en": "DeepMind: official Lee Sedol versus AlphaGo Game 2 video"
+    },
+    "url": "https://www.youtube.com/watch?v=l-GsfyVCBu0",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对比赛身份、日期、执子与结果；本地演化视频不复用录像画面。",
+      "en": "Used to corroborate the game identity, date, colors and result; the local evolution video does not reuse footage."
+    },
+    "purpose": "official-statement"
   }
 ]
