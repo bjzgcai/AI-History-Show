@@ -55,6 +55,17 @@ try {
     );
     assert.notEqual(parserResult.status, 0, 'production parser must reject a stale main-line digest');
     assert.match(parserResult.stderr, /Main-line SHA-256 mismatch/);
+
+    const posterManifest = JSON.parse(JSON.stringify(sourceManifest));
+    posterManifest.render.posterMove = posterManifest.record.moveCount + 1;
+    fs.writeFileSync(temporaryManifestPath, `${JSON.stringify(posterManifest)}\n`);
+    const posterResult = childProcess.spawnSync(
+        process.env.GAME_RECORD_PYTHON || 'python3',
+        [path.join(root, 'scripts/game-evolution/verify_game_record.py'), temporaryManifestPath],
+        { encoding: 'utf8' }
+    );
+    assert.notEqual(posterResult.status, 0, 'production parser must reject an out-of-range posterMove');
+    assert.match(posterResult.stderr, /posterMove out of range/);
 } finally {
     fs.rmSync(temporaryRoot, { recursive: true, force: true });
 }

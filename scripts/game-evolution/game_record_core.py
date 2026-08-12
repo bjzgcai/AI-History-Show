@@ -459,6 +459,11 @@ def parse_record(manifest_path: Path, manifest: dict[str, Any]) -> ParsedGame:
         raise GameRecordError(
             f"Main-line SHA-256 mismatch for {manifest['id']}: expected {expected_digest}, got {parsed.digest}"
         )
+    poster_move = int(manifest["render"]["posterMove"])
+    if poster_move < 0 or poster_move >= len(parsed.states):
+        raise GameRecordError(
+            f"posterMove out of range for {manifest['id']}: expected 0-{len(parsed.states) - 1}, got {poster_move}"
+        )
     return parsed
 
 

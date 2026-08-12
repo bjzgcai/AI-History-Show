@@ -5,8 +5,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import shutil
-import subprocess
 import tempfile
 from pathlib import Path
 from typing import Any
@@ -15,6 +13,7 @@ from PIL import Image, ImageDraw
 
 from game_record_core import GameRecordError, ROOT, localized, sha256_file
 from game_record_frames import load_font
+from video_encoding import encode_concat, validate_video_output, write_concat_manifest
 
 
 MANIFEST_GLOB = "archive/events/*/paper-cases/paper-case.json"
@@ -182,10 +181,6 @@ def _draw_suphx_safe_tile_frame(manifest: dict[str, Any], scene: dict[str, Any])
     return image
 
 
-def _ffconcat_escape(path: Path) -> str:
-    return str(path).replace("'", "'\\''")
-
-
 def _validate_suphx_safe_tile(manifest: dict[str, Any]) -> None:
     case_data = manifest.get("case")
     if not isinstance(case_data, dict):
@@ -237,56 +232,18 @@ def render(manifest_path: Path, manifest: dict[str, Any]) -> None:
     if abs(total_duration - float(manifest["render"]["durationSeconds"])) > 0.001:
         raise GameRecordError(f"Scene durations do not add up for {manifest['id']}")
 
-    ffmpeg = shutil.which("ffmpeg")
-    if not ffmpeg:
-        raise GameRecordError("ffmpeg is required to generate MP4 output.")
     with tempfile.TemporaryDirectory(prefix="ai-history-paper-case-") as temp_name:
         temp_dir = Path(temp_name)
-        lines = ["ffconcat version 1.0"]
-        last_path: Path | None = None
+        frames: list[tuple[Path, float]] = []
         for index, scene in enumerate(scenes):
             frame_path = temp_dir / f"scene-{index:02d}.png"
             draw_frame(manifest, scene).save(frame_path, format="PNG", optimize=True)
-            lines.extend([f"file '{_ffconcat_escape(frame_path)}'", f"duration {float(scene['durationSeconds']):.9f}"])
-            last_path = frame_path
-        if last_path is None:
-            raise GameRecordError("Paper case contains no scenes.")
-        lines.append(f"file '{_ffconcat_escape(last_path)}'")
-        concat_path = temp_dir / "scenes.ffconcat"
-        concat_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-        command = [
-            ffmpeg,
-            "-hide_banner",
-            "-loglevel",
-            "error",
-            "-y",
-            "-f",
-            "concat",
-            "-safe",
-            "0",
-            "-i",
-            str(concat_path),
-            "-vf",
-            f"fps={manifest['render']['fps']},format=yuv420p",
-            "-c:v",
-            "libx264",
-            "-preset",
-            "medium",
-            "-crf",
-            "27",
-            "-movflags",
-            "+faststart",
-            "-an",
-            str(output),
-        ]
-        completed = subprocess.run(command, capture_output=True, text=True, check=False)
-        if completed.returncode != 0:
-            raise GameRecordError(f"ffmpeg failed for {manifest['id']}: {completed.stderr.strip()}")
+            frames.append((frame_path, float(scene["durationSeconds"])))
+        concat_path = write_concat_manifest(temp_dir, frames, file_name="scenes.ffconcat")
+        encode_concat(manifest, concat_path, output)
 
     poster_scene = next(scene for scene in scenes if scene["id"] == manifest["render"]["posterScene"])
     draw_frame(manifest, poster_scene).save(poster, format="PNG", optimize=True)
-    if output.stat().st_size > int(manifest["render"]["maxBytes"]):
-        raise GameRecordError(f"Rendered paper-case video exceeds maxBytes: {output}")
 
 
 def validate_manifest(manifest_path: Path, manifest: dict[str, Any]) -> None:
@@ -308,43 +265,6 @@ def validate_manifest(manifest_path: Path, manifest: dict[str, Any]) -> None:
         raise GameRecordError("Final paper-case scene must hold for at least 3.5 seconds.")
 
 
-def probe(manifest: dict[str, Any]) -> dict[str, Any]:
-    video = ROOT / manifest["render"]["videoPath"]
-    poster = ROOT / manifest["render"]["posterPath"]
-    if not video.is_file() or not poster.is_file():
-        raise GameRecordError("Rendered paper-case video or poster is missing.")
-    completed = subprocess.run(
-        [
-            "ffprobe",
-            "-v",
-            "error",
-            "-show_entries",
-            "stream=codec_type,codec_name,pix_fmt,width,height:format=duration,size",
-            "-of",
-            "json",
-            str(video),
-        ],
-        capture_output=True,
-        text=True,
-        check=False,
-    )
-    if completed.returncode != 0:
-        raise GameRecordError(completed.stderr.strip())
-    result = json.loads(completed.stdout)
-    streams = result["streams"]
-    if any(stream["codec_type"] == "audio" for stream in streams):
-        raise GameRecordError("Paper-case video must not contain an audio stream.")
-    video_stream = next(stream for stream in streams if stream["codec_type"] == "video")
-    if video_stream["codec_name"] != "h264" or video_stream["pix_fmt"] != "yuv420p":
-        raise GameRecordError(f"Unexpected video encoding: {video_stream}")
-    expected = manifest["render"]
-    if (int(video_stream["width"]), int(video_stream["height"])) != (int(expected["width"]), int(expected["height"])):
-        raise GameRecordError("Unexpected paper-case video dimensions.")
-    if abs(float(result["format"]["duration"]) - float(expected["durationSeconds"])) > 1 / int(expected["fps"]) + 0.01:
-        raise GameRecordError("Unexpected paper-case video duration.")
-    return result
-
-
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("manifests", nargs="*")
@@ -360,7 +280,7 @@ def main() -> int:
             validate_manifest(path, manifest)
             if not args.check:
                 render(path, manifest)
-            result = probe(manifest)
+            result = validate_video_output(manifest)
             print(json.dumps({
                 "id": manifest["id"],
                 "video": manifest["render"]["videoPath"],

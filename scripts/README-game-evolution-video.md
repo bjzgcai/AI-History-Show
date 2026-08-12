@@ -147,7 +147,8 @@ npm run validate:game-records
 
 - `game_record_core.py`：数据模型、记录解析、合法重放、摘要和帧时长；
 - `game_record_frames.py`：国际象棋、黑白棋、围棋、美式跳棋与信息面板绘制；
-- `game_record_video.py`：帧序列、ffmpeg 编码和输出探测；
+- `game_record_video.py`：完整对局帧序列与渲染编排；
+- `video_encoding.py`：完整回放与论文案例共用的 ffconcat、ffmpeg 编码和输出校验；
 - `render_game_record.py`：稳定的完整对局命令行入口。
 
 ## 生成论文局部案例
