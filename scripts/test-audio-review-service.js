@@ -9,14 +9,18 @@ const { once } = require('node:events');
 const { URL } = require('node:url');
 
 const { hashToken } = require('../audio-review/auth');
+const { candidateIdFor } = require('../audio-review/candidates');
 const { createAudioReviewServer } = require('../audio-review/server');
 
 const temporaryRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'audio-review-service-'));
 const publicRoot = path.join(temporaryRoot, 'public');
 const audioDirectory = path.join(temporaryRoot, 'resources', 'audio', 'generated', 'test');
+const sharedAudioRoot = path.join(temporaryRoot, 'shared', 'audio-generated');
 const reviewDataPath = path.join(temporaryRoot, 'review-data.json');
+const escapingReviewDataPath = path.join(temporaryRoot, 'escaping-review-data.json');
 const databasePath = path.join(temporaryRoot, 'data', 'reviews.sqlite');
 const audioRelativePath = 'resources/audio/generated/test/candidate.mp3';
+const escapingAudioRelativePath = 'resources/audio/generated/../secret.mp3';
 const reviewerToken = 'reviewer-token';
 const secondReviewerToken = 'second-reviewer-token';
 const adminToken = 'admin-token';
@@ -28,10 +32,12 @@ const tokenEntries = [
 
 fs.mkdirSync(publicRoot, { recursive: true });
 fs.mkdirSync(audioDirectory, { recursive: true });
+fs.mkdirSync(path.join(sharedAudioRoot, 'test'), { recursive: true });
 fs.writeFileSync(path.join(publicRoot, 'index.html'), '<!doctype html><title>Audio Review</title>');
 fs.writeFileSync(path.join(publicRoot, 'app.js'), 'console.log("review");');
 fs.writeFileSync(path.join(publicRoot, 'styles.css'), 'body { color: black; }');
 fs.writeFileSync(path.join(temporaryRoot, audioRelativePath), Buffer.from('0123456789abcdef'));
+fs.writeFileSync(path.join(sharedAudioRoot, 'test', 'candidate.mp3'), Buffer.from('shared-audio-bytes'));
 fs.writeFileSync(
     reviewDataPath,
     `${JSON.stringify(
@@ -63,17 +69,46 @@ fs.writeFileSync(
         2
     )}\n`
 );
+fs.writeFileSync(
+    escapingReviewDataPath,
+    `${JSON.stringify(
+        {
+            schemaVersion: 2,
+            release: { status: 'candidate-listening-review', previews: [] },
+            scopes: { test: { eventCount: 1 } },
+            events: [
+                {
+                    scopeId: 'test',
+                    sequenceIndex: 1,
+                    eventId: 'escaping-event',
+                    title: { en: 'Escaping event', zh: '路径穿越事件' },
+                    variants: {
+                        zh: {
+                            storyline: {
+                                audio: { path: escapingAudioRelativePath, durationSec: 1 },
+                                revision: { id: 'escaping-revision', kind: 'previous', label: '路径穿越修订' }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        null,
+        2
+    )}\n`
+);
 
 function createServer(options = {}) {
     return createAudioReviewServer({
         projectRoot: temporaryRoot,
         publicRoot,
-        reviewDataPath,
+        reviewDataPath: options.reviewDataPath || reviewDataPath,
         databasePath: options.databasePath || databasePath,
         tokenEntries,
         secureCookie: false,
         strictOrigin: options.strictOrigin,
-        allowedOrigins: options.allowedOrigins
+        allowedOrigins: options.allowedOrigins,
+        audioRoot: options.audioRoot
     });
 }
 
@@ -115,6 +150,13 @@ async function requestJson(baseUrl, pathname, cookie, options = {}) {
     });
     const payload = await response.json();
     return { response, payload };
+}
+
+async function requestCandidateAudio(baseUrl, cookie, audioPath, revisionId = 'test-revision', headers = {}) {
+    const candidateId = candidateIdFor(revisionId, audioPath);
+    return fetch(`${baseUrl}/api/audio/${candidateId}`, {
+        headers: { Cookie: cookie, ...headers }
+    });
 }
 
 async function testStrictOriginPolicy() {
@@ -184,8 +226,73 @@ async function testStrictOriginPolicy() {
     }
 }
 
+async function testDefaultProjectAudioRoot() {
+    const server = createServer({
+        databasePath: path.join(temporaryRoot, 'data', 'default-audio-root.sqlite')
+    });
+    const baseUrl = await listen(server);
+    try {
+        const reviewerCookie = await login(baseUrl, reviewerToken);
+        const response = await requestCandidateAudio(baseUrl, reviewerCookie, audioRelativePath, 'test-revision', {
+            Range: 'bytes=2-5'
+        });
+        assert.equal(response.status, 206);
+        assert.equal(response.headers.get('content-type'), 'audio/mpeg');
+        assert.equal(await response.text(), '2345');
+    } finally {
+        await close(server);
+    }
+}
+
+async function testExternalSharedAudioRoot() {
+    const previousAudioRoot = process.env.AUDIO_REVIEW_AUDIO_ROOT;
+    process.env.AUDIO_REVIEW_AUDIO_ROOT = sharedAudioRoot;
+    const server = createServer({
+        databasePath: path.join(temporaryRoot, 'data', 'shared-audio-root.sqlite')
+    });
+    let baseUrl;
+    try {
+        baseUrl = await listen(server);
+        const reviewerCookie = await login(baseUrl, reviewerToken);
+        const response = await requestCandidateAudio(baseUrl, reviewerCookie, audioRelativePath);
+        assert.equal(response.status, 200);
+        assert.equal(response.headers.get('content-type'), 'audio/mpeg');
+        assert.equal(await response.text(), 'shared-audio-bytes');
+    } finally {
+        if (server.listening) await close(server);
+        if (previousAudioRoot === undefined) delete process.env.AUDIO_REVIEW_AUDIO_ROOT;
+        else process.env.AUDIO_REVIEW_AUDIO_ROOT = previousAudioRoot;
+    }
+}
+
+async function testEscapingAudioPathRejected() {
+    const server = createServer({
+        audioRoot: sharedAudioRoot,
+        reviewDataPath: escapingReviewDataPath,
+        databasePath: path.join(temporaryRoot, 'data', 'escaping-audio-root.sqlite')
+    });
+    const baseUrl = await listen(server);
+    try {
+        const reviewerCookie = await login(baseUrl, reviewerToken);
+        const response = await requestCandidateAudio(
+            baseUrl,
+            reviewerCookie,
+            escapingAudioRelativePath,
+            'escaping-revision'
+        );
+        const payload = await response.json();
+        assert.equal(response.status, 403);
+        assert.equal(payload.error, 'Audio path is outside the review audio root');
+    } finally {
+        await close(server);
+    }
+}
+
 async function main() {
     await testStrictOriginPolicy();
+    await testDefaultProjectAudioRoot();
+    await testExternalSharedAudioRoot();
+    await testEscapingAudioPathRejected();
 
     let server = createServer();
     try {
