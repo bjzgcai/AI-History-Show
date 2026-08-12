@@ -12,7 +12,9 @@ def load_font(size: int, bold: bool = False):
     try:
         from PIL import ImageFont
     except ImportError as exc:
-        raise GameRecordError("Rendering requires Pillow. Install requirements-game-video.txt.") from exc
+        raise GameRecordError(
+            "Rendering requires Pillow. Install scripts/game-evolution/requirements-render.txt."
+        ) from exc
     candidates = [
         "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
         if bold
@@ -288,7 +290,9 @@ def draw_frame(
     try:
         from PIL import Image, ImageDraw
     except ImportError as exc:
-        raise GameRecordError("Rendering requires Pillow. Install requirements-game-video.txt.") from exc
+        raise GameRecordError(
+            "Rendering requires Pillow. Install scripts/game-evolution/requirements-render.txt."
+        ) from exc
 
     width = int(manifest["render"]["width"])
     height = int(manifest["render"]["height"])
