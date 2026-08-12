@@ -78,7 +78,21 @@ Compose 将审核数据和候选音频只读挂载进容器，只允许 `/data` 
 - `POST /api/auth/session`：Token 登录并建立 HttpOnly Cookie 会话。
 - `GET /api/review-data`：获取带稳定候选 ID 的审核数据。
 - `GET/POST /api/reviews`：读取汇总、追加审核记录。
+- `GET /api/reviews/export`：导出全部候选与完整审核历史，包括已停用候选和已撤销记录。
 - `GET /api/reviews/approved-manifest`：获取至少有一条有效通过记录的候选。
 - `GET /api/reviews/unapproved`：获取尚无有效通过记录的候选。
 - `POST /api/reviews/:id/invalidate`：管理员撤销错误审核记录。
 - `GET /api/audio/:audioId`：鉴权播放清单中的候选或连续预览音频，支持 HTTP Range。
+
+## 审核统计技能
+
+仓库内置 `.agents/skills/audio-review-insights/`，用于按日期、故事线、审核人、语言和结果查询审核记录，并列出不通过事件与备注。配置 `AUDIO_REVIEW_BASE_URL` 和 `AUDIO_REVIEW_TOKEN` 后可直接运行：
+
+```bash
+npm run audio:review:insights -- daily --date today
+npm run audio:review:insights -- failed --date 2026-08-12
+npm run audio:review:insights -- failed --date yesterday --still-failing
+npm run audio:review:insights -- reviewer --days 7
+```
+
+也可使用 `--input <export.json>` 查询页面导出的 JSON，或用 `--db <reviews.sqlite>` 只读查询本地数据库。默认按 `Asia/Shanghai` 解释自然日期，可用 `--timezone` 修改。
