@@ -10,6 +10,7 @@ const SCHEMA_FILES = [
     'claim.schema.json',
     'source.schema.json',
     'asset.schema.json',
+    'media-storage.schema.json',
     'quiz.schema.json',
     'variant.schema.json',
     'storyline.schema.json',

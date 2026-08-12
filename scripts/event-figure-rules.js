@@ -4,6 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const { namesMatch, splitContributors } = require('./ai100-contributors');
+const { resolveEffectivePresentation } = require('./archive-presentation');
 const { isAssetSelectionExcluded } = require('./asset-selection-review');
 const { loadFigureRegistry, resolveFigureRelations } = require('./figure-registry');
 const eventMediaSelection = require('../shared/event-media-selection');
@@ -305,25 +306,40 @@ function auditVariant({ eventId, event, variant, assets, catalog, registry }) {
 
 function auditArchive(root) {
     const eventsDir = path.join(root, 'archive', 'events');
+    const storylinesDir = path.join(root, 'archive', 'storylines');
     const catalog = loadCanonicalCatalog();
     const registry = loadFigureRegistry(root);
     const results = [];
-    if (!fs.existsSync(eventsDir)) return results;
-    for (const eventId of fs.readdirSync(eventsDir).sort()) {
-        const eventDir = path.join(eventsDir, eventId);
-        const eventFile = path.join(eventDir, 'event.json');
-        const assetsFile = path.join(eventDir, 'assets.json');
-        const variantsDir = path.join(eventDir, 'variants');
-        if (!fs.existsSync(eventFile) || !fs.existsSync(assetsFile) || !fs.existsSync(variantsDir)) continue;
-        const event = readJson(eventFile);
-        const assets = readJson(assetsFile);
-        for (const fileName of fs
-            .readdirSync(variantsDir)
-            .filter((file) => file.endsWith('.json'))
-            .sort()) {
-            const variant = readJson(path.join(variantsDir, fileName));
+    if (!fs.existsSync(eventsDir) || !fs.existsSync(storylinesDir)) return results;
+    const storylines = fs
+        .readdirSync(storylinesDir)
+        .filter((file) => file.endsWith('.json'))
+        .sort()
+        .map((file) => readJson(path.join(storylinesDir, file)));
+    for (const storyline of storylines) {
+        for (const ref of storyline.events || []) {
+            if (!ref || ref.enabled === false) continue;
+            const eventId = ref.eventId;
+            const eventDir = path.join(eventsDir, eventId);
+            const eventFile = path.join(eventDir, 'event.json');
+            const assetsFile = path.join(eventDir, 'assets.json');
+            if (!fs.existsSync(eventFile) || !fs.existsSync(assetsFile)) continue;
+            const event = readJson(eventFile);
+            const assets = readJson(assetsFile);
+            const resolved = resolveEffectivePresentation({
+                root,
+                eventDir,
+                event,
+                eventId,
+                storylineId: storyline.id,
+                ref
+            });
+            const variant = {
+                ...resolved.presentation,
+                storylineId: storyline.id
+            };
             results.push({
-                file: path.relative(root, path.join(variantsDir, fileName)).replace(/\\/g, '/'),
+                file: resolved.overrideFile || path.relative(root, eventFile).replace(/\\/g, '/'),
                 ...auditVariant({ eventId, event, variant, assets, catalog, registry })
             });
         }

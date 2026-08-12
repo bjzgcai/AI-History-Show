@@ -2,11 +2,14 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 import prettier from 'prettier';
 
 const SCRIPT_PATH = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(SCRIPT_PATH), '../..');
+const require = createRequire(import.meta.url);
+const { resolveEffectivePresentation } = require('../archive-presentation');
 const ARCHIVE_EVENTS = path.join(ROOT, 'archive/events');
 const STORYLINES = path.join(ROOT, 'archive/storylines');
 const AI100_ID = 'bench-council-ai100';
@@ -78,6 +81,20 @@ const outputs = {
 
 function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function readEffectiveVariant(storylineId, entry) {
+    const eventDir = path.join(ARCHIVE_EVENTS, entry.eventId);
+    const event = readJson(path.join(eventDir, 'event.json'));
+    const variant = resolveEffectivePresentation({
+        root: ROOT,
+        eventDir,
+        event,
+        eventId: entry.eventId,
+        storylineId,
+        ref: entry
+    }).presentation;
+    return { event, variant };
 }
 
 export async function writeFrozenJson(filePath, value) {
@@ -341,27 +358,11 @@ async function main() {
                 : selectedIndex;
             const format = FORMAT_CYCLE[authorityIndex % FORMAT_CYCLE.length];
             const closingType = CLOSING_CYCLE[authorityIndex % CLOSING_CYCLE.length];
-            const eventDir = path.join(ARCHIVE_EVENTS, entry.eventId);
-            const event = readJson(path.join(eventDir, 'event.json'));
-            const variant = readJson(path.join(eventDir, 'variants', `${entry.variant}.json`));
+            const { event, variant } = readEffectiveVariant(scopeId, entry);
             const previousEntry = entries[sequenceIndex - 2] || null;
             const nextEntry = entries[sequenceIndex] || null;
-            const previous = previousEntry
-                ? {
-                      event: readJson(path.join(ARCHIVE_EVENTS, previousEntry.eventId, 'event.json')),
-                      variant: readJson(
-                          path.join(ARCHIVE_EVENTS, previousEntry.eventId, 'variants', `${previousEntry.variant}.json`)
-                      )
-                  }
-                : null;
-            const next = nextEntry
-                ? {
-                      event: readJson(path.join(ARCHIVE_EVENTS, nextEntry.eventId, 'event.json')),
-                      variant: readJson(
-                          path.join(ARCHIVE_EVENTS, nextEntry.eventId, 'variants', `${nextEntry.variant}.json`)
-                      )
-                  }
-                : null;
+            const previous = previousEntry ? readEffectiveVariant(scopeId, previousEntry) : null;
+            const next = nextEntry ? readEffectiveVariant(scopeId, nextEntry) : null;
             for (const locale of ['zh', 'en']) {
                 const fileName = `${String(sequenceIndex).padStart(3, '0')}-${entry.eventId}.json`;
                 expectedNames[locale].add(fileName);
@@ -371,7 +372,7 @@ async function main() {
                     scopeId,
                     sequenceIndex,
                     eventId: entry.eventId,
-                    variantId: entry.variant,
+                    variantId: entry.variant || scopeId,
                     locale,
                     mode: 'storyline',
                     format,

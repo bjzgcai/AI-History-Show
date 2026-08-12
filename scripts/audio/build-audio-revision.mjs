@@ -47,7 +47,7 @@ function validateTurns(source) {
     if (!storylineEvent || storylineEvent.eventId !== data.eventId) {
         fail(`${fileName}: event does not match enabled Archive storyline order`);
     }
-    if (data.variantId && storylineEvent.variant !== data.variantId) {
+    if (data.variantId && (storylineEvent.variant || storyline.id) !== data.variantId) {
         fail(`${fileName}: variant does not match Archive storyline ${storyline.id}`);
     }
     if (!Array.isArray(data.turns) || data.turns.length === 0) fail(`${fileName}: turns must be non-empty`);

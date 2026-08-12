@@ -51,5 +51,161 @@
       "zh": "根据连接主义分支 PPT 梳理新增，用于替代独立规模定律候选事件，后续可继续细化指令微调、RLHF 与推理强化学习的边界。",
       "en": "Added from the connectionism storyline review to replace a standalone scaling-laws candidate; instruction tuning, RLHF, and reasoning reinforcement learning can be further separated later if needed."
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "zh": "后训练提升智能",
+      "en": "Post-Training Improves Intelligence"
+    },
+    "displaySummary": {
+      "zh": "基础模型、后训练与智能体",
+      "en": "Foundation Models, Post-Training, and Agents"
+    },
+    "displayDescription": {
+      "zh": "<p>大模型的能力并不只来自预训练阶段。随着高质量文本数据增长放缓、训练试验越来越昂贵，单纯扩大预训练开始面对更明显的边际收益问题。后训练由此成为基础模型走向可用智能系统的关键环节：模型先学会预测海量文本，再通过指令、偏好和任务反馈被塑造成更会回答问题、遵循约束、完成复杂任务的助手。</p><p>2022 年的 InstructGPT 论文把监督微调、奖励模型和 PPO 强化学习串成清晰流程，说明人类反馈可以显著改善指令遵循与可用性。FLAN 等工作则展示，大规模指令微调能提升模型对新任务的泛化。到 2024-2025 年，强化学习进一步被用于鼓励模型生成更长、更可验证的推理轨迹。因此，这一页承担的不是“规模定律”本身，而是解释预训练增益放缓后，智能提升为什么转向后训练、反馈和推理过程。</p>",
+      "en": "<p>Large-model capability does not come only from pretraining. As high-quality text data grew more slowly and training experiments became increasingly expensive, simply expanding pretraining faced clearer marginal-return limits. Post-training became the bridge from foundation models to usable intelligent systems: a model first learns to predict massive text, then is shaped by instructions, preferences, and task feedback into an assistant that follows constraints and completes complex tasks.</p><p>The 2022 InstructGPT paper linked supervised fine-tuning, reward modeling, and PPO reinforcement learning into a clear pipeline, showing that human feedback could substantially improve instruction following and usefulness. FLAN-style work showed that large-scale instruction tuning improves generalization to new tasks. By 2024-2025, reinforcement learning was also used to encourage longer and more verifiable reasoning traces. This page therefore does not treat scaling laws as a standalone event; it explains why, after pretraining gains slowed, capability growth shifted toward post-training, feedback, and reasoning processes.</p>"
+    },
+    "emphasis": [
+      "connectionism-revival",
+      "foundation-models",
+      "post-training"
+    ],
+    "visualModules": [],
+    "assetIds": [
+      "asset-2022-post-training-instruction-tuning-ppt",
+      "asset-2022-post-training-pipeline",
+      "asset-2022-post-training-rlhf-ppt",
+      "asset-2022-post-training-research-institutions",
+      "asset-2022-post-training-intelligence-audio-zh-original-v1",
+      "asset-2022-post-training-intelligence-audio-en-v1"
+    ],
+    "overviewImageAssetId": "asset-2022-post-training-pipeline",
+    "sourceIds": [
+      "source-instructgpt-paper",
+      "source-flan-paper",
+      "source-deepseek-r1-paper",
+      "source-stanford-ai-index-2025",
+      "source-ppt-slide-43-instruction-tuning",
+      "source-ppt-slide-44-rlhf"
+    ],
+    "claimIds": [
+      "claim-post-training-shapes-foundation-models",
+      "claim-reinforcement-learning-extends-reasoning"
+    ],
+    "commentarySections": [
+      {
+        "id": "background",
+        "label": {
+          "zh": "背景解读",
+          "en": "Background"
+        },
+        "html": {
+          "zh": "预训练把大量世界知识和语言模式压入参数，但它不自动保证模型会按人类希望的方式回答、拒答、推理或调用工具。当前前沿模型的训练成本和高质量数据供给也让“继续堆预训练”变得更难单独解释能力提升。",
+          "en": "Pretraining stores broad language patterns and world knowledge in parameters, but it does not automatically make a model answer, refuse, reason, or use tools in the way people want. The cost of frontier training and the supply of high-quality data also make continued pretraining harder to use as the only explanation for capability gains."
+        },
+        "sourceIds": [
+          "source-stanford-ai-index-2025"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "指令微调把任务格式和回答习惯教给模型；基于反馈的强化学习则把偏好、约束和可用性转化为训练信号。到了推理模型阶段，强化学习还可以奖励更长的探索过程，使模型在解题时形成可检查的中间步骤。",
+          "en": "Instruction tuning teaches the model task formats and response habits, while reinforcement learning from feedback turns preferences, constraints, and usefulness into training signals. In reasoning-model work, reinforcement learning can also reward longer exploration processes, giving the model more checkable intermediate steps while solving problems."
+        },
+        "sourceIds": [
+          "source-instructgpt-paper",
+          "source-flan-paper",
+          "source-deepseek-r1-paper"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把后训练视为基础模型走向 ChatGPT 式产品和推理模型的关键分水岭。它把连接主义的规模化表示学习，推进为可通过反馈、任务和互动持续塑形的智能系统工程。",
+          "en": "Experts generally treat post-training as a key boundary between foundation models and ChatGPT-style products or reasoning models. It turns connectionist representation learning at scale into intelligent-system engineering that can be shaped by feedback, tasks, and interaction."
+        },
+        "sourceIds": [
+          "source-instructgpt-paper",
+          "source-deepseek-r1-paper"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "按用户口径新增：规模定律不独立成页，后训练页吸收预训练增益放缓的背景，并覆盖指令微调与强化学习。",
+        "en": "Added per user direction: scaling laws are not a standalone page; this post-training page absorbs the slowing-pretraining-gains background and covers instruction tuning plus reinforcement learning."
+      }
+    },
+    "category": {
+      "en": "Foundation Models, Post-Training, and Agents",
+      "zh": "基础模型、后训练与智能体"
+    },
+    "figures": [
+      {
+        "figureId": "research-institutions",
+        "role": {
+          "en": "Post-training methods and frontier model R&D organizations",
+          "zh": "后训练方法与前沿模型研发机构"
+        },
+        "avatarAssetId": "asset-2022-post-training-research-institutions"
+      }
+    ],
+    "photos": [],
+    "quote": {
+      "en": "\"Training language models to follow instructions with human feedback\"",
+      "zh": "\"用人类反馈训练语言模型遵循指令\""
+    },
+    "quoteMeta": {
+      "speaker": {
+        "en": "Long Ouyang et al.",
+        "zh": "欧阳龙等"
+      },
+      "workTitle": {
+        "en": "Training language models to follow instructions with human feedback",
+        "zh": "用人类反馈训练语言模型遵循指令"
+      },
+      "workAuthors": {
+        "en": "Long Ouyang et al., arXiv, 2022",
+        "zh": "欧阳龙等，arXiv，2022"
+      },
+      "sourceLabel": {
+        "en": "InstructGPT arXiv paper page",
+        "zh": "InstructGPT arXiv 论文页面"
+      },
+      "sourceUrl": "https://arxiv.org/abs/2203.02155"
+    },
+    "quotePage": {
+      "en": "InstructGPT paper",
+      "zh": "InstructGPT 论文"
+    },
+    "quoteAttribution": {
+      "en": "<em>Training language models to follow instructions with human feedback</em>, Long Ouyang et al., arXiv, 2022",
+      "zh": "《用人类反馈训练语言模型遵循指令》，欧阳龙等，arXiv，2022"
+    },
+    "location": {
+      "name": {
+        "en": "Global AI Labs",
+        "zh": "全球 AI 实验室"
+      },
+      "country": {
+        "en": "Global",
+        "zh": "全球"
+      },
+      "coordinates": [
+        37.7749,
+        -122.4194
+      ]
+    }
   }
 }

@@ -3,6 +3,7 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
+const { loadMediaStorageConfig, resolveMediaStorage } = require('./media-storage');
 
 const ROOT = path.resolve(__dirname, '..');
 const ARCHIVE_EVENTS = path.join(ROOT, 'archive', 'events');
@@ -31,16 +32,20 @@ function readJson(file) {
 
 function collectArchiveAssets() {
     const refs = [];
+    const mediaStorageConfig = loadMediaStorageConfig(ROOT);
     if (!fs.existsSync(ARCHIVE_EVENTS)) return refs;
     for (const eventId of fs.readdirSync(ARCHIVE_EVENTS)) {
         const file = path.join(ARCHIVE_EVENTS, eventId, 'assets.json');
         if (!fs.existsSync(file)) continue;
         const assets = readJson(file);
         for (const asset of assets) {
+            const resolvedStorage =
+                asset.type === 'audio' ? resolveMediaStorage(asset, { config: mediaStorageConfig }) : null;
             refs.push({
                 eventId,
                 assetId: asset.id,
-                path: asset.path,
+                path:
+                    asset.path || (resolvedStorage && (resolvedStorage.publicUrl || resolvedStorage.sourcePath)) || '',
                 role: asset.role,
                 type: asset.type,
                 hasCaption: Boolean(asset.caption && asset.caption.zh && asset.caption.en),
@@ -61,7 +66,9 @@ function main() {
         refsByPath.get(ref.path).push(ref);
     }
 
-    const missing = refs.filter((ref) => !fs.existsSync(path.join(ROOT, ref.path)));
+    const missing = refs.filter(
+        (ref) => ref.path && !/^https?:\/\//i.test(ref.path) && !fs.existsSync(path.join(ROOT, ref.path))
+    );
     const referenced = files.filter((file) => refsByPath.has(file));
     const unreferenced = files.filter((file) => !refsByPath.has(file));
     const duplicated = [...refsByPath.entries()]

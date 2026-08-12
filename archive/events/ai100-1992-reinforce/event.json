@@ -51,5 +51,312 @@
       "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
       "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "en": "Williams's REINFORCE",
+      "zh": "Williams 的 REINFORCE"
+    },
+    "displayDescription": {
+      "en": "<p>Reinforcement-learning agents needed a direct way to improve stochastic policies from delayed rewards without differentiating through the environment. Williams developed a family of likelihood-ratio updates that became known as REINFORCE.</p><p>The algorithm increases the log-probability of sampled actions in proportion to the return they receive. This produces an unbiased policy-gradient estimate, although its variance can be high without baselines or other variance reduction. Experts generally regard REINFORCE as the foundational Monte Carlo policy-gradient algorithm. Modern policy optimization, language-model reinforcement learning, and differentiable sampling methods still build on its score-function estimator.</p>",
+      "zh": "<p>强化学习智能体需要一种无需对环境求导、仅依据延迟奖励就能直接改进随机策略的方法。Williams 提出了一组似然比更新算法，后来统称为 REINFORCE。</p><p>算法按采样动作获得的回报大小，提高该动作对数概率。这样可得到无偏的策略梯度估计，但如果没有基线或其他降方差方法，估计方差可能很高。专家通常把 REINFORCE 视为蒙特卡洛策略梯度的奠基算法。现代策略优化、语言模型强化学习和可微采样方法仍建立在其得分函数估计器之上。</p>"
+    },
+    "emphasis": [
+      "benchcouncil-canonical-2026-07-30",
+      "source-reviewed"
+    ],
+    "visual": "configuredPaper",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning",
+          "zh": "用于连接主义强化学习的简单统计梯度跟随算法"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed Williams's REINFORCE achievement.",
+          "zh": "BenchCouncil 主表中Williams 的 REINFORCE成就的主要资料。"
+        },
+        "url": "https://doi.org/10.1007/BF00992696",
+        "source": "https://doi.org/10.1007/BF00992696",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-1992-reinforce-portrait",
+      "asset-1992-reinforce-explainer",
+      "asset-ai100-1992-reinforce-audio-zh-original-v1",
+      "asset-ai100-1992-reinforce-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-1992-reinforce-primary",
+      "source-1992-reinforce-secondary",
+      "source-benchcouncil-ai100-catalog",
+      "source-1992-reinforce-portrait"
+    ],
+    "claimIds": [
+      "claim-1992-reinforce-membership",
+      "claim-1992-reinforce-description"
+    ],
+    "quizId": "ai100-1992-reinforce-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Reinforcement-learning agents needed a direct way to improve stochastic policies from delayed rewards without differentiating through the environment. Williams developed a family of likelihood-ratio updates that became known as REINFORCE.",
+          "zh": "强化学习智能体需要一种无需对环境求导、仅依据延迟奖励就能直接改进随机策略的方法。Williams 提出了一组似然比更新算法，后来统称为 REINFORCE。"
+        },
+        "sourceIds": [
+          "source-1992-reinforce-primary",
+          "source-benchcouncil-ai100-catalog"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The algorithm increases the log-probability of sampled actions in proportion to the return they receive. This produces an unbiased policy-gradient estimate, although its variance can be high without baselines or other variance reduction.",
+          "zh": "算法按采样动作获得的回报大小，提高该动作对数概率。这样可得到无偏的策略梯度估计，但如果没有基线或其他降方差方法，估计方差可能很高。"
+        },
+        "sourceIds": [
+          "source-1992-reinforce-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally regard REINFORCE as the foundational Monte Carlo policy-gradient algorithm. Modern policy optimization, language-model reinforcement learning, and differentiable sampling methods still build on its score-function estimator.",
+          "zh": "专家通常把 REINFORCE 视为蒙特卡洛策略梯度的奠基算法。现代策略优化、语言模型强化学习和可微采样方法仍建立在其得分函数估计器之上。"
+        },
+        "sourceIds": [
+          "source-1992-reinforce-primary",
+          "source-1992-reinforce-secondary"
+        ]
+      }
+    ],
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "ronald-williams",
+        "role": {
+          "en": "REINFORCE author",
+          "zh": "REINFORCE 作者"
+        },
+        "avatarAssetId": "asset-1992-reinforce-portrait"
+      }
+    ],
+    "photos": [],
+    "quote": {
+      "en": "“Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning”",
+      "zh": "“用于连接主义强化学习的简单统计梯度跟随算法”"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning",
+        "zh": "用于连接主义强化学习的简单统计梯度跟随算法"
+      },
+      "workAuthors": {
+        "en": "See primary publication record",
+        "zh": "见主论文记录"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1007/BF00992696"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning</em>",
+      "zh": "《用于连接主义强化学习的简单统计梯度跟随算法》"
+    },
+    "achievement": {
+      "area": {
+        "en": "Reinforcement Learning",
+        "zh": "强化学习"
+      },
+      "method": {
+        "en": "Return-weighted log-policy gradient",
+        "zh": "回报加权的对数策略梯度"
+      },
+      "artifact": {
+        "en": "Monte Carlo policy-gradient estimator",
+        "zh": "蒙特卡洛策略梯度估计器"
+      },
+      "material": {
+        "en": "Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning, companion source, and BenchCouncil catalog record",
+        "zh": "《用于连接主义强化学习的简单统计梯度跟随算法》、配套资料与 BenchCouncil 清单记录"
+      },
+      "demo": {
+        "en": "Follow the four stages and compare how changing one stage affects the final monte carlo policy-gradient estimator.",
+        "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的蒙特卡洛策略梯度估计器。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Stage 1",
+            "zh": "阶段 1"
+          },
+          "text": {
+            "en": "Sample trajectory",
+            "zh": "采样轨迹"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 2",
+            "zh": "阶段 2"
+          },
+          "text": {
+            "en": "Measure return",
+            "zh": "计算回报"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 3",
+            "zh": "阶段 3"
+          },
+          "text": {
+            "en": "Weight log-probabilities",
+            "zh": "加权动作对数概率"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 4",
+            "zh": "阶段 4"
+          },
+          "text": {
+            "en": "Increase rewarded actions",
+            "zh": "提高高回报动作概率"
+          }
+        }
+      ],
+      "relatedAchievements": [],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Sample trajectory",
+          "zh": "采样轨迹"
+        },
+        {
+          "en": "Measure return",
+          "zh": "计算回报"
+        },
+        {
+          "en": "Weight log-probabilities",
+          "zh": "加权动作对数概率"
+        },
+        {
+          "en": "Increase rewarded actions",
+          "zh": "提高高回报动作概率"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1992-1992-reinforce_process.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "BenchCouncil lists Williams's REINFORCE and cites Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning as a defining publication.",
+            "zh": "BenchCouncil 将Williams 的 REINFORCE列入主表，并把《用于连接主义强化学习的简单统计梯度跟随算法》作为代表性资料。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+            "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Primary publication",
+            "zh": "主论文"
+          },
+          "title": {
+            "en": "Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning",
+            "zh": "用于连接主义强化学习的简单统计梯度跟随算法"
+          },
+          "description": {
+            "en": "Primary source for the BenchCouncil-listed Williams's REINFORCE achievement.",
+            "zh": "BenchCouncil 主表中Williams 的 REINFORCE成就的主要资料。"
+          },
+          "url": "https://doi.org/10.1007/BF00992696",
+          "source": "https://doi.org/10.1007/BF00992696",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "Northeastern University",
+        "zh": "东北大学"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        42.3398,
+        -71.0892
+      ]
+    }
   }
 }

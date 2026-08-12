@@ -68,5 +68,329 @@
       "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
       "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "zh": "ReLU",
+      "en": "ReLU"
+    },
+    "displayDescription": {
+      "zh": "<p>1969 年，福岛邦彦在日本 NHK 广播科学研究实验室的多层神经网络研究中使用了后来被称为 ReLU 的整流响应，当时将相关单元称为“模拟阈值元件”。这一思路在当时没有成为主流训练方法，长期未被广泛采用。</p><p>到 2010—2011 年，维诺德·奈尔与杰弗里·辛顿，以及泽维尔·格洛罗、安托万·博尔德和约书亚·本吉奥等研究者通过系统实验重新验证了整流单元的价值。ReLU 的正半轴不饱和，有助于缓解深层网络中的梯度衰减；大量零输出可形成稀疏激活，max 运算也十分高效。此后它成为 CNN 等深度网络的标准选择，并被原始 Transformer 的前馈网络采用；今天部分模型也会改用 GELU 或门控激活函数。</p>",
+      "en": "<p>In 1969, Kunihiko Fukushima at Japan's NHK Broadcasting Science Research Laboratories used a rectifying response in a multilayer neural network, describing the related units as \"analog threshold elements.\" This is now recognized as an early use of what became known as ReLU, but the idea did not become a mainstream training method at the time and was not widely adopted for decades.</p><p>In 2010–2011, Vinod Nair and Geoffrey Hinton, followed by Xavier Glorot, Antoine Bordes, and Yoshua Bengio, systematically demonstrated the value of rectified units. ReLU's non-saturating positive branch supports gradient flow, exact-zero outputs encourage sparse activations, and its max operation is computationally inexpensive. It subsequently became a standard choice in CNNs and other deep networks and was used in the feed-forward layers of the original Transformer; many newer models also use alternatives such as GELU or gated activations.</p>"
+    },
+    "emphasis": [
+      "batch-migration",
+      "source-review-needed"
+    ],
+    "visual": "relu",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "PMLR",
+          "zh": "PMLR"
+        },
+        "title": {
+          "en": "Deep Sparse Rectifier Neural Networks",
+          "zh": "深度稀疏整流神经网络"
+        },
+        "description": {
+          "en": "Article connecting rectifiers to deep sparse neural networks.",
+          "zh": "将整流函数与深度稀疏神经网络联系起来的文章。"
+        },
+        "url": "https://proceedings.mlr.press/v15/glorot11a.html",
+        "source": "https://proceedings.mlr.press/v15/glorot11a.html",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-ai100-1969-relu-kunihiko-fukushima-candc",
+      "asset-1969-relu-activation",
+      "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02",
+      "asset-ai100-1969-relu-audio-zh-original-v1",
+      "asset-ai100-1969-relu-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-fukushima-analog-threshold-elements",
+      "source-deep-sparse-rectifier-neural-networks",
+      "source-rectified-linear-units-improve-restricted-boltzmann-machines",
+      "source-yoshua-bengio-profile-at-mila",
+      "source-candc-2021-kunihiko-fukushima"
+    ],
+    "claimIds": [
+      "claim-legacy-achievement-summary",
+      "claim-legacy-description"
+    ],
+    "quizId": "ai100-1969-relu-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "1969 年，福岛邦彦在 NHK 的多层神经网络研究中使用了后来被称为 ReLU 的整流响应，但这一思路当时没有得到广泛采用。2010—2011 年的系统实验重新验证了整流单元在深层网络中的训练优势，并推动其成为常用激活函数。",
+          "en": "In 1969, Kunihiko Fukushima used a rectifying response in an NHK multilayer neural-network study, but the idea was not widely adopted at the time. Systematic experiments in 2010–2011 re-established the training advantages of rectified units and helped make them a standard activation choice."
+        },
+        "sourceIds": [
+          "source-fukushima-analog-threshold-elements",
+          "source-rectified-linear-units-improve-restricted-boltzmann-machines",
+          "source-deep-sparse-rectifier-neural-networks"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "负响应被截断为零，正响应则线性通过。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+          "en": "Negative responses are clipped to zero while positive responses pass through linearly. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+        },
+        "sourceIds": [
+          "source-deep-sparse-rectifier-neural-networks"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 ReLU 视为一个简单工程选择，但它的影响远大于公式本身。它的长期影响在于非饱和激活模式帮助深层网络更可靠地训练，并成为现代架构的默认组件。",
+          "en": "Experts generally treat ReLU as a simple engineering choice whose impact was larger than its formula suggests. Its long-term legacy is the non-saturating activation pattern that helped deep networks train reliably and became a default component of modern architectures."
+        },
+        "sourceIds": [
+          "source-deep-sparse-rectifier-neural-networks"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+        "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+      }
+    },
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "kunihiko-fukushima",
+        "role": {
+          "en": "Early neural vision researcher",
+          "zh": "早期神经视觉研究者"
+        },
+        "avatarAssetId": "asset-ai100-1969-relu-kunihiko-fukushima-candc"
+      },
+      {
+        "figureId": "xavier-glorot",
+        "role": {
+          "en": "ReLU co-author",
+          "zh": "ReLU 共同作者"
+        }
+      },
+      {
+        "figureId": "yoshua-bengio",
+        "role": {
+          "en": "Co-author of later deep rectifier analysis",
+          "zh": "后续深度整流函数分析共同作者"
+        },
+        "avatarAssetId": "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02"
+      }
+    ],
+    "photos": [],
+    "quote": {
+      "en": "\"rectified linear units\"",
+      "zh": "\"整流线性单元\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Deep Sparse Rectifier Neural Networks",
+        "zh": "深度稀疏整流神经网络"
+      },
+      "workAuthors": {
+        "en": "Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
+        "zh": "泽维尔·格洛罗、安托万·博尔德、约书亚·本吉奥，AISTATS，2011"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://proceedings.mlr.press/v15/glorot11a.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>Deep Sparse Rectifier Neural Networks</em>, Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
+      "zh": "《深度稀疏整流神经网络》, 泽维尔·格洛罗、安托万·博尔德、约书亚·本吉奥，AISTATS，2011"
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Piecewise-linear activation",
+        "zh": "分段线性激活"
+      },
+      "artifact": {
+        "en": "Rectified activation function",
+        "zh": "整流激活函数"
+      },
+      "material": {
+        "en": "Neural vision and deep rectifier literature",
+        "zh": "神经视觉与深度整流函数文献"
+      },
+      "demo": {
+        "en": "Negative responses are clipped to zero while positive responses pass through linearly.",
+        "zh": "负响应被截断为零，正响应则线性通过。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Non-saturation",
+            "zh": "非饱和"
+          },
+          "text": {
+            "en": "Positive activations keep gradients from shrinking as quickly.",
+            "zh": "正激活让梯度不那么容易快速缩小。"
+          }
+        },
+        {
+          "label": {
+            "en": "Sparse Activity",
+            "zh": "稀疏活动"
+          },
+          "text": {
+            "en": "Many neurons output exactly zero, simplifying representation.",
+            "zh": "许多神经元输出正好为零，从而简化表示。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Neocognitron",
+          "zh": "新认知机"
+        },
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        },
+        {
+          "en": "Deep learning",
+          "zh": "深度学习"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Japan",
+          "zh": "日本"
+        },
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Input",
+          "zh": "输入"
+        },
+        {
+          "en": "max(0, x)",
+          "zh": "max(0, x)"
+        },
+        {
+          "en": "Sparse activation",
+          "zh": "稀疏激活"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Neural vision and deep rectifier literature",
+            "zh": "神经视觉与深度整流函数文献"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Negative responses are clipped to zero while positive responses pass through linearly.",
+            "zh": "负响应被截断为零，正响应则线性通过。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "PMLR",
+            "zh": "PMLR"
+          },
+          "title": {
+            "en": "Deep Sparse Rectifier Neural Networks",
+            "zh": "深度稀疏整流神经网络"
+          },
+          "description": {
+            "en": "Article connecting rectifiers to deep sparse neural networks.",
+            "zh": "将整流函数与深度稀疏神经网络联系起来的文章。"
+          },
+          "url": "https://proceedings.mlr.press/v15/glorot11a.html",
+          "source": "https://proceedings.mlr.press/v15/glorot11a.html",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open article",
+            "zh": "打开文章"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "NHK Broadcasting Science Research Laboratories, University of Montreal",
+        "zh": "日本放送协会广播科学研究实验室、蒙特利尔大学"
+      },
+      "country": {
+        "en": "Japan, Canada",
+        "zh": "日本、加拿大"
+      },
+      "coordinates": [
+        35.6762,
+        139.6503
+      ]
+    }
   }
 }

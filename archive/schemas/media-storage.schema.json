@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "media-storage.schema.json",
+  "title": "Archive media storage profiles",
+  "type": "object",
+  "required": ["schemaVersion", "defaultProfiles", "profiles"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "defaultProfiles": {
+      "type": "object",
+      "properties": {
+        "audio": {
+          "$ref": "shared.schema.json#/$defs/archiveId"
+        }
+      },
+      "additionalProperties": {
+        "$ref": "shared.schema.json#/$defs/archiveId"
+      }
+    },
+    "profiles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "mediaType",
+          "provider",
+          "bucket",
+          "publicUrlPrefix",
+          "objectKeyPrefix",
+          "cacheControl"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "shared.schema.json#/$defs/archiveId"
+          },
+          "mediaType": {
+            "type": "string",
+            "minLength": 1
+          },
+          "provider": {
+            "type": "string",
+            "minLength": 1
+          },
+          "endpoint": {
+            "type": "string",
+            "format": "uri"
+          },
+          "region": {
+            "type": "string"
+          },
+          "bucket": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publicUrlPrefix": {
+            "type": "string",
+            "format": "uri"
+          },
+          "objectKeyPrefix": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cacheControl": {
+            "type": "string",
+            "minLength": 1
+          },
+          "manifestKey": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

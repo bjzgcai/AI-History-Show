@@ -76,5 +76,319 @@
       "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
       "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "zh": "深蓝",
+      "en": "Deep Blue"
+    },
+    "displayDescription": {
+      "zh": "<p>IBM 的 Deep Blue 在 1997 年六局比赛中以 3.5 比 2.5 击败卫冕世界冠军加里·卡斯帕罗夫，成为首个在标准比赛条件下战胜现任国际象棋世界冠军的计算机系统。它利用并行 alpha-beta 搜索、国际象棋专用评估函数、开局库、残局知识和定制芯片，每秒检查大量候选局面。</p><p>Deep Blue 的成功来自搜索规模、硬件和专家知识的系统工程，而不是像现代系统那样从自我对弈中学习通用表征。它并不意味着获得一般智能，却成为公众理解机器能力的重要转折点，并展示了在规则明确的复杂领域中，计算、启发式搜索和领域知识可以共同超过顶尖人类表现。</p>",
+      "en": "<p>IBM's Deep Blue defeated reigning world champion Garry Kasparov by 3.5–2.5 in a six-game match in 1997, becoming the first computer system to defeat a sitting chess world champion under standard match conditions. It combined parallel alpha-beta search, chess-specific evaluation functions, opening books, endgame knowledge, and custom chips to examine enormous numbers of candidate positions.</p><p>Deep Blue's strength came from systems engineering across search scale, hardware, and expert knowledge, not from learning general representations through self-play in the modern sense. It did not constitute general intelligence, but it became a major public turning point and showed how computation, heuristic search, and domain knowledge could jointly exceed elite human performance in a complex, precisely defined field.</p>"
+    },
+    "emphasis": [
+      "batch-migration",
+      "source-review-needed"
+    ],
+    "visual": "deepblue",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Artificial Intelligence",
+          "zh": "人工智能"
+        },
+        "title": {
+          "en": "Deep Blue journal article",
+          "zh": "深蓝 期刊论文"
+        },
+        "description": {
+          "en": "AI journal article record on Deep Blue as a chess-playing system.",
+          "zh": "关于 深蓝 国际象棋系统的 AI 期刊记录。"
+        },
+        "url": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+        "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open article record",
+          "zh": "打开论文记录"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-1997-deep-blue-feng-hsiung-hsu",
+      "asset-1997-deep-blue-search-tree",
+      "asset-1997-deep-blue-chip-board",
+      "asset-1997-deep-blue-murray-campbell",
+      "asset-1997-deep-blue-game-6-animation",
+      "asset-1997-deep-blue-audio-zh-original-v1",
+      "asset-1997-deep-blue-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-deep-blue-system-paper",
+      "source-murray-campbell-ibm-research",
+      "source-mastering-the-game-computer-history-museum",
+      "source-ibm100-deep-blue",
+      "source-feng-hsiung-hsu-chm-portrait"
+    ],
+    "claimIds": [
+      "claim-legacy-achievement-summary",
+      "claim-legacy-description"
+    ],
+    "quizId": "1997-deep-blue-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "计算机国际象棋几十年来依靠搜索、评估和硬件进步。深蓝 把这条路线带到全球舞台。",
+          "en": "Computer chess had advanced for decades through better search, evaluation, and hardware. Deep Blue made that lineage visible on a global stage."
+        },
+        "sourceIds": [
+          "source-murray-campbell-ibm-research"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。 关键机制是专用国际象棋搜索硬件，它把资料线索与可见的演示行为连接起来。",
+          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge. The key mechanism is Specialized chess search hardware, which links the source material to the visible demo behavior."
+        },
+        "sourceIds": [
+          "source-murray-campbell-ibm-research"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把深蓝视为专用搜索、局面评估和高性能游戏 AI 的标志性成果。它的长期影响在于塑造了公众对 AI 里程碑的期待，并成为 AlphaGo 等后续游戏系统的参照点。",
+          "en": "Experts generally treat Deep Blue as a landmark in specialized search, evaluation, and high-performance game AI. Its long-term legacy is shaping public expectations for AI milestones and serving as a reference point for later game systems such as AlphaGo."
+        },
+        "sourceIds": [
+          "source-murray-campbell-ibm-research"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+        "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+      }
+    },
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "feng-hsiung-hsu",
+        "role": {
+          "en": "Chief architect; custom VLSI and hardware design",
+          "zh": "首席架构师；定制 VLSI 与硬件设计"
+        },
+        "avatarAssetId": "asset-1997-deep-blue-feng-hsiung-hsu"
+      },
+      {
+        "figureId": "murray-campbell",
+        "role": {
+          "en": "Evaluation-function and search-strategy lead",
+          "zh": "评估函数与搜索策略负责人"
+        },
+        "avatarAssetId": "asset-1997-deep-blue-murray-campbell"
+      },
+      {
+        "figureId": "a-joseph-hoane-jr",
+        "role": {
+          "en": "Parallel-search software lead",
+          "zh": "并行搜索软件负责人"
+        }
+      },
+      {
+        "figureId": "jerry-brody",
+        "role": {
+          "en": "Hardware integration and match operations",
+          "zh": "硬件集成与比赛现场运行"
+        }
+      }
+    ],
+    "photos": [],
+    "quote": {
+      "en": "\"Specialized chess search hardware\"",
+      "zh": "\"专用国际象棋搜索硬件\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Deep Blue journal article",
+        "zh": "深蓝期刊论文"
+      },
+      "workAuthors": {
+        "en": "Murray Campbell",
+        "zh": "默里·坎贝尔"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Game AI / Deep Blue",
+      "zh": "BenchCouncil AI100：博弈 AI / 深蓝"
+    },
+    "quoteAttribution": {
+      "en": "<em>Deep Blue journal article</em>, Murray Campbell",
+      "zh": "《深蓝期刊论文》, 默里·坎贝尔"
+    },
+    "achievement": {
+      "area": {
+        "en": "Game AI",
+        "zh": "博弈 AI"
+      },
+      "method": {
+        "en": "Specialized chess search hardware",
+        "zh": "专用国际象棋搜索硬件"
+      },
+      "artifact": {
+        "en": "World-champion chess match system",
+        "zh": "世界冠军对弈系统"
+      },
+      "material": {
+        "en": "IBM Research profile and Deep Blue histories",
+        "zh": "IBM 研究院 人物资料与 深蓝 史料"
+      },
+      "demo": {
+        "en": "Search millions of chess positions with evaluation hardware",
+        "zh": "用评估硬件搜索数百万棋局位置"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Alpha-Beta Search",
+            "zh": "Alpha-Beta 搜索"
+          },
+          "text": {
+            "en": "A pruning method that avoids searching branches that cannot change the decision.",
+            "zh": "一种剪枝方法，避免搜索不会改变决策的分支。"
+          }
+        },
+        {
+          "label": {
+            "en": "Evaluation Function",
+            "zh": "评估函数"
+          },
+          "text": {
+            "en": "Chess knowledge assigns a score to positions when search stops.",
+            "zh": "搜索停止时，棋类知识为局面赋分。"
+          }
+        },
+        {
+          "label": {
+            "en": "Custom Hardware",
+            "zh": "定制硬件"
+          },
+          "text": {
+            "en": "Special chips accelerated chess move generation and evaluation.",
+            "zh": "专用芯片加速走法生成和局面评估。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlphaGo",
+          "zh": "AlphaGo"
+        },
+        {
+          "en": "Game AI",
+          "zh": "博弈 AI"
+        },
+        {
+          "en": "Search",
+          "zh": "搜索"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "New York, United States",
+          "zh": "美国纽约州"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Generate moves",
+          "zh": "生成走法"
+        },
+        {
+          "en": "Prune branches",
+          "zh": "剪枝分支"
+        },
+        {
+          "en": "Score end leaves",
+          "zh": "评估叶节点"
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Artificial Intelligence",
+            "zh": "人工智能"
+          },
+          "title": {
+            "en": "Deep Blue journal article",
+            "zh": "深蓝 期刊论文"
+          },
+          "description": {
+            "en": "AI journal article record on Deep Blue as a chess-playing system.",
+            "zh": "关于 深蓝 国际象棋系统的 AI 期刊记录。"
+          },
+          "url": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+          "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+          },
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open article record",
+            "zh": "打开论文记录"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "IBM",
+        "zh": "IBM"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        41.2108,
+        -73.8035
+      ]
+    }
   }
 }

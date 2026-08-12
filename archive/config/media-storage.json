@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "defaultProfiles": {
+    "audio": "ai-history-audio-releases"
+  },
+  "profiles": [
+    {
+      "id": "ai-history-audio-releases",
+      "mediaType": "audio",
+      "provider": "aliyun-oss",
+      "endpoint": "[REDACTED_OSS_ENDPOINT]",
+      "region": "cn-beijing",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "publicUrlPrefix": "https://media.sciencearena.cn/audio/ai-history/releases/",
+      "objectKeyPrefix": "audio/ai-history/releases/",
+      "cacheControl": "public, max-age=31536000, immutable",
+      "manifestKey": "audio/ai-history/manifests/audio-manifest.json"
+    }
+  ]
+}

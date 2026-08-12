@@ -62,5 +62,339 @@
       "en": "Completed event-specific research on 2026-08-03. The exact BenchCouncil title, order, contributor prefix, institution, country and blank official fields were preserved. All listed people were checked against primary authorship evidence; portrait searches were completed and one identity-matched, attributed external-reference image was selected.",
       "zh": "于 2026-08-03 完成事件专项研究。准确保留 BenchCouncil 的标题、顺序、人物前缀、机构、国家与官方空字段。所有列出人物均通过原始作者证据核对；肖像检索已完成，选择一张身份匹配且保留署名的外部参考图片。"
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "en": "ControlNet",
+      "zh": "ControlNet"
+    },
+    "displayDescription": {
+      "en": "<p>ControlNet adds spatial conditioning to a pretrained text-to-image diffusion model without discarding the original model’s learned capability. A trainable copy of the encoder is connected to a locked backbone through zero-initialized convolution layers, allowing edge maps, depth, pose, segmentation and other controls to guide generation.</p><p>The zero-convolution design starts with no disturbance to the pretrained network and gradually learns how much control information to inject.</p>",
+      "zh": "<p>ControlNet 在不丢弃原有生成能力的前提下，为预训练文生图扩散模型加入空间条件。一个可训练的编码器副本通过零初始化卷积连接到锁定主干，使边缘、深度、姿态、分割等控制信号能够引导生成。</p><p>零卷积设计在训练开始时不会扰动预训练网络，随后逐步学习应注入多少控制信息。</p>"
+    },
+    "emphasis": [
+      "benchcouncil-annual-2022-2023",
+      "official-row-94"
+    ],
+    "visual": "configuredPaper",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "ICCV Open Access",
+          "zh": "ICCV Open Access"
+        },
+        "title": {
+          "en": "Adding Conditional Control to Text-to-Image Diffusion Models",
+          "zh": "《Adding Conditional Control to Text-to-Image Diffusion Models》"
+        },
+        "description": {
+          "en": "The conference page provides the accepted paper and evidence for the locked backbone, trainable copy and zero-convolution design.",
+          "zh": "会议页面提供接收稿，以及锁定主干、可训练副本和零卷积设计的证据。"
+        },
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_Adding_Conditional_Control_to_Text-to-Image_Diffusion_Models_ICCV_2023_paper.html",
+        "source": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_Adding_Conditional_Control_to_Text-to-Image_Diffusion_Models_ICCV_2023_paper.html",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+        },
+        "usage": {
+          "en": "Primary technical or official release evidence",
+          "zh": "主要技术或官方发布证据"
+        },
+        "action": {
+          "en": "Open ICCV paper page",
+          "zh": "打开 ICCV 论文页面"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-annual-094-controlnet-portrait-maneesh-agrawala",
+      "asset-annual-094-controlnet-official-full-architecture",
+      "asset-annual-094-controlnet-official-core-block",
+      "asset-ai100-annual-2022-2023-094-controlnet-audio-zh-original-v1",
+      "asset-ai100-annual-2022-2023-094-controlnet-audio-en-v1",
+      "asset-annual-094-controlnet-record"
+    ],
+    "overviewImageAssetId": "asset-annual-094-controlnet-portrait-maneesh-agrawala",
+    "sourceIds": [
+      "source-primary-record",
+      "source-openalex-record",
+      "source-benchcouncil-annual",
+      "source-annual-094-controlnet-portrait-maneesh-agrawala",
+      "source-arxiv-paper",
+      "source-controlnet-repository",
+      "source-maneesh-profile",
+      "source-controlnet-figure-1",
+      "source-controlnet-official-full-architecture",
+      "source-controlnet-official-core-block"
+    ],
+    "claimIds": [
+      "claim-annual-membership",
+      "claim-publication-record",
+      "claim-contributor-record",
+      "claim-locked-copy",
+      "claim-zero-convolution"
+    ],
+    "quizId": "ai100-annual-2022-2023-094-controlnet-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Text-to-image diffusion models produced strong images but gave creators limited control over exact geometry, pose or layout. ControlNet addressed this gap by adding spatial conditions to an already trained model instead of requiring a separate generator for every control type.",
+          "zh": "文生图扩散模型已经能够生成高质量图像，但创作者难以精确控制几何、姿态与布局。ControlNet 通过给现有预训练模型加入空间条件解决这一缺口，而不必为每种控制类型重新训练独立生成器。"
+        },
+        "sourceIds": [
+          "source-primary-record",
+          "source-arxiv-paper"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The architecture locks the original diffusion encoder and creates a trainable copy that receives an edge map, depth map, pose or other condition. Zero-initialized convolutions connect the branches, so the system starts equivalent to the pretrained model and learns control signals gradually.",
+          "zh": "架构锁定原始扩散编码器，并创建接收边缘、深度、姿态或其他条件的可训练副本。零初始化卷积连接两个分支，使系统从等价于预训练模型的状态出发，逐步学习控制信号。"
+        },
+        "sourceIds": [
+          "source-primary-record",
+          "source-arxiv-paper"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat ControlNet as a standard interface for controllable diffusion because it preserves a strong base model while adding reusable spatial guidance. Its influence appears across creative tools and later adapters that separate content generation from pose, depth, edges, segmentation or layout control.",
+          "zh": "专家通常把 ControlNet 视为可控扩散的标准接口，因为它在保留强大基础模型的同时加入可复用空间引导。它广泛影响创作工具与后续适配器，使内容生成能够与姿态、深度、边缘、分割或布局控制分离。"
+        },
+        "sourceIds": [
+          "source-primary-record",
+          "source-arxiv-paper"
+        ]
+      }
+    ],
+    "category": {
+      "en": "BenchCouncil AI100 (2022-2023)",
+      "zh": "BenchCouncil AI100（2022-2023）"
+    },
+    "figures": [
+      {
+        "figureId": "lvmin-zhang",
+        "role": {
+          "en": "First author of the ControlNet paper",
+          "zh": "ControlNet 论文第一作者"
+        }
+      },
+      {
+        "figureId": "maneesh-agrawala",
+        "role": {
+          "en": "Co-author of the ControlNet paper",
+          "zh": "ControlNet 论文共同作者"
+        },
+        "avatarAssetId": "asset-annual-094-controlnet-portrait-maneesh-agrawala"
+      }
+    ],
+    "quote": {
+      "en": "Adding conditional control to text-to-image diffusion models",
+      "zh": "《Adding conditional control to text-to-image diffusion models》"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Adding conditional control to text-to-image diffusion models",
+        "zh": "《Adding conditional control to text-to-image diffusion models》"
+      },
+      "workAuthors": {
+        "en": "Lvmin Zhang, Maneesh Agrawala",
+        "zh": "张吕敏、马尼什·阿格拉瓦拉"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_Adding_Conditional_Control_to_Text-to-Image_Diffusion_Models_ICCV_2023_paper.html"
+    },
+    "quotePage": {
+      "en": "Primary publication record",
+      "zh": "原始论文记录"
+    },
+    "quoteAttribution": {
+      "en": "Adding conditional control to text-to-image diffusion models",
+      "zh": "《Adding conditional control to text-to-image diffusion models》"
+    },
+    "achievement": {
+      "area": {
+        "en": "Diffusion Model Application",
+        "zh": "扩散模型应用"
+      },
+      "method": {
+        "en": "A trainable control branch attached to a locked diffusion model",
+        "zh": "连接到锁定扩散模型的可训练控制分支"
+      },
+      "artifact": {
+        "en": "ControlNet spatial conditioning architecture",
+        "zh": "ControlNet 空间条件架构"
+      },
+      "material": {
+        "en": "Primary publication or official release evidence, implementation materials and the original local explainer",
+        "zh": "主论文或官方发布证据、实现材料与本地原创解释图"
+      },
+      "demo": {
+        "en": "Follow the four-stage path and compare what enters, what is learned and what the system produces.",
+        "zh": "沿四阶段路径观察输入、学习内容与系统输出。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Condition",
+            "zh": "条件"
+          },
+          "text": {
+            "en": "Edges, depth, pose or segmentation",
+            "zh": "边缘、深度、姿态或分割"
+          }
+        },
+        {
+          "label": {
+            "en": "Zero Conv",
+            "zh": "零卷积"
+          },
+          "text": {
+            "en": "Starts without disturbing the base model",
+            "zh": "从不扰动基础模型的状态开始"
+          }
+        },
+        {
+          "label": {
+            "en": "Reuse",
+            "zh": "复用"
+          },
+          "text": {
+            "en": "One pretrained generator supports many controls",
+            "zh": "一个预训练生成器支持多种控制"
+          }
+        }
+      ],
+      "relatedAchievements": [],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Pose / edge / depth",
+          "zh": "姿态 / 边缘 / 深度"
+        },
+        {
+          "en": "Trainable encoder copy",
+          "zh": "可训练编码器副本"
+        },
+        {
+          "en": "Zero convolutions",
+          "zh": "零卷积"
+        },
+        {
+          "en": "Locked diffusion model",
+          "zh": "锁定扩散模型"
+        }
+      ],
+      "demoImage": "resources/images/benchcouncil-ai100-annual/annual-094-controlnet_record.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Technical cue",
+            "zh": "技术线索"
+          },
+          "text": {
+            "en": "Add spatial guidance while preserving the pretrained diffusion backbone",
+            "zh": "这张图以四个阶段解释：姿态 / 边缘 / 深度、可训练编码器副本、零卷积、锁定扩散模型。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Trace the arrows, then identify which stage reuses a pretrained component and which stage learns new information.",
+            "zh": "沿箭头逐步查看，并判断哪个阶段复用预训练组件、哪个阶段学习新信息。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "ICCV Open Access",
+            "zh": "ICCV Open Access"
+          },
+          "title": {
+            "en": "Adding Conditional Control to Text-to-Image Diffusion Models",
+            "zh": "《Adding Conditional Control to Text-to-Image Diffusion Models》"
+          },
+          "description": {
+            "en": "The conference page provides the accepted paper and evidence for the locked backbone, trainable copy and zero-convolution design.",
+            "zh": "会议页面提供接收稿，以及锁定主干、可训练副本和零卷积设计的证据。"
+          },
+          "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_Adding_Conditional_Control_to_Text-to-Image_Diffusion_Models_ICCV_2023_paper.html",
+          "source": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_Adding_Conditional_Control_to_Text-to-Image_Diffusion_Models_ICCV_2023_paper.html",
+          "license": {
+            "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+          },
+          "usage": {
+            "en": "Primary technical or official release evidence",
+            "zh": "主要技术或官方发布证据"
+          },
+          "action": {
+            "en": "Open ICCV paper page",
+            "zh": "打开 ICCV 论文页面"
+          }
+        }
+      ],
+      "annualRecord": {
+        "officialOrder": 94,
+        "area": "Diffusion Model Application",
+        "work": "ControlNet",
+        "publication": "Adding conditional control to text-to-image diffusion models",
+        "citation": "410",
+        "contributors": "Lvmin Zhang, Maneesh Agrawala",
+        "institution": "Stanford University",
+        "country": "USA",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+      }
+    },
+    "location": {
+      "name": {
+        "en": "Stanford University",
+        "zh": "Stanford University"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        37.0902,
+        -95.7129
+      ]
+    },
+    "review": {
+      "status": "reviewed",
+      "notes": {
+        "en": "Generated from official annual row 94; source spellings and blank fields are intentionally preserved.",
+        "zh": "依据官方年度表第 94 行生成；有意保留来源拼写与空白字段。"
+      }
+    }
   }
 }

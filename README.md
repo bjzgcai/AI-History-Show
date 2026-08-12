@@ -68,6 +68,12 @@ The exhibition ships with built-in Chinese/English support:
 
 When authoring content, use bilingual objects such as `{ zh: "...", en: "..." }` in Archive event and variant JSON. The Archive compiler resolves these records into the final `milestones-data.js`.
 
+## Audio And Video Policy
+
+Event narration uses the Chinese and English audio assets selected from Archive `assets.json`, with published playback URLs supplied by object storage. Default presentations no longer retain the legacy `videoUrl` or `resources.videos` configuration, and the unified event detail does not present general narration videos.
+
+Video remains available only for independent interactive visual modules such as game-state evolution. Playback is implemented in `shared/video-player.js`; the page loads that script only when video content is actually needed, and video elements receive their real `src` only when they approach the viewport or the visitor starts playback.
+
 ## Storylines
 
 The main entry includes a storyline selector dialog in the top bar. The generated runtime contains 194 Archive milestones across four source storylines. The unified map merges these storylines without duplicate event cards:

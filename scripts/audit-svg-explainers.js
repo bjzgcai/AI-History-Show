@@ -3,6 +3,7 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
+const { resolveEffectivePresentation } = require('./archive-presentation');
 
 const ROOT = path.resolve(__dirname, '..');
 const ARCHIVE_DIR = path.join(ROOT, 'archive');
@@ -69,8 +70,15 @@ function buildInventory() {
         for (const ref of storyline.events || []) {
             if (ref.enabled === false) continue;
             const bundle = loadEventBundle(ref.eventId);
-            const variantFile = path.join(bundle.eventDir, 'variants', `${ref.variant}.json`);
-            const variant = readJson(variantFile);
+            const resolved = resolveEffectivePresentation({
+                root: ROOT,
+                eventDir: bundle.eventDir,
+                event: bundle.event,
+                eventId: ref.eventId,
+                storylineId: storyline.id,
+                ref
+            });
+            const variant = resolved.presentation;
             const assetMap = new Map(bundle.assets.map((asset) => [asset.id, asset]));
             const sourceMap = new Map(bundle.sources.map((source) => [source.id, source]));
 
@@ -158,8 +166,8 @@ function buildInventory() {
                         zh: localized(variant.displayTitle || bundle.event.title, 'zh'),
                         en: localized(variant.displayTitle || bundle.event.title, 'en')
                     },
-                    variant: ref.variant,
-                    variantFile: path.relative(ROOT, variantFile),
+                    variant: ref.variant || storyline.id,
+                    variantFile: resolved.overrideFile || path.relative(ROOT, path.join(bundle.eventDir, 'event.json')),
                     visual: variant.visual || '',
                     demoImage:
                         variant.achievement && typeof variant.achievement === 'object'

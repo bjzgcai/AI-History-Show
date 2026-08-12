@@ -59,5 +59,319 @@
       "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
       "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "en": "Squeeze-and-Excitation Networks",
+      "zh": "挤压与激励网络"
+    },
+    "displayDescription": {
+      "en": "<p>Convolutional networks usually treated channels as a fixed stack even though different channels carry different semantic signals. Squeeze-and-Excitation networks asked whether a model could learn to recalibrate those channels for each input.</p><p>A squeeze operation summarizes each channel globally, and a small excitation network predicts channel-wise gates. Multiplying those gates back into the feature map lets the network amplify informative channels and suppress weaker ones. Experts generally regard channel attention as a simple but durable architectural idea, and SE blocks became a common addition to CNN backbones. The work also helped establish attention as a mechanism that could operate beyond sequence models.</p>",
+      "zh": "<p>传统卷积网络通常把通道视为固定堆叠，但不同通道承载的语义信号并不相同。挤压与激励网络提出，模型是否可以针对每个输入动态重标定各通道的重要性。</p><p>挤压操作对每个通道进行全局汇总，小型激励网络再预测逐通道门控权重。把这些权重乘回特征图后，网络可以增强有用通道并抑制较弱通道。专家通常认为通道注意力是一种简单而持久的架构思想，SE 模块后来成为 CNN 骨干网络中的常见组件。该成果也推动了“注意力不仅适用于序列模型”的认识。</p>"
+    },
+    "emphasis": [
+      "benchcouncil-canonical-2026-07-30",
+      "source-reviewed"
+    ],
+    "visual": "configuredPaper",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "Squeeze-and-Excitation Networks",
+          "zh": "挤压与激励网络"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed Squeeze-and-Excitation Networks achievement.",
+          "zh": "BenchCouncil 主表中挤压与激励网络成就的主要资料。"
+        },
+        "url": "https://arxiv.org/abs/1709.01507",
+        "source": "https://arxiv.org/abs/1709.01507",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-2018-squeeze-excitation-portrait",
+      "asset-2018-squeeze-excitation-explainer",
+      "asset-ai100-2018-squeeze-excitation-audio-zh-original-v1",
+      "asset-ai100-2018-squeeze-excitation-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-2018-squeeze-excitation-primary",
+      "source-2018-squeeze-excitation-secondary",
+      "source-benchcouncil-ai100-catalog",
+      "source-2018-squeeze-excitation-portrait"
+    ],
+    "claimIds": [
+      "claim-2018-squeeze-excitation-membership",
+      "claim-2018-squeeze-excitation-description"
+    ],
+    "quizId": "ai100-2018-squeeze-excitation-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Convolutional networks usually treated channels as a fixed stack even though different channels carry different semantic signals. Squeeze-and-Excitation networks asked whether a model could learn to recalibrate those channels for each input.",
+          "zh": "传统卷积网络通常把通道视为固定堆叠，但不同通道承载的语义信号并不相同。挤压与激励网络提出，模型是否可以针对每个输入动态重标定各通道的重要性。"
+        },
+        "sourceIds": [
+          "source-2018-squeeze-excitation-primary",
+          "source-benchcouncil-ai100-catalog"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A squeeze operation summarizes each channel globally, and a small excitation network predicts channel-wise gates. Multiplying those gates back into the feature map lets the network amplify informative channels and suppress weaker ones.",
+          "zh": "挤压操作对每个通道进行全局汇总，小型激励网络再预测逐通道门控权重。把这些权重乘回特征图后，网络可以增强有用通道并抑制较弱通道。"
+        },
+        "sourceIds": [
+          "source-2018-squeeze-excitation-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally regard channel attention as a simple but durable architectural idea, and SE blocks became a common addition to CNN backbones. The work also helped establish attention as a mechanism that could operate beyond sequence models.",
+          "zh": "专家通常认为通道注意力是一种简单而持久的架构思想，SE 模块后来成为 CNN 骨干网络中的常见组件。该成果也推动了“注意力不仅适用于序列模型”的认识。"
+        },
+        "sourceIds": [
+          "source-2018-squeeze-excitation-primary",
+          "source-2018-squeeze-excitation-secondary"
+        ]
+      }
+    ],
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "jie-hu",
+        "role": {
+          "en": "Squeeze-and-excitation lead author",
+          "zh": "挤压与激励网络主要作者"
+        },
+        "avatarAssetId": "asset-2018-squeeze-excitation-portrait"
+      },
+      {
+        "figureId": "gang-sun",
+        "role": {
+          "en": "Squeeze-and-excitation co-author",
+          "zh": "挤压与激励网络共同作者"
+        }
+      }
+    ],
+    "photos": [],
+    "quote": {
+      "en": "“Squeeze-and-Excitation Networks”",
+      "zh": "“挤压与激励网络”"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Squeeze-and-Excitation Networks",
+        "zh": "挤压与激励网络"
+      },
+      "workAuthors": {
+        "en": "See primary publication record",
+        "zh": "见主论文记录"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1709.01507"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>Squeeze-and-Excitation Networks</em>",
+      "zh": "《挤压与激励网络》"
+    },
+    "achievement": {
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Global channel summary followed by learned channel gates",
+        "zh": "全局通道汇总与可学习通道门控"
+      },
+      "artifact": {
+        "en": "Squeeze-and-Excitation block",
+        "zh": "挤压与激励模块"
+      },
+      "material": {
+        "en": "Squeeze-and-Excitation Networks, companion source, and BenchCouncil catalog record",
+        "zh": "《挤压与激励网络》、配套资料与 BenchCouncil 清单记录"
+      },
+      "demo": {
+        "en": "Follow the four stages and compare how changing one stage affects the final squeeze-and-excitation block.",
+        "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的挤压与激励模块。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Stage 1",
+            "zh": "阶段 1"
+          },
+          "text": {
+            "en": "Feature channels",
+            "zh": "特征通道"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 2",
+            "zh": "阶段 2"
+          },
+          "text": {
+            "en": "Global squeeze",
+            "zh": "全局挤压"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 3",
+            "zh": "阶段 3"
+          },
+          "text": {
+            "en": "Learn channel weights",
+            "zh": "学习通道权重"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 4",
+            "zh": "阶段 4"
+          },
+          "text": {
+            "en": "Recalibrated features",
+            "zh": "重标定特征"
+          }
+        }
+      ],
+      "relatedAchievements": [],
+      "relatedRegions": [
+        {
+          "en": "China and United Kingdom",
+          "zh": "中国与英国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Feature channels",
+          "zh": "特征通道"
+        },
+        {
+          "en": "Global squeeze",
+          "zh": "全局挤压"
+        },
+        {
+          "en": "Learn channel weights",
+          "zh": "学习通道权重"
+        },
+        {
+          "en": "Recalibrated features",
+          "zh": "重标定特征"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2018-2018-squeeze-excitation_process.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "BenchCouncil lists Squeeze-and-Excitation Networks and cites Squeeze-and-Excitation Networks as a defining publication.",
+            "zh": "BenchCouncil 将挤压与激励网络列入主表，并把《挤压与激励网络》作为代表性资料。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+            "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Primary publication",
+            "zh": "主论文"
+          },
+          "title": {
+            "en": "Squeeze-and-Excitation Networks",
+            "zh": "挤压与激励网络"
+          },
+          "description": {
+            "en": "Primary source for the BenchCouncil-listed Squeeze-and-Excitation Networks achievement.",
+            "zh": "BenchCouncil 主表中挤压与激励网络成就的主要资料。"
+          },
+          "url": "https://arxiv.org/abs/1709.01507",
+          "source": "https://arxiv.org/abs/1709.01507",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "Momenta, University of Oxford",
+        "zh": "Momenta、牛津大学"
+      },
+      "country": {
+        "en": "China, United Kingdom",
+        "zh": "中国、英国"
+      },
+      "coordinates": [
+        31.2304,
+        121.4737
+      ]
+    }
   }
 }
