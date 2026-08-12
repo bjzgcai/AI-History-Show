@@ -78,5 +78,45 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-chinook-boston-1994-pdn-checkerboard",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "廷斯利对局集中的 Boston 1994 第 2 局",
+      "en": "Boston 1994 Game 2 in the Tinsley game collection"
+    },
+    "url": "https://github.com/eygilbert/CheckerBoard/blob/691ab495/games/tinsley.pdn",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "固定 Git 提交中的 PDN；记录廷斯利执黑、Chinook 执白，48 回合后和棋。",
+      "en": "PDN at a pinned Git commit recording Tinsley as Black and Chinook as White, drawn after 48 moves."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-chinook-boston-1994-pdn-raven",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "Boston 1994 第 2 局独立托管副本",
+      "en": "Independently hosted Boston 1994 Game 2 copy"
+    },
+    "url": "https://github.com/bcorfman/raven-checkers/blob/da7708ce/training/tinsley.pdn",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "第二个固定 Git 提交中的 PDN；规范化后的 96 个半回合与 CheckerBoard 副本逐着一致。",
+      "en": "A second PDN at a pinned Git commit; all 96 normalized plies match the CheckerBoard copy."
+    },
+    "purpose": "alternate-access"
   }
 ]

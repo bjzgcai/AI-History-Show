@@ -180,26 +180,41 @@ def _parse_point(value: str, board_size: int) -> tuple[int, int] | None:
 
 
 def extract_game(text: str) -> tuple[int, list[Move]]:
-    """Parse board size and B/W move sequence from an SGF string."""
+    """Parse the first SGF main variation with sgfmill."""
 
-    nodes = parse_sgf_main_line(text)
-    board_size = _parse_board_size(nodes[0])
+    try:
+        from sgfmill import sgf
+    except ImportError as exc:
+        raise RuntimeError(
+            "SGF parsing requires sgfmill. Install dependencies with: "
+            "python -m pip install -r scripts/game-evolution/requirements-render.txt"
+        ) from exc
+    try:
+        game = sgf.Sgf_game.from_bytes(text.encode("utf-8"))
+    except Exception as exc:
+        raise SGFParseError(f"Cannot parse SGF: {exc}") from exc
+    board_size = game.get_size()
+    if board_size < 2 or board_size > 52:
+        raise SGFParseError(f"Unsupported board size {board_size}; expected 2..52.")
     moves: list[Move] = []
 
-    for node in nodes:
-        move_props = [color for color in ("B", "W") if color in node]
-        if not move_props:
+    letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    for node in game.get_main_sequence():
+        color_name, point = node.get_move()
+        if color_name is None:
             continue
-        if len(move_props) > 1:
-            raise SGFParseError("A node contains both B and W moves.")
-
-        color_name = move_props[0]
-        raw = node[color_name][0]
+        if point is None:
+            raw = ""
+            display_point = None
+        else:
+            row, col = point
+            raw = f"{letters[col]}{letters[board_size - row - 1]}"
+            display_point = (col, board_size - row - 1)
         moves.append(
             Move(
                 number=len(moves) + 1,
-                color=1 if color_name == "B" else 2,
-                point=_parse_point(raw, board_size),
+                color=1 if color_name == "b" else 2,
+                point=display_point,
                 raw=raw,
             )
         )
@@ -301,7 +316,7 @@ def _load_font(size: int):
     except ImportError as exc:
         raise RuntimeError(
             "Rendering requires Pillow. Install dependencies with: "
-            "python -m pip install -r requirements-game-video.txt"
+            "python -m pip install -r scripts/game-evolution/requirements-render.txt"
         ) from exc
 
     for name in ("arial.ttf", "DejaVuSans.ttf"):
@@ -325,7 +340,7 @@ def draw_board_state(
     except ImportError as exc:
         raise RuntimeError(
             "Rendering requires Pillow. Install dependencies with: "
-            "python -m pip install -r requirements-game-video.txt"
+            "python -m pip install -r scripts/game-evolution/requirements-render.txt"
         ) from exc
 
     if canvas_size < 320:

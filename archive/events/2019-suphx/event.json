@@ -128,6 +128,44 @@
           "en": "Source card for the gaming AI branch",
           "zh": "AI 棋牌分支的资料卡片"
         }
+      },
+      {
+        "type": "paperCaseVideo",
+        "caseId": "suphx-figure-13-safe-tile-case",
+        "completeGameReplay": false,
+        "videoAssetId": "asset-2019-suphx-figure-13-case-video",
+        "posterAssetId": "asset-2019-suphx-figure-13-case-poster",
+        "recordFormat": "paper figure",
+        "recordLabel": {
+          "zh": "Suphx 论文第 22 页图 13 的单一决策状态",
+          "en": "Single decision state in Figure 13 on page 22 of the Suphx paper"
+        },
+        "title": {
+          "zh": "保留安全牌：论文局部案例动画",
+          "en": "Keeping a safe tile: partial paper-case animation"
+        },
+        "description": {
+          "zh": "动画只重绘论文明确披露的牌面、Suphx 实际弃牌和论文提出的假设性后续解释；没有完整牌谱、后续真实动作或最终胜负。",
+          "en": "The animation redraws only the disclosed tiles, Suphx's actual discard, and the paper's hypothetical later-state explanation; no complete log, subsequent real actions, or final outcome is available."
+        },
+        "disclaimer": {
+          "zh": "论文局部案例，不是完整牌局回放。",
+          "en": "Partial paper case, not a complete-game replay."
+        },
+        "license": {
+          "zh": "本地原创牌面重绘；不复用论文截图像素。",
+          "en": "Original local tile redraw; no paper-image pixels are reused."
+        },
+        "usage": {
+          "zh": "用于解释 Suphx 在进攻速度与未来防守弹性之间的取舍。",
+          "en": "Used to explain Suphx's tradeoff between attack speed and future defensive flexibility."
+        },
+        "duration": {
+          "zh": "20 秒",
+          "en": "20 seconds"
+        },
+        "fps": 24,
+        "generator": "scripts/game-evolution/render_paper_case.py"
       }
     ],
     "assetIds": [

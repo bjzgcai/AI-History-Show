@@ -88,6 +88,39 @@
           "en": "Open Science record",
           "zh": "打开 《科学》 记录"
         }
+      },
+      {
+        "type": "gameEvolutionVideo",
+        "recordId": "chinook-tinsley-boston-1994-game-2",
+        "videoAssetId": "asset-1994-chinook-boston-game-2-video",
+        "posterAssetId": "asset-1994-chinook-boston-game-2-poster",
+        "recordFormat": "pdn",
+        "recordLabel": {
+          "zh": "两个固定提交逐着一致的 Boston 1994 第 2 局完整 PDN 主线",
+          "en": "Complete Boston 1994 Game 2 PDN main line matched across two pinned copies"
+        },
+        "title": {
+          "zh": "廷斯利对 Chinook 第 2 局演化",
+          "en": "Tinsley versus Chinook, Game 2 evolution"
+        },
+        "description": {
+          "zh": "按美式跳棋规则合法重放并原创重绘全部 96 个半回合，展示双方如何经过连续交换进入各剩 4 子的和棋残局。",
+          "en": "A legal American Checkers replay and original redraw of all 96 plies, showing how repeated exchanges led to a drawn ending with four pieces per side."
+        },
+        "license": {
+          "zh": "本地原创棋盘重绘；仅使用经双源核对的走子事实，不复用第三方画面。",
+          "en": "Original local board redraw using move facts verified by two sources; no third-party frames are reused."
+        },
+        "usage": {
+          "zh": "用于 AI 棋牌分支的可拖动真实对局演示。",
+          "en": "Interactive verified-game replay for the gaming AI storyline."
+        },
+        "duration": {
+          "zh": "54 秒",
+          "en": "54 seconds"
+        },
+        "fps": 24,
+        "generator": "scripts/game-evolution/render_game_record.py"
       }
     ],
     "assetIds": [
@@ -102,7 +135,9 @@
       "source-chinook-project-home",
       "source-checkers-is-solved",
       "source-chinook-publications",
-      "source-jonathan-schaeffer-portrait"
+      "source-jonathan-schaeffer-portrait",
+      "source-chinook-boston-1994-pdn-checkerboard",
+      "source-chinook-boston-1994-pdn-raven"
     ],
     "claimIds": [
       "claim-legacy-achievement-summary",

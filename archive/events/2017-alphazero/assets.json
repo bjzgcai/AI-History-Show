@@ -202,5 +202,68 @@
       "storyline:gaming-ai"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-2017-alphazero-top10-game-3-video",
+    "type": "video",
+    "path": "resources/videos/game-evolution/2017-alphazero/alphazero-stockfish-2018-top10-game-3.mp4",
+    "role": "game-evolution-video",
+    "caption": {
+      "zh": "AlphaZero 对 Stockfish 精选第 3 局演化视频",
+      "en": "AlphaZero versus Stockfish selected Game 3 evolution video"
+    },
+    "subcaption": {
+      "zh": "依据 DeepMind 官方档案与固定提交镜像一致的 97 个半回合原创重绘。",
+      "en": "Original redraw of 97 plies matched between the official DeepMind archive and a pinned mirror."
+    },
+    "sourceIds": [
+      "source-alphazero-official-top20-archive",
+      "source-alphazero-top10-pgn-mentor-fish",
+      "source-science-paper"
+    ],
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目原创棋盘重绘；仅使用经核验的走子事实，不复用第三方画面。",
+        "en": "Original board redraw by this project using verified move facts only; no third-party frames are reused."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2017-alphazero-top10-game-3-poster",
+    "type": "image",
+    "path": "resources/images/game-evolution/2017-alphazero/alphazero-stockfish-2018-top10-game-3.png",
+    "role": "game-evolution-poster",
+    "caption": {
+      "zh": "AlphaZero 精选第 3 局第 37 个半回合局面",
+      "en": "AlphaZero selected Game 3 position after ply 37"
+    },
+    "subcaption": {
+      "zh": "19.Bh3 后王翼进攻形成时的原创棋盘重绘。",
+      "en": "Original board redraw as the kingside attack forms after 19.Bh3."
+    },
+    "sourceIds": [
+      "source-alphazero-official-top20-archive",
+      "source-alphazero-top10-pgn-mentor-fish"
+    ],
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目原创 PNG 棋盘重绘。",
+        "en": "Original PNG board redraw by this project."
+      }
+    },
+    "displayUsage": {
+      "zh": "作为对局演化视频的延迟加载海报。",
+      "en": "Lazy-loading poster for the game-evolution video."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
   }
 ]
