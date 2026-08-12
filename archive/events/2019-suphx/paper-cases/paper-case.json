@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "suphx-figure-13-safe-tile-case",
+  "eventId": "2019-suphx",
+  "caseType": "partial-paper-case",
+  "completeGameReplay": false,
+  "outcomeKnown": false,
+  "title": {
+    "zh": "Suphx 图 13：保留安全牌的局部案例",
+    "en": "Suphx Figure 13: keeping a safe tile"
+  },
+  "evidence": {
+    "sourceId": "source-suphx-arxiv-paper",
+    "url": "https://arxiv.org/abs/2003.13590",
+    "localPath": "resources/papers/2019-suphx-mahjong-deep-rl.pdf",
+    "sha256": "474d682fee9fe320c92cb2cdddf0839209f148147268d5da5442b2dc3db4d16f",
+    "page": 22,
+    "figure": "Figure 13",
+    "checkedAt": "2026-08-12"
+  },
+  "case": {
+    "visibleHand": ["4m", "5m", "6m", "2p", "3p", "3p", "4p", "5p", "8p", "8p", "7s", "7s", "G", "N"],
+    "actualDiscard": "7s",
+    "actualDiscardIndex": 10,
+    "retainedSafeTile": "N",
+    "documentedFacts": [
+      {
+        "zh": "论文图 13 展示状态 st，并以红框标出当时可安全打出的北风。",
+        "en": "Figure 13 shows state st and marks the North tile as safe to discard at that state."
+      },
+      {
+        "zh": "论文称多数人类牌手会打出红框北风，但 Suphx 实际打出蓝框七索并保留北风。",
+        "en": "The paper says most human players would discard the red-boxed North tile, while Suphx discards the blue-boxed seven of bamboo and keeps North."
+      },
+      {
+        "zh": "论文用一个假设性后续状态解释：若其他玩家意外立直，保留的北风可作为安全牌，而不必拆散接近和牌的面子或对子。",
+        "en": "The paper explains with a hypothetical later state: if another player unexpectedly declares Riichi, the retained North tile can be discarded safely without breaking a meld or pair close to a winning hand."
+      }
+    ],
+    "limits": {
+      "zh": "论文只披露这一决策状态及其策略解释，没有给出完整牌谱、后续真实动作或最终胜负。",
+      "en": "The paper discloses this decision state and its strategic explanation, not a complete log, subsequent real actions, or the final outcome."
+    }
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "number": 1,
+      "durationSeconds": 2.5,
+      "heading": { "zh": "证据边界", "en": "Evidence boundary" },
+      "body": {
+        "zh": "只重绘论文图 13 披露的单一状态，不补造完整牌局。",
+        "en": "Only the single state disclosed in Figure 13 is redrawn; no full game is reconstructed."
+      }
+    },
+    {
+      "id": "candidates",
+      "number": 2,
+      "durationSeconds": 3.5,
+      "heading": { "zh": "两个候选动作", "en": "Two candidate actions" },
+      "body": {
+        "zh": "红框北风当下安全；蓝框七索是 Suphx 实际选择。",
+        "en": "The red-boxed North is currently safe; the blue-boxed seven of bamboo is Suphx's actual choice."
+      }
+    },
+    {
+      "id": "decision",
+      "number": 3,
+      "durationSeconds": 3.5,
+      "heading": { "zh": "Suphx 的取舍", "en": "Suphx's tradeoff" },
+      "body": {
+        "zh": "打出七索可能减慢成牌，却为未来防守保留北风。",
+        "en": "Discarding seven of bamboo may slow the hand, but preserves North for future defense."
+      }
+    },
+    {
+      "id": "discard",
+      "number": 4,
+      "durationSeconds": 3.0,
+      "heading": { "zh": "论文记录的实际动作", "en": "Documented action" },
+      "body": {
+        "zh": "蓝框七索进入牌河；北风仍留在手中。",
+        "en": "The blue-boxed seven of bamboo enters the discard pool; North remains in hand."
+      }
+    },
+    {
+      "id": "future",
+      "number": 5,
+      "durationSeconds": 4.0,
+      "heading": { "zh": "论文的假设性解释", "en": "Paper's hypothetical explanation" },
+      "body": {
+        "zh": "若对手随后意外立直，Suphx 仍可打出保留的安全北风。",
+        "en": "If an opponent unexpectedly declares Riichi later, Suphx can still discard the retained safe North."
+      }
+    },
+    {
+      "id": "result",
+      "number": 6,
+      "durationSeconds": 3.5,
+      "heading": { "zh": "案例结论", "en": "Case conclusion" },
+      "body": {
+        "zh": "这个局部案例说明 Suphx 会用短期进攻速度换取未来攻防弹性；它不是完整牌局回放。",
+        "en": "This partial case shows Suphx trading short-term attack speed for future flexibility; it is not a complete-game replay."
+      }
+    }
+  ],
+  "render": {
+    "videoPath": "resources/videos/game-evolution/2019-suphx/suphx-figure-13-safe-tile-case.mp4",
+    "posterPath": "resources/images/game-evolution/2019-suphx/suphx-figure-13-safe-tile-case.png",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "durationSeconds": 20,
+    "posterScene": "decision",
+    "maxBytes": 5242880
+  },
+  "archive": {
+    "videoAssetId": "asset-2019-suphx-figure-13-case-video",
+    "posterAssetId": "asset-2019-suphx-figure-13-case-poster"
+  }
+}

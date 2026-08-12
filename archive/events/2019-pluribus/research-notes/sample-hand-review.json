@@ -1,0 +1,39 @@
+{
+  "reviewedAt": "2026-08-12",
+  "question": {
+    "zh": "Pluribus 论文补充材料是否包含可制作完整回放的样例手牌？",
+    "en": "Does the Pluribus supplementary material contain a sample hand suitable for a complete replay?"
+  },
+  "primaryRecord": {
+    "doi": "10.1126/science.aay2400",
+    "candidateSupplementFilename": "aay2400_brown_sm.pdf",
+    "candidateOfficialUrl": "https://www.science.org/doi/suppl/10.1126/science.aay2400/suppl_file/aay2400_brown_sm.pdf"
+  },
+  "checks": [
+    {
+      "target": "Science article and supplementary-file endpoints",
+      "result": "The DOI resolves to the Science article. Candidate current and legacy supplementary endpoints returned a Cloudflare HTTP 403 response, so the filename and file contents were not treated as independently verified."
+    },
+    {
+      "target": "Crossref, OpenAlex, Unpaywall, Semantic Scholar, PubMed, Europe PMC, DataCite, Zenodo, GitHub code search, Common Crawl and public web archives",
+      "result": "No independently retrievable complete hand-history file or mirror was found."
+    },
+    {
+      "target": "Meta AI and Carnegie Mellon contemporary reports",
+      "result": "The reports corroborate the experiment and system, but no complete replayable hand history was located."
+    }
+  ],
+  "requiredForVerifiedReplay": [
+    "all relevant private cards",
+    "seat and button positions",
+    "starting stacks",
+    "ordered actions and bet sizes on every street",
+    "complete board",
+    "pot and final outcome"
+  ],
+  "decision": {
+    "status": "evidence-gap",
+    "zh": "当前没有取得满足完整回放要求的原始手牌记录，因此不生成 Pluribus 真实对局视频，也不把概念图伪装成样例手牌。后续只有在取得并核验补充 PDF 中的完整动作序列后才升级为回放。",
+    "en": "No raw hand record meeting the complete-replay requirements was obtained, so no verified Pluribus replay is generated and the conceptual explainer is not presented as a sample hand. Upgrade only after a complete action sequence from the supplement is obtained and verified."
+  }
+}
