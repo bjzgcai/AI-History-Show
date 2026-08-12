@@ -47,15 +47,15 @@ function selectByIds(items, ids) {
 function resolveVisualModules(modules, assetsById) {
     return (Array.isArray(modules) ? modules : []).map((module) => {
         const resolved = cloneJson(module);
-        if (!resolved || resolved.type !== 'gameEvolutionVideo') return resolved;
+        if (!resolved || !['gameEvolutionVideo', 'paperCaseVideo'].includes(resolved.type)) return resolved;
 
         const videoAsset = assetsById.get(resolved.videoAssetId);
         const posterAsset = assetsById.get(resolved.posterAssetId);
         if (!videoAsset || videoAsset.type !== 'video') {
-            throw new Error(`Missing game evolution video asset: ${resolved.videoAssetId || '<missing>'}`);
+            throw new Error(`Missing dynamic evidence video asset: ${resolved.videoAssetId || '<missing>'}`);
         }
         if (!posterAsset || !['image', 'svg', 'gif'].includes(posterAsset.type)) {
-            throw new Error(`Missing game evolution poster asset: ${resolved.posterAssetId || '<missing>'}`);
+            throw new Error(`Missing dynamic evidence poster asset: ${resolved.posterAssetId || '<missing>'}`);
         }
         return {
             ...resolved,
