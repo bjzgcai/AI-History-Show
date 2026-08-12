@@ -291,7 +291,6 @@
   {
     "id": "asset-2019-suphx-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://media.sciencearena.cn/audio/ai-history/releases/2019-suphx-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2019-suphx 中文原版科普音频",
@@ -314,24 +313,20 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/2019-suphx-zh-original-v1.mp3",
     "storage": {
-      "provider": "aliyun-oss",
-      "bucket": "zgca-medias",
-      "objectKey": "audio/ai-history/releases/2019-suphx-zh-original-v1.mp3",
+      "profileId": "ai-history-audio-releases",
+      "objectName": "2019-suphx-zh-original-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/gaming-all-storyline-zh-original-v1-2026-08-09/audio/gaming-ai/storyline/zh/12-2019-suphx.mp3",
-      "contentType": "audio/mpeg",
-      "cacheControl": "public, max-age=31536000, immutable"
+      "contentType": "audio/mpeg"
     },
     "usage": [
-      "variant:gaming-ai"
+      "storyline:gaming-ai"
     ],
     "editable": true
   },
   {
     "id": "asset-2019-suphx-audio-en-v1",
     "type": "audio",
-    "path": "https://media.sciencearena.cn/audio/ai-history/releases/2019-suphx-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "2019-suphx 英文科普音频",
@@ -354,17 +349,14 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/2019-suphx-en-v1.mp3",
     "storage": {
-      "provider": "aliyun-oss",
-      "bucket": "zgca-medias",
-      "objectKey": "audio/ai-history/releases/2019-suphx-en-v1.mp3",
+      "profileId": "ai-history-audio-releases",
+      "objectName": "2019-suphx-en-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/gaming-all-storyline-en-original-v1-2026-08-09/audio/gaming-ai/storyline/en/12-2019-suphx.mp3",
-      "contentType": "audio/mpeg",
-      "cacheControl": "public, max-age=31536000, immutable"
+      "contentType": "audio/mpeg"
     },
     "usage": [
-      "variant:gaming-ai"
+      "storyline:gaming-ai"
     ],
     "editable": true
   }

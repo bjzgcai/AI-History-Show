@@ -59,5 +59,313 @@
       "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
       "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "zh": "局部线性嵌入",
+      "en": "Locally Linear Embedding"
+    },
+    "displayDescription": {
+      "zh": "<p>罗维斯和索尔在 2000 年提出局部线性嵌入，假设非线性流形在足够小的邻域内可以近似为线性。算法先为每个样本寻找近邻，并计算一组重建权重，使该样本能由邻居线性组合得到；随后在低维空间中寻找坐标，尽量保持同一组重建权重。</p><p>LLE 不需要显式估计全局距离，也能把弯曲流形展开，同时保留局部邻域关系。它对邻居数量、噪声和采样密度较敏感，且新样本映射和全局几何解释并不直接。其核心贡献是把“局部可重建性”变成非线性降维原则，与 Isomap 共同推动流形学习。</p>",
+      "en": "<p>Sam Roweis and Lawrence Saul introduced locally linear embedding in 2000 with the assumption that a nonlinear manifold is approximately linear in sufficiently small neighborhoods. The algorithm finds neighbors for each sample and computes weights that reconstruct the sample as a linear combination of those neighbors. It then finds low-dimensional coordinates that preserve the same reconstruction weights.</p><p>LLE does not explicitly estimate global distances and can unfold curved manifolds while retaining local neighborhood relationships. It is sensitive to the number of neighbors, noise, and sampling density, and mapping new samples or interpreting global geometry is not automatic. Its central contribution was turning local reconstructability into a principle for nonlinear dimensionality reduction, helping establish manifold learning alongside Isomap.</p>"
+    },
+    "emphasis": [
+      "batch-migration",
+      "source-review-needed"
+    ],
+    "visual": "lle",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Science",
+          "zh": "Science"
+        },
+        "title": {
+          "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+          "zh": "通过局部线性嵌入进行非线性降维"
+        },
+        "description": {
+          "en": "Primary Science paper record for LLE.",
+          "zh": "LLE 的 Science 主论文记录。"
+        },
+        "url": "https://doi.org/10.1126/science.290.5500.2323",
+        "source": "https://doi.org/10.1126/science.290.5500.2323",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-ai100-2000-lle-20010411-snowbird-dsc00680-h-thumb",
+      "asset-2000-lle-neighbor-reconstruction",
+      "asset-ai100-2000-lle-audio-zh-original-v1",
+      "asset-ai100-2000-lle-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-science-article-page",
+      "source-pubmed-record-for-lle",
+      "source-scikit-learn-lle-documentation",
+      "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding"
+    ],
+    "claimIds": [
+      "claim-legacy-achievement-summary",
+      "claim-legacy-description"
+    ],
+    "quizId": "ai100-2000-lle-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "萨姆·罗维斯和劳伦斯·索尔提出局部线性嵌入，这是一种保持局部重建权重的非线性降维算法。LLE 不直接建模全局距离，而是保持每个点可由邻居局部重建。",
+          "en": "Sam Roweis and Lawrence Saul introduced locally linear embedding as a nonlinear dimensionality-reduction algorithm that preserves local reconstruction weights. Instead of modeling global distances directly, LLE keeps each point locally reconstructable from its neighbors."
+        },
+        "sourceIds": [
+          "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "每个点由邻居重建，低维映射保持这些权重。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+          "en": "Each point is reconstructed from neighbors, and the low-dimensional map preserves those weights. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+        },
+        "sourceIds": [
+          "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 LLE 视为与 Isomap 互补的关键流形学习方法。它的长期影响在于说明保持局部重建关系可以在没有显式全局模型的情况下揭示非线性结构。",
+          "en": "Experts generally treat LLE as a key manifold-learning method complementary to Isomap. Its long-term legacy is the idea that preserving local reconstruction relations can reveal nonlinear structure without an explicit global model."
+        },
+        "sourceIds": [
+          "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+        "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+      }
+    },
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "sam-roweis",
+        "role": {
+          "en": "Co-author of LLE",
+          "zh": "LLE 共同作者"
+        },
+        "avatarAssetId": "asset-ai100-2000-lle-20010411-snowbird-dsc00680-h-thumb"
+      },
+      {
+        "figureId": "lawrence-saul",
+        "role": {
+          "en": "Co-author of LLE",
+          "zh": "LLE 共同作者"
+        }
+      }
+    ],
+    "photos": [],
+    "quote": {
+      "en": "\"Nonlinear Dimensionality Reduction by Locally Linear Embedding\"",
+      "zh": "\"通过局部线性嵌入进行非线性降维\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+        "zh": "通过局部线性嵌入进行非线性降维"
+      },
+      "workAuthors": {
+        "en": "Sam T. Roweis and Lawrence K. Saul, Science, 2000",
+        "zh": "萨姆·T·罗维斯、劳伦斯·K·索尔，《Science》，2000"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1126/science.290.5500.2323"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>Nonlinear Dimensionality Reduction by Locally Linear Embedding</em>, Sam T. Roweis and Lawrence K. Saul, Science, 2000",
+      "zh": "《通过局部线性嵌入进行非线性降维》, 萨姆·T·罗维斯、劳伦斯·K·索尔，《Science》，2000"
+    },
+    "achievement": {
+      "area": {
+        "en": "Dimension reduction, Feature extraction",
+        "zh": "降维与特征提取"
+      },
+      "method": {
+        "en": "Neighborhood-preserving embedding",
+        "zh": "保持邻域的嵌入"
+      },
+      "artifact": {
+        "en": "LLE embedding",
+        "zh": "LLE 嵌入"
+      },
+      "material": {
+        "en": "Science paper",
+        "zh": "《Science》论文"
+      },
+      "demo": {
+        "en": "Each point is reconstructed from neighbors, and the low-dimensional map preserves those weights.",
+        "zh": "每个点由邻居重建，低维映射保持这些权重。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Local Reconstruction",
+            "zh": "局部重建"
+          },
+          "text": {
+            "en": "A point is expressed by nearby points.",
+            "zh": "一个点由附近点表示。"
+          }
+        },
+        {
+          "label": {
+            "en": "Global Coordinates",
+            "zh": "全局坐标"
+          },
+          "text": {
+            "en": "Local weights are preserved in a shared map.",
+            "zh": "局部权重在共享地图中保持。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Isomap",
+          "zh": "Isomap"
+        },
+        {
+          "en": "Kernel PCA",
+          "zh": "Kernel PCA"
+        },
+        {
+          "en": "t-SNE",
+          "zh": "t-SNE"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Find neighbors",
+          "zh": "寻找邻居"
+        },
+        {
+          "en": "Reconstruction weights",
+          "zh": "重建权重"
+        },
+        {
+          "en": "Embedding",
+          "zh": "嵌入"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Science paper",
+            "zh": "《Science》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Each point is reconstructed from neighbors, and the low-dimensional map preserves those weights.",
+            "zh": "每个点由邻居重建，低维映射保持这些权重。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Science",
+            "zh": "Science"
+          },
+          "title": {
+            "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+            "zh": "通过局部线性嵌入进行非线性降维"
+          },
+          "description": {
+            "en": "Primary Science paper record for LLE.",
+            "zh": "LLE 的 Science 主论文记录。"
+          },
+          "url": "https://doi.org/10.1126/science.290.5500.2323",
+          "source": "https://doi.org/10.1126/science.290.5500.2323",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "AT&T Labs, University College London",
+        "zh": "AT&T 实验室、伦敦大学学院"
+      },
+      "country": {
+        "en": "United States, United Kingdom",
+        "zh": "美国、英国"
+      },
+      "coordinates": [
+        40.7879,
+        -74.3882
+      ]
+    }
   }
 }

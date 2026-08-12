@@ -460,6 +460,9 @@ try {
     assert.match(adminHtml, /figureAlphabet/);
     assert.match(adminHtml, /eventDisplayActions/);
     assert.match(adminHtml, /openEventDisplayBtn/);
+    assert.match(adminHtml, /inspectEventPresentationBtn/);
+    assert.match(adminHtml, /restorePresentationInheritanceBtn/);
+    assert.match(adminHtml, /eventPresentationPanel/);
     assert.match(adminJs, /api\/archive\/figure-assets/);
     assert.match(adminJs, /api\/archive\/figure-default-avatar/);
     assert.match(adminJs, /groupFigureAssets/);
@@ -485,7 +488,10 @@ try {
     assert.match(adminCss, /\.figure-asset-image\s*{[\s\S]*?position:\s*absolute;[\s\S]*?object-fit:\s*contain;/);
     assert.match(adminJs, /renderFigureEvents/);
     assert.match(adminJs, /buildPresentationEventUrl/);
-    assert.match(adminJs, /api\/archive\/event-display-targets/);
+    assert.match(adminJs, /api\/archive\/event-presentation-targets/);
+    assert.match(adminJs, /api\/archive\/event-presentation-restore-inheritance/);
+    assert.match(adminJs, /restorePresentationInheritance/);
+    assert.match(adminJs, /milestoneId: target\.milestoneId/);
     assert.match(adminJs, /renderEventDisplayActions/);
     assert.match(adminJs, /openFigureDetails/);
     assert.match(adminJs, /data-action="open-figure"/);
@@ -502,6 +508,8 @@ try {
     assert.match(adminServer, /POST \/api\/archive\/figure-asset-merge-preview/);
     assert.match(adminServer, /POST \/api\/archive\/figure-asset-merge/);
     assert.match(adminServer, /GET \/api\/archive\/event-display-targets/);
+    assert.match(adminServer, /GET \/api\/archive\/event-presentation-targets/);
+    assert.match(adminServer, /POST \/api\/archive\/event-presentation-restore-inheritance/);
     assert.match(adminServer, /year: event\.year/);
 
     console.log('PASS Archive figure management service and UI contract');

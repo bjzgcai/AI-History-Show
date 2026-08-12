@@ -4,8 +4,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import prettier from 'prettier';
+import { createRequire } from 'node:module';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+const require = createRequire(import.meta.url);
+const { resolveEffectivePresentation } = require('../archive-presentation');
 const PLAN_PATH = path.join(ROOT, 'resources', 'audio', 'plans', 'ai100-first-40-and-gaming', 'editorial-plan.json');
 const OUTPUT_ROOT = path.join(ROOT, 'resources', 'audio', 'scripts', 'ai100-first-40-and-gaming');
 const STRUCTURED_ROOT = path.join(OUTPUT_ROOT, 'structured');
@@ -579,13 +582,16 @@ function structuredRelativePath(scopeId, stem) {
 }
 
 async function buildEventScript(eventPlan, previousEvent, scope, titleById) {
-    const variantPath = path.join(
-        ARCHIVE_EVENTS,
-        eventPlan.eventId,
-        'variants',
-        `${eventPlan.effectiveVariantId}.json`
-    );
-    const variant = readJson(variantPath);
+    const eventDir = path.join(ARCHIVE_EVENTS, eventPlan.eventId);
+    const event = readJson(path.join(eventDir, 'event.json'));
+    const variant = resolveEffectivePresentation({
+        root: ROOT,
+        eventDir,
+        event,
+        eventId: eventPlan.eventId,
+        storylineId: eventPlan.styleAuthority,
+        ref: eventPlan.presentationRef || { eventId: eventPlan.eventId }
+    }).presentation;
     if (!HOOKS[eventPlan.eventId]) throw new Error(`Missing hook for ${eventPlan.eventId}`);
     const stem = fileStem(eventPlan);
     const modes = {};

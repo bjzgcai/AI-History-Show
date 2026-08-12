@@ -5,7 +5,7 @@
     "type": "array",
     "items": {
         "type": "object",
-        "required": ["id", "type", "path", "role", "caption"],
+        "required": ["id", "type", "role", "caption"],
         "properties": {
             "id": {
                 "$ref": "shared.schema.json#/$defs/archiveId"
@@ -38,8 +38,19 @@
             "storage": {
                 "type": "object",
                 "properties": {
+                    "profileId": {
+                        "$ref": "shared.schema.json#/$defs/archiveId"
+                    },
+                    "profile": {
+                        "$ref": "shared.schema.json#/$defs/archiveId"
+                    },
+                    "objectName": {
+                        "type": "string",
+                        "minLength": 1
+                    },
                     "provider": {
-                        "const": "aliyun-oss"
+                        "type": "string",
+                        "minLength": 1
                     },
                     "bucket": {
                         "type": "string",
@@ -47,7 +58,7 @@
                     },
                     "objectKey": {
                         "type": "string",
-                        "pattern": "^audio/ai-history/releases/"
+                        "minLength": 1
                     },
                     "sourcePath": {
                         "type": "string",
@@ -66,7 +77,6 @@
                         "format": "uri"
                     }
                 },
-                "required": ["provider", "bucket", "objectKey", "contentType"],
                 "additionalProperties": false
             },
             "figureIds": {
@@ -132,6 +142,9 @@
                 },
                 "then": {
                     "required": ["language", "storage"]
+                },
+                "else": {
+                    "required": ["path"]
                 }
             }
         ]

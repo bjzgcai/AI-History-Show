@@ -9088,7 +9088,6 @@
                             <span class="video-chip" id="mediaTimecode">00:00:03</span>
                         </div>
                         <div class="video-quote" id="videoQuote">暂无媒体资料</div>
-                        <iframe id="mediaVideo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                     <div class="commentary-list" id="commentaryList"></div>
@@ -9267,6 +9266,38 @@
                 entry: 'index'
             });
         }
+        let videoPlayerModulePromise = null;
+        let inlineMediaRequestId = 0;
+
+        function loadVideoPlayerModule() {
+            if (window.VideoPlayer) return Promise.resolve(window.VideoPlayer);
+            if (videoPlayerModulePromise) return videoPlayerModulePromise;
+
+            videoPlayerModulePromise = new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = 'shared/video-player.js';
+                script.async = true;
+                script.dataset.videoPlayerModule = 'true';
+                script.onload = () => {
+                    if (window.VideoPlayer) resolve(window.VideoPlayer);
+                    else reject(new Error('Video player module did not initialize'));
+                };
+                script.onerror = () => reject(new Error('Video player module failed to load'));
+                document.head.appendChild(script);
+            }).catch((error) => {
+                videoPlayerModulePromise = null;
+                throw error;
+            });
+            return videoPlayerModulePromise;
+        }
+
+        function hydrateLazyVideos(root) {
+            if (!root || !root.querySelector('video[data-video-src]')) return;
+            loadVideoPlayerModule()
+                .then((videoPlayer) => videoPlayer.hydrate(root))
+                .catch(() => {});
+        }
+
         const UI_DETAIL_FIGURE_LIMIT = 4;
         const INTERNAL_IMAGE_DESCRIPTION_PATTERN = /^(?:external-reference-(?:image|diagram)|architecture-explainer|algorithm-explainer|team-photo|hero-image|supporting-image|source-card|paper-page)$/i;
         const STORYLINE_OPTIONS = [
@@ -9556,7 +9587,6 @@
             archiveNextSubcaption: document.getElementById('archiveNextSubcaption'),
             archiveDots: document.getElementById('archiveDots'),
             videoFrame: document.getElementById('videoFrame'),
-            mediaVideo: document.getElementById('mediaVideo'),
             videoQuote: document.getElementById('videoQuote'),
             mediaTimecode: document.getElementById('mediaTimecode'),
             commentaryList: document.getElementById('commentaryList'),
@@ -10975,7 +11005,7 @@
             return `
                 <div class="bench-photo-frame bench-visual-card has-video">
                     <div class="bench-video-stage">
-                        <video src="${escapeHtml(item.url)}"${poster} muted loop playsinline preload="metadata" aria-label="${escapeHtml(title)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"></video>
+                        <video data-video-src="${escapeHtml(item.url)}"${poster} muted loop playsinline preload="none" aria-label="${escapeHtml(title)}"></video>
                         ${item.poster ? `<img src="${escapeHtml(item.poster)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" hidden>` : ''}
                         <span class="bench-video-badge">${escapeHtml(uiText('MP4', 'MP4'))}</span>
                     </div>
@@ -12049,42 +12079,14 @@
             event.stopPropagation();
         }
 
-        function appendPlaybackRestartToken(url) {
-            const value = String(url || '').trim();
-            if (!value) return '';
-            const separator = value.includes('?') ? '&' : '?';
-            return `${value}${separator}_restart=${Date.now()}`;
-        }
-
-        async function canLoadGameEvolutionVideo(url, hasFallback) {
-            const value = String(url || '').trim();
-            if (!value) return false;
-            if (!hasFallback) return true;
-
-            try {
-                const response = await fetch(value, { method: 'HEAD', cache: 'no-store' });
-                if (response.ok) return true;
-                if (response.status !== 405) return false;
-            } catch (_) {
-                return false;
-            }
-
-            try {
-                const response = await fetch(value, {
-                    method: 'GET',
-                    headers: { Range: 'bytes=0-0' },
-                    cache: 'no-store'
-                });
-                return response.ok || response.status === 206;
-            } catch (_) {
-                return false;
-            }
-        }
-
         async function openGameEvolutionVideo(vm) {
             const raw = vm && vm.raw ? vm.raw : {};
             const module = getAchievementGameEvolutionModule(raw);
             if (!module) return;
+            let videoPlayer = null;
+            try {
+                videoPlayer = await loadVideoPlayerModule();
+            } catch (_) {}
 
             const returnFocus = document.activeElement;
             const title = module.title || vm.title || uiText('Game evolution video', '棋局演化视频');
@@ -12092,9 +12094,13 @@
             const fallbackUrl = String(module.fallbackUrl || '').trim();
             const poster = String(module.poster || '').trim();
             const playableImage = fallbackUrl || poster;
-            const fallbackImageUrl = appendPlaybackRestartToken(playableImage);
-            const shouldUseVideo = isDirectVideoMedia(videoUrl)
-                && await canLoadGameEvolutionVideo(videoUrl, Boolean(playableImage));
+            const fallbackImageUrl = videoPlayer
+                ? videoPlayer.appendPlaybackRestartToken(playableImage)
+                : playableImage;
+            const shouldUseVideo = Boolean(videoPlayer)
+                && videoPlayer.isDirectVideoMedia(videoUrl)
+                && await videoPlayer.canLoad(videoUrl, { hasFallback: Boolean(playableImage) });
+            if (!shouldUseVideo && !fallbackImageUrl) return;
             const sourceSgf = String(module.sourceSgf || '').trim();
             const generator = String(module.generator || '').trim();
             const sourceLine = sourceSgf
@@ -12112,7 +12118,7 @@
             viewer.innerHTML = `
                 <button class="close-viewer" type="button" aria-label="${escapeHtml(tx('close'))}">×</button>
                 <div class="game-evolution-panel">
-                    ${shouldUseVideo ? `<video class="game-evolution-player" src="${escapeHtml(videoUrl)}" controls autoplay muted loop playsinline preload="metadata"></video>` : ''}
+                    ${shouldUseVideo ? `<video class="game-evolution-player" data-video-src="${escapeHtml(videoUrl)}" controls muted loop playsinline preload="none"></video>` : ''}
                     ${fallbackImageUrl ? `<img class="game-evolution-fallback" src="${escapeHtml(fallbackImageUrl)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async"${shouldUseVideo ? ' hidden' : ''}>` : ''}
                     <div class="game-evolution-meta">
                         <strong>${escapeHtml(title)}</strong>
@@ -12125,29 +12131,12 @@
 
             const closeButton = viewer.querySelector('.close-viewer');
             const video = viewer.querySelector('.game-evolution-player');
-            const fallback = viewer.querySelector('.game-evolution-fallback');
-            if (video && fallback) {
-                video.addEventListener('error', () => {
-                    video.hidden = true;
-                    fallback.src = appendPlaybackRestartToken(playableImage);
-                    fallback.hidden = false;
-                });
-            }
-            if (video) {
-                const restartVideo = () => {
-                    try {
-                        video.currentTime = 0;
-                    } catch (_) {}
-                    if (typeof video.play === 'function') {
-                        video.play().catch(() => {});
-                    }
-                };
-                video.addEventListener('loadedmetadata', restartVideo, { once: true });
-                restartVideo();
+            if (video && videoPlayer) {
+                videoPlayer.activate(video, { autoplay: true, restart: true });
             }
 
             const closeViewer = () => {
-                if (video && typeof video.pause === 'function') video.pause();
+                if (video && videoPlayer) videoPlayer.unload(video);
                 viewer.remove();
                 if (returnFocus && typeof returnFocus.focus === 'function') {
                     returnFocus.focus();
@@ -12221,7 +12210,7 @@
                     event.stopPropagation();
                     const index = Number(button.dataset.branchVideoIndex || -1);
                     if (!Number.isInteger(index) || index < 0) return;
-                    openGameEvolutionVideo(getVm(index));
+                    openGameEvolutionVideo(getVm(index)).catch(() => {});
                 });
             });
         }
@@ -13360,75 +13349,34 @@
             };
         }
 
-        function ensureMediaIframe() {
-            let iframe = refs.videoFrame.querySelector('iframe');
-            if (!iframe) {
-                iframe = document.createElement('iframe');
-                iframe.id = 'mediaVideo';
-                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-                iframe.allowFullscreen = true;
-                refs.videoFrame.appendChild(iframe);
-                refs.mediaVideo = iframe;
-            }
-            return iframe;
-        }
-
-        function ensureMediaPlayer() {
-            let player = refs.videoFrame.querySelector('video');
-            if (!player) {
-                player = document.createElement('video');
-                player.id = 'mediaVideoPlayer';
-                player.controls = true;
-                player.playsInline = true;
-                player.preload = 'metadata';
-                refs.videoFrame.appendChild(player);
-            }
-            return player;
-        }
-
-        function isDirectVideoMedia(url) {
-            return /\.(mp4|webm|ogg)(?:[?#].*)?$/i.test(String(url || ''));
-        }
-
         function resetInlineMedia() {
-            const iframe = ensureMediaIframe();
-            const player = ensureMediaPlayer();
-
-            iframe.style.display = 'none';
-            iframe.src = 'about:blank';
-
-            player.pause();
-            player.removeAttribute('src');
-            player.style.display = 'none';
-            player.load();
+            inlineMediaRequestId += 1;
+            if (window.VideoPlayer) window.VideoPlayer.resetContainer(refs.videoFrame);
         }
 
-        function playInlineVideo(url) {
-            if (!url) return;
-            refs.videoFrame.classList.add('is-playing');
-            refs.videoFrame.onclick = null;
-            if (isDirectVideoMedia(url)) {
-                const iframe = ensureMediaIframe();
-                const player = ensureMediaPlayer();
-                iframe.style.display = 'none';
-                iframe.src = 'about:blank';
-                player.src = url;
-                player.style.display = 'block';
-                const playback = player.play();
-                if (playback && typeof playback.catch === 'function') {
-                    playback.catch(() => {});
-                }
-                return;
-            }
+        function bindInlineMediaPlayback(url) {
+            refs.videoFrame.onclick = url ? () => playInlineVideo(url).catch(() => {}) : null;
+        }
 
-            const iframe = ensureMediaIframe();
-            const player = ensureMediaPlayer();
-            player.pause();
-            player.removeAttribute('src');
-            player.style.display = 'none';
-            player.load();
-            iframe.src = url;
-            iframe.style.display = 'block';
+        async function playInlineVideo(url) {
+            const expectedUrl = String(url || '').trim();
+            if (!expectedUrl) return;
+            const requestId = ++inlineMediaRequestId;
+            refs.videoFrame.onclick = null;
+            try {
+                const videoPlayer = await loadVideoPlayerModule();
+                if (
+                    requestId !== inlineMediaRequestId
+                    || refs.videoFrame.dataset.videoUrl !== expectedUrl
+                ) return;
+                videoPlayer.playInContainer(refs.videoFrame, expectedUrl, { autoplay: true });
+            } catch (error) {
+                if (
+                    requestId === inlineMediaRequestId
+                    && refs.videoFrame.dataset.videoUrl === expectedUrl
+                ) bindInlineMediaPlayback(expectedUrl);
+                throw error;
+            }
         }
 
         function getQuizItems(vm) {
@@ -13831,15 +13779,13 @@
         }
 
         function renderCommentary(vm) {
-            ensureMediaIframe();
-            ensureMediaPlayer();
             refs.mediaTimecode.textContent = `00:00:${String((currentIndex % 57) + 3).padStart(2, '0')}`;
             refs.videoQuote.textContent = extractVideoQuote(vm);
             refs.videoFrame.classList.remove('is-playing');
             refs.videoFrame.classList.toggle('has-video-data', Boolean(vm.videoEmbedUrl));
             refs.videoFrame.classList.toggle('empty', !vm.videoEmbedUrl);
             refs.videoFrame.dataset.videoUrl = vm.videoEmbedUrl || '';
-            refs.videoFrame.onclick = vm.videoEmbedUrl ? () => playInlineVideo(vm.videoEmbedUrl) : null;
+            bindInlineMediaPlayback(vm.videoEmbedUrl);
             refs.videoFrame.title = vm.videoEmbedUrl ? tx('playVideo') : tx('noMedia');
             resetInlineMedia();
 
@@ -14182,7 +14128,7 @@
 
             return buildPaperDemo(`
                 <div class="bench-game-video-demo">
-                    <video src="${escapeHtml(module.url)}"${posterAttr} controls muted loop playsinline preload="metadata" aria-label="${escapeHtml(title)}" onerror="this.hidden=true;this.nextElementSibling.hidden=false"></video>
+                    <video data-video-src="${escapeHtml(module.url)}"${posterAttr} controls muted loop playsinline preload="none" aria-label="${escapeHtml(title)}"></video>
                     ${poster ? `<img class="bench-game-video-fallback" src="${escapeHtml(poster)}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" hidden>` : ''}
                 </div>
             `, [
@@ -15296,6 +15242,7 @@
 
             const placeholders = Array.from({ length: Math.max(0, 3 - items.length) }, () => null);
             refs.benchHeroVisual.innerHTML = [...items, ...placeholders].map(buildBenchVisualCard).join('');
+            hydrateLazyVideos(refs.benchHeroVisual);
         }
 
         function buildAchievementDemoVisualHtml(raw, options = {}) {
@@ -15406,6 +15353,7 @@
                 <div class="bench-demo-visual">${visualHtml}</div>
                 <div class="bench-demo-steps">${stepHtml}</div>
             `;
+            hydrateLazyVideos(refs.benchDemoSurface);
         }
 
         function renderBenchSources(rawMilestone) {

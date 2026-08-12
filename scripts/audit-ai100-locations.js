@@ -4,6 +4,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
+const { resolveEffectivePresentation } = require('./archive-presentation');
 const { getCanonicalLocation, localized } = require('./ai100-locations.js');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -38,6 +39,10 @@ function containsNonAscii(value) {
 
 const catalog = readJson(CATALOG_PATH);
 const catalogEventIds = new Set(catalog.items.map((item) => item.eventId));
+const storyline = readJson(path.join(ROOT, 'archive', 'storylines', 'bench-council-ai100.json'));
+const refsByEventId = new Map(
+    storyline.events.filter((entry) => entry.enabled !== false).map((entry) => [entry.eventId, entry])
+);
 const runtime = require(path.join(ROOT, 'milestones-data.js')).milestones;
 const runtimeByEventId = new Map(
     runtime
@@ -54,7 +59,14 @@ const failures = [];
 for (const item of catalog.items) {
     const eventDir = path.join(ROOT, 'archive', 'events', item.eventId);
     const event = readJson(path.join(eventDir, 'event.json'));
-    const variant = readJson(path.join(eventDir, 'variants', 'bench-council-ai100.json'));
+    const variant = resolveEffectivePresentation({
+        root: ROOT,
+        eventDir,
+        event,
+        eventId: item.eventId,
+        storylineId: 'bench-council-ai100',
+        ref: refsByEventId.get(item.eventId)
+    }).presentation;
     const milestone = runtimeByEventId.get(item.eventId);
     const expected = getCanonicalLocation(item);
     const locations = [

@@ -59,5 +59,319 @@
       "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
       "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+      "en": "A3C",
+      "zh": "A3C 异步优势演员—评论家"
+    },
+    "displayDescription": {
+      "en": "<p>Deep reinforcement learning systems often relied on large replay buffers and specialized hardware to stabilize correlated experience. A3C explored whether many lightweight agents acting in parallel could provide diverse updates without replay.</p><p>Multiple worker agents interact with separate environment copies and asynchronously update shared actor and critic parameters. Advantage estimates reduce variance by comparing observed returns with the critic baseline. Experts generally view A3C as an influential demonstration that asynchronous actor-critic training could be simple, stable, and broadly applicable. It helped popularize advantage-based policy optimization and parallel environment sampling.</p>",
+      "zh": "<p>深度强化学习系统常依赖大型经验回放缓冲区和专用硬件，以缓解经验相关性。A3C 探索了多个轻量智能体并行行动，是否能在不使用回放的情况下提供多样化更新。</p><p>多个工作智能体与各自的环境副本交互，并异步更新共享的 actor 与 critic 参数。优势估计把观测回报与 critic 基线比较，从而降低方差。专家通常认为 A3C 有力证明了异步 actor-critic 训练可以保持简单、稳定并适用于多类任务。它推动了基于优势函数的策略优化和并行环境采样。</p>"
+    },
+    "emphasis": [
+      "benchcouncil-canonical-2026-07-30",
+      "source-reviewed"
+    ],
+    "visual": "configuredPaper",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "Asynchronous Methods for Deep Reinforcement Learning",
+          "zh": "深度强化学习的异步方法"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed A3C achievement.",
+          "zh": "BenchCouncil 主表中A3C 异步优势演员—评论家成就的主要资料。"
+        },
+        "url": "https://arxiv.org/abs/1602.01783",
+        "source": "https://arxiv.org/abs/1602.01783",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-2016-a3c-portrait",
+      "asset-2016-a3c-explainer",
+      "asset-ai100-2016-a3c-audio-zh-original-v1",
+      "asset-ai100-2016-a3c-audio-en-v1"
+    ],
+    "sourceIds": [
+      "source-2016-a3c-primary",
+      "source-2016-a3c-secondary",
+      "source-benchcouncil-ai100-catalog",
+      "source-2016-a3c-portrait"
+    ],
+    "claimIds": [
+      "claim-2016-a3c-membership",
+      "claim-2016-a3c-description"
+    ],
+    "quizId": "ai100-2016-a3c-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Deep reinforcement learning systems often relied on large replay buffers and specialized hardware to stabilize correlated experience. A3C explored whether many lightweight agents acting in parallel could provide diverse updates without replay.",
+          "zh": "深度强化学习系统常依赖大型经验回放缓冲区和专用硬件，以缓解经验相关性。A3C 探索了多个轻量智能体并行行动，是否能在不使用回放的情况下提供多样化更新。"
+        },
+        "sourceIds": [
+          "source-2016-a3c-primary",
+          "source-benchcouncil-ai100-catalog"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Multiple worker agents interact with separate environment copies and asynchronously update shared actor and critic parameters. Advantage estimates reduce variance by comparing observed returns with the critic baseline.",
+          "zh": "多个工作智能体与各自的环境副本交互，并异步更新共享的 actor 与 critic 参数。优势估计把观测回报与 critic 基线比较，从而降低方差。"
+        },
+        "sourceIds": [
+          "source-2016-a3c-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally view A3C as an influential demonstration that asynchronous actor-critic training could be simple, stable, and broadly applicable. It helped popularize advantage-based policy optimization and parallel environment sampling.",
+          "zh": "专家通常认为 A3C 有力证明了异步 actor-critic 训练可以保持简单、稳定并适用于多类任务。它推动了基于优势函数的策略优化和并行环境采样。"
+        },
+        "sourceIds": [
+          "source-2016-a3c-primary",
+          "source-2016-a3c-secondary"
+        ]
+      }
+    ],
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "figures": [
+      {
+        "figureId": "volodymyr-mnih",
+        "role": {
+          "en": "A3C lead author",
+          "zh": "A3C 主要作者"
+        },
+        "avatarAssetId": "asset-2016-a3c-portrait"
+      },
+      {
+        "figureId": "koray-kavukcuoglu",
+        "role": {
+          "en": "A3C co-author",
+          "zh": "A3C 共同作者"
+        }
+      }
+    ],
+    "photos": [],
+    "quote": {
+      "en": "“Asynchronous Methods for Deep Reinforcement Learning”",
+      "zh": "“深度强化学习的异步方法”"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Asynchronous Methods for Deep Reinforcement Learning",
+        "zh": "深度强化学习的异步方法"
+      },
+      "workAuthors": {
+        "en": "See primary publication record",
+        "zh": "见主论文记录"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1602.01783"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>Asynchronous Methods for Deep Reinforcement Learning</em>",
+      "zh": "《深度强化学习的异步方法》"
+    },
+    "achievement": {
+      "area": {
+        "en": "Reinforcement Learning",
+        "zh": "强化学习"
+      },
+      "method": {
+        "en": "Asynchronous advantage actor-critic updates",
+        "zh": "异步优势 actor-critic 更新"
+      },
+      "artifact": {
+        "en": "Parallel actor-critic training system",
+        "zh": "并行 actor-critic 训练系统"
+      },
+      "material": {
+        "en": "Asynchronous Methods for Deep Reinforcement Learning, companion source, and BenchCouncil catalog record",
+        "zh": "《深度强化学习的异步方法》、配套资料与 BenchCouncil 清单记录"
+      },
+      "demo": {
+        "en": "Follow the four stages and compare how changing one stage affects the final parallel actor-critic training system.",
+        "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的并行 actor-critic 训练系统。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Stage 1",
+            "zh": "阶段 1"
+          },
+          "text": {
+            "en": "Parallel workers",
+            "zh": "并行工作智能体"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 2",
+            "zh": "阶段 2"
+          },
+          "text": {
+            "en": "Environment rollouts",
+            "zh": "环境轨迹"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 3",
+            "zh": "阶段 3"
+          },
+          "text": {
+            "en": "Advantage estimates",
+            "zh": "优势估计"
+          }
+        },
+        {
+          "label": {
+            "en": "Stage 4",
+            "zh": "阶段 4"
+          },
+          "text": {
+            "en": "Shared parameter updates",
+            "zh": "共享参数更新"
+          }
+        }
+      ],
+      "relatedAchievements": [],
+      "relatedRegions": [
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Parallel workers",
+          "zh": "并行工作智能体"
+        },
+        {
+          "en": "Environment rollouts",
+          "zh": "环境轨迹"
+        },
+        {
+          "en": "Advantage estimates",
+          "zh": "优势估计"
+        },
+        {
+          "en": "Shared parameter updates",
+          "zh": "共享参数更新"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2016-2016-a3c_process.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "BenchCouncil lists A3C and cites Asynchronous Methods for Deep Reinforcement Learning as a defining publication.",
+            "zh": "BenchCouncil 将A3C 异步优势演员—评论家列入主表，并把《深度强化学习的异步方法》作为代表性资料。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+            "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Primary publication",
+            "zh": "主论文"
+          },
+          "title": {
+            "en": "Asynchronous Methods for Deep Reinforcement Learning",
+            "zh": "深度强化学习的异步方法"
+          },
+          "description": {
+            "en": "Primary source for the BenchCouncil-listed A3C achievement.",
+            "zh": "BenchCouncil 主表中A3C 异步优势演员—评论家成就的主要资料。"
+          },
+          "url": "https://arxiv.org/abs/1602.01783",
+          "source": "https://arxiv.org/abs/1602.01783",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ]
+    },
+    "location": {
+      "name": {
+        "en": "DeepMind, University of Montreal",
+        "zh": "DeepMind、蒙特利尔大学"
+      },
+      "country": {
+        "en": "United Kingdom, Canada",
+        "zh": "英国、加拿大"
+      },
+      "coordinates": [
+        51.5072,
+        -0.1276
+      ]
+    }
   }
 }

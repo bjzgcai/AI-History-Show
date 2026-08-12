@@ -83,7 +83,6 @@
   {
     "id": "asset-1973-prolog-audio-zh-original-v1",
     "type": "audio",
-    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1973-prolog-zh-original-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1973-prolog 中文原版科普音频",
@@ -106,14 +105,11 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1973-prolog-zh-original-v1.mp3",
     "storage": {
-      "provider": "aliyun-oss",
-      "bucket": "zgca-medias",
-      "objectKey": "audio/ai-history/releases/1973-prolog-zh-original-v1.mp3",
+      "profileId": "ai-history-audio-releases",
+      "objectName": "1973-prolog-zh-original-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-first-40-and-gaming/revisions/ai100-first10-storyline-zh-huoposhuanglang-v3-2026-08-07/audio/bench-council-ai100/storyline/zh/10-1973-prolog.mp3",
-      "contentType": "audio/mpeg",
-      "cacheControl": "public, max-age=31536000, immutable"
+      "contentType": "audio/mpeg"
     },
     "usage": [
       "archive-only"
@@ -123,7 +119,6 @@
   {
     "id": "asset-1973-prolog-audio-zh-interact-v1",
     "type": "audio",
-    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1973-prolog-zh-interact-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1973-prolog 中文互动增强版科普音频",
@@ -146,24 +141,20 @@
       }
     },
     "language": "zh",
-    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1973-prolog-zh-interact-v1.mp3",
     "storage": {
-      "provider": "aliyun-oss",
-      "bucket": "zgca-medias",
-      "objectKey": "audio/ai-history/releases/1973-prolog-zh-interact-v1.mp3",
+      "profileId": "ai-history-audio-releases",
+      "objectName": "1973-prolog-zh-interact-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-first-40-and-gaming/revisions/ai100-first10-storyline-zh-huopo-interactive-v5-2026-08-07/audio/bench-council-ai100/storyline/zh/10-1973-prolog.mp3",
-      "contentType": "audio/mpeg",
-      "cacheControl": "public, max-age=31536000, immutable"
+      "contentType": "audio/mpeg"
     },
     "usage": [
-      "variant:bench-council-ai100"
+      "storyline:bench-council-ai100"
     ],
     "editable": true
   },
   {
     "id": "asset-1973-prolog-audio-en-v1",
     "type": "audio",
-    "path": "https://media.sciencearena.cn/audio/ai-history/releases/1973-prolog-en-v1.mp3",
     "role": "audio-narration",
     "caption": {
       "zh": "1973-prolog 英文科普音频",
@@ -186,17 +177,14 @@
       }
     },
     "language": "en",
-    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1973-prolog-en-v1.mp3",
     "storage": {
-      "provider": "aliyun-oss",
-      "bucket": "zgca-medias",
-      "objectKey": "audio/ai-history/releases/1973-prolog-en-v1.mp3",
+      "profileId": "ai-history-audio-releases",
+      "objectName": "1973-prolog-en-v1.mp3",
       "sourcePath": "resources/audio/generated/ai100-first-40-and-gaming/audio/bench-council-ai100/storyline/en/10-1973-prolog.mp3",
-      "contentType": "audio/mpeg",
-      "cacheControl": "public, max-age=31536000, immutable"
+      "contentType": "audio/mpeg"
     },
     "usage": [
-      "variant:bench-council-ai100"
+      "storyline:bench-council-ai100"
     ],
     "editable": true
   }

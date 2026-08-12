@@ -4,23 +4,25 @@
 const crypto = require('node:crypto');
 const fs = require('node:fs');
 const path = require('node:path');
+const {
+    AUDIO_CONTENT_TYPES,
+    DEFAULT_BUCKET,
+    DEFAULT_CACHE_CONTROL,
+    DEFAULT_ENDPOINT,
+    DEFAULT_MANIFEST_KEY,
+    DEFAULT_OBJECT_KEY_PREFIX,
+    DEFAULT_PROVIDER,
+    DEFAULT_REGION,
+    contentTypeForPath,
+    isObjectKeyWithinPrefix,
+    loadMediaStorageConfig,
+    normalizeObjectKey,
+    resolveMediaStorage
+} = require('./media-storage');
 
 const ROOT = path.resolve(__dirname, '..');
-const DEFAULT_PROVIDER = 'aliyun-oss';
-const DEFAULT_ENDPOINT = 'https://oss-cn-beijing.aliyuncs.com';
-const DEFAULT_BUCKET = 'zgca-medias';
-const DEFAULT_REGION = 'cn-beijing';
 const DEFAULT_MANIFEST_PATH = path.join(ROOT, '.tmp', 'audio', 'audio-manifest.json');
-const DEFAULT_MANIFEST_KEY = 'audio/ai-history/manifests/audio-manifest.json';
-const RELEASE_PREFIX = 'audio/ai-history/releases/';
-const DEFAULT_CACHE_CONTROL = 'public, max-age=31536000, immutable';
-const AUDIO_CONTENT_TYPES = new Map([
-    ['.aac', 'audio/aac'],
-    ['.m4a', 'audio/mp4'],
-    ['.mp3', 'audio/mpeg'],
-    ['.ogg', 'audio/ogg'],
-    ['.wav', 'audio/wav']
-]);
+const RELEASE_PREFIX = DEFAULT_OBJECT_KEY_PREFIX;
 
 function printUsage() {
     console.log(
@@ -74,18 +76,6 @@ function isRemotePath(value) {
     return /^https?:\/\//i.test(String(value || '').trim());
 }
 
-function normalizeObjectKey(value) {
-    return String(value || '')
-        .trim()
-        .replace(/\\/g, '/')
-        .replace(/^\/+/, '')
-        .replace(/\/{2,}/g, '/');
-}
-
-function contentTypeForPath(filePath) {
-    return AUDIO_CONTENT_TYPES.get(path.extname(filePath).toLowerCase()) || '';
-}
-
 function readJson(filePath) {
     try {
         return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -96,6 +86,7 @@ function readJson(filePath) {
 
 function collectAudioAssets(root = ROOT) {
     const eventsDir = path.join(root, 'archive', 'events');
+    const mediaStorageConfig = loadMediaStorageConfig(root);
     if (!fs.existsSync(eventsDir)) return [];
 
     const entries = [];
@@ -111,7 +102,7 @@ function collectAudioAssets(root = ROOT) {
         const assets = readJson(assetsPath);
         for (const asset of assets) {
             if (!asset || asset.type !== 'audio') continue;
-            const storage = asset.storage && typeof asset.storage === 'object' ? asset.storage : {};
+            const storage = resolveMediaStorage(asset, { config: mediaStorageConfig });
             const configuredSourcePath = String(storage.sourcePath || asset.path || '').trim();
             const sourcePath = isRemotePath(configuredSourcePath) ? '' : configuredSourcePath;
             entries.push({
@@ -120,12 +111,18 @@ function collectAudioAssets(root = ROOT) {
                 language: String(asset.language || '').trim(),
                 sourcePath: toPosixPath(sourcePath),
                 absoluteSourcePath: sourcePath ? path.resolve(root, sourcePath) : '',
-                provider: String(storage.provider || '').trim(),
-                bucket: String(storage.bucket || '').trim(),
-                objectKey: normalizeObjectKey(storage.objectKey),
+                profileId: storage.profileId,
+                provider: storage.provider,
+                bucket: storage.bucket,
+                objectKey: storage.objectKey,
+                objectName: storage.objectName,
                 contentType: String(storage.contentType || contentTypeForPath(sourcePath)).trim(),
                 cacheControl: String(storage.cacheControl || DEFAULT_CACHE_CONTROL).trim(),
-                deliveryUrl: String(asset.deliveryUrl || storage.publicUrl || '').trim()
+                deliveryUrl: storage.publicUrl,
+                objectKeyPrefix: storage.objectKeyPrefix,
+                endpoint: storage.endpoint,
+                region: storage.region,
+                manifestKey: storage.manifestKey
             });
         }
     }
@@ -150,17 +147,15 @@ function validateAudioAssets(entries) {
         } else if (!fs.statSync(entry.absoluteSourcePath).isFile()) {
             issues.push(`${label}: local source is not a file: ${entry.sourcePath}`);
         }
-        if (entry.provider !== DEFAULT_PROVIDER) {
-            issues.push(`${label}: storage.provider must be ${DEFAULT_PROVIDER}`);
-        }
-        if (entry.bucket !== DEFAULT_BUCKET) {
-            issues.push(`${label}: storage.bucket must be ${DEFAULT_BUCKET}`);
-        }
+        if (!entry.provider) issues.push(`${label}: storage.provider is required`);
+        if (!entry.bucket) issues.push(`${label}: storage.bucket is required`);
         if (!entry.objectKey) {
             issues.push(`${label}: storage.objectKey is required`);
         } else {
-            if (!entry.objectKey.startsWith(RELEASE_PREFIX)) {
-                issues.push(`${label}: storage.objectKey must stay under ${RELEASE_PREFIX}: ${entry.objectKey}`);
+            if (!isObjectKeyWithinPrefix(entry.objectKey, entry.objectKeyPrefix || RELEASE_PREFIX)) {
+                issues.push(
+                    `${label}: storage.objectKey must stay under ${entry.objectKeyPrefix || RELEASE_PREFIX}: ${entry.objectKey}`
+                );
             }
             if (entry.objectKey.split('/').includes('..')) {
                 issues.push(`${label}: storage.objectKey must not contain parent traversal`);
@@ -219,12 +214,15 @@ function writeManifest(manifest, outputPath = DEFAULT_MANIFEST_PATH) {
 function resolveOssConfig(args, entries) {
     const configuredProviders = new Set(entries.map((entry) => entry.provider).filter(Boolean));
     const configuredBuckets = new Set(entries.map((entry) => entry.bucket).filter(Boolean));
+    const configuredEndpoints = new Set(entries.map((entry) => entry.endpoint).filter(Boolean));
+    const configuredRegions = new Set(entries.map((entry) => entry.region).filter(Boolean));
+    const configuredManifestKeys = new Set(entries.map((entry) => entry.manifestKey).filter(Boolean));
+    const provider = [...configuredProviders][0] || DEFAULT_PROVIDER;
     const bucket = String(
         args.bucket || process.env.ALIYUN_OSS_BUCKET || [...configuredBuckets][0] || DEFAULT_BUCKET
     ).trim();
-    if (configuredProviders.size > 1 || [...configuredProviders].some((value) => value !== DEFAULT_PROVIDER)) {
-        throw new Error(`Archive audio provider must be ${DEFAULT_PROVIDER}`);
-    }
+    if (configuredProviders.size > 1)
+        throw new Error(`Audio assets reference multiple providers: ${[...configuredProviders].join(', ')}`);
     if (configuredBuckets.size > 1 && !args.bucket && !process.env.ALIYUN_OSS_BUCKET) {
         throw new Error(`Audio assets reference multiple buckets: ${[...configuredBuckets].join(', ')}`);
     }
@@ -233,13 +231,20 @@ function resolveOssConfig(args, entries) {
     }
 
     return {
-        provider: DEFAULT_PROVIDER,
-        endpoint: String(args.endpoint || process.env.ALIYUN_OSS_ENDPOINT || DEFAULT_ENDPOINT).replace(/\/+$/, ''),
+        provider,
+        endpoint: String(
+            args.endpoint || process.env.ALIYUN_OSS_ENDPOINT || [...configuredEndpoints][0] || DEFAULT_ENDPOINT
+        ).replace(/\/+$/, ''),
         bucket,
-        region: String(args.region || process.env.ALIYUN_OSS_REGION || DEFAULT_REGION).trim(),
+        region: String(
+            args.region || process.env.ALIYUN_OSS_REGION || [...configuredRegions][0] || DEFAULT_REGION
+        ).trim(),
         forcePathStyle: false,
         manifestKey: normalizeObjectKey(
-            args['manifest-key'] || process.env.ALIYUN_OSS_MANIFEST_KEY || DEFAULT_MANIFEST_KEY
+            args['manifest-key'] ||
+                process.env.ALIYUN_OSS_MANIFEST_KEY ||
+                [...configuredManifestKeys][0] ||
+                DEFAULT_MANIFEST_KEY
         )
     };
 }

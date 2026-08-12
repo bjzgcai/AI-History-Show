@@ -62,5 +62,337 @@
       "en": "Completed event-specific research on 2026-08-03. The exact BenchCouncil title, order, contributor prefix, institution, country and blank official fields were preserved. All listed people were checked against primary authorship evidence; portrait searches were completed and no portrait was selected because no candidate met the identity and usage-context threshold.",
       "zh": "于 2026-08-03 完成事件专项研究。准确保留 BenchCouncil 的标题、顺序、人物前缀、机构、国家与官方空字段。所有列出人物均通过原始作者证据核对；肖像检索已完成，没有候选同时满足身份与使用语境门槛，因此不选用肖像。"
     }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "en": "Blip-2",
+      "zh": "Blip-2"
+    },
+    "displayDescription": {
+      "en": "<p>BLIP-2 addresses the cost of vision-language pretraining by keeping both a pretrained image encoder and a large language model frozen. A lightweight Querying Transformer learns the interface between the two modalities through representation learning followed by generative vision-to-language learning.</p><p>This design reuses strong unimodal models instead of retraining an end-to-end stack, and the paper reports competitive zero-shot image-to-text generation and visual question answering with far fewer trainable parameters.</p>",
+      "zh": "<p>BLIP-2 通过冻结预训练图像编码器和大语言模型，降低视觉语言预训练的成本。一个轻量级 Querying Transformer 先学习跨模态表示，再学习从视觉到语言的生成接口。</p><p>这种设计复用强大的单模态模型，而不是重新训练完整端到端系统；论文报告它以更少的可训练参数，在零样本图文生成和视觉问答上取得有竞争力的结果。</p>"
+    },
+    "emphasis": [
+      "benchcouncil-annual-2022-2023",
+      "official-row-28"
+    ],
+    "visual": "configuredPaper",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "PMLR",
+          "zh": "PMLR"
+        },
+        "title": {
+          "en": "BLIP-2: Bootstrapping Language-Image Pre-training",
+          "zh": "《BLIP-2: Bootstrapping Language-Image Pre-training》"
+        },
+        "description": {
+          "en": "The ICML page provides the accepted paper, complete authorship and the evidence for the frozen-component training design.",
+          "zh": "ICML 页面提供接收稿、完整作者信息，以及冻结组件训练设计的证据。"
+        },
+        "url": "https://proceedings.mlr.press/v202/li23q.html",
+        "source": "https://proceedings.mlr.press/v202/li23q.html",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+        },
+        "usage": {
+          "en": "Primary technical or official release evidence",
+          "zh": "主要技术或官方发布证据"
+        },
+        "action": {
+          "en": "Open ICML paper page",
+          "zh": "打开 ICML 论文页面"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-annual-028-blip-2-portrait-junnan-li",
+      "asset-annual-028-blip-2-official-architecture",
+      "asset-ai100-annual-2022-2023-028-blip-2-audio-zh-original-v1",
+      "asset-ai100-annual-2022-2023-028-blip-2-audio-en-v1",
+      "asset-annual-028-blip-2-record"
+    ],
+    "overviewImageAssetId": "asset-annual-028-blip-2-portrait-junnan-li",
+    "sourceIds": [
+      "source-primary-record",
+      "source-openalex-record",
+      "source-benchcouncil-annual",
+      "source-annual-028-blip-2-portrait-junnan-li",
+      "source-arxiv-paper",
+      "source-lavis-repository",
+      "source-junnan-github-profile",
+      "source-blip2-qformer-figure",
+      "source-blip2-official-architecture"
+    ],
+    "claimIds": [
+      "claim-annual-membership",
+      "claim-publication-record",
+      "claim-contributor-record",
+      "claim-frozen-bridge",
+      "claim-two-stage-training"
+    ],
+    "quizId": "ai100-annual-2022-2023-028-blip-2-quiz-1",
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Large vision-language systems were increasingly built by joining separately pretrained image and language models, but end-to-end pretraining remained computationally expensive. BLIP-2 reframed the problem as learning a compact bridge between already capable frozen components.",
+          "zh": "大型视觉语言系统越来越多地连接独立预训练的图像模型与语言模型，但端到端预训练仍然成本高昂。BLIP-2 将问题重构为：在已经强大的冻结组件之间学习一个紧凑接口。"
+        },
+        "sourceIds": [
+          "source-primary-record",
+          "source-arxiv-paper"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A Querying Transformer extracts a small set of visual query representations from the frozen image encoder and passes them toward the frozen language model. Two pretraining stages separate representation alignment from generative learning, allowing the interface to learn without updating either large backbone.",
+          "zh": "Querying Transformer 从冻结图像编码器中提取少量视觉查询表示，并把它们传向冻结语言模型。两个预训练阶段把表示对齐与生成学习分开，因此接口可以在不更新两侧大型主干的情况下完成学习。"
+        },
+        "sourceIds": [
+          "source-primary-record",
+          "source-arxiv-paper"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat BLIP-2 as an influential demonstration that multimodal capability can be built by efficiently composing strong pretrained models. Its bridge-based recipe helped establish parameter-efficient visual instruction systems and foreshadowed later assistants that connect vision encoders to large language models.",
+          "zh": "专家通常把 BLIP-2 视为一项有影响力的证明：多模态能力可以通过高效组合强预训练模型获得。它的桥接方案推动了参数高效的视觉指令系统，并预示了后来把视觉编码器连接到大语言模型的助手。"
+        },
+        "sourceIds": [
+          "source-primary-record",
+          "source-arxiv-paper"
+        ]
+      }
+    ],
+    "category": {
+      "en": "BenchCouncil AI100 (2022-2023)",
+      "zh": "BenchCouncil AI100（2022-2023）"
+    },
+    "figures": [
+      {
+        "figureId": "junnan-li",
+        "role": {
+          "en": "First author of the BLIP-2 paper",
+          "zh": "BLIP-2 论文第一作者"
+        },
+        "avatarAssetId": "asset-annual-028-blip-2-portrait-junnan-li"
+      },
+      {
+        "figureId": "steven-hoi",
+        "role": {
+          "en": "Co-author of the BLIP-2 paper",
+          "zh": "BLIP-2 论文共同作者"
+        }
+      }
+    ],
+    "quote": {
+      "en": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+      "zh": "《Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models》"
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+        "zh": "《Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models》"
+      },
+      "workAuthors": {
+        "en": "Junnan Li, Steven Hoi",
+        "zh": "李俊楠、许彬"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://proceedings.mlr.press/v202/li23q.html"
+    },
+    "quotePage": {
+      "en": "Primary publication record",
+      "zh": "原始论文记录"
+    },
+    "quoteAttribution": {
+      "en": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+      "zh": "《Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models》"
+    },
+    "achievement": {
+      "area": {
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      "method": {
+        "en": "Efficient multimodal pretraining with a learned query bridge",
+        "zh": "使用可学习查询桥进行高效多模态预训练"
+      },
+      "artifact": {
+        "en": "BLIP-2 vision-language model family",
+        "zh": "BLIP-2 视觉语言模型系列"
+      },
+      "material": {
+        "en": "Primary publication or official release evidence, implementation materials and the original local explainer",
+        "zh": "主论文或官方发布证据、实现材料与本地原创解释图"
+      },
+      "demo": {
+        "en": "Follow the four-stage path and compare what enters, what is learned and what the system produces.",
+        "zh": "沿四阶段路径观察输入、学习内容与系统输出。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Frozen Backbones",
+            "zh": "冻结主干"
+          },
+          "text": {
+            "en": "Reuse pretrained image and language models",
+            "zh": "复用预训练图像与语言模型"
+          }
+        },
+        {
+          "label": {
+            "en": "Query Bridge",
+            "zh": "查询桥"
+          },
+          "text": {
+            "en": "A lightweight Q-Former transfers visual information",
+            "zh": "轻量级 Q-Former 传递视觉信息"
+          }
+        },
+        {
+          "label": {
+            "en": "Two Stages",
+            "zh": "两阶段"
+          },
+          "text": {
+            "en": "Representation alignment followed by generation",
+            "zh": "先表示对齐，再学习生成"
+          }
+        }
+      ],
+      "relatedAchievements": [],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Frozen image encoder",
+          "zh": "冻结图像编码器"
+        },
+        {
+          "en": "Querying Transformer",
+          "zh": "Querying Transformer"
+        },
+        {
+          "en": "Frozen large language model",
+          "zh": "冻结大语言模型"
+        },
+        {
+          "en": "Image-conditioned text",
+          "zh": "图像条件文本"
+        }
+      ],
+      "demoImage": "resources/images/benchcouncil-ai100-annual/annual-028-blip-2_record.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Technical cue",
+            "zh": "技术线索"
+          },
+          "text": {
+            "en": "Train a compact interface instead of retraining both large backbones",
+            "zh": "这张图以四个阶段解释：冻结图像编码器、Querying Transformer、冻结大语言模型、图像条件文本。"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Trace the arrows, then identify which stage reuses a pretrained component and which stage learns new information.",
+            "zh": "沿箭头逐步查看，并判断哪个阶段复用预训练组件、哪个阶段学习新信息。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "PMLR",
+            "zh": "PMLR"
+          },
+          "title": {
+            "en": "BLIP-2: Bootstrapping Language-Image Pre-training",
+            "zh": "《BLIP-2: Bootstrapping Language-Image Pre-training》"
+          },
+          "description": {
+            "en": "The ICML page provides the accepted paper, complete authorship and the evidence for the frozen-component training design.",
+            "zh": "ICML 页面提供接收稿、完整作者信息，以及冻结组件训练设计的证据。"
+          },
+          "url": "https://proceedings.mlr.press/v202/li23q.html",
+          "source": "https://proceedings.mlr.press/v202/li23q.html",
+          "license": {
+            "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+          },
+          "usage": {
+            "en": "Primary technical or official release evidence",
+            "zh": "主要技术或官方发布证据"
+          },
+          "action": {
+            "en": "Open ICML paper page",
+            "zh": "打开 ICML 论文页面"
+          }
+        }
+      ],
+      "annualRecord": {
+        "officialOrder": 28,
+        "area": "Multimodal",
+        "work": "Blip-2",
+        "publication": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+        "citation": "561",
+        "contributors": "Junnan Li, Steven Hoi",
+        "institution": "Salesforce Research",
+        "country": "USA",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+      }
+    },
+    "location": {
+      "name": {
+        "en": "Salesforce Research",
+        "zh": "Salesforce Research"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        37.0902,
+        -95.7129
+      ]
+    },
+    "review": {
+      "status": "reviewed",
+      "notes": {
+        "en": "Generated from official annual row 28; source spellings and blank fields are intentionally preserved.",
+        "zh": "依据官方年度表第 28 行生成；有意保留来源拼写与空白字段。"
+      }
+    }
   }
 }

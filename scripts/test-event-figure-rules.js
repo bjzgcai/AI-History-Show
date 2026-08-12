@@ -7,6 +7,7 @@ const path = require('node:path');
 
 const { auditVariant, isAssetSelectionExcluded, orderVariantAssetIds } = require('./event-figure-rules');
 const { findPortraitCandidate } = require('./ai100-contributors');
+const { resolveEffectivePresentation } = require('./archive-presentation');
 const { validateAssetSelectionReview } = require('./asset-selection-review');
 const { loadFigureRegistry, resolveFigureRelations } = require('./figure-registry');
 
@@ -273,15 +274,25 @@ const archiveExclusions = {
 };
 for (const [eventId, exclusions] of Object.entries(archiveExclusions)) {
     const eventDir = path.join(root, 'archive', 'events', eventId);
+    const event = JSON.parse(fs.readFileSync(path.join(eventDir, 'event.json'), 'utf8'));
     const assets = JSON.parse(fs.readFileSync(path.join(eventDir, 'assets.json'), 'utf8'));
-    const selectedAssetIds = new Set(
-        fs
-            .readdirSync(path.join(eventDir, 'variants'))
-            .filter((file) => file.endsWith('.json'))
-            .flatMap(
-                (file) => JSON.parse(fs.readFileSync(path.join(eventDir, 'variants', file), 'utf8')).assetIds || []
-            )
-    );
+    const selectedAssetIds = new Set();
+    for (const storylineFile of fs.readdirSync(path.join(root, 'archive', 'storylines'))) {
+        if (!storylineFile.endsWith('.json')) continue;
+        const storyline = JSON.parse(fs.readFileSync(path.join(root, 'archive', 'storylines', storylineFile), 'utf8'));
+        for (const ref of storyline.events || []) {
+            if (ref.enabled === false || ref.eventId !== eventId) continue;
+            const presentation = resolveEffectivePresentation({
+                root,
+                eventDir,
+                event,
+                eventId,
+                storylineId: storyline.id,
+                ref
+            }).presentation;
+            for (const assetId of presentation.assetIds || []) selectedAssetIds.add(assetId);
+        }
+    }
     for (const [assetId, reasonCode] of exclusions) {
         const asset = assets.find((candidate) => candidate.id === assetId);
         assert.ok(asset, `${eventId} should retain the reviewed asset ${assetId}`);
@@ -322,8 +333,16 @@ for (const [eventId, [personName, expectedAvatar]] of Object.entries(confirmedAv
         `${eventId} should reuse the confirmed avatar for ${personName}`
     );
 
-    for (const file of fs.readdirSync(path.join(eventDir, 'variants')).filter((name) => name.endsWith('.json'))) {
-        const variant = JSON.parse(fs.readFileSync(path.join(eventDir, 'variants', file), 'utf8'));
+    const presentationEntries = [
+        ['defaultPresentation', event.defaultPresentation || {}],
+        ...(fs.existsSync(path.join(eventDir, 'variants'))
+            ? fs
+                  .readdirSync(path.join(eventDir, 'variants'))
+                  .filter((name) => name.endsWith('.json'))
+                  .map((file) => [file, JSON.parse(fs.readFileSync(path.join(eventDir, 'variants', file), 'utf8'))])
+            : [])
+    ];
+    for (const [label, variant] of presentationEntries) {
         const variantFigure = resolveFigureRelations({
             eventFigures: event.figures,
             variantFigures: variant.figures,
@@ -334,7 +353,7 @@ for (const [eventId, [personName, expectedAvatar]] of Object.entries(confirmedAv
             assert.equal(
                 variantFigure.avatar,
                 expectedAvatar,
-                `${eventId}/${file} should reuse the confirmed avatar for ${personName}`
+                `${eventId}/${label} should reuse the confirmed avatar for ${personName}`
             );
         }
     }
