@@ -134,7 +134,7 @@ def _draw_table(draw: ImageDraw.ImageDraw, manifest: dict[str, Any], scene: str)
         _center_text(draw, (515, 328, 717, 350), "Suphx 实际弃牌", size=16, fill=(184, 216, 224), bold=True)
 
 
-def _draw_frame(manifest: dict[str, Any], scene: dict[str, Any]) -> Image.Image:
+def _draw_suphx_safe_tile_frame(manifest: dict[str, Any], scene: dict[str, Any]) -> Image.Image:
     width = int(manifest["render"]["width"])
     height = int(manifest["render"]["height"])
     image = Image.new("RGB", (width, height), (239, 238, 231))
@@ -186,7 +186,48 @@ def _ffconcat_escape(path: Path) -> str:
     return str(path).replace("'", "'\\''")
 
 
+def _validate_suphx_safe_tile(manifest: dict[str, Any]) -> None:
+    case_data = manifest.get("case")
+    if not isinstance(case_data, dict):
+        raise GameRecordError("Suphx safe-tile renderer requires a case object.")
+    tiles = case_data.get("visibleHand")
+    if not isinstance(tiles, list) or len(tiles) != 14 or not all(isinstance(tile, str) and tile for tile in tiles):
+        raise GameRecordError("Suphx safe-tile renderer requires visibleHand with 14 tile strings.")
+    actual_discard = case_data.get("actualDiscard")
+    actual_index = case_data.get("actualDiscardIndex")
+    if not isinstance(actual_discard, str) or not isinstance(actual_index, int):
+        raise GameRecordError("Suphx safe-tile renderer requires actualDiscard and actualDiscardIndex.")
+    if actual_index < 0 or actual_index >= len(tiles) or tiles[actual_index] != actual_discard:
+        raise GameRecordError("actualDiscardIndex must point to actualDiscard in visibleHand.")
+    if case_data.get("retainedSafeTile") not in tiles:
+        raise GameRecordError("retainedSafeTile must identify a tile in visibleHand.")
+    expected_scenes = ["intro", "candidates", "decision", "discard", "future", "result"]
+    actual_scenes = [scene.get("id") for scene in manifest.get("scenes", [])]
+    if actual_scenes != expected_scenes:
+        raise GameRecordError(
+            f"Suphx safe-tile renderer requires scenes in this order: {', '.join(expected_scenes)}."
+        )
+
+
+PAPER_CASE_RENDERERS = {
+    "suphx-safe-tile-v1": {
+        "draw_frame": _draw_suphx_safe_tile_frame,
+        "validate": _validate_suphx_safe_tile,
+    }
+}
+
+
+def _renderer(manifest: dict[str, Any]) -> dict[str, Any]:
+    renderer_id = str(manifest.get("renderer", ""))
+    renderer = PAPER_CASE_RENDERERS.get(renderer_id)
+    if renderer is None:
+        raise GameRecordError(f"Unsupported paper-case renderer: {renderer_id or '(missing)'}")
+    return renderer
+
+
 def render(manifest_path: Path, manifest: dict[str, Any]) -> None:
+    renderer = _renderer(manifest)
+    draw_frame = renderer["draw_frame"]
     output = ROOT / manifest["render"]["videoPath"]
     poster = ROOT / manifest["render"]["posterPath"]
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -205,7 +246,7 @@ def render(manifest_path: Path, manifest: dict[str, Any]) -> None:
         last_path: Path | None = None
         for index, scene in enumerate(scenes):
             frame_path = temp_dir / f"scene-{index:02d}.png"
-            _draw_frame(manifest, scene).save(frame_path, format="PNG", optimize=True)
+            draw_frame(manifest, scene).save(frame_path, format="PNG", optimize=True)
             lines.extend([f"file '{_ffconcat_escape(frame_path)}'", f"duration {float(scene['durationSeconds']):.9f}"])
             last_path = frame_path
         if last_path is None:
@@ -243,7 +284,7 @@ def render(manifest_path: Path, manifest: dict[str, Any]) -> None:
             raise GameRecordError(f"ffmpeg failed for {manifest['id']}: {completed.stderr.strip()}")
 
     poster_scene = next(scene for scene in scenes if scene["id"] == manifest["render"]["posterScene"])
-    _draw_frame(manifest, poster_scene).save(poster, format="PNG", optimize=True)
+    draw_frame(manifest, poster_scene).save(poster, format="PNG", optimize=True)
     if output.stat().st_size > int(manifest["render"]["maxBytes"]):
         raise GameRecordError(f"Rendered paper-case video exceeds maxBytes: {output}")
 
@@ -255,6 +296,8 @@ def validate_manifest(manifest_path: Path, manifest: dict[str, Any]) -> None:
         raise GameRecordError("Paper-case manifest must explicitly set completeGameReplay to false.")
     if manifest.get("outcomeKnown") is not False:
         raise GameRecordError("This partial case must explicitly state that no outcome is known.")
+    renderer = _renderer(manifest)
+    renderer["validate"](manifest)
     source_path = ROOT / manifest["evidence"]["localPath"]
     if not source_path.is_file():
         raise GameRecordError(f"Evidence file is missing: {source_path}")

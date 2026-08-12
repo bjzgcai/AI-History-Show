@@ -89,7 +89,7 @@ archive/events/<event-id>/game-records/
 
 ```text
 archive/events/<event-id>/paper-cases/
-└── paper-case.json        # 证据文件摘要、事实边界、场景时长与资产映射
+└── paper-case.json        # renderer、证据摘要、事实边界、场景时长与资产映射
 ```
 
 生成产物位于：
@@ -173,6 +173,8 @@ npm run validate:paper-cases
 ```
 
 `scripts/validate-paper-cases.js` 会拒绝把论文案例声明为完整回放，并校验双语限制说明、场景总时长、最终停留、证据 PDF 摘要、Archive 资产映射、MP4 和海报尺寸。
+
+每个论文案例还必须声明受支持的 `renderer`。当前仅支持 `suphx-safe-tile-v1`；Node 校验器与 Python 生成器都会校验该 renderer 所需的牌面字段和固定场景顺序。新增其他论文案例前，必须先实现并登记对应 renderer，不能自动套用 Suphx 麻将模板。
 
 ## 修改后的完整工作流
 

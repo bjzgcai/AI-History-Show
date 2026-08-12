@@ -3,6 +3,7 @@
   "id": "suphx-figure-13-safe-tile-case",
   "eventId": "2019-suphx",
   "caseType": "partial-paper-case",
+  "renderer": "suphx-safe-tile-v1",
   "completeGameReplay": false,
   "outcomeKnown": false,
   "title": {

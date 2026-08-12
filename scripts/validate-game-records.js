@@ -2,6 +2,7 @@
 'use strict';
 
 const crypto = require('node:crypto');
+const childProcess = require('node:child_process');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -29,6 +30,27 @@ function pngDimensions(filePath) {
     const signature = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
     if (header.length < 24 || !header.subarray(0, 8).equals(signature)) return null;
     return { width: header.readUInt32BE(16), height: header.readUInt32BE(20) };
+}
+
+function parseGameRecordWithProductionParser(root, manifestPath) {
+    const parserPath = path.join(root, 'scripts', 'game-evolution', 'verify_game_record.py');
+    const python = process.env.GAME_RECORD_PYTHON || 'python3';
+    const result = childProcess.spawnSync(python, [parserPath, manifestPath], {
+        cwd: root,
+        encoding: 'utf8',
+        maxBuffer: 1024 * 1024
+    });
+    if (result.error) {
+        throw new Error(`cannot run production parser with ${python}: ${result.error.message}`);
+    }
+    if (result.status !== 0) {
+        throw new Error((result.stderr || result.stdout || `parser exited with status ${result.status}`).trim());
+    }
+    try {
+        return JSON.parse(result.stdout);
+    } catch (error) {
+        throw new Error(`production parser returned invalid JSON: ${error.message}`);
+    }
 }
 
 function validateGameRecords(root) {
@@ -92,6 +114,23 @@ function validateGameRecords(root) {
                     `${relativeManifest}: source ${source.sourceId} does not match verification.mainLineSha256.`
                 );
             }
+        }
+
+        let parsedRecord;
+        try {
+            parsedRecord = parseGameRecordWithProductionParser(root, manifestPath);
+            if (parsedRecord.moveCount !== manifest.record.moveCount) {
+                errors.push(
+                    `${relativeManifest}: production parser move count mismatch; expected ${manifest.record.moveCount}, got ${parsedRecord.moveCount}.`
+                );
+            }
+            if (parsedRecord.mainLineSha256 !== expectedMainLine) {
+                errors.push(
+                    `${relativeManifest}: production parser main-line SHA-256 mismatch; expected ${expectedMainLine}, got ${parsedRecord.mainLineSha256}.`
+                );
+            }
+        } catch (error) {
+            errors.push(`${relativeManifest}: production parser verification failed: ${error.message}`);
         }
 
         const sources = readJson(path.join(eventDir, 'sources.json'));
@@ -160,7 +199,7 @@ function validateGameRecords(root) {
             }
         }
 
-        records.push({ id: manifest.id, eventId: eventName, manifestPath, manifest });
+        records.push({ id: manifest.id, eventId: eventName, manifestPath, manifest, parsedRecord });
     }
 
     return { errors, records };
@@ -179,6 +218,7 @@ if (require.main === module) main();
 
 module.exports = {
     pngDimensions,
+    parseGameRecordWithProductionParser,
     sha256File,
     validateGameRecords
 };

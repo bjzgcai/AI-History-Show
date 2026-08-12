@@ -24,12 +24,13 @@ FROM node:22-alpine AS build
 
 WORKDIR /app
 
-RUN apk add --no-cache python3 py3-pillow
+RUN apk add --no-cache python3 py3-pillow py3-pip
 
 COPY package*.json ./
 RUN npm ci
 
 COPY . .
+RUN pip3 install --no-cache-dir --break-system-packages -r requirements-game-record-validation.txt
 RUN npm run validate:archive && npm run generate && npm run build:static && npm prune --omit=dev
 
 FROM node:22-alpine AS admin

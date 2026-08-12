@@ -20,6 +20,58 @@ function pngDimensions(filePath) {
     return { width: header.readUInt32BE(16), height: header.readUInt32BE(20) };
 }
 
+const PAPER_CASE_RENDERERS = {
+    'suphx-safe-tile-v1': {
+        sceneIds: ['intro', 'candidates', 'decision', 'discard', 'future', 'result'],
+        validate(manifest, relativeManifest, errors) {
+            const caseData = manifest.case;
+            if (!Array.isArray(caseData?.visibleHand) || caseData.visibleHand.length !== 14) {
+                errors.push(`${relativeManifest}: Suphx renderer requires case.visibleHand with 14 tiles.`);
+                return;
+            }
+            if (!caseData.visibleHand.every((tile) => typeof tile === 'string' && tile.length > 0)) {
+                errors.push(`${relativeManifest}: Suphx visibleHand entries must be non-empty strings.`);
+            }
+            if (typeof caseData.actualDiscard !== 'string' || !caseData.actualDiscard) {
+                errors.push(`${relativeManifest}: Suphx renderer requires case.actualDiscard.`);
+            }
+            if (!Number.isInteger(caseData.actualDiscardIndex)) {
+                errors.push(`${relativeManifest}: Suphx renderer requires an integer case.actualDiscardIndex.`);
+            } else if (caseData.visibleHand[caseData.actualDiscardIndex] !== caseData.actualDiscard) {
+                errors.push(`${relativeManifest}: actualDiscardIndex must point to actualDiscard in visibleHand.`);
+            }
+            if (
+                typeof caseData.retainedSafeTile !== 'string' ||
+                !caseData.visibleHand.includes(caseData.retainedSafeTile)
+            ) {
+                errors.push(`${relativeManifest}: retainedSafeTile must identify a tile in visibleHand.`);
+            }
+        }
+    }
+};
+
+function validatePaperCaseRenderer(manifest, relativeManifest = 'paper-case.json') {
+    const errors = [];
+    const renderer = PAPER_CASE_RENDERERS[manifest.renderer];
+    if (!renderer) {
+        errors.push(`${relativeManifest}: unsupported paper-case renderer: ${manifest.renderer || '(missing)'}.`);
+        return { errors, renderer: null };
+    }
+    renderer.validate(manifest, relativeManifest, errors);
+    if (Array.isArray(manifest.scenes)) {
+        const sceneIds = manifest.scenes.map((scene) => scene.id);
+        if (new Set(sceneIds).size !== sceneIds.length) {
+            errors.push(`${relativeManifest}: scene IDs must be unique.`);
+        }
+        if (JSON.stringify(sceneIds) !== JSON.stringify(renderer.sceneIds)) {
+            errors.push(
+                `${relativeManifest}: renderer ${manifest.renderer} requires scenes in this order: ${renderer.sceneIds.join(', ')}.`
+            );
+        }
+    }
+    return { errors, renderer };
+}
+
 function validatePaperCases(root) {
     const eventsDir = path.join(root, 'archive', 'events');
     const errors = [];
@@ -42,6 +94,8 @@ function validatePaperCases(root) {
         if (manifest.caseType !== 'partial-paper-case') {
             errors.push(`${relativeManifest}: caseType must be partial-paper-case.`);
         }
+        const rendererResult = validatePaperCaseRenderer(manifest, relativeManifest);
+        errors.push(...rendererResult.errors);
         if (manifest.completeGameReplay !== false) {
             errors.push(`${relativeManifest}: completeGameReplay must be false.`);
         }
@@ -138,4 +192,4 @@ function main() {
 
 if (require.main === module) main();
 
-module.exports = { validatePaperCases };
+module.exports = { PAPER_CASE_RENDERERS, validatePaperCaseRenderer, validatePaperCases };
