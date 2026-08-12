@@ -98,5 +98,45 @@
       "en": "The user supplied this photograph for the figure avatar and portrait display in the AlphaZero event."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-alphazero-official-top20-archive",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "DeepMind AlphaZero 对 Stockfish 精选对局档案",
+      "en": "DeepMind AlphaZero versus Stockfish selected-game archive"
+    },
+    "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Open-Source/alphazero-resources/alphazero_stockfish_top20.zip",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "DeepMind 官方开放资源；下载 ZIP 的 SHA-256 为 ef73efef6bd3011299a130262c0610d2f5590273f98e896718af846a98a63a60。",
+      "en": "Official DeepMind open resource; the downloaded ZIP has SHA-256 ef73efef6bd3011299a130262c0610d2f5590273f98e896718af846a98a63a60."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-alphazero-top10-pgn-mentor-fish",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "AlphaZero 对 Stockfish top-10 PGN 固定副本",
+      "en": "Pinned AlphaZero versus Stockfish top-10 PGN copy"
+    },
+    "url": "https://github.com/Sakuleta/MentorFish/blob/acc28c21/knowledge/pgn/alphazero_vs_stockfish_top10.pgn",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "固定 Git 提交中的独立托管副本；round 6854337384941683259 的 97 个半回合与 DeepMind 官方档案一致。",
+      "en": "Independently hosted copy at a pinned Git commit; all 97 plies for round 6854337384941683259 match the official DeepMind archive."
+    },
+    "purpose": "alternate-access"
   }
 ]

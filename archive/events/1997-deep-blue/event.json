@@ -121,6 +121,39 @@
           "en": "Open article record",
           "zh": "打开论文记录"
         }
+      },
+      {
+        "type": "gameEvolutionVideo",
+        "recordId": "deep-blue-kasparov-1997-game-6",
+        "videoAssetId": "asset-1997-deep-blue-game-6-video",
+        "posterAssetId": "asset-1997-deep-blue-game-6-poster",
+        "recordFormat": "pgn",
+        "recordLabel": {
+          "zh": "1997 年人机重赛第 6 局完整 PGN 主线",
+          "en": "Complete PGN main line of the 1997 rematch, Game 6"
+        },
+        "title": {
+          "zh": "深蓝对卡斯帕罗夫第 6 局演化",
+          "en": "Deep Blue versus Kasparov, Game 6 evolution"
+        },
+            "description": {
+                "zh": "依据两份逐手一致的 PGN 副本重绘 37 个半回合，并用第三方逐手动画抽查，展示深蓝如何在决定局中迅速形成战术优势。",
+                "en": "An original redraw of all 37 plies matched across two PGN copies and spot-checked against a third-party move animation, showing how Deep Blue built a rapid tactical advantage in the deciding game."
+            },
+        "license": {
+          "zh": "本地原创棋盘重绘；仅使用可核验的走子事实，不复用转播或第三方画面。",
+          "en": "Original local board redraw using verified move facts only; no broadcast or third-party frames are reused."
+        },
+        "usage": {
+          "zh": "用于 AI 棋牌分支的可拖动对局演示。",
+          "en": "Interactive game replay for the gaming AI storyline."
+        },
+        "duration": {
+          "zh": "36 秒",
+          "en": "36 seconds"
+        },
+        "fps": 24,
+        "generator": "scripts/game-evolution/render_game_record.py"
       }
     ],
     "assetIds": [
@@ -137,7 +170,10 @@
       "source-murray-campbell-ibm-research",
       "source-mastering-the-game-computer-history-museum",
       "source-ibm100-deep-blue",
-      "source-feng-hsiung-hsu-chm-portrait"
+      "source-feng-hsiung-hsu-chm-portrait",
+      "source-deep-blue-game-6-pgn-jwher",
+      "source-deep-blue-game-6-pgn-chess-review",
+      "source-deep-blue-game-6-commons"
     ],
     "claimIds": [
       "claim-legacy-achievement-summary",

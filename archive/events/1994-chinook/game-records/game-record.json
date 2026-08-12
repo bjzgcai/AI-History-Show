@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "chinook-tinsley-boston-1994-game-2",
+  "eventId": "1994-chinook",
+  "gameType": "draughts",
+  "title": {
+    "zh": "廷斯利对 Chinook，Boston 1994 第 2 局",
+    "en": "Tinsley versus Chinook, Boston 1994 Game 2"
+  },
+  "round": {
+    "zh": "第 2 局",
+    "en": "Game 2"
+  },
+  "location": {
+    "zh": "美国波士顿",
+    "en": "Boston, United States"
+  },
+  "record": {
+    "path": "chinook-tinsley-boston-1994-game-2.pdn",
+    "format": "pdn",
+    "sha256": "e40b17a5d7325668cca071468f29827bd221b427f181d0f769e7bb7f3b051ed3",
+    "moveCount": 96
+  },
+  "players": [
+    {
+      "side": "black",
+      "name": {
+        "zh": "马里恩·廷斯利",
+        "en": "Marion Tinsley"
+      },
+      "kind": "human"
+    },
+    {
+      "side": "white",
+      "name": {
+        "zh": "Chinook",
+        "en": "Chinook"
+      },
+      "kind": "computer"
+    }
+  ],
+  "result": {
+    "zh": "48 回合后和棋",
+    "en": "Draw after 48 moves"
+  },
+  "sources": [
+    {
+      "sourceId": "source-chinook-boston-1994-pdn-checkerboard",
+      "url": "https://github.com/eygilbert/CheckerBoard/blob/691ab495/games/tinsley.pdn",
+      "role": "record",
+      "checkedAt": "2026-08-11",
+      "mainLineSha256": "e5c5994d5b0964321c5a88e0890cb2d19043bcc83e3c83ecc3ca0985eac3adde",
+      "notes": {
+        "zh": "固定提交中的廷斯利对局集；选取 Boston 1994 第 2 局的完整 96 个半回合。",
+        "en": "Tinsley game collection at a pinned commit; the complete 96-ply Boston 1994 Game 2 is selected."
+      }
+    },
+    {
+      "sourceId": "source-chinook-boston-1994-pdn-raven",
+      "url": "https://github.com/bcorfman/raven-checkers/blob/da7708ce/training/tinsley.pdn",
+      "role": "cross-check",
+      "checkedAt": "2026-08-11",
+      "mainLineSha256": "e5c5994d5b0964321c5a88e0890cb2d19043bcc83e3c83ecc3ca0985eac3adde",
+      "notes": {
+        "zh": "第二个固定提交中的独立副本；赛事、执子、结果和全部走子一致。",
+        "en": "Independent copy at a second pinned commit; event, colors, result, and every move match."
+      }
+    },
+    {
+      "sourceId": "source-chinook-project-home",
+      "url": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+      "role": "event-context",
+      "checkedAt": "2026-08-11",
+      "notes": {
+        "zh": "阿尔伯塔大学 Chinook 官方项目页用于核对系统与 1994 年赛事背景。",
+        "en": "Official University of Alberta Chinook project page used to corroborate the system and 1994 match context."
+      }
+    }
+  ],
+  "verification": {
+    "status": "verified",
+    "method": {
+      "zh": "比较两个固定提交中的 96 个半回合，按美式跳棋规则验证强制吃子、连跳与升王；历史 PDN 中相邻普通走子偶尔也使用 x，因此吃子以棋盘几何判定。",
+      "en": "Compare all 96 plies across two pinned copies and validate mandatory captures, multi-jumps, and crowning under American Checkers rules; because the historical PDN occasionally uses x for adjacent steps, captures are determined from board geometry."
+    },
+    "matchedRecordSources": 2,
+    "mainLineSha256": "e5c5994d5b0964321c5a88e0890cb2d19043bcc83e3c83ecc3ca0985eac3adde"
+  },
+  "render": {
+    "videoPath": "resources/videos/game-evolution/1994-chinook/chinook-tinsley-boston-1994-game-2.mp4",
+    "posterPath": "resources/images/game-evolution/1994-chinook/chinook-tinsley-boston-1994-game-2.png",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "durationSeconds": 54,
+    "openingHoldSeconds": 1.5,
+    "endHoldSeconds": 3.5,
+    "highlights": [
+      {
+        "move": 58,
+        "holdSeconds": 2
+      },
+      {
+        "move": 59,
+        "holdSeconds": 2
+      }
+    ],
+    "posterMove": 59,
+    "maxBytes": 5242880
+  },
+  "archive": {
+    "videoAssetId": "asset-1994-chinook-boston-game-2-video",
+    "posterAssetId": "asset-1994-chinook-boston-game-2-poster"
+  }
+}

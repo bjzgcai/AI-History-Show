@@ -289,6 +289,72 @@
     "editable": true
   },
   {
+    "id": "asset-2019-suphx-figure-13-case-video",
+    "type": "video",
+    "path": "resources/videos/game-evolution/2019-suphx/suphx-figure-13-safe-tile-case.mp4",
+    "role": "paper-case-video",
+    "caption": {
+      "zh": "Suphx 图 13 论文局部案例动画",
+      "en": "Suphx Figure 13 partial paper-case animation"
+    },
+    "subcaption": {
+      "zh": "依据论文第 22 页图 13 原创重绘的单一决策状态，不是完整牌局回放。",
+      "en": "Original redraw of the single decision state in Figure 13 on page 22; not a complete-game replay."
+    },
+    "sourceId": "source-suphx-arxiv-paper",
+    "sourceName": {
+      "zh": "Suphx 论文图 13",
+      "en": "Suphx paper, Figure 13"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2003.13590",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目原创重绘；只使用论文披露的牌面与策略事实，不复用论文截图像素。",
+        "en": "Original project redraw using only tile-state and strategy facts disclosed by the paper; no paper-image pixels are reused."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于解释 Suphx 在论文局部案例中的攻守权衡。",
+      "en": "Used to explain Suphx's attack-defense tradeoff in a partial paper case."
+    },
+    "usage": ["variant:gaming-ai"],
+    "editable": true
+  },
+  {
+    "id": "asset-2019-suphx-figure-13-case-poster",
+    "type": "image",
+    "path": "resources/images/game-evolution/2019-suphx/suphx-figure-13-safe-tile-case.png",
+    "role": "paper-case-poster",
+    "caption": {
+      "zh": "Suphx 图 13 局部案例动画海报",
+      "en": "Suphx Figure 13 partial case animation poster"
+    },
+    "subcaption": {
+      "zh": "原创牌面重绘，明确标注为论文局部案例。",
+      "en": "Original tile redraw explicitly labeled as a partial paper case."
+    },
+    "sourceId": "source-suphx-arxiv-paper",
+    "sourceName": {
+      "zh": "Suphx 论文图 13",
+      "en": "Suphx paper, Figure 13"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2003.13590",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目原创重绘；不复用论文截图像素。",
+        "en": "Original project redraw; no paper-image pixels are reused."
+      }
+    },
+    "displayUsage": {
+      "zh": "作为 Suphx 论文局部案例动画的首帧海报。",
+      "en": "Poster frame for the Suphx partial paper-case animation."
+    },
+    "usage": ["variant:gaming-ai"],
+    "editable": true
+  },
+  {
     "id": "asset-2019-suphx-audio-zh-original-v1",
     "type": "audio",
     "role": "audio-narration",

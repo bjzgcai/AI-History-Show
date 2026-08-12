@@ -211,7 +211,8 @@ theta = -lng * (Math.PI / 180)
 
 - 通用事件讲解统一使用 `assets.json` 中的中英文 `audio` 资产，由对象存储提供正式播放地址。
 - `defaultPresentation` 不再配置旧的 `videoUrl` 或 `resources.videos`；统一详情页不展示通用事件讲解视频。
-- 视频只保留给确有动态演示价值的独立 `achievement.visualModules`，例如 `gameEvolutionVideo`，不能作为事件讲解音频的替代来源。
+- 视频只保留给确有动态演示价值的独立 `achievement.visualModules`，不能作为事件讲解音频的替代来源。完整、双源核验的对局使用 `gameEvolutionVideo`；论文只披露局部状态时使用 `paperCaseVideo`，并必须明确标注“不是完整牌局回放”。
+- AI 棋牌视频的 manifest、证据要求、生成命令、当前清单与存储策略统一记录在 `scripts/README-game-evolution-video.md`。证据不足的事件不得把概念图或推测动作包装成真实回放。
 - 视频播放能力集中在 `shared/video-player.js`。`index.html` 不得静态加载该模块，视频标签使用 `data-video-src` 和 `preload="none"`，由模块进入可视区域或用户触发播放时再设置 `src`。
 - `resources/videos/*.json` 是历史候选资料，不进入静态发布包，也不是当前生产展示的数据源；`resources/videos/game-evolution/` 可继续保存互动演示需要的素材。
 

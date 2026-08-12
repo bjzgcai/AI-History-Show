@@ -13,6 +13,7 @@ The schemas define file shape and required fields. Cross-file checks, such as wh
 | `claim.schema.json`     | `archive/events/{eventId}/claims.json`                                     |
 | `source.schema.json`    | `archive/events/{eventId}/sources.json`                                    |
 | `asset.schema.json`     | `archive/events/{eventId}/assets.json`                                     |
+| `game-record.schema.json` | `archive/events/{eventId}/game-records/game-record.json`                  |
 | `quiz.schema.json`      | `archive/events/{eventId}/quizzes.json`                                    |
 | `variant.schema.json`   | `archive/events/{eventId}/variants/{storylineId}.json`                     |
 | `storyline.schema.json` | `archive/storylines/{storylineId}.json`                                    |
