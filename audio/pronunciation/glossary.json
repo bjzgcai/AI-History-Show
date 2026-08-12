@@ -1,0 +1,2848 @@
+{
+    "schemaVersion": 1,
+    "verificationLevels": {
+        "issue-confirmed": {
+            "label": "审听问题已确认",
+            "basis": "Issue 或审听备注明确给出了目标读音。"
+        },
+        "canonical": {
+            "label": "标准读法",
+            "basis": "由官方全称、标准字母数字读法或普通英语词读法确定。"
+        },
+        "usage-confirmed": {
+            "label": "领域通行读法",
+            "basis": "按人工智能与计算机领域的公开通行读法记录。"
+        },
+        "name-reviewed": {
+            "label": "姓名已初审",
+            "basis": "按姓名语言背景与公开使用习惯记录，生成后仍需重点审听。"
+        },
+        "pending-official-audio": {
+            "label": "待官方音频核验",
+            "basis": "拼写无法唯一确定读法，需在作者或机构公开音频中继续核验。"
+        }
+    },
+    "ignoredCandidateTerms": ["A", "B", "C", "E/T", "H", "J", "P", "Q", "S", "UK", "ZIP", "a", "exp", "s", "t", "x1"],
+    "entries": [
+        {
+            "id": "ai",
+            "term": "AI",
+            "aliases": ["AI"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "A I" }
+        },
+        {
+            "id": "api",
+            "term": "API",
+            "aliases": ["API"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "A P I" }
+        },
+        {
+            "id": "np",
+            "term": "NP",
+            "aliases": ["NP"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "N P" }
+        },
+        {
+            "id": "vc",
+            "term": "VC",
+            "aliases": ["VC"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "V C" }
+        },
+        {
+            "id": "bp",
+            "term": "BP",
+            "aliases": ["BP"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "B P" }
+        },
+        {
+            "id": "cnn",
+            "term": "CNN",
+            "aliases": ["CNN"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "C N N" }
+        },
+        {
+            "id": "gan",
+            "term": "GAN",
+            "aliases": ["GAN"],
+            "category": "acronym",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "gan, rhyming with can" }
+        },
+        {
+            "id": "r-cnn",
+            "term": "R-CNN",
+            "aliases": ["R-CNN"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "R C N N" }
+        },
+        {
+            "id": "fast-r-cnn",
+            "term": "Fast R-CNN",
+            "aliases": ["Fast R-CNN"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "fast R C N N" }
+        },
+        {
+            "id": "faster-r-cnn",
+            "term": "Faster R-CNN",
+            "aliases": ["Faster R-CNN"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "faster R C N N" }
+        },
+        {
+            "id": "mask-r-cnn",
+            "term": "Mask R-CNN",
+            "aliases": ["Mask R-CNN"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "mask R C N N" }
+        },
+        {
+            "id": "lstm",
+            "term": "LSTM",
+            "aliases": ["LSTM"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "L S T M" }
+        },
+        {
+            "id": "rnn",
+            "term": "RNN",
+            "aliases": ["RNN"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "R N N" }
+        },
+        {
+            "id": "dqn",
+            "term": "DQN",
+            "aliases": ["DQN"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "D Q N" }
+        },
+        {
+            "id": "ddpg",
+            "term": "DDPG",
+            "aliases": ["DDPG"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "D D P G" }
+        },
+        {
+            "id": "ppo",
+            "term": "PPO",
+            "aliases": ["PPO"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "P P O" }
+        },
+        {
+            "id": "a3c",
+            "term": "A3C",
+            "aliases": ["A3C"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "A three C" }
+        },
+        {
+            "id": "td",
+            "term": "TD",
+            "aliases": ["TD"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "T D" }
+        },
+        {
+            "id": "td3",
+            "term": "TD3",
+            "aliases": ["TD3"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "T D three" }
+        },
+        {
+            "id": "sac",
+            "term": "SAC",
+            "aliases": ["SAC"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "S A C" }
+        },
+        {
+            "id": "sarsa",
+            "term": "SARSA",
+            "aliases": ["SARSA"],
+            "category": "acronym",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "SAR-sah" }
+        },
+        {
+            "id": "reinforce",
+            "term": "REINFORCE",
+            "aliases": ["REINFORCE"],
+            "category": "acronym",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "reinforce" }
+        },
+        {
+            "id": "rlhf",
+            "term": "RLHF",
+            "aliases": ["RLHF"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "R L H F" }
+        },
+        {
+            "id": "q-learning",
+            "term": "Q-learning",
+            "aliases": ["Q-learning", "Q-Learning"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "Q learning" }
+        },
+        {
+            "id": "actor-critic",
+            "term": "actor-critic",
+            "aliases": ["actor-critic", "Actor-Critic", "Actor-critic"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "actor critic" }
+        },
+        {
+            "id": "alpha-beta",
+            "term": "alpha-beta",
+            "aliases": ["alpha-beta", "Alpha-beta"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "alpha beta" }
+        },
+        {
+            "id": "bert",
+            "term": "BERT",
+            "aliases": ["BERT"],
+            "category": "acronym",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "Bert" }
+        },
+        {
+            "id": "gpt",
+            "term": "GPT",
+            "aliases": ["GPT"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "G P T" }
+        },
+        {
+            "id": "gpt-2",
+            "term": "GPT-2",
+            "aliases": ["GPT-2"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "G P T two" }
+        },
+        {
+            "id": "gpt-3",
+            "term": "GPT-3",
+            "aliases": ["GPT-3"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "G P T three" }
+        },
+        {
+            "id": "gpt-4",
+            "term": "GPT-4",
+            "aliases": ["GPT-4"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "G P T four" }
+        },
+        {
+            "id": "llm",
+            "term": "LLM",
+            "aliases": ["LLM"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "L L M" }
+        },
+        {
+            "id": "nlp",
+            "term": "NLP",
+            "aliases": ["NLP"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "N L P" }
+        },
+        {
+            "id": "cbow",
+            "term": "CBOW",
+            "aliases": ["CBOW"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "C B O W" }
+        },
+        {
+            "id": "word2vec",
+            "term": "Word2Vec",
+            "aliases": ["Word2Vec", "word2vec"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "word to vec" }
+        },
+        {
+            "id": "glove",
+            "term": "GloVe",
+            "aliases": ["GloVe"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "glove" }
+        },
+        {
+            "id": "clip",
+            "term": "CLIP",
+            "aliases": ["CLIP"],
+            "category": "acronym",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "clip" }
+        },
+        {
+            "id": "blip-2",
+            "term": "BLIP-2",
+            "aliases": ["BLIP-2", "Blip-2"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "blip two" }
+        },
+        {
+            "id": "llava",
+            "term": "LLaVA",
+            "aliases": ["LLaVA"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "lava" }
+        },
+        {
+            "id": "llama",
+            "term": "LLaMA",
+            "aliases": ["LLaMA", "LLaMa"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "llama" }
+        },
+        {
+            "id": "palm",
+            "term": "PaLM",
+            "aliases": ["PaLM"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "palm" }
+        },
+        {
+            "id": "palm-e",
+            "term": "PaLM-E",
+            "aliases": ["PaLM-E"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "palm E" }
+        },
+        {
+            "id": "relu",
+            "term": "ReLU",
+            "aliases": ["ReLU"],
+            "category": "acronym",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "ree loo" }
+        },
+        {
+            "id": "vae",
+            "term": "VAE",
+            "aliases": ["VAE"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "V A E" }
+        },
+        {
+            "id": "pca",
+            "term": "PCA",
+            "aliases": ["PCA"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "P C A" }
+        },
+        {
+            "id": "kernel-pca",
+            "term": "Kernel PCA",
+            "aliases": ["Kernel PCA"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "kernel P C A" }
+        },
+        {
+            "id": "lda",
+            "term": "LDA",
+            "aliases": ["LDA"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "L D A" }
+        },
+        {
+            "id": "lle",
+            "term": "LLE",
+            "aliases": ["LLE"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "L L E" }
+        },
+        {
+            "id": "nmf",
+            "term": "NMF",
+            "aliases": ["NMF"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "N M F" }
+        },
+        {
+            "id": "t-sne",
+            "term": "t-SNE",
+            "aliases": ["t-SNE"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "T S N E" }
+        },
+        {
+            "id": "svm",
+            "term": "SVM",
+            "aliases": ["SVM"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "S V M" }
+        },
+        {
+            "id": "knn",
+            "term": "KNN",
+            "aliases": ["KNN"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "K N N" }
+        },
+        {
+            "id": "k-means",
+            "term": "k-means",
+            "aliases": ["k-means", "K-means"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "K means" }
+        },
+        {
+            "id": "dbscan",
+            "term": "DBSCAN",
+            "aliases": ["DBSCAN"],
+            "category": "acronym",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "D B scan" }
+        },
+        {
+            "id": "minpts",
+            "term": "MinPts",
+            "aliases": ["MinPts"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "min points" }
+        },
+        {
+            "id": "l1",
+            "term": "L1",
+            "aliases": ["L1"],
+            "category": "mathematical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "L one" }
+        },
+        {
+            "id": "l2",
+            "term": "L2",
+            "aliases": ["L2"],
+            "category": "mathematical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "L two" }
+        },
+        {
+            "id": "c4-5",
+            "term": "C4.5",
+            "aliases": ["C4.5"],
+            "category": "algorithm-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "C four point five" }
+        },
+        {
+            "id": "id3",
+            "term": "ID3",
+            "aliases": ["ID3"],
+            "category": "algorithm-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "I D three" }
+        },
+        {
+            "id": "cart",
+            "term": "CART",
+            "aliases": ["CART"],
+            "category": "acronym",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "cart" }
+        },
+        {
+            "id": "adaboost",
+            "term": "AdaBoost",
+            "aliases": ["AdaBoost"],
+            "category": "algorithm-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "words", "spoken": "Ada boost" }
+        },
+        {
+            "id": "xgboost",
+            "term": "XGBoost",
+            "aliases": ["XGBoost"],
+            "category": "algorithm-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "X G boost" }
+        },
+        {
+            "id": "lightgbm",
+            "term": "LightGBM",
+            "aliases": ["LightGBM"],
+            "category": "algorithm-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "light G B M" }
+        },
+        {
+            "id": "crf",
+            "term": "CRF",
+            "aliases": ["CRF"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "C R F" }
+        },
+        {
+            "id": "hessian",
+            "term": "Hessian",
+            "aliases": ["Hessian"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "HESH-un" }
+        },
+        {
+            "id": "sift",
+            "term": "SIFT",
+            "aliases": ["SIFT"],
+            "category": "acronym",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "sift" }
+        },
+        {
+            "id": "surf",
+            "term": "SURF",
+            "aliases": ["SURF"],
+            "category": "acronym",
+            "hintRequired": true,
+            "verification": "issue-confirmed",
+            "evidence": [
+                {
+                    "type": "issue",
+                    "url": "https://github.com/bjzgcai/AI-History-Show/issues/98",
+                    "note": "审听发现读法不一致；统一按英语单词 surf 读。"
+                }
+            ],
+            "reading": { "type": "word", "spoken": "surf, /sɜːrf/" }
+        },
+        {
+            "id": "hog",
+            "term": "HOG",
+            "aliases": ["HOG"],
+            "category": "acronym",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "hog" }
+        },
+        {
+            "id": "yolo",
+            "term": "YOLO",
+            "aliases": ["YOLO"],
+            "category": "acronym",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "YO-loh" }
+        },
+        {
+            "id": "ssd",
+            "term": "SSD",
+            "aliases": ["SSD"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "S S D" }
+        },
+        {
+            "id": "fpn",
+            "term": "FPN",
+            "aliases": ["FPN"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "F P N" }
+        },
+        {
+            "id": "retinanet",
+            "term": "RetinaNet",
+            "aliases": ["RetinaNet"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "retina net" }
+        },
+        {
+            "id": "fcn",
+            "term": "FCN",
+            "aliases": ["FCN"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "F C N" }
+        },
+        {
+            "id": "deeplab",
+            "term": "DeepLab",
+            "aliases": ["DeepLab"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "deep lab" }
+        },
+        {
+            "id": "u-net",
+            "term": "U-Net",
+            "aliases": ["U-Net"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "U net" }
+        },
+        {
+            "id": "vgg",
+            "term": "VGG",
+            "aliases": ["VGG"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "V G G" }
+        },
+        {
+            "id": "alexnet",
+            "term": "AlexNet",
+            "aliases": ["AlexNet"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "Alex net" }
+        },
+        {
+            "id": "lenet",
+            "term": "LeNet",
+            "aliases": ["LeNet"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "words", "spoken": "Leh net" }
+        },
+        {
+            "id": "resnet",
+            "term": "ResNet",
+            "aliases": ["ResNet"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "words", "spoken": "rez net" }
+        },
+        {
+            "id": "densenet",
+            "term": "DenseNet",
+            "aliases": ["DenseNet"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "dense net" }
+        },
+        {
+            "id": "googlenet",
+            "term": "GoogLeNet",
+            "aliases": ["GoogLeNet"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "words", "spoken": "Google net" }
+        },
+        {
+            "id": "mobilenets",
+            "term": "MobileNets",
+            "aliases": ["MobileNets"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "mobile nets" }
+        },
+        {
+            "id": "mobilenet-v2",
+            "term": "MobileNetV2",
+            "aliases": ["MobileNetV2"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "mobile net V two" }
+        },
+        {
+            "id": "inception",
+            "term": "Inception",
+            "aliases": ["Inception"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "inception" }
+        },
+        {
+            "id": "imagenet",
+            "term": "ImageNet",
+            "aliases": ["ImageNet", "ImageNet 2012"],
+            "category": "dataset-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "image net" }
+        },
+        {
+            "id": "wordnet",
+            "term": "WordNet",
+            "aliases": ["WordNet"],
+            "category": "dataset-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "word net" }
+        },
+        {
+            "id": "ms-coco",
+            "term": "MS COCO",
+            "aliases": ["MS COCO"],
+            "category": "dataset-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "M S cocoa" }
+        },
+        {
+            "id": "roi",
+            "term": "RoI",
+            "aliases": ["RoI"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "initialism", "spoken": "R O I" }
+        },
+        {
+            "id": "roialign",
+            "term": "RoIAlign",
+            "aliases": ["RoIAlign"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "R O I align" }
+        },
+        {
+            "id": "rgb",
+            "term": "RGB",
+            "aliases": ["RGB"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "R G B" }
+        },
+        {
+            "id": "gpu",
+            "term": "GPU",
+            "aliases": ["GPU"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "G P U" }
+        },
+        {
+            "id": "tpu-v4",
+            "term": "TPU v4",
+            "aliases": ["TPU v4"],
+            "category": "hardware-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "T P U V four" }
+        },
+        {
+            "id": "nas",
+            "term": "NAS",
+            "aliases": ["NAS"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "N A S" }
+        },
+        {
+            "id": "automl",
+            "term": "AutoML",
+            "aliases": ["AutoML"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "auto M L" }
+        },
+        {
+            "id": "gnn",
+            "term": "GNN",
+            "aliases": ["GNN"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "G N N" }
+        },
+        {
+            "id": "gcn",
+            "term": "GCN",
+            "aliases": ["GCN"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "G C N" }
+        },
+        {
+            "id": "gat",
+            "term": "GAT",
+            "aliases": ["GAT"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "G A T" }
+        },
+        {
+            "id": "se",
+            "term": "SE",
+            "aliases": ["SE"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "S E" }
+        },
+        {
+            "id": "dcgan",
+            "term": "DCGAN",
+            "aliases": ["DCGAN"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "D C gan" }
+        },
+        {
+            "id": "cyclegan",
+            "term": "CycleGAN",
+            "aliases": ["CycleGAN"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "cycle gan" }
+        },
+        {
+            "id": "conditional-gan",
+            "term": "Conditional GAN",
+            "aliases": ["Conditional GAN"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "conditional gan" }
+        },
+        {
+            "id": "stylegan",
+            "term": "StyleGAN",
+            "aliases": ["StyleGAN"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "style gan" }
+        },
+        {
+            "id": "controlnet",
+            "term": "ControlNet",
+            "aliases": ["ControlNet"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "control net" }
+        },
+        {
+            "id": "simmim",
+            "term": "SimMIM",
+            "aliases": ["SimMIM", "Simmim"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "sim M I M" }
+        },
+        {
+            "id": "swin",
+            "term": "Swin",
+            "aliases": ["Swin"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "swin" }
+        },
+        {
+            "id": "swin-transformer",
+            "term": "Swin Transformer",
+            "aliases": ["Swin Transformer"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "words", "spoken": "swin transformer" }
+        },
+        {
+            "id": "swin-transformer-v2",
+            "term": "Swin Transformer V2",
+            "aliases": ["Swin Transformer V2", "Transformer V2"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "swin transformer V two" }
+        },
+        {
+            "id": "transformer",
+            "term": "Transformer",
+            "aliases": ["Transformer", "Transformers"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "transformer" }
+        },
+        {
+            "id": "whisper",
+            "term": "Whisper",
+            "aliases": ["Whisper"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "whisper" }
+        },
+        {
+            "id": "stable-diffusion",
+            "term": "Stable Diffusion",
+            "aliases": ["Stable Diffusion"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "stable diffusion" }
+        },
+        {
+            "id": "gen-1",
+            "term": "Gen-1",
+            "aliases": ["Gen-1"],
+            "category": "product-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "gen one" }
+        },
+        {
+            "id": "gen-2",
+            "term": "Gen-2",
+            "aliases": ["Gen-2", "Gen2"],
+            "category": "product-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "gen two" }
+        },
+        {
+            "id": "esm-2",
+            "term": "ESM-2",
+            "aliases": ["ESM-2"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "E S M two" }
+        },
+        {
+            "id": "esmfold",
+            "term": "ESMFold",
+            "aliases": ["ESMFold"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "E S M fold" }
+        },
+        {
+            "id": "alphafold",
+            "term": "AlphaFold",
+            "aliases": ["AlphaFold"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "alpha fold" }
+        },
+        {
+            "id": "alphafold2",
+            "term": "AlphaFold2",
+            "aliases": ["AlphaFold2"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "alpha fold two" }
+        },
+        {
+            "id": "casp14",
+            "term": "CASP14",
+            "aliases": ["CASP14"],
+            "category": "benchmark-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "casp fourteen" }
+        },
+        {
+            "id": "alphago",
+            "term": "AlphaGo",
+            "aliases": ["AlphaGo"],
+            "category": "system-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "alpha go" }
+        },
+        {
+            "id": "alphago-zero",
+            "term": "AlphaGo Zero",
+            "aliases": ["AlphaGo Zero"],
+            "category": "system-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "alpha go zero" }
+        },
+        {
+            "id": "alphazero",
+            "term": "AlphaZero",
+            "aliases": ["AlphaZero"],
+            "category": "system-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "alpha zero" }
+        },
+        {
+            "id": "muzero",
+            "term": "MuZero",
+            "aliases": ["MuZero"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "words", "spoken": "mew zero" }
+        },
+        {
+            "id": "alphatensor",
+            "term": "AlphaTensor",
+            "aliases": ["AlphaTensor"],
+            "category": "system-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "alpha tensor" }
+        },
+        {
+            "id": "katago",
+            "term": "KataGo",
+            "aliases": ["KataGo"],
+            "category": "system-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "kata go" }
+        },
+        {
+            "id": "sgf",
+            "term": "SGF",
+            "aliases": ["SGF"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "S G F" }
+        },
+        {
+            "id": "eliza",
+            "term": "ELIZA",
+            "aliases": ["ELIZA"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "issue-confirmed",
+            "evidence": [
+                {
+                    "type": "issue",
+                    "url": "https://github.com/bjzgcai/AI-History-Show/issues/98",
+                    "note": "明确要求统一为 /ɪˈlaɪzə/，按英语人名 Eliza 读，不逐字母拼读。"
+                }
+            ],
+            "reading": { "type": "name", "spoken": "Eliza, /ɪˈlaɪzə/" }
+        },
+        {
+            "id": "doctor",
+            "term": "DOCTOR",
+            "aliases": ["DOCTOR"],
+            "category": "system-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "doctor" }
+        },
+        {
+            "id": "shrdlu",
+            "term": "SHRDLU",
+            "aliases": ["SHRDLU"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "pending-official-audio",
+            "reading": { "type": "provisional", "spoken": "SHURD-loo" }
+        },
+        {
+            "id": "dendral",
+            "term": "DENDRAL",
+            "aliases": ["DENDRAL"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "DEN-dral" }
+        },
+        {
+            "id": "xcon",
+            "term": "XCON",
+            "aliases": ["XCON"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "issue-confirmed",
+            "evidence": [
+                {
+                    "type": "issue",
+                    "url": "https://github.com/bjzgcai/AI-History-Show/issues/98",
+                    "note": "除审听备注指定的倒数第二句外，目标读音为 /ˈeks.kɑːn/。例外句需在第三步验证时保留独立上下文。"
+                }
+            ],
+            "reading": { "type": "word", "spoken": "EX-con, /ˈeks.kɑːn/" }
+        },
+        {
+            "id": "r1",
+            "term": "R1",
+            "aliases": ["R1"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "R one" }
+        },
+        {
+            "id": "ops5",
+            "term": "OPS5",
+            "aliases": ["OPS5"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "O P S five" }
+        },
+        {
+            "id": "cyc",
+            "term": "Cyc",
+            "aliases": ["Cyc"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "pending-official-audio",
+            "reading": { "type": "provisional", "spoken": "psych" }
+        },
+        {
+            "id": "snarc",
+            "term": "SNARC",
+            "aliases": ["SNARC"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "snark" }
+        },
+        {
+            "id": "logic-theorist",
+            "term": "Logic Theorist",
+            "aliases": ["Logic Theorist"],
+            "category": "system-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "logic theorist" }
+        },
+        {
+            "id": "lisp",
+            "term": "LISP",
+            "aliases": ["LISP", "Lisp"],
+            "category": "language-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "lisp" }
+        },
+        {
+            "id": "car",
+            "term": "CAR",
+            "aliases": ["CAR"],
+            "category": "code-term",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "car" }
+        },
+        {
+            "id": "cdr",
+            "term": "CDR",
+            "aliases": ["CDR"],
+            "category": "code-term",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "initialism", "spoken": "C D R" }
+        },
+        {
+            "id": "cons",
+            "term": "CONS",
+            "aliases": ["CONS"],
+            "category": "code-term",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "cons" }
+        },
+        {
+            "id": "cond",
+            "term": "COND",
+            "aliases": ["COND"],
+            "category": "code-term",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "cond" }
+        },
+        {
+            "id": "eval",
+            "term": "EVAL",
+            "aliases": ["EVAL"],
+            "category": "code-term",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "ee-val" }
+        },
+        {
+            "id": "quote",
+            "term": "QUOTE",
+            "aliases": ["QUOTE"],
+            "category": "code-term",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "quote" }
+        },
+        {
+            "id": "prolog",
+            "term": "Prolog",
+            "aliases": ["Prolog"],
+            "category": "language-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "prolog" }
+        },
+        {
+            "id": "dpll",
+            "term": "DPLL",
+            "aliases": ["DPLL"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "D P L L" }
+        },
+        {
+            "id": "sat",
+            "term": "SAT",
+            "aliases": ["SAT"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "sat" }
+        },
+        {
+            "id": "smt",
+            "term": "SMT",
+            "aliases": ["SMT", "SAT/SMT"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "S M T" }
+        },
+        {
+            "id": "otter",
+            "term": "OTTER",
+            "aliases": ["OTTER"],
+            "category": "system-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "otter" }
+        },
+        {
+            "id": "prover9",
+            "term": "Prover9",
+            "aliases": ["Prover9"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "prover nine" }
+        },
+        {
+            "id": "ibm",
+            "term": "IBM",
+            "aliases": ["IBM"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "I B M" }
+        },
+        {
+            "id": "ibm-watson",
+            "term": "IBM Watson",
+            "aliases": ["IBM Watson"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "I B M Watson" }
+        },
+        {
+            "id": "deep-blue",
+            "term": "Deep Blue",
+            "aliases": ["Deep Blue"],
+            "category": "system-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "deep blue" }
+        },
+        {
+            "id": "chinook",
+            "term": "Chinook",
+            "aliases": ["Chinook"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "shih-NOOK" }
+        },
+        {
+            "id": "logistello",
+            "term": "Logistello",
+            "aliases": ["Logistello"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "loh-jis-TELL-oh" }
+        },
+        {
+            "id": "libratus",
+            "term": "Libratus",
+            "aliases": ["Libratus"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "lih-BRAH-tus" }
+        },
+        {
+            "id": "pluribus",
+            "term": "Pluribus",
+            "aliases": ["Pluribus"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "PLOOR-ih-bus" }
+        },
+        {
+            "id": "suphx",
+            "term": "Suphx",
+            "aliases": ["Suphx"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "pending-official-audio",
+            "reading": { "type": "provisional", "spoken": "soo-fex" }
+        },
+        {
+            "id": "hal",
+            "term": "HAL",
+            "aliases": ["HAL"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "hal" }
+        },
+        {
+            "id": "hal-9000",
+            "term": "HAL 9000",
+            "aliases": ["HAL 9000"],
+            "category": "system-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "hal nine thousand" }
+        },
+        {
+            "id": "neocognitron",
+            "term": "Neocognitron",
+            "aliases": ["Neocognitron"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "nee-oh-COG-nih-tron" }
+        },
+        {
+            "id": "isomap",
+            "term": "Isomap",
+            "aliases": ["Isomap"],
+            "category": "algorithm-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "eye-so-map" }
+        },
+        {
+            "id": "dropout",
+            "term": "Dropout",
+            "aliases": ["Dropout", "dropout"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "dropout" }
+        },
+        {
+            "id": "adam",
+            "term": "Adam",
+            "aliases": ["Adam", "Adam Optimizer"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "Adam" }
+        },
+        {
+            "id": "adamw",
+            "term": "AdamW",
+            "aliases": ["AdamW"],
+            "category": "algorithm-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "Adam W" }
+        },
+        {
+            "id": "rmsprop",
+            "term": "RMSProp",
+            "aliases": ["RMSProp"],
+            "category": "algorithm-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "R M S prop" }
+        },
+        {
+            "id": "openai",
+            "term": "OpenAI",
+            "aliases": ["OpenAI"],
+            "category": "organization-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "open A I" }
+        },
+        {
+            "id": "deepmind",
+            "term": "DeepMind",
+            "aliases": ["DeepMind"],
+            "category": "organization-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "deep mind" }
+        },
+        {
+            "id": "anthropic",
+            "term": "Anthropic",
+            "aliases": ["Anthropic"],
+            "category": "organization-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "an-THROP-ik" }
+        },
+        {
+            "id": "nhk",
+            "term": "NHK",
+            "aliases": ["NHK"],
+            "category": "initialism",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "N H K" }
+        },
+        {
+            "id": "chatgpt",
+            "term": "ChatGPT",
+            "aliases": ["ChatGPT"],
+            "category": "product-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "chat G P T" }
+        },
+        {
+            "id": "instructgpt",
+            "term": "InstructGPT",
+            "aliases": ["InstructGPT"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "instruct G P T" }
+        },
+        {
+            "id": "saycan",
+            "term": "SayCan",
+            "aliases": ["SayCan"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "say can" }
+        },
+        {
+            "id": "pathways",
+            "term": "Pathways",
+            "aliases": ["Pathways"],
+            "category": "system-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "pathways" }
+        },
+        {
+            "id": "runway",
+            "term": "Runway",
+            "aliases": ["Runway"],
+            "category": "organization-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "runway" }
+        },
+        {
+            "id": "atari",
+            "term": "Atari",
+            "aliases": ["Atari"],
+            "category": "organization-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "uh-TAH-ree" }
+        },
+        {
+            "id": "rur",
+            "term": "R.U.R.",
+            "aliases": ["R.U.R."],
+            "category": "work-title",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "initialism", "spoken": "R U R" }
+        },
+        {
+            "id": "three-laws",
+            "term": "Three Laws",
+            "aliases": ["Three Laws"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "three laws" }
+        },
+        {
+            "id": "runaround",
+            "term": "Runaround",
+            "aliases": ["Runaround"],
+            "category": "work-title",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "runaround" }
+        },
+        {
+            "id": "draughts",
+            "term": "Draughts",
+            "aliases": ["Draughts", "draughts"],
+            "category": "game-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "drafts" }
+        },
+        {
+            "id": "dartmouth-workshop",
+            "term": "Dartmouth Workshop",
+            "aliases": ["Dartmouth Workshop"],
+            "category": "historical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "DART-muth workshop" }
+        },
+        {
+            "id": "connectionism",
+            "term": "Connectionism",
+            "aliases": ["Connectionism", "connectionism"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "connectionism" }
+        },
+        {
+            "id": "first-ai-winter",
+            "term": "First AI Winter",
+            "aliases": ["First AI Winter", "first AI winter"],
+            "category": "historical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "first A I winter" }
+        },
+        {
+            "id": "lighthill-report",
+            "term": "Lighthill Report",
+            "aliases": ["Lighthill Report"],
+            "category": "work-title",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "words", "spoken": "LIGHT-hill report" }
+        },
+        {
+            "id": "frame",
+            "term": "Frame",
+            "aliases": ["Frame", "frame"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "frame" }
+        },
+        {
+            "id": "genetic-algorithms",
+            "term": "Genetic Algorithms",
+            "aliases": ["Genetic Algorithms", "genetic algorithms"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "genetic algorithms" }
+        },
+        {
+            "id": "simulated-annealing",
+            "term": "Simulated Annealing",
+            "aliases": ["Simulated Annealing", "simulated annealing"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "simulated annealing" }
+        },
+        {
+            "id": "neuromancer",
+            "term": "Neuromancer",
+            "aliases": ["Neuromancer"],
+            "category": "work-title",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "NEW-roh-man-ser" }
+        },
+        {
+            "id": "bayesian-network",
+            "term": "Bayesian Network",
+            "aliases": ["Bayesian Network", "Bayesian network"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "words", "spoken": "BAY-zee-un network" }
+        },
+        {
+            "id": "backpropagation",
+            "term": "Backpropagation",
+            "aliases": ["Backpropagation", "backpropagation", "Back-propagation"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "back propagation" }
+        },
+        {
+            "id": "recurrent-neural-networks",
+            "term": "Recurrent Neural Networks",
+            "aliases": ["Recurrent Neural Networks", "recurrent neural networks"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "recurrent neural networks" }
+        },
+        {
+            "id": "temporal-difference-update",
+            "term": "Temporal-Difference Update",
+            "aliases": ["Temporal-Difference Update"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "temporal difference update" }
+        },
+        {
+            "id": "convolutional-networks",
+            "term": "Convolutional Networks",
+            "aliases": ["Convolutional Networks", "Convolutional networks", "convolutional networks"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "convolutional networks" }
+        },
+        {
+            "id": "support-vector-machines",
+            "term": "Support Vector Machines",
+            "aliases": ["Support Vector Machines", "support vector machines"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "support vector machines" }
+        },
+        {
+            "id": "othello",
+            "term": "Othello",
+            "aliases": ["Othello"],
+            "category": "game-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "uh-THEL-oh" }
+        },
+        {
+            "id": "normalized-cuts",
+            "term": "Normalized Cuts",
+            "aliases": ["Normalized Cuts", "normalized cuts"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "normalized cuts" }
+        },
+        {
+            "id": "spectral-clustering",
+            "term": "Spectral Clustering",
+            "aliases": ["Spectral Clustering", "spectral clustering"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "spectral clustering" }
+        },
+        {
+            "id": "xiangqi",
+            "term": "Xiangqi",
+            "aliases": ["Xiangqi", "xiangqi"],
+            "category": "game-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "shyang-chee" }
+        },
+        {
+            "id": "latent-dirichlet-allocation",
+            "term": "Latent Dirichlet Allocation",
+            "aliases": ["Latent Dirichlet Allocation"],
+            "category": "algorithm-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "words", "spoken": "latent DEER-ih-klay allocation" }
+        },
+        {
+            "id": "deep-belief-network",
+            "term": "Deep Belief Network",
+            "aliases": ["Deep Belief Network", "deep belief network"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "deep belief network" }
+        },
+        {
+            "id": "deep-q-network",
+            "term": "Deep Q Network",
+            "aliases": ["Deep Q Network", "deep Q network"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "deep Q network" }
+        },
+        {
+            "id": "neural-machine-translation",
+            "term": "Neural Machine Translation",
+            "aliases": ["Neural Machine Translation", "neural machine translation"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "neural machine translation" }
+        },
+        {
+            "id": "attention",
+            "term": "Attention",
+            "aliases": ["Attention", "attention"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "attention" }
+        },
+        {
+            "id": "generative-adversarial-networks",
+            "term": "Generative Adversarial Networks",
+            "aliases": ["Generative Adversarial Networks", "generative adversarial networks"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "generative adversarial networks" }
+        },
+        {
+            "id": "deep-reinforcement-learning",
+            "term": "Deep Reinforcement Learning",
+            "aliases": ["Deep Reinforcement Learning", "Deep reinforcement learning", "deep reinforcement learning"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "deep reinforcement learning" }
+        },
+        {
+            "id": "mahjong",
+            "term": "Mahjong",
+            "aliases": ["Mahjong", "mahjong"],
+            "category": "game-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "mah-jong" }
+        },
+        {
+            "id": "ridge",
+            "term": "Ridge",
+            "aliases": ["Ridge", "ridge"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "ridge" }
+        },
+        {
+            "id": "self-organizing-map",
+            "term": "Self-organizing Map",
+            "aliases": ["Self-organizing Map", "self-organizing map", "self-organizing maps"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "self organizing map" }
+        },
+        {
+            "id": "policy-gradient-theorem",
+            "term": "Policy Gradient Theorem",
+            "aliases": ["Policy Gradient Theorem", "policy gradient theorem"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "policy gradient theorem" }
+        },
+        {
+            "id": "locally-linear-embedding",
+            "term": "Locally Linear Embedding",
+            "aliases": ["Locally Linear Embedding", "locally linear embedding"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "locally linear embedding" }
+        },
+        {
+            "id": "neural-language-model",
+            "term": "Neural Language Model",
+            "aliases": ["Neural Language Model", "neural language model"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "neural language model" }
+        },
+        {
+            "id": "conditional-random-fields",
+            "term": "Conditional Random Fields",
+            "aliases": ["Conditional Random Fields", "conditional random fields"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "conditional random fields" }
+        },
+        {
+            "id": "gradient-boosting",
+            "term": "Gradient Boosting",
+            "aliases": ["Gradient Boosting", "gradient boosting"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "gradient boosting" }
+        },
+        {
+            "id": "random-forests",
+            "term": "Random Forests",
+            "aliases": ["Random Forests", "Random forests", "random forests"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "random forests" }
+        },
+        {
+            "id": "graph-neural-network",
+            "term": "Graph Neural Network",
+            "aliases": ["Graph Neural Network", "graph neural network", "graph neural networks"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "graph neural network" }
+        },
+        {
+            "id": "variational-autoencoder",
+            "term": "Variational Autoencoder",
+            "aliases": ["Variational Autoencoder", "variational autoencoder"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "variational autoencoder" }
+        },
+        {
+            "id": "sequence-to-sequence-learning",
+            "term": "Sequence-to-Sequence Learning",
+            "aliases": ["Sequence-to-Sequence Learning", "sequence-to-sequence learning"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "sequence to sequence learning" }
+        },
+        {
+            "id": "batch-normalization",
+            "term": "Batch Normalization",
+            "aliases": ["Batch Normalization", "Batch normalization", "batch normalization"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "batch normalization" }
+        },
+        {
+            "id": "deep-compression",
+            "term": "Deep Compression",
+            "aliases": ["Deep Compression", "deep compression"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "deep compression" }
+        },
+        {
+            "id": "diffusion-model",
+            "term": "Diffusion Model",
+            "aliases": ["Diffusion Model", "diffusion model", "diffusion models"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "diffusion model" }
+        },
+        {
+            "id": "fully-convolutional-networks",
+            "term": "Fully Convolutional Networks",
+            "aliases": ["Fully Convolutional Networks", "fully convolutional networks"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "fully convolutional networks" }
+        },
+        {
+            "id": "knowledge-distillation",
+            "term": "Knowledge Distillation",
+            "aliases": ["Knowledge Distillation", "Knowledge distillation", "knowledge distillation"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "knowledge distillation" }
+        },
+        {
+            "id": "neural-architecture-search",
+            "term": "Neural Architecture Search",
+            "aliases": ["Neural Architecture Search", "Neural architecture search", "neural architecture search"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "neural architecture search" }
+        },
+        {
+            "id": "squeeze-and-excitation-networks",
+            "term": "Squeeze-and-Excitation Networks",
+            "aliases": ["Squeeze-and-Excitation Networks", "Squeeze-and-Excitation networks"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "squeeze and excitation networks" }
+        },
+        {
+            "id": "vision-transformer",
+            "term": "Vision Transformer",
+            "aliases": ["Vision Transformer", "vision transformer"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "vision transformer" }
+        },
+        {
+            "id": "monte-carlo-tree-search",
+            "term": "Monte Carlo tree search",
+            "aliases": ["Monte Carlo tree search"],
+            "category": "algorithm-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "words", "spoken": "MON-tee KAR-loh tree search" }
+        },
+        {
+            "id": "alec-radford",
+            "term": "Alec Radford",
+            "aliases": ["Alec Radford"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "AL-ik RAD-ford" }
+        },
+        {
+            "id": "arthur-hoerl",
+            "term": "Arthur Hoerl",
+            "aliases": ["Arthur Hoerl"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "AR-thur hurl" }
+        },
+        {
+            "id": "bill-triggs",
+            "term": "Bill Triggs",
+            "aliases": ["Bill Triggs"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "bill trigz" }
+        },
+        {
+            "id": "christopher-strachey",
+            "term": "Christopher Strachey",
+            "aliases": ["Christopher Strachey", "Strachey"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "KRIS-tuh-fer STRAY-chee" }
+        },
+        {
+            "id": "daniel-lee",
+            "term": "Daniel Lee",
+            "aliases": ["Daniel Lee"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "DAN-yul lee" }
+        },
+        {
+            "id": "dean-edmonds",
+            "term": "Dean Edmonds",
+            "aliases": ["Dean Edmonds"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "deen ED-mundz" }
+        },
+        {
+            "id": "dzmitry-bahdanau",
+            "term": "Dzmitry Bahdanau",
+            "aliases": ["Dzmitry Bahdanau"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "DZMIT-ree bah-dah-NOW" }
+        },
+        {
+            "id": "garry-kasparov",
+            "term": "Garry Kasparov",
+            "aliases": ["Garry Kasparov"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "GAIR-ee KAS-puh-rov" }
+        },
+        {
+            "id": "herbert-bay",
+            "term": "Herbert Bay",
+            "aliases": ["Herbert Bay"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "HAIR-bert bay" }
+        },
+        {
+            "id": "ian-goodfellow",
+            "term": "Ian Goodfellow",
+            "aliases": ["Ian Goodfellow"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "EE-un GOOD-fellow" }
+        },
+        {
+            "id": "jacob-devlin",
+            "term": "Jacob Devlin",
+            "aliases": ["Jacob Devlin"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "JAY-kub DEV-lin" }
+        },
+        {
+            "id": "john-langford",
+            "term": "John Langford",
+            "aliases": ["John Langford"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "john LANG-ford" }
+        },
+        {
+            "id": "joshua-tenenbaum",
+            "term": "Joshua Tenenbaum",
+            "aliases": ["Joshua Tenenbaum"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "JOSH-oo-ah TEN-en-bowm" }
+        },
+        {
+            "id": "juergen-schmidhuber",
+            "term": "Juergen Schmidhuber",
+            "aliases": ["Juergen Schmidhuber"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "YOOR-gen SHMIT-hoo-ber" }
+        },
+        {
+            "id": "klaus-robert-muller",
+            "term": "Klaus-Robert Muller",
+            "aliases": ["Klaus-Robert Muller"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "klows ROH-bert MUE-ler" }
+        },
+        {
+            "id": "kunihiko-fukushima",
+            "term": "Kunihiko Fukushima",
+            "aliases": ["Kunihiko Fukushima"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "koo-nee-HEE-koh foo-koo-SHEE-mah" }
+        },
+        {
+            "id": "kyunghyun-cho",
+            "term": "Kyunghyun Cho",
+            "aliases": ["Kyunghyun Cho"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "kyung-hyun joh" }
+        },
+        {
+            "id": "lawrence-saul",
+            "term": "Lawrence Saul",
+            "aliases": ["Lawrence Saul"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "LOR-ens sawl" }
+        },
+        {
+            "id": "lee-sedol",
+            "term": "Lee Sedol",
+            "aliases": ["Lee Sedol"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "ee seh-dol" }
+        },
+        {
+            "id": "marvin-minsky",
+            "term": "Marvin Minsky",
+            "aliases": ["Marvin Minsky"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "MAR-vin MIN-skee" }
+        },
+        {
+            "id": "navneet-dalal",
+            "term": "Navneet Dalal",
+            "aliases": ["Navneet Dalal"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "nav-NEET duh-LAHL" }
+        },
+        {
+            "id": "norbert-wiener",
+            "term": "Norbert Wiener",
+            "aliases": ["Norbert Wiener", "Wiener"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "NOR-bert WEE-ner" }
+        },
+        {
+            "id": "peter-hart",
+            "term": "Peter Hart",
+            "aliases": ["Peter Hart"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "PEE-ter hart" }
+        },
+        {
+            "id": "robert-kennard",
+            "term": "Robert Kennard",
+            "aliases": ["Robert Kennard"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "ROB-ert KEN-ard" }
+        },
+        {
+            "id": "sam-roweis",
+            "term": "Sam Roweis",
+            "aliases": ["Sam Roweis"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "sam ROW-iss" }
+        },
+        {
+            "id": "sepp-hochreiter",
+            "term": "Sepp Hochreiter",
+            "aliases": ["Sepp Hochreiter"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "zep HOKH-ry-ter" }
+        },
+        {
+            "id": "teuvo-kohonen",
+            "term": "Teuvo Kohonen",
+            "aliases": ["Teuvo Kohonen"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "TAY-voh KOH-ho-nen" }
+        },
+        {
+            "id": "thomas-cover",
+            "term": "Thomas Cover",
+            "aliases": ["Thomas Cover"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "TOM-us KUV-er" }
+        },
+        {
+            "id": "tinne-tuytelaars",
+            "term": "Tinne Tuytelaars",
+            "aliases": ["Tinne Tuytelaars"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "TIN-neh TOY-teh-lahrs" }
+        },
+        {
+            "id": "walter-pitts",
+            "term": "Walter Pitts",
+            "aliases": ["Walter Pitts"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "WALL-ter pits" }
+        },
+        {
+            "id": "warren-mcculloch",
+            "term": "Warren McCulloch",
+            "aliases": ["Warren McCulloch"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "WOR-en muh-KUL-uk" }
+        },
+        {
+            "id": "mcculloch-pitts",
+            "term": "McCulloch-Pitts",
+            "aliases": ["McCulloch-Pitts"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "muh-KUL-uk pits" }
+        },
+        {
+            "id": "william-mccune",
+            "term": "William McCune",
+            "aliases": ["William McCune", "McCune"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "WIL-yum muh-KYOON" }
+        },
+        {
+            "id": "yann-lecun",
+            "term": "Yann LeCun",
+            "aliases": ["Yann LeCun"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "yan luh-KUN" }
+        },
+        {
+            "id": "ye-yonglie",
+            "term": "Ye Yonglie",
+            "aliases": ["Ye Yonglie"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "yeh yoong-lyeh" }
+        },
+        {
+            "id": "yoshua-bengio",
+            "term": "Yoshua Bengio",
+            "aliases": ["Yoshua Bengio"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "YOSH-oo-ah ben-JEE-oh" }
+        },
+        {
+            "id": "shunichi-amari",
+            "term": "Shunichi Amari",
+            "aliases": ["Shunichi Amari", "Shun'ichi Amari", "Amari"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "shoo-NEE-chee ah-MAH-ree" }
+        },
+        {
+            "id": "isaac-asimov",
+            "term": "Isaac Asimov",
+            "aliases": ["Isaac Asimov", "Asimov"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "EYE-zuk AZ-ih-mov" }
+        },
+        {
+            "id": "geoffrey-hinton",
+            "term": "Geoffrey Hinton",
+            "aliases": ["Geoffrey Hinton", "Hinton"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "JEFF-ree HIN-tun" }
+        },
+        {
+            "id": "john-holland",
+            "term": "John Holland",
+            "aliases": ["John Holland", "Holland"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "john HOL-und" }
+        },
+        {
+            "id": "sir-james-lighthill",
+            "term": "Sir James Lighthill",
+            "aliases": ["Sir James Lighthill", "James Lighthill", "Lighthill"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "sir jaymz LIGHT-hill" }
+        },
+        {
+            "id": "frank-rosenblatt",
+            "term": "Frank Rosenblatt",
+            "aliases": ["Frank Rosenblatt", "Rosenblatt"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "frank ROH-zen-blat" }
+        },
+        {
+            "id": "david-rumelhart",
+            "term": "David Rumelhart",
+            "aliases": ["David Rumelhart", "Rumelhart"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "pending-official-audio",
+            "reading": { "type": "name", "spoken": "DAY-vid ROO-mul-hart" }
+        },
+        {
+            "id": "h-sebastian-seung",
+            "term": "H. Sebastian Seung",
+            "aliases": ["H. Sebastian Seung", "H Sebastian Seung", "Sebastian Seung", "Seung"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "pending-official-audio",
+            "reading": { "type": "name", "spoken": "aitch suh-BAS-chun sung" }
+        },
+        {
+            "id": "herbert-simon",
+            "term": "Herbert Simon",
+            "aliases": ["Herbert Simon", "Herbert A. Simon", "Simon"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "HUR-bert SIGH-mun" }
+        },
+        {
+            "id": "bernhard-scholkopf",
+            "term": "Bernhard Scholkopf",
+            "aliases": ["Bernhard Scholkopf", "Bernhard Schölkopf", "Scholkopf", "Schölkopf"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "pending-official-audio",
+            "reading": { "type": "name", "spoken": "BEHRN-hart SHURL-kopf" }
+        },
+        {
+            "id": "alexander-smola",
+            "term": "Alexander Smola",
+            "aliases": ["Alexander Smola", "Smola"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "pending-official-audio",
+            "reading": { "type": "name", "spoken": "al-ig-ZAN-der SHMOH-lah" }
+        },
+        {
+            "id": "luc-van-gool",
+            "term": "Luc Van Gool",
+            "aliases": ["Luc Van Gool", "Luc van Gool", "Van Gool"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "pending-official-audio",
+            "reading": { "type": "name", "spoken": "luke van gohl" }
+        },
+        {
+            "id": "vin-de-silva",
+            "term": "Vin de Silva",
+            "aliases": ["Vin de Silva", "de Silva"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "pending-official-audio",
+            "reading": { "type": "name", "spoken": "vin duh SIL-vuh" }
+        },
+        {
+            "id": "actor",
+            "term": "actor",
+            "aliases": ["actor", "Actor"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "actor" }
+        },
+        {
+            "id": "critic",
+            "term": "critic",
+            "aliases": ["critic", "Critic"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "critic" }
+        },
+        {
+            "id": "token",
+            "term": "token",
+            "aliases": ["token"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "token" }
+        },
+        {
+            "id": "boosting",
+            "term": "Boosting",
+            "aliases": ["Boosting"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "boosting" }
+        },
+        {
+            "id": "bagging",
+            "term": "Bagging",
+            "aliases": ["Bagging"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "bagging" }
+        },
+        {
+            "id": "claude",
+            "term": "Claude",
+            "aliases": ["Claude"],
+            "category": "product-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "name", "spoken": "clawd" }
+        },
+        {
+            "id": "hopfield",
+            "term": "Hopfield",
+            "aliases": ["Hopfield", "Hopfield Network"],
+            "category": "person-derived-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "HOP-field" }
+        },
+        {
+            "id": "wasserstein",
+            "term": "Wasserstein",
+            "aliases": ["Wasserstein", "Wasserstein GAN"],
+            "category": "person-derived-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "VAH-ser-shtine" }
+        },
+        {
+            "id": "lasso",
+            "term": "Lasso",
+            "aliases": ["Lasso"],
+            "category": "algorithm-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "lasso" }
+        },
+        {
+            "id": "feynman",
+            "term": "Feynman",
+            "aliases": ["Feynman", "AI Feynman"],
+            "category": "person-derived-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "FINE-man" }
+        },
+        {
+            "id": "pix2pix",
+            "term": "Pix2Pix",
+            "aliases": ["Pix2Pix"],
+            "category": "model-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "mixed", "spoken": "pix to pix" }
+        },
+        {
+            "id": "pandemonium",
+            "term": "Pandemonium",
+            "aliases": ["Pandemonium"],
+            "category": "system-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "pandemonium" }
+        },
+        {
+            "id": "williams",
+            "term": "Williams",
+            "aliases": ["Williams"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "WILL-yums" }
+        },
+        {
+            "id": "bellman",
+            "term": "Bellman",
+            "aliases": ["Bellman"],
+            "category": "person-derived-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "BELL-man" }
+        },
+        {
+            "id": "chain-of-thought-prompting",
+            "term": "Chain-of-Thought Prompting",
+            "aliases": ["Chain-of-Thought Prompting"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "chain of thought prompting" }
+        },
+        {
+            "id": "epsilon",
+            "term": "epsilon",
+            "aliases": ["epsilon"],
+            "category": "mathematical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "epsilon" }
+        },
+        {
+            "id": "given-clause",
+            "term": "given-clause",
+            "aliases": ["given-clause"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "given clause" }
+        },
+        {
+            "id": "latent-diffusion-models",
+            "term": "Latent Diffusion Models",
+            "aliases": ["Latent Diffusion Models"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "latent diffusion models" }
+        },
+        {
+            "id": "n-gram",
+            "term": "n-gram",
+            "aliases": ["n-gram"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "N gram" }
+        },
+        {
+            "id": "segment-anything",
+            "term": "Segment Anything",
+            "aliases": ["Segment Anything", "Segment anything"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "segment anything" }
+        },
+        {
+            "id": "agent",
+            "term": "Agent",
+            "aliases": ["Agent"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "agent" }
+        },
+        {
+            "id": "agentic-ai",
+            "term": "Agentic AI",
+            "aliases": ["Agentic AI", "Agentic"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "agentic A I" }
+        },
+        {
+            "id": "ai-for-science",
+            "term": "AI for Science",
+            "aliases": ["AI for Science", "for Science"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "canonical",
+            "reading": { "type": "mixed", "spoken": "A I for science" }
+        },
+        {
+            "id": "context-units",
+            "term": "context units",
+            "aliases": ["context units"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "context units" }
+        },
+        {
+            "id": "dirichlet",
+            "term": "Dirichlet",
+            "aliases": ["Dirichlet"],
+            "category": "person-derived-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "dee-ree-KLAY" }
+        },
+        {
+            "id": "friedman",
+            "term": "Friedman",
+            "aliases": ["Friedman"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "FREED-man" }
+        },
+        {
+            "id": "highway-network",
+            "term": "Highway Network",
+            "aliases": ["Highway Network", "Highway Networks"],
+            "category": "model-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "highway network" }
+        },
+        {
+            "id": "logits",
+            "term": "logits",
+            "aliases": ["logits"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "loh-jits" }
+        },
+        {
+            "id": "metropolis",
+            "term": "Metropolis",
+            "aliases": ["Metropolis"],
+            "category": "person-derived-name",
+            "hintRequired": false,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "meh-TROP-uh-lis" }
+        },
+        {
+            "id": "oracle-guiding",
+            "term": "oracle guiding",
+            "aliases": ["oracle guiding"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "oracle guiding" }
+        },
+        {
+            "id": "pair",
+            "term": "pair",
+            "aliases": ["pair"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "pair" }
+        },
+        {
+            "id": "perceptrons",
+            "term": "Perceptrons",
+            "aliases": ["Perceptrons"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "perceptrons" }
+        },
+        {
+            "id": "query-key-value",
+            "term": "query-key-value",
+            "aliases": ["query-key-value"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "query key value" }
+        },
+        {
+            "id": "querying-transformer",
+            "term": "Querying Transformer",
+            "aliases": ["Querying Transformer", "Querying"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "querying transformer" }
+        },
+        {
+            "id": "schapire",
+            "term": "Schapire",
+            "aliases": ["Schapire"],
+            "category": "person-name",
+            "hintRequired": true,
+            "verification": "name-reviewed",
+            "reading": { "type": "name", "spoken": "shuh-PEER" }
+        },
+        {
+            "id": "shortcut",
+            "term": "shortcut",
+            "aliases": ["shortcut"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "shortcut" }
+        },
+        {
+            "id": "skip-gram",
+            "term": "Skip-gram",
+            "aliases": ["Skip-gram"],
+            "category": "technical-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "words", "spoken": "skip gram" }
+        },
+        {
+            "id": "synsets",
+            "term": "synsets",
+            "aliases": ["synsets"],
+            "category": "technical-name",
+            "hintRequired": true,
+            "verification": "usage-confirmed",
+            "reading": { "type": "word", "spoken": "SIN-sets" }
+        },
+        {
+            "id": "watson",
+            "term": "Watson",
+            "aliases": ["Watson"],
+            "category": "system-name",
+            "hintRequired": false,
+            "verification": "canonical",
+            "reading": { "type": "word", "spoken": "Watson" }
+        }
+    ]
+}
