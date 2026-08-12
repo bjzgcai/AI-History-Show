@@ -78,7 +78,7 @@ index.html
 - Main generated storylines currently include The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI, Top AI Achievements (BenchCouncil), the gaming AI branch, and the humanistic/emotional AI cycle.
 - Direct storyline URLs use `?storyline=bench-council-ai100`, `?storyline=gaming-ai`, or `?storyline=humanistic-cycle`.
 - Branch/generated milestone IDs use the `milestone-{key}` convention; catalog branch records may prefix keys for branch-specific milestones.
-- The gaming branch can render SGF/game-evolution modules; related tooling lives in `scripts/sgf_to_video.py`, `scripts/README-game-evolution-video.md`, `examples/sgf/`, and `resources/videos/game-evolution/`.
+- The gaming branch supports verified complete-game `gameEvolutionVideo` modules and evidence-bounded `paperCaseVideo` modules. The production manifest, rendering, validation, and storage workflow is documented in `scripts/README-game-evolution-video.md`; implementation lives in `scripts/game-evolution/`, Archive inputs live under each event's `game-records/` or `paper-cases/`, and generated media lives in `resources/videos/game-evolution/` and `resources/images/game-evolution/`. `scripts/sgf_to_video.py` is a legacy one-off utility, not the production path.
 
 ### AI100 content expectations from existing project guidance
 
