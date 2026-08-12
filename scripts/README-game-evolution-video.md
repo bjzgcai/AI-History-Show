@@ -107,12 +107,12 @@ resources/images/game-evolution/<event-id>/*.png
 
 ```bash
 python3 -m venv .venv-game-video
-.venv-game-video/bin/pip install -r requirements-game-video.txt
+.venv-game-video/bin/pip install -r scripts/game-evolution/requirements-render.txt
 ffmpeg -version
 ffprobe -version
 ```
 
-`requirements-game-video.txt` 还保留 OpenCV 和 NumPy，供旧的单次 SGF 工具使用；当前 Archive 对局管线的主要渲染由 Pillow 完成。
+`scripts/game-evolution/requirements-render.txt` 还保留 OpenCV 和 NumPy，供旧的单次 SGF 工具使用；当前 Archive 对局管线的主要渲染由 Pillow 完成。CI 使用同目录下更轻量的 `requirements-validate.txt` 重新解析和核验棋谱。
 
 ## 生成完整对局回放
 

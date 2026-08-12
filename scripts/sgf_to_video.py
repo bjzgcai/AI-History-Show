@@ -187,7 +187,7 @@ def extract_game(text: str) -> tuple[int, list[Move]]:
     except ImportError as exc:
         raise RuntimeError(
             "SGF parsing requires sgfmill. Install dependencies with: "
-            "python -m pip install -r requirements-game-video.txt"
+            "python -m pip install -r scripts/game-evolution/requirements-render.txt"
         ) from exc
     try:
         game = sgf.Sgf_game.from_bytes(text.encode("utf-8"))
@@ -316,7 +316,7 @@ def _load_font(size: int):
     except ImportError as exc:
         raise RuntimeError(
             "Rendering requires Pillow. Install dependencies with: "
-            "python -m pip install -r requirements-game-video.txt"
+            "python -m pip install -r scripts/game-evolution/requirements-render.txt"
         ) from exc
 
     for name in ("arial.ttf", "DejaVuSans.ttf"):
@@ -340,7 +340,7 @@ def draw_board_state(
     except ImportError as exc:
         raise RuntimeError(
             "Rendering requires Pillow. Install dependencies with: "
-            "python -m pip install -r requirements-game-video.txt"
+            "python -m pip install -r scripts/game-evolution/requirements-render.txt"
         ) from exc
 
     if canvas_size < 320:

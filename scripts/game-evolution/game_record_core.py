@@ -82,7 +82,7 @@ def _import_chess():
         import chess.pgn  # type: ignore
     except ImportError as exc:
         raise GameRecordError(
-            "Chess rendering requires the chess package. Install requirements-game-video.txt."
+            "Chess rendering requires the chess package. Install scripts/game-evolution/requirements-render.txt."
         ) from exc
     return chess, chess.pgn
 
@@ -205,7 +205,9 @@ def _import_sgfmill():
     try:
         from sgfmill import boards, sgf  # type: ignore
     except ImportError as exc:
-        raise GameRecordError("Go rendering requires sgfmill. Install requirements-game-video.txt.") from exc
+        raise GameRecordError(
+            "Go rendering requires sgfmill. Install scripts/game-evolution/requirements-render.txt."
+        ) from exc
     return boards, sgf
 
 

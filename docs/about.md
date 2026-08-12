@@ -1,5 +1,7 @@
 # About AI History Show
 
+**English** | [简体中文](about.zh.md)
+
 ## About AI History
 
 AI History Show is an open-source interactive project for exhibitions, classrooms, and public communication.
