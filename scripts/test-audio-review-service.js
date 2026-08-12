@@ -385,6 +385,11 @@ async function main() {
         assert.equal(approved.payload.policy, 'any-valid-pass');
         assert.equal(approved.payload.candidates.length, 1);
 
+        const exported = await requestJson(baseUrl, '/api/reviews/export', reviewerCookie);
+        assert.equal(exported.payload.candidates.length, 1);
+        assert.equal(exported.payload.records.length, 2);
+        assert.equal(exported.payload.records[0].note, '需要调整停顿');
+
         const invalidated = await requestJson(
             baseUrl,
             `/api/reviews/${passed.payload.record.id}/invalidate`,
