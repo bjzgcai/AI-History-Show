@@ -632,7 +632,26 @@
                     "note": "审听发现读法不一致；统一按英语单词 surf 读。"
                 }
             ],
-            "reading": { "type": "word", "spoken": "surf, /sɜːrf/" }
+            "reading": { "type": "word", "spoken": "surf, /sɜːrf/" },
+            "pronunciationHypotheses": {
+                "expected": ["s", "ɜː", "r", "f"],
+                "rejected": [["ɛ", "s", "j", "uː", "ɑː", "r", "ɛ", "f"]]
+            },
+            "ttsQualifications": [
+                {
+                    "qualificationId": "surf-volc-seed-tts-2-zh-huopo-b-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-08-13",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "7864fbdc8b056092594f2170a8addd7d497808059a8b84a57caa3384e9533105",
+                    "method": "speech-replacement",
+                    "speechForm": "surf",
+                    "sampleIds": ["zh-surf-rewritten", "repeat-1/zh-surf-rewritten", "repeat-2/zh-surf-rewritten"]
+                }
+            ]
         },
         {
             "id": "hog",
@@ -821,7 +840,27 @@
             "category": "initialism",
             "hintRequired": true,
             "verification": "usage-confirmed",
-            "reading": { "type": "initialism", "spoken": "R O I" }
+            "reading": { "type": "initialism", "spoken": "R O I" },
+            "ttsQualifications": [
+                {
+                    "qualificationId": "roi-volc-seed-tts-2-zh-huopo-b-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-08-13",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "7864fbdc8b056092594f2170a8addd7d497808059a8b84a57caa3384e9533105",
+                    "method": "speech-replacement",
+                    "speechForm": "R-O-I",
+                    "sampleIds": [
+                        "zh-roialign-rewritten",
+                        "repeat-1/zh-roialign-rewritten",
+                        "repeat-2/zh-roialign-rewritten"
+                    ],
+                    "note": "与 RoIAlign 同一 rewritten 样本中的独立 RoI 已人工审听通过。"
+                }
+            ]
         },
         {
             "id": "roialign",
@@ -830,7 +869,30 @@
             "category": "technical-name",
             "hintRequired": true,
             "verification": "usage-confirmed",
-            "reading": { "type": "mixed", "spoken": "R O I align" }
+            "reading": { "type": "mixed", "spoken": "R O I align" },
+            "pronunciationHypotheses": {
+                "expected": ["ɑːr", "oʊ", "aɪ", "ə", "l", "aɪ", "n"],
+                "rejected": [["r", "ɔɪ", "ə", "l", "aɪ", "n"]]
+            },
+            "ttsQualifications": [
+                {
+                    "qualificationId": "roialign-volc-seed-tts-2-zh-huopo-b-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-08-13",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "7864fbdc8b056092594f2170a8addd7d497808059a8b84a57caa3384e9533105",
+                    "method": "speech-replacement",
+                    "speechForm": "R-O-I align",
+                    "sampleIds": [
+                        "zh-roialign-rewritten",
+                        "repeat-1/zh-roialign-rewritten",
+                        "repeat-2/zh-roialign-rewritten"
+                    ]
+                }
+            ]
         },
         {
             "id": "rgb",
@@ -866,7 +928,26 @@
             "category": "initialism",
             "hintRequired": true,
             "verification": "canonical",
-            "reading": { "type": "initialism", "spoken": "N A S" }
+            "reading": { "type": "initialism", "spoken": "N A S" },
+            "pronunciationHypotheses": {
+                "expected": ["ɛ", "n", "eɪ", "ɛ", "s"],
+                "rejected": [["n", "æ", "s"]]
+            },
+            "ttsQualifications": [
+                {
+                    "qualificationId": "nas-volc-seed-tts-2-zh-huopo-narrator-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-08-13",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "c9166f088beb9f4daa72a98319bd3e638cb205ff490315b69b678f95e11e7252",
+                    "method": "speech-replacement",
+                    "speechForm": "N-A-S",
+                    "sampleIds": ["zh-nas-rewritten", "repeat-1/zh-nas-rewritten", "repeat-2/zh-nas-rewritten"]
+                }
+            ]
         },
         {
             "id": "automl",
@@ -1204,7 +1285,35 @@
                     "note": "除审听备注指定的倒数第二句外，目标读音为 /ˈeks.kɑːn/。例外句需在第三步验证时保留独立上下文。"
                 }
             ],
-            "reading": { "type": "word", "spoken": "EX-con, /ˈeks.kɑːn/" }
+            "reading": { "type": "word", "spoken": "EX-con, /ˈeks.kɑːn/" },
+            "pronunciationHypotheses": {
+                "expected": ["ɛ", "k", "s", "k", "ɑː", "n"],
+                "rejected": [["ɛ", "k", "s", "s", "iː", "oʊ", "ɛ", "n"]]
+            },
+            "ttsQualifications": [
+                {
+                    "qualificationId": "xcon-volc-seed-tts-2-zh-huopo-narrator-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-08-13",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "c9166f088beb9f4daa72a98319bd3e638cb205ff490315b69b678f95e11e7252",
+                    "method": "speech-replacement",
+                    "speechForm": "ex-con",
+                    "sampleIds": ["zh-xcon-rewritten", "repeat-1/zh-xcon-rewritten", "repeat-2/zh-xcon-rewritten"],
+                    "note": "通用读法样本已通过；Issue #98 指出的倒数第二句例外上下文不在本次通过范围内。"
+                }
+            ],
+            "ttsExclusions": [
+                {
+                    "eventId": "1980-xcon-r1",
+                    "locale": "zh",
+                    "turnIndex": 5,
+                    "reason": "Issue #98 明确排除审听备注中的倒数第二句。"
+                }
+            ]
         },
         {
             "id": "r1",

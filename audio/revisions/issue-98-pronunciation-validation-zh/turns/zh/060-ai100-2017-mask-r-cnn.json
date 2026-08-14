@@ -1,0 +1,69 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 60,
+    "eventId": "ai100-2017-mask-r-cnn",
+    "variantId": "bench-council-ai100",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "bench-council-ai100",
+    "turns": [
+        {
+            "role": "A",
+            "text": "「Mask R-CNN」最有意思的地方，是结果本身，还是它重新定义问题的方式？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "检测系统可以用边界框定位物体，语义分割则给像素赋予类别，却不能区分同类的不同实例。Mask R-CNN 在强大的两阶段检测器上增加实例掩码分支，把两类需求统一起来。",
+            "sourceIds": ["source-2017-mask-r-cnn-primary", "source-benchcouncil-ai100-catalog"],
+            "claimIds": ["claim-2017-mask-r-cnn-membership", "claim-2017-mask-r-cnn-description"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个漂亮的方向。真正让它运转起来的核心机制是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "并行的掩码头为每个检测实例预测二值掩码，分类与边界框回归仍作为独立任务。RoIAlign 避免 RoI 池化的坐标量化，保留像素级对齐。",
+            "sourceIds": ["source-2017-mask-r-cnn-primary"],
+            "claimIds": ["claim-2017-mask-r-cnn-membership", "claim-2017-mask-r-cnn-description"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一篇论文或一次实验里？后来研究者真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "专家通常把 Mask R-CNN 视为实例分割的经典框架，并把它作为姿态、关键点和稠密预测任务的通用基础。RoIAlign 也成为被广泛复用的对齐技术。",
+            "sourceIds": ["source-2017-mask-r-cnn-primary", "source-2017-mask-r-cnn-secondary"],
+            "claimIds": ["claim-2017-mask-r-cnn-membership", "claim-2017-mask-r-cnn-description"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "当今天的系统规模越来越大时，「Mask R-CNN」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+            "sourceIds": [
+                "source-2017-mask-r-cnn-primary",
+                "source-2017-mask-r-cnn-secondary",
+                "source-benchcouncil-ai100-catalog",
+                "source-2017-mask-r-cnn-portrait"
+            ],
+            "claimIds": ["claim-2017-mask-r-cnn-membership", "claim-2017-mask-r-cnn-description"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}
