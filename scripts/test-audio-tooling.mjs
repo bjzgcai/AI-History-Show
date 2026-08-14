@@ -14,6 +14,9 @@ import { writeFrozenJson } from './audio/build-complete-original-revisions.mjs';
 import { resolvePresentationAuthority } from './audio/build-audio-editorial-plan.mjs';
 import { buildWorkflowReport } from './audio/check-audio-workflow-status.mjs';
 import { ROOT, formatCommandFailure, resolveTtsEnvFile } from './audio/lib/audio-revision.mjs';
+import { compileSpeechTurns, pronunciationInstructionSha256 } from './audio/lib/pronunciation.mjs';
+import { classify, locateRanges } from './audio/score-pronunciation-validation.mjs';
+import { sourceOrdinal } from './audio/validate-revision-pronunciation.mjs';
 
 assert.equal(resolveTtsEnvFile('.secrets/tts.env', {}), path.join(ROOT, '.secrets/tts.env'));
 assert.equal(
@@ -58,6 +61,147 @@ assert.match(
     formatCommandFailure('ffprobe', { status: 1, stderr: 'Invalid data found', stdout: '' }, 'bad.mp3'),
     /ffprobe failed for bad\.mp3 \(exit 1\): Invalid data found/
 );
+
+const zhVoiceProfile = JSON.parse(fs.readFileSync(path.join(ROOT, 'audio/voices/zh-huopo-original.json'), 'utf8'));
+const pronunciationVoiceForRole = (role) => {
+    if (role === 'A') return zhVoiceProfile.voiceA;
+    if (role === 'B') return zhVoiceProfile.voiceB;
+    if (role === 'SUMMARY') return zhVoiceProfile.voiceSummary;
+    return zhVoiceProfile.voiceNarrator;
+};
+const pronunciationInstructionForRole = (role) => {
+    if (role === 'A') return zhVoiceProfile.instructionA;
+    if (role === 'B') return zhVoiceProfile.instructionB;
+    if (role === 'SUMMARY') return zhVoiceProfile.instructionSummary;
+    return zhVoiceProfile.instructionNarrator;
+};
+const pronunciationContext = {
+    locale: 'zh',
+    provider: 'volc',
+    model: 'seed-tts-2.0',
+    voiceForRole: pronunciationVoiceForRole,
+    instructionForRole: pronunciationInstructionForRole
+};
+assert.equal(
+    pronunciationInstructionSha256(zhVoiceProfile.instructionB),
+    '7864fbdc8b056092594f2170a8addd7d497808059a8b84a57caa3384e9533105'
+);
+const compiledPronunciation = compileSpeechTurns({
+    ...pronunciationContext,
+    eventId: 'ai100-2017-mask-r-cnn',
+    turns: [{ role: 'B', text: 'RoIAlign 避免 RoI 池化，SURF 保持展示拼写。' }]
+});
+assert.equal(compiledPronunciation.turns[0].text, 'R-O-I align 避免 R-O-I 池化，surf 保持展示拼写。');
+assert.deepEqual(
+    compiledPronunciation.replacements.map((item) => item.termId),
+    ['roialign', 'roi', 'surf']
+);
+assert.deepEqual(compiledPronunciation.unqualified, []);
+assert.equal(compiledPronunciation.exclusions.length, 0);
+assert.equal(compiledPronunciation.replacements[0].qualification.id, 'roialign-volc-seed-tts-2-zh-huopo-b-v1');
+assert.equal(compiledPronunciation.glossarySha256.length, 64);
+const excludedPronunciation = compileSpeechTurns({
+    ...pronunciationContext,
+    eventId: '1980-xcon-r1',
+    turns: Array.from({ length: 5 }, (_, index) => ({ role: 'N', text: index === 4 ? 'XCON/R1' : '无' }))
+});
+assert.equal(excludedPronunciation.turns[4].text, 'XCON/R1');
+assert.equal(excludedPronunciation.replacements.length, 0);
+assert.equal(excludedPronunciation.unqualified.length, 0);
+assert.equal(excludedPronunciation.exclusions.length, 1);
+assert.equal(
+    compileSpeechTurns({
+        ...pronunciationContext,
+        eventId: 'other-event',
+        turns: [{ role: 'N', text: 'XCON XCONSOLE' }]
+    }).turns[0].text,
+    'ex-con XCONSOLE'
+);
+for (const mismatch of [
+    { provider: 'different-provider' },
+    { model: 'different-model' },
+    { locale: 'en' },
+    { voiceForRole: () => 'different-voice' },
+    { instructionForRole: () => 'different-instruction' }
+]) {
+    const result = compileSpeechTurns({
+        ...pronunciationContext,
+        ...mismatch,
+        eventId: 'other-event',
+        turns: [{ role: 'N', text: 'NAS' }]
+    });
+    assert.equal(result.turns[0].text, 'NAS');
+    assert.equal(result.replacements.length, 0);
+    assert.equal(result.unqualified.length, 1);
+}
+assert.throws(
+    () =>
+        compileSpeechTurns({
+            ...pronunciationContext,
+            eventId: 'ambiguous-event',
+            turns: [{ role: 'B', text: 'SURF' }],
+            glossaryBundle: {
+                path: path.join(ROOT, 'audio/pronunciation/glossary.json'),
+                hash: 'test-glossary-hash',
+                glossary: {
+                    entries: [
+                        {
+                            id: 'surf',
+                            term: 'SURF',
+                            aliases: ['SURF'],
+                            ttsQualifications: ['surf', 'serf'].map((speechForm, index) => ({
+                                qualificationId: `ambiguous-${index}`,
+                                status: 'human-reviewed-pass',
+                                reviewedAt: '2026-08-14',
+                                provider: pronunciationContext.provider,
+                                model: pronunciationContext.model,
+                                locale: pronunciationContext.locale,
+                                voice: pronunciationVoiceForRole('B'),
+                                instructionSha256: pronunciationInstructionSha256(pronunciationInstructionForRole('B')),
+                                method: 'speech-replacement',
+                                speechForm,
+                                sampleIds: [`sample-${index}`]
+                            }))
+                        }
+                    ]
+                }
+            }
+        }),
+    /multiple active pronunciation qualifications/
+);
+assert.deepEqual(
+    locateRanges([{ text: ' X' }, { text: 'CON' }, { text: ' then' }, { text: ' XKAN' }], ['XCON', 'XKAN']).map(
+        ({ start, end }) => ({ start, end })
+    ),
+    [
+        { start: 0, end: 1 },
+        { start: 3, end: 3 }
+    ]
+);
+assert.deepEqual(
+    locateRanges([{ text: '专家通常把' }, { text: ' NAS' }], ['NAS']).map(({ start, end }) => ({ start, end })),
+    [{ start: 1, end: 1 }]
+);
+assert.equal(
+    classify({ automaticValidation: { detector: 'duration', passMaxMs: 650, failMinMs: 800 } }, { durationMs: 410 })
+        .decision,
+    'PASS'
+);
+assert.equal(
+    classify(
+        { automaticValidation: { detector: 'token-form', passPrefixes: ['roi'], failPrefixes: ['roy'] } },
+        { targetTokenText: 'Royalign' }
+    ).decision,
+    'FAIL'
+);
+assert.deepEqual(
+    classify(
+        { automaticValidation: { detector: 'review-only', reason: 'insufficient-signal' } },
+        { targetTokenText: 'XCON' }
+    ),
+    { decision: 'REVIEW', detector: 'review-only', reason: 'insufficient-signal' }
+);
+assert.equal(sourceOrdinal([{ text: 'XCON 与 XCON' }, { text: 'XCON' }], { turnIndex: 1, start: 7 }, ['XCON']), 1);
 
 assert.deepEqual(generationActions({ planExists: false, overlayExists: false }), ['build', 'generate', 'validate']);
 assert.deepEqual(generationActions({ planExists: true, overlayExists: false }), [
@@ -175,6 +319,23 @@ const packageJson = JSON.parse(fs.readFileSync(path.resolve(import.meta.dirname,
 for (const command of ['audio:workflow', 'audio:status', 'audio:review', 'audio:release']) {
     assert(packageJson.scripts[command], `Missing stable package command ${command}`);
 }
+for (const command of [
+    'audio:pronunciation:qualification-pack',
+    'audio:pronunciation:diagnostic:prepare',
+    'audio:pronunciation:diagnostic:generate',
+    'audio:pronunciation:diagnostic:score',
+    'audio:pronunciation:diagnostic:revision'
+]) {
+    assert(packageJson.scripts[command], `Missing pronunciation command ${command}`);
+}
+for (const retiredCommand of [
+    'audio:pronunciation:validate',
+    'audio:pronunciation:validate-revision',
+    'audio:pronunciation:prepare-validator'
+]) {
+    assert(!packageJson.scripts[retiredCommand], `Formal acoustic command ${retiredCommand} must stay removed`);
+}
+assert(!pipelineSource.includes('pronunciation-validate'), 'Acoustic diagnostics must not be part of audio:workflow');
 for (const retiredCommand of ['audio:plan:build', 'audio:base:generate', 'audio:push', 'audio:publish']) {
     assert(!packageJson.scripts[retiredCommand], `Retired package command ${retiredCommand} must stay removed`);
 }
@@ -185,9 +346,9 @@ assert(
 
 const workflowReport = await buildWorkflowReport();
 assert.deepEqual(workflowReport.errors, []);
-assert.equal(workflowReport.source.configCount, 10);
-assert.equal(workflowReport.source.validConfigCount, 10);
-assert.equal(workflowReport.source.turnCount, 348);
+assert.equal(workflowReport.source.configCount, 11);
+assert.equal(workflowReport.source.validConfigCount, 11);
+assert.equal(workflowReport.source.turnCount, 352);
 assert.deepEqual(workflowReport.source.untrackedFiles, []);
 assert.equal(workflowReport.archive.storylineEntryCount, 194);
 assert.equal(workflowReport.archive.uniqueEventCount, 168);

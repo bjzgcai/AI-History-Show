@@ -14,6 +14,7 @@ import {
     renderScript,
     revisionPaths
 } from './lib/audio-revision.mjs';
+import { compileSpeechTurns, loadPronunciationGlossary } from './lib/pronunciation.mjs';
 
 function probeAudio(filePath) {
     const result = spawnSync(
@@ -45,6 +46,20 @@ function assetKey(item) {
     return `${item.scopeId}:${item.sequenceIndex}:${item.locale}:${item.mode}`;
 }
 
+function voiceForRole(profile, role) {
+    if (role === 'A') return profile.voiceA;
+    if (role === 'B') return profile.voiceB;
+    if (role === 'SUMMARY') return profile.voiceSummary;
+    return profile.voiceNarrator;
+}
+
+function instructionForRole(profile, role) {
+    if (role === 'A') return profile.instructionA;
+    if (role === 'B') return profile.instructionB;
+    if (role === 'SUMMARY') return profile.instructionSummary;
+    return profile.instructionNarrator;
+}
+
 function main() {
     const config = loadRevisionConfig(process.argv[2]);
     const { planPath, overlayPath } = revisionPaths(config);
@@ -52,7 +67,9 @@ function main() {
     if (!fs.existsSync(overlayPath)) fail(`Missing ${relativeToRoot(overlayPath)}`);
     const plan = readJson(planPath);
     const overlay = readJson(overlayPath);
+    const requiresPronunciationQualification = overlay.schemaVersion >= 2;
     const turnSources = loadRevisionTurns(config);
+    const glossaryBundle = loadPronunciationGlossary();
     if (plan.revisionId !== config.revisionId || overlay.revisionId !== config.revisionId) {
         fail('Revision IDs do not match the config');
     }
@@ -82,6 +99,38 @@ function main() {
         }
         if (JSON.stringify(asset.turns) !== JSON.stringify(data.turns)) {
             failures.push(`${data.eventId}: overlay turns are out of sync`);
+        }
+        if (requiresPronunciationQualification && asset.pronunciation?.schemaVersion !== 2) {
+            failures.push(`${data.eventId}: missing pronunciation qualification metadata`);
+        } else if (requiresPronunciationQualification) {
+            const voiceProfile = asset.voiceProfile || config.voiceProfile;
+            const expectedPronunciation = compileSpeechTurns({
+                turns: data.turns,
+                eventId: data.eventId,
+                locale,
+                provider: config.provider.name,
+                model: config.provider.model,
+                voiceForRole: (role) => voiceForRole(voiceProfile, role),
+                instructionForRole: (role) => instructionForRole(voiceProfile, role),
+                glossaryBundle
+            });
+            const expectedMetadata = {
+                schemaVersion: expectedPronunciation.schemaVersion,
+                glossaryPath: expectedPronunciation.glossaryPath,
+                glossarySha256: expectedPronunciation.glossarySha256,
+                replacements: expectedPronunciation.replacements,
+                unqualified: expectedPronunciation.unqualified,
+                exclusions: expectedPronunciation.exclusions
+            };
+            if (JSON.stringify(asset.pronunciation) !== JSON.stringify(expectedMetadata)) {
+                failures.push(`${data.eventId}: overlay pronunciation metadata is out of sync`);
+            }
+            if (!asset.generationIdentitySha256) {
+                failures.push(`${data.eventId}: missing pronunciation generation identity`);
+            }
+            if (expectedPronunciation.unqualified.length) {
+                failures.push(`${data.eventId}: unqualified pronunciation context`);
+            }
         }
         const audioPath = path.join(ROOT, asset.audio.path);
         if (!fs.existsSync(audioPath)) {

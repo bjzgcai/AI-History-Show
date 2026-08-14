@@ -2,16 +2,16 @@
     "schemaVersion": 1,
     "source": {
         "turnsRoot": "audio/revisions",
-        "turnFileCount": 348,
-        "turnCount": 2128,
-        "localeCounts": { "zh": 1128, "en": 1000 }
+        "turnFileCount": 352,
+        "turnCount": 2153,
+        "localeCounts": { "zh": 1153, "en": 1000 }
     },
     "summary": {
         "glossaryEntryCount": 311,
         "matchedEntryCount": 311,
         "unmatchedEntryCount": 0,
         "unknownCandidateCount": 0,
-        "occurrenceCount": 2064,
+        "occurrenceCount": 2091,
         "hintRequiredEntryCount": 213,
         "categories": {
             "acronym": 12,
@@ -9517,7 +9517,7 @@
             },
             "locales": {
                 "zh": {
-                    "count": 6,
+                    "count": 10,
                     "eventIds": ["2015-faster-r-cnn", "ai100-2017-fpn-retinanet", "ai100-2017-mask-r-cnn"],
                     "occurrences": [
                         {
@@ -9590,6 +9590,54 @@
                             "turnIndex": 1,
                             "text": "上一段讲到「Mask R-CNN」。现在把镜头转向「FPN 与 RetinaNet」，沿着这条故事线换一个问题：把时间拨回2017年，「FPN 与 RetinaNet」究竟在解决一个什么样的难题？",
                             "path": "audio/revisions/ai100-remaining-original/turns/zh/061-ai100-2017-fpn-retinanet.json",
+                            "alias": "Mask R-CNN"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 60,
+                            "eventId": "ai100-2017-mask-r-cnn",
+                            "locale": "zh",
+                            "role": "A",
+                            "turnIndex": 1,
+                            "text": "「Mask R-CNN」最有意思的地方，是结果本身，还是它重新定义问题的方式？",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/060-ai100-2017-mask-r-cnn.json",
+                            "alias": "Mask R-CNN"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 60,
+                            "eventId": "ai100-2017-mask-r-cnn",
+                            "locale": "zh",
+                            "role": "B",
+                            "turnIndex": 2,
+                            "text": "检测系统可以用边界框定位物体，语义分割则给像素赋予类别，却不能区分同类的不同实例。Mask R-CNN 在强大的两阶段检测器上增加实例掩码分支，把两类需求统一起来。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/060-ai100-2017-mask-r-cnn.json",
+                            "alias": "Mask R-CNN"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 60,
+                            "eventId": "ai100-2017-mask-r-cnn",
+                            "locale": "zh",
+                            "role": "B",
+                            "turnIndex": 6,
+                            "text": "专家通常把 Mask R-CNN 视为实例分割的经典框架，并把它作为姿态、关键点和稠密预测任务的通用基础。RoIAlign 也成为被广泛复用的对齐技术。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/060-ai100-2017-mask-r-cnn.json",
+                            "alias": "Mask R-CNN"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 60,
+                            "eventId": "ai100-2017-mask-r-cnn",
+                            "locale": "zh",
+                            "role": "A",
+                            "turnIndex": 7,
+                            "text": "当今天的系统规模越来越大时，「Mask R-CNN」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/060-ai100-2017-mask-r-cnn.json",
                             "alias": "Mask R-CNN"
                         }
                     ]
@@ -13806,9 +13854,32 @@
                     "en": "Keep “RoIAlign” unchanged and pronounce it as “R O I align”."
                 }
             },
+            "ttsQualifications": [
+                {
+                    "qualificationId": "roialign-volc-seed-tts-2-zh-huopo-b-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-08-13",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "7864fbdc8b056092594f2170a8addd7d497808059a8b84a57caa3384e9533105",
+                    "method": "speech-replacement",
+                    "speechForm": "R-O-I align",
+                    "sampleIds": [
+                        "zh-roialign-rewritten",
+                        "repeat-1/zh-roialign-rewritten",
+                        "repeat-2/zh-roialign-rewritten"
+                    ]
+                }
+            ],
+            "pronunciationHypotheses": {
+                "expected": ["ɑːr", "oʊ", "aɪ", "ə", "l", "aɪ", "n"],
+                "rejected": [["r", "ɔɪ", "ə", "l", "aɪ", "n"]]
+            },
             "locales": {
                 "zh": {
-                    "count": 2,
+                    "count": 4,
                     "eventIds": ["ai100-2017-mask-r-cnn"],
                     "occurrences": [
                         {
@@ -13833,6 +13904,30 @@
                             "turnIndex": 6,
                             "text": "专家通常把 Mask R-CNN 视为实例分割的经典框架，并把它作为姿态、关键点和稠密预测任务的通用基础。RoIAlign 也成为被广泛复用的对齐技术。",
                             "path": "audio/revisions/ai100-remaining-original/turns/zh/060-ai100-2017-mask-r-cnn.json",
+                            "alias": "RoIAlign"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 60,
+                            "eventId": "ai100-2017-mask-r-cnn",
+                            "locale": "zh",
+                            "role": "B",
+                            "turnIndex": 4,
+                            "text": "并行的掩码头为每个检测实例预测二值掩码，分类与边界框回归仍作为独立任务。RoIAlign 避免 RoI 池化的坐标量化，保留像素级对齐。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/060-ai100-2017-mask-r-cnn.json",
+                            "alias": "RoIAlign"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 60,
+                            "eventId": "ai100-2017-mask-r-cnn",
+                            "locale": "zh",
+                            "role": "B",
+                            "turnIndex": 6,
+                            "text": "专家通常把 Mask R-CNN 视为实例分割的经典框架，并把它作为姿态、关键点和稠密预测任务的通用基础。RoIAlign 也成为被广泛复用的对齐技术。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/060-ai100-2017-mask-r-cnn.json",
                             "alias": "RoIAlign"
                         }
                     ]
@@ -15535,7 +15630,7 @@
             },
             "locales": {
                 "zh": {
-                    "count": 1,
+                    "count": 2,
                     "eventIds": ["ai100-2006-surf"],
                     "occurrences": [
                         {
@@ -15548,6 +15643,18 @@
                             "turnIndex": 2,
                             "text": "赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。",
                             "path": "audio/revisions/ai100-remaining-original/turns/zh/031-ai100-2006-surf.json",
+                            "alias": "Hessian"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 31,
+                            "eventId": "ai100-2006-surf",
+                            "locale": "zh",
+                            "role": "B",
+                            "turnIndex": 2,
+                            "text": "赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/031-ai100-2006-surf.json",
                             "alias": "Hessian"
                         }
                     ]
@@ -16695,7 +16802,7 @@
             },
             "locales": {
                 "zh": {
-                    "count": 6,
+                    "count": 8,
                     "eventIds": ["1965-dendral", "1980-xcon-r1"],
                     "occurrences": [
                         {
@@ -16768,6 +16875,30 @@
                             "turnIndex": 6,
                             "text": "回看「DENDRAL」，再看「XCON / R1 专家系统」，我们能听见同一个技术问题跨越年代后的回响。",
                             "path": "audio/revisions/ai100-remaining-original/turns/zh/021-1980-xcon-r1.json",
+                            "alias": "DENDRAL"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 21,
+                            "eventId": "1980-xcon-r1",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 1,
+                            "text": "上一段讲到「DENDRAL」。现在把镜头转向「XCON / R1 专家系统」，沿着这条故事线换一个问题：如果把「XCON / R1 专家系统」拆开来看，真正改变研究方向的部分是什么？",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/021-1980-xcon-r1.json",
+                            "alias": "DENDRAL"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 21,
+                            "eventId": "1980-xcon-r1",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 6,
+                            "text": "回看「DENDRAL」，再看「XCON / R1 专家系统」，我们能听见同一个技术问题跨越年代后的回响。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/021-1980-xcon-r1.json",
                             "alias": "DENDRAL"
                         }
                     ]
@@ -19084,7 +19215,7 @@
             },
             "locales": {
                 "zh": {
-                    "count": 1,
+                    "count": 2,
                     "eventIds": ["ai100-2016-nas"],
                     "occurrences": [
                         {
@@ -19097,6 +19228,18 @@
                             "turnIndex": 4,
                             "text": "专家通常把 NAS 视为自动化模型设计一部分的里程碑，同时也指出其算力成本很高。它的长期影响在于搜索空间和控制器框架影响了后续高效 AutoML 系统。",
                             "path": "audio/revisions/ai100-remaining-original/turns/zh/089-ai100-2016-nas.json",
+                            "alias": "AutoML"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 89,
+                            "eventId": "ai100-2016-nas",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 4,
+                            "text": "专家通常把 NAS 视为自动化模型设计一部分的里程碑，同时也指出其算力成本很高。它的长期影响在于搜索空间和控制器框架影响了后续高效 AutoML 系统。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/089-ai100-2016-nas.json",
                             "alias": "AutoML"
                         }
                     ]
@@ -26476,9 +26619,28 @@
                     "en": "Keep “SURF” unchanged and pronounce it as “surf, /sɜːrf/”."
                 }
             },
+            "ttsQualifications": [
+                {
+                    "qualificationId": "surf-volc-seed-tts-2-zh-huopo-b-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-08-13",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "7864fbdc8b056092594f2170a8addd7d497808059a8b84a57caa3384e9533105",
+                    "method": "speech-replacement",
+                    "speechForm": "surf",
+                    "sampleIds": ["zh-surf-rewritten", "repeat-1/zh-surf-rewritten", "repeat-2/zh-surf-rewritten"]
+                }
+            ],
+            "pronunciationHypotheses": {
+                "expected": ["s", "ɜː", "r", "f"],
+                "rejected": [["ɛ", "s", "j", "uː", "ɑː", "r", "ɛ", "f"]]
+            },
             "locales": {
                 "zh": {
-                    "count": 4,
+                    "count": 8,
                     "eventIds": ["ai100-2006-surf"],
                     "occurrences": [
                         {
@@ -26527,6 +26689,54 @@
                             "turnIndex": 7,
                             "text": "「SURF 加速稳健特征」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
                             "path": "audio/revisions/ai100-remaining-original/turns/zh/031-ai100-2006-surf.json",
+                            "alias": "SURF"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 31,
+                            "eventId": "ai100-2006-surf",
+                            "locale": "zh",
+                            "role": "A",
+                            "turnIndex": 1,
+                            "text": "把时间拨回2006年，「SURF 加速稳健特征」究竟在解决一个什么样的难题？",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/031-ai100-2006-surf.json",
+                            "alias": "SURF"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 31,
+                            "eventId": "ai100-2006-surf",
+                            "locale": "zh",
+                            "role": "B",
+                            "turnIndex": 2,
+                            "text": "赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/031-ai100-2006-surf.json",
+                            "alias": "SURF"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 31,
+                            "eventId": "ai100-2006-surf",
+                            "locale": "zh",
+                            "role": "B",
+                            "turnIndex": 6,
+                            "text": "专家通常把 SURF 视为深度学习前局部特征工程的重要进展。它的长期影响在于强调足够快速的稳健匹配，支撑图像检索、拼接和机器人视觉流程。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/031-ai100-2006-surf.json",
+                            "alias": "SURF"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 31,
+                            "eventId": "ai100-2006-surf",
+                            "locale": "zh",
+                            "role": "SUMMARY",
+                            "turnIndex": 7,
+                            "text": "「SURF 加速稳健特征」留下的关键，不只是一项成果，而是一种后来可以继续检验、改造和扩展的方法。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/031-ai100-2006-surf.json",
                             "alias": "SURF"
                         }
                     ]
@@ -26873,9 +27083,37 @@
                     "en": "Keep “XCON” unchanged and pronounce it as “EX-con, /ˈeks.kɑːn/”."
                 }
             },
+            "ttsQualifications": [
+                {
+                    "qualificationId": "xcon-volc-seed-tts-2-zh-huopo-narrator-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-08-13",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "c9166f088beb9f4daa72a98319bd3e638cb205ff490315b69b678f95e11e7252",
+                    "method": "speech-replacement",
+                    "speechForm": "ex-con",
+                    "sampleIds": ["zh-xcon-rewritten", "repeat-1/zh-xcon-rewritten", "repeat-2/zh-xcon-rewritten"],
+                    "note": "通用读法样本已通过；Issue #98 指出的倒数第二句例外上下文不在本次通过范围内。"
+                }
+            ],
+            "ttsExclusions": [
+                {
+                    "eventId": "1980-xcon-r1",
+                    "locale": "zh",
+                    "turnIndex": 5,
+                    "reason": "Issue #98 明确排除审听备注中的倒数第二句。"
+                }
+            ],
+            "pronunciationHypotheses": {
+                "expected": ["ɛ", "k", "s", "k", "ɑː", "n"],
+                "rejected": [["ɛ", "k", "s", "s", "iː", "oʊ", "ɛ", "n"]]
+            },
             "locales": {
                 "zh": {
-                    "count": 4,
+                    "count": 8,
                     "eventIds": ["1980-xcon-r1"],
                     "occurrences": [
                         {
@@ -26924,6 +27162,54 @@
                             "turnIndex": 6,
                             "text": "回看「DENDRAL」，再看「XCON / R1 专家系统」，我们能听见同一个技术问题跨越年代后的回响。",
                             "path": "audio/revisions/ai100-remaining-original/turns/zh/021-1980-xcon-r1.json",
+                            "alias": "XCON"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 21,
+                            "eventId": "1980-xcon-r1",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 1,
+                            "text": "上一段讲到「DENDRAL」。现在把镜头转向「XCON / R1 专家系统」，沿着这条故事线换一个问题：如果把「XCON / R1 专家系统」拆开来看，真正改变研究方向的部分是什么？",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/021-1980-xcon-r1.json",
+                            "alias": "XCON"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 21,
+                            "eventId": "1980-xcon-r1",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 1,
+                            "text": "上一段讲到「DENDRAL」。现在把镜头转向「XCON / R1 专家系统」，沿着这条故事线换一个问题：如果把「XCON / R1 专家系统」拆开来看，真正改变研究方向的部分是什么？",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/021-1980-xcon-r1.json",
+                            "alias": "XCON"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 21,
+                            "eventId": "1980-xcon-r1",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 5,
+                            "text": "专家通常把 XCON/R1 视为工业专家系统的标志性案例，也证明知识工程能够产生商业价值。它的长期影响在于成为专家系统维护、规则管理和应用 AI 部署的标准案例。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/021-1980-xcon-r1.json",
+                            "alias": "XCON"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 21,
+                            "eventId": "1980-xcon-r1",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 6,
+                            "text": "回看「DENDRAL」，再看「XCON / R1 专家系统」，我们能听见同一个技术问题跨越年代后的回响。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/021-1980-xcon-r1.json",
                             "alias": "XCON"
                         }
                     ]
@@ -27005,7 +27291,7 @@
             },
             "locales": {
                 "zh": {
-                    "count": 1,
+                    "count": 2,
                     "eventIds": ["1980-xcon-r1"],
                     "occurrences": [
                         {
@@ -27018,6 +27304,18 @@
                             "turnIndex": 4,
                             "text": "产生式规则匹配工作记忆中的事实，触发动作，并逐步构建有效硬件配置。 关键机制是OPS5 产生式规则配置，它把资料线索与可见的演示行为连接起来。",
                             "path": "audio/revisions/ai100-remaining-original/turns/zh/021-1980-xcon-r1.json",
+                            "alias": "OPS5"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 21,
+                            "eventId": "1980-xcon-r1",
+                            "locale": "zh",
+                            "role": "B",
+                            "turnIndex": 4,
+                            "text": "产生式规则匹配工作记忆中的事实，触发动作，并逐步构建有效硬件配置。 关键机制是OPS5 产生式规则配置，它把资料线索与可见的演示行为连接起来。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/021-1980-xcon-r1.json",
                             "alias": "OPS5"
                         }
                     ]
@@ -30690,9 +30988,29 @@
                     "en": "Keep “RoI” unchanged and pronounce it as “R O I”."
                 }
             },
+            "ttsQualifications": [
+                {
+                    "qualificationId": "roi-volc-seed-tts-2-zh-huopo-b-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-08-13",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "7864fbdc8b056092594f2170a8addd7d497808059a8b84a57caa3384e9533105",
+                    "method": "speech-replacement",
+                    "speechForm": "R-O-I",
+                    "sampleIds": [
+                        "zh-roialign-rewritten",
+                        "repeat-1/zh-roialign-rewritten",
+                        "repeat-2/zh-roialign-rewritten"
+                    ],
+                    "note": "与 RoIAlign 同一 rewritten 样本中的独立 RoI 已人工审听通过。"
+                }
+            ],
             "locales": {
                 "zh": {
-                    "count": 2,
+                    "count": 3,
                     "eventIds": ["ai100-2015-fast-r-cnn", "ai100-2017-mask-r-cnn"],
                     "occurrences": [
                         {
@@ -30717,6 +31035,18 @@
                             "turnIndex": 4,
                             "text": "并行的掩码头为每个检测实例预测二值掩码，分类与边界框回归仍作为独立任务。RoIAlign 避免 RoI 池化的坐标量化，保留像素级对齐。",
                             "path": "audio/revisions/ai100-remaining-original/turns/zh/060-ai100-2017-mask-r-cnn.json",
+                            "alias": "RoI"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 60,
+                            "eventId": "ai100-2017-mask-r-cnn",
+                            "locale": "zh",
+                            "role": "B",
+                            "turnIndex": 4,
+                            "text": "并行的掩码头为每个检测实例预测二值掩码，分类与边界框回归仍作为独立任务。RoIAlign 避免 RoI 池化的坐标量化，保留像素级对齐。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/060-ai100-2017-mask-r-cnn.json",
                             "alias": "RoI"
                         }
                     ]
@@ -30936,9 +31266,25 @@
                     "en": "Keep “NAS” unchanged and pronounce it as “N A S”."
                 }
             },
+            "ttsQualifications": [
+                {
+                    "qualificationId": "nas-volc-seed-tts-2-zh-huopo-narrator-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-08-13",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "c9166f088beb9f4daa72a98319bd3e638cb205ff490315b69b678f95e11e7252",
+                    "method": "speech-replacement",
+                    "speechForm": "N-A-S",
+                    "sampleIds": ["zh-nas-rewritten", "repeat-1/zh-nas-rewritten", "repeat-2/zh-nas-rewritten"]
+                }
+            ],
+            "pronunciationHypotheses": { "expected": ["ɛ", "n", "eɪ", "ɛ", "s"], "rejected": [["n", "æ", "s"]] },
             "locales": {
                 "zh": {
-                    "count": 1,
+                    "count": 2,
                     "eventIds": ["ai100-2016-nas"],
                     "occurrences": [
                         {
@@ -30951,6 +31297,18 @@
                             "turnIndex": 4,
                             "text": "专家通常把 NAS 视为自动化模型设计一部分的里程碑，同时也指出其算力成本很高。它的长期影响在于搜索空间和控制器框架影响了后续高效 AutoML 系统。",
                             "path": "audio/revisions/ai100-remaining-original/turns/zh/089-ai100-2016-nas.json",
+                            "alias": "NAS"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 89,
+                            "eventId": "ai100-2016-nas",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 4,
+                            "text": "专家通常把 NAS 视为自动化模型设计一部分的里程碑，同时也指出其算力成本很高。它的长期影响在于搜索空间和控制器框架影响了后续高效 AutoML 系统。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/089-ai100-2016-nas.json",
                             "alias": "NAS"
                         }
                     ]
@@ -31167,7 +31525,7 @@
             },
             "locales": {
                 "zh": {
-                    "count": 5,
+                    "count": 6,
                     "eventIds": ["ai100-2016-nas", "ai100-2017-gat"],
                     "occurrences": [
                         {
@@ -31228,6 +31586,18 @@
                             "turnIndex": 1,
                             "text": "上一段讲到「GAT」。现在把镜头转向「神经架构搜索」，沿着这条故事线换一个问题：研究者为什么需要「神经架构搜索」？当时已有的方法究竟卡在了哪里？",
                             "path": "audio/revisions/ai100-remaining-original/turns/zh/089-ai100-2016-nas.json",
+                            "alias": "GAT"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 89,
+                            "eventId": "ai100-2016-nas",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 1,
+                            "text": "上一段讲到「GAT」。现在把镜头转向「神经架构搜索」，沿着这条故事线换一个问题：研究者为什么需要「神经架构搜索」？当时已有的方法究竟卡在了哪里？",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/089-ai100-2016-nas.json",
                             "alias": "GAT"
                         }
                     ]
@@ -31926,7 +32296,7 @@
             },
             "locales": {
                 "zh": {
-                    "count": 102,
+                    "count": 103,
                     "eventIds": [
                         "1920-rur-robots",
                         "1942-asimov-runaround",
@@ -33194,6 +33564,18 @@
                             "turnIndex": 7,
                             "text": "当今天的系统规模越来越大时，「AI 风险声明」留下的思路还有哪些价值，又有哪些边界值得重新追问？",
                             "path": "audio/revisions/humanistic-cycle-original/turns/zh/012-2023-ai-risk-statement.json",
+                            "alias": "AI"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 21,
+                            "eventId": "1980-xcon-r1",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 5,
+                            "text": "专家通常把 XCON/R1 视为工业专家系统的标志性案例，也证明知识工程能够产生商业价值。它的长期影响在于成为专家系统维护、规则管理和应用 AI 部署的标准案例。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/021-1980-xcon-r1.json",
                             "alias": "AI"
                         }
                     ]
@@ -34971,7 +35353,7 @@
             },
             "locales": {
                 "zh": {
-                    "count": 4,
+                    "count": 8,
                     "eventIds": ["1980-xcon-r1"],
                     "occurrences": [
                         {
@@ -35020,6 +35402,54 @@
                             "turnIndex": 6,
                             "text": "回看「DENDRAL」，再看「XCON / R1 专家系统」，我们能听见同一个技术问题跨越年代后的回响。",
                             "path": "audio/revisions/ai100-remaining-original/turns/zh/021-1980-xcon-r1.json",
+                            "alias": "R1"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 21,
+                            "eventId": "1980-xcon-r1",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 1,
+                            "text": "上一段讲到「DENDRAL」。现在把镜头转向「XCON / R1 专家系统」，沿着这条故事线换一个问题：如果把「XCON / R1 专家系统」拆开来看，真正改变研究方向的部分是什么？",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/021-1980-xcon-r1.json",
+                            "alias": "R1"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 21,
+                            "eventId": "1980-xcon-r1",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 1,
+                            "text": "上一段讲到「DENDRAL」。现在把镜头转向「XCON / R1 专家系统」，沿着这条故事线换一个问题：如果把「XCON / R1 专家系统」拆开来看，真正改变研究方向的部分是什么？",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/021-1980-xcon-r1.json",
+                            "alias": "R1"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 21,
+                            "eventId": "1980-xcon-r1",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 5,
+                            "text": "专家通常把 XCON/R1 视为工业专家系统的标志性案例，也证明知识工程能够产生商业价值。它的长期影响在于成为专家系统维护、规则管理和应用 AI 部署的标准案例。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/021-1980-xcon-r1.json",
+                            "alias": "R1"
+                        },
+                        {
+                            "revisionId": "ai100-remaining-storyline-zh-original-v1-2026-08-09",
+                            "scopeId": "bench-council-ai100",
+                            "sequenceIndex": 21,
+                            "eventId": "1980-xcon-r1",
+                            "locale": "zh",
+                            "role": "N",
+                            "turnIndex": 6,
+                            "text": "回看「DENDRAL」，再看「XCON / R1 专家系统」，我们能听见同一个技术问题跨越年代后的回响。",
+                            "path": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh/021-1980-xcon-r1.json",
                             "alias": "R1"
                         }
                     ]

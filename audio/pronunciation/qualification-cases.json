@@ -1,0 +1,66 @@
+{
+    "schemaVersion": 1,
+    "provider": {
+        "name": "volc",
+        "model": "seed-tts-2.0",
+        "endpoint": "https://openspeech.bytedance.com/api/v3/plan/tts/unidirectional"
+    },
+    "baseSeed": 980100,
+    "voiceProfilePath": "audio/voices/zh-huopo-original.json",
+    "groups": [
+        {
+            "id": "surf-volc-seed-tts-2-zh-vv-a-v1",
+            "qualificationId": "surf-volc-seed-tts-2-zh-vv-a-v1",
+            "termId": "surf",
+            "locale": "zh",
+            "speechForm": "surf",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "surf-question",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/031-ai100-2006-surf.json",
+                    "turnIndex": 1,
+                    "repeatCount": 3
+                }
+            ]
+        },
+        {
+            "id": "surf-volc-seed-tts-2-zh-huopo-summary-v1",
+            "qualificationId": "surf-volc-seed-tts-2-zh-huopo-summary-v1",
+            "termId": "surf",
+            "locale": "zh",
+            "speechForm": "surf",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "surf-summary",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/031-ai100-2006-surf.json",
+                    "turnIndex": 7,
+                    "repeatCount": 3
+                }
+            ]
+        },
+        {
+            "id": "surf-volc-seed-tts-2-zh-huopo-b-v1-regression-2026-08-14",
+            "qualificationId": "surf-volc-seed-tts-2-zh-huopo-b-v1",
+            "termId": "surf",
+            "locale": "zh",
+            "speechForm": "surf",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "surf-history",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/031-ai100-2006-surf.json",
+                    "turnIndex": 2,
+                    "repeatCount": 2
+                },
+                {
+                    "id": "surf-legacy",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/031-ai100-2006-surf.json",
+                    "turnIndex": 6,
+                    "repeatCount": 2
+                }
+            ]
+        }
+    ]
+}

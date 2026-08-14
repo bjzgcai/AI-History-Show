@@ -51,6 +51,7 @@ function validateGlossary(glossary) {
     if (!Array.isArray(glossary.entries) || glossary.entries.length === 0) fail('glossary entries are empty');
     const ids = new Set();
     const aliases = new Map();
+    const qualificationIds = new Set();
     for (const entry of glossary.entries) {
         if (!entry.id || !entry.term || !entry.category) fail('every glossary entry needs id, term, and category');
         if (ids.has(entry.id)) fail(`duplicate glossary id: ${entry.id}`);
@@ -60,6 +61,76 @@ function validateGlossary(glossary) {
         }
         if (!entry.reading?.type || !entry.reading?.spoken) {
             fail(`${entry.id}: missing reading type or spoken form`);
+        }
+        if (entry.pronunciationHypotheses) {
+            if (
+                !Array.isArray(entry.pronunciationHypotheses.expected) ||
+                !entry.pronunciationHypotheses.expected.length
+            ) {
+                fail(`${entry.id}: pronunciation hypotheses need expected phonemes`);
+            }
+            if (!Array.isArray(entry.pronunciationHypotheses.rejected)) {
+                fail(`${entry.id}: pronunciation hypotheses rejected must be an array`);
+            }
+            if (
+                entry.pronunciationHypotheses.rejected.some(
+                    (hypothesis) => !Array.isArray(hypothesis) || !hypothesis.length
+                )
+            ) {
+                fail(`${entry.id}: every rejected pronunciation hypothesis must contain phonemes`);
+            }
+        }
+        const activeQualificationContexts = new Set();
+        for (const validation of entry.ttsQualifications || []) {
+            for (const key of [
+                'qualificationId',
+                'status',
+                'reviewedAt',
+                'provider',
+                'model',
+                'locale',
+                'voice',
+                'instructionSha256',
+                'method',
+                'speechForm'
+            ]) {
+                if (!validation[key]) fail(`${entry.id}: TTS qualification is missing ${key}`);
+            }
+            if (!Array.isArray(validation.sampleIds) || validation.sampleIds.length < 1) {
+                fail(`${entry.id}: TTS qualification needs reviewed sampleIds`);
+            }
+            if (qualificationIds.has(validation.qualificationId)) {
+                fail(`duplicate TTS qualification id: ${validation.qualificationId}`);
+            }
+            qualificationIds.add(validation.qualificationId);
+            if (!/^[a-f0-9]{64}$/u.test(validation.instructionSha256)) {
+                fail(`${entry.id}: TTS qualification instructionSha256 must be lowercase SHA-256`);
+            }
+            if (!['human-reviewed-pass', 'human-reviewed-fail'].includes(validation.status)) {
+                fail(`${entry.id}: unknown TTS qualification status ${validation.status}`);
+            }
+            if (validation.status === 'human-reviewed-pass') {
+                const contextKey = [
+                    validation.provider,
+                    validation.model,
+                    validation.locale,
+                    validation.voice,
+                    validation.instructionSha256,
+                    validation.method
+                ].join('\u0000');
+                if (activeQualificationContexts.has(contextKey)) {
+                    fail(`${entry.id}: multiple active TTS qualifications match the same generation context`);
+                }
+                activeQualificationContexts.add(contextKey);
+            }
+        }
+        for (const exclusion of entry.ttsExclusions || []) {
+            for (const key of ['eventId', 'locale', 'turnIndex', 'reason']) {
+                if (!exclusion[key]) fail(`${entry.id}: TTS exclusion is missing ${key}`);
+            }
+            if (!Number.isInteger(exclusion.turnIndex) || exclusion.turnIndex < 1) {
+                fail(`${entry.id}: TTS exclusion turnIndex must be a positive integer`);
+            }
         }
         if (!glossary.verificationLevels?.[entry.verification]) {
             fail(`${entry.id}: unknown verification level ${entry.verification}`);
@@ -246,6 +317,9 @@ function buildInventory(glossary, turns, figures) {
                         en: `Keep “${entry.term}” unchanged and pronounce it as “${entry.reading.spoken}”.`
                     }
                 },
+                ...(entry.ttsQualifications ? { ttsQualifications: entry.ttsQualifications } : {}),
+                ...(entry.ttsExclusions ? { ttsExclusions: entry.ttsExclusions } : {}),
+                ...(entry.pronunciationHypotheses ? { pronunciationHypotheses: entry.pronunciationHypotheses } : {}),
                 locales
             };
         });
