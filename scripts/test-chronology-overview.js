@@ -200,7 +200,7 @@ for (const [milestoneId, expectedImage, expectedFirstImage = expectedImage] of [
     [
         'milestone-1956-dartmouth',
         'resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg',
-        'resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg'
+        'resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg'
     ],
     [
         'milestone-1986-backpropagation',
