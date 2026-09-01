@@ -97,10 +97,16 @@
     ],
     "visualModules": [],
     "assetIds": [
+      "asset-1956-dartmouth-historical-04",
+      "asset-1956-dartmouth-article-invitation",
+      "asset-1956-dartmouth-article-outline",
+      "asset-1956-dartmouth-article-homeostat",
+      "asset-1956-dartmouth-article-dictionary",
       "asset-1956-dartmouth-historical-02",
       "asset-1956-dartmouth-historical-01",
-      "asset-1956-dartmouth-historical-04",
+      "asset-1956-dartmouth-article-dictionary-window",
       "asset-1956-dartmouth-school",
+      "asset-1956-dartmouth-article-campus",
       "asset-1956-dartmouth-audio-zh-original-v1",
       "asset-1956-dartmouth-audio-en-v1"
     ],
