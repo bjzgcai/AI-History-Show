@@ -135,11 +135,11 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    font:
-        500 11px/1 'SF Mono',
-        'Fira Code',
-        ui-monospace,
-        monospace;
+    font-family: var(--ui-font);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
 }
 
 .chrono-storyline-subtitle {
@@ -275,11 +275,11 @@
     position: absolute;
     transform: translateX(-50%);
     color: rgba(244, 239, 229, 0.68);
-    font:
-        750 11px/1 'SF Mono',
-        'Fira Code',
-        ui-monospace,
-        monospace;
+    font-family: var(--ui-font);
+    font-size: 11px;
+    font-weight: 750;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
     white-space: nowrap;
     pointer-events: none;
 }
@@ -455,11 +455,11 @@
     background: var(--story-color);
     color: #050505;
     padding: 2px 6px;
-    font:
-        800 11px/1 'SF Mono',
-        'Fira Code',
-        ui-monospace,
-        monospace;
+    font-family: var(--ui-font);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
 }
 
 .chrono-card-title {
@@ -500,11 +500,10 @@
     display: grid;
     gap: 1px;
     color: #fff;
-    font:
-        750 12px/1.08 'SF Mono',
-        'Fira Code',
-        ui-monospace,
-        monospace;
+    font-family: var(--ui-font);
+    font-size: 12px;
+    font-weight: 750;
+    line-height: 1.08;
     text-align: center;
 }
 
