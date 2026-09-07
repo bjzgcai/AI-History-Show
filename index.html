@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 历史回顾展览</title>
+    <link
+        rel="preload"
+        href="public/fonts/source-han-sans/SourceHanSansSC-VF.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin
+    >
     <style>
+        @font-face {
+            font-family: "Source Han Sans SC";
+            src: url("public/fonts/source-han-sans/SourceHanSansSC-VF.woff2") format("woff2");
+            font-style: normal;
+            font-weight: 250 900;
+            font-display: swap;
+        }
+
         :root {
             --screen-width: 1920px;
             --screen-height: 1080px;
@@ -40,7 +55,8 @@
             --scrollbar-track: rgba(255, 255, 255, 0.045);
             --scrollbar-thumb: rgba(246, 137, 0, 0.42);
             --scrollbar-thumb-hover: rgba(246, 137, 0, 0.68);
-            --ui-font: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            --ui-font: "Source Han Sans SC", sans-serif;
+            --year-font: "Arial Narrow", var(--ui-font);
         }
 
         * {
@@ -152,7 +168,7 @@
                 radial-gradient(circle at 82% 14%, rgba(216, 112, 76, 0.12), transparent 22%),
                 #f4f0e8;
             color: #181716;
-            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            font-family: var(--ui-font);
         }
 
         .single-stage.is-branch-timeline .stage-grid,
@@ -194,7 +210,7 @@
 
         .single-stage.is-branch-timeline .brand-lockup::after {
             content: "AI History Show";
-            font-family: Georgia, "Times New Roman", serif;
+            font-family: var(--ui-font);
             font-size: 25px;
             font-weight: 800;
             letter-spacing: -0.02em;
@@ -214,7 +230,7 @@
             border-color: rgba(32, 29, 26, 0.22);
             background: rgba(255, 255, 255, 0.42);
             color: #3d3934;
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
             text-transform: none;
         }
 
@@ -249,7 +265,7 @@
 
         .branch-hero-title {
             max-width: 760px;
-            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            font-family: var(--ui-font);
             color: #171514;
             font-size: clamp(58px, 7vw, 104px);
             font-weight: 600;
@@ -265,7 +281,7 @@
             max-width: 620px;
             margin-top: 28px;
             color: #5d5650;
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
             font-size: 18px;
             font-weight: 600;
             line-height: 1.75;
@@ -323,7 +339,7 @@
             border: none;
             background: transparent;
             border-bottom: 1px solid currentColor;
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
             font-size: 14px;
             cursor: default;
         }
@@ -604,7 +620,7 @@
             width: 360px;
             height: 260px;
             color: #171514;
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
         }
 
         .branch-illustration::before {
@@ -687,7 +703,7 @@
 
         .branch-visual-svg .svg-label {
             fill: #171514;
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
             font-size: 11px;
             font-weight: 900;
             letter-spacing: 0.08em;
@@ -696,7 +712,7 @@
 
         .branch-visual-svg .svg-label-soft {
             fill: rgba(23, 21, 20, 0.66);
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
             font-size: 10px;
             font-weight: 800;
             letter-spacing: 0.04em;
@@ -704,7 +720,7 @@
 
         .branch-visual-svg .svg-number {
             fill: #171514;
-            font-family: Georgia, "Times New Roman", serif;
+            font-family: var(--ui-font);
             font-size: 24px;
             font-weight: 700;
         }
@@ -958,7 +974,7 @@
             justify-content: center;
             gap: 10px;
             color: #746b62;
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
             font-size: 13px;
             font-weight: 800;
         }
@@ -978,7 +994,7 @@
 
         .branch-event-title {
             color: #171514;
-            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            font-family: var(--ui-font);
             font-size: clamp(28px, 3vw, 38px);
             font-weight: 600;
             line-height: 1.08;
@@ -988,7 +1004,7 @@
         .branch-event-summary,
         .branch-analysis-item {
             color: #3f3a35;
-            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            font-family: var(--ui-font);
             font-size: 17px;
             line-height: 1.65;
         }
@@ -1001,7 +1017,7 @@
 
         .branch-analysis-item strong {
             color: #c56b4b;
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
             font-size: 12px;
             font-weight: 900;
             letter-spacing: 0.08em;
@@ -1030,7 +1046,7 @@
             color: #2d2925;
             padding: 5px 10px;
             text-decoration: none;
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
             font-size: 13px;
             font-weight: 650;
         }
@@ -1055,7 +1071,7 @@
 
         .branch-element-label {
             color: #b96f57;
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
             font-size: 11px;
             font-weight: 900;
             letter-spacing: 0.08em;
@@ -1079,7 +1095,7 @@
             color: #2d2925;
             padding: 7px 9px;
             text-decoration: none;
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
         }
 
         .branch-element-item strong {
@@ -1249,7 +1265,7 @@
             border-color: rgba(246, 137, 0, 0.82);
             background: rgba(0, 0, 0, 0.34);
             color: rgba(244, 239, 229, 0.78);
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-family: var(--ui-font);
             box-shadow: 0 0 0 1px rgba(246, 137, 0, 0.16);
         }
 
@@ -1291,7 +1307,7 @@
         .branch-hero-title {
             max-width: none;
             color: var(--text);
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: clamp(34px, 3.5vw, 58px);
             font-weight: 900;
             line-height: 1.05;
@@ -1306,7 +1322,7 @@
             max-width: 740px;
             margin-top: 12px;
             color: var(--text-soft);
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
             font-size: 15px;
             font-weight: 700;
             line-height: 1.45;
@@ -1462,7 +1478,7 @@
 
         .branch-event-title {
             color: var(--text);
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: clamp(21px, 1.75vw, 28px);
             font-weight: 900;
             line-height: 1.12;
@@ -1472,7 +1488,7 @@
         .branch-event-summary,
         .branch-analysis-item {
             color: var(--text-soft);
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
             font-size: 13px;
             line-height: 1.4;
         }
@@ -1490,7 +1506,7 @@
 
         .branch-analysis-item strong {
             color: var(--accent);
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
         }
 
         .branch-source-row,
@@ -1732,7 +1748,7 @@
         .branch-timeline-page.is-humanistic-cycle .branch-hero-title {
             max-width: 980px;
             color: #f5efe4;
-            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            font-family: var(--ui-font);
             font-size: clamp(34px, 2.85vw, 48px);
             font-weight: 760;
             line-height: 1.12;
@@ -1926,7 +1942,7 @@
 
         .branch-timeline-page.is-humanistic-cycle .branch-event-title {
             color: #f5efe4;
-            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            font-family: var(--ui-font);
             font-size: clamp(22px, 1.45vw, 26px);
             font-weight: 760;
         }
@@ -2063,7 +2079,7 @@
             display: none;
             min-width: 0;
             color: rgba(244, 239, 229, 0.88);
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-family: var(--ui-font);
             font-size: 16px;
             font-weight: 700;
             line-height: 1.24;
@@ -2103,7 +2119,7 @@
             background: rgba(0, 0, 0, 0.34);
             color: rgba(244, 239, 229, 0.78);
             padding: 0 10px 0 12px;
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-family: var(--ui-font);
             font-size: 15px;
             font-weight: 700;
             line-height: 1;
@@ -2170,7 +2186,7 @@
             background: rgba(0, 0, 0, 0.18);
             color: rgba(244, 239, 229, 0.56);
             padding: 0 10px;
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 17px;
             font-weight: 300;
             line-height: 1;
@@ -2192,7 +2208,7 @@
         }
 
         .mode-chip-label {
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 23px;
             color: rgba(244, 239, 229, 0.56);
             font-weight: 500;
@@ -2219,7 +2235,7 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 17px;
             font-weight: 300;
             line-height: 1;
@@ -2295,7 +2311,7 @@
             justify-content: flex-start;
             gap: 24px;
             color: rgba(244, 239, 229, 0.26);
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-family: var(--ui-font);
             font-size: 22px;
             font-weight: 700;
             letter-spacing: 0.04em;
@@ -2308,7 +2324,7 @@
             right: 56px;
             top: 28px;
             z-index: 5;
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-family: var(--ui-font);
             font-size: 86px;
             line-height: 1;
             font-weight: 800;
@@ -3119,7 +3135,7 @@
             z-index: 3;
             pointer-events: none;
             color: rgba(244, 239, 229, 0.34);
-            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-family: var(--ui-font);
             font-size: 9px;
             letter-spacing: 0.12em;
             text-transform: uppercase;
@@ -3150,7 +3166,7 @@
             padding: 0;
             border: none;
             color: rgba(244, 239, 229, 0.42);
-            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-family: var(--ui-font);
             font-size: 10px;
             letter-spacing: 0.12em;
             text-transform: uppercase;
@@ -3163,7 +3179,7 @@
             bottom: 48px;
             z-index: 3;
             color: #d99a00;
-            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-family: var(--ui-font);
             font-size: 13px;
             line-height: 1.18;
             font-weight: 800;
@@ -3193,7 +3209,7 @@
             justify-content: center;
             border: 1px solid rgba(244, 239, 229, 0.18);
             color: rgba(244, 239, 229, 0.4);
-            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-family: var(--ui-font);
             font-size: 10px;
             letter-spacing: 0.08em;
             text-transform: uppercase;
@@ -4117,7 +4133,7 @@
         .about-modal-title {
             margin: 8px 0 0;
             color: rgba(255, 255, 255, 0.96);
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 30px;
             font-weight: 800;
             line-height: 1.08;
@@ -4137,7 +4153,7 @@
             background: rgba(10, 10, 10, 0.52);
             color: rgba(244, 239, 229, 0.64);
             padding: 0 14px;
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 17px;
             font-weight: 600;
             line-height: 1.18;
@@ -4203,7 +4219,7 @@
         .about-content-title {
             margin: 0;
             color: rgba(255, 255, 255, 0.96);
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 28px;
             font-weight: 800;
             line-height: 1.14;
@@ -4214,7 +4230,7 @@
             display: grid;
             gap: 14px;
             color: rgba(244, 239, 229, 0.76);
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 16px;
             font-weight: 500;
             line-height: 1.68;
@@ -4399,7 +4415,7 @@
 
         .bench-core-year {
             color: rgba(244, 239, 229, 0.44);
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-family: var(--ui-font);
             font-size: 18px;
             font-weight: 800;
         }
@@ -4843,7 +4859,7 @@
             place-items: center;
             color: var(--accent);
             border: 1px solid rgba(246, 137, 0, 0.44);
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-family: var(--ui-font);
             font-size: 11px;
             font-weight: 800;
             background: rgba(0, 0, 0, 0.26);
@@ -4926,7 +4942,7 @@
             place-items: center;
             color: var(--accent);
             border: 1px solid rgba(246, 137, 0, 0.4);
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-family: var(--ui-font);
             font-size: 11px;
         }
 
@@ -5073,7 +5089,7 @@
             padding: 14px 16px;
             background: rgba(255, 255, 255, 0.034);
             color: rgba(255, 255, 255, 0.94);
-            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-family: var(--ui-font);
             font-size: 18px;
             line-height: 1.28;
             white-space: pre-wrap;
@@ -5090,7 +5106,7 @@
             border-radius: 999px;
             padding: 6px 10px;
             color: rgba(244, 239, 229, 0.84);
-            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-family: var(--ui-font);
             font-size: 12px;
             font-weight: 800;
         }
@@ -5442,7 +5458,7 @@
             background: var(--sentiment-soft);
             color: var(--sentiment);
             padding: 3px 8px;
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 12px;
             font-weight: 850;
             line-height: 1.25;
@@ -5597,9 +5613,9 @@
             grid-column: 1;
             grid-row: 1;
             color: var(--accent);
-            font-family: "Gotham", "Arial Narrow", "OPPOSans", "PingFang SC", sans-serif;
+            font-family: var(--year-font);
             font-size: 92px;
-            font-weight: 900;
+            font-weight: 700;
             line-height: 0.9;
             white-space: nowrap;
         }
@@ -5951,6 +5967,7 @@
         .ui-detail-image-nav {
             width: 7px;
             height: 7px;
+            flex: 0 0 7px;
             padding: 0;
             border: none;
             border-radius: 50%;
@@ -5968,13 +5985,16 @@
         }
 
         .ui-detail-image-pager {
-            width: 78px;
-            height: 10px;
+            width: min(100%, 180px);
+            min-height: 10px;
+            height: auto;
             margin: 20px auto 0;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 9px;
+            row-gap: 5px;
+            flex-wrap: wrap;
         }
 
         .ui-detail-caption {
@@ -6052,7 +6072,7 @@
             min-height: 0;
             overflow: auto;
             color: rgba(255, 255, 255, 0.9);
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 20px;
             font-weight: 500;
             line-height: 1.5;
@@ -6163,7 +6183,7 @@
 
         .ui-source-label {
             color: rgba(255, 255, 255, 0.92);
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 20px;
             font-weight: 500;
             line-height: 1.3;
@@ -6173,7 +6193,7 @@
 
         .ui-source-url {
             color: rgba(255, 255, 255, 0.78);
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 18px;
             font-weight: 500;
             line-height: 1.3;
@@ -6182,7 +6202,7 @@
 
         .ui-source-card > .ui-source-url:only-child {
             color: rgba(255, 255, 255, 0.92);
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 20px;
             font-weight: 500;
             line-height: 1.3;
@@ -6203,7 +6223,7 @@
 
         .ui-concept-text {
             color: rgba(255, 255, 255, 0.88);
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 20px;
             font-weight: 500;
             line-height: 1.35;
@@ -6247,7 +6267,7 @@
 
         .ui-concept-feature-text {
             color: rgba(255, 255, 255, 0.92);
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 20px;
             font-weight: 500;
             line-height: 1.38;
@@ -6394,7 +6414,7 @@
         .ui-audio-player-time {
             flex: 0 0 auto;
             color: rgba(244, 239, 229, 0.56);
-            font-family: "Courier New", "SFMono-Regular", monospace;
+            font-family: var(--ui-font);
             font-size: 10px;
             line-height: 1;
             white-space: nowrap;
@@ -6430,7 +6450,7 @@
             background: var(--accent);
             color: #090705;
             padding: 0 26px;
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-family: var(--ui-font);
             font-size: 17px;
             font-weight: 850;
             line-height: 1;
@@ -6575,7 +6595,7 @@
 
         .timeline-current-year {
             color: var(--accent);
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-family: var(--ui-font);
             font-size: 22px;
             font-weight: 700;
             line-height: 1;
@@ -6655,7 +6675,7 @@
 
         .timeline-tick span {
             color: #797a7a;
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-family: var(--ui-font);
             font-size: 11.5px;
             line-height: 1;
             letter-spacing: 0.02em;
@@ -6742,7 +6762,7 @@
             place-items: center;
             border: 1px solid rgba(246, 137, 0, 0.42);
             color: var(--accent);
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            font-family: var(--ui-font);
             font-size: 12px;
             font-weight: 800;
             line-height: 1;
@@ -6823,7 +6843,7 @@
 
         .footer-status-text {
             color: var(--accent);
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-family: var(--ui-font);
             font-size: 18.89px;
             font-weight: 700;
             line-height: 1.15;
@@ -6891,7 +6911,7 @@
             display: grid;
             gap: 4px;
             color: rgba(244, 239, 229, 0.76);
-            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-family: var(--ui-font);
             font-size: 13px;
             font-weight: 700;
             line-height: 1.35;
