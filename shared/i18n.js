@@ -214,7 +214,7 @@
                 'display:inline-flex',
                 'align-items:center',
                 'justify-content:center',
-                'font:700 13px/1.1 PingFang SC, Microsoft YaHei, Arial, sans-serif',
+                'font:700 13px/1.1 "Source Han Sans SC", sans-serif',
                 'letter-spacing:0',
                 'cursor:pointer',
                 'backdrop-filter:blur(10px)'
