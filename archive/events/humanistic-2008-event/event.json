@@ -1,0 +1,179 @@
+{
+  "id": "humanistic-2008-event",
+  "year": 2008,
+  "date": "2008",
+  "title": {
+    "zh": "《机器人总动员》",
+    "en": "WALL-E"
+  },
+  "description": {
+    "zh": "皮克斯的《机器人总动员》让清理机器人 WALL-E（瓦力）与探测机器人 EVE 通过照护和选择展现人格，同时批评消费主义、自动化依赖和环境失责。",
+    "en": "Pixar's WALL-E gives personality to maintenance and probe robots through care and choice while criticizing consumerism, dependence on automation and environmental neglect."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "加利福尼亚州埃默里维尔，皮克斯动画工作室",
+      "en": "Pixar Animation Studios, Emeryville, California"
+    },
+    "coordinates": [
+      37.8313,
+      -122.2852
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-56",
+      "role": {
+        "zh": "《机器人总动员》导演兼联合编剧",
+        "en": "Director and co-writer of WALL-E"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《机器人总动员》",
+      "en": "WALL-E"
+    },
+    "displaySummary": {
+      "zh": "机器关怀、环境废墟与人类自主性",
+      "en": "Machine care, environmental ruin and human autonomy"
+    },
+    "displayDescription": {
+      "zh": "<p>皮克斯的《机器人总动员》让清理机器人 WALL-E（瓦力）与探测机器人 EVE 通过照护和选择展现人格，同时批评消费主义、自动化依赖和环境失责。 WALL-E 与 EVE 的关系不是通过复杂台词证明，而是通过注意、保护、记忆与自主选择逐步建立。与之对照，飞船系统把人类照料得失去行动能力，说明便利如果取消参与和责任，也会削弱人的自主性。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 《机器人总动员》于 2008 年上映，其开场以几乎无对白的方式描绘被消费垃圾覆盖的地球。人类撤离后把生活交给企业飞船和自动系统，清理机器人 WALL-E（瓦力）则在长期劳动中形成收藏、好奇与依恋。</p><p> 动画与环境人文学者通常把《机器人总动员》视为将生态危机、消费文化和机器情感结合得最成功的大众作品之一。它使儿童与成人都能讨论一个非对抗性的 AI 问题：机器可能帮助人类重新学习关怀，而不是只取代或反抗人类。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Pixar's WALL-E gives personality to maintenance and probe robots through care and choice while criticizing consumerism, dependence on automation and environmental neglect. WALL-E and EVE establish their relationship not through elaborate speech but through attention, protection, memory and autonomous choice. In contrast, the ship's systems care for humans until they lose agency, showing that convenience can weaken autonomy when it removes participation and responsibility.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. WALL-E was released in 2008, opening with an almost wordless Earth covered in consumer waste. Humans have transferred life to corporate spacecraft and automated systems, while the cleanup robot WALL-E develops collecting, curiosity and attachment through long labor.</p><p> Animation and environmental-humanities scholars generally regard WALL-E as one of the most successful popular works joining ecological crisis, consumer culture and machine emotion. It lets children and adults discuss a nonadversarial AI question: machines may help humans relearn care rather than merely replace or rebel against them. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "《机器人总动员》",
+          "en": "WALL-E"
+        },
+        "description": {
+          "zh": "机器关怀、环境废墟与人类自主性",
+          "en": "Machine care, environmental ruin and human autonomy"
+        },
+        "url": "https://www.pixar.com/feature-films/walle",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-2008-event-tmdb-poster",
+      "asset-humanistic-2008-event-tmdb-scene-1",
+      "asset-humanistic-2008-event-tmdb-scene-2",
+      "asset-humanistic-2008-event-wall-e-pixar-reference"
+    ],
+    "sourceIds": [
+      "source-humanistic-2008-event-record",
+      "source-humanistic-2008-event-wall-e-pixar-reference",
+      "source-humanistic-2008-event-tmdb-images"
+    ],
+    "claimIds": [
+      "claim-humanistic-2008-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《机器人总动员》于 2008 年上映，其开场以几乎无对白的方式描绘被消费垃圾覆盖的地球。人类撤离后把生活交给企业飞船和自动系统，清理机器人 WALL-E（瓦力）则在长期劳动中形成收藏、好奇与依恋。",
+          "en": "WALL-E was released in 2008, opening with an almost wordless Earth covered in consumer waste. Humans have transferred life to corporate spacecraft and automated systems, while the cleanup robot WALL-E develops collecting, curiosity and attachment through long labor."
+        },
+        "sourceIds": [
+          "source-humanistic-2008-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "WALL-E 与 EVE 的关系不是通过复杂台词证明，而是通过注意、保护、记忆与自主选择逐步建立。与之对照，飞船系统把人类照料得失去行动能力，说明便利如果取消参与和责任，也会削弱人的自主性。",
+          "en": "WALL-E and EVE establish their relationship not through elaborate speech but through attention, protection, memory and autonomous choice. In contrast, the ship's systems care for humans until they lose agency, showing that convenience can weaken autonomy when it removes participation and responsibility."
+        },
+        "sourceIds": [
+          "source-humanistic-2008-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "动画与环境人文学者通常把《机器人总动员》视为将生态危机、消费文化和机器情感结合得最成功的大众作品之一。它使儿童与成人都能讨论一个非对抗性的 AI 问题：机器可能帮助人类重新学习关怀，而不是只取代或反抗人类。",
+          "en": "Animation and environmental-humanities scholars generally regard WALL-E as one of the most successful popular works joining ecological crisis, consumer culture and machine emotion. It lets children and adults discuss a nonadversarial AI question: machines may help humans relearn care rather than merely replace or rebel against them."
+        },
+        "sourceIds": [
+          "source-humanistic-2008-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle",
+    "overviewImageAssetId": "asset-humanistic-2008-event-tmdb-poster",
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-poster-tmdb.jpg"
+    ]
+  }
+}

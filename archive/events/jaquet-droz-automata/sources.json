@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-jaquet-droz-automata-primary",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "雅克-德罗自动人偶馆藏资料",
+      "en": "Jaquet-Droz automata collection record"
+    },
+    "url": "https://www.ville-de-neuchatel.ch/automates-jaquet-droz",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "来源信息已保留；正式发布前继续核验版本与许可。",
+      "en": "Source information retained; verify edition and terms before publication."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-jaquet-droz-automata-jaquet-droz-writer",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "Jaquet-Droz automaton: Writer",
+      "en": "Jaquet-Droz automaton: Writer"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Writer.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页标注 CC BY-SA 4.0；使用前保留摄影者/作者署名及页面许可要求。",
+      "en": "Wikimedia Commons file page identifies CC BY-SA 4.0; retain author attribution and follow the page terms."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-jaquet-droz-automata-jaquet-droz-musician",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "Jaquet-Droz automaton: Musician",
+      "en": "Jaquet-Droz automaton: Musician"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Musician.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页标注 CC BY-SA 4.0；使用前保留摄影者/作者署名及页面许可要求。",
+      "en": "Wikimedia Commons file page identifies CC BY-SA 4.0; retain author attribution and follow the page terms."
+    },
+    "purpose": "image-provenance"
+  }
+]

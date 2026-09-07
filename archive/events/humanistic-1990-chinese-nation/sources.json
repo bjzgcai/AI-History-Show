@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1990-chinese-nation-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "布洛克的中华民族（Chinese Nation）",
+      "en": "Ned Block's Chinese Nation Thought Experiment"
+    },
+    "url": "https://www.google.com/search?q=%E5%B8%83%E6%B4%9B%E5%85%8B%E7%9A%84%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%EF%BC%88Chinese%20Nation%EF%BC%89%20%E5%86%85%E5%BE%B7%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-1990-chinese-nation-ned-block-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "内德·布洛克肖像",
+      "en": "Ned Block portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Large_ned.block.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "“中华民族”思想实验提出者内德·布洛克肖像；文件页记录 GFDL 许可。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Portrait of Ned Block, associated with the Chinese Nation thought experiment; the file page records GFDL. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

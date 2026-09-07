@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-2025-ai-core",
+    "importance": "core",
+    "text": {
+      "zh": "讨论如何确保AI目标与人类价值观一致；大语言模型幻觉使议题更紧迫。",
+      "en": "讨论如何确保AI目标与人类价值观一致；大语言模型幻觉使议题更紧迫。"
+    },
+    "sourceIds": [
+      "source-humanistic-2025-ai-record"
+    ],
+    "status": "needs-review"
+  }
+]

@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-1990-event",
+  "year": 1990,
+  "date": "1990",
+  "title": {
+    "zh": "《差分机》",
+    "en": "The Difference Engine"
+  },
+  "description": {
+    "zh": "威廉·吉布森与布鲁斯·斯特林设想巴贝奇差分机在维多利亚时代成功普及，由此重写工业、政治、监控和信息社会的历史。",
+    "en": "William Gibson and Bruce Sterling imagine Babbage's engines succeeding in Victorian Britain, rewriting the history of industry, politics, surveillance and the information society."
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国",
+      "en": "United Kingdom"
+    },
+    "place": {
+      "zh": "伦敦出版语境",
+      "en": "London publishing context"
+    },
+    "coordinates": [
+      51.5074,
+      -0.1278
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-38",
+      "role": {
+        "zh": "《差分机》共同作者",
+        "en": "Co-authors of The Difference Engine"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《差分机》",
+      "en": "The Difference Engine"
+    },
+    "displaySummary": {
+      "zh": "机械计算提前引发的信息革命",
+      "en": "An information revolution triggered early by mechanical computing"
+    },
+    "displayDescription": {
+      "zh": "<p>威廉·吉布森与布鲁斯·斯特林设想巴贝奇差分机在维多利亚时代成功普及，由此重写工业、政治、监控和信息社会的历史。 小说把计算机革命从电子时代移到蒸汽工业时代，说明技术价值不仅来自机器性能，也来自人口登记、金融、警务和政治组织如何使用数据。机械计算由此成为国家治理与社会分层的基础，而不是孤立的科学奇观。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 《差分机》出版于 1990 年，被广泛归入蒸汽朋克的重要早期作品。小说从查尔斯·巴贝奇的机械计算设想出发，构造英国在 19 世纪就建立大规模数据处理与机械智能基础设施的另类历史。</p><p> 文学研究者通常把《差分机》视为蒸汽朋克走向成熟的重要节点，也是一部关于信息权力的另类历史小说。它提醒后来的 AI 讨论，改变社会的不只是智能算法，还包括数据制度、基础设施和能够调用它们的机构。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>William Gibson and Bruce Sterling imagine Babbage's engines succeeding in Victorian Britain, rewriting the history of industry, politics, surveillance and the information society. The novel moves the computer revolution from electronics to steam industry, showing that technological significance comes not only from machines but from the use of data in census taking, finance, policing and politics. Mechanical computation becomes an infrastructure of governance and stratification rather than an isolated scientific marvel.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. Published in 1990, The Difference Engine is widely treated as an important early steampunk novel. Starting from Charles Babbage's mechanical computing plans, it builds an alternative Britain with large-scale data processing and mechanical intelligence in the nineteenth century.</p><p> Literary scholars generally regard The Difference Engine as a key step in steampunk's maturation and as an alternative history of information power. It reminds later AI debates that social transformation comes not only from intelligent algorithms but from data regimes, infrastructure and the institutions able to use them. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "《差分机》",
+          "en": "The Difference Engine"
+        },
+        "description": {
+          "zh": "机械计算提前引发的信息革命",
+          "en": "An information revolution triggered early by mechanical computing"
+        },
+        "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%AE%E5%88%86%E6%9C%BA%E3%80%8B%20%E5%A8%81%E5%BB%89%C2%B7%E5%90%89%E5%B8%83%E6%A3%AE%E3%80%81%E5%B8%83%E9%B2%81%E6%96%AF%C2%B7%E6%96%AF%E7%89%B9%E6%9E%97",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1990-event-william-gibson-portrait"
+    ],
+    "sourceIds": [
+      "source-humanistic-1990-event-record",
+      "source-humanistic-1990-event-william-gibson-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-1990-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《差分机》出版于 1990 年，被广泛归入蒸汽朋克的重要早期作品。小说从查尔斯·巴贝奇的机械计算设想出发，构造英国在 19 世纪就建立大规模数据处理与机械智能基础设施的另类历史。",
+          "en": "Published in 1990, The Difference Engine is widely treated as an important early steampunk novel. Starting from Charles Babbage's mechanical computing plans, it builds an alternative Britain with large-scale data processing and mechanical intelligence in the nineteenth century."
+        },
+        "sourceIds": [
+          "source-humanistic-1990-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "小说把计算机革命从电子时代移到蒸汽工业时代，说明技术价值不仅来自机器性能，也来自人口登记、金融、警务和政治组织如何使用数据。机械计算由此成为国家治理与社会分层的基础，而不是孤立的科学奇观。",
+          "en": "The novel moves the computer revolution from electronics to steam industry, showing that technological significance comes not only from machines but from the use of data in census taking, finance, policing and politics. Mechanical computation becomes an infrastructure of governance and stratification rather than an isolated scientific marvel."
+        },
+        "sourceIds": [
+          "source-humanistic-1990-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "文学研究者通常把《差分机》视为蒸汽朋克走向成熟的重要节点，也是一部关于信息权力的另类历史小说。它提醒后来的 AI 讨论，改变社会的不只是智能算法，还包括数据制度、基础设施和能够调用它们的机构。",
+          "en": "Literary scholars generally regard The Difference Engine as a key step in steampunk's maturation and as an alternative history of information power. It reminds later AI debates that social transformation comes not only from intelligent algorithms but from data regimes, infrastructure and the institutions able to use them."
+        },
+        "sourceIds": [
+          "source-humanistic-1990-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

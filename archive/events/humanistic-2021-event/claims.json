@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-2021-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "太阳能机器人少女克拉拉陪伴病重女孩，追问程序化的爱是否因此不真实。",
+      "en": "太阳能机器人少女克拉拉陪伴病重女孩，追问程序化的爱是否因此不真实。"
+    },
+    "sourceIds": [
+      "source-humanistic-2021-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

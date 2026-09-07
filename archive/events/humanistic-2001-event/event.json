@@ -1,0 +1,179 @@
+{
+  "id": "humanistic-2001-event",
+  "year": 2001,
+  "date": "2001",
+  "title": {
+    "zh": "《人工智能》",
+    "en": "A.I. Artificial Intelligence"
+  },
+  "description": {
+    "zh": "史蒂文·斯皮尔伯格通过被编程去爱的机器男孩大卫，追问人类制造依恋之后是否也承担回应、照护和终止关系的责任。",
+    "en": "Through David, a machine child programmed to love, Steven Spielberg asks whether humans assume duties of response, care and closure when they manufacture attachment."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国电影制作语境",
+      "en": "United States film-production context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-52",
+      "role": {
+        "zh": "《人工智能》导演兼联合编剧",
+        "en": "Director and co-writer of A.I. Artificial Intelligence"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《人工智能》",
+      "en": "A.I. Artificial Intelligence"
+    },
+    "displaySummary": {
+      "zh": "被设计去爱的机器儿童与人的责任",
+      "en": "A machine child designed to love and the responsibilities of humans"
+    },
+    "displayDescription": {
+      "zh": "<p>史蒂文·斯皮尔伯格通过被编程去爱的机器男孩大卫，追问人类制造依恋之后是否也承担回应、照护和终止关系的责任。 大卫的爱被制造为不可撤销的程序，但收养他的家庭可以随时抛弃他，形成极不对称的情感关系。影片没有只问机器能否爱，而是追问创造者是否应对具有持续欲望和痛苦表现的人工存在承担道德义务。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 影片于 2001 年上映，源自布赖恩·奥尔迪斯短篇《玩具在整个夏天长存》，并延续了斯坦利·库布里克多年开发的项目。故事置于气候变化和人口限制下的未来社会，机器人被广泛用于劳动、娱乐与情感替代。</p><p> 电影研究者通常把《人工智能》视为库布里克式冷峻与斯皮尔伯格式情感叙事交汇的复杂作品。随着陪伴机器人和对话式 AI 普及，它关于依恋设计、儿童形象和用户责任的问题获得了新的现实相关性。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Through David, a machine child programmed to love, Steven Spielberg asks whether humans assume duties of response, care and closure when they manufacture attachment. David's love is manufactured as an irreversible program, while his adoptive family can abandon him at any time, creating a deeply asymmetric relationship. The film asks not only whether a machine can love but whether creators owe duties to artificial beings that exhibit enduring desire and suffering.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. Released in 2001, the film derives from Brian Aldiss's short story “Supertoys Last All Summer Long” and a project Stanley Kubrick had developed for years. It depicts a climate-stressed future with population controls where robots provide labor, entertainment and emotional substitution.</p><p> Film scholars generally regard A.I. Artificial Intelligence as a complex meeting of Kubrickian distance and Spielbergian emotion. As companion robots and conversational AI spread, its questions about designed attachment, childlike interfaces and user responsibility have gained new relevance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "《人工智能》",
+          "en": "A.I. Artificial Intelligence"
+        },
+        "description": {
+          "zh": "被设计去爱的机器儿童与人的责任",
+          "en": "A machine child designed to love and the responsibilities of humans"
+        },
+        "url": "https://www.google.com/search?q=%E3%80%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E3%80%8B%20%E5%8F%B2%E8%92%82%E6%96%87%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-2001-event-tmdb-poster",
+      "asset-humanistic-2001-event-tmdb-scene-1",
+      "asset-humanistic-2001-event-tmdb-scene-2",
+      "asset-humanistic-2001-event-ai-film-logo"
+    ],
+    "sourceIds": [
+      "source-humanistic-2001-event-record",
+      "source-humanistic-2001-event-ai-film-logo",
+      "source-humanistic-2001-event-tmdb-images"
+    ],
+    "claimIds": [
+      "claim-humanistic-2001-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "影片于 2001 年上映，源自布赖恩·奥尔迪斯短篇《玩具在整个夏天长存》，并延续了斯坦利·库布里克多年开发的项目。故事置于气候变化和人口限制下的未来社会，机器人被广泛用于劳动、娱乐与情感替代。",
+          "en": "Released in 2001, the film derives from Brian Aldiss's short story “Supertoys Last All Summer Long” and a project Stanley Kubrick had developed for years. It depicts a climate-stressed future with population controls where robots provide labor, entertainment and emotional substitution."
+        },
+        "sourceIds": [
+          "source-humanistic-2001-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "大卫的爱被制造为不可撤销的程序，但收养他的家庭可以随时抛弃他，形成极不对称的情感关系。影片没有只问机器能否爱，而是追问创造者是否应对具有持续欲望和痛苦表现的人工存在承担道德义务。",
+          "en": "David's love is manufactured as an irreversible program, while his adoptive family can abandon him at any time, creating a deeply asymmetric relationship. The film asks not only whether a machine can love but whether creators owe duties to artificial beings that exhibit enduring desire and suffering."
+        },
+        "sourceIds": [
+          "source-humanistic-2001-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "电影研究者通常把《人工智能》视为库布里克式冷峻与斯皮尔伯格式情感叙事交汇的复杂作品。随着陪伴机器人和对话式 AI 普及，它关于依恋设计、儿童形象和用户责任的问题获得了新的现实相关性。",
+          "en": "Film scholars generally regard A.I. Artificial Intelligence as a complex meeting of Kubrickian distance and Spielbergian emotion. As companion robots and conversational AI spread, its questions about designed attachment, childlike interfaces and user responsibility have gained new relevance."
+        },
+        "sourceIds": [
+          "source-humanistic-2001-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle",
+    "overviewImageAssetId": "asset-humanistic-2001-event-tmdb-poster",
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-poster-tmdb.jpg"
+    ]
+  }
+}

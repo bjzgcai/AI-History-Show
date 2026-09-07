@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-2014-superintelligence-verified-image",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2014-superintelligence/verified-nick-bostrom.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "尼克·博斯特罗姆肖像",
+      "en": "Nick Bostrom"
+    },
+    "subcaption": {
+      "zh": "《超级智能》作者。",
+      "en": "Author of Superintelligence."
+    },
+    "sourceId": "source-humanistic-2014-superintelligence-verified-image",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prof_Nick_Bostrom_324-1.jpg",
+    "rights": {
+      "status": "cc-by-4-0",
+      "license": {
+        "zh": "CC BY 4.0",
+        "en": "CC BY 4.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线人物或历史资料展示。",
+        "en": "Used as a figure or historical reference in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "nick-bostrom"
+    ]
+  }
+]

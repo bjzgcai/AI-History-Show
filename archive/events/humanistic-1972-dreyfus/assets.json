@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1972-dreyfus-verified-image",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1972-dreyfus/verified-hubert-dreyfus.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "休伯特·德雷福斯肖像",
+      "en": "Hubert Dreyfus"
+    },
+    "subcaption": {
+      "zh": "《计算机不能做什么》作者。",
+      "en": "《计算机不能做什么》作者。"
+    },
+    "sourceId": "source-humanistic-1972-dreyfus-verified-image",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hubert_Dreyfus_(cropped).jpg",
+    "rights": {
+      "status": "cc-by-sa-3-0-de",
+      "license": {
+        "zh": "CC BY-SA 3.0 de",
+        "en": "CC BY-SA 3.0 de"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线人物或历史资料展示。",
+        "en": "Used as a figure or historical reference in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "hubert-dreyfus"
+    ]
+  }
+]

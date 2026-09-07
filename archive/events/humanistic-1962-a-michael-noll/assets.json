@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1962-a-michael-noll-noll-vertical-horizontal",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1962-a-michael-noll/noll-vertical-horizontal.jpg",
+    "role": "artifact-reference",
+    "caption": {
+      "zh": "A. Michael Noll《垂直—水平第三号》",
+      "en": "A. Michael Noll, Vertical-Horizontal Number Three"
+    },
+    "subcaption": {
+      "zh": "1964 年计算机生成艺术作品，体现 Noll 对算法构图的探索。",
+      "en": "A 1964 computer-generated artwork demonstrating Noll's exploration of algorithmic composition."
+    },
+    "sourceId": "source-humanistic-1962-a-michael-noll-noll-vertical-horizontal",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:VERTICAL-HORIZONTAL_NUMBER_THREE_(1964)_BY_A._MICHAEL_NOLL.jpg",
+    "rights": {
+      "status": "cc-by-sa-4.0",
+      "license": {
+        "zh": "CC BY SA 4.0",
+        "en": "CC BY SA 4.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-20"
+    ]
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "asset-humanistic-1991-ghost-shell-verified-image",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/verified-mamoru-oshii.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "押井守肖像",
+      "en": "Mamoru Oshii"
+    },
+    "subcaption": {
+      "zh": "1995 年动画电影《攻壳机动队》导演。",
+      "en": "1995 年动画电影《攻壳机动队》导演。"
+    },
+    "sourceId": "source-humanistic-1991-ghost-shell-verified-image",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mamoru_Oshii_-_Lucca_Comics_%26_Games_2015.JPG",
+    "rights": {
+      "status": "cc-by-sa-4-0",
+      "license": {
+        "zh": "CC BY-SA 4.0",
+        "en": "CC BY-SA 4.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线人物或历史资料展示。",
+        "en": "Used as a figure or historical reference in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "mamoru-oshii"
+    ]
+  },
+  {
+    "id": "asset-humanistic-1991-ghost-shell-tmdb-poster",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/ghost-in-the-shell-poster-tmdb.jpg",
+    "role": "movie-poster",
+    "caption": {
+      "zh": "《攻壳机动队》电影海报",
+      "en": "Ghost in the Shell film poster"
+    },
+    "subcaption": {
+      "zh": "1995 年动画电影《攻壳机动队》的发行海报。",
+      "en": "Release poster for the 1995 animated film Ghost in the Shell."
+    },
+    "sourceId": "source-humanistic-1991-ghost-shell-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/5qUzHDgEeWtfajZe0ssULkKcGrM.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/9323-ghost-in-the-shell/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-1991-ghost-shell-tmdb-scene-2",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/ghost-in-the-shell-scene-2-tmdb.jpg",
+    "role": "promotional-still",
+    "caption": {
+      "zh": "草薙素子与电子网络视觉",
+      "en": "Motoko Kusanagi network visual"
+    },
+    "subcaption": {
+      "zh": "草薙素子、义体结构与电子网络界面构成的影片视觉资料。",
+      "en": "Film visual combining Motoko Kusanagi, her cybernetic body and a network interface."
+    },
+    "sourceId": "source-humanistic-1991-ghost-shell-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/gTRXgigmgKpeJjW07iq686HZyBD.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/9323-ghost-in-the-shell/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  }
+]

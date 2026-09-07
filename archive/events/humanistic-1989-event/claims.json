@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1989-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "以科技伪装神明、意识移植与技术统治讨论信仰、尊严和权力。",
+      "en": "以科技伪装神明、意识移植与技术统治讨论信仰、尊严和权力。"
+    },
+    "sourceIds": [
+      "source-humanistic-1989-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

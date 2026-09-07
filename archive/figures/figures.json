@@ -11486,5 +11486,1329 @@
         "zh": "由事件与 storyline 的内联人物数据迁移；身份信息仍待人工复核。"
       }
     }
+  },
+  {
+    "id": "homer",
+    "name": {
+      "en": "Homer",
+      "zh": "荷马"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "reference",
+        "label": {
+          "en": "Encyclopaedia Britannica: Homer",
+          "zh": "《大英百科全书》：荷马"
+        },
+        "url": "https://www.britannica.com/biography/Homer"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "en": "Traditional author associated with the epic tradition; the Talos episode itself is not in the Iliad.",
+        "zh": "作为相关史诗传统的传统作者收录；塔洛斯情节本身不在《伊利亚特》中。"
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "apollonius-rhodius",
+    "name": {
+      "en": "Apollonius Rhodius",
+      "zh": "阿波罗尼奥斯·罗迪乌斯"
+    },
+    "aliases": [
+      "Apollonius of Rhodes"
+    ],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "profile",
+        "label": {
+          "en": "Encyclopaedia Britannica: Apollonius of Rhodes",
+          "zh": "《大英百科全书》：罗得岛的阿波罗尼奥斯"
+        },
+        "url": "https://www.britannica.com/biography/Apollonius-of-Rhodes"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "en": "Author of the Argonautica passage used for the Talos event.",
+        "zh": "《阿尔戈英雄纪》塔洛斯段落的作者。"
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "rene-descartes",
+    "name": {
+      "en": "René Descartes",
+      "zh": "勒内·笛卡尔"
+    },
+    "aliases": [
+      "Descartes"
+    ],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "profile",
+        "label": {
+          "en": "Encyclopaedia Britannica: René Descartes",
+          "zh": "《大英百科全书》：勒内·笛卡尔"
+        },
+        "url": "https://www.britannica.com/biography/Rene-Descartes"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "en": "Author of Discourse on the Method and Meditations on First Philosophy.",
+        "zh": "《方法论》和《第一哲学沉思录》的作者。"
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "pierre-jaquet-droz",
+    "name": {
+      "en": "Pierre Jaquet-Droz",
+      "zh": "皮埃尔·雅克-德罗"
+    },
+    "aliases": [
+      "Pierre Jaquet-Droz"
+    ],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "profile",
+        "label": {
+          "en": "Jaquet-Droz automata collection",
+          "zh": "雅克-德罗自动人偶馆藏资料"
+        },
+        "url": "https://www.mahn.ch/"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "en": "Watchmaker associated with the Jaquet-Droz automata.",
+        "zh": "雅克-德罗自动人偶的制造者与制表师。"
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "eta-hoffmann",
+    "name": {
+      "en": "E. T. A. Hoffmann",
+      "zh": "E.T.A.霍夫曼"
+    },
+    "aliases": [
+      "Ernst Theodor Amadeus Hoffmann"
+    ],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "profile",
+        "label": {
+          "en": "Encyclopaedia Britannica: E. T. A. Hoffmann",
+          "zh": "《大英百科全书》：E.T.A.霍夫曼"
+        },
+        "url": "https://www.britannica.com/biography/E-T-A-Hoffmann"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "en": "Author of The Sandman.",
+        "zh": "《沙人》的作者。"
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "mary-shelley",
+    "name": {
+      "en": "Mary Shelley",
+      "zh": "玛丽·雪莱"
+    },
+    "aliases": [
+      "Mary Wollstonecraft Shelley"
+    ],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "profile",
+        "label": {
+          "en": "British Library: Mary Shelley",
+          "zh": "大英图书馆：玛丽·雪莱"
+        },
+        "url": "https://www.bl.uk/people/mary-shelley"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "en": "Author of Frankenstein; or, The Modern Prometheus.",
+        "zh": "《弗兰肯斯坦》的作者。"
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "samuel-butler",
+    "name": {
+      "en": "Samuel Butler",
+      "zh": "塞缪尔·巴特勒"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "profile",
+        "label": {
+          "en": "National Portrait Gallery: Samuel Butler",
+          "zh": "英国国家肖像馆：塞缪尔·巴特勒"
+        },
+        "url": "https://www.npg.org.uk/collections/search/person/mp00477/samuel-butler"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "en": "Author of Darwin among the Machines and Erewhon.",
+        "zh": "《机器中的达尔文》和《埃瑞洪》的作者。"
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "george-eliot",
+    "name": {
+      "en": "George Eliot",
+      "zh": "乔治·艾略特"
+    },
+    "aliases": [
+      "Mary Ann Evans"
+    ],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "profile",
+        "label": {
+          "en": "British Library: George Eliot",
+          "zh": "大英图书馆：乔治·艾略特"
+        },
+        "url": "https://www.bl.uk/people/george-eliot"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "en": "Author of Impressions of Theophrastus Such.",
+        "zh": "《西奥弗拉斯特斯·萨奇的印象》的作者。"
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "villiers-de-lisle-adam",
+    "name": {
+      "en": "Villiers de l’Isle-Adam",
+      "zh": "利尔·亚当"
+    },
+    "aliases": [
+      "Auguste Villiers de l'Isle-Adam"
+    ],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "profile",
+        "label": {
+          "en": "Bibliothèque nationale de France authority record",
+          "zh": "法国国家图书馆规范记录"
+        },
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb11928154f"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "en": "Author of The Future Eve.",
+        "zh": "《未来夏娃》的作者。"
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "liang-qichao",
+    "name": {
+      "en": "Liang Qichao",
+      "zh": "梁启超"
+    },
+    "aliases": [
+      "梁启超"
+    ],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "profile",
+        "label": {
+          "en": "National Library of China catalogue",
+          "zh": "中国国家图书馆人物资料"
+        },
+        "url": "https://find.nlc.cn/"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "en": "Author of The Future of New China.",
+        "zh": "《新中国未来记》的作者。"
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "fritz-lang",
+    "name": {
+      "en": "Fritz Lang",
+      "zh": "弗里茨·朗"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "profile",
+        "label": {
+          "en": "Friedrich-Wilhelm-Murnau-Stiftung: Fritz Lang",
+          "zh": "弗里德里希·威廉·穆瑙基金会：弗里茨·朗"
+        },
+        "url": "https://www.murnau-stiftung.de/"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "en": "Director of Metropolis (1927).",
+        "zh": "1927年电影《大都会》导演。"
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-20",
+    "name": {
+      "zh": "A. 迈克尔·诺尔",
+      "en": "A. Michael Noll"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-21",
+    "name": {
+      "zh": "塞缪尔·R·德兰尼",
+      "en": "Samuel R. Delany"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-22",
+    "name": {
+      "zh": "哈兰·埃里森",
+      "en": "Harlan Ellison"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-23",
+    "name": {
+      "zh": "菲利普·K·迪克",
+      "en": "Philip K. Dick"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-26",
+    "name": {
+      "zh": "阿瑟·C·克拉克",
+      "en": "Arthur C. Clarke"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-28",
+    "name": {
+      "zh": "迈克尔·克莱顿",
+      "en": "Michael Crichton"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-29",
+    "name": {
+      "zh": "道格拉斯·亚当斯",
+      "en": "Douglas Adams"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-31",
+    "name": {
+      "zh": "约翰·塞尔",
+      "en": "John Searle"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-32",
+    "name": {
+      "zh": "弗诺·文奇",
+      "en": "Vernor Vinge"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-33",
+    "name": {
+      "zh": "雷德利·斯科特",
+      "en": "Ridley Scott"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-35",
+    "name": {
+      "zh": "格雷格·贝尔",
+      "en": "Greg Bear"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-36",
+    "name": {
+      "zh": "詹姆斯·卡梅隆",
+      "en": "James Cameron"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-37",
+    "name": {
+      "zh": "罗杰·泽拉兹尼",
+      "en": "Roger Zelazny"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-38",
+    "name": {
+      "zh": "威廉·吉布森与布鲁斯·斯特林",
+      "en": "William Gibson and Bruce Sterling"
+    },
+    "aliases": [],
+    "type": "team",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-39",
+    "name": {
+      "zh": "内德·布洛克",
+      "en": "Ned Block"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-40",
+    "name": {
+      "zh": "丹尼尔·丹尼特",
+      "en": "Daniel Dennett"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-41",
+    "name": {
+      "zh": "尼尔·斯蒂芬森",
+      "en": "Neal Stephenson"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-43",
+    "name": {
+      "zh": "尼尔·斯蒂芬森",
+      "en": "Neal Stephenson"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-44",
+    "name": {
+      "zh": "白南准",
+      "en": "Nam June Paik"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-48",
+    "name": {
+      "zh": "伊恩·M·班克斯",
+      "en": "Iain M. Banks"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "image-source",
+        "label": {
+          "zh": "Wikimedia Commons 伊恩·M·班克斯肖像",
+          "en": "Wikimedia Commons portrait of Iain M. Banks"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:IainBanks2009.jpg"
+      }
+    ],
+    "defaultAvatar": {
+      "path": "resources/images/humanistic-cycle/humanistic-1998-event/iain-banks-portrait.jpg",
+      "sourceName": {
+        "zh": "Wikimedia Commons",
+        "en": "Wikimedia Commons"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:IainBanks2009.jpg",
+      "rights": {
+        "status": "cc-by-sa-3.0",
+        "license": {
+          "zh": "CC BY-SA 3.0；需署名并以相同方式共享。",
+          "en": "CC BY-SA 3.0; attribution and share-alike are required."
+        },
+        "usage": {
+          "zh": "用于本展览的伊恩·M·班克斯人物资料展示。",
+          "en": "Used as Iain M. Banks's biographical image in this exhibition."
+        }
+      },
+      "avatarStyle": ""
+    },
+    "review": {
+      "status": "verified",
+      "notes": {
+        "zh": "已核对为“文化”系列作者，并替换此前误配的席德·梅尔肖像。",
+        "en": "Verified as the author of the Culture series; the previously mismatched Sid Meier portrait was replaced."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-50",
+    "name": {
+      "zh": "沃卓斯基姐妹",
+      "en": "The Wachowskis"
+    },
+    "aliases": [],
+    "type": "team",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-52",
+    "name": {
+      "zh": "史蒂文·斯皮尔伯格",
+      "en": "Steven Spielberg"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-53",
+    "name": {
+      "zh": "尼克·博斯特罗姆",
+      "en": "Nick Bostrom"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-55",
+    "name": {
+      "zh": "阿历克斯·普罗亚斯",
+      "en": "Alex Proyas"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-56",
+    "name": {
+      "zh": "安德鲁·斯坦顿",
+      "en": "Andrew Stanton"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-57",
+    "name": {
+      "zh": "teamLab",
+      "en": "teamLab"
+    },
+    "aliases": [],
+    "type": "team",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-58",
+    "name": {
+      "zh": "雷德利·斯科特",
+      "en": "Ridley Scott"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-59",
+    "name": {
+      "zh": "斯派克·琼兹",
+      "en": "Spike Jonze"
+    },
+    "aliases": [
+      "Adam Spiegel"
+    ],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "official-page",
+        "label": {
+          "zh": "Sony Pictures Classics《她》官方页面",
+          "en": "Sony Pictures Classics — Her official page"
+        },
+        "url": "https://www.sonyclassics.com/her/"
+      },
+      {
+        "type": "image-source",
+        "label": {
+          "zh": "Wikimedia Commons 斯派克·琼兹肖像",
+          "en": "Wikimedia Commons portrait of Spike Jonze"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Spike_Jonze.jpg"
+      }
+    ],
+    "defaultAvatar": {
+      "path": "resources/images/humanistic-cycle/humanistic-2013-event/spike-jonze-portrait.jpg",
+      "sourceName": {
+        "zh": "Wikimedia Commons",
+        "en": "Wikimedia Commons"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spike_Jonze.jpg",
+      "rights": {
+        "status": "cc-by-sa-3.0",
+        "license": {
+          "zh": "CC BY-SA 3.0；需署名并以相同方式共享。",
+          "en": "CC BY-SA 3.0; attribution and share-alike are required."
+        },
+        "usage": {
+          "zh": "用于本展览的斯派克·琼兹人物资料展示。",
+          "en": "Used as Spike Jonze's biographical image in this exhibition."
+        }
+      },
+      "avatarStyle": ""
+    },
+    "review": {
+      "status": "verified",
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-image-research",
+      "notes": {
+        "zh": "已核对为《她》的导演、编剧与制片人；事件展示角色按项目格式写为《她》导演。",
+        "en": "Verified as the director, writer and producer of Her; the event-facing role follows the project format and reads Director of Her."
+      }
+    }
+  },
+  {
+    "id": "humanistic-figure-61",
+    "name": {
+      "zh": "亚力克斯·嘉兰",
+      "en": "Alex Garland"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-62",
+    "name": {
+      "zh": "丹尼斯·维伦纽瓦",
+      "en": "Denis Villeneuve"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-63",
+    "name": {
+      "zh": "石黑一雄",
+      "en": "Kazuo Ishiguro"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-65",
+    "name": {
+      "zh": "朱利奥·托诺尼",
+      "en": "Giulio Tononi"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "humanistic-figure-66",
+    "name": {
+      "zh": "AI 对齐研究共同体",
+      "en": "AI alignment research community"
+    },
+    "aliases": [],
+    "type": "team",
+    "organizationIds": [],
+    "profileSources": [],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
+        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+      },
+      "reviewedAt": "2026-08-27",
+      "reviewer": "humanistic-cycle-content-review"
+    }
+  },
+  {
+    "id": "hubert-dreyfus",
+    "name": {
+      "zh": "休伯特·德雷福斯",
+      "en": "Hubert L. Dreyfus"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "label": {
+          "zh": "人物资料",
+          "en": "Figure profile"
+        },
+        "url": "https://plato.stanford.edu/entries/artificial-intelligence/",
+        "type": "profile"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "依据修订版 AI 人文编年补充，人物资料和中文译名已按作品/思想主题登记。",
+        "en": "Added from the revised AI humanities timeline; identity and localized name are recorded by work or idea."
+      },
+      "reviewedAt": "2026-08-31",
+      "reviewer": "humanistic-revision-import"
+    }
+  },
+  {
+    "id": "donna-haraway",
+    "name": {
+      "zh": "唐娜·哈拉维",
+      "en": "Donna Haraway"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "label": {
+          "zh": "人物资料",
+          "en": "Figure profile"
+        },
+        "url": "https://egs.edu/biography/donna-haraway/",
+        "type": "profile"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "依据修订版 AI 人文编年补充，人物资料和中文译名已按作品/思想主题登记。",
+        "en": "Added from the revised AI humanities timeline; identity and localized name are recorded by work or idea."
+      },
+      "reviewedAt": "2026-08-31",
+      "reviewer": "humanistic-revision-import"
+    }
+  },
+  {
+    "id": "hans-moravec",
+    "name": {
+      "zh": "汉斯·莫拉维克",
+      "en": "Hans Moravec"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "label": {
+          "zh": "人物资料",
+          "en": "Figure profile"
+        },
+        "url": "https://www.cs.cmu.edu/~hpm/",
+        "type": "profile"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "依据修订版 AI 人文编年补充，人物资料和中文译名已按作品/思想主题登记。",
+        "en": "Added from the revised AI humanities timeline; identity and localized name are recorded by work or idea."
+      },
+      "reviewedAt": "2026-08-31",
+      "reviewer": "humanistic-revision-import"
+    }
+  },
+  {
+    "id": "mamoru-oshii",
+    "name": {
+      "zh": "押井守",
+      "en": "Mamoru Oshii"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "label": {
+          "zh": "人物资料",
+          "en": "Figure profile"
+        },
+        "url": "https://www.britannica.com/biography/Mamoru-Oshii",
+        "type": "profile"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "依据修订版 AI 人文编年补充，人物资料和中文译名已按作品/思想主题登记。",
+        "en": "Added from the revised AI humanities timeline; identity and localized name are recorded by work or idea."
+      },
+      "reviewedAt": "2026-08-31",
+      "reviewer": "humanistic-revision-import"
+    }
+  },
+  {
+    "id": "vernor-vinge",
+    "name": {
+      "zh": "弗诺·文奇",
+      "en": "Vernor Vinge"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "label": {
+          "zh": "人物资料",
+          "en": "Figure profile"
+        },
+        "url": "https://www.britannica.com/biography/Vernor-Vinge",
+        "type": "profile"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "依据修订版 AI 人文编年补充，人物资料和中文译名已按作品/思想主题登记。",
+        "en": "Added from the revised AI humanities timeline; identity and localized name are recorded by work or idea."
+      },
+      "reviewedAt": "2026-08-31",
+      "reviewer": "humanistic-revision-import"
+    }
+  },
+  {
+    "id": "david-chalmers",
+    "name": {
+      "zh": "大卫·查尔默斯",
+      "en": "David Chalmers"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "label": {
+          "zh": "人物资料",
+          "en": "Figure profile"
+        },
+        "url": "https://consc.net/chalmers/",
+        "type": "profile"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "依据修订版 AI 人文编年补充，人物资料和中文译名已按作品/思想主题登记。",
+        "en": "Added from the revised AI humanities timeline; identity and localized name are recorded by work or idea."
+      },
+      "reviewedAt": "2026-08-31",
+      "reviewer": "humanistic-revision-import"
+    }
+  },
+  {
+    "id": "nick-bostrom",
+    "name": {
+      "zh": "尼克·博斯特罗姆",
+      "en": "Nick Bostrom"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "label": {
+          "zh": "人物资料",
+          "en": "Figure profile"
+        },
+        "url": "https://nickbostrom.com/",
+        "type": "profile"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "依据修订版 AI 人文编年补充，人物资料和中文译名已按作品/思想主题登记。",
+        "en": "Added from the revised AI humanities timeline; identity and localized name are recorded by work or idea."
+      },
+      "reviewedAt": "2026-08-31",
+      "reviewer": "humanistic-revision-import"
+    }
+  },
+  {
+    "id": "douglas-hofstadter",
+    "name": {
+      "zh": "道格拉斯·霍夫施塔特",
+      "en": "Douglas Hofstadter"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "profile",
+        "label": {
+          "zh": "人物资料",
+          "en": "Figure profile"
+        },
+        "url": "https://www.pulitzer.org/winners/douglas-r-hofstadter"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedAt": "2026-08-31",
+      "reviewer": "humanistic-revision-import",
+      "notes": {
+        "zh": "依据修订版 AI 人文编年补充，人物资料和中文译名已按作品/思想主题登记。",
+        "en": "Added from the revised AI humanities timeline; identity and localized name are recorded by work or idea."
+      }
+    }
+  },
+  {
+    "id": "andy-clark",
+    "name": {
+      "zh": "安迪·克拉克",
+      "en": "Andy Clark"
+    },
+    "aliases": [],
+    "type": "person",
+    "organizationIds": [],
+    "profileSources": [
+      {
+        "type": "profile",
+        "label": {
+          "zh": "人物资料",
+          "en": "Figure profile"
+        },
+        "url": "https://www.ed.ac.uk/profile/andy-clark"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedAt": "2026-08-31",
+      "reviewer": "humanistic-revision-import",
+      "notes": {
+        "zh": "依据修订版 AI 人文编年补充的作品/文献作者人物。",
+        "en": "Author figure added from the revised AI humanities timeline."
+      }
+    }
   }
 ]

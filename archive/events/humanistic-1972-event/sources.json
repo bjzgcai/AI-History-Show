@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1972-event-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《神的九十亿个名字》",
+      "en": "The Nine Billion Names of God"
+    },
+    "url": "https://www.google.com/search?q=%E3%80%8A%E7%A5%9E%E7%9A%84%E4%B9%9D%E5%8D%81%E4%BA%BF%E4%B8%AA%E5%90%8D%E5%AD%97%E3%80%8B%20%E9%98%BF%E7%91%9F%C2%B7%E5%85%8B%E6%8B%89%E5%85%8B",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-1972-event-arthur-clarke-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "阿瑟·C·克拉克肖像",
+      "en": "Arthur C. Clarke portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Arthur_C._Clarke_cropped.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《神的九十亿个名字》作者肖像；文件页标注公有领域。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Author of The Nine Billion Names of God; the file page marks it public domain. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1981-event-vernor-vinge-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1981-event/vernor-vinge-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "弗诺·文奇肖像",
+      "en": "Vernor Vinge portrait"
+    },
+    "subcaption": {
+      "zh": "《真名实姓》作者。",
+      "en": "Author of True Names."
+    },
+    "sourceId": "source-humanistic-1981-event-vernor-vinge-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vernor_Vinge_(cropped).jpg",
+    "rights": {
+      "status": "cc-by-sa-3.0",
+      "license": {
+        "zh": "CC BY SA 3.0",
+        "en": "CC BY SA 3.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-32"
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1995-hard-problem-verified-image",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1995-hard-problem/verified-david-chalmers.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "大卫·查尔默斯肖像",
+      "en": "David Chalmers"
+    },
+    "subcaption": {
+      "zh": "意识“困难问题”提出者。",
+      "en": "Formulator of the hard problem of consciousness."
+    },
+    "sourceId": "source-humanistic-1995-hard-problem-verified-image",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_chalmers.jpg",
+    "rights": {
+      "status": "cc-by-sa-4-0",
+      "license": {
+        "zh": "CC BY-SA 4.0",
+        "en": "CC BY-SA 4.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线人物或历史资料展示。",
+        "en": "Used as a figure or historical reference in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "david-chalmers"
+    ]
+  }
+]

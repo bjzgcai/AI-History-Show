@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-2021-event-klara-sun-logo",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2021-event/klara-sun-logo.png",
+    "role": "title-reference",
+    "caption": {
+      "zh": "《克拉拉与太阳》片名标识",
+      "en": "Klara and the Sun title reference"
+    },
+    "subcaption": {
+      "zh": "石黑一雄小说《克拉拉与太阳》的片名标识。",
+      "en": "Title reference for Kazuo Ishiguro's novel Klara and the Sun."
+    },
+    "sourceId": "source-humanistic-2021-event-klara-sun-logo",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Klara_and_the_Sun_logo.png",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "PUBLIC DOMAIN",
+        "en": "PUBLIC DOMAIN"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-63"
+    ]
+  }
+]

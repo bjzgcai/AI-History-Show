@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-1962-a-michael-noll",
+  "year": 1962,
+  "date": "1962",
+  "title": {
+    "zh": "A. Michael Noll的计算机生成艺术",
+    "en": "Computer-Generated Art by A. Michael Noll"
+  },
+  "description": {
+    "zh": "A. Michael Noll 在贝尔电话实验室使用数字计算机和微缩胶片绘图仪创作抽象图像，使算法、随机性与视觉构图成为同一创作过程。",
+    "en": "At Bell Telephone Laboratories, A. Michael Noll used digital computers and a microfilm plotter to make abstract images, bringing algorithms, randomness and visual composition into one creative process."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "新泽西州默里山，贝尔电话实验室",
+      "en": "Bell Telephone Laboratories, Murray Hill, New Jersey"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4022
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-20",
+      "role": {
+        "zh": "A. Michael Noll 计算机艺术创作者",
+        "en": "Creator of A. Michael Noll computer art"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "A. Michael Noll的计算机生成艺术",
+      "en": "Computer-Generated Art by A. Michael Noll"
+    },
+    "displaySummary": {
+      "zh": "计算机绘图进入现代艺术实验",
+      "en": "Computer plotting enters modern art practice"
+    },
+    "displayDescription": {
+      "zh": "<p>A. Michael Noll 在贝尔电话实验室使用数字计算机和微缩胶片绘图仪创作抽象图像，使算法、随机性与视觉构图成为同一创作过程。 这些作品不只是把电脑当作更快的画笔，而是把规则、概率与参数选择本身变成创作材料。它们由此提出一个持续至今的问题：当图像由程序生成时，作者性应归于程序、机器，还是设计规则的人。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 20 世纪 60 年代初，贝尔实验室的研究人员开始把大型计算机用于声音、动画和图像实验。Noll 的早期作品由 IBM 7090 系列计算机计算并通过绘图设备输出，1965 年还进入纽约 Howard Wise Gallery 的计算机艺术展览。</p><p> 数字艺术史研究者通常把 Noll 视为计算机生成艺术的早期实践者之一，他的实验连接了实验室研究、现代主义抽象和后来生成艺术的工作方法。其长期影响不在于作品使用了某一台机器，而在于它证明了算法可以成为可辨认的审美媒介。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>At Bell Telephone Laboratories, A. Michael Noll used digital computers and a microfilm plotter to make abstract images, bringing algorithms, randomness and visual composition into one creative process. These works did more than use a computer as a faster drawing tool; they made rules, probability and parameter choices into artistic materials. They therefore raise an enduring question: when a program generates an image, does authorship belong to the program, the machine or the person who designed the rules?</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. In the early 1960s, researchers at Bell Laboratories began using large computers for experiments in sound, animation and images. Noll calculated early works on IBM 7090-series machines and output them with plotting equipment; in 1965 his work also appeared in a computer-art exhibition at New York's Howard Wise Gallery.</p><p> Historians of digital art generally regard Noll as one of the early practitioners of computer-generated art, linking laboratory research, modernist abstraction and later generative methods. The lasting importance lies less in the particular machine than in demonstrating that algorithms could become a recognizable aesthetic medium. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "A. Michael Noll的计算机生成艺术",
+          "en": "Computer-Generated Art by A. Michael Noll"
+        },
+        "description": {
+          "zh": "计算机绘图进入现代艺术实验",
+          "en": "Computer plotting enters modern art practice"
+        },
+        "url": "https://www.google.com/search?q=A.%20Michael%20Noll%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%94%9F%E6%88%90%E8%89%BA%E6%9C%AF%20A.%20Michael%20Noll",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1962-a-michael-noll-noll-vertical-horizontal"
+    ],
+    "sourceIds": [
+      "source-humanistic-1962-a-michael-noll-record",
+      "source-humanistic-1962-a-michael-noll-noll-vertical-horizontal"
+    ],
+    "claimIds": [
+      "claim-humanistic-1962-a-michael-noll-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "20 世纪 60 年代初，贝尔实验室的研究人员开始把大型计算机用于声音、动画和图像实验。Noll 的早期作品由 IBM 7090 系列计算机计算并通过绘图设备输出，1965 年还进入纽约 Howard Wise Gallery 的计算机艺术展览。",
+          "en": "In the early 1960s, researchers at Bell Laboratories began using large computers for experiments in sound, animation and images. Noll calculated early works on IBM 7090-series machines and output them with plotting equipment; in 1965 his work also appeared in a computer-art exhibition at New York's Howard Wise Gallery."
+        },
+        "sourceIds": [
+          "source-humanistic-1962-a-michael-noll-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这些作品不只是把电脑当作更快的画笔，而是把规则、概率与参数选择本身变成创作材料。它们由此提出一个持续至今的问题：当图像由程序生成时，作者性应归于程序、机器，还是设计规则的人。",
+          "en": "These works did more than use a computer as a faster drawing tool; they made rules, probability and parameter choices into artistic materials. They therefore raise an enduring question: when a program generates an image, does authorship belong to the program, the machine or the person who designed the rules?"
+        },
+        "sourceIds": [
+          "source-humanistic-1962-a-michael-noll-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "数字艺术史研究者通常把 Noll 视为计算机生成艺术的早期实践者之一，他的实验连接了实验室研究、现代主义抽象和后来生成艺术的工作方法。其长期影响不在于作品使用了某一台机器，而在于它证明了算法可以成为可辨认的审美媒介。",
+          "en": "Historians of digital art generally regard Noll as one of the early practitioners of computer-generated art, linking laboratory research, modernist abstraction and later generative methods. The lasting importance lies less in the particular machine than in demonstrating that algorithms could become a recognizable aesthetic medium."
+        },
+        "sourceIds": [
+          "source-humanistic-1962-a-michael-noll-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

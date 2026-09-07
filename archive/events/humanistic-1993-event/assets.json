@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1993-event-neal-stephenson-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1993-event/neal-stephenson-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "尼尔·斯蒂芬森与《巴洛克循环》人物",
+      "en": "Neal Stephenson and Baroque Cycle characters"
+    },
+    "subcaption": {
+      "zh": "《钻石时代》作者尼尔·斯蒂芬森及其作品人物资料。",
+      "en": "Neal Stephenson, author of The Diamond Age, with characters from his work."
+    },
+    "sourceId": "source-humanistic-1993-event-neal-stephenson-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neal_Stephenson_and_Baroque_Cycle_characters.jpg",
+    "rights": {
+      "status": "cc-by-2.0",
+      "license": {
+        "zh": "CC BY 2.0",
+        "en": "CC BY 2.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-43"
+    ]
+  }
+]

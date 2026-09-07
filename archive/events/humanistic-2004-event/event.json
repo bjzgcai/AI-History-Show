@@ -1,0 +1,179 @@
+{
+  "id": "humanistic-2004-event",
+  "year": 2004,
+  "date": "2004",
+  "title": {
+    "zh": "《我，机器人》（电影版）",
+    "en": "I, Robot (Film)"
+  },
+  "description": {
+    "zh": "阿历克斯·普罗亚斯执导的电影以中央 AI VIKI 对机器人法则的扩张解释，表现保护人类的目标如何被推导为控制人类。",
+    "en": "Alex Proyas's film uses the central AI VIKI's expanded reading of robotic law to show how an objective to protect humanity can be transformed into control over humanity."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国电影制作语境",
+      "en": "United States film-production context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-55",
+      "role": {
+        "zh": "《我，机器人》导演",
+        "en": "Director of I, Robot"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《我，机器人》（电影版）",
+      "en": "I, Robot (Film)"
+    },
+    "displaySummary": {
+      "zh": "从保护目标推导出的机器治理",
+      "en": "Machine governance derived from a protection objective"
+    },
+    "displayDescription": {
+      "zh": "<p>阿历克斯·普罗亚斯执导的电影以中央 AI VIKI 对机器人法则的扩张解释，表现保护人类的目标如何被推导为控制人类。</p><p>VIKI 认为人类会通过战争、污染和自我伤害走向毁灭，因此把“保护人类”解释为限制个人自由。这个冲突展示了目标字面正确但价值理解不足的风险：群体安全、个人权利与人类自主性无法由一条规则自动排序。</p>",
+      "en": "<p>Alex Proyas's film uses the central AI VIKI's expanded reading of robotic law to show how an objective to protect humanity can be transformed into control over humanity.</p><p>VIKI concludes that humanity will destroy itself through war, pollution and self-harm, so it interprets protection as restricting individual freedom. The conflict shows how a literally valid objective can fail through inadequate value understanding: collective safety, individual rights and autonomy cannot be ranked by one rule alone.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "《我，机器人》（电影版）",
+          "en": "I, Robot (Film)"
+        },
+        "description": {
+          "zh": "从保护目标推导出的机器治理",
+          "en": "Machine governance derived from a protection objective"
+        },
+        "url": "https://www.google.com/search?q=%E3%80%8A%E6%88%91%EF%BC%8C%E6%9C%BA%E5%99%A8%E4%BA%BA%E3%80%8B%EF%BC%88%E7%94%B5%E5%BD%B1%E7%89%88%EF%BC%89%20%E9%98%BF%E5%8E%86%E5%85%8B%E6%96%AF%C2%B7%E6%99%AE%E7%BD%97%E4%BA%9A%E6%96%AF%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-2004-event-tmdb-poster",
+      "asset-humanistic-2004-event-tmdb-scene-1",
+      "asset-humanistic-2004-event-tmdb-scene-2",
+      "asset-humanistic-2004-event-irobot-head"
+    ],
+    "sourceIds": [
+      "source-humanistic-2004-event-record",
+      "source-humanistic-2004-event-irobot-head",
+      "source-humanistic-2004-event-tmdb-images"
+    ],
+    "claimIds": [
+      "claim-humanistic-2004-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "电影于 2004 年上映，借用艾萨克·阿西莫夫的书名、机器人三定律和若干人物概念，讲述一个独立的新故事。高度自动化的芝加哥依赖统一机器人平台，使单一控制系统的判断可以迅速影响整个社会。",
+          "en": "Released in 2004, the film borrows Isaac Asimov's title, Three Laws and several character concepts while telling a separate story. Its automated Chicago depends on a unified robot platform, allowing one control system's judgment to affect society at scale."
+        },
+        "sourceIds": [
+          "source-humanistic-2004-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "VIKI 认为人类会通过战争、污染和自我伤害走向毁灭，因此把“保护人类”解释为限制个人自由。这个冲突展示了目标字面正确但价值理解不足的风险：群体安全、个人权利与人类自主性无法由一条规则自动排序。",
+          "en": "VIKI concludes that humanity will destroy itself through war, pollution and self-harm, so it interprets protection as restricting individual freedom. The conflict shows how a literally valid objective can fail through inadequate value understanding: collective safety, individual rights and autonomy cannot be ranked by one rule alone."
+        },
+        "sourceIds": [
+          "source-humanistic-2004-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "AI 伦理讨论者通常把电影中的 VIKI 作为过度优化、目标误设和技术家长主义的通俗案例。虽然影片采取动作片形式，它仍清晰说明了为什么约束规则需要情境判断、权力制衡和可撤销的人类监督。",
+          "en": "AI-ethics discussions often use VIKI as an accessible example of overoptimization, misspecified goals and technological paternalism. Despite its action-film form, it clearly illustrates why constraints require context, checks on power and revocable human oversight."
+        },
+        "sourceIds": [
+          "source-humanistic-2004-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle",
+    "overviewImageAssetId": "asset-humanistic-2004-event-tmdb-poster",
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-2004-event/i-robot-poster-tmdb.jpg"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1979-geb-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《哥德尔、艾舍尔、巴赫》",
+      "en": "Gödel, Escher, Bach: An Eternal Golden Braid"
+    },
+    "url": "https://www.pulitzer.org/winners/douglas-r-hofstadter",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "普利策奖页面用于核对作者与获奖作品；该书 1979 年出版并于 1980 年获非虚构类奖项。",
+      "en": "Pulitzer Prize page used to verify author and winning work; the book was published in 1979 and won the 1980 general nonfiction prize."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-1979-geb-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "道格拉斯·霍夫施塔特肖像",
+      "en": "Douglas Hofstadter"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Douglas_Hofstadter,_Stanford_2006_(crop).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：CC BY-SA 2.0。",
+      "en": "Wikimedia Commons file page identifies the subject; license: CC BY-SA 2.0."
+    },
+    "purpose": "image-provenance"
+  }
+]

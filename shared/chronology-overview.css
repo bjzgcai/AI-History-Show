@@ -377,7 +377,8 @@
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     filter: grayscale(58%) contrast(1.06) brightness(0.78);
     transition:
         filter 0.24s ease,
@@ -412,13 +413,13 @@
 }
 
 .chrono-card-media.is-portrait.is-cover-safe img {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .chrono-event-card:hover .chrono-card-media img,
 .chrono-event-card:focus-visible .chrono-card-media img {
     filter: grayscale(0%) contrast(1.02) brightness(0.94);
-    transform: scale(1.035);
+    transform: none;
 }
 
 .chrono-event-card:hover .chrono-card-media.is-portrait img,

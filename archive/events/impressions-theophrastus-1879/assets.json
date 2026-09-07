@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-impressions-theophrastus-1879-george-eliot-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/impressions-theophrastus-1879/george-eliot-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "乔治·艾略特肖像（法国国家图书馆）",
+      "en": "George Eliot portrait, BnF Gallica"
+    },
+    "subcaption": {
+      "zh": "《西奥弗拉斯特斯·萨奇的印象》作者。",
+      "en": "Author of Impressions of Theophrastus Such."
+    },
+    "sourceId": "source-impressions-theophrastus-1879-george-eliot-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:George_Eliot_BNF_Gallica.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "Public domain",
+        "en": "Public domain"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "george-eliot"
+    ]
+  }
+]

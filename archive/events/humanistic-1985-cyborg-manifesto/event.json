@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-1985-cyborg-manifesto",
+  "year": 1985,
+  "date": "1985",
+  "title": {
+    "zh": "《赛博格宣言》",
+    "en": "A Cyborg Manifesto"
+  },
+  "description": {
+    "zh": "唐娜·哈拉维以赛博格打破人／动物、自然／技术和身体／机器的二元边界，为后人类主义、人机融合与身体增强讨论提供重要思想资源。",
+    "en": "Donna Haraway uses the cyborg to unsettle boundaries between human and animal, nature and technology, and body and machine, shaping later posthumanist debate."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "女性主义科技研究语境",
+      "en": "Feminist science and technology studies"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "donna-haraway",
+      "role": {
+        "zh": "《赛博格宣言》作者",
+        "en": "Author of A Cyborg Manifesto"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《赛博格宣言》",
+      "en": "A Cyborg Manifesto"
+    },
+    "displaySummary": {
+      "zh": "哲学／社会思想",
+      "en": "Philosophy / Social thought"
+    },
+    "displayDescription": {
+      "zh": "<p>唐娜·哈拉维的《赛博格宣言》发表于女性主义科技研究和冷战后技术文化交汇的时期。她借“赛博格”这一混合体，拒绝把人／动物、自然／技术、身体／机器和男性／女性当作天然分离的二元类别。</p><p>宣言并不是单纯歌颂技术增强，而是要求重新审视谁有权定义“自然的人”和“合格的身体”。赛博格既可能被军事、资本和劳动制度利用，也可能成为跨越身份边界、形成政治联盟的想象工具。技术由此不再只是外部工具，而是参与塑造性别、劳动和主体性的社会关系。</p><p>在 AI 人文史中，这一文本把人机关系从“机器会不会像人”转向“人本身如何被技术重新组织”。今天关于算法身体、平台劳动、辅助设备和数字身份的讨论，仍在延续哈拉维对边界、权力与多元主体的追问。</p>",
+      "en": "<p>Donna Haraway published A Cyborg Manifesto at the intersection of feminist science and technology studies and late-Cold-War technological culture. Through the cyborg as a hybrid figure, she rejects the idea that human and animal, nature and technology, body and machine, or male and female are naturally separate binary categories.</p><p>The manifesto is not a simple celebration of technological enhancement. It asks who has the authority to define a natural person or a legitimate body. Cyborgs can be exploited by military, capitalist and labor systems, but they can also become a political imagination for crossing identity boundaries and forming alliances. Technology is therefore not merely an external tool; it helps organize gender, labor and agency.</p><p>For AI humanities, the text shifts the question from whether machines can resemble people to how technology reorganizes the human itself. Current debates about algorithmic bodies, platform labor, assistive devices and digital identity continue Haraway's questions about boundaries, power and plural forms of subjectivity.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "《赛博格宣言》",
+          "en": "A Cyborg Manifesto"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://monoskop.org/images/4/4c/Haraway_Donna_1985_A_Cyborg_Manifesto.pdf",
+        "source": "A Cyborg Manifesto",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1985-cyborg-manifesto-verified-image"
+    ],
+    "sourceIds": [
+      "source-humanistic-1985-cyborg-manifesto-record",
+      "source-humanistic-1985-cyborg-manifesto-verified-image"
+    ],
+    "claimIds": [
+      "claim-humanistic-1985-cyborg-manifesto-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "唐娜·哈拉维以赛博格打破人／动物、自然／技术和身体／机器的二元边界，为后人类主义、人机融合与身体增强讨论提供重要思想资源。",
+          "en": "Donna Haraway uses the cyborg to unsettle boundaries between human and animal, nature and technology, and body and machine, shaping later posthumanist debate."
+        },
+        "sourceIds": [
+          "source-humanistic-1985-cyborg-manifesto-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1985-cyborg-manifesto-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1985-cyborg-manifesto-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

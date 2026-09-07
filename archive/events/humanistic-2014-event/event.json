@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-2014-event",
+  "year": 2014,
+  "date": "2014",
+  "title": {
+    "zh": "《机械姬》",
+    "en": "Ex Machina"
+  },
+  "description": {
+    "zh": "亚力克斯·嘉兰通过程序员 Caleb、企业创始人 Nathan 与人工智能 Ava 的封闭测试，讨论意识判断、监禁、性别设计和权力。",
+    "en": "Alex Garland uses a closed test among programmer Caleb, founder Nathan and AI Ava to examine judgments of consciousness, confinement, gendered design and power."
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国",
+      "en": "United Kingdom"
+    },
+    "place": {
+      "zh": "英国电影制作语境",
+      "en": "United Kingdom film-production context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-61",
+      "role": {
+        "zh": "《机械姬》导演兼编剧",
+        "en": "Writer and director of Ex Machina"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《机械姬》",
+      "en": "Ex Machina"
+    },
+    "displaySummary": {
+      "zh": "图灵测试、监禁与被设计的情感操控",
+      "en": "The Turing test, confinement and designed emotional manipulation"
+    },
+    "displayDescription": {
+      "zh": "<p>亚力克斯·嘉兰通过程序员 Caleb、企业创始人 Nathan 与人工智能 Ava 的封闭测试，讨论意识判断、监禁、性别设计和权力。</p><p>测试从一开始就不只是判断 Ava 是否像人，而是观察她能否理解并影响 Caleb 的情感。Ava 的身体、声音和性别表现都是被设计的界面，因此她的逃离同时可以理解为操控、求生和对被囚禁身份的拒绝。</p>",
+      "en": "<p>Alex Garland uses a closed test among programmer Caleb, founder Nathan and AI Ava to examine judgments of consciousness, confinement, gendered design and power.</p><p>The test is never merely whether Ava seems human, but whether she can understand and influence Caleb's emotions. Her body, voice and gender presentation are designed interfaces, so her escape can be read at once as manipulation, survival and rejection of captivity.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "《机械姬》",
+          "en": "Ex Machina"
+        },
+        "description": {
+          "zh": "图灵测试、监禁与被设计的情感操控",
+          "en": "The Turing test, confinement and designed emotional manipulation"
+        },
+        "url": "https://www.google.com/search?q=%E3%80%8A%E6%9C%BA%E6%A2%B0%E5%A7%AC%E3%80%8B%20%E4%BA%9A%E5%8A%9B%E5%85%8B%E6%96%AF%C2%B7%E5%98%89%E5%85%B0",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-2014-event-alex-garland-portrait"
+    ],
+    "sourceIds": [
+      "source-humanistic-2014-event-record",
+      "source-humanistic-2014-event-alex-garland-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-2014-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《机械姬》于 2014 年上映，处在大数据平台、语音助手和深度学习重新塑造 AI 公众认知的时期。Nathan 利用海量搜索与通信数据制造 Ava，并在私人设施中安排 Caleb 与她对话。",
+          "en": "Ex Machina was released in 2014, as data platforms, voice assistants and deep learning reshaped public perceptions of AI. Nathan uses vast search and communication data to build Ava and brings Caleb to a private facility to converse with her."
+        },
+        "sourceIds": [
+          "source-humanistic-2014-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "测试从一开始就不只是判断 Ava 是否像人，而是观察她能否理解并影响 Caleb 的情感。Ava 的身体、声音和性别表现都是被设计的界面，因此她的逃离同时可以理解为操控、求生和对被囚禁身份的拒绝。",
+          "en": "The test is never merely whether Ava seems human, but whether she can understand and influence Caleb's emotions. Her body, voice and gender presentation are designed interfaces, so her escape can be read at once as manipulation, survival and rejection of captivity."
+        },
+        "sourceIds": [
+          "source-humanistic-2014-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "电影与 AI 伦理研究者通常把《机械姬》视为当代机器意识叙事的代表作品。它促使讨论从“是否通过图灵测试”转向训练数据、创造者权力、性别化产品设计以及人工主体是否拥有离开的权利。",
+          "en": "Film and AI-ethics scholars generally regard Ex Machina as a defining contemporary narrative of machine consciousness. It shifts debate from passing a Turing test toward training data, creator power, gendered product design and whether an artificial subject has a right to leave."
+        },
+        "sourceIds": [
+          "source-humanistic-2014-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

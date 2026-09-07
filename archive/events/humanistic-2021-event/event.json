@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-2021-event",
+  "year": 2021,
+  "date": "2021",
+  "title": {
+    "zh": "《克拉拉与太阳》",
+    "en": "Klara and the Sun"
+  },
+  "description": {
+    "zh": "石黑一雄从人工朋友克拉拉的视角观察人类家庭，以有限理解、忠诚和照护讨论程序化情感是否因此失去真实性。",
+    "en": "Kazuo Ishiguro observes a human family through the Artificial Friend Klara, using limited understanding, loyalty and care to ask whether programmed emotion is therefore unreal."
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国",
+      "en": "United Kingdom"
+    },
+    "place": {
+      "zh": "英国文学出版语境",
+      "en": "United Kingdom literary publishing context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-63",
+      "role": {
+        "zh": "《克拉拉与太阳》作者",
+        "en": "Author of Klara and the Sun"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《克拉拉与太阳》",
+      "en": "Klara and the Sun"
+    },
+    "displaySummary": {
+      "zh": "人工朋友的观察、信念与照护",
+      "en": "Observation, belief and care through an Artificial Friend"
+    },
+    "displayDescription": {
+      "zh": "<p>石黑一雄从人工朋友克拉拉的视角观察人类家庭，以有限理解、忠诚和照护讨论程序化情感是否因此失去真实性。 克拉拉擅长观察模式，却经常误解人的隐喻、秘密和矛盾动机；她仍能通过持续注意形成自己的信念与牺牲。小说因此不以智力测试判断她，而是通过照护关系追问爱是否必须来自与人类相同的身体和意识。</p><p>进入平台化和生成式系统成为公共基础设施的阶段后，这些问题又获得现实的技术回声。作品与理论共同提醒我们，讨论 AI 不能只比较性能，还要追问谁设定目标、谁承担后果，以及人的判断和关系是否仍有位置。 《克拉拉与太阳》出版于 2021 年，小说中的“人工朋友”被购买来陪伴儿童，而基因强化和教育竞争加剧了家庭焦虑。克拉拉从商店橱窗开始学习人类行为，并把太阳理解为能够赐予生命与康复的力量。</p><p> 文学评论者通常把本书视为石黑一雄延续记忆、服务与人格主题的重要作品，也是生成式 AI 普及前夕关于人工陪伴的细腻文本。它让 AI 伦理中的抽象问题落到家庭替代、儿童依恋、可抛弃产品和照护劳动上。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Kazuo Ishiguro observes a human family through the Artificial Friend Klara, using limited understanding, loyalty and care to ask whether programmed emotion is therefore unreal. Klara is skilled at pattern observation but often misunderstands metaphor, secrecy and conflicting motives; through sustained attention she nevertheless develops beliefs and sacrifice. The novel judges her not by an intelligence test but through care, asking whether love must arise from a human body and human consciousness.</p><p>As platforms and generative systems became public infrastructure, these questions gained a direct technological echo. Works and theories remind us that AI should not be judged by performance alone: we must ask who sets the goals, who bears the consequences, and whether human judgment and relationships still have a place. Klara and the Sun was published in 2021. Its Artificial Friends are purchased as companions for children, while genetic enhancement and educational competition intensify family anxiety. Klara learns human behavior from a shop window and understands the Sun as a source of life and healing.</p><p> Literary critics generally regard the novel as an important continuation of Ishiguro's themes of memory, service and personhood, and as a subtle text about artificial companionship just before generative AI became widespread. It grounds abstract AI ethics in family substitution, childhood attachment, disposable products and care work. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "《克拉拉与太阳》",
+          "en": "Klara and the Sun"
+        },
+        "description": {
+          "zh": "人工朋友的观察、信念与照护",
+          "en": "Observation, belief and care through an Artificial Friend"
+        },
+        "url": "https://www.google.com/search?q=%E3%80%8A%E5%85%8B%E6%8B%89%E6%8B%89%E4%B8%8E%E5%A4%AA%E9%98%B3%E3%80%8B%20%E7%9F%B3%E9%BB%91%E4%B8%80%E9%9B%84",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-2021-event-klara-sun-logo"
+    ],
+    "sourceIds": [
+      "source-humanistic-2021-event-record",
+      "source-humanistic-2021-event-klara-sun-logo"
+    ],
+    "claimIds": [
+      "claim-humanistic-2021-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《克拉拉与太阳》出版于 2021 年，小说中的“人工朋友”被购买来陪伴儿童，而基因强化和教育竞争加剧了家庭焦虑。克拉拉从商店橱窗开始学习人类行为，并把太阳理解为能够赐予生命与康复的力量。",
+          "en": "Klara and the Sun was published in 2021. Its Artificial Friends are purchased as companions for children, while genetic enhancement and educational competition intensify family anxiety. Klara learns human behavior from a shop window and understands the Sun as a source of life and healing."
+        },
+        "sourceIds": [
+          "source-humanistic-2021-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "克拉拉擅长观察模式，却经常误解人的隐喻、秘密和矛盾动机；她仍能通过持续注意形成自己的信念与牺牲。小说因此不以智力测试判断她，而是通过照护关系追问爱是否必须来自与人类相同的身体和意识。",
+          "en": "Klara is skilled at pattern observation but often misunderstands metaphor, secrecy and conflicting motives; through sustained attention she nevertheless develops beliefs and sacrifice. The novel judges her not by an intelligence test but through care, asking whether love must arise from a human body and human consciousness."
+        },
+        "sourceIds": [
+          "source-humanistic-2021-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "文学评论者通常把本书视为石黑一雄延续记忆、服务与人格主题的重要作品，也是生成式 AI 普及前夕关于人工陪伴的细腻文本。它让 AI 伦理中的抽象问题落到家庭替代、儿童依恋、可抛弃产品和照护劳动上。",
+          "en": "Literary critics generally regard the novel as an important continuation of Ishiguro's themes of memory, service and personhood, and as a subtle text about artificial companionship just before generative AI became widespread. It grounds abstract AI ethics in family substitution, childhood attachment, disposable products and care work."
+        },
+        "sourceIds": [
+          "source-humanistic-2021-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

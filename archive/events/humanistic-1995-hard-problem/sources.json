@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1995-hard-problem-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "意识的“困难问题”",
+      "en": "The Hard Problem of Consciousness"
+    },
+    "url": "https://consc.net/papers/facing.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "修订版清单对应的作品或思想资料；页面用于核对出版、作者与主题信息。",
+      "en": "Record corresponding to the revised list; used to verify publication, authorship and theme."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-1995-hard-problem-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "大卫·查尔默斯肖像",
+      "en": "David Chalmers"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:David_chalmers.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：CC BY-SA 4.0。",
+      "en": "Wikimedia Commons file page identifies the subject; license: CC BY-SA 4.0."
+    },
+    "purpose": "image-provenance"
+  }
+]

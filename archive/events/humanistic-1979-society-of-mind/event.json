@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-1979-society-of-mind",
+  "year": 1986,
+  "date": "1979（写作）；1986（出版）",
+  "title": {
+    "zh": "《心智社会》",
+    "en": "The Society of Mind"
+  },
+  "description": {
+    "zh": "马文·明斯基把心智描述为许多简单“智能体”协作涌现的社会，挑战统一意识的直觉，并影响联结主义与后来的智能系统设计。",
+    "en": "Marvin Minsky describes mind as a society of many simple agents whose cooperation produces intelligence, challenging the intuition of a single unified consciousness."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "人工智能与认知科学语境",
+      "en": "Artificial intelligence and cognitive science"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "marvin-minsky",
+      "role": {
+        "zh": "《心智社会》作者",
+        "en": "Author of The Society of Mind"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《心智社会》",
+      "en": "The Society of Mind"
+    },
+    "displaySummary": {
+      "zh": "哲学／认知科学",
+      "en": "Philosophy / Cognitive science"
+    },
+    "displayDescription": {
+      "zh": "<p>马文·明斯基把心智描述为许多简单“智能体”协作涌现的社会，挑战统一意识的直觉，并影响联结主义与后来的智能系统设计。</p><p>该节点按照作品、思想或媒介的历史时间，呈现人工生命、机器意识、技术社会与主体性之间的关系。</p>",
+      "en": "<p>Marvin Minsky describes mind as a society of many simple agents whose cooperation produces intelligence, challenging the intuition of a single unified consciousness.</p><p>This node follows the historical date of the work, idea or medium to examine artificial life, machine consciousness, technology and agency.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "《心智社会》",
+          "en": "The Society of Mind"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://mitpress.mit.edu/9780671657130/the-society-of-mind/",
+        "source": "The Society of Mind",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1979-society-of-mind-verified-image"
+    ],
+    "sourceIds": [
+      "source-humanistic-1979-society-of-mind-record",
+      "source-humanistic-1979-society-of-mind-verified-image"
+    ],
+    "claimIds": [
+      "claim-humanistic-1979-society-of-mind-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "马文·明斯基把心智描述为许多简单“智能体”协作涌现的社会，挑战统一意识的直觉，并影响联结主义与后来的智能系统设计。",
+          "en": "Marvin Minsky describes mind as a society of many simple agents whose cooperation produces intelligence, challenging the intuition of a single unified consciousness."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-society-of-mind-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-society-of-mind-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-society-of-mind-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

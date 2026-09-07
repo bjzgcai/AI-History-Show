@@ -1,0 +1,178 @@
+{
+  "id": "humanistic-1991-ghost-shell",
+  "year": 1995,
+  "date": "1995",
+  "title": {
+    "zh": "《攻壳机动队》",
+    "en": "Ghost in the Shell"
+  },
+  "description": {
+    "zh": "押井守的动画电影追问意识能否脱离肉身存在，并把身体、网络、自我身份与人工意识置于同一叙事框架。",
+    "en": "Mamoru Oshii's animated film asks whether consciousness can exist apart from the body, linking embodiment, networks, identity and artificial consciousness."
+  },
+  "location": {
+    "regionId": "japan",
+    "country": {
+      "zh": "日本",
+      "en": "Japan"
+    },
+    "place": {
+      "zh": "日本动画电影语境",
+      "en": "Japanese animation film context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "mamoru-oshii",
+      "role": {
+        "zh": "《攻壳机动队》导演",
+        "en": "Director of Ghost in the Shell"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《攻壳机动队》",
+      "en": "Ghost in the Shell"
+    },
+    "displaySummary": {
+      "zh": "动画电影",
+      "en": "Animated film"
+    },
+    "displayDescription": {
+      "zh": "<p>押井守的动画电影《攻壳机动队》把赛博朋克城市、义体技术和网络意识结合在一起。公安九课成员草薙素子拥有几乎完全机械化的身体，她的记忆、感知和身份却仍然被当作“自我”的证据；影片因此从第一幕就让身体与人格不再重合。</p><p>当被称为“傀儡师”的网络意识提出生命与灵魂的主张时，素子面对的不是一个普通敌人，而是一个可能没有固定身体、却能在信息网络中繁殖和改变的主体。两者的相遇把黑客攻击、人工生命和哲学上的自我连续性连接起来，也让“意识能否脱离肉身”成为具体的政治和情感问题。</p><p>《攻壳机动队》的长期影响来自它对人机融合的复杂态度：义体既扩大行动能力，也让身体成为可管理、可入侵的基础设施。电影研究与 AI 人文学者常把它视为讨论身份、网络主体和人工意识的代表性作品，而不是单纯的未来城市想象。</p>",
+      "en": "<p>Mamoru Oshii's animated film Ghost in the Shell combines a cyberpunk city, prosthetic bodies and networked consciousness. Public Security Section 9 member Motoko Kusanagi has an almost entirely mechanical body, yet her memories and perceptions remain evidence of a self. From its opening, the film refuses to let body and personhood coincide.</p><p>When the network consciousness known as the Puppet Master claims life and a soul, Motoko faces not an ordinary adversary but a subject without a fixed body that can reproduce and change across information networks. Their encounter connects hacking, artificial life and philosophical questions of personal continuity, turning disembodied consciousness into a concrete political and emotional problem.</p><p>Ghost in the Shell endures because it treats human-machine fusion ambivalently. Prosthetic technology expands agency while making the body a manageable and hackable infrastructure. Film scholars and AI-humanities researchers commonly regard it as a key work on identity, networked subjectivity and artificial consciousness rather than merely a vision of a futuristic city.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "《攻壳机动队》",
+          "en": "Ghost in the Shell"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://www.production-ig.com/works/ghost-in-the-shell/",
+        "source": "Ghost in the Shell",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1991-ghost-shell-verified-image",
+      "asset-humanistic-1991-ghost-shell-tmdb-poster",
+      "asset-humanistic-1991-ghost-shell-tmdb-scene-2"
+    ],
+    "sourceIds": [
+      "source-humanistic-1991-ghost-shell-record",
+      "source-humanistic-1991-ghost-shell-verified-image",
+      "source-humanistic-1991-ghost-shell-tmdb-images"
+    ],
+    "claimIds": [
+      "claim-humanistic-1991-ghost-shell-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "押井守的动画电影追问意识能否脱离肉身存在，并把身体、网络、自我身份与人工意识置于同一叙事框架。",
+          "en": "Mamoru Oshii's animated film asks whether consciousness can exist apart from the body, linking embodiment, networks, identity and artificial consciousness."
+        },
+        "sourceIds": [
+          "source-humanistic-1991-ghost-shell-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1991-ghost-shell-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1991-ghost-shell-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle",
+    "overviewImageAssetId": "asset-humanistic-1991-ghost-shell-tmdb-poster",
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/ghost-in-the-shell-poster-tmdb.jpg"
+    ]
+  }
+}

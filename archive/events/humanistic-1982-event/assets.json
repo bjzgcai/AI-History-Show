@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1982-event-blade-runner-final-cut",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1982-event/blade-runner-final-cut.jpg",
+    "role": "event-reference",
+    "caption": {
+      "zh": "《银翼杀手：终极剪辑》资料图",
+      "en": "Blade Runner: The Final Cut reference"
+    },
+    "subcaption": {
+      "zh": "《银翼杀手：终极剪辑》的电影发行资料。",
+      "en": "Film-release reference for Blade Runner: The Final Cut."
+    },
+    "sourceId": "source-humanistic-1982-event-blade-runner-final-cut",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blade_Runner-_The_Final_Cut_(14965371186).jpg",
+    "rights": {
+      "status": "cc-by-2.0",
+      "license": {
+        "zh": "CC BY 2.0",
+        "en": "CC BY 2.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-33"
+    ]
+  }
+]

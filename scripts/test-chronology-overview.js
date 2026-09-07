@@ -5,6 +5,11 @@ const path = require('node:path');
 const overview = require(path.join(__dirname, '..', 'shared', 'chronology-overview.js'));
 const { archiveStorylines, milestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
 
+assert.equal(overview.formatDisplayYear(-800, 'zh'), '公元前800');
+assert.equal(overview.formatDisplayYear(-800, 'en'), '800 BCE');
+assert.match(overview.formatDisplayYearMarkup(-800, 'zh'), /year-era-prefix[^>]*>公元前<\/span>800/);
+assert.match(overview.formatDisplayYearMarkup(-800, 'en'), /^800 <span class="year-era-prefix">BCE<\/span>$/);
+
 const localize = (value) => {
     if (value == null) return '';
     if (typeof value !== 'object' || Array.isArray(value)) return String(value);
@@ -18,13 +23,21 @@ const readJsonFiles = (directory) =>
         return entry.name.endsWith('.json') ? [fs.readFileSync(entryPath, 'utf8')] : [];
     });
 
-assert.equal(milestones.length, 194, 'the chronology overview should consume all generated Archive milestones');
+assert.equal(
+    milestones.length,
+    archiveStorylines.reduce((total, storyline) => total + storyline.events, 0),
+    'the chronology overview should consume all generated Archive milestones'
+);
 
 const canonicalMilestones = overview.buildCanonicalMilestones(milestones, {
     storylinePriority: ['bench-council-ai100', 'deep-learning', 'gaming-ai', 'humanistic-cycle'],
     localize
 });
-assert.equal(canonicalMilestones.length, 168, 'the all-events view should render one card per routed Archive event');
+assert.equal(
+    canonicalMilestones.length,
+    new Set(milestones.map((milestone) => milestone.archiveEventId)).size,
+    'the all-events view should render one card per routed Archive event'
+);
 assert.equal(
     new Set(canonicalMilestones.map((item) => overview.getCanonicalEventId(item))).size,
     canonicalMilestones.length,
@@ -436,14 +449,13 @@ for (const milestoneId of ['milestone-ai100-2012-alexnet', 'milestone-2012-alexn
 console.log('PASS AlexNet variants use the user-provided portrait consistently');
 
 const summaries = overview.summarizeStorylines(canonicalMilestones, localize, undefined, archiveStorylines);
+const archiveStorylineCounts = new Map(archiveStorylines.map(({ id, events }) => [id, events]));
 assert.deepEqual(
     summaries.map(({ id, count }) => ({ id, count })),
-    [
-        { id: 'bench-council-ai100', count: 139 },
-        { id: 'gaming-ai', count: 13 },
-        { id: 'humanistic-cycle', count: 12 },
-        { id: 'deep-learning', count: 30 }
-    ],
+    ['bench-council-ai100', 'gaming-ai', 'humanistic-cycle', 'deep-learning'].map((id) => ({
+        id,
+        count: archiveStorylineCounts.get(id)
+    })),
     'the overview should derive the four production storylines and their generated counts'
 );
 assert.equal(
@@ -484,7 +496,7 @@ assert.doesNotMatch(
 console.log('PASS chronology density paths follow the active storyline filter');
 
 const sorted = [...canonicalMilestones].sort((a, b) => overview.compareMilestones(a, b, localize));
-assert.equal(overview.getSortYear(sorted[0]), 1920, 'the first overview event should be the earliest Archive year');
+assert.equal(overview.getSortYear(sorted[0]), -800, 'the first overview event should be the earliest Archive year');
 assert.equal(overview.getSortYear(sorted.at(-1)), 2025, 'the last overview event should be the latest Archive year');
 assert.ok(
     sorted.every(
@@ -492,7 +504,7 @@ assert.ok(
     ),
     'chronology sorting should be monotonically increasing by display year'
 );
-console.log('PASS chronology sorting covers the complete 1920-2025 range');
+console.log('PASS chronology sorting covers the complete ancient-to-2025 range');
 
 const layout = overview.buildTimelineLayout(canonicalMilestones, {
     viewportWidth: 1920,
@@ -537,12 +549,12 @@ assert.ok(
     'deduplicated 2014 events should share one year node'
 );
 assert.ok(
-    layout.years.some((item) => item.year === 2015 && item.count === 13),
+    layout.years.some((item) => item.year === 2015 && item.count === 12),
     'deduplicated 2015 events should share one year node'
 );
 assert.equal(
     overview.getDensityTargetYear(layout.years, 0).year,
-    1920,
+    -800,
     'the start of the density navigator should select the first timeline year'
 );
 assert.equal(
@@ -552,7 +564,7 @@ assert.equal(
 );
 assert.equal(
     overview.getDensityTargetYear(layout.years, 0.5).year,
-    1973,
+    1637,
     'density navigation should select the closest available year at the clicked ratio'
 );
 assert.equal(

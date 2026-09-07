@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-erewhon-1872-primary",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "Internet Archive《埃瑞洪》扫描",
+      "en": "Internet Archive scan of Erewhon"
+    },
+    "url": "https://archive.org/details/erewhonoroverran00butl",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "来源信息已保留；正式发布前继续核验版本与许可。",
+      "en": "Source information retained; verify edition and terms before publication."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-erewhon-1872-erewhon-first-edition",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "Erewhon 1872 first-edition scan",
+      "en": "Erewhon 1872 first-edition scan"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Erewhon-1872-001.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页标注 Public domain；使用前保留摄影者/作者署名及页面许可要求。",
+      "en": "Wikimedia Commons file page identifies Public domain; retain author attribution and follow the page terms."
+    },
+    "purpose": "image-provenance"
+  }
+]

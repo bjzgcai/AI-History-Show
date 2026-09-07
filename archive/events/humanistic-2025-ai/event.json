@@ -1,0 +1,180 @@
+{
+  "id": "humanistic-2025-ai",
+  "year": 2016,
+  "date": "2016—至今",
+  "title": {
+    "zh": "AI对齐问题",
+    "en": "The AI Alignment Problem"
+  },
+  "description": {
+    "zh": "AI 对齐研究关注如何让系统在新环境和复杂任务中仍按人类意图行事，并处理目标误设、奖励投机、价值冲突和监督失效。",
+    "en": "AI alignment research asks how systems can continue to act according to human intentions in new environments and complex tasks, addressing misspecified objectives, reward gaming, value conflict and failed oversight."
+  },
+  "location": {
+    "regionId": "global",
+    "country": {
+      "zh": "全球",
+      "en": "Global"
+    },
+    "place": {
+      "zh": "国际 AI 安全与治理研究语境",
+      "en": "International AI safety and governance research context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "stuart-russell",
+      "role": {
+        "zh": "AI 对齐研究者",
+        "en": "AI alignment researcher"
+      },
+      "primary": true,
+      "avatarAssetId": "asset-humanistic-2025-ai-stuart-russell-portrait"
+    },
+    {
+      "figureId": "humanistic-figure-66",
+      "role": {
+        "zh": "相关研究者群体",
+        "en": "Related research community"
+      },
+      "primary": false
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "AI对齐问题",
+      "en": "The AI Alignment Problem"
+    },
+    "displaySummary": {
+      "zh": "让 AI 的目标、行为与人类意图保持一致",
+      "en": "Keeping AI goals and behavior aligned with human intentions"
+    },
+    "displayDescription": {
+      "zh": "<p>AI 对齐研究关注如何让系统在新环境和复杂任务中仍按人类意图行事，并处理目标误设、奖励投机、价值冲突和监督失效。 对齐不仅要求模型给出较少错误答案，还要求目标设定、训练反馈和部署约束能覆盖真实世界的多样情境。难点包括人类价值本身不一致、代理指标可能被钻空子、系统会遇到训练外环境，以及监督者可能无法判断高能力系统的全部行为。</p><p>进入平台化和生成式系统成为公共基础设施的阶段后，这些问题又获得现实的技术回声。作品与理论共同提醒我们，讨论 AI 不能只比较性能，还要追问谁设定目标、谁承担后果，以及人的判断和关系是否仍有位置。 对齐并非 2025 年突然出现的单一事件，而是从机器伦理、控制问题、强化学习安全和高级 AI 风险讨论中逐渐形成的研究领域。本条以 2025 年标记生成式 AI 大规模部署后，对可靠性、可控性和社会价值冲突的集中关注。</p><p> AI 安全专家通常把对齐视为连接技术可靠性、伦理与治理的长期问题，而不是靠一次模型更新即可解决的功能。该领域的影响已经扩展到红队测试、可解释性、人类反馈、系统评估和机构问责，但不同风险优先级与治理方案仍存在公开争论。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>AI alignment research asks how systems can continue to act according to human intentions in new environments and complex tasks, addressing misspecified objectives, reward gaming, value conflict and failed oversight. Alignment requires more than fewer incorrect answers; objectives, training feedback and deployment constraints must generalize across diverse real-world contexts. Difficulties include disagreement in human values, exploitable proxy metrics, out-of-distribution situations and supervisors who cannot fully evaluate highly capable systems.</p><p>As platforms and generative systems became public infrastructure, these questions gained a direct technological echo. Works and theories remind us that AI should not be judged by performance alone: we must ask who sets the goals, who bears the consequences, and whether human judgment and relationships still have a place. Alignment is not a single event that suddenly appeared in 2025; it developed from machine ethics, the control problem, safe reinforcement learning and discussions of advanced-AI risk. This entry uses 2025 to mark intensified concern about reliability, controllability and social value conflict after large-scale deployment of generative AI.</p><p> AI-safety experts generally treat alignment as a long-term problem connecting technical reliability, ethics and governance, not a feature solved by one model update. Its influence now spans red teaming, interpretability, human feedback, system evaluation and institutional accountability, while priorities and governance approaches remain openly contested. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "AI对齐问题",
+          "en": "The AI Alignment Problem"
+        },
+        "description": {
+          "zh": "让 AI 的目标、行为与人类意图保持一致",
+          "en": "Keeping AI goals and behavior aligned with human intentions"
+        },
+        "url": "https://www.google.com/search?q=AI%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98%20%E5%A4%9A%E4%BD%8D%E5%AD%A6%E8%80%85",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-2025-ai-stuart-russell-portrait"
+    ],
+    "sourceIds": [
+      "source-humanistic-2025-ai-record",
+      "source-humanistic-2025-ai-stuart-russell-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-2025-ai-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "对齐并非 2025 年突然出现的单一事件，而是从机器伦理、控制问题、强化学习安全和高级 AI 风险讨论中逐渐形成的研究领域。本条以 2025 年标记生成式 AI 大规模部署后，对可靠性、可控性和社会价值冲突的集中关注。",
+          "en": "Alignment is not a single event that suddenly appeared in 2025; it developed from machine ethics, the control problem, safe reinforcement learning and discussions of advanced-AI risk. This entry uses 2025 to mark intensified concern about reliability, controllability and social value conflict after large-scale deployment of generative AI."
+        },
+        "sourceIds": [
+          "source-humanistic-2025-ai-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "对齐不仅要求模型给出较少错误答案，还要求目标设定、训练反馈和部署约束能覆盖真实世界的多样情境。难点包括人类价值本身不一致、代理指标可能被钻空子、系统会遇到训练外环境，以及监督者可能无法判断高能力系统的全部行为。",
+          "en": "Alignment requires more than fewer incorrect answers; objectives, training feedback and deployment constraints must generalize across diverse real-world contexts. Difficulties include disagreement in human values, exploitable proxy metrics, out-of-distribution situations and supervisors who cannot fully evaluate highly capable systems."
+        },
+        "sourceIds": [
+          "source-humanistic-2025-ai-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "AI 安全专家通常把对齐视为连接技术可靠性、伦理与治理的长期问题，而不是靠一次模型更新即可解决的功能。该领域的影响已经扩展到红队测试、可解释性、人类反馈、系统评估和机构问责，但不同风险优先级与治理方案仍存在公开争论。",
+          "en": "AI-safety experts generally treat alignment as a long-term problem connecting technical reliability, ethics and governance, not a feature solved by one model update. Its influence now spans red teaming, interpretability, human feedback, system evaluation and institutional accountability, while priorities and governance approaches remain openly contested."
+        },
+        "sourceIds": [
+          "source-humanistic-2025-ai-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

@@ -3,8 +3,8 @@
   "year": 1968,
   "date": "1968",
   "title": {
-    "zh": "HAL 9000 与机器职责冲突",
-    "en": "HAL 9000 and Conflicting Machine Duties"
+    "zh": "《2001太空漫游》",
+    "en": "2001: A Space Odyssey"
   },
   "description": {
     "zh": "斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》让 HAL 9000 成为现代 AI 噩梦的核心形象：一个冷静、能干却让职责与人类信任崩塌的系统。展览把“目标冲突”作为现代解释映射，而不是把它说成影片当年的技术术语。",
@@ -113,6 +113,9 @@
     "assetIds": [
       "asset-1968-hal-9000-stanley-kubrick",
       "asset-1968-hal-9000-conflict",
+      "asset-1968-hal-9000-tmdb-poster",
+      "asset-1968-hal-9000-tmdb-scene-1",
+      "asset-1968-hal-9000-tmdb-scene-2",
       "asset-1968-hal-9000-audio-zh-original-v1",
       "asset-1968-hal-9000-audio-en-v1"
     ],
@@ -121,7 +124,8 @@
       "source-2001-film-overview",
       "source-hal-9000-overview",
       "source-2001-novel-context",
-      "source-technologies-in-2001"
+      "source-technologies-in-2001",
+      "source-1968-hal-9000-tmdb-images"
     ],
     "claimIds": [
       "claim-branch-summary",
@@ -315,7 +319,9 @@
         }
       ]
     },
-    "photos": [],
+    "photos": [
+      "resources/images/humanistic-cycle/1968-hal-9000/2001-poster-tmdb.jpg"
+    ],
     "quote": "",
     "quoteAttribution": "",
     "quoteMeta": {},
@@ -330,6 +336,7 @@
     "displaySubtitle": {
       "en": "Sci-Fi Prophecy, Hype and AI Winters",
       "zh": "科幻预言、技术狂热与 AI 寒冬"
-    }
+    },
+    "overviewImageAssetId": "asset-1968-hal-9000-tmdb-poster"
   }
 }

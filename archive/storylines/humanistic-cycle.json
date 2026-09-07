@@ -11,76 +11,328 @@
   "type": "branch-timeline",
   "events": [
     {
-      "eventId": "1920-rur-robots",
+      "eventId": "ancient-hephaestus-automata",
+      "order": 0,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-ancient-hephaestus-automata"
+    },
+    {
+      "eventId": "sandman-1816",
       "order": 10,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-sandman-1816"
+    },
+    {
+      "eventId": "descartes-automata",
+      "order": 20,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-descartes-automata"
+    },
+    {
+      "eventId": "jaquet-droz-automata",
+      "order": 30,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-jaquet-droz-automata"
+    },
+    {
+      "eventId": "frankenstein-1818",
+      "order": 40,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-frankenstein-1818"
+    },
+    {
+      "eventId": "darwin-among-machines-1863",
+      "order": 50,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-darwin-among-machines-1863"
+    },
+    {
+      "eventId": "erewhon-1872",
+      "order": 60,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-erewhon-1872"
+    },
+    {
+      "eventId": "impressions-theophrastus-1879",
+      "order": 70,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-impressions-theophrastus-1879"
+    },
+    {
+      "eventId": "future-eve-1886",
+      "order": 80,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-future-eve-1886"
+    },
+    {
+      "eventId": "new-china-future-1902",
+      "order": 90,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-new-china-future-1902"
+    },
+    {
+      "eventId": "1920-rur-robots",
+      "order": 100,
       "enabled": true,
       "milestoneId": "milestone-humanistic-cycle-1920-rur-robots"
     },
     {
       "eventId": "1942-asimov-runaround",
-      "order": 20,
+      "order": 110,
       "enabled": true,
       "milestoneId": "milestone-humanistic-cycle-1942-asimov-runaround"
     },
     {
-      "eventId": "1950-wiener-human-use",
-      "order": 30,
+      "eventId": "humanistic-1950-i-robot",
+      "order": 120,
       "enabled": true,
-      "milestoneId": "milestone-humanistic-cycle-1950-wiener-human-use"
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1950-i-robot"
     },
     {
-      "eventId": "1965-simon-ai-prediction",
-      "order": 40,
+      "eventId": "1950-turing-test",
+      "order": 130,
       "enabled": true,
-      "milestoneId": "milestone-humanistic-cycle-1965-simon-ai-prediction"
+      "milestoneId": "milestone-humanistic-cycle-1950-turing-test"
     },
     {
-      "eventId": "1968-hal-9000",
-      "order": 50,
+      "eventId": "humanistic-computationalism-1950",
+      "order": 140,
       "enabled": true,
-      "milestoneId": "milestone-humanistic-cycle-1968-hal-9000"
-    },
-    {
-      "eventId": "1973-lighthill-report",
-      "order": 60,
-      "enabled": true,
-      "milestoneId": "milestone-humanistic-cycle-1973-lighthill-report"
+      "milestoneId": "milestone-humanistic-cycle-humanistic-computationalism-1950"
     },
     {
       "eventId": "1978-xiaolingtong",
-      "order": 70,
+      "order": 160,
       "enabled": true,
       "milestoneId": "milestone-humanistic-cycle-1978-xiaolingtong"
     },
     {
+      "eventId": "humanistic-1962-a-michael-noll",
+      "order": 170,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1962-a-michael-noll"
+    },
+    {
+      "eventId": "humanistic-1966-17-babel-17",
+      "order": 180,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1966-17-babel-17"
+    },
+    {
+      "eventId": "humanistic-1967-event",
+      "order": 190,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1967-event"
+    },
+    {
+      "eventId": "humanistic-1968-event",
+      "order": 200,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1968-event"
+    },
+    {
+      "eventId": "1968-hal-9000",
+      "order": 210,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-1968-hal-9000"
+    },
+    {
+      "eventId": "humanistic-1972-dreyfus",
+      "order": 230,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1972-dreyfus"
+    },
+    {
+      "eventId": "humanistic-1990-chinese-nation",
+      "order": 240,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1990-chinese-nation"
+    },
+    {
+      "eventId": "humanistic-1979-event",
+      "order": 250,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1979-event"
+    },
+    {
+      "eventId": "humanistic-1979-geb",
+      "order": 260,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1979-geb"
+    },
+    {
+      "eventId": "humanistic-1980-event",
+      "order": 270,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1980-event"
+    },
+    {
+      "eventId": "humanistic-1981-event",
+      "order": 280,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1981-event"
+    },
+    {
       "eventId": "1984-neuromancer",
-      "order": 80,
+      "order": 290,
       "enabled": true,
       "milestoneId": "milestone-humanistic-cycle-1984-neuromancer"
     },
     {
-      "eventId": "1987-lisp-machine-collapse",
-      "order": 90,
+      "eventId": "humanistic-1984-event",
+      "order": 300,
       "enabled": true,
-      "milestoneId": "milestone-humanistic-cycle-1987-lisp-machine-collapse"
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1984-event"
     },
     {
-      "eventId": "2014-ai-existential-warnings",
-      "order": 100,
+      "eventId": "humanistic-1985-cyborg-manifesto",
+      "order": 310,
       "enabled": true,
-      "milestoneId": "milestone-humanistic-cycle-2014-ai-existential-warnings"
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1985-cyborg-manifesto"
     },
     {
-      "eventId": "2015-openai-founding",
-      "order": 110,
+      "eventId": "humanistic-1998-event",
+      "order": 320,
       "enabled": true,
-      "milestoneId": "milestone-humanistic-cycle-2015-openai-founding"
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1998-event"
     },
     {
-      "eventId": "2023-ai-risk-statement",
-      "order": 120,
+      "eventId": "humanistic-1988-mind-children",
+      "order": 330,
       "enabled": true,
-      "milestoneId": "milestone-humanistic-cycle-2023-ai-risk-statement"
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1988-mind-children"
+    },
+    {
+      "eventId": "humanistic-1989-event",
+      "order": 340,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1989-event"
+    },
+    {
+      "eventId": "humanistic-1990-event",
+      "order": 350,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1990-event"
+    },
+    {
+      "eventId": "humanistic-1991-event",
+      "order": 360,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1991-event"
+    },
+    {
+      "eventId": "humanistic-1991-ghost-shell",
+      "order": 370,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1991-ghost-shell"
+    },
+    {
+      "eventId": "humanistic-1992-event",
+      "order": 380,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1992-event"
+    },
+    {
+      "eventId": "humanistic-1993-singularity",
+      "order": 390,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1993-singularity"
+    },
+    {
+      "eventId": "humanistic-1993-event",
+      "order": 400,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1993-event"
+    },
+    {
+      "eventId": "humanistic-1995-event",
+      "order": 410,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1995-event"
+    },
+    {
+      "eventId": "humanistic-1995-hard-problem",
+      "order": 420,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1995-hard-problem"
+    },
+    {
+      "eventId": "humanistic-1998-extended-mind",
+      "order": 430,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1998-extended-mind"
+    },
+    {
+      "eventId": "humanistic-1999-event",
+      "order": 440,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-1999-event"
+    },
+    {
+      "eventId": "humanistic-2001-event",
+      "order": 450,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-2001-event"
+    },
+    {
+      "eventId": "humanistic-2003-event",
+      "order": 460,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-2003-event"
+    },
+    {
+      "eventId": "humanistic-2008-event",
+      "order": 470,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-2008-event"
+    },
+    {
+      "eventId": "humanistic-2010-teamlab",
+      "order": 480,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-2010-teamlab"
+    },
+    {
+      "eventId": "humanistic-2012-event",
+      "order": 490,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-2012-event"
+    },
+    {
+      "eventId": "humanistic-2013-event",
+      "order": 500,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-2013-event"
+    },
+    {
+      "eventId": "humanistic-2014-superintelligence",
+      "order": 510,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-2014-superintelligence"
+    },
+    {
+      "eventId": "humanistic-2025-ai",
+      "order": 520,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-2025-ai"
+    },
+    {
+      "eventId": "humanistic-2021-event",
+      "order": 530,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-2021-event"
+    },
+    {
+      "eventId": "humanistic-2022-reality-plus",
+      "order": 540,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-2022-reality-plus"
+    },
+    {
+      "eventId": "humanistic-2025-iit-ai",
+      "order": 550,
+      "enabled": true,
+      "milestoneId": "milestone-humanistic-cycle-humanistic-2025-iit-ai"
     }
   ]
 }

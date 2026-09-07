@@ -43,14 +43,17 @@ function loadStoryline(scopeId) {
 function validateTurns(source, config) {
     const { data, fileName } = source;
     const { storyline, enabledEvents } = loadStoryline(data.scopeId);
-    const storylineEvent =
-        config.storylineOrderPolicy === 'frozen-revision'
-            ? enabledEvents.find((event) => event.eventId === data.eventId)
-            : enabledEvents[data.sequenceIndex - 1];
-    if (!storylineEvent || storylineEvent.eventId !== data.eventId) {
+    const frozenRevision = config.storylineOrderPolicy === 'frozen-revision';
+    const storylineEvent = frozenRevision
+        ? enabledEvents.find((event) => event.eventId === data.eventId)
+        : enabledEvents[data.sequenceIndex - 1];
+    if (!frozenRevision && (!storylineEvent || storylineEvent.eventId !== data.eventId)) {
         fail(`${fileName}: event does not match enabled Archive storyline order`);
     }
-    if (data.variantId && (storylineEvent.variant || storyline.id) !== data.variantId) {
+    if (!fs.existsSync(path.join(ROOT, 'archive/events', data.eventId, 'event.json'))) {
+        fail(`${fileName}: event is missing from Archive`);
+    }
+    if (storylineEvent && data.variantId && (storylineEvent.variant || storyline.id) !== data.variantId) {
         fail(`${fileName}: variant does not match Archive storyline ${storyline.id}`);
     }
     if (!Array.isArray(data.turns) || data.turns.length === 0) fail(`${fileName}: turns must be non-empty`);

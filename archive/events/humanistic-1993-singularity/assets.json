@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1993-singularity-verified-image",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1993-singularity/verified-vernor-vinge.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "弗诺·文奇肖像",
+      "en": "Vernor Vinge"
+    },
+    "subcaption": {
+      "zh": "技术奇点概念的重要提出者。",
+      "en": "技术奇点概念的重要提出者。"
+    },
+    "sourceId": "source-humanistic-1993-singularity-verified-image",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vernor_Vinge_(cropped).jpg",
+    "rights": {
+      "status": "cc-by-sa-3-0",
+      "license": {
+        "zh": "CC BY-SA 3.0",
+        "en": "CC BY-SA 3.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线人物或历史资料展示。",
+        "en": "Used as a figure or historical reference in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "vernor-vinge"
+    ]
+  }
+]

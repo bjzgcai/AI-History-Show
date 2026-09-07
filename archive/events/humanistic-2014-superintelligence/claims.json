@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-2014-superintelligence-core",
+    "importance": "core",
+    "text": {
+      "zh": "尼克·博斯特罗姆系统讨论机器智能超越人类后的发展路径、风险与治理问题，推动 AI 安全与对齐成为公共议题。",
+      "en": "Nick Bostrom examines paths, risks and governance after machine intelligence surpasses humans, helping move AI safety and alignment into public debate."
+    },
+    "sourceIds": [
+      "source-humanistic-2014-superintelligence-record"
+    ],
+    "status": "needs-review"
+  }
+]

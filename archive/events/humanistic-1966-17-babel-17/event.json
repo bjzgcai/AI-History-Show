@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-1966-17-babel-17",
+  "year": 1966,
+  "date": "1966",
+  "title": {
+    "zh": "《巴别塔-17》（Babel-17）",
+    "en": "Babel-17"
+  },
+  "description": {
+    "zh": "塞缪尔·R·德兰尼在《巴别塔-17》中把一种高度精确的人工语言设定为战争武器，讨论语言结构如何影响感知、身份和行动。",
+    "en": "In Babel-17, Samuel R. Delany imagines a highly precise constructed language used as a weapon of war, exploring how linguistic structure may shape perception, identity and action."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国科幻出版语境",
+      "en": "United States science-fiction publishing context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-21",
+      "role": {
+        "zh": "《巴别塔-17》作者",
+        "en": "Author of Babel-17"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "已检索 Wikimedia Commons；未找到与《巴别塔-17》作者塞缪尔·德兰尼直接对应且许可清晰的图片，误搜到的弗诺·文奇肖像已排除。",
+      "en": "Wikimedia Commons was searched; no clearly licensed image directly matching Babel-17 author Samuel R. Delany was found, and a mistakenly matched Vernor Vinge portrait was excluded."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《巴别塔-17》（Babel-17）",
+      "en": "Babel-17"
+    },
+    "displaySummary": {
+      "zh": "语言、认知与心智控制的科幻想象",
+      "en": "A science-fiction inquiry into language, cognition and control"
+    },
+    "displayDescription": {
+      "zh": "<p>塞缪尔·R·德兰尼在《巴别塔-17》中把一种高度精确的人工语言设定为战争武器，讨论语言结构如何影响感知、身份和行动。 小说设想语言不只是传递思想的工具，也能重组使用者对自我、他人与行动可能性的理解。Babel-17 的语法抹去某些主体概念，使语言控制与心智编程在叙事中交叠。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 《巴别塔-17》出版于 1966 年，处在冷战通信技术、密码学和语言学广受关注的时期。德兰尼把太空战争与语言学习结合起来，让诗人兼密码专家里德拉·王通过破译敌方语言追踪破坏活动。</p><p> 文学研究者通常把《巴别塔-17》视为语言相对论、身份政治与认知控制相结合的经典科幻文本。它也为后来围绕自然语言接口、提示操控和语言模型是否“理解”语言的讨论提供了富有启发性的文化参照。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>In Babel-17, Samuel R. Delany imagines a highly precise constructed language used as a weapon of war, exploring how linguistic structure may shape perception, identity and action. The novel imagines language not merely as a vehicle for thought but as a system that can reorganize how a speaker understands self, others and possible actions. Babel-17 suppresses certain concepts of subjecthood, allowing linguistic control and mental programming to overlap.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. Babel-17 was published in 1966, when Cold War communications, cryptography and linguistics attracted intense attention. Delany joins space warfare to language learning as poet and cryptographer Rydra Wong decodes an enemy language while investigating sabotage.</p><p> Literary scholars generally treat Babel-17 as a classic science-fiction text joining linguistic relativity, identity and cognitive control. It also offers a productive cultural reference for later debates about natural-language interfaces, prompt manipulation and whether language models understand language. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "《巴别塔-17》（Babel-17）",
+          "en": "Babel-17"
+        },
+        "description": {
+          "zh": "语言、认知与心智控制的科幻想象",
+          "en": "A science-fiction inquiry into language, cognition and control"
+        },
+        "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%EF%BC%88Babel-17%EF%BC%89%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1966-17-babel-17-samuel-delany-portrait"
+    ],
+    "sourceIds": [
+      "source-humanistic-1966-17-babel-17-record",
+      "source-humanistic-1966-17-babel-17-samuel-delany-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-1966-17-babel-17-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《巴别塔-17》出版于 1966 年，处在冷战通信技术、密码学和语言学广受关注的时期。德兰尼把太空战争与语言学习结合起来，让诗人兼密码专家里德拉·王通过破译敌方语言追踪破坏活动。",
+          "en": "Babel-17 was published in 1966, when Cold War communications, cryptography and linguistics attracted intense attention. Delany joins space warfare to language learning as poet and cryptographer Rydra Wong decodes an enemy language while investigating sabotage."
+        },
+        "sourceIds": [
+          "source-humanistic-1966-17-babel-17-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "小说设想语言不只是传递思想的工具，也能重组使用者对自我、他人与行动可能性的理解。Babel-17 的语法抹去某些主体概念，使语言控制与心智编程在叙事中交叠。",
+          "en": "The novel imagines language not merely as a vehicle for thought but as a system that can reorganize how a speaker understands self, others and possible actions. Babel-17 suppresses certain concepts of subjecthood, allowing linguistic control and mental programming to overlap."
+        },
+        "sourceIds": [
+          "source-humanistic-1966-17-babel-17-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "文学研究者通常把《巴别塔-17》视为语言相对论、身份政治与认知控制相结合的经典科幻文本。它也为后来围绕自然语言接口、提示操控和语言模型是否“理解”语言的讨论提供了富有启发性的文化参照。",
+          "en": "Literary scholars generally treat Babel-17 as a classic science-fiction text joining linguistic relativity, identity and cognitive control. It also offers a productive cultural reference for later debates about natural-language interfaces, prompt manipulation and whether language models understand language."
+        },
+        "sourceIds": [
+          "source-humanistic-1966-17-babel-17-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

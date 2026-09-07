@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-1988-mind-children",
+  "year": 1988,
+  "date": "1988",
+  "title": {
+    "zh": "《心智之子》",
+    "en": "Mind Children: The Future of Robot and Human Intelligence"
+  },
+  "description": {
+    "zh": "汉斯·莫拉维克讨论机器人智能、意识上传以及人类与机器智能的未来关系，是机器超智能想象的重要文本。",
+    "en": "Hans Moravec discusses robot intelligence, mind uploading and future relations between humans and machine intelligence, influencing visions of machine superintelligence."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "机器人与未来学研究语境",
+      "en": "Robotics and futurist research context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "hans-moravec",
+      "role": {
+        "zh": "《心智之子》作者",
+        "en": "Author of Mind Children"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《心智之子》",
+      "en": "Mind Children: The Future of Robot and Human Intelligence"
+    },
+    "displaySummary": {
+      "zh": "文学／AI",
+      "en": "Literature / AI"
+    },
+    "displayDescription": {
+      "zh": "<p>汉斯·莫拉维克在《心智之子》中把机器人学、人工智能和未来学结合起来，设想机器智能最终可能超过人类，并提出把人的心智信息化、迁移到人工载体的可能性。书中的叙述把实验室里的机器人研究延伸到生命延续、身份和文明未来的问题。</p><p>“上传心智”之所以具有冲击力，是因为它同时承诺摆脱身体限制，又制造了连续性难题：被扫描和复制的系统还是原来的那个人吗，记忆相同是否意味着主体相同，复制体之间又如何分配权利。莫拉维克把这些哲学问题放进工程路线图，使技术乐观主义与存在焦虑同时出现。</p><p>研究者通常把《心智之子》视为超智能和后人类想象的重要文本，而不是可直接执行的技术方案。它的遗产在于让机器人能力、意识上传和人类身份成为同一场讨论，也促使后来的 AI 研究更认真地区分性能预测、身份主张和伦理承诺。</p>",
+      "en": "<p>In Mind Children, Hans Moravec combines robotics, artificial intelligence and futurism to imagine machines eventually surpassing humans and human minds being transferred into artificial carriers. The book extends laboratory robotics into questions about life extension, identity and the future of civilization.</p><p>Mind uploading is provocative because it promises escape from bodily limits while creating a problem of continuity. Is a scanned or copied system the same person, does identical memory imply identical subjectivity, and how should rights be divided among copies? Moravec places these philosophical questions inside an engineering roadmap, making technological optimism and existential anxiety appear together.</p><p>Researchers generally treat Mind Children as an important text in superintelligence and posthuman imagination rather than an executable technical plan. Its legacy is to connect robotic capability, uploaded consciousness and human identity in one debate, encouraging later AI work to distinguish performance forecasts from claims about personhood and ethical obligation.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "《心智之子》",
+          "en": "Mind Children: The Future of Robot and Human Intelligence"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://global.oup.com/academic/product/mind-children-9780674576186",
+        "source": "Mind Children: The Future of Robot and Human Intelligence",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1988-mind-children-verified-image"
+    ],
+    "sourceIds": [
+      "source-humanistic-1988-mind-children-record",
+      "source-humanistic-1988-mind-children-verified-image"
+    ],
+    "claimIds": [
+      "claim-humanistic-1988-mind-children-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "汉斯·莫拉维克讨论机器人智能、意识上传以及人类与机器智能的未来关系，是机器超智能想象的重要文本。",
+          "en": "Hans Moravec discusses robot intelligence, mind uploading and future relations between humans and machine intelligence, influencing visions of machine superintelligence."
+        },
+        "sourceIds": [
+          "source-humanistic-1988-mind-children-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1988-mind-children-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1988-mind-children-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

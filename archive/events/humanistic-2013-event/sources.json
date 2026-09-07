@@ -1,0 +1,189 @@
+[
+  {
+    "id": "source-her-sony-pictures-classics",
+    "type": "official-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "Sony Pictures Classics《她》官方页面",
+      "en": "Sony Pictures Classics — Her official page"
+    },
+    "url": "https://www.sonyclassics.com/her/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "发行方的电影资料页，用于核对片名、导演和影片基本信息。",
+      "en": "Distributor film page used to verify the title, director and basic film information."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-her-nyff-2013",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "纽约电影节 2013：《她》",
+      "en": "2013 New York Film Festival: Her"
+    },
+    "url": "https://www.filmlinc.org/films/her/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "纽约电影节主办机构 Film at Lincoln Center 的影片档案入口；页面访问可能受站点策略限制。",
+      "en": "Film at Lincoln Center's film record for the New York Film Festival; access may be limited by site policy."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-her-premiere-nyff-commons",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《她》2013 年纽约电影节首映合影",
+      "en": "Her premiere at the 2013 New York Film Festival"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Her_Premiere_NYFF_2013.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页记录摄影者 aphrodite-in-nyc，许可为 CC BY 2.0；照片中可见 Joaquin Phoenix、Spike Jonze、Amy Adams、Rooney Mara 与 Olivia Wilde。",
+      "en": "Wikimedia Commons credits photographer aphrodite-in-nyc and records a CC BY 2.0 license; the photograph shows Joaquin Phoenix, Spike Jonze, Amy Adams, Rooney Mara and Olivia Wilde."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-spike-jonze-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "斯派克·琼兹肖像",
+      "en": "Spike Jonze portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Spike_Jonze.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页记录该图为衍生作品，许可为 CC BY-SA 3.0；再利用需署名并以相同方式共享。",
+      "en": "Wikimedia Commons records this as a derivative work under CC BY-SA 3.0; reuse requires attribution and share-alike."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-her-logo-commons",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《她》片名标识",
+      "en": "Her title logo"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Spike_Jonze_-_Her.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页标注为公有领域；该资源是片名标识，不是电影剧照。",
+      "en": "The Wikimedia Commons file page marks this as public domain; it is a title logo rather than a film still."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-her-digital-romance-post-cinema",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《〈她〉：数字浪漫与后电影》",
+      "en": "Her (Spike Jonze, 2013): Digital Romance and Post-cinema"
+    },
+    "authors": [
+      "Elena Gorfinkel"
+    ],
+    "year": 2019,
+    "url": "https://doi.org/10.24193/ekphrasis.22.3",
+    "doi": "10.24193/ekphrasis.22.3",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "同行评议期刊 Ekphrasis 的电影研究文章，用于支持数字亲密关系与后电影语境的分析。",
+      "en": "Film-studies article in the peer-reviewed journal Ekphrasis, used for analysis of digital intimacy and post-cinema."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-her-depersonalized-intimacy",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《去人格化的亲密关系：雪莉·特克尔与斯派克·琼兹的案例》",
+      "en": "Depersonalized Intimacy: The Cases of Sherry Turkle and Spike Jonze"
+    },
+    "year": 2016,
+    "url": "https://doi.org/10.1353/esc.2016.0004",
+    "doi": "10.1353/esc.2016.0004",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "English Studies in Canada 发表的学术文章，将《她》置于技术中介亲密关系的讨论中。",
+      "en": "Scholarly article in English Studies in Canada situating Her within debates about technologically mediated intimacy."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-2013-event-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《她》",
+      "en": "Her"
+    },
+    "url": "https://www.google.com/search?q=%E3%80%8A%E5%A5%B9%E3%80%8B%20%E6%96%AF%E6%B4%BE%E5%85%8B%C2%B7%E7%90%BC%E5%85%B9",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-2013-event-tmdb-images",
+    "type": "image-source",
+    "url": "https://www.themoviedb.org/movie/152601-her/images",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《她》 TMDB 图片库",
+      "en": "Her TMDB image gallery"
+    },
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "TMDB 图片库用于定位海报、影片场面与宣传视觉；每张图片的原始文件链接保留在对应资源记录中。",
+      "en": "The TMDB gallery is used to locate posters, film scenes and promotional visuals; each original file URL is retained in the corresponding asset record."
+    },
+    "purpose": "image-provenance"
+  }
+]

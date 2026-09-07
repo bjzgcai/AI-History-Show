@@ -1,0 +1,179 @@
+{
+  "id": "humanistic-1999-event",
+  "year": 1999,
+  "date": "1999",
+  "title": {
+    "zh": "《黑客帝国》",
+    "en": "The Matrix"
+  },
+  "description": {
+    "zh": "沃卓斯基姐妹通过机器构造的虚拟世界，把“缸中之脑”、赛博朋克动作和人类被技术系统支配的恐惧转化为大众叙事。",
+    "en": "The Wachowskis turn the brain-in-a-vat problem, cyberpunk action and fear of technological domination into a mass-cultural narrative built around a machine-created virtual world."
+  },
+  "location": {
+    "regionId": "global",
+    "country": {
+      "zh": "美国 / 澳大利亚",
+      "en": "United States / Australia"
+    },
+    "place": {
+      "zh": "美国与澳大利亚电影制作语境",
+      "en": "United States and Australian film-production context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-50",
+      "role": {
+        "zh": "《黑客帝国》编剧兼导演",
+        "en": "Writers and directors of The Matrix"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《黑客帝国》",
+      "en": "The Matrix"
+    },
+    "displaySummary": {
+      "zh": "机器统治、模拟现实与觉醒",
+      "en": "Machine rule, simulated reality and awakening"
+    },
+    "displayDescription": {
+      "zh": "<p>沃卓斯基姐妹通过机器构造的虚拟世界，把“缸中之脑”、赛博朋克动作和人类被技术系统支配的恐惧转化为大众叙事。 影片把认识论问题变成身体经验：如果感官输入完全由系统生成，人如何知道自己身处真实世界。红蓝药丸选择同时涉及自由、痛苦和责任，说明“知道真相”并不只是获得信息，而是接受行动后果。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 《黑客帝国》于 1999 年上映，正值互联网扩张、数字特效成熟和千禧年技术焦虑交汇。影片中的人类生活在名为 Matrix 的模拟现实中，身体则被机器系统维持并利用。</p><p> 电影与数字文化研究者通常把《黑客帝国》视为网络时代最具影响力的哲学科幻电影之一。它的视觉语言、模拟隐喻和身份议题广泛进入游戏、互联网文化与 AI 讨论，但后来的政治挪用也表明流行符号会脱离原作语境继续变化。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>The Wachowskis turn the brain-in-a-vat problem, cyberpunk action and fear of technological domination into a mass-cultural narrative built around a machine-created virtual world. The film turns an epistemological problem into bodily experience: if a system generates all sensory input, how can anyone know the real world? The red-or-blue-pill choice concerns freedom, pain and responsibility, showing that knowing the truth means accepting consequences rather than merely receiving information.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. The Matrix was released in 1999, where Internet expansion, mature digital effects and millennial technological anxiety converged. Humans live inside a simulated reality called the Matrix while their bodies are maintained and used by a machine system.</p><p> Film and digital-culture scholars generally regard The Matrix as one of the most influential philosophical science-fiction films of the network era. Its visual language, simulation metaphor and identity themes spread through games, online culture and AI debate, while later political appropriation shows how popular symbols can escape their original context. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "《黑客帝国》",
+          "en": "The Matrix"
+        },
+        "description": {
+          "zh": "机器统治、模拟现实与觉醒",
+          "en": "Machine rule, simulated reality and awakening"
+        },
+        "url": "https://www.google.com/search?q=%E3%80%8A%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD%E3%80%8B%20%E6%B2%83%E5%8D%93%E6%96%AF%E5%9F%BA%E5%A7%90%E5%A6%B9%2F%E5%85%84%E5%BC%9F",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1999-event-wachowskis-portrait",
+      "asset-humanistic-1999-event-tmdb-poster",
+      "asset-humanistic-1999-event-tmdb-scene-1",
+      "asset-humanistic-1999-event-tmdb-scene-2"
+    ],
+    "sourceIds": [
+      "source-humanistic-1999-event-record",
+      "source-humanistic-1999-event-wachowskis-portrait",
+      "source-humanistic-1999-event-tmdb-images"
+    ],
+    "claimIds": [
+      "claim-humanistic-1999-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《黑客帝国》于 1999 年上映，正值互联网扩张、数字特效成熟和千禧年技术焦虑交汇。影片中的人类生活在名为 Matrix 的模拟现实中，身体则被机器系统维持并利用。",
+          "en": "The Matrix was released in 1999, where Internet expansion, mature digital effects and millennial technological anxiety converged. Humans live inside a simulated reality called the Matrix while their bodies are maintained and used by a machine system."
+        },
+        "sourceIds": [
+          "source-humanistic-1999-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "影片把认识论问题变成身体经验：如果感官输入完全由系统生成，人如何知道自己身处真实世界。红蓝药丸选择同时涉及自由、痛苦和责任，说明“知道真相”并不只是获得信息，而是接受行动后果。",
+          "en": "The film turns an epistemological problem into bodily experience: if a system generates all sensory input, how can anyone know the real world? The red-or-blue-pill choice concerns freedom, pain and responsibility, showing that knowing the truth means accepting consequences rather than merely receiving information."
+        },
+        "sourceIds": [
+          "source-humanistic-1999-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "电影与数字文化研究者通常把《黑客帝国》视为网络时代最具影响力的哲学科幻电影之一。它的视觉语言、模拟隐喻和身份议题广泛进入游戏、互联网文化与 AI 讨论，但后来的政治挪用也表明流行符号会脱离原作语境继续变化。",
+          "en": "Film and digital-culture scholars generally regard The Matrix as one of the most influential philosophical science-fiction films of the network era. Its visual language, simulation metaphor and identity themes spread through games, online culture and AI debate, while later political appropriation shows how popular symbols can escape their original context."
+        },
+        "sourceIds": [
+          "source-humanistic-1999-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle",
+    "overviewImageAssetId": "asset-humanistic-1999-event-tmdb-poster",
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-1999-event/matrix-poster-tmdb.jpg"
+    ]
+  }
+}

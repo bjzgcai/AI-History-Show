@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1979-event-douglas-adams-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1979-event/douglas-adams-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "道格拉斯·亚当斯肖像",
+      "en": "Douglas Adams portrait"
+    },
+    "subcaption": {
+      "zh": "《银河系漫游指南》作者。",
+      "en": "Author of The Hitchhiker's Guide to the Galaxy."
+    },
+    "sourceId": "source-humanistic-1979-event-douglas-adams-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Douglas_adams_portrait_cropped.jpg",
+    "rights": {
+      "status": "cc-by-sa-2.0",
+      "license": {
+        "zh": "CC BY SA 2.0",
+        "en": "CC BY SA 2.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-29"
+    ]
+  }
+]

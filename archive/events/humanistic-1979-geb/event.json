@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-1979-geb",
+  "year": 1979,
+  "date": "1979",
+  "title": {
+    "zh": "《哥德尔、艾舍尔、巴赫》",
+    "en": "Gödel, Escher, Bach: An Eternal Golden Braid"
+  },
+  "description": {
+    "zh": "道格拉斯·霍夫施塔特以哥德尔定理、艾舍尔图像和巴赫音乐为线索，讨论递归、自指、形式系统与心智如何从符号结构中涌现。",
+    "en": "Douglas Hofstadter uses Gödel’s theorem, Escher’s images and Bach’s music to examine recursion, self-reference, formal systems and the emergence of mind from symbolic structures."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国认知科学与科普出版语境",
+      "en": "United States cognitive-science and popular-science publishing context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "douglas-hofstadter",
+      "role": {
+        "zh": "《哥德尔、艾舍尔、巴赫》作者",
+        "en": "Author of Gödel, Escher, Bach"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《哥德尔、艾舍尔、巴赫》",
+      "en": "Gödel, Escher, Bach: An Eternal Golden Braid"
+    },
+    "displaySummary": {
+      "zh": "文学／认知科学",
+      "en": "Literature / Cognitive science"
+    },
+    "displayDescription": {
+      "zh": "<p>道格拉斯·霍夫施塔特以哥德尔定理、艾舍尔图像和巴赫音乐为线索，讨论递归、自指、形式系统与心智如何从符号结构中涌现。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。</p><p>这本书把“奇异环”作为理解心智的核心隐喻：系统在不同层级之间回到自身，从而产生自我指称与意义。它让 AI 人文线索从机器人或银幕形象转向符号、意识和解释之间更抽象的关系。 研究者通常把《哥德尔、艾舍尔、巴赫》视为连接计算、认知科学、音乐、视觉艺术与哲学的经典跨学科作品。它长期影响关于机器智能、创造性、自我模型和符号系统能否产生意义的公共讨论。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Douglas Hofstadter uses Gödel’s theorem, Escher’s images and Bach’s music to examine recursion, self-reference, formal systems and the emergence of mind from symbolic structures.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding.</p><p>The book uses the “strange loop” as a central metaphor for mind: a system returns to itself across levels, producing self-reference and meaning. It shifts the AI humanities thread from robots or screen figures toward symbolic structures, consciousness and explanation. Researchers generally treat Gödel, Escher, Bach as a classic interdisciplinary bridge across computation, cognitive science, music, visual art and philosophy. It has shaped public discussion about machine intelligence, creativity, self-models and whether symbolic systems can produce meaning. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "《哥德尔、艾舍尔、巴赫》",
+          "en": "Gödel, Escher, Bach: An Eternal Golden Braid"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://www.pulitzer.org/winners/douglas-r-hofstadter",
+        "source": "Gödel, Escher, Bach: An Eternal Golden Braid",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1979-geb-verified-image"
+    ],
+    "sourceIds": [
+      "source-humanistic-1979-geb-record",
+      "source-humanistic-1979-geb-verified-image"
+    ],
+    "claimIds": [
+      "claim-humanistic-1979-geb-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "道格拉斯·霍夫施塔特以哥德尔定理、艾舍尔图像和巴赫音乐为线索，讨论递归、自指、形式系统与心智如何从符号结构中涌现。",
+          "en": "Douglas Hofstadter uses Gödel’s theorem, Escher’s images and Bach’s music to examine recursion, self-reference, formal systems and the emergence of mind from symbolic structures."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-geb-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这本书把“奇异环”作为理解心智的核心隐喻：系统在不同层级之间回到自身，从而产生自我指称与意义。它让 AI 人文线索从机器人或银幕形象转向符号、意识和解释之间更抽象的关系。",
+          "en": "The book uses the “strange loop” as a central metaphor for mind: a system returns to itself across levels, producing self-reference and meaning. It shifts the AI humanities thread from robots or screen figures toward symbolic structures, consciousness and explanation."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-geb-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把《哥德尔、艾舍尔、巴赫》视为连接计算、认知科学、音乐、视觉艺术与哲学的经典跨学科作品。它长期影响关于机器智能、创造性、自我模型和符号系统能否产生意义的公共讨论。",
+          "en": "Researchers generally treat Gödel, Escher, Bach as a classic interdisciplinary bridge across computation, cognitive science, music, visual art and philosophy. It has shaped public discussion about machine intelligence, creativity, self-models and whether symbolic systems can produce meaning."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-geb-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

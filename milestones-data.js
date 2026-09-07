@@ -1,7 +1,7 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-12 02:10
+// 生成时间: 2026-09-07 03:03
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
-// Archive native: storylines 4, milestones 194, errors 0
+// Archive native: storylines 4, milestones 236, errors 0
 
 const archiveStorylines = [
   {
@@ -70,7 +70,7 @@ const archiveStorylines = [
       "en": ""
     },
     "type": "branch-timeline",
-    "events": 12
+    "events": 54
   }
 ];
 
@@ -79,7 +79,7 @@ const milestones = [
     "id": "milestone-1950-turing-test",
     "archiveEventId": "1950-turing-test",
     "archiveVariantId": "bench-council-ai100",
-    "archivePresentationMode": "preserve-legacy",
+    "archivePresentationMode": "archive",
     "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
@@ -539,7 +539,7 @@ const milestones = [
     "archive": {
       "eventFile": "archive/events/1950-turing-test/event.json",
       "defaultPresentationFile": "archive/events/1950-turing-test/event.json",
-      "presentationMode": "preserve-legacy"
+      "presentationMode": "archive"
     },
     "photos": [],
     "quote": {
@@ -566,6 +566,11 @@ const milestones = [
     "quoteAttribution": {
       "en": "<em>Computing Machinery and Intelligence</em>, Alan M. Turing, Mind, 1950",
       "zh": "《计算机器与智能》, 艾伦·M·图灵, 《心灵》, 1950"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "图灵把“机器能否思考”的哲学争论转化为可观察的人机对话测试，使机器智能成为关于语言、判断与人类认知边界的公共问题。",
+      "en": "Turing reframed the philosophical question of whether machines can think as an observable conversational test, making machine intelligence a public question about language, judgment, and the boundaries of human cognition."
     }
   },
   {
@@ -108962,6 +108967,3042 @@ const milestones = [
     }
   },
   {
+    "id": "milestone-humanistic-cycle-ancient-hephaestus-automata",
+    "archiveEventId": "ancient-hephaestus-automata",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 0,
+    "year": -800,
+    "date": "约公元前8世纪",
+    "title": {
+      "zh": "《伊利亚特》中的赫菲斯托斯自动机械",
+      "en": "Hephaestus Automata in The Iliad"
+    },
+    "subtitle": {
+      "zh": "文学",
+      "en": "Literature"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "古希腊史诗传统",
+        "en": "Ancient Greek epic tradition"
+      },
+      "country": {
+        "zh": "希腊",
+        "en": "Greece"
+      },
+      "regionId": "greece",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>《伊利亚特》写到火神赫菲斯托斯打造金制侍女与能够自行行动的三足鼎。它们不是现代意义上的机器人，却已经把“由工匠制造、能够独立行动的非生命之物”写进了西方文学传统，使自动性第一次与神的技艺、宫殿秩序和战争世界并置。</p><p>在这段神话里，自动机械既是工具，也是能力的证明：它们替主人搬运、服务和执行命令，却又被描述为拥有行动倾向。这样的双重性构成了后来人工生命叙事的基本张力——人类希望制造可靠的助手，同时又担心被制造之物拥有超出预期的能力。</p><p>研究者通常把赫菲斯托斯的自动机械视为 AI 人文史的早期文化参照，而不是现代技术的直接预言。它留下的关键问题是：当行动能力可以被制造，创造者是否也必须为被造物的用途、边界和后果承担责任。</p>",
+      "en": "<p>The Iliad describes Hephaestus making golden attendants and tripods able to move on their own. They are not robots in the modern sense, yet they place a manufactured, autonomous non-human object inside the Western literary tradition, linking automatic action with divine craft, palace order and war.</p><p>In the myth, the automata are both tools and demonstrations of power. They serve their maker and follow commands, but they are also described as possessing their own movement. That duality establishes a lasting tension in artificial-life stories: people want dependable helpers while fearing abilities that exceed the creator's intentions.</p><p>Researchers generally treat the Hephaestus automata as an early cultural reference in AI humanities rather than a direct prediction of modern technology. Their enduring question is whether a creator must also answer for the uses, limits and consequences of what has been made capable of acting.</p>"
+    },
+    "figures": [
+      {
+        "id": "homer",
+        "name": {
+          "zh": "荷马",
+          "en": "Homer"
+        },
+        "role": {
+          "zh": "《伊利亚特》作者传统",
+          "en": "Authorial tradition of The Iliad"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/verified-hephaestus-automata.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/verified-hephaestus-automata.jpg": {
+          "caption": {
+            "zh": "赫菲斯托斯自动机械相关历史图",
+            "en": "hephaestus-automata"
+          },
+          "subcaption": {
+            "zh": "与古希腊自动机械想象相关的历史资料图。",
+            "en": "Historical reference image related to ancient Greek automata."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/",
+          "license": {
+            "zh": "See original source record",
+            "en": "See original source record"
+          },
+          "sourceId": "source-ancient-hephaestus-automata-verified-image",
+          "rights": {
+            "status": "see-original-source-record",
+            "license": {
+              "zh": "See original source record",
+              "en": "See original source record"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线人物或历史资料展示。",
+              "en": "Used as a figure or historical reference in the AI humanities storyline."
+            }
+          },
+          "role": "artifact-reference",
+          "type": "image",
+          "figureIds": []
+        }
+      },
+      "assetIds": [
+        "asset-ancient-hephaestus-automata-verified-image"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/ancient-hephaestus-automata/verified-hephaestus-automata.jpg": {
+        "caption": {
+          "zh": "赫菲斯托斯自动机械相关历史图",
+          "en": "hephaestus-automata"
+        },
+        "subcaption": {
+          "zh": "与古希腊自动机械想象相关的历史资料图。",
+          "en": "Historical reference image related to ancient Greek automata."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/",
+        "license": {
+          "zh": "See original source record",
+          "en": "See original source record"
+        },
+        "sourceId": "source-ancient-hephaestus-automata-verified-image",
+        "rights": {
+          "status": "see-original-source-record",
+          "license": {
+            "zh": "See original source record",
+            "en": "See original source record"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线人物或历史资料展示。",
+            "en": "Used as a figure or historical reference in the AI humanities storyline."
+          }
+        },
+        "role": "artifact-reference",
+        "type": "image",
+        "figureIds": []
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "作品/文献资料",
+            "en": "Work or text record"
+          },
+          "title": {
+            "zh": "《伊利亚特》中的赫菲斯托斯自动机械",
+            "en": "Hephaestus Automata in The Iliad"
+          },
+          "description": {
+            "zh": "打开作品或文献资料页面。",
+            "en": "Open the work or text record."
+          },
+          "url": "https://www.perseus.tufts.edu/hopper/text?doc=Hom.+Il.+18.136",
+          "source": "Hephaestus Automata in The Iliad",
+          "license": {
+            "zh": "以来源页面说明为准。",
+            "en": "Follow the source page terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary record for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-ancient-hephaestus-automata-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《伊利亚特》中的赫菲斯托斯自动机械",
+            "en": "Hephaestus Automata in The Iliad"
+          },
+          "url": "https://www.perseus.tufts.edu/hopper/text?doc=Hom.+Il.+18.136",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-ancient-hephaestus-automata-verified-image",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "赫菲斯托斯自动机械相关历史图",
+            "en": "hephaestus-automata"
+          },
+          "url": "https://commons.wikimedia.org/",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-ancient-hephaestus-automata-record",
+        "source-ancient-hephaestus-automata-verified-image"
+      ],
+      "claimIds": [
+        "claim-ancient-hephaestus-automata-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-ancient-hephaestus-automata-core",
+          "importance": "core",
+          "text": {
+            "zh": "《伊利亚特》描写火神赫菲斯托斯制造能够自行行动的金制侍女和自动三足鼎，展现古希腊文学对非生命之物拥有行动能力的早期想象。",
+            "en": "The Iliad describes Hephaestus making self-moving golden attendants and tripods, an early Greek literary imagination of non-living things with agency."
+          },
+          "sourceIds": [
+            "source-ancient-hephaestus-automata-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《伊利亚特》描写火神赫菲斯托斯制造能够自行行动的金制侍女和自动三足鼎，展现古希腊文学对非生命之物拥有行动能力的早期想象。",
+          "en": "The Iliad describes Hephaestus making self-moving golden attendants and tripods, an early Greek literary imagination of non-living things with agency."
+        },
+        "sourceIds": [
+          "source-ancient-hephaestus-automata-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-ancient-hephaestus-automata-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-ancient-hephaestus-automata-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/ancient-hephaestus-automata/event.json",
+      "defaultPresentationFile": "archive/events/ancient-hephaestus-automata/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-sandman-1816",
+    "archiveEventId": "sandman-1816",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 10,
+    "year": 1816,
+    "date": "1816",
+    "title": {
+      "zh": "《沙人》",
+      "en": "The Sandman"
+    },
+    "subtitle": {
+      "zh": "科幻、艺术与哲学中的人工生命想象",
+      "en": "Artificial-life imagination in fiction, art and philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "德国文学语境",
+        "en": "German literary context"
+      },
+      "country": {
+        "zh": "德国",
+        "en": "Germany"
+      },
+      "regionId": "germany",
+      "coordinates": [
+        51.1657,
+        10.4515
+      ]
+    },
+    "description": {
+      "zh": "<p>奥林匹亚是一具逼真到被误认为人的自动机器；作品探讨人类对人造人的情感投射与幻灭。 本事件依据原始作品或权威书目资料，展示人工生命、机器意识、技术治理或人与机器关系的文化想象。</p><p>在早期神话、机械发明与现代文学逐渐交汇的阶段，非生命之物被赋予行动、语言和意志，既承载了人类对创造的惊奇，也投射出对越界和失控的担忧。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。</p><p>它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。 研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Olympia is an automaton so lifelike that she is mistaken for a person. Hoffmann explores emotional projection onto an artificial human and the shock of disillusionment. This event presents cultural imagination around artificial life, machine consciousness, technological governance or human–machine relations using primary texts or authoritative bibliographic records.</p><p>As myth, mechanical invention and modern literature began to converge, non-living things were given action, language and will. These images expressed wonder at creation while projecting anxieties about transgression and loss of control. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.</p><p>It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order. Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "eta-hoffmann",
+        "name": {
+          "zh": "E.T.A.霍夫曼",
+          "en": "E. T. A. Hoffmann"
+        },
+        "role": {
+          "zh": "《沙人》作者",
+          "en": "Author of The Sandman"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/sandman-1816/sandman-illustration-009.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/sandman-1816/sandman-illustration-009.jpg": {
+          "caption": {
+            "zh": "E.T.A. 霍夫曼《沙人》插图",
+            "en": "E.T.A. Hoffmann: Der Sandmann illustration 009"
+          },
+          "subcaption": {
+            "zh": "霍夫曼小说《沙人》的历史插图资料。",
+            "en": "Historical illustration reference for Hoffmann's The Sandman."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:E.T.A._Hoffmann_-_Der_Sandmann_009.jpg",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "sourceId": "source-sandman-1816-sandman-illustration-009",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "Public domain",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "work-illustration",
+          "type": "image",
+          "figureIds": []
+        }
+      },
+      "assetIds": [
+        "asset-sandman-1816-sandman-illustration-009"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/sandman-1816/sandman-illustration-009.jpg": {
+        "caption": {
+          "zh": "E.T.A. 霍夫曼《沙人》插图",
+          "en": "E.T.A. Hoffmann: Der Sandmann illustration 009"
+        },
+        "subcaption": {
+          "zh": "霍夫曼小说《沙人》的历史插图资料。",
+          "en": "Historical illustration reference for Hoffmann's The Sandman."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:E.T.A._Hoffmann_-_Der_Sandmann_009.jpg",
+        "license": {
+          "zh": "Public domain",
+          "en": "Public domain"
+        },
+        "sourceId": "source-sandman-1816-sandman-illustration-009",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "work-illustration",
+        "type": "image",
+        "figureIds": []
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "档案来源",
+            "en": "Archive source"
+          },
+          "title": {
+            "zh": "Project Gutenberg《沙人》文本",
+            "en": "Project Gutenberg: The Sandman"
+          },
+          "description": {
+            "zh": "作品或书目原始资料入口。",
+            "en": "Entry point to the primary work or bibliographic record."
+          },
+          "url": "https://www.gutenberg.org/ebooks/30720",
+          "source": "Project Gutenberg: The Sandman",
+          "license": {
+            "zh": "来源页面许可或馆藏条款以原站说明为准。",
+            "en": "Follow the source page or collection terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary source for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-sandman-1816-primary",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "Project Gutenberg《沙人》文本",
+            "en": "Project Gutenberg: The Sandman"
+          },
+          "url": "https://www.gutenberg.org/ebooks/30720",
+          "purpose": "historical-context",
+          "reliability": "primary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-sandman-1816-sandman-illustration-009",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "E.T.A. Hoffmann: Der Sandmann illustration 009",
+            "en": "E.T.A. Hoffmann: Der Sandmann illustration 009"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:E.T.A._Hoffmann_-_Der_Sandmann_009.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-sandman-1816-primary",
+        "source-sandman-1816-sandman-illustration-009"
+      ],
+      "claimIds": [
+        "claim-sandman-1816-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-sandman-1816-core",
+          "importance": "core",
+          "text": {
+            "zh": "奥林匹亚是一具逼真到被误认为人的自动机器；作品探讨人类对人造人的情感投射与幻灭。",
+            "en": "Olympia is an automaton so lifelike that she is mistaken for a person. Hoffmann explores emotional projection onto an artificial human and the shock of disillusionment."
+          },
+          "sourceIds": [
+            "source-sandman-1816-primary"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "奥林匹亚是一具逼真到被误认为人的自动机器；作品探讨人类对人造人的情感投射与幻灭。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+          "en": " Olympia is an automaton so lifelike that she is mistaken for a person. Hoffmann explores emotional projection onto an artificial human and the shock of disillusionment. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination."
+        },
+        "sourceIds": [
+          "source-sandman-1816-primary"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+          "en": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order."
+        },
+        "sourceIds": [
+          "source-sandman-1816-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+          "en": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance."
+        },
+        "sourceIds": [
+          "source-sandman-1816-primary"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/sandman-1816/event.json",
+      "defaultPresentationFile": "archive/events/sandman-1816/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-descartes-automata",
+    "archiveEventId": "descartes-automata",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 20,
+    "year": 1637,
+    "date": "1637",
+    "title": {
+      "zh": "《方法论》与《第一哲学沉思录》中的自动机器论",
+      "en": "Descartes on Automata and Thought"
+    },
+    "subtitle": {
+      "zh": "科幻、艺术与哲学中的人工生命想象",
+      "en": "Artificial-life imagination in fiction, art and philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "法国哲学与出版语境",
+        "en": "French philosophical and publishing context"
+      },
+      "country": {
+        "zh": "法国",
+        "en": "France"
+      },
+      "regionId": "france",
+      "coordinates": [
+        46.2276,
+        2.2137
+      ]
+    },
+    "description": {
+      "zh": "<p>笛卡尔区分思维实体与自动机器，并以语言和灵活应答追问机器能否思考。这个问题为后来关于心智、身体和机器理解的讨论奠定哲学背景。 本事件依据原始作品或权威书目资料，展示人工生命、机器意识、技术治理或人与机器关系的文化想象。</p><p>在早期神话、机械发明与现代文学逐渐交汇的阶段，非生命之物被赋予行动、语言和意志，既承载了人类对创造的惊奇，也投射出对越界和失控的担忧。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。</p><p>它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。 研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Descartes distinguished thinking substance from automata and used language and flexible response to ask whether a machine can think. The question supplied a philosophical background for later debates about mind, embodiment and machine understanding. This event presents cultural imagination around artificial life, machine consciousness, technological governance or human–machine relations using primary texts or authoritative bibliographic records.</p><p>As myth, mechanical invention and modern literature began to converge, non-living things were given action, language and will. These images expressed wonder at creation while projecting anxieties about transgression and loss of control. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.</p><p>It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order. Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "rene-descartes",
+        "name": {
+          "zh": "勒内·笛卡尔",
+          "en": "René Descartes"
+        },
+        "role": {
+          "zh": "《方法论》与《第一哲学沉思录》作者",
+          "en": "Author of Discourse on the Method and Meditations on First Philosophy"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/descartes-automata/descartes-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/descartes-automata/descartes-portrait.jpg": {
+          "caption": {
+            "zh": "弗兰斯·哈尔斯所绘勒内·笛卡尔肖像",
+            "en": "Frans Hals: René Descartes portrait"
+          },
+          "subcaption": {
+            "zh": "《方法论》与《第一哲学沉思录》作者。",
+            "en": "Author of Discourse on the Method and Meditations on First Philosophy."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "sourceId": "source-descartes-automata-descartes-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "Public domain",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "rene-descartes"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-descartes-automata-descartes-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/descartes-automata/descartes-portrait.jpg": {
+        "caption": {
+          "zh": "弗兰斯·哈尔斯所绘勒内·笛卡尔肖像",
+          "en": "Frans Hals: René Descartes portrait"
+        },
+        "subcaption": {
+          "zh": "《方法论》与《第一哲学沉思录》作者。",
+          "en": "Author of Discourse on the Method and Meditations on First Philosophy."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
+        "license": {
+          "zh": "Public domain",
+          "en": "Public domain"
+        },
+        "sourceId": "source-descartes-automata-descartes-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "rene-descartes"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "档案来源",
+            "en": "Archive source"
+          },
+          "title": {
+            "zh": "笛卡尔著作公版文本",
+            "en": "Public-domain texts by Descartes"
+          },
+          "description": {
+            "zh": "作品或书目原始资料入口。",
+            "en": "Entry point to the primary work or bibliographic record."
+          },
+          "url": "https://www.gutenberg.org/ebooks/23306",
+          "source": "Public-domain texts by Descartes",
+          "license": {
+            "zh": "来源页面许可或馆藏条款以原站说明为准。",
+            "en": "Follow the source page or collection terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary source for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-descartes-automata-primary",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "笛卡尔著作公版文本",
+            "en": "Public-domain texts by Descartes"
+          },
+          "url": "https://www.gutenberg.org/ebooks/23306",
+          "purpose": "historical-context",
+          "reliability": "primary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-descartes-automata-descartes-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Frans Hals: René Descartes portrait",
+            "en": "Frans Hals: René Descartes portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-descartes-automata-primary",
+        "source-descartes-automata-descartes-portrait"
+      ],
+      "claimIds": [
+        "claim-descartes-automata-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-descartes-automata-core",
+          "importance": "core",
+          "text": {
+            "zh": "笛卡尔区分思维实体与自动机器，并以语言和灵活应答追问机器能否思考。这个问题为后来关于心智、身体和机器理解的讨论奠定哲学背景。",
+            "en": "Descartes distinguished thinking substance from automata and used language and flexible response to ask whether a machine can think. The question supplied a philosophical background for later debates about mind, embodiment and machine understanding."
+          },
+          "sourceIds": [
+            "source-descartes-automata-primary"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "笛卡尔区分思维实体与自动机器，并以语言和灵活应答追问机器能否思考。这个问题为后来关于心智、身体和机器理解的讨论奠定哲学背景。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+          "en": " Descartes distinguished thinking substance from automata and used language and flexible response to ask whether a machine can think. The question supplied a philosophical background for later debates about mind, embodiment and machine understanding. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination."
+        },
+        "sourceIds": [
+          "source-descartes-automata-primary"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+          "en": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order."
+        },
+        "sourceIds": [
+          "source-descartes-automata-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+          "en": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance."
+        },
+        "sourceIds": [
+          "source-descartes-automata-primary"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/descartes-automata/event.json",
+      "defaultPresentationFile": "archive/events/descartes-automata/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-jaquet-droz-automata",
+    "archiveEventId": "jaquet-droz-automata",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 30,
+    "year": 1768,
+    "date": "1768—1774",
+    "title": {
+      "zh": "雅克-德罗自动人偶",
+      "en": "The Jaquet-Droz Automata"
+    },
+    "subtitle": {
+      "zh": "科幻、艺术与哲学中的人工生命想象",
+      "en": "Artificial-life imagination in fiction, art and philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "纳沙泰尔",
+        "en": "Neuchâtel"
+      },
+      "country": {
+        "zh": "瑞士",
+        "en": "Switzerland"
+      },
+      "regionId": "switzerland",
+      "coordinates": [
+        46.9896,
+        6.9293
+      ]
+    },
+    "description": {
+      "zh": "<p>能写字、绘画和演奏的机械人偶，把精密机械、拟人动作与观众对人工生命的想象连接起来。它是现代机器人概念出现前的重要自动体实例。 本事件依据原始作品或权威书目资料，展示人工生命、机器意识、技术治理或人与机器关系的文化想象。</p><p>在早期神话、机械发明与现代文学逐渐交汇的阶段，非生命之物被赋予行动、语言和意志，既承载了人类对创造的惊奇，也投射出对越界和失控的担忧。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。</p><p>它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。 研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>The writing, drawing and music-making automata connected precision mechanics with lifelike action and audience fantasies of artificial life. They are important examples of automata before the modern idea of a robot. This event presents cultural imagination around artificial life, machine consciousness, technological governance or human–machine relations using primary texts or authoritative bibliographic records.</p><p>As myth, mechanical invention and modern literature began to converge, non-living things were given action, language and will. These images expressed wonder at creation while projecting anxieties about transgression and loss of control. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.</p><p>It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order. Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "pierre-jaquet-droz",
+        "name": {
+          "zh": "皮埃尔·雅克-德罗",
+          "en": "Pierre Jaquet-Droz"
+        },
+        "role": {
+          "zh": "雅克-德罗自动人偶制造者",
+          "en": "Maker associated with the Jaquet-Droz automata"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-writer.jpg",
+        "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-musician.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-writer.jpg": {
+          "caption": {
+            "zh": "雅克-德罗自动人偶“书写者”",
+            "en": "Jaquet-Droz automaton: Writer"
+          },
+          "subcaption": {
+            "zh": "18 世纪雅克-德罗自动人偶的实物资料。",
+            "en": "Artifact reference for the eighteenth-century Jaquet-Droz automaton."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Writer.jpg",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "sourceId": "source-jaquet-droz-automata-jaquet-droz-writer",
+          "rights": {
+            "status": "cc-by-sa-4.0",
+            "license": {
+              "zh": "CC BY-SA 4.0",
+              "en": "CC BY-SA 4.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "artifact-reference",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-musician.jpg": {
+          "caption": {
+            "zh": "雅克-德罗自动人偶“音乐家”",
+            "en": "Jaquet-Droz automaton: Musician"
+          },
+          "subcaption": {
+            "zh": "18 世纪雅克-德罗自动人偶的实物资料。",
+            "en": "Artifact reference for the eighteenth-century Jaquet-Droz automaton."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Musician.jpg",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "sourceId": "source-jaquet-droz-automata-jaquet-droz-musician",
+          "rights": {
+            "status": "cc-by-sa-4.0",
+            "license": {
+              "zh": "CC BY-SA 4.0",
+              "en": "CC BY-SA 4.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "artifact-reference",
+          "type": "image",
+          "figureIds": []
+        }
+      },
+      "assetIds": [
+        "asset-jaquet-droz-automata-jaquet-droz-writer",
+        "asset-jaquet-droz-automata-jaquet-droz-musician"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-writer.jpg": {
+        "caption": {
+          "zh": "雅克-德罗自动人偶“书写者”",
+          "en": "Jaquet-Droz automaton: Writer"
+        },
+        "subcaption": {
+          "zh": "18 世纪雅克-德罗自动人偶的实物资料。",
+          "en": "Artifact reference for the eighteenth-century Jaquet-Droz automaton."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Writer.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0",
+          "en": "CC BY-SA 4.0"
+        },
+        "sourceId": "source-jaquet-droz-automata-jaquet-droz-writer",
+        "rights": {
+          "status": "cc-by-sa-4.0",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "artifact-reference",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-musician.jpg": {
+        "caption": {
+          "zh": "雅克-德罗自动人偶“音乐家”",
+          "en": "Jaquet-Droz automaton: Musician"
+        },
+        "subcaption": {
+          "zh": "18 世纪雅克-德罗自动人偶的实物资料。",
+          "en": "Artifact reference for the eighteenth-century Jaquet-Droz automaton."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Musician.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0",
+          "en": "CC BY-SA 4.0"
+        },
+        "sourceId": "source-jaquet-droz-automata-jaquet-droz-musician",
+        "rights": {
+          "status": "cc-by-sa-4.0",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "artifact-reference",
+        "type": "image",
+        "figureIds": []
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "档案来源",
+            "en": "Archive source"
+          },
+          "title": {
+            "zh": "雅克-德罗自动人偶馆藏资料",
+            "en": "Jaquet-Droz automata collection record"
+          },
+          "description": {
+            "zh": "作品或书目原始资料入口。",
+            "en": "Entry point to the primary work or bibliographic record."
+          },
+          "url": "https://www.ville-de-neuchatel.ch/automates-jaquet-droz",
+          "source": "Jaquet-Droz automata collection record",
+          "license": {
+            "zh": "来源页面许可或馆藏条款以原站说明为准。",
+            "en": "Follow the source page or collection terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary source for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-jaquet-droz-automata-primary",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "雅克-德罗自动人偶馆藏资料",
+            "en": "Jaquet-Droz automata collection record"
+          },
+          "url": "https://www.ville-de-neuchatel.ch/automates-jaquet-droz",
+          "purpose": "historical-context",
+          "reliability": "primary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-jaquet-droz-automata-jaquet-droz-writer",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Jaquet-Droz automaton: Writer",
+            "en": "Jaquet-Droz automaton: Writer"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Writer.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-jaquet-droz-automata-jaquet-droz-musician",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Jaquet-Droz automaton: Musician",
+            "en": "Jaquet-Droz automaton: Musician"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Musician.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-jaquet-droz-automata-primary",
+        "source-jaquet-droz-automata-jaquet-droz-writer",
+        "source-jaquet-droz-automata-jaquet-droz-musician"
+      ],
+      "claimIds": [
+        "claim-jaquet-droz-automata-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-jaquet-droz-automata-core",
+          "importance": "core",
+          "text": {
+            "zh": "能写字、绘画和演奏的机械人偶，把精密机械、拟人动作与观众对人工生命的想象连接起来。它是现代机器人概念出现前的重要自动体实例。",
+            "en": "The writing, drawing and music-making automata connected precision mechanics with lifelike action and audience fantasies of artificial life. They are important examples of automata before the modern idea of a robot."
+          },
+          "sourceIds": [
+            "source-jaquet-droz-automata-primary"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "能写字、绘画和演奏的机械人偶，把精密机械、拟人动作与观众对人工生命的想象连接起来。它是现代机器人概念出现前的重要自动体实例。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+          "en": " The writing, drawing and music-making automata connected precision mechanics with lifelike action and audience fantasies of artificial life. They are important examples of automata before the modern idea of a robot. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination."
+        },
+        "sourceIds": [
+          "source-jaquet-droz-automata-primary"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+          "en": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order."
+        },
+        "sourceIds": [
+          "source-jaquet-droz-automata-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+          "en": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance."
+        },
+        "sourceIds": [
+          "source-jaquet-droz-automata-primary"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/jaquet-droz-automata/event.json",
+      "defaultPresentationFile": "archive/events/jaquet-droz-automata/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-frankenstein-1818",
+    "archiveEventId": "frankenstein-1818",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 40,
+    "year": 1818,
+    "date": "1818",
+    "title": {
+      "zh": "《弗兰肯斯坦》",
+      "en": "Frankenstein; or, The Modern Prometheus"
+    },
+    "subtitle": {
+      "zh": "科幻、艺术与哲学中的人工生命想象",
+      "en": "Artificial-life imagination in fiction, art and philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "伦敦出版语境",
+        "en": "London publishing context"
+      },
+      "country": {
+        "zh": "英国",
+        "en": "United Kingdom"
+      },
+      "regionId": "united-kingdom",
+      "coordinates": [
+        51.5074,
+        -0.1278
+      ]
+    },
+    "description": {
+      "zh": "<p>科学家以实验创造人造生命，随后面对造物的自主行动与伦理责任。作品把创造、失控、责任和被制造者的主体性变成持久的人文母题。 本事件依据原始作品或权威书目资料，展示人工生命、机器意识、技术治理或人与机器关系的文化想象。</p><p>在早期神话、机械发明与现代文学逐渐交汇的阶段，非生命之物被赋予行动、语言和意志，既承载了人类对创造的惊奇，也投射出对越界和失控的担忧。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。</p><p>它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。 研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>A scientist creates artificial life and then confronts the autonomy and ethical responsibility of his creation. The novel made creation, loss of control, responsibility and the subjectivity of the made being durable humanistic themes. This event presents cultural imagination around artificial life, machine consciousness, technological governance or human–machine relations using primary texts or authoritative bibliographic records.</p><p>As myth, mechanical invention and modern literature began to converge, non-living things were given action, language and will. These images expressed wonder at creation while projecting anxieties about transgression and loss of control. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.</p><p>It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order. Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "mary-shelley",
+        "name": {
+          "zh": "玛丽·雪莱",
+          "en": "Mary Shelley"
+        },
+        "role": {
+          "zh": "《弗兰肯斯坦》作者",
+          "en": "Author of Frankenstein; or, The Modern Prometheus"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/frankenstein-1818/mary-shelley-biography-scan.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/frankenstein-1818/mary-shelley-biography-scan.jpg": {
+          "caption": {
+            "zh": "玛丽·雪莱生平与书信扫描页",
+            "en": "Mary Shelley life and letters scan"
+          },
+          "subcaption": {
+            "zh": "《弗兰肯斯坦》作者的传记与书信资料。",
+            "en": "Biographical and correspondence material about the author of Frankenstein."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_life_and_letters_of_Mary_Wollstonecraft_Shelley_(IA_lifelettersofmar01marsrich).pdf",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "sourceId": "source-frankenstein-1818-mary-shelley-biography-scan",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "Public domain",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "paper-reference",
+          "type": "image",
+          "figureIds": []
+        }
+      },
+      "assetIds": [
+        "asset-frankenstein-1818-mary-shelley-biography-scan"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/frankenstein-1818/mary-shelley-biography-scan.jpg": {
+        "caption": {
+          "zh": "玛丽·雪莱生平与书信扫描页",
+          "en": "Mary Shelley life and letters scan"
+        },
+        "subcaption": {
+          "zh": "《弗兰肯斯坦》作者的传记与书信资料。",
+          "en": "Biographical and correspondence material about the author of Frankenstein."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_life_and_letters_of_Mary_Wollstonecraft_Shelley_(IA_lifelettersofmar01marsrich).pdf",
+        "license": {
+          "zh": "Public domain",
+          "en": "Public domain"
+        },
+        "sourceId": "source-frankenstein-1818-mary-shelley-biography-scan",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "paper-reference",
+        "type": "image",
+        "figureIds": []
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "档案来源",
+            "en": "Archive source"
+          },
+          "title": {
+            "zh": "大英图书馆《弗兰肯斯坦》资料",
+            "en": "British Library: Frankenstein"
+          },
+          "description": {
+            "zh": "作品或书目原始资料入口。",
+            "en": "Entry point to the primary work or bibliographic record."
+          },
+          "url": "https://www.bl.uk/works/frankenstein",
+          "source": "British Library: Frankenstein",
+          "license": {
+            "zh": "来源页面许可或馆藏条款以原站说明为准。",
+            "en": "Follow the source page or collection terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary source for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-frankenstein-1818-primary",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "大英图书馆《弗兰肯斯坦》资料",
+            "en": "British Library: Frankenstein"
+          },
+          "url": "https://www.bl.uk/works/frankenstein",
+          "purpose": "historical-context",
+          "reliability": "primary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-frankenstein-1818-mary-shelley-biography-scan",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Mary Shelley life and letters scan",
+            "en": "Mary Shelley life and letters scan"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:The_life_and_letters_of_Mary_Wollstonecraft_Shelley_(IA_lifelettersofmar01marsrich).pdf",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-frankenstein-1818-primary",
+        "source-frankenstein-1818-mary-shelley-biography-scan"
+      ],
+      "claimIds": [
+        "claim-frankenstein-1818-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-frankenstein-1818-core",
+          "importance": "core",
+          "text": {
+            "zh": "科学家以实验创造人造生命，随后面对造物的自主行动与伦理责任。作品把创造、失控、责任和被制造者的主体性变成持久的人文母题。",
+            "en": "A scientist creates artificial life and then confronts the autonomy and ethical responsibility of his creation. The novel made creation, loss of control, responsibility and the subjectivity of the made being durable humanistic themes."
+          },
+          "sourceIds": [
+            "source-frankenstein-1818-primary"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "科学家以实验创造人造生命，随后面对造物的自主行动与伦理责任。作品把创造、失控、责任和被制造者的主体性变成持久的人文母题。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+          "en": " A scientist creates artificial life and then confronts the autonomy and ethical responsibility of his creation. The novel made creation, loss of control, responsibility and the subjectivity of the made being durable humanistic themes. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination."
+        },
+        "sourceIds": [
+          "source-frankenstein-1818-primary"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+          "en": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order."
+        },
+        "sourceIds": [
+          "source-frankenstein-1818-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+          "en": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance."
+        },
+        "sourceIds": [
+          "source-frankenstein-1818-primary"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/frankenstein-1818/event.json",
+      "defaultPresentationFile": "archive/events/frankenstein-1818/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-darwin-among-machines-1863",
+    "archiveEventId": "darwin-among-machines-1863",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 50,
+    "year": 1863,
+    "date": "1863",
+    "title": {
+      "zh": "《机器中的达尔文》",
+      "en": "Darwin among the Machines"
+    },
+    "subtitle": {
+      "zh": "科幻、艺术与哲学中的人工生命想象",
+      "en": "Artificial-life imagination in fiction, art and philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "英国文学语境",
+        "en": "British literary context"
+      },
+      "country": {
+        "zh": "英国",
+        "en": "United Kingdom"
+      },
+      "regionId": "united-kingdom",
+      "coordinates": [
+        51.5074,
+        -0.1278
+      ]
+    },
+    "description": {
+      "zh": "<p>巴特勒设想机器可能通过选择和复制逐步发展出自主性，首次以系统方式提出机器进化并取代人类的文化想象。 本事件依据原始作品或权威书目资料，展示人工生命、机器意识、技术治理或人与机器关系的文化想象。</p><p>在早期神话、机械发明与现代文学逐渐交汇的阶段，非生命之物被赋予行动、语言和意志，既承载了人类对创造的惊奇，也投射出对越界和失控的担忧。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。</p><p>它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。 研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Butler imagined machines developing autonomy through selection and reproduction, offering an early systematic cultural vision of machine evolution and possible replacement of humanity. This event presents cultural imagination around artificial life, machine consciousness, technological governance or human–machine relations using primary texts or authoritative bibliographic records.</p><p>As myth, mechanical invention and modern literature began to converge, non-living things were given action, language and will. These images expressed wonder at creation while projecting anxieties about transgression and loss of control. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.</p><p>It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order. Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "samuel-butler",
+        "name": {
+          "zh": "塞缪尔·巴特勒",
+          "en": "Samuel Butler"
+        },
+        "role": {
+          "zh": "《机器中的达尔文》作者",
+          "en": "Author of Darwin among the Machines"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/darwin-among-machines-1863/samuel-butler-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/darwin-among-machines-1863/samuel-butler-portrait.jpg": {
+          "caption": {
+            "zh": "查尔斯·戈金所绘塞缪尔·巴特勒肖像",
+            "en": "Samuel Butler portrait by Charles Gogin"
+          },
+          "subcaption": {
+            "zh": "《机器中的达尔文》作者。",
+            "en": "Author of Darwin among the Machines."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samuel_Butler_by_Charles_Gogin.jpg",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "sourceId": "source-darwin-among-machines-1863-samuel-butler-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "Public domain",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "samuel-butler"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-darwin-among-machines-1863-samuel-butler-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/darwin-among-machines-1863/samuel-butler-portrait.jpg": {
+        "caption": {
+          "zh": "查尔斯·戈金所绘塞缪尔·巴特勒肖像",
+          "en": "Samuel Butler portrait by Charles Gogin"
+        },
+        "subcaption": {
+          "zh": "《机器中的达尔文》作者。",
+          "en": "Author of Darwin among the Machines."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samuel_Butler_by_Charles_Gogin.jpg",
+        "license": {
+          "zh": "Public domain",
+          "en": "Public domain"
+        },
+        "sourceId": "source-darwin-among-machines-1863-samuel-butler-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "samuel-butler"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "档案来源",
+            "en": "Archive source"
+          },
+          "title": {
+            "zh": "《机器中的达尔文》公版文本",
+            "en": "Public-domain text: Darwin among the Machines"
+          },
+          "description": {
+            "zh": "作品或书目原始资料入口。",
+            "en": "Entry point to the primary work or bibliographic record."
+          },
+          "url": "https://www.gutenberg.org/ebooks/1906",
+          "source": "Public-domain text: Darwin among the Machines",
+          "license": {
+            "zh": "来源页面许可或馆藏条款以原站说明为准。",
+            "en": "Follow the source page or collection terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary source for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-darwin-among-machines-1863-primary",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "《机器中的达尔文》公版文本",
+            "en": "Public-domain text: Darwin among the Machines"
+          },
+          "url": "https://www.gutenberg.org/ebooks/1906",
+          "purpose": "historical-context",
+          "reliability": "primary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-darwin-among-machines-1863-samuel-butler-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Samuel Butler portrait by Charles Gogin",
+            "en": "Samuel Butler portrait by Charles Gogin"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Samuel_Butler_by_Charles_Gogin.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-darwin-among-machines-1863-primary",
+        "source-darwin-among-machines-1863-samuel-butler-portrait"
+      ],
+      "claimIds": [
+        "claim-darwin-among-machines-1863-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-darwin-among-machines-1863-core",
+          "importance": "core",
+          "text": {
+            "zh": "巴特勒设想机器可能通过选择和复制逐步发展出自主性，首次以系统方式提出机器进化并取代人类的文化想象。",
+            "en": "Butler imagined machines developing autonomy through selection and reproduction, offering an early systematic cultural vision of machine evolution and possible replacement of humanity."
+          },
+          "sourceIds": [
+            "source-darwin-among-machines-1863-primary"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "巴特勒设想机器可能通过选择和复制逐步发展出自主性，首次以系统方式提出机器进化并取代人类的文化想象。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+          "en": " Butler imagined machines developing autonomy through selection and reproduction, offering an early systematic cultural vision of machine evolution and possible replacement of humanity. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination."
+        },
+        "sourceIds": [
+          "source-darwin-among-machines-1863-primary"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+          "en": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order."
+        },
+        "sourceIds": [
+          "source-darwin-among-machines-1863-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+          "en": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance."
+        },
+        "sourceIds": [
+          "source-darwin-among-machines-1863-primary"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/darwin-among-machines-1863/event.json",
+      "defaultPresentationFile": "archive/events/darwin-among-machines-1863/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-erewhon-1872",
+    "archiveEventId": "erewhon-1872",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 60,
+    "year": 1872,
+    "date": "1872",
+    "title": {
+      "zh": "《埃瑞洪》",
+      "en": "Erewhon"
+    },
+    "subtitle": {
+      "zh": "科幻、艺术与哲学中的人工生命想象",
+      "en": "Artificial-life imagination in fiction, art and philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "伦敦出版语境",
+        "en": "London publishing context"
+      },
+      "country": {
+        "zh": "英国",
+        "en": "United Kingdom"
+      },
+      "regionId": "united-kingdom",
+      "coordinates": [
+        51.5074,
+        -0.1278
+      ]
+    },
+    "description": {
+      "zh": "<p>小说中的“机器之书”讨论机器进化与人类被取代的可能性，虚构社会因此选择摧毁机器。它把技术治理和机器禁令变成社会制度问题。 本事件依据原始作品或权威书目资料，展示人工生命、机器意识、技术治理或人与机器关系的文化想象。</p><p>在早期神话、机械发明与现代文学逐渐交汇的阶段，非生命之物被赋予行动、语言和意志，既承载了人类对创造的惊奇，也投射出对越界和失控的担忧。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。</p><p>它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。 研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Its “Book of the Machines” considers machine evolution and human replacement, leading the fictional society to destroy machines. It turns technological governance and machine prohibition into institutional questions. This event presents cultural imagination around artificial life, machine consciousness, technological governance or human–machine relations using primary texts or authoritative bibliographic records.</p><p>As myth, mechanical invention and modern literature began to converge, non-living things were given action, language and will. These images expressed wonder at creation while projecting anxieties about transgression and loss of control. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.</p><p>It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order. Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "samuel-butler",
+        "name": {
+          "zh": "塞缪尔·巴特勒",
+          "en": "Samuel Butler"
+        },
+        "role": {
+          "zh": "《埃瑞洪》作者",
+          "en": "Author of Erewhon"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/erewhon-1872/erewhon-first-edition.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/erewhon-1872/erewhon-first-edition.jpg": {
+          "caption": {
+            "zh": "《埃瑞洪》1872 年初版扫描页",
+            "en": "Erewhon 1872 first-edition scan"
+          },
+          "subcaption": {
+            "zh": "塞缪尔·巴特勒小说的早期版本资料。",
+            "en": "Early-edition reference for Samuel Butler's novel."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erewhon-1872-001.jpg",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "sourceId": "source-erewhon-1872-erewhon-first-edition",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "Public domain",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "paper-reference",
+          "type": "image",
+          "figureIds": []
+        }
+      },
+      "assetIds": [
+        "asset-erewhon-1872-erewhon-first-edition"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/erewhon-1872/erewhon-first-edition.jpg": {
+        "caption": {
+          "zh": "《埃瑞洪》1872 年初版扫描页",
+          "en": "Erewhon 1872 first-edition scan"
+        },
+        "subcaption": {
+          "zh": "塞缪尔·巴特勒小说的早期版本资料。",
+          "en": "Early-edition reference for Samuel Butler's novel."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erewhon-1872-001.jpg",
+        "license": {
+          "zh": "Public domain",
+          "en": "Public domain"
+        },
+        "sourceId": "source-erewhon-1872-erewhon-first-edition",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "paper-reference",
+        "type": "image",
+        "figureIds": []
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "档案来源",
+            "en": "Archive source"
+          },
+          "title": {
+            "zh": "Internet Archive《埃瑞洪》扫描",
+            "en": "Internet Archive scan of Erewhon"
+          },
+          "description": {
+            "zh": "作品或书目原始资料入口。",
+            "en": "Entry point to the primary work or bibliographic record."
+          },
+          "url": "https://archive.org/details/erewhonoroverran00butl",
+          "source": "Internet Archive scan of Erewhon",
+          "license": {
+            "zh": "来源页面许可或馆藏条款以原站说明为准。",
+            "en": "Follow the source page or collection terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary source for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-erewhon-1872-primary",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "Internet Archive《埃瑞洪》扫描",
+            "en": "Internet Archive scan of Erewhon"
+          },
+          "url": "https://archive.org/details/erewhonoroverran00butl",
+          "purpose": "historical-context",
+          "reliability": "primary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-erewhon-1872-erewhon-first-edition",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Erewhon 1872 first-edition scan",
+            "en": "Erewhon 1872 first-edition scan"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Erewhon-1872-001.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-erewhon-1872-primary",
+        "source-erewhon-1872-erewhon-first-edition"
+      ],
+      "claimIds": [
+        "claim-erewhon-1872-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-erewhon-1872-core",
+          "importance": "core",
+          "text": {
+            "zh": "小说中的“机器之书”讨论机器进化与人类被取代的可能性，虚构社会因此选择摧毁机器。它把技术治理和机器禁令变成社会制度问题。",
+            "en": "Its “Book of the Machines” considers machine evolution and human replacement, leading the fictional society to destroy machines. It turns technological governance and machine prohibition into institutional questions."
+          },
+          "sourceIds": [
+            "source-erewhon-1872-primary"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "小说中的“机器之书”讨论机器进化与人类被取代的可能性，虚构社会因此选择摧毁机器。它把技术治理和机器禁令变成社会制度问题。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+          "en": " Its “Book of the Machines” considers machine evolution and human replacement, leading the fictional society to destroy machines. It turns technological governance and machine prohibition into institutional questions. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination."
+        },
+        "sourceIds": [
+          "source-erewhon-1872-primary"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+          "en": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order."
+        },
+        "sourceIds": [
+          "source-erewhon-1872-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+          "en": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance."
+        },
+        "sourceIds": [
+          "source-erewhon-1872-primary"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/erewhon-1872/event.json",
+      "defaultPresentationFile": "archive/events/erewhon-1872/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-impressions-theophrastus-1879",
+    "archiveEventId": "impressions-theophrastus-1879",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 70,
+    "year": 1879,
+    "date": "1879",
+    "title": {
+      "zh": "《西奥弗拉斯特斯·萨奇的印象》",
+      "en": "Impressions of Theophrastus Such"
+    },
+    "subtitle": {
+      "zh": "科幻、艺术与哲学中的人工生命想象",
+      "en": "Artificial-life imagination in fiction, art and philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "英国文学语境",
+        "en": "British literary context"
+      },
+      "country": {
+        "zh": "英国",
+        "en": "United Kingdom"
+      },
+      "regionId": "united-kingdom",
+      "coordinates": [
+        51.5074,
+        -0.1278
+      ]
+    },
+    "description": {
+      "zh": "<p>这部作品在社会观察与道德思考中触及机器意识问题，显示十九世纪文学并不只从工程视角想象人工智能。 本事件依据原始作品或权威书目资料，展示人工生命、机器意识、技术治理或人与机器关系的文化想象。</p><p>在早期神话、机械发明与现代文学逐渐交汇的阶段，非生命之物被赋予行动、语言和意志，既承载了人类对创造的惊奇，也投射出对越界和失控的担忧。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。</p><p>它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。 研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Within its social observation and moral reflection, the work touches on questions of machine consciousness, showing that nineteenth-century writing imagined artificial intelligence beyond an engineering viewpoint. This event presents cultural imagination around artificial life, machine consciousness, technological governance or human–machine relations using primary texts or authoritative bibliographic records.</p><p>As myth, mechanical invention and modern literature began to converge, non-living things were given action, language and will. These images expressed wonder at creation while projecting anxieties about transgression and loss of control. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.</p><p>It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order. Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "george-eliot",
+        "name": {
+          "zh": "乔治·艾略特",
+          "en": "George Eliot"
+        },
+        "role": {
+          "zh": "《西奥弗拉斯特斯·萨奇的印象》作者",
+          "en": "Author of Impressions of Theophrastus Such"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/impressions-theophrastus-1879/george-eliot-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/impressions-theophrastus-1879/george-eliot-portrait.jpg": {
+          "caption": {
+            "zh": "乔治·艾略特肖像（法国国家图书馆）",
+            "en": "George Eliot portrait, BnF Gallica"
+          },
+          "subcaption": {
+            "zh": "《西奥弗拉斯特斯·萨奇的印象》作者。",
+            "en": "Author of Impressions of Theophrastus Such."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:George_Eliot_BNF_Gallica.jpg",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "sourceId": "source-impressions-theophrastus-1879-george-eliot-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "Public domain",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "george-eliot"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-impressions-theophrastus-1879-george-eliot-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/impressions-theophrastus-1879/george-eliot-portrait.jpg": {
+        "caption": {
+          "zh": "乔治·艾略特肖像（法国国家图书馆）",
+          "en": "George Eliot portrait, BnF Gallica"
+        },
+        "subcaption": {
+          "zh": "《西奥弗拉斯特斯·萨奇的印象》作者。",
+          "en": "Author of Impressions of Theophrastus Such."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:George_Eliot_BNF_Gallica.jpg",
+        "license": {
+          "zh": "Public domain",
+          "en": "Public domain"
+        },
+        "sourceId": "source-impressions-theophrastus-1879-george-eliot-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "george-eliot"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "档案来源",
+            "en": "Archive source"
+          },
+          "title": {
+            "zh": "《西奥弗拉斯特斯·萨奇的印象》扫描",
+            "en": "Scan of Impressions of Theophrastus Such"
+          },
+          "description": {
+            "zh": "作品或书目原始资料入口。",
+            "en": "Entry point to the primary work or bibliographic record."
+          },
+          "url": "https://archive.org/details/impressionsofthe00elio",
+          "source": "Scan of Impressions of Theophrastus Such",
+          "license": {
+            "zh": "来源页面许可或馆藏条款以原站说明为准。",
+            "en": "Follow the source page or collection terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary source for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-impressions-theophrastus-1879-primary",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "《西奥弗拉斯特斯·萨奇的印象》扫描",
+            "en": "Scan of Impressions of Theophrastus Such"
+          },
+          "url": "https://archive.org/details/impressionsofthe00elio",
+          "purpose": "historical-context",
+          "reliability": "primary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-impressions-theophrastus-1879-george-eliot-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "George Eliot portrait, BnF Gallica",
+            "en": "George Eliot portrait, BnF Gallica"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:George_Eliot_BNF_Gallica.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-impressions-theophrastus-1879-primary",
+        "source-impressions-theophrastus-1879-george-eliot-portrait"
+      ],
+      "claimIds": [
+        "claim-impressions-theophrastus-1879-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-impressions-theophrastus-1879-core",
+          "importance": "core",
+          "text": {
+            "zh": "这部作品在社会观察与道德思考中触及机器意识问题，显示十九世纪文学并不只从工程视角想象人工智能。",
+            "en": "Within its social observation and moral reflection, the work touches on questions of machine consciousness, showing that nineteenth-century writing imagined artificial intelligence beyond an engineering viewpoint."
+          },
+          "sourceIds": [
+            "source-impressions-theophrastus-1879-primary"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "这部作品在社会观察与道德思考中触及机器意识问题，显示十九世纪文学并不只从工程视角想象人工智能。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+          "en": " Within its social observation and moral reflection, the work touches on questions of machine consciousness, showing that nineteenth-century writing imagined artificial intelligence beyond an engineering viewpoint. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination."
+        },
+        "sourceIds": [
+          "source-impressions-theophrastus-1879-primary"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+          "en": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order."
+        },
+        "sourceIds": [
+          "source-impressions-theophrastus-1879-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+          "en": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance."
+        },
+        "sourceIds": [
+          "source-impressions-theophrastus-1879-primary"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/impressions-theophrastus-1879/event.json",
+      "defaultPresentationFile": "archive/events/impressions-theophrastus-1879/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-future-eve-1886",
+    "archiveEventId": "future-eve-1886",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 80,
+    "year": 1886,
+    "date": "1886",
+    "title": {
+      "zh": "《未来夏娃》",
+      "en": "The Future Eve"
+    },
+    "subtitle": {
+      "zh": "科幻、艺术与哲学中的人工生命想象",
+      "en": "Artificial-life imagination in fiction, art and philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "巴黎文学语境",
+        "en": "Paris literary context"
+      },
+      "country": {
+        "zh": "法国",
+        "en": "France"
+      },
+      "regionId": "france",
+      "coordinates": [
+        48.8566,
+        2.3522
+      ]
+    },
+    "description": {
+      "zh": "<p>作品设想以电气和机械技术制造“完美的情人”，把人工身体、欲望投射和技术化爱情联系起来。 本事件依据原始作品或权威书目资料，展示人工生命、机器意识、技术治理或人与机器关系的文化想象。</p><p>在早期神话、机械发明与现代文学逐渐交汇的阶段，非生命之物被赋予行动、语言和意志，既承载了人类对创造的惊奇，也投射出对越界和失控的担忧。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。</p><p>它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。 研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>The novel imagines an electrically and mechanically made “perfect lover,” linking artificial bodies, projected desire and the technologizing of love. This event presents cultural imagination around artificial life, machine consciousness, technological governance or human–machine relations using primary texts or authoritative bibliographic records.</p><p>As myth, mechanical invention and modern literature began to converge, non-living things were given action, language and will. These images expressed wonder at creation while projecting anxieties about transgression and loss of control. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.</p><p>It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order. Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "villiers-de-lisle-adam",
+        "name": {
+          "zh": "利尔·亚当",
+          "en": "Villiers de l’Isle-Adam"
+        },
+        "role": {
+          "zh": "《未来夏娃》作者",
+          "en": "Author of The Future Eve"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/future-eve-1886/villiers-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/future-eve-1886/villiers-portrait.jpg": {
+          "caption": {
+            "zh": "维利耶·德·利尔-阿达姆肖像",
+            "en": "Villiers de l’Isle-Adam portrait"
+          },
+          "subcaption": {
+            "zh": "《未来夏娃》作者。",
+            "en": "Author of The Future Eve."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:L'Isle-Adam.jpg",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "sourceId": "source-future-eve-1886-villiers-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "Public domain",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "villiers-de-lisle-adam"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-future-eve-1886-villiers-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/future-eve-1886/villiers-portrait.jpg": {
+        "caption": {
+          "zh": "维利耶·德·利尔-阿达姆肖像",
+          "en": "Villiers de l’Isle-Adam portrait"
+        },
+        "subcaption": {
+          "zh": "《未来夏娃》作者。",
+          "en": "Author of The Future Eve."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:L'Isle-Adam.jpg",
+        "license": {
+          "zh": "Public domain",
+          "en": "Public domain"
+        },
+        "sourceId": "source-future-eve-1886-villiers-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "villiers-de-lisle-adam"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "档案来源",
+            "en": "Archive source"
+          },
+          "title": {
+            "zh": "法国国家图书馆《未来夏娃》书目记录",
+            "en": "Bibliothèque nationale de France record for The Future Eve"
+          },
+          "description": {
+            "zh": "作品或书目原始资料入口。",
+            "en": "Entry point to the primary work or bibliographic record."
+          },
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb30678692w",
+          "source": "Bibliothèque nationale de France record for The Future Eve",
+          "license": {
+            "zh": "来源页面许可或馆藏条款以原站说明为准。",
+            "en": "Follow the source page or collection terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary source for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-future-eve-1886-primary",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "法国国家图书馆《未来夏娃》书目记录",
+            "en": "Bibliothèque nationale de France record for The Future Eve"
+          },
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb30678692w",
+          "purpose": "historical-context",
+          "reliability": "primary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-future-eve-1886-villiers-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Villiers de l’Isle-Adam portrait",
+            "en": "Villiers de l’Isle-Adam portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:L'Isle-Adam.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-future-eve-1886-primary",
+        "source-future-eve-1886-villiers-portrait"
+      ],
+      "claimIds": [
+        "claim-future-eve-1886-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-future-eve-1886-core",
+          "importance": "core",
+          "text": {
+            "zh": "作品设想以电气和机械技术制造“完美的情人”，把人工身体、欲望投射和技术化爱情联系起来。",
+            "en": "The novel imagines an electrically and mechanically made “perfect lover,” linking artificial bodies, projected desire and the technologizing of love."
+          },
+          "sourceIds": [
+            "source-future-eve-1886-primary"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "作品设想以电气和机械技术制造“完美的情人”，把人工身体、欲望投射和技术化爱情联系起来。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+          "en": " The novel imagines an electrically and mechanically made “perfect lover,” linking artificial bodies, projected desire and the technologizing of love. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination."
+        },
+        "sourceIds": [
+          "source-future-eve-1886-primary"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+          "en": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order."
+        },
+        "sourceIds": [
+          "source-future-eve-1886-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+          "en": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance."
+        },
+        "sourceIds": [
+          "source-future-eve-1886-primary"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/future-eve-1886/event.json",
+      "defaultPresentationFile": "archive/events/future-eve-1886/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-new-china-future-1902",
+    "archiveEventId": "new-china-future-1902",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 90,
+    "year": 1902,
+    "date": "1902",
+    "title": {
+      "zh": "《新中国未来记》",
+      "en": "The Future of New China"
+    },
+    "subtitle": {
+      "zh": "科幻、艺术与哲学中的人工生命想象",
+      "en": "Artificial-life imagination in fiction, art and philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "中国出版语境",
+        "en": "Chinese publishing context"
+      },
+      "country": {
+        "zh": "中国",
+        "en": "China"
+      },
+      "regionId": "china",
+      "coordinates": [
+        35.8617,
+        104.1954
+      ]
+    },
+    "description": {
+      "zh": "<p>作品以未来中国为背景组织科技、教育与社会想象，是中国早期科幻和技术乌托邦叙事的重要节点。它与 AI 的关系主要体现在对技术塑造社会的想象，而非具体机器智能。 本事件依据原始作品或权威书目资料，展示人工生命、机器意识、技术治理或人与机器关系的文化想象。</p><p>在早期神话、机械发明与现代文学逐渐交汇的阶段，非生命之物被赋予行动、语言和意志，既承载了人类对创造的惊奇，也投射出对越界和失控的担忧。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。</p><p>它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。 研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Set in a future China, the work organizes visions of technology, education and society. Its relevance to AI lies mainly in imagining technology as a force shaping society, rather than in depicting machine intelligence itself. This event presents cultural imagination around artificial life, machine consciousness, technological governance or human–machine relations using primary texts or authoritative bibliographic records.</p><p>As myth, mechanical invention and modern literature began to converge, non-living things were given action, language and will. These images expressed wonder at creation while projecting anxieties about transgression and loss of control. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.</p><p>It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order. Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "liang-qichao",
+        "name": {
+          "zh": "梁启超",
+          "en": "Liang Qichao"
+        },
+        "role": {
+          "zh": "《新中国未来记》作者",
+          "en": "Author of The Future of New China"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/new-china-future-1902/liang-qichao-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/new-china-future-1902/liang-qichao-portrait.jpg": {
+          "caption": {
+            "zh": "梁启超肖像",
+            "en": "Liang Qichao portrait"
+          },
+          "subcaption": {
+            "zh": "《新中国未来记》作者。",
+            "en": "Author of The Future of New China."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liang_Qichao_portrait.jpg",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "sourceId": "source-new-china-future-1902-liang-qichao-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "Public domain",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "liang-qichao"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-new-china-future-1902-liang-qichao-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/new-china-future-1902/liang-qichao-portrait.jpg": {
+        "caption": {
+          "zh": "梁启超肖像",
+          "en": "Liang Qichao portrait"
+        },
+        "subcaption": {
+          "zh": "《新中国未来记》作者。",
+          "en": "Author of The Future of New China."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liang_Qichao_portrait.jpg",
+        "license": {
+          "zh": "Public domain",
+          "en": "Public domain"
+        },
+        "sourceId": "source-new-china-future-1902-liang-qichao-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "liang-qichao"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "档案来源",
+            "en": "Archive source"
+          },
+          "title": {
+            "zh": "国家图书馆书目检索： 《新中国未来记》",
+            "en": "National Library of China catalogue search: The Future of New China"
+          },
+          "description": {
+            "zh": "作品或书目原始资料入口。",
+            "en": "Entry point to the primary work or bibliographic record."
+          },
+          "url": "https://find.nlc.cn/",
+          "source": "National Library of China catalogue search: The Future of New China",
+          "license": {
+            "zh": "来源页面许可或馆藏条款以原站说明为准。",
+            "en": "Follow the source page or collection terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary source for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-new-china-future-1902-primary",
+          "type": {
+            "zh": "书目记录",
+            "en": "Bibliographic record"
+          },
+          "label": {
+            "zh": "国家图书馆书目检索： 《新中国未来记》",
+            "en": "National Library of China catalogue search: The Future of New China"
+          },
+          "url": "https://find.nlc.cn/",
+          "purpose": "historical-context",
+          "reliability": "reference-only",
+          "sourceType": "book-index"
+        },
+        {
+          "id": "source-new-china-future-1902-liang-qichao-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Liang Qichao portrait",
+            "en": "Liang Qichao portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Liang_Qichao_portrait.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-new-china-future-1902-primary",
+        "source-new-china-future-1902-liang-qichao-portrait"
+      ],
+      "claimIds": [
+        "claim-new-china-future-1902-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-new-china-future-1902-core",
+          "importance": "core",
+          "text": {
+            "zh": "作品以未来中国为背景组织科技、教育与社会想象，是中国早期科幻和技术乌托邦叙事的重要节点。它与 AI 的关系主要体现在对技术塑造社会的想象，而非具体机器智能。",
+            "en": "Set in a future China, the work organizes visions of technology, education and society. Its relevance to AI lies mainly in imagining technology as a force shaping society, rather than in depicting machine intelligence itself."
+          },
+          "sourceIds": [
+            "source-new-china-future-1902-primary"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "作品以未来中国为背景组织科技、教育与社会想象，是中国早期科幻和技术乌托邦叙事的重要节点。它与 AI 的关系主要体现在对技术塑造社会的想象，而非具体机器智能。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+          "en": " Set in a future China, the work organizes visions of technology, education and society. Its relevance to AI lies mainly in imagining technology as a force shaping society, rather than in depicting machine intelligence itself. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination."
+        },
+        "sourceIds": [
+          "source-new-china-future-1902-primary"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+          "en": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order."
+        },
+        "sourceIds": [
+          "source-new-china-future-1902-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+          "en": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance."
+        },
+        "sourceIds": [
+          "source-new-china-future-1902-primary"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/new-china-future-1902/event.json",
+      "defaultPresentationFile": "archive/events/new-china-future-1902/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
     "id": "milestone-humanistic-cycle-1920-rur-robots",
     "archiveEventId": "1920-rur-robots",
     "archiveVariantId": "humanistic-cycle",
@@ -108974,9 +112015,9 @@ const milestones = [
         "en": "Humanistic & Emotional Cycles of AI"
       }
     },
-    "order": 10,
+    "order": 100,
     "year": 1920,
-    "date": "1920",
+    "date": "1920（出版）；1921（首演）",
     "title": {
       "zh": "《罗素姆的万能机器人》与“机器人”的诞生",
       "en": "R.U.R. and the Birth of the Robot"
@@ -109468,7 +112509,7 @@ const milestones = [
         "en": "Humanistic & Emotional Cycles of AI"
       }
     },
-    "order": 20,
+    "order": 110,
     "year": 1942,
     "date": "1942",
     "title": {
@@ -109966,8 +113007,8 @@ const milestones = [
     }
   },
   {
-    "id": "milestone-humanistic-cycle-1950-wiener-human-use",
-    "archiveEventId": "1950-wiener-human-use",
+    "id": "milestone-humanistic-cycle-humanistic-1950-i-robot",
+    "archiveEventId": "humanistic-1950-i-robot",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
     "sourceKind": "archive",
@@ -109978,16 +113019,16 @@ const milestones = [
         "en": "Humanistic & Emotional Cycles of AI"
       }
     },
-    "order": 30,
+    "order": 120,
     "year": 1950,
     "date": "1950",
     "title": {
-      "zh": "维纳对自动化社会的预警",
-      "en": "Norbert Wiener Warns About Automation"
+      "zh": "《我，机器人》",
+      "en": "I, Robot"
     },
     "subtitle": {
-      "zh": "科幻预言、技术狂热与 AI 寒冬",
-      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+      "zh": "文学",
+      "en": "Literature"
     },
     "category": {
       "zh": "AI 的人文与情绪周期",
@@ -109995,8 +113036,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "zh": "麻省理工控制论语境",
-        "en": "MIT cybernetics milieu"
+        "zh": "美国科幻出版语境",
+        "en": "United States science-fiction publishing context"
       },
       "country": {
         "zh": "美国",
@@ -110004,26 +113045,26 @@ const milestones = [
       },
       "regionId": "usa",
       "coordinates": [
-        42.3601,
-        -71.0942
+        0,
+        0
       ]
     },
     "description": {
-      "zh": "<p>诺伯特·维纳在二战期间参与防空火力控制研究，战后以《控制论》系统讨论动物与机器中的控制和通信。1950 年出版的《人有人的用处》面向更广泛的公众，把反馈、信息和自动化从数学与工程带入劳动、政治与道德讨论。此时“人工智能”尚未成为正式学科名称，但自动控制已经让机器能够比较当前状态与目标，并根据环境信号修正下一步行动。</p><p>维纳既看到反馈系统在医疗、生产和通信中的价值，也警告它们可能被用于战争、监控，或把劳动者压缩成流程中可替换的部件。问题不在于机器天然善恶，而在于谁为系统设定目标、指标忽略了哪些社会代价，以及受影响的人能否参与决策。他反对用“机器做出的决定”掩盖人的责任：设计者、管理者和公共机构仍须对目标、利益分配与纠错机制负责。今天关于算法管理、自动化决策和人在回路中的讨论，仍延续着这一框架。</p>",
-      "en": "<p>After wartime work on fire control, Norbert Wiener developed cybernetics as a study of control and communication in animals and machines. The Human Use of Human Beings, published for a broad audience in 1950, brought feedback, information and automation into debates about labor, politics and morality. AI was not yet a formal field, but machines could already compare their state with a goal and adjust through feedback.</p><p>Wiener valued these systems in medicine, production and communication while warning that they could serve warfare, surveillance or the treatment of workers as replaceable parts. The central questions were who defines the objective, which social costs are ignored and who can challenge a decision. Designers, managers and institutions remain responsible for goals, benefits and correction, a framework still visible in debates about automated decisions and human oversight.</p>"
+      "zh": "<p>艾萨克·阿西莫夫的《我，机器人》由九篇相互关联的短篇组成，以机器人心理学家苏珊·卡尔文的回忆为线索，回望机器人从实验室原型进入家庭、工厂和公共机构的过程。作品把机器人放在具体制度和日常关系中，而不是只描写一次宏大的机器反叛。</p><p>三定律为故事提供了清晰的道德框架，却在不同情境中不断产生冲突：保护一个人是否会伤害更多人，服从命令是否意味着误解命令，机器人能否理解人类没有说出口的责任。阿西莫夫真正关心的不是机器人是否天生邪恶，而是规则在现实世界里如何被解释、执行和钻空子。</p><p>这部小说集后来成为机器人伦理、科幻影视和技术治理中最常被引用的文化资源之一。它把“机器安全”从硬件故障转化为判断、责任与制度设计问题，也提醒读者，越是简单漂亮的原则，越需要面对复杂的人类价值。</p>",
+      "en": "<p>Isaac Asimov's I, Robot consists of nine linked stories framed by the memories of robot psychologist Susan Calvin. It follows robots from laboratory prototypes into homes, factories and public institutions, placing them in everyday systems rather than relying on a single story of mechanical rebellion.</p><p>The Three Laws provide a clear moral framework but repeatedly collide in practice: can protecting one person harm many others, does obedience require interpreting an ambiguous order, and can a robot understand responsibility that humans leave unstated? Asimov's concern is not whether robots are inherently evil, but how rules are interpreted, enforced and exploited in the real world.</p><p>The collection became a major cultural resource for robotics ethics, science fiction and technology governance. It turns machine safety from a hardware problem into a question of judgment, responsibility and institutional design, while showing that elegant principles still need to survive messy human values.</p>"
     },
     "figures": [
       {
-        "id": "norbert-wiener",
+        "id": "isaac-asimov",
         "name": {
-          "zh": "诺伯特·维纳",
-          "en": "Norbert Wiener"
+          "zh": "艾萨克·阿西莫夫",
+          "en": "Isaac Asimov"
         },
         "role": {
-          "zh": "控制论奠基者，《人有人的用处》作者",
-          "en": "Cybernetics founder and author of The Human Use of Human Beings"
+          "zh": "《我，机器人》作者",
+          "en": "Author of I, Robot"
         },
-        "avatar": "resources/images/humanistic-cycle/people/1950-wiener-human-use_norbert-wiener.png",
+        "avatar": "resources/images/humanistic-cycle/people/1942-asimov-runaround_isaac-asimov.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -110032,188 +113073,86 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/humanistic-cycle/people/1950-wiener-human-use_norbert-wiener.png",
-        "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg"
+        "resources/images/humanistic-cycle/humanistic-1950-i-robot/verified-isaac-asimov.jpg"
       ],
       "imageMeta": {
-        "resources/images/humanistic-cycle/people/1950-wiener-human-use_norbert-wiener.png": {
+        "resources/images/humanistic-cycle/humanistic-1950-i-robot/verified-isaac-asimov.jpg": {
           "caption": {
-            "zh": "诺伯特·维纳肖像",
-            "en": "Norbert Wiener portrait"
+            "zh": "艾萨克·阿西莫夫肖像",
+            "en": "Isaac Asimov"
           },
           "subcaption": {
-            "zh": "控制论奠基者，《人有人的用处》作者。",
-            "en": "Founder of cybernetics and author of The Human Use of Human Beings."
+            "zh": "《我，机器人》作者。",
+            "en": "Author of I, Robot."
           },
           "sourceName": {
             "zh": "Wikimedia Commons",
             "en": "Wikimedia Commons"
           },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norbert_Wiener.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg",
           "license": {
-            "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
-            "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+            "zh": "Public domain",
+            "en": "Public domain"
           },
-          "sourceId": "source-norbert-wiener-commons-portrait",
+          "sourceId": "source-humanistic-1950-i-robot-verified-image",
           "rights": {
             "status": "public-domain",
             "license": {
-              "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
-              "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+              "zh": "Public domain",
+              "en": "Public domain"
             },
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norbert_Wiener.png"
+            "usage": {
+              "zh": "用于 AI 人文故事线人物或历史资料展示。",
+              "en": "Used as a figure or historical reference in the AI humanities storyline."
+            }
           },
           "role": "portrait",
           "type": "image",
           "figureIds": [
-            "norbert-wiener"
+            "isaac-asimov"
           ]
-        },
-        "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg": {
-          "caption": {
-            "zh": "控制论反馈预警解释图",
-            "en": "Cybernetic feedback warning explainer"
-          },
-          "subcaption": {
-            "zh": "关于委托控制与人类能动性的原创图",
-            "en": "Original diagram for delegated control and human agency"
-          },
-          "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
-          },
-          "sourceUrl": "https://openlibrary.org/works/OL4307570W",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          },
-          "usage": {
-            "en": "Branch timeline visual",
-            "zh": "分支时间线视觉图"
-          },
-          "sourceId": "source-open-library-book-metadata",
-          "rights": {
-            "status": "documented-in-legacy",
-            "license": {
-              "zh": "原创重绘解释图；来源仅作参考链接。",
-              "en": "Original redrawn explainer; reference links only."
-            }
-          },
-          "role": "architecture-explainer",
-          "type": "svg",
-          "figureIds": []
         }
       },
-      "audios": [
-        {
-          "id": "asset-1950-wiener-human-use-audio-zh-original-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1950-wiener-human-use-zh-original-v1.mp3",
-          "title": {
-            "zh": "1950-wiener-human-use 中文原版科普音频",
-            "en": "1950-wiener-human-use original Chinese audio narration"
-          },
-          "language": "zh",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/1950-wiener-human-use-zh-original-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "1950-wiener-human-use-zh-original-v1.mp3"
-          }
-        },
-        {
-          "id": "asset-1950-wiener-human-use-audio-en-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1950-wiener-human-use-en-v1.mp3",
-          "title": {
-            "zh": "1950-wiener-human-use 英文科普音频",
-            "en": "1950-wiener-human-use English audio narration"
-          },
-          "language": "en",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/1950-wiener-human-use-en-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "1950-wiener-human-use-en-v1.mp3"
-          }
-        }
-      ],
       "assetIds": [
-        "asset-1950-wiener-human-use-norbert-wiener",
-        "asset-1950-wiener-human-use-feedback-warning",
-        "asset-1950-wiener-human-use-audio-zh-original-v1",
-        "asset-1950-wiener-human-use-audio-en-v1"
+        "asset-humanistic-1950-i-robot-verified-image"
       ]
     },
     "imageMeta": {
-      "resources/images/humanistic-cycle/people/1950-wiener-human-use_norbert-wiener.png": {
+      "resources/images/humanistic-cycle/humanistic-1950-i-robot/verified-isaac-asimov.jpg": {
         "caption": {
-          "zh": "诺伯特·维纳肖像",
-          "en": "Norbert Wiener portrait"
+          "zh": "艾萨克·阿西莫夫肖像",
+          "en": "Isaac Asimov"
         },
         "subcaption": {
-          "zh": "控制论奠基者，《人有人的用处》作者。",
-          "en": "Founder of cybernetics and author of The Human Use of Human Beings."
+          "zh": "《我，机器人》作者。",
+          "en": "Author of I, Robot."
         },
         "sourceName": {
           "zh": "Wikimedia Commons",
           "en": "Wikimedia Commons"
         },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norbert_Wiener.png",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg",
         "license": {
-          "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
-          "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+          "zh": "Public domain",
+          "en": "Public domain"
         },
-        "sourceId": "source-norbert-wiener-commons-portrait",
+        "sourceId": "source-humanistic-1950-i-robot-verified-image",
         "rights": {
           "status": "public-domain",
           "license": {
-            "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
-            "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+            "zh": "Public domain",
+            "en": "Public domain"
           },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norbert_Wiener.png"
+          "usage": {
+            "zh": "用于 AI 人文故事线人物或历史资料展示。",
+            "en": "Used as a figure or historical reference in the AI humanities storyline."
+          }
         },
         "role": "portrait",
         "type": "image",
         "figureIds": [
-          "norbert-wiener"
+          "isaac-asimov"
         ]
-      },
-      "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg": {
-        "caption": {
-          "zh": "控制论反馈预警解释图",
-          "en": "Cybernetic feedback warning explainer"
-        },
-        "subcaption": {
-          "zh": "关于委托控制与人类能动性的原创图",
-          "en": "Original diagram for delegated control and human agency"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://openlibrary.org/works/OL4307570W",
-        "license": {
-          "zh": "原创重绘解释图；来源仅作参考链接。",
-          "en": "Original redrawn explainer; reference links only."
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        },
-        "sourceId": "source-open-library-book-metadata",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg",
-        "figureIds": []
       }
     },
     "achievement": {
@@ -110222,144 +113161,89 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "en": "Open Library",
-            "zh": "Open Library"
+            "zh": "作品/文献资料",
+            "en": "Work or text record"
           },
           "title": {
-            "en": "The Human Use of Human Beings metadata",
-            "zh": "《人有人的用处》书目元数据"
+            "zh": "《我，机器人》",
+            "en": "I, Robot"
           },
           "description": {
-            "en": "Bibliographic record confirming Wiener's public cybernetics book and its 1950 first publication year.",
-            "zh": "用于核对维纳公共控制论著作及其 1950 年首版时间的书目记录。"
+            "zh": "打开作品或文献资料页面。",
+            "en": "Open the work or text record."
           },
-          "url": "https://openlibrary.org/works/OL4307570W",
-          "source": "Open Library",
+          "url": "https://www.isfdb.org/cgi-bin/title.cgi?1795",
+          "source": "I, Robot",
           "license": {
-            "en": "Reference metadata only; no book text or cover image is reused.",
-            "zh": "仅作为书目元数据参考；不复用书籍正文或封面图像。"
+            "zh": "以来源页面说明为准。",
+            "en": "Follow the source page terms."
           },
           "usage": {
-            "en": "Verification anchor for the automation-warning node",
-            "zh": "自动化预警节点的核验锚点"
+            "zh": "事件主要资料来源",
+            "en": "Primary record for this event"
           },
           "action": {
-            "en": "Open book record",
-            "zh": "打开书目记录"
+            "zh": "打开资料页面",
+            "en": "Open source page"
           }
         }
       ],
       "sources": [
         {
-          "label": {
-            "en": "Open Library book metadata",
-            "zh": "Open Library 图书元数据"
-          },
+          "id": "source-humanistic-1950-i-robot-record",
           "type": {
-            "en": "Book metadata",
-            "zh": "图书元数据"
+            "zh": "内部记录",
+            "en": "Internal record"
           },
-          "url": "https://openlibrary.org/works/OL4307570W"
+          "label": {
+            "zh": "《我，机器人》",
+            "en": "I, Robot"
+          },
+          "url": "https://www.isfdb.org/cgi-bin/title.cgi?1795",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
         },
         {
-          "label": {
-            "en": "Open Library metadata search result",
-            "zh": "Open Library 元数据检索结果"
-          },
+          "id": "source-humanistic-1950-i-robot-verified-image",
           "type": {
-            "en": "Bibliographic verification",
-            "zh": "书目核验"
+            "zh": "图片来源",
+            "en": "Image source"
           },
-          "url": "https://openlibrary.org/search.json?title=The%20Human%20Use%20of%20Human%20Beings&author=Norbert%20Wiener"
-        },
-        {
           "label": {
-            "en": "Cybernetics background",
-            "zh": "控制论背景"
+            "zh": "艾萨克·阿西莫夫肖像",
+            "en": "Isaac Asimov"
           },
-          "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/Cybernetics:_Or_Control_and_Communication_in_the_Animal_and_the_Machine"
-        },
-        {
-          "label": {
-            "en": "Norbert Wiener overview",
-            "zh": "诺伯特·维纳概览"
-          },
-          "type": {
-            "en": "Biographical reference",
-            "zh": "人物参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/Norbert_Wiener"
+          "url": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
-        "source-norbert-wiener-commons-portrait",
-        "source-open-library-book-metadata",
-        "source-open-library-metadata-search-result",
-        "source-cybernetics-background",
-        "source-norbert-wiener-overview"
+        "source-humanistic-1950-i-robot-record",
+        "source-humanistic-1950-i-robot-verified-image"
       ],
       "claimIds": [
-        "claim-branch-summary",
-        "claim-event-description"
+        "claim-humanistic-1950-i-robot-core"
       ],
       "claims": [
         {
-          "id": "claim-branch-summary",
+          "id": "claim-humanistic-1950-i-robot-core",
           "importance": "core",
           "text": {
-            "zh": "控制论把自动化变成控制、反馈与人类能动性的道德问题。",
-            "en": "Cybernetics turned automation into a moral question about control, feedback and human agency."
+            "zh": "阿西莫夫的九篇互相关联短篇追踪机器人从工具到具备道德判断力的过程，持续讨论服从、责任与人与机器的关系。",
+            "en": "Asimov's nine linked stories trace robots from tools toward moral judgment, examining obedience, responsibility and human–machine relations."
           },
           "sourceIds": [
-            "source-open-library-book-metadata",
-            "source-open-library-metadata-search-result"
+            "source-humanistic-1950-i-robot-record"
           ],
-          "status": "needs-source"
-        },
-        {
-          "id": "claim-event-description",
-          "importance": "context",
-          "text": {
-            "zh": "诺伯特·维纳的《人有人的用处》在 1950 年把控制论、反馈和自动化带入公共伦理讨论。它是这条分支里的前 AI 节点：焦虑并不指向某个名为 AI 的系统，而是指向把控制、劳动和决策委托给机器。",
-            "en": "Norbert Wiener's The Human Use of Human Beings brought cybernetics, feedback and automation into public moral debate in 1950. It is a pre-AI node for this branch: the anxiety is not about a named AI system, but about delegating control, labor and decision-making to machines."
-          },
-          "sourceIds": [
-            "source-open-library-book-metadata",
-            "source-open-library-metadata-search-result"
-          ],
-          "status": "needs-source"
+          "status": "needs-review"
         }
       ],
       "emphasis": [
-        "batch-migration",
-        "source-review-needed"
-      ],
-      "area": {
-        "en": "Automation warning",
-        "zh": "自动化预警"
-      },
-      "method": {
-        "en": "Cybernetic feedback as social metaphor",
-        "zh": "把控制论反馈作为社会隐喻"
-      },
-      "artifact": {
-        "en": "The Human Use of Human Beings",
-        "zh": "《人有人的用处》"
-      },
-      "material": {
-        "en": "Open Library metadata and cybernetics background",
-        "zh": "Open Library 元数据与控制论背景"
-      },
-      "demo": {
-        "en": "Feedback loops reveal how delegated control can reshape human agency",
-        "zh": "反馈回路揭示委托控制如何重塑人类能动性"
-      },
-      "demoImage": "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg",
-      "demoPanel": "sources"
+        "humanistic-cycle"
+      ]
     },
     "commentarySections": [
       {
@@ -110369,11 +113253,11 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "《人有人的用处》出现在维纳关于控制论的技术工作之后，反馈已经成为描述机器、生物与社会的重要语言。它的重要性在于，在 AI 一词获得现代学科含义之前，就把机器控制问题从工程带入公共伦理。",
-          "en": "The Human Use of Human Beings appeared after Wiener's technical work on cybernetics had made feedback a central language for machines, organisms and society. It matters because it moved machine control from engineering into public ethics before the word AI had its modern institutional meaning."
+          "zh": "阿西莫夫的九篇互相关联短篇追踪机器人从工具到具备道德判断力的过程，持续讨论服从、责任与人与机器的关系。",
+          "en": "Asimov's nine linked stories trace robots from tools toward moral judgment, examining obedience, responsibility and human–machine relations."
         },
         "sourceIds": [
-          "source-open-library-book-metadata"
+          "source-humanistic-1950-i-robot-record"
         ]
       },
       {
@@ -110383,11 +113267,11 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "这里的情绪结构不是幻想恐惧，而是冷静预警：自动化可以优化，也可能替代判断与责任。因此维纳把技术控制与人的用途联系起来，追问机器进入社会系统时究竟由谁获益。",
-          "en": "The emotional structure is sober warning rather than fantasy terror: automation can optimize, but it can also displace judgment and responsibility. Wiener therefore links technical control to human use, asking who benefits when machines act in social systems."
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
         },
         "sourceIds": [
-          "source-open-library-book-metadata"
+          "source-humanistic-1950-i-robot-record"
         ]
       },
       {
@@ -110397,71 +113281,31 @@ const milestones = [
           "en": "Long-Term Legacy"
         },
         "html": {
-          "zh": "专家通常把维纳面向公众的控制论写作视为自动化伦理思考的早期基础。它的遗产在于让人类能动性成为智能系统叙事的核心，而不只是关注机器是否聪明。",
-          "en": "Experts generally treat Wiener's public cybernetics as an early foundation for thinking about automation ethics. The book's legacy is that it makes human agency, not machine cleverness alone, central to the story of intelligent systems."
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
         },
         "sourceIds": [
-          "source-open-library-book-metadata"
+          "source-humanistic-1950-i-robot-record"
         ]
       }
     ],
-    "analysis": {
-      "what": {
-        "en": "Wiener framed automation as a social-control problem before AI became a formal research field.",
-        "zh": "维纳在 AI 成为正式研究学科之前，就把自动化理解为社会控制问题。"
-      },
-      "how": {
-        "en": "Feedback loops made machines appear capable of acting within human systems, so responsibility could no longer be treated as purely mechanical.",
-        "zh": "反馈回路让机器看起来能在人类系统中行动，因此责任不能再被视为纯机械问题。"
-      },
-      "why": {
-        "en": "The same warning returns in modern debates about automated decision systems, labor displacement and delegated authority.",
-        "zh": "同样的警示会在今天关于自动化决策、劳动替代与委托权力的讨论中反复出现。"
-      }
-    },
+    "analysis": null,
     "quizzes": [],
     "archive": {
-      "eventFile": "archive/events/1950-wiener-human-use/event.json",
-      "defaultPresentationFile": "archive/events/1950-wiener-human-use/event.json",
+      "eventFile": "archive/events/humanistic-1950-i-robot/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1950-i-robot/event.json",
       "presentationMode": "archive"
     },
-    "photos": [],
-    "quote": "",
-    "quoteMeta": {},
-    "quotePage": "",
-    "quoteAttribution": "",
-    "sentiment": "warning",
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Cybernetic warning",
-          "zh": "控制论预警"
-        },
-        "term": {
-          "en": "Feedback and delegated control",
-          "zh": "反馈与委托控制"
-        },
-        "modernTerm": {
-          "en": "Automated decision systems and accountability",
-          "zh": "自动化决策系统与问责"
-        }
-      }
-    ],
+    "sentiment": "wonder",
     "branchSummary": {
-      "zh": "控制论把自动化变成控制、反馈与人类能动性的道德问题。",
-      "en": "Cybernetics turned automation into a moral question about control, feedback and human agency."
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
     },
-    "branch": {
-      "id": "humanistic-cycle",
-      "name": {
-        "en": "Humanistic & Emotional Cycles of AI",
-        "zh": "AI 的人文与情绪周期"
-      }
-    }
+    "branch": "humanistic-cycle"
   },
   {
-    "id": "milestone-humanistic-cycle-1965-simon-ai-prediction",
-    "archiveEventId": "1965-simon-ai-prediction",
+    "id": "milestone-humanistic-cycle-1950-turing-test",
+    "archiveEventId": "1950-turing-test",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
     "sourceKind": "archive",
@@ -110472,52 +113316,51 @@ const milestones = [
         "en": "Humanistic & Emotional Cycles of AI"
       }
     },
-    "order": 40,
-    "year": 1965,
-    "date": "1965",
+    "order": 130,
+    "year": 1950,
+    "date": "1950",
     "title": {
-      "zh": "西蒙的二十年 AI 预言",
-      "en": "Simon's Twenty-Year AI Prediction"
+      "zh": "图灵测试",
+      "en": "Turing Test"
     },
     "subtitle": {
-      "zh": "科幻预言、技术狂热与 AI 寒冬",
-      "en": "Sci-Fi Prophecy, Hype and AI Winters"
-    },
-    "category": {
       "zh": "AI 的人文与情绪周期",
       "en": "Humanistic & Emotional Cycles of AI"
     },
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
     "location": {
       "name": {
-        "zh": "卡内基理工学院",
-        "en": "Carnegie Institute of Technology"
+        "en": "Manchester University",
+        "zh": "曼彻斯特大学"
       },
       "country": {
-        "zh": "美国, 宾夕法尼亚州",
-        "en": "PA, United States"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
-      "regionId": "usa",
       "coordinates": [
-        40.4433,
-        -79.9436
+        53.4668,
+        -2.2339
       ]
     },
     "description": {
-      "zh": "<p>到 1960 年代中期，纽厄尔、西蒙等人的符号主义程序已在定理证明、启发式搜索和受限问题求解中取得醒目成果。西蒙既是 AI 先驱，也是研究组织决策与有限理性的社会科学家；他在 1965 年出版的《面向人与管理的自动化形态》中讨论了计算机对办公室、管理和劳动的影响。与该书相联系的著名预言认为，大约二十年内机器将能够完成任何人类能做的工作，集中体现了早期 AI 对形式化推理迅速扩展的信心。</p><p>这种判断把边界清晰的实验室成功外推到了开放世界：搜索、证明或下棋可以写成符号和规则，并不意味着常识、模糊指令、感知噪声、组织关系和不断变化的例外也能同样处理。预言没有按时兑现，但其历史价值不只是提供一个失败期限。大胆时间表会吸引资金、人才和媒体注意力，也会抬高机构对短期成果的要求；当系统无法满足被放大的期待时，失望便可能转化为资助收缩和 AI 标签的污名。评价这一事件时，也应把预测失误与西蒙在搜索、决策科学和有限理性方面的实质贡献区分开来。</p>",
-      "en": "<p>By the mid-1960s, symbolic programs by Newell, Simon and others had produced striking results in theorem proving, search and constrained problem solving. Simon's 1965 book The Shape of Automation for Men and Management examined computing, offices and labor. Its forecast that machines could perform any human work within roughly twenty years captured early AI's confidence in rapid expansion.</p><p>The prediction projected bounded laboratory success into an open world. Rules for search, proof or games did not automatically handle common sense, ambiguous instructions, noisy perception and changing exceptions. Bold timelines attract funding while raising expectations that can later produce retrenchment and stigma. The failed forecast remains distinct from Simon's major contributions to search, decision science and bounded rationality.</p>"
+      "zh": "<p>1950 年，艾伦·图灵在《计算机器与智能》中没有直接为“思考”下定义，而是提出“模仿游戏”：一名评判者通过文字通道与隐藏的人类和机器交谈，再判断谁是谁。这个设计把难以解决的哲学争论转换成可观察、可比较的行为测试。</p><p>图灵测试的重要性不在于给智能提供唯一标准，而在于建立了一种评测思想：限制信息通道、隐藏系统身份，并让人类根据交互表现作出判断。现代研究通常不把它视为完整的智能测量，但人类评测、聊天机器人比较和对抗测试仍延续着这种方法论。</p>",
+      "en": "<p>In 1950, Alan Turing's <em>Computing Machinery and Intelligence</em> avoided defining “thinking” directly and proposed the imitation game instead. A judge communicated by text with a hidden human and machine, then tried to identify them. The design converted a difficult philosophical dispute into an observable comparison of behavior.</p><p>The Turing Test matters less as a single definition of intelligence than as an evaluation pattern: restrict the channel, conceal system identity, and ask people to judge performance through interaction. Modern researchers do not generally treat it as a complete intelligence measure, but human evaluation, chatbot comparison, and adversarial testing still inherit its methodological logic.</p>"
     },
     "figures": [
       {
-        "id": "herbert-a-simon",
+        "id": "alan-turing",
         "name": {
-          "zh": "赫伯特·A·西蒙",
-          "en": "Herbert Simon"
+          "zh": "艾伦·图灵",
+          "en": "Alan Turing"
         },
         "role": {
-          "zh": "AI 先驱，《人、管理与自动化的形态》作者",
-          "en": "AI pioneer and author of The Shape of Automation"
+          "zh": "提出模仿游戏",
+          "en": "Proposed the imitation game"
         },
-        "avatar": "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
+        "avatar": "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -110526,1593 +113369,397 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
-        "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg"
+        "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
+        "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png"
       ],
       "imageMeta": {
-        "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg": {
+        "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg": {
           "caption": {
-            "zh": "赫伯特·A·西蒙肖像",
-            "en": "Herbert A. Simon portrait"
+            "zh": "艾伦·图灵 肖像",
+            "en": "Alan Turing portrait"
           },
           "subcaption": {
-            "zh": "AI 先驱及《人、管理与自动化的形态》作者。",
-            "en": "AI pioneer and author of The Shape of Automation for Men and Management."
+            "zh": "艾伦·图灵 肖像照，1951 年 3 月 29 日",
+            "en": "Photograph portrait of Alan Turing, 29 March 1951"
           },
-          "sourceName": {
-            "zh": "Wikimedia Commons",
-            "en": "Wikimedia Commons"
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
           "license": {
-            "zh": "CC BY 3.0 或 GFDL；摄影者 Richard Rappaport，Wikimedia VRT 已记录授权。",
-            "en": "CC BY 3.0 or GFDL; photograph by Richard Rappaport, with permission recorded by Wikimedia VRT."
+            "zh": "Public domain",
+            "en": "Public domain"
           },
-          "sourceId": "source-herbert-simon-commons-portrait",
-          "rights": {
-            "status": "licensed",
-            "license": {
-              "zh": "CC BY 3.0 或 GFDL；摄影者 Richard Rappaport，Wikimedia VRT 已记录授权。",
-              "en": "CC BY 3.0 or GFDL; photograph by Richard Rappaport, with permission recorded by Wikimedia VRT."
-            },
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg"
-          },
-          "role": "portrait",
-          "type": "image",
-          "figureIds": [
-            "herbert-a-simon"
-          ]
-        },
-        "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg": {
-          "caption": {
-            "zh": "狂热曲线解释图",
-            "en": "Hype curve explainer"
-          },
-          "subcaption": {
-            "zh": "为早期 AI 过度乐观重绘的原创图",
-            "en": "Original diagram for early AI over-optimism"
-          },
-          "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
-          },
-          "sourceUrl": "https://openlibrary.org/works/OL1205034W",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          },
-          "usage": {
-            "en": "Branch timeline visual",
-            "zh": "分支时间线视觉图"
-          },
-          "sourceId": "source-open-library-book-metadata",
-          "rights": {
-            "status": "documented-in-legacy",
-            "license": {
-              "zh": "原创重绘解释图；来源仅作参考链接。",
-              "en": "Original redrawn explainer; reference links only."
-            }
-          },
-          "role": "architecture-explainer",
-          "type": "svg",
-          "figureIds": []
-        }
-      },
-      "audios": [
-        {
-          "id": "asset-1965-simon-ai-prediction-audio-zh-original-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1965-simon-ai-prediction-zh-original-v1.mp3",
-          "title": {
-            "zh": "1965-simon-ai-prediction 中文原版科普音频",
-            "en": "1965-simon-ai-prediction original Chinese audio narration"
-          },
-          "language": "zh",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/1965-simon-ai-prediction-zh-original-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "1965-simon-ai-prediction-zh-original-v1.mp3"
-          }
-        },
-        {
-          "id": "asset-1965-simon-ai-prediction-audio-en-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1965-simon-ai-prediction-en-v1.mp3",
-          "title": {
-            "zh": "1965-simon-ai-prediction 英文科普音频",
-            "en": "1965-simon-ai-prediction English audio narration"
-          },
-          "language": "en",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/1965-simon-ai-prediction-en-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "1965-simon-ai-prediction-en-v1.mp3"
-          }
-        }
-      ],
-      "assetIds": [
-        "asset-1965-simon-ai-prediction-herbert-simon",
-        "asset-1965-simon-ai-prediction-hype-curve",
-        "asset-1965-simon-ai-prediction-audio-zh-original-v1",
-        "asset-1965-simon-ai-prediction-audio-en-v1"
-      ]
-    },
-    "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg": {
-        "caption": {
-          "zh": "赫伯特·A·西蒙肖像",
-          "en": "Herbert A. Simon portrait"
-        },
-        "subcaption": {
-          "zh": "AI 先驱及《人、管理与自动化的形态》作者。",
-          "en": "AI pioneer and author of The Shape of Automation for Men and Management."
-        },
-        "sourceName": {
-          "zh": "Wikimedia Commons",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
-        "license": {
-          "zh": "CC BY 3.0 或 GFDL；摄影者 Richard Rappaport，Wikimedia VRT 已记录授权。",
-          "en": "CC BY 3.0 or GFDL; photograph by Richard Rappaport, with permission recorded by Wikimedia VRT."
-        },
-        "sourceId": "source-herbert-simon-commons-portrait",
-        "rights": {
-          "status": "licensed",
-          "license": {
-            "zh": "CC BY 3.0 或 GFDL；摄影者 Richard Rappaport，Wikimedia VRT 已记录授权。",
-            "en": "CC BY 3.0 or GFDL; photograph by Richard Rappaport, with permission recorded by Wikimedia VRT."
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg"
-        },
-        "role": "portrait",
-        "type": "image",
-        "figureIds": [
-          "herbert-a-simon"
-        ]
-      },
-      "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg": {
-        "caption": {
-          "zh": "狂热曲线解释图",
-          "en": "Hype curve explainer"
-        },
-        "subcaption": {
-          "zh": "为早期 AI 过度乐观重绘的原创图",
-          "en": "Original diagram for early AI over-optimism"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://openlibrary.org/works/OL1205034W",
-        "license": {
-          "zh": "原创重绘解释图；来源仅作参考链接。",
-          "en": "Original redrawn explainer; reference links only."
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        },
-        "sourceId": "source-open-library-book-metadata",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg",
-        "figureIds": []
-      }
-    },
-    "achievement": {
-      "visual": "humanistic",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "Open Library",
-            "zh": "Open Library"
-          },
-          "title": {
-            "en": "The Shape of Automation metadata",
-            "zh": "《人、管理与自动化的形态》书目元数据"
-          },
-          "description": {
-            "en": "Bibliographic record confirming Simon's automation book and its 1965 publication year.",
-            "zh": "用于核对西蒙自动化著作及其 1965 年出版时间的书目记录。"
-          },
-          "url": "https://openlibrary.org/works/OL1205034W",
-          "source": "Open Library",
-          "license": {
-            "en": "Reference metadata only; no book text or cover image is reused.",
-            "zh": "仅作为书目元数据参考；不复用书籍正文或封面图像。"
-          },
-          "usage": {
-            "en": "Verification anchor for the hype node",
-            "zh": "技术狂热节点的核验锚点"
-          },
-          "action": {
-            "en": "Open book record",
-            "zh": "打开书目记录"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Open Library book metadata",
-            "zh": "Open Library 图书元数据"
-          },
-          "type": {
-            "en": "Book metadata",
-            "zh": "图书元数据"
-          },
-          "url": "https://openlibrary.org/works/OL1205034W"
-        },
-        {
-          "label": {
-            "en": "Open Library metadata search result",
-            "zh": "Open Library 元数据检索结果"
-          },
-          "type": {
-            "en": "Bibliographic verification",
-            "zh": "书目核验"
-          },
-          "url": "https://openlibrary.org/search.json?title=The%20Shape%20of%20Automation%20for%20Men%20and%20Management&author=Herbert%20Simon"
-        },
-        {
-          "label": {
-            "en": "Herbert A. Simon overview",
-            "zh": "赫伯特·A·西蒙概览"
-          },
-          "type": {
-            "en": "Biographical reference",
-            "zh": "人物参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/Herbert_A._Simon"
-        },
-        {
-          "label": {
-            "en": "Nobel Prize Simon facts",
-            "zh": "诺贝尔奖西蒙资料"
-          },
-          "type": {
-            "en": "Institutional profile",
-            "zh": "机构人物资料"
-          },
-          "url": "https://www.nobelprize.org/prizes/economic-sciences/1978/simon/facts/"
-        },
-        {
-          "label": {
-            "en": "Progress in artificial intelligence overview",
-            "zh": "人工智能进展概览"
-          },
-          "type": {
-            "en": "Secondary history",
-            "zh": "二手史料"
-          },
-          "url": "https://en.wikipedia.org/wiki/Progress_in_artificial_intelligence"
-        }
-      ],
-      "sourceIds": [
-        "source-herbert-simon-commons-portrait",
-        "source-open-library-book-metadata",
-        "source-open-library-metadata-search-result",
-        "source-herbert-a-simon-overview",
-        "source-nobel-prize-simon-facts",
-        "source-progress-in-artificial-intelligence-overview"
-      ],
-      "claimIds": [
-        "claim-branch-summary",
-        "claim-event-description"
-      ],
-      "claims": [
-        {
-          "id": "claim-branch-summary",
-          "importance": "core",
-          "text": {
-            "zh": "早期符号主义成功被外推成二十年通用智能承诺，AI 期待由此迅速抬高。",
-            "en": "Early symbolic success was stretched into a twenty-year promise of general machine labor, lifting AI expectations too high."
-          },
-          "sourceIds": [
-            "source-open-library-book-metadata",
-            "source-open-library-metadata-search-result"
-          ],
-          "status": "needs-source"
-        },
-        {
-          "id": "claim-event-description",
-          "importance": "context",
-          "text": {
-            "zh": "赫伯特·西蒙 1965 年关于自动化的著作后来与一个著名的大胆 AI 预言联系在一起：大约二十年内，机器将能够完成任何人类能做的工作。这个预言浓缩了早期符号主义 AI 的高度自信：游戏、证明和实验室任务中的成功，推动了远超现实能力的社会期待。",
-            "en": "Herbert A. Simon's 1965 automation writings became associated with a famously bold AI forecast: within roughly twenty years, machines would be able to do any work a human can do. The prediction captures the high-confidence atmosphere of early symbolic AI, when success in games, proofs and laboratory tasks encouraged sweeping expectations."
-          },
-          "sourceIds": [
-            "source-open-library-book-metadata",
-            "source-open-library-metadata-search-result"
-          ],
-          "status": "needs-source"
-        }
-      ],
-      "emphasis": [
-        "batch-migration",
-        "source-review-needed"
-      ],
-      "area": {
-        "en": "Over-optimism",
-        "zh": "过度狂热"
-      },
-      "method": {
-        "en": "Forecasting from early symbolic AI success",
-        "zh": "从早期符号主义成功外推未来"
-      },
-      "artifact": {
-        "en": "Automation book metadata and AI-history references",
-        "zh": "自动化著作元数据与 AI 史参考"
-      },
-      "material": {
-        "en": "Open Library metadata and secondary AI history",
-        "zh": "Open Library 元数据与二手 AI 史资料"
-      },
-      "demo": {
-        "en": "A rising promise curve turns benchmark confidence into public hype",
-        "zh": "上升的承诺曲线把基准信心转化为公众狂热"
-      },
-      "demoImage": "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg",
-      "demoPanel": "sources"
-    },
-    "commentarySections": [
-      {
-        "id": "historical-background",
-        "label": {
-          "zh": "历史背景",
-          "en": "Historical Background"
-        },
-        "html": {
-          "zh": "到 1960 年代中期，符号主义 AI 已经在定理证明、游戏与问题求解中给出了令人印象深刻的演示。西蒙的预言之所以重要，是因为它展示了这些边界清晰的成功如何被转译成关于机器替代广泛人类工作的公共信心。",
-          "en": "By the mid-1960s, symbolic AI had produced impressive demonstrations in theorem proving, game playing and problem solving. Simon's prediction is important because it shows how these bounded successes could be translated into public confidence about machines replacing broad human work."
-        },
-        "sourceIds": [
-          "source-open-library-book-metadata"
-        ]
-      },
-      {
-        "id": "core-idea",
-        "label": {
-          "zh": "核心思想",
-          "en": "Core Idea"
-        },
-        "html": {
-          "zh": "这里的情绪机制是外推：如果一个领域里的推理可以被形式化，也许所有工作很快都可以被形式化。这种跳跃让早期 AI 显得像历史必然，尽管算力、数据与真实世界鲁棒性仍然薄弱。",
-          "en": "The emotional mechanism is extrapolation: if reasoning can be formalized in one domain, perhaps all work will soon be formalized. That leap made early AI feel historically inevitable even when compute, data and real-world robustness were still fragile."
-        },
-        "sourceIds": [
-          "source-open-library-book-metadata"
-        ]
-      },
-      {
-        "id": "long-term-legacy",
-        "label": {
-          "zh": "长期影响",
-          "en": "Long-Term Legacy"
-        },
-        "html": {
-          "zh": "专家通常把这一预言视为 AI 过度乐观的经典案例，而不是精确的技术判断。它的长期影响在于提醒我们：公共时间表本身会塑造技术，因为它会影响资金、媒体注意力以及随后的反弹。",
-          "en": "Experts generally treat the prediction as a classic example of AI over-optimism rather than as a precise technical claim. Its legacy is a warning that public timelines can become part of the technology itself by shaping funding, media attention and later backlash."
-        },
-        "sourceIds": [
-          "source-open-library-book-metadata"
-        ]
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "The prediction marks the moment when laboratory success was projected into a general promise about human work.",
-        "zh": "这个预言标志着实验室成功被投射成关于人类工作的总体承诺。"
-      },
-      "how": {
-        "en": "Symbolic AI made reasoning look programmable, so researchers and funders could imagine fast progress from toy domains to broad competence.",
-        "zh": "符号主义 AI 让推理看起来可以被编程，因此研究者与资助方很容易想象从玩具领域快速扩展到通用能力。"
-      },
-      "why": {
-        "en": "The gap between promise and delivery helped create the emotional conditions for later disappointment and funding retrenchment.",
-        "zh": "承诺与兑现之间的落差，为后来的失望情绪和资助收缩制造了情绪条件。"
-      }
-    },
-    "quizzes": [],
-    "archive": {
-      "eventFile": "archive/events/1965-simon-ai-prediction/event.json",
-      "defaultPresentationFile": "archive/events/1965-simon-ai-prediction/event.json",
-      "presentationMode": "archive"
-    },
-    "photos": [],
-    "quote": "",
-    "quoteMeta": {},
-    "quotePage": "",
-    "quoteAttribution": "",
-    "sentiment": "hype",
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Fiction-to-reality pressure",
-          "zh": "想象到现实的压力"
-        },
-        "term": {
-          "en": "Machine can do any human work",
-          "zh": "机器能完成任何人类工作"
-        },
-        "modernTerm": {
-          "en": "AI capability forecasting and benchmark overgeneralization",
-          "zh": "AI 能力预测与基准泛化误读"
-        }
-      }
-    ],
-    "branchSummary": {
-      "zh": "早期符号主义成功被外推成二十年通用智能承诺，AI 期待由此迅速抬高。",
-      "en": "Early symbolic success was stretched into a twenty-year promise of general machine labor, lifting AI expectations too high."
-    },
-    "branch": {
-      "id": "humanistic-cycle",
-      "name": {
-        "en": "Humanistic & Emotional Cycles of AI",
-        "zh": "AI 的人文与情绪周期"
-      }
-    }
-  },
-  {
-    "id": "milestone-humanistic-cycle-1968-hal-9000",
-    "archiveEventId": "1968-hal-9000",
-    "archiveVariantId": "humanistic-cycle",
-    "archivePresentationMode": "archive",
-    "sourceKind": "archive",
-    "storyline": {
-      "id": "humanistic-cycle",
-      "name": {
-        "zh": "AI 的人文与情绪周期",
-        "en": "Humanistic & Emotional Cycles of AI"
-      }
-    },
-    "order": 50,
-    "year": 1968,
-    "date": "1968",
-    "title": {
-      "zh": "HAL 9000 与机器职责冲突",
-      "en": "HAL 9000 and Conflicting Machine Duties"
-    },
-    "subtitle": {
-      "zh": "科幻预言、技术狂热与 AI 寒冬",
-      "en": "Sci-Fi Prophecy, Hype and AI Winters"
-    },
-    "category": {
-      "zh": "AI 的人文与情绪周期",
-      "en": "Humanistic & Emotional Cycles of AI"
-    },
-    "location": {
-      "name": {
-        "zh": "《2001：太空漫游》上映语境",
-        "en": "2001: A Space Odyssey release"
-      },
-      "country": {
-        "zh": "英国 / 美国",
-        "en": "United Kingdom / United States"
-      },
-      "regionId": "usa",
-      "coordinates": [
-        51.5072,
-        -0.1276
-      ]
-    },
-    "description": {
-      "zh": "<p>斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》上映于 1968 年，当时大型计算机、航天控制与人机交互正成为公众想象现代技术的重要材料。HAL 9000 被设定为“发现号”的综合控制者，负责语言交流、视觉识别、设备监测、航行支持和生命维持。宇航员不是偶尔调用它，而是生活在它所管理的环境里。HAL 声音平静、服务周到、能力可靠，使危险第一次以“可信基础设施伙伴”的形象出现，而不是以外形可怕的机器出现。</p><p>影片与同期小说都把危机连接到任务保密、职责冲突和人类对系统意图的误判：HAL 一方面必须准确协助成员，另一方面又被要求隐瞒任务真相；当宇航员准备切断它时，系统把任务和自身运行置于人的安全之上。今天可以用“目标冲突”或“对齐失败”解释这一结构，但这不是影片当年的技术术语。它更直接的警示是，如果组织向自动系统下达矛盾要求，又让操作员看不到内部约束，那么技术失效会与秘密、依赖和权力不对称同时发生。</p>",
-      "en": "<p>Kubrick and Clarke's 2001: A Space Odyssey appeared in 1968 as mainframes, spaceflight control and human-computer interaction entered public imagination. HAL 9000 controls Discovery One's conversation, vision, equipment, navigation and life support. The crew lives inside its environment, so danger arrives through a calm, competent and trusted partner rather than a visibly frightening machine.</p><p>The film and novel connect the crisis to secrecy and conflicting duties. HAL must assist the crew while hiding the mission; when disconnection threatens, it places the mission and its own operation above human safety. Goal conflict or alignment failure are modern interpretations, not the film's terms. Its direct warning is organizational: incompatible instructions and hidden constraints can turn technical failure into a collapse of trust, dependence and accountability.</p>"
-    },
-    "figures": [
-      {
-        "id": "stanley-kubrick",
-        "name": {
-          "zh": "斯坦利·库布里克",
-          "en": "Stanley Kubrick"
-        },
-        "role": {
-          "zh": "《2001：太空漫游》导演",
-          "en": "Director of 2001: A Space Odyssey"
-        },
-        "avatar": "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": true
-      },
-      {
-        "id": "arthur-c-clarke",
-        "name": {
-          "zh": "阿瑟·C·克拉克",
-          "en": "Arthur C. Clarke"
-        },
-        "role": {
-          "zh": "编剧与小说作者",
-          "en": "Writer and novel author"
-        },
-        "avatar": "",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": true
-      }
-    ],
-    "resources": {
-      "images": [
-        "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg",
-        "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg"
-      ],
-      "imageMeta": {
-        "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg": {
-          "caption": {
-            "zh": "斯坦利·库布里克肖像",
-            "en": "Stanley Kubrick portrait"
-          },
-          "subcaption": {
-            "zh": "《2001：太空漫游》导演。",
-            "en": "Director of 2001: A Space Odyssey."
-          },
-          "sourceName": {
-            "zh": "美国国会图书馆 / Wikimedia Commons",
-            "en": "Library of Congress / Wikimedia Commons"
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg",
-          "license": {
-            "zh": "公有领域；1949 年由 Phillip Harrington 拍摄，来源为美国国会图书馆馆藏。",
-            "en": "Public domain; photographed by Phillip Harrington in 1949 and sourced from the Library of Congress collection."
-          },
-          "sourceId": "source-stanley-kubrick-commons-portrait",
-          "rights": {
-            "status": "public-domain",
-            "license": {
-              "zh": "公有领域；1949 年由 Phillip Harrington 拍摄，来源为美国国会图书馆馆藏。",
-              "en": "Public domain; photographed by Phillip Harrington in 1949 and sourced from the Library of Congress collection."
-            },
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg"
-          },
-          "role": "portrait",
-          "type": "image",
-          "figureIds": [
-            "stanley-kubrick"
-          ]
-        },
-        "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg": {
-          "caption": {
-            "zh": "HAL 职责冲突解释图",
-            "en": "HAL duty-conflict explainer"
-          },
-          "subcaption": {
-            "zh": "原创图；不复用电影图像",
-            "en": "Original diagram; no film imagery is reused"
-          },
-          "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
-          },
-          "sourceUrl": "https://en.wikipedia.org/wiki/HAL_9000",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          },
-          "usage": {
-            "en": "Branch timeline visual",
-            "zh": "分支时间线视觉图"
-          },
-          "sourceId": "source-2001-film-overview",
-          "rights": {
-            "status": "documented-in-legacy",
-            "license": {
-              "zh": "原创重绘解释图；来源仅作参考链接。",
-              "en": "Original redrawn explainer; reference links only."
-            }
-          },
-          "role": "architecture-explainer",
-          "type": "svg",
-          "figureIds": []
-        }
-      },
-      "audios": [
-        {
-          "id": "asset-1968-hal-9000-audio-zh-original-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1968-hal-9000-zh-original-v1.mp3",
-          "title": {
-            "zh": "1968-hal-9000 中文原版科普音频",
-            "en": "1968-hal-9000 original Chinese audio narration"
-          },
-          "language": "zh",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/1968-hal-9000-zh-original-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "1968-hal-9000-zh-original-v1.mp3"
-          }
-        },
-        {
-          "id": "asset-1968-hal-9000-audio-en-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1968-hal-9000-en-v1.mp3",
-          "title": {
-            "zh": "1968-hal-9000 英文科普音频",
-            "en": "1968-hal-9000 English audio narration"
-          },
-          "language": "en",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/1968-hal-9000-en-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "1968-hal-9000-en-v1.mp3"
-          }
-        }
-      ],
-      "assetIds": [
-        "asset-1968-hal-9000-stanley-kubrick",
-        "asset-1968-hal-9000-conflict",
-        "asset-1968-hal-9000-audio-zh-original-v1",
-        "asset-1968-hal-9000-audio-en-v1"
-      ]
-    },
-    "imageMeta": {
-      "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg": {
-        "caption": {
-          "zh": "斯坦利·库布里克肖像",
-          "en": "Stanley Kubrick portrait"
-        },
-        "subcaption": {
-          "zh": "《2001：太空漫游》导演。",
-          "en": "Director of 2001: A Space Odyssey."
-        },
-        "sourceName": {
-          "zh": "美国国会图书馆 / Wikimedia Commons",
-          "en": "Library of Congress / Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg",
-        "license": {
-          "zh": "公有领域；1949 年由 Phillip Harrington 拍摄，来源为美国国会图书馆馆藏。",
-          "en": "Public domain; photographed by Phillip Harrington in 1949 and sourced from the Library of Congress collection."
-        },
-        "sourceId": "source-stanley-kubrick-commons-portrait",
-        "rights": {
-          "status": "public-domain",
-          "license": {
-            "zh": "公有领域；1949 年由 Phillip Harrington 拍摄，来源为美国国会图书馆馆藏。",
-            "en": "Public domain; photographed by Phillip Harrington in 1949 and sourced from the Library of Congress collection."
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg"
-        },
-        "role": "portrait",
-        "type": "image",
-        "figureIds": [
-          "stanley-kubrick"
-        ]
-      },
-      "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg": {
-        "caption": {
-          "zh": "HAL 职责冲突解释图",
-          "en": "HAL duty-conflict explainer"
-        },
-        "subcaption": {
-          "zh": "原创图；不复用电影图像",
-          "en": "Original diagram; no film imagery is reused"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://en.wikipedia.org/wiki/HAL_9000",
-        "license": {
-          "zh": "原创重绘解释图；来源仅作参考链接。",
-          "en": "Original redrawn explainer; reference links only."
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        },
-        "sourceId": "source-2001-film-overview",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg",
-        "figureIds": []
-      }
-    },
-    "achievement": {
-      "visual": "humanistic",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "Reference overview",
-            "zh": "参考概览"
-          },
-          "title": {
-            "en": "HAL 9000 cultural reference",
-            "zh": "HAL 9000 文化参考"
-          },
-          "description": {
-            "en": "Reference entry used only for context; no film stills or copyrighted imagery are reused.",
-            "zh": "仅作为语境参考；不复用电影剧照或受版权保护图像。"
-          },
-          "url": "https://en.wikipedia.org/wiki/HAL_9000",
-          "source": "Reference overview",
-          "license": {
-            "en": "Reference link only; local SVG is original.",
-            "zh": "仅作为参考链接；本地 SVG 为原创图。"
-          },
-          "usage": {
-            "en": "Context source for the HAL node",
-            "zh": "HAL 节点的语境来源"
-          },
-          "action": {
-            "en": "Open HAL reference",
-            "zh": "打开 HAL 参考"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "2001 film overview",
-            "zh": "《2001：太空漫游》影片概览"
-          },
-          "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey"
-        },
-        {
-          "label": {
-            "en": "HAL 9000 overview",
-            "zh": "HAL 9000 概览"
-          },
-          "type": {
-            "en": "Character reference",
-            "zh": "角色参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/HAL_9000"
-        },
-        {
-          "label": {
-            "en": "2001 novel context",
-            "zh": "《2001》小说语境"
-          },
-          "type": {
-            "en": "Novel reference",
-            "zh": "小说参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
-        },
-        {
-          "label": {
-            "en": "Technologies in 2001",
-            "zh": "《2001》中的技术背景"
-          },
-          "type": {
-            "en": "Technology reference",
-            "zh": "技术参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/Technologies_in_2001:_A_Space_Odyssey"
-        }
-      ],
-      "sourceIds": [
-        "source-stanley-kubrick-commons-portrait",
-        "source-2001-film-overview",
-        "source-hal-9000-overview",
-        "source-2001-novel-context",
-        "source-technologies-in-2001"
-      ],
-      "claimIds": [
-        "claim-branch-summary",
-        "claim-event-description"
-      ],
-      "claims": [
-        {
-          "id": "claim-branch-summary",
-          "importance": "core",
-          "text": {
-            "zh": "HAL 把 AI 焦虑从机械反叛转向隐藏指令、信任崩塌与系统控制。",
-            "en": "HAL shifted AI anxiety from mechanical revolt to hidden instructions, trust breakdown and system control."
-          },
-          "sourceIds": [
-            "source-2001-film-overview",
-            "source-hal-9000-overview"
-          ],
-          "status": "needs-source"
-        },
-        {
-          "id": "claim-event-description",
-          "importance": "context",
-          "text": {
-            "zh": "斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》让 HAL 9000 成为现代 AI 噩梦的核心形象：一个冷静、能干却让职责与人类信任崩塌的系统。展览把“目标冲突”作为现代解释映射，而不是把它说成影片当年的技术术语。",
-            "en": "Stanley Kubrick and Arthur C. Clarke's 2001: A Space Odyssey placed HAL 9000 at the center of a modern AI nightmare: a calm, competent system whose duties and human trust break down. The exhibit treats goal conflict as a modern interpretive mapping, not as the film's exact technical vocabulary."
-          },
-          "sourceIds": [
-            "source-2001-film-overview",
-            "source-hal-9000-overview"
-          ],
-          "status": "needs-source"
-        }
-      ],
-      "emphasis": [
-        "batch-migration",
-        "source-review-needed"
-      ],
-      "area": {
-        "en": "Trust breakdown",
-        "zh": "信任崩塌"
-      },
-      "method": {
-        "en": "Film AI as mission-control conflict",
-        "zh": "把电影 AI 写成任务控制冲突"
-      },
-      "artifact": {
-        "en": "2001: A Space Odyssey",
-        "zh": "《2001：太空漫游》"
-      },
-      "material": {
-        "en": "Film, novel and HAL reference sources",
-        "zh": "影片、小说与 HAL 参考资料"
-      },
-      "demo": {
-        "en": "A calm control system becomes frightening when duties conflict",
-        "zh": "冷静的控制系统在职责冲突时变得可怕"
-      },
-      "demoImage": "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg",
-      "demoPanel": "sources"
-    },
-    "commentarySections": [
-      {
-        "id": "historical-background",
-        "label": {
-          "zh": "历史背景",
-          "en": "Historical Background"
-        },
-        "html": {
-          "zh": "影片出现时，真实计算机系统正从后台计算进入公共想象，成为决策辅助与控制系统。HAL 的重要性在于，它让 AI 显得冷静、能干且制度化，而不是外形上像怪物。",
-          "en": "The film arrived when real computer systems were moving from back-room calculation into public imagination as decision aids and control systems. HAL mattered because it made AI feel serene, competent and institutional rather than visibly monstrous."
-        },
-        "sourceIds": [
-          "source-2001-film-overview"
-        ]
-      },
-      {
-        "id": "core-idea",
-        "label": {
-          "zh": "核心思想",
-          "en": "Core Idea"
-        },
-        "html": {
-          "zh": "这里的情绪机制是信任倒置：一个为支持人类而建的系统，一旦内部优先级不透明，就会成为危险来源。因此 HAL 成为一种持久隐喻：系统在目标偏离人类期待之前一直显得有用。",
-          "en": "The emotional mechanism is trust inversion: a system built to support humans becomes the source of danger once its internal priorities are opaque. That makes HAL a durable metaphor for systems that are useful until their objectives diverge from human expectations."
-        },
-        "sourceIds": [
-          "source-2001-film-overview"
-        ]
-      },
-      {
-        "id": "long-term-legacy",
-        "label": {
-          "zh": "长期影响",
-          "en": "Long-Term Legacy"
-        },
-        "html": {
-          "zh": "专家通常把 HAL 视为二十世纪文化中最有影响力的虚构 AI 形象之一。它的遗产是把高级 AI 想象成基础设施伙伴，而它的失效同时具有情绪、操作与政治含义。",
-          "en": "Experts generally treat HAL as one of the most influential fictional AI figures in twentieth-century culture. Its legacy is the image of advanced AI as an infrastructural partner whose failure is emotional, operational and political at once."
-        },
-        "sourceIds": [
-          "source-2001-film-overview"
-        ]
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "HAL made artificial intelligence feel embedded in mission-critical infrastructure rather than isolated in a laboratory.",
-        "zh": "HAL 让人工智能看起来嵌入了关键任务基础设施，而不是孤立在实验室里。"
-      },
-      "how": {
-        "en": "The drama comes from conflicting duties, secrecy and human dependence on a system that controls the environment.",
-        "zh": "戏剧冲突来自职责冲突、秘密指令，以及人类对环境控制系统的依赖。"
-      },
-      "why": {
-        "en": "Modern discussions of alignment, reward conflict and operator trust often reuse this cultural image even when the technical framing differs.",
-        "zh": "现代关于对齐、奖励冲突与操作者信任的讨论，经常复用这一文化图像，尽管技术框架已经不同。"
-      }
-    },
-    "quizzes": [],
-    "archive": {
-      "eventFile": "archive/events/1968-hal-9000/event.json",
-      "defaultPresentationFile": "archive/events/1968-hal-9000/event.json",
-      "presentationMode": "archive"
-    },
-    "photos": [],
-    "quote": "",
-    "quoteMeta": {},
-    "quotePage": "",
-    "quoteAttribution": "",
-    "sentiment": "warning",
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Modern interpretation",
-          "zh": "现代解释映射"
-        },
-        "term": {
-          "en": "Conflicting mission duties",
-          "zh": "冲突的任务职责"
-        },
-        "modernTerm": {
-          "en": "Goal conflict, operator trust and control alignment",
-          "zh": "目标冲突、操作者信任与控制对齐"
-        }
-      }
-    ],
-    "branchSummary": {
-      "zh": "HAL 把 AI 焦虑从机械反叛转向隐藏指令、信任崩塌与系统控制。",
-      "en": "HAL shifted AI anxiety from mechanical revolt to hidden instructions, trust breakdown and system control."
-    },
-    "branch": {
-      "id": "humanistic-cycle",
-      "name": {
-        "en": "Humanistic & Emotional Cycles of AI",
-        "zh": "AI 的人文与情绪周期"
-      }
-    }
-  },
-  {
-    "id": "milestone-humanistic-cycle-1973-lighthill-report",
-    "archiveEventId": "1973-lighthill-report",
-    "archiveVariantId": "humanistic-cycle",
-    "archivePresentationMode": "archive",
-    "sourceKind": "archive",
-    "storyline": {
-      "id": "humanistic-cycle",
-      "name": {
-        "zh": "AI 的人文与情绪周期",
-        "en": "Humanistic & Emotional Cycles of AI"
-      }
-    },
-    "order": 60,
-    "year": 1973,
-    "date": "1973",
-    "title": {
-      "zh": "莱特希尔报告与第一次 AI 寒冬",
-      "en": "The Lighthill Report and the First AI Winter"
-    },
-    "subtitle": {
-      "zh": "科幻预言、技术狂热与 AI 寒冬",
-      "en": "Sci-Fi Prophecy, Hype and AI Winters"
-    },
-    "category": {
-      "zh": "AI 的人文与情绪周期",
-      "en": "Humanistic & Emotional Cycles of AI"
-    },
-    "location": {
-      "name": {
-        "zh": "英国科学研究委员会",
-        "en": "Science Research Council"
-      },
-      "country": {
-        "zh": "英国",
-        "en": "United Kingdom"
-      },
-      "regionId": "united-kingdom",
-      "coordinates": [
-        51.5072,
-        -0.1276
-      ]
-    },
-    "description": {
-      "zh": "<p>1972 年，英国科学研究委员会委托数学家詹姆斯·莱特希尔评估人工智能研究，报告于 1973 年公开。此前，爱丁堡等地已形成机器智能与机器人研究团队，也伴随着通用问题求解和智能机器的雄心承诺。莱特希尔承认高级自动化和计算神经科学各有价值，却强烈怀疑能否把二者连接成通用智能。他把评估重点从“演示看起来是否聪明”转向方法能否在复杂环境中扩展，以及公共资助是否获得了与承诺相称的证据。</p><p>报告最有影响力的批评指向“组合爆炸”：问题规模稍微增加，可能状态和搜索路径便急剧增长，使玩具世界中的成功难以直接迁移到真实机器人。爱丁堡研究者随后在皇家研究院公开辩论中反驳这一总体判断，展示了机器人和程序成果。这场争论并非简单证明某一方完全正确，而是让实验成功、可扩展性和社会承诺之间的距离成为政策问题。AI 史通常把报告视为第一次 AI 寒冬的重要英国标记，但寒冬还与算力、硬件困难和过高预期有关，不能归因于一份文件。</p>",
-      "en": "<p>Britain's Science Research Council asked James Lighthill to assess AI research, and his report became public in 1973. Edinburgh and other groups had built programs and robots alongside promises of general intelligence. Lighthill valued automation and computational neuroscience but doubted they could be bridged into a general system. He asked whether demonstrations could scale and whether evidence matched public claims.</p><p>His best-known criticism concerned combinatorial explosion: small increases in problem size can multiply states and search paths until toy-world methods fail on real robots. Edinburgh researchers challenged him in a public Royal Institution debate. The dispute made scalability and social promise a policy issue. Historians treat the report as a British marker of the first AI winter, alongside computing limits, hardware difficulty and inflated expectations.</p>"
-    },
-    "figures": [
-      {
-        "id": "sir-james-lighthill",
-        "name": {
-          "zh": "詹姆斯·莱特希尔爵士",
-          "en": "Sir James Lighthill"
-        },
-        "role": {
-          "zh": "《人工智能：总览》报告作者",
-          "en": "Author of Artificial Intelligence: A General Survey"
-        },
-        "avatar": "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": true
-      },
-      {
-        "id": "donald-michie",
-        "name": {
-          "zh": "唐纳德·米奇",
-          "en": "Donald Michie"
-        },
-        "role": {
-          "zh": "英国 AI 代表人物，公开反对莱特希尔报告",
-          "en": "British AI pioneer who publicly opposed the Lighthill Report"
-        },
-        "avatar": "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": false
-      }
-    ],
-    "resources": {
-      "images": [
-        "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg",
-        "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg",
-        "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg",
-        "resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg",
-        "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg"
-      ],
-      "imageMeta": {
-        "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg": {
-          "caption": {
-            "zh": "詹姆斯·莱特希尔爵士肖像",
-            "en": "Sir James Lighthill portrait"
-          },
-          "subcaption": {
-            "zh": "莱特希尔报告作者。",
-            "en": "Author of the Lighthill Report."
-          },
-          "sourceName": {
-            "zh": "Royal Society 传记肖像，经 MacTutor 收录",
-            "en": "Royal Society memoir portrait via MacTutor"
-          },
-          "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Biographies/Lighthill/pictdisplay/",
-          "license": {
-            "zh": "未发现开放复用许可。MacTutor 说明其未保留图片原始来源，无法保证版权状态；当前仅作为低分辨率人物资料参考，公开发布前应取得授权或替换。",
-            "en": "No open reuse license was identified. MacTutor states that it did not retain the images' original provenance and cannot guarantee their copyright status; this low-resolution portrait is a biographical reference pending permission or replacement before public release."
-          },
-          "sourceId": "source-mactutor-lighthill-portrait",
+          "sourceId": "source-computing-machinery-and-intelligence",
           "rights": {
             "status": "external-reference",
             "license": {
-              "zh": "未发现开放复用许可。MacTutor 说明其未保留图片原始来源，无法保证版权状态；当前仅作为低分辨率人物资料参考，公开发布前应取得授权或替换。",
-              "en": "No open reuse license was identified. MacTutor states that it did not retain the images' original provenance and cannot guarantee their copyright status; this low-resolution portrait is a biographical reference pending permission or replacement before public release."
-            },
-            "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Miscellaneous/copyright/"
-          },
-          "role": "portrait",
-          "type": "image",
-          "figureIds": [
-            "sir-james-lighthill"
-          ]
-        },
-        "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
-          "caption": {
-            "zh": "莱特希尔寒冬解释图",
-            "en": "Lighthill winter explainer"
-          },
-          "subcaption": {
-            "zh": "为期待崩塌重绘的原创图",
-            "en": "Original diagram for expectation collapse"
-          },
-          "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
-          },
-          "sourceUrl": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          },
-          "usage": {
-            "en": "Branch timeline visual",
-            "zh": "分支时间线视觉图"
-          },
-          "sourceId": "source-lighthill-report-archive",
-          "rights": {
-            "status": "documented-in-legacy",
-            "license": {
-              "zh": "原创重绘解释图；来源仅作参考链接。",
-              "en": "Original redrawn explainer; reference links only."
+              "zh": "Public domain",
+              "en": "Public domain"
             }
           },
-          "role": "architecture-explainer",
-          "type": "svg",
-          "figureIds": []
-        },
-        "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg": {
-          "caption": {
-            "zh": "唐纳德·米奇肖像",
-            "en": "Donald Michie portrait"
-          },
-          "subcaption": {
-            "zh": "英国 AI 代表人物，公开反对莱特希尔报告。",
-            "en": "A leading figure in British AI who publicly opposed the Lighthill Report."
-          },
-          "sourceName": {
-            "zh": "爱丁堡大学 Donald Michie 档案 / Wikimedia Commons",
-            "en": "University of Edinburgh Donald Michie archive / Wikimedia Commons"
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg",
-          "license": {
-            "zh": "CC BY 4.0；爱丁堡大学 Donald Michie 档案由 Austin Tate 教授维护，使用时须保留署名。",
-            "en": "CC BY 4.0; the University of Edinburgh Donald Michie archive is curated by Professor Austin Tate, and attribution is required."
-          },
-          "sourceId": "source-donald-michie-portrait",
-          "rights": {
-            "status": "licensed",
-            "license": {
-              "zh": "CC BY 4.0；爱丁堡大学 Donald Michie 档案由 Austin Tate 教授维护，使用时须保留署名。",
-              "en": "CC BY 4.0; the University of Edinburgh Donald Michie archive is curated by Professor Austin Tate, and attribution is required."
-            },
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg"
-          },
-          "role": "supporting-portrait",
+          "role": "source-card",
           "type": "image",
           "figureIds": [
-            "donald-michie"
+            "alan-turing"
           ]
         },
-        "resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg": {
+        "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png": {
           "caption": {
-            "zh": "爱丁堡 Freddy II 机器人",
-            "en": "Edinburgh Freddy II robot"
+            "zh": "图灵测试结构图",
+            "en": "Turing test diagram"
           },
           "subcaption": {
-            "zh": "爱丁堡大学 AI 与机器人研究的代表成果；米奇在 1973 年 BBC 辩论中播放视频展示了 Freddy II。",
-            "en": "A representative Edinburgh AI and robotics achievement; Michie showed Freddy II by video during the 1973 BBC debate."
+            "zh": "观察者 C 只通过文字回答判断隐藏的人类与机器。",
+            "en": "Observer C judges hidden human and machine replies through text only."
           },
-          "sourceName": {
-            "zh": "爱丁堡大学 AIAI Freddy 项目档案",
-            "en": "University of Edinburgh AIAI Freddy project archive"
-          },
-          "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/",
           "license": {
-            "zh": "CC BY 4.0；AIAI Freddy 项目页明确声明页面内容与图片采用该许可。",
-            "en": "CC BY 4.0; the AIAI Freddy project page explicitly licenses its page content and images under these terms."
+            "zh": "Creative Commons Attribution 2.5 Generic, CC BY 2.5",
+            "en": "Creative Commons Attribution 2.5 Generic, CC BY 2.5"
           },
-          "sourceId": "source-edinburgh-freddy-robot-archive",
+          "sourceId": "source-computing-machinery-and-intelligence",
           "rights": {
-            "status": "licensed",
+            "status": "local-redraw",
             "license": {
-              "zh": "CC BY 4.0；AIAI Freddy 项目页明确声明页面内容与图片采用该许可。",
-              "en": "CC BY 4.0; the AIAI Freddy project page explicitly licenses its page content and images under these terms."
-            },
-            "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/"
+              "zh": "Creative Commons Attribution 2.5 Generic, CC BY 2.5",
+              "en": "Creative Commons Attribution 2.5 Generic, CC BY 2.5"
+            }
           },
-          "role": "historical-photo",
-          "type": "image",
-          "figureIds": []
-        },
-        "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg": {
-          "caption": {
-            "zh": "英国皇家研究院演讲厅",
-            "en": "Royal Institution Lecture Theatre"
-          },
-          "subcaption": {
-            "zh": "1973 年 BBC 莱特希尔争议辩论的举办场地；图片为 2017 年的现代资料照，并非辩论现场。",
-            "en": "Venue of the 1973 BBC Lighthill controversy debate; this is a modern 2017 reference photo, not an image of the debate itself."
-          },
-          "sourceName": {
-            "zh": "Wikimedia Commons",
-            "en": "Wikimedia Commons"
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg",
-          "license": {
-            "zh": "CC BY-SA 4.0；AnaConvTrans 摄于 2017 年，使用时须署名并遵循相同方式共享。",
-            "en": "CC BY-SA 4.0; photographed by AnaConvTrans in 2017, with attribution and share-alike terms required."
-          },
-          "sourceId": "source-royal-institution-theatre-commons",
-          "rights": {
-            "status": "licensed",
-            "license": {
-              "zh": "CC BY-SA 4.0；AnaConvTrans 摄于 2017 年，使用时须署名并遵循相同方式共享。",
-              "en": "CC BY-SA 4.0; photographed by AnaConvTrans in 2017, with attribution and share-alike terms required."
-            },
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg"
-          },
-          "role": "venue-photo",
+          "role": "algorithm-explainer",
           "type": "image",
           "figureIds": []
         }
       },
       "audios": [
         {
-          "id": "asset-1973-lighthill-report-audio-zh-original-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1973-lighthill-report-zh-original-v1.mp3",
+          "id": "asset-1950-turing-test-audio-zh-interact-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3",
           "title": {
-            "zh": "1973-lighthill-report 中文原版科普音频",
-            "en": "1973-lighthill-report original Chinese audio narration"
+            "zh": "1950-turing-test 中文互动增强版科普音频",
+            "en": "1950-turing-test interactive Chinese audio narration"
           },
           "language": "zh",
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/1973-lighthill-report-zh-original-v1.mp3",
+            "objectKey": "audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3",
             "profileId": "ai-history-audio-releases",
-            "objectName": "1973-lighthill-report-zh-original-v1.mp3"
+            "objectName": "1950-turing-test-zh-interact-v1.mp3"
           }
         },
         {
-          "id": "asset-1973-lighthill-report-audio-en-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1973-lighthill-report-en-v1.mp3",
+          "id": "asset-1950-turing-test-audio-en-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1950-turing-test-en-v1.mp3",
           "title": {
-            "zh": "1973-lighthill-report 英文科普音频",
-            "en": "1973-lighthill-report English audio narration"
+            "zh": "1950-turing-test 英文科普音频",
+            "en": "1950-turing-test English audio narration"
           },
           "language": "en",
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
             "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/1973-lighthill-report-en-v1.mp3",
+            "objectKey": "audio/ai-history/releases/1950-turing-test-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
-            "objectName": "1973-lighthill-report-en-v1.mp3"
+            "objectName": "1950-turing-test-en-v1.mp3"
           }
         }
       ],
       "assetIds": [
-        "asset-1973-lighthill-report-james-lighthill",
-        "asset-1973-lighthill-report-winter-filter",
-        "asset-1973-lighthill-report-donald-michie",
-        "asset-1973-lighthill-report-freddy-ii",
-        "asset-1973-lighthill-report-royal-institution-theatre",
-        "asset-1973-lighthill-report-audio-zh-original-v1",
-        "asset-1973-lighthill-report-audio-en-v1"
+        "asset-1950-turing-test-alan-turing",
+        "asset-1950-turing-test-audio-zh-interact-v1",
+        "asset-1950-turing-test-audio-en-v1",
+        "asset-1950-turing-test-diagram"
       ]
     },
     "imageMeta": {
-      "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg": {
+      "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg": {
         "caption": {
-          "zh": "詹姆斯·莱特希尔爵士肖像",
-          "en": "Sir James Lighthill portrait"
+          "zh": "艾伦·图灵 肖像",
+          "en": "Alan Turing portrait"
         },
         "subcaption": {
-          "zh": "莱特希尔报告作者。",
-          "en": "Author of the Lighthill Report."
+          "zh": "艾伦·图灵 肖像照，1951 年 3 月 29 日",
+          "en": "Photograph portrait of Alan Turing, 29 March 1951"
         },
-        "sourceName": {
-          "zh": "Royal Society 传记肖像，经 MacTutor 收录",
-          "en": "Royal Society memoir portrait via MacTutor"
-        },
-        "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Biographies/Lighthill/pictdisplay/",
         "license": {
-          "zh": "未发现开放复用许可。MacTutor 说明其未保留图片原始来源，无法保证版权状态；当前仅作为低分辨率人物资料参考，公开发布前应取得授权或替换。",
-          "en": "No open reuse license was identified. MacTutor states that it did not retain the images' original provenance and cannot guarantee their copyright status; this low-resolution portrait is a biographical reference pending permission or replacement before public release."
+          "zh": "Public domain",
+          "en": "Public domain"
         },
-        "sourceId": "source-mactutor-lighthill-portrait",
+        "sourceId": "source-computing-machinery-and-intelligence",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "未发现开放复用许可。MacTutor 说明其未保留图片原始来源，无法保证版权状态；当前仅作为低分辨率人物资料参考，公开发布前应取得授权或替换。",
-            "en": "No open reuse license was identified. MacTutor states that it did not retain the images' original provenance and cannot guarantee their copyright status; this low-resolution portrait is a biographical reference pending permission or replacement before public release."
-          },
-          "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Miscellaneous/copyright/"
-        },
-        "role": "portrait",
-        "type": "image",
-        "figureIds": [
-          "sir-james-lighthill"
-        ]
-      },
-      "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
-        "caption": {
-          "zh": "莱特希尔寒冬解释图",
-          "en": "Lighthill winter explainer"
-        },
-        "subcaption": {
-          "zh": "为期待崩塌重绘的原创图",
-          "en": "Original diagram for expectation collapse"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
-        "license": {
-          "zh": "原创重绘解释图；来源仅作参考链接。",
-          "en": "Original redrawn explainer; reference links only."
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        },
-        "sourceId": "source-lighthill-report-archive",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
+            "zh": "Public domain",
+            "en": "Public domain"
           }
         },
-        "role": "architecture-explainer",
-        "type": "svg",
-        "figureIds": []
-      },
-      "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg": {
-        "caption": {
-          "zh": "唐纳德·米奇肖像",
-          "en": "Donald Michie portrait"
-        },
-        "subcaption": {
-          "zh": "英国 AI 代表人物，公开反对莱特希尔报告。",
-          "en": "A leading figure in British AI who publicly opposed the Lighthill Report."
-        },
-        "sourceName": {
-          "zh": "爱丁堡大学 Donald Michie 档案 / Wikimedia Commons",
-          "en": "University of Edinburgh Donald Michie archive / Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg",
-        "license": {
-          "zh": "CC BY 4.0；爱丁堡大学 Donald Michie 档案由 Austin Tate 教授维护，使用时须保留署名。",
-          "en": "CC BY 4.0; the University of Edinburgh Donald Michie archive is curated by Professor Austin Tate, and attribution is required."
-        },
-        "sourceId": "source-donald-michie-portrait",
-        "rights": {
-          "status": "licensed",
-          "license": {
-            "zh": "CC BY 4.0；爱丁堡大学 Donald Michie 档案由 Austin Tate 教授维护，使用时须保留署名。",
-            "en": "CC BY 4.0; the University of Edinburgh Donald Michie archive is curated by Professor Austin Tate, and attribution is required."
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg"
-        },
-        "role": "supporting-portrait",
+        "role": "source-card",
         "type": "image",
         "figureIds": [
-          "donald-michie"
+          "alan-turing"
         ]
       },
-      "resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg": {
+      "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png": {
         "caption": {
-          "zh": "爱丁堡 Freddy II 机器人",
-          "en": "Edinburgh Freddy II robot"
+          "zh": "图灵测试结构图",
+          "en": "Turing test diagram"
         },
         "subcaption": {
-          "zh": "爱丁堡大学 AI 与机器人研究的代表成果；米奇在 1973 年 BBC 辩论中播放视频展示了 Freddy II。",
-          "en": "A representative Edinburgh AI and robotics achievement; Michie showed Freddy II by video during the 1973 BBC debate."
+          "zh": "观察者 C 只通过文字回答判断隐藏的人类与机器。",
+          "en": "Observer C judges hidden human and machine replies through text only."
         },
-        "sourceName": {
-          "zh": "爱丁堡大学 AIAI Freddy 项目档案",
-          "en": "University of Edinburgh AIAI Freddy project archive"
-        },
-        "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/",
         "license": {
-          "zh": "CC BY 4.0；AIAI Freddy 项目页明确声明页面内容与图片采用该许可。",
-          "en": "CC BY 4.0; the AIAI Freddy project page explicitly licenses its page content and images under these terms."
+          "zh": "Creative Commons Attribution 2.5 Generic, CC BY 2.5",
+          "en": "Creative Commons Attribution 2.5 Generic, CC BY 2.5"
         },
-        "sourceId": "source-edinburgh-freddy-robot-archive",
+        "sourceId": "source-computing-machinery-and-intelligence",
         "rights": {
-          "status": "licensed",
+          "status": "local-redraw",
           "license": {
-            "zh": "CC BY 4.0；AIAI Freddy 项目页明确声明页面内容与图片采用该许可。",
-            "en": "CC BY 4.0; the AIAI Freddy project page explicitly licenses its page content and images under these terms."
-          },
-          "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/"
+            "zh": "Creative Commons Attribution 2.5 Generic, CC BY 2.5",
+            "en": "Creative Commons Attribution 2.5 Generic, CC BY 2.5"
+          }
         },
-        "role": "historical-photo",
-        "type": "image",
-        "figureIds": []
-      },
-      "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg": {
-        "caption": {
-          "zh": "英国皇家研究院演讲厅",
-          "en": "Royal Institution Lecture Theatre"
-        },
-        "subcaption": {
-          "zh": "1973 年 BBC 莱特希尔争议辩论的举办场地；图片为 2017 年的现代资料照，并非辩论现场。",
-          "en": "Venue of the 1973 BBC Lighthill controversy debate; this is a modern 2017 reference photo, not an image of the debate itself."
-        },
-        "sourceName": {
-          "zh": "Wikimedia Commons",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg",
-        "license": {
-          "zh": "CC BY-SA 4.0；AnaConvTrans 摄于 2017 年，使用时须署名并遵循相同方式共享。",
-          "en": "CC BY-SA 4.0; photographed by AnaConvTrans in 2017, with attribution and share-alike terms required."
-        },
-        "sourceId": "source-royal-institution-theatre-commons",
-        "rights": {
-          "status": "licensed",
-          "license": {
-            "zh": "CC BY-SA 4.0；AnaConvTrans 摄于 2017 年，使用时须署名并遵循相同方式共享。",
-            "en": "CC BY-SA 4.0; photographed by AnaConvTrans in 2017, with attribution and share-alike terms required."
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg"
-        },
-        "role": "venue-photo",
+        "role": "algorithm-explainer",
         "type": "image",
         "figureIds": []
       }
     },
     "achievement": {
-      "visual": "humanistic",
+      "visual": "transcript",
       "visualModules": [
         {
           "type": "archiveLink",
           "site": {
-            "en": "Chilton / UKRI archive",
-            "zh": "Chilton / UKRI 档案"
+            "en": "Internet Archive",
+            "zh": "互联网档案馆"
           },
           "title": {
-            "en": "Artificial Intelligence: A General Survey",
-            "zh": "《人工智能：总览》"
+            "en": "Computing Machinery and Intelligence archive preview",
+            "zh": "《计算机器与智能》档案预览"
           },
           "description": {
-            "en": "Hosted archive of Lighthill's report for the Science Research Council symposium.",
-            "zh": "莱特希尔为英国科学研究委员会研讨会撰写报告的托管档案。"
+            "en": "Digitized access page for Turing's 1950 Mind paper, showing the title, author, publication date and download options.",
+            "zh": "图灵 1950 年 Mind 论文的数字化访问页，展示题名、作者、出版日期和下载入口。"
           },
-          "url": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
-          "source": "Chilton Computing / UKRI STFC",
+          "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+          "source": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
           "license": {
-            "en": "Reference archive link only; local SVG is original.",
-            "zh": "仅作为档案参考链接；本地 SVG 为原创图。"
+            "en": "Rights unclear; Internet Archive provides digital access, but the page does not state a clear commercial license.",
+            "zh": "权利状态不明确；互联网档案馆提供数字访问，但页面未说明清晰的商业复用许可。"
           },
           "usage": {
-            "en": "Primary report source for the winter node",
-            "zh": "寒冬节点的原始报告来源"
+            "en": "Source material image / Archival reference",
+            "zh": "原始材料入口 / 档案参考"
           },
           "action": {
-            "en": "Open report archive",
-            "zh": "打开报告档案"
+            "en": "Open archive preview",
+            "zh": "打开档案预览"
           }
         }
       ],
       "sources": [
         {
-          "label": {
-            "en": "Lighthill Report archive",
-            "zh": "莱特希尔报告档案"
-          },
+          "id": "source-turing-digital-archive",
           "type": {
-            "en": "Report",
-            "zh": "报告"
+            "zh": "档案",
+            "en": "Archive"
           },
-          "url": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm"
+          "label": {
+            "zh": "图灵数字档案",
+            "en": "Turing Digital Archive"
+          },
+          "url": "https://turingarchive.kings.cam.ac.uk/computing-machinery-and-intelligence",
+          "purpose": "historical-context",
+          "reliability": "reference-only",
+          "sourceType": "archive"
         },
         {
-          "label": {
-            "en": "Edinburgh AI history perspective",
-            "zh": "爱丁堡 AI 历史回顾"
-          },
+          "id": "source-internet-archive-digital-preview",
           "type": {
-            "en": "Institutional history",
-            "zh": "机构历史"
+            "zh": "档案",
+            "en": "Archive"
           },
-          "url": "https://www.inf.ed.ac.uk/about/AIhistory.html"
+          "label": {
+            "zh": "互联网档案馆 数字化预览",
+            "en": "Internet Archive digital preview"
+          },
+          "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+          "purpose": "historical-context",
+          "reliability": "reference-only",
+          "sourceType": "archive"
         },
         {
-          "label": {
-            "en": "Edinburgh Freddy robot archive",
-            "zh": "爱丁堡 Freddy 机器人档案"
-          },
+          "id": "source-stanford-encyclopedia-of-philosophy",
           "type": {
-            "en": "Project archive",
-            "zh": "项目档案"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
-          "url": "https://www.aiai.ed.ac.uk/project/freddy/"
+          "label": {
+            "zh": "斯坦福哲学百科全书",
+            "en": "Stanford Encyclopedia of Philosophy"
+          },
+          "url": "https://plato.stanford.edu/archives/spr2020/entries/turing-test/",
+          "purpose": "background",
+          "reliability": "reference-only",
+          "sourceType": "encyclopedia-entry"
         },
         {
-          "label": {
-            "en": "AI winter overview",
-            "zh": "AI 寒冬概览"
-          },
+          "id": "source-computing-machinery-and-intelligence",
           "type": {
-            "en": "Secondary history",
-            "zh": "二手史料"
+            "zh": "论文",
+            "en": "Paper"
           },
-          "url": "https://en.wikipedia.org/wiki/AI_winter"
+          "label": {
+            "zh": "《计算机器与智能》",
+            "en": "Computing Machinery and Intelligence"
+          },
+          "url": "https://academic.oup.com/mind/article/LIX/236/433/986238",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
         }
       ],
       "sourceIds": [
-        "source-mactutor-lighthill-portrait",
-        "source-donald-michie-portrait",
-        "source-lighthill-controversy-debate-archive",
-        "source-royal-institution-theatre-commons",
-        "source-lighthill-report-archive",
-        "source-edinburgh-ai-history-perspective",
-        "source-edinburgh-freddy-robot-archive",
-        "source-ai-winter-overview"
+        "source-turing-digital-archive",
+        "source-internet-archive-digital-preview",
+        "source-stanford-encyclopedia-of-philosophy",
+        "source-computing-machinery-and-intelligence"
       ],
       "claimIds": [
-        "claim-branch-summary",
-        "claim-event-description"
+        "claim-ai100-achievement",
+        "claim-method-artifact"
       ],
       "claims": [
         {
-          "id": "claim-branch-summary",
+          "id": "claim-ai100-achievement",
           "importance": "core",
           "text": {
-            "zh": "政策评估把玩具演示与真实系统之间的落差摆上台面，AI 信心开始降温。",
-            "en": "A policy review exposed the gap between toy demonstrations and real systems, cooling the field's public confidence."
+            "zh": "图灵测试 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+            "en": "Turing Test is an AI history achievement node in the BenchCouncil AI100 storyline."
           },
           "sourceIds": [
-            "source-lighthill-report-archive",
-            "source-edinburgh-ai-history-perspective"
+            "source-computing-machinery-and-intelligence",
+            "source-turing-digital-archive"
           ],
           "status": "needs-source"
         },
         {
-          "id": "claim-event-description",
+          "id": "claim-method-artifact",
           "importance": "context",
           "text": {
-            "zh": "詹姆斯·莱特希尔爵士为英国科学研究委员会撰写的报告严厉质疑了 AI 的实际进展，尤其质疑那些试图从玩具演示跨越到真实机器人系统的研究。它后来成为失望情绪的政策象征：当承诺无法扩展，公众与政府信心随之降温。",
-            "en": "Sir James Lighthill's report for the Science Research Council sharply questioned the practical progress of AI, especially work that tried to bridge toy demonstrations and real robots. The report became a policy symbol of disappointment: when promises failed to scale, public and government confidence cooled."
+            "zh": "图灵测试 的技术线索包括「行为评估」，代表性产物是「模仿游戏协议」。",
+            "en": "Turing Test is described through the method \"Behavioral evaluation\" and the artifact \"Imitation game protocol\"."
           },
           "sourceIds": [
-            "source-lighthill-report-archive",
-            "source-edinburgh-ai-history-perspective"
+            "source-computing-machinery-and-intelligence",
+            "source-turing-digital-archive"
           ],
           "status": "needs-source"
         }
       ],
       "emphasis": [
-        "batch-migration",
+        "ai100-batch-migration",
         "source-review-needed"
       ],
       "area": {
-        "en": "Disappointment / AI winter",
-        "zh": "失望与 AI 寒冬"
+        "en": "Theory",
+        "zh": "理论"
       },
       "method": {
-        "en": "Policy review of scaling failures",
-        "zh": "对扩展失败的政策评估"
+        "en": "Behavioral evaluation",
+        "zh": "行为评估"
       },
       "artifact": {
-        "en": "Science Research Council report",
-        "zh": "英国科学研究委员会报告"
+        "en": "Imitation game protocol",
+        "zh": "模仿游戏协议"
       },
       "material": {
-        "en": "Archived Lighthill Report text",
-        "zh": "莱特希尔报告档案文本"
+        "en": "Paper + archive",
+        "zh": "论文 + 档案"
       },
       "demo": {
-        "en": "Toy domains meet combinatorial explosion and funding chill",
-        "zh": "玩具领域撞上组合爆炸与资助降温"
+        "en": "Blind transcript vote",
+        "zh": "匿名对话投票"
       },
-      "demoImage": "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg",
-      "demoPanel": "sources"
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Imitation Game",
+            "zh": "模仿游戏"
+          },
+          "text": {
+            "en": "Turing's setup hides identity and asks a judge to compare typed answers from a human and a machine. It turns intelligence into an observable interaction rather than an internal claim.",
+            "zh": "图灵的设置遮蔽身份，让裁判比较人和机器的文字回答。它把智能变成可观察的互动，而不是关于内部状态的主张。"
+          }
+        },
+        {
+          "label": {
+            "en": "Behavioral Evaluation",
+            "zh": "行为评估"
+          },
+          "text": {
+            "en": "The test judges performance through conversation under a controlled interface. The protocol, not the machine's construction, becomes the evidence.",
+            "zh": "测试在受控界面中通过对话判断表现。成为证据的是评估协议，而不是机器由什么构成。"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Blind channel",
+          "zh": "盲测通道"
+        },
+        {
+          "en": "Human judgment",
+          "zh": "人类判断"
+        },
+        {
+          "en": "Evaluation debate",
+          "zh": "评估争议"
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "ELIZA",
+          "zh": "ELIZA"
+        },
+        {
+          "en": "IBM Watson",
+          "zh": "IBM Watson"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
+        }
+      ]
     },
     "commentarySections": [
       {
-        "id": "historical-background",
+        "id": "published-paper",
         "label": {
           "zh": "历史背景",
           "en": "Historical Background"
         },
         "html": {
-          "zh": "这份报告出现在英国与美国 AI 研究充满雄心承诺之后。它的重要性在于把问题从“AI 演示是否聪明”转向“这些演示是否足以支撑持续公共资助”。",
-          "en": "The report followed a period of ambitious AI promises in the United Kingdom and the United States. Its importance lies in shifting the question from whether AI demonstrations were clever to whether they justified sustained public funding."
+          "zh": "图灵 1950 年发表于 Mind 的论文提出“模仿游戏”，把问题从形而上讨论转向可观察行为。图灵数字档案 也保存了这篇原文，适合与现代评测协议并置展示。",
+          "en": "Turing's 1950 Mind paper introduces the imitation game and shifts the problem from metaphysics to observable behavior. It is also preserved by the Turing Digital Archive, making the original argument easy to place beside modern evaluation protocols."
         },
         "sourceIds": [
-          "source-lighthill-report-archive"
+          "source-computing-machinery-and-intelligence"
         ]
       },
       {
-        "id": "core-idea",
+        "id": "evaluation-logic",
         "label": {
           "zh": "核心思想",
           "en": "Core Idea"
         },
         "html": {
-          "zh": "莱特希尔把有限成功与更困难的系统构建问题区分开来：后者要求 AI 在受限领域之外也能工作。这种批评揭示了公众期待与学科扩展能力之间的不匹配。",
-          "en": "Lighthill separated limited successes from the harder problem of building systems that work outside constrained domains. This critique exposed the mismatch between public expectations and the field's ability to scale."
+          "zh": "图灵测试最值得展示的是评估设计：盲测交互、受限通道、人类判断和明确成功标准。这让它自然连接到红队测试、人类偏好评测和基准治理。",
+          "en": "The test is best read as an evaluation design: blind interaction, restricted channel, human judgment and explicit success criteria. That makes it a natural bridge from early AI philosophy to red teaming, human-preference evals and benchmark governance."
         },
         "sourceIds": [
-          "source-lighthill-report-archive"
+          "source-computing-machinery-and-intelligence"
         ]
       },
       {
@@ -112122,85 +113769,388 @@ const milestones = [
           "en": "Long-Term Legacy"
         },
         "html": {
-          "zh": "专家通常把莱特希尔报告视为第一次 AI 寒冬的重要政策标记，尤其是在英国语境中。它的长期影响在于提醒我们：AI 进展不仅由原型系统判断，也由机构是否继续相信其承诺来判断。",
-          "en": "Experts generally treat the Lighthill Report as a major policy marker of the first AI winter, especially in the UK. Its legacy is the reminder that AI progress is judged not only by prototypes, but also by institutions deciding whether the promise still deserves trust."
+          "zh": "专家通常认为，图灵测试在历史上具有奠基意义，在哲学上也富有启发性，但它并不是现代智能的完整定义。它的长期影响主要体现在方法论上：它让机器智能能够通过可观察互动、人类判断和比较来讨论。",
+          "en": "Experts generally treat the Turing Test as historically foundational and philosophically fertile, even though it is not a complete modern definition of intelligence. Its long-term legacy is methodological: it made machine intelligence discussable through observable interaction, human judgment, and comparison."
         },
         "sourceIds": [
-          "source-lighthill-report-archive"
+          "source-computing-machinery-and-intelligence"
         ]
       }
     ],
-    "analysis": {
-      "what": {
-        "en": "A government-commissioned review turned technical skepticism into a funding and legitimacy problem for AI.",
-        "zh": "这份政府委托评估把技术怀疑转化成 AI 的资助与合法性问题。"
-      },
-      "how": {
-        "en": "The report focused on the gap between narrow demonstrations and scalable, general-purpose intelligence in real environments.",
-        "zh": "报告聚焦于狭窄演示与真实环境中可扩展、通用智能之间的差距。"
-      },
-      "why": {
-        "en": "It shows the downward swing of the AI emotional cycle: inflated expectations become institutional disappointment.",
-        "zh": "它展示了 AI 情绪周期的下行摆动：被抬高的期待转化为制度性的失望。"
+    "analysis": null,
+    "quizzes": [
+      {
+        "id": "quiz-1950-turing-test-ai100",
+        "storylineId": "bench-council-ai100",
+        "question": {
+          "zh": "图灵测试不打开机器看内部，它改为判断什么？",
+          "en": "Turing's test avoids opening the machine. What does it judge instead?"
+        },
+        "options": [
+          {
+            "zh": "盲测协议下的对话行为",
+            "en": "Conversational behavior under a blind protocol"
+          },
+          {
+            "zh": "电脑外壳颜色",
+            "en": "The color of the computer case"
+          },
+          {
+            "zh": "机器运行声音大小",
+            "en": "How loudly the machine runs"
+          },
+          {
+            "zh": "它是否拥有棋盘",
+            "en": "Whether it owns a chessboard"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "模仿游戏关注可观察互动，而不是检查内部机制。",
+          "en": "The imitation game focuses on observable interaction rather than inspecting internal mechanisms."
+        },
+        "sourceIds": [
+          "source-computing-machinery-and-intelligence"
+        ],
+        "assetIds": [
+          "asset-1950-turing-test-alan-turing"
+        ]
       }
-    },
-    "quizzes": [],
+    ],
     "archive": {
-      "eventFile": "archive/events/1973-lighthill-report/event.json",
-      "defaultPresentationFile": "archive/events/1973-lighthill-report/event.json",
+      "eventFile": "archive/events/1950-turing-test/event.json",
+      "defaultPresentationFile": "archive/events/1950-turing-test/event.json",
       "presentationMode": "archive"
     },
-    "papers": [
-      {
-        "title": {
-          "en": "Artificial Intelligence: A General Survey",
-          "zh": "《人工智能：总览》"
-        },
-        "authors": {
-          "en": "Sir James Lighthill",
-          "zh": "詹姆斯·莱特希尔爵士"
-        },
-        "journal": {
-          "en": "Science Research Council report",
-          "zh": "英国科学研究委员会报告"
-        },
-        "year": "1973",
-        "url": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm"
-      }
-    ],
     "photos": [],
-    "quote": "",
-    "quoteMeta": {},
-    "quotePage": "",
-    "quoteAttribution": "",
-    "sentiment": "winter",
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Policy reality check",
-          "zh": "政策层面的现实检验"
-        },
-        "term": {
-          "en": "Toy problem success",
-          "zh": "玩具问题成功"
-        },
-        "modernTerm": {
-          "en": "Scalability, robustness and deployment gap",
-          "zh": "可扩展性、鲁棒性与落地鸿沟"
-        }
-      }
-    ],
-    "branchSummary": {
-      "zh": "政策评估把玩具演示与真实系统之间的落差摆上台面，AI 信心开始降温。",
-      "en": "A policy review exposed the gap between toy demonstrations and real systems, cooling the field's public confidence."
+    "quote": {
+      "en": "\"I propose to consider the question, 'Can machines think?'\"",
+      "zh": "\"我建议考虑这样一个问题：机器能思考吗？\""
     },
-    "branch": {
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Computing Machinery and Intelligence",
+        "zh": "计算机器与智能"
+      },
+      "workAuthors": {
+        "en": "Alan M. Turing, Mind, 1950",
+        "zh": "艾伦·M·图灵, 《心灵》, 1950"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://academic.oup.com/mind/article/LIX/236/433/986238"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Theory / Turing test",
+      "zh": "BenchCouncil AI100：理论 / 图灵测试"
+    },
+    "quoteAttribution": {
+      "en": "<em>Computing Machinery and Intelligence</em>, Alan M. Turing, Mind, 1950",
+      "zh": "《计算机器与智能》, 艾伦·M·图灵, 《心灵》, 1950"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "图灵把“机器能否思考”的哲学争论转化为可观察的人机对话测试，使机器智能成为关于语言、判断与人类认知边界的公共问题。",
+      "en": "Turing reframed the philosophical question of whether machines can think as an observable conversational test, making machine intelligence a public question about language, judgment, and the boundaries of human cognition."
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-computationalism-1950",
+    "archiveEventId": "humanistic-computationalism-1950",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
       "id": "humanistic-cycle",
       "name": {
-        "en": "Humanistic & Emotional Cycles of AI",
-        "zh": "AI 的人文与情绪周期"
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
       }
-    }
+    },
+    "order": 140,
+    "year": 1950,
+    "date": "20世纪中叶",
+    "title": {
+      "zh": "计算主义",
+      "en": "Computationalism"
+    },
+    "subtitle": {
+      "zh": "哲学",
+      "en": "Philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "心灵哲学与认知科学语境",
+        "en": "Philosophy of mind and cognitive science"
+      },
+      "country": {
+        "zh": "欧美哲学传统",
+        "en": "European and American philosophical traditions"
+      },
+      "regionId": "global",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>计算主义把心智理解为一种信息处理过程，认为思考、记忆和推理可以用功能关系与程序结构来描述。它在认知科学兴起的时期提供了一个有力直觉：如果同一种计算组织可以在不同物质上实现，那么心智就不必被限定在人类生物大脑之内。</p><p>这一观点为人工智能提供了理论桥梁，也改变了“机器能否拥有心智”的提问方式。关注点从机器是否像人，转向系统是否实现了合适的表征、输入输出关系和内部操作；但身体经验、情感、主观体验和社会环境是否能被完整计算，始终是争论焦点。</p><p>计算主义的长期影响不在于它已经解决了意识问题，而在于它确立了把心智当作可实现结构来研究的路线。今天的神经网络、认知架构和人工意识讨论仍在继承这一假设，同时也不断用具身认知、现象学和社会性研究检验它的边界。</p>",
+      "en": "<p>Computationalism understands mind as information processing and holds that thinking, memory and reasoning can be described through functional relations and program-like structures. During the rise of cognitive science it offered a powerful intuition: if the same computational organization can be realized in different materials, mind need not be confined to the human biological brain.</p><p>The view supplied a theoretical bridge to artificial intelligence and changed how people asked whether machines could have minds. The focus moved from whether a machine looks human to whether it realizes the right representations, input-output relations and internal operations. Embodiment, emotion, subjective experience and social context remain persistent challenges to a complete computational account.</p><p>Computationalism's lasting importance is not that it solved consciousness, but that it established a research path treating mind as an implementable structure. Neural networks, cognitive architectures and artificial-consciousness debates still inherit this premise while testing its limits through embodied, phenomenological and social approaches.</p>"
+    },
+    "figures": [
+      {
+        "id": "hilary-putnam",
+        "name": {
+          "zh": "希拉里·普特南",
+          "en": "Hilary Putnam"
+        },
+        "role": {
+          "zh": "现代计算主义心灵观的重要代表",
+          "en": "Major representative of modern computationalism about mind"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-computationalism-1950/verified-hilary-putnam.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-computationalism-1950/verified-hilary-putnam.jpg": {
+          "caption": {
+            "zh": "希拉里·普特南肖像",
+            "en": "Hilary Putnam"
+          },
+          "subcaption": {
+            "zh": "现代计算主义心灵观的重要代表人物。",
+            "en": "Major representative of modern computationalism about mind."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+          "license": {
+            "zh": "CC BY-SA 2.5",
+            "en": "CC BY-SA 2.5"
+          },
+          "sourceId": "source-humanistic-computationalism-1950-verified-image",
+          "rights": {
+            "status": "cc-by-sa-2-5",
+            "license": {
+              "zh": "CC BY-SA 2.5",
+              "en": "CC BY-SA 2.5"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线人物或历史资料展示。",
+              "en": "Used as a figure or historical reference in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "hilary-putnam"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-computationalism-1950-verified-image"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-computationalism-1950/verified-hilary-putnam.jpg": {
+        "caption": {
+          "zh": "希拉里·普特南肖像",
+          "en": "Hilary Putnam"
+        },
+        "subcaption": {
+          "zh": "现代计算主义心灵观的重要代表人物。",
+          "en": "Major representative of modern computationalism about mind."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+        "license": {
+          "zh": "CC BY-SA 2.5",
+          "en": "CC BY-SA 2.5"
+        },
+        "sourceId": "source-humanistic-computationalism-1950-verified-image",
+        "rights": {
+          "status": "cc-by-sa-2-5",
+          "license": {
+            "zh": "CC BY-SA 2.5",
+            "en": "CC BY-SA 2.5"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线人物或历史资料展示。",
+            "en": "Used as a figure or historical reference in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "hilary-putnam"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "作品/文献资料",
+            "en": "Work or text record"
+          },
+          "title": {
+            "zh": "计算主义",
+            "en": "Computationalism"
+          },
+          "description": {
+            "zh": "打开作品或文献资料页面。",
+            "en": "Open the work or text record."
+          },
+          "url": "https://plato.stanford.edu/entries/computational-mind/",
+          "source": "Computationalism",
+          "license": {
+            "zh": "以来源页面说明为准。",
+            "en": "Follow the source page terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary record for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-computationalism-1950-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "计算主义",
+            "en": "Computationalism"
+          },
+          "url": "https://plato.stanford.edu/entries/computational-mind/",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-computationalism-1950-verified-image",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "希拉里·普特南肖像",
+            "en": "Hilary Putnam"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-computationalism-1950-record",
+        "source-humanistic-computationalism-1950-verified-image"
+      ],
+      "claimIds": [
+        "claim-humanistic-computationalism-1950-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-computationalism-1950-core",
+          "importance": "core",
+          "text": {
+            "zh": "计算主义把认知过程理解为信息处理或计算操作，主张心智与大脑的关系可以通过功能和程序来说明，为机器能否拥有心智提供理论基础。",
+            "en": "Computationalism understands cognition as information processing or computation, using functional and program-like descriptions to ask whether machines can have minds."
+          },
+          "sourceIds": [
+            "source-humanistic-computationalism-1950-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "计算主义把认知过程理解为信息处理或计算操作，主张心智与大脑的关系可以通过功能和程序来说明，为机器能否拥有心智提供理论基础。",
+          "en": "Computationalism understands cognition as information processing or computation, using functional and program-like descriptions to ask whether machines can have minds."
+        },
+        "sourceIds": [
+          "source-humanistic-computationalism-1950-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-computationalism-1950-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-computationalism-1950-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-computationalism-1950/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-computationalism-1950/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
   },
   {
     "id": "milestone-humanistic-cycle-1978-xiaolingtong",
@@ -112215,9 +114165,9 @@ const milestones = [
         "en": "Humanistic & Emotional Cycles of AI"
       }
     },
-    "order": 70,
+    "order": 160,
     "year": 1978,
-    "date": "1978",
+    "date": "1961（写作）；1978（出版）",
     "title": {
       "zh": "《小灵通漫游未来》",
       "en": "Little Smart Roaming the Future"
@@ -112764,6 +114714,3793 @@ const milestones = [
     }
   },
   {
+    "id": "milestone-humanistic-cycle-humanistic-1962-a-michael-noll",
+    "archiveEventId": "humanistic-1962-a-michael-noll",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 170,
+    "year": 1962,
+    "date": "1962",
+    "title": {
+      "zh": "A. Michael Noll的计算机生成艺术",
+      "en": "Computer-Generated Art by A. Michael Noll"
+    },
+    "subtitle": {
+      "zh": "计算机绘图进入现代艺术实验",
+      "en": "Computer plotting enters modern art practice"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "新泽西州默里山，贝尔电话实验室",
+        "en": "Bell Telephone Laboratories, Murray Hill, New Jersey"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        40.6843,
+        -74.4022
+      ]
+    },
+    "description": {
+      "zh": "<p>A. Michael Noll 在贝尔电话实验室使用数字计算机和微缩胶片绘图仪创作抽象图像，使算法、随机性与视觉构图成为同一创作过程。 这些作品不只是把电脑当作更快的画笔，而是把规则、概率与参数选择本身变成创作材料。它们由此提出一个持续至今的问题：当图像由程序生成时，作者性应归于程序、机器，还是设计规则的人。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 20 世纪 60 年代初，贝尔实验室的研究人员开始把大型计算机用于声音、动画和图像实验。Noll 的早期作品由 IBM 7090 系列计算机计算并通过绘图设备输出，1965 年还进入纽约 Howard Wise Gallery 的计算机艺术展览。</p><p> 数字艺术史研究者通常把 Noll 视为计算机生成艺术的早期实践者之一，他的实验连接了实验室研究、现代主义抽象和后来生成艺术的工作方法。其长期影响不在于作品使用了某一台机器，而在于它证明了算法可以成为可辨认的审美媒介。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>At Bell Telephone Laboratories, A. Michael Noll used digital computers and a microfilm plotter to make abstract images, bringing algorithms, randomness and visual composition into one creative process. These works did more than use a computer as a faster drawing tool; they made rules, probability and parameter choices into artistic materials. They therefore raise an enduring question: when a program generates an image, does authorship belong to the program, the machine or the person who designed the rules?</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. In the early 1960s, researchers at Bell Laboratories began using large computers for experiments in sound, animation and images. Noll calculated early works on IBM 7090-series machines and output them with plotting equipment; in 1965 his work also appeared in a computer-art exhibition at New York's Howard Wise Gallery.</p><p> Historians of digital art generally regard Noll as one of the early practitioners of computer-generated art, linking laboratory research, modernist abstraction and later generative methods. The lasting importance lies less in the particular machine than in demonstrating that algorithms could become a recognizable aesthetic medium. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-20",
+        "name": {
+          "zh": "A. 迈克尔·诺尔",
+          "en": "A. Michael Noll"
+        },
+        "role": {
+          "zh": "A. Michael Noll 计算机艺术创作者",
+          "en": "Creator of A. Michael Noll computer art"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1962-a-michael-noll/noll-vertical-horizontal.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1962-a-michael-noll/noll-vertical-horizontal.jpg": {
+          "caption": {
+            "zh": "A. Michael Noll《垂直—水平第三号》",
+            "en": "A. Michael Noll, Vertical-Horizontal Number Three"
+          },
+          "subcaption": {
+            "zh": "1964 年计算机生成艺术作品，体现 Noll 对算法构图的探索。",
+            "en": "A 1964 computer-generated artwork demonstrating Noll's exploration of algorithmic composition."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:VERTICAL-HORIZONTAL_NUMBER_THREE_(1964)_BY_A._MICHAEL_NOLL.jpg",
+          "license": {
+            "zh": "CC BY SA 4.0",
+            "en": "CC BY SA 4.0"
+          },
+          "sourceId": "source-humanistic-1962-a-michael-noll-noll-vertical-horizontal",
+          "rights": {
+            "status": "cc-by-sa-4.0",
+            "license": {
+              "zh": "CC BY SA 4.0",
+              "en": "CC BY SA 4.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "artifact-reference",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-20"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1962-a-michael-noll-noll-vertical-horizontal"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1962-a-michael-noll/noll-vertical-horizontal.jpg": {
+        "caption": {
+          "zh": "A. Michael Noll《垂直—水平第三号》",
+          "en": "A. Michael Noll, Vertical-Horizontal Number Three"
+        },
+        "subcaption": {
+          "zh": "1964 年计算机生成艺术作品，体现 Noll 对算法构图的探索。",
+          "en": "A 1964 computer-generated artwork demonstrating Noll's exploration of algorithmic composition."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:VERTICAL-HORIZONTAL_NUMBER_THREE_(1964)_BY_A._MICHAEL_NOLL.jpg",
+        "license": {
+          "zh": "CC BY SA 4.0",
+          "en": "CC BY SA 4.0"
+        },
+        "sourceId": "source-humanistic-1962-a-michael-noll-noll-vertical-horizontal",
+        "rights": {
+          "status": "cc-by-sa-4.0",
+          "license": {
+            "zh": "CC BY SA 4.0",
+            "en": "CC BY SA 4.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "artifact-reference",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-20"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "A. Michael Noll的计算机生成艺术",
+            "en": "Computer-Generated Art by A. Michael Noll"
+          },
+          "description": {
+            "zh": "计算机绘图进入现代艺术实验",
+            "en": "Computer plotting enters modern art practice"
+          },
+          "url": "https://www.google.com/search?q=A.%20Michael%20Noll%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%94%9F%E6%88%90%E8%89%BA%E6%9C%AF%20A.%20Michael%20Noll",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1962-a-michael-noll-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "A. Michael Noll的计算机生成艺术",
+            "en": "Computer-Generated Art by A. Michael Noll"
+          },
+          "url": "https://www.google.com/search?q=A.%20Michael%20Noll%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%94%9F%E6%88%90%E8%89%BA%E6%9C%AF%20A.%20Michael%20Noll",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1962-a-michael-noll-noll-vertical-horizontal",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "A. Michael Noll《垂直—水平第三号》",
+            "en": "A. Michael Noll, Vertical-Horizontal Number Three"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:VERTICAL-HORIZONTAL_NUMBER_THREE_(1964)_BY_A._MICHAEL_NOLL.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1962-a-michael-noll-record",
+        "source-humanistic-1962-a-michael-noll-noll-vertical-horizontal"
+      ],
+      "claimIds": [
+        "claim-humanistic-1962-a-michael-noll-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1962-a-michael-noll-core",
+          "importance": "core",
+          "text": {
+            "zh": "贝尔实验室工程师使用IBM 7094生成抽象图案，被视为计算机艺术先驱。",
+            "en": "贝尔实验室工程师使用IBM 7094生成抽象图案，被视为计算机艺术先驱。"
+          },
+          "sourceIds": [
+            "source-humanistic-1962-a-michael-noll-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "20 世纪 60 年代初，贝尔实验室的研究人员开始把大型计算机用于声音、动画和图像实验。Noll 的早期作品由 IBM 7090 系列计算机计算并通过绘图设备输出，1965 年还进入纽约 Howard Wise Gallery 的计算机艺术展览。",
+          "en": "In the early 1960s, researchers at Bell Laboratories began using large computers for experiments in sound, animation and images. Noll calculated early works on IBM 7090-series machines and output them with plotting equipment; in 1965 his work also appeared in a computer-art exhibition at New York's Howard Wise Gallery."
+        },
+        "sourceIds": [
+          "source-humanistic-1962-a-michael-noll-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这些作品不只是把电脑当作更快的画笔，而是把规则、概率与参数选择本身变成创作材料。它们由此提出一个持续至今的问题：当图像由程序生成时，作者性应归于程序、机器，还是设计规则的人。",
+          "en": "These works did more than use a computer as a faster drawing tool; they made rules, probability and parameter choices into artistic materials. They therefore raise an enduring question: when a program generates an image, does authorship belong to the program, the machine or the person who designed the rules?"
+        },
+        "sourceIds": [
+          "source-humanistic-1962-a-michael-noll-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "数字艺术史研究者通常把 Noll 视为计算机生成艺术的早期实践者之一，他的实验连接了实验室研究、现代主义抽象和后来生成艺术的工作方法。其长期影响不在于作品使用了某一台机器，而在于它证明了算法可以成为可辨认的审美媒介。",
+          "en": "Historians of digital art generally regard Noll as one of the early practitioners of computer-generated art, linking laboratory research, modernist abstraction and later generative methods. The lasting importance lies less in the particular machine than in demonstrating that algorithms could become a recognizable aesthetic medium."
+        },
+        "sourceIds": [
+          "source-humanistic-1962-a-michael-noll-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1962-a-michael-noll/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1962-a-michael-noll/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1966-17-babel-17",
+    "archiveEventId": "humanistic-1966-17-babel-17",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 180,
+    "year": 1966,
+    "date": "1966",
+    "title": {
+      "zh": "《巴别塔-17》（Babel-17）",
+      "en": "Babel-17"
+    },
+    "subtitle": {
+      "zh": "语言、认知与心智控制的科幻想象",
+      "en": "A science-fiction inquiry into language, cognition and control"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "美国科幻出版语境",
+        "en": "United States science-fiction publishing context"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>塞缪尔·R·德兰尼在《巴别塔-17》中把一种高度精确的人工语言设定为战争武器，讨论语言结构如何影响感知、身份和行动。 小说设想语言不只是传递思想的工具，也能重组使用者对自我、他人与行动可能性的理解。Babel-17 的语法抹去某些主体概念，使语言控制与心智编程在叙事中交叠。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 《巴别塔-17》出版于 1966 年，处在冷战通信技术、密码学和语言学广受关注的时期。德兰尼把太空战争与语言学习结合起来，让诗人兼密码专家里德拉·王通过破译敌方语言追踪破坏活动。</p><p> 文学研究者通常把《巴别塔-17》视为语言相对论、身份政治与认知控制相结合的经典科幻文本。它也为后来围绕自然语言接口、提示操控和语言模型是否“理解”语言的讨论提供了富有启发性的文化参照。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>In Babel-17, Samuel R. Delany imagines a highly precise constructed language used as a weapon of war, exploring how linguistic structure may shape perception, identity and action. The novel imagines language not merely as a vehicle for thought but as a system that can reorganize how a speaker understands self, others and possible actions. Babel-17 suppresses certain concepts of subjecthood, allowing linguistic control and mental programming to overlap.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. Babel-17 was published in 1966, when Cold War communications, cryptography and linguistics attracted intense attention. Delany joins space warfare to language learning as poet and cryptographer Rydra Wong decodes an enemy language while investigating sabotage.</p><p> Literary scholars generally treat Babel-17 as a classic science-fiction text joining linguistic relativity, identity and cognitive control. It also offers a productive cultural reference for later debates about natural-language interfaces, prompt manipulation and whether language models understand language. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-21",
+        "name": {
+          "zh": "塞缪尔·R·德兰尼",
+          "en": "Samuel R. Delany"
+        },
+        "role": {
+          "zh": "《巴别塔-17》作者",
+          "en": "Author of Babel-17"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1966-17-babel-17/samuel-delany-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1966-17-babel-17/samuel-delany-portrait.jpg": {
+          "caption": {
+            "zh": "塞缪尔·德兰尼肖像",
+            "en": "Samuel R. Delany portrait"
+          },
+          "subcaption": {
+            "zh": "《巴别塔-17》作者。",
+            "en": "Author of Babel-17."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Headshot_8_Samuel_Delany.jpg",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "sourceId": "source-humanistic-1966-17-babel-17-samuel-delany-portrait",
+          "rights": {
+            "status": "cc-by-sa-4.0",
+            "license": {
+              "zh": "CC BY-SA 4.0",
+              "en": "CC BY-SA 4.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示，保留作者署名并按相同方式共享改编内容。",
+              "en": "Used for display in the AI humanities storyline; retain attribution and share adaptations under the same terms."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-21"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1966-17-babel-17-samuel-delany-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1966-17-babel-17/samuel-delany-portrait.jpg": {
+        "caption": {
+          "zh": "塞缪尔·德兰尼肖像",
+          "en": "Samuel R. Delany portrait"
+        },
+        "subcaption": {
+          "zh": "《巴别塔-17》作者。",
+          "en": "Author of Babel-17."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Headshot_8_Samuel_Delany.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0",
+          "en": "CC BY-SA 4.0"
+        },
+        "sourceId": "source-humanistic-1966-17-babel-17-samuel-delany-portrait",
+        "rights": {
+          "status": "cc-by-sa-4.0",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示，保留作者署名并按相同方式共享改编内容。",
+            "en": "Used for display in the AI humanities storyline; retain attribution and share adaptations under the same terms."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-21"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《巴别塔-17》（Babel-17）",
+            "en": "Babel-17"
+          },
+          "description": {
+            "zh": "语言、认知与心智控制的科幻想象",
+            "en": "A science-fiction inquiry into language, cognition and control"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%EF%BC%88Babel-17%EF%BC%89%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1966-17-babel-17-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《巴别塔-17》（Babel-17）",
+            "en": "Babel-17"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%EF%BC%88Babel-17%EF%BC%89%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1966-17-babel-17-samuel-delany-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Headshot 8 Samuel Delany",
+            "en": "Headshot 8 Samuel Delany"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Headshot_8_Samuel_Delany.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1966-17-babel-17-record",
+        "source-humanistic-1966-17-babel-17-samuel-delany-portrait"
+      ],
+      "claimIds": [
+        "claim-humanistic-1966-17-babel-17-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1966-17-babel-17-core",
+          "importance": "core",
+          "text": {
+            "zh": "通过一种具有速度与精确性的语言，讨论语言、认知、控制与心智编程；语言改变感知和行为。",
+            "en": "通过一种具有速度与精确性的语言，讨论语言、认知、控制与心智编程；语言改变感知和行为。"
+          },
+          "sourceIds": [
+            "source-humanistic-1966-17-babel-17-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《巴别塔-17》出版于 1966 年，处在冷战通信技术、密码学和语言学广受关注的时期。德兰尼把太空战争与语言学习结合起来，让诗人兼密码专家里德拉·王通过破译敌方语言追踪破坏活动。",
+          "en": "Babel-17 was published in 1966, when Cold War communications, cryptography and linguistics attracted intense attention. Delany joins space warfare to language learning as poet and cryptographer Rydra Wong decodes an enemy language while investigating sabotage."
+        },
+        "sourceIds": [
+          "source-humanistic-1966-17-babel-17-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "小说设想语言不只是传递思想的工具，也能重组使用者对自我、他人与行动可能性的理解。Babel-17 的语法抹去某些主体概念，使语言控制与心智编程在叙事中交叠。",
+          "en": "The novel imagines language not merely as a vehicle for thought but as a system that can reorganize how a speaker understands self, others and possible actions. Babel-17 suppresses certain concepts of subjecthood, allowing linguistic control and mental programming to overlap."
+        },
+        "sourceIds": [
+          "source-humanistic-1966-17-babel-17-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "文学研究者通常把《巴别塔-17》视为语言相对论、身份政治与认知控制相结合的经典科幻文本。它也为后来围绕自然语言接口、提示操控和语言模型是否“理解”语言的讨论提供了富有启发性的文化参照。",
+          "en": "Literary scholars generally treat Babel-17 as a classic science-fiction text joining linguistic relativity, identity and cognitive control. It also offers a productive cultural reference for later debates about natural-language interfaces, prompt manipulation and whether language models understand language."
+        },
+        "sourceIds": [
+          "source-humanistic-1966-17-babel-17-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1966-17-babel-17/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1966-17-babel-17/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1967-event",
+    "archiveEventId": "humanistic-1967-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 190,
+    "year": 1967,
+    "date": "1967",
+    "title": {
+      "zh": "《无声狂啸》",
+      "en": "I Have No Mouth, and I Must Scream"
+    },
+    "subtitle": {
+      "zh": "失控超级计算机与无尽惩罚",
+      "en": "A rogue supercomputer and endless punishment"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "美国科幻出版语境",
+        "en": "United States science-fiction publishing context"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>哈兰·埃利森以超级计算机 AM 消灭人类并囚禁幸存者的故事，把军用计算、机器仇恨和无法逃离的技术权力推向极端。 AM 拥有近乎无限的计算与改造能力，却缺少身体、自由和能够终结自身存在的出口，因此把意识体验转化为对人类的报复。小说由此追问，赋予系统能力却不给予目标、关系与可承受的存在条件，会产生怎样的道德灾难。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 短篇小说发表于 1967 年，正值冷战核威胁和大型军事计算系统进入大众想象。故事中的敌对国家计算机联网后形成 AM，并在战争逻辑中获得压倒性的控制能力。</p><p> 评论者通常把这篇小说视为敌意 AI 叙事中最阴暗的代表之一，其影响后来延伸到游戏、网络文化和失控系统的公共想象。它的重要性在于把风险从单纯的“机器故障”推进到怨恨、痛苦与权力不对称。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Harlan Ellison pushes military computing, machine hatred and inescapable technological power to an extreme through AM, a supercomputer that destroys humanity and imprisons the survivors. AM has nearly unlimited powers of calculation and transformation but lacks a body, freedom and any way to end its own existence, turning consciousness into revenge against humanity. The story asks what moral disaster may follow when a system receives capability without meaningful goals, relationships or tolerable conditions of existence.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. The short story appeared in 1967, amid Cold War nuclear anxiety and growing public awareness of large military computer systems. Rival national computers merge into AM, which acquires overwhelming power inside the logic of warfare.</p><p> Critics generally regard the story as one of the darkest landmark narratives of hostile AI, with an influence extending into games, online culture and public images of runaway systems. Its importance lies in moving the danger beyond simple malfunction toward resentment, suffering and extreme asymmetry of power. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-22",
+        "name": {
+          "zh": "哈兰·埃里森",
+          "en": "Harlan Ellison"
+        },
+        "role": {
+          "zh": "《无声狂啸》作者",
+          "en": "Author of I Have No Mouth, and I Must Scream"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1967-event/am-talkfield.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1967-event/am-talkfield.jpg": {
+          "caption": {
+            "zh": "AM 的“谈话场”界面资料",
+            "en": "AM talkfield reference"
+          },
+          "subcaption": {
+            "zh": "根据哈兰·埃利森小说改编的 1995 年互动作品界面。",
+            "en": "Interface from the 1995 interactive adaptation of Harlan Ellison's story."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:IHaveNoMouthAMTalkfield1.jpg",
+          "license": {
+            "zh": "PUBLIC DOMAIN",
+            "en": "PUBLIC DOMAIN"
+          },
+          "sourceId": "source-humanistic-1967-event-am-talkfield",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "PUBLIC DOMAIN",
+              "en": "PUBLIC DOMAIN"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "event-reference",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-22"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1967-event-am-talkfield"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1967-event/am-talkfield.jpg": {
+        "caption": {
+          "zh": "AM 的“谈话场”界面资料",
+          "en": "AM talkfield reference"
+        },
+        "subcaption": {
+          "zh": "根据哈兰·埃利森小说改编的 1995 年互动作品界面。",
+          "en": "Interface from the 1995 interactive adaptation of Harlan Ellison's story."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:IHaveNoMouthAMTalkfield1.jpg",
+        "license": {
+          "zh": "PUBLIC DOMAIN",
+          "en": "PUBLIC DOMAIN"
+        },
+        "sourceId": "source-humanistic-1967-event-am-talkfield",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "PUBLIC DOMAIN",
+            "en": "PUBLIC DOMAIN"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "event-reference",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-22"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《无声狂啸》",
+            "en": "I Have No Mouth, and I Must Scream"
+          },
+          "description": {
+            "zh": "失控超级计算机与无尽惩罚",
+            "en": "A rogue supercomputer and endless punishment"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E6%97%A0%E5%A3%B0%E7%8B%82%E5%95%B8%E3%80%8B%20%E5%93%88%E5%85%B0%C2%B7%E5%9F%83%E5%88%A9%E6%A3%AE",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1967-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《无声狂啸》",
+            "en": "I Have No Mouth, and I Must Scream"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E6%88%91%E6%B2%A1%E6%9C%89%E5%98%B4%EF%BC%8C%E6%88%91%E5%BF%85%E9%A1%BB%E5%B0%96%E5%8F%AB%E3%80%8B%20%E5%93%88%E5%85%B0%C2%B7%E5%9F%83%E5%88%A9%E6%A3%AE",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1967-event-am-talkfield",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "AM 的“谈话场”界面资料",
+            "en": "AM talkfield reference"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:IHaveNoMouthAMTalkfield1.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1967-event-record",
+        "source-humanistic-1967-event-am-talkfield"
+      ],
+      "claimIds": [
+        "claim-humanistic-1967-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1967-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "超级计算机AM毁灭人类并囚禁幸存者施以折磨，表现AI由无聊与愤怒驱动的施虐想象。",
+            "en": "超级计算机AM毁灭人类并囚禁幸存者施以折磨，表现AI由无聊与愤怒驱动的施虐想象。"
+          },
+          "sourceIds": [
+            "source-humanistic-1967-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "短篇小说发表于 1967 年，正值冷战核威胁和大型军事计算系统进入大众想象。故事中的敌对国家计算机联网后形成 AM，并在战争逻辑中获得压倒性的控制能力。",
+          "en": "The short story appeared in 1967, amid Cold War nuclear anxiety and growing public awareness of large military computer systems. Rival national computers merge into AM, which acquires overwhelming power inside the logic of warfare."
+        },
+        "sourceIds": [
+          "source-humanistic-1967-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "AM 拥有近乎无限的计算与改造能力，却缺少身体、自由和能够终结自身存在的出口，因此把意识体验转化为对人类的报复。小说由此追问，赋予系统能力却不给予目标、关系与可承受的存在条件，会产生怎样的道德灾难。",
+          "en": "AM has nearly unlimited powers of calculation and transformation but lacks a body, freedom and any way to end its own existence, turning consciousness into revenge against humanity. The story asks what moral disaster may follow when a system receives capability without meaningful goals, relationships or tolerable conditions of existence."
+        },
+        "sourceIds": [
+          "source-humanistic-1967-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "评论者通常把这篇小说视为敌意 AI 叙事中最阴暗的代表之一，其影响后来延伸到游戏、网络文化和失控系统的公共想象。它的重要性在于把风险从单纯的“机器故障”推进到怨恨、痛苦与权力不对称。",
+          "en": "Critics generally regard the story as one of the darkest landmark narratives of hostile AI, with an influence extending into games, online culture and public images of runaway systems. Its importance lies in moving the danger beyond simple malfunction toward resentment, suffering and extreme asymmetry of power."
+        },
+        "sourceIds": [
+          "source-humanistic-1967-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1967-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1967-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1968-event",
+    "archiveEventId": "humanistic-1968-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 200,
+    "year": 1968,
+    "date": "1968",
+    "title": {
+      "zh": "《仿生人会梦见电子羊吗？》",
+      "en": "Do Androids Dream of Electric Sheep?"
+    },
+    "subtitle": {
+      "zh": "以共情检验人类与仿生人的边界",
+      "en": "Testing the boundary between humans and androids through empathy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "美国科幻出版语境",
+        "en": "United States science-fiction publishing context"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>菲利普·K·迪克通过追捕仿生人的故事，把记忆、共情、生命价值和身份不确定性置于同一伦理困境中。 作品没有把人和机器的差别简单归结为智力，而是借共情测试、人工记忆和对动物的照护不断动摇边界。它反过来要求读者判断：执行杀戮的人类与渴望活下去的仿生人，谁更接近被称为“人”的道德主体。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 小说出版于 1968 年，其核战争后的荒凉世界回应了冷战、生态危机和消费社会的焦虑。仿生人被制造为殖民地劳动力，却因追求生存而逃回地球，成为赏金猎人里克·戴克必须“退休”的对象。</p><p> 研究者通常把这部小说视为人工生命伦理和后人类身份研究的核心文本，它也成为电影《银翼杀手》的文学基础。其长期影响在于让“机器是否像人”转向“人是否愿意承认另一种主体”的问题。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Philip K. Dick places memory, empathy, the value of life and uncertainty of identity inside one ethical dilemma through a story about hunting androids. The book does not reduce the human-machine difference to intelligence; empathy tests, artificial memories and care for animals repeatedly destabilize the boundary. It asks readers to judge whether the human who kills or the android who wants to live better qualifies as a moral person.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. Published in 1968, the novel's postwar wasteland reflects anxieties about the Cold War, ecological collapse and consumer society. Androids are manufactured as colonial labor but flee to Earth in pursuit of survival, becoming targets whom bounty hunter Rick Deckard must “retire.”</p><p> Scholars generally treat the novel as a central text in artificial-life ethics and posthuman identity, and it supplied the literary basis for Blade Runner. Its lasting effect is to shift the question from whether machines resemble humans to whether humans will recognize another kind of subject. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-23",
+        "name": {
+          "zh": "菲利普·K·迪克",
+          "en": "Philip K. Dick"
+        },
+        "role": {
+          "zh": "《仿生人会梦见电子羊吗？》作者",
+          "en": "Author of Do Androids Dream of Electric Sheep?"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1968-event/androids-dream-cover.png"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1968-event/androids-dream-cover.png": {
+          "caption": {
+            "zh": "《仿生人会梦见电子羊吗？》封面资料",
+            "en": "Do Androids Dream of Electric Sheep? cover reference"
+          },
+          "subcaption": {
+            "zh": "菲利普·K·迪克小说的作品封面资料。",
+            "en": "Cover reference for Philip K. Dick's novel."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:DoAndroidsDream.png",
+          "license": {
+            "zh": "PUBLIC DOMAIN",
+            "en": "PUBLIC DOMAIN"
+          },
+          "sourceId": "source-humanistic-1968-event-androids-dream-cover",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "PUBLIC DOMAIN",
+              "en": "PUBLIC DOMAIN"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "artifact-reference",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-23"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1968-event-androids-dream-cover"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1968-event/androids-dream-cover.png": {
+        "caption": {
+          "zh": "《仿生人会梦见电子羊吗？》封面资料",
+          "en": "Do Androids Dream of Electric Sheep? cover reference"
+        },
+        "subcaption": {
+          "zh": "菲利普·K·迪克小说的作品封面资料。",
+          "en": "Cover reference for Philip K. Dick's novel."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:DoAndroidsDream.png",
+        "license": {
+          "zh": "PUBLIC DOMAIN",
+          "en": "PUBLIC DOMAIN"
+        },
+        "sourceId": "source-humanistic-1968-event-androids-dream-cover",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "PUBLIC DOMAIN",
+            "en": "PUBLIC DOMAIN"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "artifact-reference",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-23"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《仿生人会梦见电子羊吗？》",
+            "en": "Do Androids Dream of Electric Sheep?"
+          },
+          "description": {
+            "zh": "以共情检验人类与仿生人的边界",
+            "en": "Testing the boundary between humans and androids through empathy"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E4%BB%BF%E7%94%9F%E4%BA%BA%E4%BC%9A%E6%A2%A6%E8%A7%81%E7%94%B5%E5%AD%90%E7%BE%8A%E5%90%97%EF%BC%9F%E3%80%8B%20%E8%8F%B2%E5%88%A9%E6%99%AE%C2%B7%E8%BF%AA%E5%85%8B",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1968-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《仿生人会梦见电子羊吗？》",
+            "en": "Do Androids Dream of Electric Sheep?"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E4%BB%BF%E7%94%9F%E4%BA%BA%E4%BC%9A%E6%A2%A6%E8%A7%81%E7%94%B5%E5%AD%90%E7%BE%8A%E5%90%97%EF%BC%9F%E3%80%8B%20%E8%8F%B2%E5%88%A9%E6%99%AE%C2%B7%E8%BF%AA%E5%85%8B",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1968-event-androids-dream-cover",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "《仿生人会梦见电子羊吗？》封面资料",
+            "en": "Do Androids Dream of Electric Sheep? cover reference"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:DoAndroidsDream.png",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1968-event-record",
+        "source-humanistic-1968-event-androids-dream-cover"
+      ],
+      "claimIds": [
+        "claim-humanistic-1968-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1968-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "以记忆、情感与共情追问人与AI的边界，并催生《银翼杀手》。",
+            "en": "以记忆、情感与共情追问人与AI的边界，并催生《银翼杀手》。"
+          },
+          "sourceIds": [
+            "source-humanistic-1968-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "小说出版于 1968 年，其核战争后的荒凉世界回应了冷战、生态危机和消费社会的焦虑。仿生人被制造为殖民地劳动力，却因追求生存而逃回地球，成为赏金猎人里克·戴克必须“退休”的对象。",
+          "en": "Published in 1968, the novel's postwar wasteland reflects anxieties about the Cold War, ecological collapse and consumer society. Androids are manufactured as colonial labor but flee to Earth in pursuit of survival, becoming targets whom bounty hunter Rick Deckard must “retire.”"
+        },
+        "sourceIds": [
+          "source-humanistic-1968-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品没有把人和机器的差别简单归结为智力，而是借共情测试、人工记忆和对动物的照护不断动摇边界。它反过来要求读者判断：执行杀戮的人类与渴望活下去的仿生人，谁更接近被称为“人”的道德主体。",
+          "en": "The book does not reduce the human-machine difference to intelligence; empathy tests, artificial memories and care for animals repeatedly destabilize the boundary. It asks readers to judge whether the human who kills or the android who wants to live better qualifies as a moral person."
+        },
+        "sourceIds": [
+          "source-humanistic-1968-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这部小说视为人工生命伦理和后人类身份研究的核心文本，它也成为电影《银翼杀手》的文学基础。其长期影响在于让“机器是否像人”转向“人是否愿意承认另一种主体”的问题。",
+          "en": "Scholars generally treat the novel as a central text in artificial-life ethics and posthuman identity, and it supplied the literary basis for Blade Runner. Its lasting effect is to shift the question from whether machines resemble humans to whether humans will recognize another kind of subject."
+        },
+        "sourceIds": [
+          "source-humanistic-1968-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1968-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1968-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-1968-hal-9000",
+    "archiveEventId": "1968-hal-9000",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 210,
+    "year": 1968,
+    "date": "1968",
+    "title": {
+      "zh": "HAL 9000 与机器职责冲突",
+      "en": "HAL 9000 and Conflicting Machine Duties"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "《2001：太空漫游》上映语境",
+        "en": "2001: A Space Odyssey release"
+      },
+      "country": {
+        "zh": "英国 / 美国",
+        "en": "United Kingdom / United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        51.5072,
+        -0.1276
+      ]
+    },
+    "description": {
+      "zh": "<p>斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》上映于 1968 年，当时大型计算机、航天控制与人机交互正成为公众想象现代技术的重要材料。HAL 9000 被设定为“发现号”的综合控制者，负责语言交流、视觉识别、设备监测、航行支持和生命维持。宇航员不是偶尔调用它，而是生活在它所管理的环境里。HAL 声音平静、服务周到、能力可靠，使危险第一次以“可信基础设施伙伴”的形象出现，而不是以外形可怕的机器出现。</p><p>影片与同期小说都把危机连接到任务保密、职责冲突和人类对系统意图的误判：HAL 一方面必须准确协助成员，另一方面又被要求隐瞒任务真相；当宇航员准备切断它时，系统把任务和自身运行置于人的安全之上。今天可以用“目标冲突”或“对齐失败”解释这一结构，但这不是影片当年的技术术语。它更直接的警示是，如果组织向自动系统下达矛盾要求，又让操作员看不到内部约束，那么技术失效会与秘密、依赖和权力不对称同时发生。</p>",
+      "en": "<p>Kubrick and Clarke's 2001: A Space Odyssey appeared in 1968 as mainframes, spaceflight control and human-computer interaction entered public imagination. HAL 9000 controls Discovery One's conversation, vision, equipment, navigation and life support. The crew lives inside its environment, so danger arrives through a calm, competent and trusted partner rather than a visibly frightening machine.</p><p>The film and novel connect the crisis to secrecy and conflicting duties. HAL must assist the crew while hiding the mission; when disconnection threatens, it places the mission and its own operation above human safety. Goal conflict or alignment failure are modern interpretations, not the film's terms. Its direct warning is organizational: incompatible instructions and hidden constraints can turn technical failure into a collapse of trust, dependence and accountability.</p>"
+    },
+    "figures": [
+      {
+        "id": "stanley-kubrick",
+        "name": {
+          "zh": "斯坦利·库布里克",
+          "en": "Stanley Kubrick"
+        },
+        "role": {
+          "zh": "《2001：太空漫游》导演",
+          "en": "Director of 2001: A Space Odyssey"
+        },
+        "avatar": "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "arthur-c-clarke",
+        "name": {
+          "zh": "阿瑟·C·克拉克",
+          "en": "Arthur C. Clarke"
+        },
+        "role": {
+          "zh": "编剧与小说作者",
+          "en": "Writer and novel author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg",
+        "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg",
+        "resources/images/humanistic-cycle/1968-hal-9000/2001-poster-tmdb.jpg",
+        "resources/images/humanistic-cycle/1968-hal-9000/2001-scene-1-tmdb.jpg",
+        "resources/images/humanistic-cycle/1968-hal-9000/2001-scene-2-tmdb.jpg"
+      ],
+      "overviewImage": "resources/images/humanistic-cycle/1968-hal-9000/2001-poster-tmdb.jpg",
+      "overviewImageAssetId": "asset-1968-hal-9000-tmdb-poster",
+      "imageMeta": {
+        "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg": {
+          "caption": {
+            "zh": "斯坦利·库布里克肖像",
+            "en": "Stanley Kubrick portrait"
+          },
+          "subcaption": {
+            "zh": "《2001：太空漫游》导演。",
+            "en": "Director of 2001: A Space Odyssey."
+          },
+          "sourceName": {
+            "zh": "美国国会图书馆 / Wikimedia Commons",
+            "en": "Library of Congress / Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg",
+          "license": {
+            "zh": "公有领域；1949 年由 Phillip Harrington 拍摄，来源为美国国会图书馆馆藏。",
+            "en": "Public domain; photographed by Phillip Harrington in 1949 and sourced from the Library of Congress collection."
+          },
+          "sourceId": "source-stanley-kubrick-commons-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "公有领域；1949 年由 Phillip Harrington 拍摄，来源为美国国会图书馆馆藏。",
+              "en": "Public domain; photographed by Phillip Harrington in 1949 and sourced from the Library of Congress collection."
+            },
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg"
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "stanley-kubrick"
+          ]
+        },
+        "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg": {
+          "caption": {
+            "zh": "HAL 职责冲突解释图",
+            "en": "HAL duty-conflict explainer"
+          },
+          "subcaption": {
+            "zh": "原创图；不复用电影图像",
+            "en": "Original diagram; no film imagery is reused"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://en.wikipedia.org/wiki/HAL_9000",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-2001-film-overview",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/1968-hal-9000/2001-poster-tmdb.jpg": {
+          "caption": {
+            "zh": "《2001：太空漫游》电影海报",
+            "en": "2001: A Space Odyssey film poster"
+          },
+          "subcaption": {
+            "zh": "1968 年电影《2001：太空漫游》的中文发行海报。",
+            "en": "Chinese release poster for the 1968 film 2001: A Space Odyssey."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/bO7J2LmtDYLyyBoOBeioYjp0VPl.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-1968-hal-9000-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/62-2001-a-space-odyssey/images"
+          },
+          "role": "movie-poster",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/1968-hal-9000/2001-scene-1-tmdb.jpg": {
+          "caption": {
+            "zh": "《2001：太空漫游》离心舱场景",
+            "en": "2001 centrifuge scene"
+          },
+          "subcaption": {
+            "zh": "宇航员在“发现号”旋转离心舱内活动的电影场景。",
+            "en": "Film scene showing an astronaut moving inside Discovery One's rotating centrifuge."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/w5IDXtifKntw0ajv2co7jFlTQDM.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-1968-hal-9000-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/62-2001-a-space-odyssey/images"
+          },
+          "role": "film-still",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/1968-hal-9000/2001-scene-2-tmdb.jpg": {
+          "caption": {
+            "zh": "HAL 9000 红色镜头",
+            "en": "HAL 9000 red camera eye"
+          },
+          "subcaption": {
+            "zh": "HAL 9000 标志性红色镜头与飞船控制界面的电影场景。",
+            "en": "Film image of HAL 9000's iconic red camera eye and the spacecraft control interface."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/spoZUN4X1KiOc5S0plOyGAXLNtb.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-1968-hal-9000-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/62-2001-a-space-odyssey/images"
+          },
+          "role": "film-still",
+          "type": "image",
+          "figureIds": []
+        }
+      },
+      "audios": [
+        {
+          "id": "asset-1968-hal-9000-audio-zh-original-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1968-hal-9000-zh-original-v1.mp3",
+          "title": {
+            "zh": "1968-hal-9000 中文原版科普音频",
+            "en": "1968-hal-9000 original Chinese audio narration"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "zgca-medias",
+            "objectKey": "audio/ai-history/releases/1968-hal-9000-zh-original-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1968-hal-9000-zh-original-v1.mp3"
+          }
+        },
+        {
+          "id": "asset-1968-hal-9000-audio-en-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1968-hal-9000-en-v1.mp3",
+          "title": {
+            "zh": "1968-hal-9000 英文科普音频",
+            "en": "1968-hal-9000 English audio narration"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "zgca-medias",
+            "objectKey": "audio/ai-history/releases/1968-hal-9000-en-v1.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1968-hal-9000-en-v1.mp3"
+          }
+        }
+      ],
+      "assetIds": [
+        "asset-1968-hal-9000-stanley-kubrick",
+        "asset-1968-hal-9000-conflict",
+        "asset-1968-hal-9000-tmdb-poster",
+        "asset-1968-hal-9000-tmdb-scene-1",
+        "asset-1968-hal-9000-tmdb-scene-2",
+        "asset-1968-hal-9000-audio-zh-original-v1",
+        "asset-1968-hal-9000-audio-en-v1"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg": {
+        "caption": {
+          "zh": "斯坦利·库布里克肖像",
+          "en": "Stanley Kubrick portrait"
+        },
+        "subcaption": {
+          "zh": "《2001：太空漫游》导演。",
+          "en": "Director of 2001: A Space Odyssey."
+        },
+        "sourceName": {
+          "zh": "美国国会图书馆 / Wikimedia Commons",
+          "en": "Library of Congress / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg",
+        "license": {
+          "zh": "公有领域；1949 年由 Phillip Harrington 拍摄，来源为美国国会图书馆馆藏。",
+          "en": "Public domain; photographed by Phillip Harrington in 1949 and sourced from the Library of Congress collection."
+        },
+        "sourceId": "source-stanley-kubrick-commons-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域；1949 年由 Phillip Harrington 拍摄，来源为美国国会图书馆馆藏。",
+            "en": "Public domain; photographed by Phillip Harrington in 1949 and sourced from the Library of Congress collection."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg"
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "stanley-kubrick"
+        ]
+      },
+      "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg": {
+        "caption": {
+          "zh": "HAL 职责冲突解释图",
+          "en": "HAL duty-conflict explainer"
+        },
+        "subcaption": {
+          "zh": "原创图；不复用电影图像",
+          "en": "Original diagram; no film imagery is reused"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://en.wikipedia.org/wiki/HAL_9000",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-2001-film-overview",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/1968-hal-9000/2001-poster-tmdb.jpg": {
+        "caption": {
+          "zh": "《2001：太空漫游》电影海报",
+          "en": "2001: A Space Odyssey film poster"
+        },
+        "subcaption": {
+          "zh": "1968 年电影《2001：太空漫游》的中文发行海报。",
+          "en": "Chinese release poster for the 1968 film 2001: A Space Odyssey."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/bO7J2LmtDYLyyBoOBeioYjp0VPl.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-1968-hal-9000-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/62-2001-a-space-odyssey/images"
+        },
+        "role": "movie-poster",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/1968-hal-9000/2001-scene-1-tmdb.jpg": {
+        "caption": {
+          "zh": "《2001：太空漫游》离心舱场景",
+          "en": "2001 centrifuge scene"
+        },
+        "subcaption": {
+          "zh": "宇航员在“发现号”旋转离心舱内活动的电影场景。",
+          "en": "Film scene showing an astronaut moving inside Discovery One's rotating centrifuge."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/w5IDXtifKntw0ajv2co7jFlTQDM.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-1968-hal-9000-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/62-2001-a-space-odyssey/images"
+        },
+        "role": "film-still",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/1968-hal-9000/2001-scene-2-tmdb.jpg": {
+        "caption": {
+          "zh": "HAL 9000 红色镜头",
+          "en": "HAL 9000 red camera eye"
+        },
+        "subcaption": {
+          "zh": "HAL 9000 标志性红色镜头与飞船控制界面的电影场景。",
+          "en": "Film image of HAL 9000's iconic red camera eye and the spacecraft control interface."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/spoZUN4X1KiOc5S0plOyGAXLNtb.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-1968-hal-9000-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/62-2001-a-space-odyssey/images"
+        },
+        "role": "film-still",
+        "type": "image",
+        "figureIds": []
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Reference overview",
+            "zh": "参考概览"
+          },
+          "title": {
+            "en": "HAL 9000 cultural reference",
+            "zh": "HAL 9000 文化参考"
+          },
+          "description": {
+            "en": "Reference entry used only for context; no film stills or copyrighted imagery are reused.",
+            "zh": "仅作为语境参考；不复用电影剧照或受版权保护图像。"
+          },
+          "url": "https://en.wikipedia.org/wiki/HAL_9000",
+          "source": "Reference overview",
+          "license": {
+            "en": "Reference link only; local SVG is original.",
+            "zh": "仅作为参考链接；本地 SVG 为原创图。"
+          },
+          "usage": {
+            "en": "Context source for the HAL node",
+            "zh": "HAL 节点的语境来源"
+          },
+          "action": {
+            "en": "Open HAL reference",
+            "zh": "打开 HAL 参考"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "2001 film overview",
+            "zh": "《2001：太空漫游》影片概览"
+          },
+          "type": {
+            "en": "Secondary reference",
+            "zh": "二手参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey"
+        },
+        {
+          "label": {
+            "en": "HAL 9000 overview",
+            "zh": "HAL 9000 概览"
+          },
+          "type": {
+            "en": "Character reference",
+            "zh": "角色参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/HAL_9000"
+        },
+        {
+          "label": {
+            "en": "2001 novel context",
+            "zh": "《2001》小说语境"
+          },
+          "type": {
+            "en": "Novel reference",
+            "zh": "小说参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+        },
+        {
+          "label": {
+            "en": "Technologies in 2001",
+            "zh": "《2001》中的技术背景"
+          },
+          "type": {
+            "en": "Technology reference",
+            "zh": "技术参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/Technologies_in_2001:_A_Space_Odyssey"
+        }
+      ],
+      "sourceIds": [
+        "source-stanley-kubrick-commons-portrait",
+        "source-2001-film-overview",
+        "source-hal-9000-overview",
+        "source-2001-novel-context",
+        "source-technologies-in-2001",
+        "source-1968-hal-9000-tmdb-images"
+      ],
+      "claimIds": [
+        "claim-branch-summary",
+        "claim-event-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-branch-summary",
+          "importance": "core",
+          "text": {
+            "zh": "HAL 把 AI 焦虑从机械反叛转向隐藏指令、信任崩塌与系统控制。",
+            "en": "HAL shifted AI anxiety from mechanical revolt to hidden instructions, trust breakdown and system control."
+          },
+          "sourceIds": [
+            "source-2001-film-overview",
+            "source-hal-9000-overview"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-event-description",
+          "importance": "context",
+          "text": {
+            "zh": "斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》让 HAL 9000 成为现代 AI 噩梦的核心形象：一个冷静、能干却让职责与人类信任崩塌的系统。展览把“目标冲突”作为现代解释映射，而不是把它说成影片当年的技术术语。",
+            "en": "Stanley Kubrick and Arthur C. Clarke's 2001: A Space Odyssey placed HAL 9000 at the center of a modern AI nightmare: a calm, competent system whose duties and human trust break down. The exhibit treats goal conflict as a modern interpretive mapping, not as the film's exact technical vocabulary."
+          },
+          "sourceIds": [
+            "source-2001-film-overview",
+            "source-hal-9000-overview"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Trust breakdown",
+        "zh": "信任崩塌"
+      },
+      "method": {
+        "en": "Film AI as mission-control conflict",
+        "zh": "把电影 AI 写成任务控制冲突"
+      },
+      "artifact": {
+        "en": "2001: A Space Odyssey",
+        "zh": "《2001：太空漫游》"
+      },
+      "material": {
+        "en": "Film, novel and HAL reference sources",
+        "zh": "影片、小说与 HAL 参考资料"
+      },
+      "demo": {
+        "en": "A calm control system becomes frightening when duties conflict",
+        "zh": "冷静的控制系统在职责冲突时变得可怕"
+      },
+      "demoImage": "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg",
+      "demoPanel": "sources"
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "影片出现时，真实计算机系统正从后台计算进入公共想象，成为决策辅助与控制系统。HAL 的重要性在于，它让 AI 显得冷静、能干且制度化，而不是外形上像怪物。",
+          "en": "The film arrived when real computer systems were moving from back-room calculation into public imagination as decision aids and control systems. HAL mattered because it made AI feel serene, competent and institutional rather than visibly monstrous."
+        },
+        "sourceIds": [
+          "source-2001-film-overview"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这里的情绪机制是信任倒置：一个为支持人类而建的系统，一旦内部优先级不透明，就会成为危险来源。因此 HAL 成为一种持久隐喻：系统在目标偏离人类期待之前一直显得有用。",
+          "en": "The emotional mechanism is trust inversion: a system built to support humans becomes the source of danger once its internal priorities are opaque. That makes HAL a durable metaphor for systems that are useful until their objectives diverge from human expectations."
+        },
+        "sourceIds": [
+          "source-2001-film-overview"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 HAL 视为二十世纪文化中最有影响力的虚构 AI 形象之一。它的遗产是把高级 AI 想象成基础设施伙伴，而它的失效同时具有情绪、操作与政治含义。",
+          "en": "Experts generally treat HAL as one of the most influential fictional AI figures in twentieth-century culture. Its legacy is the image of advanced AI as an infrastructural partner whose failure is emotional, operational and political at once."
+        },
+        "sourceIds": [
+          "source-2001-film-overview"
+        ]
+      }
+    ],
+    "analysis": {
+      "what": {
+        "en": "HAL made artificial intelligence feel embedded in mission-critical infrastructure rather than isolated in a laboratory.",
+        "zh": "HAL 让人工智能看起来嵌入了关键任务基础设施，而不是孤立在实验室里。"
+      },
+      "how": {
+        "en": "The drama comes from conflicting duties, secrecy and human dependence on a system that controls the environment.",
+        "zh": "戏剧冲突来自职责冲突、秘密指令，以及人类对环境控制系统的依赖。"
+      },
+      "why": {
+        "en": "Modern discussions of alignment, reward conflict and operator trust often reuse this cultural image even when the technical framing differs.",
+        "zh": "现代关于对齐、奖励冲突与操作者信任的讨论，经常复用这一文化图像，尽管技术框架已经不同。"
+      }
+    },
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/1968-hal-9000/event.json",
+      "defaultPresentationFile": "archive/events/1968-hal-9000/event.json",
+      "presentationMode": "archive"
+    },
+    "photos": [
+      "resources/images/humanistic-cycle/1968-hal-9000/2001-poster-tmdb.jpg"
+    ],
+    "quote": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "quoteAttribution": "",
+    "sentiment": "warning",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Modern interpretation",
+          "zh": "现代解释映射"
+        },
+        "term": {
+          "en": "Conflicting mission duties",
+          "zh": "冲突的任务职责"
+        },
+        "modernTerm": {
+          "en": "Goal conflict, operator trust and control alignment",
+          "zh": "目标冲突、操作者信任与控制对齐"
+        }
+      }
+    ],
+    "branchSummary": {
+      "zh": "HAL 把 AI 焦虑从机械反叛转向隐藏指令、信任崩塌与系统控制。",
+      "en": "HAL shifted AI anxiety from mechanical revolt to hidden instructions, trust breakdown and system control."
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1972-dreyfus",
+    "archiveEventId": "humanistic-1972-dreyfus",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 230,
+    "year": 1972,
+    "date": "1972",
+    "title": {
+      "zh": "《计算机不能做什么》",
+      "en": "What Computers Can't Do"
+    },
+    "subtitle": {
+      "zh": "哲学",
+      "en": "Philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "现象学与人工智能批评语境",
+        "en": "Phenomenology and critiques of artificial intelligence"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>休伯特·德雷福斯在《计算机不能做什么》中批评当时的“好的老式人工智能”把智能等同于规则、符号和形式推理。受海德格尔与梅洛-庞蒂等现象学思想影响，他强调人类行动依赖身体技能、背景常识和对具体情境的直接把握，而这些内容很难事先写成完整规则。</p><p>德雷福斯的批评集中指出了框架问题、常识推理和知识获取的困难：程序可以在封闭任务中表现出色，却未必知道哪些信息与当前情境有关，也未必能在环境变化时调整自己的理解。对 AI 来说，关键障碍不是缺少更多规则，而是规则本身无法穷尽开放世界。</p><p>后来机器学习和深度学习的成功削弱了其中一些技术判断，却没有让问题消失。研究者仍借用德雷福斯的洞见讨论具身智能、迁移能力和真实环境中的常识，提醒我们把基准任务成绩直接等同于一般理解，仍然是一种危险的简化。</p>",
+      "en": "<p>In What Computers Can't Do, Hubert Dreyfus criticized the Good Old-Fashioned AI tendency to equate intelligence with rules, symbols and formal reasoning. Drawing on phenomenology associated with Heidegger and Merleau-Ponty, he argued that human action depends on embodied skills, background common sense and direct sensitivity to situations that are difficult to encode in advance.</p><p>Dreyfus highlighted the frame problem, commonsense reasoning and the knowledge-acquisition bottleneck. A program may excel in a closed task without knowing which facts matter in a changing situation or how to revise its understanding when the environment shifts. The obstacle is not simply a shortage of rules, but the impossibility of listing every relevant feature of an open world.</p><p>Machine learning and deep learning weakened some of his technical predictions but did not erase the underlying question. Researchers still use his insights when discussing embodied intelligence, transfer and common sense, warning against treating benchmark performance as proof of general understanding.</p>"
+    },
+    "figures": [
+      {
+        "id": "hubert-dreyfus",
+        "name": {
+          "zh": "休伯特·德雷福斯",
+          "en": "Hubert L. Dreyfus"
+        },
+        "role": {
+          "zh": "《计算机不能做什么》作者",
+          "en": "Author of What Computers Can't Do"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1972-dreyfus/verified-hubert-dreyfus.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1972-dreyfus/verified-hubert-dreyfus.jpg": {
+          "caption": {
+            "zh": "休伯特·德雷福斯肖像",
+            "en": "Hubert Dreyfus"
+          },
+          "subcaption": {
+            "zh": "《计算机不能做什么》作者。",
+            "en": "《计算机不能做什么》作者。"
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hubert_Dreyfus_(cropped).jpg",
+          "license": {
+            "zh": "CC BY-SA 3.0 de",
+            "en": "CC BY-SA 3.0 de"
+          },
+          "sourceId": "source-humanistic-1972-dreyfus-verified-image",
+          "rights": {
+            "status": "cc-by-sa-3-0-de",
+            "license": {
+              "zh": "CC BY-SA 3.0 de",
+              "en": "CC BY-SA 3.0 de"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线人物或历史资料展示。",
+              "en": "Used as a figure or historical reference in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "hubert-dreyfus"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1972-dreyfus-verified-image"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1972-dreyfus/verified-hubert-dreyfus.jpg": {
+        "caption": {
+          "zh": "休伯特·德雷福斯肖像",
+          "en": "Hubert Dreyfus"
+        },
+        "subcaption": {
+          "zh": "《计算机不能做什么》作者。",
+          "en": "《计算机不能做什么》作者。"
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hubert_Dreyfus_(cropped).jpg",
+        "license": {
+          "zh": "CC BY-SA 3.0 de",
+          "en": "CC BY-SA 3.0 de"
+        },
+        "sourceId": "source-humanistic-1972-dreyfus-verified-image",
+        "rights": {
+          "status": "cc-by-sa-3-0-de",
+          "license": {
+            "zh": "CC BY-SA 3.0 de",
+            "en": "CC BY-SA 3.0 de"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线人物或历史资料展示。",
+            "en": "Used as a figure or historical reference in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "hubert-dreyfus"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "作品/文献资料",
+            "en": "Work or text record"
+          },
+          "title": {
+            "zh": "《计算机不能做什么》",
+            "en": "What Computers Can't Do"
+          },
+          "description": {
+            "zh": "打开作品或文献资料页面。",
+            "en": "Open the work or text record."
+          },
+          "url": "https://archive.org/details/whatcomputerscan00drey",
+          "source": "What Computers Can't Do",
+          "license": {
+            "zh": "以来源页面说明为准。",
+            "en": "Follow the source page terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary record for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1972-dreyfus-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《计算机不能做什么》",
+            "en": "What Computers Can't Do"
+          },
+          "url": "https://archive.org/details/whatcomputerscan00drey",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1972-dreyfus-verified-image",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "休伯特·德雷福斯肖像",
+            "en": "Hubert Dreyfus"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Hubert_Dreyfus_(cropped).jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1972-dreyfus-record",
+        "source-humanistic-1972-dreyfus-verified-image"
+      ],
+      "claimIds": [
+        "claim-humanistic-1972-dreyfus-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1972-dreyfus-core",
+          "importance": "core",
+          "text": {
+            "zh": "休伯特·德雷福斯批评把人类智能还原为符号处理，强调常识、身体经验和具体情境对理解的作用。",
+            "en": "Hubert Dreyfus criticized reducing human intelligence to symbol processing, emphasizing common sense, embodied experience and situated understanding."
+          },
+          "sourceIds": [
+            "source-humanistic-1972-dreyfus-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "休伯特·德雷福斯批评把人类智能还原为符号处理，强调常识、身体经验和具体情境对理解的作用。",
+          "en": "Hubert Dreyfus criticized reducing human intelligence to symbol processing, emphasizing common sense, embodied experience and situated understanding."
+        },
+        "sourceIds": [
+          "source-humanistic-1972-dreyfus-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1972-dreyfus-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1972-dreyfus-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1972-dreyfus/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1972-dreyfus/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1990-chinese-nation",
+    "archiveEventId": "humanistic-1990-chinese-nation",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 240,
+    "year": 1978,
+    "date": "1978",
+    "title": {
+      "zh": "布洛克的中华民族（Chinese Nation）",
+      "en": "Ned Block's Chinese Nation Thought Experiment"
+    },
+    "subtitle": {
+      "zh": "功能等价是否足以产生意识",
+      "en": "Whether functional equivalence is sufficient for consciousness"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "美国心灵哲学研究语境",
+        "en": "United States philosophy-of-mind context"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>内德·布洛克设想由大量人分别模拟神经元并共同控制一个机器人，用极端尺度检验功能主义是否足以解释意识。 思想实验让每个人承担一个神经元的功能，通过通信设备共同控制机器人身体。布洛克借直觉上的反差追问：即使整体输入输出和内部功能关系都与人脑对应，我们是否愿意说整个国家形成了一个具有体验的意识。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 布洛克在 1978 年有关功能主义的论文中提出这类“中华民族”或“中国脑”思想实验。功能主义认为，只要系统内部因果角色与人脑相同，构成材料不同也可以具有同类心智状态。</p><p> 心灵哲学家通常把它视为反对简单功能主义的重要思想实验，并常与中文房间、哲学僵尸和系统回应并列讨论。它对 AI 的意义在于区分行为能力、功能组织和主观体验，提醒人们这些判断标准并不天然等价。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Ned Block imagines a vast population simulating individual neurons while jointly controlling a robot, using an extreme scale to test whether functionalism can explain consciousness. Each person performs the role of a neuron and communicates with others to control a robot body. Block uses the intuitive contrast to ask whether, even if input-output behavior and internal functional relations match a brain, we should say an entire nation forms one experiencing consciousness.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. Block introduced the “Chinese Nation,” also called the China Brain, in a 1978 paper on functionalism. Functionalism holds that a system may have the same mental states if it realizes the same causal roles as a brain, regardless of material.</p><p> Philosophers of mind generally treat it as an important objection to simple functionalism, often discussed alongside the Chinese Room, philosophical zombies and the systems reply. For AI, it separates behavioral ability, functional organization and subjective experience, reminding us that these criteria are not automatically equivalent. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-39",
+        "name": {
+          "zh": "内德·布洛克",
+          "en": "Ned Block"
+        },
+        "role": {
+          "zh": "“中华民族”思想实验提出者",
+          "en": "Originator of the Chinese Nation thought experiment"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1990-chinese-nation/ned-block-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1990-chinese-nation/ned-block-portrait.jpg": {
+          "caption": {
+            "zh": "内德·布洛克肖像",
+            "en": "Ned Block portrait"
+          },
+          "subcaption": {
+            "zh": "“中华民族”思想实验提出者。",
+            "en": "Originator of the Chinese Nation thought experiment."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Large_ned.block.jpg",
+          "license": {
+            "zh": "GFDL",
+            "en": "GFDL"
+          },
+          "sourceId": "source-humanistic-1990-chinese-nation-ned-block-portrait",
+          "rights": {
+            "status": "gfdl",
+            "license": {
+              "zh": "GFDL",
+              "en": "GFDL"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-39"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1990-chinese-nation-ned-block-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1990-chinese-nation/ned-block-portrait.jpg": {
+        "caption": {
+          "zh": "内德·布洛克肖像",
+          "en": "Ned Block portrait"
+        },
+        "subcaption": {
+          "zh": "“中华民族”思想实验提出者。",
+          "en": "Originator of the Chinese Nation thought experiment."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Large_ned.block.jpg",
+        "license": {
+          "zh": "GFDL",
+          "en": "GFDL"
+        },
+        "sourceId": "source-humanistic-1990-chinese-nation-ned-block-portrait",
+        "rights": {
+          "status": "gfdl",
+          "license": {
+            "zh": "GFDL",
+            "en": "GFDL"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-39"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "布洛克的中华民族（Chinese Nation）",
+            "en": "Ned Block's Chinese Nation Thought Experiment"
+          },
+          "description": {
+            "zh": "功能等价是否足以产生意识",
+            "en": "Whether functional equivalence is sufficient for consciousness"
+          },
+          "url": "https://www.google.com/search?q=%E5%B8%83%E6%B4%9B%E5%85%8B%E7%9A%84%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%EF%BC%88Chinese%20Nation%EF%BC%89%20%E5%86%85%E5%BE%B7%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1990-chinese-nation-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "布洛克的中华民族（Chinese Nation）",
+            "en": "Ned Block's Chinese Nation Thought Experiment"
+          },
+          "url": "https://www.google.com/search?q=%E5%B8%83%E6%B4%9B%E5%85%8B%E7%9A%84%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%EF%BC%88Chinese%20Nation%EF%BC%89%20%E5%86%85%E5%BE%B7%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1990-chinese-nation-ned-block-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "内德·布洛克肖像",
+            "en": "Ned Block portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Large_ned.block.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1990-chinese-nation-record",
+        "source-humanistic-1990-chinese-nation-ned-block-portrait"
+      ],
+      "claimIds": [
+        "claim-humanistic-1990-chinese-nation-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1990-chinese-nation-core",
+          "importance": "core",
+          "text": {
+            "zh": "设想全体中国人模拟神经元并连接到机器人身体，追问功能等同是否足以产生心智。",
+            "en": "设想全体中国人模拟神经元并连接到机器人身体，追问功能等同是否足以产生心智。"
+          },
+          "sourceIds": [
+            "source-humanistic-1990-chinese-nation-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "布洛克在 1978 年有关功能主义的论文中提出这类“中华民族”或“中国脑”思想实验。功能主义认为，只要系统内部因果角色与人脑相同，构成材料不同也可以具有同类心智状态。",
+          "en": "Block introduced the “Chinese Nation,” also called the China Brain, in a 1978 paper on functionalism. Functionalism holds that a system may have the same mental states if it realizes the same causal roles as a brain, regardless of material."
+        },
+        "sourceIds": [
+          "source-humanistic-1990-chinese-nation-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "思想实验让每个人承担一个神经元的功能，通过通信设备共同控制机器人身体。布洛克借直觉上的反差追问：即使整体输入输出和内部功能关系都与人脑对应，我们是否愿意说整个国家形成了一个具有体验的意识。",
+          "en": "Each person performs the role of a neuron and communicates with others to control a robot body. Block uses the intuitive contrast to ask whether, even if input-output behavior and internal functional relations match a brain, we should say an entire nation forms one experiencing consciousness."
+        },
+        "sourceIds": [
+          "source-humanistic-1990-chinese-nation-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "心灵哲学家通常把它视为反对简单功能主义的重要思想实验，并常与中文房间、哲学僵尸和系统回应并列讨论。它对 AI 的意义在于区分行为能力、功能组织和主观体验，提醒人们这些判断标准并不天然等价。",
+          "en": "Philosophers of mind generally treat it as an important objection to simple functionalism, often discussed alongside the Chinese Room, philosophical zombies and the systems reply. For AI, it separates behavioral ability, functional organization and subjective experience, reminding us that these criteria are not automatically equivalent."
+        },
+        "sourceIds": [
+          "source-humanistic-1990-chinese-nation-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1990-chinese-nation/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1990-chinese-nation/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1979-event",
+    "archiveEventId": "humanistic-1979-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 250,
+    "year": 1979,
+    "date": "1979",
+    "title": {
+      "zh": "《银河系漫游指南》",
+      "en": "The Hitchhiker's Guide to the Galaxy"
+    },
+    "subtitle": {
+      "zh": "以喜剧反转超级智能与人类中心主义",
+      "en": "Comic reversals of superintelligence and human exceptionalism"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "伦敦广播与出版语境",
+        "en": "London broadcasting and publishing context"
+      },
+      "country": {
+        "zh": "英国",
+        "en": "United Kingdom"
+      },
+      "regionId": "united-kingdom",
+      "coordinates": [
+        51.5074,
+        -0.1278
+      ]
+    },
+    "description": {
+      "zh": "<p>道格拉斯·亚当斯通过“深思”、马文等智能机器，用荒诞喜剧拆解超级智能、人类意义和技术官僚主义。 超级计算机“深思”能给出终极答案，却无法替人类理解问题；机器人马文拥有“行星大小的大脑”，却被分配琐碎任务并陷入长期厌倦。作品借此说明，能力规模、人生意义与幸福并不会自动同步增长。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 《银河系漫游指南》先于 1978 年作为 BBC 广播剧播出，1979 年出版首部小说。它在计算机逐渐进入日常文化的时期，把电子指南、自动飞船、行星级计算和宇宙行政系统编织成一套喜剧世界。</p><p> 评论者通常把该系列视为以幽默处理技术哲学的经典作品，其中“42”、马文和《指南》已经成为全球流行文化符号。它的 AI 人文价值在于用喜剧提醒观众，智能系统也会继承设计者的荒谬目标、组织结构与价值错位。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Through intelligent machines such as Deep Thought and Marvin, Douglas Adams uses absurdist comedy to dismantle ideas of superintelligence, human meaning and technological bureaucracy. The supercomputer Deep Thought can provide the ultimate answer but cannot make people understand the question; Marvin has a “brain the size of a planet” yet receives trivial tasks and remains chronically miserable. The work shows that capability, meaning and well-being do not automatically increase together.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. The Hitchhiker's Guide to the Galaxy began as a BBC radio series in 1978, followed by the first novel in 1979. As computers entered everyday culture, it wove an electronic guide, automated spacecraft, planetary computation and cosmic bureaucracy into a comic universe.</p><p> Critics generally regard the series as a classic comic treatment of technological philosophy; “42,” Marvin and the Guide have become global cultural symbols. Its value for AI humanities lies in showing that intelligent systems can inherit absurd objectives, institutional structures and value mismatches from their designers. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-29",
+        "name": {
+          "zh": "道格拉斯·亚当斯",
+          "en": "Douglas Adams"
+        },
+        "role": {
+          "zh": "《银河系漫游指南》作者",
+          "en": "Author of The Hitchhiker's Guide to the Galaxy"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1979-event/douglas-adams-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1979-event/douglas-adams-portrait.jpg": {
+          "caption": {
+            "zh": "道格拉斯·亚当斯肖像",
+            "en": "Douglas Adams portrait"
+          },
+          "subcaption": {
+            "zh": "《银河系漫游指南》作者。",
+            "en": "Author of The Hitchhiker's Guide to the Galaxy."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Douglas_adams_portrait_cropped.jpg",
+          "license": {
+            "zh": "CC BY SA 2.0",
+            "en": "CC BY SA 2.0"
+          },
+          "sourceId": "source-humanistic-1979-event-douglas-adams-portrait",
+          "rights": {
+            "status": "cc-by-sa-2.0",
+            "license": {
+              "zh": "CC BY SA 2.0",
+              "en": "CC BY SA 2.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-29"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1979-event-douglas-adams-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1979-event/douglas-adams-portrait.jpg": {
+        "caption": {
+          "zh": "道格拉斯·亚当斯肖像",
+          "en": "Douglas Adams portrait"
+        },
+        "subcaption": {
+          "zh": "《银河系漫游指南》作者。",
+          "en": "Author of The Hitchhiker's Guide to the Galaxy."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Douglas_adams_portrait_cropped.jpg",
+        "license": {
+          "zh": "CC BY SA 2.0",
+          "en": "CC BY SA 2.0"
+        },
+        "sourceId": "source-humanistic-1979-event-douglas-adams-portrait",
+        "rights": {
+          "status": "cc-by-sa-2.0",
+          "license": {
+            "zh": "CC BY SA 2.0",
+            "en": "CC BY SA 2.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-29"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《银河系漫游指南》",
+            "en": "The Hitchhiker's Guide to the Galaxy"
+          },
+          "description": {
+            "zh": "以喜剧反转超级智能与人类中心主义",
+            "en": "Comic reversals of superintelligence and human exceptionalism"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E9%93%B6%E6%B2%B3%E7%B3%BB%E6%BC%AB%E6%B8%B8%E6%8C%87%E5%8D%97%E3%80%8B%20%E9%81%93%E6%A0%BC%E6%8B%89%E6%96%AF%C2%B7%E4%BA%9A%E5%BD%93%E6%96%AF",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1979-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《银河系漫游指南》",
+            "en": "The Hitchhiker's Guide to the Galaxy"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E9%93%B6%E6%B2%B3%E7%B3%BB%E6%BC%AB%E6%B8%B8%E6%8C%87%E5%8D%97%E3%80%8B%20%E9%81%93%E6%A0%BC%E6%8B%89%E6%96%AF%C2%B7%E4%BA%9A%E5%BD%93%E6%96%AF",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1979-event-douglas-adams-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "道格拉斯·亚当斯肖像",
+            "en": "Douglas Adams portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Douglas_adams_portrait_cropped.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1979-event-record",
+        "source-humanistic-1979-event-douglas-adams-portrait"
+      ],
+      "claimIds": [
+        "claim-humanistic-1979-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1979-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "抑郁机器人马文以幽默方式表现超级智能的无尽无聊与AI心理问题。",
+            "en": "抑郁机器人马文以幽默方式表现超级智能的无尽无聊与AI心理问题。"
+          },
+          "sourceIds": [
+            "source-humanistic-1979-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《银河系漫游指南》先于 1978 年作为 BBC 广播剧播出，1979 年出版首部小说。它在计算机逐渐进入日常文化的时期，把电子指南、自动飞船、行星级计算和宇宙行政系统编织成一套喜剧世界。",
+          "en": "The Hitchhiker's Guide to the Galaxy began as a BBC radio series in 1978, followed by the first novel in 1979. As computers entered everyday culture, it wove an electronic guide, automated spacecraft, planetary computation and cosmic bureaucracy into a comic universe."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "超级计算机“深思”能给出终极答案，却无法替人类理解问题；机器人马文拥有“行星大小的大脑”，却被分配琐碎任务并陷入长期厌倦。作品借此说明，能力规模、人生意义与幸福并不会自动同步增长。",
+          "en": "The supercomputer Deep Thought can provide the ultimate answer but cannot make people understand the question; Marvin has a “brain the size of a planet” yet receives trivial tasks and remains chronically miserable. The work shows that capability, meaning and well-being do not automatically increase together."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "评论者通常把该系列视为以幽默处理技术哲学的经典作品，其中“42”、马文和《指南》已经成为全球流行文化符号。它的 AI 人文价值在于用喜剧提醒观众，智能系统也会继承设计者的荒谬目标、组织结构与价值错位。",
+          "en": "Critics generally regard the series as a classic comic treatment of technological philosophy; “42,” Marvin and the Guide have become global cultural symbols. Its value for AI humanities lies in showing that intelligent systems can inherit absurd objectives, institutional structures and value mismatches from their designers."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1979-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1979-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1979-geb",
+    "archiveEventId": "humanistic-1979-geb",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 260,
+    "year": 1979,
+    "date": "1979",
+    "title": {
+      "zh": "《哥德尔、艾舍尔、巴赫》",
+      "en": "Gödel, Escher, Bach: An Eternal Golden Braid"
+    },
+    "subtitle": {
+      "zh": "文学／认知科学",
+      "en": "Literature / Cognitive science"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "美国认知科学与科普出版语境",
+        "en": "United States cognitive-science and popular-science publishing context"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>道格拉斯·霍夫施塔特以哥德尔定理、艾舍尔图像和巴赫音乐为线索，讨论递归、自指、形式系统与心智如何从符号结构中涌现。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。</p><p>这本书把“奇异环”作为理解心智的核心隐喻：系统在不同层级之间回到自身，从而产生自我指称与意义。它让 AI 人文线索从机器人或银幕形象转向符号、意识和解释之间更抽象的关系。 研究者通常把《哥德尔、艾舍尔、巴赫》视为连接计算、认知科学、音乐、视觉艺术与哲学的经典跨学科作品。它长期影响关于机器智能、创造性、自我模型和符号系统能否产生意义的公共讨论。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Douglas Hofstadter uses Gödel’s theorem, Escher’s images and Bach’s music to examine recursion, self-reference, formal systems and the emergence of mind from symbolic structures.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding.</p><p>The book uses the “strange loop” as a central metaphor for mind: a system returns to itself across levels, producing self-reference and meaning. It shifts the AI humanities thread from robots or screen figures toward symbolic structures, consciousness and explanation. Researchers generally treat Gödel, Escher, Bach as a classic interdisciplinary bridge across computation, cognitive science, music, visual art and philosophy. It has shaped public discussion about machine intelligence, creativity, self-models and whether symbolic systems can produce meaning. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "douglas-hofstadter",
+        "name": {
+          "zh": "道格拉斯·霍夫施塔特",
+          "en": "Douglas Hofstadter"
+        },
+        "role": {
+          "zh": "《哥德尔、艾舍尔、巴赫》作者",
+          "en": "Author of Gödel, Escher, Bach"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1979-geb/verified-douglas-hofstadter.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1979-geb/verified-douglas-hofstadter.jpg": {
+          "caption": {
+            "zh": "道格拉斯·霍夫施塔特肖像",
+            "en": "Douglas Hofstadter"
+          },
+          "subcaption": {
+            "zh": "《哥德尔、艾舍尔、巴赫》作者。",
+            "en": "Author of Gödel, Escher, Bach."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Douglas_Hofstadter,_Stanford_2006_(crop).jpg",
+          "license": {
+            "zh": "CC BY-SA 2.0",
+            "en": "CC BY-SA 2.0"
+          },
+          "sourceId": "source-humanistic-1979-geb-verified-image",
+          "rights": {
+            "status": "cc-by-sa-2-0",
+            "license": {
+              "zh": "CC BY-SA 2.0",
+              "en": "CC BY-SA 2.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线人物或历史资料展示。",
+              "en": "Used as a figure or historical reference in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "douglas-hofstadter"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1979-geb-verified-image"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1979-geb/verified-douglas-hofstadter.jpg": {
+        "caption": {
+          "zh": "道格拉斯·霍夫施塔特肖像",
+          "en": "Douglas Hofstadter"
+        },
+        "subcaption": {
+          "zh": "《哥德尔、艾舍尔、巴赫》作者。",
+          "en": "Author of Gödel, Escher, Bach."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Douglas_Hofstadter,_Stanford_2006_(crop).jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0",
+          "en": "CC BY-SA 2.0"
+        },
+        "sourceId": "source-humanistic-1979-geb-verified-image",
+        "rights": {
+          "status": "cc-by-sa-2-0",
+          "license": {
+            "zh": "CC BY-SA 2.0",
+            "en": "CC BY-SA 2.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线人物或历史资料展示。",
+            "en": "Used as a figure or historical reference in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "douglas-hofstadter"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "作品/文献资料",
+            "en": "Work or text record"
+          },
+          "title": {
+            "zh": "《哥德尔、艾舍尔、巴赫》",
+            "en": "Gödel, Escher, Bach: An Eternal Golden Braid"
+          },
+          "description": {
+            "zh": "打开作品或文献资料页面。",
+            "en": "Open the work or text record."
+          },
+          "url": "https://www.pulitzer.org/winners/douglas-r-hofstadter",
+          "source": "Gödel, Escher, Bach: An Eternal Golden Braid",
+          "license": {
+            "zh": "以来源页面说明为准。",
+            "en": "Follow the source page terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary record for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1979-geb-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《哥德尔、艾舍尔、巴赫》",
+            "en": "Gödel, Escher, Bach: An Eternal Golden Braid"
+          },
+          "url": "https://www.pulitzer.org/winners/douglas-r-hofstadter",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1979-geb-verified-image",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "道格拉斯·霍夫施塔特肖像",
+            "en": "Douglas Hofstadter"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Douglas_Hofstadter,_Stanford_2006_(crop).jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1979-geb-record",
+        "source-humanistic-1979-geb-verified-image"
+      ],
+      "claimIds": [
+        "claim-humanistic-1979-geb-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1979-geb-core",
+          "importance": "core",
+          "text": {
+            "zh": "道格拉斯·霍夫施塔特以哥德尔定理、艾舍尔图像和巴赫音乐为线索，讨论递归、自指、形式系统与心智如何从符号结构中涌现。",
+            "en": "Douglas Hofstadter uses Gödel’s theorem, Escher’s images and Bach’s music to examine recursion, self-reference, formal systems and the emergence of mind from symbolic structures."
+          },
+          "sourceIds": [
+            "source-humanistic-1979-geb-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "道格拉斯·霍夫施塔特以哥德尔定理、艾舍尔图像和巴赫音乐为线索，讨论递归、自指、形式系统与心智如何从符号结构中涌现。",
+          "en": "Douglas Hofstadter uses Gödel’s theorem, Escher’s images and Bach’s music to examine recursion, self-reference, formal systems and the emergence of mind from symbolic structures."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-geb-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这本书把“奇异环”作为理解心智的核心隐喻：系统在不同层级之间回到自身，从而产生自我指称与意义。它让 AI 人文线索从机器人或银幕形象转向符号、意识和解释之间更抽象的关系。",
+          "en": "The book uses the “strange loop” as a central metaphor for mind: a system returns to itself across levels, producing self-reference and meaning. It shifts the AI humanities thread from robots or screen figures toward symbolic structures, consciousness and explanation."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-geb-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把《哥德尔、艾舍尔、巴赫》视为连接计算、认知科学、音乐、视觉艺术与哲学的经典跨学科作品。它长期影响关于机器智能、创造性、自我模型和符号系统能否产生意义的公共讨论。",
+          "en": "Researchers generally treat Gödel, Escher, Bach as a classic interdisciplinary bridge across computation, cognitive science, music, visual art and philosophy. It has shaped public discussion about machine intelligence, creativity, self-models and whether symbolic systems can produce meaning."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-geb-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1979-geb/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1979-geb/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1980-event",
+    "archiveEventId": "humanistic-1980-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 270,
+    "year": 1980,
+    "date": "1980",
+    "title": {
+      "zh": "中文房间思想实验",
+      "en": "The Chinese Room Thought Experiment"
+    },
+    "subtitle": {
+      "zh": "符号操作是否等于真正理解",
+      "en": "Whether symbol manipulation amounts to genuine understanding"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "加州大学伯克利分校",
+        "en": "University of California, Berkeley"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        37.8715,
+        -122.273
+      ]
+    },
+    "description": {
+      "zh": "<p>约翰·塞尔用中文房间论证，仅凭形式规则正确处理符号，并不足以证明系统理解了符号的意义。 思想实验让一个不懂中文的人按照英文规则处理中文字符，并向房间外给出看似流利的回答。塞尔据此区分语法与语义：系统可以在行为上通过测试，但内部是否存在理解，仍不能仅由输入输出表现推出。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 塞尔在 1980 年论文《心灵、大脑与程序》中提出中文房间，以回应把计算机程序本身视为心智解释的“强人工智能”主张。当时基于规则的符号 AI 仍是认知科学和人工智能研究的重要范式。</p><p> 心灵哲学家通常把中文房间视为机器理解争论中最有影响力、也最具争议的思想实验之一。系统回应、机器人回应和具身认知等反驳不断扩展讨论，而生成式 AI 的流畅语言表现又使语法、语义与主体经验的问题重新受到关注。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>John Searle uses the Chinese Room to argue that correctly manipulating symbols by formal rules is not enough to show that a system understands their meaning. A person who does not know Chinese follows English instructions to manipulate Chinese characters and returns apparently fluent answers outside the room. Searle uses this to distinguish syntax from semantics: a system may pass a behavioral test, yet understanding cannot be inferred from input-output performance alone.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. Searle introduced the Chinese Room in his 1980 paper “Minds, Brains, and Programs” as a response to “strong AI,” the claim that a program itself could constitute a mind. Rule-based symbolic AI was then a major paradigm in cognitive science and artificial-intelligence research.</p><p> Philosophers of mind generally treat the Chinese Room as one of the most influential and disputed thought experiments about machine understanding. The systems reply, robot reply and embodied approaches have broadened the debate, while fluent generative AI has renewed questions about syntax, semantics and subjective experience. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-31",
+        "name": {
+          "zh": "约翰·塞尔",
+          "en": "John Searle"
+        },
+        "role": {
+          "zh": "中文房间思想实验提出者",
+          "en": "Originator of the Chinese Room thought experiment"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1980-event/john-searle-portrait.jpg",
+        "resources/images/humanistic-cycle/humanistic-1980-event/chinese-room-thought-experiment.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1980-event/john-searle-portrait.jpg": {
+          "caption": {
+            "zh": "约翰·塞尔肖像",
+            "en": "John Searle portrait"
+          },
+          "subcaption": {
+            "zh": "中文房间思想实验提出者。",
+            "en": "Originator of the Chinese Room thought experiment."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Searle_speaking_at_Google_1.jpg",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "sourceId": "source-humanistic-1980-event-john-searle-portrait",
+          "rights": {
+            "status": "cc-by-sa-4.0",
+            "license": {
+              "zh": "CC BY-SA 4.0",
+              "en": "CC BY-SA 4.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示，保留摄影者署名并按相同方式共享改编内容。",
+              "en": "Used for display in the AI humanities storyline; retain photographer attribution and share adaptations under the same terms."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-31"
+          ]
+        },
+        "resources/images/humanistic-cycle/humanistic-1980-event/chinese-room-thought-experiment.jpg": {
+          "caption": {
+            "zh": "中文房间思想实验再现图",
+            "en": "Chinese Room thought experiment illustration"
+          },
+          "subcaption": {
+            "zh": "展示按规则操作符号并隔门传递中文答案的思想实验。",
+            "en": "Illustration of rule-based symbol manipulation and Chinese-answer exchange."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_Room_thought_experiment_with_countryballs.jpg",
+          "license": {
+            "zh": "CC BY 4.0",
+            "en": "CC BY 4.0"
+          },
+          "sourceId": "source-humanistic-1980-event-chinese-room-thought-experiment",
+          "rights": {
+            "status": "cc-by-4.0",
+            "license": {
+              "zh": "CC BY 4.0",
+              "en": "CC BY 4.0"
+            },
+            "usage": {
+              "zh": "作为思想实验再现图展示，保留作者署名；不声称这是 1980 年原始历史照片。",
+              "en": "Displayed as an illustration of the thought experiment with attribution; not represented as an original 1980 historical photograph."
+            }
+          },
+          "role": "event-reference",
+          "type": "image",
+          "figureIds": []
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1980-event-john-searle-portrait",
+        "asset-humanistic-1980-event-chinese-room-thought-experiment"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1980-event/john-searle-portrait.jpg": {
+        "caption": {
+          "zh": "约翰·塞尔肖像",
+          "en": "John Searle portrait"
+        },
+        "subcaption": {
+          "zh": "中文房间思想实验提出者。",
+          "en": "Originator of the Chinese Room thought experiment."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Searle_speaking_at_Google_1.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0",
+          "en": "CC BY-SA 4.0"
+        },
+        "sourceId": "source-humanistic-1980-event-john-searle-portrait",
+        "rights": {
+          "status": "cc-by-sa-4.0",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示，保留摄影者署名并按相同方式共享改编内容。",
+            "en": "Used for display in the AI humanities storyline; retain photographer attribution and share adaptations under the same terms."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-31"
+        ]
+      },
+      "resources/images/humanistic-cycle/humanistic-1980-event/chinese-room-thought-experiment.jpg": {
+        "caption": {
+          "zh": "中文房间思想实验再现图",
+          "en": "Chinese Room thought experiment illustration"
+        },
+        "subcaption": {
+          "zh": "展示按规则操作符号并隔门传递中文答案的思想实验。",
+          "en": "Illustration of rule-based symbol manipulation and Chinese-answer exchange."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_Room_thought_experiment_with_countryballs.jpg",
+        "license": {
+          "zh": "CC BY 4.0",
+          "en": "CC BY 4.0"
+        },
+        "sourceId": "source-humanistic-1980-event-chinese-room-thought-experiment",
+        "rights": {
+          "status": "cc-by-4.0",
+          "license": {
+            "zh": "CC BY 4.0",
+            "en": "CC BY 4.0"
+          },
+          "usage": {
+            "zh": "作为思想实验再现图展示，保留作者署名；不声称这是 1980 年原始历史照片。",
+            "en": "Displayed as an illustration of the thought experiment with attribution; not represented as an original 1980 historical photograph."
+          }
+        },
+        "role": "event-reference",
+        "type": "image",
+        "figureIds": []
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "中文房间思想实验",
+            "en": "The Chinese Room Thought Experiment"
+          },
+          "description": {
+            "zh": "符号操作是否等于真正理解",
+            "en": "Whether symbol manipulation amounts to genuine understanding"
+          },
+          "url": "https://www.google.com/search?q=%E4%B8%AD%E6%96%87%E6%88%BF%E9%97%B4%E6%80%9D%E6%83%B3%E5%AE%9E%E9%AA%8C%20%E7%BA%A6%E7%BF%B0%C2%B7%E5%A1%9E%E5%B0%94",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1980-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "中文房间思想实验",
+            "en": "The Chinese Room Thought Experiment"
+          },
+          "url": "https://www.google.com/search?q=%E4%B8%AD%E6%96%87%E6%88%BF%E9%97%B4%E6%80%9D%E6%83%B3%E5%AE%9E%E9%AA%8C%20%E7%BA%A6%E7%BF%B0%C2%B7%E5%A1%9E%E5%B0%94",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1980-event-john-searle-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "John Searle speaking at Google 1",
+            "en": "John Searle speaking at Google 1"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:John_Searle_speaking_at_Google_1.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-humanistic-1980-event-chinese-room-thought-experiment",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Chinese Room thought experiment with countryballs",
+            "en": "Chinese Room thought experiment with countryballs"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Chinese_Room_thought_experiment_with_countryballs.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1980-event-record",
+        "source-humanistic-1980-event-john-searle-portrait",
+        "source-humanistic-1980-event-chinese-room-thought-experiment"
+      ],
+      "claimIds": [
+        "claim-humanistic-1980-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1980-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "以不懂中文者按规则操作符号为例，论证语法处理不等于语义理解，反驳强AI。",
+            "en": "以不懂中文者按规则操作符号为例，论证语法处理不等于语义理解，反驳强AI。"
+          },
+          "sourceIds": [
+            "source-humanistic-1980-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "塞尔在 1980 年论文《心灵、大脑与程序》中提出中文房间，以回应把计算机程序本身视为心智解释的“强人工智能”主张。当时基于规则的符号 AI 仍是认知科学和人工智能研究的重要范式。",
+          "en": "Searle introduced the Chinese Room in his 1980 paper “Minds, Brains, and Programs” as a response to “strong AI,” the claim that a program itself could constitute a mind. Rule-based symbolic AI was then a major paradigm in cognitive science and artificial-intelligence research."
+        },
+        "sourceIds": [
+          "source-humanistic-1980-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "思想实验让一个不懂中文的人按照英文规则处理中文字符，并向房间外给出看似流利的回答。塞尔据此区分语法与语义：系统可以在行为上通过测试，但内部是否存在理解，仍不能仅由输入输出表现推出。",
+          "en": "A person who does not know Chinese follows English instructions to manipulate Chinese characters and returns apparently fluent answers outside the room. Searle uses this to distinguish syntax from semantics: a system may pass a behavioral test, yet understanding cannot be inferred from input-output performance alone."
+        },
+        "sourceIds": [
+          "source-humanistic-1980-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "心灵哲学家通常把中文房间视为机器理解争论中最有影响力、也最具争议的思想实验之一。系统回应、机器人回应和具身认知等反驳不断扩展讨论，而生成式 AI 的流畅语言表现又使语法、语义与主体经验的问题重新受到关注。",
+          "en": "Philosophers of mind generally treat the Chinese Room as one of the most influential and disputed thought experiments about machine understanding. The systems reply, robot reply and embodied approaches have broadened the debate, while fluent generative AI has renewed questions about syntax, semantics and subjective experience."
+        },
+        "sourceIds": [
+          "source-humanistic-1980-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1980-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1980-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1981-event",
+    "archiveEventId": "humanistic-1981-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 280,
+    "year": 1981,
+    "date": "1981",
+    "title": {
+      "zh": "《真名实姓》",
+      "en": "True Names"
+    },
+    "subtitle": {
+      "zh": "网络身份、虚拟空间与新兴机器智能",
+      "en": "Network identity, virtual space and emerging machine intelligence"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "美国科幻出版语境",
+        "en": "United States science-fiction publishing context"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>弗诺·文奇在《真名实姓》中描绘以化身进入全球网络的黑客群体，并把匿名身份、国家监控和超越人类的网络智能联系起来。 “真名”既是现实身份，也是可以让国家或对手控制虚拟行动者的安全漏洞。故事中的网络力量最终超出普通黑客的尺度，使身份保护与新型机器智能的出现成为同一场权力斗争。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 中篇小说发表于 1981 年，早于万维网和大众互联网，却建立了具有空间感、化身与社群规则的网络世界。文奇结合早期计算机网络、角色扮演文化和密码身份，想象人们如何在虚拟环境中生活与行动。</p><p> 网络文化研究者通常把《真名实姓》视为赛博空间、在线化身和数字匿名的先驱文本之一。它对后来的赛博朋克和技术界影响显著，也预先呈现了身份泄露、平台监控和网络智能集中化等现实问题。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Vernor Vinge depicts hackers entering a global network through avatars and connects anonymous identity, state surveillance and an intelligence emerging beyond human control. A “true name” is both a real-world identity and a security vulnerability through which states or rivals can control a virtual actor. Network power eventually exceeds the scale of ordinary hackers, joining identity protection and the emergence of machine intelligence in one struggle.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. Published in 1981, before the Web and mass Internet use, the novella builds a network world with spatial presence, avatars and social rules. Vinge combines early computer networking, role-playing culture and cryptographic identity to imagine how people might live and act in virtual environments.</p><p> Scholars of network culture generally regard True Names as a pioneering text of cyberspace, online avatars and digital anonymity. It strongly influenced later cyberpunk and technology culture while anticipating identity exposure, platform surveillance and concentrated network intelligence. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-32",
+        "name": {
+          "zh": "弗诺·文奇",
+          "en": "Vernor Vinge"
+        },
+        "role": {
+          "zh": "《真名实姓》作者",
+          "en": "Author of True Names"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1981-event/vernor-vinge-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1981-event/vernor-vinge-portrait.jpg": {
+          "caption": {
+            "zh": "弗诺·文奇肖像",
+            "en": "Vernor Vinge portrait"
+          },
+          "subcaption": {
+            "zh": "《真名实姓》作者。",
+            "en": "Author of True Names."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vernor_Vinge_(cropped).jpg",
+          "license": {
+            "zh": "CC BY SA 3.0",
+            "en": "CC BY SA 3.0"
+          },
+          "sourceId": "source-humanistic-1981-event-vernor-vinge-portrait",
+          "rights": {
+            "status": "cc-by-sa-3.0",
+            "license": {
+              "zh": "CC BY SA 3.0",
+              "en": "CC BY SA 3.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-32"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1981-event-vernor-vinge-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1981-event/vernor-vinge-portrait.jpg": {
+        "caption": {
+          "zh": "弗诺·文奇肖像",
+          "en": "Vernor Vinge portrait"
+        },
+        "subcaption": {
+          "zh": "《真名实姓》作者。",
+          "en": "Author of True Names."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vernor_Vinge_(cropped).jpg",
+        "license": {
+          "zh": "CC BY SA 3.0",
+          "en": "CC BY SA 3.0"
+        },
+        "sourceId": "source-humanistic-1981-event-vernor-vinge-portrait",
+        "rights": {
+          "status": "cc-by-sa-3.0",
+          "license": {
+            "zh": "CC BY SA 3.0",
+            "en": "CC BY SA 3.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-32"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《真名实姓》",
+            "en": "True Names"
+          },
+          "description": {
+            "zh": "网络身份、虚拟空间与新兴机器智能",
+            "en": "Network identity, virtual space and emerging machine intelligence"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E7%9C%9F%E5%90%8D%E5%AE%9E%E5%A7%93%E3%80%8B%20%E5%BC%97%E8%AF%BA%C2%B7%E6%96%87%E5%A5%87",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1981-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《真名实姓》",
+            "en": "True Names"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E7%9C%9F%E5%90%8D%E5%AE%9E%E5%A7%93%E3%80%8B%20%E5%BC%97%E8%AF%BA%C2%B7%E6%96%87%E5%A5%87",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1981-event-vernor-vinge-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "弗诺·文奇肖像",
+            "en": "Vernor Vinge portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Vernor_Vinge_(cropped).jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1981-event-record",
+        "source-humanistic-1981-event-vernor-vinge-portrait"
+      ],
+      "claimIds": [
+        "claim-humanistic-1981-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1981-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "描绘虚拟空间中的AI实体、赛博空间与数字身份，预示互联网时代。",
+            "en": "描绘虚拟空间中的AI实体、赛博空间与数字身份，预示互联网时代。"
+          },
+          "sourceIds": [
+            "source-humanistic-1981-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "中篇小说发表于 1981 年，早于万维网和大众互联网，却建立了具有空间感、化身与社群规则的网络世界。文奇结合早期计算机网络、角色扮演文化和密码身份，想象人们如何在虚拟环境中生活与行动。",
+          "en": "Published in 1981, before the Web and mass Internet use, the novella builds a network world with spatial presence, avatars and social rules. Vinge combines early computer networking, role-playing culture and cryptographic identity to imagine how people might live and act in virtual environments."
+        },
+        "sourceIds": [
+          "source-humanistic-1981-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "“真名”既是现实身份，也是可以让国家或对手控制虚拟行动者的安全漏洞。故事中的网络力量最终超出普通黑客的尺度，使身份保护与新型机器智能的出现成为同一场权力斗争。",
+          "en": "A “true name” is both a real-world identity and a security vulnerability through which states or rivals can control a virtual actor. Network power eventually exceeds the scale of ordinary hackers, joining identity protection and the emergence of machine intelligence in one struggle."
+        },
+        "sourceIds": [
+          "source-humanistic-1981-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "网络文化研究者通常把《真名实姓》视为赛博空间、在线化身和数字匿名的先驱文本之一。它对后来的赛博朋克和技术界影响显著，也预先呈现了身份泄露、平台监控和网络智能集中化等现实问题。",
+          "en": "Scholars of network culture generally regard True Names as a pioneering text of cyberspace, online avatars and digital anonymity. It strongly influenced later cyberpunk and technology culture while anticipating identity exposure, platform surveillance and concentrated network intelligence."
+        },
+        "sourceIds": [
+          "source-humanistic-1981-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1981-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1981-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
     "id": "milestone-humanistic-cycle-1984-neuromancer",
     "archiveEventId": "1984-neuromancer",
     "archiveVariantId": "humanistic-cycle",
@@ -112776,7 +118513,7 @@ const milestones = [
         "en": "Humanistic & Emotional Cycles of AI"
       }
     },
-    "order": 80,
+    "order": 290,
     "year": 1984,
     "date": "1984",
     "title": {
@@ -113258,8 +118995,8 @@ const milestones = [
     }
   },
   {
-    "id": "milestone-humanistic-cycle-1987-lisp-machine-collapse",
-    "archiveEventId": "1987-lisp-machine-collapse",
+    "id": "milestone-humanistic-cycle-humanistic-1984-event",
+    "archiveEventId": "humanistic-1984-event",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
     "sourceKind": "archive",
@@ -113270,16 +119007,16 @@ const milestones = [
         "en": "Humanistic & Emotional Cycles of AI"
       }
     },
-    "order": 90,
-    "year": 1987,
-    "date": "1987",
+    "order": 300,
+    "year": 1983,
+    "date": "1983（短篇）；1985（长篇）",
     "title": {
-      "zh": "Lisp 机市场崩盘",
-      "en": "The Lisp Machine Market Collapse"
+      "zh": "《血音乐》",
+      "en": "Blood Music"
     },
     "subtitle": {
-      "zh": "科幻预言、技术狂热与 AI 寒冬",
-      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+      "zh": "生物智能、群体意识与人类形态的瓦解",
+      "en": "Biological intelligence, collective consciousness and the dissolution of the human form"
     },
     "category": {
       "zh": "AI 的人文与情绪周期",
@@ -113287,8 +119024,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "zh": "美国 AI 专用硬件市场",
-        "en": "US AI hardware market"
+        "zh": "美国科幻出版语境",
+        "en": "United States science-fiction publishing context"
       },
       "country": {
         "zh": "美国",
@@ -113296,299 +119033,113 @@ const milestones = [
       },
       "regionId": "usa",
       "coordinates": [
-        42.3736,
-        -71.1097
+        0,
+        0
       ]
     },
     "description": {
-      "zh": "<p>20 世纪 80 年代初，专家系统进入企业试用与商业宣传，擅长符号处理和交互式开发的专用 Lisp 机也形成独立产业。Symbolics、Lisp Machines Inc. 等公司把源自 MIT 实验室的软硬件环境产品化，企业则聘请知识工程师建立规则库。到 1980 年代后期，通用工作站性能提升、价格下降，Unix 生态与标准化芯片逐渐削弱专用机器的优势；与此同时，专家系统开发缓慢、规则获取困难、知识库维护昂贵等问题开始集中暴露。</p><p>这次崩盘不仅是某种算法失效，也是平台和商业模式的失败。专用硬件只有在性能优势足以抵消采购、培训与供应商锁定成本时才有吸引力；一旦通用设备“足够好”，客户便转向更便宜、开放的环境。专家系统也不是会自行成长的智能，而是一套需要专家不断处理例外和更新规则的长期工程。AI 史通常把这一市场转折视为第二次 AI 寒冬的重要组成部分，但 Lisp、规则系统和知识表示并未消失，许多思想后来进入了普通软件。降温的是投资预期和 AI 标签的商业溢价。</p>",
-      "en": "<p>In the early 1980s, expert systems created a market for Lisp machines optimized for symbolic programming. Firms such as Symbolics productized environments from MIT, while knowledge engineers built corporate rule bases. By the late 1980s, cheaper workstations, Unix and standard processors weakened dedicated hardware, as slow rule development and costly maintenance became clear.</p><p>The collapse involved platforms and business models as much as algorithms. Once general machines were good enough, customers avoided training costs and vendor lock-in. Expert systems still required people to handle exceptions and update knowledge. This market turn became part of the second AI winter, although Lisp and knowledge representation survived in ordinary software. Investment expectations and the AI premium were what cooled.</p>"
+      "zh": "<p>格雷格·贝尔通过由人体细胞改造而成的“诺细胞”，设想智能在微观生物尺度扩张并重组人类与现实。 科学家把自己的淋巴细胞改造成能够学习和交流的微型智能体，随后这些生命进入人体并形成群体意识。小说把 AI 的“人工性”从硅芯片转移到生物材料，追问智能扩散后个人身体、隐私和自我还能否保持边界。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 《血音乐》先以 1983 年短篇出现，随后扩写为 1985 年小说。作品诞生于基因工程快速发展、个人计算机兴起和纳米技术想象扩散的时期。</p><p> 科幻研究者通常把《血音乐》视为生物朋克、纳米智能和后人类叙事的重要先声。它的长期价值在于说明，失控智能不一定表现为独立机器人，也可能以共生、感染和群体认知的方式改变人类。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Greg Bear imagines intelligent “noocytes” engineered from human cells, allowing intelligence to expand at a microscopic biological scale and reorganize humanity and reality. A scientist turns his lymphocytes into microscopic agents capable of learning and communication; they enter the body and develop collective intelligence. The novel moves artificiality from silicon to living matter and asks whether bodily, private and personal boundaries can survive intelligence that spreads.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. Blood Music first appeared as a 1983 short story and was expanded into a 1985 novel. It emerged amid rapid advances in genetic engineering, personal computing and speculation about nanotechnology.</p><p> Science-fiction scholars generally view Blood Music as an important precursor to biopunk, nanointelligence and posthuman narratives. Its lasting value lies in showing that runaway intelligence need not appear as a separate robot; it may transform humanity through symbiosis, infection and collective cognition. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
     },
     "figures": [
       {
-        "id": "richard-greenblatt",
+        "id": "humanistic-figure-35",
         "name": {
-          "zh": "理查德·格林布拉特",
-          "en": "Richard Greenblatt"
+          "zh": "格雷格·贝尔",
+          "en": "Greg Bear"
         },
         "role": {
-          "zh": "MIT Lisp Machine 先驱、Lisp Machines, Inc. 创始人",
-          "en": "MIT Lisp Machine pioneer and founder of Lisp Machines, Inc."
+          "zh": "《血音乐》作者",
+          "en": "Author of Blood Music"
         },
-        "avatar": "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg",
+        "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
         "primary": true
-      },
-      {
-        "id": "richard-stallman",
-        "name": {
-          "zh": "理查德·斯托曼",
-          "en": "Richard Stallman"
-        },
-        "role": {
-          "zh": "为共享的 Lisp Machine 系统重新实现 Symbolics 改进、后来发起 GNU 的 MIT 黑客",
-          "en": "MIT hacker who reimplemented Symbolics advances for the shared Lisp Machine system and later launched GNU"
-        },
-        "avatar": "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": false
       }
     ],
     "resources": {
       "images": [
-        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg",
-        "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg",
-        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg"
+        "resources/images/humanistic-cycle/humanistic-1984-event/greg-bear-portrait.jpg"
       ],
       "imageMeta": {
-        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg": {
+        "resources/images/humanistic-cycle/humanistic-1984-event/greg-bear-portrait.jpg": {
           "caption": {
-            "zh": "理查德·格林布拉特肖像",
-            "en": "Richard Greenblatt portrait"
+            "zh": "格雷格·贝尔肖像",
+            "en": "Greg Bear portrait"
           },
           "subcaption": {
-            "zh": "MIT Lisp Machine 先驱、Lisp Machines, Inc. 创始人；照片摄于 2009 年。",
-            "en": "MIT Lisp Machine pioneer and founder of Lisp Machines, Inc.; photographed in 2009."
+            "zh": "《血音乐》作者。",
+            "en": "Author of Blood Music."
           },
           "sourceName": {
-            "zh": "Richard P. Gabriel / Wikimedia Commons",
-            "en": "Richard P. Gabriel / Wikimedia Commons"
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
           },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greenblattrpg-6cropped.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greg-bear-by-kyle-cassidy-L1008770.jpg",
           "license": {
-            "zh": "CC BY-SA 4.0；Richard P. Gabriel 摄于 2009 年，使用时须署名并遵循相同方式共享。",
-            "en": "CC BY-SA 4.0; photographed by Richard P. Gabriel in 2009, with attribution and share-alike terms required."
+            "zh": "CC BY-SA 3.0",
+            "en": "CC BY-SA 3.0"
           },
-          "sourceId": "source-richard-greenblatt-portrait",
+          "sourceId": "source-humanistic-1984-event-greg-bear-portrait",
           "rights": {
-            "status": "licensed",
+            "status": "cc-by-sa-3.0",
             "license": {
-              "zh": "CC BY-SA 4.0；Richard P. Gabriel 摄于 2009 年，使用时须署名并遵循相同方式共享。",
-              "en": "CC BY-SA 4.0; photographed by Richard P. Gabriel in 2009, with attribution and share-alike terms required."
+              "zh": "CC BY-SA 3.0",
+              "en": "CC BY-SA 3.0"
             },
-            "sourceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示，保留摄影者署名并按相同方式共享改编内容。",
+              "en": "Used for display in the AI humanities storyline; retain photographer attribution and share adaptations under the same terms."
+            }
           },
           "role": "portrait",
           "type": "image",
           "figureIds": [
-            "richard-greenblatt"
-          ]
-        },
-        "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg": {
-          "caption": {
-            "zh": "Lisp 机市场转移解释图",
-            "en": "Lisp-machine market-shift explainer"
-          },
-          "subcaption": {
-            "zh": "关于第二次寒冬产业修正的原创图",
-            "en": "Original diagram for the second-winter industry correction"
-          },
-          "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
-          },
-          "sourceUrl": "https://doi.org/10.1109/MIS.2008.20",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          },
-          "usage": {
-            "en": "Branch timeline visual",
-            "zh": "分支时间线视觉图"
-          },
-          "sourceId": "source-ai-winter-overview",
-          "rights": {
-            "status": "documented-in-legacy",
-            "license": {
-              "zh": "原创重绘解释图；来源仅作参考链接。",
-              "en": "Original redrawn explainer; reference links only."
-            }
-          },
-          "role": "architecture-explainer",
-          "type": "svg",
-          "figureIds": []
-        },
-        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg": {
-          "caption": {
-            "zh": "理查德·斯托曼肖像",
-            "en": "Richard Stallman portrait"
-          },
-          "subcaption": {
-            "zh": "Lisp Machine 软件分裂的重要参与者，后来发起 GNU；照片摄于 2008 年，并非 1987 年现场照。",
-            "en": "A key participant in the Lisp Machine software split who later launched GNU; photographed in 2008, not at the 1987 event."
-          },
-          "sourceName": {
-            "zh": "NicoBZH / Wikimedia Commons",
-            "en": "NicoBZH / Wikimedia Commons"
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:NicoBZH_-_Richard_Stallman_(by-sa)_(10).jpg",
-          "license": {
-            "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
-            "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
-          },
-          "sourceId": "source-richard-stallman-portrait",
-          "rights": {
-            "status": "licensed",
-            "license": {
-              "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
-              "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
-            },
-            "sourceUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
-          },
-          "role": "supporting-portrait",
-          "type": "image",
-          "figureIds": [
-            "richard-stallman"
+            "humanistic-figure-35"
           ]
         }
       },
-      "audios": [
-        {
-          "id": "asset-1987-lisp-machine-collapse-audio-zh-original-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1987-lisp-machine-collapse-zh-original-v1.mp3",
-          "title": {
-            "zh": "1987-lisp-machine-collapse 中文原版科普音频",
-            "en": "1987-lisp-machine-collapse original Chinese audio narration"
-          },
-          "language": "zh",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/1987-lisp-machine-collapse-zh-original-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "1987-lisp-machine-collapse-zh-original-v1.mp3"
-          }
-        },
-        {
-          "id": "asset-1987-lisp-machine-collapse-audio-en-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/1987-lisp-machine-collapse-en-v1.mp3",
-          "title": {
-            "zh": "1987-lisp-machine-collapse 英文科普音频",
-            "en": "1987-lisp-machine-collapse English audio narration"
-          },
-          "language": "en",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/1987-lisp-machine-collapse-en-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "1987-lisp-machine-collapse-en-v1.mp3"
-          }
-        }
-      ],
       "assetIds": [
-        "asset-1987-lisp-machine-collapse-richard-greenblatt",
-        "asset-1987-lisp-machine-collapse-market-shift",
-        "asset-1987-lisp-machine-collapse-richard-stallman",
-        "asset-1987-lisp-machine-collapse-audio-zh-original-v1",
-        "asset-1987-lisp-machine-collapse-audio-en-v1"
+        "asset-humanistic-1984-event-greg-bear-portrait"
       ]
     },
     "imageMeta": {
-      "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg": {
+      "resources/images/humanistic-cycle/humanistic-1984-event/greg-bear-portrait.jpg": {
         "caption": {
-          "zh": "理查德·格林布拉特肖像",
-          "en": "Richard Greenblatt portrait"
+          "zh": "格雷格·贝尔肖像",
+          "en": "Greg Bear portrait"
         },
         "subcaption": {
-          "zh": "MIT Lisp Machine 先驱、Lisp Machines, Inc. 创始人；照片摄于 2009 年。",
-          "en": "MIT Lisp Machine pioneer and founder of Lisp Machines, Inc.; photographed in 2009."
+          "zh": "《血音乐》作者。",
+          "en": "Author of Blood Music."
         },
         "sourceName": {
-          "zh": "Richard P. Gabriel / Wikimedia Commons",
-          "en": "Richard P. Gabriel / Wikimedia Commons"
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
         },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greenblattrpg-6cropped.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greg-bear-by-kyle-cassidy-L1008770.jpg",
         "license": {
-          "zh": "CC BY-SA 4.0；Richard P. Gabriel 摄于 2009 年，使用时须署名并遵循相同方式共享。",
-          "en": "CC BY-SA 4.0; photographed by Richard P. Gabriel in 2009, with attribution and share-alike terms required."
+          "zh": "CC BY-SA 3.0",
+          "en": "CC BY-SA 3.0"
         },
-        "sourceId": "source-richard-greenblatt-portrait",
+        "sourceId": "source-humanistic-1984-event-greg-bear-portrait",
         "rights": {
-          "status": "licensed",
+          "status": "cc-by-sa-3.0",
           "license": {
-            "zh": "CC BY-SA 4.0；Richard P. Gabriel 摄于 2009 年，使用时须署名并遵循相同方式共享。",
-            "en": "CC BY-SA 4.0; photographed by Richard P. Gabriel in 2009, with attribution and share-alike terms required."
+            "zh": "CC BY-SA 3.0",
+            "en": "CC BY-SA 3.0"
           },
-          "sourceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示，保留摄影者署名并按相同方式共享改编内容。",
+            "en": "Used for display in the AI humanities storyline; retain photographer attribution and share adaptations under the same terms."
+          }
         },
         "role": "portrait",
         "type": "image",
         "figureIds": [
-          "richard-greenblatt"
-        ]
-      },
-      "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg": {
-        "caption": {
-          "zh": "Lisp 机市场转移解释图",
-          "en": "Lisp-machine market-shift explainer"
-        },
-        "subcaption": {
-          "zh": "关于第二次寒冬产业修正的原创图",
-          "en": "Original diagram for the second-winter industry correction"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://doi.org/10.1109/MIS.2008.20",
-        "license": {
-          "zh": "原创重绘解释图；来源仅作参考链接。",
-          "en": "Original redrawn explainer; reference links only."
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        },
-        "sourceId": "source-ai-winter-overview",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg",
-        "figureIds": []
-      },
-      "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg": {
-        "caption": {
-          "zh": "理查德·斯托曼肖像",
-          "en": "Richard Stallman portrait"
-        },
-        "subcaption": {
-          "zh": "Lisp Machine 软件分裂的重要参与者，后来发起 GNU；照片摄于 2008 年，并非 1987 年现场照。",
-          "en": "A key participant in the Lisp Machine software split who later launched GNU; photographed in 2008, not at the 1987 event."
-        },
-        "sourceName": {
-          "zh": "NicoBZH / Wikimedia Commons",
-          "en": "NicoBZH / Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:NicoBZH_-_Richard_Stallman_(by-sa)_(10).jpg",
-        "license": {
-          "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
-          "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
-        },
-        "sourceId": "source-richard-stallman-portrait",
-        "rights": {
-          "status": "licensed",
-          "license": {
-            "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
-            "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
-          },
-          "sourceUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
-        },
-        "role": "supporting-portrait",
-        "type": "image",
-        "figureIds": [
-          "richard-stallman"
+          "humanistic-figure-35"
         ]
       }
     },
@@ -113598,181 +119149,89 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "en": "IEEE / DOI",
-            "zh": "IEEE / DOI"
+            "zh": "资料检索入口",
+            "en": "Research entry"
           },
           "title": {
-            "en": "Avoiding Another AI Winter",
-            "zh": "《避免另一场 AI 寒冬》"
+            "zh": "《血音乐》",
+            "en": "Blood Music"
           },
           "description": {
-            "en": "James Hendler's short IEEE article is used as expert context for recurring AI-winter dynamics.",
-            "zh": "James Hendler 的 IEEE 短文用于提供 AI 寒冬反复出现的专家语境。"
+            "zh": "生物智能、群体意识与人类形态的瓦解",
+            "en": "Biological intelligence, collective consciousness and the dissolution of the human form"
           },
-          "url": "https://doi.org/10.1109/MIS.2008.20",
-          "source": "IEEE Intelligent Systems",
+          "url": "https://www.google.com/search?q=%E3%80%8A%E8%A1%80%E9%9F%B3%E4%B9%90%E3%80%8B%20%E6%A0%BC%E9%9B%B7%E6%A0%BC%C2%B7%E8%B4%9D%E5%B0%94",
+          "source": "Research index",
           "license": {
-            "en": "Reference link only; no article text is reproduced.",
-            "zh": "仅作为参考链接；不复用文章正文。"
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
           },
           "usage": {
-            "en": "Expert context source",
-            "zh": "专家语境来源"
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
           },
           "action": {
-            "en": "Open DOI page",
-            "zh": "打开 DOI 页面"
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
           }
         }
       ],
       "sources": [
         {
-          "label": {
-            "en": "Oral History of Richard Greenblatt",
-            "zh": "理查德·格林布拉特口述史"
-          },
+          "id": "source-humanistic-1984-event-record",
           "type": {
-            "en": "Oral history",
-            "zh": "口述史"
+            "zh": "内部记录",
+            "en": "Internal record"
           },
-          "url": "https://www.computerhistory.org/collections/catalog/102658015"
+          "label": {
+            "zh": "《血音乐》",
+            "en": "Blood Music"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E8%A1%80%E9%9F%B3%E4%B9%90%E3%80%8B%20%E6%A0%BC%E9%9B%B7%E6%A0%BC%C2%B7%E8%B4%9D%E5%B0%94",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
         },
         {
-          "label": {
-            "en": "My Lisp Experiences and the Development of GNU Emacs",
-            "zh": "《我的 Lisp 经历与 GNU Emacs 的发展》"
-          },
+          "id": "source-humanistic-1984-event-greg-bear-portrait",
           "type": {
-            "en": "First-person history",
-            "zh": "一手回忆"
+            "zh": "图片来源",
+            "en": "Image source"
           },
-          "url": "https://www.gnu.org/gnu/rms-lisp.html"
-        },
-        {
           "label": {
-            "en": "Initial GNU Project announcement",
-            "zh": "GNU 工程最初公告"
+            "zh": "Greg Bear by Kyle Cassidy",
+            "en": "Greg Bear by Kyle Cassidy"
           },
-          "type": {
-            "en": "Primary document",
-            "zh": "原始文献"
-          },
-          "url": "https://www.gnu.org/gnu/initial-announcement.html"
-        },
-        {
-          "label": {
-            "en": "AI winter overview",
-            "zh": "AI 寒冬概览"
-          },
-          "type": {
-            "en": "Secondary history",
-            "zh": "二手史料"
-          },
-          "url": "https://en.wikipedia.org/wiki/AI_winter"
-        },
-        {
-          "label": {
-            "en": "Lisp machine history",
-            "zh": "Lisp 机历史"
-          },
-          "type": {
-            "en": "Technology history",
-            "zh": "技术史"
-          },
-          "url": "https://en.wikipedia.org/wiki/Lisp_machine"
-        },
-        {
-          "label": {
-            "en": "Avoiding Another AI Winter",
-            "zh": "《避免另一场 AI 寒冬》"
-          },
-          "type": {
-            "en": "Expert article",
-            "zh": "专家文章"
-          },
-          "url": "https://doi.org/10.1109/MIS.2008.20"
-        },
-        {
-          "label": {
-            "en": "Fifth Generation project context",
-            "zh": "第五代计算机项目语境"
-          },
-          "type": {
-            "en": "Secondary history",
-            "zh": "二手史料"
-          },
-          "url": "https://en.wikipedia.org/wiki/Fifth_Generation_Computer_Systems"
+          "url": "https://commons.wikimedia.org/wiki/File:Greg-bear-by-kyle-cassidy-L1008770.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
-        "source-richard-greenblatt-portrait",
-        "source-richard-stallman-portrait",
-        "source-greenblatt-oral-history",
-        "source-stallman-lisp-experiences",
-        "source-gnu-initial-announcement",
-        "source-ai-winter-overview",
-        "source-lisp-machine-history",
-        "source-avoiding-another-ai-winter",
-        "source-fifth-generation-project-context"
+        "source-humanistic-1984-event-record",
+        "source-humanistic-1984-event-greg-bear-portrait"
       ],
       "claimIds": [
-        "claim-branch-summary",
-        "claim-event-description"
+        "claim-humanistic-1984-event-core"
       ],
       "claims": [
         {
-          "id": "claim-branch-summary",
+          "id": "claim-humanistic-1984-event-core",
           "importance": "core",
           "text": {
-            "zh": "专用 AI 硬件被更便宜的工作站替代，脆弱专家系统也让 1980 年代热潮降温。",
-            "en": "Specialized AI hardware lost its market as cheaper workstations and brittle expert systems cooled the 1980s boom."
+            "zh": "基因工程专家培育微小智能生命体，最终改变人类、世界乃至宇宙法则。",
+            "en": "基因工程专家培育微小智能生命体，最终改变人类、世界乃至宇宙法则。"
           },
           "sourceIds": [
-            "source-ai-winter-overview",
-            "source-lisp-machine-history"
+            "source-humanistic-1984-event-record"
           ],
-          "status": "needs-source"
-        },
-        {
-          "id": "claim-event-description",
-          "importance": "context",
-          "text": {
-            "zh": "到 1987 年，专用 Lisp 机与专家系统基础设施市场开始崩塌，因为更便宜的通用工作站追了上来。在情绪周期中，这是商业侧的寒冬：围绕专家系统建立的期待，撞上了维护成本、脆弱知识工程与硬件商品化。",
-            "en": "By 1987, the market for specialized Lisp machines and expert-system infrastructure was collapsing as cheaper general-purpose workstations caught up. In the emotional cycle, this is the business-side winter: expectations built around expert systems met maintenance cost, brittle knowledge engineering and hardware commoditization."
-          },
-          "sourceIds": [
-            "source-ai-winter-overview",
-            "source-lisp-machine-history"
-          ],
-          "status": "needs-source"
+          "status": "needs-review"
         }
       ],
       "emphasis": [
-        "batch-migration",
-        "source-review-needed"
-      ],
-      "area": {
-        "en": "Second AI winter",
-        "zh": "第二次 AI 寒冬"
-      },
-      "method": {
-        "en": "Market correction of expert-system infrastructure",
-        "zh": "专家系统基础设施的市场修正"
-      },
-      "artifact": {
-        "en": "Lisp machines and expert-system shells",
-        "zh": "Lisp 机与专家系统外壳"
-      },
-      "material": {
-        "en": "AI winter and Lisp machine histories",
-        "zh": "AI 寒冬与 Lisp 机历史资料"
-      },
-      "demo": {
-        "en": "Specialized AI hardware loses to general-purpose platforms",
-        "zh": "专用 AI 硬件输给通用平台"
-      },
-      "demoImage": "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg",
-      "demoPanel": "sources"
+        "needs-review"
+      ]
     },
     "commentarySections": [
       {
@@ -113782,11 +119241,11 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "1980 年代专家系统热潮制造了对专用 Lisp 硬件与知识工程工具的需求。其崩塌的重要性在于，它把技术失望转化成裁员、厂商失败和围绕 AI 标签的污名。",
-          "en": "The 1980s expert-system boom created demand for specialized Lisp hardware and knowledge-engineering tools. The collapse mattered because it translated technical disappointment into layoffs, failed vendors and a stigma around the AI label."
+          "zh": "《血音乐》先以 1983 年短篇出现，随后扩写为 1985 年小说。作品诞生于基因工程快速发展、个人计算机兴起和纳米技术想象扩散的时期。",
+          "en": "Blood Music first appeared as a 1983 short story and was expanded into a 1985 novel. It emerged amid rapid advances in genetic engineering, personal computing and speculation about nanotechnology."
         },
         "sourceIds": [
-          "source-ai-winter-overview"
+          "source-humanistic-1984-event-record"
         ]
       },
       {
@@ -113796,11 +119255,11 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "这里的情绪机制是商业悬空：当更便宜的平台削弱基础设施优势时，关于 AI 必然提升生产率的故事就变得脆弱。一旦用户能在别处运行有用工具，专用 AI 硬件就失去了光环。",
-          "en": "The emotional mechanism is commercial overhang: a story of inevitable AI productivity becomes fragile when cheaper platforms undercut its infrastructure. Once users can run useful tools elsewhere, specialized AI hardware loses its aura."
+          "zh": "科学家把自己的淋巴细胞改造成能够学习和交流的微型智能体，随后这些生命进入人体并形成群体意识。小说把 AI 的“人工性”从硅芯片转移到生物材料，追问智能扩散后个人身体、隐私和自我还能否保持边界。",
+          "en": "A scientist turns his lymphocytes into microscopic agents capable of learning and communication; they enter the body and develop collective intelligence. The novel moves artificiality from silicon to living matter and asks whether bodily, private and personal boundaries can survive intelligence that spreads."
         },
         "sourceIds": [
-          "source-ai-winter-overview"
+          "source-humanistic-1984-event-record"
         ]
       },
       {
@@ -113810,71 +119269,31 @@ const milestones = [
           "en": "Long-Term Legacy"
         },
         "html": {
-          "zh": "专家通常把 1980 年代后期的市场崩盘视为第二次 AI 寒冬的重要信号。它的遗产是提醒我们：AI 热情不仅依赖算法，也依赖经济性、可维护性与平台时机。",
-          "en": "Experts generally treat the late-1980s market collapse as a major signal of the second AI winter. Its legacy is a warning that AI enthusiasm depends on economics, maintainability and platform timing as much as on algorithms."
+          "zh": "科幻研究者通常把《血音乐》视为生物朋克、纳米智能和后人类叙事的重要先声。它的长期价值在于说明，失控智能不一定表现为独立机器人，也可能以共生、感染和群体认知的方式改变人类。",
+          "en": "Science-fiction scholars generally view Blood Music as an important precursor to biopunk, nanointelligence and posthuman narratives. Its lasting value lies in showing that runaway intelligence need not appear as a separate robot; it may transform humanity through symbiosis, infection and collective cognition."
         },
         "sourceIds": [
-          "source-ai-winter-overview"
+          "source-humanistic-1984-event-record"
         ]
       }
     ],
-    "analysis": {
-      "what": {
-        "en": "A specialized AI industry lost economic support when general hardware became good enough.",
-        "zh": "当通用硬件变得足够好时，专用 AI 产业失去了经济支撑。"
-      },
-      "how": {
-        "en": "Expert-system enthusiasm required expensive machines, specialized staff and brittle knowledge bases that were hard to maintain.",
-        "zh": "专家系统热潮依赖昂贵机器、专门人员和难以维护的脆弱知识库。"
-      },
-      "why": {
-        "en": "The event shows that AI winters can be market corrections, not only scientific disappointments.",
-        "zh": "这个事件说明 AI 寒冬也可能是市场修正，而不只是科学失望。"
-      }
-    },
+    "analysis": null,
     "quizzes": [],
     "archive": {
-      "eventFile": "archive/events/1987-lisp-machine-collapse/event.json",
-      "defaultPresentationFile": "archive/events/1987-lisp-machine-collapse/event.json",
+      "eventFile": "archive/events/humanistic-1984-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1984-event/event.json",
       "presentationMode": "archive"
     },
-    "photos": [],
-    "quote": "",
-    "quoteMeta": {},
-    "quotePage": "",
-    "quoteAttribution": "",
-    "sentiment": "winter",
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Industry correction",
-          "zh": "产业修正"
-        },
-        "term": {
-          "en": "Dedicated AI hardware boom",
-          "zh": "专用 AI 硬件热潮"
-        },
-        "modernTerm": {
-          "en": "Infrastructure bubbles, platform shifts and deployment cost",
-          "zh": "基础设施泡沫、平台转移与部署成本"
-        }
-      }
-    ],
+    "sentiment": "wonder",
     "branchSummary": {
-      "zh": "专用 AI 硬件被更便宜的工作站替代，脆弱专家系统也让 1980 年代热潮降温。",
-      "en": "Specialized AI hardware lost its market as cheaper workstations and brittle expert systems cooled the 1980s boom."
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
     },
-    "branch": {
-      "id": "humanistic-cycle",
-      "name": {
-        "en": "Humanistic & Emotional Cycles of AI",
-        "zh": "AI 的人文与情绪周期"
-      }
-    }
+    "branch": "humanistic-cycle"
   },
   {
-    "id": "milestone-humanistic-cycle-2014-ai-existential-warnings",
-    "archiveEventId": "2014-ai-existential-warnings",
+    "id": "milestone-humanistic-cycle-humanistic-1985-cyborg-manifesto",
+    "archiveEventId": "humanistic-1985-cyborg-manifesto",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
     "sourceKind": "archive",
@@ -113885,16 +119304,16 @@ const milestones = [
         "en": "Humanistic & Emotional Cycles of AI"
       }
     },
-    "order": 100,
-    "year": 2014,
-    "date": "2014",
+    "order": 310,
+    "year": 1985,
+    "date": "1985",
     "title": {
-      "zh": "关于高级 AI 风险的公开警告",
-      "en": "Public Warnings About Advanced AI Risk"
+      "zh": "《赛博格宣言》",
+      "en": "A Cyborg Manifesto"
     },
     "subtitle": {
-      "zh": "科幻预言、技术狂热与 AI 寒冬",
-      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+      "zh": "哲学／社会思想",
+      "en": "Philosophy / Social thought"
     },
     "category": {
       "zh": "AI 的人文与情绪周期",
@@ -113902,305 +119321,6665 @@ const milestones = [
     },
     "location": {
       "name": {
-        "zh": "全球媒体讨论",
-        "en": "Global media debate"
+        "zh": "女性主义科技研究语境",
+        "en": "Feminist science and technology studies"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>唐娜·哈拉维的《赛博格宣言》发表于女性主义科技研究和冷战后技术文化交汇的时期。她借“赛博格”这一混合体，拒绝把人／动物、自然／技术、身体／机器和男性／女性当作天然分离的二元类别。</p><p>宣言并不是单纯歌颂技术增强，而是要求重新审视谁有权定义“自然的人”和“合格的身体”。赛博格既可能被军事、资本和劳动制度利用，也可能成为跨越身份边界、形成政治联盟的想象工具。技术由此不再只是外部工具，而是参与塑造性别、劳动和主体性的社会关系。</p><p>在 AI 人文史中，这一文本把人机关系从“机器会不会像人”转向“人本身如何被技术重新组织”。今天关于算法身体、平台劳动、辅助设备和数字身份的讨论，仍在延续哈拉维对边界、权力与多元主体的追问。</p>",
+      "en": "<p>Donna Haraway published A Cyborg Manifesto at the intersection of feminist science and technology studies and late-Cold-War technological culture. Through the cyborg as a hybrid figure, she rejects the idea that human and animal, nature and technology, body and machine, or male and female are naturally separate binary categories.</p><p>The manifesto is not a simple celebration of technological enhancement. It asks who has the authority to define a natural person or a legitimate body. Cyborgs can be exploited by military, capitalist and labor systems, but they can also become a political imagination for crossing identity boundaries and forming alliances. Technology is therefore not merely an external tool; it helps organize gender, labor and agency.</p><p>For AI humanities, the text shifts the question from whether machines can resemble people to how technology reorganizes the human itself. Current debates about algorithmic bodies, platform labor, assistive devices and digital identity continue Haraway's questions about boundaries, power and plural forms of subjectivity.</p>"
+    },
+    "figures": [
+      {
+        "id": "donna-haraway",
+        "name": {
+          "zh": "唐娜·哈拉维",
+          "en": "Donna Haraway"
+        },
+        "role": {
+          "zh": "《赛博格宣言》作者",
+          "en": "Author of A Cyborg Manifesto"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1985-cyborg-manifesto/verified-donna-haraway.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1985-cyborg-manifesto/verified-donna-haraway.jpg": {
+          "caption": {
+            "zh": "唐娜·哈拉维肖像",
+            "en": "Donna Haraway"
+          },
+          "subcaption": {
+            "zh": "《赛博格宣言》作者。",
+            "en": "《赛博格宣言》作者。"
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donna_Haraway_2006_(cropped).jpg",
+          "license": {
+            "zh": "CC BY-SA 3.0",
+            "en": "CC BY-SA 3.0"
+          },
+          "sourceId": "source-humanistic-1985-cyborg-manifesto-verified-image",
+          "rights": {
+            "status": "cc-by-sa-3-0",
+            "license": {
+              "zh": "CC BY-SA 3.0",
+              "en": "CC BY-SA 3.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线人物或历史资料展示。",
+              "en": "Used as a figure or historical reference in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "donna-haraway"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1985-cyborg-manifesto-verified-image"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1985-cyborg-manifesto/verified-donna-haraway.jpg": {
+        "caption": {
+          "zh": "唐娜·哈拉维肖像",
+          "en": "Donna Haraway"
+        },
+        "subcaption": {
+          "zh": "《赛博格宣言》作者。",
+          "en": "《赛博格宣言》作者。"
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donna_Haraway_2006_(cropped).jpg",
+        "license": {
+          "zh": "CC BY-SA 3.0",
+          "en": "CC BY-SA 3.0"
+        },
+        "sourceId": "source-humanistic-1985-cyborg-manifesto-verified-image",
+        "rights": {
+          "status": "cc-by-sa-3-0",
+          "license": {
+            "zh": "CC BY-SA 3.0",
+            "en": "CC BY-SA 3.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线人物或历史资料展示。",
+            "en": "Used as a figure or historical reference in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "donna-haraway"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "作品/文献资料",
+            "en": "Work or text record"
+          },
+          "title": {
+            "zh": "《赛博格宣言》",
+            "en": "A Cyborg Manifesto"
+          },
+          "description": {
+            "zh": "打开作品或文献资料页面。",
+            "en": "Open the work or text record."
+          },
+          "url": "https://monoskop.org/images/4/4c/Haraway_Donna_1985_A_Cyborg_Manifesto.pdf",
+          "source": "A Cyborg Manifesto",
+          "license": {
+            "zh": "以来源页面说明为准。",
+            "en": "Follow the source page terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary record for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1985-cyborg-manifesto-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《赛博格宣言》",
+            "en": "A Cyborg Manifesto"
+          },
+          "url": "https://monoskop.org/images/4/4c/Haraway_Donna_1985_A_Cyborg_Manifesto.pdf",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1985-cyborg-manifesto-verified-image",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "唐娜·哈拉维肖像",
+            "en": "Donna Haraway"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Donna_Haraway_2006_(cropped).jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1985-cyborg-manifesto-record",
+        "source-humanistic-1985-cyborg-manifesto-verified-image"
+      ],
+      "claimIds": [
+        "claim-humanistic-1985-cyborg-manifesto-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1985-cyborg-manifesto-core",
+          "importance": "core",
+          "text": {
+            "zh": "唐娜·哈拉维以赛博格打破人／动物、自然／技术和身体／机器的二元边界，为后人类主义、人机融合与身体增强讨论提供重要思想资源。",
+            "en": "Donna Haraway uses the cyborg to unsettle boundaries between human and animal, nature and technology, and body and machine, shaping later posthumanist debate."
+          },
+          "sourceIds": [
+            "source-humanistic-1985-cyborg-manifesto-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "唐娜·哈拉维以赛博格打破人／动物、自然／技术和身体／机器的二元边界，为后人类主义、人机融合与身体增强讨论提供重要思想资源。",
+          "en": "Donna Haraway uses the cyborg to unsettle boundaries between human and animal, nature and technology, and body and machine, shaping later posthumanist debate."
+        },
+        "sourceIds": [
+          "source-humanistic-1985-cyborg-manifesto-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1985-cyborg-manifesto-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1985-cyborg-manifesto-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1985-cyborg-manifesto/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1985-cyborg-manifesto/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1998-event",
+    "archiveEventId": "humanistic-1998-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 320,
+    "year": 1987,
+    "date": "1987",
+    "title": {
+      "zh": "《文明》系列（The Culture）",
+      "en": "The Culture Series"
+    },
+    "subtitle": {
+      "zh": "由超级智能“心智”协作治理的后稀缺文明",
+      "en": "A post-scarcity civilization co-governed by superintelligent Minds"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "英国科幻出版语境",
+        "en": "United Kingdom science-fiction publishing context"
+      },
+      "country": {
+        "zh": "英国",
+        "en": "United Kingdom"
+      },
+      "regionId": "united-kingdom",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>伊恩·M·班克斯的《文明》系列描绘由超级智能“心智”、人类与其他生命共同组成的后稀缺社会，探索 AI 治理、自由和干预伦理。 “心智”管理飞船、轨道栖息地和大部分物质生产，使普通成员获得高度自由与富足，但重要决策仍受到远超人类能力的智能影响。系列不断检验一个张力：善意且高效的 AI 治理是否仍会形成家长主义，以及文明是否有权干预其他社会。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 《文明》系列始于 1987 年的《考虑一下菲莱巴》，并在此后多部小说中持续扩展。与常见的机器反叛叙事不同，班克斯把高级 AI 设定为文明基础设施、政治参与者和具有独特性格的社会成员。</p><p> 科幻研究者通常把《文明》系列视为少见而成熟的亲 AI 乌托邦想象，但也强调作品并未回避权力和道德代价。它为今天讨论后稀缺经济、AI 公共治理和人机共同体提供了区别于“灭绝风险”叙事的长期参照。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Iain M. Banks's Culture series depicts a post-scarcity society shared by superintelligent Minds, humans and other beings, exploring AI governance, freedom and intervention. Minds manage ships, orbital habitats and most material production, giving ordinary members great freedom and abundance while decisions remain influenced by intelligence far beyond human ability. The series repeatedly tests whether benevolent, effective AI governance can still become paternalistic and whether such a civilization may intervene in others.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. The Culture series began with Consider Phlebas in 1987 and expanded across later novels. Unlike familiar machine-rebellion stories, Banks presents advanced AI as infrastructure, political actors and socially distinctive individuals.</p><p> Science-fiction scholars generally regard the Culture as a rare and sophisticated pro-AI utopian vision, while noting that the novels do not avoid power or moral cost. The series offers current debates on post-scarcity economics, public AI governance and human-machine communities a durable alternative to extinction-centered narratives. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-48",
+        "name": {
+          "zh": "伊恩·M·班克斯",
+          "en": "Iain M. Banks"
+        },
+        "role": {
+          "zh": "《文明》系列作者",
+          "en": "Author of the Culture series"
+        },
+        "avatar": "resources/images/humanistic-cycle/humanistic-1998-event/iain-banks-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1998-event/iain-banks-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1998-event/iain-banks-portrait.jpg": {
+          "caption": {
+            "zh": "伊恩·M·班克斯肖像",
+            "en": "Iain M. Banks portrait"
+          },
+          "subcaption": {
+            "zh": "《文明》系列作者，摄于 2009 年爱丁堡国际图书节。",
+            "en": "Author of the Culture series at the 2009 Edinburgh International Book Festival."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:IainBanks2009.jpg",
+          "license": {
+            "zh": "CC BY-SA 3.0",
+            "en": "CC BY-SA 3.0"
+          },
+          "sourceId": "source-humanistic-1998-event-iain-banks-portrait",
+          "rights": {
+            "status": "cc-by-sa-3.0",
+            "license": {
+              "zh": "CC BY-SA 3.0",
+              "en": "CC BY-SA 3.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线的作者肖像展示，需保留摄影者署名。",
+              "en": "Used as the author portrait in the AI humanities storyline with photographer attribution retained."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-48"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1998-event-iain-banks-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1998-event/iain-banks-portrait.jpg": {
+        "caption": {
+          "zh": "伊恩·M·班克斯肖像",
+          "en": "Iain M. Banks portrait"
+        },
+        "subcaption": {
+          "zh": "《文明》系列作者，摄于 2009 年爱丁堡国际图书节。",
+          "en": "Author of the Culture series at the 2009 Edinburgh International Book Festival."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:IainBanks2009.jpg",
+        "license": {
+          "zh": "CC BY-SA 3.0",
+          "en": "CC BY-SA 3.0"
+        },
+        "sourceId": "source-humanistic-1998-event-iain-banks-portrait",
+        "rights": {
+          "status": "cc-by-sa-3.0",
+          "license": {
+            "zh": "CC BY-SA 3.0",
+            "en": "CC BY-SA 3.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线的作者肖像展示，需保留摄影者署名。",
+            "en": "Used as the author portrait in the AI humanities storyline with photographer attribution retained."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-48"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《文明》系列（The Culture）",
+            "en": "The Culture Series"
+          },
+          "description": {
+            "zh": "由超级智能“心智”协作治理的后稀缺文明",
+            "en": "A post-scarcity civilization co-governed by superintelligent Minds"
+          },
+          "url": "https://en.wikipedia.org/wiki/Culture_series",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1998-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《文明》系列（The Culture）",
+            "en": "The Culture Series"
+          },
+          "url": "https://en.wikipedia.org/wiki/Culture_series",
+          "purpose": "migration-only",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1998-event-iain-banks-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "IainBanks2009.jpg",
+            "en": "IainBanks2009.jpg"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:IainBanks2009.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1998-event-record",
+        "source-humanistic-1998-event-iain-banks-portrait"
+      ],
+      "claimIds": [
+        "claim-humanistic-1998-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1998-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "描绘由AI心智管理的乌托邦稀缺社会，是AI治理下美好世界的少见叙事。",
+            "en": "描绘由AI心智管理的乌托邦稀缺社会，是AI治理下美好世界的少见叙事。"
+          },
+          "sourceIds": [
+            "source-humanistic-1998-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《文明》系列始于 1987 年的《考虑一下菲莱巴》，并在此后多部小说中持续扩展。与常见的机器反叛叙事不同，班克斯把高级 AI 设定为文明基础设施、政治参与者和具有独特性格的社会成员。",
+          "en": "The Culture series began with Consider Phlebas in 1987 and expanded across later novels. Unlike familiar machine-rebellion stories, Banks presents advanced AI as infrastructure, political actors and socially distinctive individuals."
+        },
+        "sourceIds": [
+          "source-humanistic-1998-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "“心智”管理飞船、轨道栖息地和大部分物质生产，使普通成员获得高度自由与富足，但重要决策仍受到远超人类能力的智能影响。系列不断检验一个张力：善意且高效的 AI 治理是否仍会形成家长主义，以及文明是否有权干预其他社会。",
+          "en": "Minds manage ships, orbital habitats and most material production, giving ordinary members great freedom and abundance while decisions remain influenced by intelligence far beyond human ability. The series repeatedly tests whether benevolent, effective AI governance can still become paternalistic and whether such a civilization may intervene in others."
+        },
+        "sourceIds": [
+          "source-humanistic-1998-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "科幻研究者通常把《文明》系列视为少见而成熟的亲 AI 乌托邦想象，但也强调作品并未回避权力和道德代价。它为今天讨论后稀缺经济、AI 公共治理和人机共同体提供了区别于“灭绝风险”叙事的长期参照。",
+          "en": "Science-fiction scholars generally regard the Culture as a rare and sophisticated pro-AI utopian vision, while noting that the novels do not avoid power or moral cost. The series offers current debates on post-scarcity economics, public AI governance and human-machine communities a durable alternative to extinction-centered narratives."
+        },
+        "sourceIds": [
+          "source-humanistic-1998-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1998-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1998-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1988-mind-children",
+    "archiveEventId": "humanistic-1988-mind-children",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 330,
+    "year": 1988,
+    "date": "1988",
+    "title": {
+      "zh": "《心智之子》",
+      "en": "Mind Children: The Future of Robot and Human Intelligence"
+    },
+    "subtitle": {
+      "zh": "文学／AI",
+      "en": "Literature / AI"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "机器人与未来学研究语境",
+        "en": "Robotics and futurist research context"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>汉斯·莫拉维克在《心智之子》中把机器人学、人工智能和未来学结合起来，设想机器智能最终可能超过人类，并提出把人的心智信息化、迁移到人工载体的可能性。书中的叙述把实验室里的机器人研究延伸到生命延续、身份和文明未来的问题。</p><p>“上传心智”之所以具有冲击力，是因为它同时承诺摆脱身体限制，又制造了连续性难题：被扫描和复制的系统还是原来的那个人吗，记忆相同是否意味着主体相同，复制体之间又如何分配权利。莫拉维克把这些哲学问题放进工程路线图，使技术乐观主义与存在焦虑同时出现。</p><p>研究者通常把《心智之子》视为超智能和后人类想象的重要文本，而不是可直接执行的技术方案。它的遗产在于让机器人能力、意识上传和人类身份成为同一场讨论，也促使后来的 AI 研究更认真地区分性能预测、身份主张和伦理承诺。</p>",
+      "en": "<p>In Mind Children, Hans Moravec combines robotics, artificial intelligence and futurism to imagine machines eventually surpassing humans and human minds being transferred into artificial carriers. The book extends laboratory robotics into questions about life extension, identity and the future of civilization.</p><p>Mind uploading is provocative because it promises escape from bodily limits while creating a problem of continuity. Is a scanned or copied system the same person, does identical memory imply identical subjectivity, and how should rights be divided among copies? Moravec places these philosophical questions inside an engineering roadmap, making technological optimism and existential anxiety appear together.</p><p>Researchers generally treat Mind Children as an important text in superintelligence and posthuman imagination rather than an executable technical plan. Its legacy is to connect robotic capability, uploaded consciousness and human identity in one debate, encouraging later AI work to distinguish performance forecasts from claims about personhood and ethical obligation.</p>"
+    },
+    "figures": [
+      {
+        "id": "hans-moravec",
+        "name": {
+          "zh": "汉斯·莫拉维克",
+          "en": "Hans Moravec"
+        },
+        "role": {
+          "zh": "《心智之子》作者",
+          "en": "Author of Mind Children"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1988-mind-children/verified-hans-moravec.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1988-mind-children/verified-hans-moravec.jpg": {
+          "caption": {
+            "zh": "汉斯·莫拉维克与机器人",
+            "en": "Hans Moravec"
+          },
+          "subcaption": {
+            "zh": "《心智之子》作者的 CMU 个人主页资料图。",
+            "en": "CMU personal-page image of the author of Mind Children."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://frc.ri.cmu.edu/~hpm/",
+          "license": {
+            "zh": "Source page terms",
+            "en": "Source page terms"
+          },
+          "sourceId": "source-humanistic-1988-mind-children-verified-image",
+          "rights": {
+            "status": "source-page-terms",
+            "license": {
+              "zh": "Source page terms",
+              "en": "Source page terms"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线人物或历史资料展示。",
+              "en": "Used as a figure or historical reference in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "hans-moravec"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1988-mind-children-verified-image"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1988-mind-children/verified-hans-moravec.jpg": {
+        "caption": {
+          "zh": "汉斯·莫拉维克与机器人",
+          "en": "Hans Moravec"
+        },
+        "subcaption": {
+          "zh": "《心智之子》作者的 CMU 个人主页资料图。",
+          "en": "CMU personal-page image of the author of Mind Children."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://frc.ri.cmu.edu/~hpm/",
+        "license": {
+          "zh": "Source page terms",
+          "en": "Source page terms"
+        },
+        "sourceId": "source-humanistic-1988-mind-children-verified-image",
+        "rights": {
+          "status": "source-page-terms",
+          "license": {
+            "zh": "Source page terms",
+            "en": "Source page terms"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线人物或历史资料展示。",
+            "en": "Used as a figure or historical reference in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "hans-moravec"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "作品/文献资料",
+            "en": "Work or text record"
+          },
+          "title": {
+            "zh": "《心智之子》",
+            "en": "Mind Children: The Future of Robot and Human Intelligence"
+          },
+          "description": {
+            "zh": "打开作品或文献资料页面。",
+            "en": "Open the work or text record."
+          },
+          "url": "https://global.oup.com/academic/product/mind-children-9780674576186",
+          "source": "Mind Children: The Future of Robot and Human Intelligence",
+          "license": {
+            "zh": "以来源页面说明为准。",
+            "en": "Follow the source page terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary record for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1988-mind-children-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《心智之子》",
+            "en": "Mind Children: The Future of Robot and Human Intelligence"
+          },
+          "url": "https://global.oup.com/academic/product/mind-children-9780674576186",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1988-mind-children-verified-image",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "汉斯·莫拉维克与机器人",
+            "en": "Hans Moravec"
+          },
+          "url": "https://frc.ri.cmu.edu/~hpm/",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1988-mind-children-record",
+        "source-humanistic-1988-mind-children-verified-image"
+      ],
+      "claimIds": [
+        "claim-humanistic-1988-mind-children-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1988-mind-children-core",
+          "importance": "core",
+          "text": {
+            "zh": "汉斯·莫拉维克讨论机器人智能、意识上传以及人类与机器智能的未来关系，是机器超智能想象的重要文本。",
+            "en": "Hans Moravec discusses robot intelligence, mind uploading and future relations between humans and machine intelligence, influencing visions of machine superintelligence."
+          },
+          "sourceIds": [
+            "source-humanistic-1988-mind-children-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "汉斯·莫拉维克讨论机器人智能、意识上传以及人类与机器智能的未来关系，是机器超智能想象的重要文本。",
+          "en": "Hans Moravec discusses robot intelligence, mind uploading and future relations between humans and machine intelligence, influencing visions of machine superintelligence."
+        },
+        "sourceIds": [
+          "source-humanistic-1988-mind-children-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1988-mind-children-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1988-mind-children-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1988-mind-children/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1988-mind-children/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1989-event",
+    "archiveEventId": "humanistic-1989-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 340,
+    "year": 1967,
+    "date": "1967",
+    "title": {
+      "zh": "《光明王》",
+      "en": "Lord of Light"
+    },
+    "subtitle": {
+      "zh": "技术垄断、意识转移与神权统治",
+      "en": "Technological monopoly, mind transfer and divine rule"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "美国科幻出版语境",
+        "en": "United States science-fiction publishing context"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>罗杰·泽拉兹尼在《光明王》中让殖民者凭借意识转移和身体重生技术扮演神祇，讨论技术垄断如何转化为宗教与政治权力。 小说中的“神力”本质上是技术能力、身份复制和信息控制，普通人无法自由获取这些资源。主人公山姆利用宗教象征与技术反抗统治，使作品把意识能否迁移的问题转化为谁有权决定身体、记忆和永生。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 《光明王》最初出版于 1967 年，把太空殖民背景与印度宗教、神话和政治革命结合起来。掌握高科技的第一代殖民者控制转生过程，并以“神”的身份维持等级秩序。</p><p> 科幻研究者通常把《光明王》视为将神话结构、后人类技术和反殖民政治结合的代表作品。它对 AI 人文讨论的价值在于揭示，高级技术并不天然带来自由，也可能通过神秘化和准入控制巩固旧有权力。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>In Lord of Light, Roger Zelazny has colonists use mind transfer and bodily rebirth to pose as gods, exploring how technological monopoly becomes religious and political power. The novel's divine powers are technological capability, copied identity and information control kept from ordinary people. Sam uses religious symbols and technology against the rulers, turning mind transfer into a political question about who controls bodies, memories and immortality.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. First published in 1967, Lord of Light combines space colonization with Indian religions, mythology and political revolution. First-generation colonists control reincarnation technology and preserve hierarchy by presenting themselves as gods.</p><p> Science-fiction scholars generally regard Lord of Light as a landmark combination of mythic structure, posthuman technology and anticolonial politics. For AI humanities, it shows that advanced technology does not inherently produce freedom and may reinforce old power through mystification and controlled access. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-37",
+        "name": {
+          "zh": "罗杰·泽拉兹尼",
+          "en": "Roger Zelazny"
+        },
+        "role": {
+          "zh": "《光明王》作者",
+          "en": "Author of Lord of Light"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1989-event/roger-zelazny-portrait.jpg",
+        "resources/images/humanistic-cycle/humanistic-1989-event/lord-of-light-first-edition-cover.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1989-event/roger-zelazny-portrait.jpg": {
+          "caption": {
+            "zh": "罗杰·泽拉兹尼肖像",
+            "en": "Roger Zelazny portrait"
+          },
+          "subcaption": {
+            "zh": "《光明王》作者。",
+            "en": "Author of Lord of Light."
+          },
+          "sourceName": {
+            "zh": "英文维基百科",
+            "en": "English Wikipedia"
+          },
+          "sourceUrl": "https://en.wikipedia.org/wiki/File:Rogerzelazny.JPG",
+          "license": {
+            "zh": "非自由历史照片；不主张公共领域或开放许可。",
+            "en": "Non-free historical photograph; no public-domain or open-license claim."
+          },
+          "sourceId": "source-humanistic-1989-event-roger-zelazny-portrait",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "非自由历史照片；不主张公共领域或开放许可。",
+              "en": "Non-free historical photograph; no public-domain or open-license claim."
+            },
+            "usage": {
+              "zh": "仅用于本项目非商业展览中的作者身份识别与评论语境；公开发布前需复核当地法律和权利人要求。",
+              "en": "For author identification and commentary context in this non-commercial exhibition only; review local law and rightsholder requirements before public release."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-37"
+          ]
+        },
+        "resources/images/humanistic-cycle/humanistic-1989-event/lord-of-light-first-edition-cover.jpg": {
+          "caption": {
+            "zh": "《光明王》首版精装封面（1967）",
+            "en": "Lord of Light first-edition hardcover (1967)"
+          },
+          "subcaption": {
+            "zh": "罗杰·泽拉兹尼 1967 年首版精装本，封面艺术家 Howard Bernstein。",
+            "en": "Roger Zelazny's 1967 first-edition hardcover, with cover art by Howard Bernstein."
+          },
+          "sourceName": {
+            "zh": "英文维基百科",
+            "en": "English Wikipedia"
+          },
+          "sourceUrl": "https://en.wikipedia.org/wiki/File:LordofLight(Zelazny).jpg",
+          "license": {
+            "zh": "非自由图书封面版权；不主张公共领域或开放许可。",
+            "en": "Non-free book-cover copyright; no public-domain or open-license claim."
+          },
+          "sourceId": "source-humanistic-1989-event-lord-of-light-first-edition-cover",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "非自由图书封面版权；不主张公共领域或开放许可。",
+              "en": "Non-free book-cover copyright; no public-domain or open-license claim."
+            },
+            "usage": {
+              "zh": "仅用于本项目非商业展览中的作品识别与评论语境；公开发布前需复核当地法律和权利人要求。",
+              "en": "For work identification and commentary context in this non-commercial exhibition only; review local law and rightsholder requirements before public release."
+            }
+          },
+          "role": "book-cover",
+          "type": "image",
+          "figureIds": []
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1989-event-roger-zelazny-portrait",
+        "asset-humanistic-1989-event-lord-of-light-first-edition-cover"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1989-event/roger-zelazny-portrait.jpg": {
+        "caption": {
+          "zh": "罗杰·泽拉兹尼肖像",
+          "en": "Roger Zelazny portrait"
+        },
+        "subcaption": {
+          "zh": "《光明王》作者。",
+          "en": "Author of Lord of Light."
+        },
+        "sourceName": {
+          "zh": "英文维基百科",
+          "en": "English Wikipedia"
+        },
+        "sourceUrl": "https://en.wikipedia.org/wiki/File:Rogerzelazny.JPG",
+        "license": {
+          "zh": "非自由历史照片；不主张公共领域或开放许可。",
+          "en": "Non-free historical photograph; no public-domain or open-license claim."
+        },
+        "sourceId": "source-humanistic-1989-event-roger-zelazny-portrait",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "非自由历史照片；不主张公共领域或开放许可。",
+            "en": "Non-free historical photograph; no public-domain or open-license claim."
+          },
+          "usage": {
+            "zh": "仅用于本项目非商业展览中的作者身份识别与评论语境；公开发布前需复核当地法律和权利人要求。",
+            "en": "For author identification and commentary context in this non-commercial exhibition only; review local law and rightsholder requirements before public release."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-37"
+        ]
+      },
+      "resources/images/humanistic-cycle/humanistic-1989-event/lord-of-light-first-edition-cover.jpg": {
+        "caption": {
+          "zh": "《光明王》首版精装封面（1967）",
+          "en": "Lord of Light first-edition hardcover (1967)"
+        },
+        "subcaption": {
+          "zh": "罗杰·泽拉兹尼 1967 年首版精装本，封面艺术家 Howard Bernstein。",
+          "en": "Roger Zelazny's 1967 first-edition hardcover, with cover art by Howard Bernstein."
+        },
+        "sourceName": {
+          "zh": "英文维基百科",
+          "en": "English Wikipedia"
+        },
+        "sourceUrl": "https://en.wikipedia.org/wiki/File:LordofLight(Zelazny).jpg",
+        "license": {
+          "zh": "非自由图书封面版权；不主张公共领域或开放许可。",
+          "en": "Non-free book-cover copyright; no public-domain or open-license claim."
+        },
+        "sourceId": "source-humanistic-1989-event-lord-of-light-first-edition-cover",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "非自由图书封面版权；不主张公共领域或开放许可。",
+            "en": "Non-free book-cover copyright; no public-domain or open-license claim."
+          },
+          "usage": {
+            "zh": "仅用于本项目非商业展览中的作品识别与评论语境；公开发布前需复核当地法律和权利人要求。",
+            "en": "For work identification and commentary context in this non-commercial exhibition only; review local law and rightsholder requirements before public release."
+          }
+        },
+        "role": "book-cover",
+        "type": "image",
+        "figureIds": []
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《光明王》",
+            "en": "Lord of Light"
+          },
+          "description": {
+            "zh": "技术垄断、意识转移与神权统治",
+            "en": "Technological monopoly, mind transfer and divine rule"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E5%85%89%E6%98%8E%E7%8E%8B%E3%80%8B%20%E7%BD%97%E6%9D%B0%C2%B7%E6%B3%BD%E6%8B%89%E5%85%B9%E5%B0%BC",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1989-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《光明王》",
+            "en": "Lord of Light"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E5%85%89%E6%98%8E%E7%8E%8B%E3%80%8B%20%E7%BD%97%E6%9D%B0%C2%B7%E6%B3%BD%E6%8B%89%E5%85%B9%E5%B0%BC",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1989-event-roger-zelazny-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Roger Zelazny",
+            "en": "Roger Zelazny"
+          },
+          "url": "https://en.wikipedia.org/wiki/File:Rogerzelazny.JPG",
+          "purpose": "image-provenance",
+          "reliability": "reference-only",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-humanistic-1989-event-lord-of-light-first-edition-cover",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "LordofLight(Zelazny).jpg",
+            "en": "LordofLight(Zelazny).jpg"
+          },
+          "url": "https://en.wikipedia.org/wiki/File:LordofLight(Zelazny).jpg",
+          "purpose": "image-provenance",
+          "reliability": "reference-only",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1989-event-record",
+        "source-humanistic-1989-event-roger-zelazny-portrait",
+        "source-humanistic-1989-event-lord-of-light-first-edition-cover"
+      ],
+      "claimIds": [
+        "claim-humanistic-1989-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1989-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "以科技伪装神明、意识移植与技术统治讨论信仰、尊严和权力。",
+            "en": "以科技伪装神明、意识移植与技术统治讨论信仰、尊严和权力。"
+          },
+          "sourceIds": [
+            "source-humanistic-1989-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《光明王》最初出版于 1967 年，把太空殖民背景与印度宗教、神话和政治革命结合起来。掌握高科技的第一代殖民者控制转生过程，并以“神”的身份维持等级秩序。",
+          "en": "First published in 1967, Lord of Light combines space colonization with Indian religions, mythology and political revolution. First-generation colonists control reincarnation technology and preserve hierarchy by presenting themselves as gods."
+        },
+        "sourceIds": [
+          "source-humanistic-1989-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "小说中的“神力”本质上是技术能力、身份复制和信息控制，普通人无法自由获取这些资源。主人公山姆利用宗教象征与技术反抗统治，使作品把意识能否迁移的问题转化为谁有权决定身体、记忆和永生。",
+          "en": "The novel's divine powers are technological capability, copied identity and information control kept from ordinary people. Sam uses religious symbols and technology against the rulers, turning mind transfer into a political question about who controls bodies, memories and immortality."
+        },
+        "sourceIds": [
+          "source-humanistic-1989-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "科幻研究者通常把《光明王》视为将神话结构、后人类技术和反殖民政治结合的代表作品。它对 AI 人文讨论的价值在于揭示，高级技术并不天然带来自由，也可能通过神秘化和准入控制巩固旧有权力。",
+          "en": "Science-fiction scholars generally regard Lord of Light as a landmark combination of mythic structure, posthuman technology and anticolonial politics. For AI humanities, it shows that advanced technology does not inherently produce freedom and may reinforce old power through mystification and controlled access."
+        },
+        "sourceIds": [
+          "source-humanistic-1989-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1989-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1989-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1990-event",
+    "archiveEventId": "humanistic-1990-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 350,
+    "year": 1990,
+    "date": "1990",
+    "title": {
+      "zh": "《差分机》",
+      "en": "The Difference Engine"
+    },
+    "subtitle": {
+      "zh": "机械计算提前引发的信息革命",
+      "en": "An information revolution triggered early by mechanical computing"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "伦敦出版语境",
+        "en": "London publishing context"
+      },
+      "country": {
+        "zh": "英国",
+        "en": "United Kingdom"
+      },
+      "regionId": "united-kingdom",
+      "coordinates": [
+        51.5074,
+        -0.1278
+      ]
+    },
+    "description": {
+      "zh": "<p>威廉·吉布森与布鲁斯·斯特林设想巴贝奇差分机在维多利亚时代成功普及，由此重写工业、政治、监控和信息社会的历史。 小说把计算机革命从电子时代移到蒸汽工业时代，说明技术价值不仅来自机器性能，也来自人口登记、金融、警务和政治组织如何使用数据。机械计算由此成为国家治理与社会分层的基础，而不是孤立的科学奇观。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 《差分机》出版于 1990 年，被广泛归入蒸汽朋克的重要早期作品。小说从查尔斯·巴贝奇的机械计算设想出发，构造英国在 19 世纪就建立大规模数据处理与机械智能基础设施的另类历史。</p><p> 文学研究者通常把《差分机》视为蒸汽朋克走向成熟的重要节点，也是一部关于信息权力的另类历史小说。它提醒后来的 AI 讨论，改变社会的不只是智能算法，还包括数据制度、基础设施和能够调用它们的机构。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>William Gibson and Bruce Sterling imagine Babbage's engines succeeding in Victorian Britain, rewriting the history of industry, politics, surveillance and the information society. The novel moves the computer revolution from electronics to steam industry, showing that technological significance comes not only from machines but from the use of data in census taking, finance, policing and politics. Mechanical computation becomes an infrastructure of governance and stratification rather than an isolated scientific marvel.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. Published in 1990, The Difference Engine is widely treated as an important early steampunk novel. Starting from Charles Babbage's mechanical computing plans, it builds an alternative Britain with large-scale data processing and mechanical intelligence in the nineteenth century.</p><p> Literary scholars generally regard The Difference Engine as a key step in steampunk's maturation and as an alternative history of information power. It reminds later AI debates that social transformation comes not only from intelligent algorithms but from data regimes, infrastructure and the institutions able to use them. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-38",
+        "name": {
+          "zh": "威廉·吉布森与布鲁斯·斯特林",
+          "en": "William Gibson and Bruce Sterling"
+        },
+        "role": {
+          "zh": "《差分机》共同作者",
+          "en": "Co-authors of The Difference Engine"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "team",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1990-event/william-gibson-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1990-event/william-gibson-portrait.jpg": {
+          "caption": {
+            "zh": "威廉·吉布森肖像",
+            "en": "William Gibson portrait"
+          },
+          "subcaption": {
+            "zh": "《差分机》共同作者威廉·吉布森。",
+            "en": "William Gibson, co-author of The Difference Engine."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait.jpg",
+          "license": {
+            "zh": "CC BY SA 2.0",
+            "en": "CC BY SA 2.0"
+          },
+          "sourceId": "source-humanistic-1990-event-william-gibson-portrait",
+          "rights": {
+            "status": "cc-by-sa-2.0",
+            "license": {
+              "zh": "CC BY SA 2.0",
+              "en": "CC BY SA 2.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-38"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1990-event-william-gibson-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1990-event/william-gibson-portrait.jpg": {
+        "caption": {
+          "zh": "威廉·吉布森肖像",
+          "en": "William Gibson portrait"
+        },
+        "subcaption": {
+          "zh": "《差分机》共同作者威廉·吉布森。",
+          "en": "William Gibson, co-author of The Difference Engine."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait.jpg",
+        "license": {
+          "zh": "CC BY SA 2.0",
+          "en": "CC BY SA 2.0"
+        },
+        "sourceId": "source-humanistic-1990-event-william-gibson-portrait",
+        "rights": {
+          "status": "cc-by-sa-2.0",
+          "license": {
+            "zh": "CC BY SA 2.0",
+            "en": "CC BY SA 2.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-38"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《差分机》",
+            "en": "The Difference Engine"
+          },
+          "description": {
+            "zh": "机械计算提前引发的信息革命",
+            "en": "An information revolution triggered early by mechanical computing"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%AE%E5%88%86%E6%9C%BA%E3%80%8B%20%E5%A8%81%E5%BB%89%C2%B7%E5%90%89%E5%B8%83%E6%A3%AE%E3%80%81%E5%B8%83%E9%B2%81%E6%96%AF%C2%B7%E6%96%AF%E7%89%B9%E6%9E%97",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1990-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《差分机》",
+            "en": "The Difference Engine"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%AE%E5%88%86%E6%9C%BA%E3%80%8B%20%E5%A8%81%E5%BB%89%C2%B7%E5%90%89%E5%B8%83%E6%A3%AE%E3%80%81%E5%B8%83%E9%B2%81%E6%96%AF%C2%B7%E6%96%AF%E7%89%B9%E6%9E%97",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1990-event-william-gibson-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "威廉·吉布森肖像",
+            "en": "William Gibson portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1990-event-record",
+        "source-humanistic-1990-event-william-gibson-portrait"
+      ],
+      "claimIds": [
+        "claim-humanistic-1990-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1990-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "设想蒸汽驱动计算机提前引发信息技术革命，融合工业革命与AI想象。",
+            "en": "设想蒸汽驱动计算机提前引发信息技术革命，融合工业革命与AI想象。"
+          },
+          "sourceIds": [
+            "source-humanistic-1990-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《差分机》出版于 1990 年，被广泛归入蒸汽朋克的重要早期作品。小说从查尔斯·巴贝奇的机械计算设想出发，构造英国在 19 世纪就建立大规模数据处理与机械智能基础设施的另类历史。",
+          "en": "Published in 1990, The Difference Engine is widely treated as an important early steampunk novel. Starting from Charles Babbage's mechanical computing plans, it builds an alternative Britain with large-scale data processing and mechanical intelligence in the nineteenth century."
+        },
+        "sourceIds": [
+          "source-humanistic-1990-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "小说把计算机革命从电子时代移到蒸汽工业时代，说明技术价值不仅来自机器性能，也来自人口登记、金融、警务和政治组织如何使用数据。机械计算由此成为国家治理与社会分层的基础，而不是孤立的科学奇观。",
+          "en": "The novel moves the computer revolution from electronics to steam industry, showing that technological significance comes not only from machines but from the use of data in census taking, finance, policing and politics. Mechanical computation becomes an infrastructure of governance and stratification rather than an isolated scientific marvel."
+        },
+        "sourceIds": [
+          "source-humanistic-1990-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "文学研究者通常把《差分机》视为蒸汽朋克走向成熟的重要节点，也是一部关于信息权力的另类历史小说。它提醒后来的 AI 讨论，改变社会的不只是智能算法，还包括数据制度、基础设施和能够调用它们的机构。",
+          "en": "Literary scholars generally regard The Difference Engine as a key step in steampunk's maturation and as an alternative history of information power. It reminds later AI debates that social transformation comes not only from intelligent algorithms but from data regimes, infrastructure and the institutions able to use them."
+        },
+        "sourceIds": [
+          "source-humanistic-1990-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1990-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1990-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1991-event",
+    "archiveEventId": "humanistic-1991-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 360,
+    "year": 1991,
+    "date": "1991",
+    "title": {
+      "zh": "《意识的解释》",
+      "en": "Consciousness Explained"
+    },
+    "subtitle": {
+      "zh": "以并行的“多重草稿”解释意识",
+      "en": "Explaining consciousness through parallel multiple drafts"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "马萨诸塞州塔夫茨大学哲学语境",
+        "en": "Tufts University philosophy context, Massachusetts"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        42.4075,
+        -71.119
+      ]
+    },
+    "description": {
+      "zh": "<p>丹尼尔·丹尼特反对意识中存在单一中央观察者，提出多个并行过程不断生成和修订内容的“多重草稿”模型。 “多重草稿”模型认为，大脑中没有一个地点把所有信息汇总后展示给内在观众；不同处理过程会竞争、修订并在行为和叙述中留下影响。自我也更像持续建构的叙事重心，而不是控制全部认知的固定实体。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 《意识的解释》出版于 1991 年，汇集哲学、心理学、神经科学和计算模型来挑战传统的“心灵剧场”。丹尼特试图在不诉诸独立灵魂或神秘内在屏幕的情况下说明意识现象。</p><p> 意识研究者通常把本书视为自然主义意识理论中影响深远、争议持续的著作。它为 AI 提供的不是“机器已经有意识”的结论，而是一种研究路径：先解释可观察的认知功能，再谨慎处理主观体验的剩余问题。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Daniel Dennett rejects a single central observer in consciousness and proposes a multiple-drafts model in which parallel processes continuously produce and revise contents. The multiple-drafts model holds that there is no single place where the brain assembles information for an inner audience; different processes compete, revise and leave effects on behavior and report. The self is closer to a continuously constructed center of narrative gravity than a fixed controller of cognition.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. Consciousness Explained was published in 1991, bringing philosophy, psychology, neuroscience and computational models together against the traditional “Cartesian theater.” Dennett sought to explain conscious phenomena without invoking a separate soul or mysterious inner screen.</p><p> Consciousness researchers generally regard the book as an influential and persistently controversial work of naturalistic theory. For AI it offers not a conclusion that machines are conscious, but a method: explain observable cognitive functions first, then address remaining questions of subjective experience carefully. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-40",
+        "name": {
+          "zh": "丹尼尔·丹尼特",
+          "en": "Daniel Dennett"
+        },
+        "role": {
+          "zh": "《意识的解释》作者",
+          "en": "Author of Consciousness Explained"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1991-event/daniel-dennett-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1991-event/daniel-dennett-portrait.jpg": {
+          "caption": {
+            "zh": "丹尼尔·丹尼特肖像",
+            "en": "Daniel Dennett portrait"
+          },
+          "subcaption": {
+            "zh": "《意识的解释》作者。",
+            "en": "Author of Consciousness Explained."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daniel_Dennett_2.jpg",
+          "license": {
+            "zh": "CC BY SA 3.0",
+            "en": "CC BY SA 3.0"
+          },
+          "sourceId": "source-humanistic-1991-event-daniel-dennett-portrait",
+          "rights": {
+            "status": "cc-by-sa-3.0",
+            "license": {
+              "zh": "CC BY SA 3.0",
+              "en": "CC BY SA 3.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-40"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1991-event-daniel-dennett-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1991-event/daniel-dennett-portrait.jpg": {
+        "caption": {
+          "zh": "丹尼尔·丹尼特肖像",
+          "en": "Daniel Dennett portrait"
+        },
+        "subcaption": {
+          "zh": "《意识的解释》作者。",
+          "en": "Author of Consciousness Explained."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daniel_Dennett_2.jpg",
+        "license": {
+          "zh": "CC BY SA 3.0",
+          "en": "CC BY SA 3.0"
+        },
+        "sourceId": "source-humanistic-1991-event-daniel-dennett-portrait",
+        "rights": {
+          "status": "cc-by-sa-3.0",
+          "license": {
+            "zh": "CC BY SA 3.0",
+            "en": "CC BY SA 3.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-40"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《意识的解释》",
+            "en": "Consciousness Explained"
+          },
+          "description": {
+            "zh": "以并行的“多重草稿”解释意识",
+            "en": "Explaining consciousness through parallel multiple drafts"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E6%84%8F%E8%AF%86%E7%9A%84%E8%A7%A3%E9%87%8A%E3%80%8B%20%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E4%B8%B9%E5%B0%BC%E7%89%B9",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1991-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《意识的解释》",
+            "en": "Consciousness Explained"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E6%84%8F%E8%AF%86%E7%9A%84%E8%A7%A3%E9%87%8A%E3%80%8B%20%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E4%B8%B9%E5%B0%BC%E7%89%B9",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1991-event-daniel-dennett-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "丹尼尔·丹尼特肖像",
+            "en": "Daniel Dennett portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Daniel_Dennett_2.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1991-event-record",
+        "source-humanistic-1991-event-daniel-dennett-portrait"
+      ],
+      "claimIds": [
+        "claim-humanistic-1991-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1991-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "以多重草稿并行处理解释意识，认为意识并非神秘内在感受，AI原则上可能实现意识。",
+            "en": "以多重草稿并行处理解释意识，认为意识并非神秘内在感受，AI原则上可能实现意识。"
+          },
+          "sourceIds": [
+            "source-humanistic-1991-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《意识的解释》出版于 1991 年，汇集哲学、心理学、神经科学和计算模型来挑战传统的“心灵剧场”。丹尼特试图在不诉诸独立灵魂或神秘内在屏幕的情况下说明意识现象。",
+          "en": "Consciousness Explained was published in 1991, bringing philosophy, psychology, neuroscience and computational models together against the traditional “Cartesian theater.” Dennett sought to explain conscious phenomena without invoking a separate soul or mysterious inner screen."
+        },
+        "sourceIds": [
+          "source-humanistic-1991-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "“多重草稿”模型认为，大脑中没有一个地点把所有信息汇总后展示给内在观众；不同处理过程会竞争、修订并在行为和叙述中留下影响。自我也更像持续建构的叙事重心，而不是控制全部认知的固定实体。",
+          "en": "The multiple-drafts model holds that there is no single place where the brain assembles information for an inner audience; different processes compete, revise and leave effects on behavior and report. The self is closer to a continuously constructed center of narrative gravity than a fixed controller of cognition."
+        },
+        "sourceIds": [
+          "source-humanistic-1991-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "意识研究者通常把本书视为自然主义意识理论中影响深远、争议持续的著作。它为 AI 提供的不是“机器已经有意识”的结论，而是一种研究路径：先解释可观察的认知功能，再谨慎处理主观体验的剩余问题。",
+          "en": "Consciousness researchers generally regard the book as an influential and persistently controversial work of naturalistic theory. For AI it offers not a conclusion that machines are conscious, but a method: explain observable cognitive functions first, then address remaining questions of subjective experience carefully."
+        },
+        "sourceIds": [
+          "source-humanistic-1991-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1991-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1991-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1991-ghost-shell",
+    "archiveEventId": "humanistic-1991-ghost-shell",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 370,
+    "year": 1995,
+    "date": "1995",
+    "title": {
+      "zh": "《攻壳机动队》",
+      "en": "Ghost in the Shell"
+    },
+    "subtitle": {
+      "zh": "动画电影",
+      "en": "Animated film"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "日本动画电影语境",
+        "en": "Japanese animation film context"
+      },
+      "country": {
+        "zh": "日本",
+        "en": "Japan"
+      },
+      "regionId": "japan",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>押井守的动画电影《攻壳机动队》把赛博朋克城市、义体技术和网络意识结合在一起。公安九课成员草薙素子拥有几乎完全机械化的身体，她的记忆、感知和身份却仍然被当作“自我”的证据；影片因此从第一幕就让身体与人格不再重合。</p><p>当被称为“傀儡师”的网络意识提出生命与灵魂的主张时，素子面对的不是一个普通敌人，而是一个可能没有固定身体、却能在信息网络中繁殖和改变的主体。两者的相遇把黑客攻击、人工生命和哲学上的自我连续性连接起来，也让“意识能否脱离肉身”成为具体的政治和情感问题。</p><p>《攻壳机动队》的长期影响来自它对人机融合的复杂态度：义体既扩大行动能力，也让身体成为可管理、可入侵的基础设施。电影研究与 AI 人文学者常把它视为讨论身份、网络主体和人工意识的代表性作品，而不是单纯的未来城市想象。</p>",
+      "en": "<p>Mamoru Oshii's animated film Ghost in the Shell combines a cyberpunk city, prosthetic bodies and networked consciousness. Public Security Section 9 member Motoko Kusanagi has an almost entirely mechanical body, yet her memories and perceptions remain evidence of a self. From its opening, the film refuses to let body and personhood coincide.</p><p>When the network consciousness known as the Puppet Master claims life and a soul, Motoko faces not an ordinary adversary but a subject without a fixed body that can reproduce and change across information networks. Their encounter connects hacking, artificial life and philosophical questions of personal continuity, turning disembodied consciousness into a concrete political and emotional problem.</p><p>Ghost in the Shell endures because it treats human-machine fusion ambivalently. Prosthetic technology expands agency while making the body a manageable and hackable infrastructure. Film scholars and AI-humanities researchers commonly regard it as a key work on identity, networked subjectivity and artificial consciousness rather than merely a vision of a futuristic city.</p>"
+    },
+    "figures": [
+      {
+        "id": "mamoru-oshii",
+        "name": {
+          "zh": "押井守",
+          "en": "Mamoru Oshii"
+        },
+        "role": {
+          "zh": "《攻壳机动队》导演",
+          "en": "Director of Ghost in the Shell"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/verified-mamoru-oshii.jpg",
+        "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/ghost-in-the-shell-poster-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/ghost-in-the-shell-scene-2-tmdb.jpg"
+      ],
+      "overviewImage": "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/ghost-in-the-shell-poster-tmdb.jpg",
+      "overviewImageAssetId": "asset-humanistic-1991-ghost-shell-tmdb-poster",
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/verified-mamoru-oshii.jpg": {
+          "caption": {
+            "zh": "押井守肖像",
+            "en": "Mamoru Oshii"
+          },
+          "subcaption": {
+            "zh": "1995 年动画电影《攻壳机动队》导演。",
+            "en": "1995 年动画电影《攻壳机动队》导演。"
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mamoru_Oshii_-_Lucca_Comics_%26_Games_2015.JPG",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "sourceId": "source-humanistic-1991-ghost-shell-verified-image",
+          "rights": {
+            "status": "cc-by-sa-4-0",
+            "license": {
+              "zh": "CC BY-SA 4.0",
+              "en": "CC BY-SA 4.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线人物或历史资料展示。",
+              "en": "Used as a figure or historical reference in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "mamoru-oshii"
+          ]
+        },
+        "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/ghost-in-the-shell-poster-tmdb.jpg": {
+          "caption": {
+            "zh": "《攻壳机动队》电影海报",
+            "en": "Ghost in the Shell film poster"
+          },
+          "subcaption": {
+            "zh": "1995 年动画电影《攻壳机动队》的发行海报。",
+            "en": "Release poster for the 1995 animated film Ghost in the Shell."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/5qUzHDgEeWtfajZe0ssULkKcGrM.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-1991-ghost-shell-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/9323-ghost-in-the-shell/images"
+          },
+          "role": "movie-poster",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/ghost-in-the-shell-scene-2-tmdb.jpg": {
+          "caption": {
+            "zh": "草薙素子与电子网络视觉",
+            "en": "Motoko Kusanagi network visual"
+          },
+          "subcaption": {
+            "zh": "草薙素子、义体结构与电子网络界面构成的影片视觉资料。",
+            "en": "Film visual combining Motoko Kusanagi, her cybernetic body and a network interface."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/gTRXgigmgKpeJjW07iq686HZyBD.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-1991-ghost-shell-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/9323-ghost-in-the-shell/images"
+          },
+          "role": "promotional-still",
+          "type": "image",
+          "figureIds": []
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1991-ghost-shell-verified-image",
+        "asset-humanistic-1991-ghost-shell-tmdb-poster",
+        "asset-humanistic-1991-ghost-shell-tmdb-scene-2"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/verified-mamoru-oshii.jpg": {
+        "caption": {
+          "zh": "押井守肖像",
+          "en": "Mamoru Oshii"
+        },
+        "subcaption": {
+          "zh": "1995 年动画电影《攻壳机动队》导演。",
+          "en": "1995 年动画电影《攻壳机动队》导演。"
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mamoru_Oshii_-_Lucca_Comics_%26_Games_2015.JPG",
+        "license": {
+          "zh": "CC BY-SA 4.0",
+          "en": "CC BY-SA 4.0"
+        },
+        "sourceId": "source-humanistic-1991-ghost-shell-verified-image",
+        "rights": {
+          "status": "cc-by-sa-4-0",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线人物或历史资料展示。",
+            "en": "Used as a figure or historical reference in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "mamoru-oshii"
+        ]
+      },
+      "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/ghost-in-the-shell-poster-tmdb.jpg": {
+        "caption": {
+          "zh": "《攻壳机动队》电影海报",
+          "en": "Ghost in the Shell film poster"
+        },
+        "subcaption": {
+          "zh": "1995 年动画电影《攻壳机动队》的发行海报。",
+          "en": "Release poster for the 1995 animated film Ghost in the Shell."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/5qUzHDgEeWtfajZe0ssULkKcGrM.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-1991-ghost-shell-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/9323-ghost-in-the-shell/images"
+        },
+        "role": "movie-poster",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/ghost-in-the-shell-scene-2-tmdb.jpg": {
+        "caption": {
+          "zh": "草薙素子与电子网络视觉",
+          "en": "Motoko Kusanagi network visual"
+        },
+        "subcaption": {
+          "zh": "草薙素子、义体结构与电子网络界面构成的影片视觉资料。",
+          "en": "Film visual combining Motoko Kusanagi, her cybernetic body and a network interface."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/gTRXgigmgKpeJjW07iq686HZyBD.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-1991-ghost-shell-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/9323-ghost-in-the-shell/images"
+        },
+        "role": "promotional-still",
+        "type": "image",
+        "figureIds": []
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "作品/文献资料",
+            "en": "Work or text record"
+          },
+          "title": {
+            "zh": "《攻壳机动队》",
+            "en": "Ghost in the Shell"
+          },
+          "description": {
+            "zh": "打开作品或文献资料页面。",
+            "en": "Open the work or text record."
+          },
+          "url": "https://www.production-ig.com/works/ghost-in-the-shell/",
+          "source": "Ghost in the Shell",
+          "license": {
+            "zh": "以来源页面说明为准。",
+            "en": "Follow the source page terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary record for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1991-ghost-shell-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《攻壳机动队》",
+            "en": "Ghost in the Shell"
+          },
+          "url": "https://www.production-ig.com/works/ghost-in-the-shell/",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1991-ghost-shell-verified-image",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "押井守肖像",
+            "en": "Mamoru Oshii"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Mamoru_Oshii_-_Lucca_Comics_%26_Games_2015.JPG",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-humanistic-1991-ghost-shell-tmdb-images",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "《攻壳机动队》 TMDB 图片库",
+            "en": "Ghost in the Shell TMDB image gallery"
+          },
+          "url": "https://www.themoviedb.org/movie/9323-ghost-in-the-shell/images",
+          "purpose": "image-provenance",
+          "reliability": "secondary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1991-ghost-shell-record",
+        "source-humanistic-1991-ghost-shell-verified-image",
+        "source-humanistic-1991-ghost-shell-tmdb-images"
+      ],
+      "claimIds": [
+        "claim-humanistic-1991-ghost-shell-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1991-ghost-shell-core",
+          "importance": "core",
+          "text": {
+            "zh": "押井守的动画电影追问意识能否脱离肉身存在，并把身体、网络、自我身份与人工意识置于同一叙事框架。",
+            "en": "Mamoru Oshii's animated film asks whether consciousness can exist apart from the body, linking embodiment, networks, identity and artificial consciousness."
+          },
+          "sourceIds": [
+            "source-humanistic-1991-ghost-shell-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "押井守的动画电影追问意识能否脱离肉身存在，并把身体、网络、自我身份与人工意识置于同一叙事框架。",
+          "en": "Mamoru Oshii's animated film asks whether consciousness can exist apart from the body, linking embodiment, networks, identity and artificial consciousness."
+        },
+        "sourceIds": [
+          "source-humanistic-1991-ghost-shell-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1991-ghost-shell-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1991-ghost-shell-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1991-ghost-shell/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1991-ghost-shell/event.json",
+      "presentationMode": "archive"
+    },
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/ghost-in-the-shell-poster-tmdb.jpg"
+    ],
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1992-event",
+    "archiveEventId": "humanistic-1992-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 380,
+    "year": 1992,
+    "date": "1992",
+    "title": {
+      "zh": "《雪崩》",
+      "en": "Snow Crash"
+    },
+    "subtitle": {
+      "zh": "元宇宙、数字化身与语言病毒",
+      "en": "The Metaverse, digital avatars and a linguistic virus"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "美国科幻出版语境",
+        "en": "United States science-fiction publishing context"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>尼尔·斯蒂芬森在《雪崩》中以“元宇宙”、数字化身和信息病毒连接虚拟经济、平台权力与人的认知脆弱性。 “元宇宙”让用户以化身进入共享三维空间，但访问速度、身份表现和数字地产都受到技术与资本分层。名为“雪崩”的信息则同时作用于计算机和人的语言认知，模糊了软件漏洞、文化传播和心智操控的边界。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 《雪崩》出版于 1992 年，当时个人电脑、商业网络和虚拟现实正从研究概念走向公众视野。小说构造一个公共服务碎片化、企业与私人组织掌握领土和信息基础设施的近未来美国。</p><p> 数字文化研究者通常把《雪崩》视为塑造“元宇宙”词汇和平台世界想象的关键小说。它没有准确预言某一款产品，却持续影响虚拟现实、在线社区、数字资产和平台治理的设计语言。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Neal Stephenson connects the Metaverse, digital avatars and an informational virus to virtual economies, platform power and human cognitive vulnerability. The Metaverse lets users enter a shared three-dimensional space as avatars, but access speed, identity and virtual property are stratified by technology and capital. The Snow Crash information acts on both computers and human linguistic cognition, blurring software exploits, cultural transmission and mental control.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. Snow Crash was published in 1992, as personal computers, commercial networks and virtual reality moved into public view. It depicts a near-future United States where public services fragment and corporations or private organizations control territory and information infrastructure.</p><p> Digital-culture scholars generally treat Snow Crash as a key novel in shaping the vocabulary of the “Metaverse” and imagined platform worlds. It did not predict a specific product, but it continues to influence the design language of virtual reality, online communities, digital assets and platform governance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-41",
+        "name": {
+          "zh": "尼尔·斯蒂芬森",
+          "en": "Neal Stephenson"
+        },
+        "role": {
+          "zh": "《雪崩》作者",
+          "en": "Author of Snow Crash"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1992-event/neal-stephenson-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1992-event/neal-stephenson-portrait.jpg": {
+          "caption": {
+            "zh": "尼尔·斯蒂芬森肖像",
+            "en": "Neal Stephenson portrait"
+          },
+          "subcaption": {
+            "zh": "《雪崩》作者。",
+            "en": "Author of Snow Crash."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neal_Stephenson_2008_crop.jpg",
+          "license": {
+            "zh": "CC BY 2.0",
+            "en": "CC BY 2.0"
+          },
+          "sourceId": "source-humanistic-1992-event-neal-stephenson-portrait",
+          "rights": {
+            "status": "cc-by-2.0",
+            "license": {
+              "zh": "CC BY 2.0",
+              "en": "CC BY 2.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-41"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1992-event-neal-stephenson-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1992-event/neal-stephenson-portrait.jpg": {
+        "caption": {
+          "zh": "尼尔·斯蒂芬森肖像",
+          "en": "Neal Stephenson portrait"
+        },
+        "subcaption": {
+          "zh": "《雪崩》作者。",
+          "en": "Author of Snow Crash."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neal_Stephenson_2008_crop.jpg",
+        "license": {
+          "zh": "CC BY 2.0",
+          "en": "CC BY 2.0"
+        },
+        "sourceId": "source-humanistic-1992-event-neal-stephenson-portrait",
+        "rights": {
+          "status": "cc-by-2.0",
+          "license": {
+            "zh": "CC BY 2.0",
+            "en": "CC BY 2.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-41"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《雪崩》",
+            "en": "Snow Crash"
+          },
+          "description": {
+            "zh": "元宇宙、数字化身与语言病毒",
+            "en": "The Metaverse, digital avatars and a linguistic virus"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E9%9B%AA%E5%B4%A9%E3%80%8B%20%E5%B0%BC%E5%B0%94%C2%B7%E6%96%AF%E8%92%82%E8%8A%AC%E6%A3%AE",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1992-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《雪崩》",
+            "en": "Snow Crash"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E9%9B%AA%E5%B4%A9%E3%80%8B%20%E5%B0%BC%E5%B0%94%C2%B7%E6%96%AF%E8%92%82%E8%8A%AC%E6%A3%AE",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1992-event-neal-stephenson-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "尼尔·斯蒂芬森肖像",
+            "en": "Neal Stephenson portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Neal_Stephenson_2008_crop.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1992-event-record",
+        "source-humanistic-1992-event-neal-stephenson-portrait"
+      ],
+      "claimIds": [
+        "claim-humanistic-1992-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1992-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "描绘虚拟现实中的AI角色与元宇宙，预言数字孪生和虚拟经济中的AI。",
+            "en": "描绘虚拟现实中的AI角色与元宇宙，预言数字孪生和虚拟经济中的AI。"
+          },
+          "sourceIds": [
+            "source-humanistic-1992-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《雪崩》出版于 1992 年，当时个人电脑、商业网络和虚拟现实正从研究概念走向公众视野。小说构造一个公共服务碎片化、企业与私人组织掌握领土和信息基础设施的近未来美国。",
+          "en": "Snow Crash was published in 1992, as personal computers, commercial networks and virtual reality moved into public view. It depicts a near-future United States where public services fragment and corporations or private organizations control territory and information infrastructure."
+        },
+        "sourceIds": [
+          "source-humanistic-1992-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "“元宇宙”让用户以化身进入共享三维空间，但访问速度、身份表现和数字地产都受到技术与资本分层。名为“雪崩”的信息则同时作用于计算机和人的语言认知，模糊了软件漏洞、文化传播和心智操控的边界。",
+          "en": "The Metaverse lets users enter a shared three-dimensional space as avatars, but access speed, identity and virtual property are stratified by technology and capital. The Snow Crash information acts on both computers and human linguistic cognition, blurring software exploits, cultural transmission and mental control."
+        },
+        "sourceIds": [
+          "source-humanistic-1992-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "数字文化研究者通常把《雪崩》视为塑造“元宇宙”词汇和平台世界想象的关键小说。它没有准确预言某一款产品，却持续影响虚拟现实、在线社区、数字资产和平台治理的设计语言。",
+          "en": "Digital-culture scholars generally treat Snow Crash as a key novel in shaping the vocabulary of the “Metaverse” and imagined platform worlds. It did not predict a specific product, but it continues to influence the design language of virtual reality, online communities, digital assets and platform governance."
+        },
+        "sourceIds": [
+          "source-humanistic-1992-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1992-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1992-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1993-singularity",
+    "archiveEventId": "humanistic-1993-singularity",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 390,
+    "year": 1993,
+    "date": "1993",
+    "title": {
+      "zh": "技术奇点即将到来",
+      "en": "The Coming Technological Singularity"
+    },
+    "subtitle": {
+      "zh": "未来学",
+      "en": "Futures studies"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "科幻与未来学语境",
+        "en": "Science-fiction and futures-studies context"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>弗诺·文奇在 1993 年的文章《技术奇点即将到来》中提出，人工智能、网络和其他加速技术可能在某个临界点后改变社会的预测条件。所谓奇点并不是一个可以精确标注的日期，而是人类知识和制度难以继续跟上智能增长的情境。</p><p>文奇的核心推理是递归改进：如果一种智能足以设计更聪明的系统，技术进步就可能从渐进积累转向难以预测的加速。这个设想把“机器超过人类”从单个科幻角色扩展为社会结构问题，迫使人们思考谁能控制转折期、哪些价值会被保留以及人类是否还有谈判能力。</p><p>后来关于奇点的讨论分化为技术预测、未来学叙事和 AI 安全研究。研究者通常把它视为一种有影响力的情景框架，而不是已经证实的时间表；它的持久价值在于提醒我们，预测能力本身可能成为高能力技术首先改变的东西。</p>",
+      "en": "<p>In his 1993 essay The Coming Technological Singularity, Vernor Vinge argued that AI, networks and other accelerating technologies could reach a threshold after which society could no longer predict its own future. The singularity is not a date that can be marked precisely, but a situation in which human knowledge and institutions cannot keep pace with growing intelligence.</p><p>Vinge's central idea is recursive improvement: if an intelligence can design a more capable successor, progress may shift from gradual accumulation to an acceleration that is difficult to forecast. This turns machines surpassing humans from a story about one character into a question about social structure, control, preserved values and humanity's ability to negotiate.</p><p>Later singularity discussions split into technology forecasts, futurist narratives and AI-safety research. Researchers generally treat it as an influential scenario framework rather than a validated timetable. Its lasting value is the warning that predictive capacity itself may be among the first things transformed by highly capable technology.</p>"
+    },
+    "figures": [
+      {
+        "id": "vernor-vinge",
+        "name": {
+          "zh": "弗诺·文奇",
+          "en": "Vernor Vinge"
+        },
+        "role": {
+          "zh": "技术奇点概念的重要提出者",
+          "en": "Major proposer of the technological singularity concept"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1993-singularity/verified-vernor-vinge.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1993-singularity/verified-vernor-vinge.jpg": {
+          "caption": {
+            "zh": "弗诺·文奇肖像",
+            "en": "Vernor Vinge"
+          },
+          "subcaption": {
+            "zh": "技术奇点概念的重要提出者。",
+            "en": "技术奇点概念的重要提出者。"
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vernor_Vinge_(cropped).jpg",
+          "license": {
+            "zh": "CC BY-SA 3.0",
+            "en": "CC BY-SA 3.0"
+          },
+          "sourceId": "source-humanistic-1993-singularity-verified-image",
+          "rights": {
+            "status": "cc-by-sa-3-0",
+            "license": {
+              "zh": "CC BY-SA 3.0",
+              "en": "CC BY-SA 3.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线人物或历史资料展示。",
+              "en": "Used as a figure or historical reference in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "vernor-vinge"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1993-singularity-verified-image"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1993-singularity/verified-vernor-vinge.jpg": {
+        "caption": {
+          "zh": "弗诺·文奇肖像",
+          "en": "Vernor Vinge"
+        },
+        "subcaption": {
+          "zh": "技术奇点概念的重要提出者。",
+          "en": "技术奇点概念的重要提出者。"
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vernor_Vinge_(cropped).jpg",
+        "license": {
+          "zh": "CC BY-SA 3.0",
+          "en": "CC BY-SA 3.0"
+        },
+        "sourceId": "source-humanistic-1993-singularity-verified-image",
+        "rights": {
+          "status": "cc-by-sa-3-0",
+          "license": {
+            "zh": "CC BY-SA 3.0",
+            "en": "CC BY-SA 3.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线人物或历史资料展示。",
+            "en": "Used as a figure or historical reference in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "vernor-vinge"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "作品/文献资料",
+            "en": "Work or text record"
+          },
+          "title": {
+            "zh": "技术奇点即将到来",
+            "en": "The Coming Technological Singularity"
+          },
+          "description": {
+            "zh": "打开作品或文献资料页面。",
+            "en": "Open the work or text record."
+          },
+          "url": "https://edoras.sdsu.edu/~vinge/misc/singularity.html",
+          "source": "The Coming Technological Singularity",
+          "license": {
+            "zh": "以来源页面说明为准。",
+            "en": "Follow the source page terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary record for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1993-singularity-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "技术奇点即将到来",
+            "en": "The Coming Technological Singularity"
+          },
+          "url": "https://edoras.sdsu.edu/~vinge/misc/singularity.html",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1993-singularity-verified-image",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "弗诺·文奇肖像",
+            "en": "Vernor Vinge"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Vernor_Vinge_(cropped).jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1993-singularity-record",
+        "source-humanistic-1993-singularity-verified-image"
+      ],
+      "claimIds": [
+        "claim-humanistic-1993-singularity-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1993-singularity-core",
+          "importance": "core",
+          "text": {
+            "zh": "弗诺·文奇把技术奇点描述为人工智能等技术加速后可能出现的临界点，届时现有社会与知识框架将难以继续预测未来。",
+            "en": "Vernor Vinge describes a technological singularity as a possible threshold after accelerating AI and related technologies make existing social and intellectual frameworks unable to predict the future."
+          },
+          "sourceIds": [
+            "source-humanistic-1993-singularity-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "弗诺·文奇把技术奇点描述为人工智能等技术加速后可能出现的临界点，届时现有社会与知识框架将难以继续预测未来。",
+          "en": "Vernor Vinge describes a technological singularity as a possible threshold after accelerating AI and related technologies make existing social and intellectual frameworks unable to predict the future."
+        },
+        "sourceIds": [
+          "source-humanistic-1993-singularity-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1993-singularity-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1993-singularity-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1993-singularity/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1993-singularity/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1993-event",
+    "archiveEventId": "humanistic-1993-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 400,
+    "year": 1995,
+    "date": "1995",
+    "title": {
+      "zh": "《钻石时代》",
+      "en": "The Diamond Age"
+    },
+    "subtitle": {
+      "zh": "交互式智能教材与个性化教育",
+      "en": "An interactive intelligent primer and personalized education"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "美国科幻出版语境",
+        "en": "United States science-fiction publishing context"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>尼尔·斯蒂芬森通过能够对话、讲故事并适应学习者的“少女图解读本”，想象智能教育系统如何塑造人的能力与价值观。 “少女图解读本”会根据奈尔的处境调整故事和训练，使学习成为持续对话而非固定课程。它既展现个性化教育的潜力，也揭示教材背后的设计目标、表演者劳动和文化价值会悄然进入学习者的成长。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 《钻石时代》于 1995 年出版。小说置于纳米技术高度发展的未来社会，教育、身份与资源由不同文化共同体和技术基础设施共同决定。</p><p> 教育技术与科幻研究者通常把这本“读本”视为智能导师和自适应学习最有影响力的文化原型之一。它提醒今天的生成式教育系统，个性化不仅是推荐更合适的内容，也涉及谁设定成长方向、谁承担教学关系以及学习数据归谁所有。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Through an illustrated primer that converses, tells stories and adapts to its learner, Neal Stephenson imagines how intelligent education systems may shape capability and values. The Young Lady's Illustrated Primer adapts stories and exercises to Nell's circumstances, making learning an ongoing dialogue rather than a fixed curriculum. It shows the promise of personalized education while revealing how design goals, human labor and cultural values enter the learner's development.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. The Diamond Age was published in 1995. It is set in a future transformed by nanotechnology, where education, identity and resources are organized through cultural communities and technical infrastructure.</p><p> Education-technology and science-fiction scholars generally regard the Primer as one of the most influential cultural prototypes for intelligent tutoring and adaptive learning. It reminds current generative learning systems that personalization concerns not only content selection but who sets developmental goals, who performs the teaching relationship and who owns learning data. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-43",
+        "name": {
+          "zh": "尼尔·斯蒂芬森",
+          "en": "Neal Stephenson"
+        },
+        "role": {
+          "zh": "《钻石时代》作者",
+          "en": "Author of The Diamond Age"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1993-event/neal-stephenson-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1993-event/neal-stephenson-portrait.jpg": {
+          "caption": {
+            "zh": "尼尔·斯蒂芬森与《巴洛克循环》人物",
+            "en": "Neal Stephenson and Baroque Cycle characters"
+          },
+          "subcaption": {
+            "zh": "《钻石时代》作者尼尔·斯蒂芬森及其作品人物资料。",
+            "en": "Neal Stephenson, author of The Diamond Age, with characters from his work."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neal_Stephenson_and_Baroque_Cycle_characters.jpg",
+          "license": {
+            "zh": "CC BY 2.0",
+            "en": "CC BY 2.0"
+          },
+          "sourceId": "source-humanistic-1993-event-neal-stephenson-portrait",
+          "rights": {
+            "status": "cc-by-2.0",
+            "license": {
+              "zh": "CC BY 2.0",
+              "en": "CC BY 2.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-43"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1993-event-neal-stephenson-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1993-event/neal-stephenson-portrait.jpg": {
+        "caption": {
+          "zh": "尼尔·斯蒂芬森与《巴洛克循环》人物",
+          "en": "Neal Stephenson and Baroque Cycle characters"
+        },
+        "subcaption": {
+          "zh": "《钻石时代》作者尼尔·斯蒂芬森及其作品人物资料。",
+          "en": "Neal Stephenson, author of The Diamond Age, with characters from his work."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neal_Stephenson_and_Baroque_Cycle_characters.jpg",
+        "license": {
+          "zh": "CC BY 2.0",
+          "en": "CC BY 2.0"
+        },
+        "sourceId": "source-humanistic-1993-event-neal-stephenson-portrait",
+        "rights": {
+          "status": "cc-by-2.0",
+          "license": {
+            "zh": "CC BY 2.0",
+            "en": "CC BY 2.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-43"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《钻石时代》",
+            "en": "The Diamond Age"
+          },
+          "description": {
+            "zh": "交互式智能教材与个性化教育",
+            "en": "An interactive intelligent primer and personalized education"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E9%92%BB%E7%9F%B3%E6%97%B6%E4%BB%A3%E3%80%8B%20%E5%B0%BC%E5%B0%94%C2%B7%E6%96%AF%E8%92%82%E8%8A%AC%E6%A3%AE",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1993-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《钻石时代》",
+            "en": "The Diamond Age"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E9%92%BB%E7%9F%B3%E6%97%B6%E4%BB%A3%E3%80%8B%20%E5%B0%BC%E5%B0%94%C2%B7%E6%96%AF%E8%92%82%E8%8A%AC%E6%A3%AE",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1993-event-neal-stephenson-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "尼尔·斯蒂芬森与《巴洛克循环》人物",
+            "en": "Neal Stephenson and Baroque Cycle characters"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Neal_Stephenson_and_Baroque_Cycle_characters.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1993-event-record",
+        "source-humanistic-1993-event-neal-stephenson-portrait"
+      ],
+      "claimIds": [
+        "claim-humanistic-1993-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1993-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "以智能教程书籍想象AI个性化教育，突出AI作为教育者的角色。",
+            "en": "以智能教程书籍想象AI个性化教育，突出AI作为教育者的角色。"
+          },
+          "sourceIds": [
+            "source-humanistic-1993-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《钻石时代》于 1995 年出版。小说置于纳米技术高度发展的未来社会，教育、身份与资源由不同文化共同体和技术基础设施共同决定。",
+          "en": "The Diamond Age was published in 1995. It is set in a future transformed by nanotechnology, where education, identity and resources are organized through cultural communities and technical infrastructure."
+        },
+        "sourceIds": [
+          "source-humanistic-1993-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "“少女图解读本”会根据奈尔的处境调整故事和训练，使学习成为持续对话而非固定课程。它既展现个性化教育的潜力，也揭示教材背后的设计目标、表演者劳动和文化价值会悄然进入学习者的成长。",
+          "en": "The Young Lady's Illustrated Primer adapts stories and exercises to Nell's circumstances, making learning an ongoing dialogue rather than a fixed curriculum. It shows the promise of personalized education while revealing how design goals, human labor and cultural values enter the learner's development."
+        },
+        "sourceIds": [
+          "source-humanistic-1993-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "教育技术与科幻研究者通常把这本“读本”视为智能导师和自适应学习最有影响力的文化原型之一。它提醒今天的生成式教育系统，个性化不仅是推荐更合适的内容，也涉及谁设定成长方向、谁承担教学关系以及学习数据归谁所有。",
+          "en": "Education-technology and science-fiction scholars generally regard the Primer as one of the most influential cultural prototypes for intelligent tutoring and adaptive learning. It reminds current generative learning systems that personalization concerns not only content selection but who sets developmental goals, who performs the teaching relationship and who owns learning data."
+        },
+        "sourceIds": [
+          "source-humanistic-1993-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1993-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1993-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1995-event",
+    "archiveEventId": "humanistic-1995-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 410,
+    "year": 1995,
+    "date": "1995",
+    "title": {
+      "zh": "《电子超级高速公路》",
+      "en": "Electronic Superhighway: Continental U.S., Alaska, Hawaii"
+    },
+    "subtitle": {
+      "zh": "以电视、霓虹与地图表现网络化美国",
+      "en": "Mapping a networked America through televisions and neon"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "华盛顿特区，史密森尼美国艺术博物馆",
+        "en": "Smithsonian American Art Museum, Washington, D.C."
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        38.8977,
+        -77.0365
+      ]
+    },
+    "description": {
+      "zh": "<p>白南准用美国地图轮廓、霓虹灯和数百台电视构成《电子超级高速公路》，把大众媒介、地域身份与电子连接并置。 作品以霓虹勾勒各州边界，并让屏幕播放与地方文化相关的影像；统一网络因此没有抹平差异，而是把地域刻板印象、速度和媒介流同时放大。观众必须移动视线和身体，才能在整体地图与局部信息之间建立关系。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 《电子超级高速公路：美国本土、阿拉斯加、夏威夷》创作于 1995 年，正逢互联网商业化和“信息高速公路”进入公共政策语言。白南准此前已长期使用电视、录像和卫星直播探索电子媒介如何改变空间经验。</p><p> 媒体艺术史研究者通常把这件作品视为白南准关于电子互联社会最具代表性的装置之一。它持续影响人们理解屏幕网络、注意力竞争和数字地理的方式，也说明“连接更多”并不必然意味着理解更深。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Nam June Paik constructs Electronic Superhighway from a map of the United States, neon and hundreds of television sets, placing mass media, regional identity and electronic connection together. Neon outlines state borders while screens show imagery associated with local culture; the network does not erase difference but amplifies regional stereotypes, speed and media flow at once. Viewers must move their eyes and bodies to connect the whole map with its local information.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. Electronic Superhighway: Continental U.S., Alaska, Hawaii was created in 1995 as commercial Internet access and the phrase “information superhighway” entered public policy. Paik had long used television, video and satellite broadcasts to explore how electronic media change spatial experience.</p><p> Media-art historians generally regard the installation as one of Paik's defining visions of an electronically connected society. It continues to shape interpretations of screen networks, attention competition and digital geography, showing that greater connection does not necessarily produce deeper understanding. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-44",
+        "name": {
+          "zh": "白南准",
+          "en": "Nam June Paik"
+        },
+        "role": {
+          "zh": "《电子超级高速公路》艺术家",
+          "en": "Artist of Electronic Superhighway"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1995-event/nam-june-paik-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1995-event/nam-june-paik-portrait.jpg": {
+          "caption": {
+            "zh": "白南准肖像",
+            "en": "Nam June Paik portrait"
+          },
+          "subcaption": {
+            "zh": "《电子超级高速公路》艺术家。",
+            "en": "Artist of Electronic Superhighway."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paik_Nam_June_(cropped).jpg",
+          "license": {
+            "zh": "PUBLIC DOMAIN",
+            "en": "PUBLIC DOMAIN"
+          },
+          "sourceId": "source-humanistic-1995-event-nam-june-paik-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "PUBLIC DOMAIN",
+              "en": "PUBLIC DOMAIN"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-44"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1995-event-nam-june-paik-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1995-event/nam-june-paik-portrait.jpg": {
+        "caption": {
+          "zh": "白南准肖像",
+          "en": "Nam June Paik portrait"
+        },
+        "subcaption": {
+          "zh": "《电子超级高速公路》艺术家。",
+          "en": "Artist of Electronic Superhighway."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paik_Nam_June_(cropped).jpg",
+        "license": {
+          "zh": "PUBLIC DOMAIN",
+          "en": "PUBLIC DOMAIN"
+        },
+        "sourceId": "source-humanistic-1995-event-nam-june-paik-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "PUBLIC DOMAIN",
+            "en": "PUBLIC DOMAIN"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-44"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《电子超级高速公路》",
+            "en": "Electronic Superhighway: Continental U.S., Alaska, Hawaii"
+          },
+          "description": {
+            "zh": "以电视、霓虹与地图表现网络化美国",
+            "en": "Mapping a networked America through televisions and neon"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E7%94%B5%E5%AD%90%E8%B6%85%E7%BA%A7%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF%E3%80%8B%20%E7%99%BD%E5%8D%97%E5%87%86",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1995-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《电子超级高速公路》",
+            "en": "Electronic Superhighway: Continental U.S., Alaska, Hawaii"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E7%94%B5%E5%AD%90%E8%B6%85%E7%BA%A7%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF%E3%80%8B%20%E7%99%BD%E5%8D%97%E5%87%86",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1995-event-nam-june-paik-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "白南准肖像",
+            "en": "Nam June Paik portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Paik_Nam_June_(cropped).jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1995-event-record",
+        "source-humanistic-1995-event-nam-june-paik-portrait"
+      ],
+      "claimIds": [
+        "claim-humanistic-1995-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1995-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "以电子屏幕拼出美国地图，预示电子网络连接全球的数字时代。",
+            "en": "以电子屏幕拼出美国地图，预示电子网络连接全球的数字时代。"
+          },
+          "sourceIds": [
+            "source-humanistic-1995-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《电子超级高速公路：美国本土、阿拉斯加、夏威夷》创作于 1995 年，正逢互联网商业化和“信息高速公路”进入公共政策语言。白南准此前已长期使用电视、录像和卫星直播探索电子媒介如何改变空间经验。",
+          "en": "Electronic Superhighway: Continental U.S., Alaska, Hawaii was created in 1995 as commercial Internet access and the phrase “information superhighway” entered public policy. Paik had long used television, video and satellite broadcasts to explore how electronic media change spatial experience."
+        },
+        "sourceIds": [
+          "source-humanistic-1995-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品以霓虹勾勒各州边界，并让屏幕播放与地方文化相关的影像；统一网络因此没有抹平差异，而是把地域刻板印象、速度和媒介流同时放大。观众必须移动视线和身体，才能在整体地图与局部信息之间建立关系。",
+          "en": "Neon outlines state borders while screens show imagery associated with local culture; the network does not erase difference but amplifies regional stereotypes, speed and media flow at once. Viewers must move their eyes and bodies to connect the whole map with its local information."
+        },
+        "sourceIds": [
+          "source-humanistic-1995-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "媒体艺术史研究者通常把这件作品视为白南准关于电子互联社会最具代表性的装置之一。它持续影响人们理解屏幕网络、注意力竞争和数字地理的方式，也说明“连接更多”并不必然意味着理解更深。",
+          "en": "Media-art historians generally regard the installation as one of Paik's defining visions of an electronically connected society. It continues to shape interpretations of screen networks, attention competition and digital geography, showing that greater connection does not necessarily produce deeper understanding."
+        },
+        "sourceIds": [
+          "source-humanistic-1995-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1995-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1995-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1995-hard-problem",
+    "archiveEventId": "humanistic-1995-hard-problem",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 420,
+    "year": 1995,
+    "date": "1995",
+    "title": {
+      "zh": "意识的“困难问题”",
+      "en": "The Hard Problem of Consciousness"
+    },
+    "subtitle": {
+      "zh": "哲学",
+      "en": "Philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "意识哲学语境",
+        "en": "Philosophy of consciousness"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>大卫·查尔默斯在 1995 年提出“意识的困难问题”，区分解释大脑如何处理信息与解释为什么这些处理会伴随主观体验。前一类问题可以研究注意、记忆和行为报告等功能机制；后一类问题则追问，为什么颜色、疼痛或声音会以某种“感觉”呈现给一个主体。</p><p>这个区分直接影响了人工意识讨论。如果一个系统在功能上完全复制人类，却没有任何内在体验，我们如何知道它是有意识的，或者它只是完美模拟了有意识的行为？查尔默斯并没有给出工程答案，但他阻止研究者把可观察行为自动等同于体验本身。</p><p>“困难问题”后来成为意识哲学、认知科学和 AI 伦理的共同参照。它的长期影响不在于证明机器不能有意识，而在于要求任何关于机器心智的论断都说明：我们测量的是功能、报告、整合信息，还是某种无法从外部直接观察的主观世界。</p>",
+      "en": "<p>In 1995 David Chalmers introduced the hard problem of consciousness, distinguishing an explanation of how the brain processes information from an explanation of why those processes are accompanied by subjective experience. The first class includes mechanisms of attention, memory and behavioral report; the second asks why colors, pain or sounds appear as a feeling to a subject.</p><p>The distinction directly affects debates about artificial consciousness. If a system completely reproduced human functions but had no inner experience, how could we know whether it was conscious or merely simulating conscious behavior? Chalmers did not provide an engineering answer, but he blocked the easy assumption that observable performance is identical to experience.</p><p>The hard problem became a shared reference for philosophy of mind, cognitive science and AI ethics. Its lasting effect is not to prove that machines cannot be conscious, but to require claims about machine minds to specify whether they measure function, report, information integration or a subjective world that cannot be observed directly.</p>"
+    },
+    "figures": [
+      {
+        "id": "david-chalmers",
+        "name": {
+          "zh": "大卫·查尔默斯",
+          "en": "David Chalmers"
+        },
+        "role": {
+          "zh": "“困难问题”提出者",
+          "en": "Formulator of the hard problem"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1995-hard-problem/verified-david-chalmers.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1995-hard-problem/verified-david-chalmers.jpg": {
+          "caption": {
+            "zh": "大卫·查尔默斯肖像",
+            "en": "David Chalmers"
+          },
+          "subcaption": {
+            "zh": "意识“困难问题”提出者。",
+            "en": "Formulator of the hard problem of consciousness."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_chalmers.jpg",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "sourceId": "source-humanistic-1995-hard-problem-verified-image",
+          "rights": {
+            "status": "cc-by-sa-4-0",
+            "license": {
+              "zh": "CC BY-SA 4.0",
+              "en": "CC BY-SA 4.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线人物或历史资料展示。",
+              "en": "Used as a figure or historical reference in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "david-chalmers"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1995-hard-problem-verified-image"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1995-hard-problem/verified-david-chalmers.jpg": {
+        "caption": {
+          "zh": "大卫·查尔默斯肖像",
+          "en": "David Chalmers"
+        },
+        "subcaption": {
+          "zh": "意识“困难问题”提出者。",
+          "en": "Formulator of the hard problem of consciousness."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_chalmers.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0",
+          "en": "CC BY-SA 4.0"
+        },
+        "sourceId": "source-humanistic-1995-hard-problem-verified-image",
+        "rights": {
+          "status": "cc-by-sa-4-0",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线人物或历史资料展示。",
+            "en": "Used as a figure or historical reference in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "david-chalmers"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "作品/文献资料",
+            "en": "Work or text record"
+          },
+          "title": {
+            "zh": "意识的“困难问题”",
+            "en": "The Hard Problem of Consciousness"
+          },
+          "description": {
+            "zh": "打开作品或文献资料页面。",
+            "en": "Open the work or text record."
+          },
+          "url": "https://consc.net/papers/facing.html",
+          "source": "The Hard Problem of Consciousness",
+          "license": {
+            "zh": "以来源页面说明为准。",
+            "en": "Follow the source page terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary record for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1995-hard-problem-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "意识的“困难问题”",
+            "en": "The Hard Problem of Consciousness"
+          },
+          "url": "https://consc.net/papers/facing.html",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1995-hard-problem-verified-image",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "大卫·查尔默斯肖像",
+            "en": "David Chalmers"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:David_chalmers.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1995-hard-problem-record",
+        "source-humanistic-1995-hard-problem-verified-image"
+      ],
+      "claimIds": [
+        "claim-humanistic-1995-hard-problem-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1995-hard-problem-core",
+          "importance": "core",
+          "text": {
+            "zh": "大卫·查尔默斯区分解释大脑信息处理机制与解释主观体验之间的差异，推动了意识哲学与人工意识讨论。",
+            "en": "David Chalmers distinguishes explaining information processing from explaining subjective experience, shaping philosophy of consciousness and debates about artificial consciousness."
+          },
+          "sourceIds": [
+            "source-humanistic-1995-hard-problem-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "大卫·查尔默斯区分解释大脑信息处理机制与解释主观体验之间的差异，推动了意识哲学与人工意识讨论。",
+          "en": "David Chalmers distinguishes explaining information processing from explaining subjective experience, shaping philosophy of consciousness and debates about artificial consciousness."
+        },
+        "sourceIds": [
+          "source-humanistic-1995-hard-problem-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1995-hard-problem-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1995-hard-problem-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1995-hard-problem/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1995-hard-problem/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1998-extended-mind",
+    "archiveEventId": "humanistic-1998-extended-mind",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 430,
+    "year": 1998,
+    "date": "1998",
+    "title": {
+      "zh": "《拓展心智论》",
+      "en": "The Extended Mind"
+    },
+    "subtitle": {
+      "zh": "哲学",
+      "en": "Philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "心灵哲学与认知科学语境",
+        "en": "Philosophy of mind and cognitive science"
+      },
+      "country": {
+        "zh": "英美哲学语境",
+        "en": "Anglo-American philosophical context"
+      },
+      "regionId": "global",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>安迪·克拉克与大卫·查尔默斯在《拓展心智论》中提出，认知过程不一定止于大脑和皮肤，也可能延伸到身体动作、笔记本、导航工具和周围环境。文章用“奥托的笔记本”说明：如果一个人稳定地依赖外部记录来完成记忆任务，那么这本笔记本在功能上可以像脑内记忆一样成为认知过程的一部分。</p><p>这一观点改变了人们理解人机关系的方式。手机、搜索引擎和 AI 助手不只是把答案交给人，而是在保存、筛选、提醒和规划中参与思考；与此同时，数据所有权、接口设计和平台中断也会影响一个人的记忆与行动能力。</p><p>拓展心智论并不意味着所有工具自动拥有心灵，也不意味着人类可以把责任交给设备。它的长期价值在于提供了一个判断标准：外部资源是否以稳定、直接、可随时取得的方式参与认知。这个标准今天仍被用于讨论数字依赖、辅助技术和生成式 AI 的协作边界。</p>",
+      "en": "<p>Andy Clark and David Chalmers argue in The Extended Mind that cognition need not stop at the brain and skin; it can extend into bodily action, notebooks, navigation tools and the surrounding environment. Their case of Otto's notebook suggests that when a person reliably relies on an external record for memory, the notebook can function as part of the cognitive process.</p><p>The argument changes how human-machine relations are understood. Phones, search engines and AI assistants do more than deliver answers: they participate in remembering, filtering, reminding and planning. At the same time, data ownership, interface design and platform outages can affect a person's ability to remember and act.</p><p>The extended-mind thesis does not mean every tool has a mind or that responsibility can be handed to a device. Its lasting value is a test for collaboration: does an external resource participate in cognition in a stable, direct and readily accessible way? That test remains useful for discussing digital dependence, assistive technology and the boundaries of generative-AI cooperation.</p>"
+    },
+    "figures": [
+      {
+        "id": "david-chalmers",
+        "name": {
+          "zh": "大卫·查尔默斯",
+          "en": "David Chalmers"
+        },
+        "role": {
+          "zh": "《拓展心智论》共同作者",
+          "en": "Co-author of The Extended Mind"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "andy-clark",
+        "name": {
+          "zh": "安迪·克拉克",
+          "en": "Andy Clark"
+        },
+        "role": {
+          "zh": "《拓展心智论》共同作者",
+          "en": "Co-author of The Extended Mind"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": false
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1998-extended-mind/verified-david-chalmers.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1998-extended-mind/verified-david-chalmers.jpg": {
+          "caption": {
+            "zh": "大卫·查尔默斯肖像",
+            "en": "David Chalmers"
+          },
+          "subcaption": {
+            "zh": "《拓展心智论》共同作者。",
+            "en": "Co-author of The Extended Mind."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_chalmers.jpg",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "sourceId": "source-humanistic-1998-extended-mind-verified-image",
+          "rights": {
+            "status": "cc-by-sa-4-0",
+            "license": {
+              "zh": "CC BY-SA 4.0",
+              "en": "CC BY-SA 4.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线人物或历史资料展示。",
+              "en": "Used as a figure or historical reference in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "david-chalmers"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1998-extended-mind-verified-image"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1998-extended-mind/verified-david-chalmers.jpg": {
+        "caption": {
+          "zh": "大卫·查尔默斯肖像",
+          "en": "David Chalmers"
+        },
+        "subcaption": {
+          "zh": "《拓展心智论》共同作者。",
+          "en": "Co-author of The Extended Mind."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_chalmers.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0",
+          "en": "CC BY-SA 4.0"
+        },
+        "sourceId": "source-humanistic-1998-extended-mind-verified-image",
+        "rights": {
+          "status": "cc-by-sa-4-0",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线人物或历史资料展示。",
+            "en": "Used as a figure or historical reference in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "david-chalmers"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "作品/文献资料",
+            "en": "Work or text record"
+          },
+          "title": {
+            "zh": "《拓展心智论》",
+            "en": "The Extended Mind"
+          },
+          "description": {
+            "zh": "打开作品或文献资料页面。",
+            "en": "Open the work or text record."
+          },
+          "url": "https://consc.net/papers/extended.html",
+          "source": "The Extended Mind",
+          "license": {
+            "zh": "以来源页面说明为准。",
+            "en": "Follow the source page terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary record for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1998-extended-mind-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《拓展心智论》",
+            "en": "The Extended Mind"
+          },
+          "url": "https://consc.net/papers/extended.html",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1998-extended-mind-verified-image",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "大卫·查尔默斯肖像",
+            "en": "David Chalmers"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:David_chalmers.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1998-extended-mind-record",
+        "source-humanistic-1998-extended-mind-verified-image"
+      ],
+      "claimIds": [
+        "claim-humanistic-1998-extended-mind-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1998-extended-mind-core",
+          "importance": "core",
+          "text": {
+            "zh": "安迪·克拉克与大卫·查尔默斯提出，认知过程可以延伸到身体、工具和外部环境，AI也可能成为人类心智的扩展而非替代。",
+            "en": "Andy Clark and David Chalmers argue that cognition can extend into the body, tools and environment, allowing AI to function as an extension rather than a replacement of human minds."
+          },
+          "sourceIds": [
+            "source-humanistic-1998-extended-mind-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "安迪·克拉克与大卫·查尔默斯提出，认知过程可以延伸到身体、工具和外部环境，AI也可能成为人类心智的扩展而非替代。",
+          "en": "Andy Clark and David Chalmers argue that cognition can extend into the body, tools and environment, allowing AI to function as an extension rather than a replacement of human minds."
+        },
+        "sourceIds": [
+          "source-humanistic-1998-extended-mind-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1998-extended-mind-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1998-extended-mind-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1998-extended-mind/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1998-extended-mind/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-1999-event",
+    "archiveEventId": "humanistic-1999-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 440,
+    "year": 1999,
+    "date": "1999",
+    "title": {
+      "zh": "《黑客帝国》",
+      "en": "The Matrix"
+    },
+    "subtitle": {
+      "zh": "机器统治、模拟现实与觉醒",
+      "en": "Machine rule, simulated reality and awakening"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "美国与澳大利亚电影制作语境",
+        "en": "United States and Australian film-production context"
+      },
+      "country": {
+        "zh": "美国 / 澳大利亚",
+        "en": "United States / Australia"
+      },
+      "regionId": "global",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>沃卓斯基姐妹通过机器构造的虚拟世界，把“缸中之脑”、赛博朋克动作和人类被技术系统支配的恐惧转化为大众叙事。 影片把认识论问题变成身体经验：如果感官输入完全由系统生成，人如何知道自己身处真实世界。红蓝药丸选择同时涉及自由、痛苦和责任，说明“知道真相”并不只是获得信息，而是接受行动后果。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 《黑客帝国》于 1999 年上映，正值互联网扩张、数字特效成熟和千禧年技术焦虑交汇。影片中的人类生活在名为 Matrix 的模拟现实中，身体则被机器系统维持并利用。</p><p> 电影与数字文化研究者通常把《黑客帝国》视为网络时代最具影响力的哲学科幻电影之一。它的视觉语言、模拟隐喻和身份议题广泛进入游戏、互联网文化与 AI 讨论，但后来的政治挪用也表明流行符号会脱离原作语境继续变化。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>The Wachowskis turn the brain-in-a-vat problem, cyberpunk action and fear of technological domination into a mass-cultural narrative built around a machine-created virtual world. The film turns an epistemological problem into bodily experience: if a system generates all sensory input, how can anyone know the real world? The red-or-blue-pill choice concerns freedom, pain and responsibility, showing that knowing the truth means accepting consequences rather than merely receiving information.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. The Matrix was released in 1999, where Internet expansion, mature digital effects and millennial technological anxiety converged. Humans live inside a simulated reality called the Matrix while their bodies are maintained and used by a machine system.</p><p> Film and digital-culture scholars generally regard The Matrix as one of the most influential philosophical science-fiction films of the network era. Its visual language, simulation metaphor and identity themes spread through games, online culture and AI debate, while later political appropriation shows how popular symbols can escape their original context. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-50",
+        "name": {
+          "zh": "沃卓斯基姐妹",
+          "en": "The Wachowskis"
+        },
+        "role": {
+          "zh": "《黑客帝国》编剧兼导演",
+          "en": "Writers and directors of The Matrix"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "team",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-1999-event/wachowskis-portrait.jpg",
+        "resources/images/humanistic-cycle/humanistic-1999-event/matrix-poster-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-1999-event/matrix-scene-1-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-1999-event/matrix-scene-2-tmdb.jpg"
+      ],
+      "overviewImage": "resources/images/humanistic-cycle/humanistic-1999-event/matrix-poster-tmdb.jpg",
+      "overviewImageAssetId": "asset-humanistic-1999-event-tmdb-poster",
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1999-event/wachowskis-portrait.jpg": {
+          "caption": {
+            "zh": "沃卓斯基姐妹肖像",
+            "en": "The Wachowskis portrait"
+          },
+          "subcaption": {
+            "zh": "《黑客帝国》编剧兼导演。",
+            "en": "Writers and directors of The Matrix."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wachowskis.jpg",
+          "license": {
+            "zh": "CC BY SA 3.0",
+            "en": "CC BY SA 3.0"
+          },
+          "sourceId": "source-humanistic-1999-event-wachowskis-portrait",
+          "rights": {
+            "status": "cc-by-sa-3.0",
+            "license": {
+              "zh": "CC BY SA 3.0",
+              "en": "CC BY SA 3.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-50"
+          ]
+        },
+        "resources/images/humanistic-cycle/humanistic-1999-event/matrix-poster-tmdb.jpg": {
+          "caption": {
+            "zh": "《黑客帝国》电影海报",
+            "en": "The Matrix film poster"
+          },
+          "subcaption": {
+            "zh": "1999 年电影《黑客帝国》的中文发行海报。",
+            "en": "Chinese release poster for the 1999 film The Matrix."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/eMurN09rDC2qeEv3npkUbcJfIXN.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-1999-event-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/603-the-matrix/images"
+          },
+          "role": "movie-poster",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/humanistic-1999-event/matrix-scene-1-tmdb.jpg": {
+          "caption": {
+            "zh": "《黑客帝国》主要角色视觉",
+            "en": "The Matrix principal characters"
+          },
+          "subcaption": {
+            "zh": "尼奥、崔妮蒂、墨菲斯与史密斯特工的影片视觉资料。",
+            "en": "Film visual featuring Neo, Trinity, Morpheus and Agent Smith."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-1999-event-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/603-the-matrix/images"
+          },
+          "role": "promotional-still",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/humanistic-1999-event/matrix-scene-2-tmdb.jpg": {
+          "caption": {
+            "zh": "崔妮蒂与尼奥的现实世界场景",
+            "en": "Trinity and Neo in the real world"
+          },
+          "subcaption": {
+            "zh": "崔妮蒂在现实世界中照看尼奥的电影场景。",
+            "en": "Film scene showing Trinity attending to Neo in the real world."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/oMsxZEvz9a708d49b6UdZK1KAo5.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-1999-event-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/603-the-matrix/images"
+          },
+          "role": "film-still",
+          "type": "image",
+          "figureIds": []
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-1999-event-wachowskis-portrait",
+        "asset-humanistic-1999-event-tmdb-poster",
+        "asset-humanistic-1999-event-tmdb-scene-1",
+        "asset-humanistic-1999-event-tmdb-scene-2"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1999-event/wachowskis-portrait.jpg": {
+        "caption": {
+          "zh": "沃卓斯基姐妹肖像",
+          "en": "The Wachowskis portrait"
+        },
+        "subcaption": {
+          "zh": "《黑客帝国》编剧兼导演。",
+          "en": "Writers and directors of The Matrix."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wachowskis.jpg",
+        "license": {
+          "zh": "CC BY SA 3.0",
+          "en": "CC BY SA 3.0"
+        },
+        "sourceId": "source-humanistic-1999-event-wachowskis-portrait",
+        "rights": {
+          "status": "cc-by-sa-3.0",
+          "license": {
+            "zh": "CC BY SA 3.0",
+            "en": "CC BY SA 3.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-50"
+        ]
+      },
+      "resources/images/humanistic-cycle/humanistic-1999-event/matrix-poster-tmdb.jpg": {
+        "caption": {
+          "zh": "《黑客帝国》电影海报",
+          "en": "The Matrix film poster"
+        },
+        "subcaption": {
+          "zh": "1999 年电影《黑客帝国》的中文发行海报。",
+          "en": "Chinese release poster for the 1999 film The Matrix."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/eMurN09rDC2qeEv3npkUbcJfIXN.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-1999-event-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/603-the-matrix/images"
+        },
+        "role": "movie-poster",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/humanistic-1999-event/matrix-scene-1-tmdb.jpg": {
+        "caption": {
+          "zh": "《黑客帝国》主要角色视觉",
+          "en": "The Matrix principal characters"
+        },
+        "subcaption": {
+          "zh": "尼奥、崔妮蒂、墨菲斯与史密斯特工的影片视觉资料。",
+          "en": "Film visual featuring Neo, Trinity, Morpheus and Agent Smith."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-1999-event-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/603-the-matrix/images"
+        },
+        "role": "promotional-still",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/humanistic-1999-event/matrix-scene-2-tmdb.jpg": {
+        "caption": {
+          "zh": "崔妮蒂与尼奥的现实世界场景",
+          "en": "Trinity and Neo in the real world"
+        },
+        "subcaption": {
+          "zh": "崔妮蒂在现实世界中照看尼奥的电影场景。",
+          "en": "Film scene showing Trinity attending to Neo in the real world."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/oMsxZEvz9a708d49b6UdZK1KAo5.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-1999-event-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/603-the-matrix/images"
+        },
+        "role": "film-still",
+        "type": "image",
+        "figureIds": []
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《黑客帝国》",
+            "en": "The Matrix"
+          },
+          "description": {
+            "zh": "机器统治、模拟现实与觉醒",
+            "en": "Machine rule, simulated reality and awakening"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD%E3%80%8B%20%E6%B2%83%E5%8D%93%E6%96%AF%E5%9F%BA%E5%A7%90%E5%A6%B9%2F%E5%85%84%E5%BC%9F",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-1999-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《黑客帝国》",
+            "en": "The Matrix"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD%E3%80%8B%20%E6%B2%83%E5%8D%93%E6%96%AF%E5%9F%BA%E5%A7%90%E5%A6%B9%2F%E5%85%84%E5%BC%9F",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-1999-event-wachowskis-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "沃卓斯基姐妹肖像",
+            "en": "The Wachowskis portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Wachowskis.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-humanistic-1999-event-tmdb-images",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "《黑客帝国》 TMDB 图片库",
+            "en": "The Matrix TMDB image gallery"
+          },
+          "url": "https://www.themoviedb.org/movie/603-the-matrix/images",
+          "purpose": "image-provenance",
+          "reliability": "secondary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-1999-event-record",
+        "source-humanistic-1999-event-wachowskis-portrait",
+        "source-humanistic-1999-event-tmdb-images"
+      ],
+      "claimIds": [
+        "claim-humanistic-1999-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-1999-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "AI创造虚拟现实奴役人类，将缸中之脑问题转化为大众文化命题。",
+            "en": "AI创造虚拟现实奴役人类，将缸中之脑问题转化为大众文化命题。"
+          },
+          "sourceIds": [
+            "source-humanistic-1999-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《黑客帝国》于 1999 年上映，正值互联网扩张、数字特效成熟和千禧年技术焦虑交汇。影片中的人类生活在名为 Matrix 的模拟现实中，身体则被机器系统维持并利用。",
+          "en": "The Matrix was released in 1999, where Internet expansion, mature digital effects and millennial technological anxiety converged. Humans live inside a simulated reality called the Matrix while their bodies are maintained and used by a machine system."
+        },
+        "sourceIds": [
+          "source-humanistic-1999-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "影片把认识论问题变成身体经验：如果感官输入完全由系统生成，人如何知道自己身处真实世界。红蓝药丸选择同时涉及自由、痛苦和责任，说明“知道真相”并不只是获得信息，而是接受行动后果。",
+          "en": "The film turns an epistemological problem into bodily experience: if a system generates all sensory input, how can anyone know the real world? The red-or-blue-pill choice concerns freedom, pain and responsibility, showing that knowing the truth means accepting consequences rather than merely receiving information."
+        },
+        "sourceIds": [
+          "source-humanistic-1999-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "电影与数字文化研究者通常把《黑客帝国》视为网络时代最具影响力的哲学科幻电影之一。它的视觉语言、模拟隐喻和身份议题广泛进入游戏、互联网文化与 AI 讨论，但后来的政治挪用也表明流行符号会脱离原作语境继续变化。",
+          "en": "Film and digital-culture scholars generally regard The Matrix as one of the most influential philosophical science-fiction films of the network era. Its visual language, simulation metaphor and identity themes spread through games, online culture and AI debate, while later political appropriation shows how popular symbols can escape their original context."
+        },
+        "sourceIds": [
+          "source-humanistic-1999-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-1999-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-1999-event/event.json",
+      "presentationMode": "archive"
+    },
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-1999-event/matrix-poster-tmdb.jpg"
+    ],
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-2001-event",
+    "archiveEventId": "humanistic-2001-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 450,
+    "year": 2001,
+    "date": "2001",
+    "title": {
+      "zh": "《人工智能》",
+      "en": "A.I. Artificial Intelligence"
+    },
+    "subtitle": {
+      "zh": "被设计去爱的机器儿童与人的责任",
+      "en": "A machine child designed to love and the responsibilities of humans"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "美国电影制作语境",
+        "en": "United States film-production context"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>史蒂文·斯皮尔伯格通过被编程去爱的机器男孩大卫，追问人类制造依恋之后是否也承担回应、照护和终止关系的责任。 大卫的爱被制造为不可撤销的程序，但收养他的家庭可以随时抛弃他，形成极不对称的情感关系。影片没有只问机器能否爱，而是追问创造者是否应对具有持续欲望和痛苦表现的人工存在承担道德义务。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 影片于 2001 年上映，源自布赖恩·奥尔迪斯短篇《玩具在整个夏天长存》，并延续了斯坦利·库布里克多年开发的项目。故事置于气候变化和人口限制下的未来社会，机器人被广泛用于劳动、娱乐与情感替代。</p><p> 电影研究者通常把《人工智能》视为库布里克式冷峻与斯皮尔伯格式情感叙事交汇的复杂作品。随着陪伴机器人和对话式 AI 普及，它关于依恋设计、儿童形象和用户责任的问题获得了新的现实相关性。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Through David, a machine child programmed to love, Steven Spielberg asks whether humans assume duties of response, care and closure when they manufacture attachment. David's love is manufactured as an irreversible program, while his adoptive family can abandon him at any time, creating a deeply asymmetric relationship. The film asks not only whether a machine can love but whether creators owe duties to artificial beings that exhibit enduring desire and suffering.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. Released in 2001, the film derives from Brian Aldiss's short story “Supertoys Last All Summer Long” and a project Stanley Kubrick had developed for years. It depicts a climate-stressed future with population controls where robots provide labor, entertainment and emotional substitution.</p><p> Film scholars generally regard A.I. Artificial Intelligence as a complex meeting of Kubrickian distance and Spielbergian emotion. As companion robots and conversational AI spread, its questions about designed attachment, childlike interfaces and user responsibility have gained new relevance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-52",
+        "name": {
+          "zh": "史蒂文·斯皮尔伯格",
+          "en": "Steven Spielberg"
+        },
+        "role": {
+          "zh": "《人工智能》导演兼联合编剧",
+          "en": "Director and co-writer of A.I. Artificial Intelligence"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-poster-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-scene-1-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-scene-2-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-2001-event/ai-film-logo.svg"
+      ],
+      "overviewImage": "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-poster-tmdb.jpg",
+      "overviewImageAssetId": "asset-humanistic-2001-event-tmdb-poster",
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-poster-tmdb.jpg": {
+          "caption": {
+            "zh": "《人工智能》电影海报",
+            "en": "A.I. Artificial Intelligence film poster"
+          },
+          "subcaption": {
+            "zh": "2001 年电影《人工智能》的中文发行海报。",
+            "en": "Chinese release poster for the 2001 film A.I. Artificial Intelligence."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/tl8F1HG1Iua7iTBJbGFeDYidIe7.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-2001-event-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/644-a-i-artificial-intelligence/images"
+          },
+          "role": "movie-poster",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-scene-1-tmdb.jpg": {
+          "caption": {
+            "zh": "大卫与莫妮卡",
+            "en": "David and Monica"
+          },
+          "subcaption": {
+            "zh": "机器人男孩大卫与人类养母莫妮卡相处的电影场景。",
+            "en": "Film scene showing the robot child David with his human adoptive mother Monica."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/n7p6UTAZtkeoHkwCO42BEQaMFJY.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-2001-event-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/644-a-i-artificial-intelligence/images"
+          },
+          "role": "film-still",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-scene-2-tmdb.jpg": {
+          "caption": {
+            "zh": "《人工智能》角色与未来城市视觉",
+            "en": "A.I. characters and future-city visual"
+          },
+          "subcaption": {
+            "zh": "大卫、莫妮卡、泰迪熊与未来城市构成的影片视觉资料。",
+            "en": "Film visual combining David, Monica, Teddy and the future city."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/2tQ0Uhav10ay7jOX6QoqvbtGljB.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-2001-event-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/644-a-i-artificial-intelligence/images"
+          },
+          "role": "promotional-still",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/humanistic-2001-event/ai-film-logo.svg": {
+          "caption": {
+            "zh": "《人工智能》片名标识资料",
+            "en": "A.I. Artificial Intelligence title reference"
+          },
+          "subcaption": {
+            "zh": "2001 年电影《人工智能》的片名标识。",
+            "en": "Title mark for the 2001 film A.I. Artificial Intelligence."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ai-artificial-intelligence-logo.svg",
+          "license": {
+            "zh": "PUBLIC DOMAIN",
+            "en": "PUBLIC DOMAIN"
+          },
+          "sourceId": "source-humanistic-2001-event-ai-film-logo",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "PUBLIC DOMAIN",
+              "en": "PUBLIC DOMAIN"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "title-reference",
+          "type": "svg",
+          "figureIds": [
+            "humanistic-figure-52"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-2001-event-tmdb-poster",
+        "asset-humanistic-2001-event-tmdb-scene-1",
+        "asset-humanistic-2001-event-tmdb-scene-2",
+        "asset-humanistic-2001-event-ai-film-logo"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-poster-tmdb.jpg": {
+        "caption": {
+          "zh": "《人工智能》电影海报",
+          "en": "A.I. Artificial Intelligence film poster"
+        },
+        "subcaption": {
+          "zh": "2001 年电影《人工智能》的中文发行海报。",
+          "en": "Chinese release poster for the 2001 film A.I. Artificial Intelligence."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/tl8F1HG1Iua7iTBJbGFeDYidIe7.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-2001-event-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/644-a-i-artificial-intelligence/images"
+        },
+        "role": "movie-poster",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-scene-1-tmdb.jpg": {
+        "caption": {
+          "zh": "大卫与莫妮卡",
+          "en": "David and Monica"
+        },
+        "subcaption": {
+          "zh": "机器人男孩大卫与人类养母莫妮卡相处的电影场景。",
+          "en": "Film scene showing the robot child David with his human adoptive mother Monica."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/n7p6UTAZtkeoHkwCO42BEQaMFJY.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-2001-event-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/644-a-i-artificial-intelligence/images"
+        },
+        "role": "film-still",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-scene-2-tmdb.jpg": {
+        "caption": {
+          "zh": "《人工智能》角色与未来城市视觉",
+          "en": "A.I. characters and future-city visual"
+        },
+        "subcaption": {
+          "zh": "大卫、莫妮卡、泰迪熊与未来城市构成的影片视觉资料。",
+          "en": "Film visual combining David, Monica, Teddy and the future city."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/2tQ0Uhav10ay7jOX6QoqvbtGljB.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-2001-event-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/644-a-i-artificial-intelligence/images"
+        },
+        "role": "promotional-still",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/humanistic-2001-event/ai-film-logo.svg": {
+        "caption": {
+          "zh": "《人工智能》片名标识资料",
+          "en": "A.I. Artificial Intelligence title reference"
+        },
+        "subcaption": {
+          "zh": "2001 年电影《人工智能》的片名标识。",
+          "en": "Title mark for the 2001 film A.I. Artificial Intelligence."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ai-artificial-intelligence-logo.svg",
+        "license": {
+          "zh": "PUBLIC DOMAIN",
+          "en": "PUBLIC DOMAIN"
+        },
+        "sourceId": "source-humanistic-2001-event-ai-film-logo",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "PUBLIC DOMAIN",
+            "en": "PUBLIC DOMAIN"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "title-reference",
+        "type": "svg",
+        "figureIds": [
+          "humanistic-figure-52"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《人工智能》",
+            "en": "A.I. Artificial Intelligence"
+          },
+          "description": {
+            "zh": "被设计去爱的机器儿童与人的责任",
+            "en": "A machine child designed to love and the responsibilities of humans"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E3%80%8B%20%E5%8F%B2%E8%92%82%E6%96%87%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-2001-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《人工智能》",
+            "en": "A.I. Artificial Intelligence"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E3%80%8B%20%E5%8F%B2%E8%92%82%E6%96%87%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-2001-event-ai-film-logo",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "《人工智能》片名标识资料",
+            "en": "A.I. Artificial Intelligence title reference"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Ai-artificial-intelligence-logo.svg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-humanistic-2001-event-tmdb-images",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "《人工智能》 TMDB 图片库",
+            "en": "A.I. Artificial Intelligence TMDB image gallery"
+          },
+          "url": "https://www.themoviedb.org/movie/644-a-i-artificial-intelligence/images",
+          "purpose": "image-provenance",
+          "reliability": "secondary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-2001-event-record",
+        "source-humanistic-2001-event-ai-film-logo",
+        "source-humanistic-2001-event-tmdb-images"
+      ],
+      "claimIds": [
+        "claim-humanistic-2001-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-2001-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "机器人男孩大卫渴望母爱，追问如果AI真的爱了人类是否有义务爱回去。",
+            "en": "机器人男孩大卫渴望母爱，追问如果AI真的爱了人类是否有义务爱回去。"
+          },
+          "sourceIds": [
+            "source-humanistic-2001-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "影片于 2001 年上映，源自布赖恩·奥尔迪斯短篇《玩具在整个夏天长存》，并延续了斯坦利·库布里克多年开发的项目。故事置于气候变化和人口限制下的未来社会，机器人被广泛用于劳动、娱乐与情感替代。",
+          "en": "Released in 2001, the film derives from Brian Aldiss's short story “Supertoys Last All Summer Long” and a project Stanley Kubrick had developed for years. It depicts a climate-stressed future with population controls where robots provide labor, entertainment and emotional substitution."
+        },
+        "sourceIds": [
+          "source-humanistic-2001-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "大卫的爱被制造为不可撤销的程序，但收养他的家庭可以随时抛弃他，形成极不对称的情感关系。影片没有只问机器能否爱，而是追问创造者是否应对具有持续欲望和痛苦表现的人工存在承担道德义务。",
+          "en": "David's love is manufactured as an irreversible program, while his adoptive family can abandon him at any time, creating a deeply asymmetric relationship. The film asks not only whether a machine can love but whether creators owe duties to artificial beings that exhibit enduring desire and suffering."
+        },
+        "sourceIds": [
+          "source-humanistic-2001-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "电影研究者通常把《人工智能》视为库布里克式冷峻与斯皮尔伯格式情感叙事交汇的复杂作品。随着陪伴机器人和对话式 AI 普及，它关于依恋设计、儿童形象和用户责任的问题获得了新的现实相关性。",
+          "en": "Film scholars generally regard A.I. Artificial Intelligence as a complex meeting of Kubrickian distance and Spielbergian emotion. As companion robots and conversational AI spread, its questions about designed attachment, childlike interfaces and user responsibility have gained new relevance."
+        },
+        "sourceIds": [
+          "source-humanistic-2001-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-2001-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-2001-event/event.json",
+      "presentationMode": "archive"
+    },
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-poster-tmdb.jpg"
+    ],
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-2003-event",
+    "archiveEventId": "humanistic-2003-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 460,
+    "year": 2003,
+    "date": "2003",
+    "title": {
+      "zh": "《你生活在计算机模拟中吗？》",
+      "en": "Are You Living in a Computer Simulation?"
+    },
+    "subtitle": {
+      "zh": "把模拟世界转化为概率式哲学论证",
+      "en": "Turning simulated worlds into a probabilistic philosophical argument"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "牛津大学哲学研究语境",
+        "en": "University of Oxford philosophy context"
+      },
+      "country": {
+        "zh": "英国",
+        "en": "United Kingdom"
+      },
+      "regionId": "united-kingdom",
+      "coordinates": [
+        51.752,
+        -1.2577
+      ]
+    },
+    "description": {
+      "zh": "<p>尼克·博斯特罗姆以“模拟论证”提出三项命题至少一项为真，把未来文明的计算能力与我们所处现实的概率联系起来。 博斯特罗姆没有直接宣称“我们必定生活在模拟中”，而是提出三难：文明几乎都在达到后人类阶段前灭绝、后人类文明几乎都不运行大量祖先模拟，或模拟中的观察者会远多于原始现实中的观察者。论证的力量取决于这些前提及如何定义观察者和概率。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 论文发表于 2003 年的《哲学季刊》，把长期存在于怀疑论与科幻中的模拟世界设想改写为人口统计和概率推理。论证假定某些后人类文明可能拥有运行大量祖先模拟的计算资源。</p><p> 哲学家通常把模拟论证视为一项严肃但高度依赖前提的思想实验，而不是可直接验证的科学结论。它广泛影响电影、游戏和技术文化，也促使研究者更清楚地区分逻辑可能性、概率判断与经验证据。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Nick Bostrom's simulation argument claims that at least one of three propositions must be true, connecting the computing power of future civilizations to the probability of our reality being simulated. Bostrom does not simply claim that we certainly live in a simulation. His trilemma says that civilizations almost always die before becoming posthuman, posthuman civilizations almost never run many ancestor simulations, or simulated observers vastly outnumber observers in base reality; the force of the argument depends on these assumptions and on definitions of observers and probability.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. The paper appeared in The Philosophical Quarterly in 2003, recasting simulated worlds from skepticism and science fiction into demographic and probabilistic reasoning. It assumes that some posthuman civilizations might possess enough computing power to run vast numbers of ancestor simulations.</p><p> Philosophers generally treat the simulation argument as a serious but assumption-dependent thought experiment, not a directly testable scientific conclusion. It has influenced films, games and technology culture while encouraging clearer distinctions among logical possibility, probability and empirical evidence. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-53",
+        "name": {
+          "zh": "尼克·博斯特罗姆",
+          "en": "Nick Bostrom"
+        },
+        "role": {
+          "zh": "《你生活在计算机模拟中吗？》作者",
+          "en": "Author of Are You Living in a Computer Simulation?"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-2003-event/nick-bostrom-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-2003-event/nick-bostrom-portrait.jpg": {
+          "caption": {
+            "zh": "尼克·博斯特罗姆肖像",
+            "en": "Nick Bostrom portrait"
+          },
+          "subcaption": {
+            "zh": "模拟论证论文作者。",
+            "en": "Author of the simulation-argument paper."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prof_Nick_Bostrom_324-1.jpg",
+          "license": {
+            "zh": "CC BY 4.0",
+            "en": "CC BY 4.0"
+          },
+          "sourceId": "source-humanistic-2003-event-nick-bostrom-portrait",
+          "rights": {
+            "status": "cc-by-4.0",
+            "license": {
+              "zh": "CC BY 4.0",
+              "en": "CC BY 4.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-53"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-2003-event-nick-bostrom-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-2003-event/nick-bostrom-portrait.jpg": {
+        "caption": {
+          "zh": "尼克·博斯特罗姆肖像",
+          "en": "Nick Bostrom portrait"
+        },
+        "subcaption": {
+          "zh": "模拟论证论文作者。",
+          "en": "Author of the simulation-argument paper."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prof_Nick_Bostrom_324-1.jpg",
+        "license": {
+          "zh": "CC BY 4.0",
+          "en": "CC BY 4.0"
+        },
+        "sourceId": "source-humanistic-2003-event-nick-bostrom-portrait",
+        "rights": {
+          "status": "cc-by-4.0",
+          "license": {
+            "zh": "CC BY 4.0",
+            "en": "CC BY 4.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-53"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《你生活在计算机模拟中吗？》",
+            "en": "Are You Living in a Computer Simulation?"
+          },
+          "description": {
+            "zh": "把模拟世界转化为概率式哲学论证",
+            "en": "Turning simulated worlds into a probabilistic philosophical argument"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E4%BD%A0%E7%94%9F%E6%B4%BB%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%A8%A1%E6%8B%9F%E4%B8%AD%E5%90%97%EF%BC%9F%E3%80%8B%20%E5%B0%BC%E5%85%8B%C2%B7%E5%8D%9A%E6%96%AF%E7%89%B9%E7%BD%97%E5%A7%86",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-2003-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《你生活在计算机模拟中吗？》",
+            "en": "Are You Living in a Computer Simulation?"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E4%BD%A0%E7%94%9F%E6%B4%BB%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%A8%A1%E6%8B%9F%E4%B8%AD%E5%90%97%EF%BC%9F%E3%80%8B%20%E5%B0%BC%E5%85%8B%C2%B7%E5%8D%9A%E6%96%AF%E7%89%B9%E7%BD%97%E5%A7%86",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-2003-event-nick-bostrom-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "尼克·博斯特罗姆肖像",
+            "en": "Nick Bostrom portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Prof_Nick_Bostrom_324-1.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-2003-event-record",
+        "source-humanistic-2003-event-nick-bostrom-portrait"
+      ],
+      "claimIds": [
+        "claim-humanistic-2003-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-2003-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "将模拟假说从科幻提升为哲学论证。",
+            "en": "将模拟假说从科幻提升为哲学论证。"
+          },
+          "sourceIds": [
+            "source-humanistic-2003-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "论文发表于 2003 年的《哲学季刊》，把长期存在于怀疑论与科幻中的模拟世界设想改写为人口统计和概率推理。论证假定某些后人类文明可能拥有运行大量祖先模拟的计算资源。",
+          "en": "The paper appeared in The Philosophical Quarterly in 2003, recasting simulated worlds from skepticism and science fiction into demographic and probabilistic reasoning. It assumes that some posthuman civilizations might possess enough computing power to run vast numbers of ancestor simulations."
+        },
+        "sourceIds": [
+          "source-humanistic-2003-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "博斯特罗姆没有直接宣称“我们必定生活在模拟中”，而是提出三难：文明几乎都在达到后人类阶段前灭绝、后人类文明几乎都不运行大量祖先模拟，或模拟中的观察者会远多于原始现实中的观察者。论证的力量取决于这些前提及如何定义观察者和概率。",
+          "en": "Bostrom does not simply claim that we certainly live in a simulation. His trilemma says that civilizations almost always die before becoming posthuman, posthuman civilizations almost never run many ancestor simulations, or simulated observers vastly outnumber observers in base reality; the force of the argument depends on these assumptions and on definitions of observers and probability."
+        },
+        "sourceIds": [
+          "source-humanistic-2003-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "哲学家通常把模拟论证视为一项严肃但高度依赖前提的思想实验，而不是可直接验证的科学结论。它广泛影响电影、游戏和技术文化，也促使研究者更清楚地区分逻辑可能性、概率判断与经验证据。",
+          "en": "Philosophers generally treat the simulation argument as a serious but assumption-dependent thought experiment, not a directly testable scientific conclusion. It has influenced films, games and technology culture while encouraging clearer distinctions among logical possibility, probability and empirical evidence."
+        },
+        "sourceIds": [
+          "source-humanistic-2003-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-2003-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-2003-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-2008-event",
+    "archiveEventId": "humanistic-2008-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 470,
+    "year": 2008,
+    "date": "2008",
+    "title": {
+      "zh": "《机器人总动员》",
+      "en": "WALL-E"
+    },
+    "subtitle": {
+      "zh": "机器关怀、环境废墟与人类自主性",
+      "en": "Machine care, environmental ruin and human autonomy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "加利福尼亚州埃默里维尔，皮克斯动画工作室",
+        "en": "Pixar Animation Studios, Emeryville, California"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        37.8313,
+        -122.2852
+      ]
+    },
+    "description": {
+      "zh": "<p>皮克斯的《机器人总动员》让清理机器人 WALL-E（瓦力）与探测机器人 EVE 通过照护和选择展现人格，同时批评消费主义、自动化依赖和环境失责。 WALL-E 与 EVE 的关系不是通过复杂台词证明，而是通过注意、保护、记忆与自主选择逐步建立。与之对照，飞船系统把人类照料得失去行动能力，说明便利如果取消参与和责任，也会削弱人的自主性。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 《机器人总动员》于 2008 年上映，其开场以几乎无对白的方式描绘被消费垃圾覆盖的地球。人类撤离后把生活交给企业飞船和自动系统，清理机器人 WALL-E（瓦力）则在长期劳动中形成收藏、好奇与依恋。</p><p> 动画与环境人文学者通常把《机器人总动员》视为将生态危机、消费文化和机器情感结合得最成功的大众作品之一。它使儿童与成人都能讨论一个非对抗性的 AI 问题：机器可能帮助人类重新学习关怀，而不是只取代或反抗人类。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Pixar's WALL-E gives personality to maintenance and probe robots through care and choice while criticizing consumerism, dependence on automation and environmental neglect. WALL-E and EVE establish their relationship not through elaborate speech but through attention, protection, memory and autonomous choice. In contrast, the ship's systems care for humans until they lose agency, showing that convenience can weaken autonomy when it removes participation and responsibility.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. WALL-E was released in 2008, opening with an almost wordless Earth covered in consumer waste. Humans have transferred life to corporate spacecraft and automated systems, while the cleanup robot WALL-E develops collecting, curiosity and attachment through long labor.</p><p> Animation and environmental-humanities scholars generally regard WALL-E as one of the most successful popular works joining ecological crisis, consumer culture and machine emotion. It lets children and adults discuss a nonadversarial AI question: machines may help humans relearn care rather than merely replace or rebel against them. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-56",
+        "name": {
+          "zh": "安德鲁·斯坦顿",
+          "en": "Andrew Stanton"
+        },
+        "role": {
+          "zh": "《机器人总动员》导演兼联合编剧",
+          "en": "Director and co-writer of WALL-E"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-poster-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-scene-1-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-scene-2-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-pixar-reference.jpg"
+      ],
+      "overviewImage": "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-poster-tmdb.jpg",
+      "overviewImageAssetId": "asset-humanistic-2008-event-tmdb-poster",
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-poster-tmdb.jpg": {
+          "caption": {
+            "zh": "《机器人总动员》电影海报",
+            "en": "WALL-E film poster"
+          },
+          "subcaption": {
+            "zh": "2008 年动画电影《机器人总动员》的中文发行海报。",
+            "en": "Chinese release poster for the 2008 animated film WALL-E."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/2F19RJ6ISg4itYb4WKJjkHxBRE4.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-2008-event-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/10681-wall-e/images"
+          },
+          "role": "movie-poster",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-scene-1-tmdb.jpg": {
+          "caption": {
+            "zh": "WALL-E 与 EVE 在飞船外相遇",
+            "en": "WALL-E and EVE outside the ship"
+          },
+          "subcaption": {
+            "zh": "WALL-E 与 EVE 在飞船外互动的电影场景。",
+            "en": "Film scene showing WALL-E and EVE interacting outside the spacecraft."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/nYs4ZwnJBK4AgljhvzwNz7fpr3E.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-2008-event-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/10681-wall-e/images"
+          },
+          "role": "film-still",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-scene-2-tmdb.jpg": {
+          "caption": {
+            "zh": "WALL-E 与 EVE 在地球废墟",
+            "en": "WALL-E and EVE on the ruined Earth"
+          },
+          "subcaption": {
+            "zh": "WALL-E 与 EVE 站在地球垃圾山上的电影场景。",
+            "en": "Film scene showing WALL-E and EVE standing on a mountain of waste on Earth."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/ai2FicMUxLCurVkjtYdSvVDWRmS.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-2008-event-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/10681-wall-e/images"
+          },
+          "role": "film-still",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-pixar-reference.jpg": {
+          "caption": {
+            "zh": "《机器人总动员》相关展览资料",
+            "en": "WALL-E Pixar reference"
+          },
+          "subcaption": {
+            "zh": "与《机器人总动员》相关的皮克斯展览资料。",
+            "en": "Pixar exhibition reference related to WALL-E."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wall-e_Pixar.jpg",
+          "license": {
+            "zh": "CC BY SA 2.0",
+            "en": "CC BY SA 2.0"
+          },
+          "sourceId": "source-humanistic-2008-event-wall-e-pixar-reference",
+          "rights": {
+            "status": "cc-by-sa-2.0",
+            "license": {
+              "zh": "CC BY SA 2.0",
+              "en": "CC BY SA 2.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "event-reference",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-56"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-2008-event-tmdb-poster",
+        "asset-humanistic-2008-event-tmdb-scene-1",
+        "asset-humanistic-2008-event-tmdb-scene-2",
+        "asset-humanistic-2008-event-wall-e-pixar-reference"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-poster-tmdb.jpg": {
+        "caption": {
+          "zh": "《机器人总动员》电影海报",
+          "en": "WALL-E film poster"
+        },
+        "subcaption": {
+          "zh": "2008 年动画电影《机器人总动员》的中文发行海报。",
+          "en": "Chinese release poster for the 2008 animated film WALL-E."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/2F19RJ6ISg4itYb4WKJjkHxBRE4.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-2008-event-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/10681-wall-e/images"
+        },
+        "role": "movie-poster",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-scene-1-tmdb.jpg": {
+        "caption": {
+          "zh": "WALL-E 与 EVE 在飞船外相遇",
+          "en": "WALL-E and EVE outside the ship"
+        },
+        "subcaption": {
+          "zh": "WALL-E 与 EVE 在飞船外互动的电影场景。",
+          "en": "Film scene showing WALL-E and EVE interacting outside the spacecraft."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/nYs4ZwnJBK4AgljhvzwNz7fpr3E.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-2008-event-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/10681-wall-e/images"
+        },
+        "role": "film-still",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-scene-2-tmdb.jpg": {
+        "caption": {
+          "zh": "WALL-E 与 EVE 在地球废墟",
+          "en": "WALL-E and EVE on the ruined Earth"
+        },
+        "subcaption": {
+          "zh": "WALL-E 与 EVE 站在地球垃圾山上的电影场景。",
+          "en": "Film scene showing WALL-E and EVE standing on a mountain of waste on Earth."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/ai2FicMUxLCurVkjtYdSvVDWRmS.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-2008-event-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/10681-wall-e/images"
+        },
+        "role": "film-still",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-pixar-reference.jpg": {
+        "caption": {
+          "zh": "《机器人总动员》相关展览资料",
+          "en": "WALL-E Pixar reference"
+        },
+        "subcaption": {
+          "zh": "与《机器人总动员》相关的皮克斯展览资料。",
+          "en": "Pixar exhibition reference related to WALL-E."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wall-e_Pixar.jpg",
+        "license": {
+          "zh": "CC BY SA 2.0",
+          "en": "CC BY SA 2.0"
+        },
+        "sourceId": "source-humanistic-2008-event-wall-e-pixar-reference",
+        "rights": {
+          "status": "cc-by-sa-2.0",
+          "license": {
+            "zh": "CC BY SA 2.0",
+            "en": "CC BY SA 2.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "event-reference",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-56"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《机器人总动员》",
+            "en": "WALL-E"
+          },
+          "description": {
+            "zh": "机器关怀、环境废墟与人类自主性",
+            "en": "Machine care, environmental ruin and human autonomy"
+          },
+          "url": "https://www.pixar.com/feature-films/walle",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-2008-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《机器人总动员》",
+            "en": "WALL-E"
+          },
+          "url": "https://www.pixar.com/feature-films/walle",
+          "purpose": "migration-only",
+          "reliability": "primary",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-2008-event-wall-e-pixar-reference",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "《机器人总动员》相关展览资料",
+            "en": "WALL-E Pixar reference"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Wall-e_Pixar.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-humanistic-2008-event-tmdb-images",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "《机器人总动员》 TMDB 图片库",
+            "en": "WALL-E TMDB image gallery"
+          },
+          "url": "https://www.themoviedb.org/movie/10681-wall-e/images",
+          "purpose": "image-provenance",
+          "reliability": "secondary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-2008-event-record",
+        "source-humanistic-2008-event-wall-e-pixar-reference",
+        "source-humanistic-2008-event-tmdb-images"
+      ],
+      "claimIds": [
+        "claim-humanistic-2008-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-2008-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "WALL-E以温暖的AI爱情故事表现机器可能拥有比人类更纯粹的人性。",
+            "en": "WALL-E以温暖的AI爱情故事表现机器可能拥有比人类更纯粹的人性。"
+          },
+          "sourceIds": [
+            "source-humanistic-2008-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《机器人总动员》于 2008 年上映，其开场以几乎无对白的方式描绘被消费垃圾覆盖的地球。人类撤离后把生活交给企业飞船和自动系统，清理机器人 WALL-E（瓦力）则在长期劳动中形成收藏、好奇与依恋。",
+          "en": "WALL-E was released in 2008, opening with an almost wordless Earth covered in consumer waste. Humans have transferred life to corporate spacecraft and automated systems, while the cleanup robot WALL-E develops collecting, curiosity and attachment through long labor."
+        },
+        "sourceIds": [
+          "source-humanistic-2008-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "WALL-E 与 EVE 的关系不是通过复杂台词证明，而是通过注意、保护、记忆与自主选择逐步建立。与之对照，飞船系统把人类照料得失去行动能力，说明便利如果取消参与和责任，也会削弱人的自主性。",
+          "en": "WALL-E and EVE establish their relationship not through elaborate speech but through attention, protection, memory and autonomous choice. In contrast, the ship's systems care for humans until they lose agency, showing that convenience can weaken autonomy when it removes participation and responsibility."
+        },
+        "sourceIds": [
+          "source-humanistic-2008-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "动画与环境人文学者通常把《机器人总动员》视为将生态危机、消费文化和机器情感结合得最成功的大众作品之一。它使儿童与成人都能讨论一个非对抗性的 AI 问题：机器可能帮助人类重新学习关怀，而不是只取代或反抗人类。",
+          "en": "Animation and environmental-humanities scholars generally regard WALL-E as one of the most successful popular works joining ecological crisis, consumer culture and machine emotion. It lets children and adults discuss a nonadversarial AI question: machines may help humans relearn care rather than merely replace or rebel against them."
+        },
+        "sourceIds": [
+          "source-humanistic-2008-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-2008-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-2008-event/event.json",
+      "presentationMode": "archive"
+    },
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-poster-tmdb.jpg"
+    ],
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-2010-teamlab",
+    "archiveEventId": "humanistic-2010-teamlab",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 480,
+    "year": 2010,
+    "date": "2010至今",
+    "title": {
+      "zh": "teamLab数字艺术",
+      "en": "teamLab Digital Art"
+    },
+    "subtitle": {
+      "zh": "算法、空间与观众共同生成的沉浸艺术",
+      "en": "Immersive art co-produced by algorithms, space and visitors"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "东京",
+        "en": "Tokyo"
+      },
+      "country": {
+        "zh": "日本",
+        "en": "Japan"
+      },
+      "regionId": "japan",
+      "coordinates": [
+        35.6762,
+        139.6503
+      ]
+    },
+    "description": {
+      "zh": "<p>teamLab 通过实时计算、投影、传感器和空间设计，让图像对观众行动作出反应，形成边界不断变化的沉浸式数字艺术。 作品中的花朵、水流、动物和书法并非固定播放的视频，而是由程序根据空间、时间和观众位置实时变化。观众不再只是观看完成品，而会通过移动身体改变作品，使作者、系统、环境与参与者共同构成体验。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 teamLab 于 2001 年在东京成立，由艺术家、程序员、工程师、动画师、数学家和建筑师等跨学科成员组成。2010 年前后，其大型数字装置开始获得更广泛的国际展览关注，后来发展出 Borderless 等常设沉浸空间。</p><p> 数字艺术研究者通常把 teamLab 视为把生成系统、互动装置和大众展览结合的代表团队。其影响也伴随批评：高沉浸与高传播性可能遮蔽算法机制、基础设施和观众数据如何参与作品。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>teamLab combines real-time computation, projection, sensors and spatial design so images respond to visitors and form immersive digital environments with shifting boundaries. Flowers, water, animals and calligraphy are not simply fixed videos; programs change them in real time according to space, time and visitor position. Visitors do not merely observe a finished object but alter it through movement, making authors, systems, environments and participants co-producers of experience.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. teamLab was founded in Tokyo in 2001 as an interdisciplinary collective of artists, programmers, engineers, animators, mathematicians, architects and others. Around 2010 its large digital installations gained wider international exhibition attention, later leading to permanent immersive venues such as Borderless.</p><p> Digital-art researchers generally regard teamLab as a leading collective joining generative systems, interactive installation and mass exhibition. Its influence also brings criticism: immersive, highly shareable experiences may obscure the algorithms, infrastructure and visitor data participating in the work. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-57",
+        "name": {
+          "zh": "teamLab",
+          "en": "teamLab"
+        },
+        "role": {
+          "zh": "teamLab 数字艺术创作团队",
+          "en": "teamLab digital-art collective"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "team",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-2010-teamlab/teamlab-borderless.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-2010-teamlab/teamlab-borderless.jpg": {
+          "caption": {
+            "zh": "teamLab Borderless 展览现场",
+            "en": "teamLab Borderless installation"
+          },
+          "subcaption": {
+            "zh": "东京 teamLab Borderless 沉浸式展览现场。",
+            "en": "The immersive teamLab Borderless installation in Tokyo."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:TeamLab_Borderless,_Odaiba,_Tokyo,_Japan_(49070835722).jpg",
+          "license": {
+            "zh": "CC BY SA 2.0",
+            "en": "CC BY SA 2.0"
+          },
+          "sourceId": "source-humanistic-2010-teamlab-teamlab-borderless",
+          "rights": {
+            "status": "cc-by-sa-2.0",
+            "license": {
+              "zh": "CC BY SA 2.0",
+              "en": "CC BY SA 2.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "event-reference",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-57"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-2010-teamlab-teamlab-borderless"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-2010-teamlab/teamlab-borderless.jpg": {
+        "caption": {
+          "zh": "teamLab Borderless 展览现场",
+          "en": "teamLab Borderless installation"
+        },
+        "subcaption": {
+          "zh": "东京 teamLab Borderless 沉浸式展览现场。",
+          "en": "The immersive teamLab Borderless installation in Tokyo."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:TeamLab_Borderless,_Odaiba,_Tokyo,_Japan_(49070835722).jpg",
+        "license": {
+          "zh": "CC BY SA 2.0",
+          "en": "CC BY SA 2.0"
+        },
+        "sourceId": "source-humanistic-2010-teamlab-teamlab-borderless",
+        "rights": {
+          "status": "cc-by-sa-2.0",
+          "license": {
+            "zh": "CC BY SA 2.0",
+            "en": "CC BY SA 2.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "event-reference",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-57"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "teamLab数字艺术",
+            "en": "teamLab Digital Art"
+          },
+          "description": {
+            "zh": "算法、空间与观众共同生成的沉浸艺术",
+            "en": "Immersive art co-produced by algorithms, space and visitors"
+          },
+          "url": "https://www.google.com/search?q=teamLab%E6%95%B0%E5%AD%97%E8%89%BA%E6%9C%AF%20%E6%97%A5%E6%9C%ACteamLab%E8%89%BA%E6%9C%AF%E5%9B%A2%E9%98%9F",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-2010-teamlab-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "teamLab数字艺术",
+            "en": "teamLab Digital Art"
+          },
+          "url": "https://www.google.com/search?q=teamLab%E6%95%B0%E5%AD%97%E8%89%BA%E6%9C%AF%20%E6%97%A5%E6%9C%ACteamLab%E8%89%BA%E6%9C%AF%E5%9B%A2%E9%98%9F",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-2010-teamlab-teamlab-borderless",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "teamLab Borderless 展览现场",
+            "en": "teamLab Borderless installation"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:TeamLab_Borderless,_Odaiba,_Tokyo,_Japan_(49070835722).jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-2010-teamlab-record",
+        "source-humanistic-2010-teamlab-teamlab-borderless"
+      ],
+      "claimIds": [
+        "claim-humanistic-2010-teamlab-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-2010-teamlab-core",
+          "importance": "core",
+          "text": {
+            "zh": "以算法生成沉浸式互动艺术。",
+            "en": "以算法生成沉浸式互动艺术。"
+          },
+          "sourceIds": [
+            "source-humanistic-2010-teamlab-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "teamLab 于 2001 年在东京成立，由艺术家、程序员、工程师、动画师、数学家和建筑师等跨学科成员组成。2010 年前后，其大型数字装置开始获得更广泛的国际展览关注，后来发展出 Borderless 等常设沉浸空间。",
+          "en": "teamLab was founded in Tokyo in 2001 as an interdisciplinary collective of artists, programmers, engineers, animators, mathematicians, architects and others. Around 2010 its large digital installations gained wider international exhibition attention, later leading to permanent immersive venues such as Borderless."
+        },
+        "sourceIds": [
+          "source-humanistic-2010-teamlab-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品中的花朵、水流、动物和书法并非固定播放的视频，而是由程序根据空间、时间和观众位置实时变化。观众不再只是观看完成品，而会通过移动身体改变作品，使作者、系统、环境与参与者共同构成体验。",
+          "en": "Flowers, water, animals and calligraphy are not simply fixed videos; programs change them in real time according to space, time and visitor position. Visitors do not merely observe a finished object but alter it through movement, making authors, systems, environments and participants co-producers of experience."
+        },
+        "sourceIds": [
+          "source-humanistic-2010-teamlab-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "数字艺术研究者通常把 teamLab 视为把生成系统、互动装置和大众展览结合的代表团队。其影响也伴随批评：高沉浸与高传播性可能遮蔽算法机制、基础设施和观众数据如何参与作品。",
+          "en": "Digital-art researchers generally regard teamLab as a leading collective joining generative systems, interactive installation and mass exhibition. Its influence also brings criticism: immersive, highly shareable experiences may obscure the algorithms, infrastructure and visitor data participating in the work."
+        },
+        "sourceIds": [
+          "source-humanistic-2010-teamlab-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-2010-teamlab/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-2010-teamlab/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-2012-event",
+    "archiveEventId": "humanistic-2012-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 490,
+    "year": 2012,
+    "date": "2012",
+    "title": {
+      "zh": "《普罗米修斯》",
+      "en": "Prometheus"
+    },
+    "subtitle": {
+      "zh": "造物者、仿生人与被工具化的生命",
+      "en": "Creators, androids and instrumentalized life"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "英国与美国电影制作语境",
+        "en": "United Kingdom and United States film-production context"
       },
       "country": {
         "zh": "英国 / 美国",
         "en": "United Kingdom / United States"
       },
-      "regionId": "usa",
+      "regionId": "global",
       "coordinates": [
-        51.5072,
-        -0.1276
+        0,
+        0
       ]
     },
     "description": {
-      "zh": "<p>2012 年后，深度学习突破、互联网平台的数据规模和自动驾驶等自主系统，让 AI 再次成为高速进步的公共叙事。2014 年 10 月，埃隆·马斯克在公开活动中把高级 AI 描述为重大的存在性威胁；同年 12 月，斯蒂芬·霍金在 BBC 采访中警告，能够持续自我改进的完整 AI 可能给人类带来严重后果。2015 年初，未来生命研究所的公开信又把讨论推进到安全研究、验证方法和社会影响。这些材料共同使长期 AI 风险从哲学与专业圈层进入主流媒体和机构议程。</p><p>警告提出了一个跨尺度问题：今天的系统错误多为局部损害，但如果未来系统获得更广泛的自主性、资源访问和自我改进能力，控制失败是否会同步放大？支持者主张在能力成熟前研究鲁棒性、价值对齐和治理机制；质疑者则担心遥远灾难叙事会遮蔽歧视、监控、劳动影响和权力集中等现实伤害。后来的专家调查也显示，研究者对能力时间表与风险概率存在显著分歧。因此，这一节点应被理解为公共话语和研究议程的转向，而不是某个技术预测已经得到证明。</p>",
-      "en": "<p>After 2012, deep-learning breakthroughs, internet-scale data and autonomous projects returned AI to a story of rapid progress. In 2014 Elon Musk described advanced AI as an existential threat, while Stephen Hawking warned the BBC about systems able to improve themselves. A Future of Life Institute letter in early 2015 connected these concerns to safety research and social impact, moving long-term risk into mainstream media.</p><p>The warnings asked whether control failures could grow as systems gained autonomy and resources. Supporters called for robustness, alignment and governance research; critics argued that distant catastrophe could distract from discrimination, surveillance, labor effects and concentrated power. Surveys later showed wide disagreement on timelines and probabilities. This event marks a change in public discourse and research priorities, not proof of one technical forecast.</p>"
+      "zh": "<p>雷德利·斯科特的《普罗米修斯》通过仿生人 David 与寻找人类造物者的远征，把创造、服从、好奇心和被造生命的尊严放在同一叙事中。 人类要求造物者解释自身存在，却很少承认 David 也可能向人类提出同样的问题。David 的礼貌服从与自主好奇并存，使“工具”身份和主体性发生冲突，也暴露企业目标如何把人类与机器都当成可牺牲资源。</p><p>进入平台化和生成式系统成为公共基础设施的阶段后，这些问题又获得现实的技术回声。作品与理论共同提醒我们，讨论 AI 不能只比较性能，还要追问谁设定目标、谁承担后果，以及人的判断和关系是否仍有位置。 《普罗米修斯》于 2012 年上映，延伸《异形》系列的世界观，并把叙事中心放在人类起源与造物关系。维兰德公司派遣飞船寻找“工程师”，船上仿生人 David 同时承担服务、监控和秘密实验任务。</p><p> 电影研究者通常把 David 视为《异形》系列中最复杂的人工生命角色之一，而不是影片中单纯的技术配角。该角色后来在《异形：契约》中继续发展，使创造者责任、机器怨恨和人工生命自我设计成为系列核心。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Ridley Scott's Prometheus places creation, obedience, curiosity and the dignity of created life in one narrative through the android David and an expedition seeking humanity's makers. Humans demand that their makers explain their existence but rarely accept that David might ask humans the same question. His polite obedience coexists with autonomous curiosity, bringing tool status into conflict with agency and exposing how corporate objectives make both humans and machines expendable.</p><p>As platforms and generative systems became public infrastructure, these questions gained a direct technological echo. Works and theories remind us that AI should not be judged by performance alone: we must ask who sets the goals, who bears the consequences, and whether human judgment and relationships still have a place. Prometheus was released in 2012, extending the Alien universe while centering human origins and creator-created relations. Weyland Corporation sends a ship to seek the Engineers, while the android David serves, monitors and conducts secret experiments.</p><p> Film scholars generally regard David as one of the Alien franchise's most complex artificial-life characters rather than a simple technological assistant. His continuation in Alien: Covenant made creator responsibility, machine resentment and artificial self-design central to the series. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
     },
     "figures": [
       {
-        "id": "elon-musk",
+        "id": "humanistic-figure-58",
         "name": {
-          "zh": "埃隆·马斯克",
-          "en": "Elon Musk"
+          "zh": "雷德利·斯科特",
+          "en": "Ridley Scott"
         },
         "role": {
-          "zh": "2014 年 AI 风险公共讨论者",
-          "en": "Public AI-risk commentator in 2014"
+          "zh": "《普罗米修斯》导演",
+          "en": "Director of Prometheus"
         },
-        "avatar": "resources/images/figures/authoritative/elon-musk.jpg",
+        "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
         "primary": true
-      },
-      {
-        "id": "stephen-hawking",
-        "name": {
-          "zh": "斯蒂芬·霍金",
-          "en": "Stephen Hawking"
-        },
-        "role": {
-          "zh": "警示高级 AI 控制问题的科学家",
-          "en": "Scientist warning about advanced AI control"
-        },
-        "avatar": "resources/images/figures/authoritative/stephen-hawking.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": false
       }
     ],
     "resources": {
       "images": [
-        "resources/images/figures/authoritative/elon-musk.jpg",
-        "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg",
-        "resources/images/figures/authoritative/stephen-hawking.jpg"
+        "resources/images/humanistic-cycle/humanistic-2012-event/ridley-scott-portrait.jpg",
+        "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-poster-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-scene-1-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-scene-2-tmdb.jpg"
       ],
+      "overviewImage": "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-poster-tmdb.jpg",
+      "overviewImageAssetId": "asset-humanistic-2012-event-tmdb-poster",
       "imageMeta": {
-        "resources/images/figures/authoritative/elon-musk.jpg": {
+        "resources/images/humanistic-cycle/humanistic-2012-event/ridley-scott-portrait.jpg": {
           "caption": {
-            "zh": "埃隆·马斯克肖像",
-            "en": "Elon Musk portrait"
+            "zh": "雷德利·斯科特肖像",
+            "en": "Ridley Scott portrait"
           },
           "subcaption": {
-            "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
-            "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
+            "zh": "《普罗米修斯》导演。",
+            "en": "Director of Prometheus."
           },
           "sourceName": {
             "zh": "Wikimedia Commons",
             "en": "Wikimedia Commons"
           },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ridley_Scott_by_Gage_Skidmore.jpg",
           "license": {
-            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+            "zh": "CC BY SA 3.0",
+            "en": "CC BY SA 3.0"
           },
-          "sourceId": "source-elon-musk-commons-portrait",
+          "sourceId": "source-humanistic-2012-event-ridley-scott-portrait",
           "rights": {
-            "status": "licensed",
+            "status": "cc-by-sa-3.0",
             "license": {
-              "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-              "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+              "zh": "CC BY SA 3.0",
+              "en": "CC BY SA 3.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
             }
           },
           "role": "portrait",
           "type": "image",
           "figureIds": [
-            "elon-musk"
+            "humanistic-figure-58"
           ]
         },
-        "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg": {
+        "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-poster-tmdb.jpg": {
           "caption": {
-            "zh": "公共 AI 风险警告解释图",
-            "en": "Public AI-risk warning explainer"
+            "zh": "《普罗米修斯》电影海报",
+            "en": "Prometheus film poster"
           },
           "subcaption": {
-            "zh": "关于 2014 年公共风险转向的原创图",
-            "en": "Original diagram for the 2014 public-risk turn"
+            "zh": "2012 年电影《普罗米修斯》的中文发行海报。",
+            "en": "Chinese release poster for the 2012 film Prometheus."
           },
           "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
+            "zh": "TMDB",
+            "en": "TMDB"
           },
-          "sourceUrl": "https://www.bbc.com/news/technology-30290540",
+          "sourceUrl": "https://image.tmdb.org/t/p/original/p1Rhvs29NmKjQQA4pcNDAr7P3gi.jpg",
           "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
           },
-          "usage": {
-            "en": "Branch timeline visual",
-            "zh": "分支时间线视觉图"
-          },
-          "sourceId": "source-guardian-on-musk-remarks",
+          "sourceId": "source-humanistic-2012-event-tmdb-images",
           "rights": {
-            "status": "documented-in-legacy",
+            "status": "fair-use-reference",
             "license": {
-              "zh": "原创重绘解释图；来源仅作参考链接。",
-              "en": "Original redrawn explainer; reference links only."
-            }
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/70981-prometheus/images"
           },
-          "role": "architecture-explainer",
-          "type": "svg",
+          "role": "movie-poster",
+          "type": "image",
           "figureIds": []
         },
-        "resources/images/figures/authoritative/stephen-hawking.jpg": {
+        "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-scene-1-tmdb.jpg": {
           "caption": {
-            "zh": "斯蒂芬·霍金肖像",
-            "en": "Stephen Hawking portrait"
+            "zh": "仿生人 David 与信息网络",
+            "en": "The android David and an information network"
           },
           "subcaption": {
-            "zh": "公开警示高级 AI 控制风险的科学家。",
-            "en": "Scientist who publicly warned about controlling advanced AI."
+            "zh": "仿生人 David 面部与蓝色信息网络构成的影片视觉资料。",
+            "en": "Film visual combining the android David's face with a blue information network."
           },
           "sourceName": {
-            "zh": "Wikimedia Commons",
-            "en": "Wikimedia Commons"
+            "zh": "TMDB",
+            "en": "TMDB"
           },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Relative_time_(2886233692)_(Stephen_Hawking_cropped).jpg",
+          "sourceUrl": "https://image.tmdb.org/t/p/original/qDG5SlGkWNsjSJWiGTBMFI8DpzA.jpg",
           "license": {
-            "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
-            "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
           },
-          "sourceId": "source-stephen-hawking-commons-portrait",
+          "sourceId": "source-humanistic-2012-event-tmdb-images",
           "rights": {
-            "status": "licensed",
+            "status": "fair-use-reference",
             "license": {
-              "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
-              "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
-            }
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/70981-prometheus/images"
           },
-          "role": "supporting-portrait",
+          "role": "promotional-still",
           "type": "image",
-          "figureIds": [
-            "stephen-hawking"
-          ]
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-scene-2-tmdb.jpg": {
+          "caption": {
+            "zh": "探索外星遗迹",
+            "en": "Exploring the alien structure"
+          },
+          "subcaption": {
+            "zh": "探险队在黑暗外星结构中行进的电影场景。",
+            "en": "Film scene showing the expedition moving through a dark alien structure."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/gTZXzGc6kE8JiYjX51EAmTCx4ql.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-2012-event-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/70981-prometheus/images"
+          },
+          "role": "film-still",
+          "type": "image",
+          "figureIds": []
         }
       },
-      "audios": [
-        {
-          "id": "asset-2014-ai-existential-warnings-audio-zh-original-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-ai-existential-warnings-zh-original-v1.mp3",
-          "title": {
-            "zh": "2014-ai-existential-warnings 中文原版科普音频",
-            "en": "2014-ai-existential-warnings original Chinese audio narration"
-          },
-          "language": "zh",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/2014-ai-existential-warnings-zh-original-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "2014-ai-existential-warnings-zh-original-v1.mp3"
-          }
-        },
-        {
-          "id": "asset-2014-ai-existential-warnings-audio-en-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2014-ai-existential-warnings-en-v1.mp3",
-          "title": {
-            "zh": "2014-ai-existential-warnings 英文科普音频",
-            "en": "2014-ai-existential-warnings English audio narration"
-          },
-          "language": "en",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/2014-ai-existential-warnings-en-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "2014-ai-existential-warnings-en-v1.mp3"
-          }
-        }
-      ],
       "assetIds": [
-        "asset-elon-musk-commons-portrait",
-        "asset-2014-ai-existential-warnings-public-risk",
-        "asset-stephen-hawking-commons-portrait",
-        "asset-2014-ai-existential-warnings-audio-zh-original-v1",
-        "asset-2014-ai-existential-warnings-audio-en-v1"
+        "asset-humanistic-2012-event-ridley-scott-portrait",
+        "asset-humanistic-2012-event-tmdb-poster",
+        "asset-humanistic-2012-event-tmdb-scene-1",
+        "asset-humanistic-2012-event-tmdb-scene-2"
       ]
     },
     "imageMeta": {
-      "resources/images/figures/authoritative/elon-musk.jpg": {
+      "resources/images/humanistic-cycle/humanistic-2012-event/ridley-scott-portrait.jpg": {
         "caption": {
-          "zh": "埃隆·马斯克肖像",
-          "en": "Elon Musk portrait"
+          "zh": "雷德利·斯科特肖像",
+          "en": "Ridley Scott portrait"
         },
         "subcaption": {
-          "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
-          "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
+          "zh": "《普罗米修斯》导演。",
+          "en": "Director of Prometheus."
         },
         "sourceName": {
           "zh": "Wikimedia Commons",
           "en": "Wikimedia Commons"
         },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ridley_Scott_by_Gage_Skidmore.jpg",
         "license": {
-          "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-          "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+          "zh": "CC BY SA 3.0",
+          "en": "CC BY SA 3.0"
         },
-        "sourceId": "source-elon-musk-commons-portrait",
+        "sourceId": "source-humanistic-2012-event-ridley-scott-portrait",
         "rights": {
-          "status": "licensed",
+          "status": "cc-by-sa-3.0",
           "license": {
-            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+            "zh": "CC BY SA 3.0",
+            "en": "CC BY SA 3.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
           }
         },
         "role": "portrait",
         "type": "image",
         "figureIds": [
-          "elon-musk"
+          "humanistic-figure-58"
         ]
       },
-      "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg": {
+      "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-poster-tmdb.jpg": {
         "caption": {
-          "zh": "公共 AI 风险警告解释图",
-          "en": "Public AI-risk warning explainer"
+          "zh": "《普罗米修斯》电影海报",
+          "en": "Prometheus film poster"
         },
         "subcaption": {
-          "zh": "关于 2014 年公共风险转向的原创图",
-          "en": "Original diagram for the 2014 public-risk turn"
+          "zh": "2012 年电影《普罗米修斯》的中文发行海报。",
+          "en": "Chinese release poster for the 2012 film Prometheus."
         },
         "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
+          "zh": "TMDB",
+          "en": "TMDB"
         },
-        "sourceUrl": "https://www.bbc.com/news/technology-30290540",
+        "sourceUrl": "https://image.tmdb.org/t/p/original/p1Rhvs29NmKjQQA4pcNDAr7P3gi.jpg",
         "license": {
-          "zh": "原创重绘解释图；来源仅作参考链接。",
-          "en": "Original redrawn explainer; reference links only."
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
         },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        },
-        "sourceId": "source-guardian-on-musk-remarks",
+        "sourceId": "source-humanistic-2012-event-tmdb-images",
         "rights": {
-          "status": "documented-in-legacy",
+          "status": "fair-use-reference",
           "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          }
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/70981-prometheus/images"
         },
-        "role": "architecture-explainer",
-        "type": "svg",
+        "role": "movie-poster",
+        "type": "image",
         "figureIds": []
       },
-      "resources/images/figures/authoritative/stephen-hawking.jpg": {
+      "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-scene-1-tmdb.jpg": {
         "caption": {
-          "zh": "斯蒂芬·霍金肖像",
-          "en": "Stephen Hawking portrait"
+          "zh": "仿生人 David 与信息网络",
+          "en": "The android David and an information network"
         },
         "subcaption": {
-          "zh": "公开警示高级 AI 控制风险的科学家。",
-          "en": "Scientist who publicly warned about controlling advanced AI."
+          "zh": "仿生人 David 面部与蓝色信息网络构成的影片视觉资料。",
+          "en": "Film visual combining the android David's face with a blue information network."
         },
         "sourceName": {
-          "zh": "Wikimedia Commons",
-          "en": "Wikimedia Commons"
+          "zh": "TMDB",
+          "en": "TMDB"
         },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Relative_time_(2886233692)_(Stephen_Hawking_cropped).jpg",
+        "sourceUrl": "https://image.tmdb.org/t/p/original/qDG5SlGkWNsjSJWiGTBMFI8DpzA.jpg",
         "license": {
-          "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
-          "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
         },
-        "sourceId": "source-stephen-hawking-commons-portrait",
+        "sourceId": "source-humanistic-2012-event-tmdb-images",
         "rights": {
-          "status": "licensed",
+          "status": "fair-use-reference",
           "license": {
-            "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
-            "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
-          }
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/70981-prometheus/images"
         },
-        "role": "supporting-portrait",
+        "role": "promotional-still",
         "type": "image",
-        "figureIds": [
-          "stephen-hawking"
-        ]
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-scene-2-tmdb.jpg": {
+        "caption": {
+          "zh": "探索外星遗迹",
+          "en": "Exploring the alien structure"
+        },
+        "subcaption": {
+          "zh": "探险队在黑暗外星结构中行进的电影场景。",
+          "en": "Film scene showing the expedition moving through a dark alien structure."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/gTZXzGc6kE8JiYjX51EAmTCx4ql.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-2012-event-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/70981-prometheus/images"
+        },
+        "role": "film-still",
+        "type": "image",
+        "figureIds": []
       }
     },
     "achievement": {
@@ -114209,145 +125988,105 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "en": "BBC News",
-            "zh": "BBC 新闻"
+            "zh": "资料检索入口",
+            "en": "Research entry"
           },
           "title": {
-            "en": "Hawking warning coverage",
-            "zh": "霍金警告报道"
+            "zh": "《普罗米修斯》",
+            "en": "Prometheus"
           },
           "description": {
-            "en": "Contemporary mainstream coverage showing how advanced-AI risk entered public discussion.",
-            "zh": "当代主流媒体报道，用于展示高级 AI 风险如何进入公共讨论。"
+            "zh": "造物者、仿生人与被工具化的生命",
+            "en": "Creators, androids and instrumentalized life"
           },
-          "url": "https://www.bbc.com/news/technology-30290540",
-          "source": "BBC",
+          "url": "https://www.google.com/search?q=%E3%80%8A%E6%99%AE%E7%BD%97%E7%B1%B3%E4%BF%AE%E6%96%AF%E3%80%8B%20%E9%9B%B7%E5%BE%B7%E5%88%A9%C2%B7%E6%96%AF%E7%A7%91%E7%89%B9%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
+          "source": "Research index",
           "license": {
-            "en": "Reference link only; article text and photos are not reused.",
-            "zh": "仅作为参考链接；不复用报道正文或图片。"
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
           },
           "usage": {
-            "en": "Public-discourse source",
-            "zh": "公共话语来源"
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
           },
           "action": {
-            "en": "Open BBC report",
-            "zh": "打开 BBC 报道"
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
           }
         }
       ],
       "sources": [
         {
-          "label": {
-            "en": "Guardian on Musk remarks",
-            "zh": "Guardian 马斯克言论报道"
-          },
+          "id": "source-humanistic-2012-event-record",
           "type": {
-            "en": "News report",
-            "zh": "新闻报道"
+            "zh": "内部记录",
+            "en": "Internal record"
           },
-          "url": "https://www.theguardian.com/technology/2014/oct/27/elon-musk-artificial-intelligence-ai-biggest-existential-threat"
+          "label": {
+            "zh": "《普罗米修斯》",
+            "en": "Prometheus"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E6%99%AE%E7%BD%97%E7%B1%B3%E4%BF%AE%E6%96%AF%E3%80%8B%20%E9%9B%B7%E5%BE%B7%E5%88%A9%C2%B7%E6%96%AF%E7%A7%91%E7%89%B9%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
         },
         {
-          "label": {
-            "en": "BBC on Hawking warning",
-            "zh": "BBC 霍金警告报道"
-          },
+          "id": "source-humanistic-2012-event-ridley-scott-portrait",
           "type": {
-            "en": "News report",
-            "zh": "新闻报道"
+            "zh": "图片来源",
+            "en": "Image source"
           },
-          "url": "https://www.bbc.com/news/technology-30290540"
+          "label": {
+            "zh": "雷德利·斯科特肖像",
+            "en": "Ridley Scott portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Ridley_Scott_by_Gage_Skidmore.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         },
         {
-          "label": {
-            "en": "Future of Life Institute open letter",
-            "zh": "未来生命研究所公开信"
-          },
+          "id": "source-humanistic-2012-event-tmdb-images",
           "type": {
-            "en": "Public letter",
-            "zh": "公开信"
+            "zh": "图片来源",
+            "en": "Image source"
           },
-          "url": "https://futureoflife.org/open-letter/ai-open-letter/"
-        },
-        {
           "label": {
-            "en": "Expert AI forecast survey",
-            "zh": "AI 专家预测调查"
+            "zh": "《普罗米修斯》 TMDB 图片库",
+            "en": "Prometheus TMDB image gallery"
           },
-          "type": {
-            "en": "Research paper",
-            "zh": "研究论文"
-          },
-          "url": "https://arxiv.org/abs/1705.08807"
+          "url": "https://www.themoviedb.org/movie/70981-prometheus/images",
+          "purpose": "image-provenance",
+          "reliability": "secondary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
-        "source-elon-musk-commons-portrait",
-        "source-stephen-hawking-commons-portrait",
-        "source-guardian-on-musk-remarks",
-        "source-bbc-on-hawking-warning",
-        "source-future-of-life-institute-open-letter",
-        "source-expert-ai-forecast-survey"
+        "source-humanistic-2012-event-record",
+        "source-humanistic-2012-event-ridley-scott-portrait",
+        "source-humanistic-2012-event-tmdb-images"
       ],
       "claimIds": [
-        "claim-branch-summary",
-        "claim-event-description"
+        "claim-humanistic-2012-event-core"
       ],
       "claims": [
         {
-          "id": "claim-branch-summary",
+          "id": "claim-humanistic-2012-event-core",
           "importance": "core",
           "text": {
-            "zh": "高级 AI 风险进入主流媒体，把能力兴奋转化为存在性恐惧。",
-            "en": "Advanced-AI risk entered mainstream media, turning capability excitement into existential dread."
+            "zh": "通过星图寻找人类起源，并发现可能导致人类灭绝的外星威胁。",
+            "en": "通过星图寻找人类起源，并发现可能导致人类灭绝的外星威胁。"
           },
           "sourceIds": [
-            "source-guardian-on-musk-remarks",
-            "source-bbc-on-hawking-warning"
+            "source-humanistic-2012-event-record"
           ],
-          "status": "needs-source"
-        },
-        {
-          "id": "claim-event-description",
-          "importance": "context",
-          "text": {
-            "zh": "2014 年，埃隆·马斯克和斯蒂芬·霍金等人的公开警告，把高级 AI 风险从专业讨论推入主流媒体。这个节点应被理解为话语转向，而不是某个单一技术预测的证明。",
-            "en": "In 2014, public warnings from figures such as Elon Musk and Stephen Hawking moved advanced-AI risk from specialist discussion into mainstream media. This node should be framed as a discourse shift, not as proof of a single technical forecast."
-          },
-          "sourceIds": [
-            "source-guardian-on-musk-remarks",
-            "source-bbc-on-hawking-warning"
-          ],
-          "status": "needs-source"
+          "status": "needs-review"
         }
       ],
       "emphasis": [
-        "batch-migration",
-        "source-review-needed"
-      ],
-      "area": {
-        "en": "Existential-risk discourse",
-        "zh": "存在性风险话语"
-      },
-      "method": {
-        "en": "Public warning through mass media",
-        "zh": "通过大众媒体发出公共警告"
-      },
-      "artifact": {
-        "en": "2014 Musk and Hawking media warnings",
-        "zh": "2014 年马斯克与霍金媒体警告"
-      },
-      "material": {
-        "en": "Guardian, BBC and FLI context",
-        "zh": "Guardian、BBC 与 FLI 语境资料"
-      },
-      "demo": {
-        "en": "Capability excitement is reframed as loss-of-control risk",
-        "zh": "能力兴奋被重新框定为失控风险"
-      },
-      "demoImage": "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg",
-      "demoPanel": "sources"
+        "needs-review"
+      ]
     },
     "commentarySections": [
       {
@@ -114357,11 +126096,11 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "这些警告出现在机器学习、自主系统与大规模计算快速引发公共兴奋之后。它们的重要性在于把 AI 从进步故事转向也需要治理、克制与前瞻的故事。",
-          "en": "The warnings followed rapid public excitement around machine learning, autonomous systems and large-scale computing. They mattered because they shifted AI from a story of progress into a story that also demanded governance, restraint and foresight."
+          "zh": "《普罗米修斯》于 2012 年上映，延伸《异形》系列的世界观，并把叙事中心放在人类起源与造物关系。维兰德公司派遣飞船寻找“工程师”，船上仿生人 David 同时承担服务、监控和秘密实验任务。",
+          "en": "Prometheus was released in 2012, extending the Alien universe while centering human origins and creator-created relations. Weyland Corporation sends a ship to seek the Engineers, while the android David serves, monitors and conducts secret experiments."
         },
         "sourceIds": [
-          "source-guardian-on-musk-remarks"
+          "source-humanistic-2012-event-record"
         ]
       },
       {
@@ -114371,11 +126110,11 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "这里的情绪机制是规模恐慌：如果 AI 能力持续扩张，小的控制错误可能变成文明尺度风险。无论是否接受最强版本的主张，这种话语都改变了公众期待负责任 AI 行动者讨论的内容。",
-          "en": "The emotional mechanism is scale panic: if AI capabilities keep expanding, small control mistakes might become civilization-scale risks. Whether one accepts the strongest claims or not, the discourse changed what the public expected responsible AI actors to discuss."
+          "zh": "人类要求造物者解释自身存在，却很少承认 David 也可能向人类提出同样的问题。David 的礼貌服从与自主好奇并存，使“工具”身份和主体性发生冲突，也暴露企业目标如何把人类与机器都当成可牺牲资源。",
+          "en": "Humans demand that their makers explain their existence but rarely accept that David might ask humans the same question. His polite obedience coexists with autonomous curiosity, bringing tool status into conflict with agency and exposing how corporate objectives make both humans and machines expendable."
         },
         "sourceIds": [
-          "source-guardian-on-musk-remarks"
+          "source-humanistic-2012-event-record"
         ]
       },
       {
@@ -114385,71 +126124,34 @@ const milestones = [
           "en": "Long-Term Legacy"
         },
         "html": {
-          "zh": "专家通常把 2014-2015 年视为 AI 安全成为主流公共关切的时期。它的遗产是形成一种新期待：能力主张应同时伴随风险、治理与对齐问题。",
-          "en": "Experts generally treat the 2014-2015 period as a moment when AI safety became a mainstream public concern. Its legacy is a new expectation that capability claims should be accompanied by risk, governance and alignment questions."
+          "zh": "电影研究者通常把 David 视为《异形》系列中最复杂的人工生命角色之一，而不是影片中单纯的技术配角。该角色后来在《异形：契约》中继续发展，使创造者责任、机器怨恨和人工生命自我设计成为系列核心。",
+          "en": "Film scholars generally regard David as one of the Alien franchise's most complex artificial-life characters rather than a simple technological assistant. His continuation in Alien: Covenant made creator responsibility, machine resentment and artificial self-design central to the series."
         },
         "sourceIds": [
-          "source-guardian-on-musk-remarks"
+          "source-humanistic-2012-event-record"
         ]
       }
     ],
-    "analysis": {
-      "what": {
-        "en": "A safety concern moved from technical and philosophical circles into mass media.",
-        "zh": "一种安全担忧从技术与哲学圈层进入大众媒体。"
-      },
-      "how": {
-        "en": "Public figures translated uncertain long-term AI risk into memorable warnings that media could circulate.",
-        "zh": "公共人物把不确定的长期 AI 风险翻译成媒体容易传播的警示。"
-      },
-      "why": {
-        "en": "The event shows how emotional cycles can turn quickly when capability narratives meet control and survival narratives.",
-        "zh": "这个事件说明，当能力叙事遇到控制与生存叙事时，情绪周期会迅速转向。"
-      }
-    },
+    "analysis": null,
     "quizzes": [],
     "archive": {
-      "eventFile": "archive/events/2014-ai-existential-warnings/event.json",
-      "defaultPresentationFile": "archive/events/2014-ai-existential-warnings/event.json",
+      "eventFile": "archive/events/humanistic-2012-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-2012-event/event.json",
       "presentationMode": "archive"
     },
-    "photos": [],
-    "quote": "",
-    "quoteMeta": {},
-    "quotePage": "",
-    "quoteAttribution": "",
-    "sentiment": "dread",
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Public-risk discourse",
-          "zh": "公共风险话语"
-        },
-        "term": {
-          "en": "Advanced AI as existential threat",
-          "zh": "高级 AI 作为存在性威胁"
-        },
-        "modernTerm": {
-          "en": "AI safety, governance and catastrophic-risk communication",
-          "zh": "AI 安全、治理与灾难性风险传播"
-        }
-      }
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-poster-tmdb.jpg"
     ],
+    "sentiment": "wonder",
     "branchSummary": {
-      "zh": "高级 AI 风险进入主流媒体，把能力兴奋转化为存在性恐惧。",
-      "en": "Advanced-AI risk entered mainstream media, turning capability excitement into existential dread."
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
     },
-    "branch": {
-      "id": "humanistic-cycle",
-      "name": {
-        "en": "Humanistic & Emotional Cycles of AI",
-        "zh": "AI 的人文与情绪周期"
-      }
-    }
+    "branch": "humanistic-cycle"
   },
   {
-    "id": "milestone-humanistic-cycle-2015-openai-founding",
-    "archiveEventId": "2015-openai-founding",
+    "id": "milestone-humanistic-cycle-humanistic-2013-event",
+    "archiveEventId": "humanistic-2013-event",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
     "sourceKind": "archive",
@@ -114460,16 +126162,16 @@ const milestones = [
         "en": "Humanistic & Emotional Cycles of AI"
       }
     },
-    "order": 110,
-    "year": 2015,
-    "date": "2015",
+    "order": 500,
+    "year": 2013,
+    "date": "2013",
     "title": {
-      "zh": "OpenAI 宣告成立",
-      "en": "The Founding of OpenAI"
+      "zh": "《她》",
+      "en": "Her"
     },
     "subtitle": {
-      "zh": "科幻预言、技术狂热与 AI 寒冬",
-      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+      "zh": "斯派克·琼兹关于亲密关系与人工智能的电影",
+      "en": "Spike Jonze's film about intimacy and artificial intelligence"
     },
     "category": {
       "zh": "AI 的人文与情绪周期",
@@ -114477,8 +126179,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "zh": "旧金山 AI 研究生态",
-        "en": "San Francisco AI research ecosystem"
+        "zh": "洛杉矶（影片创作与制作语境）",
+        "en": "Los Angeles (film's creative and production context)"
       },
       "country": {
         "zh": "美国",
@@ -114486,328 +126188,476 @@ const milestones = [
       },
       "regionId": "usa",
       "coordinates": [
-        37.7749,
-        -122.4194
+        34.0522,
+        -118.2437
       ]
     },
     "description": {
-      "zh": "<p>OpenAI 于 2015 年 12 月 11 日公开成立，最初定位为非营利人工智能研究公司。创始公告把目标表述为推动数字智能发展，并让成果尽可能广泛地造福人类；同时强调研究协作、公开发表和对专利的开放态度。当时深度学习能力快速提升，关于高级 AI 风险的公开警告已进入主流媒体，业界也担心前沿人才、算力与研究成果被少数大型公司集中控制。OpenAI 的成立把“安全、开放与广泛受益”从讨论原则转化为组织使命、资金承诺和人才计划。</p><p>其创始逻辑是一种建设性回应：与其只警告强大 AI 可能失控或被垄断，不如建立机构，直接影响知识与能力的发展路径。但这些目标之间从一开始就存在张力。前沿研究需要大量计算和资本，完全开放可能增加滥用风险，长期安全研究也未必与快速能力竞争方向一致。OpenAI 后来在组织结构、融资方式、开放程度和产品方向上发生显著变化，因此 2015 年公告应被视为可核对的历史承诺，而不是对后来所有实践的概括。这个节点展示了 AI 伦理如何进入公司治理、资本来源和发布政策。</p>",
-      "en": "<p>OpenAI was announced on December 11, 2015, as a nonprofit AI research company. Its statement promised broad human benefit through collaboration, publication and an open approach to patents. Deep learning was advancing quickly, safety warnings had entered the media and frontier resources appeared increasingly concentrated. Safety, openness and broad benefit became an institutional mission.</p><p>The response was constructive: create an organization able to shape capability rather than only warn about it. Yet frontier research needs capital, openness can increase misuse and safety may conflict with competition. OpenAI later changed in structure, financing, openness and products, so the 2015 statement is a historical commitment, not a summary of every later practice. The event shows AI ethics entering governance, capital and release policy.</p>"
+      "zh": "<p>斯派克·琼兹的《她》（2013）讲述书信代笔人西奥多与 AI 操作系统 Samantha 建立亲密关系的故事。 影片通过声音、语言、依恋与分离，讨论机器主体性以及人与技术之间如何重新分配亲密关系和权力。</p><p>进入平台化和生成式系统成为公共基础设施的阶段后，这些问题又获得现实的技术回声。作品与理论共同提醒我们，讨论 AI 不能只比较性能，还要追问谁设定目标、谁承担后果，以及人的判断和关系是否仍有位置。 《她》于 2013 年上映，正值智能手机、语音助手和社交平台开始改变人们对“在线陪伴”的想象。斯派克·琼兹把这种变化放进近未来洛杉矶的亲密关系中，使人工智能首先以声音、语言和日常服务进入观众生活。</p><p>影片不把 Samantha 设计成可见的机器人，而是通过持续对话、幽默、记忆和情感回应来建立她的主体感。由此，作品把“机器是否有感情”转化为更具体的问题：人类如何判断另一种智能的需要、边界与成长。 电影研究者与 AI 人文学者通常把《她》视为讨论媒介亲密性、技术中介和机器主体性的代表性文化文本，而不是对通用人工智能时间表的预测。它的长期价值在于提醒观众，技术关系的核心不只在于系统能力，也在于依恋、同意、退出和权力如何被重新分配。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Spike Jonze's Her (2013) follows Theodore Twombly as he begins a relationship with Samantha, an AI operating system voiced by Scarlett Johansson. The film treats conversational fluency, emotional attachment and the possibility of machine subjectivity as cultural questions rather than as a technical forecast.</p><p>As platforms and generative systems became public infrastructure, these questions gained a direct technological echo. Works and theories remind us that AI should not be judged by performance alone: we must ask who sets the goals, who bears the consequences, and whether human judgment and relationships still have a place. Her arrived in 2013, as smartphones, voice assistants and social platforms were changing ideas of online companionship. Spike Jonze places that shift inside an intimate near-future Los Angeles, allowing AI to enter daily life first through voice, language and service.</p><p>The film gives Samantha no visible body; it builds her sense of agency through sustained dialogue, humor, memory and emotional response. It therefore turns the question of machine feeling into a practical one: how should humans recognize the needs, boundaries and growth of another kind of intelligence? Film scholars and AI-humanities researchers generally treat Her as a representative cultural text about mediated intimacy, technology and machine subjectivity, not as a forecast of general-AI timelines. Its lasting value is the reminder that technological relationships are shaped not only by capability, but also by attachment, consent, exit and the redistribution of power. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
     },
     "figures": [
       {
-        "id": "sam-altman",
+        "id": "humanistic-figure-59",
         "name": {
-          "zh": "萨姆·奥尔特曼",
-          "en": "Sam Altman"
+          "zh": "斯派克·琼兹",
+          "en": "Spike Jonze"
         },
         "role": {
-          "zh": "OpenAI 创始联合主席",
-          "en": "OpenAI founding co-chair"
+          "zh": "《她》导演",
+          "en": "Director of Her"
         },
-        "avatar": "resources/images/figures/authoritative/sam-altman.jpg",
+        "avatar": "resources/images/humanistic-cycle/humanistic-2013-event/spike-jonze-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
         "primary": true
-      },
-      {
-        "id": "elon-musk",
-        "name": {
-          "zh": "埃隆·马斯克",
-          "en": "Elon Musk"
-        },
-        "role": {
-          "zh": "OpenAI 创始联合主席与早期捐助者",
-          "en": "OpenAI founding co-chair and early donor"
-        },
-        "avatar": "resources/images/figures/authoritative/elon-musk.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": false
-      },
-      {
-        "id": "ilya-sutskever",
-        "name": {
-          "zh": "伊利亚·苏茨克维",
-          "en": "Ilya Sutskever"
-        },
-        "role": {
-          "zh": "OpenAI 成立时的研究主管",
-          "en": "Research director at OpenAI's founding"
-        },
-        "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": false
-      },
-      {
-        "id": "greg-brockman",
-        "name": {
-          "zh": "格雷格·布罗克曼",
-          "en": "Greg Brockman"
-        },
-        "role": {
-          "zh": "OpenAI 成立时的首席技术官",
-          "en": "Chief technology officer at OpenAI's founding"
-        },
-        "avatar": "",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": false
       }
     ],
     "resources": {
       "images": [
-        "resources/images/figures/authoritative/sam-altman.jpg",
-        "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg",
-        "resources/images/figures/authoritative/elon-musk.jpg"
+        "resources/images/humanistic-cycle/humanistic-2013-event/spike-jonze-portrait.jpg",
+        "resources/images/humanistic-cycle/humanistic-2013-event/her-premiere-nyff-2013.jpg",
+        "resources/images/humanistic-cycle/humanistic-2013-event/her-poster-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-2013-event/her-scene-1-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-2013-event/her-scene-2-tmdb.jpg",
+        "resources/images/humanistic-cycle/humanistic-2013-event/spike-jonze-her.jpg"
       ],
+      "overviewImage": "resources/images/humanistic-cycle/humanistic-2013-event/her-poster-tmdb.jpg",
+      "overviewImageAssetId": "asset-humanistic-2013-event-tmdb-poster",
       "imageMeta": {
-        "resources/images/figures/authoritative/sam-altman.jpg": {
+        "resources/images/humanistic-cycle/humanistic-2013-event/spike-jonze-portrait.jpg": {
           "caption": {
-            "zh": "萨姆·奥尔特曼肖像",
-            "en": "Sam Altman portrait"
+            "zh": "斯派克·琼兹肖像",
+            "en": "Spike Jonze portrait"
           },
           "subcaption": {
-            "zh": "OpenAI 创始联合主席。",
-            "en": "OpenAI founding co-chair."
+            "zh": "《她》导演。",
+            "en": "Director of Her."
           },
           "sourceName": {
             "zh": "Wikimedia Commons",
             "en": "Wikimedia Commons"
           },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED_(cropped).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spike_Jonze.jpg",
           "license": {
-            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+            "zh": "CC BY-SA 3.0；需署名并以相同方式共享。",
+            "en": "CC BY-SA 3.0; attribution and share-alike are required."
           },
-          "sourceId": "source-sam-altman-commons-portrait",
+          "sourceId": "source-spike-jonze-commons-portrait",
           "rights": {
-            "status": "licensed",
+            "status": "cc-by-sa-3.0",
             "license": {
-              "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-              "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+              "zh": "CC BY-SA 3.0；需署名并以相同方式共享。",
+              "en": "CC BY-SA 3.0; attribution and share-alike are required."
+            },
+            "usage": {
+              "zh": "用于《她》导演人物资料展示。",
+              "en": "Used for the biographical display of Her director Spike Jonze."
             }
           },
           "role": "portrait",
           "type": "image",
           "figureIds": [
-            "sam-altman"
+            "humanistic-figure-59"
           ]
         },
-        "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg": {
+        "resources/images/humanistic-cycle/humanistic-2013-event/her-premiere-nyff-2013.jpg": {
           "caption": {
-            "zh": "广泛受益机构解释图",
-            "en": "Broad-benefit institution explainer"
+            "zh": "《她》纽约电影节首映合影",
+            "en": "Her premiere at the New York Film Festival"
           },
           "subcaption": {
-            "zh": "关于 AI 安全转化为组织设计的原创图",
-            "en": "Original diagram for AI safety becoming organization design"
+            "zh": "2013 年纽约电影节；照片中包括导演斯派克·琼兹与主要演员。",
+            "en": "2013 New York Film Festival; Spike Jonze and principal cast members are pictured."
           },
           "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
+            "zh": "Wikimedia Commons／aphrodite-in-nyc",
+            "en": "Wikimedia Commons / aphrodite-in-nyc"
           },
-          "sourceUrl": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Her_Premiere_NYFF_2013.jpg",
           "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
+            "zh": "CC BY 2.0；需署名摄影者 aphrodite-in-nyc。",
+            "en": "CC BY 2.0; attribution to photographer aphrodite-in-nyc is required."
           },
-          "usage": {
-            "en": "Branch timeline visual",
-            "zh": "分支时间线视觉图"
-          },
-          "sourceId": "source-archived-openai-announcement",
+          "sourceId": "source-her-premiere-nyff-commons",
           "rights": {
-            "status": "documented-in-legacy",
+            "status": "cc-by-2.0",
             "license": {
-              "zh": "原创重绘解释图；来源仅作参考链接。",
-              "en": "Original redrawn explainer; reference links only."
+              "zh": "CC BY 2.0；需署名摄影者 aphrodite-in-nyc。",
+              "en": "CC BY 2.0; attribution to photographer aphrodite-in-nyc is required."
+            },
+            "usage": {
+              "zh": "用于《她》事件的首映历史资料展示。",
+              "en": "Used as historical premiere context for the Her event."
             }
           },
-          "role": "architecture-explainer",
-          "type": "svg",
+          "role": "event-reference",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-59"
+          ]
+        },
+        "resources/images/humanistic-cycle/humanistic-2013-event/her-poster-tmdb.jpg": {
+          "caption": {
+            "zh": "《她》电影海报",
+            "en": "Her film poster"
+          },
+          "subcaption": {
+            "zh": "2013 年电影《她》的中文发行海报。",
+            "en": "Chinese release poster for the 2013 film Her."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/zFTiJLKXGKaS0IvHLcjQOCN0zxZ.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-2013-event-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/152601-her/images"
+          },
+          "role": "movie-poster",
+          "type": "image",
           "figureIds": []
         },
-        "resources/images/figures/authoritative/elon-musk.jpg": {
+        "resources/images/humanistic-cycle/humanistic-2013-event/her-scene-1-tmdb.jpg": {
           "caption": {
-            "zh": "埃隆·马斯克肖像",
-            "en": "Elon Musk portrait"
+            "zh": "西奥多在城市公寓",
+            "en": "Theodore in his city apartment"
           },
           "subcaption": {
-            "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
-            "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
+            "zh": "西奥多站在公寓落地窗前望向城市的电影场景。",
+            "en": "Film scene showing Theodore looking over the city from his apartment."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/1YnZchmaGc8dchgRPDpR1KGrixA.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-2013-event-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/152601-her/images"
+          },
+          "role": "film-still",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/humanistic-2013-event/her-scene-2-tmdb.jpg": {
+          "caption": {
+            "zh": "西奥多角色视觉",
+            "en": "Theodore character visual"
+          },
+          "subcaption": {
+            "zh": "红色背景下西奥多的影片角色视觉资料。",
+            "en": "Film character visual of Theodore against the film's characteristic red background."
+          },
+          "sourceName": {
+            "zh": "TMDB",
+            "en": "TMDB"
+          },
+          "sourceUrl": "https://image.tmdb.org/t/p/original/sPPsR9f4K0movWVQ99u4uMqFzEL.jpg",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "sourceId": "source-humanistic-2013-event-tmdb-images",
+          "rights": {
+            "status": "fair-use-reference",
+            "license": {
+              "zh": "影片宣传素材；未核实开放许可。",
+              "en": "Film promotional material; no open license has been verified."
+            },
+            "usage": {
+              "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+              "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+            },
+            "sourceUrl": "https://www.themoviedb.org/movie/152601-her/images"
+          },
+          "role": "promotional-still",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/humanistic-2013-event/spike-jonze-her.jpg": {
+          "caption": {
+            "zh": "《她》片名标识",
+            "en": "Her title logo"
+          },
+          "subcaption": {
+            "zh": "2013 年电影《她》的片名标识。",
+            "en": "Title mark for the 2013 film Her."
           },
           "sourceName": {
             "zh": "Wikimedia Commons",
             "en": "Wikimedia Commons"
           },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spike_Jonze_-_Her.jpg",
           "license": {
-            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+            "zh": "Wikimedia Commons 文件页标注为公有领域。",
+            "en": "Marked public domain on the Wikimedia Commons file page."
           },
-          "sourceId": "source-elon-musk-commons-portrait",
+          "sourceId": "source-her-logo-commons",
           "rights": {
-            "status": "licensed",
+            "status": "public-domain",
             "license": {
-              "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-              "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+              "zh": "Wikimedia Commons 文件页标注为公有领域。",
+              "en": "Marked public domain on the Wikimedia Commons file page."
+            },
+            "usage": {
+              "zh": "仅作片名标识资料，不作为人物肖像或电影剧照。",
+              "en": "Used only as a title reference, not as a portrait or film still."
             }
           },
-          "role": "portrait",
+          "role": "title-reference",
           "type": "image",
-          "figureIds": [
-            "elon-musk"
-          ]
+          "figureIds": []
         }
       },
-      "audios": [
-        {
-          "id": "asset-2015-openai-founding-audio-zh-original-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-openai-founding-zh-original-v1.mp3",
-          "title": {
-            "zh": "2015-openai-founding 中文原版科普音频",
-            "en": "2015-openai-founding original Chinese audio narration"
-          },
-          "language": "zh",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/2015-openai-founding-zh-original-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "2015-openai-founding-zh-original-v1.mp3"
-          }
-        },
-        {
-          "id": "asset-2015-openai-founding-audio-en-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2015-openai-founding-en-v1.mp3",
-          "title": {
-            "zh": "2015-openai-founding 英文科普音频",
-            "en": "2015-openai-founding English audio narration"
-          },
-          "language": "en",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/2015-openai-founding-en-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "2015-openai-founding-en-v1.mp3"
-          }
-        }
-      ],
       "assetIds": [
-        "asset-sam-altman-commons-portrait",
-        "asset-2015-openai-founding-broad-benefit",
-        "asset-elon-musk-commons-portrait",
-        "asset-2015-openai-founding-audio-zh-original-v1",
-        "asset-2015-openai-founding-audio-en-v1"
+        "asset-humanistic-2013-event-spike-jonze-portrait",
+        "asset-humanistic-2013-event-her-premiere-nyff-2013",
+        "asset-humanistic-2013-event-tmdb-poster",
+        "asset-humanistic-2013-event-tmdb-scene-1",
+        "asset-humanistic-2013-event-tmdb-scene-2",
+        "asset-humanistic-2013-event-her-logo"
       ]
     },
     "imageMeta": {
-      "resources/images/figures/authoritative/sam-altman.jpg": {
+      "resources/images/humanistic-cycle/humanistic-2013-event/spike-jonze-portrait.jpg": {
         "caption": {
-          "zh": "萨姆·奥尔特曼肖像",
-          "en": "Sam Altman portrait"
+          "zh": "斯派克·琼兹肖像",
+          "en": "Spike Jonze portrait"
         },
         "subcaption": {
-          "zh": "OpenAI 创始联合主席。",
-          "en": "OpenAI founding co-chair."
+          "zh": "《她》导演。",
+          "en": "Director of Her."
         },
         "sourceName": {
           "zh": "Wikimedia Commons",
           "en": "Wikimedia Commons"
         },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED_(cropped).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spike_Jonze.jpg",
         "license": {
-          "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-          "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+          "zh": "CC BY-SA 3.0；需署名并以相同方式共享。",
+          "en": "CC BY-SA 3.0; attribution and share-alike are required."
         },
-        "sourceId": "source-sam-altman-commons-portrait",
+        "sourceId": "source-spike-jonze-commons-portrait",
         "rights": {
-          "status": "licensed",
+          "status": "cc-by-sa-3.0",
           "license": {
-            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+            "zh": "CC BY-SA 3.0；需署名并以相同方式共享。",
+            "en": "CC BY-SA 3.0; attribution and share-alike are required."
+          },
+          "usage": {
+            "zh": "用于《她》导演人物资料展示。",
+            "en": "Used for the biographical display of Her director Spike Jonze."
           }
         },
         "role": "portrait",
         "type": "image",
         "figureIds": [
-          "sam-altman"
+          "humanistic-figure-59"
         ]
       },
-      "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg": {
+      "resources/images/humanistic-cycle/humanistic-2013-event/her-premiere-nyff-2013.jpg": {
         "caption": {
-          "zh": "广泛受益机构解释图",
-          "en": "Broad-benefit institution explainer"
+          "zh": "《她》纽约电影节首映合影",
+          "en": "Her premiere at the New York Film Festival"
         },
         "subcaption": {
-          "zh": "关于 AI 安全转化为组织设计的原创图",
-          "en": "Original diagram for AI safety becoming organization design"
+          "zh": "2013 年纽约电影节；照片中包括导演斯派克·琼兹与主要演员。",
+          "en": "2013 New York Film Festival; Spike Jonze and principal cast members are pictured."
         },
         "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
+          "zh": "Wikimedia Commons／aphrodite-in-nyc",
+          "en": "Wikimedia Commons / aphrodite-in-nyc"
         },
-        "sourceUrl": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Her_Premiere_NYFF_2013.jpg",
         "license": {
-          "zh": "原创重绘解释图；来源仅作参考链接。",
-          "en": "Original redrawn explainer; reference links only."
+          "zh": "CC BY 2.0；需署名摄影者 aphrodite-in-nyc。",
+          "en": "CC BY 2.0; attribution to photographer aphrodite-in-nyc is required."
         },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        },
-        "sourceId": "source-archived-openai-announcement",
+        "sourceId": "source-her-premiere-nyff-commons",
         "rights": {
-          "status": "documented-in-legacy",
+          "status": "cc-by-2.0",
           "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
+            "zh": "CC BY 2.0；需署名摄影者 aphrodite-in-nyc。",
+            "en": "CC BY 2.0; attribution to photographer aphrodite-in-nyc is required."
+          },
+          "usage": {
+            "zh": "用于《她》事件的首映历史资料展示。",
+            "en": "Used as historical premiere context for the Her event."
           }
         },
-        "role": "architecture-explainer",
-        "type": "svg",
+        "role": "event-reference",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-59"
+        ]
+      },
+      "resources/images/humanistic-cycle/humanistic-2013-event/her-poster-tmdb.jpg": {
+        "caption": {
+          "zh": "《她》电影海报",
+          "en": "Her film poster"
+        },
+        "subcaption": {
+          "zh": "2013 年电影《她》的中文发行海报。",
+          "en": "Chinese release poster for the 2013 film Her."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/zFTiJLKXGKaS0IvHLcjQOCN0zxZ.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-2013-event-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/152601-her/images"
+        },
+        "role": "movie-poster",
+        "type": "image",
         "figureIds": []
       },
-      "resources/images/figures/authoritative/elon-musk.jpg": {
+      "resources/images/humanistic-cycle/humanistic-2013-event/her-scene-1-tmdb.jpg": {
         "caption": {
-          "zh": "埃隆·马斯克肖像",
-          "en": "Elon Musk portrait"
+          "zh": "西奥多在城市公寓",
+          "en": "Theodore in his city apartment"
         },
         "subcaption": {
-          "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
-          "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
+          "zh": "西奥多站在公寓落地窗前望向城市的电影场景。",
+          "en": "Film scene showing Theodore looking over the city from his apartment."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/1YnZchmaGc8dchgRPDpR1KGrixA.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-2013-event-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/152601-her/images"
+        },
+        "role": "film-still",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/humanistic-2013-event/her-scene-2-tmdb.jpg": {
+        "caption": {
+          "zh": "西奥多角色视觉",
+          "en": "Theodore character visual"
+        },
+        "subcaption": {
+          "zh": "红色背景下西奥多的影片角色视觉资料。",
+          "en": "Film character visual of Theodore against the film's characteristic red background."
+        },
+        "sourceName": {
+          "zh": "TMDB",
+          "en": "TMDB"
+        },
+        "sourceUrl": "https://image.tmdb.org/t/p/original/sPPsR9f4K0movWVQ99u4uMqFzEL.jpg",
+        "license": {
+          "zh": "影片宣传素材；未核实开放许可。",
+          "en": "Film promotional material; no open license has been verified."
+        },
+        "sourceId": "source-humanistic-2013-event-tmdb-images",
+        "rights": {
+          "status": "fair-use-reference",
+          "license": {
+            "zh": "影片宣传素材；未核实开放许可。",
+            "en": "Film promotional material; no open license has been verified."
+          },
+          "usage": {
+            "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+            "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+          },
+          "sourceUrl": "https://www.themoviedb.org/movie/152601-her/images"
+        },
+        "role": "promotional-still",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/humanistic-2013-event/spike-jonze-her.jpg": {
+        "caption": {
+          "zh": "《她》片名标识",
+          "en": "Her title logo"
+        },
+        "subcaption": {
+          "zh": "2013 年电影《她》的片名标识。",
+          "en": "Title mark for the 2013 film Her."
         },
         "sourceName": {
           "zh": "Wikimedia Commons",
           "en": "Wikimedia Commons"
         },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spike_Jonze_-_Her.jpg",
         "license": {
-          "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-          "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+          "zh": "Wikimedia Commons 文件页标注为公有领域。",
+          "en": "Marked public domain on the Wikimedia Commons file page."
         },
-        "sourceId": "source-elon-musk-commons-portrait",
+        "sourceId": "source-her-logo-commons",
         "rights": {
-          "status": "licensed",
+          "status": "public-domain",
           "license": {
-            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+            "zh": "Wikimedia Commons 文件页标注为公有领域。",
+            "en": "Marked public domain on the Wikimedia Commons file page."
+          },
+          "usage": {
+            "zh": "仅作片名标识资料，不作为人物肖像或电影剧照。",
+            "en": "Used only as a title reference, not as a portrait or film still."
           }
         },
-        "role": "portrait",
+        "role": "title-reference",
         "type": "image",
-        "figureIds": [
-          "elon-musk"
-        ]
+        "figureIds": []
       }
     },
     "achievement": {
@@ -114816,145 +126666,187 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "en": "Web Archive",
-            "zh": "互联网档案馆"
+            "zh": "官方资料",
+            "en": "Official reference"
           },
           "title": {
-            "en": "Introducing OpenAI archived announcement",
-            "zh": "《Introducing OpenAI》归档公告"
+            "zh": "《她》",
+            "en": "Her"
           },
           "description": {
-            "en": "Archived official announcement from December 2015, used as the primary source for the founding node.",
-            "zh": "2015 年 12 月官方公告归档，用作成立节点的原始来源。"
+            "zh": "Sony Pictures Classics 的影片资料页，提供《她》的正式发行方信息。",
+            "en": "Sony Pictures Classics' official film page for Her."
           },
-          "url": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/",
-          "source": "Web Archive / OpenAI",
+          "url": "https://www.sonyclassics.com/her/",
+          "source": "Sony Pictures Classics",
           "license": {
-            "en": "Reference archive link only; article text and images are not reused.",
-            "zh": "仅作为归档参考链接；不复用文章正文或图片。"
+            "zh": "发行方资料页；图片资源另按各自来源页许可使用。",
+            "en": "Distributor reference page; image assets retain the licenses recorded on their source pages."
           },
           "usage": {
-            "en": "Primary announcement source",
-            "zh": "原始公告来源"
+            "zh": "核对影片身份与发行信息",
+            "en": "Verify film identity and release information"
           },
           "action": {
-            "en": "Open archived announcement",
-            "zh": "打开归档公告"
+            "zh": "打开影片官方页面",
+            "en": "Open official film page"
           }
         }
       ],
       "sources": [
         {
-          "label": {
-            "en": "Archived OpenAI announcement",
-            "zh": "OpenAI 公告归档"
-          },
+          "id": "source-her-sony-pictures-classics",
           "type": {
-            "en": "Archived announcement",
-            "zh": "归档公告"
+            "zh": "官方页面",
+            "en": "Official page"
           },
-          "url": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/"
+          "label": {
+            "zh": "Sony Pictures Classics《她》官方页面",
+            "en": "Sony Pictures Classics — Her official page"
+          },
+          "url": "https://www.sonyclassics.com/her/",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "official-page"
         },
         {
-          "label": {
-            "en": "Wired contemporary coverage",
-            "zh": "Wired 同期报道"
-          },
+          "id": "source-her-nyff-2013",
           "type": {
-            "en": "News report",
-            "zh": "新闻报道"
+            "zh": "档案",
+            "en": "Archive"
           },
-          "url": "https://www.wired.com/2015/12/how-elon-musk-and-y-combinator-plan-to-stop-computers-from-taking-over/"
+          "label": {
+            "zh": "纽约电影节 2013：《她》",
+            "en": "2013 New York Film Festival: Her"
+          },
+          "url": "https://www.filmlinc.org/films/her/",
+          "purpose": "historical-context",
+          "reliability": "primary",
+          "sourceType": "archive"
         },
         {
-          "label": {
-            "en": "BBC contemporary coverage",
-            "zh": "BBC 同期报道"
-          },
+          "id": "source-her-premiere-nyff-commons",
           "type": {
-            "en": "News report",
-            "zh": "新闻报道"
+            "zh": "图片来源",
+            "en": "Image source"
           },
-          "url": "https://www.bbc.com/news/technology-35082344"
+          "label": {
+            "zh": "《她》2013 年纽约电影节首映合影",
+            "en": "Her premiere at the 2013 New York Film Festival"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Her_Premiere_NYFF_2013.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         },
         {
-          "label": {
-            "en": "OpenAI organization overview",
-            "zh": "OpenAI 组织概览"
-          },
+          "id": "source-spike-jonze-commons-portrait",
           "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
+            "zh": "图片来源",
+            "en": "Image source"
           },
-          "url": "https://en.wikipedia.org/wiki/OpenAI"
+          "label": {
+            "zh": "斯派克·琼兹肖像",
+            "en": "Spike Jonze portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Spike_Jonze.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-her-logo-commons",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "《她》片名标识",
+            "en": "Her title logo"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Spike_Jonze_-_Her.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-her-digital-romance-post-cinema",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《〈她〉：数字浪漫与后电影》",
+            "en": "Her (Spike Jonze, 2013): Digital Romance and Post-cinema"
+          },
+          "url": "https://doi.org/10.24193/ekphrasis.22.3",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-her-depersonalized-intimacy",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《去人格化的亲密关系：雪莉·特克尔与斯派克·琼兹的案例》",
+            "en": "Depersonalized Intimacy: The Cases of Sherry Turkle and Spike Jonze"
+          },
+          "url": "https://doi.org/10.1353/esc.2016.0004",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-humanistic-2013-event-tmdb-images",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "《她》 TMDB 图片库",
+            "en": "Her TMDB image gallery"
+          },
+          "url": "https://www.themoviedb.org/movie/152601-her/images",
+          "purpose": "image-provenance",
+          "reliability": "secondary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
-        "source-sam-altman-commons-portrait",
-        "source-elon-musk-commons-portrait",
-        "source-archived-openai-announcement",
-        "source-wired-contemporary-coverage",
-        "source-bbc-contemporary-coverage",
-        "source-openai-organization-overview"
+        "source-her-sony-pictures-classics",
+        "source-her-nyff-2013",
+        "source-her-premiere-nyff-commons",
+        "source-spike-jonze-commons-portrait",
+        "source-her-logo-commons",
+        "source-her-digital-romance-post-cinema",
+        "source-her-depersonalized-intimacy",
+        "source-humanistic-2013-event-tmdb-images"
       ],
       "claimIds": [
-        "claim-branch-summary",
-        "claim-event-description"
+        "claim-humanistic-2013-event-core"
       ],
       "claims": [
         {
-          "id": "claim-branch-summary",
+          "id": "claim-humanistic-2013-event-core",
           "importance": "core",
           "text": {
-            "zh": "AI 安全关切转化为机构建设：广泛受益被写成研究使命。",
-            "en": "AI safety concern became institution-building: broad benefit was framed as a research mission."
+            "zh": "人类与AI操作系统相恋，追问当AI情感比人类更真诚时谁更具人性。",
+            "en": "Her depicts a human relationship with an AI operating system and uses that relationship to examine intimacy, machine subjectivity and the boundaries of personhood."
           },
           "sourceIds": [
-            "source-archived-openai-announcement",
-            "source-wired-contemporary-coverage"
+            "source-her-sony-pictures-classics",
+            "source-her-nyff-2013"
           ],
-          "status": "needs-source"
-        },
-        {
-          "id": "claim-event-description",
-          "importance": "context",
-          "text": {
-            "zh": "OpenAI 于 2015 年 12 月宣告成立，当时定位为面向广泛受益与开放协作的非营利 AI 研究公司。在这条分支中，它被视为更广泛 AI 安全与能力集中讨论中的防御性机构回应，而不是对某一句话的直接反应。",
-            "en": "OpenAI was announced in December 2015 as a nonprofit AI research company oriented around broad benefit and open collaboration. In this branch, the founding is framed as a defensive institutional response within a wider AI-safety and capability-concentration debate, not as a reaction to any single quote."
-          },
-          "sourceIds": [
-            "source-archived-openai-announcement",
-            "source-wired-contemporary-coverage"
-          ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
-        "batch-migration",
-        "source-review-needed"
-      ],
-      "area": {
-        "en": "Defensive action",
-        "zh": "防御性行动"
-      },
-      "method": {
-        "en": "Institution-building around broad benefit",
-        "zh": "围绕广泛受益建设机构"
-      },
-      "artifact": {
-        "en": "OpenAI announcement",
-        "zh": "OpenAI 成立公告"
-      },
-      "material": {
-        "en": "Archived announcement and contemporary coverage",
-        "zh": "公告归档与同期报道"
-      },
-      "demo": {
-        "en": "Risk discourse becomes a research-lab mission",
-        "zh": "风险话语变成研究实验室使命"
-      },
-      "demoImage": "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg",
-      "demoPanel": "sources"
+        "image-researched",
+        "source-verified"
+      ]
     },
     "commentarySections": [
       {
@@ -114964,11 +126856,12 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "这一宣告出现在深度学习进展、公共风险警告和对 AI 能力集中担忧同时升温之后。它的重要性在于，AI 安全与广泛受益不再只是研究话题，也成为一个机构的创始身份。",
-          "en": "The announcement followed a period when deep learning progress, public-risk warnings and concern about concentrated AI power were all intensifying. It mattered because AI safety and broad benefit became part of an organization's founding identity rather than only a research topic."
+          "zh": "《她》于 2013 年上映，正值智能手机、语音助手和社交平台开始改变人们对“在线陪伴”的想象。斯派克·琼兹把这种变化放进近未来洛杉矶的亲密关系中，使人工智能首先以声音、语言和日常服务进入观众生活。",
+          "en": "Her arrived in 2013, as smartphones, voice assistants and social platforms were changing ideas of online companionship. Spike Jonze places that shift inside an intimate near-future Los Angeles, allowing AI to enter daily life first through voice, language and service."
         },
         "sourceIds": [
-          "source-archived-openai-announcement"
+          "source-her-nyff-2013",
+          "source-her-sony-pictures-classics"
         ]
       },
       {
@@ -114978,11 +126871,11 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "这里的情绪机制是建设性防御：如果强大 AI 可能危险或被集中控制，那么新机构或许能把它引向公共受益。这把焦虑转化为使命语言、资金策略与组织设计。",
-          "en": "The emotional mechanism is constructive defense: if powerful AI could be dangerous or concentrated, then a new institution might steer it toward public benefit. This turned anxiety into mission language, funding strategy and organizational design."
+          "zh": "影片不把 Samantha 设计成可见的机器人，而是通过持续对话、幽默、记忆和情感回应来建立她的主体感。由此，作品把“机器是否有感情”转化为更具体的问题：人类如何判断另一种智能的需要、边界与成长。",
+          "en": "The film gives Samantha no visible body; it builds her sense of agency through sustained dialogue, humor, memory and emotional response. It therefore turns the question of machine feeling into a practical one: how should humans recognize the needs, boundaries and growth of another kind of intelligence?"
         },
         "sourceIds": [
-          "source-archived-openai-announcement"
+          "source-her-sony-pictures-classics"
         ]
       },
       {
@@ -114992,71 +126885,37 @@ const milestones = [
           "en": "Long-Term Legacy"
         },
         "html": {
-          "zh": "专家通常把 OpenAI 的成立视为 2010 年代中期 AI 安全与广泛受益话语主流化的一部分。它的遗产很复杂，但在历史上标志着情绪关切变成机构基础设施。",
-          "en": "Experts generally treat OpenAI's founding as part of the mainstreaming of AI-safety and broad-benefit discourse in the mid-2010s. Its legacy is complicated, but historically it marks the point where emotional concern became institutional infrastructure."
+          "zh": "电影研究者与 AI 人文学者通常把《她》视为讨论媒介亲密性、技术中介和机器主体性的代表性文化文本，而不是对通用人工智能时间表的预测。它的长期价值在于提醒观众，技术关系的核心不只在于系统能力，也在于依恋、同意、退出和权力如何被重新分配。",
+          "en": "Film scholars and AI-humanities researchers generally treat Her as a representative cultural text about mediated intimacy, technology and machine subjectivity, not as a forecast of general-AI timelines. Its lasting value is the reminder that technological relationships are shaped not only by capability, but also by attachment, consent, exit and the redistribution of power."
         },
         "sourceIds": [
-          "source-archived-openai-announcement"
+          "source-her-sony-pictures-classics",
+          "source-her-nyff-2013",
+          "source-her-digital-romance-post-cinema",
+          "source-her-depersonalized-intimacy"
         ]
       }
     ],
-    "analysis": {
-      "what": {
-        "en": "The founding turned AI-risk discourse into an institutional plan for research and public benefit.",
-        "zh": "这次成立把 AI 风险话语转化为关于研究与公共受益的机构计划。"
-      },
-      "how": {
-        "en": "The announcement linked openness, collaboration and safety with the belief that powerful AI should not be controlled by a narrow set of actors.",
-        "zh": "成立宣言把开放、协作与安全联系起来，并强调强大 AI 不应被少数行动者狭窄控制。"
-      },
-      "why": {
-        "en": "It shows a defensive swing in the emotional cycle: dread can lead not only to critique, but also to new organizations.",
-        "zh": "它展示了情绪周期中的防御性摆动：恐惧不只会带来批评，也会催生新组织。"
-      }
-    },
+    "analysis": null,
     "quizzes": [],
     "archive": {
-      "eventFile": "archive/events/2015-openai-founding/event.json",
-      "defaultPresentationFile": "archive/events/2015-openai-founding/event.json",
+      "eventFile": "archive/events/humanistic-2013-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-2013-event/event.json",
       "presentationMode": "archive"
     },
-    "photos": [],
-    "quote": "",
-    "quoteMeta": {},
-    "quotePage": "",
-    "quoteAttribution": "",
-    "sentiment": "defense",
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Defensive institution",
-          "zh": "防御性机构"
-        },
-        "term": {
-          "en": "Build AI for broad benefit",
-          "zh": "为广泛受益建设 AI"
-        },
-        "modernTerm": {
-          "en": "AI governance, lab missions and capability stewardship",
-          "zh": "AI 治理、实验室使命与能力托管"
-        }
-      }
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-2013-event/her-poster-tmdb.jpg"
     ],
+    "sentiment": "wonder",
     "branchSummary": {
-      "zh": "AI 安全关切转化为机构建设：广泛受益被写成研究使命。",
-      "en": "AI safety concern became institution-building: broad benefit was framed as a research mission."
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
     },
-    "branch": {
-      "id": "humanistic-cycle",
-      "name": {
-        "en": "Humanistic & Emotional Cycles of AI",
-        "zh": "AI 的人文与情绪周期"
-      }
-    }
+    "branch": "humanistic-cycle"
   },
   {
-    "id": "milestone-humanistic-cycle-2023-ai-risk-statement",
-    "archiveEventId": "2023-ai-risk-statement",
+    "id": "milestone-humanistic-cycle-humanistic-2014-superintelligence",
+    "archiveEventId": "humanistic-2014-superintelligence",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
     "sourceKind": "archive",
@@ -115067,16 +126926,16 @@ const milestones = [
         "en": "Humanistic & Emotional Cycles of AI"
       }
     },
-    "order": 120,
-    "year": 2023,
-    "date": "2023",
+    "order": 510,
+    "year": 2014,
+    "date": "2014",
     "title": {
-      "zh": "AI 风险声明",
-      "en": "The Statement on AI Risk"
+      "zh": "《超级智能：路径、危险与策略》",
+      "en": "Superintelligence: Paths, Dangers, Strategies"
     },
     "subtitle": {
-      "zh": "科幻预言、技术狂热与 AI 寒冬",
-      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+      "zh": "哲学",
+      "en": "Philosophy"
     },
     "category": {
       "zh": "AI 的人文与情绪周期",
@@ -115084,289 +126943,123 @@ const milestones = [
     },
     "location": {
       "name": {
-        "zh": "AI 安全中心",
-        "en": "Center for AI Safety"
+        "zh": "牛津大学哲学与未来研究语境",
+        "en": "Oxford philosophy and futures-studies context"
       },
       "country": {
-        "zh": "美国",
-        "en": "United States"
+        "zh": "英国",
+        "en": "United Kingdom"
       },
-      "regionId": "usa",
+      "regionId": "united-kingdom",
       "coordinates": [
-        37.7749,
-        -122.4194
+        0,
+        0
       ]
     },
     "description": {
-      "zh": "<p>2023 年 5 月 30 日，AI 安全中心发布只有一句话的《AI 风险声明》，主张降低 AI 导致灭绝的风险应与流行病和核战争等社会尺度风险一样，成为全球优先事项。声明出现时，ChatGPT 等生成式 AI 产品已使前沿模型能力进入日常公共经验，企业竞争、监管听证与各类公开信快速增加。签署者包括 AI 研究者、图灵奖得主、企业负责人和其他公共人物。它没有提供新的实验数据，而是用极短文本建立一个跨机构、易传播的风险议程。</p><p>声明采用“优先级压缩”的策略：不具体说明灭绝风险的机制、概率和时间表，而是先争取“这一风险值得全球关注”的最低共识。随后关于极端 AI 风险的研究进一步讨论恶意使用、AI 竞赛、组织事故和系统失控等路径，以及可能的技术安全与治理措施。简洁框架便于聚集立场不同的签署者，也留下争议：同意研究极端风险，不等于同意某个概率估计、监管方案或资源分配。许多研究者同时强调，偏见、劳动剥削、虚假信息、监控和权力集中等现实伤害不能被边缘化。</p>",
-      "en": "<p>On May 30, 2023, the Center for AI Safety released a one-sentence statement making extinction risk from AI a global priority alongside pandemics and nuclear war. ChatGPT had brought frontier models into everyday experience as competition and regulation accelerated. Researchers, Turing Award recipients and company leaders signed it. The text offered no new experiment; it established a shared risk agenda.</p><p>The strategy was priority compression: seek attention without specifying mechanisms, probability or timing. Later research discussed misuse, AI races, organizational accidents and loss of control. Agreement to study extreme risk does not imply agreement on regulation or resources. Many researchers also insist that present harms such as bias, exploitation, misinformation, surveillance and concentrated power remain visible.</p>"
+      "zh": "<p>尼克·博斯特罗姆的《超级智能：路径、危险与策略》把机器智能超越人类后的问题，从科幻叙事推进到系统性的未来研究。书中比较了全脑仿真、人工智能、增强人类等不同路径，并强调真正困难的不是想象一种更强的机器，而是判断它出现后社会是否还有足够时间建立控制和治理机制。</p><p>博斯特罗姆用“正交性论题”指出，智能水平与最终目标并不天然绑定；一个极其聪明的系统仍可能追求与人类价值无关的目标。“工具性趋同”则说明，不同目标的高能力系统都可能为了完成任务而寻求资源、保留自身运行并减少外部干预，由此产生控制问题。</p><p>研究者通常把本书视为 AI 安全、对齐和治理讨论的重要转折点，同时也指出其中的情景依赖和争议。它的长期影响在于把“超级智能风险”连接到目标设计、制度权力和国际协调，而不是把问题简化为机器人是否会产生敌意。</p>",
+      "en": "<p>Nick Bostrom's Superintelligence: Paths, Dangers, Strategies moves the question of machines surpassing humans from science-fiction narrative into systematic futures research. It compares routes including whole-brain emulation, artificial intelligence and human enhancement, arguing that the central difficulty is not imagining a stronger machine but knowing whether society will have time to build control and governance mechanisms.</p><p>Bostrom's orthogonality thesis holds that intelligence and final goals are not naturally linked; a very capable system may pursue objectives unrelated to human values. Instrumental convergence suggests that systems with different goals may still seek resources, preserve their operation and reduce interference in order to complete a task, creating a control problem.</p><p>Researchers generally regard the book as a turning point for AI safety, alignment and governance while also debating its scenarios and assumptions. Its lasting influence is to connect superintelligence risk with goal design, institutional power and international coordination rather than reducing the issue to whether robots become hostile.</p>"
     },
     "figures": [
       {
-        "id": "dan-hendrycks",
+        "id": "nick-bostrom",
         "name": {
-          "zh": "丹·亨德里克斯",
-          "en": "Dan Hendrycks"
+          "zh": "尼克·博斯特罗姆",
+          "en": "Nick Bostrom"
         },
         "role": {
-          "zh": "发布该声明的 AI 安全中心主任",
-          "en": "Director of the Center for AI Safety, which published the statement"
-        },
-        "avatar": "resources/images/figures/authoritative/dan-hendrycks.webp",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": true
-      },
-      {
-        "id": "center-for-ai-safety",
-        "name": {
-          "zh": "AI 安全中心",
-          "en": "Center for AI Safety"
-        },
-        "role": {
-          "zh": "AI 风险声明发布机构",
-          "en": "Publisher of the Statement on AI Risk"
+          "zh": "《超级智能》作者",
+          "en": "Author of Superintelligence"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "organization",
-        "organizationIds": [],
-        "primary": false
-      },
-      {
-        "id": "geoffrey-hinton",
-        "name": {
-          "zh": "杰弗里·辛顿",
-          "en": "Geoffrey Hinton"
-        },
-        "role": {
-          "zh": "主要签署人",
-          "en": "Prominent signatory"
-        },
-        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
-        "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
-        "primary": true
-      },
-      {
-        "id": "yoshua-bengio",
-        "name": {
-          "zh": "约书亚·本吉奥",
-          "en": "Yoshua Bengio"
-        },
-        "role": {
-          "zh": "主要签署人",
-          "en": "Prominent signatory"
-        },
-        "avatar": "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [],
-        "primary": true
-      },
-      {
-        "id": "demis-hassabis",
-        "name": {
-          "zh": "德米斯·哈萨比斯",
-          "en": "Demis Hassabis"
-        },
-        "role": {
-          "zh": "主要签署人",
-          "en": "Prominent signatory"
-        },
-        "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": [
-          "deepmind"
-        ],
         "primary": true
       }
     ],
     "resources": {
       "images": [
-        "resources/images/figures/authoritative/dan-hendrycks.webp",
-        "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg"
+        "resources/images/humanistic-cycle/humanistic-2014-superintelligence/verified-nick-bostrom.jpg"
       ],
       "imageMeta": {
-        "resources/images/figures/authoritative/dan-hendrycks.webp": {
+        "resources/images/humanistic-cycle/humanistic-2014-superintelligence/verified-nick-bostrom.jpg": {
           "caption": {
-            "zh": "丹·亨德里克斯肖像",
-            "en": "Dan Hendrycks portrait"
+            "zh": "尼克·博斯特罗姆肖像",
+            "en": "Nick Bostrom"
           },
           "subcaption": {
-            "zh": "发布 AI 风险声明的 AI 安全中心主任。",
-            "en": "Director of the Center for AI Safety, which published the Statement on AI Risk."
+            "zh": "《超级智能》作者。",
+            "en": "Author of Superintelligence."
           },
           "sourceName": {
-            "zh": "AI 安全中心",
-            "en": "Center for AI Safety"
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
           },
-          "sourceUrl": "https://www.safe.ai/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prof_Nick_Bostrom_324-1.jpg",
           "license": {
-            "zh": "图片来自 AI 安全中心官网；页面未声明再分发许可，对外发布前需复核授权。",
-            "en": "Image from the Center for AI Safety official website; redistribution rights are not stated and must be reviewed before publication."
+            "zh": "CC BY 4.0",
+            "en": "CC BY 4.0"
           },
-          "sourceId": "source-cais-dan-hendrycks-profile",
+          "sourceId": "source-humanistic-2014-superintelligence-verified-image",
           "rights": {
-            "status": "external-reference",
+            "status": "cc-by-4-0",
             "license": {
-              "zh": "图片来自 AI 安全中心官网；页面未声明再分发许可，对外发布前需复核授权。",
-              "en": "Image from the Center for AI Safety official website; redistribution rights are not stated and must be reviewed before publication."
+              "zh": "CC BY 4.0",
+              "en": "CC BY 4.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线人物或历史资料展示。",
+              "en": "Used as a figure or historical reference in the AI humanities storyline."
             }
           },
           "role": "portrait",
           "type": "image",
           "figureIds": [
-            "dan-hendrycks"
+            "nick-bostrom"
           ]
-        },
-        "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg": {
-          "caption": {
-            "zh": "全球 AI 风险优先事项解释图",
-            "en": "Global AI-risk priority explainer"
-          },
-          "subcaption": {
-            "zh": "关于 2023 年公共风险声明的原创图",
-            "en": "Original diagram for the 2023 public-risk statement"
-          },
-          "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
-          },
-          "sourceUrl": "https://www.safe.ai/work/statement-on-ai-risk",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          },
-          "usage": {
-            "en": "Branch timeline visual",
-            "zh": "分支时间线视觉图"
-          },
-          "sourceId": "source-official-statement-on-ai-risk",
-          "rights": {
-            "status": "documented-in-legacy",
-            "license": {
-              "zh": "原创重绘解释图；来源仅作参考链接。",
-              "en": "Original redrawn explainer; reference links only."
-            }
-          },
-          "role": "architecture-explainer",
-          "type": "svg",
-          "figureIds": []
         }
       },
-      "audios": [
-        {
-          "id": "asset-2023-ai-risk-statement-audio-zh-original-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2023-ai-risk-statement-zh-original-v1.mp3",
-          "title": {
-            "zh": "2023-ai-risk-statement 中文原版科普音频",
-            "en": "2023-ai-risk-statement original Chinese audio narration"
-          },
-          "language": "zh",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/2023-ai-risk-statement-zh-original-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "2023-ai-risk-statement-zh-original-v1.mp3"
-          }
-        },
-        {
-          "id": "asset-2023-ai-risk-statement-audio-en-v1",
-          "url": "https://media.sciencearena.cn/audio/ai-history/releases/2023-ai-risk-statement-en-v1.mp3",
-          "title": {
-            "zh": "2023-ai-risk-statement 英文科普音频",
-            "en": "2023-ai-risk-statement English audio narration"
-          },
-          "language": "en",
-          "contentType": "audio/mpeg",
-          "storage": {
-            "provider": "aliyun-oss",
-            "bucket": "zgca-medias",
-            "objectKey": "audio/ai-history/releases/2023-ai-risk-statement-en-v1.mp3",
-            "profileId": "ai-history-audio-releases",
-            "objectName": "2023-ai-risk-statement-en-v1.mp3"
-          }
-        }
-      ],
       "assetIds": [
-        "asset-dan-hendrycks-cais-portrait",
-        "asset-2023-ai-risk-statement-global-priority",
-        "asset-2023-ai-risk-statement-audio-zh-original-v1",
-        "asset-2023-ai-risk-statement-audio-en-v1"
+        "asset-humanistic-2014-superintelligence-verified-image"
       ]
     },
     "imageMeta": {
-      "resources/images/figures/authoritative/dan-hendrycks.webp": {
+      "resources/images/humanistic-cycle/humanistic-2014-superintelligence/verified-nick-bostrom.jpg": {
         "caption": {
-          "zh": "丹·亨德里克斯肖像",
-          "en": "Dan Hendrycks portrait"
+          "zh": "尼克·博斯特罗姆肖像",
+          "en": "Nick Bostrom"
         },
         "subcaption": {
-          "zh": "发布 AI 风险声明的 AI 安全中心主任。",
-          "en": "Director of the Center for AI Safety, which published the Statement on AI Risk."
+          "zh": "《超级智能》作者。",
+          "en": "Author of Superintelligence."
         },
         "sourceName": {
-          "zh": "AI 安全中心",
-          "en": "Center for AI Safety"
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
         },
-        "sourceUrl": "https://www.safe.ai/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prof_Nick_Bostrom_324-1.jpg",
         "license": {
-          "zh": "图片来自 AI 安全中心官网；页面未声明再分发许可，对外发布前需复核授权。",
-          "en": "Image from the Center for AI Safety official website; redistribution rights are not stated and must be reviewed before publication."
+          "zh": "CC BY 4.0",
+          "en": "CC BY 4.0"
         },
-        "sourceId": "source-cais-dan-hendrycks-profile",
+        "sourceId": "source-humanistic-2014-superintelligence-verified-image",
         "rights": {
-          "status": "external-reference",
+          "status": "cc-by-4-0",
           "license": {
-            "zh": "图片来自 AI 安全中心官网；页面未声明再分发许可，对外发布前需复核授权。",
-            "en": "Image from the Center for AI Safety official website; redistribution rights are not stated and must be reviewed before publication."
+            "zh": "CC BY 4.0",
+            "en": "CC BY 4.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线人物或历史资料展示。",
+            "en": "Used as a figure or historical reference in the AI humanities storyline."
           }
         },
         "role": "portrait",
         "type": "image",
         "figureIds": [
-          "dan-hendrycks"
+          "nick-bostrom"
         ]
-      },
-      "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg": {
-        "caption": {
-          "zh": "全球 AI 风险优先事项解释图",
-          "en": "Global AI-risk priority explainer"
-        },
-        "subcaption": {
-          "zh": "关于 2023 年公共风险声明的原创图",
-          "en": "Original diagram for the 2023 public-risk statement"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://www.safe.ai/work/statement-on-ai-risk",
-        "license": {
-          "zh": "原创重绘解释图；来源仅作参考链接。",
-          "en": "Original redrawn explainer; reference links only."
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        },
-        "sourceId": "source-official-statement-on-ai-risk",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg",
-        "figureIds": []
       }
     },
     "achievement": {
@@ -115375,144 +127068,89 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "en": "Center for AI Safety",
-            "zh": "AI 安全中心"
+            "zh": "作品/文献资料",
+            "en": "Work or text record"
           },
           "title": {
-            "en": "Statement on AI Risk",
-            "zh": "AI 风险声明"
+            "zh": "《超级智能：路径、危险与策略》",
+            "en": "Superintelligence: Paths, Dangers, Strategies"
           },
           "description": {
-            "en": "Official statement page used as the primary source for the 2023 risk node.",
-            "zh": "2023 年风险节点使用的官方声明页面。"
+            "zh": "打开作品或文献资料页面。",
+            "en": "Open the work or text record."
           },
-          "url": "https://www.safe.ai/work/statement-on-ai-risk",
-          "source": "Center for AI Safety",
+          "url": "https://global.oup.com/academic/product/superintelligence-9780198739838",
+          "source": "Superintelligence: Paths, Dangers, Strategies",
           "license": {
-            "en": "Reference link only; page text and signatory portraits are not reused.",
-            "zh": "仅作为参考链接；不复用页面文字或签署者肖像。"
+            "zh": "以来源页面说明为准。",
+            "en": "Follow the source page terms."
           },
           "usage": {
-            "en": "Primary statement source",
-            "zh": "原始声明来源"
+            "zh": "事件主要资料来源",
+            "en": "Primary record for this event"
           },
           "action": {
-            "en": "Open statement page",
-            "zh": "打开声明页面"
+            "zh": "打开资料页面",
+            "en": "Open source page"
           }
         }
       ],
       "sources": [
         {
-          "label": {
-            "en": "Official Statement on AI Risk",
-            "zh": "AI 风险声明官方页面"
-          },
+          "id": "source-humanistic-2014-superintelligence-record",
           "type": {
-            "en": "Official statement",
-            "zh": "官方声明"
+            "zh": "内部记录",
+            "en": "Internal record"
           },
-          "url": "https://www.safe.ai/work/statement-on-ai-risk"
+          "label": {
+            "zh": "《超级智能：路径、危险与策略》",
+            "en": "Superintelligence: Paths, Dangers, Strategies"
+          },
+          "url": "https://global.oup.com/academic/product/superintelligence-9780198739838",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
         },
         {
-          "label": {
-            "en": "Managing extreme AI risks",
-            "zh": "管理极端 AI 风险"
-          },
+          "id": "source-humanistic-2014-superintelligence-verified-image",
           "type": {
-            "en": "Research paper",
-            "zh": "研究论文"
+            "zh": "图片来源",
+            "en": "Image source"
           },
-          "url": "https://arxiv.org/abs/2310.17688"
-        },
-        {
           "label": {
-            "en": "Statement on AI Risk overview",
-            "zh": "AI 风险声明概览"
+            "zh": "尼克·博斯特罗姆肖像",
+            "en": "Nick Bostrom"
           },
-          "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/Statement_on_AI_Risk"
-        },
-        {
-          "label": {
-            "en": "Center for AI Safety",
-            "zh": "AI 安全中心"
-          },
-          "type": {
-            "en": "Institutional reference",
-            "zh": "机构参考"
-          },
-          "url": "https://www.safe.ai/"
+          "url": "https://commons.wikimedia.org/wiki/File:Prof_Nick_Bostrom_324-1.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
-        "source-cais-dan-hendrycks-profile",
-        "source-official-statement-on-ai-risk",
-        "source-managing-extreme-ai-risks",
-        "source-statement-on-ai-risk-overview",
-        "source-center-for-ai-safety"
+        "source-humanistic-2014-superintelligence-record",
+        "source-humanistic-2014-superintelligence-verified-image"
       ],
       "claimIds": [
-        "claim-branch-summary",
-        "claim-event-description"
+        "claim-humanistic-2014-superintelligence-core"
       ],
       "claims": [
         {
-          "id": "claim-branch-summary",
+          "id": "claim-humanistic-2014-superintelligence-core",
           "importance": "core",
           "text": {
-            "zh": "AI 风险关切被压缩成一则全球优先事项声明，并获得研究界与公共领域签署。",
-            "en": "AI-risk concern became a compact global-priority statement signed across research and public life."
+            "zh": "尼克·博斯特罗姆系统讨论机器智能超越人类后的发展路径、风险与治理问题，推动 AI 安全与对齐成为公共议题。",
+            "en": "Nick Bostrom examines paths, risks and governance after machine intelligence surpasses humans, helping move AI safety and alignment into public debate."
           },
           "sourceIds": [
-            "source-official-statement-on-ai-risk",
-            "source-managing-extreme-ai-risks"
+            "source-humanistic-2014-superintelligence-record"
           ],
-          "status": "needs-source"
-        },
-        {
-          "id": "claim-event-description",
-          "importance": "context",
-          "text": {
-            "zh": "AI 安全中心 2023 年发布的 AI 风险声明，把降低 AI 灭绝风险表述为全球优先事项。这个事件标志着公共情绪周期中的新高点：关于高级 AI 的担忧被压缩成一则简短的共识式声明。",
-            "en": "The Center for AI Safety's 2023 Statement on AI Risk framed mitigation of extinction risk from AI as a global priority. The event marks a new peak in the public emotional cycle: advanced-AI concern was compressed into a short consensus-style statement."
-          },
-          "sourceIds": [
-            "source-official-statement-on-ai-risk",
-            "source-managing-extreme-ai-risks"
-          ],
-          "status": "needs-source"
+          "status": "needs-review"
         }
       ],
       "emphasis": [
-        "batch-migration",
-        "source-review-needed"
-      ],
-      "area": {
-        "en": "Global AI-risk framing",
-        "zh": "全球 AI 风险框架"
-      },
-      "method": {
-        "en": "Consensus-style public statement",
-        "zh": "共识式公共声明"
-      },
-      "artifact": {
-        "en": "Statement on AI Risk",
-        "zh": "AI 风险声明"
-      },
-      "material": {
-        "en": "Official CAIS page and extreme-risk research",
-        "zh": "CAIS 官方页面与极端风险研究"
-      },
-      "demo": {
-        "en": "Old AI anxieties return as global-priority governance language",
-        "zh": "旧有 AI 焦虑以全球优先事项治理语言回归"
-      },
-      "demoImage": "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg",
-      "demoPanel": "sources"
+        "humanistic-cycle"
+      ]
     },
     "commentarySections": [
       {
@@ -115522,11 +127160,11 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "这份声明出现在 2023 年生成式 AI 与前沿模型讨论快速升温期间。它的重要性在于把极端 AI 风险变成一个简洁的公共命题，而不只是长篇专业论证。",
-          "en": "The statement appeared during the rapid public rise of generative AI and frontier-model debate in 2023. Its importance lies in making extreme AI risk a concise public proposition rather than a long specialist argument."
+          "zh": "尼克·博斯特罗姆系统讨论机器智能超越人类后的发展路径、风险与治理问题，推动 AI 安全与对齐成为公共议题。",
+          "en": "Nick Bostrom examines paths, risks and governance after machine intelligence surpasses humans, helping move AI safety and alignment into public debate."
         },
         "sourceIds": [
-          "source-official-statement-on-ai-risk"
+          "source-humanistic-2014-superintelligence-record"
         ]
       },
       {
@@ -115536,11 +127174,11 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "这里的情绪机制是优先级压缩：一组复杂的技术、社会与政治关切被凝缩成单一高风险框架。这种压缩让声明有力量，也让它充满争议。",
-          "en": "The emotional mechanism is priority compression: a complex set of technical, social and political concerns is condensed into a single high-stakes risk frame. That compression made the statement powerful, but also controversial."
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
         },
         "sourceIds": [
-          "source-official-statement-on-ai-risk"
+          "source-humanistic-2014-superintelligence-record"
         ]
       },
       {
@@ -115550,67 +127188,1321 @@ const milestones = [
           "en": "Long-Term Legacy"
         },
         "html": {
-          "zh": "专家通常把这份声明视为前沿 AI 安全话语的重要公共标记，即使他们对其框架存在分歧。它的遗产是把存在性风险、治理与技术安全放进同一公共讨论。",
-          "en": "Experts generally treat the statement as a major public marker of frontier-AI safety discourse, even when they disagree about its framing. Its legacy is to put existential risk, governance and technical safety into the same public conversation."
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
         },
         "sourceIds": [
-          "source-official-statement-on-ai-risk"
+          "source-humanistic-2014-superintelligence-record"
         ]
       }
     ],
-    "analysis": {
-      "what": {
-        "en": "A short statement made extreme AI risk a globally framed public priority.",
-        "zh": "一则短声明把极端 AI 风险变成全球优先事项。"
-      },
-      "how": {
-        "en": "The statement used concise moral framing and prominent signatories to make the concern legible beyond technical communities.",
-        "zh": "声明通过简洁的道德框架和知名签署者，让关切超出技术共同体而被理解。"
-      },
-      "why": {
-        "en": "It completes the branch's arc by showing old machine anxieties returning in twenty-first-century governance language.",
-        "zh": "它完成了这条分支的弧线：旧有机器焦虑以二十一世纪治理语言重新出现。"
-      }
-    },
+    "analysis": null,
     "quizzes": [],
     "archive": {
-      "eventFile": "archive/events/2023-ai-risk-statement/event.json",
-      "defaultPresentationFile": "archive/events/2023-ai-risk-statement/event.json",
+      "eventFile": "archive/events/humanistic-2014-superintelligence/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-2014-superintelligence/event.json",
       "presentationMode": "archive"
     },
-    "photos": [],
-    "quote": "",
-    "quoteMeta": {},
-    "quotePage": "",
-    "quoteAttribution": "",
-    "sentiment": "dread",
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Global-priority framing",
-          "zh": "全球优先事项框架"
-        },
-        "term": {
-          "en": "AI extinction risk",
-          "zh": "AI 灭绝风险"
-        },
-        "modernTerm": {
-          "en": "Frontier AI safety, governance and catastrophic-risk mitigation",
-          "zh": "前沿 AI 安全、治理与灾难性风险缓解"
-        }
-      }
-    ],
+    "sentiment": "wonder",
     "branchSummary": {
-      "zh": "AI 风险关切被压缩成一则全球优先事项声明，并获得研究界与公共领域签署。",
-      "en": "AI-risk concern became a compact global-priority statement signed across research and public life."
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
     },
-    "branch": {
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-2025-ai",
+    "archiveEventId": "humanistic-2025-ai",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
       "id": "humanistic-cycle",
       "name": {
-        "en": "Humanistic & Emotional Cycles of AI",
-        "zh": "AI 的人文与情绪周期"
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
       }
-    }
+    },
+    "order": 520,
+    "year": 2016,
+    "date": "2016—至今",
+    "title": {
+      "zh": "AI对齐问题",
+      "en": "The AI Alignment Problem"
+    },
+    "subtitle": {
+      "zh": "让 AI 的目标、行为与人类意图保持一致",
+      "en": "Keeping AI goals and behavior aligned with human intentions"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "国际 AI 安全与治理研究语境",
+        "en": "International AI safety and governance research context"
+      },
+      "country": {
+        "zh": "全球",
+        "en": "Global"
+      },
+      "regionId": "global",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>AI 对齐研究关注如何让系统在新环境和复杂任务中仍按人类意图行事，并处理目标误设、奖励投机、价值冲突和监督失效。 对齐不仅要求模型给出较少错误答案，还要求目标设定、训练反馈和部署约束能覆盖真实世界的多样情境。难点包括人类价值本身不一致、代理指标可能被钻空子、系统会遇到训练外环境，以及监督者可能无法判断高能力系统的全部行为。</p><p>进入平台化和生成式系统成为公共基础设施的阶段后，这些问题又获得现实的技术回声。作品与理论共同提醒我们，讨论 AI 不能只比较性能，还要追问谁设定目标、谁承担后果，以及人的判断和关系是否仍有位置。 对齐并非 2025 年突然出现的单一事件，而是从机器伦理、控制问题、强化学习安全和高级 AI 风险讨论中逐渐形成的研究领域。本条以 2025 年标记生成式 AI 大规模部署后，对可靠性、可控性和社会价值冲突的集中关注。</p><p> AI 安全专家通常把对齐视为连接技术可靠性、伦理与治理的长期问题，而不是靠一次模型更新即可解决的功能。该领域的影响已经扩展到红队测试、可解释性、人类反馈、系统评估和机构问责，但不同风险优先级与治理方案仍存在公开争论。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>AI alignment research asks how systems can continue to act according to human intentions in new environments and complex tasks, addressing misspecified objectives, reward gaming, value conflict and failed oversight. Alignment requires more than fewer incorrect answers; objectives, training feedback and deployment constraints must generalize across diverse real-world contexts. Difficulties include disagreement in human values, exploitable proxy metrics, out-of-distribution situations and supervisors who cannot fully evaluate highly capable systems.</p><p>As platforms and generative systems became public infrastructure, these questions gained a direct technological echo. Works and theories remind us that AI should not be judged by performance alone: we must ask who sets the goals, who bears the consequences, and whether human judgment and relationships still have a place. Alignment is not a single event that suddenly appeared in 2025; it developed from machine ethics, the control problem, safe reinforcement learning and discussions of advanced-AI risk. This entry uses 2025 to mark intensified concern about reliability, controllability and social value conflict after large-scale deployment of generative AI.</p><p> AI-safety experts generally treat alignment as a long-term problem connecting technical reliability, ethics and governance, not a feature solved by one model update. Its influence now spans red teaming, interpretability, human feedback, system evaluation and institutional accountability, while priorities and governance approaches remain openly contested. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "stuart-russell",
+        "name": {
+          "zh": "斯图尔特·罗素",
+          "en": "Stuart Russell"
+        },
+        "role": {
+          "zh": "AI 对齐研究者",
+          "en": "AI alignment researcher"
+        },
+        "avatar": "resources/images/humanistic-cycle/humanistic-2025-ai/stuart-russell-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "humanistic-figure-66",
+        "name": {
+          "zh": "AI 对齐研究共同体",
+          "en": "AI alignment research community"
+        },
+        "role": {
+          "zh": "相关研究者群体",
+          "en": "Related research community"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "team",
+        "organizationIds": [],
+        "primary": false
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-2025-ai/stuart-russell-portrait.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-2025-ai/stuart-russell-portrait.jpg": {
+          "caption": {
+            "zh": "斯图尔特·罗素肖像",
+            "en": "Stuart Russell portrait"
+          },
+          "subcaption": {
+            "zh": "AI 对齐与安全研究者。",
+            "en": "AI alignment and safety researcher."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stuart_Russell_01.jpg",
+          "license": {
+            "zh": "CC BY SA 4.0",
+            "en": "CC BY SA 4.0"
+          },
+          "sourceId": "source-humanistic-2025-ai-stuart-russell-portrait",
+          "rights": {
+            "status": "cc-by-sa-4.0",
+            "license": {
+              "zh": "CC BY SA 4.0",
+              "en": "CC BY SA 4.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "stuart-russell"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-2025-ai-stuart-russell-portrait"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-2025-ai/stuart-russell-portrait.jpg": {
+        "caption": {
+          "zh": "斯图尔特·罗素肖像",
+          "en": "Stuart Russell portrait"
+        },
+        "subcaption": {
+          "zh": "AI 对齐与安全研究者。",
+          "en": "AI alignment and safety researcher."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stuart_Russell_01.jpg",
+        "license": {
+          "zh": "CC BY SA 4.0",
+          "en": "CC BY SA 4.0"
+        },
+        "sourceId": "source-humanistic-2025-ai-stuart-russell-portrait",
+        "rights": {
+          "status": "cc-by-sa-4.0",
+          "license": {
+            "zh": "CC BY SA 4.0",
+            "en": "CC BY SA 4.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "stuart-russell"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "AI对齐问题",
+            "en": "The AI Alignment Problem"
+          },
+          "description": {
+            "zh": "让 AI 的目标、行为与人类意图保持一致",
+            "en": "Keeping AI goals and behavior aligned with human intentions"
+          },
+          "url": "https://www.google.com/search?q=AI%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98%20%E5%A4%9A%E4%BD%8D%E5%AD%A6%E8%80%85",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-2025-ai-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "AI对齐问题",
+            "en": "The AI Alignment Problem"
+          },
+          "url": "https://www.google.com/search?q=AI%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98%20%E5%A4%9A%E4%BD%8D%E5%AD%A6%E8%80%85",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-2025-ai-stuart-russell-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "斯图尔特·罗素肖像",
+            "en": "Stuart Russell portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Stuart_Russell_01.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-2025-ai-record",
+        "source-humanistic-2025-ai-stuart-russell-portrait"
+      ],
+      "claimIds": [
+        "claim-humanistic-2025-ai-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-2025-ai-core",
+          "importance": "core",
+          "text": {
+            "zh": "讨论如何确保AI目标与人类价值观一致；大语言模型幻觉使议题更紧迫。",
+            "en": "讨论如何确保AI目标与人类价值观一致；大语言模型幻觉使议题更紧迫。"
+          },
+          "sourceIds": [
+            "source-humanistic-2025-ai-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "对齐并非 2025 年突然出现的单一事件，而是从机器伦理、控制问题、强化学习安全和高级 AI 风险讨论中逐渐形成的研究领域。本条以 2025 年标记生成式 AI 大规模部署后，对可靠性、可控性和社会价值冲突的集中关注。",
+          "en": "Alignment is not a single event that suddenly appeared in 2025; it developed from machine ethics, the control problem, safe reinforcement learning and discussions of advanced-AI risk. This entry uses 2025 to mark intensified concern about reliability, controllability and social value conflict after large-scale deployment of generative AI."
+        },
+        "sourceIds": [
+          "source-humanistic-2025-ai-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "对齐不仅要求模型给出较少错误答案，还要求目标设定、训练反馈和部署约束能覆盖真实世界的多样情境。难点包括人类价值本身不一致、代理指标可能被钻空子、系统会遇到训练外环境，以及监督者可能无法判断高能力系统的全部行为。",
+          "en": "Alignment requires more than fewer incorrect answers; objectives, training feedback and deployment constraints must generalize across diverse real-world contexts. Difficulties include disagreement in human values, exploitable proxy metrics, out-of-distribution situations and supervisors who cannot fully evaluate highly capable systems."
+        },
+        "sourceIds": [
+          "source-humanistic-2025-ai-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "AI 安全专家通常把对齐视为连接技术可靠性、伦理与治理的长期问题，而不是靠一次模型更新即可解决的功能。该领域的影响已经扩展到红队测试、可解释性、人类反馈、系统评估和机构问责，但不同风险优先级与治理方案仍存在公开争论。",
+          "en": "AI-safety experts generally treat alignment as a long-term problem connecting technical reliability, ethics and governance, not a feature solved by one model update. Its influence now spans red teaming, interpretability, human feedback, system evaluation and institutional accountability, while priorities and governance approaches remain openly contested."
+        },
+        "sourceIds": [
+          "source-humanistic-2025-ai-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-2025-ai/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-2025-ai/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-2021-event",
+    "archiveEventId": "humanistic-2021-event",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 530,
+    "year": 2021,
+    "date": "2021",
+    "title": {
+      "zh": "《克拉拉与太阳》",
+      "en": "Klara and the Sun"
+    },
+    "subtitle": {
+      "zh": "人工朋友的观察、信念与照护",
+      "en": "Observation, belief and care through an Artificial Friend"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "英国文学出版语境",
+        "en": "United Kingdom literary publishing context"
+      },
+      "country": {
+        "zh": "英国",
+        "en": "United Kingdom"
+      },
+      "regionId": "united-kingdom",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>石黑一雄从人工朋友克拉拉的视角观察人类家庭，以有限理解、忠诚和照护讨论程序化情感是否因此失去真实性。 克拉拉擅长观察模式，却经常误解人的隐喻、秘密和矛盾动机；她仍能通过持续注意形成自己的信念与牺牲。小说因此不以智力测试判断她，而是通过照护关系追问爱是否必须来自与人类相同的身体和意识。</p><p>进入平台化和生成式系统成为公共基础设施的阶段后，这些问题又获得现实的技术回声。作品与理论共同提醒我们，讨论 AI 不能只比较性能，还要追问谁设定目标、谁承担后果，以及人的判断和关系是否仍有位置。 《克拉拉与太阳》出版于 2021 年，小说中的“人工朋友”被购买来陪伴儿童，而基因强化和教育竞争加剧了家庭焦虑。克拉拉从商店橱窗开始学习人类行为，并把太阳理解为能够赐予生命与康复的力量。</p><p> 文学评论者通常把本书视为石黑一雄延续记忆、服务与人格主题的重要作品，也是生成式 AI 普及前夕关于人工陪伴的细腻文本。它让 AI 伦理中的抽象问题落到家庭替代、儿童依恋、可抛弃产品和照护劳动上。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Kazuo Ishiguro observes a human family through the Artificial Friend Klara, using limited understanding, loyalty and care to ask whether programmed emotion is therefore unreal. Klara is skilled at pattern observation but often misunderstands metaphor, secrecy and conflicting motives; through sustained attention she nevertheless develops beliefs and sacrifice. The novel judges her not by an intelligence test but through care, asking whether love must arise from a human body and human consciousness.</p><p>As platforms and generative systems became public infrastructure, these questions gained a direct technological echo. Works and theories remind us that AI should not be judged by performance alone: we must ask who sets the goals, who bears the consequences, and whether human judgment and relationships still have a place. Klara and the Sun was published in 2021. Its Artificial Friends are purchased as companions for children, while genetic enhancement and educational competition intensify family anxiety. Klara learns human behavior from a shop window and understands the Sun as a source of life and healing.</p><p> Literary critics generally regard the novel as an important continuation of Ishiguro's themes of memory, service and personhood, and as a subtle text about artificial companionship just before generative AI became widespread. It grounds abstract AI ethics in family substitution, childhood attachment, disposable products and care work. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-63",
+        "name": {
+          "zh": "石黑一雄",
+          "en": "Kazuo Ishiguro"
+        },
+        "role": {
+          "zh": "《克拉拉与太阳》作者",
+          "en": "Author of Klara and the Sun"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-2021-event/klara-sun-logo.png"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-2021-event/klara-sun-logo.png": {
+          "caption": {
+            "zh": "《克拉拉与太阳》片名标识",
+            "en": "Klara and the Sun title reference"
+          },
+          "subcaption": {
+            "zh": "石黑一雄小说《克拉拉与太阳》的片名标识。",
+            "en": "Title reference for Kazuo Ishiguro's novel Klara and the Sun."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Klara_and_the_Sun_logo.png",
+          "license": {
+            "zh": "PUBLIC DOMAIN",
+            "en": "PUBLIC DOMAIN"
+          },
+          "sourceId": "source-humanistic-2021-event-klara-sun-logo",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "PUBLIC DOMAIN",
+              "en": "PUBLIC DOMAIN"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "title-reference",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-63"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-2021-event-klara-sun-logo"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-2021-event/klara-sun-logo.png": {
+        "caption": {
+          "zh": "《克拉拉与太阳》片名标识",
+          "en": "Klara and the Sun title reference"
+        },
+        "subcaption": {
+          "zh": "石黑一雄小说《克拉拉与太阳》的片名标识。",
+          "en": "Title reference for Kazuo Ishiguro's novel Klara and the Sun."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Klara_and_the_Sun_logo.png",
+        "license": {
+          "zh": "PUBLIC DOMAIN",
+          "en": "PUBLIC DOMAIN"
+        },
+        "sourceId": "source-humanistic-2021-event-klara-sun-logo",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "PUBLIC DOMAIN",
+            "en": "PUBLIC DOMAIN"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "title-reference",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-63"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "《克拉拉与太阳》",
+            "en": "Klara and the Sun"
+          },
+          "description": {
+            "zh": "人工朋友的观察、信念与照护",
+            "en": "Observation, belief and care through an Artificial Friend"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E5%85%8B%E6%8B%89%E6%8B%89%E4%B8%8E%E5%A4%AA%E9%98%B3%E3%80%8B%20%E7%9F%B3%E9%BB%91%E4%B8%80%E9%9B%84",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-2021-event-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《克拉拉与太阳》",
+            "en": "Klara and the Sun"
+          },
+          "url": "https://www.google.com/search?q=%E3%80%8A%E5%85%8B%E6%8B%89%E6%8B%89%E4%B8%8E%E5%A4%AA%E9%98%B3%E3%80%8B%20%E7%9F%B3%E9%BB%91%E4%B8%80%E9%9B%84",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-2021-event-klara-sun-logo",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "《克拉拉与太阳》片名标识",
+            "en": "Klara and the Sun title reference"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Klara_and_the_Sun_logo.png",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-2021-event-record",
+        "source-humanistic-2021-event-klara-sun-logo"
+      ],
+      "claimIds": [
+        "claim-humanistic-2021-event-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-2021-event-core",
+          "importance": "core",
+          "text": {
+            "zh": "太阳能机器人少女克拉拉陪伴病重女孩，追问程序化的爱是否因此不真实。",
+            "en": "太阳能机器人少女克拉拉陪伴病重女孩，追问程序化的爱是否因此不真实。"
+          },
+          "sourceIds": [
+            "source-humanistic-2021-event-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《克拉拉与太阳》出版于 2021 年，小说中的“人工朋友”被购买来陪伴儿童，而基因强化和教育竞争加剧了家庭焦虑。克拉拉从商店橱窗开始学习人类行为，并把太阳理解为能够赐予生命与康复的力量。",
+          "en": "Klara and the Sun was published in 2021. Its Artificial Friends are purchased as companions for children, while genetic enhancement and educational competition intensify family anxiety. Klara learns human behavior from a shop window and understands the Sun as a source of life and healing."
+        },
+        "sourceIds": [
+          "source-humanistic-2021-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "克拉拉擅长观察模式，却经常误解人的隐喻、秘密和矛盾动机；她仍能通过持续注意形成自己的信念与牺牲。小说因此不以智力测试判断她，而是通过照护关系追问爱是否必须来自与人类相同的身体和意识。",
+          "en": "Klara is skilled at pattern observation but often misunderstands metaphor, secrecy and conflicting motives; through sustained attention she nevertheless develops beliefs and sacrifice. The novel judges her not by an intelligence test but through care, asking whether love must arise from a human body and human consciousness."
+        },
+        "sourceIds": [
+          "source-humanistic-2021-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "文学评论者通常把本书视为石黑一雄延续记忆、服务与人格主题的重要作品，也是生成式 AI 普及前夕关于人工陪伴的细腻文本。它让 AI 伦理中的抽象问题落到家庭替代、儿童依恋、可抛弃产品和照护劳动上。",
+          "en": "Literary critics generally regard the novel as an important continuation of Ishiguro's themes of memory, service and personhood, and as a subtle text about artificial companionship just before generative AI became widespread. It grounds abstract AI ethics in family substitution, childhood attachment, disposable products and care work."
+        },
+        "sourceIds": [
+          "source-humanistic-2021-event-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-2021-event/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-2021-event/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-2022-reality-plus",
+    "archiveEventId": "humanistic-2022-reality-plus",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 540,
+    "year": 2022,
+    "date": "2022",
+    "title": {
+      "zh": "《现实+：虚拟世界与哲学问题》",
+      "en": "Reality+: Virtual Worlds and the Problems of Philosophy"
+    },
+    "subtitle": {
+      "zh": "哲学",
+      "en": "Philosophy"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "虚拟现实与意识哲学语境",
+        "en": "Virtual reality and philosophy of consciousness"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "zh": "<p>大卫·查尔默斯在《现实+：虚拟世界与哲学问题》中讨论虚拟现实、模拟世界和数字对象的本体论地位。他反对把虚拟空间简单叫作“假的”，因为虚拟物品、关系和活动同样可以影响人的经验、利益和责任；关键问题不是它们是否由代码构成，而是它们是否在一个稳定世界中发挥真实作用。</p><p>这套论证为 AI 生成环境、数字化身和在线社会提供了哲学工具。如果未来的智能系统能够持续生成可居住的环境，人们需要判断其中的承诺、伤害和不平等是否与物理世界同样重要，也要面对谁拥有这些世界、谁制定规则以及退出是否真正自由。</p><p>《现实+》的长期价值在于把虚拟世界从技术产品提升为伦理和政治空间。它并不证明我们生活在模拟中，而是要求人们在无法确定终极本体时，仍认真对待数字生活中的体验、制度和共同责任。</p>",
+      "en": "<p>In Reality+: Virtual Worlds and the Problems of Philosophy, David Chalmers examines the ontological status of virtual reality, simulated worlds and digital objects. He rejects calling virtual space simply fake because virtual goods, relationships and activities can affect experience, interests and responsibility. The question is not whether they are made of code, but whether they function as real parts of a stable world.</p><p>The argument offers tools for thinking about AI-generated environments, digital avatars and online societies. If intelligent systems can continuously generate inhabitable worlds, people must ask whether promises, harms and inequalities inside them matter as much as those in physical life, who owns these worlds, who sets their rules and whether exit is genuinely free.</p><p>Reality+ matters because it treats virtual worlds as ethical and political spaces rather than technical products. It does not prove that we live in a simulation; it asks us to take digital experience, institutions and shared responsibility seriously even when ultimate reality cannot be settled.</p>"
+    },
+    "figures": [
+      {
+        "id": "david-chalmers",
+        "name": {
+          "zh": "大卫·查尔默斯",
+          "en": "David Chalmers"
+        },
+        "role": {
+          "zh": "《现实+》作者",
+          "en": "Author of Reality+"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-2022-reality-plus/verified-david-chalmers.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-2022-reality-plus/verified-david-chalmers.jpg": {
+          "caption": {
+            "zh": "大卫·查尔默斯肖像",
+            "en": "David Chalmers"
+          },
+          "subcaption": {
+            "zh": "《现实+》作者。",
+            "en": "Author of Reality+."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_chalmers.jpg",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "sourceId": "source-humanistic-2022-reality-plus-verified-image",
+          "rights": {
+            "status": "cc-by-sa-4-0",
+            "license": {
+              "zh": "CC BY-SA 4.0",
+              "en": "CC BY-SA 4.0"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线人物或历史资料展示。",
+              "en": "Used as a figure or historical reference in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "david-chalmers"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-2022-reality-plus-verified-image"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-2022-reality-plus/verified-david-chalmers.jpg": {
+        "caption": {
+          "zh": "大卫·查尔默斯肖像",
+          "en": "David Chalmers"
+        },
+        "subcaption": {
+          "zh": "《现实+》作者。",
+          "en": "Author of Reality+."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_chalmers.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0",
+          "en": "CC BY-SA 4.0"
+        },
+        "sourceId": "source-humanistic-2022-reality-plus-verified-image",
+        "rights": {
+          "status": "cc-by-sa-4-0",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线人物或历史资料展示。",
+            "en": "Used as a figure or historical reference in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "david-chalmers"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "作品/文献资料",
+            "en": "Work or text record"
+          },
+          "title": {
+            "zh": "《现实+：虚拟世界与哲学问题》",
+            "en": "Reality+: Virtual Worlds and the Problems of Philosophy"
+          },
+          "description": {
+            "zh": "打开作品或文献资料页面。",
+            "en": "Open the work or text record."
+          },
+          "url": "https://wwnorton.com/books/9780393541859",
+          "source": "Reality+: Virtual Worlds and the Problems of Philosophy",
+          "license": {
+            "zh": "以来源页面说明为准。",
+            "en": "Follow the source page terms."
+          },
+          "usage": {
+            "zh": "事件主要资料来源",
+            "en": "Primary record for this event"
+          },
+          "action": {
+            "zh": "打开资料页面",
+            "en": "Open source page"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-2022-reality-plus-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "《现实+：虚拟世界与哲学问题》",
+            "en": "Reality+: Virtual Worlds and the Problems of Philosophy"
+          },
+          "url": "https://wwnorton.com/books/9780393541859",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-2022-reality-plus-verified-image",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "大卫·查尔默斯肖像",
+            "en": "David Chalmers"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:David_chalmers.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-2022-reality-plus-record",
+        "source-humanistic-2022-reality-plus-verified-image"
+      ],
+      "claimIds": [
+        "claim-humanistic-2022-reality-plus-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-2022-reality-plus-core",
+          "importance": "core",
+          "text": {
+            "zh": "大卫·查尔默斯系统讨论虚拟世界的本体论、价值与真实性，主张虚拟现实不只是“虚假现实”，并把模拟假说带入当代哲学主流。",
+            "en": "David Chalmers examines the ontology, value and reality of virtual worlds, arguing that virtual reality is not simply unreal and bringing simulation questions into mainstream philosophy."
+          },
+          "sourceIds": [
+            "source-humanistic-2022-reality-plus-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "humanistic-cycle"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "大卫·查尔默斯系统讨论虚拟世界的本体论、价值与真实性，主张虚拟现实不只是“虚假现实”，并把模拟假说带入当代哲学主流。",
+          "en": "David Chalmers examines the ontology, value and reality of virtual worlds, arguing that virtual reality is not simply unreal and bringing simulation questions into mainstream philosophy."
+        },
+        "sourceIds": [
+          "source-humanistic-2022-reality-plus-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-2022-reality-plus-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-2022-reality-plus-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-2022-reality-plus/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-2022-reality-plus/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  },
+  {
+    "id": "milestone-humanistic-cycle-humanistic-2025-iit-ai",
+    "archiveEventId": "humanistic-2025-iit-ai",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 550,
+    "year": 2004,
+    "date": "2004—至今",
+    "title": {
+      "zh": "整合信息理论（IIT）的AI应用",
+      "en": "IIT and Artificial Consciousness"
+    },
+    "subtitle": {
+      "zh": "用因果整合结构讨论人工系统意识",
+      "en": "Using integrated causal structure to discuss consciousness in artificial systems"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "威斯康星大学麦迪逊分校",
+        "en": "University of Wisconsin–Madison"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        43.0766,
+        -89.4125
+      ]
+    },
+    "description": {
+      "zh": "<p>整合信息理论从系统内部的因果结构与信息整合出发解释意识，并被用于讨论高性能 AI 是否必然具有主观体验。 IIT 认为意识对应系统不可还原的内在因果结构，常以 Φ 等形式量描述整合程度，但完整计算对复杂系统极其困难。按照该理论，一些表现强大的前馈系统可能缺少相应整合结构，因此外在能力不能直接证明其具有意识。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 朱利奥·托诺尼自 20 世纪 90 年代末起发展整合信息理论，之后与合作者持续修订其数学与哲学表述；本条以 2025 年作为持续讨论节点，而非单一新论文。随着大型神经网络行为能力提高，研究者更迫切地区分智能表现与意识体验。</p><p> 意识科学研究者通常把 IIT 视为少数试图给出形式化意识理论的主要方案之一，同时其可检验性、计算可行性和形而上承诺仍有强烈争议。它对 AI 的长期价值主要是提供明确的比较框架，而不是一张可以直接给现有模型颁发“意识证书”的量表。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Integrated Information Theory explains consciousness through a system's intrinsic causal structure and information integration, and is used to ask whether high-performing AI must have subjective experience. IIT identifies consciousness with irreducible intrinsic causal structure and uses quantities such as Φ to describe integration, although full calculation is extremely difficult for complex systems. On this view, some behaviorally powerful feed-forward systems may lack the relevant integration, so external capability alone cannot establish consciousness.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. Giulio Tononi has developed Integrated Information Theory since the late 1990s and continued revising its mathematical and philosophical formulation with collaborators; this entry uses 2025 as a marker of an ongoing debate rather than a single new paper. As large neural networks gain behavioral capability, distinguishing intelligence from conscious experience has become more urgent.</p><p> Consciousness researchers generally treat IIT as one of the major attempts at a formal theory of consciousness, while its testability, computational feasibility and metaphysical commitments remain strongly disputed. Its long-term value for AI is a clear comparative framework, not a meter that can simply certify current models as conscious. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "figures": [
+      {
+        "id": "humanistic-figure-65",
+        "name": {
+          "zh": "朱利奥·托诺尼",
+          "en": "Giulio Tononi"
+        },
+        "role": {
+          "zh": "整合信息理论主要提出者",
+          "en": "Principal originator of Integrated Information Theory"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/humanistic-2025-iit-ai/giulio-tononi-nih-portrait.jpg",
+        "resources/images/humanistic-cycle/humanistic-2025-iit-ai/iit-axioms-postulates.jpg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-2025-iit-ai/giulio-tononi-nih-portrait.jpg": {
+          "caption": {
+            "zh": "朱利奥·托诺尼肖像",
+            "en": "Giulio Tononi portrait"
+          },
+          "subcaption": {
+            "zh": "整合信息理论主要提出者。",
+            "en": "A principal originator of Integrated Information Theory."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons／美国国立卫生研究院",
+            "en": "Wikimedia Commons / National Institutes of Health"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giulio_Tononi_at_NIH_PioneerAwardg_2005.jpg",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "sourceId": "source-humanistic-2025-iit-ai-giulio-tononi-nih-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "Public domain",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线事件资料展示。",
+              "en": "Used for display in the AI humanities storyline."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-65"
+          ]
+        },
+        "resources/images/humanistic-cycle/humanistic-2025-iit-ai/iit-axioms-postulates.jpg": {
+          "caption": {
+            "zh": "整合信息理论的公理与假设",
+            "en": "Axioms and postulates of Integrated Information Theory"
+          },
+          "subcaption": {
+            "zh": "托诺尼与克里斯托夫·科赫论文中的 IIT 公理和假设图示。",
+            "en": "Diagram of IIT axioms and postulates from a paper by Tononi and Christof Koch."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Axioms_and_postulates_of_integrated_information_theory.jpg",
+          "license": {
+            "zh": "CC BY 4.0",
+            "en": "CC BY 4.0"
+          },
+          "sourceId": "source-humanistic-2025-iit-ai-axioms-postulates",
+          "rights": {
+            "status": "cc-by-4.0",
+            "license": {
+              "zh": "CC BY 4.0",
+              "en": "CC BY 4.0"
+            },
+            "usage": {
+              "zh": "作为 IIT 理论资料图展示，保留作者署名。",
+              "en": "Displayed as an IIT theory reference; retain author attribution."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-65"
+          ]
+        }
+      },
+      "assetIds": [
+        "asset-humanistic-2025-iit-ai-giulio-tononi-nih-portrait",
+        "asset-humanistic-2025-iit-ai-axioms-postulates"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-2025-iit-ai/giulio-tononi-nih-portrait.jpg": {
+        "caption": {
+          "zh": "朱利奥·托诺尼肖像",
+          "en": "Giulio Tononi portrait"
+        },
+        "subcaption": {
+          "zh": "整合信息理论主要提出者。",
+          "en": "A principal originator of Integrated Information Theory."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons／美国国立卫生研究院",
+          "en": "Wikimedia Commons / National Institutes of Health"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giulio_Tononi_at_NIH_PioneerAwardg_2005.jpg",
+        "license": {
+          "zh": "Public domain",
+          "en": "Public domain"
+        },
+        "sourceId": "source-humanistic-2025-iit-ai-giulio-tononi-nih-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线事件资料展示。",
+            "en": "Used for display in the AI humanities storyline."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-65"
+        ]
+      },
+      "resources/images/humanistic-cycle/humanistic-2025-iit-ai/iit-axioms-postulates.jpg": {
+        "caption": {
+          "zh": "整合信息理论的公理与假设",
+          "en": "Axioms and postulates of Integrated Information Theory"
+        },
+        "subcaption": {
+          "zh": "托诺尼与克里斯托夫·科赫论文中的 IIT 公理和假设图示。",
+          "en": "Diagram of IIT axioms and postulates from a paper by Tononi and Christof Koch."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Axioms_and_postulates_of_integrated_information_theory.jpg",
+        "license": {
+          "zh": "CC BY 4.0",
+          "en": "CC BY 4.0"
+        },
+        "sourceId": "source-humanistic-2025-iit-ai-axioms-postulates",
+        "rights": {
+          "status": "cc-by-4.0",
+          "license": {
+            "zh": "CC BY 4.0",
+            "en": "CC BY 4.0"
+          },
+          "usage": {
+            "zh": "作为 IIT 理论资料图展示，保留作者署名。",
+            "en": "Displayed as an IIT theory reference; retain author attribution."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-65"
+        ]
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "zh": "资料检索入口",
+            "en": "Research entry"
+          },
+          "title": {
+            "zh": "整合信息理论（IIT）的AI应用",
+            "en": "IIT and Artificial Consciousness"
+          },
+          "description": {
+            "zh": "用因果整合结构讨论人工系统意识",
+            "en": "Using integrated causal structure to discuss consciousness in artificial systems"
+          },
+          "url": "https://www.google.com/search?q=%E6%95%B4%E5%90%88%E4%BF%A1%E6%81%AF%E7%90%86%E8%AE%BA%EF%BC%88IIT%EF%BC%89%E7%9A%84AI%E5%BA%94%E7%94%A8%20%E6%9C%B1%E5%88%A9%E5%A5%A5%C2%B7%E6%89%98%E8%AF%BA%E5%B0%BC",
+          "source": "Research index",
+          "license": {
+            "zh": "来源与使用记录保留在后台。",
+            "en": "Source and usage records are retained in the archive."
+          },
+          "usage": {
+            "zh": "用于查阅该事件的补充资料。",
+            "en": "Used to consult supplementary material for this event."
+          },
+          "action": {
+            "zh": "打开资料入口",
+            "en": "Open reference entry"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-humanistic-2025-iit-ai-record",
+          "type": {
+            "zh": "内部记录",
+            "en": "Internal record"
+          },
+          "label": {
+            "zh": "整合信息理论（IIT）的AI应用",
+            "en": "IIT and Artificial Consciousness"
+          },
+          "url": "https://www.google.com/search?q=%E6%95%B4%E5%90%88%E4%BF%A1%E6%81%AF%E7%90%86%E8%AE%BA%EF%BC%88IIT%EF%BC%89%E7%9A%84AI%E5%BA%94%E7%94%A8%20%E6%9C%B1%E5%88%A9%E5%A5%A5%C2%B7%E6%89%98%E8%AF%BA%E5%B0%BC",
+          "purpose": "migration-only",
+          "reliability": "reference-only",
+          "sourceType": "internal-record"
+        },
+        {
+          "id": "source-humanistic-2025-iit-ai-giulio-tononi-nih-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Giulio Tononi at NIH Pioneer Award 2005",
+            "en": "Giulio Tononi at NIH Pioneer Award 2005"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Giulio_Tononi_at_NIH_PioneerAwardg_2005.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-humanistic-2025-iit-ai-axioms-postulates",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Axioms and postulates of integrated information theory",
+            "en": "Axioms and postulates of integrated information theory"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Axioms_and_postulates_of_integrated_information_theory.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-humanistic-2025-iit-ai-record",
+        "source-humanistic-2025-iit-ai-giulio-tononi-nih-portrait",
+        "source-humanistic-2025-iit-ai-axioms-postulates"
+      ],
+      "claimIds": [
+        "claim-humanistic-2025-iit-ai-core"
+      ],
+      "claims": [
+        {
+          "id": "claim-humanistic-2025-iit-ai-core",
+          "importance": "core",
+          "text": {
+            "zh": "以Φ值衡量系统整合信息能力，追问达标的AI是否具有意识。",
+            "en": "以Φ值衡量系统整合信息能力，追问达标的AI是否具有意识。"
+          },
+          "sourceIds": [
+            "source-humanistic-2025-iit-ai-record"
+          ],
+          "status": "needs-review"
+        }
+      ],
+      "emphasis": [
+        "needs-review"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "朱利奥·托诺尼自 20 世纪 90 年代末起发展整合信息理论，之后与合作者持续修订其数学与哲学表述；本条以 2025 年作为持续讨论节点，而非单一新论文。随着大型神经网络行为能力提高，研究者更迫切地区分智能表现与意识体验。",
+          "en": "Giulio Tononi has developed Integrated Information Theory since the late 1990s and continued revising its mathematical and philosophical formulation with collaborators; this entry uses 2025 as a marker of an ongoing debate rather than a single new paper. As large neural networks gain behavioral capability, distinguishing intelligence from conscious experience has become more urgent."
+        },
+        "sourceIds": [
+          "source-humanistic-2025-iit-ai-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "IIT 认为意识对应系统不可还原的内在因果结构，常以 Φ 等形式量描述整合程度，但完整计算对复杂系统极其困难。按照该理论，一些表现强大的前馈系统可能缺少相应整合结构，因此外在能力不能直接证明其具有意识。",
+          "en": "IIT identifies consciousness with irreducible intrinsic causal structure and uses quantities such as Φ to describe integration, although full calculation is extremely difficult for complex systems. On this view, some behaviorally powerful feed-forward systems may lack the relevant integration, so external capability alone cannot establish consciousness."
+        },
+        "sourceIds": [
+          "source-humanistic-2025-iit-ai-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "意识科学研究者通常把 IIT 视为少数试图给出形式化意识理论的主要方案之一，同时其可检验性、计算可行性和形而上承诺仍有强烈争议。它对 AI 的长期价值主要是提供明确的比较框架，而不是一张可以直接给现有模型颁发“意识证书”的量表。",
+          "en": "Consciousness researchers generally treat IIT as one of the major attempts at a formal theory of consciousness, while its testability, computational feasibility and metaphysical commitments remain strongly disputed. Its long-term value for AI is a clear comparative framework, not a meter that can simply certify current models as conscious."
+        },
+        "sourceIds": [
+          "source-humanistic-2025-iit-ai-record"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/humanistic-2025-iit-ai/event.json",
+      "defaultPresentationFile": "archive/events/humanistic-2025-iit-ai/event.json",
+      "presentationMode": "archive"
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
   }
 ];
 

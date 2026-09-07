@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-2004-event-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《我，机器人》（电影版）",
+      "en": "I, Robot (Film)"
+    },
+    "url": "https://www.google.com/search?q=%E3%80%8A%E6%88%91%EF%BC%8C%E6%9C%BA%E5%99%A8%E4%BA%BA%E3%80%8B%EF%BC%88%E7%94%B5%E5%BD%B1%E7%89%88%EF%BC%89%20%E9%98%BF%E5%8E%86%E5%85%8B%E6%96%AF%C2%B7%E6%99%AE%E7%BD%97%E4%BA%9A%E6%96%AF%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-2004-event-irobot-head",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《我，机器人》机器人头部资料",
+      "en": "I, Robot robot-head reference"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Irobot_head.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "与《我，机器人》相关的机器人头部资料图；文件页标注 CC BY-SA 3.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Robot-head reference related to I, Robot; the file page records CC BY-SA 3.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-2004-event-tmdb-images",
+    "type": "image-source",
+    "url": "https://www.themoviedb.org/movie/2048-i-robot/images",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《我，机器人》 TMDB 图片库",
+      "en": "I, Robot TMDB image gallery"
+    },
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "TMDB 图片库用于定位海报、影片场面与宣传视觉；每张图片的原始文件链接保留在对应资源记录中。",
+      "en": "The TMDB gallery is used to locate posters, film scenes and promotional visuals; each original file URL is retained in the corresponding asset record."
+    },
+    "purpose": "image-provenance"
+  }
+]

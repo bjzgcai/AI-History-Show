@@ -1,0 +1,171 @@
+{
+  "id": "darwin-among-machines-1863",
+  "year": 1863,
+  "date": "1863",
+  "title": {
+    "zh": "《机器中的达尔文》",
+    "en": "Darwin among the Machines"
+  },
+  "description": {
+    "zh": "巴特勒设想机器可能通过选择和复制逐步发展出自主性，首次以系统方式提出机器进化并取代人类的文化想象。",
+    "en": "Butler imagined machines developing autonomy through selection and reproduction, offering an early systematic cultural vision of machine evolution and possible replacement of humanity."
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国",
+      "en": "United Kingdom"
+    },
+    "place": {
+      "zh": "英国文学语境",
+      "en": "British literary context"
+    },
+    "coordinates": [
+      51.5074,
+      -0.1278
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "samuel-butler",
+      "role": {
+        "zh": "《机器中的达尔文》作者",
+        "en": "Author of Darwin among the Machines"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "新增人文事件草稿；人物、地区和图片资产需继续核验。",
+      "en": "New humanities event draft; figures, location and image assets require further review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《机器中的达尔文》",
+      "en": "Darwin among the Machines"
+    },
+    "displaySummary": {
+      "zh": "科幻、艺术与哲学中的人工生命想象",
+      "en": "Artificial-life imagination in fiction, art and philosophy"
+    },
+    "displayDescription": {
+      "zh": "<p>巴特勒设想机器可能通过选择和复制逐步发展出自主性，首次以系统方式提出机器进化并取代人类的文化想象。 本事件依据原始作品或权威书目资料，展示人工生命、机器意识、技术治理或人与机器关系的文化想象。</p><p>在早期神话、机械发明与现代文学逐渐交汇的阶段，非生命之物被赋予行动、语言和意志，既承载了人类对创造的惊奇，也投射出对越界和失控的担忧。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。</p><p>它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。 研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Butler imagined machines developing autonomy through selection and reproduction, offering an early systematic cultural vision of machine evolution and possible replacement of humanity. This event presents cultural imagination around artificial life, machine consciousness, technological governance or human–machine relations using primary texts or authoritative bibliographic records.</p><p>As myth, mechanical invention and modern literature began to converge, non-living things were given action, language and will. These images expressed wonder at creation while projecting anxieties about transgression and loss of control. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.</p><p>It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order. Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "档案来源",
+          "en": "Archive source"
+        },
+        "title": {
+          "zh": "《机器中的达尔文》公版文本",
+          "en": "Public-domain text: Darwin among the Machines"
+        },
+        "description": {
+          "zh": "作品或书目原始资料入口。",
+          "en": "Entry point to the primary work or bibliographic record."
+        },
+        "url": "https://www.gutenberg.org/ebooks/1906",
+        "source": "Public-domain text: Darwin among the Machines",
+        "license": {
+          "zh": "来源页面许可或馆藏条款以原站说明为准。",
+          "en": "Follow the source page or collection terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary source for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-darwin-among-machines-1863-samuel-butler-portrait"
+    ],
+    "sourceIds": [
+      "source-darwin-among-machines-1863-primary",
+      "source-darwin-among-machines-1863-samuel-butler-portrait"
+    ],
+    "claimIds": [
+      "claim-darwin-among-machines-1863-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "巴特勒设想机器可能通过选择和复制逐步发展出自主性，首次以系统方式提出机器进化并取代人类的文化想象。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+          "en": " Butler imagined machines developing autonomy through selection and reproduction, offering an early systematic cultural vision of machine evolution and possible replacement of humanity. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination."
+        },
+        "sourceIds": [
+          "source-darwin-among-machines-1863-primary"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+          "en": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order."
+        },
+        "sourceIds": [
+          "source-darwin-among-machines-1863-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+          "en": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance."
+        },
+        "sourceIds": [
+          "source-darwin-among-machines-1863-primary"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待补充人物、图片与quiz。",
+        "en": "Figures, images and quiz remain to be added."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

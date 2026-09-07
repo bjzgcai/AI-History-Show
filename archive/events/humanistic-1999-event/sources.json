@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-1999-event-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《黑客帝国》",
+      "en": "The Matrix"
+    },
+    "url": "https://www.google.com/search?q=%E3%80%8A%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD%E3%80%8B%20%E6%B2%83%E5%8D%93%E6%96%AF%E5%9F%BA%E5%A7%90%E5%A6%B9%2F%E5%85%84%E5%BC%9F",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-1999-event-wachowskis-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "沃卓斯基姐妹肖像",
+      "en": "The Wachowskis portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Wachowskis.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《黑客帝国》编剧与导演肖像；文件页标注 CC BY-SA 3.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Writers and directors of The Matrix; the file page records CC BY-SA 3.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1999-event-tmdb-images",
+    "type": "image-source",
+    "url": "https://www.themoviedb.org/movie/603-the-matrix/images",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《黑客帝国》 TMDB 图片库",
+      "en": "The Matrix TMDB image gallery"
+    },
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "TMDB 图片库用于定位海报、影片场面与宣传视觉；每张图片的原始文件链接保留在对应资源记录中。",
+      "en": "The TMDB gallery is used to locate posters, film scenes and promotional visuals; each original file URL is retained in the corresponding asset record."
+    },
+    "purpose": "image-provenance"
+  }
+]

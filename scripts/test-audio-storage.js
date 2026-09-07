@@ -30,10 +30,12 @@ function assertArchiveAudioUsage(root) {
     );
     assert.ok(audioProfile, 'default audio storage profile must exist');
     const selectedAudioIds = new Map();
+    const activeEventIds = new Set();
     for (const storylineFile of fs.readdirSync(storylinesRoot).filter((fileName) => fileName.endsWith('.json'))) {
         const storyline = JSON.parse(fs.readFileSync(path.join(storylinesRoot, storylineFile), 'utf8'));
         for (const ref of storyline.events || []) {
             if (!ref || ref.enabled === false) continue;
+            activeEventIds.add(ref.eventId);
             const eventRoot = path.join(eventsRoot, ref.eventId);
             const event = JSON.parse(fs.readFileSync(path.join(eventRoot, 'event.json'), 'utf8'));
             const assets = JSON.parse(fs.readFileSync(path.join(eventRoot, 'assets.json'), 'utf8'));
@@ -68,7 +70,7 @@ function assertArchiveAudioUsage(root) {
                 deliveryUrl.startsWith(audioProfile.publicUrlPrefix),
                 `${eventEntry.name}/${asset.id} must use the configured delivery endpoint instead of a local MP3 path`
             );
-            if ((asset.usage || []).includes('archive-only')) continue;
+            if ((asset.usage || []).includes('archive-only') || !activeEventIds.has(eventEntry.name)) continue;
             assert.ok(
                 selectedAudioIds.has(`${eventEntry.name}:${asset.id}`),
                 `${eventEntry.name}/${asset.id} must be selected by at least one effective presentation`

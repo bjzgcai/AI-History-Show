@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-2014-superintelligence-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《超级智能：路径、危险与策略》",
+      "en": "Superintelligence: Paths, Dangers, Strategies"
+    },
+    "url": "https://global.oup.com/academic/product/superintelligence-9780198739838",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "修订版清单对应的作品或思想资料；页面用于核对出版、作者与主题信息。",
+      "en": "Record corresponding to the revised list; used to verify publication, authorship and theme."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-2014-superintelligence-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "尼克·博斯特罗姆肖像",
+      "en": "Nick Bostrom"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Prof_Nick_Bostrom_324-1.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：CC BY 4.0。",
+      "en": "Wikimedia Commons file page identifies the subject; license: CC BY 4.0."
+    },
+    "purpose": "image-provenance"
+  }
+]

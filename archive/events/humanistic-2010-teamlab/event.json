@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-2010-teamlab",
+  "year": 2010,
+  "date": "2010至今",
+  "title": {
+    "zh": "teamLab数字艺术",
+    "en": "teamLab Digital Art"
+  },
+  "description": {
+    "zh": "teamLab 通过实时计算、投影、传感器和空间设计，让图像对观众行动作出反应，形成边界不断变化的沉浸式数字艺术。",
+    "en": "teamLab combines real-time computation, projection, sensors and spatial design so images respond to visitors and form immersive digital environments with shifting boundaries."
+  },
+  "location": {
+    "regionId": "japan",
+    "country": {
+      "zh": "日本",
+      "en": "Japan"
+    },
+    "place": {
+      "zh": "东京",
+      "en": "Tokyo"
+    },
+    "coordinates": [
+      35.6762,
+      139.6503
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-57",
+      "role": {
+        "zh": "teamLab 数字艺术创作团队",
+        "en": "teamLab digital-art collective"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "teamLab数字艺术",
+      "en": "teamLab Digital Art"
+    },
+    "displaySummary": {
+      "zh": "算法、空间与观众共同生成的沉浸艺术",
+      "en": "Immersive art co-produced by algorithms, space and visitors"
+    },
+    "displayDescription": {
+      "zh": "<p>teamLab 通过实时计算、投影、传感器和空间设计，让图像对观众行动作出反应，形成边界不断变化的沉浸式数字艺术。 作品中的花朵、水流、动物和书法并非固定播放的视频，而是由程序根据空间、时间和观众位置实时变化。观众不再只是观看完成品，而会通过移动身体改变作品，使作者、系统、环境与参与者共同构成体验。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 teamLab 于 2001 年在东京成立，由艺术家、程序员、工程师、动画师、数学家和建筑师等跨学科成员组成。2010 年前后，其大型数字装置开始获得更广泛的国际展览关注，后来发展出 Borderless 等常设沉浸空间。</p><p> 数字艺术研究者通常把 teamLab 视为把生成系统、互动装置和大众展览结合的代表团队。其影响也伴随批评：高沉浸与高传播性可能遮蔽算法机制、基础设施和观众数据如何参与作品。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>teamLab combines real-time computation, projection, sensors and spatial design so images respond to visitors and form immersive digital environments with shifting boundaries. Flowers, water, animals and calligraphy are not simply fixed videos; programs change them in real time according to space, time and visitor position. Visitors do not merely observe a finished object but alter it through movement, making authors, systems, environments and participants co-producers of experience.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. teamLab was founded in Tokyo in 2001 as an interdisciplinary collective of artists, programmers, engineers, animators, mathematicians, architects and others. Around 2010 its large digital installations gained wider international exhibition attention, later leading to permanent immersive venues such as Borderless.</p><p> Digital-art researchers generally regard teamLab as a leading collective joining generative systems, interactive installation and mass exhibition. Its influence also brings criticism: immersive, highly shareable experiences may obscure the algorithms, infrastructure and visitor data participating in the work. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "teamLab数字艺术",
+          "en": "teamLab Digital Art"
+        },
+        "description": {
+          "zh": "算法、空间与观众共同生成的沉浸艺术",
+          "en": "Immersive art co-produced by algorithms, space and visitors"
+        },
+        "url": "https://www.google.com/search?q=teamLab%E6%95%B0%E5%AD%97%E8%89%BA%E6%9C%AF%20%E6%97%A5%E6%9C%ACteamLab%E8%89%BA%E6%9C%AF%E5%9B%A2%E9%98%9F",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-2010-teamlab-teamlab-borderless"
+    ],
+    "sourceIds": [
+      "source-humanistic-2010-teamlab-record",
+      "source-humanistic-2010-teamlab-teamlab-borderless"
+    ],
+    "claimIds": [
+      "claim-humanistic-2010-teamlab-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "teamLab 于 2001 年在东京成立，由艺术家、程序员、工程师、动画师、数学家和建筑师等跨学科成员组成。2010 年前后，其大型数字装置开始获得更广泛的国际展览关注，后来发展出 Borderless 等常设沉浸空间。",
+          "en": "teamLab was founded in Tokyo in 2001 as an interdisciplinary collective of artists, programmers, engineers, animators, mathematicians, architects and others. Around 2010 its large digital installations gained wider international exhibition attention, later leading to permanent immersive venues such as Borderless."
+        },
+        "sourceIds": [
+          "source-humanistic-2010-teamlab-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品中的花朵、水流、动物和书法并非固定播放的视频，而是由程序根据空间、时间和观众位置实时变化。观众不再只是观看完成品，而会通过移动身体改变作品，使作者、系统、环境与参与者共同构成体验。",
+          "en": "Flowers, water, animals and calligraphy are not simply fixed videos; programs change them in real time according to space, time and visitor position. Visitors do not merely observe a finished object but alter it through movement, making authors, systems, environments and participants co-producers of experience."
+        },
+        "sourceIds": [
+          "source-humanistic-2010-teamlab-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "数字艺术研究者通常把 teamLab 视为把生成系统、互动装置和大众展览结合的代表团队。其影响也伴随批评：高沉浸与高传播性可能遮蔽算法机制、基础设施和观众数据如何参与作品。",
+          "en": "Digital-art researchers generally regard teamLab as a leading collective joining generative systems, interactive installation and mass exhibition. Its influence also brings criticism: immersive, highly shareable experiences may obscure the algorithms, infrastructure and visitor data participating in the work."
+        },
+        "sourceIds": [
+          "source-humanistic-2010-teamlab-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

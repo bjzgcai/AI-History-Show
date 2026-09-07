@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1967-event-am-talkfield",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1967-event/am-talkfield.jpg",
+    "role": "event-reference",
+    "caption": {
+      "zh": "AM 的“谈话场”界面资料",
+      "en": "AM talkfield reference"
+    },
+    "subcaption": {
+      "zh": "根据哈兰·埃利森小说改编的 1995 年互动作品界面。",
+      "en": "Interface from the 1995 interactive adaptation of Harlan Ellison's story."
+    },
+    "sourceId": "source-humanistic-1967-event-am-talkfield",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IHaveNoMouthAMTalkfield1.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "PUBLIC DOMAIN",
+        "en": "PUBLIC DOMAIN"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-22"
+    ]
+  }
+]

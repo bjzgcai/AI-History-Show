@@ -1,0 +1,182 @@
+[
+  {
+    "id": "source-perseus-argonautica-talos",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "Perseus 数字图书馆：《阿尔戈英雄纪》第四卷",
+      "en": "Perseus Digital Library: Argonautica, Book 4"
+    },
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0227:book=4",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "阿波罗尼奥斯·罗迪乌斯史诗的数字文本；塔洛斯与阿尔戈英雄相遇的主要古典来源。",
+      "en": "Digital text of Apollonius Rhodius's epic; the principal classical source for the Talos encounter with the Argonauts."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-apollodorus-library-talos",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "《书库》（Bibliotheca）相关神话记录",
+      "en": "Bibliotheca mythographic account"
+    },
+    "url": "https://www.theoi.com/Text/Apollodorus1.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "后世神话汇编的英文译本；用于交叉核对塔洛斯的神话谱系，不作为唯一主张依据。",
+      "en": "English translation of a later mythographic compilation; used to cross-check the Talos tradition, not as the sole support for a claim."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-britannica-talos",
+    "type": "encyclopedia-entry",
+    "label": {
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
+    },
+    "title": {
+      "zh": "《大英百科全书》：Talos",
+      "en": "Encyclopaedia Britannica: Talos"
+    },
+    "url": "https://www.britannica.com/topic/Talos-Greek-mythology",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "用于核对塔洛斯的神话身份、克里特岛守卫设定与后世概述。",
+      "en": "Used to verify Talos's mythic identity, Cretan guardian role and later summaries."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-talos-painter-krater-commons",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "塔洛斯画家红绘涡形克拉特",
+      "en": "Talos Painter red-figure volute krater"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Talos_Painter_-_ARV_1338_1_-_Dionysos_with_satyrs_and_maenads_-_death_of_Talos_-_Argonauts_and_gods_-_Ruvo_MANJ_36933_-_01.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "约公元前420—400年，阿提卡红绘陶器；画面表现塔洛斯之死。馆藏：意大利鲁沃 Museo Archeologico Nazionale Jatta，藏品号36933/1501。图片摄影 ArchaiOptix，CC BY-SA 4.0；博物馆对商业使用可能另有要求。",
+      "en": "Attic red-figure pottery, ca. 420–400 BCE, depicting the death of Talos. Collection: Museo Archeologico Nazionale Jatta, Ruvo, inv. 36933/1501. Photograph by ArchaiOptix, CC BY-SA 4.0; the museum may impose additional terms for commercial use."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-talos-local-explainer",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "塔洛斯自动体解释图",
+      "en": "Talos automaton explainer"
+    },
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0227:book=4",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "本项目原创 SVG，根据《阿尔戈英雄纪》文本重绘，不复制博物馆或出版方图形。",
+      "en": "Original SVG created by this project from the Argonautica account; it does not copy museum or publisher graphics."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-iliad-attribution-review",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "《伊利亚特》文本核查",
+      "en": "Iliad text check"
+    },
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0133",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核查《伊利亚特》文本中没有塔洛斯情节；正式提交前仍应由古典学资料再次复核。",
+      "en": "Used to check that the Iliad text does not contain the Talos episode; a classical-studies review is still required before publication."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-talos-painter-krater-detail-commons",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "塔洛斯画家红绘陶器细节图",
+      "en": "Talos Painter krater detail views"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Talos_Painter_-_ARV_1338_1_-_Dionysos_with_satyrs_and_maenads_-_death_of_Talos_-_Argonauts_and_gods_-_Ruvo_MANJ_36933_-_03.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "同一件 Jatta 博物馆藏红绘涡形克拉特的细节视图；图片页标注 CC BY-SA 4.0。",
+      "en": "Detail view of the same red-figure volute krater in the Jatta collection; the file page identifies CC BY-SA 4.0."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-talos-vase-overview-commons",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "鲁沃塔洛斯陶器概览图",
+      "en": "Talos vase at Ruvo overview"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Vase_de_Talos_%C3%A0_Ruvo_di_Puglia.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "鲁沃 di Puglia 的塔洛斯陶器概览照片；图片页标注 CC BY-SA 4.0。使用前需保留摄影者署名并核对博物馆条款。",
+      "en": "Overview photograph of a Talos vase in Ruvo di Puglia; the file page identifies CC BY-SA 4.0. Retain photographer attribution and check museum terms."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-talos-public-domain-book-scan",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "《The Theatre of the Greeks》图书扫描",
+      "en": "The Theatre of the Greeks book scan"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:The_Theatre_of_the_Greeks,_a_Treatise_on_the_History_and_Exhibition_of_the_Greek_Drama,_with_Various_Supplements.djvu",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "1860 年公有领域戏剧史图书扫描，可作为纸本资料视觉；不能作为塔洛斯古典文本的唯一证据。",
+      "en": "Public-domain scan of an 1860 history of Greek drama; suitable as a paper-source visual, but not as sole evidence for the classical Talos text."
+    },
+    "purpose": "background"
+  }
+]

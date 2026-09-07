@@ -3,6 +3,7 @@
     "revisionId": "humanistic-cycle-storyline-zh-original-v1-2026-08-09",
     "label": "人文循环故事线中文原版",
     "comparisonKind": "previous",
+    "storylineOrderPolicy": "frozen-revision",
     "outputRoot": "resources/audio/generated/remaining-storylines-original-v1/humanistic-cycle-storyline-zh-original-v1-2026-08-09",
     "turnsDir": "audio/revisions/humanistic-cycle-original/turns/zh",
     "voiceProfilePath": "audio/voices/zh-huopo-original.json",

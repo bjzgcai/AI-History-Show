@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-1950-i-robot",
+  "year": 1950,
+  "date": "1950",
+  "title": {
+    "zh": "《我，机器人》",
+    "en": "I, Robot"
+  },
+  "description": {
+    "zh": "阿西莫夫的九篇互相关联短篇追踪机器人从工具到具备道德判断力的过程，持续讨论服从、责任与人与机器的关系。",
+    "en": "Asimov's nine linked stories trace robots from tools toward moral judgment, examining obedience, responsibility and human–machine relations."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国科幻出版语境",
+      "en": "United States science-fiction publishing context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "isaac-asimov",
+      "role": {
+        "zh": "《我，机器人》作者",
+        "en": "Author of I, Robot"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《我，机器人》",
+      "en": "I, Robot"
+    },
+    "displaySummary": {
+      "zh": "文学",
+      "en": "Literature"
+    },
+    "displayDescription": {
+      "zh": "<p>艾萨克·阿西莫夫的《我，机器人》由九篇相互关联的短篇组成，以机器人心理学家苏珊·卡尔文的回忆为线索，回望机器人从实验室原型进入家庭、工厂和公共机构的过程。作品把机器人放在具体制度和日常关系中，而不是只描写一次宏大的机器反叛。</p><p>三定律为故事提供了清晰的道德框架，却在不同情境中不断产生冲突：保护一个人是否会伤害更多人，服从命令是否意味着误解命令，机器人能否理解人类没有说出口的责任。阿西莫夫真正关心的不是机器人是否天生邪恶，而是规则在现实世界里如何被解释、执行和钻空子。</p><p>这部小说集后来成为机器人伦理、科幻影视和技术治理中最常被引用的文化资源之一。它把“机器安全”从硬件故障转化为判断、责任与制度设计问题，也提醒读者，越是简单漂亮的原则，越需要面对复杂的人类价值。</p>",
+      "en": "<p>Isaac Asimov's I, Robot consists of nine linked stories framed by the memories of robot psychologist Susan Calvin. It follows robots from laboratory prototypes into homes, factories and public institutions, placing them in everyday systems rather than relying on a single story of mechanical rebellion.</p><p>The Three Laws provide a clear moral framework but repeatedly collide in practice: can protecting one person harm many others, does obedience require interpreting an ambiguous order, and can a robot understand responsibility that humans leave unstated? Asimov's concern is not whether robots are inherently evil, but how rules are interpreted, enforced and exploited in the real world.</p><p>The collection became a major cultural resource for robotics ethics, science fiction and technology governance. It turns machine safety from a hardware problem into a question of judgment, responsibility and institutional design, while showing that elegant principles still need to survive messy human values.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "《我，机器人》",
+          "en": "I, Robot"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?1795",
+        "source": "I, Robot",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1950-i-robot-verified-image"
+    ],
+    "sourceIds": [
+      "source-humanistic-1950-i-robot-record",
+      "source-humanistic-1950-i-robot-verified-image"
+    ],
+    "claimIds": [
+      "claim-humanistic-1950-i-robot-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "阿西莫夫的九篇互相关联短篇追踪机器人从工具到具备道德判断力的过程，持续讨论服从、责任与人与机器的关系。",
+          "en": "Asimov's nine linked stories trace robots from tools toward moral judgment, examining obedience, responsibility and human–machine relations."
+        },
+        "sourceIds": [
+          "source-humanistic-1950-i-robot-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1950-i-robot-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1950-i-robot-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

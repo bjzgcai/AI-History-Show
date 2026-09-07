@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1999-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "AI创造虚拟现实奴役人类，将缸中之脑问题转化为大众文化命题。",
+      "en": "AI创造虚拟现实奴役人类，将缸中之脑问题转化为大众文化命题。"
+    },
+    "sourceIds": [
+      "source-humanistic-1999-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

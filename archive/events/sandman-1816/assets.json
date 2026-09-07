@@ -1,0 +1,38 @@
+[
+  {
+    "id": "asset-sandman-1816-sandman-illustration-009",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/sandman-1816/sandman-illustration-009.jpg",
+    "role": "work-illustration",
+    "caption": {
+      "zh": "E.T.A. 霍夫曼《沙人》插图",
+      "en": "E.T.A. Hoffmann: Der Sandmann illustration 009"
+    },
+    "subcaption": {
+      "zh": "霍夫曼小说《沙人》的历史插图资料。",
+      "en": "Historical illustration reference for Hoffmann's The Sandman."
+    },
+    "sourceId": "source-sandman-1816-sandman-illustration-009",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:E.T.A._Hoffmann_-_Der_Sandmann_009.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "Public domain",
+        "en": "Public domain"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  }
+]

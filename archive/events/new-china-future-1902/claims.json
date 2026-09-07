@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-new-china-future-1902-core",
+    "importance": "core",
+    "text": {
+      "zh": "作品以未来中国为背景组织科技、教育与社会想象，是中国早期科幻和技术乌托邦叙事的重要节点。它与 AI 的关系主要体现在对技术塑造社会的想象，而非具体机器智能。",
+      "en": "Set in a future China, the work organizes visions of technology, education and society. Its relevance to AI lies mainly in imagining technology as a force shaping society, rather than in depicting machine intelligence itself."
+    },
+    "sourceIds": [
+      "source-new-china-future-1902-primary"
+    ],
+    "status": "needs-review"
+  }
+]

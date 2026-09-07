@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-multivac-1948-core",
+    "importance": "core",
+    "text": {
+      "zh": "MULTIVAC 作为管理复杂社会的超级计算机，推动科幻从“机器会不会醒来”转向“社会是否把决策交给计算系统”。",
+      "en": "MULTIVAC, a supercomputer managing complex societies, shifted science fiction from asking whether a machine would awaken to asking whether society should delegate decisions to computation."
+    },
+    "sourceIds": [
+      "source-multivac-1948-primary"
+    ],
+    "status": "needs-review"
+  }
+]
