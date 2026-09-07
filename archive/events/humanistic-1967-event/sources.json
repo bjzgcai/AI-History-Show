@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1967-event-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《无声狂啸》",
+      "en": "I Have No Mouth, and I Must Scream"
+    },
+    "url": "https://www.google.com/search?q=%E3%80%8A%E6%88%91%E6%B2%A1%E6%9C%89%E5%98%B4%EF%BC%8C%E6%88%91%E5%BF%85%E9%A1%BB%E5%B0%96%E5%8F%AB%E3%80%8B%20%E5%93%88%E5%85%B0%C2%B7%E5%9F%83%E5%88%A9%E6%A3%AE",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-1967-event-am-talkfield",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "AM 的“谈话场”界面资料",
+      "en": "AM talkfield reference"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:IHaveNoMouthAMTalkfield1.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "根据哈arlan·埃里森小说改编的互动作品界面资料；文件页标注公有领域。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Interface reference from the interactive adaptation of Harlan Ellison's story; the file page marks it public domain. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

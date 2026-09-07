@@ -203,10 +203,10 @@ function inspectArchive() {
             const assets = assetCache.get(entry.eventId);
             const variant = variantCache.get(variantKey);
             const assetIds = new Set(variant.assetIds || []);
+            const selectedAudioAssets = assets.filter((asset) => assetIds.has(asset.id) && asset.type === 'audio');
+            if (selectedAudioAssets.length === 0) continue;
             for (const locale of ['zh', 'en']) {
-                const audio = assets.find(
-                    (asset) => assetIds.has(asset.id) && asset.type === 'audio' && asset.language === locale
-                );
+                const audio = selectedAudioAssets.find((asset) => asset.language === locale);
                 if (!audio) {
                     missingAudio.push(`${storyline.id}/${entry.eventId}/${variantId}/${locale}`);
                     continue;

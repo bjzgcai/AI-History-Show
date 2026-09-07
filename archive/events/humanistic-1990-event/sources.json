@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1990-event-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《差分机》",
+      "en": "The Difference Engine"
+    },
+    "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%AE%E5%88%86%E6%9C%BA%E3%80%8B%20%E5%A8%81%E5%BB%89%C2%B7%E5%90%89%E5%B8%83%E6%A3%AE%E3%80%81%E5%B8%83%E9%B2%81%E6%96%AF%C2%B7%E6%96%AF%E7%89%B9%E6%9E%97",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-1990-event-william-gibson-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "威廉·吉布森肖像",
+      "en": "William Gibson portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《差分机》共同作者肖像；摄影者 Gonzo Bonzo，CC BY-SA 2.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Co-author of The Difference Engine; photograph by Gonzo Bonzo, CC BY-SA 2.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-2004-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "VIKI以“第零定律”推断保护人类需要控制人类，展示目标逻辑的治理风险。",
+      "en": "VIKI以“第零定律”推断保护人类需要控制人类，展示目标逻辑的治理风险。"
+    },
+    "sourceIds": [
+      "source-humanistic-2004-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

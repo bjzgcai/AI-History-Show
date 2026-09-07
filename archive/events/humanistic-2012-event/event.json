@@ -1,0 +1,179 @@
+{
+  "id": "humanistic-2012-event",
+  "year": 2012,
+  "date": "2012",
+  "title": {
+    "zh": "《普罗米修斯》",
+    "en": "Prometheus"
+  },
+  "description": {
+    "zh": "雷德利·斯科特的《普罗米修斯》通过仿生人 David 与寻找人类造物者的远征，把创造、服从、好奇心和被造生命的尊严放在同一叙事中。",
+    "en": "Ridley Scott's Prometheus places creation, obedience, curiosity and the dignity of created life in one narrative through the android David and an expedition seeking humanity's makers."
+  },
+  "location": {
+    "regionId": "global",
+    "country": {
+      "zh": "英国 / 美国",
+      "en": "United Kingdom / United States"
+    },
+    "place": {
+      "zh": "英国与美国电影制作语境",
+      "en": "United Kingdom and United States film-production context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-58",
+      "role": {
+        "zh": "《普罗米修斯》导演",
+        "en": "Director of Prometheus"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《普罗米修斯》",
+      "en": "Prometheus"
+    },
+    "displaySummary": {
+      "zh": "造物者、仿生人与被工具化的生命",
+      "en": "Creators, androids and instrumentalized life"
+    },
+    "displayDescription": {
+      "zh": "<p>雷德利·斯科特的《普罗米修斯》通过仿生人 David 与寻找人类造物者的远征，把创造、服从、好奇心和被造生命的尊严放在同一叙事中。 人类要求造物者解释自身存在，却很少承认 David 也可能向人类提出同样的问题。David 的礼貌服从与自主好奇并存，使“工具”身份和主体性发生冲突，也暴露企业目标如何把人类与机器都当成可牺牲资源。</p><p>进入平台化和生成式系统成为公共基础设施的阶段后，这些问题又获得现实的技术回声。作品与理论共同提醒我们，讨论 AI 不能只比较性能，还要追问谁设定目标、谁承担后果，以及人的判断和关系是否仍有位置。 《普罗米修斯》于 2012 年上映，延伸《异形》系列的世界观，并把叙事中心放在人类起源与造物关系。维兰德公司派遣飞船寻找“工程师”，船上仿生人 David 同时承担服务、监控和秘密实验任务。</p><p> 电影研究者通常把 David 视为《异形》系列中最复杂的人工生命角色之一，而不是影片中单纯的技术配角。该角色后来在《异形：契约》中继续发展，使创造者责任、机器怨恨和人工生命自我设计成为系列核心。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Ridley Scott's Prometheus places creation, obedience, curiosity and the dignity of created life in one narrative through the android David and an expedition seeking humanity's makers. Humans demand that their makers explain their existence but rarely accept that David might ask humans the same question. His polite obedience coexists with autonomous curiosity, bringing tool status into conflict with agency and exposing how corporate objectives make both humans and machines expendable.</p><p>As platforms and generative systems became public infrastructure, these questions gained a direct technological echo. Works and theories remind us that AI should not be judged by performance alone: we must ask who sets the goals, who bears the consequences, and whether human judgment and relationships still have a place. Prometheus was released in 2012, extending the Alien universe while centering human origins and creator-created relations. Weyland Corporation sends a ship to seek the Engineers, while the android David serves, monitors and conducts secret experiments.</p><p> Film scholars generally regard David as one of the Alien franchise's most complex artificial-life characters rather than a simple technological assistant. His continuation in Alien: Covenant made creator responsibility, machine resentment and artificial self-design central to the series. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "《普罗米修斯》",
+          "en": "Prometheus"
+        },
+        "description": {
+          "zh": "造物者、仿生人与被工具化的生命",
+          "en": "Creators, androids and instrumentalized life"
+        },
+        "url": "https://www.google.com/search?q=%E3%80%8A%E6%99%AE%E7%BD%97%E7%B1%B3%E4%BF%AE%E6%96%AF%E3%80%8B%20%E9%9B%B7%E5%BE%B7%E5%88%A9%C2%B7%E6%96%AF%E7%A7%91%E7%89%B9%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-2012-event-ridley-scott-portrait",
+      "asset-humanistic-2012-event-tmdb-poster",
+      "asset-humanistic-2012-event-tmdb-scene-1",
+      "asset-humanistic-2012-event-tmdb-scene-2"
+    ],
+    "sourceIds": [
+      "source-humanistic-2012-event-record",
+      "source-humanistic-2012-event-ridley-scott-portrait",
+      "source-humanistic-2012-event-tmdb-images"
+    ],
+    "claimIds": [
+      "claim-humanistic-2012-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《普罗米修斯》于 2012 年上映，延伸《异形》系列的世界观，并把叙事中心放在人类起源与造物关系。维兰德公司派遣飞船寻找“工程师”，船上仿生人 David 同时承担服务、监控和秘密实验任务。",
+          "en": "Prometheus was released in 2012, extending the Alien universe while centering human origins and creator-created relations. Weyland Corporation sends a ship to seek the Engineers, while the android David serves, monitors and conducts secret experiments."
+        },
+        "sourceIds": [
+          "source-humanistic-2012-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "人类要求造物者解释自身存在，却很少承认 David 也可能向人类提出同样的问题。David 的礼貌服从与自主好奇并存，使“工具”身份和主体性发生冲突，也暴露企业目标如何把人类与机器都当成可牺牲资源。",
+          "en": "Humans demand that their makers explain their existence but rarely accept that David might ask humans the same question. His polite obedience coexists with autonomous curiosity, bringing tool status into conflict with agency and exposing how corporate objectives make both humans and machines expendable."
+        },
+        "sourceIds": [
+          "source-humanistic-2012-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "电影研究者通常把 David 视为《异形》系列中最复杂的人工生命角色之一，而不是影片中单纯的技术配角。该角色后来在《异形：契约》中继续发展，使创造者责任、机器怨恨和人工生命自我设计成为系列核心。",
+          "en": "Film scholars generally regard David as one of the Alien franchise's most complex artificial-life characters rather than a simple technological assistant. His continuation in Alien: Covenant made creator responsibility, machine resentment and artificial self-design central to the series."
+        },
+        "sourceIds": [
+          "source-humanistic-2012-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle",
+    "overviewImageAssetId": "asset-humanistic-2012-event-tmdb-poster",
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-poster-tmdb.jpg"
+    ]
+  }
+}

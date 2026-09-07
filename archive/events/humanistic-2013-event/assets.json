@@ -1,0 +1,225 @@
+[
+  {
+    "id": "asset-humanistic-2013-event-her-premiere-nyff-2013",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2013-event/her-premiere-nyff-2013.jpg",
+    "role": "event-reference",
+    "caption": {
+      "zh": "《她》纽约电影节首映合影",
+      "en": "Her premiere at the New York Film Festival"
+    },
+    "subcaption": {
+      "zh": "2013 年纽约电影节；照片中包括导演斯派克·琼兹与主要演员。",
+      "en": "2013 New York Film Festival; Spike Jonze and principal cast members are pictured."
+    },
+    "sourceId": "source-her-premiere-nyff-commons",
+    "sourceName": {
+      "zh": "Wikimedia Commons／aphrodite-in-nyc",
+      "en": "Wikimedia Commons / aphrodite-in-nyc"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Her_Premiere_NYFF_2013.jpg",
+    "rights": {
+      "status": "cc-by-2.0",
+      "license": {
+        "zh": "CC BY 2.0；需署名摄影者 aphrodite-in-nyc。",
+        "en": "CC BY 2.0; attribution to photographer aphrodite-in-nyc is required."
+      },
+      "usage": {
+        "zh": "用于《她》事件的首映历史资料展示。",
+        "en": "Used as historical premiere context for the Her event."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-59"
+    ]
+  },
+  {
+    "id": "asset-humanistic-2013-event-spike-jonze-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2013-event/spike-jonze-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "斯派克·琼兹肖像",
+      "en": "Spike Jonze portrait"
+    },
+    "subcaption": {
+      "zh": "《她》导演。",
+      "en": "Director of Her."
+    },
+    "sourceId": "source-spike-jonze-commons-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spike_Jonze.jpg",
+    "rights": {
+      "status": "cc-by-sa-3.0",
+      "license": {
+        "zh": "CC BY-SA 3.0；需署名并以相同方式共享。",
+        "en": "CC BY-SA 3.0; attribution and share-alike are required."
+      },
+      "usage": {
+        "zh": "用于《她》导演人物资料展示。",
+        "en": "Used for the biographical display of Her director Spike Jonze."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "figure-avatar:humanistic-figure-59"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-59"
+    ]
+  },
+  {
+    "id": "asset-humanistic-2013-event-her-logo",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2013-event/spike-jonze-her.jpg",
+    "role": "title-reference",
+    "caption": {
+      "zh": "《她》片名标识",
+      "en": "Her title logo"
+    },
+    "subcaption": {
+      "zh": "2013 年电影《她》的片名标识。",
+      "en": "Title mark for the 2013 film Her."
+    },
+    "sourceId": "source-her-logo-commons",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spike_Jonze_-_Her.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "Wikimedia Commons 文件页标注为公有领域。",
+        "en": "Marked public domain on the Wikimedia Commons file page."
+      },
+      "usage": {
+        "zh": "仅作片名标识资料，不作为人物肖像或电影剧照。",
+        "en": "Used only as a title reference, not as a portrait or film still."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false
+  },
+  {
+    "id": "asset-humanistic-2013-event-tmdb-poster",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2013-event/her-poster-tmdb.jpg",
+    "role": "movie-poster",
+    "caption": {
+      "zh": "《她》电影海报",
+      "en": "Her film poster"
+    },
+    "subcaption": {
+      "zh": "2013 年电影《她》的中文发行海报。",
+      "en": "Chinese release poster for the 2013 film Her."
+    },
+    "sourceId": "source-humanistic-2013-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/zFTiJLKXGKaS0IvHLcjQOCN0zxZ.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/152601-her/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-2013-event-tmdb-scene-1",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2013-event/her-scene-1-tmdb.jpg",
+    "role": "film-still",
+    "caption": {
+      "zh": "西奥多在城市公寓",
+      "en": "Theodore in his city apartment"
+    },
+    "subcaption": {
+      "zh": "西奥多站在公寓落地窗前望向城市的电影场景。",
+      "en": "Film scene showing Theodore looking over the city from his apartment."
+    },
+    "sourceId": "source-humanistic-2013-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/1YnZchmaGc8dchgRPDpR1KGrixA.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/152601-her/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-2013-event-tmdb-scene-2",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2013-event/her-scene-2-tmdb.jpg",
+    "role": "promotional-still",
+    "caption": {
+      "zh": "西奥多角色视觉",
+      "en": "Theodore character visual"
+    },
+    "subcaption": {
+      "zh": "红色背景下西奥多的影片角色视觉资料。",
+      "en": "Film character visual of Theodore against the film's characteristic red background."
+    },
+    "sourceId": "source-humanistic-2013-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/sPPsR9f4K0movWVQ99u4uMqFzEL.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/152601-her/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  }
+]

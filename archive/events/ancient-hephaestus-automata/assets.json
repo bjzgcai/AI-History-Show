@@ -1,0 +1,38 @@
+[
+  {
+    "id": "asset-ancient-hephaestus-automata-verified-image",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/ancient-hephaestus-automata/verified-hephaestus-automata.jpg",
+    "role": "artifact-reference",
+    "caption": {
+      "zh": "赫菲斯托斯自动机械相关历史图",
+      "en": "hephaestus-automata"
+    },
+    "subcaption": {
+      "zh": "与古希腊自动机械想象相关的历史资料图。",
+      "en": "Historical reference image related to ancient Greek automata."
+    },
+    "sourceId": "source-ancient-hephaestus-automata-verified-image",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/",
+    "rights": {
+      "status": "see-original-source-record",
+      "license": {
+        "zh": "See original source record",
+        "en": "See original source record"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线人物或历史资料展示。",
+        "en": "Used as a figure or historical reference in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  }
+]

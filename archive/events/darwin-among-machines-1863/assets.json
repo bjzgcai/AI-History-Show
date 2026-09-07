@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-darwin-among-machines-1863-samuel-butler-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/darwin-among-machines-1863/samuel-butler-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "查尔斯·戈金所绘塞缪尔·巴特勒肖像",
+      "en": "Samuel Butler portrait by Charles Gogin"
+    },
+    "subcaption": {
+      "zh": "《机器中的达尔文》作者。",
+      "en": "Author of Darwin among the Machines."
+    },
+    "sourceId": "source-darwin-among-machines-1863-samuel-butler-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samuel_Butler_by_Charles_Gogin.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "Public domain",
+        "en": "Public domain"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "samuel-butler"
+    ]
+  }
+]

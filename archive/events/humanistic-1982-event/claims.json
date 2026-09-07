@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1982-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "仿生人追求延长寿命，模糊人与机器边界并定义赛博朋克美学。",
+      "en": "仿生人追求延长寿命，模糊人与机器边界并定义赛博朋克美学。"
+    },
+    "sourceIds": [
+      "source-humanistic-1982-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

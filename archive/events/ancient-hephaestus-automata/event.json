@@ -1,0 +1,171 @@
+{
+  "id": "ancient-hephaestus-automata",
+  "year": -800,
+  "date": "约公元前8世纪",
+  "title": {
+    "zh": "《伊利亚特》中的赫菲斯托斯自动机械",
+    "en": "Hephaestus Automata in The Iliad"
+  },
+  "description": {
+    "zh": "《伊利亚特》描写火神赫菲斯托斯制造能够自行行动的金制侍女和自动三足鼎，展现古希腊文学对非生命之物拥有行动能力的早期想象。",
+    "en": "The Iliad describes Hephaestus making self-moving golden attendants and tripods, an early Greek literary imagination of non-living things with agency."
+  },
+  "location": {
+    "regionId": "greece",
+    "country": {
+      "zh": "希腊",
+      "en": "Greece"
+    },
+    "place": {
+      "zh": "古希腊史诗传统",
+      "en": "Ancient Greek epic tradition"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "homer",
+      "role": {
+        "zh": "《伊利亚特》作者传统",
+        "en": "Authorial tradition of The Iliad"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《伊利亚特》中的赫菲斯托斯自动机械",
+      "en": "Hephaestus Automata in The Iliad"
+    },
+    "displaySummary": {
+      "zh": "文学",
+      "en": "Literature"
+    },
+    "displayDescription": {
+      "zh": "<p>《伊利亚特》写到火神赫菲斯托斯打造金制侍女与能够自行行动的三足鼎。它们不是现代意义上的机器人，却已经把“由工匠制造、能够独立行动的非生命之物”写进了西方文学传统，使自动性第一次与神的技艺、宫殿秩序和战争世界并置。</p><p>在这段神话里，自动机械既是工具，也是能力的证明：它们替主人搬运、服务和执行命令，却又被描述为拥有行动倾向。这样的双重性构成了后来人工生命叙事的基本张力——人类希望制造可靠的助手，同时又担心被制造之物拥有超出预期的能力。</p><p>研究者通常把赫菲斯托斯的自动机械视为 AI 人文史的早期文化参照，而不是现代技术的直接预言。它留下的关键问题是：当行动能力可以被制造，创造者是否也必须为被造物的用途、边界和后果承担责任。</p>",
+      "en": "<p>The Iliad describes Hephaestus making golden attendants and tripods able to move on their own. They are not robots in the modern sense, yet they place a manufactured, autonomous non-human object inside the Western literary tradition, linking automatic action with divine craft, palace order and war.</p><p>In the myth, the automata are both tools and demonstrations of power. They serve their maker and follow commands, but they are also described as possessing their own movement. That duality establishes a lasting tension in artificial-life stories: people want dependable helpers while fearing abilities that exceed the creator's intentions.</p><p>Researchers generally treat the Hephaestus automata as an early cultural reference in AI humanities rather than a direct prediction of modern technology. Their enduring question is whether a creator must also answer for the uses, limits and consequences of what has been made capable of acting.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "《伊利亚特》中的赫菲斯托斯自动机械",
+          "en": "Hephaestus Automata in The Iliad"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://www.perseus.tufts.edu/hopper/text?doc=Hom.+Il.+18.136",
+        "source": "Hephaestus Automata in The Iliad",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-ancient-hephaestus-automata-verified-image"
+    ],
+    "sourceIds": [
+      "source-ancient-hephaestus-automata-record",
+      "source-ancient-hephaestus-automata-verified-image"
+    ],
+    "claimIds": [
+      "claim-ancient-hephaestus-automata-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《伊利亚特》描写火神赫菲斯托斯制造能够自行行动的金制侍女和自动三足鼎，展现古希腊文学对非生命之物拥有行动能力的早期想象。",
+          "en": "The Iliad describes Hephaestus making self-moving golden attendants and tripods, an early Greek literary imagination of non-living things with agency."
+        },
+        "sourceIds": [
+          "source-ancient-hephaestus-automata-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-ancient-hephaestus-automata-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-ancient-hephaestus-automata-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

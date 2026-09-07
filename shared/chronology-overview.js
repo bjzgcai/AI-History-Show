@@ -78,8 +78,32 @@
 
     function getSortYear(milestone) {
         const value = milestone && milestone.year != null ? milestone.year : milestone;
-        const match = String(value || '').match(/\d{3,4}/);
+        if (Number.isFinite(Number(value))) return Number(value);
+        const match = String(value || '').match(/-?\d{1,4}/);
         return match ? Number(match[0]) : Number.NaN;
+    }
+
+    // Keep signed numeric years for chronology math, but use readable era labels in the UI.
+    function formatDisplayYear(value, locale = 'zh') {
+        if (value == null || value === '') return '';
+        const numeric = Number(value);
+        if (!Number.isFinite(numeric)) return String(value);
+        if (numeric < 0) {
+            const year = Math.abs(Math.trunc(numeric));
+            return locale === 'en' ? `${year} BCE` : `公元前${year}`;
+        }
+        return String(value);
+    }
+
+    function formatDisplayYearMarkup(value, locale = 'zh') {
+        const text = formatDisplayYear(value, locale);
+        const numeric = Number(value);
+        if (!Number.isFinite(numeric) || numeric >= 0) return escapeHtml(text);
+        const prefix = locale === 'en' ? 'BCE' : '公元前';
+        const year = Math.abs(Math.trunc(numeric));
+        return locale === 'en'
+            ? `${year} <span class="year-era-prefix">${escapeHtml(prefix)}</span>`
+            : `<span class="year-era-prefix">${escapeHtml(prefix)}</span>${year}`;
     }
 
     function getStorylineId(milestone) {
@@ -779,7 +803,7 @@
                             : ''
                     }
                     <span class="chrono-card-copy">
-                        <span class="chrono-card-year">${escapeHtml(milestone.year)}</span>
+                        <span class="chrono-card-year">${formatDisplayYearMarkup(milestone.year, config.locale)}</span>
                         <span class="chrono-card-title">${escapeHtml(title)}</span>
                         <span class="chrono-card-meta">${escapeHtml(location || membershipNames || summary.name)}</span>
                     </span>
@@ -871,7 +895,7 @@
                                             ${
                                                 filter.id === 'all'
                                                     ? `<span>${filter.count}</span>`
-                                                    : `<span>${filter.minYear}${filter.maxYear && filter.maxYear !== filter.minYear ? `–${filter.maxYear}` : ''}</span><span>${filter.count}</span>`
+                                                    : `<span>${formatDisplayYearMarkup(filter.minYear, config.locale)}${filter.maxYear && filter.maxYear !== filter.minYear ? `–${formatDisplayYearMarkup(filter.maxYear, config.locale)}` : ''}</span><span>${filter.count}</span>`
                                             }
                                         </span>
                                     </span>
@@ -890,7 +914,7 @@
                                 <div class="chrono-inner" style="width:${layout.width}px;height:${layout.height}px;--chrono-card-width:${layout.cardWidth}px;--chrono-card-height:${layout.cardHeight}px">
                                     <svg class="chrono-axis" width="${layout.width}" height="${layout.height}" viewBox="0 0 ${layout.width} ${layout.height}" aria-hidden="true">${renderSvg(layout, summaryById)}</svg>
                                     <div class="chrono-year-labels" aria-hidden="true">
-                                        ${layout.years.map((year) => `<span class="chrono-year-label" style="left:${year.x}px;top:${layout.axisY + 16}px">${escapeHtml(year.label || year.year)}</span>`).join('')}
+                                        ${layout.years.map((year) => `<span class="chrono-year-label" style="left:${year.x}px;top:${layout.axisY + 16}px">${year.label ? escapeHtml(year.label) : formatDisplayYearMarkup(year.year, config.locale)}</span>`).join('')}
                                         ${layout.gaps.map((gap) => `<span class="chrono-gap-label" style="left:${gap.x}px;top:${layout.axisY - 5}px">≈${gap.years}y</span>`).join('')}
                                     </div>
                                     ${layout.cards.map((card) => renderCard(card, summaryById, layout, text)).join('')}
@@ -1229,6 +1253,8 @@
         getChronologyScrollTarget,
         getChronologyWheelDelta,
         getDensityTargetYear,
+        formatDisplayYear,
+        formatDisplayYearMarkup,
         getMilestoneVariants,
         getNearestVisibleYear,
         getOverviewViewport,

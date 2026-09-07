@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-1968-event",
+  "year": 1968,
+  "date": "1968",
+  "title": {
+    "zh": "《仿生人会梦见电子羊吗？》",
+    "en": "Do Androids Dream of Electric Sheep?"
+  },
+  "description": {
+    "zh": "菲利普·K·迪克通过追捕仿生人的故事，把记忆、共情、生命价值和身份不确定性置于同一伦理困境中。",
+    "en": "Philip K. Dick places memory, empathy, the value of life and uncertainty of identity inside one ethical dilemma through a story about hunting androids."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国科幻出版语境",
+      "en": "United States science-fiction publishing context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-23",
+      "role": {
+        "zh": "《仿生人会梦见电子羊吗？》作者",
+        "en": "Author of Do Androids Dream of Electric Sheep?"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《仿生人会梦见电子羊吗？》",
+      "en": "Do Androids Dream of Electric Sheep?"
+    },
+    "displaySummary": {
+      "zh": "以共情检验人类与仿生人的边界",
+      "en": "Testing the boundary between humans and androids through empathy"
+    },
+    "displayDescription": {
+      "zh": "<p>菲利普·K·迪克通过追捕仿生人的故事，把记忆、共情、生命价值和身份不确定性置于同一伦理困境中。 作品没有把人和机器的差别简单归结为智力，而是借共情测试、人工记忆和对动物的照护不断动摇边界。它反过来要求读者判断：执行杀戮的人类与渴望活下去的仿生人，谁更接近被称为“人”的道德主体。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 小说出版于 1968 年，其核战争后的荒凉世界回应了冷战、生态危机和消费社会的焦虑。仿生人被制造为殖民地劳动力，却因追求生存而逃回地球，成为赏金猎人里克·戴克必须“退休”的对象。</p><p> 研究者通常把这部小说视为人工生命伦理和后人类身份研究的核心文本，它也成为电影《银翼杀手》的文学基础。其长期影响在于让“机器是否像人”转向“人是否愿意承认另一种主体”的问题。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Philip K. Dick places memory, empathy, the value of life and uncertainty of identity inside one ethical dilemma through a story about hunting androids. The book does not reduce the human-machine difference to intelligence; empathy tests, artificial memories and care for animals repeatedly destabilize the boundary. It asks readers to judge whether the human who kills or the android who wants to live better qualifies as a moral person.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. Published in 1968, the novel's postwar wasteland reflects anxieties about the Cold War, ecological collapse and consumer society. Androids are manufactured as colonial labor but flee to Earth in pursuit of survival, becoming targets whom bounty hunter Rick Deckard must “retire.”</p><p> Scholars generally treat the novel as a central text in artificial-life ethics and posthuman identity, and it supplied the literary basis for Blade Runner. Its lasting effect is to shift the question from whether machines resemble humans to whether humans will recognize another kind of subject. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "《仿生人会梦见电子羊吗？》",
+          "en": "Do Androids Dream of Electric Sheep?"
+        },
+        "description": {
+          "zh": "以共情检验人类与仿生人的边界",
+          "en": "Testing the boundary between humans and androids through empathy"
+        },
+        "url": "https://www.google.com/search?q=%E3%80%8A%E4%BB%BF%E7%94%9F%E4%BA%BA%E4%BC%9A%E6%A2%A6%E8%A7%81%E7%94%B5%E5%AD%90%E7%BE%8A%E5%90%97%EF%BC%9F%E3%80%8B%20%E8%8F%B2%E5%88%A9%E6%99%AE%C2%B7%E8%BF%AA%E5%85%8B",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1968-event-androids-dream-cover"
+    ],
+    "sourceIds": [
+      "source-humanistic-1968-event-record",
+      "source-humanistic-1968-event-androids-dream-cover"
+    ],
+    "claimIds": [
+      "claim-humanistic-1968-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "小说出版于 1968 年，其核战争后的荒凉世界回应了冷战、生态危机和消费社会的焦虑。仿生人被制造为殖民地劳动力，却因追求生存而逃回地球，成为赏金猎人里克·戴克必须“退休”的对象。",
+          "en": "Published in 1968, the novel's postwar wasteland reflects anxieties about the Cold War, ecological collapse and consumer society. Androids are manufactured as colonial labor but flee to Earth in pursuit of survival, becoming targets whom bounty hunter Rick Deckard must “retire.”"
+        },
+        "sourceIds": [
+          "source-humanistic-1968-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品没有把人和机器的差别简单归结为智力，而是借共情测试、人工记忆和对动物的照护不断动摇边界。它反过来要求读者判断：执行杀戮的人类与渴望活下去的仿生人，谁更接近被称为“人”的道德主体。",
+          "en": "The book does not reduce the human-machine difference to intelligence; empathy tests, artificial memories and care for animals repeatedly destabilize the boundary. It asks readers to judge whether the human who kills or the android who wants to live better qualifies as a moral person."
+        },
+        "sourceIds": [
+          "source-humanistic-1968-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这部小说视为人工生命伦理和后人类身份研究的核心文本，它也成为电影《银翼杀手》的文学基础。其长期影响在于让“机器是否像人”转向“人是否愿意承认另一种主体”的问题。",
+          "en": "Scholars generally treat the novel as a central text in artificial-life ethics and posthuman identity, and it supplied the literary basis for Blade Runner. Its lasting effect is to shift the question from whether machines resemble humans to whether humans will recognize another kind of subject."
+        },
+        "sourceIds": [
+          "source-humanistic-1968-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

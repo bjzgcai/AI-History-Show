@@ -1,0 +1,82 @@
+[
+  {
+    "id": "source-humanistic-2025-iit-ai-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "整合信息理论（IIT）的AI应用",
+      "en": "IIT and Artificial Consciousness"
+    },
+    "url": "https://www.google.com/search?q=%E6%95%B4%E5%90%88%E4%BF%A1%E6%81%AF%E7%90%86%E8%AE%BA%EF%BC%88IIT%EF%BC%89%E7%9A%84AI%E5%BA%94%E7%94%A8%20%E6%9C%B1%E5%88%A9%E5%A5%A5%C2%B7%E6%89%98%E8%AF%BA%E5%B0%BC",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-2025-iit-ai-tononi-iitc-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "朱利奥·托诺尼在 IITC 会议上的照片",
+      "en": "Giulio Tononi at IITC"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Tononi_IITC_1.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "整合信息理论主要提出者在 IITC 会议上的照片；文件页标注 CC BY 2.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Photo of an originator of Integrated Information Theory at IITC; the file page records CC BY 2.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-2025-iit-ai-giulio-tononi-nih-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "Giulio Tononi at NIH Pioneer Award 2005",
+      "en": "Giulio Tononi at NIH Pioneer Award 2005"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Giulio_Tononi_at_NIH_PioneerAwardg_2005.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "美国国立卫生研究院资料照片，文件页确认人物为朱利奥·托诺尼并标注公共领域。",
+      "en": "National Institutes of Health reference photograph; the file page identifies Giulio Tononi and marks the image public domain."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-2025-iit-ai-axioms-postulates",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "Axioms and postulates of integrated information theory",
+      "en": "Axioms and postulates of integrated information theory"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Axioms_and_postulates_of_integrated_information_theory.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "图示来源于 Giulio Tononi 与 Christof Koch 的论文，文件页标注 CC BY 4.0；仅作为 IIT 理论资料，不代表具体 2025 年 AI 应用。",
+      "en": "The diagram is credited to a paper by Giulio Tononi and Christof Koch; the file page records CC BY 4.0. It is an IIT theory reference, not a specific 2025 AI application."
+    },
+    "purpose": "image-provenance"
+  }
+]

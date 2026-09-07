@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-2025-ai-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "AI对齐问题",
+      "en": "The AI Alignment Problem"
+    },
+    "url": "https://www.google.com/search?q=AI%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98%20%E5%A4%9A%E4%BD%8D%E5%AD%A6%E8%80%85",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-2025-ai-stuart-russell-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "斯图尔特·罗素肖像",
+      "en": "Stuart Russell portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Stuart_Russell_01.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "AI 对齐研究者斯图尔特·罗素肖像；摄影者 Bengt Oberger，CC BY-SA 4.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Portrait of AI-alignment researcher Stuart Russell; photographed by Bengt Oberger, CC BY-SA 4.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

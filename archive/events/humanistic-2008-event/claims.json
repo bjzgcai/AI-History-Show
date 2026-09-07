@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-2008-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "WALL-E以温暖的AI爱情故事表现机器可能拥有比人类更纯粹的人性。",
+      "en": "WALL-E以温暖的AI爱情故事表现机器可能拥有比人类更纯粹的人性。"
+    },
+    "sourceIds": [
+      "source-humanistic-2008-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

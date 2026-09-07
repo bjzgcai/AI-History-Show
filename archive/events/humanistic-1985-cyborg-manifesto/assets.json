@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1985-cyborg-manifesto-verified-image",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1985-cyborg-manifesto/verified-donna-haraway.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "唐娜·哈拉维肖像",
+      "en": "Donna Haraway"
+    },
+    "subcaption": {
+      "zh": "《赛博格宣言》作者。",
+      "en": "《赛博格宣言》作者。"
+    },
+    "sourceId": "source-humanistic-1985-cyborg-manifesto-verified-image",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donna_Haraway_2006_(cropped).jpg",
+    "rights": {
+      "status": "cc-by-sa-3-0",
+      "license": {
+        "zh": "CC BY-SA 3.0",
+        "en": "CC BY-SA 3.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线人物或历史资料展示。",
+        "en": "Used as a figure or historical reference in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "donna-haraway"
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1992-event-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《雪崩》",
+      "en": "Snow Crash"
+    },
+    "url": "https://www.google.com/search?q=%E3%80%8A%E9%9B%AA%E5%B4%A9%E3%80%8B%20%E5%B0%BC%E5%B0%94%C2%B7%E6%96%AF%E8%92%82%E8%8A%AC%E6%A3%AE",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-1992-event-neal-stephenson-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "尼尔·斯蒂芬森肖像",
+      "en": "Neal Stephenson portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Neal_Stephenson_2008_crop.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《雪崩》作者尼尔·斯蒂芬森肖像；摄影者 Bob Lee，CC BY 2.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Author of Snow Crash; photographed by Bob Lee, CC BY 2.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

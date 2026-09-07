@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-1990-chinese-nation",
+  "year": 1978,
+  "date": "1978",
+  "title": {
+    "zh": "布洛克的中华民族（Chinese Nation）",
+    "en": "Ned Block's Chinese Nation Thought Experiment"
+  },
+  "description": {
+    "zh": "内德·布洛克设想由大量人分别模拟神经元并共同控制一个机器人，用极端尺度检验功能主义是否足以解释意识。",
+    "en": "Ned Block imagines a vast population simulating individual neurons while jointly controlling a robot, using an extreme scale to test whether functionalism can explain consciousness."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国心灵哲学研究语境",
+      "en": "United States philosophy-of-mind context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-39",
+      "role": {
+        "zh": "“中华民族”思想实验提出者",
+        "en": "Originator of the Chinese Nation thought experiment"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "布洛克的中华民族（Chinese Nation）",
+      "en": "Ned Block's Chinese Nation Thought Experiment"
+    },
+    "displaySummary": {
+      "zh": "功能等价是否足以产生意识",
+      "en": "Whether functional equivalence is sufficient for consciousness"
+    },
+    "displayDescription": {
+      "zh": "<p>内德·布洛克设想由大量人分别模拟神经元并共同控制一个机器人，用极端尺度检验功能主义是否足以解释意识。 思想实验让每个人承担一个神经元的功能，通过通信设备共同控制机器人身体。布洛克借直觉上的反差追问：即使整体输入输出和内部功能关系都与人脑对应，我们是否愿意说整个国家形成了一个具有体验的意识。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 布洛克在 1978 年有关功能主义的论文中提出这类“中华民族”或“中国脑”思想实验。功能主义认为，只要系统内部因果角色与人脑相同，构成材料不同也可以具有同类心智状态。</p><p> 心灵哲学家通常把它视为反对简单功能主义的重要思想实验，并常与中文房间、哲学僵尸和系统回应并列讨论。它对 AI 的意义在于区分行为能力、功能组织和主观体验，提醒人们这些判断标准并不天然等价。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Ned Block imagines a vast population simulating individual neurons while jointly controlling a robot, using an extreme scale to test whether functionalism can explain consciousness. Each person performs the role of a neuron and communicates with others to control a robot body. Block uses the intuitive contrast to ask whether, even if input-output behavior and internal functional relations match a brain, we should say an entire nation forms one experiencing consciousness.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. Block introduced the “Chinese Nation,” also called the China Brain, in a 1978 paper on functionalism. Functionalism holds that a system may have the same mental states if it realizes the same causal roles as a brain, regardless of material.</p><p> Philosophers of mind generally treat it as an important objection to simple functionalism, often discussed alongside the Chinese Room, philosophical zombies and the systems reply. For AI, it separates behavioral ability, functional organization and subjective experience, reminding us that these criteria are not automatically equivalent. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "布洛克的中华民族（Chinese Nation）",
+          "en": "Ned Block's Chinese Nation Thought Experiment"
+        },
+        "description": {
+          "zh": "功能等价是否足以产生意识",
+          "en": "Whether functional equivalence is sufficient for consciousness"
+        },
+        "url": "https://www.google.com/search?q=%E5%B8%83%E6%B4%9B%E5%85%8B%E7%9A%84%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%EF%BC%88Chinese%20Nation%EF%BC%89%20%E5%86%85%E5%BE%B7%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1990-chinese-nation-ned-block-portrait"
+    ],
+    "sourceIds": [
+      "source-humanistic-1990-chinese-nation-record",
+      "source-humanistic-1990-chinese-nation-ned-block-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-1990-chinese-nation-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "布洛克在 1978 年有关功能主义的论文中提出这类“中华民族”或“中国脑”思想实验。功能主义认为，只要系统内部因果角色与人脑相同，构成材料不同也可以具有同类心智状态。",
+          "en": "Block introduced the “Chinese Nation,” also called the China Brain, in a 1978 paper on functionalism. Functionalism holds that a system may have the same mental states if it realizes the same causal roles as a brain, regardless of material."
+        },
+        "sourceIds": [
+          "source-humanistic-1990-chinese-nation-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "思想实验让每个人承担一个神经元的功能，通过通信设备共同控制机器人身体。布洛克借直觉上的反差追问：即使整体输入输出和内部功能关系都与人脑对应，我们是否愿意说整个国家形成了一个具有体验的意识。",
+          "en": "Each person performs the role of a neuron and communicates with others to control a robot body. Block uses the intuitive contrast to ask whether, even if input-output behavior and internal functional relations match a brain, we should say an entire nation forms one experiencing consciousness."
+        },
+        "sourceIds": [
+          "source-humanistic-1990-chinese-nation-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "心灵哲学家通常把它视为反对简单功能主义的重要思想实验，并常与中文房间、哲学僵尸和系统回应并列讨论。它对 AI 的意义在于区分行为能力、功能组织和主观体验，提醒人们这些判断标准并不天然等价。",
+          "en": "Philosophers of mind generally treat it as an important objection to simple functionalism, often discussed alongside the Chinese Room, philosophical zombies and the systems reply. For AI, it separates behavioral ability, functional organization and subjective experience, reminding us that these criteria are not automatically equivalent."
+        },
+        "sourceIds": [
+          "source-humanistic-1990-chinese-nation-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

@@ -2320,6 +2320,15 @@
             white-space: nowrap;
         }
 
+        .hero-year .year-era-prefix {
+            display: inline-block;
+            margin-right: 6px;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1;
+            vertical-align: baseline;
+        }
+
         .hero-stage {
             position: relative;
             width: 86%;
@@ -5595,6 +5604,11 @@
             white-space: nowrap;
         }
 
+        .ui-detail-year .year-era-prefix {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
         .ui-detail-year.is-multiline {
             font-size: 92px;
             line-height: 0.9;
@@ -7155,6 +7169,10 @@
                 overflow-wrap: anywhere;
             }
 
+            .hero-year .year-era-prefix {
+                font-size: 15px;
+            }
+
             .story-title {
                 max-width: 100%;
                 font-size: clamp(27px, 7.4vw, 40px);
@@ -7168,6 +7186,11 @@
                 color: var(--accent);
                 font-size: clamp(28px, 9vw, 40px);
                 font-weight: 850;
+            }
+
+            .story-year .year-era-prefix {
+                font-size: 15px;
+                font-weight: 700;
             }
 
             .story-location {
@@ -7428,6 +7451,10 @@
             .ui-detail-place {
                 width: auto;
                 font-size: clamp(20px, 6vw, 30px);
+            }
+
+            .ui-detail-year .year-era-prefix {
+                font-size: 20px;
             }
 
             .ui-avatar-strip {
@@ -8128,6 +8155,10 @@
                 font-size: 14px;
             }
 
+            .hero-year .year-era-prefix {
+                font-size: 18px;
+            }
+
             .story-header {
                 display: block;
             }
@@ -8143,6 +8174,11 @@
                 margin-top: 10px;
                 color: var(--accent);
                 font-size: 36px;
+                font-weight: 700;
+            }
+
+            .story-year .year-era-prefix {
+                font-size: 18px;
                 font-weight: 700;
             }
 
@@ -8947,7 +8983,7 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="shared/chronology-overview.css?v=20260804">
+    <link rel="stylesheet" href="shared/chronology-overview.css?v=20260903-image-contain">
 </head>
 <body>
     <div class="stage-viewport">
@@ -10733,6 +10769,26 @@
             return years;
         }
 
+        function formatDisplayYear(value) {
+            if (window.ChronologyOverview && typeof window.ChronologyOverview.formatDisplayYear === 'function') {
+                const locale = window.I18n && typeof window.I18n.getLocale === 'function'
+                    ? window.I18n.getLocale()
+                    : window.currentLocale;
+                return window.ChronologyOverview.formatDisplayYear(value, locale);
+            }
+            return String(value == null ? '' : value);
+        }
+
+        function formatDisplayYearMarkup(value) {
+            if (window.ChronologyOverview && typeof window.ChronologyOverview.formatDisplayYearMarkup === 'function') {
+                const locale = window.I18n && typeof window.I18n.getLocale === 'function'
+                    ? window.I18n.getLocale()
+                    : window.currentLocale;
+                return window.ChronologyOverview.formatDisplayYearMarkup(value, locale);
+            }
+            return escapeHtml(formatDisplayYear(value));
+        }
+
         function buildLocationLine(location) {
             return [location && location.name, location && location.country]
                 .filter(Boolean)
@@ -12275,7 +12331,7 @@
                     <div class="branch-event-content">
                         <div class="branch-meta">
                             <span class="branch-chip">${escapeHtml(area)}</span>
-                            <span>${escapeHtml(String(vm.year || ''))}</span>
+                            <span>${formatDisplayYearMarkup(vm.year)}</span>
                         </div>
                         <h2 class="branch-event-title">${escapeHtml(vm.title || tx('aiHistoryEvent'))}</h2>
                         <p class="branch-event-summary">${escapeHtml(summary)}</p>
@@ -13244,18 +13300,18 @@
         function renderHero(vm) {
             const stageContext = extractStageContext(vm);
             refs.leftKicker.textContent = stageContext.label;
-            refs.heroYear.textContent = vm.year || '';
+            refs.heroYear.innerHTML = formatDisplayYearMarkup(vm.year);
             refs.heroLocationName.textContent = vm.location && vm.location.name ? vm.location.name : (vm.title || tx('locationPending'));
             refs.heroLocationCountry.textContent = vm.location && vm.location.country ? vm.location.country : tx('locationInfoPending');
             refs.heroContextPeriod.textContent = stageContext.period ? `(${stageContext.period})` : '';
             refs.heroContextPeriod.style.display = stageContext.period ? 'block' : 'none';
             refs.heroYears.innerHTML = buildContextYears(vm.year, 3, 0)
-                .map((year) => `<span>${escapeHtml(year)}</span>`)
+                .map((year) => `<span>${formatDisplayYearMarkup(year)}</span>`)
                 .join('');
             refs.ghostYears.innerHTML = buildContextYears(vm.year, 0, 4)
-                .map((year) => `<span>${escapeHtml(year)}</span>`)
+                .map((year) => `<span>${formatDisplayYearMarkup(year)}</span>`)
                 .join('');
-            refs.heroBottomYear.textContent = vm.year || '';
+            refs.heroBottomYear.innerHTML = formatDisplayYearMarkup(vm.year);
             refs.heroBottomCopy.textContent = vm.category || vm.subtitle || stageContext.label || tx('aiHistory');
 
             if (vm.location && Array.isArray(vm.location.coordinates)) {
@@ -13277,7 +13333,7 @@
             refs.summaryLocation.innerHTML = escapeHtmlWithCjkTail(locationText);
             refs.summaryLocation.title = locationText;
             refs.summaryBody.innerHTML = buildSummaryHtml(vm);
-            refs.storyYear.textContent = vm.year || '';
+            refs.storyYear.innerHTML = formatDisplayYearMarkup(vm.year);
         }
 
         function renderFigures(vm) {
@@ -13852,16 +13908,17 @@
             const milestoneNodes = milestoneList.map((item, index) => {
                 const title = String(lx(item.title) || tx('aiHistoryEvent')).trim();
                 const area = getAchievementField(item, 'area', lx(item.subtitle) || lx(item.category) || '');
-                const method = getAchievementField(item, 'method', String(item.year || ''));
+                const method = getAchievementField(item, 'method', '');
                 const material = getAchievementField(item, 'material', '');
+                const yearLabel = formatDisplayYear(item.year);
                 const active = index === currentIndex ? ' active' : '';
-                const titleText = [area, title, method, material].filter(Boolean).join(' · ');
+                const titleText = [area, title, method || yearLabel, material].filter(Boolean).join(' · ');
                 return `
                     <button class="achievement-map-node${active}" type="button" data-index="${index}" title="${escapeHtml(titleText)}">
                         <span class="achievement-map-index">${String(index + 1).padStart(2, '0')}</span>
                         <span class="achievement-map-area">${escapeHtml(area || tx('aiHistory'))}</span>
                         <span class="achievement-map-title">${escapeHtml(title)}</span>
-                        <span class="achievement-map-method">${escapeHtml(method || material || String(item.year || ''))}</span>
+                        <span class="achievement-map-method">${method || material ? escapeHtml(method || material) : formatDisplayYearMarkup(item.year)}</span>
                     </button>
                 `;
             }).join('');
@@ -13890,7 +13947,7 @@
             const timeline = Array.isArray(vm.timeline) ? vm.timeline : [];
             refs.timelineTrack.innerHTML = timeline.map((item, index) => `
                 <button class="timeline-tick ${item.active ? 'active' : ''}" type="button" data-index="${index}" title="${escapeHtml(item.title || '')}">
-                    <span>${escapeHtml(item.year || '')}</span>
+                    <span>${formatDisplayYearMarkup(item.year)}</span>
                 </button>
             `).join('');
 
@@ -14019,14 +14076,14 @@
             const milestoneNodes = milestoneList.map((item, index) => {
                 const title = String(lx(item.title) || tx('aiHistoryEvent')).trim();
                 const area = getAchievementField(item, 'area', lx(item.subtitle) || lx(item.category) || '');
-                const method = getAchievementField(item, 'method', String(item.year || ''));
+                const method = getAchievementField(item, 'method', '');
                 const active = index === currentIndex ? ' active' : '';
                 return `
                     <button class="bench-map-item${active}" type="button" data-index="${index}">
                         <span class="bench-map-index">${String(index + 1).padStart(2, '0')}</span>
                         <span class="bench-map-area">${escapeHtml(area || tx('aiHistory'))}</span>
                         <span class="bench-map-title">${escapeHtml(title)}</span>
-                        <span class="bench-map-method">${escapeHtml(method || String(item.year || ''))}</span>
+                        <span class="bench-map-method">${method ? escapeHtml(method) : formatDisplayYearMarkup(item.year)}</span>
                     </button>
                 `;
             }).join('');
@@ -15434,7 +15491,7 @@
             refs.benchMapHeading.textContent = tx('achievementMap');
             refs.benchMaterialHeading.textContent = tx('sourceMaterials');
             refs.benchCoreArea.textContent = getAchievementField(raw, 'area', vm.category || vm.subtitle || tx('aiHistory'));
-            refs.benchCoreYear.textContent = String(vm.year || '');
+            refs.benchCoreYear.innerHTML = formatDisplayYearMarkup(vm.year);
             refs.benchCoreTitle.textContent = vm.title || '';
             refs.benchCoreSummary.innerHTML = buildSummaryHtml(vm);
             renderBenchMapList();
@@ -16071,7 +16128,7 @@
             const imageMeta = getUiPrimaryImageMeta(vm, imageUrl);
             const title = vm.title || tx('aiHistoryEvent');
             const detailImageClass = isDiagramImage(imageUrl) ? ' is-diagram' : '';
-            const yearText = String(vm.year || '');
+            const yearText = formatDisplayYear(vm.year);
             const detailYearText = yearText.replace(/\s*\/\s*/g, ' / ');
             const detailYearClass = detailYearText.length > 10 ? ' is-multiline' : '';
             const detailFigures = getUiDetailFigures(vm);
@@ -16104,7 +16161,7 @@
                             <div class="ui-detail-hero">
                                 <div class="ui-detail-topline">
                                     <div class="ui-detail-context">
-                                        <div class="ui-detail-year${detailYearClass}">${escapeHtml(detailYearText)}</div>
+                                        <div class="ui-detail-year${detailYearClass}">${formatDisplayYearMarkup(vm.year)}</div>
                                         <div class="ui-detail-place-shell">
                                             <div class="ui-detail-place">${escapeHtmlWithCjkTail(locationText)}</div>
                                             <div class="ui-detail-place-tooltip" id="uiDetailLocationTooltip" role="tooltip">${escapeHtml(locationText)}</div>
@@ -16382,7 +16439,7 @@
             if (isUiBrowserActive() && uiBrowserMode !== 'detail') {
                 document.title = `${tx('appTitleSingle')} - ${getStorylineLabel(getActiveStorylineOption()) || uiText('AI History', '人工智能历史')}`;
             } else {
-                document.title = `${tx('appTitleSingle')} - ${vm.year} ${vm.title}`;
+                document.title = `${tx('appTitleSingle')} - ${formatDisplayYear(vm.year)} ${vm.title}`;
             }
         }
 

@@ -1,0 +1,151 @@
+[
+  {
+    "id": "asset-humanistic-2001-event-ai-film-logo",
+    "type": "svg",
+    "path": "resources/images/humanistic-cycle/humanistic-2001-event/ai-film-logo.svg",
+    "role": "title-reference",
+    "caption": {
+      "zh": "《人工智能》片名标识资料",
+      "en": "A.I. Artificial Intelligence title reference"
+    },
+    "subcaption": {
+      "zh": "2001 年电影《人工智能》的片名标识。",
+      "en": "Title mark for the 2001 film A.I. Artificial Intelligence."
+    },
+    "sourceId": "source-humanistic-2001-event-ai-film-logo",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ai-artificial-intelligence-logo.svg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "PUBLIC DOMAIN",
+        "en": "PUBLIC DOMAIN"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-52"
+    ]
+  },
+  {
+    "id": "asset-humanistic-2001-event-tmdb-poster",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-poster-tmdb.jpg",
+    "role": "movie-poster",
+    "caption": {
+      "zh": "《人工智能》电影海报",
+      "en": "A.I. Artificial Intelligence film poster"
+    },
+    "subcaption": {
+      "zh": "2001 年电影《人工智能》的中文发行海报。",
+      "en": "Chinese release poster for the 2001 film A.I. Artificial Intelligence."
+    },
+    "sourceId": "source-humanistic-2001-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/tl8F1HG1Iua7iTBJbGFeDYidIe7.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/644-a-i-artificial-intelligence/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-2001-event-tmdb-scene-1",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-scene-1-tmdb.jpg",
+    "role": "film-still",
+    "caption": {
+      "zh": "大卫与莫妮卡",
+      "en": "David and Monica"
+    },
+    "subcaption": {
+      "zh": "机器人男孩大卫与人类养母莫妮卡相处的电影场景。",
+      "en": "Film scene showing the robot child David with his human adoptive mother Monica."
+    },
+    "sourceId": "source-humanistic-2001-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/n7p6UTAZtkeoHkwCO42BEQaMFJY.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/644-a-i-artificial-intelligence/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-2001-event-tmdb-scene-2",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-scene-2-tmdb.jpg",
+    "role": "promotional-still",
+    "caption": {
+      "zh": "《人工智能》角色与未来城市视觉",
+      "en": "A.I. characters and future-city visual"
+    },
+    "subcaption": {
+      "zh": "大卫、莫妮卡、泰迪熊与未来城市构成的影片视觉资料。",
+      "en": "Film visual combining David, Monica, Teddy and the future city."
+    },
+    "sourceId": "source-humanistic-2001-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/2tQ0Uhav10ay7jOX6QoqvbtGljB.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/644-a-i-artificial-intelligence/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-1966-17-babel-17-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《巴别塔-17》（Babel-17）",
+      "en": "Babel-17"
+    },
+    "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%EF%BC%88Babel-17%EF%BC%89%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-1966-17-babel-17-vernor-vinge-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "弗诺·文奇肖像",
+      "en": "Vernor Vinge portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Vernor_Vinge_(cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《巴别塔-17》作者弗诺·文奇肖像；文件页标注 CC BY-SA 3.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Author of Babel-17, Vernor Vinge; the file page records CC BY-SA 3.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1966-17-babel-17-samuel-delany-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "Headshot 8 Samuel Delany",
+      "en": "Headshot 8 Samuel Delany"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Headshot_8_Samuel_Delany.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认人物为塞缪尔·R·德兰尼，作者为 Samuel.Delany，本人作品，CC BY-SA 4.0。",
+      "en": "The Wikimedia Commons file page identifies Samuel R. Delany; author Samuel.Delany, own work, CC BY-SA 4.0."
+    },
+    "purpose": "image-provenance"
+  }
+]

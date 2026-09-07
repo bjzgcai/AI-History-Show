@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-computationalism-1950-verified-image",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-computationalism-1950/verified-hilary-putnam.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "希拉里·普特南肖像",
+      "en": "Hilary Putnam"
+    },
+    "subcaption": {
+      "zh": "现代计算主义心灵观的重要代表人物。",
+      "en": "Major representative of modern computationalism about mind."
+    },
+    "sourceId": "source-humanistic-computationalism-1950-verified-image",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+    "rights": {
+      "status": "cc-by-sa-2-5",
+      "license": {
+        "zh": "CC BY-SA 2.5",
+        "en": "CC BY-SA 2.5"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线人物或历史资料展示。",
+        "en": "Used as a figure or historical reference in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "hilary-putnam"
+    ]
+  }
+]

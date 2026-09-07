@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-2003-event-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《你生活在计算机模拟中吗？》",
+      "en": "Are You Living in a Computer Simulation?"
+    },
+    "url": "https://www.google.com/search?q=%E3%80%8A%E4%BD%A0%E7%94%9F%E6%B4%BB%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%A8%A1%E6%8B%9F%E4%B8%AD%E5%90%97%EF%BC%9F%E3%80%8B%20%E5%B0%BC%E5%85%8B%C2%B7%E5%8D%9A%E6%96%AF%E7%89%B9%E7%BD%97%E5%A7%86",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-2003-event-nick-bostrom-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "尼克·博斯特罗姆肖像",
+      "en": "Nick Bostrom portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Prof_Nick_Bostrom_324-1.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "模拟论论文作者尼克·博斯特罗姆肖像；Future of Humanity Institute，CC BY 4.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Portrait of simulation-argument author Nick Bostrom; Future of Humanity Institute, CC BY 4.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

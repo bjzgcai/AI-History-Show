@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-2010-teamlab-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "teamLab数字艺术",
+      "en": "teamLab Digital Art"
+    },
+    "url": "https://www.google.com/search?q=teamLab%E6%95%B0%E5%AD%97%E8%89%BA%E6%9C%AF%20%E6%97%A5%E6%9C%ACteamLab%E8%89%BA%E6%9C%AF%E5%9B%A2%E9%98%9F",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-2010-teamlab-teamlab-borderless",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "teamLab Borderless 展览现场",
+      "en": "teamLab Borderless installation"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:TeamLab_Borderless,_Odaiba,_Tokyo,_Japan_(49070835722).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "东京 teamLab Borderless 展览现场；摄影者 Guilhem Vellut，CC BY-SA 2.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "teamLab Borderless installation in Tokyo; photographed by Guilhem Vellut, CC BY-SA 2.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

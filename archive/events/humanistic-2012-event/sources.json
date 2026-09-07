@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-2012-event-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《普罗米修斯》",
+      "en": "Prometheus"
+    },
+    "url": "https://www.google.com/search?q=%E3%80%8A%E6%99%AE%E7%BD%97%E7%B1%B3%E4%BF%AE%E6%96%AF%E3%80%8B%20%E9%9B%B7%E5%BE%B7%E5%88%A9%C2%B7%E6%96%AF%E7%A7%91%E7%89%B9%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-2012-event-ridley-scott-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "雷德利·斯科特肖像",
+      "en": "Ridley Scott portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Ridley_Scott_by_Gage_Skidmore.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《普罗米修斯》导演肖像；摄影者 Gage Skidmore，CC BY-SA 3.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Director of Prometheus; photograph by Gage Skidmore, CC BY-SA 3.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-2012-event-tmdb-images",
+    "type": "image-source",
+    "url": "https://www.themoviedb.org/movie/70981-prometheus/images",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《普罗米修斯》 TMDB 图片库",
+      "en": "Prometheus TMDB image gallery"
+    },
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "TMDB 图片库用于定位海报、影片场面与宣传视觉；每张图片的原始文件链接保留在对应资源记录中。",
+      "en": "The TMDB gallery is used to locate posters, film scenes and promotional visuals; each original file URL is retained in the corresponding asset record."
+    },
+    "purpose": "image-provenance"
+  }
+]

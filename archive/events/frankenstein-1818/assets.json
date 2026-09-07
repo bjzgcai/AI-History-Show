@@ -1,0 +1,38 @@
+[
+  {
+    "id": "asset-frankenstein-1818-mary-shelley-biography-scan",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/frankenstein-1818/mary-shelley-biography-scan.jpg",
+    "role": "paper-reference",
+    "caption": {
+      "zh": "玛丽·雪莱生平与书信扫描页",
+      "en": "Mary Shelley life and letters scan"
+    },
+    "subcaption": {
+      "zh": "《弗兰肯斯坦》作者的传记与书信资料。",
+      "en": "Biographical and correspondence material about the author of Frankenstein."
+    },
+    "sourceId": "source-frankenstein-1818-mary-shelley-biography-scan",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_life_and_letters_of_Mary_Wollstonecraft_Shelley_(IA_lifelettersofmar01marsrich).pdf",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "Public domain",
+        "en": "Public domain"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  }
+]

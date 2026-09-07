@@ -1,0 +1,4 @@
+[
+  {"id":"claim-talos-classical-source","importance":"core","text":{"zh":"现存最完整的塔洛斯古典叙事见于阿波罗尼奥斯·罗迪乌斯《阿尔戈英雄纪》第四卷，而不是《伊利亚特》。","en":"The fullest surviving classical Talos narrative appears in Book 4 of Apollonius Rhodius's Argonautica, not in the Iliad."},"sourceIds":["source-perseus-argonautica-talos","source-iliad-attribution-review"],"status":"needs-review"},
+  {"id":"claim-talos-automaton-imagination","importance":"core","text":{"zh":"塔洛斯被描绘为守卫克里特岛的铜制自动体，是人工身体、自动运动与生命边界的早期神话想象。","en":"Talos is depicted as a bronze automaton guarding Crete, an early mythic imagination of artificial bodies, autonomous motion and the boundary of life."},"sourceIds":["source-perseus-argonautica-talos","source-apollodorus-library-talos","source-britannica-talos"],"status":"needs-review"}
+]

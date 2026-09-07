@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1985-cyborg-manifesto-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《赛博格宣言》",
+      "en": "A Cyborg Manifesto"
+    },
+    "url": "https://monoskop.org/images/4/4c/Haraway_Donna_1985_A_Cyborg_Manifesto.pdf",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "修订版清单对应的作品或思想资料；页面用于核对出版、作者与主题信息。",
+      "en": "Record corresponding to the revised list; used to verify publication, authorship and theme."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-1985-cyborg-manifesto-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "唐娜·哈拉维肖像",
+      "en": "Donna Haraway"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Donna_Haraway_2006_(cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：CC BY-SA 3.0；作者/摄影者：Rusten Hogness。",
+      "en": "Wikimedia Commons file page identifies the subject; license: CC BY-SA 3.0; creator: Rusten Hogness."
+    },
+    "purpose": "image-provenance"
+  }
+]

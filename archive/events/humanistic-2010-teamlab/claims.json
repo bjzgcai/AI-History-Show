@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-2010-teamlab-core",
+    "importance": "core",
+    "text": {
+      "zh": "以算法生成沉浸式互动艺术。",
+      "en": "以算法生成沉浸式互动艺术。"
+    },
+    "sourceIds": [
+      "source-humanistic-2010-teamlab-record"
+    ],
+    "status": "needs-review"
+  }
+]

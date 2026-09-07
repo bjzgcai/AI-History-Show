@@ -1,0 +1,179 @@
+{
+  "id": "humanistic-1998-extended-mind",
+  "year": 1998,
+  "date": "1998",
+  "title": {
+    "zh": "《拓展心智论》",
+    "en": "The Extended Mind"
+  },
+  "description": {
+    "zh": "安迪·克拉克与大卫·查尔默斯提出，认知过程可以延伸到身体、工具和外部环境，AI也可能成为人类心智的扩展而非替代。",
+    "en": "Andy Clark and David Chalmers argue that cognition can extend into the body, tools and environment, allowing AI to function as an extension rather than a replacement of human minds."
+  },
+  "location": {
+    "regionId": "global",
+    "country": {
+      "zh": "英美哲学语境",
+      "en": "Anglo-American philosophical context"
+    },
+    "place": {
+      "zh": "心灵哲学与认知科学语境",
+      "en": "Philosophy of mind and cognitive science"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "david-chalmers",
+      "role": {
+        "zh": "《拓展心智论》共同作者",
+        "en": "Co-author of The Extended Mind"
+      },
+      "primary": true
+    },
+    {
+      "figureId": "andy-clark",
+      "role": {
+        "zh": "《拓展心智论》共同作者",
+        "en": "Co-author of The Extended Mind"
+      },
+      "primary": false
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《拓展心智论》",
+      "en": "The Extended Mind"
+    },
+    "displaySummary": {
+      "zh": "哲学",
+      "en": "Philosophy"
+    },
+    "displayDescription": {
+      "zh": "<p>安迪·克拉克与大卫·查尔默斯在《拓展心智论》中提出，认知过程不一定止于大脑和皮肤，也可能延伸到身体动作、笔记本、导航工具和周围环境。文章用“奥托的笔记本”说明：如果一个人稳定地依赖外部记录来完成记忆任务，那么这本笔记本在功能上可以像脑内记忆一样成为认知过程的一部分。</p><p>这一观点改变了人们理解人机关系的方式。手机、搜索引擎和 AI 助手不只是把答案交给人，而是在保存、筛选、提醒和规划中参与思考；与此同时，数据所有权、接口设计和平台中断也会影响一个人的记忆与行动能力。</p><p>拓展心智论并不意味着所有工具自动拥有心灵，也不意味着人类可以把责任交给设备。它的长期价值在于提供了一个判断标准：外部资源是否以稳定、直接、可随时取得的方式参与认知。这个标准今天仍被用于讨论数字依赖、辅助技术和生成式 AI 的协作边界。</p>",
+      "en": "<p>Andy Clark and David Chalmers argue in The Extended Mind that cognition need not stop at the brain and skin; it can extend into bodily action, notebooks, navigation tools and the surrounding environment. Their case of Otto's notebook suggests that when a person reliably relies on an external record for memory, the notebook can function as part of the cognitive process.</p><p>The argument changes how human-machine relations are understood. Phones, search engines and AI assistants do more than deliver answers: they participate in remembering, filtering, reminding and planning. At the same time, data ownership, interface design and platform outages can affect a person's ability to remember and act.</p><p>The extended-mind thesis does not mean every tool has a mind or that responsibility can be handed to a device. Its lasting value is a test for collaboration: does an external resource participate in cognition in a stable, direct and readily accessible way? That test remains useful for discussing digital dependence, assistive technology and the boundaries of generative-AI cooperation.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "《拓展心智论》",
+          "en": "The Extended Mind"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://consc.net/papers/extended.html",
+        "source": "The Extended Mind",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1998-extended-mind-verified-image"
+    ],
+    "sourceIds": [
+      "source-humanistic-1998-extended-mind-record",
+      "source-humanistic-1998-extended-mind-verified-image"
+    ],
+    "claimIds": [
+      "claim-humanistic-1998-extended-mind-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "安迪·克拉克与大卫·查尔默斯提出，认知过程可以延伸到身体、工具和外部环境，AI也可能成为人类心智的扩展而非替代。",
+          "en": "Andy Clark and David Chalmers argue that cognition can extend into the body, tools and environment, allowing AI to function as an extension rather than a replacement of human minds."
+        },
+        "sourceIds": [
+          "source-humanistic-1998-extended-mind-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1998-extended-mind-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1998-extended-mind-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

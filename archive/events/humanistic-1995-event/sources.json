@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1995-event-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《电子超级高速公路》",
+      "en": "Electronic Superhighway: Continental U.S., Alaska, Hawaii"
+    },
+    "url": "https://www.google.com/search?q=%E3%80%8A%E7%94%B5%E5%AD%90%E8%B6%85%E7%BA%A7%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF%E3%80%8B%20%E7%99%BD%E5%8D%97%E5%87%86",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-1995-event-nam-june-paik-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "白南准肖像",
+      "en": "Nam June Paik portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Paik_Nam_June_(cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《电子超级高速公路》艺术家肖像；文件页标注公有领域。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Artist behind Electronic Superhighway; the file page marks it public domain. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

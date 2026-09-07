@@ -1,0 +1,74 @@
+[
+  {
+    "id": "asset-jaquet-droz-automata-jaquet-droz-writer",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-writer.jpg",
+    "role": "artifact-reference",
+    "caption": {
+      "zh": "雅克-德罗自动人偶“书写者”",
+      "en": "Jaquet-Droz automaton: Writer"
+    },
+    "subcaption": {
+      "zh": "18 世纪雅克-德罗自动人偶的实物资料。",
+      "en": "Artifact reference for the eighteenth-century Jaquet-Droz automaton."
+    },
+    "sourceId": "source-jaquet-droz-automata-jaquet-droz-writer",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Writer.jpg",
+    "rights": {
+      "status": "cc-by-sa-4.0",
+      "license": {
+        "zh": "CC BY-SA 4.0",
+        "en": "CC BY-SA 4.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-jaquet-droz-automata-jaquet-droz-musician",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-musician.jpg",
+    "role": "artifact-reference",
+    "caption": {
+      "zh": "雅克-德罗自动人偶“音乐家”",
+      "en": "Jaquet-Droz automaton: Musician"
+    },
+    "subcaption": {
+      "zh": "18 世纪雅克-德罗自动人偶的实物资料。",
+      "en": "Artifact reference for the eighteenth-century Jaquet-Droz automaton."
+    },
+    "sourceId": "source-jaquet-droz-automata-jaquet-droz-musician",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Musician.jpg",
+    "rights": {
+      "status": "cc-by-sa-4.0",
+      "license": {
+        "zh": "CC BY-SA 4.0",
+        "en": "CC BY-SA 4.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  }
+]

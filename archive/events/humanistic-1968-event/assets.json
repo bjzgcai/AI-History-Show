@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1968-event-androids-dream-cover",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1968-event/androids-dream-cover.png",
+    "role": "artifact-reference",
+    "caption": {
+      "zh": "《仿生人会梦见电子羊吗？》封面资料",
+      "en": "Do Androids Dream of Electric Sheep? cover reference"
+    },
+    "subcaption": {
+      "zh": "菲利普·K·迪克小说的作品封面资料。",
+      "en": "Cover reference for Philip K. Dick's novel."
+    },
+    "sourceId": "source-humanistic-1968-event-androids-dream-cover",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:DoAndroidsDream.png",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "PUBLIC DOMAIN",
+        "en": "PUBLIC DOMAIN"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-23"
+    ]
+  }
+]

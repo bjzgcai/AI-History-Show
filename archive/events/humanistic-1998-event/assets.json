@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1998-event-iain-banks-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1998-event/iain-banks-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "伊恩·M·班克斯肖像",
+      "en": "Iain M. Banks portrait"
+    },
+    "subcaption": {
+      "zh": "《文明》系列作者，摄于 2009 年爱丁堡国际图书节。",
+      "en": "Author of the Culture series at the 2009 Edinburgh International Book Festival."
+    },
+    "sourceId": "source-humanistic-1998-event-iain-banks-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IainBanks2009.jpg",
+    "rights": {
+      "status": "cc-by-sa-3.0",
+      "license": {
+        "zh": "CC BY-SA 3.0",
+        "en": "CC BY-SA 3.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线的作者肖像展示，需保留摄影者署名。",
+        "en": "Used as the author portrait in the AI humanities storyline with photographer attribution retained."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-48"
+    ]
+  }
+]

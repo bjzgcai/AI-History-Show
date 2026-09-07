@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1984-event-greg-bear-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1984-event/greg-bear-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "格雷格·贝尔肖像",
+      "en": "Greg Bear portrait"
+    },
+    "subcaption": {
+      "zh": "《血音乐》作者。",
+      "en": "Author of Blood Music."
+    },
+    "sourceId": "source-humanistic-1984-event-greg-bear-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greg-bear-by-kyle-cassidy-L1008770.jpg",
+    "rights": {
+      "status": "cc-by-sa-3.0",
+      "license": {
+        "zh": "CC BY-SA 3.0",
+        "en": "CC BY-SA 3.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示，保留摄影者署名并按相同方式共享改编内容。",
+        "en": "Used for display in the AI humanities storyline; retain photographer attribution and share adaptations under the same terms."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-35"
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-ancient-hephaestus-automata-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《伊利亚特》中的赫菲斯托斯自动机械",
+      "en": "Hephaestus Automata in The Iliad"
+    },
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Hom.+Il.+18.136",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "修订版清单对应的作品或思想资料；页面用于核对出版、作者与主题信息。",
+      "en": "Record corresponding to the revised list; used to verify publication, authorship and theme."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-ancient-hephaestus-automata-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "赫菲斯托斯自动机械相关历史图",
+      "en": "hephaestus-automata"
+    },
+    "url": "https://commons.wikimedia.org/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：See original source record。",
+      "en": "Wikimedia Commons file page identifies the subject; license: See original source record."
+    },
+    "purpose": "image-provenance"
+  }
+]

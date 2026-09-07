@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-multivac-1948-asimov-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/multivac-1948/asimov-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "艾萨克·阿西莫夫肖像",
+      "en": "Isaac Asimov portrait"
+    },
+    "subcaption": {
+      "zh": "MULTIVAC 系列作者；纽约世界电讯报与太阳报照片，公有领域。",
+      "en": "Author of the MULTIVAC stories; photograph from the New York World-Telegram and Sun, public domain."
+    },
+    "sourceId": "source-multivac-1948-asimov-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isaac_Asimov_(cropped).jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "PUBLIC DOMAIN",
+        "en": "PUBLIC DOMAIN"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "isaac-asimov"
+    ]
+  }
+]

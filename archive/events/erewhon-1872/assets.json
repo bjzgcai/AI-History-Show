@@ -1,0 +1,38 @@
+[
+  {
+    "id": "asset-erewhon-1872-erewhon-first-edition",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/erewhon-1872/erewhon-first-edition.jpg",
+    "role": "paper-reference",
+    "caption": {
+      "zh": "《埃瑞洪》1872 年初版扫描页",
+      "en": "Erewhon 1872 first-edition scan"
+    },
+    "subcaption": {
+      "zh": "塞缪尔·巴特勒小说的早期版本资料。",
+      "en": "Early-edition reference for Samuel Butler's novel."
+    },
+    "sourceId": "source-erewhon-1872-erewhon-first-edition",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erewhon-1872-001.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "Public domain",
+        "en": "Public domain"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  }
+]

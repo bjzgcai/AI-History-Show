@@ -1,0 +1,151 @@
+[
+  {
+    "id": "asset-humanistic-1999-event-wachowskis-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1999-event/wachowskis-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "沃卓斯基姐妹肖像",
+      "en": "The Wachowskis portrait"
+    },
+    "subcaption": {
+      "zh": "《黑客帝国》编剧兼导演。",
+      "en": "Writers and directors of The Matrix."
+    },
+    "sourceId": "source-humanistic-1999-event-wachowskis-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wachowskis.jpg",
+    "rights": {
+      "status": "cc-by-sa-3.0",
+      "license": {
+        "zh": "CC BY SA 3.0",
+        "en": "CC BY SA 3.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-50"
+    ]
+  },
+  {
+    "id": "asset-humanistic-1999-event-tmdb-poster",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1999-event/matrix-poster-tmdb.jpg",
+    "role": "movie-poster",
+    "caption": {
+      "zh": "《黑客帝国》电影海报",
+      "en": "The Matrix film poster"
+    },
+    "subcaption": {
+      "zh": "1999 年电影《黑客帝国》的中文发行海报。",
+      "en": "Chinese release poster for the 1999 film The Matrix."
+    },
+    "sourceId": "source-humanistic-1999-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/eMurN09rDC2qeEv3npkUbcJfIXN.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/603-the-matrix/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-1999-event-tmdb-scene-1",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1999-event/matrix-scene-1-tmdb.jpg",
+    "role": "promotional-still",
+    "caption": {
+      "zh": "《黑客帝国》主要角色视觉",
+      "en": "The Matrix principal characters"
+    },
+    "subcaption": {
+      "zh": "尼奥、崔妮蒂、墨菲斯与史密斯特工的影片视觉资料。",
+      "en": "Film visual featuring Neo, Trinity, Morpheus and Agent Smith."
+    },
+    "sourceId": "source-humanistic-1999-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/603-the-matrix/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-1999-event-tmdb-scene-2",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1999-event/matrix-scene-2-tmdb.jpg",
+    "role": "film-still",
+    "caption": {
+      "zh": "崔妮蒂与尼奥的现实世界场景",
+      "en": "Trinity and Neo in the real world"
+    },
+    "subcaption": {
+      "zh": "崔妮蒂在现实世界中照看尼奥的电影场景。",
+      "en": "Film scene showing Trinity attending to Neo in the real world."
+    },
+    "sourceId": "source-humanistic-1999-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/oMsxZEvz9a708d49b6UdZK1KAo5.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/603-the-matrix/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  }
+]

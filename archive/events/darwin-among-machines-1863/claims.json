@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-darwin-among-machines-1863-core",
+    "importance": "core",
+    "text": {
+      "zh": "巴特勒设想机器可能通过选择和复制逐步发展出自主性，首次以系统方式提出机器进化并取代人类的文化想象。",
+      "en": "Butler imagined machines developing autonomy through selection and reproduction, offering an early systematic cultural vision of machine evolution and possible replacement of humanity."
+    },
+    "sourceIds": [
+      "source-darwin-among-machines-1863-primary"
+    ],
+    "status": "needs-review"
+  }
+]

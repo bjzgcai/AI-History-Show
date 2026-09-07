@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1979-geb-core",
+    "importance": "core",
+    "text": {
+      "zh": "道格拉斯·霍夫施塔特以哥德尔定理、艾舍尔图像和巴赫音乐为线索，讨论递归、自指、形式系统与心智如何从符号结构中涌现。",
+      "en": "Douglas Hofstadter uses Gödel’s theorem, Escher’s images and Bach’s music to examine recursion, self-reference, formal systems and the emergence of mind from symbolic structures."
+    },
+    "sourceIds": [
+      "source-humanistic-1979-geb-record"
+    ],
+    "status": "needs-review"
+  }
+]

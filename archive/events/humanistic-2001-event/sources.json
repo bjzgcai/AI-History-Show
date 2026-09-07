@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-2001-event-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "《人工智能》",
+      "en": "A.I. Artificial Intelligence"
+    },
+    "url": "https://www.google.com/search?q=%E3%80%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E3%80%8B%20%E5%8F%B2%E8%92%82%E6%96%87%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
+      "en": "From the AI humanities integration list; replace with a formal primary source."
+    },
+    "purpose": "migration-only"
+  },
+  {
+    "id": "source-humanistic-2001-event-ai-film-logo",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《人工智能》片名标识资料",
+      "en": "A.I. Artificial Intelligence title reference"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Ai-artificial-intelligence-logo.svg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "影片片名标识资料；文件页标注公有领域，不作为电影剧照。已按 Commons 文件页的实际 6/62/Ai-artificial-intelligence-logo.svg 地址重新下载，使用前保留文件页作者 Cygomezm 的署名信息。",
+      "en": "Film title reference; the file page marks it public domain and it is not a film still. It was re-downloaded from the actual Commons 6/62/Ai-artificial-intelligence-logo.svg URL; retain the file-page attribution to Cygomezm."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-2001-event-tmdb-images",
+    "type": "image-source",
+    "url": "https://www.themoviedb.org/movie/644-a-i-artificial-intelligence/images",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《人工智能》 TMDB 图片库",
+      "en": "A.I. Artificial Intelligence TMDB image gallery"
+    },
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "TMDB 图片库用于定位海报、影片场面与宣传视觉；每张图片的原始文件链接保留在对应资源记录中。",
+      "en": "The TMDB gallery is used to locate posters, film scenes and promotional visuals; each original file URL is retained in the corresponding asset record."
+    },
+    "purpose": "image-provenance"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1991-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "以多重草稿并行处理解释意识，认为意识并非神秘内在感受，AI原则上可能实现意识。",
+      "en": "以多重草稿并行处理解释意识，认为意识并非神秘内在感受，AI原则上可能实现意识。"
+    },
+    "sourceIds": [
+      "source-humanistic-1991-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

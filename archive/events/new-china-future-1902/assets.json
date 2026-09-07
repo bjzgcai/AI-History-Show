@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-new-china-future-1902-liang-qichao-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/new-china-future-1902/liang-qichao-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "梁启超肖像",
+      "en": "Liang Qichao portrait"
+    },
+    "subcaption": {
+      "zh": "《新中国未来记》作者。",
+      "en": "Author of The Future of New China."
+    },
+    "sourceId": "source-new-china-future-1902-liang-qichao-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liang_Qichao_portrait.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "Public domain",
+        "en": "Public domain"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "liang-qichao"
+    ]
+  }
+]
