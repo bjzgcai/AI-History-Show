@@ -564,8 +564,43 @@ assert.equal(
 );
 assert.equal(
     overview.getDensityTargetYear(layout.years, 0.5).year,
+    1872,
+    'the density navigator should use a linear year scale after both early breaks'
+);
+assert.equal(
+    overview.getDensityYearRatio(layout.years, 1637),
+    0.08,
+    'only the ancient-to-1637 interval should occupy the reserved compressed segment'
+);
+assert.equal(
+    overview.getDensityTargetYear(layout.years, overview.getDensityYearRatio(layout.years, 1637)).year,
     1637,
-    'density navigation should select the closest available year at the clicked ratio'
+    'density navigation should map a compressed event position back to the same year'
+);
+assert.equal(
+    overview.getDensityYearRatio(layout.years, 1768),
+    0.16,
+    'the second compressed segment should end at 1768'
+);
+assert.ok(
+    Math.abs(overview.getDensityYearRatio(layout.years, 1950) - (0.16 + ((1950 - 1768) / (2025 - 1768)) * 0.84)) <
+        1e-12,
+    'years after 1768 should retain their true proportional distance within the remaining segment'
+);
+assert.match(
+    overview.buildDensityBreakMarkers(layout),
+    /data-gap-years="2437"[^>]*>.*压缩2437年/,
+    'the density navigator should label the compressed gap after the ancient event'
+);
+assert.match(
+    overview.buildDensityBreakMarkers(layout),
+    /data-gap-years="131"[^>]*>.*压缩131年/,
+    'the density navigator should label the compressed gap between 1637 and 1768'
+);
+assert.match(
+    overview.buildDensityBreakMarkers(layout, 'en'),
+    /2437y compressed/,
+    'the compressed density segment should have a localized English label'
 );
 assert.equal(
     overview.getCenteredScrollLeft(1000, 400, 2000),
