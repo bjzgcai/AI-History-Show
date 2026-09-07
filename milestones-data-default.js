@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-09-07 03:03
+// 生成时间: 2026-09-07 03:38
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 236, errors 0
 
@@ -84144,10 +84144,16 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
+        "resources/images/1956-dartmouth/article/001-invitation.png",
+        "resources/images/1956-dartmouth/article/002-solomonoff-outline.png",
+        "resources/images/1956-dartmouth/article/003-homeostat-sketch.png",
+        "resources/images/1956-dartmouth/article/004-dictionary-window.png",
         "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
         "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
-        "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
-        "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png"
+        "resources/images/1956-dartmouth/article/005-dictionary-window.png",
+        "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png",
+        "resources/images/1956-dartmouth/article/000-campus.png"
       ],
       "overviewImage": "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
       "overviewImageAssetId": "asset-1956-dartmouth-historical-04",
@@ -84188,15 +84194,146 @@ const milestones = [
         }
       ],
       "assetIds": [
+        "asset-1956-dartmouth-historical-04",
+        "asset-1956-dartmouth-article-invitation",
+        "asset-1956-dartmouth-article-outline",
+        "asset-1956-dartmouth-article-homeostat",
+        "asset-1956-dartmouth-article-dictionary",
         "asset-1956-dartmouth-historical-02",
         "asset-1956-dartmouth-historical-01",
-        "asset-1956-dartmouth-historical-04",
+        "asset-1956-dartmouth-article-dictionary-window",
         "asset-1956-dartmouth-school",
+        "asset-1956-dartmouth-article-campus",
         "asset-1956-dartmouth-audio-zh-original-v1",
         "asset-1956-dartmouth-audio-en-v1"
       ]
     },
     "imageMeta": {
+      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg": {
+        "caption": {
+          "zh": "达特茅斯会议 - AI正式诞生！",
+          "en": "Dartmouth Workshop - AI Is Born!"
+        },
+        "subcaption": {
+          "zh": "与达特茅斯会议 - AI正式诞生！相关的历史图像资料。",
+          "en": "Historical image reference related to Dartmouth Workshop - AI Is Born!."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/1956-dartmouth/article/001-invitation.png": {
+        "caption": {
+          "zh": "1956年3月人工智能夏季研究项目邀请信",
+          "en": "March 1956 invitation to the Summer Research Project on Artificial Intelligence"
+        },
+        "subcaption": {
+          "zh": "约翰·麦卡锡邀请雷·所罗门诺夫参加达特茅斯夏季研讨会。",
+          "en": "John McCarthy invited Ray Solomonoff to the Dartmouth summer workshop."
+        },
+        "license": {
+          "zh": "来源文章配图；正式发布前需核实图片授权。",
+          "en": "Image reproduced by the source article; verify rights before publication."
+        },
+        "sourceId": "source-dartmouth-jam-session-article",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "来源文章配图；正式发布前需核实图片授权。",
+            "en": "Image reproduced by the source article; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/1956-dartmouth/article/002-solomonoff-outline.png": {
+        "caption": {
+          "zh": "所罗门诺夫关于思考机器的研究提纲",
+          "en": "Solomonoff's outline for research on thinking machines"
+        },
+        "subcaption": {
+          "zh": "达特茅斯夏季会议研究构想的档案记录。",
+          "en": "An archival record of the research ideas brought to the Dartmouth summer project."
+        },
+        "license": {
+          "zh": "来源文章配图；正式发布前需核实图片授权。",
+          "en": "Image reproduced by the source article; verify rights before publication."
+        },
+        "sourceId": "source-dartmouth-jam-session-article",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "来源文章配图；正式发布前需核实图片授权。",
+            "en": "Image reproduced by the source article; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/1956-dartmouth/article/003-homeostat-sketch.png": {
+        "caption": {
+          "zh": "1956年达特茅斯会议参会者资料图",
+          "en": "Participant reference panel for the 1956 Dartmouth Conference"
+        },
+        "subcaption": {
+          "zh": "会议发起人与部分参会者的姓名资料。",
+          "en": "Names and reference images of workshop organizers and selected participants."
+        },
+        "license": {
+          "zh": "来源文章配图；正式发布前需核实图片授权。",
+          "en": "Image reproduced by the source article; verify rights before publication."
+        },
+        "sourceId": "source-dartmouth-jam-session-article",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "来源文章配图；正式发布前需核实图片授权。",
+            "en": "Image reproduced by the source article; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/1956-dartmouth/article/004-dictionary-window.png": {
+        "caption": {
+          "zh": "阿什比内稳器草图与重绘图",
+          "en": "Ashby's homeostat sketch and redraw"
+        },
+        "subcaption": {
+          "zh": "所罗门诺夫记录的阿什比演示装置。",
+          "en": "Solomonoff's record of Ashby's demonstration device."
+        },
+        "license": {
+          "zh": "来源文章配图；正式发布前需核实图片授权。",
+          "en": "Image reproduced by the source article; verify rights before publication."
+        },
+        "sourceId": "source-dartmouth-jam-session-article",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "来源文章配图；正式发布前需核实图片授权。",
+            "en": "Image reproduced by the source article; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image",
+        "figureIds": []
+      },
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg": {
         "caption": {
           "zh": "达特茅斯会议提议封面",
@@ -84224,12 +84361,12 @@ const milestones = [
       },
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg": {
         "caption": {
-          "zh": "达特茅斯会议发起人",
-          "en": "Organizer of the Dartmouth Conference"
+          "zh": "2006 年“AI@50”五十周年纪念大会上，重聚的五位 1956 年达特茅斯夏季研讨会亲历者（从左至右）：特伦查德·莫尔、约翰·麦卡锡、马文·明斯基、奥利弗·塞弗里奇、雷·所罗门诺夫。",
+          "en": "At the 2006 AI@50 anniversary conference, five participants from the 1956 Dartmouth Summer Research Project reunited (from left to right): Trenchard More, John McCarthy, Marvin Minsky, Oliver Selfridge, and Ray Solomonoff."
         },
         "subcaption": {
-          "zh": "与达特茅斯会议发起人相关的历史图像资料。",
-          "en": "Historical image reference related to Organizer of the Dartmouth Conference."
+          "zh": "1956 年达特茅斯夏季研讨会亲历者的纪念合影。",
+          "en": "A commemorative reunion photograph of 1956 Dartmouth workshop participants."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -84247,25 +84384,25 @@ const milestones = [
         "type": "image",
         "figureIds": []
       },
-      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg": {
+      "resources/images/1956-dartmouth/article/005-dictionary-window.png": {
         "caption": {
-          "zh": "达特茅斯会议 - AI正式诞生！",
-          "en": "Dartmouth Workshop - AI Is Born!"
+          "zh": "数学系教室窗景与“启发式”词典",
+          "en": "Mathematics classroom view and the dictionary entry for heuristic"
         },
         "subcaption": {
-          "zh": "与达特茅斯会议 - AI正式诞生！相关的历史图像资料。",
-          "en": "Historical image reference related to Dartmouth Workshop - AI Is Born!."
+          "zh": "会议参与者围绕“启发式”概念讨论的历史线索。",
+          "en": "A historical trace of the participants' discussion around the idea of heuristics."
         },
         "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
+          "zh": "来源文章配图；正式发布前需核实图片授权。",
+          "en": "Image reproduced by the source article; verify rights before publication."
         },
-        "sourceId": "source-legacy-event-record",
+        "sourceId": "source-dartmouth-jam-session-article",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
+            "zh": "来源文章配图；正式发布前需核实图片授权。",
+            "en": "Image reproduced by the source article; verify rights before publication."
           }
         },
         "role": "supporting-image",
@@ -84291,6 +84428,31 @@ const milestones = [
           "license": {
             "zh": "Migrated from legacy media metadata; verify rights before publication.",
             "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/1956-dartmouth/article/000-campus.png": {
+        "caption": {
+          "zh": "达特茅斯学院主图书馆",
+          "en": "Dartmouth College's main library"
+        },
+        "subcaption": {
+          "zh": "新罕布什尔州汉诺威的会议地点背景。",
+          "en": "The setting for the workshop in Hanover, New Hampshire."
+        },
+        "license": {
+          "zh": "来源文章配图；正式发布前需核实图片授权。",
+          "en": "Image reproduced by the source article; verify rights before publication."
+        },
+        "sourceId": "source-dartmouth-jam-session-article",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "来源文章配图；正式发布前需核实图片授权。",
+            "en": "Image reproduced by the source article; verify rights before publication."
           }
         },
         "role": "supporting-image",

@@ -15,6 +15,8 @@ const RETIRED_RESOURCE_METADATA = new Set([
     'resources/videos/urls.txt'
 ]);
 const OMITTED_STATIC_FILES = new Set(['public/fonts/oppo-sans/OPPO Sans 4.0.ttf']);
+const SOURCE_HAN_FONT = 'public/fonts/source-han-sans/SourceHanSansSC-VF.woff2';
+const SOURCE_HAN_LICENSE = 'public/fonts/source-han-sans/OFL.txt';
 const RIGHTS_REVIEW_STATIC_FILES = new Set([
     'resources/images/external/1997-logistello/logistello-game-1-positions.png',
     'resources/images/external/2013-dqn/dqn-breakout-paper-frame.png',
@@ -63,6 +65,12 @@ function validateBundle() {
         fs.existsSync(path.join(OUTPUT, 'public', 'fonts', 'oppo-sans', 'OPPO Sans 4.0.ttf')),
         false,
         'The oversized OPPO Sans TTF must not enter the static bundle'
+    );
+    assert.ok(fs.existsSync(path.join(OUTPUT, SOURCE_HAN_FONT)), `Bundle is missing ${SOURCE_HAN_FONT}`);
+    assert.ok(fs.existsSync(path.join(OUTPUT, SOURCE_HAN_LICENSE)), `Bundle is missing ${SOURCE_HAN_LICENSE}`);
+    assert.ok(
+        fs.statSync(path.join(OUTPUT, SOURCE_HAN_FONT)).size < 15 * 1024 * 1024,
+        'The bundled Source Han Sans web font must remain below 15 MiB'
     );
     assert.ok(
         fs.existsSync(path.join(OUTPUT, 'shared', 'milestone-view.js')),
@@ -125,6 +133,13 @@ function validateBundle() {
         assert.match(html, /milestones-data\.js/);
         assert.doesNotMatch(html, /milestones-data-archive-preview\.js/);
         assert.doesNotMatch(html, /public\/fonts\/oppo-sans\/OPPO Sans 4\.0\.ttf/);
+        assert.match(html, /public\/fonts\/source-han-sans\/SourceHanSansSC-VF\.woff2/);
+        assert.match(html, /font-family:\s*"Source Han Sans SC"/);
+        assert.match(html, /--year-font:\s*"Arial Narrow",\s*var\(--ui-font\)/);
+        assert.doesNotMatch(
+            html,
+            /OPPOSans|PingFang SC|Microsoft YaHei|Gotham|Georgia|Times New Roman|Courier New|SFMono-Regular/
+        );
     }
 
     delete require.cache[require.resolve(path.join(OUTPUT, 'milestones-data.js'))];

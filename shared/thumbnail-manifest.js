@@ -1,6 +1,5 @@
 (function (globalScope) {
     globalScope.AIHistoryThumbnailManifest = new Set([
-        '1956-dartmouth/historical/1956-dartmouth_historical_02.jpg',
         '1956-dartmouth/historical/1956-dartmouth_historical_04.jpg',
         '1969-ai-winter/people/1969-ai-winter_papers_01.png',
         '1986-backpropagation/people/1986-backpropagation_paper_01.png',
