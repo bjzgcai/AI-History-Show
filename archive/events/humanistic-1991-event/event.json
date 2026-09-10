@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "humanistic-figure-40",
+      "avatarAssetId": "asset-humanistic-1991-event-daniel-dennett-portrait",
       "role": {
         "zh": "《意识的解释》作者",
         "en": "Author of Consciousness Explained"

@@ -34,5 +34,24 @@
     ],
     "editable": false,
     "figureIds": []
+  },
+  {
+    "id": "asset-frankenstein-1818-mary-shelley-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/frankenstein-1818/mary-shelley-portrait.jpg",
+    "role": "portrait",
+    "caption": { "zh": "玛丽·雪莱肖像", "en": "Mary Shelley portrait" },
+    "subcaption": { "zh": "《弗兰肯斯坦》作者；理查德·罗斯韦尔绘。", "en": "Author of Frankenstein; painted by Richard Rothwell." },
+    "sourceId": "source-frankenstein-1818-mary-shelley-portrait",
+    "sourceName": { "zh": "Wikimedia Commons 文件页", "en": "Wikimedia Commons file page" },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:RothwellMaryShelley.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": { "zh": "公有领域", "en": "Public domain" },
+      "usage": { "zh": "用于《弗兰肯斯坦》作者头像展示。", "en": "Used as the author portrait for Frankenstein." }
+    },
+    "usage": ["variant:humanistic-cycle"],
+    "editable": false,
+    "figureIds": ["mary-shelley"]
   }
 ]

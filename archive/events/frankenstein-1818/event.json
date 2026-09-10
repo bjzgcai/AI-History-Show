@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "mary-shelley",
+      "avatarAssetId": "asset-frankenstein-1818-mary-shelley-portrait",
       "role": {
         "zh": "《弗兰肯斯坦》作者",
         "en": "Author of Frankenstein; or, The Modern Prometheus"
@@ -101,11 +102,13 @@
       }
     ],
     "assetIds": [
+      "asset-frankenstein-1818-mary-shelley-portrait",
       "asset-frankenstein-1818-mary-shelley-biography-scan"
     ],
     "sourceIds": [
       "source-frankenstein-1818-primary",
-      "source-frankenstein-1818-mary-shelley-biography-scan"
+      "source-frankenstein-1818-mary-shelley-biography-scan",
+      "source-frankenstein-1818-mary-shelley-portrait"
     ],
     "claimIds": [
       "claim-frankenstein-1818-core"

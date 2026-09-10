@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "humanistic-figure-63",
+      "avatarAssetId": "asset-humanistic-2021-event-kazuo-ishiguro-portrait",
       "role": {
         "zh": "《克拉拉与太阳》作者",
         "en": "Author of Klara and the Sun"
@@ -101,11 +102,13 @@
       }
     ],
     "assetIds": [
+      "asset-humanistic-2021-event-kazuo-ishiguro-portrait",
       "asset-humanistic-2021-event-klara-sun-logo"
     ],
     "sourceIds": [
       "source-humanistic-2021-event-record",
-      "source-humanistic-2021-event-klara-sun-logo"
+      "source-humanistic-2021-event-klara-sun-logo",
+      "source-humanistic-2021-event-kazuo-ishiguro-portrait"
     ],
     "claimIds": [
       "claim-humanistic-2021-event-core"

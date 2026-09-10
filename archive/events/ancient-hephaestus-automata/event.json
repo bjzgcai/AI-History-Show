@@ -34,9 +34,10 @@
   "figures": [
     {
       "figureId": "homer",
+      "avatarAssetId": "asset-ancient-hephaestus-automata-homer-bust",
       "role": {
-        "zh": "《伊利亚特》作者传统",
-        "en": "Authorial tradition of The Iliad"
+        "zh": "《伊利亚特》传统归属作者",
+        "en": "Traditionally attributed author of the Iliad"
       },
       "primary": true
     }
@@ -101,11 +102,15 @@
       }
     ],
     "assetIds": [
+      "asset-ancient-hephaestus-automata-homer-bust",
+      "asset-ancient-hephaestus-automata-iliad-1488-editio-princeps",
       "asset-ancient-hephaestus-automata-verified-image"
     ],
     "sourceIds": [
       "source-ancient-hephaestus-automata-record",
-      "source-ancient-hephaestus-automata-verified-image"
+      "source-ancient-hephaestus-automata-verified-image",
+      "source-ancient-hephaestus-automata-iliad-1488-editio-princeps",
+      "source-ancient-hephaestus-automata-homer-bust"
     ],
     "claimIds": [
       "claim-ancient-hephaestus-automata-core"

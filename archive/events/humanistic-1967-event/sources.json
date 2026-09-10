@@ -38,5 +38,16 @@
       "en": "Interface reference from the interactive adaptation of Harlan Ellison's story; the file page marks it public domain. Retain the author attribution and follow the license terms on the file page."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1967-event-harlan-ellison-portrait",
+    "type": "image-source",
+    "label": { "zh": "图片来源", "en": "Image source" },
+    "title": { "zh": "哈兰·埃里森肖像（1986）", "en": "Harlan Ellison portrait (1986)" },
+    "url": "https://commons.wikimedia.org/wiki/File:Harlan_Ellison_at_the_LA_Press_Club_19860712_(cropped_portrait).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": { "zh": "Commons 文件页确认人物为哈兰·埃里森，摄影者 Pip R. Lagenta，许可为 CC BY 2.0。", "en": "The Commons file page identifies Harlan Ellison; photographed by Pip R. Lagenta and licensed CC BY 2.0." },
+    "purpose": "image-provenance"
   }
 ]

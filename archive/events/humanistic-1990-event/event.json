@@ -33,10 +33,20 @@
   ],
   "figures": [
     {
-      "figureId": "humanistic-figure-38",
+      "figureId": "william-gibson",
+      "avatarAssetId": "asset-humanistic-1990-event-william-gibson-portrait",
       "role": {
         "zh": "《差分机》共同作者",
-        "en": "Co-authors of The Difference Engine"
+        "en": "Co-author of The Difference Engine"
+      },
+      "primary": true
+    },
+    {
+      "figureId": "bruce-sterling",
+      "avatarAssetId": "asset-humanistic-1990-event-bruce-sterling-portrait",
+      "role": {
+        "zh": "《差分机》共同作者",
+        "en": "Co-author of The Difference Engine"
       },
       "primary": true
     }
@@ -101,11 +111,13 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-1990-event-william-gibson-portrait"
+      "asset-humanistic-1990-event-william-gibson-portrait",
+      "asset-humanistic-1990-event-bruce-sterling-portrait"
     ],
     "sourceIds": [
       "source-humanistic-1990-event-record",
-      "source-humanistic-1990-event-william-gibson-portrait"
+      "source-humanistic-1990-event-william-gibson-portrait",
+      "source-humanistic-1990-event-bruce-sterling-portrait"
     ],
     "claimIds": [
       "claim-humanistic-1990-event-core"

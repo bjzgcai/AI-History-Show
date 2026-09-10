@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "humanistic-figure-53",
+      "avatarAssetId": "asset-humanistic-2003-event-nick-bostrom-portrait",
       "role": {
         "zh": "《你生活在计算机模拟中吗？》作者",
         "en": "Author of Are You Living in a Computer Simulation?"

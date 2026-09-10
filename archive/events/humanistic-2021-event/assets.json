@@ -36,5 +36,24 @@
     "figureIds": [
       "humanistic-figure-63"
     ]
+  },
+  {
+    "id": "asset-humanistic-2021-event-kazuo-ishiguro-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2021-event/kazuo-ishiguro-portrait.jpg",
+    "role": "portrait",
+    "caption": { "zh": "石黑一雄肖像", "en": "Kazuo Ishiguro portrait" },
+    "subcaption": { "zh": "《克拉拉与太阳》作者。", "en": "Author of Klara and the Sun." },
+    "sourceId": "source-humanistic-2021-event-kazuo-ishiguro-portrait",
+    "sourceName": { "zh": "Wikimedia Commons 文件页", "en": "Wikimedia Commons file page" },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:MKr377543_Kazuo_Ishiguro_(A_Pale_View_of_Hills,_Cannes_2025).jpg",
+    "rights": {
+      "status": "licensed",
+      "license": { "zh": "CC BY-SA 4.0", "en": "CC BY-SA 4.0" },
+      "usage": { "zh": "摄影者 Martin Kraft；用于作者头像展示。", "en": "Photograph by Martin Kraft; used as the author portrait." }
+    },
+    "usage": ["variant:humanistic-cycle"],
+    "editable": false,
+    "figureIds": ["humanistic-figure-63"]
   }
 ]

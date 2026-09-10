@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "nick-bostrom",
+      "avatarAssetId": "asset-humanistic-2014-superintelligence-verified-image",
       "role": {
         "zh": "《超级智能》作者",
         "en": "Author of Superintelligence"

@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "humanistic-figure-22",
+      "avatarAssetId": "asset-humanistic-1967-event-harlan-ellison-portrait",
       "role": {
         "zh": "《无声狂啸》作者",
         "en": "Author of I Have No Mouth, and I Must Scream"
@@ -101,11 +102,13 @@
       }
     ],
     "assetIds": [
+      "asset-humanistic-1967-event-harlan-ellison-portrait",
       "asset-humanistic-1967-event-am-talkfield"
     ],
     "sourceIds": [
       "source-humanistic-1967-event-record",
-      "source-humanistic-1967-event-am-talkfield"
+      "source-humanistic-1967-event-am-talkfield",
+      "source-humanistic-1967-event-harlan-ellison-portrait"
     ],
     "claimIds": [
       "claim-humanistic-1967-event-core"

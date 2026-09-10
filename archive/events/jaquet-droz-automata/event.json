@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "pierre-jaquet-droz",
+      "avatarAssetId": "asset-jaquet-droz-automata-pierre-jaquet-droz-portrait",
       "role": {
         "zh": "雅克-德罗自动人偶制造者",
         "en": "Maker associated with the Jaquet-Droz automata"
@@ -101,13 +102,15 @@
       }
     ],
     "assetIds": [
+      "asset-jaquet-droz-automata-pierre-jaquet-droz-portrait",
       "asset-jaquet-droz-automata-jaquet-droz-writer",
       "asset-jaquet-droz-automata-jaquet-droz-musician"
     ],
     "sourceIds": [
       "source-jaquet-droz-automata-primary",
       "source-jaquet-droz-automata-jaquet-droz-writer",
-      "source-jaquet-droz-automata-jaquet-droz-musician"
+      "source-jaquet-droz-automata-jaquet-droz-musician",
+      "source-jaquet-droz-automata-pierre-jaquet-droz-portrait"
     ],
     "claimIds": [
       "claim-jaquet-droz-automata-core"

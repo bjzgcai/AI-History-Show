@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "douglas-hofstadter",
+      "avatarAssetId": "asset-humanistic-1979-geb-verified-image",
       "role": {
         "zh": "《哥德尔、艾舍尔、巴赫》作者",
         "en": "Author of Gödel, Escher, Bach"

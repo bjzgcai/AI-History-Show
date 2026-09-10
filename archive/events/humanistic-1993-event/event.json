@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "humanistic-figure-43",
+      "avatarAssetId": "asset-humanistic-1993-event-neal-stephenson-portrait",
       "role": {
         "zh": "《钻石时代》作者",
         "en": "Author of The Diamond Age"

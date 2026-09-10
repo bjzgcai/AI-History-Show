@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "eta-hoffmann",
+      "avatarAssetId": "asset-sandman-1816-eta-hoffmann-self-portrait",
       "role": {
         "zh": "《沙人》作者",
         "en": "Author of The Sandman"
@@ -101,11 +102,13 @@
       }
     ],
     "assetIds": [
+      "asset-sandman-1816-eta-hoffmann-self-portrait",
       "asset-sandman-1816-sandman-illustration-009"
     ],
     "sourceIds": [
       "source-sandman-1816-primary",
-      "source-sandman-1816-sandman-illustration-009"
+      "source-sandman-1816-sandman-illustration-009",
+      "source-sandman-1816-eta-hoffmann-self-portrait"
     ],
     "claimIds": [
       "claim-sandman-1816-core"

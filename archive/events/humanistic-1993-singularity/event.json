@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "vernor-vinge",
+      "avatarAssetId": "asset-humanistic-1993-singularity-verified-image",
       "role": {
         "zh": "技术奇点概念的重要提出者",
         "en": "Major proposer of the technological singularity concept"

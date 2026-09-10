@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "humanistic-figure-31",
+      "avatarAssetId": "asset-humanistic-1980-event-john-searle-portrait",
       "role": {
         "zh": "中文房间思想实验提出者",
         "en": "Originator of the Chinese Room thought experiment"

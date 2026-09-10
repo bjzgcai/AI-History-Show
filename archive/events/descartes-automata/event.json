@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "rene-descartes",
+      "avatarAssetId": "asset-descartes-automata-descartes-portrait",
       "role": {
         "zh": "《方法论》与《第一哲学沉思录》作者",
         "en": "Author of Discourse on the Method and Meditations on First Philosophy"

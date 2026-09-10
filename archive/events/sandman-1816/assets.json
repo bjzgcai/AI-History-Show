@@ -34,5 +34,24 @@
     ],
     "editable": false,
     "figureIds": []
+  },
+  {
+    "id": "asset-sandman-1816-eta-hoffmann-self-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/sandman-1816/eta-hoffmann-self-portrait.jpg",
+    "role": "portrait",
+    "caption": { "zh": "E.T.A.霍夫曼自画像", "en": "E. T. A. Hoffmann self-portrait" },
+    "subcaption": { "zh": "《沙人》作者。", "en": "Author of The Sandman." },
+    "sourceId": "source-sandman-1816-eta-hoffmann-self-portrait",
+    "sourceName": { "zh": "Wikimedia Commons 文件页", "en": "Wikimedia Commons file page" },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:E._T._A._Hoffmann,_autorretrato.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": { "zh": "公有领域", "en": "Public domain" },
+      "usage": { "zh": "用于《沙人》作者头像展示。", "en": "Used as the author portrait for The Sandman." }
+    },
+    "usage": ["variant:humanistic-cycle"],
+    "editable": false,
+    "figureIds": ["eta-hoffmann"]
   }
 ]

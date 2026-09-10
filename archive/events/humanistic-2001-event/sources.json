@@ -58,5 +58,16 @@
       "en": "The TMDB gallery is used to locate posters, film scenes and promotional visuals; each original file URL is retained in the corresponding asset record."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-2001-event-steven-spielberg-portrait",
+    "type": "image-source",
+    "label": { "zh": "图片来源", "en": "Image source" },
+    "title": { "zh": "史蒂文·斯皮尔伯格肖像", "en": "Steven Spielberg portrait" },
+    "url": "https://commons.wikimedia.org/wiki/File:Steven_Spielberg_portrait.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": { "zh": "Commons 文件页确认人物为史蒂文·斯皮尔伯格，摄影者 GianAngelo Pistoia，许可为 CC BY-SA 3.0。", "en": "The Commons file page identifies Steven Spielberg; photographed by GianAngelo Pistoia and licensed CC BY-SA 3.0." },
+    "purpose": "image-provenance"
   }
 ]

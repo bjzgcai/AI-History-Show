@@ -7,10 +7,10 @@
       "en": "Internal record"
     },
     "title": {
-      "zh": "《巴别塔-17》（Babel-17）",
+      "zh": "《巴别塔-17》",
       "en": "Babel-17"
     },
-    "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%EF%BC%88Babel-17%EF%BC%89%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
+    "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7R%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
     "language": "zh",
     "reliability": "reference-only",
     "notes": {
@@ -34,8 +34,8 @@
     "language": "en",
     "reliability": "primary",
     "notes": {
-      "zh": "《巴别塔-17》作者弗诺·文奇肖像；文件页标注 CC BY-SA 3.0。 使用前保留文件页的作者署名与许可要求。",
-      "en": "Author of Babel-17, Vernor Vinge; the file page records CC BY-SA 3.0. Retain the author attribution and follow the license terms on the file page."
+      "zh": "弗诺·文奇并非《巴别塔-17》作者；该误配肖像仅作为后台检索记录保留，不用于事件展示。文件页标注 CC BY-SA 3.0。",
+      "en": "Vernor Vinge is not the author of Babel-17. This mismatched portrait is retained only as a backend research record and is excluded from event display; the file page records CC BY-SA 3.0."
     },
     "purpose": "image-provenance"
   },

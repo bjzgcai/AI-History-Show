@@ -34,7 +34,45 @@
     ],
     "editable": false,
     "figureIds": [
-      "humanistic-figure-38"
+      "william-gibson"
+    ]
+  },
+  {
+    "id": "asset-humanistic-1990-event-bruce-sterling-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1990-event/bruce-sterling-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "布鲁斯·斯特林肖像",
+      "en": "Bruce Sterling portrait"
+    },
+    "subcaption": {
+      "zh": "《差分机》共同作者布鲁斯·斯特林。",
+      "en": "Bruce Sterling, co-author of The Difference Engine."
+    },
+    "sourceId": "source-humanistic-1990-event-bruce-sterling-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons 文件页",
+      "en": "Wikimedia Commons file page"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruce_Sterling_at_ARE_2010.jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY 2.0",
+        "en": "CC BY 2.0"
+      },
+      "usage": {
+        "zh": "摄影者 Chris Cameron；用于《差分机》共同作者头像展示。",
+        "en": "Photograph by Chris Cameron; used as the portrait of a co-author of The Difference Engine."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "bruce-sterling"
     ]
   }
 ]

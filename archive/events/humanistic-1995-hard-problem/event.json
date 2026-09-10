@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "david-chalmers",
+      "avatarAssetId": "asset-humanistic-1995-hard-problem-verified-image",
       "role": {
         "zh": "“困难问题”提出者",
         "en": "Formulator of the hard problem"

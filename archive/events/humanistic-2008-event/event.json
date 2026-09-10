@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "humanistic-figure-56",
+      "avatarAssetId": "asset-humanistic-2008-event-andrew-stanton-portrait",
       "role": {
         "zh": "《机器人总动员》导演兼联合编剧",
         "en": "Director and co-writer of WALL-E"
@@ -101,6 +102,7 @@
       }
     ],
     "assetIds": [
+      "asset-humanistic-2008-event-andrew-stanton-portrait",
       "asset-humanistic-2008-event-tmdb-poster",
       "asset-humanistic-2008-event-tmdb-scene-1",
       "asset-humanistic-2008-event-tmdb-scene-2",
@@ -109,7 +111,8 @@
     "sourceIds": [
       "source-humanistic-2008-event-record",
       "source-humanistic-2008-event-wall-e-pixar-reference",
-      "source-humanistic-2008-event-tmdb-images"
+      "source-humanistic-2008-event-tmdb-images",
+      "source-humanistic-2008-event-andrew-stanton-portrait"
     ],
     "claimIds": [
       "claim-humanistic-2008-event-core"
