@@ -36,5 +36,24 @@
     "figureIds": [
       "humanistic-figure-22"
     ]
+  },
+  {
+    "id": "asset-humanistic-1967-event-harlan-ellison-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1967-event/harlan-ellison-portrait.jpg",
+    "role": "portrait",
+    "caption": { "zh": "哈兰·埃里森肖像", "en": "Harlan Ellison portrait" },
+    "subcaption": { "zh": "《无声狂啸》作者，1986年摄。", "en": "Author of I Have No Mouth, and I Must Scream, photographed in 1986." },
+    "sourceId": "source-humanistic-1967-event-harlan-ellison-portrait",
+    "sourceName": { "zh": "Wikimedia Commons 文件页", "en": "Wikimedia Commons file page" },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harlan_Ellison_at_the_LA_Press_Club_19860712_(cropped_portrait).jpg",
+    "rights": {
+      "status": "licensed",
+      "license": { "zh": "CC BY 2.0", "en": "CC BY 2.0" },
+      "usage": { "zh": "摄影者 Pip R. Lagenta；用于作者头像展示。", "en": "Photograph by Pip R. Lagenta; used as the author portrait." }
+    },
+    "usage": ["variant:humanistic-cycle"],
+    "editable": false,
+    "figureIds": ["humanistic-figure-22"]
   }
 ]

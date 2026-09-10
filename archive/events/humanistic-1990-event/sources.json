@@ -38,5 +38,25 @@
       "en": "Co-author of The Difference Engine; photograph by Gonzo Bonzo, CC BY-SA 2.0. Retain the author attribution and follow the license terms on the file page."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1990-event-bruce-sterling-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "布鲁斯·斯特林在 ARE 2010 演讲",
+      "en": "Bruce Sterling speaking at ARE 2010"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Bruce_Sterling_at_ARE_2010.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Commons 文件页确认人物为布鲁斯·斯特林，摄影者 Chris Cameron，拍摄于2010年6月2日，许可为 CC BY 2.0。",
+      "en": "The Commons file page identifies Bruce Sterling; photographed by Chris Cameron on June 2, 2010 and licensed CC BY 2.0."
+    },
+    "purpose": "image-provenance"
   }
 ]

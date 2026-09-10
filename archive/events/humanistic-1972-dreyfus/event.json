@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "hubert-dreyfus",
+      "avatarAssetId": "asset-humanistic-1972-dreyfus-verified-image",
       "role": {
         "zh": "《计算机不能做什么》作者",
         "en": "Author of What Computers Can't Do"

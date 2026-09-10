@@ -36,5 +36,24 @@
     "figureIds": [
       "humanistic-figure-23"
     ]
+  },
+  {
+    "id": "asset-humanistic-1968-event-philip-k-dick-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1968-event/philip-k-dick-portrait.jpg",
+    "role": "portrait",
+    "caption": { "zh": "菲利普·K·迪克肖像", "en": "Philip K. Dick portrait" },
+    "subcaption": { "zh": "《仿生人会梦见电子羊吗？》作者。", "en": "Author of Do Androids Dream of Electric Sheep?" },
+    "sourceId": "source-humanistic-1968-event-philip-k-dick-portrait",
+    "sourceName": { "zh": "Wikimedia Commons 文件页", "en": "Wikimedia Commons file page" },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Philip_K_Dick_in_early_1960s_Arthur_Knight_(3x4_cropped).jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": { "zh": "公有领域", "en": "Public domain" },
+      "usage": { "zh": "摄影者 Arthur Knight；用于作者头像展示。", "en": "Photograph by Arthur Knight; used as the author portrait." }
+    },
+    "usage": ["variant:humanistic-cycle"],
+    "editable": false,
+    "figureIds": ["humanistic-figure-23"]
   }
 ]

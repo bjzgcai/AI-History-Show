@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "humanistic-figure-23",
+      "avatarAssetId": "asset-humanistic-1968-event-philip-k-dick-portrait",
       "role": {
         "zh": "《仿生人会梦见电子羊吗？》作者",
         "en": "Author of Do Androids Dream of Electric Sheep?"
@@ -101,11 +102,13 @@
       }
     ],
     "assetIds": [
+      "asset-humanistic-1968-event-philip-k-dick-portrait",
       "asset-humanistic-1968-event-androids-dream-cover"
     ],
     "sourceIds": [
       "source-humanistic-1968-event-record",
-      "source-humanistic-1968-event-androids-dream-cover"
+      "source-humanistic-1968-event-androids-dream-cover",
+      "source-humanistic-1968-event-philip-k-dick-portrait"
     ],
     "claimIds": [
       "claim-humanistic-1968-event-core"

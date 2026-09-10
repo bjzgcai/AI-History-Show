@@ -11690,6 +11690,25 @@
         "url": "https://www.npg.org.uk/collections/search/person/mp00477/samuel-butler"
       }
     ],
+    "defaultAvatar": {
+      "path": "resources/images/humanistic-cycle/darwin-among-machines-1863/samuel-butler-portrait.jpg",
+      "sourceName": {
+        "en": "Samuel Butler portrait by Charles Gogin",
+        "zh": "查尔斯·戈金所绘塞缪尔·巴特勒肖像"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samuel_Butler_by_Charles_Gogin.jpg",
+      "rights": {
+        "status": "public-domain",
+        "license": {
+          "zh": "公有领域",
+          "en": "Public domain"
+        },
+        "usage": {
+          "zh": "用于塞缪尔·巴特勒相关事件的人物头像展示。",
+          "en": "Used as Samuel Butler's portrait across related events."
+        }
+      }
+    },
     "review": {
       "status": "draft",
       "notes": {
@@ -12083,23 +12102,32 @@
     }
   },
   {
-    "id": "humanistic-figure-38",
+    "id": "bruce-sterling",
     "name": {
-      "zh": "威廉·吉布森与布鲁斯·斯特林",
-      "en": "William Gibson and Bruce Sterling"
+      "zh": "布鲁斯·斯特林",
+      "en": "Bruce Sterling"
     },
     "aliases": [],
-    "type": "team",
+    "type": "person",
     "organizationIds": [],
-    "profileSources": [],
+    "profileSources": [
+      {
+        "type": "image-source",
+        "label": {
+          "zh": "布鲁斯·斯特林肖像",
+          "en": "Bruce Sterling portrait"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Bruce_Sterling_at_ARE_2010.jpg"
+      }
+    ],
     "review": {
       "status": "draft",
       "notes": {
-        "zh": "由 AI 人文清单批量导入，人物身份与中文译名待复核。",
-        "en": "Batch-imported from the AI humanities list; identity and localized name require review."
+        "zh": "《差分机》共同作者。",
+        "en": "Co-author of The Difference Engine."
       },
-      "reviewedAt": "2026-08-27",
-      "reviewer": "humanistic-cycle-content-review"
+      "reviewedAt": "2026-09-10",
+      "reviewer": "ai-humanities-figure-split"
     }
   },
   {

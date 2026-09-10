@@ -27,16 +27,47 @@
       "en": "Image source"
     },
     "title": {
-      "zh": "赫菲斯托斯自动机械相关历史图",
-      "en": "hephaestus-automata"
+      "zh": "铸造厂画家《赫菲斯托斯把阿喀琉斯铠甲交给忒提斯》",
+      "en": "Foundry Painter, Hephaestus hands Achilles' armor to Thetis"
     },
-    "url": "https://commons.wikimedia.org/",
+    "url": "https://commons.wikimedia.org/wiki/File:Hephaistos_Thetis_at_Kylix_by_the_Foundry_Painter_Antikensammlung_Berlin_F2294.jpg",
     "language": "en",
     "reliability": "primary",
     "notes": {
-      "zh": "Wikimedia Commons 文件页确认图片对象；许可：See original source record。",
-      "en": "Wikimedia Commons file page identifies the subject; license: See original source record."
+      "zh": "Wikimedia Commons 文件页说明：阿提卡红绘陶杯，约公元前490—480年，作者归为铸造厂画家，藏于柏林古典文物馆；图片为公有领域。",
+      "en": "The Wikimedia Commons file page identifies an Attic red-figure kylix, c. 490–480 BC, attributed to the Foundry Painter and held by the Antikensammlung Berlin; the image is public domain."
     },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-ancient-hephaestus-automata-iliad-1488-editio-princeps",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "1488年《伊利亚特》首印本（根纳迪乌斯图书馆藏）",
+      "en": "1488 editio princeps of the Iliad at the Gennadius Library"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Demetrios_Chalkokondyles%27s_1488_editio_princeps_of_the_Iliad_in_the_collection_of_the_Gennadius_Library,_Athens,_June_13th,_2023.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Commons 文件页记录该照片由 Katolophyromai 于2023年6月13日在雅典根纳迪乌斯图书馆拍摄，展示德米特里奥斯·查尔科孔迪勒斯编校的1488年《伊利亚特》首印本；许可为 CC BY 4.0。",
+      "en": "The Commons file page records a photograph taken by Katolophyromai at the Gennadius Library in Athens on June 13, 2023, showing Demetrios Chalkokondyles's 1488 editio princeps of the Iliad; licensed CC BY 4.0."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-ancient-hephaestus-automata-homer-bust",
+    "type": "image-source",
+    "label": { "zh": "图片来源", "en": "Image source" },
+    "title": { "zh": "大英博物馆藏荷马理想化胸像", "en": "Idealized bust of Homer in the British Museum" },
+    "url": "https://commons.wikimedia.org/wiki/File:Bust_Homer_BM_1825.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": { "zh": "Commons 文件页说明该作品是希腊化原作的罗马时期复制品，为后世理想化的荷马形象；图片为公有领域。", "en": "The Commons file page describes a Roman copy after a Hellenistic original, representing a later idealized image of Homer; the image is public domain." },
     "purpose": "image-provenance"
   }
 ]

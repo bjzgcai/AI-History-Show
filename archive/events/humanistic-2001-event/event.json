@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "humanistic-figure-52",
+      "avatarAssetId": "asset-humanistic-2001-event-steven-spielberg-portrait",
       "role": {
         "zh": "《人工智能》导演兼联合编剧",
         "en": "Director and co-writer of A.I. Artificial Intelligence"
@@ -101,6 +102,7 @@
       }
     ],
     "assetIds": [
+      "asset-humanistic-2001-event-steven-spielberg-portrait",
       "asset-humanistic-2001-event-tmdb-poster",
       "asset-humanistic-2001-event-tmdb-scene-1",
       "asset-humanistic-2001-event-tmdb-scene-2",
@@ -109,7 +111,8 @@
     "sourceIds": [
       "source-humanistic-2001-event-record",
       "source-humanistic-2001-event-ai-film-logo",
-      "source-humanistic-2001-event-tmdb-images"
+      "source-humanistic-2001-event-tmdb-images",
+      "source-humanistic-2001-event-steven-spielberg-portrait"
     ],
     "claimIds": [
       "claim-humanistic-2001-event-core"

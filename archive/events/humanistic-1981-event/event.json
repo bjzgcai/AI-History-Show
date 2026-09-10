@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "humanistic-figure-32",
+      "avatarAssetId": "asset-humanistic-1981-event-vernor-vinge-portrait",
       "role": {
         "zh": "《真名实姓》作者",
         "en": "Author of True Names"

@@ -38,5 +38,16 @@
       "en": "Wikimedia Commons file page identifies Public domain; retain author attribution and follow the page terms."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-sandman-1816-eta-hoffmann-self-portrait",
+    "type": "image-source",
+    "label": { "zh": "图片来源", "en": "Image source" },
+    "title": { "zh": "E.T.A.霍夫曼自画像", "en": "E. T. A. Hoffmann self-portrait" },
+    "url": "https://commons.wikimedia.org/wiki/File:E._T._A._Hoffmann,_autorretrato.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": { "zh": "Commons 文件页将作品标识为E.T.A.霍夫曼在1822年前绘制的自画像；图片为公有领域。", "en": "The Commons file page identifies the work as E. T. A. Hoffmann's self-portrait made before 1822; the image is public domain." },
+    "purpose": "image-provenance"
   }
 ]

@@ -58,5 +58,16 @@
       "en": "The TMDB gallery is used to locate posters, film scenes and promotional visuals; each original file URL is retained in the corresponding asset record."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-2008-event-andrew-stanton-portrait",
+    "type": "image-source",
+    "label": { "zh": "图片来源", "en": "Image source" },
+    "title": { "zh": "安德鲁·斯坦顿肖像", "en": "Andrew Stanton portrait" },
+    "url": "https://commons.wikimedia.org/wiki/File:Andrew_Stanton_at_the_2026_Sundance_Film_Festival_for_In_the_Blink_of_an_Eye_(01)_(cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": { "zh": "Commons 文件页确认人物为安德鲁·斯坦顿，摄影者 Sarah K Joyce，许可为 CC BY-SA 4.0。", "en": "The Commons file page identifies Andrew Stanton; photographed by Sarah K Joyce and licensed CC BY-SA 4.0." },
+    "purpose": "image-provenance"
   }
 ]

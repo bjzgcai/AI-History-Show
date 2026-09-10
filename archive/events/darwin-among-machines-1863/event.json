@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "samuel-butler",
+      "avatarAssetId": "asset-darwin-among-machines-1863-samuel-butler-portrait",
       "role": {
         "zh": "《机器中的达尔文》作者",
         "en": "Author of Darwin among the Machines"

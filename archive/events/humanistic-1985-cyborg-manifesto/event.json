@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "donna-haraway",
+      "avatarAssetId": "asset-humanistic-1985-cyborg-manifesto-verified-image",
       "role": {
         "zh": "《赛博格宣言》作者",
         "en": "Author of A Cyborg Manifesto"

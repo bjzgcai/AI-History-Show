@@ -38,5 +38,16 @@
       "en": "Cover reference for Philip K. Dick's novel; the file page marks it public domain. Retain the author attribution and follow the license terms on the file page."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1968-event-philip-k-dick-portrait",
+    "type": "image-source",
+    "label": { "zh": "图片来源", "en": "Image source" },
+    "title": { "zh": "菲利普·K·迪克20世纪60年代初肖像", "en": "Philip K. Dick portrait from the early 1960s" },
+    "url": "https://commons.wikimedia.org/wiki/File:Philip_K_Dick_in_early_1960s_Arthur_Knight_(3x4_cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": { "zh": "Commons 文件页确认人物为菲利普·K·迪克，摄影者 Arthur Knight；页面将图片标为公有领域。", "en": "The Commons file page identifies Philip K. Dick; photographed by Arthur Knight and marked public domain." },
+    "purpose": "image-provenance"
   }
 ]

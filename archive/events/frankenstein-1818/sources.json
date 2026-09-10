@@ -38,5 +38,16 @@
       "en": "Wikimedia Commons file page identifies Public domain; retain author attribution and follow the page terms."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-frankenstein-1818-mary-shelley-portrait",
+    "type": "image-source",
+    "label": { "zh": "图片来源", "en": "Image source" },
+    "title": { "zh": "理查德·罗斯韦尔所绘玛丽·雪莱肖像", "en": "Mary Shelley portrait by Richard Rothwell" },
+    "url": "https://commons.wikimedia.org/wiki/File:RothwellMaryShelley.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": { "zh": "Commons 文件页将作品标识为理查德·罗斯韦尔所绘玛丽·雪莱肖像，1840年展出；图片为公有领域。", "en": "The Commons file page identifies Richard Rothwell's portrait of Mary Shelley, exhibited in 1840; the image is public domain." },
+    "purpose": "image-provenance"
   }
 ]

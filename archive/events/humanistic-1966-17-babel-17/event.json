@@ -3,7 +3,7 @@
   "year": 1966,
   "date": "1966",
   "title": {
-    "zh": "《巴别塔-17》（Babel-17）",
+    "zh": "《巴别塔-17》",
     "en": "Babel-17"
   },
   "description": {
@@ -34,6 +34,7 @@
   "figures": [
     {
       "figureId": "humanistic-figure-21",
+      "avatarAssetId": "asset-humanistic-1966-17-babel-17-samuel-delany-portrait",
       "role": {
         "zh": "《巴别塔-17》作者",
         "en": "Author of Babel-17"
@@ -47,14 +48,14 @@
   "review": {
     "status": "needs-review",
     "notes": {
-      "zh": "已检索 Wikimedia Commons；未找到与《巴别塔-17》作者塞缪尔·德兰尼直接对应且许可清晰的图片，误搜到的弗诺·文奇肖像已排除。",
-      "en": "Wikimedia Commons was searched; no clearly licensed image directly matching Babel-17 author Samuel R. Delany was found, and a mistakenly matched Vernor Vinge portrait was excluded."
+      "zh": "已核验并采用塞缪尔·R·德兰尼本人发布的肖像；误搜到的弗诺·文奇肖像已排除，不用于事件展示。",
+      "en": "A portrait published by Samuel R. Delany has been verified and selected; the mistakenly matched Vernor Vinge portrait is excluded from event display."
     }
   },
   "defaultPresentation": {
     "presentationMode": "archive",
     "displayTitle": {
-      "zh": "《巴别塔-17》（Babel-17）",
+      "zh": "《巴别塔-17》",
       "en": "Babel-17"
     },
     "displaySummary": {
@@ -77,14 +78,14 @@
           "en": "Research entry"
         },
         "title": {
-          "zh": "《巴别塔-17》（Babel-17）",
+          "zh": "《巴别塔-17》",
           "en": "Babel-17"
         },
         "description": {
           "zh": "语言、认知与心智控制的科幻想象",
           "en": "A science-fiction inquiry into language, cognition and control"
         },
-        "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%EF%BC%88Babel-17%EF%BC%89%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
+        "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7R%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

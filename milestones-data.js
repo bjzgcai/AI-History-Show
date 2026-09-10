@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-09-07 03:38
+// 生成时间: 2026-09-10 08:35
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 236, errors 0
 
@@ -109183,10 +109183,10 @@ const milestones = [
           "en": "Homer"
         },
         "role": {
-          "zh": "《伊利亚特》作者传统",
-          "en": "Authorial tradition of The Iliad"
+          "zh": "《伊利亚特》传统归属作者",
+          "en": "Traditionally attributed author of the Iliad"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/ancient-hephaestus-automata/homer-bust-british-museum.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -109195,37 +109195,109 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/humanistic-cycle/ancient-hephaestus-automata/verified-hephaestus-automata.jpg"
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/homer-bust-british-museum.jpg",
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg",
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg"
       ],
       "imageMeta": {
-        "resources/images/humanistic-cycle/ancient-hephaestus-automata/verified-hephaestus-automata.jpg": {
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/homer-bust-british-museum.jpg": {
           "caption": {
-            "zh": "赫菲斯托斯自动机械相关历史图",
-            "en": "hephaestus-automata"
+            "zh": "荷马理想化胸像",
+            "en": "Idealized bust of Homer"
           },
           "subcaption": {
-            "zh": "与古希腊自动机械想象相关的历史资料图。",
-            "en": "Historical reference image related to ancient Greek automata."
+            "zh": "大英博物馆藏罗马时期复制品；这是后世理想化形象，并非荷马真实肖像。",
+            "en": "Roman-period copy in the British Museum; a later idealized image, not a life portrait of Homer."
           },
           "sourceName": {
-            "zh": "Wikimedia Commons",
-            "en": "Wikimedia Commons"
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
           },
-          "sourceUrl": "https://commons.wikimedia.org/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bust_Homer_BM_1825.jpg",
           "license": {
-            "zh": "See original source record",
-            "en": "See original source record"
+            "zh": "公有领域",
+            "en": "Public domain"
+          },
+          "sourceId": "source-ancient-hephaestus-automata-homer-bust",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "公有领域",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于呈现传统归属于荷马的作者形象，并明确其为后世理想化胸像。",
+              "en": "Used to represent the traditional attribution to Homer, explicitly identified as a later idealized bust."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "homer"
+          ]
+        },
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg": {
+          "caption": {
+            "zh": "德米特里奥斯·查尔科孔迪勒斯编校的1488年《伊利亚特》首印本",
+            "en": "Demetrios Chalkokondyles's 1488 editio princeps of the Iliad"
+          },
+          "subcaption": {
+            "zh": "现藏于雅典根纳迪乌斯图书馆，2023年6月13日摄。",
+            "en": "Held by the Gennadius Library in Athens; photographed on June 13, 2023."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Demetrios_Chalkokondyles%27s_1488_editio_princeps_of_the_Iliad_in_the_collection_of_the_Gennadius_Library,_Athens,_June_13th,_2023.jpg",
+          "license": {
+            "zh": "CC BY 4.0",
+            "en": "CC BY 4.0"
+          },
+          "sourceId": "source-ancient-hephaestus-automata-iliad-1488-editio-princeps",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY 4.0",
+              "en": "CC BY 4.0"
+            },
+            "usage": {
+              "zh": "摄影者 Katolophyromai；用于展示《伊利亚特》的早期印刷版本。",
+              "en": "Photograph by Katolophyromai; used to present an early printed edition of the Iliad."
+            }
+          },
+          "role": "paper-reference",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg": {
+          "caption": {
+            "zh": "赫菲斯托斯与忒提斯：铸造厂画家杯",
+            "en": "Hephaistos and Thetis on a kylix by the Foundry Painter"
+          },
+          "subcaption": {
+            "zh": "公元前490—480年的阿提卡红绘陶杯，描绘赫菲斯托斯把阿喀琉斯的新铠甲交给忒提斯。",
+            "en": "Attic red-figure kylix, 490–480 BC, depicting Hephaestus handing Achilles' new armor to Thetis."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hephaistos_Thetis_at_Kylix_by_the_Foundry_Painter_Antikensammlung_Berlin_F2294.jpg",
+          "license": {
+            "zh": "公有领域",
+            "en": "Public domain"
           },
           "sourceId": "source-ancient-hephaestus-automata-verified-image",
           "rights": {
-            "status": "see-original-source-record",
+            "status": "public-domain",
             "license": {
-              "zh": "See original source record",
-              "en": "See original source record"
+              "zh": "公有领域",
+              "en": "Public domain"
             },
             "usage": {
-              "zh": "用于 AI 人文故事线人物或历史资料展示。",
-              "en": "Used as a figure or historical reference in the AI humanities storyline."
+              "zh": "用于 AI 人文故事线的古希腊文学与自动体想象历史资料展示。",
+              "en": "Used as historical reference imagery for the AI humanities storyline's Greek literary and automata context."
             }
           },
           "role": "artifact-reference",
@@ -109234,38 +109306,110 @@ const milestones = [
         }
       },
       "assetIds": [
+        "asset-ancient-hephaestus-automata-homer-bust",
+        "asset-ancient-hephaestus-automata-iliad-1488-editio-princeps",
         "asset-ancient-hephaestus-automata-verified-image"
       ]
     },
     "imageMeta": {
-      "resources/images/humanistic-cycle/ancient-hephaestus-automata/verified-hephaestus-automata.jpg": {
+      "resources/images/humanistic-cycle/ancient-hephaestus-automata/homer-bust-british-museum.jpg": {
         "caption": {
-          "zh": "赫菲斯托斯自动机械相关历史图",
-          "en": "hephaestus-automata"
+          "zh": "荷马理想化胸像",
+          "en": "Idealized bust of Homer"
         },
         "subcaption": {
-          "zh": "与古希腊自动机械想象相关的历史资料图。",
-          "en": "Historical reference image related to ancient Greek automata."
+          "zh": "大英博物馆藏罗马时期复制品；这是后世理想化形象，并非荷马真实肖像。",
+          "en": "Roman-period copy in the British Museum; a later idealized image, not a life portrait of Homer."
         },
         "sourceName": {
-          "zh": "Wikimedia Commons",
-          "en": "Wikimedia Commons"
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
         },
-        "sourceUrl": "https://commons.wikimedia.org/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bust_Homer_BM_1825.jpg",
         "license": {
-          "zh": "See original source record",
-          "en": "See original source record"
+          "zh": "公有领域",
+          "en": "Public domain"
+        },
+        "sourceId": "source-ancient-hephaestus-automata-homer-bust",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于呈现传统归属于荷马的作者形象，并明确其为后世理想化胸像。",
+            "en": "Used to represent the traditional attribution to Homer, explicitly identified as a later idealized bust."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "homer"
+        ]
+      },
+      "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg": {
+        "caption": {
+          "zh": "德米特里奥斯·查尔科孔迪勒斯编校的1488年《伊利亚特》首印本",
+          "en": "Demetrios Chalkokondyles's 1488 editio princeps of the Iliad"
+        },
+        "subcaption": {
+          "zh": "现藏于雅典根纳迪乌斯图书馆，2023年6月13日摄。",
+          "en": "Held by the Gennadius Library in Athens; photographed on June 13, 2023."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Demetrios_Chalkokondyles%27s_1488_editio_princeps_of_the_Iliad_in_the_collection_of_the_Gennadius_Library,_Athens,_June_13th,_2023.jpg",
+        "license": {
+          "zh": "CC BY 4.0",
+          "en": "CC BY 4.0"
+        },
+        "sourceId": "source-ancient-hephaestus-automata-iliad-1488-editio-princeps",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 4.0",
+            "en": "CC BY 4.0"
+          },
+          "usage": {
+            "zh": "摄影者 Katolophyromai；用于展示《伊利亚特》的早期印刷版本。",
+            "en": "Photograph by Katolophyromai; used to present an early printed edition of the Iliad."
+          }
+        },
+        "role": "paper-reference",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg": {
+        "caption": {
+          "zh": "赫菲斯托斯与忒提斯：铸造厂画家杯",
+          "en": "Hephaistos and Thetis on a kylix by the Foundry Painter"
+        },
+        "subcaption": {
+          "zh": "公元前490—480年的阿提卡红绘陶杯，描绘赫菲斯托斯把阿喀琉斯的新铠甲交给忒提斯。",
+          "en": "Attic red-figure kylix, 490–480 BC, depicting Hephaestus handing Achilles' new armor to Thetis."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hephaistos_Thetis_at_Kylix_by_the_Foundry_Painter_Antikensammlung_Berlin_F2294.jpg",
+        "license": {
+          "zh": "公有领域",
+          "en": "Public domain"
         },
         "sourceId": "source-ancient-hephaestus-automata-verified-image",
         "rights": {
-          "status": "see-original-source-record",
+          "status": "public-domain",
           "license": {
-            "zh": "See original source record",
-            "en": "See original source record"
+            "zh": "公有领域",
+            "en": "Public domain"
           },
           "usage": {
-            "zh": "用于 AI 人文故事线人物或历史资料展示。",
-            "en": "Used as a figure or historical reference in the AI humanities storyline."
+            "zh": "用于 AI 人文故事线的古希腊文学与自动体想象历史资料展示。",
+            "en": "Used as historical reference imagery for the AI humanities storyline's Greek literary and automata context."
           }
         },
         "role": "artifact-reference",
@@ -109329,10 +109473,40 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "赫菲斯托斯自动机械相关历史图",
-            "en": "hephaestus-automata"
+            "zh": "铸造厂画家《赫菲斯托斯把阿喀琉斯铠甲交给忒提斯》",
+            "en": "Foundry Painter, Hephaestus hands Achilles' armor to Thetis"
           },
-          "url": "https://commons.wikimedia.org/",
+          "url": "https://commons.wikimedia.org/wiki/File:Hephaistos_Thetis_at_Kylix_by_the_Foundry_Painter_Antikensammlung_Berlin_F2294.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-ancient-hephaestus-automata-iliad-1488-editio-princeps",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "1488年《伊利亚特》首印本（根纳迪乌斯图书馆藏）",
+            "en": "1488 editio princeps of the Iliad at the Gennadius Library"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Demetrios_Chalkokondyles%27s_1488_editio_princeps_of_the_Iliad_in_the_collection_of_the_Gennadius_Library,_Athens,_June_13th,_2023.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-ancient-hephaestus-automata-homer-bust",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "大英博物馆藏荷马理想化胸像",
+            "en": "Idealized bust of Homer in the British Museum"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Bust_Homer_BM_1825.jpg",
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
@@ -109340,7 +109514,9 @@ const milestones = [
       ],
       "sourceIds": [
         "source-ancient-hephaestus-automata-record",
-        "source-ancient-hephaestus-automata-verified-image"
+        "source-ancient-hephaestus-automata-verified-image",
+        "source-ancient-hephaestus-automata-iliad-1488-editio-princeps",
+        "source-ancient-hephaestus-automata-homer-bust"
       ],
       "claimIds": [
         "claim-ancient-hephaestus-automata-core"
@@ -109479,7 +109655,7 @@ const milestones = [
           "zh": "《沙人》作者",
           "en": "Author of The Sandman"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/sandman-1816/eta-hoffmann-self-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -109488,9 +109664,46 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/sandman-1816/eta-hoffmann-self-portrait.jpg",
         "resources/images/humanistic-cycle/sandman-1816/sandman-illustration-009.jpg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/sandman-1816/eta-hoffmann-self-portrait.jpg": {
+          "caption": {
+            "zh": "E.T.A.霍夫曼自画像",
+            "en": "E. T. A. Hoffmann self-portrait"
+          },
+          "subcaption": {
+            "zh": "《沙人》作者。",
+            "en": "Author of The Sandman."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:E._T._A._Hoffmann,_autorretrato.jpg",
+          "license": {
+            "zh": "公有领域",
+            "en": "Public domain"
+          },
+          "sourceId": "source-sandman-1816-eta-hoffmann-self-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "公有领域",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于《沙人》作者头像展示。",
+              "en": "Used as the author portrait for The Sandman."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "eta-hoffmann"
+          ]
+        },
         "resources/images/humanistic-cycle/sandman-1816/sandman-illustration-009.jpg": {
           "caption": {
             "zh": "E.T.A. 霍夫曼《沙人》插图",
@@ -109527,10 +109740,47 @@ const milestones = [
         }
       },
       "assetIds": [
+        "asset-sandman-1816-eta-hoffmann-self-portrait",
         "asset-sandman-1816-sandman-illustration-009"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/sandman-1816/eta-hoffmann-self-portrait.jpg": {
+        "caption": {
+          "zh": "E.T.A.霍夫曼自画像",
+          "en": "E. T. A. Hoffmann self-portrait"
+        },
+        "subcaption": {
+          "zh": "《沙人》作者。",
+          "en": "Author of The Sandman."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:E._T._A._Hoffmann,_autorretrato.jpg",
+        "license": {
+          "zh": "公有领域",
+          "en": "Public domain"
+        },
+        "sourceId": "source-sandman-1816-eta-hoffmann-self-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于《沙人》作者头像展示。",
+            "en": "Used as the author portrait for The Sandman."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "eta-hoffmann"
+        ]
+      },
       "resources/images/humanistic-cycle/sandman-1816/sandman-illustration-009.jpg": {
         "caption": {
           "zh": "E.T.A. 霍夫曼《沙人》插图",
@@ -109629,11 +109879,27 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-sandman-1816-eta-hoffmann-self-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "E.T.A.霍夫曼自画像",
+            "en": "E. T. A. Hoffmann self-portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:E._T._A._Hoffmann,_autorretrato.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-sandman-1816-primary",
-        "source-sandman-1816-sandman-illustration-009"
+        "source-sandman-1816-sandman-illustration-009",
+        "source-sandman-1816-eta-hoffmann-self-portrait"
       ],
       "claimIds": [
         "claim-sandman-1816-core"
@@ -109772,7 +110038,7 @@ const milestones = [
           "zh": "《方法论》与《第一哲学沉思录》作者",
           "en": "Author of Discourse on the Method and Meditations on First Philosophy"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/descartes-automata/descartes-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -110069,7 +110335,7 @@ const milestones = [
           "zh": "雅克-德罗自动人偶制造者",
           "en": "Maker associated with the Jaquet-Droz automata"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/jaquet-droz-automata/pierre-jaquet-droz-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -110078,10 +110344,47 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/jaquet-droz-automata/pierre-jaquet-droz-portrait.jpg",
         "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-writer.jpg",
         "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-musician.jpg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/jaquet-droz-automata/pierre-jaquet-droz-portrait.jpg": {
+          "caption": {
+            "zh": "皮埃尔·雅克-德罗肖像",
+            "en": "Pierre Jaquet-Droz portrait"
+          },
+          "subcaption": {
+            "zh": "雅克-德罗自动人偶的主要制造者。",
+            "en": "Principal maker of the Jaquet-Droz automata."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pierre_Jaquet-Droz,_1758.jpg",
+          "license": {
+            "zh": "公有领域",
+            "en": "Public domain"
+          },
+          "sourceId": "source-jaquet-droz-automata-pierre-jaquet-droz-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "公有领域",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于雅克-德罗自动人偶制造者头像展示。",
+              "en": "Used as the portrait of the automata maker."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "pierre-jaquet-droz"
+          ]
+        },
         "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-writer.jpg": {
           "caption": {
             "zh": "雅克-德罗自动人偶“书写者”",
@@ -110152,11 +110455,48 @@ const milestones = [
         }
       },
       "assetIds": [
+        "asset-jaquet-droz-automata-pierre-jaquet-droz-portrait",
         "asset-jaquet-droz-automata-jaquet-droz-writer",
         "asset-jaquet-droz-automata-jaquet-droz-musician"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/jaquet-droz-automata/pierre-jaquet-droz-portrait.jpg": {
+        "caption": {
+          "zh": "皮埃尔·雅克-德罗肖像",
+          "en": "Pierre Jaquet-Droz portrait"
+        },
+        "subcaption": {
+          "zh": "雅克-德罗自动人偶的主要制造者。",
+          "en": "Principal maker of the Jaquet-Droz automata."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pierre_Jaquet-Droz,_1758.jpg",
+        "license": {
+          "zh": "公有领域",
+          "en": "Public domain"
+        },
+        "sourceId": "source-jaquet-droz-automata-pierre-jaquet-droz-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于雅克-德罗自动人偶制造者头像展示。",
+            "en": "Used as the portrait of the automata maker."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "pierre-jaquet-droz"
+        ]
+      },
       "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-writer.jpg": {
         "caption": {
           "zh": "雅克-德罗自动人偶“书写者”",
@@ -110304,12 +110644,28 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-jaquet-droz-automata-pierre-jaquet-droz-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "皮埃尔·雅克-德罗肖像（1758）",
+            "en": "Portrait of Pierre Jaquet-Droz (1758)"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Pierre_Jaquet-Droz,_1758.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-jaquet-droz-automata-primary",
         "source-jaquet-droz-automata-jaquet-droz-writer",
-        "source-jaquet-droz-automata-jaquet-droz-musician"
+        "source-jaquet-droz-automata-jaquet-droz-musician",
+        "source-jaquet-droz-automata-pierre-jaquet-droz-portrait"
       ],
       "claimIds": [
         "claim-jaquet-droz-automata-core"
@@ -110448,7 +110804,7 @@ const milestones = [
           "zh": "《弗兰肯斯坦》作者",
           "en": "Author of Frankenstein; or, The Modern Prometheus"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/frankenstein-1818/mary-shelley-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -110457,9 +110813,46 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/frankenstein-1818/mary-shelley-portrait.jpg",
         "resources/images/humanistic-cycle/frankenstein-1818/mary-shelley-biography-scan.jpg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/frankenstein-1818/mary-shelley-portrait.jpg": {
+          "caption": {
+            "zh": "玛丽·雪莱肖像",
+            "en": "Mary Shelley portrait"
+          },
+          "subcaption": {
+            "zh": "《弗兰肯斯坦》作者；理查德·罗斯韦尔绘。",
+            "en": "Author of Frankenstein; painted by Richard Rothwell."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:RothwellMaryShelley.jpg",
+          "license": {
+            "zh": "公有领域",
+            "en": "Public domain"
+          },
+          "sourceId": "source-frankenstein-1818-mary-shelley-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "公有领域",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于《弗兰肯斯坦》作者头像展示。",
+              "en": "Used as the author portrait for Frankenstein."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "mary-shelley"
+          ]
+        },
         "resources/images/humanistic-cycle/frankenstein-1818/mary-shelley-biography-scan.jpg": {
           "caption": {
             "zh": "玛丽·雪莱生平与书信扫描页",
@@ -110496,10 +110889,47 @@ const milestones = [
         }
       },
       "assetIds": [
+        "asset-frankenstein-1818-mary-shelley-portrait",
         "asset-frankenstein-1818-mary-shelley-biography-scan"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/frankenstein-1818/mary-shelley-portrait.jpg": {
+        "caption": {
+          "zh": "玛丽·雪莱肖像",
+          "en": "Mary Shelley portrait"
+        },
+        "subcaption": {
+          "zh": "《弗兰肯斯坦》作者；理查德·罗斯韦尔绘。",
+          "en": "Author of Frankenstein; painted by Richard Rothwell."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:RothwellMaryShelley.jpg",
+        "license": {
+          "zh": "公有领域",
+          "en": "Public domain"
+        },
+        "sourceId": "source-frankenstein-1818-mary-shelley-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于《弗兰肯斯坦》作者头像展示。",
+            "en": "Used as the author portrait for Frankenstein."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "mary-shelley"
+        ]
+      },
       "resources/images/humanistic-cycle/frankenstein-1818/mary-shelley-biography-scan.jpg": {
         "caption": {
           "zh": "玛丽·雪莱生平与书信扫描页",
@@ -110598,11 +111028,27 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-frankenstein-1818-mary-shelley-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "理查德·罗斯韦尔所绘玛丽·雪莱肖像",
+            "en": "Mary Shelley portrait by Richard Rothwell"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:RothwellMaryShelley.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-frankenstein-1818-primary",
-        "source-frankenstein-1818-mary-shelley-biography-scan"
+        "source-frankenstein-1818-mary-shelley-biography-scan",
+        "source-frankenstein-1818-mary-shelley-portrait"
       ],
       "claimIds": [
         "claim-frankenstein-1818-core"
@@ -110741,7 +111187,7 @@ const milestones = [
           "zh": "《机器中的达尔文》作者",
           "en": "Author of Darwin among the Machines"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/darwin-among-machines-1863/samuel-butler-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -111038,7 +111484,7 @@ const milestones = [
           "zh": "《埃瑞洪》作者",
           "en": "Author of Erewhon"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/darwin-among-machines-1863/samuel-butler-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -111331,7 +111777,7 @@ const milestones = [
           "zh": "《西奥弗拉斯特斯·萨奇的印象》作者",
           "en": "Author of Impressions of Theophrastus Such"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/impressions-theophrastus-1879/george-eliot-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -111628,7 +112074,7 @@ const milestones = [
           "zh": "《未来夏娃》作者",
           "en": "Author of The Future Eve"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/future-eve-1886/villiers-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -111925,7 +112371,7 @@ const milestones = [
           "zh": "《新中国未来记》作者",
           "en": "Author of The Future of New China"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/new-china-future-1902/liang-qichao-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -113226,7 +113672,7 @@ const milestones = [
           "zh": "《我，机器人》作者",
           "en": "Author of I, Robot"
         },
-        "avatar": "resources/images/humanistic-cycle/people/1942-asimov-runaround_isaac-asimov.jpg",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1950-i-robot/verified-isaac-asimov.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -114075,7 +114521,7 @@ const milestones = [
           "zh": "现代计算主义心灵观的重要代表",
           "en": "Major representative of modern computationalism about mind"
         },
-        "avatar": "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+        "avatar": "resources/images/humanistic-cycle/humanistic-computationalism-1950/verified-hilary-putnam.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -115189,7 +115635,7 @@ const milestones = [
     "year": 1966,
     "date": "1966",
     "title": {
-      "zh": "《巴别塔-17》（Babel-17）",
+      "zh": "《巴别塔-17》",
       "en": "Babel-17"
     },
     "subtitle": {
@@ -115230,7 +115676,7 @@ const milestones = [
           "zh": "《巴别塔-17》作者",
           "en": "Author of Babel-17"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1966-17-babel-17/samuel-delany-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -115244,7 +115690,7 @@ const milestones = [
       "imageMeta": {
         "resources/images/humanistic-cycle/humanistic-1966-17-babel-17/samuel-delany-portrait.jpg": {
           "caption": {
-            "zh": "塞缪尔·德兰尼肖像",
+            "zh": "塞缪尔·R·德兰尼肖像",
             "en": "Samuel R. Delany portrait"
           },
           "subcaption": {
@@ -115286,7 +115732,7 @@ const milestones = [
     "imageMeta": {
       "resources/images/humanistic-cycle/humanistic-1966-17-babel-17/samuel-delany-portrait.jpg": {
         "caption": {
-          "zh": "塞缪尔·德兰尼肖像",
+          "zh": "塞缪尔·R·德兰尼肖像",
           "en": "Samuel R. Delany portrait"
         },
         "subcaption": {
@@ -115331,14 +115777,14 @@ const milestones = [
             "en": "Research entry"
           },
           "title": {
-            "zh": "《巴别塔-17》（Babel-17）",
+            "zh": "《巴别塔-17》",
             "en": "Babel-17"
           },
           "description": {
             "zh": "语言、认知与心智控制的科幻想象",
             "en": "A science-fiction inquiry into language, cognition and control"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%EF%BC%88Babel-17%EF%BC%89%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
+          "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7R%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -115362,10 +115808,10 @@ const milestones = [
             "en": "Internal record"
           },
           "label": {
-            "zh": "《巴别塔-17》（Babel-17）",
+            "zh": "《巴别塔-17》",
             "en": "Babel-17"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%EF%BC%88Babel-17%EF%BC%89%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
+          "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7R%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
           "purpose": "migration-only",
           "reliability": "reference-only",
           "sourceType": "internal-record"
@@ -115527,7 +115973,7 @@ const milestones = [
           "zh": "《无声狂啸》作者",
           "en": "Author of I Have No Mouth, and I Must Scream"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1967-event/harlan-ellison-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -115536,9 +115982,46 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/humanistic-1967-event/harlan-ellison-portrait.jpg",
         "resources/images/humanistic-cycle/humanistic-1967-event/am-talkfield.jpg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1967-event/harlan-ellison-portrait.jpg": {
+          "caption": {
+            "zh": "哈兰·埃里森肖像",
+            "en": "Harlan Ellison portrait"
+          },
+          "subcaption": {
+            "zh": "《无声狂啸》作者，1986年摄。",
+            "en": "Author of I Have No Mouth, and I Must Scream, photographed in 1986."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harlan_Ellison_at_the_LA_Press_Club_19860712_(cropped_portrait).jpg",
+          "license": {
+            "zh": "CC BY 2.0",
+            "en": "CC BY 2.0"
+          },
+          "sourceId": "source-humanistic-1967-event-harlan-ellison-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY 2.0",
+              "en": "CC BY 2.0"
+            },
+            "usage": {
+              "zh": "摄影者 Pip R. Lagenta；用于作者头像展示。",
+              "en": "Photograph by Pip R. Lagenta; used as the author portrait."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-22"
+          ]
+        },
         "resources/images/humanistic-cycle/humanistic-1967-event/am-talkfield.jpg": {
           "caption": {
             "zh": "AM 的“谈话场”界面资料",
@@ -115577,10 +116060,47 @@ const milestones = [
         }
       },
       "assetIds": [
+        "asset-humanistic-1967-event-harlan-ellison-portrait",
         "asset-humanistic-1967-event-am-talkfield"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1967-event/harlan-ellison-portrait.jpg": {
+        "caption": {
+          "zh": "哈兰·埃里森肖像",
+          "en": "Harlan Ellison portrait"
+        },
+        "subcaption": {
+          "zh": "《无声狂啸》作者，1986年摄。",
+          "en": "Author of I Have No Mouth, and I Must Scream, photographed in 1986."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harlan_Ellison_at_the_LA_Press_Club_19860712_(cropped_portrait).jpg",
+        "license": {
+          "zh": "CC BY 2.0",
+          "en": "CC BY 2.0"
+        },
+        "sourceId": "source-humanistic-1967-event-harlan-ellison-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 2.0",
+            "en": "CC BY 2.0"
+          },
+          "usage": {
+            "zh": "摄影者 Pip R. Lagenta；用于作者头像展示。",
+            "en": "Photograph by Pip R. Lagenta; used as the author portrait."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-22"
+        ]
+      },
       "resources/images/humanistic-cycle/humanistic-1967-event/am-talkfield.jpg": {
         "caption": {
           "zh": "AM 的“谈话场”界面资料",
@@ -115681,11 +116201,27 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-humanistic-1967-event-harlan-ellison-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "哈兰·埃里森肖像（1986）",
+            "en": "Harlan Ellison portrait (1986)"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Harlan_Ellison_at_the_LA_Press_Club_19860712_(cropped_portrait).jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-humanistic-1967-event-record",
-        "source-humanistic-1967-event-am-talkfield"
+        "source-humanistic-1967-event-am-talkfield",
+        "source-humanistic-1967-event-harlan-ellison-portrait"
       ],
       "claimIds": [
         "claim-humanistic-1967-event-core"
@@ -115824,7 +116360,7 @@ const milestones = [
           "zh": "《仿生人会梦见电子羊吗？》作者",
           "en": "Author of Do Androids Dream of Electric Sheep?"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1968-event/philip-k-dick-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -115833,9 +116369,46 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/humanistic-1968-event/philip-k-dick-portrait.jpg",
         "resources/images/humanistic-cycle/humanistic-1968-event/androids-dream-cover.png"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-1968-event/philip-k-dick-portrait.jpg": {
+          "caption": {
+            "zh": "菲利普·K·迪克肖像",
+            "en": "Philip K. Dick portrait"
+          },
+          "subcaption": {
+            "zh": "《仿生人会梦见电子羊吗？》作者。",
+            "en": "Author of Do Androids Dream of Electric Sheep?"
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Philip_K_Dick_in_early_1960s_Arthur_Knight_(3x4_cropped).jpg",
+          "license": {
+            "zh": "公有领域",
+            "en": "Public domain"
+          },
+          "sourceId": "source-humanistic-1968-event-philip-k-dick-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "公有领域",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "摄影者 Arthur Knight；用于作者头像展示。",
+              "en": "Photograph by Arthur Knight; used as the author portrait."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-23"
+          ]
+        },
         "resources/images/humanistic-cycle/humanistic-1968-event/androids-dream-cover.png": {
           "caption": {
             "zh": "《仿生人会梦见电子羊吗？》封面资料",
@@ -115874,10 +116447,47 @@ const milestones = [
         }
       },
       "assetIds": [
+        "asset-humanistic-1968-event-philip-k-dick-portrait",
         "asset-humanistic-1968-event-androids-dream-cover"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-1968-event/philip-k-dick-portrait.jpg": {
+        "caption": {
+          "zh": "菲利普·K·迪克肖像",
+          "en": "Philip K. Dick portrait"
+        },
+        "subcaption": {
+          "zh": "《仿生人会梦见电子羊吗？》作者。",
+          "en": "Author of Do Androids Dream of Electric Sheep?"
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Philip_K_Dick_in_early_1960s_Arthur_Knight_(3x4_cropped).jpg",
+        "license": {
+          "zh": "公有领域",
+          "en": "Public domain"
+        },
+        "sourceId": "source-humanistic-1968-event-philip-k-dick-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "摄影者 Arthur Knight；用于作者头像展示。",
+            "en": "Photograph by Arthur Knight; used as the author portrait."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-23"
+        ]
+      },
       "resources/images/humanistic-cycle/humanistic-1968-event/androids-dream-cover.png": {
         "caption": {
           "zh": "《仿生人会梦见电子羊吗？》封面资料",
@@ -115978,11 +116588,27 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-humanistic-1968-event-philip-k-dick-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "菲利普·K·迪克20世纪60年代初肖像",
+            "en": "Philip K. Dick portrait from the early 1960s"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Philip_K_Dick_in_early_1960s_Arthur_Knight_(3x4_cropped).jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-humanistic-1968-event-record",
-        "source-humanistic-1968-event-androids-dream-cover"
+        "source-humanistic-1968-event-androids-dream-cover",
+        "source-humanistic-1968-event-philip-k-dick-portrait"
       ],
       "claimIds": [
         "claim-humanistic-1968-event-core"
@@ -116852,7 +117478,7 @@ const milestones = [
           "zh": "《计算机不能做什么》作者",
           "en": "Author of What Computers Can't Do"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1972-dreyfus/verified-hubert-dreyfus.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -116871,7 +117497,7 @@ const milestones = [
           },
           "subcaption": {
             "zh": "《计算机不能做什么》作者。",
-            "en": "《计算机不能做什么》作者。"
+            "en": "Author of What Computers Can't Do."
           },
           "sourceName": {
             "zh": "Wikimedia Commons",
@@ -116913,7 +117539,7 @@ const milestones = [
         },
         "subcaption": {
           "zh": "《计算机不能做什么》作者。",
-          "en": "《计算机不能做什么》作者。"
+          "en": "Author of What Computers Can't Do."
         },
         "sourceName": {
           "zh": "Wikimedia Commons",
@@ -117149,7 +117775,7 @@ const milestones = [
           "zh": "“中华民族”思想实验提出者",
           "en": "Originator of the Chinese Nation thought experiment"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1990-chinese-nation/ned-block-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -117446,7 +118072,7 @@ const milestones = [
           "zh": "《银河系漫游指南》作者",
           "en": "Author of The Hitchhiker's Guide to the Galaxy"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1979-event/douglas-adams-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -117743,7 +118369,7 @@ const milestones = [
           "zh": "《哥德尔、艾舍尔、巴赫》作者",
           "en": "Author of Gödel, Escher, Bach"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1979-geb/verified-douglas-hofstadter.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -118040,7 +118666,7 @@ const milestones = [
           "zh": "中文房间思想实验提出者",
           "en": "Originator of the Chinese Room thought experiment"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1980-event/john-searle-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -118423,7 +119049,7 @@ const milestones = [
           "zh": "《真名实姓》作者",
           "en": "Author of True Names"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1981-event/vernor-vinge-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -119214,7 +119840,7 @@ const milestones = [
           "zh": "《血音乐》作者",
           "en": "Author of Blood Music"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1984-event/greg-bear-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -119511,7 +120137,7 @@ const milestones = [
           "zh": "《赛博格宣言》作者",
           "en": "Author of A Cyborg Manifesto"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1985-cyborg-manifesto/verified-donna-haraway.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -120105,7 +120731,7 @@ const milestones = [
           "zh": "《心智之子》作者",
           "en": "Author of Mind Children"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1988-mind-children/verified-hans-moravec.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -120402,7 +121028,7 @@ const milestones = [
           "zh": "《光明王》作者",
           "en": "Author of Lord of Light"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1989-event/roger-zelazny-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -120776,25 +121402,42 @@ const milestones = [
     },
     "figures": [
       {
-        "id": "humanistic-figure-38",
+        "id": "william-gibson",
         "name": {
-          "zh": "威廉·吉布森与布鲁斯·斯特林",
-          "en": "William Gibson and Bruce Sterling"
+          "zh": "威廉·吉布森",
+          "en": "William Gibson"
         },
         "role": {
           "zh": "《差分机》共同作者",
-          "en": "Co-authors of The Difference Engine"
+          "en": "Co-author of The Difference Engine"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1990-event/william-gibson-portrait.jpg",
         "avatarStyle": "",
-        "figureType": "team",
+        "figureType": "person",
+        "organizationIds": [],
+        "primary": true
+      },
+      {
+        "id": "bruce-sterling",
+        "name": {
+          "zh": "布鲁斯·斯特林",
+          "en": "Bruce Sterling"
+        },
+        "role": {
+          "zh": "《差分机》共同作者",
+          "en": "Co-author of The Difference Engine"
+        },
+        "avatar": "resources/images/humanistic-cycle/humanistic-1990-event/bruce-sterling-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
         "organizationIds": [],
         "primary": true
       }
     ],
     "resources": {
       "images": [
-        "resources/images/humanistic-cycle/humanistic-1990-event/william-gibson-portrait.jpg"
+        "resources/images/humanistic-cycle/humanistic-1990-event/william-gibson-portrait.jpg",
+        "resources/images/humanistic-cycle/humanistic-1990-event/bruce-sterling-portrait.jpg"
       ],
       "imageMeta": {
         "resources/images/humanistic-cycle/humanistic-1990-event/william-gibson-portrait.jpg": {
@@ -120830,12 +121473,49 @@ const milestones = [
           "role": "portrait",
           "type": "image",
           "figureIds": [
-            "humanistic-figure-38"
+            "william-gibson"
+          ]
+        },
+        "resources/images/humanistic-cycle/humanistic-1990-event/bruce-sterling-portrait.jpg": {
+          "caption": {
+            "zh": "布鲁斯·斯特林肖像",
+            "en": "Bruce Sterling portrait"
+          },
+          "subcaption": {
+            "zh": "《差分机》共同作者布鲁斯·斯特林。",
+            "en": "Bruce Sterling, co-author of The Difference Engine."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruce_Sterling_at_ARE_2010.jpg",
+          "license": {
+            "zh": "CC BY 2.0",
+            "en": "CC BY 2.0"
+          },
+          "sourceId": "source-humanistic-1990-event-bruce-sterling-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY 2.0",
+              "en": "CC BY 2.0"
+            },
+            "usage": {
+              "zh": "摄影者 Chris Cameron；用于《差分机》共同作者头像展示。",
+              "en": "Photograph by Chris Cameron; used as the portrait of a co-author of The Difference Engine."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "bruce-sterling"
           ]
         }
       },
       "assetIds": [
-        "asset-humanistic-1990-event-william-gibson-portrait"
+        "asset-humanistic-1990-event-william-gibson-portrait",
+        "asset-humanistic-1990-event-bruce-sterling-portrait"
       ]
     },
     "imageMeta": {
@@ -120872,7 +121552,43 @@ const milestones = [
         "role": "portrait",
         "type": "image",
         "figureIds": [
-          "humanistic-figure-38"
+          "william-gibson"
+        ]
+      },
+      "resources/images/humanistic-cycle/humanistic-1990-event/bruce-sterling-portrait.jpg": {
+        "caption": {
+          "zh": "布鲁斯·斯特林肖像",
+          "en": "Bruce Sterling portrait"
+        },
+        "subcaption": {
+          "zh": "《差分机》共同作者布鲁斯·斯特林。",
+          "en": "Bruce Sterling, co-author of The Difference Engine."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruce_Sterling_at_ARE_2010.jpg",
+        "license": {
+          "zh": "CC BY 2.0",
+          "en": "CC BY 2.0"
+        },
+        "sourceId": "source-humanistic-1990-event-bruce-sterling-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 2.0",
+            "en": "CC BY 2.0"
+          },
+          "usage": {
+            "zh": "摄影者 Chris Cameron；用于《差分机》共同作者头像展示。",
+            "en": "Photograph by Chris Cameron; used as the portrait of a co-author of The Difference Engine."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "bruce-sterling"
         ]
       }
     },
@@ -120939,11 +121655,27 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-humanistic-1990-event-bruce-sterling-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "布鲁斯·斯特林在 ARE 2010 演讲",
+            "en": "Bruce Sterling speaking at ARE 2010"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Bruce_Sterling_at_ARE_2010.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-humanistic-1990-event-record",
-        "source-humanistic-1990-event-william-gibson-portrait"
+        "source-humanistic-1990-event-william-gibson-portrait",
+        "source-humanistic-1990-event-bruce-sterling-portrait"
       ],
       "claimIds": [
         "claim-humanistic-1990-event-core"
@@ -121082,7 +121814,7 @@ const milestones = [
           "zh": "《意识的解释》作者",
           "en": "Author of Consciousness Explained"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1991-event/daniel-dennett-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -121379,7 +122111,7 @@ const milestones = [
           "zh": "《攻壳机动队》导演",
           "en": "Director of Ghost in the Shell"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1991-ghost-shell/verified-mamoru-oshii.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -121841,7 +122573,7 @@ const milestones = [
           "zh": "《雪崩》作者",
           "en": "Author of Snow Crash"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1992-event/neal-stephenson-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -122138,7 +122870,7 @@ const milestones = [
           "zh": "技术奇点概念的重要提出者",
           "en": "Major proposer of the technological singularity concept"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1993-singularity/verified-vernor-vinge.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -122435,7 +123167,7 @@ const milestones = [
           "zh": "《钻石时代》作者",
           "en": "Author of The Diamond Age"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1993-event/neal-stephenson-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -122732,7 +123464,7 @@ const milestones = [
           "zh": "《电子超级高速公路》艺术家",
           "en": "Artist of Electronic Superhighway"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1995-event/nam-june-paik-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -123029,7 +123761,7 @@ const milestones = [
           "zh": "“困难问题”提出者",
           "en": "Formulator of the hard problem"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1995-hard-problem/verified-david-chalmers.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -123326,7 +124058,7 @@ const milestones = [
           "zh": "《拓展心智论》共同作者",
           "en": "Co-author of The Extended Mind"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1998-extended-mind/verified-david-chalmers.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -123639,7 +124371,7 @@ const milestones = [
           "zh": "《黑客帝国》编剧兼导演",
           "en": "Writers and directors of The Matrix"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-1999-event/wachowskis-portrait.jpg",
         "avatarStyle": "",
         "figureType": "team",
         "organizationIds": [],
@@ -124173,7 +124905,7 @@ const milestones = [
           "zh": "《人工智能》导演兼联合编剧",
           "en": "Director and co-writer of A.I. Artificial Intelligence"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-2001-event/steven-spielberg-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -124182,6 +124914,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/humanistic-2001-event/steven-spielberg-portrait.jpg",
         "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-poster-tmdb.jpg",
         "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-scene-1-tmdb.jpg",
         "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-scene-2-tmdb.jpg",
@@ -124190,6 +124923,42 @@ const milestones = [
       "overviewImage": "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-poster-tmdb.jpg",
       "overviewImageAssetId": "asset-humanistic-2001-event-tmdb-poster",
       "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-2001-event/steven-spielberg-portrait.jpg": {
+          "caption": {
+            "zh": "史蒂文·斯皮尔伯格肖像",
+            "en": "Steven Spielberg portrait"
+          },
+          "subcaption": {
+            "zh": "《人工智能》导演兼联合编剧。",
+            "en": "Director and co-writer of A.I. Artificial Intelligence."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steven_Spielberg_portrait.jpg",
+          "license": {
+            "zh": "CC BY-SA 3.0",
+            "en": "CC BY-SA 3.0"
+          },
+          "sourceId": "source-humanistic-2001-event-steven-spielberg-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY-SA 3.0",
+              "en": "CC BY-SA 3.0"
+            },
+            "usage": {
+              "zh": "摄影者 GianAngelo Pistoia；用于导演头像展示。",
+              "en": "Photograph by GianAngelo Pistoia; used as the director portrait."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-52"
+          ]
+        },
         "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-poster-tmdb.jpg": {
           "caption": {
             "zh": "《人工智能》电影海报",
@@ -124333,6 +125102,7 @@ const milestones = [
         }
       },
       "assetIds": [
+        "asset-humanistic-2001-event-steven-spielberg-portrait",
         "asset-humanistic-2001-event-tmdb-poster",
         "asset-humanistic-2001-event-tmdb-scene-1",
         "asset-humanistic-2001-event-tmdb-scene-2",
@@ -124340,6 +125110,42 @@ const milestones = [
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-2001-event/steven-spielberg-portrait.jpg": {
+        "caption": {
+          "zh": "史蒂文·斯皮尔伯格肖像",
+          "en": "Steven Spielberg portrait"
+        },
+        "subcaption": {
+          "zh": "《人工智能》导演兼联合编剧。",
+          "en": "Director and co-writer of A.I. Artificial Intelligence."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steven_Spielberg_portrait.jpg",
+        "license": {
+          "zh": "CC BY-SA 3.0",
+          "en": "CC BY-SA 3.0"
+        },
+        "sourceId": "source-humanistic-2001-event-steven-spielberg-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 3.0",
+            "en": "CC BY-SA 3.0"
+          },
+          "usage": {
+            "zh": "摄影者 GianAngelo Pistoia；用于导演头像展示。",
+            "en": "Photograph by GianAngelo Pistoia; used as the director portrait."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-52"
+        ]
+      },
       "resources/images/humanistic-cycle/humanistic-2001-event/ai-artificial-intelligence-poster-tmdb.jpg": {
         "caption": {
           "zh": "《人工智能》电影海报",
@@ -124560,12 +125366,28 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "secondary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-humanistic-2001-event-steven-spielberg-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "史蒂文·斯皮尔伯格肖像",
+            "en": "Steven Spielberg portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Steven_Spielberg_portrait.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-humanistic-2001-event-record",
         "source-humanistic-2001-event-ai-film-logo",
-        "source-humanistic-2001-event-tmdb-images"
+        "source-humanistic-2001-event-tmdb-images",
+        "source-humanistic-2001-event-steven-spielberg-portrait"
       ],
       "claimIds": [
         "claim-humanistic-2001-event-core"
@@ -124707,7 +125529,7 @@ const milestones = [
           "zh": "《你生活在计算机模拟中吗？》作者",
           "en": "Author of Are You Living in a Computer Simulation?"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-2003-event/nick-bostrom-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -125004,7 +125826,7 @@ const milestones = [
           "zh": "《机器人总动员》导演兼联合编剧",
           "en": "Director and co-writer of WALL-E"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-2008-event/andrew-stanton-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -125013,6 +125835,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/humanistic-2008-event/andrew-stanton-portrait.jpg",
         "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-poster-tmdb.jpg",
         "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-scene-1-tmdb.jpg",
         "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-scene-2-tmdb.jpg",
@@ -125021,6 +125844,42 @@ const milestones = [
       "overviewImage": "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-poster-tmdb.jpg",
       "overviewImageAssetId": "asset-humanistic-2008-event-tmdb-poster",
       "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-2008-event/andrew-stanton-portrait.jpg": {
+          "caption": {
+            "zh": "安德鲁·斯坦顿肖像",
+            "en": "Andrew Stanton portrait"
+          },
+          "subcaption": {
+            "zh": "《机器人总动员》导演兼联合编剧。",
+            "en": "Director and co-writer of WALL-E."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Stanton_at_the_2026_Sundance_Film_Festival_for_In_the_Blink_of_an_Eye_(01)_(cropped).jpg",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "sourceId": "source-humanistic-2008-event-andrew-stanton-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY-SA 4.0",
+              "en": "CC BY-SA 4.0"
+            },
+            "usage": {
+              "zh": "摄影者 Sarah K Joyce；用于导演头像展示。",
+              "en": "Photograph by Sarah K Joyce; used as the director portrait."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-56"
+          ]
+        },
         "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-poster-tmdb.jpg": {
           "caption": {
             "zh": "《机器人总动员》电影海报",
@@ -125164,6 +126023,7 @@ const milestones = [
         }
       },
       "assetIds": [
+        "asset-humanistic-2008-event-andrew-stanton-portrait",
         "asset-humanistic-2008-event-tmdb-poster",
         "asset-humanistic-2008-event-tmdb-scene-1",
         "asset-humanistic-2008-event-tmdb-scene-2",
@@ -125171,6 +126031,42 @@ const milestones = [
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-2008-event/andrew-stanton-portrait.jpg": {
+        "caption": {
+          "zh": "安德鲁·斯坦顿肖像",
+          "en": "Andrew Stanton portrait"
+        },
+        "subcaption": {
+          "zh": "《机器人总动员》导演兼联合编剧。",
+          "en": "Director and co-writer of WALL-E."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Stanton_at_the_2026_Sundance_Film_Festival_for_In_the_Blink_of_an_Eye_(01)_(cropped).jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0",
+          "en": "CC BY-SA 4.0"
+        },
+        "sourceId": "source-humanistic-2008-event-andrew-stanton-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "usage": {
+            "zh": "摄影者 Sarah K Joyce；用于导演头像展示。",
+            "en": "Photograph by Sarah K Joyce; used as the director portrait."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-56"
+        ]
+      },
       "resources/images/humanistic-cycle/humanistic-2008-event/wall-e-poster-tmdb.jpg": {
         "caption": {
           "zh": "《机器人总动员》电影海报",
@@ -125391,12 +126287,28 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "secondary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-humanistic-2008-event-andrew-stanton-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "安德鲁·斯坦顿肖像",
+            "en": "Andrew Stanton portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Andrew_Stanton_at_the_2026_Sundance_Film_Festival_for_In_the_Blink_of_an_Eye_(01)_(cropped).jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-humanistic-2008-event-record",
         "source-humanistic-2008-event-wall-e-pixar-reference",
-        "source-humanistic-2008-event-tmdb-images"
+        "source-humanistic-2008-event-tmdb-images",
+        "source-humanistic-2008-event-andrew-stanton-portrait"
       ],
       "claimIds": [
         "claim-humanistic-2008-event-core"
@@ -125835,7 +126747,7 @@ const milestones = [
           "zh": "《普罗米修斯》导演",
           "en": "Director of Prometheus"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-2012-event/ridley-scott-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -127133,7 +128045,7 @@ const milestones = [
           "zh": "《超级智能》作者",
           "en": "Author of Superintelligence"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-2014-superintelligence/verified-nick-bostrom.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -127743,7 +128655,7 @@ const milestones = [
           "zh": "《克拉拉与太阳》作者",
           "en": "Author of Klara and the Sun"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-2021-event/kazuo-ishiguro-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -127752,9 +128664,46 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/humanistic-2021-event/kazuo-ishiguro-portrait.jpg",
         "resources/images/humanistic-cycle/humanistic-2021-event/klara-sun-logo.png"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/humanistic-2021-event/kazuo-ishiguro-portrait.jpg": {
+          "caption": {
+            "zh": "石黑一雄肖像",
+            "en": "Kazuo Ishiguro portrait"
+          },
+          "subcaption": {
+            "zh": "《克拉拉与太阳》作者。",
+            "en": "Author of Klara and the Sun."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:MKr377543_Kazuo_Ishiguro_(A_Pale_View_of_Hills,_Cannes_2025).jpg",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "sourceId": "source-humanistic-2021-event-kazuo-ishiguro-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY-SA 4.0",
+              "en": "CC BY-SA 4.0"
+            },
+            "usage": {
+              "zh": "摄影者 Martin Kraft；用于作者头像展示。",
+              "en": "Photograph by Martin Kraft; used as the author portrait."
+            }
+          },
+          "role": "portrait",
+          "type": "image",
+          "figureIds": [
+            "humanistic-figure-63"
+          ]
+        },
         "resources/images/humanistic-cycle/humanistic-2021-event/klara-sun-logo.png": {
           "caption": {
             "zh": "《克拉拉与太阳》片名标识",
@@ -127793,10 +128742,47 @@ const milestones = [
         }
       },
       "assetIds": [
+        "asset-humanistic-2021-event-kazuo-ishiguro-portrait",
         "asset-humanistic-2021-event-klara-sun-logo"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/humanistic-2021-event/kazuo-ishiguro-portrait.jpg": {
+        "caption": {
+          "zh": "石黑一雄肖像",
+          "en": "Kazuo Ishiguro portrait"
+        },
+        "subcaption": {
+          "zh": "《克拉拉与太阳》作者。",
+          "en": "Author of Klara and the Sun."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MKr377543_Kazuo_Ishiguro_(A_Pale_View_of_Hills,_Cannes_2025).jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0",
+          "en": "CC BY-SA 4.0"
+        },
+        "sourceId": "source-humanistic-2021-event-kazuo-ishiguro-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          },
+          "usage": {
+            "zh": "摄影者 Martin Kraft；用于作者头像展示。",
+            "en": "Photograph by Martin Kraft; used as the author portrait."
+          }
+        },
+        "role": "portrait",
+        "type": "image",
+        "figureIds": [
+          "humanistic-figure-63"
+        ]
+      },
       "resources/images/humanistic-cycle/humanistic-2021-event/klara-sun-logo.png": {
         "caption": {
           "zh": "《克拉拉与太阳》片名标识",
@@ -127897,11 +128883,27 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-humanistic-2021-event-kazuo-ishiguro-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "石黑一雄肖像（2025年戛纳电影节）",
+            "en": "Kazuo Ishiguro portrait at Cannes 2025"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:MKr377543_Kazuo_Ishiguro_(A_Pale_View_of_Hills,_Cannes_2025).jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-humanistic-2021-event-record",
-        "source-humanistic-2021-event-klara-sun-logo"
+        "source-humanistic-2021-event-klara-sun-logo",
+        "source-humanistic-2021-event-kazuo-ishiguro-portrait"
       ],
       "claimIds": [
         "claim-humanistic-2021-event-core"
@@ -128040,7 +129042,7 @@ const milestones = [
           "zh": "《现实+》作者",
           "en": "Author of Reality+"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-2022-reality-plus/verified-david-chalmers.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],
@@ -128337,7 +129339,7 @@ const milestones = [
           "zh": "整合信息理论主要提出者",
           "en": "Principal originator of Integrated Information Theory"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/humanistic-2025-iit-ai/giulio-tononi-nih-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": [],

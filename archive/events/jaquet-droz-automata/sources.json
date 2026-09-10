@@ -58,5 +58,16 @@
       "en": "Wikimedia Commons file page identifies CC BY-SA 4.0; retain author attribution and follow the page terms."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-jaquet-droz-automata-pierre-jaquet-droz-portrait",
+    "type": "image-source",
+    "label": { "zh": "图片来源", "en": "Image source" },
+    "title": { "zh": "皮埃尔·雅克-德罗肖像（1758）", "en": "Portrait of Pierre Jaquet-Droz (1758)" },
+    "url": "https://commons.wikimedia.org/wiki/File:Pierre_Jaquet-Droz,_1758.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": { "zh": "Commons 文件页标识该图为皮埃尔·雅克-德罗1758年肖像；图片为公有领域。", "en": "The Commons file page identifies the image as a 1758 portrait of Pierre Jaquet-Droz; the image is public domain." },
+    "purpose": "image-provenance"
   }
 ]
