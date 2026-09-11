@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-1989-event-record",
-    "type": "internal-record",
+    "type": "book-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "图书页面",
+      "en": "Book page"
     },
     "title": {
-      "zh": "《光明王》",
-      "en": "Lord of Light"
+      "zh": "哈珀柯林斯《光明王》图书页面",
+      "en": "HarperCollins book page for Lord of Light"
     },
-    "url": "https://www.google.com/search?q=%E3%80%8A%E5%85%89%E6%98%8E%E7%8E%8B%E3%80%8B%20%E7%BD%97%E6%9D%B0%C2%B7%E6%B3%BD%E6%8B%89%E5%85%B9%E5%B0%BC",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://www.harpercollins.com/products/lord-of-light-roger-zelazny",
+    "language": "en",
+    "reliability": "primary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "bibliographic-verification"
   },
   {
     "id": "source-humanistic-1989-event-roger-zelazny-reference",
@@ -47,8 +47,8 @@
       "en": "Image source"
     },
     "title": {
-      "zh": "Roger Zelazny",
-      "en": "Roger Zelazny"
+      "zh": "罗杰·泽拉兹尼肖像（Wikipedia 文件页）",
+      "en": "Roger Zelazny portrait (Wikipedia file page)"
     },
     "url": "https://en.wikipedia.org/wiki/File:Rogerzelazny.JPG",
     "language": "en",
@@ -67,8 +67,8 @@
       "en": "Image source"
     },
     "title": {
-      "zh": "LordofLight(Zelazny).jpg",
-      "en": "LordofLight(Zelazny).jpg"
+      "zh": "《光明王》初版封面（Wikipedia 文件页）",
+      "en": "Lord of Light first-edition cover (Wikipedia file page)"
     },
     "url": "https://en.wikipedia.org/wiki/File:LordofLight(Zelazny).jpg",
     "language": "en",

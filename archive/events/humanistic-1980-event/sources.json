@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-1980-event-record",
-    "type": "internal-record",
+    "type": "paper-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "论文页面",
+      "en": "Paper page"
     },
     "title": {
-      "zh": "中文房间思想实验",
-      "en": "The Chinese Room Thought Experiment"
+      "zh": "剑桥大学出版社《心灵、大脑与程序》论文页面",
+      "en": "Cambridge University Press paper page for “Minds, Brains, and Programs”"
     },
-    "url": "https://www.google.com/search?q=%E4%B8%AD%E6%96%87%E6%88%BF%E9%97%B4%E6%80%9D%E6%83%B3%E5%AE%9E%E9%AA%8C%20%E7%BA%A6%E7%BF%B0%C2%B7%E5%A1%9E%E5%B0%94",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://doi.org/10.1017/S0140525X00005756",
+    "language": "en",
+    "reliability": "primary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "core-evidence"
   },
   {
     "id": "source-humanistic-1980-event-chinese-room-reference",
@@ -47,8 +47,8 @@
       "en": "Image source"
     },
     "title": {
-      "zh": "John Searle speaking at Google 1",
-      "en": "John Searle speaking at Google 1"
+      "zh": "约翰·塞尔演讲照片（Wikimedia Commons）",
+      "en": "John Searle speaking at Google (Wikimedia Commons)"
     },
     "url": "https://commons.wikimedia.org/wiki/File:John_Searle_speaking_at_Google_1.jpg",
     "language": "en",
@@ -67,8 +67,8 @@
       "en": "Image source"
     },
     "title": {
-      "zh": "Chinese Room thought experiment with countryballs",
-      "en": "Chinese Room thought experiment with countryballs"
+      "zh": "中文房间思想实验示意图（Wikimedia Commons）",
+      "en": "Chinese Room thought-experiment illustration (Wikimedia Commons)"
     },
     "url": "https://commons.wikimedia.org/wiki/File:Chinese_Room_thought_experiment_with_countryballs.jpg",
     "language": "en",

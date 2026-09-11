@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-2021-event-record",
-    "type": "internal-record",
+    "type": "book-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "图书页面",
+      "en": "Book page"
     },
     "title": {
-      "zh": "《克拉拉与太阳》",
-      "en": "Klara and the Sun"
+      "zh": "企鹅兰登《克拉拉与太阳》图书页面",
+      "en": "Penguin Random House book page for Klara and the Sun"
     },
-    "url": "https://www.google.com/search?q=%E3%80%8A%E5%85%8B%E6%8B%89%E6%8B%89%E4%B8%8E%E5%A4%AA%E9%98%B3%E3%80%8B%20%E7%9F%B3%E9%BB%91%E4%B8%80%E9%9B%84",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://www.penguinrandomhouse.com/books/653825/klara-and-the-sun-by-kazuo-ishiguro/",
+    "language": "en",
+    "reliability": "primary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "bibliographic-verification"
   },
   {
     "id": "source-humanistic-2021-event-klara-sun-logo",
@@ -42,12 +42,21 @@
   {
     "id": "source-humanistic-2021-event-kazuo-ishiguro-portrait",
     "type": "image-source",
-    "label": { "zh": "图片来源", "en": "Image source" },
-    "title": { "zh": "石黑一雄肖像（2025年戛纳电影节）", "en": "Kazuo Ishiguro portrait at Cannes 2025" },
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "石黑一雄肖像（2025年戛纳电影节）",
+      "en": "Kazuo Ishiguro portrait at Cannes 2025"
+    },
     "url": "https://commons.wikimedia.org/wiki/File:MKr377543_Kazuo_Ishiguro_(A_Pale_View_of_Hills,_Cannes_2025).jpg",
     "language": "en",
     "reliability": "primary",
-    "notes": { "zh": "Commons 文件页确认人物为石黑一雄，摄影者 Martin Kraft，许可为 CC BY-SA 4.0。", "en": "The Commons file page identifies Kazuo Ishiguro; photographed by Martin Kraft and licensed CC BY-SA 4.0." },
+    "notes": {
+      "zh": "Commons 文件页确认人物为石黑一雄，摄影者 Martin Kraft，许可为 CC BY-SA 4.0。",
+      "en": "The Commons file page identifies Kazuo Ishiguro; photographed by Martin Kraft and licensed CC BY-SA 4.0."
+    },
     "purpose": "image-provenance"
   }
 ]

@@ -27,8 +27,8 @@
       "en": "Image source"
     },
     "title": {
-      "zh": "Mary Shelley life and letters scan",
-      "en": "Mary Shelley life and letters scan"
+      "zh": "《玛丽·沃斯通克拉夫特·雪莱生平与书信》扫描页（Wikimedia Commons）",
+      "en": "The Life and Letters of Mary Wollstonecraft Shelley scan (Wikimedia Commons)"
     },
     "url": "https://commons.wikimedia.org/wiki/File:The_life_and_letters_of_Mary_Wollstonecraft_Shelley_(IA_lifelettersofmar01marsrich).pdf",
     "language": "en",
@@ -42,12 +42,21 @@
   {
     "id": "source-frankenstein-1818-mary-shelley-portrait",
     "type": "image-source",
-    "label": { "zh": "图片来源", "en": "Image source" },
-    "title": { "zh": "理查德·罗斯韦尔所绘玛丽·雪莱肖像", "en": "Mary Shelley portrait by Richard Rothwell" },
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "理查德·罗斯韦尔所绘玛丽·雪莱肖像",
+      "en": "Mary Shelley portrait by Richard Rothwell"
+    },
     "url": "https://commons.wikimedia.org/wiki/File:RothwellMaryShelley.jpg",
     "language": "en",
     "reliability": "primary",
-    "notes": { "zh": "Commons 文件页将作品标识为理查德·罗斯韦尔所绘玛丽·雪莱肖像，1840年展出；图片为公有领域。", "en": "The Commons file page identifies Richard Rothwell's portrait of Mary Shelley, exhibited in 1840; the image is public domain." },
+    "notes": {
+      "zh": "Commons 文件页将作品标识为理查德·罗斯韦尔所绘玛丽·雪莱肖像，1840年展出；图片为公有领域。",
+      "en": "The Commons file page identifies Richard Rothwell's portrait of Mary Shelley, exhibited in 1840; the image is public domain."
+    },
     "purpose": "image-provenance"
   }
 ]

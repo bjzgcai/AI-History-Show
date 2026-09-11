@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-1999-event-record",
-    "type": "internal-record",
+    "type": "official-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "官方页面",
+      "en": "Official page"
     },
     "title": {
-      "zh": "《黑客帝国》",
-      "en": "The Matrix"
+      "zh": "华纳兄弟《黑客帝国》官方影片页面",
+      "en": "Warner Bros. official film page for The Matrix"
     },
-    "url": "https://www.google.com/search?q=%E3%80%8A%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD%E3%80%8B%20%E6%B2%83%E5%8D%93%E6%96%AF%E5%9F%BA%E5%A7%90%E5%A6%B9%2F%E5%85%84%E5%BC%9F",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://www.warnerbros.com/movies/matrix",
+    "language": "en",
+    "reliability": "primary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "core-evidence"
   },
   {
     "id": "source-humanistic-1999-event-wachowskis-portrait",

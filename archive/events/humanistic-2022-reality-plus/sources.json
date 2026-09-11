@@ -1,21 +1,21 @@
 [
   {
     "id": "source-humanistic-2022-reality-plus-record",
-    "type": "internal-record",
+    "type": "book-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "图书页面",
+      "en": "Book page"
     },
     "title": {
-      "zh": "《现实+：虚拟世界与哲学问题》",
-      "en": "Reality+: Virtual Worlds and the Problems of Philosophy"
+      "zh": "W. W. Norton《现实+》图书页面",
+      "en": "W. W. Norton book page for Reality+"
     },
     "url": "https://wwnorton.com/books/9780393541859",
     "language": "en",
     "reliability": "secondary",
     "notes": {
-      "zh": "修订版清单对应的作品或思想资料；页面用于核对出版、作者与主题信息。",
-      "en": "Record corresponding to the revised list; used to verify publication, authorship and theme."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
     "purpose": "background"
   },

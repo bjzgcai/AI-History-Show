@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-2008-event-record",
-    "type": "internal-record",
+    "type": "official-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "官方页面",
+      "en": "Official page"
     },
     "title": {
-      "zh": "《机器人总动员》",
-      "en": "WALL-E"
+      "zh": "皮克斯《机器人总动员》官方影片页面",
+      "en": "Pixar official film page for WALL-E"
     },
-    "url": "https://www.pixar.com/feature-films/walle",
+    "url": "https://www.pixar.com/wall-e",
     "language": "en",
     "reliability": "primary",
     "notes": {
-      "zh": "Pixar 官方影片页，用于核对作品、年份与创作信息。",
-      "en": "Pixar official film page used to verify the work, year and production context."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "background"
   },
   {
     "id": "source-humanistic-2008-event-wall-e-pixar-reference",
@@ -62,12 +62,21 @@
   {
     "id": "source-humanistic-2008-event-andrew-stanton-portrait",
     "type": "image-source",
-    "label": { "zh": "图片来源", "en": "Image source" },
-    "title": { "zh": "安德鲁·斯坦顿肖像", "en": "Andrew Stanton portrait" },
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "安德鲁·斯坦顿肖像",
+      "en": "Andrew Stanton portrait"
+    },
     "url": "https://commons.wikimedia.org/wiki/File:Andrew_Stanton_at_the_2026_Sundance_Film_Festival_for_In_the_Blink_of_an_Eye_(01)_(cropped).jpg",
     "language": "en",
     "reliability": "primary",
-    "notes": { "zh": "Commons 文件页确认人物为安德鲁·斯坦顿，摄影者 Sarah K Joyce，许可为 CC BY-SA 4.0。", "en": "The Commons file page identifies Andrew Stanton; photographed by Sarah K Joyce and licensed CC BY-SA 4.0." },
+    "notes": {
+      "zh": "Commons 文件页确认人物为安德鲁·斯坦顿，摄影者 Sarah K Joyce，许可为 CC BY-SA 4.0。",
+      "en": "The Commons file page identifies Andrew Stanton; photographed by Sarah K Joyce and licensed CC BY-SA 4.0."
+    },
     "purpose": "image-provenance"
   }
 ]

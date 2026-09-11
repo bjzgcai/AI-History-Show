@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-2010-teamlab-record",
-    "type": "internal-record",
+    "type": "official-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "官方页面",
+      "en": "Official page"
     },
     "title": {
-      "zh": "teamLab数字艺术",
-      "en": "teamLab Digital Art"
+      "zh": "teamLab 官方艺术项目与展览页面",
+      "en": "teamLab official art projects and exhibitions"
     },
-    "url": "https://www.google.com/search?q=teamLab%E6%95%B0%E5%AD%97%E8%89%BA%E6%9C%AF%20%E6%97%A5%E6%9C%ACteamLab%E8%89%BA%E6%9C%AF%E5%9B%A2%E9%98%9F",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://www.teamlab.art/",
+    "language": "en",
+    "reliability": "primary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "core-evidence"
   },
   {
     "id": "source-humanistic-2010-teamlab-teamlab-borderless",

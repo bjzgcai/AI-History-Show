@@ -73,8 +73,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "teamLab 官方网站",
+          "en": "teamLab official website"
         },
         "title": {
           "zh": "teamLab数字艺术",
@@ -84,7 +84,7 @@
           "zh": "算法、空间与观众共同生成的沉浸艺术",
           "en": "Immersive art co-produced by algorithms, space and visitors"
         },
-        "url": "https://www.google.com/search?q=teamLab%E6%95%B0%E5%AD%97%E8%89%BA%E6%9C%AF%20%E6%97%A5%E6%9C%ACteamLab%E8%89%BA%E6%9C%AF%E5%9B%A2%E9%98%9F",
+        "url": "https://www.teamlab.art/",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

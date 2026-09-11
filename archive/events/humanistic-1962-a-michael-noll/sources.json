@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-1962-a-michael-noll-record",
-    "type": "internal-record",
+    "type": "paper-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "论文页面",
+      "en": "Paper page"
     },
     "title": {
-      "zh": "A. Michael Noll的计算机生成艺术",
-      "en": "Computer-Generated Art by A. Michael Noll"
+      "zh": "IEEE《数字计算机作为创造媒介》论文页面",
+      "en": "IEEE paper page for “The Digital Computer as a Creative Medium”"
     },
-    "url": "https://www.google.com/search?q=A.%20Michael%20Noll%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%94%9F%E6%88%90%E8%89%BA%E6%9C%AF%20A.%20Michael%20Noll",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://doi.org/10.1109/MSPEC.1967.5217127",
+    "language": "en",
+    "reliability": "primary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "core-evidence"
   },
   {
     "id": "source-humanistic-1962-a-michael-noll-noll-vertical-horizontal",

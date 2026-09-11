@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-2001-event-record",
-    "type": "internal-record",
+    "type": "official-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "官方页面",
+      "en": "Official page"
     },
     "title": {
-      "zh": "《人工智能》",
-      "en": "A.I. Artificial Intelligence"
+      "zh": "华纳兄弟《人工智能》官方影片页面",
+      "en": "Warner Bros. official film page for A.I. Artificial Intelligence"
     },
-    "url": "https://www.google.com/search?q=%E3%80%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E3%80%8B%20%E5%8F%B2%E8%92%82%E6%96%87%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://www.warnerbros.com/movies/ai-artificial-intelligence",
+    "language": "en",
+    "reliability": "primary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "core-evidence"
   },
   {
     "id": "source-humanistic-2001-event-ai-film-logo",
@@ -62,12 +62,21 @@
   {
     "id": "source-humanistic-2001-event-steven-spielberg-portrait",
     "type": "image-source",
-    "label": { "zh": "图片来源", "en": "Image source" },
-    "title": { "zh": "史蒂文·斯皮尔伯格肖像", "en": "Steven Spielberg portrait" },
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "史蒂文·斯皮尔伯格肖像",
+      "en": "Steven Spielberg portrait"
+    },
     "url": "https://commons.wikimedia.org/wiki/File:Steven_Spielberg_portrait.jpg",
     "language": "en",
     "reliability": "primary",
-    "notes": { "zh": "Commons 文件页确认人物为史蒂文·斯皮尔伯格，摄影者 GianAngelo Pistoia，许可为 CC BY-SA 3.0。", "en": "The Commons file page identifies Steven Spielberg; photographed by GianAngelo Pistoia and licensed CC BY-SA 3.0." },
+    "notes": {
+      "zh": "Commons 文件页确认人物为史蒂文·斯皮尔伯格，摄影者 GianAngelo Pistoia，许可为 CC BY-SA 3.0。",
+      "en": "The Commons file page identifies Steven Spielberg; photographed by GianAngelo Pistoia and licensed CC BY-SA 3.0."
+    },
     "purpose": "image-provenance"
   }
 ]

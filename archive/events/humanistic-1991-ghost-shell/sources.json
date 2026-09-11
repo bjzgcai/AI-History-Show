@@ -1,21 +1,21 @@
 [
   {
     "id": "source-humanistic-1991-ghost-shell-record",
-    "type": "internal-record",
+    "type": "official-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "官方页面",
+      "en": "Official page"
     },
     "title": {
-      "zh": "《攻壳机动队》",
-      "en": "Ghost in the Shell"
+      "zh": "Production I.G《攻壳机动队》官方作品页面",
+      "en": "Production I.G official work page for Ghost in the Shell"
     },
-    "url": "https://www.production-ig.com/works/ghost-in-the-shell/",
+    "url": "https://www.production-ig.co.jp/works/ghost-in-the-shell/",
     "language": "en",
     "reliability": "secondary",
     "notes": {
-      "zh": "修订版清单对应的作品或思想资料；页面用于核对出版、作者与主题信息。",
-      "en": "Record corresponding to the revised list; used to verify publication, authorship and theme."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
     "purpose": "background"
   },

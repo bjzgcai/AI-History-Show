@@ -74,8 +74,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "企鹅兰登图书页面",
+          "en": "Penguin Random House book page"
         },
         "title": {
           "zh": "《仿生人会梦见电子羊吗？》",
@@ -85,7 +85,7 @@
           "zh": "以共情检验人类与仿生人的边界",
           "en": "Testing the boundary between humans and androids through empathy"
         },
-        "url": "https://www.google.com/search?q=%E3%80%8A%E4%BB%BF%E7%94%9F%E4%BA%BA%E4%BC%9A%E6%A2%A6%E8%A7%81%E7%94%B5%E5%AD%90%E7%BE%8A%E5%90%97%EF%BC%9F%E3%80%8B%20%E8%8F%B2%E5%88%A9%E6%99%AE%C2%B7%E8%BF%AA%E5%85%8B",
+        "url": "https://www.penguinrandomhouse.com/books/61236/do-androids-dream-of-electric-sheep-by-philip-k-dick/",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

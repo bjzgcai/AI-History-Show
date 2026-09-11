@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-09-10 08:35
+// 生成时间: 2026-09-10 11:07
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 236, errors 0
 
@@ -109454,17 +109454,17 @@ const milestones = [
         {
           "id": "source-ancient-hephaestus-automata-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《伊利亚特》中的赫菲斯托斯自动机械",
-            "en": "Hephaestus Automata in The Iliad"
+            "zh": "Perseus 数字图书馆《伊利亚特》第18卷",
+            "en": "Perseus Digital Library, Iliad Book 18"
           },
           "url": "https://www.perseus.tufts.edu/hopper/text?doc=Hom.+Il.+18.136",
           "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "book-page"
         },
         {
           "id": "source-ancient-hephaestus-automata-verified-image",
@@ -109872,8 +109872,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "E.T.A. Hoffmann: Der Sandmann illustration 009",
-            "en": "E.T.A. Hoffmann: Der Sandmann illustration 009"
+            "zh": "《沙人》插图第9幅（Wikimedia Commons）",
+            "en": "The Sandman, illustration 009 (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:E.T.A._Hoffmann_-_Der_Sandmann_009.jpg",
           "purpose": "image-provenance",
@@ -110185,8 +110185,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Frans Hals: René Descartes portrait",
-            "en": "Frans Hals: René Descartes portrait"
+            "zh": "弗兰斯·哈尔斯绘勒内·笛卡尔肖像（Wikimedia Commons）",
+            "en": "Portrait of René Descartes by Frans Hals (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
           "purpose": "image-provenance",
@@ -110622,8 +110622,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Jaquet-Droz automaton: Writer",
-            "en": "Jaquet-Droz automaton: Writer"
+            "zh": "雅克-德罗“书写者”自动人偶（Wikimedia Commons）",
+            "en": "Jaquet-Droz Writer automaton (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Writer.jpg",
           "purpose": "image-provenance",
@@ -110637,8 +110637,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Jaquet-Droz automaton: Musician",
-            "en": "Jaquet-Droz automaton: Musician"
+            "zh": "雅克-德罗“音乐家”自动人偶（Wikimedia Commons）",
+            "en": "Jaquet-Droz Musician automaton (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Musician.jpg",
           "purpose": "image-provenance",
@@ -111021,8 +111021,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Mary Shelley life and letters scan",
-            "en": "Mary Shelley life and letters scan"
+            "zh": "《玛丽·沃斯通克拉夫特·雪莱生平与书信》扫描页（Wikimedia Commons）",
+            "en": "The Life and Letters of Mary Wollstonecraft Shelley scan (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:The_life_and_letters_of_Mary_Wollstonecraft_Shelley_(IA_lifelettersofmar01marsrich).pdf",
           "purpose": "image-provenance",
@@ -111334,8 +111334,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Samuel Butler portrait by Charles Gogin",
-            "en": "Samuel Butler portrait by Charles Gogin"
+            "zh": "查尔斯·戈金绘塞缪尔·巴特勒肖像（Wikimedia Commons）",
+            "en": "Portrait of Samuel Butler by Charles Gogin (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Samuel_Butler_by_Charles_Gogin.jpg",
           "purpose": "image-provenance",
@@ -111627,8 +111627,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Erewhon 1872 first-edition scan",
-            "en": "Erewhon 1872 first-edition scan"
+            "zh": "1872年《埃瑞璜》初版扫描页（Wikimedia Commons）",
+            "en": "1872 first-edition scan of Erewhon (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Erewhon-1872-001.jpg",
           "purpose": "image-provenance",
@@ -111924,8 +111924,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "George Eliot portrait, BnF Gallica",
-            "en": "George Eliot portrait, BnF Gallica"
+            "zh": "法国国家图书馆藏乔治·艾略特肖像（Wikimedia Commons）",
+            "en": "George Eliot portrait from BnF Gallica (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:George_Eliot_BNF_Gallica.jpg",
           "purpose": "image-provenance",
@@ -112221,8 +112221,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Villiers de l’Isle-Adam portrait",
-            "en": "Villiers de l’Isle-Adam portrait"
+            "zh": "维利耶·德·利尔-阿达姆肖像（Wikimedia Commons）",
+            "en": "Villiers de l’Isle-Adam portrait (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:L'Isle-Adam.jpg",
           "purpose": "image-provenance",
@@ -112518,8 +112518,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Liang Qichao portrait",
-            "en": "Liang Qichao portrait"
+            "zh": "梁启超肖像（Wikimedia Commons）",
+            "en": "Liang Qichao portrait (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Liang_Qichao_portrait.jpg",
           "purpose": "image-provenance",
@@ -113800,17 +113800,17 @@ const milestones = [
         {
           "id": "source-humanistic-1950-i-robot-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "书目记录",
+            "en": "Bibliographic record"
           },
           "label": {
-            "zh": "《我，机器人》",
-            "en": "I, Robot"
+            "zh": "ISFDB《我，机器人》书目记录",
+            "en": "ISFDB bibliographic record for I, Robot"
           },
           "url": "https://www.isfdb.org/cgi-bin/title.cgi?1795",
           "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "book-index"
         },
         {
           "id": "source-humanistic-1950-i-robot-verified-image",
@@ -114649,17 +114649,17 @@ const milestones = [
         {
           "id": "source-humanistic-computationalism-1950-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
-            "zh": "计算主义",
-            "en": "Computationalism"
+            "zh": "斯坦福哲学百科全书“心智的计算理论”条目",
+            "en": "Stanford Encyclopedia of Philosophy entry on the computational theory of mind"
           },
           "url": "https://plato.stanford.edu/entries/computational-mind/",
           "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-humanistic-computationalism-1950-verified-image",
@@ -115476,8 +115476,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "IEEE 论文页面",
+            "en": "IEEE paper page"
           },
           "title": {
             "zh": "A. Michael Noll的计算机生成艺术",
@@ -115487,7 +115487,7 @@ const milestones = [
             "zh": "计算机绘图进入现代艺术实验",
             "en": "Computer plotting enters modern art practice"
           },
-          "url": "https://www.google.com/search?q=A.%20Michael%20Noll%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%94%9F%E6%88%90%E8%89%BA%E6%9C%AF%20A.%20Michael%20Noll",
+          "url": "https://doi.org/10.1109/MSPEC.1967.5217127",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -115507,17 +115507,17 @@ const milestones = [
         {
           "id": "source-humanistic-1962-a-michael-noll-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
-            "zh": "A. Michael Noll的计算机生成艺术",
-            "en": "Computer-Generated Art by A. Michael Noll"
+            "zh": "IEEE《数字计算机作为创造媒介》论文页面",
+            "en": "IEEE paper page for “The Digital Computer as a Creative Medium”"
           },
-          "url": "https://www.google.com/search?q=A.%20Michael%20Noll%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%94%9F%E6%88%90%E8%89%BA%E6%9C%AF%20A.%20Michael%20Noll",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://doi.org/10.1109/MSPEC.1967.5217127",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper-page"
         },
         {
           "id": "source-humanistic-1962-a-michael-noll-noll-vertical-horizontal",
@@ -115773,8 +115773,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "企鹅兰登图书页面",
+            "en": "Penguin Random House book page"
           },
           "title": {
             "zh": "《巴别塔-17》",
@@ -115784,7 +115784,7 @@ const milestones = [
             "zh": "语言、认知与心智控制的科幻想象",
             "en": "A science-fiction inquiry into language, cognition and control"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7R%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
+          "url": "https://www.penguinrandomhouse.com/books/39030/babel-17-by-samuel-r-delany/",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -115804,17 +115804,17 @@ const milestones = [
         {
           "id": "source-humanistic-1966-17-babel-17-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《巴别塔-17》",
-            "en": "Babel-17"
+            "zh": "企鹅兰登《巴别塔-17》图书页面",
+            "en": "Penguin Random House book page for Babel-17"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7R%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://www.penguinrandomhouse.com/books/39030/babel-17-by-samuel-r-delany/",
+          "purpose": "bibliographic-verification",
+          "reliability": "primary",
+          "sourceType": "book-page"
         },
         {
           "id": "source-humanistic-1966-17-babel-17-samuel-delany-portrait",
@@ -115823,8 +115823,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Headshot 8 Samuel Delany",
-            "en": "Headshot 8 Samuel Delany"
+            "zh": "塞缪尔·R·德兰尼肖像（Wikimedia Commons）",
+            "en": "Samuel R. Delany portrait (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Headshot_8_Samuel_Delany.jpg",
           "purpose": "image-provenance",
@@ -116144,8 +116144,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "《科幻小说百科全书》",
+            "en": "The Encyclopedia of Science Fiction"
           },
           "title": {
             "zh": "《无声狂啸》",
@@ -116155,8 +116155,8 @@ const milestones = [
             "zh": "失控超级计算机与无尽惩罚",
             "en": "A rogue supercomputer and endless punishment"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E6%97%A0%E5%A3%B0%E7%8B%82%E5%95%B8%E3%80%8B%20%E5%93%88%E5%85%B0%C2%B7%E5%9F%83%E5%88%A9%E6%A3%AE",
-          "source": "Research index",
+          "url": "https://sf-encyclopedia.com/entry/ellison_harlan",
+          "source": "The Encyclopedia of Science Fiction",
           "license": {
             "zh": "来源与使用记录保留在后台。",
             "en": "Source and usage records are retained in the archive."
@@ -116166,8 +116166,8 @@ const milestones = [
             "en": "Used to consult supplementary material for this event."
           },
           "action": {
-            "zh": "打开资料入口",
-            "en": "Open reference entry"
+            "zh": "打开资料页面",
+            "en": "Open source page"
           }
         }
       ],
@@ -116175,17 +116175,17 @@ const milestones = [
         {
           "id": "source-humanistic-1967-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
-            "zh": "《无声狂啸》",
-            "en": "I Have No Mouth, and I Must Scream"
+            "zh": "《科幻小说百科全书》哈兰·埃里森条目（含《无声狂啸》）",
+            "en": "The Encyclopedia of Science Fiction entry on Harlan Ellison, including “I Have No Mouth, and I Must Scream”"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E6%88%91%E6%B2%A1%E6%9C%89%E5%98%B4%EF%BC%8C%E6%88%91%E5%BF%85%E9%A1%BB%E5%B0%96%E5%8F%AB%E3%80%8B%20%E5%93%88%E5%85%B0%C2%B7%E5%9F%83%E5%88%A9%E6%A3%AE",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://sf-encyclopedia.com/entry/ellison_harlan",
+          "purpose": "bibliographic-verification",
+          "reliability": "secondary",
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-humanistic-1967-event-am-talkfield",
@@ -116531,8 +116531,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "企鹅兰登图书页面",
+            "en": "Penguin Random House book page"
           },
           "title": {
             "zh": "《仿生人会梦见电子羊吗？》",
@@ -116542,7 +116542,7 @@ const milestones = [
             "zh": "以共情检验人类与仿生人的边界",
             "en": "Testing the boundary between humans and androids through empathy"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E4%BB%BF%E7%94%9F%E4%BA%BA%E4%BC%9A%E6%A2%A6%E8%A7%81%E7%94%B5%E5%AD%90%E7%BE%8A%E5%90%97%EF%BC%9F%E3%80%8B%20%E8%8F%B2%E5%88%A9%E6%99%AE%C2%B7%E8%BF%AA%E5%85%8B",
+          "url": "https://www.penguinrandomhouse.com/books/61236/do-androids-dream-of-electric-sheep-by-philip-k-dick/",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -116562,17 +116562,17 @@ const milestones = [
         {
           "id": "source-humanistic-1968-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《仿生人会梦见电子羊吗？》",
-            "en": "Do Androids Dream of Electric Sheep?"
+            "zh": "企鹅兰登《仿生人会梦见电子羊吗？》图书页面",
+            "en": "Penguin Random House book page for Do Androids Dream of Electric Sheep?"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E4%BB%BF%E7%94%9F%E4%BA%BA%E4%BC%9A%E6%A2%A6%E8%A7%81%E7%94%B5%E5%AD%90%E7%BE%8A%E5%90%97%EF%BC%9F%E3%80%8B%20%E8%8F%B2%E5%88%A9%E6%99%AE%C2%B7%E8%BF%AA%E5%85%8B",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://www.penguinrandomhouse.com/books/61236/do-androids-dream-of-electric-sheep-by-philip-k-dick/",
+          "purpose": "bibliographic-verification",
+          "reliability": "primary",
+          "sourceType": "book-page"
         },
         {
           "id": "source-humanistic-1968-event-androids-dream-cover",
@@ -117606,17 +117606,17 @@ const milestones = [
         {
           "id": "source-humanistic-1972-dreyfus-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "档案",
+            "en": "Archive"
           },
           "label": {
-            "zh": "《计算机不能做什么》",
-            "en": "What Computers Can't Do"
+            "zh": "互联网档案馆《计算机不能做什么》馆藏记录",
+            "en": "Internet Archive record for What Computers Can’t Do"
           },
           "url": "https://archive.org/details/whatcomputerscan00drey",
           "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "archive"
         },
         {
           "id": "source-humanistic-1972-dreyfus-verified-image",
@@ -117872,8 +117872,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "PhilPapers 论文索引",
+            "en": "PhilPapers index"
           },
           "title": {
             "zh": "布洛克的中华民族（Chinese Nation）",
@@ -117883,7 +117883,7 @@ const milestones = [
             "zh": "功能等价是否足以产生意识",
             "en": "Whether functional equivalence is sufficient for consciousness"
           },
-          "url": "https://www.google.com/search?q=%E5%B8%83%E6%B4%9B%E5%85%8B%E7%9A%84%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%EF%BC%88Chinese%20Nation%EF%BC%89%20%E5%86%85%E5%BE%B7%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B",
+          "url": "https://philpapers.org/rec/BLOTWF",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -117903,17 +117903,17 @@ const milestones = [
         {
           "id": "source-humanistic-1990-chinese-nation-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "论文索引",
+            "en": "Paper index"
           },
           "label": {
-            "zh": "布洛克的中华民族（Chinese Nation）",
-            "en": "Ned Block's Chinese Nation Thought Experiment"
+            "zh": "PhilPapers：内德·布洛克《功能主义的难题》论文记录",
+            "en": "PhilPapers record for Ned Block’s “Troubles with Functionalism”"
           },
-          "url": "https://www.google.com/search?q=%E5%B8%83%E6%B4%9B%E5%85%8B%E7%9A%84%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%EF%BC%88Chinese%20Nation%EF%BC%89%20%E5%86%85%E5%BE%B7%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://philpapers.org/rec/BLOTWF",
+          "purpose": "core-evidence",
+          "reliability": "secondary",
+          "sourceType": "paper-index"
         },
         {
           "id": "source-humanistic-1990-chinese-nation-ned-block-portrait",
@@ -118169,8 +118169,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "麦克米伦图书页面",
+            "en": "Pan Macmillan book page"
           },
           "title": {
             "zh": "《银河系漫游指南》",
@@ -118180,7 +118180,7 @@ const milestones = [
             "zh": "以喜剧反转超级智能与人类中心主义",
             "en": "Comic reversals of superintelligence and human exceptionalism"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E9%93%B6%E6%B2%B3%E7%B3%BB%E6%BC%AB%E6%B8%B8%E6%8C%87%E5%8D%97%E3%80%8B%20%E9%81%93%E6%A0%BC%E6%8B%89%E6%96%AF%C2%B7%E4%BA%9A%E5%BD%93%E6%96%AF",
+          "url": "https://www.panmacmillan.com/authors/douglas-adams/the-hitchhikers-guide-to-the-galaxy/9781529034523",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -118200,17 +118200,17 @@ const milestones = [
         {
           "id": "source-humanistic-1979-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《银河系漫游指南》",
-            "en": "The Hitchhiker's Guide to the Galaxy"
+            "zh": "麦克米伦《银河系漫游指南》图书页面",
+            "en": "Pan Macmillan book page for The Hitchhiker’s Guide to the Galaxy"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E9%93%B6%E6%B2%B3%E7%B3%BB%E6%BC%AB%E6%B8%B8%E6%8C%87%E5%8D%97%E3%80%8B%20%E9%81%93%E6%A0%BC%E6%8B%89%E6%96%AF%C2%B7%E4%BA%9A%E5%BD%93%E6%96%AF",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://www.panmacmillan.com/authors/douglas-adams/the-hitchhikers-guide-to-the-galaxy/9781529034523",
+          "purpose": "bibliographic-verification",
+          "reliability": "primary",
+          "sourceType": "book-page"
         },
         {
           "id": "source-humanistic-1979-event-douglas-adams-portrait",
@@ -118497,17 +118497,17 @@ const milestones = [
         {
           "id": "source-humanistic-1979-geb-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
-            "zh": "《哥德尔、艾舍尔、巴赫》",
-            "en": "Gödel, Escher, Bach: An Eternal Golden Braid"
+            "zh": "普利策奖《哥德尔、艾舍尔、巴赫》获奖记录",
+            "en": "Pulitzer Prize record for Gödel, Escher, Bach"
           },
           "url": "https://www.pulitzer.org/winners/douglas-r-hofstadter",
           "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "official-page"
         },
         {
           "id": "source-humanistic-1979-geb-verified-image",
@@ -118833,8 +118833,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "剑桥大学出版社论文页面",
+            "en": "Cambridge University Press paper page"
           },
           "title": {
             "zh": "中文房间思想实验",
@@ -118844,7 +118844,7 @@ const milestones = [
             "zh": "符号操作是否等于真正理解",
             "en": "Whether symbol manipulation amounts to genuine understanding"
           },
-          "url": "https://www.google.com/search?q=%E4%B8%AD%E6%96%87%E6%88%BF%E9%97%B4%E6%80%9D%E6%83%B3%E5%AE%9E%E9%AA%8C%20%E7%BA%A6%E7%BF%B0%C2%B7%E5%A1%9E%E5%B0%94",
+          "url": "https://doi.org/10.1017/S0140525X00005756",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -118864,17 +118864,17 @@ const milestones = [
         {
           "id": "source-humanistic-1980-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
-            "zh": "中文房间思想实验",
-            "en": "The Chinese Room Thought Experiment"
+            "zh": "剑桥大学出版社《心灵、大脑与程序》论文页面",
+            "en": "Cambridge University Press paper page for “Minds, Brains, and Programs”"
           },
-          "url": "https://www.google.com/search?q=%E4%B8%AD%E6%96%87%E6%88%BF%E9%97%B4%E6%80%9D%E6%83%B3%E5%AE%9E%E9%AA%8C%20%E7%BA%A6%E7%BF%B0%C2%B7%E5%A1%9E%E5%B0%94",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://doi.org/10.1017/S0140525X00005756",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper-page"
         },
         {
           "id": "source-humanistic-1980-event-john-searle-portrait",
@@ -118883,8 +118883,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "John Searle speaking at Google 1",
-            "en": "John Searle speaking at Google 1"
+            "zh": "约翰·塞尔演讲照片（Wikimedia Commons）",
+            "en": "John Searle speaking at Google (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:John_Searle_speaking_at_Google_1.jpg",
           "purpose": "image-provenance",
@@ -118898,8 +118898,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Chinese Room thought experiment with countryballs",
-            "en": "Chinese Room thought experiment with countryballs"
+            "zh": "中文房间思想实验示意图（Wikimedia Commons）",
+            "en": "Chinese Room thought-experiment illustration (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Chinese_Room_thought_experiment_with_countryballs.jpg",
           "purpose": "image-provenance",
@@ -119146,8 +119146,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "《科幻小说百科全书》",
+            "en": "The Encyclopedia of Science Fiction"
           },
           "title": {
             "zh": "《真名实姓》",
@@ -119157,7 +119157,7 @@ const milestones = [
             "zh": "网络身份、虚拟空间与新兴机器智能",
             "en": "Network identity, virtual space and emerging machine intelligence"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E7%9C%9F%E5%90%8D%E5%AE%9E%E5%A7%93%E3%80%8B%20%E5%BC%97%E8%AF%BA%C2%B7%E6%96%87%E5%A5%87",
+          "url": "https://sf-encyclopedia.com/entry/vinge_vernor",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -119177,17 +119177,17 @@ const milestones = [
         {
           "id": "source-humanistic-1981-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
-            "zh": "《真名实姓》",
-            "en": "True Names"
+            "zh": "《科幻小说百科全书》弗诺·文奇条目（含《真名实姓》）",
+            "en": "The Encyclopedia of Science Fiction entry on Vernor Vinge, including “True Names”"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E7%9C%9F%E5%90%8D%E5%AE%9E%E5%A7%93%E3%80%8B%20%E5%BC%97%E8%AF%BA%C2%B7%E6%96%87%E5%A5%87",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://sf-encyclopedia.com/entry/vinge_vernor",
+          "purpose": "bibliographic-verification",
+          "reliability": "secondary",
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-humanistic-1981-event-vernor-vinge-portrait",
@@ -119937,8 +119937,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "Open Road Media 图书页面",
+            "en": "Open Road Media book page"
           },
           "title": {
             "zh": "《血音乐》",
@@ -119948,7 +119948,7 @@ const milestones = [
             "zh": "生物智能、群体意识与人类形态的瓦解",
             "en": "Biological intelligence, collective consciousness and the dissolution of the human form"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E8%A1%80%E9%9F%B3%E4%B9%90%E3%80%8B%20%E6%A0%BC%E9%9B%B7%E6%A0%BC%C2%B7%E8%B4%9D%E5%B0%94",
+          "url": "https://openroadmedia.com/ebook/blood-music/9781497607200",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -119968,17 +119968,17 @@ const milestones = [
         {
           "id": "source-humanistic-1984-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《血音乐》",
-            "en": "Blood Music"
+            "zh": "Open Road Media《血音乐》图书页面",
+            "en": "Open Road Media book page for Blood Music"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E8%A1%80%E9%9F%B3%E4%B9%90%E3%80%8B%20%E6%A0%BC%E9%9B%B7%E6%A0%BC%C2%B7%E8%B4%9D%E5%B0%94",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://openroadmedia.com/ebook/blood-music/9781497607200",
+          "purpose": "bibliographic-verification",
+          "reliability": "primary",
+          "sourceType": "book-page"
         },
         {
           "id": "source-humanistic-1984-event-greg-bear-portrait",
@@ -119987,8 +119987,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Greg Bear by Kyle Cassidy",
-            "en": "Greg Bear by Kyle Cassidy"
+            "zh": "凯尔·卡西迪拍摄的格雷格·贝尔肖像（Wikimedia Commons）",
+            "en": "Greg Bear portrait by Kyle Cassidy (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Greg-bear-by-kyle-cassidy-L1008770.jpg",
           "purpose": "image-provenance",
@@ -120245,7 +120245,7 @@ const milestones = [
             "zh": "打开作品或文献资料页面。",
             "en": "Open the work or text record."
           },
-          "url": "https://monoskop.org/images/4/4c/Haraway_Donna_1985_A_Cyborg_Manifesto.pdf",
+          "url": "https://monoskop.org/images/4/4c/Haraway_Donna_1985_A_Manifesto_for_Cyborgs_Science_Technology_and_Socialist_Feminism_in_the_1980s.pdf",
           "source": "A Cyborg Manifesto",
           "license": {
             "zh": "以来源页面说明为准。",
@@ -120265,17 +120265,17 @@ const milestones = [
         {
           "id": "source-humanistic-1985-cyborg-manifesto-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
           },
           "label": {
-            "zh": "《赛博格宣言》",
-            "en": "A Cyborg Manifesto"
+            "zh": "《赛博格宣言》论文原文（Monoskop PDF）",
+            "en": "A Cyborg Manifesto full text (Monoskop PDF)"
           },
-          "url": "https://monoskop.org/images/4/4c/Haraway_Donna_1985_A_Cyborg_Manifesto.pdf",
+          "url": "https://monoskop.org/images/4/4c/Haraway_Donna_1985_A_Manifesto_for_Cyborgs_Science_Technology_and_Socialist_Feminism_in_the_1980s.pdf",
           "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-humanistic-1985-cyborg-manifesto-verified-image",
@@ -120562,17 +120562,17 @@ const milestones = [
         {
           "id": "source-humanistic-1998-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
-            "zh": "《文明》系列（The Culture）",
-            "en": "The Culture Series"
+            "zh": "《文明》系列作品概览（Wikipedia）",
+            "en": "Overview of the Culture series (Wikipedia)"
           },
           "url": "https://en.wikipedia.org/wiki/Culture_series",
-          "purpose": "migration-only",
+          "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-humanistic-1998-event-iain-banks-portrait",
@@ -120581,8 +120581,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "IainBanks2009.jpg",
-            "en": "IainBanks2009.jpg"
+            "zh": "伊恩·M·班克斯肖像（Wikimedia Commons）",
+            "en": "Iain M. Banks portrait (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:IainBanks2009.jpg",
           "purpose": "image-provenance",
@@ -120859,17 +120859,17 @@ const milestones = [
         {
           "id": "source-humanistic-1988-mind-children-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《心智之子》",
-            "en": "Mind Children: The Future of Robot and Human Intelligence"
+            "zh": "牛津大学出版社《心智之子》图书页面",
+            "en": "Oxford University Press book page for Mind Children"
           },
           "url": "https://global.oup.com/academic/product/mind-children-9780674576186",
           "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "book-page"
         },
         {
           "id": "source-humanistic-1988-mind-children-verified-image",
@@ -121195,8 +121195,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "哈珀柯林斯图书页面",
+            "en": "HarperCollins book page"
           },
           "title": {
             "zh": "《光明王》",
@@ -121206,7 +121206,7 @@ const milestones = [
             "zh": "技术垄断、意识转移与神权统治",
             "en": "Technological monopoly, mind transfer and divine rule"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E5%85%89%E6%98%8E%E7%8E%8B%E3%80%8B%20%E7%BD%97%E6%9D%B0%C2%B7%E6%B3%BD%E6%8B%89%E5%85%B9%E5%B0%BC",
+          "url": "https://www.harpercollins.com/products/lord-of-light-roger-zelazny",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -121226,17 +121226,17 @@ const milestones = [
         {
           "id": "source-humanistic-1989-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《光明王》",
-            "en": "Lord of Light"
+            "zh": "哈珀柯林斯《光明王》图书页面",
+            "en": "HarperCollins book page for Lord of Light"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E5%85%89%E6%98%8E%E7%8E%8B%E3%80%8B%20%E7%BD%97%E6%9D%B0%C2%B7%E6%B3%BD%E6%8B%89%E5%85%B9%E5%B0%BC",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://www.harpercollins.com/products/lord-of-light-roger-zelazny",
+          "purpose": "bibliographic-verification",
+          "reliability": "primary",
+          "sourceType": "book-page"
         },
         {
           "id": "source-humanistic-1989-event-roger-zelazny-portrait",
@@ -121245,8 +121245,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Roger Zelazny",
-            "en": "Roger Zelazny"
+            "zh": "罗杰·泽拉兹尼肖像（Wikipedia 文件页）",
+            "en": "Roger Zelazny portrait (Wikipedia file page)"
           },
           "url": "https://en.wikipedia.org/wiki/File:Rogerzelazny.JPG",
           "purpose": "image-provenance",
@@ -121260,8 +121260,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "LordofLight(Zelazny).jpg",
-            "en": "LordofLight(Zelazny).jpg"
+            "zh": "《光明王》初版封面（Wikipedia 文件页）",
+            "en": "Lord of Light first-edition cover (Wikipedia file page)"
           },
           "url": "https://en.wikipedia.org/wiki/File:LordofLight(Zelazny).jpg",
           "purpose": "image-provenance",
@@ -121598,8 +121598,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "企鹅兰登图书页面",
+            "en": "Penguin Random House book page"
           },
           "title": {
             "zh": "《差分机》",
@@ -121609,7 +121609,7 @@ const milestones = [
             "zh": "机械计算提前引发的信息革命",
             "en": "An information revolution triggered early by mechanical computing"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%AE%E5%88%86%E6%9C%BA%E3%80%8B%20%E5%A8%81%E5%BB%89%C2%B7%E5%90%89%E5%B8%83%E6%A3%AE%E3%80%81%E5%B8%83%E9%B2%81%E6%96%AF%C2%B7%E6%96%AF%E7%89%B9%E6%9E%97",
+          "url": "https://www.penguinrandomhouse.com/books/61429/the-difference-engine-by-william-gibson-and-bruce-sterling/",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -121629,17 +121629,17 @@ const milestones = [
         {
           "id": "source-humanistic-1990-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《差分机》",
-            "en": "The Difference Engine"
+            "zh": "企鹅兰登《差分机》图书页面",
+            "en": "Penguin Random House book page for The Difference Engine"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%AE%E5%88%86%E6%9C%BA%E3%80%8B%20%E5%A8%81%E5%BB%89%C2%B7%E5%90%89%E5%B8%83%E6%A3%AE%E3%80%81%E5%B8%83%E9%B2%81%E6%96%AF%C2%B7%E6%96%AF%E7%89%B9%E6%9E%97",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://www.penguinrandomhouse.com/books/61429/the-difference-engine-by-william-gibson-and-bruce-sterling/",
+          "purpose": "bibliographic-verification",
+          "reliability": "primary",
+          "sourceType": "book-page"
         },
         {
           "id": "source-humanistic-1990-event-william-gibson-portrait",
@@ -121911,8 +121911,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "阿歇特图书页面",
+            "en": "Hachette book page"
           },
           "title": {
             "zh": "《意识的解释》",
@@ -121922,7 +121922,7 @@ const milestones = [
             "zh": "以并行的“多重草稿”解释意识",
             "en": "Explaining consciousness through parallel multiple drafts"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E6%84%8F%E8%AF%86%E7%9A%84%E8%A7%A3%E9%87%8A%E3%80%8B%20%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E4%B8%B9%E5%B0%BC%E7%89%B9",
+          "url": "https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180665/",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -121942,17 +121942,17 @@ const milestones = [
         {
           "id": "source-humanistic-1991-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《意识的解释》",
-            "en": "Consciousness Explained"
+            "zh": "阿歇特《意识的解释》图书页面",
+            "en": "Hachette book page for Consciousness Explained"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E6%84%8F%E8%AF%86%E7%9A%84%E8%A7%A3%E9%87%8A%E3%80%8B%20%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E4%B8%B9%E5%B0%BC%E7%89%B9",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180665/",
+          "purpose": "bibliographic-verification",
+          "reliability": "primary",
+          "sourceType": "book-page"
         },
         {
           "id": "source-humanistic-1991-event-daniel-dennett-portrait",
@@ -122365,7 +122365,7 @@ const milestones = [
             "zh": "打开作品或文献资料页面。",
             "en": "Open the work or text record."
           },
-          "url": "https://www.production-ig.com/works/ghost-in-the-shell/",
+          "url": "https://www.production-ig.co.jp/works/ghost-in-the-shell/",
           "source": "Ghost in the Shell",
           "license": {
             "zh": "以来源页面说明为准。",
@@ -122385,17 +122385,17 @@ const milestones = [
         {
           "id": "source-humanistic-1991-ghost-shell-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
-            "zh": "《攻壳机动队》",
-            "en": "Ghost in the Shell"
+            "zh": "Production I.G《攻壳机动队》官方作品页面",
+            "en": "Production I.G official work page for Ghost in the Shell"
           },
-          "url": "https://www.production-ig.com/works/ghost-in-the-shell/",
+          "url": "https://www.production-ig.co.jp/works/ghost-in-the-shell/",
           "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "official-page"
         },
         {
           "id": "source-humanistic-1991-ghost-shell-verified-image",
@@ -122670,8 +122670,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "企鹅兰登图书页面",
+            "en": "Penguin Random House book page"
           },
           "title": {
             "zh": "《雪崩》",
@@ -122681,7 +122681,7 @@ const milestones = [
             "zh": "元宇宙、数字化身与语言病毒",
             "en": "The Metaverse, digital avatars and a linguistic virus"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E9%9B%AA%E5%B4%A9%E3%80%8B%20%E5%B0%BC%E5%B0%94%C2%B7%E6%96%AF%E8%92%82%E8%8A%AC%E6%A3%AE",
+          "url": "https://www.penguinrandomhouse.com/books/172832/snow-crash-by-neal-stephenson/",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -122701,17 +122701,17 @@ const milestones = [
         {
           "id": "source-humanistic-1992-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《雪崩》",
-            "en": "Snow Crash"
+            "zh": "企鹅兰登《雪崩》图书页面",
+            "en": "Penguin Random House book page for Snow Crash"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E9%9B%AA%E5%B4%A9%E3%80%8B%20%E5%B0%BC%E5%B0%94%C2%B7%E6%96%AF%E8%92%82%E8%8A%AC%E6%A3%AE",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://www.penguinrandomhouse.com/books/172832/snow-crash-by-neal-stephenson/",
+          "purpose": "bibliographic-verification",
+          "reliability": "primary",
+          "sourceType": "book-page"
         },
         {
           "id": "source-humanistic-1992-event-neal-stephenson-portrait",
@@ -122998,17 +122998,17 @@ const milestones = [
         {
           "id": "source-humanistic-1993-singularity-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
-            "zh": "技术奇点即将到来",
-            "en": "The Coming Technological Singularity"
+            "zh": "弗诺·文奇《即将到来的技术奇点》原文",
+            "en": "Vernor Vinge’s “The Coming Technological Singularity”"
           },
           "url": "https://edoras.sdsu.edu/~vinge/misc/singularity.html",
           "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "article"
         },
         {
           "id": "source-humanistic-1993-singularity-verified-image",
@@ -123264,8 +123264,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "哈珀柯林斯图书页面",
+            "en": "HarperCollins book page"
           },
           "title": {
             "zh": "《钻石时代》",
@@ -123275,7 +123275,7 @@ const milestones = [
             "zh": "交互式智能教材与个性化教育",
             "en": "An interactive intelligent primer and personalized education"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E9%92%BB%E7%9F%B3%E6%97%B6%E4%BB%A3%E3%80%8B%20%E5%B0%BC%E5%B0%94%C2%B7%E6%96%AF%E8%92%82%E8%8A%AC%E6%A3%AE",
+          "url": "https://www.harpercollins.com/products/the-diamond-age-neal-stephenson",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -123295,17 +123295,17 @@ const milestones = [
         {
           "id": "source-humanistic-1993-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《钻石时代》",
-            "en": "The Diamond Age"
+            "zh": "哈珀柯林斯《钻石时代》图书页面",
+            "en": "HarperCollins book page for The Diamond Age"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E9%92%BB%E7%9F%B3%E6%97%B6%E4%BB%A3%E3%80%8B%20%E5%B0%BC%E5%B0%94%C2%B7%E6%96%AF%E8%92%82%E8%8A%AC%E6%A3%AE",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://www.harpercollins.com/products/the-diamond-age-neal-stephenson",
+          "purpose": "bibliographic-verification",
+          "reliability": "primary",
+          "sourceType": "book-page"
         },
         {
           "id": "source-humanistic-1993-event-neal-stephenson-portrait",
@@ -123561,8 +123561,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "史密森尼美国艺术博物馆",
+            "en": "Smithsonian American Art Museum"
           },
           "title": {
             "zh": "《电子超级高速公路》",
@@ -123572,7 +123572,7 @@ const milestones = [
             "zh": "以电视、霓虹与地图表现网络化美国",
             "en": "Mapping a networked America through televisions and neon"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E7%94%B5%E5%AD%90%E8%B6%85%E7%BA%A7%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF%E3%80%8B%20%E7%99%BD%E5%8D%97%E5%87%86",
+          "url": "https://americanart.si.edu/artwork/electronic-superhighway-continental-us-alaska-hawaii-71478",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -123592,17 +123592,17 @@ const milestones = [
         {
           "id": "source-humanistic-1995-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
-            "zh": "《电子超级高速公路》",
-            "en": "Electronic Superhighway: Continental U.S., Alaska, Hawaii"
+            "zh": "史密森尼美国艺术博物馆《电子超级高速公路》藏品记录",
+            "en": "Smithsonian American Art Museum record for Electronic Superhighway"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E7%94%B5%E5%AD%90%E8%B6%85%E7%BA%A7%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF%E3%80%8B%20%E7%99%BD%E5%8D%97%E5%87%86",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://americanart.si.edu/artwork/electronic-superhighway-continental-us-alaska-hawaii-71478",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "official-page"
         },
         {
           "id": "source-humanistic-1995-event-nam-june-paik-portrait",
@@ -123889,17 +123889,17 @@ const milestones = [
         {
           "id": "source-humanistic-1995-hard-problem-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "意识的“困难问题”",
-            "en": "The Hard Problem of Consciousness"
+            "zh": "《面对意识问题》",
+            "en": "“Facing Up to the Problem of Consciousness”"
           },
           "url": "https://consc.net/papers/facing.html",
           "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "paper"
         },
         {
           "id": "source-humanistic-1995-hard-problem-verified-image",
@@ -124202,17 +124202,17 @@ const milestones = [
         {
           "id": "source-humanistic-1998-extended-mind-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "《拓展心智论》",
-            "en": "The Extended Mind"
+            "zh": "《延展心智》",
+            "en": "“The Extended Mind”"
           },
           "url": "https://consc.net/papers/extended.html",
           "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "paper"
         },
         {
           "id": "source-humanistic-1998-extended-mind-verified-image",
@@ -124686,8 +124686,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "华纳兄弟官方影片页面",
+            "en": "Warner Bros. official film page"
           },
           "title": {
             "zh": "《黑客帝国》",
@@ -124697,7 +124697,7 @@ const milestones = [
             "zh": "机器统治、模拟现实与觉醒",
             "en": "Machine rule, simulated reality and awakening"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD%E3%80%8B%20%E6%B2%83%E5%8D%93%E6%96%AF%E5%9F%BA%E5%A7%90%E5%A6%B9%2F%E5%85%84%E5%BC%9F",
+          "url": "https://www.warnerbros.com/movies/matrix",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -124717,17 +124717,17 @@ const milestones = [
         {
           "id": "source-humanistic-1999-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
-            "zh": "《黑客帝国》",
-            "en": "The Matrix"
+            "zh": "华纳兄弟《黑客帝国》官方影片页面",
+            "en": "Warner Bros. official film page for The Matrix"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD%E3%80%8B%20%E6%B2%83%E5%8D%93%E6%96%AF%E5%9F%BA%E5%A7%90%E5%A6%B9%2F%E5%85%84%E5%BC%9F",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://www.warnerbros.com/movies/matrix",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "official-page"
         },
         {
           "id": "source-humanistic-1999-event-wachowskis-portrait",
@@ -125294,8 +125294,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "华纳兄弟官方影片页面",
+            "en": "Warner Bros. official film page"
           },
           "title": {
             "zh": "《人工智能》",
@@ -125305,7 +125305,7 @@ const milestones = [
             "zh": "被设计去爱的机器儿童与人的责任",
             "en": "A machine child designed to love and the responsibilities of humans"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E3%80%8B%20%E5%8F%B2%E8%92%82%E6%96%87%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
+          "url": "https://www.warnerbros.com/movies/ai-artificial-intelligence",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -125325,17 +125325,17 @@ const milestones = [
         {
           "id": "source-humanistic-2001-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
-            "zh": "《人工智能》",
-            "en": "A.I. Artificial Intelligence"
+            "zh": "华纳兄弟《人工智能》官方影片页面",
+            "en": "Warner Bros. official film page for A.I. Artificial Intelligence"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E3%80%8B%20%E5%8F%B2%E8%92%82%E6%96%87%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://www.warnerbros.com/movies/ai-artificial-intelligence",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "official-page"
         },
         {
           "id": "source-humanistic-2001-event-ai-film-logo",
@@ -125626,8 +125626,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "模拟论证论文网站",
+            "en": "Simulation Argument paper site"
           },
           "title": {
             "zh": "《你生活在计算机模拟中吗？》",
@@ -125637,7 +125637,7 @@ const milestones = [
             "zh": "把模拟世界转化为概率式哲学论证",
             "en": "Turning simulated worlds into a probabilistic philosophical argument"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E4%BD%A0%E7%94%9F%E6%B4%BB%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%A8%A1%E6%8B%9F%E4%B8%AD%E5%90%97%EF%BC%9F%E3%80%8B%20%E5%B0%BC%E5%85%8B%C2%B7%E5%8D%9A%E6%96%AF%E7%89%B9%E7%BD%97%E5%A7%86",
+          "url": "https://simulation-argument.com/simulation/",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -125657,17 +125657,17 @@ const milestones = [
         {
           "id": "source-humanistic-2003-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
-            "zh": "《你生活在计算机模拟中吗？》",
-            "en": "Are You Living in a Computer Simulation?"
+            "zh": "尼克·博斯特罗姆《你生活在计算机模拟中吗？》论文原文",
+            "en": "Nick Bostrom’s paper “Are You Living in a Computer Simulation?”"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E4%BD%A0%E7%94%9F%E6%B4%BB%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%A8%A1%E6%8B%9F%E4%B8%AD%E5%90%97%EF%BC%9F%E3%80%8B%20%E5%B0%BC%E5%85%8B%C2%B7%E5%8D%9A%E6%96%AF%E7%89%B9%E7%BD%97%E5%A7%86",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://simulation-argument.com/simulation/",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper-page"
         },
         {
           "id": "source-humanistic-2003-event-nick-bostrom-portrait",
@@ -126226,7 +126226,7 @@ const milestones = [
             "zh": "机器关怀、环境废墟与人类自主性",
             "en": "Machine care, environmental ruin and human autonomy"
           },
-          "url": "https://www.pixar.com/feature-films/walle",
+          "url": "https://www.pixar.com/wall-e",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -126246,17 +126246,17 @@ const milestones = [
         {
           "id": "source-humanistic-2008-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
-            "zh": "《机器人总动员》",
-            "en": "WALL-E"
+            "zh": "皮克斯《机器人总动员》官方影片页面",
+            "en": "Pixar official film page for WALL-E"
           },
-          "url": "https://www.pixar.com/feature-films/walle",
-          "purpose": "migration-only",
+          "url": "https://www.pixar.com/wall-e",
+          "purpose": "background",
           "reliability": "primary",
-          "sourceType": "internal-record"
+          "sourceType": "official-page"
         },
         {
           "id": "source-humanistic-2008-event-wall-e-pixar-reference",
@@ -126547,8 +126547,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "teamLab 官方网站",
+            "en": "teamLab official website"
           },
           "title": {
             "zh": "teamLab数字艺术",
@@ -126558,7 +126558,7 @@ const milestones = [
             "zh": "算法、空间与观众共同生成的沉浸艺术",
             "en": "Immersive art co-produced by algorithms, space and visitors"
           },
-          "url": "https://www.google.com/search?q=teamLab%E6%95%B0%E5%AD%97%E8%89%BA%E6%9C%AF%20%E6%97%A5%E6%9C%ACteamLab%E8%89%BA%E6%9C%AF%E5%9B%A2%E9%98%9F",
+          "url": "https://www.teamlab.art/",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -126578,17 +126578,17 @@ const milestones = [
         {
           "id": "source-humanistic-2010-teamlab-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
-            "zh": "teamLab数字艺术",
-            "en": "teamLab Digital Art"
+            "zh": "teamLab 官方艺术项目与展览页面",
+            "en": "teamLab official art projects and exhibitions"
           },
-          "url": "https://www.google.com/search?q=teamLab%E6%95%B0%E5%AD%97%E8%89%BA%E6%9C%AF%20%E6%97%A5%E6%9C%ACteamLab%E8%89%BA%E6%9C%AF%E5%9B%A2%E9%98%9F",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://www.teamlab.art/",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "official-page"
         },
         {
           "id": "source-humanistic-2010-teamlab-teamlab-borderless",
@@ -127062,8 +127062,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "二十世纪影业官方影片页面",
+            "en": "20th Century Studios official film page"
           },
           "title": {
             "zh": "《普罗米修斯》",
@@ -127073,7 +127073,7 @@ const milestones = [
             "zh": "造物者、仿生人与被工具化的生命",
             "en": "Creators, androids and instrumentalized life"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E6%99%AE%E7%BD%97%E7%B1%B3%E4%BF%AE%E6%96%AF%E3%80%8B%20%E9%9B%B7%E5%BE%B7%E5%88%A9%C2%B7%E6%96%AF%E7%A7%91%E7%89%B9%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
+          "url": "https://www.20thcenturystudios.com/movies/prometheus",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -127093,17 +127093,17 @@ const milestones = [
         {
           "id": "source-humanistic-2012-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
-            "zh": "《普罗米修斯》",
-            "en": "Prometheus"
+            "zh": "二十世纪影业《普罗米修斯》官方影片页面",
+            "en": "20th Century Studios official film page for Prometheus"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E6%99%AE%E7%BD%97%E7%B1%B3%E4%BF%AE%E6%96%AF%E3%80%8B%20%E9%9B%B7%E5%BE%B7%E5%88%A9%C2%B7%E6%96%AF%E7%A7%91%E7%89%B9%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://www.20thcenturystudios.com/movies/prometheus",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "official-page"
         },
         {
           "id": "source-humanistic-2012-event-ridley-scott-portrait",
@@ -128173,17 +128173,17 @@ const milestones = [
         {
           "id": "source-humanistic-2014-superintelligence-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《超级智能：路径、危险与策略》",
-            "en": "Superintelligence: Paths, Dangers, Strategies"
+            "zh": "牛津大学出版社《超级智能》图书页面",
+            "en": "Oxford University Press book page for Superintelligence"
           },
           "url": "https://global.oup.com/academic/product/superintelligence-9780198739838",
           "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "book-page"
         },
         {
           "id": "source-humanistic-2014-superintelligence-verified-image",
@@ -128455,8 +128455,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "arXiv 论文页面",
+            "en": "arXiv paper page"
           },
           "title": {
             "zh": "AI对齐问题",
@@ -128466,7 +128466,7 @@ const milestones = [
             "zh": "让 AI 的目标、行为与人类意图保持一致",
             "en": "Keeping AI goals and behavior aligned with human intentions"
           },
-          "url": "https://www.google.com/search?q=AI%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98%20%E5%A4%9A%E4%BD%8D%E5%AD%A6%E8%80%85",
+          "url": "https://arxiv.org/abs/1606.06565",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -128486,17 +128486,17 @@ const milestones = [
         {
           "id": "source-humanistic-2025-ai-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
-            "zh": "AI对齐问题",
-            "en": "The AI Alignment Problem"
+            "zh": "arXiv《人工智能安全的具体问题》论文页面",
+            "en": "arXiv paper page for “Concrete Problems in AI Safety”"
           },
-          "url": "https://www.google.com/search?q=AI%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98%20%E5%A4%9A%E4%BD%8D%E5%AD%A6%E8%80%85",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://arxiv.org/abs/1606.06565",
+          "purpose": "background",
+          "reliability": "primary",
+          "sourceType": "paper-page"
         },
         {
           "id": "source-humanistic-2025-ai-stuart-russell-portrait",
@@ -128826,8 +128826,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "企鹅兰登图书页面",
+            "en": "Penguin Random House book page"
           },
           "title": {
             "zh": "《克拉拉与太阳》",
@@ -128837,7 +128837,7 @@ const milestones = [
             "zh": "人工朋友的观察、信念与照护",
             "en": "Observation, belief and care through an Artificial Friend"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E5%85%8B%E6%8B%89%E6%8B%89%E4%B8%8E%E5%A4%AA%E9%98%B3%E3%80%8B%20%E7%9F%B3%E9%BB%91%E4%B8%80%E9%9B%84",
+          "url": "https://www.penguinrandomhouse.com/books/653825/klara-and-the-sun-by-kazuo-ishiguro/",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -128857,17 +128857,17 @@ const milestones = [
         {
           "id": "source-humanistic-2021-event-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《克拉拉与太阳》",
-            "en": "Klara and the Sun"
+            "zh": "企鹅兰登《克拉拉与太阳》图书页面",
+            "en": "Penguin Random House book page for Klara and the Sun"
           },
-          "url": "https://www.google.com/search?q=%E3%80%8A%E5%85%8B%E6%8B%89%E6%8B%89%E4%B8%8E%E5%A4%AA%E9%98%B3%E3%80%8B%20%E7%9F%B3%E9%BB%91%E4%B8%80%E9%9B%84",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://www.penguinrandomhouse.com/books/653825/klara-and-the-sun-by-kazuo-ishiguro/",
+          "purpose": "bibliographic-verification",
+          "reliability": "primary",
+          "sourceType": "book-page"
         },
         {
           "id": "source-humanistic-2021-event-klara-sun-logo",
@@ -129170,17 +129170,17 @@ const milestones = [
         {
           "id": "source-humanistic-2022-reality-plus-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "图书页面",
+            "en": "Book page"
           },
           "label": {
-            "zh": "《现实+：虚拟世界与哲学问题》",
-            "en": "Reality+: Virtual Worlds and the Problems of Philosophy"
+            "zh": "W. W. Norton《现实+》图书页面",
+            "en": "W. W. Norton book page for Reality+"
           },
           "url": "https://wwnorton.com/books/9780393541859",
           "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "internal-record"
+          "sourceType": "book-page"
         },
         {
           "id": "source-humanistic-2022-reality-plus-verified-image",
@@ -129510,8 +129510,8 @@ const milestones = [
         {
           "type": "archiveLink",
           "site": {
-            "zh": "资料检索入口",
-            "en": "Research entry"
+            "zh": "arXiv 论文页面",
+            "en": "arXiv paper page"
           },
           "title": {
             "zh": "整合信息理论（IIT）的AI应用",
@@ -129521,7 +129521,7 @@ const milestones = [
             "zh": "用因果整合结构讨论人工系统意识",
             "en": "Using integrated causal structure to discuss consciousness in artificial systems"
           },
-          "url": "https://www.google.com/search?q=%E6%95%B4%E5%90%88%E4%BF%A1%E6%81%AF%E7%90%86%E8%AE%BA%EF%BC%88IIT%EF%BC%89%E7%9A%84AI%E5%BA%94%E7%94%A8%20%E6%9C%B1%E5%88%A9%E5%A5%A5%C2%B7%E6%89%98%E8%AF%BA%E5%B0%BC",
+          "url": "https://arxiv.org/abs/2308.08708",
           "source": "Research index",
           "license": {
             "zh": "来源与使用记录保留在后台。",
@@ -129541,17 +129541,17 @@ const milestones = [
         {
           "id": "source-humanistic-2025-iit-ai-record",
           "type": {
-            "zh": "内部记录",
-            "en": "Internal record"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
-            "zh": "整合信息理论（IIT）的AI应用",
-            "en": "IIT and Artificial Consciousness"
+            "zh": "arXiv《人工智能中的意识：来自意识科学的洞见》论文页面",
+            "en": "arXiv paper page for “Consciousness in Artificial Intelligence: Insights from the Science of Consciousness”"
           },
-          "url": "https://www.google.com/search?q=%E6%95%B4%E5%90%88%E4%BF%A1%E6%81%AF%E7%90%86%E8%AE%BA%EF%BC%88IIT%EF%BC%89%E7%9A%84AI%E5%BA%94%E7%94%A8%20%E6%9C%B1%E5%88%A9%E5%A5%A5%C2%B7%E6%89%98%E8%AF%BA%E5%B0%BC",
-          "purpose": "migration-only",
-          "reliability": "reference-only",
-          "sourceType": "internal-record"
+          "url": "https://arxiv.org/abs/2308.08708",
+          "purpose": "background",
+          "reliability": "primary",
+          "sourceType": "paper-page"
         },
         {
           "id": "source-humanistic-2025-iit-ai-giulio-tononi-nih-portrait",
@@ -129560,8 +129560,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Giulio Tononi at NIH Pioneer Award 2005",
-            "en": "Giulio Tononi at NIH Pioneer Award 2005"
+            "zh": "朱利奥·托诺尼在美国国立卫生研究院的照片（Wikimedia Commons）",
+            "en": "Giulio Tononi at the NIH Pioneer Award event (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Giulio_Tononi_at_NIH_PioneerAwardg_2005.jpg",
           "purpose": "image-provenance",
@@ -129575,8 +129575,8 @@ const milestones = [
             "en": "Image source"
           },
           "label": {
-            "zh": "Axioms and postulates of integrated information theory",
-            "en": "Axioms and postulates of integrated information theory"
+            "zh": "整合信息理论的公理与假设示意图（Wikimedia Commons）",
+            "en": "Axioms and postulates of integrated information theory (Wikimedia Commons)"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Axioms_and_postulates_of_integrated_information_theory.jpg",
           "purpose": "image-provenance",

@@ -74,8 +74,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "史密森尼美国艺术博物馆",
+          "en": "Smithsonian American Art Museum"
         },
         "title": {
           "zh": "《电子超级高速公路》",
@@ -85,7 +85,7 @@
           "zh": "以电视、霓虹与地图表现网络化美国",
           "en": "Mapping a networked America through televisions and neon"
         },
-        "url": "https://www.google.com/search?q=%E3%80%8A%E7%94%B5%E5%AD%90%E8%B6%85%E7%BA%A7%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF%E3%80%8B%20%E7%99%BD%E5%8D%97%E5%87%86",
+        "url": "https://americanart.si.edu/artwork/electronic-superhighway-continental-us-alaska-hawaii-71478",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

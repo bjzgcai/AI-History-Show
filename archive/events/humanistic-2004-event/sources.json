@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-2004-event-record",
-    "type": "internal-record",
+    "type": "official-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "官方页面",
+      "en": "Official page"
     },
     "title": {
-      "zh": "《我，机器人》（电影版）",
-      "en": "I, Robot (Film)"
+      "zh": "二十世纪影业《我，机器人》官方影片页面",
+      "en": "20th Century Studios official film page for I, Robot"
     },
-    "url": "https://www.google.com/search?q=%E3%80%8A%E6%88%91%EF%BC%8C%E6%9C%BA%E5%99%A8%E4%BA%BA%E3%80%8B%EF%BC%88%E7%94%B5%E5%BD%B1%E7%89%88%EF%BC%89%20%E9%98%BF%E5%8E%86%E5%85%8B%E6%96%AF%C2%B7%E6%99%AE%E7%BD%97%E4%BA%9A%E6%96%AF%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://www.20thcenturystudios.com/movies/i-robot",
+    "language": "en",
+    "reliability": "primary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对作品身份、发行或发表信息。",
+      "en": "Used to verify the work identity, release, or publication information."
     },
-    "purpose": "migration-only"
+    "purpose": "core-evidence"
   },
   {
     "id": "source-humanistic-2004-event-irobot-head",

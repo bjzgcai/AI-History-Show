@@ -27,8 +27,8 @@
       "en": "Image source"
     },
     "title": {
-      "zh": "Jaquet-Droz automaton: Writer",
-      "en": "Jaquet-Droz automaton: Writer"
+      "zh": "雅克-德罗“书写者”自动人偶（Wikimedia Commons）",
+      "en": "Jaquet-Droz Writer automaton (Wikimedia Commons)"
     },
     "url": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Writer.jpg",
     "language": "en",
@@ -47,8 +47,8 @@
       "en": "Image source"
     },
     "title": {
-      "zh": "Jaquet-Droz automaton: Musician",
-      "en": "Jaquet-Droz automaton: Musician"
+      "zh": "雅克-德罗“音乐家”自动人偶（Wikimedia Commons）",
+      "en": "Jaquet-Droz Musician automaton (Wikimedia Commons)"
     },
     "url": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Musician.jpg",
     "language": "en",
@@ -62,12 +62,21 @@
   {
     "id": "source-jaquet-droz-automata-pierre-jaquet-droz-portrait",
     "type": "image-source",
-    "label": { "zh": "图片来源", "en": "Image source" },
-    "title": { "zh": "皮埃尔·雅克-德罗肖像（1758）", "en": "Portrait of Pierre Jaquet-Droz (1758)" },
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "皮埃尔·雅克-德罗肖像（1758）",
+      "en": "Portrait of Pierre Jaquet-Droz (1758)"
+    },
     "url": "https://commons.wikimedia.org/wiki/File:Pierre_Jaquet-Droz,_1758.jpg",
     "language": "en",
     "reliability": "primary",
-    "notes": { "zh": "Commons 文件页标识该图为皮埃尔·雅克-德罗1758年肖像；图片为公有领域。", "en": "The Commons file page identifies the image as a 1758 portrait of Pierre Jaquet-Droz; the image is public domain." },
+    "notes": {
+      "zh": "Commons 文件页标识该图为皮埃尔·雅克-德罗1758年肖像；图片为公有领域。",
+      "en": "The Commons file page identifies the image as a 1758 portrait of Pierre Jaquet-Droz; the image is public domain."
+    },
     "purpose": "image-provenance"
   }
 ]

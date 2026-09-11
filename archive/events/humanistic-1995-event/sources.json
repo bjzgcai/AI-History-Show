@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-1995-event-record",
-    "type": "internal-record",
+    "type": "official-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "官方页面",
+      "en": "Official page"
     },
     "title": {
-      "zh": "《电子超级高速公路》",
-      "en": "Electronic Superhighway: Continental U.S., Alaska, Hawaii"
+      "zh": "史密森尼美国艺术博物馆《电子超级高速公路》藏品记录",
+      "en": "Smithsonian American Art Museum record for Electronic Superhighway"
     },
-    "url": "https://www.google.com/search?q=%E3%80%8A%E7%94%B5%E5%AD%90%E8%B6%85%E7%BA%A7%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF%E3%80%8B%20%E7%99%BD%E5%8D%97%E5%87%86",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://americanart.si.edu/artwork/electronic-superhighway-continental-us-alaska-hawaii-71478",
+    "language": "en",
+    "reliability": "primary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "core-evidence"
   },
   {
     "id": "source-humanistic-1995-event-nam-june-paik-portrait",

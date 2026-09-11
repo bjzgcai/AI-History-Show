@@ -1,21 +1,21 @@
 [
   {
     "id": "source-humanistic-computationalism-1950-record",
-    "type": "internal-record",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
-      "zh": "计算主义",
-      "en": "Computationalism"
+      "zh": "斯坦福哲学百科全书“心智的计算理论”条目",
+      "en": "Stanford Encyclopedia of Philosophy entry on the computational theory of mind"
     },
     "url": "https://plato.stanford.edu/entries/computational-mind/",
     "language": "en",
     "reliability": "secondary",
     "notes": {
-      "zh": "修订版清单对应的作品或思想资料；页面用于核对出版、作者与主题信息。",
-      "en": "Record corresponding to the revised list; used to verify publication, authorship and theme."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
     "purpose": "background"
   },

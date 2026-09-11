@@ -74,8 +74,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "华纳兄弟官方影片页面",
+          "en": "Warner Bros. official film page"
         },
         "title": {
           "zh": "《人工智能》",
@@ -85,7 +85,7 @@
           "zh": "被设计去爱的机器儿童与人的责任",
           "en": "A machine child designed to love and the responsibilities of humans"
         },
-        "url": "https://www.google.com/search?q=%E3%80%8A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E3%80%8B%20%E5%8F%B2%E8%92%82%E6%96%87%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC%EF%BC%88%E5%AF%BC%E6%BC%94%EF%BC%89",
+        "url": "https://www.warnerbros.com/movies/ai-artificial-intelligence",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

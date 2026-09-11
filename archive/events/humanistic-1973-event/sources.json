@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-1973-event-record",
-    "type": "internal-record",
+    "type": "official-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "官方页面",
+      "en": "Official page"
     },
     "title": {
-      "zh": "《西部世界》",
-      "en": "Westworld"
+      "zh": "米高梅《西部世界》官方影片页面",
+      "en": "MGM official film page for Westworld"
     },
-    "url": "https://www.google.com/search?q=%E3%80%8A%E8%A5%BF%E9%83%A8%E4%B8%96%E7%95%8C%E3%80%8B%20%E8%BF%88%E5%85%8B%E5%B0%94%C2%B7%E5%85%8B%E8%8E%B1%E9%A1%BF",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://www.mgm.com/movies/westworld",
+    "language": "en",
+    "reliability": "primary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对作品身份、发行或发表信息。",
+      "en": "Used to verify the work identity, release, or publication information."
     },
-    "purpose": "migration-only"
+    "purpose": "core-evidence"
   },
   {
     "id": "source-humanistic-1973-event-michael-crichton-portrait",

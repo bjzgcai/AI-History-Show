@@ -74,8 +74,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "华纳兄弟官方影片页面",
+          "en": "Warner Bros. official film page"
         },
         "title": {
           "zh": "《黑客帝国》",
@@ -85,7 +85,7 @@
           "zh": "机器统治、模拟现实与觉醒",
           "en": "Machine rule, simulated reality and awakening"
         },
-        "url": "https://www.google.com/search?q=%E3%80%8A%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD%E3%80%8B%20%E6%B2%83%E5%8D%93%E6%96%AF%E5%9F%BA%E5%A7%90%E5%A6%B9%2F%E5%85%84%E5%BC%9F",
+        "url": "https://www.warnerbros.com/movies/matrix",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-1981-event-record",
-    "type": "internal-record",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
-      "zh": "《真名实姓》",
-      "en": "True Names"
+      "zh": "《科幻小说百科全书》弗诺·文奇条目（含《真名实姓》）",
+      "en": "The Encyclopedia of Science Fiction entry on Vernor Vinge, including “True Names”"
     },
-    "url": "https://www.google.com/search?q=%E3%80%8A%E7%9C%9F%E5%90%8D%E5%AE%9E%E5%A7%93%E3%80%8B%20%E5%BC%97%E8%AF%BA%C2%B7%E6%96%87%E5%A5%87",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://sf-encyclopedia.com/entry/vinge_vernor",
+    "language": "en",
+    "reliability": "secondary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "bibliographic-verification"
   },
   {
     "id": "source-humanistic-1981-event-vernor-vinge-portrait",

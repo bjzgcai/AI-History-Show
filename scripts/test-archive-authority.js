@@ -553,6 +553,21 @@ for (const milestone of humanisticMilestones) {
     );
     assert.ok(milestone.resources && milestone.resources.images.length > 0);
     assert.ok(milestone.achievement && milestone.achievement.sources.length > 0);
+    for (const source of milestone.achievement.sources) {
+        assert.notEqual(
+            source.sourceType,
+            'internal-record',
+            `${milestone.id} must not expose internal source records`
+        );
+        assert.doesNotMatch(
+            source.url,
+            /^https?:\/\/(?:www\.)?(?:google\.[^/]+|bing\.com|search\.yahoo\.com)\/(?:search|websearch)(?:[/?#]|$)/i,
+            `${milestone.id} must not expose a search-results page as a source`
+        );
+        if (source.sourceType === 'image-source') {
+            assert.match(source.label.zh, /[\u3400-\u9fff]/, `${milestone.id} image-source title must be localized`);
+        }
+    }
 }
 console.log('PASS humanistic cycle Archive authority');
 

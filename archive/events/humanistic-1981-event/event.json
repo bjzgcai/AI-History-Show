@@ -74,8 +74,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "《科幻小说百科全书》",
+          "en": "The Encyclopedia of Science Fiction"
         },
         "title": {
           "zh": "《真名实姓》",
@@ -85,7 +85,7 @@
           "zh": "网络身份、虚拟空间与新兴机器智能",
           "en": "Network identity, virtual space and emerging machine intelligence"
         },
-        "url": "https://www.google.com/search?q=%E3%80%8A%E7%9C%9F%E5%90%8D%E5%AE%9E%E5%A7%93%E3%80%8B%20%E5%BC%97%E8%AF%BA%C2%B7%E6%96%87%E5%A5%87",
+        "url": "https://sf-encyclopedia.com/entry/vinge_vernor",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

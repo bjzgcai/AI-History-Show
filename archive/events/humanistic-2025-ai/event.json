@@ -82,8 +82,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "arXiv 论文页面",
+          "en": "arXiv paper page"
         },
         "title": {
           "zh": "AI对齐问题",
@@ -93,7 +93,7 @@
           "zh": "让 AI 的目标、行为与人类意图保持一致",
           "en": "Keeping AI goals and behavior aligned with human intentions"
         },
-        "url": "https://www.google.com/search?q=AI%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98%20%E5%A4%9A%E4%BD%8D%E5%AD%A6%E8%80%85",
+        "url": "https://arxiv.org/abs/1606.06565",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

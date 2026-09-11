@@ -74,8 +74,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "模拟论证论文网站",
+          "en": "Simulation Argument paper site"
         },
         "title": {
           "zh": "《你生活在计算机模拟中吗？》",
@@ -85,7 +85,7 @@
           "zh": "把模拟世界转化为概率式哲学论证",
           "en": "Turning simulated worlds into a probabilistic philosophical argument"
         },
-        "url": "https://www.google.com/search?q=%E3%80%8A%E4%BD%A0%E7%94%9F%E6%B4%BB%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%A8%A1%E6%8B%9F%E4%B8%AD%E5%90%97%EF%BC%9F%E3%80%8B%20%E5%B0%BC%E5%85%8B%C2%B7%E5%8D%9A%E6%96%AF%E7%89%B9%E7%BD%97%E5%A7%86",
+        "url": "https://simulation-argument.com/simulation/",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

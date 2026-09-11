@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-1990-chinese-nation-record",
-    "type": "internal-record",
+    "type": "paper-index",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "论文索引",
+      "en": "Paper index"
     },
     "title": {
-      "zh": "布洛克的中华民族（Chinese Nation）",
-      "en": "Ned Block's Chinese Nation Thought Experiment"
+      "zh": "PhilPapers：内德·布洛克《功能主义的难题》论文记录",
+      "en": "PhilPapers record for Ned Block’s “Troubles with Functionalism”"
     },
-    "url": "https://www.google.com/search?q=%E5%B8%83%E6%B4%9B%E5%85%8B%E7%9A%84%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%EF%BC%88Chinese%20Nation%EF%BC%89%20%E5%86%85%E5%BE%B7%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://philpapers.org/rec/BLOTWF",
+    "language": "en",
+    "reliability": "secondary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "core-evidence"
   },
   {
     "id": "source-humanistic-1990-chinese-nation-ned-block-portrait",

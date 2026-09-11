@@ -74,8 +74,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "麦克米伦图书页面",
+          "en": "Pan Macmillan book page"
         },
         "title": {
           "zh": "《银河系漫游指南》",
@@ -85,7 +85,7 @@
           "zh": "以喜剧反转超级智能与人类中心主义",
           "en": "Comic reversals of superintelligence and human exceptionalism"
         },
-        "url": "https://www.google.com/search?q=%E3%80%8A%E9%93%B6%E6%B2%B3%E7%B3%BB%E6%BC%AB%E6%B8%B8%E6%8C%87%E5%8D%97%E3%80%8B%20%E9%81%93%E6%A0%BC%E6%8B%89%E6%96%AF%C2%B7%E4%BA%9A%E5%BD%93%E6%96%AF",
+        "url": "https://www.panmacmillan.com/authors/douglas-adams/the-hitchhikers-guide-to-the-galaxy/9781529034523",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

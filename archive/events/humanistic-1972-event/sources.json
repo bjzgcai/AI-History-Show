@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-1972-event-record",
-    "type": "internal-record",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
-      "zh": "《神的九十亿个名字》",
-      "en": "The Nine Billion Names of God"
+      "zh": "《科幻小说百科全书》阿瑟·克拉克条目（含《神的九十亿个名字》）",
+      "en": "The Encyclopedia of Science Fiction entry on Arthur C. Clarke, including “The Nine Billion Names of God”"
     },
-    "url": "https://www.google.com/search?q=%E3%80%8A%E7%A5%9E%E7%9A%84%E4%B9%9D%E5%8D%81%E4%BA%BF%E4%B8%AA%E5%90%8D%E5%AD%97%E3%80%8B%20%E9%98%BF%E7%91%9F%C2%B7%E5%85%8B%E6%8B%89%E5%85%8B",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://sf-encyclopedia.com/entry/clarke_arthur_c",
+    "language": "en",
+    "reliability": "secondary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对作品身份、发行或发表信息。",
+      "en": "Used to verify the work identity, release, or publication information."
     },
-    "purpose": "migration-only"
+    "purpose": "bibliographic-verification"
   },
   {
     "id": "source-humanistic-1972-event-arthur-clarke-portrait",

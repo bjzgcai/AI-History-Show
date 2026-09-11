@@ -73,8 +73,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "《科幻小说百科全书》",
+          "en": "The Encyclopedia of Science Fiction"
         },
         "title": {
           "zh": "《神的九十亿个名字》",
@@ -84,7 +84,7 @@
           "zh": "计算任务、宗教信念与世界终结",
           "en": "Computation, religious belief and the end of the world"
         },
-        "url": "https://www.google.com/search?q=%E3%80%8A%E7%A5%9E%E7%9A%84%E4%B9%9D%E5%8D%81%E4%BA%BF%E4%B8%AA%E5%90%8D%E5%AD%97%E3%80%8B%20%E9%98%BF%E7%91%9F%C2%B7%E5%85%8B%E6%8B%89%E5%85%8B",
+        "url": "https://sf-encyclopedia.com/entry/clarke_arthur_c",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",
