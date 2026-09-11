@@ -74,8 +74,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "剑桥大学出版社论文页面",
+          "en": "Cambridge University Press paper page"
         },
         "title": {
           "zh": "中文房间思想实验",
@@ -85,7 +85,7 @@
           "zh": "符号操作是否等于真正理解",
           "en": "Whether symbol manipulation amounts to genuine understanding"
         },
-        "url": "https://www.google.com/search?q=%E4%B8%AD%E6%96%87%E6%88%BF%E9%97%B4%E6%80%9D%E6%83%B3%E5%AE%9E%E9%AA%8C%20%E7%BA%A6%E7%BF%B0%C2%B7%E5%A1%9E%E5%B0%94",
+        "url": "https://doi.org/10.1017/S0140525X00005756",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

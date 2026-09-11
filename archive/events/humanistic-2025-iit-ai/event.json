@@ -74,8 +74,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "arXiv 论文页面",
+          "en": "arXiv paper page"
         },
         "title": {
           "zh": "整合信息理论（IIT）的AI应用",
@@ -85,7 +85,7 @@
           "zh": "用因果整合结构讨论人工系统意识",
           "en": "Using integrated causal structure to discuss consciousness in artificial systems"
         },
-        "url": "https://www.google.com/search?q=%E6%95%B4%E5%90%88%E4%BF%A1%E6%81%AF%E7%90%86%E8%AE%BA%EF%BC%88IIT%EF%BC%89%E7%9A%84AI%E5%BA%94%E7%94%A8%20%E6%9C%B1%E5%88%A9%E5%A5%A5%C2%B7%E6%89%98%E8%AF%BA%E5%B0%BC",
+        "url": "https://arxiv.org/abs/2308.08708",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

@@ -1,21 +1,21 @@
 [
   {
     "id": "source-humanistic-1985-cyborg-manifesto-record",
-    "type": "internal-record",
+    "type": "paper-file",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "论文 PDF",
+      "en": "Paper PDF"
     },
     "title": {
-      "zh": "《赛博格宣言》",
-      "en": "A Cyborg Manifesto"
+      "zh": "《赛博格宣言》论文原文（Monoskop PDF）",
+      "en": "A Cyborg Manifesto full text (Monoskop PDF)"
     },
-    "url": "https://monoskop.org/images/4/4c/Haraway_Donna_1985_A_Cyborg_Manifesto.pdf",
+    "url": "https://monoskop.org/images/4/4c/Haraway_Donna_1985_A_Manifesto_for_Cyborgs_Science_Technology_and_Socialist_Feminism_in_the_1980s.pdf",
     "language": "en",
     "reliability": "secondary",
     "notes": {
-      "zh": "修订版清单对应的作品或思想资料；页面用于核对出版、作者与主题信息。",
-      "en": "Record corresponding to the revised list; used to verify publication, authorship and theme."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
     "purpose": "background"
   },

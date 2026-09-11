@@ -73,8 +73,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "IEEE 论文页面",
+          "en": "IEEE paper page"
         },
         "title": {
           "zh": "A. Michael Noll的计算机生成艺术",
@@ -84,7 +84,7 @@
           "zh": "计算机绘图进入现代艺术实验",
           "en": "Computer plotting enters modern art practice"
         },
-        "url": "https://www.google.com/search?q=A.%20Michael%20Noll%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%94%9F%E6%88%90%E8%89%BA%E6%9C%AF%20A.%20Michael%20Noll",
+        "url": "https://doi.org/10.1109/MSPEC.1967.5217127",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

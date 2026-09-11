@@ -1,21 +1,21 @@
 [
   {
     "id": "source-ancient-hephaestus-automata-record",
-    "type": "internal-record",
+    "type": "book-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "图书页面",
+      "en": "Book page"
     },
     "title": {
-      "zh": "《伊利亚特》中的赫菲斯托斯自动机械",
-      "en": "Hephaestus Automata in The Iliad"
+      "zh": "Perseus 数字图书馆《伊利亚特》第18卷",
+      "en": "Perseus Digital Library, Iliad Book 18"
     },
     "url": "https://www.perseus.tufts.edu/hopper/text?doc=Hom.+Il.+18.136",
     "language": "en",
     "reliability": "secondary",
     "notes": {
-      "zh": "修订版清单对应的作品或思想资料；页面用于核对出版、作者与主题信息。",
-      "en": "Record corresponding to the revised list; used to verify publication, authorship and theme."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
     "purpose": "background"
   },
@@ -62,12 +62,21 @@
   {
     "id": "source-ancient-hephaestus-automata-homer-bust",
     "type": "image-source",
-    "label": { "zh": "图片来源", "en": "Image source" },
-    "title": { "zh": "大英博物馆藏荷马理想化胸像", "en": "Idealized bust of Homer in the British Museum" },
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "大英博物馆藏荷马理想化胸像",
+      "en": "Idealized bust of Homer in the British Museum"
+    },
     "url": "https://commons.wikimedia.org/wiki/File:Bust_Homer_BM_1825.jpg",
     "language": "en",
     "reliability": "primary",
-    "notes": { "zh": "Commons 文件页说明该作品是希腊化原作的罗马时期复制品，为后世理想化的荷马形象；图片为公有领域。", "en": "The Commons file page describes a Roman copy after a Hellenistic original, representing a later idealized image of Homer; the image is public domain." },
+    "notes": {
+      "zh": "Commons 文件页说明该作品是希腊化原作的罗马时期复制品，为后世理想化的荷马形象；图片为公有领域。",
+      "en": "The Commons file page describes a Roman copy after a Hellenistic original, representing a later idealized image of Homer; the image is public domain."
+    },
     "purpose": "image-provenance"
   }
 ]

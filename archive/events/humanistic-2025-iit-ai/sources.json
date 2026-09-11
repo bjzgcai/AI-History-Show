@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-2025-iit-ai-record",
-    "type": "internal-record",
+    "type": "paper-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "论文页面",
+      "en": "Paper page"
     },
     "title": {
-      "zh": "整合信息理论（IIT）的AI应用",
-      "en": "IIT and Artificial Consciousness"
+      "zh": "arXiv《人工智能中的意识：来自意识科学的洞见》论文页面",
+      "en": "arXiv paper page for “Consciousness in Artificial Intelligence: Insights from the Science of Consciousness”"
     },
-    "url": "https://www.google.com/search?q=%E6%95%B4%E5%90%88%E4%BF%A1%E6%81%AF%E7%90%86%E8%AE%BA%EF%BC%88IIT%EF%BC%89%E7%9A%84AI%E5%BA%94%E7%94%A8%20%E6%9C%B1%E5%88%A9%E5%A5%A5%C2%B7%E6%89%98%E8%AF%BA%E5%B0%BC",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://arxiv.org/abs/2308.08708",
+    "language": "en",
+    "reliability": "primary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "background"
   },
   {
     "id": "source-humanistic-2025-iit-ai-tononi-iitc-portrait",
@@ -47,8 +47,8 @@
       "en": "Image source"
     },
     "title": {
-      "zh": "Giulio Tononi at NIH Pioneer Award 2005",
-      "en": "Giulio Tononi at NIH Pioneer Award 2005"
+      "zh": "朱利奥·托诺尼在美国国立卫生研究院的照片（Wikimedia Commons）",
+      "en": "Giulio Tononi at the NIH Pioneer Award event (Wikimedia Commons)"
     },
     "url": "https://commons.wikimedia.org/wiki/File:Giulio_Tononi_at_NIH_PioneerAwardg_2005.jpg",
     "language": "en",
@@ -67,8 +67,8 @@
       "en": "Image source"
     },
     "title": {
-      "zh": "Axioms and postulates of integrated information theory",
-      "en": "Axioms and postulates of integrated information theory"
+      "zh": "整合信息理论的公理与假设示意图（Wikimedia Commons）",
+      "en": "Axioms and postulates of integrated information theory (Wikimedia Commons)"
     },
     "url": "https://commons.wikimedia.org/wiki/File:Axioms_and_postulates_of_integrated_information_theory.jpg",
     "language": "en",

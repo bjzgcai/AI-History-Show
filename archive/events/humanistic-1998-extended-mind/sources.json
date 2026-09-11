@@ -1,21 +1,21 @@
 [
   {
     "id": "source-humanistic-1998-extended-mind-record",
-    "type": "internal-record",
+    "type": "paper",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "论文",
+      "en": "Paper"
     },
     "title": {
-      "zh": "《拓展心智论》",
-      "en": "The Extended Mind"
+      "zh": "《延展心智》",
+      "en": "“The Extended Mind”"
     },
     "url": "https://consc.net/papers/extended.html",
     "language": "en",
     "reliability": "secondary",
     "notes": {
-      "zh": "修订版清单对应的作品或思想资料；页面用于核对出版、作者与主题信息。",
-      "en": "Record corresponding to the revised list; used to verify publication, authorship and theme."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
     "purpose": "background"
   },

@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-1998-event-record",
-    "type": "internal-record",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
-      "zh": "《文明》系列（The Culture）",
-      "en": "The Culture Series"
+      "zh": "《文明》系列作品概览（Wikipedia）",
+      "en": "Overview of the Culture series (Wikipedia)"
     },
     "url": "https://en.wikipedia.org/wiki/Culture_series",
     "language": "en",
     "reliability": "secondary",
     "notes": {
-      "zh": "用于核对 The Culture 系列、作者、首部作品与系列主题。",
-      "en": "Used to verify the Culture series, author, first work and series themes."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "background"
   },
   {
     "id": "source-humanistic-1998-event-iain-banks-portrait",
@@ -27,8 +27,8 @@
       "en": "Image source"
     },
     "title": {
-      "zh": "IainBanks2009.jpg",
-      "en": "IainBanks2009.jpg"
+      "zh": "伊恩·M·班克斯肖像（Wikimedia Commons）",
+      "en": "Iain M. Banks portrait (Wikimedia Commons)"
     },
     "url": "https://commons.wikimedia.org/wiki/File:IainBanks2009.jpg",
     "language": "en",

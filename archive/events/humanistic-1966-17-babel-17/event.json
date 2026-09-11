@@ -74,8 +74,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "企鹅兰登图书页面",
+          "en": "Penguin Random House book page"
         },
         "title": {
           "zh": "《巴别塔-17》",
@@ -85,7 +85,7 @@
           "zh": "语言、认知与心智控制的科幻想象",
           "en": "A science-fiction inquiry into language, cognition and control"
         },
-        "url": "https://www.google.com/search?q=%E3%80%8A%E5%B7%B4%E5%88%AB%E5%A1%94-17%E3%80%8B%20%E5%A1%9E%E7%BC%AA%E5%B0%94%C2%B7R%C2%B7%E5%BE%B7%E5%85%B0%E5%B0%BC",
+        "url": "https://www.penguinrandomhouse.com/books/39030/babel-17-by-samuel-r-delany/",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

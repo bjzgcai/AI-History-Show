@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-1967-event-record",
-    "type": "internal-record",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
-      "zh": "《无声狂啸》",
-      "en": "I Have No Mouth, and I Must Scream"
+      "zh": "《科幻小说百科全书》哈兰·埃里森条目（含《无声狂啸》）",
+      "en": "The Encyclopedia of Science Fiction entry on Harlan Ellison, including “I Have No Mouth, and I Must Scream”"
     },
-    "url": "https://www.google.com/search?q=%E3%80%8A%E6%88%91%E6%B2%A1%E6%9C%89%E5%98%B4%EF%BC%8C%E6%88%91%E5%BF%85%E9%A1%BB%E5%B0%96%E5%8F%AB%E3%80%8B%20%E5%93%88%E5%85%B0%C2%B7%E5%9F%83%E5%88%A9%E6%A3%AE",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://sf-encyclopedia.com/entry/ellison_harlan",
+    "language": "en",
+    "reliability": "secondary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "bibliographic-verification"
   },
   {
     "id": "source-humanistic-1967-event-am-talkfield",
@@ -42,12 +42,21 @@
   {
     "id": "source-humanistic-1967-event-harlan-ellison-portrait",
     "type": "image-source",
-    "label": { "zh": "图片来源", "en": "Image source" },
-    "title": { "zh": "哈兰·埃里森肖像（1986）", "en": "Harlan Ellison portrait (1986)" },
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "哈兰·埃里森肖像（1986）",
+      "en": "Harlan Ellison portrait (1986)"
+    },
     "url": "https://commons.wikimedia.org/wiki/File:Harlan_Ellison_at_the_LA_Press_Club_19860712_(cropped_portrait).jpg",
     "language": "en",
     "reliability": "primary",
-    "notes": { "zh": "Commons 文件页确认人物为哈兰·埃里森，摄影者 Pip R. Lagenta，许可为 CC BY 2.0。", "en": "The Commons file page identifies Harlan Ellison; photographed by Pip R. Lagenta and licensed CC BY 2.0." },
+    "notes": {
+      "zh": "Commons 文件页确认人物为哈兰·埃里森，摄影者 Pip R. Lagenta，许可为 CC BY 2.0。",
+      "en": "The Commons file page identifies Harlan Ellison; photographed by Pip R. Lagenta and licensed CC BY 2.0."
+    },
     "purpose": "image-provenance"
   }
 ]

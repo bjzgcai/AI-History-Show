@@ -74,8 +74,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "PhilPapers 论文索引",
+          "en": "PhilPapers index"
         },
         "title": {
           "zh": "布洛克的中华民族（Chinese Nation）",
@@ -85,7 +85,7 @@
           "zh": "功能等价是否足以产生意识",
           "en": "Whether functional equivalence is sufficient for consciousness"
         },
-        "url": "https://www.google.com/search?q=%E5%B8%83%E6%B4%9B%E5%85%8B%E7%9A%84%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%EF%BC%88Chinese%20Nation%EF%BC%89%20%E5%86%85%E5%BE%B7%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B",
+        "url": "https://philpapers.org/rec/BLOTWF",
         "source": "Research index",
         "license": {
           "zh": "来源与使用记录保留在后台。",

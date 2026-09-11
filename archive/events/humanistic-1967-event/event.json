@@ -74,8 +74,8 @@
       {
         "type": "archiveLink",
         "site": {
-          "zh": "资料检索入口",
-          "en": "Research entry"
+          "zh": "《科幻小说百科全书》",
+          "en": "The Encyclopedia of Science Fiction"
         },
         "title": {
           "zh": "《无声狂啸》",
@@ -85,8 +85,8 @@
           "zh": "失控超级计算机与无尽惩罚",
           "en": "A rogue supercomputer and endless punishment"
         },
-        "url": "https://www.google.com/search?q=%E3%80%8A%E6%97%A0%E5%A3%B0%E7%8B%82%E5%95%B8%E3%80%8B%20%E5%93%88%E5%85%B0%C2%B7%E5%9F%83%E5%88%A9%E6%A3%AE",
-        "source": "Research index",
+        "url": "https://sf-encyclopedia.com/entry/ellison_harlan",
+        "source": "The Encyclopedia of Science Fiction",
         "license": {
           "zh": "来源与使用记录保留在后台。",
           "en": "Source and usage records are retained in the archive."
@@ -96,8 +96,8 @@
           "en": "Used to consult supplementary material for this event."
         },
         "action": {
-          "zh": "打开资料入口",
-          "en": "Open reference entry"
+          "zh": "打开资料页面",
+          "en": "Open source page"
         }
       }
     ],

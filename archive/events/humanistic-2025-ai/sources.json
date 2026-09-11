@@ -1,23 +1,23 @@
 [
   {
     "id": "source-humanistic-2025-ai-record",
-    "type": "internal-record",
+    "type": "paper-page",
     "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+      "zh": "论文页面",
+      "en": "Paper page"
     },
     "title": {
-      "zh": "AI对齐问题",
-      "en": "The AI Alignment Problem"
+      "zh": "arXiv《人工智能安全的具体问题》论文页面",
+      "en": "arXiv paper page for “Concrete Problems in AI Safety”"
     },
-    "url": "https://www.google.com/search?q=AI%E5%AF%B9%E9%BD%90%E9%97%AE%E9%A2%98%20%E5%A4%9A%E4%BD%8D%E5%AD%A6%E8%80%85",
-    "language": "zh",
-    "reliability": "reference-only",
+    "url": "https://arxiv.org/abs/1606.06565",
+    "language": "en",
+    "reliability": "primary",
     "notes": {
-      "zh": "来自 AI 人文整合清单；需替换为正式原始来源。",
-      "en": "From the AI humanities integration list; replace with a formal primary source."
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
     },
-    "purpose": "migration-only"
+    "purpose": "background"
   },
   {
     "id": "source-humanistic-2025-ai-stuart-russell-portrait",

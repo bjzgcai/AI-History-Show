@@ -27,8 +27,8 @@
       "en": "Image source"
     },
     "title": {
-      "zh": "E.T.A. Hoffmann: Der Sandmann illustration 009",
-      "en": "E.T.A. Hoffmann: Der Sandmann illustration 009"
+      "zh": "《沙人》插图第9幅（Wikimedia Commons）",
+      "en": "The Sandman, illustration 009 (Wikimedia Commons)"
     },
     "url": "https://commons.wikimedia.org/wiki/File:E.T.A._Hoffmann_-_Der_Sandmann_009.jpg",
     "language": "en",
@@ -42,12 +42,21 @@
   {
     "id": "source-sandman-1816-eta-hoffmann-self-portrait",
     "type": "image-source",
-    "label": { "zh": "图片来源", "en": "Image source" },
-    "title": { "zh": "E.T.A.霍夫曼自画像", "en": "E. T. A. Hoffmann self-portrait" },
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "E.T.A.霍夫曼自画像",
+      "en": "E. T. A. Hoffmann self-portrait"
+    },
     "url": "https://commons.wikimedia.org/wiki/File:E._T._A._Hoffmann,_autorretrato.jpg",
     "language": "en",
     "reliability": "primary",
-    "notes": { "zh": "Commons 文件页将作品标识为E.T.A.霍夫曼在1822年前绘制的自画像；图片为公有领域。", "en": "The Commons file page identifies the work as E. T. A. Hoffmann's self-portrait made before 1822; the image is public domain." },
+    "notes": {
+      "zh": "Commons 文件页将作品标识为E.T.A.霍夫曼在1822年前绘制的自画像；图片为公有领域。",
+      "en": "The Commons file page identifies the work as E. T. A. Hoffmann's self-portrait made before 1822; the image is public domain."
+    },
     "purpose": "image-provenance"
   }
 ]
