@@ -37,6 +37,8 @@
         "audio:legacy:release:finalize": "node scripts/audio/finalize-audio-story-release.mjs",
         "generate:event-pack": "node scripts/generate-event-markdown-pack.js",
         "generate:event-pack:images": "node scripts/generate-event-markdown-pack.js --download-remote",
+        "generate:ppt-sample": "python3 scripts/ppt/generate-ppt-sample.py",
+        "generate:storyline-ppts": "python3 scripts/ppt/generate-storyline-ppts.py",
         "generate:thumbnails": "node scripts/generate-image-thumbnails.js",
         "build:static": "node scripts/build-static-site.js",
         "lint": "eslint .",

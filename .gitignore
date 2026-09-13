@@ -27,6 +27,9 @@ manage/.backups/
 /pq/
 /pq-all.zip
 
+# Generated storyline PowerPoint exports
+/exports/ai-history-ppt/
+
 # Local candidate media assets
 /local-assets/
 
