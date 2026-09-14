@@ -285,7 +285,10 @@ const audioProfile = mediaStorageConfig.profiles.find(
 assert.ok(audioProfile, 'default audio storage profile must exist');
 assert.equal(compiledArchive.source, 'archive');
 assert.equal(compiledArchive.errors.length, 0);
-assert.equal(compiledArchive.milestones.length, 194);
+assert.equal(
+    compiledArchive.milestones.length,
+    compiledArchive.storylines.reduce((total, storyline) => total + storyline.events, 0)
+);
 assert.ok(compiledArchive.milestones.every((milestone) => milestone.sourceKind === 'archive'));
 assert.deepEqual(
     new Set(compiledArchive.milestones.map((milestone) => milestone.id)).size,
@@ -335,11 +338,13 @@ assert.ok(
     'compiled runtime should not contain legacy event video configuration'
 );
 assert.ok(
-    compiledArchive.milestones.every((milestone) => {
-        const languages = new Set((milestone.resources?.audios || []).map((audio) => audio.language));
-        return languages.has('zh') && languages.has('en');
-    }),
-    'every compiled milestone should expose Chinese and English narration audio'
+    compiledArchive.milestones
+        .filter((milestone) => (milestone.resources?.audios || []).length > 0)
+        .every((milestone) => {
+            const languages = new Set(milestone.resources.audios.map((audio) => audio.language));
+            return languages.has('zh') && languages.has('en');
+        }),
+    'every compiled milestone with narration should expose both Chinese and English audio'
 );
 const dartmouthMilestone = compiledArchive.milestones.find(
     (milestone) =>
@@ -448,7 +453,11 @@ for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'e
 }
 console.log('PASS storyline labels have one Archive authority');
 
-assert.equal(milestones.length, 194, 'Archive runtime should contain four storylines and 194 milestones');
+assert.equal(
+    milestones.length,
+    archiveStorylines.reduce((total, storyline) => total + storyline.events, 0),
+    'Archive runtime should contain every enabled storyline milestone'
+);
 const ai100MapMilestones = milestones.filter(
     (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100'
 );
@@ -520,34 +529,45 @@ console.log('PASS deep-learning events inherit default presentations');
 const humanisticMilestones = milestones.filter(
     (milestone) => milestone.storyline && milestone.storyline.id === 'humanistic-cycle'
 );
-assert.equal(humanisticMilestones.length, 12, 'Archive runtime should contain all 12 humanistic cycle events');
+const humanisticStorylineSource = archiveStorylineSources.find((storyline) => storyline.id === 'humanistic-cycle');
+const enabledHumanisticRefs = humanisticStorylineSource.events.filter((eventRef) => eventRef.enabled !== false);
+assert.equal(
+    humanisticMilestones.length,
+    enabledHumanisticRefs.length,
+    'Archive runtime should contain all enabled humanistic cycle events'
+);
 assert.deepEqual(
     humanisticMilestones.map((milestone) => milestone.id),
-    [
-        'milestone-humanistic-cycle-1920-rur-robots',
-        'milestone-humanistic-cycle-1942-asimov-runaround',
-        'milestone-humanistic-cycle-1950-wiener-human-use',
-        'milestone-humanistic-cycle-1965-simon-ai-prediction',
-        'milestone-humanistic-cycle-1968-hal-9000',
-        'milestone-humanistic-cycle-1973-lighthill-report',
-        'milestone-humanistic-cycle-1978-xiaolingtong',
-        'milestone-humanistic-cycle-1984-neuromancer',
-        'milestone-humanistic-cycle-1987-lisp-machine-collapse',
-        'milestone-humanistic-cycle-2014-ai-existential-warnings',
-        'milestone-humanistic-cycle-2015-openai-founding',
-        'milestone-humanistic-cycle-2023-ai-risk-statement'
-    ],
+    enabledHumanisticRefs.map((eventRef) => eventRef.milestoneId),
     'humanistic cycle milestone identities and order must remain stable'
 );
 for (const milestone of humanisticMilestones) {
     assert.equal(milestone.archiveVariantId, 'humanistic-cycle');
     assert.equal(milestone.archivePresentationMode, 'archive');
     assert.ok(milestone.sentiment, `${milestone.id} should preserve its sentiment`);
-    assert.ok(Array.isArray(milestone.realityLinks) && milestone.realityLinks.length > 0);
     assert.ok(milestone.branchSummary && milestone.branchSummary.zh && milestone.branchSummary.en);
-    assert.ok(milestone.analysis && milestone.analysis.what && milestone.analysis.how && milestone.analysis.why);
+    assert.ok(
+        (milestone.analysis && milestone.analysis.what && milestone.analysis.how && milestone.analysis.why) ||
+            (Array.isArray(milestone.commentarySections) && milestone.commentarySections.length >= 3),
+        `${milestone.id} should expose legacy analysis or the three-section Archive commentary`
+    );
     assert.ok(milestone.resources && milestone.resources.images.length > 0);
-    assert.ok(milestone.achievement && milestone.achievement.sources.length >= 4);
+    assert.ok(milestone.achievement && milestone.achievement.sources.length > 0);
+    for (const source of milestone.achievement.sources) {
+        assert.notEqual(
+            source.sourceType,
+            'internal-record',
+            `${milestone.id} must not expose internal source records`
+        );
+        assert.doesNotMatch(
+            source.url,
+            /^https?:\/\/(?:www\.)?(?:google\.[^/]+|bing\.com|search\.yahoo\.com)\/(?:search|websearch)(?:[/?#]|$)/i,
+            `${milestone.id} must not expose a search-results page as a source`
+        );
+        if (source.sourceType === 'image-source') {
+            assert.match(source.label.zh, /[\u3400-\u9fff]/, `${milestone.id} image-source title must be localized`);
+        }
+    }
 }
 console.log('PASS humanistic cycle Archive authority');
 

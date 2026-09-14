@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-1999-event-record",
+    "type": "official-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "华纳兄弟《黑客帝国》官方影片页面",
+      "en": "Warner Bros. official film page for The Matrix"
+    },
+    "url": "https://www.warnerbros.com/movies/matrix",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-humanistic-1999-event-wachowskis-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "沃卓斯基姐妹肖像",
+      "en": "The Wachowskis portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Wachowskis.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《黑客帝国》编剧与导演肖像；文件页标注 CC BY-SA 3.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Writers and directors of The Matrix; the file page records CC BY-SA 3.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1999-event-tmdb-images",
+    "type": "image-source",
+    "url": "https://www.themoviedb.org/movie/603-the-matrix/images",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《黑客帝国》 TMDB 图片库",
+      "en": "The Matrix TMDB image gallery"
+    },
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "TMDB 图片库用于定位海报、影片场面与宣传视觉；每张图片的原始文件链接保留在对应资源记录中。",
+      "en": "The TMDB gallery is used to locate posters, film scenes and promotional visuals; each original file URL is retained in the corresponding asset record."
+    },
+    "purpose": "image-provenance"
+  }
+]

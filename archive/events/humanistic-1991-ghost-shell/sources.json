@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-1991-ghost-shell-record",
+    "type": "official-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "Production I.G《攻壳机动队》官方作品页面",
+      "en": "Production I.G official work page for Ghost in the Shell"
+    },
+    "url": "https://www.production-ig.co.jp/works/ghost-in-the-shell/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-1991-ghost-shell-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "押井守肖像",
+      "en": "Mamoru Oshii"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Mamoru_Oshii_-_Lucca_Comics_%26_Games_2015.JPG",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：CC BY-SA 4.0；作者/摄影者：Niccolò Caranti。",
+      "en": "Wikimedia Commons file page identifies the subject; license: CC BY-SA 4.0; creator: Niccolò Caranti."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1991-ghost-shell-tmdb-images",
+    "type": "image-source",
+    "url": "https://www.themoviedb.org/movie/9323-ghost-in-the-shell/images",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《攻壳机动队》 TMDB 图片库",
+      "en": "Ghost in the Shell TMDB image gallery"
+    },
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "TMDB 图片库用于定位海报、影片场面与宣传视觉；每张图片的原始文件链接保留在对应资源记录中。",
+      "en": "The TMDB gallery is used to locate posters, film scenes and promotional visuals; each original file URL is retained in the corresponding asset record."
+    },
+    "purpose": "image-provenance"
+  }
+]

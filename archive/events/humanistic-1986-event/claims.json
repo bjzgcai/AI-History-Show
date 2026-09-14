@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1986-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "天网发动核战消灭人类，成为AI威胁论的流行文化代名词。",
+      "en": "天网发动核战消灭人类，成为AI威胁论的流行文化代名词。"
+    },
+    "sourceIds": [
+      "source-humanistic-1986-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v2-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 29,
+    "eventId": "humanistic-1984-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1983年发表短篇、1985年扩写为长篇时，《血音乐》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《血音乐》先以 1983 年短篇出现，随后扩写为 1985 年小说。作品诞生于基因工程快速发展、个人计算机兴起和纳米技术想象扩散的时期。",
+            "sourceIds": ["source-humanistic-1984-event-record"],
+            "claimIds": ["claim-humanistic-1984-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个有吸引力的方向。真正让它成立的核心思想是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "科学家把自己的淋巴细胞改造成能够学习和交流的微型智能体，随后这些生命进入人体并形成群体意识。小说把 AI 的“人工性”从硅芯片转移到生物材料，追问智能扩散后个人身体、隐私和自我还能否保持边界。",
+            "sourceIds": ["source-humanistic-1984-event-record"],
+            "claimIds": ["claim-humanistic-1984-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "科幻研究者通常把《血音乐》视为生物朋克、纳米智能和后人类叙事的重要先声。它的长期价值在于说明，失控智能不一定表现为独立机器人，也可能以共生、感染和群体认知的方式改变人类。",
+            "sourceIds": ["source-humanistic-1984-event-record"],
+            "claimIds": ["claim-humanistic-1984-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "这条线索还没有结束。接下来来到《赛博格宣言》，我们会看到这个问题怎样继续向前推进。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

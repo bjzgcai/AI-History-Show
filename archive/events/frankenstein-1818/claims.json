@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-frankenstein-1818-core",
+    "importance": "core",
+    "text": {
+      "zh": "科学家以实验创造人造生命，随后面对造物的自主行动与伦理责任。作品把创造、失控、责任和被制造者的主体性变成持久的人文母题。",
+      "en": "A scientist creates artificial life and then confronts the autonomy and ethical responsibility of his creation. The novel made creation, loss of control, responsibility and the subjectivity of the made being durable humanistic themes."
+    },
+    "sourceIds": [
+      "source-frankenstein-1818-primary"
+    ],
+    "status": "needs-review"
+  }
+]

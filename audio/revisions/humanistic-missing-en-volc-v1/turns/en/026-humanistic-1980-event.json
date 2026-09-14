@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 26,
+    "eventId": "humanistic-1980-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "At the 1980 point on this timeline, The Chinese Room Thought Experiment offers a way to look closely at “Searle introduced the Chinese Room in his 1980 p”. Why does it still matter?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Searle introduced the Chinese Room in his 1980 paper “Minds, Brains, and Programs” as a response to “strong AI,” the claim that a program itself could constitute a mind. Rule-based symbolic AI was then a major paradigm in cognitive science and artificial-intelligence research.",
+            "sourceIds": ["source-humanistic-1980-event-record"],
+            "claimIds": ["claim-humanistic-1980-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "Starting from “A person who does not know Chinese follows Engli”, how should we explain the core mechanism or judgment in The Chinese Room Thought Experiment?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "A person who does not know Chinese follows English instructions to manipulate Chinese characters and returns apparently fluent answers outside the room. Searle uses this to distinguish syntax from semantics: a system may pass a behavioral test, yet understanding cannot be inferred from input-output performance alone.",
+            "sourceIds": ["source-humanistic-1980-event-record"],
+            "claimIds": ["claim-humanistic-1980-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Philosophers of mind generally treat the Chinese Room as one of the most influential and disputed thought experiments about machine understanding. The systems reply, robot reply and embodied approaches have broadened the debate, while fluent generative AI has renewed questions about syntax, semantics and subjective experience.",
+            "sourceIds": ["source-humanistic-1980-event-record"],
+            "claimIds": ["claim-humanistic-1980-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "If we remember one thing about The Chinese Room Thought Experiment, it is how “Philosophers of mind generally treat the Chinese” entered the humanistic view of artificial intelligence.",
+            "sourceIds": ["source-humanistic-1980-event-record"],
+            "claimIds": ["claim-humanistic-1980-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

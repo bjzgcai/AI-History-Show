@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v2-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 20,
+    "eventId": "humanistic-1968-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "1968年，《仿生人会梦见电子羊吗？》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "小说出版于 1968 年，其核战争后的荒凉世界回应了冷战、生态危机和消费社会的焦虑。仿生人被制造为殖民地劳动力，却因追求生存而逃回地球，成为赏金猎人里克·戴克必须“退休”的对象。",
+            "sourceIds": ["source-humanistic-1968-event-record"],
+            "claimIds": ["claim-humanistic-1968-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个有吸引力的方向。真正让它成立的核心思想是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "作品没有把人和机器的差别简单归结为智力，而是借共情测试、人工记忆和对动物的照护不断动摇边界。它反过来要求读者判断：执行杀戮的人类与渴望活下去的仿生人，谁更接近被称为“人”的道德主体。",
+            "sourceIds": ["source-humanistic-1968-event-record"],
+            "claimIds": ["claim-humanistic-1968-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一次作品、实验或争论里？后来人们真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "研究者通常把这部小说视为人工生命伦理和后人类身份研究的核心文本，它也成为电影《银翼杀手》的文学基础。其长期影响在于让“机器是否像人”转向“人是否愿意承认另一种主体”的问题。",
+            "sourceIds": ["source-humanistic-1968-event-record"],
+            "claimIds": ["claim-humanistic-1968-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "当今天的人工智能越来越深入生活时，《仿生人会梦见电子羊吗？》留下的哪些问题仍然没有答案？我们又该如何重新检验它关于机器与人的判断？",
+            "sourceIds": ["source-humanistic-1968-event-record"],
+            "claimIds": ["claim-humanistic-1968-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

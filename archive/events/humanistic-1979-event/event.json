@@ -1,0 +1,174 @@
+{
+  "id": "humanistic-1979-event",
+  "year": 1979,
+  "date": "1979",
+  "title": {
+    "zh": "《银河系漫游指南》",
+    "en": "The Hitchhiker's Guide to the Galaxy"
+  },
+  "description": {
+    "zh": "道格拉斯·亚当斯通过“深思”、马文等智能机器，用荒诞喜剧拆解超级智能、人类意义和技术官僚主义。",
+    "en": "Through intelligent machines such as Deep Thought and Marvin, Douglas Adams uses absurdist comedy to dismantle ideas of superintelligence, human meaning and technological bureaucracy."
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国",
+      "en": "United Kingdom"
+    },
+    "place": {
+      "zh": "伦敦广播与出版语境",
+      "en": "London broadcasting and publishing context"
+    },
+    "coordinates": [
+      51.5074,
+      -0.1278
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-29",
+      "avatarAssetId": "asset-humanistic-1979-event-douglas-adams-portrait",
+      "role": {
+        "zh": "《银河系漫游指南》作者",
+        "en": "Author of The Hitchhiker's Guide to the Galaxy"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《银河系漫游指南》",
+      "en": "The Hitchhiker's Guide to the Galaxy"
+    },
+    "displaySummary": {
+      "zh": "以喜剧反转超级智能与人类中心主义",
+      "en": "Comic reversals of superintelligence and human exceptionalism"
+    },
+    "displayDescription": {
+      "zh": "<p>道格拉斯·亚当斯通过“深思”、马文等智能机器，用荒诞喜剧拆解超级智能、人类意义和技术官僚主义。 超级计算机“深思”能给出终极答案，却无法替人类理解问题；机器人马文拥有“行星大小的大脑”，却被分配琐碎任务并陷入长期厌倦。作品借此说明，能力规模、人生意义与幸福并不会自动同步增长。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 《银河系漫游指南》先于 1978 年作为 BBC 广播剧播出，1979 年出版首部小说。它在计算机逐渐进入日常文化的时期，把电子指南、自动飞船、行星级计算和宇宙行政系统编织成一套喜剧世界。</p><p> 评论者通常把该系列视为以幽默处理技术哲学的经典作品，其中“42”、马文和《指南》已经成为全球流行文化符号。它的 AI 人文价值在于用喜剧提醒观众，智能系统也会继承设计者的荒谬目标、组织结构与价值错位。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Through intelligent machines such as Deep Thought and Marvin, Douglas Adams uses absurdist comedy to dismantle ideas of superintelligence, human meaning and technological bureaucracy. The supercomputer Deep Thought can provide the ultimate answer but cannot make people understand the question; Marvin has a “brain the size of a planet” yet receives trivial tasks and remains chronically miserable. The work shows that capability, meaning and well-being do not automatically increase together.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. The Hitchhiker's Guide to the Galaxy began as a BBC radio series in 1978, followed by the first novel in 1979. As computers entered everyday culture, it wove an electronic guide, automated spacecraft, planetary computation and cosmic bureaucracy into a comic universe.</p><p> Critics generally regard the series as a classic comic treatment of technological philosophy; “42,” Marvin and the Guide have become global cultural symbols. Its value for AI humanities lies in showing that intelligent systems can inherit absurd objectives, institutional structures and value mismatches from their designers. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "麦克米伦图书页面",
+          "en": "Pan Macmillan book page"
+        },
+        "title": {
+          "zh": "《银河系漫游指南》",
+          "en": "The Hitchhiker's Guide to the Galaxy"
+        },
+        "description": {
+          "zh": "以喜剧反转超级智能与人类中心主义",
+          "en": "Comic reversals of superintelligence and human exceptionalism"
+        },
+        "url": "https://www.panmacmillan.com/authors/douglas-adams/the-hitchhikers-guide-to-the-galaxy/9781529034523",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1979-event-douglas-adams-portrait",
+      "asset-humanistic-1979-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1979-event-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-1979-event-record",
+      "source-humanistic-1979-event-douglas-adams-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-1979-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《银河系漫游指南》先于 1978 年作为 BBC 广播剧播出，1979 年出版首部小说。它在计算机逐渐进入日常文化的时期，把电子指南、自动飞船、行星级计算和宇宙行政系统编织成一套喜剧世界。",
+          "en": "The Hitchhiker's Guide to the Galaxy began as a BBC radio series in 1978, followed by the first novel in 1979. As computers entered everyday culture, it wove an electronic guide, automated spacecraft, planetary computation and cosmic bureaucracy into a comic universe."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "超级计算机“深思”能给出终极答案，却无法替人类理解问题；机器人马文拥有“行星大小的大脑”，却被分配琐碎任务并陷入长期厌倦。作品借此说明，能力规模、人生意义与幸福并不会自动同步增长。",
+          "en": "The supercomputer Deep Thought can provide the ultimate answer but cannot make people understand the question; Marvin has a “brain the size of a planet” yet receives trivial tasks and remains chronically miserable. The work shows that capability, meaning and well-being do not automatically increase together."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "评论者通常把该系列视为以幽默处理技术哲学的经典作品，其中“42”、马文和《指南》已经成为全球流行文化符号。它的 AI 人文价值在于用喜剧提醒观众，智能系统也会继承设计者的荒谬目标、组织结构与价值错位。",
+          "en": "Critics generally regard the series as a classic comic treatment of technological philosophy; “42,” Marvin and the Guide have become global cultural symbols. Its value for AI humanities lies in showing that intelligent systems can inherit absurd objectives, institutional structures and value mismatches from their designers."
+        },
+        "sourceIds": [
+          "source-humanistic-1979-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

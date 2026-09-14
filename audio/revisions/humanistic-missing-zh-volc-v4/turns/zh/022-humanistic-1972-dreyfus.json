@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 22,
+    "eventId": "humanistic-1972-dreyfus",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "从1972年的《计算机不能做什么》开始，人工智能人文史出现了一个新视角：休伯特·德雷福斯批评把人类智能还原为符号处理，强调常识、身体究竟意味着什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "休伯特·德雷福斯批评把人类智能还原为符号处理，强调常识、身体经验和具体情境对理解的作用。",
+            "sourceIds": ["source-humanistic-1972-dreyfus-record"],
+            "claimIds": ["claim-humanistic-1972-dreyfus-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "“《计算机不能做什么》”看似只是一个细节，它怎样支撑起《计算机不能做什么》关于人工智能的判断？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+            "sourceIds": ["source-humanistic-1972-dreyfus-record"],
+            "claimIds": ["claim-humanistic-1972-dreyfus-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "这项作品或理论后来留下的，不只是名声。围绕“《计算机不能做什么》”，后人真正接住了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+            "sourceIds": ["source-humanistic-1972-dreyfus-record"],
+            "claimIds": ["claim-humanistic-1972-dreyfus-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "因此，《计算机不能做什么》的意义不止在当时的表达，也在于它为“《计算机不能做什么》”留下了持续追问的入口。",
+            "sourceIds": ["source-humanistic-1972-dreyfus-record"],
+            "claimIds": ["claim-humanistic-1972-dreyfus-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

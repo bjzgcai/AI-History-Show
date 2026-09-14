@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 33,
+    "eventId": "humanistic-1989-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Following the timeline to 1967, we arrive at Lord of Light, where “First published in 1967, Lord of Light combines ” becomes a cultural question rather than a technical footnote.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "First published in 1967, Lord of Light combines space colonization with Indian religions, mythology and political revolution. First-generation colonists control reincarnation technology and preserve hierarchy by presenting themselves as gods.",
+            "sourceIds": ["source-humanistic-1989-event-record"],
+            "claimIds": ["claim-humanistic-1989-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "If we reduce Lord of Light to one concrete question, does the answer begin with “The novel's divine powers are technological capa”?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The novel's divine powers are technological capability, copied identity and information control kept from ordinary people. Sam uses religious symbols and technology against the rulers, turning mind transfer into a political question about who controls bodies, memories and immortality.",
+            "sourceIds": ["source-humanistic-1989-event-record"],
+            "claimIds": ["claim-humanistic-1989-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea cross its original era? The answer may begin with how “Science-fiction scholars generally regard Lord o” changed afterward.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Science-fiction scholars generally regard Lord of Light as a landmark combination of mythic structure, posthuman technology and anticolonial politics. For AI humanities, it shows that advanced technology does not inherently produce freedom and may reinforce old power through mystification and controlled access.",
+            "sourceIds": ["source-humanistic-1989-event-record"],
+            "claimIds": ["claim-humanistic-1989-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "If artificial intelligence keeps developing, how should Lord of Light's judgment about “Science-fiction scholars generally regard Lord o” be tested again?",
+            "sourceIds": ["source-humanistic-1989-event-record"],
+            "claimIds": ["claim-humanistic-1989-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 18,
+    "eventId": "humanistic-1966-17-babel-17",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "如果从“《巴别塔-17》出版于 1966 年，处在冷战通信技术、密码”切入，1966年出现的《巴别塔-17》就不只是一个作品或概念，而是一道关于人工智能的提问。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《巴别塔-17》出版于 1966 年，处在冷战通信技术、密码学和语言学广受关注的时期。德兰尼把太空战争与语言学习结合起来，让诗人兼密码专家里德拉·王通过破译敌方语言追踪破坏活动。",
+            "sourceIds": ["source-humanistic-1966-17-babel-17-record"],
+            "claimIds": ["claim-humanistic-1966-17-babel-17-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "我们先不急着下结论：《巴别塔-17》如何把“小说设想语言不只是传递思想的工具，也能重组使用者对自我、他人”变成可感知的经验？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "小说设想语言不只是传递思想的工具，也能重组使用者对自我、他人与行动可能性的理解。Babel-17 的语法抹去某些主体概念，使语言控制与心智编程在叙事中交叠。",
+            "sourceIds": ["source-humanistic-1966-17-babel-17-record"],
+            "claimIds": ["claim-humanistic-1966-17-babel-17-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "文学研究者通常把《巴别塔-17》视为语言相对论、身份政治与认知控制相结合的经典科幻文本。它也为后来围绕自然语言接口、提示操控和语言模型是否“理解”语言的讨论提供了富有启发性的文化参照。",
+            "sourceIds": ["source-humanistic-1966-17-babel-17-record"],
+            "claimIds": ["claim-humanistic-1966-17-babel-17-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "下一站是《无声狂啸》，我们会继续追踪“文学研究者通常把《巴别塔-17》视为语言相对论、身份政治与认”如何进入新的历史场景。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

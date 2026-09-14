@@ -1,0 +1,60 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 49,
+    "eventId": "humanistic-2013-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "2013年，《她》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《她》于 2013 年上映，正值智能手机、语音助手和社交平台开始改变人们对“在线陪伴”的想象。斯派克·琼兹把这种变化放进近未来洛杉矶的亲密关系中，使人工智能首先以声音、语言和日常服务进入观众生活。",
+            "sourceIds": ["source-her-nyff-2013", "source-her-sony-pictures-classics"],
+            "claimIds": ["claim-humanistic-2013-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "影片不把 Samantha 设计成可见的机器人，而是通过持续对话、幽默、记忆和情感回应来建立她的主体感。由此，作品把“机器是否有感情”转化为更具体的问题：人类如何判断另一种智能的需要、边界与成长。",
+            "sourceIds": ["source-her-sony-pictures-classics"],
+            "claimIds": ["claim-humanistic-2013-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "电影研究者与 AI 人文学者通常把《她》视为讨论媒介亲密性、技术中介和机器主体性的代表性文化文本，而不是对通用人工智能时间表的预测。它的长期价值在于提醒观众，技术关系的核心不只在于系统能力，也在于依恋、同意、退出和权力如何被重新分配。",
+            "sourceIds": [
+                "source-her-sony-pictures-classics",
+                "source-her-nyff-2013",
+                "source-her-digital-romance-post-cinema",
+                "source-her-depersonalized-intimacy"
+            ],
+            "claimIds": ["claim-humanistic-2013-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看《她》，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": [
+                "source-her-nyff-2013",
+                "source-her-sony-pictures-classics",
+                "source-her-digital-romance-post-cinema",
+                "source-her-depersonalized-intimacy"
+            ],
+            "claimIds": ["claim-humanistic-2013-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

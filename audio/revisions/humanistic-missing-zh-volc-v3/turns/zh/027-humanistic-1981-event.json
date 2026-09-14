@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 27,
+    "eventId": "humanistic-1981-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "如果从“中篇小说发表于 1981 年，早于万维网和大众互联网，却建立”切入，1981年出现的《真名实姓》就不只是一个作品或概念，而是一道关于人工智能的提问。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "中篇小说发表于 1981 年，早于万维网和大众互联网，却建立了具有空间感、化身与社群规则的网络世界。文奇结合早期计算机网络、角色扮演文化和密码身份，想象人们如何在虚拟环境中生活与行动。",
+            "sourceIds": ["source-humanistic-1981-event-record"],
+            "claimIds": ["claim-humanistic-1981-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "“真名”既是现实身份，也是可以让国家或对手控制虚拟行动者的安全漏洞。故事中的网络力量最终超出普通黑客的尺度，使身份保护与新型机器智能的出现成为同一场权力斗争。",
+            "sourceIds": ["source-humanistic-1981-event-record"],
+            "claimIds": ["claim-humanistic-1981-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "网络文化研究者通常把《真名实姓》视为赛博空间、在线化身和数字匿名的先驱文本之一。它对后来的赛博朋克和技术界影响显著，也预先呈现了身份泄露、平台监控和网络智能集中化等现实问题。",
+            "sourceIds": ["source-humanistic-1981-event-record"],
+            "claimIds": ["claim-humanistic-1981-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "从中文房间思想实验走到《真名实姓》，关于“网络文化研究者通常把《真名实姓》视为赛博空间、在线化身和数字”的疑问换了语境，却没有消失。",
+            "sourceIds": ["source-humanistic-1981-event-record"],
+            "claimIds": ["claim-humanistic-1981-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

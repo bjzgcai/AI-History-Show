@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 3,
+    "eventId": "descartes-automata",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Following the timeline to 1637, we arrive at Descartes on Automata and Thought, where “Descartes distinguished thinking substance from ” becomes a cultural question rather than a technical footnote.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Descartes distinguished thinking substance from automata and used language and flexible response to ask whether a machine can think. The question supplied a philosophical background for later debates about mind, embodiment and machine understanding. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.",
+            "sourceIds": ["source-descartes-automata-primary"],
+            "claimIds": ["claim-descartes-automata-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "If we reduce Descartes on Automata and Thought to one concrete question, does the answer begin with “Descartes on Automata and Thought”?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order.",
+            "sourceIds": ["source-descartes-automata-primary"],
+            "claimIds": ["claim-descartes-automata-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Descartes on Automata and Thought left more than a reputation behind. What did later thinkers actually inherit from “Descartes on Automata and Thought”?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance.",
+            "sourceIds": ["source-descartes-automata-primary"],
+            "claimIds": ["claim-descartes-automata-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "If artificial intelligence keeps developing, how should Descartes on Automata and Thought's judgment about “Descartes on Automata and Thought” be tested again?",
+            "sourceIds": ["source-descartes-automata-primary"],
+            "claimIds": ["claim-descartes-automata-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-descartes-automata-primary",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "笛卡尔著作公版文本",
+      "en": "Public-domain texts by Descartes"
+    },
+    "url": "https://www.gutenberg.org/ebooks/23306",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "来源信息已保留；正式发布前继续核验版本与许可。",
+      "en": "Source information retained; verify edition and terms before publication."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-descartes-automata-descartes-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "弗兰斯·哈尔斯绘勒内·笛卡尔肖像（Wikimedia Commons）",
+      "en": "Portrait of René Descartes by Frans Hals (Wikimedia Commons)"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页标注 Public domain；使用前保留摄影者/作者署名及页面许可要求。",
+      "en": "Wikimedia Commons file page identifies Public domain; retain author attribution and follow the page terms."
+    },
+    "purpose": "image-provenance"
+  }
+]

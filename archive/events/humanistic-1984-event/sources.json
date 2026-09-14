@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1984-event-record",
+    "type": "book-page",
+    "label": {
+      "zh": "图书页面",
+      "en": "Book page"
+    },
+    "title": {
+      "zh": "Open Road Media《血音乐》图书页面",
+      "en": "Open Road Media book page for Blood Music"
+    },
+    "url": "https://openroadmedia.com/ebook/blood-music/9781497607200",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-humanistic-1984-event-greg-bear-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "凯尔·卡西迪拍摄的格雷格·贝尔肖像（Wikimedia Commons）",
+      "en": "Greg Bear portrait by Kyle Cassidy (Wikimedia Commons)"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Greg-bear-by-kyle-cassidy-L1008770.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认人物为科幻作家格雷格·贝尔，摄影：Kyle Cassidy，CC BY-SA 3.0。",
+      "en": "The Wikimedia Commons file page identifies science-fiction author Greg Bear; photographed by Kyle Cassidy, CC BY-SA 3.0."
+    },
+    "purpose": "image-provenance"
+  }
+]

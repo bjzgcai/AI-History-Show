@@ -1,0 +1,174 @@
+{
+  "id": "humanistic-1972-dreyfus",
+  "year": 1972,
+  "date": "1972",
+  "title": {
+    "zh": "《计算机不能做什么》",
+    "en": "What Computers Can't Do"
+  },
+  "description": {
+    "zh": "休伯特·德雷福斯批评把人类智能还原为符号处理，强调常识、身体经验和具体情境对理解的作用。",
+    "en": "Hubert Dreyfus criticized reducing human intelligence to symbol processing, emphasizing common sense, embodied experience and situated understanding."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "现象学与人工智能批评语境",
+      "en": "Phenomenology and critiques of artificial intelligence"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "hubert-dreyfus",
+      "avatarAssetId": "asset-humanistic-1972-dreyfus-verified-image",
+      "role": {
+        "zh": "《计算机不能做什么》作者",
+        "en": "Author of What Computers Can't Do"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《计算机不能做什么》",
+      "en": "What Computers Can't Do"
+    },
+    "displaySummary": {
+      "zh": "哲学",
+      "en": "Philosophy"
+    },
+    "displayDescription": {
+      "zh": "<p>休伯特·德雷福斯在《计算机不能做什么》中批评当时的“好的老式人工智能”把智能等同于规则、符号和形式推理。受海德格尔与梅洛-庞蒂等现象学思想影响，他强调人类行动依赖身体技能、背景常识和对具体情境的直接把握，而这些内容很难事先写成完整规则。</p><p>德雷福斯的批评集中指出了框架问题、常识推理和知识获取的困难：程序可以在封闭任务中表现出色，却未必知道哪些信息与当前情境有关，也未必能在环境变化时调整自己的理解。对 AI 来说，关键障碍不是缺少更多规则，而是规则本身无法穷尽开放世界。</p><p>后来机器学习和深度学习的成功削弱了其中一些技术判断，却没有让问题消失。研究者仍借用德雷福斯的洞见讨论具身智能、迁移能力和真实环境中的常识，提醒我们把基准任务成绩直接等同于一般理解，仍然是一种危险的简化。</p>",
+      "en": "<p>In What Computers Can't Do, Hubert Dreyfus criticized the Good Old-Fashioned AI tendency to equate intelligence with rules, symbols and formal reasoning. Drawing on phenomenology associated with Heidegger and Merleau-Ponty, he argued that human action depends on embodied skills, background common sense and direct sensitivity to situations that are difficult to encode in advance.</p><p>Dreyfus highlighted the frame problem, commonsense reasoning and the knowledge-acquisition bottleneck. A program may excel in a closed task without knowing which facts matter in a changing situation or how to revise its understanding when the environment shifts. The obstacle is not simply a shortage of rules, but the impossibility of listing every relevant feature of an open world.</p><p>Machine learning and deep learning weakened some of his technical predictions but did not erase the underlying question. Researchers still use his insights when discussing embodied intelligence, transfer and common sense, warning against treating benchmark performance as proof of general understanding.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "《计算机不能做什么》",
+          "en": "What Computers Can't Do"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://archive.org/details/whatcomputerscan00drey",
+        "source": "What Computers Can't Do",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1972-dreyfus-verified-image",
+      "asset-humanistic-1972-dreyfus-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1972-dreyfus-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-1972-dreyfus-record",
+      "source-humanistic-1972-dreyfus-verified-image"
+    ],
+    "claimIds": [
+      "claim-humanistic-1972-dreyfus-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "休伯特·德雷福斯批评把人类智能还原为符号处理，强调常识、身体经验和具体情境对理解的作用。",
+          "en": "Hubert Dreyfus criticized reducing human intelligence to symbol processing, emphasizing common sense, embodied experience and situated understanding."
+        },
+        "sourceIds": [
+          "source-humanistic-1972-dreyfus-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1972-dreyfus-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1972-dreyfus-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-2017-2049-denis-villeneuve-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2017-2049/denis-villeneuve-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "丹尼斯·维伦纽瓦肖像",
+      "en": "Denis Villeneuve portrait"
+    },
+    "subcaption": {
+      "zh": "《银翼杀手 2049》导演。",
+      "en": "Director of Blade Runner 2049."
+    },
+    "sourceId": "source-humanistic-2017-2049-denis-villeneuve-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Denis_Villeneuve_by_Gage_Skidmore.jpg",
+    "rights": {
+      "status": "cc-by-sa-3.0",
+      "license": {
+        "zh": "CC BY SA 3.0",
+        "en": "CC BY SA 3.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-62"
+    ]
+  }
+]

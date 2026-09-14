@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 50,
+    "eventId": "humanistic-2014-superintelligence",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Turn back to 2014: Superintelligence: Paths, Dangers, Strategies begins with “Nick Bostrom examines paths, risks and governanc” and asks us to rethink the relationship between machines, minds, and people.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Nick Bostrom examines paths, risks and governance after machine intelligence surpasses humans, helping move AI safety and alignment into public debate.",
+            "sourceIds": ["source-humanistic-2014-superintelligence-record"],
+            "claimIds": ["claim-humanistic-2014-superintelligence-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order.",
+            "sourceIds": ["source-humanistic-2014-superintelligence-record"],
+            "claimIds": ["claim-humanistic-2014-superintelligence-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology.",
+            "sourceIds": ["source-humanistic-2014-superintelligence-record"],
+            "claimIds": ["claim-humanistic-2014-superintelligence-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Next comes The AI Alignment Problem, where we will follow how “Superintelligence: Paths, Dangers, Strategies” enters a new historical setting.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

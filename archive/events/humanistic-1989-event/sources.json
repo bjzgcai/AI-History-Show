@@ -1,0 +1,82 @@
+[
+  {
+    "id": "source-humanistic-1989-event-record",
+    "type": "book-page",
+    "label": {
+      "zh": "图书页面",
+      "en": "Book page"
+    },
+    "title": {
+      "zh": "哈珀柯林斯《光明王》图书页面",
+      "en": "HarperCollins book page for Lord of Light"
+    },
+    "url": "https://www.harpercollins.com/products/lord-of-light-roger-zelazny",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-humanistic-1989-event-roger-zelazny-reference",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "罗杰·泽拉兹尼资料图",
+      "en": "Roger Zelazny reference"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Out_Of_The_World_Of_Roger_Zelazny_(245486883).jpeg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "罗杰·泽拉兹尼相关资料图；摄影者 Bhasker Thodla，CC BY 3.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Reference related to Roger Zelazny; photographed by Bhasker Thodla, CC BY 3.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1989-event-roger-zelazny-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "罗杰·泽拉兹尼肖像（Wikipedia 文件页）",
+      "en": "Roger Zelazny portrait (Wikipedia file page)"
+    },
+    "url": "https://en.wikipedia.org/wiki/File:Rogerzelazny.JPG",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "英文维基百科文件页将其说明为科幻作家罗杰·泽拉兹尼的历史照片，并按非自由历史图像条款使用；原始页面未提供开放许可。",
+      "en": "The English Wikipedia file page identifies this as a historical photograph of science-fiction author Roger Zelazny and uses it under a non-free historical-image rationale; no open license is provided."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1989-event-lord-of-light-first-edition-cover",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《光明王》初版封面（Wikipedia 文件页）",
+      "en": "Lord of Light first-edition cover (Wikipedia file page)"
+    },
+    "url": "https://en.wikipedia.org/wiki/File:LordofLight(Zelazny).jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "文件页确认这是 1967 年首版精装《光明王》封面，封面艺术家 Howard Bernstein；页面按非自由图书封面条款使用，原始扫描来自 ISFDB。",
+      "en": "The file page identifies the 1967 first-edition hardcover of Lord of Light, with cover art by Howard Bernstein; it is used under a non-free book-cover rationale, with the scan sourced from ISFDB."
+    },
+    "purpose": "image-provenance"
+  }
+]

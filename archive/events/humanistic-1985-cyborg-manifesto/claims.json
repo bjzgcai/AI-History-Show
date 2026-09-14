@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1985-cyborg-manifesto-core",
+    "importance": "core",
+    "text": {
+      "zh": "唐娜·哈拉维以赛博格打破人／动物、自然／技术和身体／机器的二元边界，为后人类主义、人机融合与身体增强讨论提供重要思想资源。",
+      "en": "Donna Haraway uses the cyborg to unsettle boundaries between human and animal, nature and technology, and body and machine, shaping later posthumanist debate."
+    },
+    "sourceIds": [
+      "source-humanistic-1985-cyborg-manifesto-record"
+    ],
+    "status": "needs-review"
+  }
+]

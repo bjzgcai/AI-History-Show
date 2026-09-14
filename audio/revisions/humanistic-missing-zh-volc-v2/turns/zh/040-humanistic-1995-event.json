@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v2-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 40,
+    "eventId": "humanistic-1995-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1995年，《电子超级高速公路》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《电子超级高速公路：美国本土、阿拉斯加、夏威夷》创作于 1995 年，正逢互联网商业化和“信息高速公路”进入公共政策语言。白南准此前已长期使用电视、录像和卫星直播探索电子媒介如何改变空间经验。",
+            "sourceIds": ["source-humanistic-1995-event-record"],
+            "claimIds": ["claim-humanistic-1995-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "作品以霓虹勾勒各州边界，并让屏幕播放与地方文化相关的影像；统一网络因此没有抹平差异，而是把地域刻板印象、速度和媒介流同时放大。观众必须移动视线和身体，才能在整体地图与局部信息之间建立关系。",
+            "sourceIds": ["source-humanistic-1995-event-record"],
+            "claimIds": ["claim-humanistic-1995-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "媒体艺术史研究者通常把这件作品视为白南准关于电子互联社会最具代表性的装置之一。它持续影响人们理解屏幕网络、注意力竞争和数字地理的方式，也说明“连接更多”并不必然意味着理解更深。",
+            "sourceIds": ["source-humanistic-1995-event-record"],
+            "claimIds": ["claim-humanistic-1995-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看《钻石时代》，再看《电子超级高速公路》，我们能听见同一个关于机器与人的问题跨越年代后的历史回响。",
+            "sourceIds": ["source-humanistic-1995-event-record"],
+            "claimIds": ["claim-humanistic-1995-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

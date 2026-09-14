@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-2001-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "机器人男孩大卫渴望母爱，追问如果AI真的爱了人类是否有义务爱回去。",
+      "en": "机器人男孩大卫渴望母爱，追问如果AI真的爱了人类是否有义务爱回去。"
+    },
+    "sourceIds": [
+      "source-humanistic-2001-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

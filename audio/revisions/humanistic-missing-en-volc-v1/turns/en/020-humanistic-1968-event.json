@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 20,
+    "eventId": "humanistic-1968-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Today we return to 1968 and use Do Androids Dream of Electric Sheep? to follow how “Published in 1968, the novel's postwar wasteland” entered technical culture and reached later generations.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Published in 1968, the novel's postwar wasteland reflects anxieties about the Cold War, ecological collapse and consumer society. Androids are manufactured as colonial labor but flee to Earth in pursuit of survival, becoming targets whom bounty hunter Rick Deckard must “retire.”",
+            "sourceIds": ["source-humanistic-1968-event-record"],
+            "claimIds": ["claim-humanistic-1968-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "What does “The book does not reduce the human-machine diffe” reveal about Do Androids Dream of Electric Sheep?'s disagreement with ideas of its own time?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The book does not reduce the human-machine difference to intelligence; empathy tests, artificial memories and care for animals repeatedly destabilize the boundary. It asks readers to judge whether the human who kills or the android who wants to live better qualifies as a moral person.",
+            "sourceIds": ["source-humanistic-1968-event-record"],
+            "claimIds": ["claim-humanistic-1968-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Where does “Do Androids Dream of Electric Sheep?” still appear in AI systems today?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Scholars generally treat the novel as a central text in artificial-life ethics and posthuman identity, and it supplied the literary basis for Blade Runner. Its lasting effect is to shift the question from whether machines resemble humans to whether humans will recognize another kind of subject.",
+            "sourceIds": ["source-humanistic-1968-event-record"],
+            "claimIds": ["claim-humanistic-1968-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "Faced with “Do Androids Dream of Electric Sheep?”, are we extending Do Androids Dream of Electric Sheep?'s idea, or taking a different path?",
+            "sourceIds": ["source-humanistic-1968-event-record"],
+            "claimIds": ["claim-humanistic-1968-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

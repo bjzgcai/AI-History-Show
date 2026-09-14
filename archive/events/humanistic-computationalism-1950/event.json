@@ -1,0 +1,174 @@
+{
+  "id": "humanistic-computationalism-1950",
+  "year": 1950,
+  "date": "20世纪中叶",
+  "title": {
+    "zh": "计算主义",
+    "en": "Computationalism"
+  },
+  "description": {
+    "zh": "计算主义把认知过程理解为信息处理或计算操作，主张心智与大脑的关系可以通过功能和程序来说明，为机器能否拥有心智提供理论基础。",
+    "en": "Computationalism understands cognition as information processing or computation, using functional and program-like descriptions to ask whether machines can have minds."
+  },
+  "location": {
+    "regionId": "global",
+    "country": {
+      "zh": "欧美哲学传统",
+      "en": "European and American philosophical traditions"
+    },
+    "place": {
+      "zh": "心灵哲学与认知科学语境",
+      "en": "Philosophy of mind and cognitive science"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "hilary-putnam",
+      "avatarAssetId": "asset-humanistic-computationalism-1950-verified-image",
+      "role": {
+        "zh": "现代计算主义心灵观的重要代表",
+        "en": "Major representative of modern computationalism about mind"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "计算主义",
+      "en": "Computationalism"
+    },
+    "displaySummary": {
+      "zh": "哲学",
+      "en": "Philosophy"
+    },
+    "displayDescription": {
+      "zh": "<p>计算主义把心智理解为一种信息处理过程，认为思考、记忆和推理可以用功能关系与程序结构来描述。它在认知科学兴起的时期提供了一个有力直觉：如果同一种计算组织可以在不同物质上实现，那么心智就不必被限定在人类生物大脑之内。</p><p>这一观点为人工智能提供了理论桥梁，也改变了“机器能否拥有心智”的提问方式。关注点从机器是否像人，转向系统是否实现了合适的表征、输入输出关系和内部操作；但身体经验、情感、主观体验和社会环境是否能被完整计算，始终是争论焦点。</p><p>计算主义的长期影响不在于它已经解决了意识问题，而在于它确立了把心智当作可实现结构来研究的路线。今天的神经网络、认知架构和人工意识讨论仍在继承这一假设，同时也不断用具身认知、现象学和社会性研究检验它的边界。</p>",
+      "en": "<p>Computationalism understands mind as information processing and holds that thinking, memory and reasoning can be described through functional relations and program-like structures. During the rise of cognitive science it offered a powerful intuition: if the same computational organization can be realized in different materials, mind need not be confined to the human biological brain.</p><p>The view supplied a theoretical bridge to artificial intelligence and changed how people asked whether machines could have minds. The focus moved from whether a machine looks human to whether it realizes the right representations, input-output relations and internal operations. Embodiment, emotion, subjective experience and social context remain persistent challenges to a complete computational account.</p><p>Computationalism's lasting importance is not that it solved consciousness, but that it established a research path treating mind as an implementable structure. Neural networks, cognitive architectures and artificial-consciousness debates still inherit this premise while testing its limits through embodied, phenomenological and social approaches.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "计算主义",
+          "en": "Computationalism"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://plato.stanford.edu/entries/computational-mind/",
+        "source": "Computationalism",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-computationalism-1950-verified-image",
+      "asset-humanistic-computationalism-1950-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-computationalism-1950-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-computationalism-1950-record",
+      "source-humanistic-computationalism-1950-verified-image"
+    ],
+    "claimIds": [
+      "claim-humanistic-computationalism-1950-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "计算主义把认知过程理解为信息处理或计算操作，主张心智与大脑的关系可以通过功能和程序来说明，为机器能否拥有心智提供理论基础。",
+          "en": "Computationalism understands cognition as information processing or computation, using functional and program-like descriptions to ask whether machines can have minds."
+        },
+        "sourceIds": [
+          "source-humanistic-computationalism-1950-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-computationalism-1950-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-computationalism-1950-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

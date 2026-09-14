@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 17,
+    "eventId": "humanistic-1962-a-michael-noll",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "At the 1962 point on this timeline, Computer-Generated Art by A. Michael Noll offers a way to look closely at “In the early 1960s, researchers at Bell Laborato”. Why does it still matter?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "In the early 1960s, researchers at Bell Laboratories began using large computers for experiments in sound, animation and images. Noll calculated early works on IBM 7090-series machines and output them with plotting equipment; in 1965 his work also appeared in a computer-art exhibition at New York's Howard Wise Gallery.",
+            "sourceIds": ["source-humanistic-1962-a-michael-noll-record"],
+            "claimIds": ["claim-humanistic-1962-a-michael-noll-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "These works did more than use a computer as a faster drawing tool; they made rules, probability and parameter choices into artistic materials. They therefore raise an enduring question: when a program generates an image, does authorship belong to the program, the machine or the person who designed the rules?",
+            "sourceIds": ["source-humanistic-1962-a-michael-noll-record"],
+            "claimIds": ["claim-humanistic-1962-a-michael-noll-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Historians of digital art generally regard Noll as one of the early practitioners of computer-generated art, linking laboratory research, modernist abstraction and later generative methods. The lasting importance lies less in the particular machine than in demonstrating that algorithms could become a recognizable aesthetic medium.",
+            "sourceIds": ["source-humanistic-1962-a-michael-noll-record"],
+            "claimIds": ["claim-humanistic-1962-a-michael-noll-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Computer-Generated Art by A. Michael Noll handed “Historians of digital art generally regard Noll ” to later researchers and creators as a long thread in the cultural history of AI.",
+            "sourceIds": ["source-humanistic-1962-a-michael-noll-record"],
+            "claimIds": ["claim-humanistic-1962-a-michael-noll-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

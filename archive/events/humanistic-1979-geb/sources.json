@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1979-geb-record",
+    "type": "official-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "普利策奖《哥德尔、艾舍尔、巴赫》获奖记录",
+      "en": "Pulitzer Prize record for Gödel, Escher, Bach"
+    },
+    "url": "https://www.pulitzer.org/winners/douglas-r-hofstadter",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-1979-geb-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "道格拉斯·霍夫施塔特肖像",
+      "en": "Douglas Hofstadter"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Douglas_Hofstadter,_Stanford_2006_(crop).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：CC BY-SA 2.0。",
+      "en": "Wikimedia Commons file page identifies the subject; license: CC BY-SA 2.0."
+    },
+    "purpose": "image-provenance"
+  }
+]

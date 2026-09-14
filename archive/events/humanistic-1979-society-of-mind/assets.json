@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1979-society-of-mind-verified-image",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1979-society-of-mind/verified-marvin-minsky.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "马文·明斯基肖像",
+      "en": "Marvin Minsky"
+    },
+    "subcaption": {
+      "zh": "《心智社会》作者。",
+      "en": "《心智社会》作者。"
+    },
+    "sourceId": "source-humanistic-1979-society-of-mind-verified-image",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marvin_Minsky_at_OLPCb_(3x4_cropped).jpg",
+    "rights": {
+      "status": "cc-by-3-0",
+      "license": {
+        "zh": "CC BY 3.0",
+        "en": "CC BY 3.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线人物或历史资料展示。",
+        "en": "Used as a figure or historical reference in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "marvin-minsky"
+    ]
+  }
+]

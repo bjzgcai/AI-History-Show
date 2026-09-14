@@ -1,0 +1,74 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 49,
+    "eventId": "humanistic-2013-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "沿着2013年的时间线，我们先遇到《她》。它让“《她》于 2013 年上映，正值智能手机、语音助手和社交平台”成为一个无法绕开的文化问题。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "《她》于 2013 年上映，正值智能手机、语音助手和社交平台开始改变人们对“在线陪伴”的想象。斯派克·琼兹把这种变化放进近未来洛杉矶的亲密关系中，使人工智能首先以声音、语言和日常服务进入观众生活。",
+            "sourceIds": ["source-her-nyff-2013", "source-her-sony-pictures-classics"],
+            "claimIds": ["claim-humanistic-2013-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "如果把《她》拆成一个具体问题，答案会落在“影片不把 Samantha 设计成可见的机器人，而是通过持续”上吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "影片不把 Samantha 设计成可见的机器人，而是通过持续对话、幽默、记忆和情感回应来建立她的主体感。由此，作品把“机器是否有感情”转化为更具体的问题：人类如何判断另一种智能的需要、边界与成长。",
+            "sourceIds": ["source-her-sony-pictures-classics"],
+            "claimIds": ["claim-humanistic-2013-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "如果只保留一个长期问题，那会是“电影研究者与 AI 人文学者通常把《她》视为讨论媒介亲密性、”怎样改变了我们谈论人工智能的方式？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "电影研究者与 AI 人文学者通常把《她》视为讨论媒介亲密性、技术中介和机器主体性的代表性文化文本，而不是对通用人工智能时间表的预测。它的长期价值在于提醒观众，技术关系的核心不只在于系统能力，也在于依恋、同意、退出和权力如何被重新分配。",
+            "sourceIds": [
+                "source-her-sony-pictures-classics",
+                "source-her-nyff-2013",
+                "source-her-digital-romance-post-cinema",
+                "source-her-depersonalized-intimacy"
+            ],
+            "claimIds": ["claim-humanistic-2013-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "当“电影研究者与 AI 人文学者通常把《她》视为讨论媒介亲密性、”进入真实生活，《她》提醒我们的边界是否仍然成立？",
+            "sourceIds": [
+                "source-her-nyff-2013",
+                "source-her-sony-pictures-classics",
+                "source-her-digital-romance-post-cinema",
+                "source-her-depersonalized-intimacy"
+            ],
+            "claimIds": ["claim-humanistic-2013-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

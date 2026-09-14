@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 39,
+    "eventId": "humanistic-1993-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The Diamond Age, first appearing in 1995, opens a new view of the humanities of AI: what does “The Diamond Age was published in 1995” really mean?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "The Diamond Age was published in 1995. It is set in a future transformed by nanotechnology, where education, identity and resources are organized through cultural communities and technical infrastructure.",
+            "sourceIds": ["source-humanistic-1993-event-record"],
+            "claimIds": ["claim-humanistic-1993-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "It may sound like a small detail, but how does “The Young Lady's Illustrated Primer adapts stori” support The Diamond Age's view of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The Young Lady's Illustrated Primer adapts stories and exercises to Nell's circumstances, making learning an ongoing dialogue rather than a fixed curriculum. It shows the promise of personalized education while revealing how design goals, human labor and cultural values enter the learner's development.",
+            "sourceIds": ["source-humanistic-1993-event-record"],
+            "claimIds": ["claim-humanistic-1993-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Education-technology and science-fiction scholars generally regard the Primer as one of the most influential cultural prototypes for intelligent tutoring and adaptive learning. It reminds current generative learning systems that personalization concerns not only content selection but who sets developmental goals, who performs the teaching relationship and who owns learning data.",
+            "sourceIds": ["source-humanistic-1993-event-record"],
+            "claimIds": ["claim-humanistic-1993-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "If we remember one thing about The Diamond Age, it is how “Education-technology and science-fiction scholar” entered the humanistic view of artificial intelligence.",
+            "sourceIds": ["source-humanistic-1993-event-record"],
+            "claimIds": ["claim-humanistic-1993-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

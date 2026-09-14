@@ -388,7 +388,7 @@ async function main() {
         const exported = await requestJson(baseUrl, '/api/reviews/export', reviewerCookie);
         assert.equal(exported.payload.candidates.length, 1);
         assert.equal(exported.payload.records.length, 2);
-        assert.equal(exported.payload.records[0].note, '需要调整停顿');
+        assert.equal(exported.payload.records.find((record) => record.result === 'fail').note, '需要调整停顿');
 
         const invalidated = await requestJson(
             baseUrl,

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1972-event-record",
+    "type": "encyclopedia-entry",
+    "label": {
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
+    },
+    "title": {
+      "zh": "《科幻小说百科全书》阿瑟·克拉克条目（含《神的九十亿个名字》）",
+      "en": "The Encyclopedia of Science Fiction entry on Arthur C. Clarke, including “The Nine Billion Names of God”"
+    },
+    "url": "https://sf-encyclopedia.com/entry/clarke_arthur_c",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "用于核对作品身份、发行或发表信息。",
+      "en": "Used to verify the work identity, release, or publication information."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-humanistic-1972-event-arthur-clarke-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "阿瑟·C·克拉克肖像",
+      "en": "Arthur C. Clarke portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Arthur_C._Clarke_cropped.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《神的九十亿个名字》作者肖像；文件页标注公有领域。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Author of The Nine Billion Names of God; the file page marks it public domain. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

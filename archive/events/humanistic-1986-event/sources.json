@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-1986-event-record",
+    "type": "official-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "米高梅《终结者》官方影片页面",
+      "en": "MGM official film page for The Terminator"
+    },
+    "url": "https://www.mgm.com/movies/the-terminator",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对作品身份、发行或发表信息。",
+      "en": "Used to verify the work identity, release, or publication information."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-humanistic-1986-event-terminator-logo",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《终结者》片名标识",
+      "en": "The Terminator title reference"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:The_Terminator_(logo).svg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "影片片名标识资料；已按 Commons 文件页实际地址重新下载。文件页注明矢量化作者 Amberrock、公共领域状态及商标限制；不作为电影剧照。",
+      "en": "Film title reference; re-downloaded from the actual Commons file URL. The file page identifies vectorizer Amberrock, marks the work public domain and notes trademark restrictions; it is not a film still."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1986-event-tmdb-images",
+    "type": "image-source",
+    "url": "https://www.themoviedb.org/movie/218-the-terminator/images",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《终结者》 TMDB 图片库",
+      "en": "The Terminator TMDB image gallery"
+    },
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "TMDB 图片库用于定位海报、影片场面与宣传视觉；每张图片的原始文件链接保留在对应资源记录中。",
+      "en": "The TMDB gallery is used to locate posters, film scenes and promotional visuals; each original file URL is retained in the corresponding asset record."
+    },
+    "purpose": "image-provenance"
+  }
+]

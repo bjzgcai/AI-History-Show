@@ -28,6 +28,8 @@ const LOCALIZED_REQUIRED_KEYS = ['zh', 'en'];
 const SOURCE_TYPE_IDS = new Set(SOURCE_TYPE_TAXONOMY.map((entry) => entry.id));
 const SOURCE_PURPOSE_IDS = new Set(SOURCE_PURPOSE_TAXONOMY.map((entry) => entry.id));
 const SOURCE_RELIABILITY_IDS = new Set(['primary', 'secondary', 'tertiary', 'reference-only']);
+const SEARCH_RESULT_URL_PATTERN =
+    /^https?:\/\/(?:www\.)?(?:google\.[^/]+|bing\.com|search\.yahoo\.com)\/(?:search|websearch)(?:[/?#]|$)/i;
 
 const MANAGED_SOURCE_LABELS = {
     paper: new Set([
@@ -441,6 +443,12 @@ function validateSources(eventDir, sources) {
         }
         if (!hasText(source.url) && !hasText(source.doi) && !hasText(source.archiveUrl)) {
             addError(filePath, `source ${source.id || '<missing>'} must include url, doi, or archiveUrl.`);
+        }
+        if (hasText(source.url) && SEARCH_RESULT_URL_PATTERN.test(source.url)) {
+            addError(
+                filePath,
+                `source ${source.id || '<missing>'} must link to a source page, not a search-results page.`
+            );
         }
 
         checkLocalized(filePath, source.label, `source ${source.id || '<missing>'} label`);

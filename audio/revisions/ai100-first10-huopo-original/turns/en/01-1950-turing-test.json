@@ -1,0 +1,51 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "ai100-first10-storyline-en-original-v1-2026-08-07",
+    "scopeId": "bench-council-ai100",
+    "sequenceIndex": 1,
+    "eventId": "1950-turing-test",
+    "locale": "en",
+    "mode": "storyline",
+    "turns": [
+        {
+            "role": "A",
+            "text": "If there were a wall between us and we could communicate only by typing, could you really tell whether the other side held a person or a machine?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-translation"
+        },
+        {
+            "role": "B",
+            "text": "In 1950, Alan Turing's paper Computing Machinery and Intelligence did not try to define thinking directly. Instead, it proposed the imitation game: a judge communicates through text with a hidden human and a hidden machine, then decides which is which. The design turned a difficult philosophical dispute into an observable and comparable behavioral test.",
+            "sourceIds": ["source-computing-machinery-and-intelligence"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "variant.displayDescription.background"
+        },
+        {
+            "role": "A",
+            "text": "That sounds elegant. What mechanism actually makes the test work?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-translation"
+        },
+        {
+            "role": "B",
+            "text": "Its importance is not that it provides a single definition of intelligence, but that it establishes an evaluation method. The channel is restricted, the participants' identities are hidden, and a human judge assesses their performance through interaction. Modern researchers generally do not regard it as a complete measure of intelligence, but human evaluation, chatbot comparison and adversarial testing still carry forward this methodological idea.",
+            "sourceIds": ["source-computing-machinery-and-intelligence"],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "variant.displayDescription.explanation"
+        },
+        {
+            "role": "A",
+            "text": "As machine language becomes more humanlike, what evidence can separate fluent imitation from genuine understanding?",
+            "sourceIds": [
+                "source-turing-digital-archive",
+                "source-internet-archive-digital-preview",
+                "source-stanford-encyclopedia-of-philosophy",
+                "source-computing-machinery-and-intelligence"
+            ],
+            "claimIds": ["claim-ai100-achievement", "claim-method-artifact"],
+            "contentOrigin": "editorial-closing-translation"
+        }
+    ]
+}
