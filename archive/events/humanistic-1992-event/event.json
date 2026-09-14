@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-1992-event-neal-stephenson-portrait"
+      "asset-humanistic-1992-event-neal-stephenson-portrait",
+      "asset-humanistic-1992-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1992-event-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1992-event-record",

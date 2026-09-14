@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-2014-superintelligence-verified-image"
+      "asset-humanistic-2014-superintelligence-verified-image",
+      "asset-humanistic-2014-superintelligence-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-2014-superintelligence-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-2014-superintelligence-record",

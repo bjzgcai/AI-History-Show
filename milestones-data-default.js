@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-09-10 11:07
+// 生成时间: 2026-09-14 08:34
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 236, errors 0
 
@@ -109305,10 +109305,48 @@ const milestones = [
           "figureIds": []
         }
       },
+      "audios": [
+        {
+          "id": "asset-ancient-hephaestus-automata-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ancient-hephaestus-automata-zh-humanistic-hephaestus-zh-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《伊利亚特》中的赫菲斯托斯自动机械 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Hephaestus Automata in The Iliad"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/ancient-hephaestus-automata-zh-humanistic-hephaestus-zh-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ancient-hephaestus-automata-zh-humanistic-hephaestus-zh-volc-v1-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-ancient-hephaestus-automata-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/ancient-hephaestus-automata-en-humanistic-hephaestus-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《伊利亚特》中的赫菲斯托斯自动机械 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Hephaestus Automata in The Iliad"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/ancient-hephaestus-automata-en-humanistic-hephaestus-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ancient-hephaestus-automata-en-humanistic-hephaestus-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-ancient-hephaestus-automata-homer-bust",
         "asset-ancient-hephaestus-automata-iliad-1488-editio-princeps",
-        "asset-ancient-hephaestus-automata-verified-image"
+        "asset-ancient-hephaestus-automata-verified-image",
+        "asset-ancient-hephaestus-automata-audio-zh-humanistic-20260914-v1",
+        "asset-ancient-hephaestus-automata-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -109739,9 +109777,47 @@ const milestones = [
           "figureIds": []
         }
       },
+      "audios": [
+        {
+          "id": "asset-sandman-1816-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/sandman-1816-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《沙人》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The Sandman"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/sandman-1816-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "sandman-1816-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-sandman-1816-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/sandman-1816-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《沙人》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The Sandman"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/sandman-1816-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "sandman-1816-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-sandman-1816-eta-hoffmann-self-portrait",
-        "asset-sandman-1816-sandman-illustration-009"
+        "asset-sandman-1816-sandman-illustration-009",
+        "asset-sandman-1816-audio-zh-humanistic-20260914-v1",
+        "asset-sandman-1816-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -110087,8 +110163,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-descartes-automata-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/descartes-automata-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《方法论》与《第一哲学沉思录》中的自动机器论 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Descartes on Automata and Thought"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/descartes-automata-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "descartes-automata-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-descartes-automata-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/descartes-automata-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《方法论》与《第一哲学沉思录》中的自动机器论 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Descartes on Automata and Thought"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/descartes-automata-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "descartes-automata-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-descartes-automata-descartes-portrait"
+        "asset-descartes-automata-descartes-portrait",
+        "asset-descartes-automata-audio-zh-humanistic-20260914-v1",
+        "asset-descartes-automata-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -110454,10 +110568,48 @@ const milestones = [
           "figureIds": []
         }
       },
+      "audios": [
+        {
+          "id": "asset-jaquet-droz-automata-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/jaquet-droz-automata-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "雅克-德罗自动人偶 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The Jaquet-Droz Automata"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/jaquet-droz-automata-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "jaquet-droz-automata-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-jaquet-droz-automata-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/jaquet-droz-automata-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "雅克-德罗自动人偶 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The Jaquet-Droz Automata"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/jaquet-droz-automata-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "jaquet-droz-automata-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-jaquet-droz-automata-pierre-jaquet-droz-portrait",
         "asset-jaquet-droz-automata-jaquet-droz-writer",
-        "asset-jaquet-droz-automata-jaquet-droz-musician"
+        "asset-jaquet-droz-automata-jaquet-droz-musician",
+        "asset-jaquet-droz-automata-audio-zh-humanistic-20260914-v1",
+        "asset-jaquet-droz-automata-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -110888,9 +111040,47 @@ const milestones = [
           "figureIds": []
         }
       },
+      "audios": [
+        {
+          "id": "asset-frankenstein-1818-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/frankenstein-1818-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《弗兰肯斯坦》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Frankenstein; or, The Modern Prometheus"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/frankenstein-1818-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "frankenstein-1818-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-frankenstein-1818-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/frankenstein-1818-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《弗兰肯斯坦》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Frankenstein; or, The Modern Prometheus"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/frankenstein-1818-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "frankenstein-1818-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-frankenstein-1818-mary-shelley-portrait",
-        "asset-frankenstein-1818-mary-shelley-biography-scan"
+        "asset-frankenstein-1818-mary-shelley-biography-scan",
+        "asset-frankenstein-1818-audio-zh-humanistic-20260914-v1",
+        "asset-frankenstein-1818-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -111236,8 +111426,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-darwin-among-machines-1863-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/darwin-among-machines-1863-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《机器中的达尔文》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Darwin among the Machines"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/darwin-among-machines-1863-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "darwin-among-machines-1863-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-darwin-among-machines-1863-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/darwin-among-machines-1863-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《机器中的达尔文》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Darwin among the Machines"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/darwin-among-machines-1863-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "darwin-among-machines-1863-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-darwin-among-machines-1863-samuel-butler-portrait"
+        "asset-darwin-among-machines-1863-samuel-butler-portrait",
+        "asset-darwin-among-machines-1863-audio-zh-humanistic-20260914-v1",
+        "asset-darwin-among-machines-1863-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -111531,8 +111759,46 @@ const milestones = [
           "figureIds": []
         }
       },
+      "audios": [
+        {
+          "id": "asset-erewhon-1872-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/erewhon-1872-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《埃瑞洪》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Erewhon"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/erewhon-1872-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "erewhon-1872-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-erewhon-1872-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/erewhon-1872-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《埃瑞洪》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Erewhon"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/erewhon-1872-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "erewhon-1872-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-erewhon-1872-erewhon-first-edition"
+        "asset-erewhon-1872-erewhon-first-edition",
+        "asset-erewhon-1872-audio-zh-humanistic-20260914-v1",
+        "asset-erewhon-1872-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -111826,8 +112092,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-impressions-theophrastus-1879-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/impressions-theophrastus-1879-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《西奥弗拉斯特斯·萨奇的印象》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Impressions of Theophrastus Such"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/impressions-theophrastus-1879-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "impressions-theophrastus-1879-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-impressions-theophrastus-1879-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/impressions-theophrastus-1879-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《西奥弗拉斯特斯·萨奇的印象》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Impressions of Theophrastus Such"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/impressions-theophrastus-1879-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "impressions-theophrastus-1879-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-impressions-theophrastus-1879-george-eliot-portrait"
+        "asset-impressions-theophrastus-1879-george-eliot-portrait",
+        "asset-impressions-theophrastus-1879-audio-zh-humanistic-20260914-v1",
+        "asset-impressions-theophrastus-1879-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -112123,8 +112427,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-future-eve-1886-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/future-eve-1886-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《未来夏娃》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The Future Eve"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/future-eve-1886-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "future-eve-1886-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-future-eve-1886-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/future-eve-1886-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《未来夏娃》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The Future Eve"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/future-eve-1886-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "future-eve-1886-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-future-eve-1886-villiers-portrait"
+        "asset-future-eve-1886-villiers-portrait",
+        "asset-future-eve-1886-audio-zh-humanistic-20260914-v1",
+        "asset-future-eve-1886-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -112420,8 +112762,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-new-china-future-1902-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/new-china-future-1902-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《新中国未来记》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The Future of New China"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/new-china-future-1902-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "new-china-future-1902-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-new-china-future-1902-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/new-china-future-1902-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《新中国未来记》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The Future of New China"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/new-china-future-1902-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "new-china-future-1902-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-new-china-future-1902-liang-qichao-portrait"
+        "asset-new-china-future-1902-liang-qichao-portrait",
+        "asset-new-china-future-1902-audio-zh-humanistic-20260914-v1",
+        "asset-new-china-future-1902-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -113721,8 +114101,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1950-i-robot-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1950-i-robot-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《我，机器人》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for I, Robot"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1950-i-robot-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1950-i-robot-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1950-i-robot-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1950-i-robot-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《我，机器人》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for I, Robot"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1950-i-robot-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1950-i-robot-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1950-i-robot-verified-image"
+        "asset-humanistic-1950-i-robot-verified-image",
+        "asset-humanistic-1950-i-robot-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1950-i-robot-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -114570,8 +114988,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-computationalism-1950-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-computationalism-1950-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "计算主义 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Computationalism"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-computationalism-1950-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-computationalism-1950-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-computationalism-1950-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-computationalism-1950-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "计算主义 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Computationalism"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-computationalism-1950-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-computationalism-1950-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-computationalism-1950-verified-image"
+        "asset-humanistic-computationalism-1950-verified-image",
+        "asset-humanistic-computationalism-1950-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-computationalism-1950-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -115428,8 +115884,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1962-a-michael-noll-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1962-a-michael-noll-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "A. Michael Noll的计算机生成艺术 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Computer-Generated Art by A. Michael Noll"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1962-a-michael-noll-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1962-a-michael-noll-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1962-a-michael-noll-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1962-a-michael-noll-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "A. Michael Noll的计算机生成艺术 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Computer-Generated Art by A. Michael Noll"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1962-a-michael-noll-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1962-a-michael-noll-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1962-a-michael-noll-noll-vertical-horizontal"
+        "asset-humanistic-1962-a-michael-noll-noll-vertical-horizontal",
+        "asset-humanistic-1962-a-michael-noll-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1962-a-michael-noll-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -115725,8 +116219,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1966-17-babel-17-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1966-17-babel-17-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《巴别塔-17》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Babel-17"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1966-17-babel-17-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1966-17-babel-17-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1966-17-babel-17-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1966-17-babel-17-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《巴别塔-17》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Babel-17"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1966-17-babel-17-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1966-17-babel-17-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1966-17-babel-17-samuel-delany-portrait"
+        "asset-humanistic-1966-17-babel-17-samuel-delany-portrait",
+        "asset-humanistic-1966-17-babel-17-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1966-17-babel-17-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -116059,9 +116591,47 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1967-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1967-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《无声狂啸》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for I Have No Mouth, and I Must Scream"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1967-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1967-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1967-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1967-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《无声狂啸》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for I Have No Mouth, and I Must Scream"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1967-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1967-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-humanistic-1967-event-harlan-ellison-portrait",
-        "asset-humanistic-1967-event-am-talkfield"
+        "asset-humanistic-1967-event-am-talkfield",
+        "asset-humanistic-1967-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1967-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -116446,9 +117016,47 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1968-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1968-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《仿生人会梦见电子羊吗？》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Do Androids Dream of Electric Sheep?"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1968-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1968-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1968-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1968-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《仿生人会梦见电子羊吗？》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Do Androids Dream of Electric Sheep?"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1968-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1968-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-humanistic-1968-event-philip-k-dick-portrait",
-        "asset-humanistic-1968-event-androids-dream-cover"
+        "asset-humanistic-1968-event-androids-dream-cover",
+        "asset-humanistic-1968-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1968-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -117527,8 +118135,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1972-dreyfus-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1972-dreyfus-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《计算机不能做什么》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for What Computers Can't Do"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1972-dreyfus-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1972-dreyfus-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1972-dreyfus-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1972-dreyfus-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《计算机不能做什么》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for What Computers Can't Do"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1972-dreyfus-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1972-dreyfus-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1972-dreyfus-verified-image"
+        "asset-humanistic-1972-dreyfus-verified-image",
+        "asset-humanistic-1972-dreyfus-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1972-dreyfus-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -117824,8 +118470,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1990-chinese-nation-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1990-chinese-nation-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "布洛克的中华民族（Chinese Nation） 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Ned Block's Chinese Nation Thought Experiment"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1990-chinese-nation-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1990-chinese-nation-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1990-chinese-nation-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1990-chinese-nation-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "布洛克的中华民族（Chinese Nation） 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Ned Block's Chinese Nation Thought Experiment"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1990-chinese-nation-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1990-chinese-nation-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1990-chinese-nation-ned-block-portrait"
+        "asset-humanistic-1990-chinese-nation-ned-block-portrait",
+        "asset-humanistic-1990-chinese-nation-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1990-chinese-nation-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -118121,8 +118805,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1979-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1979-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《银河系漫游指南》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The Hitchhiker's Guide to the Galaxy"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1979-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1979-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1979-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1979-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《银河系漫游指南》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The Hitchhiker's Guide to the Galaxy"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1979-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1979-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1979-event-douglas-adams-portrait"
+        "asset-humanistic-1979-event-douglas-adams-portrait",
+        "asset-humanistic-1979-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1979-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -118418,8 +119140,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1979-geb-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1979-geb-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《哥德尔、艾舍尔、巴赫》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Gödel, Escher, Bach: An Eternal Golden Braid"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1979-geb-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1979-geb-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1979-geb-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1979-geb-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《哥德尔、艾舍尔、巴赫》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Gödel, Escher, Bach: An Eternal Golden Braid"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1979-geb-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1979-geb-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1979-geb-verified-image"
+        "asset-humanistic-1979-geb-verified-image",
+        "asset-humanistic-1979-geb-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1979-geb-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -118750,9 +119510,47 @@ const milestones = [
           "figureIds": []
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1980-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1980-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "中文房间思想实验 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The Chinese Room Thought Experiment"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1980-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1980-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1980-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1980-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "中文房间思想实验 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The Chinese Room Thought Experiment"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1980-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1980-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-humanistic-1980-event-john-searle-portrait",
-        "asset-humanistic-1980-event-chinese-room-thought-experiment"
+        "asset-humanistic-1980-event-chinese-room-thought-experiment",
+        "asset-humanistic-1980-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1980-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -119098,8 +119896,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1981-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1981-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《真名实姓》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for True Names"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1981-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1981-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1981-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1981-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《真名实姓》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for True Names"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1981-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1981-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1981-event-vernor-vinge-portrait"
+        "asset-humanistic-1981-event-vernor-vinge-portrait",
+        "asset-humanistic-1981-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1981-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -119889,8 +120725,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1984-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1984-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《血音乐》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Blood Music"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1984-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1984-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1984-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1984-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《血音乐》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Blood Music"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1984-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1984-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1984-event-greg-bear-portrait"
+        "asset-humanistic-1984-event-greg-bear-portrait",
+        "asset-humanistic-1984-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1984-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -120186,8 +121060,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1985-cyborg-manifesto-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1985-cyborg-manifesto-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《赛博格宣言》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for A Cyborg Manifesto"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1985-cyborg-manifesto-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1985-cyborg-manifesto-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1985-cyborg-manifesto-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1985-cyborg-manifesto-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《赛博格宣言》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for A Cyborg Manifesto"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1985-cyborg-manifesto-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1985-cyborg-manifesto-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1985-cyborg-manifesto-verified-image"
+        "asset-humanistic-1985-cyborg-manifesto-verified-image",
+        "asset-humanistic-1985-cyborg-manifesto-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1985-cyborg-manifesto-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -120483,8 +121395,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1998-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1998-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《文明》系列（The Culture） 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The Culture Series"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1998-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1998-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1998-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1998-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《文明》系列（The Culture） 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The Culture Series"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1998-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1998-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1998-event-iain-banks-portrait"
+        "asset-humanistic-1998-event-iain-banks-portrait",
+        "asset-humanistic-1998-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1998-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -120780,8 +121730,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1988-mind-children-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1988-mind-children-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《心智之子》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Mind Children: The Future of Robot and Human Intelligence"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1988-mind-children-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1988-mind-children-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1988-mind-children-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1988-mind-children-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《心智之子》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Mind Children: The Future of Robot and Human Intelligence"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1988-mind-children-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1988-mind-children-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1988-mind-children-verified-image"
+        "asset-humanistic-1988-mind-children-verified-image",
+        "asset-humanistic-1988-mind-children-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1988-mind-children-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -121112,9 +122100,47 @@ const milestones = [
           "figureIds": []
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1989-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1989-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《光明王》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Lord of Light"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1989-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1989-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1989-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1989-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《光明王》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Lord of Light"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1989-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1989-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-humanistic-1989-event-roger-zelazny-portrait",
-        "asset-humanistic-1989-event-lord-of-light-first-edition-cover"
+        "asset-humanistic-1989-event-lord-of-light-first-edition-cover",
+        "asset-humanistic-1989-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1989-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -121513,9 +122539,47 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1990-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1990-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《差分机》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The Difference Engine"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1990-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1990-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1990-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1990-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《差分机》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The Difference Engine"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1990-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1990-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-humanistic-1990-event-william-gibson-portrait",
-        "asset-humanistic-1990-event-bruce-sterling-portrait"
+        "asset-humanistic-1990-event-bruce-sterling-portrait",
+        "asset-humanistic-1990-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1990-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -121863,8 +122927,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1991-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1991-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《意识的解释》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Consciousness Explained"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1991-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1991-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1991-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1991-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《意识的解释》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Consciousness Explained"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1991-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1991-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1991-event-daniel-dennett-portrait"
+        "asset-humanistic-1991-event-daniel-dennett-portrait",
+        "asset-humanistic-1991-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1991-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -122234,10 +123336,48 @@ const milestones = [
           "figureIds": []
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1991-ghost-shell-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1991-ghost-shell-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《攻壳机动队》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Ghost in the Shell"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1991-ghost-shell-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1991-ghost-shell-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1991-ghost-shell-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1991-ghost-shell-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《攻壳机动队》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Ghost in the Shell"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1991-ghost-shell-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1991-ghost-shell-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-humanistic-1991-ghost-shell-verified-image",
         "asset-humanistic-1991-ghost-shell-tmdb-poster",
-        "asset-humanistic-1991-ghost-shell-tmdb-scene-2"
+        "asset-humanistic-1991-ghost-shell-tmdb-scene-2",
+        "asset-humanistic-1991-ghost-shell-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1991-ghost-shell-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -122622,8 +123762,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1992-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1992-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《雪崩》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Snow Crash"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1992-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1992-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1992-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1992-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《雪崩》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Snow Crash"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1992-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1992-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1992-event-neal-stephenson-portrait"
+        "asset-humanistic-1992-event-neal-stephenson-portrait",
+        "asset-humanistic-1992-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1992-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -122919,8 +124097,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1993-singularity-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1993-singularity-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "技术奇点即将到来 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The Coming Technological Singularity"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1993-singularity-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1993-singularity-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1993-singularity-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1993-singularity-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "技术奇点即将到来 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The Coming Technological Singularity"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1993-singularity-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1993-singularity-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1993-singularity-verified-image"
+        "asset-humanistic-1993-singularity-verified-image",
+        "asset-humanistic-1993-singularity-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1993-singularity-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -123216,8 +124432,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1993-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1993-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《钻石时代》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The Diamond Age"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1993-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1993-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1993-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1993-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《钻石时代》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The Diamond Age"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1993-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1993-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1993-event-neal-stephenson-portrait"
+        "asset-humanistic-1993-event-neal-stephenson-portrait",
+        "asset-humanistic-1993-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1993-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -123513,8 +124767,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1995-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1995-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《电子超级高速公路》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Electronic Superhighway: Continental U.S., Alaska, Hawaii"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1995-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1995-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1995-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1995-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《电子超级高速公路》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Electronic Superhighway: Continental U.S., Alaska, Hawaii"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1995-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1995-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1995-event-nam-june-paik-portrait"
+        "asset-humanistic-1995-event-nam-june-paik-portrait",
+        "asset-humanistic-1995-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1995-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -123810,8 +125102,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1995-hard-problem-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1995-hard-problem-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "意识的“困难问题” 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The Hard Problem of Consciousness"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1995-hard-problem-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1995-hard-problem-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1995-hard-problem-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1995-hard-problem-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "意识的“困难问题” 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The Hard Problem of Consciousness"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1995-hard-problem-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1995-hard-problem-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1995-hard-problem-verified-image"
+        "asset-humanistic-1995-hard-problem-verified-image",
+        "asset-humanistic-1995-hard-problem-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1995-hard-problem-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -124123,8 +125453,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1998-extended-mind-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1998-extended-mind-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《拓展心智论》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The Extended Mind"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1998-extended-mind-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1998-extended-mind-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1998-extended-mind-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1998-extended-mind-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《拓展心智论》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The Extended Mind"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1998-extended-mind-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1998-extended-mind-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-1998-extended-mind-verified-image"
+        "asset-humanistic-1998-extended-mind-verified-image",
+        "asset-humanistic-1998-extended-mind-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1998-extended-mind-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -124530,11 +125898,49 @@ const milestones = [
           "figureIds": []
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-1999-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1999-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《黑客帝国》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The Matrix"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1999-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1999-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-1999-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1999-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《黑客帝国》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The Matrix"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-1999-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-1999-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-humanistic-1999-event-wachowskis-portrait",
         "asset-humanistic-1999-event-tmdb-poster",
         "asset-humanistic-1999-event-tmdb-scene-1",
-        "asset-humanistic-1999-event-tmdb-scene-2"
+        "asset-humanistic-1999-event-tmdb-scene-2",
+        "asset-humanistic-1999-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-1999-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -125101,12 +126507,50 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-2001-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2001-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《人工智能》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for A.I. Artificial Intelligence"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2001-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2001-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-2001-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2001-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《人工智能》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for A.I. Artificial Intelligence"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2001-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2001-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-humanistic-2001-event-steven-spielberg-portrait",
         "asset-humanistic-2001-event-tmdb-poster",
         "asset-humanistic-2001-event-tmdb-scene-1",
         "asset-humanistic-2001-event-tmdb-scene-2",
-        "asset-humanistic-2001-event-ai-film-logo"
+        "asset-humanistic-2001-event-ai-film-logo",
+        "asset-humanistic-2001-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-2001-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -125578,8 +127022,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-2003-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2003-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《你生活在计算机模拟中吗？》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Are You Living in a Computer Simulation?"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2003-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2003-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-2003-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2003-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《你生活在计算机模拟中吗？》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Are You Living in a Computer Simulation?"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2003-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2003-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-2003-event-nick-bostrom-portrait"
+        "asset-humanistic-2003-event-nick-bostrom-portrait",
+        "asset-humanistic-2003-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-2003-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -126022,12 +127504,50 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-2008-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2008-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《机器人总动员》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for WALL-E"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2008-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2008-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-2008-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2008-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《机器人总动员》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for WALL-E"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2008-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2008-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-humanistic-2008-event-andrew-stanton-portrait",
         "asset-humanistic-2008-event-tmdb-poster",
         "asset-humanistic-2008-event-tmdb-scene-1",
         "asset-humanistic-2008-event-tmdb-scene-2",
-        "asset-humanistic-2008-event-wall-e-pixar-reference"
+        "asset-humanistic-2008-event-wall-e-pixar-reference",
+        "asset-humanistic-2008-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-2008-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -126499,8 +128019,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-2010-teamlab-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2010-teamlab-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "teamLab数字艺术 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for teamLab Digital Art"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2010-teamlab-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2010-teamlab-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-2010-teamlab-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2010-teamlab-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "teamLab数字艺术 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for teamLab Digital Art"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2010-teamlab-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2010-teamlab-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-2010-teamlab-teamlab-borderless"
+        "asset-humanistic-2010-teamlab-teamlab-borderless",
+        "asset-humanistic-2010-teamlab-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-2010-teamlab-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -126906,11 +128464,49 @@ const milestones = [
           "figureIds": []
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-2012-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2012-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《普罗米修斯》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Prometheus"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2012-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2012-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-2012-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2012-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《普罗米修斯》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Prometheus"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2012-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2012-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-humanistic-2012-event-ridley-scott-portrait",
         "asset-humanistic-2012-event-tmdb-poster",
         "asset-humanistic-2012-event-tmdb-scene-1",
-        "asset-humanistic-2012-event-tmdb-scene-2"
+        "asset-humanistic-2012-event-tmdb-scene-2",
+        "asset-humanistic-2012-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-2012-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -127512,13 +129108,51 @@ const milestones = [
           "figureIds": []
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-2013-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2013-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《她》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Her"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2013-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2013-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-2013-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2013-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《她》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Her"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2013-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2013-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-humanistic-2013-event-spike-jonze-portrait",
         "asset-humanistic-2013-event-her-premiere-nyff-2013",
         "asset-humanistic-2013-event-tmdb-poster",
         "asset-humanistic-2013-event-tmdb-scene-1",
         "asset-humanistic-2013-event-tmdb-scene-2",
-        "asset-humanistic-2013-event-her-logo"
+        "asset-humanistic-2013-event-her-logo",
+        "asset-humanistic-2013-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-2013-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -128094,8 +129728,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-2014-superintelligence-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2014-superintelligence-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《超级智能：路径、危险与策略》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Superintelligence: Paths, Dangers, Strategies"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2014-superintelligence-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2014-superintelligence-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-2014-superintelligence-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2014-superintelligence-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《超级智能：路径、危险与策略》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Superintelligence: Paths, Dangers, Strategies"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2014-superintelligence-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2014-superintelligence-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-2014-superintelligence-verified-image"
+        "asset-humanistic-2014-superintelligence-verified-image",
+        "asset-humanistic-2014-superintelligence-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-2014-superintelligence-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -128407,8 +130079,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-2025-ai-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2025-ai-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "AI对齐问题 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for The AI Alignment Problem"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2025-ai-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2025-ai-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-2025-ai-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2025-ai-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "AI对齐问题 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for The AI Alignment Problem"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2025-ai-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2025-ai-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-2025-ai-stuart-russell-portrait"
+        "asset-humanistic-2025-ai-stuart-russell-portrait",
+        "asset-humanistic-2025-ai-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-2025-ai-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -128741,9 +130451,47 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-2021-event-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2021-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《克拉拉与太阳》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Klara and the Sun"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2021-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2021-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-2021-event-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2021-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《克拉拉与太阳》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Klara and the Sun"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2021-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2021-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-humanistic-2021-event-kazuo-ishiguro-portrait",
-        "asset-humanistic-2021-event-klara-sun-logo"
+        "asset-humanistic-2021-event-klara-sun-logo",
+        "asset-humanistic-2021-event-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-2021-event-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -129091,8 +130839,46 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-2022-reality-plus-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2022-reality-plus-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+          "title": {
+            "zh": "《现实+：虚拟世界与哲学问题》 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for Reality+: Virtual Worlds and the Problems of Philosophy"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2022-reality-plus-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2022-reality-plus-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-2022-reality-plus-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2022-reality-plus-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "《现实+：虚拟世界与哲学问题》 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for Reality+: Virtual Worlds and the Problems of Philosophy"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2022-reality-plus-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2022-reality-plus-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
-        "asset-humanistic-2022-reality-plus-verified-image"
+        "asset-humanistic-2022-reality-plus-verified-image",
+        "asset-humanistic-2022-reality-plus-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-2022-reality-plus-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {
@@ -129425,9 +131211,47 @@ const milestones = [
           ]
         }
       },
+      "audios": [
+        {
+          "id": "asset-humanistic-2025-iit-ai-audio-zh-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2025-iit-ai-zh-humanistic-iit-zh-volc-v5-2026-09-14.mp3",
+          "title": {
+            "zh": "整合信息理论（IIT）的AI应用 中文 AI 人文科普音频",
+            "en": "Chinese AI humanities narration for IIT and Artificial Consciousness"
+          },
+          "language": "zh",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2025-iit-ai-zh-humanistic-iit-zh-volc-v5-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2025-iit-ai-zh-humanistic-iit-zh-volc-v5-2026-09-14.mp3"
+          }
+        },
+        {
+          "id": "asset-humanistic-2025-iit-ai-audio-en-humanistic-20260914-v1",
+          "url": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2025-iit-ai-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+          "title": {
+            "zh": "整合信息理论（IIT）的AI应用 英文 AI 人文科普音频",
+            "en": "English AI humanities narration for IIT and Artificial Consciousness"
+          },
+          "language": "en",
+          "contentType": "audio/mpeg",
+          "storage": {
+            "provider": "aliyun-oss",
+            "bucket": "[REDACTED_OSS_BUCKET]",
+            "objectKey": "audio/ai-history/releases/humanistic-2025-iit-ai-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+            "profileId": "ai-history-audio-releases",
+            "objectName": "humanistic-2025-iit-ai-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
+          }
+        }
+      ],
       "assetIds": [
         "asset-humanistic-2025-iit-ai-giulio-tononi-nih-portrait",
-        "asset-humanistic-2025-iit-ai-axioms-postulates"
+        "asset-humanistic-2025-iit-ai-axioms-postulates",
+        "asset-humanistic-2025-iit-ai-audio-zh-humanistic-20260914-v1",
+        "asset-humanistic-2025-iit-ai-audio-en-humanistic-20260914-v1"
       ]
     },
     "imageMeta": {

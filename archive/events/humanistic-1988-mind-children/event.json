@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-1988-mind-children-verified-image"
+      "asset-humanistic-1988-mind-children-verified-image",
+      "asset-humanistic-1988-mind-children-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1988-mind-children-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1988-mind-children-record",

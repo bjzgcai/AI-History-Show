@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 5,
+    "eventId": "frankenstein-1818",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "At the 1818 point on this timeline, Frankenstein; or, The Modern Prometheus offers a way to look closely at “A scientist creates artificial life and then con”. Why does it still matter?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "A scientist creates artificial life and then confronts the autonomy and ethical responsibility of his creation. The novel made creation, loss of control, responsibility and the subjectivity of the made being durable humanistic themes. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.",
+            "sourceIds": ["source-frankenstein-1818-primary"],
+            "claimIds": ["claim-frankenstein-1818-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order.",
+            "sourceIds": ["source-frankenstein-1818-primary"],
+            "claimIds": ["claim-frankenstein-1818-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance.",
+            "sourceIds": ["source-frankenstein-1818-primary"],
+            "claimIds": ["claim-frankenstein-1818-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Between The Jaquet-Droz Automata and Frankenstein; or, The Modern Prometheus we hear a historical echo: every discussion of “Frankenstein; or, The Modern Prometheus” redraws the boundary of the human.",
+            "sourceIds": ["source-frankenstein-1818-primary"],
+            "claimIds": ["claim-frankenstein-1818-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

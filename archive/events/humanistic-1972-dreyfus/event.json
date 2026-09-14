@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-1972-dreyfus-verified-image"
+      "asset-humanistic-1972-dreyfus-verified-image",
+      "asset-humanistic-1972-dreyfus-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1972-dreyfus-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1972-dreyfus-record",

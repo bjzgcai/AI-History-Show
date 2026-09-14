@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 41,
+    "eventId": "humanistic-1995-hard-problem",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1995年，意识的“困难问题”进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "大卫·查尔默斯区分解释大脑信息处理机制与解释主观体验之间的差异，推动了意识哲学与人工意识讨论。",
+            "sourceIds": ["source-humanistic-1995-hard-problem-record"],
+            "claimIds": ["claim-humanistic-1995-hard-problem-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+            "sourceIds": ["source-humanistic-1995-hard-problem-record"],
+            "claimIds": ["claim-humanistic-1995-hard-problem-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+            "sourceIds": ["source-humanistic-1995-hard-problem-record"],
+            "claimIds": ["claim-humanistic-1995-hard-problem-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看意识的“困难问题”，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-humanistic-1995-hard-problem-record"],
+            "claimIds": ["claim-humanistic-1995-hard-problem-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

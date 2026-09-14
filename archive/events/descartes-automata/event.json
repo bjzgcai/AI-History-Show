@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-descartes-automata-descartes-portrait"
+      "asset-descartes-automata-descartes-portrait",
+      "asset-descartes-automata-audio-zh-humanistic-20260914-v1",
+      "asset-descartes-automata-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-descartes-automata-primary",

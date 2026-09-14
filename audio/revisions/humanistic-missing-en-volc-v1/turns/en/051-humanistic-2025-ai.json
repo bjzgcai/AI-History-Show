@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 51,
+    "eventId": "humanistic-2025-ai",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "At the 2016—至今 point on this timeline, The AI Alignment Problem offers a way to look closely at “Alignment is not a single event that suddenly ap”. Why does it still matter?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Alignment is not a single event that suddenly appeared in 2025; it developed from machine ethics, the control problem, safe reinforcement learning and discussions of advanced-AI risk. This entry uses 2025 to mark intensified concern about reliability, controllability and social value conflict after large-scale deployment of generative AI.",
+            "sourceIds": ["source-humanistic-2025-ai-record"],
+            "claimIds": ["claim-humanistic-2025-ai-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "Starting from “Alignment requires more than fewer incorrect ans”, how should we explain the core mechanism or judgment in The AI Alignment Problem?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Alignment requires more than fewer incorrect answers; objectives, training feedback and deployment constraints must generalize across diverse real-world contexts. Difficulties include disagreement in human values, exploitable proxy metrics, out-of-distribution situations and supervisors who cannot fully evaluate highly capable systems.",
+            "sourceIds": ["source-humanistic-2025-ai-record"],
+            "claimIds": ["claim-humanistic-2025-ai-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "AI-safety experts generally treat alignment as a long-term problem connecting technical reliability, ethics and governance, not a feature solved by one model update. Its influence now spans red teaming, interpretability, human feedback, system evaluation and institutional accountability, while priorities and governance approaches remain openly contested.",
+            "sourceIds": ["source-humanistic-2025-ai-record"],
+            "claimIds": ["claim-humanistic-2025-ai-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "If we remember one thing about The AI Alignment Problem, it is how “AI-safety experts generally treat alignment as a” entered the humanistic view of artificial intelligence.",
+            "sourceIds": ["source-humanistic-2025-ai-record"],
+            "claimIds": ["claim-humanistic-2025-ai-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

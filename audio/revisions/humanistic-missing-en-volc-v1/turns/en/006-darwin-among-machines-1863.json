@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 6,
+    "eventId": "darwin-among-machines-1863",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Seen through “Butler imagined machines developing autonomy thr”, Darwin among the Machines is more than a work or concept from 1863; it is a question about artificial intelligence.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Butler imagined machines developing autonomy through selection and reproduction, offering an early systematic cultural vision of machine evolution and possible replacement of humanity. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.",
+            "sourceIds": ["source-darwin-among-machines-1863-primary"],
+            "claimIds": ["claim-darwin-among-machines-1863-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "Before we draw a conclusion, how does Darwin among the Machines make “Darwin among the Machines” perceptible?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order.",
+            "sourceIds": ["source-darwin-among-machines-1863-primary"],
+            "claimIds": ["claim-darwin-among-machines-1863-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea cross its original era? The answer may begin with how “Darwin among the Machines” changed afterward.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance.",
+            "sourceIds": ["source-darwin-among-machines-1863-primary"],
+            "claimIds": ["claim-darwin-among-machines-1863-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "Starting from Darwin among the Machines, how should the next generation of AI handle the tension contained in “Darwin among the Machines”?",
+            "sourceIds": ["source-darwin-among-machines-1863-primary"],
+            "claimIds": ["claim-darwin-among-machines-1863-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

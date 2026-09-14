@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 44,
+    "eventId": "humanistic-2001-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Seen through “Released in 2001, the film derives from Brian Al”, A.I. Artificial Intelligence is more than a work or concept from 2001; it is a question about artificial intelligence.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Released in 2001, the film derives from Brian Aldiss's short story “Supertoys Last All Summer Long” and a project Stanley Kubrick had developed for years. It depicts a climate-stressed future with population controls where robots provide labor, entertainment and emotional substitution.",
+            "sourceIds": ["source-humanistic-2001-event-record"],
+            "claimIds": ["claim-humanistic-2001-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "Before we draw a conclusion, how does A.I. Artificial Intelligence make “David's love is manufactured as an irreversible ” perceptible?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "David's love is manufactured as an irreversible program, while his adoptive family can abandon him at any time, creating a deeply asymmetric relationship. The film asks not only whether a machine can love but whether creators owe duties to artificial beings that exhibit enduring desire and suffering.",
+            "sourceIds": ["source-humanistic-2001-event-record"],
+            "claimIds": ["claim-humanistic-2001-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Film scholars generally regard A.I. Artificial Intelligence as a complex meeting of Kubrickian distance and Spielbergian emotion. As companion robots and conversational AI spread, its questions about designed attachment, childlike interfaces and user responsibility have gained new relevance.",
+            "sourceIds": ["source-humanistic-2001-event-record"],
+            "claimIds": ["claim-humanistic-2001-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "From The Matrix to A.I. Artificial Intelligence, the question of “Film scholars generally regard A” changes its setting but does not disappear.",
+            "sourceIds": ["source-humanistic-2001-event-record"],
+            "claimIds": ["claim-humanistic-2001-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

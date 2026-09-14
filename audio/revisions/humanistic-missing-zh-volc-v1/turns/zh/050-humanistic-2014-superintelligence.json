@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 50,
+    "eventId": "humanistic-2014-superintelligence",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "2014年，《超级智能：路径、危险与策略》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "尼克·博斯特罗姆系统讨论机器智能超越人类后的发展路径、风险与治理问题，推动 AI 安全与对齐成为公共议题。",
+            "sourceIds": ["source-humanistic-2014-superintelligence-record"],
+            "claimIds": ["claim-humanistic-2014-superintelligence-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+            "sourceIds": ["source-humanistic-2014-superintelligence-record"],
+            "claimIds": ["claim-humanistic-2014-superintelligence-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+            "sourceIds": ["source-humanistic-2014-superintelligence-record"],
+            "claimIds": ["claim-humanistic-2014-superintelligence-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看《超级智能：路径、危险与策略》，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-humanistic-2014-superintelligence-record"],
+            "claimIds": ["claim-humanistic-2014-superintelligence-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

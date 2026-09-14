@@ -103,7 +103,9 @@
     ],
     "assetIds": [
       "asset-frankenstein-1818-mary-shelley-portrait",
-      "asset-frankenstein-1818-mary-shelley-biography-scan"
+      "asset-frankenstein-1818-mary-shelley-biography-scan",
+      "asset-frankenstein-1818-audio-zh-humanistic-20260914-v1",
+      "asset-frankenstein-1818-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-frankenstein-1818-primary",

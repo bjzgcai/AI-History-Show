@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-impressions-theophrastus-1879-george-eliot-portrait"
+      "asset-impressions-theophrastus-1879-george-eliot-portrait",
+      "asset-impressions-theophrastus-1879-audio-zh-humanistic-20260914-v1",
+      "asset-impressions-theophrastus-1879-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-impressions-theophrastus-1879-primary",

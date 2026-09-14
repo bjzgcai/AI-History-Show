@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 37,
+    "eventId": "humanistic-1992-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Snow Crash appeared in 1992 and made “Snow Crash was published in 1992, as personal co” an experience that could be discussed, not just an abstraction.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Snow Crash was published in 1992, as personal computers, commercial networks and virtual reality moved into public view. It depicts a near-future United States where public services fragment and corporations or private organizations control territory and information infrastructure.",
+            "sourceIds": ["source-humanistic-1992-event-record"],
+            "claimIds": ["claim-humanistic-1992-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "The Metaverse lets users enter a shared three-dimensional space as avatars, but access speed, identity and virtual property are stratified by technology and capital. The Snow Crash information acts on both computers and human linguistic cognition, blurring software exploits, cultural transmission and mental control.",
+            "sourceIds": ["source-humanistic-1992-event-record"],
+            "claimIds": ["claim-humanistic-1992-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Digital-culture scholars generally treat Snow Crash as a key novel in shaping the vocabulary of the “Metaverse” and imagined platform worlds. It did not predict a specific product, but it continues to influence the design language of virtual reality, online communities, digital assets and platform governance.",
+            "sourceIds": ["source-humanistic-1992-event-record"],
+            "claimIds": ["claim-humanistic-1992-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "When “Digital-culture scholars generally treat Snow Cr” enters real life, do the boundaries identified by Snow Crash still hold?",
+            "sourceIds": ["source-humanistic-1992-event-record"],
+            "claimIds": ["claim-humanistic-1992-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

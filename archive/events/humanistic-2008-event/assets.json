@@ -153,18 +153,121 @@
     "type": "image",
     "path": "resources/images/humanistic-cycle/humanistic-2008-event/andrew-stanton-portrait.jpg",
     "role": "portrait",
-    "caption": { "zh": "安德鲁·斯坦顿肖像", "en": "Andrew Stanton portrait" },
-    "subcaption": { "zh": "《机器人总动员》导演兼联合编剧。", "en": "Director and co-writer of WALL-E." },
+    "caption": {
+      "zh": "安德鲁·斯坦顿肖像",
+      "en": "Andrew Stanton portrait"
+    },
+    "subcaption": {
+      "zh": "《机器人总动员》导演兼联合编剧。",
+      "en": "Director and co-writer of WALL-E."
+    },
     "sourceId": "source-humanistic-2008-event-andrew-stanton-portrait",
-    "sourceName": { "zh": "Wikimedia Commons 文件页", "en": "Wikimedia Commons file page" },
+    "sourceName": {
+      "zh": "Wikimedia Commons 文件页",
+      "en": "Wikimedia Commons file page"
+    },
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Stanton_at_the_2026_Sundance_Film_Festival_for_In_the_Blink_of_an_Eye_(01)_(cropped).jpg",
     "rights": {
       "status": "licensed",
-      "license": { "zh": "CC BY-SA 4.0", "en": "CC BY-SA 4.0" },
-      "usage": { "zh": "摄影者 Sarah K Joyce；用于导演头像展示。", "en": "Photograph by Sarah K Joyce; used as the director portrait." }
+      "license": {
+        "zh": "CC BY-SA 4.0",
+        "en": "CC BY-SA 4.0"
+      },
+      "usage": {
+        "zh": "摄影者 Sarah K Joyce；用于导演头像展示。",
+        "en": "Photograph by Sarah K Joyce; used as the director portrait."
+      }
     },
-    "usage": ["variant:humanistic-cycle"],
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
     "editable": false,
-    "figureIds": ["humanistic-figure-56"]
+    "figureIds": [
+      "humanistic-figure-56"
+    ]
+  },
+  {
+    "id": "asset-humanistic-2008-event-audio-zh-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《机器人总动员》 中文 AI 人文科普音频",
+      "en": "Chinese AI humanities narration for WALL-E"
+    },
+    "subcaption": {
+      "zh": "中文科普讲述，供中文页面播放。",
+      "en": "Chinese narration used on the Chinese page."
+    },
+    "sourceId": "source-humanistic-2008-event-record",
+    "language": "zh",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2008-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2008-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/humanistic-2008-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-zh-volc-v4-2026-09-14/audio/humanistic-cycle/storyline/zh/46-humanistic-2008-event.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-humanistic-2008-event-audio-en-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《机器人总动员》 英文 AI 人文科普音频",
+      "en": "English AI humanities narration for WALL-E"
+    },
+    "subcaption": {
+      "zh": "英文科普讲述，供英文页面播放。",
+      "en": "English narration used on the English page."
+    },
+    "sourceId": "source-humanistic-2008-event-record",
+    "language": "en",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2008-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2008-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/humanistic-2008-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/46-humanistic-2008-event.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
   }
 ]

@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-darwin-among-machines-1863-samuel-butler-portrait"
+      "asset-darwin-among-machines-1863-samuel-butler-portrait",
+      "asset-darwin-among-machines-1863-audio-zh-humanistic-20260914-v1",
+      "asset-darwin-among-machines-1863-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-darwin-among-machines-1863-primary",

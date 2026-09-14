@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 32,
+    "eventId": "humanistic-1988-mind-children",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "In 1988, Mind Children: The Future of Robot and Human Intelligence brought “Hans Moravec discusses robot intelligence, mind ” into the conversation about artificial intelligence and human imagination. Let us start with that concrete clue.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Hans Moravec discusses robot intelligence, mind uploading and future relations between humans and machine intelligence, influencing visions of machine superintelligence.",
+            "sourceIds": ["source-humanistic-1988-mind-children-record"],
+            "claimIds": ["claim-humanistic-1988-mind-children-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "Let us focus on “Mind Children: The Future of Robot and Human Intelligence”: in Mind Children: The Future of Robot and Human Intelligence, which part of our understanding of machines does it change?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order.",
+            "sourceIds": ["source-humanistic-1988-mind-children-record"],
+            "claimIds": ["claim-humanistic-1988-mind-children-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology.",
+            "sourceIds": ["source-humanistic-1988-mind-children-record"],
+            "claimIds": ["claim-humanistic-1988-mind-children-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "From The Culture Series to Mind Children: The Future of Robot and Human Intelligence, the question of “Mind Children: The Future of Robot and Human Intelligence” changes its setting but does not disappear.",
+            "sourceIds": ["source-humanistic-1988-mind-children-record"],
+            "claimIds": ["claim-humanistic-1988-mind-children-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

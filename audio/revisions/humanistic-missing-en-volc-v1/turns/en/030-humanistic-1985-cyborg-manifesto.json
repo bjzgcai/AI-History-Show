@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 30,
+    "eventId": "humanistic-1985-cyborg-manifesto",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Today we return to 1985 and use A Cyborg Manifesto to follow how “Donna Haraway uses the cyborg to unsettle bounda” entered technical culture and reached later generations.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Donna Haraway uses the cyborg to unsettle boundaries between human and animal, nature and technology, and body and machine, shaping later posthumanist debate.",
+            "sourceIds": ["source-humanistic-1985-cyborg-manifesto-record"],
+            "claimIds": ["claim-humanistic-1985-cyborg-manifesto-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "What does “A Cyborg Manifesto” reveal about A Cyborg Manifesto's disagreement with ideas of its own time?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order.",
+            "sourceIds": ["source-humanistic-1985-cyborg-manifesto-record"],
+            "claimIds": ["claim-humanistic-1985-cyborg-manifesto-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "A Cyborg Manifesto left more than a reputation behind. What did later thinkers actually inherit from “A Cyborg Manifesto”?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology.",
+            "sourceIds": ["source-humanistic-1985-cyborg-manifesto-record"],
+            "claimIds": ["claim-humanistic-1985-cyborg-manifesto-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "Starting from A Cyborg Manifesto, how should the next generation of AI handle the tension contained in “A Cyborg Manifesto”?",
+            "sourceIds": ["source-humanistic-1985-cyborg-manifesto-record"],
+            "claimIds": ["claim-humanistic-1985-cyborg-manifesto-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

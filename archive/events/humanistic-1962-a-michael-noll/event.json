@@ -101,7 +101,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-1962-a-michael-noll-noll-vertical-horizontal"
+      "asset-humanistic-1962-a-michael-noll-noll-vertical-horizontal",
+      "asset-humanistic-1962-a-michael-noll-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1962-a-michael-noll-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1962-a-michael-noll-record",

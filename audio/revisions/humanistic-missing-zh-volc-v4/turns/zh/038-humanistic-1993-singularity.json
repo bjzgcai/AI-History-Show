@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 38,
+    "eventId": "humanistic-1993-singularity",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "今天回到1993年，我们会通过技术奇点即将到来观察“弗诺·文奇把技术奇点描述为人工智能等技术加速后可能出现的临界”如何进入技术文化，并继续影响后来者。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "弗诺·文奇把技术奇点描述为人工智能等技术加速后可能出现的临界点，届时现有社会与知识框架将难以继续预测未来。",
+            "sourceIds": ["source-humanistic-1993-singularity-record"],
+            "claimIds": ["claim-humanistic-1993-singularity-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "把注意力放在“技术奇点即将到来”上，能否看出技术奇点即将到来与同时代观念的分歧？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+            "sourceIds": ["source-humanistic-1993-singularity-record"],
+            "claimIds": ["claim-humanistic-1993-singularity-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "如果把时间拉长，技术奇点即将到来关于“技术奇点即将到来”的提醒，哪些仍然有效？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+            "sourceIds": ["source-humanistic-1993-singularity-record"],
+            "claimIds": ["claim-humanistic-1993-singularity-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "B",
+            "text": "下一站是《钻石时代》，我们会继续追踪“技术奇点即将到来”如何进入新的历史场景。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

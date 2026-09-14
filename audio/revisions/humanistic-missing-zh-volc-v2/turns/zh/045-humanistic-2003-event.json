@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v2-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 45,
+    "eventId": "humanistic-2003-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "2003年，《你生活在计算机模拟中吗？》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "论文发表于 2003 年的《哲学季刊》，把长期存在于怀疑论与科幻中的模拟世界设想改写为人口统计和概率推理。论证假定某些后人类文明可能拥有运行大量祖先模拟的计算资源。",
+            "sourceIds": ["source-humanistic-2003-event-record"],
+            "claimIds": ["claim-humanistic-2003-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个有吸引力的方向。真正让它成立的核心思想是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "博斯特罗姆没有直接宣称“我们必定生活在模拟中”，而是提出三难：文明几乎都在达到后人类阶段前灭绝、后人类文明几乎都不运行大量祖先模拟，或模拟中的观察者会远多于原始现实中的观察者。论证的力量取决于这些前提及如何定义观察者和概率。",
+            "sourceIds": ["source-humanistic-2003-event-record"],
+            "claimIds": ["claim-humanistic-2003-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一次作品、实验或争论里？后来人们真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "哲学家通常把模拟论证视为一项严肃但高度依赖前提的思想实验，而不是可直接验证的科学结论。它广泛影响电影、游戏和技术文化，也促使研究者更清楚地区分逻辑可能性、概率判断与经验证据。",
+            "sourceIds": ["source-humanistic-2003-event-record"],
+            "claimIds": ["claim-humanistic-2003-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "当今天的人工智能越来越深入生活时，《你生活在计算机模拟中吗？》留下的哪些问题仍然没有答案？我们又该如何重新检验它关于机器与人的判断？",
+            "sourceIds": ["source-humanistic-2003-event-record"],
+            "claimIds": ["claim-humanistic-2003-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

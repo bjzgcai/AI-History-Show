@@ -104,7 +104,9 @@
     "assetIds": [
       "asset-humanistic-1991-ghost-shell-verified-image",
       "asset-humanistic-1991-ghost-shell-tmdb-poster",
-      "asset-humanistic-1991-ghost-shell-tmdb-scene-2"
+      "asset-humanistic-1991-ghost-shell-tmdb-scene-2",
+      "asset-humanistic-1991-ghost-shell-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1991-ghost-shell-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1991-ghost-shell-record",

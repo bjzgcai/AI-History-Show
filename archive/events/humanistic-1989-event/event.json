@@ -103,7 +103,9 @@
     ],
     "assetIds": [
       "asset-humanistic-1989-event-roger-zelazny-portrait",
-      "asset-humanistic-1989-event-lord-of-light-first-edition-cover"
+      "asset-humanistic-1989-event-lord-of-light-first-edition-cover",
+      "asset-humanistic-1989-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1989-event-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1989-event-record",

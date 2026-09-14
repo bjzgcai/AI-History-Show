@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-1998-event-iain-banks-portrait"
+      "asset-humanistic-1998-event-iain-banks-portrait",
+      "asset-humanistic-1998-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1998-event-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1998-event-record",

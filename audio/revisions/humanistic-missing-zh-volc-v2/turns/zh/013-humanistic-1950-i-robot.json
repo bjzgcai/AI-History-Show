@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v2-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 13,
+    "eventId": "humanistic-1950-i-robot",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1950年，《我，机器人》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "阿西莫夫的九篇互相关联短篇追踪机器人从工具到具备道德判断力的过程，持续讨论服从、责任与人与机器的关系。",
+            "sourceIds": ["source-humanistic-1950-i-robot-record"],
+            "claimIds": ["claim-humanistic-1950-i-robot-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个有吸引力的方向。真正让它成立的核心思想是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+            "sourceIds": ["source-humanistic-1950-i-robot-record"],
+            "claimIds": ["claim-humanistic-1950-i-robot-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+            "sourceIds": ["source-humanistic-1950-i-robot-record"],
+            "claimIds": ["claim-humanistic-1950-i-robot-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看阿西莫夫在《转圈圈》中提出机器人三定律，再看《我，机器人》，我们能听见同一个关于机器与人的问题跨越年代后的历史回响。",
+            "sourceIds": ["source-humanistic-1950-i-robot-record"],
+            "claimIds": ["claim-humanistic-1950-i-robot-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

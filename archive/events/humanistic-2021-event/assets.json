@@ -42,18 +42,121 @@
     "type": "image",
     "path": "resources/images/humanistic-cycle/humanistic-2021-event/kazuo-ishiguro-portrait.jpg",
     "role": "portrait",
-    "caption": { "zh": "石黑一雄肖像", "en": "Kazuo Ishiguro portrait" },
-    "subcaption": { "zh": "《克拉拉与太阳》作者。", "en": "Author of Klara and the Sun." },
+    "caption": {
+      "zh": "石黑一雄肖像",
+      "en": "Kazuo Ishiguro portrait"
+    },
+    "subcaption": {
+      "zh": "《克拉拉与太阳》作者。",
+      "en": "Author of Klara and the Sun."
+    },
     "sourceId": "source-humanistic-2021-event-kazuo-ishiguro-portrait",
-    "sourceName": { "zh": "Wikimedia Commons 文件页", "en": "Wikimedia Commons file page" },
+    "sourceName": {
+      "zh": "Wikimedia Commons 文件页",
+      "en": "Wikimedia Commons file page"
+    },
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:MKr377543_Kazuo_Ishiguro_(A_Pale_View_of_Hills,_Cannes_2025).jpg",
     "rights": {
       "status": "licensed",
-      "license": { "zh": "CC BY-SA 4.0", "en": "CC BY-SA 4.0" },
-      "usage": { "zh": "摄影者 Martin Kraft；用于作者头像展示。", "en": "Photograph by Martin Kraft; used as the author portrait." }
+      "license": {
+        "zh": "CC BY-SA 4.0",
+        "en": "CC BY-SA 4.0"
+      },
+      "usage": {
+        "zh": "摄影者 Martin Kraft；用于作者头像展示。",
+        "en": "Photograph by Martin Kraft; used as the author portrait."
+      }
     },
-    "usage": ["variant:humanistic-cycle"],
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
     "editable": false,
-    "figureIds": ["humanistic-figure-63"]
+    "figureIds": [
+      "humanistic-figure-63"
+    ]
+  },
+  {
+    "id": "asset-humanistic-2021-event-audio-zh-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《克拉拉与太阳》 中文 AI 人文科普音频",
+      "en": "Chinese AI humanities narration for Klara and the Sun"
+    },
+    "subcaption": {
+      "zh": "中文科普讲述，供中文页面播放。",
+      "en": "Chinese narration used on the Chinese page."
+    },
+    "sourceId": "source-humanistic-2021-event-record",
+    "language": "zh",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2021-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2021-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/humanistic-2021-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-zh-volc-v4-2026-09-14/audio/humanistic-cycle/storyline/zh/52-humanistic-2021-event.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-humanistic-2021-event-audio-en-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《克拉拉与太阳》 英文 AI 人文科普音频",
+      "en": "English AI humanities narration for Klara and the Sun"
+    },
+    "subcaption": {
+      "zh": "英文科普讲述，供英文页面播放。",
+      "en": "English narration used on the English page."
+    },
+    "sourceId": "source-humanistic-2021-event-record",
+    "language": "en",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2021-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2021-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/humanistic-2021-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/52-humanistic-2021-event.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
   }
 ]

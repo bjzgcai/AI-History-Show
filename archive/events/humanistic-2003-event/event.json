@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-2003-event-nick-bostrom-portrait"
+      "asset-humanistic-2003-event-nick-bostrom-portrait",
+      "asset-humanistic-2003-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-2003-event-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-2003-event-record",

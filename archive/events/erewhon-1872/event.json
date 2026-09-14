@@ -101,7 +101,9 @@
       }
     ],
     "assetIds": [
-      "asset-erewhon-1872-erewhon-first-edition"
+      "asset-erewhon-1872-erewhon-first-edition",
+      "asset-erewhon-1872-audio-zh-humanistic-20260914-v1",
+      "asset-erewhon-1872-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-erewhon-1872-primary",

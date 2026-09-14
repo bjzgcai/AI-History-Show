@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 37,
+    "eventId": "humanistic-1992-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "《雪崩》出现在1992年，把“《雪崩》出版于 1992 年，当时个人电脑、商业网络和虚拟现”从抽象想象变成了可以讨论的经验。它留下了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《雪崩》出版于 1992 年，当时个人电脑、商业网络和虚拟现实正从研究概念走向公众视野。小说构造一个公共服务碎片化、企业与私人组织掌握领土和信息基础设施的近未来美国。",
+            "sourceIds": ["source-humanistic-1992-event-record"],
+            "claimIds": ["claim-humanistic-1992-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "“元宇宙”让用户以化身进入共享三维空间，但访问速度、身份表现和数字地产都受到技术与资本分层。名为“雪崩”的信息则同时作用于计算机和人的语言认知，模糊了软件漏洞、文化传播和心智操控的边界。",
+            "sourceIds": ["source-humanistic-1992-event-record"],
+            "claimIds": ["claim-humanistic-1992-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "数字文化研究者通常把《雪崩》视为塑造“元宇宙”词汇和平台世界想象的关键小说。它没有准确预言某一款产品，却持续影响虚拟现实、在线社区、数字资产和平台治理的设计语言。",
+            "sourceIds": ["source-humanistic-1992-event-record"],
+            "claimIds": ["claim-humanistic-1992-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "当“数字文化研究者通常把《雪崩》视为塑造“元宇宙”词汇和平台世界”进入真实生活，《雪崩》提醒我们的边界是否仍然成立？",
+            "sourceIds": ["source-humanistic-1992-event-record"],
+            "claimIds": ["claim-humanistic-1992-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 35,
+    "eventId": "humanistic-1991-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "在1991年这个节点，《意识的解释》提供了一种观察“《意识的解释》出版于 1991 年，汇集哲学、心理学、神经科”的方式。它为什么值得今天再听一遍？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "《意识的解释》出版于 1991 年，汇集哲学、心理学、神经科学和计算模型来挑战传统的“心灵剧场”。丹尼特试图在不诉诸独立灵魂或神秘内在屏幕的情况下说明意识现象。",
+            "sourceIds": ["source-humanistic-1991-event-record"],
+            "claimIds": ["claim-humanistic-1991-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "从““多重草稿”模型认为，大脑中没有一个地点把所有信息汇总后展示”这个切口进入，《意识的解释》的核心机制或判断应该怎样说明？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "“多重草稿”模型认为，大脑中没有一个地点把所有信息汇总后展示给内在观众；不同处理过程会竞争、修订并在行为和叙述中留下影响。自我也更像持续建构的叙事重心，而不是控制全部认知的固定实体。",
+            "sourceIds": ["source-humanistic-1991-event-record"],
+            "claimIds": ["claim-humanistic-1991-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "如果只保留一个长期问题，那会是“意识研究者通常把本书视为自然主义意识理论中影响深远、争议持续”怎样改变了我们谈论人工智能的方式？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "意识研究者通常把本书视为自然主义意识理论中影响深远、争议持续的著作。它为 AI 提供的不是“机器已经有意识”的结论，而是一种研究路径：先解释可观察的认知功能，再谨慎处理主观体验的剩余问题。",
+            "sourceIds": ["source-humanistic-1991-event-record"],
+            "claimIds": ["claim-humanistic-1991-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "因此，《意识的解释》的意义不止在当时的表达，也在于它为“意识研究者通常把本书视为自然主义意识理论中影响深远、争议持续”留下了持续追问的入口。",
+            "sourceIds": ["source-humanistic-1991-event-record"],
+            "claimIds": ["claim-humanistic-1991-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

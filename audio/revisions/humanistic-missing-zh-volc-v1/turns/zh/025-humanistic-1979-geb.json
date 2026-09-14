@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 25,
+    "eventId": "humanistic-1979-geb",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1979年，《哥德尔、艾舍尔、巴赫》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "道格拉斯·霍夫施塔特以哥德尔定理、艾舍尔图像和巴赫音乐为线索，讨论递归、自指、形式系统与心智如何从符号结构中涌现。",
+            "sourceIds": ["source-humanistic-1979-geb-record"],
+            "claimIds": ["claim-humanistic-1979-geb-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "这本书把“奇异环”作为理解心智的核心隐喻：系统在不同层级之间回到自身，从而产生自我指称与意义。它让 AI 人文线索从机器人或银幕形象转向符号、意识和解释之间更抽象的关系。",
+            "sourceIds": ["source-humanistic-1979-geb-record"],
+            "claimIds": ["claim-humanistic-1979-geb-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把《哥德尔、艾舍尔、巴赫》视为连接计算、认知科学、音乐、视觉艺术与哲学的经典跨学科作品。它长期影响关于机器智能、创造性、自我模型和符号系统能否产生意义的公共讨论。",
+            "sourceIds": ["source-humanistic-1979-geb-record"],
+            "claimIds": ["claim-humanistic-1979-geb-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看《哥德尔、艾舍尔、巴赫》，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-humanistic-1979-geb-record"],
+            "claimIds": ["claim-humanistic-1979-geb-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}
