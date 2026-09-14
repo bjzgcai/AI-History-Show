@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-ancient-hephaestus-automata-core",
+    "importance": "core",
+    "text": {
+      "zh": "《伊利亚特》描写火神赫菲斯托斯制造能够自行行动的金制侍女和自动三足鼎，展现古希腊文学对非生命之物拥有行动能力的早期想象。",
+      "en": "The Iliad describes Hephaestus making self-moving golden attendants and tripods, an early Greek literary imagination of non-living things with agency."
+    },
+    "sourceIds": [
+      "source-ancient-hephaestus-automata-record"
+    ],
+    "status": "needs-review"
+  }
+]

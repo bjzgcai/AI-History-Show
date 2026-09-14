@@ -1,0 +1,74 @@
+[
+  {
+    "id": "asset-metropolis-1927-metropolis-poster",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/metropolis-1927/metropolis-poster.jpg",
+    "role": "film-poster",
+    "caption": {
+      "zh": "《大都会》1927 年电影海报",
+      "en": "Metropolis 1927 poster"
+    },
+    "subcaption": {
+      "zh": "弗里茨·朗执导电影的发行宣传资料。",
+      "en": "Release publicity material for Fritz Lang's film."
+    },
+    "sourceId": "source-metropolis-1927-metropolis-poster",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boris_Bilinski_(1900-1948)_Plakat_f%C3%BCr_den_Film_Metropolis_(1).jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "Public domain",
+        "en": "Public domain"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-metropolis-1927-metropolis-set-photo",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/metropolis-1927/metropolis-set-photo.jpg",
+    "role": "film-production",
+    "caption": {
+      "zh": "《大都会》片场资料",
+      "en": "Metropolis set photograph"
+    },
+    "subcaption": {
+      "zh": "电影制作过程与场景设计的历史资料。",
+      "en": "Historical reference for the film's production and set design."
+    },
+    "sourceId": "source-metropolis-1927-metropolis-set-photo",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Horst_von_Harbou_-_Metropolis_set_photograph_05.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "Public domain",
+        "en": "Public domain"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  }
+]

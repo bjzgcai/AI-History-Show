@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 32,
+    "eventId": "humanistic-1988-mind-children",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1988年，《心智之子》把“汉斯·莫拉维克讨论机器人智能、意识上传以及人类与机器智能的未”带入了人工智能与人文想象的讨论。先从这个具体线索看起。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "汉斯·莫拉维克讨论机器人智能、意识上传以及人类与机器智能的未来关系，是机器超智能想象的重要文本。",
+            "sourceIds": ["source-humanistic-1988-mind-children-record"],
+            "claimIds": ["claim-humanistic-1988-mind-children-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "先抓住“《心智之子》”：在《心智之子》里，它究竟改变了我们理解机器的哪一个角度？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+            "sourceIds": ["source-humanistic-1988-mind-children-record"],
+            "claimIds": ["claim-humanistic-1988-mind-children-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+            "sourceIds": ["source-humanistic-1988-mind-children-record"],
+            "claimIds": ["claim-humanistic-1988-mind-children-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "从《文明》系列（The Culture）走到《心智之子》，关于“《心智之子》”的疑问换了语境，却没有消失。",
+            "sourceIds": ["source-humanistic-1988-mind-children-record"],
+            "claimIds": ["claim-humanistic-1988-mind-children-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

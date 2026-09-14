@@ -142,9 +142,15 @@ function validateBundle() {
         );
     }
 
+    delete require.cache[require.resolve(path.join(ROOT, 'milestones-data.js'))];
     delete require.cache[require.resolve(path.join(OUTPUT, 'milestones-data.js'))];
+    const sourceRuntime = require(path.join(ROOT, 'milestones-data.js'));
     const runtime = require(path.join(OUTPUT, 'milestones-data.js'));
-    assert.equal(runtime.milestones.length, 194);
+    assert.deepEqual(
+        runtime.milestones.map((milestone) => milestone.id),
+        sourceRuntime.milestones.map((milestone) => milestone.id),
+        'The static bundle must preserve every generated milestone in source order'
+    );
     assert.equal(
         runtime.milestones.filter(
             (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100'

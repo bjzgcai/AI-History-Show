@@ -1,0 +1,174 @@
+{
+  "id": "humanistic-1984-event",
+  "year": 1983,
+  "date": "1983（短篇）；1985（长篇）",
+  "title": {
+    "zh": "《血音乐》",
+    "en": "Blood Music"
+  },
+  "description": {
+    "zh": "格雷格·贝尔通过由人体细胞改造而成的“诺细胞”，设想智能在微观生物尺度扩张并重组人类与现实。",
+    "en": "Greg Bear imagines intelligent “noocytes” engineered from human cells, allowing intelligence to expand at a microscopic biological scale and reorganize humanity and reality."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国科幻出版语境",
+      "en": "United States science-fiction publishing context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-35",
+      "avatarAssetId": "asset-humanistic-1984-event-greg-bear-portrait",
+      "role": {
+        "zh": "《血音乐》作者",
+        "en": "Author of Blood Music"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "已检索《血音乐》与格雷格·贝尔相关图片；目前未找到许可清晰且能确认对应关系的作者肖像或作品资料图。",
+      "en": "Blood Music and Greg Bear images were searched; no clearly licensed portrait or work reference with a confirmed match has been found yet."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《血音乐》",
+      "en": "Blood Music"
+    },
+    "displaySummary": {
+      "zh": "生物智能、群体意识与人类形态的瓦解",
+      "en": "Biological intelligence, collective consciousness and the dissolution of the human form"
+    },
+    "displayDescription": {
+      "zh": "<p>格雷格·贝尔通过由人体细胞改造而成的“诺细胞”，设想智能在微观生物尺度扩张并重组人类与现实。 科学家把自己的淋巴细胞改造成能够学习和交流的微型智能体，随后这些生命进入人体并形成群体意识。小说把 AI 的“人工性”从硅芯片转移到生物材料，追问智能扩散后个人身体、隐私和自我还能否保持边界。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 《血音乐》先以 1983 年短篇出现，随后扩写为 1985 年小说。作品诞生于基因工程快速发展、个人计算机兴起和纳米技术想象扩散的时期。</p><p> 科幻研究者通常把《血音乐》视为生物朋克、纳米智能和后人类叙事的重要先声。它的长期价值在于说明，失控智能不一定表现为独立机器人，也可能以共生、感染和群体认知的方式改变人类。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Greg Bear imagines intelligent “noocytes” engineered from human cells, allowing intelligence to expand at a microscopic biological scale and reorganize humanity and reality. A scientist turns his lymphocytes into microscopic agents capable of learning and communication; they enter the body and develop collective intelligence. The novel moves artificiality from silicon to living matter and asks whether bodily, private and personal boundaries can survive intelligence that spreads.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. Blood Music first appeared as a 1983 short story and was expanded into a 1985 novel. It emerged amid rapid advances in genetic engineering, personal computing and speculation about nanotechnology.</p><p> Science-fiction scholars generally view Blood Music as an important precursor to biopunk, nanointelligence and posthuman narratives. Its lasting value lies in showing that runaway intelligence need not appear as a separate robot; it may transform humanity through symbiosis, infection and collective cognition. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "Open Road Media 图书页面",
+          "en": "Open Road Media book page"
+        },
+        "title": {
+          "zh": "《血音乐》",
+          "en": "Blood Music"
+        },
+        "description": {
+          "zh": "生物智能、群体意识与人类形态的瓦解",
+          "en": "Biological intelligence, collective consciousness and the dissolution of the human form"
+        },
+        "url": "https://openroadmedia.com/ebook/blood-music/9781497607200",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1984-event-greg-bear-portrait",
+      "asset-humanistic-1984-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1984-event-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-1984-event-record",
+      "source-humanistic-1984-event-greg-bear-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-1984-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《血音乐》先以 1983 年短篇出现，随后扩写为 1985 年小说。作品诞生于基因工程快速发展、个人计算机兴起和纳米技术想象扩散的时期。",
+          "en": "Blood Music first appeared as a 1983 short story and was expanded into a 1985 novel. It emerged amid rapid advances in genetic engineering, personal computing and speculation about nanotechnology."
+        },
+        "sourceIds": [
+          "source-humanistic-1984-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "科学家把自己的淋巴细胞改造成能够学习和交流的微型智能体，随后这些生命进入人体并形成群体意识。小说把 AI 的“人工性”从硅芯片转移到生物材料，追问智能扩散后个人身体、隐私和自我还能否保持边界。",
+          "en": "A scientist turns his lymphocytes into microscopic agents capable of learning and communication; they enter the body and develop collective intelligence. The novel moves artificiality from silicon to living matter and asks whether bodily, private and personal boundaries can survive intelligence that spreads."
+        },
+        "sourceIds": [
+          "source-humanistic-1984-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "科幻研究者通常把《血音乐》视为生物朋克、纳米智能和后人类叙事的重要先声。它的长期价值在于说明，失控智能不一定表现为独立机器人，也可能以共生、感染和群体认知的方式改变人类。",
+          "en": "Science-fiction scholars generally view Blood Music as an important precursor to biopunk, nanointelligence and posthuman narratives. Its lasting value lies in showing that runaway intelligence need not appear as a separate robot; it may transform humanity through symbiosis, infection and collective cognition."
+        },
+        "sourceIds": [
+          "source-humanistic-1984-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

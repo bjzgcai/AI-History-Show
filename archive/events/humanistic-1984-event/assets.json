@@ -1,0 +1,124 @@
+[
+  {
+    "id": "asset-humanistic-1984-event-greg-bear-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1984-event/greg-bear-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "格雷格·贝尔肖像",
+      "en": "Greg Bear portrait"
+    },
+    "subcaption": {
+      "zh": "《血音乐》作者。",
+      "en": "Author of Blood Music."
+    },
+    "sourceId": "source-humanistic-1984-event-greg-bear-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greg-bear-by-kyle-cassidy-L1008770.jpg",
+    "rights": {
+      "status": "cc-by-sa-3.0",
+      "license": {
+        "zh": "CC BY-SA 3.0",
+        "en": "CC BY-SA 3.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示，保留摄影者署名并按相同方式共享改编内容。",
+        "en": "Used for display in the AI humanities storyline; retain photographer attribution and share adaptations under the same terms."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-35"
+    ]
+  },
+  {
+    "id": "asset-humanistic-1984-event-audio-zh-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《血音乐》 中文 AI 人文科普音频",
+      "en": "Chinese AI humanities narration for Blood Music"
+    },
+    "subcaption": {
+      "zh": "中文科普讲述，供中文页面播放。",
+      "en": "Chinese narration used on the Chinese page."
+    },
+    "sourceId": "source-humanistic-1984-event-record",
+    "language": "zh",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1984-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1984-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/humanistic-1984-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-zh-volc-v4-2026-09-14/audio/humanistic-cycle/storyline/zh/29-humanistic-1984-event.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-humanistic-1984-event-audio-en-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《血音乐》 英文 AI 人文科普音频",
+      "en": "English AI humanities narration for Blood Music"
+    },
+    "subcaption": {
+      "zh": "英文科普讲述，供英文页面播放。",
+      "en": "English narration used on the English page."
+    },
+    "sourceId": "source-humanistic-1984-event-record",
+    "language": "en",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1984-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1984-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/humanistic-1984-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/29-humanistic-1984-event.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  }
+]

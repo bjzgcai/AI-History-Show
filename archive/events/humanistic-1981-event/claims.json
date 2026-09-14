@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1981-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "描绘虚拟空间中的AI实体、赛博空间与数字身份，预示互联网时代。",
+      "en": "描绘虚拟空间中的AI实体、赛博空间与数字身份，预示互联网时代。"
+    },
+    "sourceIds": [
+      "source-humanistic-1981-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

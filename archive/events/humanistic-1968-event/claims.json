@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1968-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "以记忆、情感与共情追问人与AI的边界，并催生《银翼杀手》。",
+      "en": "以记忆、情感与共情追问人与AI的边界，并催生《银翼杀手》。"
+    },
+    "sourceIds": [
+      "source-humanistic-1968-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

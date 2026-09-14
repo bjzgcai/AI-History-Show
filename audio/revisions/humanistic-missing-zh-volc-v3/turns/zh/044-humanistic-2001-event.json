@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 44,
+    "eventId": "humanistic-2001-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "如果从“影片于 2001 年上映，源自布赖恩·奥尔迪斯短篇《玩具在整”切入，2001年出现的《人工智能》就不只是一个作品或概念，而是一道关于人工智能的提问。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "影片于 2001 年上映，源自布赖恩·奥尔迪斯短篇《玩具在整个夏天长存》，并延续了斯坦利·库布里克多年开发的项目。故事置于气候变化和人口限制下的未来社会，机器人被广泛用于劳动、娱乐与情感替代。",
+            "sourceIds": ["source-humanistic-2001-event-record"],
+            "claimIds": ["claim-humanistic-2001-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "我们先不急着下结论：《人工智能》如何把“大卫的爱被制造为不可撤销的程序，但收养他的家庭可以随时抛弃他”变成可感知的经验？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "大卫的爱被制造为不可撤销的程序，但收养他的家庭可以随时抛弃他，形成极不对称的情感关系。影片没有只问机器能否爱，而是追问创造者是否应对具有持续欲望和痛苦表现的人工存在承担道德义务。",
+            "sourceIds": ["source-humanistic-2001-event-record"],
+            "claimIds": ["claim-humanistic-2001-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "电影研究者通常把《人工智能》视为库布里克式冷峻与斯皮尔伯格式情感叙事交汇的复杂作品。随着陪伴机器人和对话式 AI 普及，它关于依恋设计、儿童形象和用户责任的问题获得了新的现实相关性。",
+            "sourceIds": ["source-humanistic-2001-event-record"],
+            "claimIds": ["claim-humanistic-2001-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "从《黑客帝国》走到《人工智能》，关于“电影研究者通常把《人工智能》视为库布里克式冷峻与斯皮尔伯格式”的疑问换了语境，却没有消失。",
+            "sourceIds": ["source-humanistic-2001-event-record"],
+            "claimIds": ["claim-humanistic-2001-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 54,
+    "eventId": "humanistic-2025-iit-ai",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "2004年至今，整合信息理论（IIT）的AI应用进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "朱利奥·托诺尼自 20 世纪 90 年代末起发展整合信息理论，之后与合作者持续修订其数学与哲学表述；本条以 2025 年作为持续讨论节点，而非单一新论文。随着大型神经网络行为能力提高，研究者更迫切地区分智能表现与意识体验。",
+            "sourceIds": ["source-humanistic-2025-iit-ai-record"],
+            "claimIds": ["claim-humanistic-2025-iit-ai-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "IIT 认为意识对应系统不可还原的内在因果结构，常以 Φ 等形式量描述整合程度，但完整计算对复杂系统极其困难。按照该理论，一些表现强大的前馈系统可能缺少相应整合结构，因此外在能力不能直接证明其具有意识。",
+            "sourceIds": ["source-humanistic-2025-iit-ai-record"],
+            "claimIds": ["claim-humanistic-2025-iit-ai-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "意识科学研究者通常把 IIT 视为少数试图给出形式化意识理论的主要方案之一，同时其可检验性、计算可行性和形而上承诺仍有强烈争议。它对 AI 的长期价值主要是提供明确的比较框架，而不是一张可以直接给现有模型颁发“意识证书”的量表。",
+            "sourceIds": ["source-humanistic-2025-iit-ai-record"],
+            "claimIds": ["claim-humanistic-2025-iit-ai-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看整合信息理论（IIT）的AI应用，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-humanistic-2025-iit-ai-record"],
+            "claimIds": ["claim-humanistic-2025-iit-ai-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

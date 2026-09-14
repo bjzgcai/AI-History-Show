@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1995-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "以电子屏幕拼出美国地图，预示电子网络连接全球的数字时代。",
+      "en": "以电子屏幕拼出美国地图，预示电子网络连接全球的数字时代。"
+    },
+    "sourceIds": [
+      "source-humanistic-1995-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 41,
+    "eventId": "humanistic-1995-hard-problem",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Following the timeline to 1995, we arrive at The Hard Problem of Consciousness, where “David Chalmers distinguishes explaining informat” becomes a cultural question rather than a technical footnote.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "David Chalmers distinguishes explaining information processing from explaining subjective experience, shaping philosophy of consciousness and debates about artificial consciousness.",
+            "sourceIds": ["source-humanistic-1995-hard-problem-record"],
+            "claimIds": ["claim-humanistic-1995-hard-problem-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "If we reduce The Hard Problem of Consciousness to one concrete question, does the answer begin with “The Hard Problem of Consciousness”?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order.",
+            "sourceIds": ["source-humanistic-1995-hard-problem-record"],
+            "claimIds": ["claim-humanistic-1995-hard-problem-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "When current systems encounter “The Hard Problem of Consciousness” again, what can they inherit from The Hard Problem of Consciousness, and what must they revise?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology.",
+            "sourceIds": ["source-humanistic-1995-hard-problem-record"],
+            "claimIds": ["claim-humanistic-1995-hard-problem-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "“The Hard Problem of Consciousness” still has no simple answer. Which question left by The Hard Problem of Consciousness deserves the closest follow-up?",
+            "sourceIds": ["source-humanistic-1995-hard-problem-record"],
+            "claimIds": ["claim-humanistic-1995-hard-problem-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

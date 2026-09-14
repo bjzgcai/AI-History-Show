@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 51,
+    "eventId": "humanistic-2025-ai",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "在2016年至今这个节点，AI对齐问题提供了一种观察“对齐并非 2025 年突然出现的单一事件，而是从机器伦理、控”的方式。它为什么值得今天再听一遍？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "对齐并非 2025 年突然出现的单一事件，而是从机器伦理、控制问题、强化学习安全和高级 AI 风险讨论中逐渐形成的研究领域。本条以 2025 年标记生成式 AI 大规模部署后，对可靠性、可控性和社会价值冲突的集中关注。",
+            "sourceIds": ["source-humanistic-2025-ai-record"],
+            "claimIds": ["claim-humanistic-2025-ai-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "从“对齐不仅要求模型给出较少错误答案，还要求目标设定、训练反馈和”这个切口进入，AI对齐问题的核心机制或判断应该怎样说明？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "对齐不仅要求模型给出较少错误答案，还要求目标设定、训练反馈和部署约束能覆盖真实世界的多样情境。难点包括人类价值本身不一致、代理指标可能被钻空子、系统会遇到训练外环境，以及监督者可能无法判断高能力系统的全部行为。",
+            "sourceIds": ["source-humanistic-2025-ai-record"],
+            "claimIds": ["claim-humanistic-2025-ai-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "AI 安全专家通常把对齐视为连接技术可靠性、伦理与治理的长期问题，而不是靠一次模型更新即可解决的功能。该领域的影响已经扩展到红队测试、可解释性、人类反馈、系统评估和机构问责，但不同风险优先级与治理方案仍存在公开争论。",
+            "sourceIds": ["source-humanistic-2025-ai-record"],
+            "claimIds": ["claim-humanistic-2025-ai-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "如果只记住AI对齐问题的一点，可以记住它如何让“AI 安全专家通常把对齐视为连接技术可靠性、伦理与治理的长期”进入人工智能的人文视野。",
+            "sourceIds": ["source-humanistic-2025-ai-record"],
+            "claimIds": ["claim-humanistic-2025-ai-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

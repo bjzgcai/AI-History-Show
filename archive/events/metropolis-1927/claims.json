@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-metropolis-1927-core",
+    "importance": "core",
+    "text": {
+      "zh": "影片将机器人玛丽亚置于工业城市、阶级冲突和群众动员的中心，形成现代文化中最早的机器人视觉范式之一。",
+      "en": "The film places the robot Maria at the center of an industrial city, class conflict and mass mobilization, establishing one of modern culture’s earliest visual paradigms for the robot."
+    },
+    "sourceIds": [
+      "source-metropolis-1927-primary"
+    ],
+    "status": "needs-review"
+  }
+]

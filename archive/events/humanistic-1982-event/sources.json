@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1982-event-record",
+    "type": "official-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "华纳兄弟《银翼杀手》官方影片页面",
+      "en": "Warner Bros. official film page for Blade Runner"
+    },
+    "url": "https://www.warnerbros.com/movies/blade-runner",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对作品身份、发行或发表信息。",
+      "en": "Used to verify the work identity, release, or publication information."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-humanistic-1982-event-blade-runner-final-cut",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《银翼杀手：终极剪辑》资料图",
+      "en": "Blade Runner: The Final Cut reference"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Blade_Runner-_The_Final_Cut_(14965371186).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "电影发行资料照片；摄影者 Dick Thomas Johnson，CC BY 2.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Film-release reference photograph; photographed by Dick Thomas Johnson, CC BY 2.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

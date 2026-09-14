@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1972-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "计算机穷举神名并导致世界终结，讨论AI完成神圣任务后人类意义是否终结。",
+      "en": "计算机穷举神名并导致世界终结，讨论AI完成神圣任务后人类意义是否终结。"
+    },
+    "sourceIds": [
+      "source-humanistic-1972-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

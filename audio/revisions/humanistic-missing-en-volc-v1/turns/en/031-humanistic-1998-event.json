@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 31,
+    "eventId": "humanistic-1998-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "The Culture Series, first appearing in 1987, opens a new view of the humanities of AI: what does “The Culture series began with Consider Phlebas i” really mean?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "The Culture series began with Consider Phlebas in 1987 and expanded across later novels. Unlike familiar machine-rebellion stories, Banks presents advanced AI as infrastructure, political actors and socially distinctive individuals.",
+            "sourceIds": ["source-humanistic-1998-event-record"],
+            "claimIds": ["claim-humanistic-1998-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "Minds manage ships, orbital habitats and most material production, giving ordinary members great freedom and abundance while decisions remain influenced by intelligence far beyond human ability. The series repeatedly tests whether benevolent, effective AI governance can still become paternalistic and whether such a civilization may intervene in others.",
+            "sourceIds": ["source-humanistic-1998-event-record"],
+            "claimIds": ["claim-humanistic-1998-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Science-fiction scholars generally regard the Culture as a rare and sophisticated pro-AI utopian vision, while noting that the novels do not avoid power or moral cost. The series offers current debates on post-scarcity economics, public AI governance and human-machine communities a durable alternative to extinction-centered narratives.",
+            "sourceIds": ["source-humanistic-1998-event-record"],
+            "claimIds": ["claim-humanistic-1998-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "The Culture Series handed “Science-fiction scholars generally regard the Cu” to later researchers and creators as a long thread in the cultural history of AI.",
+            "sourceIds": ["source-humanistic-1998-event-record"],
+            "claimIds": ["claim-humanistic-1998-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-impressions-theophrastus-1879-core",
+    "importance": "core",
+    "text": {
+      "zh": "这部作品在社会观察与道德思考中触及机器意识问题，显示十九世纪文学并不只从工程视角想象人工智能。",
+      "en": "Within its social observation and moral reflection, the work touches on questions of machine consciousness, showing that nineteenth-century writing imagined artificial intelligence beyond an engineering viewpoint."
+    },
+    "sourceIds": [
+      "source-impressions-theophrastus-1879-primary"
+    ],
+    "status": "needs-review"
+  }
+]

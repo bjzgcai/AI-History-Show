@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-1969-connectionism",
+  "year": 1969,
+  "date": "1960年代—1970年代",
+  "title": {
+    "zh": "联结主义与神经网络",
+    "en": "Connectionism and Neural Networks"
+  },
+  "description": {
+    "zh": "联结主义主张智能可以从大量简单单元的并行交互中涌现，与依赖显式规则和符号操作的 AI 形成不同的智能观。",
+    "en": "Connectionism holds that intelligence can emerge from parallel interactions among simple units, offering a view of intelligence distinct from explicit rules and symbols."
+  },
+  "location": {
+    "regionId": "global",
+    "country": {
+      "zh": "欧美学术语境",
+      "en": "European and American academic context"
+    },
+    "place": {
+      "zh": "认知科学与神经网络研究",
+      "en": "Cognitive science and neural-network research"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "frank-rosenblatt",
+      "role": {
+        "zh": "早期联结主义与感知机研究者",
+        "en": "Early connectionist and perceptron researcher"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "联结主义与神经网络",
+      "en": "Connectionism and Neural Networks"
+    },
+    "displaySummary": {
+      "zh": "AI思想／哲学",
+      "en": "AI thought / Philosophy"
+    },
+    "displayDescription": {
+      "zh": "<p>联结主义主张智能可以从大量简单单元的并行交互中涌现，与依赖显式规则和符号操作的 AI 形成不同的智能观。</p><p>该节点按照作品、思想或媒介的历史时间，呈现人工生命、机器意识、技术社会与主体性之间的关系。</p>",
+      "en": "<p>Connectionism holds that intelligence can emerge from parallel interactions among simple units, offering a view of intelligence distinct from explicit rules and symbols.</p><p>This node follows the historical date of the work, idea or medium to examine artificial life, machine consciousness, technology and agency.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "联结主义与神经网络",
+          "en": "Connectionism and Neural Networks"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://plato.stanford.edu/entries/connectionism/",
+        "source": "Connectionism and Neural Networks",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1969-connectionism-verified-image"
+    ],
+    "sourceIds": [
+      "source-humanistic-1969-connectionism-record",
+      "source-humanistic-1969-connectionism-verified-image"
+    ],
+    "claimIds": [
+      "claim-humanistic-1969-connectionism-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "联结主义主张智能可以从大量简单单元的并行交互中涌现，与依赖显式规则和符号操作的 AI 形成不同的智能观。",
+          "en": "Connectionism holds that intelligence can emerge from parallel interactions among simple units, offering a view of intelligence distinct from explicit rules and symbols."
+        },
+        "sourceIds": [
+          "source-humanistic-1969-connectionism-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1969-connectionism-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1969-connectionism-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

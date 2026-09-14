@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 54,
+    "eventId": "humanistic-2025-iit-ai",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Today we return to 2004—至今 and use IIT and Artificial Consciousness to follow how “Giulio Tononi has developed Integrated Informati” entered technical culture and reached later generations.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Giulio Tononi has developed Integrated Information Theory since the late 1990s and continued revising its mathematical and philosophical formulation with collaborators; this entry uses 2025 as a marker of an ongoing debate rather than a single new paper. As large neural networks gain behavioral capability, distinguishing intelligence from conscious experience has become more urgent.",
+            "sourceIds": ["source-humanistic-2025-iit-ai-record"],
+            "claimIds": ["claim-humanistic-2025-iit-ai-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "What does “IIT identifies consciousness with irreducible in” reveal about IIT and Artificial Consciousness's disagreement with ideas of its own time?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "IIT identifies consciousness with irreducible intrinsic causal structure and uses quantities such as Φ to describe integration, although full calculation is extremely difficult for complex systems. On this view, some behaviorally powerful feed-forward systems may lack the relevant integration, so external capability alone cannot establish consciousness.",
+            "sourceIds": ["source-humanistic-2025-iit-ai-record"],
+            "claimIds": ["claim-humanistic-2025-iit-ai-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Consciousness researchers generally treat IIT as one of the major attempts at a formal theory of consciousness, while its testability, computational feasibility and metaphysical commitments remain strongly disputed. Its long-term value for AI is a clear comparative framework, not a meter that can simply certify current models as conscious.",
+            "sourceIds": ["source-humanistic-2025-iit-ai-record"],
+            "claimIds": ["claim-humanistic-2025-iit-ai-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Returning to IIT and Artificial Consciousness, we can see that “Consciousness researchers generally treat IIT as” did not disappear; it kept returning in new forms.",
+            "sourceIds": ["source-humanistic-2025-iit-ai-record"],
+            "claimIds": ["claim-humanistic-2025-iit-ai-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

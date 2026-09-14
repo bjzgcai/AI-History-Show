@@ -1,0 +1,72 @@
+[
+  {
+    "id": "asset-ancient-talos-krater",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/ancient-talos/talos-painter-krater.jpg",
+    "role": "artifact-reference",
+    "caption": {
+      "zh": "塔洛斯画家红绘陶器：塔洛斯之死",
+      "en": "Talos Painter red-figure vase: the death of Talos"
+    },
+    "subcaption": {
+      "zh": "约公元前420—400年；鲁沃 Jatta 国家考古博物馆藏。",
+      "en": "Ca. 420–400 BCE; Museo Archeologico Nazionale Jatta, Ruvo."
+    },
+    "sourceId": "source-talos-painter-krater-commons",
+    "sourceName": {
+      "zh": "Wikimedia Commons／ArchaiOptix",
+      "en": "Wikimedia Commons / ArchaiOptix"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Talos_Painter_-_ARV_1338_1_-_Dionysos_with_satyrs_and_maenads_-_death_of_Talos_-_Argonauts_and_gods_-_Ruvo_MANJ_36933_-_01.jpg",
+    "rights": {
+      "status": "cc-by-sa-4.0",
+      "license": {
+        "zh": "CC BY-SA 4.0；需署名并以相同方式共享。博物馆对商业使用可能另有要求。",
+        "en": "CC BY-SA 4.0; attribution and share-alike required. The museum may impose additional terms for commercial use."
+      },
+      "usage": {
+        "zh": "用于塔洛斯古典文物资料展示。",
+        "en": "Used for display of the classical Talos artifact."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false
+  },
+  {
+    "id": "asset-ancient-talos-explainer",
+    "type": "svg",
+    "path": "resources/images/humanistic-cycle/ancient-talos/talos-automaton-explainer.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "塔洛斯：人工身体与脆弱生命核心",
+      "en": "Talos: artificial body and vulnerable life core"
+    },
+    "subcaption": {
+      "zh": "根据《阿尔戈英雄纪》重绘的原创解释图。",
+      "en": "Original explainer redrawn from the Argonautica account."
+    },
+    "sourceId": "source-talos-local-explainer",
+    "sourceName": {
+      "zh": "本地原创 SVG",
+      "en": "Local original SVG"
+    },
+    "sourceUrl": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0227:book=4",
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目原创图，不复制出版方或博物馆图形。",
+        "en": "Original project artwork; does not copy publisher or museum graphics."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线解释图。",
+        "en": "Used as an explainer in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  }
+]

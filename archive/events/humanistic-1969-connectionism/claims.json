@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1969-connectionism-core",
+    "importance": "core",
+    "text": {
+      "zh": "联结主义主张智能可以从大量简单单元的并行交互中涌现，与依赖显式规则和符号操作的 AI 形成不同的智能观。",
+      "en": "Connectionism holds that intelligence can emerge from parallel interactions among simple units, offering a view of intelligence distinct from explicit rules and symbols."
+    },
+    "sourceIds": [
+      "source-humanistic-1969-connectionism-record"
+    ],
+    "status": "needs-review"
+  }
+]

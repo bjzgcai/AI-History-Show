@@ -1,0 +1,124 @@
+[
+  {
+    "id": "asset-humanistic-1979-geb-verified-image",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1979-geb/verified-douglas-hofstadter.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "道格拉斯·霍夫施塔特肖像",
+      "en": "Douglas Hofstadter"
+    },
+    "subcaption": {
+      "zh": "《哥德尔、艾舍尔、巴赫》作者。",
+      "en": "Author of Gödel, Escher, Bach."
+    },
+    "sourceId": "source-humanistic-1979-geb-verified-image",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Douglas_Hofstadter,_Stanford_2006_(crop).jpg",
+    "rights": {
+      "status": "cc-by-sa-2-0",
+      "license": {
+        "zh": "CC BY-SA 2.0",
+        "en": "CC BY-SA 2.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线人物或历史资料展示。",
+        "en": "Used as a figure or historical reference in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "douglas-hofstadter"
+    ]
+  },
+  {
+    "id": "asset-humanistic-1979-geb-audio-zh-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《哥德尔、艾舍尔、巴赫》 中文 AI 人文科普音频",
+      "en": "Chinese AI humanities narration for Gödel, Escher, Bach: An Eternal Golden Braid"
+    },
+    "subcaption": {
+      "zh": "中文科普讲述，供中文页面播放。",
+      "en": "Chinese narration used on the Chinese page."
+    },
+    "sourceId": "source-humanistic-1979-geb-record",
+    "language": "zh",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1979-geb-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1979-geb-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/humanistic-1979-geb-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-zh-volc-v4-2026-09-14/audio/humanistic-cycle/storyline/zh/25-humanistic-1979-geb.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-humanistic-1979-geb-audio-en-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《哥德尔、艾舍尔、巴赫》 英文 AI 人文科普音频",
+      "en": "English AI humanities narration for Gödel, Escher, Bach: An Eternal Golden Braid"
+    },
+    "subcaption": {
+      "zh": "英文科普讲述，供英文页面播放。",
+      "en": "English narration used on the English page."
+    },
+    "sourceId": "source-humanistic-1979-geb-record",
+    "language": "en",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1979-geb-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1979-geb-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/humanistic-1979-geb-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/25-humanistic-1979-geb.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  }
+]

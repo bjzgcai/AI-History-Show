@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 42,
+    "eventId": "humanistic-1998-extended-mind",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "把镜头拨回1998年，《拓展心智论》从“安迪·克拉克与大卫·查尔默斯提出，认知过程可以延伸到身体、工”出发，重新追问机器、心智与人的关系。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "安迪·克拉克与大卫·查尔默斯提出，认知过程可以延伸到身体、工具和外部环境，AI也可能成为人类心智的扩展而非替代。",
+            "sourceIds": ["source-humanistic-1998-extended-mind-record"],
+            "claimIds": ["claim-humanistic-1998-extended-mind-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "听众最容易忽略的细节也许是“《拓展心智论》”。它为什么成为《拓展心智论》的关键？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+            "sourceIds": ["source-humanistic-1998-extended-mind-record"],
+            "claimIds": ["claim-humanistic-1998-extended-mind-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+            "sourceIds": ["source-humanistic-1998-extended-mind-record"],
+            "claimIds": ["claim-humanistic-1998-extended-mind-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "下一站是《黑客帝国》，我们会继续追踪“《拓展心智论》”如何进入新的历史场景。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

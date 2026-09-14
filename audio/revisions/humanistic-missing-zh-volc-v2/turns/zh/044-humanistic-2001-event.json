@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v2-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 44,
+    "eventId": "humanistic-2001-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "2001年，《人工智能》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "影片于 2001 年上映，源自布赖恩·奥尔迪斯短篇《玩具在整个夏天长存》，并延续了斯坦利·库布里克多年开发的项目。故事置于气候变化和人口限制下的未来社会，机器人被广泛用于劳动、娱乐与情感替代。",
+            "sourceIds": ["source-humanistic-2001-event-record"],
+            "claimIds": ["claim-humanistic-2001-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个有吸引力的方向。真正让它成立的核心思想是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "大卫的爱被制造为不可撤销的程序，但收养他的家庭可以随时抛弃他，形成极不对称的情感关系。影片没有只问机器能否爱，而是追问创造者是否应对具有持续欲望和痛苦表现的人工存在承担道德义务。",
+            "sourceIds": ["source-humanistic-2001-event-record"],
+            "claimIds": ["claim-humanistic-2001-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "电影研究者通常把《人工智能》视为库布里克式冷峻与斯皮尔伯格式情感叙事交汇的复杂作品。随着陪伴机器人和对话式 AI 普及，它关于依恋设计、儿童形象和用户责任的问题获得了新的现实相关性。",
+            "sourceIds": ["source-humanistic-2001-event-record"],
+            "claimIds": ["claim-humanistic-2001-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看《黑客帝国》，再看《人工智能》，我们能听见同一个关于机器与人的问题跨越年代后的历史回响。",
+            "sourceIds": ["source-humanistic-2001-event-record"],
+            "claimIds": ["claim-humanistic-2001-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 33,
+    "eventId": "humanistic-1989-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1967年，《光明王》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《光明王》最初出版于 1967 年，把太空殖民背景与印度宗教、神话和政治革命结合起来。掌握高科技的第一代殖民者控制转生过程，并以“神”的身份维持等级秩序。",
+            "sourceIds": ["source-humanistic-1989-event-record"],
+            "claimIds": ["claim-humanistic-1989-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "小说中的“神力”本质上是技术能力、身份复制和信息控制，普通人无法自由获取这些资源。主人公山姆利用宗教象征与技术反抗统治，使作品把意识能否迁移的问题转化为谁有权决定身体、记忆和永生。",
+            "sourceIds": ["source-humanistic-1989-event-record"],
+            "claimIds": ["claim-humanistic-1989-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "科幻研究者通常把《光明王》视为将神话结构、后人类技术和反殖民政治结合的代表作品。它对 AI 人文讨论的价值在于揭示，高级技术并不天然带来自由，也可能通过神秘化和准入控制巩固旧有权力。",
+            "sourceIds": ["source-humanistic-1989-event-record"],
+            "claimIds": ["claim-humanistic-1989-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看《光明王》，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-humanistic-1989-event-record"],
+            "claimIds": ["claim-humanistic-1989-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

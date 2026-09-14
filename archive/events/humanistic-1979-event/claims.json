@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1979-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "抑郁机器人马文以幽默方式表现超级智能的无尽无聊与AI心理问题。",
+      "en": "抑郁机器人马文以幽默方式表现超级智能的无尽无聊与AI心理问题。"
+    },
+    "sourceIds": [
+      "source-humanistic-1979-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 46,
+    "eventId": "humanistic-2008-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Today we return to 2008 and use WALL-E to follow how “WALL-E was released in 2008, opening with an alm” entered technical culture and reached later generations.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "WALL-E was released in 2008, opening with an almost wordless Earth covered in consumer waste. Humans have transferred life to corporate spacecraft and automated systems, while the cleanup robot WALL-E develops collecting, curiosity and attachment through long labor.",
+            "sourceIds": ["source-humanistic-2008-event-record"],
+            "claimIds": ["claim-humanistic-2008-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "What does “WALL-E and EVE establish their relationship not ” reveal about WALL-E's disagreement with ideas of its own time?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "WALL-E and EVE establish their relationship not through elaborate speech but through attention, protection, memory and autonomous choice. In contrast, the ship's systems care for humans until they lose agency, showing that convenience can weaken autonomy when it removes participation and responsibility.",
+            "sourceIds": ["source-humanistic-2008-event-record"],
+            "claimIds": ["claim-humanistic-2008-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Animation and environmental-humanities scholars generally regard WALL-E as one of the most successful popular works joining ecological crisis, consumer culture and machine emotion. It lets children and adults discuss a nonadversarial AI question: machines may help humans relearn care rather than merely replace or rebel against them.",
+            "sourceIds": ["source-humanistic-2008-event-record"],
+            "claimIds": ["claim-humanistic-2008-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Next comes teamLab Digital Art, where we will follow how “Animation and environmental-humanities scholars ” enters a new historical setting.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

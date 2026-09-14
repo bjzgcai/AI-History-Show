@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1993-event-record",
+    "type": "book-page",
+    "label": {
+      "zh": "图书页面",
+      "en": "Book page"
+    },
+    "title": {
+      "zh": "哈珀柯林斯《钻石时代》图书页面",
+      "en": "HarperCollins book page for The Diamond Age"
+    },
+    "url": "https://www.harpercollins.com/products/the-diamond-age-neal-stephenson",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-humanistic-1993-event-neal-stephenson-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "尼尔·斯蒂芬森与《巴洛克循环》人物",
+      "en": "Neal Stephenson and Baroque Cycle characters"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Neal_Stephenson_and_Baroque_Cycle_characters.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《钻石时代》作者尼尔·斯蒂芬森及其作品人物资料；摄影者 Beyond My Ken，CC BY 2.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Neal Stephenson, author of The Diamond Age, with characters from his work; photographed by Beyond My Ken, CC BY 2.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

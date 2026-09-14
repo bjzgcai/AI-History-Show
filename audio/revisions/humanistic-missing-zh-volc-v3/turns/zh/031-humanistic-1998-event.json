@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 31,
+    "eventId": "humanistic-1998-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "从1987年的《文明》系列（The Culture）开始，人工智能人文史出现了一个新视角：《文明》系列始于 1987 年的《考虑一下菲莱巴》，并在此后究竟意味着什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《文明》系列始于 1987 年的《考虑一下菲莱巴》，并在此后多部小说中持续扩展。与常见的机器反叛叙事不同，班克斯把高级 AI 设定为文明基础设施、政治参与者和具有独特性格的社会成员。",
+            "sourceIds": ["source-humanistic-1998-event-record"],
+            "claimIds": ["claim-humanistic-1998-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "“心智”管理飞船、轨道栖息地和大部分物质生产，使普通成员获得高度自由与富足，但重要决策仍受到远超人类能力的智能影响。系列不断检验一个张力：善意且高效的 AI 治理是否仍会形成家长主义，以及文明是否有权干预其他社会。",
+            "sourceIds": ["source-humanistic-1998-event-record"],
+            "claimIds": ["claim-humanistic-1998-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "科幻研究者通常把《文明》系列视为少见而成熟的亲 AI 乌托邦想象，但也强调作品并未回避权力和道德代价。它为今天讨论后稀缺经济、AI 公共治理和人机共同体提供了区别于“灭绝风险”叙事的长期参照。",
+            "sourceIds": ["source-humanistic-1998-event-record"],
+            "claimIds": ["claim-humanistic-1998-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "《文明》系列（The Culture）把“科幻研究者通常把《文明》系列视为少见而成熟的亲 AI 乌托邦”留给后来的研究者和创作者，成为人工智能文化史的一条长线索。",
+            "sourceIds": ["source-humanistic-1998-event-record"],
+            "claimIds": ["claim-humanistic-1998-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

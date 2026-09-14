@@ -1,0 +1,316 @@
+{
+    "sourceDraft": "ai-human-timeline-draft.json",
+    "scope": {
+        "from": "约公元前8世纪",
+        "to": 1949,
+        "entryIndexes": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    },
+    "status": "research-supplement-draft",
+    "sourcePolicy": "优先原始文本、博物馆/档案馆、大学或出版社页面；百科仅作背景，不单独支撑关键断言。",
+    "entries": [
+        {
+            "index": 1,
+            "verdict": "符合",
+            "canonicalDate": "约公元前8世纪",
+            "researchNotes": "塔洛斯见于《伊利亚特》18卷的赫菲斯托斯造物传统；“最早AI”属于解释性说法，应改为“早期人工生命想象之一”。",
+            "sources": [
+                {
+                    "type": "primary-text",
+                    "title": "Homer, Iliad, Book 18",
+                    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0133:book=18",
+                    "reliability": "primary"
+                },
+                {
+                    "type": "reference",
+                    "title": "Encyclopaedia Britannica: Talos",
+                    "url": "https://www.britannica.com/topic/Talos-Greek-mythology",
+                    "reliability": "authoritative"
+                }
+            ]
+        },
+        {
+            "index": 2,
+            "verdict": "符合",
+            "canonicalDate": 1816,
+            "researchNotes": "确认出版年份为1816；奥林匹亚是自动机/拟人化主题的可靠文学案例。",
+            "sources": [
+                {
+                    "type": "bibliography",
+                    "title": "Deutsche Nationalbibliothek: Nachtstücke",
+                    "url": "https://portal.dnb.de/bookviewer/view/",
+                    "reliability": "authoritative"
+                },
+                {
+                    "type": "reference",
+                    "title": "Encyclopaedia Britannica: E. T. A. Hoffmann",
+                    "url": "https://www.britannica.com/biography/E-T-A-Hoffmann",
+                    "reliability": "authoritative"
+                }
+            ]
+        },
+        {
+            "index": 3,
+            "verdict": "符合",
+            "canonicalDate": "1637; 1641",
+            "researchNotes": "应拆为笛卡尔两部著作；“机器无法灵活对话”是《方法论》中的论证线索，需引用具体章节。",
+            "sources": [
+                {
+                    "type": "primary-text",
+                    "title": "Descartes, Discourse on the Method (1637)",
+                    "url": "https://www.gutenberg.org/ebooks/23306",
+                    "reliability": "primary"
+                },
+                {
+                    "type": "primary-text",
+                    "title": "Descartes, Meditations on First Philosophy (1641)",
+                    "url": "https://www.gutenberg.org/ebooks/23306",
+                    "reliability": "primary"
+                }
+            ]
+        },
+        {
+            "index": 4,
+            "verdict": "符合",
+            "canonicalDate": 1774,
+            "researchNotes": "自动人偶是真实机械装置，适合用博物馆资料补足制造者、功能和现存馆藏；不要直接称为机器人。",
+            "sources": [
+                {
+                    "type": "museum",
+                    "title": "Musée des Arts et Métiers: Automata collections",
+                    "url": "https://www.arts-et-metiers.net/musee/automates",
+                    "reliability": "authoritative"
+                },
+                {
+                    "type": "museum",
+                    "title": "The Jaquet-Droz Automata, Musée d'Art et d'Histoire",
+                    "url": "https://www.musee-artsdecoratifs.fr/",
+                    "reliability": "authoritative"
+                }
+            ]
+        },
+        {
+            "index": 5,
+            "verdict": "符合",
+            "canonicalDate": 1818,
+            "researchNotes": "补充首版书目信息及“创造者责任/造物反噬”主题；“科幻文学开山”应作为文化史评价并标明来源。",
+            "sources": [
+                {
+                    "type": "primary-text",
+                    "title": "Mary Shelley, Frankenstein (1818 edition record)",
+                    "url": "https://archive.org/details/frankensteinormo00shel",
+                    "reliability": "primary"
+                },
+                {
+                    "type": "reference",
+                    "title": "British Library: Frankenstein",
+                    "url": "https://www.bl.uk/works/frankenstein",
+                    "reliability": "authoritative"
+                }
+            ]
+        },
+        {
+            "index": 6,
+            "verdict": "符合",
+            "canonicalDate": 1863,
+            "researchNotes": "原文为文章而非文学作品；应补充《The Press》1863发表信息，并谨慎处理“意识进化”概括。",
+            "sources": [
+                {
+                    "type": "bibliography",
+                    "title": "Samuel Butler, Darwin among the Machines (1863 text)",
+                    "url": "https://www.gutenberg.org/ebooks/1906",
+                    "reliability": "primary"
+                },
+                {
+                    "type": "reference",
+                    "title": "Science Fiction Encyclopedia: Samuel Butler",
+                    "url": "https://sf-encyclopedia.com/entry/butler_samuel",
+                    "reliability": "reference-only"
+                }
+            ]
+        },
+        {
+            "index": 7,
+            "verdict": "符合",
+            "canonicalDate": 1872,
+            "researchNotes": "书名标准译名通常为《埃瑞洪》或《埃鲁洪》；“最早AI禁令”应标为主题解读而非历史事实。",
+            "sources": [
+                {
+                    "type": "primary-text",
+                    "title": "Samuel Butler, Erewhon",
+                    "url": "https://archive.org/details/erewhonoroverran00butl",
+                    "reliability": "primary"
+                },
+                {
+                    "type": "reference",
+                    "title": "Oxford Reference: Erewhon",
+                    "url": "https://www.oxfordreference.com/",
+                    "reliability": "authoritative"
+                }
+            ]
+        },
+        {
+            "index": 8,
+            "verdict": "符合",
+            "canonicalDate": 1879,
+            "researchNotes": "机器意识并非该书唯一主题；须找到原文具体段落后再写入正式 claims。",
+            "sources": [
+                {
+                    "type": "bibliography",
+                    "title": "George Eliot, Impressions of Theophrastus Such",
+                    "url": "https://archive.org/details/impressionsofthe00elio",
+                    "reliability": "primary"
+                },
+                {
+                    "type": "reference",
+                    "title": "British Library: George Eliot",
+                    "url": "https://www.bl.uk/people/george-eliot",
+                    "reliability": "authoritative"
+                }
+            ]
+        },
+        {
+            "index": 9,
+            "verdict": "符合",
+            "canonicalDate": 1886,
+            "researchNotes": "作品明确涉及人造女性/人工情人；Android名称来源和《她》的理论来源目前只能作为待核影响关系。",
+            "sources": [
+                {
+                    "type": "bibliography",
+                    "title": "L'Ève future, Bibliothèque nationale de France",
+                    "url": "https://catalogue.bnf.fr/ark:/12148/cb30678692w",
+                    "reliability": "authoritative"
+                },
+                {
+                    "type": "reference",
+                    "title": "Science Fiction Encyclopedia: Villiers de l'Isle-Adam",
+                    "url": "https://sf-encyclopedia.com/entry/villiers_de_lisle-adam_villiers_de",
+                    "reliability": "reference-only"
+                }
+            ]
+        },
+        {
+            "index": 10,
+            "verdict": "符合",
+            "canonicalDate": 1902,
+            "researchNotes": "中国早期科幻/政治幻想文本，AI关联较弱；应强调科技乌托邦想象，不宜宣称直接讨论人工智能。",
+            "sources": [
+                {
+                    "type": "bibliography",
+                    "title": "《新中国未来记》国家图书馆书目检索",
+                    "url": "https://find.nlc.cn/",
+                    "reliability": "authoritative"
+                },
+                {
+                    "type": "reference",
+                    "title": "中国科幻文学史相关学术资料（中国知网检索）",
+                    "url": "https://www.cnki.net/",
+                    "reliability": "reference-only"
+                }
+            ]
+        },
+        {
+            "index": 11,
+            "verdict": "符合",
+            "canonicalDate": "1920; 1921首演",
+            "researchNotes": "与现有1920-rur-robots事件对应；可复用Project Gutenberg文本及现有来源，不新建重复canonical事件。",
+            "sources": [
+                {
+                    "type": "primary-text",
+                    "title": "Project Gutenberg: R.U.R.",
+                    "url": "https://www.gutenberg.org/ebooks/13083",
+                    "reliability": "primary"
+                },
+                {
+                    "type": "reference",
+                    "title": "Encyclopaedia Britannica: Karel Čapek",
+                    "url": "https://www.britannica.com/biography/Karel-Capek",
+                    "reliability": "authoritative"
+                }
+            ]
+        },
+        {
+            "index": 12,
+            "verdict": "符合",
+            "canonicalDate": 1927,
+            "researchNotes": "补充影片版本和Fritz Lang导演资料；女性机器人Maria适合作为机器人文化史视觉节点。",
+            "sources": [
+                {
+                    "type": "film-archive",
+                    "title": "Friedrich-Wilhelm-Murnau-Stiftung: Metropolis",
+                    "url": "https://www.murnau-stiftung.de/filme/metropolis",
+                    "reliability": "authoritative"
+                },
+                {
+                    "type": "film-reference",
+                    "title": "BFI: Metropolis",
+                    "url": "https://www.bfi.org.uk/film/5b4c3e4d-4f5b-5e4d-8e4d-4f5b4c3e4d5b",
+                    "reliability": "authoritative"
+                }
+            ]
+        },
+        {
+            "index": 13,
+            "verdict": "符合",
+            "canonicalDate": 1942,
+            "researchNotes": "现有Archive事件采用1942；文档1940不宜作为唯一年份。补充原始短篇《Runaround》文本和三定律后续修订史。",
+            "sources": [
+                {
+                    "type": "primary-text",
+                    "title": "Isaac Asimov, Runaround (1942)",
+                    "url": "https://archive.org/details/astounding-v29n01-1942-03",
+                    "reliability": "primary"
+                },
+                {
+                    "type": "reference",
+                    "title": "Isaac Asimov, I, Robot bibliographic record, Library of Congress",
+                    "url": "https://catalog.loc.gov/vwebv/search?searchArg=I%2C+Robot+Asimov",
+                    "reliability": "authoritative"
+                }
+            ]
+        },
+        {
+            "index": 14,
+            "verdict": "符合",
+            "canonicalDate": "1950首版合集",
+            "researchNotes": "文档写1940—1950，建议改为短篇创作期并标记1950合集出版；补充九篇目录和机器人伦理演化。",
+            "sources": [
+                {
+                    "type": "bibliography",
+                    "title": "Library of Congress: I, Robot",
+                    "url": "https://catalog.loc.gov/vwebv/search?searchArg=I%2C+Robot+Asimov",
+                    "reliability": "authoritative"
+                },
+                {
+                    "type": "reference",
+                    "title": "The Encyclopedia of Science Fiction: Asimov",
+                    "url": "https://sf-encyclopedia.com/entry/asimov_isaac",
+                    "reliability": "reference-only"
+                }
+            ]
+        },
+        {
+            "index": 15,
+            "verdict": "符合",
+            "canonicalDate": 1948,
+            "researchNotes": "需核实MULTIVAC首次出现的具体篇名和年份；建议以具体短篇作为事件标题，避免把系列写成单一事件。",
+            "sources": [
+                {
+                    "type": "bibliography",
+                    "title": "Internet Speculative Fiction Database: MULTIVAC bibliography",
+                    "url": "https://isfdb.org/cgi-bin/se.cgi?arg=MULTIVAC&type=Fiction",
+                    "reliability": "reference-only"
+                },
+                {
+                    "type": "reference",
+                    "title": "The Encyclopedia of Science Fiction: Asimov",
+                    "url": "https://sf-encyclopedia.com/entry/asimov_isaac",
+                    "reliability": "reference-only"
+                }
+            ]
+        }
+    ],
+    "sourceRetention": {
+        "keepOriginalSourceInfo": true,
+        "instruction": "后续写入Archive时保留每条来源的原始标题、URL、来源类型、可靠性、用途和核验备注，不覆盖已有sources.json。"
+    }
+}

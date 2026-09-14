@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1993-singularity-core",
+    "importance": "core",
+    "text": {
+      "zh": "弗诺·文奇把技术奇点描述为人工智能等技术加速后可能出现的临界点，届时现有社会与知识框架将难以继续预测未来。",
+      "en": "Vernor Vinge describes a technological singularity as a possible threshold after accelerating AI and related technologies make existing social and intellectual frameworks unable to predict the future."
+    },
+    "sourceIds": [
+      "source-humanistic-1993-singularity-record"
+    ],
+    "status": "needs-review"
+  }
+]
