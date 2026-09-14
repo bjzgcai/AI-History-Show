@@ -186,9 +186,9 @@ assert(
 const workflowReport = await buildWorkflowReport();
 const enabledStorylineEntries = [...storylines.values()].flat();
 assert.deepEqual(workflowReport.errors, []);
-assert.equal(workflowReport.source.configCount, 10);
-assert.equal(workflowReport.source.validConfigCount, 10);
-assert.equal(workflowReport.source.turnCount, 348);
+assert.equal(workflowReport.source.configCount, 18);
+assert.equal(workflowReport.source.validConfigCount, 18);
+assert.equal(workflowReport.source.turnCount, 586);
 assert.deepEqual(workflowReport.source.untrackedFiles, []);
 assert.equal(workflowReport.archive.storylineEntryCount, enabledStorylineEntries.length);
 assert.equal(
