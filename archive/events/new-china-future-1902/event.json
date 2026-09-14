@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-new-china-future-1902-liang-qichao-portrait"
+      "asset-new-china-future-1902-liang-qichao-portrait",
+      "asset-new-china-future-1902-audio-zh-humanistic-20260914-v1",
+      "asset-new-china-future-1902-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-new-china-future-1902-primary",

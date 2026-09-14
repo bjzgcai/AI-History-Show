@@ -85,18 +85,112 @@
       "en": "Roman-period copy in the British Museum; a later idealized image, not a life portrait of Homer."
     },
     "sourceId": "source-ancient-hephaestus-automata-homer-bust",
-    "sourceName": { "zh": "Wikimedia Commons 文件页", "en": "Wikimedia Commons file page" },
+    "sourceName": {
+      "zh": "Wikimedia Commons 文件页",
+      "en": "Wikimedia Commons file page"
+    },
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bust_Homer_BM_1825.jpg",
     "rights": {
       "status": "public-domain",
-      "license": { "zh": "公有领域", "en": "Public domain" },
+      "license": {
+        "zh": "公有领域",
+        "en": "Public domain"
+      },
       "usage": {
         "zh": "用于呈现传统归属于荷马的作者形象，并明确其为后世理想化胸像。",
         "en": "Used to represent the traditional attribution to Homer, explicitly identified as a later idealized bust."
       }
     },
-    "usage": ["variant:humanistic-cycle"],
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
     "editable": false,
-    "figureIds": ["homer"]
+    "figureIds": [
+      "homer"
+    ]
+  },
+  {
+    "id": "asset-ancient-hephaestus-automata-audio-zh-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《伊利亚特》中的赫菲斯托斯自动机械 中文 AI 人文科普音频",
+      "en": "Chinese AI humanities narration for Hephaestus Automata in The Iliad"
+    },
+    "subcaption": {
+      "zh": "中文科普讲述，供中文页面播放。",
+      "en": "Chinese narration used on the Chinese page."
+    },
+    "sourceId": "source-ancient-hephaestus-automata-record",
+    "language": "zh",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/ancient-hephaestus-automata-zh-humanistic-hephaestus-zh-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/ancient-hephaestus-automata-zh-humanistic-hephaestus-zh-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/ancient-hephaestus-automata-zh-humanistic-hephaestus-zh-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-hephaestus-zh-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/zh/01-ancient-hephaestus-automata.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ancient-hephaestus-automata-audio-en-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《伊利亚特》中的赫菲斯托斯自动机械 英文 AI 人文科普音频",
+      "en": "English AI humanities narration for Hephaestus Automata in The Iliad"
+    },
+    "subcaption": {
+      "zh": "英文科普讲述，供英文页面播放。",
+      "en": "English narration used on the English page."
+    },
+    "sourceId": "source-ancient-hephaestus-automata-record",
+    "language": "en",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/ancient-hephaestus-automata-en-humanistic-hephaestus-en-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/ancient-hephaestus-automata-en-humanistic-hephaestus-en-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/ancient-hephaestus-automata-en-humanistic-hephaestus-en-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-hephaestus-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/01-ancient-hephaestus-automata.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
   }
 ]

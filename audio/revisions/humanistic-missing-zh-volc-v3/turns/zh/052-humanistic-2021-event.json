@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 52,
+    "eventId": "humanistic-2021-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "如果从“《克拉拉与太阳》出版于 2021 年，小说中的“人工朋友”被”切入，2021年出现的《克拉拉与太阳》就不只是一个作品或概念，而是一道关于人工智能的提问。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "《克拉拉与太阳》出版于 2021 年，小说中的“人工朋友”被购买来陪伴儿童，而基因强化和教育竞争加剧了家庭焦虑。克拉拉从商店橱窗开始学习人类行为，并把太阳理解为能够赐予生命与康复的力量。",
+            "sourceIds": ["source-humanistic-2021-event-record"],
+            "claimIds": ["claim-humanistic-2021-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "我们先不急着下结论：《克拉拉与太阳》如何把“克拉拉擅长观察模式，却经常误解人的隐喻、秘密和矛盾动机”变成可感知的经验？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "克拉拉擅长观察模式，却经常误解人的隐喻、秘密和矛盾动机；她仍能通过持续注意形成自己的信念与牺牲。小说因此不以智力测试判断她，而是通过照护关系追问爱是否必须来自与人类相同的身体和意识。",
+            "sourceIds": ["source-humanistic-2021-event-record"],
+            "claimIds": ["claim-humanistic-2021-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "如果把时间拉长，《克拉拉与太阳》关于“文学评论者通常把本书视为石黑一雄延续记忆、服务与人格主题的重”的提醒，哪些仍然有效？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "文学评论者通常把本书视为石黑一雄延续记忆、服务与人格主题的重要作品，也是生成式 AI 普及前夕关于人工陪伴的细腻文本。它让 AI 伦理中的抽象问题落到家庭替代、儿童依恋、可抛弃产品和照护劳动上。",
+            "sourceIds": ["source-humanistic-2021-event-record"],
+            "claimIds": ["claim-humanistic-2021-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "B",
+            "text": "从AI对齐问题走到《克拉拉与太阳》，关于“文学评论者通常把本书视为石黑一雄延续记忆、服务与人格主题的重”的疑问换了语境，却没有消失。",
+            "sourceIds": ["source-humanistic-2021-event-record"],
+            "claimIds": ["claim-humanistic-2021-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

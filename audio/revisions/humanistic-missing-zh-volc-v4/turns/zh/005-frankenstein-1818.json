@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 5,
+    "eventId": "frankenstein-1818",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "在1818年这个节点，《弗兰肯斯坦》提供了一种观察“科学家以实验创造人造生命，随后面对造物的自主行动与伦理责任”的方式。它为什么值得今天再听一遍？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "科学家以实验创造人造生命，随后面对造物的自主行动与伦理责任。作品把创造、失控、责任和被制造者的主体性变成持久的人文母题。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+            "sourceIds": ["source-frankenstein-1818-primary"],
+            "claimIds": ["claim-frankenstein-1818-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+            "sourceIds": ["source-frankenstein-1818-primary"],
+            "claimIds": ["claim-frankenstein-1818-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+            "sourceIds": ["source-frankenstein-1818-primary"],
+            "claimIds": ["claim-frankenstein-1818-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "历史在雅克-德罗自动人偶与《弗兰肯斯坦》之间留下了回声：每次谈论“《弗兰肯斯坦》”，都在重画人的边界。",
+            "sourceIds": ["source-frankenstein-1818-primary"],
+            "claimIds": ["claim-frankenstein-1818-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

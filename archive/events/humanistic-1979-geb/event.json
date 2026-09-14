@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-1979-geb-verified-image"
+      "asset-humanistic-1979-geb-verified-image",
+      "asset-humanistic-1979-geb-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1979-geb-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1979-geb-record",

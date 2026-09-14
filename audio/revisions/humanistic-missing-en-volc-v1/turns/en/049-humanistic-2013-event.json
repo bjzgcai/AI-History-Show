@@ -1,0 +1,74 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 49,
+    "eventId": "humanistic-2013-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Following the timeline to 2013, we arrive at Her, where “Her arrived in 2013, as smartphones, voice assis” becomes a cultural question rather than a technical footnote.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Her arrived in 2013, as smartphones, voice assistants and social platforms were changing ideas of online companionship. Spike Jonze places that shift inside an intimate near-future Los Angeles, allowing AI to enter daily life first through voice, language and service.",
+            "sourceIds": ["source-her-nyff-2013", "source-her-sony-pictures-classics"],
+            "claimIds": ["claim-humanistic-2013-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "If we reduce Her to one concrete question, does the answer begin with “The film gives Samantha no visible body”?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The film gives Samantha no visible body; it builds her sense of agency through sustained dialogue, humor, memory and emotional response. It therefore turns the question of machine feeling into a practical one: how should humans recognize the needs, boundaries and growth of another kind of intelligence?",
+            "sourceIds": ["source-her-sony-pictures-classics"],
+            "claimIds": ["claim-humanistic-2013-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "If one long-term question remains, it is how “Film scholars and AI-humanities researchers gene” changed the way we talk about artificial intelligence.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Film scholars and AI-humanities researchers generally treat Her as a representative cultural text about mediated intimacy, technology and machine subjectivity, not as a forecast of general-AI timelines. Its lasting value is the reminder that technological relationships are shaped not only by capability, but also by attachment, consent, exit and the redistribution of power.",
+            "sourceIds": [
+                "source-her-sony-pictures-classics",
+                "source-her-nyff-2013",
+                "source-her-digital-romance-post-cinema",
+                "source-her-depersonalized-intimacy"
+            ],
+            "claimIds": ["claim-humanistic-2013-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "When “Film scholars and AI-humanities researchers gene” enters real life, do the boundaries identified by Her still hold?",
+            "sourceIds": [
+                "source-her-nyff-2013",
+                "source-her-sony-pictures-classics",
+                "source-her-digital-romance-post-cinema",
+                "source-her-depersonalized-intimacy"
+            ],
+            "claimIds": ["claim-humanistic-2013-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

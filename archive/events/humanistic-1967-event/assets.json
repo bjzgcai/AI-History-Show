@@ -42,18 +42,121 @@
     "type": "image",
     "path": "resources/images/humanistic-cycle/humanistic-1967-event/harlan-ellison-portrait.jpg",
     "role": "portrait",
-    "caption": { "zh": "哈兰·埃里森肖像", "en": "Harlan Ellison portrait" },
-    "subcaption": { "zh": "《无声狂啸》作者，1986年摄。", "en": "Author of I Have No Mouth, and I Must Scream, photographed in 1986." },
+    "caption": {
+      "zh": "哈兰·埃里森肖像",
+      "en": "Harlan Ellison portrait"
+    },
+    "subcaption": {
+      "zh": "《无声狂啸》作者，1986年摄。",
+      "en": "Author of I Have No Mouth, and I Must Scream, photographed in 1986."
+    },
     "sourceId": "source-humanistic-1967-event-harlan-ellison-portrait",
-    "sourceName": { "zh": "Wikimedia Commons 文件页", "en": "Wikimedia Commons file page" },
+    "sourceName": {
+      "zh": "Wikimedia Commons 文件页",
+      "en": "Wikimedia Commons file page"
+    },
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harlan_Ellison_at_the_LA_Press_Club_19860712_(cropped_portrait).jpg",
     "rights": {
       "status": "licensed",
-      "license": { "zh": "CC BY 2.0", "en": "CC BY 2.0" },
-      "usage": { "zh": "摄影者 Pip R. Lagenta；用于作者头像展示。", "en": "Photograph by Pip R. Lagenta; used as the author portrait." }
+      "license": {
+        "zh": "CC BY 2.0",
+        "en": "CC BY 2.0"
+      },
+      "usage": {
+        "zh": "摄影者 Pip R. Lagenta；用于作者头像展示。",
+        "en": "Photograph by Pip R. Lagenta; used as the author portrait."
+      }
     },
-    "usage": ["variant:humanistic-cycle"],
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
     "editable": false,
-    "figureIds": ["humanistic-figure-22"]
+    "figureIds": [
+      "humanistic-figure-22"
+    ]
+  },
+  {
+    "id": "asset-humanistic-1967-event-audio-zh-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《无声狂啸》 中文 AI 人文科普音频",
+      "en": "Chinese AI humanities narration for I Have No Mouth, and I Must Scream"
+    },
+    "subcaption": {
+      "zh": "中文科普讲述，供中文页面播放。",
+      "en": "Chinese narration used on the Chinese page."
+    },
+    "sourceId": "source-humanistic-1967-event-record",
+    "language": "zh",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1967-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1967-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/humanistic-1967-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-zh-volc-v4-2026-09-14/audio/humanistic-cycle/storyline/zh/19-humanistic-1967-event.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-humanistic-1967-event-audio-en-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《无声狂啸》 英文 AI 人文科普音频",
+      "en": "English AI humanities narration for I Have No Mouth, and I Must Scream"
+    },
+    "subcaption": {
+      "zh": "英文科普讲述，供英文页面播放。",
+      "en": "English narration used on the English page."
+    },
+    "sourceId": "source-humanistic-1967-event-record",
+    "language": "en",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1967-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1967-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/humanistic-1967-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/19-humanistic-1967-event.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
   }
 ]

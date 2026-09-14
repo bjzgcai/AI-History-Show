@@ -110,7 +110,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-1998-extended-mind-verified-image"
+      "asset-humanistic-1998-extended-mind-verified-image",
+      "asset-humanistic-1998-extended-mind-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1998-extended-mind-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1998-extended-mind-record",

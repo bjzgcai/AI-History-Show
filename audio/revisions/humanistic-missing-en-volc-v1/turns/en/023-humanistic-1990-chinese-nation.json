@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 23,
+    "eventId": "humanistic-1990-chinese-nation",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "In 1978, Ned Block's Chinese Nation Thought Experiment brought “Block introduced the “Chinese Nation,” also call” into the conversation about artificial intelligence and human imagination. Let us start with that concrete clue.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Block introduced the “Chinese Nation,” also called the China Brain, in a 1978 paper on functionalism. Functionalism holds that a system may have the same mental states if it realizes the same causal roles as a brain, regardless of material.",
+            "sourceIds": ["source-humanistic-1990-chinese-nation-record"],
+            "claimIds": ["claim-humanistic-1990-chinese-nation-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "Let us focus on “Each person performs the role of a neuron and co”: in Ned Block's Chinese Nation Thought Experiment, which part of our understanding of machines does it change?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Each person performs the role of a neuron and communicates with others to control a robot body. Block uses the intuitive contrast to ask whether, even if input-output behavior and internal functional relations match a brain, we should say an entire nation forms one experiencing consciousness.",
+            "sourceIds": ["source-humanistic-1990-chinese-nation-record"],
+            "claimIds": ["claim-humanistic-1990-chinese-nation-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Philosophers of mind generally treat it as an important objection to simple functionalism, often discussed alongside the Chinese Room, philosophical zombies and the systems reply. For AI, it separates behavioral ability, functional organization and subjective experience, reminding us that these criteria are not automatically equivalent.",
+            "sourceIds": ["source-humanistic-1990-chinese-nation-record"],
+            "claimIds": ["claim-humanistic-1990-chinese-nation-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "From What Computers Can't Do to Ned Block's Chinese Nation Thought Experiment, the question of “Philosophers of mind generally treat it as an im” changes its setting but does not disappear.",
+            "sourceIds": ["source-humanistic-1990-chinese-nation-record"],
+            "claimIds": ["claim-humanistic-1990-chinese-nation-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

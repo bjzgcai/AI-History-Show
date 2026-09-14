@@ -110,7 +110,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-2025-ai-stuart-russell-portrait"
+      "asset-humanistic-2025-ai-stuart-russell-portrait",
+      "asset-humanistic-2025-ai-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-2025-ai-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-2025-ai-record",

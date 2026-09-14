@@ -103,7 +103,9 @@
     ],
     "assetIds": [
       "asset-humanistic-1968-event-philip-k-dick-portrait",
-      "asset-humanistic-1968-event-androids-dream-cover"
+      "asset-humanistic-1968-event-androids-dream-cover",
+      "asset-humanistic-1968-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1968-event-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1968-event-record",

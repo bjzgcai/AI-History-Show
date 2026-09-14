@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-computationalism-1950-verified-image"
+      "asset-humanistic-computationalism-1950-verified-image",
+      "asset-humanistic-computationalism-1950-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-computationalism-1950-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-computationalism-1950-record",

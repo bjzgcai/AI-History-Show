@@ -103,7 +103,9 @@
     ],
     "assetIds": [
       "asset-humanistic-1967-event-harlan-ellison-portrait",
-      "asset-humanistic-1967-event-am-talkfield"
+      "asset-humanistic-1967-event-am-talkfield",
+      "asset-humanistic-1967-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1967-event-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1967-event-record",

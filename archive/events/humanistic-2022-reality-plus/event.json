@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-2022-reality-plus-verified-image"
+      "asset-humanistic-2022-reality-plus-verified-image",
+      "asset-humanistic-2022-reality-plus-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-2022-reality-plus-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-2022-reality-plus-record",

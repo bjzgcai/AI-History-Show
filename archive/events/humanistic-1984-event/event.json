@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-1984-event-greg-bear-portrait"
+      "asset-humanistic-1984-event-greg-bear-portrait",
+      "asset-humanistic-1984-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1984-event-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1984-event-record",

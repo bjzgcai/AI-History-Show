@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-1985-cyborg-manifesto-verified-image"
+      "asset-humanistic-1985-cyborg-manifesto-verified-image",
+      "asset-humanistic-1985-cyborg-manifesto-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1985-cyborg-manifesto-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1985-cyborg-manifesto-record",

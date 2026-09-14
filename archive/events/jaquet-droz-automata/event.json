@@ -104,7 +104,9 @@
     "assetIds": [
       "asset-jaquet-droz-automata-pierre-jaquet-droz-portrait",
       "asset-jaquet-droz-automata-jaquet-droz-writer",
-      "asset-jaquet-droz-automata-jaquet-droz-musician"
+      "asset-jaquet-droz-automata-jaquet-droz-musician",
+      "asset-jaquet-droz-automata-audio-zh-humanistic-20260914-v1",
+      "asset-jaquet-droz-automata-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-jaquet-droz-automata-primary",

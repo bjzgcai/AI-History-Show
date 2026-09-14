@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 25,
+    "eventId": "humanistic-1979-geb",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Turn back to 1979: Gödel, Escher, Bach: An Eternal Golden Braid begins with “Douglas Hofstadter uses Gödel’s theorem, Escher’” and asks us to rethink the relationship between machines, minds, and people.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Douglas Hofstadter uses Gödel’s theorem, Escher’s images and Bach’s music to examine recursion, self-reference, formal systems and the emergence of mind from symbolic structures.",
+            "sourceIds": ["source-humanistic-1979-geb-record"],
+            "claimIds": ["claim-humanistic-1979-geb-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "The detail listeners may miss is “The book uses the “strange loop” as a central me”. Why does it become central to Gödel, Escher, Bach: An Eternal Golden Braid?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The book uses the “strange loop” as a central metaphor for mind: a system returns to itself across levels, producing self-reference and meaning. It shifts the AI humanities thread from robots or screen figures toward symbolic structures, consciousness and explanation.",
+            "sourceIds": ["source-humanistic-1979-geb-record"],
+            "claimIds": ["claim-humanistic-1979-geb-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Why did the idea cross its original era? The answer may begin with how “Gödel, Escher, Bach: An Eternal Golden Braid” changed afterward.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Researchers generally treat Gödel, Escher, Bach as a classic interdisciplinary bridge across computation, cognitive science, music, visual art and philosophy. It has shaped public discussion about machine intelligence, creativity, self-models and whether symbolic systems can produce meaning.",
+            "sourceIds": ["source-humanistic-1979-geb-record"],
+            "claimIds": ["claim-humanistic-1979-geb-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "As systems encounter “Gödel, Escher, Bach: An Eternal Golden Braid” again, what should we still ask of Gödel, Escher, Bach: An Eternal Golden Braid?",
+            "sourceIds": ["source-humanistic-1979-geb-record"],
+            "claimIds": ["claim-humanistic-1979-geb-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

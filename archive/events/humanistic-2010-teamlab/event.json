@@ -101,7 +101,9 @@
       }
     ],
     "assetIds": [
-      "asset-humanistic-2010-teamlab-teamlab-borderless"
+      "asset-humanistic-2010-teamlab-teamlab-borderless",
+      "asset-humanistic-2010-teamlab-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-2010-teamlab-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-2010-teamlab-record",

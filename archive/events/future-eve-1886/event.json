@@ -102,7 +102,9 @@
       }
     ],
     "assetIds": [
-      "asset-future-eve-1886-villiers-portrait"
+      "asset-future-eve-1886-villiers-portrait",
+      "asset-future-eve-1886-audio-zh-humanistic-20260914-v1",
+      "asset-future-eve-1886-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-future-eve-1886-primary",

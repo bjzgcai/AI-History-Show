@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 7,
+    "eventId": "erewhon-1872",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "《埃瑞洪》出现在1872年，把“小说中的“机器之书”讨论机器进化与人类被取代的可能性，虚构社”从抽象想象变成了可以讨论的经验。它留下了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "小说中的“机器之书”讨论机器进化与人类被取代的可能性，虚构社会因此选择摧毁机器。它把技术治理和机器禁令变成社会制度问题。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+            "sourceIds": ["source-erewhon-1872-primary"],
+            "claimIds": ["claim-erewhon-1872-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+            "sourceIds": ["source-erewhon-1872-primary"],
+            "claimIds": ["claim-erewhon-1872-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+            "sourceIds": ["source-erewhon-1872-primary"],
+            "claimIds": ["claim-erewhon-1872-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "下一站是《西奥弗拉斯特斯·萨奇的印象》，我们会继续追踪“研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现”如何进入新的历史场景。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

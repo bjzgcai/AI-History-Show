@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 3,
+    "eventId": "descartes-automata",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "沿着1637年的时间线，我们先遇到《方法论》与《第一哲学沉思录》中的自动机器论。它让“笛卡尔区分思维实体与自动机器，并以语言和灵活应答追问机器能否”成为一个无法绕开的文化问题。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "笛卡尔区分思维实体与自动机器，并以语言和灵活应答追问机器能否思考。这个问题为后来关于心智、身体和机器理解的讨论奠定哲学背景。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+            "sourceIds": ["source-descartes-automata-primary"],
+            "claimIds": ["claim-descartes-automata-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "如果把《方法论》与《第一哲学沉思录》中的自动机器论拆成一个具体问题，答案会落在“它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会”上吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+            "sourceIds": ["source-descartes-automata-primary"],
+            "claimIds": ["claim-descartes-automata-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "这项作品或理论后来留下的，不只是名声。围绕“研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现”，后人真正接住了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+            "sourceIds": ["source-descartes-automata-primary"],
+            "claimIds": ["claim-descartes-automata-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "如果人工智能继续发展，《方法论》与《第一哲学沉思录》中的自动机器论关于“研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现”的判断需要怎样被重新检验？",
+            "sourceIds": ["source-descartes-automata-primary"],
+            "claimIds": ["claim-descartes-automata-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

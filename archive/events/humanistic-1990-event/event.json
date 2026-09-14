@@ -112,7 +112,9 @@
     ],
     "assetIds": [
       "asset-humanistic-1990-event-william-gibson-portrait",
-      "asset-humanistic-1990-event-bruce-sterling-portrait"
+      "asset-humanistic-1990-event-bruce-sterling-portrait",
+      "asset-humanistic-1990-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1990-event-audio-en-humanistic-20260914-v1"
     ],
     "sourceIds": [
       "source-humanistic-1990-event-record",
