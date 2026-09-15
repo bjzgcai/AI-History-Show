@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1998-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "描绘由AI心智管理的乌托邦稀缺社会，是AI治理下美好世界的少见叙事。",
+      "en": "描绘由AI心智管理的乌托邦稀缺社会，是AI治理下美好世界的少见叙事。"
+    },
+    "sourceIds": [
+      "source-humanistic-1998-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

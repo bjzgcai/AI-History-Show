@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v2-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 36,
+    "eventId": "humanistic-1991-ghost-shell",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1995年，《攻壳机动队》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "押井守的动画电影追问意识能否脱离肉身存在，并把身体、网络、自我身份与人工意识置于同一叙事框架。",
+            "sourceIds": ["source-humanistic-1991-ghost-shell-record"],
+            "claimIds": ["claim-humanistic-1991-ghost-shell-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个有吸引力的方向。真正让它成立的核心思想是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+            "sourceIds": ["source-humanistic-1991-ghost-shell-record"],
+            "claimIds": ["claim-humanistic-1991-ghost-shell-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+            "sourceIds": ["source-humanistic-1991-ghost-shell-record"],
+            "claimIds": ["claim-humanistic-1991-ghost-shell-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看《意识的解释》，再看《攻壳机动队》，我们能听见同一个关于机器与人的问题跨越年代后的历史回响。",
+            "sourceIds": ["source-humanistic-1991-ghost-shell-record"],
+            "claimIds": ["claim-humanistic-1991-ghost-shell-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

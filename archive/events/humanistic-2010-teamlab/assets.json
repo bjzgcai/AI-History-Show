@@ -1,0 +1,124 @@
+[
+  {
+    "id": "asset-humanistic-2010-teamlab-teamlab-borderless",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2010-teamlab/teamlab-borderless.jpg",
+    "role": "event-reference",
+    "caption": {
+      "zh": "teamLab Borderless 展览现场",
+      "en": "teamLab Borderless installation"
+    },
+    "subcaption": {
+      "zh": "东京 teamLab Borderless 沉浸式展览现场。",
+      "en": "The immersive teamLab Borderless installation in Tokyo."
+    },
+    "sourceId": "source-humanistic-2010-teamlab-teamlab-borderless",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:TeamLab_Borderless,_Odaiba,_Tokyo,_Japan_(49070835722).jpg",
+    "rights": {
+      "status": "cc-by-sa-2.0",
+      "license": {
+        "zh": "CC BY SA 2.0",
+        "en": "CC BY SA 2.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-57"
+    ]
+  },
+  {
+    "id": "asset-humanistic-2010-teamlab-audio-zh-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "teamLab数字艺术 中文 AI 人文科普音频",
+      "en": "Chinese AI humanities narration for teamLab Digital Art"
+    },
+    "subcaption": {
+      "zh": "中文科普讲述，供中文页面播放。",
+      "en": "Chinese narration used on the Chinese page."
+    },
+    "sourceId": "source-humanistic-2010-teamlab-record",
+    "language": "zh",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2010-teamlab-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2010-teamlab-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/humanistic-2010-teamlab-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-zh-volc-v4-2026-09-14/audio/humanistic-cycle/storyline/zh/47-humanistic-2010-teamlab.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-humanistic-2010-teamlab-audio-en-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "teamLab数字艺术 英文 AI 人文科普音频",
+      "en": "English AI humanities narration for teamLab Digital Art"
+    },
+    "subcaption": {
+      "zh": "英文科普讲述，供英文页面播放。",
+      "en": "English narration used on the English page."
+    },
+    "sourceId": "source-humanistic-2010-teamlab-record",
+    "language": "en",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2010-teamlab-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2010-teamlab-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/humanistic-2010-teamlab-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/47-humanistic-2010-teamlab.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  }
+]

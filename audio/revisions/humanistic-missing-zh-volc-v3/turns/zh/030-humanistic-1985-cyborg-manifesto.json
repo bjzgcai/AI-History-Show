@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 30,
+    "eventId": "humanistic-1985-cyborg-manifesto",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "今天回到1985年，我们会通过《赛博格宣言》观察“唐娜·哈拉维以赛博格打破人／动物、自然／技术和身体／机器的二”如何进入技术文化，并继续影响后来者。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "唐娜·哈拉维以赛博格打破人／动物、自然／技术和身体／机器的二元边界，为后人类主义、人机融合与身体增强讨论提供重要思想资源。",
+            "sourceIds": ["source-humanistic-1985-cyborg-manifesto-record"],
+            "claimIds": ["claim-humanistic-1985-cyborg-manifesto-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "把注意力放在“作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解”上，能否看出《赛博格宣言》与同时代观念的分歧？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+            "sourceIds": ["source-humanistic-1985-cyborg-manifesto-record"],
+            "claimIds": ["claim-humanistic-1985-cyborg-manifesto-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "这项作品或理论后来留下的，不只是名声。围绕“研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不”，后人真正接住了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+            "sourceIds": ["source-humanistic-1985-cyborg-manifesto-record"],
+            "claimIds": ["claim-humanistic-1985-cyborg-manifesto-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "从《赛博格宣言》出发，人工智能的下一步应如何处理“研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不”带来的张力？",
+            "sourceIds": ["source-humanistic-1985-cyborg-manifesto-record"],
+            "claimIds": ["claim-humanistic-1985-cyborg-manifesto-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

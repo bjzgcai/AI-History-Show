@@ -1,0 +1,82 @@
+[
+  {
+    "id": "source-humanistic-1980-event-record",
+    "type": "paper-page",
+    "label": {
+      "zh": "论文页面",
+      "en": "Paper page"
+    },
+    "title": {
+      "zh": "剑桥大学出版社《心灵、大脑与程序》论文页面",
+      "en": "Cambridge University Press paper page for “Minds, Brains, and Programs”"
+    },
+    "url": "https://doi.org/10.1017/S0140525X00005756",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-humanistic-1980-event-chinese-room-reference",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "中文房间资料图",
+      "en": "Chinese Room reference image"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:The_Chinese_Room_(14004170846).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页的中文房间资料图；摄影者 daveynin，CC BY 2.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Chinese Room reference image; photographed by daveynin, CC BY 2.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1980-event-john-searle-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "约翰·塞尔演讲照片（Wikimedia Commons）",
+      "en": "John Searle speaking at Google (Wikimedia Commons)"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:John_Searle_speaking_at_Google_1.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "2015 年约翰·塞尔在 Google 发表“人工智能中的意识”演讲的照片，摄影：FranksValli，CC BY-SA 4.0。",
+      "en": "Photograph of John Searle giving his 2015 talk on consciousness in artificial intelligence at Google; photographed by FranksValli, CC BY-SA 4.0."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1980-event-chinese-room-thought-experiment",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "中文房间思想实验示意图（Wikimedia Commons）",
+      "en": "Chinese Room thought-experiment illustration (Wikimedia Commons)"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Chinese_Room_thought_experiment_with_countryballs.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页明确说明这是中文房间思想实验的再现图，作者 Dronebogus，CC BY 4.0；属于后来的解释性再创作，不是 1980 年历史照片。",
+      "en": "The Wikimedia Commons file page explicitly describes this as an illustration of the Chinese Room thought experiment; by Dronebogus, CC BY 4.0. It is a later explanatory artwork, not a 1980 historical photograph."
+    },
+    "purpose": "image-provenance"
+  }
+]

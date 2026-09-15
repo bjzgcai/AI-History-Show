@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 53,
+    "eventId": "humanistic-2022-reality-plus",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "2022年，《现实+：虚拟世界与哲学问题》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "大卫·查尔默斯系统讨论虚拟世界的本体论、价值与真实性，主张虚拟现实不只是“虚假现实”，并把模拟假说带入当代哲学主流。",
+            "sourceIds": ["source-humanistic-2022-reality-plus-record"],
+            "claimIds": ["claim-humanistic-2022-reality-plus-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+            "sourceIds": ["source-humanistic-2022-reality-plus-record"],
+            "claimIds": ["claim-humanistic-2022-reality-plus-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+            "sourceIds": ["source-humanistic-2022-reality-plus-record"],
+            "claimIds": ["claim-humanistic-2022-reality-plus-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看《现实+：虚拟世界与哲学问题》，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-humanistic-2022-reality-plus-record"],
+            "claimIds": ["claim-humanistic-2022-reality-plus-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

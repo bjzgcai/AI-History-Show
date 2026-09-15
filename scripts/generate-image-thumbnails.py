@@ -62,17 +62,9 @@ def generate_thumbnail(source, target):
 
 
 def remove_stale_thumbnails(targets):
-    removed = 0
-    if not THUMB_ROOT.exists():
-        return removed
-    for thumbnail in THUMB_ROOT.rglob("*.webp"):
-        if thumbnail not in targets:
-            thumbnail.unlink()
-            removed += 1
-    for directory in sorted(THUMB_ROOT.rglob("*"), reverse=True):
-        if directory.is_dir() and not any(directory.iterdir()):
-            directory.rmdir()
-    return removed
+    # resources/ is append-only for project assets. Stale thumbnail files can
+    # remain on disk; write_manifest controls which thumbnails are used.
+    return 0
 
 
 def write_manifest(sources):

@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 25,
+    "eventId": "humanistic-1979-geb",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "把镜头拨回1979年，《哥德尔、艾舍尔、巴赫》从“道格拉斯·霍夫施塔特以哥德尔定理、艾舍尔图像和巴赫音乐为线索”出发，重新追问机器、心智与人的关系。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "道格拉斯·霍夫施塔特以哥德尔定理、艾舍尔图像和巴赫音乐为线索，讨论递归、自指、形式系统与心智如何从符号结构中涌现。",
+            "sourceIds": ["source-humanistic-1979-geb-record"],
+            "claimIds": ["claim-humanistic-1979-geb-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "听众最容易忽略的细节也许是“这本书把“奇异环”作为理解心智的核心隐喻：系统在不同层级之间”。它为什么成为《哥德尔、艾舍尔、巴赫》的关键？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "这本书把“奇异环”作为理解心智的核心隐喻：系统在不同层级之间回到自身，从而产生自我指称与意义。它让 AI 人文线索从机器人或银幕形象转向符号、意识和解释之间更抽象的关系。",
+            "sourceIds": ["source-humanistic-1979-geb-record"],
+            "claimIds": ["claim-humanistic-1979-geb-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "它为什么能越过原来的时代？也许要从“研究者通常把《哥德尔、艾舍尔、巴赫》视为连接计算、认知科学、”在后来研究中的变化说起。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "研究者通常把《哥德尔、艾舍尔、巴赫》视为连接计算、认知科学、音乐、视觉艺术与哲学的经典跨学科作品。它长期影响关于机器智能、创造性、自我模型和符号系统能否产生意义的公共讨论。",
+            "sourceIds": ["source-humanistic-1979-geb-record"],
+            "claimIds": ["claim-humanistic-1979-geb-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "今天的系统再次触及“研究者通常把《哥德尔、艾舍尔、巴赫》视为连接计算、认知科学、”时，我们还应向《哥德尔、艾舍尔、巴赫》追问什么？",
+            "sourceIds": ["source-humanistic-1979-geb-record"],
+            "claimIds": ["claim-humanistic-1979-geb-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

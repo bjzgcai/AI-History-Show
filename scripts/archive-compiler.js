@@ -66,7 +66,11 @@ function resolveVisualModules(modules, assetsById) {
 }
 
 function isDisplaySource(source) {
-    return source && source.id !== 'source-legacy-event-record';
+    if (!source || source.id === 'source-legacy-event-record') return false;
+    const url = String(source.url || source.doi || source.archiveUrl || '').trim();
+    return !/^https?:\/\/(?:www\.)?(?:google\.[^/]+|bing\.com|search\.yahoo\.com)\/(?:search|websearch)(?:[/?#]|$)/i.test(
+        url
+    );
 }
 
 function sourceDisplay(source) {

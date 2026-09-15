@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-2021-event-record",
+    "type": "book-page",
+    "label": {
+      "zh": "图书页面",
+      "en": "Book page"
+    },
+    "title": {
+      "zh": "企鹅兰登《克拉拉与太阳》图书页面",
+      "en": "Penguin Random House book page for Klara and the Sun"
+    },
+    "url": "https://www.penguinrandomhouse.com/books/653825/klara-and-the-sun-by-kazuo-ishiguro/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-humanistic-2021-event-klara-sun-logo",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《克拉拉与太阳》片名标识",
+      "en": "Klara and the Sun title reference"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Klara_and_the_Sun_logo.png",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "作品片名标识资料；文件页标注公有领域。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Title reference for the novel; the file page marks it public domain. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-2021-event-kazuo-ishiguro-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "石黑一雄肖像（2025年戛纳电影节）",
+      "en": "Kazuo Ishiguro portrait at Cannes 2025"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:MKr377543_Kazuo_Ishiguro_(A_Pale_View_of_Hills,_Cannes_2025).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Commons 文件页确认人物为石黑一雄，摄影者 Martin Kraft，许可为 CC BY-SA 4.0。",
+      "en": "The Commons file page identifies Kazuo Ishiguro; photographed by Martin Kraft and licensed CC BY-SA 4.0."
+    },
+    "purpose": "image-provenance"
+  }
+]

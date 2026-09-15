@@ -1,0 +1,151 @@
+[
+  {
+    "id": "asset-humanistic-2004-event-irobot-head",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2004-event/irobot-head.jpg",
+    "role": "artifact-reference",
+    "caption": {
+      "zh": "《我，机器人》机器人头部资料",
+      "en": "I, Robot robot-head reference"
+    },
+    "subcaption": {
+      "zh": "电影《我，机器人》中的机器人形象资料。",
+      "en": "Robot design reference related to the film I, Robot."
+    },
+    "sourceId": "source-humanistic-2004-event-irobot-head",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irobot_head.jpg",
+    "rights": {
+      "status": "cc-by-sa-3.0",
+      "license": {
+        "zh": "CC BY SA 3.0",
+        "en": "CC BY SA 3.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-55"
+    ]
+  },
+  {
+    "id": "asset-humanistic-2004-event-tmdb-poster",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2004-event/i-robot-poster-tmdb.jpg",
+    "role": "movie-poster",
+    "caption": {
+      "zh": "《我，机器人》电影海报",
+      "en": "I, Robot film poster"
+    },
+    "subcaption": {
+      "zh": "2004 年电影《我，机器人》的中文发行海报。",
+      "en": "Chinese release poster for the 2004 film I, Robot."
+    },
+    "sourceId": "source-humanistic-2004-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/hbZrfhXYcqnw3O1vHFaQMZNZGmG.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/2048-i-robot/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-2004-event-tmdb-scene-1",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2004-event/i-robot-scene-1-tmdb.jpg",
+    "role": "film-still",
+    "caption": {
+      "zh": "斯普纳与 NS-5 机器人群",
+      "en": "Spooner among the NS-5 robots"
+    },
+    "subcaption": {
+      "zh": "警探戴尔·斯普纳置身 NS-5 机器人群中的电影场景。",
+      "en": "Film scene showing Detective Del Spooner among a group of NS-5 robots."
+    },
+    "sourceId": "source-humanistic-2004-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/jpFcZH2eyh6gcoxCa637TrGe4bT.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/2048-i-robot/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-2004-event-tmdb-scene-2",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2004-event/i-robot-scene-2-tmdb.jpg",
+    "role": "promotional-still",
+    "caption": {
+      "zh": "斯普纳与苏珊·卡尔文",
+      "en": "Spooner and Susan Calvin"
+    },
+    "subcaption": {
+      "zh": "警探斯普纳与机器人心理学家苏珊·卡尔文的影片角色视觉。",
+      "en": "Film character visual featuring Detective Spooner and robopsychologist Susan Calvin."
+    },
+    "sourceId": "source-humanistic-2004-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/5FqDjK8cWRqr1E8xmNPHN4Tpgkc.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/2048-i-robot/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  }
+]

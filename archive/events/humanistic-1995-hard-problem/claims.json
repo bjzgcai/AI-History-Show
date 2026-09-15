@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1995-hard-problem-core",
+    "importance": "core",
+    "text": {
+      "zh": "大卫·查尔默斯区分解释大脑信息处理机制与解释主观体验之间的差异，推动了意识哲学与人工意识讨论。",
+      "en": "David Chalmers distinguishes explaining information processing from explaining subjective experience, shaping philosophy of consciousness and debates about artificial consciousness."
+    },
+    "sourceIds": [
+      "source-humanistic-1995-hard-problem-record"
+    ],
+    "status": "needs-review"
+  }
+]

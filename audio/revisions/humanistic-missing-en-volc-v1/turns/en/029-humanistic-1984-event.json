@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 29,
+    "eventId": "humanistic-1984-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Blood Music appeared in 1983（短篇）；1985（长篇） and made “Blood Music first appeared as a 1983 short story” an experience that could be discussed, not just an abstraction.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Blood Music first appeared as a 1983 short story and was expanded into a 1985 novel. It emerged amid rapid advances in genetic engineering, personal computing and speculation about nanotechnology.",
+            "sourceIds": ["source-humanistic-1984-event-record"],
+            "claimIds": ["claim-humanistic-1984-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "When we talk about Blood Music, what deeper relationship lies behind “A scientist turns his lymphocytes into microscop”?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "A scientist turns his lymphocytes into microscopic agents capable of learning and communication; they enter the body and develop collective intelligence. The novel moves artificiality from silicon to living matter and asks whether bodily, private and personal boundaries can survive intelligence that spreads.",
+            "sourceIds": ["source-humanistic-1984-event-record"],
+            "claimIds": ["claim-humanistic-1984-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Science-fiction scholars generally view Blood Music as an important precursor to biopunk, nanointelligence and posthuman narratives. Its lasting value lies in showing that runaway intelligence need not appear as a separate robot; it may transform humanity through symbiosis, infection and collective cognition.",
+            "sourceIds": ["source-humanistic-1984-event-record"],
+            "claimIds": ["claim-humanistic-1984-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Next comes A Cyborg Manifesto, where we will follow how “Science-fiction scholars generally view Blood Mu” enters a new historical setting.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

@@ -1,0 +1,173 @@
+{
+  "id": "metropolis-1927",
+  "year": 1927,
+  "date": "1927",
+  "title": {
+    "zh": "《大都会》中的机器人玛丽亚",
+    "en": "Maria the Robot in Metropolis"
+  },
+  "description": {
+    "zh": "影片将机器人玛丽亚置于工业城市、阶级冲突和群众动员的中心，形成现代文化中最早的机器人视觉范式之一。",
+    "en": "The film places the robot Maria at the center of an industrial city, class conflict and mass mobilization, establishing one of modern culture’s earliest visual paradigms for the robot."
+  },
+  "location": {
+    "regionId": "germany",
+    "country": {
+      "zh": "德国",
+      "en": "Germany"
+    },
+    "place": {
+      "zh": "柏林电影制作语境",
+      "en": "Berlin film-production context"
+    },
+    "coordinates": [
+      52.52,
+      13.405
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "fritz-lang",
+      "role": {
+        "zh": "《大都会》导演",
+        "en": "Director of Metropolis (1927)"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "新增人文事件草稿；人物、地区和图片资产需继续核验。",
+      "en": "New humanities event draft; figures, location and image assets require further review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《大都会》中的机器人玛丽亚",
+      "en": "Maria the Robot in Metropolis"
+    },
+    "displaySummary": {
+      "zh": "科幻、艺术与哲学中的人工生命想象",
+      "en": "Artificial-life imagination in fiction, art and philosophy"
+    },
+    "displayDescription": {
+      "zh": "<p>影片将机器人玛丽亚置于工业城市、阶级冲突和群众动员的中心，形成现代文化中最早的机器人视觉范式之一。</p><p>本事件依据原始作品或权威书目资料，展示人工生命、机器意识、技术治理或人与机器关系的文化想象。</p>",
+      "en": "<p>The film places the robot Maria at the center of an industrial city, class conflict and mass mobilization, establishing one of modern culture’s earliest visual paradigms for the robot.</p><p>This event presents cultural imagination around artificial life, machine consciousness, technological governance or human–machine relations using primary texts or authoritative bibliographic records.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "档案来源",
+          "en": "Archive source"
+        },
+        "title": {
+          "zh": "弗里德里希·威廉·穆瑙基金会《大都会》资料",
+          "en": "Friedrich-Wilhelm-Murnau-Stiftung: Metropolis"
+        },
+        "description": {
+          "zh": "作品或书目原始资料入口。",
+          "en": "Entry point to the primary work or bibliographic record."
+        },
+        "url": "https://www.murnau-stiftung.de/filme/metropolis",
+        "source": "Friedrich-Wilhelm-Murnau-Stiftung: Metropolis",
+        "license": {
+          "zh": "来源页面许可或馆藏条款以原站说明为准。",
+          "en": "Follow the source page or collection terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary source for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-metropolis-1927-metropolis-set-photo",
+      "asset-metropolis-1927-metropolis-poster"
+    ],
+    "sourceIds": [
+      "source-metropolis-1927-primary",
+      "source-metropolis-1927-metropolis-poster",
+      "source-metropolis-1927-metropolis-set-photo"
+    ],
+    "claimIds": [
+      "claim-metropolis-1927-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "影片将机器人玛丽亚置于工业城市、阶级冲突和群众动员的中心，形成现代文化中最早的机器人视觉范式之一。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+          "en": " The film places the robot Maria at the center of an industrial city, class conflict and mass mobilization, establishing one of modern culture’s earliest visual paradigms for the robot. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination."
+        },
+        "sourceIds": [
+          "source-metropolis-1927-primary"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+          "en": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order."
+        },
+        "sourceIds": [
+          "source-metropolis-1927-primary"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+          "en": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance."
+        },
+        "sourceIds": [
+          "source-metropolis-1927-primary"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待补充人物、图片与quiz。",
+        "en": "Figures, images and quiz remain to be added."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

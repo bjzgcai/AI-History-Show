@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-1972-event",
+  "year": 1953,
+  "date": "1953",
+  "title": {
+    "zh": "《神的九十亿个名字》",
+    "en": "The Nine Billion Names of God"
+  },
+  "description": {
+    "zh": "阿瑟·C·克拉克让计算机帮助寺院列举所有可能的神名，以冷静的技术过程连接宗教目的与宇宙终局。",
+    "en": "Arthur C. Clarke has a computer help a monastery enumerate every possible name of God, connecting a methodical technical process to religious purpose and cosmic finality."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国科幻出版语境",
+      "en": "United States science-fiction publishing context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-26",
+      "role": {
+        "zh": "《神的九十亿个名字》作者",
+        "en": "Author of The Nine Billion Names of God"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《神的九十亿个名字》",
+      "en": "The Nine Billion Names of God"
+    },
+    "displaySummary": {
+      "zh": "计算任务、宗教信念与世界终结",
+      "en": "Computation, religious belief and the end of the world"
+    },
+    "displayDescription": {
+      "zh": "<p>阿瑟·C·克拉克让计算机帮助寺院列举所有可能的神名，以冷静的技术过程连接宗教目的与宇宙终局。</p><p>工程师把工作理解为字符组合，僧侣却相信完成名单就是宇宙存在的目的；同一计算过程因此同时属于技术理性与宗教信仰。结尾群星熄灭，使“机器只是在执行任务”与“任务改变了世界”之间的界线突然消失。</p>",
+      "en": "<p>Arthur C. Clarke has a computer help a monastery enumerate every possible name of God, connecting a methodical technical process to religious purpose and cosmic finality.</p><p>The engineers understand the job as combinatorics, while the monks believe completing the list fulfills the universe's purpose; one computation therefore belongs to both technical reason and religious faith. As the stars go out, the line between a machine merely performing a task and a task changing the world abruptly disappears.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "《科幻小说百科全书》",
+          "en": "The Encyclopedia of Science Fiction"
+        },
+        "title": {
+          "zh": "《神的九十亿个名字》",
+          "en": "The Nine Billion Names of God"
+        },
+        "description": {
+          "zh": "计算任务、宗教信念与世界终结",
+          "en": "Computation, religious belief and the end of the world"
+        },
+        "url": "https://sf-encyclopedia.com/entry/clarke_arthur_c",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1972-event-arthur-clarke-portrait"
+    ],
+    "sourceIds": [
+      "source-humanistic-1972-event-record",
+      "source-humanistic-1972-event-arthur-clarke-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-1972-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "这篇短篇小说最初发表于 1953 年，当时电子计算机仍主要服务于科学、军事与大型机构。故事让喜马拉雅寺院租用一台自动顺序计算机，把原本需要数万年的神名排列任务压缩到数月。",
+          "en": "The short story was first published in 1953, when electronic computers still primarily served science, the military and large institutions. A Himalayan monastery rents an automatic sequence computer to compress a task of enumerating divine names from thousands of years into a few months."
+        },
+        "sourceIds": [
+          "source-humanistic-1972-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "工程师把工作理解为字符组合，僧侣却相信完成名单就是宇宙存在的目的；同一计算过程因此同时属于技术理性与宗教信仰。结尾群星熄灭，使“机器只是在执行任务”与“任务改变了世界”之间的界线突然消失。",
+          "en": "The engineers understand the job as combinatorics, while the monks believe completing the list fulfills the universe's purpose; one computation therefore belongs to both technical reason and religious faith. As the stars go out, the line between a machine merely performing a task and a task changing the world abruptly disappears."
+        },
+        "sourceIds": [
+          "source-humanistic-1972-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "科幻研究者通常把它视为克拉克将科学理性与宗教敬畏并置的代表短篇。它持续提醒 AI 讨论者，系统目标的意义并不由计算过程本身决定，而由委托者的信念、制度与后果共同塑造。",
+          "en": "Science-fiction scholars generally regard it as a signature Clarke story that places scientific rationality beside religious awe. It continues to remind AI debates that the meaning of a system's objective is not determined by computation alone, but by the beliefs, institutions and consequences surrounding it."
+        },
+        "sourceIds": [
+          "source-humanistic-1972-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

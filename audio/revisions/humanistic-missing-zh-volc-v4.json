@@ -1,0 +1,29 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "label": "AI 人文缺失事件中文音频候选（模板话术优化版）",
+    "comparisonKind": "previous",
+    "storylineOrderPolicy": "frozen-revision",
+    "outputRoot": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-zh-volc-v4-2026-09-14",
+    "turnsDir": "audio/revisions/humanistic-missing-zh-volc-v4/turns/zh",
+    "voiceProfilePath": "audio/voices/zh-huopo-original.json",
+    "expectedEntryCount": 47,
+    "provider": {
+        "name": "volc",
+        "model": "seed-tts-2.0",
+        "endpoint": "https://openspeech.bytedance.com/api/v3/plan/tts/unidirectional",
+        "envFile": ".secrets/tts.env",
+        "retries": 3
+    },
+    "specification": {
+        "modes": ["storyline"],
+        "locales": ["zh"],
+        "normalPauseMs": 450,
+        "summaryPauseMs": 550,
+        "minimumDurationSec": 40,
+        "maximumDurationSec": 150,
+        "targetIntegratedLoudnessLufs": -16,
+        "targetTruePeakDbtp": -1,
+        "targetLoudnessRangeLu": 11
+    }
+}

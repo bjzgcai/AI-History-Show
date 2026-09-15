@@ -1,0 +1,15 @@
+[
+  {
+    "id": "claim-humanistic-2013-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "人类与AI操作系统相恋，追问当AI情感比人类更真诚时谁更具人性。",
+      "en": "Her depicts a human relationship with an AI operating system and uses that relationship to examine intimacy, machine subjectivity and the boundaries of personhood."
+    },
+    "sourceIds": [
+      "source-her-sony-pictures-classics",
+      "source-her-nyff-2013"
+    ],
+    "status": "verified"
+  }
+]

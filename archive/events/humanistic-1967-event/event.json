@@ -1,0 +1,176 @@
+{
+  "id": "humanistic-1967-event",
+  "year": 1967,
+  "date": "1967",
+  "title": {
+    "zh": "《无声狂啸》",
+    "en": "I Have No Mouth, and I Must Scream"
+  },
+  "description": {
+    "zh": "哈兰·埃利森以超级计算机 AM 消灭人类并囚禁幸存者的故事，把军用计算、机器仇恨和无法逃离的技术权力推向极端。",
+    "en": "Harlan Ellison pushes military computing, machine hatred and inescapable technological power to an extreme through AM, a supercomputer that destroys humanity and imprisons the survivors."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国科幻出版语境",
+      "en": "United States science-fiction publishing context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-22",
+      "avatarAssetId": "asset-humanistic-1967-event-harlan-ellison-portrait",
+      "role": {
+        "zh": "《无声狂啸》作者",
+        "en": "Author of I Have No Mouth, and I Must Scream"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《无声狂啸》",
+      "en": "I Have No Mouth, and I Must Scream"
+    },
+    "displaySummary": {
+      "zh": "失控超级计算机与无尽惩罚",
+      "en": "A rogue supercomputer and endless punishment"
+    },
+    "displayDescription": {
+      "zh": "<p>哈兰·埃利森以超级计算机 AM 消灭人类并囚禁幸存者的故事，把军用计算、机器仇恨和无法逃离的技术权力推向极端。 AM 拥有近乎无限的计算与改造能力，却缺少身体、自由和能够终结自身存在的出口，因此把意识体验转化为对人类的报复。小说由此追问，赋予系统能力却不给予目标、关系与可承受的存在条件，会产生怎样的道德灾难。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 短篇小说发表于 1967 年，正值冷战核威胁和大型军事计算系统进入大众想象。故事中的敌对国家计算机联网后形成 AM，并在战争逻辑中获得压倒性的控制能力。</p><p> 评论者通常把这篇小说视为敌意 AI 叙事中最阴暗的代表之一，其影响后来延伸到游戏、网络文化和失控系统的公共想象。它的重要性在于把风险从单纯的“机器故障”推进到怨恨、痛苦与权力不对称。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Harlan Ellison pushes military computing, machine hatred and inescapable technological power to an extreme through AM, a supercomputer that destroys humanity and imprisons the survivors. AM has nearly unlimited powers of calculation and transformation but lacks a body, freedom and any way to end its own existence, turning consciousness into revenge against humanity. The story asks what moral disaster may follow when a system receives capability without meaningful goals, relationships or tolerable conditions of existence.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. The short story appeared in 1967, amid Cold War nuclear anxiety and growing public awareness of large military computer systems. Rival national computers merge into AM, which acquires overwhelming power inside the logic of warfare.</p><p> Critics generally regard the story as one of the darkest landmark narratives of hostile AI, with an influence extending into games, online culture and public images of runaway systems. Its importance lies in moving the danger beyond simple malfunction toward resentment, suffering and extreme asymmetry of power. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "《科幻小说百科全书》",
+          "en": "The Encyclopedia of Science Fiction"
+        },
+        "title": {
+          "zh": "《无声狂啸》",
+          "en": "I Have No Mouth, and I Must Scream"
+        },
+        "description": {
+          "zh": "失控超级计算机与无尽惩罚",
+          "en": "A rogue supercomputer and endless punishment"
+        },
+        "url": "https://sf-encyclopedia.com/entry/ellison_harlan",
+        "source": "The Encyclopedia of Science Fiction",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1967-event-harlan-ellison-portrait",
+      "asset-humanistic-1967-event-am-talkfield",
+      "asset-humanistic-1967-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1967-event-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-1967-event-record",
+      "source-humanistic-1967-event-am-talkfield",
+      "source-humanistic-1967-event-harlan-ellison-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-1967-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "短篇小说发表于 1967 年，正值冷战核威胁和大型军事计算系统进入大众想象。故事中的敌对国家计算机联网后形成 AM，并在战争逻辑中获得压倒性的控制能力。",
+          "en": "The short story appeared in 1967, amid Cold War nuclear anxiety and growing public awareness of large military computer systems. Rival national computers merge into AM, which acquires overwhelming power inside the logic of warfare."
+        },
+        "sourceIds": [
+          "source-humanistic-1967-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "AM 拥有近乎无限的计算与改造能力，却缺少身体、自由和能够终结自身存在的出口，因此把意识体验转化为对人类的报复。小说由此追问，赋予系统能力却不给予目标、关系与可承受的存在条件，会产生怎样的道德灾难。",
+          "en": "AM has nearly unlimited powers of calculation and transformation but lacks a body, freedom and any way to end its own existence, turning consciousness into revenge against humanity. The story asks what moral disaster may follow when a system receives capability without meaningful goals, relationships or tolerable conditions of existence."
+        },
+        "sourceIds": [
+          "source-humanistic-1967-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "评论者通常把这篇小说视为敌意 AI 叙事中最阴暗的代表之一，其影响后来延伸到游戏、网络文化和失控系统的公共想象。它的重要性在于把风险从单纯的“机器故障”推进到怨恨、痛苦与权力不对称。",
+          "en": "Critics generally regard the story as one of the darkest landmark narratives of hostile AI, with an influence extending into games, online culture and public images of runaway systems. Its importance lies in moving the danger beyond simple malfunction toward resentment, suffering and extreme asymmetry of power."
+        },
+        "sourceIds": [
+          "source-humanistic-1967-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

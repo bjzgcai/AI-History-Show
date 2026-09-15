@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 15,
+    "eventId": "humanistic-computationalism-1950",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "把镜头拨回20世纪中叶，计算主义从“计算主义把认知过程理解为信息处理或计算操作，主张心智与大脑的”出发，重新追问机器、心智与人的关系。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "计算主义把认知过程理解为信息处理或计算操作，主张心智与大脑的关系可以通过功能和程序来说明，为机器能否拥有心智提供理论基础。",
+            "sourceIds": ["source-humanistic-computationalism-1950-record"],
+            "claimIds": ["claim-humanistic-computationalism-1950-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "听众最容易忽略的细节也许是“计算主义”。它为什么成为计算主义的关键？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+            "sourceIds": ["source-humanistic-computationalism-1950-record"],
+            "claimIds": ["claim-humanistic-computationalism-1950-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "从“计算主义”延伸出去，我们今天应当怎样评价计算主义的影响和边界？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+            "sourceIds": ["source-humanistic-computationalism-1950-record"],
+            "claimIds": ["claim-humanistic-computationalism-1950-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "从计算主义出发，人工智能的下一步应如何处理“计算主义”带来的张力？",
+            "sourceIds": ["source-humanistic-computationalism-1950-record"],
+            "claimIds": ["claim-humanistic-computationalism-1950-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

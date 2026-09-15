@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1993-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "以智能教程书籍想象AI个性化教育，突出AI作为教育者的角色。",
+      "en": "以智能教程书籍想象AI个性化教育，突出AI作为教育者的角色。"
+    },
+    "sourceIds": [
+      "source-humanistic-1993-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

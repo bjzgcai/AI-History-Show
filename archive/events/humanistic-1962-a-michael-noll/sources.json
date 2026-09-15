@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1962-a-michael-noll-record",
+    "type": "paper-page",
+    "label": {
+      "zh": "论文页面",
+      "en": "Paper page"
+    },
+    "title": {
+      "zh": "IEEE《数字计算机作为创造媒介》论文页面",
+      "en": "IEEE paper page for “The Digital Computer as a Creative Medium”"
+    },
+    "url": "https://doi.org/10.1109/MSPEC.1967.5217127",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-humanistic-1962-a-michael-noll-noll-vertical-horizontal",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "A. Michael Noll《垂直—水平第三号》",
+      "en": "A. Michael Noll, Vertical-Horizontal Number Three"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:VERTICAL-HORIZONTAL_NUMBER_THREE_(1964)_BY_A._MICHAEL_NOLL.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "1964 年计算机生成艺术作品；Wikimedia Commons 标注 CC BY-SA 4.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Computer-generated artwork from 1964; Wikimedia Commons records CC BY-SA 4.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

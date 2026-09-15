@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1988-mind-children-core",
+    "importance": "core",
+    "text": {
+      "zh": "汉斯·莫拉维克讨论机器人智能、意识上传以及人类与机器智能的未来关系，是机器超智能想象的重要文本。",
+      "en": "Hans Moravec discusses robot intelligence, mind uploading and future relations between humans and machine intelligence, influencing visions of machine superintelligence."
+    },
+    "sourceIds": [
+      "source-humanistic-1988-mind-children-record"
+    ],
+    "status": "needs-review"
+  }
+]

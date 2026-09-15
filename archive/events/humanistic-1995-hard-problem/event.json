@@ -1,0 +1,174 @@
+{
+  "id": "humanistic-1995-hard-problem",
+  "year": 1995,
+  "date": "1995",
+  "title": {
+    "zh": "意识的“困难问题”",
+    "en": "The Hard Problem of Consciousness"
+  },
+  "description": {
+    "zh": "大卫·查尔默斯区分解释大脑信息处理机制与解释主观体验之间的差异，推动了意识哲学与人工意识讨论。",
+    "en": "David Chalmers distinguishes explaining information processing from explaining subjective experience, shaping philosophy of consciousness and debates about artificial consciousness."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "意识哲学语境",
+      "en": "Philosophy of consciousness"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "david-chalmers",
+      "avatarAssetId": "asset-humanistic-1995-hard-problem-verified-image",
+      "role": {
+        "zh": "“困难问题”提出者",
+        "en": "Formulator of the hard problem"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "意识的“困难问题”",
+      "en": "The Hard Problem of Consciousness"
+    },
+    "displaySummary": {
+      "zh": "哲学",
+      "en": "Philosophy"
+    },
+    "displayDescription": {
+      "zh": "<p>大卫·查尔默斯在 1995 年提出“意识的困难问题”，区分解释大脑如何处理信息与解释为什么这些处理会伴随主观体验。前一类问题可以研究注意、记忆和行为报告等功能机制；后一类问题则追问，为什么颜色、疼痛或声音会以某种“感觉”呈现给一个主体。</p><p>这个区分直接影响了人工意识讨论。如果一个系统在功能上完全复制人类，却没有任何内在体验，我们如何知道它是有意识的，或者它只是完美模拟了有意识的行为？查尔默斯并没有给出工程答案，但他阻止研究者把可观察行为自动等同于体验本身。</p><p>“困难问题”后来成为意识哲学、认知科学和 AI 伦理的共同参照。它的长期影响不在于证明机器不能有意识，而在于要求任何关于机器心智的论断都说明：我们测量的是功能、报告、整合信息，还是某种无法从外部直接观察的主观世界。</p>",
+      "en": "<p>In 1995 David Chalmers introduced the hard problem of consciousness, distinguishing an explanation of how the brain processes information from an explanation of why those processes are accompanied by subjective experience. The first class includes mechanisms of attention, memory and behavioral report; the second asks why colors, pain or sounds appear as a feeling to a subject.</p><p>The distinction directly affects debates about artificial consciousness. If a system completely reproduced human functions but had no inner experience, how could we know whether it was conscious or merely simulating conscious behavior? Chalmers did not provide an engineering answer, but he blocked the easy assumption that observable performance is identical to experience.</p><p>The hard problem became a shared reference for philosophy of mind, cognitive science and AI ethics. Its lasting effect is not to prove that machines cannot be conscious, but to require claims about machine minds to specify whether they measure function, report, information integration or a subjective world that cannot be observed directly.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "意识的“困难问题”",
+          "en": "The Hard Problem of Consciousness"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://consc.net/papers/facing.html",
+        "source": "The Hard Problem of Consciousness",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1995-hard-problem-verified-image",
+      "asset-humanistic-1995-hard-problem-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1995-hard-problem-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-1995-hard-problem-record",
+      "source-humanistic-1995-hard-problem-verified-image"
+    ],
+    "claimIds": [
+      "claim-humanistic-1995-hard-problem-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "大卫·查尔默斯区分解释大脑信息处理机制与解释主观体验之间的差异，推动了意识哲学与人工意识讨论。",
+          "en": "David Chalmers distinguishes explaining information processing from explaining subjective experience, shaping philosophy of consciousness and debates about artificial consciousness."
+        },
+        "sourceIds": [
+          "source-humanistic-1995-hard-problem-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1995-hard-problem-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1995-hard-problem-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

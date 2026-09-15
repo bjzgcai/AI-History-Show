@@ -1,0 +1,176 @@
+{
+  "id": "humanistic-1989-event",
+  "year": 1967,
+  "date": "1967",
+  "title": {
+    "zh": "《光明王》",
+    "en": "Lord of Light"
+  },
+  "description": {
+    "zh": "罗杰·泽拉兹尼在《光明王》中让殖民者凭借意识转移和身体重生技术扮演神祇，讨论技术垄断如何转化为宗教与政治权力。",
+    "en": "In Lord of Light, Roger Zelazny has colonists use mind transfer and bodily rebirth to pose as gods, exploring how technological monopoly becomes religious and political power."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国科幻出版语境",
+      "en": "United States science-fiction publishing context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-37",
+      "avatarAssetId": "asset-humanistic-1989-event-roger-zelazny-portrait",
+      "role": {
+        "zh": "《光明王》作者",
+        "en": "Author of Lord of Light"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "已补充罗杰·泽拉兹尼作者肖像和 1967 年首版《光明王》封面，二者均按英文 Wikipedia 文件页的非自由历史图像/图书封面条款记录，仅作作品识别和评论参考。原著首版年份核验为 1967 年，本事件按文学作品首次出版时间标记。",
+      "en": "Added a Roger Zelazny author portrait and the 1967 first-edition Lord of Light cover. Both are documented under the English Wikipedia file pages' non-free historical-image/book-cover terms and are for identification and commentary reference only. The novel's first-publication year is verified as 1967, so the event is dated by the work's first publication."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《光明王》",
+      "en": "Lord of Light"
+    },
+    "displaySummary": {
+      "zh": "技术垄断、意识转移与神权统治",
+      "en": "Technological monopoly, mind transfer and divine rule"
+    },
+    "displayDescription": {
+      "zh": "<p>罗杰·泽拉兹尼在《光明王》中让殖民者凭借意识转移和身体重生技术扮演神祇，讨论技术垄断如何转化为宗教与政治权力。 小说中的“神力”本质上是技术能力、身份复制和信息控制，普通人无法自由获取这些资源。主人公山姆利用宗教象征与技术反抗统治，使作品把意识能否迁移的问题转化为谁有权决定身体、记忆和永生。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 《光明王》最初出版于 1967 年，把太空殖民背景与印度宗教、神话和政治革命结合起来。掌握高科技的第一代殖民者控制转生过程，并以“神”的身份维持等级秩序。</p><p> 科幻研究者通常把《光明王》视为将神话结构、后人类技术和反殖民政治结合的代表作品。它对 AI 人文讨论的价值在于揭示，高级技术并不天然带来自由，也可能通过神秘化和准入控制巩固旧有权力。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>In Lord of Light, Roger Zelazny has colonists use mind transfer and bodily rebirth to pose as gods, exploring how technological monopoly becomes religious and political power. The novel's divine powers are technological capability, copied identity and information control kept from ordinary people. Sam uses religious symbols and technology against the rulers, turning mind transfer into a political question about who controls bodies, memories and immortality.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. First published in 1967, Lord of Light combines space colonization with Indian religions, mythology and political revolution. First-generation colonists control reincarnation technology and preserve hierarchy by presenting themselves as gods.</p><p> Science-fiction scholars generally regard Lord of Light as a landmark combination of mythic structure, posthuman technology and anticolonial politics. For AI humanities, it shows that advanced technology does not inherently produce freedom and may reinforce old power through mystification and controlled access. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "哈珀柯林斯图书页面",
+          "en": "HarperCollins book page"
+        },
+        "title": {
+          "zh": "《光明王》",
+          "en": "Lord of Light"
+        },
+        "description": {
+          "zh": "技术垄断、意识转移与神权统治",
+          "en": "Technological monopoly, mind transfer and divine rule"
+        },
+        "url": "https://www.harpercollins.com/products/lord-of-light-roger-zelazny",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1989-event-roger-zelazny-portrait",
+      "asset-humanistic-1989-event-lord-of-light-first-edition-cover",
+      "asset-humanistic-1989-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1989-event-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-1989-event-record",
+      "source-humanistic-1989-event-roger-zelazny-portrait",
+      "source-humanistic-1989-event-lord-of-light-first-edition-cover"
+    ],
+    "claimIds": [
+      "claim-humanistic-1989-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《光明王》最初出版于 1967 年，把太空殖民背景与印度宗教、神话和政治革命结合起来。掌握高科技的第一代殖民者控制转生过程，并以“神”的身份维持等级秩序。",
+          "en": "First published in 1967, Lord of Light combines space colonization with Indian religions, mythology and political revolution. First-generation colonists control reincarnation technology and preserve hierarchy by presenting themselves as gods."
+        },
+        "sourceIds": [
+          "source-humanistic-1989-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "小说中的“神力”本质上是技术能力、身份复制和信息控制，普通人无法自由获取这些资源。主人公山姆利用宗教象征与技术反抗统治，使作品把意识能否迁移的问题转化为谁有权决定身体、记忆和永生。",
+          "en": "The novel's divine powers are technological capability, copied identity and information control kept from ordinary people. Sam uses religious symbols and technology against the rulers, turning mind transfer into a political question about who controls bodies, memories and immortality."
+        },
+        "sourceIds": [
+          "source-humanistic-1989-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "科幻研究者通常把《光明王》视为将神话结构、后人类技术和反殖民政治结合的代表作品。它对 AI 人文讨论的价值在于揭示，高级技术并不天然带来自由，也可能通过神秘化和准入控制巩固旧有权力。",
+          "en": "Science-fiction scholars generally regard Lord of Light as a landmark combination of mythic structure, posthuman technology and anticolonial politics. For AI humanities, it shows that advanced technology does not inherently produce freedom and may reinforce old power through mystification and controlled access."
+        },
+        "sourceIds": [
+          "source-humanistic-1989-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

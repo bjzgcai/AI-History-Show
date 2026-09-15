@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 48,
+    "eventId": "humanistic-2012-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "2012年，《普罗米修斯》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《普罗米修斯》于 2012 年上映，延伸《异形》系列的世界观，并把叙事中心放在人类起源与造物关系。维兰德公司派遣飞船寻找“工程师”，船上仿生人 David 同时承担服务、监控和秘密实验任务。",
+            "sourceIds": ["source-humanistic-2012-event-record"],
+            "claimIds": ["claim-humanistic-2012-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "人类要求造物者解释自身存在，却很少承认 David 也可能向人类提出同样的问题。David 的礼貌服从与自主好奇并存，使“工具”身份和主体性发生冲突，也暴露企业目标如何把人类与机器都当成可牺牲资源。",
+            "sourceIds": ["source-humanistic-2012-event-record"],
+            "claimIds": ["claim-humanistic-2012-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "电影研究者通常把 David 视为《异形》系列中最复杂的人工生命角色之一，而不是影片中单纯的技术配角。该角色后来在《异形：契约》中继续发展，使创造者责任、机器怨恨和人工生命自我设计成为系列核心。",
+            "sourceIds": ["source-humanistic-2012-event-record"],
+            "claimIds": ["claim-humanistic-2012-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看《普罗米修斯》，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-humanistic-2012-event-record"],
+            "claimIds": ["claim-humanistic-2012-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

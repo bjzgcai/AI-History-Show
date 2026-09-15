@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1991-ghost-shell-core",
+    "importance": "core",
+    "text": {
+      "zh": "押井守的动画电影追问意识能否脱离肉身存在，并把身体、网络、自我身份与人工意识置于同一叙事框架。",
+      "en": "Mamoru Oshii's animated film asks whether consciousness can exist apart from the body, linking embodiment, networks, identity and artificial consciousness."
+    },
+    "sourceIds": [
+      "source-humanistic-1991-ghost-shell-record"
+    ],
+    "status": "needs-review"
+  }
+]

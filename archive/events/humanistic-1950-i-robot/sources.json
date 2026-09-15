@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1950-i-robot-record",
+    "type": "book-index",
+    "label": {
+      "zh": "书目记录",
+      "en": "Bibliographic record"
+    },
+    "title": {
+      "zh": "ISFDB《我，机器人》书目记录",
+      "en": "ISFDB bibliographic record for I, Robot"
+    },
+    "url": "https://www.isfdb.org/cgi-bin/title.cgi?1795",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-1950-i-robot-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "艾萨克·阿西莫夫肖像",
+      "en": "Isaac Asimov"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：Public domain。",
+      "en": "Wikimedia Commons file page identifies the subject; license: Public domain."
+    },
+    "purpose": "image-provenance"
+  }
+]

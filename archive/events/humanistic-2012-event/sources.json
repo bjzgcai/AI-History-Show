@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-2012-event-record",
+    "type": "official-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "二十世纪影业《普罗米修斯》官方影片页面",
+      "en": "20th Century Studios official film page for Prometheus"
+    },
+    "url": "https://www.20thcenturystudios.com/movies/prometheus",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-humanistic-2012-event-ridley-scott-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "雷德利·斯科特肖像",
+      "en": "Ridley Scott portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Ridley_Scott_by_Gage_Skidmore.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《普罗米修斯》导演肖像；摄影者 Gage Skidmore，CC BY-SA 3.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Director of Prometheus; photograph by Gage Skidmore, CC BY-SA 3.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-2012-event-tmdb-images",
+    "type": "image-source",
+    "url": "https://www.themoviedb.org/movie/70981-prometheus/images",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《普罗米修斯》 TMDB 图片库",
+      "en": "Prometheus TMDB image gallery"
+    },
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "TMDB 图片库用于定位海报、影片场面与宣传视觉；每张图片的原始文件链接保留在对应资源记录中。",
+      "en": "The TMDB gallery is used to locate posters, film scenes and promotional visuals; each original file URL is retained in the corresponding asset record."
+    },
+    "purpose": "image-provenance"
+  }
+]

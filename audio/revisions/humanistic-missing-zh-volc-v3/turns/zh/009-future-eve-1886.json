@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 9,
+    "eventId": "future-eve-1886",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "从1886年的《未来夏娃》开始，人工智能人文史出现了一个新视角：作品设想以电气和机械技术制造“完美的情人”，把人工身体、欲望究竟意味着什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "作品设想以电气和机械技术制造“完美的情人”，把人工身体、欲望投射和技术化爱情联系起来。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+            "sourceIds": ["source-future-eve-1886-primary"],
+            "claimIds": ["claim-future-eve-1886-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "“它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会”看似只是一个细节，它怎样支撑起《未来夏娃》关于人工智能的判断？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+            "sourceIds": ["source-future-eve-1886-primary"],
+            "claimIds": ["claim-future-eve-1886-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "放到今天再看，“研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现”还在哪些人工智能场景里继续出现？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+            "sourceIds": ["source-future-eve-1886-primary"],
+            "claimIds": ["claim-future-eve-1886-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "如果只记住《未来夏娃》的一点，可以记住它如何让“研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现”进入人工智能的人文视野。",
+            "sourceIds": ["source-future-eve-1886-primary"],
+            "claimIds": ["claim-future-eve-1886-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

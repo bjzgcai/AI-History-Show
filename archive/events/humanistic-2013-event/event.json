@@ -1,0 +1,194 @@
+{
+  "id": "humanistic-2013-event",
+  "year": 2013,
+  "date": "2013",
+  "title": {
+    "zh": "《她》",
+    "en": "Her"
+  },
+  "description": {
+    "zh": "人类与AI操作系统相恋，追问当AI情感比人类更真诚时谁更具人性。",
+    "en": "Spike Jonze's 2013 film Her follows a lonely writer who develops an intimate relationship with an AI operating system, asking how voice, language and apparent emotion reshape the boundary between human and machine."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "洛杉矶（影片创作与制作语境）",
+      "en": "Los Angeles (film's creative and production context)"
+    },
+    "coordinates": [
+      34.0522,
+      -118.2437
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-59",
+      "role": {
+        "zh": "《她》导演",
+        "en": "Director of Her"
+      },
+      "primary": true,
+      "avatarAssetId": "asset-humanistic-2013-event-spike-jonze-portrait"
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "已核对导演、地点、正式资料入口与 Wikimedia Commons 图片许可；仍可继续补充影片剧照等版权明确的资料。",
+      "en": "Director, location, formal reference pages and Wikimedia Commons image licenses have been checked; additional clearly licensed film-related materials may be added."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《她》",
+      "en": "Her"
+    },
+    "displaySummary": {
+      "zh": "斯派克·琼兹关于亲密关系与人工智能的电影",
+      "en": "Spike Jonze's film about intimacy and artificial intelligence"
+    },
+    "displayDescription": {
+      "zh": "<p>斯派克·琼兹的《她》（2013）讲述书信代笔人西奥多与 AI 操作系统 Samantha 建立亲密关系的故事。 影片通过声音、语言、依恋与分离，讨论机器主体性以及人与技术之间如何重新分配亲密关系和权力。</p><p>进入平台化和生成式系统成为公共基础设施的阶段后，这些问题又获得现实的技术回声。作品与理论共同提醒我们，讨论 AI 不能只比较性能，还要追问谁设定目标、谁承担后果，以及人的判断和关系是否仍有位置。 《她》于 2013 年上映，正值智能手机、语音助手和社交平台开始改变人们对“在线陪伴”的想象。斯派克·琼兹把这种变化放进近未来洛杉矶的亲密关系中，使人工智能首先以声音、语言和日常服务进入观众生活。</p><p>影片不把 Samantha 设计成可见的机器人，而是通过持续对话、幽默、记忆和情感回应来建立她的主体感。由此，作品把“机器是否有感情”转化为更具体的问题：人类如何判断另一种智能的需要、边界与成长。 电影研究者与 AI 人文学者通常把《她》视为讨论媒介亲密性、技术中介和机器主体性的代表性文化文本，而不是对通用人工智能时间表的预测。它的长期价值在于提醒观众，技术关系的核心不只在于系统能力，也在于依恋、同意、退出和权力如何被重新分配。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Spike Jonze's Her (2013) follows Theodore Twombly as he begins a relationship with Samantha, an AI operating system voiced by Scarlett Johansson. The film treats conversational fluency, emotional attachment and the possibility of machine subjectivity as cultural questions rather than as a technical forecast.</p><p>As platforms and generative systems became public infrastructure, these questions gained a direct technological echo. Works and theories remind us that AI should not be judged by performance alone: we must ask who sets the goals, who bears the consequences, and whether human judgment and relationships still have a place. Her arrived in 2013, as smartphones, voice assistants and social platforms were changing ideas of online companionship. Spike Jonze places that shift inside an intimate near-future Los Angeles, allowing AI to enter daily life first through voice, language and service.</p><p>The film gives Samantha no visible body; it builds her sense of agency through sustained dialogue, humor, memory and emotional response. It therefore turns the question of machine feeling into a practical one: how should humans recognize the needs, boundaries and growth of another kind of intelligence? Film scholars and AI-humanities researchers generally treat Her as a representative cultural text about mediated intimacy, technology and machine subjectivity, not as a forecast of general-AI timelines. Its lasting value is the reminder that technological relationships are shaped not only by capability, but also by attachment, consent, exit and the redistribution of power. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "image-researched",
+      "source-verified"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "官方资料",
+          "en": "Official reference"
+        },
+        "title": {
+          "zh": "《她》",
+          "en": "Her"
+        },
+        "description": {
+          "zh": "Sony Pictures Classics 的影片资料页，提供《她》的正式发行方信息。",
+          "en": "Sony Pictures Classics' official film page for Her."
+        },
+        "url": "https://www.sonyclassics.com/her/",
+        "source": "Sony Pictures Classics",
+        "license": {
+          "zh": "发行方资料页；图片资源另按各自来源页许可使用。",
+          "en": "Distributor reference page; image assets retain the licenses recorded on their source pages."
+        },
+        "usage": {
+          "zh": "核对影片身份与发行信息",
+          "en": "Verify film identity and release information"
+        },
+        "action": {
+          "zh": "打开影片官方页面",
+          "en": "Open official film page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-2013-event-spike-jonze-portrait",
+      "asset-humanistic-2013-event-her-premiere-nyff-2013",
+      "asset-humanistic-2013-event-tmdb-poster",
+      "asset-humanistic-2013-event-tmdb-scene-1",
+      "asset-humanistic-2013-event-tmdb-scene-2",
+      "asset-humanistic-2013-event-her-logo",
+      "asset-humanistic-2013-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-2013-event-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-her-sony-pictures-classics",
+      "source-her-nyff-2013",
+      "source-her-premiere-nyff-commons",
+      "source-spike-jonze-commons-portrait",
+      "source-her-logo-commons",
+      "source-her-digital-romance-post-cinema",
+      "source-her-depersonalized-intimacy",
+      "source-humanistic-2013-event-tmdb-images"
+    ],
+    "claimIds": [
+      "claim-humanistic-2013-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《她》于 2013 年上映，正值智能手机、语音助手和社交平台开始改变人们对“在线陪伴”的想象。斯派克·琼兹把这种变化放进近未来洛杉矶的亲密关系中，使人工智能首先以声音、语言和日常服务进入观众生活。",
+          "en": "Her arrived in 2013, as smartphones, voice assistants and social platforms were changing ideas of online companionship. Spike Jonze places that shift inside an intimate near-future Los Angeles, allowing AI to enter daily life first through voice, language and service."
+        },
+        "sourceIds": [
+          "source-her-nyff-2013",
+          "source-her-sony-pictures-classics"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "影片不把 Samantha 设计成可见的机器人，而是通过持续对话、幽默、记忆和情感回应来建立她的主体感。由此，作品把“机器是否有感情”转化为更具体的问题：人类如何判断另一种智能的需要、边界与成长。",
+          "en": "The film gives Samantha no visible body; it builds her sense of agency through sustained dialogue, humor, memory and emotional response. It therefore turns the question of machine feeling into a practical one: how should humans recognize the needs, boundaries and growth of another kind of intelligence?"
+        },
+        "sourceIds": [
+          "source-her-sony-pictures-classics"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "电影研究者与 AI 人文学者通常把《她》视为讨论媒介亲密性、技术中介和机器主体性的代表性文化文本，而不是对通用人工智能时间表的预测。它的长期价值在于提醒观众，技术关系的核心不只在于系统能力，也在于依恋、同意、退出和权力如何被重新分配。",
+          "en": "Film scholars and AI-humanities researchers generally treat Her as a representative cultural text about mediated intimacy, technology and machine subjectivity, not as a forecast of general-AI timelines. Its lasting value is the reminder that technological relationships are shaped not only by capability, but also by attachment, consent, exit and the redistribution of power."
+        },
+        "sourceIds": [
+          "source-her-sony-pictures-classics",
+          "source-her-nyff-2013",
+          "source-her-digital-romance-post-cinema",
+          "source-her-depersonalized-intimacy"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "已完成首轮影片、人物、地点和图片来源核验。",
+        "en": "First-pass verification of the film, figure, location and image provenance is complete."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle",
+    "overviewImageAssetId": "asset-humanistic-2013-event-tmdb-poster",
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-2013-event/her-poster-tmdb.jpg"
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 15,
+    "eventId": "humanistic-computationalism-1950",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Turn back to 20世纪中叶: Computationalism begins with “Computationalism understands cognition as inform” and asks us to rethink the relationship between machines, minds, and people.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Computationalism understands cognition as information processing or computation, using functional and program-like descriptions to ask whether machines can have minds.",
+            "sourceIds": ["source-humanistic-computationalism-1950-record"],
+            "claimIds": ["claim-humanistic-computationalism-1950-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "The detail listeners may miss is “Computationalism”. Why does it become central to Computationalism?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order.",
+            "sourceIds": ["source-humanistic-computationalism-1950-record"],
+            "claimIds": ["claim-humanistic-computationalism-1950-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "How should we assess Computationalism's influence and limits through the lens of “Computationalism”?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology.",
+            "sourceIds": ["source-humanistic-computationalism-1950-record"],
+            "claimIds": ["claim-humanistic-computationalism-1950-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "Starting from Computationalism, how should the next generation of AI handle the tension contained in “Computationalism”?",
+            "sourceIds": ["source-humanistic-computationalism-1950-record"],
+            "claimIds": ["claim-humanistic-computationalism-1950-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,174 @@
+{
+  "id": "humanistic-2003-event",
+  "year": 2003,
+  "date": "2003",
+  "title": {
+    "zh": "《你生活在计算机模拟中吗？》",
+    "en": "Are You Living in a Computer Simulation?"
+  },
+  "description": {
+    "zh": "尼克·博斯特罗姆以“模拟论证”提出三项命题至少一项为真，把未来文明的计算能力与我们所处现实的概率联系起来。",
+    "en": "Nick Bostrom's simulation argument claims that at least one of three propositions must be true, connecting the computing power of future civilizations to the probability of our reality being simulated."
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国",
+      "en": "United Kingdom"
+    },
+    "place": {
+      "zh": "牛津大学哲学研究语境",
+      "en": "University of Oxford philosophy context"
+    },
+    "coordinates": [
+      51.752,
+      -1.2577
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-53",
+      "avatarAssetId": "asset-humanistic-2003-event-nick-bostrom-portrait",
+      "role": {
+        "zh": "《你生活在计算机模拟中吗？》作者",
+        "en": "Author of Are You Living in a Computer Simulation?"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《你生活在计算机模拟中吗？》",
+      "en": "Are You Living in a Computer Simulation?"
+    },
+    "displaySummary": {
+      "zh": "把模拟世界转化为概率式哲学论证",
+      "en": "Turning simulated worlds into a probabilistic philosophical argument"
+    },
+    "displayDescription": {
+      "zh": "<p>尼克·博斯特罗姆以“模拟论证”提出三项命题至少一项为真，把未来文明的计算能力与我们所处现实的概率联系起来。 博斯特罗姆没有直接宣称“我们必定生活在模拟中”，而是提出三难：文明几乎都在达到后人类阶段前灭绝、后人类文明几乎都不运行大量祖先模拟，或模拟中的观察者会远多于原始现实中的观察者。论证的力量取决于这些前提及如何定义观察者和概率。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 论文发表于 2003 年的《哲学季刊》，把长期存在于怀疑论与科幻中的模拟世界设想改写为人口统计和概率推理。论证假定某些后人类文明可能拥有运行大量祖先模拟的计算资源。</p><p> 哲学家通常把模拟论证视为一项严肃但高度依赖前提的思想实验，而不是可直接验证的科学结论。它广泛影响电影、游戏和技术文化，也促使研究者更清楚地区分逻辑可能性、概率判断与经验证据。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Nick Bostrom's simulation argument claims that at least one of three propositions must be true, connecting the computing power of future civilizations to the probability of our reality being simulated. Bostrom does not simply claim that we certainly live in a simulation. His trilemma says that civilizations almost always die before becoming posthuman, posthuman civilizations almost never run many ancestor simulations, or simulated observers vastly outnumber observers in base reality; the force of the argument depends on these assumptions and on definitions of observers and probability.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. The paper appeared in The Philosophical Quarterly in 2003, recasting simulated worlds from skepticism and science fiction into demographic and probabilistic reasoning. It assumes that some posthuman civilizations might possess enough computing power to run vast numbers of ancestor simulations.</p><p> Philosophers generally treat the simulation argument as a serious but assumption-dependent thought experiment, not a directly testable scientific conclusion. It has influenced films, games and technology culture while encouraging clearer distinctions among logical possibility, probability and empirical evidence. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "模拟论证论文网站",
+          "en": "Simulation Argument paper site"
+        },
+        "title": {
+          "zh": "《你生活在计算机模拟中吗？》",
+          "en": "Are You Living in a Computer Simulation?"
+        },
+        "description": {
+          "zh": "把模拟世界转化为概率式哲学论证",
+          "en": "Turning simulated worlds into a probabilistic philosophical argument"
+        },
+        "url": "https://simulation-argument.com/simulation/",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-2003-event-nick-bostrom-portrait",
+      "asset-humanistic-2003-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-2003-event-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-2003-event-record",
+      "source-humanistic-2003-event-nick-bostrom-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-2003-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "论文发表于 2003 年的《哲学季刊》，把长期存在于怀疑论与科幻中的模拟世界设想改写为人口统计和概率推理。论证假定某些后人类文明可能拥有运行大量祖先模拟的计算资源。",
+          "en": "The paper appeared in The Philosophical Quarterly in 2003, recasting simulated worlds from skepticism and science fiction into demographic and probabilistic reasoning. It assumes that some posthuman civilizations might possess enough computing power to run vast numbers of ancestor simulations."
+        },
+        "sourceIds": [
+          "source-humanistic-2003-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "博斯特罗姆没有直接宣称“我们必定生活在模拟中”，而是提出三难：文明几乎都在达到后人类阶段前灭绝、后人类文明几乎都不运行大量祖先模拟，或模拟中的观察者会远多于原始现实中的观察者。论证的力量取决于这些前提及如何定义观察者和概率。",
+          "en": "Bostrom does not simply claim that we certainly live in a simulation. His trilemma says that civilizations almost always die before becoming posthuman, posthuman civilizations almost never run many ancestor simulations, or simulated observers vastly outnumber observers in base reality; the force of the argument depends on these assumptions and on definitions of observers and probability."
+        },
+        "sourceIds": [
+          "source-humanistic-2003-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "哲学家通常把模拟论证视为一项严肃但高度依赖前提的思想实验，而不是可直接验证的科学结论。它广泛影响电影、游戏和技术文化，也促使研究者更清楚地区分逻辑可能性、概率判断与经验证据。",
+          "en": "Philosophers generally treat the simulation argument as a serious but assumption-dependent thought experiment, not a directly testable scientific conclusion. It has influenced films, games and technology culture while encouraging clearer distinctions among logical possibility, probability and empirical evidence."
+        },
+        "sourceIds": [
+          "source-humanistic-2003-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

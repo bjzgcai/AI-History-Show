@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-2017-2049-core",
+    "importance": "core",
+    "text": {
+      "zh": "续写仿生人主题，延伸人与人工生命的边界问题。",
+      "en": "续写仿生人主题，延伸人与人工生命的边界问题。"
+    },
+    "sourceIds": [
+      "source-humanistic-2017-2049-record"
+    ],
+    "status": "needs-review"
+  }
+]

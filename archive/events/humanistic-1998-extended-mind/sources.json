@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1998-extended-mind-record",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《延展心智》",
+      "en": "“The Extended Mind”"
+    },
+    "url": "https://consc.net/papers/extended.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-1998-extended-mind-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "大卫·查尔默斯肖像",
+      "en": "David Chalmers"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:David_chalmers.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：CC BY-SA 4.0。",
+      "en": "Wikimedia Commons file page identifies the subject; license: CC BY-SA 4.0."
+    },
+    "purpose": "image-provenance"
+  }
+]

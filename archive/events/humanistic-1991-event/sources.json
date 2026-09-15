@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1991-event-record",
+    "type": "book-page",
+    "label": {
+      "zh": "图书页面",
+      "en": "Book page"
+    },
+    "title": {
+      "zh": "阿歇特《意识的解释》图书页面",
+      "en": "Hachette book page for Consciousness Explained"
+    },
+    "url": "https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180665/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-humanistic-1991-event-daniel-dennett-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "丹尼尔·丹尼特肖像",
+      "en": "Daniel Dennett portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Daniel_Dennett_2.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《意识的解释》作者肖像；摄影者 Dmitry Rozhkov，CC BY-SA 3.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Author of Consciousness Explained; photograph by Dmitry Rozhkov, CC BY-SA 3.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

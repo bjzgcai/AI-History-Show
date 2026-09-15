@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 2,
+    "eventId": "sandman-1816",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "In 1816, The Sandman brought “Olympia is an automaton so lifelike that she is ” into the conversation about artificial intelligence and human imagination. Let us start with that concrete clue.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Olympia is an automaton so lifelike that she is mistaken for a person. Hoffmann explores emotional projection onto an artificial human and the shock of disillusionment. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.",
+            "sourceIds": ["source-sandman-1816-primary"],
+            "claimIds": ["claim-sandman-1816-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "Let us focus on “The Sandman”: in The Sandman, which part of our understanding of machines does it change?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order.",
+            "sourceIds": ["source-sandman-1816-primary"],
+            "claimIds": ["claim-sandman-1816-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance.",
+            "sourceIds": ["source-sandman-1816-primary"],
+            "claimIds": ["claim-sandman-1816-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "The Sandman's lasting insight is to make “The Sandman” a question that can be revisited.",
+            "sourceIds": ["source-sandman-1816-primary"],
+            "claimIds": ["claim-sandman-1816-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

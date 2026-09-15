@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-2003-event-record",
+    "type": "paper-page",
+    "label": {
+      "zh": "论文页面",
+      "en": "Paper page"
+    },
+    "title": {
+      "zh": "尼克·博斯特罗姆《你生活在计算机模拟中吗？》论文原文",
+      "en": "Nick Bostrom’s paper “Are You Living in a Computer Simulation?”"
+    },
+    "url": "https://simulation-argument.com/simulation/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-humanistic-2003-event-nick-bostrom-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "尼克·博斯特罗姆肖像",
+      "en": "Nick Bostrom portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Prof_Nick_Bostrom_324-1.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "模拟论论文作者尼克·博斯特罗姆肖像；Future of Humanity Institute，CC BY 4.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Portrait of simulation-argument author Nick Bostrom; Future of Humanity Institute, CC BY 4.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

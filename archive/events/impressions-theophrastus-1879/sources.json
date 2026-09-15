@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-impressions-theophrastus-1879-primary",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "《西奥弗拉斯特斯·萨奇的印象》扫描",
+      "en": "Scan of Impressions of Theophrastus Such"
+    },
+    "url": "https://archive.org/details/impressionsofthe00elio",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "来源信息已保留；正式发布前继续核验版本与许可。",
+      "en": "Source information retained; verify edition and terms before publication."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-impressions-theophrastus-1879-george-eliot-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "法国国家图书馆藏乔治·艾略特肖像（Wikimedia Commons）",
+      "en": "George Eliot portrait from BnF Gallica (Wikimedia Commons)"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:George_Eliot_BNF_Gallica.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页标注 Public domain；使用前保留摄影者/作者署名及页面许可要求。",
+      "en": "Wikimedia Commons file page identifies Public domain; retain author attribution and follow the page terms."
+    },
+    "purpose": "image-provenance"
+  }
+]

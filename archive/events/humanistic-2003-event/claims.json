@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-2003-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "将模拟假说从科幻提升为哲学论证。",
+      "en": "将模拟假说从科幻提升为哲学论证。"
+    },
+    "sourceIds": [
+      "source-humanistic-2003-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

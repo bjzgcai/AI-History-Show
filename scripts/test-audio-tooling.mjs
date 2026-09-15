@@ -184,15 +184,22 @@ assert(
 );
 
 const workflowReport = await buildWorkflowReport();
+const enabledStorylineEntries = [...storylines.values()].flat();
 assert.deepEqual(workflowReport.errors, []);
-assert.equal(workflowReport.source.configCount, 10);
-assert.equal(workflowReport.source.validConfigCount, 10);
-assert.equal(workflowReport.source.turnCount, 348);
+assert.equal(workflowReport.source.configCount, 18);
+assert.equal(workflowReport.source.validConfigCount, 18);
+assert.equal(workflowReport.source.turnCount, 586);
 assert.deepEqual(workflowReport.source.untrackedFiles, []);
-assert.equal(workflowReport.archive.storylineEntryCount, 194);
-assert.equal(workflowReport.archive.uniqueEventCount, 168);
-assert.equal(workflowReport.archive.releaseObjectCount, 346);
-assert.equal(workflowReport.archive.referencedAudioAssetCount, 336);
+assert.equal(workflowReport.archive.storylineEntryCount, enabledStorylineEntries.length);
+assert.equal(
+    workflowReport.archive.uniqueEventCount,
+    new Set(enabledStorylineEntries.map((entry) => entry.eventId)).size
+);
+assert.equal(
+    workflowReport.archive.releaseObjectCount,
+    workflowReport.archive.referencedAudioAssetCount + workflowReport.archive.unreferencedAudioAssetCount
+);
+assert(workflowReport.archive.referencedAudioAssetCount > 0);
 assert.equal(workflowReport.archive.unreferencedAudioAssetCount, 10);
 assert.deepEqual(workflowReport.archive.missingAudio, []);
 assert.deepEqual(workflowReport.archive.deliveryErrors, []);

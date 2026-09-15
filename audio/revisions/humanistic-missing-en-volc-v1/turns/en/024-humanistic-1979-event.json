@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 24,
+    "eventId": "humanistic-1979-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Following the timeline to 1979, we arrive at The Hitchhiker's Guide to the Galaxy, where “The Hitchhiker's Guide to the Galaxy began as a ” becomes a cultural question rather than a technical footnote.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "The Hitchhiker's Guide to the Galaxy began as a BBC radio series in 1978, followed by the first novel in 1979. As computers entered everyday culture, it wove an electronic guide, automated spacecraft, planetary computation and cosmic bureaucracy into a comic universe.",
+            "sourceIds": ["source-humanistic-1979-event-record"],
+            "claimIds": ["claim-humanistic-1979-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "The supercomputer Deep Thought can provide the ultimate answer but cannot make people understand the question; Marvin has a “brain the size of a planet” yet receives trivial tasks and remains chronically miserable. The work shows that capability, meaning and well-being do not automatically increase together.",
+            "sourceIds": ["source-humanistic-1979-event-record"],
+            "claimIds": ["claim-humanistic-1979-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Critics generally regard the series as a classic comic treatment of technological philosophy; “42,” Marvin and the Guide have become global cultural symbols. Its value for AI humanities lies in showing that intelligent systems can inherit absurd objectives, institutional structures and value mismatches from their designers.",
+            "sourceIds": ["source-humanistic-1979-event-record"],
+            "claimIds": ["claim-humanistic-1979-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Next comes Gödel, Escher, Bach: An Eternal Golden Braid, where we will follow how “Critics generally regard the series as a classic” enters a new historical setting.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

@@ -1,5 +1,25 @@
 [
   {
+    "id": "source-dartmouth-jam-session-article",
+    "type": "article",
+    "title": {
+      "zh": "达夏的慢聚漫奏——AI助产的 jam session",
+      "en": "Daxia's Slow Jam Session: AI's Midwife"
+    },
+    "url": "https://mp.weixin.qq.com/s/wAZxW3Q1PolyHifuL-ONrw",
+    "language": "zh",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "杨斌关于达特茅斯夏季研究项目、雷·所罗门诺夫档案及慢聚漫奏创新方式的历史叙述；图片版权需另行核实。",
+      "en": "Yang Bin's historical account of the Dartmouth summer project, Ray Solomonoff's archival record, and the slow-jam innovation model; image rights require separate verification."
+    },
+    "label": {
+      "zh": "文章",
+      "en": "Article"
+    },
+    "purpose": "historical-context"
+  },
+  {
     "id": "source-dartmouth-proposal",
     "type": "archive",
     "title": {

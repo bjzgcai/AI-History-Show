@@ -1,0 +1,283 @@
+{
+    "scope": "古代神话至1949年新增事件（塔洛斯除外）",
+    "sourcePolicy": "优先博物馆、图书馆、档案馆和 Wikimedia Commons 文件页；许可未明确或仅有馆藏浏览权的图片只登记为候选，不直接发布。",
+    "events": [
+        {
+            "eventId": "descartes-automata",
+            "images": [
+                {
+                    "role": "人物肖像",
+                    "title": "Frans Hals - Portrait of René Descartes",
+                    "url": "https://commons.wikimedia.org/wiki/File:Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons",
+                    "usage": "笛卡尔人物资料卡；需在页面保留画家和馆藏说明。"
+                },
+                {
+                    "role": "文献/纸本",
+                    "title": "Descartes, Discourse on the Method scan",
+                    "url": "https://www.gutenberg.org/ebooks/23306",
+                    "license": "Public domain text",
+                    "source": "Project Gutenberg",
+                    "usage": "方法论原始文本或纸本视觉；不把网页截图当作独立历史图像。"
+                }
+            ]
+        },
+        {
+            "eventId": "jaquet-droz-automata",
+            "images": [
+                {
+                    "role": "自动人偶实拍",
+                    "title": "Jaquet-Droz automata - Writer",
+                    "url": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Writer.jpg",
+                    "license": "CC BY-SA 4.0",
+                    "source": "Wikimedia Commons",
+                    "usage": "自动人偶主图；署名并遵守相同方式共享。"
+                },
+                {
+                    "role": "自动人偶实拍",
+                    "title": "Jaquet-Droz automata - Musician",
+                    "url": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Musician.jpg",
+                    "license": "CC BY-SA 4.0",
+                    "source": "Wikimedia Commons",
+                    "usage": "第二张功能展示图；署名并遵守相同方式共享。"
+                },
+                {
+                    "role": "馆藏资料",
+                    "title": "Musée d'Art et d'Histoire de Neuchâtel automata",
+                    "url": "https://www.mahn.ch/",
+                    "license": "Museum terms",
+                    "source": "Musée d'Art et d'Histoire de Neuchâtel",
+                    "usage": "核对馆藏、制造者和现场拍摄许可；不直接抓取图片。"
+                }
+            ]
+        },
+        {
+            "eventId": "sandman-1816",
+            "images": [
+                {
+                    "role": "作品插图",
+                    "title": "E.T.A. Hoffmann - Der Sandmann 009",
+                    "url": "https://commons.wikimedia.org/wiki/File:E.T.A._Hoffmann_-_Der_Sandmann_009.jpg",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons",
+                    "usage": "《沙人》公版插图；可作为作品视觉。"
+                },
+                {
+                    "role": "作品插图",
+                    "title": "Hoffmann sandmann.png",
+                    "url": "https://commons.wikimedia.org/wiki/File:Hoffmann_sandmann.png",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons",
+                    "usage": "作者自绘/作品相关插图候选。"
+                }
+            ]
+        },
+        {
+            "eventId": "frankenstein-1818",
+            "images": [
+                {
+                    "role": "人物肖像",
+                    "title": "Mary Shelley life and letters scan",
+                    "url": "https://commons.wikimedia.org/wiki/File:The_life_and_letters_of_Mary_Wollstonecraft_Shelley_(IA_lifelettersofmar01marsrich).pdf",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons / Internet Archive",
+                    "usage": "从公版传记扫描中提取肖像或书页；需注明页码。"
+                },
+                {
+                    "role": "作品/文献",
+                    "title": "British Library: Frankenstein",
+                    "url": "https://www.bl.uk/works/frankenstein",
+                    "license": "British Library terms",
+                    "source": "British Library",
+                    "usage": "用于首版书页、版本和馆藏信息；图片再利用前核对条款。"
+                }
+            ]
+        },
+        {
+            "eventId": "darwin-among-machines-1863",
+            "images": [
+                {
+                    "role": "人物肖像",
+                    "title": "Samuel Butler by Charles Gogin",
+                    "url": "https://commons.wikimedia.org/wiki/File:Samuel_Butler_by_Charles_Gogin.jpg",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons / National Portrait Gallery record",
+                    "usage": "塞缪尔·巴特勒肖像；保留 National Portrait Gallery 来源说明。"
+                },
+                {
+                    "role": "人物肖像",
+                    "title": "Samuel Butler self portrait at St John's College",
+                    "url": "https://commons.wikimedia.org/wiki/File:Samuel_Butler_(1835-1902)_-_Samuel_Butler_(1835%E2%80%931902),_Writer,_Artist,_Composer_and_Photographer_(Self_Portrait)_-_81_-_St_John's_College.jpg",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons / St John's College",
+                    "usage": "可作为作者资料卡的替代肖像。"
+                },
+                {
+                    "role": "原始文本",
+                    "title": "Darwin among the Machines",
+                    "url": "https://www.gutenberg.org/ebooks/1906",
+                    "license": "Public domain text",
+                    "source": "Project Gutenberg",
+                    "usage": "纸本/原文资料入口。"
+                }
+            ]
+        },
+        {
+            "eventId": "erewhon-1872",
+            "images": [
+                {
+                    "role": "首版封面/书页",
+                    "title": "Erewhon-1872-001",
+                    "url": "https://commons.wikimedia.org/wiki/File:Erewhon-1872-001.jpg",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons",
+                    "usage": "1872 首版扫描，可作首图或纸本视觉。"
+                },
+                {
+                    "role": "首版扫描",
+                    "title": "Erewhon - Butler - 1872.djvu",
+                    "url": "https://commons.wikimedia.org/wiki/File:Erewhon_-_Butler_-_1872.djvu",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons",
+                    "usage": "用于放大“机器之书”章节的纸本资料。"
+                }
+            ]
+        },
+        {
+            "eventId": "impressions-theophrastus-1879",
+            "images": [
+                {
+                    "role": "人物肖像",
+                    "title": "George Eliot BNF Gallica",
+                    "url": "https://commons.wikimedia.org/wiki/File:George_Eliot_BNF_Gallica.jpg",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons / BnF Gallica",
+                    "usage": "乔治·艾略特肖像；注明 BnF/Gallica 馆藏来源。"
+                },
+                {
+                    "role": "人物肖像",
+                    "title": "Portrait of George Eliot, MET",
+                    "url": "https://commons.wikimedia.org/wiki/File:Portrait_of_George_Eliot,_seen_in_profile_to_the_left_MET_DP829449.jpg",
+                    "license": "CC0",
+                    "source": "The Metropolitan Museum of Art",
+                    "usage": "CC0 肖像候选；优先用于人物资料卡。"
+                }
+            ]
+        },
+        {
+            "eventId": "future-eve-1886",
+            "images": [
+                {
+                    "role": "人物肖像",
+                    "title": "L'Isle-Adam",
+                    "url": "https://commons.wikimedia.org/wiki/File:L%27Isle-Adam.jpg",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons",
+                    "usage": "利尔·亚当作者肖像；保留图片页说明。"
+                },
+                {
+                    "role": "作品书页",
+                    "title": "L'Ève future by Villiers de L'Isle-Adam PDF",
+                    "url": "https://commons.wikimedia.org/wiki/File:L%27%C3%8Ave_future_by_Villiers_de_L%27Isle-Adam.pdf",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons",
+                    "usage": "作品标题页/纸本资料视觉。"
+                },
+                {
+                    "role": "艺术关联",
+                    "title": "Third Future, from Eve and the Future, Art Institute of Chicago",
+                    "url": "https://commons.wikimedia.org/wiki/File:Third_Future,_from_the_series_Eve_and_the_Future,_Opus_III,_no,_6_(1880),_etching,_290_%C3%97_201_mm.,_Art_Institute_of_Chicago.jpg",
+                    "license": "Public domain",
+                    "source": "Art Institute of Chicago",
+                    "usage": "可作为同名意象的艺术关联图，需明确不是小说原插图。"
+                }
+            ]
+        },
+        {
+            "eventId": "new-china-future-1902",
+            "images": [
+                {
+                    "role": "人物肖像",
+                    "title": "Liang Qichao portrait",
+                    "url": "https://commons.wikimedia.org/wiki/File:Liang_Qichao_portrait.jpg",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons",
+                    "usage": "梁启超人物资料卡。"
+                },
+                {
+                    "role": "人物肖像",
+                    "title": "Liang Qichao4a",
+                    "url": "https://commons.wikimedia.org/wiki/File:Liang_Qichao4a.jpg",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons",
+                    "usage": "1901年前后肖像候选。"
+                },
+                {
+                    "role": "纸本文献",
+                    "title": "《新中国未来记》国家图书馆检索",
+                    "url": "https://find.nlc.cn/",
+                    "license": "Library catalogue terms",
+                    "source": "中国国家图书馆",
+                    "usage": "先核对具体版本扫描，再决定是否下载书页。"
+                }
+            ]
+        },
+        {
+            "eventId": "metropolis-1927",
+            "images": [
+                {
+                    "role": "电影海报",
+                    "title": "Metropolis poster 1",
+                    "url": "https://commons.wikimedia.org/wiki/File:Boris_Bilinski_(1900-1948)_Plakat_f%C3%BCr_den_Film_Metropolis_(1).jpg",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons",
+                    "usage": "1927 年电影海报；可作为主视觉。"
+                },
+                {
+                    "role": "电影剧照/片场照",
+                    "title": "Metropolis set photograph 05",
+                    "url": "https://commons.wikimedia.org/wiki/File:Horst_von_Harbou_-_Metropolis_set_photograph_05.jpg",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons",
+                    "usage": "片场或制作史视觉；确认图片描述与具体画面后使用。"
+                },
+                {
+                    "role": "纸本资料",
+                    "title": "1927 Metropolis film program",
+                    "url": "https://commons.wikimedia.org/wiki/File:1927_Metropolis_film_program_from_the_United_Kingdom_26.jpg",
+                    "license": "Public domain",
+                    "source": "Wikimedia Commons",
+                    "usage": "首映时代节目单/档案视觉。"
+                }
+            ]
+        },
+        {
+            "eventId": "multivac-1948",
+            "images": [
+                {
+                    "role": "作者肖像",
+                    "title": "Isaac Asimov portrait search",
+                    "url": "https://commons.wikimedia.org/w/index.php?search=Isaac+Asimov&title=Special:MediaSearch&type=image",
+                    "license": "需逐文件核验",
+                    "source": "Wikimedia Commons",
+                    "usage": "选择公有领域或明确许可的阿西莫夫肖像；不要使用无许可网络头像。"
+                },
+                {
+                    "role": "纸本文献",
+                    "title": "Isaac Asimov bibliography / Internet Speculative Fiction Database",
+                    "url": "https://isfdb.org/cgi-bin/se.cgi?arg=MULTIVAC&type=Fiction",
+                    "license": "Database terms",
+                    "source": "ISFDB",
+                    "usage": "用于确认 MULTIVAC 首次出现的具体作品和封面版本；图片需另行核验。"
+                }
+            ]
+        }
+    ],
+    "nextActions": [
+        "优先下载并登记 Public domain 或 CC0 的作者肖像和首版扫描。",
+        "CC BY/CC BY-SA 图片需在 assets.json 中保留摄影者、许可和署名信息。",
+        "电影截图只从公有领域海报、节目单或档案馆明确授权页面获取；不直接截取流媒体画面。",
+        "每个事件至少选择一张主体图和一张文献/解释图后，再写入 assetIds。"
+    ]
+}

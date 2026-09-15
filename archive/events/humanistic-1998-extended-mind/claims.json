@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1998-extended-mind-core",
+    "importance": "core",
+    "text": {
+      "zh": "安迪·克拉克与大卫·查尔默斯提出，认知过程可以延伸到身体、工具和外部环境，AI也可能成为人类心智的扩展而非替代。",
+      "en": "Andy Clark and David Chalmers argue that cognition can extend into the body, tools and environment, allowing AI to function as an extension rather than a replacement of human minds."
+    },
+    "sourceIds": [
+      "source-humanistic-1998-extended-mind-record"
+    ],
+    "status": "needs-review"
+  }
+]

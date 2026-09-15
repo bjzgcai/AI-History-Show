@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v2-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 26,
+    "eventId": "humanistic-1980-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1980年，中文房间思想实验进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "塞尔在 1980 年论文《心灵、大脑与程序》中提出中文房间，以回应把计算机程序本身视为心智解释的“强人工智能”主张。当时基于规则的符号 AI 仍是认知科学和人工智能研究的重要范式。",
+            "sourceIds": ["source-humanistic-1980-event-record"],
+            "claimIds": ["claim-humanistic-1980-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个有吸引力的方向。真正让它成立的核心思想是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "思想实验让一个不懂中文的人按照英文规则处理中文字符，并向房间外给出看似流利的回答。塞尔据此区分语法与语义：系统可以在行为上通过测试，但内部是否存在理解，仍不能仅由输入输出表现推出。",
+            "sourceIds": ["source-humanistic-1980-event-record"],
+            "claimIds": ["claim-humanistic-1980-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "心灵哲学家通常把中文房间视为机器理解争论中最有影响力、也最具争议的思想实验之一。系统回应、机器人回应和具身认知等反驳不断扩展讨论，而生成式 AI 的流畅语言表现又使语法、语义与主体经验的问题重新受到关注。",
+            "sourceIds": ["source-humanistic-1980-event-record"],
+            "claimIds": ["claim-humanistic-1980-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看中文房间思想实验，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-humanistic-1980-event-record"],
+            "claimIds": ["claim-humanistic-1980-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

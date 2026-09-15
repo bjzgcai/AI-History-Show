@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-1968-event-record",
+    "type": "book-page",
+    "label": {
+      "zh": "图书页面",
+      "en": "Book page"
+    },
+    "title": {
+      "zh": "企鹅兰登《仿生人会梦见电子羊吗？》图书页面",
+      "en": "Penguin Random House book page for Do Androids Dream of Electric Sheep?"
+    },
+    "url": "https://www.penguinrandomhouse.com/books/61236/do-androids-dream-of-electric-sheep-by-philip-k-dick/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-humanistic-1968-event-androids-dream-cover",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《仿生人会梦见电子羊吗？》封面资料",
+      "en": "Do Androids Dream of Electric Sheep? cover reference"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:DoAndroidsDream.png",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "菲利普·K·迪克作品封面资料；文件页标注公有领域。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Cover reference for Philip K. Dick's novel; the file page marks it public domain. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1968-event-philip-k-dick-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "菲利普·K·迪克20世纪60年代初肖像",
+      "en": "Philip K. Dick portrait from the early 1960s"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Philip_K_Dick_in_early_1960s_Arthur_Knight_(3x4_cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Commons 文件页确认人物为菲利普·K·迪克，摄影者 Arthur Knight；页面将图片标为公有领域。",
+      "en": "The Commons file page identifies Philip K. Dick; photographed by Arthur Knight and marked public domain."
+    },
+    "purpose": "image-provenance"
+  }
+]

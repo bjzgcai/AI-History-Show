@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 47,
+    "eventId": "humanistic-2010-teamlab",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "teamLab Digital Art, first appearing in 2010至今, opens a new view of the humanities of AI: what does “teamLab was founded in Tokyo in 2001 as an inter” really mean?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "teamLab was founded in Tokyo in 2001 as an interdisciplinary collective of artists, programmers, engineers, animators, mathematicians, architects and others. Around 2010 its large digital installations gained wider international exhibition attention, later leading to permanent immersive venues such as Borderless.",
+            "sourceIds": ["source-humanistic-2010-teamlab-record"],
+            "claimIds": ["claim-humanistic-2010-teamlab-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "Flowers, water, animals and calligraphy are not simply fixed videos; programs change them in real time according to space, time and visitor position. Visitors do not merely observe a finished object but alter it through movement, making authors, systems, environments and participants co-producers of experience.",
+            "sourceIds": ["source-humanistic-2010-teamlab-record"],
+            "claimIds": ["claim-humanistic-2010-teamlab-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Digital-art researchers generally regard teamLab as a leading collective joining generative systems, interactive installation and mass exhibition. Its influence also brings criticism: immersive, highly shareable experiences may obscure the algorithms, infrastructure and visitor data participating in the work.",
+            "sourceIds": ["source-humanistic-2010-teamlab-record"],
+            "claimIds": ["claim-humanistic-2010-teamlab-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "teamLab Digital Art matters not only for what it said then, but for the continuing doorway it left open around “Digital-art researchers generally regard teamLab”.",
+            "sourceIds": ["source-humanistic-2010-teamlab-record"],
+            "claimIds": ["claim-humanistic-2010-teamlab-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}
