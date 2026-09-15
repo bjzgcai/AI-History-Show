@@ -1,0 +1,174 @@
+{
+  "id": "humanistic-1998-event",
+  "year": 1987,
+  "date": "1987",
+  "title": {
+    "zh": "《文明》系列（The Culture）",
+    "en": "The Culture Series"
+  },
+  "description": {
+    "zh": "伊恩·M·班克斯的《文明》系列描绘由超级智能“心智”、人类与其他生命共同组成的后稀缺社会，探索 AI 治理、自由和干预伦理。",
+    "en": "Iain M. Banks's Culture series depicts a post-scarcity society shared by superintelligent Minds, humans and other beings, exploring AI governance, freedom and intervention."
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国",
+      "en": "United Kingdom"
+    },
+    "place": {
+      "zh": "英国科幻出版语境",
+      "en": "United Kingdom science-fiction publishing context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-48",
+      "role": {
+        "zh": "《文明》系列作者",
+        "en": "Author of the Culture series"
+      },
+      "primary": true,
+      "avatarAssetId": "asset-humanistic-1998-event-iain-banks-portrait"
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "原清单中的“文明”指伊恩·M·班克斯的 The Culture 科幻系列，不是席德·梅尔的《文明》游戏；已修正标题、人物和展示图片。系列始于 1987 年，本事件按系列首部小说的出版时间标记。",
+      "en": "The source list's Chinese label refers to Iain M. Banks's Culture science-fiction series, not Sid Meier's Civilization games; the title, figure and display image have been corrected. The series began in 1987, so this event is dated by the first novel's publication."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《文明》系列（The Culture）",
+      "en": "The Culture Series"
+    },
+    "displaySummary": {
+      "zh": "由超级智能“心智”协作治理的后稀缺文明",
+      "en": "A post-scarcity civilization co-governed by superintelligent Minds"
+    },
+    "displayDescription": {
+      "zh": "<p>伊恩·M·班克斯的《文明》系列描绘由超级智能“心智”、人类与其他生命共同组成的后稀缺社会，探索 AI 治理、自由和干预伦理。 “心智”管理飞船、轨道栖息地和大部分物质生产，使普通成员获得高度自由与富足，但重要决策仍受到远超人类能力的智能影响。系列不断检验一个张力：善意且高效的 AI 治理是否仍会形成家长主义，以及文明是否有权干预其他社会。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 《文明》系列始于 1987 年的《考虑一下菲莱巴》，并在此后多部小说中持续扩展。与常见的机器反叛叙事不同，班克斯把高级 AI 设定为文明基础设施、政治参与者和具有独特性格的社会成员。</p><p> 科幻研究者通常把《文明》系列视为少见而成熟的亲 AI 乌托邦想象，但也强调作品并未回避权力和道德代价。它为今天讨论后稀缺经济、AI 公共治理和人机共同体提供了区别于“灭绝风险”叙事的长期参照。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Iain M. Banks's Culture series depicts a post-scarcity society shared by superintelligent Minds, humans and other beings, exploring AI governance, freedom and intervention. Minds manage ships, orbital habitats and most material production, giving ordinary members great freedom and abundance while decisions remain influenced by intelligence far beyond human ability. The series repeatedly tests whether benevolent, effective AI governance can still become paternalistic and whether such a civilization may intervene in others.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. The Culture series began with Consider Phlebas in 1987 and expanded across later novels. Unlike familiar machine-rebellion stories, Banks presents advanced AI as infrastructure, political actors and socially distinctive individuals.</p><p> Science-fiction scholars generally regard the Culture as a rare and sophisticated pro-AI utopian vision, while noting that the novels do not avoid power or moral cost. The series offers current debates on post-scarcity economics, public AI governance and human-machine communities a durable alternative to extinction-centered narratives. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "资料检索入口",
+          "en": "Research entry"
+        },
+        "title": {
+          "zh": "《文明》系列（The Culture）",
+          "en": "The Culture Series"
+        },
+        "description": {
+          "zh": "由超级智能“心智”协作治理的后稀缺文明",
+          "en": "A post-scarcity civilization co-governed by superintelligent Minds"
+        },
+        "url": "https://en.wikipedia.org/wiki/Culture_series",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1998-event-iain-banks-portrait",
+      "asset-humanistic-1998-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1998-event-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-1998-event-record",
+      "source-humanistic-1998-event-iain-banks-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-1998-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《文明》系列始于 1987 年的《考虑一下菲莱巴》，并在此后多部小说中持续扩展。与常见的机器反叛叙事不同，班克斯把高级 AI 设定为文明基础设施、政治参与者和具有独特性格的社会成员。",
+          "en": "The Culture series began with Consider Phlebas in 1987 and expanded across later novels. Unlike familiar machine-rebellion stories, Banks presents advanced AI as infrastructure, political actors and socially distinctive individuals."
+        },
+        "sourceIds": [
+          "source-humanistic-1998-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "“心智”管理飞船、轨道栖息地和大部分物质生产，使普通成员获得高度自由与富足，但重要决策仍受到远超人类能力的智能影响。系列不断检验一个张力：善意且高效的 AI 治理是否仍会形成家长主义，以及文明是否有权干预其他社会。",
+          "en": "Minds manage ships, orbital habitats and most material production, giving ordinary members great freedom and abundance while decisions remain influenced by intelligence far beyond human ability. The series repeatedly tests whether benevolent, effective AI governance can still become paternalistic and whether such a civilization may intervene in others."
+        },
+        "sourceIds": [
+          "source-humanistic-1998-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "科幻研究者通常把《文明》系列视为少见而成熟的亲 AI 乌托邦想象，但也强调作品并未回避权力和道德代价。它为今天讨论后稀缺经济、AI 公共治理和人机共同体提供了区别于“灭绝风险”叙事的长期参照。",
+          "en": "Science-fiction scholars generally regard the Culture as a rare and sophisticated pro-AI utopian vision, while noting that the novels do not avoid power or moral cost. The series offers current debates on post-scarcity economics, public AI governance and human-machine communities a durable alternative to extinction-centered narratives."
+        },
+        "sourceIds": [
+          "source-humanistic-1998-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 4,
+    "eventId": "jaquet-droz-automata",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "把镜头拨回1768—1774年，雅克-德罗自动人偶从“能写字、绘画和演奏的机械人偶，把精密机械、拟人动作与观众对人”出发，重新追问机器、心智与人的关系。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "能写字、绘画和演奏的机械人偶，把精密机械、拟人动作与观众对人工生命的想象连接起来。它是现代机器人概念出现前的重要自动体实例。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+            "sourceIds": ["source-jaquet-droz-automata-primary"],
+            "claimIds": ["claim-jaquet-droz-automata-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "听众最容易忽略的细节也许是“它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会”。它为什么成为雅克-德罗自动人偶的关键？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+            "sourceIds": ["source-jaquet-droz-automata-primary"],
+            "claimIds": ["claim-jaquet-droz-automata-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+            "sourceIds": ["source-jaquet-droz-automata-primary"],
+            "claimIds": ["claim-jaquet-droz-automata-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "下一站是《弗兰肯斯坦》，我们会继续追踪“雅克-德罗自动人偶”如何进入新的历史场景。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

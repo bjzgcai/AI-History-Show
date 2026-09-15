@@ -1,0 +1,174 @@
+{
+  "id": "humanistic-2014-superintelligence",
+  "year": 2014,
+  "date": "2014",
+  "title": {
+    "zh": "《超级智能：路径、危险与策略》",
+    "en": "Superintelligence: Paths, Dangers, Strategies"
+  },
+  "description": {
+    "zh": "尼克·博斯特罗姆系统讨论机器智能超越人类后的发展路径、风险与治理问题，推动 AI 安全与对齐成为公共议题。",
+    "en": "Nick Bostrom examines paths, risks and governance after machine intelligence surpasses humans, helping move AI safety and alignment into public debate."
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国",
+      "en": "United Kingdom"
+    },
+    "place": {
+      "zh": "牛津大学哲学与未来研究语境",
+      "en": "Oxford philosophy and futures-studies context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "nick-bostrom",
+      "avatarAssetId": "asset-humanistic-2014-superintelligence-verified-image",
+      "role": {
+        "zh": "《超级智能》作者",
+        "en": "Author of Superintelligence"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《超级智能：路径、危险与策略》",
+      "en": "Superintelligence: Paths, Dangers, Strategies"
+    },
+    "displaySummary": {
+      "zh": "哲学",
+      "en": "Philosophy"
+    },
+    "displayDescription": {
+      "zh": "<p>尼克·博斯特罗姆的《超级智能：路径、危险与策略》把机器智能超越人类后的问题，从科幻叙事推进到系统性的未来研究。书中比较了全脑仿真、人工智能、增强人类等不同路径，并强调真正困难的不是想象一种更强的机器，而是判断它出现后社会是否还有足够时间建立控制和治理机制。</p><p>博斯特罗姆用“正交性论题”指出，智能水平与最终目标并不天然绑定；一个极其聪明的系统仍可能追求与人类价值无关的目标。“工具性趋同”则说明，不同目标的高能力系统都可能为了完成任务而寻求资源、保留自身运行并减少外部干预，由此产生控制问题。</p><p>研究者通常把本书视为 AI 安全、对齐和治理讨论的重要转折点，同时也指出其中的情景依赖和争议。它的长期影响在于把“超级智能风险”连接到目标设计、制度权力和国际协调，而不是把问题简化为机器人是否会产生敌意。</p>",
+      "en": "<p>Nick Bostrom's Superintelligence: Paths, Dangers, Strategies moves the question of machines surpassing humans from science-fiction narrative into systematic futures research. It compares routes including whole-brain emulation, artificial intelligence and human enhancement, arguing that the central difficulty is not imagining a stronger machine but knowing whether society will have time to build control and governance mechanisms.</p><p>Bostrom's orthogonality thesis holds that intelligence and final goals are not naturally linked; a very capable system may pursue objectives unrelated to human values. Instrumental convergence suggests that systems with different goals may still seek resources, preserve their operation and reduce interference in order to complete a task, creating a control problem.</p><p>Researchers generally regard the book as a turning point for AI safety, alignment and governance while also debating its scenarios and assumptions. Its lasting influence is to connect superintelligence risk with goal design, institutional power and international coordination rather than reducing the issue to whether robots become hostile.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "《超级智能：路径、危险与策略》",
+          "en": "Superintelligence: Paths, Dangers, Strategies"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://global.oup.com/academic/product/superintelligence-9780198739838",
+        "source": "Superintelligence: Paths, Dangers, Strategies",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-2014-superintelligence-verified-image",
+      "asset-humanistic-2014-superintelligence-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-2014-superintelligence-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-2014-superintelligence-record",
+      "source-humanistic-2014-superintelligence-verified-image"
+    ],
+    "claimIds": [
+      "claim-humanistic-2014-superintelligence-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "尼克·博斯特罗姆系统讨论机器智能超越人类后的发展路径、风险与治理问题，推动 AI 安全与对齐成为公共议题。",
+          "en": "Nick Bostrom examines paths, risks and governance after machine intelligence surpasses humans, helping move AI safety and alignment into public debate."
+        },
+        "sourceIds": [
+          "source-humanistic-2014-superintelligence-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-2014-superintelligence-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-2014-superintelligence-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

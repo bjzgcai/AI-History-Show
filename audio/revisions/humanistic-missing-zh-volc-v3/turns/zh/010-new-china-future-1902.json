@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 10,
+    "eventId": "new-china-future-1902",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1902年，《新中国未来记》把“作品以未来中国为背景组织科技、教育与社会想象，是中国早期科幻”带入了人工智能与人文想象的讨论。先从这个具体线索看起。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "作品以未来中国为背景组织科技、教育与社会想象，是中国早期科幻和技术乌托邦叙事的重要节点。它与 AI 的关系主要体现在对技术塑造社会的想象，而非具体机器智能。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+            "sourceIds": ["source-new-china-future-1902-primary"],
+            "claimIds": ["claim-new-china-future-1902-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+            "sourceIds": ["source-new-china-future-1902-primary"],
+            "claimIds": ["claim-new-china-future-1902-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+            "sourceIds": ["source-new-china-future-1902-primary"],
+            "claimIds": ["claim-new-china-future-1902-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "面对“研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现”，我们是在延续《新中国未来记》的设想，还是已经走向了另一条路？",
+            "sourceIds": ["source-new-china-future-1902-primary"],
+            "claimIds": ["claim-new-china-future-1902-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

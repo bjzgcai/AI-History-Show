@@ -113,7 +113,8 @@ function activeVariant(event) {
     const variant = localeVariant(event);
     if (!variant) return null;
     const revisionOptions = variant.revisionOptions || [];
-    return revisionOptions.find((option) => option.revision?.kind === state.version) || revisionOptions[0] || variant;
+    const matchingOptions = revisionOptions.filter((option) => option.revision?.kind === state.version);
+    return matchingOptions.at(-1) || revisionOptions.at(-1) || variant;
 }
 
 function versionLabel(version) {

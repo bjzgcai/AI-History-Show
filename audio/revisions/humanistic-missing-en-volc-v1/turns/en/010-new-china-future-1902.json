@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 10,
+    "eventId": "new-china-future-1902",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "In 1902, The Future of New China brought “Set in a future China, the work organizes vision” into the conversation about artificial intelligence and human imagination. Let us start with that concrete clue.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Set in a future China, the work organizes visions of technology, education and society. Its relevance to AI lies mainly in imagining technology as a force shaping society, rather than in depicting machine intelligence itself. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.",
+            "sourceIds": ["source-new-china-future-1902-primary"],
+            "claimIds": ["claim-new-china-future-1902-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order.",
+            "sourceIds": ["source-new-china-future-1902-primary"],
+            "claimIds": ["claim-new-china-future-1902-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance.",
+            "sourceIds": ["source-new-china-future-1902-primary"],
+            "claimIds": ["claim-new-china-future-1902-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Faced with “The Future of New China”, are we extending The Future of New China's idea, or taking a different path?",
+            "sourceIds": ["source-new-china-future-1902-primary"],
+            "claimIds": ["claim-new-china-future-1902-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

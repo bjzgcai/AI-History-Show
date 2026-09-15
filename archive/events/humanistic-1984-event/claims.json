@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1984-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "基因工程专家培育微小智能生命体，最终改变人类、世界乃至宇宙法则。",
+      "en": "基因工程专家培育微小智能生命体，最终改变人类、世界乃至宇宙法则。"
+    },
+    "sourceIds": [
+      "source-humanistic-1984-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

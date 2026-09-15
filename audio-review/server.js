@@ -15,6 +15,7 @@ const DEFAULT_PUBLIC_ROOT = path.join(ROOT, 'tools', 'audio-review-console');
 const DEFAULT_REVIEW_DATA = path.join(DEFAULT_PUBLIC_ROOT, 'review-data.json');
 const DEFAULT_DATABASE = path.join(ROOT, '.tmp', 'audio-review', 'reviews.sqlite');
 const DEFAULT_TOKEN_FILE = path.join(ROOT, '.secrets', 'audio-review-tokens.json');
+const AUDIO_REVIEW_AUDIO_PREFIX = 'resources/audio/generated';
 const MAX_BODY_BYTES = 64 * 1024;
 const MIME = {
     '.css': 'text/css; charset=utf-8',
@@ -188,8 +189,48 @@ function serveAudio(req, res, filePath) {
     else fs.createReadStream(filePath, parsed).pipe(res);
 }
 
+function isPathInside(root, target) {
+    const relative = path.relative(root, target);
+    return relative === '' || (relative && !relative.startsWith('..') && !path.isAbsolute(relative));
+}
+
+function resolveReviewAudioPath(audioPath, options) {
+    const projectRoot = path.resolve(options.projectRoot);
+    const audioRoot = path.resolve(options.audioRoot || path.join(projectRoot, AUDIO_REVIEW_AUDIO_PREFIX));
+    const rawAudioPath = String(audioPath || '').trim();
+    if (!rawAudioPath || rawAudioPath.includes('\0') || rawAudioPath.includes('\\')) {
+        throw Object.assign(new Error('Invalid review audio path'), { statusCode: 403 });
+    }
+    if (path.posix.isAbsolute(rawAudioPath)) {
+        throw Object.assign(new Error('Review audio path must be relative'), { statusCode: 403 });
+    }
+
+    const normalizedAudioPath = path.posix.normalize(rawAudioPath);
+    if (
+        normalizedAudioPath === '..' ||
+        normalizedAudioPath.startsWith('../') ||
+        (normalizedAudioPath !== AUDIO_REVIEW_AUDIO_PREFIX &&
+            !normalizedAudioPath.startsWith(`${AUDIO_REVIEW_AUDIO_PREFIX}/`))
+    ) {
+        throw Object.assign(new Error('Audio path is outside the review audio root'), { statusCode: 403 });
+    }
+
+    const relativeAudioPath =
+        normalizedAudioPath === AUDIO_REVIEW_AUDIO_PREFIX
+            ? ''
+            : normalizedAudioPath.slice(`${AUDIO_REVIEW_AUDIO_PREFIX}/`.length);
+    const filePath = path.resolve(audioRoot, relativeAudioPath);
+    if (!isPathInside(audioRoot, filePath)) {
+        throw Object.assign(new Error('Audio path is outside the review audio root'), { statusCode: 403 });
+    }
+    return filePath;
+}
+
 function createAudioReviewServer(options = {}) {
     const projectRoot = path.resolve(options.projectRoot || ROOT);
+    const audioRoot = path.resolve(
+        options.audioRoot || process.env.AUDIO_REVIEW_AUDIO_ROOT || path.join(projectRoot, AUDIO_REVIEW_AUDIO_PREFIX)
+    );
     const publicRoot = path.resolve(options.publicRoot || process.env.AUDIO_REVIEW_PUBLIC_ROOT || DEFAULT_PUBLIC_ROOT);
     const reviewDataPath = path.resolve(options.reviewDataPath || process.env.AUDIO_REVIEW_DATA || DEFAULT_REVIEW_DATA);
     const databasePath = path.resolve(options.databasePath || process.env.AUDIO_REVIEW_DB || DEFAULT_DATABASE);
@@ -308,13 +349,7 @@ function createAudioReviewServer(options = {}) {
                 const activeCatalog = currentCatalog();
                 const audioPath = activeCatalog.audioFiles.get(audioMatch[1]);
                 if (!audioPath) throw Object.assign(new Error('Review audio not found'), { statusCode: 404 });
-                const filePath = path.resolve(projectRoot, audioPath);
-                const audioRoot = path.resolve(
-                    options.audioRoot || path.join(projectRoot, 'resources', 'audio', 'generated')
-                );
-                if (!filePath.startsWith(`${audioRoot}${path.sep}`)) {
-                    throw Object.assign(new Error('Audio path is outside the review audio root'), { statusCode: 403 });
-                }
+                const filePath = resolveReviewAudioPath(audioPath, { projectRoot, audioRoot });
                 serveAudio(req, res, filePath);
                 return;
             }
@@ -364,4 +399,4 @@ if (require.main === module) {
     }
 }
 
-module.exports = { createAudioReviewServer, parseByteRange };
+module.exports = { createAudioReviewServer, parseByteRange, resolveReviewAudioPath };

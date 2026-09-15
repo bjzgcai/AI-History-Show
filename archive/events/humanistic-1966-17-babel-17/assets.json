@@ -1,0 +1,171 @@
+[
+  {
+    "id": "asset-humanistic-1966-17-babel-17-vernor-vinge-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1966-17-babel-17/vernor-vinge-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "弗诺·文奇肖像",
+      "en": "Vernor Vinge portrait"
+    },
+    "subcaption": {
+      "zh": "《真名实姓》作者；此前误配到本事件，现仅作后台资料保留。",
+      "en": "Author of True Names; previously mismatched to this event and retained only as a backend record."
+    },
+    "sourceId": "source-humanistic-1966-17-babel-17-vernor-vinge-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vernor_Vinge_(cropped).jpg",
+    "rights": {
+      "status": "cc-by-sa-3.0",
+      "license": {
+        "zh": "CC BY SA 3.0",
+        "en": "CC BY SA 3.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "selectionReview": {
+      "status": "excluded-from-variants",
+      "reason": {
+        "zh": "弗诺·文奇并非《巴别塔-17》的作者；该肖像仅保留为检索记录，不用于事件展示。",
+        "en": "Vernor Vinge is not the author of Babel-17; the portrait is retained as a research record but excluded from event display."
+      },
+      "reasonCode": "historical-reference",
+      "reviewedAt": "2026-08-27"
+    },
+    "figureIds": [
+      "humanistic-figure-21"
+    ]
+  },
+  {
+    "id": "asset-humanistic-1966-17-babel-17-samuel-delany-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1966-17-babel-17/samuel-delany-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "塞缪尔·R·德兰尼肖像",
+      "en": "Samuel R. Delany portrait"
+    },
+    "subcaption": {
+      "zh": "《巴别塔-17》作者。",
+      "en": "Author of Babel-17."
+    },
+    "sourceId": "source-humanistic-1966-17-babel-17-samuel-delany-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Headshot_8_Samuel_Delany.jpg",
+    "rights": {
+      "status": "cc-by-sa-4.0",
+      "license": {
+        "zh": "CC BY-SA 4.0",
+        "en": "CC BY-SA 4.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示，保留作者署名并按相同方式共享改编内容。",
+        "en": "Used for display in the AI humanities storyline; retain attribution and share adaptations under the same terms."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-21"
+    ]
+  },
+  {
+    "id": "asset-humanistic-1966-17-babel-17-audio-zh-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《巴别塔-17》 中文 AI 人文科普音频",
+      "en": "Chinese AI humanities narration for Babel-17"
+    },
+    "subcaption": {
+      "zh": "中文科普讲述，供中文页面播放。",
+      "en": "Chinese narration used on the Chinese page."
+    },
+    "sourceId": "source-humanistic-1966-17-babel-17-record",
+    "language": "zh",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1966-17-babel-17-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1966-17-babel-17-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/humanistic-1966-17-babel-17-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-zh-volc-v4-2026-09-14/audio/humanistic-cycle/storyline/zh/18-humanistic-1966-17-babel-17.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-humanistic-1966-17-babel-17-audio-en-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《巴别塔-17》 英文 AI 人文科普音频",
+      "en": "English AI humanities narration for Babel-17"
+    },
+    "subcaption": {
+      "zh": "英文科普讲述，供英文页面播放。",
+      "en": "English narration used on the English page."
+    },
+    "sourceId": "source-humanistic-1966-17-babel-17-record",
+    "language": "en",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1966-17-babel-17-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1966-17-babel-17-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/humanistic-1966-17-babel-17-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/18-humanistic-1966-17-babel-17.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  }
+]

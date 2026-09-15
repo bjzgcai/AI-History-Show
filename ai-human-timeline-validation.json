@@ -1,0 +1,208 @@
+{
+    "source": "ai-human-timeline-draft.json",
+    "status": "review-report",
+    "rule": "AI人文事件应直接讨论人工生命、机器/AI意识、人与技术关系、AI伦理治理、计算机艺术或AI文化想象；纯一般科幻作品需有明确AI关联。",
+    "summary": {
+        "total": 66,
+        "符合": 57,
+        "需核实": 8,
+        "不建议纳入": 1,
+        "existingArchiveMatches": 8
+    },
+    "existingArchiveMatches": {
+        "1920-rur-robots": [11],
+        "1942-asimov-runaround": [13],
+        "1950-turing-test": [16],
+        "1956-dartmouth": [18],
+        "1968-hal-9000": [24],
+        "1978-xiaolingtong": [20],
+        "1984-neuromancer": [34],
+        "2014-ai-existential-warnings": [60]
+    },
+    "entries": [
+        { "index": 1, "verdict": "符合", "supplement": "补充塔洛斯在古典文学中的出处、自动生命主题和可靠译本来源。" },
+        {
+            "index": 2,
+            "verdict": "符合",
+            "supplement": "保留1816出版年份；补充《夜谭》书目信息和奥林匹亚与AI拟人化的关联。"
+        },
+        {
+            "index": 3,
+            "verdict": "符合",
+            "supplement": "拆分为1637与1641两个日期节点，分别补充原著书名、版本和“机器是否思考”的哲学线索。"
+        },
+        { "index": 4, "verdict": "符合", "supplement": "补充雅克-德罗自动人偶现存地点、功能和博物馆来源。" },
+        { "index": 5, "verdict": "符合", "supplement": "补充1818首版、科学伦理和创造者责任主题。" },
+        { "index": 6, "verdict": "符合", "supplement": "补充1863文章正式出版物和机器进化论的原文出处。" },
+        { "index": 7, "verdict": "符合", "supplement": "补充小说出版信息；百科摘录链接应替换为正式书目或学术来源。" },
+        { "index": 8, "verdict": "符合", "supplement": "补充作品中机器意识讨论的具体段落和女性作者视角。" },
+        {
+            "index": 9,
+            "verdict": "符合",
+            "supplement": "核实Android名称来源说法；将其作为影响说明，不作为已证实事实。"
+        },
+        {
+            "index": 10,
+            "verdict": "符合",
+            "match": "1920-rur-robots",
+            "supplement": "复用现有事件人物、来源和首图；新清单内容可作为人文 variant。"
+        },
+        {
+            "index": 11,
+            "verdict": "符合",
+            "match": "1942-asimov-runaround",
+            "supplement": "现有事件年份为1942；文档1940应作为机器人三定律提出/发表年份待核字段。"
+        },
+        { "index": 12, "verdict": "符合", "supplement": "补充1927影片版本、机器人玛丽亚的造型史和版权可用剧照来源。" },
+        {
+            "index": 13,
+            "verdict": "符合",
+            "supplement": "建议与1942阿西莫夫事件关联，避免把三定律错误归为1940单一出版事件。"
+        },
+        {
+            "index": 14,
+            "verdict": "符合",
+            "supplement": "补充短篇集出版年份与代表性篇目，明确“道德判断”来自哪些故事。"
+        },
+        {
+            "index": 15,
+            "verdict": "符合",
+            "supplement": "补充MULTIVAC首次出现的篇名与年份，避免使用模糊的1948系列日期。"
+        },
+        {
+            "index": 16,
+            "verdict": "符合",
+            "match": "1950-turing-test",
+            "supplement": "复用图灵测试现有事件；增加模仿游戏原文和反对意见。"
+        },
+        {
+            "index": 17,
+            "verdict": "符合",
+            "supplement": "这是思想谱系而非单一事件；应拆为霍布斯、莱布尼茨、普特南、福多的来源节点或标为概念条目。"
+        },
+        {
+            "index": 18,
+            "verdict": "符合",
+            "match": "1956-dartmouth",
+            "supplement": "复用现有事件；补充会议提案原文、参与者和术语首次使用范围。"
+        },
+        {
+            "index": 19,
+            "verdict": "符合",
+            "match": "1978-xiaolingtong",
+            "supplement": "现有事件采用1978出版；文档1961写作可作为创作日期。"
+        },
+        { "index": 20, "verdict": "符合", "supplement": "补充IBM 7094、贝尔实验室展览/论文记录及图像版权信息。" },
+        {
+            "index": 21,
+            "verdict": "符合",
+            "supplement": "补充Babel-17出版信息；清除百科超链接残留，区分语言与控制主题。"
+        },
+        {
+            "index": 22,
+            "verdict": "符合",
+            "supplement": "小说和1995游戏应拆为两个媒体条目，并分别补充版权、开发商和发行资料。"
+        },
+        {
+            "index": 23,
+            "verdict": "符合",
+            "match": "1968-hal-9000",
+            "supplement": "复用HAL现有事件；电影条目可作为文学人文 variant 的媒体资源。"
+        },
+        { "index": 24, "verdict": "符合", "supplement": "补充1968首版书目信息、共情测试和《银翼杀手》改编关系。" },
+        { "index": 25, "verdict": "符合", "supplement": "补充影片年份、HAL任务冲突的具体情节和可靠影史来源。" },
+        {
+            "index": 26,
+            "verdict": "符合",
+            "supplement": "建议明确为神经网络/联结主义思想节点，并与1957感知机、1969 AI寒冬建立关系。"
+        },
+        { "index": 27, "verdict": "符合", "supplement": "补充短篇出版信息、宗教计算主题和可用文本来源。" },
+        { "index": 28, "verdict": "符合", "supplement": "补充德雷福斯1972版书目信息及现象学论证来源。" },
+        { "index": 29, "verdict": "符合", "supplement": "补充1973电影及机器人奴役/权利主题的影史资料。" },
+        { "index": 30, "verdict": "符合", "supplement": "补充小说出版信息和马文作为智能体人格化形象的文化影响。" },
+        { "index": 31, "verdict": "符合", "supplement": "补充1986出版信息；1979为写作年份，应明确日期语义。" },
+        { "index": 32, "verdict": "符合", "supplement": "补充塞尔1980论文/讲座来源和中文房间争论的主要反驳。" },
+        {
+            "index": 33,
+            "verdict": "符合",
+            "supplement": "复用现有Neuromancer事件；文档内容可转为赛博空间与AI越界 variant。"
+        },
+        { "index": 34, "verdict": "符合", "supplement": "补充1982电影版本、复制人身份主题和授权剧照来源。" },
+        {
+            "index": 35,
+            "verdict": "符合",
+            "match": "1984-neuromancer",
+            "supplement": "复用现有事件；保留小说与赛博空间的核心人文说明。"
+        },
+        { "index": 36, "verdict": "符合", "supplement": "补充Greg Bear原著书目信息，核实“智能生命体”情节表述。" },
+        { "index": 37, "verdict": "符合", "supplement": "补充Skynet设定、核战情节和影片来源。" },
+        { "index": 38, "verdict": "符合", "supplement": "补充意识移植与技术神权主题的正式书目来源。" },
+        {
+            "index": 39,
+            "verdict": "符合",
+            "supplement": "补充蒸汽朋克历史设定与Babbage差分机资料，避免把虚构技术当史实。"
+        },
+        { "index": 40, "verdict": "符合", "supplement": "补充Block原始论文、功能主义背景和思想实验争论。" },
+        { "index": 41, "verdict": "符合", "supplement": "补充Dennett原著书目信息及与中文房间的论争关系。" },
+        { "index": 42, "verdict": "符合", "supplement": "补充Snow Crash出版信息、元宇宙术语史和AI角色资料。" },
+        { "index": 43, "verdict": "符合", "supplement": "补充Vinge 1993论文/演讲的准确出处；“影响马斯克”等需来源。" },
+        { "index": 44, "verdict": "符合", "supplement": "补充个性化教育设定与出版资料。" },
+        { "index": 45, "verdict": "符合", "supplement": "补充作品创作年份、装置展出地点和数字网络主题来源。" },
+        { "index": 46, "verdict": "符合", "supplement": "补充Ghost概念、影片版本和相关哲学/影评来源。" },
+        { "index": 47, "verdict": "符合", "supplement": "补充查尔默斯1995论文及意识难题与AI意识的关系。" },
+        { "index": 48, "verdict": "符合", "supplement": "补充具身认知代表论文与AI/机器人研究关联；作者不可继续留空。" },
+        { "index": 49, "verdict": "符合", "supplement": "确认《文明》系列首卷年份，补充Minds治理和乌托邦叙事来源。" },
+        { "index": 50, "verdict": "符合", "supplement": "补充Clark/Chalmers 1998论文正式标题和扩展心智论证。" },
+        {
+            "index": 51,
+            "verdict": "符合",
+            "supplement": "补充影片设定与模拟假说的关联，避免将虚构设定表述为技术事实。"
+        },
+        { "index": 52, "verdict": "符合", "supplement": "补充《机器管家》英文片名、导演和阿西莫夫原作关联。" },
+        { "index": 53, "verdict": "符合", "supplement": "补充影片年份、导演、David角色及机器情感伦理来源。" },
+        { "index": 54, "verdict": "符合", "supplement": "补充Bostrom论文/文章正式书目信息及模拟假说三论证。" },
+        {
+            "index": 55,
+            "verdict": "符合",
+            "supplement": "《太空堡垒卡拉狄加》具有人造种族、身份和AI伦理主题；需核实首播日期及是否作为AI条目。"
+        },
+        { "index": 56, "verdict": "符合", "supplement": "补充VIKI与三定律关系；电影年份和原作关系需明确。" },
+        { "index": 57, "verdict": "符合", "supplement": "补充影片制作信息及WALL-E/EVE的机器情感表现。" },
+        {
+            "index": 57,
+            "verdict": "符合",
+            "supplement": "补充teamLab首个代表性作品、展览年份、算法互动机制和官方图片授权。"
+        },
+        {
+            "index": 58,
+            "verdict": "不建议纳入",
+            "supplement": "《普罗米修斯》当前描述核心是外星起源与生物威胁，未呈现明确AI/机器意识/人机关系；除非能提供直接AI主题依据，否则移出AI人文分支。"
+        },
+        { "index": 59, "verdict": "符合", "supplement": "补充Samantha作为操作系统AI的设定、影片来源和情感关系主题。" },
+        {
+            "index": 60,
+            "verdict": "符合",
+            "match": "2014-ai-existential-warnings",
+            "supplement": "与现有AI风险公开警告事件合并或建立关联，不建议重复建立独立事件。"
+        },
+        { "index": 61, "verdict": "符合", "supplement": "补充Ava的图灵测试场景、导演资料和情感操纵主题。" },
+        { "index": 62, "verdict": "符合", "supplement": "补充影片续作资料及复制人身份延续主题。" },
+        { "index": 63, "verdict": "符合", "supplement": "补充小说首版、克拉拉角色和AI陪伴伦理资料。" },
+        {
+            "index": 64,
+            "verdict": "符合",
+            "supplement": "补充《Reality+》出版信息，并区分2021出版与模拟假说早期论文。"
+        },
+        {
+            "index": 65,
+            "verdict": "需核实",
+            "supplement": "IIT是明确的意识与AI议题，但2025年份和“AI应用”缺少具体论文/项目；需指定可核查事件。"
+        },
+        {
+            "index": 66,
+            "verdict": "需核实",
+            "supplement": "AI对齐符合分支主题，但不是单一事件；应改为代表性论文、公开信、机构发布或具体年份节点。"
+        }
+    ],
+    "notes": ["entries.index对应草稿entries数组的1-based顺序。", "entries.index对应草稿entries数组的1-based顺序。"]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-2025-ai-record",
+    "type": "paper-page",
+    "label": {
+      "zh": "论文页面",
+      "en": "Paper page"
+    },
+    "title": {
+      "zh": "arXiv《人工智能安全的具体问题》论文页面",
+      "en": "arXiv paper page for “Concrete Problems in AI Safety”"
+    },
+    "url": "https://arxiv.org/abs/1606.06565",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-2025-ai-stuart-russell-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "斯图尔特·罗素肖像",
+      "en": "Stuart Russell portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Stuart_Russell_01.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "AI 对齐研究者斯图尔特·罗素肖像；摄影者 Bengt Oberger，CC BY-SA 4.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Portrait of AI-alignment researcher Stuart Russell; photographed by Bengt Oberger, CC BY-SA 4.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

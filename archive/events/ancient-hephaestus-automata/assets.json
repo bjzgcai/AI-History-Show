@@ -1,0 +1,196 @@
+[
+  {
+    "id": "asset-ancient-hephaestus-automata-verified-image",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg",
+    "role": "artifact-reference",
+    "caption": {
+      "zh": "赫菲斯托斯与忒提斯：铸造厂画家杯",
+      "en": "Hephaistos and Thetis on a kylix by the Foundry Painter"
+    },
+    "subcaption": {
+      "zh": "公元前490—480年的阿提卡红绘陶杯，描绘赫菲斯托斯把阿喀琉斯的新铠甲交给忒提斯。",
+      "en": "Attic red-figure kylix, 490–480 BC, depicting Hephaestus handing Achilles' new armor to Thetis."
+    },
+    "sourceId": "source-ancient-hephaestus-automata-verified-image",
+    "sourceName": {
+      "zh": "Wikimedia Commons 文件页",
+      "en": "Wikimedia Commons file page"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hephaistos_Thetis_at_Kylix_by_the_Foundry_Painter_Antikensammlung_Berlin_F2294.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "公有领域",
+        "en": "Public domain"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线的古希腊文学与自动体想象历史资料展示。",
+        "en": "Used as historical reference imagery for the AI humanities storyline's Greek literary and automata context."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-ancient-hephaestus-automata-iliad-1488-editio-princeps",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg",
+    "role": "paper-reference",
+    "caption": {
+      "zh": "德米特里奥斯·查尔科孔迪勒斯编校的1488年《伊利亚特》首印本",
+      "en": "Demetrios Chalkokondyles's 1488 editio princeps of the Iliad"
+    },
+    "subcaption": {
+      "zh": "现藏于雅典根纳迪乌斯图书馆，2023年6月13日摄。",
+      "en": "Held by the Gennadius Library in Athens; photographed on June 13, 2023."
+    },
+    "sourceId": "source-ancient-hephaestus-automata-iliad-1488-editio-princeps",
+    "sourceName": {
+      "zh": "Wikimedia Commons 文件页",
+      "en": "Wikimedia Commons file page"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Demetrios_Chalkokondyles%27s_1488_editio_princeps_of_the_Iliad_in_the_collection_of_the_Gennadius_Library,_Athens,_June_13th,_2023.jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY 4.0",
+        "en": "CC BY 4.0"
+      },
+      "usage": {
+        "zh": "摄影者 Katolophyromai；用于展示《伊利亚特》的早期印刷版本。",
+        "en": "Photograph by Katolophyromai; used to present an early printed edition of the Iliad."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-ancient-hephaestus-automata-homer-bust",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/ancient-hephaestus-automata/homer-bust-british-museum.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "荷马理想化胸像",
+      "en": "Idealized bust of Homer"
+    },
+    "subcaption": {
+      "zh": "大英博物馆藏罗马时期复制品；这是后世理想化形象，并非荷马真实肖像。",
+      "en": "Roman-period copy in the British Museum; a later idealized image, not a life portrait of Homer."
+    },
+    "sourceId": "source-ancient-hephaestus-automata-homer-bust",
+    "sourceName": {
+      "zh": "Wikimedia Commons 文件页",
+      "en": "Wikimedia Commons file page"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bust_Homer_BM_1825.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "公有领域",
+        "en": "Public domain"
+      },
+      "usage": {
+        "zh": "用于呈现传统归属于荷马的作者形象，并明确其为后世理想化胸像。",
+        "en": "Used to represent the traditional attribution to Homer, explicitly identified as a later idealized bust."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "homer"
+    ]
+  },
+  {
+    "id": "asset-ancient-hephaestus-automata-audio-zh-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《伊利亚特》中的赫菲斯托斯自动机械 中文 AI 人文科普音频",
+      "en": "Chinese AI humanities narration for Hephaestus Automata in The Iliad"
+    },
+    "subcaption": {
+      "zh": "中文科普讲述，供中文页面播放。",
+      "en": "Chinese narration used on the Chinese page."
+    },
+    "sourceId": "source-ancient-hephaestus-automata-record",
+    "language": "zh",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/ancient-hephaestus-automata-zh-humanistic-hephaestus-zh-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/ancient-hephaestus-automata-zh-humanistic-hephaestus-zh-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/ancient-hephaestus-automata-zh-humanistic-hephaestus-zh-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-hephaestus-zh-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/zh/01-ancient-hephaestus-automata.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ancient-hephaestus-automata-audio-en-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《伊利亚特》中的赫菲斯托斯自动机械 英文 AI 人文科普音频",
+      "en": "English AI humanities narration for Hephaestus Automata in The Iliad"
+    },
+    "subcaption": {
+      "zh": "英文科普讲述，供英文页面播放。",
+      "en": "English narration used on the English page."
+    },
+    "sourceId": "source-ancient-hephaestus-automata-record",
+    "language": "en",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/ancient-hephaestus-automata-en-humanistic-hephaestus-en-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/ancient-hephaestus-automata-en-humanistic-hephaestus-en-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "zgca-medias",
+      "objectKey": "audio/ai-history/releases/ancient-hephaestus-automata-en-humanistic-hephaestus-en-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-hephaestus-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/01-ancient-hephaestus-automata.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  }
+]

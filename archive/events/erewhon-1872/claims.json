@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-erewhon-1872-core",
+    "importance": "core",
+    "text": {
+      "zh": "小说中的“机器之书”讨论机器进化与人类被取代的可能性，虚构社会因此选择摧毁机器。它把技术治理和机器禁令变成社会制度问题。",
+      "en": "Its “Book of the Machines” considers machine evolution and human replacement, leading the fictional society to destroy machines. It turns technological governance and machine prohibition into institutional questions."
+    },
+    "sourceIds": [
+      "source-erewhon-1872-primary"
+    ],
+    "status": "needs-review"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1972-dreyfus-core",
+    "importance": "core",
+    "text": {
+      "zh": "休伯特·德雷福斯批评把人类智能还原为符号处理，强调常识、身体经验和具体情境对理解的作用。",
+      "en": "Hubert Dreyfus criticized reducing human intelligence to symbol processing, emphasizing common sense, embodied experience and situated understanding."
+    },
+    "sourceIds": [
+      "source-humanistic-1972-dreyfus-record"
+    ],
+    "status": "needs-review"
+  }
+]

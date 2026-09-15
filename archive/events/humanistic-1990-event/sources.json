@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-1990-event-record",
+    "type": "book-page",
+    "label": {
+      "zh": "图书页面",
+      "en": "Book page"
+    },
+    "title": {
+      "zh": "企鹅兰登《差分机》图书页面",
+      "en": "Penguin Random House book page for The Difference Engine"
+    },
+    "url": "https://www.penguinrandomhouse.com/books/61429/the-difference-engine-by-william-gibson-and-bruce-sterling/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-humanistic-1990-event-william-gibson-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "威廉·吉布森肖像",
+      "en": "William Gibson portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《差分机》共同作者肖像；摄影者 Gonzo Bonzo，CC BY-SA 2.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Co-author of The Difference Engine; photograph by Gonzo Bonzo, CC BY-SA 2.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1990-event-bruce-sterling-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "布鲁斯·斯特林在 ARE 2010 演讲",
+      "en": "Bruce Sterling speaking at ARE 2010"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Bruce_Sterling_at_ARE_2010.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Commons 文件页确认人物为布鲁斯·斯特林，摄影者 Chris Cameron，拍摄于2010年6月2日，许可为 CC BY 2.0。",
+      "en": "The Commons file page identifies Bruce Sterling; photographed by Chris Cameron on June 2, 2010 and licensed CC BY 2.0."
+    },
+    "purpose": "image-provenance"
+  }
+]

@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 34,
+    "eventId": "humanistic-1990-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Turn back to 1990: The Difference Engine begins with “Published in 1990, The Difference Engine is wide” and asks us to rethink the relationship between machines, minds, and people.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Published in 1990, The Difference Engine is widely treated as an important early steampunk novel. Starting from Charles Babbage's mechanical computing plans, it builds an alternative Britain with large-scale data processing and mechanical intelligence in the nineteenth century.",
+            "sourceIds": ["source-humanistic-1990-event-record"],
+            "claimIds": ["claim-humanistic-1990-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "The novel moves the computer revolution from electronics to steam industry, showing that technological significance comes not only from machines but from the use of data in census taking, finance, policing and politics. Mechanical computation becomes an infrastructure of governance and stratification rather than an isolated scientific marvel.",
+            "sourceIds": ["source-humanistic-1990-event-record"],
+            "claimIds": ["claim-humanistic-1990-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Literary scholars generally regard The Difference Engine as a key step in steampunk's maturation and as an alternative history of information power. It reminds later AI debates that social transformation comes not only from intelligent algorithms but from data regimes, infrastructure and the institutions able to use them.",
+            "sourceIds": ["source-humanistic-1990-event-record"],
+            "claimIds": ["claim-humanistic-1990-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Next comes Consciousness Explained, where we will follow how “Literary scholars generally regard The Differenc” enters a new historical setting.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

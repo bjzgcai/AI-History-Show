@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 42,
+    "eventId": "humanistic-1998-extended-mind",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Turn back to 1998: The Extended Mind begins with “Andy Clark and David Chalmers argue that cogniti” and asks us to rethink the relationship between machines, minds, and people.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Andy Clark and David Chalmers argue that cognition can extend into the body, tools and environment, allowing AI to function as an extension rather than a replacement of human minds.",
+            "sourceIds": ["source-humanistic-1998-extended-mind-record"],
+            "claimIds": ["claim-humanistic-1998-extended-mind-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "The detail listeners may miss is “The Extended Mind”. Why does it become central to The Extended Mind?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order.",
+            "sourceIds": ["source-humanistic-1998-extended-mind-record"],
+            "claimIds": ["claim-humanistic-1998-extended-mind-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology.",
+            "sourceIds": ["source-humanistic-1998-extended-mind-record"],
+            "claimIds": ["claim-humanistic-1998-extended-mind-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Next comes The Matrix, where we will follow how “The Extended Mind” enters a new historical setting.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-1967-event-record",
+    "type": "encyclopedia-entry",
+    "label": {
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
+    },
+    "title": {
+      "zh": "《科幻小说百科全书》哈兰·埃里森条目（含《无声狂啸》）",
+      "en": "The Encyclopedia of Science Fiction entry on Harlan Ellison, including “I Have No Mouth, and I Must Scream”"
+    },
+    "url": "https://sf-encyclopedia.com/entry/ellison_harlan",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-humanistic-1967-event-am-talkfield",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "AM 的“谈话场”界面资料",
+      "en": "AM talkfield reference"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:IHaveNoMouthAMTalkfield1.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "根据哈arlan·埃里森小说改编的互动作品界面资料；文件页标注公有领域。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Interface reference from the interactive adaptation of Harlan Ellison's story; the file page marks it public domain. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1967-event-harlan-ellison-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "哈兰·埃里森肖像（1986）",
+      "en": "Harlan Ellison portrait (1986)"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Harlan_Ellison_at_the_LA_Press_Club_19860712_(cropped_portrait).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Commons 文件页确认人物为哈兰·埃里森，摄影者 Pip R. Lagenta，许可为 CC BY 2.0。",
+      "en": "The Commons file page identifies Harlan Ellison; photographed by Pip R. Lagenta and licensed CC BY 2.0."
+    },
+    "purpose": "image-provenance"
+  }
+]

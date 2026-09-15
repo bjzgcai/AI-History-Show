@@ -1,0 +1,40 @@
+[
+  {
+    "id": "asset-humanistic-1969-connectionism-verified-image",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1969-connectionism/verified-frank-rosenblatt.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "弗兰克·罗森布拉特肖像",
+      "en": "Frank Rosenblatt"
+    },
+    "subcaption": {
+      "zh": "早期神经网络与感知机研究者。",
+      "en": "早期神经网络与感知机研究者。"
+    },
+    "sourceId": "source-humanistic-1969-connectionism-verified-image",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Frank_Rosenblatt.jpg",
+    "rights": {
+      "status": "cc-by-sa-4-0",
+      "license": {
+        "zh": "CC BY-SA 4.0",
+        "en": "CC BY-SA 4.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线人物或历史资料展示。",
+        "en": "Used as a figure or historical reference in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "frank-rosenblatt"
+    ]
+  }
+]

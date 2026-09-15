@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1979-event-record",
+    "type": "book-page",
+    "label": {
+      "zh": "图书页面",
+      "en": "Book page"
+    },
+    "title": {
+      "zh": "麦克米伦《银河系漫游指南》图书页面",
+      "en": "Pan Macmillan book page for The Hitchhiker’s Guide to the Galaxy"
+    },
+    "url": "https://www.panmacmillan.com/authors/douglas-adams/the-hitchhikers-guide-to-the-galaxy/9781529034523",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-humanistic-1979-event-douglas-adams-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "道格拉斯·亚当斯肖像",
+      "en": "Douglas Adams portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Douglas_adams_portrait_cropped.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《银河系漫游指南》作者肖像；摄影者 Michael Hughes，CC BY-SA 2.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Author of The Hitchhiker's Guide to the Galaxy; photograph by Michael Hughes, CC BY-SA 2.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

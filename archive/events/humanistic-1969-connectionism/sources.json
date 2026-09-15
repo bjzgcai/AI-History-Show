@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1969-connectionism-record",
+    "type": "internal-record",
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "title": {
+      "zh": "联结主义与神经网络",
+      "en": "Connectionism and Neural Networks"
+    },
+    "url": "https://plato.stanford.edu/entries/connectionism/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "修订版清单对应的作品或思想资料；页面用于核对出版、作者与主题信息。",
+      "en": "Record corresponding to the revised list; used to verify publication, authorship and theme."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-1969-connectionism-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "弗兰克·罗森布拉特肖像",
+      "en": "Frank Rosenblatt"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Frank_Rosenblatt.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：CC BY-SA 4.0；作者/摄影者：AnonymousUnknown author。",
+      "en": "Wikimedia Commons file page identifies the subject; license: CC BY-SA 4.0; creator: AnonymousUnknown author."
+    },
+    "purpose": "image-provenance"
+  }
+]

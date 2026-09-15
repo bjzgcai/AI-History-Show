@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 38,
+    "eventId": "humanistic-1993-singularity",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Today we return to 1993 and use The Coming Technological Singularity to follow how “Vernor Vinge describes a technological singulari” entered technical culture and reached later generations.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Vernor Vinge describes a technological singularity as a possible threshold after accelerating AI and related technologies make existing social and intellectual frameworks unable to predict the future.",
+            "sourceIds": ["source-humanistic-1993-singularity-record"],
+            "claimIds": ["claim-humanistic-1993-singularity-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "What does “The Coming Technological Singularity” reveal about The Coming Technological Singularity's disagreement with ideas of its own time?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order.",
+            "sourceIds": ["source-humanistic-1993-singularity-record"],
+            "claimIds": ["claim-humanistic-1993-singularity-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Looking across time, which part of The Coming Technological Singularity's warning about “The Coming Technological Singularity” still holds?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology.",
+            "sourceIds": ["source-humanistic-1993-singularity-record"],
+            "claimIds": ["claim-humanistic-1993-singularity-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "B",
+            "text": "Next comes The Diamond Age, where we will follow how “The Coming Technological Singularity” enters a new historical setting.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

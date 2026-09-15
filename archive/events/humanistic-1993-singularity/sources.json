@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1993-singularity-record",
+    "type": "article",
+    "label": {
+      "zh": "文章",
+      "en": "Article"
+    },
+    "title": {
+      "zh": "弗诺·文奇《即将到来的技术奇点》原文",
+      "en": "Vernor Vinge’s “The Coming Technological Singularity”"
+    },
+    "url": "https://edoras.sdsu.edu/~vinge/misc/singularity.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-1993-singularity-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "弗诺·文奇肖像",
+      "en": "Vernor Vinge"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Vernor_Vinge_(cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：CC BY-SA 3.0。",
+      "en": "Wikimedia Commons file page identifies the subject; license: CC BY-SA 3.0."
+    },
+    "purpose": "image-provenance"
+  }
+]

@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-hephaestus-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 1,
+    "eventId": "ancient-hephaestus-automata",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Around the eighth century BCE, Homer's Iliad describes Hephaestus making golden attendants and self-moving tripods. Why does this ancient image belong near the beginning of the humanistic history of artificial intelligence?",
+            "sourceIds": ["source-ancient-hephaestus-automata-record"],
+            "claimIds": ["claim-ancient-hephaestus-automata-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "In Book Eighteen of the Iliad, Hephaestus forges new armor for Achilles. His palace contains golden attendants with human form who can act according to their master's needs, as well as tripods that can travel to the gathering of the gods on their own. The poem uses no modern terms such as robot or artificial intelligence, but it already imagines non-living objects made by a craftsperson, capable of autonomous movement and useful work.",
+            "sourceIds": ["source-ancient-hephaestus-automata-record"],
+            "claimIds": ["claim-ancient-hephaestus-automata-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "The importance of this myth is not that it accurately predicted a modern technology. It asks a question that keeps returning: if the capacity to act can be manufactured, is the created thing merely a tool, or could it have some form of agency? Hephaestus's automata serve their master, but they also display the maker's skill and power. They therefore connect labor, order, warfare and responsibility.",
+            "sourceIds": ["source-ancient-hephaestus-automata-record"],
+            "claimIds": ["claim-ancient-hephaestus-automata-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "From this perspective, Hephaestus's automata are an early cultural prototype of artificial life narratives. Later mechanical figures, science fiction and AI films repeatedly return to the same tension: people want dependable helpers, yet worry that what they create may gain abilities beyond their intentions. Scholars generally treat this story as a cultural reference in AI humanities, not as the direct origin of modern technology.",
+            "sourceIds": ["source-ancient-hephaestus-automata-record"],
+            "claimIds": ["claim-ancient-hephaestus-automata-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Looking back at the golden attendants and self-moving tripods in the Iliad, we do not see a machine that already existed, but an imagination of manufactured agents. It reminds us that the history of AI belongs not only to laboratories and computers, but also to myth, literature and humanity's long reflection on creation and responsibility.",
+            "sourceIds": ["source-ancient-hephaestus-automata-record"],
+            "claimIds": ["claim-ancient-hephaestus-automata-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

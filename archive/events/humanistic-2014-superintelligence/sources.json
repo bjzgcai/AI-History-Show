@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-2014-superintelligence-record",
+    "type": "book-page",
+    "label": {
+      "zh": "图书页面",
+      "en": "Book page"
+    },
+    "title": {
+      "zh": "牛津大学出版社《超级智能》图书页面",
+      "en": "Oxford University Press book page for Superintelligence"
+    },
+    "url": "https://global.oup.com/academic/product/superintelligence-9780198739838",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-2014-superintelligence-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "尼克·博斯特罗姆肖像",
+      "en": "Nick Bostrom"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Prof_Nick_Bostrom_324-1.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：CC BY 4.0。",
+      "en": "Wikimedia Commons file page identifies the subject; license: CC BY 4.0."
+    },
+    "purpose": "image-provenance"
+  }
+]

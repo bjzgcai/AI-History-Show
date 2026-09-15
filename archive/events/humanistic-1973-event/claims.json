@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1973-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "主题公园机器人觉醒反叛，追问AI是否有权反抗奴役。",
+      "en": "主题公园机器人觉醒反叛，追问AI是否有权反抗奴役。"
+    },
+    "sourceIds": [
+      "source-humanistic-1973-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

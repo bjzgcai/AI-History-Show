@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 33,
+    "eventId": "humanistic-1989-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "沿着1967年的时间线，我们先遇到《光明王》。它让“《光明王》最初出版于 1967 年，把太空殖民背景与印度宗教”成为一个无法绕开的文化问题。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "《光明王》最初出版于 1967 年，把太空殖民背景与印度宗教、神话和政治革命结合起来。掌握高科技的第一代殖民者控制转生过程，并以“神”的身份维持等级秩序。",
+            "sourceIds": ["source-humanistic-1989-event-record"],
+            "claimIds": ["claim-humanistic-1989-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "如果把《光明王》拆成一个具体问题，答案会落在“小说中的“神力”本质上是技术能力、身份复制和信息控制，普通人”上吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "小说中的“神力”本质上是技术能力、身份复制和信息控制，普通人无法自由获取这些资源。主人公山姆利用宗教象征与技术反抗统治，使作品把意识能否迁移的问题转化为谁有权决定身体、记忆和永生。",
+            "sourceIds": ["source-humanistic-1989-event-record"],
+            "claimIds": ["claim-humanistic-1989-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "它为什么能越过原来的时代？也许要从“科幻研究者通常把《光明王》视为将神话结构、后人类技术和反殖民”在后来研究中的变化说起。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "科幻研究者通常把《光明王》视为将神话结构、后人类技术和反殖民政治结合的代表作品。它对 AI 人文讨论的价值在于揭示，高级技术并不天然带来自由，也可能通过神秘化和准入控制巩固旧有权力。",
+            "sourceIds": ["source-humanistic-1989-event-record"],
+            "claimIds": ["claim-humanistic-1989-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "如果人工智能继续发展，《光明王》关于“科幻研究者通常把《光明王》视为将神话结构、后人类技术和反殖民”的判断需要怎样被重新检验？",
+            "sourceIds": ["source-humanistic-1989-event-record"],
+            "claimIds": ["claim-humanistic-1989-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

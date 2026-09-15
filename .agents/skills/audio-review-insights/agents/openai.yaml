@@ -1,0 +1,7 @@
+interface:
+    display_name: '音频审核统计'
+    short_description: '按日期、故事线、审核人和结果查询音频审听记录与备注'
+    default_prompt: '使用 $audio-review-insights 查看今天新增的音频审核统计，并列出不通过事件及备注。'
+
+policy:
+    allow_implicit_invocation: true

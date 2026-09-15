@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1990-chinese-nation-core",
+    "importance": "core",
+    "text": {
+      "zh": "设想全体中国人模拟神经元并连接到机器人身体，追问功能等同是否足以产生心智。",
+      "en": "设想全体中国人模拟神经元并连接到机器人身体，追问功能等同是否足以产生心智。"
+    },
+    "sourceIds": [
+      "source-humanistic-1990-chinese-nation-record"
+    ],
+    "status": "needs-review"
+  }
+]

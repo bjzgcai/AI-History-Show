@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1962-a-michael-noll-core",
+    "importance": "core",
+    "text": {
+      "zh": "贝尔实验室工程师使用IBM 7094生成抽象图案，被视为计算机艺术先驱。",
+      "en": "贝尔实验室工程师使用IBM 7094生成抽象图案，被视为计算机艺术先驱。"
+    },
+    "sourceIds": [
+      "source-humanistic-1962-a-michael-noll-record"
+    ],
+    "status": "needs-review"
+  }
+]

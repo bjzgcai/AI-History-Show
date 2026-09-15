@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1972-dreyfus-record",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "互联网档案馆《计算机不能做什么》馆藏记录",
+      "en": "Internet Archive record for What Computers Can’t Do"
+    },
+    "url": "https://archive.org/details/whatcomputerscan00drey",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-1972-dreyfus-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "休伯特·德雷福斯肖像",
+      "en": "Hubert Dreyfus"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Hubert_Dreyfus_(cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：CC BY-SA 3.0 de；作者/摄影者：Jörg Noller。",
+      "en": "Wikimedia Commons file page identifies the subject; license: CC BY-SA 3.0 de; creator: Jörg Noller."
+    },
+    "purpose": "image-provenance"
+  }
+]

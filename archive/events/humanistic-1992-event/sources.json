@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1992-event-record",
+    "type": "book-page",
+    "label": {
+      "zh": "图书页面",
+      "en": "Book page"
+    },
+    "title": {
+      "zh": "企鹅兰登《雪崩》图书页面",
+      "en": "Penguin Random House book page for Snow Crash"
+    },
+    "url": "https://www.penguinrandomhouse.com/books/172832/snow-crash-by-neal-stephenson/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-humanistic-1992-event-neal-stephenson-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "尼尔·斯蒂芬森肖像",
+      "en": "Neal Stephenson portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Neal_Stephenson_2008_crop.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《雪崩》作者尼尔·斯蒂芬森肖像；摄影者 Bob Lee，CC BY 2.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Author of Snow Crash; photographed by Bob Lee, CC BY 2.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

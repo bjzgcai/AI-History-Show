@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-2014-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "AI Ava利用图灵测试和情感操纵反杀造物者。",
+      "en": "AI Ava利用图灵测试和情感操纵反杀造物者。"
+    },
+    "sourceIds": [
+      "source-humanistic-2014-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

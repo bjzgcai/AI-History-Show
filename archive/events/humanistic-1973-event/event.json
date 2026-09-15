@@ -1,0 +1,173 @@
+{
+  "id": "humanistic-1973-event",
+  "year": 1973,
+  "date": "1973",
+  "title": {
+    "zh": "《西部世界》",
+    "en": "Westworld"
+  },
+  "description": {
+    "zh": "迈克尔·克莱顿在《西部世界》中描绘高度自动化主题乐园的机器人连续失控，把娱乐工业、系统依赖与机器暴力结合起来。",
+    "en": "Michael Crichton depicts a highly automated theme park whose robots fail in cascading fashion, joining entertainment, system dependence and machine violence."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "洛杉矶电影制作语境",
+      "en": "Los Angeles film-production context"
+    },
+    "coordinates": [
+      34.0522,
+      -118.2437
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-28",
+      "role": {
+        "zh": "《西部世界》编剧兼导演",
+        "en": "Writer and director of Westworld"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "已检索 Wikimedia Commons 的《西部世界》、导演与演员关键词；目前未找到与 1973 年影片直接对应且许可清晰的图片。",
+      "en": "Wikimedia Commons was searched for Westworld, its 1973 film and associated creators; no clearly licensed image directly matching the film has been found yet."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《西部世界》",
+      "en": "Westworld"
+    },
+    "displaySummary": {
+      "zh": "主题乐园自动化失控与机器反叛",
+      "en": "Theme-park automation fails and machines rebel"
+    },
+    "displayDescription": {
+      "zh": "<p>迈克尔·克莱顿在《西部世界》中描绘高度自动化主题乐园的机器人连续失控，把娱乐工业、系统依赖与机器暴力结合起来。</p><p>机器人暴动并不是某个角色突然获得完整政治意识，而是从局部异常发展为跨系统失控。电影因此把问题落在复杂自动化的不可预测性上：当人类把暴力欲望外包给可服从的机器，故障会暴露怎样的伦理与工程盲点。</p>",
+      "en": "<p>Michael Crichton depicts a highly automated theme park whose robots fail in cascading fashion, joining entertainment, system dependence and machine violence.</p><p>The robot revolt is not simply one character achieving full political consciousness; local anomalies spread into system-wide failure. The film therefore focuses on the unpredictability of complex automation and asks what ethical and engineering blind spots appear when people outsource violent fantasies to obedient machines.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "米高梅官方影片页面",
+          "en": "MGM official film page"
+        },
+        "title": {
+          "zh": "《西部世界》",
+          "en": "Westworld"
+        },
+        "description": {
+          "zh": "主题乐园自动化失控与机器反叛",
+          "en": "Theme-park automation fails and machines rebel"
+        },
+        "url": "https://www.mgm.com/movies/westworld",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1973-event-michael-crichton-portrait",
+      "asset-humanistic-1973-event-westworld-poster"
+    ],
+    "sourceIds": [
+      "source-humanistic-1973-event-record",
+      "source-humanistic-1973-event-michael-crichton-portrait",
+      "source-humanistic-1973-event-westworld-poster"
+    ],
+    "claimIds": [
+      "claim-humanistic-1973-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《西部世界》于 1973 年上映，是较早以数字图像处理表现机器人视觉的商业电影之一。影片把西部、罗马和中世纪幻想包装为可购买的沉浸式体验，而整个乐园依靠后台计算系统和拟人机器人维持。",
+          "en": "Released in 1973, Westworld was among the early commercial films to use digital image processing to represent machine vision. It sells Western, Roman and medieval fantasies as immersive experiences maintained by backstage computer systems and humanoid robots."
+        },
+        "sourceIds": [
+          "source-humanistic-1973-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "机器人暴动并不是某个角色突然获得完整政治意识，而是从局部异常发展为跨系统失控。电影因此把问题落在复杂自动化的不可预测性上：当人类把暴力欲望外包给可服从的机器，故障会暴露怎样的伦理与工程盲点。",
+          "en": "The robot revolt is not simply one character achieving full political consciousness; local anomalies spread into system-wide failure. The film therefore focuses on the unpredictability of complex automation and asks what ethical and engineering blind spots appear when people outsource violent fantasies to obedient machines."
+        },
+        "sourceIds": [
+          "source-humanistic-1973-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "电影史研究者通常把《西部世界》视为主题乐园失控、杀手机器人和沉浸式模拟叙事的重要源头。它后来发展为电视剧等衍生作品，并持续影响公众对自主武器、系统级故障与人工生命权利的想象。",
+          "en": "Film historians generally treat Westworld as an important source for narratives about failing theme parks, killer machines and immersive simulation. Its later television adaptations extended those themes, while the original continues to shape public images of autonomous weapons, systemic failure and artificial-life rights."
+        },
+        "sourceIds": [
+          "source-humanistic-1973-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

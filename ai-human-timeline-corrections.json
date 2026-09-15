@@ -1,0 +1,23 @@
+{
+    "title": "AI人文编年纠错记录",
+    "records": [
+        {
+            "entry": "《伊利亚特》中的塔洛斯",
+            "correction": {
+                "zh": "塔洛斯不属于《伊利亚特》正文。正式事件应以阿波罗尼奥斯·罗迪乌斯《阿尔戈英雄纪》第四卷为主要古典文本依据。",
+                "en": "Talos is not part of the Iliad text. The formal event should use Book 4 of Apollonius Rhodius's Argonautica as its principal classical source."
+            },
+            "appliedTo": "archive/events/ancient-talos/event.json",
+            "status": "applied"
+        },
+        {
+            "entry": "1998《文明》系列",
+            "correction": {
+                "zh": "原清单作者为伊恩·班克斯，所指应是 The Culture 科幻系列，而不是席德·梅尔的 Civilization 游戏系列。正式展示已改为“文化”系列，并替换人物、正文与肖像。",
+                "en": "The source list names Iain Banks, so the entry refers to the Culture science-fiction series rather than Sid Meier's Civilization games. The displayed title, figure, text and portrait have been corrected."
+            },
+            "appliedTo": "archive/events/humanistic-1998-event/event.json",
+            "status": "applied"
+        }
+    ]
+}

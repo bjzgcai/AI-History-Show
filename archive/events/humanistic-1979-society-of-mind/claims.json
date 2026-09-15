@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1979-society-of-mind-core",
+    "importance": "core",
+    "text": {
+      "zh": "马文·明斯基把心智描述为许多简单“智能体”协作涌现的社会，挑战统一意识的直觉，并影响联结主义与后来的智能系统设计。",
+      "en": "Marvin Minsky describes mind as a society of many simple agents whose cooperation produces intelligence, challenging the intuition of a single unified consciousness."
+    },
+    "sourceIds": [
+      "source-humanistic-1979-society-of-mind-record"
+    ],
+    "status": "needs-review"
+  }
+]

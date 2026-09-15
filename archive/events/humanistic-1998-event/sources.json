@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1998-event-record",
+    "type": "encyclopedia-entry",
+    "label": {
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
+    },
+    "title": {
+      "zh": "《文明》系列作品概览（Wikipedia）",
+      "en": "Overview of the Culture series (Wikipedia)"
+    },
+    "url": "https://en.wikipedia.org/wiki/Culture_series",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-1998-event-iain-banks-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "伊恩·M·班克斯肖像（Wikimedia Commons）",
+      "en": "Iain M. Banks portrait (Wikimedia Commons)"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:IainBanks2009.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "摄影者 TimDuncan 于 2009 年爱丁堡国际图书节拍摄；Wikimedia Commons 文件页标注 CC BY-SA 3.0。",
+      "en": "Photographed by TimDuncan at the 2009 Edinburgh International Book Festival; the Wikimedia Commons file page records CC BY-SA 3.0."
+    },
+    "purpose": "image-provenance"
+  }
+]

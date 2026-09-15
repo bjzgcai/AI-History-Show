@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 45,
+    "eventId": "humanistic-2003-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "Are You Living in a Computer Simulation? appeared in 2003 and made “The paper appeared in The Philosophical Quarterl” an experience that could be discussed, not just an abstraction.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "The paper appeared in The Philosophical Quarterly in 2003, recasting simulated worlds from skepticism and science fiction into demographic and probabilistic reasoning. It assumes that some posthuman civilizations might possess enough computing power to run vast numbers of ancestor simulations.",
+            "sourceIds": ["source-humanistic-2003-event-record"],
+            "claimIds": ["claim-humanistic-2003-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "When we talk about Are You Living in a Computer Simulation?, what deeper relationship lies behind “Bostrom does not simply claim that we certainly ”?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Bostrom does not simply claim that we certainly live in a simulation. His trilemma says that civilizations almost always die before becoming posthuman, posthuman civilizations almost never run many ancestor simulations, or simulated observers vastly outnumber observers in base reality; the force of the argument depends on these assumptions and on definitions of observers and probability.",
+            "sourceIds": ["source-humanistic-2003-event-record"],
+            "claimIds": ["claim-humanistic-2003-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Looking across time, which part of Are You Living in a Computer Simulation?'s warning about “Philosophers generally treat the simulation argu” still holds?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Philosophers generally treat the simulation argument as a serious but assumption-dependent thought experiment, not a directly testable scientific conclusion. It has influenced films, games and technology culture while encouraging clearer distinctions among logical possibility, probability and empirical evidence.",
+            "sourceIds": ["source-humanistic-2003-event-record"],
+            "claimIds": ["claim-humanistic-2003-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "If artificial intelligence keeps developing, how should Are You Living in a Computer Simulation?'s judgment about “Philosophers generally treat the simulation argu” be tested again?",
+            "sourceIds": ["source-humanistic-2003-event-record"],
+            "claimIds": ["claim-humanistic-2003-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

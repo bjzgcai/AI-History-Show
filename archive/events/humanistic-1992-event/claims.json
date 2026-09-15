@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1992-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "描绘虚拟现实中的AI角色与元宇宙，预言数字孪生和虚拟经济中的AI。",
+      "en": "描绘虚拟现实中的AI角色与元宇宙，预言数字孪生和虚拟经济中的AI。"
+    },
+    "sourceIds": [
+      "source-humanistic-1992-event-record"
+    ],
+    "status": "needs-review"
+  }
+]
