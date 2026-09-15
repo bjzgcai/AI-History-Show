@@ -1,0 +1,174 @@
+{
+  "id": "humanistic-1993-event",
+  "year": 1995,
+  "date": "1995",
+  "title": {
+    "zh": "《钻石时代》",
+    "en": "The Diamond Age"
+  },
+  "description": {
+    "zh": "尼尔·斯蒂芬森通过能够对话、讲故事并适应学习者的“少女图解读本”，想象智能教育系统如何塑造人的能力与价值观。",
+    "en": "Through an illustrated primer that converses, tells stories and adapts to its learner, Neal Stephenson imagines how intelligent education systems may shape capability and values."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国科幻出版语境",
+      "en": "United States science-fiction publishing context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-43",
+      "avatarAssetId": "asset-humanistic-1993-event-neal-stephenson-portrait",
+      "role": {
+        "zh": "《钻石时代》作者",
+        "en": "Author of The Diamond Age"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《钻石时代》",
+      "en": "The Diamond Age"
+    },
+    "displaySummary": {
+      "zh": "交互式智能教材与个性化教育",
+      "en": "An interactive intelligent primer and personalized education"
+    },
+    "displayDescription": {
+      "zh": "<p>尼尔·斯蒂芬森通过能够对话、讲故事并适应学习者的“少女图解读本”，想象智能教育系统如何塑造人的能力与价值观。 “少女图解读本”会根据奈尔的处境调整故事和训练，使学习成为持续对话而非固定课程。它既展现个性化教育的潜力，也揭示教材背后的设计目标、表演者劳动和文化价值会悄然进入学习者的成长。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 《钻石时代》于 1995 年出版。小说置于纳米技术高度发展的未来社会，教育、身份与资源由不同文化共同体和技术基础设施共同决定。</p><p> 教育技术与科幻研究者通常把这本“读本”视为智能导师和自适应学习最有影响力的文化原型之一。它提醒今天的生成式教育系统，个性化不仅是推荐更合适的内容，也涉及谁设定成长方向、谁承担教学关系以及学习数据归谁所有。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Through an illustrated primer that converses, tells stories and adapts to its learner, Neal Stephenson imagines how intelligent education systems may shape capability and values. The Young Lady's Illustrated Primer adapts stories and exercises to Nell's circumstances, making learning an ongoing dialogue rather than a fixed curriculum. It shows the promise of personalized education while revealing how design goals, human labor and cultural values enter the learner's development.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. The Diamond Age was published in 1995. It is set in a future transformed by nanotechnology, where education, identity and resources are organized through cultural communities and technical infrastructure.</p><p> Education-technology and science-fiction scholars generally regard the Primer as one of the most influential cultural prototypes for intelligent tutoring and adaptive learning. It reminds current generative learning systems that personalization concerns not only content selection but who sets developmental goals, who performs the teaching relationship and who owns learning data. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "哈珀柯林斯图书页面",
+          "en": "HarperCollins book page"
+        },
+        "title": {
+          "zh": "《钻石时代》",
+          "en": "The Diamond Age"
+        },
+        "description": {
+          "zh": "交互式智能教材与个性化教育",
+          "en": "An interactive intelligent primer and personalized education"
+        },
+        "url": "https://www.harpercollins.com/products/the-diamond-age-neal-stephenson",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1993-event-neal-stephenson-portrait",
+      "asset-humanistic-1993-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1993-event-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-1993-event-record",
+      "source-humanistic-1993-event-neal-stephenson-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-1993-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《钻石时代》于 1995 年出版。小说置于纳米技术高度发展的未来社会，教育、身份与资源由不同文化共同体和技术基础设施共同决定。",
+          "en": "The Diamond Age was published in 1995. It is set in a future transformed by nanotechnology, where education, identity and resources are organized through cultural communities and technical infrastructure."
+        },
+        "sourceIds": [
+          "source-humanistic-1993-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "“少女图解读本”会根据奈尔的处境调整故事和训练，使学习成为持续对话而非固定课程。它既展现个性化教育的潜力，也揭示教材背后的设计目标、表演者劳动和文化价值会悄然进入学习者的成长。",
+          "en": "The Young Lady's Illustrated Primer adapts stories and exercises to Nell's circumstances, making learning an ongoing dialogue rather than a fixed curriculum. It shows the promise of personalized education while revealing how design goals, human labor and cultural values enter the learner's development."
+        },
+        "sourceIds": [
+          "source-humanistic-1993-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "教育技术与科幻研究者通常把这本“读本”视为智能导师和自适应学习最有影响力的文化原型之一。它提醒今天的生成式教育系统，个性化不仅是推荐更合适的内容，也涉及谁设定成长方向、谁承担教学关系以及学习数据归谁所有。",
+          "en": "Education-technology and science-fiction scholars generally regard the Primer as one of the most influential cultural prototypes for intelligent tutoring and adaptive learning. It reminds current generative learning systems that personalization concerns not only content selection but who sets developmental goals, who performs the teaching relationship and who owns learning data."
+        },
+        "sourceIds": [
+          "source-humanistic-1993-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

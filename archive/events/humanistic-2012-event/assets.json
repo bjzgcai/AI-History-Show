@@ -1,0 +1,235 @@
+[
+  {
+    "id": "asset-humanistic-2012-event-ridley-scott-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2012-event/ridley-scott-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "雷德利·斯科特肖像",
+      "en": "Ridley Scott portrait"
+    },
+    "subcaption": {
+      "zh": "《普罗米修斯》导演。",
+      "en": "Director of Prometheus."
+    },
+    "sourceId": "source-humanistic-2012-event-ridley-scott-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ridley_Scott_by_Gage_Skidmore.jpg",
+    "rights": {
+      "status": "cc-by-sa-3.0",
+      "license": {
+        "zh": "CC BY SA 3.0",
+        "en": "CC BY SA 3.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-58"
+    ]
+  },
+  {
+    "id": "asset-humanistic-2012-event-tmdb-poster",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-poster-tmdb.jpg",
+    "role": "movie-poster",
+    "caption": {
+      "zh": "《普罗米修斯》电影海报",
+      "en": "Prometheus film poster"
+    },
+    "subcaption": {
+      "zh": "2012 年电影《普罗米修斯》的中文发行海报。",
+      "en": "Chinese release poster for the 2012 film Prometheus."
+    },
+    "sourceId": "source-humanistic-2012-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/p1Rhvs29NmKjQQA4pcNDAr7P3gi.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/70981-prometheus/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-2012-event-tmdb-scene-1",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-scene-1-tmdb.jpg",
+    "role": "promotional-still",
+    "caption": {
+      "zh": "仿生人 David 与信息网络",
+      "en": "The android David and an information network"
+    },
+    "subcaption": {
+      "zh": "仿生人 David 面部与蓝色信息网络构成的影片视觉资料。",
+      "en": "Film visual combining the android David's face with a blue information network."
+    },
+    "sourceId": "source-humanistic-2012-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/qDG5SlGkWNsjSJWiGTBMFI8DpzA.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/70981-prometheus/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-2012-event-tmdb-scene-2",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-2012-event/prometheus-scene-2-tmdb.jpg",
+    "role": "film-still",
+    "caption": {
+      "zh": "探索外星遗迹",
+      "en": "Exploring the alien structure"
+    },
+    "subcaption": {
+      "zh": "探险队在黑暗外星结构中行进的电影场景。",
+      "en": "Film scene showing the expedition moving through a dark alien structure."
+    },
+    "sourceId": "source-humanistic-2012-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/gTZXzGc6kE8JiYjX51EAmTCx4ql.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/70981-prometheus/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-2012-event-audio-zh-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《普罗米修斯》 中文 AI 人文科普音频",
+      "en": "Chinese AI humanities narration for Prometheus"
+    },
+    "subcaption": {
+      "zh": "中文科普讲述，供中文页面播放。",
+      "en": "Chinese narration used on the Chinese page."
+    },
+    "sourceId": "source-humanistic-2012-event-record",
+    "language": "zh",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2012-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2012-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/humanistic-2012-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-zh-volc-v4-2026-09-14/audio/humanistic-cycle/storyline/zh/48-humanistic-2012-event.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-humanistic-2012-event-audio-en-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《普罗米修斯》 英文 AI 人文科普音频",
+      "en": "English AI humanities narration for Prometheus"
+    },
+    "subcaption": {
+      "zh": "英文科普讲述，供英文页面播放。",
+      "en": "English narration used on the English page."
+    },
+    "sourceId": "source-humanistic-2012-event-record",
+    "language": "en",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2012-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-2012-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/humanistic-2012-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/48-humanistic-2012-event.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  }
+]

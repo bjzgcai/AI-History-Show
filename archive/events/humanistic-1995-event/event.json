@@ -1,0 +1,174 @@
+{
+  "id": "humanistic-1995-event",
+  "year": 1995,
+  "date": "1995",
+  "title": {
+    "zh": "《电子超级高速公路》",
+    "en": "Electronic Superhighway: Continental U.S., Alaska, Hawaii"
+  },
+  "description": {
+    "zh": "白南准用美国地图轮廓、霓虹灯和数百台电视构成《电子超级高速公路》，把大众媒介、地域身份与电子连接并置。",
+    "en": "Nam June Paik constructs Electronic Superhighway from a map of the United States, neon and hundreds of television sets, placing mass media, regional identity and electronic connection together."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "华盛顿特区，史密森尼美国艺术博物馆",
+      "en": "Smithsonian American Art Museum, Washington, D.C."
+    },
+    "coordinates": [
+      38.8977,
+      -77.0365
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-44",
+      "avatarAssetId": "asset-humanistic-1995-event-nam-june-paik-portrait",
+      "role": {
+        "zh": "《电子超级高速公路》艺术家",
+        "en": "Artist of Electronic Superhighway"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《电子超级高速公路》",
+      "en": "Electronic Superhighway: Continental U.S., Alaska, Hawaii"
+    },
+    "displaySummary": {
+      "zh": "以电视、霓虹与地图表现网络化美国",
+      "en": "Mapping a networked America through televisions and neon"
+    },
+    "displayDescription": {
+      "zh": "<p>白南准用美国地图轮廓、霓虹灯和数百台电视构成《电子超级高速公路》，把大众媒介、地域身份与电子连接并置。 作品以霓虹勾勒各州边界，并让屏幕播放与地方文化相关的影像；统一网络因此没有抹平差异，而是把地域刻板印象、速度和媒介流同时放大。观众必须移动视线和身体，才能在整体地图与局部信息之间建立关系。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 《电子超级高速公路：美国本土、阿拉斯加、夏威夷》创作于 1995 年，正逢互联网商业化和“信息高速公路”进入公共政策语言。白南准此前已长期使用电视、录像和卫星直播探索电子媒介如何改变空间经验。</p><p> 媒体艺术史研究者通常把这件作品视为白南准关于电子互联社会最具代表性的装置之一。它持续影响人们理解屏幕网络、注意力竞争和数字地理的方式，也说明“连接更多”并不必然意味着理解更深。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Nam June Paik constructs Electronic Superhighway from a map of the United States, neon and hundreds of television sets, placing mass media, regional identity and electronic connection together. Neon outlines state borders while screens show imagery associated with local culture; the network does not erase difference but amplifies regional stereotypes, speed and media flow at once. Viewers must move their eyes and bodies to connect the whole map with its local information.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. Electronic Superhighway: Continental U.S., Alaska, Hawaii was created in 1995 as commercial Internet access and the phrase “information superhighway” entered public policy. Paik had long used television, video and satellite broadcasts to explore how electronic media change spatial experience.</p><p> Media-art historians generally regard the installation as one of Paik's defining visions of an electronically connected society. It continues to shape interpretations of screen networks, attention competition and digital geography, showing that greater connection does not necessarily produce deeper understanding. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "史密森尼美国艺术博物馆",
+          "en": "Smithsonian American Art Museum"
+        },
+        "title": {
+          "zh": "《电子超级高速公路》",
+          "en": "Electronic Superhighway: Continental U.S., Alaska, Hawaii"
+        },
+        "description": {
+          "zh": "以电视、霓虹与地图表现网络化美国",
+          "en": "Mapping a networked America through televisions and neon"
+        },
+        "url": "https://americanart.si.edu/artwork/electronic-superhighway-continental-us-alaska-hawaii-71478",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1995-event-nam-june-paik-portrait",
+      "asset-humanistic-1995-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1995-event-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-1995-event-record",
+      "source-humanistic-1995-event-nam-june-paik-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-1995-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《电子超级高速公路：美国本土、阿拉斯加、夏威夷》创作于 1995 年，正逢互联网商业化和“信息高速公路”进入公共政策语言。白南准此前已长期使用电视、录像和卫星直播探索电子媒介如何改变空间经验。",
+          "en": "Electronic Superhighway: Continental U.S., Alaska, Hawaii was created in 1995 as commercial Internet access and the phrase “information superhighway” entered public policy. Paik had long used television, video and satellite broadcasts to explore how electronic media change spatial experience."
+        },
+        "sourceIds": [
+          "source-humanistic-1995-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品以霓虹勾勒各州边界，并让屏幕播放与地方文化相关的影像；统一网络因此没有抹平差异，而是把地域刻板印象、速度和媒介流同时放大。观众必须移动视线和身体，才能在整体地图与局部信息之间建立关系。",
+          "en": "Neon outlines state borders while screens show imagery associated with local culture; the network does not erase difference but amplifies regional stereotypes, speed and media flow at once. Viewers must move their eyes and bodies to connect the whole map with its local information."
+        },
+        "sourceIds": [
+          "source-humanistic-1995-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "媒体艺术史研究者通常把这件作品视为白南准关于电子互联社会最具代表性的装置之一。它持续影响人们理解屏幕网络、注意力竞争和数字地理的方式，也说明“连接更多”并不必然意味着理解更深。",
+          "en": "Media-art historians generally regard the installation as one of Paik's defining visions of an electronically connected society. It continues to shape interpretations of screen networks, attention competition and digital geography, showing that greater connection does not necessarily produce deeper understanding."
+        },
+        "sourceIds": [
+          "source-humanistic-1995-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

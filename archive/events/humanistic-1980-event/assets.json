@@ -1,0 +1,207 @@
+[
+  {
+    "id": "asset-humanistic-1980-event-chinese-room-reference",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1980-event/chinese-room-reference.jpg",
+    "role": "event-reference",
+    "caption": {
+      "zh": "中文房间资料图",
+      "en": "Chinese Room reference image"
+    },
+    "subcaption": {
+      "zh": "现实房间照片，作为思想实验名称的辅助资料，不在故事线中展示。",
+      "en": "A real room photograph retained as a naming reference and excluded from storyline display."
+    },
+    "sourceId": "source-humanistic-1980-event-chinese-room-reference",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Chinese_Room_(14004170846).jpg",
+    "rights": {
+      "status": "cc-by-2.0",
+      "license": {
+        "zh": "CC BY 2.0",
+        "en": "CC BY 2.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "selectionReview": {
+      "status": "excluded-from-variants",
+      "reason": {
+        "zh": "照片是现实中的中式房间，与约翰·塞尔的思想实验并非同一对象，因此不用于事件展示。",
+        "en": "The photograph shows a physical Chinese-style room, not John Searle's thought experiment, so it is excluded from event display."
+      },
+      "reasonCode": "historical-reference",
+      "reviewedAt": "2026-08-27"
+    },
+    "figureIds": [
+      "humanistic-figure-31"
+    ]
+  },
+  {
+    "id": "asset-humanistic-1980-event-john-searle-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1980-event/john-searle-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "约翰·塞尔肖像",
+      "en": "John Searle portrait"
+    },
+    "subcaption": {
+      "zh": "中文房间思想实验提出者。",
+      "en": "Originator of the Chinese Room thought experiment."
+    },
+    "sourceId": "source-humanistic-1980-event-john-searle-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Searle_speaking_at_Google_1.jpg",
+    "rights": {
+      "status": "cc-by-sa-4.0",
+      "license": {
+        "zh": "CC BY-SA 4.0",
+        "en": "CC BY-SA 4.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示，保留摄影者署名并按相同方式共享改编内容。",
+        "en": "Used for display in the AI humanities storyline; retain photographer attribution and share adaptations under the same terms."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-31"
+    ]
+  },
+  {
+    "id": "asset-humanistic-1980-event-chinese-room-thought-experiment",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1980-event/chinese-room-thought-experiment.jpg",
+    "role": "event-reference",
+    "caption": {
+      "zh": "中文房间思想实验再现图",
+      "en": "Chinese Room thought experiment illustration"
+    },
+    "subcaption": {
+      "zh": "展示按规则操作符号并隔门传递中文答案的思想实验。",
+      "en": "Illustration of rule-based symbol manipulation and Chinese-answer exchange."
+    },
+    "sourceId": "source-humanistic-1980-event-chinese-room-thought-experiment",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_Room_thought_experiment_with_countryballs.jpg",
+    "rights": {
+      "status": "cc-by-4.0",
+      "license": {
+        "zh": "CC BY 4.0",
+        "en": "CC BY 4.0"
+      },
+      "usage": {
+        "zh": "作为思想实验再现图展示，保留作者署名；不声称这是 1980 年原始历史照片。",
+        "en": "Displayed as an illustration of the thought experiment with attribution; not represented as an original 1980 historical photograph."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-1980-event-audio-zh-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "中文房间思想实验 中文 AI 人文科普音频",
+      "en": "Chinese AI humanities narration for The Chinese Room Thought Experiment"
+    },
+    "subcaption": {
+      "zh": "中文科普讲述，供中文页面播放。",
+      "en": "Chinese narration used on the Chinese page."
+    },
+    "sourceId": "source-humanistic-1980-event-record",
+    "language": "zh",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1980-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1980-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/humanistic-1980-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-zh-volc-v4-2026-09-14/audio/humanistic-cycle/storyline/zh/26-humanistic-1980-event.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-humanistic-1980-event-audio-en-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "中文房间思想实验 英文 AI 人文科普音频",
+      "en": "English AI humanities narration for The Chinese Room Thought Experiment"
+    },
+    "subcaption": {
+      "zh": "英文科普讲述，供英文页面播放。",
+      "en": "English narration used on the English page."
+    },
+    "sourceId": "source-humanistic-1980-event-record",
+    "language": "en",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1980-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/humanistic-1980-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/humanistic-1980-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/26-humanistic-1980-event.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  }
+]

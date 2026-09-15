@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 23,
+    "eventId": "humanistic-1990-chinese-nation",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1978年，布洛克的中华民族（Chinese Nation）进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "布洛克在 1978 年有关功能主义的论文中提出这类“中华民族”或“中国脑”思想实验。功能主义认为，只要系统内部因果角色与人脑相同，构成材料不同也可以具有同类心智状态。",
+            "sourceIds": ["source-humanistic-1990-chinese-nation-record"],
+            "claimIds": ["claim-humanistic-1990-chinese-nation-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "思想实验让每个人承担一个神经元的功能，通过通信设备共同控制机器人身体。布洛克借直觉上的反差追问：即使整体输入输出和内部功能关系都与人脑对应，我们是否愿意说整个国家形成了一个具有体验的意识。",
+            "sourceIds": ["source-humanistic-1990-chinese-nation-record"],
+            "claimIds": ["claim-humanistic-1990-chinese-nation-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "心灵哲学家通常把它视为反对简单功能主义的重要思想实验，并常与中文房间、哲学僵尸和系统回应并列讨论。它对 AI 的意义在于区分行为能力、功能组织和主观体验，提醒人们这些判断标准并不天然等价。",
+            "sourceIds": ["source-humanistic-1990-chinese-nation-record"],
+            "claimIds": ["claim-humanistic-1990-chinese-nation-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看布洛克的中华民族（Chinese Nation），重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-humanistic-1990-chinese-nation-record"],
+            "claimIds": ["claim-humanistic-1990-chinese-nation-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

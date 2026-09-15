@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-2012-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "通过星图寻找人类起源，并发现可能导致人类灭绝的外星威胁。",
+      "en": "通过星图寻找人类起源，并发现可能导致人类灭绝的外星威胁。"
+    },
+    "sourceIds": [
+      "source-humanistic-2012-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

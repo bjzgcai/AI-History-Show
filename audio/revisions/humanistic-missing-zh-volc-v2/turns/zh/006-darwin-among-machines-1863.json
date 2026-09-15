@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v2-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 6,
+    "eventId": "darwin-among-machines-1863",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "1863年，《机器中的达尔文》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "巴特勒设想机器可能通过选择和复制逐步发展出自主性，首次以系统方式提出机器进化并取代人类的文化想象。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+            "sourceIds": ["source-darwin-among-machines-1863-primary"],
+            "claimIds": ["claim-darwin-among-machines-1863-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个有吸引力的方向。真正让它成立的核心思想是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+            "sourceIds": ["source-darwin-among-machines-1863-primary"],
+            "claimIds": ["claim-darwin-among-machines-1863-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "那它为什么没有停留在一次作品、实验或争论里？后来人们真正继承了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+            "sourceIds": ["source-darwin-among-machines-1863-primary"],
+            "claimIds": ["claim-darwin-among-machines-1863-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "当今天的人工智能越来越深入生活时，《机器中的达尔文》留下的哪些问题仍然没有答案？我们又该如何重新检验它关于机器与人的判断？",
+            "sourceIds": ["source-darwin-among-machines-1863-primary"],
+            "claimIds": ["claim-darwin-among-machines-1863-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

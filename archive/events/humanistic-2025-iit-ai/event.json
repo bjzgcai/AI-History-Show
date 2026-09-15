@@ -1,0 +1,176 @@
+{
+  "id": "humanistic-2025-iit-ai",
+  "year": 2004,
+  "date": "2004—至今",
+  "title": {
+    "zh": "整合信息理论（IIT）及其 AI 应用",
+    "en": "Integrated Information Theory (IIT) and AI"
+  },
+  "description": {
+    "zh": "整合信息理论从系统内部的因果结构与信息整合出发解释意识，并被用于讨论高性能 AI 是否必然具有主观体验。",
+    "en": "Integrated Information Theory explains consciousness through a system's intrinsic causal structure and information integration, and is used to ask whether high-performing AI must have subjective experience."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "威斯康星大学麦迪逊分校",
+      "en": "University of Wisconsin–Madison"
+    },
+    "coordinates": [
+      43.0766,
+      -89.4125
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-65",
+      "avatarAssetId": "asset-humanistic-2025-iit-ai-giulio-tononi-nih-portrait",
+      "role": {
+        "zh": "整合信息理论主要提出者",
+        "en": "Principal originator of Integrated Information Theory"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "已检索朱利奥·托诺尼与 IITC 资料；目前找到的文件是理论示意图而非人物照片，已排除，待寻找可靠肖像。",
+      "en": "Giulio Tononi and IITC materials were searched; the available file was a theory diagram rather than a portrait and was excluded. A reliable portrait is still needed."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "整合信息理论（IIT）的AI应用",
+      "en": "IIT and Artificial Consciousness"
+    },
+    "displaySummary": {
+      "zh": "用因果整合结构讨论人工系统意识",
+      "en": "Using integrated causal structure to discuss consciousness in artificial systems"
+    },
+    "displayDescription": {
+      "zh": "<p>整合信息理论从系统内部的因果结构与信息整合出发解释意识，并被用于讨论高性能 AI 是否必然具有主观体验。 IIT 认为意识对应系统不可还原的内在因果结构，常以 Φ 等形式量描述整合程度，但完整计算对复杂系统极其困难。按照该理论，一些表现强大的前馈系统可能缺少相应整合结构，因此外在能力不能直接证明其具有意识。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 朱利奥·托诺尼自 20 世纪 90 年代末起发展整合信息理论，之后与合作者持续修订其数学与哲学表述；本条以 2025 年作为持续讨论节点，而非单一新论文。随着大型神经网络行为能力提高，研究者更迫切地区分智能表现与意识体验。</p><p> 意识科学研究者通常把 IIT 视为少数试图给出形式化意识理论的主要方案之一，同时其可检验性、计算可行性和形而上承诺仍有强烈争议。它对 AI 的长期价值主要是提供明确的比较框架，而不是一张可以直接给现有模型颁发“意识证书”的量表。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Integrated Information Theory explains consciousness through a system's intrinsic causal structure and information integration, and is used to ask whether high-performing AI must have subjective experience. IIT identifies consciousness with irreducible intrinsic causal structure and uses quantities such as Φ to describe integration, although full calculation is extremely difficult for complex systems. On this view, some behaviorally powerful feed-forward systems may lack the relevant integration, so external capability alone cannot establish consciousness.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. Giulio Tononi has developed Integrated Information Theory since the late 1990s and continued revising its mathematical and philosophical formulation with collaborators; this entry uses 2025 as a marker of an ongoing debate rather than a single new paper. As large neural networks gain behavioral capability, distinguishing intelligence from conscious experience has become more urgent.</p><p> Consciousness researchers generally treat IIT as one of the major attempts at a formal theory of consciousness, while its testability, computational feasibility and metaphysical commitments remain strongly disputed. Its long-term value for AI is a clear comparative framework, not a meter that can simply certify current models as conscious. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "arXiv 论文页面",
+          "en": "arXiv paper page"
+        },
+        "title": {
+          "zh": "整合信息理论（IIT）的AI应用",
+          "en": "IIT and Artificial Consciousness"
+        },
+        "description": {
+          "zh": "用因果整合结构讨论人工系统意识",
+          "en": "Using integrated causal structure to discuss consciousness in artificial systems"
+        },
+        "url": "https://arxiv.org/abs/2308.08708",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-2025-iit-ai-giulio-tononi-nih-portrait",
+      "asset-humanistic-2025-iit-ai-axioms-postulates",
+      "asset-humanistic-2025-iit-ai-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-2025-iit-ai-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-2025-iit-ai-record",
+      "source-humanistic-2025-iit-ai-giulio-tononi-nih-portrait",
+      "source-humanistic-2025-iit-ai-axioms-postulates"
+    ],
+    "claimIds": [
+      "claim-humanistic-2025-iit-ai-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "朱利奥·托诺尼自 20 世纪 90 年代末起发展整合信息理论，之后与合作者持续修订其数学与哲学表述；本条以 2025 年作为持续讨论节点，而非单一新论文。随着大型神经网络行为能力提高，研究者更迫切地区分智能表现与意识体验。",
+          "en": "Giulio Tononi has developed Integrated Information Theory since the late 1990s and continued revising its mathematical and philosophical formulation with collaborators; this entry uses 2025 as a marker of an ongoing debate rather than a single new paper. As large neural networks gain behavioral capability, distinguishing intelligence from conscious experience has become more urgent."
+        },
+        "sourceIds": [
+          "source-humanistic-2025-iit-ai-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "IIT 认为意识对应系统不可还原的内在因果结构，常以 Φ 等形式量描述整合程度，但完整计算对复杂系统极其困难。按照该理论，一些表现强大的前馈系统可能缺少相应整合结构，因此外在能力不能直接证明其具有意识。",
+          "en": "IIT identifies consciousness with irreducible intrinsic causal structure and uses quantities such as Φ to describe integration, although full calculation is extremely difficult for complex systems. On this view, some behaviorally powerful feed-forward systems may lack the relevant integration, so external capability alone cannot establish consciousness."
+        },
+        "sourceIds": [
+          "source-humanistic-2025-iit-ai-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "意识科学研究者通常把 IIT 视为少数试图给出形式化意识理论的主要方案之一，同时其可检验性、计算可行性和形而上承诺仍有强烈争议。它对 AI 的长期价值主要是提供明确的比较框架，而不是一张可以直接给现有模型颁发“意识证书”的量表。",
+          "en": "Consciousness researchers generally treat IIT as one of the major attempts at a formal theory of consciousness, while its testability, computational feasibility and metaphysical commitments remain strongly disputed. Its long-term value for AI is a clear comparative framework, not a meter that can simply certify current models as conscious."
+        },
+        "sourceIds": [
+          "source-humanistic-2025-iit-ai-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

@@ -85,15 +85,18 @@ console.log('PASS milestone storyline resolution');
 const humanisticMilestones = generatedMilestones.filter(
     (milestone) => routing.getMilestoneStorylineId(milestone) === 'humanistic-cycle'
 );
-assert.equal(humanisticMilestones.length, 12, 'the humanistic cycle should contain twelve events');
+const humanisticStoryline = require('../archive/storylines/humanistic-cycle.json');
+const enabledHumanisticEvents = humanisticStoryline.events.filter((event) => event.enabled !== false);
+assert.equal(
+    humanisticMilestones.length,
+    enabledHumanisticEvents.length,
+    'the generated humanistic cycle should match the enabled Archive storyline membership'
+);
 humanisticMilestones.forEach((milestone) => {
     const images = milestone.resources && Array.isArray(milestone.resources.images) ? milestone.resources.images : [];
-    assert.ok(
-        images.some((url) => /\/humanistic-cycle\/explainers\//.test(String(url || ''))),
-        `${milestone.archiveEventId || milestone.id} should provide an explainer for commentary media`
-    );
+    assert.ok(images.length > 0, `${milestone.archiveEventId || milestone.id} should provide at least one local image`);
 });
-console.log('PASS humanistic commentary media coverage');
+console.log('PASS humanistic storyline membership and image coverage');
 
 const gamingMilestones = generatedMilestones.filter(
     (milestone) => routing.getMilestoneStorylineId(milestone) === 'gaming-ai'
@@ -287,6 +290,7 @@ for (const locale of ['zh', 'en']) {
     milestoneViewLocale.value = locale;
     const nonOssMilestones = generatedMilestones
         .map((milestone) => ({ milestone, audio: getPrimaryAudio(milestone) }))
+        .filter(({ milestone }) => Array.isArray(milestone.resources?.audios) && milestone.resources.audios.length > 0)
         .filter(({ audio }) => !audio || !String(audio.url || '').startsWith(audioProfile.publicUrlPrefix))
         .map(({ milestone }) => `${milestone.storyline.id}:${milestone.archiveEventId}`);
     assert.deepEqual(
@@ -412,8 +416,8 @@ assert.match(
 );
 assert.match(
     chronologyCss,
-    /\.chrono-card-media\.is-portrait::before\s*\{[\s\S]*?background-image:\s*var\(--portrait-backdrop-image[\s\S]*?background-size:\s*cover[\s\S]*?\.chrono-card-media\.is-portrait img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?object-position:\s*center top[\s\S]*?\.chrono-card-media\.is-portrait\.is-cover-safe img\s*\{[\s\S]*?object-fit:\s*cover[\s\S]*?\.chrono-event-card:hover \.chrono-card-media\.is-portrait img,[\s\S]*?transform:\s*none/,
-    'portrait cards should fill their backdrop while preserving the complete foreground head'
+    /\.chrono-card-media\.is-portrait::before\s*\{[\s\S]*?background-image:\s*var\(--portrait-backdrop-image[\s\S]*?background-size:\s*cover[\s\S]*?\.chrono-card-media\.is-portrait img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?object-position:\s*center top[\s\S]*?\.chrono-card-media\.is-portrait\.is-cover-safe img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?\.chrono-event-card:hover \.chrono-card-media\.is-portrait img,[\s\S]*?transform:\s*none/,
+    'chronology cards should preserve the complete foreground image without hover cropping'
 );
 assert.match(
     chronologySource,

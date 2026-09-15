@@ -1,0 +1,29 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-hephaestus-zh-volc-v1-2026-09-14",
+    "label": "赫菲斯托斯自动机械中文音频候选",
+    "comparisonKind": "previous",
+    "storylineOrderPolicy": "frozen-revision",
+    "outputRoot": "resources/audio/generated/humanistic-cycle-manual/humanistic-hephaestus-zh-volc-v1-2026-09-14",
+    "turnsDir": "audio/revisions/humanistic-hephaestus-zh-volc-v1/turns/zh",
+    "voiceProfilePath": "audio/voices/zh-huopo-original.json",
+    "expectedEntryCount": 1,
+    "provider": {
+        "name": "volc",
+        "model": "seed-tts-2.0",
+        "endpoint": "https://openspeech.bytedance.com/api/v3/plan/tts/unidirectional",
+        "envFile": ".secrets/tts.env",
+        "retries": 3
+    },
+    "specification": {
+        "modes": ["storyline"],
+        "locales": ["zh"],
+        "normalPauseMs": 450,
+        "summaryPauseMs": 550,
+        "minimumDurationSec": 40,
+        "maximumDurationSec": 150,
+        "targetIntegratedLoudnessLufs": -16,
+        "targetTruePeakDbtp": -1,
+        "targetLoudnessRangeLu": 11
+    }
+}

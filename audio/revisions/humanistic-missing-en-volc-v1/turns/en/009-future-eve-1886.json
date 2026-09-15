@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 9,
+    "eventId": "future-eve-1886",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "The Future Eve, first appearing in 1886, opens a new view of the humanities of AI: what does “The novel imagines an electrically and mechanica” really mean?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "The novel imagines an electrically and mechanically made “perfect lover,” linking artificial bodies, projected desire and the technologizing of love. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.",
+            "sourceIds": ["source-future-eve-1886-primary"],
+            "claimIds": ["claim-future-eve-1886-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "It may sound like a small detail, but how does “The Future Eve” support The Future Eve's view of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order.",
+            "sourceIds": ["source-future-eve-1886-primary"],
+            "claimIds": ["claim-future-eve-1886-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "Where does “The Future Eve” still appear in AI systems today?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance.",
+            "sourceIds": ["source-future-eve-1886-primary"],
+            "claimIds": ["claim-future-eve-1886-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "If we remember one thing about The Future Eve, it is how “The Future Eve” entered the humanistic view of artificial intelligence.",
+            "sourceIds": ["source-future-eve-1886-primary"],
+            "claimIds": ["claim-future-eve-1886-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

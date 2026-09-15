@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 17,
+    "eventId": "humanistic-1962-a-michael-noll",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1962年，A. Michael Noll的计算机生成艺术进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "20 世纪 60 年代初，贝尔实验室的研究人员开始把大型计算机用于声音、动画和图像实验。Noll 的早期作品由 IBM 7090 系列计算机计算并通过绘图设备输出，1965 年还进入纽约 Howard Wise Gallery 的计算机艺术展览。",
+            "sourceIds": ["source-humanistic-1962-a-michael-noll-record"],
+            "claimIds": ["claim-humanistic-1962-a-michael-noll-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "这些作品不只是把电脑当作更快的画笔，而是把规则、概率与参数选择本身变成创作材料。它们由此提出一个持续至今的问题：当图像由程序生成时，作者性应归于程序、机器，还是设计规则的人。",
+            "sourceIds": ["source-humanistic-1962-a-michael-noll-record"],
+            "claimIds": ["claim-humanistic-1962-a-michael-noll-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "数字艺术史研究者通常把 Noll 视为计算机生成艺术的早期实践者之一，他的实验连接了实验室研究、现代主义抽象和后来生成艺术的工作方法。其长期影响不在于作品使用了某一台机器，而在于它证明了算法可以成为可辨认的审美媒介。",
+            "sourceIds": ["source-humanistic-1962-a-michael-noll-record"],
+            "claimIds": ["claim-humanistic-1962-a-michael-noll-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看A. Michael Noll的计算机生成艺术，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-humanistic-1962-a-michael-noll-record"],
+            "claimIds": ["claim-humanistic-1962-a-michael-noll-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 43,
+    "eventId": "humanistic-1999-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "在1999年这个节点，《黑客帝国》提供了一种观察“《黑客帝国》于 1999 年上映，正值互联网扩张、数字特效成”的方式。它为什么值得今天再听一遍？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《黑客帝国》于 1999 年上映，正值互联网扩张、数字特效成熟和千禧年技术焦虑交汇。影片中的人类生活在名为 Matrix 的模拟现实中，身体则被机器系统维持并利用。",
+            "sourceIds": ["source-humanistic-1999-event-record"],
+            "claimIds": ["claim-humanistic-1999-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "影片把认识论问题变成身体经验：如果感官输入完全由系统生成，人如何知道自己身处真实世界。红蓝药丸选择同时涉及自由、痛苦和责任，说明“知道真相”并不只是获得信息，而是接受行动后果。",
+            "sourceIds": ["source-humanistic-1999-event-record"],
+            "claimIds": ["claim-humanistic-1999-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "电影与数字文化研究者通常把《黑客帝国》视为网络时代最具影响力的哲学科幻电影之一。它的视觉语言、模拟隐喻和身份议题广泛进入游戏、互联网文化与 AI 讨论，但后来的政治挪用也表明流行符号会脱离原作语境继续变化。",
+            "sourceIds": ["source-humanistic-1999-event-record"],
+            "claimIds": ["claim-humanistic-1999-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "《黑客帝国》把“电影与数字文化研究者通常把《黑客帝国》视为网络时代最具影响力”留给后来的研究者和创作者，成为人工智能文化史的一条长线索。",
+            "sourceIds": ["source-humanistic-1999-event-record"],
+            "claimIds": ["claim-humanistic-1999-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

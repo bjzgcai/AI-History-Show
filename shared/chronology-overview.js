@@ -72,14 +72,41 @@
     const DENSITY_CHART_WIDTH = 1000;
     const DENSITY_CHART_HEIGHT = 56;
     const DENSITY_BASELINE_PADDING = 5;
+    const DENSITY_SPIKE_HALF_WIDTH = 1.6;
+    const DENSITY_BREAK_YEARS = [1637, 1768];
+    const DENSITY_COMPRESSED_SEGMENT_RATIO = 0.08;
     const CHRONOLOGY_DRAG_THRESHOLD = 8;
     const CHRONOLOGY_DRAG_INTENT_RATIO = 1.2;
     const CHRONOLOGY_CLICK_SUPPRESS_MS = 320;
 
     function getSortYear(milestone) {
         const value = milestone && milestone.year != null ? milestone.year : milestone;
-        const match = String(value || '').match(/\d{3,4}/);
+        if (Number.isFinite(Number(value))) return Number(value);
+        const match = String(value || '').match(/-?\d{1,4}/);
         return match ? Number(match[0]) : Number.NaN;
+    }
+
+    // Keep signed numeric years for chronology math, but use readable era labels in the UI.
+    function formatDisplayYear(value, locale = 'zh') {
+        if (value == null || value === '') return '';
+        const numeric = Number(value);
+        if (!Number.isFinite(numeric)) return String(value);
+        if (numeric < 0) {
+            const year = Math.abs(Math.trunc(numeric));
+            return locale === 'en' ? `${year} BCE` : `公元前${year}`;
+        }
+        return String(value);
+    }
+
+    function formatDisplayYearMarkup(value, locale = 'zh') {
+        const text = formatDisplayYear(value, locale);
+        const numeric = Number(value);
+        if (!Number.isFinite(numeric) || numeric >= 0) return escapeHtml(text);
+        const prefix = locale === 'en' ? 'BCE' : '公元前';
+        const year = Math.abs(Math.trunc(numeric));
+        return locale === 'en'
+            ? `${year} <span class="year-era-prefix">${escapeHtml(prefix)}</span>`
+            : `<span class="year-era-prefix">${escapeHtml(prefix)}</span>${year}`;
     }
 
     function getStorylineId(milestone) {
@@ -354,12 +381,70 @@
     function getDensityTargetYear(years, ratio) {
         if (!Array.isArray(years) || !years.length) return null;
         const boundedRatio = Math.min(1, Math.max(0, Number(ratio) || 0));
-        const minYear = years[0].year;
-        const maxYear = years[years.length - 1].year;
-        const targetYear = minYear + (maxYear - minYear) * boundedRatio;
+        const minYear = Number(years[0].year);
+        const maxYear = Number(years[years.length - 1].year);
+        const breakYears = getActiveDensityBreakYears(minYear, maxYear);
+        let targetYear = minYear + (maxYear - minYear) * boundedRatio;
+        if (breakYears.length) {
+            let segmentStartYear = minYear;
+            let segmentStartRatio = 0;
+            let matchedCompressedSegment = false;
+            for (const breakYear of breakYears) {
+                const segmentEndRatio = segmentStartRatio + DENSITY_COMPRESSED_SEGMENT_RATIO;
+                if (boundedRatio <= segmentEndRatio) {
+                    targetYear =
+                        segmentStartYear +
+                        (breakYear - segmentStartYear) *
+                            ((boundedRatio - segmentStartRatio) / DENSITY_COMPRESSED_SEGMENT_RATIO);
+                    matchedCompressedSegment = true;
+                    break;
+                }
+                segmentStartYear = breakYear;
+                segmentStartRatio = segmentEndRatio;
+            }
+            if (!matchedCompressedSegment) {
+                targetYear =
+                    segmentStartYear +
+                    (maxYear - segmentStartYear) * ((boundedRatio - segmentStartRatio) / (1 - segmentStartRatio));
+            }
+        }
         return years.reduce((closest, item) =>
             Math.abs(item.year - targetYear) < Math.abs(closest.year - targetYear) ? item : closest
         );
+    }
+
+    function getActiveDensityBreakYears(minYear, maxYear) {
+        if (minYear >= DENSITY_BREAK_YEARS[0] || maxYear <= DENSITY_BREAK_YEARS[0]) return [];
+        return DENSITY_BREAK_YEARS.filter((year) => year > minYear && year < maxYear);
+    }
+
+    function getDensityYearRatio(years, yearOrItem) {
+        if (!Array.isArray(years) || !years.length) return null;
+        const item =
+            yearOrItem && typeof yearOrItem === 'object'
+                ? yearOrItem
+                : years.find((candidate) => candidate.year === Number(yearOrItem));
+        if (!item || !Number.isFinite(Number(item.year))) return null;
+        const minYear = Number(years[0].year);
+        const maxYear = Number(years[years.length - 1].year);
+        if (!Number.isFinite(minYear) || !Number.isFinite(maxYear)) return null;
+        if (minYear === maxYear) return 0.5;
+        const year = Math.min(maxYear, Math.max(minYear, Number(item.year)));
+        const breakYears = getActiveDensityBreakYears(minYear, maxYear);
+        let segmentStartYear = minYear;
+        let segmentStartRatio = 0;
+        for (const breakYear of breakYears) {
+            const segmentEndRatio = segmentStartRatio + DENSITY_COMPRESSED_SEGMENT_RATIO;
+            if (year <= breakYear) {
+                return (
+                    segmentStartRatio +
+                    ((year - segmentStartYear) / (breakYear - segmentStartYear)) * DENSITY_COMPRESSED_SEGMENT_RATIO
+                );
+            }
+            segmentStartYear = breakYear;
+            segmentStartRatio = segmentEndRatio;
+        }
+        return segmentStartRatio + ((year - segmentStartYear) / (maxYear - segmentStartYear)) * (1 - segmentStartRatio);
     }
 
     function getCenteredScrollLeft(yearX, viewportWidth, scrollWidth) {
@@ -547,17 +632,19 @@
         return safeImageWidth / safeImageHeight >= safeFrameWidth / safeFrameHeight;
     }
 
-    function buildDensityPaths(milestones, summaries, storylineId = 'all') {
+    function buildDensityPaths(milestones, summaries, storylineId = 'all', layoutYears = []) {
         const activeSummaries =
             storylineId === 'all' ? summaries : summaries.filter((summary) => summary.id === storylineId);
         const variants = (milestones || [])
             .flatMap(getMilestoneVariants)
             .filter((milestone) => storylineId === 'all' || getStorylineId(milestone) === storylineId);
-        const years = variants.map(getSortYear).filter(Number.isFinite);
-        if (!years.length) return '';
-        const minYear = Math.min(...years);
-        const maxYear = Math.max(...years);
-        const range = Math.max(1, maxYear - minYear);
+        const positionedMilestones =
+            storylineId === 'all' ? milestones : selectMilestonesByStoryline(milestones, storylineId);
+        const densityYears =
+            Array.isArray(layoutYears) && layoutYears.length
+                ? layoutYears
+                : buildTimelineLayout(positionedMilestones, { viewportWidth: DENSITY_CHART_WIDTH }).years;
+        if (!densityYears.length) return '';
         const width = DENSITY_CHART_WIDTH;
         const height = DENSITY_CHART_HEIGHT;
         const countsByStoryline = new Map();
@@ -576,13 +663,40 @@
         return activeSummaries
             .map((summary) => {
                 const counts = countsByStoryline.get(summary.id) || new Map();
-                const points = [];
-                for (let year = minYear; year <= maxYear; year += 1) {
-                    const x = ((year - minYear) / range) * width;
-                    const y = height - ((counts.get(year) || 0) / maxCount) * (height - DENSITY_BASELINE_PADDING);
-                    points.push(`${x.toFixed(1)},${y.toFixed(1)}`);
+                const points = [`0,${height}`];
+                for (const year of densityYears) {
+                    const count = counts.get(year.year) || 0;
+                    if (!count) continue;
+                    const ratio = getDensityYearRatio(densityYears, year);
+                    if (ratio == null) continue;
+                    const x = ratio * width;
+                    const y = height - (count / maxCount) * (height - DENSITY_BASELINE_PADDING);
+                    points.push(
+                        `${Math.max(0, x - DENSITY_SPIKE_HALF_WIDTH).toFixed(1)},${height}`,
+                        `${x.toFixed(1)},${y.toFixed(1)}`,
+                        `${Math.min(width, x + DENSITY_SPIKE_HALF_WIDTH).toFixed(1)},${height}`
+                    );
                 }
+                points.push(`${width},${height}`);
                 return `<polyline points="${points.join(' ')}" fill="none" stroke="${summary.color}" stroke-width="1.4" stroke-opacity="0.78" vector-effect="non-scaling-stroke"></polyline>`;
+            })
+            .join('');
+    }
+
+    function buildDensityBreakMarkers(layout, locale = 'zh') {
+        const years = layout && Array.isArray(layout.years) ? layout.years : [];
+        if (years.length < 2) return '';
+        const minYear = Number(years[0].year);
+        const maxYear = Number(years[years.length - 1].year);
+        const breakYears = getActiveDensityBreakYears(minYear, maxYear);
+        let segmentStartYear = minYear;
+        return breakYears
+            .map((breakYear, index) => {
+                const gapYears = breakYear - segmentStartYear;
+                const ratio = (index + 0.5) * DENSITY_COMPRESSED_SEGMENT_RATIO;
+                const summary = locale === 'en' ? `${gapYears}y compressed` : `压缩${gapYears}年`;
+                segmentStartYear = breakYear;
+                return `<span class="chrono-density-break" style="--density-break-position:${(ratio * 100).toFixed(3)}%" data-break-index="${index}" data-gap-years="${gapYears}" aria-hidden="true"><span class="chrono-density-break-mark">//</span><span class="chrono-density-break-copy">${summary}</span></span>`;
             })
             .join('');
     }
@@ -779,7 +893,7 @@
                             : ''
                     }
                     <span class="chrono-card-copy">
-                        <span class="chrono-card-year">${escapeHtml(milestone.year)}</span>
+                        <span class="chrono-card-year">${formatDisplayYearMarkup(milestone.year, config.locale)}</span>
                         <span class="chrono-card-title">${escapeHtml(title)}</span>
                         <span class="chrono-card-meta">${escapeHtml(location || membershipNames || summary.name)}</span>
                     </span>
@@ -871,7 +985,7 @@
                                             ${
                                                 filter.id === 'all'
                                                     ? `<span>${filter.count}</span>`
-                                                    : `<span>${filter.minYear}${filter.maxYear && filter.maxYear !== filter.minYear ? `–${filter.maxYear}` : ''}</span><span>${filter.count}</span>`
+                                                    : `<span>${formatDisplayYearMarkup(filter.minYear, config.locale)}${filter.maxYear && filter.maxYear !== filter.minYear ? `–${formatDisplayYearMarkup(filter.maxYear, config.locale)}` : ''}</span><span>${filter.count}</span>`
                                             }
                                         </span>
                                     </span>
@@ -890,7 +1004,7 @@
                                 <div class="chrono-inner" style="width:${layout.width}px;height:${layout.height}px;--chrono-card-width:${layout.cardWidth}px;--chrono-card-height:${layout.cardHeight}px">
                                     <svg class="chrono-axis" width="${layout.width}" height="${layout.height}" viewBox="0 0 ${layout.width} ${layout.height}" aria-hidden="true">${renderSvg(layout, summaryById)}</svg>
                                     <div class="chrono-year-labels" aria-hidden="true">
-                                        ${layout.years.map((year) => `<span class="chrono-year-label" style="left:${year.x}px;top:${layout.axisY + 16}px">${escapeHtml(year.label || year.year)}</span>`).join('')}
+                                        ${layout.years.map((year) => `<span class="chrono-year-label" style="left:${year.x}px;top:${layout.axisY + 16}px">${year.label ? escapeHtml(year.label) : formatDisplayYearMarkup(year.year, config.locale)}</span>`).join('')}
                                         ${layout.gaps.map((gap) => `<span class="chrono-gap-label" style="left:${gap.x}px;top:${layout.axisY - 5}px">≈${gap.years}y</span>`).join('')}
                                     </div>
                                     ${layout.cards.map((card) => renderCard(card, summaryById, layout, text)).join('')}
@@ -915,8 +1029,9 @@
                                 ? `<div class="chrono-density-navigator" role="slider" tabindex="0"
                                     aria-label="${escapeHtml(text.eventDensity)}" aria-orientation="horizontal"
                                     aria-valuemin="${layout.years[0].year}" aria-valuemax="${layout.years[layout.years.length - 1].year}"
-                                    aria-valuenow="${layout.years[0].year}" aria-valuetext="${layout.years[0].year}">
-                                    <svg viewBox="0 0 ${DENSITY_CHART_WIDTH} ${DENSITY_CHART_HEIGHT}" preserveAspectRatio="none" aria-hidden="true">${buildDensityPaths(visibleMilestones, summaries, state.storylineId)}</svg>
+                                    aria-valuenow="${layout.years[0].year}" aria-valuetext="${escapeHtml(formatDisplayYear(layout.years[0].year, config.locale))}">
+                                    <svg viewBox="0 0 ${DENSITY_CHART_WIDTH} ${DENSITY_CHART_HEIGHT}" preserveAspectRatio="none" aria-hidden="true">${buildDensityPaths(visibleMilestones, summaries, state.storylineId, layout.years)}</svg>
+                                    ${buildDensityBreakMarkers(layout, config.locale)}
                                     <span class="chrono-density-cursor" aria-hidden="true"></span>
                                 </div>`
                                 : ''
@@ -1100,12 +1215,11 @@
             const years = layout.years;
             const current = getNearestVisibleYear(years, scroller.scrollLeft, scroller.clientWidth);
             if (!current) return;
-            const minYear = years[0].year;
-            const maxYear = years[years.length - 1].year;
-            const ratio = maxYear === minYear ? 0 : (current.year - minYear) / (maxYear - minYear);
+            const ratio = getDensityYearRatio(years, current);
+            if (ratio == null) return;
             navigator.style.setProperty('--density-position', `${ratio * 100}%`);
             navigator.setAttribute('aria-valuenow', String(current.year));
-            navigator.setAttribute('aria-valuetext', String(current.year));
+            navigator.setAttribute('aria-valuetext', formatDisplayYear(current.year, config.locale));
         }
 
         function bindDensityNavigator(scroller, layout) {
@@ -1217,6 +1331,7 @@
 
     const api = {
         DEFAULT_STORYLINE_STYLES,
+        buildDensityBreakMarkers,
         buildCanonicalMilestones,
         buildDensityPaths,
         buildTimelineLayout,
@@ -1229,6 +1344,9 @@
         getChronologyScrollTarget,
         getChronologyWheelDelta,
         getDensityTargetYear,
+        getDensityYearRatio,
+        formatDisplayYear,
+        formatDisplayYearMarkup,
         getMilestoneVariants,
         getNearestVisibleYear,
         getOverviewViewport,

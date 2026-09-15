@@ -3,6 +3,7 @@
     "revisionId": "humanistic-cycle-storyline-en-original-v1-2026-08-09",
     "label": "Humanistic cycle English original",
     "comparisonKind": "previous",
+    "storylineOrderPolicy": "frozen-revision",
     "outputRoot": "resources/audio/generated/remaining-storylines-original-v1/humanistic-cycle-storyline-en-original-v1-2026-08-09",
     "turnsDir": "audio/revisions/humanistic-cycle-original/turns/en",
     "voiceProfilePath": "audio/voices/en-megan-alberto-original.json",

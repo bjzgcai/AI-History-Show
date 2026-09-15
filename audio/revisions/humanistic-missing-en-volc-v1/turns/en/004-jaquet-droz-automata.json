@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 4,
+    "eventId": "jaquet-droz-automata",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Turn back to 1768—1774: The Jaquet-Droz Automata begins with “The writing, drawing and music-making automata c” and asks us to rethink the relationship between machines, minds, and people.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "The writing, drawing and music-making automata connected precision mechanics with lifelike action and audience fantasies of artificial life. They are important examples of automata before the modern idea of a robot. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.",
+            "sourceIds": ["source-jaquet-droz-automata-primary"],
+            "claimIds": ["claim-jaquet-droz-automata-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "The detail listeners may miss is “The Jaquet-Droz Automata”. Why does it become central to The Jaquet-Droz Automata?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order.",
+            "sourceIds": ["source-jaquet-droz-automata-primary"],
+            "claimIds": ["claim-jaquet-droz-automata-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance.",
+            "sourceIds": ["source-jaquet-droz-automata-primary"],
+            "claimIds": ["claim-jaquet-droz-automata-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Next comes Frankenstein; or, The Modern Prometheus, where we will follow how “The Jaquet-Droz Automata” enters a new historical setting.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

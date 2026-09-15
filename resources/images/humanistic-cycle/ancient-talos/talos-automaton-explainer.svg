@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Talos bronze automaton explainer</title>
+  <desc id="desc">Original exhibition diagram showing Talos as a bronze guardian with one vulnerable life channel.</desc>
+  <rect width="1200" height="720" fill="#101820"/>
+  <g fill="none" stroke="#d9a441" stroke-width="12">
+    <circle cx="430" cy="180" r="74"/>
+    <path d="M430 254v250M350 330l80 60 80-60M365 504l-55 126M495 504l55 126"/>
+    <path d="M430 260c-38 82-40 150 0 242" stroke="#f06b4f" stroke-width="8"/>
+  </g>
+  <circle cx="430" cy="410" r="17" fill="#f06b4f"/>
+  <g font-family="Arial, sans-serif" fill="#f5f0e6">
+    <text x="660" y="160" font-size="34">BRONZE GUARDIAN</text>
+    <text x="660" y="215" font-size="24" fill="#d8cdbb">Artificial body · autonomous patrol</text>
+    <text x="660" y="330" font-size="30" fill="#f06b4f">ONE VULNERABLE LIFE CHANNEL</text>
+    <text x="660" y="380" font-size="23" fill="#d8cdbb">Mythic boundary between mechanism and life</text>
+    <text x="80" y="680" font-size="22" fill="#d8cdbb">Original exhibition diagram · based on the Argonautica account</text>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-multivac-1948-primary",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "Internet Speculative Fiction Database：MULTIVAC书目",
+      "en": "Internet Speculative Fiction Database: MULTIVAC bibliography"
+    },
+    "url": "https://isfdb.org/cgi-bin/se.cgi?arg=MULTIVAC&type=Fiction",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来源信息已保留；正式发布前继续核验版本与许可。",
+      "en": "Source information retained; verify edition and terms before publication."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-multivac-1948-asimov-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "艾萨克·阿西莫夫肖像",
+      "en": "Isaac Asimov portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Isaac_Asimov_(cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "MULTIVAC 系列作者；纽约世界电讯报与太阳报照片，公有领域。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Author of the MULTIVAC stories; photograph from the New York World-Telegram and Sun, public domain. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

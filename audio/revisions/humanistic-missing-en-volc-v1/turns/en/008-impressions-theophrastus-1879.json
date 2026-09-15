@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 8,
+    "eventId": "impressions-theophrastus-1879",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Today we return to 1879 and use Impressions of Theophrastus Such to follow how “Within its social observation and moral reflecti” entered technical culture and reached later generations.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Within its social observation and moral reflection, the work touches on questions of machine consciousness, showing that nineteenth-century writing imagined artificial intelligence beyond an engineering viewpoint. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.",
+            "sourceIds": ["source-impressions-theophrastus-1879-primary"],
+            "claimIds": ["claim-impressions-theophrastus-1879-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "What does “Impressions of Theophrastus Such” reveal about Impressions of Theophrastus Such's disagreement with ideas of its own time?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order.",
+            "sourceIds": ["source-impressions-theophrastus-1879-primary"],
+            "claimIds": ["claim-impressions-theophrastus-1879-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance.",
+            "sourceIds": ["source-impressions-theophrastus-1879-primary"],
+            "claimIds": ["claim-impressions-theophrastus-1879-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Placed beside Erewhon, Impressions of Theophrastus Such shows how “Impressions of Theophrastus Such” keeps shaping humanistic discussions of AI.",
+            "sourceIds": ["source-impressions-theophrastus-1879-primary"],
+            "claimIds": ["claim-impressions-theophrastus-1879-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

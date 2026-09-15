@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-hephaestus-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 1,
+    "eventId": "ancient-hephaestus-automata",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "公元前八百年左右，在荷马史诗《伊利亚特》中，火神赫菲斯托斯打造了能够自行行动的金制侍女和自动三足鼎。这样的想象，为什么会成为人工智能人文历史中一个很早的起点？",
+            "sourceIds": ["source-ancient-hephaestus-automata-record"],
+            "claimIds": ["claim-ancient-hephaestus-automata-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "在《伊利亚特》第十八卷，赫菲斯托斯为阿喀琉斯锻造新的铠甲。他的宫殿里有金制侍女，这些侍女拥有人的外形，也能够按照主人的需要行动；还有能够自行前往神明集会的三足鼎。史诗没有使用现代“机器人”或“人工智能”这样的词，但它已经描写了由工匠制造、能够自主移动并执行任务的非生命之物。",
+            "sourceIds": ["source-ancient-hephaestus-automata-record"],
+            "claimIds": ["claim-ancient-hephaestus-automata-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "这段神话的重要之处，不是它准确预言了某一项现代技术，而是它提出了一个此后不断回返的问题：如果行动能力可以被制造，那么被造之物究竟只是工具，还是也可能拥有某种主体性？赫菲斯托斯的自动机械既服务于主人，也展示了创造者的技艺和权力。它们因此同时连接了劳动、秩序、战争和责任。",
+            "sourceIds": ["source-ancient-hephaestus-automata-record"],
+            "claimIds": ["claim-ancient-hephaestus-automata-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "从这个角度看，赫菲斯托斯的自动机械是人工生命叙事的一种早期文化原型。后来的机械人偶、科幻小说和人工智能电影，都会重新处理相似的张力：人类希望制造可靠的助手，却也担心被制造之物获得超出预期的能力。专家通常把这个故事视为 AI 人文史的文化参照，而不是现代技术的直接起源。",
+            "sourceIds": ["source-ancient-hephaestus-automata-record"],
+            "claimIds": ["claim-ancient-hephaestus-automata-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看《伊利亚特》中的金制侍女和自动三足鼎，我们看到的并不是一台已经存在的机器，而是一种关于制造行动者的想象。它提醒我们，人工智能的历史不仅属于实验室和计算机，也属于神话、文学以及人类长期思考创造与责任的传统。",
+            "sourceIds": ["source-ancient-hephaestus-automata-record"],
+            "claimIds": ["claim-ancient-hephaestus-automata-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

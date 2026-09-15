@@ -185,6 +185,8 @@ Do not hand-edit `milestones-data.js`, `milestones-data-default.js`, `shared/thu
 
 Thumbnail generation requires Python with Pillow. GitHub Actions and the Docker build image install it automatically; install Pillow locally before running `npm run generate` on a new machine.
 
+PowerPoint generation is an optional tooling workflow. Install its Python dependencies with `python3 -m venv .venv-ppt && .venv-ppt/bin/pip install -r scripts/ppt/requirements.txt`, and install ImageMagick separately (`sudo apt-get install imagemagick` on Ubuntu/Debian or `brew install imagemagick` on macOS). See [`scripts/ppt/README.md`](scripts/ppt/README.md) for sample and storyline deck commands.
+
 Pages and the Docker presentation image share the same allowlisted release bundle:
 
 ```bash
@@ -234,6 +236,7 @@ AI-History-Show/
 │
 ├── scripts/                     # Generation, validation, testing, and audit scripts
 │   ├── audio/                    # Audio planning, TTS, revision, review, and release pipeline
+│   ├── ppt/                      # Editable PPTX generation and its Python dependencies
 │   ├── generate-archive-data.js  # Default Archive-native generator
 │   ├── archive-compiler.js       # Archive storyline/event compiler
 │   ├── test-archive-authority.js

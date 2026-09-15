@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 18,
+    "eventId": "humanistic-1966-17-babel-17",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Seen through “Babel-17 was published in 1966, when Cold War co”, Babel-17 is more than a work or concept from 1966; it is a question about artificial intelligence.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Babel-17 was published in 1966, when Cold War communications, cryptography and linguistics attracted intense attention. Delany joins space warfare to language learning as poet and cryptographer Rydra Wong decodes an enemy language while investigating sabotage.",
+            "sourceIds": ["source-humanistic-1966-17-babel-17-record"],
+            "claimIds": ["claim-humanistic-1966-17-babel-17-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "Before we draw a conclusion, how does Babel-17 make “The novel imagines language not merely as a vehi” perceptible?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The novel imagines language not merely as a vehicle for thought but as a system that can reorganize how a speaker understands self, others and possible actions. Babel-17 suppresses certain concepts of subjecthood, allowing linguistic control and mental programming to overlap.",
+            "sourceIds": ["source-humanistic-1966-17-babel-17-record"],
+            "claimIds": ["claim-humanistic-1966-17-babel-17-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Literary scholars generally treat Babel-17 as a classic science-fiction text joining linguistic relativity, identity and cognitive control. It also offers a productive cultural reference for later debates about natural-language interfaces, prompt manipulation and whether language models understand language.",
+            "sourceIds": ["source-humanistic-1966-17-babel-17-record"],
+            "claimIds": ["claim-humanistic-1966-17-babel-17-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Next comes I Have No Mouth, and I Must Scream, where we will follow how “Literary scholars generally treat Babel-17 as a ” enters a new historical setting.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

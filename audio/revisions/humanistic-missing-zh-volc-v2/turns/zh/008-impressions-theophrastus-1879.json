@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v2-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 8,
+    "eventId": "impressions-theophrastus-1879",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "historical-echo",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1879年，《西奥弗拉斯特斯·萨奇的印象》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "这部作品在社会观察与道德思考中触及机器意识问题，显示十九世纪文学并不只从工程视角想象人工智能。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+            "sourceIds": ["source-impressions-theophrastus-1879-primary"],
+            "claimIds": ["claim-impressions-theophrastus-1879-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个有吸引力的方向。真正让它成立的核心思想是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+            "sourceIds": ["source-impressions-theophrastus-1879-primary"],
+            "claimIds": ["claim-impressions-theophrastus-1879-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+            "sourceIds": ["source-impressions-theophrastus-1879-primary"],
+            "claimIds": ["claim-impressions-theophrastus-1879-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "回看《埃瑞洪》，再看《西奥弗拉斯特斯·萨奇的印象》，我们能听见同一个关于机器与人的问题跨越年代后的历史回响。",
+            "sourceIds": ["source-impressions-theophrastus-1879-primary"],
+            "claimIds": ["claim-impressions-theophrastus-1879-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

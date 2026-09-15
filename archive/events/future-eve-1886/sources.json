@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-future-eve-1886-primary",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "法国国家图书馆《未来夏娃》书目记录",
+      "en": "Bibliothèque nationale de France record for The Future Eve"
+    },
+    "url": "https://catalogue.bnf.fr/ark:/12148/cb30678692w",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "来源信息已保留；正式发布前继续核验版本与许可。",
+      "en": "Source information retained; verify edition and terms before publication."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-future-eve-1886-villiers-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "维利耶·德·利尔-阿达姆肖像（Wikimedia Commons）",
+      "en": "Villiers de l’Isle-Adam portrait (Wikimedia Commons)"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:L'Isle-Adam.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页标注 Public domain；使用前保留摄影者/作者署名及页面许可要求。",
+      "en": "Wikimedia Commons file page identifies Public domain; retain author attribution and follow the page terms."
+    },
+    "purpose": "image-provenance"
+  }
+]

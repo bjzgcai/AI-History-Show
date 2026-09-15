@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 45,
+    "eventId": "humanistic-2003-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "《你生活在计算机模拟中吗？》出现在2003年，把“论文发表于 2003 年的《哲学季刊》，把长期存在于怀疑论与”从抽象想象变成了可以讨论的经验。它留下了什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "论文发表于 2003 年的《哲学季刊》，把长期存在于怀疑论与科幻中的模拟世界设想改写为人口统计和概率推理。论证假定某些后人类文明可能拥有运行大量祖先模拟的计算资源。",
+            "sourceIds": ["source-humanistic-2003-event-record"],
+            "claimIds": ["claim-humanistic-2003-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "当我们说到《你生活在计算机模拟中吗？》，真正需要解释的，是“博斯特罗姆没有直接宣称“我们必定生活在模拟中”，而是提出三难”背后的哪一层关系？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "博斯特罗姆没有直接宣称“我们必定生活在模拟中”，而是提出三难：文明几乎都在达到后人类阶段前灭绝、后人类文明几乎都不运行大量祖先模拟，或模拟中的观察者会远多于原始现实中的观察者。论证的力量取决于这些前提及如何定义观察者和概率。",
+            "sourceIds": ["source-humanistic-2003-event-record"],
+            "claimIds": ["claim-humanistic-2003-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "如果把时间拉长，《你生活在计算机模拟中吗？》关于“哲学家通常把模拟论证视为一项严肃但高度依赖前提的思想实验，而”的提醒，哪些仍然有效？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "哲学家通常把模拟论证视为一项严肃但高度依赖前提的思想实验，而不是可直接验证的科学结论。它广泛影响电影、游戏和技术文化，也促使研究者更清楚地区分逻辑可能性、概率判断与经验证据。",
+            "sourceIds": ["source-humanistic-2003-event-record"],
+            "claimIds": ["claim-humanistic-2003-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "如果人工智能继续发展，《你生活在计算机模拟中吗？》关于“哲学家通常把模拟论证视为一项严肃但高度依赖前提的思想实验，而”的判断需要怎样被重新检验？",
+            "sourceIds": ["source-humanistic-2003-event-record"],
+            "claimIds": ["claim-humanistic-2003-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

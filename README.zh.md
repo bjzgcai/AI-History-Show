@@ -179,11 +179,14 @@ AI-History-Show/
 ├── resources/                    # 浏览器加载的图片、论文、视频等资源
 ├── public/                       # 页面直接引用的公共文件和字体
 ├── scripts/                      # 生成、验证、测试和审计脚本
+│   ├── ppt/                      # 可编辑 PPTX 生成脚本与 Python 依赖
 ├── .github/workflows/            # Quality、deployment、Pages 工作流
 └── DEPLOYMENT.md                 # 部署与展厅运行指南
 ```
 
 `resources/` 按项目约束视为 append-only；除非明确要求，不删除已有图片或视频元数据。
+
+PowerPoint 生成属于可选工具链。首次使用时执行 `python3 -m venv .venv-ppt && .venv-ppt/bin/pip install -r scripts/ppt/requirements.txt`，并单独安装 ImageMagick（Ubuntu/Debian 使用 `sudo apt-get install imagemagick`，macOS 使用 `brew install imagemagick`）。激活虚拟环境后，可运行 `npm run generate:ppt-sample` 或 `npm run generate:storyline-ppts`；详细说明见 [`scripts/ppt/README.md`](scripts/ppt/README.md)。
 
 ## 技术栈
 

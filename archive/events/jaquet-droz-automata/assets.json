@@ -1,0 +1,196 @@
+[
+  {
+    "id": "asset-jaquet-droz-automata-jaquet-droz-writer",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-writer.jpg",
+    "role": "artifact-reference",
+    "caption": {
+      "zh": "雅克-德罗自动人偶“书写者”",
+      "en": "Jaquet-Droz automaton: Writer"
+    },
+    "subcaption": {
+      "zh": "18 世纪雅克-德罗自动人偶的实物资料。",
+      "en": "Artifact reference for the eighteenth-century Jaquet-Droz automaton."
+    },
+    "sourceId": "source-jaquet-droz-automata-jaquet-droz-writer",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Writer.jpg",
+    "rights": {
+      "status": "cc-by-sa-4.0",
+      "license": {
+        "zh": "CC BY-SA 4.0",
+        "en": "CC BY-SA 4.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-jaquet-droz-automata-jaquet-droz-musician",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/jaquet-droz-automata/jaquet-droz-musician.jpg",
+    "role": "artifact-reference",
+    "caption": {
+      "zh": "雅克-德罗自动人偶“音乐家”",
+      "en": "Jaquet-Droz automaton: Musician"
+    },
+    "subcaption": {
+      "zh": "18 世纪雅克-德罗自动人偶的实物资料。",
+      "en": "Artifact reference for the eighteenth-century Jaquet-Droz automaton."
+    },
+    "sourceId": "source-jaquet-droz-automata-jaquet-droz-musician",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaquet_Droz_automata_-_Musician.jpg",
+    "rights": {
+      "status": "cc-by-sa-4.0",
+      "license": {
+        "zh": "CC BY-SA 4.0",
+        "en": "CC BY-SA 4.0"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-jaquet-droz-automata-pierre-jaquet-droz-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/jaquet-droz-automata/pierre-jaquet-droz-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "皮埃尔·雅克-德罗肖像",
+      "en": "Pierre Jaquet-Droz portrait"
+    },
+    "subcaption": {
+      "zh": "雅克-德罗自动人偶的主要制造者。",
+      "en": "Principal maker of the Jaquet-Droz automata."
+    },
+    "sourceId": "source-jaquet-droz-automata-pierre-jaquet-droz-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons 文件页",
+      "en": "Wikimedia Commons file page"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pierre_Jaquet-Droz,_1758.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "公有领域",
+        "en": "Public domain"
+      },
+      "usage": {
+        "zh": "用于雅克-德罗自动人偶制造者头像展示。",
+        "en": "Used as the portrait of the automata maker."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "pierre-jaquet-droz"
+    ]
+  },
+  {
+    "id": "asset-jaquet-droz-automata-audio-zh-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "雅克-德罗自动人偶 中文 AI 人文科普音频",
+      "en": "Chinese AI humanities narration for The Jaquet-Droz Automata"
+    },
+    "subcaption": {
+      "zh": "中文科普讲述，供中文页面播放。",
+      "en": "Chinese narration used on the Chinese page."
+    },
+    "sourceId": "source-jaquet-droz-automata-primary",
+    "language": "zh",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/jaquet-droz-automata-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/jaquet-droz-automata-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/jaquet-droz-automata-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-zh-volc-v4-2026-09-14/audio/humanistic-cycle/storyline/zh/04-jaquet-droz-automata.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-jaquet-droz-automata-audio-en-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "雅克-德罗自动人偶 英文 AI 人文科普音频",
+      "en": "English AI humanities narration for The Jaquet-Droz Automata"
+    },
+    "subcaption": {
+      "zh": "英文科普讲述，供英文页面播放。",
+      "en": "English narration used on the English page."
+    },
+    "sourceId": "source-jaquet-droz-automata-primary",
+    "language": "en",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/jaquet-droz-automata-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/jaquet-droz-automata-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/jaquet-droz-automata-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/04-jaquet-droz-automata.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  }
+]

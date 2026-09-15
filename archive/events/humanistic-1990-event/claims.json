@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1990-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "设想蒸汽驱动计算机提前引发信息技术革命，融合工业革命与AI想象。",
+      "en": "设想蒸汽驱动计算机提前引发信息技术革命，融合工业革命与AI想象。"
+    },
+    "sourceIds": [
+      "source-humanistic-1990-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

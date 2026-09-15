@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 34,
+    "eventId": "humanistic-1990-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "把镜头拨回1990年，《差分机》从“《差分机》出版于 1990 年，被广泛归入蒸汽朋克的重要早期”出发，重新追问机器、心智与人的关系。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《差分机》出版于 1990 年，被广泛归入蒸汽朋克的重要早期作品。小说从查尔斯·巴贝奇的机械计算设想出发，构造英国在 19 世纪就建立大规模数据处理与机械智能基础设施的另类历史。",
+            "sourceIds": ["source-humanistic-1990-event-record"],
+            "claimIds": ["claim-humanistic-1990-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "小说把计算机革命从电子时代移到蒸汽工业时代，说明技术价值不仅来自机器性能，也来自人口登记、金融、警务和政治组织如何使用数据。机械计算由此成为国家治理与社会分层的基础，而不是孤立的科学奇观。",
+            "sourceIds": ["source-humanistic-1990-event-record"],
+            "claimIds": ["claim-humanistic-1990-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "文学研究者通常把《差分机》视为蒸汽朋克走向成熟的重要节点，也是一部关于信息权力的另类历史小说。它提醒后来的 AI 讨论，改变社会的不只是智能算法，还包括数据制度、基础设施和能够调用它们的机构。",
+            "sourceIds": ["source-humanistic-1990-event-record"],
+            "claimIds": ["claim-humanistic-1990-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "下一站是《意识的解释》，我们会继续追踪“文学研究者通常把《差分机》视为蒸汽朋克走向成熟的重要节点，也”如何进入新的历史场景。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}
