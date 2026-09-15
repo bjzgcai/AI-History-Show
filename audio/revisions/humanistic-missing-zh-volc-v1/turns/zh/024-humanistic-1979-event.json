@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 24,
+    "eventId": "humanistic-1979-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1979年，《银河系漫游指南》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《银河系漫游指南》先于 1978 年作为 BBC 广播剧播出，1979 年出版首部小说。它在计算机逐渐进入日常文化的时期，把电子指南、自动飞船、行星级计算和宇宙行政系统编织成一套喜剧世界。",
+            "sourceIds": ["source-humanistic-1979-event-record"],
+            "claimIds": ["claim-humanistic-1979-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "超级计算机“深思”能给出终极答案，却无法替人类理解问题；机器人马文拥有“行星大小的大脑”，却被分配琐碎任务并陷入长期厌倦。作品借此说明，能力规模、人生意义与幸福并不会自动同步增长。",
+            "sourceIds": ["source-humanistic-1979-event-record"],
+            "claimIds": ["claim-humanistic-1979-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "评论者通常把该系列视为以幽默处理技术哲学的经典作品，其中“42”、马文和《指南》已经成为全球流行文化符号。它的 AI 人文价值在于用喜剧提醒观众，智能系统也会继承设计者的荒谬目标、组织结构与价值错位。",
+            "sourceIds": ["source-humanistic-1979-event-record"],
+            "claimIds": ["claim-humanistic-1979-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看《银河系漫游指南》，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-humanistic-1979-event-record"],
+            "claimIds": ["claim-humanistic-1979-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

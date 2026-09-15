@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1995-event-record",
+    "type": "official-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "史密森尼美国艺术博物馆《电子超级高速公路》藏品记录",
+      "en": "Smithsonian American Art Museum record for Electronic Superhighway"
+    },
+    "url": "https://americanart.si.edu/artwork/electronic-superhighway-continental-us-alaska-hawaii-71478",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-humanistic-1995-event-nam-june-paik-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "白南准肖像",
+      "en": "Nam June Paik portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Paik_Nam_June_(cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《电子超级高速公路》艺术家肖像；文件页标注公有领域。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Artist behind Electronic Superhighway; the file page marks it public domain. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

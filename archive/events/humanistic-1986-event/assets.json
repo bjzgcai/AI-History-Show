@@ -1,0 +1,114 @@
+[
+  {
+    "id": "asset-humanistic-1986-event-terminator-logo",
+    "type": "svg",
+    "path": "resources/images/humanistic-cycle/humanistic-1986-event/terminator-logo.svg",
+    "role": "title-reference",
+    "caption": {
+      "zh": "《终结者》片名标识",
+      "en": "The Terminator title reference"
+    },
+    "subcaption": {
+      "zh": "1984 年电影《终结者》的片名标识。",
+      "en": "Title mark for the 1984 film The Terminator."
+    },
+    "sourceId": "source-humanistic-1986-event-terminator-logo",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Terminator_(logo).svg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "PUBLIC DOMAIN",
+        "en": "PUBLIC DOMAIN"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示；仅作片名识别，遵守 The Terminator 商标限制。",
+        "en": "Used for display in the AI humanities storyline as title identification only; respect The Terminator trademark restrictions."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "humanistic-figure-36"
+    ]
+  },
+  {
+    "id": "asset-humanistic-1986-event-tmdb-poster",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1986-event/terminator-poster-tmdb.jpg",
+    "role": "movie-poster",
+    "caption": {
+      "zh": "《终结者》电影海报",
+      "en": "The Terminator film poster"
+    },
+    "subcaption": {
+      "zh": "1984 年电影《终结者》的中文发行海报。",
+      "en": "Chinese release poster for the 1984 film The Terminator."
+    },
+    "sourceId": "source-humanistic-1986-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/qJNgd5dLjP8hh34NmCsdAlMVfA4.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/218-the-terminator/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-humanistic-1986-event-tmdb-scene-2",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/humanistic-1986-event/terminator-scene-2-tmdb.jpg",
+    "role": "film-still",
+    "caption": {
+      "zh": "《终结者》T-800 登场场景",
+      "en": "The Terminator T-800 arrival scene"
+    },
+    "subcaption": {
+      "zh": "T-800 到达 1984 年后与一群青年对峙的电影场景。",
+      "en": "Film scene in which the T-800 confronts a group of young men after arriving in 1984."
+    },
+    "sourceId": "source-humanistic-1986-event-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/ahUaAgnkFu7QlBh5h4LCNeaSurV.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/218-the-terminator/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  }
+]

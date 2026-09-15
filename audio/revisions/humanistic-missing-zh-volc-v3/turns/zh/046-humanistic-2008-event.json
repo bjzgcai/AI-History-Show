@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 46,
+    "eventId": "humanistic-2008-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "今天回到2008年，我们会通过《机器人总动员》观察“《机器人总动员》于 2008 年上映，其开场以几乎无对白的方”如何进入技术文化，并继续影响后来者。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《机器人总动员》于 2008 年上映，其开场以几乎无对白的方式描绘被消费垃圾覆盖的地球。人类撤离后把生活交给企业飞船和自动系统，清理机器人 WALL-E（瓦力）则在长期劳动中形成收藏、好奇与依恋。",
+            "sourceIds": ["source-humanistic-2008-event-record"],
+            "claimIds": ["claim-humanistic-2008-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "把注意力放在“WALL-E 与 EVE 的关系不是通过复杂台词证明，而是通”上，能否看出《机器人总动员》与同时代观念的分歧？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "WALL-E 与 EVE 的关系不是通过复杂台词证明，而是通过注意、保护、记忆与自主选择逐步建立。与之对照，飞船系统把人类照料得失去行动能力，说明便利如果取消参与和责任，也会削弱人的自主性。",
+            "sourceIds": ["source-humanistic-2008-event-record"],
+            "claimIds": ["claim-humanistic-2008-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "动画与环境人文学者通常把《机器人总动员》视为将生态危机、消费文化和机器情感结合得最成功的大众作品之一。它使儿童与成人都能讨论一个非对抗性的 AI 问题：机器可能帮助人类重新学习关怀，而不是只取代或反抗人类。",
+            "sourceIds": ["source-humanistic-2008-event-record"],
+            "claimIds": ["claim-humanistic-2008-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "下一站是teamLab数字艺术，我们会继续追踪“动画与环境人文学者通常把《机器人总动员》视为将生态危机、消费”如何进入新的历史场景。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

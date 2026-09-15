@@ -1,0 +1,174 @@
+{
+  "id": "humanistic-1992-event",
+  "year": 1992,
+  "date": "1992",
+  "title": {
+    "zh": "《雪崩》",
+    "en": "Snow Crash"
+  },
+  "description": {
+    "zh": "尼尔·斯蒂芬森在《雪崩》中以“元宇宙”、数字化身和信息病毒连接虚拟经济、平台权力与人的认知脆弱性。",
+    "en": "Neal Stephenson connects the Metaverse, digital avatars and an informational virus to virtual economies, platform power and human cognitive vulnerability."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国科幻出版语境",
+      "en": "United States science-fiction publishing context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-41",
+      "avatarAssetId": "asset-humanistic-1992-event-neal-stephenson-portrait",
+      "role": {
+        "zh": "《雪崩》作者",
+        "en": "Author of Snow Crash"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《雪崩》",
+      "en": "Snow Crash"
+    },
+    "displaySummary": {
+      "zh": "元宇宙、数字化身与语言病毒",
+      "en": "The Metaverse, digital avatars and a linguistic virus"
+    },
+    "displayDescription": {
+      "zh": "<p>尼尔·斯蒂芬森在《雪崩》中以“元宇宙”、数字化身和信息病毒连接虚拟经济、平台权力与人的认知脆弱性。 “元宇宙”让用户以化身进入共享三维空间，但访问速度、身份表现和数字地产都受到技术与资本分层。名为“雪崩”的信息则同时作用于计算机和人的语言认知，模糊了软件漏洞、文化传播和心智操控的边界。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 《雪崩》出版于 1992 年，当时个人电脑、商业网络和虚拟现实正从研究概念走向公众视野。小说构造一个公共服务碎片化、企业与私人组织掌握领土和信息基础设施的近未来美国。</p><p> 数字文化研究者通常把《雪崩》视为塑造“元宇宙”词汇和平台世界想象的关键小说。它没有准确预言某一款产品，却持续影响虚拟现实、在线社区、数字资产和平台治理的设计语言。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Neal Stephenson connects the Metaverse, digital avatars and an informational virus to virtual economies, platform power and human cognitive vulnerability. The Metaverse lets users enter a shared three-dimensional space as avatars, but access speed, identity and virtual property are stratified by technology and capital. The Snow Crash information acts on both computers and human linguistic cognition, blurring software exploits, cultural transmission and mental control.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. Snow Crash was published in 1992, as personal computers, commercial networks and virtual reality moved into public view. It depicts a near-future United States where public services fragment and corporations or private organizations control territory and information infrastructure.</p><p> Digital-culture scholars generally treat Snow Crash as a key novel in shaping the vocabulary of the “Metaverse” and imagined platform worlds. It did not predict a specific product, but it continues to influence the design language of virtual reality, online communities, digital assets and platform governance. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "企鹅兰登图书页面",
+          "en": "Penguin Random House book page"
+        },
+        "title": {
+          "zh": "《雪崩》",
+          "en": "Snow Crash"
+        },
+        "description": {
+          "zh": "元宇宙、数字化身与语言病毒",
+          "en": "The Metaverse, digital avatars and a linguistic virus"
+        },
+        "url": "https://www.penguinrandomhouse.com/books/172832/snow-crash-by-neal-stephenson/",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1992-event-neal-stephenson-portrait",
+      "asset-humanistic-1992-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1992-event-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-1992-event-record",
+      "source-humanistic-1992-event-neal-stephenson-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-1992-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《雪崩》出版于 1992 年，当时个人电脑、商业网络和虚拟现实正从研究概念走向公众视野。小说构造一个公共服务碎片化、企业与私人组织掌握领土和信息基础设施的近未来美国。",
+          "en": "Snow Crash was published in 1992, as personal computers, commercial networks and virtual reality moved into public view. It depicts a near-future United States where public services fragment and corporations or private organizations control territory and information infrastructure."
+        },
+        "sourceIds": [
+          "source-humanistic-1992-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "“元宇宙”让用户以化身进入共享三维空间，但访问速度、身份表现和数字地产都受到技术与资本分层。名为“雪崩”的信息则同时作用于计算机和人的语言认知，模糊了软件漏洞、文化传播和心智操控的边界。",
+          "en": "The Metaverse lets users enter a shared three-dimensional space as avatars, but access speed, identity and virtual property are stratified by technology and capital. The Snow Crash information acts on both computers and human linguistic cognition, blurring software exploits, cultural transmission and mental control."
+        },
+        "sourceIds": [
+          "source-humanistic-1992-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "数字文化研究者通常把《雪崩》视为塑造“元宇宙”词汇和平台世界想象的关键小说。它没有准确预言某一款产品，却持续影响虚拟现实、在线社区、数字资产和平台治理的设计语言。",
+          "en": "Digital-culture scholars generally treat Snow Crash as a key novel in shaping the vocabulary of the “Metaverse” and imagined platform worlds. It did not predict a specific product, but it continues to influence the design language of virtual reality, online communities, digital assets and platform governance."
+        },
+        "sourceIds": [
+          "source-humanistic-1992-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

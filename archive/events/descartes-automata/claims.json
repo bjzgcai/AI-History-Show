@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-descartes-automata-core",
+    "importance": "core",
+    "text": {
+      "zh": "笛卡尔区分思维实体与自动机器，并以语言和灵活应答追问机器能否思考。这个问题为后来关于心智、身体和机器理解的讨论奠定哲学背景。",
+      "en": "Descartes distinguished thinking substance from automata and used language and flexible response to ask whether a machine can think. The question supplied a philosophical background for later debates about mind, embodiment and machine understanding."
+    },
+    "sourceIds": [
+      "source-descartes-automata-primary"
+    ],
+    "status": "needs-review"
+  }
+]

@@ -1,0 +1,57 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v2-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 39,
+    "eventId": "humanistic-1993-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "hybrid",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1995年，《钻石时代》进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "《钻石时代》于 1995 年出版。小说置于纳米技术高度发展的未来社会，教育、身份与资源由不同文化共同体和技术基础设施共同决定。",
+            "sourceIds": ["source-humanistic-1993-event-record"],
+            "claimIds": ["claim-humanistic-1993-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "这听起来像一个有吸引力的方向。真正让它成立的核心思想是什么？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "“少女图解读本”会根据奈尔的处境调整故事和训练，使学习成为持续对话而非固定课程。它既展现个性化教育的潜力，也揭示教材背后的设计目标、表演者劳动和文化价值会悄然进入学习者的成长。",
+            "sourceIds": ["source-humanistic-1993-event-record"],
+            "claimIds": ["claim-humanistic-1993-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "教育技术与科幻研究者通常把这本“读本”视为智能导师和自适应学习最有影响力的文化原型之一。它提醒今天的生成式教育系统，个性化不仅是推荐更合适的内容，也涉及谁设定成长方向、谁承担教学关系以及学习数据归谁所有。",
+            "sourceIds": ["source-humanistic-1993-event-record"],
+            "claimIds": ["claim-humanistic-1993-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看《钻石时代》，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-humanistic-1993-event-record"],
+            "claimIds": ["claim-humanistic-1993-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

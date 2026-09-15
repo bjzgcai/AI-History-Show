@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 4,
+    "eventId": "jaquet-droz-automata",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "1768—1774年，雅克-德罗自动人偶进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "能写字、绘画和演奏的机械人偶，把精密机械、拟人动作与观众对人工生命的想象连接起来。它是现代机器人概念出现前的重要自动体实例。 这一作品或思想出现于技术、工业化或现代性想象持续变化的时期。",
+            "sourceIds": ["source-jaquet-droz-automata-primary"],
+            "claimIds": ["claim-jaquet-droz-automata-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "它把人工制造、自动行动或计算决策转化为关于主体性、责任和社会秩序的讨论。",
+            "sourceIds": ["source-jaquet-droz-automata-primary"],
+            "claimIds": ["claim-jaquet-droz-automata-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "研究者通常把这类作品视为 AI 人文史中的文化参照，而不是现代技术的直接预言。它帮助后来的公众讨论机器、劳动、情感和治理。",
+            "sourceIds": ["source-jaquet-droz-automata-primary"],
+            "claimIds": ["claim-jaquet-droz-automata-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看雅克-德罗自动人偶，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-jaquet-droz-automata-primary"],
+            "claimIds": ["claim-jaquet-droz-automata-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

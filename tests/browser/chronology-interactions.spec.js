@@ -16,8 +16,8 @@ async function getVisibleCardPoint(scroller, excludedEventId = '') {
             const centerX = box.x + box.width / 2;
             const centerY = box.y + box.height / 2;
             return (
-                centerX > bounds.x + 80 &&
-                centerX < bounds.right - 80 &&
+                centerX > bounds.x + 48 &&
+                centerX < bounds.right - 48 &&
                 centerY > bounds.y + 20 &&
                 centerY < Math.min(bounds.bottom, window.innerHeight) - 20
             );
@@ -156,7 +156,7 @@ test('@mobile mobile touch gestures keep vertical page and horizontal timeline s
 
     scroller = await openChronology(page);
     await scroller.evaluate((element) => {
-        element.scrollLeft = 1000;
+        element.scrollLeft = 1350;
     });
     const card = await getVisibleCardPoint(scroller);
     expect(card).not.toBeNull();

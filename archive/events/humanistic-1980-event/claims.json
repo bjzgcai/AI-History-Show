@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1980-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "以不懂中文者按规则操作符号为例，论证语法处理不等于语义理解，反驳强AI。",
+      "en": "以不懂中文者按规则操作符号为例，论证语法处理不等于语义理解，反驳强AI。"
+    },
+    "sourceIds": [
+      "source-humanistic-1980-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-2017-2049-record",
+    "type": "official-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "华纳兄弟《银翼杀手2049》官方影片页面",
+      "en": "Warner Bros. official film page for Blade Runner 2049"
+    },
+    "url": "https://www.warnerbros.com/movies/blade-runner-2049",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对作品身份、发行或发表信息。",
+      "en": "Used to verify the work identity, release, or publication information."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-humanistic-2017-2049-denis-villeneuve-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "丹尼斯·维伦纽瓦肖像",
+      "en": "Denis Villeneuve portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Denis_Villeneuve_by_Gage_Skidmore.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《银翼杀手2049》导演肖像；摄影者 Gage Skidmore，许可依文件页记录。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Director of Blade Runner 2049; photographed by Gage Skidmore, under the license recorded on the file page. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

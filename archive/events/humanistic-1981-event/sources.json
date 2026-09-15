@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-1981-event-record",
+    "type": "encyclopedia-entry",
+    "label": {
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
+    },
+    "title": {
+      "zh": "《科幻小说百科全书》弗诺·文奇条目（含《真名实姓》）",
+      "en": "The Encyclopedia of Science Fiction entry on Vernor Vinge, including “True Names”"
+    },
+    "url": "https://sf-encyclopedia.com/entry/vinge_vernor",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "bibliographic-verification"
+  },
+  {
+    "id": "source-humanistic-1981-event-vernor-vinge-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "弗诺·文奇肖像",
+      "en": "Vernor Vinge portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Vernor_Vinge_(cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《真名实姓》作者弗诺·文奇肖像；文件页标注 CC BY-SA 3.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Author of True Names, Vernor Vinge; the file page records CC BY-SA 3.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

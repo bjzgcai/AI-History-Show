@@ -1,0 +1,174 @@
+{
+  "id": "humanistic-1991-event",
+  "year": 1991,
+  "date": "1991",
+  "title": {
+    "zh": "《意识的解释》",
+    "en": "Consciousness Explained"
+  },
+  "description": {
+    "zh": "丹尼尔·丹尼特反对意识中存在单一中央观察者，提出多个并行过程不断生成和修订内容的“多重草稿”模型。",
+    "en": "Daniel Dennett rejects a single central observer in consciousness and proposes a multiple-drafts model in which parallel processes continuously produce and revise contents."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "马萨诸塞州塔夫茨大学哲学语境",
+      "en": "Tufts University philosophy context, Massachusetts"
+    },
+    "coordinates": [
+      42.4075,
+      -71.119
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-40",
+      "avatarAssetId": "asset-humanistic-1991-event-daniel-dennett-portrait",
+      "role": {
+        "zh": "《意识的解释》作者",
+        "en": "Author of Consciousness Explained"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《意识的解释》",
+      "en": "Consciousness Explained"
+    },
+    "displaySummary": {
+      "zh": "以并行的“多重草稿”解释意识",
+      "en": "Explaining consciousness through parallel multiple drafts"
+    },
+    "displayDescription": {
+      "zh": "<p>丹尼尔·丹尼特反对意识中存在单一中央观察者，提出多个并行过程不断生成和修订内容的“多重草稿”模型。 “多重草稿”模型认为，大脑中没有一个地点把所有信息汇总后展示给内在观众；不同处理过程会竞争、修订并在行为和叙述中留下影响。自我也更像持续建构的叙事重心，而不是控制全部认知的固定实体。</p><p>在网络社会、数字艺术和虚拟世界逐渐成形的时期，人工智能不再只是实验室里的机器，而成为身份、亲密关系、教育、劳动和公共生活的媒介。技术想象因此同时讨论新的自由，也讨论新的依赖。 《意识的解释》出版于 1991 年，汇集哲学、心理学、神经科学和计算模型来挑战传统的“心灵剧场”。丹尼特试图在不诉诸独立灵魂或神秘内在屏幕的情况下说明意识现象。</p><p> 意识研究者通常把本书视为自然主义意识理论中影响深远、争议持续的著作。它为 AI 提供的不是“机器已经有意识”的结论，而是一种研究路径：先解释可观察的认知功能，再谨慎处理主观体验的剩余问题。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>Daniel Dennett rejects a single central observer in consciousness and proposes a multiple-drafts model in which parallel processes continuously produce and revise contents. The multiple-drafts model holds that there is no single place where the brain assembles information for an inner audience; different processes compete, revise and leave effects on behavior and report. The self is closer to a continuously constructed center of narrative gravity than a fixed controller of cognition.</p><p>As network society, digital art and virtual worlds took shape, artificial intelligence became a medium for identity, intimacy, education, labor and public life rather than only a laboratory machine. Cultural imagination consequently explored new freedoms alongside new forms of dependence. Consciousness Explained was published in 1991, bringing philosophy, psychology, neuroscience and computational models together against the traditional “Cartesian theater.” Dennett sought to explain conscious phenomena without invoking a separate soul or mysterious inner screen.</p><p> Consciousness researchers generally regard the book as an influential and persistently controversial work of naturalistic theory. For AI it offers not a conclusion that machines are conscious, but a method: explain observable cognitive functions first, then address remaining questions of subjective experience carefully. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "阿歇特图书页面",
+          "en": "Hachette book page"
+        },
+        "title": {
+          "zh": "《意识的解释》",
+          "en": "Consciousness Explained"
+        },
+        "description": {
+          "zh": "以并行的“多重草稿”解释意识",
+          "en": "Explaining consciousness through parallel multiple drafts"
+        },
+        "url": "https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180665/",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1991-event-daniel-dennett-portrait",
+      "asset-humanistic-1991-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1991-event-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-1991-event-record",
+      "source-humanistic-1991-event-daniel-dennett-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-1991-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《意识的解释》出版于 1991 年，汇集哲学、心理学、神经科学和计算模型来挑战传统的“心灵剧场”。丹尼特试图在不诉诸独立灵魂或神秘内在屏幕的情况下说明意识现象。",
+          "en": "Consciousness Explained was published in 1991, bringing philosophy, psychology, neuroscience and computational models together against the traditional “Cartesian theater.” Dennett sought to explain conscious phenomena without invoking a separate soul or mysterious inner screen."
+        },
+        "sourceIds": [
+          "source-humanistic-1991-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "“多重草稿”模型认为，大脑中没有一个地点把所有信息汇总后展示给内在观众；不同处理过程会竞争、修订并在行为和叙述中留下影响。自我也更像持续建构的叙事重心，而不是控制全部认知的固定实体。",
+          "en": "The multiple-drafts model holds that there is no single place where the brain assembles information for an inner audience; different processes compete, revise and leave effects on behavior and report. The self is closer to a continuously constructed center of narrative gravity than a fixed controller of cognition."
+        },
+        "sourceIds": [
+          "source-humanistic-1991-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "意识研究者通常把本书视为自然主义意识理论中影响深远、争议持续的著作。它为 AI 提供的不是“机器已经有意识”的结论，而是一种研究路径：先解释可观察的认知功能，再谨慎处理主观体验的剩余问题。",
+          "en": "Consciousness researchers generally regard the book as an influential and persistently controversial work of naturalistic theory. For AI it offers not a conclusion that machines are conscious, but a method: explain observable cognitive functions first, then address remaining questions of subjective experience carefully."
+        },
+        "sourceIds": [
+          "source-humanistic-1991-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

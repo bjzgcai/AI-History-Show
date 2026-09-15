@@ -140,5 +140,116 @@
       "storyline:humanistic-cycle"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-1968-hal-9000-tmdb-poster",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/1968-hal-9000/2001-poster-tmdb.jpg",
+    "role": "movie-poster",
+    "caption": {
+      "zh": "《2001：太空漫游》电影海报",
+      "en": "2001: A Space Odyssey film poster"
+    },
+    "subcaption": {
+      "zh": "1968 年电影《2001：太空漫游》的中文发行海报。",
+      "en": "Chinese release poster for the 1968 film 2001: A Space Odyssey."
+    },
+    "sourceId": "source-1968-hal-9000-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/bO7J2LmtDYLyyBoOBeioYjp0VPl.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/62-2001-a-space-odyssey/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-1968-hal-9000-tmdb-scene-1",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/1968-hal-9000/2001-scene-1-tmdb.jpg",
+    "role": "film-still",
+    "caption": {
+      "zh": "《2001：太空漫游》离心舱场景",
+      "en": "2001 centrifuge scene"
+    },
+    "subcaption": {
+      "zh": "宇航员在“发现号”旋转离心舱内活动的电影场景。",
+      "en": "Film scene showing an astronaut moving inside Discovery One's rotating centrifuge."
+    },
+    "sourceId": "source-1968-hal-9000-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/w5IDXtifKntw0ajv2co7jFlTQDM.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/62-2001-a-space-odyssey/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
+  },
+  {
+    "id": "asset-1968-hal-9000-tmdb-scene-2",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/1968-hal-9000/2001-scene-2-tmdb.jpg",
+    "role": "film-still",
+    "caption": {
+      "zh": "HAL 9000 红色镜头",
+      "en": "HAL 9000 red camera eye"
+    },
+    "subcaption": {
+      "zh": "HAL 9000 标志性红色镜头与飞船控制界面的电影场景。",
+      "en": "Film image of HAL 9000's iconic red camera eye and the spacecraft control interface."
+    },
+    "sourceId": "source-1968-hal-9000-tmdb-images",
+    "sourceName": {
+      "zh": "TMDB",
+      "en": "TMDB"
+    },
+    "sourceUrl": "https://image.tmdb.org/t/p/original/spoZUN4X1KiOc5S0plOyGAXLNtb.jpg",
+    "rights": {
+      "status": "fair-use-reference",
+      "license": {
+        "zh": "影片宣传素材；未核实开放许可。",
+        "en": "Film promotional material; no open license has been verified."
+      },
+      "usage": {
+        "zh": "用于展览中的作品识别、历史语境与评论；公开发布前需复核权利人要求。",
+        "en": "Used for work identification, historical context and commentary in the exhibition; review rightsholder requirements before public release."
+      },
+      "sourceUrl": "https://www.themoviedb.org/movie/62-2001-a-space-odyssey/images"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": []
   }
 ]

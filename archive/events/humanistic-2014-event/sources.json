@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-2014-event-record",
+    "type": "official-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "A24《机械姬》官方影片页面",
+      "en": "A24 official film page for Ex Machina"
+    },
+    "url": "https://a24films.com/films/ex-machina",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对作品身份、发行或发表信息。",
+      "en": "Used to verify the work identity, release, or publication information."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-humanistic-2014-event-alex-garland-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "亚力克斯·嘉兰肖像",
+      "en": "Alex Garland portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:2024-03-14_Alex_Garland_SXSW_Civil-War_14.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "《机械姬》导演亚力克斯·嘉兰在 SXSW 的照片；摄影者 Jay Dixit，CC BY 4.0。 使用前保留文件页的作者署名与许可要求。",
+      "en": "Alex Garland, director of Ex Machina, at SXSW; photographed by Jay Dixit, CC BY 4.0. Retain the author attribution and follow the license terms on the file page."
+    },
+    "purpose": "image-provenance"
+  }
+]

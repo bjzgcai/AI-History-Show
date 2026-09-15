@@ -56,6 +56,12 @@
     }
   },
   "defaultPresentation": {
+    "presentationMode": "archive",
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "图灵把“机器能否思考”的哲学争论转化为可观察的人机对话测试，使机器智能成为关于语言、判断与人类认知边界的公共问题。",
+      "en": "Turing reframed the philosophical question of whether machines can think as an observable conversational test, making machine intelligence a public question about language, judgment, and the boundaries of human cognition."
+    },
     "displayTitle": {
       "zh": "图灵测试",
       "en": "Turing Test"

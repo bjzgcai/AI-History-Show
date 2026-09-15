@@ -1,0 +1,42 @@
+[
+  {
+    "id": "source-humanistic-computationalism-1950-record",
+    "type": "encyclopedia-entry",
+    "label": {
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
+    },
+    "title": {
+      "zh": "斯坦福哲学百科全书“心智的计算理论”条目",
+      "en": "Stanford Encyclopedia of Philosophy entry on the computational theory of mind"
+    },
+    "url": "https://plato.stanford.edu/entries/computational-mind/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "用于核对该事件的作品、发表信息或核心论述。",
+      "en": "Used to verify the work, publication details, or central argument for this event."
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-humanistic-computationalism-1950-verified-image",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "希拉里·普特南肖像",
+      "en": "Hilary Putnam"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页确认图片对象；许可：CC BY-SA 2.5。",
+      "en": "Wikimedia Commons file page identifies the subject; license: CC BY-SA 2.5."
+    },
+    "purpose": "image-provenance"
+  }
+]

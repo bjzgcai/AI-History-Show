@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 7,
+    "eventId": "erewhon-1872",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "forward-hook",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "Erewhon appeared in 1872 and made “Its “Book of the Machines” considers machine evo” an experience that could be discussed, not just an abstraction.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "Its “Book of the Machines” considers machine evolution and human replacement, leading the fictional society to destroy machines. It turns technological governance and machine prohibition into institutional questions. The work or idea appeared as technology, industrialization or modernity was reshaping cultural imagination.",
+            "sourceIds": ["source-erewhon-1872-primary"],
+            "claimIds": ["claim-erewhon-1872-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "It turns artificial making, autonomous action or computational decision into a discussion of agency, responsibility and social order.",
+            "sourceIds": ["source-erewhon-1872-primary"],
+            "claimIds": ["claim-erewhon-1872-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "Researchers generally treat this work as a cultural reference in AI humanities rather than a direct prediction of modern technology. It helped later publics discuss machines, labor, emotion and governance.",
+            "sourceIds": ["source-erewhon-1872-primary"],
+            "claimIds": ["claim-erewhon-1872-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "N",
+            "text": "Next comes Impressions of Theophrastus Such, where we will follow how “Erewhon” enters a new historical setting.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "storyline-sequence"
+        }
+    ]
+}

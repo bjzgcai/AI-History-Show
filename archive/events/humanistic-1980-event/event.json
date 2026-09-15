@@ -1,0 +1,176 @@
+{
+  "id": "humanistic-1980-event",
+  "year": 1980,
+  "date": "1980",
+  "title": {
+    "zh": "中文房间思想实验",
+    "en": "The Chinese Room Thought Experiment"
+  },
+  "description": {
+    "zh": "约翰·塞尔用中文房间论证，仅凭形式规则正确处理符号，并不足以证明系统理解了符号的意义。",
+    "en": "John Searle uses the Chinese Room to argue that correctly manipulating symbols by formal rules is not enough to show that a system understands their meaning."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "加州大学伯克利分校",
+      "en": "University of California, Berkeley"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-31",
+      "avatarAssetId": "asset-humanistic-1980-event-john-searle-portrait",
+      "role": {
+        "zh": "中文房间思想实验提出者",
+        "en": "Originator of the Chinese Room thought experiment"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "已检索约翰·塞尔及中文房间相关图片；Commons 中的实景房间照片与思想实验不是同一对象，已排除，待寻找可靠人物肖像或原始论文资料图。",
+      "en": "John Searle and Chinese Room images were searched; a Commons photograph of a physical room is not the thought experiment and was excluded. A reliable portrait or original-paper image is still needed."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "中文房间思想实验",
+      "en": "The Chinese Room Thought Experiment"
+    },
+    "displaySummary": {
+      "zh": "符号操作是否等于真正理解",
+      "en": "Whether symbol manipulation amounts to genuine understanding"
+    },
+    "displayDescription": {
+      "zh": "<p>约翰·塞尔用中文房间论证，仅凭形式规则正确处理符号，并不足以证明系统理解了符号的意义。 思想实验让一个不懂中文的人按照英文规则处理中文字符，并向房间外给出看似流利的回答。塞尔据此区分语法与语义：系统可以在行为上通过测试，但内部是否存在理解，仍不能仅由输入输出表现推出。</p><p>进入计算机和网络想象加速发展的年代后，作品开始把智能放进程序、媒介和制度之中。问题不再只是机器会不会动，而是规则、语言、身体经验和社会权力如何共同决定什么算作理解。 塞尔在 1980 年论文《心灵、大脑与程序》中提出中文房间，以回应把计算机程序本身视为心智解释的“强人工智能”主张。当时基于规则的符号 AI 仍是认知科学和人工智能研究的重要范式。</p><p> 心灵哲学家通常把中文房间视为机器理解争论中最有影响力、也最具争议的思想实验之一。系统回应、机器人回应和具身认知等反驳不断扩展讨论，而生成式 AI 的流畅语言表现又使语法、语义与主体经验的问题重新受到关注。 这使该事件在 AI 人文故事线中既不是孤立的预言，也不是单纯的技术注脚，而是观察人类如何借机器重新界定心智、责任与共同生活的一个坐标。</p>",
+      "en": "<p>John Searle uses the Chinese Room to argue that correctly manipulating symbols by formal rules is not enough to show that a system understands their meaning. A person who does not know Chinese follows English instructions to manipulate Chinese characters and returns apparently fluent answers outside the room. Searle uses this to distinguish syntax from semantics: a system may pass a behavioral test, yet understanding cannot be inferred from input-output performance alone.</p><p>As computers and networked imagination accelerated, works began to place intelligence inside programs, media and institutions. The question was no longer only whether a machine could move, but how rules, language, embodiment and social power determine what counts as understanding. Searle introduced the Chinese Room in his 1980 paper “Minds, Brains, and Programs” as a response to “strong AI,” the claim that a program itself could constitute a mind. Rule-based symbolic AI was then a major paradigm in cognitive science and artificial-intelligence research.</p><p> Philosophers of mind generally treat the Chinese Room as one of the most influential and disputed thought experiments about machine understanding. The systems reply, robot reply and embodied approaches have broadened the debate, while fluent generative AI has renewed questions about syntax, semantics and subjective experience. The event therefore belongs in the AI humanities storyline not as an isolated prediction or a technical footnote, but as a point from which to observe how people use machines to redefine mind, responsibility and shared life.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "剑桥大学出版社论文页面",
+          "en": "Cambridge University Press paper page"
+        },
+        "title": {
+          "zh": "中文房间思想实验",
+          "en": "The Chinese Room Thought Experiment"
+        },
+        "description": {
+          "zh": "符号操作是否等于真正理解",
+          "en": "Whether symbol manipulation amounts to genuine understanding"
+        },
+        "url": "https://doi.org/10.1017/S0140525X00005756",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1980-event-john-searle-portrait",
+      "asset-humanistic-1980-event-chinese-room-thought-experiment",
+      "asset-humanistic-1980-event-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1980-event-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-1980-event-record",
+      "source-humanistic-1980-event-john-searle-portrait",
+      "source-humanistic-1980-event-chinese-room-thought-experiment"
+    ],
+    "claimIds": [
+      "claim-humanistic-1980-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "塞尔在 1980 年论文《心灵、大脑与程序》中提出中文房间，以回应把计算机程序本身视为心智解释的“强人工智能”主张。当时基于规则的符号 AI 仍是认知科学和人工智能研究的重要范式。",
+          "en": "Searle introduced the Chinese Room in his 1980 paper “Minds, Brains, and Programs” as a response to “strong AI,” the claim that a program itself could constitute a mind. Rule-based symbolic AI was then a major paradigm in cognitive science and artificial-intelligence research."
+        },
+        "sourceIds": [
+          "source-humanistic-1980-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "思想实验让一个不懂中文的人按照英文规则处理中文字符，并向房间外给出看似流利的回答。塞尔据此区分语法与语义：系统可以在行为上通过测试，但内部是否存在理解，仍不能仅由输入输出表现推出。",
+          "en": "A person who does not know Chinese follows English instructions to manipulate Chinese characters and returns apparently fluent answers outside the room. Searle uses this to distinguish syntax from semantics: a system may pass a behavioral test, yet understanding cannot be inferred from input-output performance alone."
+        },
+        "sourceIds": [
+          "source-humanistic-1980-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "心灵哲学家通常把中文房间视为机器理解争论中最有影响力、也最具争议的思想实验之一。系统回应、机器人回应和具身认知等反驳不断扩展讨论，而生成式 AI 的流畅语言表现又使语法、语义与主体经验的问题重新受到关注。",
+          "en": "Philosophers of mind generally treat the Chinese Room as one of the most influential and disputed thought experiments about machine understanding. The systems reply, robot reply and embodied approaches have broadened the debate, while fluent generative AI has renewed questions about syntax, semantics and subjective experience."
+        },
+        "sourceIds": [
+          "source-humanistic-1980-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

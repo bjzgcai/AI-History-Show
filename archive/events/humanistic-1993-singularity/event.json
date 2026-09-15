@@ -1,0 +1,174 @@
+{
+  "id": "humanistic-1993-singularity",
+  "year": 1993,
+  "date": "1993",
+  "title": {
+    "zh": "技术奇点即将到来",
+    "en": "The Coming Technological Singularity"
+  },
+  "description": {
+    "zh": "弗诺·文奇把技术奇点描述为人工智能等技术加速后可能出现的临界点，届时现有社会与知识框架将难以继续预测未来。",
+    "en": "Vernor Vinge describes a technological singularity as a possible threshold after accelerating AI and related technologies make existing social and intellectual frameworks unable to predict the future."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "科幻与未来学语境",
+      "en": "Science-fiction and futures-studies context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "vernor-vinge",
+      "avatarAssetId": "asset-humanistic-1993-singularity-verified-image",
+      "role": {
+        "zh": "技术奇点概念的重要提出者",
+        "en": "Major proposer of the technological singularity concept"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "依据 2026-08-28 修订版 AI 人文编年新增；来源、人物和图片已登记，待编辑复核。",
+      "en": "Added from the 2026-08-28 revised AI humanities timeline; sources, figures and image are registered for editorial review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "技术奇点即将到来",
+      "en": "The Coming Technological Singularity"
+    },
+    "displaySummary": {
+      "zh": "未来学",
+      "en": "Futures studies"
+    },
+    "displayDescription": {
+      "zh": "<p>弗诺·文奇在 1993 年的文章《技术奇点即将到来》中提出，人工智能、网络和其他加速技术可能在某个临界点后改变社会的预测条件。所谓奇点并不是一个可以精确标注的日期，而是人类知识和制度难以继续跟上智能增长的情境。</p><p>文奇的核心推理是递归改进：如果一种智能足以设计更聪明的系统，技术进步就可能从渐进积累转向难以预测的加速。这个设想把“机器超过人类”从单个科幻角色扩展为社会结构问题，迫使人们思考谁能控制转折期、哪些价值会被保留以及人类是否还有谈判能力。</p><p>后来关于奇点的讨论分化为技术预测、未来学叙事和 AI 安全研究。研究者通常把它视为一种有影响力的情景框架，而不是已经证实的时间表；它的持久价值在于提醒我们，预测能力本身可能成为高能力技术首先改变的东西。</p>",
+      "en": "<p>In his 1993 essay The Coming Technological Singularity, Vernor Vinge argued that AI, networks and other accelerating technologies could reach a threshold after which society could no longer predict its own future. The singularity is not a date that can be marked precisely, but a situation in which human knowledge and institutions cannot keep pace with growing intelligence.</p><p>Vinge's central idea is recursive improvement: if an intelligence can design a more capable successor, progress may shift from gradual accumulation to an acceleration that is difficult to forecast. This turns machines surpassing humans from a story about one character into a question about social structure, control, preserved values and humanity's ability to negotiate.</p><p>Later singularity discussions split into technology forecasts, futurist narratives and AI-safety research. Researchers generally treat it as an influential scenario framework rather than a validated timetable. Its lasting value is the warning that predictive capacity itself may be among the first things transformed by highly capable technology.</p>"
+    },
+    "emphasis": [
+      "humanistic-cycle"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "作品/文献资料",
+          "en": "Work or text record"
+        },
+        "title": {
+          "zh": "技术奇点即将到来",
+          "en": "The Coming Technological Singularity"
+        },
+        "description": {
+          "zh": "打开作品或文献资料页面。",
+          "en": "Open the work or text record."
+        },
+        "url": "https://edoras.sdsu.edu/~vinge/misc/singularity.html",
+        "source": "The Coming Technological Singularity",
+        "license": {
+          "zh": "以来源页面说明为准。",
+          "en": "Follow the source page terms."
+        },
+        "usage": {
+          "zh": "事件主要资料来源",
+          "en": "Primary record for this event"
+        },
+        "action": {
+          "zh": "打开资料页面",
+          "en": "Open source page"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1993-singularity-verified-image",
+      "asset-humanistic-1993-singularity-audio-zh-humanistic-20260914-v1",
+      "asset-humanistic-1993-singularity-audio-en-humanistic-20260914-v1"
+    ],
+    "sourceIds": [
+      "source-humanistic-1993-singularity-record",
+      "source-humanistic-1993-singularity-verified-image"
+    ],
+    "claimIds": [
+      "claim-humanistic-1993-singularity-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "弗诺·文奇把技术奇点描述为人工智能等技术加速后可能出现的临界点，届时现有社会与知识框架将难以继续预测未来。",
+          "en": "Vernor Vinge describes a technological singularity as a possible threshold after accelerating AI and related technologies make existing social and intellectual frameworks unable to predict the future."
+        },
+        "sourceIds": [
+          "source-humanistic-1993-singularity-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+          "en": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order."
+        },
+        "sourceIds": [
+          "source-humanistic-1993-singularity-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+          "en": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology."
+        },
+        "sourceIds": [
+          "source-humanistic-1993-singularity-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "notes": {
+        "zh": "待编辑复核。",
+        "en": "Requires editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI 人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

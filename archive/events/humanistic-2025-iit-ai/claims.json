@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-2025-iit-ai-core",
+    "importance": "core",
+    "text": {
+      "zh": "以Φ值衡量系统整合信息能力，追问达标的AI是否具有意识。",
+      "en": "以Φ值衡量系统整合信息能力，追问达标的AI是否具有意识。"
+    },
+    "sourceIds": [
+      "source-humanistic-2025-iit-ai-record"
+    ],
+    "status": "needs-review"
+  }
+]

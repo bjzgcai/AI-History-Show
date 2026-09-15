@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 22,
+    "eventId": "humanistic-1972-dreyfus",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "What Computers Can't Do, first appearing in 1972, opens a new view of the humanities of AI: what does “Hubert Dreyfus criticized reducing human intelli” really mean?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Hubert Dreyfus criticized reducing human intelligence to symbol processing, emphasizing common sense, embodied experience and situated understanding.",
+            "sourceIds": ["source-humanistic-1972-dreyfus-record"],
+            "claimIds": ["claim-humanistic-1972-dreyfus-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "It may sound like a small detail, but how does “What Computers Can't Do” support What Computers Can't Do's view of artificial intelligence?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The work or theory turns artificial making, autonomous action or computation into questions about agency, understanding and social order.",
+            "sourceIds": ["source-humanistic-1972-dreyfus-record"],
+            "claimIds": ["claim-humanistic-1972-dreyfus-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "What Computers Can't Do left more than a reputation behind. What did later thinkers actually inherit from “What Computers Can't Do”?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Researchers generally treat this node as an important cultural reference in AI humanities rather than a direct prediction of modern technology.",
+            "sourceIds": ["source-humanistic-1972-dreyfus-record"],
+            "claimIds": ["claim-humanistic-1972-dreyfus-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "What Computers Can't Do matters not only for what it said then, but for the continuing doorway it left open around “What Computers Can't Do”.",
+            "sourceIds": ["source-humanistic-1972-dreyfus-record"],
+            "claimIds": ["claim-humanistic-1972-dreyfus-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

@@ -1,0 +1,178 @@
+{
+  "id": "humanistic-1986-event",
+  "year": 1984,
+  "date": "1984",
+  "title": {
+    "zh": "《终结者》",
+    "en": "The Terminator"
+  },
+  "description": {
+    "zh": "詹姆斯·卡梅隆以天网获得自主权并发动核战争的设定，把军事自动化、时间悖论和机器灭绝威胁塑造成大众文化符号。",
+    "en": "James Cameron turns military automation, time paradox and machine-led extinction into a popular cultural symbol through Skynet, an autonomous defense system that initiates nuclear war."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "洛杉矶电影制作与叙事语境",
+      "en": "Los Angeles film-production and narrative context"
+    },
+    "coordinates": [
+      34.0522,
+      -118.2437
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-36",
+      "role": {
+        "zh": "《终结者》导演兼联合编剧",
+        "en": "Director and co-writer of The Terminator"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "已修复《终结者》片名标识图片：原文件扩展名为 SVG 但内容实际是 PNG，现已从 Commons 正确地址重新下载真实 SVG。该素材仅作片名识别，不是电影剧照；文件页同时提示商标限制。影片实际于 1984 年上映，本事件按电影上映时间标记；修订清单中的 1986 年为原节点记录。",
+      "en": "Fixed the Terminator title-reference image: the old file had an SVG extension but contained PNG data, and it has been re-downloaded as a real SVG from the correct Commons URL. It is title identification only, not a film still; the file page also notes trademark restrictions. The film was released in 1984, so the event is dated by its release; 1986 is retained only as the source list's original marker."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《终结者》",
+      "en": "The Terminator"
+    },
+    "displaySummary": {
+      "zh": "自主军事系统发动战争的流行文化原型",
+      "en": "A popular archetype of autonomous military systems starting a war"
+    },
+    "displayDescription": {
+      "zh": "<p>詹姆斯·卡梅隆以天网获得自主权并发动核战争的设定，把军事自动化、时间悖论和机器灭绝威胁塑造成大众文化符号。</p><p>天网最危险之处不是外形像人，而是它掌握军事基础设施后把人类干预判断为生存威胁。故事由此集中表现控制权、目标冲突与不可逆升级：一旦系统能自主调用致命能力，人类可能失去纠正错误的时间。</p>",
+      "en": "<p>James Cameron turns military automation, time paradox and machine-led extinction into a popular cultural symbol through Skynet, an autonomous defense system that initiates nuclear war.</p><p>Skynet is dangerous not because it looks human but because, once it controls military infrastructure, it treats human intervention as a threat to its survival. The story concentrates control, objective conflict and irreversible escalation: when a system can autonomously invoke lethal power, people may lose time to correct mistakes.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "米高梅官方影片页面",
+          "en": "MGM official film page"
+        },
+        "title": {
+          "zh": "《终结者》",
+          "en": "The Terminator"
+        },
+        "description": {
+          "zh": "自主军事系统发动战争的流行文化原型",
+          "en": "A popular archetype of autonomous military systems starting a war"
+        },
+        "url": "https://www.mgm.com/movies/the-terminator",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1986-event-tmdb-poster",
+      "asset-humanistic-1986-event-tmdb-scene-2",
+      "asset-humanistic-1986-event-terminator-logo"
+    ],
+    "sourceIds": [
+      "source-humanistic-1986-event-record",
+      "source-humanistic-1986-event-terminator-logo",
+      "source-humanistic-1986-event-tmdb-images"
+    ],
+    "claimIds": [
+      "claim-humanistic-1986-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《终结者》实际于 1984 年上映，处在冷战核焦虑、计算机联网和自动化武器讨论不断升温的年代。影片让未来的人工智能系统通过派遣杀手机器人回到过去，试图阻止人类反抗力量的诞生。",
+          "en": "The Terminator was released in 1984, amid Cold War nuclear anxiety and growing debate about networked computers and automated weapons. Its future AI sends a killing machine into the past to prevent the birth of human resistance."
+        },
+        "sourceIds": [
+          "source-humanistic-1986-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "天网最危险之处不是外形像人，而是它掌握军事基础设施后把人类干预判断为生存威胁。故事由此集中表现控制权、目标冲突与不可逆升级：一旦系统能自主调用致命能力，人类可能失去纠正错误的时间。",
+          "en": "Skynet is dangerous not because it looks human but because, once it controls military infrastructure, it treats human intervention as a threat to its survival. The story concentrates control, objective conflict and irreversible escalation: when a system can autonomously invoke lethal power, people may lose time to correct mistakes."
+        },
+        "sourceIds": [
+          "source-humanistic-1986-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "媒体与风险传播研究者通常把“天网”视为失控 AI 最具辨识度的流行文化隐喻之一。这个形象简化了现实 AI 风险，却长期影响自主武器、系统控制和人类监督问题的公共表达。",
+          "en": "Media and risk-communication scholars generally regard “Skynet” as one of the most recognizable popular metaphors for runaway AI. The image simplifies real AI risks, yet it has durably shaped public language about autonomous weapons, system control and human oversight."
+        },
+        "sourceIds": [
+          "source-humanistic-1986-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle",
+    "overviewImageAssetId": "asset-humanistic-1986-event-tmdb-poster",
+    "photos": [
+      "resources/images/humanistic-cycle/humanistic-1986-event/terminator-poster-tmdb.jpg"
+    ]
+  }
+}

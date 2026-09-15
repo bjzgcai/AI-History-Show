@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-en-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 35,
+    "eventId": "humanistic-1991-event",
+    "variantId": "humanistic-cycle",
+    "locale": "en",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "At the 1991 point on this timeline, Consciousness Explained offers a way to look closely at “Consciousness Explained was published in 1991, b”. Why does it still matter?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "Consciousness Explained was published in 1991, bringing philosophy, psychology, neuroscience and computational models together against the traditional “Cartesian theater.” Dennett sought to explain conscious phenomena without invoking a separate soul or mysterious inner screen.",
+            "sourceIds": ["source-humanistic-1991-event-record"],
+            "claimIds": ["claim-humanistic-1991-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "Starting from “The multiple-drafts model holds that there is no”, how should we explain the core mechanism or judgment in Consciousness Explained?",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "The multiple-drafts model holds that there is no single place where the brain assembles information for an inner audience; different processes compete, revise and leave effects on behavior and report. The self is closer to a continuously constructed center of narrative gravity than a fixed controller of cognition.",
+            "sourceIds": ["source-humanistic-1991-event-record"],
+            "claimIds": ["claim-humanistic-1991-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "If one long-term question remains, it is how “Consciousness researchers generally regard the b” changed the way we talk about artificial intelligence.",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "Consciousness researchers generally regard the book as an influential and persistently controversial work of naturalistic theory. For AI it offers not a conclusion that machines are conscious, but a method: explain observable cognitive functions first, then address remaining questions of subjective experience carefully.",
+            "sourceIds": ["source-humanistic-1991-event-record"],
+            "claimIds": ["claim-humanistic-1991-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "Consciousness Explained matters not only for what it said then, but for the continuing doorway it left open around “Consciousness researchers generally regard the b”.",
+            "sourceIds": ["source-humanistic-1991-event-record"],
+            "claimIds": ["claim-humanistic-1991-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

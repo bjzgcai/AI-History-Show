@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-1982-event",
+  "year": 1982,
+  "date": "1982",
+  "title": {
+    "zh": "《银翼杀手》",
+    "en": "Blade Runner"
+  },
+  "description": {
+    "zh": "雷德利·斯科特的《银翼杀手》通过复制人追求寿命与身份的故事，以黑色电影和赛博朋克视觉追问何为人类。",
+    "en": "Ridley Scott's Blade Runner uses replicants seeking life and identity, rendered through film noir and cyberpunk imagery, to ask what makes someone human."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "洛杉矶电影制作与叙事语境",
+      "en": "Los Angeles film-production and narrative context"
+    },
+    "coordinates": [
+      34.0522,
+      -118.2437
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-33",
+      "role": {
+        "zh": "《银翼杀手》导演",
+        "en": "Director of Blade Runner"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《银翼杀手》",
+      "en": "Blade Runner"
+    },
+    "displaySummary": {
+      "zh": "仿生人的记忆、寿命与人格边界",
+      "en": "Android memory, mortality and personhood"
+    },
+    "displayDescription": {
+      "zh": "<p>雷德利·斯科特的《银翼杀手》通过复制人追求寿命与身份的故事，以黑色电影和赛博朋克视觉追问何为人类。</p><p>复制人拥有植入记忆、强烈情感和对死亡的恐惧，使“人工制造”不再足以否定人格。影片同时让追捕者戴克的身份保持暧昧，迫使观众从共情、经验和脆弱性而非出生方式理解人性。</p>",
+      "en": "<p>Ridley Scott's Blade Runner uses replicants seeking life and identity, rendered through film noir and cyberpunk imagery, to ask what makes someone human.</p><p>Replicants possess implanted memories, intense emotions and fear of death, so artificial manufacture no longer suffices to deny personhood. Deckard's own ambiguous identity pushes viewers to understand humanity through empathy, experience and vulnerability rather than origin.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "华纳兄弟官方影片页面",
+          "en": "Warner Bros. official film page"
+        },
+        "title": {
+          "zh": "《银翼杀手》",
+          "en": "Blade Runner"
+        },
+        "description": {
+          "zh": "仿生人的记忆、寿命与人格边界",
+          "en": "Android memory, mortality and personhood"
+        },
+        "url": "https://www.warnerbros.com/movies/blade-runner",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-1982-event-blade-runner-final-cut"
+    ],
+    "sourceIds": [
+      "source-humanistic-1982-event-record",
+      "source-humanistic-1982-event-blade-runner-final-cut"
+    ],
+    "claimIds": [
+      "claim-humanistic-1982-event-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "影片于 1982 年上映，改编自菲利普·K·迪克的小说，但把故事重构为潮湿、拥挤且由企业权力支配的未来洛杉矶。生物工程制造的复制人承担危险劳动，返回地球则会被专职警察追杀。",
+          "en": "Released in 1982, the film adapts Philip K. Dick's novel while rebuilding it as a wet, crowded future Los Angeles dominated by corporate power. Bioengineered replicants perform dangerous labor and are hunted by specialist police if they return to Earth."
+        },
+        "sourceIds": [
+          "source-humanistic-1982-event-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "复制人拥有植入记忆、强烈情感和对死亡的恐惧，使“人工制造”不再足以否定人格。影片同时让追捕者戴克的身份保持暧昧，迫使观众从共情、经验和脆弱性而非出生方式理解人性。",
+          "en": "Replicants possess implanted memories, intense emotions and fear of death, so artificial manufacture no longer suffices to deny personhood. Deckard's own ambiguous identity pushes viewers to understand humanity through empathy, experience and vulnerability rather than origin."
+        },
+        "sourceIds": [
+          "source-humanistic-1982-event-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "电影研究者通常把《银翼杀手》视为赛博朋克视觉和人工生命伦理的奠基作品。它对电影、游戏、建筑想象和 AI 文化的影响延续数十年，并把复制人的劳动权、记忆权与生存权带入大众讨论。",
+          "en": "Film scholars generally treat Blade Runner as foundational to cyberpunk aesthetics and artificial-life ethics. Its influence across cinema, games, architecture and AI culture has lasted for decades, bringing replicant labor, memory and survival into popular debate."
+        },
+        "sourceIds": [
+          "source-humanistic-1982-event-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

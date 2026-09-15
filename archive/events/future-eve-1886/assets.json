@@ -1,0 +1,124 @@
+[
+  {
+    "id": "asset-future-eve-1886-villiers-portrait",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/future-eve-1886/villiers-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "维利耶·德·利尔-阿达姆肖像",
+      "en": "Villiers de l’Isle-Adam portrait"
+    },
+    "subcaption": {
+      "zh": "《未来夏娃》作者。",
+      "en": "Author of The Future Eve."
+    },
+    "sourceId": "source-future-eve-1886-villiers-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:L'Isle-Adam.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "Public domain",
+        "en": "Public domain"
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件资料展示。",
+        "en": "Used for display in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false,
+    "figureIds": [
+      "villiers-de-lisle-adam"
+    ]
+  },
+  {
+    "id": "asset-future-eve-1886-audio-zh-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《未来夏娃》 中文 AI 人文科普音频",
+      "en": "Chinese AI humanities narration for The Future Eve"
+    },
+    "subcaption": {
+      "zh": "中文科普讲述，供中文页面播放。",
+      "en": "Chinese narration used on the Chinese page."
+    },
+    "sourceId": "source-future-eve-1886-primary",
+    "language": "zh",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/future-eve-1886-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/future-eve-1886-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/future-eve-1886-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-zh-volc-v4-2026-09-14/audio/humanistic-cycle/storyline/zh/09-future-eve-1886.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-future-eve-1886-audio-en-humanistic-20260914-v1",
+    "type": "audio",
+    "role": "audio-narration",
+    "caption": {
+      "zh": "《未来夏娃》 英文 AI 人文科普音频",
+      "en": "English AI humanities narration for The Future Eve"
+    },
+    "subcaption": {
+      "zh": "英文科普讲述，供英文页面播放。",
+      "en": "English narration used on the English page."
+    },
+    "sourceId": "source-future-eve-1886-primary",
+    "language": "en",
+    "path": "https://media.sciencearena.cn/audio/ai-history/releases/future-eve-1886-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/future-eve-1886-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+    "storage": {
+      "profileId": "ai-history-audio-releases",
+      "provider": "aliyun-oss",
+      "bucket": "[REDACTED_OSS_BUCKET]",
+      "objectKey": "audio/ai-history/releases/future-eve-1886-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
+      "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/09-future-eve-1886.mp3",
+      "contentType": "audio/mpeg",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    "rights": {
+      "status": "project-produced",
+      "license": {
+        "zh": "本项目使用已授权语音合成服务制作。",
+        "en": "Produced by this project with an authorized text-to-speech service."
+      },
+      "usage": {
+        "zh": "用于 AI 人文故事线事件科普音频播放。",
+        "en": "Used for event narration in the AI humanities storyline."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle",
+      "storyline:humanistic-cycle"
+    ],
+    "editable": true
+  }
+]

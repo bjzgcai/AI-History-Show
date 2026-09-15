@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-sandman-1816-core",
+    "importance": "core",
+    "text": {
+      "zh": "奥林匹亚是一具逼真到被误认为人的自动机器；作品探讨人类对人造人的情感投射与幻灭。",
+      "en": "Olympia is an automaton so lifelike that she is mistaken for a person. Hoffmann explores emotional projection onto an artificial human and the shock of disillusionment."
+    },
+    "sourceIds": [
+      "source-sandman-1816-primary"
+    ],
+    "status": "needs-review"
+  }
+]

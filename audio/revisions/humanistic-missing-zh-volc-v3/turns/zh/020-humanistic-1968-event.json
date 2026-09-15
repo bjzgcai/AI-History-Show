@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v3-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 20,
+    "eventId": "humanistic-1968-event",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "今天回到1968年，我们会通过《仿生人会梦见电子羊吗？》观察“小说出版于 1968 年，其核战争后的荒凉世界回应了冷战、生”如何进入技术文化，并继续影响后来者。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "小说出版于 1968 年，其核战争后的荒凉世界回应了冷战、生态危机和消费社会的焦虑。仿生人被制造为殖民地劳动力，却因追求生存而逃回地球，成为赏金猎人里克·戴克必须“退休”的对象。",
+            "sourceIds": ["source-humanistic-1968-event-record"],
+            "claimIds": ["claim-humanistic-1968-event-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "把注意力放在“作品没有把人和机器的差别简单归结为智力，而是借共情测试、人工”上，能否看出《仿生人会梦见电子羊吗？》与同时代观念的分歧？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "作品没有把人和机器的差别简单归结为智力，而是借共情测试、人工记忆和对动物的照护不断动摇边界。它反过来要求读者判断：执行杀戮的人类与渴望活下去的仿生人，谁更接近被称为“人”的道德主体。",
+            "sourceIds": ["source-humanistic-1968-event-record"],
+            "claimIds": ["claim-humanistic-1968-event-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "放到今天再看，“研究者通常把这部小说视为人工生命伦理和后人类身份研究的核心文”还在哪些人工智能场景里继续出现？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "研究者通常把这部小说视为人工生命伦理和后人类身份研究的核心文本，它也成为电影《银翼杀手》的文学基础。其长期影响在于让“机器是否像人”转向“人是否愿意承认另一种主体”的问题。",
+            "sourceIds": ["source-humanistic-1968-event-record"],
+            "claimIds": ["claim-humanistic-1968-event-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "面对“研究者通常把这部小说视为人工生命伦理和后人类身份研究的核心文”，我们是在延续《仿生人会梦见电子羊吗？》的设想，还是已经走向了另一条路？",
+            "sourceIds": ["source-humanistic-1968-event-record"],
+            "claimIds": ["claim-humanistic-1968-event-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

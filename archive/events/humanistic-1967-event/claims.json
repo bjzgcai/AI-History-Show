@@ -1,0 +1,14 @@
+[
+  {
+    "id": "claim-humanistic-1967-event-core",
+    "importance": "core",
+    "text": {
+      "zh": "超级计算机AM毁灭人类并囚禁幸存者施以折磨，表现AI由无聊与愤怒驱动的施虐想象。",
+      "en": "超级计算机AM毁灭人类并囚禁幸存者施以折磨，表现AI由无聊与愤怒驱动的施虐想象。"
+    },
+    "sourceIds": [
+      "source-humanistic-1967-event-record"
+    ],
+    "status": "needs-review"
+  }
+]

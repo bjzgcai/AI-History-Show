@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v1-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 47,
+    "eventId": "humanistic-2010-teamlab",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "narration",
+    "closingType": "summary",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "N",
+            "text": "2010年至今，teamLab数字艺术进入了人工智能与人文想象的历史。它提出了怎样的问题，又为什么值得我们今天重新回看？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "N",
+            "text": "teamLab 于 2001 年在东京成立，由艺术家、程序员、工程师、动画师、数学家和建筑师等跨学科成员组成。2010 年前后，其大型数字装置开始获得更广泛的国际展览关注，后来发展出 Borderless 等常设沉浸空间。",
+            "sourceIds": ["source-humanistic-2010-teamlab-record"],
+            "claimIds": ["claim-humanistic-2010-teamlab-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "N",
+            "text": "作品中的花朵、水流、动物和书法并非固定播放的视频，而是由程序根据空间、时间和观众位置实时变化。观众不再只是观看完成品，而会通过移动身体改变作品，使作者、系统、环境与参与者共同构成体验。",
+            "sourceIds": ["source-humanistic-2010-teamlab-record"],
+            "claimIds": ["claim-humanistic-2010-teamlab-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "N",
+            "text": "数字艺术研究者通常把 teamLab 视为把生成系统、互动装置和大众展览结合的代表团队。其影响也伴随批评：高沉浸与高传播性可能遮蔽算法机制、基础设施和观众数据如何参与作品。",
+            "sourceIds": ["source-humanistic-2010-teamlab-record"],
+            "claimIds": ["claim-humanistic-2010-teamlab-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "SUMMARY",
+            "text": "回看teamLab数字艺术，重要的不只是作品、理论或事件本身，更是它让人们重新思考机器、心智与人的关系。它留下的问题，至今仍在人工智能的文化讨论中不断回响。",
+            "sourceIds": ["source-humanistic-2010-teamlab-record"],
+            "claimIds": ["claim-humanistic-2010-teamlab-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}

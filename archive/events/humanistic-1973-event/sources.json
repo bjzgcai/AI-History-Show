@@ -1,0 +1,62 @@
+[
+  {
+    "id": "source-humanistic-1973-event-record",
+    "type": "official-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "米高梅《西部世界》官方影片页面",
+      "en": "MGM official film page for Westworld"
+    },
+    "url": "https://www.mgm.com/movies/westworld",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "用于核对作品身份、发行或发表信息。",
+      "en": "Used to verify the work identity, release, or publication information."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-humanistic-1973-event-michael-crichton-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "Michael Crichton",
+      "en": "Michael Crichton"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:MichaelCrichton.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Harvard News Office 照片，摄影：Jon Chase；文件页标注 CC BY 3.0。克莱顿是《西部世界》（1973）的编剧兼导演。",
+      "en": "Harvard News Office photograph by Jon Chase; the file page records CC BY 3.0. Crichton wrote and directed Westworld (1973)."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-humanistic-1973-event-westworld-poster",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "Westworld ver2.jpg",
+      "en": "Westworld ver2.jpg"
+    },
+    "url": "https://en.wikipedia.org/wiki/File:Westworld_ver2.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "英文维基百科条目使用的 1973 年电影海报，属于非自由版权材料；本地副本仅作作品识别和评论参考，不能视为开放许可素材。",
+      "en": "1973 film poster used by the English Wikipedia article; non-free copyrighted material. The local copy is for work identification and commentary reference only, not an open-license asset."
+    },
+    "purpose": "image-provenance"
+  }
+]

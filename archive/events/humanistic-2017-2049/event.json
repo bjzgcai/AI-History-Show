@@ -1,0 +1,171 @@
+{
+  "id": "humanistic-2017-2049",
+  "year": 2017,
+  "date": "2017",
+  "title": {
+    "zh": "《银翼杀手2049》",
+    "en": "Blade Runner 2049"
+  },
+  "description": {
+    "zh": "丹尼斯·维伦纽瓦延续《银翼杀手》的复制人世界，通过 K 的调查讨论制造记忆、被指定的身份和人工生命争取主体性的过程。",
+    "en": "Denis Villeneuve extends Blade Runner's replicant world through K's investigation of manufactured memories, assigned identity and artificial life seeking agency."
+  },
+  "location": {
+    "regionId": "global",
+    "country": {
+      "zh": "美国 / 加拿大",
+      "en": "United States / Canada"
+    },
+    "place": {
+      "zh": "美国与加拿大电影制作语境",
+      "en": "United States and Canadian film-production context"
+    },
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "humanistic-figure-62",
+      "role": {
+        "zh": "《银翼杀手 2049》导演",
+        "en": "Director of Blade Runner 2049"
+      },
+      "primary": true
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "needs-review",
+    "notes": {
+      "zh": "批量导入事件；英文标题、人物、地址、来源和图片需逐条复核。",
+      "en": "Batch-imported event; English title, figure, location, sources and images require item-level review."
+    }
+  },
+  "defaultPresentation": {
+    "presentationMode": "archive",
+    "displayTitle": {
+      "zh": "《银翼杀手2049》",
+      "en": "Blade Runner 2049"
+    },
+    "displaySummary": {
+      "zh": "复制人的记忆、劳动与自我选择",
+      "en": "Replicant memory, labor and self-chosen identity"
+    },
+    "displayDescription": {
+      "zh": "<p>丹尼斯·维伦纽瓦延续《银翼杀手》的复制人世界，通过 K 的调查讨论制造记忆、被指定的身份和人工生命争取主体性的过程。</p><p>K 一度相信自己的记忆证明他是“特殊之人”，后来发现记忆虽被植入，其中的情感意义和行动选择仍然属于自己。影片借此区分身份来源与道德主体性：被制造的经历不必使真实感受和牺牲失效。</p>",
+      "en": "<p>Denis Villeneuve extends Blade Runner's replicant world through K's investigation of manufactured memories, assigned identity and artificial life seeking agency.</p><p>K briefly believes his memories prove that he is uniquely born, then learns that although implanted, their emotional meaning and the choices they inspire remain his own. The film separates identity's origin from moral agency: manufactured experience need not invalidate genuine feeling or sacrifice.</p>"
+    },
+    "emphasis": [
+      "needs-review"
+    ],
+    "visual": "humanistic",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "zh": "华纳兄弟官方影片页面",
+          "en": "Warner Bros. official film page"
+        },
+        "title": {
+          "zh": "《银翼杀手2049》",
+          "en": "Blade Runner 2049"
+        },
+        "description": {
+          "zh": "复制人的记忆、劳动与自我选择",
+          "en": "Replicant memory, labor and self-chosen identity"
+        },
+        "url": "https://www.warnerbros.com/movies/blade-runner-2049",
+        "source": "Research index",
+        "license": {
+          "zh": "来源与使用记录保留在后台。",
+          "en": "Source and usage records are retained in the archive."
+        },
+        "usage": {
+          "zh": "用于查阅该事件的补充资料。",
+          "en": "Used to consult supplementary material for this event."
+        },
+        "action": {
+          "zh": "打开资料入口",
+          "en": "Open reference entry"
+        }
+      }
+    ],
+    "assetIds": [
+      "asset-humanistic-2017-2049-denis-villeneuve-portrait"
+    ],
+    "sourceIds": [
+      "source-humanistic-2017-2049-record",
+      "source-humanistic-2017-2049-denis-villeneuve-portrait"
+    ],
+    "claimIds": [
+      "claim-humanistic-2017-2049-core"
+    ],
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《银翼杀手 2049》于 2017 年上映，故事发生在前作三十年后的生态衰败社会。新一代复制人被设计得更服从，并被用于追捕旧型号，而企业继续控制复制、记忆和人工伴侣技术。",
+          "en": "Blade Runner 2049 was released in 2017 and takes place thirty years after the original in an ecologically damaged society. New replicants are designed for greater obedience and used to hunt older models, while corporations control replication, memory and artificial companionship."
+        },
+        "sourceIds": [
+          "source-humanistic-2017-2049-record"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "K 一度相信自己的记忆证明他是“特殊之人”，后来发现记忆虽被植入，其中的情感意义和行动选择仍然属于自己。影片借此区分身份来源与道德主体性：被制造的经历不必使真实感受和牺牲失效。",
+          "en": "K briefly believes his memories prove that he is uniquely born, then learns that although implanted, their emotional meaning and the choices they inspire remain his own. The film separates identity's origin from moral agency: manufactured experience need not invalidate genuine feeling or sacrifice."
+        },
+        "sourceIds": [
+          "source-humanistic-2017-2049-record"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "电影研究者通常把《银翼杀手 2049》视为对原作记忆、人格和企业权力主题的严肃扩展。它还通过虚拟伴侣 Joi 把讨论推进到可复制的亲密关系，促使观众追问情感服务究竟是程序、商品还是双方共同形成的经验。",
+          "en": "Film scholars generally treat Blade Runner 2049 as a serious extension of the original's themes of memory, personhood and corporate power. Through the virtual companion Joi, it also raises whether reproducible intimacy is a program, a commodity or an experience formed between participants."
+        },
+        "sourceIds": [
+          "source-humanistic-2017-2049-record"
+        ]
+      }
+    ],
+    "review": {
+      "status": "needs-review",
+      "notes": {
+        "zh": "待逐条编辑审阅。",
+        "en": "Requires item-level editorial review."
+      }
+    },
+    "sentiment": "wonder",
+    "branchSummary": {
+      "zh": "AI人文编年：科幻、艺术与哲学",
+      "en": "AI humanities chronology: science fiction, art and philosophy"
+    },
+    "branch": "humanistic-cycle"
+  }
+}

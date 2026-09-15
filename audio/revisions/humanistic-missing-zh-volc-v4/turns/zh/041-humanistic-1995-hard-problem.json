@@ -1,0 +1,64 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "humanistic-missing-zh-volc-v4-2026-09-14",
+    "scopeId": "humanistic-cycle",
+    "sequenceIndex": 41,
+    "eventId": "humanistic-1995-hard-problem",
+    "variantId": "humanistic-cycle",
+    "locale": "zh",
+    "mode": "storyline",
+    "format": "dialogue",
+    "closingType": "open-question",
+    "styleAuthority": "humanistic-cycle",
+    "turns": [
+        {
+            "role": "A",
+            "text": "沿着1995年的时间线，我们先遇到意识的“困难问题”。它让“大卫·查尔默斯区分解释大脑信息处理机制与解释主观体验之间的差”成为一个无法绕开的文化问题。",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial-hook"
+        },
+        {
+            "role": "B",
+            "text": "大卫·查尔默斯区分解释大脑信息处理机制与解释主观体验之间的差异，推动了意识哲学与人工意识讨论。",
+            "sourceIds": ["source-humanistic-1995-hard-problem-record"],
+            "claimIds": ["claim-humanistic-1995-hard-problem-core"],
+            "contentOrigin": "commentarySections.historical-background"
+        },
+        {
+            "role": "A",
+            "text": "如果把意识的“困难问题”拆成一个具体问题，答案会落在“意识的“困难问题””上吗？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "作品或理论把人工制造、自动行动或计算过程转化为对主体性、理解与社会秩序的追问。",
+            "sourceIds": ["source-humanistic-1995-hard-problem-record"],
+            "claimIds": ["claim-humanistic-1995-hard-problem-core"],
+            "contentOrigin": "commentarySections.core-idea"
+        },
+        {
+            "role": "A",
+            "text": "当代系统再次遇到“意识的“困难问题””时，意识的“困难问题”提供了哪些可继承、又哪些需要修正的经验？",
+            "sourceIds": [],
+            "claimIds": [],
+            "contentOrigin": "editorial"
+        },
+        {
+            "role": "B",
+            "text": "研究者通常把这一节点视为 AI 人文史中的重要文化参照，而不是现代技术的直接预言。",
+            "sourceIds": ["source-humanistic-1995-hard-problem-record"],
+            "claimIds": ["claim-humanistic-1995-hard-problem-core"],
+            "contentOrigin": "commentarySections.long-term-legacy"
+        },
+        {
+            "role": "A",
+            "text": "“意识的“困难问题””今天仍没有简单答案。意识的“困难问题”留下的哪一个问题最值得继续追踪？",
+            "sourceIds": ["source-humanistic-1995-hard-problem-record"],
+            "claimIds": ["claim-humanistic-1995-hard-problem-core"],
+            "contentOrigin": "editorial-closing"
+        }
+    ]
+}
