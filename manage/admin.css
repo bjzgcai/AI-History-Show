@@ -1,5 +1,6 @@
 :root {
     color-scheme: light;
+    --event-nav-sticky-top: 142px;
     --bg: #edf4f1;
     --panel: #ffffff;
     --panel-strong: #f8fcfa;
@@ -601,6 +602,9 @@ aside {
 }
 
 .event-section-nav {
+    position: sticky;
+    z-index: 9;
+    top: var(--event-nav-sticky-top);
     display: flex;
     align-items: center;
     gap: 6px;
@@ -609,7 +613,9 @@ aside {
     overflow-x: auto;
     border: 1px solid #cbdad5;
     border-radius: 10px;
-    background: #e4efeb;
+    background: rgba(228, 239, 235, 0.97);
+    box-shadow: 0 7px 18px rgba(27, 65, 60, 0.08);
+    backdrop-filter: blur(14px);
     scrollbar-width: thin;
 }
 
@@ -1196,6 +1202,26 @@ aside {
     color: var(--text);
     font-size: 14px;
     font-weight: 400;
+}
+
+.form-grid .structured-checkbox-field {
+    display: flex;
+    min-height: 38px;
+    align-items: center;
+    justify-content: space-between;
+    align-self: end;
+    gap: 12px;
+    padding: 8px 11px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: #ffffff;
+}
+
+.form-grid .structured-checkbox-field input {
+    width: 18px;
+    height: 18px;
+    min-height: 0;
+    flex: 0 0 18px;
 }
 
 .span-2 {
