@@ -59,6 +59,12 @@ const elements = Object.fromEntries(
         'eventContextTags',
         'eventSectionNav',
         'eventVariantSelect',
+        'storylineOverviewPanel',
+        'storylineOverviewKicker',
+        'storylineOverviewTitle',
+        'storylineOverviewSummary',
+        'storylineOverviewStats',
+        'storylineTimeline',
         'auditPanel',
         'jsonPanel',
         'figureUsage',
@@ -225,12 +231,14 @@ function updatePanelVisibility() {
     elements.fileSelect.hidden = true;
     elements.eventContext.hidden = state.type !== 'events' || !state.entityId;
     elements.eventSectionNav.hidden = state.type !== 'events' || !state.document;
+    elements.storylineOverviewPanel.hidden = state.type !== 'storylines' || !state.entityId;
     elements.eventDisplayActions.hidden = state.type !== 'events' || !state.document;
     elements.newFigureBtn.hidden = state.type !== 'figures';
     elements.loadBtn.hidden = state.type === 'audit';
     elements.saveBtn.hidden = state.type === 'audit';
     elements.saveValidateBtn.hidden = state.type === 'audit';
-    elements.emptyState.hidden = state.type === 'audit' || Boolean(state.document);
+    elements.emptyState.hidden =
+        state.type === 'audit' || Boolean(state.document) || (state.type === 'storylines' && Boolean(state.entityId));
     elements.loadBtn.disabled = state.type !== 'audit' && !state.entityId;
     elements.saveBtn.disabled = state.type !== 'audit' && !state.document;
     elements.saveValidateBtn.disabled = state.type !== 'audit' && !state.document;
@@ -318,6 +326,50 @@ function renderEventSectionNav() {
     elements.eventSectionNav.hidden = false;
 }
 
+function renderStorylineOverview() {
+    if (!elements.storylineOverviewPanel) return;
+    const entity = state.entities.find((item) => item.id === state.entityId);
+    if (state.type !== 'storylines' || !entity || !state.entityId) {
+        elements.storylineOverviewPanel.hidden = true;
+        elements.storylineTimeline.innerHTML = '';
+        return;
+    }
+    const title = localize(entity.title, 'zh') || localize(entity.title, 'en') || entity.id;
+    const subtitle = localize(entity.subtitle, 'zh') || localize(entity.subtitle, 'en') || '按 Storyline 顺序维护事件';
+    const events = [...(entity.events || [])].sort(
+        (left, right) => Number(left.order) - Number(right.order) || left.eventId.localeCompare(right.eventId)
+    );
+    elements.storylineOverviewKicker.textContent = `STORYLINE · ${entity.id}`;
+    elements.storylineOverviewTitle.textContent = title;
+    elements.storylineOverviewSummary.textContent = subtitle;
+    elements.storylineOverviewStats.innerHTML = [
+        `<span class="storyline-stat"><strong>${entity.enabledEventCount || 0}</strong><small>启用事件</small></span>`,
+        `<span class="storyline-stat"><strong>${entity.totalEventCount || 0}</strong><small>全部事件</small></span>`
+    ].join('');
+    elements.storylineTimeline.innerHTML = events.length
+        ? events
+              .map((event, index) => {
+                  const eventTitle = localize(event.title, 'zh') || localize(event.title, 'en') || event.eventId;
+                  const status = event.enabled ? '启用' : '停用';
+                  const stateClass = event.enabled ? 'is-enabled' : 'is-disabled';
+                  const variant = event.variant
+                      ? `<span class="storyline-timeline-variant">variant: ${escapeHtml(event.variant)}</span>`
+                      : '';
+                  return `<button type="button" class="storyline-timeline-item ${stateClass}" data-open-event="${escapeHtml(event.eventId)}" data-open-file="event.json">
+                      <span class="storyline-timeline-marker"><span>${String(index + 1).padStart(2, '0')}</span></span>
+                      <span class="storyline-timeline-content">
+                          <span class="storyline-timeline-meta"><span>${escapeHtml(event.year || '未设置年份')}</span><span>${escapeHtml(event.eventId)}</span>${variant}</span>
+                          <strong>${escapeHtml(eventTitle)}</strong>
+                          <span class="storyline-timeline-status">${status}</span>
+                      </span>
+                      <span class="entity-chevron">›</span>
+                  </button>`;
+              })
+              .join('')
+        : '<div class="storyline-empty">当前 Storyline 尚未配置事件。</div>';
+    elements.storylineOverviewPanel.hidden = false;
+}
+
 function entityMatchesSearch(entity, query) {
     if (!query) return true;
     if (state.type === 'figures') {
@@ -332,12 +384,8 @@ function entityMatchesSearch(entity, query) {
         id,
         localize(entity.title, 'zh'),
         localize(entity.title, 'en'),
-        ...(entity.events || []).flatMap((event) => [
-            event.eventId,
-            localize(event.title, 'zh'),
-            localize(event.title, 'en'),
-            String(event.year || '')
-        ])
+        localize(entity.subtitle, 'zh'),
+        localize(entity.subtitle, 'en')
     ];
     return searchable.join(' ').toLowerCase().includes(query);
 }
@@ -380,21 +428,18 @@ function renderEntities() {
         .map((entity) => {
             const id = typeof entity === 'string' ? entity : entity.id;
             if (state.type === 'storylines') {
-                const storylineEvents = Array.isArray(entity.events) ? entity.events : [];
                 const storylineTitle = localize(entity.title, 'zh') || localize(entity.title, 'en') || id;
                 const storylineSubtitle = localize(entity.subtitle, 'zh') || localize(entity.subtitle, 'en') || '';
-                const eventRows = storylineEvents.length
-                    ? storylineEvents
-                          .map((event, index) => {
-                              const eventTitle =
-                                  localize(event.title, 'zh') || localize(event.title, 'en') || event.eventId;
-                              const stateClass = event.enabled ? 'is-enabled' : 'is-disabled';
-                              const status = event.enabled ? '启用' : '停用';
-                              return `<button type="button" class="storyline-event-link ${stateClass}" data-open-event="${escapeHtml(event.eventId)}" data-open-file="event.json"><span class="storyline-event-order">${String(index + 1).padStart(2, '0')}</span><span class="storyline-event-copy"><strong>${escapeHtml(eventTitle)}</strong><span>${escapeHtml(event.year || '未设置年份')} · ${escapeHtml(event.eventId)}${event.variant ? ` · variant: ${escapeHtml(event.variant)}` : ''}</span></span><span class="storyline-event-status">${status}</span><span class="entity-chevron">›</span></button>`;
-                          })
-                          .join('')
-                    : '<div class="storyline-empty">暂无事件</div>';
-                return `<section class="storyline-nav-card${id === state.entityId ? ' active' : ''}" data-storyline-id="${escapeHtml(id)}"><div class="storyline-nav-heading"><div><span class="storyline-nav-kicker">STORYLINE · ${escapeHtml(id)}</span><strong>${escapeHtml(storylineTitle)}</strong>${storylineSubtitle ? `<span>${escapeHtml(storylineSubtitle)}</span>` : ''}</div><span class="storyline-count">${entity.enabledEventCount}/${entity.totalEventCount}</span></div><div class="storyline-nav-events">${eventRows}</div></section>`;
+                return `<button type="button" class="storyline-picker-card${id === state.entityId ? ' active' : ''}" data-storyline-id="${escapeHtml(id)}">
+                    <span class="storyline-picker-icon">${escapeHtml(storylineTitle.slice(0, 1))}</span>
+                    <span class="storyline-picker-copy">
+                        <span class="storyline-picker-title">${escapeHtml(storylineTitle)}</span>
+                        <span class="storyline-picker-id">${escapeHtml(id)}</span>
+                        ${storylineSubtitle ? `<span class="storyline-picker-subtitle">${escapeHtml(storylineSubtitle)}</span>` : ''}
+                    </span>
+                    <span class="storyline-picker-count">${entity.enabledEventCount}/${entity.totalEventCount}</span>
+                    <span class="entity-chevron">›</span>
+                </button>`;
             }
             const indexKey = entityIndexKey(entity);
             const letterDivider =
@@ -403,14 +448,10 @@ function renderEntities() {
                     : '';
             previousIndexKey = indexKey;
             let title = id;
-            let detail = state.type === 'storylines' ? 'storyline JSON' : '';
+            let detail = '';
             let preview = '';
             if (state.type === 'events') {
                 detail = `${entity.files.length} files · ${entity.variants.length} variants · ${entity.usageCount} 个启用 Storyline`;
-            }
-            if (state.type === 'storylines') {
-                title = localize(entity.title, 'zh') || localize(entity.title, 'en') || id;
-                detail = `${entity.enabledEventCount}/${entity.totalEventCount} 个展示事件 · ${id}`;
             }
             if (state.type === 'figures') {
                 title = `${localize(entity.name, 'zh') || localize(entity.name, 'en')} · ${id}`;
@@ -483,6 +524,7 @@ async function refresh() {
     updatePanelVisibility();
     renderEventContext();
     renderEventSectionNav();
+    renderStorylineOverview();
 }
 
 function selectEntity(id) {
@@ -506,6 +548,8 @@ function selectEntity(id) {
         state.file = '';
     }
     renderEntities();
+    updatePanelVisibility();
+    renderStorylineOverview();
 }
 
 function syncEditor() {
@@ -1073,6 +1117,7 @@ async function loadEntity() {
     updatePanelVisibility();
     renderEventContext();
     renderEventSectionNav();
+    renderStorylineOverview();
     renderStructuredEditor();
     if (state.type === 'events') await renderEventDisplayActions();
     if (state.type === 'figures') {
@@ -2029,6 +2074,13 @@ elements.entityList.addEventListener('click', async (event) => {
     if (!button) return;
     selectEntity(button.dataset.id);
     await loadEntity().catch((error) => setStatus(error.message, 'bad'));
+});
+elements.storylineTimeline.addEventListener('click', async (event) => {
+    const eventLink = event.target.closest('[data-open-event]');
+    if (!eventLink) return;
+    await openAdminEvent(eventLink.dataset.openEvent, eventLink.dataset.openFile || 'event.json').catch((error) =>
+        setStatus(error.message, 'bad')
+    );
 });
 elements.figureAlphabet.addEventListener('click', (event) => {
     const button = event.target.closest('button[data-entity-index]');
