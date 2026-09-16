@@ -1,22 +1,10 @@
 {
     "schemaVersion": 1,
     "verificationLevels": {
-        "issue-confirmed": {
-            "label": "审听问题已确认",
-            "basis": "Issue 或审听备注明确给出了目标读音。"
-        },
-        "canonical": {
-            "label": "标准读法",
-            "basis": "由官方全称、标准字母数字读法或普通英语词读法确定。"
-        },
-        "usage-confirmed": {
-            "label": "领域通行读法",
-            "basis": "按人工智能与计算机领域的公开通行读法记录。"
-        },
-        "name-reviewed": {
-            "label": "姓名已初审",
-            "basis": "按姓名语言背景与公开使用习惯记录，生成后仍需重点审听。"
-        },
+        "issue-confirmed": { "label": "审听问题已确认", "basis": "Issue 或审听备注明确给出了目标读音。" },
+        "canonical": { "label": "标准读法", "basis": "由官方全称、标准字母数字读法或普通英语词读法确定。" },
+        "usage-confirmed": { "label": "领域通行读法", "basis": "按人工智能与计算机领域的公开通行读法记录。" },
+        "name-reviewed": { "label": "姓名已初审", "basis": "按姓名语言背景与公开使用习惯记录，生成后仍需重点审听。" },
         "pending-official-audio": {
             "label": "待官方音频核验",
             "basis": "拼写无法唯一确定读法，需在作者或机构公开音频中继续核验。"
@@ -641,7 +629,7 @@
                 {
                     "qualificationId": "surf-volc-seed-tts-2-zh-huopo-b-v1",
                     "status": "human-reviewed-pass",
-                    "reviewedAt": "2026-08-13",
+                    "reviewedAt": "2026-09-15",
                     "provider": "volc",
                     "model": "seed-tts-2.0",
                     "locale": "zh",
@@ -649,7 +637,111 @@
                     "instructionSha256": "7864fbdc8b056092594f2170a8addd7d497808059a8b84a57caa3384e9533105",
                     "method": "speech-replacement",
                     "speechForm": "surf",
-                    "sampleIds": ["zh-surf-rewritten", "repeat-1/zh-surf-rewritten", "repeat-2/zh-surf-rewritten"]
+                    "sampleIds": [
+                        "repeat-1/zh-surf-rewritten",
+                        "repeat-2/zh-surf-rewritten",
+                        "surf-volc-seed-tts-2-zh-huopo-b-v1-surf-explanation-repeat-1",
+                        "surf-volc-seed-tts-2-zh-huopo-b-v1-surf-explanation-repeat-2",
+                        "surf-volc-seed-tts-2-zh-huopo-b-v1-surf-explanation-term-repeat-1",
+                        "surf-volc-seed-tts-2-zh-huopo-b-v1-surf-explanation-term-repeat-2",
+                        "zh-surf-rewritten"
+                    ]
+                },
+                {
+                    "qualificationId": "surf-volc-seed-tts-2-zh-vv-a-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-09-15",
+                    "speechForm": "surf",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "zh_female_vv_uranus_bigtts",
+                    "instructionSha256": "8b4caeed5626149b01279dc23ef0ec79b1f9ede1f3de14a3d30fef49fb4f603d",
+                    "method": "speech-replacement",
+                    "sampleIds": [
+                        "surf-volc-seed-tts-2-zh-vv-a-v1-surf-question-repeat-1",
+                        "surf-volc-seed-tts-2-zh-vv-a-v1-surf-question-repeat-2",
+                        "surf-volc-seed-tts-2-zh-vv-a-v1-surf-question-repeat-3",
+                        "surf-volc-seed-tts-2-zh-vv-a-v1-surf-question-term-repeat-1",
+                        "surf-volc-seed-tts-2-zh-vv-a-v1-surf-question-term-repeat-2",
+                        "surf-volc-seed-tts-2-zh-vv-a-v1-surf-question-term-repeat-3"
+                    ]
+                },
+                {
+                    "qualificationId": "surf-volc-seed-tts-2-zh-huopo-summary-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-09-15",
+                    "speechForm": "surf",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "d7304086f5d79c454aee663d09e1012cb2d4ca89937c2d5f2a05fb2124a9e859",
+                    "method": "speech-replacement",
+                    "sampleIds": [
+                        "surf-volc-seed-tts-2-zh-huopo-summary-v1-surf-summary-repeat-1",
+                        "surf-volc-seed-tts-2-zh-huopo-summary-v1-surf-summary-repeat-2",
+                        "surf-volc-seed-tts-2-zh-huopo-summary-v1-surf-summary-repeat-3",
+                        "surf-volc-seed-tts-2-zh-huopo-summary-v1-surf-summary-term-repeat-1",
+                        "surf-volc-seed-tts-2-zh-huopo-summary-v1-surf-summary-term-repeat-2",
+                        "surf-volc-seed-tts-2-zh-huopo-summary-v1-surf-summary-term-repeat-3"
+                    ]
+                },
+                {
+                    "qualificationId": "surf-volc-seed-tts-2-en-megan-a-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-09-15",
+                    "speechForm": "surf",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "en",
+                    "voice": "en_female_wenrouzhishijieshuonv_uranus_bigtts",
+                    "instructionSha256": "6ce56a020bc60564c5c99a7e9887e2c24899ca1a2aa6a6702c36e003400393e8",
+                    "method": "speech-replacement",
+                    "sampleIds": [
+                        "surf-volc-seed-tts-2-en-megan-a-v1-surf-question-en-repeat-1",
+                        "surf-volc-seed-tts-2-en-megan-a-v1-surf-question-en-repeat-2",
+                        "surf-volc-seed-tts-2-en-megan-a-v1-surf-question-en-term-repeat-1",
+                        "surf-volc-seed-tts-2-en-megan-a-v1-surf-question-en-term-repeat-2"
+                    ]
+                },
+                {
+                    "qualificationId": "surf-volc-seed-tts-2-en-alberto-b-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-09-15",
+                    "speechForm": "surf",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "en",
+                    "voice": "en_male_alberto_uranus_bigtts",
+                    "instructionSha256": "1b7166c3fec4dd74923d180551afcc59639310ac3ad18cc86af4d843bd6a7f40",
+                    "method": "speech-replacement",
+                    "sampleIds": [
+                        "surf-volc-seed-tts-2-en-alberto-b-v1-surf-history-en-repeat-1",
+                        "surf-volc-seed-tts-2-en-alberto-b-v1-surf-history-en-repeat-2",
+                        "surf-volc-seed-tts-2-en-alberto-b-v1-surf-history-en-term-repeat-1",
+                        "surf-volc-seed-tts-2-en-alberto-b-v1-surf-history-en-term-repeat-2",
+                        "surf-volc-seed-tts-2-en-alberto-b-v1-surf-legacy-en-repeat-1",
+                        "surf-volc-seed-tts-2-en-alberto-b-v1-surf-legacy-en-repeat-2"
+                    ]
+                },
+                {
+                    "qualificationId": "surf-volc-seed-tts-2-en-alberto-summary-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-09-15",
+                    "speechForm": "surf",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "en",
+                    "voice": "en_male_alberto_uranus_bigtts",
+                    "instructionSha256": "a2dcd2bdbe2c6933b1301b1b78be8a2e7f2efa93622826b8cdcf61c949224995",
+                    "method": "speech-replacement",
+                    "sampleIds": [
+                        "surf-volc-seed-tts-2-en-alberto-summary-v1-surf-summary-en-repeat-1",
+                        "surf-volc-seed-tts-2-en-alberto-summary-v1-surf-summary-en-repeat-2",
+                        "surf-volc-seed-tts-2-en-alberto-summary-v1-surf-summary-en-term-repeat-1",
+                        "surf-volc-seed-tts-2-en-alberto-summary-v1-surf-summary-en-term-repeat-2"
+                    ]
                 }
             ]
         },
@@ -845,7 +937,7 @@
                 {
                     "qualificationId": "roi-volc-seed-tts-2-zh-huopo-b-v1",
                     "status": "human-reviewed-pass",
-                    "reviewedAt": "2026-08-13",
+                    "reviewedAt": "2026-09-15",
                     "provider": "volc",
                     "model": "seed-tts-2.0",
                     "locale": "zh",
@@ -854,11 +946,35 @@
                     "method": "speech-replacement",
                     "speechForm": "R-O-I",
                     "sampleIds": [
-                        "zh-roialign-rewritten",
                         "repeat-1/zh-roialign-rewritten",
-                        "repeat-2/zh-roialign-rewritten"
+                        "repeat-2/zh-roialign-rewritten",
+                        "roi-volc-seed-tts-2-zh-huopo-b-v1-roi-pooling-repeat-1",
+                        "roi-volc-seed-tts-2-zh-huopo-b-v1-roi-pooling-repeat-2",
+                        "roi-volc-seed-tts-2-zh-huopo-b-v1-roi-pooling-term-repeat-1",
+                        "roi-volc-seed-tts-2-zh-huopo-b-v1-roi-pooling-term-repeat-2",
+                        "zh-roialign-rewritten"
                     ],
                     "note": "与 RoIAlign 同一 rewritten 样本中的独立 RoI 已人工审听通过。"
+                },
+                {
+                    "qualificationId": "roi-volc-seed-tts-2-en-alberto-b-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-09-15",
+                    "speechForm": "R-O-I",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "en",
+                    "voice": "en_male_alberto_uranus_bigtts",
+                    "instructionSha256": "1b7166c3fec4dd74923d180551afcc59639310ac3ad18cc86af4d843bd6a7f40",
+                    "method": "speech-replacement",
+                    "sampleIds": [
+                        "roi-volc-seed-tts-2-en-alberto-b-v1-roi-alignment-en-repeat-1",
+                        "roi-volc-seed-tts-2-en-alberto-b-v1-roi-alignment-en-repeat-2",
+                        "roi-volc-seed-tts-2-en-alberto-b-v1-roi-pooling-en-repeat-1",
+                        "roi-volc-seed-tts-2-en-alberto-b-v1-roi-pooling-en-repeat-2",
+                        "roi-volc-seed-tts-2-en-alberto-b-v1-roi-pooling-en-term-repeat-1",
+                        "roi-volc-seed-tts-2-en-alberto-b-v1-roi-pooling-en-term-repeat-2"
+                    ]
                 }
             ]
         },
@@ -878,7 +994,7 @@
                 {
                     "qualificationId": "roialign-volc-seed-tts-2-zh-huopo-b-v1",
                     "status": "human-reviewed-pass",
-                    "reviewedAt": "2026-08-13",
+                    "reviewedAt": "2026-09-15",
                     "provider": "volc",
                     "model": "seed-tts-2.0",
                     "locale": "zh",
@@ -887,9 +1003,33 @@
                     "method": "speech-replacement",
                     "speechForm": "R-O-I align",
                     "sampleIds": [
-                        "zh-roialign-rewritten",
                         "repeat-1/zh-roialign-rewritten",
-                        "repeat-2/zh-roialign-rewritten"
+                        "repeat-2/zh-roialign-rewritten",
+                        "roialign-volc-seed-tts-2-zh-huopo-b-v1-roialign-alignment-repeat-1",
+                        "roialign-volc-seed-tts-2-zh-huopo-b-v1-roialign-alignment-repeat-2",
+                        "roialign-volc-seed-tts-2-zh-huopo-b-v1-roialign-alignment-term-repeat-1",
+                        "roialign-volc-seed-tts-2-zh-huopo-b-v1-roialign-alignment-term-repeat-2",
+                        "zh-roialign-rewritten"
+                    ]
+                },
+                {
+                    "qualificationId": "roialign-volc-seed-tts-2-en-alberto-b-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-09-15",
+                    "speechForm": "R-O-I align",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "en",
+                    "voice": "en_male_alberto_uranus_bigtts",
+                    "instructionSha256": "1b7166c3fec4dd74923d180551afcc59639310ac3ad18cc86af4d843bd6a7f40",
+                    "method": "speech-replacement",
+                    "sampleIds": [
+                        "roialign-volc-seed-tts-2-en-alberto-b-v1-roialign-legacy-en-repeat-1",
+                        "roialign-volc-seed-tts-2-en-alberto-b-v1-roialign-legacy-en-repeat-2",
+                        "roialign-volc-seed-tts-2-en-alberto-b-v1-roialign-mechanism-en-repeat-1",
+                        "roialign-volc-seed-tts-2-en-alberto-b-v1-roialign-mechanism-en-repeat-2",
+                        "roialign-volc-seed-tts-2-en-alberto-b-v1-roialign-mechanism-en-term-repeat-1",
+                        "roialign-volc-seed-tts-2-en-alberto-b-v1-roialign-mechanism-en-term-repeat-2"
                     ]
                 }
             ]
@@ -929,15 +1069,12 @@
             "hintRequired": true,
             "verification": "canonical",
             "reading": { "type": "initialism", "spoken": "N A S" },
-            "pronunciationHypotheses": {
-                "expected": ["ɛ", "n", "eɪ", "ɛ", "s"],
-                "rejected": [["n", "æ", "s"]]
-            },
+            "pronunciationHypotheses": { "expected": ["ɛ", "n", "eɪ", "ɛ", "s"], "rejected": [["n", "æ", "s"]] },
             "ttsQualifications": [
                 {
                     "qualificationId": "nas-volc-seed-tts-2-zh-huopo-narrator-v1",
                     "status": "human-reviewed-pass",
-                    "reviewedAt": "2026-08-13",
+                    "reviewedAt": "2026-09-15",
                     "provider": "volc",
                     "model": "seed-tts-2.0",
                     "locale": "zh",
@@ -945,7 +1082,33 @@
                     "instructionSha256": "c9166f088beb9f4daa72a98319bd3e638cb205ff490315b69b678f95e11e7252",
                     "method": "speech-replacement",
                     "speechForm": "N-A-S",
-                    "sampleIds": ["zh-nas-rewritten", "repeat-1/zh-nas-rewritten", "repeat-2/zh-nas-rewritten"]
+                    "sampleIds": [
+                        "nas-volc-seed-tts-2-zh-huopo-narrator-v1-nas-search-repeat-1",
+                        "nas-volc-seed-tts-2-zh-huopo-narrator-v1-nas-search-repeat-2",
+                        "nas-volc-seed-tts-2-zh-huopo-narrator-v1-nas-search-term-repeat-1",
+                        "nas-volc-seed-tts-2-zh-huopo-narrator-v1-nas-search-term-repeat-2",
+                        "repeat-1/zh-nas-rewritten",
+                        "repeat-2/zh-nas-rewritten",
+                        "zh-nas-rewritten"
+                    ]
+                },
+                {
+                    "qualificationId": "nas-volc-seed-tts-2-en-alberto-narrator-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-09-15",
+                    "speechForm": "N-A-S",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "en",
+                    "voice": "en_male_alberto_uranus_bigtts",
+                    "instructionSha256": "73955b006dff70eedcd98e15a5e6240c9dcdb2f5dfa0631c1ca6f528545217c4",
+                    "method": "speech-replacement",
+                    "sampleIds": [
+                        "nas-volc-seed-tts-2-en-alberto-narrator-v1-nas-search-en-repeat-1",
+                        "nas-volc-seed-tts-2-en-alberto-narrator-v1-nas-search-en-repeat-2",
+                        "nas-volc-seed-tts-2-en-alberto-narrator-v1-nas-search-en-term-repeat-1",
+                        "nas-volc-seed-tts-2-en-alberto-narrator-v1-nas-search-en-term-repeat-2"
+                    ]
                 }
             ]
         },
@@ -1242,7 +1405,29 @@
                     "note": "明确要求统一为 /ɪˈlaɪzə/，按英语人名 Eliza 读，不逐字母拼读。"
                 }
             ],
-            "reading": { "type": "name", "spoken": "Eliza, /ɪˈlaɪzə/" }
+            "reading": { "type": "name", "spoken": "Eliza, /ɪˈlaɪzə/" },
+            "ttsQualifications": [
+                {
+                    "qualificationId": "eliza-volc-seed-tts-2-zh-huopo-narrator-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-09-16",
+                    "speechForm": "Eliza",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "c9166f088beb9f4daa72a98319bd3e638cb205ff490315b69b678f95e11e7252",
+                    "method": "speech-replacement",
+                    "sampleIds": [
+                        "eliza-volc-seed-tts-2-zh-huopo-narrator-v1-eliza-history-repeat-1",
+                        "eliza-volc-seed-tts-2-zh-huopo-narrator-v1-eliza-history-repeat-2",
+                        "eliza-volc-seed-tts-2-zh-huopo-narrator-v1-eliza-history-repeat-3",
+                        "eliza-volc-seed-tts-2-zh-huopo-narrator-v1-eliza-history-term-repeat-1",
+                        "eliza-volc-seed-tts-2-zh-huopo-narrator-v1-eliza-history-term-repeat-2",
+                        "eliza-volc-seed-tts-2-zh-huopo-narrator-v1-eliza-history-term-repeat-3"
+                    ]
+                }
+            ]
         },
         {
             "id": "doctor",
@@ -1304,6 +1489,47 @@
                     "speechForm": "ex-con",
                     "sampleIds": ["zh-xcon-rewritten", "repeat-1/zh-xcon-rewritten", "repeat-2/zh-xcon-rewritten"],
                     "note": "通用读法样本已通过；Issue #98 指出的倒数第二句例外上下文不在本次通过范围内。"
+                },
+                {
+                    "qualificationId": "xcon-volc-seed-tts-2-zh-huopo-narrator-v2",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-09-15",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "zh",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "e5583e242be43b372574a3fc385bcd73a65e7130806a86863be74cfc343d14c7",
+                    "method": "speech-replacement",
+                    "speechForm": "ex-con",
+                    "sampleIds": [
+                        "xcon-volc-seed-tts-2-zh-huopo-narrator-v2-xcon-industry-repeat-1",
+                        "xcon-volc-seed-tts-2-zh-huopo-narrator-v2-xcon-industry-repeat-2",
+                        "xcon-volc-seed-tts-2-zh-huopo-narrator-v2-xcon-industry-term-repeat-1",
+                        "xcon-volc-seed-tts-2-zh-huopo-narrator-v2-xcon-industry-term-repeat-2"
+                    ],
+                    "note": "专用词单独发音与长期影响原句均于 2026-09-15 在专用词审听台人工确认通过。"
+                },
+                {
+                    "qualificationId": "xcon-volc-seed-tts-2-en-alberto-narrator-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-09-15",
+                    "speechForm": "ex-con",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "en",
+                    "voice": "en_male_alberto_uranus_bigtts",
+                    "instructionSha256": "73955b006dff70eedcd98e15a5e6240c9dcdb2f5dfa0631c1ca6f528545217c4",
+                    "method": "speech-replacement",
+                    "sampleIds": [
+                        "xcon-volc-seed-tts-2-en-alberto-narrator-v1-xcon-closing-en-repeat-1",
+                        "xcon-volc-seed-tts-2-en-alberto-narrator-v1-xcon-closing-en-repeat-2",
+                        "xcon-volc-seed-tts-2-en-alberto-narrator-v1-xcon-industry-en-repeat-1",
+                        "xcon-volc-seed-tts-2-en-alberto-narrator-v1-xcon-industry-en-repeat-2",
+                        "xcon-volc-seed-tts-2-en-alberto-narrator-v1-xcon-opening-en-repeat-1",
+                        "xcon-volc-seed-tts-2-en-alberto-narrator-v1-xcon-opening-en-repeat-2",
+                        "xcon-volc-seed-tts-2-en-alberto-narrator-v1-xcon-opening-en-term-repeat-1",
+                        "xcon-volc-seed-tts-2-en-alberto-narrator-v1-xcon-opening-en-term-repeat-2"
+                    ]
                 }
             ],
             "ttsExclusions": [
@@ -1311,7 +1537,11 @@
                     "eventId": "1980-xcon-r1",
                     "locale": "zh",
                     "turnIndex": 5,
-                    "reason": "Issue #98 明确排除审听备注中的倒数第二句。"
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "voice": "ICL_uranus_zh_male_huoposhuanglang_tob",
+                    "instructionSha256": "c9166f088beb9f4daa72a98319bd3e638cb205ff490315b69b678f95e11e7252",
+                    "reason": "旧 narrator 指令下该原句人工审听不通过；仅排除旧生成环境，v2 专用指令已另行审听通过。"
                 }
             ]
         },

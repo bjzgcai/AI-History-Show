@@ -8,7 +8,10 @@ const POSITION_STORAGE_KEY = 'ai-history-audio-review-position-v1';
 const state = {
     user: null,
     data: null,
+    pronunciation: null,
+    mode: 'events',
     query: '',
+    pronunciationQuery: '',
     scope: 'all',
     locale: 'zh',
     version: 'interactive',
@@ -16,6 +19,8 @@ const state = {
     closing: 'all',
     reviewFilter: 'all',
     selectedKey: null,
+    selectedPronunciationKey: null,
+    selectedPronunciationSampleKey: null,
     activeTab: 'script',
     autoNext: false,
     showTrace: true,
@@ -46,6 +51,8 @@ const elements = {
     reviewerName: document.querySelector('#reviewer-name'),
     exportReview: document.querySelector('#export-review'),
     logout: document.querySelector('#logout'),
+    eventsMode: document.querySelector('#events-mode'),
+    pronunciationMode: document.querySelector('#pronunciation-mode'),
     toast: document.querySelector('#toast')
 };
 
@@ -204,12 +211,15 @@ function ensureSelection() {
 function persistUiState() {
     saveStorage(UI_STORAGE_KEY, {
         scope: state.scope,
+        mode: state.mode,
         locale: state.locale,
         version: state.version,
         format: state.format,
         closing: state.closing,
         reviewFilter: state.reviewFilter,
         selectedKey: state.selectedKey,
+        selectedPronunciationKey: state.selectedPronunciationKey,
+        selectedPronunciationSampleKey: state.selectedPronunciationSampleKey,
         activeTab: state.activeTab,
         autoNext: state.autoNext,
         showTrace: state.showTrace
@@ -220,12 +230,15 @@ function restoreUiState() {
     const saved = loadStorage(UI_STORAGE_KEY, {});
     Object.assign(state, {
         scope: saved.scope || state.scope,
+        mode: saved.mode || state.mode,
         locale: saved.locale || state.locale,
         version: saved.version || state.version,
         format: saved.format || state.format,
         closing: saved.closing || state.closing,
         reviewFilter: saved.reviewFilter || state.reviewFilter,
         selectedKey: saved.selectedKey || state.selectedKey,
+        selectedPronunciationKey: saved.selectedPronunciationKey || state.selectedPronunciationKey,
+        selectedPronunciationSampleKey: saved.selectedPronunciationSampleKey || state.selectedPronunciationSampleKey,
         activeTab: saved.activeTab || state.activeTab,
         autoNext: Boolean(saved.autoNext),
         showTrace: saved.showTrace !== false
@@ -258,6 +271,385 @@ function renderReleaseSummary() {
             <span>${reviewed}/${totalAssets}</span>
         </div>
     `;
+}
+
+function pronunciationGroups() {
+    return state.pronunciation?.groups || [];
+}
+
+function pronunciationQualifications(group) {
+    return group.qualifications || [group];
+}
+
+function pronunciationSamples(group) {
+    return pronunciationQualifications(group).flatMap((qualification) =>
+        qualification.contexts.flatMap((context) => context.samples)
+    );
+}
+
+function pronunciationSampleKey(sample) {
+    return `${sample.groupId}:${sample.id}`;
+}
+
+function pronunciationSampleReview(sample) {
+    return (
+        state.reviews[sample.candidateId] || {
+            status: 'pending',
+            approved: false,
+            passCount: 0,
+            failCount: 0,
+            recordCount: 0,
+            records: []
+        }
+    );
+}
+
+function pronunciationGroupStatus(group) {
+    const samples = pronunciationSamples(group);
+    const available = samples.filter((sample) => sample.audioAvailable);
+    const reviews = available.map(pronunciationSampleReview);
+    if (reviews.some((review) => review.status === 'revise')) return 'revise';
+    if (available.length > 0 && available.length === reviews.filter((review) => review.approved).length) return 'pass';
+    return 'pending';
+}
+
+function pronunciationQualificationStatus(qualification) {
+    const samples = qualification.contexts.flatMap((context) => context.samples);
+    const available = samples.filter((sample) => sample.audioAvailable);
+    const reviews = available.map(pronunciationSampleReview);
+    if (reviews.some((review) => review.status === 'revise')) return 'revise';
+    if (available.length > 0 && available.length === reviews.filter((review) => review.approved).length) return 'pass';
+    return 'pending';
+}
+
+function getFilteredPronunciationGroups() {
+    const query = state.pronunciationQuery.trim().toLocaleLowerCase();
+    return pronunciationGroups().filter((group) => {
+        const matchesQuery =
+            !query ||
+            [
+                group.term,
+                group.termId,
+                ...pronunciationQualifications(group).flatMap((qualification) => [
+                    qualification.speechForm,
+                    qualification.qualificationId,
+                    qualification.locale
+                ])
+            ]
+                .join(' ')
+                .toLocaleLowerCase()
+                .includes(query);
+        const status = pronunciationGroupStatus(group);
+        return matchesQuery && (state.reviewFilter === 'all' || status === state.reviewFilter);
+    });
+}
+
+function selectedPronunciationGroup() {
+    return pronunciationGroups().find((group) => group.id === state.selectedPronunciationKey) || null;
+}
+
+function selectedPronunciationSample() {
+    const group = selectedPronunciationGroup();
+    if (!group) return null;
+    return (
+        pronunciationSamples(group).find(
+            (sample) => pronunciationSampleKey(sample) === state.selectedPronunciationSampleKey
+        ) || null
+    );
+}
+
+function ensurePronunciationSelection() {
+    const groups = getFilteredPronunciationGroups();
+    if (!groups.some((group) => group.id === state.selectedPronunciationKey)) {
+        state.selectedPronunciationKey = groups[0]?.id || null;
+    }
+    const group = selectedPronunciationGroup();
+    const samples = group ? pronunciationSamples(group) : [];
+    if (!samples.some((sample) => pronunciationSampleKey(sample) === state.selectedPronunciationSampleKey)) {
+        state.selectedPronunciationSampleKey = samples[0] ? pronunciationSampleKey(samples[0]) : null;
+    }
+}
+
+function renderPronunciationSummary() {
+    const groups = pronunciationGroups();
+    const samples = groups.flatMap(pronunciationSamples);
+    const available = samples.filter((sample) => sample.audioAvailable);
+    const passed = available.filter((sample) => pronunciationSampleReview(sample).approved).length;
+    const glossaryTerms = state.pronunciation?.stats?.glossaryTerms || groups.length;
+    elements.releaseSummary.innerHTML = `
+        <div class="summary-stat"><strong>${groups.length}/${glossaryTerms}</strong><span>已有资格 / 词表</span></div>
+        <div class="summary-stat"><strong>${available.length}/${samples.length}</strong><span>可审听样本</span></div>
+        <div class="review-progress" title="${passed} / ${available.length} 个样本已通过">
+            <div class="progress-track"><div class="progress-fill" style="width:${available.length ? (passed / available.length) * 100 : 0}%"></div></div>
+            <span>${passed}/${available.length}</span>
+        </div>
+    `;
+}
+
+function renderPronunciationFilters() {
+    elements.filterPanel.innerHTML = `
+        <div class="search-field">
+            <input id="pronunciation-search" type="search" placeholder="搜索专用词或资格 ID" value="${escapeHtml(state.pronunciationQuery)}">
+        </div>
+        <div class="filter-grid">
+            ${renderSelect('pronunciation-review-filter', '审听状态', state.reviewFilter, [
+                ['all', '全部'],
+                ['pending', '未完成'],
+                ['pass', '全部通过'],
+                ['revise', '有不通过']
+            ])}
+        </div>
+    `;
+    document.querySelector('#pronunciation-search').addEventListener('input', (event) => {
+        state.pronunciationQuery = event.target.value;
+        ensurePronunciationSelection();
+        renderPronunciationList();
+        renderPronunciationDetail();
+        renderPronunciationPlayer();
+    });
+    document.querySelector('#pronunciation-review-filter').addEventListener('change', (event) => {
+        state.reviewFilter = event.target.value;
+        ensurePronunciationSelection();
+        persistUiState();
+        renderPronunciationList();
+        renderPronunciationDetail();
+        renderPronunciationPlayer();
+    });
+}
+
+function renderPronunciationList() {
+    const groups = getFilteredPronunciationGroups();
+    elements.eventCount.textContent = `${groups.length} 个专用词组`;
+    elements.activeVariantLabel.textContent = '专用词 · 单独发音与所在原句';
+    if (!groups.length) {
+        elements.eventList.innerHTML =
+            '<div class="empty-state"><strong>没有匹配专用词</strong><span>调整搜索或审听状态</span></div>';
+        return;
+    }
+    elements.eventList.innerHTML = groups
+        .map((group) => {
+            const samples = pronunciationSamples(group);
+            const available = samples.filter((sample) => sample.audioAvailable).length;
+            const status = pronunciationGroupStatus(group);
+            const qualifications = pronunciationQualifications(group);
+            return `
+                <button class="event-row ${group.id === state.selectedPronunciationKey ? 'is-selected' : ''}" type="button" data-pronunciation-group="${escapeHtml(group.id)}">
+                    <span class="sequence-number">${String(group.termId).slice(0, 2).toUpperCase()}</span>
+                    <span class="event-copy">
+                        <span class="event-title-line">${escapeHtml(group.term)}</span>
+                        <span class="event-secondary-line">目标读法：${escapeHtml(group.targetReading || '待补充')} · ${qualifications.length} 个发音环境</span>
+                    </span>
+                    <span class="event-meta">
+                        <span>${available}/${samples.length}</span>
+                        <span class="review-dot ${status}" title="${reviewStatusLabel(status)}"></span>
+                    </span>
+                </button>
+            `;
+        })
+        .join('');
+    elements.eventList.querySelectorAll('[data-pronunciation-group]').forEach((button) => {
+        button.addEventListener('click', () => {
+            state.selectedPronunciationKey = button.dataset.pronunciationGroup;
+            state.selectedPronunciationSampleKey = null;
+            ensurePronunciationSelection();
+            persistUiState();
+            renderPronunciationList();
+            renderPronunciationDetail();
+            renderPronunciationPlayer();
+        });
+    });
+}
+
+function renderPronunciationDetail() {
+    const group = selectedPronunciationGroup();
+    if (!group) {
+        elements.reviewPane.innerHTML =
+            '<div class="empty-state"><strong>没有可显示的专用词</strong><span>请调整左侧筛选条件</span></div>';
+        return;
+    }
+    const allSamples = pronunciationSamples(group);
+    const qualifications = pronunciationQualifications(group);
+    const status = pronunciationGroupStatus(group);
+    elements.reviewPane.innerHTML = `
+        <div class="detail-shell pronunciation-detail">
+            <header class="detail-header">
+                <div class="detail-title-block">
+                    <span class="detail-eyebrow">专用词资格 · ${qualifications.length} 个发音环境</span>
+                    <h1>${escapeHtml(group.term)}</h1>
+                    <p class="detail-subtitle">目标读法：<strong>${escapeHtml(group.targetReading || '待补充')}</strong></p>
+                    <div class="detail-chips">
+                        <span class="chip">${escapeHtml(group.category || '专用词')}</span>
+                        <span class="chip">${qualifications.length} 个环境</span>
+                        <span class="chip ${status === 'pass' ? 'pass' : status === 'revise' ? 'warning' : ''}">${reviewStatusLabel(status)}</span>
+                        <span class="chip">${allSamples.filter((sample) => sample.audioAvailable).length}/${allSamples.length} 个样本有音频</span>
+                    </div>
+                </div>
+            </header>
+            <section class="pronunciation-guide">
+                <strong>审听顺序</strong>
+                <span>先听专用词本身，再听它放回原句后的自然度与读法是否保持一致。</span>
+            </section>
+            <section class="pronunciation-environments">${qualifications.map(renderPronunciationQualification).join('')}</section>
+            <div id="pronunciation-review-form-root"></div>
+        </div>
+    `;
+    elements.reviewPane.querySelectorAll('[data-pronunciation-sample]').forEach((button) => {
+        button.addEventListener('click', () => {
+            state.selectedPronunciationSampleKey = button.dataset.pronunciationSample;
+            persistUiState();
+            renderPronunciationDetail();
+            renderPronunciationPlayer();
+            if (button.dataset.available === 'true') elements.audio.play().catch(() => {});
+        });
+    });
+    elements.reviewPane.querySelectorAll('[data-pronunciation-qualification-review]').forEach((button) => {
+        button.addEventListener('click', () =>
+            submitPronunciationQualificationReview(
+                button.dataset.pronunciationQualificationReview,
+                button.dataset.result
+            )
+        );
+    });
+    renderPronunciationReviewForm();
+}
+
+function renderPronunciationQualification(qualification) {
+    const samples = qualification.contexts.flatMap((context) => context.samples);
+    const firstSample = samples[0];
+    const availableSamples = samples.filter((sample) => sample.audioAvailable);
+    const status = pronunciationQualificationStatus(qualification);
+    return `
+        <section class="pronunciation-environment">
+            <div class="section-toolbar">
+                <div>
+                    <h2>${localeLabel(qualification.locale)} · ${escapeHtml(roleLabel(firstSample?.role, qualification.locale))}</h2>
+                    <p class="detail-subtitle">${escapeHtml(qualification.qualificationId)} · 发送给 TTS：${escapeHtml(qualification.speechForm)}</p>
+                </div>
+                <div class="detail-actions">
+                    <span class="review-summary ${status}">${reviewStatusLabel(status)} · ${availableSamples.filter((sample) => pronunciationSampleReview(sample).approved).length}/${availableSamples.length}</span>
+                    <button class="button button-primary" type="button" data-pronunciation-qualification-review="${escapeHtml(qualification.id)}" data-result="pass" ${availableSamples.length === samples.length && !state.reviewSaving ? '' : 'disabled'}>本环境全部通过</button>
+                </div>
+            </div>
+            <div class="pronunciation-sections">
+                <section class="pronunciation-sample-section">
+                    <div class="section-toolbar"><div><h3>专用词单独发音</h3><p class="detail-subtitle">确认目标读法、重音和音色。</p></div></div>
+                    <div class="pronunciation-sample-list">${renderPronunciationSampleSet(samples.filter((sample) => sample.kind === 'term'))}</div>
+                </section>
+                <section class="pronunciation-sample-section">
+                    <div class="section-toolbar"><div><h3>所在原句整体发音</h3><p class="detail-subtitle">确认连读、停顿和整句自然度。</p></div></div>
+                    <div class="pronunciation-context-list">
+                        ${qualification.contexts
+                            .map(
+                                (context) => `
+                                    <div class="pronunciation-context-group">
+                                        <span class="pronunciation-context-label">${escapeHtml(context.id)} · turn ${context.turnIndex}</span>
+                                        <div class="pronunciation-sample-list">${renderPronunciationSampleSet(context.samples.filter((sample) => sample.kind === 'context'))}</div>
+                                    </div>`
+                            )
+                            .join('')}
+                    </div>
+                </section>
+            </div>
+        </section>`;
+}
+
+function renderPronunciationSampleSet(samples) {
+    if (!samples.length) return '<div class="empty-review-history">没有样本</div>';
+    const active =
+        samples.find((sample) => pronunciationSampleKey(sample) === state.selectedPronunciationSampleKey) || samples[0];
+    const repeatControls =
+        samples.length > 1
+            ? `<div class="pronunciation-repeat-switch" role="group" aria-label="切换重复样本"><span>音频版本</span>${samples
+                  .map(
+                      (sample) =>
+                          `<button class="repeat-button ${pronunciationSampleKey(sample) === pronunciationSampleKey(active) ? 'is-active' : ''}" type="button" data-pronunciation-sample="${escapeHtml(pronunciationSampleKey(sample))}" data-available="${sample.audioAvailable}">${sample.repeat}</button>`
+                  )
+                  .join('')}</div>`
+            : '';
+    return renderPronunciationSample(active, repeatControls);
+}
+
+function renderPronunciationSample(sample, repeatControls = '') {
+    const review = pronunciationSampleReview(sample);
+    const selected = pronunciationSampleKey(sample) === state.selectedPronunciationSampleKey;
+    const text = sample.kind === 'term' ? sample.speechForm : sample.sourceText;
+    return `
+        <article class="pronunciation-sample ${selected ? 'is-selected' : ''} ${sample.audioAvailable ? '' : 'is-unavailable'}">
+            <div class="pronunciation-sample-copy">
+                <div class="pronunciation-sample-meta"><span class="chip">${escapeHtml(roleLabel(sample.role, sample.locale))}</span><span class="review-summary ${review.status}">${reviewStatusLabel(review.status)}</span></div>
+                <p class="pronunciation-sample-text" lang="${escapeHtml(sample.locale)}">${escapeHtml(text)}</p>
+                ${sample.kind === 'context' && sample.speechText !== sample.sourceText ? `<p class="pronunciation-speech-text">发送给 TTS：${escapeHtml(sample.speechText)}</p>` : ''}
+                <span class="pronunciation-sample-source">${escapeHtml(sample.sourcePath)} · turn ${sample.turnIndex}</span>
+            </div>
+            <div class="pronunciation-sample-actions">
+                ${repeatControls}
+                <button class="button ${selected ? 'button-primary' : 'button-secondary'}" type="button" data-pronunciation-sample="${escapeHtml(pronunciationSampleKey(sample))}" data-available="${sample.audioAvailable}" ${sample.audioAvailable ? '' : 'disabled'}>${sample.audioAvailable ? '播放并选中' : '音频未生成'}</button>
+            </div>
+        </article>
+    `;
+}
+
+function renderPronunciationReviewForm() {
+    const root = document.querySelector('#pronunciation-review-form-root');
+    const sample = selectedPronunciationSample();
+    if (!root || !sample) return;
+    const review = pronunciationSampleReview(sample);
+    const records = review.records || [];
+    root.innerHTML = `
+        <section class="review-form">
+            <div class="review-form-header"><div><h2>当前样本审核</h2><span class="autosave-label">${escapeHtml(sample.kindLabel)} · ${escapeHtml(sample.term)} · 第 ${sample.repeat} 次</span></div><span class="review-summary ${review.status}">${reviewStatusLabel(review.status)} · 通过 ${review.passCount} / 不通过 ${review.failCount}</span></div>
+            ${sample.audioAvailable ? '' : '<div class="pronunciation-unavailable">该样本的 MP3 尚未生成。生成后刷新页面即可播放和提交审核。</div>'}
+            <div class="notes-field"><label for="pronunciation-review-notes">备注（可选）</label><textarea id="pronunciation-review-notes" placeholder="记录读法、重音、连读、停顿或上下文自然度"></textarea></div>
+            <div class="status-options"><button class="status-button" type="button" data-pronunciation-review="fail" ${sample.audioAvailable && !state.reviewSaving ? '' : 'disabled'}>提交不通过</button><button class="status-button" type="button" data-pronunciation-review="pass" ${sample.audioAvailable && !state.reviewSaving ? '' : 'disabled'}>提交通过</button></div>
+            <div class="review-history"><div class="review-history-heading"><h3>审核历史</h3><span>${records.length} 条记录</span></div>${records.length ? records.map(renderReviewRecord).join('') : '<div class="empty-review-history">尚无审核记录</div>'}</div>
+        </section>
+    `;
+    root.querySelectorAll('[data-pronunciation-review]').forEach((button) => {
+        button.addEventListener('click', () => submitPronunciationReview(button.dataset.pronunciationReview));
+    });
+    root.querySelectorAll('[data-invalidate-review]').forEach((button) => {
+        button.addEventListener('click', () => invalidateReview(button.dataset.invalidateReview));
+    });
+}
+
+function renderReviewRecord(record) {
+    return `<article class="review-record ${record.invalidatedAt ? 'is-invalidated' : ''}"><div class="review-record-main"><span class="quality-badge ${record.result === 'pass' ? 'pass' : 'fail'}">${record.result === 'pass' ? '通过' : '不通过'}</span><strong>${escapeHtml(record.reviewer.name)}</strong><time>${new Date(record.createdAt).toLocaleString()}</time></div>${record.note ? `<p>${escapeHtml(record.note)}</p>` : ''}${record.invalidatedAt ? `<span class="record-invalidated">已撤销：${escapeHtml(record.invalidationReason || '')}</span>` : ''}${state.user?.role === 'admin' && !record.invalidatedAt ? `<button class="button button-secondary" type="button" data-invalidate-review="${record.id}">撤销记录</button>` : ''}</article>`;
+}
+
+function renderPronunciationPlayer() {
+    const sample = selectedPronunciationSample();
+    if (!sample) {
+        elements.playerTitle.textContent = '等待选择专用词样本';
+        elements.playerSubtitle.textContent = '';
+        loadAudioPath('', '', '', '');
+        return;
+    }
+    loadAudioPath(
+        sample.audioPath,
+        `${sample.term} · ${sample.kindLabel}`,
+        `第 ${sample.repeat} 次 · ${sample.audioAvailable ? '可播放' : '音频未生成'}`,
+        sample.audioUrl
+    );
+}
+
+function renderCurrentMode() {
+    elements.eventsMode.classList.toggle('is-active', state.mode === 'events');
+    elements.pronunciationMode.classList.toggle('is-active', state.mode === 'pronunciation');
+    if (state.mode === 'pronunciation') {
+        ensurePronunciationSelection();
+        renderPronunciationSummary();
+        renderPronunciationFilters();
+        renderPronunciationList();
+        renderPronunciationDetail();
+        renderPronunciationPlayer();
+    } else {
+        ensureSelection();
+        renderReleaseSummary();
+        renderFilters();
+        renderEventList();
+        renderDetail();
+        renderPlayer();
+    }
 }
 
 function renderFilters() {
@@ -785,6 +1177,68 @@ async function submitReview(result) {
     }
 }
 
+async function submitPronunciationReview(result) {
+    const sample = selectedPronunciationSample();
+    if (!sample || !sample.audioAvailable || state.reviewSaving) return;
+    const note = document.querySelector('#pronunciation-review-notes')?.value || '';
+    state.reviewSaving = true;
+    renderPronunciationReviewForm();
+    try {
+        const response = await apiFetch(`${API_PREFIX}/reviews`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ candidateId: sample.candidateId, result, note, requestId: createRequestId() })
+        });
+        const payload = await response.json();
+        state.reviews[sample.candidateId] = payload.summary;
+        renderPronunciationSummary();
+        renderPronunciationList();
+        renderPronunciationDetail();
+        showToast(result === 'pass' ? '专用词样本已提交通过' : '专用词样本已提交不通过');
+    } catch (error) {
+        showToast(`提交失败：${error.message}`);
+    } finally {
+        state.reviewSaving = false;
+        renderPronunciationDetail();
+    }
+}
+
+async function submitPronunciationQualificationReview(qualificationId, result) {
+    const group = selectedPronunciationGroup();
+    const qualification = pronunciationQualifications(group).find((item) => item.id === qualificationId);
+    if (!qualification || state.reviewSaving) return;
+    const samples = qualification.contexts
+        .flatMap((context) => context.samples)
+        .filter((sample) => sample.audioAvailable && !pronunciationSampleReview(sample).approved);
+    if (!samples.length) {
+        showToast('该发音环境已经全部通过');
+        return;
+    }
+    if (!window.confirm(`确认将该发音环境剩余 ${samples.length} 个样本全部标记为通过？`)) return;
+    const note = `批量确认 ${qualification.qualificationId} 的单独发音与全部原句发音通过。`;
+    state.reviewSaving = true;
+    renderPronunciationDetail();
+    try {
+        for (const sample of samples) {
+            const response = await apiFetch(`${API_PREFIX}/reviews`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ candidateId: sample.candidateId, result, note, requestId: createRequestId() })
+            });
+            const payload = await response.json();
+            state.reviews[sample.candidateId] = payload.summary;
+        }
+        renderPronunciationSummary();
+        renderPronunciationList();
+        showToast(`已提交 ${samples.length} 个通过记录`);
+    } catch (error) {
+        showToast(`批量提交失败：${error.message}`);
+    } finally {
+        state.reviewSaving = false;
+        renderPronunciationDetail();
+    }
+}
+
 async function invalidateReview(recordId) {
     const reason = window.prompt('请输入撤销原因');
     if (!reason) return;
@@ -795,11 +1249,20 @@ async function invalidateReview(recordId) {
             body: JSON.stringify({ reason })
         });
         const payload = await response.json();
-        const candidateId = activeVariant(selectedEvent()).candidateId;
+        const candidateId =
+            state.mode === 'pronunciation'
+                ? selectedPronunciationSample()?.candidateId
+                : activeVariant(selectedEvent()).candidateId;
         state.reviews[candidateId] = payload.summary;
-        renderReleaseSummary();
-        renderEventList();
-        renderReviewForm();
+        if (state.mode === 'pronunciation') {
+            renderPronunciationSummary();
+            renderPronunciationList();
+            renderPronunciationDetail();
+        } else {
+            renderReleaseSummary();
+            renderEventList();
+            renderReviewForm();
+        }
         showToast('审核记录已撤销');
     } catch (error) {
         showToast(`撤销失败：${error.message}`);
@@ -807,6 +1270,10 @@ async function invalidateReview(recordId) {
 }
 
 function renderPlayer() {
+    if (state.mode === 'pronunciation') {
+        renderPronunciationPlayer();
+        return;
+    }
     const event = selectedEvent();
     if (!event) {
         elements.playerTitle.textContent = '等待选择事件';
@@ -832,11 +1299,34 @@ function loadAudioPath(path, title, subtitle, reviewUrl = '') {
     }
     state.currentAudioPath = path;
     const candidate = selectedEvent() ? activeVariant(selectedEvent()) : null;
-    elements.audio.src = reviewUrl || (candidate?.audio.path === path ? candidate.audio.reviewUrl : path);
+    const source = reviewUrl || (candidate?.audio.path === path ? candidate.audio.reviewUrl : '');
+    if (!source) {
+        elements.audio.pause();
+        elements.audio.removeAttribute('src');
+        elements.audio.load();
+        return;
+    }
+    elements.audio.src = source;
     elements.audio.load();
 }
 
 function selectAdjacent(direction, autoplay = false) {
+    if (state.mode === 'pronunciation') {
+        const groups = getFilteredPronunciationGroups();
+        if (!groups.length) return;
+        const currentIndex = groups.findIndex((group) => group.id === state.selectedPronunciationKey);
+        const nextIndex = Math.min(groups.length - 1, Math.max(0, currentIndex + direction));
+        if (nextIndex === currentIndex) return;
+        state.selectedPronunciationKey = groups[nextIndex].id;
+        state.selectedPronunciationSampleKey = null;
+        ensurePronunciationSelection();
+        persistUiState();
+        renderPronunciationList();
+        renderPronunciationDetail();
+        renderPronunciationPlayer();
+        if (autoplay) elements.audio.play().catch(() => {});
+        return;
+    }
     const events = getFilteredEvents();
     if (!events.length) return;
     const currentIndex = events.findIndex((event) => eventKey(event) === state.selectedKey);
@@ -940,20 +1430,17 @@ async function loadApplication(user) {
     elements.loginScreen.hidden = true;
     elements.appShell.hidden = false;
     try {
-        const [dataResponse, reviewsResponse] = await Promise.all([
+        const [dataResponse, pronunciationResponse, reviewsResponse] = await Promise.all([
             apiFetch(DATA_URL),
+            apiFetch(`${API_PREFIX}/pronunciation-data`),
             apiFetch(`${API_PREFIX}/reviews`)
         ]);
         state.data = await dataResponse.json();
+        state.pronunciation = await pronunciationResponse.json();
         state.reviews = (await reviewsResponse.json()).reviews || {};
         restoreUiState();
-        ensureSelection();
         elements.autoNext.checked = state.autoNext;
-        renderReleaseSummary();
-        renderFilters();
-        renderEventList();
-        renderDetail();
-        renderPlayer();
+        renderCurrentMode();
     } catch (error) {
         elements.reviewPane.innerHTML = `
             <div class="error-state">
@@ -967,6 +1454,18 @@ async function loadApplication(user) {
 function bindGlobalEvents() {
     elements.previousEvent.addEventListener('click', () => selectAdjacent(-1));
     elements.nextEvent.addEventListener('click', () => selectAdjacent(1));
+    elements.eventsMode.addEventListener('click', () => {
+        if (state.mode === 'events') return;
+        state.mode = 'events';
+        persistUiState();
+        renderCurrentMode();
+    });
+    elements.pronunciationMode.addEventListener('click', () => {
+        if (state.mode === 'pronunciation') return;
+        state.mode = 'pronunciation';
+        persistUiState();
+        renderCurrentMode();
+    });
     elements.autoNext.addEventListener('change', (event) => {
         state.autoNext = event.target.checked;
         persistUiState();

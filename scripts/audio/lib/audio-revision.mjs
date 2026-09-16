@@ -26,6 +26,44 @@ export function resolveTtsEnvFile(envFile, environment = process.env) {
     return configuredPath ? resolveFromRoot(configuredPath) : '';
 }
 
+const VOICE_PROFILE_KEYS = [
+    'voiceA',
+    'voiceB',
+    'voiceNarrator',
+    'voiceSummary',
+    'instructionA',
+    'instructionB',
+    'instructionNarrator',
+    'instructionSummary',
+    'speedA',
+    'speedB',
+    'speedNarrator',
+    'speedSummary'
+];
+
+export function entryOverrideFor(config, source) {
+    const overrides = config.entryOverrides || {};
+    const exactKey = `${source.eventId}:${source.locale || 'zh'}`;
+    return overrides[exactKey] || overrides[source.eventId] || {};
+}
+
+export function resolveVoiceProfile(baseProfile, override = {}) {
+    const unknownKeys = Object.keys(override).filter((key) => !VOICE_PROFILE_KEYS.includes(key));
+    if (unknownKeys.length) fail(`Unsupported voice profile override keys: ${unknownKeys.join(', ')}`);
+    const profile = { ...baseProfile, ...override };
+    profile.voiceNarrator = profile.voiceNarrator || profile.voiceB;
+    profile.voiceSummary = profile.voiceSummary || profile.voiceB;
+    profile.instructionA = profile.instructionA ?? '';
+    profile.instructionB = profile.instructionB ?? '';
+    profile.instructionNarrator = profile.instructionNarrator ?? profile.instructionB;
+    profile.instructionSummary = profile.instructionSummary ?? '';
+    profile.speedA = profile.speedA ?? 1;
+    profile.speedB = profile.speedB ?? 1;
+    profile.speedNarrator = profile.speedNarrator ?? profile.speedB;
+    profile.speedSummary = profile.speedSummary ?? 0.97;
+    return profile;
+}
+
 export function formatCommandFailure(command, result, target = '') {
     const targetLabel = target ? ` for ${target}` : '';
     if (result.error?.code === 'ENOENT' || (result.status === null && !result.error)) {
@@ -78,6 +116,21 @@ export function loadRevisionConfig(configArgument) {
     if (!Number.isInteger(config.expectedEntryCount) || config.expectedEntryCount < 1) {
         fail('expectedEntryCount must be a positive integer');
     }
+    if (config.eventIds !== undefined) {
+        if (!Array.isArray(config.eventIds) || !config.eventIds.length) {
+            fail('eventIds must be a non-empty array when provided');
+        }
+        const normalizedEventIds = config.eventIds.map((eventId) => String(eventId || '').trim());
+        if (
+            normalizedEventIds.some((eventId) => !eventId) ||
+            new Set(normalizedEventIds).size !== config.eventIds.length
+        ) {
+            fail('eventIds must contain unique non-empty event IDs');
+        }
+        if (config.expectedEntryCount !== config.eventIds.length) {
+            fail('expectedEntryCount must match eventIds length');
+        }
+    }
     const outputRoot = resolveFromRoot(config.outputRoot);
     const relativeOutputRoot = path.relative(GENERATED_AUDIO_ROOT, outputRoot);
     if (
@@ -97,6 +150,21 @@ export function loadRevisionConfig(configArgument) {
     if (!Array.isArray(config.specification?.locales) || config.specification.locales.length === 0) {
         fail('Revision specification must declare at least one locale');
     }
+    if (config.entryOverrides !== undefined) {
+        if (
+            !config.entryOverrides ||
+            Array.isArray(config.entryOverrides) ||
+            typeof config.entryOverrides !== 'object'
+        ) {
+            fail('entryOverrides must be an object keyed by eventId or eventId:locale');
+        }
+        for (const [entryKey, override] of Object.entries(config.entryOverrides)) {
+            if (!entryKey.trim() || !override || Array.isArray(override) || typeof override !== 'object') {
+                fail(`Invalid entry override: ${entryKey || '(empty)'}`);
+            }
+            resolveVoiceProfile({}, override);
+        }
+    }
     const turnsDir = resolveFromRoot(config.turnsDir);
     if (!fs.existsSync(turnsDir)) fail(`Missing turns directory: ${turnsDir}`);
     const voiceProfilePath = resolveFromRoot(config.voiceProfilePath);
@@ -111,7 +179,7 @@ export function loadRevisionConfig(configArgument) {
 }
 
 export function loadRevisionTurns(config) {
-    return fs
+    const sources = fs
         .readdirSync(config.turnsDir)
         .filter((fileName) => fileName.endsWith('.json'))
         .sort()
@@ -120,6 +188,13 @@ export function loadRevisionTurns(config) {
             path: path.join(config.turnsDir, fileName),
             data: readJson(path.join(config.turnsDir, fileName))
         }));
+    if (!config.eventIds) return sources;
+    const eventIds = new Set(config.eventIds);
+    const selected = sources.filter(({ data }) => eventIds.has(data.eventId));
+    const found = new Set(selected.map(({ data }) => data.eventId));
+    const missing = config.eventIds.filter((eventId) => !found.has(eventId));
+    if (missing.length) fail(`Missing selected revision events: ${missing.join(', ')}`);
+    return selected;
 }
 
 export function roleLabel(role) {

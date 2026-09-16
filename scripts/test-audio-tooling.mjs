@@ -13,7 +13,13 @@ import {
 import { writeFrozenJson } from './audio/build-complete-original-revisions.mjs';
 import { resolvePresentationAuthority } from './audio/build-audio-editorial-plan.mjs';
 import { buildWorkflowReport } from './audio/check-audio-workflow-status.mjs';
-import { ROOT, formatCommandFailure, resolveTtsEnvFile } from './audio/lib/audio-revision.mjs';
+import {
+    ROOT,
+    entryOverrideFor,
+    formatCommandFailure,
+    resolveTtsEnvFile,
+    resolveVoiceProfile
+} from './audio/lib/audio-revision.mjs';
 import { compileSpeechTurns, pronunciationInstructionSha256 } from './audio/lib/pronunciation.mjs';
 import { classify, locateRanges } from './audio/score-pronunciation-validation.mjs';
 import { sourceOrdinal } from './audio/validate-revision-pronunciation.mjs';
@@ -109,6 +115,33 @@ assert.equal(excludedPronunciation.turns[4].text, 'XCON/R1');
 assert.equal(excludedPronunciation.replacements.length, 0);
 assert.equal(excludedPronunciation.unqualified.length, 0);
 assert.equal(excludedPronunciation.exclusions.length, 1);
+const xconReleaseConfig = JSON.parse(
+    fs.readFileSync(path.join(ROOT, 'audio/revisions/issue-98-pronunciation-release-zh.json'), 'utf8')
+);
+const xconReleaseProfile = resolveVoiceProfile(
+    zhVoiceProfile,
+    entryOverrideFor(xconReleaseConfig, { eventId: '1980-xcon-r1', locale: 'zh' })
+);
+const xconReleasePronunciation = compileSpeechTurns({
+    ...pronunciationContext,
+    eventId: '1980-xcon-r1',
+    turns: Array.from({ length: 5 }, (_, index) => ({ role: 'N', text: index === 4 ? 'XCON/R1' : '无' })),
+    voiceForRole: (role) =>
+        role === 'A'
+            ? xconReleaseProfile.voiceA
+            : role === 'B'
+              ? xconReleaseProfile.voiceB
+              : xconReleaseProfile.voiceNarrator,
+    instructionForRole: (role) =>
+        role === 'A'
+            ? xconReleaseProfile.instructionA
+            : role === 'B'
+              ? xconReleaseProfile.instructionB
+              : xconReleaseProfile.instructionNarrator
+});
+assert.equal(xconReleasePronunciation.turns[4].text, 'ex-con/R1');
+assert.equal(xconReleasePronunciation.replacements[0].qualification.id, 'xcon-volc-seed-tts-2-zh-huopo-narrator-v2');
+assert.equal(xconReleasePronunciation.exclusions.length, 0);
 assert.equal(
     compileSpeechTurns({
         ...pronunciationContext,
@@ -347,9 +380,9 @@ assert(
 const workflowReport = await buildWorkflowReport();
 const enabledStorylineEntries = [...storylines.values()].flat();
 assert.deepEqual(workflowReport.errors, []);
-assert.equal(workflowReport.source.configCount, 19);
-assert.equal(workflowReport.source.validConfigCount, 19);
-assert.equal(workflowReport.source.turnCount, 590);
+assert.equal(workflowReport.source.configCount, 23);
+assert.equal(workflowReport.source.validConfigCount, 23);
+assert.equal(workflowReport.source.turnCount, 611);
 assert.deepEqual(workflowReport.source.untrackedFiles, []);
 assert.equal(workflowReport.archive.storylineEntryCount, enabledStorylineEntries.length);
 assert.equal(

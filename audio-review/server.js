@@ -8,6 +8,7 @@ const { URL } = require('node:url');
 
 const { createAuthService, loadTokenEntries } = require('./auth');
 const { loadReviewCatalog } = require('./candidates');
+const { loadPronunciationCatalog, PRONUNCIATION_AUDIO_PREFIX } = require('./pronunciation');
 const { AudioReviewStore } = require('./store');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -197,6 +198,9 @@ function isPathInside(root, target) {
 function resolveReviewAudioPath(audioPath, options) {
     const projectRoot = path.resolve(options.projectRoot);
     const audioRoot = path.resolve(options.audioRoot || path.join(projectRoot, AUDIO_REVIEW_AUDIO_PREFIX));
+    const pronunciationRoot = path.resolve(
+        options.pronunciationRoot || path.join(projectRoot, PRONUNCIATION_AUDIO_PREFIX)
+    );
     const rawAudioPath = String(audioPath || '').trim();
     if (!rawAudioPath || rawAudioPath.includes('\0') || rawAudioPath.includes('\\')) {
         throw Object.assign(new Error('Invalid review audio path'), { statusCode: 403 });
@@ -206,21 +210,25 @@ function resolveReviewAudioPath(audioPath, options) {
     }
 
     const normalizedAudioPath = path.posix.normalize(rawAudioPath);
+    const isGeneratedAudio =
+        normalizedAudioPath === AUDIO_REVIEW_AUDIO_PREFIX ||
+        normalizedAudioPath.startsWith(`${AUDIO_REVIEW_AUDIO_PREFIX}/`);
+    const isPronunciationAudio =
+        normalizedAudioPath === PRONUNCIATION_AUDIO_PREFIX ||
+        normalizedAudioPath.startsWith(`${PRONUNCIATION_AUDIO_PREFIX}/`);
     if (
         normalizedAudioPath === '..' ||
         normalizedAudioPath.startsWith('../') ||
-        (normalizedAudioPath !== AUDIO_REVIEW_AUDIO_PREFIX &&
-            !normalizedAudioPath.startsWith(`${AUDIO_REVIEW_AUDIO_PREFIX}/`))
+        (!isGeneratedAudio && !isPronunciationAudio)
     ) {
         throw Object.assign(new Error('Audio path is outside the review audio root'), { statusCode: 403 });
     }
 
-    const relativeAudioPath =
-        normalizedAudioPath === AUDIO_REVIEW_AUDIO_PREFIX
-            ? ''
-            : normalizedAudioPath.slice(`${AUDIO_REVIEW_AUDIO_PREFIX}/`.length);
-    const filePath = path.resolve(audioRoot, relativeAudioPath);
-    if (!isPathInside(audioRoot, filePath)) {
+    const root = isPronunciationAudio ? pronunciationRoot : audioRoot;
+    const prefix = isPronunciationAudio ? PRONUNCIATION_AUDIO_PREFIX : AUDIO_REVIEW_AUDIO_PREFIX;
+    const relativeAudioPath = normalizedAudioPath === prefix ? '' : normalizedAudioPath.slice(`${prefix}/`.length);
+    const filePath = path.resolve(root, relativeAudioPath);
+    if (!isPathInside(root, filePath)) {
         throw Object.assign(new Error('Audio path is outside the review audio root'), { statusCode: 403 });
     }
     return filePath;
@@ -249,14 +257,26 @@ function createAudioReviewServer(options = {}) {
     };
     let catalogMtime = -1;
     let catalog;
+    let pronunciationCatalog;
 
     function currentCatalog() {
         const stat = fs.statSync(reviewDataPath);
         if (!catalog || stat.mtimeMs !== catalogMtime) {
             catalog = loadReviewCatalog(reviewDataPath);
             catalogMtime = stat.mtimeMs;
-            store.syncCandidates(catalog.candidates);
         }
+        pronunciationCatalog = loadPronunciationCatalog(projectRoot, {
+            configPath: options.pronunciationConfigPath || process.env.AUDIO_REVIEW_PRONUNCIATION_CONFIG,
+            glossaryPath: options.pronunciationGlossaryPath || process.env.AUDIO_REVIEW_PRONUNCIATION_GLOSSARY,
+            manifestPath: options.pronunciationManifestPath || process.env.AUDIO_REVIEW_PRONUNCIATION_MANIFEST
+        });
+        for (const [candidateId, candidate] of pronunciationCatalog.candidates) {
+            catalog.candidates.set(candidateId, candidate);
+        }
+        for (const [candidateId, audioPath] of pronunciationCatalog.audioFiles) {
+            catalog.audioFiles.set(candidateId, audioPath);
+        }
+        store.syncCandidates(catalog.candidates);
         return catalog;
     }
 
@@ -305,6 +325,11 @@ function createAudioReviewServer(options = {}) {
             }
             if (url.pathname === '/api/review-data' && method === 'GET') {
                 sendJson(res, currentCatalog().data);
+                return;
+            }
+            if (url.pathname === '/api/pronunciation-data' && method === 'GET') {
+                currentCatalog();
+                sendJson(res, pronunciationCatalog.data);
                 return;
             }
             if (url.pathname === '/api/reviews' && method === 'GET') {

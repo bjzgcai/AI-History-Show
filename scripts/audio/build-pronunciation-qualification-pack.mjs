@@ -19,12 +19,14 @@ function fail(message) {
 function parseArgs(argv) {
     const options = {
         generate: false,
+        reuseExisting: false,
         envFile: process.env.TTS_ENV_FILE || '.secrets/tts.env',
         groupIds: []
     };
     for (let index = 0; index < argv.length; index += 1) {
         const argument = argv[index];
         if (argument === '--generate') options.generate = true;
+        else if (argument === '--reuse-existing') options.reuseExisting = true;
         else if (argument === '--env-file') {
             options.envFile = argv[index + 1];
             index += 1;
@@ -53,6 +55,10 @@ function instructionForRole(profile, role) {
     if (role === 'B') return profile.instructionB;
     if (role === 'SUMMARY') return profile.instructionSummary;
     return profile.instructionNarrator;
+}
+
+function instructionForGroup(group, profile, role) {
+    return group.instructionOverride || instructionForRole(profile, role);
 }
 
 function speedForRole(profile, role) {
@@ -115,6 +121,15 @@ function probeAudio(filePath) {
 }
 
 function runGenerator(sample, config, profile, envFile) {
+    const instructionProfile = sample.instructionOverride
+        ? {
+              ...profile,
+              instructionA: sample.instructionOverride,
+              instructionB: sample.instructionOverride,
+              instructionNarrator: sample.instructionOverride,
+              instructionSummary: sample.instructionOverride
+          }
+        : profile;
     const args = [
         GENERATOR_PATH,
         sample.inputPath,
@@ -136,13 +151,13 @@ function runGenerator(sample, config, profile, envFile) {
         '--voice-summary',
         profile.voiceSummary,
         '--instruction-a',
-        profile.instructionA,
+        instructionProfile.instructionA,
         '--instruction-b',
-        profile.instructionB,
+        instructionProfile.instructionB,
         '--instruction-narrator',
-        profile.instructionNarrator,
+        instructionProfile.instructionNarrator,
         '--instruction-summary',
-        profile.instructionSummary,
+        instructionProfile.instructionSummary,
         '--speed-a',
         String(profile.speedA),
         '--speed-b',
@@ -174,12 +189,12 @@ function markdown(manifest) {
     const lines = [
         '# 专用词发音资格审听包',
         '',
-        '| Group | Context | Repeat | Role | Speech form | Audio | Result |',
-        '| --- | --- | ---: | --- | --- | --- | --- |'
+        '| Group | Sample | Context | Repeat | Role | Speech form | Audio | Result |',
+        '| --- | --- | --- | ---: | --- | --- | --- | --- |'
     ];
     for (const sample of manifest.samples) {
         lines.push(
-            `| ${sample.groupId} | ${sample.contextId} | ${sample.repeat} | ${sample.role} | ${sample.speechForm} | ${sample.audioAbsolutePath || '-'} | pending |`
+            `| ${sample.groupId} | ${sample.sampleMode === 'term' ? 'term' : 'context'} | ${sample.contextId} | ${sample.repeat} | ${sample.role} | ${sample.speechForm} | ${sample.audioAbsolutePath || '-'} | pending |`
         );
     }
     return `${lines.join('\n')}\n`;
@@ -188,7 +203,13 @@ function markdown(manifest) {
 async function main() {
     const options = parseArgs(process.argv.slice(2));
     const config = readJson(CONFIG_PATH);
-    const profile = readJson(resolveFromRoot(config.voiceProfilePath));
+    const profileCache = new Map();
+    const profileForGroup = (group) => {
+        const profilePath = group.voiceProfilePath || config.voiceProfilePath;
+        if (!profilePath) fail(`${group.id}: voiceProfilePath is required`);
+        if (!profileCache.has(profilePath)) profileCache.set(profilePath, readJson(resolveFromRoot(profilePath)));
+        return profileCache.get(profilePath);
+    };
     const glossary = loadPronunciationGlossary().glossary;
     const glossaryById = new Map(glossary.entries.map((entry) => [entry.id, entry]));
     const selectedGroups = new Set(options.groupIds);
@@ -205,6 +226,7 @@ async function main() {
         }
         if (group.reviewStatus !== 'pending-human-review')
             fail(`${group.id}: reviewStatus must be pending-human-review`);
+        profileForGroup(group);
         if (!Array.isArray(group.contexts) || !group.contexts.length) fail(`${group.id}: contexts are empty`);
         const contextIds = new Set();
         for (const context of group.contexts) {
@@ -229,16 +251,17 @@ async function main() {
 
     for (const group of config.groups) {
         if (selectedGroups.size && !selectedGroups.has(group.id)) continue;
+        const profile = profileForGroup(group);
         const term = glossaryById.get(group.termId);
         if (!term) fail(`${group.id}: unknown glossary term ${group.termId}`);
-        for (const context of group.contexts) {
+        for (const [contextIndex, context] of group.contexts.entries()) {
             const source = readJson(resolveFromRoot(context.turnPath));
             if (source.locale !== group.locale) fail(`${group.id}/${context.id}: source locale does not match group`);
             const turn = source.turns[context.turnIndex - 1];
             if (!turn) fail(`${group.id}/${context.id}: missing turn ${context.turnIndex}`);
             const rewritten = replaceTerm(turn.text, term.aliases, group.speechForm);
             if (!rewritten.replacementCount) fail(`${group.id}/${context.id}: term not found in selected turn`);
-            const instruction = instructionForRole(profile, turn.role);
+            const instruction = instructionForGroup(group, profile, turn.role);
             const tuple = {
                 voice: voiceForRole(profile, turn.role),
                 instructionSha256: pronunciationInstructionSha256(instruction)
@@ -253,41 +276,60 @@ async function main() {
             const groupRoot = path.join(OUTPUT_ROOT, group.id);
             fs.mkdirSync(groupRoot, { recursive: true });
             for (let repeat = 1; repeat <= context.repeatCount; repeat += 1) {
-                const id = `${group.id}-${context.id}-repeat-${repeat}`;
-                const inputPath = path.join(groupRoot, `${context.id}-repeat-${repeat}.txt`);
-                const outputPath = path.join(groupRoot, `${context.id}-repeat-${repeat}.mp3`);
-                fs.writeFileSync(inputPath, `${roleLabel(turn.role)}: ${rewritten.text}\n`);
-                const sample = {
-                    id,
-                    groupId: group.id,
-                    contextId: context.id,
-                    repeat,
-                    termId: term.id,
-                    term: term.term,
-                    targetReading: term.reading.spoken,
-                    speechForm: group.speechForm,
-                    provider: config.provider.name,
-                    model: config.provider.model,
-                    locale: group.locale,
-                    voice: voiceForRole(profile, turn.role),
-                    instructionSha256: pronunciationInstructionSha256(instruction),
-                    role: turn.role,
-                    speed: speedForRole(profile, turn.role),
-                    seed: config.baseSeed + samples.length,
-                    sourcePath: context.turnPath,
-                    turnIndex: context.turnIndex,
-                    sourceText: turn.text,
-                    sourceTextSha256: sha256(turn.text),
-                    speechText: rewritten.text,
-                    speechTextSha256: sha256(rewritten.text),
-                    inputPath,
-                    outputPath
-                };
-                if (options.generate) {
-                    if (fs.existsSync(outputPath)) fail(`refusing to overwrite qualification sample: ${outputPath}`);
-                    runGenerator(sample, config, profile, envFile);
+                const sampleModes = contextIndex === 0 ? ['term', 'context'] : ['context'];
+                for (const sampleMode of sampleModes) {
+                    const id =
+                        sampleMode === 'term'
+                            ? `${group.id}-${context.id}-term-repeat-${repeat}`
+                            : `${group.id}-${context.id}-repeat-${repeat}`;
+                    const fileStem =
+                        sampleMode === 'term'
+                            ? `${context.id}-term-repeat-${repeat}`
+                            : `${context.id}-repeat-${repeat}`;
+                    const inputPath = path.join(groupRoot, `${fileStem}.txt`);
+                    const outputPath = path.join(groupRoot, `${fileStem}.mp3`);
+                    const speechText = sampleMode === 'term' ? group.speechForm : rewritten.text;
+                    fs.writeFileSync(inputPath, `${roleLabel(turn.role)}: ${speechText}\n`);
+                    const sample = {
+                        id,
+                        groupId: group.id,
+                        contextId: context.id,
+                        sampleMode,
+                        repeat,
+                        termId: term.id,
+                        term: term.term,
+                        targetReading: term.reading.spoken,
+                        speechForm: group.speechForm,
+                        provider: config.provider.name,
+                        model: config.provider.model,
+                        locale: group.locale,
+                        voice: voiceForRole(profile, turn.role),
+                        instructionSha256: pronunciationInstructionSha256(instruction),
+                        role: turn.role,
+                        speed: speedForRole(profile, turn.role),
+                        seed: config.baseSeed + samples.length,
+                        sourcePath: context.turnPath,
+                        turnIndex: context.turnIndex,
+                        sourceText: turn.text,
+                        sourceTextSha256: sha256(turn.text),
+                        speechText,
+                        instructionOverride: group.instructionOverride || null,
+                        speechTextSha256: sha256(speechText),
+                        inputPath,
+                        outputPath
+                    };
+                    if (options.generate) {
+                        if (fs.existsSync(outputPath)) {
+                            if (!options.reuseExisting) {
+                                fail(`refusing to overwrite qualification sample: ${outputPath}`);
+                            }
+                            probeAudio(outputPath);
+                        } else {
+                            runGenerator(sample, config, profile, envFile);
+                        }
+                    }
+                    samples.push(sample);
                 }
-                samples.push(sample);
             }
         }
     }
@@ -334,6 +376,7 @@ async function main() {
                 return {
                     id: group.id,
                     qualificationId: group.qualificationId,
+                    voiceProfilePath: group.voiceProfilePath || config.voiceProfilePath,
                     reviewAction: existingQualification ? 'update-evidence' : 'create-qualification',
                     reviewStatus: group.reviewStatus,
                     tuple: qualificationTuple

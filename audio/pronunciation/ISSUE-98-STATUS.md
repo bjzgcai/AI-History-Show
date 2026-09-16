@@ -1,17 +1,12 @@
 # Issue #98 当前状态
 
-更新日期：2026-08-14
+更新日期：2026-09-16
 
 当前分支：`fix/issue-98-audio-pronunciation-glossary`
 
-已有基线提交：`4c43eb1 feat: 建立音频专用词发音清单`
+## 正式方案
 
-本文只记录当前工作状态。长期正式规则以 `README.md` 为准，早期 acoustic 实验与 detector 结论见
-`VALIDATION.md`。
-
-## 当前结论
-
-正式方案已经确定为：
+生产音频采用以下门禁：
 
 ```text
 正确 speechForm
@@ -20,168 +15,101 @@
 + 自动检查覆盖和 generation identity
 ```
 
-Archive、展示文案和 frozen turn 中的英文专用词保持原样。生成时只修改临时 speech text。
-Acoustic detector 不作为生成、发布或发音放行门禁，只保留为 diagnostic 工具。
-
-一项 TTS qualification 精确绑定：
+Archive、展示文案和 frozen turn 中的英文专用词保持原样，只在 TTS 临时 speech text 中替换。
+Qualification 精确绑定：
 
 ```text
 term + speechForm + provider + model + locale + voice + instruction SHA-256
 ```
 
-任一字段变化都必须重新认证。相同 tuple 的新回归样本只更新证据，不创建第二个同时生效的资格。
+任一字段变化都必须重新审听。Acoustic detector 只保留为 diagnostic 工具，不作为生成或发布门禁。
 
 ## 已完成
 
-### 专用词盘点
+- Glossary 共 311 项，音频 turn 中未覆盖候选为 0。
+- Compiler 支持最长 alias 优先、精确英文数字词边界、完整 tuple 匹配和阻断未资格化上下文。
+- Overlay v2 与 generation identity 记录 glossary hash、资格、替换、排除项和临时 speech text。
+- Revision 支持按 `eventId` 或 `eventId:locale` 配置条目级语音指令覆盖。
+- Qualification pack 支持中英文 voice profile、复用已有 MP3，并避免一个资格有多条原句时重复生成单词音频。
+- 专用词审听台按词聚合多个发音环境，左侧只显示一次，右侧并列展示单词和完整原句。
+- 审听台支持逐条审核和“本环境全部通过”，历史审核仍保存在 SQLite。
+- XCON v2 单词与中文长期影响原句已于 2026-09-15 人工确认通过，并写入 glossary。
+- 已准备中英文正式候选 revision：中文 v2 包含 6 个受影响事件，英文 v2 暂含 5 个已确认事件；中文 XCON 使用已审听的 v2 narrator 指令。
 
-- Glossary：311 项。
-- 音频 turn 中的出现次数：2091 次。
-- Turn 文件：352 个，合计 2153 个 turn。
-- 未覆盖候选：0。
-- 未出现在文案中的 glossary 项：0。
-- `hintRequired`：213 项。
+## 当前资格包
 
-盘点来源和每次出现位置见 `inventory.json`。
+审听地址：`[REDACTED_INTERNAL_AUDIT_URL]`
 
-### 已人工确认的 Speech Replacement
+| 项目           |    数量 |
+| -------------- | ------: |
+| 左侧专用词     |       6 |
+| 精确发音环境   |      16 |
+| 可播放样本     | 82 / 82 |
+| 已通过样本     | 76 / 82 |
+| 待人工审听样本 |       6 |
 
-| Term       | Speech form   | Locale | Role / instruction | Qualification                               |
-| ---------- | ------------- | ------ | ------------------ | ------------------------------------------- |
-| `SURF`     | `surf`        | `zh`   | B                  | `surf-volc-seed-tts-2-zh-huopo-b-v1`        |
-| `NAS`      | `N-A-S`       | `zh`   | Narrator           | `nas-volc-seed-tts-2-zh-huopo-narrator-v1`  |
-| `XCON`     | `ex-con`      | `zh`   | Narrator           | `xcon-volc-seed-tts-2-zh-huopo-narrator-v1` |
-| `RoIAlign` | `R-O-I align` | `zh`   | B                  | `roialign-volc-seed-tts-2-zh-huopo-b-v1`    |
-| `RoI`      | `R-O-I`       | `zh`   | B                  | `roi-volc-seed-tts-2-zh-huopo-b-v1`         |
+已全部通过的环境：
 
-`XCON` 在 `1980-xcon-r1 / zh / turn 5` 有明确排除项，不自动应用通用 replacement。
+- 中文：`SURF` 女声 A、`SURF` 男声 B、`SURF` Summary、`NAS` Narrator、`XCON v2` Narrator、`RoI` 男声 B、`RoIAlign` 男声 B。
+- 中文 narrator：`ELIZA`。
+- 英文：`SURF` Megan A、`SURF` Alberto B、`SURF` Alberto Summary、`XCON` Alberto Narrator、`RoI` Alberto B、`RoIAlign` Alberto B、`NAS` Alberto Narrator。
 
-### Compiler 与生成链路
+新增资格环境：
 
-- 最长 alias 优先并使用精确英文数字词边界。
-- qualification 按完整 tuple 匹配。
-- 有管理规则但没有当前资格的出现位置记为 `unqualified`，正式生成直接失败。
-- 同一生成环境存在多个 active qualification 时直接失败。
-- Overlay v2 记录 glossary hash、资格 ID、替换、`unqualified` 和排除项。
-- Generation identity 包含原文、speech text、替换、排除项和 glossary SHA-256。
-- Append-only 恢复会核对 job identity 和音频 SHA-256。
-- 历史 overlay v1 保持兼容，不修改旧资产。
-
-### 正式命令
-
-```bash
-npm run audio:pronunciation:inventory
-npm run audio:pronunciation:audit
-npm run audio:pronunciation:qualification-pack
-```
-
-Acoustic 工具已移出 `audio:workflow`，统一放在：
-
-```text
-audio:pronunciation:diagnostic:*
-```
+- 中文 narrator：`ELIZA`，6 个样本已通过（3 条单独专用词、3 条原句整体）。目标读法为
+  `Eliza, /ɪˈlaɪzə/`。
+- 英文 Alberto narrator：`ELIZA`，6 个样本待审听（3 条单独专用词、3 条原句整体）。
 
 ## 当前 Audit
 
-最近一次 compiler audit：
-
-| Item               | Count |
-| ------------------ | ----: |
-| 扫描 turn 文件     |   352 |
-| 唯一 turn source   |   348 |
-| 唯一生成环境       |   348 |
-| 重复生成环境       |     4 |
-| 已应用 replacement |    10 |
-| `unqualified`      |    15 |
-| 明确排除           |     1 |
-
-15 个 `unqualified` 包含：
-
-- 中文 `SURF` 女声 A：1 次。
-- 中文 `SURF` Summary：1 次。
-- 英文 `SURF`、`NAS`、`XCON`、`RoIAlign`、`RoI`：13 次。
-
-完整明细位于 `.tmp/pronunciation-compilation-audit.json`。
-
-## 当前 Qualification Pack
-
-`qualification-cases.json` 已准备第一组 `SURF` 验证，共 10 条不同 seed 的样本：
-
-| Group        | Action           | Context                  | Samples |
-| ------------ | ---------------- | ------------------------ | ------: |
-| 中文女声 A   | 创建资格         | 问句 turn 1              |       3 |
-| 中文 Summary | 创建资格         | 总结 turn 7              |       3 |
-| 中文男声 B   | 更新已有资格证据 | 历史 turn 2、影响 turn 6 |       4 |
-
-预构建 manifest：
+加入 XCON v2 正式候选上下文后，最近一次 compiler audit 为：
 
 ```text
-.tmp/pronunciation-qualification/manifest.json
+32 applied
+3 unqualified
+1 excluded
 ```
 
-10 条样本使用 seed `980100` 到 `980109`。当前全部保持 `pending-human-review`。
+中文 ELIZA 资格已生效。当前 3 个 `unqualified` 全部来自英文 `1966-eliza` 的 Alberto narrator
+环境，等待英文 6 条样本确认；唯一的 `excluded` 是旧 XCON narrator 环境中已知会改变原句的样本。
 
-### 当前阻塞
+## 人工审听后的命令
 
-使用以下 env 文件生成时：
-
-```text
-~/.openclaw/workspace/.secrets/tts.env
-```
-
-`SEED-TTS-API-KEY` 能被正确读取，变量格式、引号和选择顺序均正常。Volc 返回
-`InvalidSubscription`，表示 key 对应账号的 `AgentPlanEnterprise` 已过期、未开通或未分配 seat。
-第一条请求即失败，因此当前没有生成可审听 MP3。
-
-恢复 subscription 后运行：
+全部环境通过后，已从审核库晋级 qualification：
 
 ```bash
-node scripts/audio/build-pronunciation-qualification-pack.mjs \
-  --generate \
-  --env-file ~/.openclaw/workspace/.secrets/tts.env
+npm run audio:pronunciation:promote -- \
+  --db /opt/ai-history-test/audio-review/data/reviews.sqlite \
+  --write --check
 ```
 
-## 仍待官方音频核验的目标读音
+随后已清零 audit：
 
-以下 9 项的目标读音确认等级仍为 `pending-official-audio`。这与 TTS qualification 是不同维度：
+```bash
+npm run audio:pronunciation:inventory
+npm run audio:pronunciation:audit -- --check
+```
 
-| Term                 | Category    | Event source                                   |
-| -------------------- | ----------- | ---------------------------------------------- |
-| `SHRDLU`             | system-name | `1966-eliza`, `1970-shrdlu`, `2011-ibm-watson` |
-| `Cyc`                | system-name | `1984-cyc`                                     |
-| `Suphx`              | system-name | `2019-muzero`, `2019-pluribus`, `2019-suphx`   |
-| `David Rumelhart`    | person-name | `ai100-1967-back-propagation`                  |
-| `H. Sebastian Seung` | person-name | `ai100-1999-nmf`                               |
-| `Bernhard Scholkopf` | person-name | `ai100-1997-kernel-pca`                        |
-| `Alexander Smola`    | person-name | `ai100-1997-kernel-pca`                        |
-| `Luc Van Gool`       | person-name | `ai100-2006-surf`                              |
-| `Vin de Silva`       | person-name | `ai100-2000-isomap`                            |
+正式候选配置：
 
-## 验证状态
+```text
+audio/revisions/issue-98-pronunciation-release-zh-v2.json
+audio/revisions/issue-98-pronunciation-release-en-v2.json
+```
 
-已通过：
+Audit 清零后生成、验证两个 append-only revision，再运行：
 
-- `npm run lint`
-- `npm run format:check`
-- `npm run validate:archive`
-- Pronunciation inventory 同步检查
-- Qualification pack 预构建
-- 旧 Issue #98 revision 的 4 条音频兼容验证
-- Compiler 的 tuple 失配、排除项、最长 alias 和重复资格冲突测试
+```bash
+npm run verify:pr
+```
 
-当前预期失败：
+已生成并验证：
 
-- `audio:pronunciation:audit -- --check`：仍有 15 个 `unqualified`。
-- Qualification MP3 生成：Volc subscription 不可用。
+- `issue-98-pronunciation-release-zh-v2-2026-09-16`：6 个音频资产通过，包含 `1966-eliza`。
+- `issue-98-pronunciation-release-en-v2-2026-09-16`：5 个音频资产通过，暂不包含英文 `1966-eliza`。
 
-提交时必须同时包含 Issue #98 的 1 个 revision config 和 4 个 frozen turn。遗漏其中任何文件时，
-`scripts/test-audio-tooling.mjs` 会按设计拒绝 untracked audio source。
-
-## 下一步
-
-1. 恢复 Volc subscription 或换用同一预期账号的有效 `SEED-TTS-API-KEY`。
-2. 生成 10 条 `SURF` qualification 样本并人工审听。
-3. A 与 Summary 全部通过后创建对应 qualification；B 全部通过后只更新已有资格的 `sampleIds`。
-4. 重新运行 inventory 和 audit。中文 `SURF` 会自动统一应用到所有匹配上下文。
-5. 为剩余 13 个英文出现位置建立英文 qualification pack，按相同流程认证。
-6. `unqualified` 清零后生成正式 revision，并运行项目质量门禁。
+审听台当前 active overlay 只使用上述两份 Issue #98 v2 候选，事件音频共 6 个事件：`1966-eliza`
+（仅中文）、`1980-xcon-r1`、`ai100-2006-surf`、`ai100-2015-fast-r-cnn`、`ai100-2017-mask-r-cnn`
+和 `ai100-2016-nas`（后 5 个均有中英文）。其他旧事件音频已从事件审听索引移除。专用词审听页
+仍另外包含中文和英文两组 ELIZA 资格样本；当前正式审计为 `32 applied / 3 unqualified / 1 excluded`，
+3 个未资格化项全部是英文 ELIZA 上下文。
