@@ -582,6 +582,9 @@ const routes = {
                     return {
                         id: entry.name,
                         year: event.year || '',
+                        title: event.title || {},
+                        summary: event.summary || {},
+                        description: event.description || {},
                         files,
                         variants: files
                             .filter((file) => file.startsWith('variants/'))
@@ -604,14 +607,36 @@ const routes = {
 
     'GET /api/archive/storylines': (_req, res) => {
         try {
-            const storylines = listStorylineRecords().map(({ id, data, activeEvents }) => ({
-                id,
-                title: data.title || {},
-                used: activeEvents.length > 0,
-                usageCount: activeEvents.length,
-                enabledEventCount: activeEvents.length,
-                totalEventCount: (data.events || []).length
-            }));
+            const storylines = listStorylineRecords().map(({ id, data, activeEvents }) => {
+                const events = (data.events || [])
+                    .map((membership, index) => {
+                        const eventFile = path.join(ARCHIVE_EVENTS, membership.eventId, 'event.json');
+                        const event = fs.existsSync(eventFile) ? readJsonFile(eventFile) : {};
+                        return {
+                            eventId: membership.eventId,
+                            order: typeof membership.order === 'number' ? membership.order : index,
+                            enabled: membership.enabled !== false,
+                            milestoneId: membership.milestoneId || '',
+                            variant: membership.variant || '',
+                            year: event.year || '',
+                            title: event.title || {}
+                        };
+                    })
+                    .sort(
+                        (left, right) =>
+                            Number(left.order) - Number(right.order) || left.eventId.localeCompare(right.eventId)
+                    );
+                return {
+                    id,
+                    title: data.title || {},
+                    subtitle: data.subtitle || {},
+                    used: activeEvents.length > 0,
+                    usageCount: activeEvents.length,
+                    enabledEventCount: activeEvents.length,
+                    totalEventCount: (data.events || []).length,
+                    events
+                };
+            });
             sendJson(res, storylines);
         } catch (error) {
             sendError(res, error.message);

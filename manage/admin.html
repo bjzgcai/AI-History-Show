@@ -63,6 +63,31 @@
                     <span id="status" class="status"></span>
                 </div>
 
+                <section id="eventContext" class="event-context" hidden>
+                    <div class="event-context-main">
+                        <div class="event-context-kicker">
+                            <span id="eventContextYear"></span><span id="eventContextUsage"></span>
+                        </div>
+                        <h2 id="eventContextTitle">选择一个事件</h2>
+                        <p id="eventContextSummary" class="muted">从左侧故事线总览或事件列表进入编辑。</p>
+                    </div>
+                    <div id="eventContextTags" class="event-context-tags"></div>
+                </section>
+
+                <nav id="eventSectionNav" class="event-section-nav" aria-label="事件编辑分区" hidden>
+                    <button type="button" data-event-file="event.json">基本资料</button>
+                    <button type="button" data-event-section="people">人物关系</button>
+                    <div class="event-variant-nav" data-event-file="variants">
+                        <button type="button" data-event-variant-button>展示配置</button>
+                        <select id="eventVariantSelect" aria-label="选择展示配置" hidden></select>
+                    </div>
+                    <button type="button" data-event-file="claims.json">事实主张</button>
+                    <button type="button" data-event-file="sources.json">来源</button>
+                    <button type="button" data-event-file="assets.json">资产与音频</button>
+                    <button type="button" data-event-file="quizzes.json">Quiz</button>
+                    <button type="button" data-event-file="advanced">高级 JSON</button>
+                </nav>
+
                 <div id="emptyState" class="panel empty-state">
                     <div class="empty-icon">⌘</div>
                     <h2>选择左侧内容开始编辑</h2>
