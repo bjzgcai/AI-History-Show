@@ -12,9 +12,6 @@
                 "displaySummary": {
                     "anyOf": [{ "$ref": "shared.schema.json#/$defs/optionalLocalizedText" }, { "type": "null" }]
                 },
-                "displaySubtitle": {
-                    "anyOf": [{ "$ref": "shared.schema.json#/$defs/optionalLocalizedText" }, { "type": "null" }]
-                },
                 "displayDescription": {
                     "anyOf": [{ "$ref": "shared.schema.json#/$defs/optionalLocalizedText" }, { "type": "null" }]
                 },

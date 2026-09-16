@@ -766,7 +766,6 @@ function renderPresentationForm(presentation, prefix, title) {
     return `<section class="structured-section presentation-editor"><div class="section-heading"><div><h3>${escapeHtml(title)}</h3><p class="muted">常用展示字段已结构化；未接入的特殊模块仍可在高级 JSON 中维护。</p></div></div><div class="form-grid">
         ${localizedFields(presentationFieldPath(prefix, 'displayTitle'), presentation.displayTitle, { label: '展示标题', className: 'short' })}
         ${localizedFields(presentationFieldPath(prefix, 'displaySummary'), presentation.displaySummary, { label: '展示摘要', className: 'short' })}
-        ${localizedFields(presentationFieldPath(prefix, 'displaySubtitle'), presentation.displaySubtitle, { label: '展示副标题', className: 'short' })}
         ${localizedFields(presentationFieldPath(prefix, 'displayDescription'), presentation.displayDescription, { label: '展示描述', className: 'medium', span: true })}
         ${formSelect(
             '展示模式',
