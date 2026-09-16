@@ -145,6 +145,35 @@ a:focus-visible {
     font-size: 18px;
 }
 
+.mode-switch {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 3px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface-muted);
+}
+
+.mode-button {
+    min-height: 32px;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.mode-button:hover,
+.mode-button.is-active {
+    border-color: var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    box-shadow: 0 1px 3px rgb(23 32 29 / 8%);
+}
+
 .product-kicker,
 .player-eyebrow,
 .detail-eyebrow {
@@ -554,6 +583,12 @@ a:focus-visible {
     color: var(--amber);
 }
 
+.chip.pass {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+}
+
 .detail-actions {
     align-self: start;
     flex-wrap: wrap;
@@ -633,6 +668,192 @@ a:focus-visible {
 
 .tab-content {
     padding-top: 20px;
+}
+
+.pronunciation-guide {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 13px 15px;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    background: var(--surface);
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.pronunciation-guide strong {
+    flex: none;
+    color: var(--ink);
+}
+
+.pronunciation-sections {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 18px;
+    margin-top: 22px;
+}
+
+.pronunciation-environments {
+    display: grid;
+    gap: 18px;
+    margin-top: 22px;
+}
+
+.pronunciation-environment {
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface-muted);
+}
+
+.pronunciation-environment > .section-toolbar {
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+.pronunciation-context-list,
+.pronunciation-context-group {
+    display: grid;
+    gap: 10px;
+}
+
+.pronunciation-context-label {
+    color: var(--muted);
+    font-family: ui-monospace, 'SFMono-Regular', Consolas, monospace;
+    font-size: 10px;
+}
+
+.pronunciation-sample-section {
+    display: grid;
+    gap: 10px;
+}
+
+.pronunciation-sample-section .section-toolbar {
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+.pronunciation-sample-section .section-toolbar h2 {
+    margin: 0 0 3px;
+    font-size: 17px;
+}
+
+.pronunciation-sample-list {
+    display: grid;
+    gap: 8px;
+}
+
+.pronunciation-sample {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 16px;
+    padding: 15px 16px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+}
+
+.pronunciation-sample.is-selected {
+    border-color: var(--accent);
+    box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.pronunciation-sample.is-unavailable {
+    background: var(--surface-muted);
+}
+
+.pronunciation-sample-copy {
+    min-width: 0;
+}
+
+.pronunciation-sample-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
+
+.pronunciation-sample-meta .review-summary {
+    min-height: 24px;
+    padding: 3px 7px;
+}
+
+.pronunciation-sample-text {
+    margin: 10px 0 6px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.pronunciation-speech-text,
+.pronunciation-sample-source {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.pronunciation-speech-text {
+    padding: 7px 9px;
+    border-left: 2px solid var(--line-strong);
+    background: var(--surface-muted);
+}
+
+.pronunciation-sample-source {
+    display: block;
+    margin-top: 8px;
+    overflow-wrap: anywhere;
+    font-family: ui-monospace, 'SFMono-Regular', Consolas, monospace;
+    font-size: 10px;
+}
+
+.pronunciation-sample-actions {
+    align-self: center;
+}
+
+.pronunciation-repeat-switch {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    margin-bottom: 8px;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.repeat-button {
+    min-width: 24px;
+    min-height: 24px;
+    padding: 0 6px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: var(--surface);
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.repeat-button.is-active {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+}
+
+.pronunciation-sample-actions .button:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+}
+
+.pronunciation-unavailable {
+    padding: 10px 12px;
+    border: 1px solid #e2c18f;
+    border-radius: var(--radius);
+    background: var(--amber-soft);
+    color: var(--amber);
+    font-size: 12px;
+    line-height: 1.6;
 }
 
 .section-toolbar {
@@ -1115,7 +1336,7 @@ a:focus-visible {
 
 @media (max-width: 980px) {
     .topbar {
-        grid-template-columns: 220px minmax(0, 1fr) auto;
+        grid-template-columns: 220px auto minmax(0, 1fr) auto;
     }
 
     .release-summary .summary-stat:nth-child(2),
@@ -1182,6 +1403,14 @@ a:focus-visible {
         display: none;
     }
 
+    .mode-switch {
+        width: 100%;
+    }
+
+    .mode-button {
+        flex: 1;
+    }
+
     .topbar-actions {
         width: 100%;
         min-width: 0;
@@ -1244,6 +1473,35 @@ a:focus-visible {
     .source-item {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+
+    .pronunciation-guide {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .pronunciation-sections {
+        grid-template-columns: 1fr;
+    }
+
+    .pronunciation-sample {
+        grid-template-columns: 1fr;
+    }
+
+    .pronunciation-sample-actions {
+        align-self: stretch;
+        display: grid;
+        gap: 8px;
+    }
+
+    .pronunciation-repeat-switch {
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+
+    .pronunciation-sample-actions .button {
+        width: 100%;
     }
 
     .playerbar {

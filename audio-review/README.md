@@ -36,6 +36,15 @@ npm run start:audio-review
 浏览器地址中的末尾斜线，并把 `/audio-review/` 前缀剥离后转发到服务根路径。页面内部使用相对
 API 和音频 URL，因此根路径运行与子目录运行都可用。
 
+登录后可在顶部切换“事件音频”和“专用词发音”。专用词模式会为每个 qualification group 展示两类样本：
+
+- “只读专用词”：只播放经过 speech replacement 的专用词本身。
+- “结合专用词所在的句子”：播放专用词放回原句后的完整上下文。
+
+专用词样本沿用同一套 Token、SQLite 审核记录、通过/不通过和管理员撤销机制。音频文件由
+`audio:pronunciation:qualification-pack` 生成；如果 TTS 尚未生成 MP3，页面会保留文本和样本清单，
+但禁用播放与提交审核按钮。
+
 ## 数据与配置
 
 | 环境变量                       | 默认值                                        | 说明                                     |
@@ -86,12 +95,17 @@ Compose 将审核数据和候选音频只读挂载进容器，只允许 `/data` 
 
 - `POST /api/auth/session`：Token 登录并建立 HttpOnly Cookie 会话。
 - `GET /api/review-data`：获取带稳定候选 ID 的审核数据。
+- `GET /api/pronunciation-data`：获取专用词 qualification 分组、原句上下文和 term/context 样本。
 - `GET/POST /api/reviews`：读取汇总、追加审核记录。
 - `GET /api/reviews/export`：导出全部候选与完整审核历史，包括已停用候选和已撤销记录。
 - `GET /api/reviews/approved-manifest`：获取至少有一条有效通过记录的候选。
 - `GET /api/reviews/unapproved`：获取尚无有效通过记录的候选。
 - `POST /api/reviews/:id/invalidate`：管理员撤销错误审核记录。
 - `GET /api/audio/:audioId`：鉴权播放清单中的候选或连续预览音频，支持 HTTP Range。
+
+专用词资格样本默认读取 `.tmp/pronunciation-qualification/`，与常规事件音频的
+`resources/audio/generated/` 路径隔离。运行 `npm run audio:pronunciation:qualification-pack` 会准备每个上下文的
+term/context 双样本；加上 `--generate` 才会调用 TTS 生成 MP3。
 
 ## 审核统计技能
 

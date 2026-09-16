@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { renderScript, resolveTtsEnvFile } from './lib/audio-revision.mjs';
+import { renderScript, resolveTtsEnvFile, resolveVoiceProfile } from './lib/audio-revision.mjs';
 import { compileSpeechTurns, loadPronunciationGlossary } from './lib/pronunciation.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -209,26 +209,14 @@ function buildJobs(plan) {
     const glossaryBundle = loadPronunciationGlossary();
     for (const entry of plan.entries) {
         const planProfile = plan.voiceProfile || {};
-        const voiceProfile = {
-            ...planProfile,
-            voiceA: entry.voiceA || planProfile.voiceA,
-            voiceB: entry.voiceB || planProfile.voiceB,
-            voiceNarrator: entry.voiceNarrator || planProfile.voiceNarrator || entry.voiceB || planProfile.voiceB,
-            voiceSummary: entry.voiceSummary || planProfile.voiceSummary || entry.voiceB || planProfile.voiceB,
-            instructionA: entry.instructionA ?? planProfile.instructionA ?? '',
-            instructionB: entry.instructionB ?? planProfile.instructionB ?? '',
-            instructionNarrator:
-                entry.instructionNarrator ??
-                planProfile.instructionNarrator ??
-                entry.instructionB ??
-                planProfile.instructionB ??
-                '',
-            instructionSummary: entry.instructionSummary ?? planProfile.instructionSummary ?? '',
-            speedA: entry.speedA ?? planProfile.speedA ?? 1,
-            speedB: entry.speedB ?? planProfile.speedB ?? 1,
-            speedNarrator: entry.speedNarrator ?? planProfile.speedNarrator ?? entry.speedB ?? planProfile.speedB ?? 1,
-            speedSummary: entry.speedSummary ?? planProfile.speedSummary ?? 0.97
-        };
+        const voiceProfile = resolveVoiceProfile(
+            planProfile,
+            Object.fromEntries(
+                Object.keys(planProfile)
+                    .filter((key) => entry[key] !== undefined)
+                    .map((key) => [key, entry[key]])
+            )
+        );
         for (const key of ['voiceA', 'voiceB', 'voiceNarrator', 'voiceSummary']) {
             if (!voiceProfile[key]) fail(`Revision plan is missing ${key} for ${entry.eventId}/${entry.locale}`);
         }

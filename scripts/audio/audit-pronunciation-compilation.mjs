@@ -4,7 +4,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import prettier from 'prettier';
-import { ROOT, readJson, relativeToRoot, resolveFromRoot } from './lib/audio-revision.mjs';
+import {
+    ROOT,
+    entryOverrideFor,
+    readJson,
+    relativeToRoot,
+    resolveFromRoot,
+    resolveVoiceProfile
+} from './lib/audio-revision.mjs';
 import { compileSpeechTurns, loadPronunciationGlossary } from './lib/pronunciation.mjs';
 
 const AUDIO_REVISIONS_ROOT = path.join(ROOT, 'audio/revisions');
@@ -49,7 +56,9 @@ function loadRevisionContexts() {
                 provider: config.provider.name,
                 model: config.provider.model,
                 voiceProfilePath: config.voiceProfilePath,
-                voiceProfile: readJson(resolveFromRoot(config.voiceProfilePath))
+                voiceProfile: readJson(resolveFromRoot(config.voiceProfilePath)),
+                entryOverrides: config.entryOverrides || {},
+                eventIds: config.eventIds || null
             };
         });
 }
@@ -64,8 +73,9 @@ async function main() {
     let duplicateGenerationContextCount = 0;
     for (const revision of loadRevisionContexts()) {
         for (const filePath of listTurnFiles(revision.turnsRoot)) {
-            scannedTurnFileCount += 1;
             const data = readJson(filePath);
+            if (revision.eventIds && !revision.eventIds.includes(data.eventId)) continue;
+            scannedTurnFileCount += 1;
             const locale = data.locale || (/turns[\/]en[\/]/u.test(filePath) ? 'en' : 'zh');
             const sourceIdentity = {
                 eventId: data.eventId,
@@ -73,6 +83,10 @@ async function main() {
                 mode: data.mode || 'storyline',
                 turns: data.turns
             };
+            const voiceProfile = resolveVoiceProfile(
+                revision.voiceProfile,
+                entryOverrideFor(revision, { eventId: data.eventId, locale })
+            );
             const sourceSignature = crypto.createHash('sha256').update(JSON.stringify(sourceIdentity)).digest('hex');
             sourceSignatures.add(sourceSignature);
             const generationSignature = crypto
@@ -82,7 +96,7 @@ async function main() {
                         sourceSignature,
                         provider: revision.provider,
                         model: revision.model,
-                        voiceProfile: revision.voiceProfile
+                        voiceProfile
                     })
                 )
                 .digest('hex');
@@ -97,8 +111,8 @@ async function main() {
                 locale,
                 provider: revision.provider,
                 model: revision.model,
-                voiceForRole: (role) => voiceForRole(revision.voiceProfile, role),
-                instructionForRole: (role) => instructionForRole(revision.voiceProfile, role),
+                voiceForRole: (role) => voiceForRole(voiceProfile, role),
+                instructionForRole: (role) => instructionForRole(voiceProfile, role),
                 glossaryBundle
             });
             if (!compiled.replacements.length && !compiled.unqualified.length && !compiled.exclusions.length) continue;

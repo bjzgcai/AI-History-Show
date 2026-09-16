@@ -1,0 +1,42 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "issue-98-pronunciation-release-zh-v2-2026-09-16",
+    "label": "Issue #98 专用词发音正式候选（中文 v2）",
+    "comparisonKind": "previous",
+    "storylineOrderPolicy": "frozen-revision",
+    "outputRoot": "resources/audio/generated/pronunciation-fixes/issue-98-pronunciation-release-zh-v2-2026-09-16",
+    "turnsDir": "audio/revisions/ai100-remaining-original/turns/zh",
+    "voiceProfilePath": "audio/voices/zh-huopo-original.json",
+    "eventIds": [
+        "1966-eliza",
+        "1980-xcon-r1",
+        "ai100-2006-surf",
+        "ai100-2015-fast-r-cnn",
+        "ai100-2017-mask-r-cnn",
+        "ai100-2016-nas"
+    ],
+    "expectedEntryCount": 6,
+    "entryOverrides": {
+        "1980-xcon-r1": {
+            "instructionNarrator": "请严格按照输入文本逐字朗读完整句子，不要改写、删减、补充或改变任何其他词语。只有 XCON 读作英语词 ex-con；其余英文缩写、专有名词、标点停顿和句子内容都保持原样，整句要自然清楚，不要因为强调 XCON 而改变其他部分的发音。"
+        }
+    },
+    "provider": {
+        "name": "volc",
+        "model": "seed-tts-2.0",
+        "endpoint": "https://openspeech.bytedance.com/api/v3/plan/tts/unidirectional",
+        "envFile": ".secrets/tts.env",
+        "retries": 3
+    },
+    "specification": {
+        "modes": ["storyline"],
+        "locales": ["zh"],
+        "normalPauseMs": 450,
+        "summaryPauseMs": 550,
+        "minimumDurationSec": 40,
+        "maximumDurationSec": 150,
+        "targetIntegratedLoudnessLufs": -16,
+        "targetTruePeakDbtp": -1,
+        "targetLoudnessRangeLu": 11
+    }
+}

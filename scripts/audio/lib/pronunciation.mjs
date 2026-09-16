@@ -27,7 +27,11 @@ function isExcluded(entry, context) {
         (exclusion) =>
             exclusion.eventId === context.eventId &&
             exclusion.locale === context.locale &&
-            exclusion.turnIndex === context.turnIndex
+            exclusion.turnIndex === context.turnIndex &&
+            (!exclusion.provider || exclusion.provider === context.provider) &&
+            (!exclusion.model || exclusion.model === context.model) &&
+            (!exclusion.voice || exclusion.voice === context.voice) &&
+            (!exclusion.instructionSha256 || exclusion.instructionSha256 === context.instructionSha256)
     );
 }
 
@@ -85,7 +89,11 @@ function compilationForTurn(text, entries, context) {
                   (item) =>
                       item.eventId === context.eventId &&
                       item.locale === context.locale &&
-                      item.turnIndex === context.turnIndex
+                      item.turnIndex === context.turnIndex &&
+                      (!item.provider || item.provider === context.provider) &&
+                      (!item.model || item.model === context.model) &&
+                      (!item.voice || item.voice === context.voice) &&
+                      (!item.instructionSha256 || item.instructionSha256 === context.instructionSha256)
               )
             : null;
         if (exclusion) {
