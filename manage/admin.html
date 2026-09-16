@@ -32,10 +32,10 @@
                 </div>
                 <div class="sidebar-tools">
                     <select id="entityType">
-                        <option value="events">Events</option>
-                        <option value="storylines">Storylines</option>
-                        <option value="figures">Figures</option>
-                        <option value="audit">Figure Audit</option>
+                        <option value="events">事件</option>
+                        <option value="storylines">故事线</option>
+                        <option value="figures">人物 / 实体</option>
+                        <option value="audit">人物审计</option>
                     </select>
                     <button id="refreshBtn">刷新</button>
                 </div>
@@ -48,7 +48,7 @@
             </aside>
 
             <section class="workspace">
-                <div class="toolbar">
+                <div id="workspaceToolbar" class="toolbar">
                     <strong id="currentEntity">尚未选择实体</strong>
                     <select id="fileSelect" hidden></select>
                     <div id="eventDisplayActions" class="toolbar-event-display" hidden>
@@ -63,6 +63,22 @@
                     <span id="status" class="status"></span>
                 </div>
 
+                <nav id="eventSectionNav" class="event-section-nav" aria-label="事件编辑分区" hidden>
+                    <button type="button" data-event-section="basic" data-event-file="event.json">基本资料</button>
+                    <button type="button" data-event-section="people">人物关系</button>
+                    <div class="event-variant-nav" data-event-file="variants">
+                        <button type="button" data-event-section="presentation" data-event-variant-button>
+                            展示配置
+                        </button>
+                        <select id="eventVariantSelect" aria-label="选择展示配置" hidden></select>
+                    </div>
+                    <button type="button" data-event-section="claims" data-event-file="claims.json">事实主张</button>
+                    <button type="button" data-event-section="sources" data-event-file="sources.json">来源</button>
+                    <button type="button" data-event-section="assets" data-event-file="assets.json">资产与音频</button>
+                    <button type="button" data-event-section="quizzes" data-event-file="quizzes.json">Quiz</button>
+                    <button type="button" data-event-section="advanced" data-event-file="advanced">高级 JSON</button>
+                </nav>
+
                 <section id="eventContext" class="event-context" hidden>
                     <div class="event-context-main">
                         <div class="event-context-kicker">
@@ -73,20 +89,6 @@
                     </div>
                     <div id="eventContextTags" class="event-context-tags"></div>
                 </section>
-
-                <nav id="eventSectionNav" class="event-section-nav" aria-label="事件编辑分区" hidden>
-                    <button type="button" data-event-file="event.json">基本资料</button>
-                    <button type="button" data-event-section="people">人物关系</button>
-                    <div class="event-variant-nav" data-event-file="variants">
-                        <button type="button" data-event-variant-button>展示配置</button>
-                        <select id="eventVariantSelect" aria-label="选择展示配置" hidden></select>
-                    </div>
-                    <button type="button" data-event-file="claims.json">事实主张</button>
-                    <button type="button" data-event-file="sources.json">来源</button>
-                    <button type="button" data-event-file="assets.json">资产与音频</button>
-                    <button type="button" data-event-file="quizzes.json">Quiz</button>
-                    <button type="button" data-event-file="advanced">高级 JSON</button>
-                </nav>
 
                 <section id="storylineOverviewPanel" class="storyline-overview-panel" hidden>
                     <div class="storyline-overview-heading">
@@ -111,33 +113,37 @@
                 <div id="figurePanel" class="panel" hidden>
                     <div class="panel-heading">
                         <div>
-                            <h2>全局身份资料</h2>
-                            <p class="muted">标准名称与默认头像只在人物库维护；事件仅维护角色关系。</p>
+                            <h2>人物 / 实体资料</h2>
+                            <p class="muted">名称、实体类型和默认头像在人物库维护；事件页只维护角色关系。</p>
                         </div>
                         <span id="figureReviewBadge" class="badge"></span>
                     </div>
                     <div class="form-grid">
                         <label>稳定 ID<input id="figureId" autocomplete="off" /></label>
-                        <label
-                            >类型<select id="figureType">
-                                <option>person</option>
-                                <option>team</option>
-                                <option>organization</option>
-                                <option>product</option>
-                                <option>system</option>
+                        <label id="figureTypeField"
+                            >实体类型<select id="figureType">
+                                <option value="person">人物</option>
+                                <option value="team">团队</option>
+                                <option value="organization">机构</option>
+                                <option value="product">产品</option>
+                                <option value="system">系统</option>
                             </select></label
                         >
                         <label>英文标准名<input id="figureNameEn" /></label>
                         <label>中文标准名<input id="figureNameZh" /></label>
-                        <label class="span-2"
+                        <label id="figureAliasesField" class="span-2"
                             >Aliases（每行一个）<textarea id="figureAliases" class="short"></textarea>
                         </label>
-                        <label>英文消歧说明<textarea id="figureDisambiguationEn" class="short"></textarea></label>
-                        <label>中文消歧说明<textarea id="figureDisambiguationZh" class="short"></textarea></label>
-                        <label class="span-2"
+                        <label id="figureDisambiguationEnField"
+                            >英文消歧说明<textarea id="figureDisambiguationEn" class="short"></textarea>
+                        </label>
+                        <label id="figureDisambiguationZhField"
+                            >中文消歧说明<textarea id="figureDisambiguationZh" class="short"></textarea>
+                        </label>
+                        <label id="figureOrganizationsField" class="span-2"
                             >关联机构 ID（每行一个）<textarea id="figureOrganizations" class="short"></textarea>
                         </label>
-                        <label class="span-2"
+                        <label id="figureProfileSourcesField" class="span-2"
                             >Profile sources JSON 数组<textarea
                                 id="figureProfileSources"
                                 class="medium code"
@@ -145,8 +151,8 @@
                         </label>
                     </div>
 
-                    <h3>默认头像</h3>
-                    <div class="avatar-editor">
+                    <h3 id="figureAvatarHeading">默认头像</h3>
+                    <div id="figureAvatarEditor" class="avatar-editor">
                         <div class="avatar-preview">
                             <img id="avatarPreview" alt="默认头像预览" /><span id="avatarPlaceholder">无默认头像</span>
                         </div>
@@ -158,7 +164,7 @@
                             <label>中文来源名<input id="avatarSourceNameZh" /></label>
                             <label class="span-2">来源 URL<input id="avatarSourceUrl" /></label>
                             <label>Rights status<input id="avatarRightsStatus" /></label>
-                            <label>avatarStyle<input id="avatarStyle" /></label>
+                            <label id="avatarStyleField">avatarStyle<input id="avatarStyle" /></label>
                             <label>英文许可<textarea id="avatarLicenseEn" class="short"></textarea></label>
                             <label>中文许可<textarea id="avatarLicenseZh" class="short"></textarea></label>
                             <label>英文 usage<textarea id="avatarUsageEn" class="short"></textarea></label>

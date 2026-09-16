@@ -5,6 +5,7 @@ const state = {
     entities: [],
     entityId: '',
     file: '',
+    eventSection: 'basic',
     document: null,
     revision: '',
     creatingFigure: false,
@@ -43,6 +44,7 @@ const elements = Object.fromEntries(
         'editor',
         'status',
         'currentEntity',
+        'workspaceToolbar',
         'validationOutput',
         'figurePanel',
         'relationPanel',
@@ -114,7 +116,15 @@ const elements = Object.fromEntries(
         'imageImportLicenseZh',
         'imageImportUsageEn',
         'imageImportUsageZh',
-        'imageImportBtn'
+        'imageImportBtn',
+        'figureAliasesField',
+        'figureDisambiguationEnField',
+        'figureDisambiguationZhField',
+        'figureOrganizationsField',
+        'figureProfileSourcesField',
+        'figureAvatarHeading',
+        'figureAvatarEditor',
+        'avatarStyleField'
     ].map((id) => [id, document.getElementById(id)])
 );
 
@@ -209,10 +219,6 @@ function entityIndexKey(entity) {
     return '';
 }
 
-function isRelationshipFile() {
-    return state.type === 'events' && (state.file === 'event.json' || state.file.startsWith('variants/'));
-}
-
 function isVariantFile() {
     return state.type === 'events' && state.file.startsWith('variants/');
 }
@@ -222,12 +228,17 @@ function isStructuredEventFile() {
 }
 
 function updatePanelVisibility() {
+    const eventLoaded = state.type === 'events' && Boolean(state.document);
+    const structuredSections = new Set(['basic', 'presentation', 'claims', 'sources', 'assets', 'quizzes']);
     elements.figurePanel.hidden = state.type !== 'figures' || !state.document;
-    elements.relationPanel.hidden = !isRelationshipFile() || !state.document;
-    elements.structuredPanel.hidden = !isStructuredEventFile() || !state.document;
-    elements.eventPresentationPanel.hidden = state.type !== 'events' || !state.document || !state.eventPresentationOpen;
+    elements.relationPanel.hidden = !eventLoaded || state.eventSection !== 'people';
+    elements.structuredPanel.hidden = !eventLoaded || !structuredSections.has(state.eventSection);
+    elements.eventPresentationPanel.hidden =
+        !eventLoaded || state.eventSection !== 'presentation' || !state.eventPresentationOpen;
     elements.auditPanel.hidden = state.type !== 'audit';
-    elements.jsonPanel.hidden = state.type === 'audit' || !state.document;
+    elements.jsonPanel.hidden =
+        state.type === 'audit' || !state.document || (state.type === 'events' && state.eventSection !== 'advanced');
+    if (state.type === 'events') elements.jsonPanel.open = state.eventSection === 'advanced';
     elements.fileSelect.hidden = true;
     elements.eventContext.hidden = state.type !== 'events' || !state.entityId;
     elements.eventSectionNav.hidden = state.type !== 'events' || !state.document;
@@ -244,6 +255,27 @@ function updatePanelVisibility() {
     elements.saveValidateBtn.disabled = state.type !== 'audit' && !state.document;
 }
 
+function updateStickyOffsets() {
+    const header = document.querySelector('header');
+    const headerStyle = window.getComputedStyle(header);
+    const headerOffset = headerStyle.position === 'sticky' ? header.offsetHeight : 0;
+    const toolbarOffset = elements.workspaceToolbar.offsetHeight;
+    document.documentElement.style.setProperty('--event-nav-sticky-top', `${headerOffset + toolbarOffset}px`);
+}
+
+function eventSectionForFile(file) {
+    const normalizedFile = String(file || '');
+    return (
+        {
+            'event.json': 'basic',
+            'claims.json': 'claims',
+            'sources.json': 'sources',
+            'assets.json': 'assets',
+            'quizzes.json': 'quizzes'
+        }[normalizedFile] || (normalizedFile.startsWith('variants/') ? 'presentation' : 'basic')
+    );
+}
+
 function eventFileLabel(file) {
     if (file === 'event.json') return '基本资料';
     if (file === 'claims.json') return '事实主张';
@@ -254,12 +286,49 @@ function eventFileLabel(file) {
     return file;
 }
 
-function selectEventFile(file) {
+function selectEventFile(file, section = eventSectionForFile(file)) {
     const entity = state.entities.find((item) => item.id === state.entityId);
     if (!entity || !entity.files.includes(file)) return;
+    state.eventSection = section;
     state.file = file;
     elements.fileSelect.value = file;
     loadEntity().catch((error) => setStatus(error.message, 'bad'));
+}
+
+async function activateEventSection(section) {
+    if (state.type !== 'events' || !state.entityId) return;
+    const entity = state.entities.find((item) => item.id === state.entityId);
+    const files = (entity && entity.files) || [];
+    let file = state.file;
+    if (section === 'basic' || section === 'people') file = 'event.json';
+    else if (section === 'presentation') {
+        const variantFiles = files.filter((candidate) => candidate.startsWith('variants/'));
+        file = elements.eventVariantSelect.value || variantFiles[0] || 'event.json';
+    } else if (section === 'advanced') {
+        state.eventSection = 'advanced';
+        updatePanelVisibility();
+        renderEventSectionNav();
+        return;
+    } else {
+        file = {
+            claims: 'claims.json',
+            sources: 'sources.json',
+            assets: 'assets.json',
+            quizzes: 'quizzes.json'
+        }[section];
+    }
+    if (!file || !files.includes(file)) return;
+    state.eventSection = section;
+    if (state.file !== file || !state.document) {
+        state.file = file;
+        elements.fileSelect.value = file;
+        await loadEntity();
+        return;
+    }
+    updatePanelVisibility();
+    renderEventSectionNav();
+    renderStructuredEditor();
+    if (section === 'people') await renderRelations();
 }
 
 function renderEventContext() {
@@ -301,28 +370,35 @@ function renderEventSectionNav() {
     const entity = state.entities.find((item) => item.id === state.entityId);
     const files = (entity && entity.files) || [];
     const variantFiles = files.filter((file) => file.startsWith('variants/'));
-    const hasDefaultPresentation = Boolean(state.document.defaultPresentation);
     const variantNav = elements.eventSectionNav.querySelector('[data-event-file="variants"]');
     const variantSelect = elements.eventVariantSelect;
-    if (variantNav) variantNav.hidden = variantFiles.length === 0 && !hasDefaultPresentation;
+    if (variantNav) variantNav.hidden = !files.includes('event.json') && variantFiles.length === 0;
     if (variantSelect) {
-        variantSelect.innerHTML = variantFiles
-            .map((file) => `<option value="${escapeHtml(file)}">${escapeHtml(eventFileLabel(file))}</option>`)
+        const presentationFiles = [
+            ...(files.includes('event.json') ? [['event.json', '默认展示配置']] : []),
+            ...variantFiles.map((file) => [file, eventFileLabel(file)])
+        ];
+        variantSelect.innerHTML = presentationFiles
+            .map(([file, label]) => `<option value="${escapeHtml(file)}">${escapeHtml(label)}</option>`)
             .join('');
-        variantSelect.value = state.file.startsWith('variants/') ? state.file : variantFiles[0] || '';
-        variantSelect.hidden = variantFiles.length < 2;
+        variantSelect.value =
+            state.eventSection === 'presentation' && presentationFiles.some(([file]) => file === state.file)
+                ? state.file
+                : presentationFiles[0]?.[0] || '';
+        variantSelect.hidden = presentationFiles.length < 2;
     }
-    for (const button of elements.eventSectionNav.querySelectorAll('button[data-event-file]')) {
+    for (const button of elements.eventSectionNav.querySelectorAll('button[data-event-section]')) {
         const target = button.dataset.eventFile;
-        const isAdvanced = target === 'advanced';
-        if (target === 'variants') continue;
-        button.hidden = isAdvanced ? false : !files.includes(target);
-        button.classList.toggle('is-active', !isAdvanced && state.file === target);
+        const section = button.dataset.eventSection;
+        if (section === 'presentation') {
+            button.hidden = false;
+        } else if (section === 'people') {
+            button.hidden = !files.includes('event.json');
+        } else {
+            button.hidden = target === 'advanced' ? false : !files.includes(target);
+        }
+        button.classList.toggle('is-active', state.eventSection === section);
     }
-    const variantButton = elements.eventSectionNav.querySelector('[data-event-variant-button]');
-    if (variantButton) variantButton.classList.toggle('is-active', state.file.startsWith('variants/'));
-    const peopleButton = elements.eventSectionNav.querySelector('[data-event-section="people"]');
-    if (peopleButton) peopleButton.classList.remove('is-active');
     elements.eventSectionNav.hidden = false;
 }
 
@@ -379,6 +455,12 @@ function entityMatchesSearch(entity, query) {
         return text.includes(query);
     }
     const id = typeof entity === 'string' ? entity : entity.id;
+    if (state.type === 'events') {
+        return [id, entity.year, localize(entity.title, 'zh'), localize(entity.title, 'en')]
+            .join(' ')
+            .toLowerCase()
+            .includes(query);
+    }
     if (state.type !== 'storylines') return id.toLowerCase().includes(query);
     const searchable = [
         id,
@@ -451,7 +533,8 @@ function renderEntities() {
             let detail = '';
             let preview = '';
             if (state.type === 'events') {
-                detail = `${entity.files.length} files · ${entity.variants.length} variants · ${entity.usageCount} 个启用 Storyline`;
+                title = localize(entity.title, 'zh') || localize(entity.title, 'en') || id;
+                detail = `${entity.year || '未设置年份'} · ${id} · ${entity.usageCount} 个故事线`;
             }
             if (state.type === 'figures') {
                 title = `${localize(entity.name, 'zh') || localize(entity.name, 'en')} · ${id}`;
@@ -505,6 +588,7 @@ async function refresh() {
     state.figureAssets = [];
     state.figureUsage = null;
     state.eventDisplayTargets = [];
+    if (state.type === 'events') state.eventSection = 'basic';
     elements.currentEntity.textContent = '尚未选择实体';
     elements.editor.value = '';
     elements.structuredEditor.innerHTML = '';
@@ -542,6 +626,7 @@ function selectEntity(id) {
             .map((file) => `<option value="${escapeHtml(file)}">${escapeHtml(file)}</option>`)
             .join('');
         state.file = files.includes('event.json') ? 'event.json' : files[0] || '';
+        state.eventSection = eventSectionForFile(state.file);
         elements.fileSelect.value = state.file;
         state.eventDisplayTargets = [];
     } else {
@@ -580,7 +665,10 @@ function localizedValue(value, locale) {
 function formInput(label, path, value, options = {}) {
     const type = options.type || 'text';
     const format = options.format || 'text';
-    const className = options.span ? ' class="span-2"' : '';
+    const classes = [options.span ? 'span-2' : '', type === 'checkbox' ? 'structured-checkbox-field' : ''].filter(
+        Boolean
+    );
+    const className = classes.length ? ` class="${classes.join(' ')}"` : '';
     const checked = type === 'checkbox' && value === true ? ' checked' : '';
     const disabled = options.disabled ? ' disabled' : '';
     const inputValue = type === 'checkbox' ? '' : ` value="${escapeHtml(value ?? '')}"`;
@@ -608,6 +696,10 @@ function localizedFields(prefix, value, options = {}) {
     return `${formTextarea(`${options.label || '内容'}（中文）`, `${prefix}.zh`, localizedValue(value, 'zh'), { className: options.className || 'short', span: options.span })}${formTextarea(`${options.label || '内容'}（英文）`, `${prefix}.en`, localizedValue(value, 'en'), { className: options.className || 'short', span: options.span })}`;
 }
 
+function hasLocalizedValue(value) {
+    return Boolean(localizedValue(value, 'zh').trim() || localizedValue(value, 'en').trim());
+}
+
 function renderEventForm(event) {
     const location = event.location || {};
     const coordinates = Array.isArray(location.coordinates) ? location.coordinates : [];
@@ -617,9 +709,9 @@ function renderEventForm(event) {
         ${formInput('事件 ID', 'id', event.id, { disabled: true })}
         ${formInput('年份', 'year', event.year, { format: 'year' })}
         ${formInput('日期', 'date', event.date)}
-        ${formInput('canonical 事件', 'canonical', event.canonical, { type: 'checkbox', format: 'boolean' })}
+        ${formInput('正式事件', 'canonical', event.canonical, { type: 'checkbox', format: 'boolean' })}
         ${localizedFields('title', event.title, { label: '标题', className: 'short' })}
-        ${localizedFields('summary', event.summary, { label: '摘要', className: 'short' })}
+        ${hasLocalizedValue(event.summary) ? localizedFields('summary', event.summary, { label: '摘要', className: 'short' }) : ''}
         ${localizedFields('description', event.description, { label: '描述', className: 'medium', span: true })}
         ${formInput('地区 ID', 'location.regionId', location.regionId)}
         ${formInput('地点（中文）', 'location.place.zh', localizedValue(location.place, 'zh'))}
@@ -630,7 +722,6 @@ function renderEventForm(event) {
         ${formInput('经度', 'location.coordinates.1', coordinates[1], { format: 'number' })}
         ${formTextarea('主题 ID（每行一个）', 'topics', (event.topics || []).join('\n'), { className: 'short', format: 'lines' })}
         ${formTextarea('成就类型 ID（每行一个）', 'achievementTypeIds', (event.achievementTypeIds || []).join('\n'), { className: 'short', format: 'lines' })}
-        ${formTextarea('关联事件 ID（每行一个）', 'relatedEventIds', (event.relatedEventIds || []).join('\n'), { className: 'short', format: 'lines' })}
     </div></section><section class="structured-section"><h3>审核状态</h3><div class="form-grid">
         ${formSelect('状态', 'review.status', review.status || 'draft', [
             ['draft', 'draft'],
@@ -639,10 +730,8 @@ function renderEventForm(event) {
             ['disputed', 'disputed'],
             ['deprecated', 'deprecated']
         ])}
-        ${formInput('审核日期', 'review.reviewedAt', review.reviewedAt)}
-        ${formInput('审核人', 'review.reviewer', review.reviewer)}
         ${localizedFields('review.notes', notes, { label: '审核备注', className: 'short' })}
-    </div></section>${renderPresentationForm(event.defaultPresentation || {}, 'defaultPresentation', '默认展示配置')}`;
+    </div></section>`;
 }
 
 function presentationFieldPath(prefix, path) {
@@ -949,26 +1038,39 @@ function renderCollectionEditor(file, data) {
 }
 
 function renderStructuredEditor() {
-    if (!isStructuredEventFile() || !state.document) {
+    if (!isStructuredEventFile() || !state.document || ['people', 'advanced'].includes(state.eventSection)) {
         elements.structuredEditor.innerHTML = '';
         elements.structuredTitle.textContent = '结构化编辑';
         elements.structuredSummary.textContent = '当前文件暂未接入结构化编辑器，请使用高级 JSON 模式。';
         elements.structuredFieldHint.textContent = '';
         return;
     }
-    const config =
-        state.file === 'event.json'
-            ? { title: '事件基本资料', summary: '通过表单维护事件事实、地点和审核信息。' }
-            : collectionConfig(state.file) || { title: '展示配置', summary: '维护当前 storyline 的展示覆盖字段。' };
+    const isPresentation = state.eventSection === 'presentation';
+    const config = isPresentation
+        ? { title: '展示配置', summary: '维护当前事件或 Storyline 的展示内容。' }
+        : state.file === 'event.json'
+          ? { title: '事件基本资料', summary: '通过表单维护事件事实、地点和审核信息。' }
+          : collectionConfig(state.file) || { title: '展示配置', summary: '维护当前 storyline 的展示覆盖字段。' };
     elements.structuredTitle.textContent = config.title;
     elements.structuredSummary.textContent = config.summary;
     elements.structuredFieldHint.textContent = state.file;
-    elements.structuredEditor.innerHTML =
-        state.file === 'event.json'
-            ? renderEventForm(state.document)
-            : collectionConfig(state.file)
-              ? renderCollectionEditor(state.file, state.document)
-              : renderPresentationForm(state.document, '', '故事线展示覆盖');
+    if (isPresentation) {
+        elements.structuredEditor.innerHTML =
+            state.file === 'event.json'
+                ? renderPresentationForm(
+                      state.document.defaultPresentation || {},
+                      'defaultPresentation',
+                      '默认展示配置'
+                  )
+                : renderPresentationForm(state.document, '', '故事线展示覆盖');
+    } else {
+        elements.structuredEditor.innerHTML =
+            state.file === 'event.json'
+                ? renderEventForm(state.document)
+                : collectionConfig(state.file)
+                  ? renderCollectionEditor(state.file, state.document)
+                  : '';
+    }
 }
 
 function structuredFieldValue(target) {
@@ -1126,7 +1228,7 @@ async function loadEntity() {
         await renderFigureUsage();
         await renderAdvancedFigureTools();
     }
-    if (isRelationshipFile()) await renderRelations();
+    if (state.type === 'events' && state.eventSection === 'people') await renderRelations();
     setStatus(`已加载 ${state.entityId}${state.file ? ` / ${state.file}` : ''}`, 'ok');
 }
 
@@ -1179,6 +1281,15 @@ function renderFigureForm() {
     setValue('reviewNotesZh', localize(review.notes, 'zh'));
     elements.figureReviewBadge.textContent = review.status || 'draft';
     elements.figureReviewBadge.className = `badge ${review.status || 'draft'}`;
+    elements.figureAliasesField.hidden = !(figure.aliases || []).length;
+    const hasDisambiguation = hasLocalizedValue(figure.disambiguation);
+    elements.figureDisambiguationEnField.hidden = !hasDisambiguation;
+    elements.figureDisambiguationZhField.hidden = !hasDisambiguation;
+    elements.figureOrganizationsField.hidden = !(figure.organizationIds || []).length;
+    elements.figureProfileSourcesField.hidden = !(figure.profileSources || []).length;
+    elements.figureAvatarHeading.hidden = !avatar.path;
+    elements.figureAvatarEditor.hidden = !avatar.path;
+    elements.avatarStyleField.hidden = !avatar.avatarStyle;
     renderAvatarPreview();
 }
 
@@ -1812,6 +1923,20 @@ function relationFigure(figureId) {
     );
 }
 
+function figureTypeLabel(type) {
+    return (
+        {
+            person: '人物',
+            team: '团队',
+            organization: '机构',
+            product: '产品',
+            system: '系统'
+        }[type] ||
+        type ||
+        '人物'
+    );
+}
+
 async function populateAvatarSelect(select, relation, figureId) {
     const assets = await api(
         `/api/archive/figure-assets?figureId=${encodeURIComponent(figureId)}&eventId=${encodeURIComponent(state.entityId)}`
@@ -1847,15 +1972,14 @@ async function renderRelations() {
             const figure = relationFigure(relation.figureId);
             return `<div class="relation-row" data-index="${index}">
               <div class="relation-title">
-                <div><strong>${escapeHtml(localize(figure.name, 'zh') || localize(figure.name, 'en'))}</strong><div class="muted">${escapeHtml(relation.figureId)} · ${escapeHtml(figure.type)}</div></div>
-                <div class="relation-actions"><button class="relation-open-button" data-action="open-figure">打开 Figure</button><button data-action="up" title="上移">↑</button><button data-action="down" title="下移">↓</button><button data-action="remove">移除</button></div>
+                <div><strong>${escapeHtml(localize(figure.name, 'zh') || localize(figure.name, 'en'))}</strong><div class="muted">${escapeHtml(relation.figureId)} · ${escapeHtml(figureTypeLabel(figure.type))}</div></div>
+                <div class="relation-actions"><button class="relation-open-button" data-action="open-figure">打开人物资料</button><button data-action="up" title="上移">↑</button><button data-action="down" title="下移">↓</button><button data-action="remove">移除</button></div>
               </div>
               <div class="form-grid">
-                <label>人物身份<select data-field="figureId">${state.figureOptions.map((option) => `<option value="${escapeHtml(option.id)}"${option.id === relation.figureId ? ' selected' : ''}>${escapeHtml(figureLabel(option))}</option>`).join('')}</select></label>
                 <label class="role-field">英文角色<input data-field="role.en" value="${escapeHtml(localize(relation.role, 'en'))}"></label>
                 <label class="role-field">中文角色<input data-field="role.zh" value="${escapeHtml(localize(relation.role, 'zh'))}"></label>
                 <label class="span-2">事件头像<select data-field="avatarAssetId"><option value="">正在加载资产...</option></select></label>
-                <label>avatarStyle<input data-field="avatarStyle" value="${escapeHtml(relation.avatarStyle || '')}"></label>
+                ${relation.avatarStyle ? `<label>头像样式<input data-field="avatarStyle" value="${escapeHtml(relation.avatarStyle)}"></label>` : ''}
                 <div class="checks span-2"><label><input type="checkbox" data-field="primary"${relation.primary === true ? ' checked' : ''}>主要人物</label>${isVariantFile() ? `<label><input type="checkbox" data-field="useDefaultAvatar"${relation.useDefaultAvatar === true ? ' checked' : ''}>强制使用全局默认头像</label>` : ''}</div>
               </div>
             </div>`;
@@ -1876,10 +2000,7 @@ async function renderRelations() {
 function updateRelationField(index, field, target) {
     const relation = currentRelations()[index];
     if (!relation) return;
-    if (field === 'figureId') {
-        relation.figureId = target.value;
-        delete relation.avatarAssetId;
-    } else if (field === 'role.en' || field === 'role.zh') {
+    if (field === 'role.en' || field === 'role.zh') {
         if (!relation.role) relation.role = { en: '', zh: '' };
         relation.role[field.endsWith('.en') ? 'en' : 'zh'] = target.value;
     } else if (field === 'primary' || field === 'useDefaultAvatar') {
@@ -2119,43 +2240,11 @@ elements.fileSelect.addEventListener('change', () => {
 });
 elements.eventSectionNav.addEventListener('click', (event) => {
     const sectionButton = event.target.closest('[data-event-section]');
-    if (sectionButton?.dataset.eventSection === 'people') {
-        elements.relationPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        sectionButton.classList.add('is-active');
-        return;
-    }
-    const button = event.target.closest('[data-event-file]');
-    if (!button || button.dataset.eventFile === 'advanced') {
-        if (event.target.closest('[data-event-file="advanced"]')) {
-            elements.jsonPanel.open = true;
-            elements.jsonPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-        return;
-    }
-    if (button.dataset.eventFile === 'variants') {
-        const file = elements.eventVariantSelect.value;
-        if (file) {
-            selectEventFile(file);
-            return;
-        }
-        if (state.file !== 'event.json') {
-            selectEventFile('event.json');
-            window.setTimeout(
-                () =>
-                    document
-                        .querySelector('.presentation-editor')
-                        ?.scrollIntoView({ behavior: 'smooth', block: 'start' }),
-                350
-            );
-            return;
-        }
-        document.querySelector('.presentation-editor')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        return;
-    }
-    selectEventFile(button.dataset.eventFile);
+    if (!sectionButton) return;
+    activateEventSection(sectionButton.dataset.eventSection).catch((error) => setStatus(error.message, 'bad'));
 });
 elements.eventVariantSelect.addEventListener('change', () => {
-    if (elements.eventVariantSelect.value) selectEventFile(elements.eventVariantSelect.value);
+    if (elements.eventVariantSelect.value) selectEventFile(elements.eventVariantSelect.value, 'presentation');
 });
 document
     .getElementById('refreshBtn')
@@ -2203,11 +2292,15 @@ elements.openEventDisplayBtn.addEventListener('click', () => {
 });
 elements.eventDisplayTarget.addEventListener('change', updateEventPresentationControls);
 elements.inspectEventPresentationBtn.addEventListener('click', () => {
-    const target = selectedEventPresentationTarget();
-    if (target) {
-        renderEventPresentationPanel(target);
-        updatePanelVisibility();
-    }
+    activateEventSection('presentation')
+        .then(() => {
+            const target = selectedEventPresentationTarget();
+            if (!target) return;
+            renderEventPresentationPanel(target);
+            updatePanelVisibility();
+            renderEventSectionNav();
+        })
+        .catch((error) => setStatus(error.message, 'bad'));
 });
 elements.restorePresentationInheritanceBtn.addEventListener('click', () =>
     restorePresentationInheritance().catch((error) => setStatus(error.message, 'bad'))
@@ -2304,7 +2397,8 @@ elements.editor.addEventListener('change', () => {
     try {
         state.document = JSON.parse(elements.editor.value);
         if (state.type === 'figures') renderFigureForm();
-        if (isRelationshipFile()) renderRelations().catch((error) => setStatus(error.message, 'bad'));
+        if (state.type === 'events' && state.eventSection === 'people')
+            renderRelations().catch((error) => setStatus(error.message, 'bad'));
         renderStructuredEditor();
         setStatus('JSON 已同步到结构化编辑器', 'ok');
     } catch (error) {
@@ -2377,7 +2471,6 @@ elements.relationRows.addEventListener('change', (event) => {
     const field = event.target.dataset.field;
     if (!row || !field) return;
     updateRelationField(Number(row.dataset.index), field, event.target);
-    if (field === 'figureId') renderRelations().catch((error) => setStatus(error.message, 'bad'));
 });
 elements.relationRows.addEventListener('click', (event) => {
     const button = event.target.closest('button[data-action]');
@@ -2400,6 +2493,14 @@ elements.relationRows.addEventListener('click', (event) => {
     syncEditor();
     renderRelations().catch((error) => setStatus(error.message, 'bad'));
 });
+
+window.addEventListener('resize', updateStickyOffsets);
+if ('ResizeObserver' in window) {
+    const stickyObserver = new window.ResizeObserver(updateStickyOffsets);
+    stickyObserver.observe(document.querySelector('header'));
+    stickyObserver.observe(elements.workspaceToolbar);
+}
+updateStickyOffsets();
 
 elements.auditCategories.addEventListener('click', (event) => {
     const figureButton = event.target.closest('[data-open-figure]');

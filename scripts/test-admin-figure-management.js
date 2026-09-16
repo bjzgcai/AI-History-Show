@@ -447,7 +447,7 @@ try {
     const adminCss = fs.readFileSync(path.join(projectRoot, 'manage', 'admin.css'), 'utf8');
     const adminJs = fs.readFileSync(path.join(projectRoot, 'manage', 'admin.js'), 'utf8');
     const adminServer = fs.readFileSync(path.join(projectRoot, 'manage', 'server.js'), 'utf8');
-    assert.match(adminHtml, /全局身份资料/);
+    assert.match(adminHtml, /人物 \/ 实体资料/);
     assert.match(adminHtml, /人物关系/);
     assert.match(adminHtml, /人物审计/);
     assert.match(adminHtml, /身份合并/);
