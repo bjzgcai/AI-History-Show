@@ -182,7 +182,7 @@ function buildMilestone(root, storyline, ref, figureRegistry, mediaStorageConfig
     for (const asset of imageAssets) imageMeta[asset.path] = assetImageMeta(asset);
 
     const title = pickLocalized(variant.displayTitle, event.title);
-    const subtitle = pickLocalized(variant.displaySubtitle, variant.displaySummary || storyline.title);
+    const subtitle = pickLocalized(variant.displaySummary, storyline.title);
     const description = pickLocalized(variant.displayDescription, event.description || event.summary);
 
     const milestone = {

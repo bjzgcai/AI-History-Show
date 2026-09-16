@@ -11,6 +11,7 @@ const { archiveStorylines, milestones } = require('../milestones-data.js');
 const sourcePurposeTaxonomy = require('../archive/taxonomies/source-purposes.json');
 const sourceSchema = require('../archive/schemas/source.schema.json');
 const sourceTypeTaxonomy = require('../archive/taxonomies/source-types.json');
+const variantSchema = require('../archive/schemas/variant.schema.json');
 const { resolveEffectivePresentation } = require('./archive-presentation.js');
 const { compileArchive, resolveAudioUrl } = require('./archive-compiler.js');
 const { createArchiveSchemaValidator } = require('./archive-schema-validator.js');
@@ -135,9 +136,18 @@ assert.ok(
 console.log('PASS normalized source display and portrait provenance checks');
 
 const compilerSource = fs.readFileSync(path.join(__dirname, 'archive-compiler.js'), 'utf8');
+const adminSource = fs.readFileSync(path.join(__dirname, '..', 'manage', 'admin.js'), 'utf8');
 for (const legacyInput of ['manage/event-fusions.js', 'manage/events.js', 'manage/catalog.js']) {
     assert.equal(compilerSource.includes(legacyInput), false, `production compiler must not read ${legacyInput}`);
 }
+assert.equal(
+    Object.hasOwn(variantSchema.$defs.presentation.properties, 'displaySubtitle'),
+    false,
+    'variant schema must not accept the retired displaySubtitle field'
+);
+assert.equal(compilerSource.includes('variant.displaySubtitle'), false, 'compiler must not read displaySubtitle');
+assert.equal(adminSource.includes('displaySubtitle'), false, 'admin editor must not expose displaySubtitle');
+assert.equal(adminSource.includes('展示副标题'), false, 'admin editor must not label a display subtitle field');
 for (const storylineFile of fs.readdirSync(path.join(__dirname, '..', 'archive', 'storylines'))) {
     if (!storylineFile.endsWith('.json')) continue;
     const storyline = JSON.parse(

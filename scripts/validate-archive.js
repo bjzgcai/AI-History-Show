@@ -685,6 +685,9 @@ function validatePresentation(eventId, filePath, presentation, sourceIds, assets
         addError(filePath, `${options.label || 'presentation'} must be an object.`);
         return null;
     }
+    if (Object.hasOwn(presentation, 'displaySubtitle')) {
+        addError(filePath, 'displaySubtitle has been retired; use displaySummary or the storyline subtitle.');
+    }
     const presentationId = options.presentationId || path.basename(filePath, '.json');
     const storylineId = options.storylineId || presentation.storylineId || presentationId;
     if (storylineId === 'bench-council-ai100' && presentation.displaySummary) {
