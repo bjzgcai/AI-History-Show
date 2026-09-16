@@ -21,6 +21,8 @@ const state = {
     taskRunning: false
 };
 
+const structuredEventFiles = new Set(['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json']);
+
 const elements = Object.fromEntries(
     [
         'entityType',
@@ -44,6 +46,11 @@ const elements = Object.fromEntries(
         'validationOutput',
         'figurePanel',
         'relationPanel',
+        'structuredPanel',
+        'structuredTitle',
+        'structuredSummary',
+        'structuredFieldHint',
+        'structuredEditor',
         'auditPanel',
         'jsonPanel',
         'figureUsage',
@@ -196,9 +203,14 @@ function isVariantFile() {
     return state.type === 'events' && state.file.startsWith('variants/');
 }
 
+function isStructuredEventFile() {
+    return state.type === 'events' && (structuredEventFiles.has(state.file) || isVariantFile());
+}
+
 function updatePanelVisibility() {
     elements.figurePanel.hidden = state.type !== 'figures' || !state.document;
     elements.relationPanel.hidden = !isRelationshipFile() || !state.document;
+    elements.structuredPanel.hidden = !isStructuredEventFile() || !state.document;
     elements.eventPresentationPanel.hidden = state.type !== 'events' || !state.document || !state.eventPresentationOpen;
     elements.auditPanel.hidden = state.type !== 'audit';
     elements.jsonPanel.hidden = state.type === 'audit' || !state.document;
@@ -333,6 +345,7 @@ async function refresh() {
     state.eventDisplayTargets = [];
     elements.currentEntity.textContent = '尚未选择实体';
     elements.editor.value = '';
+    elements.structuredEditor.innerHTML = '';
     if (state.type === 'events') state.entities = await api('/api/archive/events');
     if (state.type === 'storylines') state.entities = await api('/api/archive/storylines');
     if (state.type === 'figures') {
@@ -376,6 +389,540 @@ function syncEditor() {
     elements.editor.value = state.document ? JSON.stringify(state.document, null, 2) : '';
 }
 
+function cloneJson(value) {
+    return value === undefined ? undefined : JSON.parse(JSON.stringify(value));
+}
+
+function setPath(value, path, nextValue) {
+    const keys = String(path).split('.');
+    const lastKey = keys.pop();
+    let current = value;
+    for (const key of keys) {
+        if (current[key] === undefined || current[key] === null || typeof current[key] !== 'object') {
+            current[key] = /^\d+$/.test(key) ? [] : {};
+        }
+        current = current[key];
+    }
+    current[lastKey] = nextValue;
+}
+
+function localizedValue(value, locale) {
+    return localize(value, locale);
+}
+
+function formInput(label, path, value, options = {}) {
+    const type = options.type || 'text';
+    const format = options.format || 'text';
+    const className = options.span ? ' class="span-2"' : '';
+    const checked = type === 'checkbox' && value === true ? ' checked' : '';
+    const disabled = options.disabled ? ' disabled' : '';
+    const inputValue = type === 'checkbox' ? '' : ` value="${escapeHtml(value ?? '')}"`;
+    return `<label${className}>${escapeHtml(label)}<input type="${type}" data-structured-field="${escapeHtml(path)}" data-structured-format="${format}"${inputValue}${checked}${disabled}></label>`;
+}
+
+function formTextarea(label, path, value, options = {}) {
+    const className = options.span ? ' class="span-2"' : '';
+    const textareaClass = options.className || '';
+    return `<label${className}>${escapeHtml(label)}<textarea class="${textareaClass}" data-structured-field="${escapeHtml(path)}" data-structured-format="${escapeHtml(options.format || 'text')}">${escapeHtml(value ?? '')}</textarea></label>`;
+}
+
+function formSelect(label, path, value, options, config = {}) {
+    const className = config.span ? ' class="span-2"' : '';
+    const selectedOptions = options
+        .map(
+            ([optionValue, optionLabel]) =>
+                `<option value="${escapeHtml(optionValue)}"${String(optionValue) === String(value ?? '') ? ' selected' : ''}>${escapeHtml(optionLabel)}</option>`
+        )
+        .join('');
+    return `<label${className}>${escapeHtml(label)}<select data-structured-field="${escapeHtml(path)}" data-structured-format="${escapeHtml(config.format || 'text')}">${selectedOptions}</select></label>`;
+}
+
+function localizedFields(prefix, value, options = {}) {
+    return `${formTextarea(`${options.label || '内容'}（中文）`, `${prefix}.zh`, localizedValue(value, 'zh'), { className: options.className || 'short', span: options.span })}${formTextarea(`${options.label || '内容'}（英文）`, `${prefix}.en`, localizedValue(value, 'en'), { className: options.className || 'short', span: options.span })}`;
+}
+
+function renderEventForm(event) {
+    const location = event.location || {};
+    const coordinates = Array.isArray(location.coordinates) ? location.coordinates : [];
+    const review = event.review || {};
+    const notes = review.notes || {};
+    return `<section class="structured-section"><div class="section-heading"><div><h3>事件基本信息</h3><p class="muted">维护事件事实和页面基础资料。人物关系仍在下方单独编辑。</p></div></div><div class="form-grid">
+        ${formInput('事件 ID', 'id', event.id, { disabled: true })}
+        ${formInput('年份', 'year', event.year, { format: 'year' })}
+        ${formInput('日期', 'date', event.date)}
+        ${formInput('canonical 事件', 'canonical', event.canonical, { type: 'checkbox', format: 'boolean' })}
+        ${localizedFields('title', event.title, { label: '标题', className: 'short' })}
+        ${localizedFields('summary', event.summary, { label: '摘要', className: 'short' })}
+        ${localizedFields('description', event.description, { label: '描述', className: 'medium', span: true })}
+        ${formInput('地区 ID', 'location.regionId', location.regionId)}
+        ${formInput('地点（中文）', 'location.place.zh', localizedValue(location.place, 'zh'))}
+        ${formInput('地点（英文）', 'location.place.en', localizedValue(location.place, 'en'))}
+        ${formInput('国家（中文）', 'location.country.zh', localizedValue(location.country, 'zh'))}
+        ${formInput('国家（英文）', 'location.country.en', localizedValue(location.country, 'en'))}
+        ${formInput('纬度', 'location.coordinates.0', coordinates[0], { format: 'number' })}
+        ${formInput('经度', 'location.coordinates.1', coordinates[1], { format: 'number' })}
+        ${formTextarea('主题 ID（每行一个）', 'topics', (event.topics || []).join('\n'), { className: 'short', format: 'lines' })}
+        ${formTextarea('成就类型 ID（每行一个）', 'achievementTypeIds', (event.achievementTypeIds || []).join('\n'), { className: 'short', format: 'lines' })}
+        ${formTextarea('关联事件 ID（每行一个）', 'relatedEventIds', (event.relatedEventIds || []).join('\n'), { className: 'short', format: 'lines' })}
+    </div></section><section class="structured-section"><h3>审核状态</h3><div class="form-grid">
+        ${formSelect('状态', 'review.status', review.status || 'draft', [
+            ['draft', 'draft'],
+            ['needs-source', 'needs-source'],
+            ['verified', 'verified'],
+            ['disputed', 'disputed'],
+            ['deprecated', 'deprecated']
+        ])}
+        ${formInput('审核日期', 'review.reviewedAt', review.reviewedAt)}
+        ${formInput('审核人', 'review.reviewer', review.reviewer)}
+        ${localizedFields('review.notes', notes, { label: '审核备注', className: 'short' })}
+    </div></section>${renderPresentationForm(event.defaultPresentation || {}, 'defaultPresentation', '默认展示配置')}`;
+}
+
+function presentationFieldPath(prefix, path) {
+    return prefix ? `${prefix}.${path}` : path;
+}
+
+function renderCommentarySections(sections, prefix) {
+    const items = Array.isArray(sections) ? sections : [];
+    return `<div class="presentation-sections"><div class="subsection-heading"><div><strong>Commentary sections</strong><p class="muted">每个段落维护双语正文和来源绑定。</p></div><button type="button" data-presentation-action="add-section">新增段落</button></div>${
+        items.length
+            ? items
+                  .map((section, index) => {
+                      const label = section.label || {};
+                      const html = section.html || {};
+                      return `<article class="presentation-section-item" data-presentation-section-index="${index}"><div class="collection-item-heading"><div><strong>段落 ${index + 1}</strong><span class="muted">${escapeHtml(section.id || '未命名')}</span></div><div class="collection-actions"><button type="button" data-presentation-action="up-section">↑</button><button type="button" data-presentation-action="down-section">↓</button><button type="button" class="danger" data-presentation-action="remove-section">移除</button></div></div><div class="form-grid">
+            ${formInput('段落 ID', presentationFieldPath(prefix, `commentarySections.${index}.id`), section.id)}
+            ${formInput('中文标题', presentationFieldPath(prefix, `commentarySections.${index}.label.zh`), localizedValue(label, 'zh'))}
+            ${formInput('英文标题', presentationFieldPath(prefix, `commentarySections.${index}.label.en`), localizedValue(label, 'en'))}
+            ${formTextarea('中文正文', presentationFieldPath(prefix, `commentarySections.${index}.html.zh`), localizedValue(html, 'zh'), { className: 'medium' })}
+            ${formTextarea('英文正文', presentationFieldPath(prefix, `commentarySections.${index}.html.en`), localizedValue(html, 'en'), { className: 'medium' })}
+            ${formTextarea('来源 ID（每行一个）', presentationFieldPath(prefix, `commentarySections.${index}.sourceIds`), collectionOptions(section.sourceIds).join('\n'), { className: 'short', format: 'lines', span: true })}
+        </div></article>`;
+                  })
+                  .join('')
+            : '<div class="collection-empty">暂无 commentary section。</div>'
+    }</div>`;
+}
+
+function renderPresentationForm(presentation, prefix, title) {
+    const review = presentation.review || {};
+    const reviewNotes = review.notes || {};
+    return `<section class="structured-section presentation-editor"><div class="section-heading"><div><h3>${escapeHtml(title)}</h3><p class="muted">常用展示字段已结构化；未接入的特殊模块仍可在高级 JSON 中维护。</p></div></div><div class="form-grid">
+        ${localizedFields(presentationFieldPath(prefix, 'displayTitle'), presentation.displayTitle, { label: '展示标题', className: 'short' })}
+        ${localizedFields(presentationFieldPath(prefix, 'displaySummary'), presentation.displaySummary, { label: '展示摘要', className: 'short' })}
+        ${localizedFields(presentationFieldPath(prefix, 'displaySubtitle'), presentation.displaySubtitle, { label: '展示副标题', className: 'short' })}
+        ${localizedFields(presentationFieldPath(prefix, 'displayDescription'), presentation.displayDescription, { label: '展示描述', className: 'medium', span: true })}
+        ${formSelect(
+            '展示模式',
+            presentationFieldPath(prefix, 'presentationMode'),
+            presentation.presentationMode || 'preserve-legacy',
+            [
+                ['preserve-legacy', 'preserve-legacy'],
+                ['archive', 'archive']
+            ]
+        )}
+        ${formInput('视觉类型', presentationFieldPath(prefix, 'visual'), presentation.visual)}
+        ${formInput('首图资产 ID', presentationFieldPath(prefix, 'overviewImageAssetId'), presentation.overviewImageAssetId)}
+        ${formInput('Quiz ID', presentationFieldPath(prefix, 'quizId'), presentation.quizId)}
+        ${formTextarea('强调项 ID（每行一个）', presentationFieldPath(prefix, 'emphasis'), collectionOptions(presentation.emphasis).join('\n'), { className: 'short', format: 'lines' })}
+        ${formTextarea('资产 ID（每行一个）', presentationFieldPath(prefix, 'assetIds'), collectionOptions(presentation.assetIds).join('\n'), { className: 'short', format: 'lines' })}
+        ${formTextarea('来源 ID（每行一个）', presentationFieldPath(prefix, 'sourceIds'), collectionOptions(presentation.sourceIds).join('\n'), { className: 'short', format: 'lines' })}
+        ${formTextarea('Claim ID（每行一个）', presentationFieldPath(prefix, 'claimIds'), collectionOptions(presentation.claimIds).join('\n'), { className: 'short', format: 'lines' })}
+        ${formSelect('审核状态', presentationFieldPath(prefix, 'review.status'), review.status || 'draft', [
+            ['draft', 'draft'],
+            ['needs-source', 'needs-source'],
+            ['verified', 'verified'],
+            ['disputed', 'disputed'],
+            ['deprecated', 'deprecated']
+        ])}
+        ${formInput('审核人', presentationFieldPath(prefix, 'review.reviewer'), review.reviewer)}
+        ${localizedFields(presentationFieldPath(prefix, 'review.notes'), reviewNotes, { label: '审核备注', className: 'short' })}
+    </div>${renderCommentarySections(presentation.commentarySections, prefix)}</section>`;
+}
+
+function collectionOptions(value, fallback = []) {
+    return Array.isArray(value) ? value : fallback;
+}
+
+function collectionField(label, path, value, options = {}) {
+    if (options.kind === 'textarea')
+        return formTextarea(label, path, value, {
+            className: options.className || 'short',
+            format: options.format,
+            span: options.span
+        });
+    if (options.kind === 'select')
+        return formSelect(label, path, value, options.options || [], { span: options.span, format: options.format });
+    return formInput(label, path, value, { format: options.format, type: options.type, span: options.span });
+}
+
+function sourceItemForm(item, index) {
+    const source = item || {};
+    const notes = source.notes || {};
+    return `<article class="collection-item" data-collection-index="${index}"><div class="collection-item-heading"><div><strong>来源 ${index + 1}</strong><span class="muted">${escapeHtml(source.id || '未命名')}</span></div><div class="collection-actions"><button type="button" data-collection-action="up">↑</button><button type="button" data-collection-action="down">↓</button><button type="button" data-collection-action="duplicate">复制</button><button type="button" class="danger" data-collection-action="remove">移除</button></div></div><div class="form-grid">
+        ${collectionField('来源 ID', 'id', source.id)}
+        ${collectionField('类型', 'type', source.type, {
+            kind: 'select',
+            options: [
+                ['paper', 'paper'],
+                ['paper-page', 'paper-page'],
+                ['book', 'book'],
+                ['documentation', 'documentation'],
+                ['code', 'code'],
+                ['project-page', 'project-page'],
+                ['official-page', 'official-page'],
+                ['profile', 'profile'],
+                ['archive', 'archive'],
+                ['article', 'article'],
+                ['news', 'news'],
+                ['report', 'report'],
+                ['image-source', 'image-source'],
+                ['dataset', 'dataset'],
+                ['statement', 'statement'],
+                ['thesis', 'thesis'],
+                ['internal-record', 'internal-record']
+            ]
+        })}
+        ${localizedFields('label', source.label, { label: '标签', className: 'short' })}
+        ${localizedFields('title', source.title, { label: '标题', className: 'short' })}
+        ${collectionField('作者（每行一个）', 'authors', collectionOptions(source.authors).join('\n'), { kind: 'textarea', format: 'lines' })}
+        ${collectionField('年份', 'year', source.year)}
+        ${collectionField('语言', 'language', source.language)}
+        ${collectionField('URL', 'url', source.url, { span: true })}
+        ${collectionField('DOI', 'doi', source.doi)}
+        ${collectionField('档案地址', 'archiveUrl', source.archiveUrl)}
+        ${collectionField('用途', 'purpose', source.purpose, {
+            kind: 'select',
+            options: [
+                ['core-evidence', 'core-evidence'],
+                ['precursor', 'precursor'],
+                ['follow-up', 'follow-up'],
+                ['alternate-access', 'alternate-access'],
+                ['background', 'background'],
+                ['historical-context', 'historical-context'],
+                ['biography', 'biography'],
+                ['image-provenance', 'image-provenance'],
+                ['implementation', 'implementation'],
+                ['dataset-access', 'dataset-access'],
+                ['contemporary-reporting', 'contemporary-reporting'],
+                ['official-statement', 'official-statement'],
+                ['reporting', 'reporting'],
+                ['bibliographic-verification', 'bibliographic-verification'],
+                ['migration-only', 'migration-only']
+            ]
+        })}
+        ${collectionField('可靠性', 'reliability', source.reliability, {
+            kind: 'select',
+            options: [
+                ['primary', 'primary'],
+                ['secondary', 'secondary'],
+                ['tertiary', 'tertiary'],
+                ['reference-only', 'reference-only']
+            ]
+        })}
+        ${localizedFields('notes', notes, { label: '备注', className: 'short', span: true })}
+    </div></article>`;
+}
+
+function claimItemForm(item, index) {
+    const claim = item || {};
+    return `<article class="collection-item" data-collection-index="${index}"><div class="collection-item-heading"><div><strong>事实主张 ${index + 1}</strong><span class="muted">${escapeHtml(claim.id || '未命名')}</span></div><div class="collection-actions"><button type="button" data-collection-action="up">↑</button><button type="button" data-collection-action="down">↓</button><button type="button" data-collection-action="duplicate">复制</button><button type="button" class="danger" data-collection-action="remove">移除</button></div></div><div class="form-grid">
+        ${collectionField('主张 ID', 'id', claim.id)}
+        ${collectionField('重要级别', 'importance', claim.importance, {
+            kind: 'select',
+            options: [
+                ['core', 'core'],
+                ['context', 'context'],
+                ['detail', 'detail'],
+                ['display', 'display']
+            ]
+        })}
+        ${localizedFields('text', claim.text, { label: '事实内容', className: 'medium', span: true })}
+        ${collectionField('来源 ID（每行一个）', 'sourceIds', collectionOptions(claim.sourceIds).join('\n'), { kind: 'textarea', format: 'lines' })}
+        ${collectionField('状态', 'status', claim.status || 'draft', {
+            kind: 'select',
+            options: [
+                ['draft', 'draft'],
+                ['needs-source', 'needs-source'],
+                ['verified', 'verified'],
+                ['disputed', 'disputed'],
+                ['deprecated', 'deprecated']
+            ]
+        })}
+    </div></article>`;
+}
+
+function assetItemForm(item, index) {
+    const asset = item || {};
+    const rights = asset.rights || {};
+    const license = rights.license || {};
+    const usage = rights.usage || {};
+    const storage = asset.storage || {};
+    return `<article class="collection-item" data-collection-index="${index}"><div class="collection-item-heading"><div><strong>资产 ${index + 1}</strong><span class="muted">${escapeHtml(asset.id || '未命名')}</span></div><div class="collection-actions"><button type="button" data-collection-action="up">↑</button><button type="button" data-collection-action="down">↓</button><button type="button" data-collection-action="duplicate">复制</button><button type="button" class="danger" data-collection-action="remove">移除</button></div></div><div class="form-grid">
+        ${collectionField('资产 ID', 'id', asset.id)}
+        ${collectionField('类型', 'type', asset.type, {
+            kind: 'select',
+            options: [
+                ['image', 'image'],
+                ['svg', 'svg'],
+                ['gif', 'gif'],
+                ['audio', 'audio'],
+                ['video', 'video']
+            ]
+        })}
+        ${collectionField('角色', 'role', asset.role)}
+        ${collectionField('资源路径', 'path', asset.path, { span: true })}
+        ${localizedFields('caption', asset.caption, { label: '标题', className: 'short' })}
+        ${localizedFields('subcaption', asset.subcaption, { label: '副标题', className: 'short' })}
+        ${collectionField('语言', 'language', asset.language)}
+        ${collectionField('来源 ID', 'sourceId', asset.sourceId)}
+        ${collectionField('来源 ID（多个）', 'sourceIds', collectionOptions(asset.sourceIds).join('\n'), { kind: 'textarea', format: 'lines' })}
+        ${collectionField('人物 ID（每行一个）', 'figureIds', collectionOptions(asset.figureIds).join('\n'), { kind: 'textarea', format: 'lines' })}
+        ${collectionField('delivery URL', 'deliveryUrl', asset.deliveryUrl, { span: true })}
+        ${collectionField('使用位置（每行一个）', 'usage', collectionOptions(asset.usage).join('\n'), { kind: 'textarea', format: 'lines' })}
+        ${collectionField('版权状态', 'rights.status', rights.status)}
+        ${localizedFields('rights.license', license, { label: '许可', className: 'short' })}
+        ${localizedFields('rights.usage', usage, { label: '使用说明', className: 'short' })}
+        <div class="asset-storage-fields span-2"><h4>音频 / 视频存储（按需填写）</h4><div class="form-grid">
+            ${collectionField('存储 profile', 'storage.profileId', storage.profileId)}
+            ${collectionField('provider', 'storage.provider', storage.provider)}
+            ${collectionField('bucket', 'storage.bucket', storage.bucket)}
+            ${collectionField('object key', 'storage.objectKey', storage.objectKey)}
+            ${collectionField('content type', 'storage.contentType', storage.contentType)}
+            ${collectionField('public URL', 'storage.publicUrl', storage.publicUrl, { span: true })}
+        </div></div>
+    </div></article>`;
+}
+
+function quizItemForm(item, index) {
+    const quiz = item || {};
+    const options = Array.isArray(quiz.options) ? quiz.options : [];
+    const answerOptions = options.map((option, optionIndex) => [
+        String(optionIndex),
+        `选项 ${optionIndex + 1} · ${localizedValue(option.text || option, 'zh') || localizedValue(option.text || option, 'en') || '未填写'}`
+    ]);
+    return `<article class="collection-item" data-collection-index="${index}"><div class="collection-item-heading"><div><strong>Quiz ${index + 1}</strong><span class="muted">${escapeHtml(quiz.id || '未命名')}</span></div><div class="collection-actions"><button type="button" data-collection-action="up">↑</button><button type="button" data-collection-action="down">↓</button><button type="button" data-collection-action="duplicate">复制</button><button type="button" class="danger" data-collection-action="remove">移除</button></div></div><div class="form-grid">
+        ${collectionField('Quiz ID', 'id', quiz.id)}
+        ${localizedFields('question', quiz.question, { label: '题目', className: 'medium', span: true })}
+        ${localizedFields('explanation', quiz.explanation, { label: '解析', className: 'short', span: true })}
+        ${collectionField('来源 ID（每行一个）', 'sourceIds', collectionOptions(quiz.sourceIds).join('\n'), { kind: 'textarea', format: 'lines' })}
+        ${collectionField('资产 ID（每行一个）', 'assetIds', collectionOptions(quiz.assetIds).join('\n'), { kind: 'textarea', format: 'lines' })}
+        ${formSelect('正确答案', 'answer', String(Number.isInteger(quiz.answer) ? quiz.answer : 0), answerOptions, { format: 'number' })}
+        <div class="quiz-options span-2"><div class="subsection-heading"><strong>选项</strong><button type="button" data-quiz-action="add-option">添加选项</button></div>${options
+            .map((option, optionIndex) => {
+                const optionText = option && typeof option === 'object' && option.text ? option.text : option;
+                const optionPath =
+                    option && typeof option === 'object' && option.text
+                        ? `options.${optionIndex}.text`
+                        : `options.${optionIndex}`;
+                return `<div class="quiz-option-row" data-option-index="${optionIndex}"><span class="muted">${optionIndex + 1}</span>${formInput('中文', `${optionPath}.zh`, localizedValue(optionText, 'zh'))}${formInput('英文', `${optionPath}.en`, localizedValue(optionText, 'en'))}<button type="button" data-quiz-action="remove-option">移除</button></div>`;
+            })
+            .join('')}</div>
+    </div></article>`;
+}
+
+function collectionConfig(file) {
+    return {
+        'sources.json': {
+            title: '来源维护',
+            summary: '编辑来源记录、可靠性和用途，引用关系会原样保留。',
+            create: () => ({
+                id: '',
+                type: 'article',
+                label: { zh: '', en: '' },
+                title: { zh: '', en: '' },
+                purpose: 'background',
+                reliability: 'secondary'
+            }),
+            render: sourceItemForm
+        },
+        'claims.json': {
+            title: '事实主张',
+            summary: '将可追溯事实拆成独立主张，并绑定来源。',
+            create: () => ({ id: '', importance: 'context', text: { zh: '', en: '' }, sourceIds: [], status: 'draft' }),
+            render: claimItemForm
+        },
+        'assets.json': {
+            title: '资产与音频',
+            summary: '维护图片、音频、视频元数据和展示顺序。',
+            create: () => ({
+                id: '',
+                type: 'image',
+                role: 'supporting',
+                path: '',
+                caption: { zh: '', en: '' },
+                rights: { status: 'needs-source', license: { zh: '', en: '' }, usage: { zh: '', en: '' } }
+            }),
+            render: assetItemForm
+        },
+        'quizzes.json': {
+            title: 'Quiz 题库',
+            summary: '维护双语题目、选项、正确答案和关联资料。',
+            create: () => ({
+                id: '',
+                question: { zh: '', en: '' },
+                options: [
+                    { zh: '', en: '' },
+                    { zh: '', en: '' }
+                ],
+                answer: 0,
+                explanation: { zh: '', en: '' },
+                sourceIds: [],
+                assetIds: []
+            }),
+            render: quizItemForm
+        }
+    }[file];
+}
+
+function renderCollectionEditor(file, data) {
+    const config = collectionConfig(file);
+    const items = Array.isArray(data) ? data : [];
+    return `<section class="structured-section"><div class="collection-toolbar"><div><h3>${escapeHtml(config.title)}</h3><p class="muted">${escapeHtml(config.summary)}</p></div><button type="button" class="primary" data-collection-action="add">新增条目</button></div><div class="collection-list">${items.length ? items.map(config.render).join('') : '<div class="collection-empty">暂无条目，点击“新增条目”开始维护。</div>'}</div></section>`;
+}
+
+function renderStructuredEditor() {
+    if (!isStructuredEventFile() || !state.document) {
+        elements.structuredEditor.innerHTML = '';
+        elements.structuredTitle.textContent = '结构化编辑';
+        elements.structuredSummary.textContent = '当前文件暂未接入结构化编辑器，请使用高级 JSON 模式。';
+        elements.structuredFieldHint.textContent = '';
+        return;
+    }
+    const config =
+        state.file === 'event.json'
+            ? { title: '事件基本资料', summary: '通过表单维护事件事实、地点和审核信息。' }
+            : collectionConfig(state.file) || { title: '展示配置', summary: '维护当前 storyline 的展示覆盖字段。' };
+    elements.structuredTitle.textContent = config.title;
+    elements.structuredSummary.textContent = config.summary;
+    elements.structuredFieldHint.textContent = state.file;
+    elements.structuredEditor.innerHTML =
+        state.file === 'event.json'
+            ? renderEventForm(state.document)
+            : collectionConfig(state.file)
+              ? renderCollectionEditor(state.file, state.document)
+              : renderPresentationForm(state.document, '', '故事线展示覆盖');
+}
+
+function structuredFieldValue(target) {
+    const format = target.dataset.structuredFormat || 'text';
+    if (target.type === 'checkbox' || format === 'boolean') return target.checked;
+    if (format === 'lines') return splitLines(target.value);
+    if (format === 'number' || format === 'year') {
+        if (target.value.trim() === '') return format === 'year' ? '' : undefined;
+        const parsed = Number(target.value);
+        return Number.isNaN(parsed) ? target.value : parsed;
+    }
+    return target.value;
+}
+
+function updateStructuredField(target) {
+    if (!state.document || !target.dataset.structuredField) return;
+    const nextValue = structuredFieldValue(target);
+    setPath(state.document, target.dataset.structuredField, nextValue);
+    syncEditor();
+    setStatus('已修改结构化字段，尚未保存', '');
+}
+
+function moveCollectionItem(index, offset) {
+    if (!Array.isArray(state.document)) return;
+    const nextIndex = index + offset;
+    if (nextIndex < 0 || nextIndex >= state.document.length) return;
+    [state.document[index], state.document[nextIndex]] = [state.document[nextIndex], state.document[index]];
+}
+
+function handleCollectionAction(target) {
+    const action = target.dataset.collectionAction;
+    const config = collectionConfig(state.file);
+    if (!config || !state.document) return;
+    if (action === 'add') state.document.push(config.create());
+    else {
+        const item = target.closest('[data-collection-index]');
+        if (!item) return;
+        const index = Number(item.dataset.collectionIndex);
+        if (action === 'remove') state.document.splice(index, 1);
+        if (action === 'duplicate') state.document.splice(index + 1, 0, cloneJson(state.document[index]));
+        if (action === 'up') moveCollectionItem(index, -1);
+        if (action === 'down') moveCollectionItem(index, 1);
+    }
+    syncEditor();
+    renderStructuredEditor();
+    setStatus('已修改条目，尚未保存', '');
+}
+
+function addQuizOption(item) {
+    const quiz = state.document[item];
+    if (!quiz || !Array.isArray(quiz.options)) return;
+    quiz.options.push({ zh: '', en: '' });
+    syncEditor();
+    renderStructuredEditor();
+}
+
+function removeQuizOption(item, optionIndex) {
+    const quiz = state.document[item];
+    if (!quiz || !Array.isArray(quiz.options) || quiz.options.length <= 2) return;
+    quiz.options.splice(optionIndex, 1);
+    if (Number.isInteger(quiz.answer) && quiz.answer >= quiz.options.length) quiz.answer = quiz.options.length - 1;
+    syncEditor();
+    renderStructuredEditor();
+}
+
+function updateCollectionField(target) {
+    const item = target.closest('[data-collection-index]');
+    if (!item || !Array.isArray(state.document)) return;
+    const index = Number(item.dataset.collectionIndex);
+    if (!Number.isInteger(index) || !state.document[index] || typeof state.document[index] !== 'object') return;
+    const value = structuredFieldValue(target);
+    setPath(state.document[index], target.dataset.structuredField, value);
+    syncEditor();
+    setStatus('已修改结构化字段，尚未保存', '');
+}
+
+function presentationDocument() {
+    if (state.file === 'event.json') {
+        if (!state.document.defaultPresentation || typeof state.document.defaultPresentation !== 'object') {
+            state.document.defaultPresentation = {};
+        }
+        return state.document.defaultPresentation;
+    }
+    return state.document;
+}
+
+function movePresentationSection(index, offset) {
+    const presentation = presentationDocument();
+    if (!Array.isArray(presentation.commentarySections)) presentation.commentarySections = [];
+    const nextIndex = index + offset;
+    if (nextIndex < 0 || nextIndex >= presentation.commentarySections.length) return;
+    [presentation.commentarySections[index], presentation.commentarySections[nextIndex]] = [
+        presentation.commentarySections[nextIndex],
+        presentation.commentarySections[index]
+    ];
+}
+
+function handlePresentationAction(target) {
+    const action = target.dataset.presentationAction;
+    const presentation = presentationDocument();
+    if (!Array.isArray(presentation.commentarySections)) presentation.commentarySections = [];
+    if (action === 'add-section') {
+        presentation.commentarySections.push({
+            id: `section-${presentation.commentarySections.length + 1}`,
+            label: { zh: '', en: '' },
+            html: { zh: '', en: '' },
+            sourceIds: []
+        });
+    } else {
+        const section = target.closest('[data-presentation-section-index]');
+        if (!section) return;
+        const index = Number(section.dataset.presentationSectionIndex);
+        if (action === 'remove-section') presentation.commentarySections.splice(index, 1);
+        if (action === 'up-section') movePresentationSection(index, -1);
+        if (action === 'down-section') movePresentationSection(index, 1);
+    }
+    syncEditor();
+    renderStructuredEditor();
+    setStatus('已修改展示段落，尚未保存', '');
+}
+
 async function loadEntity() {
     if (!state.entityId) {
         setStatus('请先选择实体', 'bad');
@@ -401,6 +948,7 @@ async function loadEntity() {
     syncEditor();
     elements.currentEntity.textContent = `${state.type === 'events' ? `${state.entityId} / ${state.file}` : state.entityId}`;
     updatePanelVisibility();
+    renderStructuredEditor();
     if (state.type === 'events') await renderEventDisplayActions();
     if (state.type === 'figures') {
         renderFigureForm();
@@ -1527,9 +2075,56 @@ elements.editor.addEventListener('change', () => {
         state.document = JSON.parse(elements.editor.value);
         if (state.type === 'figures') renderFigureForm();
         if (isRelationshipFile()) renderRelations().catch((error) => setStatus(error.message, 'bad'));
+        renderStructuredEditor();
         setStatus('JSON 已同步到结构化编辑器', 'ok');
     } catch (error) {
         setStatus(`JSON 无效：${error.message}`, 'bad');
+    }
+});
+
+elements.structuredEditor.addEventListener('input', (event) => {
+    const target = event.target.closest('[data-structured-field]');
+    if (!target) return;
+    if (target.closest('[data-collection-index]')) updateCollectionField(target);
+    else updateStructuredField(target);
+});
+elements.structuredEditor.addEventListener('change', (event) => {
+    const target = event.target.closest('[data-structured-field]');
+    if (target) {
+        if (target.closest('[data-collection-index]')) updateCollectionField(target);
+        else updateStructuredField(target);
+        return;
+    }
+    const actionTarget = event.target.closest('[data-quiz-action]');
+    if (!actionTarget) return;
+    const item = actionTarget.closest('[data-collection-index]');
+    if (actionTarget.dataset.quizAction === 'remove-option') {
+        removeQuizOption(
+            Number(item.dataset.collectionIndex),
+            Number(actionTarget.closest('[data-option-index]').dataset.optionIndex)
+        );
+    }
+});
+elements.structuredEditor.addEventListener('click', (event) => {
+    const presentationAction = event.target.closest('[data-presentation-action]');
+    if (presentationAction) {
+        handlePresentationAction(presentationAction);
+        return;
+    }
+    const collectionAction = event.target.closest('[data-collection-action]');
+    if (collectionAction) {
+        handleCollectionAction(collectionAction);
+        return;
+    }
+    const quizAction = event.target.closest('[data-quiz-action]');
+    if (!quizAction) return;
+    const item = quizAction.closest('[data-collection-index]');
+    if (quizAction.dataset.quizAction === 'add-option') addQuizOption(Number(item.dataset.collectionIndex));
+    if (quizAction.dataset.quizAction === 'remove-option') {
+        removeQuizOption(
+            Number(item.dataset.collectionIndex),
+            Number(quizAction.closest('[data-option-index]').dataset.optionIndex)
+        );
     }
 });
 

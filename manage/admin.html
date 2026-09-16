@@ -271,11 +271,26 @@
                     <div id="relationRows"></div>
                 </div>
 
+                <div id="structuredPanel" class="panel structured-panel" hidden>
+                    <div class="panel-heading">
+                        <div>
+                            <h2 id="structuredTitle">结构化编辑</h2>
+                            <p id="structuredSummary" class="muted">
+                                通过表单维护 Archive 内容，保存时仍写回当前 JSON 文件。
+                            </p>
+                        </div>
+                        <span id="structuredFieldHint" class="badge"></span>
+                    </div>
+                    <div id="structuredEditor"></div>
+                </div>
+
                 <div id="eventPresentationPanel" class="panel" hidden>
                     <div class="panel-heading">
                         <div>
                             <h2>展示继承</h2>
-                            <p id="eventPresentationSummary" class="muted">选择 Storyline 查看默认值、覆盖值与最终展示内容。</p>
+                            <p id="eventPresentationSummary" class="muted">
+                                选择 Storyline 查看默认值、覆盖值与最终展示内容。
+                            </p>
                         </div>
                     </div>
                     <pre id="eventPresentationPreview" class="presentation-preview"></pre>
