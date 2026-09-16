@@ -51,6 +51,14 @@ const elements = Object.fromEntries(
         'structuredSummary',
         'structuredFieldHint',
         'structuredEditor',
+        'eventContext',
+        'eventContextYear',
+        'eventContextUsage',
+        'eventContextTitle',
+        'eventContextSummary',
+        'eventContextTags',
+        'eventSectionNav',
+        'eventVariantSelect',
         'auditPanel',
         'jsonPanel',
         'figureUsage',
@@ -214,7 +222,9 @@ function updatePanelVisibility() {
     elements.eventPresentationPanel.hidden = state.type !== 'events' || !state.document || !state.eventPresentationOpen;
     elements.auditPanel.hidden = state.type !== 'audit';
     elements.jsonPanel.hidden = state.type === 'audit' || !state.document;
-    elements.fileSelect.hidden = state.type !== 'events';
+    elements.fileSelect.hidden = true;
+    elements.eventContext.hidden = state.type !== 'events' || !state.entityId;
+    elements.eventSectionNav.hidden = state.type !== 'events' || !state.document;
     elements.eventDisplayActions.hidden = state.type !== 'events' || !state.document;
     elements.newFigureBtn.hidden = state.type !== 'figures';
     elements.loadBtn.hidden = state.type === 'audit';
@@ -226,6 +236,88 @@ function updatePanelVisibility() {
     elements.saveValidateBtn.disabled = state.type !== 'audit' && !state.document;
 }
 
+function eventFileLabel(file) {
+    if (file === 'event.json') return '基本资料';
+    if (file === 'claims.json') return '事实主张';
+    if (file === 'sources.json') return '来源';
+    if (file === 'assets.json') return '资产与音频';
+    if (file === 'quizzes.json') return 'Quiz';
+    if (file.startsWith('variants/')) return `展示覆盖 · ${file.slice('variants/'.length, -'.json'.length)}`;
+    return file;
+}
+
+function selectEventFile(file) {
+    const entity = state.entities.find((item) => item.id === state.entityId);
+    if (!entity || !entity.files.includes(file)) return;
+    state.file = file;
+    elements.fileSelect.value = file;
+    loadEntity().catch((error) => setStatus(error.message, 'bad'));
+}
+
+function renderEventContext() {
+    if (state.type !== 'events' || !state.entityId) {
+        elements.eventContext.hidden = true;
+        return;
+    }
+    const entity = state.entities.find((item) => item.id === state.entityId) || {};
+    const title = localize(entity.title, 'zh') || localize(entity.title, 'en') || state.entityId;
+    const rawDescription =
+        localize(entity.summary, 'zh') ||
+        localize(entity.summary, 'en') ||
+        localize(entity.description, 'zh') ||
+        localize(entity.description, 'en') ||
+        '事件内容维护';
+    const description = rawDescription
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    elements.eventContextYear.textContent = entity.year ? String(entity.year) : '未设置年份';
+    elements.eventContextUsage.textContent = entity.usageCount ? `${entity.usageCount} 条故事线引用` : '尚未加入故事线';
+    elements.eventContextTitle.textContent = title;
+    elements.eventContextSummary.textContent = description;
+    elements.eventContextTags.innerHTML = [
+        `<span class="context-tag">${escapeHtml(state.entityId)}</span>`,
+        `<span class="context-tag">${escapeHtml(entity.files ? `${entity.files.length} 个内容文件` : '')}</span>`,
+        ...(entity.variants || []).map(
+            (variant) => `<span class="context-tag is-soft">variant: ${escapeHtml(variant)}</span>`
+        )
+    ].join('');
+    elements.eventContext.hidden = false;
+}
+
+function renderEventSectionNav() {
+    if (state.type !== 'events' || !state.document) {
+        elements.eventSectionNav.hidden = true;
+        return;
+    }
+    const entity = state.entities.find((item) => item.id === state.entityId);
+    const files = (entity && entity.files) || [];
+    const variantFiles = files.filter((file) => file.startsWith('variants/'));
+    const hasDefaultPresentation = Boolean(state.document.defaultPresentation);
+    const variantNav = elements.eventSectionNav.querySelector('[data-event-file="variants"]');
+    const variantSelect = elements.eventVariantSelect;
+    if (variantNav) variantNav.hidden = variantFiles.length === 0 && !hasDefaultPresentation;
+    if (variantSelect) {
+        variantSelect.innerHTML = variantFiles
+            .map((file) => `<option value="${escapeHtml(file)}">${escapeHtml(eventFileLabel(file))}</option>`)
+            .join('');
+        variantSelect.value = state.file.startsWith('variants/') ? state.file : variantFiles[0] || '';
+        variantSelect.hidden = variantFiles.length < 2;
+    }
+    for (const button of elements.eventSectionNav.querySelectorAll('button[data-event-file]')) {
+        const target = button.dataset.eventFile;
+        const isAdvanced = target === 'advanced';
+        if (target === 'variants') continue;
+        button.hidden = isAdvanced ? false : !files.includes(target);
+        button.classList.toggle('is-active', !isAdvanced && state.file === target);
+    }
+    const variantButton = elements.eventSectionNav.querySelector('[data-event-variant-button]');
+    if (variantButton) variantButton.classList.toggle('is-active', state.file.startsWith('variants/'));
+    const peopleButton = elements.eventSectionNav.querySelector('[data-event-section="people"]');
+    if (peopleButton) peopleButton.classList.remove('is-active');
+    elements.eventSectionNav.hidden = false;
+}
+
 function entityMatchesSearch(entity, query) {
     if (!query) return true;
     if (state.type === 'figures') {
@@ -235,7 +327,19 @@ function entityMatchesSearch(entity, query) {
         return text.includes(query);
     }
     const id = typeof entity === 'string' ? entity : entity.id;
-    return id.toLowerCase().includes(query);
+    if (state.type !== 'storylines') return id.toLowerCase().includes(query);
+    const searchable = [
+        id,
+        localize(entity.title, 'zh'),
+        localize(entity.title, 'en'),
+        ...(entity.events || []).flatMap((event) => [
+            event.eventId,
+            localize(event.title, 'zh'),
+            localize(event.title, 'en'),
+            String(event.year || '')
+        ])
+    ];
+    return searchable.join(' ').toLowerCase().includes(query);
 }
 
 function renderEntities() {
@@ -275,6 +379,23 @@ function renderEntities() {
     elements.entityList.innerHTML = visible
         .map((entity) => {
             const id = typeof entity === 'string' ? entity : entity.id;
+            if (state.type === 'storylines') {
+                const storylineEvents = Array.isArray(entity.events) ? entity.events : [];
+                const storylineTitle = localize(entity.title, 'zh') || localize(entity.title, 'en') || id;
+                const storylineSubtitle = localize(entity.subtitle, 'zh') || localize(entity.subtitle, 'en') || '';
+                const eventRows = storylineEvents.length
+                    ? storylineEvents
+                          .map((event, index) => {
+                              const eventTitle =
+                                  localize(event.title, 'zh') || localize(event.title, 'en') || event.eventId;
+                              const stateClass = event.enabled ? 'is-enabled' : 'is-disabled';
+                              const status = event.enabled ? '启用' : '停用';
+                              return `<button type="button" class="storyline-event-link ${stateClass}" data-open-event="${escapeHtml(event.eventId)}" data-open-file="event.json"><span class="storyline-event-order">${String(index + 1).padStart(2, '0')}</span><span class="storyline-event-copy"><strong>${escapeHtml(eventTitle)}</strong><span>${escapeHtml(event.year || '未设置年份')} · ${escapeHtml(event.eventId)}${event.variant ? ` · variant: ${escapeHtml(event.variant)}` : ''}</span></span><span class="storyline-event-status">${status}</span><span class="entity-chevron">›</span></button>`;
+                          })
+                          .join('')
+                    : '<div class="storyline-empty">暂无事件</div>';
+                return `<section class="storyline-nav-card${id === state.entityId ? ' active' : ''}" data-storyline-id="${escapeHtml(id)}"><div class="storyline-nav-heading"><div><span class="storyline-nav-kicker">STORYLINE · ${escapeHtml(id)}</span><strong>${escapeHtml(storylineTitle)}</strong>${storylineSubtitle ? `<span>${escapeHtml(storylineSubtitle)}</span>` : ''}</div><span class="storyline-count">${entity.enabledEventCount}/${entity.totalEventCount}</span></div><div class="storyline-nav-events">${eventRows}</div></section>`;
+            }
             const indexKey = entityIndexKey(entity);
             const letterDivider =
                 indexKey && indexKey !== previousIndexKey
@@ -360,6 +481,8 @@ async function refresh() {
     }
     renderEntities();
     updatePanelVisibility();
+    renderEventContext();
+    renderEventSectionNav();
 }
 
 function selectEntity(id) {
@@ -948,6 +1071,8 @@ async function loadEntity() {
     syncEditor();
     elements.currentEntity.textContent = `${state.type === 'events' ? `${state.entityId} / ${state.file}` : state.entityId}`;
     updatePanelVisibility();
+    renderEventContext();
+    renderEventSectionNav();
     renderStructuredEditor();
     if (state.type === 'events') await renderEventDisplayActions();
     if (state.type === 'figures') {
@@ -1887,6 +2012,19 @@ function createFigure() {
 }
 
 elements.entityList.addEventListener('click', async (event) => {
+    const eventLink = event.target.closest('[data-open-event]');
+    if (eventLink) {
+        await openAdminEvent(eventLink.dataset.openEvent, eventLink.dataset.openFile || 'event.json').catch((error) =>
+            setStatus(error.message, 'bad')
+        );
+        return;
+    }
+    const storylineCard = event.target.closest('[data-storyline-id]');
+    if (storylineCard && state.type === 'storylines') {
+        selectEntity(storylineCard.dataset.storylineId);
+        await loadEntity().catch((error) => setStatus(error.message, 'bad'));
+        return;
+    }
     const button = event.target.closest('button[data-id]');
     if (!button) return;
     selectEntity(button.dataset.id);
@@ -1926,6 +2064,46 @@ elements.entitySearch.addEventListener('input', renderEntities);
 elements.fileSelect.addEventListener('change', () => {
     state.file = elements.fileSelect.value;
     loadEntity().catch((error) => setStatus(error.message, 'bad'));
+});
+elements.eventSectionNav.addEventListener('click', (event) => {
+    const sectionButton = event.target.closest('[data-event-section]');
+    if (sectionButton?.dataset.eventSection === 'people') {
+        elements.relationPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        sectionButton.classList.add('is-active');
+        return;
+    }
+    const button = event.target.closest('[data-event-file]');
+    if (!button || button.dataset.eventFile === 'advanced') {
+        if (event.target.closest('[data-event-file="advanced"]')) {
+            elements.jsonPanel.open = true;
+            elements.jsonPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        return;
+    }
+    if (button.dataset.eventFile === 'variants') {
+        const file = elements.eventVariantSelect.value;
+        if (file) {
+            selectEventFile(file);
+            return;
+        }
+        if (state.file !== 'event.json') {
+            selectEventFile('event.json');
+            window.setTimeout(
+                () =>
+                    document
+                        .querySelector('.presentation-editor')
+                        ?.scrollIntoView({ behavior: 'smooth', block: 'start' }),
+                350
+            );
+            return;
+        }
+        document.querySelector('.presentation-editor')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return;
+    }
+    selectEventFile(button.dataset.eventFile);
+});
+elements.eventVariantSelect.addEventListener('change', () => {
+    if (elements.eventVariantSelect.value) selectEventFile(elements.eventVariantSelect.value);
 });
 document
     .getElementById('refreshBtn')
