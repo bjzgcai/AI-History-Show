@@ -24,15 +24,7 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": [
-          "id",
-          "mediaType",
-          "provider",
-          "bucket",
-          "publicUrlPrefix",
-          "objectKeyPrefix",
-          "cacheControl"
-        ],
+        "required": ["id", "mediaType", "provider", "publicUrlPrefix", "objectKeyPrefix", "cacheControl"],
         "properties": {
           "id": {
             "$ref": "shared.schema.json#/$defs/archiveId"
@@ -42,17 +34,6 @@
             "minLength": 1
           },
           "provider": {
-            "type": "string",
-            "minLength": 1
-          },
-          "endpoint": {
-            "type": "string",
-            "format": "uri"
-          },
-          "region": {
-            "type": "string"
-          },
-          "bucket": {
             "type": "string",
             "minLength": 1
           },

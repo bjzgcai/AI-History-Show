@@ -40,6 +40,8 @@ jobs:
               run: pip install Pillow -r scripts/game-evolution/requirements-validate.txt
 
             - name: Generate and validate static site
+              env:
+                  UMAMI_WEBSITE_ID: ${{ secrets.UMAMI_WEBSITE_ID }}
               run: |
                   npm ci
                   npm run validate:archive

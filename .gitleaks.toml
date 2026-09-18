@@ -1,0 +1,14 @@
+title = "AI-History-Show Gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Archive event identifiers and key comparisons are content IDs, not credentials"
+rules = ["generic-api-key"]
+regexTarget = "match"
+regexes = [
+    '''eventKey["']?\s*:\s*["'][a-z0-9][a-z0-9-]+["']''',
+    '''\bkey\s*:\s*["'][a-z0-9][a-z0-9-]+["']''',
+    '''\bkey\s*={2,3}\s*["'][a-z0-9][a-z0-9-]+["']''',
+]
