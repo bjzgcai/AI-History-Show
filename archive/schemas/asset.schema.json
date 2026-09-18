@@ -52,10 +52,6 @@
                         "type": "string",
                         "minLength": 1
                     },
-                    "bucket": {
-                        "type": "string",
-                        "minLength": 1
-                    },
                     "objectKey": {
                         "type": "string",
                         "minLength": 1

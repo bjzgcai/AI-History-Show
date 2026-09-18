@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -58,6 +59,28 @@ assert.match(
     formatCommandFailure('ffprobe', { status: 1, stderr: 'Invalid data found', stdout: '' }, 'bad.mp3'),
     /ffprobe failed for bad\.mp3 \(exit 1\): Invalid data found/
 );
+
+const dialogueGeneratorPath = path.join(import.meta.dirname, 'audio/generate-dialogue-audio.mjs');
+const dialogueTestRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'audio-dialogue-endpoint-'));
+try {
+    const inputPath = path.join(dialogueTestRoot, 'dialogue.txt');
+    fs.writeFileSync(inputPath, 'Narrator: Endpoint configuration test.\n');
+    const missingEndpoint = spawnSync(process.execPath, [dialogueGeneratorPath, inputPath, '--dry-run'], {
+        encoding: 'utf8',
+        env: { ...process.env, INNER_TTS_BASE_URL: '' }
+    });
+    assert.equal(missingEndpoint.status, 1);
+    assert.match(missingEndpoint.stderr, /no inner TTS endpoint found/);
+
+    const configuredEndpoint = spawnSync(process.execPath, [dialogueGeneratorPath, inputPath, '--dry-run'], {
+        encoding: 'utf8',
+        env: { ...process.env, INNER_TTS_BASE_URL: 'https://tts.example.invalid/v1/audio/speech' }
+    });
+    assert.equal(configuredEndpoint.status, 0, configuredEndpoint.stderr);
+    assert.match(configuredEndpoint.stdout, /API:\s+https:\/\/tts\.example\.invalid\/v1\/audio\/speech/);
+} finally {
+    fs.rmSync(dialogueTestRoot, { recursive: true, force: true });
+}
 
 assert.deepEqual(generationActions({ planExists: false, overlayExists: false }), ['build', 'generate', 'validate']);
 assert.deepEqual(generationActions({ planExists: true, overlayExists: false }), [

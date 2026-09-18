@@ -197,22 +197,23 @@ docker compose config --quiet
 
 ### 可选：启用 Umami 统计
 
-展示页内置了可插拔统计模块。Umami 专属配置位于 `shared/umami-config.js`，通用 provider 选择位于 `shared/analytics-config.js`。Umami 未启用或 `websiteId` 为空时，通用配置自动使用 `none` provider，不会加载第三方脚本或发送网络请求，也不会影响页面启动。
+展示页内置了可插拔统计模块。Git 跟踪的 `shared/umami-config.js` 不保存 Website ID，
+`npm run build:static` 会读取 `UMAMI_WEBSITE_ID`，并仅在 `.tmp/static-site/` 发布包中生成启用的配置。
+未配置该变量时，通用配置自动使用 `none` provider，不会加载统计脚本或发送网络请求。
 
-Umami 部署完成后，只需修改 `shared/umami-config.js` 中的开关和 Website ID：
+GitHub Pages 通过仓库 Secret `UMAMI_WEBSITE_ID` 注入。手动构建或部署时通过环境变量传入：
 
-```js
-globalScope.AI_HISTORY_UMAMI_CONFIG = {
-    enabled: true,
-    websiteId: '你的 Umami Website ID',
-    scriptUrl: 'https://museum.bza.edu.cn/umami/script.js',
-    hostUrl: 'https://museum.bza.edu.cn/umami',
-    autoTrack: true,
-    domains: ['museum.bza.edu.cn']
-};
+```bash
+UMAMI_WEBSITE_ID='你的 Umami Website ID' npm run build:static
 ```
 
-当前采集地址已配置为 `https://museum.bza.edu.cn/umami/script.js`，数据发送到 `https://museum.bza.edu.cn/umami/api/send`。内网管理面板和 Docker 服务地址不进入前端配置。`websiteId` 缺失、Umami 服务不可达或脚本被浏览器拦截时，统计模块会静默降级，不阻塞展示页面。
+Docker 镜像通过构建参数传入；使用 Compose 时可把变量放在不入库的 `.env` 中：
+
+```bash
+UMAMI_WEBSITE_ID='你的 Umami Website ID' docker compose build presentation
+```
+
+当前采集地址已配置为 `https://museum.bza.edu.cn/umami/script.js`，数据发送到 `https://museum.bza.edu.cn/umami/api/send`。内网管理面板和 Docker 服务地址不进入前端配置。`websiteId` 缺失、Umami 服务不可达或脚本被浏览器拦截时，统计模块会静默降级，不阻塞展示页面。Website ID 会出现在生成后的浏览器资源中，它不是认证凭据；构建注入只用于避免把具体 ID 写入 Git 源码。
 
 当前自定义事件包括 `session_start`、`storyline_view`、`storyline_leave`、`storyline_switch`、`storyline_picker_open`、`milestone_view`、`milestone_leave`、`quiz_impression` 和 `quiz_answer`。故事线进入会立即记录，故事线停留时间只累计页面可见且观众活跃的时间。事件浏览需累计至少 1 秒可见时间；连续 60 秒没有人工操作会暂停停留计时，30 分钟没有操作后再次互动会开始新会话。大屏自动轮播不会直接产生有效事件浏览，除非观众随后发生真实操作。
 

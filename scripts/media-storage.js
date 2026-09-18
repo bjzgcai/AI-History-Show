@@ -5,9 +5,6 @@ const path = require('node:path');
 
 const DEFAULT_PROFILE_ID = 'ai-history-audio-releases';
 const DEFAULT_PROVIDER = 'aliyun-oss';
-const DEFAULT_ENDPOINT = 'https://oss-cn-beijing.aliyuncs.com';
-const DEFAULT_REGION = 'cn-beijing';
-const DEFAULT_BUCKET = 'zgca-medias';
 const DEFAULT_PUBLIC_URL_PREFIX = 'https://media.sciencearena.cn/audio/ai-history/releases/';
 const DEFAULT_OBJECT_KEY_PREFIX = 'audio/ai-history/releases/';
 const DEFAULT_CACHE_CONTROL = 'public, max-age=31536000, immutable';
@@ -35,10 +32,6 @@ function isObjectKeyWithinPrefix(objectKey, objectKeyPrefix) {
     return Boolean(key && prefix && (key === prefix || key.startsWith(`${prefix}/`)));
 }
 
-function trimTrailingSlash(value) {
-    return String(value || '').replace(/\/+$/, '');
-}
-
 function ensureTrailingSlash(value) {
     const trimmed = String(value || '').trim();
     if (!trimmed) return '';
@@ -64,9 +57,6 @@ function builtInConfig() {
                 id: DEFAULT_PROFILE_ID,
                 mediaType: 'audio',
                 provider: DEFAULT_PROVIDER,
-                endpoint: DEFAULT_ENDPOINT,
-                region: DEFAULT_REGION,
-                bucket: DEFAULT_BUCKET,
                 publicUrlPrefix: DEFAULT_PUBLIC_URL_PREFIX,
                 objectKeyPrefix: DEFAULT_OBJECT_KEY_PREFIX,
                 cacheControl: DEFAULT_CACHE_CONTROL,
@@ -144,9 +134,6 @@ function resolveMediaStorage(asset, options = {}) {
     return {
         profileId,
         provider: String(storage.provider || profile.provider || '').trim(),
-        endpoint: trimTrailingSlash(profile.endpoint || ''),
-        region: String(profile.region || '').trim(),
-        bucket: String(storage.bucket || profile.bucket || '').trim(),
         objectName,
         objectKey,
         publicUrl,
@@ -166,15 +153,12 @@ function resolveAudioUrl(asset, options = {}) {
 module.exports = {
     AUDIO_CONTENT_TYPES,
     CONFIG_PATH,
-    DEFAULT_BUCKET,
     DEFAULT_CACHE_CONTROL,
-    DEFAULT_ENDPOINT,
     DEFAULT_MANIFEST_KEY,
     DEFAULT_OBJECT_KEY_PREFIX,
     DEFAULT_PROFILE_ID,
     DEFAULT_PROVIDER,
     DEFAULT_PUBLIC_URL_PREFIX,
-    DEFAULT_REGION,
     builtInConfig,
     contentTypeForPath,
     isRemotePath,

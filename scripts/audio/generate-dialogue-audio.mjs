@@ -8,7 +8,7 @@ import path from 'node:path';
 
 const DEFAULTS = {
     provider: 'inner',
-    baseUrl: 'https://llm.inner.bza.edu.cn/hub/v1/audio/speech',
+    baseUrl: '',
     volcBaseUrl: 'https://openspeech.bytedance.com/api/v3/plan/tts/unidirectional',
     language: 'zh',
     speed: 1,
@@ -57,7 +57,7 @@ appended to the previous turn.
 
 Options:
   --provider <inner|sag|volc>  TTS provider (default: ${DEFAULTS.provider})
-  --base-url <url>             Internal speech endpoint (default: ${DEFAULTS.baseUrl})
+  --base-url <url>             Internal speech endpoint (or INNER_TTS_BASE_URL)
   --volc-base-url <url>        Volcengine endpoint (default: ${DEFAULTS.volcBaseUrl})
   --voice-a <name-or-id>       Voice for A (inner default: ${PROVIDER_DEFAULTS.inner.voiceA})
   --voice-b <name-or-id>       Voice for B (inner default: ${PROVIDER_DEFAULTS.inner.voiceB})
@@ -96,7 +96,7 @@ Options:
   -h, --help                   Show this help
 
 Credentials:
-  inner: export INNER_TTS_API_KEY, use --env-file, or pass --api-key-file.
+  inner: export INNER_TTS_BASE_URL and INNER_TTS_API_KEY, use --env-file, or pass --base-url/--api-key-file.
   sag: export ELEVENLABS_API_KEY/SIXTYDB_API_KEY, or pass --api-key-file.
   volc: export SEED-TTS-API-KEY/VOLC_API_KEY/VOLCENGINE_API_KEY/DOUBAO_API_KEY, use --env-file, or pass --api-key-file.
 `);
@@ -275,6 +275,24 @@ function resolveApiKey(options) {
         if (process.env[keyName]) return process.env[keyName];
     }
     return null;
+}
+
+function resolveInnerBaseUrl(options) {
+    if (options.provider !== 'inner') return options.baseUrl;
+    const value = String(options.baseUrl || process.env.INNER_TTS_BASE_URL || '').trim();
+    if (!value) {
+        fail('no inner TTS endpoint found; export INNER_TTS_BASE_URL, use --env-file, or pass --base-url');
+    }
+    let url;
+    try {
+        url = new URL(value);
+    } catch {
+        fail('inner TTS endpoint must be a valid HTTP or HTTPS URL');
+    }
+    if (!['http:', 'https:'].includes(url.protocol)) {
+        fail('inner TTS endpoint must use HTTP or HTTPS');
+    }
+    return value.replace(/\/+$/, '');
 }
 
 function cleanSpeechText(value) {
@@ -561,6 +579,7 @@ async function main() {
         const variables = parseEnvFile(envPath);
         for (const [name, value] of Object.entries(variables)) process.env[name] ||= value;
     }
+    options.baseUrl = resolveInnerBaseUrl(options);
     const turns = parseDialogue(fs.readFileSync(options.inputPath, 'utf8'));
 
     if (options.dryRun) {

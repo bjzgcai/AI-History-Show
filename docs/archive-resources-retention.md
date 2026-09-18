@@ -41,7 +41,7 @@ resources/videos/*.json
 resources/videos/urls.txt
 ```
 
-它们不再被 `manage/server.js`、生产 compiler 或页面运行时读取。由于 `resources/` 的 append-only 规则，文件仍保留在仓库中，但 `npm run build:static` 会将其排除，避免进入 Pages/Docker presentation 发布物。
+它们不再被 `manage/server.js`、生产 compiler 或页面运行时读取。由于 `resources/` 的 append-only 规则，文件仍保留在仓库中，但 `npm run build:static` 会将其排除，避免进入 Pages/Docker presentation 发布物。`resources/videos/urls.txt` 只保留对象键和 CDN 公网地址，不保存 OSS Bucket 源站直连地址。
 
 ## 缺失视频的处理原则
 

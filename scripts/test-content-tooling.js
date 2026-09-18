@@ -54,13 +54,16 @@ const validAsset = {
     deliveryUrl: 'https://media.example/audio/test.mp3',
     storage: {
         provider: 'aliyun-oss',
-        bucket: 'example-bucket',
         objectKey: 'audio/ai-history/releases/test-v1.mp3',
         contentType: 'audio/mpeg',
         publicUrl: 'https://example-bucket.oss.example/audio/test.mp3'
     }
 };
 assert.equal(validateSchema('asset.schema.json', [validAsset]).valid, true);
+
+const assetWithPrivateStorageLocation = globalThis.structuredClone(validAsset);
+assetWithPrivateStorageLocation.storage.bucket = 'example-bucket';
+assert.equal(validateSchema('asset.schema.json', [assetWithPrivateStorageLocation]).valid, false);
 
 const invalidDeliveryUrl = globalThis.structuredClone(validAsset);
 invalidDeliveryUrl.deliveryUrl = 'not a valid URI';
