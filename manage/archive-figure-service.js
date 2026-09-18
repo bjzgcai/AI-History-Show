@@ -489,6 +489,7 @@ function createArchiveFigureService(root) {
             const event = fs.existsSync(eventFile) ? readJson(eventFile) : {};
             const eventTitle = event.title || {};
             const assets = fs.existsSync(assetsFile) ? readJson(assetsFile) : [];
+            const assetsRevision = fs.existsSync(assetsFile) ? fileRevision(assetsFile) : '';
 
             for (const relationValue of event.figures || []) {
                 const relation = relationObject(relationValue);
@@ -521,7 +522,7 @@ function createArchiveFigureService(root) {
             }
 
             for (const asset of assets) {
-                allAssets.push({ eventId, asset });
+                allAssets.push({ eventId, asset, assetsRevision });
                 for (const figureId of asset.figureIds || []) {
                     addUsage(figureId, {
                         kind: 'asset',
@@ -671,7 +672,7 @@ function createArchiveFigureService(root) {
                     Array.isArray(entry.asset.figureIds) &&
                     entry.asset.figureIds.includes(figureId)
             )
-            .map(({ eventId: assetEventId, asset }) => {
+            .map(({ eventId: assetEventId, asset, assetsRevision }) => {
                 const sourcesFile = path.join(eventsDir, assetEventId, 'sources.json');
                 const sources = fs.existsSync(sourcesFile) ? readJson(sourcesFile) : [];
                 const sourceId = asset.sourceId || (asset.sourceIds || [])[0] || '';
@@ -710,6 +711,7 @@ function createArchiveFigureService(root) {
                 return {
                     eventId: assetEventId,
                     ...asset,
+                    assetsRevision,
                     source: { id: sourceId, name: sourceName, url: sourceUrl },
                     rights,
                     isDefaultAvatar,
@@ -770,6 +772,191 @@ function createArchiveFigureService(root) {
             assetId: safeAssetId,
             defaultAvatar,
             revision: fileRevision(figuresPath)
+        };
+    }
+
+    function linkFigureAsset({ figureId, eventId, assetId, expectedRevision = '' }) {
+        const figure = getFigure(figureId).data;
+        const safeEventId = String(eventId || '').trim();
+        const safeAssetId = String(assetId || '').trim();
+        for (const [label, value] of [
+            ['eventId', safeEventId],
+            ['assetId', safeAssetId]
+        ]) {
+            if (!/^[a-z0-9][a-z0-9._-]*$/.test(value)) throw createHttpError(`Invalid archive ${label}`, 400);
+        }
+
+        const assetsFile = path.join(eventsDir, safeEventId, 'assets.json');
+        if (!fs.existsSync(assetsFile)) throw createHttpError('Event assets.json not found', 404);
+        const currentRevision = fileRevision(assetsFile);
+        if (expectedRevision && expectedRevision !== currentRevision) {
+            throw createHttpError('Event assets changed since they were loaded; reload before linking image', 409);
+        }
+
+        const assets = readJson(assetsFile);
+        const assetIndex = assets.findIndex((candidate) => candidate.id === safeAssetId);
+        if (assetIndex < 0) throw createHttpError('Archive asset not found', 404);
+        const asset = assets[assetIndex];
+        if (asset.type !== 'image')
+            throw createHttpError('Only image assets can be linked from the figure editor', 400);
+        if (!asset.path) throw createHttpError('Image asset is missing its path', 400);
+        if ((asset.figureIds || []).includes(figure.id)) {
+            return {
+                ok: true,
+                changed: false,
+                figureId: figure.id,
+                eventId: safeEventId,
+                asset,
+                revision: currentRevision
+            };
+        }
+
+        const linkedAsset = {
+            ...asset,
+            figureIds: uniqueValues([...(asset.figureIds || []), figure.id])
+        };
+        assets[assetIndex] = linkedAsset;
+        const schemaResult = validateSchema('asset.schema.json', assets);
+        if (!schemaResult.valid) {
+            throw createHttpError(`Asset schema validation failed: ${schemaResult.errors.join('; ')}`, 400);
+        }
+        atomicWrite(assetsFile, `${JSON.stringify(assets, null, 2)}\n`);
+        return {
+            ok: true,
+            changed: true,
+            figureId: figure.id,
+            eventId: safeEventId,
+            asset: linkedAsset,
+            revision: fileRevision(assetsFile)
+        };
+    }
+
+    function unlinkFigureAsset({ figureId, eventId, assetId, expectedRevision = '', associations = [] }) {
+        const figure = getFigure(figureId).data;
+        const requestedAssociations = (
+            Array.isArray(associations) && associations.length ? associations : [{ eventId, assetId, expectedRevision }]
+        ).map((association) => ({
+            eventId: String(association.eventId || '').trim(),
+            assetId: String(association.assetId || '').trim(),
+            expectedRevision: String(association.expectedRevision || '').trim()
+        }));
+        const uniqueAssociations = [];
+        const associationKeys = new Set();
+        for (const association of requestedAssociations) {
+            for (const [label, value] of [
+                ['eventId', association.eventId],
+                ['assetId', association.assetId]
+            ]) {
+                if (!/^[a-z0-9][a-z0-9._-]*$/.test(value)) {
+                    throw createHttpError(`Invalid archive ${label}`, 400);
+                }
+            }
+            const key = `${association.eventId}\0${association.assetId}`;
+            if (associationKeys.has(key)) continue;
+            associationKeys.add(key);
+            uniqueAssociations.push(association);
+        }
+        if (!uniqueAssociations.length) throw createHttpError('At least one figure asset association is required', 400);
+
+        const eventFiles = new Map();
+        const targets = [];
+        for (const association of uniqueAssociations) {
+            let eventFile = eventFiles.get(association.eventId);
+            if (!eventFile) {
+                const assetsFile = path.join(eventsDir, association.eventId, 'assets.json');
+                if (!fs.existsSync(assetsFile)) throw createHttpError('Event assets.json not found', 404);
+                eventFile = {
+                    eventId: association.eventId,
+                    assetsFile,
+                    revision: fileRevision(assetsFile),
+                    assets: readJson(assetsFile),
+                    changed: false
+                };
+                eventFiles.set(association.eventId, eventFile);
+            }
+            if (association.expectedRevision && association.expectedRevision !== eventFile.revision) {
+                throw createHttpError(
+                    'Event assets changed since they were loaded; reload before unlinking image',
+                    409
+                );
+            }
+            const assetIndex = eventFile.assets.findIndex((candidate) => candidate.id === association.assetId);
+            if (assetIndex < 0) throw createHttpError('Archive asset not found', 404);
+            const asset = eventFile.assets[assetIndex];
+            if (asset.type !== 'image') {
+                throw createHttpError('Only image assets can be unlinked from the figure editor', 400);
+            }
+            targets.push({ association, eventFile, assetIndex, asset });
+        }
+
+        const linkedTargets = targets.filter(({ asset }) => (asset.figureIds || []).includes(figure.id));
+        if (!linkedTargets.length) {
+            return {
+                ok: true,
+                changed: false,
+                figureId: figure.id,
+                unlinkedAssociations: [],
+                revisions: Object.fromEntries([...eventFiles.values()].map((entry) => [entry.eventId, entry.revision]))
+            };
+        }
+
+        const defaultAvatarPath = (figure.defaultAvatar && figure.defaultAvatar.path) || '';
+        const defaultAvatarTarget = linkedTargets.find(({ asset }) => asset.path === defaultAvatarPath);
+        if (defaultAvatarTarget) {
+            throw createHttpError(
+                'Image is the current default avatar; remove or replace the default avatar before unlinking it',
+                409
+            );
+        }
+
+        const { usageByFigureId } = scanUsage();
+        const relationUsages = (usageByFigureId.get(figure.id) || []).filter((entry) =>
+            linkedTargets.some(
+                ({ association }) =>
+                    entry.kind.endsWith('relation') &&
+                    entry.eventId === association.eventId &&
+                    entry.avatarAssetId === association.assetId
+            )
+        );
+        if (relationUsages.length) {
+            const files = uniqueValues(relationUsages.map((entry) => entry.file));
+            throw createHttpError(
+                `Image is still used as this figure's event avatar in ${files.join(', ')}; remove or replace those avatar references before unlinking it`,
+                409
+            );
+        }
+
+        const unlinkedAssociations = [];
+        for (const { association, eventFile, assetIndex, asset } of linkedTargets) {
+            const figureIds = (asset.figureIds || []).filter((id) => id !== figure.id);
+            const unlinkedAsset = { ...asset, figureIds };
+            if (!figureIds.length) delete unlinkedAsset.figureIds;
+            eventFile.assets[assetIndex] = unlinkedAsset;
+            eventFile.changed = true;
+            unlinkedAssociations.push({ eventId: association.eventId, assetId: association.assetId });
+        }
+
+        const writes = [];
+        for (const eventFile of eventFiles.values()) {
+            if (!eventFile.changed) continue;
+            const schemaResult = validateSchema('asset.schema.json', eventFile.assets);
+            if (!schemaResult.valid) {
+                throw createHttpError(`Asset schema validation failed: ${schemaResult.errors.join('; ')}`, 400);
+            }
+            writes.push({
+                filePath: eventFile.assetsFile,
+                content: `${JSON.stringify(eventFile.assets, null, 2)}\n`
+            });
+        }
+        transactionalWrite(writes);
+        return {
+            ok: true,
+            changed: true,
+            figureId: figure.id,
+            unlinkedAssociations,
+            revisions: Object.fromEntries(
+                [...eventFiles.values()].map((entry) => [entry.eventId, fileRevision(entry.assetsFile)])
+            )
         };
     }
 
@@ -1051,7 +1238,7 @@ function createArchiveFigureService(root) {
         imageBase64,
         caption,
         subcaption,
-        rights,
+        rights = {},
         sourceName,
         sourceUrl,
         role = 'portrait',
@@ -1067,9 +1254,6 @@ function createArchiveFigureService(root) {
         }
         if (!sourceId || !hasLocalizedPair(caption)) {
             throw createHttpError('Source ID and bilingual captions are required', 400);
-        }
-        if (!rights || !rights.status || !hasLocalizedPair(rights.license) || !hasLocalizedPair(rights.usage)) {
-            throw createHttpError('Rights status plus bilingual license and usage are required', 400);
         }
         const eventDir = path.join(eventsDir, eventId);
         const assetsFile = path.join(eventDir, 'assets.json');
@@ -1099,6 +1283,15 @@ function createArchiveFigureService(root) {
 
         const assets = readJson(assetsFile);
         if (assets.some((asset) => asset.id === assetId)) throw createHttpError('Archive asset already exists', 409);
+        const normalizedRights = {
+            status: String(rights.status || 'needs-source')
+        };
+        if (rights.license && (localized(rights.license, 'en') || localized(rights.license, 'zh'))) {
+            normalizedRights.license = rights.license;
+        }
+        if (rights.usage && (localized(rights.usage, 'en') || localized(rights.usage, 'zh'))) {
+            normalizedRights.usage = rights.usage;
+        }
         const asset = {
             id: assetId,
             type: 'image',
@@ -1108,7 +1301,7 @@ function createArchiveFigureService(root) {
             ...(subcaption && (localized(subcaption, 'en') || localized(subcaption, 'zh')) ? { subcaption } : {}),
             figureIds: [figure.id],
             sourceId,
-            rights,
+            rights: normalizedRights,
             usage: ['figure-avatar'],
             editable: true
         };
@@ -1127,8 +1320,17 @@ function createArchiveFigureService(root) {
             if (expectedRevision && expectedRevision !== currentRevision) {
                 throw createHttpError('Figure registry changed since it was loaded; reload before importing', 409);
             }
-            if (!hasLocalizedPair(sourceName) || !sourceUrl) {
-                throw createHttpError('Bilingual source name and source URL are required for a default avatar', 400);
+            if (
+                !hasLocalizedPair(sourceName) ||
+                !sourceUrl ||
+                !normalizedRights.status ||
+                !hasLocalizedPair(normalizedRights.license) ||
+                !hasLocalizedPair(normalizedRights.usage)
+            ) {
+                throw createHttpError(
+                    'Bilingual source name, source URL, rights status, license, and usage are required for a default avatar',
+                    400
+                );
             }
             const nextFigures = loadFigures().map((candidate) =>
                 candidate.id === figure.id
@@ -1138,7 +1340,7 @@ function createArchiveFigureService(root) {
                               path: relativePath,
                               sourceName,
                               sourceUrl,
-                              rights
+                              rights: normalizedRights
                           }
                       }
                     : candidate
@@ -1154,6 +1356,52 @@ function createArchiveFigureService(root) {
             eventId,
             asset,
             revision: fileRevision(figuresPath)
+        };
+    }
+
+    function importEventImage({ eventId, assetId, imageBase64 }) {
+        const safeEventId = String(eventId || '').trim();
+        const safeAssetId = String(assetId || '').trim();
+        for (const [label, value] of [
+            ['eventId', safeEventId],
+            ['assetId', safeAssetId]
+        ]) {
+            if (!/^[a-z0-9][a-z0-9._-]*$/.test(value)) throw createHttpError(`Invalid archive ${label}`, 400);
+        }
+        const assetsFile = path.join(eventsDir, safeEventId, 'assets.json');
+        if (!fs.existsSync(assetsFile)) throw createHttpError('Event assets.json not found', 404);
+        const assets = readJson(assetsFile);
+        if (assets.some((asset) => asset.id === safeAssetId)) {
+            throw createHttpError(`Archive asset already exists: ${safeAssetId}`, 409);
+        }
+        const normalizedBase64 = String(imageBase64 || '')
+            .replace(/^data:image\/[a-z0-9.+-]+;base64,/i, '')
+            .replace(/\s+/g, '');
+        if (!normalizedBase64 || !/^(?:[a-z0-9+/]{4})*(?:[a-z0-9+/]{2}==|[a-z0-9+/]{3}=)?$/i.test(normalizedBase64)) {
+            throw createHttpError('Invalid base64 image data', 400);
+        }
+        const image = Buffer.from(normalizedBase64, 'base64');
+        if (!image.length || image.length > 10 * 1024 * 1024) {
+            throw createHttpError('Image must be between 1 byte and 10 MB', 400);
+        }
+        const imageType = detectImageType(image);
+        validateImage(image, imageType);
+        const directory = path.join(root, 'resources', 'images', safeEventId);
+        let suffix = 1;
+        let fileName = `${safeAssetId}.${imageType.extension}`;
+        while (fs.existsSync(path.join(directory, fileName))) {
+            suffix += 1;
+            fileName = `${safeAssetId}-${suffix}.${imageType.extension}`;
+        }
+        const relativePath = `resources/images/${safeEventId}/${fileName}`;
+        atomicWrite(path.join(root, relativePath), image);
+        return {
+            ok: true,
+            eventId: safeEventId,
+            assetId: safeAssetId,
+            path: relativePath,
+            type: imageType.extension === 'gif' ? 'gif' : 'image',
+            mimeType: imageType.mimeType
         };
     }
 
@@ -1314,14 +1562,17 @@ function createArchiveFigureService(root) {
         getFigureAssets,
         getRegistryRevision: () => fileRevision(figuresPath),
         getFigureUsage,
+        importEventImage,
         importFigureImage,
+        linkFigureAsset,
         listFigures,
         mergeFigureAssets,
         mergeFigures,
         previewFigureAssetMerge,
         previewFigureMerge,
         setDefaultAvatar,
-        saveFigure
+        saveFigure,
+        unlinkFigureAsset
     };
 }
 

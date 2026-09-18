@@ -103,9 +103,10 @@ async function validateAdminServer() {
         const admin = await waitForHttp(`http://${HOST}:${port}/admin`);
         const adminHtml = await admin.text();
         assert.match(adminHtml, /Archive Entity Editor/);
-        assert.match(adminHtml, /Storylines/);
-        assert.match(adminHtml, /Figures/);
-        assert.match(adminHtml, /Figure Audit/);
+        assert.match(adminHtml, /data-entity-type="events"[^>]*>事件/);
+        assert.match(adminHtml, /data-entity-type="storylines"[^>]*>故事线/);
+        assert.match(adminHtml, /data-entity-type="figures"[^>]*>人物 \/ 实体/);
+        assert.match(adminHtml, /data-entity-type="audit"[^>]*>人物审计/);
         assert.match(adminHtml, /生成运行时数据/);
         assert.equal(admin.headers.get('access-control-allow-origin'), null);
 
@@ -143,6 +144,7 @@ async function validateAdminServer() {
         assert.ok(Array.isArray(archiveEventList) && archiveEventList.length > 0);
         assert.equal(typeof archiveEventList[0].used, 'boolean');
         assert.equal(typeof archiveEventList[0].usageCount, 'number');
+        assert.equal(typeof archiveEventList[0].hasDefaultPresentation, 'boolean');
 
         const storylines = await waitForHttp(`http://${HOST}:${port}/api/archive/storylines`);
         const storylineList = await storylines.json();

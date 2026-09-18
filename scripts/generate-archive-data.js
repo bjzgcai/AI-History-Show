@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { compileArchive } = require('./archive-compiler.js');
 
-const ROOT = path.resolve(__dirname, '..');
+const ROOT = path.resolve(process.env.AI_HISTORY_ARCHIVE_ROOT || path.join(__dirname, '..'));
 const OUTPUTS = [path.join(ROOT, 'milestones-data.js'), path.join(ROOT, 'milestones-data-default.js')];
 
 function normalizeGeneratedTime(content) {
