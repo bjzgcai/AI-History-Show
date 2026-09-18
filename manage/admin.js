@@ -6,6 +6,7 @@ const state = {
     entityId: '',
     file: '',
     eventSection: 'basic',
+    figureSection: 'basic',
     document: null,
     revision: '',
     creatingFigure: false,
@@ -13,20 +14,40 @@ const state = {
     eventOptions: [],
     figureListRevision: '',
     figureAssets: [],
+    existingImageAssets: [],
+    existingImageAssetsRevision: '',
     figureUsage: null,
-    assetMergeSelection: new Set(),
-    assetMergeCanonical: '',
     eventDisplayTargets: [],
-    eventPresentationOpen: false,
-    mergePreview: null,
+    presentationReferences: { assets: [], sources: [], quizzes: [] },
+    presentationReferenceEventId: '',
+    assetSources: [],
+    assetSourceEventId: '',
+    pendingAssetIds: new Set(),
+    pendingAssetPaths: new Set(),
     taskRunning: false
 };
 
-const structuredEventFiles = new Set(['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json']);
+const structuredEventFiles = new Set(['event.json', 'sources.json', 'assets.json', 'quizzes.json']);
+
+const archiveTaskConfig = {
+    validate: {
+        title: '校验结果',
+        pendingMessage: '正在运行 Archive 校验...',
+        successMessage: 'Archive 校验已通过',
+        failureMessage: 'Archive 校验失败'
+    },
+    generate: {
+        title: '生成结果',
+        pendingMessage: '正在生成运行时数据...',
+        successMessage: '运行时数据生成成功',
+        failureMessage: '运行时数据生成失败'
+    }
+};
 
 const elements = Object.fromEntries(
     [
         'entityType',
+        'entityTypeNav',
         'entityList',
         'figureAlphabet',
         'entitySearch',
@@ -35,44 +56,58 @@ const elements = Object.fromEntries(
         'fileSelect',
         'eventDisplayActions',
         'eventDisplayTarget',
-        'inspectEventPresentationBtn',
-        'restorePresentationInheritanceBtn',
         'openEventDisplayBtn',
-        'eventPresentationPanel',
-        'eventPresentationSummary',
-        'eventPresentationPreview',
         'editor',
         'status',
         'currentEntity',
         'workspaceToolbar',
+        'taskOutputPanel',
+        'taskOutputTitle',
+        'closeTaskOutputBtn',
         'validationOutput',
+        'validateDraftBtn',
         'figurePanel',
         'relationPanel',
         'structuredPanel',
         'structuredTitle',
         'structuredSummary',
         'structuredFieldHint',
+        'structuredAddBtn',
         'structuredEditor',
-        'eventContext',
-        'eventContextYear',
-        'eventContextUsage',
-        'eventContextTitle',
-        'eventContextSummary',
-        'eventContextTags',
+        'relationFileLink',
+        'advancedJsonFiles',
+        'advancedJsonEditorShell',
         'eventSectionNav',
-        'eventVariantSelect',
+        'figureSectionNav',
+        'figureSectionTitle',
+        'figureSectionSummary',
         'storylineOverviewPanel',
         'storylineOverviewKicker',
         'storylineOverviewTitle',
         'storylineOverviewSummary',
         'storylineOverviewStats',
+        'storylineEventSelect',
+        'addStorylineEventBtn',
         'storylineTimeline',
         'auditPanel',
         'jsonPanel',
         'figureUsage',
         'figureAssetCount',
-        'figureAssetMergeSummary',
-        'figureAssetMergeBtn',
+        'openExistingFigureImageBtn',
+        'openFigureImageUploadBtn',
+        'existingFigureImageDialog',
+        'closeExistingFigureImageBtn',
+        'cancelExistingFigureImageBtn',
+        'existingImageEvent',
+        'existingImageAsset',
+        'existingImagePreview',
+        'existingImagePlaceholder',
+        'existingImagePreviewImg',
+        'existingImageDetails',
+        'linkExistingFigureImageBtn',
+        'figureImageUploadDialog',
+        'closeFigureImageUploadBtn',
+        'cancelFigureImageUploadBtn',
         'figureAssetGallery',
         'figureAssetEmpty',
         'figureEventCount',
@@ -86,17 +121,17 @@ const elements = Object.fromEntries(
         'figureReviewBadge',
         'avatarPreview',
         'avatarPlaceholder',
+        'openDefaultAvatarAssetBtn',
+        'replaceDefaultAvatarBtn',
+        'removeDefaultAvatarBtn',
+        'figureIdentityDetails',
         'loadBtn',
         'saveBtn',
-        'saveValidateBtn',
         'validateBtn',
         'generateBtn',
         'addFigureBtn',
-        'mergeTargetSelect',
-        'mergePreview',
-        'mergePreviewBtn',
-        'mergeExecuteBtn',
         'imageImportFile',
+        'imageImportUrl',
         'imageImportPreview',
         'imageImportPlaceholder',
         'imageImportEvent',
@@ -122,9 +157,13 @@ const elements = Object.fromEntries(
         'figureDisambiguationZhField',
         'figureOrganizationsField',
         'figureProfileSourcesField',
+        'figureProfileSourcesList',
+        'figureProfileSourceCount',
+        'addFigureProfileSourceBtn',
         'figureAvatarHeading',
         'figureAvatarEditor',
-        'avatarStyleField'
+        'avatarStyleField',
+        'figureIdField'
     ].map((id) => [id, document.getElementById(id)])
 );
 
@@ -137,7 +176,6 @@ const figureFieldIds = [
     'figureDisambiguationEn',
     'figureDisambiguationZh',
     'figureOrganizations',
-    'figureProfileSources',
     'avatarPath',
     'avatarSourceNameEn',
     'avatarSourceNameZh',
@@ -151,7 +189,6 @@ const figureFieldIds = [
     'reviewStatus',
     'reviewedAt',
     'reviewer',
-    'reviewNotesEn',
     'reviewNotesZh'
 ];
 for (const id of figureFieldIds) elements[id] = document.getElementById(id);
@@ -179,6 +216,28 @@ async function api(url, options) {
     return data;
 }
 
+async function loadPresentationReferences(force = false) {
+    if (!force && state.presentationReferenceEventId === state.entityId) return;
+    const entity = state.entities.find((item) => item.id === state.entityId);
+    const files = new Set((entity && entity.files) || []);
+    const definitions = [
+        ['assets', 'assets.json'],
+        ['sources', 'sources.json'],
+        ['quizzes', 'quizzes.json']
+    ];
+    const entries = await Promise.all(
+        definitions.map(async ([key, file]) => {
+            if (!files.has(file)) return [key, []];
+            const result = await api(
+                `/api/archive/file?eventId=${encodeURIComponent(state.entityId)}&file=${encodeURIComponent(file)}`
+            );
+            return [key, Array.isArray(result.data) ? result.data : []];
+        })
+    );
+    state.presentationReferences = Object.fromEntries(entries);
+    state.presentationReferenceEventId = state.entityId;
+}
+
 function splitLines(value) {
     return String(value || '')
         .split(/\r?\n|,/)
@@ -193,7 +252,7 @@ function localize(value, locale) {
 
 function figureLabel(figure) {
     const name = `${localize(figure.name, 'zh')} / ${localize(figure.name, 'en')}`.replace(/^\s*\/\s*|\s*\/\s*$/g, '');
-    return `${name || figure.id} · ${figure.id}`;
+    return name || '未命名人物';
 }
 
 function figureSortName(figure) {
@@ -213,6 +272,20 @@ function eventYear(event) {
     return String(event.year || '').trim() || '#';
 }
 
+function reviewStatusLabel(status) {
+    return (
+        {
+            draft: '草稿',
+            'needs-source': '待补来源',
+            verified: '已核验',
+            disputed: '有争议',
+            deprecated: '已停用'
+        }[status] ||
+        status ||
+        '草稿'
+    );
+}
+
 function entityIndexKey(entity) {
     if (state.type === 'figures') return figureInitial(entity);
     if (state.type === 'events') return eventYear(entity);
@@ -227,32 +300,93 @@ function isStructuredEventFile() {
     return state.type === 'events' && (structuredEventFiles.has(state.file) || isVariantFile());
 }
 
+function syncEntityTypeNavigation() {
+    elements.entityType.value = state.type;
+    for (const button of elements.entityTypeNav.querySelectorAll('[data-entity-type]')) {
+        const isActive = button.dataset.entityType === state.type;
+        button.classList.toggle('is-active', isActive);
+        button.setAttribute('aria-current', isActive ? 'page' : 'false');
+    }
+}
+
 function updatePanelVisibility() {
+    syncEntityTypeNavigation();
     const eventLoaded = state.type === 'events' && Boolean(state.document);
-    const structuredSections = new Set(['basic', 'presentation', 'claims', 'sources', 'assets', 'quizzes']);
-    elements.figurePanel.hidden = state.type !== 'figures' || !state.document;
+    const figureLoaded = state.type === 'figures' && Boolean(state.document);
+    const structuredSections = new Set(['basic', 'presentation', 'sources', 'assets', 'quizzes']);
+    elements.figurePanel.hidden = !figureLoaded || state.figureSection === 'advanced';
     elements.relationPanel.hidden = !eventLoaded || state.eventSection !== 'people';
     elements.structuredPanel.hidden = !eventLoaded || !structuredSections.has(state.eventSection);
-    elements.eventPresentationPanel.hidden =
-        !eventLoaded || state.eventSection !== 'presentation' || !state.eventPresentationOpen;
     elements.auditPanel.hidden = state.type !== 'audit';
     elements.jsonPanel.hidden =
-        state.type === 'audit' || !state.document || (state.type === 'events' && state.eventSection !== 'advanced');
+        state.type === 'audit' ||
+        !state.document ||
+        (state.type === 'events' && state.eventSection !== 'advanced') ||
+        (state.type === 'figures' && state.figureSection !== 'advanced');
     if (state.type === 'events') elements.jsonPanel.open = state.eventSection === 'advanced';
+    if (state.type === 'figures') elements.jsonPanel.open = state.figureSection === 'advanced';
     elements.fileSelect.hidden = true;
-    elements.eventContext.hidden = state.type !== 'events' || !state.entityId;
     elements.eventSectionNav.hidden = state.type !== 'events' || !state.document;
+    elements.figureSectionNav.hidden = !figureLoaded;
     elements.storylineOverviewPanel.hidden = state.type !== 'storylines' || !state.entityId;
     elements.eventDisplayActions.hidden = state.type !== 'events' || !state.document;
     elements.newFigureBtn.hidden = state.type !== 'figures';
+    elements.entitySearch.hidden = state.type === 'audit';
     elements.loadBtn.hidden = state.type === 'audit';
     elements.saveBtn.hidden = state.type === 'audit';
-    elements.saveValidateBtn.hidden = state.type === 'audit';
     elements.emptyState.hidden =
         state.type === 'audit' || Boolean(state.document) || (state.type === 'storylines' && Boolean(state.entityId));
     elements.loadBtn.disabled = state.type !== 'audit' && !state.entityId;
-    elements.saveBtn.disabled = state.type !== 'audit' && !state.document;
-    elements.saveValidateBtn.disabled = state.type !== 'audit' && !state.document;
+    syncTaskActionAvailability();
+}
+
+const figureSectionConfig = {
+    basic: {
+        title: '基础信息',
+        summary: '维护正式页面使用的名称与默认头像；内部身份资料按需展开。'
+    },
+    sources: {
+        title: '资料来源（内部）',
+        summary: '维护用于身份核验和资料追溯的来源记录，不直接显示在正式页面。'
+    },
+    assets: {
+        title: '图片资产',
+        summary: '管理默认头像的来源版权、查看关联图片，并合并重复的资产引用。'
+    },
+    events: {
+        title: '关联事件',
+        summary: '查看人物在事件基础信息和故事线展示版本中的角色及头像引用。'
+    },
+    review: {
+        title: '审核信息（内部）',
+        summary: '维护人物或实体的内部审核状态、审核日期与审核备注。'
+    },
+    advanced: {
+        title: '高级 JSON',
+        summary: '直接查看和编辑当前人物实体的完整原始 JSON。'
+    }
+};
+
+function renderFigureSectionNav() {
+    const visible = state.type === 'figures' && Boolean(state.document);
+    elements.figureSectionNav.hidden = !visible;
+    if (!visible) return;
+    for (const button of elements.figureSectionNav.querySelectorAll('[data-figure-section]')) {
+        button.classList.toggle('is-active', button.dataset.figureSection === state.figureSection);
+    }
+    const config = figureSectionConfig[state.figureSection] || figureSectionConfig.basic;
+    elements.figureSectionTitle.textContent = config.title;
+    elements.figureSectionSummary.textContent = config.summary;
+    for (const panel of elements.figurePanel.querySelectorAll('[data-figure-section-panel]')) {
+        panel.hidden = panel.dataset.figureSectionPanel !== state.figureSection;
+    }
+}
+
+function activateFigureSection(section) {
+    if (!figureSectionConfig[section] || state.type !== 'figures' || !state.document) return;
+    state.figureSection = section;
+    updatePanelVisibility();
+    renderFigureSectionNav();
 }
 
 function updateStickyOffsets() {
@@ -260,6 +394,7 @@ function updateStickyOffsets() {
     const headerStyle = window.getComputedStyle(header);
     const headerOffset = headerStyle.position === 'sticky' ? header.offsetHeight : 0;
     const toolbarOffset = elements.workspaceToolbar.offsetHeight;
+    document.documentElement.style.setProperty('--admin-header-sticky-height', `${headerOffset}px`);
     document.documentElement.style.setProperty('--event-nav-sticky-top', `${headerOffset + toolbarOffset}px`);
 }
 
@@ -268,7 +403,6 @@ function eventSectionForFile(file) {
     return (
         {
             'event.json': 'basic',
-            'claims.json': 'claims',
             'sources.json': 'sources',
             'assets.json': 'assets',
             'quizzes.json': 'quizzes'
@@ -278,21 +412,77 @@ function eventSectionForFile(file) {
 
 function eventFileLabel(file) {
     if (file === 'event.json') return '基本资料';
-    if (file === 'claims.json') return '事实主张';
     if (file === 'sources.json') return '来源';
-    if (file === 'assets.json') return '资产与音频';
+    if (file === 'assets.json') return '图片与音视频';
     if (file === 'quizzes.json') return 'Quiz';
     if (file.startsWith('variants/')) return `展示覆盖 · ${file.slice('variants/'.length, -'.json'.length)}`;
     return file;
 }
 
-function selectEventFile(file, section = eventSectionForFile(file)) {
+function advancedEventFileLabel(file) {
+    if (file === 'event.json') return '事件与默认展示配置';
+    if (file === 'claims.json') return '事实主张';
+    return eventFileLabel(file);
+}
+
+function orderedEventFiles(files) {
+    const preferred = ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json'];
+    return [...files].sort((left, right) => {
+        const leftIndex = preferred.indexOf(left);
+        const rightIndex = preferred.indexOf(right);
+        if (leftIndex !== -1 || rightIndex !== -1) {
+            if (leftIndex === -1) return 1;
+            if (rightIndex === -1) return -1;
+            return leftIndex - rightIndex;
+        }
+        return left.localeCompare(right);
+    });
+}
+
+function renderAdvancedJsonFiles() {
+    if (elements.advancedJsonEditorShell.parentElement !== elements.jsonPanel) {
+        elements.jsonPanel.append(elements.advancedJsonEditorShell);
+    }
+    if (state.type !== 'events' || !state.entityId || state.eventSection !== 'advanced') {
+        elements.advancedJsonFiles.hidden = true;
+        elements.advancedJsonFiles.innerHTML = '';
+        elements.advancedJsonEditorShell.hidden = false;
+        return;
+    }
     const entity = state.entities.find((item) => item.id === state.entityId);
-    if (!entity || !entity.files.includes(file)) return;
-    state.eventSection = section;
-    state.file = file;
-    elements.fileSelect.value = file;
-    loadEntity().catch((error) => setStatus(error.message, 'bad'));
+    const files = orderedEventFiles((entity && entity.files) || []);
+    elements.advancedJsonFiles.innerHTML = files
+        .map(
+            (file) =>
+                `<details class="advanced-json-file" data-advanced-json-file="${escapeHtml(file)}"${file === state.file ? ' open' : ''}><summary><code>${escapeHtml(file)}</code><span>${escapeHtml(advancedEventFileLabel(file))}</span></summary><div class="advanced-json-file-content"></div></details>`
+        )
+        .join('');
+    elements.advancedJsonFiles.hidden = false;
+    const activeFile = [...elements.advancedJsonFiles.querySelectorAll('[data-advanced-json-file]')].find(
+        (item) => item.dataset.advancedJsonFile === state.file
+    );
+    if (activeFile) {
+        activeFile.open = true;
+        activeFile.querySelector('.advanced-json-file-content').append(elements.advancedJsonEditorShell);
+    }
+    elements.advancedJsonEditorShell.hidden = !activeFile;
+}
+
+async function openAdvancedJsonFile(file) {
+    if (state.type !== 'events' || !state.entityId) return;
+    const entity = state.entities.find((item) => item.id === state.entityId);
+    if (!entity || !entity.files.includes(file)) throw new Error(`${state.entityId} 没有 ${file}`);
+    state.eventSection = 'advanced';
+    if (state.file !== file || !state.document) {
+        state.file = file;
+        elements.fileSelect.value = file;
+        await loadEntity();
+        return;
+    }
+    updatePanelVisibility();
+    renderEventSectionNav();
+    renderFigureSectionNav();
+    renderAdvancedJsonFiles();
 }
 
 async function activateEventSection(section) {
@@ -301,17 +491,15 @@ async function activateEventSection(section) {
     const files = (entity && entity.files) || [];
     let file = state.file;
     if (section === 'basic' || section === 'people') file = 'event.json';
-    else if (section === 'presentation') {
-        const variantFiles = files.filter((candidate) => candidate.startsWith('variants/'));
-        file = elements.eventVariantSelect.value || variantFiles[0] || 'event.json';
-    } else if (section === 'advanced') {
+    else if (section === 'presentation') file = 'event.json';
+    else if (section === 'advanced') {
         state.eventSection = 'advanced';
         updatePanelVisibility();
         renderEventSectionNav();
+        renderAdvancedJsonFiles();
         return;
     } else {
         file = {
-            claims: 'claims.json',
             sources: 'sources.json',
             assets: 'assets.json',
             quizzes: 'quizzes.json'
@@ -325,41 +513,11 @@ async function activateEventSection(section) {
         await loadEntity();
         return;
     }
+    if (section === 'presentation') await loadPresentationReferences(true);
     updatePanelVisibility();
     renderEventSectionNav();
     renderStructuredEditor();
     if (section === 'people') await renderRelations();
-}
-
-function renderEventContext() {
-    if (state.type !== 'events' || !state.entityId) {
-        elements.eventContext.hidden = true;
-        return;
-    }
-    const entity = state.entities.find((item) => item.id === state.entityId) || {};
-    const title = localize(entity.title, 'zh') || localize(entity.title, 'en') || state.entityId;
-    const rawDescription =
-        localize(entity.summary, 'zh') ||
-        localize(entity.summary, 'en') ||
-        localize(entity.description, 'zh') ||
-        localize(entity.description, 'en') ||
-        '事件内容维护';
-    const description = rawDescription
-        .replace(/<[^>]+>/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
-    elements.eventContextYear.textContent = entity.year ? String(entity.year) : '未设置年份';
-    elements.eventContextUsage.textContent = entity.usageCount ? `${entity.usageCount} 条故事线引用` : '尚未加入故事线';
-    elements.eventContextTitle.textContent = title;
-    elements.eventContextSummary.textContent = description;
-    elements.eventContextTags.innerHTML = [
-        `<span class="context-tag">${escapeHtml(state.entityId)}</span>`,
-        `<span class="context-tag">${escapeHtml(entity.files ? `${entity.files.length} 个内容文件` : '')}</span>`,
-        ...(entity.variants || []).map(
-            (variant) => `<span class="context-tag is-soft">variant: ${escapeHtml(variant)}</span>`
-        )
-    ].join('');
-    elements.eventContext.hidden = false;
 }
 
 function renderEventSectionNav() {
@@ -369,24 +527,6 @@ function renderEventSectionNav() {
     }
     const entity = state.entities.find((item) => item.id === state.entityId);
     const files = (entity && entity.files) || [];
-    const variantFiles = files.filter((file) => file.startsWith('variants/'));
-    const variantNav = elements.eventSectionNav.querySelector('[data-event-file="variants"]');
-    const variantSelect = elements.eventVariantSelect;
-    if (variantNav) variantNav.hidden = !files.includes('event.json') && variantFiles.length === 0;
-    if (variantSelect) {
-        const presentationFiles = [
-            ...(files.includes('event.json') ? [['event.json', '默认展示配置']] : []),
-            ...variantFiles.map((file) => [file, eventFileLabel(file)])
-        ];
-        variantSelect.innerHTML = presentationFiles
-            .map(([file, label]) => `<option value="${escapeHtml(file)}">${escapeHtml(label)}</option>`)
-            .join('');
-        variantSelect.value =
-            state.eventSection === 'presentation' && presentationFiles.some(([file]) => file === state.file)
-                ? state.file
-                : presentationFiles[0]?.[0] || '';
-        variantSelect.hidden = presentationFiles.length < 2;
-    }
     for (const button of elements.eventSectionNav.querySelectorAll('button[data-event-section]')) {
         const target = button.dataset.eventFile;
         const section = button.dataset.eventSection;
@@ -402,6 +542,84 @@ function renderEventSectionNav() {
     elements.eventSectionNav.hidden = false;
 }
 
+function storylineYearValue(year) {
+    const value = Number.parseFloat(String(year || '').trim());
+    return Number.isFinite(value) ? value : Number.POSITIVE_INFINITY;
+}
+
+function storylineEventDetails(membership) {
+    const eventId = membership.eventId || membership.id;
+    const event = state.eventOptions.find((candidate) => candidate.id === eventId) || membership;
+    return {
+        ...membership,
+        eventId,
+        year: event.year || '',
+        title: event.title || {},
+        variants: event.variants || [],
+        hasDefaultPresentation: event.hasDefaultPresentation !== false
+    };
+}
+
+function compareStorylineEvents(left, right) {
+    const leftDetails = storylineEventDetails(left);
+    const rightDetails = storylineEventDetails(right);
+    return (
+        storylineYearValue(leftDetails.year) - storylineYearValue(rightDetails.year) ||
+        String(leftDetails.year).localeCompare(String(rightDetails.year), 'en', { numeric: true }) ||
+        leftDetails.eventId.localeCompare(rightDetails.eventId)
+    );
+}
+
+function normalizeStorylineEventOrder() {
+    if (state.type !== 'storylines' || !state.document || !Array.isArray(state.document.events)) return;
+    state.document.events = [...state.document.events]
+        .sort(compareStorylineEvents)
+        .map((membership, index) => ({ ...membership, order: (index + 1) * 10 }));
+}
+
+function syncSelectedStorylineSummary() {
+    const entity = state.entities.find((item) => item.id === state.entityId);
+    if (!entity || !state.document || !Array.isArray(state.document.events)) return;
+    entity.title = state.document.title || entity.title;
+    entity.subtitle = state.document.subtitle || entity.subtitle;
+    entity.events = state.document.events.map(storylineEventDetails);
+    entity.totalEventCount = entity.events.length;
+    entity.enabledEventCount = entity.events.filter((event) => event.enabled !== false).length;
+    entity.usageCount = entity.enabledEventCount;
+    entity.used = entity.enabledEventCount > 0;
+}
+
+function storylineMilestoneId(eventId) {
+    const base = `milestone-${state.entityId}-${eventId}`;
+    const usedIds = new Set(
+        state.entities.flatMap((storyline) =>
+            (storyline.events || [])
+                .filter((membership) => storyline.id !== state.entityId || membership.eventId !== eventId)
+                .map((membership) => membership.milestoneId)
+                .filter(Boolean)
+        )
+    );
+    if (!usedIds.has(base)) return base;
+    let suffix = 2;
+    while (usedIds.has(`${base}-${suffix}`)) suffix += 1;
+    return `${base}-${suffix}`;
+}
+
+function renderStorylineEventPicker(memberships) {
+    const memberIds = new Set(memberships.map((membership) => membership.eventId));
+    const availableEvents = state.eventOptions.filter((event) => !memberIds.has(event.id)).sort(compareStorylineEvents);
+    elements.storylineEventSelect.innerHTML = availableEvents.length
+        ? `<option value="">选择事件</option>${availableEvents
+              .map((event) => {
+                  const title = localize(event.title, 'zh') || localize(event.title, 'en') || event.id;
+                  return `<option value="${escapeHtml(event.id)}">${escapeHtml(`${event.year || '未设置年份'} · ${title} · ${event.id}`)}</option>`;
+              })
+              .join('')}`
+        : '<option value="">没有可添加的事件</option>';
+    elements.storylineEventSelect.disabled = !state.document || availableEvents.length === 0;
+    elements.addStorylineEventBtn.disabled = !state.document || availableEvents.length === 0;
+}
+
 function renderStorylineOverview() {
     if (!elements.storylineOverviewPanel) return;
     const entity = state.entities.find((item) => item.id === state.entityId);
@@ -410,40 +628,104 @@ function renderStorylineOverview() {
         elements.storylineTimeline.innerHTML = '';
         return;
     }
-    const title = localize(entity.title, 'zh') || localize(entity.title, 'en') || entity.id;
-    const subtitle = localize(entity.subtitle, 'zh') || localize(entity.subtitle, 'en') || '按 Storyline 顺序维护事件';
-    const events = [...(entity.events || [])].sort(
-        (left, right) => Number(left.order) - Number(right.order) || left.eventId.localeCompare(right.eventId)
-    );
-    elements.storylineOverviewKicker.textContent = `STORYLINE · ${entity.id}`;
+    const storyline = state.document || entity;
+    const memberships = Array.isArray(storyline.events) ? storyline.events : [];
+    const events = [...memberships].sort(compareStorylineEvents).map(storylineEventDetails);
+    const title = localize(storyline.title, 'zh') || localize(storyline.title, 'en') || entity.id;
+    const subtitle =
+        localize(storyline.subtitle, 'zh') || localize(storyline.subtitle, 'en') || '按时间顺序维护故事线事件';
+    const enabledEventCount = memberships.filter((membership) => membership.enabled !== false).length;
+    elements.storylineOverviewKicker.textContent = 'STORYLINE';
     elements.storylineOverviewTitle.textContent = title;
     elements.storylineOverviewSummary.textContent = subtitle;
     elements.storylineOverviewStats.innerHTML = [
-        `<span class="storyline-stat"><strong>${entity.enabledEventCount || 0}</strong><small>启用事件</small></span>`,
-        `<span class="storyline-stat"><strong>${entity.totalEventCount || 0}</strong><small>全部事件</small></span>`
+        `<span class="storyline-stat"><strong>${enabledEventCount}</strong><small>启用事件</small></span>`,
+        `<span class="storyline-stat"><strong>${memberships.length}</strong><small>全部事件</small></span>`
     ].join('');
+    renderStorylineEventPicker(memberships);
     elements.storylineTimeline.innerHTML = events.length
         ? events
               .map((event, index) => {
                   const eventTitle = localize(event.title, 'zh') || localize(event.title, 'en') || event.eventId;
-                  const status = event.enabled ? '启用' : '停用';
-                  const stateClass = event.enabled ? 'is-enabled' : 'is-disabled';
-                  const variant = event.variant
-                      ? `<span class="storyline-timeline-variant">variant: ${escapeHtml(event.variant)}</span>`
-                      : '';
-                  return `<button type="button" class="storyline-timeline-item ${stateClass}" data-open-event="${escapeHtml(event.eventId)}" data-open-file="event.json">
-                      <span class="storyline-timeline-marker"><span>${String(index + 1).padStart(2, '0')}</span></span>
-                      <span class="storyline-timeline-content">
-                          <span class="storyline-timeline-meta"><span>${escapeHtml(event.year || '未设置年份')}</span><span>${escapeHtml(event.eventId)}</span>${variant}</span>
-                          <strong>${escapeHtml(eventTitle)}</strong>
-                          <span class="storyline-timeline-status">${status}</span>
-                      </span>
-                      <span class="entity-chevron">›</span>
-                  </button>`;
+                  const enabled = event.enabled !== false;
+                  const status = enabled ? '启用' : '停用';
+                  const stateClass = enabled ? 'is-enabled' : 'is-disabled';
+                  return `<div class="storyline-timeline-item ${stateClass}" data-storyline-event-id="${escapeHtml(event.eventId)}">
+                      <button type="button" class="storyline-timeline-open" data-open-event="${escapeHtml(event.eventId)}" data-open-file="event.json">
+                          <span class="storyline-timeline-marker"><span>${String(index + 1).padStart(2, '0')}</span></span>
+                          <span class="storyline-timeline-content">
+                              <span class="storyline-timeline-meta"><span>${escapeHtml(event.year || '未设置年份')}</span><span>${escapeHtml(event.eventId)}</span></span>
+                              <strong>${escapeHtml(eventTitle)}</strong>
+                              <span class="storyline-timeline-status">${status}</span>
+                          </span>
+                          <span class="entity-chevron">›</span>
+                      </button>
+                      <button type="button" class="storyline-remove-button" data-remove-storyline-event="${escapeHtml(event.eventId)}" title="从故事线移除" aria-label="从故事线移除 ${escapeHtml(eventTitle)}">×</button>
+                  </div>`;
               })
               .join('')
         : '<div class="storyline-empty">当前 Storyline 尚未配置事件。</div>';
     elements.storylineOverviewPanel.hidden = false;
+}
+
+function addStorylineEvent() {
+    if (state.type !== 'storylines' || !state.document) return;
+    const eventId = elements.storylineEventSelect.value;
+    if (!eventId) {
+        setStatus('请先选择要添加的事件', 'bad');
+        return;
+    }
+    if (!Array.isArray(state.document.events)) state.document.events = [];
+    if (state.document.events.some((membership) => membership.eventId === eventId)) {
+        setStatus('该事件已在当前故事线中', 'bad');
+        return;
+    }
+    const event = state.eventOptions.find((candidate) => candidate.id === eventId);
+    if (!event) {
+        setStatus('未找到所选事件', 'bad');
+        return;
+    }
+    const membership = {
+        eventId,
+        order: 0,
+        enabled: true,
+        milestoneId: storylineMilestoneId(eventId)
+    };
+    if (!event.hasDefaultPresentation) {
+        if ((event.variants || []).includes(state.entityId)) {
+            // The storyline-specific variant is resolved implicitly.
+        } else if ((event.variants || []).length === 1) {
+            membership.variant = event.variants[0];
+        } else {
+            setStatus('该事件没有默认展示配置，请先在高级 JSON 中指定 variant', 'bad');
+            return;
+        }
+    }
+    state.document.events.push(membership);
+    normalizeStorylineEventOrder();
+    syncSelectedStorylineSummary();
+    syncEditor();
+    renderEntities();
+    renderStorylineOverview();
+    focusNewEntry(
+        elements.storylineTimeline.querySelector(`[data-storyline-event-id="${window.CSS.escape(eventId)}"]`),
+        '.storyline-timeline-open'
+    );
+    setStatus('事件已加入故事线，尚未保存', '');
+}
+
+function removeStorylineEvent(eventId) {
+    if (state.type !== 'storylines' || !state.document || !Array.isArray(state.document.events)) return;
+    const event = state.eventOptions.find((candidate) => candidate.id === eventId);
+    const title = localize(event && event.title, 'zh') || localize(event && event.title, 'en') || eventId;
+    if (!window.confirm(`确认从当前故事线移除“${title}”？\n\n事件本身及其资料不会被删除。`)) return;
+    state.document.events = state.document.events.filter((membership) => membership.eventId !== eventId);
+    normalizeStorylineEventOrder();
+    syncSelectedStorylineSummary();
+    syncEditor();
+    renderEntities();
+    renderStorylineOverview();
+    setStatus('事件已从故事线移除，尚未保存', '');
 }
 
 function entityMatchesSearch(entity, query) {
@@ -516,7 +798,6 @@ function renderEntities() {
                     <span class="storyline-picker-icon">${escapeHtml(storylineTitle.slice(0, 1))}</span>
                     <span class="storyline-picker-copy">
                         <span class="storyline-picker-title">${escapeHtml(storylineTitle)}</span>
-                        <span class="storyline-picker-id">${escapeHtml(id)}</span>
                         ${storylineSubtitle ? `<span class="storyline-picker-subtitle">${escapeHtml(storylineSubtitle)}</span>` : ''}
                     </span>
                     <span class="storyline-picker-count">${entity.enabledEventCount}/${entity.totalEventCount}</span>
@@ -534,11 +815,11 @@ function renderEntities() {
             let preview = '';
             if (state.type === 'events') {
                 title = localize(entity.title, 'zh') || localize(entity.title, 'en') || id;
-                detail = `${entity.year || '未设置年份'} · ${id} · ${entity.usageCount} 个故事线`;
+                detail = `${entity.year || '未设置年份'} · ${entity.usageCount} 个故事线`;
             }
             if (state.type === 'figures') {
-                title = `${localize(entity.name, 'zh') || localize(entity.name, 'en')} · ${id}`;
-                detail = `${entity.type} · ${entity.reviewStatus || 'draft'} · ${entity.usedEventCount} 个展示事件 · ${entity.assetCount} 个唯一资产`;
+                title = localize(entity.name, 'zh') || localize(entity.name, 'en') || '未命名人物';
+                detail = `${figureTypeLabel(entity.type)} · ${reviewStatusLabel(entity.reviewStatus)} · ${entity.usedEventCount} 个展示事件 · ${entity.assetCount} 个图片资产`;
                 if (entity.defaultAvatar) {
                     const source = /^https?:\/\//i.test(entity.defaultAvatar)
                         ? entity.defaultAvatar
@@ -581,19 +862,34 @@ async function loadEventOptions(force = false) {
 }
 
 async function refresh() {
+    setTaskOutputVisible(false);
     state.entityId = '';
     state.document = null;
     state.revision = '';
     state.creatingFigure = false;
     state.figureAssets = [];
+    state.existingImageAssets = [];
+    state.existingImageAssetsRevision = '';
     state.figureUsage = null;
     state.eventDisplayTargets = [];
+    state.presentationReferences = { assets: [], sources: [], quizzes: [] };
+    state.presentationReferenceEventId = '';
+    state.assetSources = [];
+    state.assetSourceEventId = '';
+    state.pendingAssetIds = new Set();
+    state.pendingAssetPaths = new Set();
     if (state.type === 'events') state.eventSection = 'basic';
+    if (state.type === 'figures') state.figureSection = 'basic';
     elements.currentEntity.textContent = '尚未选择实体';
     elements.editor.value = '';
     elements.structuredEditor.innerHTML = '';
     if (state.type === 'events') state.entities = await api('/api/archive/events');
-    if (state.type === 'storylines') state.entities = await api('/api/archive/storylines');
+    if (state.type === 'storylines') {
+        [state.entities, state.eventOptions] = await Promise.all([
+            api('/api/archive/storylines'),
+            api('/api/archive/events')
+        ]);
+    }
     if (state.type === 'figures') {
         const result = await api('/api/archive/figures');
         state.entities = result.items;
@@ -606,8 +902,9 @@ async function refresh() {
     }
     renderEntities();
     updatePanelVisibility();
-    renderEventContext();
+    renderAdvancedJsonFiles();
     renderEventSectionNav();
+    renderFigureSectionNav();
     renderStorylineOverview();
 }
 
@@ -616,9 +913,15 @@ function selectEntity(id) {
     state.document = null;
     state.revision = '';
     state.creatingFigure = false;
-    state.assetMergeSelection.clear();
-    state.assetMergeCanonical = '';
-    state.eventPresentationOpen = false;
+    state.figureAssets = [];
+    state.existingImageAssets = [];
+    state.existingImageAssetsRevision = '';
+    state.presentationReferences = { assets: [], sources: [], quizzes: [] };
+    state.presentationReferenceEventId = '';
+    state.assetSources = [];
+    state.assetSourceEventId = '';
+    state.pendingAssetIds = new Set();
+    state.pendingAssetPaths = new Set();
     if (state.type === 'events') {
         const entity = state.entities.find((item) => item.id === id);
         const files = entity ? entity.files : [];
@@ -631,9 +934,11 @@ function selectEntity(id) {
         state.eventDisplayTargets = [];
     } else {
         state.file = '';
+        if (state.type === 'figures') state.figureSection = 'basic';
     }
     renderEntities();
     updatePanelVisibility();
+    renderFigureSectionNav();
     renderStorylineOverview();
 }
 
@@ -643,6 +948,17 @@ function syncEditor() {
 
 function cloneJson(value) {
     return value === undefined ? undefined : JSON.parse(JSON.stringify(value));
+}
+
+function focusNewEntry(entry, focusSelector) {
+    window.requestAnimationFrame(() => {
+        if (!entry || !entry.isConnected) return;
+        entry.scrollIntoView({ behavior: 'auto', block: 'start' });
+        entry.classList.add('is-new-entry');
+        const focusTarget = focusSelector ? entry.querySelector(focusSelector) : null;
+        if (focusTarget) focusTarget.focus({ preventScroll: true });
+        window.setTimeout(() => entry.classList.remove('is-new-entry'), 1600);
+    });
 }
 
 function setPath(value, path, nextValue) {
@@ -658,8 +974,18 @@ function setPath(value, path, nextValue) {
     current[lastKey] = nextValue;
 }
 
+function getPath(value, path) {
+    return String(path)
+        .split('.')
+        .reduce((current, key) => (current === undefined || current === null ? undefined : current[key]), value);
+}
+
 function localizedValue(value, locale) {
     return localize(value, locale);
+}
+
+function fieldLabel(label, required = false, requiredTitle = '必填') {
+    return `${escapeHtml(label)}${required ? ` <span class="required-mark" title="${escapeHtml(requiredTitle)}" aria-label="${escapeHtml(requiredTitle)}">*</span>` : ''}`;
 }
 
 function formInput(label, path, value, options = {}) {
@@ -671,14 +997,19 @@ function formInput(label, path, value, options = {}) {
     const className = classes.length ? ` class="${classes.join(' ')}"` : '';
     const checked = type === 'checkbox' && value === true ? ' checked' : '';
     const disabled = options.disabled ? ' disabled' : '';
+    const readOnly = options.readOnly ? ' readonly' : '';
+    const required = options.required ? ' required' : '';
+    const pattern = options.pattern ? ` pattern="${escapeHtml(options.pattern)}"` : '';
+    const placeholder = options.placeholder ? ` placeholder="${escapeHtml(options.placeholder)}"` : '';
     const inputValue = type === 'checkbox' ? '' : ` value="${escapeHtml(value ?? '')}"`;
-    return `<label${className}>${escapeHtml(label)}<input type="${type}" data-structured-field="${escapeHtml(path)}" data-structured-format="${format}"${inputValue}${checked}${disabled}></label>`;
+    return `<label${className}>${fieldLabel(label, options.required || options.requiredMark, options.requiredTitle)}<input type="${type}" data-structured-field="${escapeHtml(path)}" data-structured-format="${format}"${inputValue}${checked}${disabled}${readOnly}${required}${pattern}${placeholder}></label>`;
 }
 
 function formTextarea(label, path, value, options = {}) {
     const className = options.span ? ' class="span-2"' : '';
     const textareaClass = options.className || '';
-    return `<label${className}>${escapeHtml(label)}<textarea class="${textareaClass}" data-structured-field="${escapeHtml(path)}" data-structured-format="${escapeHtml(options.format || 'text')}">${escapeHtml(value ?? '')}</textarea></label>`;
+    const required = options.required ? ' required' : '';
+    return `<label${className}>${fieldLabel(label, options.required || options.requiredMark, options.requiredTitle)}<textarea class="${textareaClass}" data-structured-field="${escapeHtml(path)}" data-structured-format="${escapeHtml(options.format || 'text')}"${required}>${escapeHtml(value ?? '')}</textarea></label>`;
 }
 
 function formSelect(label, path, value, options, config = {}) {
@@ -689,11 +1020,19 @@ function formSelect(label, path, value, options, config = {}) {
                 `<option value="${escapeHtml(optionValue)}"${String(optionValue) === String(value ?? '') ? ' selected' : ''}>${escapeHtml(optionLabel)}</option>`
         )
         .join('');
-    return `<label${className}>${escapeHtml(label)}<select data-structured-field="${escapeHtml(path)}" data-structured-format="${escapeHtml(config.format || 'text')}">${selectedOptions}</select></label>`;
+    const required = config.required ? ' required' : '';
+    return `<label${className}>${fieldLabel(label, config.required || config.requiredMark, config.requiredTitle)}<select data-structured-field="${escapeHtml(path)}" data-structured-format="${escapeHtml(config.format || 'text')}"${required}>${selectedOptions}</select></label>`;
 }
 
 function localizedFields(prefix, value, options = {}) {
-    return `${formTextarea(`${options.label || '内容'}（中文）`, `${prefix}.zh`, localizedValue(value, 'zh'), { className: options.className || 'short', span: options.span })}${formTextarea(`${options.label || '内容'}（英文）`, `${prefix}.en`, localizedValue(value, 'en'), { className: options.className || 'short', span: options.span })}`;
+    return `${formTextarea(`${options.label || '内容'}（中文）`, `${prefix}.zh`, localizedValue(value, 'zh'), { className: options.className || 'short', span: options.span, required: options.required })}${formTextarea(`${options.label || '内容'}（英文）`, `${prefix}.en`, localizedValue(value, 'en'), { className: options.className || 'short', span: options.span, required: options.required })}`;
+}
+
+function internalNoteField(prefix, value, options = {}) {
+    return formTextarea(options.label || '备注', `${prefix}.zh`, localizedValue(value, 'zh'), {
+        className: options.className || 'short',
+        span: options.span
+    });
 }
 
 function hasLocalizedValue(value) {
@@ -705,37 +1044,162 @@ function renderEventForm(event) {
     const coordinates = Array.isArray(location.coordinates) ? location.coordinates : [];
     const review = event.review || {};
     const notes = review.notes || {};
-    return `<section class="structured-section"><div class="section-heading"><div><h3>事件基本信息</h3><p class="muted">维护事件事实和页面基础资料。人物关系仍在下方单独编辑。</p></div></div><div class="form-grid">
-        ${formInput('事件 ID', 'id', event.id, { disabled: true })}
+    return `<section class="structured-section"><div class="form-grid">
         ${formInput('年份', 'year', event.year, { format: 'year' })}
         ${formInput('日期', 'date', event.date)}
-        ${formInput('正式事件', 'canonical', event.canonical, { type: 'checkbox', format: 'boolean' })}
-        ${localizedFields('title', event.title, { label: '标题', className: 'short' })}
         ${hasLocalizedValue(event.summary) ? localizedFields('summary', event.summary, { label: '摘要', className: 'short' }) : ''}
-        ${localizedFields('description', event.description, { label: '描述', className: 'medium', span: true })}
-        ${formInput('地区 ID', 'location.regionId', location.regionId)}
         ${formInput('地点（中文）', 'location.place.zh', localizedValue(location.place, 'zh'))}
         ${formInput('地点（英文）', 'location.place.en', localizedValue(location.place, 'en'))}
         ${formInput('国家（中文）', 'location.country.zh', localizedValue(location.country, 'zh'))}
         ${formInput('国家（英文）', 'location.country.en', localizedValue(location.country, 'en'))}
         ${formInput('纬度', 'location.coordinates.0', coordinates[0], { format: 'number' })}
         ${formInput('经度', 'location.coordinates.1', coordinates[1], { format: 'number' })}
-        ${formTextarea('主题 ID（每行一个）', 'topics', (event.topics || []).join('\n'), { className: 'short', format: 'lines' })}
-        ${formTextarea('成就类型 ID（每行一个）', 'achievementTypeIds', (event.achievementTypeIds || []).join('\n'), { className: 'short', format: 'lines' })}
-    </div></section><section class="structured-section"><h3>审核状态</h3><div class="form-grid">
+    </div></section><details class="collection-more event-review-more"><summary>更多（内部用途）</summary><div class="form-grid">
         ${formSelect('状态', 'review.status', review.status || 'draft', [
-            ['draft', 'draft'],
-            ['needs-source', 'needs-source'],
-            ['verified', 'verified'],
-            ['disputed', 'disputed'],
-            ['deprecated', 'deprecated']
+            ['draft', '草稿'],
+            ['needs-source', '待补来源'],
+            ['verified', '已核验'],
+            ['disputed', '有争议'],
+            ['deprecated', '已停用']
         ])}
-        ${localizedFields('review.notes', notes, { label: '审核备注', className: 'short' })}
-    </div></section>`;
+        ${internalNoteField('review.notes', notes, { label: '审核备注', className: 'short', span: true })}
+    </div></details>`;
 }
 
 function presentationFieldPath(prefix, path) {
     return prefix ? `${prefix}.${path}` : path;
+}
+
+function adminMediaUrl(value) {
+    const url = String(value || '').trim();
+    if (!url || /^(?:https?:|data:|blob:)/i.test(url)) return url;
+    return `/${url.replace(/^\/+/, '')}`;
+}
+
+function renderAssetMedia(asset, compact = false) {
+    const type = String((asset && asset.type) || '').trim();
+    const className = compact ? ' asset-media-preview-compact' : '';
+    if (asset && state.pendingAssetPaths.has(asset.path)) {
+        return `<div class="asset-media-preview asset-media-pending${className}"><span>文件尚未放入自动生成的资源路径</span></div>`;
+    }
+    if (['image', 'svg', 'gif'].includes(type) && asset.path) {
+        const alt = localizedValue(asset.caption, 'zh') || localizedValue(asset.caption, 'en') || '资产预览';
+        return `<figure class="asset-media-preview${className}"><img src="${escapeHtml(adminMediaUrl(asset.path))}" alt="${escapeHtml(alt)}" loading="lazy"></figure>`;
+    }
+    if (type === 'audio') {
+        const audioUrl =
+            asset.deliveryUrl || (asset.storage && (asset.storage.publicUrl || asset.storage.sourcePath)) || asset.path;
+        return audioUrl
+            ? `<div class="asset-media-preview asset-audio-preview${className}"><audio controls preload="none" src="${escapeHtml(adminMediaUrl(audioUrl))}"></audio></div>`
+            : '';
+    }
+    if (type === 'video') {
+        const videoUrl =
+            asset.deliveryUrl || (asset.storage && (asset.storage.publicUrl || asset.storage.sourcePath)) || asset.path;
+        return videoUrl
+            ? `<div class="asset-media-preview asset-video-preview${className}"><video controls preload="none" src="${escapeHtml(adminMediaUrl(videoUrl))}"></video></div>`
+            : '';
+    }
+    return '';
+}
+
+function isPresentationImageAsset(asset) {
+    return !asset || ['image', 'svg', 'gif'].includes(String(asset.type || '').trim());
+}
+
+function isPresentationAudioVideoAsset(asset) {
+    return Boolean(asset && ['audio', 'video'].includes(String(asset.type || '').trim()));
+}
+
+function presentationReferenceItem(kind, id) {
+    const key = kind === 'quiz' ? 'quizzes' : `${kind}s`;
+    return (state.presentationReferences[key] || []).find((item) => item.id === id) || null;
+}
+
+function presentationReferenceName(kind, item) {
+    if (!item) return '';
+    if (kind === 'asset') {
+        return localizedValue(item.caption, 'zh') || localizedValue(item.caption, 'en') || item.path || '未命名资产';
+    }
+    if (kind === 'source') {
+        return localizedValue(item.title, 'zh') || localizedValue(item.title, 'en') || item.url || '未命名来源';
+    }
+    return localizedValue(item.question, 'zh') || localizedValue(item.question, 'en') || '未命名 Quiz';
+}
+
+function referenceMetaRow(label, value) {
+    const text = String(value || '').trim();
+    return text
+        ? `<div class="reference-meta-row"><span>${escapeHtml(label)}</span><strong>${escapeHtml(text)}</strong></div>`
+        : '';
+}
+
+function renderPresentationReferenceCard(kind, id) {
+    const item = presentationReferenceItem(kind, id);
+    if (!item) {
+        return `<article class="presentation-reference-card is-missing"><strong>未找到对应记录</strong><span>${escapeHtml(id)}</span></article>`;
+    }
+    const title = presentationReferenceName(kind, item);
+    const englishTitle =
+        kind === 'asset'
+            ? localizedValue(item.caption, 'en')
+            : kind === 'source'
+              ? localizedValue(item.title, 'en')
+              : localizedValue(item.question, 'en');
+    if (kind === 'asset') {
+        return `<article class="presentation-reference-card">${renderAssetMedia(item, true)}<div class="presentation-reference-copy"><strong>${escapeHtml(title)}</strong>${englishTitle && englishTitle !== title ? `<p>${escapeHtml(englishTitle)}</p>` : ''}<div class="reference-meta-grid">${referenceMetaRow('类型', item.type)}${referenceMetaRow('角色', item.role)}${referenceMetaRow('语言', item.language)}${referenceMetaRow('路径', item.path)}</div></div></article>`;
+    }
+    if (kind === 'source') {
+        const label = localizedValue(item.label, 'zh') || localizedValue(item.label, 'en');
+        return `<article class="presentation-reference-card"><div class="presentation-reference-copy"><strong>${escapeHtml(title)}</strong>${englishTitle && englishTitle !== title ? `<p>${escapeHtml(englishTitle)}</p>` : ''}<div class="reference-meta-grid">${referenceMetaRow('标签', label)}${referenceMetaRow('类型', item.type)}</div>${item.url ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">打开来源页面</a>` : ''}</div></article>`;
+    }
+    const options = Array.isArray(item.options) ? item.options : [];
+    return `<article class="presentation-reference-card"><div class="presentation-reference-copy"><strong>${escapeHtml(title)}</strong>${englishTitle && englishTitle !== title ? `<p>${escapeHtml(englishTitle)}</p>` : ''}${options.length ? `<ol class="reference-quiz-options">${options.map((option, optionIndex) => `<li class="${optionIndex === item.answer ? 'is-answer' : ''}">${escapeHtml(localizedValue(option.text || option, 'zh') || localizedValue(option.text || option, 'en') || '未填写')}</li>`).join('')}</ol>` : ''}${localizedValue(item.explanation, 'zh') ? `<p>${escapeHtml(localizedValue(item.explanation, 'zh'))}</p>` : ''}</div></article>`;
+}
+
+function renderPresentationReferenceField(label, path, value, kind, options = {}) {
+    const ids = options.multiple ? collectionOptions(value) : String(value || '').trim() ? [String(value).trim()] : [];
+    const firstItem = ids.length === 1 ? presentationReferenceItem(kind, ids[0]) : null;
+    const summary =
+        ids.length === 0
+            ? options.emptySummary || '未选择'
+            : ids.length === 1
+              ? presentationReferenceName(kind, firstItem) || '记录未找到'
+              : `${ids.length} 项`;
+    const editor = options.multiple
+        ? formTextarea('引用 ID（每行一个）', path, ids.join('\n'), { className: 'short', format: 'lines', span: true })
+        : formInput('引用 ID', path, ids[0] || '', { span: true });
+    return `<details class="presentation-reference-field span-2"><summary><span>${escapeHtml(label)}</span><span class="presentation-reference-summary">${escapeHtml(summary)}</span></summary><div class="presentation-reference-content"><div class="form-grid">${editor}</div><div class="presentation-reference-list">${ids.length ? ids.map((id) => renderPresentationReferenceCard(kind, id)).join('') : `<div class="collection-empty">${escapeHtml(options.emptyText || '尚未选择引用。')}</div>`}</div></div></details>`;
+}
+
+function renderPresentationReferenceList(label, field, value, kind, config = {}) {
+    const allIds = collectionOptions(value);
+    const filter = typeof config.filter === 'function' ? config.filter : () => true;
+    const references = allIds
+        .map((id, index) => ({ id, index, item: presentationReferenceItem(kind, id) }))
+        .filter(({ id, item }) => filter(item, id));
+    const ids = references.map(({ id }) => id);
+    const available = (state.presentationReferences[kind === 'asset' ? 'assets' : 'sources'] || []).filter(
+        (item) => filter(item, item.id) && !allIds.includes(item.id)
+    );
+    const options = available
+        .map(
+            (item) =>
+                `<option value="${escapeHtml(item.id)}">${escapeHtml(presentationReferenceName(kind, item))}</option>`
+        )
+        .join('');
+    const items = ids.length
+        ? references
+              .map(({ id, index, item }, visibleIndex) => {
+                  const title = presentationReferenceName(kind, item) || '记录未找到';
+                  const previousIndex = visibleIndex > 0 ? references[visibleIndex - 1].index : '';
+                  const nextIndex = visibleIndex < references.length - 1 ? references[visibleIndex + 1].index : '';
+                  return `<div class="presentation-reference-list-item" data-reference-index="${index}"><details><summary>${escapeHtml(title)}</summary><div class="presentation-reference-item-detail">${renderPresentationReferenceCard(kind, id)}</div></details><div class="collection-actions"><button type="button" data-presentation-reference-action="up" data-reference-swap-index="${previousIndex}" title="上移"${visibleIndex === 0 ? ' disabled' : ''}>↑</button><button type="button" data-presentation-reference-action="down" data-reference-swap-index="${nextIndex}" title="下移"${visibleIndex === references.length - 1 ? ' disabled' : ''}>↓</button><button type="button" class="danger" data-presentation-reference-action="remove">移除</button></div></div>`;
+              })
+              .join('')
+        : `<div class="collection-empty">${escapeHtml(config.emptyText || '尚未选择内容。')}</div>`;
+    const className = config.className ? ` ${escapeHtml(config.className)}` : '';
+    return `<section class="presentation-reference-manager span-2${className}" data-presentation-reference-field="${escapeHtml(field)}"><div class="presentation-reference-manager-heading"><div><strong>${escapeHtml(label)}</strong><span class="badge">${ids.length}</span></div><div class="inline-actions"><select data-presentation-reference-select aria-label="选择要添加的${escapeHtml(label)}"><option value="">${available.length ? '选择内容' : '没有更多可添加内容'}</option>${options}</select><button type="button" data-presentation-reference-action="add"${available.length ? '' : ' disabled'}>添加</button></div></div><div class="presentation-reference-list">${items}</div></section>`;
 }
 
 function renderCommentarySections(sections, prefix) {
@@ -746,13 +1210,12 @@ function renderCommentarySections(sections, prefix) {
                   .map((section, index) => {
                       const label = section.label || {};
                       const html = section.html || {};
-                      return `<article class="presentation-section-item" data-presentation-section-index="${index}"><div class="collection-item-heading"><div><strong>段落 ${index + 1}</strong><span class="muted">${escapeHtml(section.id || '未命名')}</span></div><div class="collection-actions"><button type="button" data-presentation-action="up-section">↑</button><button type="button" data-presentation-action="down-section">↓</button><button type="button" class="danger" data-presentation-action="remove-section">移除</button></div></div><div class="form-grid">
-            ${formInput('段落 ID', presentationFieldPath(prefix, `commentarySections.${index}.id`), section.id)}
-            ${formInput('中文标题', presentationFieldPath(prefix, `commentarySections.${index}.label.zh`), localizedValue(label, 'zh'))}
-            ${formInput('英文标题', presentationFieldPath(prefix, `commentarySections.${index}.label.en`), localizedValue(label, 'en'))}
-            ${formTextarea('中文正文', presentationFieldPath(prefix, `commentarySections.${index}.html.zh`), localizedValue(html, 'zh'), { className: 'medium' })}
-            ${formTextarea('英文正文', presentationFieldPath(prefix, `commentarySections.${index}.html.en`), localizedValue(html, 'en'), { className: 'medium' })}
-            ${formTextarea('来源 ID（每行一个）', presentationFieldPath(prefix, `commentarySections.${index}.sourceIds`), collectionOptions(section.sourceIds).join('\n'), { className: 'short', format: 'lines', span: true })}
+                      return `<article class="presentation-section-item" data-presentation-section-index="${index}"><div class="collection-item-heading"><div><strong>段落 ${index + 1}</strong></div><div class="collection-actions"><button type="button" data-presentation-action="up-section">↑</button><button type="button" data-presentation-action="down-section">↓</button><button type="button" class="danger" data-presentation-action="remove-section">移除</button></div></div><div class="form-grid">
+            ${formInput('中文标题', presentationFieldPath(prefix, `commentarySections.${index}.label.zh`), localizedValue(label, 'zh'), { required: true })}
+            ${formInput('英文标题', presentationFieldPath(prefix, `commentarySections.${index}.label.en`), localizedValue(label, 'en'), { required: true })}
+            ${formTextarea('中文正文', presentationFieldPath(prefix, `commentarySections.${index}.html.zh`), localizedValue(html, 'zh'), { className: 'medium', required: true })}
+            ${formTextarea('英文正文', presentationFieldPath(prefix, `commentarySections.${index}.html.en`), localizedValue(html, 'en'), { className: 'medium', required: true })}
+            ${renderPresentationReferenceList('段落来源（内部用途）', `commentarySections.${index}.sourceIds`, section.sourceIds, 'source')}
         </div></article>`;
                   })
                   .join('')
@@ -760,39 +1223,50 @@ function renderCommentarySections(sections, prefix) {
     }</div>`;
 }
 
-function renderPresentationForm(presentation, prefix, title) {
+function renderPresentationReview(review, prefix) {
+    const notes = review.notes || {};
+    return `<section class="presentation-review-card"><div><h3>审核信息</h3><p class="muted">仅用于内容维护，不在展示页中出现。</p></div><div class="form-grid">
+        ${formSelect('审核状态', presentationFieldPath(prefix, 'review.status'), review.status || 'draft', [
+            ['draft', '草稿'],
+            ['needs-source', '待补来源'],
+            ['verified', '已核验'],
+            ['disputed', '有争议'],
+            ['deprecated', '已停用']
+        ])}
+        ${formInput('审核人', presentationFieldPath(prefix, 'review.reviewer'), review.reviewer)}
+        ${internalNoteField(presentationFieldPath(prefix, 'review.notes'), notes, { label: '审核备注', className: 'short', span: true })}
+    </div></section>`;
+}
+
+function renderPresentationForm(presentation, prefix) {
     const review = presentation.review || {};
-    const reviewNotes = review.notes || {};
-    return `<section class="structured-section presentation-editor"><div class="section-heading"><div><h3>${escapeHtml(title)}</h3><p class="muted">常用展示字段已结构化；未接入的特殊模块仍可在高级 JSON 中维护。</p></div></div><div class="form-grid">
+    return `<section class="structured-section presentation-editor"><div class="form-grid">
         ${localizedFields(presentationFieldPath(prefix, 'displayTitle'), presentation.displayTitle, { label: '展示标题', className: 'short' })}
         ${localizedFields(presentationFieldPath(prefix, 'displaySummary'), presentation.displaySummary, { label: '展示摘要', className: 'short' })}
         ${localizedFields(presentationFieldPath(prefix, 'displayDescription'), presentation.displayDescription, { label: '展示描述', className: 'medium', span: true })}
-        ${formSelect(
-            '展示模式',
-            presentationFieldPath(prefix, 'presentationMode'),
-            presentation.presentationMode || 'preserve-legacy',
-            [
-                ['preserve-legacy', 'preserve-legacy'],
-                ['archive', 'archive']
-            ]
+        ${renderPresentationReferenceField(
+            '首图资产',
+            presentationFieldPath(prefix, 'overviewImageAssetId'),
+            presentation.overviewImageAssetId,
+            'asset',
+            {
+                emptySummary: '未设置，默认使用展示图片第一张',
+                emptyText: '未设置首图资产时，将默认使用“展示图片”中的第一张图片。'
+            }
         )}
-        ${formInput('视觉类型', presentationFieldPath(prefix, 'visual'), presentation.visual)}
-        ${formInput('首图资产 ID', presentationFieldPath(prefix, 'overviewImageAssetId'), presentation.overviewImageAssetId)}
-        ${formInput('Quiz ID', presentationFieldPath(prefix, 'quizId'), presentation.quizId)}
-        ${formTextarea('强调项 ID（每行一个）', presentationFieldPath(prefix, 'emphasis'), collectionOptions(presentation.emphasis).join('\n'), { className: 'short', format: 'lines' })}
-        ${formTextarea('资产 ID（每行一个）', presentationFieldPath(prefix, 'assetIds'), collectionOptions(presentation.assetIds).join('\n'), { className: 'short', format: 'lines' })}
-        ${formTextarea('来源 ID（每行一个）', presentationFieldPath(prefix, 'sourceIds'), collectionOptions(presentation.sourceIds).join('\n'), { className: 'short', format: 'lines' })}
-        ${formTextarea('Claim ID（每行一个）', presentationFieldPath(prefix, 'claimIds'), collectionOptions(presentation.claimIds).join('\n'), { className: 'short', format: 'lines' })}
-        ${formSelect('审核状态', presentationFieldPath(prefix, 'review.status'), review.status || 'draft', [
-            ['draft', 'draft'],
-            ['needs-source', 'needs-source'],
-            ['verified', 'verified'],
-            ['disputed', 'disputed'],
-            ['deprecated', 'deprecated']
-        ])}
-        ${formInput('审核人', presentationFieldPath(prefix, 'review.reviewer'), review.reviewer)}
-        ${localizedFields(presentationFieldPath(prefix, 'review.notes'), reviewNotes, { label: '审核备注', className: 'short' })}
-    </div>${renderCommentarySections(presentation.commentarySections, prefix)}</section>`;
+        ${renderPresentationReferenceField('Quiz', presentationFieldPath(prefix, 'quizId'), presentation.quizId, 'quiz')}
+        ${renderPresentationReferenceList('展示图片', 'assetIds', presentation.assetIds, 'asset', {
+            filter: isPresentationImageAsset,
+            className: 'is-image-assets',
+            emptyText: '尚未选择展示图片。'
+        })}
+        ${renderPresentationReferenceList('展示音视频', 'assetIds', presentation.assetIds, 'asset', {
+            filter: isPresentationAudioVideoAsset,
+            className: 'is-audio-video-assets',
+            emptyText: '尚未选择展示音频或视频。'
+        })}
+        ${renderPresentationReferenceList('展示来源', 'sourceIds', presentation.sourceIds, 'source')}
+    </div>${renderCommentarySections(presentation.commentarySections, prefix)}${renderPresentationReview(review, prefix)}</section>`;
 }
 
 function collectionOptions(value, fallback = []) {
@@ -804,20 +1278,44 @@ function collectionField(label, path, value, options = {}) {
         return formTextarea(label, path, value, {
             className: options.className || 'short',
             format: options.format,
-            span: options.span
+            span: options.span,
+            required: options.required,
+            requiredMark: options.requiredMark,
+            requiredTitle: options.requiredTitle
         });
     if (options.kind === 'select')
-        return formSelect(label, path, value, options.options || [], { span: options.span, format: options.format });
-    return formInput(label, path, value, { format: options.format, type: options.type, span: options.span });
+        return formSelect(label, path, value, options.options || [], {
+            span: options.span,
+            format: options.format,
+            required: options.required,
+            requiredMark: options.requiredMark,
+            requiredTitle: options.requiredTitle
+        });
+    return formInput(label, path, value, {
+        format: options.format,
+        type: options.type,
+        span: options.span,
+        required: options.required,
+        requiredMark: options.requiredMark,
+        requiredTitle: options.requiredTitle,
+        disabled: options.disabled,
+        readOnly: options.readOnly,
+        pattern: options.pattern,
+        placeholder: options.placeholder
+    });
 }
 
 function sourceItemForm(item, index) {
     const source = item || {};
     const notes = source.notes || {};
-    return `<article class="collection-item" data-collection-index="${index}"><div class="collection-item-heading"><div><strong>来源 ${index + 1}</strong><span class="muted">${escapeHtml(source.id || '未命名')}</span></div><div class="collection-actions"><button type="button" data-collection-action="up">↑</button><button type="button" data-collection-action="down">↓</button><button type="button" data-collection-action="duplicate">复制</button><button type="button" class="danger" data-collection-action="remove">移除</button></div></div><div class="form-grid">
-        ${collectionField('来源 ID', 'id', source.id)}
+    return `<article class="collection-item" data-collection-index="${index}"><div class="collection-item-heading"><div><strong>来源 ${index + 1}</strong><span class="muted">${escapeHtml(source.id || '保存时生成 ID')}</span></div><div class="collection-actions"><button type="button" data-collection-action="up">↑</button><button type="button" data-collection-action="down">↓</button><button type="button" data-collection-action="duplicate">复制</button><button type="button" class="danger" data-collection-action="remove">移除</button></div></div><div class="form-grid">
+        ${localizedFields('label', source.label, { label: '标签', className: 'short', required: true })}
+        ${localizedFields('title', source.title, { label: '标题', className: 'short', required: true })}
+        ${collectionField('URL（与 DOI 至少填写一项）', 'url', source.url, { span: true, requiredMark: true, requiredTitle: 'URL 或 DOI 至少填写一项' })}
+    </div><details class="collection-more"><summary>更多（内部用途）</summary><div class="form-grid">
         ${collectionField('类型', 'type', source.type, {
             kind: 'select',
+            required: true,
             options: [
                 ['paper', 'paper'],
                 ['paper-page', 'paper-page'],
@@ -829,6 +1327,11 @@ function sourceItemForm(item, index) {
                 ['profile', 'profile'],
                 ['archive', 'archive'],
                 ['article', 'article'],
+                ['encyclopedia-entry', 'encyclopedia-entry'],
+                ['personal-page', 'personal-page'],
+                ['paper-index', 'paper-index'],
+                ['paper-file', 'paper-file'],
+                ['book-page', 'book-page'],
                 ['news', 'news'],
                 ['report', 'report'],
                 ['image-source', 'image-source'],
@@ -838,16 +1341,13 @@ function sourceItemForm(item, index) {
                 ['internal-record', 'internal-record']
             ]
         })}
-        ${localizedFields('label', source.label, { label: '标签', className: 'short' })}
-        ${localizedFields('title', source.title, { label: '标题', className: 'short' })}
         ${collectionField('作者（每行一个）', 'authors', collectionOptions(source.authors).join('\n'), { kind: 'textarea', format: 'lines' })}
         ${collectionField('年份', 'year', source.year)}
         ${collectionField('语言', 'language', source.language)}
-        ${collectionField('URL', 'url', source.url, { span: true })}
-        ${collectionField('DOI', 'doi', source.doi)}
-        ${collectionField('档案地址', 'archiveUrl', source.archiveUrl)}
+        ${collectionField('DOI（与 URL 至少填写一项）', 'doi', source.doi, { requiredMark: true, requiredTitle: 'URL 或 DOI 至少填写一项' })}
         ${collectionField('用途', 'purpose', source.purpose, {
             kind: 'select',
+            required: true,
             options: [
                 ['core-evidence', 'core-evidence'],
                 ['precursor', 'precursor'],
@@ -868,6 +1368,7 @@ function sourceItemForm(item, index) {
         })}
         ${collectionField('可靠性', 'reliability', source.reliability, {
             kind: 'select',
+            required: true,
             options: [
                 ['primary', 'primary'],
                 ['secondary', 'secondary'],
@@ -875,36 +1376,213 @@ function sourceItemForm(item, index) {
                 ['reference-only', 'reference-only']
             ]
         })}
-        ${localizedFields('notes', notes, { label: '备注', className: 'short', span: true })}
-    </div></article>`;
+        ${internalNoteField('notes', notes, { label: '备注', className: 'short', span: true })}
+    </div></details></article>`;
 }
 
-function claimItemForm(item, index) {
-    const claim = item || {};
-    return `<article class="collection-item" data-collection-index="${index}"><div class="collection-item-heading"><div><strong>事实主张 ${index + 1}</strong><span class="muted">${escapeHtml(claim.id || '未命名')}</span></div><div class="collection-actions"><button type="button" data-collection-action="up">↑</button><button type="button" data-collection-action="down">↓</button><button type="button" data-collection-action="duplicate">复制</button><button type="button" class="danger" data-collection-action="remove">移除</button></div></div><div class="form-grid">
-        ${collectionField('主张 ID', 'id', claim.id)}
-        ${collectionField('重要级别', 'importance', claim.importance, {
-            kind: 'select',
-            options: [
-                ['core', 'core'],
-                ['context', 'context'],
-                ['detail', 'detail'],
-                ['display', 'display']
-            ]
-        })}
-        ${localizedFields('text', claim.text, { label: '事实内容', className: 'medium', span: true })}
-        ${collectionField('来源 ID（每行一个）', 'sourceIds', collectionOptions(claim.sourceIds).join('\n'), { kind: 'textarea', format: 'lines' })}
-        ${collectionField('状态', 'status', claim.status || 'draft', {
-            kind: 'select',
-            options: [
-                ['draft', 'draft'],
-                ['needs-source', 'needs-source'],
-                ['verified', 'verified'],
-                ['disputed', 'disputed'],
-                ['deprecated', 'deprecated']
-            ]
-        })}
-    </div></article>`;
+function assetSourceIds(asset) {
+    if (Array.isArray(asset.sourceIds)) return asset.sourceIds.filter(Boolean);
+    return asset.sourceId ? [asset.sourceId] : [];
+}
+
+function assetSourceName(source) {
+    return (
+        localizedValue(source && source.title, 'zh') ||
+        localizedValue(source && source.title, 'en') ||
+        localizedValue(source && source.label, 'zh') ||
+        localizedValue(source && source.label, 'en') ||
+        (source && source.id) ||
+        '未命名来源'
+    );
+}
+
+const assetRoleOptionsByType = {
+    image: [
+        ['portrait', '人物肖像 · portrait'],
+        ['supporting-portrait', '补充人物肖像 · supporting-portrait'],
+        ['team-photo', '团队照片 · team-photo'],
+        ['team-portrait', '团队肖像 · team-portrait'],
+        ['hero-image', '首图 · hero-image'],
+        ['supporting-image', '补充图片 · supporting-image'],
+        ['architecture-explainer', '架构解释图 · architecture-explainer'],
+        ['algorithm-explainer', '算法解释图 · algorithm-explainer'],
+        ['annual-achievement-explainer', '年度成就解释图 · annual-achievement-explainer'],
+        ['paper-page', '论文页面 · paper-page'],
+        ['paper-figure', '论文图表 · paper-figure'],
+        ['paper-reference', '论文资料 · paper-reference'],
+        ['primary-source', '一手资料 · primary-source'],
+        ['source-card', '来源卡片 · source-card'],
+        ['research-result', '研究结果 · research-result'],
+        ['historical-photo', '历史照片 · historical-photo'],
+        ['historical-diagram', '历史图示 · historical-diagram'],
+        ['historical-reconstruction', '历史重建图 · historical-reconstruction'],
+        ['event-reference', '事件资料 · event-reference'],
+        ['artifact-reference', '实物资料 · artifact-reference'],
+        ['book-cover', '书籍封面 · book-cover'],
+        ['title-reference', '标题资料 · title-reference'],
+        ['venue-photo', '场地照片 · venue-photo'],
+        ['project-identity', '项目标识 · project-identity'],
+        ['film-still', '影片剧照 · film-still'],
+        ['promotional-still', '宣传剧照 · promotional-still'],
+        ['movie-poster', '电影海报 · movie-poster'],
+        ['film-poster', '影片海报 · film-poster'],
+        ['film-production', '影片制作资料 · film-production'],
+        ['game-record-image', '对局记录图 · game-record-image'],
+        ['game-analysis-image', '对局分析图 · game-analysis-image'],
+        ['game-comparison-image', '对局对比图 · game-comparison-image'],
+        ['gameplay-image', '游戏画面 · gameplay-image'],
+        ['game-evolution-poster', '对局演化封面 · game-evolution-poster'],
+        ['paper-case-poster', '论文案例封面 · paper-case-poster'],
+        ['work-illustration', '作品插图 · work-illustration']
+    ],
+    svg: [
+        ['architecture-explainer', '架构解释图 · architecture-explainer'],
+        ['algorithm-explainer', '算法解释图 · algorithm-explainer'],
+        ['annual-achievement-explainer', '年度成就解释图 · annual-achievement-explainer'],
+        ['paper-page', '论文页面 · paper-page'],
+        ['historical-diagram', '历史图示 · historical-diagram'],
+        ['title-reference', '标题资料 · title-reference'],
+        ['game-analysis-image', '对局分析图 · game-analysis-image'],
+        ['supporting-image', '补充图片 · supporting-image']
+    ],
+    gif: [
+        ['game-record-animation', '对局动画 · game-record-animation'],
+        ['portrait', '人物肖像 · portrait'],
+        ['hero-image', '首图 · hero-image'],
+        ['supporting-image', '补充图片 · supporting-image']
+    ],
+    audio: [['audio-narration', '事件讲解音频 · audio-narration']],
+    video: [
+        ['game-evolution-video', '对局演化视频 · game-evolution-video'],
+        ['paper-case-video', '论文案例视频 · paper-case-video']
+    ]
+};
+
+function assetRoleOptions(type, currentRole = '') {
+    const options = assetRoleOptionsByType[type] || assetRoleOptionsByType.image;
+    if (!currentRole || options.some(([value]) => value === currentRole)) return options;
+    return [[currentRole, `${currentRole}（历史值）`], ...options];
+}
+
+function defaultAssetRole(type) {
+    return {
+        image: 'supporting-image',
+        svg: 'architecture-explainer',
+        gif: 'game-record-animation',
+        audio: 'audio-narration',
+        video: 'game-evolution-video'
+    }[type];
+}
+
+function generatedAssetPath(assetId, type) {
+    const config = {
+        image: ['images', 'png'],
+        svg: ['images', 'svg'],
+        gif: ['images', 'gif'],
+        video: ['videos', 'mp4']
+    }[type];
+    if (!assetId || !config || !state.entityId) return '';
+    return `resources/${config[0]}/${state.entityId}/${assetId}.${config[1]}`;
+}
+
+function isGeneratedAssetPath(assetId, value) {
+    if (!assetId || !value || !state.entityId) return false;
+    const escapedEventId = state.entityId.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const escapedAssetId = assetId.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return new RegExp(
+        `^resources\\/(?:images|audio|videos)\\/${escapedEventId}\\/${escapedAssetId}\\.[a-z0-9]+$`,
+        'i'
+    ).test(value);
+}
+
+function audioUrlValue(asset) {
+    if (asset.deliveryUrl) return asset.deliveryUrl;
+    if (/^https:\/\//i.test(String(asset.path || ''))) return asset.path;
+    return (asset.storage && asset.storage.publicUrl) || '';
+}
+
+function audioContentTypeForUrl(value) {
+    const extension = String(value || '')
+        .split(/[?#]/, 1)[0]
+        .split('.')
+        .pop()
+        .toLowerCase();
+    return (
+        {
+            aac: 'audio/aac',
+            m4a: 'audio/mp4',
+            mp3: 'audio/mpeg',
+            ogg: 'audio/ogg',
+            wav: 'audio/wav'
+        }[extension] || 'audio/mpeg'
+    );
+}
+
+function audioObjectNameForUrl(value, assetId) {
+    try {
+        const url = new window.URL(value);
+        const releasePrefix = '/audio/ai-history/releases/';
+        const prefixIndex = url.pathname.indexOf(releasePrefix);
+        const relativePath = prefixIndex >= 0 ? url.pathname.slice(prefixIndex + releasePrefix.length) : '';
+        const fileName = relativePath || url.pathname.split('/').filter(Boolean).pop();
+        return decodeURIComponent(fileName || `${assetId}.mp3`);
+    } catch {
+        return `${assetId}.mp3`;
+    }
+}
+
+function applyAudioDeliveryUrl(asset, value) {
+    const url = String(value || '').trim();
+    asset.deliveryUrl = url;
+    asset.path = url;
+    const profileId = asset.storage && (asset.storage.profileId || asset.storage.profile);
+    asset.storage = {
+        ...(profileId ? { profileId } : {}),
+        objectName: audioObjectNameForUrl(url, asset.id),
+        contentType: audioContentTypeForUrl(url)
+    };
+}
+
+function validatePendingAssetRequirements() {
+    if (state.type !== 'events' || state.file !== 'assets.json' || !Array.isArray(state.document)) return;
+    for (const assetId of state.pendingAssetIds) {
+        const asset = state.document.find((candidate) => candidate && candidate.id === assetId);
+        if (!asset) continue;
+        if (['image', 'gif'].includes(asset.type) && (!asset.path || state.pendingAssetPaths.has(asset.path))) {
+            throw new Error(`请先为新增图片“${asset.id}”上传文件或填写图片 URL 并导入`);
+        }
+        if (asset.type === 'audio' && !/^https:\/\/\S+$/i.test(audioUrlValue(asset))) {
+            throw new Error(`新增音频“${asset.id}”必须填写 HTTPS OSS 音频 URL`);
+        }
+    }
+}
+
+function renderAssetImageImport(asset) {
+    if (!state.pendingAssetPaths.has(asset.path) || !['image', 'gif'].includes(asset.type)) return '';
+    return `<section class="asset-image-import" data-asset-image-import><strong>${fieldLabel('导入图片', true, '上传文件或填写图片 URL')}</strong><label><span>本地图片</span><input type="file" accept="image/png,image/jpeg,image/gif,image/webp" data-asset-image-file></label><div class="asset-image-import-separator">或</div><label><span>图片 URL</span><input type="url" placeholder="https://..." data-asset-image-url></label><button type="button" class="primary" data-asset-image-action="import">导入到内部资源</button><p class="muted">支持 PNG、JPEG、GIF、WebP，最大 10 MB。URL 图片将由 Admin 下载并保存到自动生成的内部路径。</p></section>`;
+}
+
+function renderAssetSourceManager(asset) {
+    const selectedIds = assetSourceIds(asset);
+    const sourceMap = new Map(state.assetSources.map((source) => [source.id, source]));
+    const available = state.assetSources.filter((source) => !selectedIds.includes(source.id));
+    const availableOptions = available
+        .map(
+            (source) =>
+                `<option value="${escapeHtml(source.id)}">${escapeHtml(assetSourceName(source))} · ${escapeHtml(source.id)}</option>`
+        )
+        .join('');
+    const selectedItems = selectedIds.length
+        ? selectedIds
+              .map((sourceId) => {
+                  const source = sourceMap.get(sourceId);
+                  const name = source ? assetSourceName(source) : `${sourceId}（当前来源列表中不存在）`;
+                  return `<div class="asset-source-item" data-asset-source-value="${escapeHtml(sourceId)}"><div><strong>${escapeHtml(name)}</strong><span>${escapeHtml(sourceId)}</span></div><button type="button" class="danger" data-asset-source-action="remove" data-asset-source-id="${escapeHtml(sourceId)}">移除</button></div>`;
+              })
+              .join('')
+        : '<div class="asset-source-empty">尚未选择来源，保存校验不会通过。</div>';
+    const emptyOption = state.assetSources.length ? '选择当前事件的已有来源' : '当前事件暂无来源，请先到“来源”Tab 创建';
+    return `<section class="asset-source-manager span-2" data-asset-source-manager aria-required="true"><div class="asset-source-manager-heading"><div><strong>${fieldLabel('来源', true)}</strong><span class="badge">${selectedIds.length}</span></div><div class="inline-actions"><select data-asset-source-select aria-label="选择资产来源"${available.length ? '' : ' disabled'}><option value="">${emptyOption}</option>${availableOptions}</select><button type="button" data-asset-source-action="add" disabled>添加</button></div></div><div class="asset-source-list">${selectedItems}</div><p class="muted">这里只能添加当前事件已有的来源信息；如需新增来源，请先到“来源”Tab 创建并保存。每个资产至少选择一项来源。</p></section>`;
 }
 
 function assetItemForm(item, index) {
@@ -912,41 +1590,99 @@ function assetItemForm(item, index) {
     const rights = asset.rights || {};
     const license = rights.license || {};
     const usage = rights.usage || {};
-    const storage = asset.storage || {};
-    return `<article class="collection-item" data-collection-index="${index}"><div class="collection-item-heading"><div><strong>资产 ${index + 1}</strong><span class="muted">${escapeHtml(asset.id || '未命名')}</span></div><div class="collection-actions"><button type="button" data-collection-action="up">↑</button><button type="button" data-collection-action="down">↓</button><button type="button" data-collection-action="duplicate">复制</button><button type="button" class="danger" data-collection-action="remove">移除</button></div></div><div class="form-grid">
-        ${collectionField('资产 ID', 'id', asset.id)}
-        ${collectionField('类型', 'type', asset.type, {
-            kind: 'select',
-            options: [
-                ['image', 'image'],
-                ['svg', 'svg'],
-                ['gif', 'gif'],
-                ['audio', 'audio'],
-                ['video', 'video']
-            ]
-        })}
-        ${collectionField('角色', 'role', asset.role)}
-        ${collectionField('资源路径', 'path', asset.path, { span: true })}
-        ${localizedFields('caption', asset.caption, { label: '标题', className: 'short' })}
-        ${localizedFields('subcaption', asset.subcaption, { label: '副标题', className: 'short' })}
-        ${collectionField('语言', 'language', asset.language)}
-        ${collectionField('来源 ID', 'sourceId', asset.sourceId)}
-        ${collectionField('来源 ID（多个）', 'sourceIds', collectionOptions(asset.sourceIds).join('\n'), { kind: 'textarea', format: 'lines' })}
-        ${collectionField('人物 ID（每行一个）', 'figureIds', collectionOptions(asset.figureIds).join('\n'), { kind: 'textarea', format: 'lines' })}
-        ${collectionField('delivery URL', 'deliveryUrl', asset.deliveryUrl, { span: true })}
-        ${collectionField('使用位置（每行一个）', 'usage', collectionOptions(asset.usage).join('\n'), { kind: 'textarea', format: 'lines' })}
+    const isImage = asset.type === 'image';
+    const isImportableImage = ['image', 'gif'].includes(asset.type);
+    const isPendingImage = isImportableImage && state.pendingAssetPaths.has(asset.path);
+    const isAudio = asset.type === 'audio';
+    const resourceField = isAudio
+        ? collectionField('OSS 音频 URL', 'deliveryUrl', audioUrlValue(asset), {
+              type: 'url',
+              span: true,
+              required: true,
+              pattern: 'https://.*',
+              placeholder: 'https://...'
+          })
+        : isPendingImage
+          ? ''
+          : collectionField(isImportableImage ? '内部资源路径（导入后自动回填）' : '资源路径', 'path', asset.path, {
+                span: true,
+                required: true,
+                readOnly: isImportableImage
+            });
+    const technicalFields = `${collectionField('类型', 'type', asset.type, {
+        kind: 'select',
+        required: true,
+        options: [
+            ['image', 'image'],
+            ['svg', 'svg'],
+            ['gif', 'gif'],
+            ['audio', 'audio'],
+            ['video', 'video']
+        ]
+    })}${collectionField('角色', 'role', asset.role, {
+        kind: 'select',
+        required: true,
+        options: assetRoleOptions(asset.type, asset.role)
+    })}${resourceField}${renderAssetSourceManager(asset)}`;
+    const descriptionFields = `${localizedFields('caption', asset.caption, { label: '标题', className: 'short', required: true })}
+        ${localizedFields('subcaption', asset.subcaption, { label: '副标题', className: 'short' })}`;
+    const internalUsageFields = `${collectionField('使用位置（每行一个）', 'usage', collectionOptions(asset.usage).join('\n'), { kind: 'textarea', format: 'lines' })}
         ${collectionField('版权状态', 'rights.status', rights.status)}
-        ${localizedFields('rights.license', license, { label: '许可', className: 'short' })}
-        ${localizedFields('rights.usage', usage, { label: '使用说明', className: 'short' })}
-        <div class="asset-storage-fields span-2"><h4>音频 / 视频存储（按需填写）</h4><div class="form-grid">
-            ${collectionField('存储 profile', 'storage.profileId', storage.profileId)}
-            ${collectionField('provider', 'storage.provider', storage.provider)}
-            ${collectionField('bucket', 'storage.bucket', storage.bucket)}
-            ${collectionField('object key', 'storage.objectKey', storage.objectKey)}
-            ${collectionField('content type', 'storage.contentType', storage.contentType)}
-            ${collectionField('public URL', 'storage.publicUrl', storage.publicUrl, { span: true })}
-        </div></div>
-    </div></article>`;
+        ${internalNoteField('rights.license', license, { label: '许可', className: 'short' })}
+        ${internalNoteField('rights.usage', usage, { label: '使用说明', className: 'short' })}`;
+    const internalUsagePanel = `<details class="collection-more asset-internal-usage"><summary>更多（内部用途）</summary><div class="form-grid">${internalUsageFields}</div></details>`;
+    const content = isImage
+        ? `<div class="asset-image-layout"><div class="asset-image-sidebar">${renderAssetMedia(asset)}${renderAssetImageImport(asset)}</div><div class="form-grid asset-image-primary-fields">${technicalFields}${descriptionFields}</div><div class="form-grid asset-image-supplemental-fields" hidden></div></div>`
+        : `${renderAssetMedia(asset)}${renderAssetImageImport(asset)}<div class="form-grid">${technicalFields}${isAudio ? collectionField('语言', 'language', asset.language || 'zh', { required: true }) : ''}${descriptionFields}</div>`;
+    return `<article class="collection-item" data-collection-index="${index}"><div class="collection-item-heading"><div><strong>资产 ${index + 1}</strong></div><div class="collection-actions"><button type="button" data-collection-action="up">↑</button><button type="button" data-collection-action="down">↓</button><button type="button" data-collection-action="duplicate">复制</button><button type="button" class="danger" data-collection-action="remove">移除</button></div></div>${content}${internalUsagePanel}</article>`;
+}
+
+let imageAssetLayoutFrame = 0;
+
+function balanceImageAssetLayout(layout) {
+    const primary = layout.querySelector('.asset-image-primary-fields');
+    const supplemental = layout.querySelector('.asset-image-supplemental-fields');
+    const preview = layout.querySelector('.asset-image-sidebar .asset-media-preview');
+    if (!primary || !supplemental || !preview) return;
+    const fields = [...primary.children, ...supplemental.children]
+        .map((field, index) => {
+            if (!field.dataset.assetFieldOrder) field.dataset.assetFieldOrder = String(index + 1);
+            return field;
+        })
+        .sort((left, right) => Number(left.dataset.assetFieldOrder) - Number(right.dataset.assetFieldOrder));
+    fields.forEach((field) => primary.append(field));
+    supplemental.hidden = true;
+    const columns = window.getComputedStyle(layout).gridTemplateColumns.split(' ').filter(Boolean);
+    if (columns.length < 2) return;
+    const availableHeight = preview.getBoundingClientRect().height;
+    const rowGap = Number.parseFloat(window.getComputedStyle(primary).rowGap) || 0;
+    let usedHeight = 0;
+    let visibleCount = 0;
+    for (const field of fields) {
+        const fieldHeight = field.getBoundingClientRect().height;
+        const nextHeight = usedHeight + (visibleCount ? rowGap : 0) + fieldHeight;
+        if (visibleCount > 0 && nextHeight > availableHeight) break;
+        usedHeight = nextHeight;
+        visibleCount += 1;
+    }
+    fields.slice(Math.max(visibleCount, 1)).forEach((field) => supplemental.append(field));
+    supplemental.hidden = supplemental.children.length === 0;
+}
+
+function balanceImageAssetLayouts() {
+    elements.structuredEditor.querySelectorAll('.asset-image-layout').forEach((layout) => {
+        const image = layout.querySelector('.asset-image-sidebar img');
+        if (image && !image.complete) {
+            image.addEventListener('load', scheduleImageAssetLayout, { once: true });
+            image.addEventListener('error', scheduleImageAssetLayout, { once: true });
+        }
+        balanceImageAssetLayout(layout);
+    });
+}
+
+function scheduleImageAssetLayout() {
+    window.cancelAnimationFrame(imageAssetLayoutFrame);
+    imageAssetLayoutFrame = window.requestAnimationFrame(balanceImageAssetLayouts);
 }
 
 function quizItemForm(item, index) {
@@ -956,13 +1692,10 @@ function quizItemForm(item, index) {
         String(optionIndex),
         `选项 ${optionIndex + 1} · ${localizedValue(option.text || option, 'zh') || localizedValue(option.text || option, 'en') || '未填写'}`
     ]);
-    return `<article class="collection-item" data-collection-index="${index}"><div class="collection-item-heading"><div><strong>Quiz ${index + 1}</strong><span class="muted">${escapeHtml(quiz.id || '未命名')}</span></div><div class="collection-actions"><button type="button" data-collection-action="up">↑</button><button type="button" data-collection-action="down">↓</button><button type="button" data-collection-action="duplicate">复制</button><button type="button" class="danger" data-collection-action="remove">移除</button></div></div><div class="form-grid">
-        ${collectionField('Quiz ID', 'id', quiz.id)}
-        ${localizedFields('question', quiz.question, { label: '题目', className: 'medium', span: true })}
+    return `<article class="collection-item" data-collection-index="${index}"><div class="collection-item-heading"><div><strong>Quiz ${index + 1}</strong></div><div class="collection-actions"><button type="button" data-collection-action="up">↑</button><button type="button" data-collection-action="down">↓</button><button type="button" data-collection-action="duplicate">复制</button><button type="button" class="danger" data-collection-action="remove">移除</button></div></div><div class="form-grid">
+        ${localizedFields('question', quiz.question, { label: '题目', className: 'medium', span: true, required: true })}
         ${localizedFields('explanation', quiz.explanation, { label: '解析', className: 'short', span: true })}
-        ${collectionField('来源 ID（每行一个）', 'sourceIds', collectionOptions(quiz.sourceIds).join('\n'), { kind: 'textarea', format: 'lines' })}
-        ${collectionField('资产 ID（每行一个）', 'assetIds', collectionOptions(quiz.assetIds).join('\n'), { kind: 'textarea', format: 'lines' })}
-        ${formSelect('正确答案', 'answer', String(Number.isInteger(quiz.answer) ? quiz.answer : 0), answerOptions, { format: 'number' })}
+        ${formSelect('正确答案', 'answer', String(Number.isInteger(quiz.answer) ? quiz.answer : 0), answerOptions, { format: 'number', required: true })}
         <div class="quiz-options span-2"><div class="subsection-heading"><strong>选项</strong><button type="button" data-quiz-action="add-option">添加选项</button></div>${options
             .map((option, optionIndex) => {
                 const optionText = option && typeof option === 'object' && option.text ? option.text : option;
@@ -970,10 +1703,21 @@ function quizItemForm(item, index) {
                     option && typeof option === 'object' && option.text
                         ? `options.${optionIndex}.text`
                         : `options.${optionIndex}`;
-                return `<div class="quiz-option-row" data-option-index="${optionIndex}"><span class="muted">${optionIndex + 1}</span>${formInput('中文', `${optionPath}.zh`, localizedValue(optionText, 'zh'))}${formInput('英文', `${optionPath}.en`, localizedValue(optionText, 'en'))}<button type="button" data-quiz-action="remove-option">移除</button></div>`;
+                return `<div class="quiz-option-row" data-option-index="${optionIndex}"><span class="muted">${optionIndex + 1}</span>${formInput('中文', `${optionPath}.zh`, localizedValue(optionText, 'zh'), { required: true })}${formInput('英文', `${optionPath}.en`, localizedValue(optionText, 'en'), { required: true })}<button type="button" data-quiz-action="remove-option">移除</button></div>`;
             })
             .join('')}</div>
     </div></article>`;
+}
+
+function nextCollectionId(prefix) {
+    const base = `${prefix}-${state.entityId || 'item'}`;
+    const existingIds = new Set(
+        (Array.isArray(state.document) ? state.document : []).map((item) => String((item && item.id) || ''))
+    );
+    if (!existingIds.has(base)) return base;
+    let suffix = 2;
+    while (existingIds.has(`${base}-${suffix}`)) suffix += 1;
+    return `${base}-${suffix}`;
 }
 
 function collectionConfig(file) {
@@ -981,40 +1725,43 @@ function collectionConfig(file) {
         'sources.json': {
             title: '来源维护',
             summary: '编辑来源记录、可靠性和用途，引用关系会原样保留。',
+            idPrefix: 'source',
             create: () => ({
-                id: '',
+                id: nextCollectionId('source'),
                 type: 'article',
                 label: { zh: '', en: '' },
                 title: { zh: '', en: '' },
                 purpose: 'background',
                 reliability: 'secondary'
             }),
+            focusField: '[data-structured-field="label.zh"]',
             render: sourceItemForm
         },
-        'claims.json': {
-            title: '事实主张',
-            summary: '将可追溯事实拆成独立主张，并绑定来源。',
-            create: () => ({ id: '', importance: 'context', text: { zh: '', en: '' }, sourceIds: [], status: 'draft' }),
-            render: claimItemForm
-        },
         'assets.json': {
-            title: '资产与音频',
+            title: '图片与音视频',
             summary: '维护图片、音频、视频元数据和展示顺序。',
-            create: () => ({
-                id: '',
-                type: 'image',
-                role: 'supporting',
-                path: '',
-                caption: { zh: '', en: '' },
-                rights: { status: 'needs-source', license: { zh: '', en: '' }, usage: { zh: '', en: '' } }
-            }),
+            idPrefix: 'asset',
+            create: () => {
+                const id = nextCollectionId('asset');
+                return {
+                    id,
+                    type: 'image',
+                    role: defaultAssetRole('image'),
+                    path: generatedAssetPath(id, 'image'),
+                    caption: { zh: '', en: '' },
+                    sourceIds: [],
+                    rights: { status: 'needs-source', license: { zh: '', en: '' }, usage: { zh: '', en: '' } }
+                };
+            },
+            focusField: '[data-structured-field="caption.zh"]',
             render: assetItemForm
         },
         'quizzes.json': {
             title: 'Quiz 题库',
             summary: '维护双语题目、选项、正确答案和关联资料。',
+            idPrefix: 'quiz',
             create: () => ({
-                id: '',
+                id: nextCollectionId('quiz'),
                 question: { zh: '', en: '' },
                 options: [
                     { zh: '', en: '' },
@@ -1025,6 +1772,7 @@ function collectionConfig(file) {
                 sourceIds: [],
                 assetIds: []
             }),
+            focusField: '[data-structured-field="question.zh"]',
             render: quizItemForm
         }
     }[file];
@@ -1033,7 +1781,7 @@ function collectionConfig(file) {
 function renderCollectionEditor(file, data) {
     const config = collectionConfig(file);
     const items = Array.isArray(data) ? data : [];
-    return `<section class="structured-section"><div class="collection-toolbar"><div><h3>${escapeHtml(config.title)}</h3><p class="muted">${escapeHtml(config.summary)}</p></div><button type="button" class="primary" data-collection-action="add">新增条目</button></div><div class="collection-list">${items.length ? items.map(config.render).join('') : '<div class="collection-empty">暂无条目，点击“新增条目”开始维护。</div>'}</div></section>`;
+    return `<section class="structured-section"><div class="collection-list">${items.length ? items.map(config.render).join('') : '<div class="collection-empty">暂无条目，点击“新增条目”开始维护。</div>'}</div></section>`;
 }
 
 function renderStructuredEditor() {
@@ -1042,26 +1790,30 @@ function renderStructuredEditor() {
         elements.structuredTitle.textContent = '结构化编辑';
         elements.structuredSummary.textContent = '当前文件暂未接入结构化编辑器，请使用高级 JSON 模式。';
         elements.structuredFieldHint.textContent = '';
+        elements.structuredFieldHint.hidden = true;
+        elements.structuredAddBtn.hidden = true;
         return;
     }
     const isPresentation = state.eventSection === 'presentation';
     const config = isPresentation
-        ? { title: '展示配置', summary: '维护当前事件或 Storyline 的展示内容。' }
+        ? {
+              title: state.file === 'event.json' ? '默认展示配置' : '故事线展示覆盖',
+              summary: '常用展示字段已结构化；未接入的特殊模块仍可在高级 JSON 中维护。'
+          }
         : state.file === 'event.json'
-          ? { title: '事件基本资料', summary: '通过表单维护事件事实、地点和审核信息。' }
+          ? { title: '事件基本信息', summary: '维护事件时间、地点和审核信息。页面标题与描述在展示配置中编辑。' }
           : collectionConfig(state.file) || { title: '展示配置', summary: '维护当前 storyline 的展示覆盖字段。' };
     elements.structuredTitle.textContent = config.title;
     elements.structuredSummary.textContent = config.summary;
     elements.structuredFieldHint.textContent = state.file;
+    elements.structuredFieldHint.dataset.openAdvancedFile = state.file;
+    elements.structuredFieldHint.hidden = false;
+    elements.structuredAddBtn.hidden = !collectionConfig(state.file);
     if (isPresentation) {
         elements.structuredEditor.innerHTML =
             state.file === 'event.json'
-                ? renderPresentationForm(
-                      state.document.defaultPresentation || {},
-                      'defaultPresentation',
-                      '默认展示配置'
-                  )
-                : renderPresentationForm(state.document, '', '故事线展示覆盖');
+                ? renderPresentationForm(state.document.defaultPresentation || {}, 'defaultPresentation')
+                : renderPresentationForm(state.document, '');
     } else {
         elements.structuredEditor.innerHTML =
             state.file === 'event.json'
@@ -1070,6 +1822,7 @@ function renderStructuredEditor() {
                   ? renderCollectionEditor(state.file, state.document)
                   : '';
     }
+    scheduleImageAssetLayout();
 }
 
 function structuredFieldValue(target) {
@@ -1103,27 +1856,58 @@ function handleCollectionAction(target) {
     const action = target.dataset.collectionAction;
     const config = collectionConfig(state.file);
     if (!config || !state.document) return;
-    if (action === 'add') state.document.push(config.create());
-    else {
+    let focusIndex = -1;
+    if (action === 'add') {
+        focusIndex = state.document.length;
+        const created = config.create();
+        state.document.push(created);
+        if (state.file === 'assets.json') state.pendingAssetIds.add(created.id);
+        if (state.file === 'assets.json' && created.path) state.pendingAssetPaths.add(created.path);
+    } else {
         const item = target.closest('[data-collection-index]');
         if (!item) return;
         const index = Number(item.dataset.collectionIndex);
         if (action === 'remove') state.document.splice(index, 1);
-        if (action === 'duplicate') state.document.splice(index + 1, 0, cloneJson(state.document[index]));
+        if (action === 'duplicate') {
+            const duplicate = cloneJson(state.document[index]);
+            if (config.idPrefix) {
+                duplicate.id = nextCollectionId(config.idPrefix);
+                if (state.file === 'assets.json') state.pendingAssetIds.add(duplicate.id);
+                if (state.file === 'assets.json' && !/^https?:\/\//i.test(duplicate.path || '')) {
+                    duplicate.path = generatedAssetPath(duplicate.id, duplicate.type);
+                    if (duplicate.path) state.pendingAssetPaths.add(duplicate.path);
+                }
+            }
+            state.document.splice(index + 1, 0, duplicate);
+            focusIndex = index + 1;
+        }
         if (action === 'up') moveCollectionItem(index, -1);
         if (action === 'down') moveCollectionItem(index, 1);
     }
     syncEditor();
     renderStructuredEditor();
+    if (focusIndex >= 0) {
+        focusNewEntry(
+            elements.structuredEditor.querySelector(`[data-collection-index="${focusIndex}"]`),
+            config.focusField
+        );
+    }
     setStatus('已修改条目，尚未保存', '');
 }
 
 function addQuizOption(item) {
     const quiz = state.document[item];
     if (!quiz || !Array.isArray(quiz.options)) return;
+    const optionIndex = quiz.options.length;
     quiz.options.push({ zh: '', en: '' });
     syncEditor();
     renderStructuredEditor();
+    focusNewEntry(
+        elements.structuredEditor.querySelector(
+            `[data-collection-index="${item}"] [data-option-index="${optionIndex}"]`
+        ),
+        '[data-structured-field$=".zh"]'
+    );
 }
 
 function removeQuizOption(item, optionIndex) {
@@ -1140,10 +1924,150 @@ function updateCollectionField(target) {
     if (!item || !Array.isArray(state.document)) return;
     const index = Number(item.dataset.collectionIndex);
     if (!Number.isInteger(index) || !state.document[index] || typeof state.document[index] !== 'object') return;
+    const asset = state.file === 'assets.json' ? state.document[index] : null;
+    const previousType = asset && asset.type;
+    const previousPath = asset && asset.path;
     const value = structuredFieldValue(target);
     setPath(state.document[index], target.dataset.structuredField, value);
+    if (asset && target.dataset.structuredField === 'path') state.pendingAssetPaths.delete(previousPath);
+    if (asset && target.dataset.structuredField === 'deliveryUrl') applyAudioDeliveryUrl(asset, value);
+    if (asset && target.dataset.structuredField === 'type') {
+        if (value === 'audio') {
+            state.pendingAssetPaths.delete(previousPath);
+            asset.path = '';
+            asset.deliveryUrl = '';
+            asset.language = asset.language || 'zh';
+            asset.storage = {
+                objectName: `${asset.id}.mp3`,
+                contentType: 'audio/mpeg'
+            };
+        } else {
+            if (previousType === 'audio') {
+                delete asset.deliveryUrl;
+                delete asset.storage;
+            }
+            if (previousType === 'audio' || !previousPath || isGeneratedAssetPath(asset.id, previousPath)) {
+                state.pendingAssetPaths.delete(previousPath);
+                asset.path = generatedAssetPath(asset.id, value);
+                if (asset.path) state.pendingAssetPaths.add(asset.path);
+            }
+        }
+        const previousOptions = assetRoleOptionsByType[previousType] || [];
+        const nextOptions = assetRoleOptionsByType[value] || [];
+        if (
+            !asset.role ||
+            (previousOptions.some(([role]) => role === asset.role) &&
+                !nextOptions.some(([role]) => role === asset.role))
+        ) {
+            asset.role = defaultAssetRole(value);
+        }
+    }
     syncEditor();
+    if (state.file === 'assets.json' && target.dataset.structuredField === 'type') renderStructuredEditor();
     setStatus('已修改结构化字段，尚未保存', '');
+}
+
+async function importAssetImage(target) {
+    const item = target.closest('[data-collection-index]');
+    const panel = target.closest('[data-asset-image-import]');
+    if (!item || !panel || !Array.isArray(state.document)) return;
+    const index = Number(item.dataset.collectionIndex);
+    const asset = state.document[index];
+    if (!asset || !asset.id) return;
+    const file = panel.querySelector('[data-asset-image-file]').files[0];
+    const imageUrl = panel.querySelector('[data-asset-image-url]').value.trim();
+    if (!file && !imageUrl) {
+        panel.querySelector('[data-asset-image-file]').focus();
+        setStatus('请上传图片或填写图片 URL', 'bad');
+        return;
+    }
+    if (file && imageUrl) {
+        setStatus('本地图片和图片 URL 只能选择一种', 'bad');
+        return;
+    }
+    if (file && file.size > 10 * 1024 * 1024) {
+        setStatus('图片不能超过 10 MB', 'bad');
+        return;
+    }
+    if (imageUrl && !/^https?:\/\//i.test(imageUrl)) {
+        setStatus('图片 URL 必须使用 HTTP 或 HTTPS', 'bad');
+        return;
+    }
+    const originalText = target.textContent;
+    target.disabled = true;
+    target.textContent = imageUrl ? '正在下载...' : '正在上传...';
+    try {
+        const result = await api('/api/archive/event-image', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                eventId: state.entityId,
+                assetId: asset.id,
+                ...(file ? { imageBase64: await readFileAsDataUrl(file) } : { imageUrl })
+            })
+        });
+        state.pendingAssetPaths.delete(asset.path);
+        asset.path = result.path;
+        asset.type = result.type;
+        if (!assetRoleOptions(result.type, asset.role).some(([role]) => role === asset.role)) {
+            asset.role = defaultAssetRole(result.type);
+        }
+        syncEditor();
+        renderStructuredEditor();
+        const nextItem = elements.structuredEditor.querySelector(`[data-collection-index="${index}"]`);
+        focusNewEntry(nextItem && nextItem.querySelector('.asset-media-preview'));
+        setStatus(`图片已导入：${result.path}，请继续填写并保存资产`, 'ok');
+    } finally {
+        if (target.isConnected) {
+            target.disabled = false;
+            target.textContent = originalText;
+        }
+    }
+}
+
+function handleAssetSourceAction(target) {
+    const item = target.closest('[data-collection-index]');
+    const manager = target.closest('[data-asset-source-manager]');
+    if (!item || !manager || !Array.isArray(state.document)) return;
+    const index = Number(item.dataset.collectionIndex);
+    const asset = state.document[index];
+    if (!asset || typeof asset !== 'object') return;
+    const ids = assetSourceIds(asset);
+    let addedSourceId = '';
+    if (target.dataset.assetSourceAction === 'add') {
+        const select = manager.querySelector('[data-asset-source-select]');
+        if (!select || !select.value) {
+            if (select) select.focus();
+            setStatus('请先选择需要添加的来源', 'bad');
+            return;
+        }
+        if (!ids.includes(select.value)) {
+            addedSourceId = select.value;
+            ids.push(select.value);
+        }
+    }
+    if (target.dataset.assetSourceAction === 'remove') {
+        const sourceIndex = ids.indexOf(target.dataset.assetSourceId);
+        if (sourceIndex >= 0) ids.splice(sourceIndex, 1);
+    }
+    asset.sourceIds = ids;
+    delete asset.sourceId;
+    syncEditor();
+    renderStructuredEditor();
+    if (addedSourceId) {
+        const nextItem = elements.structuredEditor.querySelector(`[data-collection-index="${index}"]`);
+        const addedItem = [...nextItem.querySelectorAll('[data-asset-source-value]')].find(
+            (candidate) => candidate.dataset.assetSourceValue === addedSourceId
+        );
+        focusNewEntry(addedItem);
+    }
+    setStatus('已修改资产来源，尚未保存', '');
+}
+
+function syncAssetSourceAddButton(select) {
+    const manager = select.closest('[data-asset-source-manager]');
+    const button = manager && manager.querySelector('[data-asset-source-action="add"]');
+    if (button) button.disabled = !select.value;
 }
 
 function presentationDocument() {
@@ -1171,7 +2095,9 @@ function handlePresentationAction(target) {
     const action = target.dataset.presentationAction;
     const presentation = presentationDocument();
     if (!Array.isArray(presentation.commentarySections)) presentation.commentarySections = [];
+    let focusIndex = -1;
     if (action === 'add-section') {
+        focusIndex = presentation.commentarySections.length;
         presentation.commentarySections.push({
             id: `section-${presentation.commentarySections.length + 1}`,
             label: { zh: '', en: '' },
@@ -1188,7 +2114,56 @@ function handlePresentationAction(target) {
     }
     syncEditor();
     renderStructuredEditor();
+    if (focusIndex >= 0) {
+        focusNewEntry(
+            elements.structuredEditor.querySelector(`[data-presentation-section-index="${focusIndex}"]`),
+            '[data-structured-field$=".label.zh"]'
+        );
+    }
     setStatus('已修改展示段落，尚未保存', '');
+}
+
+function handlePresentationReferenceAction(target) {
+    const manager = target.closest('[data-presentation-reference-field]');
+    if (!manager) return;
+    const field = manager.dataset.presentationReferenceField;
+    const presentation = presentationDocument();
+    if (!Array.isArray(getPath(presentation, field))) setPath(presentation, field, []);
+    const items = getPath(presentation, field);
+    const action = target.dataset.presentationReferenceAction;
+    let focusIndex = -1;
+    if (action === 'add') {
+        const select = manager.querySelector('[data-presentation-reference-select]');
+        if (select && select.value && !items.includes(select.value)) {
+            focusIndex = items.length;
+            items.push(select.value);
+        }
+    } else {
+        const row = target.closest('[data-reference-index]');
+        if (!row) return;
+        const index = Number(row.dataset.referenceIndex);
+        const swapIndexValue = target.dataset.referenceSwapIndex;
+        const swapIndex = swapIndexValue === undefined || swapIndexValue === '' ? Number.NaN : Number(swapIndexValue);
+        if (action === 'remove') items.splice(index, 1);
+        if (
+            ['up', 'down'].includes(action) &&
+            Number.isInteger(swapIndex) &&
+            swapIndex >= 0 &&
+            swapIndex < items.length
+        ) {
+            [items[swapIndex], items[index]] = [items[index], items[swapIndex]];
+        }
+    }
+    syncEditor();
+    renderStructuredEditor();
+    if (focusIndex >= 0) {
+        const addedRow = [...elements.structuredEditor.querySelectorAll('[data-presentation-reference-field]')]
+            .filter((candidate) => candidate.dataset.presentationReferenceField === field)
+            .map((candidate) => candidate.querySelector(`[data-reference-index="${focusIndex}"]`))
+            .find(Boolean);
+        focusNewEntry(addedRow, 'summary');
+    }
+    setStatus('已修改展示引用，尚未保存', '');
 }
 
 async function loadEntity() {
@@ -1213,11 +2188,22 @@ async function loadEntity() {
     state.document = result.data;
     state.revision = result.revision || '';
     state.creatingFigure = false;
+    state.pendingAssetIds = new Set();
+    state.pendingAssetPaths = new Set();
+    if (state.type === 'events' && state.eventSection === 'presentation') await loadPresentationReferences(true);
+    if (state.type === 'events' && state.file === 'assets.json') await loadAssetSources(true);
     syncEditor();
-    elements.currentEntity.textContent = `${state.type === 'events' ? `${state.entityId} / ${state.file}` : state.entityId}`;
+    const selectedEntity = state.entities.find((entity) => entity.id === state.entityId) || {};
+    elements.currentEntity.textContent =
+        state.type === 'events'
+            ? localize(selectedEntity.title, 'zh') || localize(selectedEntity.title, 'en') || '事件编辑'
+            : state.type === 'storylines'
+              ? localize(selectedEntity.title, 'zh') || localize(selectedEntity.title, 'en') || '故事线编辑'
+              : localize(selectedEntity.name, 'zh') || localize(selectedEntity.name, 'en') || '人物编辑';
     updatePanelVisibility();
-    renderEventContext();
     renderEventSectionNav();
+    renderFigureSectionNav();
+    renderAdvancedJsonFiles();
     renderStorylineOverview();
     renderStructuredEditor();
     if (state.type === 'events') await renderEventDisplayActions();
@@ -1225,10 +2211,29 @@ async function loadEntity() {
         renderFigureForm();
         await renderFigureAssets();
         await renderFigureUsage();
-        await renderAdvancedFigureTools();
     }
     if (state.type === 'events' && state.eventSection === 'people') await renderRelations();
-    setStatus(`已加载 ${state.entityId}${state.file ? ` / ${state.file}` : ''}`, 'ok');
+    setStatus('内容已加载', 'ok');
+}
+
+async function loadAssetSources(force = false) {
+    if (state.type !== 'events' || !state.entityId) {
+        state.assetSources = [];
+        state.assetSourceEventId = '';
+        return;
+    }
+    if (!force && state.assetSourceEventId === state.entityId) return;
+    const entity = state.entities.find((candidate) => candidate.id === state.entityId);
+    if (!entity || !(entity.files || []).includes('sources.json')) {
+        state.assetSources = [];
+        state.assetSourceEventId = state.entityId;
+        return;
+    }
+    const result = await api(
+        `/api/archive/file?eventId=${encodeURIComponent(state.entityId)}&file=${encodeURIComponent('sources.json')}`
+    );
+    state.assetSources = Array.isArray(result.data) ? result.data : [];
+    state.assetSourceEventId = state.entityId;
 }
 
 function setValue(id, value) {
@@ -1241,11 +2246,103 @@ function renderAvatarPreview() {
     if (!avatarPath) {
         elements.avatarPreview.hidden = true;
         elements.avatarPlaceholder.hidden = false;
+        updateDefaultAvatarAssetLink();
         return;
     }
     elements.avatarPreview.hidden = false;
     elements.avatarPlaceholder.hidden = true;
     elements.avatarPreview.src = /^https?:\/\//i.test(avatarPath) ? avatarPath : `/${avatarPath}`;
+    updateDefaultAvatarAssetLink();
+}
+
+function clearDefaultAvatarFields() {
+    for (const id of [
+        'avatarPath',
+        'avatarSourceNameEn',
+        'avatarSourceNameZh',
+        'avatarSourceUrl',
+        'avatarRightsStatus',
+        'avatarStyle',
+        'avatarLicenseEn',
+        'avatarLicenseZh',
+        'avatarUsageEn',
+        'avatarUsageZh'
+    ]) {
+        elements[id].value = '';
+    }
+}
+
+function figureProfileSourceLabel(source, index) {
+    return (
+        localize(source && source.label, 'zh') ||
+        localize(source && source.label, 'en') ||
+        String((source && source.url) || '').trim() ||
+        `来源 ${index + 1}`
+    );
+}
+
+function renderFigureProfileSources() {
+    const sources = Array.isArray(state.document && state.document.profileSources) ? state.document.profileSources : [];
+    elements.figureProfileSourceCount.textContent = String(sources.length);
+    elements.figureProfileSourcesList.innerHTML = sources.length
+        ? sources
+              .map(
+                  (source, index) => `<article class="figure-profile-source" data-profile-source-index="${index}">
+                    <div class="collection-item-heading">
+                        <div><strong>${escapeHtml(figureProfileSourceLabel(source, index))}</strong><span class="muted">身份核验来源</span></div>
+                        <div class="collection-actions">
+                            <button type="button" data-profile-source-action="up" title="上移"${index === 0 ? ' disabled' : ''}>↑</button>
+                            <button type="button" data-profile-source-action="down" title="下移"${index === sources.length - 1 ? ' disabled' : ''}>↓</button>
+                            <button type="button" class="danger" data-profile-source-action="remove">移除</button>
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <label>${fieldLabel('来源类型', true)}<input data-profile-source-field="type" value="${escapeHtml(source.type || '')}" placeholder="paper / profile / official-page" required /></label>
+                        <label class="span-2">${fieldLabel('中文标题', true)}<input data-profile-source-field="label.zh" value="${escapeHtml(localize(source.label, 'zh'))}" required /></label>
+                        <label class="span-2">${fieldLabel('英文标题', true)}<input data-profile-source-field="label.en" value="${escapeHtml(localize(source.label, 'en'))}" required /></label>
+                        <label class="span-2">${fieldLabel('URL', true)}<input data-profile-source-field="url" value="${escapeHtml(source.url || '')}" required /></label>
+                    </div>
+                </article>`
+              )
+              .join('')
+        : '<div class="collection-empty">暂无人物资料来源。</div>';
+}
+
+function collectFigureProfileSources() {
+    return [...elements.figureProfileSourcesList.querySelectorAll('[data-profile-source-index]')].map((item) => {
+        const value = (field) => item.querySelector(`[data-profile-source-field="${field}"]`).value.trim();
+        return {
+            type: value('type'),
+            label: {
+                en: value('label.en'),
+                zh: value('label.zh')
+            },
+            url: value('url')
+        };
+    });
+}
+
+function updateFigureProfileSourcesFromEditor() {
+    if (state.type !== 'figures' || !state.document) return;
+    state.document.profileSources = collectFigureProfileSources();
+    syncEditor();
+}
+
+function handleFigureProfileSourceAction(button) {
+    state.document = collectFigureForm();
+    const item = button.closest('[data-profile-source-index]');
+    const index = item ? Number(item.dataset.profileSourceIndex) : -1;
+    const sources = state.document.profileSources;
+    if (button.dataset.profileSourceAction === 'remove' && index >= 0) sources.splice(index, 1);
+    if (button.dataset.profileSourceAction === 'up' && index > 0) {
+        [sources[index - 1], sources[index]] = [sources[index], sources[index - 1]];
+    }
+    if (button.dataset.profileSourceAction === 'down' && index >= 0 && index < sources.length - 1) {
+        [sources[index], sources[index + 1]] = [sources[index + 1], sources[index]];
+    }
+    renderFigureProfileSources();
+    syncEditor();
+    setStatus('已修改资料来源，尚未保存', '');
 }
 
 function renderFigureForm() {
@@ -1255,6 +2352,7 @@ function renderFigureForm() {
     const review = figure.review || {};
     setValue('figureId', figure.id);
     elements.figureId.disabled = !state.creatingFigure;
+    elements.figureIdField.hidden = !state.creatingFigure;
     setValue('figureType', figure.type || 'person');
     setValue('figureNameEn', localize(figure.name, 'en'));
     setValue('figureNameZh', localize(figure.name, 'zh'));
@@ -1262,7 +2360,6 @@ function renderFigureForm() {
     setValue('figureDisambiguationEn', localize(figure.disambiguation, 'en'));
     setValue('figureDisambiguationZh', localize(figure.disambiguation, 'zh'));
     setValue('figureOrganizations', (figure.organizationIds || []).join('\n'));
-    setValue('figureProfileSources', JSON.stringify(figure.profileSources || [], null, 2));
     setValue('avatarPath', avatar.path);
     setValue('avatarSourceNameEn', localize(avatar.sourceName, 'en'));
     setValue('avatarSourceNameZh', localize(avatar.sourceName, 'zh'));
@@ -1276,30 +2373,157 @@ function renderFigureForm() {
     setValue('reviewStatus', review.status || 'draft');
     setValue('reviewedAt', review.reviewedAt || new Date().toISOString().slice(0, 10));
     setValue('reviewer', review.reviewer || 'archive-admin');
-    setValue('reviewNotesEn', localize(review.notes, 'en'));
     setValue('reviewNotesZh', localize(review.notes, 'zh'));
-    elements.figureReviewBadge.textContent = review.status || 'draft';
+    elements.figureReviewBadge.textContent = reviewStatusLabel(review.status);
     elements.figureReviewBadge.className = `badge ${review.status || 'draft'}`;
-    elements.figureAliasesField.hidden = !(figure.aliases || []).length;
-    const hasDisambiguation = hasLocalizedValue(figure.disambiguation);
-    elements.figureDisambiguationEnField.hidden = !hasDisambiguation;
-    elements.figureDisambiguationZhField.hidden = !hasDisambiguation;
-    elements.figureOrganizationsField.hidden = !(figure.organizationIds || []).length;
-    elements.figureProfileSourcesField.hidden = !(figure.profileSources || []).length;
-    elements.figureAvatarHeading.hidden = !avatar.path;
-    elements.figureAvatarEditor.hidden = !avatar.path;
-    elements.avatarStyleField.hidden = !avatar.avatarStyle;
+    elements.openFigureImageUploadBtn.disabled = state.creatingFigure;
+    elements.openFigureImageUploadBtn.title = state.creatingFigure ? '请先保存人物，再上传图片' : '';
+    elements.openExistingFigureImageBtn.disabled = state.creatingFigure;
+    elements.openExistingFigureImageBtn.title = state.creatingFigure ? '请先保存人物，再关联已有图片' : '';
+    elements.figureAvatarEditor.open = false;
+    if (!state.creatingFigure) elements.figureIdentityDetails.open = false;
+    renderFigureProfileSources();
     renderAvatarPreview();
 }
 
-function resetMergePreview() {
-    state.mergePreview = null;
-    elements.mergePreview.textContent = '先选择目标并检查影响范围。';
-    elements.mergeExecuteBtn.disabled = true;
+function resetExistingImageLink() {
+    state.existingImageAssets = [];
+    state.existingImageAssetsRevision = '';
+    elements.existingImageEvent.value = '';
+    elements.existingImageAsset.innerHTML = '<option value="">先选择事件</option>';
+    elements.existingImagePreviewImg.removeAttribute('src');
+    elements.existingImagePreviewImg.hidden = true;
+    elements.existingImagePlaceholder.hidden = false;
+    elements.existingImagePlaceholder.textContent = '选择图片后显示预览';
+    elements.existingImageDetails.innerHTML = '';
+    elements.linkExistingFigureImageBtn.disabled = true;
+}
+
+function updateExistingImagePreview() {
+    const asset = state.existingImageAssets.find((candidate) => candidate.id === elements.existingImageAsset.value);
+    elements.linkExistingFigureImageBtn.disabled = !asset;
+    if (!asset) {
+        elements.existingImagePreviewImg.removeAttribute('src');
+        elements.existingImagePreviewImg.hidden = true;
+        elements.existingImagePlaceholder.hidden = false;
+        elements.existingImageDetails.innerHTML = '';
+        return;
+    }
+    const caption = localize(asset.caption, 'zh') || localize(asset.caption, 'en') || asset.id;
+    elements.existingImagePreviewImg.src = assetImageSource(asset);
+    elements.existingImagePreviewImg.alt = caption;
+    elements.existingImagePreviewImg.hidden = false;
+    elements.existingImagePlaceholder.hidden = true;
+    elements.existingImageDetails.innerHTML = `<strong>${escapeHtml(caption)}</strong><span>${escapeHtml(asset.id)}</span><span>${escapeHtml(asset.path)}</span>`;
+}
+
+async function loadExistingImageAssets() {
+    const eventId = elements.existingImageEvent.value;
+    state.existingImageAssets = [];
+    state.existingImageAssetsRevision = '';
+    elements.existingImageAsset.innerHTML = '<option value="">加载图片资产...</option>';
+    elements.linkExistingFigureImageBtn.disabled = true;
+    if (!eventId) {
+        elements.existingImageAsset.innerHTML = '<option value="">先选择事件</option>';
+        updateExistingImagePreview();
+        return;
+    }
+    const result = await api(
+        `/api/archive/file?eventId=${encodeURIComponent(eventId)}&file=${encodeURIComponent('assets.json')}`
+    );
+    state.existingImageAssetsRevision = result.revision || '';
+    state.existingImageAssets = result.data
+        .filter(
+            (asset) =>
+                asset.type === 'image' &&
+                asset.path &&
+                !(Array.isArray(asset.figureIds) && asset.figureIds.includes(state.entityId))
+        )
+        .sort((left, right) => {
+            const leftLabel = localize(left.caption, 'zh') || localize(left.caption, 'en') || left.id;
+            const rightLabel = localize(right.caption, 'zh') || localize(right.caption, 'en') || right.id;
+            return leftLabel.localeCompare(rightLabel, 'zh-CN');
+        });
+    if (!state.existingImageAssets.length) {
+        elements.existingImageAsset.innerHTML = '<option value="">该事件没有可关联的已有图片</option>';
+        elements.existingImagePlaceholder.textContent = '该事件中的图片均已关联，或没有 image 类型资产';
+        updateExistingImagePreview();
+        return;
+    }
+    elements.existingImageAsset.innerHTML = state.existingImageAssets
+        .map((asset) => {
+            const caption = localize(asset.caption, 'zh') || localize(asset.caption, 'en') || asset.id;
+            return `<option value="${escapeHtml(asset.id)}">${escapeHtml(caption)} · ${escapeHtml(asset.id)}</option>`;
+        })
+        .join('');
+    updateExistingImagePreview();
+}
+
+async function openExistingFigureImage() {
+    if (state.creatingFigure || !state.entityId) {
+        setStatus('请先保存人物，再关联已有图片', 'bad');
+        return;
+    }
+    await loadEventOptions();
+    resetExistingImageLink();
+    const eventsWithAssets = state.eventOptions.filter((event) => (event.files || []).includes('assets.json'));
+    elements.existingImageEvent.innerHTML = `<option value="">选择事件</option>${eventsWithAssets
+        .map((event) => {
+            const title = localize(event.title, 'zh') || localize(event.title, 'en') || event.id;
+            return `<option value="${escapeHtml(event.id)}">${escapeHtml(title)} · ${escapeHtml(event.id)}</option>`;
+        })
+        .join('')}`;
+    const relatedEventId = ((state.figureUsage && state.figureUsage.events) || []).find((eventId) =>
+        eventsWithAssets.some((event) => event.id === eventId)
+    );
+    const initialEvent = relatedEventId || (eventsWithAssets[0] && eventsWithAssets[0].id) || '';
+    if (initialEvent) {
+        elements.existingImageEvent.value = initialEvent;
+        await loadExistingImageAssets();
+    }
+    elements.existingFigureImageDialog.showModal();
+}
+
+function closeExistingFigureImage() {
+    elements.existingFigureImageDialog.close();
+}
+
+function focusFigureAsset(assetPath) {
+    const card = elements.figureAssetGallery.querySelector(
+        `.figure-asset-card[data-asset-path="${window.CSS.escape(assetPath)}"]`
+    );
+    focusNewEntry(card, '[data-asset-action="view"]');
+}
+
+async function linkExistingFigureImage() {
+    const eventId = elements.existingImageEvent.value;
+    const assetId = elements.existingImageAsset.value;
+    if (!eventId || !assetId) throw new Error('请选择需要关联的已有图片');
+    elements.linkExistingFigureImageBtn.disabled = true;
+    try {
+        const result = await api('/api/archive/figure-asset-link', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                figureId: state.entityId,
+                eventId,
+                assetId,
+                expectedRevision: state.existingImageAssetsRevision
+            })
+        });
+        closeExistingFigureImage();
+        await loadEntity();
+        focusFigureAsset(result.asset.path);
+        setStatus(result.changed ? `已将 ${assetId} 关联到当前人物` : `${assetId} 已关联到当前人物`, 'ok');
+    } finally {
+        elements.linkExistingFigureImageBtn.disabled = false;
+    }
 }
 
 function resetImageImport() {
     elements.imageImportFile.value = '';
+    elements.imageImportUrl.value = '';
+    elements.imageImportUrl.dataset.syncedSourceUrl = '';
     elements.imageImportPreview.removeAttribute('src');
     elements.imageImportPreview.hidden = true;
     elements.imageImportPlaceholder.hidden = false;
@@ -1319,30 +2543,7 @@ function resetImageImport() {
     elements.imageImportLicenseZh.value = '';
     elements.imageImportUsageEn.value = '';
     elements.imageImportUsageZh.value = '';
-}
-
-async function renderAdvancedFigureTools() {
-    if (state.creatingFigure || !state.document) {
-        elements.mergeTargetSelect.innerHTML = '<option value="">保存身份后可使用高级操作</option>';
-        elements.imageImportEvent.innerHTML = '<option value="">保存身份后可导入图片</option>';
-        elements.mergePreviewBtn.disabled = true;
-        elements.imageImportBtn.disabled = true;
-        resetMergePreview();
-        return;
-    }
-    await Promise.all([loadFigureOptions(), loadEventOptions()]);
-    const currentType = state.document.type;
-    elements.mergeTargetSelect.innerHTML = `<option value="">选择目标身份</option>${state.figureOptions
-        .filter((figure) => figure.id !== state.entityId && figure.type === currentType)
-        .map((figure) => `<option value="${escapeHtml(figure.id)}">${escapeHtml(figureLabel(figure))}</option>`)
-        .join('')}`;
-    elements.imageImportEvent.innerHTML = `<option value="">选择事件</option>${state.eventOptions
-        .map((event) => `<option value="${escapeHtml(event.id)}">${escapeHtml(event.id)}</option>`)
-        .join('')}`;
-    elements.mergePreviewBtn.disabled = false;
     elements.imageImportBtn.disabled = false;
-    resetMergePreview();
-    resetImageImport();
 }
 
 async function loadImageImportSources() {
@@ -1353,16 +2554,29 @@ async function loadImageImportSources() {
         elements.imageImportAssetId.value = '';
         return;
     }
-    const result = await api(
-        `/api/archive/file?eventId=${encodeURIComponent(eventId)}&file=${encodeURIComponent('sources.json')}`
-    );
-    elements.imageImportSourceId.innerHTML = `<option value="">选择来源记录</option>${result.data
+    const [sourceResult, assetResult] = await Promise.all([
+        api(`/api/archive/file?eventId=${encodeURIComponent(eventId)}&file=${encodeURIComponent('sources.json')}`),
+        api(`/api/archive/file?eventId=${encodeURIComponent(eventId)}&file=${encodeURIComponent('assets.json')}`)
+    ]);
+    elements.imageImportSourceId.innerHTML = `<option value="">选择来源记录</option>${sourceResult.data
         .map(
             (source) =>
-                `<option value="${escapeHtml(source.id)}" data-label-en="${escapeHtml(localize(source.label, 'en'))}" data-label-zh="${escapeHtml(localize(source.label, 'zh'))}" data-url="${escapeHtml(source.url || '')}">${escapeHtml(localize(source.label, 'zh') || localize(source.label, 'en') || source.id)} · ${escapeHtml(source.id)}</option>`
+                `<option value="${escapeHtml(source.id)}" data-label-en="${escapeHtml(localize(source.label, 'en'))}" data-label-zh="${escapeHtml(localize(source.label, 'zh'))}">${escapeHtml(localize(source.label, 'zh') || localize(source.label, 'en') || source.id)}</option>`
         )
         .join('')}`;
-    elements.imageImportAssetId.value = `asset-${eventId}-portrait-${state.entityId}`;
+    if (sourceResult.data.length) {
+        elements.imageImportSourceId.selectedIndex = 1;
+        syncImageSourceMetadata();
+    }
+    const baseAssetId = `asset-${eventId}-portrait-${state.entityId}`;
+    const existingAssetIds = new Set(assetResult.data.map((asset) => asset.id));
+    let assetId = baseAssetId;
+    let suffix = 2;
+    while (existingAssetIds.has(assetId)) {
+        assetId = `${baseAssetId}-${suffix}`;
+        suffix += 1;
+    }
+    elements.imageImportAssetId.value = assetId;
 }
 
 function syncImageSourceMetadata() {
@@ -1370,43 +2584,65 @@ function syncImageSourceMetadata() {
     if (!option || !option.value) return;
     elements.imageImportSourceNameEn.value = option.dataset.labelEn || '';
     elements.imageImportSourceNameZh.value = option.dataset.labelZh || '';
-    elements.imageImportSourceUrl.value = option.dataset.url || '';
 }
 
-async function previewFigureMerge() {
-    const targetFigureId = elements.mergeTargetSelect.value;
-    if (!targetFigureId) throw new Error('请选择目标身份');
-    const preview = await api(
-        `/api/archive/figure-merge-preview?sourceFigureId=${encodeURIComponent(state.entityId)}&targetFigureId=${encodeURIComponent(targetFigureId)}`
-    );
-    state.mergePreview = preview;
-    const impact = preview.impact;
-    elements.mergePreview.innerHTML = `将删除 <code>${escapeHtml(preview.source.id)}</code>，迁移到 <code>${escapeHtml(preview.target.id)}</code>：<strong>${impact.events}</strong> 个事件、<strong>${impact.eventRelations}</strong> 条 canonical 关系、<strong>${impact.variantRelations}</strong> 条 variant 关系、<strong>${impact.assets}</strong> 个资产、<strong>${impact.organizationReferences}</strong> 条机构引用。`;
-    elements.mergeExecuteBtn.disabled = false;
-}
-
-async function executeFigureMerge() {
-    if (!state.mergePreview) throw new Error('请先预览合并影响');
-    const { source, target, revision } = state.mergePreview;
-    if (
-        !window.confirm(
-            `确认将 ${source.id} 合并到 ${target.id}？\n\n源身份将从人物库移除，所有引用会改写。此操作不会删除图片文件。`
-        )
-    )
+function showImageImportPreview(source) {
+    if (!source) {
+        elements.imageImportPreview.removeAttribute('src');
+        elements.imageImportPreview.hidden = true;
+        elements.imageImportPlaceholder.hidden = false;
         return;
-    const result = await api('/api/archive/figure-merge', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            sourceFigureId: source.id,
-            targetFigureId: target.id,
-            expectedRevision: revision
+    }
+    elements.imageImportPreview.src = source;
+    elements.imageImportPreview.hidden = false;
+    elements.imageImportPlaceholder.hidden = true;
+}
+
+function syncRemoteFigureImage() {
+    const imageUrl = elements.imageImportUrl.value.trim();
+    const previousSyncedUrl = elements.imageImportUrl.dataset.syncedSourceUrl || '';
+    if (!imageUrl) {
+        if (!elements.imageImportFile.files[0]) showImageImportPreview('');
+        if (elements.imageImportSourceUrl.value.trim() === previousSyncedUrl) {
+            elements.imageImportSourceUrl.value = '';
+        }
+        elements.imageImportUrl.dataset.syncedSourceUrl = '';
+        return;
+    }
+    elements.imageImportFile.value = '';
+    showImageImportPreview(imageUrl);
+    if (
+        !elements.imageImportSourceUrl.value.trim() ||
+        elements.imageImportSourceUrl.value.trim() === previousSyncedUrl
+    ) {
+        elements.imageImportSourceUrl.value = imageUrl;
+    }
+    elements.imageImportUrl.dataset.syncedSourceUrl = imageUrl;
+}
+
+async function openFigureImageUpload() {
+    if (state.creatingFigure || !state.entityId) {
+        setStatus('请先保存人物，再上传图片', 'bad');
+        return;
+    }
+    await loadEventOptions();
+    resetImageImport();
+    elements.imageImportEvent.innerHTML = `<option value="">选择事件</option>${state.eventOptions
+        .map((event) => {
+            const title = localize(event.title, 'zh') || localize(event.title, 'en') || event.id;
+            return `<option value="${escapeHtml(event.id)}">${escapeHtml(title)}</option>`;
         })
-    });
-    setStatus(`已合并身份，改写 ${result.changedFiles.length} 个文件`, 'ok');
-    await refresh();
-    selectEntity(target.id);
-    await loadEntity();
+        .join('')}`;
+    const relatedEventId = ((state.figureUsage && state.figureUsage.events) || [])[0];
+    if (relatedEventId) {
+        elements.imageImportEvent.value = relatedEventId;
+        await loadImageImportSources();
+    }
+    elements.figureImageUploadDialog.showModal();
+}
+
+function closeFigureImageUpload() {
+    elements.figureImageUploadDialog.close();
 }
 
 function readFileAsDataUrl(file) {
@@ -1419,73 +2655,99 @@ function readFileAsDataUrl(file) {
 }
 
 async function importFigureImage() {
+    const invalidField = [...elements.figureImageUploadDialog.querySelectorAll('[required]')].find(
+        (field) => !field.checkValidity()
+    );
+    if (invalidField) {
+        const details = invalidField.closest('details');
+        if (details) details.open = true;
+        invalidField.reportValidity();
+        throw new Error('请填写所有带 * 的必填项');
+    }
     const file = elements.imageImportFile.files[0];
-    if (!file) throw new Error('请选择图片文件');
-    if (file.size > 10 * 1024 * 1024) throw new Error('图片不能超过 10 MB');
+    const imageUrl = elements.imageImportUrl.value.trim();
+    if (!file && !imageUrl) throw new Error('请上传图片或填写图片 URL');
+    if (file && imageUrl) throw new Error('本地图片和图片 URL 只能选择一种');
+    if (file && file.size > 10 * 1024 * 1024) throw new Error('图片不能超过 10 MB');
+    if (imageUrl && !/^https?:\/\//i.test(imageUrl)) throw new Error('图片 URL 必须使用 HTTP 或 HTTPS');
     const eventId = elements.imageImportEvent.value;
     const assetId = elements.imageImportAssetId.value.trim();
     const sourceId = elements.imageImportSourceId.value;
-    if (!eventId || !assetId || !sourceId) throw new Error('事件、资产 ID 和来源记录不能为空');
-    const imageBase64 = await readFileAsDataUrl(file);
-    const result = await api('/api/archive/figure-image', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            figureId: state.entityId,
-            eventId,
-            assetId,
-            sourceId,
-            imageBase64,
-            role: elements.imageImportRole.value,
-            caption: {
-                en: elements.imageImportCaptionEn.value.trim(),
-                zh: elements.imageImportCaptionZh.value.trim()
-            },
-            subcaption: {
-                en: elements.imageImportSubcaptionEn.value.trim(),
-                zh: elements.imageImportSubcaptionZh.value.trim()
-            },
-            sourceName: {
-                en: elements.imageImportSourceNameEn.value.trim(),
-                zh: elements.imageImportSourceNameZh.value.trim()
-            },
-            sourceUrl: elements.imageImportSourceUrl.value.trim(),
-            rights: {
-                status: elements.imageImportRightsStatus.value.trim(),
-                license: {
-                    en: elements.imageImportLicenseEn.value.trim(),
-                    zh: elements.imageImportLicenseZh.value.trim()
+    if (!eventId || !assetId || !sourceId) {
+        throw new Error('当前人物没有可用于登记图片的关联事件或来源记录');
+    }
+    if (
+        elements.imageImportSetDefault.checked &&
+        (!elements.imageImportSourceNameZh.value.trim() ||
+            !elements.imageImportSourceNameEn.value.trim() ||
+            !elements.imageImportSourceUrl.value.trim() ||
+            !elements.imageImportRightsStatus.value.trim() ||
+            !elements.imageImportLicenseZh.value.trim() ||
+            !elements.imageImportLicenseEn.value.trim() ||
+            !elements.imageImportUsageZh.value.trim() ||
+            !elements.imageImportUsageEn.value.trim())
+    ) {
+        throw new Error('设为默认头像时需要完整的双语来源与版权资料；普通图片上传不受影响');
+    }
+    const imageInput = file ? { imageBase64: await readFileAsDataUrl(file) } : { imageUrl };
+    elements.imageImportBtn.disabled = true;
+    try {
+        const result = await api('/api/archive/figure-image', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                figureId: state.entityId,
+                eventId,
+                assetId,
+                sourceId,
+                ...imageInput,
+                role: elements.imageImportRole.value,
+                caption: {
+                    en: elements.imageImportCaptionEn.value.trim(),
+                    zh: elements.imageImportCaptionZh.value.trim()
                 },
-                usage: {
-                    en: elements.imageImportUsageEn.value.trim(),
-                    zh: elements.imageImportUsageZh.value.trim()
-                }
-            },
-            setAsDefaultAvatar: elements.imageImportSetDefault.checked,
-            expectedRevision: state.revision
-        })
-    });
-    setStatus(`已导入 ${result.asset.path}`, 'ok');
-    await loadEntity();
+                subcaption: {
+                    en: elements.imageImportSubcaptionEn.value.trim(),
+                    zh: elements.imageImportSubcaptionZh.value.trim()
+                },
+                sourceName: {
+                    en: elements.imageImportSourceNameEn.value.trim(),
+                    zh: elements.imageImportSourceNameZh.value.trim()
+                },
+                sourceUrl: elements.imageImportSourceUrl.value.trim(),
+                rights: {
+                    status: elements.imageImportRightsStatus.value.trim(),
+                    license: {
+                        en: elements.imageImportLicenseEn.value.trim(),
+                        zh: elements.imageImportLicenseZh.value.trim()
+                    },
+                    usage: {
+                        en: elements.imageImportUsageEn.value.trim(),
+                        zh: elements.imageImportUsageZh.value.trim()
+                    }
+                },
+                setAsDefaultAvatar: elements.imageImportSetDefault.checked,
+                expectedRevision: state.revision
+            })
+        });
+        closeFigureImageUpload();
+        await loadEntity();
+        focusFigureAsset(result.asset.path);
+        setStatus(`已导入并登记 ${result.asset.path}`, 'ok');
+    } finally {
+        elements.imageImportBtn.disabled = false;
+    }
 }
 
 function collectFigureForm() {
-    let profileSources;
-    try {
-        profileSources = JSON.parse(elements.figureProfileSources.value || '[]');
-    } catch (error) {
-        throw new Error(`Profile sources JSON 无效：${error.message}`);
-    }
-    if (!Array.isArray(profileSources)) throw new Error('Profile sources 必须是 JSON 数组');
-
     const disambiguation = {
         en: elements.figureDisambiguationEn.value.trim(),
         zh: elements.figureDisambiguationZh.value.trim()
     };
-    const notes = {
-        en: elements.reviewNotesEn.value.trim(),
-        zh: elements.reviewNotesZh.value.trim()
-    };
+    const notes = { ...((state.document.review && state.document.review.notes) || {}) };
+    const reviewNotesZh = elements.reviewNotesZh.value.trim();
+    if (reviewNotesZh) notes.zh = reviewNotesZh;
+    else delete notes.zh;
     const figure = {
         id: elements.figureId.value.trim(),
         name: {
@@ -1496,12 +2758,12 @@ function collectFigureForm() {
         ...(disambiguation.en || disambiguation.zh ? { disambiguation } : {}),
         type: elements.figureType.value,
         organizationIds: splitLines(elements.figureOrganizations.value),
-        profileSources,
+        profileSources: collectFigureProfileSources(),
         review: {
             status: elements.reviewStatus.value,
             reviewedAt: elements.reviewedAt.value.trim(),
             reviewer: elements.reviewer.value.trim(),
-            ...(notes.en || notes.zh ? { notes } : {})
+            ...(Object.keys(notes).length ? { notes } : {})
         }
     };
     const avatarPath = elements.avatarPath.value.trim();
@@ -1541,9 +2803,7 @@ async function renderFigureUsage() {
     const usage = state.figureUsage;
     const cards = [
         ['关联事件', usage.events.length],
-        ['唯一资产', groupFigureAssets().length],
-        ['Canonical 关系', usage.eventRelations.length],
-        ['Variant 关系', usage.variantRelations.length],
+        ['图片资产', groupFigureAssets().length],
         ['资产引用', usage.assets.length]
     ];
     elements.figureUsage.innerHTML = cards
@@ -1569,11 +2829,6 @@ function groupFigureAssets() {
                 group.associations.find((asset) => asset.isDefaultAvatar) ||
                 group.associations.find((asset) => asset.canSetAsDefaultAvatar) ||
                 group.associations[0];
-            const metadataSignatures = new Set(
-                group.associations.map((asset) =>
-                    JSON.stringify({ source: asset.source || {}, rights: asset.rights || {} })
-                )
-            );
             return {
                 ...group,
                 representative,
@@ -1581,8 +2836,7 @@ function groupFigureAssets() {
                 assetIds: [...new Set(group.associations.map((asset) => asset.id))],
                 roles: [...new Set(group.associations.map((asset) => asset.role).filter(Boolean))],
                 isDefaultAvatar: group.associations.some((asset) => asset.isDefaultAvatar),
-                usedByRelations: group.associations.some((asset) => asset.usedByRelations),
-                metadataConflict: metadataSignatures.size > 1
+                usedByRelations: group.associations.some((asset) => asset.usedByRelations)
             };
         })
         .sort(
@@ -1591,77 +2845,78 @@ function groupFigureAssets() {
         );
 }
 
-function updateAssetMergeControls() {
-    const selectedCount = state.assetMergeSelection.size;
-    const hasCanonical = Boolean(state.assetMergeCanonical && state.assetMergeSelection.has(state.assetMergeCanonical));
-    elements.figureAssetMergeSummary.textContent = hasCanonical
-        ? `已选择 ${selectedCount} 张 · 保留路径已指定`
-        : selectedCount > 0
-          ? `已选择 ${selectedCount} 张 · 请选择保留路径`
-          : '选择至少两张图片';
-    elements.figureAssetMergeBtn.disabled = selectedCount < 2 || !hasCanonical;
+function updateDefaultAvatarAssetLink() {
+    const avatarPath = elements.avatarPath.value.trim();
+    elements.openDefaultAvatarAssetBtn.hidden = !avatarPath;
+    elements.removeDefaultAvatarBtn.hidden = !avatarPath;
+    elements.replaceDefaultAvatarBtn.textContent = avatarPath ? '替换头像' : '选择头像';
+    elements.replaceDefaultAvatarBtn.disabled = state.creatingFigure;
+    elements.replaceDefaultAvatarBtn.title = state.creatingFigure ? '请先保存人物，再从图片资产中选择头像' : '';
+    if (!avatarPath) return;
+    const hasMatchingAsset = groupFigureAssets().some((group) => group.path === avatarPath);
+    elements.openDefaultAvatarAssetBtn.textContent = hasMatchingAsset ? '查看对应图片资产' : '查看头像资产信息';
+    elements.openDefaultAvatarAssetBtn.title = hasMatchingAsset
+        ? '打开图片资产并定位当前默认头像'
+        : '当前默认头像尚未登记为人物图片资产，打开头像引用信息';
+    elements.openDefaultAvatarAssetBtn.dataset.hasMatchingAsset = String(hasMatchingAsset);
 }
 
-function resetAssetMergeSelection() {
-    state.assetMergeSelection.clear();
-    state.assetMergeCanonical = '';
-    updateAssetMergeControls();
-}
-
-async function mergeSelectedFigureAssets() {
-    const selectedPaths = [...state.assetMergeSelection];
-    const canonicalPath = state.assetMergeCanonical;
-    const duplicatePaths = selectedPaths.filter((assetPath) => assetPath !== canonicalPath);
-    if (!canonicalPath || duplicatePaths.length === 0) throw new Error('请选择至少两张图片并指定保留路径');
-
-    const request = {
-        figureId: state.entityId,
-        canonicalPath,
-        duplicatePaths
-    };
-    const preview = await api('/api/archive/figure-asset-merge-preview', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(request)
+function openDefaultAvatarAsset() {
+    const avatarPath = elements.avatarPath.value.trim();
+    if (!avatarPath) return;
+    activateFigureSection('assets');
+    window.requestAnimationFrame(() => {
+        const target = [...elements.figureAssetGallery.querySelectorAll('.figure-asset-card')].find(
+            (card) => card.dataset.assetPath === avatarPath
+        );
+        if (!target) elements.figureAvatarEditor.open = true;
+        const destination = target || elements.figureAvatarEditor;
+        destination.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        destination.classList.add('is-linked-target');
+        window.setTimeout(() => destination.classList.remove('is-linked-target'), 1600);
+        if (!target) setStatus('当前默认头像尚未登记为人物图片资产，请在此核对引用信息', '');
     });
-    const impact = preview.impact;
-    const contentWarning = preview.contentMatch
-        ? '所选本地文件内容哈希一致。'
-        : '所选文件内容哈希不完全一致，请确认它们确实是同一图片。';
-    const otherFigureWarning = impact.otherFigures.length
-        ? `\n同时影响其他人物：${impact.otherFigures.join('、')}`
-        : '';
-    if (
-        !window.confirm(
-            `确认将 ${duplicatePaths.length} 个路径合并到：\n${canonicalPath}\n\n将改写 ${impact.assets} 个资产记录、${impact.events} 个事件、${impact.defaultAvatars} 个默认头像。\n${contentWarning}${otherFigureWarning}\n\n旧图片文件不会删除。`
-        )
-    )
+}
+
+function replaceDefaultAvatar() {
+    if (state.creatingFigure) {
+        setStatus('请先保存人物，再从图片资产中选择头像', 'bad');
         return;
-
-    const result = await api('/api/archive/figure-asset-merge', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...request, expectedRevision: preview.revision })
+    }
+    activateFigureSection('assets');
+    window.requestAnimationFrame(() => {
+        const assetGroups = groupFigureAssets();
+        const destination = assetGroups.length ? elements.figureAssetGallery : elements.figureAssetEmpty;
+        destination.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (assetGroups.length) {
+            elements.figureAssetGallery.classList.add('is-choose-target');
+            window.setTimeout(() => elements.figureAssetGallery.classList.remove('is-choose-target'), 1600);
+            setStatus('请在图片资产卡片中选择“设为默认头像”', '');
+        } else {
+            setStatus('暂无可选图片资产', '');
+        }
     });
-    resetAssetMergeSelection();
-    await loadEntity();
-    setStatus(`图片路径已合并，改写 ${result.changedFiles.length} 个文件`, 'ok');
+}
+
+function removeDefaultAvatar() {
+    if (!elements.avatarPath.value.trim()) return;
+    if (!window.confirm('仅移除当前人物的默认头像引用，不删除图片资产或文件。继续吗？')) return;
+    clearDefaultAvatarFields();
+    state.document = collectFigureForm();
+    syncEditor();
+    renderAvatarPreview();
+    setStatus('已移除默认头像引用，保存后生效', '');
 }
 
 function renderFigureAssetCards() {
     const assetGroups = groupFigureAssets();
-    elements.figureAssetCount.textContent = `${assetGroups.length} 个唯一文件`;
+    elements.figureAssetCount.textContent = `${assetGroups.length} 个图片资产`;
     elements.figureAssetEmpty.hidden = assetGroups.length > 0;
     elements.figureAssetGallery.innerHTML = assetGroups
         .map((group) => {
             const asset = group.representative;
             const caption = localize(asset.caption, 'zh') || localize(asset.caption, 'en') || asset.id;
             const subcaption = localize(asset.subcaption, 'zh') || localize(asset.subcaption, 'en');
-            const sourceName =
-                localize(asset.source && asset.source.name, 'zh') ||
-                localize(asset.source && asset.source.name, 'en') ||
-                (asset.source && asset.source.id) ||
-                '未记录来源';
             const preview =
                 asset.type === 'image'
                     ? `<img class="figure-asset-image" src="${escapeHtml(assetImageSource(asset))}" alt="${escapeHtml(caption)}" loading="lazy">`
@@ -1670,48 +2925,44 @@ function renderFigureAssetCards() {
                 ? '将这张图片设为人物全局默认头像'
                 : (asset.defaultAvatarIssues || []).join('；');
             const defaultActionLabel = group.isDefaultAvatar ? '当前默认头像' : '设为默认头像';
-            const selectedForMerge = state.assetMergeSelection.has(group.path);
-            const canonicalForMerge = state.assetMergeCanonical === group.path;
-            const mergeControls =
-                asset.type === 'image'
-                    ? `<div class="asset-merge-controls"><label><input type="checkbox" data-asset-merge-select value="${escapeHtml(group.path)}"${selectedForMerge ? ' checked' : ''}>参与合并</label><label><input type="radio" name="figureAssetMergeCanonical" data-asset-merge-canonical value="${escapeHtml(group.path)}"${canonicalForMerge ? ' checked' : ''}>保留此路径</label></div>`
-                    : '';
-            return `<article class="figure-asset-card${group.isDefaultAvatar ? ' is-default' : ''}${selectedForMerge ? ' is-merge-selected' : ''}" data-event-id="${escapeHtml(asset.eventId)}" data-asset-id="${escapeHtml(asset.id)}">
+            const unlinkBlockedReason = group.isDefaultAvatar
+                ? '当前图片是默认头像，请先移除或替换默认头像'
+                : group.usedByRelations
+                  ? '当前图片被事件人物关系选作头像，请先移除或替换对应的头像引用'
+                  : '';
+            const unlinkTitle = unlinkBlockedReason || '解除当前人物与该图片的关联；图片资产记录和文件会保留';
+            return `<article class="figure-asset-card${group.isDefaultAvatar ? ' is-default' : ''}" data-event-id="${escapeHtml(asset.eventId)}" data-asset-id="${escapeHtml(asset.id)}" data-asset-path="${escapeHtml(group.path)}">
                 <div class="figure-asset-preview">${preview}<div class="figure-asset-overlay"><span>${group.eventIds.length} 个事件</span><span>${escapeHtml(group.roles.join(' / ') || asset.type)}</span></div></div>
                 <div class="figure-asset-body">
                     <div class="figure-asset-title-row"><strong>${escapeHtml(caption)}</strong>${group.isDefaultAvatar ? '<span class="badge verified">默认头像</span>' : ''}</div>
-                    ${mergeControls}
                     ${subcaption ? `<p>${escapeHtml(subcaption)}</p>` : ''}
                     <dl class="figure-asset-meta">
                         <div><dt>文件路径</dt><dd>${escapeHtml(group.path)}</dd></div>
-                        <div><dt>来源</dt><dd>${escapeHtml(sourceName)}</dd></div>
-                        <div><dt>授权</dt><dd>${escapeHtml((asset.rights && asset.rights.status) || '未标记')}</dd></div>
-                        <div><dt>引用记录</dt><dd>${group.associations.length} 条 · ${group.assetIds.length} 个资产 ID</dd></div>
                     </dl>
                     <div class="figure-asset-tags">
                         ${group.usedByRelations ? '<span class="asset-tag active">被事件关系选作头像</span>' : '<span class="asset-tag">未被事件关系选用</span>'}
-                        ${group.metadataConflict ? '<span class="asset-tag warning">来源或授权元数据不一致</span>' : ''}
                         ${group.eventIds.map((eventId) => `<span class="asset-tag">${escapeHtml(eventId)}</span>`).join('')}
                     </div>
                     <div class="figure-asset-actions">
                         <button data-asset-action="view">查看原图</button>
                         <button data-asset-action="copy-path">复制路径</button>
                         <button class="primary" data-asset-action="set-default" title="${escapeHtml(defaultTitle)}"${group.isDefaultAvatar || !asset.canSetAsDefaultAvatar ? ' disabled' : ''}>${defaultActionLabel}</button>
+                        <button class="danger" data-asset-action="unlink" title="${escapeHtml(unlinkTitle)}"${unlinkBlockedReason ? ' disabled' : ''}>解除关联</button>
                     </div>
                 </div>
             </article>`;
         })
         .join('');
-    updateAssetMergeControls();
+    updateDefaultAvatarAssetLink();
 }
 
 async function renderFigureAssets() {
     if (!state.entityId || state.creatingFigure) {
         state.figureAssets = [];
-        resetAssetMergeSelection();
         elements.figureAssetCount.textContent = '0';
         elements.figureAssetGallery.innerHTML = '';
         elements.figureAssetEmpty.hidden = false;
+        updateDefaultAvatarAssetLink();
         return;
     }
     state.figureAssets = await api(`/api/archive/figure-assets?figureId=${encodeURIComponent(state.entityId)}`);
@@ -1722,6 +2973,23 @@ function relationRoleText(relation) {
     return localize(relation.role, 'zh') || localize(relation.role, 'en') || '未填写角色';
 }
 
+function figureEventRoleChips(detail) {
+    const roles = new Map();
+    for (const relation of [...detail.eventRelations, ...detail.variantRelations]) {
+        const text = relationRoleText(relation);
+        const existing = roles.get(text);
+        roles.set(text, { text, primary: relation.primary === true || (existing && existing.primary === true) });
+    }
+    return roles.size
+        ? [...roles.values()]
+              .map(
+                  (role) =>
+                      `<span class="event-relation-chip${role.primary ? ' primary' : ''}">${escapeHtml(role.text)}${role.primary ? ' · 主要' : ''}</span>`
+              )
+              .join('')
+        : '<span class="muted">未填写角色</span>';
+}
+
 function renderFigureEvents() {
     const eventDetails = (state.figureUsage && state.figureUsage.eventDetails) || [];
     elements.figureEventCount.textContent = `${eventDetails.length} 个事件`;
@@ -1729,22 +2997,7 @@ function renderFigureEvents() {
     elements.figureEventList.innerHTML = eventDetails
         .map((detail) => {
             const title = localize(detail.title, 'zh') || localize(detail.title, 'en') || detail.eventId;
-            const canonical = detail.eventRelations.length
-                ? detail.eventRelations
-                      .map(
-                          (relation) =>
-                              `<span class="event-relation-chip${relation.primary ? ' primary' : ''}">${escapeHtml(relationRoleText(relation))}${relation.primary ? ' · 主要' : ''}</span>`
-                      )
-                      .join('')
-                : '<span class="muted">无 Canonical 关系</span>';
-            const variants = detail.variantRelations.length
-                ? detail.variantRelations
-                      .map(
-                          (relation) =>
-                              `<span class="event-relation-chip">${escapeHtml(relation.storylineId || 'variant')} · ${escapeHtml(relationRoleText(relation))}</span>`
-                      )
-                      .join('')
-                : '<span class="muted">无 Variant 关系</span>';
+            const roles = figureEventRoleChips(detail);
             const eventAssets = state.figureAssets.filter((asset) => asset.eventId === detail.eventId);
             const uniquePaths = new Set(eventAssets.map((asset) => asset.path));
             const avatarIds = [
@@ -1763,12 +3016,11 @@ function renderFigureEvents() {
                 .join('');
             return `<article class="figure-event-row" data-event-id="${escapeHtml(detail.eventId)}">
                 <div class="figure-event-identity"><strong>${escapeHtml(title)}</strong><span>${escapeHtml(detail.eventId)}</span></div>
-                <div class="figure-event-cell"><span class="figure-event-label">Canonical</span><div class="event-relation-chips">${canonical}</div></div>
-                <div class="figure-event-cell"><span class="figure-event-label">Variants</span><div class="event-relation-chips">${variants}</div></div>
+                <div class="figure-event-cell"><span class="figure-event-label">角色</span><div class="event-relation-chips">${roles}</div></div>
                 <div class="figure-event-cell"><span class="figure-event-label">资产引用</span><div>${eventAssets.length} 条记录 · ${uniquePaths.size} 个文件</div>${avatarIds.length ? `<div class="event-avatar-ids">头像：${escapeHtml([...new Set(avatarIds)].join('、'))}</div>` : ''}</div>
                 <div class="figure-event-actions">
                     <button data-event-action="open-admin">后台事件</button>
-                    ${displayTargets.length ? `<span class="figure-event-label">展示版本</span><select data-display-target aria-label="选择展示 Storyline">${displayOptions}</select><button class="primary" data-event-action="open-display">展示事件 ↗</button>` : '<button data-event-action="open-display" disabled title="该事件未加入启用的 Storyline">暂无展示页</button>'}
+                    ${displayTargets.length ? `<span class="figure-event-label">展示版本</span><select data-display-target aria-label="选择展示故事线">${displayOptions}</select><button class="primary" data-event-action="open-display">展示事件 ↗</button>` : '<button data-event-action="open-display" disabled title="该事件未加入启用的故事线">暂无展示页</button>'}
                 </div>
             </article>`;
         })
@@ -1805,10 +3057,6 @@ async function renderEventDisplayActions() {
         state.eventDisplayTargets = [];
         elements.eventDisplayTarget.innerHTML = '';
         elements.openEventDisplayBtn.disabled = true;
-        elements.inspectEventPresentationBtn.disabled = true;
-        elements.restorePresentationInheritanceBtn.disabled = true;
-        state.eventPresentationOpen = false;
-        elements.eventPresentationPreview.textContent = '';
         return;
     }
     state.eventDisplayTargets = await api(
@@ -1818,74 +3066,17 @@ async function renderEventDisplayActions() {
         .map((target, index) => {
             const storylineTitle =
                 localize(target.storylineTitle, 'zh') || localize(target.storylineTitle, 'en') || target.storylineId;
-            const sourceLabel = target.hasOverride ? '覆盖' : '继承';
-            return `<option value="${index}">${escapeHtml(storylineTitle)} · ${escapeHtml(target.storylineId)} · ${sourceLabel}</option>`;
+            return `<option value="${index}">${escapeHtml(storylineTitle)} · ${escapeHtml(target.storylineId)}</option>`;
         })
         .join('');
     elements.openEventDisplayBtn.disabled = state.eventDisplayTargets.length === 0;
     elements.openEventDisplayBtn.title = state.eventDisplayTargets.length
         ? '在展示页打开当前事件'
-        : '该事件未加入启用的 Storyline';
-    updateEventPresentationControls();
+        : '该事件未加入启用的故事线';
 }
 
 function selectedEventPresentationTarget() {
     return state.eventDisplayTargets[Number(elements.eventDisplayTarget.value)] || null;
-}
-
-function updateEventPresentationControls() {
-    const target = selectedEventPresentationTarget();
-    const canInspect = Boolean(target);
-    const canRestore = Boolean(target && (target.hasOverride || target.refVariant));
-    elements.inspectEventPresentationBtn.disabled = !canInspect;
-    elements.restorePresentationInheritanceBtn.disabled = !canRestore;
-    elements.restorePresentationInheritanceBtn.title = canRestore
-        ? '删除当前覆盖并回到 event.defaultPresentation'
-        : '当前展示已继承默认值';
-    if (state.eventPresentationOpen && target) renderEventPresentationPanel(target);
-}
-
-function renderEventPresentationPanel(target) {
-    state.eventPresentationOpen = true;
-    elements.eventPresentationPanel.hidden = false;
-    const source = target.hasOverride ? `使用覆盖文件 ${target.overrideFile}` : '继承 event.defaultPresentation';
-    const variantNote = target.refVariant ? `，Storyline 显式指定 ${target.refVariant}` : '';
-    elements.eventPresentationSummary.textContent = `${target.storylineId}：${source}${variantNote}。`;
-    elements.eventPresentationPreview.textContent = JSON.stringify(
-        {
-            effectivePresentation: target.effectivePresentation,
-            override: target.override,
-            defaultPresentation: target.defaultPresentation
-        },
-        null,
-        2
-    );
-}
-
-async function restorePresentationInheritance() {
-    const target = selectedEventPresentationTarget();
-    if (!target) throw new Error('请选择展示 Storyline');
-    if (!target.hasOverride && !target.refVariant) throw new Error('当前展示已经继承默认值');
-    const source = target.hasOverride ? target.overrideFile : target.refVariant;
-    if (!window.confirm(`确认让 ${state.entityId} / ${target.storylineId} 恢复继承默认展示？\n\n将清除：${source}`))
-        return;
-    const eventId = state.entityId;
-    const result = await api('/api/archive/event-presentation-restore-inheritance', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            eventId,
-            storylineId: target.storylineId,
-            milestoneId: target.milestoneId,
-            expectedOverrideRevision: target.overrideRevision,
-            expectedStorylineRevision: target.storylineRevision
-        })
-    });
-    const keptNote = result.keptOverrideDueToReferences ? '，共享覆盖文件已保留' : '';
-    setStatus(`已恢复继承，改写 ${result.changedFiles.length} 个文件${keptNote}`, 'ok');
-    await refresh();
-    selectEntity(eventId);
-    await loadEntity();
 }
 
 async function setFigureDefaultAvatar(asset) {
@@ -1905,6 +3096,31 @@ async function setFigureDefaultAvatar(asset) {
     selectEntity(figureId);
     await loadEntity();
     setStatus(`已将 ${asset.id} 设为默认头像`, 'ok');
+}
+
+async function unlinkFigureAssetGroup(group) {
+    const associationCount = group.associations.length;
+    const confirmation = `将解除当前人物与该图片的关联（共 ${associationCount} 条资产记录）。图片资产和文件会保留。继续吗？`;
+    if (!window.confirm(confirmation)) return;
+    const result = await api('/api/archive/figure-asset-unlink', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            figureId: state.entityId,
+            associations: group.associations.map((asset) => ({
+                eventId: asset.eventId,
+                assetId: asset.id,
+                expectedRevision: asset.assetsRevision
+            }))
+        })
+    });
+    await loadEntity();
+    setStatus(
+        result.changed
+            ? `已解除图片与当前人物的关联，保留了图片资产和文件（${result.unlinkedAssociations.length} 条记录）`
+            : '该图片已未关联当前人物',
+        'ok'
+    );
 }
 
 function currentRelations() {
@@ -1941,8 +3157,9 @@ async function populateAvatarSelect(select, relation, figureId) {
         `/api/archive/figure-assets?figureId=${encodeURIComponent(figureId)}&eventId=${encodeURIComponent(state.entityId)}`
     );
     const selected = relation.avatarAssetId || '';
+    const figure = relationFigure(figureId);
     select.innerHTML = [
-        '<option value="">使用默认头像 / 无事件覆盖</option>',
+        `<option value="">${figure.defaultAvatar ? '使用人物默认头像' : '无事件头像覆盖'}</option>`,
         ...assets.map(
             (asset) =>
                 `<option value="${escapeHtml(asset.id)}">${escapeHtml(asset.id)} · ${escapeHtml(localize(asset.caption, 'zh') || asset.role)}</option>`
@@ -1969,17 +3186,20 @@ async function renderRelations() {
     elements.relationRows.innerHTML = relations
         .map((relation, index) => {
             const figure = relationFigure(relation.figureId);
+            const defaultAvatar = figure.defaultAvatar
+                ? `<span class="relation-avatar"><img src="${escapeHtml(adminMediaUrl(figure.defaultAvatar))}" alt="${escapeHtml(localize(figure.name, 'zh') || localize(figure.name, 'en'))} 默认头像" loading="lazy" data-avatar-style="${escapeHtml(figure.defaultAvatarStyle || '')}"></span>`
+                : '<span class="relation-avatar is-empty">无头像</span>';
             return `<div class="relation-row" data-index="${index}">
               <div class="relation-title">
-                <div><strong>${escapeHtml(localize(figure.name, 'zh') || localize(figure.name, 'en'))}</strong><div class="muted">${escapeHtml(relation.figureId)} · ${escapeHtml(figureTypeLabel(figure.type))}</div></div>
+                <div class="relation-identity">${defaultAvatar}<div class="relation-identity-copy"><div class="relation-name-line"><strong>${escapeHtml(localize(figure.name, 'zh') || localize(figure.name, 'en'))}</strong><label class="relation-primary-toggle"><input type="checkbox" data-field="primary"${relation.primary === true ? ' checked' : ''}>主要人物</label></div><div class="muted">${escapeHtml(figureTypeLabel(figure.type))}${relation.useDefaultAvatar === true && figure.defaultAvatar ? ' · 使用默认头像' : ''}</div></div></div>
                 <div class="relation-actions"><button class="relation-open-button" data-action="open-figure">打开人物资料</button><button data-action="up" title="上移">↑</button><button data-action="down" title="下移">↓</button><button data-action="remove">移除</button></div>
               </div>
               <div class="form-grid">
-                <label class="role-field">英文角色<input data-field="role.en" value="${escapeHtml(localize(relation.role, 'en'))}"></label>
-                <label class="role-field">中文角色<input data-field="role.zh" value="${escapeHtml(localize(relation.role, 'zh'))}"></label>
+                <label class="role-field">${fieldLabel('英文角色', true)}<input data-field="role.en" value="${escapeHtml(localize(relation.role, 'en'))}" required></label>
+                <label class="role-field">${fieldLabel('中文角色', true)}<input data-field="role.zh" value="${escapeHtml(localize(relation.role, 'zh'))}" required></label>
                 <label class="span-2">事件头像<select data-field="avatarAssetId"><option value="">正在加载资产...</option></select></label>
                 ${relation.avatarStyle ? `<label>头像样式<input data-field="avatarStyle" value="${escapeHtml(relation.avatarStyle)}"></label>` : ''}
-                <div class="checks span-2"><label><input type="checkbox" data-field="primary"${relation.primary === true ? ' checked' : ''}>主要人物</label>${isVariantFile() ? `<label><input type="checkbox" data-field="useDefaultAvatar"${relation.useDefaultAvatar === true ? ' checked' : ''}>强制使用全局默认头像</label>` : ''}</div>
+                ${isVariantFile() ? `<div class="checks span-2"><label><input type="checkbox" data-field="useDefaultAvatar"${relation.useDefaultAvatar === true ? ' checked' : ''}>强制使用全局默认头像</label></div>` : ''}
               </div>
             </div>`;
         })
@@ -1994,6 +3214,9 @@ async function renderRelations() {
             );
         })
     );
+    for (const image of elements.relationRows.querySelectorAll('.relation-avatar img[data-avatar-style]')) {
+        image.style.cssText = image.dataset.avatarStyle || '';
+    }
 }
 
 function updateRelationField(index, field, target) {
@@ -2005,9 +3228,18 @@ function updateRelationField(index, field, target) {
     } else if (field === 'primary' || field === 'useDefaultAvatar') {
         if (target.checked) relation[field] = true;
         else delete relation[field];
-    } else if (field === 'avatarAssetId' || field === 'avatarStyle') {
-        if (target.value) relation[field] = target.value;
-        else delete relation[field];
+    } else if (field === 'avatarAssetId') {
+        if (target.value) {
+            relation.avatarAssetId = target.value;
+            delete relation.useDefaultAvatar;
+        } else {
+            delete relation.avatarAssetId;
+            if (relationFigure(relation.figureId).defaultAvatar) relation.useDefaultAvatar = true;
+            else delete relation.useDefaultAvatar;
+        }
+    } else if (field === 'avatarStyle') {
+        if (target.value) relation.avatarStyle = target.value;
+        else delete relation.avatarStyle;
     }
     syncEditor();
 }
@@ -2023,60 +3255,94 @@ async function openFigureDetails(figureId) {
     await loadEntity();
 }
 
-async function saveEntity(runValidation = false) {
+function currentEntitySaveRequest() {
     if (!state.document) throw new Error('请先加载或新建实体');
-    let result;
     if (state.type === 'figures') {
         const figure = collectFigureForm();
         state.document = figure;
         state.entityId = figure.id;
         syncEditor();
-        result = await api('/api/archive/figure', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
+        return {
+            url: '/api/archive/figure',
+            body: {
+                type: 'figures',
                 figureId: figure.id,
                 data: figure,
                 create: state.creatingFigure,
                 expectedRevision: state.revision || state.figureListRevision
-            })
-        });
-        state.creatingFigure = false;
-    } else {
-        let documentValue;
-        try {
-            documentValue = JSON.parse(elements.editor.value);
-        } catch (error) {
-            throw new Error(`JSON 无效：${error.message}`);
-        }
-        state.document = documentValue;
-        const request =
-            state.type === 'events'
-                ? {
-                      url: '/api/archive/file',
-                      body: {
-                          eventId: state.entityId,
-                          file: state.file,
-                          data: state.document,
-                          expectedRevision: state.revision
-                      }
-                  }
-                : {
-                      url: '/api/archive/storyline',
-                      body: {
-                          storylineId: state.entityId,
-                          data: state.document,
-                          expectedRevision: state.revision
-                      }
-                  };
-        result = await api(request.url, {
+            }
+        };
+    }
+    let documentValue;
+    try {
+        documentValue = JSON.parse(elements.editor.value);
+    } catch (error) {
+        throw new Error(`JSON 无效：${error.message}`);
+    }
+    state.document = documentValue;
+    validatePendingAssetRequirements();
+    return state.type === 'events'
+        ? {
+              url: '/api/archive/file',
+              body: {
+                  type: 'events',
+                  eventId: state.entityId,
+                  file: state.file,
+                  data: state.document,
+                  expectedRevision: state.revision
+              }
+          }
+        : {
+              url: '/api/archive/storyline',
+              body: {
+                  type: 'storylines',
+                  storylineId: state.entityId,
+                  data: state.document,
+                  expectedRevision: state.revision
+              }
+          };
+}
+
+async function validateEntity() {
+    const request = currentEntitySaveRequest();
+    state.taskRunning = true;
+    elements.taskOutputTitle.textContent = '校验结果';
+    elements.validationOutput.textContent = '正在校验当前编辑内容...';
+    setTaskOutputVisible(true);
+    syncTaskActionAvailability();
+    try {
+        const result = await api('/api/archive/validate-draft', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(request.body)
         });
+        elements.validationOutput.textContent =
+            [result.stdout, result.stderr].filter(Boolean).join('\n') || `exitCode=${result.exitCode}`;
+        setStatus(
+            result.ok ? '当前编辑内容校验通过，尚未保存' : '当前编辑内容校验失败，尚未保存',
+            result.ok ? 'ok' : 'bad'
+        );
+    } catch (error) {
+        elements.validationOutput.textContent = error.message;
+        throw error;
+    } finally {
+        state.taskRunning = false;
+        syncTaskActionAvailability();
     }
+}
+
+async function saveEntity() {
+    const request = currentEntitySaveRequest();
+    const result = await api(request.url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(request.body)
+    });
+    if (state.type === 'figures') state.creatingFigure = false;
     state.revision = result.revision || state.revision;
-    setStatus(`已保存 ${state.entityId}${state.file ? ` / ${state.file}` : ''}`, 'ok');
+    state.pendingAssetIds = new Set();
+    state.pendingAssetPaths = new Set();
+    setStatus('内容已保存', 'ok');
     if (state.type === 'figures') {
         const selectedId = state.entityId;
         const list = await api('/api/archive/figures');
@@ -2088,24 +3354,47 @@ async function saveEntity(runValidation = false) {
         elements.figureId.disabled = true;
         state.entityId = selectedId;
     }
-    if (runValidation) await runTask('validate');
+    if (state.type === 'storylines') {
+        const selectedId = state.entityId;
+        state.entities = await api('/api/archive/storylines');
+        state.entityId = selectedId;
+        renderEntities();
+        renderStorylineOverview();
+    }
 }
 
 async function runTask(task) {
     if (state.taskRunning) return;
+    const config = archiveTaskConfig[task];
+    if (!config) throw new Error(`不支持的 Archive 任务：${task}`);
     state.taskRunning = true;
-    for (const button of [elements.validateBtn, elements.generateBtn, elements.saveValidateBtn]) button.disabled = true;
-    elements.validationOutput.textContent = `${task === 'validate' ? '正在运行 Archive 校验' : '正在生成运行时数据'}...`;
+    elements.taskOutputTitle.textContent = config.title;
+    elements.validationOutput.textContent = config.pendingMessage;
+    setTaskOutputVisible(true);
+    syncTaskActionAvailability();
     try {
         const result = await api(`/api/archive/${task}`, { method: 'POST' });
         elements.validationOutput.textContent =
             [result.stdout, result.stderr].filter(Boolean).join('\n') || `exitCode=${result.exitCode}`;
-        setStatus(result.ok ? `${task} 已通过` : `${task} 失败`, result.ok ? 'ok' : 'bad');
+        setStatus(result.ok ? config.successMessage : config.failureMessage, result.ok ? 'ok' : 'bad');
+    } catch (error) {
+        elements.validationOutput.textContent = error.message;
+        throw error;
     } finally {
         state.taskRunning = false;
-        for (const button of [elements.validateBtn, elements.generateBtn, elements.saveValidateBtn])
-            button.disabled = false;
+        syncTaskActionAvailability();
     }
+}
+
+function setTaskOutputVisible(visible) {
+    elements.taskOutputPanel.hidden = !visible;
+}
+
+function syncTaskActionAvailability() {
+    elements.validateBtn.disabled = state.taskRunning;
+    elements.validateDraftBtn.disabled = state.taskRunning || state.type === 'audit' || !state.document;
+    elements.generateBtn.disabled = state.taskRunning;
+    elements.saveBtn.disabled = state.taskRunning || state.type === 'audit' || !state.document;
 }
 
 function auditItemHtml(item) {
@@ -2145,6 +3434,7 @@ async function loadAudit() {
 function createFigure() {
     state.type = 'figures';
     elements.entityType.value = 'figures';
+    state.figureSection = 'basic';
     state.entityId = '';
     state.file = '';
     state.creatingFigure = true;
@@ -2166,14 +3456,19 @@ function createFigure() {
     elements.currentEntity.textContent = '新建全局人物 / 实体';
     syncEditor();
     updatePanelVisibility();
+    renderFigureSectionNav();
+    renderAdvancedJsonFiles();
     renderFigureForm();
-    renderAdvancedFigureTools().catch((error) => setStatus(error.message, 'bad'));
+    elements.figureIdentityDetails.open = true;
     elements.figureUsage.innerHTML = '';
     state.figureAssets = [];
+    state.existingImageAssets = [];
+    state.existingImageAssetsRevision = '';
     state.figureUsage = null;
     renderFigureAssets().catch((error) => setStatus(error.message, 'bad'));
     renderFigureEvents();
     elements.figureId.focus();
+    setStatus('已创建人物草稿，尚未保存', '');
 }
 
 elements.entityList.addEventListener('click', async (event) => {
@@ -2196,12 +3491,18 @@ elements.entityList.addEventListener('click', async (event) => {
     await loadEntity().catch((error) => setStatus(error.message, 'bad'));
 });
 elements.storylineTimeline.addEventListener('click', async (event) => {
+    const removeButton = event.target.closest('[data-remove-storyline-event]');
+    if (removeButton) {
+        removeStorylineEvent(removeButton.dataset.removeStorylineEvent);
+        return;
+    }
     const eventLink = event.target.closest('[data-open-event]');
     if (!eventLink) return;
     await openAdminEvent(eventLink.dataset.openEvent, eventLink.dataset.openFile || 'event.json').catch((error) =>
         setStatus(error.message, 'bad')
     );
 });
+elements.addStorylineEventBtn.addEventListener('click', addStorylineEvent);
 elements.figureAlphabet.addEventListener('click', (event) => {
     const button = event.target.closest('button[data-entity-index]');
     if (!button) return;
@@ -2227,8 +3528,11 @@ elements.entityList.addEventListener('scroll', () => {
     }
 });
 
-elements.entityType.addEventListener('change', () => {
-    state.type = elements.entityType.value;
+elements.entityTypeNav.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-entity-type]');
+    if (!button || button.dataset.entityType === state.type) return;
+    state.type = button.dataset.entityType;
+    elements.entityType.value = state.type;
     elements.entitySearch.value = '';
     refresh().catch((error) => setStatus(error.message, 'bad'));
 });
@@ -2242,31 +3546,86 @@ elements.eventSectionNav.addEventListener('click', (event) => {
     if (!sectionButton) return;
     activateEventSection(sectionButton.dataset.eventSection).catch((error) => setStatus(error.message, 'bad'));
 });
-elements.eventVariantSelect.addEventListener('change', () => {
-    if (elements.eventVariantSelect.value) selectEventFile(elements.eventVariantSelect.value, 'presentation');
+elements.figureSectionNav.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-figure-section]');
+    if (!button) return;
+    activateFigureSection(button.dataset.figureSection);
+});
+elements.structuredFieldHint.addEventListener('click', () => {
+    openAdvancedJsonFile(elements.structuredFieldHint.dataset.openAdvancedFile).catch((error) =>
+        setStatus(error.message, 'bad')
+    );
+});
+elements.relationFileLink.addEventListener('click', () => {
+    openAdvancedJsonFile(elements.relationFileLink.dataset.openAdvancedFile).catch((error) =>
+        setStatus(error.message, 'bad')
+    );
+});
+elements.advancedJsonFiles.addEventListener('click', (event) => {
+    const summary = event.target.closest('summary');
+    const item = summary && summary.closest('[data-advanced-json-file]');
+    if (!item) return;
+    event.preventDefault();
+    if (item.open) {
+        item.open = false;
+        return;
+    }
+    if (item.dataset.advancedJsonFile === state.file) {
+        for (const candidate of elements.advancedJsonFiles.querySelectorAll('[data-advanced-json-file]')) {
+            candidate.open = candidate === item;
+        }
+        return;
+    }
+    openAdvancedJsonFile(item.dataset.advancedJsonFile).catch((error) => setStatus(error.message, 'bad'));
 });
 document
     .getElementById('refreshBtn')
     .addEventListener('click', () => refresh().catch((error) => setStatus(error.message, 'bad')));
 elements.loadBtn.addEventListener('click', () => loadEntity().catch((error) => setStatus(error.message, 'bad')));
-elements.saveBtn.addEventListener('click', () => saveEntity(false).catch((error) => setStatus(error.message, 'bad')));
-elements.saveValidateBtn.addEventListener('click', () =>
-    saveEntity(true).catch((error) => setStatus(error.message, 'bad'))
+elements.saveBtn.addEventListener('click', () => saveEntity().catch((error) => setStatus(error.message, 'bad')));
+elements.validateDraftBtn.addEventListener('click', () =>
+    validateEntity().catch((error) => setStatus(error.message, 'bad'))
 );
 elements.validateBtn.addEventListener('click', () =>
     runTask('validate').catch((error) => setStatus(error.message, 'bad'))
 );
 elements.generateBtn.addEventListener('click', () => {
-    if (window.confirm('生成将更新 milestones-data.js 与 milestones-data-default.js。继续吗？')) {
+    if (
+        window.confirm(
+            '生成只读取已经保存的 Archive，并更新 milestones-data.js 与 milestones-data-default.js；未保存的编辑不会包含。继续吗？'
+        )
+    ) {
         runTask('generate').catch((error) => setStatus(error.message, 'bad'));
     }
 });
-document.getElementById('auditBtn').addEventListener('click', () => {
-    state.type = 'audit';
-    elements.entityType.value = 'audit';
-    refresh().catch((error) => setStatus(error.message, 'bad'));
+elements.closeTaskOutputBtn.addEventListener('click', () => {
+    setTaskOutputVisible(false);
 });
 elements.newFigureBtn.addEventListener('click', createFigure);
+elements.addFigureProfileSourceBtn.addEventListener('click', () => {
+    if (state.type !== 'figures' || !state.document) return;
+    state.document = collectFigureForm();
+    state.document.profileSources.push({
+        type: 'profile',
+        label: { en: '', zh: '' },
+        url: ''
+    });
+    renderFigureProfileSources();
+    syncEditor();
+    const items = elements.figureProfileSourcesList.querySelectorAll('[data-profile-source-index]');
+    const lastItem = items[items.length - 1];
+    focusNewEntry(lastItem, '[data-profile-source-field="label.zh"]');
+    setStatus('已新增资料来源，尚未保存', '');
+});
+elements.figureProfileSourcesList.addEventListener('change', (event) => {
+    if (!event.target.closest('[data-profile-source-field]')) return;
+    updateFigureProfileSourcesFromEditor();
+});
+elements.figureProfileSourcesList.addEventListener('click', (event) => {
+    const action = event.target.closest('[data-profile-source-action]');
+    if (!action) return;
+    handleFigureProfileSourceAction(action);
+});
 
 for (const id of figureFieldIds) {
     elements[id].addEventListener('change', () => {
@@ -2276,7 +3635,7 @@ for (const id of figureFieldIds) {
             state.entityId = state.document.id;
             syncEditor();
             renderAvatarPreview();
-            elements.figureReviewBadge.textContent = state.document.review.status;
+            elements.figureReviewBadge.textContent = reviewStatusLabel(state.document.review.status);
             elements.figureReviewBadge.className = `badge ${state.document.review.status}`;
         } catch (error) {
             setStatus(error.message, 'bad');
@@ -2285,25 +3644,54 @@ for (const id of figureFieldIds) {
 }
 elements.avatarPath.addEventListener('input', renderAvatarPreview);
 elements.avatarStyle.addEventListener('input', renderAvatarPreview);
+elements.openDefaultAvatarAssetBtn.addEventListener('click', openDefaultAvatarAsset);
+elements.replaceDefaultAvatarBtn.addEventListener('click', replaceDefaultAvatar);
+elements.removeDefaultAvatarBtn.addEventListener('click', removeDefaultAvatar);
+elements.openExistingFigureImageBtn.addEventListener('click', () =>
+    openExistingFigureImage().catch((error) => setStatus(error.message, 'bad'))
+);
+elements.closeExistingFigureImageBtn.addEventListener('click', closeExistingFigureImage);
+elements.cancelExistingFigureImageBtn.addEventListener('click', closeExistingFigureImage);
+elements.existingImageEvent.addEventListener('change', () =>
+    loadExistingImageAssets().catch((error) => setStatus(error.message, 'bad'))
+);
+elements.existingImageAsset.addEventListener('change', updateExistingImagePreview);
+elements.linkExistingFigureImageBtn.addEventListener('click', () =>
+    linkExistingFigureImage().catch((error) => setStatus(error.message, 'bad'))
+);
+elements.openFigureImageUploadBtn.addEventListener('click', () =>
+    openFigureImageUpload().catch((error) => setStatus(error.message, 'bad'))
+);
+elements.closeFigureImageUploadBtn.addEventListener('click', closeFigureImageUpload);
+elements.cancelFigureImageUploadBtn.addEventListener('click', closeFigureImageUpload);
+elements.imageImportEvent.addEventListener('change', () =>
+    loadImageImportSources().catch((error) => setStatus(error.message, 'bad'))
+);
+elements.imageImportSourceId.addEventListener('change', syncImageSourceMetadata);
+elements.imageImportFile.addEventListener('change', async () => {
+    const file = elements.imageImportFile.files[0];
+    if (!file) {
+        if (!elements.imageImportUrl.value.trim()) showImageImportPreview('');
+        return;
+    }
+    const previousSyncedUrl = elements.imageImportUrl.dataset.syncedSourceUrl || '';
+    if (elements.imageImportSourceUrl.value.trim() === previousSyncedUrl) elements.imageImportSourceUrl.value = '';
+    elements.imageImportUrl.value = '';
+    elements.imageImportUrl.dataset.syncedSourceUrl = '';
+    try {
+        showImageImportPreview(await readFileAsDataUrl(file));
+    } catch (error) {
+        setStatus(error.message, 'bad');
+    }
+});
+elements.imageImportUrl.addEventListener('input', syncRemoteFigureImage);
+elements.imageImportBtn.addEventListener('click', () =>
+    importFigureImage().catch((error) => setStatus(error.message, 'bad'))
+);
 elements.openEventDisplayBtn.addEventListener('click', () => {
     const target = selectedEventPresentationTarget();
     if (target) window.open(buildPresentationEventUrl(target), '_blank', 'noopener');
 });
-elements.eventDisplayTarget.addEventListener('change', updateEventPresentationControls);
-elements.inspectEventPresentationBtn.addEventListener('click', () => {
-    activateEventSection('presentation')
-        .then(() => {
-            const target = selectedEventPresentationTarget();
-            if (!target) return;
-            renderEventPresentationPanel(target);
-            updatePanelVisibility();
-            renderEventSectionNav();
-        })
-        .catch((error) => setStatus(error.message, 'bad'));
-});
-elements.restorePresentationInheritanceBtn.addEventListener('click', () =>
-    restorePresentationInheritance().catch((error) => setStatus(error.message, 'bad'))
-);
 elements.figureAssetGallery.addEventListener('click', (event) => {
     const button = event.target.closest('button[data-asset-action]');
     const card = event.target.closest('.figure-asset-card');
@@ -2323,28 +3711,11 @@ elements.figureAssetGallery.addEventListener('click', (event) => {
     if (action === 'set-default') {
         setFigureDefaultAvatar(asset).catch((error) => setStatus(error.message, 'bad'));
     }
-});
-elements.figureAssetGallery.addEventListener('change', (event) => {
-    const mergeSelect = event.target.closest('[data-asset-merge-select]');
-    const mergeCanonical = event.target.closest('[data-asset-merge-canonical]');
-    if (mergeSelect) {
-        if (mergeSelect.checked) state.assetMergeSelection.add(mergeSelect.value);
-        else {
-            state.assetMergeSelection.delete(mergeSelect.value);
-            if (state.assetMergeCanonical === mergeSelect.value) state.assetMergeCanonical = '';
-        }
-        renderFigureAssetCards();
-        return;
-    }
-    if (mergeCanonical) {
-        state.assetMergeCanonical = mergeCanonical.value;
-        state.assetMergeSelection.add(mergeCanonical.value);
-        renderFigureAssetCards();
+    if (action === 'unlink') {
+        const group = groupFigureAssets().find((candidate) => candidate.path === card.dataset.assetPath);
+        if (group) unlinkFigureAssetGroup(group).catch((error) => setStatus(error.message, 'bad'));
     }
 });
-elements.figureAssetMergeBtn.addEventListener('click', () =>
-    mergeSelectedFigureAssets().catch((error) => setStatus(error.message, 'bad'))
-);
 elements.figureEventList.addEventListener('click', (event) => {
     const button = event.target.closest('button[data-event-action]');
     const row = event.target.closest('.figure-event-row');
@@ -2361,36 +3732,6 @@ elements.figureEventList.addEventListener('click', (event) => {
         if (target) window.open(buildPresentationEventUrl(target), '_blank', 'noopener');
     }
 });
-elements.mergeTargetSelect.addEventListener('change', resetMergePreview);
-elements.mergePreviewBtn.addEventListener('click', () =>
-    previewFigureMerge().catch((error) => setStatus(error.message, 'bad'))
-);
-elements.mergeExecuteBtn.addEventListener('click', () =>
-    executeFigureMerge().catch((error) => setStatus(error.message, 'bad'))
-);
-elements.imageImportEvent.addEventListener('change', () =>
-    loadImageImportSources().catch((error) => setStatus(error.message, 'bad'))
-);
-elements.imageImportSourceId.addEventListener('change', syncImageSourceMetadata);
-elements.imageImportFile.addEventListener('change', async () => {
-    const file = elements.imageImportFile.files[0];
-    if (!file) {
-        elements.imageImportPreview.hidden = true;
-        elements.imageImportPlaceholder.hidden = false;
-        return;
-    }
-    try {
-        elements.imageImportPreview.src = await readFileAsDataUrl(file);
-        elements.imageImportPreview.hidden = false;
-        elements.imageImportPlaceholder.hidden = true;
-    } catch (error) {
-        setStatus(error.message, 'bad');
-    }
-});
-elements.imageImportBtn.addEventListener('click', () =>
-    importFigureImage().catch((error) => setStatus(error.message, 'bad'))
-);
-
 elements.editor.addEventListener('change', () => {
     if (state.type === 'audit') return;
     try {
@@ -2398,6 +3739,11 @@ elements.editor.addEventListener('change', () => {
         if (state.type === 'figures') renderFigureForm();
         if (state.type === 'events' && state.eventSection === 'people')
             renderRelations().catch((error) => setStatus(error.message, 'bad'));
+        if (state.type === 'storylines') {
+            syncSelectedStorylineSummary();
+            renderEntities();
+            renderStorylineOverview();
+        }
         renderStructuredEditor();
         setStatus('JSON 已同步到结构化编辑器', 'ok');
     } catch (error) {
@@ -2412,10 +3758,16 @@ elements.structuredEditor.addEventListener('input', (event) => {
     else updateStructuredField(target);
 });
 elements.structuredEditor.addEventListener('change', (event) => {
+    const assetSourceSelect = event.target.closest('[data-asset-source-select]');
+    if (assetSourceSelect) {
+        syncAssetSourceAddButton(assetSourceSelect);
+        return;
+    }
     const target = event.target.closest('[data-structured-field]');
     if (target) {
         if (target.closest('[data-collection-index]')) updateCollectionField(target);
         else updateStructuredField(target);
+        if (target.closest('.presentation-reference-field')) renderStructuredEditor();
         return;
     }
     const actionTarget = event.target.closest('[data-quiz-action]');
@@ -2429,6 +3781,21 @@ elements.structuredEditor.addEventListener('change', (event) => {
     }
 });
 elements.structuredEditor.addEventListener('click', (event) => {
+    const assetImageAction = event.target.closest('[data-asset-image-action]');
+    if (assetImageAction) {
+        importAssetImage(assetImageAction).catch((error) => setStatus(error.message, 'bad'));
+        return;
+    }
+    const assetSourceAction = event.target.closest('[data-asset-source-action]');
+    if (assetSourceAction) {
+        handleAssetSourceAction(assetSourceAction);
+        return;
+    }
+    const referenceAction = event.target.closest('[data-presentation-reference-action]');
+    if (referenceAction) {
+        handlePresentationReferenceAction(referenceAction);
+        return;
+    }
     const presentationAction = event.target.closest('[data-presentation-action]');
     if (presentationAction) {
         handlePresentationAction(presentationAction);
@@ -2450,13 +3817,27 @@ elements.structuredEditor.addEventListener('click', (event) => {
         );
     }
 });
+elements.structuredAddBtn.addEventListener('click', () => {
+    handleCollectionAction(elements.structuredAddBtn);
+});
 
 elements.addFigureBtn.addEventListener('click', () => {
     const figureId = elements.addFigureSelect.value;
     if (!figureId) return;
-    currentRelations().push({ figureId, role: { en: '', zh: '' } });
+    const figure = relationFigure(figureId);
+    const relations = currentRelations();
+    const newIndex = relations.length;
+    relations.push({
+        figureId,
+        role: { en: '', zh: '' },
+        ...(figure.defaultAvatar ? { useDefaultAvatar: true } : {})
+    });
     syncEditor();
-    renderRelations().catch((error) => setStatus(error.message, 'bad'));
+    renderRelations()
+        .then(() => {
+            focusNewEntry(elements.relationRows.querySelector(`[data-index="${newIndex}"]`), '[data-field="role.zh"]');
+        })
+        .catch((error) => setStatus(error.message, 'bad'));
 });
 
 elements.relationRows.addEventListener('input', (event) => {
@@ -2493,7 +3874,10 @@ elements.relationRows.addEventListener('click', (event) => {
     renderRelations().catch((error) => setStatus(error.message, 'bad'));
 });
 
-window.addEventListener('resize', updateStickyOffsets);
+window.addEventListener('resize', () => {
+    updateStickyOffsets();
+    scheduleImageAssetLayout();
+});
 if ('ResizeObserver' in window) {
     const stickyObserver = new window.ResizeObserver(updateStickyOffsets);
     stickyObserver.observe(document.querySelector('header'));

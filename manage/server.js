@@ -3,8 +3,12 @@
 
 const { execFile } = require('node:child_process');
 const { createHash, randomUUID } = require('node:crypto');
+const dns = require('node:dns');
 const fs = require('node:fs');
 const http = require('node:http');
+const https = require('node:https');
+const net = require('node:net');
+const os = require('node:os');
 const path = require('node:path');
 const { URL } = require('node:url');
 
@@ -17,10 +21,13 @@ const {
 
 const HOST = process.env.HOST || '127.0.0.1';
 const PORT = Number(process.env.PORT || 3001);
-const ROOT = path.resolve(__dirname, '..');
+const APP_ROOT = path.resolve(__dirname, '..');
+const ROOT = path.resolve(process.env.AI_HISTORY_ARCHIVE_ROOT || APP_ROOT);
 const ARCHIVE_EVENTS = path.join(ROOT, 'archive', 'events');
 const ARCHIVE_STORYLINES = path.join(ROOT, 'archive', 'storylines');
 const MAX_BODY_BYTES = 15 * 1024 * 1024;
+const MAX_REMOTE_IMAGE_BYTES = 10 * 1024 * 1024;
+const REMOTE_IMAGE_TIMEOUT_MS = 15000;
 const figureService = createArchiveFigureService(ROOT);
 let activeArchiveCommand = '';
 
@@ -136,6 +143,122 @@ function safeArchiveId(value, label) {
     return value;
 }
 
+function isPrivateNetworkAddress(value) {
+    const address = String(value || '')
+        .trim()
+        .toLowerCase()
+        .replace(/^::ffff:/, '');
+    if (net.isIP(address) === 4) {
+        const parts = address.split('.').map(Number);
+        return (
+            parts[0] === 0 ||
+            parts[0] === 10 ||
+            parts[0] === 127 ||
+            (parts[0] === 100 && parts[1] >= 64 && parts[1] <= 127) ||
+            (parts[0] === 169 && parts[1] === 254) ||
+            (parts[0] === 172 && parts[1] >= 16 && parts[1] <= 31) ||
+            (parts[0] === 192 && parts[1] === 168) ||
+            (parts[0] === 198 && [18, 19].includes(parts[1])) ||
+            parts[0] >= 224
+        );
+    }
+    if (net.isIP(address) === 6) {
+        return (
+            address === '::' ||
+            address === '::1' ||
+            address.startsWith('fc') ||
+            address.startsWith('fd') ||
+            /^fe[89ab]/.test(address) ||
+            address.startsWith('ff')
+        );
+    }
+    return true;
+}
+
+async function resolvePublicAddress(hostname) {
+    if (/^localhost$/i.test(hostname) || hostname.toLowerCase().endsWith('.local')) {
+        throw Object.assign(new Error('Image URL must use a public host'), { statusCode: 400 });
+    }
+    const addresses = await dns.promises.lookup(hostname, { all: true, verbatim: true });
+    if (!addresses.length || addresses.some((entry) => isPrivateNetworkAddress(entry.address))) {
+        throw Object.assign(new Error('Image URL resolves to a private or unsupported network address'), {
+            statusCode: 400
+        });
+    }
+    return addresses[0];
+}
+
+async function downloadRemoteImage(rawUrl, redirectCount = 0) {
+    if (redirectCount > 4) throw Object.assign(new Error('Image URL redirected too many times'), { statusCode: 400 });
+    let url;
+    try {
+        url = new URL(String(rawUrl || '').trim());
+    } catch {
+        throw Object.assign(new Error('Invalid image URL'), { statusCode: 400 });
+    }
+    if (!['http:', 'https:'].includes(url.protocol) || url.username || url.password) {
+        throw Object.assign(new Error('Image URL must use HTTP or HTTPS without embedded credentials'), {
+            statusCode: 400
+        });
+    }
+    const resolved = await resolvePublicAddress(url.hostname);
+    const transport = url.protocol === 'https:' ? https : http;
+    return new Promise((resolve, reject) => {
+        const request = transport.get(
+            {
+                protocol: url.protocol,
+                hostname: url.hostname,
+                port: url.port || undefined,
+                path: `${url.pathname}${url.search}`,
+                headers: {
+                    Accept: 'image/png,image/jpeg,image/gif,image/webp;q=0.9,*/*;q=0.1',
+                    'Accept-Encoding': 'identity',
+                    'User-Agent': 'AI-History-Show-Archive-Admin/1.0'
+                },
+                lookup: (_hostname, _options, callback) => callback(null, resolved.address, resolved.family)
+            },
+            (response) => {
+                const status = response.statusCode || 0;
+                if (status >= 300 && status < 400 && response.headers.location) {
+                    response.resume();
+                    const redirectUrl = new URL(response.headers.location, url).toString();
+                    downloadRemoteImage(redirectUrl, redirectCount + 1).then(resolve, reject);
+                    return;
+                }
+                if (status < 200 || status >= 300) {
+                    response.resume();
+                    reject(Object.assign(new Error(`Image URL returned HTTP ${status}`), { statusCode: 400 }));
+                    return;
+                }
+                const contentLength = Number(response.headers['content-length'] || 0);
+                if (contentLength > MAX_REMOTE_IMAGE_BYTES) {
+                    response.destroy();
+                    reject(Object.assign(new Error('Remote image exceeds the 10 MB limit'), { statusCode: 400 }));
+                    return;
+                }
+                const chunks = [];
+                let size = 0;
+                response.on('data', (chunk) => {
+                    size += chunk.length;
+                    if (size > MAX_REMOTE_IMAGE_BYTES) {
+                        response.destroy(
+                            Object.assign(new Error('Remote image exceeds the 10 MB limit'), { statusCode: 400 })
+                        );
+                        return;
+                    }
+                    chunks.push(chunk);
+                });
+                response.on('end', () => resolve(Buffer.concat(chunks)));
+                response.on('error', reject);
+            }
+        );
+        request.setTimeout(REMOTE_IMAGE_TIMEOUT_MS, () => {
+            request.destroy(Object.assign(new Error('Image URL download timed out'), { statusCode: 408 }));
+        });
+        request.on('error', reject);
+    });
+}
+
 function safeArchiveFileName(value) {
     if (
         typeof value !== 'string' ||
@@ -147,17 +270,40 @@ function safeArchiveFileName(value) {
 }
 
 function archiveEventPath(eventId, file) {
+    return archiveEventPathForRoot(ROOT, eventId, file);
+}
+
+function archiveEventPathForRoot(projectRoot, eventId, file) {
     const safeEventId = safeArchiveId(eventId, 'archive eventId');
     const safeFile = safeArchiveFileName(file);
-    const eventDirectory = path.join(ARCHIVE_EVENTS, safeEventId);
+    const eventDirectory = path.join(projectRoot, 'archive', 'events', safeEventId);
     const filePath = path.resolve(eventDirectory, safeFile);
     if (!filePath.startsWith(`${eventDirectory}${path.sep}`)) throw new Error('Archive path traversal rejected');
     return filePath;
 }
 
 function archiveStorylinePath(storylineId) {
+    return archiveStorylinePathForRoot(ROOT, storylineId);
+}
+
+function archiveStorylinePathForRoot(projectRoot, storylineId) {
     const safeStorylineId = safeArchiveId(storylineId, 'archive storylineId');
-    return path.join(ARCHIVE_STORYLINES, `${safeStorylineId}.json`);
+    return path.join(projectRoot, 'archive', 'storylines', `${safeStorylineId}.json`);
+}
+
+function assertUniqueStorylineEvents(storyline) {
+    if (!Array.isArray(storyline.events)) return;
+    const eventIds = new Set();
+    for (const membership of storyline.events) {
+        const eventId = String((membership && membership.eventId) || '').trim();
+        if (!eventId) continue;
+        if (eventIds.has(eventId)) {
+            throw Object.assign(new Error(`Storyline cannot contain duplicate event: ${eventId}`), {
+                statusCode: 400
+            });
+        }
+        eventIds.add(eventId);
+    }
 }
 
 function listStorylineRecords() {
@@ -383,12 +529,13 @@ function serveResource(res, pathname, headOnly = false) {
         sendError(res, 'Invalid resource path', 400);
         return;
     }
-    const resourcesDirectory = fs.realpathSync(path.join(ROOT, 'resources'));
+    const configuredResourcesDirectory = path.resolve(ROOT, 'resources');
     let filePath = path.resolve(ROOT, decodedPath.slice(1));
-    if (!filePath.startsWith(`${resourcesDirectory}${path.sep}`)) {
+    if (!filePath.startsWith(`${configuredResourcesDirectory}${path.sep}`)) {
         sendError(res, 'Forbidden', 403);
         return;
     }
+    const resourcesDirectory = fs.realpathSync(configuredResourcesDirectory);
     if (fs.existsSync(filePath)) {
         filePath = fs.realpathSync(filePath);
         if (!filePath.startsWith(`${resourcesDirectory}${path.sep}`)) {
@@ -407,8 +554,13 @@ function runArchiveCommand(res, commandName, scriptName) {
     activeArchiveCommand = commandName;
     execFile(
         process.execPath,
-        [path.join(ROOT, 'scripts', scriptName)],
-        { cwd: ROOT, maxBuffer: 10 * 1024 * 1024, timeout: 120000 },
+        [path.join(APP_ROOT, 'scripts', scriptName)],
+        {
+            cwd: APP_ROOT,
+            env: { ...process.env, AI_HISTORY_ARCHIVE_ROOT: ROOT },
+            maxBuffer: 10 * 1024 * 1024,
+            timeout: 120000
+        },
         (error, stdout, stderr) => {
             activeArchiveCommand = '';
             sendJson(res, {
@@ -420,6 +572,95 @@ function runArchiveCommand(res, commandName, scriptName) {
             });
         }
     );
+}
+
+function runArchiveScript(scriptName, projectRoot = ROOT) {
+    return new Promise((resolve) => {
+        execFile(
+            process.execPath,
+            [path.join(APP_ROOT, 'scripts', scriptName)],
+            {
+                cwd: APP_ROOT,
+                env: { ...process.env, AI_HISTORY_ARCHIVE_ROOT: projectRoot },
+                maxBuffer: 10 * 1024 * 1024,
+                timeout: 120000
+            },
+            (error, stdout, stderr) => {
+                resolve({
+                    ok: !error,
+                    stdout: stdout || '',
+                    stderr: stderr || '',
+                    exitCode: error ? error.code : 0
+                });
+            }
+        );
+    });
+}
+
+function saveArchiveDraft(projectRoot, body) {
+    if (body.type === 'figures') {
+        return createArchiveFigureService(projectRoot).saveFigure({
+            figureId: body.figureId,
+            data: body.data,
+            create: body.create === true,
+            expectedRevision: body.expectedRevision || ''
+        });
+    }
+    if (body.type === 'storylines') {
+        const storylineId = safeArchiveId(body.storylineId, 'archive storylineId');
+        if (!body.data || typeof body.data !== 'object' || Array.isArray(body.data)) {
+            throw Object.assign(new Error('Archive storyline data must be a JSON object'), { statusCode: 400 });
+        }
+        if (body.data.id !== storylineId) {
+            throw Object.assign(new Error('Archive storyline data.id must match storylineId'), { statusCode: 400 });
+        }
+        assertUniqueStorylineEvents(body.data);
+        const filePath = archiveStorylinePathForRoot(projectRoot, storylineId);
+        if (!fs.existsSync(filePath)) {
+            throw Object.assign(new Error('Archive storyline not found'), { statusCode: 404 });
+        }
+        assertExpectedRevision(filePath, body.expectedRevision);
+        atomicWrite(filePath, `${JSON.stringify(body.data, null, 2)}\n`);
+        return { ok: true, storylineId, revision: fileRevision(filePath) };
+    }
+    if (body.type === 'events') {
+        if (!body.data || typeof body.data !== 'object') {
+            throw Object.assign(new Error('Archive file data must be JSON'), { statusCode: 400 });
+        }
+        const filePath = archiveEventPathForRoot(projectRoot, body.eventId, body.file);
+        if (!fs.existsSync(filePath)) {
+            throw Object.assign(new Error('Archive file not found'), { statusCode: 404 });
+        }
+        assertExpectedRevision(filePath, body.expectedRevision);
+        atomicWrite(filePath, `${JSON.stringify(body.data, null, 2)}\n`);
+        return {
+            ok: true,
+            eventId: body.eventId,
+            file: body.file,
+            revision: fileRevision(filePath)
+        };
+    }
+    throw Object.assign(new Error('Unsupported Archive entity type'), { statusCode: 400 });
+}
+
+async function validateArchiveDraft(body) {
+    if (activeArchiveCommand) {
+        throw Object.assign(new Error(`Archive command already running: ${activeArchiveCommand}`), {
+            statusCode: 409
+        });
+    }
+    activeArchiveCommand = 'validate-draft';
+    const stagingRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'ai-history-archive-validation-'));
+    try {
+        fs.cpSync(path.join(ROOT, 'archive'), path.join(stagingRoot, 'archive'), { recursive: true });
+        fs.symlinkSync(path.join(ROOT, 'resources'), path.join(stagingRoot, 'resources'), 'dir');
+        saveArchiveDraft(stagingRoot, body);
+        const validation = await runArchiveScript('validate-archive.js', stagingRoot);
+        return { ...validation, saved: false };
+    } finally {
+        activeArchiveCommand = '';
+        fs.rmSync(stagingRoot, { recursive: true, force: true });
+    }
 }
 
 const routes = {
@@ -514,6 +755,22 @@ const routes = {
         }
     },
 
+    'POST /api/archive/figure-asset-link': async (req, res) => {
+        try {
+            sendJson(res, figureService.linkFigureAsset(await readJsonBody(req)));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/figure-asset-unlink': async (req, res) => {
+        try {
+            sendJson(res, figureService.unlinkFigureAsset(await readJsonBody(req)));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
     'GET /api/archive/figure-audit': (_req, res) => {
         try {
             sendJson(res, figureService.getAudit());
@@ -562,7 +819,40 @@ const routes = {
 
     'POST /api/archive/figure-image': async (req, res) => {
         try {
-            sendJson(res, figureService.importFigureImage(await readJsonBody(req)));
+            const body = await readJsonBody(req);
+            const hasUpload = Boolean(String(body.imageBase64 || '').trim());
+            const hasUrl = Boolean(String(body.imageUrl || '').trim());
+            if (hasUpload === hasUrl) {
+                return sendError(res, 'Provide exactly one uploaded image or image URL', 400);
+            }
+            const imageBase64 = hasUrl
+                ? (await downloadRemoteImage(body.imageUrl)).toString('base64')
+                : body.imageBase64;
+            sendJson(res, figureService.importFigureImage({ ...body, imageBase64 }));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/event-image': async (req, res) => {
+        try {
+            const body = await readJsonBody(req);
+            const hasUpload = Boolean(String(body.imageBase64 || '').trim());
+            const hasUrl = Boolean(String(body.imageUrl || '').trim());
+            if (hasUpload === hasUrl) {
+                return sendError(res, 'Provide exactly one uploaded image or image URL', 400);
+            }
+            const imageBase64 = hasUrl
+                ? (await downloadRemoteImage(body.imageUrl)).toString('base64')
+                : body.imageBase64;
+            sendJson(
+                res,
+                figureService.importEventImage({
+                    eventId: body.eventId,
+                    assetId: body.assetId,
+                    imageBase64
+                })
+            );
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -585,6 +875,7 @@ const routes = {
                         title: event.title || {},
                         summary: event.summary || {},
                         description: event.description || {},
+                        hasDefaultPresentation: Boolean(event.defaultPresentation),
                         files,
                         variants: files
                             .filter((file) => file.startsWith('variants/'))
@@ -660,19 +951,7 @@ const routes = {
 
     'POST /api/archive/storyline': async (req, res) => {
         try {
-            const body = await readJsonBody(req);
-            const storylineId = safeArchiveId(body.storylineId, 'archive storylineId');
-            if (!body.data || typeof body.data !== 'object' || Array.isArray(body.data)) {
-                return sendError(res, 'Archive storyline data must be a JSON object', 400);
-            }
-            if (body.data.id !== storylineId) {
-                return sendError(res, 'Archive storyline data.id must match storylineId', 400);
-            }
-            const filePath = archiveStorylinePath(storylineId);
-            if (!fs.existsSync(filePath)) return sendError(res, 'Archive storyline not found', 404);
-            assertExpectedRevision(filePath, body.expectedRevision);
-            atomicWrite(filePath, `${JSON.stringify(body.data, null, 2)}\n`);
-            sendJson(res, { ok: true, storylineId, revision: fileRevision(filePath) });
+            sendJson(res, saveArchiveDraft(ROOT, { ...(await readJsonBody(req)), type: 'storylines' }));
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -697,20 +976,15 @@ const routes = {
 
     'POST /api/archive/file': async (req, res) => {
         try {
-            const body = await readJsonBody(req);
-            if (!body.data || typeof body.data !== 'object') {
-                return sendError(res, 'Archive file data must be JSON', 400);
-            }
-            const filePath = archiveEventPath(body.eventId, body.file);
-            if (!fs.existsSync(filePath)) return sendError(res, 'Archive file not found', 404);
-            assertExpectedRevision(filePath, body.expectedRevision);
-            atomicWrite(filePath, `${JSON.stringify(body.data, null, 2)}\n`);
-            sendJson(res, {
-                ok: true,
-                eventId: body.eventId,
-                file: body.file,
-                revision: fileRevision(filePath)
-            });
+            sendJson(res, saveArchiveDraft(ROOT, { ...(await readJsonBody(req)), type: 'events' }));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/validate-draft': async (req, res) => {
+        try {
+            sendJson(res, await validateArchiveDraft(await readJsonBody(req)));
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
