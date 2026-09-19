@@ -1,148 +1,138 @@
 [
-  {
-    "id": "asset-2015-fast-r-cnn-portrait",
-    "type": "image",
-    "path": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
-    "role": "portrait",
-    "caption": {
-      "en": "Ross Girshick portrait",
-      "zh": "罗斯·格希克肖像"
+    {
+        "id": "asset-2015-fast-r-cnn-portrait",
+        "type": "image",
+        "path": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
+        "role": "portrait",
+        "caption": {
+            "en": "Ross Girshick portrait",
+            "zh": "罗斯·格希克肖像"
+        },
+        "subcaption": {
+            "en": "Fast R-CNN lead author",
+            "zh": "Fast R-CNN 主要作者"
+        },
+        "sourceId": "source-2015-fast-r-cnn-portrait",
+        "sourceName": {
+            "en": "Prior portrait candidate",
+            "zh": "先前人工筛选肖像候选"
+        },
+        "sourceUrl": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
+        "rights": {
+            "status": "source-review-needed",
+            "license": {
+                "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+                "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
+            },
+            "sourceUrl": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg"
+        },
+        "displayUsage": {
+            "en": "Contributor portrait for the Fast R-CNN achievement page",
+            "zh": "用于Fast R-CNN成就页面的人物肖像"
+        },
+        "usage": ["variant:bench-council-ai100"],
+        "editable": true,
+        "figureIds": ["ross-girshick"]
     },
-    "subcaption": {
-      "en": "Fast R-CNN lead author",
-      "zh": "Fast R-CNN 主要作者"
+    {
+        "id": "asset-2015-fast-r-cnn-explainer",
+        "type": "svg",
+        "path": "resources/images/bench-council-ai100/explainers/2015-2015-fast-r-cnn_process.svg",
+        "role": "architecture-explainer",
+        "caption": {
+            "en": "Fast R-CNN process explainer",
+            "zh": "Fast R-CNN流程解释图"
+        },
+        "subcaption": {
+            "en": "Shared feature map with RoI pooling and joint prediction",
+            "zh": "共享特征图、RoI 池化与联合预测"
+        },
+        "sourceId": "source-2015-fast-r-cnn-primary",
+        "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://arxiv.org/abs/1504.08083",
+        "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+                "en": "Original local SVG redraw; source figures are not copied.",
+                "zh": "本地原创 SVG 重绘；未复制来源图形。"
+            }
+        },
+        "displayUsage": {
+            "en": "Architecture and process explainer",
+            "zh": "架构与流程解释图"
+        },
+        "usage": ["variant:bench-council-ai100"],
+        "editable": true
     },
-    "sourceId": "source-2015-fast-r-cnn-portrait",
-    "sourceName": {
-      "en": "Prior portrait candidate",
-      "zh": "先前人工筛选肖像候选"
+    {
+        "id": "asset-ai100-2015-fast-r-cnn-audio-zh-original-v1",
+        "type": "audio",
+        "role": "audio-narration",
+        "caption": {
+            "zh": "ai100-2015-fast-r-cnn 中文原版科普音频",
+            "en": "ai100-2015-fast-r-cnn original Chinese audio narration"
+        },
+        "subcaption": {
+            "zh": "中文原版科普讲述，供中文页面播放。",
+            "en": "Original Chinese science narration used on the Chinese page."
+        },
+        "sourceId": "source-2015-fast-r-cnn-primary",
+        "rights": {
+            "status": "project-produced",
+            "license": {
+                "zh": "本项目使用已授权语音合成服务制作。",
+                "en": "Produced by this project with an authorized text-to-speech service."
+            },
+            "usage": {
+                "zh": "用于本展览的事件科普音频播放。",
+                "en": "Used for event narration in this exhibition."
+            }
+        },
+        "language": "zh",
+        "storage": {
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-fast-r-cnn-zh-original-v1.mp3",
+            "sourcePath": "resources/audio/generated/pronunciation-fixes/issue-98-pronunciation-release-zh-v2-2026-09-16/audio/bench-council-ai100/storyline/zh/58-ai100-2015-fast-r-cnn.mp3",
+            "contentType": "audio/mpeg"
+        },
+        "usage": ["storyline:bench-council-ai100"],
+        "editable": true
     },
-    "sourceUrl": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
-    "rights": {
-      "status": "source-review-needed",
-      "license": {
-        "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
-        "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
-      },
-      "sourceUrl": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg"
-    },
-    "displayUsage": {
-      "en": "Contributor portrait for the Fast R-CNN achievement page",
-      "zh": "用于Fast R-CNN成就页面的人物肖像"
-    },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true,
-    "figureIds": [
-      "ross-girshick"
-    ]
-  },
-  {
-    "id": "asset-2015-fast-r-cnn-explainer",
-    "type": "svg",
-    "path": "resources/images/bench-council-ai100/explainers/2015-2015-fast-r-cnn_process.svg",
-    "role": "architecture-explainer",
-    "caption": {
-      "en": "Fast R-CNN process explainer",
-      "zh": "Fast R-CNN流程解释图"
-    },
-    "subcaption": {
-      "en": "Shared feature map with RoI pooling and joint prediction",
-      "zh": "共享特征图、RoI 池化与联合预测"
-    },
-    "sourceId": "source-2015-fast-r-cnn-primary",
-    "sourceName": {
-      "en": "Local original SVG",
-      "zh": "本地原创 SVG"
-    },
-    "sourceUrl": "https://arxiv.org/abs/1504.08083",
-    "rights": {
-      "status": "documented-in-legacy",
-      "license": {
-        "en": "Original local SVG redraw; source figures are not copied.",
-        "zh": "本地原创 SVG 重绘；未复制来源图形。"
-      }
-    },
-    "displayUsage": {
-      "en": "Architecture and process explainer",
-      "zh": "架构与流程解释图"
-    },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true
-  },
-  {
-    "id": "asset-ai100-2015-fast-r-cnn-audio-zh-original-v1",
-    "type": "audio",
-    "role": "audio-narration",
-    "caption": {
-      "zh": "ai100-2015-fast-r-cnn 中文原版科普音频",
-      "en": "ai100-2015-fast-r-cnn original Chinese audio narration"
-    },
-    "subcaption": {
-      "zh": "中文原版科普讲述，供中文页面播放。",
-      "en": "Original Chinese science narration used on the Chinese page."
-    },
-    "sourceId": "source-2015-fast-r-cnn-primary",
-    "rights": {
-      "status": "project-produced",
-      "license": {
-        "zh": "本项目使用已授权语音合成服务制作。",
-        "en": "Produced by this project with an authorized text-to-speech service."
-      },
-      "usage": {
-        "zh": "用于本展览的事件科普音频播放。",
-        "en": "Used for event narration in this exhibition."
-      }
-    },
-    "language": "zh",
-    "storage": {
-      "profileId": "ai-history-audio-releases",
-      "objectName": "ai100-2015-fast-r-cnn-zh-original-v1.mp3",
-      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-zh-original-v1-2026-08-09/audio/bench-council-ai100/storyline/zh/58-ai100-2015-fast-r-cnn.mp3",
-      "contentType": "audio/mpeg"
-    },
-    "usage": [
-      "storyline:bench-council-ai100"
-    ],
-    "editable": true
-  },
-  {
-    "id": "asset-ai100-2015-fast-r-cnn-audio-en-v1",
-    "type": "audio",
-    "role": "audio-narration",
-    "caption": {
-      "zh": "ai100-2015-fast-r-cnn 英文科普音频",
-      "en": "ai100-2015-fast-r-cnn English audio narration"
-    },
-    "subcaption": {
-      "zh": "英文原版科普讲述，供英文页面播放。",
-      "en": "Original English science narration used on the English page."
-    },
-    "sourceId": "source-2015-fast-r-cnn-primary",
-    "rights": {
-      "status": "project-produced",
-      "license": {
-        "zh": "本项目使用已授权语音合成服务制作。",
-        "en": "Produced by this project with an authorized text-to-speech service."
-      },
-      "usage": {
-        "zh": "用于本展览的事件科普音频播放。",
-        "en": "Used for event narration in this exhibition."
-      }
-    },
-    "language": "en",
-    "storage": {
-      "profileId": "ai-history-audio-releases",
-      "objectName": "ai100-2015-fast-r-cnn-en-v1.mp3",
-      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-en-original-v1-2026-08-09/audio/bench-council-ai100/storyline/en/58-ai100-2015-fast-r-cnn.mp3",
-      "contentType": "audio/mpeg"
-    },
-    "usage": [
-      "storyline:bench-council-ai100"
-    ],
-    "editable": true
-  }
+    {
+        "id": "asset-ai100-2015-fast-r-cnn-audio-en-v1",
+        "type": "audio",
+        "role": "audio-narration",
+        "caption": {
+            "zh": "ai100-2015-fast-r-cnn 英文科普音频",
+            "en": "ai100-2015-fast-r-cnn English audio narration"
+        },
+        "subcaption": {
+            "zh": "英文原版科普讲述，供英文页面播放。",
+            "en": "Original English science narration used on the English page."
+        },
+        "sourceId": "source-2015-fast-r-cnn-primary",
+        "rights": {
+            "status": "project-produced",
+            "license": {
+                "zh": "本项目使用已授权语音合成服务制作。",
+                "en": "Produced by this project with an authorized text-to-speech service."
+            },
+            "usage": {
+                "zh": "用于本展览的事件科普音频播放。",
+                "en": "Used for event narration in this exhibition."
+            }
+        },
+        "language": "en",
+        "storage": {
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2015-fast-r-cnn-en-v1.mp3",
+            "sourcePath": "resources/audio/generated/pronunciation-fixes/issue-98-pronunciation-release-en-v2-2026-09-16/audio/bench-council-ai100/storyline/en/58-ai100-2015-fast-r-cnn.mp3",
+            "contentType": "audio/mpeg"
+        },
+        "usage": ["storyline:bench-council-ai100"],
+        "editable": true
+    }
 ]

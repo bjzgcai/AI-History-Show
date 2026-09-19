@@ -7,8 +7,15 @@
     "outputRoot": "resources/audio/generated/pronunciation-fixes/issue-98-pronunciation-release-en-v2-2026-09-16",
     "turnsDir": "audio/revisions/ai100-remaining-original/turns/en",
     "voiceProfilePath": "audio/voices/en-megan-alberto-original.json",
-    "eventIds": ["1980-xcon-r1", "ai100-2006-surf", "ai100-2015-fast-r-cnn", "ai100-2017-mask-r-cnn", "ai100-2016-nas"],
-    "expectedEntryCount": 5,
+    "eventIds": [
+        "1966-eliza",
+        "1980-xcon-r1",
+        "ai100-2006-surf",
+        "ai100-2015-fast-r-cnn",
+        "ai100-2017-mask-r-cnn",
+        "ai100-2016-nas"
+    ],
+    "expectedEntryCount": 6,
     "provider": {
         "name": "volc",
         "model": "seed-tts-2.0",
