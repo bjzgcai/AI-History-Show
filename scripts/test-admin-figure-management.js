@@ -629,20 +629,11 @@ try {
     assert.match(adminHtml, /id="closeTaskOutputBtn"/);
     assert.doesNotMatch(adminHtml, /id="saveValidateBtn"/);
     assert.doesNotMatch(adminHtml, /保存并验证|校验并保存/);
-    assert.match(adminHtml, /id="saveBtn"[^>]*覆盖对应的 Archive 文件或人物记录[^>]*>保存<\/button>/);
+    assert.match(adminHtml, /id="saveBtn"[^>]*hidden[^>]*>保存<\/button>/);
     assert.doesNotMatch(adminHtml, />保存草稿<\/button>/);
-    assert.match(adminHtml, /id="validateBtn"[^>]*>[\s\S]*?生效前先校验\s*<\/button>/);
-    assert.match(adminHtml, /id="validateBtn"[^>]*当前实际已保存的 Archive JSON/);
-    assert.match(adminHtml, /id="validateDraftBtn"[^>]*>校验改动<\/button>/);
-    assert.ok(
-        adminHtml.indexOf('id="validateDraftBtn"') < adminHtml.indexOf('id="saveBtn"'),
-        'draft validation should be displayed before save'
-    );
-    assert.match(adminHtml, /id="generateBtn"[\s\S]*milestones-data\.js 和 milestones-data-default\.js/);
-    assert.match(adminHtml, /编辑区“校验改动”检查当前改动草稿但不保存/);
-    assert.match(adminHtml, /“保存”写入\s*Archive/);
-    assert.match(adminHtml, /顶部“生效前先校验”检查当前实际已保存的\s*JSON/);
-    assert.match(adminHtml, /“生成运行时数据”再将已保存内容编译为展示页加载的文件/);
+    assert.match(adminHtml, /id="validateDraftBtn" hidden>校验改动<\/button>/);
+    assert.match(adminHtml, /编辑操作会自动加入待处理草稿，不会直接修改正式 Json/);
+    assert.match(adminHtml, /请到“发布管理”逐项保留或放弃，统一校验并应用/);
     assert.match(adminCss, /\.archive-workflow-note\s*\{/);
     assert.match(adminCss, /\.output-panel pre\s*\{[\s\S]*color:\s*#eef7f3/);
     assert.match(adminHtml, /data-entity-type="events"[^>]*>事件/);
@@ -655,7 +646,28 @@ try {
     assert.match(adminJs, /state\.document\.events\.some\(\(membership\) => membership\.eventId === eventId\)/);
     assert.match(adminHtml, /data-entity-type="figures"[^>]*>人物 \/ 实体/);
     assert.match(adminHtml, /data-entity-type="audit"[^>]*hidden[^>]*>人物审计/);
-    assert.match(adminCss, /\.entity-type-nav\s*\{[\s\S]*grid-template-columns:\s*repeat\(3,/);
+    assert.match(adminHtml, /data-entity-type="publish"[^>]*>发布管理/);
+    assert.ok(
+        adminHtml.indexOf('data-entity-type="publish"') > adminHtml.indexOf('data-entity-type="figures"'),
+        'publish management should be the last visible top-level tab'
+    );
+    assert.match(adminHtml, /id="publishPanel"[^>]*hidden/);
+    assert.match(adminHtml, /id="publishChangesTab"[\s\S]*?>\s*当前变更/);
+    assert.match(adminHtml, /id="publishHistoryTab"[\s\S]*?>\s*历史版本/);
+    assert.match(adminHtml, /id="createRollbackDraftBtn"[\s\S]*?>\s*创建回滚草稿/);
+    assert.match(adminHtml, /回滚只恢复 Json，不删除图片、音视频或其他资料文件/);
+    assert.match(adminHtml, /id="preparePublishBtn"[^>]*>一键准备发布/);
+    assert.match(adminHtml, /id="generateTestPreviewBtn"[^>]*>生成测试预览/);
+    assert.match(adminHtml, /id="openTestPreview"[^>]*href="\/test-preview\/"/);
+    assert.match(adminHtml, /id="publishTestPreviewStatus"/);
+    assert.match(adminHtml, /id="publishValidateBtn"[^>]*>校验保留变更/);
+    assert.match(adminHtml, /id="publishApplyBtn"[^>]*>应用到 Json/);
+    assert.match(adminHtml, /id="publishSavedValidateBtn"[^>]*>校验正式 Json/);
+    assert.match(adminHtml, /id="keepAllDraftsBtn"[^>]*>全部保留/);
+    assert.match(adminHtml, /id="discardAllDraftsBtn"[^>]*>全部放弃/);
+    assert.match(adminHtml, /id="publishGenerateBtn"[^>]*>生成数据/);
+    assert.match(adminHtml, /id="publishBuildBtn"[^>]*>构建发布包/);
+    assert.match(adminCss, /\.entity-type-nav\s*\{[\s\S]*grid-template-columns:\s*repeat\(4,/);
     assert.doesNotMatch(adminHtml, /id="auditBtn"/);
     assert.match(adminHtml, /id="entityType" hidden/);
     assert.match(adminHtml, /id="refreshBtn"[^>]*sidebar-refresh-button[^>]*title="刷新列表"/);
@@ -665,6 +677,30 @@ try {
         'new figure action should appear above search in the sidebar'
     );
     assert.match(adminJs, /function syncEntityTypeNavigation/);
+    assert.match(adminJs, /function loadPublishStatus/);
+    assert.match(adminJs, /api\/archive\/publish-status/);
+    assert.match(adminJs, /api\/archive\/prepare-publish/);
+    assert.match(adminJs, /api\/archive\/test-preview/);
+    assert.match(adminJs, /api\/archive\/history/);
+    assert.match(adminJs, /api\/archive\/history-restore/);
+    assert.match(adminJs, /window\.open\('about:blank', '_blank'\)/);
+    assert.match(adminServer, /GET \/api\/archive\/publish-status/);
+    assert.match(adminServer, /POST \/api\/archive\/prepare-publish/);
+    assert.match(adminServer, /POST \/api\/archive\/test-preview/);
+    assert.match(adminServer, /GET \/api\/archive\/history/);
+    assert.match(adminServer, /GET \/api\/archive\/history-version/);
+    assert.match(adminServer, /POST \/api\/archive\/history-restore/);
+    const historyListRoute = adminServer.slice(
+        adminServer.indexOf("'GET /api/archive/history':"),
+        adminServer.indexOf("'GET /api/archive/history-version':")
+    );
+    assert.doesNotMatch(historyListRoute, /ensureCurrentVersion/);
+    assert.match(adminServer, /historyService\.ensureCurrentVersion\(\);/);
+    assert.match(adminServer, /\/test-preview\//);
+    assert.match(adminServer, /POST \/api\/archive\/draft-decision/);
+    assert.match(adminServer, /POST \/api\/archive\/draft-validate/);
+    assert.match(adminServer, /POST \/api\/archive\/draft-apply/);
+    assert.match(adminServer, /runPublishSteps\(\['validate', 'generate', 'build'\]\)/);
     assert.match(adminJs, /const archiveTaskConfig =/);
     assert.match(adminJs, /function setTaskOutputVisible\(visible\)/);
     assert.match(adminJs, /elements\.taskOutputPanel\.hidden = !visible/);
@@ -684,7 +720,9 @@ try {
     );
     assert.match(adminJs, /elements\.validateDraftBtn\.addEventListener\('click'/);
     assert.match(adminJs, /elements\.validateBtn\.addEventListener\('click',[\s\S]*runTask\('validate'\)/);
-    assert.match(adminJs, /elements\.saveBtn\.disabled = state\.taskRunning/);
+    assert.match(adminJs, /function scheduleDraftSave/);
+    assert.match(adminJs, /function flushDraftSave/);
+    assert.match(adminJs, /elements\.saveBtn\.hidden = true/);
     assert.match(adminJs, /entityTypeNav\.addEventListener\('click'/);
     assert.match(adminJs, /elements\.entitySearch\.hidden = state\.type === 'audit'/);
     assert.match(adminJs, /function normalizeStorylineEventOrder/);
@@ -805,6 +843,10 @@ try {
     assert.match(adminJs, /item\.dataset\.advancedJsonFile === state\.file/);
     assert.match(adminJs, /api\/archive\/figure-assets/);
     assert.match(adminJs, /api\/archive\/figure-default-avatar/);
+    assert.match(adminJs, /function showError/);
+    assert.match(adminJs, /elements\.status\.textContent = ''/);
+    assert.match(adminJs, /window\.alert\(message\)/);
+    assert.doesNotMatch(adminJs, /setStatus\([\s\S]{0,160}?['"]bad['"]/);
     assert.match(adminJs, /groupFigureAssets/);
     assert.doesNotMatch(adminJs, /mergeSelectedFigureAssets/);
     assert.doesNotMatch(adminJs, /data-asset-merge-select/);
@@ -821,6 +863,9 @@ try {
     assert.match(adminJs, /api\/archive\/figure-asset-link/);
     assert.match(adminJs, /function unlinkFigureAssetGroup/);
     assert.match(adminJs, /api\/archive\/figure-asset-unlink/);
+    assert.match(figureAssetCardsSource, /data-asset-action="edit"/);
+    assert.match(figureAssetCardsSource, /data-asset-edit-target/);
+    assert.match(adminJs, /function openFigureAssetEditor/);
     assert.match(figureAssetCardsSource, /data-asset-action="unlink"/);
     assert.match(figureAssetCardsSource, />解除关联<\/button>/);
     assert.match(adminJs, /图片资产和文件会保留/);
@@ -872,6 +917,11 @@ try {
     assert.match(adminCss, /\.figure-profile-sources\s*\{/);
     assert.match(adminJs, /class="relation-name-line">[\s\S]*data-field="primary"/);
     assert.match(adminJs, /class="relation-avatar"/);
+    assert.match(adminJs, /function relationAvatarSelection/);
+    assert.match(adminJs, /function updateRelationAvatarPreview/);
+    assert.match(adminJs, /data-relation-avatar-kind/);
+    assert.match(adminJs, /data-relation-avatar-detail/);
+    assert.match(adminJs, /data-relation-avatar-path/);
     assert.match(adminJs, /figure\.defaultAvatar \? \{ useDefaultAvatar: true \} : \{\}/);
     assert.match(adminJs, /delete relation\.useDefaultAvatar/);
     assert.match(adminJs, /<details class="collection-more event-review-more"><summary>更多（内部用途）<\/summary>/);
@@ -1103,7 +1153,8 @@ try {
     assert.match(adminJs, /runTask\('generate'\)/);
     assert.match(adminServer, /POST \/api\/archive\/figure-merge/);
     assert.match(adminServer, /POST \/api\/archive\/figure-image/);
-    assert.match(adminServer, /figureService\.importFigureImage\(\{ \.\.\.body, imageBase64 \}\)/);
+    assert.match(adminServer, /currentFigureService\(\)\.importFigureImage\(\{ \.\.\.body, imageBase64 \}\)/);
+    assert.match(adminServer, /draftService\.trackResource\(draftResult\.asset\.path\)/);
     assert.match(adminServer, /function assertUniqueStorylineEvents\(storyline\)/);
     assert.match(adminServer, /Storyline cannot contain duplicate event/);
     assert.match(adminServer, /POST \/api\/archive\/event-image/);

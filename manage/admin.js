@@ -24,7 +24,15 @@ const state = {
     assetSourceEventId: '',
     pendingAssetIds: new Set(),
     pendingAssetPaths: new Set(),
-    taskRunning: false
+    taskRunning: false,
+    publishStatus: null,
+    publishOperation: null,
+    publishView: 'changes',
+    historyVersions: [],
+    historyLoaded: false,
+    selectedHistoryVersionId: '',
+    selectedHistoryVersion: null,
+    draftSaving: false
 };
 
 const structuredEventFiles = new Set(['event.json', 'sources.json', 'assets.json', 'quizzes.json']);
@@ -90,6 +98,47 @@ const elements = Object.fromEntries(
         'addStorylineEventBtn',
         'storylineTimeline',
         'auditPanel',
+        'publishPanel',
+        'publishHeadingActions',
+        'publishChangesTab',
+        'publishHistoryTab',
+        'publishChangesPane',
+        'publishHistoryPane',
+        'refreshPublishBtn',
+        'refreshHistoryBtn',
+        'generateTestPreviewBtn',
+        'preparePublishBtn',
+        'publishValidateBtn',
+        'publishApplyBtn',
+        'publishSavedValidateBtn',
+        'publishGenerateBtn',
+        'publishBuildBtn',
+        'keepAllDraftsBtn',
+        'discardAllDraftsBtn',
+        'publishChangeCount',
+        'publishArchiveChangeCount',
+        'publishRuntimeStatus',
+        'publishBundleStatus',
+        'publishTestPreviewStatus',
+        'publishChangeSummary',
+        'publishChangeList',
+        'publishTestPreviewDetails',
+        'publishBundleDetails',
+        'openTestPreview',
+        'openPublishPreview',
+        'publishOperationPanel',
+        'publishOperationSummary',
+        'publishOperationSteps',
+        'historyVersionCount',
+        'historyVersionList',
+        'historyDetailEmpty',
+        'historyVersionDetail',
+        'historyDetailTitle',
+        'historyDetailMeta',
+        'historyDetailNote',
+        'historyDetailSummary',
+        'historyChangeList',
+        'createRollbackDraftBtn',
         'jsonPanel',
         'figureUsage',
         'figureAssetCount',
@@ -196,6 +245,15 @@ for (const id of figureFieldIds) elements[id] = document.getElementById(id);
 function setStatus(text, className = '') {
     elements.status.textContent = text;
     elements.status.className = `status ${className}`;
+    if (text.includes('尚未保存')) scheduleDraftSave();
+}
+
+function showError(error, prefix = '') {
+    const detail = error instanceof Error ? error.message : String(error || '操作失败');
+    const message = prefix ? `${prefix}：${detail}` : detail;
+    elements.status.textContent = '';
+    elements.status.className = 'status';
+    window.alert(message);
 }
 
 function escapeHtml(value) {
@@ -311,6 +369,8 @@ function syncEntityTypeNavigation() {
 
 function updatePanelVisibility() {
     syncEntityTypeNavigation();
+    const publishMode = state.type === 'publish';
+    document.body.classList.toggle('is-publish-mode', publishMode);
     const eventLoaded = state.type === 'events' && Boolean(state.document);
     const figureLoaded = state.type === 'figures' && Boolean(state.document);
     const structuredSections = new Set(['basic', 'presentation', 'sources', 'assets', 'quizzes']);
@@ -318,8 +378,10 @@ function updatePanelVisibility() {
     elements.relationPanel.hidden = !eventLoaded || state.eventSection !== 'people';
     elements.structuredPanel.hidden = !eventLoaded || !structuredSections.has(state.eventSection);
     elements.auditPanel.hidden = state.type !== 'audit';
+    elements.publishPanel.hidden = !publishMode;
     elements.jsonPanel.hidden =
         state.type === 'audit' ||
+        publishMode ||
         !state.document ||
         (state.type === 'events' && state.eventSection !== 'advanced') ||
         (state.type === 'figures' && state.figureSection !== 'advanced');
@@ -331,11 +393,16 @@ function updatePanelVisibility() {
     elements.storylineOverviewPanel.hidden = state.type !== 'storylines' || !state.entityId;
     elements.eventDisplayActions.hidden = state.type !== 'events' || !state.document;
     elements.newFigureBtn.hidden = state.type !== 'figures';
-    elements.entitySearch.hidden = state.type === 'audit';
-    elements.loadBtn.hidden = state.type === 'audit';
-    elements.saveBtn.hidden = state.type === 'audit';
+    elements.entitySearch.hidden = state.type === 'audit' || publishMode;
+    elements.loadBtn.hidden = state.type === 'audit' || publishMode;
+    elements.validateDraftBtn.hidden = true;
+    elements.saveBtn.hidden = true;
+    elements.workspaceToolbar.hidden = publishMode;
     elements.emptyState.hidden =
-        state.type === 'audit' || Boolean(state.document) || (state.type === 'storylines' && Boolean(state.entityId));
+        state.type === 'audit' ||
+        publishMode ||
+        Boolean(state.document) ||
+        (state.type === 'storylines' && Boolean(state.entityId));
     elements.loadBtn.disabled = state.type !== 'audit' && !state.entityId;
     syncTaskActionAvailability();
 }
@@ -474,6 +541,7 @@ async function openAdvancedJsonFile(file) {
     if (!entity || !entity.files.includes(file)) throw new Error(`${state.entityId} 没有 ${file}`);
     state.eventSection = 'advanced';
     if (state.file !== file || !state.document) {
+        await flushDraftSave();
         state.file = file;
         elements.fileSelect.value = file;
         await loadEntity();
@@ -508,6 +576,7 @@ async function activateEventSection(section) {
     if (!file || !files.includes(file)) return;
     state.eventSection = section;
     if (state.file !== file || !state.document) {
+        await flushDraftSave();
         state.file = file;
         elements.fileSelect.value = file;
         await loadEntity();
@@ -672,17 +741,17 @@ function addStorylineEvent() {
     if (state.type !== 'storylines' || !state.document) return;
     const eventId = elements.storylineEventSelect.value;
     if (!eventId) {
-        setStatus('请先选择要添加的事件', 'bad');
+        showError('请先选择要添加的事件');
         return;
     }
     if (!Array.isArray(state.document.events)) state.document.events = [];
     if (state.document.events.some((membership) => membership.eventId === eventId)) {
-        setStatus('该事件已在当前故事线中', 'bad');
+        showError('该事件已在当前故事线中');
         return;
     }
     const event = state.eventOptions.find((candidate) => candidate.id === eventId);
     if (!event) {
-        setStatus('未找到所选事件', 'bad');
+        showError('未找到所选事件');
         return;
     }
     const membership = {
@@ -697,7 +766,7 @@ function addStorylineEvent() {
         } else if ((event.variants || []).length === 1) {
             membership.variant = event.variants[0];
         } else {
-            setStatus('该事件没有默认展示配置，请先在高级 JSON 中指定 variant', 'bad');
+            showError('该事件没有默认展示配置，请先在高级 JSON 中指定 variant');
             return;
         }
     }
@@ -900,6 +969,13 @@ async function refresh() {
         state.entities = [];
         await loadAudit();
     }
+    if (state.type === 'publish') {
+        state.entities = [];
+        elements.currentEntity.textContent = '发布管理';
+        await loadPublishStatus();
+        renderPublishView();
+        if (state.publishView === 'history') await loadPublishHistory();
+    }
     renderEntities();
     updatePanelVisibility();
     renderAdvancedJsonFiles();
@@ -951,12 +1027,22 @@ function cloneJson(value) {
 }
 
 function focusNewEntry(entry, focusSelector) {
+    if (!entry || !entry.isConnected) return;
+    const focusTarget = focusSelector ? entry.querySelector(focusSelector) : null;
+    entry.scrollIntoView({ behavior: 'auto', block: 'start' });
+    entry.classList.add('is-new-entry');
+    if (focusTarget) focusTarget.focus({ preventScroll: true });
     window.requestAnimationFrame(() => {
         if (!entry || !entry.isConnected) return;
         entry.scrollIntoView({ behavior: 'auto', block: 'start' });
-        entry.classList.add('is-new-entry');
-        const focusTarget = focusSelector ? entry.querySelector(focusSelector) : null;
-        if (focusTarget) focusTarget.focus({ preventScroll: true });
+        if (focusTarget) {
+            focusTarget.focus({ preventScroll: true });
+            window.setTimeout(() => {
+                if (focusTarget.isConnected && document.activeElement !== focusTarget) {
+                    focusTarget.focus({ preventScroll: true });
+                }
+            }, 0);
+        }
         window.setTimeout(() => entry.classList.remove('is-new-entry'), 1600);
     });
 }
@@ -1908,6 +1994,7 @@ function addQuizOption(item) {
         ),
         '[data-structured-field$=".zh"]'
     );
+    setStatus('已修改 Quiz 选项，尚未保存', '');
 }
 
 function removeQuizOption(item, optionIndex) {
@@ -1917,6 +2004,7 @@ function removeQuizOption(item, optionIndex) {
     if (Number.isInteger(quiz.answer) && quiz.answer >= quiz.options.length) quiz.answer = quiz.options.length - 1;
     syncEditor();
     renderStructuredEditor();
+    setStatus('已修改 Quiz 选项，尚未保存', '');
 }
 
 function updateCollectionField(target) {
@@ -1978,19 +2066,19 @@ async function importAssetImage(target) {
     const imageUrl = panel.querySelector('[data-asset-image-url]').value.trim();
     if (!file && !imageUrl) {
         panel.querySelector('[data-asset-image-file]').focus();
-        setStatus('请上传图片或填写图片 URL', 'bad');
+        showError('请上传图片或填写图片 URL');
         return;
     }
     if (file && imageUrl) {
-        setStatus('本地图片和图片 URL 只能选择一种', 'bad');
+        showError('本地图片和图片 URL 只能选择一种');
         return;
     }
     if (file && file.size > 10 * 1024 * 1024) {
-        setStatus('图片不能超过 10 MB', 'bad');
+        showError('图片不能超过 10 MB');
         return;
     }
     if (imageUrl && !/^https?:\/\//i.test(imageUrl)) {
-        setStatus('图片 URL 必须使用 HTTP 或 HTTPS', 'bad');
+        showError('图片 URL 必须使用 HTTP 或 HTTPS');
         return;
     }
     const originalText = target.textContent;
@@ -2016,7 +2104,8 @@ async function importAssetImage(target) {
         renderStructuredEditor();
         const nextItem = elements.structuredEditor.querySelector(`[data-collection-index="${index}"]`);
         focusNewEntry(nextItem && nextItem.querySelector('.asset-media-preview'));
-        setStatus(`图片已导入：${result.path}，请继续填写并保存资产`, 'ok');
+        setStatus(`图片已导入草稿：${result.path}，请继续填写资产信息`, 'ok');
+        scheduleDraftSave(0);
     } finally {
         if (target.isConnected) {
             target.disabled = false;
@@ -2038,7 +2127,7 @@ function handleAssetSourceAction(target) {
         const select = manager.querySelector('[data-asset-source-select]');
         if (!select || !select.value) {
             if (select) select.focus();
-            setStatus('请先选择需要添加的来源', 'bad');
+            showError('请先选择需要添加的来源');
             return;
         }
         if (!ids.includes(select.value)) {
@@ -2168,7 +2257,7 @@ function handlePresentationReferenceAction(target) {
 
 async function loadEntity() {
     if (!state.entityId) {
-        setStatus('请先选择实体', 'bad');
+        showError('请先选择实体');
         return;
     }
     let result;
@@ -2326,6 +2415,7 @@ function updateFigureProfileSourcesFromEditor() {
     if (state.type !== 'figures' || !state.document) return;
     state.document.profileSources = collectFigureProfileSources();
     syncEditor();
+    setStatus('已修改资料来源，尚未保存', '');
 }
 
 function handleFigureProfileSourceAction(button) {
@@ -2461,7 +2551,7 @@ async function loadExistingImageAssets() {
 
 async function openExistingFigureImage() {
     if (state.creatingFigure || !state.entityId) {
-        setStatus('请先保存人物，再关联已有图片', 'bad');
+        showError('请先保存人物，再关联已有图片');
         return;
     }
     await loadEventOptions();
@@ -2514,7 +2604,7 @@ async function linkExistingFigureImage() {
         closeExistingFigureImage();
         await loadEntity();
         focusFigureAsset(result.asset.path);
-        setStatus(result.changed ? `已将 ${assetId} 关联到当前人物` : `${assetId} 已关联到当前人物`, 'ok');
+        setStatus(result.changed ? `已将 ${assetId} 关联到当前人物草稿` : `${assetId} 已关联到当前人物草稿`, 'ok');
     } finally {
         elements.linkExistingFigureImageBtn.disabled = false;
     }
@@ -2622,7 +2712,7 @@ function syncRemoteFigureImage() {
 
 async function openFigureImageUpload() {
     if (state.creatingFigure || !state.entityId) {
-        setStatus('请先保存人物，再上传图片', 'bad');
+        showError('请先保存人物，再上传图片');
         return;
     }
     await loadEventOptions();
@@ -2733,7 +2823,7 @@ async function importFigureImage() {
         closeFigureImageUpload();
         await loadEntity();
         focusFigureAsset(result.asset.path);
-        setStatus(`已导入并登记 ${result.asset.path}`, 'ok');
+        setStatus(`已导入并登记到草稿 ${result.asset.path}`, 'ok');
     } finally {
         elements.imageImportBtn.disabled = false;
     }
@@ -2880,7 +2970,7 @@ function openDefaultAvatarAsset() {
 
 function replaceDefaultAvatar() {
     if (state.creatingFigure) {
-        setStatus('请先保存人物，再从图片资产中选择头像', 'bad');
+        showError('请先保存人物，再从图片资产中选择头像');
         return;
     }
     activateFigureSection('assets');
@@ -2931,6 +3021,15 @@ function renderFigureAssetCards() {
                   ? '当前图片被事件人物关系选作头像，请先移除或替换对应的头像引用'
                   : '';
             const unlinkTitle = unlinkBlockedReason || '解除当前人物与该图片的关联；图片资产记录和文件会保留';
+            const editTarget =
+                group.associations.length > 1
+                    ? `<select data-asset-edit-target aria-label="选择要编辑的资产记录">${group.associations
+                          .map(
+                              (association, index) =>
+                                  `<option value="${index}">${escapeHtml(association.eventId)} · ${escapeHtml(association.id)}</option>`
+                          )
+                          .join('')}</select>`
+                    : '';
             return `<article class="figure-asset-card${group.isDefaultAvatar ? ' is-default' : ''}" data-event-id="${escapeHtml(asset.eventId)}" data-asset-id="${escapeHtml(asset.id)}" data-asset-path="${escapeHtml(group.path)}">
                 <div class="figure-asset-preview">${preview}<div class="figure-asset-overlay"><span>${group.eventIds.length} 个事件</span><span>${escapeHtml(group.roles.join(' / ') || asset.type)}</span></div></div>
                 <div class="figure-asset-body">
@@ -2946,6 +3045,7 @@ function renderFigureAssetCards() {
                     <div class="figure-asset-actions">
                         <button data-asset-action="view">查看原图</button>
                         <button data-asset-action="copy-path">复制路径</button>
+                        <span class="figure-asset-edit-action">${editTarget}<button data-asset-action="edit">编辑资产</button></span>
                         <button class="primary" data-asset-action="set-default" title="${escapeHtml(defaultTitle)}"${group.isDefaultAvatar || !asset.canSetAsDefaultAvatar ? ' disabled' : ''}>${defaultActionLabel}</button>
                         <button class="danger" data-asset-action="unlink" title="${escapeHtml(unlinkTitle)}"${unlinkBlockedReason ? ' disabled' : ''}>解除关联</button>
                     </div>
@@ -3028,6 +3128,7 @@ function renderFigureEvents() {
 }
 
 async function openAdminEvent(eventId, file = 'event.json') {
+    await flushDraftSave();
     state.type = 'events';
     elements.entityType.value = 'events';
     await refresh();
@@ -3036,8 +3137,20 @@ async function openAdminEvent(eventId, file = 'event.json') {
         throw new Error(`${eventId} 没有 ${file}`);
     }
     state.file = file;
+    state.eventSection = eventSectionForFile(file);
     elements.fileSelect.value = state.file;
     await loadEntity();
+}
+
+async function openFigureAssetEditor(asset) {
+    await openAdminEvent(asset.eventId, 'assets.json');
+    const index = Array.isArray(state.document)
+        ? state.document.findIndex((candidate) => candidate.id === asset.id)
+        : -1;
+    if (index < 0) throw new Error(`未找到资产：${asset.eventId} / ${asset.id}`);
+    const item = elements.structuredEditor.querySelector(`[data-collection-index="${index}"]`);
+    focusNewEntry(item, '[data-structured-field="caption.zh"]');
+    setStatus(`已打开资产 ${asset.id}`, 'ok');
 }
 
 function buildPresentationEventUrl(target) {
@@ -3095,7 +3208,7 @@ async function setFigureDefaultAvatar(asset) {
     await refresh();
     selectEntity(figureId);
     await loadEntity();
-    setStatus(`已将 ${asset.id} 设为默认头像`, 'ok');
+    setStatus(`已在草稿中将 ${asset.id} 设为默认头像`, 'ok');
 }
 
 async function unlinkFigureAssetGroup(group) {
@@ -3117,7 +3230,7 @@ async function unlinkFigureAssetGroup(group) {
     await loadEntity();
     setStatus(
         result.changed
-            ? `已解除图片与当前人物的关联，保留了图片资产和文件（${result.unlinkedAssociations.length} 条记录）`
+            ? `已在草稿中解除图片与当前人物的关联，保留图片资产和文件（${result.unlinkedAssociations.length} 条记录）`
             : '该图片已未关联当前人物',
         'ok'
     );
@@ -3152,6 +3265,68 @@ function figureTypeLabel(type) {
     );
 }
 
+const relationAvatarAssets = new WeakMap();
+
+function relationAvatarSelection(relation, figure, assets) {
+    if (relation.avatarAssetId) {
+        const asset = assets.find((candidate) => candidate.id === relation.avatarAssetId);
+        if (!asset) {
+            return {
+                kind: '事件头像不可用',
+                detail: relation.avatarAssetId,
+                path: '',
+                style: ''
+            };
+        }
+        return {
+            kind: '事件头像',
+            detail: `${localize(asset.caption, 'zh') || localize(asset.caption, 'en') || asset.id} · ${asset.id}`,
+            path: asset.path || '',
+            style: relation.avatarStyle || ''
+        };
+    }
+    if (figure.defaultAvatar) {
+        return {
+            kind: '人物默认头像',
+            detail: '来自人物资料',
+            path: figure.defaultAvatar,
+            style: Object.hasOwn(relation, 'avatarStyle') ? relation.avatarStyle || '' : figure.defaultAvatarStyle || ''
+        };
+    }
+    return {
+        kind: '未配置头像',
+        detail: '当前人物没有默认头像或事件头像',
+        path: '',
+        style: ''
+    };
+}
+
+function updateRelationAvatarPreview(row, relation, assets) {
+    if (!row) return;
+    const figure = relationFigure(relation.figureId);
+    const selection = relationAvatarSelection(relation, figure, assets);
+    const avatar = row.querySelector('[data-relation-avatar]');
+    const kind = row.querySelector('[data-relation-avatar-kind]');
+    const detail = row.querySelector('[data-relation-avatar-detail]');
+    const path = row.querySelector('[data-relation-avatar-path]');
+    avatar.replaceChildren();
+    avatar.classList.toggle('is-empty', !selection.path);
+    if (selection.path) {
+        const image = document.createElement('img');
+        image.src = adminMediaUrl(selection.path);
+        image.alt = `${localize(figure.name, 'zh') || localize(figure.name, 'en')} ${selection.kind}`;
+        image.loading = 'lazy';
+        image.style.cssText = selection.style;
+        avatar.append(image);
+    } else {
+        avatar.textContent = '无头像';
+    }
+    kind.textContent = selection.kind;
+    detail.textContent = selection.detail;
+    path.textContent = selection.path;
+    path.hidden = !selection.path;
+}
+
 async function populateAvatarSelect(select, relation, figureId) {
     const assets = await api(
         `/api/archive/figure-assets?figureId=${encodeURIComponent(figureId)}&eventId=${encodeURIComponent(state.entityId)}`
@@ -3173,6 +3348,8 @@ async function populateAvatarSelect(select, relation, figureId) {
         );
         select.value = selected;
     }
+    relationAvatarAssets.set(select, assets);
+    updateRelationAvatarPreview(select.closest('.relation-row'), relation, assets);
 }
 
 async function renderRelations() {
@@ -3186,12 +3363,14 @@ async function renderRelations() {
     elements.relationRows.innerHTML = relations
         .map((relation, index) => {
             const figure = relationFigure(relation.figureId);
-            const defaultAvatar = figure.defaultAvatar
-                ? `<span class="relation-avatar"><img src="${escapeHtml(adminMediaUrl(figure.defaultAvatar))}" alt="${escapeHtml(localize(figure.name, 'zh') || localize(figure.name, 'en'))} 默认头像" loading="lazy" data-avatar-style="${escapeHtml(figure.defaultAvatarStyle || '')}"></span>`
-                : '<span class="relation-avatar is-empty">无头像</span>';
+            const initialAvatar = relation.avatarAssetId
+                ? '<span class="relation-avatar is-empty" data-relation-avatar>加载中</span>'
+                : figure.defaultAvatar
+                  ? `<span class="relation-avatar" data-relation-avatar><img src="${escapeHtml(adminMediaUrl(figure.defaultAvatar))}" alt="${escapeHtml(localize(figure.name, 'zh') || localize(figure.name, 'en'))} 人物默认头像" loading="lazy" data-avatar-style="${escapeHtml(figure.defaultAvatarStyle || '')}"></span>`
+                  : '<span class="relation-avatar is-empty" data-relation-avatar>无头像</span>';
             return `<div class="relation-row" data-index="${index}">
               <div class="relation-title">
-                <div class="relation-identity">${defaultAvatar}<div class="relation-identity-copy"><div class="relation-name-line"><strong>${escapeHtml(localize(figure.name, 'zh') || localize(figure.name, 'en'))}</strong><label class="relation-primary-toggle"><input type="checkbox" data-field="primary"${relation.primary === true ? ' checked' : ''}>主要人物</label></div><div class="muted">${escapeHtml(figureTypeLabel(figure.type))}${relation.useDefaultAvatar === true && figure.defaultAvatar ? ' · 使用默认头像' : ''}</div></div></div>
+                <div class="relation-identity">${initialAvatar}<div class="relation-identity-copy"><div class="relation-name-line"><strong>${escapeHtml(localize(figure.name, 'zh') || localize(figure.name, 'en'))}</strong><label class="relation-primary-toggle"><input type="checkbox" data-field="primary"${relation.primary === true ? ' checked' : ''}>主要人物</label></div><div class="muted">${escapeHtml(figureTypeLabel(figure.type))}</div><div class="relation-avatar-info"><span data-relation-avatar-kind>${relation.avatarAssetId ? '正在加载事件头像' : figure.defaultAvatar ? '人物默认头像' : '未配置头像'}</span><span data-relation-avatar-detail>${relation.avatarAssetId ? escapeHtml(relation.avatarAssetId) : figure.defaultAvatar ? '来自人物资料' : '当前人物没有默认头像或事件头像'}</span><code data-relation-avatar-path${figure.defaultAvatar && !relation.avatarAssetId ? '' : ' hidden'}>${figure.defaultAvatar && !relation.avatarAssetId ? escapeHtml(figure.defaultAvatar) : ''}</code></div></div></div>
                 <div class="relation-actions"><button class="relation-open-button" data-action="open-figure">打开人物资料</button><button data-action="up" title="上移">↑</button><button data-action="down" title="下移">↓</button><button data-action="remove">移除</button></div>
               </div>
               <div class="form-grid">
@@ -3241,10 +3420,17 @@ function updateRelationField(index, field, target) {
         if (target.value) relation.avatarStyle = target.value;
         else delete relation.avatarStyle;
     }
+    if (['avatarAssetId', 'useDefaultAvatar', 'avatarStyle'].includes(field)) {
+        const row = target.closest('.relation-row');
+        const select = row && row.querySelector('[data-field="avatarAssetId"]');
+        updateRelationAvatarPreview(row, relation, (select && relationAvatarAssets.get(select)) || []);
+    }
     syncEditor();
+    setStatus('已修改人物关系，尚未保存', '');
 }
 
 async function openFigureDetails(figureId) {
+    await flushDraftSave();
     state.type = 'figures';
     elements.entityType.value = 'figures';
     await refresh();
@@ -3280,7 +3466,6 @@ function currentEntitySaveRequest() {
         throw new Error(`JSON 无效：${error.message}`);
     }
     state.document = documentValue;
-    validatePendingAssetRequirements();
     return state.type === 'events'
         ? {
               url: '/api/archive/file',
@@ -3305,6 +3490,7 @@ function currentEntitySaveRequest() {
 
 async function validateEntity() {
     const request = currentEntitySaveRequest();
+    validatePendingAssetRequirements();
     state.taskRunning = true;
     elements.taskOutputTitle.textContent = '校验结果';
     elements.validationOutput.textContent = '正在校验当前编辑内容...';
@@ -3318,10 +3504,8 @@ async function validateEntity() {
         });
         elements.validationOutput.textContent =
             [result.stdout, result.stderr].filter(Boolean).join('\n') || `exitCode=${result.exitCode}`;
-        setStatus(
-            result.ok ? '当前编辑内容校验通过，尚未保存' : '当前编辑内容校验失败，尚未保存',
-            result.ok ? 'ok' : 'bad'
-        );
+        if (result.ok) setStatus('当前编辑内容校验通过，尚未保存', 'ok');
+        else showError('当前编辑内容校验失败，尚未保存');
     } catch (error) {
         elements.validationOutput.textContent = error.message;
         throw error;
@@ -3331,35 +3515,72 @@ async function validateEntity() {
     }
 }
 
-async function saveEntity() {
-    const request = currentEntitySaveRequest();
-    const result = await api(request.url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(request.body)
-    });
-    if (state.type === 'figures') state.creatingFigure = false;
-    state.revision = result.revision || state.revision;
-    state.pendingAssetIds = new Set();
-    state.pendingAssetPaths = new Set();
-    setStatus('内容已保存', 'ok');
-    if (state.type === 'figures') {
-        const selectedId = state.entityId;
-        const list = await api('/api/archive/figures');
-        state.entities = list.items;
-        state.figureOptions = list.items;
-        state.figureListRevision = list.revision;
-        renderEntities();
-        await renderFigureUsage();
-        elements.figureId.disabled = true;
-        state.entityId = selectedId;
+let draftSaveTimer = null;
+let draftSavePromise = Promise.resolve();
+
+function canAutoSaveDraft() {
+    if (!state.document || !['events', 'storylines', 'figures'].includes(state.type)) return false;
+    if (state.type === 'figures' && !/^[a-z0-9][a-z0-9._-]*$/.test(elements.figureId.value.trim())) return false;
+    return true;
+}
+
+function scheduleDraftSave(delay = 450) {
+    if (!canAutoSaveDraft()) return;
+    window.clearTimeout(draftSaveTimer);
+    draftSaveTimer = window.setTimeout(() => {
+        draftSaveTimer = null;
+        draftSavePromise = draftSavePromise
+            .then(() => saveEntity({ automatic: true }))
+            .catch((error) => showError(error, '草稿暂存失败'));
+    }, delay);
+}
+
+async function flushDraftSave() {
+    if (draftSaveTimer) {
+        window.clearTimeout(draftSaveTimer);
+        draftSaveTimer = null;
+        if (canAutoSaveDraft()) {
+            draftSavePromise = draftSavePromise.then(() => saveEntity({ automatic: true }));
+        }
     }
-    if (state.type === 'storylines') {
-        const selectedId = state.entityId;
-        state.entities = await api('/api/archive/storylines');
-        state.entityId = selectedId;
-        renderEntities();
-        renderStorylineOverview();
+    await draftSavePromise;
+}
+
+async function saveEntity({ automatic = false } = {}) {
+    if (state.draftSaving) return;
+    state.draftSaving = true;
+    try {
+        const request = currentEntitySaveRequest();
+        const wasCreatingFigure = state.type === 'figures' && state.creatingFigure;
+        const result = await api(request.url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(request.body)
+        });
+        if (state.type === 'figures') state.creatingFigure = false;
+        state.revision = result.revision || state.revision;
+        state.pendingAssetIds = new Set();
+        state.pendingAssetPaths = new Set();
+        setStatus(automatic ? '变更已加入待处理草稿' : '变更已加入待处理草稿', 'ok');
+        if (state.type === 'figures' && wasCreatingFigure) {
+            const selectedId = state.entityId;
+            const list = await api('/api/archive/figures');
+            state.entities = list.items;
+            state.figureOptions = list.items;
+            state.figureListRevision = list.revision;
+            state.entityId = selectedId;
+            renderEntities();
+            elements.figureId.disabled = true;
+        }
+        if (state.type === 'storylines') {
+            const selectedId = state.entityId;
+            state.entities = await api('/api/archive/storylines');
+            state.entityId = selectedId;
+            renderEntities();
+            renderStorylineOverview();
+        }
+    } finally {
+        state.draftSaving = false;
     }
 }
 
@@ -3376,13 +3597,533 @@ async function runTask(task) {
         const result = await api(`/api/archive/${task}`, { method: 'POST' });
         elements.validationOutput.textContent =
             [result.stdout, result.stderr].filter(Boolean).join('\n') || `exitCode=${result.exitCode}`;
-        setStatus(result.ok ? config.successMessage : config.failureMessage, result.ok ? 'ok' : 'bad');
+        if (result.ok) setStatus(config.successMessage, 'ok');
+        else showError(config.failureMessage);
     } catch (error) {
         elements.validationOutput.textContent = error.message;
         throw error;
     } finally {
         state.taskRunning = false;
         syncTaskActionAvailability();
+    }
+}
+
+function formatBytes(value) {
+    const bytes = Number(value || 0);
+    if (!Number.isFinite(bytes) || bytes <= 0) return '0 B';
+    const units = ['B', 'KB', 'MB', 'GB'];
+    const index = Math.min(Math.floor(Math.log(bytes) / Math.log(1024)), units.length - 1);
+    const amount = bytes / 1024 ** index;
+    return `${amount >= 10 || index === 0 ? amount.toFixed(0) : amount.toFixed(1)} ${units[index]}`;
+}
+
+function formatPublishTime(value) {
+    if (!value) return '尚未生成';
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return String(value);
+    return date.toLocaleString('zh-CN', { hour12: false });
+}
+
+function setPublishMetric(element, text, tone = '') {
+    element.textContent = text;
+    element.classList.toggle('is-ok', tone === 'ok');
+    element.classList.toggle('is-warn', tone === 'warn');
+}
+
+function renderPublishChanges(status) {
+    const changes = status.draft?.active || [];
+    const discarded = status.draft?.discarded || [];
+    const summary = status.draft?.summary || {};
+    elements.publishChangeList.replaceChildren();
+    const rollbackPrefix =
+        status.draft?.origin?.type === 'rollback' ? `回滚草稿，目标版本 ${status.draft.origin.versionId}。` : '';
+    elements.publishChangeSummary.textContent = `${rollbackPrefix}待处理 ${summary.active || 0} 项：未决 ${summary.pending || 0}，已保留 ${summary.kept || 0}；已放弃 ${summary.discarded || 0}。`;
+    if (!changes.length && !discarded.length) {
+        const empty = document.createElement('p');
+        empty.className = 'publish-empty';
+        empty.textContent = '当前没有 Admin 待处理变更。';
+        elements.publishChangeList.append(empty);
+        return;
+    }
+    [...changes, ...discarded].forEach((change) => {
+        const item = document.createElement('div');
+        const badge = document.createElement('span');
+        const body = document.createElement('div');
+        const title = document.createElement('strong');
+        const meta = document.createElement('span');
+        const details = document.createElement('div');
+        const actions = document.createElement('div');
+        item.className = `publish-change-item is-${change.status}`;
+        item.dataset.changeId = change.id;
+        badge.className = 'publish-change-code';
+        body.className = 'publish-change-body';
+        meta.className = 'publish-change-group';
+        details.className = 'publish-change-details';
+        actions.className = 'publish-change-actions';
+        badge.textContent = change.status === 'kept' ? '已保留' : change.status === 'discarded' ? '已放弃' : '未决';
+        title.textContent = change.summary;
+        meta.textContent = `${change.action} · ${change.group} · ${change.file}`;
+        if (change.beforeText !== '无' || change.afterText !== '无') {
+            details.textContent = `${change.beforeText} → ${change.afterText}`;
+        }
+        body.append(title, meta, details);
+        if (change.status !== 'discarded') {
+            const keepButton = document.createElement('button');
+            const discardButton = document.createElement('button');
+            keepButton.type = 'button';
+            keepButton.dataset.draftDecision = 'kept';
+            keepButton.textContent = change.status === 'kept' ? '已保留' : '保留';
+            keepButton.disabled = change.status === 'kept' || state.taskRunning;
+            discardButton.type = 'button';
+            discardButton.className = 'danger';
+            discardButton.dataset.draftDecision = 'discarded';
+            discardButton.textContent = '放弃';
+            discardButton.disabled = state.taskRunning;
+            actions.append(keepButton, discardButton);
+        }
+        item.append(badge, body, actions);
+        elements.publishChangeList.append(item);
+    });
+}
+
+function historyActionLabel(action) {
+    return (
+        {
+            initial: '初始版本',
+            apply: '应用变更',
+            rollback: '回滚版本',
+            external: '外部变化'
+        }[action] ||
+        action ||
+        '历史版本'
+    );
+}
+
+function renderPublishView() {
+    const historyMode = state.publishView === 'history';
+    elements.publishChangesTab.classList.toggle('is-active', !historyMode);
+    elements.publishChangesTab.setAttribute('aria-selected', historyMode ? 'false' : 'true');
+    elements.publishHistoryTab.classList.toggle('is-active', historyMode);
+    elements.publishHistoryTab.setAttribute('aria-selected', historyMode ? 'true' : 'false');
+    elements.publishChangesPane.hidden = historyMode;
+    elements.publishHistoryPane.hidden = !historyMode;
+    elements.publishHeadingActions.hidden = historyMode;
+}
+
+function setPublishView(view) {
+    state.publishView = view === 'history' ? 'history' : 'changes';
+    renderPublishView();
+    if (state.publishView === 'history') loadPublishHistory().catch((error) => showError(error, '历史版本加载失败'));
+}
+
+function renderHistoryVersionList() {
+    elements.historyVersionList.replaceChildren();
+    elements.historyVersionCount.textContent = `${state.historyVersions.length} 个版本`;
+    if (!state.historyVersions.length) {
+        const empty = document.createElement('p');
+        empty.className = 'publish-empty';
+        empty.textContent = state.historyLoaded ? '暂无历史版本。' : '正在读取历史版本...';
+        elements.historyVersionList.append(empty);
+        return;
+    }
+    for (const version of state.historyVersions) {
+        const button = document.createElement('button');
+        const heading = document.createElement('span');
+        const action = document.createElement('strong');
+        const time = document.createElement('time');
+        const note = document.createElement('span');
+        const meta = document.createElement('span');
+        button.type = 'button';
+        button.className = 'history-version-item';
+        button.dataset.historyVersionId = version.id;
+        button.classList.toggle('is-selected', version.id === state.selectedHistoryVersionId);
+        action.textContent = historyActionLabel(version.action);
+        time.textContent = formatPublishTime(version.createdAt);
+        note.className = 'history-version-note';
+        note.textContent = version.note || '未填写版本说明';
+        meta.className = 'history-version-meta';
+        meta.textContent = `${version.changeCount || 0} 个文件变化 · ${version.fileCount || 0} 个 Json`;
+        heading.append(action, time);
+        button.append(heading, note, meta);
+        elements.historyVersionList.append(button);
+    }
+}
+
+function appendHistorySummary(value, label) {
+    const item = document.createElement('div');
+    const strong = document.createElement('strong');
+    const span = document.createElement('span');
+    strong.textContent = String(value);
+    span.textContent = label;
+    item.append(strong, span);
+    elements.historyDetailSummary.append(item);
+}
+
+function renderHistoryVersionDetail(version) {
+    state.selectedHistoryVersion = version;
+    elements.historyDetailEmpty.hidden = true;
+    elements.historyVersionDetail.hidden = false;
+    elements.historyDetailTitle.textContent = `${historyActionLabel(version.action)} · ${version.id}`;
+    const rollbackLabel = version.rollbackExact === false ? '部分回滚来源' : '回滚来源';
+    elements.historyDetailMeta.textContent = `${formatPublishTime(version.createdAt)}${version.rollbackFromVersionId ? ` · ${rollbackLabel} ${version.rollbackFromVersionId}` : ''}`;
+    elements.historyDetailNote.textContent = version.note || '未填写版本说明。';
+    elements.historyDetailSummary.replaceChildren();
+    appendHistorySummary(version.fileCount || 0, 'Json 文件');
+    appendHistorySummary(formatBytes(version.totalBytes || 0), '快照大小');
+    appendHistorySummary(version.changeCount || 0, '文件变化');
+    appendHistorySummary((version.dataHash || '').slice(0, 10) || '-', '内容摘要');
+    elements.historyChangeList.replaceChildren();
+    const changes = version.changes || [];
+    if (!changes.length) {
+        const empty = document.createElement('p');
+        empty.className = 'publish-empty';
+        empty.textContent = version.action === 'initial' ? '这是历史版本基线。' : '相对上一版本没有文件变化。';
+        elements.historyChangeList.append(empty);
+    } else {
+        changes.forEach((change) => {
+            const item = document.createElement('div');
+            const operation = document.createElement('span');
+            const body = document.createElement('div');
+            const file = document.createElement('code');
+            const context = document.createElement('span');
+            item.className = 'history-change-item';
+            operation.textContent =
+                { added: '新增', modified: '修改', deleted: '删除' }[change.operation] || change.operation;
+            file.textContent = change.file;
+            context.textContent = `${change.group} · ${change.objectId}`;
+            body.append(file, document.createElement('br'), context);
+            item.append(operation, body);
+            elements.historyChangeList.append(item);
+        });
+    }
+    syncTaskActionAvailability();
+}
+
+async function selectHistoryVersion(versionId) {
+    state.selectedHistoryVersionId = versionId;
+    renderHistoryVersionList();
+    elements.historyDetailEmpty.hidden = false;
+    elements.historyDetailEmpty.textContent = '正在读取版本详情...';
+    elements.historyVersionDetail.hidden = true;
+    const result = await api(`/api/archive/history-version?versionId=${encodeURIComponent(versionId)}`);
+    if (state.selectedHistoryVersionId !== versionId) return;
+    renderHistoryVersionDetail(result.version);
+    renderHistoryVersionList();
+}
+
+async function loadPublishHistory(force = false) {
+    if (state.historyLoaded && !force) {
+        renderHistoryVersionList();
+        if (state.selectedHistoryVersionId && !state.selectedHistoryVersion) {
+            await selectHistoryVersion(state.selectedHistoryVersionId);
+        }
+        return;
+    }
+    state.historyLoaded = false;
+    renderHistoryVersionList();
+    const result = await api('/api/archive/history');
+    state.historyVersions = result.versions || [];
+    if (state.publishStatus) {
+        state.publishStatus.history = {
+            count: state.historyVersions.length,
+            latest: state.historyVersions[0] || null
+        };
+    }
+    state.historyLoaded = true;
+    if (!state.historyVersions.some((version) => version.id === state.selectedHistoryVersionId)) {
+        state.selectedHistoryVersionId = state.historyVersions[0]?.id || '';
+        state.selectedHistoryVersion = null;
+    }
+    renderHistoryVersionList();
+    if (state.selectedHistoryVersionId) await selectHistoryVersion(state.selectedHistoryVersionId);
+}
+
+async function createRollbackDraft() {
+    const version = state.selectedHistoryVersion;
+    if (!version || state.taskRunning) return;
+    if (
+        !window.confirm(
+            `从历史版本 ${version.id} 创建回滚草稿？\n\n不会立即修改正式 Json，也不会删除图片、音视频或其他资料文件。`
+        )
+    ) {
+        return;
+    }
+    state.taskRunning = true;
+    syncTaskActionAvailability();
+    try {
+        const result = await api('/api/archive/history-restore', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ versionId: version.id })
+        });
+        state.publishView = 'changes';
+        state.historyLoaded = false;
+        await loadPublishStatus();
+        renderPublishView();
+        setStatus(
+            result.draft?.summary?.active
+                ? `已从版本 ${version.id} 创建回滚草稿，请逐项确认后应用`
+                : `当前正式 Json 已与版本 ${version.id} 一致`,
+            'ok'
+        );
+    } finally {
+        state.taskRunning = false;
+        syncTaskActionAvailability();
+    }
+}
+
+function appendPublishDetail(label, value) {
+    appendPublishDetailTo(elements.publishBundleDetails, label, value);
+}
+
+function appendPublishDetailTo(container, label, value) {
+    const term = document.createElement('dt');
+    const description = document.createElement('dd');
+    term.textContent = label;
+    description.textContent = value;
+    container.append(term, description);
+}
+
+function renderPublishStatus() {
+    const status = state.publishStatus;
+    if (!status) return;
+    const summary = status.draft?.summary || {};
+    setPublishMetric(elements.publishChangeCount, String(summary.active || 0), summary.pending ? 'warn' : 'ok');
+    setPublishMetric(
+        elements.publishArchiveChangeCount,
+        `${summary.pending || 0} / ${summary.kept || 0} / ${summary.discarded || 0}`,
+        summary.pending ? 'warn' : 'ok'
+    );
+    setPublishMetric(
+        elements.publishRuntimeStatus,
+        status.runtime?.ready ? '已同步' : '待生成',
+        status.runtime?.ready ? 'ok' : 'warn'
+    );
+    setPublishMetric(
+        elements.publishBundleStatus,
+        status.bundle?.ready ? '可预览' : status.bundle?.exists ? '需重建' : '未构建',
+        status.bundle?.ready ? 'ok' : 'warn'
+    );
+    setPublishMetric(
+        elements.publishTestPreviewStatus,
+        status.preview?.ready ? '可查看' : status.preview?.exists ? '已过期' : '未生成',
+        status.preview?.ready ? 'ok' : 'warn'
+    );
+    renderPublishChanges(status);
+    elements.publishTestPreviewDetails.replaceChildren();
+    appendPublishDetailTo(
+        elements.publishTestPreviewDetails,
+        '当前状态',
+        status.preview?.ready
+            ? '与当前已保留草稿一致'
+            : status.preview?.exists
+              ? '草稿已变化，需要重新生成'
+              : '尚未生成测试预览'
+    );
+    appendPublishDetailTo(elements.publishTestPreviewDetails, '生成时间', formatPublishTime(status.preview?.builtAt));
+    appendPublishDetailTo(
+        elements.publishTestPreviewDetails,
+        '文件数量',
+        status.preview?.exists ? String(status.preview.fileCount || 0) : '-'
+    );
+    appendPublishDetailTo(
+        elements.publishTestPreviewDetails,
+        '预览大小',
+        status.preview?.exists ? formatBytes(status.preview.totalBytes) : '-'
+    );
+    elements.openTestPreview.hidden = !status.preview?.ready;
+    elements.publishBundleDetails.replaceChildren();
+    appendPublishDetail('输出目录', status.bundle?.relativePath || '.tmp/static-site/');
+    appendPublishDetail('构建时间', formatPublishTime(status.bundle?.builtAt));
+    appendPublishDetail('文件数量', status.bundle?.exists ? String(status.bundle.fileCount || 0) : '-');
+    appendPublishDetail('发布包大小', status.bundle?.exists ? formatBytes(status.bundle.totalBytes) : '-');
+    appendPublishDetail(
+        '当前状态',
+        status.bundle?.ready
+            ? '发布包与当前源文件同步'
+            : status.bundle?.exists
+              ? '源文件已有更新，需要重新构建'
+              : '尚未构建发布包'
+    );
+    elements.openPublishPreview.hidden = !status.bundle?.exists;
+}
+
+function publishStepLabel(name) {
+    return (
+        {
+            'draft-validate': '校验保留变更',
+            'validate-draft': '校验保留变更',
+            apply: '应用到 Json',
+            'saved-validate': '生效前先校验',
+            validate: '生效前先校验',
+            generate: '生成运行时数据',
+            build: '构建发布包',
+            'validate-preview': '校验预览草稿',
+            'generate-preview': '生成预览数据',
+            'build-preview': '构建测试预览'
+        }[name] || name
+    );
+}
+
+function renderPublishOperation() {
+    const operation = state.publishOperation;
+    elements.publishOperationPanel.hidden = !operation;
+    if (!operation) return;
+    elements.publishOperationSummary.textContent = `${operation.label} · ${operation.ok ? '操作成功' : '操作失败'} · ${formatPublishTime(operation.time)}`;
+    elements.publishOperationSteps.replaceChildren();
+    operation.steps.forEach((step) => {
+        const item = document.createElement('div');
+        const stateLabel = document.createElement('span');
+        const body = document.createElement('div');
+        const title = document.createElement('strong');
+        const output = document.createElement('pre');
+        item.className = `publish-operation-step${step.ok ? '' : step.skipped ? ' is-skipped' : ' is-error'}`;
+        stateLabel.textContent = step.skipped ? '未执行' : step.ok ? '成功' : '失败';
+        title.textContent = publishStepLabel(step.name);
+        output.textContent = [step.stdout, step.stderr].filter(Boolean).join('\n') || step.message || '执行完成。';
+        body.append(title, output);
+        item.append(stateLabel, body);
+        elements.publishOperationSteps.append(item);
+    });
+}
+
+async function loadPublishStatus() {
+    elements.publishChangeSummary.textContent = '正在读取发布状态...';
+    const result = await api('/api/archive/publish-status');
+    state.publishStatus = result;
+    renderPublishStatus();
+    renderPublishView();
+    syncTaskActionAvailability();
+}
+
+async function decideDraftChange(changeId, decision, all = false) {
+    if (state.taskRunning) return;
+    state.taskRunning = true;
+    syncTaskActionAvailability();
+    try {
+        await api('/api/archive/draft-decision', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ changeId, decision, all })
+        });
+        setStatus(decision === 'kept' ? '变更已保留' : '变更已放弃', 'ok');
+        await loadPublishStatus();
+    } finally {
+        state.taskRunning = false;
+        syncTaskActionAvailability();
+    }
+}
+
+async function runPublishAction(action, label) {
+    if (state.taskRunning) return;
+    state.taskRunning = true;
+    state.publishOperation = {
+        label,
+        ok: false,
+        time: new Date().toISOString(),
+        steps: [{ name: action, ok: false, message: '正在执行...' }]
+    };
+    renderPublishOperation();
+    syncTaskActionAvailability();
+    try {
+        const endpoint =
+            action === 'prepare'
+                ? '/api/archive/prepare-publish'
+                : action === 'draft-validate'
+                  ? '/api/archive/draft-validate'
+                  : action === 'apply'
+                    ? '/api/archive/draft-apply'
+                    : action === 'saved-validate'
+                      ? '/api/archive/publish-validate'
+                      : `/api/archive/publish-${action}`;
+        const result = await api(endpoint, { method: 'POST' });
+        const steps =
+            action === 'apply'
+                ? [
+                      { name: 'validate-draft', ...(result.validation || {}), ok: result.validation?.ok === true },
+                      {
+                          name: 'apply',
+                          ok: result.applied === true,
+                          message: result.applied
+                              ? `已写入 ${(result.result?.changedFiles || []).length} 个 Json 文件。`
+                              : '草稿未应用。'
+                      }
+                  ]
+                : result.steps || [{ name: action, ...result }];
+        state.publishOperation = {
+            label,
+            ok: result.ok,
+            time: new Date().toISOString(),
+            steps
+        };
+        if (result.ok && (action === 'apply' || action === 'prepare')) {
+            state.historyLoaded = false;
+            state.selectedHistoryVersion = null;
+        }
+        if (result.ok) setStatus(`${label}成功`, 'ok');
+        else showError(`${label}失败，请查看最近操作结果`);
+    } catch (error) {
+        state.publishOperation = {
+            label,
+            ok: false,
+            time: new Date().toISOString(),
+            steps: [{ name: action, ok: false, message: error.message }]
+        };
+        showError(error, `${label}失败`);
+    } finally {
+        state.taskRunning = false;
+        renderPublishOperation();
+        await loadPublishStatus().catch((error) => showError(error, '发布状态刷新失败'));
+        syncTaskActionAvailability();
+    }
+}
+
+async function generateTestPreview() {
+    if (state.taskRunning) return;
+    const previewWindow = window.open('about:blank', '_blank');
+    if (previewWindow) previewWindow.opener = null;
+    let previewUrl = '';
+    state.taskRunning = true;
+    state.publishOperation = {
+        label: '生成测试预览',
+        ok: false,
+        time: new Date().toISOString(),
+        steps: [{ name: 'validate-preview', ok: false, message: '正在执行...' }]
+    };
+    renderPublishOperation();
+    syncTaskActionAvailability();
+    try {
+        const result = await api('/api/archive/test-preview', { method: 'POST' });
+        state.publishOperation = {
+            label: '生成测试预览',
+            ok: result.ok,
+            time: new Date().toISOString(),
+            steps: result.steps || []
+        };
+        if (!result.ok) {
+            if (previewWindow) previewWindow.close();
+            showError('生成测试预览失败，请查看最近操作结果');
+            return;
+        }
+        setStatus('测试预览已生成', 'ok');
+        previewUrl = result.previewUrl;
+    } catch (error) {
+        if (previewWindow) previewWindow.close();
+        state.publishOperation = {
+            label: '生成测试预览',
+            ok: false,
+            time: new Date().toISOString(),
+            steps: [{ name: 'validate-preview', ok: false, message: error.message }]
+        };
+        showError(error, '生成测试预览失败');
+    } finally {
+        state.taskRunning = false;
+        renderPublishOperation();
+        await loadPublishStatus().catch((error) => showError(error, '发布状态刷新失败'));
+        syncTaskActionAvailability();
+        if (previewWindow && previewUrl) {
+            previewWindow.location.href = `${window.location.origin}${previewUrl}`;
+        }
     }
 }
 
@@ -3395,6 +4136,31 @@ function syncTaskActionAvailability() {
     elements.validateDraftBtn.disabled = state.taskRunning || state.type === 'audit' || !state.document;
     elements.generateBtn.disabled = state.taskRunning;
     elements.saveBtn.disabled = state.taskRunning || state.type === 'audit' || !state.document;
+    elements.refreshPublishBtn.disabled = state.taskRunning;
+    const draftSummary = state.publishStatus?.draft?.summary || {};
+    const hasActiveDraft = Number(draftSummary.active || 0) > 0;
+    const hasPendingDraft = Number(draftSummary.pending || 0) > 0;
+    const hasKeptDraft = Number(draftSummary.kept || 0) > 0;
+    elements.keepAllDraftsBtn.disabled = state.taskRunning || !hasPendingDraft;
+    elements.discardAllDraftsBtn.disabled = state.taskRunning || !hasActiveDraft;
+    elements.preparePublishBtn.disabled = state.taskRunning || hasPendingDraft;
+    elements.generateTestPreviewBtn.disabled = state.taskRunning || hasPendingDraft || !hasKeptDraft;
+    elements.publishValidateBtn.disabled = state.taskRunning || hasPendingDraft || !hasKeptDraft;
+    elements.publishApplyBtn.disabled = state.taskRunning || hasPendingDraft || !hasKeptDraft;
+    elements.publishSavedValidateBtn.disabled = state.taskRunning || hasActiveDraft;
+    elements.publishGenerateBtn.disabled = state.taskRunning || hasActiveDraft;
+    elements.publishBuildBtn.disabled = state.taskRunning || hasActiveDraft;
+    const currentHash = state.publishStatus?.history?.latest?.dataHash || '';
+    elements.createRollbackDraftBtn.disabled =
+        state.taskRunning ||
+        hasActiveDraft ||
+        !state.selectedHistoryVersion ||
+        state.selectedHistoryVersion.dataHash === currentHash;
+    for (const button of elements.publishChangeList.querySelectorAll('[data-draft-decision]')) {
+        const item = button.closest('.publish-change-item');
+        const alreadyKept = item?.classList.contains('is-kept') && button.dataset.draftDecision === 'kept';
+        button.disabled = state.taskRunning || alreadyKept;
+    }
 }
 
 function auditItemHtml(item) {
@@ -3465,7 +4231,7 @@ function createFigure() {
     state.existingImageAssets = [];
     state.existingImageAssetsRevision = '';
     state.figureUsage = null;
-    renderFigureAssets().catch((error) => setStatus(error.message, 'bad'));
+    renderFigureAssets().catch(showError);
     renderFigureEvents();
     elements.figureId.focus();
     setStatus('已创建人物草稿，尚未保存', '');
@@ -3474,21 +4240,21 @@ function createFigure() {
 elements.entityList.addEventListener('click', async (event) => {
     const eventLink = event.target.closest('[data-open-event]');
     if (eventLink) {
-        await openAdminEvent(eventLink.dataset.openEvent, eventLink.dataset.openFile || 'event.json').catch((error) =>
-            setStatus(error.message, 'bad')
-        );
+        await openAdminEvent(eventLink.dataset.openEvent, eventLink.dataset.openFile || 'event.json').catch(showError);
         return;
     }
     const storylineCard = event.target.closest('[data-storyline-id]');
     if (storylineCard && state.type === 'storylines') {
+        await flushDraftSave().catch(showError);
         selectEntity(storylineCard.dataset.storylineId);
-        await loadEntity().catch((error) => setStatus(error.message, 'bad'));
+        await loadEntity().catch(showError);
         return;
     }
     const button = event.target.closest('button[data-id]');
     if (!button) return;
+    await flushDraftSave().catch(showError);
     selectEntity(button.dataset.id);
-    await loadEntity().catch((error) => setStatus(error.message, 'bad'));
+    await loadEntity().catch(showError);
 });
 elements.storylineTimeline.addEventListener('click', async (event) => {
     const removeButton = event.target.closest('[data-remove-storyline-event]');
@@ -3498,9 +4264,7 @@ elements.storylineTimeline.addEventListener('click', async (event) => {
     }
     const eventLink = event.target.closest('[data-open-event]');
     if (!eventLink) return;
-    await openAdminEvent(eventLink.dataset.openEvent, eventLink.dataset.openFile || 'event.json').catch((error) =>
-        setStatus(error.message, 'bad')
-    );
+    await openAdminEvent(eventLink.dataset.openEvent, eventLink.dataset.openFile || 'event.json').catch(showError);
 });
 elements.addStorylineEventBtn.addEventListener('click', addStorylineEvent);
 elements.figureAlphabet.addEventListener('click', (event) => {
@@ -3528,23 +4292,29 @@ elements.entityList.addEventListener('scroll', () => {
     }
 });
 
-elements.entityTypeNav.addEventListener('click', (event) => {
+elements.entityTypeNav.addEventListener('click', async (event) => {
     const button = event.target.closest('[data-entity-type]');
     if (!button || button.dataset.entityType === state.type) return;
+    await flushDraftSave().catch(showError);
     state.type = button.dataset.entityType;
     elements.entityType.value = state.type;
     elements.entitySearch.value = '';
-    refresh().catch((error) => setStatus(error.message, 'bad'));
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    refresh().catch(showError);
 });
 elements.entitySearch.addEventListener('input', renderEntities);
 elements.fileSelect.addEventListener('change', () => {
-    state.file = elements.fileSelect.value;
-    loadEntity().catch((error) => setStatus(error.message, 'bad'));
+    flushDraftSave()
+        .then(() => {
+            state.file = elements.fileSelect.value;
+            return loadEntity();
+        })
+        .catch(showError);
 });
 elements.eventSectionNav.addEventListener('click', (event) => {
     const sectionButton = event.target.closest('[data-event-section]');
     if (!sectionButton) return;
-    activateEventSection(sectionButton.dataset.eventSection).catch((error) => setStatus(error.message, 'bad'));
+    activateEventSection(sectionButton.dataset.eventSection).catch(showError);
 });
 elements.figureSectionNav.addEventListener('click', (event) => {
     const button = event.target.closest('[data-figure-section]');
@@ -3552,14 +4322,10 @@ elements.figureSectionNav.addEventListener('click', (event) => {
     activateFigureSection(button.dataset.figureSection);
 });
 elements.structuredFieldHint.addEventListener('click', () => {
-    openAdvancedJsonFile(elements.structuredFieldHint.dataset.openAdvancedFile).catch((error) =>
-        setStatus(error.message, 'bad')
-    );
+    openAdvancedJsonFile(elements.structuredFieldHint.dataset.openAdvancedFile).catch(showError);
 });
 elements.relationFileLink.addEventListener('click', () => {
-    openAdvancedJsonFile(elements.relationFileLink.dataset.openAdvancedFile).catch((error) =>
-        setStatus(error.message, 'bad')
-    );
+    openAdvancedJsonFile(elements.relationFileLink.dataset.openAdvancedFile).catch(showError);
 });
 elements.advancedJsonFiles.addEventListener('click', (event) => {
     const summary = event.target.closest('summary');
@@ -3576,26 +4342,75 @@ elements.advancedJsonFiles.addEventListener('click', (event) => {
         }
         return;
     }
-    openAdvancedJsonFile(item.dataset.advancedJsonFile).catch((error) => setStatus(error.message, 'bad'));
+    openAdvancedJsonFile(item.dataset.advancedJsonFile).catch(showError);
 });
-document
-    .getElementById('refreshBtn')
-    .addEventListener('click', () => refresh().catch((error) => setStatus(error.message, 'bad')));
-elements.loadBtn.addEventListener('click', () => loadEntity().catch((error) => setStatus(error.message, 'bad')));
-elements.saveBtn.addEventListener('click', () => saveEntity().catch((error) => setStatus(error.message, 'bad')));
-elements.validateDraftBtn.addEventListener('click', () =>
-    validateEntity().catch((error) => setStatus(error.message, 'bad'))
+document.getElementById('refreshBtn').addEventListener('click', () =>
+    flushDraftSave()
+        .then(() => refresh())
+        .catch(showError)
 );
-elements.validateBtn.addEventListener('click', () =>
-    runTask('validate').catch((error) => setStatus(error.message, 'bad'))
+elements.loadBtn.addEventListener('click', () =>
+    flushDraftSave()
+        .then(() => loadEntity())
+        .catch(showError)
 );
+elements.saveBtn.addEventListener('click', () => saveEntity().catch(showError));
+elements.validateDraftBtn.addEventListener('click', () => validateEntity().catch(showError));
+elements.validateBtn.addEventListener('click', () => runTask('validate').catch(showError));
 elements.generateBtn.addEventListener('click', () => {
     if (
         window.confirm(
             '生成只读取已经保存的 Archive，并更新 milestones-data.js 与 milestones-data-default.js；未保存的编辑不会包含。继续吗？'
         )
     ) {
-        runTask('generate').catch((error) => setStatus(error.message, 'bad'));
+        runTask('generate').catch(showError);
+    }
+});
+elements.refreshPublishBtn.addEventListener('click', () =>
+    loadPublishStatus().catch((error) => showError(error, '发布状态刷新失败'))
+);
+elements.publishChangesTab.addEventListener('click', () => setPublishView('changes'));
+elements.publishHistoryTab.addEventListener('click', () => setPublishView('history'));
+elements.refreshHistoryBtn.addEventListener('click', () =>
+    loadPublishHistory(true).catch((error) => showError(error, '历史版本刷新失败'))
+);
+elements.historyVersionList.addEventListener('click', (event) => {
+    const item = event.target.closest('[data-history-version-id]');
+    if (!item) return;
+    selectHistoryVersion(item.dataset.historyVersionId).catch((error) => showError(error, '版本详情加载失败'));
+});
+elements.createRollbackDraftBtn.addEventListener('click', () =>
+    createRollbackDraft().catch((error) => showError(error, '创建回滚草稿失败'))
+);
+elements.publishChangeList.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-draft-decision]');
+    const item = event.target.closest('[data-change-id]');
+    if (!button || !item) return;
+    decideDraftChange(item.dataset.changeId, button.dataset.draftDecision).catch(showError);
+});
+elements.keepAllDraftsBtn.addEventListener('click', () => decideDraftChange('', 'kept', true).catch(showError));
+elements.discardAllDraftsBtn.addEventListener('click', () => {
+    if (window.confirm('放弃全部 Admin 草稿变更？正式 Json 不会被修改。')) {
+        decideDraftChange('', 'discarded', true).catch(showError);
+    }
+});
+elements.publishValidateBtn.addEventListener('click', () => runPublishAction('draft-validate', '校验保留变更'));
+elements.publishApplyBtn.addEventListener('click', () => {
+    if (window.confirm('将所有已保留变更事务化写入正式 Json，并移动暂存图片。继续吗？')) {
+        runPublishAction('apply', '应用到 Json');
+    }
+});
+elements.publishSavedValidateBtn.addEventListener('click', () => runPublishAction('saved-validate', '生效前先校验'));
+elements.publishGenerateBtn.addEventListener('click', () => {
+    if (window.confirm('生成运行时数据会读取当前正式 Json 并更新展示页数据文件。继续吗？')) {
+        runPublishAction('generate', '生成运行时数据');
+    }
+});
+elements.publishBuildBtn.addEventListener('click', () => runPublishAction('build', '构建发布包'));
+elements.generateTestPreviewBtn.addEventListener('click', () => generateTestPreview());
+elements.preparePublishBtn.addEventListener('click', () => {
+    if (window.confirm('将依次校验并应用已保留变更，再校验正式 Json、生成运行时数据和构建发布包。继续吗？')) {
+        runPublishAction('prepare', '准备发布');
     }
 });
 elements.closeTaskOutputBtn.addEventListener('click', () => {
@@ -3637,8 +4452,9 @@ for (const id of figureFieldIds) {
             renderAvatarPreview();
             elements.figureReviewBadge.textContent = reviewStatusLabel(state.document.review.status);
             elements.figureReviewBadge.className = `badge ${state.document.review.status}`;
+            setStatus('已修改人物资料，尚未保存', '');
         } catch (error) {
-            setStatus(error.message, 'bad');
+            showError(error);
         }
     });
 }
@@ -3647,26 +4463,16 @@ elements.avatarStyle.addEventListener('input', renderAvatarPreview);
 elements.openDefaultAvatarAssetBtn.addEventListener('click', openDefaultAvatarAsset);
 elements.replaceDefaultAvatarBtn.addEventListener('click', replaceDefaultAvatar);
 elements.removeDefaultAvatarBtn.addEventListener('click', removeDefaultAvatar);
-elements.openExistingFigureImageBtn.addEventListener('click', () =>
-    openExistingFigureImage().catch((error) => setStatus(error.message, 'bad'))
-);
+elements.openExistingFigureImageBtn.addEventListener('click', () => openExistingFigureImage().catch(showError));
 elements.closeExistingFigureImageBtn.addEventListener('click', closeExistingFigureImage);
 elements.cancelExistingFigureImageBtn.addEventListener('click', closeExistingFigureImage);
-elements.existingImageEvent.addEventListener('change', () =>
-    loadExistingImageAssets().catch((error) => setStatus(error.message, 'bad'))
-);
+elements.existingImageEvent.addEventListener('change', () => loadExistingImageAssets().catch(showError));
 elements.existingImageAsset.addEventListener('change', updateExistingImagePreview);
-elements.linkExistingFigureImageBtn.addEventListener('click', () =>
-    linkExistingFigureImage().catch((error) => setStatus(error.message, 'bad'))
-);
-elements.openFigureImageUploadBtn.addEventListener('click', () =>
-    openFigureImageUpload().catch((error) => setStatus(error.message, 'bad'))
-);
+elements.linkExistingFigureImageBtn.addEventListener('click', () => linkExistingFigureImage().catch(showError));
+elements.openFigureImageUploadBtn.addEventListener('click', () => openFigureImageUpload().catch(showError));
 elements.closeFigureImageUploadBtn.addEventListener('click', closeFigureImageUpload);
 elements.cancelFigureImageUploadBtn.addEventListener('click', closeFigureImageUpload);
-elements.imageImportEvent.addEventListener('change', () =>
-    loadImageImportSources().catch((error) => setStatus(error.message, 'bad'))
-);
+elements.imageImportEvent.addEventListener('change', () => loadImageImportSources().catch(showError));
 elements.imageImportSourceId.addEventListener('change', syncImageSourceMetadata);
 elements.imageImportFile.addEventListener('change', async () => {
     const file = elements.imageImportFile.files[0];
@@ -3681,13 +4487,11 @@ elements.imageImportFile.addEventListener('change', async () => {
     try {
         showImageImportPreview(await readFileAsDataUrl(file));
     } catch (error) {
-        setStatus(error.message, 'bad');
+        showError(error);
     }
 });
 elements.imageImportUrl.addEventListener('input', syncRemoteFigureImage);
-elements.imageImportBtn.addEventListener('click', () =>
-    importFigureImage().catch((error) => setStatus(error.message, 'bad'))
-);
+elements.imageImportBtn.addEventListener('click', () => importFigureImage().catch(showError));
 elements.openEventDisplayBtn.addEventListener('click', () => {
     const target = selectedEventPresentationTarget();
     if (target) window.open(buildPresentationEventUrl(target), '_blank', 'noopener');
@@ -3706,14 +4510,20 @@ elements.figureAssetGallery.addEventListener('click', (event) => {
         navigator.clipboard
             .writeText(asset.path)
             .then(() => setStatus(`已复制 ${asset.path}`, 'ok'))
-            .catch((error) => setStatus(`复制失败：${error.message}`, 'bad'));
+            .catch((error) => showError(error, '复制失败'));
+    }
+    if (action === 'edit') {
+        const group = groupFigureAssets().find((candidate) => candidate.path === card.dataset.assetPath);
+        const selectedIndex = Number(card.querySelector('[data-asset-edit-target]')?.value || 0);
+        const selectedAsset = (group && group.associations[selectedIndex]) || asset;
+        openFigureAssetEditor(selectedAsset).catch(showError);
     }
     if (action === 'set-default') {
-        setFigureDefaultAvatar(asset).catch((error) => setStatus(error.message, 'bad'));
+        setFigureDefaultAvatar(asset).catch((error) => showError(error, '设置默认头像失败'));
     }
     if (action === 'unlink') {
         const group = groupFigureAssets().find((candidate) => candidate.path === card.dataset.assetPath);
-        if (group) unlinkFigureAssetGroup(group).catch((error) => setStatus(error.message, 'bad'));
+        if (group) unlinkFigureAssetGroup(group).catch(showError);
     }
 });
 elements.figureEventList.addEventListener('click', (event) => {
@@ -3721,7 +4531,7 @@ elements.figureEventList.addEventListener('click', (event) => {
     const row = event.target.closest('.figure-event-row');
     if (!button || !row) return;
     if (button.dataset.eventAction === 'open-admin') {
-        openAdminEvent(row.dataset.eventId).catch((error) => setStatus(error.message, 'bad'));
+        openAdminEvent(row.dataset.eventId).catch(showError);
     }
     if (button.dataset.eventAction === 'open-display') {
         const detail = ((state.figureUsage && state.figureUsage.eventDetails) || []).find(
@@ -3737,17 +4547,16 @@ elements.editor.addEventListener('change', () => {
     try {
         state.document = JSON.parse(elements.editor.value);
         if (state.type === 'figures') renderFigureForm();
-        if (state.type === 'events' && state.eventSection === 'people')
-            renderRelations().catch((error) => setStatus(error.message, 'bad'));
+        if (state.type === 'events' && state.eventSection === 'people') renderRelations().catch(showError);
         if (state.type === 'storylines') {
             syncSelectedStorylineSummary();
             renderEntities();
             renderStorylineOverview();
         }
         renderStructuredEditor();
-        setStatus('JSON 已同步到结构化编辑器', 'ok');
+        setStatus('JSON 已同步到结构化编辑器，尚未保存', '');
     } catch (error) {
-        setStatus(`JSON 无效：${error.message}`, 'bad');
+        showError(error, 'JSON 无效');
     }
 });
 
@@ -3783,7 +4592,7 @@ elements.structuredEditor.addEventListener('change', (event) => {
 elements.structuredEditor.addEventListener('click', (event) => {
     const assetImageAction = event.target.closest('[data-asset-image-action]');
     if (assetImageAction) {
-        importAssetImage(assetImageAction).catch((error) => setStatus(error.message, 'bad'));
+        importAssetImage(assetImageAction).catch(showError);
         return;
     }
     const assetSourceAction = event.target.closest('[data-asset-source-action]');
@@ -3836,8 +4645,9 @@ elements.addFigureBtn.addEventListener('click', () => {
     renderRelations()
         .then(() => {
             focusNewEntry(elements.relationRows.querySelector(`[data-index="${newIndex}"]`), '[data-field="role.zh"]');
+            setStatus('已添加人物关系，尚未保存', '');
         })
-        .catch((error) => setStatus(error.message, 'bad'));
+        .catch(showError);
 });
 
 elements.relationRows.addEventListener('input', (event) => {
@@ -3861,7 +4671,7 @@ elements.relationRows.addEventListener('click', (event) => {
     if (button.dataset.action === 'open-figure') {
         const relation = relations[index];
         if (relation && relation.figureId) {
-            openFigureDetails(relation.figureId).catch((error) => setStatus(error.message, 'bad'));
+            openFigureDetails(relation.figureId).catch(showError);
         }
         return;
     }
@@ -3871,7 +4681,9 @@ elements.relationRows.addEventListener('click', (event) => {
     if (button.dataset.action === 'down' && index < relations.length - 1)
         [relations[index], relations[index + 1]] = [relations[index + 1], relations[index]];
     syncEditor();
-    renderRelations().catch((error) => setStatus(error.message, 'bad'));
+    renderRelations()
+        .then(() => setStatus('已修改人物关系，尚未保存', ''))
+        .catch(showError);
 });
 
 window.addEventListener('resize', () => {
@@ -3896,7 +4708,7 @@ elements.auditCategories.addEventListener('click', (event) => {
                 selectEntity(figureButton.dataset.openFigure);
                 return loadEntity();
             })
-            .catch((error) => setStatus(error.message, 'bad'));
+            .catch(showError);
     }
     if (eventButton) {
         state.type = 'events';
@@ -3906,10 +4718,8 @@ elements.auditCategories.addEventListener('click', (event) => {
                 selectEntity(eventButton.dataset.openEvent);
                 return loadEntity();
             })
-            .catch((error) => setStatus(error.message, 'bad'));
+            .catch(showError);
     }
 });
 
-loadFigureOptions()
-    .then(refresh)
-    .catch((error) => setStatus(error.message, 'bad'));
+loadFigureOptions().then(refresh).catch(showError);
