@@ -23,6 +23,9 @@ manage/.backups/
 # Archive parity browser artifacts
 .tmp/
 
+# Persistent local Admin JSON history; intentionally excluded from Git and static publishing
+.admin-history/
+
 # Generated event Markdown packs
 /pq/
 /pq-all.zip

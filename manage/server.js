@@ -12,6 +12,8 @@ const os = require('node:os');
 const path = require('node:path');
 const { URL } = require('node:url');
 
+const { createAdminDraftService } = require('./admin-draft-service');
+const { createAdminHistoryService } = require('./admin-history-service');
 const { createArchiveFigureService } = require('./archive-figure-service');
 const {
     presentationIdForRef,
@@ -23,18 +25,45 @@ const HOST = process.env.HOST || '127.0.0.1';
 const PORT = Number(process.env.PORT || 3001);
 const APP_ROOT = path.resolve(__dirname, '..');
 const ROOT = path.resolve(process.env.AI_HISTORY_ARCHIVE_ROOT || APP_ROOT);
-const ARCHIVE_EVENTS = path.join(ROOT, 'archive', 'events');
-const ARCHIVE_STORYLINES = path.join(ROOT, 'archive', 'storylines');
+const STATIC_SITE_OUTPUT = path.join(ROOT, '.tmp', 'static-site');
+const STATIC_BUILD_META = path.join(ROOT, '.tmp', 'static-site-build.json');
+const ARCHIVE_GENERATION_META = path.join(ROOT, '.tmp', 'archive-generation.json');
+const TEST_PREVIEW_OUTPUT = path.join(ROOT, '.tmp', 'admin-test-preview');
+const TEST_PREVIEW_META = path.join(ROOT, '.tmp', 'admin-test-preview.json');
 const MAX_BODY_BYTES = 15 * 1024 * 1024;
 const MAX_REMOTE_IMAGE_BYTES = 10 * 1024 * 1024;
 const REMOTE_IMAGE_TIMEOUT_MS = 15000;
-const figureService = createArchiveFigureService(ROOT);
+const draftService = createAdminDraftService(ROOT);
+const historyService = createAdminHistoryService(ROOT);
 let activeArchiveCommand = '';
+
+function activeContentRoot() {
+    return draftService.contentRoot();
+}
+
+function currentFigureService() {
+    return createArchiveFigureService(activeContentRoot());
+}
+
+function runDraftMutation(operation) {
+    const draftStatus = draftService.status();
+    const createdDraft =
+        !draftService.hasDraft() || (!draftStatus.summary.active && !draftStatus.summary.stagedResources);
+    draftService.ensureInitialized();
+    try {
+        return operation();
+    } catch (error) {
+        if (createdDraft) draftService.reset();
+        throw error;
+    }
+}
 
 if (!Number.isInteger(PORT) || PORT <= 0 || PORT > 65535) {
     console.error(`Invalid port: ${process.env.PORT}`);
     process.exit(1);
 }
+
+historyService.ensureCurrentVersion();
 
 const MIME = {
     '.css': 'text/css; charset=utf-8',
@@ -46,7 +75,9 @@ const MIME = {
     '.json': 'application/json; charset=utf-8',
     '.png': 'image/png',
     '.svg': 'image/svg+xml',
-    '.webp': 'image/webp'
+    '.webp': 'image/webp',
+    '.woff': 'font/woff',
+    '.woff2': 'font/woff2'
 };
 
 function sendJson(res, data, status = 200) {
@@ -270,7 +301,7 @@ function safeArchiveFileName(value) {
 }
 
 function archiveEventPath(eventId, file) {
-    return archiveEventPathForRoot(ROOT, eventId, file);
+    return archiveEventPathForRoot(activeContentRoot(), eventId, file);
 }
 
 function archiveEventPathForRoot(projectRoot, eventId, file) {
@@ -283,7 +314,7 @@ function archiveEventPathForRoot(projectRoot, eventId, file) {
 }
 
 function archiveStorylinePath(storylineId) {
-    return archiveStorylinePathForRoot(ROOT, storylineId);
+    return archiveStorylinePathForRoot(activeContentRoot(), storylineId);
 }
 
 function archiveStorylinePathForRoot(projectRoot, storylineId) {
@@ -306,14 +337,15 @@ function assertUniqueStorylineEvents(storyline) {
     }
 }
 
-function listStorylineRecords() {
+function listStorylineRecords(projectRoot = activeContentRoot()) {
+    const storylinesDirectory = path.join(projectRoot, 'archive', 'storylines');
     return fs
-        .readdirSync(ARCHIVE_STORYLINES)
+        .readdirSync(storylinesDirectory)
         .filter((file) => /^[a-z0-9][a-z0-9._-]*\.json$/.test(file))
         .sort()
         .map((file) => {
             const id = file.slice(0, -'.json'.length);
-            const data = JSON.parse(fs.readFileSync(path.join(ARCHIVE_STORYLINES, file), 'utf8'));
+            const data = JSON.parse(fs.readFileSync(path.join(storylinesDirectory, file), 'utf8'));
             const activeEvents = (data.events || []).filter(
                 (entry) => entry.enabled !== false && typeof entry.milestoneId === 'string' && entry.milestoneId.trim()
             );
@@ -338,7 +370,8 @@ function eventUsageById(storylineRecords) {
 
 function eventPresentationTargets(eventId) {
     const safeEventId = safeArchiveId(eventId, 'archive eventId');
-    const eventDirectory = path.join(ARCHIVE_EVENTS, safeEventId);
+    const projectRoot = activeContentRoot();
+    const eventDirectory = path.join(projectRoot, 'archive', 'events', safeEventId);
     const eventFile = path.join(eventDirectory, 'event.json');
     if (!fs.existsSync(eventFile)) throw Object.assign(new Error('Archive event not found'), { statusCode: 404 });
     const event = readJsonFile(eventFile);
@@ -349,7 +382,7 @@ function eventPresentationTargets(eventId) {
                 .filter((entry) => entry.eventId === safeEventId && entry.enabled !== false && entry.milestoneId)
                 .map((entry) => {
                     const resolved = resolveEffectivePresentation({
-                        root: ROOT,
+                        root: projectRoot,
                         eventDir: eventDirectory,
                         event,
                         eventId: safeEventId,
@@ -393,10 +426,11 @@ function countOtherPresentationReferences(eventId, variantId, currentStorylineId
 }
 
 function restorePresentationInheritance(body) {
+    const projectRoot = activeContentRoot();
     const eventId = safeArchiveId(body.eventId, 'archive eventId');
     const storylineId = safeArchiveId(body.storylineId, 'archive storylineId');
     const milestoneId = safeArchiveId(body.milestoneId, 'archive milestoneId');
-    const eventDirectory = path.join(ARCHIVE_EVENTS, eventId);
+    const eventDirectory = path.join(projectRoot, 'archive', 'events', eventId);
     const storylineFile = archiveStorylinePath(storylineId);
     const storylineSource = fs.readFileSync(storylineFile, 'utf8');
     const storyline = readJsonFile(storylineFile);
@@ -444,10 +478,10 @@ function restorePresentationInheritance(body) {
     }
 
     if (clearedStorylineVariant) {
-        changedFiles.push(path.relative(ROOT, storylineFile).replace(/\\/g, '/'));
+        changedFiles.push(path.relative(projectRoot, storylineFile).replace(/\\/g, '/'));
     }
     if (stagedOverridePath) {
-        changedFiles.push(path.relative(ROOT, overridePath).replace(/\\/g, '/'));
+        changedFiles.push(path.relative(projectRoot, overridePath).replace(/\\/g, '/'));
         deletedOverride = true;
     } else if (overrideExists) {
         keptOverrideDueToReferences = true;
@@ -468,7 +502,7 @@ function restorePresentationInheritance(body) {
 }
 
 function archiveEventFileList(eventId) {
-    const eventDirectory = path.join(ARCHIVE_EVENTS, eventId);
+    const eventDirectory = path.join(activeContentRoot(), 'archive', 'events', eventId);
     if (!fs.existsSync(eventDirectory) || !fs.statSync(eventDirectory).isDirectory()) return [];
 
     const files = ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json'].filter((file) =>
@@ -529,6 +563,12 @@ function serveResource(res, pathname, headOnly = false) {
         sendError(res, 'Invalid resource path', 400);
         return;
     }
+    const relativePath = decodedPath.replace(/^\//, '');
+    const draftPath = draftService.draftResourcePath(relativePath);
+    if (draftPath && fs.existsSync(draftPath)) {
+        serveFile(res, draftPath, 'no-store', headOnly);
+        return;
+    }
     const configuredResourcesDirectory = path.resolve(ROOT, 'resources');
     let filePath = path.resolve(ROOT, decodedPath.slice(1));
     if (!filePath.startsWith(`${configuredResourcesDirectory}${path.sep}`)) {
@@ -547,6 +587,10 @@ function serveResource(res, pathname, headOnly = false) {
 }
 
 function runArchiveCommand(res, commandName, scriptName) {
+    if (draftService.status().summary.active) {
+        sendError(res, '存在待处理 Admin 草稿，请先在发布管理中完成保留、放弃和应用', 409);
+        return;
+    }
     if (activeArchiveCommand) {
         sendError(res, `Archive command already running: ${activeArchiveCommand}`, 409);
         return;
@@ -595,6 +639,402 @@ function runArchiveScript(scriptName, projectRoot = ROOT) {
             }
         );
     });
+}
+
+function runProjectScript(scriptName, projectRoot = ROOT, timeout = 240000) {
+    return new Promise((resolve) => {
+        execFile(
+            process.execPath,
+            [path.join(APP_ROOT, 'scripts', scriptName)],
+            {
+                cwd: APP_ROOT,
+                env: { ...process.env, AI_HISTORY_ARCHIVE_ROOT: projectRoot },
+                maxBuffer: 20 * 1024 * 1024,
+                timeout
+            },
+            (error, stdout, stderr) => {
+                resolve({
+                    ok: !error,
+                    stdout: stdout || '',
+                    stderr: stderr || '',
+                    exitCode: error ? error.code : 0
+                });
+            }
+        );
+    });
+}
+
+function collectPathStats(targetPath, visited = new Set()) {
+    if (!fs.existsSync(targetPath)) return { latestMtimeMs: 0, fileCount: 0, totalBytes: 0 };
+    let realPath;
+    try {
+        realPath = fs.realpathSync(targetPath);
+    } catch {
+        realPath = targetPath;
+    }
+    if (visited.has(realPath)) return { latestMtimeMs: 0, fileCount: 0, totalBytes: 0 };
+    const stat = fs.statSync(targetPath);
+    if (stat.isFile()) {
+        return { latestMtimeMs: stat.mtimeMs, fileCount: 1, totalBytes: stat.size };
+    }
+    if (!stat.isDirectory()) return { latestMtimeMs: stat.mtimeMs, fileCount: 0, totalBytes: 0 };
+    visited.add(realPath);
+    const result = { latestMtimeMs: stat.mtimeMs, fileCount: 0, totalBytes: 0 };
+    for (const name of fs.readdirSync(targetPath)) {
+        const child = collectPathStats(path.join(targetPath, name), visited);
+        result.latestMtimeMs = Math.max(result.latestMtimeMs, child.latestMtimeMs);
+        result.fileCount += child.fileCount;
+        result.totalBytes += child.totalBytes;
+    }
+    return result;
+}
+
+function latestMtime(paths) {
+    const visited = new Set();
+    return paths.reduce(
+        (latest, targetPath) => Math.max(latest, collectPathStats(targetPath, visited).latestMtimeMs),
+        0
+    );
+}
+
+function readMetadataFile(filePath) {
+    if (!fs.existsSync(filePath)) return null;
+    try {
+        return readJsonFile(filePath);
+    } catch {
+        return null;
+    }
+}
+
+function ensureDraftPreviewInputs() {
+    for (const name of ['.nojekyll', 'index.html', 'shared', 'public']) {
+        const source = path.join(ROOT, name);
+        const destination = path.join(draftService.workspaceRoot, name);
+        if (fs.existsSync(destination)) continue;
+        if (!fs.existsSync(source)) throw new Error(`测试预览缺少必需文件：${name}`);
+        fs.symlinkSync(source, destination, fs.statSync(source).isDirectory() ? 'dir' : 'file');
+    }
+}
+
+function replaceDirectory(source, destination) {
+    const parent = path.dirname(destination);
+    const incoming = path.join(parent, `${path.basename(destination)}.${process.pid}.${randomUUID()}.incoming`);
+    const previous = path.join(parent, `${path.basename(destination)}.${process.pid}.${randomUUID()}.previous`);
+    fs.mkdirSync(parent, { recursive: true });
+    try {
+        fs.renameSync(source, incoming);
+    } catch (error) {
+        if (error.code !== 'EXDEV') throw error;
+        fs.cpSync(source, incoming, { recursive: true, dereference: true });
+    }
+    try {
+        if (fs.existsSync(destination)) fs.renameSync(destination, previous);
+        fs.renameSync(incoming, destination);
+        fs.rmSync(previous, { recursive: true, force: true });
+    } catch (error) {
+        fs.rmSync(incoming, { recursive: true, force: true });
+        if (!fs.existsSync(destination) && fs.existsSync(previous)) fs.renameSync(previous, destination);
+        throw error;
+    }
+}
+
+async function generateAdminTestPreview() {
+    const draft = draftService.status();
+    if (draft.summary.pending) {
+        throw Object.assign(new Error('仍有未决策变更，请先逐项保留或放弃'), { statusCode: 409 });
+    }
+    if (!draft.summary.kept) {
+        throw Object.assign(new Error('没有可用于测试预览的已保留变更'), { statusCode: 409 });
+    }
+    if (activeArchiveCommand) {
+        throw Object.assign(new Error(`Archive command already running: ${activeArchiveCommand}`), {
+            statusCode: 409
+        });
+    }
+
+    const fingerprint = draft.fingerprint;
+    const steps = [];
+    activeArchiveCommand = 'test-preview';
+    try {
+        ensureDraftPreviewInputs();
+        const previewScripts = [
+            ['validate-preview', 'validate-archive.js'],
+            ['generate-preview', 'generate-archive-data.js'],
+            ['build-preview', 'build-static-site.js']
+        ];
+        for (let index = 0; index < previewScripts.length; index += 1) {
+            const [name, scriptName] = previewScripts[index];
+            const result = await runProjectScript(scriptName, draftService.workspaceRoot);
+            steps.push({ name, ...result });
+            if (!result.ok) {
+                for (const [skippedName] of previewScripts.slice(index + 1)) {
+                    steps.push({ name: skippedName, ok: false, skipped: true, message: '前一步失败，未执行。' });
+                }
+                return { ok: false, steps };
+            }
+            if (draftService.status().fingerprint !== fingerprint) {
+                throw Object.assign(new Error('测试预览生成期间草稿已发生变化，请重新生成'), {
+                    statusCode: 409
+                });
+            }
+        }
+
+        const workspaceBundle = path.join(draftService.workspaceRoot, '.tmp', 'static-site');
+        replaceDirectory(workspaceBundle, TEST_PREVIEW_OUTPUT);
+        if (draftService.status().fingerprint !== fingerprint) {
+            throw Object.assign(new Error('测试预览生成期间草稿已发生变化，请重新生成'), {
+                statusCode: 409
+            });
+        }
+        const stats = collectPathStats(TEST_PREVIEW_OUTPUT);
+        const builtAt = new Date().toISOString();
+        atomicWrite(
+            TEST_PREVIEW_META,
+            `${JSON.stringify(
+                {
+                    builtAt,
+                    fingerprint,
+                    fileCount: stats.fileCount,
+                    totalBytes: stats.totalBytes,
+                    relativePath: '.tmp/admin-test-preview/'
+                },
+                null,
+                2
+            )}\n`
+        );
+        return {
+            ok: true,
+            previewUrl: '/test-preview/',
+            fingerprint,
+            builtAt,
+            steps
+        };
+    } finally {
+        activeArchiveCommand = '';
+    }
+}
+
+async function getPublishStatus() {
+    const archiveMtime = latestMtime([path.join(ROOT, 'archive')]);
+    const runtimeFiles = [path.join(ROOT, 'milestones-data.js'), path.join(ROOT, 'milestones-data-default.js')];
+    const runtimeExists = runtimeFiles.every((filePath) => fs.existsSync(filePath));
+    const runtimeMtime = runtimeExists ? Math.min(...runtimeFiles.map((filePath) => fs.statSync(filePath).mtimeMs)) : 0;
+    const generationMeta = readMetadataFile(ARCHIVE_GENERATION_META);
+    const generatedAtMs = generationMeta?.generatedAt ? new Date(generationMeta.generatedAt).getTime() : runtimeMtime;
+    const sourceMtime = latestMtime([
+        path.join(ROOT, '.nojekyll'),
+        path.join(ROOT, 'index.html'),
+        ...runtimeFiles,
+        path.join(ROOT, 'shared'),
+        path.join(ROOT, 'resources'),
+        path.join(ROOT, 'public')
+    ]);
+    const bundleExists = fs.existsSync(STATIC_SITE_OUTPUT) && fs.statSync(STATIC_SITE_OUTPUT).isDirectory();
+    const buildMeta = readMetadataFile(STATIC_BUILD_META);
+    const bundleStats = bundleExists ? collectPathStats(STATIC_SITE_OUTPUT) : { fileCount: 0, totalBytes: 0 };
+    const builtAtMs = buildMeta?.builtAt ? new Date(buildMeta.builtAt).getTime() : 0;
+    const draft = draftService.status();
+    const previewExists = fs.existsSync(TEST_PREVIEW_OUTPUT) && fs.statSync(TEST_PREVIEW_OUTPUT).isDirectory();
+    const previewMeta = readMetadataFile(TEST_PREVIEW_META);
+    const previewStats = previewExists ? collectPathStats(TEST_PREVIEW_OUTPUT) : { fileCount: 0, totalBytes: 0 };
+    return {
+        ok: true,
+        activeCommand: activeArchiveCommand,
+        draft,
+        changes: draft.active,
+        discardedChanges: draft.discarded,
+        changeSummary: draft.summary,
+        history: historyService.summary(),
+        runtime: {
+            exists: runtimeExists,
+            ready: runtimeExists && generatedAtMs >= archiveMtime,
+            generatedAt: generatedAtMs ? new Date(generatedAtMs).toISOString() : null,
+            archiveModifiedAt: archiveMtime ? new Date(archiveMtime).toISOString() : null
+        },
+        bundle: {
+            exists: bundleExists,
+            ready: bundleExists && builtAtMs > 0 && builtAtMs >= sourceMtime,
+            builtAt: buildMeta?.builtAt || null,
+            fileCount: buildMeta?.fileCount || bundleStats.fileCount,
+            totalBytes: buildMeta?.totalBytes || bundleStats.totalBytes,
+            relativePath: '.tmp/static-site/'
+        },
+        preview: {
+            exists: previewExists,
+            ready: previewExists && Boolean(draft.fingerprint) && previewMeta?.fingerprint === draft.fingerprint,
+            builtAt: previewMeta?.builtAt || null,
+            fingerprint: previewMeta?.fingerprint || null,
+            fileCount: previewMeta?.fileCount || previewStats.fileCount,
+            totalBytes: previewMeta?.totalBytes || previewStats.totalBytes,
+            relativePath: '.tmp/admin-test-preview/'
+        }
+    };
+}
+
+function draftRelativePath(body) {
+    if (body.type === 'figures') return 'archive/figures/figures.json';
+    if (body.type === 'storylines') {
+        return `archive/storylines/${safeArchiveId(body.storylineId, 'archive storylineId')}.json`;
+    }
+    if (body.type === 'events') {
+        return path.relative(ROOT, archiveEventPathForRoot(ROOT, body.eventId, body.file)).replace(/\\/g, '/');
+    }
+    throw Object.assign(new Error('Unsupported Archive entity type'), { statusCode: 400 });
+}
+
+function saveAdminDraft(body) {
+    const relativePath = draftRelativePath(body);
+    const formalPath = path.join(ROOT, relativePath);
+    if (body.type === 'figures') {
+        const figureId = safeArchiveId(body.figureId, 'archive figureId');
+        if (!body.data || typeof body.data !== 'object' || Array.isArray(body.data) || body.data.id !== figureId) {
+            throw Object.assign(new Error('Archive figure data.id must match figureId'), { statusCode: 400 });
+        }
+    } else {
+        if (!body.data || typeof body.data !== 'object') {
+            throw Object.assign(new Error('Archive draft data must be a JSON object or array'), { statusCode: 400 });
+        }
+        if ((body.type === 'storylines' || body.file === 'event.json') && Array.isArray(body.data)) {
+            throw Object.assign(new Error('Archive event and storyline data must be a JSON object'), {
+                statusCode: 400
+            });
+        }
+        if (body.type === 'storylines' && body.data.id !== body.storylineId) {
+            throw Object.assign(new Error('Archive storyline data.id must match storylineId'), { statusCode: 400 });
+        }
+        if (body.type === 'events' && body.file === 'event.json' && body.data.id !== body.eventId) {
+            throw Object.assign(new Error('Archive event data.id must match eventId'), { statusCode: 400 });
+        }
+    }
+    if (!draftService.hasDraft()) assertExpectedRevision(formalPath, body.expectedRevision);
+    draftService.ensureInitialized();
+    const filePath = path.join(draftService.workspaceRoot, relativePath);
+    assertExpectedRevision(filePath, body.expectedRevision);
+    let result;
+    if (body.type === 'figures') {
+        const figureId = safeArchiveId(body.figureId, 'archive figureId');
+        const figures = readJsonFile(filePath);
+        const index = figures.findIndex((figure) => figure.id === figureId);
+        if (body.create === true && index >= 0) {
+            throw Object.assign(new Error('Archive figure already exists'), { statusCode: 409 });
+        }
+        if (body.create !== true && index < 0) {
+            throw Object.assign(new Error('Archive figure not found'), { statusCode: 404 });
+        }
+        if (index >= 0) figures[index] = body.data;
+        else figures.push(body.data);
+        figures.sort((left, right) => left.id.localeCompare(right.id));
+        atomicWrite(filePath, `${JSON.stringify(figures, null, 2)}\n`);
+        result = { ok: true, figureId, created: index < 0, revision: fileRevision(filePath) };
+    } else {
+        atomicWrite(filePath, `${JSON.stringify(body.data, null, 2)}\n`);
+        result = { ok: true, revision: fileRevision(filePath) };
+    }
+    const draft = draftService.noteFileChanged(relativePath);
+    return { ...result, draft };
+}
+
+async function validateAdminDraft() {
+    const draftStatus = draftService.status();
+    if (!draftStatus.summary.active) {
+        throw Object.assign(new Error('当前没有待处理草稿'), { statusCode: 409 });
+    }
+    if (draftStatus.summary.pending) {
+        throw Object.assign(new Error('仍有未决策变更，请先逐项保留或放弃'), { statusCode: 409 });
+    }
+    if (!draftStatus.summary.kept) {
+        throw Object.assign(new Error('没有需要校验的已保留变更'), { statusCode: 409 });
+    }
+    if (activeArchiveCommand) {
+        throw Object.assign(new Error(`Archive command already running: ${activeArchiveCommand}`), {
+            statusCode: 409
+        });
+    }
+    activeArchiveCommand = 'validate-admin-draft';
+    try {
+        const result = await runArchiveScript('validate-archive.js', draftService.workspaceRoot);
+        return { ...result, saved: false };
+    } finally {
+        activeArchiveCommand = '';
+    }
+}
+
+async function applyAdminDraft() {
+    const validation = await validateAdminDraft();
+    if (!validation.ok) return { ok: false, validation, applied: false };
+    historyService.ensureCurrentVersion();
+    const result = draftService.apply();
+    const rollbackFromVersionId = result.origin?.type === 'rollback' ? result.origin.versionId : '';
+    const version = historyService.createVersion({
+        action: rollbackFromVersionId ? 'rollback' : 'apply',
+        note: rollbackFromVersionId ? '' : `应用 Admin 草稿（${result.changedFiles.length} 个 Json 文件）`,
+        rollbackFromVersionId,
+        changedFiles: result.changedFiles
+    });
+    return { ok: true, validation, applied: true, result, version };
+}
+
+async function prepareAdminPublish() {
+    const steps = [];
+    const draftStatus = draftService.status();
+    if (draftStatus.summary.active) {
+        const applyResult = await applyAdminDraft();
+        steps.push({
+            name: 'validate-draft',
+            ...applyResult.validation
+        });
+        if (!applyResult.ok) {
+            steps.push({ name: 'apply', ok: false, skipped: true, message: '草稿校验失败，未应用。' });
+            steps.push({ name: 'generate', ok: false, skipped: true, message: '前一步失败，未执行。' });
+            steps.push({ name: 'build', ok: false, skipped: true, message: '前一步失败，未执行。' });
+            return { ok: false, steps };
+        }
+        steps.push({
+            name: 'apply',
+            ok: true,
+            message: `已写入 ${applyResult.result.changedFiles.length} 个 Json 文件。`
+        });
+    }
+    const publishResult = await runPublishSteps(['validate', 'generate', 'build']);
+    steps.push(...publishResult.steps);
+    return { ok: steps.every((step) => step.ok), steps };
+}
+
+const publishScripts = {
+    validate: 'validate-archive.js',
+    generate: 'generate-archive-data.js',
+    build: 'build-static-site.js'
+};
+
+async function runPublishSteps(stepNames) {
+    if (draftService.status().summary.active) {
+        throw Object.assign(new Error('存在待处理 Admin 草稿，请先完成保留、放弃和应用'), {
+            statusCode: 409
+        });
+    }
+    if (activeArchiveCommand) {
+        throw Object.assign(new Error(`Archive command already running: ${activeArchiveCommand}`), {
+            statusCode: 409
+        });
+    }
+    activeArchiveCommand = stepNames.length > 1 ? 'prepare-publish' : `publish-${stepNames[0]}`;
+    const steps = [];
+    try {
+        for (let index = 0; index < stepNames.length; index += 1) {
+            const name = stepNames[index];
+            const result = await runProjectScript(publishScripts[name]);
+            steps.push({ name, ...result });
+            if (!result.ok) {
+                for (const skippedName of stepNames.slice(index + 1)) {
+                    steps.push({ name: skippedName, ok: false, skipped: true, message: '前一步失败，未执行。' });
+                }
+                break;
+            }
+        }
+        return { ok: steps.every((step) => step.ok), steps };
+    } finally {
+        activeArchiveCommand = '';
+    }
 }
 
 function saveArchiveDraft(projectRoot, body) {
@@ -671,9 +1111,10 @@ const routes = {
 
     'GET /api/archive/figures': (_req, res) => {
         try {
+            const service = currentFigureService();
             sendJson(res, {
-                items: figureService.listFigures(),
-                revision: figureService.getRegistryRevision()
+                items: service.listFigures(),
+                revision: service.getRegistryRevision()
             });
         } catch (error) {
             sendError(res, error.message, error.statusCode || 500);
@@ -682,7 +1123,7 @@ const routes = {
 
     'GET /api/archive/figure-options': (_req, res) => {
         try {
-            sendJson(res, figureService.listFigures());
+            sendJson(res, currentFigureService().listFigures());
         } catch (error) {
             sendError(res, error.message, error.statusCode || 500);
         }
@@ -690,7 +1131,7 @@ const routes = {
 
     'GET /api/archive/event-display-targets': (_req, res, url) => {
         try {
-            sendJson(res, figureService.getEventDisplayTargets(url.searchParams.get('eventId')));
+            sendJson(res, currentFigureService().getEventDisplayTargets(url.searchParams.get('eventId')));
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -706,7 +1147,13 @@ const routes = {
 
     'POST /api/archive/event-presentation-restore-inheritance': async (req, res) => {
         try {
-            sendJson(res, restorePresentationInheritance(await readJsonBody(req)));
+            const body = await readJsonBody(req);
+            const result = runDraftMutation(() => {
+                const draftResult = restorePresentationInheritance(body);
+                draftResult.changedFiles.forEach((relativePath) => draftService.noteFileChanged(relativePath));
+                return draftResult;
+            });
+            sendJson(res, result);
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -714,7 +1161,7 @@ const routes = {
 
     'GET /api/archive/figure': (_req, res, url) => {
         try {
-            sendJson(res, figureService.getFigure(url.searchParams.get('figureId')));
+            sendJson(res, currentFigureService().getFigure(url.searchParams.get('figureId')));
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -722,7 +1169,7 @@ const routes = {
 
     'POST /api/archive/figure': async (req, res) => {
         try {
-            sendJson(res, figureService.saveFigure(await readJsonBody(req)));
+            sendJson(res, saveAdminDraft({ ...(await readJsonBody(req)), type: 'figures' }));
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -730,7 +1177,7 @@ const routes = {
 
     'GET /api/archive/figure-usage': (_req, res, url) => {
         try {
-            sendJson(res, figureService.getFigureUsage(url.searchParams.get('figureId')));
+            sendJson(res, currentFigureService().getFigureUsage(url.searchParams.get('figureId')));
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -740,7 +1187,10 @@ const routes = {
         try {
             sendJson(
                 res,
-                figureService.getFigureAssets(url.searchParams.get('figureId'), url.searchParams.get('eventId') || '')
+                currentFigureService().getFigureAssets(
+                    url.searchParams.get('figureId'),
+                    url.searchParams.get('eventId') || ''
+                )
             );
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
@@ -749,7 +1199,16 @@ const routes = {
 
     'POST /api/archive/figure-default-avatar': async (req, res) => {
         try {
-            sendJson(res, figureService.setDefaultAvatar(await readJsonBody(req)));
+            const body = await readJsonBody(req);
+            if (!draftService.hasDraft()) {
+                assertExpectedRevision(path.join(ROOT, 'archive', 'figures', 'figures.json'), body.expectedRevision);
+            }
+            const result = runDraftMutation(() => {
+                const draftResult = currentFigureService().setDefaultAvatar(body);
+                draftService.noteFileChanged('archive/figures/figures.json');
+                return draftResult;
+            });
+            sendJson(res, result);
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -757,7 +1216,17 @@ const routes = {
 
     'POST /api/archive/figure-asset-link': async (req, res) => {
         try {
-            sendJson(res, figureService.linkFigureAsset(await readJsonBody(req)));
+            const body = await readJsonBody(req);
+            const relativePath = `archive/events/${safeArchiveId(body.eventId, 'archive eventId')}/assets.json`;
+            if (!draftService.hasDraft()) {
+                assertExpectedRevision(path.join(ROOT, relativePath), body.expectedRevision);
+            }
+            const result = runDraftMutation(() => {
+                const draftResult = currentFigureService().linkFigureAsset(body);
+                draftService.noteFileChanged(relativePath);
+                return draftResult;
+            });
+            sendJson(res, result);
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -765,7 +1234,33 @@ const routes = {
 
     'POST /api/archive/figure-asset-unlink': async (req, res) => {
         try {
-            sendJson(res, figureService.unlinkFigureAsset(await readJsonBody(req)));
+            const body = await readJsonBody(req);
+            const associations = Array.isArray(body.associations)
+                ? body.associations
+                : [{ eventId: body.eventId, assetId: body.assetId }];
+            const relativePaths = [
+                ...new Set(
+                    associations.map(
+                        (association) =>
+                            `archive/events/${safeArchiveId(association.eventId, 'archive eventId')}/assets.json`
+                    )
+                )
+            ];
+            if (!draftService.hasDraft()) {
+                for (const association of associations) {
+                    const relativePath = `archive/events/${safeArchiveId(association.eventId, 'archive eventId')}/assets.json`;
+                    assertExpectedRevision(
+                        path.join(ROOT, relativePath),
+                        association.expectedRevision || body.expectedRevision
+                    );
+                }
+            }
+            const result = runDraftMutation(() => {
+                const draftResult = currentFigureService().unlinkFigureAsset(body);
+                relativePaths.forEach((relativePath) => draftService.noteFileChanged(relativePath));
+                return draftResult;
+            });
+            sendJson(res, result);
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -773,7 +1268,7 @@ const routes = {
 
     'GET /api/archive/figure-audit': (_req, res) => {
         try {
-            sendJson(res, figureService.getAudit());
+            sendJson(res, currentFigureService().getAudit());
         } catch (error) {
             sendError(res, error.message, error.statusCode || 500);
         }
@@ -783,7 +1278,7 @@ const routes = {
         try {
             sendJson(
                 res,
-                figureService.previewFigureMerge(
+                currentFigureService().previewFigureMerge(
                     url.searchParams.get('sourceFigureId'),
                     url.searchParams.get('targetFigureId')
                 )
@@ -795,7 +1290,13 @@ const routes = {
 
     'POST /api/archive/figure-merge': async (req, res) => {
         try {
-            sendJson(res, figureService.mergeFigures(await readJsonBody(req)));
+            const body = await readJsonBody(req);
+            const result = runDraftMutation(() => {
+                const draftResult = currentFigureService().mergeFigures(body);
+                draftResult.changedFiles.forEach((relativePath) => draftService.noteFileChanged(relativePath));
+                return draftResult;
+            });
+            sendJson(res, result);
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -803,7 +1304,7 @@ const routes = {
 
     'POST /api/archive/figure-asset-merge-preview': async (req, res) => {
         try {
-            sendJson(res, figureService.previewFigureAssetMerge(await readJsonBody(req)));
+            sendJson(res, currentFigureService().previewFigureAssetMerge(await readJsonBody(req)));
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -811,7 +1312,13 @@ const routes = {
 
     'POST /api/archive/figure-asset-merge': async (req, res) => {
         try {
-            sendJson(res, figureService.mergeFigureAssets(await readJsonBody(req)));
+            const body = await readJsonBody(req);
+            const result = runDraftMutation(() => {
+                const draftResult = currentFigureService().mergeFigureAssets(body);
+                draftResult.changedFiles.forEach((relativePath) => draftService.noteFileChanged(relativePath));
+                return draftResult;
+            });
+            sendJson(res, result);
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -828,7 +1335,15 @@ const routes = {
             const imageBase64 = hasUrl
                 ? (await downloadRemoteImage(body.imageUrl)).toString('base64')
                 : body.imageBase64;
-            sendJson(res, figureService.importFigureImage({ ...body, imageBase64 }));
+            const assetsPath = `archive/events/${safeArchiveId(body.eventId, 'archive eventId')}/assets.json`;
+            const result = runDraftMutation(() => {
+                const draftResult = currentFigureService().importFigureImage({ ...body, imageBase64 });
+                draftService.trackResource(draftResult.asset.path);
+                draftService.noteFileChanged(assetsPath);
+                if (body.setAsDefaultAvatar) draftService.noteFileChanged('archive/figures/figures.json');
+                return draftResult;
+            });
+            sendJson(res, result);
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -845,14 +1360,16 @@ const routes = {
             const imageBase64 = hasUrl
                 ? (await downloadRemoteImage(body.imageUrl)).toString('base64')
                 : body.imageBase64;
-            sendJson(
-                res,
-                figureService.importEventImage({
+            const result = runDraftMutation(() => {
+                const draftResult = currentFigureService().importEventImage({
                     eventId: body.eventId,
                     assetId: body.assetId,
                     imageBase64
-                })
-            );
+                });
+                draftService.trackResource(draftResult.path);
+                return draftResult;
+            });
+            sendJson(res, result);
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -860,14 +1377,16 @@ const routes = {
 
     'GET /api/archive/events': (_req, res) => {
         try {
+            const projectRoot = activeContentRoot();
+            const eventsDirectory = path.join(projectRoot, 'archive', 'events');
             const usageByEventId = eventUsageById(listStorylineRecords());
             const events = fs
-                .readdirSync(ARCHIVE_EVENTS, { withFileTypes: true })
+                .readdirSync(eventsDirectory, { withFileTypes: true })
                 .filter((entry) => entry.isDirectory() && /^[a-z0-9][a-z0-9._-]*$/.test(entry.name))
                 .map((entry) => {
                     const files = archiveEventFileList(entry.name);
                     const usage = usageByEventId.get(entry.name) || [];
-                    const eventFile = path.join(ARCHIVE_EVENTS, entry.name, 'event.json');
+                    const eventFile = path.join(eventsDirectory, entry.name, 'event.json');
                     const event = fs.existsSync(eventFile) ? JSON.parse(fs.readFileSync(eventFile, 'utf8')) : {};
                     return {
                         id: entry.name,
@@ -898,10 +1417,11 @@ const routes = {
 
     'GET /api/archive/storylines': (_req, res) => {
         try {
+            const eventsDirectory = path.join(activeContentRoot(), 'archive', 'events');
             const storylines = listStorylineRecords().map(({ id, data, activeEvents }) => {
                 const events = (data.events || [])
                     .map((membership, index) => {
-                        const eventFile = path.join(ARCHIVE_EVENTS, membership.eventId, 'event.json');
+                        const eventFile = path.join(eventsDirectory, membership.eventId, 'event.json');
                         const event = fs.existsSync(eventFile) ? readJsonFile(eventFile) : {};
                         return {
                             eventId: membership.eventId,
@@ -951,7 +1471,7 @@ const routes = {
 
     'POST /api/archive/storyline': async (req, res) => {
         try {
-            sendJson(res, saveArchiveDraft(ROOT, { ...(await readJsonBody(req)), type: 'storylines' }));
+            sendJson(res, saveAdminDraft({ ...(await readJsonBody(req)), type: 'storylines' }));
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -976,7 +1496,7 @@ const routes = {
 
     'POST /api/archive/file': async (req, res) => {
         try {
-            sendJson(res, saveArchiveDraft(ROOT, { ...(await readJsonBody(req)), type: 'events' }));
+            sendJson(res, saveAdminDraft({ ...(await readJsonBody(req)), type: 'events' }));
         } catch (error) {
             sendError(res, error.message, error.statusCode || 400);
         }
@@ -990,9 +1510,123 @@ const routes = {
         }
     },
 
+    'POST /api/archive/draft-decision': async (req, res) => {
+        try {
+            const body = await readJsonBody(req);
+            const result = body.all
+                ? draftService.decideAll(body.decision)
+                : draftService.decide(body.changeId, body.decision);
+            sendJson(res, { ok: true, draft: result });
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/draft-validate': async (_req, res) => {
+        try {
+            sendJson(res, await validateAdminDraft());
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/draft-apply': async (_req, res) => {
+        try {
+            sendJson(res, await applyAdminDraft());
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/draft-reset': async (_req, res) => {
+        try {
+            sendJson(res, { ok: true, draft: draftService.reset() });
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
     'POST /api/archive/validate': (_req, res) => runArchiveCommand(res, 'validate', 'validate-archive.js'),
 
-    'POST /api/archive/generate': (_req, res) => runArchiveCommand(res, 'generate', 'generate-archive-data.js')
+    'POST /api/archive/generate': (_req, res) => runArchiveCommand(res, 'generate', 'generate-archive-data.js'),
+
+    'GET /api/archive/publish-status': async (_req, res) => {
+        try {
+            sendJson(res, await getPublishStatus());
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 500);
+        }
+    },
+
+    'GET /api/archive/history': (_req, res) => {
+        try {
+            sendJson(res, { ok: true, versions: historyService.listVersions() });
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 500);
+        }
+    },
+
+    'GET /api/archive/history-version': (_req, res, url) => {
+        try {
+            sendJson(res, { ok: true, version: historyService.getVersion(url.searchParams.get('versionId')) });
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 500);
+        }
+    },
+
+    'POST /api/archive/history-restore': async (req, res) => {
+        try {
+            if (activeArchiveCommand) {
+                throw Object.assign(new Error(`Archive command already running: ${activeArchiveCommand}`), {
+                    statusCode: 409
+                });
+            }
+            const body = await readJsonBody(req);
+            sendJson(res, { ok: true, ...historyService.createRollbackDraft(body.versionId, draftService) });
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 500);
+        }
+    },
+
+    'POST /api/archive/publish-validate': async (_req, res) => {
+        try {
+            sendJson(res, await runPublishSteps(['validate']));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 500);
+        }
+    },
+
+    'POST /api/archive/publish-generate': async (_req, res) => {
+        try {
+            sendJson(res, await runPublishSteps(['generate']));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 500);
+        }
+    },
+
+    'POST /api/archive/publish-build': async (_req, res) => {
+        try {
+            sendJson(res, await runPublishSteps(['build']));
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 500);
+        }
+    },
+
+    'POST /api/archive/prepare-publish': async (_req, res) => {
+        try {
+            sendJson(res, await prepareAdminPublish());
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 500);
+        }
+    },
+
+    'POST /api/archive/test-preview': async (_req, res) => {
+        try {
+            sendJson(res, await generateAdminTestPreview());
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 500);
+        }
+    }
 };
 
 const server = http.createServer((req, res) => {
@@ -1027,6 +1661,45 @@ const server = http.createServer((req, res) => {
     }
     if ((req.method === 'GET' || req.method === 'HEAD') && url.pathname.startsWith('/resources/')) {
         serveResource(res, url.pathname, req.method === 'HEAD');
+        return;
+    }
+    if ((req.method === 'GET' || req.method === 'HEAD') && url.pathname.startsWith('/publish-preview')) {
+        let decodedPath;
+        try {
+            decodedPath = decodeURIComponent(url.pathname);
+        } catch {
+            sendError(res, 'Invalid preview path', 400);
+            return;
+        }
+        const relativePath = decodedPath.replace(/^\/publish-preview\/?/, '') || 'index.html';
+        const filePath = path.resolve(STATIC_SITE_OUTPUT, relativePath);
+        if (filePath !== STATIC_SITE_OUTPUT && !filePath.startsWith(`${STATIC_SITE_OUTPUT}${path.sep}`)) {
+            sendError(res, 'Forbidden', 403);
+            return;
+        }
+        serveFile(res, filePath, 'no-store', req.method === 'HEAD');
+        return;
+    }
+    if ((req.method === 'GET' || req.method === 'HEAD') && url.pathname === '/test-preview') {
+        res.writeHead(302, { Location: '/test-preview/' });
+        res.end();
+        return;
+    }
+    if ((req.method === 'GET' || req.method === 'HEAD') && url.pathname.startsWith('/test-preview/')) {
+        let decodedPath;
+        try {
+            decodedPath = decodeURIComponent(url.pathname);
+        } catch {
+            sendError(res, 'Invalid preview path', 400);
+            return;
+        }
+        const relativePath = decodedPath.replace(/^\/test-preview\/?/, '') || 'index.html';
+        const filePath = path.resolve(TEST_PREVIEW_OUTPUT, relativePath);
+        if (filePath !== TEST_PREVIEW_OUTPUT && !filePath.startsWith(`${TEST_PREVIEW_OUTPUT}${path.sep}`)) {
+            sendError(res, 'Forbidden', 403);
+            return;
+        }
+        serveFile(res, filePath, 'no-store', req.method === 'HEAD');
         return;
     }
 
