@@ -1426,6 +1426,26 @@
                         "eliza-volc-seed-tts-2-zh-huopo-narrator-v1-eliza-history-term-repeat-2",
                         "eliza-volc-seed-tts-2-zh-huopo-narrator-v1-eliza-history-term-repeat-3"
                     ]
+                },
+                {
+                    "qualificationId": "eliza-volc-seed-tts-2-en-alberto-narrator-v1",
+                    "status": "human-reviewed-pass",
+                    "reviewedAt": "2026-09-17",
+                    "speechForm": "Eliza",
+                    "provider": "volc",
+                    "model": "seed-tts-2.0",
+                    "locale": "en",
+                    "voice": "en_male_alberto_uranus_bigtts",
+                    "instructionSha256": "73955b006dff70eedcd98e15a5e6240c9dcdb2f5dfa0631c1ca6f528545217c4",
+                    "method": "speech-replacement",
+                    "sampleIds": [
+                        "eliza-volc-seed-tts-2-en-alberto-narrator-v1-eliza-history-en-repeat-1",
+                        "eliza-volc-seed-tts-2-en-alberto-narrator-v1-eliza-history-en-repeat-2",
+                        "eliza-volc-seed-tts-2-en-alberto-narrator-v1-eliza-history-en-repeat-3",
+                        "eliza-volc-seed-tts-2-en-alberto-narrator-v1-eliza-history-en-term-repeat-1",
+                        "eliza-volc-seed-tts-2-en-alberto-narrator-v1-eliza-history-en-term-repeat-2",
+                        "eliza-volc-seed-tts-2-en-alberto-narrator-v1-eliza-history-en-term-repeat-3"
+                    ]
                 }
             ]
         },

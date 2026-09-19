@@ -1,135 +1,125 @@
 [
-  {
-    "id": "asset-2006-surf-interest-points",
-    "type": "svg",
-    "path": "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg",
-    "role": "architecture-explainer",
-    "caption": {
-      "zh": "SURF 兴趣点",
-      "en": "SURF interest points"
+    {
+        "id": "asset-2006-surf-interest-points",
+        "type": "svg",
+        "path": "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg",
+        "role": "architecture-explainer",
+        "caption": {
+            "zh": "SURF 兴趣点",
+            "en": "SURF interest points"
+        },
+        "subcaption": {
+            "zh": "关于 SURF 式兴趣点检测的本地原创解释图。",
+            "en": "Original local explainer of SURF-style interest point detection."
+        },
+        "sourceId": "source-surf-speeded-up-robust-features",
+        "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+                "zh": "本地原创 SVG 重绘；未复制来源图形。",
+                "en": "Original local SVG redraw; source figures are not copied."
+            }
+        },
+        "usage": ["variant:bench-council-ai100"],
+        "editable": true
     },
-    "subcaption": {
-      "zh": "关于 SURF 式兴趣点检测的本地原创解释图。",
-      "en": "Original local explainer of SURF-style interest point detection."
+    {
+        "id": "asset-ai100-2006-surf-herbert-bay-gm",
+        "type": "image",
+        "path": "resources/images/external/ai100-2006-surf/herbert-bay-portrait.png",
+        "role": "portrait",
+        "caption": {
+            "zh": "赫伯特·贝肖像",
+            "en": "Herbert Bay portrait"
+        },
+        "sourceId": "source-surf-speeded-up-robust-features",
+        "rights": {
+            "status": "external-reference",
+            "license": {
+                "zh": "本地副本来自赫伯特·贝个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+                "en": "Local copy from Herbert Bay personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
+            },
+            "sourceUrl": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png"
+        },
+        "usage": ["variant:bench-council-ai100"],
+        "editable": true,
+        "subcaption": {
+            "zh": "SURF 主要作者。",
+            "en": "Lead author of SURF."
+        },
+        "sourceName": {
+            "zh": "赫伯特·贝个人网站",
+            "en": "Herbert Bay personal website"
+        },
+        "sourceUrl": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png",
+        "figureIds": ["herbert-bay"]
     },
-    "sourceId": "source-surf-speeded-up-robust-features",
-    "rights": {
-      "status": "documented-in-legacy",
-      "license": {
-        "zh": "本地原创 SVG 重绘；未复制来源图形。",
-        "en": "Original local SVG redraw; source figures are not copied."
-      }
+    {
+        "id": "asset-ai100-2006-surf-audio-zh-original-v1",
+        "type": "audio",
+        "role": "audio-narration",
+        "caption": {
+            "zh": "ai100-2006-surf 中文原版科普音频",
+            "en": "ai100-2006-surf original Chinese audio narration"
+        },
+        "subcaption": {
+            "zh": "中文原版科普讲述，供中文页面播放。",
+            "en": "Original Chinese science narration used on the Chinese page."
+        },
+        "sourceId": "source-eth-surf-paper-pdf",
+        "rights": {
+            "status": "project-produced",
+            "license": {
+                "zh": "本项目使用已授权语音合成服务制作。",
+                "en": "Produced by this project with an authorized text-to-speech service."
+            },
+            "usage": {
+                "zh": "用于本展览的事件科普音频播放。",
+                "en": "Used for event narration in this exhibition."
+            }
+        },
+        "language": "zh",
+        "storage": {
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2006-surf-zh-original-v1.mp3",
+            "sourcePath": "resources/audio/generated/pronunciation-fixes/issue-98-pronunciation-release-zh-v2-2026-09-16/audio/bench-council-ai100/storyline/zh/31-ai100-2006-surf.mp3",
+            "contentType": "audio/mpeg"
+        },
+        "usage": ["storyline:bench-council-ai100"],
+        "editable": true
     },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true
-  },
-  {
-    "id": "asset-ai100-2006-surf-herbert-bay-gm",
-    "type": "image",
-    "path": "resources/images/external/ai100-2006-surf/herbert-bay-portrait.png",
-    "role": "portrait",
-    "caption": {
-      "zh": "赫伯特·贝肖像",
-      "en": "Herbert Bay portrait"
-    },
-    "sourceId": "source-surf-speeded-up-robust-features",
-    "rights": {
-      "status": "external-reference",
-      "license": {
-        "zh": "本地副本来自赫伯特·贝个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
-        "en": "Local copy from Herbert Bay personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
-      },
-      "sourceUrl": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png"
-    },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true,
-    "subcaption": {
-      "zh": "SURF 主要作者。",
-      "en": "Lead author of SURF."
-    },
-    "sourceName": {
-      "zh": "赫伯特·贝个人网站",
-      "en": "Herbert Bay personal website"
-    },
-    "sourceUrl": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png",
-    "figureIds": [
-      "herbert-bay"
-    ]
-  },
-  {
-    "id": "asset-ai100-2006-surf-audio-zh-original-v1",
-    "type": "audio",
-    "role": "audio-narration",
-    "caption": {
-      "zh": "ai100-2006-surf 中文原版科普音频",
-      "en": "ai100-2006-surf original Chinese audio narration"
-    },
-    "subcaption": {
-      "zh": "中文原版科普讲述，供中文页面播放。",
-      "en": "Original Chinese science narration used on the Chinese page."
-    },
-    "sourceId": "source-eth-surf-paper-pdf",
-    "rights": {
-      "status": "project-produced",
-      "license": {
-        "zh": "本项目使用已授权语音合成服务制作。",
-        "en": "Produced by this project with an authorized text-to-speech service."
-      },
-      "usage": {
-        "zh": "用于本展览的事件科普音频播放。",
-        "en": "Used for event narration in this exhibition."
-      }
-    },
-    "language": "zh",
-    "storage": {
-      "profileId": "ai-history-audio-releases",
-      "objectName": "ai100-2006-surf-zh-original-v1.mp3",
-      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-zh-original-v1-2026-08-09/audio/bench-council-ai100/storyline/zh/31-ai100-2006-surf.mp3",
-      "contentType": "audio/mpeg"
-    },
-    "usage": [
-      "storyline:bench-council-ai100"
-    ],
-    "editable": true
-  },
-  {
-    "id": "asset-ai100-2006-surf-audio-en-v1",
-    "type": "audio",
-    "role": "audio-narration",
-    "caption": {
-      "zh": "ai100-2006-surf 英文科普音频",
-      "en": "ai100-2006-surf English audio narration"
-    },
-    "subcaption": {
-      "zh": "英文原版科普讲述，供英文页面播放。",
-      "en": "Original English science narration used on the English page."
-    },
-    "sourceId": "source-eth-surf-paper-pdf",
-    "rights": {
-      "status": "project-produced",
-      "license": {
-        "zh": "本项目使用已授权语音合成服务制作。",
-        "en": "Produced by this project with an authorized text-to-speech service."
-      },
-      "usage": {
-        "zh": "用于本展览的事件科普音频播放。",
-        "en": "Used for event narration in this exhibition."
-      }
-    },
-    "language": "en",
-    "storage": {
-      "profileId": "ai-history-audio-releases",
-      "objectName": "ai100-2006-surf-en-v1.mp3",
-      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-en-original-v1-2026-08-09/audio/bench-council-ai100/storyline/en/31-ai100-2006-surf.mp3",
-      "contentType": "audio/mpeg"
-    },
-    "usage": [
-      "storyline:bench-council-ai100"
-    ],
-    "editable": true
-  }
+    {
+        "id": "asset-ai100-2006-surf-audio-en-v1",
+        "type": "audio",
+        "role": "audio-narration",
+        "caption": {
+            "zh": "ai100-2006-surf 英文科普音频",
+            "en": "ai100-2006-surf English audio narration"
+        },
+        "subcaption": {
+            "zh": "英文原版科普讲述，供英文页面播放。",
+            "en": "Original English science narration used on the English page."
+        },
+        "sourceId": "source-eth-surf-paper-pdf",
+        "rights": {
+            "status": "project-produced",
+            "license": {
+                "zh": "本项目使用已授权语音合成服务制作。",
+                "en": "Produced by this project with an authorized text-to-speech service."
+            },
+            "usage": {
+                "zh": "用于本展览的事件科普音频播放。",
+                "en": "Used for event narration in this exhibition."
+            }
+        },
+        "language": "en",
+        "storage": {
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2006-surf-en-v1.mp3",
+            "sourcePath": "resources/audio/generated/pronunciation-fixes/issue-98-pronunciation-release-en-v2-2026-09-16/audio/bench-council-ai100/storyline/en/31-ai100-2006-surf.mp3",
+            "contentType": "audio/mpeg"
+        },
+        "usage": ["storyline:bench-council-ai100"],
+        "editable": true
+    }
 ]
