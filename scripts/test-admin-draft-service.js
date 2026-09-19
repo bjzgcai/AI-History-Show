@@ -148,6 +148,49 @@ try {
         ]
     });
 
+    service.ensureInitialized();
+    const assetsBeforeRoundTrip = fs.readFileSync(workspacePath, 'utf8');
+    const roundTripAssets = readJson(workspacePath);
+    roundTripAssets.push({
+        id: 'asset-temporary',
+        path: '',
+        caption: {},
+        figureIds: [],
+        editable: true
+    });
+    writeJson(workspacePath, roundTripAssets);
+    service.noteFileChanged(relativePath);
+    assert.equal(service.status().summary.active, 1);
+
+    roundTripAssets.pop();
+    roundTripAssets[0] = Object.fromEntries(
+        Object.entries(roundTripAssets[0])
+            .reverse()
+            .concat([['sourceUrl', '']])
+    );
+    writeJson(workspacePath, roundTripAssets);
+    service.noteFileChanged(relativePath);
+    assert.equal(service.status().summary.active, 0);
+    assert.equal(service.hasDraft(), false);
+    assert.equal(fs.readFileSync(formalPath, 'utf8'), assetsBeforeRoundTrip);
+
+    service.ensureInitialized();
+    const changedAssets = readJson(workspacePath);
+    changedAssets[0].figureIds.push('person-new');
+    changedAssets[0] = Object.fromEntries(
+        Object.entries(changedAssets[0])
+            .reverse()
+            .concat([['sourceUrl', '']])
+    );
+    writeJson(workspacePath, changedAssets);
+    service.noteFileChanged(relativePath);
+    const normalizedChangedAssets = readJson(workspacePath);
+    assert.equal(normalizedChangedAssets[0].sourceUrl, undefined);
+    assert.deepEqual(Object.keys(normalizedChangedAssets[0]), Object.keys(baseline[0]));
+    assert.equal(service.status().summary.active, 1);
+    service.decideAll('discarded');
+    assert.deepEqual(readJson(formalPath), baseline);
+
     console.log('PASS Admin draft semantic array changes');
 } finally {
     fs.rmSync(temporaryRoot, { recursive: true, force: true });

@@ -60,8 +60,87 @@ function clone(value) {
     return value === undefined ? undefined : JSON.parse(JSON.stringify(value));
 }
 
+function isEmptyJsonValue(value) {
+    return (
+        value === null ||
+        value === '' ||
+        (Array.isArray(value) && value.length === 0) ||
+        (value &&
+            typeof value === 'object' &&
+            !Array.isArray(value) &&
+            Object.values(value).every((entry) => isEmptyJsonValue(entry)))
+    );
+}
+
+function semanticallyEqual(left, right) {
+    if (left === undefined || right === undefined) {
+        if (left === undefined && right === undefined) return true;
+        return isEmptyJsonValue(left === undefined ? right : left);
+    }
+    if (left === right) return true;
+    if (Array.isArray(left) || Array.isArray(right)) {
+        if (!Array.isArray(left) || !Array.isArray(right) || left.length !== right.length) return false;
+        return left.every((value, index) => semanticallyEqual(value, right[index]));
+    }
+    if (
+        left &&
+        right &&
+        typeof left === 'object' &&
+        typeof right === 'object' &&
+        !Array.isArray(left) &&
+        !Array.isArray(right)
+    ) {
+        const keys = new Set([...Object.keys(left), ...Object.keys(right)]);
+        return [...keys].every((key) => semanticallyEqual(left[key], right[key]));
+    }
+    return false;
+}
+
 function equal(left, right) {
-    return JSON.stringify(left) === JSON.stringify(right);
+    return semanticallyEqual(left, right);
+}
+
+function collectionIdentity(value) {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
+    for (const field of ['id', 'eventId', 'figureId']) {
+        if (typeof value[field] === 'string' && value[field]) return { field, value: value[field] };
+    }
+    return null;
+}
+
+// Keep the baseline's object-key order while removing only newly introduced empty values.
+function normalizeDraftValue(value, baseline, keepEmpty = baseline === undefined) {
+    if (Array.isArray(value)) {
+        const baselineItems = Array.isArray(baseline) ? baseline : [];
+        const baselineByIdentity = new Map();
+        for (const candidate of baselineItems) {
+            const identity = collectionIdentity(candidate);
+            if (identity) baselineByIdentity.set(`${identity.field}\0${identity.value}`, candidate);
+        }
+        return value.map((item, index) => {
+            const identity = collectionIdentity(item);
+            const matchingBaseline = identity
+                ? baselineByIdentity.get(`${identity.field}\0${identity.value}`)
+                : baselineItems[index];
+            return normalizeDraftValue(item, matchingBaseline, matchingBaseline === undefined);
+        });
+    }
+    if (value && typeof value === 'object') {
+        const baselineObject = baseline && typeof baseline === 'object' && !Array.isArray(baseline) ? baseline : {};
+        const keys = [
+            ...Object.keys(baselineObject).filter((key) => Object.prototype.hasOwnProperty.call(value, key)),
+            ...Object.keys(value).filter((key) => !Object.prototype.hasOwnProperty.call(baselineObject, key))
+        ];
+        const normalized = {};
+        for (const key of keys) {
+            const hasBaselineKey = Object.prototype.hasOwnProperty.call(baselineObject, key);
+            const nextValue = normalizeDraftValue(value[key], baselineObject[key], keepEmpty && !hasBaselineKey);
+            if (!keepEmpty && !hasBaselineKey && isEmptyJsonValue(nextValue)) continue;
+            normalized[key] = nextValue;
+        }
+        return normalized;
+    }
+    return value;
 }
 
 function itemKeyField(before, after) {
@@ -569,7 +648,12 @@ function createAdminDraftService(root) {
         const activeChanges = changesForManifest(manifest);
         const activeFiles = new Set(activeChanges.map((change) => change.file));
         for (const relativePath of Object.keys(manifest.files)) {
-            if (!activeFiles.has(relativePath)) delete manifest.files[relativePath];
+            if (activeFiles.has(relativePath)) continue;
+            const baselinePath = path.join(baselineRoot, relativePath);
+            const workspacePath = path.join(workspaceRoot, relativePath);
+            if (fs.existsSync(baselinePath)) atomicWrite(workspacePath, fs.readFileSync(baselinePath));
+            else fs.rmSync(workspacePath, { force: true });
+            delete manifest.files[relativePath];
         }
         const activeIds = new Set(activeChanges.map((change) => change.id));
         for (const id of Object.keys(manifest.decisions)) {
@@ -595,6 +679,7 @@ function createAdminDraftService(root) {
 
     function noteFileChanged(relativePath) {
         ensureInitialized();
+        normalizeWorkspaceFile(relativePath);
         const manifest = readManifest();
         if (!manifest.files[relativePath]) {
             manifest.files[relativePath] = {
@@ -605,6 +690,18 @@ function createAdminDraftService(root) {
         }
         pruneManifest();
         return status();
+    }
+
+    function normalizeWorkspaceFile(relativePath) {
+        const workspacePath = path.join(workspaceRoot, relativePath);
+        if (!fs.existsSync(workspacePath) || !relativePath.endsWith('.json')) return;
+        const baselinePath = path.join(baselineRoot, relativePath);
+        const value = readJson(workspacePath);
+        const baseline = fs.existsSync(baselinePath) ? readJson(baselinePath) : undefined;
+        atomicWrite(
+            workspacePath,
+            `${JSON.stringify(normalizeDraftValue(value, baseline, baseline === undefined), null, 2)}\n`
+        );
     }
 
     function trackResource(relativePath) {
