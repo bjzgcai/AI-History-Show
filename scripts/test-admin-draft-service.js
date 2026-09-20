@@ -28,6 +28,8 @@ try {
     const deletedFormalPath = path.join(temporaryRoot, deletedRelativePath);
     const storylineRelativePath = 'archive/storylines/test-storyline.json';
     const storylineFormalPath = path.join(temporaryRoot, storylineRelativePath);
+    const missingOrderStorylineRelativePath = 'archive/storylines/missing-order-storyline.json';
+    const missingOrderStorylineFormalPath = path.join(temporaryRoot, missingOrderStorylineRelativePath);
     const baseline = [
         { id: 'asset-a', figureIds: ['person-a', 'person-b', 'person-c'] },
         { id: 'asset-b', figureIds: [] }
@@ -40,6 +42,10 @@ try {
             { eventId: 'event-a', order: 10 },
             { eventId: 'event-b', order: 20 }
         ]
+    });
+    writeJson(missingOrderStorylineFormalPath, {
+        id: 'missing-order-storyline',
+        events: [{ eventId: 'event-a' }, { eventId: 'event-b', order: 20 }]
     });
     fs.mkdirSync(path.join(temporaryRoot, 'resources'), { recursive: true });
 
@@ -147,6 +153,95 @@ try {
             { eventId: 'event-b', order: 20 }
         ]
     });
+
+    service.ensureInitialized();
+    writeJson(storylineWorkspacePath, {
+        id: 'test-storyline',
+        events: [
+            { eventId: 'event-new', order: 10 },
+            { eventId: 'event-a', order: 20 },
+            { eventId: 'event-b', order: 30 }
+        ]
+    });
+    service.noteFileChanged(storylineRelativePath);
+    status = service.status();
+    assert.equal(status.summary.active, 1);
+    assert.equal(status.active[0].operation, 'add-item');
+    service.decide(status.active[0].id, 'discarded');
+    assert.equal(service.status().summary.active, 0);
+    assert.deepEqual(readJson(storylineWorkspacePath), readJson(storylineFormalPath));
+
+    service.ensureInitialized();
+    writeJson(storylineWorkspacePath, {
+        id: 'test-storyline',
+        events: [{ eventId: 'event-b', order: 10 }]
+    });
+    service.noteFileChanged(storylineRelativePath);
+    status = service.status();
+    assert.equal(status.summary.active, 1);
+    assert.equal(status.active[0].operation, 'remove-item');
+    assert.doesNotMatch(status.active.map((change) => change.summary).join('\n'), /order/);
+    service.decide(status.active[0].id, 'discarded');
+    assert.equal(service.status().summary.active, 0);
+    assert.deepEqual(readJson(storylineWorkspacePath), readJson(storylineFormalPath));
+
+    service.ensureInitialized();
+    writeJson(storylineWorkspacePath, {
+        id: 'test-storyline',
+        events: [
+            { eventId: 'event-new-a', order: 10 },
+            { eventId: 'event-new-b', order: 20 },
+            { eventId: 'event-a', order: 30 },
+            { eventId: 'event-b', order: 40 }
+        ]
+    });
+    service.noteFileChanged(storylineRelativePath);
+    status = service.status();
+    assert.equal(status.summary.active, 2);
+    assert.ok(status.active.every((change) => change.operation === 'add-item'));
+    const firstAddedChange = status.active.find((change) => change.key === 'event-new-a');
+    service.decide(firstAddedChange.id, 'discarded');
+    status = service.status();
+    assert.equal(status.summary.active, 1);
+    assert.equal(status.active[0].key, 'event-new-b');
+    assert.doesNotMatch(status.active.map((change) => change.summary).join('\n'), /order/);
+    service.decide(status.active[0].id, 'discarded');
+    assert.equal(service.status().summary.active, 0);
+    assert.deepEqual(readJson(storylineWorkspacePath), readJson(storylineFormalPath));
+
+    service.ensureInitialized();
+    writeJson(storylineWorkspacePath, {
+        id: 'test-storyline',
+        events: [
+            { eventId: 'event-a', order: 99 },
+            { eventId: 'event-b', order: 20 }
+        ]
+    });
+    service.noteFileChanged(storylineRelativePath);
+    status = service.status();
+    assert.equal(status.summary.active, 1);
+    assert.equal(status.active[0].operation, 'replace');
+    assert.match(status.active[0].summary, /修改 order/);
+    service.decide(status.active[0].id, 'discarded');
+    assert.equal(service.status().summary.active, 0);
+
+    service.ensureInitialized();
+    const missingOrderStorylineWorkspacePath = path.join(service.workspaceRoot, missingOrderStorylineRelativePath);
+    writeJson(missingOrderStorylineWorkspacePath, {
+        id: 'missing-order-storyline',
+        events: [
+            { eventId: 'event-new', order: 10 },
+            { eventId: 'event-a', order: 20 },
+            { eventId: 'event-b', order: 30 }
+        ]
+    });
+    service.noteFileChanged(missingOrderStorylineRelativePath);
+    status = service.status();
+    assert.equal(status.summary.active, 1);
+    assert.equal(status.active[0].operation, 'add-item');
+    service.decide(status.active[0].id, 'discarded');
+    assert.equal(service.status().summary.active, 0);
+    assert.deepEqual(readJson(missingOrderStorylineWorkspacePath), readJson(missingOrderStorylineFormalPath));
 
     service.ensureInitialized();
     const assetsBeforeRoundTrip = fs.readFileSync(workspacePath, 'utf8');
