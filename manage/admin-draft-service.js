@@ -286,6 +286,16 @@ function changeDescription(relativePath, operation, tokens, before, after, metad
     };
 }
 
+function isStorylineEventOrderChange(change) {
+    return (
+        ['add', 'remove', 'replace'].includes(change.operation) &&
+        change.path.length === 3 &&
+        change.path[0] === 'events' &&
+        typeof change.path[1] !== 'string' &&
+        change.path[2] === 'order'
+    );
+}
+
 function makeChange(relativePath, operation, tokens, before, after, metadata = {}) {
     const stableKey = `${relativePath}\0${operation}\0${pathKey(tokens)}\0${metadata.keyField || ''}\0${metadata.key || ''}\0${JSON.stringify(metadata.value)}`;
     const id = createHash('sha1').update(stableKey).digest('hex').slice(0, 16);
@@ -413,16 +423,7 @@ function collapseDerivedChanges(relativePath, changes) {
             ['add-item', 'remove-item', 'reorder'].includes(change.operation)
     );
     if (!hasMembershipChange) return changes;
-    return changes.filter(
-        (change) =>
-            !(
-                change.operation === 'replace' &&
-                change.path.length === 3 &&
-                change.path[0] === 'events' &&
-                typeof change.path[1] !== 'string' &&
-                change.path[2] === 'order'
-            )
-    );
+    return changes.filter((change) => !isStorylineEventOrderChange(change));
 }
 
 function resolveParent(root, tokens) {
@@ -487,6 +488,32 @@ function revertChange(documentValue, change) {
     if (typeof token !== 'string') throw new Error(`Unsupported draft path for ${change.summary}`);
     if (change.before === undefined) delete parent[token];
     else parent[token] = clone(change.before);
+    return documentValue;
+}
+
+function rebuildStorylineDerivedOrder(documentValue, baselineValue) {
+    if (
+        !documentValue ||
+        !baselineValue ||
+        !Array.isArray(documentValue.events) ||
+        !Array.isArray(baselineValue.events)
+    ) {
+        return documentValue;
+    }
+    const documentIds = documentValue.events.map((item) => item && item.eventId);
+    const baselineIds = baselineValue.events.map((item) => item && item.eventId);
+    if (documentIds.length !== baselineIds.length || documentIds.some((id, index) => id !== baselineIds[index])) {
+        return documentValue;
+    }
+    const baselineById = new Map(baselineValue.events.map((item) => [item.eventId, item]));
+    documentValue.events = documentValue.events.map((item) => {
+        const baselineItem = baselineById.get(item.eventId);
+        if (!baselineItem) return item;
+        const nextItem = { ...item };
+        if (Object.hasOwn(baselineItem, 'order')) nextItem.order = clone(baselineItem.order);
+        else delete nextItem.order;
+        return nextItem;
+    });
     return documentValue;
 }
 
@@ -755,7 +782,17 @@ function createAdminDraftService(root) {
         } else {
             const workspacePath = path.join(workspaceRoot, change.file);
             const documentValue = fs.existsSync(workspacePath) ? readJson(workspacePath) : undefined;
-            const reverted = revertChange(documentValue, change);
+            let reverted = revertChange(documentValue, change);
+            if (
+                change.file.startsWith('archive/storylines/') &&
+                change.path.length === 1 &&
+                change.path[0] === 'events' &&
+                ['add-item', 'remove-item', 'reorder'].includes(change.operation)
+            ) {
+                const baselinePath = path.join(baselineRoot, change.file);
+                const baselineValue = fs.existsSync(baselinePath) ? readJson(baselinePath) : undefined;
+                reverted = rebuildStorylineDerivedOrder(reverted, baselineValue);
+            }
             if (reverted === undefined) fs.rmSync(workspacePath, { force: true });
             else atomicWrite(workspacePath, `${JSON.stringify(reverted, null, 2)}\n`);
             delete manifest.decisions[change.id];
