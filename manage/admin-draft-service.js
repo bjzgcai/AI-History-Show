@@ -844,7 +844,7 @@ function createAdminDraftService(root) {
             return expected !== fileRevision(path.join(root, relativePath));
         });
         if (conflicts.length) {
-            throw Object.assign(new Error(`正式 Json 已在草稿创建后发生变化：${conflicts.join('、')}`), {
+            throw Object.assign(new Error(`正式文件已在草稿创建后发生变化：${conflicts.join('、')}`), {
                 statusCode: 409
             });
         }
@@ -895,8 +895,9 @@ function createAdminDraftService(root) {
             throw error;
         }
         const origin = clone(manifest.origin) || null;
+        const changePoints = draftStatus.active.map((change) => clone(change));
         fs.rmSync(draftDirectory, { recursive: true, force: true });
-        return { ok: true, changedFiles, resources: manifest.stagedResources, origin };
+        return { ok: true, changedFiles, resources: manifest.stagedResources, origin, changePoints };
     }
 
     function reset() {

@@ -957,6 +957,11 @@ aside {
     font-weight: 750;
 }
 
+.history-rollback-hint {
+    margin: -4px 0 12px;
+    font-size: 12px;
+}
+
 .publish-history-intro {
     padding-bottom: 12px;
 }
@@ -1284,6 +1289,13 @@ aside {
     gap: 8px;
 }
 
+.storyline-overview-actions {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: flex-start;
+    gap: 12px;
+}
+
 .storyline-stat {
     display: grid;
     min-width: 76px;
@@ -1559,6 +1571,32 @@ aside {
 .structured-section {
     display: grid;
     gap: 14px;
+}
+
+.asset-type-nav {
+    display: flex;
+    gap: 8px;
+    margin: 0 0 16px;
+    padding: 4px;
+    border: 1px solid var(--line-soft);
+    border-radius: 8px;
+    background: #f4faf8;
+}
+
+.asset-type-nav button {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border-color: transparent;
+    background: transparent;
+    color: var(--muted);
+}
+
+.asset-type-nav button.is-active {
+    border-color: #b8d9d1;
+    background: #ffffff;
+    color: var(--accent);
+    box-shadow: 0 1px 2px rgb(19 67 59 / 8%);
 }
 
 .structured-section + .structured-section {
@@ -3667,6 +3705,12 @@ button.danger:hover:not(:disabled) {
 
     .storyline-overview-stats {
         width: 100%;
+    }
+
+    .storyline-overview-actions {
+        width: 100%;
+        align-items: stretch;
+        justify-content: space-between;
     }
 
     .storyline-event-manager {

@@ -28,7 +28,9 @@ module.exports = defineConfig({
         url: 'http://127.0.0.1:43118/admin',
         env: {
             ...process.env,
-            AI_HISTORY_ADMIN_TEST_ROOT: fixtureRoot
+            AI_HISTORY_ADMIN_TEST_ROOT: fixtureRoot,
+            ADMIN_GIT_DRY_RUN: 'true',
+            TEST_DISPLAY_URL: 'http://127.0.0.1:8000/'
         },
         reuseExistingServer: false,
         timeout: 120_000

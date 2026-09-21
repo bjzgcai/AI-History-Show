@@ -91,6 +91,10 @@ function uniqueObjects(values) {
     });
 }
 
+function escapeRegExp(value) {
+    return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 function mergeRelations(relations, sourceFigureId, targetFigureId) {
     const merged = [];
     for (const value of relations || []) {
@@ -1371,8 +1375,21 @@ function createArchiveFigureService(root) {
         const assetsFile = path.join(eventsDir, safeEventId, 'assets.json');
         if (!fs.existsSync(assetsFile)) throw createHttpError('Event assets.json not found', 404);
         const assets = readJson(assetsFile);
-        if (assets.some((asset) => asset.id === safeAssetId)) {
-            throw createHttpError(`Archive asset already exists: ${safeAssetId}`, 409);
+        const existingAsset = assets.find((asset) => asset.id === safeAssetId);
+        if (existingAsset) {
+            const existingPath = String(existingAsset.path || '').trim();
+            const generatedPlaceholderPattern = new RegExp(
+                `^resources/images/${escapeRegExp(safeEventId)}/${escapeRegExp(safeAssetId)}(?:-\\d+)?\\.[a-z0-9]+$`,
+                'i'
+            );
+            const existingFilePath =
+                existingPath && !/^https?:\/\//i.test(existingPath) ? path.join(root, existingPath) : '';
+            const isEmptyPlaceholder = !existingPath;
+            const isMissingGeneratedPlaceholder =
+                generatedPlaceholderPattern.test(existingPath) && !fs.existsSync(existingFilePath);
+            if (!isEmptyPlaceholder && !isMissingGeneratedPlaceholder) {
+                throw createHttpError(`Archive asset already exists: ${safeAssetId}`, 409);
+            }
         }
         const normalizedBase64 = String(imageBase64 || '')
             .replace(/^data:image\/[a-z0-9.+-]+;base64,/i, '')

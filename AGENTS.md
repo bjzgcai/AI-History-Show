@@ -6,7 +6,7 @@
 
 - **技术栈**: HTML5 + CSS3 + Vanilla JS + Three.js（3D地球）
 - **展示入口**: `index.html`（自适应展厅大屏/桌面/移动端）
-- **数据文件**: `milestones-data.js` 与 `milestones-data-default.js`（由 `npm run generate` 从 Archive JSON 同步生成，勿手动编辑）
+- **数据文件**: `milestones-data.js`（由 `npm run generate` 从 Archive JSON 生成）与 `milestones-data-default.js`（稳定 fallback，生成流程不会覆盖，勿手动编辑）
 
 ## 文件结构
 
@@ -14,7 +14,7 @@
 AI-History-Show/
 ├── index.html                    # 自适应展示入口
 ├── milestones-data.js            # Archive 生成的正式运行时数据
-├── milestones-data-default.js    # 同步生成的 fallback 数据
+├── milestones-data-default.js    # 稳定 fallback 数据，不由生成流程覆盖
 ├── archive/
 │   ├── storylines/               # Storyline 成员、variant、顺序和展示 ID
 │   └── events/                   # 事件事实、来源、资源、quiz 与 variants
@@ -40,11 +40,11 @@ Archive JSON 是生产内容权威。Admin 编辑操作先写入 `.tmp/admin-dra
 npm run start:admin
 
 # 后台支持结构化人物资料、事件人物关系、语义变更审阅与受控发布；
-# 高级 JSON 模式同样只编辑 Admin 草稿。
+# 高级Json（内部）同样只编辑 Admin 草稿。
 # 在发布管理应用到 Json 后，或直接维护 Archive source 后
 npm run validate:archive
 npm run generate
-# → 同步生成 milestones-data.js、milestones-data-default.js、首页/头像缩略图与缩略图清单
+# → 生成 milestones-data.js、首页/头像缩略图与缩略图清单；milestones-data-default.js 保持稳定 fallback
 ```
 
 `/admin` 是唯一管理入口。旧 `/archive-admin`、Legacy 数据模块、生成器、parity 与迁移/对比工具已经退役；旧管理 API 返回 HTTP 404。需要追溯旧实现时使用 Git 历史，不恢复为当前写作链路。

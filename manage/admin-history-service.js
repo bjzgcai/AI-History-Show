@@ -19,6 +19,37 @@ function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
+function clone(value) {
+    return value === undefined ? undefined : JSON.parse(JSON.stringify(value));
+}
+
+function normalizeChangePoint(change) {
+    const fields = [
+        'id',
+        'file',
+        'fileLabel',
+        'operation',
+        'action',
+        'group',
+        'objectId',
+        'summary',
+        'keyField',
+        'key',
+        'index',
+        'value',
+        'commonValues',
+        'beforeText',
+        'afterText'
+    ];
+    const normalized = {};
+    for (const field of fields) {
+        if (Object.prototype.hasOwnProperty.call(change, field)) {
+            normalized[field] = clone(change[field]);
+        }
+    }
+    return normalized;
+}
+
 function listJsonFiles(directory, prefix = '') {
     if (!fs.existsSync(directory)) return [];
     const files = [];
@@ -142,6 +173,8 @@ function createAdminHistoryService(root) {
         note = '',
         rollbackFromVersionId = '',
         changedFiles = [],
+        resourceFiles = [],
+        changePoints = [],
         skipIfUnchanged = false
     } = {}) {
         const entries = snapshotEntries(root);
@@ -159,6 +192,7 @@ function createAdminHistoryService(root) {
         const temporaryRoot = path.join(versionsRoot, `.${id}.${process.pid}.${randomUUID()}.tmp`);
         const previousEntries = previous ? entriesForVersion(previous.id) : [];
         const changes = previous ? compareSnapshots(previousEntries, entries) : [];
+        const normalizedChangePoints = changePoints.map(normalizeChangePoint);
         const totalBytes = entries.reduce((total, entry) => total + entry.bytes, 0);
         const rollbackTarget = rollbackFromVersionId ? readVersion(rollbackFromVersionId) : null;
         const rollbackExact = rollbackTarget ? rollbackTarget.dataHash === dataHash : null;
@@ -178,8 +212,11 @@ function createAdminHistoryService(root) {
             previousVersionId: previous?.id || '',
             rollbackFromVersionId: rollbackFromVersionId ? safeVersionId(rollbackFromVersionId) : '',
             rollbackExact,
+            changePointCount: normalizedChangePoints.length,
+            changePoints: normalizedChangePoints,
             changeCount: changes.length,
             changedFiles: [...new Set(changedFiles)].sort(),
+            resourceFiles: [...new Set(resourceFiles)].sort(),
             changes
         };
 
@@ -208,7 +245,7 @@ function createAdminHistoryService(root) {
         if (index.versions.length) return index.versions[index.versions.length - 1];
         return createVersion({
             action: 'initial',
-            note: '启用 Admin 历史版本时的正式 Json 基线'
+            note: '启用 Admin 历史版本时的正式内容文件基线'
         });
     }
 
@@ -216,7 +253,7 @@ function createAdminHistoryService(root) {
         ensureInitialVersion();
         return createVersion({
             action: 'external',
-            note: '记录 Admin 之外产生的正式 Json 变化',
+            note: '记录 Admin 之外产生的正式内容文件变化',
             skipIfUnchanged: true
         });
     }

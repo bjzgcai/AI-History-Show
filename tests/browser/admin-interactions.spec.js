@@ -2,6 +2,7 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
+const { URL } = require('node:url');
 const { test, expect } = require('@playwright/test');
 
 const projectRoot = path.resolve(__dirname, '../..');
@@ -43,7 +44,7 @@ async function keepAndApplyDraft(page) {
     await selectMode(page, 'publish');
     await expect(page.locator('#publishChangeSummary')).toContainText('未决');
     await expect(page.locator('#publishValidateBtn')).toBeDisabled();
-    await expect(page.locator('#publishApplyBtn')).toBeDisabled();
+    await expect(page.locator('#publishApplyValidateBtn')).toBeDisabled();
     await clickButton(page.locator('#keepAllDraftsBtn'));
     await expect(page.locator('#publishChangeSummary')).toContainText('未决 0');
     await clickButton(page.locator('#publishValidateBtn'));
@@ -51,68 +52,70 @@ async function keepAndApplyDraft(page) {
         timeout: 120_000
     });
     page.once('dialog', (dialog) => dialog.accept());
-    await clickButton(page.locator('#publishApplyBtn'));
-    await expect(page.locator('#publishOperationSummary')).toContainText('应用到 Json · 操作成功', {
+    await clickButton(page.locator('#publishApplyValidateBtn'));
+    await expect(page.locator('#publishOperationSummary')).toContainText('保存并校验 · 操作成功', {
         timeout: 120_000
     });
     await expect(page.locator('#publishChangeSummary')).toContainText('待处理 0 项');
 }
 
 test.describe.serial('Archive Admin button feedback and file linkage', () => {
-    test('test preview builds from kept drafts, opens automatically, and becomes stale after edits', async ({
-        page
-    }) => {
-        const eventPath = fixturePath('archive', 'events', '1956-dartmouth', 'event.json');
-        const runtimePath = fixturePath('milestones-data.js');
-        const originalSource = fs.readFileSync(eventPath, 'utf8');
-        const originalRuntime = fs.existsSync(runtimePath) ? fs.readFileSync(runtimePath, 'utf8') : null;
-        const original = JSON.parse(originalSource);
-        const previewTitle = `${original.defaultPresentation.displayTitle.zh} 测试预览`;
+    test('event and storyline display buttons open the corresponding presentation view', async ({ page }) => {
+        await openAdmin(page);
 
+        await loadEvent(page, '1956-dartmouth');
+        await expect(page.locator('#openEventDisplayBtn')).toBeEnabled();
+        const [eventPopup] = await Promise.all([
+            page.waitForEvent('popup'),
+            clickButton(page.locator('#openEventDisplayBtn'))
+        ]);
+        await expect.poll(() => new URL(eventPopup.url()).searchParams.get('uiMode')).toBe('detail');
+        const eventUrl = new URL(eventPopup.url());
+        expect(eventUrl.searchParams.get('event')).toMatch(/^milestone-/);
+        expect(eventUrl.searchParams.get('storyline')).toBeTruthy();
+        await eventPopup.close();
+
+        await selectMode(page, 'storylines');
+        const storylineCard = page.locator('#entityList [data-storyline-id]').first();
+        await clickButton(storylineCard);
+        await expect(page.locator('#storylineOverviewPanel')).toBeVisible();
+        const [storylinePopup] = await Promise.all([
+            page.waitForEvent('popup'),
+            clickButton(page.locator('#openStorylineDisplayBtn'))
+        ]);
+        const storylineUrl = new URL(storylinePopup.url());
+        expect(storylineUrl.searchParams.get('storyline')).toBeTruthy();
+        expect(storylineUrl.searchParams.get('uiMode')).toBeNull();
+        expect(storylineUrl.searchParams.get('event')).toBeNull();
+        await storylinePopup.close();
+    });
+
+    test('event title, summary, and description are edited from basic information', async ({ page }) => {
         await openAdmin(page);
         await loadEvent(page, '1956-dartmouth');
+
+        await expect(page.locator('[data-event-section="basic"]')).toHaveClass(/is-active/);
+        await expect(page.locator('[data-structured-field="defaultPresentation.displayTitle.zh"]')).toBeVisible();
+        await expect(page.locator('[data-structured-field="defaultPresentation.displaySummary.zh"]')).toBeVisible();
+        await expect(page.locator('[data-structured-field="defaultPresentation.displayDescription.zh"]')).toBeVisible();
+
         await clickButton(page.locator('[data-event-section="presentation"]'));
-        await page.locator('[data-structured-field="defaultPresentation.displayTitle.zh"]').fill(previewTitle);
-        await waitForDraft(page);
-        expect(fs.readFileSync(eventPath, 'utf8')).toBe(originalSource);
+        await expect(page.locator('[data-structured-field="defaultPresentation.displayTitle.zh"]')).toHaveCount(0);
+        await expect(page.locator('[data-structured-field="defaultPresentation.displaySummary.zh"]')).toHaveCount(0);
+        await expect(page.locator('[data-structured-field="defaultPresentation.displayDescription.zh"]')).toHaveCount(
+            0
+        );
+    });
 
+    test('test display is independent from the Admin service and no static bundle is required', async ({ page }) => {
+        await openAdmin(page);
         await selectMode(page, 'publish');
-        await clickButton(page.locator('#keepAllDraftsBtn'));
-        await expect(page.locator('#generateTestPreviewBtn')).toBeEnabled();
-        const popupPromise = page.waitForEvent('popup');
-        await clickButton(page.locator('#generateTestPreviewBtn'));
-        const previewPage = await popupPromise;
-        await expect(page.locator('#publishOperationSummary')).toContainText('生成测试预览 · 操作成功', {
-            timeout: 180_000
-        });
-        await previewPage.waitForLoadState('domcontentloaded');
-        await expect(previewPage).toHaveURL(/\/test-preview\/$/);
-        await expect(page.locator('#publishTestPreviewStatus')).toHaveText('可查看');
-        await expect(page.locator('#openTestPreview')).toBeVisible();
-        const previewRuntime = await page.request.get('/test-preview/milestones-data.js');
-        expect(previewRuntime.ok()).toBe(true);
-        expect(await previewRuntime.text()).toContain(previewTitle);
-        expect(fs.readFileSync(eventPath, 'utf8')).toBe(originalSource);
-        expect(fs.existsSync(fixturePath('.tmp', 'static-site'))).toBe(false);
-        expect(fs.existsSync(fixturePath('.tmp', 'admin-drafts', 'manifest.json'))).toBe(true);
-        if (originalRuntime === null) expect(fs.existsSync(runtimePath)).toBe(false);
-        else expect(fs.readFileSync(runtimePath, 'utf8')).toBe(originalRuntime);
-
-        await selectMode(page, 'events');
-        await loadEvent(page, '1956-dartmouth');
-        await clickButton(page.locator('[data-event-section="presentation"]'));
-        const englishTitle = page.locator('[data-structured-field="defaultPresentation.displayTitle.en"]');
-        await englishTitle.fill(`${await englishTitle.inputValue()} stale preview`);
-        await waitForDraft(page);
-        await selectMode(page, 'publish');
-        await expect(page.locator('#publishTestPreviewStatus')).toHaveText('已过期');
-        await expect(page.locator('#openTestPreview')).toBeHidden();
-
-        page.once('dialog', (dialog) => dialog.accept());
-        await clickButton(page.locator('#discardAllDraftsBtn'));
-        await expect(page.locator('#publishChangeSummary')).toContainText('待处理 0 项');
-        expect(fs.readFileSync(eventPath, 'utf8')).toBe(originalSource);
-        await previewPage.close();
+        await expect(page.locator('#openTestDisplay')).toBeVisible();
+        await expect(page.locator('#openTestDisplay')).toHaveAttribute('href', 'http://127.0.0.1:8000/');
+        await expect(page.locator('#publishBuildBtn')).toHaveCount(0);
+        const status = await page.evaluate(async () => (await fetch('/api/archive/publish-status')).json());
+        expect(status.testDisplay.url).toBe('http://127.0.0.1:8000/');
+        expect(status.bundle).toBeUndefined();
     });
 
     test('editing auto-saves a persistent draft and only publish management writes formal JSON', async ({ page }) => {
@@ -123,7 +126,7 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
 
         await openAdmin(page);
         await loadEvent(page, '1956-dartmouth');
-        await clickButton(page.locator('[data-event-section="presentation"]'));
+        await clickButton(page.locator('[data-event-section="basic"]'));
         const titleField = page.locator('[data-structured-field="defaultPresentation.displayTitle.zh"]');
         await expect(titleField).toHaveValue(originalTitle);
         await titleField.fill(savedTitle);
@@ -133,20 +136,157 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
         await page.reload();
         await expect(page.locator('#entityCount')).not.toHaveText('0');
         await loadEvent(page, '1956-dartmouth');
-        await clickButton(page.locator('[data-event-section="presentation"]'));
+        await clickButton(page.locator('[data-event-section="basic"]'));
         await expect(titleField).toHaveValue(savedTitle);
         expect(JSON.parse(fs.readFileSync(eventPath, 'utf8')).defaultPresentation.displayTitle.zh).toBe(originalTitle);
 
         await keepAndApplyDraft(page);
         expect(JSON.parse(fs.readFileSync(eventPath, 'utf8')).defaultPresentation.displayTitle.zh).toBe(savedTitle);
 
+        await expect(page.locator('#publishGenerateBtn')).toBeEnabled();
         page.once('dialog', (dialog) => dialog.accept());
         await clickButton(page.locator('#publishGenerateBtn'));
         await expect(page.locator('#publishOperationSummary')).toContainText('生成运行时数据 · 操作成功', {
             timeout: 120_000
         });
+        await expect(page.locator('#publishTestDisplayStatus')).toHaveText('已更新');
+        await expect(page.locator('#openTestDisplay')).toHaveAttribute('href', 'http://127.0.0.1:8000/');
+        await expect(page.locator('#publishTestDisplayConfirmBtn')).toBeEnabled();
         expect(fs.readFileSync(fixturePath('milestones-data.js'), 'utf8')).toContain(savedTitle);
-        expect(fs.readFileSync(fixturePath('milestones-data-default.js'), 'utf8')).toContain(savedTitle);
+        expect(fs.readFileSync(fixturePath('milestones-data-default.js'), 'utf8')).toEqual(
+            fs.readFileSync(path.join(projectRoot, 'milestones-data-default.js'), 'utf8')
+        );
+    });
+
+    test('saving a draft requires successful draft validation and preserves formal files on rejection', async ({
+        page
+    }) => {
+        const eventId = '1956-dartmouth';
+        const eventPath = fixturePath('archive', 'events', eventId, 'event.json');
+        const originalSource = fs.readFileSync(eventPath, 'utf8');
+        const fileResponse = await page.request.get(
+            `/api/archive/file?eventId=${eventId}&file=${encodeURIComponent('event.json')}`
+        );
+        const file = await fileResponse.json();
+        const changed = JSON.parse(JSON.stringify(file.data));
+        changed.defaultPresentation.displayTitle.zh = `${changed.defaultPresentation.displayTitle.zh} 未校验保存`;
+
+        try {
+            const draftResponse = await page.request.post('/api/archive/file', {
+                data: {
+                    type: 'events',
+                    eventId,
+                    file: 'event.json',
+                    data: changed,
+                    expectedRevision: file.revision
+                }
+            });
+            expect(draftResponse.ok()).toBe(true);
+            const decisionResponse = await page.request.post('/api/archive/draft-decision', {
+                data: { all: true, decision: 'kept' }
+            });
+            expect(decisionResponse.ok()).toBe(true);
+
+            const saveResponse = await page.request.post('/api/archive/draft-apply');
+            expect(saveResponse.status()).toBe(409);
+            expect(await saveResponse.json()).toEqual({ error: '请先校验保留变更，校验通过后才能保存文件' });
+            expect(fs.readFileSync(eventPath, 'utf8')).toBe(originalSource);
+        } finally {
+            await page.request.post('/api/archive/draft-reset');
+        }
+    });
+
+    test('publish steps cannot be skipped and each successful step enables the next one', async ({ page }) => {
+        const eventPath = fixturePath('archive', 'events', '1956-dartmouth', 'event.json');
+        const original = readJson('archive', 'events', '1956-dartmouth', 'event.json');
+        const changedTitle = `${original.defaultPresentation.displayTitle.zh} 流程依赖测试`;
+
+        await openAdmin(page);
+        await loadEvent(page, '1956-dartmouth');
+        await clickButton(page.locator('[data-event-section="basic"]'));
+        await page.locator('[data-structured-field="defaultPresentation.displayTitle.zh"]').fill(changedTitle);
+        await waitForDraft(page);
+        await selectMode(page, 'publish');
+        await clickButton(page.locator('#keepAllDraftsBtn'));
+
+        await expect(page.locator('#publishApplyValidateBtn')).toBeDisabled();
+        await expect(page.locator('#publishValidateBtn')).toBeEnabled();
+        await clickButton(page.locator('#publishValidateBtn'));
+        await expect(page.locator('#publishOperationSummary')).toContainText('校验保留变更 · 操作成功', {
+            timeout: 120_000
+        });
+        await expect(page.locator('#publishApplyValidateBtn')).toBeEnabled();
+
+        const applyAndValidate = await page.request.post('/api/archive/draft-apply-validate');
+        expect(applyAndValidate.ok()).toBe(true);
+        expect((await applyAndValidate.json()).steps.map((step) => step.name)).toEqual([
+            'draft-validate',
+            'apply-validate'
+        ]);
+        const prematureGeneration = await page.request.post('/api/archive/publish-generate');
+        expect(prematureGeneration.ok()).toBe(true);
+
+        const prematureSubmit = await page.request.post('/api/archive/submit-github');
+        expect(prematureSubmit.ok()).toBe(true);
+        const readyStatus = await page.request.get('/api/archive/publish-status');
+        expect((await readyStatus.json()).workflow.runtimeGeneration.ready).toBe(true);
+        const confirmResponse = await page.request.post('/api/archive/test-display-confirm');
+        expect(confirmResponse.ok()).toBe(true);
+        expect(
+            (await (await page.request.get('/api/archive/publish-status')).json()).workflow.testDisplayConfirmation
+                .ready
+        ).toBe(true);
+        expect(JSON.parse(fs.readFileSync(eventPath, 'utf8')).defaultPresentation.displayTitle.zh).toBe(changedTitle);
+    });
+
+    test('undo last change creates a rollback draft without changing formal files', async ({ page }) => {
+        const eventPath = fixturePath('archive', 'events', '1956-dartmouth', 'event.json');
+        const originalSource = fs.readFileSync(eventPath, 'utf8');
+        await openAdmin(page);
+        await selectMode(page, 'publish');
+        const response = await page.request.post('/api/archive/undo-last-change');
+        expect(response.ok()).toBe(true);
+        const result = await response.json();
+        expect(result.targetVersion.id).toBe(result.fromVersion.previousVersionId);
+        expect(fs.readFileSync(eventPath, 'utf8')).toBe(originalSource);
+        const status = await (await page.request.get('/api/archive/publish-status')).json();
+        expect(status.draft.summary.active).toBeGreaterThan(0);
+        await page.request.post('/api/archive/draft-reset');
+    });
+
+    test('failed saved validation clears old readiness and blocks generation', async ({ page }) => {
+        const eventPath = fixturePath('archive', 'events', '1956-dartmouth', 'event.json');
+        const originalSource = fs.readFileSync(eventPath, 'utf8');
+
+        await openAdmin(page);
+        await selectMode(page, 'publish');
+        expect((await (await page.request.post('/api/archive/publish-validate')).json()).ok).toBe(true);
+        expect((await (await page.request.post('/api/archive/publish-generate')).json()).ok).toBe(true);
+        expect(
+            (await (await page.request.get('/api/archive/publish-status')).json()).workflow.savedValidation.ready
+        ).toBe(true);
+
+        const invalidEvent = JSON.parse(originalSource);
+        invalidEvent.id = 'invalid-after-saved-validation';
+        fs.writeFileSync(eventPath, `${JSON.stringify(invalidEvent, null, 2)}\n`, 'utf8');
+        try {
+            const validationResponse = await page.request.post('/api/archive/publish-validate');
+            expect(validationResponse.ok()).toBe(true);
+            expect((await validationResponse.json()).ok).toBe(false);
+
+            const status = await (await page.request.get('/api/archive/publish-status')).json();
+            expect(status.workflow.savedValidation.ready).toBe(false);
+            expect(status.workflow.githubSubmission.ready).toBe(false);
+            const generationResponse = await page.request.post('/api/archive/publish-generate');
+            expect(generationResponse.status()).toBe(409);
+            expect(await generationResponse.json()).toEqual({
+                error: '请先完成“生效前先校验”，校验当前已保存的文件后才能生成运行时数据'
+            });
+        } finally {
+            fs.writeFileSync(eventPath, originalSource, 'utf8');
+            await page.request.post('/api/archive/publish-validate');
+            await page.request.post('/api/archive/publish-generate');
+        }
     });
 
     test('history versions create reviewable rollback drafts and retain resource files', async ({ page }) => {
@@ -163,7 +303,7 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
 
         await selectMode(page, 'events');
         await loadEvent(page, '1956-dartmouth');
-        await clickButton(page.locator('[data-event-section="presentation"]'));
+        await clickButton(page.locator('[data-event-section="basic"]'));
         await page.locator('[data-structured-field="defaultPresentation.displayTitle.zh"]').fill(changedTitle);
         await waitForDraft(page);
         await keepAndApplyDraft(page);
@@ -174,6 +314,13 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
 
         await clickButton(page.locator('#publishHistoryTab'));
         await expect(page.locator('#publishHistoryPane')).toBeVisible();
+        await expect(page.locator('#historyVersionList .history-version-item').first()).toContainText('1 个业务变更');
+        await expect(page.locator('#historyChangeList')).toContainText('修改 zh');
+        await expect(page.locator('#historyChangeList')).not.toContainText('event.json');
+        await expect(page.locator('#createRollbackDraftBtn')).toBeDisabled();
+        await expect(page.locator('#historyRollbackHint')).toHaveText(
+            '当前已是正式版本，无需回滚；请选择较早的历史版本。'
+        );
         await expect(page.locator('#historyVersionList .history-version-item')).toHaveCount(
             initialHistory.versions.length + 1
         );
@@ -212,7 +359,7 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
 
         await openAdmin(page);
         await loadEvent(page, '1956-dartmouth');
-        await clickButton(page.locator('[data-event-section="presentation"]'));
+        await clickButton(page.locator('[data-event-section="basic"]'));
         await page
             .locator('[data-structured-field="defaultPresentation.displayTitle.zh"]')
             .fill(`${formalTitles.zh} 待放弃`);
@@ -250,7 +397,39 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
         expect(JSON.parse(fs.readFileSync(eventPath, 'utf8')).defaultPresentation.displayTitle).toEqual(formalTitles);
     });
 
-    test('publish preparation stops after validation failure', async ({ page }) => {
+    test('one-click save changes keeps non-discarded changes and completes steps one through three', async ({
+        page
+    }) => {
+        const eventPath = fixturePath('archive', 'events', '1956-dartmouth', 'event.json');
+        const original = readJson('archive', 'events', '1956-dartmouth', 'event.json');
+        const changedTitle = `${original.defaultPresentation.displayTitle.zh} 一键保存测试`;
+
+        await openAdmin(page);
+        await loadEvent(page, '1956-dartmouth');
+        await clickButton(page.locator('[data-event-section="basic"]'));
+        await page.locator('[data-structured-field="defaultPresentation.displayTitle.zh"]').fill(changedTitle);
+        await waitForDraft(page);
+        await selectMode(page, 'publish');
+
+        await expect(page.locator('#saveChangesBtn')).toBeEnabled();
+        page.once('dialog', (dialog) => dialog.accept());
+        await clickButton(page.locator('#saveChangesBtn'));
+        await expect(page.locator('#publishOperationSummary')).toContainText('一键保存变更 · 操作成功', {
+            timeout: 120_000
+        });
+        await expect(page.locator('#publishOperationSteps .publish-operation-step')).toHaveCount(3);
+        await expect(page.locator('#publishOperationSteps')).toContainText('处理变更');
+        await expect(page.locator('#publishOperationSteps')).toContainText('保存并校验');
+        await expect(page.locator('#publishOperationSteps')).toContainText('生成运行时数据');
+        await expect(page.locator('#publishChangeSummary')).toContainText('待处理 0 项');
+        await expect(page.locator('#publishGenerateBtn')).toBeDisabled();
+        expect(readJson('archive', 'events', '1956-dartmouth', 'event.json').defaultPresentation.displayTitle.zh).toBe(
+            changedTitle
+        );
+        expect(fs.readFileSync(eventPath, 'utf8')).toContain(changedTitle);
+    });
+
+    test('one-click submission stops after validation failure', async ({ page }) => {
         const eventPath = fixturePath('archive', 'events', '1956-dartmouth', 'event.json');
         const originalSource = fs.readFileSync(eventPath, 'utf8');
         const invalidEvent = JSON.parse(originalSource);
@@ -262,7 +441,7 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
             await selectMode(page, 'publish');
             page.once('dialog', (dialog) => dialog.accept());
             await clickButton(page.locator('#preparePublishBtn'));
-            await expect(page.locator('#publishOperationSummary')).toContainText('准备发布 · 操作失败', {
+            await expect(page.locator('#publishOperationSummary')).toContainText('一键提交 GitHub · 操作失败', {
                 timeout: 180_000
             });
             const steps = page.locator('#publishOperationSteps .publish-operation-step');
@@ -275,13 +454,52 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
         }
     });
 
+    test('one-click submission follows validation, generation, and GitHub submission order', async ({ page }) => {
+        const original = readJson('archive', 'events', '1956-dartmouth', 'event.json');
+        const preparedTitle = `${original.defaultPresentation.displayTitle.zh} 一键提交测试`;
+
+        await openAdmin(page);
+        await loadEvent(page, '1956-dartmouth');
+        await clickButton(page.locator('[data-event-section="basic"]'));
+        await page.locator('[data-structured-field="defaultPresentation.displayTitle.zh"]').fill(preparedTitle);
+        await waitForDraft(page);
+        await selectMode(page, 'publish');
+        await expect(page.locator('#preparePublishBtn')).toBeEnabled();
+
+        page.once('dialog', (dialog) => dialog.accept());
+        await clickButton(page.locator('#preparePublishBtn'));
+        await expect(page.locator('#publishOperationSummary')).toContainText('一键提交 GitHub · 操作成功', {
+            timeout: 180_000
+        });
+        await expect(page.locator('#publishOperationSteps .publish-operation-step')).toHaveCount(4);
+        await expect(page.locator('#publishOperationSteps')).toContainText('处理变更');
+        await expect(page.locator('#publishOperationSteps')).toContainText('保存并校验');
+        await expect(page.locator('#publishOperationSteps')).toContainText('生成运行时数据');
+        await expect(page.locator('#publishOperationSteps')).toContainText('提交 GitHub');
+        await expect(page.locator('#publishOperationSteps')).toContainText('测试模式：未执行 Git commit 或 push');
+    });
+
+    test('one-click submission without a draft uses saved content and excludes fallback files', async ({ page }) => {
+        await openAdmin(page);
+        await selectMode(page, 'publish');
+        const response = await page.request.post('/api/archive/prepare-submit');
+        expect(response.ok()).toBe(true);
+        const result = await response.json();
+        expect(result.steps.map((step) => step.name)).toEqual(['validate', 'generate', 'submit']);
+        expect(result.steps.every((step) => step.ok)).toBe(true);
+        const submitStep = result.steps.find((step) => step.name === 'submit');
+        expect(submitStep.files).toContain('milestones-data.js');
+        expect(submitStep.files).not.toContain('milestones-data-default.js');
+        expect(submitStep.files.some((file) => file.startsWith('manage/'))).toBe(false);
+    });
+
     test('formal JSON revision conflicts block draft application', async ({ page }) => {
         const eventPath = fixturePath('archive', 'events', '1956-dartmouth', 'event.json');
         const originalSource = fs.readFileSync(eventPath, 'utf8');
 
         await openAdmin(page);
         await loadEvent(page, '1956-dartmouth');
-        await clickButton(page.locator('[data-event-section="presentation"]'));
+        await clickButton(page.locator('[data-event-section="basic"]'));
         const titleField = page.locator('[data-structured-field="defaultPresentation.displayTitle.en"]');
         await titleField.fill(`${await titleField.inputValue()} conflict draft`);
         await waitForDraft(page);
@@ -289,17 +507,23 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
         fs.writeFileSync(eventPath, originalSource.replace(/\n$/, ' \n'), 'utf8');
 
         await selectMode(page, 'publish');
-        await expect(page.locator('#publishApplyBtn')).toBeDisabled();
+        await expect(page.locator('#publishApplyValidateBtn')).toBeDisabled();
         await clickButton(page.locator('#keepAllDraftsBtn'));
-        await expect(page.locator('#publishApplyBtn')).toBeEnabled();
-        page.once('dialog', (dialog) => dialog.accept());
-        await clickButton(page.locator('#publishApplyBtn'));
-        await expect(page.locator('#publishOperationSummary')).toContainText('应用到 Json · 操作失败', {
+        await expect(page.locator('#publishValidateBtn')).toBeEnabled();
+        await clickButton(page.locator('#publishValidateBtn'));
+        await expect(page.locator('#publishOperationSummary')).toContainText('校验保留变更 · 操作成功', {
             timeout: 120_000
         });
-        await expect(page.locator('#publishOperationSteps')).toContainText('正式 Json 已在草稿创建后发生变化');
+        await expect(page.locator('#publishApplyValidateBtn')).toBeEnabled();
+        page.once('dialog', (dialog) => dialog.accept());
+        await clickButton(page.locator('#publishApplyValidateBtn'));
+        await expect(page.locator('#publishOperationSummary')).toContainText('保存并校验 · 操作失败', {
+            timeout: 120_000
+        });
+        await expect(page.locator('#publishOperationSteps')).toContainText('正式文件已在草稿创建后发生变化');
 
         fs.writeFileSync(eventPath, originalSource, 'utf8');
+        await expect(page.locator('#discardAllDraftsBtn')).toBeEnabled();
         page.once('dialog', (dialog) => dialog.accept());
         await clickButton(page.locator('#discardAllDraftsBtn'));
         await expect(page.locator('#publishChangeSummary')).toContainText('待处理 0 项');
@@ -312,18 +536,6 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
             projectRoot,
             'resources/images/_thumbs/humanistic-cycle/humanistic-2025-iit-ai/giulio-tononi-nih-portrait.jpg.webp'
         );
-        const importResponse = await page.request.post('/api/archive/event-image', {
-            data: {
-                eventId,
-                assetId,
-                imageBase64: fs.readFileSync(imageSource).toString('base64')
-            }
-        });
-        expect(importResponse.ok()).toBe(true);
-        const imported = await importResponse.json();
-        const formalImagePath = fixturePath(...imported.path.split('/'));
-        expect(fs.existsSync(formalImagePath)).toBe(false);
-
         const draftAssetsResponse = await page.request.get(
             `/api/archive/file?eventId=${eventId}&file=${encodeURIComponent('assets.json')}`
         );
@@ -332,7 +544,7 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
         draftAssets.data.push({
             id: assetId,
             type: 'image',
-            path: imported.path,
+            path: `resources/images/${eventId}/${assetId}.png`,
             role: 'historical',
             caption: { en: 'Admin staged image', zh: '后台暂存图片' },
             subcaption: { en: 'Admin staging test.', zh: '后台暂存测试。' },
@@ -351,6 +563,39 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
             }
         });
         expect(saveResponse.ok()).toBe(true);
+
+        const importResponse = await page.request.post('/api/archive/event-image', {
+            data: {
+                eventId,
+                assetId,
+                imageBase64: fs.readFileSync(imageSource).toString('base64')
+            }
+        });
+        expect(importResponse.ok()).toBe(true);
+        const imported = await importResponse.json();
+        const formalImagePath = fixturePath(...imported.path.split('/'));
+        expect(fs.existsSync(formalImagePath)).toBe(false);
+        expect(
+            (await (await page.request.get('/api/archive/publish-status')).json()).draft.summary.stagedResources
+        ).toBe(1);
+
+        const importedDraftAssetsResponse = await page.request.get(
+            `/api/archive/file?eventId=${eventId}&file=${encodeURIComponent('assets.json')}`
+        );
+        const importedDraftAssets = await importedDraftAssetsResponse.json();
+        const importedAsset = importedDraftAssets.data.find((asset) => asset.id === assetId);
+        importedAsset.path = imported.path;
+        const importedAssetSaveResponse = await page.request.post('/api/archive/file', {
+            data: {
+                type: 'events',
+                eventId,
+                file: 'assets.json',
+                data: importedDraftAssets.data,
+                expectedRevision: importedDraftAssets.revision
+            }
+        });
+        expect(importedAssetSaveResponse.ok()).toBe(true);
+
         expect(readJson('archive', 'events', eventId, 'assets.json').some((asset) => asset.id === assetId)).toBe(false);
         expect(fs.existsSync(formalImagePath)).toBe(false);
 
@@ -513,6 +758,58 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
         page.once('dialog', (dialog) => dialog.accept());
         await clickButton(page.locator('#discardAllDraftsBtn'));
         await expect(page.locator('#publishChangeSummary')).toContainText('待处理 0 项');
+    });
+
+    test('linking an existing figure image lists all events when no event filter is selected', async ({ page }) => {
+        const figureId = 'frank-rosenblatt';
+        const eventId = '1957-perceptron';
+
+        await openAdmin(page);
+        await selectMode(page, 'figures');
+        await page.locator('#entitySearch').fill(figureId);
+        await clickButton(page.locator(`#entityList button[data-id="${figureId}"]`));
+        await expect(page.locator('#status')).toHaveText('内容已加载');
+        await clickButton(page.locator('[data-figure-section="assets"]'));
+        await clickButton(page.locator('#openExistingFigureImageBtn'));
+        await expect(page.locator('#existingFigureImageDialog')).toBeVisible();
+        await expect(page.locator('#existingImageEvent')).toHaveValue('');
+        const availableEventIds = await page
+            .locator('#existingImageEvent option')
+            .evaluateAll((options) => options.map((option) => option.value).filter(Boolean));
+        const eligibleAssetsByEvent = new Map();
+        for (const availableEventId of availableEventIds) {
+            const assetsFile = fixturePath('archive', 'events', availableEventId, 'assets.json');
+            if (!fs.existsSync(assetsFile)) continue;
+            const assets = readJson('archive', 'events', availableEventId, 'assets.json');
+            const eligible = assets.filter(
+                (asset) =>
+                    asset.type === 'image' &&
+                    asset.path &&
+                    !(Array.isArray(asset.figureIds) && asset.figureIds.includes(figureId))
+            );
+            if (eligible.length) eligibleAssetsByEvent.set(availableEventId, eligible);
+        }
+        const expectedOptionValues = [
+            ...new Set(
+                [...eligibleAssetsByEvent.entries()].flatMap(([availableEventId, assets]) =>
+                    assets.map((asset) => `${availableEventId}::${asset.id}`)
+                )
+            )
+        ];
+        const allEligibleCount = expectedOptionValues.length;
+        const targetAssets = eligibleAssetsByEvent.get(eventId) || [];
+        expect(targetAssets.length).toBeGreaterThan(0);
+        await expect(page.locator('#existingImageAsset option')).toHaveCount(allEligibleCount);
+        const optionValues = await page
+            .locator('#existingImageAsset option')
+            .evaluateAll((options) => options.map((option) => option.value));
+        expect(optionValues).toContain(`${eventId}::${targetAssets[0].id}`);
+
+        await page.locator('#existingImageEvent').selectOption(eventId);
+        await expect(page.locator('#existingImageAsset option')).toHaveCount(
+            new Set(targetAssets.map((asset) => asset.id)).size
+        );
+        await clickButton(page.locator('#cancelExistingFigureImageBtn'));
     });
 
     test('new figure and profile source buttons give feedback, focus the new card, and save the registry', async ({

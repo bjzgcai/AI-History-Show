@@ -15,6 +15,7 @@ const { URL } = require('node:url');
 const { createAdminDraftService } = require('./admin-draft-service');
 const { createAdminHistoryService } = require('./admin-history-service');
 const { createArchiveFigureService } = require('./archive-figure-service');
+const { createAdminGitService } = require('./admin-git-service');
 const {
     presentationIdForRef,
     resolveEffectivePresentation,
@@ -25,16 +26,15 @@ const HOST = process.env.HOST || '127.0.0.1';
 const PORT = Number(process.env.PORT || 3001);
 const APP_ROOT = path.resolve(__dirname, '..');
 const ROOT = path.resolve(process.env.AI_HISTORY_ARCHIVE_ROOT || APP_ROOT);
-const STATIC_SITE_OUTPUT = path.join(ROOT, '.tmp', 'static-site');
-const STATIC_BUILD_META = path.join(ROOT, '.tmp', 'static-site-build.json');
 const ARCHIVE_GENERATION_META = path.join(ROOT, '.tmp', 'archive-generation.json');
-const TEST_PREVIEW_OUTPUT = path.join(ROOT, '.tmp', 'admin-test-preview');
-const TEST_PREVIEW_META = path.join(ROOT, '.tmp', 'admin-test-preview.json');
+const PUBLISH_STATE_META = path.join(ROOT, '.tmp', 'admin-publish-state.json');
+const TEST_DISPLAY_PORT = Number(process.env.TEST_DISPLAY_PORT || 8000);
 const MAX_BODY_BYTES = 15 * 1024 * 1024;
 const MAX_REMOTE_IMAGE_BYTES = 10 * 1024 * 1024;
 const REMOTE_IMAGE_TIMEOUT_MS = 15000;
 const draftService = createAdminDraftService(ROOT);
 const historyService = createAdminHistoryService(ROOT);
+const gitService = createAdminGitService(ROOT);
 let activeArchiveCommand = '';
 
 function activeContentRoot() {
@@ -706,137 +706,199 @@ function readMetadataFile(filePath) {
     }
 }
 
-function ensureDraftPreviewInputs() {
-    for (const name of ['.nojekyll', 'index.html', 'shared', 'public']) {
-        const source = path.join(ROOT, name);
-        const destination = path.join(draftService.workspaceRoot, name);
-        if (fs.existsSync(destination)) continue;
-        if (!fs.existsSync(source)) throw new Error(`测试预览缺少必需文件：${name}`);
-        fs.symlinkSync(source, destination, fs.statSync(source).isDirectory() ? 'dir' : 'file');
+function listArchiveJsonFiles(directory, prefix = '') {
+    if (!fs.existsSync(directory)) return [];
+    const files = [];
+    for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+        const relativePath = prefix ? `${prefix}/${entry.name}` : entry.name;
+        const filePath = path.join(directory, entry.name);
+        if (entry.isDirectory()) files.push(...listArchiveJsonFiles(filePath, relativePath));
+        else if (entry.isFile() && entry.name.endsWith('.json')) files.push(relativePath);
+    }
+    return files.sort();
+}
+
+function archiveRevision() {
+    const archiveRoot = path.join(ROOT, 'archive');
+    const hash = createHash('sha256');
+    for (const relativePath of listArchiveJsonFiles(archiveRoot)) {
+        hash.update(relativePath);
+        hash.update('\0');
+        hash.update(fs.readFileSync(path.join(archiveRoot, relativePath)));
+        hash.update('\0');
+    }
+    return hash.digest('hex');
+}
+
+function readPublishState() {
+    return {
+        draftValidatedFingerprint: '',
+        savedValidatedRevision: '',
+        savedValidatedAt: null,
+        generatedArchiveRevision: '',
+        generatedAt: null,
+        submittedArchiveRevision: '',
+        submittedAt: null,
+        submittedCommit: '',
+        submittedRemote: '',
+        submittedBranch: '',
+        testDisplayConfirmedRevision: '',
+        testDisplayConfirmedAt: null,
+        ...(readMetadataFile(PUBLISH_STATE_META) || {})
+    };
+}
+
+function writePublishState(updates) {
+    const next = { ...readPublishState(), ...updates };
+    atomicWrite(PUBLISH_STATE_META, `${JSON.stringify(next, null, 2)}\n`);
+    return next;
+}
+
+function invalidatePublishedArtifacts() {
+    return writePublishState({
+        draftValidatedFingerprint: '',
+        savedValidatedRevision: '',
+        savedValidatedAt: null,
+        generatedArchiveRevision: '',
+        generatedAt: null,
+        submittedArchiveRevision: '',
+        submittedAt: null,
+        submittedCommit: '',
+        submittedRemote: '',
+        submittedBranch: '',
+        testDisplayConfirmedRevision: '',
+        testDisplayConfirmedAt: null
+    });
+}
+
+function normalizeDisplayUrl(value) {
+    const url = String(value || '').trim();
+    if (!url) return '';
+    return url.endsWith('/') ? url : `${url}/`;
+}
+
+function testDisplayUrl(req) {
+    const configured = normalizeDisplayUrl(process.env.TEST_DISPLAY_URL);
+    if (configured) return configured;
+    const requestHost = String(req?.headers?.host || '').split(':')[0] || '127.0.0.1';
+    const protocol = process.env.TEST_DISPLAY_PROTOCOL || 'http';
+    return `${protocol}://${requestHost}:${TEST_DISPLAY_PORT}/`;
+}
+
+async function getGitStatus() {
+    if (process.env.ADMIN_GIT_DRY_RUN === 'true') {
+        return {
+            available: true,
+            remote: process.env.ADMIN_GIT_REMOTE || 'origin',
+            remoteUrl: 'dry-run://github-submit',
+            branch: process.env.ADMIN_GIT_BRANCH || 'admin-test',
+            files: []
+        };
+    }
+    try {
+        const context = await gitService.context();
+        const files = await gitService.status(['archive', 'resources', 'milestones-data.js']);
+        return { available: true, ...context, files };
+    } catch (error) {
+        return { available: false, error: error.message };
     }
 }
 
-function replaceDirectory(source, destination) {
-    const parent = path.dirname(destination);
-    const incoming = path.join(parent, `${path.basename(destination)}.${process.pid}.${randomUUID()}.incoming`);
-    const previous = path.join(parent, `${path.basename(destination)}.${process.pid}.${randomUUID()}.previous`);
-    fs.mkdirSync(parent, { recursive: true });
-    try {
-        fs.renameSync(source, incoming);
-    } catch (error) {
-        if (error.code !== 'EXDEV') throw error;
-        fs.cpSync(source, incoming, { recursive: true, dereference: true });
+function currentContentSubmissionPaths() {
+    const paths = new Set(['milestones-data.js']);
+    const latest = historyService.summary().latest;
+    if (!latest) return [...paths];
+    const version = historyService.getVersion(latest.id);
+    for (const relativePath of [...(version.changedFiles || []), ...(version.resourceFiles || [])]) {
+        if (/^(archive|resources)\//.test(relativePath)) paths.add(relativePath);
     }
-    try {
-        if (fs.existsSync(destination)) fs.renameSync(destination, previous);
-        fs.renameSync(incoming, destination);
-        fs.rmSync(previous, { recursive: true, force: true });
-    } catch (error) {
-        fs.rmSync(incoming, { recursive: true, force: true });
-        if (!fs.existsSync(destination) && fs.existsSync(previous)) fs.renameSync(previous, destination);
-        throw error;
-    }
+    return [...paths];
 }
 
-async function generateAdminTestPreview() {
-    const draft = draftService.status();
-    if (draft.summary.pending) {
-        throw Object.assign(new Error('仍有未决策变更，请先逐项保留或放弃'), { statusCode: 409 });
-    }
-    if (!draft.summary.kept) {
-        throw Object.assign(new Error('没有可用于测试预览的已保留变更'), { statusCode: 409 });
+async function submitAdminContent(body = {}) {
+    if (draftService.status().summary.active) {
+        throw Object.assign(new Error('存在待处理 Admin 草稿，请先完成保留、放弃和应用'), { statusCode: 409 });
     }
     if (activeArchiveCommand) {
         throw Object.assign(new Error(`Archive command already running: ${activeArchiveCommand}`), {
             statusCode: 409
         });
     }
-
-    const fingerprint = draft.fingerprint;
-    const steps = [];
-    activeArchiveCommand = 'test-preview';
+    const currentRevision = archiveRevision();
+    const publishState = readPublishState();
+    if (publishState.savedValidatedRevision !== currentRevision) {
+        throw Object.assign(new Error('请先完成“生效前先校验”，校验当前已保存的文件后才能提交 GitHub'), {
+            statusCode: 409
+        });
+    }
+    if (publishState.generatedArchiveRevision !== currentRevision || !runtimeFilesExist()) {
+        throw Object.assign(new Error('请先生成与当前文件对应的运行时数据，才能提交 GitHub'), { statusCode: 409 });
+    }
+    activeArchiveCommand = 'submit-github';
     try {
-        ensureDraftPreviewInputs();
-        const previewScripts = [
-            ['validate-preview', 'validate-archive.js'],
-            ['generate-preview', 'generate-archive-data.js'],
-            ['build-preview', 'build-static-site.js']
-        ];
-        for (let index = 0; index < previewScripts.length; index += 1) {
-            const [name, scriptName] = previewScripts[index];
-            const result = await runProjectScript(scriptName, draftService.workspaceRoot);
-            steps.push({ name, ...result });
-            if (!result.ok) {
-                for (const [skippedName] of previewScripts.slice(index + 1)) {
-                    steps.push({ name: skippedName, ok: false, skipped: true, message: '前一步失败，未执行。' });
-                }
-                return { ok: false, steps };
-            }
-            if (draftService.status().fingerprint !== fingerprint) {
-                throw Object.assign(new Error('测试预览生成期间草稿已发生变化，请重新生成'), {
-                    statusCode: 409
-                });
-            }
-        }
-
-        const workspaceBundle = path.join(draftService.workspaceRoot, '.tmp', 'static-site');
-        replaceDirectory(workspaceBundle, TEST_PREVIEW_OUTPUT);
-        if (draftService.status().fingerprint !== fingerprint) {
-            throw Object.assign(new Error('测试预览生成期间草稿已发生变化，请重新生成'), {
-                statusCode: 409
+        if (process.env.ADMIN_GIT_DRY_RUN === 'true') {
+            const context = await getGitStatus();
+            const result = {
+                ok: true,
+                committed: false,
+                pushed: false,
+                dryRun: true,
+                message: '测试模式：未执行 Git commit 或 push。',
+                remote: context.remote,
+                remoteUrl: context.remoteUrl,
+                branch: context.branch,
+                files: currentContentSubmissionPaths(),
+                commit: ''
+            };
+            writePublishState({
+                submittedArchiveRevision: currentRevision,
+                submittedAt: new Date().toISOString(),
+                submittedCommit: '',
+                submittedRemote: result.remote,
+                submittedBranch: result.branch
             });
+            return result;
         }
-        const stats = collectPathStats(TEST_PREVIEW_OUTPUT);
-        const builtAt = new Date().toISOString();
-        atomicWrite(
-            TEST_PREVIEW_META,
-            `${JSON.stringify(
-                {
-                    builtAt,
-                    fingerprint,
-                    fileCount: stats.fileCount,
-                    totalBytes: stats.totalBytes,
-                    relativePath: '.tmp/admin-test-preview/'
-                },
-                null,
-                2
-            )}\n`
-        );
-        return {
-            ok: true,
-            previewUrl: '/test-preview/',
-            fingerprint,
-            builtAt,
-            steps
-        };
+        const result = await gitService.submit({
+            paths: currentContentSubmissionPaths(),
+            message: body.message,
+            remoteName: body.remote,
+            branch: body.branch
+        });
+        writePublishState({
+            submittedArchiveRevision: currentRevision,
+            submittedAt: new Date().toISOString(),
+            submittedCommit: result.commit || '',
+            submittedRemote: result.remote || '',
+            submittedBranch: result.branch || ''
+        });
+        return result;
     } finally {
         activeArchiveCommand = '';
     }
 }
 
-async function getPublishStatus() {
+async function getPublishStatus(req) {
     const archiveMtime = latestMtime([path.join(ROOT, 'archive')]);
-    const runtimeFiles = [path.join(ROOT, 'milestones-data.js'), path.join(ROOT, 'milestones-data-default.js')];
-    const runtimeExists = runtimeFiles.every((filePath) => fs.existsSync(filePath));
-    const runtimeMtime = runtimeExists ? Math.min(...runtimeFiles.map((filePath) => fs.statSync(filePath).mtimeMs)) : 0;
+    const currentArchiveRevision = archiveRevision();
+    const publishState = readPublishState();
+    const activeRuntimePath = path.join(ROOT, 'milestones-data.js');
+    const fallbackRuntimePath = path.join(ROOT, 'milestones-data-default.js');
+    const runtimeExists = fs.existsSync(activeRuntimePath);
+    const fallbackExists = fs.existsSync(fallbackRuntimePath);
+    const runtimeMtime = runtimeExists ? fs.statSync(activeRuntimePath).mtimeMs : 0;
     const generationMeta = readMetadataFile(ARCHIVE_GENERATION_META);
     const generatedAtMs = generationMeta?.generatedAt ? new Date(generationMeta.generatedAt).getTime() : runtimeMtime;
-    const sourceMtime = latestMtime([
-        path.join(ROOT, '.nojekyll'),
-        path.join(ROOT, 'index.html'),
-        ...runtimeFiles,
-        path.join(ROOT, 'shared'),
-        path.join(ROOT, 'resources'),
-        path.join(ROOT, 'public')
-    ]);
-    const bundleExists = fs.existsSync(STATIC_SITE_OUTPUT) && fs.statSync(STATIC_SITE_OUTPUT).isDirectory();
-    const buildMeta = readMetadataFile(STATIC_BUILD_META);
-    const bundleStats = bundleExists ? collectPathStats(STATIC_SITE_OUTPUT) : { fileCount: 0, totalBytes: 0 };
-    const builtAtMs = buildMeta?.builtAt ? new Date(buildMeta.builtAt).getTime() : 0;
     const draft = draftService.status();
-    const previewExists = fs.existsSync(TEST_PREVIEW_OUTPUT) && fs.statSync(TEST_PREVIEW_OUTPUT).isDirectory();
-    const previewMeta = readMetadataFile(TEST_PREVIEW_META);
-    const previewStats = previewExists ? collectPathStats(TEST_PREVIEW_OUTPUT) : { fileCount: 0, totalBytes: 0 };
+    const draftValidationReady =
+        Boolean(draft.fingerprint) && publishState.draftValidatedFingerprint === draft.fingerprint;
+    const runtimeGenerationReady =
+        runtimeExists &&
+        publishState.generatedArchiveRevision === currentArchiveRevision &&
+        generatedAtMs >= archiveMtime;
+    const testDisplayConfirmed =
+        runtimeGenerationReady && publishState.testDisplayConfirmedRevision === currentArchiveRevision;
+    const submissionReady = runtimeGenerationReady && publishState.submittedArchiveRevision === currentArchiveRevision;
     return {
         ok: true,
         activeCommand: activeArchiveCommand,
@@ -845,29 +907,95 @@ async function getPublishStatus() {
         discardedChanges: draft.discarded,
         changeSummary: draft.summary,
         history: historyService.summary(),
+        git: await getGitStatus(),
+        workflow: {
+            archiveRevision: currentArchiveRevision,
+            draftValidation: {
+                ready: draftValidationReady,
+                fingerprint: draftValidationReady ? publishState.draftValidatedFingerprint : '',
+                validatedAt: draftValidationReady ? publishState.draftValidatedAt : null
+            },
+            savedValidation: {
+                ready: publishState.savedValidatedRevision === currentArchiveRevision,
+                revision: publishState.savedValidatedRevision || '',
+                validatedAt: publishState.savedValidatedAt || null
+            },
+            runtimeGeneration: {
+                ready: runtimeGenerationReady,
+                revision: publishState.generatedArchiveRevision || '',
+                generatedAt: publishState.generatedAt || null
+            },
+            testDisplayConfirmation: {
+                ready: testDisplayConfirmed,
+                revision: publishState.testDisplayConfirmedRevision || '',
+                confirmedAt: publishState.testDisplayConfirmedAt || null
+            },
+            githubSubmission: {
+                ready: submissionReady,
+                revision: publishState.submittedArchiveRevision || '',
+                submittedAt: publishState.submittedAt || null,
+                commit: publishState.submittedCommit || '',
+                remote: publishState.submittedRemote || '',
+                branch: publishState.submittedBranch || ''
+            }
+        },
         runtime: {
             exists: runtimeExists,
-            ready: runtimeExists && generatedAtMs >= archiveMtime,
+            fallbackExists,
+            ready: runtimeGenerationReady,
             generatedAt: generatedAtMs ? new Date(generatedAtMs).toISOString() : null,
             archiveModifiedAt: archiveMtime ? new Date(archiveMtime).toISOString() : null
         },
-        bundle: {
-            exists: bundleExists,
-            ready: bundleExists && builtAtMs > 0 && builtAtMs >= sourceMtime,
-            builtAt: buildMeta?.builtAt || null,
-            fileCount: buildMeta?.fileCount || bundleStats.fileCount,
-            totalBytes: buildMeta?.totalBytes || bundleStats.totalBytes,
-            relativePath: '.tmp/static-site/'
-        },
-        preview: {
-            exists: previewExists,
-            ready: previewExists && Boolean(draft.fingerprint) && previewMeta?.fingerprint === draft.fingerprint,
-            builtAt: previewMeta?.builtAt || null,
-            fingerprint: previewMeta?.fingerprint || null,
-            fileCount: previewMeta?.fileCount || previewStats.fileCount,
-            totalBytes: previewMeta?.totalBytes || previewStats.totalBytes,
-            relativePath: '.tmp/admin-test-preview/'
+        testDisplay: {
+            url: testDisplayUrl(req),
+            ready: runtimeGenerationReady,
+            confirmed: testDisplayConfirmed,
+            updatedAt: publishState.generatedAt || null
         }
+    };
+}
+
+function confirmTestDisplay() {
+    const currentRevision = archiveRevision();
+    const publishState = readPublishState();
+    if (draftService.status().summary.active) {
+        throw Object.assign(new Error('存在待处理 Admin 草稿，请先完成保留、放弃和保存'), { statusCode: 409 });
+    }
+    if (publishState.generatedArchiveRevision !== currentRevision || !runtimeFilesExist()) {
+        throw Object.assign(new Error('请先生成与当前文件对应的运行时数据，再确认测试服务'), { statusCode: 409 });
+    }
+    const confirmedAt = new Date().toISOString();
+    writePublishState({
+        testDisplayConfirmedRevision: currentRevision,
+        testDisplayConfirmedAt: confirmedAt
+    });
+    return {
+        ok: true,
+        confirmedAt,
+        revision: currentRevision,
+        message: '已确认测试服务展示结果。'
+    };
+}
+
+function createUndoLastChangeDraft() {
+    if (draftService.status().summary.active) {
+        throw Object.assign(new Error('存在待处理 Admin 草稿，请先完成当前变更'), { statusCode: 409 });
+    }
+    const latest = historyService.summary().latest;
+    if (!latest?.previousVersionId) {
+        throw Object.assign(new Error('没有可撤销的最近一次保存变更'), { statusCode: 409 });
+    }
+    const targetVersion = historyService.getVersion(latest.previousVersionId);
+    const draft = draftService.createFromArchiveSnapshot(historyService.versionRoot(targetVersion.id), {
+        type: 'rollback',
+        versionId: targetVersion.id,
+        createdAt: new Date().toISOString()
+    });
+    return {
+        ok: true,
+        fromVersion: latest,
+        targetVersion,
+        draft
     };
 }
 
@@ -952,7 +1080,24 @@ async function validateAdminDraft() {
     }
     activeArchiveCommand = 'validate-admin-draft';
     try {
+        const fingerprint = draftStatus.fingerprint;
+        writePublishState({ draftValidatedFingerprint: '', draftValidatedAt: null });
         const result = await runArchiveScript('validate-archive.js', draftService.workspaceRoot);
+        if (result.ok && draftService.status().fingerprint !== fingerprint) {
+            return {
+                ok: false,
+                stdout: result.stdout,
+                stderr: `${result.stderr}\n草稿在校验期间发生变化，请重新校验。`.trim(),
+                exitCode: 409,
+                saved: false
+            };
+        }
+        if (result.ok) {
+            writePublishState({
+                draftValidatedFingerprint: fingerprint,
+                draftValidatedAt: new Date().toISOString()
+            });
+        }
         return { ...result, saved: false };
     } finally {
         activeArchiveCommand = '';
@@ -960,6 +1105,11 @@ async function validateAdminDraft() {
 }
 
 async function applyAdminDraft() {
+    const draftStatus = draftService.status();
+    const publishState = readPublishState();
+    if (publishState.draftValidatedFingerprint !== draftStatus.fingerprint) {
+        throw Object.assign(new Error('请先校验保留变更，校验通过后才能保存文件'), { statusCode: 409 });
+    }
     const validation = await validateAdminDraft();
     if (!validation.ok) return { ok: false, validation, applied: false };
     historyService.ensureCurrentVersion();
@@ -967,44 +1117,154 @@ async function applyAdminDraft() {
     const rollbackFromVersionId = result.origin?.type === 'rollback' ? result.origin.versionId : '';
     const version = historyService.createVersion({
         action: rollbackFromVersionId ? 'rollback' : 'apply',
-        note: rollbackFromVersionId ? '' : `应用 Admin 草稿（${result.changedFiles.length} 个 Json 文件）`,
+        note: rollbackFromVersionId ? '' : `保存 Admin 草稿（${result.changedFiles.length} 个内容文件）`,
         rollbackFromVersionId,
-        changedFiles: result.changedFiles
+        changedFiles: result.changedFiles,
+        resourceFiles: result.resources,
+        changePoints: result.changePoints
     });
+    invalidatePublishedArtifacts();
     return { ok: true, validation, applied: true, result, version };
+}
+
+async function applyAndValidateAdminDraft() {
+    const draftValidation = await validateAdminDraft();
+    if (!draftValidation.ok) {
+        return {
+            ok: false,
+            steps: [
+                { name: 'draft-validate', ...draftValidation },
+                { name: 'apply-validate', ok: false, skipped: true, message: '草稿校验失败，未保存。' }
+            ]
+        };
+    }
+    const applyResult = await applyAdminDraft();
+    if (!applyResult.ok) {
+        return {
+            ok: false,
+            steps: [
+                { name: 'draft-validate', ...draftValidation },
+                { name: 'apply-validate', ok: false, skipped: true, message: '草稿校验失败，未保存。' }
+            ]
+        };
+    }
+    const savedValidation = await runPublishSteps(['validate']);
+    const savedValidationMessage = savedValidation.ok
+        ? `已写入 ${applyResult.result.changedFiles.length} 个内容文件，并完成文件校验。`
+        : `已写入 ${applyResult.result.changedFiles.length} 个内容文件，但正式文件校验失败。`;
+    return {
+        ok: savedValidation.ok,
+        steps: [
+            { name: 'draft-validate', ...draftValidation },
+            {
+                ...(savedValidation.steps[0] || {}),
+                name: 'apply-validate',
+                message: savedValidationMessage
+            }
+        ],
+        validation: savedValidation.steps[0],
+        applied: true,
+        result: applyResult.result,
+        version: applyResult.version
+    };
+}
+
+async function saveChangesAndGenerate() {
+    const before = draftService.status();
+    if (!before.summary.active) {
+        throw Object.assign(new Error('当前没有待保存的 Admin 变更'), { statusCode: 409 });
+    }
+
+    const decided = draftService.decideAll('kept');
+    const keepStep = {
+        name: 'draft-keep',
+        ok: true,
+        message: `已默认保留 ${decided.summary.active} 项未放弃变更，已放弃的 ${decided.summary.discarded} 项保持不变。`
+    };
+
+    const applyResult = await applyAndValidateAdminDraft();
+    const draftValidation = applyResult.steps?.find((step) => step.name === 'draft-validate');
+    const applyValidation = applyResult.steps?.find((step) => step.name === 'apply-validate');
+    const saveStep = {
+        name: 'apply-validate',
+        ok: applyResult.ok,
+        skipped: applyValidation?.skipped === true,
+        stdout: [draftValidation?.stdout, applyValidation?.stdout].filter(Boolean).join('\n'),
+        stderr: [draftValidation?.stderr, applyValidation?.stderr].filter(Boolean).join('\n'),
+        message: applyResult.ok
+            ? applyValidation?.message || '已保存并完成文件校验。'
+            : applyValidation?.message || draftValidation?.message || '校验失败，未保存。'
+    };
+    if (!applyResult.ok) {
+        return {
+            ok: false,
+            steps: [
+                keepStep,
+                saveStep,
+                { name: 'generate', ok: false, skipped: true, message: '前一步失败，未执行。' }
+            ],
+            validation: applyResult.validation,
+            applied: applyResult.applied === true,
+            result: applyResult.result,
+            version: applyResult.version
+        };
+    }
+
+    const generated = await runPublishSteps(['generate']);
+    return {
+        ok: generated.ok,
+        steps: [keepStep, saveStep, ...generated.steps],
+        validation: applyResult.validation,
+        applied: true,
+        result: applyResult.result,
+        version: applyResult.version
+    };
 }
 
 async function prepareAdminPublish() {
     const steps = [];
     const draftStatus = draftService.status();
     if (draftStatus.summary.active) {
-        const applyResult = await applyAdminDraft();
-        steps.push({
-            name: 'validate-draft',
-            ...applyResult.validation
-        });
-        if (!applyResult.ok) {
-            steps.push({ name: 'apply', ok: false, skipped: true, message: '草稿校验失败，未应用。' });
-            steps.push({ name: 'generate', ok: false, skipped: true, message: '前一步失败，未执行。' });
-            steps.push({ name: 'build', ok: false, skipped: true, message: '前一步失败，未执行。' });
+        const saveResult = await saveChangesAndGenerate();
+        steps.push(...(saveResult.steps || []));
+        if (!saveResult.ok) {
+            steps.push({ name: 'submit', ok: false, skipped: true, message: '前一步失败，未执行。' });
             return { ok: false, steps };
         }
-        steps.push({
-            name: 'apply',
-            ok: true,
-            message: `已写入 ${applyResult.result.changedFiles.length} 个 Json 文件。`
-        });
+    } else {
+        const publishResult = await runPublishSteps(['validate', 'generate']);
+        steps.push(...publishResult.steps);
+        if (!publishResult.ok) {
+            steps.push({ name: 'submit', ok: false, skipped: true, message: '前一步失败，未执行。' });
+            return { ok: false, steps };
+        }
     }
-    const publishResult = await runPublishSteps(['validate', 'generate', 'build']);
-    steps.push(...publishResult.steps);
+    try {
+        steps.push({ name: 'submit', ...(await submitAdminContent()) });
+    } catch (error) {
+        steps.push({ name: 'submit', ok: false, message: error.message });
+    }
     return { ok: steps.every((step) => step.ok), steps };
 }
 
 const publishScripts = {
     validate: 'validate-archive.js',
-    generate: 'generate-archive-data.js',
-    build: 'build-static-site.js'
+    generate: 'generate-archive-data.js'
 };
+
+function assertPublishPrerequisite(name) {
+    const currentRevision = archiveRevision();
+    const publishState = readPublishState();
+    if (name === 'generate' && publishState.savedValidatedRevision !== currentRevision) {
+        throw Object.assign(new Error('请先完成“生效前先校验”，校验当前已保存的文件后才能生成运行时数据'), {
+            statusCode: 409
+        });
+    }
+}
+
+function runtimeFilesExist() {
+    return fs.existsSync(path.join(ROOT, 'milestones-data.js'));
+}
 
 async function runPublishSteps(stepNames) {
     if (draftService.status().summary.active) {
@@ -1017,18 +1277,67 @@ async function runPublishSteps(stepNames) {
             statusCode: 409
         });
     }
-    activeArchiveCommand = stepNames.length > 1 ? 'prepare-publish' : `publish-${stepNames[0]}`;
+    activeArchiveCommand = stepNames.length > 1 ? 'prepare-submit' : `publish-${stepNames[0]}`;
     const steps = [];
     try {
+        if (stepNames.includes('validate')) {
+            writePublishState({
+                savedValidatedRevision: '',
+                savedValidatedAt: null,
+                submittedArchiveRevision: '',
+                submittedAt: null,
+                submittedCommit: '',
+                submittedRemote: '',
+                submittedBranch: ''
+            });
+        }
         for (let index = 0; index < stepNames.length; index += 1) {
             const name = stepNames[index];
+            if (name === 'generate') assertPublishPrerequisite(name);
+            const stepRevision = archiveRevision();
             const result = await runProjectScript(publishScripts[name]);
+            const afterRevision = archiveRevision();
             steps.push({ name, ...result });
+            if (stepRevision !== afterRevision) {
+                steps[steps.length - 1] = {
+                    name,
+                    ok: false,
+                    stdout: result.stdout,
+                    stderr: `${result.stderr}\n正式文件在操作期间发生变化，请重新执行发布流程。`.trim(),
+                    exitCode: 409
+                };
+            }
             if (!result.ok) {
                 for (const skippedName of stepNames.slice(index + 1)) {
                     steps.push({ name: skippedName, ok: false, skipped: true, message: '前一步失败，未执行。' });
                 }
                 break;
+            }
+            if (!steps[steps.length - 1].ok) {
+                for (const skippedName of stepNames.slice(index + 1)) {
+                    steps.push({ name: skippedName, ok: false, skipped: true, message: '前一步失败，未执行。' });
+                }
+                break;
+            }
+            if (name === 'validate') {
+                writePublishState({
+                    savedValidatedRevision: afterRevision,
+                    savedValidatedAt: new Date().toISOString(),
+                    testDisplayConfirmedRevision: '',
+                    testDisplayConfirmedAt: null
+                });
+            } else if (name === 'generate') {
+                writePublishState({
+                    generatedArchiveRevision: afterRevision,
+                    generatedAt: new Date().toISOString(),
+                    submittedArchiveRevision: '',
+                    submittedAt: null,
+                    submittedCommit: '',
+                    submittedRemote: '',
+                    submittedBranch: '',
+                    testDisplayConfirmedRevision: '',
+                    testDisplayConfirmedAt: null
+                });
             }
         }
         return { ok: steps.every((step) => step.ok), steps };
@@ -1538,6 +1847,22 @@ const routes = {
         }
     },
 
+    'POST /api/archive/draft-apply-validate': async (_req, res) => {
+        try {
+            sendJson(res, await applyAndValidateAdminDraft());
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
+    'POST /api/archive/save-changes': async (_req, res) => {
+        try {
+            sendJson(res, await saveChangesAndGenerate());
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 400);
+        }
+    },
+
     'POST /api/archive/draft-reset': async (_req, res) => {
         try {
             sendJson(res, { ok: true, draft: draftService.reset() });
@@ -1550,9 +1875,9 @@ const routes = {
 
     'POST /api/archive/generate': (_req, res) => runArchiveCommand(res, 'generate', 'generate-archive-data.js'),
 
-    'GET /api/archive/publish-status': async (_req, res) => {
+    'GET /api/archive/publish-status': async (req, res) => {
         try {
-            sendJson(res, await getPublishStatus());
+            sendJson(res, await getPublishStatus(req));
         } catch (error) {
             sendError(res, error.message, error.statusCode || 500);
         }
@@ -1604,25 +1929,42 @@ const routes = {
         }
     },
 
-    'POST /api/archive/publish-build': async (_req, res) => {
+    'POST /api/archive/test-display-confirm': (_req, res) => {
         try {
-            sendJson(res, await runPublishSteps(['build']));
+            sendJson(res, confirmTestDisplay());
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 409);
+        }
+    },
+
+    'POST /api/archive/undo-last-change': (_req, res) => {
+        try {
+            sendJson(res, createUndoLastChangeDraft());
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 409);
+        }
+    },
+
+    'GET /api/archive/git-status': async (_req, res) => {
+        try {
+            sendJson(res, { ok: true, git: await getGitStatus() });
         } catch (error) {
             sendError(res, error.message, error.statusCode || 500);
         }
     },
 
-    'POST /api/archive/prepare-publish': async (_req, res) => {
+    'POST /api/archive/submit-github': async (req, res) => {
+        try {
+            const body = req.headers['content-type'] ? await readJsonBody(req) : {};
+            sendJson(res, { ok: true, ...(await submitAdminContent(body)) });
+        } catch (error) {
+            sendError(res, error.message, error.statusCode || 500);
+        }
+    },
+
+    'POST /api/archive/prepare-submit': async (_req, res) => {
         try {
             sendJson(res, await prepareAdminPublish());
-        } catch (error) {
-            sendError(res, error.message, error.statusCode || 500);
-        }
-    },
-
-    'POST /api/archive/test-preview': async (_req, res) => {
-        try {
-            sendJson(res, await generateAdminTestPreview());
         } catch (error) {
             sendError(res, error.message, error.statusCode || 500);
         }
@@ -1663,46 +2005,6 @@ const server = http.createServer((req, res) => {
         serveResource(res, url.pathname, req.method === 'HEAD');
         return;
     }
-    if ((req.method === 'GET' || req.method === 'HEAD') && url.pathname.startsWith('/publish-preview')) {
-        let decodedPath;
-        try {
-            decodedPath = decodeURIComponent(url.pathname);
-        } catch {
-            sendError(res, 'Invalid preview path', 400);
-            return;
-        }
-        const relativePath = decodedPath.replace(/^\/publish-preview\/?/, '') || 'index.html';
-        const filePath = path.resolve(STATIC_SITE_OUTPUT, relativePath);
-        if (filePath !== STATIC_SITE_OUTPUT && !filePath.startsWith(`${STATIC_SITE_OUTPUT}${path.sep}`)) {
-            sendError(res, 'Forbidden', 403);
-            return;
-        }
-        serveFile(res, filePath, 'no-store', req.method === 'HEAD');
-        return;
-    }
-    if ((req.method === 'GET' || req.method === 'HEAD') && url.pathname === '/test-preview') {
-        res.writeHead(302, { Location: '/test-preview/' });
-        res.end();
-        return;
-    }
-    if ((req.method === 'GET' || req.method === 'HEAD') && url.pathname.startsWith('/test-preview/')) {
-        let decodedPath;
-        try {
-            decodedPath = decodeURIComponent(url.pathname);
-        } catch {
-            sendError(res, 'Invalid preview path', 400);
-            return;
-        }
-        const relativePath = decodedPath.replace(/^\/test-preview\/?/, '') || 'index.html';
-        const filePath = path.resolve(TEST_PREVIEW_OUTPUT, relativePath);
-        if (filePath !== TEST_PREVIEW_OUTPUT && !filePath.startsWith(`${TEST_PREVIEW_OUTPUT}${path.sep}`)) {
-            sendError(res, 'Forbidden', 403);
-            return;
-        }
-        serveFile(res, filePath, 'no-store', req.method === 'HEAD');
-        return;
-    }
-
     res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
     res.end('Not found');
 });

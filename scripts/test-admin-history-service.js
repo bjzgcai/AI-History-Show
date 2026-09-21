@@ -59,12 +59,15 @@ try {
     const appliedVersion = historyService.createVersion({
         action: 'apply',
         note: '测试应用',
-        changedFiles: applied.changedFiles
+        changedFiles: applied.changedFiles,
+        changePoints: applied.changePoints
     });
     assert.equal(readJson(eventPath).title.zh, '已应用');
     assert.equal(fs.existsSync(addedPath), true);
     assert.equal(historyService.listVersions().length, 3);
     assert.equal(appliedVersion.changeCount, 2);
+    assert.equal(appliedVersion.changePointCount, 3);
+    assert.ok(appliedVersion.changePoints.some((change) => change.summary === 'test-event：修改 zh'));
 
     const rollback = historyService.createRollbackDraft(initial.id, draftService);
     assert.equal(rollback.draft.origin.type, 'rollback');
@@ -84,7 +87,8 @@ try {
         action: 'rollback',
         note: `回滚到历史版本 ${initial.id}`,
         rollbackFromVersionId: initial.id,
-        changedFiles: rollbackApply.changedFiles
+        changedFiles: rollbackApply.changedFiles,
+        changePoints: rollbackApply.changePoints
     });
     assert.equal(readJson(eventPath).title.zh, '初始');
     assert.equal(fs.existsSync(addedPath), false);
@@ -92,6 +96,7 @@ try {
     assert.equal(rollbackVersion.action, 'rollback');
     assert.equal(rollbackVersion.rollbackFromVersionId, initial.id);
     assert.equal(rollbackVersion.rollbackExact, true);
+    assert.equal(rollbackVersion.changePointCount, 3);
     assert.equal(historyService.listVersions()[0].id, rollbackVersion.id);
 
     const partialRollback = historyService.createRollbackDraft(appliedVersion.id, draftService);
@@ -101,7 +106,8 @@ try {
     const partialVersion = historyService.createVersion({
         action: 'rollback',
         rollbackFromVersionId: appliedVersion.id,
-        changedFiles: partialApply.changedFiles
+        changedFiles: partialApply.changedFiles,
+        changePoints: partialApply.changePoints
     });
     assert.equal(partialVersion.rollbackExact, false);
     assert.match(partialVersion.note, /部分回滚/);
