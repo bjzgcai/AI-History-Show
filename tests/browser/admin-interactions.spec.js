@@ -60,7 +60,42 @@ async function keepAndApplyDraft(page) {
 }
 
 test.describe.serial('Archive Admin button feedback and file linkage', () => {
+    test('admin loads API and media through a reverse-proxy subpath', async ({ page }) => {
+        const requestedPaths = [];
+        page.on('request', (request) => {
+            const url = new URL(request.url());
+            if (url.origin === 'http://127.0.0.1:43118') requestedPaths.push(url.pathname);
+        });
+
+        await page.goto('/nested-admin/admin');
+        await expect(page.locator('#entityCount')).not.toHaveText('0');
+        await loadEvent(page, '1956-dartmouth');
+
+        expect(requestedPaths).toContain('/nested-admin/admin.css');
+        expect(requestedPaths).toContain('/nested-admin/admin.js');
+        expect(requestedPaths).toContain('/nested-admin/api/archive/events');
+        expect(
+            requestedPaths.filter(
+                (pathname) =>
+                    pathname.startsWith('/api/') ||
+                    pathname.startsWith('/resources/') ||
+                    pathname === '/admin.css' ||
+                    pathname === '/admin.js'
+            )
+        ).toEqual([]);
+
+        const localMediaSource = await page.evaluate(() => window.adminMediaUrl('resources/images/ui/brand.png'));
+        expect(localMediaSource).toBe('/nested-admin/resources/images/ui/brand.png');
+    });
+
     test('event and storyline display buttons open the corresponding presentation view', async ({ page }) => {
+        await page.context().route('http://127.0.0.1:8000/**', (route) =>
+            route.fulfill({
+                status: 200,
+                contentType: 'text/html',
+                body: '<!doctype html><title>Admin test display</title>'
+            })
+        );
         await openAdmin(page);
 
         await loadEvent(page, '1956-dartmouth');

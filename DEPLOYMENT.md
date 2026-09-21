@@ -541,6 +541,35 @@ Admin：http://你的Admin机器IP:3001/admin
 测试展示：http://你的Admin机器IP:8000/
 ```
 
+如需使用 `http://<internal-host>:<port>/<admin-prefix>/` 这类子路径入口，可参考下面使用
+`/admin-console/` 作为占位示例的 Nginx 配置。Admin
+前端会从当前 `/.../admin` 地址自动推导部署前缀，API、管理端静态资源和本地媒体资源都会继续使用同一前缀；
+Nginx 再将前缀剥离后转发给只监听本机的管理服务：
+
+```nginx
+location = /admin-console {
+    return 308 /admin-console/;
+}
+
+location = /admin-console/ {
+    return 308 /admin-console/admin;
+}
+
+location /admin-console/ {
+    proxy_pass http://127.0.0.1:3001/;
+    proxy_http_version 1.1;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Forwarded-Host $http_host;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_buffering off;
+    client_max_body_size 20m;
+}
+```
+
+部署时应将示例中的 `/admin-console/` 替换为实际前缀。`proxy_pass` 末尾的 `/` 用于剥离管理前缀，不能省略。`Host` 必须保留浏览器访问的
+主机与端口，否则管理服务的同源写入校验会拒绝 POST 请求。不要通过修改部署后的 `admin.js` 添加前缀。
+
 生成运行时数据后，测试展示服务无需重启，刷新页面即可读取新文件。Admin 机器只用于编辑、校验、测试展示和提交 GitHub；生产展示服务单独部署。
 
 ### 生产展示服务同步方式
