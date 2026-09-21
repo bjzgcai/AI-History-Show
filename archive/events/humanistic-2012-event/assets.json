@@ -167,7 +167,6 @@
     "storage": {
       "profileId": "ai-history-audio-releases",
       "provider": "aliyun-oss",
-      "bucket": "[REDACTED_OSS_BUCKET]",
       "objectKey": "audio/ai-history/releases/humanistic-2012-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
       "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-zh-volc-v4-2026-09-14/audio/humanistic-cycle/storyline/zh/48-humanistic-2012-event.mp3",
       "contentType": "audio/mpeg",
@@ -209,7 +208,6 @@
     "storage": {
       "profileId": "ai-history-audio-releases",
       "provider": "aliyun-oss",
-      "bucket": "[REDACTED_OSS_BUCKET]",
       "objectKey": "audio/ai-history/releases/humanistic-2012-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
       "sourcePath": "resources/audio/generated/humanistic-cycle-manual/humanistic-missing-en-volc-v1-2026-09-14/audio/humanistic-cycle/storyline/en/48-humanistic-2012-event.mp3",
       "contentType": "audio/mpeg",

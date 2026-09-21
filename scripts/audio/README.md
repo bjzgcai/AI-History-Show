@@ -103,6 +103,7 @@ revision 的首选入口：
 - Node.js 22 或更高版本；
 - `ffmpeg` 与 `ffprobe` 在 `PATH` 中；
 - TTS 凭据由 revision 配置的 `provider.envFile` 指向，密钥值不得写入仓库；
+- 使用内部 TTS provider 时，必须通过 `INNER_TTS_BASE_URL` 或 `--base-url` 提供服务地址，仓库不保存内部端点；
 - 默认 Seed-TTS 凭据文件为仓库内已忽略的 `.secrets/tts.env`；可通过 `TTS_ENV_FILE`
   指向其他绝对路径或仓库相对路径，运行时环境变量优先；
 - 生成前先运行 `check` 或 `build`，生成后必须运行 `validate`；

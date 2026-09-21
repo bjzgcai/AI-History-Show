@@ -31,7 +31,8 @@ RUN npm ci
 
 COPY . .
 RUN pip3 install --no-cache-dir --break-system-packages -r scripts/game-evolution/requirements-validate.txt
-RUN npm run validate:archive && npm run generate && npm run build:static && npm prune --omit=dev
+ARG UMAMI_WEBSITE_ID=
+RUN npm run validate:archive && npm run generate && UMAMI_WEBSITE_ID="$UMAMI_WEBSITE_ID" npm run build:static && npm prune --omit=dev
 
 FROM node:22-alpine AS admin
 

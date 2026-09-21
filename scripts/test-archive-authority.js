@@ -346,6 +346,17 @@ assert.ok(
         }),
     'every compiled milestone with narration should expose both Chinese and English audio'
 );
+assert.ok(
+    compiledArchive.milestones
+        .flatMap((milestone) => milestone.resources?.audios || [])
+        .every(
+            (audio) =>
+                !Object.hasOwn(audio.storage || {}, 'bucket') &&
+                !Object.hasOwn(audio.storage || {}, 'endpoint') &&
+                !Object.hasOwn(audio.storage || {}, 'region')
+        ),
+    'compiled narration metadata must not expose private storage location details'
+);
 const dartmouthMilestone = compiledArchive.milestones.find(
     (milestone) =>
         milestone.id === 'milestone-1956-dartmouth' && milestone.storyline && milestone.storyline.id === 'deep-learning'
@@ -361,7 +372,7 @@ assert.ok(
         (audio) =>
             audio.url.startsWith(audioProfile.publicUrlPrefix) &&
             audio.storage?.provider === audioProfile.provider &&
-            audio.storage?.bucket === audioProfile.bucket &&
+            !Object.hasOwn(audio.storage || {}, 'bucket') &&
             audio.storage?.objectKey.startsWith(audioProfile.objectKeyPrefix)
     ),
     'the Dartmouth narration should not depend on a local MP3 fallback'

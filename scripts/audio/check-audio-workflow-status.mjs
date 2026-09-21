@@ -225,7 +225,6 @@ function inspectArchive() {
             const objectKeyPrefix = normalizeObjectKey(storage.objectKeyPrefix).replace(/\/+$/, '');
             if (
                 !storage.provider ||
-                !storage.bucket ||
                 !objectKey.startsWith(`${objectKeyPrefix}/`) ||
                 !deliveryUrl.startsWith(storage.publicUrlPrefix)
             ) {
