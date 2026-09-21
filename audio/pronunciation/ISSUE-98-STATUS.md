@@ -38,7 +38,7 @@ term + speechForm + provider + model + locale + voice + instruction SHA-256
 
 ## 当前资格包
 
-审听地址：`http://10.1.132.6:3002`
+审听地址：通过受保护的内部审核入口访问
 
 | 项目           |    数量 |
 | -------------- | ------: |
