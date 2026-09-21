@@ -6,6 +6,7 @@ const vm = require('node:vm');
 const { createAnalytics, normalizeConfig, normalizeEventData } = require(
     path.join(__dirname, '..', 'shared', 'analytics.js')
 );
+const { buildUmamiConfig, readSourceUmamiConfig, serializeUmamiConfig } = require('./static-umami-config');
 
 function createScope() {
     let currentTime = 0;
@@ -168,9 +169,22 @@ assert.match(
 
 const analyticsConfigSource = fs.readFileSync(path.join(root, 'shared', 'analytics-config.js'), 'utf8');
 const umamiConfigSource = fs.readFileSync(path.join(root, 'shared', 'umami-config.js'), 'utf8');
-assert.match(umamiConfigSource, /websiteId: ['"][^'"]*['"]/);
+assert.match(umamiConfigSource, /enabled: false/);
+assert.match(umamiConfigSource, /websiteId: ['"]['"]/);
 assert.match(umamiConfigSource, /https:\/\/museum\.bza\.edu\.cn\/umami\/script\.js/);
 assert.match(umamiConfigSource, /hostUrl: 'https:\/\/museum\.bza\.edu\.cn\/umami'/);
+
+assert.equal(buildUmamiConfig({}).enabled, false);
+const sourceUmamiConfig = readSourceUmamiConfig();
+const generatedUmamiConfig = buildUmamiConfig({ UMAMI_WEBSITE_ID: 'injected-website-id' });
+assert.equal(generatedUmamiConfig.enabled, true);
+assert.equal(generatedUmamiConfig.websiteId, 'injected-website-id');
+assert.equal(generatedUmamiConfig.scriptUrl, sourceUmamiConfig.scriptUrl);
+assert.equal(generatedUmamiConfig.hostUrl, sourceUmamiConfig.hostUrl);
+assert.deepEqual(generatedUmamiConfig.domains, sourceUmamiConfig.domains);
+const generatedConfigContext = vm.createContext({});
+vm.runInContext(serializeUmamiConfig(generatedUmamiConfig), generatedConfigContext);
+assert.equal(generatedConfigContext.AI_HISTORY_UMAMI_CONFIG.websiteId, 'injected-website-id');
 
 const disabledConfigContext = vm.createContext({
     AI_HISTORY_UMAMI_CONFIG: {

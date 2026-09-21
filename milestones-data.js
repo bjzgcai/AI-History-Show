@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-09-21 03:20
+// 生成时间: 2026-09-18 02:54
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 236, errors 0
 
@@ -156,7 +156,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1950-turing-test-zh-interact-v1.mp3"
@@ -173,7 +172,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1950-turing-test-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1950-turing-test-en-v1.mp3"
@@ -670,7 +668,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1971-complexity-theory-zh-interact-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1971-complexity-theory-zh-interact-v1.mp3"
@@ -687,7 +684,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1971-complexity-theory-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1971-complexity-theory-en-v1.mp3"
@@ -1159,7 +1155,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1971-vc-theory-zh-interact-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1971-vc-theory-zh-interact-v1.mp3"
@@ -1176,7 +1171,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1971-vc-theory-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1971-vc-theory-en-v1.mp3"
@@ -1682,7 +1676,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1956-logic-theorist-zh-interact-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1956-logic-theorist-zh-interact-v1.mp3"
@@ -1699,7 +1692,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1956-logic-theorist-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1956-logic-theorist-en-v1.mp3"
@@ -2155,7 +2147,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1958-wangs-algorithm-zh-interact-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1958-wangs-algorithm-zh-interact-v1.mp3"
@@ -2172,7 +2163,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1958-wangs-algorithm-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1958-wangs-algorithm-en-v1.mp3"
@@ -2676,7 +2666,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1960-davis-putnam-dpll-zh-interact-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1960-davis-putnam-dpll-zh-interact-v1.mp3"
@@ -2693,7 +2682,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1960-davis-putnam-dpll-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1960-davis-putnam-dpll-en-v1.mp3"
@@ -3150,7 +3138,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1965-resolution-method-zh-interact-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1965-resolution-method-zh-interact-v1.mp3"
@@ -3167,7 +3154,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1965-resolution-method-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1965-resolution-method-en-v1.mp3"
@@ -3676,7 +3662,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1990-otter-zh-interact-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1990-otter-zh-interact-v1.mp3"
@@ -3693,7 +3678,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1990-otter-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1990-otter-en-v1.mp3"
@@ -4246,7 +4230,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1958-lisp-zh-interact-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1958-lisp-zh-interact-v1.mp3"
@@ -4263,7 +4246,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1958-lisp-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1958-lisp-en-v1.mp3"
@@ -4718,7 +4700,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1973-prolog-zh-interact-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1973-prolog-zh-interact-v1.mp3"
@@ -4735,7 +4716,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1973-prolog-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1973-prolog-en-v1.mp3"
@@ -5244,7 +5224,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1966-eliza-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1966-eliza-zh-original-v1.mp3"
@@ -5261,7 +5240,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1966-eliza-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1966-eliza-en-v1.mp3"
@@ -5970,7 +5948,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1970-shrdlu-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1970-shrdlu-zh-original-v1.mp3"
@@ -5987,7 +5964,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1970-shrdlu-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1970-shrdlu-en-v1.mp3"
@@ -6505,7 +6481,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2011-ibm-watson-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2011-ibm-watson-zh-original-v1.mp3"
@@ -6522,7 +6497,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2011-ibm-watson-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2011-ibm-watson-en-v1.mp3"
@@ -7073,7 +7047,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1951-strachey-draughts-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1951-strachey-draughts-zh-original-v1.mp3"
@@ -7090,7 +7063,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1951-strachey-draughts-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1951-strachey-draughts-en-v1.mp3"
@@ -7676,7 +7648,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1994-chinook-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1994-chinook-zh-original-v1.mp3"
@@ -7693,7 +7664,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1994-chinook-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1994-chinook-en-v1.mp3"
@@ -8353,7 +8323,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1997-deep-blue-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1997-deep-blue-zh-original-v1.mp3"
@@ -8370,7 +8339,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1997-deep-blue-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1997-deep-blue-en-v1.mp3"
@@ -9059,7 +9027,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1959-pandemonium-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1959-pandemonium-zh-original-v1.mp3"
@@ -9076,7 +9043,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1959-pandemonium-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1959-pandemonium-en-v1.mp3"
@@ -9619,7 +9585,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1974-frame-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1974-frame-zh-original-v1.mp3"
@@ -9636,7 +9601,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1974-frame-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1974-frame-en-v1.mp3"
@@ -10154,7 +10118,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1984-cyc-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1984-cyc-zh-original-v1.mp3"
@@ -10171,7 +10134,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1984-cyc-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1984-cyc-en-v1.mp3"
@@ -10762,7 +10724,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1965-dendral-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1965-dendral-zh-original-v1.mp3"
@@ -10779,7 +10740,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1965-dendral-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1965-dendral-en-v1.mp3"
@@ -11278,7 +11238,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1980-xcon-r1-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1980-xcon-r1-zh-original-v1.mp3"
@@ -11295,7 +11254,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1980-xcon-r1-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1980-xcon-r1-en-v1.mp3"
@@ -11843,7 +11801,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1957-kmeans-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1957-kmeans-zh-original-v1.mp3"
@@ -11860,7 +11817,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1957-kmeans-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1957-kmeans-en-v1.mp3"
@@ -12440,7 +12396,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1996-dbscan-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1996-dbscan-zh-original-v1.mp3"
@@ -12457,7 +12412,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1996-dbscan-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1996-dbscan-en-v1.mp3"
@@ -13055,7 +13009,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2000-spectral-clustering-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2000-spectral-clustering-zh-original-v1.mp3"
@@ -13072,7 +13025,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2000-spectral-clustering-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2000-spectral-clustering-en-v1.mp3"
@@ -13656,7 +13608,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1967-knn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1967-knn-zh-original-v1.mp3"
@@ -13673,7 +13624,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1967-knn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1967-knn-en-v1.mp3"
@@ -14214,7 +14164,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1970-ridge-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1970-ridge-zh-original-v1.mp3"
@@ -14231,7 +14180,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1970-ridge-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1970-ridge-en-v1.mp3"
@@ -14792,7 +14740,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1992-svm-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1992-svm-zh-original-v1.mp3"
@@ -14809,7 +14756,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1992-svm-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1992-svm-en-v1.mp3"
@@ -15356,7 +15302,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1996-lasso-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1996-lasso-zh-original-v1.mp3"
@@ -15373,7 +15318,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1996-lasso-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1996-lasso-en-v1.mp3"
@@ -15875,7 +15819,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1999-sift-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1999-sift-zh-original-v1.mp3"
@@ -15892,7 +15835,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1999-sift-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1999-sift-en-v1.mp3"
@@ -16405,7 +16347,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2005-hog-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2005-hog-zh-original-v1.mp3"
@@ -16422,7 +16363,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2005-hog-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2005-hog-en-v1.mp3"
@@ -16979,7 +16919,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2006-surf-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2006-surf-zh-original-v1.mp3"
@@ -16996,7 +16935,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2006-surf-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2006-surf-en-v1.mp3"
@@ -17521,7 +17459,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1997-kernel-pca-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1997-kernel-pca-zh-original-v1.mp3"
@@ -17538,7 +17475,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1997-kernel-pca-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1997-kernel-pca-en-v1.mp3"
@@ -18063,7 +17999,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1999-nmf-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1999-nmf-zh-original-v1.mp3"
@@ -18080,7 +18015,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1999-nmf-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1999-nmf-en-v1.mp3"
@@ -18605,7 +18539,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2000-isomap-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2000-isomap-zh-original-v1.mp3"
@@ -18622,7 +18555,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2000-isomap-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2000-isomap-en-v1.mp3"
@@ -19147,7 +19079,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2000-lle-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2000-lle-zh-original-v1.mp3"
@@ -19164,7 +19095,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2000-lle-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2000-lle-en-v1.mp3"
@@ -19690,7 +19620,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2008-tsne-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2008-tsne-zh-original-v1.mp3"
@@ -19707,7 +19636,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2008-tsne-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2008-tsne-en-v1.mp3"
@@ -20223,7 +20151,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1943-mcculloch-pitts-neuron-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1943-mcculloch-pitts-neuron-zh-original-v1.mp3"
@@ -20240,7 +20167,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1943-mcculloch-pitts-neuron-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1943-mcculloch-pitts-neuron-en-v1.mp3"
@@ -20765,7 +20691,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1951-snarc-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1951-snarc-zh-original-v1.mp3"
@@ -20782,7 +20707,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1951-snarc-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1951-snarc-en-v1.mp3"
@@ -21323,7 +21247,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1957-perceptron-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1957-perceptron-zh-original-v1.mp3"
@@ -21340,7 +21263,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1957-perceptron-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1957-perceptron-en-v1.mp3"
@@ -21976,7 +21898,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1982-hopfield-network-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1982-hopfield-network-zh-original-v1.mp3"
@@ -21993,7 +21914,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1982-hopfield-network-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1982-hopfield-network-en-v1.mp3"
@@ -22494,7 +22414,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1982-som-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1982-som-zh-original-v1.mp3"
@@ -22511,7 +22430,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1982-som-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1982-som-en-v1.mp3"
@@ -23053,7 +22971,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2006-dbn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2006-dbn-zh-original-v1.mp3"
@@ -23070,7 +22987,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2006-dbn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2006-dbn-en-v1.mp3"
@@ -23599,7 +23515,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1967-back-propagation-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1967-back-propagation-zh-original-v1.mp3"
@@ -23616,7 +23531,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1967-back-propagation-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1967-back-propagation-en-v1.mp3"
@@ -24156,7 +24070,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1969-relu-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1969-relu-zh-original-v1.mp3"
@@ -24173,7 +24086,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1969-relu-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1969-relu-en-v1.mp3"
@@ -24756,7 +24668,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-adam-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-adam-zh-original-v1.mp3"
@@ -24773,7 +24684,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-adam-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-adam-en-v1.mp3"
@@ -25307,7 +25217,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-dropout-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-dropout-zh-original-v1.mp3"
@@ -25324,7 +25233,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-dropout-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-dropout-en-v1.mp3"
@@ -25844,7 +25752,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-batch-normalization-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-batch-normalization-zh-original-v1.mp3"
@@ -25861,7 +25768,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-batch-normalization-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-batch-normalization-en-v1.mp3"
@@ -26364,7 +26270,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1980-neocognitron-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1980-neocognitron-zh-original-v1.mp3"
@@ -26381,7 +26286,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1980-neocognitron-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1980-neocognitron-en-v1.mp3"
@@ -26893,7 +26797,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1989-cnn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1989-cnn-zh-original-v1.mp3"
@@ -26910,7 +26813,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1989-cnn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1989-cnn-en-v1.mp3"
@@ -27537,7 +27439,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2012-alexnet-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2012-alexnet-zh-original-v1.mp3"
@@ -27554,7 +27455,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2012-alexnet-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2012-alexnet-en-v1.mp3"
@@ -28135,7 +28035,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-vgg-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-vgg-zh-original-v1.mp3"
@@ -28152,7 +28051,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-vgg-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-vgg-en-v1.mp3"
@@ -28682,7 +28580,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2015-googlenet-inception-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2015-googlenet-inception-zh-original-v1.mp3"
@@ -28699,7 +28596,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2015-googlenet-inception-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2015-googlenet-inception-en-v1.mp3"
@@ -29252,7 +29148,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2015-resnet-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2015-resnet-zh-original-v1.mp3"
@@ -29269,7 +29164,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2015-resnet-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2015-resnet-en-v1.mp3"
@@ -29943,7 +29837,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2016-densenet-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2016-densenet-zh-original-v1.mp3"
@@ -29960,7 +29853,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2016-densenet-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2016-densenet-en-v1.mp3"
@@ -30516,7 +30408,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-mobilenets-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-mobilenets-zh-original-v1.mp3"
@@ -30533,7 +30424,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-mobilenets-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-mobilenets-en-v1.mp3"
@@ -31102,7 +30992,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2018-squeeze-excitation-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2018-squeeze-excitation-zh-original-v1.mp3"
@@ -31119,7 +31008,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2018-squeeze-excitation-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2018-squeeze-excitation-en-v1.mp3"
@@ -31670,7 +31558,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2014-r-cnn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2014-r-cnn-zh-original-v1.mp3"
@@ -31687,7 +31574,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2014-r-cnn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2014-r-cnn-en-v1.mp3"
@@ -32222,7 +32108,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-fast-r-cnn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-fast-r-cnn-zh-original-v1.mp3"
@@ -32239,7 +32124,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-fast-r-cnn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-fast-r-cnn-en-v1.mp3"
@@ -32824,7 +32708,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2015-faster-r-cnn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2015-faster-r-cnn-zh-original-v1.mp3"
@@ -32841,7 +32724,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2015-faster-r-cnn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2015-faster-r-cnn-en-v1.mp3"
@@ -33440,7 +33322,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-mask-r-cnn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-mask-r-cnn-zh-original-v1.mp3"
@@ -33457,7 +33338,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-mask-r-cnn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-mask-r-cnn-en-v1.mp3"
@@ -34024,7 +33904,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-fpn-retinanet-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-fpn-retinanet-zh-original-v1.mp3"
@@ -34041,7 +33920,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-fpn-retinanet-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-fpn-retinanet-en-v1.mp3"
@@ -34593,7 +34471,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2016-yolo-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2016-yolo-zh-original-v1.mp3"
@@ -34610,7 +34487,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2016-yolo-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2016-yolo-en-v1.mp3"
@@ -35130,7 +35006,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2016-ssd-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2016-ssd-zh-original-v1.mp3"
@@ -35147,7 +35022,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2016-ssd-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2016-ssd-en-v1.mp3"
@@ -35716,7 +35590,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-fcn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-fcn-zh-original-v1.mp3"
@@ -35733,7 +35606,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-fcn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-fcn-en-v1.mp3"
@@ -36283,7 +36155,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2015-u-net-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2015-u-net-zh-original-v1.mp3"
@@ -36300,7 +36171,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2015-u-net-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2015-u-net-en-v1.mp3"
@@ -36819,7 +36689,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1997-lstm-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1997-lstm-zh-original-v1.mp3"
@@ -36836,7 +36705,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1997-lstm-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1997-lstm-en-v1.mp3"
@@ -37471,7 +37339,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2014-seq2seq-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2014-seq2seq-zh-original-v1.mp3"
@@ -37488,7 +37355,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2014-seq2seq-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2014-seq2seq-en-v1.mp3"
@@ -38106,7 +37972,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-attention-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-attention-zh-original-v1.mp3"
@@ -38123,7 +37988,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-attention-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-attention-en-v1.mp3"
@@ -38824,7 +38688,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2017-transformer-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2017-transformer-zh-original-v1.mp3"
@@ -38841,7 +38704,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2017-transformer-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2017-transformer-en-v1.mp3"
@@ -39446,7 +39308,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2018-bert-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2018-bert-zh-original-v1.mp3"
@@ -39463,7 +39324,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2018-bert-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2018-bert-en-v1.mp3"
@@ -40133,7 +39993,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2018-gpt-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2018-gpt-zh-original-v1.mp3"
@@ -40150,7 +40009,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2018-gpt-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2018-gpt-en-v1.mp3"
@@ -40811,7 +40669,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2020-vit-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2020-vit-zh-original-v1.mp3"
@@ -40828,7 +40685,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2020-vit-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2020-vit-en-v1.mp3"
@@ -41385,7 +41241,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2021-swin-transformer-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2021-swin-transformer-zh-original-v1.mp3"
@@ -41402,7 +41257,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2021-swin-transformer-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2021-swin-transformer-en-v1.mp3"
@@ -41937,7 +41791,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2000-neural-language-model-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2000-neural-language-model-zh-original-v1.mp3"
@@ -41954,7 +41807,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2000-neural-language-model-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2000-neural-language-model-en-v1.mp3"
@@ -42480,7 +42332,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2013-word2vec-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2013-word2vec-zh-original-v1.mp3"
@@ -42497,7 +42348,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2013-word2vec-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2013-word2vec-en-v1.mp3"
@@ -43036,7 +42886,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2014-glove-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2014-glove-zh-original-v1.mp3"
@@ -43053,7 +42902,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2014-glove-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2014-glove-en-v1.mp3"
@@ -43755,7 +43603,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-gan-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-gan-zh-original-v1.mp3"
@@ -43772,7 +43619,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-gan-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-gan-en-v1.mp3"
@@ -44321,7 +44167,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2014-conditional-gan-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2014-conditional-gan-zh-original-v1.mp3"
@@ -44338,7 +44183,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2014-conditional-gan-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2014-conditional-gan-en-v1.mp3"
@@ -44887,7 +44731,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-dcgan-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-dcgan-zh-original-v1.mp3"
@@ -44904,7 +44747,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-dcgan-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-dcgan-en-v1.mp3"
@@ -45450,7 +45292,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-wasserstein-gan-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-wasserstein-gan-zh-original-v1.mp3"
@@ -45467,7 +45308,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-wasserstein-gan-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-wasserstein-gan-en-v1.mp3"
@@ -46100,7 +45940,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-cyclegan-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-cyclegan-zh-original-v1.mp3"
@@ -46117,7 +45956,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-cyclegan-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-cyclegan-en-v1.mp3"
@@ -46668,7 +46506,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-pix2pix-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-pix2pix-zh-original-v1.mp3"
@@ -46685,7 +46522,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-pix2pix-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-pix2pix-en-v1.mp3"
@@ -47236,7 +47072,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2019-stylegan-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2019-stylegan-zh-original-v1.mp3"
@@ -47253,7 +47088,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2019-stylegan-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2019-stylegan-en-v1.mp3"
@@ -47820,7 +47654,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2013-variational-autoencoder-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2013-variational-autoencoder-zh-original-v1.mp3"
@@ -47837,7 +47670,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2013-variational-autoencoder-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2013-variational-autoencoder-en-v1.mp3"
@@ -48420,7 +48252,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-diffusion-model-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-diffusion-model-zh-original-v1.mp3"
@@ -48437,7 +48268,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-diffusion-model-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-diffusion-model-en-v1.mp3"
@@ -49005,7 +48835,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2005-gnn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2005-gnn-zh-original-v1.mp3"
@@ -49022,7 +48851,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2005-gnn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2005-gnn-en-v1.mp3"
@@ -49655,7 +49483,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2016-gcn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2016-gcn-zh-original-v1.mp3"
@@ -49672,7 +49499,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2016-gcn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2016-gcn-en-v1.mp3"
@@ -50223,7 +50049,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-gat-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-gat-zh-original-v1.mp3"
@@ -50240,7 +50065,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-gat-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-gat-en-v1.mp3"
@@ -50801,7 +50625,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2016-nas-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2016-nas-zh-original-v1.mp3"
@@ -50818,7 +50641,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2016-nas-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2016-nas-en-v1.mp3"
@@ -51369,7 +51191,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-deep-compression-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-deep-compression-zh-original-v1.mp3"
@@ -51386,7 +51207,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-deep-compression-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-deep-compression-en-v1.mp3"
@@ -51963,7 +51783,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-knowledge-distillation-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-knowledge-distillation-zh-original-v1.mp3"
@@ -51980,7 +51799,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-knowledge-distillation-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-knowledge-distillation-en-v1.mp3"
@@ -52542,7 +52360,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2009-imagenet-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2009-imagenet-zh-original-v1.mp3"
@@ -52559,7 +52376,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2009-imagenet-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2009-imagenet-en-v1.mp3"
@@ -53079,7 +52895,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2014-ms-coco-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2014-ms-coco-zh-original-v1.mp3"
@@ -53096,7 +52911,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2014-ms-coco-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2014-ms-coco-en-v1.mp3"
@@ -53633,7 +53447,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1988-td-update-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1988-td-update-zh-original-v1.mp3"
@@ -53650,7 +53463,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1988-td-update-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1988-td-update-en-v1.mp3"
@@ -54197,7 +54009,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1989-q-learning-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1989-q-learning-zh-original-v1.mp3"
@@ -54214,7 +54025,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1989-q-learning-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1989-q-learning-en-v1.mp3"
@@ -54801,7 +54611,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2013-dqn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2013-dqn-zh-original-v1.mp3"
@@ -54818,7 +54627,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2013-dqn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2013-dqn-en-v1.mp3"
@@ -55403,7 +55211,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-ddpg-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-ddpg-zh-original-v1.mp3"
@@ -55420,7 +55227,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-ddpg-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-ddpg-en-v1.mp3"
@@ -56061,7 +55867,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2016-alphago-zh-original-v1.mp3"
@@ -56078,7 +55883,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2016-alphago-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2016-alphago-en-v1.mp3"
@@ -56722,7 +56526,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2020-alphafold-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2020-alphafold-zh-original-v1.mp3"
@@ -56739,7 +56542,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2020-alphafold-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2020-alphafold-en-v1.mp3"
@@ -57450,7 +57252,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1983-actor-critic-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1983-actor-critic-zh-original-v1.mp3"
@@ -57467,7 +57268,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1983-actor-critic-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1983-actor-critic-en-v1.mp3"
@@ -58018,7 +57818,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2016-a3c-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2016-a3c-zh-original-v1.mp3"
@@ -58035,7 +57834,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2016-a3c-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2016-a3c-en-v1.mp3"
@@ -58602,7 +58400,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1994-sarsa-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1994-sarsa-zh-original-v1.mp3"
@@ -58619,7 +58416,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1994-sarsa-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1994-sarsa-en-v1.mp3"
@@ -59147,7 +58943,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1992-reinforce-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1992-reinforce-zh-original-v1.mp3"
@@ -59164,7 +58959,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1992-reinforce-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1992-reinforce-en-v1.mp3"
@@ -59715,7 +59509,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1999-policy-gradient-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1999-policy-gradient-zh-original-v1.mp3"
@@ -59732,7 +59525,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1999-policy-gradient-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1999-policy-gradient-en-v1.mp3"
@@ -60316,7 +60108,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1984-cart-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1984-cart-zh-original-v1.mp3"
@@ -60333,7 +60124,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1984-cart-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1984-cart-en-v1.mp3"
@@ -60831,7 +60621,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1986-id3-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1986-id3-zh-original-v1.mp3"
@@ -60848,7 +60637,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1986-id3-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1986-id3-en-v1.mp3"
@@ -61418,7 +61206,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1993-c45-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1993-c45-zh-original-v1.mp3"
@@ -61435,7 +61222,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1993-c45-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1993-c45-en-v1.mp3"
@@ -61970,7 +61756,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1996-bagging-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1996-bagging-zh-original-v1.mp3"
@@ -61987,7 +61772,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1996-bagging-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1996-bagging-en-v1.mp3"
@@ -62538,7 +62322,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2001-random-forests-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2001-random-forests-zh-original-v1.mp3"
@@ -62555,7 +62338,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2001-random-forests-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2001-random-forests-en-v1.mp3"
@@ -63092,7 +62874,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1990-boosting-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1990-boosting-zh-original-v1.mp3"
@@ -63109,7 +62890,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1990-boosting-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1990-boosting-en-v1.mp3"
@@ -63642,7 +63422,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1997-adaboost-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1997-adaboost-zh-original-v1.mp3"
@@ -63659,7 +63438,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1997-adaboost-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1997-adaboost-en-v1.mp3"
@@ -64194,7 +63972,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2001-gradient-boosting-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2001-gradient-boosting-zh-original-v1.mp3"
@@ -64211,7 +63988,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2001-gradient-boosting-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2001-gradient-boosting-en-v1.mp3"
@@ -64762,7 +64538,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2016-xgboost-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2016-xgboost-zh-original-v1.mp3"
@@ -64779,7 +64554,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2016-xgboost-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2016-xgboost-en-v1.mp3"
@@ -65332,7 +65106,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-lightgbm-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-lightgbm-zh-original-v1.mp3"
@@ -65349,7 +65122,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2017-lightgbm-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2017-lightgbm-en-v1.mp3"
@@ -65885,7 +65657,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1985-bayesian-network-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1985-bayesian-network-zh-original-v1.mp3"
@@ -65902,7 +65673,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1985-bayesian-network-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1985-bayesian-network-en-v1.mp3"
@@ -66419,7 +66189,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2003-lda-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2003-lda-zh-original-v1.mp3"
@@ -66436,7 +66205,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2003-lda-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2003-lda-en-v1.mp3"
@@ -66956,7 +66724,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2001-crf-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2001-crf-zh-original-v1.mp3"
@@ -66973,7 +66740,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2001-crf-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2001-crf-en-v1.mp3"
@@ -67509,7 +67275,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1975-genetic-algorithm-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1975-genetic-algorithm-zh-original-v1.mp3"
@@ -67526,7 +67291,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1975-genetic-algorithm-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1975-genetic-algorithm-en-v1.mp3"
@@ -68058,7 +67822,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1983-simulated-annealing-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1983-simulated-annealing-zh-original-v1.mp3"
@@ -68075,7 +67838,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1983-simulated-annealing-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1983-simulated-annealing-en-v1.mp3"
@@ -68633,7 +68395,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-001-swin-transformer-v2-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-001-swin-transformer-v2-zh-original-v1.mp3"
@@ -68650,7 +68411,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-001-swin-transformer-v2-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-001-swin-transformer-v2-en-v1.mp3"
@@ -69486,7 +69246,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-002-simmim-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-002-simmim-zh-original-v1.mp3"
@@ -69503,7 +69262,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-002-simmim-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-002-simmim-en-v1.mp3"
@@ -70372,7 +70130,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-024-whisper-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-024-whisper-zh-original-v1.mp3"
@@ -70389,7 +70146,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-024-whisper-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-024-whisper-en-v1.mp3"
@@ -71163,7 +70919,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-039-palm-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-039-palm-zh-original-v1.mp3"
@@ -71180,7 +70935,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-039-palm-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-039-palm-en-v1.mp3"
@@ -71987,7 +71741,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-048-instructgpt-zh-original-v1.mp3"
@@ -72004,7 +71757,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-048-instructgpt-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-048-instructgpt-en-v1.mp3"
@@ -72800,7 +72552,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-059-chain-of-thought-prompting-zh-original-v1.mp3"
@@ -72817,7 +72568,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-059-chain-of-thought-prompting-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-059-chain-of-thought-prompting-en-v1.mp3"
@@ -73510,7 +73260,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-058-chatgpt-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-058-chatgpt-zh-original-v1.mp3"
@@ -73527,7 +73276,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-058-chatgpt-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-058-chatgpt-en-v1.mp3"
@@ -74185,7 +73933,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-081-latent-diffusion-models-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-081-latent-diffusion-models-zh-original-v1.mp3"
@@ -74202,7 +73949,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-081-latent-diffusion-models-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-081-latent-diffusion-models-en-v1.mp3"
@@ -75052,7 +74798,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-114-alphatensor-zh-original-v1.mp3"
@@ -75069,7 +74814,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-114-alphatensor-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-114-alphatensor-en-v1.mp3"
@@ -75749,7 +75493,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-117-saycan-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-117-saycan-zh-original-v1.mp3"
@@ -75766,7 +75509,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-117-saycan-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-117-saycan-en-v1.mp3"
@@ -76544,7 +76286,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-035-llama-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-035-llama-zh-original-v1.mp3"
@@ -76561,7 +76302,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-035-llama-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-035-llama-en-v1.mp3"
@@ -77239,7 +76979,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-051-gpt-4-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-051-gpt-4-zh-original-v1.mp3"
@@ -77256,7 +76995,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-051-gpt-4-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-051-gpt-4-en-v1.mp3"
@@ -77931,7 +77669,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-057-claude-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-057-claude-zh-original-v1.mp3"
@@ -77948,7 +77685,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-057-claude-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-057-claude-en-v1.mp3"
@@ -78689,7 +78425,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-028-blip-2-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-028-blip-2-zh-original-v1.mp3"
@@ -78706,7 +78441,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-028-blip-2-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-028-blip-2-en-v1.mp3"
@@ -79438,7 +79172,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-063-llava-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-063-llava-zh-original-v1.mp3"
@@ -79455,7 +79188,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-063-llava-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-063-llava-en-v1.mp3"
@@ -80168,7 +79900,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-037-palm-e-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-037-palm-e-zh-original-v1.mp3"
@@ -80185,7 +79916,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-037-palm-e-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-037-palm-e-en-v1.mp3"
@@ -80933,7 +80663,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-094-controlnet-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-094-controlnet-zh-original-v1.mp3"
@@ -80950,7 +80679,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-094-controlnet-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-094-controlnet-en-v1.mp3"
@@ -81783,7 +81511,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-101-segment-anything-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-101-segment-anything-zh-original-v1.mp3"
@@ -81800,7 +81527,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-101-segment-anything-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-101-segment-anything-en-v1.mp3"
@@ -82570,7 +82296,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-087-gen2-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-087-gen2-zh-original-v1.mp3"
@@ -82587,7 +82312,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-087-gen2-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-087-gen2-en-v1.mp3"
@@ -83396,7 +83120,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-110-esmfold-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-110-esmfold-zh-original-v1.mp3"
@@ -83413,7 +83136,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-annual-2022-2023-110-esmfold-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-annual-2022-2023-110-esmfold-en-v1.mp3"
@@ -84169,7 +83891,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1956-dartmouth-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1956-dartmouth-zh-original-v1.mp3"
@@ -84186,7 +83907,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1956-dartmouth-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1956-dartmouth-en-v1.mp3"
@@ -84712,7 +84432,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1957-perceptron-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1957-perceptron-zh-original-v1.mp3"
@@ -84729,7 +84448,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1957-perceptron-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1957-perceptron-en-v1.mp3"
@@ -85365,7 +85083,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1969-ai-winter-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1969-ai-winter-zh-original-v1.mp3"
@@ -85382,7 +85099,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1969-ai-winter-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1969-ai-winter-en-v1.mp3"
@@ -85703,7 +85419,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1980-neocognitron-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1980-neocognitron-zh-original-v1.mp3"
@@ -85720,7 +85435,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-1980-neocognitron-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-1980-neocognitron-en-v1.mp3"
@@ -86230,7 +85944,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1982-hopfield-network-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1982-hopfield-network-zh-original-v1.mp3"
@@ -86247,7 +85960,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1982-hopfield-network-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1982-hopfield-network-en-v1.mp3"
@@ -86784,7 +86496,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1986-backpropagation-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1986-backpropagation-zh-original-v1.mp3"
@@ -86801,7 +86512,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1986-backpropagation-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1986-backpropagation-en-v1.mp3"
@@ -87165,7 +86875,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1986-rnn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1986-rnn-zh-original-v1.mp3"
@@ -87182,7 +86891,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1986-rnn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1986-rnn-en-v1.mp3"
@@ -87481,7 +87189,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1989-cnn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1989-cnn-zh-original-v1.mp3"
@@ -87498,7 +87205,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1989-cnn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1989-cnn-en-v1.mp3"
@@ -88108,7 +87814,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1997-lstm-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1997-lstm-zh-original-v1.mp3"
@@ -88125,7 +87830,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1997-lstm-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1997-lstm-en-v1.mp3"
@@ -88745,7 +88449,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2006-dbn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2006-dbn-zh-original-v1.mp3"
@@ -88762,7 +88465,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2006-dbn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2006-dbn-en-v1.mp3"
@@ -89292,7 +88994,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2009-imagenet-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2009-imagenet-zh-original-v1.mp3"
@@ -89309,7 +89010,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2009-imagenet-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2009-imagenet-en-v1.mp3"
@@ -89849,7 +89549,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2012-alexnet-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2012-alexnet-zh-original-v1.mp3"
@@ -89866,7 +89565,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2012-alexnet-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2012-alexnet-en-v1.mp3"
@@ -90447,7 +90145,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-vgg-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-vgg-zh-original-v1.mp3"
@@ -90464,7 +90161,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-vgg-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-vgg-en-v1.mp3"
@@ -90994,7 +90690,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2015-googlenet-inception-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2015-googlenet-inception-zh-original-v1.mp3"
@@ -91011,7 +90706,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2015-googlenet-inception-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2015-googlenet-inception-en-v1.mp3"
@@ -91528,7 +91222,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-gan-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-gan-zh-original-v1.mp3"
@@ -91545,7 +91238,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-gan-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-gan-en-v1.mp3"
@@ -92161,7 +91853,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-attention-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-attention-zh-original-v1.mp3"
@@ -92178,7 +91869,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-attention-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-attention-en-v1.mp3"
@@ -92812,7 +92502,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-highway-network-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-highway-network-zh-original-v1.mp3"
@@ -92829,7 +92518,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2014-highway-network-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2014-highway-network-en-v1.mp3"
@@ -93221,7 +92909,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2015-resnet-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2015-resnet-zh-original-v1.mp3"
@@ -93238,7 +92925,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2015-resnet-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2015-resnet-en-v1.mp3"
@@ -93927,7 +93613,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-diffusion-model-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-diffusion-model-zh-original-v1.mp3"
@@ -93944,7 +93629,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ai100-2015-diffusion-model-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ai100-2015-diffusion-model-en-v1.mp3"
@@ -94512,7 +94196,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2016-densenet-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2016-densenet-zh-original-v1.mp3"
@@ -94529,7 +94212,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2016-densenet-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2016-densenet-en-v1.mp3"
@@ -95154,7 +94836,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2016-alphago-zh-original-v1.mp3"
@@ -95171,7 +94852,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2016-alphago-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2016-alphago-en-v1.mp3"
@@ -95889,7 +95569,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2017-transformer-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2017-transformer-zh-original-v1.mp3"
@@ -95906,7 +95585,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2017-transformer-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2017-transformer-en-v1.mp3"
@@ -96511,7 +96189,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2018-bert-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2018-bert-zh-original-v1.mp3"
@@ -96528,7 +96205,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2018-bert-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2018-bert-en-v1.mp3"
@@ -97198,7 +96874,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2018-gpt-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2018-gpt-zh-original-v1.mp3"
@@ -97215,7 +96890,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2018-gpt-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2018-gpt-en-v1.mp3"
@@ -97782,7 +97456,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2019-ai-feynman-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2019-ai-feynman-zh-original-v1.mp3"
@@ -97799,7 +97472,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2019-ai-feynman-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2019-ai-feynman-en-v1.mp3"
@@ -98172,7 +97844,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2020-alphafold-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2020-alphafold-zh-original-v1.mp3"
@@ -98189,7 +97860,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2020-alphafold-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2020-alphafold-en-v1.mp3"
@@ -98888,7 +98558,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2022-post-training-intelligence-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2022-post-training-intelligence-zh-original-v1.mp3"
@@ -98905,7 +98574,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2022-post-training-intelligence-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2022-post-training-intelligence-en-v1.mp3"
@@ -99368,7 +99036,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2023-agents-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2023-agents-zh-original-v1.mp3"
@@ -99385,7 +99052,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2023-agents-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2023-agents-en-v1.mp3"
@@ -99749,7 +99415,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2024-ai-scientist-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2024-ai-scientist-zh-original-v1.mp3"
@@ -99766,7 +99431,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2024-ai-scientist-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2024-ai-scientist-en-v1.mp3"
@@ -100195,7 +99859,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2025-llm-competition-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2025-llm-competition-zh-original-v1.mp3"
@@ -100212,7 +99875,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2025-llm-competition-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2025-llm-competition-en-v1.mp3"
@@ -100645,7 +100307,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1951-strachey-draughts-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1951-strachey-draughts-zh-original-v1.mp3"
@@ -100662,7 +100323,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1951-strachey-draughts-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1951-strachey-draughts-en-v1.mp3"
@@ -101334,7 +100994,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2016-alphago-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2016-alphago-zh-original-v1.mp3"
@@ -101351,7 +101010,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2016-alphago-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2016-alphago-en-v1.mp3"
@@ -101972,7 +101630,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1988-td-update-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1988-td-update-zh-original-v1.mp3"
@@ -101989,7 +101646,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1988-td-update-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1988-td-update-en-v1.mp3"
@@ -102522,7 +102178,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1994-chinook-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1994-chinook-zh-original-v1.mp3"
@@ -102539,7 +102194,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1994-chinook-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1994-chinook-en-v1.mp3"
@@ -103149,7 +102803,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1997-logistello-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1997-logistello-zh-original-v1.mp3"
@@ -103166,7 +102819,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1997-logistello-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1997-logistello-en-v1.mp3"
@@ -103925,7 +103577,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1997-deep-blue-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1997-deep-blue-zh-original-v1.mp3"
@@ -103942,7 +103593,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1997-deep-blue-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1997-deep-blue-en-v1.mp3"
@@ -104645,7 +104295,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2000s-alphacat-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2000s-alphacat-zh-original-v1.mp3"
@@ -104662,7 +104311,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2000s-alphacat-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2000s-alphacat-en-v1.mp3"
@@ -105259,7 +104907,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2013-dqn-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2013-dqn-zh-original-v1.mp3"
@@ -105276,7 +104923,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2013-dqn-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2013-dqn-en-v1.mp3"
@@ -105866,7 +105512,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2017-alphazero-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2017-alphazero-zh-original-v1.mp3"
@@ -105883,7 +105528,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2017-alphazero-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2017-alphazero-en-v1.mp3"
@@ -106573,7 +106217,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2017-libratus-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2017-libratus-zh-original-v1.mp3"
@@ -106590,7 +106233,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2017-libratus-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2017-libratus-en-v1.mp3"
@@ -107206,7 +106848,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2019-pluribus-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2019-pluribus-zh-original-v1.mp3"
@@ -107223,7 +106864,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2019-pluribus-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2019-pluribus-en-v1.mp3"
@@ -107881,7 +107521,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2019-suphx-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2019-suphx-zh-original-v1.mp3"
@@ -107898,7 +107537,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2019-suphx-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2019-suphx-en-v1.mp3"
@@ -108622,7 +108260,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2019-muzero-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2019-muzero-zh-original-v1.mp3"
@@ -108639,7 +108276,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/2019-muzero-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "2019-muzero-en-v1.mp3"
@@ -109196,8 +108832,8 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/humanistic-cycle/ancient-hephaestus-automata/homer-bust-british-museum.jpg",
-        "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg",
-        "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg"
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg",
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg"
       ],
       "imageMeta": {
         "resources/images/humanistic-cycle/ancient-hephaestus-automata/homer-bust-british-museum.jpg": {
@@ -109236,40 +108872,6 @@ const milestones = [
             "homer"
           ]
         },
-        "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg": {
-          "caption": {
-            "zh": "赫菲斯托斯与忒提斯：铸造厂画家杯",
-            "en": "Hephaistos and Thetis on a kylix by the Foundry Painter"
-          },
-          "subcaption": {
-            "zh": "公元前490—480年的阿提卡红绘陶杯，描绘赫菲斯托斯把阿喀琉斯的新铠甲交给忒提斯。",
-            "en": "Attic red-figure kylix, 490–480 BC, depicting Hephaestus handing Achilles' new armor to Thetis."
-          },
-          "sourceName": {
-            "zh": "Wikimedia Commons 文件页",
-            "en": "Wikimedia Commons file page"
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hephaistos_Thetis_at_Kylix_by_the_Foundry_Painter_Antikensammlung_Berlin_F2294.jpg",
-          "license": {
-            "zh": "公有领域",
-            "en": "Public domain"
-          },
-          "sourceId": "source-ancient-hephaestus-automata-verified-image",
-          "rights": {
-            "status": "public-domain",
-            "license": {
-              "zh": "公有领域",
-              "en": "Public domain"
-            },
-            "usage": {
-              "zh": "用于 AI 人文故事线的古希腊文学与自动体想象历史资料展示。",
-              "en": "Used as historical reference imagery for the AI humanities storyline's Greek literary and automata context."
-            }
-          },
-          "role": "artifact-reference",
-          "type": "image",
-          "figureIds": []
-        },
         "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg": {
           "caption": {
             "zh": "德米特里奥斯·查尔科孔迪勒斯编校的1488年《伊利亚特》首印本",
@@ -109303,6 +108905,40 @@ const milestones = [
           "role": "paper-reference",
           "type": "image",
           "figureIds": []
+        },
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg": {
+          "caption": {
+            "zh": "赫菲斯托斯与忒提斯：铸造厂画家杯",
+            "en": "Hephaistos and Thetis on a kylix by the Foundry Painter"
+          },
+          "subcaption": {
+            "zh": "公元前490—480年的阿提卡红绘陶杯，描绘赫菲斯托斯把阿喀琉斯的新铠甲交给忒提斯。",
+            "en": "Attic red-figure kylix, 490–480 BC, depicting Hephaestus handing Achilles' new armor to Thetis."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hephaistos_Thetis_at_Kylix_by_the_Foundry_Painter_Antikensammlung_Berlin_F2294.jpg",
+          "license": {
+            "zh": "公有领域",
+            "en": "Public domain"
+          },
+          "sourceId": "source-ancient-hephaestus-automata-verified-image",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "公有领域",
+              "en": "Public domain"
+            },
+            "usage": {
+              "zh": "用于 AI 人文故事线的古希腊文学与自动体想象历史资料展示。",
+              "en": "Used as historical reference imagery for the AI humanities storyline's Greek literary and automata context."
+            }
+          },
+          "role": "artifact-reference",
+          "type": "image",
+          "figureIds": []
         }
       },
       "audios": [
@@ -109317,7 +108953,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ancient-hephaestus-automata-zh-humanistic-hephaestus-zh-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ancient-hephaestus-automata-zh-humanistic-hephaestus-zh-volc-v1-2026-09-14.mp3"
@@ -109334,7 +108969,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/ancient-hephaestus-automata-en-humanistic-hephaestus-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "ancient-hephaestus-automata-en-humanistic-hephaestus-en-volc-v1-2026-09-14.mp3"
@@ -109343,8 +108977,8 @@ const milestones = [
       ],
       "assetIds": [
         "asset-ancient-hephaestus-automata-homer-bust",
-        "asset-ancient-hephaestus-automata-verified-image",
         "asset-ancient-hephaestus-automata-iliad-1488-editio-princeps",
+        "asset-ancient-hephaestus-automata-verified-image",
         "asset-ancient-hephaestus-automata-audio-zh-humanistic-20260914-v1",
         "asset-ancient-hephaestus-automata-audio-en-humanistic-20260914-v1"
       ]
@@ -109386,40 +109020,6 @@ const milestones = [
           "homer"
         ]
       },
-      "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg": {
-        "caption": {
-          "zh": "赫菲斯托斯与忒提斯：铸造厂画家杯",
-          "en": "Hephaistos and Thetis on a kylix by the Foundry Painter"
-        },
-        "subcaption": {
-          "zh": "公元前490—480年的阿提卡红绘陶杯，描绘赫菲斯托斯把阿喀琉斯的新铠甲交给忒提斯。",
-          "en": "Attic red-figure kylix, 490–480 BC, depicting Hephaestus handing Achilles' new armor to Thetis."
-        },
-        "sourceName": {
-          "zh": "Wikimedia Commons 文件页",
-          "en": "Wikimedia Commons file page"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hephaistos_Thetis_at_Kylix_by_the_Foundry_Painter_Antikensammlung_Berlin_F2294.jpg",
-        "license": {
-          "zh": "公有领域",
-          "en": "Public domain"
-        },
-        "sourceId": "source-ancient-hephaestus-automata-verified-image",
-        "rights": {
-          "status": "public-domain",
-          "license": {
-            "zh": "公有领域",
-            "en": "Public domain"
-          },
-          "usage": {
-            "zh": "用于 AI 人文故事线的古希腊文学与自动体想象历史资料展示。",
-            "en": "Used as historical reference imagery for the AI humanities storyline's Greek literary and automata context."
-          }
-        },
-        "role": "artifact-reference",
-        "type": "image",
-        "figureIds": []
-      },
       "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg": {
         "caption": {
           "zh": "德米特里奥斯·查尔科孔迪勒斯编校的1488年《伊利亚特》首印本",
@@ -109451,6 +109051,40 @@ const milestones = [
           }
         },
         "role": "paper-reference",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg": {
+        "caption": {
+          "zh": "赫菲斯托斯与忒提斯：铸造厂画家杯",
+          "en": "Hephaistos and Thetis on a kylix by the Foundry Painter"
+        },
+        "subcaption": {
+          "zh": "公元前490—480年的阿提卡红绘陶杯，描绘赫菲斯托斯把阿喀琉斯的新铠甲交给忒提斯。",
+          "en": "Attic red-figure kylix, 490–480 BC, depicting Hephaestus handing Achilles' new armor to Thetis."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hephaistos_Thetis_at_Kylix_by_the_Foundry_Painter_Antikensammlung_Berlin_F2294.jpg",
+        "license": {
+          "zh": "公有领域",
+          "en": "Public domain"
+        },
+        "sourceId": "source-ancient-hephaestus-automata-verified-image",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域",
+            "en": "Public domain"
+          },
+          "usage": {
+            "zh": "用于 AI 人文故事线的古希腊文学与自动体想象历史资料展示。",
+            "en": "Used as historical reference imagery for the AI humanities storyline's Greek literary and automata context."
+          }
+        },
+        "role": "artifact-reference",
         "type": "image",
         "figureIds": []
       }
@@ -109789,7 +109423,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/sandman-1816-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "sandman-1816-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -109806,7 +109439,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/sandman-1816-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "sandman-1816-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -110175,7 +109807,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/descartes-automata-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "descartes-automata-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -110192,7 +109823,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/descartes-automata-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "descartes-automata-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -110580,7 +110210,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/jaquet-droz-automata-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "jaquet-droz-automata-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -110597,7 +110226,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/jaquet-droz-automata-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "jaquet-droz-automata-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -111052,7 +110680,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/frankenstein-1818-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "frankenstein-1818-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -111069,7 +110696,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/frankenstein-1818-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "frankenstein-1818-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -111438,7 +111064,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/darwin-among-machines-1863-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "darwin-among-machines-1863-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -111455,7 +111080,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/darwin-among-machines-1863-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "darwin-among-machines-1863-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -111771,7 +111395,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/erewhon-1872-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "erewhon-1872-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -111788,7 +111411,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/erewhon-1872-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "erewhon-1872-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -112104,7 +111726,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/impressions-theophrastus-1879-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "impressions-theophrastus-1879-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -112121,7 +111742,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/impressions-theophrastus-1879-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "impressions-theophrastus-1879-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -112439,7 +112059,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/future-eve-1886-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "future-eve-1886-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -112456,7 +112075,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/future-eve-1886-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "future-eve-1886-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -112774,7 +112392,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/new-china-future-1902-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "new-china-future-1902-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -112791,7 +112408,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/new-china-future-1902-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "new-china-future-1902-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -113141,7 +112757,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1920-rur-robots-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1920-rur-robots-zh-original-v1.mp3"
@@ -113158,7 +112773,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1920-rur-robots-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1920-rur-robots-en-v1.mp3"
@@ -113651,7 +113265,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1942-asimov-runaround-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1942-asimov-runaround-zh-original-v1.mp3"
@@ -113668,7 +113281,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1942-asimov-runaround-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1942-asimov-runaround-en-v1.mp3"
@@ -114113,7 +113725,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1950-i-robot-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1950-i-robot-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -114130,7 +113741,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1950-i-robot-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1950-i-robot-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -114464,7 +114074,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1950-turing-test-zh-interact-v1.mp3"
@@ -114481,7 +114090,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1950-turing-test-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1950-turing-test-en-v1.mp3"
@@ -115000,7 +114608,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-computationalism-1950-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-computationalism-1950-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -115017,7 +114624,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-computationalism-1950-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-computationalism-1950-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -115401,7 +115007,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1978-xiaolingtong-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1978-xiaolingtong-zh-original-v1.mp3"
@@ -115418,7 +115023,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1978-xiaolingtong-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1978-xiaolingtong-en-v1.mp3"
@@ -115896,7 +115500,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1962-a-michael-noll-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1962-a-michael-noll-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -115913,7 +115516,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1962-a-michael-noll-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1962-a-michael-noll-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -116231,7 +115833,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1966-17-babel-17-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1966-17-babel-17-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -116248,7 +115849,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1966-17-babel-17-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1966-17-babel-17-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -116603,7 +116203,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1967-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1967-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -116620,7 +116219,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1967-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1967-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -117028,7 +116626,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1968-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1968-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -117045,7 +116642,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1968-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1968-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -117574,7 +117170,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1968-hal-9000-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1968-hal-9000-zh-original-v1.mp3"
@@ -117591,7 +117186,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1968-hal-9000-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1968-hal-9000-en-v1.mp3"
@@ -118147,7 +117741,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1972-dreyfus-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1972-dreyfus-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -118164,7 +117757,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1972-dreyfus-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1972-dreyfus-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -118482,7 +118074,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1990-chinese-nation-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1990-chinese-nation-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -118499,7 +118090,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1990-chinese-nation-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1990-chinese-nation-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -118817,7 +118407,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1979-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1979-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -118834,7 +118423,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1979-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1979-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -119152,7 +118740,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1979-geb-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1979-geb-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -119169,7 +118756,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1979-geb-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1979-geb-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -119522,7 +119108,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1980-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1980-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -119539,7 +119124,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1980-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1980-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -119908,7 +119492,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1981-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1981-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -119925,7 +119508,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1981-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1981-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -120275,7 +119857,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1984-neuromancer-zh-original-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1984-neuromancer-zh-original-v1.mp3"
@@ -120292,7 +119873,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/1984-neuromancer-en-v1.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "1984-neuromancer-en-v1.mp3"
@@ -120737,7 +120317,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1984-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1984-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -120754,7 +120333,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1984-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1984-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -121072,7 +120650,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1985-cyborg-manifesto-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1985-cyborg-manifesto-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -121089,7 +120666,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1985-cyborg-manifesto-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1985-cyborg-manifesto-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -121407,7 +120983,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1998-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1998-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -121424,7 +120999,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1998-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1998-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -121742,7 +121316,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1988-mind-children-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1988-mind-children-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -121759,7 +121332,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1988-mind-children-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1988-mind-children-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -122112,7 +121684,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1989-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1989-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -122129,7 +121700,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1989-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1989-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -122551,7 +122121,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1990-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1990-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -122568,7 +122137,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1990-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1990-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -122939,7 +122507,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1991-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1991-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -122956,7 +122523,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1991-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1991-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -123348,7 +122914,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1991-ghost-shell-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1991-ghost-shell-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -123365,7 +122930,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1991-ghost-shell-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1991-ghost-shell-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -123774,7 +123338,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1992-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1992-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -123791,7 +123354,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1992-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1992-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -124109,7 +123671,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1993-singularity-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1993-singularity-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -124126,7 +123687,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1993-singularity-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1993-singularity-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -124444,7 +124004,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1993-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1993-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -124461,7 +124020,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1993-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1993-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -124779,7 +124337,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1995-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1995-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -124796,7 +124353,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1995-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1995-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -125114,7 +124670,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1995-hard-problem-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1995-hard-problem-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -125131,7 +124686,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1995-hard-problem-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1995-hard-problem-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -125465,7 +125019,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1998-extended-mind-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1998-extended-mind-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -125482,7 +125035,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1998-extended-mind-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1998-extended-mind-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -125910,7 +125462,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1999-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1999-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -125927,7 +125478,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-1999-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-1999-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -126519,7 +126069,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2001-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2001-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -126536,7 +126085,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2001-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2001-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -127034,7 +126582,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2003-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2003-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -127051,7 +126598,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2003-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2003-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -127516,7 +127062,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2008-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2008-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -127533,7 +127078,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2008-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2008-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -128031,7 +127575,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2010-teamlab-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2010-teamlab-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -128048,7 +127591,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2010-teamlab-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2010-teamlab-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -128476,7 +128018,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2012-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2012-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -128493,7 +128034,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2012-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2012-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -129120,7 +128660,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2013-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2013-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -129137,7 +128676,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2013-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2013-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -129740,7 +129278,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2014-superintelligence-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2014-superintelligence-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -129757,7 +129294,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2014-superintelligence-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2014-superintelligence-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -130091,7 +129627,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2025-ai-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2025-ai-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -130108,7 +129643,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2025-ai-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2025-ai-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -130463,7 +129997,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2021-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2021-event-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -130480,7 +130013,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2021-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2021-event-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -130851,7 +130383,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2022-reality-plus-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2022-reality-plus-zh-humanistic-missing-zh-volc-v4-2026-09-14.mp3"
@@ -130868,7 +130399,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2022-reality-plus-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2022-reality-plus-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
@@ -131223,7 +130753,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2025-iit-ai-zh-humanistic-iit-zh-volc-v5-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2025-iit-ai-zh-humanistic-iit-zh-volc-v5-2026-09-14.mp3"
@@ -131240,7 +130769,6 @@ const milestones = [
           "contentType": "audio/mpeg",
           "storage": {
             "provider": "aliyun-oss",
-            "bucket": "[REDACTED_OSS_BUCKET]",
             "objectKey": "audio/ai-history/releases/humanistic-2025-iit-ai-en-humanistic-missing-en-volc-v1-2026-09-14.mp3",
             "profileId": "ai-history-audio-releases",
             "objectName": "humanistic-2025-iit-ai-en-humanistic-missing-en-volc-v1-2026-09-14.mp3"
