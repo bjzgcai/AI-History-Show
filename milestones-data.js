@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-09-14 08:34
+// 生成时间: 2026-09-21 03:20
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 236, errors 0
 
@@ -109196,8 +109196,8 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/humanistic-cycle/ancient-hephaestus-automata/homer-bust-british-museum.jpg",
-        "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg",
-        "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg"
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg",
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg"
       ],
       "imageMeta": {
         "resources/images/humanistic-cycle/ancient-hephaestus-automata/homer-bust-british-museum.jpg": {
@@ -109236,40 +109236,6 @@ const milestones = [
             "homer"
           ]
         },
-        "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg": {
-          "caption": {
-            "zh": "德米特里奥斯·查尔科孔迪勒斯编校的1488年《伊利亚特》首印本",
-            "en": "Demetrios Chalkokondyles's 1488 editio princeps of the Iliad"
-          },
-          "subcaption": {
-            "zh": "现藏于雅典根纳迪乌斯图书馆，2023年6月13日摄。",
-            "en": "Held by the Gennadius Library in Athens; photographed on June 13, 2023."
-          },
-          "sourceName": {
-            "zh": "Wikimedia Commons 文件页",
-            "en": "Wikimedia Commons file page"
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Demetrios_Chalkokondyles%27s_1488_editio_princeps_of_the_Iliad_in_the_collection_of_the_Gennadius_Library,_Athens,_June_13th,_2023.jpg",
-          "license": {
-            "zh": "CC BY 4.0",
-            "en": "CC BY 4.0"
-          },
-          "sourceId": "source-ancient-hephaestus-automata-iliad-1488-editio-princeps",
-          "rights": {
-            "status": "licensed",
-            "license": {
-              "zh": "CC BY 4.0",
-              "en": "CC BY 4.0"
-            },
-            "usage": {
-              "zh": "摄影者 Katolophyromai；用于展示《伊利亚特》的早期印刷版本。",
-              "en": "Photograph by Katolophyromai; used to present an early printed edition of the Iliad."
-            }
-          },
-          "role": "paper-reference",
-          "type": "image",
-          "figureIds": []
-        },
         "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg": {
           "caption": {
             "zh": "赫菲斯托斯与忒提斯：铸造厂画家杯",
@@ -109301,6 +109267,40 @@ const milestones = [
             }
           },
           "role": "artifact-reference",
+          "type": "image",
+          "figureIds": []
+        },
+        "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg": {
+          "caption": {
+            "zh": "德米特里奥斯·查尔科孔迪勒斯编校的1488年《伊利亚特》首印本",
+            "en": "Demetrios Chalkokondyles's 1488 editio princeps of the Iliad"
+          },
+          "subcaption": {
+            "zh": "现藏于雅典根纳迪乌斯图书馆，2023年6月13日摄。",
+            "en": "Held by the Gennadius Library in Athens; photographed on June 13, 2023."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons 文件页",
+            "en": "Wikimedia Commons file page"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Demetrios_Chalkokondyles%27s_1488_editio_princeps_of_the_Iliad_in_the_collection_of_the_Gennadius_Library,_Athens,_June_13th,_2023.jpg",
+          "license": {
+            "zh": "CC BY 4.0",
+            "en": "CC BY 4.0"
+          },
+          "sourceId": "source-ancient-hephaestus-automata-iliad-1488-editio-princeps",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY 4.0",
+              "en": "CC BY 4.0"
+            },
+            "usage": {
+              "zh": "摄影者 Katolophyromai；用于展示《伊利亚特》的早期印刷版本。",
+              "en": "Photograph by Katolophyromai; used to present an early printed edition of the Iliad."
+            }
+          },
+          "role": "paper-reference",
           "type": "image",
           "figureIds": []
         }
@@ -109343,8 +109343,8 @@ const milestones = [
       ],
       "assetIds": [
         "asset-ancient-hephaestus-automata-homer-bust",
-        "asset-ancient-hephaestus-automata-iliad-1488-editio-princeps",
         "asset-ancient-hephaestus-automata-verified-image",
+        "asset-ancient-hephaestus-automata-iliad-1488-editio-princeps",
         "asset-ancient-hephaestus-automata-audio-zh-humanistic-20260914-v1",
         "asset-ancient-hephaestus-automata-audio-en-humanistic-20260914-v1"
       ]
@@ -109386,40 +109386,6 @@ const milestones = [
           "homer"
         ]
       },
-      "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg": {
-        "caption": {
-          "zh": "德米特里奥斯·查尔科孔迪勒斯编校的1488年《伊利亚特》首印本",
-          "en": "Demetrios Chalkokondyles's 1488 editio princeps of the Iliad"
-        },
-        "subcaption": {
-          "zh": "现藏于雅典根纳迪乌斯图书馆，2023年6月13日摄。",
-          "en": "Held by the Gennadius Library in Athens; photographed on June 13, 2023."
-        },
-        "sourceName": {
-          "zh": "Wikimedia Commons 文件页",
-          "en": "Wikimedia Commons file page"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Demetrios_Chalkokondyles%27s_1488_editio_princeps_of_the_Iliad_in_the_collection_of_the_Gennadius_Library,_Athens,_June_13th,_2023.jpg",
-        "license": {
-          "zh": "CC BY 4.0",
-          "en": "CC BY 4.0"
-        },
-        "sourceId": "source-ancient-hephaestus-automata-iliad-1488-editio-princeps",
-        "rights": {
-          "status": "licensed",
-          "license": {
-            "zh": "CC BY 4.0",
-            "en": "CC BY 4.0"
-          },
-          "usage": {
-            "zh": "摄影者 Katolophyromai；用于展示《伊利亚特》的早期印刷版本。",
-            "en": "Photograph by Katolophyromai; used to present an early printed edition of the Iliad."
-          }
-        },
-        "role": "paper-reference",
-        "type": "image",
-        "figureIds": []
-      },
       "resources/images/humanistic-cycle/ancient-hephaestus-automata/hephaistos-thetis-kylix.jpg": {
         "caption": {
           "zh": "赫菲斯托斯与忒提斯：铸造厂画家杯",
@@ -109451,6 +109417,40 @@ const milestones = [
           }
         },
         "role": "artifact-reference",
+        "type": "image",
+        "figureIds": []
+      },
+      "resources/images/humanistic-cycle/ancient-hephaestus-automata/iliad-1488-editio-princeps.jpg": {
+        "caption": {
+          "zh": "德米特里奥斯·查尔科孔迪勒斯编校的1488年《伊利亚特》首印本",
+          "en": "Demetrios Chalkokondyles's 1488 editio princeps of the Iliad"
+        },
+        "subcaption": {
+          "zh": "现藏于雅典根纳迪乌斯图书馆，2023年6月13日摄。",
+          "en": "Held by the Gennadius Library in Athens; photographed on June 13, 2023."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons 文件页",
+          "en": "Wikimedia Commons file page"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Demetrios_Chalkokondyles%27s_1488_editio_princeps_of_the_Iliad_in_the_collection_of_the_Gennadius_Library,_Athens,_June_13th,_2023.jpg",
+        "license": {
+          "zh": "CC BY 4.0",
+          "en": "CC BY 4.0"
+        },
+        "sourceId": "source-ancient-hephaestus-automata-iliad-1488-editio-princeps",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 4.0",
+            "en": "CC BY 4.0"
+          },
+          "usage": {
+            "zh": "摄影者 Katolophyromai；用于展示《伊利亚特》的早期印刷版本。",
+            "en": "Photograph by Katolophyromai; used to present an early printed edition of the Iliad."
+          }
+        },
+        "role": "paper-reference",
         "type": "image",
         "figureIds": []
       }
