@@ -6,13 +6,10 @@ const fs = require('node:fs');
 const path = require('node:path');
 const {
     AUDIO_CONTENT_TYPES,
-    DEFAULT_BUCKET,
     DEFAULT_CACHE_CONTROL,
-    DEFAULT_ENDPOINT,
     DEFAULT_MANIFEST_KEY,
     DEFAULT_OBJECT_KEY_PREFIX,
     DEFAULT_PROVIDER,
-    DEFAULT_REGION,
     contentTypeForPath,
     isObjectKeyWithinPrefix,
     loadMediaStorageConfig,
@@ -35,9 +32,9 @@ function printUsage() {
             '  node scripts/sync-audio-oss.js publish-access [--dry-run] [--json]',
             '',
             'Configuration:',
-            `  ALIYUN_OSS_ENDPOINT       OSS endpoint (default: ${DEFAULT_ENDPOINT})`,
-            `  ALIYUN_OSS_BUCKET         bucket name (default: ${DEFAULT_BUCKET})`,
-            `  ALIYUN_OSS_REGION         signing region (default: ${DEFAULT_REGION})`,
+            '  ALIYUN_OSS_ENDPOINT       OSS endpoint (required for remote operations)',
+            '  ALIYUN_OSS_BUCKET         bucket name (required for remote operations)',
+            '  ALIYUN_OSS_REGION         signing region (required for remote operations)',
             `  ALIYUN_OSS_MANIFEST_KEY   remote manifest key (default: ${DEFAULT_MANIFEST_KEY})`,
             '  ALIYUN_ACCESS_KEY_ID and ALIYUN_ACCESS_KEY_SECRET are required for push/verify.',
             '',
@@ -113,15 +110,12 @@ function collectAudioAssets(root = ROOT) {
                 absoluteSourcePath: sourcePath ? path.resolve(root, sourcePath) : '',
                 profileId: storage.profileId,
                 provider: storage.provider,
-                bucket: storage.bucket,
                 objectKey: storage.objectKey,
                 objectName: storage.objectName,
                 contentType: String(storage.contentType || contentTypeForPath(sourcePath)).trim(),
                 cacheControl: String(storage.cacheControl || DEFAULT_CACHE_CONTROL).trim(),
                 deliveryUrl: storage.publicUrl,
                 objectKeyPrefix: storage.objectKeyPrefix,
-                endpoint: storage.endpoint,
-                region: storage.region,
                 manifestKey: storage.manifestKey
             });
         }
@@ -148,7 +142,6 @@ function validateAudioAssets(entries) {
             issues.push(`${label}: local source is not a file: ${entry.sourcePath}`);
         }
         if (!entry.provider) issues.push(`${label}: storage.provider is required`);
-        if (!entry.bucket) issues.push(`${label}: storage.bucket is required`);
         if (!entry.objectKey) {
             issues.push(`${label}: storage.objectKey is required`);
         } else {
@@ -187,7 +180,6 @@ async function buildManifest(entries, options = {}) {
             assetId: entry.assetId,
             language: entry.language,
             sourcePath: entry.sourcePath,
-            bucket: entry.bucket,
             objectKey: entry.objectKey,
             contentType: entry.contentType,
             cacheControl: entry.cacheControl,
@@ -211,38 +203,30 @@ function writeManifest(manifest, outputPath = DEFAULT_MANIFEST_PATH) {
     return outputPath;
 }
 
-function resolveOssConfig(args, entries) {
+function resolveOssConfig(args, entries, environment = process.env) {
     const configuredProviders = new Set(entries.map((entry) => entry.provider).filter(Boolean));
-    const configuredBuckets = new Set(entries.map((entry) => entry.bucket).filter(Boolean));
-    const configuredEndpoints = new Set(entries.map((entry) => entry.endpoint).filter(Boolean));
-    const configuredRegions = new Set(entries.map((entry) => entry.region).filter(Boolean));
     const configuredManifestKeys = new Set(entries.map((entry) => entry.manifestKey).filter(Boolean));
     const provider = [...configuredProviders][0] || DEFAULT_PROVIDER;
-    const bucket = String(
-        args.bucket || process.env.ALIYUN_OSS_BUCKET || [...configuredBuckets][0] || DEFAULT_BUCKET
-    ).trim();
+    const endpoint = String(args.endpoint || environment.ALIYUN_OSS_ENDPOINT || '')
+        .trim()
+        .replace(/\/+$/, '');
+    const bucket = String(args.bucket || environment.ALIYUN_OSS_BUCKET || '').trim();
+    const region = String(args.region || environment.ALIYUN_OSS_REGION || '').trim();
     if (configuredProviders.size > 1)
         throw new Error(`Audio assets reference multiple providers: ${[...configuredProviders].join(', ')}`);
-    if (configuredBuckets.size > 1 && !args.bucket && !process.env.ALIYUN_OSS_BUCKET) {
-        throw new Error(`Audio assets reference multiple buckets: ${[...configuredBuckets].join(', ')}`);
-    }
-    if ([...configuredBuckets].some((value) => value !== bucket)) {
-        throw new Error(`Configured bucket ${bucket} does not match Archive audio metadata`);
-    }
+    if (!endpoint) throw new Error('ALIYUN_OSS_ENDPOINT or --endpoint is required for remote operations');
+    if (!bucket) throw new Error('ALIYUN_OSS_BUCKET or --bucket is required for remote operations');
+    if (!region) throw new Error('ALIYUN_OSS_REGION or --region is required for remote operations');
 
     return {
         provider,
-        endpoint: String(
-            args.endpoint || process.env.ALIYUN_OSS_ENDPOINT || [...configuredEndpoints][0] || DEFAULT_ENDPOINT
-        ).replace(/\/+$/, ''),
+        endpoint,
         bucket,
-        region: String(
-            args.region || process.env.ALIYUN_OSS_REGION || [...configuredRegions][0] || DEFAULT_REGION
-        ).trim(),
+        region,
         forcePathStyle: false,
         manifestKey: normalizeObjectKey(
             args['manifest-key'] ||
-                process.env.ALIYUN_OSS_MANIFEST_KEY ||
+                environment.ALIYUN_OSS_MANIFEST_KEY ||
                 [...configuredManifestKeys][0] ||
                 DEFAULT_MANIFEST_KEY
         )
@@ -612,6 +596,18 @@ async function main(argv = process.argv.slice(2)) {
         return;
     }
 
+    const manifest = await buildManifest(entries);
+    const outputPath = path.resolve(args.output || DEFAULT_MANIFEST_PATH);
+    if (command === 'manifest') {
+        writeManifest(manifest, outputPath);
+        console.log(
+            args.json
+                ? JSON.stringify(manifest, null, 2)
+                : `Audio manifest: ${toPosixPath(path.relative(ROOT, outputPath))}`
+        );
+        return;
+    }
+
     const config = resolveOssConfig(args, entries);
     if (command === 'publish-access') {
         const result = await configurePublicAudioAccess(config, entries, { dryRun: args['dry-run'] === true });
@@ -626,18 +622,6 @@ async function main(argv = process.argv.slice(2)) {
                     `${result.corsRules.length} total rule(s).`
             );
         }
-        return;
-    }
-
-    const manifest = await buildManifest(entries);
-    const outputPath = path.resolve(args.output || DEFAULT_MANIFEST_PATH);
-    if (command === 'manifest') {
-        writeManifest(manifest, outputPath);
-        console.log(
-            args.json
-                ? JSON.stringify(manifest, null, 2)
-                : `Audio manifest: ${toPosixPath(path.relative(ROOT, outputPath))}`
-        );
         return;
     }
 
@@ -674,8 +658,6 @@ if (require.main === module) {
 
 module.exports = {
     AUDIO_CONTENT_TYPES,
-    DEFAULT_BUCKET,
-    DEFAULT_ENDPOINT,
     DEFAULT_MANIFEST_KEY,
     DEFAULT_PROVIDER,
     RELEASE_PREFIX,

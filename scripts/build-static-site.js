@@ -4,6 +4,7 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const { writeStaticUmamiConfig } = require('./static-umami-config');
 
 const ROOT = path.resolve(process.env.AI_HISTORY_ARCHIVE_ROOT || path.join(__dirname, '..'));
 const OUTPUT = path.join(ROOT, '.tmp', 'static-site');
@@ -199,6 +200,7 @@ for (const directory of DIRECTORIES) {
     const options = directory === 'resources' || directory === 'public' ? { filter: includeStaticFile } : {};
     copyRequired(path.join(ROOT, directory), path.join(OUTPUT, directory), options);
 }
+writeStaticUmamiConfig(path.join(OUTPUT, 'shared', 'umami-config.js'));
 validateBundle();
 
 const stats = bundleStats(OUTPUT);

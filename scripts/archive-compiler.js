@@ -258,7 +258,6 @@ function buildMilestone(root, storyline, ref, figureRegistry, mediaStorageConfig
                                   ? {
                                         storage: {
                                             provider: storage.provider,
-                                            bucket: storage.bucket,
                                             objectKey: storage.objectKey,
                                             profileId: storage.profileId,
                                             objectName: storage.objectName

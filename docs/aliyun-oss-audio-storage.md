@@ -7,9 +7,9 @@ Archive compiler 生成的 URL，不依赖本地 MP3。
 
 | 配置       | 值                                               |
 | ---------- | ------------------------------------------------ |
-| Bucket     | `zgca-medias`                                    |
-| Region     | `cn-beijing`                                     |
-| Endpoint   | `https://oss-cn-beijing.aliyuncs.com`            |
+| Bucket     | 仅在发布环境配置，不写入仓库                     |
+| Region     | 仅在发布环境配置，不写入仓库                     |
+| Endpoint   | 仅在发布环境配置，不写入仓库                     |
 | 公开根地址 | `https://media.sciencearena.cn`                  |
 | 发布目录   | `audio/ai-history/releases/`                     |
 | Manifest   | `audio/ai-history/manifests/audio-manifest.json` |
@@ -20,7 +20,6 @@ Archive compiler 生成的 URL，不依赖本地 MP3。
 示例对象：
 
 ```text
-oss://zgca-medias/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3
 https://media.sciencearena.cn/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3
 ```
 
@@ -31,9 +30,9 @@ https://media.sciencearena.cn/audio/ai-history/releases/1950-turing-test-zh-inte
 ```bash
 export ALIYUN_ACCESS_KEY_ID='...'
 export ALIYUN_ACCESS_KEY_SECRET='...'
-export ALIYUN_OSS_ENDPOINT='https://oss-cn-beijing.aliyuncs.com'
-export ALIYUN_OSS_BUCKET='zgca-medias'
-export ALIYUN_OSS_REGION='cn-beijing'
+export ALIYUN_OSS_ENDPOINT='<受保护配置中的 Endpoint>'
+export ALIYUN_OSS_BUCKET='<受保护配置中的 Bucket>'
+export ALIYUN_OSS_REGION='<受保护配置中的 Region>'
 ```
 
 真实凭证不得写入 Git、Archive、前端文件、manifest 或命令日志。工作站可以从受保护的 env 文件
@@ -50,7 +49,6 @@ export ALIYUN_OSS_REGION='cn-beijing'
     "deliveryUrl": "https://media.sciencearena.cn/audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3",
     "storage": {
         "provider": "aliyun-oss",
-        "bucket": "zgca-medias",
         "objectKey": "audio/ai-history/releases/1950-turing-test-zh-interact-v1.mp3",
         "sourcePath": "resources/audio/generated/.../1950-turing-test.mp3",
         "contentType": "audio/mpeg",
@@ -59,7 +57,8 @@ export ALIYUN_OSS_REGION='cn-beijing'
 }
 ```
 
-`sourcePath` 只用于发布工作站定位本地生成物，compiler 不会把它暴露给生产页面。
+`sourcePath` 只用于发布工作站定位本地生成物，compiler 不会把它暴露给生产页面。Bucket、Endpoint
+和 Region 只从发布环境读取，不属于 Archive 内容元数据。
 
 ## 发布命令
 

@@ -372,7 +372,6 @@ function validateAudioStorage(filePath, asset) {
         return null;
     }
     if (!hasText(resolved.provider)) addError(filePath, `${label} storage provider is required.`);
-    if (!hasText(resolved.bucket)) addError(filePath, `${label} storage bucket is required.`);
     const objectKeyPrefix = normalizeObjectKey(resolved.objectKeyPrefix).replace(/\/+$/, '');
     if (!hasText(resolved.objectKey) || !isObjectKeyWithinPrefix(resolved.objectKey, objectKeyPrefix)) {
         addError(filePath, `${label} storage object key must stay under its configured profile prefix.`);

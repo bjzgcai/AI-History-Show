@@ -75,6 +75,9 @@ npm run audio:workflow -- validate audio/revisions/<revision>.json
 生成输出 append-only。已有 plan、overlay 或 MP3 不会被覆盖；任何内容或参数调整都必须使用
 新的 `revisionId`。
 
+内部 TTS provider 不提供仓库内默认地址。生成前必须在运行环境或已忽略的 env 文件中配置
+`INNER_TTS_BASE_URL` 和 `INNER_TTS_API_KEY`，也可以显式传递 `--base-url` 与 `--api-key-file`。
+
 ## 3. 审听
 
 ```bash
