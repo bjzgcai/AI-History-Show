@@ -6,7 +6,8 @@ const path = require('node:path');
 const { compileArchive } = require('./archive-compiler.js');
 
 const ROOT = path.resolve(process.env.AI_HISTORY_ARCHIVE_ROOT || path.join(__dirname, '..'));
-const OUTPUTS = [path.join(ROOT, 'milestones-data.js'), path.join(ROOT, 'milestones-data-default.js')];
+// Keep the checked-in fallback stable. Admin and normal generation update only the active runtime data.
+const OUTPUTS = [path.join(ROOT, 'milestones-data.js')];
 const GENERATION_META = path.join(ROOT, '.tmp', 'archive-generation.json');
 
 function latestMtime(targetPath) {

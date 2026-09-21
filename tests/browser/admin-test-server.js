@@ -26,6 +26,9 @@ if (!fixtureRoot.startsWith(`${temporaryRoot}${path.sep}`)) {
 fs.rmSync(fixtureRoot, { recursive: true, force: true });
 fs.mkdirSync(fixtureRoot, { recursive: true });
 fs.cpSync(path.join(projectRoot, 'archive'), path.join(fixtureRoot, 'archive'), { recursive: true });
+for (const name of ['milestones-data.js', 'milestones-data-default.js']) {
+    fs.copyFileSync(path.join(projectRoot, name), path.join(fixtureRoot, name));
+}
 linkTree(path.join(projectRoot, 'resources'), path.join(fixtureRoot, 'resources'));
 for (const name of ['.nojekyll', 'index.html', 'shared', 'public']) {
     const source = path.join(projectRoot, name);

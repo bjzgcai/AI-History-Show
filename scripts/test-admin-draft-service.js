@@ -110,8 +110,10 @@ try {
     service.noteFileChanged(deletedRelativePath);
     status = service.status();
     service.decide(status.active[0].id, 'kept');
-    service.apply();
+    const deletedFileApply = service.apply();
     assert.equal(fs.existsSync(deletedFormalPath), false);
+    assert.equal(deletedFileApply.changePoints.length, 1);
+    assert.equal(deletedFileApply.changePoints[0].summary, 'test-event：修改 variants/temporary.json');
 
     const addedJsonRelativePath = 'archive/events/test-event/variants/added.json';
     service.ensureInitialized();

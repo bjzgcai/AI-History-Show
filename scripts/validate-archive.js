@@ -541,7 +541,9 @@ function validateAssets(eventDir, assets, sourceIds) {
         if (!hasText(asset.role)) addError(filePath, `asset ${asset.id || '<missing>'} is missing role.`);
         checkLocalized(filePath, asset.caption, `asset ${asset.id || '<missing>'} caption`);
         if (isDisplayImage) {
-            checkLocalized(filePath, asset.subcaption, `asset ${asset.id || '<missing>'} subcaption`);
+            if (asset.subcaption !== undefined) {
+                checkLocalized(filePath, asset.subcaption, `asset ${asset.id || '<missing>'} subcaption`);
+            }
             if (/^external-reference-(?:image|diagram)$/i.test(String(asset.role || ''))) {
                 addError(
                     filePath,

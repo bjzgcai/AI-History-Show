@@ -37,7 +37,7 @@
                 <button
                     id="generateBtn"
                     class="primary"
-                    title="将已保存的 Archive 编译为 milestones-data.js 和 milestones-data-default.js，供展示页加载"
+                    title="将已保存的 Archive 编译为 milestones-data.js；milestones-data-default.js 保留为稳定 fallback"
                 >
                     生成运行时数据
                 </button>
@@ -82,7 +82,7 @@
                     <button id="saveBtn" hidden>保存</button>
                     <span id="status" class="status"></span>
                     <p class="archive-workflow-note">
-                        编辑操作会自动加入待处理草稿，不会直接修改正式 Json。请到“发布管理”逐项保留或放弃，统一校验并应用。
+                        编辑操作会自动加入待处理草稿，不会直接修改正式文件。请到“发布管理”逐项保留或放弃，统一完成校验和保存。
                     </p>
                 </div>
 
@@ -97,7 +97,9 @@
                         图片与音视频
                     </button>
                     <button type="button" data-event-section="quizzes" data-event-file="quizzes.json">Quiz</button>
-                    <button type="button" data-event-section="advanced" data-event-file="advanced">高级 JSON</button>
+                    <button type="button" data-event-section="advanced" data-event-file="advanced">
+                        高级Json（内部）
+                    </button>
                 </nav>
 
                 <nav
@@ -111,7 +113,7 @@
                     <button type="button" data-figure-section="events">关联事件</button>
                     <button type="button" data-figure-section="sources">资料来源（内部）</button>
                     <button type="button" data-figure-section="review">审核信息（内部）</button>
-                    <button type="button" data-figure-section="advanced">高级 JSON</button>
+                    <button type="button" data-figure-section="advanced">高级Json（内部）</button>
                 </nav>
 
                 <section id="storylineOverviewPanel" class="storyline-overview-panel" hidden>
@@ -123,7 +125,10 @@
                                 从左侧选择 Storyline，右侧将按顺序展示其中的事件。
                             </p>
                         </div>
-                        <div id="storylineOverviewStats" class="storyline-overview-stats"></div>
+                        <div class="storyline-overview-actions">
+                            <div id="storylineOverviewStats" class="storyline-overview-stats"></div>
+                            <button id="openStorylineDisplayBtn" type="button" class="primary">展示故事线 ↗</button>
+                        </div>
                     </div>
                     <div class="storyline-event-manager">
                         <label for="storylineEventSelect"
@@ -340,7 +345,9 @@
                             <div class="dialog-heading">
                                 <div>
                                     <h3>关联已有图片</h3>
-                                    <p class="muted">从事件已经登记的图片资产中选择；不会复制或修改图片文件。</p>
+                                    <p class="muted">
+                                        从事件已经登记的图片资产中选择；不选择事件时展示全部可关联图片，不会复制或修改图片文件。
+                                    </p>
                                 </div>
                                 <button id="closeExistingFigureImageBtn" class="icon-button" type="button" title="关闭">
                                     ×
@@ -349,9 +356,9 @@
                             <div class="existing-image-link-layout">
                                 <div class="form-grid existing-image-link-fields">
                                     <label>
-                                        <span>图片所属事件 <span class="required-mark" aria-label="必填">*</span></span>
-                                        <select id="existingImageEvent" required>
-                                            <option value="">选择事件</option>
+                                        <span>图片所属事件（可选）</span>
+                                        <select id="existingImageEvent">
+                                            <option value="">全部事件</option>
                                         </select>
                                     </label>
                                     <label>
@@ -568,6 +575,14 @@
                             </button>
                         </div>
                     </div>
+                    <div id="assetTypeNav" class="asset-type-nav" hidden role="tablist" aria-label="资产类型">
+                        <button type="button" data-asset-filter="images" role="tab" aria-selected="true">
+                            图片资产 <span id="assetImageCount" class="badge">0</span>
+                        </button>
+                        <button type="button" data-asset-filter="media" role="tab" aria-selected="false">
+                            音视频资产 <span id="assetMediaCount" class="badge">0</span>
+                        </button>
+                    </div>
                     <div id="structuredEditor"></div>
                 </div>
 
@@ -586,15 +601,16 @@
                     <div class="publish-page-heading">
                         <div>
                             <div class="publish-kicker">PUBLISH WORKSPACE</div>
-                            <h2 id="publishTitle">变更与发布</h2>
-                            <p class="muted">审阅 Admin 产生的业务变更，统一应用到 Json 后再生成发布包。</p>
+                            <h2 id="publishTitle">变更与提交</h2>
+                            <p class="muted">审阅 Admin 产生的业务变更，更新测试展示后提交到 GitHub。</p>
                         </div>
                         <div id="publishHeadingActions" class="publish-heading-actions">
                             <button id="discardAllDraftsBtn" type="button" class="danger">全部放弃</button>
                             <button id="keepAllDraftsBtn" type="button">全部保留</button>
                             <button id="refreshPublishBtn" type="button">刷新状态</button>
-                            <button id="generateTestPreviewBtn" type="button">生成测试预览</button>
-                            <button id="preparePublishBtn" type="button" class="primary">一键准备发布</button>
+                            <button id="undoLastChangeBtn" type="button" class="danger">撤销变更</button>
+                            <button id="saveChangesBtn" type="button" class="primary">一键保存变更</button>
+                            <button id="preparePublishBtn" type="button" class="primary">一键提交 GitHub</button>
                         </div>
                     </div>
 
@@ -621,133 +637,130 @@
                     </div>
 
                     <div id="publishChangesPane" class="publish-view-pane">
-
-                    <div class="publish-summary-grid" aria-label="发布状态摘要">
-                        <article>
-                            <strong id="publishChangeCount">-</strong>
-                            <span>待处理变更</span>
-                        </article>
-                        <article>
-                            <strong id="publishArchiveChangeCount">-</strong>
-                            <span>未决策 / 已保留 / 已放弃</span>
-                        </article>
-                        <article>
-                            <strong id="publishRuntimeStatus">检测中</strong>
-                            <span>运行时数据</span>
-                        </article>
-                        <article>
-                            <strong id="publishBundleStatus">检测中</strong>
-                            <span>静态发布包</span>
-                        </article>
-                        <article>
-                            <strong id="publishTestPreviewStatus">检测中</strong>
-                            <span>草稿测试预览</span>
-                        </article>
-                    </div>
-
-                    <section class="publish-section publish-pipeline-section">
-                        <div class="publish-section-heading">
-                            <div>
-                                <h3>发布流程</h3>
-                            <p class="muted">先处理全部变更，再校验草稿并应用到正式 Json；之后才能生成和构建。</p>
-                            </div>
-                        </div>
-                        <div class="publish-pipeline publish-pipeline-five">
-                            <article class="publish-step" data-publish-step="validate">
-                                <span class="publish-step-index">1</span>
-                                <div>
-                                    <strong>处理变更</strong>
-                                    <p>每项选择保留或放弃，不能遗留未决策项。</p>
-                                </div>
-                                <button id="publishValidateBtn" type="button">校验保留变更</button>
+                        <div class="publish-summary-grid" aria-label="发布状态摘要">
+                            <article>
+                                <strong id="publishChangeCount">-</strong>
+                                <span>待处理变更</span>
                             </article>
-                            <article class="publish-step" data-publish-step="apply">
-                                <span class="publish-step-index">2</span>
-                                <div>
-                                    <strong>应用到 Json</strong>
-                                    <p>再次校验并事务化写入正式 Archive Json 与图片。</p>
-                                </div>
-                                <button id="publishApplyBtn" type="button" class="primary">应用到 Json</button>
+                            <article>
+                                <strong id="publishArchiveChangeCount">-</strong>
+                                <span>未决策 / 已保留 / 已放弃</span>
                             </article>
-                            <article class="publish-step" data-publish-step="saved-validate">
-                                <span class="publish-step-index">3</span>
-                                <div>
-                                    <strong>生效前先校验</strong>
-                                    <p>检查当前实际已保存的正式 Json。</p>
-                                </div>
-                                <button id="publishSavedValidateBtn" type="button">校验正式 Json</button>
+                            <article>
+                                <strong id="publishRuntimeStatus">检测中</strong>
+                                <span>运行时数据</span>
                             </article>
-                            <article class="publish-step" data-publish-step="generate">
-                                <span class="publish-step-index">4</span>
-                                <div>
-                                    <strong>生成运行时数据</strong>
-                                    <p>将已保存内容编译为展示页加载的数据文件。</p>
-                                </div>
-                                <button id="publishGenerateBtn" type="button">生成数据</button>
+                            <article>
+                                <strong id="publishTestDisplayStatus">检测中</strong>
+                                <span>测试展示</span>
                             </article>
-                            <article class="publish-step" data-publish-step="build">
-                                <span class="publish-step-index">5</span>
-                                <div>
-                                    <strong>构建发布包</strong>
-                                    <p>生成经过发布边界校验的 `.tmp/static-site/` 静态包。</p>
-                                </div>
-                                <button id="publishBuildBtn" type="button">构建发布包</button>
+                            <article>
+                                <strong id="publishGitHubStatus">检测中</strong>
+                                <span>GitHub 提交</span>
                             </article>
                         </div>
-                    </section>
 
-                    <section id="publishOperationPanel" class="publish-section publish-operation-section" hidden>
-                        <div class="publish-section-heading">
-                            <div>
-                                <h3>最近操作结果</h3>
-                                <p id="publishOperationSummary" class="muted"></p>
-                            </div>
-                        </div>
-                        <div id="publishOperationSteps" class="publish-operation-steps"></div>
-                    </section>
-
-                    <div class="publish-two-column">
-                        <section class="publish-section">
+                        <section class="publish-section publish-pipeline-section">
                             <div class="publish-section-heading">
                                 <div>
-                                    <h3>Admin 业务变更</h3>
-                                    <p id="publishChangeSummary" class="muted">正在读取待处理草稿...</p>
+                                    <h3>管理流程</h3>
+                                    <p class="muted">
+                                        先处理并校验草稿，写入文件后生成运行时数据；确认测试展示无误，再提交 GitHub。
+                                    </p>
                                 </div>
                             </div>
-                            <div id="publishChangeList" class="publish-change-list"></div>
+                            <div class="publish-pipeline publish-pipeline-five">
+                                <article class="publish-step" data-publish-step="validate">
+                                    <span class="publish-step-index">1</span>
+                                    <div>
+                                        <strong>处理变更</strong>
+                                        <p>每项选择保留或放弃，不能遗留未决策项。</p>
+                                    </div>
+                                    <button id="publishValidateBtn" type="button">校验保留变更</button>
+                                </article>
+                                <article class="publish-step" data-publish-step="apply-validate">
+                                    <span class="publish-step-index">2</span>
+                                    <div>
+                                        <strong>保存并校验</strong>
+                                        <p>将已保留变更写入正式文件，并立即校验当前已保存文件。</p>
+                                    </div>
+                                    <button id="publishApplyValidateBtn" type="button" class="primary">
+                                        保存并校验
+                                    </button>
+                                </article>
+                                <article class="publish-step" data-publish-step="generate">
+                                    <span class="publish-step-index">3</span>
+                                    <div>
+                                        <strong>生成运行时数据</strong>
+                                        <p>将已保存内容编译为展示页加载的数据文件。</p>
+                                    </div>
+                                    <button id="publishGenerateBtn" type="button">生成运行时数据</button>
+                                </article>
+                                <article class="publish-step" data-publish-step="test-display-confirm">
+                                    <span class="publish-step-index">4</span>
+                                    <div>
+                                        <strong>打开测试服务确认</strong>
+                                        <p>打开测试展示服务，确认本次生成结果符合预期。</p>
+                                    </div>
+                                    <button id="publishTestDisplayConfirmBtn" type="button">打开测试服务确认</button>
+                                </article>
+                                <article class="publish-step" data-publish-step="submit">
+                                    <span class="publish-step-index">5</span>
+                                    <div>
+                                        <strong>提交 GitHub</strong>
+                                        <p>提交内容文件、资源和运行时数据，不提交管理后台代码。</p>
+                                    </div>
+                                    <button id="publishSubmitBtn" type="button">提交 GitHub</button>
+                                </article>
+                            </div>
                         </section>
 
-                        <section class="publish-section">
+                        <section id="publishOperationPanel" class="publish-section publish-operation-section" hidden>
                             <div class="publish-section-heading">
                                 <div>
-                                    <h3>测试预览与发布包</h3>
-                                    <p class="muted">测试预览只读取已保留草稿；正式发布包只读取已应用的 Json。</p>
+                                    <h3>最近操作结果</h3>
+                                    <p id="publishOperationSummary" class="muted"></p>
                                 </div>
                             </div>
-                            <h4 class="publish-bundle-title">草稿测试预览</h4>
-                            <dl id="publishTestPreviewDetails" class="publish-bundle-details"></dl>
-                            <a
-                                id="openTestPreview"
-                                class="publish-preview-link"
-                                href="/test-preview/"
-                                target="_blank"
-                                rel="noopener"
-                                hidden
-                                >打开测试预览 ↗</a
-                            >
-                            <h4 class="publish-bundle-title publish-bundle-title-spaced">正式发布包</h4>
-                            <dl id="publishBundleDetails" class="publish-bundle-details"></dl>
-                            <a
-                                id="openPublishPreview"
-                                class="publish-preview-link"
-                                href="/publish-preview/"
-                                target="_blank"
-                                rel="noopener"
-                                hidden
-                                >打开发布包预览 ↗</a
-                            >
+                            <div id="publishOperationSteps" class="publish-operation-steps"></div>
                         </section>
-                    </div>
+
+                        <div class="publish-two-column">
+                            <section class="publish-section">
+                                <div class="publish-section-heading">
+                                    <div>
+                                        <h3>Admin 业务变更</h3>
+                                        <p id="publishChangeSummary" class="muted">正在读取待处理草稿...</p>
+                                    </div>
+                                </div>
+                                <div id="publishChangeList" class="publish-change-list"></div>
+                            </section>
+
+                            <section class="publish-section">
+                                <div class="publish-section-heading">
+                                    <div>
+                                        <h3>测试展示与 GitHub</h3>
+                                        <p class="muted">
+                                            生成运行时数据后，测试展示服务直接读取当前文件编译结果；提交 GitHub
+                                            后由展示服务自行拉取更新。
+                                        </p>
+                                    </div>
+                                </div>
+                                <h4 class="publish-bundle-title">测试展示服务</h4>
+                                <dl id="publishTestDisplayDetails" class="publish-bundle-details"></dl>
+                                <a
+                                    id="openTestDisplay"
+                                    class="publish-preview-link"
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener"
+                                    hidden
+                                    >打开测试展示 ↗</a
+                                >
+                                <h4 class="publish-bundle-title publish-bundle-title-spaced">GitHub 提交</h4>
+                                <dl id="publishGitHubDetails" class="publish-bundle-details"></dl>
+                            </section>
+                        </div>
                     </div>
 
                     <div id="publishHistoryPane" class="publish-view-pane" hidden>
@@ -756,7 +769,7 @@
                                 <div>
                                     <h3>历史版本管理</h3>
                                     <p class="muted">
-                                        每次应用正式 Json 都形成完整版本。回滚只恢复 Json，不删除图片、音视频或其他资料文件。
+                                        每次保存正式文件都会形成完整版本。回滚只恢复内容文件，不删除图片、音视频或其他资料文件。
                                     </p>
                                 </div>
                                 <button id="refreshHistoryBtn" type="button">刷新历史版本</button>
@@ -784,12 +797,13 @@
                                             创建回滚草稿
                                         </button>
                                     </div>
+                                    <p id="historyRollbackHint" class="history-rollback-hint muted"></p>
                                     <p id="historyDetailNote" class="history-detail-note"></p>
                                     <div id="historyDetailSummary" class="history-detail-summary"></div>
                                     <div class="history-safety-note">
-                                        创建回滚草稿不会立即修改正式 Json，也不会删除资源文件。草稿仍需逐项保留或放弃、测试预览并应用。
+                                        创建回滚草稿不会立即修改正式文件，也不会删除资源文件。草稿仍需逐项保留或放弃、校验并保存，再生成运行时数据供测试展示检查。
                                     </div>
-                                    <h4 class="publish-bundle-title publish-bundle-title-spaced">相对上一版本的文件变化</h4>
+                                    <h4 class="publish-bundle-title publish-bundle-title-spaced">本次业务变更点</h4>
                                     <div id="historyChangeList" class="history-change-list"></div>
                                 </div>
                             </section>
@@ -798,7 +812,7 @@
                 </section>
 
                 <details id="jsonPanel" class="panel json-panel" hidden>
-                    <summary>高级 JSON 模式</summary>
+                    <summary>高级Json（内部）</summary>
                     <p class="muted">选择文件展开完整原始 JSON，包含常规表单未展示的内部字段和特殊模块。</p>
                     <div id="advancedJsonFiles" class="advanced-json-files" hidden></div>
                     <div id="advancedJsonEditorShell" class="advanced-json-editor-shell">

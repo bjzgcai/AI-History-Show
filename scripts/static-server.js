@@ -6,7 +6,7 @@ const http = require('node:http');
 const path = require('node:path');
 const { URL } = require('node:url');
 
-const ROOT = path.resolve(__dirname, '..');
+const ROOT = path.resolve(getArg('root', path.join(__dirname, '..')));
 const MIME = {
     '.html': 'text/html; charset=utf-8',
     '.js': 'text/javascript; charset=utf-8',

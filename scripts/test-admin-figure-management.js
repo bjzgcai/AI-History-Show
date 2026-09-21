@@ -563,6 +563,51 @@ try {
         assetsBeforeEventImageImport,
         'event image import should only write the binary; the current admin draft owns assets.json'
     );
+    const placeholderAssetId = 'asset-test-event-placeholder-image';
+    const assetsWithPlaceholder = readJson(path.join(temporaryRoot, 'archive', 'events', 'test-event', 'assets.json'));
+    assetsWithPlaceholder.push({
+        id: placeholderAssetId,
+        type: 'image',
+        path: `resources/images/test-event/${placeholderAssetId}.png`,
+        role: 'supporting-image',
+        caption: { en: 'Placeholder image', zh: '占位图片' },
+        sourceId: 'source-test',
+        rights: { status: 'test-only' },
+        usage: ['archive-only']
+    });
+    writeJson(path.join(temporaryRoot, 'archive', 'events', 'test-event', 'assets.json'), assetsWithPlaceholder);
+    const placeholderImportResult = service.importEventImage({
+        eventId: 'test-event',
+        assetId: placeholderAssetId,
+        imageBase64: png.toString('base64')
+    });
+    assert.equal(placeholderImportResult.path, `resources/images/test-event/${placeholderAssetId}.png`);
+    assert.ok(fs.existsSync(path.join(temporaryRoot, placeholderImportResult.path)));
+    fs.writeFileSync(path.join(temporaryRoot, 'resources', 'images', 'test-event', 'existing-image.png'), png);
+    const assetsWithExistingImage = readJson(
+        path.join(temporaryRoot, 'archive', 'events', 'test-event', 'assets.json')
+    );
+    assetsWithExistingImage.push({
+        id: 'asset-test-event-existing-image',
+        type: 'image',
+        path: 'resources/images/test-event/existing-image.png',
+        role: 'supporting-image',
+        caption: { en: 'Existing image', zh: '已有图片' },
+        sourceId: 'source-test',
+        rights: { status: 'test-only' },
+        usage: ['archive-only']
+    });
+    writeJson(path.join(temporaryRoot, 'archive', 'events', 'test-event', 'assets.json'), assetsWithExistingImage);
+    assert.throws(
+        () =>
+            service.importEventImage({
+                eventId: 'test-event',
+                assetId: 'asset-test-event-existing-image',
+                imageBase64: png.toString('base64')
+            }),
+        (error) => error.statusCode === 409 && /Archive asset already exists/.test(error.message),
+        'event image import should not overwrite an existing asset file'
+    );
     const imageWithoutRights = service.importFigureImage({
         figureId: 'second-person',
         eventId: 'test-event',
@@ -628,12 +673,17 @@ try {
     assert.match(adminHtml, /id="taskOutputPanel"[^>]*hidden/);
     assert.match(adminHtml, /id="closeTaskOutputBtn"/);
     assert.doesNotMatch(adminHtml, /id="saveValidateBtn"/);
-    assert.doesNotMatch(adminHtml, /保存并验证|校验并保存/);
+    assert.doesNotMatch(adminHtml, /保存并验证/);
     assert.match(adminHtml, /id="saveBtn"[^>]*hidden[^>]*>保存<\/button>/);
     assert.doesNotMatch(adminHtml, />保存草稿<\/button>/);
     assert.match(adminHtml, /id="validateDraftBtn" hidden>校验改动<\/button>/);
-    assert.match(adminHtml, /编辑操作会自动加入待处理草稿，不会直接修改正式 Json/);
-    assert.match(adminHtml, /请到“发布管理”逐项保留或放弃，统一校验并应用/);
+    assert.match(adminHtml, /编辑操作会自动加入待处理草稿，不会直接修改正式文件/);
+    assert.match(adminHtml, /请到“发布管理”逐项保留或放弃，统一完成校验和保存/);
+    assert.match(adminHtml, /id="assetTypeNav"[^>]*role="tablist"/);
+    assert.match(adminHtml, /data-asset-filter="images"[^>]*role="tab"/);
+    assert.match(adminHtml, /data-asset-filter="media"[^>]*role="tab"/);
+    assert.match(adminHtml, /id="assetImageCount"/);
+    assert.match(adminHtml, /id="assetMediaCount"/);
     assert.match(adminCss, /\.archive-workflow-note\s*\{/);
     assert.match(adminCss, /\.output-panel pre\s*\{[\s\S]*color:\s*#eef7f3/);
     assert.match(adminHtml, /data-entity-type="events"[^>]*>事件/);
@@ -655,21 +705,26 @@ try {
     assert.match(adminHtml, /id="publishChangesTab"[\s\S]*?>\s*当前变更/);
     assert.match(adminHtml, /id="publishHistoryTab"[\s\S]*?>\s*历史版本/);
     assert.match(adminHtml, /id="createRollbackDraftBtn"[\s\S]*?>\s*创建回滚草稿/);
-    assert.match(adminHtml, /回滚只恢复 Json，不删除图片、音视频或其他资料文件/);
-    assert.match(adminHtml, /id="preparePublishBtn"[^>]*>一键准备发布/);
-    assert.match(adminHtml, /id="generateTestPreviewBtn"[^>]*>生成测试预览/);
-    assert.match(adminHtml, /id="openTestPreview"[^>]*href="\/test-preview\/"/);
-    assert.match(adminHtml, /id="publishTestPreviewStatus"/);
+    assert.match(adminHtml, /回滚只恢复内容文件，不删除图片、音视频或其他资料文件/);
+    assert.match(adminHtml, /id="preparePublishBtn"[^>]*>一键提交 GitHub/);
+    assert.match(adminHtml, /id="saveChangesBtn"[^>]*>一键保存变更/);
+    assert.match(adminHtml, /id="undoLastChangeBtn"[^>]*>撤销变更/);
+    assert.match(adminHtml, /id="openTestDisplay"[^>]*href="#"/);
+    assert.match(adminHtml, /id="publishTestDisplayStatus"/);
+    assert.match(adminHtml, /id="publishGitHubStatus"/);
     assert.match(adminHtml, /id="publishValidateBtn"[^>]*>校验保留变更/);
-    assert.match(adminHtml, /id="publishApplyBtn"[^>]*>应用到 Json/);
-    assert.match(adminHtml, /id="publishSavedValidateBtn"[^>]*>校验正式 Json/);
+    assert.match(adminHtml, /id="publishApplyValidateBtn"[^>]*>\s*保存并校验/);
     assert.match(adminHtml, /id="keepAllDraftsBtn"[^>]*>全部保留/);
     assert.match(adminHtml, /id="discardAllDraftsBtn"[^>]*>全部放弃/);
-    assert.match(adminHtml, /id="publishGenerateBtn"[^>]*>生成数据/);
-    assert.match(adminHtml, /id="publishBuildBtn"[^>]*>构建发布包/);
+    assert.match(adminHtml, /id="publishGenerateBtn"[^>]*>生成运行时数据/);
+    assert.match(adminHtml, /id="publishTestDisplayConfirmBtn"[^>]*>打开测试服务确认/);
+    assert.match(adminHtml, /id="publishSubmitBtn"[^>]*>提交 GitHub/);
+    assert.match(adminHtml, /id="openStorylineDisplayBtn"[^>]*>展示故事线/);
     assert.match(adminCss, /\.entity-type-nav\s*\{[\s\S]*grid-template-columns:\s*repeat\(4,/);
     assert.doesNotMatch(adminHtml, /id="auditBtn"/);
     assert.match(adminHtml, /id="entityType" hidden/);
+    assert.match(adminHtml, /data-event-section="advanced"[^>]*>\s*高级Json（内部）/);
+    assert.match(adminHtml, /<summary>\s*高级Json（内部）\s*<\/summary>/);
     assert.match(adminHtml, /id="refreshBtn"[^>]*sidebar-refresh-button[^>]*title="刷新列表"/);
     assert.doesNotMatch(adminHtml, /class="sidebar-tools"/);
     assert.ok(
@@ -679,28 +734,32 @@ try {
     assert.match(adminJs, /function syncEntityTypeNavigation/);
     assert.match(adminJs, /function loadPublishStatus/);
     assert.match(adminJs, /api\/archive\/publish-status/);
-    assert.match(adminJs, /api\/archive\/prepare-publish/);
-    assert.match(adminJs, /api\/archive\/test-preview/);
+    assert.match(adminJs, /api\/archive\/prepare-submit/);
+    assert.match(adminJs, /api\/archive\/submit-github/);
     assert.match(adminJs, /api\/archive\/history/);
     assert.match(adminJs, /api\/archive\/history-restore/);
-    assert.match(adminJs, /window\.open\('about:blank', '_blank'\)/);
+    assert.match(adminJs, /function undoLastChange\(\)/);
+    assert.match(adminJs, /function confirmTestDisplay\(\)/);
     assert.match(adminServer, /GET \/api\/archive\/publish-status/);
-    assert.match(adminServer, /POST \/api\/archive\/prepare-publish/);
-    assert.match(adminServer, /POST \/api\/archive\/test-preview/);
+    assert.match(adminServer, /POST \/api\/archive\/prepare-submit/);
+    assert.match(adminServer, /POST \/api\/archive\/submit-github/);
     assert.match(adminServer, /GET \/api\/archive\/history/);
     assert.match(adminServer, /GET \/api\/archive\/history-version/);
     assert.match(adminServer, /POST \/api\/archive\/history-restore/);
+    assert.match(adminServer, /POST \/api\/archive\/draft-apply-validate/);
+    assert.match(adminServer, /POST \/api\/archive\/test-display-confirm/);
+    assert.match(adminServer, /POST \/api\/archive\/undo-last-change/);
     const historyListRoute = adminServer.slice(
         adminServer.indexOf("'GET /api/archive/history':"),
         adminServer.indexOf("'GET /api/archive/history-version':")
     );
     assert.doesNotMatch(historyListRoute, /ensureCurrentVersion/);
     assert.match(adminServer, /historyService\.ensureCurrentVersion\(\);/);
-    assert.match(adminServer, /\/test-preview\//);
     assert.match(adminServer, /POST \/api\/archive\/draft-decision/);
     assert.match(adminServer, /POST \/api\/archive\/draft-validate/);
     assert.match(adminServer, /POST \/api\/archive\/draft-apply/);
-    assert.match(adminServer, /runPublishSteps\(\['validate', 'generate', 'build'\]\)/);
+    assert.match(adminServer, /POST \/api\/archive\/save-changes/);
+    assert.match(adminServer, /const saveResult = await saveChangesAndGenerate\(\);/);
     assert.match(adminJs, /const archiveTaskConfig =/);
     assert.match(adminJs, /function setTaskOutputVisible\(visible\)/);
     assert.match(adminJs, /elements\.taskOutputPanel\.hidden = !visible/);
@@ -736,7 +795,7 @@ try {
     assert.match(adminHtml, /data-figure-section="assets"[^>]*>图片资产/);
     assert.match(adminHtml, /data-figure-section="events"[^>]*>关联事件/);
     assert.match(adminHtml, /data-figure-section="review"[^>]*>审核信息（内部）/);
-    assert.match(adminHtml, /data-figure-section="advanced"[^>]*>高级 JSON/);
+    assert.match(adminHtml, /data-figure-section="advanced"[^>]*>\s*高级Json（内部）/);
     assert.match(adminHtml, /id="figureSectionTitle"/);
     assert.match(adminHtml, /id="figureSectionSummary"/);
     assert.match(adminHtml, /data-figure-section-panel="basic"/);
@@ -859,6 +918,10 @@ try {
     assert.match(adminJs, /function removeDefaultAvatar/);
     assert.match(adminJs, /function openExistingFigureImage/);
     assert.match(adminJs, /function loadExistingImageAssets/);
+    assert.match(adminJs, /const selectedEvents = eventId \? eventsWithAssets\.filter/);
+    assert.match(adminJs, /全部事件中没有可关联的已有图片/);
+    assert.match(adminJs, /assetsRevision: result\.revision/);
+    assert.match(adminJs, /expectedRevision: asset\.assetsRevision/);
     assert.match(adminJs, /function linkExistingFigureImage/);
     assert.match(adminJs, /api\/archive\/figure-asset-link/);
     assert.match(adminJs, /function unlinkFigureAssetGroup/);
@@ -1035,6 +1098,19 @@ try {
     assert.match(assetFormSource, /collectionField\('版权状态', 'rights\.status'/);
     assert.match(assetFormSource, /internalNoteField\('rights\.license'/);
     assert.match(assetFormSource, /internalNoteField\('rights\.usage'/);
+    assert.match(
+        assetFormSource,
+        /localizedFields\('subcaption', asset\.subcaption, \{ label: '副标题', className: 'short' \}\)/
+    );
+    assert.doesNotMatch(adminJs, /必须填写中文和英文副标题/);
+    assert.match(adminJs, /function normalizeOptionalLocalizedField\(value\)/);
+    assert.match(adminJs, /function normalizeArchiveDocumentForSave\(type, file, documentValue\)/);
+    assert.match(adminJs, /function assetMatchesFilter\(asset, filter\)/);
+    assert.match(adminJs, /filter\(\(\{ item \}\) => assetMatchesFilter\(item, state\.assetFilter\)\)/);
+    assert.match(adminJs, /assetTypeNav\.addEventListener\('click'/);
+    assert.match(adminJs, /usage: \['archive-only'\]/);
+    assert.match(adminJs, /license: \{ zh: '待核实', en: 'Review before publication\.' \}/);
+    assert.match(adminJs, /仅供内部归档，发布前核验使用权限。/);
     assert.match(adminCss, /\.collection-more:not\(\[open\]\) > :not\(summary\)\s*\{[\s\S]*display:\s*none/);
     assert.doesNotMatch(quizFormSource, /collectionField\('Quiz ID'/);
     assert.doesNotMatch(quizFormSource, /collectionField\('来源 ID/);
@@ -1046,8 +1122,8 @@ try {
     assert.match(adminJs, /state\.pendingAssetPaths\.add\(created\.path\)/);
     assert.match(adminJs, /state\.pendingAssetPaths\.has\(asset\.path\)/);
     assert.match(adminCss, /\.asset-media-pending\s*\{/);
-    assert.match(adminJs, /path: generatedAssetPath\(id, 'image'\)/);
-    assert.match(adminJs, /role: defaultAssetRole\('image'\)/);
+    assert.match(adminJs, /path: isMedia \? '' : generatedAssetPath\(id, 'image'\)/);
+    assert.match(adminJs, /role: defaultAssetRole\(isMedia \? 'audio' : 'image'\)/);
     assert.match(adminJs, /duplicate\.path = generatedAssetPath\(duplicate\.id, duplicate\.type\)/);
     assert.match(adminJs, /asset\.path = generatedAssetPath\(asset\.id, value\)/);
     assert.match(adminJs, /function validatePendingAssetRequirements\(\)/);
@@ -1100,7 +1176,14 @@ try {
     assert.doesNotMatch(adminJs, /formTextarea\('主题 ID/);
     assert.doesNotMatch(eventFormSource, /localizedFields\('title'/);
     assert.doesNotMatch(eventFormSource, /localizedFields\('description'/);
-    assert.match(adminJs, /页面标题与描述在展示配置中编辑/);
+    assert.match(adminJs, /defaultPresentation\.displayTitle/);
+    assert.match(adminJs, /defaultPresentation\.displaySummary/);
+    assert.match(adminJs, /defaultPresentation\.displayDescription/);
+    assert.match(adminJs, /标题、摘要、描述用于展示页/);
+    assert.match(adminJs, /资产和来源，只有加入本展示配置的“展示图片”“展示音视频”或“展示来源”后，才会在展示页生效/);
+    assert.doesNotMatch(adminJs, /展示标题/);
+    assert.doesNotMatch(adminJs, /展示摘要/);
+    assert.doesNotMatch(adminJs, /展示描述/);
     assert.doesNotMatch(adminJs, /Claim ID（每行一个）/);
     assert.doesNotMatch(adminJs, /function claimItemForm/);
     assert.doesNotMatch(adminJs, /localizedFields\('review\.notes'/);
@@ -1137,6 +1220,7 @@ try {
     assert.doesNotMatch(adminJs, />Canonical</);
     assert.doesNotMatch(adminJs, />Variants</);
     assert.match(adminJs, /buildPresentationEventUrl/);
+    assert.match(adminJs, /function buildPresentationStorylineUrl/);
     assert.match(adminJs, /api\/archive\/event-presentation-targets/);
     assert.doesNotMatch(adminJs, /api\/archive\/event-presentation-restore-inheritance/);
     assert.doesNotMatch(adminJs, /restorePresentationInheritance/);
