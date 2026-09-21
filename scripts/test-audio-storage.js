@@ -97,7 +97,6 @@ async function main() {
                     language: 'zh',
                     storage: {
                         provider: 'aliyun-oss',
-                        bucket: 'zgca-medias',
                         objectKey: 'audio/ai-history/releases/1956-dartmouth-zh-original-v1.mp3',
                         contentType: 'audio/mpeg'
                     }
@@ -108,7 +107,6 @@ async function main() {
         const entries = collectAudioAssets(root);
         assert.equal(entries.length, 1);
         assert.deepEqual(validateAudioAssets(entries), []);
-        assert.equal(entries[0].bucket, 'zgca-medias');
         assert.equal(entries[0].objectKey, 'audio/ai-history/releases/1956-dartmouth-zh-original-v1.mp3');
         assert.equal(
             normalizeObjectKey('/audio//ai-history\\releases/sample.mp3'),
@@ -137,9 +135,17 @@ async function main() {
         assert.equal(selectUploadAction({ exists: false }, manifest.assets[0]), 'upload');
         assert.equal(selectUploadAction({ ...matchingRemote, size: 15 }, manifest.assets[0]), 'conflict');
 
-        const config = resolveOssConfig({}, entries);
-        assert.equal(config.endpoint, 'https://oss-cn-beijing.aliyuncs.com');
-        assert.equal(config.bucket, 'zgca-medias');
+        assert.throws(() => resolveOssConfig({}, entries, {}), /ALIYUN_OSS_ENDPOINT/);
+        const config = resolveOssConfig(
+            {
+                endpoint: 'https://oss.example.invalid',
+                bucket: 'private-audio-bucket',
+                region: 'example-region'
+            },
+            entries
+        );
+        assert.equal(config.endpoint, 'https://oss.example.invalid');
+        assert.equal(config.bucket, 'private-audio-bucket');
         assert.equal(config.forcePathStyle, false);
 
         assert.throws(
@@ -160,7 +166,6 @@ async function main() {
                             id: 'custom-audio',
                             mediaType: 'audio',
                             provider: 'aliyun-oss',
-                            bucket: 'test-bucket',
                             publicUrlPrefix: 'https://media.example/audio',
                             objectKeyPrefix: 'audio/releases'
                         }
