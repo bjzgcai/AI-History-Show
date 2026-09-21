@@ -815,16 +815,21 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
     test('new figure and profile source buttons give feedback, focus the new card, and save the registry', async ({
         page
     }) => {
-        const figureId = 'admin-e2e-test-person';
-
         await openAdmin(page);
         await selectMode(page, 'figures');
         await clickButton(page.locator('#newFigureBtn'));
         await expect(page.locator('#status')).toHaveText('已创建人物草稿，尚未保存');
         await expect(page.locator('#figureId')).toBeFocused();
-        await page.locator('#figureId').fill(figureId);
+        await expect
+            .poll(async () => (await page.locator('#figurePanel').boundingBox())?.y ?? -1)
+            .toBeGreaterThanOrEqual(82);
+        await expect
+            .poll(async () => (await page.locator('#figurePanel').boundingBox())?.y ?? Number.POSITIVE_INFINITY)
+            .toBeLessThan(180);
         await page.locator('#figureNameZh').fill('后台测试人物');
         await page.locator('#figureNameEn').fill('Admin Test Person');
+        await expect(page.locator('#figureId')).toHaveValue('admin-test-person');
+        const figureId = await page.locator('#figureId').inputValue();
 
         await clickButton(page.locator('[data-figure-section="sources"]'));
         await clickButton(page.locator('#addFigureProfileSourceBtn'));
@@ -874,7 +879,7 @@ test.describe.serial('Archive Admin button feedback and file linkage', () => {
     });
 
     test('figure merges are staged as semantic draft changes and can be discarded', async ({ page }) => {
-        const sourceFigureId = 'admin-e2e-test-person';
+        const sourceFigureId = 'admin-test-person';
         const formalRegistryPath = fixturePath('archive', 'figures', 'figures.json');
         const formalRegistrySource = fs.readFileSync(formalRegistryPath, 'utf8');
         const figures = JSON.parse(formalRegistrySource);
