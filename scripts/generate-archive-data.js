@@ -5,8 +5,20 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { compileArchive } = require('./archive-compiler.js');
 
-const ROOT = path.resolve(__dirname, '..');
-const OUTPUTS = [path.join(ROOT, 'milestones-data.js'), path.join(ROOT, 'milestones-data-default.js')];
+const ROOT = path.resolve(process.env.AI_HISTORY_ARCHIVE_ROOT || path.join(__dirname, '..'));
+// Keep the checked-in fallback stable. Admin and normal generation update only the active runtime data.
+const OUTPUTS = [path.join(ROOT, 'milestones-data.js')];
+const GENERATION_META = path.join(ROOT, '.tmp', 'archive-generation.json');
+
+function latestMtime(targetPath) {
+    if (!fs.existsSync(targetPath)) return 0;
+    const stat = fs.statSync(targetPath);
+    if (stat.isFile()) return stat.mtimeMs;
+    if (!stat.isDirectory()) return 0;
+    return fs
+        .readdirSync(targetPath)
+        .reduce((latest, name) => Math.max(latest, latestMtime(path.join(targetPath, name))), stat.mtimeMs);
+}
 
 function normalizeGeneratedTime(content) {
     return String(content || '')
@@ -123,7 +135,25 @@ function generateArchiveData({
 
 function main() {
     const generation = generateArchiveData();
-    if (!generation.ok) process.exitCode = 1;
+    if (!generation.ok) {
+        process.exitCode = 1;
+        return;
+    }
+    fs.mkdirSync(path.dirname(GENERATION_META), { recursive: true });
+    const generationMetaTemp = `${GENERATION_META}.${process.pid}.tmp`;
+    fs.writeFileSync(
+        generationMetaTemp,
+        `${JSON.stringify(
+            {
+                generatedAt: new Date().toISOString(),
+                archiveModifiedAt: new Date(latestMtime(path.join(ROOT, 'archive'))).toISOString()
+            },
+            null,
+            2
+        )}\n`,
+        'utf8'
+    );
+    fs.renameSync(generationMetaTemp, GENERATION_META);
 }
 
 if (require.main === module) main();

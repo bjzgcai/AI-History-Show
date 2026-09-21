@@ -6,10 +6,12 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { resolveTtsEnvFile } from './lib/audio-revision.mjs';
+import { renderScript, resolveTtsEnvFile, resolveVoiceProfile } from './lib/audio-revision.mjs';
+import { compileSpeechTurns, loadPronunciationGlossary } from './lib/pronunciation.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const GENERATOR_PATH = path.join(ROOT, 'scripts/audio/generate-dialogue-audio.mjs');
+const GENERATION_STATE_ROOT = path.join(ROOT, '.tmp/audio-generation-identities');
 
 function fail(message) {
     throw new Error(message);
@@ -36,6 +38,23 @@ function run(command, args, options = {}) {
 
 function sha256(value) {
     return crypto.createHash('sha256').update(value).digest('hex');
+}
+
+function loadGenerationState(revisionId) {
+    const statePath = path.join(GENERATION_STATE_ROOT, `${revisionId}.json`);
+    if (!fs.existsSync(statePath)) return { statePath, state: { schemaVersion: 1, revisionId, jobs: {} } };
+    const state = readJson(statePath);
+    if (state.schemaVersion !== 1 || state.revisionId !== revisionId || !state.jobs) {
+        fail(`Invalid pronunciation generation state: ${statePath}`);
+    }
+    return { statePath, state };
+}
+
+function writeGenerationState(statePath, state) {
+    fs.mkdirSync(path.dirname(statePath), { recursive: true });
+    const temporaryPath = `${statePath}.tmp-${process.pid}`;
+    fs.writeFileSync(temporaryPath, `${JSON.stringify(state, null, 2)}\n`);
+    fs.renameSync(temporaryPath, statePath);
 }
 
 function loudnessMeasurement(filePath, specification) {
@@ -171,30 +190,33 @@ function generatorArgs(job, outputPath) {
     ];
 }
 
+function voiceForRole(profile, role) {
+    if (role === 'A') return profile.voiceA;
+    if (role === 'B') return profile.voiceB;
+    if (role === 'SUMMARY') return profile.voiceSummary;
+    return profile.voiceNarrator;
+}
+
+function instructionForRole(profile, role) {
+    if (role === 'A') return profile.instructionA;
+    if (role === 'B') return profile.instructionB;
+    if (role === 'SUMMARY') return profile.instructionSummary;
+    return profile.instructionNarrator;
+}
+
 function buildJobs(plan) {
     const grouped = new Map();
+    const glossaryBundle = loadPronunciationGlossary();
     for (const entry of plan.entries) {
         const planProfile = plan.voiceProfile || {};
-        const voiceProfile = {
-            ...planProfile,
-            voiceA: entry.voiceA || planProfile.voiceA,
-            voiceB: entry.voiceB || planProfile.voiceB,
-            voiceNarrator: entry.voiceNarrator || planProfile.voiceNarrator || entry.voiceB || planProfile.voiceB,
-            voiceSummary: entry.voiceSummary || planProfile.voiceSummary || entry.voiceB || planProfile.voiceB,
-            instructionA: entry.instructionA ?? planProfile.instructionA ?? '',
-            instructionB: entry.instructionB ?? planProfile.instructionB ?? '',
-            instructionNarrator:
-                entry.instructionNarrator ??
-                planProfile.instructionNarrator ??
-                entry.instructionB ??
-                planProfile.instructionB ??
-                '',
-            instructionSummary: entry.instructionSummary ?? planProfile.instructionSummary ?? '',
-            speedA: entry.speedA ?? planProfile.speedA ?? 1,
-            speedB: entry.speedB ?? planProfile.speedB ?? 1,
-            speedNarrator: entry.speedNarrator ?? planProfile.speedNarrator ?? entry.speedB ?? planProfile.speedB ?? 1,
-            speedSummary: entry.speedSummary ?? planProfile.speedSummary ?? 0.97
-        };
+        const voiceProfile = resolveVoiceProfile(
+            planProfile,
+            Object.fromEntries(
+                Object.keys(planProfile)
+                    .filter((key) => entry[key] !== undefined)
+                    .map((key) => [key, entry[key]])
+            )
+        );
         for (const key of ['voiceA', 'voiceB', 'voiceNarrator', 'voiceSummary']) {
             if (!voiceProfile[key]) fail(`Revision plan is missing ${key} for ${entry.eventId}/${entry.locale}`);
         }
@@ -205,10 +227,46 @@ function buildJobs(plan) {
             const inputPath = path.join(ROOT, relativeInputPath);
             if (!fs.existsSync(inputPath)) fail(`Missing revision script: ${relativeInputPath}`);
             const turns = entry.turnsPaths?.[mode] ? readJson(path.join(ROOT, entry.turnsPaths[mode])).turns : null;
+            const pronunciation = turns
+                ? compileSpeechTurns({
+                      turns,
+                      eventId: entry.eventId,
+                      locale: entry.locale,
+                      provider: plan.provider,
+                      model: plan.model,
+                      voiceForRole: (role) => voiceForRole(voiceProfile, role),
+                      instructionForRole: (role) => instructionForRole(voiceProfile, role),
+                      glossaryBundle
+                  })
+                : {
+                      schemaVersion: 2,
+                      turns: null,
+                      replacements: [],
+                      unqualified: [],
+                      exclusions: [],
+                      glossaryPath: path.relative(ROOT, glossaryBundle.path).split(path.sep).join('/'),
+                      glossarySha256: glossaryBundle.hash
+                  };
+            if (pronunciation.unqualified.length) {
+                const details = pronunciation.unqualified
+                    .map(
+                        (item) =>
+                            `${item.term} turn ${item.turnIndex} (${item.context.voice}, ${item.context.instructionSha256.slice(0, 12)})`
+                    )
+                    .join(', ');
+                fail(`${entry.eventId}/${entry.locale}: unqualified pronunciation context: ${details}`);
+            }
+            const speechText = pronunciation.turns
+                ? renderScript(pronunciation.turns)
+                : fs.readFileSync(inputPath, 'utf8');
             const relativeOutputPath = path.join(plan.outputRoot, 'audio', entry.scopeId, mode, entry.locale, stem);
             const outputPath = path.join(ROOT, relativeOutputPath);
             const identity = {
-                text: fs.readFileSync(inputPath, 'utf8'),
+                sourceText: fs.readFileSync(inputPath, 'utf8'),
+                speechText,
+                pronunciationGlossarySha256: pronunciation.glossarySha256,
+                pronunciationReplacements: pronunciation.replacements,
+                pronunciationExclusions: pronunciation.exclusions,
                 model: plan.model,
                 locale: entry.locale,
                 voiceProfile,
@@ -220,6 +278,8 @@ function buildJobs(plan) {
                 grouped.set(hash, {
                     hash,
                     inputPath,
+                    speechText,
+                    pronunciation,
                     provider: plan.provider,
                     model: plan.model,
                     endpoint: plan.endpoint,
@@ -241,17 +301,34 @@ function buildJobs(plan) {
                 path: relativeOutputPath.split(path.sep).join('/'),
                 outputPath,
                 voiceProfile,
-                turns
+                turns,
+                generationIdentitySha256: hash,
+                pronunciation: {
+                    schemaVersion: pronunciation.schemaVersion,
+                    glossaryPath: pronunciation.glossaryPath,
+                    glossarySha256: pronunciation.glossarySha256,
+                    replacements: pronunciation.replacements,
+                    unqualified: pronunciation.unqualified,
+                    exclusions: pronunciation.exclusions
+                }
             });
         }
     }
     return [...grouped.values()];
 }
 
-function generateJob(job, retries) {
+function generateJob(job, retries, generationState, generationStatePath) {
     const existingAssets = job.assets.filter((asset) => fs.existsSync(asset.outputPath));
     if (existingAssets.length === job.assets.length) {
-        for (const asset of existingAssets) probeAudio(asset.outputPath);
+        const recordedAssets = new Map(
+            (generationState.jobs[job.hash]?.assets || []).map((asset) => [asset.path, asset.sha256])
+        );
+        for (const asset of existingAssets) {
+            probeAudio(asset.outputPath);
+            if (recordedAssets.get(asset.path) !== sha256(fs.readFileSync(asset.outputPath))) {
+                fail(`Existing audio does not match generation identity ${job.hash.slice(0, 12)}: ${asset.path}`);
+            }
+        }
         return { resumed: true };
     }
     if (existingAssets.length > 0) {
@@ -259,13 +336,17 @@ function generateJob(job, retries) {
     }
     const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), 'ai-history-voice-revision-'));
     try {
+        const speechInputPath = path.join(temporaryDirectory, 'speech.txt');
+        fs.writeFileSync(speechInputPath, job.speechText);
         const rawPath = path.join(temporaryDirectory, 'raw.mp3');
         const normalizedPath = path.join(temporaryDirectory, 'normalized.mp3');
         let generated = false;
         let lastError;
         for (let attempt = 1; attempt <= retries; attempt += 1) {
             try {
-                run(process.execPath, generatorArgs(job, rawPath), { inherit: true });
+                run(process.execPath, generatorArgs({ ...job, inputPath: speechInputPath }, rawPath), {
+                    inherit: true
+                });
                 generated = true;
                 break;
             } catch (error) {
@@ -279,6 +360,13 @@ function generateJob(job, retries) {
             fs.mkdirSync(path.dirname(asset.outputPath), { recursive: true });
             fs.copyFileSync(normalizedPath, asset.outputPath, fs.constants.COPYFILE_EXCL);
         }
+        generationState.jobs[job.hash] = {
+            assets: job.assets.map((asset) => ({
+                path: asset.path,
+                sha256: sha256(fs.readFileSync(asset.outputPath))
+            }))
+        };
+        writeGenerationState(generationStatePath, generationState);
     } finally {
         fs.rmSync(temporaryDirectory, { recursive: true, force: true });
     }
@@ -317,6 +405,8 @@ function buildOverlay(plan, jobs) {
                 revisionId: plan.revisionId,
                 voiceProfile: asset.voiceProfile,
                 ...(asset.turns ? { turns: asset.turns } : {}),
+                generationIdentitySha256: asset.generationIdentitySha256,
+                pronunciation: asset.pronunciation,
                 audio: {
                     path: asset.path,
                     durationSec: Number(probe.durationSec.toFixed(3)),
@@ -345,7 +435,7 @@ function buildOverlay(plan, jobs) {
         }
     }
     return {
-        schemaVersion: 1,
+        schemaVersion: 2,
         status: 'candidate-listening-review',
         revisionId: plan.revisionId,
         label: plan.label,
@@ -376,6 +466,7 @@ function main() {
     const overlayPath = path.join(outputRoot, 'overlay.json');
     if (fs.existsSync(overlayPath)) fail(`Refusing to overwrite append-only overlay: ${overlayPath}`);
     const jobs = buildJobs({ ...plan, envFile });
+    const { statePath: generationStatePath, state: generationState } = loadGenerationState(plan.revisionId);
     console.log(
         `${jobs.length} unique dialogue assets will generate ${jobs.reduce((sum, job) => sum + job.assets.length, 0)} revision files.`
     );
@@ -383,7 +474,7 @@ function main() {
         console.log(
             `Generating ${index + 1}/${jobs.length}: ${job.assets.map((asset) => `${asset.eventId}/${asset.mode}`).join(', ')}`
         );
-        generateJob(job, plan.retries || 3);
+        generateJob(job, plan.retries || 3, generationState, generationStatePath);
     });
     const overlay = buildOverlay(plan, jobs);
     fs.mkdirSync(outputRoot, { recursive: true });

@@ -6,8 +6,9 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { writeStaticUmamiConfig } = require('./static-umami-config');
 
-const ROOT = path.resolve(__dirname, '..');
+const ROOT = path.resolve(process.env.AI_HISTORY_ARCHIVE_ROOT || path.join(__dirname, '..'));
 const OUTPUT = path.join(ROOT, '.tmp', 'static-site');
+const BUILD_META = path.join(ROOT, '.tmp', 'static-site-build.json');
 const ROOT_FILES = ['.nojekyll', 'index.html', 'milestones-data.js', 'milestones-data-default.js'];
 const DIRECTORIES = ['shared', 'resources', 'public'];
 const RETIRED_RESOURCE_METADATA = new Set([
@@ -40,7 +41,7 @@ const FORBIDDEN_TOP_LEVEL = new Set([
 
 function copyRequired(source, destination, options = {}) {
     assert.ok(fs.existsSync(source), `Required static input is missing: ${path.relative(ROOT, source)}`);
-    fs.cpSync(source, destination, { recursive: true, ...options });
+    fs.cpSync(source, destination, { recursive: true, dereference: true, ...options });
 }
 
 function includeStaticFile(source) {
@@ -174,6 +175,24 @@ function validateBundle() {
     }
 }
 
+function bundleStats(directory) {
+    return fs.readdirSync(directory, { withFileTypes: true }).reduce(
+        (result, entry) => {
+            const entryPath = path.join(directory, entry.name);
+            if (entry.isDirectory()) {
+                const child = bundleStats(entryPath);
+                result.fileCount += child.fileCount;
+                result.totalBytes += child.totalBytes;
+            } else if (entry.isFile()) {
+                result.fileCount += 1;
+                result.totalBytes += fs.statSync(entryPath).size;
+            }
+            return result;
+        },
+        { fileCount: 0, totalBytes: 0 }
+    );
+}
+
 fs.rmSync(OUTPUT, { recursive: true, force: true });
 fs.mkdirSync(OUTPUT, { recursive: true });
 for (const file of ROOT_FILES) copyRequired(path.join(ROOT, file), path.join(OUTPUT, file));
@@ -184,6 +203,17 @@ for (const directory of DIRECTORIES) {
 writeStaticUmamiConfig(path.join(OUTPUT, 'shared', 'umami-config.js'));
 validateBundle();
 
+const stats = bundleStats(OUTPUT);
+const buildMeta = {
+    builtAt: new Date().toISOString(),
+    relativePath: '.tmp/static-site/',
+    ...stats
+};
+fs.mkdirSync(path.dirname(BUILD_META), { recursive: true });
+const buildMetaTemp = `${BUILD_META}.${process.pid}.tmp`;
+fs.writeFileSync(buildMetaTemp, `${JSON.stringify(buildMeta, null, 2)}\n`, 'utf8');
+fs.renameSync(buildMetaTemp, BUILD_META);
+
 console.log(`Static site bundle: ${path.relative(ROOT, OUTPUT)}`);
-console.log(`Static site files: ${ROOT_FILES.length} root files + ${DIRECTORIES.join(', ')}`);
+console.log(`Static site files: ${stats.fileCount} files, ${stats.totalBytes} bytes`);
 console.log('Static site bundle validation passed.');

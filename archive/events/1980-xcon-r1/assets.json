@@ -1,190 +1,178 @@
 [
-  {
-    "id": "asset-1980-xcon-r1-rule-configurator",
-    "type": "svg",
-    "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg",
-    "role": "algorithm-explainer",
-    "caption": {
-      "zh": "规则式配置器",
-      "en": "Rule-based configurator"
+    {
+        "id": "asset-1980-xcon-r1-rule-configurator",
+        "type": "svg",
+        "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg",
+        "role": "algorithm-explainer",
+        "caption": {
+            "zh": "规则式配置器",
+            "en": "Rule-based configurator"
+        },
+        "subcaption": {
+            "zh": "依据 R1：计算机系统领域的专家 制作的本地解释图。",
+            "en": "Original local explainer based on R1: An Expert in the Computer Systems Domain."
+        },
+        "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+        "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+                "zh": "Original local SVG redraw; source figures are not copied.",
+                "en": "Original local SVG redraw; source figures are not copied."
+            }
+        },
+        "usage": ["variant:bench-council-ai100"],
+        "editable": true
     },
-    "subcaption": {
-      "zh": "依据 R1：计算机系统领域的专家 制作的本地解释图。",
-      "en": "Original local explainer based on R1: An Expert in the Computer Systems Domain."
+    {
+        "id": "asset-1980-xcon-r1-order-flow",
+        "type": "svg",
+        "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg",
+        "role": "algorithm-explainer",
+        "caption": {
+            "zh": "计算机订单流程",
+            "en": "Computer-order flow"
+        },
+        "subcaption": {
+            "zh": "依据 重访 R1：一线四年 制作的本地解释图。",
+            "en": "Original local explainer based on R1 Revisited: Four Years in the Trenches."
+        },
+        "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+        "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+                "zh": "Original local SVG redraw; source figures are not copied.",
+                "en": "Original local SVG redraw; source figures are not copied."
+            }
+        },
+        "usage": ["variant:bench-council-ai100"],
+        "editable": true
     },
-    "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
-    "rights": {
-      "status": "documented-in-legacy",
-      "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
-        "en": "Original local SVG redraw; source figures are not copied."
-      }
+    {
+        "id": "asset-1980-xcon-r1-lcm-dec-vax-11-780-5-01",
+        "type": "image",
+        "path": "resources/images/external/1980-xcon-r1/dec-vax-11-780-computer.jpg",
+        "role": "supporting-image",
+        "caption": {
+            "zh": "DEC VAX 11/780 计算机",
+            "en": "DEC VAX 11/780 computer"
+        },
+        "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+        "rights": {
+            "status": "external-reference",
+            "license": {
+                "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+                "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+            },
+            "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg"
+        },
+        "usage": ["variant:bench-council-ai100"],
+        "editable": true,
+        "subcaption": {
+            "zh": "XCON/R1 用于自动配置 VAX 计算机系统订单。",
+            "en": "XCON/R1 automated the configuration of VAX computer orders."
+        },
+        "sourceName": {
+            "zh": "维基共享资源",
+            "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg"
     },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true
-  },
-  {
-    "id": "asset-1980-xcon-r1-order-flow",
-    "type": "svg",
-    "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg",
-    "role": "algorithm-explainer",
-    "caption": {
-      "zh": "计算机订单流程",
-      "en": "Computer-order flow"
+    {
+        "id": "asset-1980-xcon-r1-vax-11-780-cpu-backplane",
+        "type": "image",
+        "path": "resources/images/external/1980-xcon-r1/vax-11-780-cpu-backplane.jpg",
+        "role": "supporting-image",
+        "caption": {
+            "zh": "VAX 11/780 CPU 背板",
+            "en": "VAX 11/780 CPU backplane"
+        },
+        "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+        "rights": {
+            "status": "external-reference",
+            "license": {
+                "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+                "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+            },
+            "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg"
+        },
+        "usage": ["variant:bench-council-ai100"],
+        "editable": true,
+        "subcaption": {
+            "zh": "VAX 系统内部硬件组件资料照。",
+            "en": "Reference photo of an internal VAX hardware component."
+        },
+        "sourceName": {
+            "zh": "维基共享资源",
+            "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg"
     },
-    "subcaption": {
-      "zh": "依据 重访 R1：一线四年 制作的本地解释图。",
-      "en": "Original local explainer based on R1 Revisited: Four Years in the Trenches."
+    {
+        "id": "asset-1980-xcon-r1-audio-zh-original-v1",
+        "type": "audio",
+        "role": "audio-narration",
+        "caption": {
+            "zh": "1980-xcon-r1 中文原版科普音频",
+            "en": "1980-xcon-r1 original Chinese audio narration"
+        },
+        "subcaption": {
+            "zh": "中文原版科普讲述，供中文页面播放。",
+            "en": "Original Chinese science narration used on the Chinese page."
+        },
+        "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+        "rights": {
+            "status": "project-produced",
+            "license": {
+                "zh": "本项目使用已授权语音合成服务制作。",
+                "en": "Produced by this project with an authorized text-to-speech service."
+            },
+            "usage": {
+                "zh": "用于本展览的事件科普音频播放。",
+                "en": "Used for event narration in this exhibition."
+            }
+        },
+        "language": "zh",
+        "storage": {
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1980-xcon-r1-zh-original-v1.mp3",
+            "sourcePath": "resources/audio/generated/pronunciation-fixes/issue-98-pronunciation-release-zh-v2-2026-09-16/audio/bench-council-ai100/storyline/zh/21-1980-xcon-r1.mp3",
+            "contentType": "audio/mpeg"
+        },
+        "usage": ["storyline:bench-council-ai100"],
+        "editable": true
     },
-    "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
-    "rights": {
-      "status": "documented-in-legacy",
-      "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
-        "en": "Original local SVG redraw; source figures are not copied."
-      }
-    },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true
-  },
-  {
-    "id": "asset-1980-xcon-r1-lcm-dec-vax-11-780-5-01",
-    "type": "image",
-    "path": "resources/images/external/1980-xcon-r1/dec-vax-11-780-computer.jpg",
-    "role": "supporting-image",
-    "caption": {
-      "zh": "DEC VAX 11/780 计算机",
-      "en": "DEC VAX 11/780 computer"
-    },
-    "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
-    "rights": {
-      "status": "external-reference",
-      "license": {
-        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-      },
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg"
-    },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true,
-    "subcaption": {
-      "zh": "XCON/R1 用于自动配置 VAX 计算机系统订单。",
-      "en": "XCON/R1 automated the configuration of VAX computer orders."
-    },
-    "sourceName": {
-      "zh": "维基共享资源",
-      "en": "Wikimedia Commons"
-    },
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg"
-  },
-  {
-    "id": "asset-1980-xcon-r1-vax-11-780-cpu-backplane",
-    "type": "image",
-    "path": "resources/images/external/1980-xcon-r1/vax-11-780-cpu-backplane.jpg",
-    "role": "supporting-image",
-    "caption": {
-      "zh": "VAX 11/780 CPU 背板",
-      "en": "VAX 11/780 CPU backplane"
-    },
-    "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
-    "rights": {
-      "status": "external-reference",
-      "license": {
-        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-      },
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg"
-    },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true,
-    "subcaption": {
-      "zh": "VAX 系统内部硬件组件资料照。",
-      "en": "Reference photo of an internal VAX hardware component."
-    },
-    "sourceName": {
-      "zh": "维基共享资源",
-      "en": "Wikimedia Commons"
-    },
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg"
-  },
-  {
-    "id": "asset-1980-xcon-r1-audio-zh-original-v1",
-    "type": "audio",
-    "role": "audio-narration",
-    "caption": {
-      "zh": "1980-xcon-r1 中文原版科普音频",
-      "en": "1980-xcon-r1 original Chinese audio narration"
-    },
-    "subcaption": {
-      "zh": "中文原版科普讲述，供中文页面播放。",
-      "en": "Original Chinese science narration used on the Chinese page."
-    },
-    "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
-    "rights": {
-      "status": "project-produced",
-      "license": {
-        "zh": "本项目使用已授权语音合成服务制作。",
-        "en": "Produced by this project with an authorized text-to-speech service."
-      },
-      "usage": {
-        "zh": "用于本展览的事件科普音频播放。",
-        "en": "Used for event narration in this exhibition."
-      }
-    },
-    "language": "zh",
-    "storage": {
-      "profileId": "ai-history-audio-releases",
-      "objectName": "1980-xcon-r1-zh-original-v1.mp3",
-      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-zh-original-v1-2026-08-09/audio/bench-council-ai100/storyline/zh/21-1980-xcon-r1.mp3",
-      "contentType": "audio/mpeg"
-    },
-    "usage": [
-      "storyline:bench-council-ai100"
-    ],
-    "editable": true
-  },
-  {
-    "id": "asset-1980-xcon-r1-audio-en-v1",
-    "type": "audio",
-    "role": "audio-narration",
-    "caption": {
-      "zh": "1980-xcon-r1 英文科普音频",
-      "en": "1980-xcon-r1 English audio narration"
-    },
-    "subcaption": {
-      "zh": "英文原版科普讲述，供英文页面播放。",
-      "en": "Original English science narration used on the English page."
-    },
-    "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
-    "rights": {
-      "status": "project-produced",
-      "license": {
-        "zh": "本项目使用已授权语音合成服务制作。",
-        "en": "Produced by this project with an authorized text-to-speech service."
-      },
-      "usage": {
-        "zh": "用于本展览的事件科普音频播放。",
-        "en": "Used for event narration in this exhibition."
-      }
-    },
-    "language": "en",
-    "storage": {
-      "profileId": "ai-history-audio-releases",
-      "objectName": "1980-xcon-r1-en-v1.mp3",
-      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-en-original-v1-2026-08-09/audio/bench-council-ai100/storyline/en/21-1980-xcon-r1.mp3",
-      "contentType": "audio/mpeg"
-    },
-    "usage": [
-      "storyline:bench-council-ai100"
-    ],
-    "editable": true
-  }
+    {
+        "id": "asset-1980-xcon-r1-audio-en-v1",
+        "type": "audio",
+        "role": "audio-narration",
+        "caption": {
+            "zh": "1980-xcon-r1 英文科普音频",
+            "en": "1980-xcon-r1 English audio narration"
+        },
+        "subcaption": {
+            "zh": "英文原版科普讲述，供英文页面播放。",
+            "en": "Original English science narration used on the English page."
+        },
+        "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+        "rights": {
+            "status": "project-produced",
+            "license": {
+                "zh": "本项目使用已授权语音合成服务制作。",
+                "en": "Produced by this project with an authorized text-to-speech service."
+            },
+            "usage": {
+                "zh": "用于本展览的事件科普音频播放。",
+                "en": "Used for event narration in this exhibition."
+            }
+        },
+        "language": "en",
+        "storage": {
+            "profileId": "ai-history-audio-releases",
+            "objectName": "1980-xcon-r1-en-v1.mp3",
+            "sourcePath": "resources/audio/generated/pronunciation-fixes/issue-98-pronunciation-release-en-v2-2026-09-16/audio/bench-council-ai100/storyline/en/21-1980-xcon-r1.mp3",
+            "contentType": "audio/mpeg"
+        },
+        "usage": ["storyline:bench-council-ai100"],
+        "editable": true
+    }
 ]

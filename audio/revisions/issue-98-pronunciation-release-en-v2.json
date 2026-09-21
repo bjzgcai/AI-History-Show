@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "issue-98-pronunciation-release-en-v2-2026-09-16",
+    "label": "Issue #98 专用词发音正式候选（英文 v2）",
+    "comparisonKind": "previous",
+    "storylineOrderPolicy": "frozen-revision",
+    "outputRoot": "resources/audio/generated/pronunciation-fixes/issue-98-pronunciation-release-en-v2-2026-09-16",
+    "turnsDir": "audio/revisions/ai100-remaining-original/turns/en",
+    "voiceProfilePath": "audio/voices/en-megan-alberto-original.json",
+    "eventIds": [
+        "1966-eliza",
+        "1980-xcon-r1",
+        "ai100-2006-surf",
+        "ai100-2015-fast-r-cnn",
+        "ai100-2017-mask-r-cnn",
+        "ai100-2016-nas"
+    ],
+    "expectedEntryCount": 6,
+    "provider": {
+        "name": "volc",
+        "model": "seed-tts-2.0",
+        "endpoint": "https://openspeech.bytedance.com/api/v3/plan/tts/unidirectional",
+        "envFile": ".secrets/tts.env",
+        "retries": 3
+    },
+    "specification": {
+        "modes": ["storyline"],
+        "locales": ["en"],
+        "normalPauseMs": 450,
+        "summaryPauseMs": 550,
+        "minimumDurationSec": 40,
+        "maximumDurationSec": 150,
+        "targetIntegratedLoudnessLufs": -16,
+        "targetTruePeakDbtp": -1,
+        "targetLoudnessRangeLu": 11
+    }
+}

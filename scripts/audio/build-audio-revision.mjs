@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {
     ROOT,
+    entryOverrideFor,
     fail,
     loadRevisionConfig,
     loadRevisionTurns,
@@ -82,6 +83,7 @@ function expectedFiles(config, sources) {
     const entries = sources.map(({ data }) => {
         const locale = data.locale || 'zh';
         const mode = data.mode || 'storyline';
+        const entryOverride = entryOverrideFor(config, data);
         const stem = `${String(data.sequenceIndex).padStart(2, '0')}-${data.eventId}`;
         const scriptPath = path.join(outputRoot, 'scripts', locale, `${stem}.txt`);
         const turnsPath = path.join(outputRoot, 'turns', locale, `${stem}.json`);
@@ -98,7 +100,8 @@ function expectedFiles(config, sources) {
                 locale,
                 modes: [mode],
                 scriptPaths: { [mode]: relativeToRoot(scriptPath) },
-                turnsPaths: { [mode]: relativeToRoot(turnsPath) }
+                turnsPaths: { [mode]: relativeToRoot(turnsPath) },
+                ...entryOverride
             }
         };
     });

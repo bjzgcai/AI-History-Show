@@ -1,0 +1,103 @@
+{
+    "schemaVersion": 1,
+    "provider": {
+        "name": "volc",
+        "model": "seed-tts-2.0",
+        "endpoint": "https://openspeech.bytedance.com/api/v3/plan/tts/unidirectional"
+    },
+    "voiceProfilePath": "audio/voices/zh-huopo-original.json",
+    "cases": [
+        {
+            "id": "zh-eliza",
+            "termId": "eliza",
+            "locale": "zh",
+            "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/011-1966-eliza.json",
+            "turnIndex": 1
+        },
+        {
+            "id": "zh-xcon",
+            "termId": "xcon",
+            "term": "XCON",
+            "locale": "zh",
+            "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/021-1980-xcon-r1.json",
+            "turnIndex": 6,
+            "pronunciationInstruction": "文案中的“XCON”必须作为一个完整英文词连读，读作“EX-con”，发音为/ˈeks.kɑːn/；不要逐个拼读字母X、C、O、N。后面的R1仍读作R one。",
+            "speechReplacements": [{ "from": "XCON", "to": "ex-con" }],
+            "alignmentAliases": ["XCON", "XCOM", "XKAN", "Xdankon"],
+            "goldVariants": { "baseline": "FAIL", "hinted": "FAIL", "rewritten": "PASS" },
+            "automaticValidation": {
+                "detector": "review-only",
+                "reason": "当前 ASR、phoneme CTC、PPG + DTW 与 forced decoding 均无法在独立重复样本上可靠区分 XCON 的连读与逐字母拼读。"
+            }
+        },
+        {
+            "id": "zh-surf",
+            "termId": "surf",
+            "term": "SURF",
+            "locale": "zh",
+            "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/031-ai100-2006-surf.json",
+            "turnIndex": 2,
+            "pronunciationInstruction": "文案中的“SURF”必须作为一个完整英文单词连读，读作英语单词“surf”，与英文“冲浪”的surf相同，发音为/sɜːrf/；不要逐个拼读字母S、U、R、F。",
+            "speechReplacements": [{ "from": "SURF", "to": "surf" }],
+            "alignmentAliases": ["SURF", "SERF"],
+            "goldVariants": { "baseline": "FAIL", "hinted": "FAIL", "rewritten": "PASS" },
+            "automaticValidation": { "detector": "duration", "passMaxMs": 650, "failMinMs": 800 }
+        },
+        {
+            "id": "zh-nas",
+            "termId": "nas",
+            "term": "NAS",
+            "locale": "zh",
+            "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/089-ai100-2016-nas.json",
+            "turnIndex": 4,
+            "pronunciationInstruction": "文案中的英文缩写“NAS”必须逐个字母读作“N、A、S”，三个英文字母清晰分开；不要连读成单词“nas”。",
+            "speechReplacements": [{ "from": "NAS", "to": "N-A-S" }],
+            "alignmentAliases": ["NAS", "NVS"],
+            "goldVariants": { "baseline": "FAIL", "hinted": "FAIL", "rewritten": "PASS" },
+            "automaticValidation": {
+                "detector": "forced-candidate",
+                "expectedText": "N A S",
+                "rejectedText": "nas",
+                "passMinMargin": 0.55,
+                "failMaxMargin": 0.45
+            }
+        },
+        {
+            "id": "zh-roialign",
+            "termId": "roialign",
+            "term": "RoIAlign",
+            "locale": "zh",
+            "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/060-ai100-2017-mask-r-cnn.json",
+            "turnIndex": 4,
+            "pronunciationInstruction": "文案中的“RoIAlign”必须先逐个字母读R、O、I，再读英文单词align，即“R、O、I、align”；不要把RoI连读成一个单词。",
+            "speechReplacements": [
+                { "from": "RoIAlign", "to": "R-O-I align" },
+                { "from": "RoI", "to": "R-O-I" }
+            ],
+            "alignmentAliases": ["RoIAlign", "ROIAlign", "Royalign", "RoyLine"],
+            "goldVariants": { "baseline": "FAIL", "hinted": "FAIL", "rewritten": "PASS" },
+            "automaticValidation": {
+                "detector": "token-form",
+                "passPrefixes": ["roi"],
+                "failPrefixes": ["roy"]
+            }
+        },
+        {
+            "id": "zh-roi",
+            "audioCaseId": "zh-roialign",
+            "termId": "roi",
+            "term": "RoI",
+            "locale": "zh",
+            "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/060-ai100-2017-mask-r-cnn.json",
+            "turnIndex": 4,
+            "alignmentAliases": ["RoI", "ROI", "Roy", "Roych"],
+            "alignmentOccurrence": 1,
+            "goldVariants": { "baseline": "FAIL", "hinted": "FAIL", "rewritten": "PASS" },
+            "automaticValidation": {
+                "detector": "token-form",
+                "passPrefixes": ["roi"],
+                "failPrefixes": ["roy"]
+            }
+        }
+    ]
+}

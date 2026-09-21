@@ -24,6 +24,9 @@ npm run validate:deployment
 # 本地预览展示页，默认监听 http://localhost:8000
 npm run start:static
 
+# 独立测试展示服务，允许局域网访问
+npm run start:test-display
+
 # 展厅本机演示服务，固定使用 127.0.0.1:8000
 npm run start:demo
 
@@ -48,7 +51,7 @@ PORT=3003 npm run start:audio-review
 
 `Dockerfile` 默认构建 Nginx 展示页镜像，对应下面“方案一：Nginx 云服务器”的部署流程：
 
-1. 使用 Node.js 生成 `milestones-data.js` 和 `milestones-data-default.js`。
+1. 使用 Node.js 生成 `milestones-data.js`；`milestones-data-default.js` 作为稳定 fallback 保留，不由生成流程覆盖。
 2. 运行 `npm run build:static`，将页面、正式数据、`shared/`、`resources/` 和所需 `public/` 资源组装到 `.tmp/static-site/`。
 3. Docker presentation stage 与 GitHub Pages 都只发布这一个 allowlist 静态包。
 4. 使用容器内的 Nginx 在 `8000` 端口提供静态展示页。
@@ -495,12 +498,103 @@ Edge `kiosk` 模式：
 
 ---
 
-## 四、内容管理服务部署（manage/server.js）
+## 四、内容管理与独立测试展示
 
-`server.js` 提供 Archive-only 本地内容管理服务（端口 3001）：使用 `/admin` 编辑 `archive/events/*` 与 `archive/storylines/*` JSON，并运行 `npm run validate:archive` 与 `npm run generate` 生成运行时数据、首页与头像所需的缩略图及其清单。旧 `/archive-admin` 与 Legacy API 已退役并返回 HTTP 404。**Nginx 无需重启，生成后刷新展示页即可生效**。
+`manage/server.js` 是 Archive-only 内容管理服务，`scripts/static-server.js` 是独立展示服务。两者可以运行在同一台 Admin 机器上，也可以运行在不同机器上；生产展示服务不需要暴露 Admin API。
 
-> `/admin` 当前是原始 JSON 编辑器；保存后应先运行 Archive validation，再生成运行时数据。
-> **安全原则：不要将 3001 端口直接暴露到公网**，推荐通过 SSH 隧道访问。
+Admin 的实际操作顺序是：
+
+```text
+编辑 / 审阅 Admin 业务变更
+  → 处理变更并校验保留草稿
+  → 保存文件
+  → 生效前先校验当前已保存文件
+  → 生成运行时数据
+  → 测试展示服务立即读取更新后的运行时文件
+  → 确认测试展示
+  → 一键提交 GitHub
+```
+
+其中“一键提交 GitHub”是提交，不是线上发布：它不会构建发布包、不会部署生产展示服务，也不会修改生产服务器。提交范围只包括本次 Admin 版本涉及的 `archive/`、`resources/` 和 `milestones-data.js`；`milestones-data-default.js` 保留为稳定 fallback，不会被 Admin 生成或提交覆盖。管理后台代码、测试代码和内部文件不会被提交。若 Git 暂存区已有不属于本次内容变更的文件，提交会被拒绝，避免误提交。
+
+### Admin 机器启动方式
+
+先在同一个工作目录启动测试展示服务，再启动 Admin。测试展示服务直接读取该目录中的 `index.html`、`resources/` 和已生成的运行时数据。
+
+```bash
+cd /path/to/AI-History-Show
+npm ci
+
+# 局域网测试展示
+HOST=0.0.0.0 PORT=8000 npm run start:test-display
+
+# Admin 管理服务
+HOST=0.0.0.0 PORT=3001 \
+TEST_DISPLAY_URL=http://你的Admin机器IP:8000/ \
+ADMIN_GIT_REMOTE=origin ADMIN_GIT_BRANCH=main \
+npm run start:admin
+```
+
+访问：
+
+```text
+Admin：http://你的Admin机器IP:3001/admin
+测试展示：http://你的Admin机器IP:8000/
+```
+
+如需使用 `http://<internal-host>:<port>/<admin-prefix>/` 这类子路径入口，可参考下面使用
+`/admin-console/` 作为占位示例的 Nginx 配置。Admin
+前端会从当前 `/.../admin` 地址自动推导部署前缀，API、管理端静态资源和本地媒体资源都会继续使用同一前缀；
+Nginx 再将前缀剥离后转发给只监听本机的管理服务：
+
+```nginx
+location = /admin-console {
+    return 308 /admin-console/;
+}
+
+location = /admin-console/ {
+    return 308 /admin-console/admin;
+}
+
+location /admin-console/ {
+    proxy_pass http://127.0.0.1:3001/;
+    proxy_http_version 1.1;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Forwarded-Host $http_host;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_buffering off;
+    client_max_body_size 20m;
+}
+```
+
+部署时应将示例中的 `/admin-console/` 替换为实际前缀。`proxy_pass` 末尾的 `/` 用于剥离管理前缀，不能省略。`Host` 必须保留浏览器访问的
+主机与端口，否则管理服务的同源写入校验会拒绝 POST 请求。不要通过修改部署后的 `admin.js` 添加前缀。
+
+生成运行时数据后，测试展示服务无需重启，刷新页面即可读取新文件。Admin 机器只用于编辑、校验、测试展示和提交 GitHub；生产展示服务单独部署。
+
+### 生产展示服务同步方式
+
+生产展示服务使用独立工作目录或独立服务器。从 GitHub 拉取 Admin 已提交的内容后，再同步到 Nginx、容器或其他静态服务。推荐使用快进更新，避免覆盖服务器上的其他改动：
+
+```bash
+cd /var/www/ai-history-show
+git fetch origin
+git checkout main
+git pull --ff-only origin main
+
+# 若使用当前工作目录直接提供静态文件，刷新 Nginx 即可。
+# 若使用最小静态目录，则重新组装并替换静态目录：
+npm run build:static
+rsync -av --delete .tmp/static-site/ /var/www/ai-history/
+sudo systemctl reload nginx
+```
+
+生产同步由部署服务器或 CI 执行，不由 Admin 的“一键提交 GitHub”代替。上线后如需回滚，应在生产同步端回退到已审核的 GitHub 提交，再重新同步展示目录。
+
+旧 `/archive-admin` 与 Legacy API 已退役并返回 HTTP 404。
+
+> `/admin` 无身份验证，只能用于本机、内网或受保护环境。不要将 3001 端口直接暴露到公网。
 
 ### 第一步：确认 Node.js 已安装（v22+）
 

@@ -6,7 +6,7 @@
 
 - **技术栈**: HTML5 + CSS3 + Vanilla JS + Three.js（3D地球）
 - **展示入口**: `index.html`（自适应展厅大屏/桌面/移动端）
-- **数据文件**: `milestones-data.js` 与 `milestones-data-default.js`（由 `npm run generate` 从 Archive JSON 同步生成，勿手动编辑）
+- **数据文件**: `milestones-data.js`（由 `npm run generate` 从 Archive JSON 生成）与 `milestones-data-default.js`（稳定 fallback，生成流程不会覆盖，勿手动编辑）
 
 ## 文件结构
 
@@ -14,7 +14,7 @@
 AI-History-Show/
 ├── index.html                    # 自适应展示入口
 ├── milestones-data.js            # Archive 生成的正式运行时数据
-├── milestones-data-default.js    # 同步生成的 fallback 数据
+├── milestones-data-default.js    # 稳定 fallback 数据，不由生成流程覆盖
 ├── archive/
 │   ├── storylines/               # Storyline 成员、variant、顺序和展示 ID
 │   └── events/                   # 事件事实、来源、资源、quiz 与 variants
@@ -33,18 +33,18 @@ AI-History-Show/
 
 ## 内容管理工作流
 
-Archive JSON 是生产内容权威：
+Archive JSON 是生产内容权威。Admin 编辑操作先写入 `.tmp/admin-drafts/`，不会直接修改正式 Archive；在“发布管理”中逐项保留或放弃后，统一校验并应用到正式 Json：
 
 ```bash
 # 可选：启动本地编辑器并打开 http://localhost:3001/admin
 npm run start:admin
 
-# 后台支持结构化人物资料、事件/variant 人物关系、人物审计与受控生成；
-# 高级 JSON 模式仍直接编辑 Archive JSON。
-# 编辑 archive/events/<event-id>/*、archive/storylines/*.json 或 archive/figures/figures.json 后
+# 后台支持结构化人物资料、事件人物关系、语义变更审阅与受控发布；
+# 高级Json（内部）同样只编辑 Admin 草稿。
+# 在发布管理应用到 Json 后，或直接维护 Archive source 后
 npm run validate:archive
 npm run generate
-# → 同步生成 milestones-data.js、milestones-data-default.js、首页/头像缩略图与缩略图清单
+# → 生成 milestones-data.js、首页/头像缩略图与缩略图清单；milestones-data-default.js 保持稳定 fallback
 ```
 
 `/admin` 是唯一管理入口。旧 `/archive-admin`、Legacy 数据模块、生成器、parity 与迁移/对比工具已经退役；旧管理 API 返回 HTTP 404。需要追溯旧实现时使用 Git 历史，不恢复为当前写作链路。
@@ -184,20 +184,33 @@ theta = -lng * (Math.PI / 180)
 ### 管理后台（manage/server.js）
 
 - `GET /admin` — Archive JSON 编辑器，可编辑 event bundles 与已有 storylines
-- `GET/POST /api/archive/file` — 读取或保存 Archive JSON
-- `GET/POST /api/archive/storyline` — 读取或保存已有 storyline JSON
+- `GET/POST /api/archive/file` — 读取事件 Json；写入时保存到 Admin 草稿工作区
+- `GET/POST /api/archive/storyline` — 读取故事线 Json；写入时保存到 Admin 草稿工作区
 - `GET /api/archive/figures` — 获取全局人物/实体摘要和 registry revision
-- `GET/POST /api/archive/figure` — 读取、新建或更新全局人物/实体；保存时执行 schema 与身份规则校验
+- `GET/POST /api/archive/figure` — 读取、新建或更新全局人物/实体草稿；保存时执行 schema 与身份规则校验
 - `GET /api/archive/figure-options` — 获取事件与 variant 人物选择器的数据
 - `GET /api/archive/figure-usage` — 查询人物在事件、variant 与资产中的反向引用
 - `GET /api/archive/figure-assets` — 查询可用于事件头像覆盖的精确关联资产
 - `GET /api/archive/figure-audit` — 获取缺失身份、疑似重复、名称漂移、头像冲突、来源不足等结构化审计结果
 - `GET /api/archive/figure-merge-preview` 与 `POST /api/archive/figure-merge` — 预览并事务化合并重复身份，改写事件、variant、资产和机构引用
-- `POST /api/archive/figure-image` — 将 PNG/JPEG/GIF/WebP 追加到事件人物资源目录，并同步登记 `assets.json`
+- `POST /api/archive/figure-image` — 将 PNG/JPEG/GIF/WebP 暂存到草稿资源目录，并在草稿中同步登记 `assets.json`
+- `GET /api/archive/history` 与 `GET /api/archive/history-version` — 查询正式 Archive Json 的完整历史版本与文件级变化摘要
+- `POST /api/archive/history-restore` — 将指定历史版本加载为普通待审阅草稿；不会立即覆盖正式 Json，也不会删除 `resources/` 资料文件
+- `GET /api/archive/publish-status` — 获取语义化 Admin 变更、逐项决策状态和发布产物状态
+- `POST /api/archive/draft-decision` — 对单项或全部草稿变更执行保留/放弃
+- `POST /api/archive/draft-validate` — 校验已保留的草稿工作区，不写入正式 Json
+- `POST /api/archive/draft-apply` — 校验通过后事务化写入正式 Json 与暂存图片
+- `POST /api/archive/draft-reset` — 放弃全部 Admin 草稿，不修改正式 Json
+- `POST /api/archive/publish-validate` — 校验当前正式 Json
+- `POST /api/archive/publish-generate` — 从正式 Json 生成运行时数据
+- `POST /api/archive/publish-build` — 构建静态发布包
+- `POST /api/archive/prepare-publish` — 依次执行草稿校验与应用、正式 Json 校验、生成和构建
 - `POST /api/archive/validate` — 运行 Archive 校验
 - `POST /api/archive/generate` — 受控运行 Archive compiler；不接受任意命令或参数
 - 已退役的 Legacy 页面与 API 返回 HTTP 404
-- 人物、事件和 storyline 保存响应包含内容 revision；后台使用 revision 拒绝覆盖其他页面已经保存的新版本
+- 人物、事件和 storyline 草稿响应包含内容 revision；应用时还会检查正式文件 revision，拒绝覆盖草稿创建后由其他进程写入的新版本
+- 暂存图片只存在于 `.tmp/admin-drafts/workspace/resources/`，应用草稿后才进入正式 `resources/`
+- Admin 历史版本持久保存在 `.admin-history/`，不进入 Git 和静态发布包；不要将该目录作为普通临时文件清理
 - 管理服务没有身份验证，只能用于本机、内网或受保护环境，不得直接暴露端口 3001
 
 ### 静态发布边界

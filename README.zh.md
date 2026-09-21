@@ -17,6 +17,9 @@ npm run start:static
 # 固定监听 127.0.0.1:8000 的展厅演示服务
 npm run start:demo
 
+# 独立测试展示服务（局域网访问）
+HOST=0.0.0.0 PORT=8000 npm run start:test-display
+
 # 本地 Archive 内容管理：http://localhost:3001/admin
 npm run start:admin
 
@@ -42,22 +45,26 @@ docker compose --profile admin up --build
 
 ## 内容权威与编辑流程
 
-`archive/` JSON 是生产内容权威。不要手工编辑生成的 `milestones-data.js` 或 `milestones-data-default.js`。
+`archive/` JSON 是生产内容权威。不要手工编辑生成的 `milestones-data.js` 或稳定 fallback 文件 `milestones-data-default.js`。
 
 ```text
 archive/storylines/*.json ─┐
 archive/events/*/          ├─→ npm run validate:archive ─→ npm run generate
 resources/                 ┘                              ├─→ milestones-data.js
-                                                           └─→ milestones-data-default.js
+                                                           └─→ milestones-data-default.js（稳定 fallback，不由生成流程覆盖）
 ```
 
 推荐流程：
 
-1. 运行 `npm run start:admin`，打开 `http://localhost:3001/admin`。
-2. 在 Events 中编辑事件 bundle，或在 Storylines 中编辑成员、variant、启用状态、顺序和 `milestoneId`。
-3. 在编辑器中运行 validation，或执行 `npm run validate:archive`。
-4. 执行 `npm run generate` 更新两份正式运行时数据。
-5. 执行 `npm run quality` 和相关内容校验。
+1. 独立启动测试展示服务：`HOST=0.0.0.0 PORT=8000 npm run start:test-display`。
+2. 运行 `npm run start:admin`，打开 `http://localhost:3001/admin`。
+3. 在 Events 中编辑事件 bundle，或在 Storylines 中编辑成员、variant、启用状态、顺序和 `milestoneId`。
+4. 在“发布管理”中逐项处理变更，执行“校验保留变更”，再“保存文件”。
+5. 执行“生效前先校验”和“生成运行时数据”，确认测试展示服务效果。
+6. 确认无误后执行“一键提交 GitHub”。它只提交内容文件、资源和 `milestones-data.js`，不修改或提交 `milestones-data-default.js`，不构建发布包，也不直接发布生产环境。
+7. 生产展示服务在独立目录中从 GitHub 拉取提交，再同步到 Nginx、容器或其他静态服务上线。
+
+Admin 和测试展示可以在同一台机器上运行，但生产展示服务应独立部署。生成运行时数据后测试展示服务直接读取当前目录中的新文件，通常只需刷新页面，不需要重启服务。
 
 也可以直接编辑：
 
@@ -110,7 +117,7 @@ http://localhost:8000/index.html?storyline=humanistic-cycle
 
 视频能力仅用于棋局演化等独立互动演示模块。播放器位于 `shared/video-player.js`，页面首次需要视频时才加载该脚本；视频进入可视区域或用户触发播放前不会设置真实 `src`，因此普通事件页面不会请求视频文件或视频 metadata。
 
-正式页面始终加载 `milestones-data.js`，失败时回退到同步生成的 `milestones-data-default.js`。页面不支持通过 query 参数切换到其他数据源。
+正式页面始终加载 `milestones-data.js`，加载失败时回退到稳定的 `milestones-data-default.js`。生成运行时数据只更新 `milestones-data.js`，不会覆盖 fallback；页面不支持通过 query 参数切换到其他数据源。
 
 Windows 双屏、Edge app/kiosk、Intel/NVIDIA 合屏和 DisplayFusion 限制见 [DEPLOYMENT.md](DEPLOYMENT.md)。移动端支持范围见 [docs/mobile-responsive-support.md](docs/mobile-responsive-support.md)。
 
@@ -168,7 +175,7 @@ npm run audit:svg-geometry
 AI-History-Show/
 ├── index.html                    # 自适应展示入口
 ├── milestones-data.js            # Archive 生成的正式 runtime data
-├── milestones-data-default.js    # 同步生成的 fallback data
+├── milestones-data-default.js    # 稳定 fallback data，不由生成流程覆盖
 ├── archive/
 │   ├── storylines/               # 成员、variant、顺序、启用状态、展示 ID
 │   └── events/                   # 事实、claims、sources、assets、quizzes、variants
@@ -179,11 +186,14 @@ AI-History-Show/
 ├── resources/                    # 浏览器加载的图片、论文、视频等资源
 ├── public/                       # 页面直接引用的公共文件和字体
 ├── scripts/                      # 生成、验证、测试和审计脚本
+│   ├── ppt/                      # 可编辑 PPTX 生成脚本与 Python 依赖
 ├── .github/workflows/            # Quality、deployment、Pages 工作流
 └── DEPLOYMENT.md                 # 部署与展厅运行指南
 ```
 
 `resources/` 按项目约束视为 append-only；除非明确要求，不删除已有图片或视频元数据。
+
+PowerPoint 生成属于可选工具链。首次使用时执行 `python3 -m venv .venv-ppt && .venv-ppt/bin/pip install -r scripts/ppt/requirements.txt`，并单独安装 ImageMagick（Ubuntu/Debian 使用 `sudo apt-get install imagemagick`，macOS 使用 `brew install imagemagick`）。激活虚拟环境后，可运行 `npm run generate:ppt-sample` 或 `npm run generate:storyline-ppts`；详细说明见 [`scripts/ppt/README.md`](scripts/ppt/README.md)。
 
 ## 技术栈
 

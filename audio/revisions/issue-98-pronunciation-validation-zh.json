@@ -1,0 +1,29 @@
+{
+    "schemaVersion": 1,
+    "revisionId": "issue-98-pronunciation-validation-zh-v1-2026-08-13",
+    "label": "Issue #98 专用词发音小批量验证",
+    "comparisonKind": "previous",
+    "outputRoot": "resources/audio/generated/pronunciation-fixes/issue-98-pronunciation-validation-zh-v1-2026-08-13",
+    "turnsDir": "audio/revisions/issue-98-pronunciation-validation-zh/turns/zh",
+    "voiceProfilePath": "audio/voices/zh-huopo-original.json",
+    "expectedEntryCount": 4,
+    "storylineOrderPolicy": "frozen-revision",
+    "provider": {
+        "name": "volc",
+        "model": "seed-tts-2.0",
+        "endpoint": "https://openspeech.bytedance.com/api/v3/plan/tts/unidirectional",
+        "envFile": "/home/ubuntu/.openclaw/workspace/.secrets/tts.env",
+        "retries": 3
+    },
+    "specification": {
+        "modes": ["storyline"],
+        "locales": ["zh"],
+        "normalPauseMs": 450,
+        "summaryPauseMs": 550,
+        "minimumDurationSec": 40,
+        "maximumDurationSec": 150,
+        "targetIntegratedLoudnessLufs": -16,
+        "targetTruePeakDbtp": -1,
+        "targetLoudnessRangeLu": 11
+    }
+}

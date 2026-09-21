@@ -540,7 +540,9 @@ function validateAssets(eventDir, assets, sourceIds) {
         if (!hasText(asset.role)) addError(filePath, `asset ${asset.id || '<missing>'} is missing role.`);
         checkLocalized(filePath, asset.caption, `asset ${asset.id || '<missing>'} caption`);
         if (isDisplayImage) {
-            checkLocalized(filePath, asset.subcaption, `asset ${asset.id || '<missing>'} subcaption`);
+            if (asset.subcaption !== undefined) {
+                checkLocalized(filePath, asset.subcaption, `asset ${asset.id || '<missing>'} subcaption`);
+            }
             if (/^external-reference-(?:image|diagram)$/i.test(String(asset.role || ''))) {
                 addError(
                     filePath,
@@ -683,6 +685,9 @@ function validatePresentation(eventId, filePath, presentation, sourceIds, assets
     if (!isObject(presentation)) {
         addError(filePath, `${options.label || 'presentation'} must be an object.`);
         return null;
+    }
+    if (Object.hasOwn(presentation, 'displaySubtitle')) {
+        addError(filePath, 'displaySubtitle has been retired; use displaySummary or the storyline subtitle.');
     }
     const presentationId = options.presentationId || path.basename(filePath, '.json');
     const storylineId = options.storylineId || presentation.storylineId || presentationId;

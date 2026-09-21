@@ -1,148 +1,138 @@
 [
-  {
-    "id": "asset-2017-mask-r-cnn-portrait",
-    "type": "image",
-    "path": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
-    "role": "portrait",
-    "caption": {
-      "en": "Kaiming He portrait",
-      "zh": "何恺明肖像"
+    {
+        "id": "asset-2017-mask-r-cnn-portrait",
+        "type": "image",
+        "path": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+        "role": "portrait",
+        "caption": {
+            "en": "Kaiming He portrait",
+            "zh": "何恺明肖像"
+        },
+        "subcaption": {
+            "en": "Mask R-CNN lead author",
+            "zh": "Mask R-CNN 主要作者"
+        },
+        "sourceId": "source-2017-mask-r-cnn-portrait",
+        "sourceName": {
+            "en": "MIT CSAIL",
+            "zh": "MIT CSAIL"
+        },
+        "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+        "rights": {
+            "status": "external-reference",
+            "license": {
+                "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
+                "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
+            },
+            "sourceUrl": "https://people.csail.mit.edu/kaiming/"
+        },
+        "displayUsage": {
+            "en": "Contributor portrait for the Mask r-cnn achievement page",
+            "zh": "用于Mask r-cnn成就页面的人物肖像"
+        },
+        "usage": ["variant:bench-council-ai100"],
+        "editable": true,
+        "figureIds": ["kaiming-he"]
     },
-    "subcaption": {
-      "en": "Mask R-CNN lead author",
-      "zh": "Mask R-CNN 主要作者"
+    {
+        "id": "asset-2017-mask-r-cnn-explainer",
+        "type": "svg",
+        "path": "resources/images/bench-council-ai100/explainers/2017-2017-mask-r-cnn_process.svg",
+        "role": "architecture-explainer",
+        "caption": {
+            "en": "Mask R-CNN process explainer",
+            "zh": "Mask R-CNN流程解释图"
+        },
+        "subcaption": {
+            "en": "Parallel detection and mask heads with RoIAlign",
+            "zh": "RoIAlign 与并行检测、掩码分支"
+        },
+        "sourceId": "source-2017-mask-r-cnn-primary",
+        "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://arxiv.org/abs/1703.06870",
+        "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+                "en": "Original local SVG redraw; source figures are not copied.",
+                "zh": "本地原创 SVG 重绘；未复制来源图形。"
+            }
+        },
+        "displayUsage": {
+            "en": "Architecture and process explainer",
+            "zh": "架构与流程解释图"
+        },
+        "usage": ["variant:bench-council-ai100"],
+        "editable": true
     },
-    "sourceId": "source-2017-mask-r-cnn-portrait",
-    "sourceName": {
-      "en": "MIT CSAIL",
-      "zh": "MIT CSAIL"
+    {
+        "id": "asset-ai100-2017-mask-r-cnn-audio-zh-original-v1",
+        "type": "audio",
+        "role": "audio-narration",
+        "caption": {
+            "zh": "ai100-2017-mask-r-cnn 中文原版科普音频",
+            "en": "ai100-2017-mask-r-cnn original Chinese audio narration"
+        },
+        "subcaption": {
+            "zh": "中文原版科普讲述，供中文页面播放。",
+            "en": "Original Chinese science narration used on the Chinese page."
+        },
+        "sourceId": "source-2017-mask-r-cnn-primary",
+        "rights": {
+            "status": "project-produced",
+            "license": {
+                "zh": "本项目使用已授权语音合成服务制作。",
+                "en": "Produced by this project with an authorized text-to-speech service."
+            },
+            "usage": {
+                "zh": "用于本展览的事件科普音频播放。",
+                "en": "Used for event narration in this exhibition."
+            }
+        },
+        "language": "zh",
+        "storage": {
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-mask-r-cnn-zh-original-v1.mp3",
+            "sourcePath": "resources/audio/generated/pronunciation-fixes/issue-98-pronunciation-release-zh-v2-2026-09-16/audio/bench-council-ai100/storyline/zh/60-ai100-2017-mask-r-cnn.mp3",
+            "contentType": "audio/mpeg"
+        },
+        "usage": ["storyline:bench-council-ai100"],
+        "editable": true
     },
-    "sourceUrl": "https://people.csail.mit.edu/kaiming/",
-    "rights": {
-      "status": "external-reference",
-      "license": {
-        "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-        "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
-      },
-      "sourceUrl": "https://people.csail.mit.edu/kaiming/"
-    },
-    "displayUsage": {
-      "en": "Contributor portrait for the Mask r-cnn achievement page",
-      "zh": "用于Mask r-cnn成就页面的人物肖像"
-    },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true,
-    "figureIds": [
-      "kaiming-he"
-    ]
-  },
-  {
-    "id": "asset-2017-mask-r-cnn-explainer",
-    "type": "svg",
-    "path": "resources/images/bench-council-ai100/explainers/2017-2017-mask-r-cnn_process.svg",
-    "role": "architecture-explainer",
-    "caption": {
-      "en": "Mask R-CNN process explainer",
-      "zh": "Mask R-CNN流程解释图"
-    },
-    "subcaption": {
-      "en": "Parallel detection and mask heads with RoIAlign",
-      "zh": "RoIAlign 与并行检测、掩码分支"
-    },
-    "sourceId": "source-2017-mask-r-cnn-primary",
-    "sourceName": {
-      "en": "Local original SVG",
-      "zh": "本地原创 SVG"
-    },
-    "sourceUrl": "https://arxiv.org/abs/1703.06870",
-    "rights": {
-      "status": "documented-in-legacy",
-      "license": {
-        "en": "Original local SVG redraw; source figures are not copied.",
-        "zh": "本地原创 SVG 重绘；未复制来源图形。"
-      }
-    },
-    "displayUsage": {
-      "en": "Architecture and process explainer",
-      "zh": "架构与流程解释图"
-    },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true
-  },
-  {
-    "id": "asset-ai100-2017-mask-r-cnn-audio-zh-original-v1",
-    "type": "audio",
-    "role": "audio-narration",
-    "caption": {
-      "zh": "ai100-2017-mask-r-cnn 中文原版科普音频",
-      "en": "ai100-2017-mask-r-cnn original Chinese audio narration"
-    },
-    "subcaption": {
-      "zh": "中文原版科普讲述，供中文页面播放。",
-      "en": "Original Chinese science narration used on the Chinese page."
-    },
-    "sourceId": "source-2017-mask-r-cnn-primary",
-    "rights": {
-      "status": "project-produced",
-      "license": {
-        "zh": "本项目使用已授权语音合成服务制作。",
-        "en": "Produced by this project with an authorized text-to-speech service."
-      },
-      "usage": {
-        "zh": "用于本展览的事件科普音频播放。",
-        "en": "Used for event narration in this exhibition."
-      }
-    },
-    "language": "zh",
-    "storage": {
-      "profileId": "ai-history-audio-releases",
-      "objectName": "ai100-2017-mask-r-cnn-zh-original-v1.mp3",
-      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-zh-original-v1-2026-08-09/audio/bench-council-ai100/storyline/zh/60-ai100-2017-mask-r-cnn.mp3",
-      "contentType": "audio/mpeg"
-    },
-    "usage": [
-      "storyline:bench-council-ai100"
-    ],
-    "editable": true
-  },
-  {
-    "id": "asset-ai100-2017-mask-r-cnn-audio-en-v1",
-    "type": "audio",
-    "role": "audio-narration",
-    "caption": {
-      "zh": "ai100-2017-mask-r-cnn 英文科普音频",
-      "en": "ai100-2017-mask-r-cnn English audio narration"
-    },
-    "subcaption": {
-      "zh": "英文原版科普讲述，供英文页面播放。",
-      "en": "Original English science narration used on the English page."
-    },
-    "sourceId": "source-2017-mask-r-cnn-primary",
-    "rights": {
-      "status": "project-produced",
-      "license": {
-        "zh": "本项目使用已授权语音合成服务制作。",
-        "en": "Produced by this project with an authorized text-to-speech service."
-      },
-      "usage": {
-        "zh": "用于本展览的事件科普音频播放。",
-        "en": "Used for event narration in this exhibition."
-      }
-    },
-    "language": "en",
-    "storage": {
-      "profileId": "ai-history-audio-releases",
-      "objectName": "ai100-2017-mask-r-cnn-en-v1.mp3",
-      "sourcePath": "resources/audio/generated/ai100-and-gaming-original-v1/ai100-remaining-storyline-en-original-v1-2026-08-09/audio/bench-council-ai100/storyline/en/60-ai100-2017-mask-r-cnn.mp3",
-      "contentType": "audio/mpeg"
-    },
-    "usage": [
-      "storyline:bench-council-ai100"
-    ],
-    "editable": true
-  }
+    {
+        "id": "asset-ai100-2017-mask-r-cnn-audio-en-v1",
+        "type": "audio",
+        "role": "audio-narration",
+        "caption": {
+            "zh": "ai100-2017-mask-r-cnn 英文科普音频",
+            "en": "ai100-2017-mask-r-cnn English audio narration"
+        },
+        "subcaption": {
+            "zh": "英文原版科普讲述，供英文页面播放。",
+            "en": "Original English science narration used on the English page."
+        },
+        "sourceId": "source-2017-mask-r-cnn-primary",
+        "rights": {
+            "status": "project-produced",
+            "license": {
+                "zh": "本项目使用已授权语音合成服务制作。",
+                "en": "Produced by this project with an authorized text-to-speech service."
+            },
+            "usage": {
+                "zh": "用于本展览的事件科普音频播放。",
+                "en": "Used for event narration in this exhibition."
+            }
+        },
+        "language": "en",
+        "storage": {
+            "profileId": "ai-history-audio-releases",
+            "objectName": "ai100-2017-mask-r-cnn-en-v1.mp3",
+            "sourcePath": "resources/audio/generated/pronunciation-fixes/issue-98-pronunciation-release-en-v2-2026-09-16/audio/bench-council-ai100/storyline/en/60-ai100-2017-mask-r-cnn.mp3",
+            "contentType": "audio/mpeg"
+        },
+        "usage": ["storyline:bench-council-ai100"],
+        "editable": true
+    }
 ]

@@ -1,0 +1,307 @@
+{
+    "schemaVersion": 1,
+    "provider": {
+        "name": "volc",
+        "model": "seed-tts-2.0",
+        "endpoint": "https://openspeech.bytedance.com/api/v3/plan/tts/unidirectional"
+    },
+    "baseSeed": 980100,
+    "voiceProfilePath": "audio/voices/zh-huopo-original.json",
+    "groups": [
+        {
+            "id": "surf-volc-seed-tts-2-zh-vv-a-v1",
+            "qualificationId": "surf-volc-seed-tts-2-zh-vv-a-v1",
+            "termId": "surf",
+            "locale": "zh",
+            "speechForm": "surf",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "surf-question",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/031-ai100-2006-surf.json",
+                    "turnIndex": 1,
+                    "repeatCount": 3
+                }
+            ]
+        },
+        {
+            "id": "surf-volc-seed-tts-2-zh-huopo-b-v1",
+            "qualificationId": "surf-volc-seed-tts-2-zh-huopo-b-v1",
+            "termId": "surf",
+            "locale": "zh",
+            "speechForm": "surf",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "surf-explanation",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/031-ai100-2006-surf.json",
+                    "turnIndex": 2,
+                    "repeatCount": 2
+                }
+            ]
+        },
+        {
+            "id": "surf-volc-seed-tts-2-zh-huopo-summary-v1",
+            "qualificationId": "surf-volc-seed-tts-2-zh-huopo-summary-v1",
+            "termId": "surf",
+            "locale": "zh",
+            "speechForm": "surf",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "surf-summary",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/031-ai100-2006-surf.json",
+                    "turnIndex": 7,
+                    "repeatCount": 3
+                }
+            ]
+        },
+        {
+            "id": "roi-volc-seed-tts-2-zh-huopo-b-v1",
+            "qualificationId": "roi-volc-seed-tts-2-zh-huopo-b-v1",
+            "termId": "roi",
+            "locale": "zh",
+            "speechForm": "R-O-I",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "roi-pooling",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/058-ai100-2015-fast-r-cnn.json",
+                    "turnIndex": 4,
+                    "repeatCount": 2
+                }
+            ]
+        },
+        {
+            "id": "roialign-volc-seed-tts-2-zh-huopo-b-v1",
+            "qualificationId": "roialign-volc-seed-tts-2-zh-huopo-b-v1",
+            "termId": "roialign",
+            "locale": "zh",
+            "speechForm": "R-O-I align",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "roialign-alignment",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/060-ai100-2017-mask-r-cnn.json",
+                    "turnIndex": 4,
+                    "repeatCount": 2
+                }
+            ]
+        },
+        {
+            "id": "nas-volc-seed-tts-2-zh-huopo-narrator-v1",
+            "qualificationId": "nas-volc-seed-tts-2-zh-huopo-narrator-v1",
+            "termId": "nas",
+            "locale": "zh",
+            "speechForm": "N-A-S",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "nas-search",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/089-ai100-2016-nas.json",
+                    "turnIndex": 4,
+                    "repeatCount": 2
+                }
+            ]
+        },
+        {
+            "id": "xcon-volc-seed-tts-2-zh-huopo-narrator-v2",
+            "qualificationId": "xcon-volc-seed-tts-2-zh-huopo-narrator-v2",
+            "termId": "xcon",
+            "locale": "zh",
+            "speechForm": "ex-con",
+            "reviewStatus": "pending-human-review",
+            "instructionOverride": "请严格按照输入文本逐字朗读完整句子，不要改写、删减、补充或改变任何其他词语。只有 XCON 读作英语词 ex-con；其余英文缩写、专有名词、标点停顿和句子内容都保持原样，整句要自然清楚，不要因为强调 XCON 而改变其他部分的发音。",
+            "contexts": [
+                {
+                    "id": "xcon-industry",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/021-1980-xcon-r1.json",
+                    "turnIndex": 5,
+                    "repeatCount": 2
+                }
+            ]
+        },
+        {
+            "id": "eliza-volc-seed-tts-2-zh-huopo-narrator-v1",
+            "qualificationId": "eliza-volc-seed-tts-2-zh-huopo-narrator-v1",
+            "termId": "eliza",
+            "locale": "zh",
+            "speechForm": "Eliza",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "eliza-history",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/zh/011-1966-eliza.json",
+                    "turnIndex": 2,
+                    "repeatCount": 3
+                }
+            ]
+        },
+        {
+            "id": "eliza-volc-seed-tts-2-en-alberto-narrator-v1",
+            "qualificationId": "eliza-volc-seed-tts-2-en-alberto-narrator-v1",
+            "termId": "eliza",
+            "locale": "en",
+            "speechForm": "Eliza",
+            "voiceProfilePath": "audio/voices/en-megan-alberto-original.json",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "eliza-history-en",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/en/011-1966-eliza.json",
+                    "turnIndex": 2,
+                    "repeatCount": 3
+                }
+            ]
+        },
+        {
+            "id": "surf-volc-seed-tts-2-en-megan-a-v1",
+            "qualificationId": "surf-volc-seed-tts-2-en-megan-a-v1",
+            "termId": "surf",
+            "locale": "en",
+            "speechForm": "surf",
+            "voiceProfilePath": "audio/voices/en-megan-alberto-original.json",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "surf-question-en",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/en/031-ai100-2006-surf.json",
+                    "turnIndex": 1,
+                    "repeatCount": 2
+                }
+            ]
+        },
+        {
+            "id": "surf-volc-seed-tts-2-en-alberto-b-v1",
+            "qualificationId": "surf-volc-seed-tts-2-en-alberto-b-v1",
+            "termId": "surf",
+            "locale": "en",
+            "speechForm": "surf",
+            "voiceProfilePath": "audio/voices/en-megan-alberto-original.json",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "surf-history-en",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/en/031-ai100-2006-surf.json",
+                    "turnIndex": 2,
+                    "repeatCount": 2
+                },
+                {
+                    "id": "surf-legacy-en",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/en/031-ai100-2006-surf.json",
+                    "turnIndex": 6,
+                    "repeatCount": 2
+                }
+            ]
+        },
+        {
+            "id": "surf-volc-seed-tts-2-en-alberto-summary-v1",
+            "qualificationId": "surf-volc-seed-tts-2-en-alberto-summary-v1",
+            "termId": "surf",
+            "locale": "en",
+            "speechForm": "surf",
+            "voiceProfilePath": "audio/voices/en-megan-alberto-original.json",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "surf-summary-en",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/en/031-ai100-2006-surf.json",
+                    "turnIndex": 7,
+                    "repeatCount": 2
+                }
+            ]
+        },
+        {
+            "id": "xcon-volc-seed-tts-2-en-alberto-narrator-v1",
+            "qualificationId": "xcon-volc-seed-tts-2-en-alberto-narrator-v1",
+            "termId": "xcon",
+            "locale": "en",
+            "speechForm": "ex-con",
+            "voiceProfilePath": "audio/voices/en-megan-alberto-original.json",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "xcon-opening-en",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/en/021-1980-xcon-r1.json",
+                    "turnIndex": 1,
+                    "repeatCount": 2
+                },
+                {
+                    "id": "xcon-industry-en",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/en/021-1980-xcon-r1.json",
+                    "turnIndex": 5,
+                    "repeatCount": 2
+                },
+                {
+                    "id": "xcon-closing-en",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/en/021-1980-xcon-r1.json",
+                    "turnIndex": 6,
+                    "repeatCount": 2
+                }
+            ]
+        },
+        {
+            "id": "roi-volc-seed-tts-2-en-alberto-b-v1",
+            "qualificationId": "roi-volc-seed-tts-2-en-alberto-b-v1",
+            "termId": "roi",
+            "locale": "en",
+            "speechForm": "R-O-I",
+            "voiceProfilePath": "audio/voices/en-megan-alberto-original.json",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "roi-pooling-en",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/en/058-ai100-2015-fast-r-cnn.json",
+                    "turnIndex": 4,
+                    "repeatCount": 2
+                },
+                {
+                    "id": "roi-alignment-en",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/en/060-ai100-2017-mask-r-cnn.json",
+                    "turnIndex": 4,
+                    "repeatCount": 2
+                }
+            ]
+        },
+        {
+            "id": "roialign-volc-seed-tts-2-en-alberto-b-v1",
+            "qualificationId": "roialign-volc-seed-tts-2-en-alberto-b-v1",
+            "termId": "roialign",
+            "locale": "en",
+            "speechForm": "R-O-I align",
+            "voiceProfilePath": "audio/voices/en-megan-alberto-original.json",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "roialign-mechanism-en",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/en/060-ai100-2017-mask-r-cnn.json",
+                    "turnIndex": 4,
+                    "repeatCount": 2
+                },
+                {
+                    "id": "roialign-legacy-en",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/en/060-ai100-2017-mask-r-cnn.json",
+                    "turnIndex": 6,
+                    "repeatCount": 2
+                }
+            ]
+        },
+        {
+            "id": "nas-volc-seed-tts-2-en-alberto-narrator-v1",
+            "qualificationId": "nas-volc-seed-tts-2-en-alberto-narrator-v1",
+            "termId": "nas",
+            "locale": "en",
+            "speechForm": "N-A-S",
+            "voiceProfilePath": "audio/voices/en-megan-alberto-original.json",
+            "reviewStatus": "pending-human-review",
+            "contexts": [
+                {
+                    "id": "nas-search-en",
+                    "turnPath": "audio/revisions/ai100-remaining-original/turns/en/089-ai100-2016-nas.json",
+                    "turnIndex": 4,
+                    "repeatCount": 2
+                }
+            ]
+        }
+    ]
+}

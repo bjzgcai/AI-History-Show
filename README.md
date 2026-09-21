@@ -24,6 +24,9 @@ npm run start:static
 # Run the local demo server entry
 npm run start:demo
 
+# Run the independent LAN test display
+HOST=0.0.0.0 PORT=8000 npm run start:test-display
+
 # Validate generated data, tests, and startup behavior
 npm run validate:deployment
 
@@ -56,6 +59,8 @@ docker compose --profile admin up --build
 ```
 
 > **Security notice**: The management service (port 3001) has no authentication and is intended for **local use only**. **Never expose it directly to the public internet.** For production, access it through an SSH tunnel or behind Nginx Basic Auth — see [DEPLOYMENT.md](DEPLOYMENT.md) for details.
+
+The Admin service and the presentation service are separate deployment units. The Admin workflow validates the retained draft, saves the formal JSON, validates the saved JSON, generates runtime data, and lets the LAN test display read the updated files immediately. After the test display is confirmed, **Submit to GitHub** commits and pushes only the content JSON, resources, and generated runtime data. It is not a production deployment and does not build a release bundle. The production presentation host pulls the approved commit from GitHub and then synchronizes its static serving directory.
 
 Cloud deployment (Nginx + PM2), static hosting, GitHub Pages, and SSH-tunnel access to the admin console are all covered in [DEPLOYMENT.md](DEPLOYMENT.md). The repository also includes a custom GitHub Pages workflow at [.github/workflows/pages.yml](.github/workflows/pages.yml).
 
@@ -185,6 +190,8 @@ Do not hand-edit `milestones-data.js`, `milestones-data-default.js`, `shared/thu
 
 Thumbnail generation requires Python with Pillow. GitHub Actions and the Docker build image install it automatically; install Pillow locally before running `npm run generate` on a new machine.
 
+PowerPoint generation is an optional tooling workflow. Install its Python dependencies with `python3 -m venv .venv-ppt && .venv-ppt/bin/pip install -r scripts/ppt/requirements.txt`, and install ImageMagick separately (`sudo apt-get install imagemagick` on Ubuntu/Debian or `brew install imagemagick` on macOS). See [`scripts/ppt/README.md`](scripts/ppt/README.md) for sample and storyline deck commands.
+
 Pages and the Docker presentation image share the same allowlisted release bundle:
 
 ```bash
@@ -234,6 +241,7 @@ AI-History-Show/
 │
 ├── scripts/                     # Generation, validation, testing, and audit scripts
 │   ├── audio/                    # Audio planning, TTS, revision, review, and release pipeline
+│   ├── ppt/                      # Editable PPTX generation and its Python dependencies
 │   ├── generate-archive-data.js  # Default Archive-native generator
 │   ├── archive-compiler.js       # Archive storyline/event compiler
 │   ├── test-archive-authority.js
