@@ -1535,6 +1535,10 @@ aside {
     box-shadow: var(--shadow);
 }
 
+#figurePanel {
+    scroll-margin-top: calc(var(--admin-header-sticky-height) + 12px);
+}
+
 .panel-heading {
     display: flex;
     align-items: flex-start;
