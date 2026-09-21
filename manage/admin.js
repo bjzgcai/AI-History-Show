@@ -1,5 +1,23 @@
 'use strict';
 
+function detectAdminBasePath(pathname = window.location.pathname) {
+    const normalized = String(pathname || '').replace(/\/+$/, '');
+    if (!normalized || normalized === '/') return '';
+    if (normalized === '/admin') return '';
+    if (normalized.endsWith('/admin')) return normalized.slice(0, -'/admin'.length);
+    return normalized;
+}
+
+const adminBasePath = detectAdminBasePath();
+
+function adminUrl(value) {
+    const url = String(value || '').trim();
+    if (!url || url.startsWith('#') || /^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(url)) return url;
+    if (adminBasePath && (url === adminBasePath || url.startsWith(`${adminBasePath}/`))) return url;
+    const pathname = url.startsWith('/') ? url : `/${url}`;
+    return `${adminBasePath}${pathname}`;
+}
+
 const state = {
     type: 'events',
     entities: [],
@@ -310,7 +328,7 @@ function escapeHtml(value) {
 }
 
 async function api(url, options) {
-    const response = await fetch(url, options);
+    const response = await fetch(adminUrl(url), options);
     const data = await response.json().catch(() => ({ error: response.statusText }));
     if (!response.ok || data.error) {
         const error = new Error(data.error || response.statusText);
@@ -1260,7 +1278,7 @@ function presentationFieldPath(prefix, path) {
 function adminMediaUrl(value) {
     const url = String(value || '').trim();
     if (!url || /^(?:https?:|data:|blob:)/i.test(url)) return url;
-    return `/${url.replace(/^\/+/, '')}`;
+    return adminUrl(`/${url.replace(/^\/+/, '')}`);
 }
 
 function renderAssetMedia(asset, compact = false) {
@@ -3082,7 +3100,7 @@ async function renderFigureUsage() {
 }
 
 function assetImageSource(asset) {
-    return /^https?:\/\//i.test(asset.path) ? asset.path : `/${asset.path}`;
+    return /^https?:\/\//i.test(asset.path) ? asset.path : adminUrl(`/${asset.path}`);
 }
 
 function groupFigureAssets() {

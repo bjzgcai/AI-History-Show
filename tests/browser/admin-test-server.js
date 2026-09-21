@@ -1,6 +1,7 @@
 'use strict';
 
 const fs = require('node:fs');
+const http = require('node:http');
 const path = require('node:path');
 
 const projectRoot = path.resolve(__dirname, '../..');
@@ -36,8 +37,48 @@ for (const name of ['.nojekyll', 'index.html', 'shared', 'public']) {
     fs.symlinkSync(source, path.join(fixtureRoot, name), type);
 }
 
-process.env.HOST ||= '127.0.0.1';
-process.env.PORT ||= '43118';
+const proxyHost = process.env.HOST || '127.0.0.1';
+const proxyPort = Number(process.env.PORT || 43118);
+const backendPort = proxyPort + 1;
+const adminPrefix = '/nested-admin';
+
+process.env.HOST = proxyHost;
+process.env.PORT = String(backendPort);
 process.env.AI_HISTORY_ARCHIVE_ROOT = fixtureRoot;
 
 require('../../manage/server');
+
+const proxy = http.createServer((req, res) => {
+    let upstreamPath = req.url || '/';
+    if (upstreamPath === adminPrefix || upstreamPath === `${adminPrefix}/`) {
+        res.writeHead(308, { Location: `${adminPrefix}/admin` });
+        res.end();
+        return;
+    }
+    if (upstreamPath.startsWith(`${adminPrefix}/`)) {
+        upstreamPath = upstreamPath.slice(adminPrefix.length) || '/';
+    }
+
+    const upstream = http.request(
+        {
+            host: proxyHost,
+            port: backendPort,
+            method: req.method,
+            path: upstreamPath,
+            headers: req.headers
+        },
+        (upstreamResponse) => {
+            res.writeHead(upstreamResponse.statusCode || 502, upstreamResponse.headers);
+            upstreamResponse.pipe(res);
+        }
+    );
+    upstream.on('error', (error) => {
+        if (!res.headersSent) res.writeHead(502, { 'Content-Type': 'text/plain; charset=utf-8' });
+        res.end(error.message);
+    });
+    req.pipe(upstream);
+});
+
+proxy.listen(proxyPort, proxyHost, () => {
+    console.log(`Admin test proxy listening at http://${proxyHost}:${proxyPort}${adminPrefix}/admin`);
+});
