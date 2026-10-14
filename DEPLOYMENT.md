@@ -273,15 +273,40 @@ server {
     root /var/www/ai-history;
     index index.html;
 
+    # Never expose source, admin, API or hidden files from the public root.
+    location ~* ^/(?:archive|manage|scripts|research|reports|api)(?:/|$) {
+        return 404;
+    }
+    location ~ /\.(?!well-known) {
+        return 404;
+    }
+
+    # Missing static assets must remain 404 instead of becoming index.html.
+    location ~* \.(?:js|mjs|css|json|map|png|jpe?g|gif|webp|svg|ico|woff2?|ttf|mp3|wav|m4a|ogg|mp4|webm|pdf|txt|xml)$ {
+        try_files $uri =404;
+    }
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header Referrer-Policy "no-referrer" always;
+    add_header Permissions-Policy "camera=(), microphone=(), geolocation=()" always;
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+    add_header Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; media-src 'self' https://media.sciencearena.cn; connect-src 'self' https://media.sciencearena.cn" always;
+
     # 图片/JS/CSS 缓存 7 天
     location ~* \.(jpg|jpeg|png|webp|js|css)$ {
         expires 7d;
-        add_header Cache-Control "public";
     }
 
     # gzip 压缩（减少传输体积）
     gzip on;
-    gzip_types text/html application/javascript text/css image/svg+xml;
+    gzip_vary on;
+    gzip_min_length 1024;
+    gzip_types text/plain text/html application/javascript application/json text/css image/svg+xml;
 }
 ```
 
